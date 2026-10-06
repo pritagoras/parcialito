@@ -1,0 +1,763 @@
+{
+  "tema": {
+    "id": "glucidos",
+    "titulo": "Glúcidos",
+    "descripcion": "Monosacáridos y su isomería, ciclación y anómeros, enlace glucosídico, disacáridos, polisacáridos de reserva y estructurales (almidón, glucógeno, celulosa, quitina) y sus funciones.",
+    "fuentes": [
+      "6-Química-Glúcidos.pdf",
+      "genomasur.com-COMPOSICION QUIMICA DE LOS SERES VIVOS.pdf"
+    ]
+  },
+  "preguntas": [
+    {
+      "id": "glucidos-001",
+      "subtema": "Definición y composición",
+      "dificultad": "facil",
+      "pregunta": "¿Qué elementos químicos integran la estructura de los glúcidos y cuál es su definición química principal?",
+      "opciones": {
+        "a": "C, H, O y N; son ácidos monocarboxílicos saturados.",
+        "b": "C, H y O; son polihidroxialdehídos, polihidroxicetonas o sus derivados.",
+        "c": "C, H, P y S; son polímeros lineales no polares e insolubles.",
+        "d": "C, N y O; son hidrocarburos aromáticos altamente reducidos."
+      },
+      "correcta": "b",
+      "justificacion_correcta": "Los glúcidos están compuestos por C, H y O, y se definen químicamente como polihidroxialdehídos o polihidroxicetonas o compuestos que los generan por hidrólisis.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 39"
+    },
+    {
+      "id": "glucidos-002",
+      "subtema": "Propiedades de monosacáridos",
+      "dificultad": "facil",
+      "pregunta": "¿Cuáles son las propiedades físicas organolépticas y de solubilidad características de los monosacáridos?",
+      "opciones": {
+        "a": "Insolubles en agua, insípidos y formadores de geles lipídicos.",
+        "b": "Solubles únicamente en cloroformo y éter etílico.",
+        "c": "Insolubles en solventes polares, amargos y volátiles.",
+        "d": "Solubles en agua, de sabor dulce y cristalizables."
+      },
+      "correcta": "d",
+      "justificacion_correcta": "Los monosacáridos o azúcares simples son sólidos cristalinos, de sabor dulce y fácilmente solubles en agua gracias a sus grupos hidroxilo.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 41-42"
+    },
+    {
+      "id": "glucidos-003",
+      "subtema": "Fórmula general de monosacáridos",
+      "dificultad": "facil",
+      "pregunta": "¿Cuál es la fórmula empírica general que representan los monosacáridos simples?",
+      "opciones": {
+        "a": "C_n(H₂O)_n",
+        "b": "C_n H_(2n+2)",
+        "c": "C_n(H₂O)_(n-1)",
+        "d": "C_n H_n O_(2n)"
+      },
+      "correcta": "a",
+      "justificacion_correcta": "La fórmula general de los monosacáridos es C_n(H₂O)_n, donde n varía generalmente de 3 a 7 átomos de carbono.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 41"
+    },
+    {
+      "id": "glucidos-004",
+      "subtema": "Clasificación según átomos de carbono",
+      "dificultad": "facil",
+      "pregunta": "¿Cómo se clasifica un monosacárido formado por una cadena de 6 átomos de carbono?",
+      "opciones": {
+        "a": "Pentosa.",
+        "b": "Hexosa.",
+        "c": "Triosa.",
+        "d": "Heptosa."
+      },
+      "correcta": "b",
+      "justificacion_correcta": "De acuerdo al número de átomos de C, los monosacáridos de 3, 4, 5, 6 y 7 carbonos se denominan triosas, tetrosas, pentosas, hexosas y heptosas respectivamente.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 42"
+    },
+    {
+      "id": "glucidos-005",
+      "subtema": "Clasificación según grupo funcional",
+      "dificultad": "facil",
+      "pregunta": "¿Qué nombre recibe un monosacárido cuyo grupo carbonilo se encuentra en el C1 como aldehído?",
+      "opciones": {
+        "a": "Aldosa.",
+        "b": "Cetosa.",
+        "c": "Polialcohol.",
+        "d": "Anómero."
+      },
+      "correcta": "a",
+      "justificacion_correcta": "Si el grupo carbonilo es un aldehído (en C1), el monosacárido es una aldosa; si es una cetona (generalmente en C2), es una cetosa.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 42"
+    },
+    {
+      "id": "glucidos-006",
+      "subtema": "Estructura del gliceraldehído",
+      "dificultad": "media",
+      "pregunta": "¿Cuál es la triosa de tipo aldosa más simple que posee un carbono quiral y sirve de referencia para la estereoisomería?",
+      "opciones": {
+        "a": "Dihidroxiacetona.",
+        "b": "Ribosa.",
+        "c": "Eritrosa.",
+        "d": "Gliceraldehído."
+      },
+      "correcta": "d",
+      "justificacion_correcta": "El gliceraldehído es una aldotriosa (3C) con su C2 como centro asimétrico o quiral, sirviendo de base para definir los estereoisómeros D y L.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 43-44"
+    },
+    {
+      "id": "glucidos-007",
+      "subtema": "Cetotriosa",
+      "dificultad": "media",
+      "pregunta": "¿Qué monosacárido de 3 carbonos pertenece al grupo de las cetosas y carece de carbonos asimétricos?",
+      "opciones": {
+        "a": "Gliceraldehído.",
+        "b": "Dihidroxiacetona.",
+        "c": "Fructosa.",
+        "d": "Eritrulosa."
+      },
+      "correcta": "b",
+      "justificacion_correcta": "La dihidroxiacetona es la única triosa cetosa; al poseer un grupo cetona en el C2, ninguno de sus tres carbonos está unido a cuatro grupos distintos.",
+      "fuente": "genomasur.com-COMPOSICION QUIMICA DE LOS SERES VIVOS.pdf, p. 46"
+    },
+    {
+      "id": "glucidos-008",
+      "subtema": "Serie D y L",
+      "dificultad": "media",
+      "pregunta": "¿De qué depende que un monosacárido pertenezca a la serie enantiomérica D o L?",
+      "opciones": {
+        "a": "De la posición del grupo hidroxilo (-OH) unido al último carbono asimétrico de la cadena.",
+        "b": "De la orientación del grupo aldehído en el C1 hacia la derecha o izquierda.",
+        "c": "De la dirección en que la molécula hace girar el plano de la luz polarizada.",
+        "d": "De si el anillo cíclico formado es un pirano o un furano."
+      },
+      "correcta": "a",
+      "justificacion_correcta": "La pertenencia a la serie D o L queda determinada por la configuración del centro quiral más alejado del grupo carbonilo (el penúltimo C de la cadena).",
+      "fuente": "6-Química-Glúcidos.pdf, p. 50"
+    },
+    {
+      "id": "glucidos-009",
+      "subtema": "Serie D biológica",
+      "dificultad": "facil",
+      "pregunta": "¿A qué serie estereoisomérica pertenecen predominantemente los monosacáridos que sintetizan y metabolizan los seres vivos?",
+      "opciones": {
+        "a": "Serie D.",
+        "b": "Serie L.",
+        "c": "Mezcla racémica equimolar.",
+        "d": "Serie alfa (α)."
+      },
+      "correcta": "a",
+      "justificacion_correcta": "En la naturaleza y el metabolismo celular, la inmensa mayoría de los monosacáridos aprovechados pertenecen a la serie D.",
+      "fuente": "genomasur.com-COMPOSICION QUIMICA DE LOS SERES VIVOS.pdf, p. 46"
+    },
+    {
+      "id": "glucidos-010",
+      "subtema": "Estructura de la glucosa",
+      "dificultad": "media",
+      "pregunta": "En la representación lineal (proyección de Fischer) de la D-glucosa, ¿cuál es la posición característica del grupo hidroxilo (-OH) en el carbono 3?",
+      "opciones": {
+        "a": "Hacia la derecha.",
+        "b": "Hacia arriba del grupo aldehído.",
+        "c": "Hacia la izquierda.",
+        "d": "Formando un enlace doble con el carbono 4."
+      },
+      "correcta": "c",
+      "justificacion_correcta": "La D-glucosa se distingue como aldohexosa por poseer el grupo -OH del C3 situado a la izquierda en la fórmula proyectada de Fischer.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 45"
+    },
+    {
+      "id": "glucidos-011",
+      "subtema": "Isomería de función en hexosas",
+      "dificultad": "media",
+      "pregunta": "¿Qué relación isomérica existe entre la D-glucosa y la D-fructosa teniendo ambas la fórmula molecular C₆H₁₂O₆?",
+      "opciones": {
+        "a": "Son isómeros de grupo funcional (aldosa vs cetosa).",
+        "b": "Son anómeros cíclicos del mismo anillo.",
+        "c": "Son enantiómeros D y L no superponibles.",
+        "d": "Son epímeros en la posición del carbono 2."
+      },
+      "correcta": "a",
+      "justificacion_correcta": "Tanto la glucosa como la fructosa tienen la fórmula C₆H₁₂O₆, pero la glucosa es una aldohexosa y la fructosa es una cetohexosa, siendo isómeros funcionales.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 46"
+    },
+    {
+      "id": "glucidos-012",
+      "subtema": "Galactosa",
+      "dificultad": "dificil",
+      "pregunta": "La D-galactosa es una aldohexosa que se diferencia estructuralmente de la D-glucosa por la configuración del hidroxilo en:",
+      "opciones": {
+        "a": "El carbono 1.",
+        "b": "El carbono 2.",
+        "c": "El carbono 6.",
+        "d": "El carbono 4."
+      },
+      "correcta": "d",
+      "justificacion_correcta": "La D-galactosa y la D-glucosa son epímeros en el carbono 4; en la galactosa el hidroxilo del C4 está orientado a la izquierda (o hacia arriba en Haworth).",
+      "fuente": "6-Química-Glúcidos.pdf, p. 49 y genomasur"
+    },
+    {
+      "id": "glucidos-013",
+      "subtema": "Ciclación de monosacáridos",
+      "dificultad": "media",
+      "pregunta": "¿Qué tipo de enlace intramolecular se forma cuando el grupo aldehído del C1 de la D-glucosa reacciona con el hidroxilo del C5 para ciclar la molécula?",
+      "opciones": {
+        "a": "Enlace éster.",
+        "b": "Enlace hemiacetal.",
+        "c": "Enlace glucosídico.",
+        "d": "Enlace peptídico."
+      },
+      "correcta": "b",
+      "justificacion_correcta": "La reacción intramolecular entre el grupo aldehído y un grupo alcohol genera una estructura cíclica mediante un enlace hemiacetal.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 47 y genomasur"
+    },
+    {
+      "id": "glucidos-014",
+      "subtema": "Carbono anomérico",
+      "dificultad": "media",
+      "pregunta": "¿Cómo se denomina al átomo de carbono que pasa a ser un nuevo centro asimétrico al ciclarse una aldohexosa o una cetohexosa?",
+      "opciones": {
+        "a": "Carbono primario.",
+        "b": "Carbono quiral omega.",
+        "c": "Carbono anomérico.",
+        "d": "Carbono carboxílico."
+      },
+      "correcta": "c",
+      "justificacion_correcta": "El carbono del grupo carbonilo (C1 en aldosas, C2 en cetosas) se convierte en un centro quiral nuevo denominado carbono anomérico al formar el ciclo.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 47-48"
+    },
+    {
+      "id": "glucidos-015",
+      "subtema": "Anómeros alfa y beta",
+      "dificultad": "media",
+      "pregunta": "En la proyección de Haworth para la D-glucopiranosa, ¿cómo se identifica formalmente al anómero alfa (α)?",
+      "opciones": {
+        "a": "Por presentar el grupo -CH₂OH del C6 orientado hacia abajo.",
+        "b": "Por tener el grupo -OH del carbono anomérico (C1) situado por encima del plano del anillo.",
+        "c": "Por tener el grupo -OH del carbono anomérico (C1) situado por debajo del plano del anillo.",
+        "d": "Por estar abierto y sin formar enlace hemiacetal."
+      },
+      "correcta": "c",
+      "justificacion_correcta": "En la fórmula cíclica de Haworth de la D-glucosa, el anómero α presenta el grupo -OH del C1 hacia abajo del plano del anillo (trans respecto al C6).",
+      "fuente": "6-Química-Glúcidos.pdf, p. 47-48"
+    },
+    {
+      "id": "glucidos-016",
+      "subtema": "Anómero beta",
+      "dificultad": "facil",
+      "pregunta": "¿Qué posición ocupa el grupo hidroxilo del C1 en la β-D-glucosa según la representación de Haworth?",
+      "opciones": {
+        "a": "Hacia arriba del plano del anillo.",
+        "b": "Hacia abajo del plano del anillo.",
+        "c": "Unido directamente al carbono 6 mediante enlace covalente.",
+        "d": "Ausente por desoxigenación."
+      },
+      "correcta": "a",
+      "justificacion_correcta": "El anómero β se caracteriza por tener el grupo hidroxilo hemiacetálico del carbono anomérico (C1) posicionado hacia arriba del plano del anillo.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 47-48"
+    },
+    {
+      "id": "glucidos-017",
+      "subtema": "Pentosas estructurales",
+      "dificultad": "facil",
+      "pregunta": "¿Cuáles son las dos aldopentosas de mayor relevancia biológica por formar parte de los nucleótidos y ácidos nucleicos?",
+      "opciones": {
+        "a": "Glucosa y Fructosa.",
+        "b": "Gliceraldehído y Dihidroxiacetona.",
+        "c": "Ribosa y Desoxirribosa.",
+        "d": "Maltosa y Lactosa."
+      },
+      "correcta": "c",
+      "justificacion_correcta": "La ribosa (componente del ARN y ATP) y la desoxirribosa (componente del ADN) son pentosas (5C) clave con función estructural.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 49-50"
+    },
+    {
+      "id": "glucidos-018",
+      "subtema": "Diferencia entre ribosa y desoxirribosa",
+      "dificultad": "media",
+      "pregunta": "¿En qué consiste la diferencia química estructural entre la D-ribosa y la 2-desoxi-D-ribosa?",
+      "opciones": {
+        "a": "La desoxirribosa posee 6 átomos de carbono mientras que la ribosa posee 5.",
+        "b": "La ribosa es una cetosa mientras que la desoxirribosa es una aldosa.",
+        "c": "La desoxirribosa carece de grupo hidroxilo en el carbono 2, teniendo en su lugar un átomo de hidrógeno.",
+        "d": "La ribosa no puede formar estructuras cíclicas de furanosa."
+      },
+      "correcta": "c",
+      "justificacion_correcta": "La desoxirribosa deriva de la ribosa por pérdida de un átomo de oxígeno en la posición del C2, quedando solo un grupo -H en lugar del -OH.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 49-50"
+    },
+    {
+      "id": "glucidos-019",
+      "subtema": "Funciones de hexosas",
+      "dificultad": "facil",
+      "pregunta": "¿Cuál es el rol biológico primordial de la D-glucosa en los organismos vivos?",
+      "opciones": {
+        "a": "Formar bicapas lipídicas impermables en el núcleo celular.",
+        "b": "Actuar como el principal combustible metabólico y fuente directa de energía celular.",
+        "c": "Catalizar la síntesis de ácidos grasos en los ribosomas.",
+        "d": "Neutralizar variaciones bruscas de pH en el lisosoma."
+      },
+      "correcta": "b",
+      "justificacion_correcta": "La glucosa es la hexosa más abundante y constituye el combustible celular por excelencia para la producción de ATP mediante la respiración celular.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 51"
+    },
+    {
+      "id": "glucidos-020",
+      "subtema": "Fructosa",
+      "dificultad": "facil",
+      "pregunta": "¿En qué fuentes naturales se encuentra abundantemente la cetohexosa D-fructosa?",
+      "opciones": {
+        "a": "Exclusivamente en la leche de mamíferos.",
+        "b": "En las frutas, las flores y la miel.",
+        "c": "En el exoesqueleto de artrópodos.",
+        "d": "En la pared celular del tejido vegetal leñoso."
+      },
+      "correcta": "b",
+      "justificacion_correcta": "La fructosa es una cetohexosa dulce presente de forma libre en los frutos, en la miel y formando parte del disacárido sacarosa.",
+      "fuente": "genomasur.com-COMPOSICION QUIMICA DE LOS SERES VIVOS.pdf, p. 46"
+    },
+    {
+      "id": "glucidos-021",
+      "subtema": "Enlace glucosídico",
+      "dificultad": "media",
+      "pregunta": "¿Cómo se denomina la reacción química mediante la cual dos monosacáridos se unen covalente liberando una molécula de agua?",
+      "opciones": {
+        "a": "Hidrólisis.",
+        "b": "Condensación.",
+        "c": "Descarboxilación.",
+        "d": "Oxidación."
+      },
+      "correcta": "b",
+      "justificacion_correcta": "La formación del enlace glucosídico entre dos unidades hidroxiladas con desprendimiento de una molécula de agua constituye una reacción de condensación.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 53"
+    },
+    {
+      "id": "glucidos-022",
+      "subtema": "Hidrólisis del enlace glucosídico",
+      "dificultad": "facil",
+      "pregunta": "¿Qué proceso químico inverso a la condensación rompe un enlace glucosídico incorporando una molécula de agua?",
+      "opciones": {
+        "a": "Esterificación.",
+        "b": "Ciclación.",
+        "c": "Polimerización.",
+        "d": "Hidrólisis."
+      },
+      "correcta": "d",
+      "justificacion_correcta": "La hidrólisis implica la adición de agua (un protón y un hidroxilo) para escindir el enlace glucosídico y recuperar las unidades de monosacárido.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 53"
+    },
+    {
+      "id": "glucidos-023",
+      "subtema": "Oligosacáridos",
+      "dificultad": "facil",
+      "pregunta": "¿Qué cantidad de unidades de monosacáridos constituyen la estructura de los oligosacáridos?",
+      "opciones": {
+        "a": "Exactamente 1 unidad aislada.",
+        "b": "Redes tridimensionales de 50 a 100 lípidos.",
+        "c": "Cadenas de más de 1000 monosacáridos.",
+        "d": "Cadenas de 2 a 10 monosacáridos."
+      },
+      "correcta": "d",
+      "justificacion_correcta": "Los oligosacáridos resultan de la unión glicosídica de un número pequeño de monosacáridos, típicamente de 2 a 10 unidades.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 52"
+    },
+    {
+      "id": "glucidos-024",
+      "subtema": "Estructura de la Maltosa",
+      "dificultad": "media",
+      "pregunta": "¿Cómo está constituida químicamente la molécula de maltosa y qué enlace posee?",
+      "opciones": {
+        "a": "Formada por α-glucosa y β-fructosa mediante enlace α(1→2).",
+        "b": "Formada por β-galactosa y α-glucosa unidas por enlace β(1→4).",
+        "c": "Formada por dos moléculas de α-D-glucosa unidas por enlace α(1→4).",
+        "d": "Formada por dos moléculas de β-D-glucosa unidas por enlace β(1→4)."
+      },
+      "correcta": "c",
+      "justificacion_correcta": "La maltosa (azúcar de malta) es un disacárido de condensación compuesto por dos α-D-glucosas enlazadas glucosídicamente de C1 a C4 (α1→4).",
+      "fuente": "6-Química-Glúcidos.pdf, p. 54-55"
+    },
+    {
+      "id": "glucidos-025",
+      "subtema": "Origen de la maltosa",
+      "dificultad": "media",
+      "pregunta": "¿De qué proceso químico o digestivo se obtiene comúnmente el disacárido maltosa?",
+      "opciones": {
+        "a": "De la secreción directa de las glándulas mamarias.",
+        "b": "De la condensación de la celulosa con la quitina.",
+        "c": "De la fotosíntesis directa en el cloroplasto.",
+        "d": "De la hidrólisis parcial del polisacárido almidón."
+      },
+      "correcta": "d",
+      "justificacion_correcta": "La maltosa se obtiene mediante la degradación o hidrólisis de polisacáridos de reserva como el almidón o el glucógeno.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 55"
+    },
+    {
+      "id": "glucidos-026",
+      "subtema": "Sacarosa",
+      "dificultad": "media",
+      "pregunta": "¿Qué componentes monoméricos integran la sacarosa (azúcar de mesa) y cuál es su tipo de enlace?",
+      "opciones": {
+        "a": "Dos moléculas de glucosa con enlace α(1→6).",
+        "b": "α-D-glucosa y β-D-fructosa unidas por sus carbonos anoméricos en enlace α(1→2) / α1-β2.",
+        "c": "β-D-galactosa y α-D-glucosa con enlace β(1→4).",
+        "d": "Ribosa y desoxirribosa con enlace fosfodiéster."
+      },
+      "correcta": "b",
+      "justificacion_correcta": "La sacarosa se forma por la unión del C1 anomérico de la α-glucosa con el C2 anomérico de la β-fructosa (enlace dicarbonílico α1-β2).",
+      "fuente": "6-Química-Glúcidos.pdf, p. 55"
+    },
+    {
+      "id": "glucidos-027",
+      "subtema": "Función de la sacarosa en plantas",
+      "dificultad": "facil",
+      "pregunta": "¿Qué rol cumple el disacárido sacarosa en el reino vegetal?",
+      "opciones": {
+        "a": "Actúa como hormona lipídica de crecimiento en las raíces.",
+        "b": "Constituye la pared rígida e insoluble de las células vegetales.",
+        "c": "Forma los receptores de membrana extracelulares contra patógenos.",
+        "d": "Es la principal sustancia transportada por el floema a través de los tallos para distribuir energía."
+      },
+      "correcta": "d",
+      "justificacion_correcta": "La sacarosa es la forma principal en que las plantas transportan los carbohidratos solubles desde las hojas hacia otros órganos a través del floema.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 55"
+    },
+    {
+      "id": "glucidos-028",
+      "subtema": "Lactosa",
+      "dificultad": "media",
+      "pregunta": "¿Cuáles son los dos monosacáridos que componen la lactosa y cuál es su unión caracterísitca?",
+      "opciones": {
+        "a": "α-glucosa + α-glucosa por enlace α(1→4).",
+        "b": "α-glucosa y β-fructosa unidas por enlace α(1→2).",
+        "c": "β-D-galactosa y α-D-glucosa unidas por enlace β(1→4).",
+        "d": "Dos galactosas unidas por enlace α(1→6)."
+      },
+      "correcta": "c",
+      "justificacion_correcta": "La lactosa (azúcar de la leche) se compone de β-D-galactosa y α-D-glucosa vinculadas mediante un enlace glicosídico β(1→4).",
+      "fuente": "6-Química-Glúcidos.pdf, p. 55"
+    },
+    {
+      "id": "glucidos-029",
+      "subtema": "Oligosacáridos de membrana",
+      "dificultad": "media",
+      "pregunta": "¿En qué cara de la membrana plasmática celular se ubican los oligosacáridos y a qué moléculas suelen estar unidos?",
+      "opciones": {
+        "a": "En la cara citoplasmática, unidos a los microfilamentos de actina.",
+        "b": "En el interior apolar de la bicapa lipídica, unidos al colesterol.",
+        "c": "En la cara extracelular, unidos a proteínas (glicoproteínas) o a lípidos (glicolípidos).",
+        "d": "Exclusivamente dentro de la matriz mitocondrial."
+      },
+      "correcta": "c",
+      "justificacion_correcta": "Los oligosacáridos de membrana son cadenas ramificadas situadas en la cara extracelular formando el glucocálix, unidos covalentemente a proteínas y lípidos.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 56"
+    },
+    {
+      "id": "glucidos-030",
+      "subtema": "Función de oligosacáridos de membrana",
+      "dificultad": "media",
+      "pregunta": "¿Cuál es la función biológica fundamental de los oligosacáridos presentes en la superficie celular?",
+      "opciones": {
+        "a": "Participar en el reconocimiento celular, la interacción con virus/bacterias y la recepción de señales.",
+        "b": "Proporcionar energía de reserva metabólica durante el ayuno prolongado.",
+        "c": "Transportar oxígeno a través de la bicapa fosfolipídica.",
+        "d": "Generar gradientes electroquímicos de sodio y potasio."
+      },
+      "correcta": "a",
+      "justificacion_correcta": "Forman parte de receptores específicos en la superficie celular implicados en procesos de identificación, adhesión tisular y ligando de toxinas o patógenos.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 56"
+    },
+    {
+      "id": "glucidos-031",
+      "subtema": "Polisacáridos: definición",
+      "dificultad": "facil",
+      "pregunta": "¿Cómo se define estructuralmente a un polisacárido?",
+      "opciones": {
+        "a": "Cadenas cortas de 2 a 10 nucleótidos con enlace fosfodiéster.",
+        "b": "Secuencias lineales de L-aminoácidos plegadas en hélice alfa.",
+        "c": "Moléculas de glicerol esterificadas con tres ácidos grasos.",
+        "d": "Polímeros de alto peso molecular formados por la condensación de numerosos monosacáridos unidos por enlaces glucosídicos."
+      },
+      "correcta": "d",
+      "justificacion_correcta": "Los polisacáridos son macromoléculas compuestas por la repetición de muchas unidades de monosacáridos acopladas mediante enlaces glucosídicos.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 57"
+    },
+    {
+      "id": "glucidos-032",
+      "subtema": "Homopolisacáridos vs Heteropolisacáridos",
+      "dificultad": "facil",
+      "pregunta": "¿Qué diferencia existe entre un homopolisacárido y un heteropolisacárido?",
+      "opciones": {
+        "a": "El homopolisacárido está formado por un solo tipo de monómero, mientras que el heteropolisacárido contiene dos o más tipos distintos de monómeros.",
+        "b": "El homopolisacárido se disuelve en agua mientras que el heteropolisacárido se disuelve en lípidos.",
+        "c": "El homopolisacárido es siempre animal y el heteropolisacárido es exclusivamente vegetal.",
+        "d": "El homopolisacárido carece de enlaces covalentes glucosídicos."
+      },
+      "correcta": "a",
+      "justificacion_correcta": "Un homopolisacárido (como el almidón o celulosa) posee un único tipo de monosacárido repetido; el heteropolisacárido está constituido por monómeros distintos.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 57"
+    },
+    {
+      "id": "glucidos-033",
+      "subtema": "Componentes del almidón",
+      "dificultad": "media",
+      "pregunta": "¿Cuáles son las dos fracciones polisacáridas que constituyen el almidón vegetal?",
+      "opciones": {
+        "a": "Amilosa y Amilopectina.",
+        "b": "Glucógeno y Celulosa.",
+        "c": "Quitina y Queratina.",
+        "d": "Maltosa y Sacarosa."
+      },
+      "correcta": "a",
+      "justificacion_correcta": "El almidón es una mezcla de dos glucanos: amilosa (polímero helicoidal no ramificado) y amilopectina (polímero ramificado).",
+      "fuente": "6-Química-Glúcidos.pdf, p. 58"
+    },
+    {
+      "id": "glucidos-034",
+      "subtema": "Estructura de la Amilosa",
+      "dificultad": "media",
+      "pregunta": "La amilosa es un polímero de α-D-glucosa caracterizado por poseer una estructura espacial de tipo:",
+      "opciones": {
+        "a": "Ramificada mediante enlaces α(1→6) cada 8 residuos.",
+        "b": "Cadena lineal de enlaces α(1→4) que adopta una disposición helicoidal.",
+        "c": "Lámina plana β-plegada sostenida por enlaces peptídicos.",
+        "d": "Cadena lineal insoluble con enlaces β(1→4)."
+      },
+      "correcta": "b",
+      "justificacion_correcta": "La amilosa está formada por unidades de α-D-glucosa unidas exclusivamente en secuencia lineal por enlaces α(1→4), adoptando forma de hélice.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 58"
+    },
+    {
+      "id": "glucidos-035",
+      "subtema": "Estructura de la Amilopectina",
+      "dificultad": "media",
+      "pregunta": "¿Qué tipos de enlaces glucosídicos están presentes en la estructura ramificada de la amilopectina?",
+      "opciones": {
+        "a": "Únicamente enlaces β(1→4).",
+        "b": "Enlaces α(1→2) e interacciones por puentes disulfuro.",
+        "c": "Enlaces lineales α(1→4) y enlaces de ramificación α(1→6).",
+        "d": "Enlaces dicarbonílicos β(1→2)."
+      },
+      "correcta": "c",
+      "justificacion_correcta": "La amilopectina posee una cadena principal con enlaces α(1→4) y ramificaciones secundarias conectadas mediante enlaces α(1→6) cada 24-30 glucosas.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 58"
+    },
+    {
+      "id": "glucidos-036",
+      "subtema": "Reserva energética vegetal",
+      "dificultad": "facil",
+      "pregunta": "¿En qué estructuras vegetales se almacena principalmente el almidón como reserva energética?",
+      "opciones": {
+        "a": "En gránulos dentro de tubérculos, raíces, semillas y granos de cereales.",
+        "b": "En la membrana plasmática de los estomas.",
+        "c": "En la matriz extracelular de los vasos leñosos muertos.",
+        "d": "En el jugo vacolar exclusivamente como monosacárido libre."
+      },
+      "correcta": "a",
+      "justificacion_correcta": "El almidón es el polisacárido de reserva propio de las plantas y se deposita en forma de gránulos insolubles en tubérculos (papas) y semillas.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 58"
+    },
+    {
+      "id": "glucidos-037",
+      "subtema": "Glucógeno",
+      "dificultad": "facil",
+      "pregunta": "¿Qué función cumple el glucógeno y en qué órganos animales se almacena principalmente?",
+      "opciones": {
+        "a": "Reserva energética a corto/mediano plazo; en el hígado y en el músculo esquelético.",
+        "b": "Sostén mecánico estructural; en los huesos y cartílagos.",
+        "c": "Aislamiento térmico; en el tejido adiposo subcutáneo.",
+        "d": "Recepción del impulso nervioso; en el cerebro y médula."
+      },
+      "correcta": "a",
+      "justificacion_correcta": "El glucógeno es el polisacárido de reserva energética en animales, acumulándose en hepatocitos (hígado) y fibras musculares.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 58-60"
+    },
+    {
+      "id": "glucidos-038",
+      "subtema": "Estructura del Glucógeno vs Amilopectina",
+      "dificultad": "dificil",
+      "pregunta": "¿En qué se diferencia estructuralmente el glucógeno respecto a la amilopectina del almidón?",
+      "opciones": {
+        "a": "El glucógeno posee una estructura similar pero mucho más compacta y frecuentemente ramificada (cada 8 a 12 residuos).",
+        "b": "El glucógeno es una cadena completamente lineal sin ramificaciones.",
+        "c": "El glucógeno está formado por β-glucosa y la amilopectina por α-glucosa.",
+        "d": "La amilopectina contiene nitrógeno en su estructura monomérica y el glucógeno no."
+      },
+      "correcta": "a",
+      "justificacion_correcta": "Ambos son polímeros de α-glucosa con enlaces α(1→4) y α(1→6), pero el glucógeno presenta ramificaciones con mayor frecuencia, haciéndolo más compacto.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 58-60"
+    },
+    {
+      "id": "glucidos-039",
+      "subtema": "Glucogenina",
+      "dificultad": "dificil",
+      "pregunta": "¿Qué proteína actúa como núcleo central y cebador al que se une el extremo reducido del glucógeno durante su síntesis?",
+      "opciones": {
+        "a": "Albúmina.",
+        "b": "Glucogenina.",
+        "c": "Insulina.",
+        "d": "Hemoglobina."
+      },
+      "correcta": "b",
+      "justificacion_correcta": "En el centro del complejo de glucógeno se encuentra la proteína glucogenina, unida covalentemente al extremo reducido de la molécula.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 60"
+    },
+    {
+      "id": "glucidos-040",
+      "subtema": "Celulosa: monómero y enlaces",
+      "dificultad": "media",
+      "pregunta": "¿Cuál es el monómero constituyente de la celulosa y qué tipo de enlace glucosídico une sus unidades?",
+      "opciones": {
+        "a": "α-D-glucosa mediante enlaces α(1→4).",
+        "b": "α-D-galactosa mediante enlaces α(1→6).",
+        "c": "N-acetilglucosamina mediante enlaces β(1→4).",
+        "d": "β-D-glucosa mediante enlaces β(1→4)."
+      },
+      "correcta": "d",
+      "justificacion_correcta": "La celulosa es un homopolisacárido de cadenas lineales no ramificadas compuestas exclusivamente por β-D-glucosa unida por enlaces β(1→4).",
+      "fuente": "6-Química-Glúcidos.pdf, p. 58-59"
+    },
+    {
+      "id": "glucidos-041",
+      "subtema": "Estructura supramolecular de la Celulosa",
+      "dificultad": "media",
+      "pregunta": "¿Qué tipo de interacciones intermoleculares estabilizan la agrupación de las cadenas lineales de celulosa para formar microfibrillas de gran resistencia?",
+      "opciones": {
+        "a": "Enlaces covalentes disulfuro.",
+        "b": "Interacciones iónicas con cationes calcio (Ca²⁺).",
+        "c": "Puentes de hidrógeno cruzados entre los grupos -OH de cadenas adyacentes.",
+        "d": "Uniones peptídicas estables."
+      },
+      "correcta": "c",
+      "justificacion_correcta": "Las largas cadenas lineales de celulosa se disponen en paralelo y se enlazan lateralmente mediante numerosos puentes de H, formando microfibrillas rígidas.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 59"
+    },
+    {
+      "id": "glucidos-042",
+      "subtema": "Función de la Celulosa",
+      "dificultad": "facil",
+      "pregunta": "¿Cuál es la función biológica principal de la celulosa en la naturaleza?",
+      "opciones": {
+        "a": "Reserva energética rápida en las mitocondrias de las hojas.",
+        "b": "Componente estructural y de sostén en la pared celular de los vegetales.",
+        "c": "Transporte de glucosa libre a través de la membrana plasmática.",
+        "d": "Pigmento fotosintético captador de la luz solar."
+      },
+      "correcta": "b",
+      "justificacion_correcta": "La celulosa es el polisacárido estructural vegetal por excelencia, formando la armazón insoluble de la pared celular en las plantas.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 58-59"
+    },
+    {
+      "id": "glucidos-043",
+      "subtema": "Digestibilidad de la celulosa",
+      "dificultad": "media",
+      "pregunta": "¿Por qué el ser humano no puede utilizar la celulosa como fuente de energía nutricional?",
+      "opciones": {
+        "a": "Porque la celulosa es destruida por el pH ácido del estómago.",
+        "b": "Porque se une de forma irreversible a las proteínas plasmáticas.",
+        "c": "Porque la celulosa se transforma en lípidos saturados antes de absorberse.",
+        "d": "Porque el tubo digestivo humano carece de enzimas capaces de hidrolizar los enlaces β(1→4)."
+      },
+      "correcta": "d",
+      "justificacion_correcta": "Las enzimas digestivas humanas (como la alfa-amilasa) solo rompen enlaces α(1→4), careciendo de celulasas para romper la unión β(1→4) de la celulosa.",
+      "fuente": "genomasur.com-COMPOSICION QUIMICA DE LOS SERES VIVOS.pdf, p. 54"
+    },
+    {
+      "id": "glucidos-044",
+      "subtema": "Fibra alimentaria",
+      "dificultad": "facil",
+      "pregunta": "A pesar de no ser digerible para el ser humano, ¿qué beneficio otorga el consumo de celulosa en la dieta?",
+      "opciones": {
+        "a": "Constituye la fibra alimentaria que aporta volumen e incrementa la motilidad y evacuación intestinal.",
+        "b": "Aporta 9 Kcal por cada gramo ingerido.",
+        "c": "Aumenta la síntesis de glucógeno muscular en forma inmediata.",
+        "d": "Sintetiza aminoácidos esenciales en el hígado."
+      },
+      "correcta": "a",
+      "justificacion_correcta": "La celulosa integra la fibra dietaria no digerible, reteniendo agua y aumentando la masa fecal, lo que favorece el peristaltismo intestinal.",
+      "fuente": "genomasur.com-COMPOSICION QUIMICA DE LOS SERES VIVOS.pdf, p. 54"
+    },
+    {
+      "id": "glucidos-045",
+      "subtema": "Digestión de la celulosa en herbívoros",
+      "dificultad": "media",
+      "pregunta": "¿Cómo logran los animales herbívoros (como los rumiantes) digerir la celulosa e incorporar sus unidades de glucosa?",
+      "opciones": {
+        "a": "Sintetizan celulasa en sus glándulas pancreáticas.",
+        "b": "Disuelven la celulosa con jugos biliares concentrados.",
+        "c": "Oxidan la celulosa directamente mediante peroxisomas hepáticos.",
+        "d": "Albergan en su tubo digestivo microorganismos simbióticos que producen las enzimas necesarias para hidrolizar los enlaces β(1→4)."
+      },
+      "correcta": "d",
+      "justificacion_correcta": "Los herbívoros poseen bacterias y protozoos simbióticos en su sistema digestivo que secretan celulasas para hidrolizar la celulosa a glucosa.",
+      "fuente": "genomasur.com-COMPOSICION QUIMICA DE LOS SERES VIVOS.pdf, p. 54"
+    },
+    {
+      "id": "glucidos-046",
+      "subtema": "Quitina: monómero",
+      "dificultad": "media",
+      "pregunta": "¿Qué derivado nitrogenado de la glucosa constituye la unidad monomérica de la quitina?",
+      "opciones": {
+        "a": "Ácido glucurónico.",
+        "b": "N-acetilglucosamina.",
+        "c": "Galactosamina.",
+        "d": "Glucosamina descarboxilada."
+      },
+      "correcta": "b",
+      "justificacion_correcta": "La quitina es un homopolisacárido compuesto por monómeros de N-acetilglucosamina unidos por enlaces β(1→4).",
+      "fuente": "6-Química-Glúcidos.pdf, p. 58-59"
+    },
+    {
+      "id": "glucidos-047",
+      "subtema": "Función y ubicación de la Quitina",
+      "dificultad": "facil",
+      "pregunta": "¿En qué estructuras biológicas y reinos se encuentra la quitina como componente de sostén rígido?",
+      "opciones": {
+        "a": "En la pared celular vegetal y en el hígado de mamíferos.",
+        "b": "En la membrana plasmática de bacterias Gram positivas.",
+        "c": "En el exoesqueleto de los artrópodos y en la pared celular de los hongos.",
+        "d": "En el cartílago articular de los peces óseos."
+      },
+      "correcta": "c",
+      "justificacion_correcta": "La quitina cumple función estructural en la cubierta dura o exoesqueleto de artrópodos (insectos, crustáceos) y en la pared de células fúngicas.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 58"
+    },
+    {
+      "id": "glucidos-048",
+      "subtema": "Heteropolisacáridos",
+      "dificultad": "dificil",
+      "pregunta": "¿Dónde se localizan principalmente los heteropolisacáridos en los tejidos animales y qué características presentan sus monómeros?",
+      "opciones": {
+        "a": "En el interior de la matriz mitocondrial; formados por lípidos neutros.",
+        "b": "En la matriz extracelular del tejido conectivo; constituidos por repeticiones de disacáridos donde al menos un monómero es un azúcar ácido o aminoazúcar.",
+        "c": "En los lisosomas activos; formados por cadenas cortas de pentosas apolares.",
+        "d": "En los ribosomas; constituidos por bases nitrogenadas púricas."
+      },
+      "correcta": "b",
+      "justificacion_correcta": "Los heteropolisacáridos (como glucosaminoglucanos) forman la sustancia fundamental de la matriz extracelular en tejidos conectivos, reteniendo agua en formato de gel.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 57, 60 y genomasur"
+    },
+    {
+      "id": "glucidos-049",
+      "subtema": "Solubilidad vs Peso Molecular",
+      "dificultad": "media",
+      "pregunta": "¿Cómo varía la solubilidad y el comportamiento en agua de los glúcidos a medida que aumenta considerablemente su peso molecular?",
+      "opciones": {
+        "a": "Pasan de ser insolubles a formar soluciones verdaderas transparentes.",
+        "b": "Se vuelven completamente hidrofóbicos transformándose en grasas neutras.",
+        "c": "Pasan de ser solubles (monosacáridos/disacáridos) a formar dispersiones coloidales o ser insolubles (polisacáridos), aunque conservan su carácter hidrofílico.",
+        "d": "Pierden la capacidad de formar puentes de hidrógeno con el solvente."
+      },
+      "correcta": "c",
+      "justificacion_correcta": "Los azúcares pequeños son muy solubles. Al aumentar el tamaño a polisacáridos (alto PM), no se disuelven en solución verdadera sino que se dispersan coloidalmente o permanecen insolubles, aunque siguen siendo hidrofílicos.",
+      "fuente": "6-Química-Glúcidos.pdf, p. 39"
+    },
+    {
+      "id": "glucidos-050",
+      "subtema": "Fotosíntesis y respiración",
+      "dificultad": "media",
+      "pregunta": "¿Cuál es la ecuación sintética del origen fotosintético de la glucosa a partir de materia inorgánica y energía solar?",
+      "opciones": {
+        "a": "Glucosa + Galactosa → Lactosa + H₂O",
+        "b": "C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + ATP",
+        "c": "2 H₂ + O₂ → 2 H₂O + calor",
+        "d": "6 CO₂ + 6 H₂O + Energía solar → C₆H₁₂O₆ (Glucosa) + 6 O₂"
+      },
+      "correcta": "d",
+      "justificacion_correcta": "Las plantas mediante fotosíntesis fijan dióxido de carbono y agua utilizando luz solar para producir D-glucosa y liberar oxígeno a la atmósfera.",
+      "fuente": "genomasur.com-COMPOSICION QUIMICA DE LOS SERES VIVOS.pdf, p. 44-45"
+    }
+  ]
+}
