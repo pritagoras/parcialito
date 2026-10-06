@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-06T00:16:48Z",
+  "generado": "2026-10-06T00:45:38Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -7,16 +7,10 @@
       "emoji": "🧬",
       "temas": [
         {
-          "id": "biologia-celular/01-membrana-plasmatica",
-          "nombre": "Membrana plasmática (ejemplo)",
-          "archivo": "data/biologia-celular/01-membrana-plasmatica.json",
-          "preguntas": 6
-        },
-        {
-          "id": "biologia-celular/02-mitocondria-respiracion",
-          "nombre": "Mitocondria y respiración celular (ejemplo)",
-          "archivo": "data/biologia-celular/02-mitocondria-respiracion.json",
-          "preguntas": 5
+          "id": "biologia-celular/tema_lipidos-convertido",
+          "nombre": "Lípidos",
+          "archivo": "data/biologia-celular/tema_lipidos-convertido.json",
+          "preguntas": 30
         }
       ],
       "color": "#9B7BFF"
