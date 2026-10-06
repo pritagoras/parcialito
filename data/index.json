@@ -1,0 +1,39 @@
+{
+  "generado": "2026-10-06T00:16:48Z",
+  "materias": [
+    {
+      "id": "biologia-celular",
+      "nombre": "Biología Celular y Molecular",
+      "emoji": "🧬",
+      "temas": [
+        {
+          "id": "biologia-celular/01-membrana-plasmatica",
+          "nombre": "Membrana plasmática (ejemplo)",
+          "archivo": "data/biologia-celular/01-membrana-plasmatica.json",
+          "preguntas": 6
+        },
+        {
+          "id": "biologia-celular/02-mitocondria-respiracion",
+          "nombre": "Mitocondria y respiración celular (ejemplo)",
+          "archivo": "data/biologia-celular/02-mitocondria-respiracion.json",
+          "preguntas": 5
+        }
+      ],
+      "color": "#9B7BFF"
+    },
+    {
+      "id": "historia-argentina",
+      "nombre": "Historia Argentina",
+      "emoji": "📜",
+      "temas": [
+        {
+          "id": "historia-argentina/01-mayo-e-independencia",
+          "nombre": "Revolución de Mayo e Independencia (ejemplo)",
+          "archivo": "data/historia-argentina/01-mayo-e-independencia.json",
+          "preguntas": 5
+        }
+      ],
+      "color": "#FFB938"
+    }
+  ]
+}

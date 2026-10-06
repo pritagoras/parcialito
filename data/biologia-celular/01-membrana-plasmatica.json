@@ -1,0 +1,52 @@
+{
+  "materia": "Biología Celular y Molecular",
+  "tema": "Membrana plasmática (ejemplo)",
+  "preguntas": [
+    {
+      "pregunta": "¿Qué modelo describe la membrana como una bicapa lipídica con proteínas que se desplazan lateralmente?",
+      "opciones": ["Modelo del mosaico fluido", "Modelo de Davson y Danielli", "Modelo de la doble hélice", "Modelo quimiosmótico"],
+      "correcta": "A",
+      "explicacion": "El modelo del mosaico fluido (Singer y Nicolson, 1972) plantea una bicapa de fosfolípidos con proteínas integradas que pueden moverse en el plano de la membrana."
+    },
+    {
+      "pregunta": "¿Qué término describe a los fosfolípidos por tener una región hidrofílica y otra hidrofóbica?",
+      "opciones": ["Apolares", "Isotónicos", "Anfipáticos", "Anfóteros"],
+      "correcta": "C",
+      "explicacion": "Los fosfolípidos son anfipáticos: la cabeza polar interactúa con el agua y las colas de ácidos grasos la evitan, lo que favorece la formación de la bicapa."
+    },
+    {
+      "pregunta": "¿Qué función cumple el colesterol en la membrana plasmática de las células animales?",
+      "opciones": ["Sintetiza ATP", "Modula la fluidez de la membrana", "Reconoce antígenos de superficie", "Bombea iones contra gradiente"],
+      "correcta": "B",
+      "explicacion": "El colesterol se intercala entre los fosfolípidos: reduce la fluidez a temperaturas altas y evita que la membrana se rigidice a temperaturas bajas."
+    },
+    {
+      "pregunta": "¿Qué distingue al transporte activo primario de la difusión facilitada?",
+      "opciones": [
+        "El transporte activo no necesita proteínas",
+        "La difusión facilitada consume ATP directamente",
+        "El transporte activo mueve solutos a favor de su gradiente",
+        "El transporte activo mueve solutos en contra de su gradiente usando energía"
+      ],
+      "correcta": "D",
+      "explicacion": "El transporte activo primario utiliza energía (generalmente ATP) para llevar solutos contra su gradiente; la difusión facilitada es pasiva y va a favor del gradiente."
+    },
+    {
+      "pregunta": "¿Cuántos iones mueve la bomba Na⁺/K⁺ ATPasa en cada ciclo?",
+      "opciones": [
+        "Saca 3 Na⁺ e ingresa 2 K⁺",
+        "Saca 2 Na⁺ e ingresa 3 K⁺",
+        "Saca 3 K⁺ e ingresa 2 Na⁺",
+        "Saca 1 Na⁺ e ingresa 1 K⁺"
+      ],
+      "correcta": "A",
+      "explicacion": "Por cada molécula de ATP hidrolizada, la bomba expulsa 3 Na⁺ e introduce 2 K⁺, lo que contribuye al potencial de membrana."
+    },
+    {
+      "pregunta": "¿Qué le ocurre a una célula animal colocada en una solución hipotónica?",
+      "opciones": ["Se crenan (se arrugan)", "Entra agua y puede hincharse hasta lisarse", "No cambia de volumen", "Pierde agua y se deshidrata"],
+      "correcta": "B",
+      "explicacion": "En un medio hipotónico hay menos soluto afuera que adentro, por lo que el agua entra por ósmosis y la célula animal, sin pared, puede estallar."
+    }
+  ]
+}
