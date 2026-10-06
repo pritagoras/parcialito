@@ -1,0 +1,281 @@
+{
+  "materia": "Biologia",
+  "tema": "Enzimas",
+  "preguntas": [
+    {
+      "pregunta": "¿Qué características estructurales definen a las enzimas como catalizadores biológicos según el material de estudio?",
+      "opciones": [
+        "Son lípidos complejos de estructura terciaria o ARN denominados ribozimas.",
+        "Son proteínas globulares de estructura terciaria o cuaternaria, o bien ARN llamados ribozimas.",
+        "Son polisacáridos lineales de estructura secundaria o proteínas fibrosas estables.",
+        "Son exclusivamente nucleótidos modificados que actúan de forma permanente en la célula."
+      ],
+      "correcta": "B",
+      "explicacion": "Las enzimas son proteínas globulares con estructura terciaria o cuaternaria (oligoméricas), aunque también existen moléculas de ARN con capacidad catalítica denominadas ribozimas."
+    },
+    {
+      "pregunta": "¿Cómo se compone una holoenzima o enzima conjugada?",
+      "opciones": [
+        "Por la combinación de dos ribozimas unidas de manera covalente e irreversible.",
+        "Por una porción proteica llamada apoenzima y un componente no proteico llamado cofactor.",
+        "Exclusivamente por una cadena polipeptídica simple sin grupos adicionales.",
+        "Por un grupo prostético unido débilmente a una coenzima proteica."
+      ],
+      "correcta": "B",
+      "explicacion": "Una holoenzima es una enzima conjugada formada por dos partes: una apoenzima (de naturaleza proteica) y un cofactor (de naturaleza no proteica)."
+    },
+    {
+      "pregunta": "¿Cuál es la diferencia estructural y de unión entre un grupo prostético y una coenzima?",
+      "opciones": [
+        "El grupo prostético es un ión inorgánico débil, mientras que la coenzima es un polipéptido permanente.",
+        "El grupo prostético es un compuesto orgánico unido de forma covalente y permanente, mientras que la coenzima se une débil y temporariamente.",
+        "El grupo prostético se une de manera débil a la apoenzima, mientras que la coenzima establece enlaces covalentes permanentes.",
+        "El grupo prostético forma la parte proteica de la holoenzima y la coenzima constituye el cofactor iónico."
+      ],
+      "correcta": "B",
+      "explicacion": "Un grupo prostético es un compuesto orgánico unido covalentemente y de forma permanente a la apoenzima, mientras que una coenzima es un compuesto orgánico (como un nucleótido) que se une débil y temporariamente."
+    },
+    {
+      "pregunta": "¿Qué ocurre en el sitio activo de una enzima cuando interactúa con el sustrato?",
+      "opciones": [
+        "Se forman enlaces covalentes irreversibles que modifican permanentemente la estructura de la enzima.",
+        "Aloja al sustrato, lo acerca, orienta y genera tensión para romper enlaces preexistentes mediante uniones débiles.",
+        "Modifica el delta G global de la reacción aumentando la energía de activación inicial.",
+        "Impide la formación del complejo enzima-sustrato para evitar que se alcance la velocidad máxima."
+      ],
+      "correcta": "B",
+      "explicacion": "El sitio activo aloja al sustrato mediante uniones débiles para formar el complejo E-S, acercando y orientando los reactivos y generando tensión en sus enlaces preexistentes."
+    },
+    {
+      "pregunta": "Respecto a la conformación del sitio activo, ¿qué enunciado describe de forma precisa su estructura tridimensional?",
+      "opciones": [
+        "Está formado siempre por aminoácidos contiguos en la estructura primaria de la proteína.",
+        "Constituye un bolsillo tridimensional donde aminoácidos distantes en la estructura primaria se aproximan por el plegamiento de la cadena.",
+        "Es una superficie plana donde solo pueden interaccionar moléculas no polares mediante puentes disulfuro.",
+        "Se compone exclusivamente de iones inorgánicos que sustituyen la función de los aminoácidos."
+      ],
+      "correcta": "B",
+      "explicacion": "El sitio activo es un bolsillo tridimensional en el cual aminoácidos que están lejanos en la secuencia primaria se acercan entre sí gracias al plegamiento tridimensional de la cadena polipeptídica."
+    },
+    {
+      "pregunta": "¿Qué plantea el modelo de 'encaje inducido' a diferencia del modelo de 'llave-cerradura'?",
+      "opciones": [
+        "Que existe una rígida y perfecta complementariedad previa entre el sitio activo y el sustrato.",
+        "Que el sitio activo completa su adaptación al sustrato recién cuando este ingresa a la enzima.",
+        "Que la enzima cambia su estructura primaria de forma irreversible durante la catálisis.",
+        "Que el sustrato modifica permanentemente la secuencia de aminoácidos del sitio activo."
+      ],
+      "correcta": "B",
+      "explicacion": "En el modelo de encaje inducido, el sitio activo no es totalmente rígido, sino que completa su adaptación geométrica y química al sustrato a medida que este va ingresando."
+    },
+    {
+      "pregunta": "¿De qué manera influyen las enzimas sobre la energía de activación y el cambio de energía libre (delta G) de una reacción química?",
+      "opciones": [
+        "Aumentan la energía de activación y reducen el delta G global de la reacción.",
+        "Disminuyen la energía de activación necesaria para iniciar la reacción, sin modificar el delta G.",
+        "Incrementan tanto la energía de activación como el delta G final del producto.",
+        "Disminuyen el delta G global de la reacción sin alterar la barrera de energía de activación."
+      ],
+      "correcta": "B",
+      "explicacion": "Las enzimas actúan reduciendo el plus de energía necesario para iniciar la reacción (energía de activación), pero no modifican el cambio de energía libre global ($\u0394G = G_f - G_0$)."
+    },
+    {
+      "pregunta": "Entre las propiedades generales de las enzimas se afirma que son 'termolábiles'. ¿A qué se debe esta propiedad?",
+      "opciones": [
+        "A que consumen grandes cantidades de calor para mantener constante la velocidad de reacción.",
+        "A su naturaleza proteica, por la cual su estructura tridimensional y función se ven afectadas por la temperatura.",
+        "A que modifican el equilibrio químico de la reacción cuando varía la temperatura ambiente.",
+        "A que se sintetizan exclusivamente a temperaturas superiores a los 50 °C."
+      ],
+      "correcta": "B",
+      "explicacion": "Las enzimas son termolábiles porque, al ser proteínas, su estructura tridimensional es sensible a las variaciones térmicas, pudiendo desnaturalizarse a temperaturas elevadas."
+    },
+    {
+      "pregunta": "En el estudio de la cinética enzimática, ¿cómo se define formalmente la velocidad de reacción ($V$)?",
+      "opciones": [
+        "Como el número de enzimas consumidas dividido la concentración inicial de sustrato.",
+        "Como el número de productos formados por unidad de tiempo.",
+        "Como la suma total de energía de activación disminuida por cada minuto.",
+        "Como el tiempo requerido para que se desnaturalice el 50% de las moléculas proteicas."
+      ],
+      "correcta": "B",
+      "explicacion": "La velocidad de una reacción catalizada enzimáticamente se expresa como el número de moléculas de producto formadas por unidad de tiempo ($V = \text{Nº de productos formados} / \text{UT}$)."
+    },
+    {
+      "pregunta": "Si en un ensayo in vitro se mantiene constante la concentración de sustrato en exceso y se incrementa progresivamente la concentración de enzima, ¿qué forma adopta la gráfica de velocidad en función de [E]?",
+      "opciones": [
+        "Una curva sigmoidea con una fase de meseta por saturación de cofactores.",
+        "Una línea recta ascendente donde la velocidad es directamente proporcional a [E].",
+        "Una gráfica hiperbólica que decrece a cero por agotamiento rápido del sustrato.",
+        "Una parábola invertida cuyo punto máximo representa la temperatura óptima."
+      ],
+      "correcta": "B",
+      "explicacion": "Al aumentar la concentración de enzima $[E]$ existiendo sustrato suficiente, la velocidad se incrementa de forma lineal y directamente proporcional ($1E \rightarrow 1P/UT$, $2E \rightarrow 2P/UT$, $3E \rightarrow 3P/UT$)."
+    },
+    {
+      "pregunta": "¿Por qué la curva de velocidad en función de la concentración de sustrato [S] alcanza una velocidad constante o meseta en las enzimas michaelianas?",
+      "opciones": [
+        "Porque la temperatura desnaturaliza por completo a la apoenzima.",
+        "Porque se produce la saturación de la enzima al estar todos los sitios activos ocupados.",
+        "Porque disminuye el movimiento molecular del medio impidiendo las colisiones.",
+        "Porque el incremento de sustrato altera el pH óptimo de la solución."
+      ],
+      "correcta": "B",
+      "explicacion": "Al ir aumentando $[S]$ con una cantidad fija de enzima, se llega a un punto donde todas las moléculas de enzima tienen su sitio activo ocupado (saturación), por lo que la velocidad se vuelve constante ($V_{máx}$)."
+    },
+    {
+      "pregunta": "¿Qué representa la constante de Michaelis-Menten ($K_m$) en una enzima michaeliana y cuál es su relación con la afinidad?",
+      "opciones": [
+        "Es la velocidad máxima alcanzada; a mayor $K_m$, mayor es la afinidad entre la enzima y el sustrato.",
+        "Es la concentración de sustrato a la cual se alcanza la mitad de la velocidad máxima; a menor $K_m$, mayor afinidad.",
+        "Es el pH al cual la enzima trabaja al 100% de rendimiento; a mayor $K_m$, menor es la energía de activación.",
+        "Es la energía libre inicial del sustrato; a menor $K_m$, menor es el número de productos formados."
+      ],
+      "correcta": "B",
+      "explicacion": "El $K_m$ es la $[S]$ necesaria para alcanzar la mitad de la $V_{máx}$. Representa una medida de afinidad: a menor $K_m$, la enzima requiere menos sustrato para unirse a él, lo que indica mayor afinidad."
+    },
+    {
+      "pregunta": "Se comparan dos enzimas, E1 y E2, que actúan sobre el mismo sustrato. E1 presenta un $K_m$ menor que E2. ¿Qué se deduce respecto a sus comportamientos?",
+      "opciones": [
+        "E2 tiene mayor afinidad por el sustrato y requiere menos $[S]$ para llegar a $V_{máx}/2$.",
+        "E2 es menos afín al sustrato y necesita mayor concentración de sustrato para alcanzar $V_{máx}/2$.",
+        "E1 es menos afín y requiere más concentración de sustrato para formar el complejo E-S.",
+        "Ambas enzimas tienen la misma afinidad pero E1 alcanza una velocidad máxima superior a E2."
+      ],
+      "correcta": "B",
+      "explicacion": "Al tener un $K_m$ mayor, a la enzima E2 le cuesta más unirse al sustrato (es menos afín) y necesita mayor $[S]$ para alcanzar la mitad de su velocidad máxima."
+    },
+    {
+      "pregunta": "¿Qué sucede con la actividad enzimática cuando la temperatura se eleva sustancialmente por encima de la temperatura óptima?",
+      "opciones": [
+        "La velocidad aumenta indefinidamente por la aceleración ininterrumpida del movimiento molecular.",
+        "La velocidad decrece abruptamente debido a la desnaturalización de la proteína.",
+        "La constante de Michaelis ($K_m$) cae a cero permitiendo un encaje perfecto.",
+        "La enzima pasa de una estructura terciaria a una cuaternaria para estabilizarse."
+      ],
+      "correcta": "B",
+      "explicacion": "Superada la temperatura óptima, la velocidad cae marcadamente debido a que el exceso de energía térmica rompe la estructura tridimensional de la enzima, produciendo su desnaturalización."
+    },
+    {
+      "pregunta": "¿De qué modo afecta un pH alejado del valor óptimo a la actividad de una enzima?",
+      "opciones": [
+        "Modifica el delta G de la reacción convirtiendo una reacción exergónica en endergónica.",
+        "Afecta las cargas eléctricas de la enzima y del sustrato, alterando la estructura tridimensional e interacción.",
+        "Incrementa la concentración de apoenzimas en la solución acelerando la formación del producto.",
+        "Transforma de manera permanente a las coenzimas en grupos prostéticos."
+      ],
+      "correcta": "B",
+      "explicacion": "El pH afecta el estado de ionización (cargas) de los aminoácidos del sitio activo y del sustrato, lo cual perjudica la estructura 3D de la proteína y la interacción entre ambos, reduciendo la velocidad."
+    },
+    {
+      "pregunta": "¿Qué diferencia fundamental existe entre los inhibidores irreversibles y los reversibles?",
+      "opciones": [
+        "Los irreversibles se unen débilmente al sitio alostérico, mientras que los reversibles forman enlaces iónicos.",
+        "Los irreversibles se unen por enlace covalente e inhiben permanentemente; los reversibles se unen de forma débil.",
+        "Los irreversibles son siempre producidos por el organismo y los reversibles son toxinas exógenas.",
+        "Los irreversibles modifican el $K_m$ y los reversibles alteran exclusivamente la temperatura óptima."
+      ],
+      "correcta": "B",
+      "explicacion": "Los inhibidores irreversibles forman uniones covalentes con la enzima anulándola permanentemente, mientras que los reversibles se unen mediando enlaces débiles y no la inactivan de forma definitiva."
+    },
+    {
+      "pregunta": "¿Cómo actúa un inhibidor competitivo sobre la enzima y de qué forma se puede revertir su efecto?",
+      "opciones": [
+        "Se une a un sitio distinto del activo; su efecto se revierte disminuyendo la concentración de sustrato.",
+        "Se une al sitio activo de la enzima; su efecto se revierte aumentando la concentración de sustrato.",
+        "Se une covalentemente a la coenzima; su efecto se revierte adicionando fosfatasas a la solución.",
+        "Se une al complejo E-S impidiendo la catálisis; su efecto no puede revertirse agregando sustrato."
+      ],
+      "correcta": "B",
+      "explicacion": "El inhibidor competitivo compite directamente con el sustrato por el sitio activo. Debido a que su unión es reversible y débil, la inhibición se revierte desplazándolo al aumentar la $[S]$."
+    },
+    {
+      "pregunta": "¿Qué parámetros cinéticos se modifican en presencia de un inhibidor no competitivo?",
+      "opciones": [
+        "Aumenta el $K_m$ y la velocidad máxima se mantiene inalterada.",
+        "El $K_m$ no se modifica, pero la velocidad máxima ($V_{máx}$) disminuye y no se alcanza.",
+        "Disminuye el $K_m$ y la velocidad máxima aumenta considerablemente.",
+        "Tanto el $K_m$ como la velocidad máxima aumentan proporcionalmente a la cantidad de inhibidor."
+      ],
+      "correcta": "B",
+      "explicacion": "El inhibidor no competitivo se une a otro sitio distinto del activo. Permite la formación del complejo E-S pero afecta la catálisis, por lo que reduce la $V_{máx}$ sin alterar el $K_m$ de la enzima."
+    },
+    {
+      "pregunta": "En un gráfico de velocidad vs. [S], ¿cómo se comporta la curva de una enzima en presencia de un inhibidor competitivo en comparación con el control sin inhibidor?",
+      "opciones": [
+        "Alcanza la misma $V_{máx}$, pero requiere una mayor [S] para llegar a $V_{máx}/2$ (presenta mayor $K_m$).",
+        "Presenta una $V_{máx}$ notablemente inferior y mantiene exactamente el mismo $K_m$.",
+        "Modifica la curva de hiperbólica a sigmoidea sin cambiar el valor de $K_m$.",
+        "Cae a cero inmediatamente tras agregar la primera unidad de sustrato."
+      ],
+      "correcta": "A",
+      "explicacion": "El inhibidor competitivo aumenta el $K_m$ aparente (se requiere más sustrato para alcanzar $V_{máx}/2$), pero al saturar con abundante sustrato se alcanza la misma $V_{máx}$ que en ausencia de inhibidor."
+    },
+    {
+      "pregunta": "¿Qué es la inhibición por producto final o feedback negativo en una vía metabólica?",
+      "opciones": [
+        "Un mecanismo donde el precursor de la vía estimula covalentemente a la última enzima.",
+        "Un proceso en el cual el producto final de la secuencia inhibe a una de las primeras enzimas de la vía.",
+        "La degradación del sustrato inicial por acción de enzimas proteasómicas especificas.",
+        "La desactivación de la holoenzima mediante la remoción definitiva de su grupo prostético."
+      ],
+      "correcta": "B",
+      "explicacion": "En las vías metabólicas, el producto final acumulado puede actuar como un inhibidor de la primera enzima (o una de las iniciales) de la secuencia para evitar la sobreproducción de dicho producto."
+    },
+    {
+      "pregunta": "¿Qué caracteriza a la estructura y a la gráfica de cinética de las enzimas alostéricas?",
+      "opciones": [
+        "Tienen estructura primaria lineal y exhiben una curva cinéticamente hiperbólica.",
+        "Generalmente poseen estructura cuaternaria (oligoméricas) y muestran una curva cinética sigmoidea.",
+        "Están compuestas por una única cadena polipeptídica y no poseen sitios de regulación distintos del activo.",
+        "Son enzimas digestivas simples con una gráfica de velocidad que no depende de la concentración de sustrato."
+      ],
+      "correcta": "B",
+      "explicacion": "Las enzimas alostéricas poseen estructura cuaternaria (varias subunidades). Debido al efecto cooperativo (interacción homotrópica entre sus subunidades), su gráfica de velocidad vs. $[S]$ es una curva sigmoidea."
+    },
+    {
+      "pregunta": "¿Cómo actúan los efectores alostéricos positivos y negativos sobre las conformaciones de la enzima alostérica?",
+      "opciones": [
+        "Los positivos estabilizan la forma Tensa (inactiva) y los negativos la forma Relajada (activa).",
+        "Los positivos estabilizan la forma Relajada (R, activa) y los negativos estabilizan la forma Tensa (T, inactiva).",
+        "Ambos se unen al sitio activo destruyendo de forma irreversible la apoenzima.",
+        "Los positivos rompen enlaces covalentes y los negativos escinden fragmentos peptídicos."
+      ],
+      "correcta": "B",
+      "explicacion": "Los efectores o moduladores alostéricos positivos estabilizan la forma activa o 'Relajada' (R) favoreciendo la afinidad por el sustrato, mientras que los negativos estabilizan la forma inactiva o 'Tensa' (T)."
+    },
+    {
+      "pregunta": "¿Qué es un zimógeno y mediante qué mecanismo se transforma en su forma activa?",
+      "opciones": [
+        "Un ARN catalítico que se activa por regulación alostérica heterotrópica.",
+        "Un precursor enzimático inactivo que se activa mediante modificación covalente irreversible (escisión de un fragmento).",
+        "Una coenzima unida a un ión que se activa por la adición reversible de un grupo fosfato.",
+        "Una proteína globular activa que se inactiva en presencia de un bajo pH."
+      ],
+      "correcta": "B",
+      "explicacion": "Los zimógenos son precursores inactivos secretados por la célula. Se activan cuando se escinde un fragmento de su cadena polipeptídica por cambios de pH u otra enzima, siendo una modificación covalente irreversible."
+    },
+    {
+      "pregunta": "En la regulación por modificación covalente reversible mediante fosforilación y desfosforilación, ¿qué enzimas participan y cuál es su efecto?",
+      "opciones": [
+        "Las kinasas agregan un fosfato y las fosfatasas lo remueven; la forma activa depende de cada enzima en particular.",
+        "Las fosfatasas agregan un fosfato para activar a la enzima y las kinasas lo quitan para inactivarla.",
+        "Las ribozimas transfieren el grupo fosfato de forma permanente destruyendo la apoenzima.",
+        "Las polimerasas fosforilan a la enzima tornando activa únicamente a la forma desfosforilada."
+      ],
+      "correcta": "A",
+      "explicacion": "Las kinasas catalizan la adición de un grupo fosfato (fosforilación) y las fosfatasas su remoción (desfosforilación). Según la enzima particular, la forma activa puede ser la fosforilada o la desfosforilada."
+    },
+    {
+      "pregunta": "¿De qué manera la célula controla la cantidad de enzima presente y su tiempo de permanencia activa mediante regulación genética y degradación?",
+      "opciones": [
+        "Modificando la constante $K_m$ en la cadena proteica y bloqueando la unión de coenzimas.",
+        "Activando o reprimiendo la transcripción del gen de la enzima y degradándola en el proteosoma.",
+        "Escindiendo permanentemente trozos del sitio activo para acortar su vida media.",
+        "Alterando la energía de activación global de la célula para prevenir la formación de holoenzimas."
+      ],
+      "correcta": "B",
+      "explicacion": "La cantidad de enzima se regula en el ADN activando o reprimiendo la transcripción de su gen. Por su parte, la vida media y el reciclaje de las proteínas enzimáticas se regulan mediante su degradación en el proteosoma."
+    }
+  ]
+}

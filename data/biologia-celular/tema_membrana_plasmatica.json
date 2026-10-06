@@ -1,0 +1,281 @@
+{
+  "materia": "Biologia",
+  "tema": "Membrana Plasmatica",
+  "preguntas": [
+    {
+      "pregunta": "¿Cuál es la función principal que cumplen los glúcidos ubicados en la cara extracelular de la membrana plasmática?",
+      "opciones": [
+        "Proporcionar elasticidad a la bicapa mediante la hidrólisis de moléculas de ATP.",
+        "Actuar como receptores y participar en el reconocimiento y adhesión celular.",
+        "Facilitar el transporte pasivo de iones a favor de su gradiente de concentración.",
+        "Anclar la superficie interna de la membrana directamente con las fibras del citoesqueleto."
+      ],
+      "correcta": "B",
+      "explicacion": "Los glúcidos ubicados en la cara extracelular (glicocálix) actúan como receptores y participan activamente en el reconocimiento y adhesión celular. La unión al citoesqueleto la realizan proteínas periféricas y el transporte pasivo de iones lo llevan a cabo proteínas de transporte como los canales."
+    },
+    {
+      "pregunta": "¿Qué tipo de glucolípidos específicos se encuentran presentes en las membranas celulares según el material de estudio?",
+      "opciones": [
+        "Gangliósidos y cerebrósidos.",
+        "Esteroides y fosfolípidos.",
+        "Acuaporinas y permeasas.",
+        "Oligosacáridos y colesterol."
+      ],
+      "correcta": "A",
+      "explicacion": "El material explicita que los glicolípidos (o glucolípidos) presentes en las membranas celulares corresponden a los gangliósidos y cerebrósidos. El colesterol y los fosfolípidos son otros tipos de lípidos, mientras que las acuaporinas y permeasas son proteínas."
+    },
+    {
+      "pregunta": "¿Qué combinación de características en las colas de ácidos grasos incrementa la fluidez de la membrana plasmática?",
+      "opciones": [
+        "Colas largas y saturadas.",
+        "Colas cortas e insaturadas.",
+        "Colas largas e insaturadas.",
+        "Colas cortas y saturadas."
+      ],
+      "correcta": "B",
+      "explicacion": "Una mayor fluidez en la membrana se logra cuando las colas de los ácidos grasos son cortas e insaturadas. Por el contrario, las colas largas y saturadas disminuyen la fluidez de la bicapa."
+    },
+    {
+      "pregunta": "¿Cómo influye el colesterol en la regulación de la fluidez de la membrana frente a cambios de temperatura?",
+      "opciones": [
+        "Aumenta la fluidez a altas temperaturas y la disminuye a bajas temperaturas.",
+        "Disminuye la fluidez a altas temperaturas y la aumenta a bajas temperaturas.",
+        "Mantiene invariable la fluidez únicamente cuando se hidroliza ATP.",
+        "Aumenta la fluidez de manera constante sin importar la temperatura del medio."
+      ],
+      "correcta": "B",
+      "explicacion": "El colesterol regula la fluidez de la membrana haciendo que aumente a bajas temperaturas y disminuya a altas temperaturas. Esto evita que la bicapa se rigidice excesivamente con el frío o se vuelva demasiado fluida con el calor."
+    },
+    {
+      "pregunta": "Respecto a la asimetría de la membrana plasmática, ¿cuál de los siguientes enunciados es correcto?",
+      "opciones": [
+        "Los glúcidos se exponen en ambas caras de la membrana por igual.",
+        "Los lípidos de cada una de las monocapas son exactamente idénticos.",
+        "Los glúcidos se encuentran expuestos únicamente en la cara extracelular.",
+        "Las proteínas integrales se distribuyen de forma simétrica sin regiones diferenciadas."
+      ],
+      "correcta": "C",
+      "explicacion": "La asimetría de la membrana implica que los glúcidos solo se expongan en la cara extracelular, que los lípidos de cada monocapa sean distintos y que las proteínas expongan regiones diferenciadas en cada cara."
+    },
+    {
+      "pregunta": "¿Qué tipo de movimiento de los lípidos es exclusivo de ellos y requiere la asistencia de enzimas como flipasas y escramblasas?",
+      "opciones": [
+        "Rotación sobre su propio eje.",
+        "Desplazamiento lateral dentro de la misma capa.",
+        "Flip-flop entre monocapas.",
+        "Difusión facilitada por carriers."
+      ],
+      "correcta": "C",
+      "explicacion": "El movimiento de flip-flop (paso de un lípido de una monocapa a otra) es exclusivo de los lípidos y requiere ayuda de enzimas específicas como flipasas y escramblasas. La rotación y el desplazamiento lateral ocurren espontáneamente."
+    },
+    {
+      "pregunta": "¿Qué sustancias atraviesan la membrana plasmática por difusión simple directamente a través de la bicapa lipídica?",
+      "opciones": [
+        "Iones como el sodio y el calcio.",
+        "Gases como el oxígeno y el dióxido de carbono.",
+        "Macromoléculas y nucleótidos.",
+        "Moléculas polares grandes como la glucosa."
+      ],
+      "correcta": "B",
+      "explicacion": "Los gases ($O_2$, $CO_2$, $N_2$) y moléculas pequeñas hidrofóbicas o apolares atraviesan la membrana por difusión simple a través de los lípidos. Los iones y la glucosa requieren proteínas transportadoras."
+    },
+    {
+      "pregunta": "En la difusión facilitada por carriers o permeasas, ¿cuál es el mecanismo por el cual se transporta el soluto?",
+      "opciones": [
+        "La proteína hidroliza ATP para abrir un poro permanente en la bicapa.",
+        "La proteína sufre un cambio de conformación al unirse el soluto para liberarlo al otro lado.",
+        "El soluto se une a los carbohidratos del glicocálix para atravesar la región apolar.",
+        "El soluto es envuelto por pseudópodos y transportado dentro de un fagosoma."
+      ],
+      "correcta": "B",
+      "explicacion": "Los carriers o permeasas unen solutos polares específicos (como glucosa o aminoácidos) y sufren un cambio conformacional (de conformación A a B) que permite liberar la sustancia al otro lado sin gasto de energía."
+    },
+    {
+      "pregunta": "¿Cuál es la característica principal de la difusión facilitada por canales iónicos?",
+      "opciones": [
+        "Transporta iones en contra de su gradiente consumiendo energía.",
+        "Utiliza una proteína con un canal hidrofílico interno para transportar iones a favor de gradiente.",
+        "Funciona mediante la escisión covalente de fragmentos de carbohidratos.",
+        "Requiere de la formación de vesículas de endocitosis para ingresar el soluto."
+      ],
+      "correcta": "B",
+      "explicacion": "Un canal iónico es una proteína transportadora específica para un ión que posee un canal hidrofílico interior, permitiendo el paso a favor de gradiente de concentración y sin gasto de energía."
+    },
+    {
+      "pregunta": "Si un glóbulo rojo se coloca en un medio hipertónico respecto de su interior, ¿qué proceso ocurre y cuál es el resultado en la célula?",
+      "opciones": [
+        "El agua entra a la célula provocando su estallido o hemólisis.",
+        "El agua sale de la célula provocando su arrugamiento o crenación.",
+        "Los solutos entran masivamente manteniendo el volumen normal.",
+        "La célula experimenta turgencia por entrada de agua a la vacuola."
+      ],
+      "correcta": "B",
+      "explicacion": "En un medio hipertónico (mayor concentración de solutos afuera), el agua sale de la célula por ósmosis para igualar concentraciones. En el glóbulo rojo, esto provoca su deshidratación y deformación, proceso conocido como crenación."
+    },
+    {
+      "pregunta": "¿Qué le ocurre a una célula vegetal cuando es introducida en un medio hipotónico?",
+      "opciones": [
+        "Sufre crenación debido a la pérdida excesiva de agua.",
+        "Sufre plasmólisis, separándose la membrana de la pared.",
+        "Experimenta turgencia por la entrada de agua.",
+        "Sufre hemólisis y estalla por la presión osmótica."
+      ],
+      "correcta": "C",
+      "explicacion": "En un medio hipotónico, el agua ingresa a la célula vegetal por ósmosis. Debido a la presencia de la pared celular, la célula no estalla sino que entra en estado de turgencia."
+    },
+    {
+      "pregunta": "¿Qué proceso osmótico experimenta una célula vegetal colocada en un medio hipertónico?",
+      "opciones": [
+        "Turgencia por ingreso masivo de solvente.",
+        "Plasmólisis o marchitez por salida de agua.",
+        "Hemólisis por ruptura de la pared celular.",
+        "Endocitosis inespecífica de solutos."
+      ],
+      "correcta": "B",
+      "explicacion": "Al estar en un medio hipertónico, la célula vegetal pierde agua hacia el exterior, provocando la retracción de su contenido membranoso, proceso denominado plasmólisis o marchitez."
+    },
+    {
+      "pregunta": "¿Qué son las acuaporinas y en qué tipo de células son especialmente requeridas según el material?",
+      "opciones": [
+        "Son bombas de transporte activo primario presentes en los glóbulos rojos.",
+        "Son canales específicos para el agua requeridos en células como las renales.",
+        "Son receptores de glucolípidos encargados del reconocimiento tisular.",
+        "Son enzimas digestivas que intervienen en la exocitosis de desechos."
+      ],
+      "correcta": "B",
+      "explicacion": "Las acuaporinas son canales proteicos específicos para el transporte de agua que se necesitan en células (como las renales) donde se requiere un flujo de agua mayor al alcanzado solo por difusión simple a través de la bicapa."
+    },
+    {
+      "pregunta": "¿Cómo se define el transporte activo primario a través de la membrana?",
+      "opciones": [
+        "Transporte a favor de gradiente impulsado por la energía potencial del sodio.",
+        "Transporte de solutos contra gradiente acoplado directamente a la hidrólisis de ATP.",
+        "Paso de agua de un medio hipotónico a uno hipertónico a través de permeasas.",
+        "Movimiento de macromoléculas mediado exclusivamente por pseudópodos."
+      ],
+      "correcta": "B",
+      "explicacion": "El transporte activo primario es realizado por bombas que transportan iones o solutos en contra de su gradiente de concentración consumiendo energía directamente de la hidrólisis de ATP."
+    },
+    {
+      "pregunta": "Durante un ciclo funcional de la bomba de $Na^+$ y $K^+$, ¿cuántos iones y en qué dirección son transportados por cada molécula de ATP consumida?",
+      "opciones": [
+        "3 $Na^+$ hacia el interior y 2 $K^+$ hacia el exterior.",
+        "2 $Na^+$ hacia el exterior y 3 $K^+$ hacia el interior.",
+        "3 $Na^+$ hacia el exterior y 2 $K^+$ hacia el interior.",
+        "2 $Na^+$ hacia el interior y 2 $K^+$ hacia el exterior."
+      ],
+      "correcta": "C",
+      "explicacion": "Por cada ATP hidrolizado, la bomba de $Na^+/K^+$ transporta 3 iones $Na^+$ hacia el medio extracelular y 2 iones $K^+$ hacia el medio intracelular, ambos en contra de sus respectivos gradientes."
+    },
+    {
+      "pregunta": "Además de mantener las concentraciones iónicas, ¿qué consecuencia eléctrica directa produce el funcionamiento de la bomba de $Na^+$ y $K^+$?",
+      "opciones": [
+        "Invierte de forma permanente la fluidez de la bicapa lipídica.",
+        "Genera un potencial eléctrico de membrana por diferencia de carga entre ambos lados.",
+        "Cancela la necesidad de transporte activo secundario en la célula.",
+        "Satura los canales de agua impidiendo la ocurrencia de la ósmosis."
+      ],
+      "correcta": "B",
+      "explicacion": "Al bombear 3 cargas positivas hacia afuera por cada 2 que ingresan, la bomba de $Na^+/K^+$ genera una diferencia de voltaje o carga entre ambos lados de la membrana, denominada potencial eléctrico de membrana."
+    },
+    {
+      "pregunta": "¿En qué consiste la fuente de energía que impulsa al transporte activo secundario o cotransporte?",
+      "opciones": [
+        "En la hidrólisis directa de ATP realizada por el propio cotransportador.",
+        "En el gradiente favorable de un soluto (generalmente $Na^+$) que arrastra a otro soluto contra gradiente.",
+        "En el movimiento libre de agua a través de los lípidos de la membrana.",
+        "En la formación de vesículas mediante invaginación de la superficie celular."
+      ],
+      "correcta": "B",
+      "explicacion": "El cotransportador no gasta ATP directamente, sino que es activado por el gradiente favorable de un soluto (como el $Na^+$), cuyo pasaje impulsa o arrastra el transporte de un segundo soluto en contra de su gradiente."
+    },
+    {
+      "pregunta": "¿Cuál es la diferencia de dirección entre los mecanismos de simporte y antiporte en el cotransporte?",
+      "opciones": [
+        "En el simporte ambos solutos van a favor de gradiente; en el antiporte ambos van en contra.",
+        "En el simporte los dos solutos se mueven en el mismo sentido; en el antiporte se mueven en sentidos contrarios.",
+        "El simporte transporta únicamente agua y el antiporte transporta únicamente iones.",
+        "El simporte consume energía de ATP y el antiporte utiliza la energía de la matriz extracelular."
+      ],
+      "correcta": "B",
+      "explicacion": "En el cotransporte, cuando ambos solutos son transportados en la misma dirección a través de la membrana se denomina simporte, mientras que si se mueven en direcciones opuestas se trata de un antiporte."
+    },
+    {
+      "pregunta": "¿Por qué el funcionamiento del cotransporte (transporte activo secundario) depende indirectamente del gasto de ATP?",
+      "opciones": [
+        "Porque el cotransportador hidroliza ATP cada vez que cambia de conformación.",
+        "Porque requiere que una bomba (como la de $Na^+/K^+$) mantenga el gradiente del soluto impulsor consumiendo ATP.",
+        "Porque el ATP se une covalentemente a los glúcidos de la cara externa para abrir la proteína.",
+        "Porque la glucosa que se cotransporta se transforma directamente en ATP dentro del carrier."
+      ],
+      "correcta": "B",
+      "explicacion": "Para que el cotransporte continúe, se debe mantener el gradiente favorable del soluto que mueve el sistema (como el $Na^+$). Esto se logra mediante el trabajo constante de una bomba primaria que expulsa dicho ión con gasto de ATP."
+    },
+    {
+      "pregunta": "¿En qué consiste el transporte en masa denominado fagocitosis?",
+      "opciones": [
+        "En el ingreso de líquido celular mediante pequeñas vesículas sin revestimiento.",
+        "En la incorporación de partículas sólidas o alimento mediante la emisión de pseudópodos que forman un fagosoma.",
+        "En la salida de macromoléculas por fusión de vesículas secretoras con la membrana.",
+        "En el pasaje de sustancias apolares directamente entre las colas hidrofóbicas de los fosfolípidos."
+      ],
+      "correcta": "B",
+      "explicacion": "La fagocitosis es un tipo de transporte en masa en el que la célula emite pseudópodos para envolver partículas sólidas o alimentos, formando una vesícula interna llamada fagosoma."
+    },
+    {
+      "pregunta": "¿Qué función cumple la fagocitosis en los organismos unicelulares y en los glóbulos blancos respectivamente?",
+      "opciones": [
+        "En unicelulares sirve para la secreción de desechos y en glóbulos blancos para la regulación del pH.",
+        "En unicelulares es una forma de alimentación y en glóbulos blancos sirve para la destrucción de agentes patógenos.",
+        "En unicelulares permite el movimiento por cilios y en glóbulos blancos produce la lisis de eritrocitos.",
+        "En ambos casos sirve exclusivamente para eliminar agua acumulada en el citoplasma."
+      ],
+      "correcta": "B",
+      "explicacion": "Según la fuente, la fagocitosis constituye una forma de alimentación en organismos unicelulares, mientras que en las células de defensa (glóbulos blancos) cumple la función de destruir agentes patógenos."
+    },
+    {
+      "pregunta": "¿Qué caracteriza a la pinocitosis o endocitosis inespecífica a granel?",
+      "opciones": [
+        "La unión selectiva de moléculas a receptores de membrana específicos.",
+        "La incorporación de macromoléculas en suspensión líquida del medio extracelular en una vesícula endosítica.",
+        "La expulsión de desechos metabólicos fuera de la célula por exocitosis.",
+        "El paso de iones a través de canales no regulados permanentemente abiertos."
+      ],
+      "correcta": "B",
+      "explicacion": "La pinocitosis (endocitosis a granel) consiste en la incorporación no específica de fluidos y macromoléculas en suspensión provenientes del medio extracelular mediante la formación de vesículas endosíticas."
+    },
+    {
+      "pregunta": "A diferencia de la pinocitosis, ¿qué elemento clave interviene en la endocitosis mediada por receptor?",
+      "opciones": [
+        "La formación de pseudópodos rígidos para capturar fragmentos de membrana.",
+        "La presencia de receptores específicos en la membrana y la formación de una vesícula revestida.",
+        "El uso de bombas activas que consumen ATP de la matriz extracelular.",
+        "La difusión directa del ligando a través de los fosfolípidos de la bicapa."
+      ],
+      "correcta": "B",
+      "explicacion": "En la endocitosis mediada por receptor, la macromolécula se une específicamente a receptores de la superficie celular (en zonas como caveolas revestidas), formando una vesícula endosítica revestida."
+    },
+    {
+      "pregunta": "¿En qué consiste el proceso de exocitosis y cuáles son sus variantes según la naturaleza del material expulsado?",
+      "opciones": [
+        "En el ingreso de agua a la célula; se divide en turgencia y plasmólisis.",
+        "En la fusión de una vesícula con la membrana plasmática para verter su contenido al exterior; se divide en secreción y excreción.",
+        "En el paso pasivo de gases; se divide en difusión simple y facilitada.",
+        "En el movimiento de lípidos entre monocapas; se divide en simporte y antiporte."
+      ],
+      "correcta": "B",
+      "explicacion": "La exocitosis es el proceso por el cual una vesícula intracelular se fusiona con la membrana plasmática liberando su contenido al medio extracelular. Se clasifica en secreción o excreción según el destino/función del material liberado."
+    },
+    {
+      "pregunta": "Si se clasifica el transporte de membranas según la naturaleza de lo transportado y el gasto energético, ¿qué mecanismos corresponden respectivamente al paso pasivo de un ión y a la incorporación de un líquido con macromoléculas?",
+      "opciones": [
+        "Transporte activo primario y fagocitosis.",
+        "Difusión facilitada por canal y pinocitosis (endocitosis).",
+        "Difusión simple por bicapa y exocitosis.",
+        "Transporte activo secundario por simporte y ósmosis."
+      ],
+      "correcta": "B",
+      "explicacion": "El paso pasivo (a favor de gradiente) de un ión polar se realiza por difusión facilitada a través de un canal iónico, mientras que el ingreso masivo de sustancias líquidas con macromoléculas se lleva a cabo mediante pinocitosis o endocitosis."
+    }
+  ]
+}

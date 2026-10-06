@@ -1,0 +1,281 @@
+{
+  "materia": "Biologia",
+  "tema": "Metabolismo",
+  "preguntas": [
+    {
+      "pregunta": "¿Cómo se define de forma general el metabolismo en una célula según el material de estudio?",
+      "opciones": [
+        "El intercambio exclusivo de gases y agua a través de la membrana plasmática.",
+        "La totalidad de los procesos químicos y transformaciones de materia y energía que ocurren en una célula.",
+        "La síntesis de macromoléculas a partir de energía lumínica captada en el citosol.",
+        "El conjunto de reacciones de óxido-reducción que ocurren en el núcleo celular."
+      ],
+      "correcta": "B",
+      "explicacion": "El metabolismo es definido como la totalidad de los procesos químicos de un organismo y las transformaciones de materia y energía que ocurren en la célula[cite: 185, 186]. Las vías metabólicas son dirigidas por enzimas para acelerar reacciones determinadas[cite: 186]."
+    },
+    {
+      "pregunta": "¿Por qué los organismos vivos se clasifican como sistemas termodinámicos obligatoriamente abiertos?",
+      "opciones": [
+        "Porque mantienen la energía total del universo sin sufrir cambios de forma.",
+        "Porque intercambian materia y energía con el entorno.",
+        "Porque consumen únicamente calor para realizar trabajo mecánico.",
+        "Porque su entropía interna disminuye hasta alcanzar el equilibrio absoluto."
+      ],
+      "correcta": "B",
+      "explicacion": "Los seres vivos son sistemas abiertamente en interacción con su ambiente, lo que implica que intercambian materia y energía con el entorno de forma continua[cite: 189]. Un sistema cerrado no realizaría dicho intercambio con su medio[cite: 191]."
+    },
+    {
+      "pregunta": "¿Cómo se almacena la energía proveniente del sol en las moléculas de los alimentos durante la fotosíntesis?",
+      "opciones": [
+        "En forma de energía cinética acumulada en el citosol.",
+        "En forma de energía química en sus enlaces, que es un tipo de energía potencial.",
+        "Como entropía positiva distribuida en los gradientes de protones.",
+        "Como calor latente absorbido por las proteínas del estroma."
+      ],
+      "correcta": "B",
+      "explicacion": "La energía lumínica del sol se transforma y almacena en los enlaces de las moléculas alimenticias como energía química, la cual representa una forma de energía potencial[cite: 188]."
+    },
+    {
+      "pregunta": "¿Qué establece la Primera Ley de la Termodinámica sobre la energía total del universo?",
+      "opciones": [
+        "Que la energía puede destruirse en procesos fuertemente exergónicos.",
+        "Que la energía puede convertirse de una forma a otra, pero no se crea ni se destruye.",
+        "Que la energía cinética se convierte espontáneamente en energía potencial sin pérdidas.",
+        "Que la energía potencial disminuye a cero en cualquier transformación biológica."
+      ],
+      "correcta": "B",
+      "explicacion": "La primera ley sostiene que la energía se transforma de una forma a otra, pero la energía total de un sistema y su entorno (el universo) se mantiene constante sin crearse ni destruirse[cite: 190]."
+    },
+    {
+      "pregunta": "Según la Segunda Ley de la Termodinámica, ¿qué sucede con la entropía del universo en las transformaciones naturales de energía?",
+      "opciones": [
+        "Permanece en cero si la temperatura citosólica es constante.",
+        "Tiende a crecer constantemente a medida que aumenta el desorden.",
+        "Disminuye progresivamente en las reacciones catabólicas.",
+        "Se convierte de forma completa en energía potencial utilizable."
+      ],
+      "correcta": "B",
+      "explicacion": "A medida que la energía potencial organizada se transforma en cinética molecular desorganizada, la entropía (desorden) tiende a crecer constantemente en el universo[cite: 191]."
+    },
+    {
+      "pregunta": "En términos termodinámicos, ¿cuál de las siguientes condiciones define a un proceso químico espontáneo?",
+      "opciones": [
+        "Un cambio de energía libre de Gibbs positivo ($\\Delta G > 0$).",
+        "Una variación de energía libre de Gibbs negativa ($\\Delta G < 0$).",
+        "Un consumo neto de entalpía sin liberación de calor.",
+        "Un incremento en la energía potencial del estado final respecto al inicial."
+      ],
+      "correcta": "B",
+      "explicacion": "Un proceso es espontáneo cuando la energía libre del sistema decrece, es decir, cuando el cambio de energía libre $\\Delta G$ es menor a cero (negativo)[cite: 192, 193]."
+    },
+    {
+      "pregunta": "¿Qué caracteriza fundamentalmente a las reacciones exergónicas en cuanto a su energía libre y nivel de organización?",
+      "opciones": [
+        "Consumen energía, presentan un $\\Delta G$ positivo y aumentan la organización.",
+        "Liberan energía, tienen un $\\Delta G$ negativo y aumentan la entropía del sistema.",
+        "Ocurren sin variación de entalpía y mantienen el $G$ final mayor al $G$ inicial.",
+        "Son no espontáneas y requieren acoplamiento directo con la fotólisis del agua."
+      ],
+      "correcta": "B",
+      "explicacion": "Las reacciones exergónicas se caracterizan por liberar energía ($G_{\\text{final}} < G_{\\text{inicial}}$), tener un $\\Delta G$ negativo, aumentar la entropía y ser espontáneas[cite: 193, 195]."
+    },
+    {
+      "pregunta": "¿Cuál es la relación general entre las vías catabólicas y las reacciones exergónicas?",
+      "opciones": [
+        "Las vías catabólicas son endergónicas porque sintetizan sustancias complejas.",
+        "Todas las reacciones catabólicas son exergónicas y degradan sustancias complejas a simples.",
+        "Las vías catabólicas consumen ATP para reducir moléculas oxidadas.",
+        "Las reacciones catabólicas mantienen constante el nivel de energía de Gibbs sin liberar calor."
+      ],
+      "correcta": "B",
+      "explicacion": "El catabolismo abarca reacciones de degradación (de sustancias complejas a simples) y todas ellas son reacciones exergónicas que liberan energía[cite: 195, 206]."
+    },
+    {
+      "pregunta": "¿Por qué las reacciones anabólicas son clasificadas como endergónicas?",
+      "opciones": [
+        "Porque liberan calor y aumentan la entropía del entorno celular.",
+        "Porque consumen energía para formar sustancias complejas a partir de simples.",
+        "Porque ocurren de manera espontánea en ausencia de enzimas.",
+        "Porque tienen un valor de $\\Delta G$ menor a cero durante la síntesis."
+      ],
+      "correcta": "B",
+      "explicacion": "El anabolismo corresponde a reacciones de síntesis que aumentan la organización celular y consumen energía, por lo que presentan un $\\Delta G$ positivo y son endergónicas[cite: 194, 195, 206]."
+    },
+    {
+      "pregunta": "Además de las vías anabólicas de síntesis, ¿qué otros procesos celulares se consideran endergónicos?",
+      "opciones": [
+        "La respiración celular y la hidrólisis del glucógeno.",
+        "El transporte activo y el movimiento celular.",
+        "La combustión de glucosa y la deaminación de aminoácidos.",
+        "La reducción de coenzimas en la matriz mitocondrial."
+      ],
+      "correcta": "B",
+      "explicacion": "El material destaca que existen procesos celulares que consumen energía y son endergónicos aunque no sean estrictamente sintéticos o anabólicos, como el transporte activo y el movimiento[cite: 195]."
+    },
+    {
+      "pregunta": "¿Qué función cumple la molécula de ATP en el acoplamiento energético celular?",
+      "opciones": [
+        "Actúa como catalizador inorgánico acelerando las vías metabólicas.",
+        "Funciona como el intermediario energético entre las reacciones exergónicas y las endergónicas.",
+        "Forma la estructura rígida de la membrana plasmática.",
+        "Transporta protones directamente desde la matriz extracelular al citosol."
+      ],
+      "correcta": "B",
+      "explicacion": "El ATP actúa como la moneda o intermediario energético central, acoplando la energía liberada por procesos exergónicos/catabólicos para impulsar procesos endergónicos/anabólicos[cite: 195, 196, 207]."
+    },
+    {
+      "pregunta": "¿Cuáles son los componentes estructurales que integran la molécula de Adenosina Trifosfato (ATP)?",
+      "opciones": [
+        "Una base nitrogenada guanina, una desoxirribosa y tres grupos fosfato.",
+        "Una base nitrogenada adenina, un azúcar ribosa y tres grupos fosfato.",
+        "Una molécula de nicotinamida, dos ribosas y un grupo fosfato.",
+        "Un anillo flavina, una ribosa y tres grupos fosfato."
+      ],
+      "correcta": "B",
+      "explicacion": "La estructura del ATP comprende la base nitrogenada adenina, el azúcar de cinco carbonos ribosa (formando juntos la adenosina) y una cadena de tres grupos fosfato[cite: 197]."
+    },
+    {
+      "pregunta": "Durante el ciclo del ATP, ¿qué proceso permite transformar ADP y fosfato inorgánico en ATP empleando energía de la respiración celular?",
+      "opciones": [
+        "Hidrólisis",
+        "Fosforilación",
+        "Deaminación",
+        "Glucogenólisis"
+      ],
+      "correcta": "B",
+      "explicacion": "El ADP se une a un grupo fosfato mediante una reacción de fosforilación que requiere energía (obtenida de la respiración celular) para regenerar ATP[cite: 198]."
+    },
+    {
+      "pregunta": "¿Qué ocurre químicamente cuando el ATP entrega energía útil para realizar trabajo celular?",
+      "opciones": [
+        "Se reduce captando átomos de hidrógeno y un par de electrones.",
+        "Se hidroliza separándose en ADP y fosfato inorgánico (P).",
+        "Se condensa formando moléculas complejas de polisacáridos.",
+        "Se oxida en la matriz pericentriolar acoplado a la miosina II."
+      ],
+      "correcta": "B",
+      "explicacion": "Al romperse el enlace fosfato por hidrólisis, el ATP libera la energía útil almacenada y se convierte en ADP más fosfato inorgánico ($P$)[cite: 198, 207]."
+    },
+    {
+      "pregunta": "En los procesos de óxido-reducción (redox), ¿cómo se definen respectivamente la oxidación y la reducción de una molécula?",
+      "opciones": [
+        "Oxidación es la captación de protones y reducción es la pérdida de oxígeno.",
+        "Oxidación es la liberación de equivalentes de hidrógeno ($H^+$ y $e^-$) y reducción es la captación de los mismos.",
+        "Oxidación es la ganancia de ATP y reducción es el consumo de energía libre.",
+        "Oxidación es la síntesis de enlaces fosfato y reducción es la hidrólisis de los mismos."
+      ],
+      "correcta": "B",
+      "explicacion": "En el contexto metabólico presentado, la oxidación implica liberar átomos de hidrógeno (compuestos por $H^+$ y $e^-$), mientras que la reducción consiste en captar dichos $H^+$ y $e^-$[cite: 199, 203]."
+    },
+    {
+      "pregunta": "¿De qué manera interactúan las coenzimas transportadoras de electrones con las apoenzimas en las reacciones redox?",
+      "opciones": [
+        "Se unen covalentemente de forma permanente al centro activo.",
+        "Se unen transitoriamente a distintas apoenzimas para transferir los equivalentes de reducción.",
+        "Se degradan por la acción de la apoenzima para generar energía térmica.",
+        "Actúan como componentes lipídicos estructurales en la bicapa."
+      ],
+      "correcta": "B",
+      "explicacion": "Las coenzimas transportadoras de $H^+$ y $e^-$ se unen de forma transitoria a diversas apoenzimas, permitiendo tomar hidrógenos de un sustrato oxidados y cederlos a otro sustrato para reducirlo[cite: 199, 200, 201]."
+    },
+    {
+      "pregunta": "¿Qué les sucede al sustrato 1 y a la coenzima cuando interactúan con la apoenzima 1 en una primera etapa redox?",
+      "opciones": [
+        "El sustrato 1 se reduce y la coenzima se oxida.",
+        "El sustrato 1 se oxida y la coenzima se reduce.",
+        "Ambos se fosforilan consumiendo ATP de la matriz.",
+        "El sustrato 1 se degrada a CO2 y la coenzima se hidroliza."
+      ],
+      "correcta": "B",
+      "explicacion": "En el primer paso, la coenzima oxidada se une a la apoenzima 1; la enzima oxida al sustrato 1 (le quita hidrógenos) y la coenzima captura esos hidrógenos, quedando reducida[cite: 200]."
+    },
+    {
+      "pregunta": "¿Qué ocurre en la segunda etapa redox cuando la coenzima cargada se une a la apoenzima 2 junto al sustrato 2?",
+      "opciones": [
+        "La apoenzima 2 oxida al sustrato 2 liberando ATP.",
+        "La apoenzima 2 reduce al sustrato 2 y la coenzima se oxida.",
+        "La coenzima transfiere sus fosfatos para formar NADPH.",
+        "El sustrato 2 se convierte en glucosa por vía anabólica."
+      ],
+      "correcta": "B",
+      "explicacion": "La coenzima reducida se traslada a la apoenzima 2, la cual reduce al sustrato 2 cediéndole los hidrógenos, por lo que la coenzima se oxida de nuevo[cite: 201]."
+    },
+    {
+      "pregunta": "¿A qué grupo de compuestos químicos pertenecen las coenzimas transportadoras NAD+, NADP+ y FAD?",
+      "opciones": [
+        "Proteoglicanos complejos.",
+        "Dinucleótidos.",
+        "Ácidos grasos poliinsaturados.",
+        "Heteropolisacáridos lineales."
+      ],
+      "correcta": "B",
+      "explicacion": "Las coenzimas móviles encargadas del transporte de $H^+$ y $e^-$ (NAD+, NADP+ y FAD) son químicamente dinucleótidos[cite: 202]."
+    },
+    {
+      "pregunta": "¿Cuál es la forma reducida completa de la coenzima Nicotinamín Adenín Dinucleótido (NAD+)?",
+      "opciones": [
+        "NADPH + H+",
+        "NADH + H+",
+        "FADH2",
+        "NADP+"
+      ],
+      "correcta": "B",
+      "explicacion": "Al captar dos protones y dos electrones ($2H^+$ y $2e^-$), la forma reducida de $NAD^+$ se escribe $NADH + H^+$[cite: 203]."
+    },
+    {
+      "pregunta": "¿Qué diferencia estructural existe entre las coenzimas NAD+ y NADP+?",
+      "opciones": [
+        "NADP+ contiene un anillo de flavina en lugar de nicotinamida.",
+        "NADP+ posee un grupo fosfato extra en el C2 de la ribosa unida a la adenina.",
+        "NAD+ carece de la base nitrogenada adenina en su molécula.",
+        "NADP+ posee tres moléculas de desoxirribosa en su cadena."
+      ],
+      "correcta": "B",
+      "explicacion": "Estructuralmente, la coenzima NADP+ es idéntica al NAD+ salvo que presenta un grupo fosfato (P) adicional unido en el carbono 2 (C2) de la ribosa de la adenina[cite: 204]."
+    },
+    {
+      "pregunta": "¿Qué estructura de la coenzima FAD actúa directamente como el aceptor de los átomos de hidrógeno?",
+      "opciones": [
+        "El anillo de flavina.",
+        "La base adenina.",
+        "El grupo fosfato terminal.",
+        "El azúcar ribosa."
+      ],
+      "correcta": "A",
+      "explicacion": "En la molécula de FAD (proveniente de la riboflavina), el anillo de flavina es la porción reactiva que actúa de aceptor para fijar los hidrógenos y convertirse en FADH2[cite: 205]."
+    },
+    {
+      "pregunta": "¿Cuál es la ecuación correcta para la reducción de la coenzima Flavín Adenín Dinucleótido (FAD)?",
+      "opciones": [
+        "$FAD + H^+ + e^- \\iff FADH$",
+        "$FAD + 2H^+ + 2e^- \\iff FADH_2$",
+        "$FAD + ATP \\iff FADH + ADP$",
+        "$FAD + 2e^- \\iff FADH^{2-}$"
+      ],
+      "correcta": "B",
+      "explicacion": "La reacción de reducción del FAD involucra la incorporación de $2H^+$ y $2e^-$ para pasar de su estado oxidado ($FAD$) a su estado reducido ($FADH_2$)[cite: 203, 205]."
+    },
+    {
+      "pregunta": "¿De dónde proviene la energía necesaria para sintetizar ATP en las células heterótrofas a partir de glúcidos, grasas y proteínas?",
+      "opciones": [
+        "De la fijación directa de dióxido de carbono en la matriz.",
+        "De las reacciones catabólicas de la respiración celular.",
+        "Del trabajo mecánico realizado por los microfilamentos.",
+        "De las reacciones endergónicas de la fotosíntesis."
+      ],
+      "correcta": "B",
+      "explicacion": "La energía utilizada para fosforilar el ADP a ATP se libera durante la degradación catabólica de nutrientes (glúcidos, grasas y proteínas) en la respiración celular[cite: 198, 207]."
+    },
+    {
+      "pregunta": "Si en una vía metabólica se degradan sustancias complejas hasta convertirlas en sustancias simples liberando energía, ¿qué tipo de vía y reacción energética está ocurriendo?",
+      "opciones": [
+        "Vía anabólica y reacción endergónica.",
+        "Vía catabólica y reacción exergónica.",
+        "Vía anabólica y reacción exergónica.",
+        "Vía anfibólica y reacción de fotosíntesis."
+      ],
+      "correcta": "B",
+      "explicacion": "Las transformaciones de materia que degradan moléculas complejas a simples corresponden al catabolismo, y las transformaciones energéticas asociadas que liberan energía se clasifican como reacciones exergónicas[cite: 206]."
+    }
+  ]
+}

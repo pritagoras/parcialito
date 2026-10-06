@@ -1,0 +1,281 @@
+{
+  "materia": "Biologia",
+  "tema": "Fotosintesis",
+  "preguntas": [
+    {
+      "pregunta": "¿Cuál de las siguientes afirmaciones describe de manera general la función de la fotosíntesis según el material de estudio?",
+      "opciones": [
+        "Transforma energía química en lumínica y degrada glucosa a dióxido de carbono.",
+        "Transforma energía lumínica en energía química y convierte materia inorgánica en orgánica.",
+        "Consume gas oxígeno de la atmósfera para sintetizar agua y moléculas de ATP.",
+        "Sintetiza dióxido de carbono a partir de hidratos de carbono en el citosol."
+      ],
+      "correcta": "B",
+      "explicacion": "La fotosíntesis transforma la energía lumínica en energía química, convierte materia inorgánica en orgánica para la planta y heterótrofos, y libera oxígeno[cite: 209]. No degrada glucosa ni consume oxígeno como función fotosintética general[cite: 209, 210]."
+    },
+    {
+      "pregunta": "Teniendo en cuenta la ecuación global de la fotosíntesis, ¿cuáles son los sustratos reactivos requeridos?",
+      "opciones": [
+        "Glucosa y gas oxígeno.",
+        "Agua y dióxido de carbono.",
+        "Triosa fosfato y nitrógeno molecular.",
+        "Fosfogliceraldehído y ATP."
+      ],
+      "correcta": "B",
+      "explicacion": "La ecuación global indica que $6\\text{ H}_2\\text{O} + 6\\text{ CO}_2$ (agua y dióxido de carbono) reaccionan para dar glucosa y oxígeno[cite: 210]. La glucosa y el oxígeno son los productos resultantes de la reacción[cite: 210]."
+    },
+    {
+      "pregunta": "¿De qué molécula provienen los átomos de oxígeno que terminan formando el gas $O_2$ liberado en la fotosíntesis?",
+      "opciones": [
+        "Del dióxido de carbono ($CO_2$).",
+        "Del agua ($H_2O$).",
+        "De la ribulosa difosfato (RuDP).",
+        "Del fosfoglicerato (PGA)."
+      ],
+      "correcta": "B",
+      "explicacion": "El material indica expresamente que los átomos de O del agua forman el gas oxígeno ($O_2$)[cite: 212]. Los átomos de H del agua son los que reducen al $CO_2$ para formar el hidrato de carbono[cite: 212]."
+    },
+    {
+      "pregunta": "Desde el punto de vista termodinámico y metabólico, la fotosíntesis se clasifica como un proceso:",
+      "opciones": [
+        "Catabólico, oxidativo y exergónico.",
+        "Anabólico, reductor y endergónico.",
+        "Catabólico, reductor y exergónico.",
+        "Anabólico, oxidativo y exergónico."
+      ],
+      "correcta": "B",
+      "explicacion": "La fotosíntesis es un proceso anabólico (construye sustancias complejas a partir de simples), reductor (se reduce el carbono) y endergónico (absorbe energía)[cite: 211]. El catabolismo y las reacciones exergónicas corresponden a procesos de degradación con liberación de energía[cite: 206]."
+    },
+    {
+      "pregunta": "¿Qué grupo de organismos procariotas posee la capacidad de realizar fotosíntesis según el material?",
+      "opciones": [
+        "Algas",
+        "Cianobacterias",
+        "Plantas vascularizadas",
+        "Hongos filamentosos"
+      ],
+      "correcta": "B",
+      "explicacion": "Dentro de los organismos fotosintetizadores, los procariotas corresponden a las cianobacterias[cite: 213]. Las algas y las plantas son clasificadas como fotosintetizadores eucariotas[cite: 213]."
+    },
+    {
+      "pregunta": "¿A través de qué estructuras delgadas de la hoja ingresa el $CO_2$ y se libera el $O_2$?",
+      "opciones": [
+        "Grana",
+        "Estomas",
+        "Laminillas",
+        "Desmotúbulos"
+      ],
+      "correcta": "B",
+      "explicacion": "El intercambio gaseoso de $CO_2$ y $O_2$ en las plantas ocurre a través de los estomas presentes en la superficie de las hojas[cite: 214]. La grana es una pila de tilacoides ubicada en el interior del cloroplasto[cite: 216]."
+    },
+    {
+      "pregunta": "¿Dónde se llevan a cabo la fase lumínica y la fase oscura respectivamente en un cloroplasto de célula eucariota?",
+      "opciones": [
+        "En el estroma la fase lumínica y en la membrana tilacoidal la fase oscura.",
+        "En la membrana tilacoidal la fase lumínica y en el estroma la fase oscura.",
+        "En la membrana externa la fase lumínica y en la membrana interna la fase oscura.",
+        "En el citosol la fase lumínica y en los tilacoides la fase oscura."
+      ],
+      "correcta": "B",
+      "explicacion": "En eucariotas, la fase lumínica ocurre en la membrana tilacoidal y la fase oscura en el estroma del cloroplasto[cite: 216, 218]. En procariotas la fase lumínica es en las laminillas fotosintéticas y la oscura en el citosol[cite: 218]."
+    },
+    {
+      "pregunta": "¿Dónde se localiza la fase lumínica en una cianobacteria al carecer de cloroplastos?",
+      "opciones": [
+        "En la membrana mitocondrial interna.",
+        "En las laminillas fotosintéticas de la membrana plasmática.",
+        "En el espacio periplásmico del estroma.",
+        "En los vacolos autofágicos citosólicos."
+      ],
+      "correcta": "B",
+      "explicacion": "En organismos procariotas, la fase lumínica ocurre en las laminillas fotosintéticas, las cuales son pliegues de la membrana plasmática[cite: 218]."
+    },
+    {
+      "pregunta": "Respecto a la radiación solar y la luz visible, ¿qué relación existe entre la longitud de onda y el nivel de energía?",
+      "opciones": [
+        "A mayor longitud de onda, mayor es la energía fotónica.",
+        "A menor longitud de onda, mayor es la energía.",
+        "La energía es constante e independiente de la longitud de onda.",
+        "La energía aumenta únicamente en la región del infrarrojo."
+      ],
+      "correcta": "B",
+      "explicacion": "El espectro muestra que a menor longitud de onda le corresponde una mayor energía (por ejemplo, el rango cercano a 380 nm posee más energía que 750 nm)[cite: 221]."
+    },
+    {
+      "pregunta": "¿Cuáles son las longitudes de onda del espectro visible que absorben principalmente las clorofilas a y b?",
+      "opciones": [
+        "Principalmente el verde y el amarillo.",
+        "Principalmente el rojo y el azul.",
+        "Únicamente el infrarrojo y el ultravioleta.",
+        "Exclusivamente el color naranja y el índigo."
+      ],
+      "correcta": "B",
+      "explicacion": "Las clorofilas a y b absorben principalmente en las regiones del espectro correspondientes al rojo y al azul, reflejando principalmente el verde[cite: 222, 223]."
+    },
+    {
+      "pregunta": "¿Qué nombre reciben los pigmentos como los carotenoides, las ficobilinas y las antocianinas?",
+      "opciones": [
+        "Pigmentos primarios",
+        "Pigmentos accesorios",
+        "Coenzimas fotosintéticas",
+        "Aceites esenciales"
+      ],
+      "correcta": "B",
+      "explicacion": "Los carotenoides, ficobilinas y antocianinas son clasificados como pigmentos accesorios que absorben longitudes de onda distintas a las de la clorofila[cite: 224, 225]."
+    },
+    {
+      "pregunta": "¿Cómo están constituidos estructuralmente los fotosistemas situados en la membrana tilacoide?",
+      "opciones": [
+        "Por moléculas de RuBisCo asociadas a bombas de protones.",
+        "Por pigmentos antena y un centro de reacción.",
+        "Por una cadena de citocromos acoplados a la matriz.",
+        "Por lípidos de membrana unidos a gránulos de almidón."
+      ],
+      "correcta": "B",
+      "explicacion": "Un fotosistema es un conjunto de moléculas de pigmento que comprende el pigmento antena (que capta energía por resonancia) y el centro de reacción (par de clorofilas a que libera electrones)[cite: 226, 227]."
+    },
+    {
+      "pregunta": "¿Qué función cumple el pigmento antena dentro de un fotosistema?",
+      "opciones": [
+        "Fijar directamente las moléculas de $CO_2$ atmosférico.",
+        "Captar la energía lumínica y canalizarla por resonancia hacia el centro de reacción.",
+        "Hidrolizar moléculas de ATP para bombear protones al estroma.",
+        "Oxidar el NADPH producido durante la etapa fotoindependiente."
+      ],
+      "correcta": "B",
+      "explicacion": "El pigmento antena (carotenos y clorofilas) capta la energía de los fotones y la canaliza por transferencia de resonancia hacia el centro de reacción[cite: 227]."
+    },
+    {
+      "pregunta": "¿Qué compone al centro de reacción de un fotosistema?",
+      "opciones": [
+        "Un complejo estromático de enzimas glicolíticas.",
+        "Un par de clorofilas a que reciben la energía y reaccionan liberando electrones.",
+        "Una molécula de agua asociada a carotenoides y ficobilinas.",
+        "Un poro de canal CFo permeable a iones de calcio."
+      ],
+      "correcta": "B",
+      "explicacion": "El centro de reacción está formado por un par de moléculas de clorofila a que, al recibir la energía concentrada, reaccionan liberando electrones hacia un aceptor primario[cite: 227]."
+    },
+    {
+      "pregunta": "¿Qué tres eventos principales integran el balance de la fase clara o fotodependiente de la fotosíntesis?",
+      "opciones": [
+        "Fijación de $CO_2$, reducción de glucosa y gasto de ATP.",
+        "Fotólisis del agua, producción de poder reductor (NADPH) y fotofosforilación (ATP).",
+        "Formación de RuDP, liberación de $CO_2$ y síntesis de almidón.",
+        "Oxidación de NADPH, hidrólisis de ATP y consumo de oxígeno."
+      ],
+      "correcta": "B",
+      "explicacion": "El balance de la fase clara incluye la fotólisis del agua ($H_2O \\rightarrow O_2$), la formación de poder reductor ($NADP^+ \\rightarrow NADPH$) y la fotofosforilación ($ADP + P_i \\rightarrow ATP$)[cite: 236]."
+    },
+    {
+      "pregunta": "¿Cómo explica la hipótesis quimiosmótica la síntesis de ATP en el cloroplasto?",
+      "opciones": [
+        "Mediante la transferencia directa de grupos fosfato desde la glucosa-P hacia el ADP.",
+        "A partir del flujo de protones ($H^+$) desde el espacio tilacoidal hacia el estroma a favor de gradiente a través de la ATP sintasa.",
+        "Por el paso de electrones oxidados directamente desde el fotosistema I hacia la RuBisCo.",
+        "Mediante la acumulación de protones en el estroma que fuerzan la entrada de $NADP^+$ a la grana."
+      ],
+      "correcta": "B",
+      "explicacion": "La hipótesis quimiosmótica establece que la acumulación de $H^+$ en el interior del tilacoide genera un gradiente; al salir los $H^+$ hacia el estroma a favor de gradiente por la ATP sintasa (CFo-CF1), se impulsa la fotofosforilación de ADP a ATP[cite: 237, 238]."
+    },
+    {
+      "pregunta": "En el Esquema Z de la fase clara, ¿cuál es la denominación del centro de reacción del Fotosistema II (PS II) y del Fotosistema I (PS I) respectivamente?",
+      "opciones": [
+        "P700 en el PS II y P680 en el PS I.",
+        "P680 en el PS II y P700 en el PS I.",
+        "CF0 en el PS II y CF1 en el PS I.",
+        "PGA en el PS II y PGAL en el PS I."
+      ],
+      "correcta": "B",
+      "explicacion": "En el Esquema Z, el centro de reacción del Fotosistema II se designa P680 y el centro de reacción del Fotosistema I se designa P700[cite: 239, 242]."
+    },
+    {
+      "pregunta": "¿De qué productos generados en la fase clara depende directamente el desarrollo del Ciclo de Calvin-Benson?",
+      "opciones": [
+        "De $H_2O$ y gas $O_2$.",
+        "De ATP y NADPH.",
+        "De glucosa y ribulosa difosfato.",
+        "De oxaloacetato y FADH2."
+      ],
+      "correcta": "B",
+      "explicacion": "Aunque la luz no interviene directamente en la fase oscura, esta depende en forma absoluta del ATP y del NADPH que fueron producidos durante la fase clara[cite: 219, 243, 245]."
+    },
+    {
+      "pregunta": "¿Qué enzima clave cataliza la fijación del $CO_2$ a la ribulosa difosfato (RuDP) en la primera etapa del Ciclo de Calvin?",
+      "opciones": [
+        "ATPasa CF1",
+        "RuBisCo",
+        "NADP reductasa",
+        "Isomerasa P"
+      ],
+      "correcta": "B",
+      "explicacion": "La fijación del $CO_2$ sobre la ribulosa difosfato (RuDP o RuBP) es catalizada específicamente por la enzima RuBisCo[cite: 250]."
+    },
+    {
+      "pregunta": "Durante la etapa de fijación del $CO_2$ en el Ciclo de Calvin, ¿en qué compuesto intermedio se escinde el compuesto inestable de 6 carbonos formado inicialmente?",
+      "opciones": [
+        "En 2 moléculas de ácido fosfoglicérico (PGA).",
+        "En 1 molécula de fosfogliceraldehído (PGAL) y 1 de glucosa.",
+        "En 2 moléculas de ribulosa difosfato (RuDP).",
+        "En 3 moléculas de glucosa fosfato."
+      ],
+      "correcta": "A",
+      "explicacion": "La incorporación de $CO_2$ a la RuDP forma un compuesto inestable de 6 carbonos que se rompe rindiendo moléculas de ácido fosfoglicérico (PGA, de 3 carbonos)[cite: 247, 249]."
+    },
+    {
+      "pregunta": "¿Cuántas vueltas del ciclo de Calvin y cuántas moléculas de $CO_2$ se requieren para la síntesis neta de 1 molécula de glucosa?",
+      "opciones": [
+        "2 vueltas y 2 moléculas de $CO_2$.",
+        "6 vueltas y 6 moléculas de $CO_2$.",
+        "12 vueltas y 12 moléculas de $CO_2$.",
+        "3 vueltas y 18 moléculas de $CO_2$."
+      ],
+      "correcta": "B",
+      "explicacion": "Se necesitan 6 vueltas del ciclo de Calvin, fijando 6 moléculas de $CO_2$, para lograr la síntesis de 1 molécula de glucosa (a partir de la salida de 2 PGAL)[cite: 249, 251]."
+    },
+    {
+      "pregunta": "Para fijar 6 moléculas de $CO_2$ y sintetizar 1 molécula de glucosa en el ciclo de Calvin, ¿cuántas moléculas de ATP y NADPH se consumen en total?",
+      "opciones": [
+        "12 ATP y 6 NADPH.",
+        "18 ATP y 12 NADPH.",
+        "6 ATP y 18 NADPH.",
+        "24 ATP y 24 NADPH."
+      ],
+      "correcta": "B",
+      "explicacion": "El balance del ciclo de Calvin para producir 1 glucosa exige el consumo de 18 ATP (12 en la reducción y 6 en la regeneración) y 12 NADPH[cite: 249, 251, 252]."
+    },
+    {
+      "pregunta": "Las tres etapas consecutivas que conforman el Ciclo de Calvin-Benson son:",
+      "opciones": [
+        "1) Fotólisis, 2) Fotofosforilación, 3) Secreción.",
+        "1) Fijación del $CO_2$, 2) Reducción del $CO_2$, 3) Regeneración de la RuDP.",
+        "1) Decarboxilación, 2) Translocación, 3) Glucogenólisis.",
+        "1) Absorción de luz, 2) Cadena respiratoria, 3) Ciclo del glioxilato."
+      ],
+      "correcta": "B",
+      "explicacion": "El esquema del Ciclo de Calvin resume sus tres fases ordenadas: 1) Fijación del $CO_2$, 2) Reducción del $CO_2$ (formando PGAL) y 3) Regeneración de la RuDP[cite: 250]."
+    },
+    {
+      "pregunta": "¿Qué triosa fosfato producida en el ciclo de Calvin actúa como el precursor directo para la síntesis de glucosa, almidón, celulosa, ácidos grasos y aminoácidos?",
+      "opciones": [
+        "Ácido fosfoglicérico (PGA)",
+        "Fosfogliceraldehído (PGAL)",
+        "Ribulosa difosfato (RuDP)",
+        "Oxaloacetato"
+      ],
+      "correcta": "B",
+      "explicacion": "El PGAL es la molécula clave de salida del ciclo que sirve como precursor para la síntesis de glucosa fosfato, sacarosa, almidón, celulosa, ácidos grasos y aminoácidos[cite: 253]."
+    },
+    {
+      "pregunta": "¿Qué plantea la Teoría Endosimbiótica propuesta por Lynn Margulis respecto al origen de organelas energéticas como las mitocondrias y cloroplastos?",
+      "opciones": [
+        "Que se formaron por invaginaciones sucesivas del retículo endoplasmático liso.",
+        "Que eran originalmente procariotas de vida libre fagocitados por células eucariotas primitivas con las que establecieron simbiosis.",
+        "Que surgieron a partir de la condensación de vesículas de exocitosis liberadas por el complejo de Golgi.",
+        "Que se generaron por la polimerización espontánea de microtúbulos y filamentos intermedios."
+      ],
+      "correcta": "B",
+      "explicacion": "La teoría endosimbiótica postula que estas organelas fueron procariotas de vida libre que fueron fagocitados por eucariotas primitivas, integrándose como organelas semiautónomas con su propio ADN circular y ribosomas[cite: 255]."
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "materia": "Biologia",
+  "tema": "Respiración celular",
+  "preguntas": [
+    {
+      "pregunta": "¿Cómo se define de forma general la respiración celular según el material de estudio?",
+      "opciones": [
+        "Un proceso anabólico en el cual la célula sintetiza glucosa a partir de oxígeno y ATP.",
+        "Un proceso por el cual las células degradan carbohidratos, grasas y proteínas para transferir esa energía al ATP.",
+        "Un mecanismo exergónico exclusivo de células eucariotas para fijar dióxido de carbono en el citosol.",
+        "Una vía metabólica cuya única función es transformar el ácido láctico en oxígeno atmosférico."
+      ],
+      "correcta": "B",
+      "explicacion": "Durante la respiración celular, las células de todos los organismos degradan carbohidratos, grasas y proteínas, transfiriendo la energía liberada al ATP[cite: 258]. No es un proceso anabólico ni exclusivo de eucariotas[cite: 259, 261, 262]."
+    },
+    {
+      "pregunta": "¿Cuál es la primera etapa común que comparten tanto la respiración aeróbica como la respiración anaeróbica/fermentación?",
+      "opciones": [
+        "Ciclo de Krebs",
+        "Glucólisis",
+        "Descarboxilación oxidativa",
+        "Fosforilación oxidativa"
+      ],
+      "correcta": "B",
+      "explicacion": "Tanto la respiración aeróbica como la anaeróbica/fermentación comparten como primera etapa común a la glucólisis[cite: 259]. Las demás etapas ocurren solo en la vía aeróbica[cite: 262, 295]."
+    },
+    {
+      "pregunta": "Desde el punto de vista termodinámico y metabólico, la respiración aeróbica se clasifica como un proceso:",
+      "opciones": [
+        "Anabólico, reductor y endergónico.",
+        "Catabólico, oxidativo y exergónico.",
+        "Anabólico, oxidativo y exergónico.",
+        "Catabólico, reductor y endergónico."
+      ],
+      "correcta": "B",
+      "explicacion": "La respiración aeróbica es un proceso catabólico (el combustible se degrada), oxidativo (el combustible va perdiendo H) y exergónico (libera energía transferida al ATP)[cite: 261]."
+    },
+    {
+      "pregunta": "¿Dónde se localizan respectivamente la glucólisis y la cadena respiratoria en una célula eucariota?",
+      "opciones": [
+        "La glucólisis en la matriz mitocondrial y la cadena respiratoria en el citosol.",
+        "La glucólisis en el citosol y la cadena respiratoria en la cresta mitocondrial.",
+        "La glucólisis en el espacio intermembrana y la cadena respiratoria en la matriz mitocondrial.",
+        "Ambas fases ocurren en la cresta mitocondrial."
+      ],
+      "correcta": "B",
+      "explicacion": "En eucariotas, la glucólisis se localiza en el citosol, mientras que la cadena respiratoria se ubica en las crestas mitocondriales[cite: 262]."
+    },
+    {
+      "pregunta": "¿Dónde se llevan a cabo la descarboxilación oxidativa del piruvato y el ciclo de Krebs en las células procariotas?",
+      "opciones": [
+        "En el citosol.",
+        "En la membrana plasmática.",
+        "En la matriz mitocondrial.",
+        "En las crestas membranales."
+      ],
+      "correcta": "A",
+      "explicacion": "En las células procariotas, al no poseer mitocondrias, la descarboxilación oxidativa y el ciclo de Krebs suceden en el citosol[cite: 262]."
+    },
+    {
+      "pregunta": "¿Qué enzima alostérica regula la glucólisis y de qué manera actúa el ATP sobre ella?",
+      "opciones": [
+        "La piruvato deshidrogenasa, y el ATP actúa como regulador positivo que la activa.",
+        "La fosfofructoquinasa (PFK), y el ATP actúa como regulador alostérico que la inhibe.",
+        "La citrato sintasa, y el ATP actúa como sustrato directo para acelerar la vía.",
+        "La ATP sintasa, y el ATP actúa induciendo su cambio a la forma relajada."
+      ],
+      "correcta": "B",
+      "explicacion": "La glucólisis está regulada por la fosfofructoquinasa (PFK), una enzima alostérica en la que el ATP actúa como regulador alostérico que la inhibe[cite: 263]."
+    },
+    {
+      "pregunta": "En las enzimas alostéricas, ¿cuál es la característica de la 'forma tensa' (T) y qué efecto produce un regulador negativo sobre ella?",
+      "opciones": [
+        "Es activa, altamente afín al sustrato y el regulador negativo la transforma en relajada.",
+        "Es inactiva, poco afín al sustrato y el regulador negativo la estabiliza.",
+        "Es la forma que posee el sitio alostérico bloqueado por el regulador positivo.",
+        "Es totalmente afín al sustrato y el regulador negativo promueve su liberación al citosol."
+      ],
+      "correcta": "B",
+      "explicacion": "La forma tensa (T) es inactiva y poco afín al sustrato; el regulador negativo se une al sitio alostérico y estabiliza esta forma tensa[cite: 266]."
+    },
+    {
+      "pregunta": "¿En qué consiste la fosforilación a nivel de sustrato (FANS)?",
+      "opciones": [
+        "En el bombeo de protones desde la matriz al espacio intermembrana acoplado a la ATP sintasa.",
+        "En la transferencia directa de un fosfato de alta energía desde un sustrato hacia el ADP.",
+        "En la oxidación del NADH en los complejos de la membrana mitocondrial interna.",
+        "En la síntesis de GTP mediante el consumo de energía lumínica o calorífica."
+      ],
+      "correcta": "B",
+      "explicacion": "La fosforilación a nivel de sustrato ocurre cuando un fosfato de alta energía es transferido desde un sustrato directamente al ADP para formar ATP[cite: 267]."
+    },
+    {
+      "pregunta": "Durante la primera etapa de inversión energética de la glucólisis, ¿cuántas moléculas de ATP se consumen por cada molécula de glucosa?",
+      "opciones": [
+        "1 ATP en el paso 5.",
+        "2 ATP en los pasos 1 y 3.",
+        "4 ATP en los pasos 6 y 9.",
+        "38 ATP en la fase de escisión."
+      ],
+      "correcta": "B",
+      "explicacion": "En la primera etapa de la glucólisis se invierten 2 ATP, específicamente en los pasos 1 y 3[cite: 264, 270]."
+    },
+    {
+      "pregunta": "¿Cuál es la ganancia neta de moléculas de ATP y de NADH al finalizar la glucólisis por cada molécula de glucosa degradada?",
+      "opciones": [
+        "4 ATP netos y 2 NADH.",
+        "2 ATP netos y 2 NADH.",
+        "2 ATP netos y 0 NADH.",
+        "38 ATP netos y 6 NADH."
+      ],
+      "correcta": "B",
+      "explicacion": "Aunque se generan 4 ATP, al restar los 2 ATP invertidos inicialmente, la ganancia neta es de 2 ATP y 2 NADH por glucosa[cite: 270]."
+    },
+    {
+      "pregunta": "¿Qué ocurre químicamente con el piruvato durante la descarboxilación oxidativa al ingresar a la matriz mitocondrial?",
+      "opciones": [
+        "Se reduce a lactato liberando una molécula de ATP.",
+        "Se descarboxila liberando CO2, se oxida cediendo electrones al NAD+ y se une a la Coenzima A formando Acetil-CoA.",
+        "Se une directamente al oxalacetato para formar citrato sin producir coenzimas reducidas.",
+        "Se fosforila consumiendo un GTP para ingresar al ciclo de Krebs."
+      ],
+      "correcta": "B",
+      "explicacion": "El piruvato pierde un carbono como CO2, se oxida generando NADH a partir de NAD+ y se une a la CoA para transformarse en Acetil-CoA[cite: 273]."
+    },
+    {
+      "pregunta": "Por cada molécula de Acetil-CoA que ingresa y realiza una vuelta en el ciclo de Krebs, ¿cuáles son los productos del balance?",
+      "opciones": [
+        "2 CO2, 1 GTP, 3 NADH y 1 FADH2.",
+        "6 CO2, 2 GTP, 6 NADH y 2 FADH2.",
+        "1 CO2, 2 ATP, 1 NADH y 3 FADH2.",
+        "4 CO2, 0 GTP, 2 NADH y 2 FADH2."
+      ],
+      "correcta": "A",
+      "explicacion": "Por cada Acetil-CoA, una vuelta del ciclo de Krebs produce 2 CO2, 1 GTP, 3 NADH y 1 FADH2[cite: 277]. (Para la glucosa completa, que genera 2 Acetil-CoA, los valores se multiplican por dos)[cite: 277, 278]."
+    },
+    {
+      "pregunta": "Al terminar el ciclo de Krebs, ¿dónde han quedado los átomos de carbono, oxígeno e hidrógeno que pertenecían a la molécula de glucosa original?",
+      "opciones": [
+        "Los de C y O se liberaron en 6 CO2, y los H fueron captados por las coenzimas (NADH y FADH2).",
+        "Los de C se convirtieron en ATP, los de O en agua y los H se liberaron como gas libre.",
+        "Todos los átomos permanecen ensamblados en las moléculas de Acetil-CoA dentro de la cresta.",
+        "Los de C e H formaron piruvato y los de O se incorporaron a la ATP sintasa."
+      ],
+      "correcta": "A",
+      "explicacion": "Al finalizar el ciclo de Krebs, los carbonos y oxígenos de la glucosa se liberaron en 6 moléculas de CO2, mientras que los hidrógenos fueron captados por NADH y FADH2[cite: 280]."
+    },
+    {
+      "pregunta": "¿Qué ocurre con los protones (H+) en la matriz mitocondrial durante el transporte de electrones a lo largo de la cadena respiratoria?",
+      "opciones": [
+        "Son absorbidos por el Acetil-CoA para formar glucosa en el citosol.",
+        "Son bombeados desde la matriz mitocondrial hacia el espacio intermembrana por los complejos I, III y IV.",
+        "Ingresan libremente a través de la membrana externa hacia las crestas mitocondriales.",
+        "Son transferidos directamente al FAD para sintetizar GTP."
+      ],
+      "correcta": "B",
+      "explicacion": "El transporte de electrones impulsa el bombeo de protones (H+) desde la matriz hacia el espacio intermembrana a través de los complejos I, III y IV[cite: 284, 289]."
+    },
+    {
+      "pregunta": "¿Cuál es la función específica del oxígeno (O2) en la cadena respiratoria?",
+      "opciones": [
+        "Iniciar la descarboxilación del piruvato en el citosol.",
+        "Actuar como el aceptor final de electrones para reducirse y formar agua (H2O).",
+        "Fosforilar directamente al ADP en el complejo Fo-F1.",
+        "Estabilizar la forma relajada de la enzima fosfofructoquinasa."
+      ],
+      "correcta": "B",
+      "explicacion": "El O2 actúa como aceptor final de la cadena de transporte de electrones, combinándose con electrones y protones para formar agua[cite: 283, 284, 294]."
+    },
+    {
+      "pregunta": "Según el rendimiento energético expresado en el material, ¿cuántos ATP rinden respectivamente cada NADH y cada FADH2 que se oxidan en la cadena respiratoria?",
+      "opciones": [
+        "Cada NADH rinde 2 ATP y cada FADH2 rinde 3 ATP.",
+        "Cada NADH rinde 3 ATP y cada FADH2 rinde 2 ATP.",
+        "Ambas coenzimas rinden 38 ATP en la matriz.",
+        "Cada NADH rinde 1 ATP y cada FADH2 rinde 4 ATP."
+      ],
+      "correcta": "B",
+      "explicacion": "En la cadena respiratoria, cada NADH que se oxida rinde 3 ATP, mientras que cada FADH2 que se oxida rinde 2 ATP[cite: 291]."
+    },
+    {
+      "pregunta": "¿De cuántos ATP es el rendimiento energético total teórico por glucosa en la respiración aeróbica, y a cuánto puede reducirse según la lanzadera utilizada?",
+      "opciones": [
+        "Total de 38 ATP, pudiendo ser 36 ATP según la lanzadera.",
+        "Total de 36 ATP, pudiendo ser 32 ATP según la lanzadera.",
+        "Total de 2 ATP, pudiendo ser 0 ATP según la lanzadera.",
+        "Total de 40 ATP, pudiendo ser 38 ATP según la lanzadera."
+      ],
+      "correcta": "A",
+      "explicacion": "El rendimiento total de la respiración aeróbica es de 38 ATP, pero puede ser de 36 ATP según la lanzadera empleada para ingresar los NADH citosólicos a la mitocondria[cite: 292]."
+    },
+    {
+      "pregunta": "¿Qué sucede en la mitocondria si se interrumpe la disponibilidad de oxígeno (O2)?",
+      "opciones": [
+        "Se acelera la fosforilación oxidativa para compensar la falta de electrones.",
+        "Se detiene la cadena respiratoria, no se oxida el NADH ni el FADH2 y se frena la etapa mitocondrial por falta de NAD+ y FAD.",
+        "El ciclo de Krebs continúa funcionando normalmente utilizando agua como aceptor final.",
+        "La ATP sintasa pasa a sintetizar el doble de ATP por vía anatóxica."
+      ],
+      "correcta": "B",
+      "explicacion": "Sin O2 se interrumpe la cadena respiratoria y la fosforilación oxidativa. Sin cadena, el NADH y FADH2 no se oxidan, por lo que la falta de NAD+ y FAD detiene la etapa mitocondrial[cite: 294]."
+    },
+    {
+      "pregunta": "¿Cómo actúa una sustancia desacoplante sobre la membrana mitocondrial interna y qué efecto genera en la producción de ATP?",
+      "opciones": [
+        "Bloquea el complejo IV imposibilitando la formación de agua.",
+        "Permite el pasaje libre de protones disipando el gradiente, por lo que no se activa la ATP sintasa y no se sintetiza ATP.",
+        "Inhibe alostéricamente a la PFK aumentando la síntesis de lactato.",
+        "Aumenta la fuerza protón-motriz generando un exceso de fosforilación oxidativa."
+      ],
+      "correcta": "B",
+      "explicacion": "Los desacoplantes se insertan en la membrana mitocondrial interna permitiendo el pasaje libre de protones, lo que disipa el gradiente y evita que se active la ATP sintasa para fabricar ATP[cite: 290]."
+    },
+    {
+      "pregunta": "¿Qué ocurre en la Tejido Adiposo Pardo (grasa parda) de bebés y animales que hibernan cuando se desacoplan la cadena respiratoria y la fosforilación oxidativa?",
+      "opciones": [
+        "La energía de la cadena respiratoria se libera como calor en lugar de sintetizar ATP.",
+        "Se duplica la síntesis de glucosa por vía de la fermentación láctica.",
+        "Se acumula ácido pirúvico en el espacio intermembrana provocando acidosis.",
+        "Se bloquea la descarboxilación oxidativa para ahorrar reservas lipídicas."
+      ],
+      "correcta": "A",
+      "explicacion": "En la grasa parda se desacoplan la cadena respiratoria y la fosforilación oxidativa, de modo que la energía liberada en la cadena se transforma en calor y no en ATP[cite: 290]."
+    },
+    {
+      "pregunta": "¿Cuál es la función biológica fundamental de la fermentación (láctica o alcohólica) luego de la glucólisis en condiciones anaeróbicas?",
+      "opciones": [
+        "Generar 36 moléculas adicionales de ATP por fosforilación oxidativa.",
+        "Reoxidar el NADH a NAD+ para que la glucólisis no se detenga y continúe produciendo ATP.",
+        "Sintetizar Acetil-CoA para ingresarlo al ciclo de Krebs citosólico.",
+        "Transformar el dióxido de carbono en azúcares de reserva."
+      ],
+      "correcta": "B",
+      "explicacion": "La fermentación NO aporta ATP directamente; su función es reoxidar el NADH producido en la glucólisis a NAD+ para que la glucólisis no se detenga y pueda seguir generando sus 2 ATP[cite: 296, 298, 300]."
+    },
+    {
+      "pregunta": "¿Cuáles son los productos finales de la fermentación láctica en células animales y bacterias lácticas?",
+      "opciones": [
+        "Etanol, CO2 y NAD+.",
+        "Lactato y NAD+.",
+        "Piruvato, agua y ATP sintasa.",
+        "Acetil-CoA y urea."
+      ],
+      "correcta": "B",
+      "explicacion": "En la fermentación láctica, el piruvato se reduce a lactato al recibir los hidrógenos del NADH, el cual se oxida a NAD+[cite: 297, 298]."
+    },
+    {
+      "pregunta": "¿Qué compuestos se producen en la fermentación alcohólica llevada a cabo por levaduras y células vegetales a partir del piruvato?",
+      "opciones": [
+        "Lactato y CO2.",
+        "Etanol, CO2 y NAD+.",
+        "Ácido cítrico y FAD.",
+        "Urea, agua y glucógeno."
+      ],
+      "correcta": "B",
+      "explicacion": "En la fermentación alcohólica, el piruvato da lugar a acetaldehído y CO2, y luego el acetaldehído se reduce a etanol al reoxidar el NADH a NAD+[cite: 299, 300]."
+    },
+    {
+      "pregunta": "¿Mediante qué proceso previo se incorporan las proteínas al catabolismo celular para ser utilizadas como fuente alternativa de energía?",
+      "opciones": [
+        "Beta-oxidación.",
+        "Desaminación de aminoácidos para formar cetoácidos.",
+        "Fosforilación a nivel de sustrato en el lisosoma.",
+        "Hidrólisis directa a lactato."
+      ],
+      "correcta": "B",
+      "explicacion": "Las proteínas se hidrolizan a aminoácidos y estos sufren desaminación (liberando -NH2 que forma urea), transformándose en cetoácidos que ingresan al catabolismo[cite: 302]."
+    },
+    {
+      "pregunta": "¿Cómo se denominan el proceso de degradación de los ácidos grasos provenientes de las grasas y la vía final común del catabolismo celular, respectivamente?",
+      "opciones": [
+        "Glucólisis y Fermentación láctica.",
+        "Omega-oxidación y Cadena respiratoria.",
+        "Beta-oxidación y Ciclo de Krebs.",
+        "Desaminación y Fosforilación oxidativa."
+      ],
+      "correcta": "C",
+      "explicacion": "Los ácidos grasos se degradan mediante la beta-oxidación (dando Acetil-CoA), y el ciclo de Krebs se destaca explícitamente como la vía final común del catabolismo[cite: 302]."
+    }
+  ]
+}

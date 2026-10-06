@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-06T01:05:36Z",
+  "generado": "2026-10-06T01:22:21Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -37,6 +37,30 @@
           "preguntas": 25
         },
         {
+          "id": "biologia-celular/tema_citoesqueleto_mec",
+          "nombre": "Citoesqueleto y Membrana Extracelular",
+          "archivo": "data/biologia-celular/tema_citoesqueleto_mec.json",
+          "preguntas": 40
+        },
+        {
+          "id": "biologia-celular/tema_endomembranas",
+          "nombre": "Sistema de endomembranas",
+          "archivo": "data/biologia-celular/tema_endomembranas.json",
+          "preguntas": 25
+        },
+        {
+          "id": "biologia-celular/tema_enzimas",
+          "nombre": "Enzimas",
+          "archivo": "data/biologia-celular/tema_enzimas.json",
+          "preguntas": 25
+        },
+        {
+          "id": "biologia-celular/tema_fotosintesis",
+          "nombre": "Fotosintesis",
+          "archivo": "data/biologia-celular/tema_fotosintesis.json",
+          "preguntas": 25
+        },
+        {
           "id": "biologia-celular/tema_glucidos-convertido",
           "nombre": "Glúcidos",
           "archivo": "data/biologia-celular/tema_glucidos-convertido.json",
@@ -47,6 +71,18 @@
           "nombre": "Lípidos",
           "archivo": "data/biologia-celular/tema_lipidos-convertido.json",
           "preguntas": 30
+        },
+        {
+          "id": "biologia-celular/tema_membrana_plasmatica",
+          "nombre": "Membrana Plasmatica",
+          "archivo": "data/biologia-celular/tema_membrana_plasmatica.json",
+          "preguntas": 25
+        },
+        {
+          "id": "biologia-celular/tema_metabolismo",
+          "nombre": "Metabolismo",
+          "archivo": "data/biologia-celular/tema_metabolismo.json",
+          "preguntas": 25
         },
         {
           "id": "biologia-celular/tema_nucleotidos-convertido",
@@ -70,6 +106,12 @@
           "id": "biologia-celular/tema_quimica-general-y-agua-convertido",
           "nombre": "Química general y agua",
           "archivo": "data/biologia-celular/tema_quimica-general-y-agua-convertido.json",
+          "preguntas": 25
+        },
+        {
+          "id": "biologia-celular/tema_respiracion",
+          "nombre": "Respiración celular",
+          "archivo": "data/biologia-celular/tema_respiracion.json",
           "preguntas": 25
         },
         {

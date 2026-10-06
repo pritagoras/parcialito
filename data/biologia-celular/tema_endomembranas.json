@@ -1,0 +1,281 @@
+{
+  "materia": "Biologia",
+  "tema": "Sistema de endomembranas",
+  "preguntas": [
+    {
+      "pregunta": "¿Cuál de las siguientes organelas forma parte del sistema de endomembranas según el material de estudio?",
+      "opciones": [
+        "Peroxisoma",
+        "Vacuola vegetal",
+        "Mitocondria",
+        "Cloroplasto"
+      ],
+      "correcta": "B",
+      "explicacion": "La vacuola vegetal es parte del sistema de endomembranas junto con la envoltura nuclear, los retículos, Golgi, vesículas y lisosomas. El texto aclara de forma explícita que peroxisomas, mitocondrias y cloroplastos no forman parte de este sistema."
+    },
+    {
+      "pregunta": "¿Qué ocurre durante la etapa de brotación vesicular cuando se forma una vesícula revestida en la cisterna dadora?",
+      "opciones": [
+        "La carga se une al receptor luminal y las proteínas de cubierta se ensamblan en la cara citosólica provocando la curvatura.",
+        "Las proteínas de cubierta ingresan al lumen de la cisterna para unirse directamente al péptido señal de la carga.",
+        "La dinamina degrada la membrana de la cisterna para permitir que los receptores salgan libres al citosol.",
+        "La vesícula pierde su cubierta de clatrina antes de que el receptor logre capturar la carga en el lumen."
+      ],
+      "correcta": "A",
+      "explicacion": "Durante la brotación, la carga se une a su receptor específico en el lumen y las proteínas de cubierta se ensamblan en la superficie citosólica, curvando la membrana para formar la vesícula. La separación o pérdida de la cubierta ocurre más tarde, previo a la fusión con la cisterna diana."
+    },
+    {
+      "pregunta": "¿Qué proteínas motoras participan en el transporte de vesículas sobre microtúbulos y filamentos de actina respectivamente?",
+      "opciones": [
+        "Clatrina y COP para microtúbulos; dinamina para microfilamentos.",
+        "Kinesina y dineína para microtúbulos; miosinas para microfilamentos.",
+        "SNARE vesiculares para microtúbulos; t-SNARE para microfilamentos.",
+        "Escramblasa y flipasa para microtúbulos; kinesina para microfilamentos."
+      ],
+      "correcta": "B",
+      "explicacion": "El transporte de vesículas por el citoesqueleto utiliza energía de ATP mediante proteínas motoras: kinesina y dineína asociadas a microtúbulos, y miosinas asociadas a microfilamentos. Las proteínas COP y clatrina cumplen funciones de revestimiento y las SNARE de reconocimiento."
+    },
+    {
+      "pregunta": "¿En qué trayectos del tránsito vesicular participan de forma específica las vesículas revestidas por clatrina?",
+      "opciones": [
+        "Exclusivamente en el transporte retrógrado desde el aparato de Golgi hacia el retículo endoplasmático.",
+        "En el transporte de Golgi a lisosomas, secreción regulada y endocitosis mediada por receptor.",
+        "En la transferencia entre cisternas del retículo endoplasmático liso y el retículo rugoso.",
+        "Únicamente en la secreción continua o constitutiva desde la cara cis del aparato de Golgi."
+      ],
+      "correcta": "B",
+      "explicacion": "La clatrina interviene en el transporte desde Golgi hacia lisosomas, en la secreción regulada y en la endocitosis mediada por receptor. El transporte entre el retículo y Golgi, en cambio, utiliza cubiertas tipo COP."
+    },
+    {
+      "pregunta": "¿Qué par de proteínas garantiza el reconocimiento específico y la fusión entre la vesícula de transporte y la cisterna diana o target?",
+      "opciones": [
+        "v-SNARE en la vesícula y t-SNARE en la membrana target.",
+        "Kinesina en la vesícula y dineína en la membrana target.",
+        "Clatrina en la vesícula y COP en la membrana target.",
+        "Dinamina en la vesícula y escramblasa en la membrana target."
+      ],
+      "correcta": "A",
+      "explicacion": "El reconocimiento específico entre la vesícula y la membrana diana depende del acoplamiento entre la proteína v-SNARE (ubicada en la vesícula) y la t-SNARE (ubicada en la membrana target)."
+    },
+    {
+      "pregunta": "Durante la síntesis de lípidos en la membrana del retículo endoplasmático liso (REL), ¿dónde se ubican inicialmente los lípidos recién sintetizados?",
+      "opciones": [
+        "En el lumen de la cisterna del REL.",
+        "En la monocapa citosólica de la membrana del REL.",
+        "En las vesículas de secreción que brotan hacia el Golgi.",
+        "En la monocapa luminal de la envoltura nuclear."
+      ],
+      "correcta": "B",
+      "explicacion": "Las enzimas encargadas de la síntesis lipídica están en la cara citosólica, por lo cual los lípidos recién sintetizados quedan ubicados primero en la monocapa citosólica. Posteriormente, enzimas como la escramblasa y la flipasa trasladan parte de ellos hacia la monocapa luminal."
+    },
+    {
+      "pregunta": "¿Qué enzimas permiten translocar lípidos recién sintetizados hacia la monocapa luminal del REL para equiparar el crecimiento de la bicapa?",
+      "opciones": [
+        "Kinesina y dineína.",
+        "Escramblasa y flipasa.",
+        "Hidrolasas ácidas y lipasas.",
+        "Glucosa-6-fosfatasa e isomerasa."
+      ],
+      "correcta": "B",
+      "explicacion": "La escramblasa y la flipasa se encargan de mover parte de los lípidos recién sintetizados desde la monocapa citosólica hacia la monocapa luminal para corregir el crecimiento desigual de la membrana."
+    },
+    {
+      "pregunta": "¿Cómo interviene el REL en la respuesta celular desencadenada por una señal en relación al almacenamiento de calcio iónico?",
+      "opciones": [
+        "Sintetiza calcio iónico en su lumen y lo libera al exterior por exocitosis continua.",
+        "Libera calcio al citosol por canales y luego lo reingresa a su lumen contra gradiente mediante una bomba.",
+        "Degrada los iones de calcio acumulados utilizando hidrolasas ácidas activadas por pH bajo.",
+        "Absorbe el calcio del citosol mediante vesículas de clatrina para enviarlo al aparato de Golgi."
+      ],
+      "correcta": "B",
+      "explicacion": "Frente a una señal, el REL abre canales permitiendo la salida rápida de calcio al citosol para generar una respuesta celular; posteriormente, una bomba de Ca2+ reingresa el ión al lumen del REL en contra del gradiente de concentración."
+    },
+    {
+      "pregunta": "¿Qué función cumple la enzima glucosa-6-fosfatasa presente en el REL del hepatocito durante la glucogenólisis?",
+      "opciones": [
+        "Degrada el glucógeno directamente a glucosa-1-fosfato dentro del citosol.",
+        "Elimina el grupo fosfato de la glucosa-6-fosfato permitiendo la liberación de glucosa a la sangre.",
+        "Transforma la glucosa libre en aminoácidos hidrofóbicos para ser secretados por Golgi.",
+        "Fosforila la glucosa libre en el lumen para almacenarla en forma de vesículas."
+      ],
+      "correcta": "B",
+      "explicacion": "La glucosa-6-fosfatasa remueve el grupo fosfato de la glucosa-6-fosfato para generar glucosa libre, la cual puede salir de la célula hepática hacia la sangre y mantener la glucemia."
+    },
+    {
+      "pregunta": "¿Por qué el tejido muscular no puede liberar glucosa libre a la sangre a partir de sus reservas de glucógeno?",
+      "opciones": [
+        "Porque carece de la enzima glucosa-6-fosfatasa en el REL de sus células.",
+        "Porque almacena el glucógeno dentro del lumen del aparato de Golgi.",
+        "Porque sus ribosomas sintetizan únicamente proteínas de membrana y no enzimas.",
+        "Porque degrada la glucosa-1-fosfato mediante digestión en lisosomas secundarios."
+      ],
+      "correcta": "A",
+      "explicacion": "A diferencia del hepatocito, la célula muscular no posee la enzima glucosa-6-fosfatasa en su REL, por lo que no puede desfosforilar la glucosa para liberarla a la circulación sanguínea."
+    },
+    {
+      "pregunta": "¿Qué determina que un ribosoma libre se dirija al retículo endoplasmático rugoso (RER) para continuar la traducción?",
+      "opciones": [
+        "La presencia de un oligosacárido unido por enlace N-glicosídico al inicio de la cadena.",
+        "La presencia de un péptido señal formado por una seguidilla de aminoácidos hidrofóbicos al inicio de la proteína.",
+        "La unión directa de la proteína COP a la subunidad menor del ribosoma en el citosol.",
+        "El ensamblado de una cubierta de clatrina alrededor del ARN mensajero antes de traducir."
+      ],
+      "correcta": "B",
+      "explicacion": "Toda traducción comienza en ribosomas libres. Si la primera porción sintetizada contiene un péptido señal (cadena de aminoácidos hidrofóbicos), la partícula PRS lo reconoce y traslada el complejo hacia la membrana del RER."
+    },
+    {
+      "pregunta": "¿Qué ocurre cuando la partícula de reconocimiento de la señal (PRS) se une al péptido señal del extremo amino-terminal?",
+      "opciones": [
+        "Acelera la traducción introduciendo la proteína directamente en el lumen del Golgi.",
+        "Detiene temporalmente la síntesis proteica y guía al ribosoma hacia la membrana del RER.",
+        "Degrada inmediatamente el ARN mensajero mediante enzimas de la membrana citosólica.",
+        "Transfiere un oligosacárido de catorce monosacáridos desde el dolicol de la membrana."
+      ],
+      "correcta": "B",
+      "explicacion": "La PRS reconoce el péptido señal en el extremo amino-terminal, pausa la síntesis proteica y dirige el ribosoma a la membrana del RER, donde se une a su receptor para iniciar la translocación cotraduccional."
+    },
+    {
+      "pregunta": "Las proteínas destinadas a mitocondrias, cloroplastos, peroxisomas y núcleo se caracterizan por:",
+      "opciones": [
+        "Sintetizarse en ribosomas libres y sufrir un proceso de importación postraslacional.",
+        "Sintetizarse en el RER mediante translocación cotraduccional en presencia de péptido señal.",
+        "Glicosilarse en el REL antes de atravesar las membranas de dichas organelas.",
+        "Viajar empacadas dentro de vesículas de secreción derivadas del aparato de Golgi."
+      ],
+      "correcta": "A",
+      "explicacion": "Las proteínas sin péptido señal de RER se sintetizan en ribosomas libres. Aquellas que no quedan en el citosol se dirigen a núcleo, mitocondria, cloroplasto o peroxisoma de forma postraslacional (después de sintetizarse)."
+    },
+    {
+      "pregunta": "¿En qué consiste la glicosilación nuclear de proteínas que tiene lugar en el RER?",
+      "opciones": [
+        "En el agregado de glucolípidos complejos exclusivamente sobre la cara citosólica de la membrana.",
+        "En la adición de un oligosacárido común unido al dolicol hacia la asparagina de una señal de glicosilación.",
+        "En la degradación de azúcares en la superficie externa del núcleo para generar energía.",
+        "En la unión covalente de proteoglicanos e hidrolasas ácidas en la cara cis del complejo de Golgi."
+      ],
+      "correcta": "B",
+      "explicacion": "La glicosilación en el RER implica la transferencia de un oligosacárido préviamente ensamblado sobre el dolicol de la membrana hacia el residuo de asparagina (Asn) de la secuencia señal de glicosilación de la proteína."
+    },
+    {
+      "pregunta": "¿Cuál es la secuencia aminoacídica requerida como señal de glicosilación en una proteína para recibir el oligosacárido en el RER?",
+      "opciones": [
+        "Asn - X - Ser o Asn - X - Thr",
+        "Lys - Asp - Glu - Leu",
+        "Glu - X - Gly o Glu - X - Ala",
+        "Met - Ala - Cys o Met - Ala - Ser"
+      ],
+      "correcta": "A",
+      "explicacion": "La señal de glicosilación en el RER consiste en una secuencia trídica específica dada por Asparagina-X-Serina o Asparagina-X-Treonina (donde X es cualquier aminoácido)."
+    },
+    {
+      "pregunta": "¿A qué se refiere el concepto de 'glicosilación nuclear' en el contexto del RER y Golgi?",
+      "opciones": [
+        "A que los glúcidos son sintetizados exclusivamente dentro del nucleolo de la célula.",
+        "A que a pesar de los recortes y modificaciones posteriores, se conservan siempre los 5 primeros monosacáridos (núcleo).",
+        "A que los oligosacáridos se unen únicamente a proteínas que ingresan a la envoltura nuclear.",
+        "A que las enzimas que transfieren los glúcidos requieren la degradación de nucleótidos purínicos."
+      ],
+      "correcta": "B",
+      "explicacion": "Se denomina glicosilación nuclear porque, aunque el oligosacárido sufra recortes y agregados tanto en el RER como en el Golgi, siempre se conserva una estructura base o 'núcleo' de los 5 primeros monosacáridos."
+    },
+    {
+      "pregunta": "Si un dominio glucídico de una proteína integral de membrana se encuentra orientado hacia el lumen del RER, ¿hacia dónde quedará orientado cuando la proteína llegue a la membrana plasmática?",
+      "opciones": [
+        "Hacia el citosol de la célula.",
+        "Hacia la cara extracelular.",
+        "Hacia la monocapa interna de los lisosomas.",
+        "Hacia la matriz de las mitocondrias."
+      ],
+      "correcta": "B",
+      "explicacion": "Existe una correspondencia topológica estricta: la cara luminal de las membranas del sistema de endomembranas equivale y se transforma en la cara extracelular de la membrana plasmática tras la fusión vesicular."
+    },
+    {
+      "pregunta": "¿Cuál es el orden del recorrido que siguen los productos proteicos al ingresar y atravesar el aparato de Golgi?",
+      "opciones": [
+        "Ingresan por la red trans, pasan por las cisternas mediales y salen por la red cis.",
+        "Ingresan por la cara cis (recepción), pasan por las cisternas mediales y salen por la cara trans (maduración).",
+        "Ingresan por las cisternas mediales, se empaquetan en la cara cis y se almacenan en la red trans.",
+        "Ingresan directamente a la red trans desde las vesículas derivadas del retículo endoplasmático liso."
+      ],
+      "correcta": "B",
+      "explicacion": "El aparato de Golgi presenta una polarización funcional: la cara o red cis es la cara de recepción (próxima al RER), luego el flujo avanza por las cisternas mediales y culmina en la cara o red trans de maduración y salida."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes funciones es llevada a cabo específicamente por el aparato de Golgi?",
+      "opciones": [
+        "Síntesis de lípidos de membrana y reservorio de calcio iónico.",
+        "Glicosilación terminal, síntesis de glucolípidos y formación de lisosomas primarios.",
+        "Traducción cotraduccional de proteínas solubles de secreción.",
+        "Detoxificación celular y degradación de glucógeno hepático."
+      ],
+      "correcta": "B",
+      "explicacion": "El aparato de Golgi se encarga de la glicosilación terminal, la síntesis de glucolípidos, proteoglicanos y lipoproteínas, el empaque de productos de exportación y la formación de lisosomas primarios."
+    },
+    {
+      "pregunta": "¿En qué se diferencia la secreción continua (constitutiva) de la secreción regulada en el aparato de Golgi?",
+      "opciones": [
+        "La secreción continua libera proteínas hacia el citosol y la regulada las envía hacia el RER.",
+        "La continua ocurre a medida que brotan las vesículas; la regulada acumula gránulos que responden a una señal externa.",
+        "La secreción continua utiliza vesículas de clatrina y la regulada no requiere ningun tipo de revestimiento.",
+        "La secreción continua expulsa únicamente agua y la regulada libera orgánulos envejecidos."
+      ],
+      "correcta": "B",
+      "explicacion": "La secreción continua descarga su contenido por exocitosis constante a medida que se forman las vesículas. En la secreción regulada, los productos se concentran en gránulos de secreción y solo se exocitan tras recibir un estímulo o señal."
+    },
+    {
+      "pregunta": "¿Qué características presentan las enzimas contenidas en los lisosomas primarios y cómo se mantiene su pH interno?",
+      "opciones": [
+        "Son hidrolasas ácidas activas a pH 5, mantenido por una bomba de protones ($H^+$) que consume ATP.",
+        "Son proteasas alcalinas activas a pH 7,2, mantenido por un canal pasivo de sodio.",
+        "Son escramblasas neutras activas a pH 8, mantenido por la entrada libre de agua.",
+        "Son polimerasas citosólicas activas a pH 3, mantenido por la expulsión de calcio."
+      ],
+      "correcta": "A",
+      "explicacion": "Los lisosomas contienen hidrolasas ácidas que funcionan en un medio ácido (pH aproximadamente 5). Esta acidez se logra y mantiene mediante una bomba de protones ($H^+$) presente en su membrana que hidroliza ATP."
+    },
+    {
+      "pregunta": "¿Cómo se origina estructuralmente un lisosoma secundario?",
+      "opciones": [
+        "Por la gemación directa de cisternas pertenecientes al retículo endoplasmático liso.",
+        "Por la fusión de un lisosoma primario con una vesícula que contiene material a digerir (endosoma, fagosoma o autofagosoma).",
+        "Por el desprendimiento de gránulos de secreción desde la red cis del aparato de Golgi.",
+        "Por la acumulación de glucosa libre y fosfato inorgánico en el interior del citosol."
+      ],
+      "correcta": "B",
+      "explicacion": "Un lisosoma secundario se constituye cuando un lisosoma primario (vesícula con hidrolasas proveniente de Golgi) se fusiona con una vesícula con sustrato orgánico a digerir (endosoma, fagosoma o autofagosoma)."
+    },
+    {
+      "pregunta": "Cuando un lisosoma primario se fusiona con una vesícula que contiene material capturado por fagocitosis, la estructura resultante se denomina específicamente:",
+      "opciones": [
+        "Endolisosoma",
+        "Fagolisosoma",
+        "Autofagolisosoma",
+        "Cuerpo residual"
+      ],
+      "correcta": "B",
+      "explicacion": "El polimorfismo lisosomal establece nomenclaturas según el origen del sustrato: la fusión con un endosoma genera un endolisosoma, con un autofagosoma genera un autofagolisosoma y con un fagosoma (material fagocitado) da origen a un fagolisosoma."
+    },
+    {
+      "pregunta": "¿Qué ocurre durante la fase de 'absorción' dentro del proceso digestivo lisosomal?",
+      "opciones": [
+        "Las moléculas sencillas resultantes de la hidrólisis atraviesan la membrana lisosomal hacia el citosol.",
+        "Los fragmentos no digeridos son empaquetados en vesículas de clatrina para retornar al Golgi.",
+        "La bomba de protones invierte su funcionamiento para aumentar el pH del lisosoma a 7,2.",
+        "Las hidrolasas ácidas salen del lisosoma para degradar el citoesqueleto circundante."
+      ],
+      "correcta": "A",
+      "explicacion": "Tras la hidrólisis o digestión de los componentes dentro del lisosoma secundario, las moléculas pequeñas y sencillas obtenidas se absorben pasando a través de la membrana hacia el citosol para ser reutilizadas."
+    },
+    {
+      "pregunta": "¿Qué es un 'cuerpo residual' en el ciclo funcional de los lisosomas?",
+      "opciones": [
+        "Una vesícula sin enzimas que brota del RER para transportar lípidos neutros.",
+        "Un lisosoma secundario que contiene los desechos no digeribles luego de completada la absorción.",
+        "Un complejo proteico citosólico encargado de destruir los ARN mensajeros defectuosos.",
+        "Una cisterna del aparato de Golgi que ha perdido sus enzimas de glicosilación."
+      ],
+      "correcta": "B",
+      "explicacion": "El cuerpo residual es considerado un tipo de lisosoma secundario que conserva los materiales de desecho no digestibles que quedan dentro de la vesícula una vez finalizada la digestión y absorción de nutrientes."
+    }
+  ]
+}
