@@ -1,0 +1,281 @@
+{
+  "materia": "Semiologia",
+  "tema": "Conferencia 2",
+  "preguntas": [
+    {
+      "pregunta": "¿Qué sostiene la tercera perspectiva sobre la corporeidad desarrollada por autores como Finol, Contreras y Montes?",
+      "opciones": [
+        "El cuerpo es un organismo estrictamente biológico cuyo sentido depende de la conciencia.",
+        "El cuerpo es una construcción puramente cultural que no reconoce una dimensión biológica.",
+        "Existe una continuidad entre el funcionamiento fisiológico del cuerpo y la producción de sentido.",
+        "El cuerpo funciona únicamente como un soporte pasivo sobre el que luego se imprime el sentido."
+      ],
+      "correcta": "C",
+      "explicacion": "Esta perspectiva concibe al cuerpo como naturaleza y cultura a la vez, planteando una continuidad entre la fisiología y la producción de sentido articulada con sistemas simbólicos. Los enfoques que reducen el cuerpo a lo puramente biológico o a lo puramente cultural corresponden a las otras dos perspectivas analizadas."
+    },
+    {
+      "pregunta": "Según el nivel de análisis propuesto por José Enrique Finol, ¿cómo se define al cuerpo cuando actúa como 'resultado' de procesos semióticos?",
+      "opciones": [
+        "Como un aparato perceptivo que conecta al sujeto con el mundo.",
+        "Como un signo o representamen que significa algo para alguien.",
+        "Como la condición radical y antecedente de toda significación.",
+        "Como una estructura biológica neutra carente de dimensión cultural."
+      ],
+      "correcta": "B",
+      "explicacion": "Finol propone centralmente que el cuerpo es resultado significante y, por ende, funciona como signo (un representamen que significa algo para alguien). Entender el cuerpo como el aparato perceptivo o la condición radical corresponde más bien a su dimensión de agente de la semiosis estudiada por Contreras."
+    },
+    {
+      "pregunta": "¿Por qué afirma María José Contreras que el cuerpo es 'condición radical' de la significación?",
+      "opciones": [
+        "Porque constituye la causa primera y única de los juicios puramente racionales.",
+        "Porque determina constitutivamente el sentido al ser la raíz y lugar de contacto con el mundo.",
+        "Porque es un objeto cultural que sustituye la experiencia biológica del sujeto.",
+        "Porque permite cancelar las limitaciones espaciotemporales mediante el intelecto."
+      ],
+      "correcta": "B",
+      "explicacion": "El término 'radical' alude a la raíz del proceso: el cuerpo es la condición desde la cual el sujeto entra en contacto con el mundo antes y durante la formación del sentido. No cancela los límites ni es solo racional, sino que encarna y sitúa la experiencia sensible."
+    },
+    {
+      "pregunta": "En la conceptualización de Contreras, ¿cuál es la diferencia entre el cuerpo como 'sede' y como 'resorte'?",
+      "opciones": [
+        "Es sede porque procesa conceptos abstractos y resorte porque los expresa en lenguaje verbal.",
+        "Es sede porque recibe las experiencias sensibles y resorte porque impulsa su articulación con la semiosis.",
+        "Es sede porque representa la dimensión biológica y resorte porque constituye la dimensión cultural.",
+        "Es sede porque almacena información pasiva y resorte porque elimina las huellas no semióticas."
+      ],
+      "correcta": "B",
+      "explicacion": "El cuerpo es sede en tanto allí suceden las experiencias sensoriales (tacto, vista, etc.) y es resorte porque no permanece pasivo, sino que motoriza e impulsa la articulación de lo percibo con la semiosis."
+    },
+    {
+      "pregunta": "¿Cómo define Contreras el concepto de 'presencia' en la experiencia corporal?",
+      "opciones": [
+        "Como un afecto interpersonal o simpatía hacia las personas que comparten un espacio.",
+        "Como la capacidad cognitiva de aislarse del entorno inmediato para producir sentido.",
+        "Como la existencia situada en un 'aquí' y un 'ahora' desde la cual el cuerpo entra en relación con el mundo.",
+        "Como la acumulación visible de marcas corporales a lo largo de la historia de un sujeto."
+      ],
+      "correcta": "C",
+      "explicacion": "La presencia nombra la condición situada de la existencia en coordenadas concretas de espacio y tiempo ('aquí y ahora'). La noción de acumulación de marcas atañe a la memoria somática y no a la definición primaria de presencia."
+    },
+    {
+      "pregunta": "En el marco del campo relacional y tensivo, ¿a qué refieren respectivamente los términos 'intensidad' y 'extensión'?",
+      "opciones": [
+        "La intensidad refiere a la distancia del estímulo y la extensión a su duración en el tiempo.",
+        "La intensidad alude a la fuerza del estímulo y la extensión a la distancia, alcance o magnitud con que se presenta.",
+        "La intensidad señala el grado de racionalización del signo y la extensión a la cantidad de personas presentes.",
+        "La intensidad marca la carga emotiva del recuerdo y la extensión a la profundidad de la cicatriz."
+      ],
+      "correcta": "B",
+      "explicacion": "Dentro de las coordenadas del campo relacional y tensivo, las intensidades aluden a la fuerza con que impactan o se manifiestan los estímulos, mientras que las extensiones remiten a la distancia, magnitud o alcance con que se presentan."
+    },
+    {
+      "pregunta": "Un sujeto asiste a un concierto muy cerca del escenario y percibe la música con gran fuerza, siente el calor corporal y el contacto directo. Desde la semiótica de la presencia, ¿qué ocurrió en su experiencia corporal?",
+      "opciones": [
+        "Disminuyó la extensión del estímulo sin alterar la interpretación conceptual.",
+        "Se incrementaron las intensidades en su campo relacional y tensivo, modificando la significación construida.",
+        "El sujeto pasó a operar exclusivamente desde el 'sí mismo' cancelando la dimensión de 'mi carne'.",
+        "El cuerpo dejó de actuar como agente de la semiosis para pasar a ser únicamente un representamen."
+      ],
+      "correcta": "B",
+      "explicacion": "Al estar más cerca del escenario, aumentan las intensidades de los estímulos sensibles (música, calor, tacto), lo que demuestra que la experiencia corporal varía según la presencia y reconfigura la significación."
+    },
+    {
+      "pregunta": "En el análisis del tatuaje dedicado a Patricio Rey y sus Redonditos de Ricota, ¿qué función cumple la frase 'Lo mejor de nuestra piel es que no nos deja huir'?",
+      "opciones": [
+        "Funciona como un signo índice que prueba físicamente la asistencia al concierto.",
+        "Funciona como un elemento simbólico que orienta la interpretación de los íconos del conjunto.",
+        "Funciona como un elemento puramente icónico que reproduce la imagen de los músicos.",
+        "Funciona como un límite anatómico convencional que separa el brazo del antebrazo."
+      ],
+      "correcta": "B",
+      "explicacion": "Mientras que las imágenes de los músicos actúan por semejanza como íconos, la frase de la canción opera como un elemento simbólico que guía y orienta la interpretación semiótica del tatuaje en su conjunto."
+    },
+    {
+      "pregunta": "Según Jacques Fontanille, ¿qué implica concebir al sujeto que produce sentido como un 'sujeto epistemológico encarnado'?",
+      "opciones": [
+        "Que el conocimiento es producido por una mente racional independiente de las fluctuaciones físicas.",
+        "Que la producción de conocimiento y sentido parte siempre de la presencia y condición corporal del sujeto.",
+        "Que el conocimiento es una construcción abstracta determinada de manera exclusiva por la semiósfera.",
+        "Que los estímulos sensibles se convierten de manera inmediata en discursos sociales organizados."
+      ],
+      "correcta": "B",
+      "explicacion": "El sujeto epistemológico encarnado de Fontanille supone abandonar la idea de un sujeto puramente racional e incorpóreo: se conoce y se produce sentido porque se está en un cuerpo y desde las huellas que deja la experiencia situada."
+    },
+    {
+      "pregunta": "En la teoría del doble estatuto del cuerpo de Fontanille, ¿cómo se definen 'mi carne' y el 'sí mismo'?",
+      "opciones": [
+        "'Mi carne' es la representación social del cuerpo y 'el sí mismo' es la envoltura biológica natural.",
+        "'Mi carne' es la materia receptora de estímulos y huellas; 'el sí mismo' es la instancia reflexiva que las interpreta y da sentido.",
+        "'Mi carne' es la dimensión conceptual consciente y 'el sí mismo' corresponde a los procesos musculares automáticos.",
+        "'Mi carne' designa los límites anatómicos del cuerpo y 'el sí mismo' abarca la ropa y las ampliaciones."
+      ],
+      "correcta": "B",
+      "explicacion": "'Mi carne' es la materia que recibe el impacto sensible y recoge las huellas de lo vivido (inicialmente no semióticas); el 'sí mismo' es la instancia reflexiva donde el cuerpo vuelve sobre esas huellas, las nombra, las clasifica y construye identidad."
+    },
+    {
+      "pregunta": "¿Por qué el tatuaje es considerado un caso sumamente visible de 'enunciación encarnada'?",
+      "opciones": [
+        "Porque utiliza un lenguaje verbal que sustituye la necesidad del cuerpo físico.",
+        "Porque el soporte del enunciado coincide directamente con la corporalidad que lo produce.",
+        "Porque se realiza sin dejar marcas físicas o huellas no semióticas en la piel.",
+        "Porque opera al margen de la presencia espaciotemporal y de la experiencia sensible."
+      ],
+      "correcta": "B",
+      "explicacion": "En el tatuaje, el soporte del mensaje o enunciado es la misma piel y corporalidad de quien lo porta y produce, encarnando el acto enunciativo a partir de sus experiencias vividas."
+    },
+    {
+      "pregunta": "¿Qué significa entender al cuerpo como un 'cuerpo bitácora'?",
+      "opciones": [
+        "Que el cuerpo es un archivo cerrado e inalterable que impide la comunicación externa.",
+        "Que la superficie corporal funciona como un diario de navegación donde las experiencias se inscriben de forma simbólica.",
+        "Que el cuerpo registra únicamente los datos biológicos heredados genéticamente.",
+        "Que las marcas del cuerpo son erradicadas voluntariamente mediante cirugías estéticas."
+      ],
+      "correcta": "B",
+      "explicacion": "El concepto de cuerpo bitácora se refiere a la metáfora del diario de navegación: las experiencias sensibles de estar presente en el mundo se inscriben, cobran forma simbólica en el cuerpo y pueden ser observadas y comunicadas."
+    },
+    {
+      "pregunta": "¿Qué es la 'memoria somática' o memoria corporal según Fontanille?",
+      "opciones": [
+        "Un archivo intelectual pasivo donde se guardan definiciones teóricas sobre el cuerpo.",
+        "Un mecanismo por el cual el cuerpo conserva huellas no semióticas como sedimentos de interacciones pasadas.",
+        "La erradicación consciente de las huellas de experiencias negativas mediante el olvido voluntario.",
+        "La capacidad exclusiva del cerebro para procesar estímulos visuales y auditivos."
+      ],
+      "correcta": "B",
+      "explicacion": "La memoria somática conserva las huellas de las interacciones previas del cuerpo con el mundo (como marcas, hábitos o lesiones). Estas huellas no son un archivo pasivo, sino que quedan disponibles para intervenir como interpretantes en nuevos procesos semióticos."
+    },
+    {
+      "pregunta": "¿A qué forma de memoria somática de Fontanille corresponde estrictamente el tatuaje por su modo de elaboración?",
+      "opciones": [
+        "Al cuerpo como carne o musculatura.",
+        "Al cuerpo como punto en desplazamiento.",
+        "Al cuerpo como envoltura que sufre modificación o deformación superficial.",
+        "Al cuerpo como cavidad que recrea una escena teatral."
+      ],
+      "correcta": "C",
+      "explicacion": "Por su modo de realización (acción de la aguja y la tinta sobre la piel), el tatuaje responde de forma estricta al cuerpo como envoltura, al deformar o modificar la superficie corporal dejando una marca persistente."
+    },
+    {
+      "pregunta": "Un tatuaje grabado en el brazo que modifica su forma o figura (por ejemplo, un escarabajo que abre o cierra las alas) al flexionar el codo, involucra principalmente a la memoria somática del cuerpo como:",
+      "opciones": [
+        "Envoltura.",
+        "Carne (musculatura).",
+        "Punto.",
+        "Cavidad."
+      ],
+      "correcta": "B",
+      "explicacion": "Cuando el tatuaje se activa semióticamente a través del movimiento de los músculos y articulaciones del brazo, entra en juego el cuerpo como carne (musculatura y memoria muscular)."
+    },
+    {
+      "pregunta": "La memoria somática vinculada al 'cuerpo como cavidad' se caracteriza por almacenar:",
+      "opciones": [
+        "Secuencias automáticas de movimiento manual como el tejer o bailar.",
+        "Marcas epidérmicas causadas por la exposición prolongada al sol.",
+        "Experiencias vitales integrales estructuradas como escenas con roles, escenarios y carga emotiva.",
+        "El registro de las distancias y coordenadas geométricas recorridas en el espacio."
+      ],
+      "correcta": "C",
+      "explicacion": "El cuerpo como cavidad conserva recuerdos integrales que funcionan como escenas teatrales o memoria emotiva, donde cuentan la disposición de los cuerpos, los roles desempeñados y la intensidad emocional de la experiencia."
+    },
+    {
+      "pregunta": "En la propuesta de María de los Ángeles Montes, ¿qué función cumplen las emociones en el proceso de la semiosis?",
+      "opciones": [
+        "Son estímulos neutros que no alteran la percepción del intérprete.",
+        "Funcionan como interpretantes, es decir, reacciones interpretativas que surgen como efectos de sentido.",
+        "Son esquemas puramente biológicos ajenos a los hábitos culturales del sujeto.",
+        "Constituyen reglas rígidas que impiden la transformación de la significación."
+      ],
+      "correcta": "B",
+      "explicacion": "Montes señala que las emociones actúan como interpretantes: son efectos de sentido y respuestas interpretativas que la persona experimenta al reconocer una relación significante entre el signo y el objeto."
+    },
+    {
+      "pregunta": "Según María de los Ángeles Montes, ¿cómo se definen los 'sentimientos' y qué función cumplen?",
+      "opciones": [
+        "Son reacciones fisiológicas inmediatas e incontrolables frente a un estímulo táctil.",
+        "Son programas narrativos sociohistóricos que estructuran y regulan las emociones para compartirlas.",
+        "Son huellas no semióticas que quedan atrapadas en la musculatura profunda.",
+        "Son conceptos abstractos desligados de las pautas morales e ideológicas de la cultura."
+      ],
+      "correcta": "B",
+      "explicacion": "Los sentimientos son definidos como programas narrativos sociohistóricamente determinados. Permiten organizar, dar coherencia y normativar las emociones individuales para que puedan circular y compartirse socialmente."
+    },
+    {
+      "pregunta": "Teniendo en cuenta a Montes, un tatuaje que representa la metamorfosis de una oruga en mariposa puede funcionar como discurso social porque:",
+      "opciones": [
+        "Es un signo puramente biológico que describe el ciclo vital de un insecto.",
+        "Colabora en la construcción simbólica del sentimiento de la esperanza al narrar la transformación en el tiempo.",
+        "Borra por completo la memoria somática del sujeto que lo lleva.",
+        "Es una ampliación significante ligada exclusivamente al límite anatómico del pie."
+      ],
+      "correcta": "B",
+      "explicacion": "Al narrar visualmente el paso de la vulnerabilidad/espera al estado de plenitud, el tatuaje se convierte en un discurso social que aporta a la normalización y circulación del sentimiento de la esperanza."
+    },
+    {
+      "pregunta": "¿Qué expresa la tesis central de José Enrique Finol respecto al cuerpo?",
+      "opciones": [
+        "El cuerpo solo significa cuando el sujeto realiza un gesto intencional y consciente.",
+        "El cuerpo es signo en su totalidad y en todo momento, pudiendo significar incluso a su pesar.",
+        "El cuerpo carece de signicidad hasta que se le adiciona indumentaria o tatuajes.",
+        "El cuerpo solo es significante en sus zonas de flexión y articulación anatómica."
+      ],
+      "correcta": "B",
+      "explicacion": "Finol sostiene contundentemente que 'el cuerpo es signo' en su totalidad de representámenes y no únicamente cuando hay voluntad intencional: proyecta sentidos de manera continua, incluso involuntariamente."
+    },
+    {
+      "pregunta": "¿A qué se refiere Finol cuando habla de la 'indumentaria' o el 'tatuaje' como 'ampliaciones significantes'?",
+      "opciones": [
+        "A elementos que anulan la signicidad inicial primaria del cuerpo biológico.",
+        "A agregados sobre la superficie que modifican, reorientan y amplían los sentidos que el cuerpo proyecta.",
+        "A prótesis quirúrgicas destinadas a corregir deformaciones en la piel.",
+        "A límites convencionales que impiden la comunicación entre la corpósfera y la semiósfera."
+      ],
+      "correcta": "B",
+      "explicacion": "Las ampliaciones significantes (como la ropa o el tatuaje) no son simples adornos externos: transforman la red semiótica de la corporalidad, reorientando y enriqueciendo el conjunto de significaciones que el cuerpo pone en circulación."
+    },
+    {
+      "pregunta": "¿Cómo se articula el concepto de 'corpósfera' de Finol con la 'semiósfera' de Yuri Lotman?",
+      "opciones": [
+        "La corpósfera sustituye a la semiósfera eliminando los códigos culturales tradicionales.",
+        "La corpósfera es el complejo semiótico del cuerpo pensado como un espacio delimitado dentro del territorio cultural de la semiósfera.",
+        "La semiósfera se limita al ámbito de la piel y la corpósfera abarca todo el universo exterior.",
+        "Ambos conceptos son opuestos y describen procesos que no entran en contacto."
+      ],
+      "correcta": "B",
+      "explicacion": "Finol retoma la lógica de Lotman (la semiósfera como espacio cultural de significación) para definir la corpósfera como el complejo semiótico centrado en el cuerpo, el cual actúa como un territorio delimitado que produce y hace circular sentido dentro de la cultura."
+    },
+    {
+      "pregunta": "Un tatuaje que traza una línea continua desde el pie hasta la mano, recordando una costura, interviene principalmente sobre los:",
+      "opciones": [
+        "Límites anatómicos, alterando la estructura ósea del sujeto.",
+        "Límites convencionales, proponiendo divisiones y continuidades que no coinciden con la morfología tradicional.",
+        "Límites de la cavidad corporal, borrando la memoria emotiva.",
+        "Límites del medio ambiente, cancelando la presencia en el espacio."
+      ],
+      "correcta": "B",
+      "explicacion": "Los límites convencionales son recortes culturales del cuerpo. Un tatuaje que une el pie y la mano cuestiona y reorganiza esas divisiones culturales al crear una línea que atraviesa regiones normalmente separadas."
+    },
+    {
+      "pregunta": "¿Qué ocurre en la 'frontera entre el cuerpo y otros cuerpos' cuando dos personas aproximan sus brazos con tatuajes complementarios que representan un hilo rojo o unas manos?",
+      "opciones": [
+        "La piel funciona estrictamente como un muro de separación inquebrantable.",
+        "La piel se convierte en plataforma de unión y se produce una significación conjunta y semiotización mutua.",
+        "Se anulan las ampliaciones de la corpósfera para retornar a la signicidad primaria.",
+        "Se genera una alteración anatómica que destruye el límite entre interioridad y exterioridad."
+      ],
+      "correcta": "B",
+      "explicacion": "En la frontera entre cuerpos, la piel deja de ser mero límite separador para ser plataforma de interacción; la aproximación de ambas marcas genera un sentido compartido (unión, lazo vital, sostén)."
+    },
+    {
+      "pregunta": "Al analizar casos como el de Sylvain Hélène (maestro totalmente tatuado) o los diseños de 'El Iván de Quilmes', ¿qué queda de manifiesto respecto de los lenguajes secundarios de la cultura?",
+      "opciones": [
+        "Que el tatuaje posee un significado único y universalmente aceptado en todas las esferas institucionales.",
+        "Que distintos ámbitos (como la educación, la moda o la cultura popular) evalúan y significan los cuerpos tatuados según sus propios códigos y reglas.",
+        "Que los cuerpos alterados son rechazados de manera uniforme sin posibilidad de apropiación social.",
+        "Que las marcas comerciales destruyen por completo el valor identitario de las clases populares."
+      ],
+      "correcta": "B",
+      "explicacion": "Los lenguajes secundarios (códigos específicos de cada ámbito humano) disputan y varían la valoración del tatuaje: lo que la moda recepta como innovación disruptiva, la institución escolar tradicional puede codificarlo como amenaza o ruptura de normas."
+    }
+  ]
+}
