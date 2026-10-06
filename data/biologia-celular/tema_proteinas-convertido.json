@@ -1,0 +1,336 @@
+{
+  "materia": "Biología",
+  "tema": "Proteínas",
+  "preguntas": [
+    {
+      "pregunta": "¿Cómo se define químicamente a las proteínas según la bibliografía?",
+      "opciones": [
+        "Polímeros ramificados de monosacáridos unidos por enlaces glicosídicos.",
+        "Triésteres formados por la unión de tres moléculas de ácidos grasos y un glicerol.",
+        "Polímeros lineales de L-aminoácidos unidos mediante enlaces peptídicos.",
+        "Polinucleótidos lineales unidos covalentemente por puentes fosfodiéster."
+      ],
+      "correcta": "C",
+      "explicacion": "Las proteínas son polímeros lineales integrados por L-aminoácidos enlazados por uniones peptídicas. Esta definición establece la naturaleza química fundamental de sus cadenas."
+    },
+    {
+      "pregunta": "¿Qué grupos funcionales unidos al carbono α componen la estructura básica de todo aminoácido?",
+      "opciones": [
+        "Un grupo aldehído y un grupo cetona.",
+        "Un grupo amino y un grupo carboxilo.",
+        "Dos grupos hidroxilo y un grupo fosfato.",
+        "Un grupo carboxilo y un grupo éster."
+      ],
+      "correcta": "B",
+      "explicacion": "La región común a todos los aminoácidos consta de un carbono central (α) unido a un grupo amino (-NH₂), un grupo carboxilo (-COOH), un átomo de hidrógeno y una cadena lateral o radical."
+    },
+    {
+      "pregunta": "¿Cuál es el único aminoácido que carece de carbono asimétrico (quiral) y no presenta isomería óptica?",
+      "opciones": [
+        "Alanina",
+        "Glicina",
+        "Cisteína",
+        "Leucina"
+      ],
+      "correcta": "B",
+      "explicacion": "En la glicina, el radical R es un átomo de hidrógeno (-H). Al tener dos hidrógenos unidos al carbono α, pierde la asimetría presente en los demás aminoácidos."
+    },
+    {
+      "pregunta": "¿Qué término describe adecuadamente la capacidad de los aminoácidos de comportarse como ácidos o como bases según el pH del medio?",
+      "opciones": [
+        "Hidrofóbicos",
+        "Anfipáticos",
+        "Aterogénicos",
+        "Anfóteros o anfolitos"
+      ],
+      "correcta": "D",
+      "explicacion": "Los aminoácidos son anfóteros o anfolitos porque el grupo carboxilo puede ceder protones y el grupo amino puede aceptarlos, adaptando su carga según el pH."
+    },
+    {
+      "pregunta": "A un pH fisiológico o neutro, ¿en qué forma iónica prevalece un aminoácido de cadena lateral neutra?",
+      "opciones": [
+        "Catión con carga neta positiva (+1).",
+        "Anión con carga neta negativa (-1).",
+        "Zwitterión o ión dipolar con carga neta neutra (0).",
+        "Molécula completamente desprotonada e insoluble."
+      ],
+      "correcta": "C",
+      "explicacion": "A pH neutro, el grupo amino está protonado (-NH₃⁺) y el carboxilo desprotonado (-COO⁻), coexistiendo ambas cargas opuestas en la misma molécula (zwitterión)."
+    },
+    {
+      "pregunta": "¿A qué categoría pertenecen el ácido aspártico (aspartato) y el ácido glutámico (glutamato) según las características de su grupo R?",
+      "opciones": [
+        "Polares con carga negativa o ácidos.",
+        "Polares con carga positiva o básicos.",
+        "Apolares alifáticos.",
+        "Aromáticos neutros."
+      ],
+      "correcta": "A",
+      "explicacion": "El aspartato y el glutamato poseen un grupo carboxilo adicional en su cadena lateral, lo que les otorga carga negativa a pH neutro y comportamiento ácido."
+    },
+    {
+      "pregunta": "¿Cuáles de los siguientes aminoácidos poseen un grupo R polar con carga positiva (básico)?",
+      "opciones": [
+        "Lisina, arginina e histidina.",
+        "Alanina, valina y leucina.",
+        "Serina, treonina y cisteína.",
+        "Fenilalanina, tirosina y triptófano."
+      ],
+      "correcta": "A",
+      "explicacion": "La lisina, la arginina y la histidina contienen grupos aminos o nitrogenados en sus radicales que se protonan a pH fisiológico, adquiriendo carga positiva."
+    },
+    {
+      "pregunta": "¿Qué caracteriza a un aminoácido esencial o indispensable en la nutrición humana?",
+      "opciones": [
+        "Son producidos de manera ilimitada en el hígado a partir de lípidos.",
+        "Se deben incorporar obligatoriamente en la dieta porque el organismo no puede sintetizarlos.",
+        "Carecen de cadena lateral y actúan únicamente como mensajeros celulares.",
+        "Forman la totalidad de las membranas plasmáticas celular."
+      ],
+      "correcta": "B",
+      "explicacion": "Los aminoácidos esenciales no pueden ser sintetizados por las vías metabólicas del cuerpo humano a partir de otros precursores, por lo cual deben provenir de los alimentos."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes opciones contiene exclusivamente aminoácidos de la lista de esenciales?",
+      "opciones": [
+        "Glicina, alanina, prolina y serina.",
+        "Leucina, isoleucina, lisina y metionina.",
+        "Aspartato, glutamato, asparagina y glutamina.",
+        "Cisteína, tirosina, serina y alanina."
+      ],
+      "correcta": "B",
+      "explicacion": "Leucina, isoleucina, lisina y metionina forman parte del grupo de aminoácidos esenciales citados en el material junto con valina, fenilalanina, treonina, triptófano e histidina."
+    },
+    {
+      "pregunta": "¿Cómo se clasifica a una cadena compuesta por hasta 10 aminoácidos unidas por enlaces peptídicos?",
+      "opciones": [
+        "Polipéptido",
+        "Proteína globular",
+        "Oligopéptido",
+        "Proteína oligomérica"
+      ],
+      "correcta": "C",
+      "explicacion": "Cadenas cortas de aminoácidos de hasta 10 residuos reciben la denominación de oligopéptidos."
+    },
+    {
+      "pregunta": "¿Entre qué grupos químicos específicos se establece la unión peptídica al sintetizarse una cadena polipeptídica?",
+      "opciones": [
+        "Entre los grupos R de dos cisteínas distantes.",
+        "Entre el grupo carboxilo de un aminoácido y el grupo amino del siguiente.",
+        "Entre el grupo hidroxilo del azúcar y el fosfato carboxílico.",
+        "Entre el carbono α y el nitrógeno de la base purínica."
+      ],
+      "correcta": "B",
+      "explicacion": "El enlace peptídico se produce mediante la condensación entre el grupo carboxilo (-COOH) del primer aminoácido y el grupo amino (-NH₂) del segundo, liberando agua."
+    },
+    {
+      "pregunta": "¿Qué proceso químico permite romper los enlaces peptídicos de una proteína para liberar aminoácidos libres?",
+      "opciones": [
+        "Condensación",
+        "Esterificación",
+        "Oxidación",
+        "Hidrólisis"
+      ],
+      "correcta": "D",
+      "explicacion": "La hidrólisis consume moléculas de agua para cleavar los enlaces covalentes amida (peptídicos) de la cadena principal."
+    },
+    {
+      "pregunta": "Durante la síntesis proteica en el ribosoma, ¿qué extremo libre presenta el primer aminoácido incorporado a la cadena?",
+      "opciones": [
+        "Extremo C-terminal (carboxilo libre).",
+        "Extremo 5'-fosfato.",
+        "Extremo 3'-hidroxilo.",
+        "Extremo N-terminal (amino libre)."
+      ],
+      "correcta": "D",
+      "explicacion": "La síntesis de proteínas avanza en dirección N-terminal a C-terminal, de modo que el primer aminoácido mantiene su extremo amino libre."
+    },
+    {
+      "pregunta": "¿Qué define la estructura primaria de una proteína?",
+      "opciones": [
+        "La disposición helicoidal provocada por puentes de hidrógeno entre amidas.",
+        "El acoplamiento de múltiples subunidades polipeptídicas independientes.",
+        "La secuencia lineal de aminoácidos unidos por enlaces peptídicos.",
+        "El empaquetamiento compacto de dominios globulares."
+      ],
+      "correcta": "C",
+      "explicacion": "La estructura primaria está dada únicamente por el orden específico o secuencia de aminoácidos unidos de forma covalente (incluyendo puentes disulfuro)."
+    },
+    {
+      "pregunta": "¿Qué residuo de aminoácido participa en la formación covalente de un puente disulfuro?",
+      "opciones": [
+        "Metionina",
+        "Serina",
+        "Cisteína",
+        "Lisina"
+      ],
+      "correcta": "C",
+      "explicacion": "Los grupos sulfhidrilo (-SH) de las cadenas laterales de dos residuos de cisteína se oxidan formando un enlace covalente -S-S- (puente disulfuro)."
+    },
+    {
+      "pregunta": "¿Qué tipo de interacciones químicas estabilizan los patrones regulares de la estructura secundaria, como la hélice α y la lámina β?",
+      "opciones": [
+        "Interacciones hidrofóbicas entre radicales apolares.",
+        "Uniones éster entre el grupo carboxilo terminal y alcoholes.",
+        "Enlaces iónicos entre cadenas laterales ácidas y básicas.",
+        "Puentes de hidrógeno entre grupos C=O y N-H del esqueleto peptídico."
+      ],
+      "correcta": "D",
+      "explicacion": "La estructura secundaria surge por puentes de hidrógeno establecidos entre los átomos de los grupos carboxilo y amino del esqueleto o eje de la cadena peptídica."
+    },
+    {
+      "pregunta": "¿Hacia dónde se orientan los radicales (grupos R) de los aminoácidos en una conformación en hélice α?",
+      "opciones": [
+        "Hacia el exterior de la hélice.",
+        "Hacia el centro interior del eje del cilindro.",
+        "Hacia arriba y abajo alternadamente sobre el plano peptídico.",
+        "Forman puentes disulfuro continuos a lo largo del centro."
+      ],
+      "correcta": "A",
+      "explicacion": "En la hélice α (dextrógira), la cadena principal forma el núcleo interno y los radicales R se proyectan hacia fuera de la hélice."
+    },
+    {
+      "pregunta": "En una estructura en hoja o lámina plegada β, ¿dónde se ubican los grupos R de los aminoácidos?",
+      "opciones": [
+        "En el núcleo de la hélice cilíndrica.",
+        "Orientados por encima o por debajo del plano de la lámina.",
+        "Unidos covalentemente entre tramos consecutivos.",
+        "Inmersos exclusivamente en micelas lipídicas."
+      ],
+      "correcta": "B",
+      "explicacion": "Debido al plegamiento en zigzag de las cadenas paralelas o antiparalelas en la lámina β, las cadenas laterales R se extienden alternadamente por arriba y por abajo del plano."
+    },
+    {
+      "pregunta": "¿Qué determina el plegamiento tridimensional que otorga la conformación terciaria o globular a una sola cadena proteica?",
+      "opciones": [
+        "La adición de nucleótidos trifosfato en los extremos de la cadena.",
+        "Únicamente la presencia de un grupo prostético que contenga hierro.",
+        "Las interacciones y atracciones entre las cadenas laterales (grupos R) de residuos distantes.",
+        "El orden secuencial del ARN mensajero exclusivamente durante la transcripción."
+      ],
+      "correcta": "C",
+      "explicacion": "La estructura terciaria se alcanza cuando las atracciones e interacciones (hidrofóbicas, iónicas, puentes de H y disulfuro) entre los grupos R pliegan la cadena en una forma tridimensional única."
+    },
+    {
+      "pregunta": "¿Qué tipo de fuerza promueve el agrupamiento de cadenas laterales apolares en el interior hidrofóbico de una proteína globular soluble?",
+      "opciones": [
+        "Interacción hidrofóbica",
+        "Unión iónica",
+        "Enlace covalente peptídico",
+        "Puente de hidrógeno"
+      ],
+      "correcta": "A",
+      "explicacion": "Las cadenas laterales no polares tienden a excluir el contacto con el agua y a agruparse en el centro o interior de la molécula globular mediante interacciones hidrofóbicas."
+    },
+    {
+      "pregunta": "¿A qué se debe la presencia de estructura cuaternaria en una proteína?",
+      "opciones": [
+        "Al desenrollamiento completo del esqueleto proteico por elevadas temperaturas.",
+        "A la formación de enlaces peptídicos entre el nitrógeno de la base y el carbono 5'.",
+        "A la asociación de dos o más cadenas polipeptídicas (subunidades o protómeros).",
+        "A la presencia exclusiva de una sola cadena lineal de más de 500 aminoácidos."
+      ],
+      "correcta": "C",
+      "explicacion": "Las proteínas oligoméricas poseen estructura cuaternaria, definida por la interacción mediante fuerzas no covalentes entre múltiples subunidades polipeptídicas."
+    },
+    {
+      "pregunta": "¿Cómo está constituida la hemoglobina según su estructura cuaternaria y componentes?",
+      "opciones": [
+        "Por una sola cadena proteica unida a cuatro moléculas de glucógeno.",
+        "Por tres cadenas polipeptídicas idénticas ricas en tramos de hoja plegada β.",
+        "Por dos cadenas de queratina unidas mediante puentes éster de colesterol.",
+        "Por cuatro subunidades de globina (dos α y dos β), cada una ligada a un grupo hemo."
+      ],
+      "correcta": "D",
+      "explicacion": "La hemoglobina es un tetrámero compuesto por dos subunidades α y dos subunidades β; cada una rodea a un grupo hemo que contiene un átomo de hierro."
+    },
+    {
+      "pregunta": "¿Qué nivel de estructura proteica se conserva intacto tras sufrir un proceso de desnaturalización?",
+      "opciones": [
+        "Estructura primaria",
+        "Estructura secundaria",
+        "Estructura terciaria",
+        "Estructura cuaternaria"
+      ],
+      "correcta": "A",
+      "explicacion": "La desnaturalización destruye la conformación espacial (estructuras 2ª, 3ª y 4ª) al romper interacciones débiles, pero preserva los enlaces peptídicos covalentes de la estructura primaria."
+    },
+    {
+      "pregunta": "¿Cuáles de los siguientes constituyen agentes capaces de provocar la desnaturalización de una proteína?",
+      "opciones": [
+        "Agua destilada y lípidos neutros.",
+        "Presencia de nucleótidos monofosfato.",
+        "Bajas concentraciones de glucosa y ATP.",
+        "Variaciones extremas de pH, altas temperaturas y radiaciones."
+      ],
+      "correcta": "D",
+      "explicacion": "Factores físicos y químicos como el calor extremo, cambios de pH y radiaciones desestabilizan las uniones débiles que sostienen la conformación nativa."
+    },
+    {
+      "pregunta": "¿Cuál es la función biológica de las proteínas chaperonas dentro de las células eucariotas?",
+      "opciones": [
+        "Asistir en el correcto plegamiento o reacondicionamiento de proteínas desplegadas.",
+        "Catalizar la degradación de aminoácidos para generar energía directa.",
+        "Sintetizar bicapas lipídicas a partir de triglicéridos sobrantes.",
+        "Transportar oxígeno a través de la circulación sanguínea."
+      ],
+      "correcta": "A",
+      "explicacion": "Las chaperonas son proteínas celulares que, consumiendo energía (ATP), ayudan a plegar o reacondicionar cadenas proteicas mal plegadas o desnaturalizadas."
+    },
+    {
+      "pregunta": "¿Qué proteína del huevo coagula y se vuelve insoluble durante el proceso de cocción (huevo frito)?",
+      "opciones": [
+        "Colágeno",
+        "Albúmina",
+        "Queratina",
+        "Actina"
+      ],
+      "correcta": "B",
+      "explicacion": "La albúmina de la clara del huevo sufre desnaturalización por calor, cambiando su conformación nativa soluble a una red entrecruzada e insoluble."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes proteínas cumple una función hormonal reguladora en el organismo?",
+      "opciones": [
+        "Anticuerpo",
+        "Colágeno",
+        "Miosina",
+        "Insulina"
+      ],
+      "correcta": "D",
+      "explicacion": "La insulina es una proteína con función hormonal, a diferencia del colágeno (estructural), la miosina (contráctil) y los anticuerpos (defensa)."
+    },
+    {
+      "pregunta": "A diferencia de los glúcidos y los lípidos, ¿cómo se comportan las proteínas respecto del almacenamiento energético?",
+      "opciones": [
+        "No se almacenan como reserva, pero se hidrolizan en caso de requerimiento energético.",
+        "Se depositan en grandes gránulos citosólicos ilimitados.",
+        "Se acumulan en gotas lipídicas dentro de los adipocitos.",
+        "Rinden exactamente 9 kcal por gramo al hidrolizarse."
+      ],
+      "correcta": "A",
+      "explicacion": "Las proteínas no forman depósitos o reservas energéticas especializadas; sus aminoácidos se catabolizan para producir ATP cuando las reservas de glúcidos o lípidos son insuficientes."
+    },
+    {
+      "pregunta": "Un ensayo analítico determina que un péptido de 4 aminoácidos se formó por reacciones de condensación. ¿Cuántos enlaces peptídicos y cuántas moléculas de agua se liberaron?",
+      "opciones": [
+        "3 enlaces peptídicos y 3 moléculas de agua.",
+        "4 enlaces peptídicos y 4 moléculas de agua.",
+        "3 enlaces peptídicos y 4 moléculas de agua.",
+        "2 enlaces peptídicos y 2 moléculas de agua."
+      ],
+      "correcta": "A",
+      "explicacion": "En una cadena lineal de N aminoácidos existen N-1 enlaces peptídicos. Para 4 aminoácidos se forman 3 enlaces peptídicos y se liberan 3 moléculas de H₂O."
+    },
+    {
+      "pregunta": "Si colocamos un aminoácido en una solución altamente ácida (pH muy bajo), ¿qué carga neta predominará en la molécula?",
+      "opciones": [
+        "Carga negativa (anión) por desprotonación total.",
+        "Carga neutra (zwitterión) sin grupos ionizables.",
+        "Carga positiva (catión) por protonación del grupo carboxilo y amino.",
+        "Carga neutra por formación espontánea de enlace peptídico."
+      ],
+      "correcta": "C",
+      "explicacion": "En un medio muy ácido con exceso de H⁺, el grupo carboxilo capta un protón (-COOH) y el grupo amino permanece protonado (-NH₃⁺), dando una carga neta positiva."
+    }
+  ]
+}

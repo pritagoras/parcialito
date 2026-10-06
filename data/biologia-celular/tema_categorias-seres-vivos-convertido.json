@@ -1,0 +1,281 @@
+{
+  "materia": "Biología",
+  "tema": "Categorías de los seres vivos y niveles de organización",
+  "preguntas": [
+    {
+      "pregunta": "¿En qué nivel de organización biológica emerge la vida como propiedad definitoria según la teoría celular?",
+      "opciones": [
+        "Nivel celular",
+        "Nivel subcelular u organoide",
+        "Nivel tisular",
+        "Nivel macromolecular"
+      ],
+      "correcta": "A",
+      "explicacion": "La célula es la porción más sencilla de la materia viva capaz de realizar todas las funciones imprescindibles para la vida. Por ello, la vida aparece como propiedad definitoria en el nivel celular."
+    },
+    {
+      "pregunta": "¿A qué nivel de organización pertenecen los virus según la clasificación biológica tradicional?",
+      "opciones": [
+        "Nivel celular",
+        "Nivel prebiótico o supramacromolecular",
+        "Nivel subcelular",
+        "Nivel macromolecular"
+      ],
+      "correcta": "B",
+      "explicacion": "Los virus están constituidos por la asociación de macromoléculas (ácidos nucleicos y proteínas), por lo que se ubican en el nivel prebiótico o supramacromolecular, careciendo de organización celular."
+    },
+    {
+      "pregunta": "Una población biológica se define como el conjunto de individuos que:",
+      "opciones": [
+        "Pertenecen a distintas especies e interactúan en un mismo ecosistema físico.",
+        "Poseen el mismo nivel de organización tisular y forman sistemas de órganos coordinados.",
+        "Representan la suma total de comunidades bióticas junto con los factores abióticos del entorno.",
+        "Pertenecen a la misma especie, comparten el mismo hábitat y coexisten en el mismo tiempo."
+      ],
+      "correcta": "D",
+      "explicacion": "El nivel de organización población reúne a todos los individuos de una misma especie que viven en un mismo lugar, en el mismo tiempo y que comparten el mismo hábitat."
+    },
+    {
+      "pregunta": "¿Qué característica de los seres vivos describe la capacidad de mantener el medio interno relativamente constante en un equilibrio dinámico?",
+      "opciones": [
+        "Homeostasis",
+        "Irritabilidad",
+        "Metabolismo",
+        "Adaptación"
+      ],
+      "correcta": "A",
+      "explicacion": "La homeostasis es la tendencia que lleva a mantener el medio interno relativamente estable mediante mecanismos reguladores, a pesar del intercambio constante de materia y energía con el ambiente."
+    },
+    {
+      "pregunta": "La capacidad de los organismos de responder ante estímulos o cambios físicos y químicos del medio interno o externo se denomina:",
+      "opciones": [
+        "Metabolismo",
+        "Homeostasis",
+        "Desarrollo",
+        "Irritabilidad"
+      ],
+      "correcta": "D",
+      "explicacion": "La irritabilidad es la facultad de responder a estímulos o modificaciones del medio. Puede manifestarse desde respuestas celulares simples hasta conductas complejas en organismos pluricelulares."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes científicos enunció el principio de que toda célula proviene de otra preexistente ('Omnis cellula e cellula')?",
+      "opciones": [
+        "Matthias Schleiden",
+        "Theodor Schwann",
+        "Rudolph Virchow",
+        "Carl Woese"
+      ],
+      "correcta": "C",
+      "explicacion": "Rudolph Virchow amplió la teoría celular postulando que toda célula surge de una célula preexistente, descartando la generación espontánea en las condiciones actuales."
+    },
+    {
+      "pregunta": "Según los postulados de la teoría celular, ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        "Las células pueden surgir espontáneamente a partir de materia inerte bajo condiciones óptimas.",
+        "Todos los seres vivos están formados por células y productos celulares.",
+        "Las funciones de un ser vivo son el resultado de la interacción independiente de sus moléculas puras.",
+        "El ADN celular se sintetiza sin necesidad de una cadena molde ni de información previa."
+      ],
+      "correcta": "B",
+      "explicacion": "Uno de los postulados fundamentales de la teoría celular establece que todos los organismos vivos están compuestos por células y productos elaborados por ellas (unidad anatómica)."
+    },
+    {
+      "pregunta": "¿En qué año y quién propuso el sistema de clasificación biológica de los tres dominios (Bacteria, Archaea y Eukarya)?",
+      "opciones": [
+        "Whittaker en 1969",
+        "Haeckel en 1894",
+        "Carl Woese en 1990",
+        "E. Chatton en 1937"
+      ],
+      "correcta": "C",
+      "explicacion": "Carl Woese en 1990 propuso la división de los seres vivos en tres dominios superiores (Bacteria, Archaea y Eukarya) basándose en diferencias a nivel molecular."
+    },
+    {
+      "pregunta": "El reino Fungi fue separado del reino de las plantas por Whittaker principalmente porque los hongos:",
+      "opciones": [
+        "Son organismos procariotas sin pared celular rígida.",
+        "Son eucariontes heterótrofos con pared celular de quitina y no realizan fotosíntesis.",
+        "Son autótrofos fotosintéticos con pared celular de celulosa.",
+        "Carecen de membrana plasmática y poseen ADN desnudo circular."
+      ],
+      "correcta": "B",
+      "explicacion": "Whittaker ubicó a los hongos en un reino propio debido a que son heterótrofos (no fotosintéticos), poseen paredes celulares compuestas de quitina y su estructura corporal difiere de las plantas."
+    },
+    {
+      "pregunta": "Si ordenamos las categorías taxonómicas jerárquicas desde la más abarcativa e incluyente hasta la más específica, la secuencia correcta es:",
+      "opciones": [
+        "Especie → Género → Familia → Orden → Clase → Filo → Reino → Dominio",
+        "Dominio → Reino → Filo → Clase → Orden → Familia → Género → Especie",
+        "Reino → Dominio → Clase → Filo → Familia → Orden → Género → Especie",
+        "Dominio → Filo → Reino → Orden → Clase → Familia → Género → Especie"
+      ],
+      "correcta": "B",
+      "explicacion": "El sistema jerárquico taxonómico se organiza de mayor a menor inclusión: Dominio, Reino, Filo (o División), Clase, Orden, Familia, Género y Especie."
+    },
+    {
+      "pregunta": "Según el postulado de Lwoff, un agente infeccioso se clasifica estrictamente como virus si su partícula contiene:",
+      "opciones": [
+        "Tanto ADN como ARN en proporciones equivalentes y funcionales.",
+        "Un solo tipo de ácido nucleico (ARN o ADN, pero no ambos simultáneamente).",
+        "Únicamente proteínas de superficie sin ningún tipo de material genético.",
+        "Pared celular de peptidoglicano y ribosomas de tipo 70S."
+      ],
+      "correcta": "B",
+      "explicacion": "El postulado de Lwoff establece que únicamente son considerados virus aquellos agentes cuya partícula elemental contiene un solo tipo de ácido nucleico (ADN o ARN)."
+    },
+    {
+      "pregunta": "¿Por qué los virus son considerados parásitos intracelulares obligados?",
+      "opciones": [
+        "Porque poseen ribosomas 70S inactivos que requieren ATP bacteriano para funcionar.",
+        "Porque su pared celular impida la entrada de agua por ósmosis en medios extracelulares.",
+        "Porque carecen de metabolismo propio y dependen totalmente de la maquinaria celular del huésped para multiplicarse.",
+        "Porque se dividen por fisión binaria únicamente dentro del núcleo celular."
+      ],
+      "correcta": "C",
+      "explicacion": "Los virus carecen de maquinaria metabólica propia, sistemas de obtención de energía y ribosomas; por ende, requieren infectar obligatoriamente una célula hospedadora para replicarse."
+    },
+    {
+      "pregunta": "¿Qué nombre recibe la cubierta proteica estructural que rodea al ácido nucleico en una partícula viral simple o virus desnudo?",
+      "opciones": [
+        "Peptidoglicano",
+        "Envoltura lipídica",
+        "Cápside",
+        "Glicocálix"
+      ],
+      "correcta": "C",
+      "explicacion": "La cápside es la cubierta formada por subunidades proteicas (capsómeros) que protege el genoma viral en un virión desnudo."
+    },
+    {
+      "pregunta": "Un virus de genoma ARN con polaridad o sentido positivo (+) se caracteriza porque su ARN genómico puede:",
+      "opciones": [
+        "Actuar directamente dentro de la célula hospedadora como ARN mensajero para la traducción proteica.",
+        "Funcionar únicamente como molde inactivo para ser transcrito por una ADN polimerasa celular.",
+        "Unirse covalentemente a la membrana plasmática sin ingresar al citoplasma.",
+        "Degradar inmediatamente los ribosomas celulares para evitar la síntesis de proteínas."
+      ],
+      "correcta": "A",
+      "explicacion": "El ARN de polaridad positiva (+) posee la misma secuencia y sentido que un ARNm, por lo que puede ser traducido directamente por los ribosomas de la célula hospedadora al ingresar."
+    },
+    {
+      "pregunta": "En el ciclo lisogénico de un bacteriófago atenuado, el ADN viral integrado en el cromosoma de la bacteria hospedadora se denomina:",
+      "opciones": [
+        "Profago",
+        "Capsómero",
+        "Viroide",
+        "Plásmido R"
+      ],
+      "correcta": "A",
+      "explicacion": "Cuando un fago lisa su ciclo lisogénico, su ADN se integra de forma estable al cromosoma bacteriano, recibiendo la denominación de profago."
+    },
+    {
+      "pregunta": "¿Qué función cumple la enzima retrotranscriptasa (transcriptasa inversa) en el ciclo infectivo del virus del VIH?",
+      "opciones": [
+        "Sintetizar una cadena de ARN a partir de una matriz de proteína viral.",
+        "Ensamblar los capsómeros de la cápside directamente en el exterior celular.",
+        "Degradar la membrana lipídica de la célula hospedadora durante la lisis final.",
+        "Sintetizar una molecula de ADN doble cadena tomando como molde el ARN viral."
+      ],
+      "correcta": "D",
+      "explicacion": "La transcriptasa inversa es una ADN polimerasa dependiente de ARN que genera ADN bicatenario a partir del genoma de ARN del retrovirus para su posterior integración en el cromosoma celular."
+    },
+    {
+      "pregunta": "¿En qué se diferencian fundamentalmente los viroides de los virus tradicionales?",
+      "opciones": [
+        "Los viroides están constituidos únicamente por una cadena de ARN desnudo sin cubierta proteica ni codificación de proteínas.",
+        "Los viroides poseen cápside proteica gruesa pero carecen de ácido nucleico.",
+        "Los viroides infectan únicamente células animales mediante endocitosis mediada por receptor.",
+        "Los viroides son moléculas de ADN circular asociado a histonas."
+      ],
+      "correcta": "A",
+      "explicacion": "Los viroides son agentes infecciosos formados exclusivamente por un fragmento corto de ARN desnudo, sin cápside proteica ni capacidad para codificar proteínas."
+    },
+    {
+      "pregunta": "¿Cuál es el mecanismo de propagación patogénica de las proteínas priónicas alteradas (PrPˢᶜ)?",
+      "opciones": [
+        "Unirse a las proteínas priónicas celulares normales (PrPᶜ) e inducir un cambio en su plegamiento espacial hacia la forma alterada.",
+        "Unirse al ADN celular para bloquear la transcripción del gen priónico.",
+        "Sintetizar cadenas de ARN viral dentro del lisosoma para destruir el tejido nervioso.",
+        "Lisar la pared celular de peptidoglicano mediante actividad enzimática de proteasa."
+      ],
+      "correcta": "A",
+      "explicacion": "La proteína priónica patógena (PrPˢᶜ) se une a la proteína normal (PrPᶜ) y cataliza un cambio de conformación (plegamiento) tridimensional, convirtiéndola en patógena en un proceso exponencial."
+    },
+    {
+      "pregunta": "El límite de resolución del microscopio óptico convencional es de aproximadamente:",
+      "opciones": [
+        "0,2 mm",
+        "0,2 µm (200 nm)",
+        "0,2 nm",
+        "2 Å"
+      ],
+      "correcta": "B",
+      "explicacion": "El microscopio óptico tiene un límite de resolución cercano a 0,2 micrómetros (200 nm), lo que le impide resolver detalles estructurales menores a ese tamaño."
+    },
+    {
+      "pregunta": "¿Qué ventaja principal ofrece el microscopio electrónico de barrido (MEB) frente al de transmisión (MET)?",
+      "opciones": [
+        "Ofrece una gran profundidad de campo que permite obtener imágenes tridimensionales de la superficie de las muestras.",
+        "Posee un haz de luz visible que evita la muerte de la muestra.",
+        "Permite la observación de células vivas en pleno movimiento citoplasmático.",
+        "Utiliza fijadores acuosos sin necesidad de tratamiento previo ni deshidratación."
+      ],
+      "correcta": "A",
+      "explicacion": "El MEB explora la superficie del espécimen y recolecta electrones secundarios, brindando una imagen tridimensional topográfica con notable profundidad de campo."
+    },
+    {
+      "pregunta": "¿Qué nivel de organización biológica está constituido por el conjunto de comunidades que interactúan entre sí y con los factores abióticos del medio físico?",
+      "opciones": [
+        "Población",
+        "Bioma",
+        "Biósfera",
+        "Ecosistema"
+      ],
+      "correcta": "D",
+      "explicacion": "El ecosistema resulta de la integración de los factores biológicos (comunidad) con los factores físicos y químicos del entorno con el que interactúan."
+    },
+    {
+      "pregunta": "El incremento en el volumen de materia viva de un organismo por aumento del tamaño o del número de células se define como:",
+      "opciones": [
+        "Desarrollo",
+        "Anabolismo",
+        "Diferenciación",
+        "Crecimiento"
+      ],
+      "correcta": "D",
+      "explicacion": "El crecimiento corresponde al incremento de la masa y volumen corporal mediante hipertrofia (tamaño) o hiperplasia (número) celular."
+    },
+    {
+      "pregunta": "¿Qué dos científicos alemanes (un botánico y un zoólogo) enunciaron los primeros postulados de la Teoría Celular a mediados del siglo XIX?",
+      "opciones": [
+        "Watson y Crick",
+        "Pasteur y Koch",
+        "Schleiden y Schwann",
+        "Woese y Whittaker"
+      ],
+      "correcta": "C",
+      "explicacion": "El botánico Matthias Schleiden y el zoólogo Theodor Schwann postularon formalmente que las plantas y los animales están constituidos por células y sus productos."
+    },
+    {
+      "pregunta": "Según la clasificación en cinco reinos de Whittaker (1969), ¿en cuál de ellos se agrupan los organismos procariotas?",
+      "opciones": [
+        "Protista",
+        "Fungi",
+        "Monera",
+        "Plantae"
+      ],
+      "correcta": "C",
+      "explicacion": "En el esquema de Whittaker, los seres unicelulares sin núcleo delimitado se agrupaban en el Reino Monera (o Procariota)."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes enfermedades degenerativas del sistema nervioso central en humanos es producida por un prion?",
+      "opciones": [
+        "Hepatitis B",
+        "Síndrome de Inmunodeficiencia Adquirida (SIDA)",
+        "Mosaico del tabaco",
+        "Enfermedad de Creutzfeldt-Jakob (ECJ)"
+      ],
+      "correcta": "D",
+      "explicacion": "La enfermedad de Creutzfeldt-Jakob es una encefalopatía espongiforme transmisible humana causada por la alteración de la proteína priónica PrP."
+    }
+  ]
+}

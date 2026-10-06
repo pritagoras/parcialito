@@ -1,0 +1,281 @@
+{
+  "materia": "Biología",
+  "tema": "Química general y agua",
+  "preguntas": [
+    {
+      "pregunta": "¿Qué partículas subatómicas se localizan en el núcleo del átomo y aportan la totalidad de su masa aproximada?",
+      "opciones": [
+        "Los protones y los electrones.",
+        "Únicamente los electrones.",
+        "Los neutrones y los electrones.",
+        "Los protones y los neutrones."
+      ],
+      "correcta": "D",
+      "explicacion": "En el núcleo atómico se ubican los protones y los neutrones, teniendo cada uno una masa equivalente a 1 u.m.a., mientras que los electrones están en la corteza y su masa es despreciable."
+    },
+    {
+      "pregunta": "¿Cuál es la cantidad máxima de electrones que puede albergar el segundo nivel energético (n = 2) de un átomo?",
+      "opciones": [
+        "2 electrones.",
+        "8 electrones.",
+        "18 electrones.",
+        "32 electrones."
+      ],
+      "correcta": "B",
+      "explicacion": "Aplicando la fórmula 2 · n², para n = 2 el cálculo es 2 · (2)² = 8 electrones como capacidad máxima para dicho nivel."
+    },
+    {
+      "pregunta": "Si un átomo neutro posee un número atómico Z = 11 y un número másico A = 23, ¿cuántos neutrones y electrones tiene respectivamente?",
+      "opciones": [
+        "11 neutrones y 12 electrones.",
+        "12 neutrones y 11 electrones.",
+        "23 neutrones y 11 electrones.",
+        "12 neutrones y 23 electrones."
+      ],
+      "correcta": "B",
+      "explicacion": "El número de neutrones se obtiene restando A - Z (23 - 11 = 12), y al ser un átomo neutro la cantidad de electrones es igual a Z (11)."
+    },
+    {
+      "pregunta": "¿En qué se diferencian dos átomos que son isótopos del mismo elemento químico?",
+      "opciones": [
+        "En su número atómico Z y en su cantidad de protones.",
+        "En su número másico A debido a una cantidad diferente de neutrones.",
+        "En su número de electrones y en su carga eléctrica neta.",
+        "En los niveles energéticos ocupados por sus electrones de valencia."
+      ],
+      "correcta": "B",
+      "explicacion": "Los isótopos son átomos de un mismo elemento (igual Z) que difieren en el número de neutrones en su núcleo, lo que genera variaciones en su número másico A."
+    },
+    {
+      "pregunta": "¿Qué característica comparten todos los elementos situados en la misma columna o grupo de la tabla periódica?",
+      "opciones": [
+        "Tienen el mismo número másico promedio.",
+        "Presentan el mismo número atómico Z.",
+        "Tienen la misma cantidad total de niveles electrónicos.",
+        "Poseen idéntica cantidad de electrones en su último nivel energético."
+      ],
+      "correcta": "D",
+      "explicacion": "Los elementos de un mismo grupo poseen la misma cantidad de electrones de valencia (último nivel), lo que determina un comportamiento químico equivalente."
+    },
+    {
+      "pregunta": "¿Cómo se origina una unión iónica entre dos átomos como el sodio y el cloro?",
+      "opciones": [
+        "Por la atracción electrostática entre un catión formado tras ceder un electrón y un anión que lo capta.",
+        "Por la compartición equitativa de un par de electrones de valencia.",
+        "Por el aporte exclusivo de dos electrones por parte del átomo más electronegativo.",
+        "Por fuerzas intermoleculares transitorias debidas a momentos dipolares inducidos."
+      ],
+      "correcta": "A",
+      "explicacion": "Dada la gran diferencia de electronegatividad, el metal (Na) cede un electrón convirtiéndose en catión y el no metal (Cl) lo gana transformándose en anión, atrayéndose electrostáticamente."
+    },
+    {
+      "pregunta": "¿En cuál de los siguientes pares de átomos se establece un enlace covalente apolar?",
+      "opciones": [
+        "Entre el carbono y el hidrógeno en el metano (C-H).",
+        "Entre el sodio y el cloro en la sal de mesa (Na-Cl).",
+        "Entre el oxígeno y el hidrógeno en el agua (O-H).",
+        "Entre el nitrógeno y el hidrógeno en el amoníaco (N-H)."
+      ],
+      "correcta": "A",
+      "explicacion": "Los enlaces C-C y C-H se consideran covalentes no polares o apolares debido a que la diferencia de electronegatividad entre ambos átomos es muy pequeña o nula."
+    },
+    {
+      "pregunta": "¿Por qué la molécula de agua (H₂O) constituye un dipolo eléctrico?",
+      "opciones": [
+        "Porque el oxígeno cede sus electrones de manera permanente a los núcleos de hidrógeno.",
+        "Porque posee cargas eléctricas netas desbalanceadas debido a la pérdida de un protón.",
+        "Porque los átomos de hidrógeno repelen los electrones del oxígeno hacia el exterior de la molécula.",
+        "Porque la alta electronegatividad del oxígeno atrae con mayor fuerza los pares de electrones compartidos, generando zonas de densidad negativa y positiva."
+      ],
+      "correcta": "D",
+      "explicacion": "Al ser el oxígeno más electronegativo que el hidrógeno, los electrones compartidos se desplazan más hacia su núcleo, creando una zona de densidad negativa (δ⁻) sobre el O y positiva (δ⁺) sobre los H."
+    },
+    {
+      "pregunta": "¿En qué se diferencia una unión covalente dativa o coordinada de una unión covalente pura?",
+      "opciones": [
+        "En que en la unión dativa el par de electrones compartido es aportado por uno solo de los átomos participantes.",
+        "En que la unión dativa involucra la transferencia completa de un electrón entre iones.",
+        "En que en la unión dativa cada átomo aporta obligatoriamente un electrón al par compartido.",
+        "En que la unión dativa se establece únicamente entre moléculas en estado gaseoso."
+      ],
+      "correcta": "A",
+      "explicacion": "En la enlace covalente dativo o coordinado, el par electrónico compartido es provisto de manera exclusiva por uno de los dos átomos de la unión."
+    },
+    {
+      "pregunta": "¿Qué requisito estructural se necesita para la formación de una unión puente de hidrógeno?",
+      "opciones": [
+        "Un átomo de carbono unido mediante enlace triple a un átomo de nitrógeno.",
+        "Dos átomos metálicos dispuestos de forma lineal con cargas eléctricas opuestas.",
+        "Un átomo de hidrógeno covalentemente unido a un elemento altamente electronegativo como F, O o N.",
+        "Una cadena hidrocarbonada completamente saturada e insoluble en agua."
+      ],
+      "correcta": "C",
+      "explicacion": "La formación del puente de hidrógeno exige la presencia de un átomo de H unido de forma covalente a un elemento muy electronegativo (como flúor, oxígeno o nitrógeno)."
+    },
+    {
+      "pregunta": "¿Cuántos puentes de hidrógeno puede establecer, como máximo, una sola molécula de agua con sus vecinas en una disposición tetraédrica?",
+      "opciones": [
+        "2 puentes de hidrógeno.",
+        "6 puentes de hidrógeno.",
+        "4 puentes de hidrógeno.",
+        "8 puentes de hidrógeno."
+      ],
+      "correcta": "C",
+      "explicacion": "Cada molécula de agua posee cuatro sitios de interacción (dos densidades positivas en los H y dos pares libres en el O), pudiendo formar hasta 4 puentes de H."
+    },
+    {
+      "pregunta": "¿A qué se debe que el hielo sea menos denso que el agua líquida y por lo tanto flote sobre ella?",
+      "opciones": [
+        "A que la red cristalina del hielo fija los puentes de H dejando mayor distancia y espacio entre las moléculas que en estado líquido.",
+        "A la pérdida de átomos de hidrógeno durante la solidificación.",
+        "A la acumulación de aire en los espacios interatómicos al enfriarse por debajo de los 10 °C.",
+        "A que las moléculas de agua aumentan su masa molecular al pasar al estado sólido."
+      ],
+      "correcta": "A",
+      "explicacion": "En el hielo, los puentes de H se fijan formando una red cristalina tetraédrica donde las moléculas están más separadas que en el agua líquida, disminuyendo su densidad."
+    },
+    {
+      "pregunta": "El elevado calor específico del agua se explica fundamentalmente por:",
+      "opciones": [
+        "La baja electronegatividad del átomo de oxígeno frente al hidrógeno.",
+        "La presencia de enlaces iónicos entre sus moléculas que impiden el cambio de temperatura.",
+        "La gran cantidad de energía térmica que se requiere para romper la red de puentes de hidrógeno y aumentar la agitación molecular.",
+        "Su baja constante dieléctrica en soluciones fisiológicas."
+      ],
+      "correcta": "C",
+      "explicacion": "Debido a la cohesión por puentes de H, es necesario entregar mucha energía calórica para romper estos enlaces e incrementar la temperatura de la sustancia."
+    },
+    {
+      "pregunta": "¿Qué fenómeno ocurre a nivel molecular cuando el NaCl se disuelve en agua?",
+      "opciones": [
+        "El agua forma enlaces covalentes dobles con los cationes sodio y los aniones cloruro.",
+        "Las moléculas de agua orientan sus dipolos alrededor de los iones formando capas de solvatación que debilitan la atracción iónica.",
+        "El sodio y el cloro comparten electrones de valencia con el oxígeno del agua.",
+        "El cloruro de sodio reacciona químicamente neutralizando por completo el pH del medio."
+      ],
+      "correcta": "B",
+      "explicacion": "Los dipolos del agua se orientan atrayendo a los iones (los H hacia el Cl⁻ y el O hacia el Na⁺), rodeándolos de una capa de solvatación que disuelve el cristal."
+    },
+    {
+      "pregunta": "¿Qué comportamiento presentan las moléculas anfipáticas cuando se encuentran en un medio acuoso?",
+      "opciones": [
+        "Se disuelven por completo formando soluciones verdaderas de bajo peso molecular.",
+        "Muestran total insolubilidad agrupándose al azar sin ninguna orientación espacial.",
+        "Organizan estructuras como micelas o bicapas, enfrentando sus sectores hidrofílicos al agua e hiperocultando sus zonas hidrofóbicas.",
+        "Se disocian completamente liberando protones H⁺ y reduciendo drásticamente el pH."
+      ],
+      "correcta": "C",
+      "explicacion": "Al poseer una zona polar y otra no polar, las sustancias anfipáticas se autoestructuran en micelas o bicapas para aislar sus colas apolares del contacto con el agua."
+    },
+    {
+      "pregunta": "¿Cuáles son los productos iónicos obtenidos de la disociación reversible de una molécula de agua?",
+      "opciones": [
+        "Un catión oxígeno (O²⁺) y un gas hidrógeno (H₂).",
+        "Un anión hidroxilo (OH⁻) y un protón (H⁺).",
+        "Dos aniones hidroxilo (OH⁻) y un electrón libre.",
+        "Un ión sodio (Na⁺) y un anión cloruro (Cl⁻)."
+      ],
+      "correcta": "B",
+      "explicacion": "La ionización del agua implica la ruptura de un enlace polar O-H, generando un anión hidroxilo (OH⁻) y un protón libre (H⁺)."
+    },
+    {
+      "pregunta": "En el agua pura a 25 °C, la concentración de protones [H⁺] es de 10⁻⁷ M. ¿Cuál es su valor de pH?",
+      "opciones": [
+        "pH = 7",
+        "pH = 14",
+        "pH = 1",
+        "pH = 0"
+      ],
+      "correcta": "A",
+      "explicacion": "El pH se define como el logaritmo negativo de la concentración de protones: pH = -log(10⁻⁷) = 7."
+    },
+    {
+      "pregunta": "Si la concentración de protones [H⁺] en una solución acuosa aumenta de 10⁻⁶ M a 10⁻⁴ M, ¿qué sucede con su pH?",
+      "opciones": [
+        "Aumenta de 6 a 8, volviéndose más alcalino.",
+        "Aumenta proporcionalmente a un valor de 10.",
+        "Permanece neutro en un valor constante de 7.",
+        "Disminuye de 6 a 4, volviéndose más ácido."
+      ],
+      "correcta": "D",
+      "explicacion": "Un incremento en la concentración de protones implica una disminución numérica en el valor del pH (-log[H⁺]), pasando de pH 6 a pH 4."
+    },
+    {
+      "pregunta": "¿Cómo se define químicamente una sustancia considerada base según su comportamiento en solución acuosa?",
+      "opciones": [
+        "Toda sustancia que libera protones H⁺ aumentando la acidez del medio.",
+        "Toda sustancia inorgánica que carece de electrones en su último nivel energético.",
+        "Toda sustancia capaz de captar protones H⁺ o liberar aniones hidroxilo OH⁻.",
+        "Toda molécula no polar incapaz de interaccionar con el dipolo del agua."
+      ],
+      "correcta": "C",
+      "explicacion": "Una base o álcali es una sustancia que en solución acuosa capta protones H⁺ del medio o libera grupos OH⁻, disminuyendo la concentración de protones libres."
+    },
+    {
+      "pregunta": "¿Cuál es la función biológica principal de un sistema amortiguador o buffer en el organismo?",
+      "opciones": [
+        "Aumentar la temperatura corporal activando reacciones metabólicas endotérmicas.",
+        "Acelerar la síntesis de glucosa a partir de dióxido de carbono y agua.",
+        "Disolver triglicéridos en el plasma sanguíneo mediante emulsiones micelares.",
+        "Evitar variaciones drásticas en el valor del pH captando o cediendo protones según la situación."
+      ],
+      "correcta": "D",
+      "explicacion": "Un buffer o tampón es una mezcla o par conjugado que regula el pH neutralizando adiciones de ácidos o bases para mantener la homeostasis."
+    },
+    {
+      "pregunta": "¿Cuántos enlaces covalentes puede formar un átomo de carbono para completar su octeto y cuál es su geometría espacial característica?",
+      "opciones": [
+        "4 enlaces orientados hacia los vértices de un tetraedro regular.",
+        "6 enlaces orientados hacia los vértices de un hexágono.",
+        "2 enlaces en una geometría plana lineal.",
+        "3 enlaces en una disposición piramidal trigonal."
+      ],
+      "correcta": "A",
+      "explicacion": "Con 4 electrones de valencia, el carbono forma 4 uniones covalentes cuyas direcciones apuntan a los vértices de un tetraedro regular."
+    },
+    {
+      "pregunta": "¿Cuándo se clasifica un átomo de carbono como 'terciario' en una cadena orgánica?",
+      "opciones": [
+        "Cuando forma un enlace triple con un átomo de nitrógeno.",
+        "Cuando posee tres grupos hidroxilo unidos directamente a su núcleo.",
+        "Cuando está posicionado en el tercer lugar contando desde el extremo funcional.",
+        "Cuando se encuentra directamente unido a otros tres átomos de carbono."
+      ],
+      "correcta": "D",
+      "explicacion": "La clasificación de primario, secundario, terciario o cuaternario depende de la cantidad de átomos de carbono directamente ligados a él (en este caso, 3)."
+    },
+    {
+      "pregunta": "Identifique el grupo funcional que caracteriza a las funciones químicas alcohol y aldehído respectivamente:",
+      "opciones": [
+        "Carboxilo y Amino.",
+        "Hidroxilo (-OH) y Carbonilo primario (-CHO).",
+        "Carbonilo secundario y Sulfhidrilo.",
+        "Ester y Amida."
+      ],
+      "correcta": "B",
+      "explicacion": "La función alcohol presenta el grupo hidroxilo (-OH) y la función aldehído contiene el grupo carbonilo en posición primaria (-CHO)."
+    },
+    {
+      "pregunta": "¿Qué condición debe cumplir un átomo de carbono para ser considerado asimétrico o quiral?",
+      "opciones": [
+        "Formar al menos un doble enlace con un átomo de oxígeno.",
+        "Estar ubicado en el extremo terminal de una cadena ramificada de hidrocarburo.",
+        "Estar unido a 4 átomos o grupos atómicos completamente diferentes entre sí.",
+        "Unirse exclusivamente a átomos de hidrógeno mediante enlaces covalentes apolares."
+      ],
+      "correcta": "C",
+      "explicacion": "Un carbono quiral o asimétrico se define por poseer sus cuatro valencias ocupadas por cuatro sustituyentes distintos, permitiendo la existencia de isómeros ópticos."
+    },
+    {
+      "pregunta": "Dos moléculas que son imágenes especulares no superponibles debido a la presencia de un carbono quiral reciben el nombre de:",
+      "opciones": [
+        "Anómeros alfa y beta.",
+        "Polímeros heterogéneos.",
+        "Isómeros de posición de función.",
+        "Enantiómeros o isómeros ópticos."
+      ],
+      "correcta": "D",
+      "explicacion": "Por cada carbono asimétrico se forman dos isómeros ópticos que son imágenes especulares no superponibles, denominados enantiómeros."
+    }
+  ]
+}

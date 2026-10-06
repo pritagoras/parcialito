@@ -1,0 +1,182 @@
+{
+  "materia": "Biología",
+  "tema": "Bacteriófagos y Ciclos de Infección",
+  "preguntas": [
+    {
+      "pregunta": "¿Qué es un bacteriófago?",
+      "opciones": [
+        "Un virus específico que infecta y se multiplica a expensas de bacterias.",
+        "Una bacteria que ingiere partículas virales por fagocitosis.",
+        "Un organelo citoplasmático encargado de la respiración anaerobia.",
+        "Una toxina proteica secretada por hongos unicelulares."
+      ],
+      "correcta": "A",
+      "explicacion": "Los bacteriófagos (o fagos) son virus cuya especificidad de infección está dirigida exclusivamente a organismos bacterianos."
+    },
+    {
+      "pregunta": "¿Cuáles son las partes principales que componen la morfología con simetría compleja de un fago como el T4?",
+      "opciones": [
+        "Cápside esférica desnuda, flagelo de tubulina y pared de peptidoglicano.",
+        "Cabeza icosaédrica (con genoma), cuello, vaina helicoidal, placa basal y fibras de la cola.",
+        "Envoltura lipídica con espículas gp120, núcleo de transcriptasa y matriz.",
+        "Anillo de pseudópodos, cilio central y nucleolo fibrilar."
+      ],
+      "correcta": "B",
+      "explicacion": "Los fagos complejos combinan una cabeza icosaédrica que alberga el ADN con una cola helicoidal dotada de placa basal y fibras fijadoras."
+    },
+    {
+      "pregunta": "¿Cuál es el orden cronológico correcto de las etapas del ciclo lítico de un bacteriófago?",
+      "opciones": [
+        "Penetración → Adsorción → Autoensamble → Replicación y síntesis → Lisis.",
+        "Integración → Adsorción → Fisión binaria → Penetración → Encapsidación.",
+        "Adsorción → Penetración → Replicación y síntesis proteica → Ensamble o maduración → Lisis celular.",
+        "Lisis → Ensamble → Transcripción → Penetración → Adsorción."
+      ],
+      "correcta": "C",
+      "explicacion": "El ciclo lítico se inicia con la adsorción o fijación al receptor, seguido de la inyección o penetración del genoma, la síntesis metabólica, el autoensamble de viriones y finaliza con la lisis celular."
+    },
+    {
+      "pregunta": "¿En qué consiste la fase de adsorción durante la infección fágica?",
+      "opciones": [
+        "En la duplicación del cromosoma bacteriano por fisión binaria.",
+        "En la destrucción enzimática completa del ADN celular de la bacteria.",
+        "En la expulsión de nuevos viriones maduros hacia el medio externo.",
+        "En el reconocimiento específico entre las estructuras de la superficie viral y los receptores de la pared o membrana bacteriana."
+      ],
+      "correcta": "D",
+      "explicacion": "La adsorción representa la fijación del fago sobre la superficie bacteriana gracias a la interacción química entre moleculas específicas."
+    },
+    {
+      "pregunta": "Durante la penetración en un bacteriófago, ¿qué componente ingresa a la célula bacteriana?",
+      "opciones": [
+        "Únicamente el genoma del virus, quedando la cápside fuera de la bacteria.",
+        "Tanto la cápside proteica como el genoma viral.",
+        "Toda la estructura con la cola y las fibras basales.",
+        "Solamente las enzimas de la envoltura lipídica."
+      ],
+      "correcta": "A",
+      "explicacion": "En la penetración de un bacteriófago, la cola inyecta exclusivamente el ácido nucleico viral a través de la envoltura bacteriana, quedando la estructura proteica en el exterior."
+    },
+    {
+      "pregunta": "¿Qué maquinaria celular utiliza el bacteriófago para la traducción de sus ARN mensajeros virales?",
+      "opciones": [
+        "Sus propios ribosomas contenidos dentro del virión.",
+        "Los ribosomas de la bacteria hospedadora.",
+        "El aparato de Golgi vegetal presente en el periplasma.",
+        "Las mitocondrias bacterianas de la matriz."
+      ],
+      "correcta": "B",
+      "explicacion": "El virus carece de organelos y ribosomas, por lo que utiliza los ribosomas celulares de la bacteria para sintetizar sus proteínas estructurales y enzimas."
+    },
+    {
+      "pregunta": "¿Qué proceso define a la etapa de autoensamble o maduración en el ciclo viral?",
+      "opciones": [
+        "La integración del ácido nucleico viral en el genoma bacteriano.",
+        "La secreción de toxinas para disolver la pared celular.",
+        "El ensamblado espontáneo de las macromoléculas virales y la encapsidación del genoma para formar viriones infectivos.",
+        "La replicación del cromosoma bacteriano previa a la fisión."
+      ],
+      "correcta": "C",
+      "explicacion": "Durante el autoensamble, las proteínas estructurales de la cápside y el genoma recién replicado se unen de manera espontánea formando partículas virales completas."
+    },
+    {
+      "pregunta": "¿Qué ocurre con el genoma de un fago atemperado durante el ciclo lisogénico?",
+      "opciones": [
+        "Destruye inmediatamente el citoplasma bacteriano mediante proteasas.",
+        "Es expulsado al exterior por mecanismos de exocitosis activa.",
+        "Se traduce en gran cantidad de capsómeros libres sin replicar ADN.",
+        "Se integra al cromosoma de la bacteria receptora y se denomina profago."
+      ],
+      "correcta": "D",
+      "explicacion": "En el ciclo lisogénico, el ADN del fago se inserta o integra en el cromosoma bacteriano, permaneciendo en estado de profago sin lisis inmediata."
+    },
+    {
+      "pregunta": "¿Cómo se transmite el profago a las células bacterianas descendientes?",
+      "opciones": [
+        "Junto con la duplicación del cromosoma bacteriano durante la fisión binaria.",
+        "A través de la lisis y liberación de viriones al medio acuoso.",
+        "Por medio de vacuolas digestivas secretadas por la bacteria.",
+        "Mediante transporte vesicular desde el retículo endoplasmático."
+      ],
+      "correcta": "A",
+      "explicacion": "Al estar integrado en el cromosoma bacteriano, el profago se duplica de manera pasiva y se hereda a las células hijas durante la división por fisión binaria."
+    },
+    {
+      "pregunta": "¿Qué es la inducción en el contexto de una bacteria lisogénica?",
+      "opciones": [
+        "La síntesis inicial de peptidoglicano en la pared celular.",
+        "El proceso mediante el cual el profago se activa (ej. por radiación UV) y desencadena el ciclo lítico.",
+        "El bloqueo definitivo de la traducción bacteriana por el operón lac.",
+        "La conversión espontánea del virión en una molécula de ARN vegetal."
+      ],
+      "correcta": "B",
+      "explicacion": "Frente a factores estresantes como la radiación ultravioleta (RUV), el profago atemperado se desacopla o activa e inicia el ciclo lítico con producción de viriones."
+    },
+    {
+      "pregunta": "¿Qué denominación reciben los bacteriófagos capaces de realizar tanto el ciclo lítico como el ciclo lisogénico?",
+      "opciones": [
+        "Fagos viroides.",
+        "Virus citocídicos estrictos.",
+        "Fagos atemperados o atenuados.",
+        "Retrovirus bacterianos."
+      ],
+      "correcta": "C",
+      "explicacion": "Los fagos que pueden optar por integrar su genoma en forma de profago en lugar de lisar de inmediato a la célula se llaman fagos atemperados o atenuados."
+    },
+    {
+      "pregunta": "¿A qué se llama bacteria lisogénica?",
+      "opciones": [
+        "A cualquier bacteria resistente al efecto de los antibióticos.",
+        "A la bacteria que ha sido destruida completamente por lisis celular.",
+        "A la bacteria que carece de pared celular de mureína.",
+        "A aquella bacteria infectada que aloja un profago en su cromosoma."
+      ],
+      "correcta": "D",
+      "explicacion": "Se denominan bacterias lisogénicas a aquellas células hospedadoras que llevan en su genoma un profago integrado en estado latente."
+    },
+    {
+      "pregunta": "¿Qué consecuencia final sobre la célula bacteriana provoca la conclusión del ciclo lítico?",
+      "opciones": [
+        "La destrucción o lisis de la pared y membrana con liberación de viriones.",
+        "La transformación en una espora resistente.",
+        "La duplicación exponencial del número de ribosomas.",
+        "El cambio de coloración de Gram negativo a positivo."
+      ],
+      "correcta": "A",
+      "explicacion": "Al finalizar el ciclo lítico, la rotura o lisis celular destruye a la bacteria hospedadora y libera cientos de viriones infectivos al medio."
+    },
+    {
+      "pregunta": "Un investigador analiza dos cultivos bacterianos infectados por el fago Lambda. En el tubo A observa lisis masiva en pocas horas; en el tubo B las bacterias se multiplican normalmente conservando el ADN viral. ¿Qué ciclos ocurren respectivamente?",
+      "opciones": [
+        "En A ocurre ciclo lisogénico y en B ciclo lítico.",
+        "En A ocurre ciclo lítico y en B ciclo lisogénico.",
+        "En ambos tubos ocurre replicación por priones.",
+        "En A ocurre transducción y en B brotación vesicular."
+      ],
+      "correcta": "B",
+      "explicacion": "La destrucción rápida con liberación de progeny manifiesta el ciclo lítico (tubo A), mientras que la supervivencia celular con transmisión del genoma viral integrado demuestra el ciclo lisogénico (tubo B)."
+    },
+    {
+      "pregunta": "¿Qué término técnico describe el proceso específico mediante el cual el genoma viral se acopla al ADN cromosómico bacteriano?",
+      "opciones": [
+        "Brotación.",
+        "Descapsidación.",
+        "Integración.",
+        "Adsorción."
+      ],
+      "correcta": "C",
+      "explicacion": "La inserción del genoma del fago dentro de la secuencia nucleotídica del cromosoma celular se denomina integración."
+    },
+    {
+      "pregunta": "¿Cuál es la función de las enzimas virales sintetizadas en las fases finales del ciclo lítico?",
+      "opciones": [
+        "Sintetizar la bicapa de fosfolípidos de la envoltura.",
+        "Sintetizar histonas bacterianas para condensar el nucleoide.",
+        "Generar ATP celular mediante la cadena respiratoria fágica.",
+        "Debilitar y lisar la pared celular de mureína para permitir la salida de los viriones."
+      ],
+      "correcta": "D",
+      "explicacion": "Las enzimas virales producidas tardíamente degradan la pared de peptidoglicano de la bacteria desde el interior, provocando la lisis y liberación del virión."
+    }
+  ]
+}

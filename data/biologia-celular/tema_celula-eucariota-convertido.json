@@ -1,0 +1,281 @@
+{
+  "materia": "Biología",
+  "tema": "Célula eucariota",
+  "preguntas": [
+    {
+      "pregunta": "¿Qué esterol se encuentra intercalado entre los fosfolípidos de la membrana plasmática de células animales regulando su fluidez?",
+      "opciones": [
+        "Ergosterol",
+        "Estigmasterol",
+        "Colesterol",
+        "Quitina"
+      ],
+      "correcta": "C",
+      "explicacion": "El colesterol es un lípido exclusivo de membranas de células animales que modula la fluidez e impide la cristalización a bajas temperaturas."
+    },
+    {
+      "pregunta": "¿Cómo afecta el colesterol a la fluidez de la membrana plasmática animal a bajas temperaturas?",
+      "opciones": [
+        "Aumenta la viscosidad y favorece el empaquetamiento rígido de los ácidos grasos.",
+        "Impide la cristalización de los fosfolípidos, manteniendo o aumentando la fluidez.",
+        "Desecha las proteínas integrales para solidificar la bicapa.",
+        "Promueve la translación de flip-flop espontánea sin gasto energético."
+      ],
+      "correcta": "B",
+      "explicacion": "A bajas temperaturas, el colesterol se intercala entre las colas apolares e impide que se empaqueten y cristalicen, preservando la fluidez."
+    },
+    {
+      "pregunta": "¿Cuál es la función principal del retículo endoplasmático rugoso (RER o REG)?",
+      "opciones": [
+        "Síntesis de lípidos complejos y esteroides.",
+        "Detoxificación de medicamentos y fármacos liposolubles.",
+        "Digestión intracelular mediante hidrolasas ácidas.",
+        "Síntesis de proteínas destinadas a secreción, lisosomas o incorporación a membranas."
+      ],
+      "correcta": "D",
+      "explicacion": "El RER presenta ribosomas asociados en su cara citosólica y sintetiza proteínas de exportación, lisosomales y transmembrana."
+    },
+    {
+      "pregunta": "¿Qué organela del sistema de endomembranas participa activamente en la síntesis de lípidos y en la detoxificación celular?",
+      "opciones": [
+        "Retículo endoplasmático liso (REL)",
+        "Aparato de Golgi",
+        "Peroxisoma",
+        "Lisosoma"
+      ],
+      "correcta": "A",
+      "explicacion": "El REL consiste en cisternas tubulares sin ribosomas y se especializa en la biosíntesis de lípidos (fosfolípidos, esteroides) y detoxificación."
+    },
+    {
+      "pregunta": "El Aparato de Golgi cumple un rol fundamental en la célula eucariota al encargarse de:",
+      "opciones": [
+        "Degradar el peróxido de hidrógeno liberando oxígeno libre.",
+        "Recibir, modificar (glicosilar), empaquetar y distribuir proteínas y lípidos provenientes del RER y REL.",
+        "Sintetizar la molécula de ATP mediante la cadena respiratoria.",
+        "Duplicar el ADN durante la interfase del ciclo celular."
+      ],
+      "correcta": "B",
+      "explicacion": "El complejo de Golgi procesa, modifica mediante glicosilación final y clasifica las macromoléculas para su envío a lisosomas, vesículas o secreción."
+    },
+    {
+      "pregunta": "¿Qué tipo de enzimas contienen los lisosomas para llevar a cabo la digestión de materiales exógenos u organelas envejecidas?",
+      "opciones": [
+        "Catalasa y oxidasas",
+        "ATP sintetasas de cresta",
+        "ADN polimerasas y transcriptasas",
+        "Hidrolasas ácidas (proteasas, lipasas, glicosidasas)"
+      ],
+      "correcta": "D",
+      "explicacion": "Los lisosomas contienen enzimas hidrolíticas (hidrolasas ácidas) capaces de digerir macromoléculas, residuos endocitados u organelas (autofagia)."
+    },
+    {
+      "pregunta": "¿Por qué las mitocondrias y los peroxisomas NO forman parte del sistema de endomembranas?",
+      "opciones": [
+        "Porque se forman directamente en el nucleolo sin participación de proteínas.",
+        "Porque carecen totalmente de membranas lipídicas.",
+        "Porque no intercambian material vesicular directamente con el flujo endomembranoso (RER/REL/Golgi).",
+        "Porque están formados exclusivamente por microfilamentos de actina."
+      ],
+      "correcta": "C",
+      "explicacion": "Las mitocondrias y peroxisomas son organelas semiautónomas o independientes que no se originan ni se conectan por vesículas del sistema endomembranoso."
+    },
+    {
+      "pregunta": "¿Qué enzima principal poseen los peroxisomas para descomponer el peróxido de hidrógeno (H₂O₂), una sustancia tóxica resultante del metabolismo oxidativo?",
+      "opciones": [
+        "Rubisco",
+        "Histona H1",
+        "Flipasa",
+        "Catalasa"
+      ],
+      "correcta": "D",
+      "explicacion": "Los peroxisomas contienen catalasa, la cual descompone el tóxico peróxido de hidrógeno en agua y oxígeno libre ($H_2O_2 \\rightarrow H_2O + 1/2 O_2$)."
+    },
+    {
+      "pregunta": "La función principal de las mitocondrias en la célula eucariota es:",
+      "opciones": [
+        "La fotosíntesis y fijación de dióxido de carbono.",
+        "La producción de ribosomas 80S.",
+        "La síntesis de pared celular de celulosa.",
+        "La respiración celular aeróbica para la síntesis de ATP."
+      ],
+      "correcta": "D",
+      "explicacion": "Las mitocondrias realizan la respiración celular (ciclo de Krebs y fosforilación oxidativa) generando ATP a partir de nutrientes y oxígeno."
+    },
+    {
+      "pregunta": "¿Cuáles son los tres componentes principales del citoesqueleto en las células eucariotas ordenados por diámetro de menor a mayor?",
+      "opciones": [
+        "Filamentos de actina → Filamentos de tubulina → Cilios",
+        "Microtúbulos (25 nm) → Filamentos intermedios (10 nm) → Microfilamentos (8 nm)",
+        "Microfilamentos (8 nm) → Filamentos intermedios (10 nm) → Microtúbulos (25 nm)",
+        "Centríolos → Cilios → Flagelos"
+      ],
+      "correcta": "C",
+      "explicacion": "El citoesqueleto comprende microfilamentos de actina (8 nm), filamentos intermedios (10 nm) y microtúbulos de tubulina (25 nm)."
+    },
+    {
+      "pregunta": "¿Qué estructura celular animal está compuesta por 9 tripletes de microtúbulos con disposición 9+0 y actúa como centro organizador del huso mitótico?",
+      "opciones": [
+        "Centrosoma / Centríolo",
+        "Cilio o flagelo",
+        "Plasmodesmo",
+        "Cuerpo basal de cilio con estructura 9+2"
+      ],
+      "correcta": "A",
+      "explicacion": "El centríolo está formado por 9 tripletes de microtúbulos perimetrales (patrón 9+0) y forma el centrosoma organizador de microtúbulos en células animales."
+    },
+    {
+      "pregunta": "El axonema que constituye el cuerpo interno móvil de cilios y flagelos eucariotas presenta un patrón estructural de microtúbulos de tipo:",
+      "opciones": [
+        "9 tripletes externos y 0 centrales (9+0)",
+        "9 dobletes periféricos y 2 microtúbulos centrales (9+2)",
+        "7 dobletes y 3 centrales (7+3)",
+        "12 monómeros periféricos simples"
+      ],
+      "correcta": "B",
+      "explicacion": "Los cilios y flagelos eucariotas presentan una estructura interna (axonema) de 9 dobletes de microtúbulos periféricos y 1 par central (9+2)."
+    },
+    {
+      "pregunta": "¿En qué región del núcleo eucariota se lleva a cabo la síntesis del ARN ribosómico y el ensamblaje de las subunidades ribosómicas?",
+      "opciones": [
+        "Nucléolo",
+        "Poro nuclear",
+        "Lámina nuclear",
+        "Heterocromatina inducible"
+      ],
+      "correcta": "A",
+      "explicacion": "El nucléolo es la zona nuclear densa donde se transcribe el ARNr y se ensamblan las subunidades ribosómicas."
+    },
+    {
+      "pregunta": "La cromatina eucariota está constituida por la asociación del ADN con proteínas básicas denominadas:",
+      "opciones": [
+        "Tubulinas",
+        "Histonas",
+        "Pilinas",
+        "Porinas"
+      ],
+      "correcta": "B",
+      "explicacion": "En la cromatina, el ADN está linealmente empaquetado enrollándose alrededor de octámeros de proteínas básicas llamadas histonas (formando nucleosomas)."
+    },
+    {
+      "pregunta": "¿Qué polisacárido estructural es el componente principal de la pared celular en las células vegetales?",
+      "opciones": [
+        "Celulosa",
+        "Quitina",
+        "Peptidoglicano",
+        "Glucógeno"
+      ],
+      "correcta": "A",
+      "explicacion": "La pared celular vegetal está compuesta por microfibrillas de celulosa embebidas en una matriz de otros polisacáridos."
+    },
+    {
+      "pregunta": "Los canales citoplasmáticos que atraviesan la pared celular vegetal permitiendo la comunicación directa e intercambio entre células adyacentes son los:",
+      "opciones": [
+        "Plasmodesmos",
+        "Desmosomas",
+        "Mesosomas",
+        "Dictiosomas"
+      ],
+      "correcta": "A",
+      "explicacion": "Las células vegetales se comunican a través de plasmodesmos, canales recubiertos de membrana que atraviesan las paredes celulares contiguas."
+    },
+    {
+      "pregunta": "La gran vacuola central de la célula vegetal madura está delimitada por una membrana especializada denominada:",
+      "opciones": [
+        "Lámina media",
+        "Glucocálix",
+        "Tonoplasto",
+        "Cresta mitocondrial"
+      ],
+      "correcta": "C",
+      "explicacion": "La membrana selectiva que rodea la vacuola central en las células vegetales recibe el nombre de tonoplasto."
+    },
+    {
+      "pregunta": "¿Qué tipo de plástidos acumulan almidón como reserva alimenticia en órganos vegetales de almacenamiento como tubérculos?",
+      "opciones": [
+        "Leucoplastos (o amiloplastos)",
+        "Cromoplastos",
+        "Cloroplastos",
+        "Peroxisomas"
+      ],
+      "correcta": "A",
+      "explicacion": "Los leucoplastos (y específicamente los amiloplastos) son plástidos incoloros especializados en almacenar reservas alimenticias como el almidón."
+    },
+    {
+      "pregunta": "A diferencia de las células animales, las células vegetales maduras se caracterizan por presentar:",
+      "opciones": [
+        "Abundante colesterol en su membrana plasmática y centríolos bien desarrollados.",
+        "Pared celular de celulosa, gran vacuola central, plástidos y ausencia de centríolos.",
+        "Aparato de Golgi continuo único y ribosomas de tipo 70S exclusivamente.",
+        "Lisosomas voluminosos con pH básico y nutrición heterótrofa."
+      ],
+      "correcta": "B",
+      "explicacion": "Las células vegetales destacan por poseer pared celular de celulosa, plástidos, gran vacuola central y carecer de centríolos y colesterol membranoso."
+    },
+    {
+      "pregunta": "¿Qué coeficiente de sedimentación presentan los ribosomas citoplasmáticos en las células eucariotas?",
+      "opciones": [
+        "70S",
+        "50S",
+        "80S",
+        "100S"
+      ],
+      "correcta": "C",
+      "explicacion": "Los ribosomas del citosol de células eucariotas son de tipo 80S, formados por las subunidades 60S y 40S."
+    },
+    {
+      "pregunta": "Las proteínas destinadas a permanecer en el citosol o ingresar al núcleo y mitocondrias son sintetizadas por:",
+      "opciones": [
+        "Ribosomas adheridos a la membrana del RER.",
+        "Las hidrolasas del lisosoma.",
+        "El complejo de Golgi.",
+        "Ribosomas libres en el citosol."
+      ],
+      "correcta": "D",
+      "explicacion": "Los ribosomas libres en el citosol traducen las proteínas solubles destinadas al citoplasma, núcleo, peroxisomas y mitocondrias."
+    },
+    {
+      "pregunta": "Dentro del cloroplasto, los sacos membranosos aplanados donde se ubica la clorofila para captar la luz solar se denominan:",
+      "opciones": [
+        "Crestas",
+        "Dictiosomas",
+        "Estroma",
+        "Tilacoides"
+      ],
+      "correcta": "D",
+      "explicacion": "Los tilacoides son vesículas membranosas aplanadas dentro del cloroplasto que albergan los fotosistemas con clorofila."
+    },
+    {
+      "pregunta": "El medio acuoso del citoplasma con consistencia de gel donde se hallan disueltos iones, pequeñas moléculas y enzimas metabólicas se denomina:",
+      "opciones": [
+        "Estroma",
+        "Citosol o matriz citoplasmática",
+        "Líquido periplásmico",
+        "Nucleoplasma"
+      ],
+      "correcta": "B",
+      "explicacion": "El citosol es la fracción fluida o gelificada del citoplasma en la que se suspenden las organelas y ocurren vías metabólicas solubles."
+    },
+    {
+      "pregunta": "En las células vegetales, el Aparato de Golgi se caracteriza por presentarse:",
+      "opciones": [
+        "Como una única estructura yuxtanuclear rígida unida al centrosoma.",
+        "Ausente, siendo reemplazado totalmente por la pared celular.",
+        "Fragmentado en múltiples dictiosomas o golgisomas dispersos en el citoplasma.",
+        "Empaquetado dentro de la vacuola central."
+      ],
+      "correcta": "C",
+      "explicacion": "En células vegetales, el complejo de Golgi se encuentra fragmentado en dictiosomas individuales distribuidos por el citosol."
+    },
+    {
+      "pregunta": "El movimiento aleatorio de fosfolípidos de una monocapa a la opuesta en la membrana plasmática (flip-flop) requiere la acción de enzimas llamadas:",
+      "opciones": [
+        "Catalasas y oxidasas",
+        "Flipasas y escramblasas",
+        "Polimerasas y quinasas",
+        "Peptidasas y proteasas"
+      ],
+      "correcta": "B",
+      "explicacion": "El movimiento de flip-flop entre monocapas no es espontáneo y requiere catálisis enzimática mediante flipasas y escramblasas."
+    }
+  ]
+}

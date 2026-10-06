@@ -1,0 +1,182 @@
+{
+  "materia": "Biología",
+  "tema": "Virus de Importancia Médica y Vacunas",
+  "preguntas": [
+    {
+      "pregunta": "¿A qué grupo de virus pertenece el Virus de la Inmunodeficiencia Humana (HIV) según su genoma y estrategia de replicación?",
+      "opciones": [
+        "Retrovirus (Lentivirus) con genoma de ARN monocatenario.",
+        "Virus de ADN bicatenario sin envoltura.",
+        "Bacteriófago atemperado con simetría compleja.",
+        "Viroide desnudo vegetal."
+      ],
+      "correcta": "A",
+      "explicacion": "El HIV es un retrovirus perteneciente al género Lentivirus, caracterizado por poseer un genoma de ARN y un período de incubación prolongado."
+    },
+    {
+      "pregunta": "¿A qué molécula receptora específica de los linfocitos T de la inmunidad se une la glucoproteína gp120 del HIV?",
+      "opciones": [
+        "Receptor ACE-2.",
+        "Receptor CD4.",
+        "Proteasa TMPRSS2.",
+        "Porina de membrana externa."
+      ],
+      "correcta": "B",
+      "explicacion": "La gp120 de la envoltura del HIV se fija específicamente al receptor CD4 presente en la superficie de los linfocitos T colaboradores (T4)."
+    },
+    {
+      "pregunta": "¿Cuáles son las tres enzimas virales fundamentales contenidas dentro de la cápside del HIV?",
+      "opciones": [
+        "ARN polimerasa celular, ATP sintasa y ADN ligasa.",
+        "Transposasa, lisozima y catalasa.",
+        "Retrotranscriptasa (transcriptasa inversa), integrasa y proteasa.",
+        "Amilasa, peptidasa de mureína y restricción."
+      ],
+      "correcta": "C",
+      "explicacion": "El core del HIV lleva consigo la transcriptasa inversa (copia ARN a ADN), la integrasa (inserta el provirus) y la proteasa (cliva poliproteínas)."
+    },
+    {
+      "pregunta": "¿Qué reacción cataliza la enzima retrotranscriptasa (transcriptasa inversa) durante la infección por HIV?",
+      "opciones": [
+        "La síntesis de ARN mensajero a partir de ADN cromosómico.",
+        "La unión de aminoácidos para formar la cápside p24.",
+        "La degradación directa de la membrana celular de la vacuola.",
+        "La síntesis de ADN proviral tomando como molde el ARN viral."
+      ],
+      "correcta": "D",
+      "explicacion": "La retrotranscriptasa sintetiza una hebra de ADN simple y luego doble cadena tomando como molde la hebra de ARN del genoma del HIV."
+    },
+    {
+      "pregunta": "¿Cuál es la función específica de la enzima integrasa en la replicación del HIV?",
+      "opciones": [
+        "Insertar el ADN proviral sintetizado dentro del genoma cromosómico del hospedador.",
+        "Ingresar el genoma por endocitosis mediada por clatrina.",
+        "Cortar poliproteínas gigantes en unidades funcionales.",
+        "Formar la bicapa de lípidos de la envoltura externa."
+      ],
+      "correcta": "A",
+      "explicacion": "La integrasa transporta el ADN viral sintetizado al núcleo y lo integra de manera permanente en el cromosoma de la célula huésped (provirus)."
+    },
+    {
+      "pregunta": "¿De qué modo liberan los viriones de HIV sus nuevas partículas virales de la célula infectada?",
+      "opciones": [
+        "A través de la lisis celular completa instantánea.",
+        "Por brotación, rodeándose de la membrana plasmática celular que se transforma en su envoltura.",
+        "Por transporte pasivo a través de porinas del periplasma.",
+        "Por la formación de placas amiloides en la matriz."
+      ],
+      "correcta": "B",
+      "explicacion": "Cada nucleocápside de HIV ensamblada en la periferia citoplasmática emerge por brotación, envolviéndose en la membrana plasmática de la célula."
+    },
+    {
+      "pregunta": "¿Qué etapa del ciclo replicativo del HIV inhibe un fármaco diseñado como 'inhibidor de la proteasa'?",
+      "opciones": [
+        "La fijación entre la gp120 y el receptor CD4.",
+        "La trascripción inversa del ARN viral a ADN en el citosol.",
+        "El clivaje o corte de las poliproteínas virales para madurar las proteínas estructurales y enzimas.",
+        "La inserción del provirus en el ADN nuclear."
+      ],
+      "correcta": "C",
+      "explicacion": "Los inhibidores de proteasa bloquean el procesamiento proteolítico necesario para cortar las grandes poliproteínas traducidas en proteínas virales funcionales."
+    },
+    {
+      "pregunta": "¿Qué proteína de superficie del coronavirus SARS-CoV-2 interactúa con el receptor celular ACE-2 para infectar las células?",
+      "opciones": [
+        "Proteína M (membrana).",
+        "Proteína N (nucleocápside).",
+        "Proteína E (envoltura).",
+        "Proteína S (espícula o 'spike')."
+      ],
+      "correcta": "D",
+      "explicacion": "La glucoproteína S (spike o espícula) que sobresale de la envoltura del SARS-CoV-2 es la encargada del reconocimiento del receptor ACE-2 en la célula."
+    },
+    {
+      "pregunta": "¿Qué enzima de la célula hospedadora cumple un rol indispensable para permitir la fusión entre la envoltura de SARS-CoV-2 y la membrana celular?",
+      "opciones": [
+        "Proteasa TMPRSS2.",
+        "Retrotranscriptasa inversa.",
+        "Integrasa viral.",
+        "Lisozima bacteriana."
+      ],
+      "correcta": "A",
+      "explicacion": "La proteasa de membrana celular TMPRSS2 realiza un procesamiento en la proteína espiga S permitiendo la fusión efectiva de membranas."
+    },
+    {
+      "pregunta": "¿Qué plataforma tecnológica utiliza una vacuna como Pfizer o Moderna contra el COVID-19 para inducir respuesta inmune?",
+      "opciones": [
+        "Inyección de viriones completos vivos y virulentos.",
+        "Introducción de una secuencia de ARNm sintético que codifica la proteína espiga (S).",
+        "Infección con bacteriófagos T4 atenuados.",
+        "Inyección directa de proteínas priónicas purificadas."
+      ],
+      "correcta": "B",
+      "explicacion": "Las vacunas de ARNm suministran las instrucciones genéticas en forma de ARN para que las células del propio organismo sinteticen temporalmente la proteína S e induzcan anticuerpos."
+    },
+    {
+      "pregunta": "Vacunas como Oxford-AstraZeneca o Gamaleya (Sputnik V) se basan en la plataforma de vector viral. ¿En qué consiste este método?",
+      "opciones": [
+        "En administrar priones patógenos modificados en el laboratorio.",
+        "En utilizar plásmidos bacterianos purificados de E. coli sin modificar.",
+        "En emplear un virus diferente e inofensivo (como un adenovirus modificados) para transportar los genes de la proteína espiga.",
+        "En destruir el sistema de endomembranas mediante inhibidores de fusión."
+      ],
+      "correcta": "C",
+      "explicacion": "Las vacunas de vector viral utilizan un virus modificado y no replicativo (vector) para introducir el gen que codifica la proteína antígena objetivo."
+    },
+    {
+      "pregunta": "¿Qué componente específico utiliza la vacuna argentina ARVAC para generar inmunidad contra el SARS-CoV-2?",
+      "opciones": [
+        "Plásmidos de ADN desnudo.",
+        "Bacteriófagos recombinantes.",
+        "ARN genómico viral completo.",
+        "Subunidad proteica del dominio RBD de la proteína espiga (S)."
+      ],
+      "correcta": "D",
+      "explicacion": "ARVAC es una vacuna basada en proteínas que utiliza la subunidad purificada del dominio de unión al receptor (RBD) de la proteína S."
+    },
+    {
+      "pregunta": "¿Por qué motivo el Virus de la Hepatitis B (VHB) es considerado un problema sanitario sumamente grave?",
+      "opciones": [
+        "Porque presenta alta contagiosidad y los portadores crónicos tienen elevada probabilidad de desarrollar cáncer de hígado (carcinógeno).",
+        "Porque solo infecta a plantas de papa en zonas de cultivo.",
+        "Porque se transmite exclusivamente por la picadura de mosquitos marinos.",
+        "Porque destruye el citoesqueleto de las neuronas motoras provocando insomnio."
+      ],
+      "correcta": "A",
+      "explicacion": "El VHB es significativamente más contagioso que el HIV y su infección crónica está estrechamente vinculada al desarrollo de carcinoma hepatocelular."
+    },
+    {
+      "pregunta": "¿En qué se fundamenta la prueba de ensayo inmunoabsorbente ligado a enzimas (ELISA) utilizada para el diagnóstico de la infección por HIV?",
+      "opciones": [
+        "En la observación directa de viriones mediante microscopio óptico.",
+        "En la detección de anticuerpos específicos producidos por el sistema inmune contra las proteínas del HIV en sangre.",
+        "En el recuento de los capsómeros presentes en el plasma.",
+        "En la medición de la síntesis de glucosa citoplasmática."
+      ],
+      "correcta": "B",
+      "explicacion": "La prueba de ELISA detecta en la sangre del paciente los anticuerpos generados como respuesta inmune defensiva frente a los antígenos del virus."
+    },
+    {
+      "pregunta": "¿Qué es el provirus en la biología de un retrovirus como el HIV?",
+      "opciones": [
+        "El virión recién sintetizado antes de brotar.",
+        "El ARN monocatenario de polaridad negativa dentro del core.",
+        "El estado permanente en que el ADN viral bicatenario se encuentra integrado al genoma celular.",
+        "El complejo proteico formado por la cápside p17."
+      ],
+      "correcta": "C",
+      "explicacion": "Una vez que el ADN viral bicatenario es insertado en el cromosoma hospedador por la integrasa, esta forma genómica integrada se denomina provirus."
+    },
+    {
+      "pregunta": "Durante la síntesis de las glucoproteínas de la envoltura del HIV (gp120 y gp41), ¿qué vía de la célula eucariota se utiliza para su traducción y procesamiento?",
+      "opciones": [
+        "Ribosomas libres citoplasmáticos únicamente.",
+        "Laminillas fotosintéticas fotosintetizadoras.",
+        "Matriz mitocondrial y crestas.",
+        "Reticulo endoplásmico rugoso (RER), Aparato de Golgi y vesículas hacia la membrana plasmática."
+      ],
+      "correcta": "D",
+      "explicacion": "Las proteínas destinadas a la envoltura lipídica son glucosiladas y procesadas a través de la vía secretora del RER y el Aparato de Golgi hacia la membrana celular."
+    }
+  ]
+}

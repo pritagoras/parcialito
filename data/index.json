@@ -1,16 +1,88 @@
 {
-  "generado": "2026-10-06T00:45:38Z",
+  "generado": "2026-10-06T00:54:46Z",
   "materias": [
     {
       "id": "biologia-celular",
-      "nombre": "Biología Celular y Molecular",
+      "nombre": "Biología 1",
       "emoji": "🧬",
       "temas": [
+        {
+          "id": "biologia-celular/tema_bacteriofagos-y-ciclos-de-infeccion-convertido",
+          "nombre": "Bacteriófagos y Ciclos de Infección",
+          "archivo": "data/biologia-celular/tema_bacteriofagos-y-ciclos-de-infeccion-convertido.json",
+          "preguntas": 16
+        },
+        {
+          "id": "biologia-celular/tema_caracteristicas-y-estructura-viral-convertido",
+          "nombre": "Características Generales y Estructura Viral",
+          "archivo": "data/biologia-celular/tema_caracteristicas-y-estructura-viral-convertido.json",
+          "preguntas": 16
+        },
+        {
+          "id": "biologia-celular/tema_categorias-seres-vivos-convertido",
+          "nombre": "Categorías de los seres vivos y niveles de organización",
+          "archivo": "data/biologia-celular/tema_categorias-seres-vivos-convertido.json",
+          "preguntas": 25
+        },
+        {
+          "id": "biologia-celular/tema_celula-eucariota-convertido",
+          "nombre": "Célula eucariota",
+          "archivo": "data/biologia-celular/tema_celula-eucariota-convertido.json",
+          "preguntas": 25
+        },
+        {
+          "id": "biologia-celular/tema_celula-procariota-convertido",
+          "nombre": "Célula procariota",
+          "archivo": "data/biologia-celular/tema_celula-procariota-convertido.json",
+          "preguntas": 25
+        },
+        {
+          "id": "biologia-celular/tema_glucidos-convertido",
+          "nombre": "Glúcidos",
+          "archivo": "data/biologia-celular/tema_glucidos-convertido.json",
+          "preguntas": 50
+        },
         {
           "id": "biologia-celular/tema_lipidos-convertido",
           "nombre": "Lípidos",
           "archivo": "data/biologia-celular/tema_lipidos-convertido.json",
           "preguntas": 30
+        },
+        {
+          "id": "biologia-celular/tema_nucleotidos-convertido",
+          "nombre": "Nucleótidos y Ácidos Nucleicos",
+          "archivo": "data/biologia-celular/tema_nucleotidos-convertido.json",
+          "preguntas": 30
+        },
+        {
+          "id": "biologia-celular/tema_parcial-completo-convertido",
+          "nombre": "Parcial completo (banco de preguntas)",
+          "archivo": "data/biologia-celular/tema_parcial-completo-convertido.json",
+          "preguntas": 187
+        },
+        {
+          "id": "biologia-celular/tema_proteinas-convertido",
+          "nombre": "Proteínas",
+          "archivo": "data/biologia-celular/tema_proteinas-convertido.json",
+          "preguntas": 30
+        },
+        {
+          "id": "biologia-celular/tema_quimica-general-y-agua-convertido",
+          "nombre": "Química general y agua",
+          "archivo": "data/biologia-celular/tema_quimica-general-y-agua-convertido.json",
+          "preguntas": 25
+        },
+        {
+          "id": "biologia-celular/tema_viroides-y-priones-convertido",
+          "nombre": "Viroides y Priones",
+          "archivo": "data/biologia-celular/tema_viroides-y-priones-convertido.json",
+          "preguntas": 16
+        },
+        {
+          "id": "biologia-celular/tema_virus-medicos-y-vacunas-convertido",
+          "nombre": "Virus de Importancia Médica y Vacunas",
+          "archivo": "data/biologia-celular/tema_virus-medicos-y-vacunas-convertido.json",
+          "preguntas": 16
         }
       ],
       "color": "#9B7BFF"

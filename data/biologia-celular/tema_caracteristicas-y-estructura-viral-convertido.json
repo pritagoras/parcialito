@@ -1,0 +1,182 @@
+{
+  "materia": "Biología",
+  "tema": "Características Generales y Estructura Viral",
+  "preguntas": [
+    {
+      "pregunta": "¿En qué nivel de organización macromolecular o prebiótico se ubican los virus en comparación con las células?",
+      "opciones": [
+        "Nivel prebiótico o supramacromolecular.",
+        "Nivel celular simple.",
+        "Nivel tisular primario.",
+        "Nivel organelar membranoso."
+      ],
+      "correcta": "A",
+      "explicacion": "Los virus no son células y su nivel de organización es inferior al celular, ubicándose en el nivel prebiótico o supramacromolecular formado por el ensamblaje de macromoléculas."
+    },
+    {
+      "pregunta": "¿Por qué se clasifica a los virus como parásitos intracelulares obligados?",
+      "opciones": [
+        "Porque realizan fotosíntesis únicamente cuando ingresan al citoplasma de bacterias.",
+        "Porque carecen de metabolismo propio y dependen completamente de la maquinaria celular para reproducirse.",
+        "Porque se reproducen por fisión binaria fuera de las células hospedadoras.",
+        "Porque digieren la membrana celular mediante enzimas respiratorias propias."
+      ],
+      "correcta": "B",
+      "explicacion": "Los virus no poseen metabolismo ni fuentes de energía propias y dependen absolutamente de las células para sintetizar sus macromoléculas y replicarse."
+    },
+    {
+      "pregunta": "De acuerdo con el postulado de Lwoff, ¿qué característica fundamental presenta el material genético de un virión?",
+      "opciones": [
+        "Contiene simultáneamente cadenas funcionales de ADN y ARN.",
+        "Carece por completo de nucleótidos y solo presenta cadenas de aminoácidos.",
+        "Posee exclusivamente un solo tipo de ácido nucleico, ya sea ADN o ARN.",
+        "Está constituido únicamente por plásmidos circulares bacterianos."
+      ],
+      "correcta": "C",
+      "explicacion": "El postulado de Lwoff establece que cada partícula viral elemental contiene solo un tipo de ácido nucleico, siendo un virus de ADN o un virus de ARN."
+    },
+    {
+      "pregunta": "¿Qué nombre reciben las unidades estructurales compuestas por proteínas que integran la cápside viral?",
+      "opciones": [
+        "Peptidoglicanos.",
+        "LPS.",
+        "Espículas.",
+        "Capsómeros."
+      ],
+      "correcta": "D",
+      "explicacion": "La cápside es una cubierta proteica formada por subunidades repetitivas denominadas capsómeros."
+    },
+    {
+      "pregunta": "¿A qué se denomina nucleocápside en la arquitectura de una partícula viral?",
+      "opciones": [
+        "Al conjunto integrado por el ácido nucleico y la cápside proteica que lo rodea.",
+        "A la envoltura lipídica celular combinada con las glucoproteínas superficiales.",
+        "A la cola contráctil que utilizan los fagos para atravesar paredes bacterianas.",
+        "Al genoma viral una vez que se ha integrado al cromosoma celular."
+      ],
+      "correcta": "A",
+      "explicacion": "La nucleocápside se define como la asociación directa entre el genoma (ácido nucleico) y la cápside proteica que lo protege."
+    },
+    {
+      "pregunta": "¿De qué estructura celular proviene la envoltura membranosa presente en los virus envueltos?",
+      "opciones": [
+        "De la pared de peptidoglicano sintetizada por la célula infectada.",
+        "De la bicapa lipídica celular adquirida durante la brotación o salida.",
+        "De la capa externa proteica del bacteriófago T4.",
+        "De los ribosomas bacterianos ensamblados en el citoplasma."
+      ],
+      "correcta": "B",
+      "explicacion": "La envoltura viral es una bicapa lipídica de origen celular que el virus adquiere al brotar a través de las membranas de la célula hospedadora."
+    },
+    {
+      "pregunta": "¿Cuáles son dos de las funciones biológicas principales de la cápside y la envoltura en las partículas virales?",
+      "opciones": [
+        "Generar ATP celular y transcribir ARN ribosomal.",
+        "Sintetizar aminoácidos esenciales y almacenar glucógeno.",
+        "Proteger el genoma viral y reconocer la célula huésped mediante receptores.",
+        "Permear toxinas exógenas y formar pseudópodos de movilidad."
+      ],
+      "correcta": "C",
+      "explicacion": "Tanto la cápside como la envoltura protegen el ácido nucleico viral frente al medio y participan en el reconocimiento específico de la célula huésped."
+    },
+    {
+      "pregunta": "¿Cuáles son los tipos de simetría estructural que puede presentar la cápside viral?",
+      "opciones": [
+        "Bilateral, transversal y flagelar.",
+        "Cilíndrica lineal, cúbica amorfa y plasmática.",
+        "Esférica pura, biconcava y membranosa.",
+        "Icosaédrica, helicoidal y compleja."
+      ],
+      "correcta": "D",
+      "explicacion": "Las cápsides virales se clasifican según su simetría morfológica en icosaédrica, helicoidal y compleja (como la de los bacteriófagos)."
+    },
+    {
+      "pregunta": "¿Qué criterios se utilizan para clasificar a los virus?",
+      "opciones": [
+        "Tipo de material genético, simetría de la cápside y presencia o ausencia de envoltura.",
+        "Tamaño celular, presencia de mitocondrias y tipo de flagelo.",
+        "Coloración de Gram, metabolismo fotosintético y movilidad celular.",
+        "Número de núcleos, presencia de pared celular y síntesis de ATP."
+      ],
+      "correcta": "A",
+      "explicacion": "La clasificación viral se basa en las características de su ácido nucleico, el tipo de simetría de la cápside y la existencia de una envoltura lipídica."
+    },
+    {
+      "pregunta": "¿A qué se debe que un virus infecte únicamente a un grupo específico de células hospedadoras?",
+      "opciones": [
+        "A que absorbe lípidos al azar de cualquier tipo de membrana biológica.",
+        "A que reconoce y se une a receptores celulares específicos en la superficie de la célula.",
+        "A que su genoma contiene enzimas digestivas de amplio espectro.",
+        "A que puede replicarse activamente en el medio extracelular sin ayuda."
+      ],
+      "correcta": "B",
+      "explicacion": "La especificidad viral está determinada por el reconocimiento molecular exacto entre proteínas o glucoproteínas del virus y los receptores de la célula huésped."
+    },
+    {
+      "pregunta": "¿En qué rango de tamaño promedio se sitúan los virus y qué instrumento se requiere para su visualización?",
+      "opciones": [
+        "1 a 10 mm; utilizándose microscopio óptico común.",
+        "100 a 500 µm; utilizándose lupa estereoscópica.",
+        "20 a 300 nm; requiriéndose microscopio electrónico.",
+        "1 a 5 cm; observándose a simple vista."
+      ],
+      "correcta": "C",
+      "explicacion": "Los virus son partículas submicroscópicas con tamaños típicamente medidos en nanómetros (nm), por lo que se requiere un microscopio electrónico para resolverlos."
+    },
+    {
+      "pregunta": "¿Qué significa que un virus de ARN monocatenario sea de 'cadena positiva' (+)?",
+      "opciones": [
+        "Que sintetiza directamente moléculas de ADN bacteriano en el citosol.",
+        "Que posee una carga eléctrica neta positiva debido a sus aminoácidos básicos.",
+        "Que requiere obligatoriamente una transcriptasa inversa para actuar como molde de traducción.",
+        "Que su genoma tiene la misma polaridad que un ARNm y puede ser traducido directamente por los ribosomas celulares."
+      ],
+      "correcta": "D",
+      "explicacion": "Los virus de ARN (+) poseen un genoma monocatenario con el mismo sentido que el ARNm celular, lo que permite que actúe inmediatamente como molde directo de traducción."
+    },
+    {
+      "pregunta": "¿Qué es un virión?",
+      "opciones": [
+        "La partícula viral completa, madura e infecciosa adecuadamente ensamblada.",
+        "El genoma viral una vez integrado de forma latente en el ADN celular.",
+        "Un fragmento de ARN vegetal desnudo y circular.",
+        "Una proteína priónica alterada con plegamiento en lámina beta."
+      ],
+      "correcta": "A",
+      "explicacion": "Se denomina virión a la partícula viral estructuralmente completa, madura e infectiva capaz de sobrevivir fuera de la célula y provocar infección."
+    },
+    {
+      "pregunta": "¿Cómo se diferencian las infecciones virales latentes de las infecciones crónicas?",
+      "opciones": [
+        "En las latentes el virus lisa células constantemente, mientras que en las crónicas el virus desaparece para siempre.",
+        "En las latentes el virus permanece no manifiesto y reactivable, mientras que en las crónicas se puede recuperar virión infeccioso en forma continua por períodos prolongados.",
+        "En las latentes no hay genoma viral en la célula, mientras que en las crónicas solo existen priones.",
+        "En las latentes solo se infectan bacterias, y en las crónicas únicamente plantas."
+      ],
+      "correcta": "B",
+      "explicacion": "Las infecciones latentes se caracterizan por la permanencia del virus sin multiplicarse activamente hasta una reactivación, mientras que en las crónicas la producción viral es continua e identificable."
+    },
+    {
+      "pregunta": "¿Qué demostró el histórico experimento de reconstitución en el Virus del Mosaico del Tabaco (VMT) realizado por Frenkel-Conrat y Singer?",
+      "opciones": [
+        "Que las proteínas de la cápside determinan la herencia biológica del virus.",
+        "Que los virus se originan espontáneamente a partir de urea 7M.",
+        "Que el ARN es el portador de la información genética viral.",
+        "Que la envoltura lipídica es indispensable para infectar plantas."
+      ],
+      "correcta": "C",
+      "explicacion": "Al combinar ARN de una cepa de VMT con proteínas de otra, la progenie viral resultante presentó las características genéticas dictadas exclusivamente por la cepa donante del ARN."
+    },
+    {
+      "pregunta": "¿En qué consiste el fenómeno de transducción mediado por virus?",
+      "opciones": [
+        "En el transporte pasivo de agua a través de porinas virales.",
+        "En la degradación de lípidos de la membrana por enzimas del fago.",
+        "En la transformación directa de un virus de ARN a un prion patógeno.",
+        "En la transferencia de fragmentos de ADN celular entre bacterias utilizando un virus como vehículo."
+      ],
+      "correcta": "D",
+      "explicacion": "La transducción ocurre cuando un fago empaqueta accidentalmente fragmentos de ADN de la célula hospedadora y los transfiere a otra bacteria al infectarla."
+    }
+  ]
+}

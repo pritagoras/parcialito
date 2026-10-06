@@ -1,0 +1,182 @@
+{
+  "materia": "Biología",
+  "tema": "Viroides y Priones",
+  "preguntas": [
+    {
+      "pregunta": "¿Cuál es la constitución molecular de un viroide?",
+      "opciones": [
+        "Una molécula de ARN desnudo y circular que no codifica proteínas.",
+        "Una molécula de proteína sin material genético.",
+        "Un genoma de ADN rodeado por una cápside icosaédrica.",
+        "Una cadena doble de ADN con envoltura lipídica."
+      ],
+      "correcta": "A",
+      "explicacion": "Los viroides son agentes patógenos constituidos exclusivamente por una cadena de ARN circular desnudo, sin cápside proteica y sin información para sintetizar proteínas."
+    },
+    {
+      "pregunta": "¿A qué tipo de células infectan los viroides y en qué compartimento celular se hospedan?",
+      "opciones": [
+        "Neuronas humanas / citosol.",
+        "Células vegetales / núcleo celular.",
+        "Bacterias Grampositivas / periplasma.",
+        "Linfocitos T / membrana plasmática."
+      ],
+      "correcta": "B",
+      "explicacion": "Los viroides son parásitos obligados que infectan exclusivamente células vegetales, localizándose en el núcleo celular e interfiriendo con la maduración del ARN."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes patologías es ocasionada por un viroide?",
+      "opciones": [
+        "Enfermedad de Creutzfeldt-Jakob.",
+        "Síndrome de inmunodeficiencia adquirida.",
+        "Enfermedad del tubérculo fusiforme de la papa.",
+        "Encefalopatía espongiforme bovina."
+      ],
+      "correcta": "C",
+      "explicacion": "El viroide del tubérculo fusiforme de la papa es un clásico agente causante de afecciones patológicas en cultivos agrícolas."
+    },
+    {
+      "pregunta": "¿Qué son los priones?",
+      "opciones": [
+        "Ácidos nucleicos desnudos con capacidad infectiva.",
+        "Partículas virales compuestas por ADN y lípidos.",
+        "Bacterias muy pequeñas sin pared de peptidoglicano.",
+        "Proteínas patógenas carentes totalmente de ácidos nucleicos."
+      ],
+      "correcta": "D",
+      "explicacion": "Los priones son partículas infecciosas de naturaleza estrictamente proteica, formadas por una sola molécula de proteína y sin ningún genoma de ADN o ARN."
+    },
+    {
+      "pregunta": "¿En qué se diferencian la proteína priónica celular normal (PrPc) y la versión patógena (PrPsc)?",
+      "opciones": [
+        "Tienen la misma secuencia de aminoácidos pero difieren en su estructura tridimensional y plegamiento espacial.",
+        "Tienen secuencias de aminoácidos completamente distintas provenientes de genes diferentes.",
+        "PrPc contiene ARN en su interior y PrPsc carece de nucleótidos.",
+        "PrPc es un lípido de membrana y PrPsc es una enzima respiratoria."
+      ],
+      "correcta": "A",
+      "explicacion": "Ambas isoformas poseen la misma estructura primaria (cadena de aminoácidos idéntica), pero PrPsc sufre una alteración en su plegamiento tridimensional que la vuelve patógena."
+    },
+    {
+      "pregunta": "¿Cómo se induce la multiplicación o propagación de priones patógenos dentro del tejido nervioso?",
+      "opciones": [
+        "Por transcripción inversa de ARN celular.",
+        "La proteína PrPsc hace contacto con la PrPc normal y cataliza su cambio conformacional a la forma patógena.",
+        "Mediante duplicación semiconservativa del ADN cromosómico.",
+        "Por división celular acelerada de los astrocitos."
+      ],
+      "correcta": "B",
+      "explicacion": "El prion patógeno (PrPsc) actúa alterando la conformación espacial de las proteínas normales (PrPc) al entrar en contacto con ellas, transformándolas de manera exponencial."
+    },
+    {
+      "pregunta": "¿Qué ocurre en el cerebro a nivel microscópico a medida que se acumulan las proteínas PrPsc?",
+      "opciones": [
+        "Se sintetizan cloroplastos que realizan fotosíntesis activa.",
+        "Aumenta la síntesis de mureína y se forman paredes celulares rígidas.",
+        "Se agrupan formando placas amiloides y producen la muerte de neuronas, dejando espacios vacíos con aspecto de esponja.",
+        "Las neuronas se dividen repetidamente formando tumores benignos."
+      ],
+      "correcta": "C",
+      "explicacion": "El depósito insoluble de PrPsc origina placas amiloides; la consecuente muerte neuronal masiva genera vacuolas microscópicas que le dan al cerebro una apariencia espongiforme."
+    },
+    {
+      "pregunta": "¿Cuáles son dos ejemplos de Encefalopatías Espongiformes Transmisibles (EET) que afectan a animales?",
+      "opciones": [
+        "Kuru y Mosaico del Tabaco.",
+        "Tubérculo fusiforme y Herpes zóster.",
+        "Hepatitis B y Síndrome de Furia Rábica.",
+        "Encefalopatía Espongiforme Bovina (mal de la 'vaca loca') y Scrapie (prurigo lumbar en ovejas)."
+      ],
+      "correcta": "D",
+      "explicacion": "La EEB en ganado vacuno y el Scrapie en ovinos/caprinos son enfermedades neurodegenerativas causadas por priones patógenos."
+    },
+    {
+      "pregunta": "¿Qué patología neurodegenerativa humana de curso fatal es causada por un prion y presenta variantes esporádicas, hereditarias y contagiosas?",
+      "opciones": [
+        "Enfermedad de Creutzfeldt-Jakob (ECJ).",
+        "Síndrome de Inmunodeficiencia Adquirida.",
+        "Gripe Aviar por H5N1.",
+        "Fiebre Amarilla."
+      ],
+      "correcta": "A",
+      "explicacion": "La ECJ es una enfermedad priónica humana caracterizada por deterioro neurológico progresivo, demencia y pronóstico inevitablemente mortal."
+    },
+    {
+      "pregunta": "¿Por qué motivo existen formas familiares o hereditarias de la Enfermedad de Creutzfeldt-Jakob sin que haya existido un contagio infeccioso previo?",
+      "opciones": [
+        "Porque se transmiten virus lisogénicos integrados al ADN vegetal.",
+        "Because las familias presentan mutaciones en el gen celular de la proteína PrPc, lo que la vuelve inestable y proclive a cambiar espontáneamente a PrPsc.",
+        "Porque consumen vegetales infectados con viroides circulares.",
+        "Porque sintetizan retrotranscriptasa en sus ribosomas sin control."
+      ],
+      "correcta": "B",
+      "explicacion": "Mutaciones puntuales en el gen celular que codifica la PrPc desestabilizan la proteína celular, provocando su conversión espontánea hacia la conformación patógena sin necesidad de infección externa."
+    },
+    {
+      "pregunta": "¿Cuál era la vía principal de propagación del Kuru entre las poblaciones nativas de Nueva Guinea?",
+      "opciones": [
+        "Inhalación de esporas de hongos.",
+        "Picadura de mosquitos portadores de retrovirus.",
+        "Prácticas de canibalismo ritual al ingerir tejido cerebral infectado.",
+        "Consumo de papas afectadas por viroides."
+      ],
+      "correcta": "C",
+      "explicacion": "El Kuru se transmitía en ritos funerarios caníbales donde se consumía tejido nervioso infectado por el prion patógeno."
+    },
+    {
+      "pregunta": "Al comparar la estructura básica de los tres agentes: Virus, Viroide y Prion, ¿cuál es la asociación correcta?",
+      "opciones": [
+        "Virus = ARN vegetal; Viroide = icosaedro; Prion = fago atemperado.",
+        "Virus = 1 molécula de proteína; Viroide = peptidoglicano; Prion = ADN bicatenario.",
+        "Virus = sin ácido nucleico; Viroide = capsómeros; Prion = lípidos con envoltura.",
+        "Virus = ARN o ADN + proteína; Viroide = 1 molécula de ARN; Prion = 1 molécula de proteína."
+      ],
+      "correcta": "D",
+      "explicacion": "Los virus constan de genoma y cápside (con o sin envoltura), los viroides son únicamente una molécula de ARN desnudo, y los priones consisten sólo en una molécula de proteína."
+    },
+    {
+      "pregunta": "¿A qué grupo de seres vivos infectan los priones?",
+      "opciones": [
+        "A mamíferos y seres humanos (huéspedes animales).",
+        "Exclusivamente a plantas superiores.",
+        "Únicamente a bacterias Gramnegativas.",
+        "A algas cianofíceas y hongos."
+      ],
+      "correcta": "A",
+      "explicacion": "Los priones afectan únicamente a animales (bovinos, ovinos, rumiantes) y a seres humanos que expresen la proteína PrPc en sus tejidos."
+    },
+    {
+      "pregunta": "¿Por qué la hipótesis priónica fue inicialmente muy resistida en el ámbito científico?",
+      "opciones": [
+        "Porque las proteínas son fácilmente observadas con microscopio óptico común.",
+        "Porque contradecía el dogma de que todo agente infeccioso requiere ácidos nucleicos (ADN/ARN) para multiplicarse.",
+        "Porque los priones realizaban fotosíntesis anaerobia.",
+        "Porque se pensaba que las bacterias lisogénicas eran animales."
+      ],
+      "correcta": "B",
+      "explicacion": "El dogma central establecía que cualquier patógeno transmisible debía tener material genético nucleico para propagarse en el hospedador."
+    },
+    {
+      "pregunta": "Además de la ECJ hereditaria, ¿cuál de las siguientes enfermedades humanas es un trastorno priónico hereditario dominante?",
+      "opciones": [
+        "Enfermedad de Alzheimer inducida por fagos.",
+        "Mosaico del Tabaco.",
+        "Síndrome de Gerstmann-Sträussler-Scheinker (GSS) e Insomnio Familiar Fatal (IFF).",
+        "Hepatitis no A no B."
+      ],
+      "correcta": "C",
+      "explicacion": "El GSS y el IFF son enfermedades priónicas genéticas heredadas como rasgos autosómicos dominantes debidos a mutaciones en el gen PrP."
+    },
+    {
+      "pregunta": "¿De qué manera el viroide causa enfermedad en las plantas si no sintetiza toxinas proteicas?",
+      "opciones": [
+        "Inyectando su cápside en el cloroplasto.",
+        "Lisando la membrana plasmática por acción de proteasas.",
+        "Bloqueando la captación de agua en la pared celular de celulosa.",
+        "Utilizando la maquinaria de la célula vegetal para copias masivas e interfiriendo en la maduración del ARN celular."
+      ],
+      "correcta": "D",
+      "explicacion": "Los viroides se replican dentro del núcleo a expensas de la célula e interfieren con el procesamiento y maduración normales del ARN celular vegetal."
+    }
+  ]
+}
