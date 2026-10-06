@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-06T00:54:46Z",
+  "generado": "2026-10-06T01:05:36Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -88,15 +88,15 @@
       "color": "#9B7BFF"
     },
     {
-      "id": "historia-argentina",
-      "nombre": "Historia Argentina",
-      "emoji": "📜",
+      "id": "semio",
+      "nombre": "Semiología 2",
+      "emoji": "🥸",
       "temas": [
         {
-          "id": "historia-argentina/01-mayo-e-independencia",
-          "nombre": "Revolución de Mayo e Independencia (ejemplo)",
-          "archivo": "data/historia-argentina/01-mayo-e-independencia.json",
-          "preguntas": 5
+          "id": "semio/01-conferencia2",
+          "nombre": "Conferencia 2",
+          "archivo": "data/semio/01-conferencia2.json",
+          "preguntas": 25
         }
       ],
       "color": "#FFB938"
