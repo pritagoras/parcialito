@@ -1,11 +1,10 @@
 {
-  "generado": "2026-10-07T02:06:45Z",
+  "generado": "2026-10-07T02:13:09Z",
   "materias": [
     {
       "id": "biologia-celular",
       "nombre": "Biología 1",
       "emoji": "🧬",
-      "color": "#9B7BFF",
       "temas": [
         {
           "id": "biologia-celular/01-tema-bacteriofagos-y-ciclos-de-infeccion-convertido",
@@ -127,13 +126,13 @@
           "archivo": "data/biologia-celular/20-tema-virus-medicos-y-vacunas-convertido.json",
           "preguntas": 16
         }
-      ]
+      ],
+      "color": "#9B7BFF"
     },
     {
       "id": "biologia-celular2",
       "nombre": "Biología 2",
       "emoji": "💊",
-      "color": "#FFB938",
       "temas": [
         {
           "id": "biologia-celular2/01-nucleo-interfasico",
@@ -141,13 +140,26 @@
           "archivo": "data/biologia-celular2/01-nucleo-interfasico.json",
           "preguntas": 35
         }
+      ],
+      "color": "#FFB938"
+    },
+    {
+      "id": "ipc-2",
+      "nombre": "IPC 2",
+      "emoji": "📜",
+      "temas": [
+        {
+          "id": "ipc-2/01-popper",
+          "nombre": "Popper",
+          "archivo": "data/ipc-2/01-popper.json",
+          "preguntas": 30
+        }
       ]
     },
     {
       "id": "semio",
       "nombre": "Semiología 2",
       "emoji": "🥸",
-      "color": "#FFB938",
       "temas": [
         {
           "id": "semio/01-conferencia2",
@@ -155,13 +167,8 @@
           "archivo": "data/semio/01-conferencia2.json",
           "preguntas": 25
         }
-      ]
-    },
-    {
-      "id": "ipc-2",
-      "nombre": "IPC 2",
-      "emoji": "📜",
-      "temas": []
+      ],
+      "color": "#FFB938"
     }
   ]
 }

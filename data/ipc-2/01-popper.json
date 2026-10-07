@@ -1,0 +1,336 @@
+{
+  "materia": "IPC 2",
+  "tema": "Popper",
+  "preguntas": [
+    {
+      "pregunta": "¿Qué diferencia establece Popper entre la psicología del conocimiento y la lógica del conocimiento?",
+      "opciones": [
+        "La psicología estudia las reglas deductivas de validación, mientras que la lógica analisa los procesos mentales del investigador.",
+        "La psicología indaga el origen o génesis de una idea, mientras que la lógica estudia las relaciones objetivas de validez de una hipótesis.",
+        "La psicología justifica inductivamente las teorías, mientras que la lógica se encarga de verificar concluyentemente los enunciados.",
+        "La psicología analiza la estructura formal del Modus Tollens, mientras que la lógica investiga la intuición empírica del científico."
+      ],
+      "correcta": "B",
+      "explicacion": "Popper distingue la pregunta psicológica por el origen o génesis de una idea de la pregunta lógica por su validez y contrastación. Que una hipótesis surja de una intuición u observación no constituye por sí mismo su justificación lógica."
+    },
+    {
+      "pregunta": "Según Karl Popper, ¿por qué una gran cantidad de observaciones singulares no permite justificar una conclusión universal?",
+      "opciones": [
+        "Porque los enunciados singulares carecen de términos universales en su descripción lingüística.",
+        "Porque las observaciones empíricas están siempre distorsionadas por ilusiones ópticas o sensoriales.",
+        "Porque una observación finita solo informa sobre casos observados y no garantiza lógicamente el comportamiento de los no observados.",
+        "Porque la inducción requiere de una hipótesis falsadora previa para poder validar el salto hacia el enunciado universal."
+      ],
+      "correcta": "C",
+      "explicacion": "Una información empírica finita solo da cuenta de los casos observados. Extender esa regularidad a todos los casos del dominio implica un salto que no posee justificación lógica válida, pues siempre existe el riesgo de que aparezca un caso contrario."
+    },
+    {
+      "pregunta": "¿Por qué el intento de justificar el principio de inducción a través de la experiencia resulta insostenible según el análisis de Hume adoptado por Popper?",
+      "opciones": [
+        "Porque desemboca en una contradicción de la lógica deductiva estándar.",
+        "Porque requiere asumir un juicio sintético a priori irrefutable.",
+        "Porque genera un razonamiento circular al utilizar la misma inferencia inductiva que pretende justificar.",
+        "Porque transforma de manera inevitable una afirmación empírica en una tautología."
+      ],
+      "correcta": "C",
+      "explicacion": "Justificar el principio de inducción basándose en experiencias pasadas implica apelar a un razonamiento inductivo para validar la inducción misma, lo que cae en un círculo vicioso."
+    },
+    {
+      "pregunta": "Si para evitar la circularidad del principio de inducción se propone un principio de orden superior, ¿a qué problema lógico se enfrenta la justificación?",
+      "opciones": [
+        "A un dogmatismo psicologista insalvable.",
+        "A una regresión infinita de principios inductivos.",
+        "A la pérdida de falsabilidad del sistema.",
+        "A la transformación del sistema en un enunciado analítico."
+      ],
+      "correcta": "B",
+      "explicacion": "Si el principio de inducción se pretende justificar mediante otro de orden superior, este último requerirá a su vez una nueva norma de justificación, conduciendo a una regresión infinita de principios."
+    },
+    {
+      "pregunta": "¿Cuál es la objeción principal de Popper a la propuesta de Kant sobre el principio de causalidad para fundar la inducción?",
+      "opciones": [
+        "Considera que el principio de causalidad es una tautología analítica sin contenido sintético.",
+        "Sostiene que no logra proporcionar una justificación satisfactoria para los enunciados sintéticos universales.",
+        "Afirma que la causalidad kantiana depende de la corroboración provisional de enunciados singulares.",
+        "Argumenta que la postura kantiana reduce los enunciados científicos a simples decisiones de un jurado."
+      ],
+      "correcta": "B",
+      "explicacion": "Popper señala que apelar al apriorismo kantiano no ofrece una fundamentación satisfactoria para justificar lógicamente enunciados sintéticos universales en el ámbito empírico."
+    },
+    {
+      "pregunta": "¿Por qué apelar a la lógica de la probabilidad no resuelve el problema lógico de la inducción?",
+      "opciones": [
+        "Porque la asignación de probabilidad a una regla inductiva requiere otra regla que la valide, reeditando la regresión o el apriorismo.",
+        "Porque la probabilidad exige una verificación definitiva que la ciencia empírica no puede alcanzar.",
+        "Porque la probabilidad transforma los enunciados universales en afirmaciones no falsables de bajo nivel.",
+        "Porque la asignación probabilística impide deducir consecuencias singulares mediante el Modus Tollens."
+      ],
+      "correcta": "A",
+      "explicacion": "Para asignar grados de probabilidad mediante inducción se necesita una regla que valide esa asignación; si esa regla depende nuevamente de una inferencia probable, reaparece la regresión infinita o la necesidad de un principio a priori."
+    },
+    {
+      "pregunta": "¿En qué consiste la comparación lógica interna dentro de los cuatro procedimientos de contrastación de teorías?",
+      "opciones": [
+        "En la confrontación directa de la teoría con las percepciones inmediatas del científico.",
+        "En el examen de la coherencia entre las conclusiones deducidas para verificar la solidez del sistema.",
+        "En evaluar si la nueva teoría supone un adelanto respecto de otras teorías competidoras.",
+        "En analizar la forma de la teoría para cerciorarse de que no sea puramente tautológica."
+      ],
+      "correcta": "B",
+      "explicacion": "La comparación lógica interna contrasta las conclusiones derivadas del sistema entre sí con el propósito de examinar su coherencia interna y evitar contradicciones."
+    },
+    {
+      "pregunta": "Dentro de la metodología deductiva de Popper, ¿cuál es el papel del Modus Tollens en la contrastación empírica?",
+      "opciones": [
+        "Demostrar deductivamente la verdad absoluta de una hipótesis cuando la predicción se cumple.",
+        "Garantizar la confirmación probabilística de una teoría mediante la acumulación de consecuencias verdaderas.",
+        "Establecer deductivamente la falsedad de la teoría cuando una consecuencia deducida resulta incompatible con la observación aceptada.",
+        "Proporcionar una regla inductiva que permita transformar enunciados básicos en leyes universales."
+      ],
+      "correcta": "C",
+      "explicacion": "El Modus Tollens es la regla deductiva formal que permite concluir la falsedad de la premisa teórica general (no-P) a partir de la negación o incompatibilidad de una de sus consecuencias observacionales (no-Q)."
+    },
+    {
+      "pregunta": "¿En qué consiste la asimetría lógica entre verificación y falsación planteada por Popper?",
+      "opciones": [
+        "Un enunciado universal se confirma con un caso positivo, pero requiere infinitas observaciones para ser falsado.",
+        "Un número finito de casos no puede demostrar la verdad de una ley universal, pero un solo caso incompatible basta para refutarla deductivamente.",
+        "Las hipótesis universales son siempre falsables, mientras que las hipótesis singulares son plenamente verificables de forma definitiva.",
+        "La falsación de una teoría depende de decisiones convencionales, mientras que su verificación depende puramente de la lógica pura."
+      ],
+      "correcta": "B",
+      "explicacion": "Existe una asimetría formal: ningún número de verificaciones singulares permite derivar deductivamente la verdad de un enunciado universal, pero una sola consecuencia incompatible permite deducir su falsedad."
+    },
+    {
+      "pregunta": "¿Qué significa que una teoría científica haya sido corroborada?",
+      "opciones": [
+        "Que se ha demostrado lógicamente su verdad definitiva mediante contrastaciones definitivas.",
+        "Que ha aumentado sustancialmente su probabilidad inductiva gracias al número de casos observados.",
+        "Que ha superado provisionalmente pruebas e intentos severos de refutación empírica.",
+        "Que sus enunciados básicos han sido transformados en principios dogmáticos e irrefutables."
+      ],
+      "correcta": "C",
+      "explicacion": "La corroboración no es verificación ni prueba de verdad absoluta; simplemente señala que la hipótesis resistió los intentos de contrastación hasta la fecha, manteniéndose vigente de forma provisional."
+    },
+    {
+      "pregunta": "¿Por qué Popper rechaza la verificabilidad como criterio para delimitar la ciencia empírica?",
+      "opciones": [
+        "Porque obligaría a excluir del dominio científico a las leyes universales, ya que estas no pueden ser verificadas concluyentemente.",
+        "Porque exige el uso exclusivo de razonamientos deductivos como el Modus Tollens.",
+        "Porque promueve la incorporación de enunciados metafísicos no susceptibles de observación.",
+        "Porque impide que los científicos acepten enunciados básicos mediante decisiones intersubjetivas."
+      ],
+      "correcta": "A",
+      "explicacion": "Exigir verificabilidad concluyente dejaría fuera de la ciencia natural a las mismísimas leyes universales, las cuales abarcan infinitos casos posibles y nunca pueden comprobarse totalmente mediante observaciones finitas."
+    },
+    {
+      "pregunta": "¿Cómo se define formalmente un enunciado falsable dentro de la epistemología popperiana?",
+      "opciones": [
+        "Como aquel enunciado que ya ha sido puesto a prueba y resultó ser empíricamente falso.",
+        "Como una proposición cuya verdad ha sido plenamente justificada mediante la experiencia intersubjetiva.",
+        "Como un enunciado susceptible de entrar en contradicción lógica con algún enunciado básico empíricamente posible.",
+        "Como una tautología que abarca todas las posibilidades lógicas de un fenómeno determinado."
+      ],
+      "correcta": "C",
+      "explicacion": "Un enunciado es falsable cuando posee la propiedad lógica de ofrecer condiciones de fracaso empírico, es decir, cuando existe al menos un falsador potencial que podría contradecirlo."
+    },
+    {
+      "pregunta": "¿Qué diferencia sustancial existe entre un enunciado falsable y uno falsado?",
+      "opciones": [
+        "El falsable es un enunciado de bajo nivel y el falsado es una ley universal de alto nivel.",
+        "La falsabilidad representa una posibilidad lógica de conflicto empírico; la falsación es el resultado efectivo de haber sido refutado.",
+        "El enunciado falsable carece de significación científica, mientras que el falsado forma parte del conocimiento verificado.",
+        "La falsabilidad depende del psicologismo del investigador y la falsación de una regresión infinita de pruebas."
+      ],
+      "correcta": "B",
+      "explicacion": "La falsabilidad es la capacidad o condición estructural de una teoría para someterse a prueba; la falsación es el evento metodológico en el cual la teoría efectivamente choca con un enunciado básico aceptado y queda refutada."
+    },
+    {
+      "pregunta": "¿Qué es un falsador potencial en el marco del criterio de demarcación?",
+      "opciones": [
+        "Un evento psicológico derivado de las sensaciones subjetivas del investigador.",
+        "Un enunciado básico lógicamente posible que resultaría incompatible con la teoría propuesta.",
+        "Una hipótesis de alto nivel que reemplaza provisionalmente a una teoría que ha sido refutada.",
+        "Una generalización inductiva fundamentada en una cantidad finita pero grande de casos."
+      ],
+      "correcta": "B",
+      "explicacion": "Un falsador potencial es un enunciado básico posible que describe un hecho singular que, de ser aceptado por la comunidad científica, entraría en contradicción directa con la teoría."
+    },
+    {
+      "pregunta": "¿Por qué un enunciado como \"lloverá o no lloverá aquí mañana\" no sirve como enunciado científico empírico según Popper?",
+      "opciones": [
+        "Porque expresa una hipótesis de nivel singular que no posee suficiente grado de corroboración.",
+        "Porque carece de una forma lógica deductiva que permita extraer inferencias inductivas.",
+        "Porque es una estructura tautológica que no excluye ninguna posibilidad empírica ni ofrece condiciones de fracaso.",
+        "Porque no ha sido sometido a la decisión del jurado en una contrastación intersubjetiva."
+      ],
+      "correcta": "C",
+      "explicacion": "Los enunciados tautológicos abarcan todas las posibilidades empíricas imaginables, por lo cual no prohiben ningún acontecimiento ni admiten un falsador potencial que pueda ponerlos a prueba."
+    },
+    {
+      "pregunta": "¿Cuál es la objeción epistemológica principal de Popper hacia sistemas como el psicoanálisis o ciertas formas del marxismo?",
+      "opciones": [
+        "Que se ha demostrado científicamente que todas sus afirmaciones singulares son totalmente falsas.",
+        "Que no presentan condiciones empíricas claras ni falsadores potenciales que permitan someterlos a refutación.",
+        "Que utilizan el Modus Tollens para validar sus hipótesis mediante razonamientos circulares.",
+        "Que se estructuran sobre la base de una cantidad insuficiente de casos observados en la experiencia."
+      ],
+      "correcta": "B",
+      "explicacion": "El problema metodológico señalados para estos sistemas no es que se haya probado su falsedad factual, sino su falta de falsabilidad: sus formulaciones suelen reinterpretar cualquier dato para evitar chocar con la experiencia."
+    },
+    {
+      "pregunta": "¿Qué función indispensable cumple la hipótesis falsadora en el proceso de refutación de una teoría?",
+      "opciones": [
+        "Sustituir el Modus Tollens por una inferencia probable de mayor alcance explicativo.",
+        "Garantizar que la refutación no dependa de una observación aislada o de una experiencia no reproducible.",
+        "Demostrar que los enunciados básicos universales son tautologías no revisables.",
+        "Resolver el Trilema de Fries mediante el recurso de las percepciones sensoriales puras."
+      ],
+      "correcta": "B",
+      "explicacion": "Para que una teoría sea falsada no basta un hecho aislado o dudoso; se requiere corroborar previamente una hipótesis falsadora de bajo nivel que describa de manera reproducible el efecto que contradice a la teoría."
+    },
+    {
+      "pregunta": "En la jerarquía o nivel de los enunciados científicos, ¿cuál de los siguientes ejemplos representa un enunciado de menor nivel respecto de una ley universal?",
+      "opciones": [
+        "Todos los animales vertebrados poseen sistema nervioso.",
+        "Existe al menos un cuervo que presenta plumaje blanco.",
+        "Ningún cuerpo con masa puede superar la velocidad de la luz.",
+        "Si un objeto se sumerge en agua, la masa de su volumen desplazado se conserva en todos los casos."
+      ],
+      "correcta": "B",
+      "explicacion": "Mientras que las leyes universales cuantifican de forma irrestricta sobre todos los casos del dominio, enunciados existenciales como \"existe al menos un cuervo blanco\" tienen un nivel inferior al restringir su cuantificación a parte del dominio."
+    },
+    {
+      "pregunta": "¿Qué define formalmente a un \"enunciado básico\" en la metodología popperiana?",
+      "opciones": [
+        "La descripción subjetiva de un juicio de percepción o sensación empírica inmediata.",
+        "Una proposición singular sobre un hecho particular que puede funcionar como premisa en una falsación.",
+        "Un axioma teórico irrefutable que sirve de pilar para construir leyes universales.",
+        "Una inferencia probable extraída a partir de una muestra estadísticamente representativa."
+      ],
+      "correcta": "B",
+      "explicacion": "Un enunciado básico no es la vivencia del observador sino una afirmación lingüística singular acerca de un hecho determinado, apta para actuar como premisa en una contrastación."
+    },
+    {
+      "pregunta": "¿Cuáles son las tres opciones que integran el Trilema de Fries al buscar la fundamentación de los enunciados de la ciencia?",
+      "opciones": [
+        "Inducción, deducción y corroboración.",
+        "Dogmatismo, regresión infinita y psicologismo.",
+        "Falsabilidad, verificación y demarcación.",
+        "Tautología, juicio sintético y convención."
+      ],
+      "correcta": "B",
+      "explicacion": "Fries planteó que la justificación de los enunciados se enfrenta a tres alternativas problemáticas: aceptarlos sin justificación (dogmatismo), justificarlos mediante otros enunciados de manera interminable (regresión infinita) o basarlos en la experiencia perceptiva (psicologismo)."
+    },
+    {
+      "pregunta": "¿Por qué Popper rechaza el psicologismo como vía para fundamentar la base empírica de la ciencia?",
+      "opciones": [
+        "Porque las experiencias perceptivas son entes teóricos que no pueden contrastarse con leyes universales.",
+        "Porque confunde una experiencia perceptiva personal con una relación lógica de justificación entre enunciados.",
+        "Porque las percepciones subjetivas garantizan la verificación definitiva, impidiendo la falsabilidad.",
+        "Porque el psicologismo obliga a recurrir al Modus Tollens para validar las sensaciones."
+      ],
+      "correcta": "B",
+      "explicacion": "Tener una vivencia o percepción es un hecho psicológico individual. Un hecho de la conciencia no puede establecer una relación de justificación lógica con una proposición del lenguaje."
+    },
+    {
+      "pregunta": "¿A qué se refiere Popper con la noción de la \"trascendencia inherente a cualquier descripción\"?",
+      "opciones": [
+        "A que los enunciados científicos describen realidades metafísicas inalcanzables para la observación.",
+        "A que toda descripción utiliza términos universales cuyo significado excede la experiencia perceptiva inmediata.",
+        "A que la ciencia trasciende la lógica formal mediante el uso de la inducción probable.",
+        "A que las leyes universales son independientes de las decisiones convencionales de la comunidad."
+      ],
+      "correcta": "B",
+      "explicacion": "Términos como \"vaso\" o \"blanco\" implican un comportamiento regular y conceptual que va más allá de la pura sensación momentánea, de modo que los enunciados jamás pueden reducirse enteramente a vivencias sensoriales."
+    },
+    {
+      "pregunta": "Según la solución popperiana al problema de la base empírica, ¿cómo se aceptan en última instancia los enunciados básicos?",
+      "opciones": [
+        "Mediante una demostración deductiva derivada de axiomas matemáticos inapelables.",
+        "A través de un acuerdo o decisión intersubjetiva regulada dentro de la práctica científica.",
+        "Por medio de la confirmación acumulativa de impresiones sensoriales individuales.",
+        "Por la verificación concluyente de que el enunciado coincide perfectamente con la realidad."
+      ],
+      "correcta": "B",
+      "explicacion": "Al no existir un fundamento empírico absoluto, la aceptación de los enunciados básicos descansa sobre decisiones o convenciones regladas que adopta de forma intersubjetiva la comunidad científica."
+    },
+    {
+      "pregunta": "¿En qué sentido se habla de un \"dogmatismo inocuo\" respecto del cese temporario en la justificación de un enunciado básico?",
+      "opciones": [
+        "En que el enunciado básico se convierte en un dogma definitivo inapelable.",
+        "En que la decisión de detener la justificación es provisoria y el enunciado sigue siendo siempre revisable.",
+        "En que se asume que la percepción sensorial ha verificado la verdad de la premisa.",
+        "En que ese enunciado no requiere someterse al criterio de falsabilidad."
+      ],
+      "correcta": "B",
+      "explicacion": "Se trata de una detención táctica para poder poner a prueba la teoría. No es un dogma absoluto porque si surgen dudas o se exige una nueva prueba, el enunciado básico aceptado puede someterse nuevamente a contrastación."
+    },
+    {
+      "pregunta": "En la analogía jurídica utilizada por Popper, ¿con qué elemento del proceso judicial se comparan los enunciados básicos aceptados?",
+      "opciones": [
+        "Con el código legal escrito que rige el juzgamiento de los hechos.",
+        "Con la argumentación deductiva contenida en la sentencia redactada por el juez.",
+        "Con el veredicto del jurado, que decide convencionalmente sobre una cuestión de hecho.",
+        "Con la confesión espontánea y psicológica brindada por el acusado."
+      ],
+      "correcta": "C",
+      "explicacion": "El veredicto del jurado representa la decisión reglada que da por establecido un hecho de manera convencional. Sobre ese veredicto aceptado, el juez aplica luego las relaciones lógicas y legales del sistema."
+    },
+    {
+      "pregunta": "¿Qué sintetiza la metáfora popperiana de la ciencia como una estructura sobre pilotes clavados en un terreno pantanoso?",
+      "opciones": [
+        "Que el conocimiento científico carece por completo de rigor y validez metodológica.",
+        "Que las teorías científicas descansan sobre impresiones psicológicas inestables.",
+        "Que la ciencia no posee una base absoluta o definitiva, sino cimientos que se hunden provisoriamente mediante decisiones metodológicas.",
+        "Que el método inductivo permite construir una base sólida a pesar de la inestabilidad de los datos."
+      ],
+      "correcta": "C",
+      "explicacion": "La metáfora subraya que la ciencia no tiene un fundamento natural definitivo sobre la roca firme de la experiencia. Se hincan pilotes hasta hallar la firmeza suficiente para sostener la estructura, con la posibilidad constante de seguir hundiéndolos si hace falta."
+    },
+    {
+      "pregunta": "¿Cuál es la función principal de los datos o de la experiencia empírica en el falsacionismo de Popper, a diferencia del inductivismo?",
+      "opciones": [
+        "Generar lógicamente hipótesis universales mediante el análisis cuantitativo de frecuencias.",
+        "Servir como instancia crítica para someter a prueba las consecuencias deductivas de una teoría.",
+        "Confirmar paulatinamente el grado de probabilidad de que una conjetura sea verdadera.",
+        "Justificar psicológicamente las certezas científicas alcanzadas por los investigadores."
+      ],
+      "correcta": "B",
+      "explicacion": "Para Popper, la experiencia no es el origen lógico ni el fundamento de las teorías, sino la instancia negativa encargada de contrastar y eventualmente chocar con las consecuencias derivadas de las conjeturas."
+    },
+    {
+      "pregunta": "¿Cuál es la diferencia metodológica entre la postura del positivismo lógico y el falsacionismo de Popper respecto a los enunciados teóricos aceptados?",
+      "opciones": [
+        "El positivismo los considera verdaderos por definición; Popper sostiene que son hipótesis falsadas de bajo nivel.",
+        "El positivismo los entiende como confirmados en mayor o menor grado; Popper los considera únicamente corroborados provisionalmente.",
+        "El positivismo rechaza el uso de enunciados básicos; Popper los fundamenta en la observación pura.",
+        "El positivismo aplica el Modus Tollens para verificar; Popper usa la probabilidad inductiva para refutar."
+      ],
+      "correcta": "B",
+      "explicacion": "Mientras que el positivismo busca un grado de confirmación o probabilidad creciente mediante la acumulación de datos, para Popper una teoría que supera las pruebas permanece en un estado de corroboración provisional."
+    },
+    {
+      "pregunta": "Si un científico afirma que su hipótesis universal ha quedado demostrada como una verdad definitiva porque resistió diez experimentos rigurosos, ¿qué objetaría Popper?",
+      "opciones": [
+        "Que debió utilizar una hipótesis falsadora de nivel superior antes de realizar los experimentos.",
+        "Que las teorías científicas nunca quedan demostradas plenamente, sino solo corroboradas de manera provisional.",
+        "Que diez experimentos bastan para refutar la teoría, pero no para elevar su probabilidad inductiva.",
+        "Que los experimentos solo tienen valor si se fundamentan en percepciones psicológicas indiscutibles."
+      ],
+      "correcta": "B",
+      "explicacion": "Resistir contrastaciones severas constituye un éxito provisorio denominado corroboración. Afirmar que una teoría ha quedado demostrada como verdadera ignora la asimetría lógica de la refutación y la posibilidad de fallar en el futuro."
+    },
+    {
+      "pregunta": "¿Cómo concibe Popper la objetividad de la investigación científica?",
+      "opciones": [
+        "Como la garantía absoluta proporcionada por la observación directa y libre de prejuicios.",
+        "Como el resultado de elevar al máximo el grado de probabilidad de las inferencias inductivas.",
+        "Como el control intersubjetivo recíproco mediante reglas públicas de contrastación y decisión.",
+        "Como la eliminación total de dogmas metodológicos y la renuncia a la formulación de conjeturas."
+      ],
+      "correcta": "C",
+      "explicacion": "Dado que las vivencias subjetivas no garantizan la verdad, la objetividad popperiana se basa en el carácter público, regulado e intersubjetivo del método científico y sus decisiones de aceptación o revisión."
+    }
+  ]
+}
