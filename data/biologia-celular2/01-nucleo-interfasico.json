@@ -351,6 +351,172 @@
       "opciones": ["Growth (crecimiento).", "Gap (intervalo o brecha).", "Gene (gen).", "Group (grupo)."],
       "correcta": "B",
       "explicacion": "Aunque en la explicación oral se asocie G con crecimiento debido a los procesos de desarrollo que ocurren, la nomenclatura oficial proviene del término inglés Gap 1 y Gap 2."
+    },
+    {
+      "pregunta": "La eucromatina se caracteriza por:",
+      "opciones": [
+        "Ser transcripcionalmente inactiva",
+        "Teñirse débilmente",
+        "Presentarse altamente condensada",
+        "Formar parte de genes que no se expresan"
+      ],
+      "correcta": "B",
+      "explicacion": "La eucromatina representa la fracción descondensada de la cromatina; al estar menos compactada, absorbe menos colorante en los preparados histológicos (se tiñe débilmente) y corresponde a zonas transcripcionalmente activas."
+    },
+    {
+      "pregunta": "En el nucléolo se sintetizan:",
+      "opciones": ["Precursores de ARNr", "ARNt", "Pre ARNm", "ARNm"],
+      "correcta": "A",
+      "explicacion": "El nucléolo es el subdominio nuclear donde se lleva a cabo la transcripción de los precursores de ARN ribosomal (el pre-ARNr 45S) por parte de la ARN polimerasa I, así como su procesamiento y el ensamblado de las subunidades ribosómicas."
+    },
+    {
+      "pregunta": "Los organizadores nucleolares aportan información para la síntesis de:",
+      "opciones": ["ARNm", "ARNr", "ARNt", "Ribosomas"],
+      "correcta": "B",
+      "explicacion": "Las Regiones Organizadoras Nucleolares (NOR) son zonas cromosómicas que contienen repeticiones en tándem de los genes que codifican para el ARN ribosomal (ARNr)."
+    },
+    {
+      "pregunta": "La composición química y función de las histonas son respectivamente:",
+      "opciones": [
+        "Proteínas básicas y forman parte en la estructura de la cromatina",
+        "Proteínas básicas cuya única función es regular la expresión de los genes",
+        "Proteínas ácidas e intervienen en la estructura de la cromatina",
+        "Proteínas ácidas e intervienen en la síntesis de ADN polimerasa"
+      ],
+      "correcta": "A",
+      "explicacion": "Las histonas son proteínas de carácter básico (ricas en aminoácidos con carga positiva como lisina y arginina) que interactúan electrostáticamente con los grupos fosfato del ADN (ácido) para formar los nucleosomas y estructurar la cromatina."
+    },
+    {
+      "pregunta": "El andamiaje o matriz nuclear:",
+      "opciones": [
+        "Está formado exclusivamente por láminas",
+        "Se asocia a la cromatina a nivel de las SAR/MAR del ADN",
+        "Está más replegado en la eucromatina",
+        "Se desorganiza durante la división celular"
+      ],
+      "correcta": "B",
+      "explicacion": "Los bucles cromatínicos se anclan a la matriz o andamiaje nuclear a través de secuencias de ADN específicas denominadas SAR (Scaffold Attachment Regions) o MAR (Matrix Attachment Regions)."
+    },
+    {
+      "pregunta": "Presentan señal de localización nuclear (NLS):",
+      "opciones": [
+        "Las hormonas esteroides",
+        "Todas las riboproteínas",
+        "Los factores de transcripción",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": "C",
+      "explicacion": "Los factores de transcripción son proteínas sintetizadas en el citoplasma que requieren una secuencia o señal de localización nuclear (NLS) para ser reconocidas por las importinas y ser transportadas al interior del núcleo."
+    },
+    {
+      "pregunta": "Los dominios funcionales de la cromatina:",
+      "opciones": [
+        "Aparecen por empaquetamiento de la fibra de 10 nm",
+        "Dependen exclusivamente de la interacción con la H1",
+        "Representan individualmente un gen",
+        "Funcionan como unidades de replicación del cromosoma"
+      ],
+      "correcta": "A",
+      "explicacion": "Los dominios funcionales (bucles o asas de cromatina) se generan a partir del plegamiento y empaquetamiento de la fibra de 10 nm (nucleosómica) y la fibra de 30 nm organizadas sobre la matriz nuclear."
+    },
+    {
+      "pregunta": "El pasaje de moléculas a través de los Complejos de Poro Nuclear (CPN):",
+      "opciones": [
+        "No es regulado y requiere de etiquetas o señales en las moléculas transportadas",
+        "No es regulado para moléculas pequeñas y solubles que circulan por los canales periféricos",
+        "Siempre es regulado y no depende del tamaño de la molécula a transportar",
+        "Requiere que todas las moléculas a ser transportadas tengan una NLS"
+      ],
+      "correcta": "B",
+      "explicacion": "Las moléculas pequeñas, iones y agua difunden pasivamente (sin regulación ni gasto energético) a través de los canales del CPN, mientras que las macromoléculas de mayor tamaño requieren un transporte activo y regulado por señales específicas."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes afirmaciones es FALSA con respecto a la telomerasa?",
+      "opciones": [
+        "Es la enzima encargada de formar los telómeros",
+        "Es una ARN polimerasa",
+        "Se inactiva poco después del nacimiento",
+        "Las células cancerosas conservan la telomerasa siempre activa"
+      ],
+      "correcta": "B",
+      "explicacion": "La afirmación B es falsa porque la telomerasa es una ADN polimerasa dirigida por ARN (una transcriptasa inversa) que sintetiza repeticiones de ADN usando una plantilla interna de ARN."
+    },
+    {
+      "pregunta": "Un investigador inyectó un cultivo celular con suero anti-lámina (o anti-laminina) y observó:",
+      "opciones": [
+        "Que las células no pudieron dividirse",
+        "Que las células luego de la mitosis no pudieron organizar su envoltura nuclear",
+        "Que los complejos laminina/antilamina se acumularon dentro del núcleo",
+        "Que la envoltura nuclear formada resultó frágil e inestable"
+      ],
+      "correcta": "B",
+      "explicacion": "Las láminas nucleares (A, B y C) componen la lámina nuclear indispensable para dar soporte a la envoltura nuclear y dirigir su polimerización y reensamblado al finalizar la mitosis (telofase). Al inhibirlas o bloquearlas, la envoltura nuclear no puede organizarse adecuadamente tras la división celular."
+    },
+    {
+      "pregunta": "¿Cuál es la diferencia conceptual precisa entre los términos \"cariotipo\" y \"cariograma\"?",
+      "opciones": [
+        "El cariotipo es la representación gráfica u ordenada de los cromosomas, mientras que el cariograma es la constitución genómica real del individuo.",
+        "El cariotipo hace referencia al conjunto de cromosomas que caracterizan a una especie o individuo, mientras que el cariograma es la representación gráfica u fotográfica ordenada de dichos cromosomas.",
+        "El cariotipo se refiere únicamente a los cromosomas sexuales, mientras que el cariograma abarca únicamente a los autosomas.",
+        "No existe diferencia; ambos términos son sinónimos estrictos que designan la tinción con bandas Giemsa."
+      ],
+      "correcta": "B",
+      "explicacion": "El cariotipo es la constitución o dotación cromosómica propia de una persona o especie (por ejemplo, 2n = 46), mientras que el cariograma es el esquema, foto o representación sistematizada donde los cromosomas se ordenan por parejas de homólogos, tamaño y posición del centrómero."
+    },
+    {
+      "pregunta": "¿Cómo se clasifica el Síndrome de Down en función del tipo de anomalía cromosómica y cuál es la nomenclatura formal de su cariotipo en un varón?",
+      "opciones": [
+        "Es una alteración estructural por deleción; su fórmula es 46,XY,del(21).",
+        "Es una alteración numérica de tipo aneuploidía (trisomía); su fórmula es 47,XY,+21.",
+        "Es una alteración numérica de tipo poliploidía; su fórmula es 69,XYY.",
+        "Es una alteración estructural por translocación recíproca obligada; su fórmula es 46,XY,t(21;21)."
+      ],
+      "correcta": "B",
+      "explicacion": "El Síndrome de Down es una alteración numérica (aneuploidía) caracterizada por la presencia de un cromosoma 21 supernumerario (trisomía 21). En un individuo de sexo masculino, la fórmula cariotípica estándar se escribe 47,XY,+21."
+    },
+    {
+      "pregunta": "¿Qué tipo de anomalía cromosómica representa el Síndrome de Turner y cuál es su constitución cromosómica característica?",
+      "opciones": [
+        "Una alteración numérica de tipo trisomía del par sexual; cariotipo 47,XXX.",
+        "Una alteración estructural por duplicación del cromosoma X; cariotipo 46,XXdup.",
+        "Una alteración numérica de tipo monosomía del par sexual; cariotipo 45,X (o 45,X0).",
+        "Una alteración estructural por inversión del cromosoma Y; cariotipo 46,XY,inv."
+      ],
+      "correcta": "C",
+      "explicacion": "El Síndrome de Turner es una anomalía cromosómica numérica en la que falta totalmente o en parte un cromosoma sexual (monosomía X), dando como resultado un total de 45 cromosomas (45,X o 45,X0)."
+    },
+    {
+      "pregunta": "Durante la meiosis, ¿cuál es el fallo celular directo que ocasiona la aparición de gametas con exceso o defecto de cromosomas (como en las trisomías y monosomías)?",
+      "opciones": [
+        "La duplicación fallida de los telómeros en la fase S de la interfase.",
+        "La no disyunción cromosómica o separación anómala de homólogos o cromátidas hermanas durante la anafase meiótica.",
+        "La desacetilación masiva de las histonas en el núcleo interfásico.",
+        "La rotura del andamiaje proteico (scaffold) durante la profase mitótica."
+      ],
+      "correcta": "B",
+      "explicacion": "Las aneuploidías numéricas (trisomías y monosomías) se originan principalmente por un fenómeno de no disyunción meiótica, donde los cromosomas homólogos (en Meiosis I) o las cromátidas hermanas (en Meiosis II) no se separan adecuadamente hacia los polos opuestos."
+    },
+    {
+      "pregunta": "¿En qué se diferencian fundamentalmente las alteraciones cromosómicas numéricas de las alteraciones estructurales?",
+      "opciones": [
+        "Las numéricas afectan la estructura interna de un gen individual; las estructurales alteran el número de núcleos por célula.",
+        "Las numéricas implican un cambio en el número total de cromosomas (ganancia o pérdida), mientras que las estructurales afectan la organización o continuidad lineal de uno o más cromosomas.",
+        "Las numéricas solo ocurren en los autosomas, mientras que las estructurales ocurren exclusivamente en los cromosomas sexuales.",
+        "Las numéricas son causadas por drogas como la colchicina, mientras que las estructurales son siempre hereditarias y viables."
+      ],
+      "correcta": "B",
+      "explicacion": "Las alteraciones numéricas varían la cantidad total de cromosomas (ej. aneuploidías como 45 o 47 cromosomas), mientras que las estructurales alteran la arquitectura del cromosoma (pérdida, ganancia o reordenamiento de fragmentos de ADN, como deleciones, duplicaciones, inversiones o translocaciones)."
+    },
+    {
+      "pregunta": "¿Qué ocurre en una translocación cromosómica de tipo robertsoniana?",
+      "opciones": [
+        "Se pierde el extremo telomérico de un cromosoma metacéntrico.",
+        "Se produce la fusión de los brazos largos de dos cromosomas acrocéntricos con la pérdida o reducción de sus brazos cortos.",
+        "Se invierte un segmento del brazo p que contiene al centrómero.",
+        "Se duplica la secuencia repetitiva 5'-TTAGGG-3' en todos los cromosomas somáticos."
+      ],
+      "correcta": "B",
+      "explicacion": "La translocación robertsoniana involucra a dos cromosomas acrocéntricos (ej. 13, 14, 15, 21, 22) que se rompen cerca del centrómero, fusionándose sus brazos largos (q) en un único cromosoma de gran tamaño, perdiéndose habitualmente los brazos cortos (p) con ADN nucleolar no esencial."
     }
   ]
 }

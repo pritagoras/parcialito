@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-07T02:13:09Z",
+  "generado": "2026-10-07T02:32:17Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -138,7 +138,7 @@
           "id": "biologia-celular2/01-nucleo-interfasico",
           "nombre": "Núcleo interfásico",
           "archivo": "data/biologia-celular2/01-nucleo-interfasico.json",
-          "preguntas": 35
+          "preguntas": 51
         }
       ],
       "color": "#FFB938"
