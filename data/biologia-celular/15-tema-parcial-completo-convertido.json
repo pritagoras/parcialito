@@ -904,12 +904,12 @@
     {
       "pregunta": "Respecto de la fotosíntesis:",
       "opciones": [
-        "La ecuación general es glucosa + 6 O₂ → 6 CO₂ + 6 H₂O + energía.",
         "Consume O₂ y produce CO₂ y agua.",
         "Produce ácido láctico.",
-        "Produce O₂ y consume CO₂ y agua"
+        "Produce O₂ y consume CO₂ y agua",
+        "La ecuación general es glucosa + 6 O₂ → 6 CO₂ + 6 H₂O + energía."
       ],
-      "correcta": "D",
+      "correcta": "C",
       "explicacion": "La fotosíntesis oxigénica consume CO₂ y agua y, utilizando energía luminosa, produce materia orgánica y O₂. Por eso la opción d resume correctamente el balance global simplificado del proceso."
     },
     {
