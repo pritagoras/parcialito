@@ -1,5 +1,5 @@
 {
-  "materia": "Biologia",
+  "materia": "Biología 1",
   "tema": "Fotosintesis",
   "preguntas": [
     {
@@ -48,23 +48,13 @@
     },
     {
       "pregunta": "¿Qué grupo de organismos procariotas posee la capacidad de realizar fotosíntesis según el material?",
-      "opciones": [
-        "Algas",
-        "Cianobacterias",
-        "Plantas vascularizadas",
-        "Hongos filamentosos"
-      ],
+      "opciones": ["Algas", "Cianobacterias", "Plantas vascularizadas", "Hongos filamentosos"],
       "correcta": "B",
       "explicacion": "Dentro de los organismos fotosintetizadores, los procariotas corresponden a las cianobacterias[cite: 213]. Las algas y las plantas son clasificadas como fotosintetizadores eucariotas[cite: 213]."
     },
     {
       "pregunta": "¿A través de qué estructuras delgadas de la hoja ingresa el $CO_2$ y se libera el $O_2$?",
-      "opciones": [
-        "Grana",
-        "Estomas",
-        "Laminillas",
-        "Desmotúbulos"
-      ],
+      "opciones": ["Grana", "Estomas", "Laminillas", "Desmotúbulos"],
       "correcta": "B",
       "explicacion": "El intercambio gaseoso de $CO_2$ y $O_2$ en las plantas ocurre a través de los estomas presentes en la superficie de las hojas[cite: 214]. La grana es una pila de tilacoides ubicada en el interior del cloroplasto[cite: 216]."
     },
@@ -114,12 +104,7 @@
     },
     {
       "pregunta": "¿Qué nombre reciben los pigmentos como los carotenoides, las ficobilinas y las antocianinas?",
-      "opciones": [
-        "Pigmentos primarios",
-        "Pigmentos accesorios",
-        "Coenzimas fotosintéticas",
-        "Aceites esenciales"
-      ],
+      "opciones": ["Pigmentos primarios", "Pigmentos accesorios", "Coenzimas fotosintéticas", "Aceites esenciales"],
       "correcta": "B",
       "explicacion": "Los carotenoides, ficobilinas y antocianinas son clasificados como pigmentos accesorios que absorben longitudes de onda distintas a las de la clorofila[cite: 224, 225]."
     },
@@ -191,23 +176,13 @@
     },
     {
       "pregunta": "¿De qué productos generados en la fase clara depende directamente el desarrollo del Ciclo de Calvin-Benson?",
-      "opciones": [
-        "De $H_2O$ y gas $O_2$.",
-        "De ATP y NADPH.",
-        "De glucosa y ribulosa difosfato.",
-        "De oxaloacetato y FADH2."
-      ],
+      "opciones": ["De $H_2O$ y gas $O_2$.", "De ATP y NADPH.", "De glucosa y ribulosa difosfato.", "De oxaloacetato y FADH2."],
       "correcta": "B",
       "explicacion": "Aunque la luz no interviene directamente en la fase oscura, esta depende en forma absoluta del ATP y del NADPH que fueron producidos durante la fase clara[cite: 219, 243, 245]."
     },
     {
       "pregunta": "¿Qué enzima clave cataliza la fijación del $CO_2$ a la ribulosa difosfato (RuDP) en la primera etapa del Ciclo de Calvin?",
-      "opciones": [
-        "ATPasa CF1",
-        "RuBisCo",
-        "NADP reductasa",
-        "Isomerasa P"
-      ],
+      "opciones": ["ATPasa CF1", "RuBisCo", "NADP reductasa", "Isomerasa P"],
       "correcta": "B",
       "explicacion": "La fijación del $CO_2$ sobre la ribulosa difosfato (RuDP o RuBP) es catalizada específicamente por la enzima RuBisCo[cite: 250]."
     },
@@ -235,12 +210,7 @@
     },
     {
       "pregunta": "Para fijar 6 moléculas de $CO_2$ y sintetizar 1 molécula de glucosa en el ciclo de Calvin, ¿cuántas moléculas de ATP y NADPH se consumen en total?",
-      "opciones": [
-        "12 ATP y 6 NADPH.",
-        "18 ATP y 12 NADPH.",
-        "6 ATP y 18 NADPH.",
-        "24 ATP y 24 NADPH."
-      ],
+      "opciones": ["12 ATP y 6 NADPH.", "18 ATP y 12 NADPH.", "6 ATP y 18 NADPH.", "24 ATP y 24 NADPH."],
       "correcta": "B",
       "explicacion": "El balance del ciclo de Calvin para producir 1 glucosa exige el consumo de 18 ATP (12 en la reducción y 6 en la regeneración) y 12 NADPH[cite: 249, 251, 252]."
     },
@@ -257,12 +227,7 @@
     },
     {
       "pregunta": "¿Qué triosa fosfato producida en el ciclo de Calvin actúa como el precursor directo para la síntesis de glucosa, almidón, celulosa, ácidos grasos y aminoácidos?",
-      "opciones": [
-        "Ácido fosfoglicérico (PGA)",
-        "Fosfogliceraldehído (PGAL)",
-        "Ribulosa difosfato (RuDP)",
-        "Oxaloacetato"
-      ],
+      "opciones": ["Ácido fosfoglicérico (PGA)", "Fosfogliceraldehído (PGAL)", "Ribulosa difosfato (RuDP)", "Oxaloacetato"],
       "correcta": "B",
       "explicacion": "El PGAL es la molécula clave de salida del ciclo que sirve como precursor para la síntesis de glucosa fosfato, sacarosa, almidón, celulosa, ácidos grasos y aminoácidos[cite: 253]."
     },

@@ -1,15 +1,10 @@
 {
-  "materia": "Biologia",
+  "materia": "Biología 1",
   "tema": "Sistema de endomembranas",
   "preguntas": [
     {
       "pregunta": "¿Cuál de las siguientes organelas forma parte del sistema de endomembranas según el material de estudio?",
-      "opciones": [
-        "Peroxisoma",
-        "Vacuola vegetal",
-        "Mitocondria",
-        "Cloroplasto"
-      ],
+      "opciones": ["Peroxisoma", "Vacuola vegetal", "Mitocondria", "Cloroplasto"],
       "correcta": "B",
       "explicacion": "La vacuola vegetal es parte del sistema de endomembranas junto con la envoltura nuclear, los retículos, Golgi, vesículas y lisosomas. El texto aclara de forma explícita que peroxisomas, mitocondrias y cloroplastos no forman parte de este sistema."
     },
@@ -70,12 +65,7 @@
     },
     {
       "pregunta": "¿Qué enzimas permiten translocar lípidos recién sintetizados hacia la monocapa luminal del REL para equiparar el crecimiento de la bicapa?",
-      "opciones": [
-        "Kinesina y dineína.",
-        "Escramblasa y flipasa.",
-        "Hidrolasas ácidas y lipasas.",
-        "Glucosa-6-fosfatasa e isomerasa."
-      ],
+      "opciones": ["Kinesina y dineína.", "Escramblasa y flipasa.", "Hidrolasas ácidas y lipasas.", "Glucosa-6-fosfatasa e isomerasa."],
       "correcta": "B",
       "explicacion": "La escramblasa y la flipasa se encargan de mover parte de los lípidos recién sintetizados desde la monocapa citosólica hacia la monocapa luminal para corregir el crecimiento desigual de la membrana."
     },
@@ -246,12 +236,7 @@
     },
     {
       "pregunta": "Cuando un lisosoma primario se fusiona con una vesícula que contiene material capturado por fagocitosis, la estructura resultante se denomina específicamente:",
-      "opciones": [
-        "Endolisosoma",
-        "Fagolisosoma",
-        "Autofagolisosoma",
-        "Cuerpo residual"
-      ],
+      "opciones": ["Endolisosoma", "Fagolisosoma", "Autofagolisosoma", "Cuerpo residual"],
       "correcta": "B",
       "explicacion": "El polimorfismo lisosomal establece nomenclaturas según el origen del sustrato: la fusión con un endosoma genera un endolisosoma, con un autofagosoma genera un autofagolisosoma y con un fagosoma (material fagocitado) da origen a un fagolisosoma."
     },

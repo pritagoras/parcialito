@@ -1,0 +1,1 @@
+python tools/actualizar_indice.py

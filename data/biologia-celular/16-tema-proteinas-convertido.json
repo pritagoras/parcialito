@@ -1,5 +1,5 @@
 {
-  "materia": "Biología",
+  "materia": "Biología 1",
   "tema": "Proteínas",
   "preguntas": [
     {
@@ -26,23 +26,13 @@
     },
     {
       "pregunta": "¿Cuál es el único aminoácido que carece de carbono asimétrico (quiral) y no presenta isomería óptica?",
-      "opciones": [
-        "Alanina",
-        "Glicina",
-        "Cisteína",
-        "Leucina"
-      ],
+      "opciones": ["Alanina", "Glicina", "Cisteína", "Leucina"],
       "correcta": "B",
       "explicacion": "En la glicina, el radical R es un átomo de hidrógeno (-H). Al tener dos hidrógenos unidos al carbono α, pierde la asimetría presente en los demás aminoácidos."
     },
     {
       "pregunta": "¿Qué término describe adecuadamente la capacidad de los aminoácidos de comportarse como ácidos o como bases según el pH del medio?",
-      "opciones": [
-        "Hidrofóbicos",
-        "Anfipáticos",
-        "Aterogénicos",
-        "Anfóteros o anfolitos"
-      ],
+      "opciones": ["Hidrofóbicos", "Anfipáticos", "Aterogénicos", "Anfóteros o anfolitos"],
       "correcta": "D",
       "explicacion": "Los aminoácidos son anfóteros o anfolitos porque el grupo carboxilo puede ceder protones y el grupo amino puede aceptarlos, adaptando su carga según el pH."
     },
@@ -103,12 +93,7 @@
     },
     {
       "pregunta": "¿Cómo se clasifica a una cadena compuesta por hasta 10 aminoácidos unidas por enlaces peptídicos?",
-      "opciones": [
-        "Polipéptido",
-        "Proteína globular",
-        "Oligopéptido",
-        "Proteína oligomérica"
-      ],
+      "opciones": ["Polipéptido", "Proteína globular", "Oligopéptido", "Proteína oligomérica"],
       "correcta": "C",
       "explicacion": "Cadenas cortas de aminoácidos de hasta 10 residuos reciben la denominación de oligopéptidos."
     },
@@ -125,12 +110,7 @@
     },
     {
       "pregunta": "¿Qué proceso químico permite romper los enlaces peptídicos de una proteína para liberar aminoácidos libres?",
-      "opciones": [
-        "Condensación",
-        "Esterificación",
-        "Oxidación",
-        "Hidrólisis"
-      ],
+      "opciones": ["Condensación", "Esterificación", "Oxidación", "Hidrólisis"],
       "correcta": "D",
       "explicacion": "La hidrólisis consume moléculas de agua para cleavar los enlaces covalentes amida (peptídicos) de la cadena principal."
     },
@@ -158,12 +138,7 @@
     },
     {
       "pregunta": "¿Qué residuo de aminoácido participa en la formación covalente de un puente disulfuro?",
-      "opciones": [
-        "Metionina",
-        "Serina",
-        "Cisteína",
-        "Lisina"
-      ],
+      "opciones": ["Metionina", "Serina", "Cisteína", "Lisina"],
       "correcta": "C",
       "explicacion": "Los grupos sulfhidrilo (-SH) de las cadenas laterales de dos residuos de cisteína se oxidan formando un enlace covalente -S-S- (puente disulfuro)."
     },
@@ -213,12 +188,7 @@
     },
     {
       "pregunta": "¿Qué tipo de fuerza promueve el agrupamiento de cadenas laterales apolares en el interior hidrofóbico de una proteína globular soluble?",
-      "opciones": [
-        "Interacción hidrofóbica",
-        "Unión iónica",
-        "Enlace covalente peptídico",
-        "Puente de hidrógeno"
-      ],
+      "opciones": ["Interacción hidrofóbica", "Unión iónica", "Enlace covalente peptídico", "Puente de hidrógeno"],
       "correcta": "A",
       "explicacion": "Las cadenas laterales no polares tienden a excluir el contacto con el agua y a agruparse en el centro o interior de la molécula globular mediante interacciones hidrofóbicas."
     },
@@ -246,12 +216,7 @@
     },
     {
       "pregunta": "¿Qué nivel de estructura proteica se conserva intacto tras sufrir un proceso de desnaturalización?",
-      "opciones": [
-        "Estructura primaria",
-        "Estructura secundaria",
-        "Estructura terciaria",
-        "Estructura cuaternaria"
-      ],
+      "opciones": ["Estructura primaria", "Estructura secundaria", "Estructura terciaria", "Estructura cuaternaria"],
       "correcta": "A",
       "explicacion": "La desnaturalización destruye la conformación espacial (estructuras 2ª, 3ª y 4ª) al romper interacciones débiles, pero preserva los enlaces peptídicos covalentes de la estructura primaria."
     },
@@ -279,23 +244,13 @@
     },
     {
       "pregunta": "¿Qué proteína del huevo coagula y se vuelve insoluble durante el proceso de cocción (huevo frito)?",
-      "opciones": [
-        "Colágeno",
-        "Albúmina",
-        "Queratina",
-        "Actina"
-      ],
+      "opciones": ["Colágeno", "Albúmina", "Queratina", "Actina"],
       "correcta": "B",
       "explicacion": "La albúmina de la clara del huevo sufre desnaturalización por calor, cambiando su conformación nativa soluble a una red entrecruzada e insoluble."
     },
     {
       "pregunta": "¿Cuál de las siguientes proteínas cumple una función hormonal reguladora en el organismo?",
-      "opciones": [
-        "Anticuerpo",
-        "Colágeno",
-        "Miosina",
-        "Insulina"
-      ],
+      "opciones": ["Anticuerpo", "Colágeno", "Miosina", "Insulina"],
       "correcta": "D",
       "explicacion": "La insulina es una proteína con función hormonal, a diferencia del colágeno (estructural), la miosina (contráctil) y los anticuerpos (defensa)."
     },

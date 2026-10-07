@@ -1,5 +1,5 @@
 {
-  "materia": "Biología",
+  "materia": "Biología 1",
   "tema": "Nucleótidos y Ácidos Nucleicos",
   "preguntas": [
     {
@@ -26,23 +26,13 @@
     },
     {
       "pregunta": "¿Qué estructura se forma mediante la combinación exclusiva de un azúcar pentosa y una base nitrogenada, sin grupos fosfato?",
-      "opciones": [
-        "Nucleótido monofosfato",
-        "Nucleósido",
-        "Dinucleótido",
-        "Pirofosfato"
-      ],
+      "opciones": ["Nucleótido monofosfato", "Nucleósido", "Dinucleótido", "Pirofosfato"],
       "correcta": "B",
       "explicacion": "Un nucleósido resulta de la unión covalente entre la pentosa y la base nitrogenada; cuando se le adiciona al menos un grupo fosfato pasa a ser un nucleótido."
     },
     {
       "pregunta": "¿Qué tipo de enlace covalente une a la base nitrogenada con el carbono 1' de la pentosa?",
-      "opciones": [
-        "Enlace fosfodiéster",
-        "Puente de hidrógeno",
-        "Enlace éster de alta energía",
-        "Enlace N-glicosídico"
-      ],
+      "opciones": ["Enlace fosfodiéster", "Puente de hidrógeno", "Enlace éster de alta energía", "Enlace N-glicosídico"],
       "correcta": "D",
       "explicacion": "La base nitrogenada se une al azúcar pentosa mediante un enlace covalente N-glicosídico entre el carbono anomérico y un nitrógeno de la base."
     },
@@ -59,56 +49,31 @@
     },
     {
       "pregunta": "¿Cuáles son las bases nitrogenadas clasificadas como purinas o púricas?",
-      "opciones": [
-        "Adenina y guanina.",
-        "Citosina, timina y uracilo.",
-        "Adenina y citosina.",
-        "Guanina y uracilo."
-      ],
+      "opciones": ["Adenina y guanina.", "Citosina, timina y uracilo.", "Adenina y citosina.", "Guanina y uracilo."],
       "correcta": "A",
       "explicacion": "Las bases púricas poseen un anillo doble (núcleo de purina) e incluyen a la Adenina (A) y a la Guanina (G)."
     },
     {
       "pregunta": "¿Qué bases nitrogenadas se clasifican dentro de la familia de las pirimidinas o pirimidínicas?",
-      "opciones": [
-        "Citosina, timina y uracilo.",
-        "Adenina, guanina y uracilo.",
-        "Adenina y timina.",
-        "Guanina y citosina."
-      ],
+      "opciones": ["Citosina, timina y uracilo.", "Adenina, guanina y uracilo.", "Adenina y timina.", "Guanina y citosina."],
       "correcta": "A",
       "explicacion": "Las pirimidinas están formadas por un único anillo exagonal (núcleo de pirimidina) y comprenden a la Citosina (C), Timina (T) y Uracilo (U)."
     },
     {
       "pregunta": "¿En qué posición del anillo pentosa se diferencia la desoxirribosa de la ribosa por la ausencia de un grupo hidroxilo (-OH)?",
-      "opciones": [
-        "En el carbono 1'.",
-        "En el carbono 2'.",
-        "En el carbono 3'.",
-        "En el carbono 5'."
-      ],
+      "opciones": ["En el carbono 1'.", "En el carbono 2'.", "En el carbono 3'.", "En el carbono 5'."],
       "correcta": "B",
       "explicacion": "La desoxirribosa posee un átomo de H en el C2' en lugar del grupo -OH presente en el C2' de la ribosa."
     },
     {
       "pregunta": "¿Cómo se denomina el nucleósido formado por la unión de la base nitrogenada Adenina y el azúcar Ribosa?",
-      "opciones": [
-        "Desoxiadenosina",
-        "Adenosina",
-        "Ácido adenílico",
-        "Adenilato ciclasa"
-      ],
+      "opciones": ["Desoxiadenosina", "Adenosina", "Ácido adenílico", "Adenilato ciclasa"],
       "correcta": "B",
       "explicacion": "La combinación de la purina Adenina con la pentosa Ribosa forma el nucleósido denominado Adenosina."
     },
     {
       "pregunta": "¿Cuál es la sigla correspondiente a un desoxirribonucleótido trifosfato que contiene la base Citosina?",
-      "opciones": [
-        "CTP",
-        "CMP",
-        "d-CTP",
-        "d-CDP"
-      ],
+      "opciones": ["CTP", "CMP", "d-CTP", "d-CDP"],
       "correcta": "C",
       "explicacion": "Al estar constituido por desoxirribosa, tres fosfatos y citosina, la sigla estándar es d-CTP (desoxicitidina trifosfato)."
     },
@@ -125,45 +90,25 @@
     },
     {
       "pregunta": "¿Qué proceso catabólico celular provee la energía necesaria para fosforilar el ADP y regenerar ATP ($ADP + P_i \rightarrow ATP$)?",
-      "opciones": [
-        "Traducción de proteínas",
-        "Ateroesclerosis",
-        "Transcripción de ARN",
-        "Respiración celular"
-      ],
+      "opciones": ["Traducción de proteínas", "Ateroesclerosis", "Transcripción de ARN", "Respiración celular"],
       "correcta": "D",
       "explicacion": "La energía extraída de la degradación metabólica de los nutrientes durante la respiración celular impulsa la fosforilación de ADP para formar ATP."
     },
     {
       "pregunta": "¿Qué molécula señalizadora intracelular se sintetiza a partir del ATP por acción de la enzima adenilato ciclasa?",
-      "opciones": [
-        "GTP",
-        "NAD+",
-        "FAD",
-        "AMPc (AMP cíclico)"
-      ],
+      "opciones": ["GTP", "NAD+", "FAD", "AMPc (AMP cíclico)"],
       "correcta": "D",
       "explicacion": "La adenilato ciclasa transforma el ATP en AMPc (AMP cíclico) escindiendo un grupo pirofosfato; el AMPc actúa como un segundo mensajero clave."
     },
     {
       "pregunta": "Desde el punto de vista de su estructura química, ¿cómo se clasifican las coenzimas NAD⁺, NADP⁺ y FAD?",
-      "opciones": [
-        "Proteínas oligoméricas",
-        "Monosacáridos de reserva",
-        "Dinucleótidos",
-        "Lípidos anfipáticos"
-      ],
+      "opciones": ["Proteínas oligoméricas", "Monosacáridos de reserva", "Dinucleótidos", "Lípidos anfipáticos"],
       "correcta": "C",
       "explicacion": "NAD⁺, NADP⁺ y FAD son coenzimas dinucleotídicas que participan en reacciones metabólicas de óxido-reducción transportando hidrógenos y electrones."
     },
     {
       "pregunta": "Cuando la coenzima oxidada NAD⁺ capta un protón y dos electrones ($H^+ + 2e^-$), ¿en qué forma reducida se convierte?",
-      "opciones": [
-        "NADP⁺",
-        "FADH₂",
-        "NADH",
-        "AMPc"
-      ],
+      "opciones": ["NADP⁺", "FADH₂", "NADH", "AMPc"],
       "correcta": "C",
       "explicacion": "Al reducirse, el NAD⁺ acepta equivalente de reducción ($H^+ + 2e^-$) para transformarse en NADH."
     },
@@ -180,12 +125,7 @@
     },
     {
       "pregunta": "¿Qué tipo de enlace covalente conecta los monómeros de nucleótidos monofosfato a lo largo del esqueleto de un polinucleótido?",
-      "opciones": [
-        "Puente fosfodiéster",
-        "Enlace peptídico",
-        "Puente de hidrógeno",
-        "Enlace éster de colesterol"
-      ],
+      "opciones": ["Puente fosfodiéster", "Enlace peptídico", "Puente de hidrógeno", "Enlace éster de colesterol"],
       "correcta": "A",
       "explicacion": "El esqueleto covalente del ácido nucleico se forma mediante puentes fosfodiéster entre el grupo 3'-OH de una pentosa y el 5'-fosfato de la siguiente."
     },
@@ -224,12 +164,7 @@
     },
     {
       "pregunta": "¿Cuántos puentes de hidrógeno específicos se establecen entre el par complementario Guanina y Citosina en el ADN?",
-      "opciones": [
-        "1 puente de hidrógeno",
-        "2 puentes de hidrógeno",
-        "3 puentes de hidrógeno",
-        "4 puentes de hidrógeno"
-      ],
+      "opciones": ["1 puente de hidrógeno", "2 puentes de hidrógeno", "3 puentes de hidrógeno", "4 puentes de hidrógeno"],
       "correcta": "C",
       "explicacion": "El par G≡C se estabiliza mediante 3 puentes de hidrógeno, a diferencia del par A=T que forma 2 puentes de hidrógeno."
     },
@@ -268,34 +203,19 @@
     },
     {
       "pregunta": "¿Cuántos pares de bases (pb) se requieren para completar un giro de $360^\\circ$ en la doble hélice de ADN (distancia de 34 Å)?",
-      "opciones": [
-        "10 pares de bases",
-        "5 pares de bases",
-        "20 pares de bases",
-        "100 pares de bases"
-      ],
+      "opciones": ["10 pares de bases", "5 pares de bases", "20 pares de bases", "100 pares de bases"],
       "correcta": "A",
       "explicacion": "Cada par de bases dista 3,4 Å y gira 36º; por lo tanto, cada 10 pb (34 Å) la hélice completa un vuelta de 360º."
     },
     {
       "pregunta": "¿Cuál de las siguientes combinaciones de azúcar y base es exclusiva del ARN?",
-      "opciones": [
-        "Desoxirribosa y Timina",
-        "Ribosa y Uracilo",
-        "Desoxirribosa y Uracilo",
-        "Ribosa y Timina"
-      ],
+      "opciones": ["Desoxirribosa y Timina", "Ribosa y Uracilo", "Desoxirribosa y Uracilo", "Ribosa y Timina"],
       "correcta": "B",
       "explicacion": "El ARN contiene la pentosa Ribosa combinada con la pyrimidina Uracilo (en lugar de Timina)."
     },
     {
       "pregunta": "Si un fragmento de ADN bicatenario contiene un 20% de residuos de Adenina, ¿cuál será el porcentaje de Citosina presente?",
-      "opciones": [
-        "20%",
-        "60%",
-        "40%",
-        "30%"
-      ],
+      "opciones": ["20%", "60%", "40%", "30%"],
       "correcta": "D",
       "explicacion": "Si A = 20%, por complementariedad T = 20% (A+T = 40%). El 60% restante corresponde a C + G. Dado que C = G, Citosina es el 30%."
     },

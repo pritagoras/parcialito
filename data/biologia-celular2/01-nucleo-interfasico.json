@@ -1,0 +1,356 @@
+{
+  "materia": "Biología 2",
+  "tema": "Núcleo interfásico",
+  "preguntas": [
+    {
+      "pregunta": "¿Cuáles son las tres funciones primarias que la bibliografía le atribuye al núcleo celular?",
+      "opciones": [
+        "Sintetizar histonas en el nucleolo, duplicar el ARN y empaquetar proteínas citoplasmáticas.",
+        "Almacenar la información genética, recuperarla mediante la síntesis de ARN y dirigir las actividades celulares.",
+        "Generar energía para la división celular, sintetizar lípidos membranosos y degradar proteínas viejas.",
+        "Duplicar las membranas nucleares, organizar los microtúbulos del huso y transcribir aminoácidos."
+      ],
+      "correcta": "B",
+      "explicacion": "El núcleo almacena el ADN, recupera esa información mediante la síntesis de ARN y regula las actividades celulares a través de los productos de la expresión génica. Las demás opciones incluyen funciones metabólicas citoplasmáticas o procesos que no corresponden a las atribuidas explícitamente al núcleo en el marco conceptual."
+    },
+    {
+      "pregunta": "¿Por qué las histonas interactúan electrostáticamente con la molécula de ADN?",
+      "opciones": [
+        "Porque las histonas poseen carga negativa en sus cadenas laterales y se unen a las bases nitrogenadas.",
+        "Porque el ADN presenta carga neutra y las histonas aportan los grupos fosfato hidrofóbicos.",
+        "Porque las histonas son ricas en aminoácidos básicos y el esqueleto fosfato del ADN tiene carga negativa.",
+        "Porque las histonas forman enlaces covalentes permanentes con la desoxirribosa de los nucleótidos."
+      ],
+      "correcta": "C",
+      "explicacion": "La composición de las histonas, ricas en aminoácidos básicos, favorece su interacción electrostática con el esqueleto fosfato de carga negativa del ADN. La opción que atribuye carga negativa a las histonas invierte la polaridad de la interacción química descrita."
+    },
+    {
+      "pregunta": "¿Qué describe adecuadamente el término \"interfásico\" cuando se habla del núcleo celular?",
+      "opciones": [
+        "Una estructura nuclear independiente que surge únicamente durante la cariocinesis.",
+        "El estado de la célula dentro del ciclo celular comprendido entre dos divisiones sucesivas.",
+        "La etapa mitótica en la que los cromosomas alcanzan su máxima condensación.",
+        "Un estado de inactividad metabólica donde se detiene la síntesis de proteínas y ARN."
+      ],
+      "correcta": "B",
+      "explicacion": "El término interfásico describe el estado de la célula dentro del ciclo celular (comprende las fases G1, S y G2) y no constituye una estructura nuclear separada. Decir que es una fase de inactividad es erróneo porque durante la interfase ocurren crecimiento, duplicación de ADN y síntesis activa de componentes."
+    },
+    {
+      "pregunta": "¿Qué procesos caracterizan a la fase G1 de la interfase?",
+      "opciones": [
+        "Duplicación del ADN y síntesis del octámero central de histonas.",
+        "Condensación máxima de la cromatina y formación del huso mitótico.",
+        "Aumento del tamaño celular, intensa actividad metabólica y síntesis de componentes celulares.",
+        "Separación de las cromátidas hermanas y reorganización de la envoltura nuclear."
+      ],
+      "correcta": "C",
+      "explicacion": "Durante G1 la célula recien formada crece hasta recuperar su volumen característico y sintetiza citosol, proteínas, membranas y estructuras subcelulares. La duplicación del ADN pertenece a la fase S, no a G1."
+    },
+    {
+      "pregunta": "¿Qué ocurre específicamente con la célula y su material genético durante la fase S?",
+      "opciones": [
+        "Se duplica el número de cromosomas pasando de 46 a 92 cromosomas individuales.",
+        "Se produce la duplicación del ADN para preparar una copia completa de la información genética.",
+        "La cromatina se condensa totalmente para formar los cromosomas metafásicos visibles.",
+        "La célula sale del ciclo proliferativo para ingresar en un estado diferenciado reversible."
+      ],
+      "correcta": "B",
+      "explicacion": "La fase S es la etapa de síntesis en la que se duplica el ADN. La idea de que duplica la cantidad de cromosomas es un error frecuente: se mantiene la misma cantidad de cromosomas (46 en humanos), pero cada uno pasa a tener dos cromátidas hermanas."
+    },
+    {
+      "pregunta": "¿Cuál es la característica principal de las células que se encuentran en la fase G0?",
+      "opciones": [
+        "Están metabólicamente inactivas y carecen de capacidad para sintetizar proteínas.",
+        "Se encuentran dividiéndose de forma exponencial sin pasar por la fase de síntesis.",
+        "Pueden salir del ciclo proliferativo y mantener una intensa actividad funcional sin avanzar a la división.",
+        "Han degradado su cromatina para impedir cualquier tipo de transcripción genómica."
+      ],
+      "correcta": "C",
+      "explicacion": "Las células en G0 salen del ciclo proliferativo y pueden permanecer en ese estado ejerciendo sus funciones (como las neuronas) con alta actividad metabólica. No están inactivas ni dividiéndose descontroladamente."
+    },
+    {
+      "pregunta": "En una célula humana somática, ¿cuántos cromosomas y cuántas cromátidas por cromosoma hay al finalizar la fase G2?",
+      "opciones": [
+        "46 cromosomas, cada uno constituido por 1 cromátida.",
+        "92 cromosomas, cada uno constituido por 1 cromátida.",
+        "46 cromosomas, cada uno constituido por 2 cromátidas hermanas.",
+        "23 cromosomas, cada uno constituido por 4 cromátidas hermanas."
+      ],
+      "correcta": "C",
+      "explicacion": "Al finalizar G2, tras la replicación del ADN en S, la célula tiene 46 cromosomas duplicados, consistentes en 2 cromátidas hermanas cada uno (totalizando 92 cromátidas). No se duplica el conteo por centrómero."
+    },
+    {
+      "pregunta": "¿En qué momento del ciclo celular se generan las cromátidas hermanas y cuándo se vuelven claramente visibles?",
+      "opciones": [
+        "Se generan en la mitosis y se visualizan en la fase G1 del siguiente ciclo.",
+        "Se generan durante la fase S y se visualizan claramente al comenzar la condensación en la división.",
+        "Se generan durante G2 y se visualizan únicamente en el período G0.",
+        "Se generan en la fase G1 y se visualizan disueltas en el nucleoplasma en S."
+      ],
+      "correcta": "B",
+      "explicacion": "Las cromátidas hermanas se producen mediante la duplicación del ADN durante la fase S, aunque se observan con claridad como estructuras individualizadas al condensarse la cromatina en la división celular."
+    },
+    {
+      "pregunta": "¿Cuál es el nivel estructural básico de la cromatina que posee un diámetro de 2 nm?",
+      "opciones": [
+        "La fibra de nucleosomas en collar de cuentas.",
+        "El bucle o asa unido al andamiaje proteico.",
+        "La molécula de ADN organizada en doble hélice.",
+        "El solenoide compactado con la histona H1."
+      ],
+      "correcta": "C",
+      "explicacion": "El nivel más elemental del empaquetamiento corresponde al ADN en doble hélice, cuyo diámetro mide 2 nm. Los nucleosomas miden 10 nm y el solenoide 30 nm."
+    },
+    {
+      "pregunta": "¿Qué componentes forman el octámero central alrededor del cual se enrolla el ADN en un nucleosoma?",
+      "opciones": [
+        "Dos moléculas de H1, dos de H2A, dos de H3 y dos de H4.",
+        "Cuatro moléculas de H1 y cuatro moléculas de H2B.",
+        "Dos moléculas de H2A, dos de H2B, dos de H3 y dos de H4.",
+        "Una molécula de cada tipo: H1, H2A, H2B, H3, H4, H5, H6 y H7."
+      ],
+      "correcta": "C",
+      "explicacion": "El core o núcleo proteico del nucleosoma está formado por 8 histonas: 2 H2A + 2 H2B + 2 H3 + 2 H4. La histona H1 queda fuera del octámero central."
+    },
+    {
+      "pregunta": "¿Cuál es la función de la histona H1 en la estructura de la cromatina?",
+      "opciones": [
+        "Formar la parte central del octámero junto con la histona H3.",
+        "Unirse al ADN enlazador y estabilizar los niveles superiores de empaquetamiento.",
+        "Sintetizar las secuencias repetitivas de ADN espaciador.",
+        "Degradar el andamiaje no histónico durante la interfase."
+      ],
+      "correcta": "B",
+      "explicacion": "La histona H1 no integra el octámero; se asocia al ADN espaciador o enlazador y contribuye a estabilizar la organización del nucleosoma y la fibra de 30 nm (actuando analógicamente como un broche)."
+    },
+    {
+      "pregunta": "¿Cómo se denomina la estructura de empaquetamiento de 30 nm de diámetro descrita en la clase?",
+      "opciones": ["Nucleosoma.", "Andamiaje o scaffold.", "Solenoide.", "Cromosoma metafásico."],
+      "correcta": "C",
+      "explicacion": "El nivel de 30 nm resulta de la compactación de la fibra de 10 nm y recibe la denominación de fibra de 30 nm o solenoide, descrita como una estructura helicoidal o en resorte."
+    },
+    {
+      "pregunta": "¿Qué estructura actúa como soporte para la organización de la cromatina en bucles o asas en el nivel de 300 nm?",
+      "opciones": [
+        "Un octámero de histonas H1.",
+        "El andamiaje o scaffold formado por proteínas no histónicas.",
+        "El ADN espaciador sin proteínas asociadas.",
+        "La envoltura nuclear de la célula interfásica."
+      ],
+      "correcta": "B",
+      "explicacion": "En el nivel de 300 nm, las fibras se organizan en asas o bucles sostenidos por un andamiaje proteico (scaffold) compuesto por proteínas no histónicas."
+    },
+    {
+      "pregunta": "¿A qué nivel de compactación y diámetro corresponde el cromosoma metafásico altamente condensado?",
+      "opciones": ["Nivel de 30 nm.", "Nivel de 300 nm.", "Nivel de 700 nm.", "Nivel de 1500 nm."],
+      "correcta": "D",
+      "explicacion": "En el esquema conceptual presentado, el máximo grado de condensación se alcanza en la metafase y corresponde aproximadamente a un diámetro de 1500 nm."
+    },
+    {
+      "pregunta": "¿Cuál es la relación correcta entre el estado de condensación de la cromatina y su accesibilidad transcripcional?",
+      "opciones": [
+        "Mayor condensación implica mayor accesibilidad y mayor actividad transcripcional.",
+        "Menor condensación implica menor accesibilidad y silenciamiento génico total.",
+        "Mayor condensación implica menor accesibilidad y menor actividad transcripcional.",
+        "El grado de condensación no modifica la accesibilidad de los factores transcripcionales."
+      ],
+      "correcta": "C",
+      "explicacion": "A mayor empaquetamiento de la cromatina (heterocromatina), la accesibilidad para los factores de expresión génica es menor, lo que se traduce en un silenciamiento o baja transcripción."
+    },
+    {
+      "pregunta": "¿Por qué es riguroso afirmar que la eucromatina es \"potencialmente activa\" en lugar de decir que todos sus genes se transcriben constantemente?",
+      "opciones": [
+        "Porque la eucromatina está completamente silenciada por metilación permanente.",
+        "Porque aunque es más laxa y accesible, no todos los genes presentes en ella se están expresando simultáneamente.",
+        "Porque carece de ADN y solo contiene proteínas histónicas de soporte.",
+        "Porque solo se transcriben los genes durante la etapa de división celular."
+      ],
+      "correcta": "B",
+      "explicacion": "La eucromatina es una forma de cromatina laxa que permite el acceso de la maquinaria transcripcional, pero esto representa un potencial de transcripción y no significa que cada gen contenido en ella se transcriba activamente todo el tiempo."
+    },
+    {
+      "pregunta": "Según la bibliografía, ¿qué modificación química en las histonas se asocia con un estado más accesible de la cromatina?",
+      "opciones": ["La metilación.", "La acetilación.", "La condensación fosfórica.", "La desaminación de aminoácidos básicos."],
+      "correcta": "B",
+      "explicacion": "En el marco bibliográfico, la acetilación de histonas se vincula a una estructura de cromatina más accesible (eucromatina), mientras que la metilación se relaciona con estados más condensados."
+    },
+    {
+      "pregunta": "¿Qué es el centrómero y qué función cumple en la estructura cromosómica?",
+      "opciones": [
+        "Es el extremo del cromosoma que impide las fusiones no deseadas.",
+        "Es la constricción primaria que mantiene unidas las cromátidas y donde se ensambla el cinetocoro.",
+        "Es el segmento de ADN que conecta un nucleosoma con el siguiente.",
+        "Es la constricción secundaria que sintetiza las subunidades del ribosoma."
+      ],
+      "correcta": "B",
+      "explicacion": "El centrómero constituye la constricción primaria del cromosoma; mantiene asociadas a las cromátidas hermanas y actúa como sitio de ensamblaje del cinetocoro para unirse a los microtúbulos."
+    },
+    {
+      "pregunta": "¿Cómo se denominan los brazos de un cromosoma divididos por la posición del centrómero?",
+      "opciones": [
+        "Brazo a para el largo y brazo b para el corto.",
+        "Brazo p para el corto y brazo q para el largo.",
+        "Brazo p para el largo y brazo q para el corto.",
+        "Brazo x para el corto y brazo y para el largo."
+      ],
+      "correcta": "B",
+      "explicacion": "Por convención, el centrómero divide al cromosoma en dos brazos: el brazo p representa el brazo corto y el brazo q representa el brazo largo."
+    },
+    {
+      "pregunta": "¿Cómo se clasifica un cromosoma cuyo centrómero se encuentra ubicado prácticamente en uno de sus extremos, generando un brazo p extremadamente pequeño?",
+      "opciones": ["Metacéntrico.", "Submetacéntrico.", "Acrocéntrico.", "Telocéntrico absoluto."],
+      "correcta": "C",
+      "explicacion": "En los cromosomas acrocéntricos, el centrómero está muy próximo a un extremo, resultando en un brazo p diminuto (p << q). En metacéntricos p ≈ q y en submetacéntricos p < q."
+    },
+    {
+      "pregunta": "¿Qué distingue a las cromátidas hermanas de los cromosomas homólogos?",
+      "opciones": [
+        "Las cromátidas hermanas derivan de distintos progenitores; los homólogos son copias idénticas.",
+        "Las cromátidas hermanas son copias equivalentes generadas por duplicación; los homólogos provienen uno del padre y otro de la madre.",
+        "Los cromosomas homólogos poseen secuencias idénticas de bases; las cromátidas hermanas varían en sus alelos.",
+        "Las cromátidas hermanas se separan en G1; los cromosomas homólogos están unidos por el centrómero en G2."
+      ],
+      "correcta": "B",
+      "explicacion": "Las cromátidas hermanas surgen de la duplicación de una misma molécula de ADN en la fase S y son copias equivalentes. Los cromosomas homólogos integran un par (uno materno y uno paterno) que poseen los mismos loci génicos pero pueden portar diferentes alelos."
+    },
+    {
+      "pregunta": "¿Qué representa una banda cromosómica obtenida mediante técnicas de tinción como Giemsa?",
+      "opciones": [
+        "Un único gen identificado de manera individual.",
+        "Una secuencia exclusiva de ARNm en proceso de transcripción.",
+        "Una región cromosómica característica que puede abarcar gran cantidad de ADN y múltiples genes.",
+        "El punto exacto donde se ubica el cinetocoro durante la metafase."
+      ],
+      "correcta": "C",
+      "explicacion": "Una banda cromosómica muestra un patrón de intensidad de coloración útil para la identificación, pero no equivale a un gen individual: una sola banda contiene extensas regiones de ADN con muchos genes."
+    },
+    {
+      "pregunta": "¿Cuál es la constitución cromosómica normal de una célula somática en la especie humana?",
+      "opciones": [
+        "23 cromosomas autosómicos y 1 cromosoma sexual.",
+        "46 pares de cromosomas autosómicos y 2 pares sexuales.",
+        "46 cromosomas, distribuidos en 22 pares de autosomas y 1 par de cromosomas sexuales.",
+        "45 cromosomas totales organizados en pares idénticos."
+      ],
+      "correcta": "C",
+      "explicacion": "El cariotipo humano normal consta de 2n = 46 cromosomas, lo que equivale a 23 pares: 22 pares de autosomas y 1 par de cromosomas sexuales (XX o XY)."
+    },
+    {
+      "pregunta": "¿Por qué las gametas humanas (óvulos y espermatozoides) son células haploides (n = 23)?",
+      "opciones": [
+        "Porque han perdido la mitad de su ADN por tinción con Giemsa.",
+        "Porque al unirse en la fecundación restablecen la condición diploide de 46 cromosomas en el cigoto.",
+        "Porque son células que se mantienen indefinidamente en la fase G0.",
+        "Porque carecen de histonas y no pueden formar la fibra de 30 nm."
+      ],
+      "correcta": "B",
+      "explicacion": "La condición haploide (n = 23) de las gametas permite que, tras la fecundación (23 + 23), se restablezca la diploidía característica de la especie (2n = 46) en el cigoto resultante."
+    },
+    {
+      "pregunta": "¿Qué droga se utiliza habitualmente en la preparación de un cariotipo para detener a las células en división cuando sus cromosomas están condensados?",
+      "opciones": ["Colchicina.", "Giemsa.", "Histona H1.", "Retrotranscriptasa."],
+      "correcta": "A",
+      "explicacion": "En el procedimiento clásico para armar un cariotipo se usa colchicina para detener el ciclo celular durante la mitosis, momento en que los cromosomas presentan un elevado grado de condensación."
+    },
+    {
+      "pregunta": "¿Qué función cumplen los telómeros situados en los extremos de los cromosomas eucariotas?",
+      "opciones": [
+        "Ensamblar las fibras del huso mitótico durante la anafase.",
+        "Proteger los extremos cromosómicos y evitar fusiones indebidas entre cromosomas.",
+        "Sintetizar las cadenas del ADN espaciador en los nucleosomas.",
+        "Determinar si un cromosoma es metacéntrico o acrocéntrico."
+      ],
+      "correcta": "B",
+      "explicacion": "Los telómeros se ubican en las terminaciones de las cadenas lineales de ADN para mantener la integridad del cromosoma y evitar fusiones cromosómicas anómalas."
+    },
+    {
+      "pregunta": "¿Cuál es la secuencia repetitiva característica del telómero humano mencionada en la bibliografía?",
+      "opciones": ["5'-ATCGAT-3'", "5'-TTAGGG-3'", "5'-GGCACC-3'", "5'-CCCTTT-3'"],
+      "correcta": "B",
+      "explicacion": "La bibliografía señala explícitamente que la secuencia repetitiva característica del telómero humano en dirección 5' a 3' es TTAGGG."
+    },
+    {
+      "pregunta": "¿Qué es la telomerasa y cuál es su actividad enzimática?",
+      "opciones": [
+        "Una proteína histónica con función de condensación acelerada.",
+        "Una ribonucleoproteína con actividad de retrotranscriptasa que mantiene los telómeros.",
+        "Una enzima que degrada el ADN espaciador entre los nucleosomas.",
+        "Un complejo proteico del cinetocoro que corta los centrómeros."
+      ],
+      "correcta": "B",
+      "explicacion": "La telomerasa es definida como una ribonucleoproteína que actúa como retrotranscriptasa para contribuir al mantenimiento de la longitud de los telómeros en ciertas células."
+    },
+    {
+      "pregunta": "¿A qué tipo de alteración del cariotipo corresponde el Síndrome de Down y cuál es su fórmula cromosómica típica?",
+      "opciones": [
+        "Alteración estructural por deleción del brazo p; cariotipo 45,X.",
+        "Alteración numérica por trisomía del cromosoma 21; cariotipo con 47 cromosomas.",
+        "Alteración estructural por translocación recíproca 7/8; cariotipo con 46 cromosomas.",
+        "Alteración numérica por monosomía del cromosoma 21; cariotipo con 45 cromosomas."
+      ],
+      "correcta": "B",
+      "explicacion": "El síndrome de Down es una alteración numérica consistente en una trisomía del cromosoma 21, lo que deriva en un cariotipo con 47 cromosomas en total."
+    },
+    {
+      "pregunta": "¿Cuál es el mecanismo meiótico que habitualmente origina una trisomía al producir una gameta con un cromosoma de más?",
+      "opciones": [
+        "Una translocación robertsoniana balanceada en la fase G1.",
+        "Una no disyunción cromosómica durante la segregación de cromosomas o cromátidas.",
+        "La degradación del andamiaje no histónico en la interfase.",
+        "Una duplicación excesiva de la histona H1 en la fase S."
+      ],
+      "correcta": "B",
+      "explicacion": "La no disyunción cromosómica es la falta de separación adecuada de cromosomas homólogos o cromátidas durante la meiosis, lo que genera gametas aberrantes con 24 cromosomas en vez de 23."
+    },
+    {
+      "pregunta": "¿Qué fórmula y tipo de alteración cromosómica caracterizan al Síndrome de Turner?",
+      "opciones": [
+        "Trisomía del par 18 con 47 cromosomas en total.",
+        "Monosomía X (45,X o X0), clasificada como una alteración numérica.",
+        "Deleción del brazo largo del cromosoma Y con 46 cromosomas.",
+        "Translocación recíproca entre los cromosomas X e Y."
+      ],
+      "correcta": "B",
+      "explicacion": "El síndrome de Turner es el ejemplo clásico de monosomía en humanos (pérdida de un cromosoma sexual), representada como 45,X o X0, siendo una alteración del número total de cromosomas."
+    },
+    {
+      "pregunta": "En el contexto de la genética médica, ¿cómo debe interpretarse la relación entre la edad materna avanzada y la aparición de ciertas trisomías?",
+      "opciones": [
+        "Como una causa determinante que produce inexorablemente la alteración en el 100% de los casos.",
+        "Como un factor de riesgo que incrementa la probabilidad de no disyunción, sin constituir un determinismo.",
+        "Como un factor protector que disminuye la pérdida de fragmentos cromosómicos.",
+        "Como un evento dependiente exclusivamente del genotipo paterno."
+      ],
+      "correcta": "B",
+      "explicacion": "La edad materna avanzada constituye un factor de riesgo reconocido para errores de segregación como la no disyunción, pero no es un determinismo absoluto."
+    },
+    {
+      "pregunta": "¿En qué consiste la alteración cromosómica estructural denominada deleción?",
+      "opciones": [
+        "En la ganancia de un cromosoma homólogo completo en el cariotipo.",
+        "En la pérdida de un fragmento de un cromosoma, con la consecuente pérdida de ADN.",
+        "En el intercambio recíproco de segmentos entre dos cromosomas no homólogos.",
+        "En la duplicación de los brazos p y q dentro del mismo centrómero."
+      ],
+      "correcta": "B",
+      "explicacion": "Una deleción es una anomalía estructural donde se pierde un segmento de la estructura del cromosoma, acarreando la pérdida física de ADN e información genética."
+    },
+    {
+      "pregunta": "¿Qué ocurre en una translocación recíproca entre dos cromosomas?",
+      "opciones": [
+        "Un cromosoma pierde su centrómero y se degrada totalmente en el citosol.",
+        "Dos cromosomas no homólogos intercambian segmentos entre sí.",
+        "Un cromosoma duplica sus telómeros en ambos extremos del brazo p.",
+        "Las cromátidas hermanas no logran separarse durante la anafase."
+      ],
+      "correcta": "B",
+      "explicacion": "En una translocación recíproca se produce un intercambio mutuo o recíproco de fragmentos de ADN entre dos cromosomas (como el ejemplo conceptual 7 <-> 8)."
+    },
+    {
+      "pregunta": "En la nomenclatura estándar del ciclo celular, ¿cuál es el significado correcto de la sigla \"G\" en las fases G1 y G2?",
+      "opciones": ["Growth (crecimiento).", "Gap (intervalo o brecha).", "Gene (gen).", "Group (grupo)."],
+      "correcta": "B",
+      "explicacion": "Aunque en la explicación oral se asocie G con crecimiento debido a los procesos de desarrollo que ocurren, la nomenclatura oficial proviene del término inglés Gap 1 y Gap 2."
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "materia": "Biología",
+  "materia": "Biología 1",
   "tema": "Glúcidos",
   "preguntas": [
     {
@@ -26,56 +26,31 @@
     },
     {
       "pregunta": "¿Cuál es la fórmula empírica general que representan los monosacáridos simples?",
-      "opciones": [
-        "C_n(H₂O)_n",
-        "C_n H_(2n+2)",
-        "C_n(H₂O)_(n-1)",
-        "C_n H_n O_(2n)"
-      ],
+      "opciones": ["C_n(H₂O)_n", "C_n H_(2n+2)", "C_n(H₂O)_(n-1)", "C_n H_n O_(2n)"],
       "correcta": "A",
       "explicacion": "La fórmula general de los monosacáridos es C_n(H₂O)_n, donde n varía generalmente de 3 a 7 átomos de carbono."
     },
     {
       "pregunta": "¿Cómo se clasifica un monosacárido formado por una cadena de 6 átomos de carbono?",
-      "opciones": [
-        "Pentosa.",
-        "Hexosa.",
-        "Triosa.",
-        "Heptosa."
-      ],
+      "opciones": ["Pentosa.", "Hexosa.", "Triosa.", "Heptosa."],
       "correcta": "B",
       "explicacion": "De acuerdo al número de átomos de C, los monosacáridos de 3, 4, 5, 6 y 7 carbonos se denominan triosas, tetrosas, pentosas, hexosas y heptosas respectivamente."
     },
     {
       "pregunta": "¿Qué nombre recibe un monosacárido cuyo grupo carbonilo se encuentra en el C1 como aldehído?",
-      "opciones": [
-        "Aldosa.",
-        "Cetosa.",
-        "Polialcohol.",
-        "Anómero."
-      ],
+      "opciones": ["Aldosa.", "Cetosa.", "Polialcohol.", "Anómero."],
       "correcta": "A",
       "explicacion": "Si el grupo carbonilo es un aldehído (en C1), el monosacárido es una aldosa; si es una cetona (generalmente en C2), es una cetosa."
     },
     {
       "pregunta": "¿Cuál es la triosa de tipo aldosa más simple que posee un carbono quiral y sirve de referencia para la estereoisomería?",
-      "opciones": [
-        "Dihidroxiacetona.",
-        "Ribosa.",
-        "Eritrosa.",
-        "Gliceraldehído."
-      ],
+      "opciones": ["Dihidroxiacetona.", "Ribosa.", "Eritrosa.", "Gliceraldehído."],
       "correcta": "D",
       "explicacion": "El gliceraldehído es una aldotriosa (3C) con su C2 como centro asimétrico o quiral, sirviendo de base para definir los estereoisómeros D y L."
     },
     {
       "pregunta": "¿Qué monosacárido de 3 carbonos pertenece al grupo de las cetosas y carece de carbonos asimétricos?",
-      "opciones": [
-        "Gliceraldehído.",
-        "Dihidroxiacetona.",
-        "Fructosa.",
-        "Eritrulosa."
-      ],
+      "opciones": ["Gliceraldehído.", "Dihidroxiacetona.", "Fructosa.", "Eritrulosa."],
       "correcta": "B",
       "explicacion": "La dihidroxiacetona es la única triosa cetosa; al poseer un grupo cetona en el C2, ninguno de sus tres carbonos está unido a cuatro grupos distintos."
     },
@@ -92,12 +67,7 @@
     },
     {
       "pregunta": "¿A qué serie estereoisomérica pertenecen predominantemente los monosacáridos que sintetizan y metabolizan los seres vivos?",
-      "opciones": [
-        "Serie D.",
-        "Serie L.",
-        "Mezcla racémica equimolar.",
-        "Serie alfa (α)."
-      ],
+      "opciones": ["Serie D.", "Serie L.", "Mezcla racémica equimolar.", "Serie alfa (α)."],
       "correcta": "A",
       "explicacion": "En la naturaleza y el metabolismo celular, la inmensa mayoría de los monosacáridos aprovechados pertenecen a la serie D."
     },
@@ -125,34 +95,19 @@
     },
     {
       "pregunta": "La D-galactosa es una aldohexosa que se diferencia estructuralmente de la D-glucosa por la configuración del hidroxilo en:",
-      "opciones": [
-        "El carbono 1.",
-        "El carbono 2.",
-        "El carbono 6.",
-        "El carbono 4."
-      ],
+      "opciones": ["El carbono 1.", "El carbono 2.", "El carbono 6.", "El carbono 4."],
       "correcta": "D",
       "explicacion": "La D-galactosa y la D-glucosa son epímeros en el carbono 4; en la galactosa el hidroxilo del C4 está orientado a la izquierda (o hacia arriba en Haworth)."
     },
     {
       "pregunta": "¿Qué tipo de enlace intramolecular se forma cuando el grupo aldehído del C1 de la D-glucosa reacciona con el hidroxilo del C5 para ciclar la molécula?",
-      "opciones": [
-        "Enlace éster.",
-        "Enlace hemiacetal.",
-        "Enlace glucosídico.",
-        "Enlace peptídico."
-      ],
+      "opciones": ["Enlace éster.", "Enlace hemiacetal.", "Enlace glucosídico.", "Enlace peptídico."],
       "correcta": "B",
       "explicacion": "La reacción intramolecular entre el grupo aldehído y un grupo alcohol genera una estructura cíclica mediante un enlace hemiacetal."
     },
     {
       "pregunta": "¿Cómo se denomina al átomo de carbono que pasa a ser un nuevo centro asimétrico al ciclarse una aldohexosa o una cetohexosa?",
-      "opciones": [
-        "Carbono primario.",
-        "Carbono quiral omega.",
-        "Carbono anomérico.",
-        "Carbono carboxílico."
-      ],
+      "opciones": ["Carbono primario.", "Carbono quiral omega.", "Carbono anomérico.", "Carbono carboxílico."],
       "correcta": "C",
       "explicacion": "El carbono del grupo carbonilo (C1 en aldosas, C2 en cetosas) se convierte en un centro quiral nuevo denominado carbono anomérico al formar el ciclo."
     },
@@ -180,12 +135,7 @@
     },
     {
       "pregunta": "¿Cuáles son las dos aldopentosas de mayor relevancia biológica por formar parte de los nucleótidos y ácidos nucleicos?",
-      "opciones": [
-        "Glucosa y Fructosa.",
-        "Gliceraldehído y Dihidroxiacetona.",
-        "Ribosa y Desoxirribosa.",
-        "Maltosa y Lactosa."
-      ],
+      "opciones": ["Glucosa y Fructosa.", "Gliceraldehído y Dihidroxiacetona.", "Ribosa y Desoxirribosa.", "Maltosa y Lactosa."],
       "correcta": "C",
       "explicacion": "La ribosa (componente del ARN y ATP) y la desoxirribosa (componente del ADN) son pentosas (5C) clave con función estructural."
     },
@@ -224,23 +174,13 @@
     },
     {
       "pregunta": "¿Cómo se denomina la reacción química mediante la cual dos monosacáridos se unen covalente liberando una molécula de agua?",
-      "opciones": [
-        "Hidrólisis.",
-        "Condensación.",
-        "Descarboxilación.",
-        "Oxidación."
-      ],
+      "opciones": ["Hidrólisis.", "Condensación.", "Descarboxilación.", "Oxidación."],
       "correcta": "B",
       "explicacion": "La formación del enlace glucosídico entre dos unidades hidroxiladas con desprendimiento de una molécula de agua constituye una reacción de condensación."
     },
     {
       "pregunta": "¿Qué proceso químico inverso a la condensación rompe un enlace glucosídico incorporando una molécula de agua?",
-      "opciones": [
-        "Esterificación.",
-        "Ciclación.",
-        "Polimerización.",
-        "Hidrólisis."
-      ],
+      "opciones": ["Esterificación.", "Ciclación.", "Polimerización.", "Hidrólisis."],
       "correcta": "D",
       "explicacion": "La hidrólisis implica la adición de agua (un protón y un hidroxilo) para escindir el enlace glucosídico y recuperar las unidades de monosacárido."
     },
@@ -356,12 +296,7 @@
     },
     {
       "pregunta": "¿Cuáles son las dos fracciones polisacáridas que constituyen el almidón vegetal?",
-      "opciones": [
-        "Amilosa y Amilopectina.",
-        "Glucógeno y Celulosa.",
-        "Quitina y Queratina.",
-        "Maltosa y Sacarosa."
-      ],
+      "opciones": ["Amilosa y Amilopectina.", "Glucógeno y Celulosa.", "Quitina y Queratina.", "Maltosa y Sacarosa."],
       "correcta": "A",
       "explicacion": "El almidón es una mezcla de dos glucanos: amilosa (polímero helicoidal no ramificado) y amilopectina (polímero ramificado)."
     },
@@ -422,12 +357,7 @@
     },
     {
       "pregunta": "¿Qué proteína actúa como núcleo central y cebador al que se une el extremo reducido del glucógeno durante su síntesis?",
-      "opciones": [
-        "Albúmina.",
-        "Glucogenina.",
-        "Insulina.",
-        "Hemoglobina."
-      ],
+      "opciones": ["Albúmina.", "Glucogenina.", "Insulina.", "Hemoglobina."],
       "correcta": "B",
       "explicacion": "En el centro del complejo de glucógeno se encuentra la proteína glucogenina, unida covalentemente al extremo reducido de la molécula."
     },
@@ -499,12 +429,7 @@
     },
     {
       "pregunta": "¿Qué derivado nitrogenado de la glucosa constituye la unidad monomérica de la quitina?",
-      "opciones": [
-        "Ácido glucurónico.",
-        "N-acetilglucosamina.",
-        "Galactosamina.",
-        "Glucosamina descarboxilada."
-      ],
+      "opciones": ["Ácido glucurónico.", "N-acetilglucosamina.", "Galactosamina.", "Glucosamina descarboxilada."],
       "correcta": "B",
       "explicacion": "La quitina es un homopolisacárido compuesto por monómeros de N-acetilglucosamina unidos por enlaces β(1→4)."
     },

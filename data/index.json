@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-06T01:30:23Z",
+  "generado": "2026-10-07T01:31:06Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -7,127 +7,141 @@
       "emoji": "🧬",
       "temas": [
         {
-          "id": "biologia-celular/tema_bacteriofagos-y-ciclos-de-infeccion-convertido",
+          "id": "biologia-celular/01-tema-bacteriofagos-y-ciclos-de-infeccion-convertido",
           "nombre": "Bacteriófagos y Ciclos de Infección",
-          "archivo": "data/biologia-celular/tema_bacteriofagos-y-ciclos-de-infeccion-convertido.json",
+          "archivo": "data/biologia-celular/01-tema-bacteriofagos-y-ciclos-de-infeccion-convertido.json",
           "preguntas": 16
         },
         {
-          "id": "biologia-celular/tema_caracteristicas-y-estructura-viral-convertido",
+          "id": "biologia-celular/02-tema-caracteristicas-y-estructura-viral-convertido",
           "nombre": "Características Generales y Estructura Viral",
-          "archivo": "data/biologia-celular/tema_caracteristicas-y-estructura-viral-convertido.json",
+          "archivo": "data/biologia-celular/02-tema-caracteristicas-y-estructura-viral-convertido.json",
           "preguntas": 16
         },
         {
-          "id": "biologia-celular/tema_categorias-seres-vivos-convertido",
+          "id": "biologia-celular/03-tema-categorias-seres-vivos-convertido",
           "nombre": "Categorías de los seres vivos y niveles de organización",
-          "archivo": "data/biologia-celular/tema_categorias-seres-vivos-convertido.json",
+          "archivo": "data/biologia-celular/03-tema-categorias-seres-vivos-convertido.json",
           "preguntas": 25
         },
         {
-          "id": "biologia-celular/tema_celula-eucariota-convertido",
+          "id": "biologia-celular/04-tema-celula-eucariota-convertido",
           "nombre": "Célula eucariota",
-          "archivo": "data/biologia-celular/tema_celula-eucariota-convertido.json",
+          "archivo": "data/biologia-celular/04-tema-celula-eucariota-convertido.json",
           "preguntas": 25
         },
         {
-          "id": "biologia-celular/tema_celula-procariota-convertido",
+          "id": "biologia-celular/05-tema-celula-procariota-convertido",
           "nombre": "Célula procariota",
-          "archivo": "data/biologia-celular/tema_celula-procariota-convertido.json",
+          "archivo": "data/biologia-celular/05-tema-celula-procariota-convertido.json",
           "preguntas": 25
         },
         {
-          "id": "biologia-celular/tema_citoesqueleto_mec",
+          "id": "biologia-celular/06-tema-citoesqueleto-mec",
           "nombre": "Citoesqueleto y Membrana Extracelular",
-          "archivo": "data/biologia-celular/tema_citoesqueleto_mec.json",
+          "archivo": "data/biologia-celular/06-tema-citoesqueleto-mec.json",
           "preguntas": 40
         },
         {
-          "id": "biologia-celular/tema_endomembranas",
+          "id": "biologia-celular/07-tema-endomembranas",
           "nombre": "Sistema de endomembranas",
-          "archivo": "data/biologia-celular/tema_endomembranas.json",
+          "archivo": "data/biologia-celular/07-tema-endomembranas.json",
           "preguntas": 25
         },
         {
-          "id": "biologia-celular/tema_enzimas",
+          "id": "biologia-celular/08-tema-enzimas",
           "nombre": "Enzimas",
-          "archivo": "data/biologia-celular/tema_enzimas.json",
+          "archivo": "data/biologia-celular/08-tema-enzimas.json",
           "preguntas": 25
         },
         {
-          "id": "biologia-celular/tema_fotosintesis",
+          "id": "biologia-celular/09-tema-fotosintesis",
           "nombre": "Fotosintesis",
-          "archivo": "data/biologia-celular/tema_fotosintesis.json",
+          "archivo": "data/biologia-celular/09-tema-fotosintesis.json",
           "preguntas": 25
         },
         {
-          "id": "biologia-celular/tema_glucidos-convertido",
+          "id": "biologia-celular/10-tema-glucidos-convertido",
           "nombre": "Glúcidos",
-          "archivo": "data/biologia-celular/tema_glucidos-convertido.json",
+          "archivo": "data/biologia-celular/10-tema-glucidos-convertido.json",
           "preguntas": 50
         },
         {
-          "id": "biologia-celular/tema_lipidos-convertido",
+          "id": "biologia-celular/11-tema-lipidos-convertido",
           "nombre": "Lípidos",
-          "archivo": "data/biologia-celular/tema_lipidos-convertido.json",
+          "archivo": "data/biologia-celular/11-tema-lipidos-convertido.json",
           "preguntas": 30
         },
         {
-          "id": "biologia-celular/tema_membrana_plasmatica",
+          "id": "biologia-celular/12-tema-membrana-plasmatica",
           "nombre": "Membrana Plasmatica",
-          "archivo": "data/biologia-celular/tema_membrana_plasmatica.json",
+          "archivo": "data/biologia-celular/12-tema-membrana-plasmatica.json",
           "preguntas": 25
         },
         {
-          "id": "biologia-celular/tema_metabolismo",
+          "id": "biologia-celular/13-tema-metabolismo",
           "nombre": "Metabolismo",
-          "archivo": "data/biologia-celular/tema_metabolismo.json",
+          "archivo": "data/biologia-celular/13-tema-metabolismo.json",
           "preguntas": 25
         },
         {
-          "id": "biologia-celular/tema_nucleotidos-convertido",
+          "id": "biologia-celular/14-tema-nucleotidos-convertido",
           "nombre": "Nucleótidos y Ácidos Nucleicos",
-          "archivo": "data/biologia-celular/tema_nucleotidos-convertido.json",
+          "archivo": "data/biologia-celular/14-tema-nucleotidos-convertido.json",
           "preguntas": 30
         },
         {
-          "id": "biologia-celular/tema_parcial-completo-convertido",
+          "id": "biologia-celular/15-tema-parcial-completo-convertido",
           "nombre": "Parcial completo (banco de preguntas)",
-          "archivo": "data/biologia-celular/tema_parcial-completo-convertido.json",
+          "archivo": "data/biologia-celular/15-tema-parcial-completo-convertido.json",
           "preguntas": 160
         },
         {
-          "id": "biologia-celular/tema_proteinas-convertido",
+          "id": "biologia-celular/16-tema-proteinas-convertido",
           "nombre": "Proteínas",
-          "archivo": "data/biologia-celular/tema_proteinas-convertido.json",
+          "archivo": "data/biologia-celular/16-tema-proteinas-convertido.json",
           "preguntas": 30
         },
         {
-          "id": "biologia-celular/tema_quimica-general-y-agua-convertido",
+          "id": "biologia-celular/17-tema-quimica-general-y-agua-convertido",
           "nombre": "Química general y agua",
-          "archivo": "data/biologia-celular/tema_quimica-general-y-agua-convertido.json",
+          "archivo": "data/biologia-celular/17-tema-quimica-general-y-agua-convertido.json",
           "preguntas": 25
         },
         {
-          "id": "biologia-celular/tema_respiracion",
+          "id": "biologia-celular/18-tema-respiracion",
           "nombre": "Respiración celular",
-          "archivo": "data/biologia-celular/tema_respiracion.json",
+          "archivo": "data/biologia-celular/18-tema-respiracion.json",
           "preguntas": 25
         },
         {
-          "id": "biologia-celular/tema_viroides-y-priones-convertido",
+          "id": "biologia-celular/19-tema-viroides-y-priones-convertido",
           "nombre": "Viroides y Priones",
-          "archivo": "data/biologia-celular/tema_viroides-y-priones-convertido.json",
+          "archivo": "data/biologia-celular/19-tema-viroides-y-priones-convertido.json",
           "preguntas": 16
         },
         {
-          "id": "biologia-celular/tema_virus-medicos-y-vacunas-convertido",
+          "id": "biologia-celular/20-tema-virus-medicos-y-vacunas-convertido",
           "nombre": "Virus de Importancia Médica y Vacunas",
-          "archivo": "data/biologia-celular/tema_virus-medicos-y-vacunas-convertido.json",
+          "archivo": "data/biologia-celular/20-tema-virus-medicos-y-vacunas-convertido.json",
           "preguntas": 16
         }
       ],
       "color": "#9B7BFF"
+    },
+    {
+      "id": "biologia-celular2",
+      "nombre": "Biología 2",
+      "emoji": "💊",
+      "temas": [
+        {
+          "id": "biologia-celular2/01-nucleo-interfasico",
+          "nombre": "Núcleo interfásico",
+          "archivo": "data/biologia-celular2/01-nucleo-interfasico.json",
+          "preguntas": 35
+        }
+      ],
+      "color": "#FFB938"
     },
     {
       "id": "semio",

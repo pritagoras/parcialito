@@ -1,26 +1,16 @@
 {
-  "materia": "Biología",
+  "materia": "Biología 1",
   "tema": "Célula procariota",
   "preguntas": [
     {
       "pregunta": "¿Cuál de las siguientes estructuras está presente de manera constante e indispensable en TODAS las células procariotas?",
-      "opciones": [
-        "Cápsula de polisacáridos",
-        "Pili sexuales",
-        "Ribosomas 70S",
-        "Flagelo bacteriano"
-      ],
+      "opciones": ["Cápsula de polisacáridos", "Pili sexuales", "Ribosomas 70S", "Flagelo bacteriano"],
       "correcta": "C",
       "explicacion": "Los ribosomas 70S, la membrana plasmática, el nucleoide y el citosol son estructuras constantes indispensables en toda bacteria."
     },
     {
       "pregunta": "El componente macromolecular exclusivo y característico de la pared celular bacteriana (mureína) es el:",
-      "opciones": [
-        "Glucógeno",
-        "Lipopolisacárido",
-        "Colesterol",
-        "Peptidoglicano"
-      ],
+      "opciones": ["Glucógeno", "Lipopolisacárido", "Colesterol", "Peptidoglicano"],
       "correcta": "D",
       "explicacion": "El peptidoglicano o mureína es un polímero exclusivo de procariotas constituido por azúcares alternados (NAG y NAM) y enlaces tetrapéptidos."
     },
@@ -48,12 +38,7 @@
     },
     {
       "pregunta": "¿Qué grupo de procariotas se caracteriza por carecer totalmente de pared celular de peptidoglicano y contener esteroles en su membrana?",
-      "opciones": [
-        "Cianobacterias",
-        "Micoplasmas",
-        "Escherichia coli",
-        "Bacterias Grampositivas"
-      ],
+      "opciones": ["Cianobacterias", "Micoplasmas", "Escherichia coli", "Bacterias Grampositivas"],
       "correcta": "B",
       "explicacion": "Los micoplasmas son procariotas que carecen de pared celular de peptidoglicano y poseen esteroles incorporados en su membrana plasmática."
     },
@@ -70,12 +55,7 @@
     },
     {
       "pregunta": "¿Qué invaginación de la membrana plasmática procariota sirve de sitio de anclaje para el cromosoma bacteriano durante su replicación?",
-      "opciones": [
-        "Pili sexual",
-        "Mesosoma",
-        "Porina",
-        "Periplasma"
-      ],
+      "opciones": ["Pili sexual", "Mesosoma", "Porina", "Periplasma"],
       "correcta": "B",
       "explicacion": "El mesosoma es un pliegue invaginado de la membrana plasmática procariota al cual se halla anclado el cromosoma bacteriano."
     },
@@ -103,56 +83,31 @@
     },
     {
       "pregunta": "El proceso de transferencia directa de un plásmido (como el factor F) desde una bacteria donante (F⁺) a una receptora (F⁻) a través de un pili sexual se denomina:",
-      "opciones": [
-        "Conjugación",
-        "Transducción",
-        "Transformación",
-        "Fisión binaria"
-      ],
+      "opciones": ["Conjugación", "Transducción", "Transformación", "Fisión binaria"],
       "correcta": "A",
       "explicacion": "La conjugación es el mecanismo de transferencia horizontal de material genético (plásmidos) mediante contacto directo mediado por el pili sexual."
     },
     {
       "pregunta": "La captación e incorporación e integración directa de fragmentos de ADN libre del medio extracelular por parte de una bacteria competente se conoce como:",
-      "opciones": [
-        "Conjugación",
-        "Transducción",
-        "Transformación",
-        "Amitosis"
-      ],
+      "opciones": ["Conjugación", "Transducción", "Transformación", "Amitosis"],
       "correcta": "C",
       "explicacion": "La transformación consiste en la absorción citoplasmática de fragmentos de ADN desnudo o libre presente en el medio ambiente proveniente de bacterias lisadas."
     },
     {
       "pregunta": "Cuando la transferencia de genes bacterianos de una célula a otra es mediada por un virus bacteriófago que actúa como vector, el proceso se denomina:",
-      "opciones": [
-        "Transducción",
-        "Transformación",
-        "Conjugación",
-        "Replicación"
-      ],
+      "opciones": ["Transducción", "Transformación", "Conjugación", "Replicación"],
       "correcta": "A",
       "explicacion": "La transducción es el pasaje de ADN de una bacteria a otra transportado accidentalmente en el interior de la cápside de un bacteriófago."
     },
     {
       "pregunta": "El mecanismo asexuado de división celular en las bacterias, que genera dos células hijas genéticamente idénticas, se denomina:",
-      "opciones": [
-        "Fisión binaria",
-        "Mitosis ecuacional",
-        "Meiosis",
-        "Esporulación meiótica"
-      ],
+      "opciones": ["Fisión binaria", "Mitosis ecuacional", "Meiosis", "Esporulación meiótica"],
       "correcta": "A",
       "explicacion": "Las bacterias se reproducen asexualmente por fisión binaria (o amitosis), duplicando previamente su único cromosoma para distribuirlo equitativamente."
     },
     {
       "pregunta": "¿Qué proteína globular constituye la estructura helicoidal del flagelo bacteriano responsable de la locomoción celular?",
-      "opciones": [
-        "Flagelina",
-        "Tubulina",
-        "Pilina",
-        "Actina"
-      ],
+      "opciones": ["Flagelina", "Tubulina", "Pilina", "Actina"],
       "correcta": "A",
       "explicacion": "El flagelo procariota está compuesto por subunidades de la proteína flagelina, formando un filamento rígido sin disposición de microtúbulos."
     },
@@ -180,12 +135,7 @@
     },
     {
       "pregunta": "¿Cuál es el coeficiente de sedimentación característico de los ribosomas presentes en el citoplasma de las bacterias?",
-      "opciones": [
-        "80S",
-        "70S",
-        "60S",
-        "50S"
-      ],
+      "opciones": ["80S", "70S", "60S", "50S"],
       "correcta": "B",
       "explicacion": "Los ribosomas procariotas son de tipo 70S, integrados por dos subunidades (50S mayor y 30S menor)."
     },
@@ -213,45 +163,25 @@
     },
     {
       "pregunta": "¿Qué polímeros carboxilados o fosfatados están presentes exclusivamente en la pared de bacterias Grampositivas actuando como determinantes antigénicos principales?",
-      "opciones": [
-        "Porinas",
-        "Biolípidos con enlaces éter",
-        "Lipopolisacáridos (LPS)",
-        "Ácidos teicoicos y lipoteicoicos"
-      ],
+      "opciones": ["Porinas", "Biolípidos con enlaces éter", "Lipopolisacáridos (LPS)", "Ácidos teicoicos y lipoteicoicos"],
       "correcta": "D",
       "explicacion": "Los ácidos teicoicos y lipoteicoicos se encuentran en la pared gruesa de peptidoglicano de Grampositivas y definen su especificidad inmunológica."
     },
     {
       "pregunta": "Las proyecciones proteicas rígidas y cortas formadas por pilina en la superficie de la bacteria que cumplen función de fijación a superficies se denominan:",
-      "opciones": [
-        "Flagelos",
-        "Cilios",
-        "Pili o fimbrias",
-        "Pseudópodos"
-      ],
+      "opciones": ["Flagelos", "Cilios", "Pili o fimbrias", "Pseudópodos"],
       "correcta": "C",
       "explicacion": "Los pili (o fimbrias) son apéndices formados por pilina que intervienen en la adhesión celular a tejidos o sustratos."
     },
     {
       "pregunta": "¿Qué tipo de plásmido porta los genes que confieren resistencia a múltiples antibióticos en bacterias?",
-      "opciones": [
-        "Plásmido F (Factor sexual)",
-        "Transposón de transposición replicativa",
-        "Profago atenuado",
-        "Plásmido R"
-      ],
+      "opciones": ["Plásmido F (Factor sexual)", "Transposón de transposición replicativa", "Profago atenuado", "Plásmido R"],
       "correcta": "D",
       "explicacion": "Los plásmidos R contienen genes que codifican mecanismos de resistencia frente a diversos antibióticos."
     },
     {
       "pregunta": "Los fragmentos de ADN capaces de moverse de una posición a otra dentro del genoma bacteriano catalizados por la enzima transposasa se denominan:",
-      "opciones": [
-        "Transposones",
-        "Mesosomas",
-        "Microsomas",
-        "Dictiosomas"
-      ],
+      "opciones": ["Transposones", "Mesosomas", "Microsomas", "Dictiosomas"],
       "correcta": "A",
       "explicacion": "Los transposones son elementos genéticos móviles que pueden cambiar de ubicación en el genoma y causar mutaciones."
     },
@@ -268,12 +198,7 @@
     },
     {
       "pregunta": "En el protocolo de tinción de Gram, el reactivo utilizado como mordiente para fijar el colorante cristal violeta a la mureína es:",
-      "opciones": [
-        "Lugol (solución yodo-yodurada)",
-        "Alcohol-acetona",
-        "Safranina",
-        "Agua destilada"
-      ],
+      "opciones": ["Lugol (solución yodo-yodurada)", "Alcohol-acetona", "Safranina", "Agua destilada"],
       "correcta": "A",
       "explicacion": "El lugol actúa como mordiente formando un complejo insoluble con el cristal violeta dentro de la pared de peptidoglicano."
     }

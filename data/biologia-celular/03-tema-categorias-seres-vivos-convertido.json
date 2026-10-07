@@ -1,26 +1,16 @@
 {
-  "materia": "Biología",
+  "materia": "Biología 1",
   "tema": "Categorías de los seres vivos y niveles de organización",
   "preguntas": [
     {
       "pregunta": "¿En qué nivel de organización biológica emerge la vida como propiedad definitoria según la teoría celular?",
-      "opciones": [
-        "Nivel celular",
-        "Nivel subcelular u organoide",
-        "Nivel tisular",
-        "Nivel macromolecular"
-      ],
+      "opciones": ["Nivel celular", "Nivel subcelular u organoide", "Nivel tisular", "Nivel macromolecular"],
       "correcta": "A",
       "explicacion": "La célula es la porción más sencilla de la materia viva capaz de realizar todas las funciones imprescindibles para la vida. Por ello, la vida aparece como propiedad definitoria en el nivel celular."
     },
     {
       "pregunta": "¿A qué nivel de organización pertenecen los virus según la clasificación biológica tradicional?",
-      "opciones": [
-        "Nivel celular",
-        "Nivel prebiótico o supramacromolecular",
-        "Nivel subcelular",
-        "Nivel macromolecular"
-      ],
+      "opciones": ["Nivel celular", "Nivel prebiótico o supramacromolecular", "Nivel subcelular", "Nivel macromolecular"],
       "correcta": "B",
       "explicacion": "Los virus están constituidos por la asociación de macromoléculas (ácidos nucleicos y proteínas), por lo que se ubican en el nivel prebiótico o supramacromolecular, careciendo de organización celular."
     },
@@ -37,34 +27,19 @@
     },
     {
       "pregunta": "¿Qué característica de los seres vivos describe la capacidad de mantener el medio interno relativamente constante en un equilibrio dinámico?",
-      "opciones": [
-        "Homeostasis",
-        "Irritabilidad",
-        "Metabolismo",
-        "Adaptación"
-      ],
+      "opciones": ["Homeostasis", "Irritabilidad", "Metabolismo", "Adaptación"],
       "correcta": "A",
       "explicacion": "La homeostasis es la tendencia que lleva a mantener el medio interno relativamente estable mediante mecanismos reguladores, a pesar del intercambio constante de materia y energía con el ambiente."
     },
     {
       "pregunta": "La capacidad de los organismos de responder ante estímulos o cambios físicos y químicos del medio interno o externo se denomina:",
-      "opciones": [
-        "Metabolismo",
-        "Homeostasis",
-        "Desarrollo",
-        "Irritabilidad"
-      ],
+      "opciones": ["Metabolismo", "Homeostasis", "Desarrollo", "Irritabilidad"],
       "correcta": "D",
       "explicacion": "La irritabilidad es la facultad de responder a estímulos o modificaciones del medio. Puede manifestarse desde respuestas celulares simples hasta conductas complejas en organismos pluricelulares."
     },
     {
       "pregunta": "¿Cuál de los siguientes científicos enunció el principio de que toda célula proviene de otra preexistente ('Omnis cellula e cellula')?",
-      "opciones": [
-        "Matthias Schleiden",
-        "Theodor Schwann",
-        "Rudolph Virchow",
-        "Carl Woese"
-      ],
+      "opciones": ["Matthias Schleiden", "Theodor Schwann", "Rudolph Virchow", "Carl Woese"],
       "correcta": "C",
       "explicacion": "Rudolph Virchow amplió la teoría celular postulando que toda célula surge de una célula preexistente, descartando la generación espontánea en las condiciones actuales."
     },
@@ -81,12 +56,7 @@
     },
     {
       "pregunta": "¿En qué año y quién propuso el sistema de clasificación biológica de los tres dominios (Bacteria, Archaea y Eukarya)?",
-      "opciones": [
-        "Whittaker en 1969",
-        "Haeckel en 1894",
-        "Carl Woese en 1990",
-        "E. Chatton en 1937"
-      ],
+      "opciones": ["Whittaker en 1969", "Haeckel en 1894", "Carl Woese en 1990", "E. Chatton en 1937"],
       "correcta": "C",
       "explicacion": "Carl Woese en 1990 propuso la división de los seres vivos en tres dominios superiores (Bacteria, Archaea y Eukarya) basándose en diferencias a nivel molecular."
     },
@@ -136,12 +106,7 @@
     },
     {
       "pregunta": "¿Qué nombre recibe la cubierta proteica estructural que rodea al ácido nucleico en una partícula viral simple o virus desnudo?",
-      "opciones": [
-        "Peptidoglicano",
-        "Envoltura lipídica",
-        "Cápside",
-        "Glicocálix"
-      ],
+      "opciones": ["Peptidoglicano", "Envoltura lipídica", "Cápside", "Glicocálix"],
       "correcta": "C",
       "explicacion": "La cápside es la cubierta formada por subunidades proteicas (capsómeros) que protege el genoma viral en un virión desnudo."
     },
@@ -158,12 +123,7 @@
     },
     {
       "pregunta": "En el ciclo lisogénico de un bacteriófago atenuado, el ADN viral integrado en el cromosoma de la bacteria hospedadora se denomina:",
-      "opciones": [
-        "Profago",
-        "Capsómero",
-        "Viroide",
-        "Plásmido R"
-      ],
+      "opciones": ["Profago", "Capsómero", "Viroide", "Plásmido R"],
       "correcta": "A",
       "explicacion": "Cuando un fago lisa su ciclo lisogénico, su ADN se integra de forma estable al cromosoma bacteriano, recibiendo la denominación de profago."
     },
@@ -202,12 +162,7 @@
     },
     {
       "pregunta": "El límite de resolución del microscopio óptico convencional es de aproximadamente:",
-      "opciones": [
-        "0,2 mm",
-        "0,2 µm (200 nm)",
-        "0,2 nm",
-        "2 Å"
-      ],
+      "opciones": ["0,2 mm", "0,2 µm (200 nm)", "0,2 nm", "2 Å"],
       "correcta": "B",
       "explicacion": "El microscopio óptico tiene un límite de resolución cercano a 0,2 micrómetros (200 nm), lo que le impide resolver detalles estructurales menores a ese tamaño."
     },
@@ -224,45 +179,25 @@
     },
     {
       "pregunta": "¿Qué nivel de organización biológica está constituido por el conjunto de comunidades que interactúan entre sí y con los factores abióticos del medio físico?",
-      "opciones": [
-        "Población",
-        "Bioma",
-        "Biósfera",
-        "Ecosistema"
-      ],
+      "opciones": ["Población", "Bioma", "Biósfera", "Ecosistema"],
       "correcta": "D",
       "explicacion": "El ecosistema resulta de la integración de los factores biológicos (comunidad) con los factores físicos y químicos del entorno con el que interactúan."
     },
     {
       "pregunta": "El incremento en el volumen de materia viva de un organismo por aumento del tamaño o del número de células se define como:",
-      "opciones": [
-        "Desarrollo",
-        "Anabolismo",
-        "Diferenciación",
-        "Crecimiento"
-      ],
+      "opciones": ["Desarrollo", "Anabolismo", "Diferenciación", "Crecimiento"],
       "correcta": "D",
       "explicacion": "El crecimiento corresponde al incremento de la masa y volumen corporal mediante hipertrofia (tamaño) o hiperplasia (número) celular."
     },
     {
       "pregunta": "¿Qué dos científicos alemanes (un botánico y un zoólogo) enunciaron los primeros postulados de la Teoría Celular a mediados del siglo XIX?",
-      "opciones": [
-        "Watson y Crick",
-        "Pasteur y Koch",
-        "Schleiden y Schwann",
-        "Woese y Whittaker"
-      ],
+      "opciones": ["Watson y Crick", "Pasteur y Koch", "Schleiden y Schwann", "Woese y Whittaker"],
       "correcta": "C",
       "explicacion": "El botánico Matthias Schleiden y el zoólogo Theodor Schwann postularon formalmente que las plantas y los animales están constituidos por células y sus productos."
     },
     {
       "pregunta": "Según la clasificación en cinco reinos de Whittaker (1969), ¿en cuál de ellos se agrupan los organismos procariotas?",
-      "opciones": [
-        "Protista",
-        "Fungi",
-        "Monera",
-        "Plantae"
-      ],
+      "opciones": ["Protista", "Fungi", "Monera", "Plantae"],
       "correcta": "C",
       "explicacion": "En el esquema de Whittaker, los seres unicelulares sin núcleo delimitado se agrupaban en el Reino Monera (o Procariota)."
     },

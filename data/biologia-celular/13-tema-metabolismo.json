@@ -1,5 +1,5 @@
 {
-  "materia": "Biologia",
+  "materia": "Biología 1",
   "tema": "Metabolismo",
   "preguntas": [
     {
@@ -136,12 +136,7 @@
     },
     {
       "pregunta": "Durante el ciclo del ATP, ¿qué proceso permite transformar ADP y fosfato inorgánico en ATP empleando energía de la respiración celular?",
-      "opciones": [
-        "Hidrólisis",
-        "Fosforilación",
-        "Deaminación",
-        "Glucogenólisis"
-      ],
+      "opciones": ["Hidrólisis", "Fosforilación", "Deaminación", "Glucogenólisis"],
       "correcta": "B",
       "explicacion": "El ADP se une a un grupo fosfato mediante una reacción de fosforilación que requiere energía (obtenida de la respiración celular) para regenerar ATP[cite: 198]."
     },
@@ -202,23 +197,13 @@
     },
     {
       "pregunta": "¿A qué grupo de compuestos químicos pertenecen las coenzimas transportadoras NAD+, NADP+ y FAD?",
-      "opciones": [
-        "Proteoglicanos complejos.",
-        "Dinucleótidos.",
-        "Ácidos grasos poliinsaturados.",
-        "Heteropolisacáridos lineales."
-      ],
+      "opciones": ["Proteoglicanos complejos.", "Dinucleótidos.", "Ácidos grasos poliinsaturados.", "Heteropolisacáridos lineales."],
       "correcta": "B",
       "explicacion": "Las coenzimas móviles encargadas del transporte de $H^+$ y $e^-$ (NAD+, NADP+ y FAD) son químicamente dinucleótidos[cite: 202]."
     },
     {
       "pregunta": "¿Cuál es la forma reducida completa de la coenzima Nicotinamín Adenín Dinucleótido (NAD+)?",
-      "opciones": [
-        "NADPH + H+",
-        "NADH + H+",
-        "FADH2",
-        "NADP+"
-      ],
+      "opciones": ["NADPH + H+", "NADH + H+", "FADH2", "NADP+"],
       "correcta": "B",
       "explicacion": "Al captar dos protones y dos electrones ($2H^+$ y $2e^-$), la forma reducida de $NAD^+$ se escribe $NADH + H^+$[cite: 203]."
     },
@@ -235,12 +220,7 @@
     },
     {
       "pregunta": "¿Qué estructura de la coenzima FAD actúa directamente como el aceptor de los átomos de hidrógeno?",
-      "opciones": [
-        "El anillo de flavina.",
-        "La base adenina.",
-        "El grupo fosfato terminal.",
-        "El azúcar ribosa."
-      ],
+      "opciones": ["El anillo de flavina.", "La base adenina.", "El grupo fosfato terminal.", "El azúcar ribosa."],
       "correcta": "A",
       "explicacion": "En la molécula de FAD (proveniente de la riboflavina), el anillo de flavina es la porción reactiva que actúa de aceptor para fijar los hidrógenos y convertirse en FADH2[cite: 205]."
     },

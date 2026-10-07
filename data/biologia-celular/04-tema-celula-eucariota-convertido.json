@@ -1,15 +1,10 @@
 {
-  "materia": "Biología",
+  "materia": "Biología 1",
   "tema": "Célula eucariota",
   "preguntas": [
     {
       "pregunta": "¿Qué esterol se encuentra intercalado entre los fosfolípidos de la membrana plasmática de células animales regulando su fluidez?",
-      "opciones": [
-        "Ergosterol",
-        "Estigmasterol",
-        "Colesterol",
-        "Quitina"
-      ],
+      "opciones": ["Ergosterol", "Estigmasterol", "Colesterol", "Quitina"],
       "correcta": "C",
       "explicacion": "El colesterol es un lípido exclusivo de membranas de células animales que modula la fluidez e impide la cristalización a bajas temperaturas."
     },
@@ -37,12 +32,7 @@
     },
     {
       "pregunta": "¿Qué organela del sistema de endomembranas participa activamente en la síntesis de lípidos y en la detoxificación celular?",
-      "opciones": [
-        "Retículo endoplasmático liso (REL)",
-        "Aparato de Golgi",
-        "Peroxisoma",
-        "Lisosoma"
-      ],
+      "opciones": ["Retículo endoplasmático liso (REL)", "Aparato de Golgi", "Peroxisoma", "Lisosoma"],
       "correcta": "A",
       "explicacion": "El REL consiste en cisternas tubulares sin ribosomas y se especializa en la biosíntesis de lípidos (fosfolípidos, esteroides) y detoxificación."
     },
@@ -81,12 +71,7 @@
     },
     {
       "pregunta": "¿Qué enzima principal poseen los peroxisomas para descomponer el peróxido de hidrógeno (H₂O₂), una sustancia tóxica resultante del metabolismo oxidativo?",
-      "opciones": [
-        "Rubisco",
-        "Histona H1",
-        "Flipasa",
-        "Catalasa"
-      ],
+      "opciones": ["Rubisco", "Histona H1", "Flipasa", "Catalasa"],
       "correcta": "D",
       "explicacion": "Los peroxisomas contienen catalasa, la cual descompone el tóxico peróxido de hidrógeno en agua y oxígeno libre ($H_2O_2 \\rightarrow H_2O + 1/2 O_2$)."
     },
@@ -114,12 +99,7 @@
     },
     {
       "pregunta": "¿Qué estructura celular animal está compuesta por 9 tripletes de microtúbulos con disposición 9+0 y actúa como centro organizador del huso mitótico?",
-      "opciones": [
-        "Centrosoma / Centríolo",
-        "Cilio o flagelo",
-        "Plasmodesmo",
-        "Cuerpo basal de cilio con estructura 9+2"
-      ],
+      "opciones": ["Centrosoma / Centríolo", "Cilio o flagelo", "Plasmodesmo", "Cuerpo basal de cilio con estructura 9+2"],
       "correcta": "A",
       "explicacion": "El centríolo está formado por 9 tripletes de microtúbulos perimetrales (patrón 9+0) y forma el centrosoma organizador de microtúbulos en células animales."
     },
@@ -136,67 +116,37 @@
     },
     {
       "pregunta": "¿En qué región del núcleo eucariota se lleva a cabo la síntesis del ARN ribosómico y el ensamblaje de las subunidades ribosómicas?",
-      "opciones": [
-        "Nucléolo",
-        "Poro nuclear",
-        "Lámina nuclear",
-        "Heterocromatina inducible"
-      ],
+      "opciones": ["Nucléolo", "Poro nuclear", "Lámina nuclear", "Heterocromatina inducible"],
       "correcta": "A",
       "explicacion": "El nucléolo es la zona nuclear densa donde se transcribe el ARNr y se ensamblan las subunidades ribosómicas."
     },
     {
       "pregunta": "La cromatina eucariota está constituida por la asociación del ADN con proteínas básicas denominadas:",
-      "opciones": [
-        "Tubulinas",
-        "Histonas",
-        "Pilinas",
-        "Porinas"
-      ],
+      "opciones": ["Tubulinas", "Histonas", "Pilinas", "Porinas"],
       "correcta": "B",
       "explicacion": "En la cromatina, el ADN está linealmente empaquetado enrollándose alrededor de octámeros de proteínas básicas llamadas histonas (formando nucleosomas)."
     },
     {
       "pregunta": "¿Qué polisacárido estructural es el componente principal de la pared celular en las células vegetales?",
-      "opciones": [
-        "Celulosa",
-        "Quitina",
-        "Peptidoglicano",
-        "Glucógeno"
-      ],
+      "opciones": ["Celulosa", "Quitina", "Peptidoglicano", "Glucógeno"],
       "correcta": "A",
       "explicacion": "La pared celular vegetal está compuesta por microfibrillas de celulosa embebidas en una matriz de otros polisacáridos."
     },
     {
       "pregunta": "Los canales citoplasmáticos que atraviesan la pared celular vegetal permitiendo la comunicación directa e intercambio entre células adyacentes son los:",
-      "opciones": [
-        "Plasmodesmos",
-        "Desmosomas",
-        "Mesosomas",
-        "Dictiosomas"
-      ],
+      "opciones": ["Plasmodesmos", "Desmosomas", "Mesosomas", "Dictiosomas"],
       "correcta": "A",
       "explicacion": "Las células vegetales se comunican a través de plasmodesmos, canales recubiertos de membrana que atraviesan las paredes celulares contiguas."
     },
     {
       "pregunta": "La gran vacuola central de la célula vegetal madura está delimitada por una membrana especializada denominada:",
-      "opciones": [
-        "Lámina media",
-        "Glucocálix",
-        "Tonoplasto",
-        "Cresta mitocondrial"
-      ],
+      "opciones": ["Lámina media", "Glucocálix", "Tonoplasto", "Cresta mitocondrial"],
       "correcta": "C",
       "explicacion": "La membrana selectiva que rodea la vacuola central en las células vegetales recibe el nombre de tonoplasto."
     },
     {
       "pregunta": "¿Qué tipo de plástidos acumulan almidón como reserva alimenticia en órganos vegetales de almacenamiento como tubérculos?",
-      "opciones": [
-        "Leucoplastos (o amiloplastos)",
-        "Cromoplastos",
-        "Cloroplastos",
-        "Peroxisomas"
-      ],
+      "opciones": ["Leucoplastos (o amiloplastos)", "Cromoplastos", "Cloroplastos", "Peroxisomas"],
       "correcta": "A",
       "explicacion": "Los leucoplastos (y específicamente los amiloplastos) son plástidos incoloros especializados en almacenar reservas alimenticias como el almidón."
     },
@@ -213,12 +163,7 @@
     },
     {
       "pregunta": "¿Qué coeficiente de sedimentación presentan los ribosomas citoplasmáticos en las células eucariotas?",
-      "opciones": [
-        "70S",
-        "50S",
-        "80S",
-        "100S"
-      ],
+      "opciones": ["70S", "50S", "80S", "100S"],
       "correcta": "C",
       "explicacion": "Los ribosomas del citosol de células eucariotas son de tipo 80S, formados por las subunidades 60S y 40S."
     },
@@ -235,23 +180,13 @@
     },
     {
       "pregunta": "Dentro del cloroplasto, los sacos membranosos aplanados donde se ubica la clorofila para captar la luz solar se denominan:",
-      "opciones": [
-        "Crestas",
-        "Dictiosomas",
-        "Estroma",
-        "Tilacoides"
-      ],
+      "opciones": ["Crestas", "Dictiosomas", "Estroma", "Tilacoides"],
       "correcta": "D",
       "explicacion": "Los tilacoides son vesículas membranosas aplanadas dentro del cloroplasto que albergan los fotosistemas con clorofila."
     },
     {
       "pregunta": "El medio acuoso del citoplasma con consistencia de gel donde se hallan disueltos iones, pequeñas moléculas y enzimas metabólicas se denomina:",
-      "opciones": [
-        "Estroma",
-        "Citosol o matriz citoplasmática",
-        "Líquido periplásmico",
-        "Nucleoplasma"
-      ],
+      "opciones": ["Estroma", "Citosol o matriz citoplasmática", "Líquido periplásmico", "Nucleoplasma"],
       "correcta": "B",
       "explicacion": "El citosol es la fracción fluida o gelificada del citoplasma en la que se suspenden las organelas y ocurren vías metabólicas solubles."
     },
@@ -268,12 +203,7 @@
     },
     {
       "pregunta": "El movimiento aleatorio de fosfolípidos de una monocapa a la opuesta en la membrana plasmática (flip-flop) requiere la acción de enzimas llamadas:",
-      "opciones": [
-        "Catalasas y oxidasas",
-        "Flipasas y escramblasas",
-        "Polimerasas y quinasas",
-        "Peptidasas y proteasas"
-      ],
+      "opciones": ["Catalasas y oxidasas", "Flipasas y escramblasas", "Polimerasas y quinasas", "Peptidasas y proteasas"],
       "correcta": "B",
       "explicacion": "El movimiento de flip-flop entre monocapas no es espontáneo y requiere catálisis enzimática mediante flipasas y escramblasas."
     }

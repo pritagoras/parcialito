@@ -1,5 +1,5 @@
 {
-  "materia": "Biología",
+  "materia": "Biología 1",
   "tema": "Bacteriófagos y Ciclos de Infección",
   "preguntas": [
     {
@@ -114,12 +114,7 @@
     },
     {
       "pregunta": "¿Qué denominación reciben los bacteriófagos capaces de realizar tanto el ciclo lítico como el ciclo lisogénico?",
-      "opciones": [
-        "Fagos viroides.",
-        "Virus citocídicos estrictos.",
-        "Fagos atemperados o atenuados.",
-        "Retrovirus bacterianos."
-      ],
+      "opciones": ["Fagos viroides.", "Virus citocídicos estrictos.", "Fagos atemperados o atenuados.", "Retrovirus bacterianos."],
       "correcta": "C",
       "explicacion": "Los fagos que pueden optar por integrar su genoma en forma de profago en lugar de lisar de inmediato a la célula se llaman fagos atemperados o atenuados."
     },
@@ -158,12 +153,7 @@
     },
     {
       "pregunta": "¿Qué término técnico describe el proceso específico mediante el cual el genoma viral se acopla al ADN cromosómico bacteriano?",
-      "opciones": [
-        "Brotación.",
-        "Descapsidación.",
-        "Integración.",
-        "Adsorción."
-      ],
+      "opciones": ["Brotación.", "Descapsidación.", "Integración.", "Adsorción."],
       "correcta": "C",
       "explicacion": "La inserción del genoma del fago dentro de la secuencia nucleotídica del cromosoma celular se denomina integración."
     },

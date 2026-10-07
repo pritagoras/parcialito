@@ -1,5 +1,5 @@
 {
-  "materia": "Biología",
+  "materia": "Biología 1",
   "tema": "Lípidos",
   "preguntas": [
     {
@@ -81,23 +81,13 @@
     },
     {
       "pregunta": "¿Qué estructura supramolecular esférica forman libremente los ácidos grasos al dispersarse en un medio acuoso?",
-      "opciones": [
-        "Bicapa lipídica plana",
-        "Micela",
-        "Vaina de mielina",
-        "Lipoproteína LDL"
-      ],
+      "opciones": ["Bicapa lipídica plana", "Micela", "Vaina de mielina", "Lipoproteína LDL"],
       "correcta": "B",
       "explicacion": "Las moléculas cónicas de ácidos grasos en agua agrupan sus colas apolares hacia el centro protegido e interior de la esfera, dejando sus cabezas polares hacia el agua exterior (micela)."
     },
     {
       "pregunta": "¿Qué enlace covalente une al alcohol glicerol con los tres ácidos grasos en la molécula de un triglicérido?",
-      "opciones": [
-        "Enlace peptídico",
-        "Enlace éster",
-        "Puente fosfodiéster",
-        "Enlace N-glicosídico"
-      ],
+      "opciones": ["Enlace peptídico", "Enlace éster", "Puente fosfodiéster", "Enlace N-glicosídico"],
       "correcta": "B",
       "explicacion": "Los triglicéridos son triésteres formados mediante la reacción de esterificación (condensación) entre los tres grupos hidroxilo del glicerol y los carboxilos de tres ácidos grasos."
     },
@@ -224,12 +214,7 @@
     },
     {
       "pregunta": "¿Cuáles son las lipoproteínas plasmáticas conocidas por ser especialmente ricas en colesterol?",
-      "opciones": [
-        "Quilomicrones (QM)",
-        "VLDL (muy baja densidad)",
-        "LDL (baja densidad) y HDL (alta densidad)",
-        "Triglicéridos libres"
-      ],
+      "opciones": ["Quilomicrones (QM)", "VLDL (muy baja densidad)", "LDL (baja densidad) y HDL (alta densidad)", "Triglicéridos libres"],
       "correcta": "C",
       "explicacion": "Dentro de la clasificación por densidad, las fracciones LDL y HDL son las principales transportadoras y depositarias de colesterol en la circulación."
     },
@@ -279,12 +264,7 @@
     },
     {
       "pregunta": "Según la reacción de degradación hidrolítica: $Triglicérido + 2 H_2O \rightarrow 2 Ácidos\\ Grasos + ...$, ¿qué producto intermedio incompleto se obtiene?",
-      "opciones": [
-        "Glicerol libre",
-        "Monoacilglicerol",
-        "Esfingosina",
-        "Colesterol libre"
-      ],
+      "opciones": ["Glicerol libre", "Monoacilglicerol", "Esfingosina", "Colesterol libre"],
       "correcta": "B",
       "explicacion": "Un triglicérido al perder 2 ácidos grasos por la hidrólisis de dos enlaces éster conserva un solo ácido graso unido al glicerol (monoacilglicerol)."
     },

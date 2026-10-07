@@ -1,5 +1,5 @@
 {
-  "materia": "Biologia",
+  "materia": "Biología 1",
   "tema": "Respiración celular",
   "preguntas": [
     {
@@ -15,12 +15,7 @@
     },
     {
       "pregunta": "¿Cuál es la primera etapa común que comparten tanto la respiración aeróbica como la respiración anaeróbica/fermentación?",
-      "opciones": [
-        "Ciclo de Krebs",
-        "Glucólisis",
-        "Descarboxilación oxidativa",
-        "Fosforilación oxidativa"
-      ],
+      "opciones": ["Ciclo de Krebs", "Glucólisis", "Descarboxilación oxidativa", "Fosforilación oxidativa"],
       "correcta": "B",
       "explicacion": "Tanto la respiración aeróbica como la anaeróbica/fermentación comparten como primera etapa común a la glucólisis[cite: 259]. Las demás etapas ocurren solo en la vía aeróbica[cite: 262, 295]."
     },
@@ -48,12 +43,7 @@
     },
     {
       "pregunta": "¿Dónde se llevan a cabo la descarboxilación oxidativa del piruvato y el ciclo de Krebs en las células procariotas?",
-      "opciones": [
-        "En el citosol.",
-        "En la membrana plasmática.",
-        "En la matriz mitocondrial.",
-        "En las crestas membranales."
-      ],
+      "opciones": ["En el citosol.", "En la membrana plasmática.", "En la matriz mitocondrial.", "En las crestas membranales."],
       "correcta": "A",
       "explicacion": "En las células procariotas, al no poseer mitocondrias, la descarboxilación oxidativa y el ciclo de Krebs suceden en el citosol[cite: 262]."
     },
@@ -92,23 +82,13 @@
     },
     {
       "pregunta": "Durante la primera etapa de inversión energética de la glucólisis, ¿cuántas moléculas de ATP se consumen por cada molécula de glucosa?",
-      "opciones": [
-        "1 ATP en el paso 5.",
-        "2 ATP en los pasos 1 y 3.",
-        "4 ATP en los pasos 6 y 9.",
-        "38 ATP en la fase de escisión."
-      ],
+      "opciones": ["1 ATP en el paso 5.", "2 ATP en los pasos 1 y 3.", "4 ATP en los pasos 6 y 9.", "38 ATP en la fase de escisión."],
       "correcta": "B",
       "explicacion": "En la primera etapa de la glucólisis se invierten 2 ATP, específicamente en los pasos 1 y 3[cite: 264, 270]."
     },
     {
       "pregunta": "¿Cuál es la ganancia neta de moléculas de ATP y de NADH al finalizar la glucólisis por cada molécula de glucosa degradada?",
-      "opciones": [
-        "4 ATP netos y 2 NADH.",
-        "2 ATP netos y 2 NADH.",
-        "2 ATP netos y 0 NADH.",
-        "38 ATP netos y 6 NADH."
-      ],
+      "opciones": ["4 ATP netos y 2 NADH.", "2 ATP netos y 2 NADH.", "2 ATP netos y 0 NADH.", "38 ATP netos y 6 NADH."],
       "correcta": "B",
       "explicacion": "Aunque se generan 4 ATP, al restar los 2 ATP invertidos inicialmente, la ganancia neta es de 2 ATP y 2 NADH por glucosa[cite: 270]."
     },
@@ -235,23 +215,13 @@
     },
     {
       "pregunta": "¿Cuáles son los productos finales de la fermentación láctica en células animales y bacterias lácticas?",
-      "opciones": [
-        "Etanol, CO2 y NAD+.",
-        "Lactato y NAD+.",
-        "Piruvato, agua y ATP sintasa.",
-        "Acetil-CoA y urea."
-      ],
+      "opciones": ["Etanol, CO2 y NAD+.", "Lactato y NAD+.", "Piruvato, agua y ATP sintasa.", "Acetil-CoA y urea."],
       "correcta": "B",
       "explicacion": "En la fermentación láctica, el piruvato se reduce a lactato al recibir los hidrógenos del NADH, el cual se oxida a NAD+[cite: 297, 298]."
     },
     {
       "pregunta": "¿Qué compuestos se producen en la fermentación alcohólica llevada a cabo por levaduras y células vegetales a partir del piruvato?",
-      "opciones": [
-        "Lactato y CO2.",
-        "Etanol, CO2 y NAD+.",
-        "Ácido cítrico y FAD.",
-        "Urea, agua y glucógeno."
-      ],
+      "opciones": ["Lactato y CO2.", "Etanol, CO2 y NAD+.", "Ácido cítrico y FAD.", "Urea, agua y glucógeno."],
       "correcta": "B",
       "explicacion": "En la fermentación alcohólica, el piruvato da lugar a acetaldehído y CO2, y luego el acetaldehído se reduce a etanol al reoxidar el NADH a NAD+[cite: 299, 300]."
     },

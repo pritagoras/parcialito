@@ -1,5 +1,5 @@
 {
-  "materia": "Biología",
+  "materia": "Biología 1",
   "tema": "Química general y agua",
   "preguntas": [
     {
@@ -15,12 +15,7 @@
     },
     {
       "pregunta": "¿Cuál es la cantidad máxima de electrones que puede albergar el segundo nivel energético (n = 2) de un átomo?",
-      "opciones": [
-        "2 electrones.",
-        "8 electrones.",
-        "18 electrones.",
-        "32 electrones."
-      ],
+      "opciones": ["2 electrones.", "8 electrones.", "18 electrones.", "32 electrones."],
       "correcta": "B",
       "explicacion": "Aplicando la fórmula 2 · n², para n = 2 el cálculo es 2 · (2)² = 8 electrones como capacidad máxima para dicho nivel."
     },
@@ -114,12 +109,7 @@
     },
     {
       "pregunta": "¿Cuántos puentes de hidrógeno puede establecer, como máximo, una sola molécula de agua con sus vecinas en una disposición tetraédrica?",
-      "opciones": [
-        "2 puentes de hidrógeno.",
-        "6 puentes de hidrógeno.",
-        "4 puentes de hidrógeno.",
-        "8 puentes de hidrógeno."
-      ],
+      "opciones": ["2 puentes de hidrógeno.", "6 puentes de hidrógeno.", "4 puentes de hidrógeno.", "8 puentes de hidrógeno."],
       "correcta": "C",
       "explicacion": "Cada molécula de agua posee cuatro sitios de interacción (dos densidades positivas en los H y dos pares libres en el O), pudiendo formar hasta 4 puentes de H."
     },
@@ -180,12 +170,7 @@
     },
     {
       "pregunta": "En el agua pura a 25 °C, la concentración de protones [H⁺] es de 10⁻⁷ M. ¿Cuál es su valor de pH?",
-      "opciones": [
-        "pH = 7",
-        "pH = 14",
-        "pH = 1",
-        "pH = 0"
-      ],
+      "opciones": ["pH = 7", "pH = 14", "pH = 1", "pH = 0"],
       "correcta": "A",
       "explicacion": "El pH se define como el logaritmo negativo de la concentración de protones: pH = -log(10⁻⁷) = 7."
     },

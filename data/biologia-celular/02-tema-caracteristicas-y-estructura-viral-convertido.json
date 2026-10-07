@@ -1,5 +1,5 @@
 {
-  "materia": "Biología",
+  "materia": "Biología 1",
   "tema": "Características Generales y Estructura Viral",
   "preguntas": [
     {
@@ -37,12 +37,7 @@
     },
     {
       "pregunta": "¿Qué nombre reciben las unidades estructurales compuestas por proteínas que integran la cápside viral?",
-      "opciones": [
-        "Peptidoglicanos.",
-        "LPS.",
-        "Espículas.",
-        "Capsómeros."
-      ],
+      "opciones": ["Peptidoglicanos.", "LPS.", "Espículas.", "Capsómeros."],
       "correcta": "D",
       "explicacion": "La cápside es una cubierta proteica formada por subunidades repetitivas denominadas capsómeros."
     },

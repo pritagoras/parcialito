@@ -1,5 +1,5 @@
 {
-  "materia": "Biologia",
+  "materia": "Biología 1",
   "tema": "Citoesqueleto y Membrana Extracelular",
   "preguntas": [
     {
@@ -114,34 +114,19 @@
     },
     {
       "pregunta": "¿Qué nucleótido hidroliza la actina G para polimerizarse y transformarse en actina F?",
-      "opciones": [
-        "GTP",
-        "ATP",
-        "CTP",
-        "AMPc"
-      ],
+      "opciones": ["GTP", "ATP", "CTP", "AMPc"],
       "correcta": "B",
       "explicacion": "Los monómeros de actina G requieren ATP durante el proceso de nucleación y polimerización para formar el filamento helicoidal de actina F[cite: 163]."
     },
     {
       "pregunta": "¿Qué estructuras celulares de la migración celular están constituidas por redes o haces de microfilamentos de actina?",
-      "opciones": [
-        "Cilias y flagelos.",
-        "Lamelipodios y filopodios.",
-        "Desmotúbulos y plasmodesmos.",
-        "Centríolos y axonemas."
-      ],
+      "opciones": ["Cilias y flagelos.", "Lamelipodios y filopodios.", "Desmotúbulos y plasmodesmos.", "Centríolos y axonemas."],
       "correcta": "B",
       "explicacion": "El movimiento ameboide y la migración celular dependen del reordenamiento de los microfilamentos de actina que forman proyecciones llamadas lamelipodios (redes) y filopodios (haces)[cite: 164]."
     },
     {
       "pregunta": "¿Qué proteína motora interactúa con los filamentos de actina permitiendo la contracción celular y la formación del anillo contráctil en la división celular?",
-      "opciones": [
-        "Dineína flagelar",
-        "Miosina II",
-        "Kinesina citoplasmática",
-        "Conexina 43"
-      ],
+      "opciones": ["Dineína flagelar", "Miosina II", "Kinesina citoplasmática", "Conexina 43"],
       "correcta": "B",
       "explicacion": "La contracción celular y el deslizamiento de los filamentos de actina (así como el anillo contráctil de la citocinesis) se llevan a cabo mediante la interacción con miosina II[cite: 164, 165]."
     },
@@ -169,12 +154,7 @@
     },
     {
       "pregunta": "¿Qué tipo de filamento intermedio se localiza en la cara interna de la envoltura nuclear constituyendo la lámina nuclear?",
-      "opciones": [
-        "Tonofilamentos de queratina",
-        "Laminofilamentos",
-        "Neurofilamentos",
-        "Filamentos de vimentina"
-      ],
+      "opciones": ["Tonofilamentos de queratina", "Laminofilamentos", "Neurofilamentos", "Filamentos de vimentina"],
       "correcta": "B",
       "explicacion": "Los laminofilamentos forman la lámina nuclear en la superficie interna de la envoltura nuclear, siendo los únicos filamentos intermedios que no se ubican en el citoplasma[cite: 169]."
     },
@@ -202,23 +182,13 @@
     },
     {
       "pregunta": "¿Qué drogas antineoplásicas actúan sobre los microtúbulos del huso mitótico impidiendo la división celular de forma similar a la colchicina?",
-      "opciones": [
-        "Citocalasina B y Faloidina.",
-        "Vinblastina y vincristina.",
-        "Laminina y Fibronectina.",
-        "Ocludina y Claudina."
-      ],
+      "opciones": ["Citocalasina B y Faloidina.", "Vinblastina y vincristina.", "Laminina y Fibronectina.", "Ocludina y Claudina."],
       "correcta": "B",
       "explicacion": "La vinblastina y la vincristina actúan sobre las tubulinas impidiendo la polimerización de forma selectiva en los microtúbulos del huso mitótico, deteniendo la división celular[cite: 167]."
     },
     {
       "pregunta": "En las células gliales del sistema nervioso, ¿qué clase de filamento intermedio actúa como soporte estructural?",
-      "opciones": [
-        "Neurofilamentos",
-        "Filamentos gliales",
-        "Queratinas epiteliales",
-        "Desmina"
-      ],
+      "opciones": ["Neurofilamentos", "Filamentos gliales", "Queratinas epiteliales", "Desmina"],
       "correcta": "B",
       "explicacion": "Las células gliales contienen filamentos gliales como su clase específica de filamento intermedio de soporte[cite: 169]."
     },
@@ -257,12 +227,7 @@
     },
     {
       "pregunta": "¿Qué tipo de colágeno se encuentra localizado característicamente en la lámina basal de las células epiteliales?",
-      "opciones": [
-        "Colágeno Tipo I",
-        "Colágeno Tipo IV",
-        "Colágeno Tipo II",
-        "Colágeno Tipo III"
-      ],
+      "opciones": ["Colágeno Tipo I", "Colágeno Tipo IV", "Colágeno Tipo II", "Colágeno Tipo III"],
       "correcta": "B",
       "explicacion": "El material especifica que el colágeno Tipo IV está presente en la membrana o lámina basal, a diferencia de los tipos I, II y III presentes en dermis, huesos, tendones o cartílago[cite: 173]."
     },
@@ -279,23 +244,13 @@
     },
     {
       "pregunta": "¿Cuáles son las principales proteínas adhesivas mencionadas en la matriz extracelular?",
-      "opciones": [
-        "Tubulina y Actina G.",
-        "Fibronectina y laminina.",
-        "Desmoplacina y placoglobina.",
-        "Ocludina y conexina."
-      ],
+      "opciones": ["Tubulina y Actina G.", "Fibronectina y laminina.", "Desmoplacina y placoglobina.", "Ocludina y conexina."],
       "correcta": "B",
       "explicacion": "Las proteínas fibrosas de la MEC incluyen a las estructurales (colágenos) y a las proteínas adhesivas (fibronectina y laminina)[cite: 171]."
     },
     {
       "pregunta": "¿Qué tipo celular se encarga de sintetizar y secretar la mayor parte de los componentes de la MEC en el tejido conjuntivo?",
-      "opciones": [
-        "Fibroblasto",
-        "Célula caliciforme",
-        "Célula cebada",
-        "Macrófago"
-      ],
+      "opciones": ["Fibroblasto", "Célula caliciforme", "Célula cebada", "Macrófago"],
       "correcta": "A",
       "explicacion": "El tejido conjuntivo subyacente a los epitelios está compuesto mayoritariamente por matriz extracelular producida y secretada por los fibroblastos[cite: 175]."
     },
@@ -312,12 +267,7 @@
     },
     {
       "pregunta": "¿Qué proteína transmembrana específica forma parte de las uniones estrechas?",
-      "opciones": [
-        "Ocludina",
-        "Cadherina",
-        "Conexina",
-        "Integrina"
-      ],
+      "opciones": ["Ocludina", "Cadherina", "Conexina", "Integrina"],
       "correcta": "A",
       "explicacion": "La ocludina (junto con las claudinas) es la proteína transmembrana encargada de sellar la vía paracelular en las uniones estrechas[cite: 177]."
     },
@@ -345,12 +295,7 @@
     },
     {
       "pregunta": "¿Qué proteína transmembrana media la unión entre la célula y la matriz extracelular en los hemidesmosomas?",
-      "opciones": [
-        "Cadherina",
-        "Integrina",
-        "Conexina",
-        "Ocludina"
-      ],
+      "opciones": ["Cadherina", "Integrina", "Conexina", "Ocludina"],
       "correcta": "B",
       "explicacion": "A diferencia de los desmosomas que usan cadherinas entre células, los hemidesmosomas emplean integrinas como proteínas transmembrana para fijar la célula a la matriz extracelular[cite: 179]."
     },
@@ -411,23 +356,13 @@
     },
     {
       "pregunta": "¿Qué estructura de comunicación intercelular es propia de las células vegetales dada la ausencia de uniones de hendidura?",
-      "opciones": [
-        "Hemidesmosoma",
-        "Plasmodesmo",
-        "Axonema",
-        "Unión adherente"
-      ],
+      "opciones": ["Hemidesmosoma", "Plasmodesmo", "Axonema", "Unión adherente"],
       "correcta": "B",
       "explicacion": "Las células vegetales carecen de las uniones comunicantes animales y emplean los plasmodesmos (canales que atraviesan la pared celular) para conectar directamente sus citoplasmas[cite: 183]."
     },
     {
       "pregunta": "¿Qué elemento del retículo endoplasmático liso atraviesa el centro del canal de un plasmodesmo?",
-      "opciones": [
-        "Axonema central",
-        "Desmotúbulo",
-        "Conexón",
-        "Protofibrilla"
-      ],
+      "opciones": ["Axonema central", "Desmotúbulo", "Conexón", "Protofibrilla"],
       "correcta": "B",
       "explicacion": "El plasmodesmo contiene en su centro un túbulo derivado del retículo endoplasmático liso llamado desmotúbulo[cite: 183]."
     },

@@ -1,5 +1,5 @@
 {
-  "materia": "Biologia",
+  "materia": "Biología 1",
   "tema": "Enzimas",
   "preguntas": [
     {
@@ -77,7 +77,7 @@
         "Disminuyen el delta G global de la reacción sin alterar la barrera de energía de activación."
       ],
       "correcta": "B",
-      "explicacion": "Las enzimas actúan reduciendo el plus de energía necesario para iniciar la reacción (energía de activación), pero no modifican el cambio de energía libre global ($\u0394G = G_f - G_0$)."
+      "explicacion": "Las enzimas actúan reduciendo el plus de energía necesario para iniciar la reacción (energía de activación), pero no modifican el cambio de energía libre global ($ΔG = G_f - G_0$)."
     },
     {
       "pregunta": "Entre las propiedades generales de las enzimas se afirma que son 'termolábiles'. ¿A qué se debe esta propiedad?",

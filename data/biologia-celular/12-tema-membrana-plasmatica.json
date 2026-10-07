@@ -1,5 +1,5 @@
 {
-  "materia": "Biologia",
+  "materia": "Biología 1",
   "tema": "Membrana Plasmatica",
   "preguntas": [
     {
@@ -26,12 +26,7 @@
     },
     {
       "pregunta": "¿Qué combinación de características en las colas de ácidos grasos incrementa la fluidez de la membrana plasmática?",
-      "opciones": [
-        "Colas largas y saturadas.",
-        "Colas cortas e insaturadas.",
-        "Colas largas e insaturadas.",
-        "Colas cortas y saturadas."
-      ],
+      "opciones": ["Colas largas y saturadas.", "Colas cortas e insaturadas.", "Colas largas e insaturadas.", "Colas cortas y saturadas."],
       "correcta": "B",
       "explicacion": "Una mayor fluidez en la membrana se logra cuando las colas de los ácidos grasos son cortas e insaturadas. Por el contrario, las colas largas y saturadas disminuyen la fluidez de la bicapa."
     },

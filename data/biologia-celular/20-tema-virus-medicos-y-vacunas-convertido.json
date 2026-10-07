@@ -1,5 +1,5 @@
 {
-  "materia": "Biología",
+  "materia": "Biología 1",
   "tema": "Virus de Importancia Médica y Vacunas",
   "preguntas": [
     {
@@ -15,12 +15,7 @@
     },
     {
       "pregunta": "¿A qué molécula receptora específica de los linfocitos T de la inmunidad se une la glucoproteína gp120 del HIV?",
-      "opciones": [
-        "Receptor ACE-2.",
-        "Receptor CD4.",
-        "Proteasa TMPRSS2.",
-        "Porina de membrana externa."
-      ],
+      "opciones": ["Receptor ACE-2.", "Receptor CD4.", "Proteasa TMPRSS2.", "Porina de membrana externa."],
       "correcta": "B",
       "explicacion": "La gp120 de la envoltura del HIV se fija específicamente al receptor CD4 presente en la superficie de los linfocitos T colaboradores (T4)."
     },
@@ -81,23 +76,13 @@
     },
     {
       "pregunta": "¿Qué proteína de superficie del coronavirus SARS-CoV-2 interactúa con el receptor celular ACE-2 para infectar las células?",
-      "opciones": [
-        "Proteína M (membrana).",
-        "Proteína N (nucleocápside).",
-        "Proteína E (envoltura).",
-        "Proteína S (espícula o 'spike')."
-      ],
+      "opciones": ["Proteína M (membrana).", "Proteína N (nucleocápside).", "Proteína E (envoltura).", "Proteína S (espícula o 'spike')."],
       "correcta": "D",
       "explicacion": "La glucoproteína S (spike o espícula) que sobresale de la envoltura del SARS-CoV-2 es la encargada del reconocimiento del receptor ACE-2 en la célula."
     },
     {
       "pregunta": "¿Qué enzima de la célula hospedadora cumple un rol indispensable para permitir la fusión entre la envoltura de SARS-CoV-2 y la membrana celular?",
-      "opciones": [
-        "Proteasa TMPRSS2.",
-        "Retrotranscriptasa inversa.",
-        "Integrasa viral.",
-        "Lisozima bacteriana."
-      ],
+      "opciones": ["Proteasa TMPRSS2.", "Retrotranscriptasa inversa.", "Integrasa viral.", "Lisozima bacteriana."],
       "correcta": "A",
       "explicacion": "La proteasa de membrana celular TMPRSS2 realiza un procesamiento en la proteína espiga S permitiendo la fusión efectiva de membranas."
     },
