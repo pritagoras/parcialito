@@ -442,17 +442,6 @@
       "explicacion": "La afirmación B es falsa porque la telomerasa es una ADN polimerasa dirigida por ARN (una transcriptasa inversa) que sintetiza repeticiones de ADN usando una plantilla interna de ARN."
     },
     {
-      "pregunta": "Un investigador inyectó un cultivo celular con suero anti-lámina (o anti-laminina) y observó:",
-      "opciones": [
-        "Que las células no pudieron dividirse",
-        "Que las células luego de la mitosis no pudieron organizar su envoltura nuclear",
-        "Que los complejos laminina/antilamina se acumularon dentro del núcleo",
-        "Que la envoltura nuclear formada resultó frágil e inestable"
-      ],
-      "correcta": "B",
-      "explicacion": "Las láminas nucleares (A, B y C) componen la lámina nuclear indispensable para dar soporte a la envoltura nuclear y dirigir su polimerización y reensamblado al finalizar la mitosis (telofase). Al inhibirlas o bloquearlas, la envoltura nuclear no puede organizarse adecuadamente tras la división celular."
-    },
-    {
       "pregunta": "¿Cuál es la diferencia conceptual precisa entre los términos \"cariotipo\" y \"cariograma\"?",
       "opciones": [
         "El cariotipo es la representación gráfica u ordenada de los cromosomas, mientras que el cariograma es la constitución genómica real del individuo.",
@@ -506,17 +495,6 @@
       ],
       "correcta": "B",
       "explicacion": "Las alteraciones numéricas varían la cantidad total de cromosomas (ej. aneuploidías como 45 o 47 cromosomas), mientras que las estructurales alteran la arquitectura del cromosoma (pérdida, ganancia o reordenamiento de fragmentos de ADN, como deleciones, duplicaciones, inversiones o translocaciones)."
-    },
-    {
-      "pregunta": "¿Qué ocurre en una translocación cromosómica de tipo robertsoniana?",
-      "opciones": [
-        "Se pierde el extremo telomérico de un cromosoma metacéntrico.",
-        "Se produce la fusión de los brazos largos de dos cromosomas acrocéntricos con la pérdida o reducción de sus brazos cortos.",
-        "Se invierte un segmento del brazo p que contiene al centrómero.",
-        "Se duplica la secuencia repetitiva 5'-TTAGGG-3' en todos los cromosomas somáticos."
-      ],
-      "correcta": "B",
-      "explicacion": "La translocación robertsoniana involucra a dos cromosomas acrocéntricos (ej. 13, 14, 15, 21, 22) que se rompen cerca del centrómero, fusionándose sus brazos largos (q) en un único cromosoma de gran tamaño, perdiéndose habitualmente los brazos cortos (p) con ADN nucleolar no esencial."
     }
   ]
 }
