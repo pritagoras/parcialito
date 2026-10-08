@@ -495,6 +495,18 @@
       ],
       "correcta": "B",
       "explicacion": "Las alteraciones numéricas varían la cantidad total de cromosomas (ej. aneuploidías como 45 o 47 cromosomas), mientras que las estructurales alteran la arquitectura del cromosoma (pérdida, ganancia o reordenamiento de fragmentos de ADN, como deleciones, duplicaciones, inversiones o translocaciones)."
+    },
+    {
+      "pregunta": "¿Qué secuencia repetitiva característica de desoxirribonucleótidos en dirección 5' 3' conforma la estructura del ADN telomérico en los cromosomas humanos?",
+      "opciones": ["5'-AAUCCC-3'", "5'-TTAGGG-3'", "5'-CCCTAA-3'", "5'-AATCCC-3'"],
+      "correcta": "B",
+      "explicacion": "Los telómeros forman parte del ADN, por lo que sus cadenas están compuestas por desoxirribonucleótidos con las bases Timina (T), Adenina (A), Guanina (G) y Citosina (C) (nunca Uracilo)."
+    },
+    {
+      "pregunta": "¿Qué secuencia de ribonucleótidos en dirección 3' a 5' está presente en el molde de ARN integrado en la estructura de la enzima telomerasa humana?",
+      "opciones": ["3'-AAUCCC-5'", "3'-TTAGGG-5'", "3'-AATCCC-5'", "3'-UAAGGG-5'"],
+      "correcta": "A",
+      "explicacion": "La telomerasa es una ribonucleoproteína (una enzima compleja formada por proteína y ARN). El molde interno que lleva consigo es una molécula de ARN (TERC), por lo que contiene Uracilo (U) en lugar de Timina."
     }
   ]
 }
