@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-08T00:42:01Z",
+  "generado": "2026-10-08T02:23:22Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -153,6 +153,12 @@
           "id": "semio/01-conferencia2",
           "nombre": "Conferencia 2",
           "archivo": "data/semio/01-conferencia2.json",
+          "preguntas": 25
+        },
+        {
+          "id": "semio/02-enunciacion-encarnada",
+          "nombre": "Enunciación encarnada",
+          "archivo": "data/semio/02-enunciacion-encarnada.json",
           "preguntas": 25
         }
       ]

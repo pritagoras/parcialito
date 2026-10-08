@@ -1,0 +1,281 @@
+{
+  "materia": "Semiología 2",
+  "tema": "Enunciación encarnada",
+  "preguntas": [
+    {
+      "pregunta": "¿Cuál es la premisa central de la semiótica del cuerpo en relación con la producción de sentido?",
+      "opciones": [
+        "El cuerpo es la condición radical de la significación y la interfaz de relación con el mundo.",
+        "El cuerpo funciona como un contenedor físico o hardware independiente de la cognición.",
+        "El cuerpo constituye únicamente el soporte referencial externo de las estructuras lingüísticas.",
+        "El cuerpo actúa como un filtro pasivo que traduce signos preexistentes en imágenes mentales."
+      ],
+      "correcta": "A",
+      "explicacion": "La semiótica del cuerpo sostiene que la corporeidad no es un mero contenedor o hardware, sino la condición radical que permite y define el modo en que habitamos el mundo y generamos sentido. Esta perspectiva se apoya en la fenomenología al concebir al cuerpo como la interfaz entre la percepción y la articulación de la significación."
+    },
+    {
+      "pregunta": "¿Por qué las primeras teorías semióticas de corte estructuralista excluyeron al cuerpo en sus modelos?",
+      "opciones": [
+        "Porque buscaban adscribir a un modelo de objetivación basado en estructuras inmanentes y abstractas.",
+        "Porque concebían que la significación dependía exclusivamente de la experiencia biológica del sujeto.",
+        "Porque consideraban que el cuerpo era una entidad fija incapaz de manifestar variaciones dinámicas.",
+        "Porque priorizaban el análisis sociosemiótico de las prácticas culturales por sobre el estudio del lenguaje."
+      ],
+      "correcta": "A",
+      "explicacion": "El estructuralismo ignoró la corporalidad para mantener una epistemología de objetivación rigurosa, construyendo objetos teóricos inmanentes y abstractos definidos por relaciones formales internas. Al centrarse en modelos deductivos y sistemas a priori, el cuerpo y su dimensión sensible empírica quedaron fuera del esquema."
+    },
+    {
+      "pregunta": "Según Ferdinand de Saussure, ¿cómo se define el valor de los elementos dentro del sistema de la lengua?",
+      "opciones": [
+        "Por sus relaciones diferenciales y puramente negativas con respecto a los demás signos del sistema.",
+        "Por la sustancia fónica o conceptual que precede a la instauración del orden lingüístico.",
+        "Por la correspondencia directa entre la experiencia del sujeto y el referente del mundo externo.",
+        "Por la interpretación que realiza un sujeto a través de la mediación de un interpretante."
+      ],
+      "correcta": "A",
+      "explicacion": "En la teoría saussuriana, la lengua es un sistema de relaciones internas donde no existen términos positivos sino únicamente diferencias conceptuales y fónicas. El valor de un signo es diferencial y puramente negativo, ya que se define en oposición a los demás elementos y no por propiedades sustanciales ni por la experiencia empírica."
+    },
+    {
+      "pregunta": "¿Qué crítica formula Patrizia Violi a la hipótesis de la lengua como sistema de signos diferenciales?",
+      "opciones": [
+        "Que no explica cómo un sujeto comprende el significado de un término sin recurrir a la experiencia.",
+        "Que reduce la lingüística a un álgebra puramente empírica basada en la fisiología del hablante.",
+        "Que equipara erróneamente la estructura de la lengua con la sintaxis sensoriomotora del cuerpo.",
+        "Que exige la presencia ineludible de un referente ontológico externo para validar el signo."
+      ],
+      "correcta": "A",
+      "explicacion": "Violi señala que el enfoque saussuriano omite la experiencia del sujeto, ya que conocer las relaciones internas y diferenciales entre términos no basta para entender su significado ni para comunicarse. Para comprender un signo es indispensable una relación con la experiencia vivida y la mediación de un interpretante."
+    },
+    {
+      "pregunta": "¿Cómo caracteriza Louis Hjelmslev a la teoría lingüística dentro del paradigma estructuralista?",
+      "opciones": [
+        "Como un sistema deductivo e independiente de cualquier dato o aplicación empírica.",
+        "Como un método analítico derivado de la observación directa de la interacción corporal.",
+        "Como un modelo descriptivo enfocado en los aspectos pragmáticos del uso discursivo.",
+        "Como una gramática de la sustancia que prioriza el contenido sensible del mensaje."
+      ],
+      "correcta": "A",
+      "explicacion": "Hjelmslev concibe la lingüística como un álgebra de la lengua y como un sistema puramente deductivo que prescinde de la experiencia. En su marco conceptual, la teoría no incluye postulados sobre datos empíricos ni sobre la aplicación práctica del lenguaje, centrándose exclusivamente en la forma abstracta."
+    },
+    {
+      "pregunta": "Según Jacques Fontanille, ¿cuál fue el principal elemento que omitió la tradición saussuriana y hjelmsleviana al estudiar el signo?",
+      "opciones": [
+        "El operador que garantiza y realiza la unión entre el plano de la expresión y el del contenido.",
+        "La existencia de una estructura inmanente que organice las oposiciones formales del lenguaje.",
+        "La presuposición recíproca de carácter lógico que vincula las dos caras de una entidad lingüística.",
+        "La relación arbitraria que se establece a posteriori entre las unidades del sistema comunicativo."
+      ],
+      "correcta": "A",
+      "explicacion": "Fontanille sostiene que al tratar la relación entre significante y significado como una superposición lógica a posteriori, el estructuralismo pasó por alto la figura del operador. Al omitir quién o qué realiza esa unión, las teorías convencionales dejaron de lado la enunciación y la corporalidad del sujeto."
+    },
+    {
+      "pregunta": "En la semiótica greimasiana inicial, ¿de qué manera se conceptualizaba al sujeto del recorrido generativo?",
+      "opciones": [
+        "Como una realización semántica definida mediante una sintaxis lógico-formal de conjunción o disyunción.",
+        "Como un actante encarnado cuya presencia física modulaba la articulación de las pasiones.",
+        "Como un cuerpo sintiente que establecía un continuo estésico con el entorno fenomenológico.",
+        "Como un participante activo caracterizado por sus competencias polisensoriales y rítmicas."
+      ],
+      "correcta": "A",
+      "explicacion": "En las primeras etapas de la semiótica generativa de Greimas, el sujeto carecía de cuerpo y se definía mediante formulaciones lógicas de conjunción o disyunción con respecto a los objetos. Se trataba de un simulacro formal dentro de una sintaxis narrativa abstracta."
+    },
+    {
+      "pregunta": "¿Por qué la semiótica de las pasiones desarrollada por Greimas y Fontanille no logró consolidar plenamente una semiótica del cuerpo?",
+      "opciones": [
+        "Porque mantuvo instrumentos metodológicos de epistemología lógica y formal para analizar el afecto.",
+        "Porque rechazó la noción de sintaxis modal para centrarse de forma exclusiva en la lingüística saussuriana.",
+        "Porque excluyó por completo la dimensión tímica y patémica del análisis de los textos narrativos.",
+        "Porque sustituyó la noción de recorrido generativo por un modelo estrictamente fenomenológico."
+      ],
+      "correcta": "A",
+      "explicacion": "A pesar de dar un primer paso al incorporar la afectividad y las pasiones a la semiótica, el proyecto quedó inconcluso debido a que continuó empleando herramientas formalistas y discretas (como el análisis lexical y el recorrido generativo) para estudiar fenómenos que son de naturaleza continua y sensible."
+    },
+    {
+      "pregunta": "¿Qué aspecto de la semiótica interpretativa de Charles Sanders Peirce facilita la integración de la percepción y el cuerpo?",
+      "opciones": [
+        "El lugar prioritario que le otorga al objeto como motor y resorte que inicia la semiosis.",
+        "La afirmación de que el signo existe de manera independiente de toda realidad fenomenológica.",
+        "El rechazo a cualquier tipo de iconismo o representación no verbal previa al juicio cognoscitivo.",
+        "La propuesta de que el significado depende en exclusiva de oposiciones formales intralingüísticas."
+      ],
+      "correcta": "A",
+      "explicacion": "A diferencia del estructuralismo, Peirce otorga una prioridad ontológica al objeto como el disparador del proceso semiótico. Al originarse en la percepción del objeto y en los juicios perceptivos, la semiosis peirciana queda ligada desde sus bases a la experiencia y a la corporalidad."
+    },
+    {
+      "pregunta": "En el marco de la semiótica de Umberto Eco, ¿a qué interrogante responde la arista del referente como *terminus a quo*?",
+      "opciones": [
+        "A la pregunta sobre qué es aquello que motiva o nos hace hablar.",
+        "A la indagación sobre las reglas puramente sintácticas del código lingüístico.",
+        "A la determinación del objeto preciso al cual nos referimos al proferir un discurso.",
+        "A la definición del valor de un signo dentro de un sistema abstracto e inmanente."
+      ],
+      "correcta": "A",
+      "explicacion": "En *Kant y el ornitorrinco*, Eco distingue dos aristas del problema del referente: el *terminus ad quem* (¿a qué cosa nos referimos?) y el *terminus a quo* (¿qué nos hace hablar?). Esta última dimensión remite a la experiencia primaria y al estímulo del objeto que desencadena el proceso significante."
+    },
+    {
+      "pregunta": "Según la perspectiva de Patrizia Violi, ¿cuál es la relación entre la dimensión sensible y la dimensión inteligible en la semiosis?",
+      "opciones": [
+        "Una diferencia de grados continuos donde el sentido no emerge de a saltos cualitativos.",
+        "Una separación neta y cronológica donde el cuerpo precede siempre al pensamiento formal.",
+        "Una oposición categórica entre un sustrato biológico irreflexivo y un código abstracto.",
+        "Una subordinación jerárquica de la sintaxis sensoriomotora respecto de la sintaxis discursiva."
+      ],
+      "correcta": "A",
+      "explicacion": "Para Violi, lo sensible y lo inteligible están estrechamente articulados desde el inicio. La diferencia entre el cuerpo (sensible) y el pensamiento (inteligible) no implica rupturas ni fases cronológicas independientes, sino una graduación continua de progresiva especificidad y complejidad."
+    },
+    {
+      "pregunta": "En la semiótica de las pasiones de 1991, ¿cómo se define la noción de presencia?",
+      "opciones": [
+        "Como la coincidencia en el orden de la espacialización y la concomitancia en la temporalización.",
+        "Como la inclusión del objeto únicamente dentro de las categorías de la sintaxis narrativa superficial.",
+        "Como un concepto indeterminado que debe ser eliminado por el riesgo de implicancias metafísicas.",
+        "Como la suma de las propiedades formales y posicionales de un actante dentro del cuadrado semiótico."
+      ],
+      "correcta": "A",
+      "explicacion": "En *Semiótica de las pasiones* (Greimas y Fontanille), la presencia supera la indefinición de las teorías anteriores y se conceptualiza como la coincidencia en el espacio y la concomitancia en el tiempo, constituyendo el soporte perceptivo sobre el cual se aprehende el sentido."
+    },
+    {
+      "pregunta": "¿En qué consiste el objeto de estudio de la semiótica tensiva formulada por Fontanille y Zilberberg?",
+      "opciones": [
+        "En el análisis de los fenómenos del discurso según su carácter dinámico, gradual y afectivo.",
+        "En la clasificación lógica de las unidades discretas que componen la lengua como sistema.",
+        "En la descripción de la sintaxis narrativa a través de las conversiones del cuadrado semiótico.",
+        "En el estudio de los signos lingüísticos aislados de su campo espacio-temporal de presencia."
+      ],
+      "correcta": "A",
+      "explicacion": "La semiótica tensiva aborda los procesos discursivos a partir de sus variaciones continuas, intensidades y gradaciones afectivas. Se centra en la enunciación en acto y en el campo de presencia para explicar cómo las modulación de la sensibilidad afectan la significación."
+    },
+    {
+      "pregunta": "Según Herman Parret, ¿qué elemento caracteriza a la epifanía de la presencia en el acontecimiento sensible?",
+      "opciones": [
+        "La irrupción de una materia informe y un excedente que excede la captura de las formas.",
+        "La estructuración de un modelo lógico deductivo que estabiliza el significado del evento.",
+        "La reducción del fenómeno estético a una sintaxis narrativa puramente intralingüística.",
+        "La manifestación de una forma pura desprovista de cualquier tipo de cualidad sensorial."
+      ],
+      "correcta": "A",
+      "explicacion": "Parret propone una semio-estética en la que la presencia es vista como una epifanía transitoria y frágil, vinculada a una materia informe (el *Il y a*). Para este autor, la presencia entraña un excedente sensible que resiste a la reducción formal y lógica."
+    },
+    {
+      "pregunta": "En la teoría de la enunciación de Jean-Claude Coquet, ¿cómo se define la instancia del 'no-sujeto'?",
+      "opciones": [
+        "Como una instancia anclada en el cuerpo que realiza una predicación irreflexiva sin aseverar.",
+        "Como el actante que asume la autoafirmación del sí mismo mediante juicios de valor explícitos.",
+        "Como el equivalente exacto del destinante en el modelo de la semiótica narrativa tradicional.",
+        "Como un observador formal que juzga y asevera los enunciados a partir de la lógica modal."
+      ],
+      "correcta": "A",
+      "explicacion": "Coquet distingue entre el actante no-sujeto y el sujeto. El no-sujeto es el 'cuerpo agente y sintiente' que predica de forma irreflexiva y sin aseverar, donde el 'yo piel' precede a la evaluación racional del 'yo pienso' propia del sujeto."
+    },
+    {
+      "pregunta": "Dentro del modelo de Jacques Fontanille, ¿a qué refiere la instancia conceptual del 'Mí-carne'?",
+      "opciones": [
+        "Al cuerpo protoactancial caracterizado por la pura sensibilidad y las tensiones del campo de presencia.",
+        "A la figura semiótica construida cuya individualidad ha sido estabilizada por la memoria narrativa.",
+        "Al yo lingüístico abstracto que organiza de forma lógica los roles actanciales del discurso.",
+        "A la superficie de inscripción donde se estructuran únicamente las huellas culturales deícticas."
+      ],
+      "correcta": "A",
+      "explicacion": "El Mí-carne designa al cuerpo en su estado protoactancial, siendo pura sensibilidad y centro de referencia sometido a presiones y ritmos en el campo de presencia. Es el sustrato corpóreo a partir del cual progresivamente se construye el cuerpo propio o Sí-mismo."
+    },
+    {
+      "pregunta": "¿Cómo se produce la transición del 'Mí-carne' al 'cuerpo propio' (Sí mismo) según Fontanille?",
+      "opciones": [
+        "Mediante la semiotización de la carne a través de la acumulación de memorias de saturación y remanencia.",
+        "A través de un salto cualitativo e instantáneo desde la biología hacia un sistema de signos abstracto.",
+        "Por medio de la eliminación de las afecciones sensoriales para adoptar un código intralingüístico.",
+        "A partir del juicio reflexivo del sujeto prescindiendo de las interacciones con otros cuerpos."
+      ],
+      "correcta": "A",
+      "explicacion": "El cuerpo propio o Sí-mismo se constituye dinámicamente cuando las vivencias y sensaciones del Mí-carne sufren un proceso de semiotización. Los límites de este cuerpo propio se van moldeando gracias a la acumulación en la memoria de las marcas dejadas por las interacciones sensoriales."
+    },
+    {
+      "pregunta": "En la teoría del cuerpo encarnado, ¿qué función cumple la disposición fórica del cuerpo respecto al mundo?",
+      "opciones": [
+        "Establece valencias eufóricas o disfóricas que determinan la orientación de la experiencia sensible.",
+        "Garantiza la traducción objetiva y neutra de las cualidades físicas del objeto percibido.",
+        "Sustituye a los juicios perceptivos primarios por esquemas puramente categorizables y lógicos.",
+        "Determina de forma fija las oposiciones formales del sistema lingüístico de un hablante."
+      ],
+      "correcta": "A",
+      "explicacion": "La disposición fórica implica la inclinación o atracción/repulsión afectiva del cuerpo frente al entorno. Esta orientación (eufórica o disfórica) asigna valores a la percepción y configura el modo en que el cuerpo se posiciona y experimenta el campo de presencia."
+    },
+    {
+      "pregunta": "En relación con el estudio de la memoria en la semiótica, ¿qué rasgo caracteriza al concepto de 'traza'?",
+      "opciones": [
+        "Posee una doble valencia de espacialidad como lugar de memoria y de temporalidad como recorrido.",
+        "Consiste exclusivamente en una imagen mental abstracta sin vinculación con el soporte físico.",
+        "Representa una copia idéntica y especular del objeto ausente en la conciencia del sujeto.",
+        "Funciona como una categoría lógica pura desprovista de función o valor semiótico."
+      ],
+      "correcta": "A",
+      "explicacion": "La traza o huella en la semiótica no es una simple copia, sino un efecto-signo que porta una doble dimensión: una espacial (el lugar donde queda estampada la marca) y una temporal (el trazado o devenir del recuerdo en el tiempo)."
+    },
+    {
+      "pregunta": "Según Fontanille, ¿cuál es el movimiento típico que se asocia a la figura del 'cuerpo-envoltura'?",
+      "opciones": [
+        "El movimiento de deformación.",
+        "El movimiento de moción íntima.",
+        "El movimiento de agitación.",
+        "El movimiento de desplazamiento."
+      ],
+      "correcta": "A",
+      "explicacion": "Dentro de las cuatro figuras icónicas de Fontanille, al cuerpo-envoltura le corresponde el movimiento de deformación. Este cuerpo actúa como piel y superficie de contacto donde las interacciones externas imprimen marcas y huellas sucesivas."
+    },
+    {
+      "pregunta": "¿Qué tipo de memoria somática se vincula de manera directa con la figura del 'cuerpo-carne'?",
+      "opciones": [
+        "La memoria de la traza propiamente tal, conservada en el interior como memoria muscular o de acción.",
+        "La memoria acumulativa de inscripción basada en la red de marcajes de la superficie externa.",
+        "La memoria deíctica que actúa como punto de referencia para organizar el espacio y el tiempo.",
+        "La memoria de la diégesis o del teatro interior que articula la actoralización y la localización."
+      ],
+      "correcta": "A",
+      "explicacion": "Al cuerpo-carne le corresponde la memoria de la traza, la cual se conserva internamente de forma análoga a la memoria muscular. Esta memoria interna permite sintonizar afectiva y sensoriamente con el entorno mediante un ajuste hipoicónico."
+    },
+    {
+      "pregunta": "¿Cuál es la función principal de la memoria deíctica correspondiente a la figura del 'cuerpo-punto'?",
+      "opciones": [
+        "Servir como pivote posicional para organizar las coordenadas de espacio y tiempo mediante prospección y retrospección.",
+        "Soportar el impacto de los contactos externos acumulando una red sintagmática de deformaciones.",
+        "Registrar los estados emocionales íntimos generados por el contagio intercorporal de la carne.",
+        "Organizar la representación dramática de la diégesis delimitando los roles de 'quién' y 'dónde'."
+      ],
+      "correcta": "A",
+      "explicacion": "El cuerpo-punto se define por el movimiento de desplazamiento y constituye el centro deíctico. Su memoria asociada utiliza la prospección y la retrospección para coordinar las referencias espaciotemporales a partir de la posición del Mí."
+    },
+    {
+      "pregunta": "Dentro del modelo de memorias somáticas de Fontanille, ¿qué caracteriza a la memoria de la diégesis ligada al 'cuerpo-cavidad'?",
+      "opciones": [
+        "La capacidad de estructurar un 'teatro interior' que define la actoralización y la localización.",
+        "La capacidad de reaccionar de forma inmediata mediante un ajuste hipoicónico frente a otra carne.",
+        "La conservación de marcas superficiales dejadas por el bombardeo de interacciones del entorno.",
+        "La generación de un orden sintagmático puramente espacial enfocado en el desplazamiento corporal."
+      ],
+      "correcta": "A",
+      "explicacion": "Al cuerpo-cavidad (cuyo movimiento es la agitación) le corresponde la memoria narrativa o de la diégesis. Esta actúa como un teatro interior que organiza los elementos de la escena discursiva, especificando quiénes actúan (actoralización) y en qué coordenadas ocurre (localización)."
+    },
+    {
+      "pregunta": "En el contexto de la interacción entre corporalidades, ¿cómo define María José Contreras el fenómeno del 'contagio intercorporal'?",
+      "opciones": [
+        "Como una reacción hipoicónica de sintonización sensorial, afectiva y tímica entre diferentes cuerpos.",
+        "Como un intercambio de signos lingüísticos abstractos codificados mediante normas convencionales.",
+        "Como la deducción lógica que realiza un observador distante sobre las pasiones del otro.",
+        "Como una deformación mecánica de la envoltura corporal sin impacto en la dimensión emotiva."
+      ],
+      "correcta": "A",
+      "explicacion": "El contagio intercorporal se basa en la capacidad del cuerpo-carne para ajustar su estructura sensible a la de otro cuerpo. Se trata de una respuesta hipoicónica e inmediata que produce una resonancia o sintonía a nivel afectivo, tímico y sensorial."
+    },
+    {
+      "pregunta": "¿De qué manera contribuye la semiótica del cuerpo al ámbito de la creación y la práctica artística?",
+      "opciones": [
+        "Proporcionando herramientas para analizar la estesia y la experiencia encarnada en las prácticas performativas.",
+        "Ofreciendo esquemas narrativos cerrados que eliminan la variabilidad intrínseca de las obras de arte.",
+        "Sustituyendo el uso de la corporalidad en escena por modelos deductivos de representación simbólica.",
+        "Demostrando que el valor estético de una obra depende exclusivamente de su estructura inmanente."
+      ],
+      "correcta": "A",
+      "explicacion": "La semiótica del cuerpo ofrece instrumentos teóricos y metodológicos para comprender la estesia, la polisensorialidad y la dimensión afectiva. Esto resulta clave en las artes performativas y en la dirección artística, ya que permite articular estrategias estéticas basadas en la presencia, el contagio corporal y la experiencia sensible."
+    }
+  ]
+}
