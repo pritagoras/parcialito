@@ -507,6 +507,76 @@
       "opciones": ["3'-AAUCCC-5'", "3'-TTAGGG-5'", "3'-AATCCC-5'", "3'-UAAGGG-5'"],
       "correcta": "A",
       "explicacion": "La telomerasa es una ribonucleoproteína (una enzima compleja formada por proteína y ARN). El molde interno que lleva consigo es una molécula de ARN (TERC), por lo que contiene Uracilo (U) en lugar de Timina."
+    },
+    {
+      "pregunta": "¿Cuántas moléculas de ADN contiene el núcleo de una célula diploide con 2n = 8 durante la fase G1?",
+      "opciones": ["4 moléculas", "8 moléculas", "16 moléculas", "32 moléculas"],
+      "correcta": "B",
+      "explicacion": "En la etapa G1 los cromosomas no han duplicado su material genético, por lo que cada cromosoma poseerá una sola molécula de ADN, haciendo un total de 8 moléculas. El error común radica en asumir que la replicación ya ocurrió y duplicar el número de moléculas a 16."
+    },
+    {
+      "pregunta": "¿Cuántas moléculas de ADN se encuentran en el núcleo de una célula 2n = 6 durante el estadio G2?",
+      "opciones": ["3 moléculas", "6 moléculas", "12 moléculas", "24 moléculas"],
+      "correcta": "C",
+      "explicacion": "Durante la etapa G2, tras haber completado la fase S de duplicación del ADN, cada uno de los 6 cromosomas cuenta con dos cromátidas hermanas, sumando un total de 12 moléculas de ADN. Un error muy frecuente es olvidar la replicación del ADN y responder que conserva 6 moléculas como en G1."
+    },
+    {
+      "pregunta": "¿Cuántos pares de cromosomas homólogos presenta una célula somática diploide cuya dotación es 2n = 16?",
+      "opciones": ["8 pares", "16 pares", "32 pares", "4 pares"],
+      "correcta": "A",
+      "explicacion": "Al ser una célula diploide (2n = 16), el número total de cromosomas se divide entre dos para determinar el número de pares homólogos, resultando en 8 pares. El fallo habitual consiste en confundir la cantidad total de cromosomas con la cantidad de pares homólogos existentes."
+    },
+    {
+      "pregunta": "¿Cuál es la función principal que se lleva a cabo dentro del nucléolo durante la interfase?",
+      "opciones": [
+        "La replicación completa del ADN nuclear",
+        "La transcripción y ensamblado de subunidades ribosómicas",
+        "La síntesis de fosfolípidos para la envoltura nuclear",
+        "La traducción de proteínas histónicas"
+      ],
+      "correcta": "B",
+      "explicacion": "El nucléolo es la región especializada donde se transcribe el ARNr y se ensamblan las subunidades ribosómicas junto a proteínas traídas del citoplasma. La confusión usual proviene de asociarlo erróneamente con la duplicación del ADN o con la traducción de proteínas, procesos que ocurren en otras zonas o compartimentos celulares."
+    },
+    {
+      "pregunta": "Si una célula haploide de un organismo posee n = 5, ¿cuántas moléculas de ADN habrá en el núcleo de sus células diploides (2n) en la fase G2?",
+      "opciones": ["5 moléculas", "10 moléculas", "20 moléculas", "40 moléculas"],
+      "correcta": "C",
+      "explicacion": "Si el número haploide es n = 5, la célula diploide tendrá 2n = 10 cromosomas. Dado que en G2 el ADN ya se ha duplicado durante la fase S, habrá el doble de moléculas respecto al número de cromosomas, sumando 20 moléculas. Es muy frecuente confundir el valor haploide con el diploide o no tomar en cuenta el duplicado posterior a la fase S."
+    },
+    {
+      "pregunta": "¿Qué proceso clave del ciclo celular ocurre específicamente durante la fase S de la interfase?",
+      "opciones": [
+        "El desmantelamiento de la envoltura nuclear",
+        "La duplicación del material genético y de los centríolos",
+        "La condensación máxima de la cromatina en cromosomas visibles",
+        "El crecimiento celular y la intensa síntesis proteica basal"
+      ],
+      "correcta": "B",
+      "explicacion": "En la fase S (síntesis) del ciclo celular se produce la replicación del ADN y la duplicación de los centrosomas o centríolos. Suele cometerse el error de asociar la fase S con el crecimiento celular general, el cual es característico de las etapas G1 y G2."
+    },
+    {
+      "pregunta": "Una célula con 2n = 12 se encuentra al final de la fase G1. ¿Cuántas cromátidas totales componen su material genético en este estadio?",
+      "opciones": ["6 cromátidas", "12 cromátidas", "24 cromátidas", "48 cromátidas"],
+      "correcta": "B",
+      "explicacion": "En G1 los cromosomas no han sido duplicados, por lo que cada uno consta de una única cromátida simple, sumando un total de 12 cromátidas. Un distractor recurrente surge al asumir erróneamente que cada cromosoma siempre posee dos cromátidas hermanas antes de la fase S."
+    },
+    {
+      "pregunta": "¿Cuántos pares de cromosomas homólogos se observan en una célula gamética (gameto) de una especie con 2n = 10?",
+      "opciones": ["0 pares", "5 pares", "10 pares", "2.5 pares"],
+      "correcta": "A",
+      "explicacion": "Los gametos son células haploides (n = 5), lo que significa que poseen un único juego cromosómico sin pares de homólogos presentes. El error clásico reside en dividir 10 entre 2 y suponer que posee 5 pares, obviando la definición fundamental de haploidía."
+    },
+    {
+      "pregunta": "¿En cuál de las siguientes etapas del ciclo celular la célula sintetiza activamente proteínas prealistándose para la división, pero con el ADN ya duplicado?",
+      "opciones": ["Fase G1", "Fase S", "Fase G2", "Fase G0"],
+      "correcta": "C",
+      "explicacion": "La fase G2 transcurre entre la síntesis de ADN (fase S) y la mitosis, caracterizándose por la verificación de la replicación y la preparación final para la división. La confusión usual es marcar G1, donde también hay intensa síntesis de proteínas, pero con el ADN todavía sin duplicar."
+    },
+    {
+      "pregunta": "Una especie vegetal presenta células diploides con 2n = 4. ¿Cuántas moléculas de ADN se contabilizan en el núcleo durante la fase G1 y durante la fase G2, respectivamente?",
+      "opciones": ["4 en G1 y 4 en G2", "4 en G1 y 8 en G2", "8 en G1 y 8 en G2", "2 en G1 y 4 en G2"],
+      "correcta": "B",
+      "explicacion": "En G1 la célula posee 4 cromosomas de una sola molécula de ADN cada uno (4 en total), mientras que tras la replicación en la fase S, en G2 cuenta con 4 cromosomas de dos moléculas cada uno (8 en total). El error habitual radica en pensar que la cantidad de moléculas de ADN permanece constante durante todas las fases de la interfase."
     }
   ]
 }
