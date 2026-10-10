@@ -1,0 +1,416 @@
+{
+  "materia": "Biología 2",
+  "tema": "Transcripción",
+  "preguntas": [
+    {
+      "pregunta": "¿Qué enzima es la encargada de la transcripción de los genes que codifican para proteínas en eucariotas?",
+      "opciones": ["ARN polimerasa I.", "ARN polimerasa II.", "ARN polimerasa III.", "Topoisomerasa I."],
+      "correcta": "B",
+      "explicacion": "La ARN polimerasa II transcribe los genes codificadores de proteínas y la mayoría de los genes para ARN pequeño nuclear (ARNpn). La ARN polimerasa I sintetiza el pre-ARNr 45S y la III sintetiza ARNt, ARNr 5S, ARNpc y el resto de los ARNpn. La topoisomerasa alivia la tensión generada al separar las hebras de ADN."
+    },
+    {
+      "pregunta": "Durante la elongación, ¿en qué dirección lee la ARN polimerasa a la hebra molde?",
+      "opciones": [
+        "En dirección 5' a 3'.",
+        "En dirección 3' a 5'.",
+        "En dirección 5' a 3' o 3' a 5', dependiendo del gen.",
+        "Del promotor hacia la región corriente arriba."
+      ],
+      "correcta": "B",
+      "explicacion": "La ARN polimerasa se sitúa sobre la cadena molde de ADN y la recorre en dirección 3' a 5' o \"río abajo\". Mientras que la síntesis del nuevo ARN ocurre en dirección antiparalela, es decir, de 5' a 3'."
+    },
+    {
+      "pregunta": "¿Qué nombre recibe la hebra de ADN que posee la misma secuencia que el ARN transcripto, sustituyendo las timinas por uracilos?",
+      "opciones": ["Hebra molde.", "Hebra negativa.", "Hebra codificante.", "Hebra no codificante."],
+      "correcta": "C",
+      "explicacion": "La hebra codificante (también llamada positiva o antimolde) tiene la misma secuencia que el ARN transcripto, con T en lugar de U. La polimerasa utiliza como guía a su complementaria, la hebra molde (negativa o no codificante)."
+    },
+    {
+      "pregunta": "¿Cuál es la función del proceso de \"capping\" o adición de la caperuza en el extremo 5' del ARNm inmaduro?",
+      "opciones": [
+        "Dirigir a la ARN polimerasa hacia el promotor.",
+        "Actuar como señal para el corte y poliadenilación en el extremo 3'.",
+        "Impedir la degradación del ARNm inmaduro por nucleasas.",
+        "Eliminar las secuencias intrónicas del transcripto primario."
+      ],
+      "correcta": "C",
+      "explicacion": "El capping, que consiste en agregar una 7-metilguanosina, protege al ARNm naciente de la degradación por nucleasas y fosfatasas nucleares. La eliminación de intrones ocurre durante el splicing y la señal de corte se asocia a la poliadenilación."
+    },
+    {
+      "pregunta": "¿Qué ocurre con el factor sigma durante la transcripción en procariotas?",
+      "opciones": [
+        "Se mantiene unido a la ARN polimerasa hasta la fase de terminación.",
+        "Ayuda a reconocer el promotor y se disocia al avanzar la elongación.",
+        "Reconoce el sitio de poliadenilación y corta el transcripto primario.",
+        "Se une al promotor eucariota reclutando a la polimerasa II."
+      ],
+      "correcta": "B",
+      "explicacion": "En bacterias, la subunidad sigma se asocia a la ARN polimerasa para dirigirla al promotor e iniciar el proceso. Una vez que comienza la elongación, el factor sigma se disocia de la enzima central."
+    },
+    {
+      "pregunta": "En las células eucariotas, ¿dónde se transcriben los genes que codifican para los precursores de ARN ribosómico 45S?",
+      "opciones": [
+        "En el retículo endoplasmático rugoso.",
+        "En el nucleoplasma, asociados a la envoltura nuclear.",
+        "En el nucléolo, región formada por cromatina de ciertos cromosomas.",
+        "En el citoplasma, donde el ADN eucariota está libre."
+      ],
+      "correcta": "C",
+      "explicacion": "La ARN polimerasa I transcribe el pre-ARNr 45S en el nucléolo, que es un aglomerado de fibras de cromatina con genes de ARN ribosómico (ADNr). Los ribosomas se terminan de ensamblar en el citoplasma, pero la transcripción de su ARN principal ocurre dentro de esta región nuclear."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes afirmaciones describe mejor al ARNm procariota?",
+      "opciones": [
+        "Presenta exones e intrones que requieren ser procesados por el espliceosoma.",
+        "Experimenta adición cotranscripcional del cap 5' y poliadenilación postranscripcional.",
+        "Suele ser monocistrónico, codificando la información de una sola proteína.",
+        "Muchos son policistrónicos, codificando información para varias proteínas distintas."
+      ],
+      "correcta": "D",
+      "explicacion": "En procariontes, el ARNm madura sin intrones ni modificaciones en sus extremos (carece de capping y poliadenilación). Muchos de estos mensajeros son policistrónicos, conteniendo información para sintetizar múltiples proteínas."
+    },
+    {
+      "pregunta": "¿Qué función cumple el espliceosoma durante el procesamiento del ARNm en eucariotas?",
+      "opciones": [
+        "Agrega la cola de adenosinas en el extremo 3' del transcripto.",
+        "Sintetiza la hebra de ARN utilizando el ADN eucariota como molde.",
+        "Elimina las secuencias intrónicas y une los exones del ARNm.",
+        "Transporta el pre-ARNm maduro a través del complejo de poro nuclear."
+      ],
+      "correcta": "C",
+      "explicacion": "El espliceosoma, formado por pequeñas ribonucleoproteínas nucleares (snRNP), coordina el corte de los intrones y el empalme de los exones. Este proceso de splicing produce un ARNm maduro."
+    },
+    {
+      "pregunta": "¿Qué componentes conforman los monómeros que la ARN polimerasa enlaza mediante puentes fosfodiéster en la cadena en crecimiento?",
+      "opciones": [
+        "Desoxirribonucleótidos trifosfato.",
+        "Aminoácidos que son traducidos secuencialmente.",
+        "Nucleótidos monofosfato derivados de sustratos trifosfatados.",
+        "Ribonucleótidos asociados a histonas del nucleosoma."
+      ],
+      "correcta": "C",
+      "explicacion": "El sustrato para la síntesis son ribonucleótidos trifosfatados (NTPs), pero al enlazarse en la cadena polimérica liberan pirofosfato, quedando como nucleótidos monofosfato. Las histonas son proteínas que empaquetan el ADN, no el ARN."
+    },
+    {
+      "pregunta": "Si la hebra molde de ADN es 3'-TCGATA-5', ¿cuál será la secuencia del ARN transcripto?",
+      "opciones": ["5'-TCGATA-3'", "5'-AGCUA-3'", "5'-AGCUA U-3'", "5'-AGCUAU-3'"],
+      "correcta": "D",
+      "explicacion": "La transcripción produce una hebra de ARN complementaria y antiparalela a la hebra molde. Leyendo 3'-TCGATA-5' y reemplazando con las bases complementarias de ARN (A por U, T por A, C por G, G por C), obtenemos 5'-AGCUAU-3'."
+    },
+    {
+      "pregunta": "¿Qué función cumple el promotor en el proceso de transcripción?",
+      "opciones": [
+        "Es la secuencia de ARN maduro que se unirá al ribosoma.",
+        "Es el sitio de terminación donde la ARN polimerasa se separa del molde.",
+        "Es una secuencia del ADN que atrae a la ARN polimerasa para iniciar la síntesis.",
+        "Es la enzima que rompe los puentes de hidrógeno formando la burbuja."
+      ],
+      "correcta": "C",
+      "explicacion": "El promotor es una secuencia de bases de ADN a la cual se une la ARN polimerasa, con la ayuda de factores de transcripción, para iniciar la transcripción de un gen. El promotor en sí no se transcribe como parte del mensaje principal."
+    },
+    {
+      "pregunta": "En las células procariotas, los procesos de transcripción y traducción:",
+      "opciones": [
+        "Ocurren en compartimentos distintos debido a la envoltura nuclear.",
+        "Están separados en el tiempo porque el ARN debe madurar en el núcleo.",
+        "No están separados en el tiempo ni en el espacio y pueden ocurrir simultáneamente.",
+        "Se realizan mediante tres ARN polimerasas diferentes que exportan el transcripto."
+      ],
+      "correcta": "C",
+      "explicacion": "Las células procariotas carecen de núcleo, por lo que el ADN está en el citosol y la traducción del mensajero puede comenzar mientras aún se está transcribiendo. En eucariotas, la transcripción nuclear y la traducción citoplasmática están separadas."
+    },
+    {
+      "pregunta": "¿Qué ocurre en la iniciación de la transcripción en células eucariotas?",
+      "opciones": [
+        "El factor sigma reconoce la señal AAUAAA y corta el transcripto.",
+        "La poli-A polimerasa abre la doble hélice para formar el espliceosoma.",
+        "Factores de transcripción y la ARN polimerasa se unen al promotor y generan una burbuja.",
+        "La ARN polimerasa II incorpora la 7-metilguanosina antes de encontrar el gen."
+      ],
+      "correcta": "C",
+      "explicacion": "Durante la iniciación, la maquinaria conformada por factores de transcripción y ARN polimerasa reconoce el promotor, se posiciona y abre localmente el ADN, formando la burbuja de transcripción. El factor sigma es exclusivo de procariotas."
+    },
+    {
+      "pregunta": "¿Cuál es la función de la poliadenilación del pre-ARNm?",
+      "opciones": [
+        "Unir los exones de manera secuencial en el citoplasma.",
+        "Marcar el sitio de inicio de la transcripción (+1).",
+        "Proteger el extremo 5' y permitir que la enzima avance río abajo.",
+        "Proteger el extremo 3' de la degradación y ayudar a la salida del ARN del núcleo."
+      ],
+      "correcta": "D",
+      "explicacion": "La poliadenilación agrega una cola poli-A de adenosinas en el extremo 3' del transcripto, brindándole protección contra la degradación y facilitando su transporte hacia el citoplasma. La protección del extremo 5' está a cargo del cap o caperuza."
+    },
+    {
+      "pregunta": "¿Cómo se alivia la supertorsión o tensión originada al formarse la burbuja de transcripción?",
+      "opciones": [
+        "A través de la hidrólisis de pirofosfato por parte de la pirofosfatasa.",
+        "Mediante la acción de una enzima topoisomerasa I.",
+        "Por la fosforilación de las histonas presentes en la heterocromatina.",
+        "A través de la actividad endonucleasa de las partículas snRNP."
+      ],
+      "correcta": "B",
+      "explicacion": "La separación de las cadenas para formar la burbuja de transcripción genera superenrollamiento hacia el extremo 5' del molde. La topoisomerasa I es la enzima que corrige esta tensión torsional para que la polimerasa avance correctamente."
+    },
+    {
+      "pregunta": "¿Qué características tiene la heterocromatina con respecto a la transcripción?",
+      "opciones": [
+        "Se encuentra laxa y aloja a los genes transcripcionalmente activos.",
+        "Se encuentra en el nucléolo y aloja los genes de los ARNr.",
+        "Es cromatina densa y condensada, generalmente transcripcionalmente inactiva.",
+        "Es el estado del ADN en células procariotas desprovisto de histonas."
+      ],
+      "correcta": "C",
+      "explicacion": "La heterocromatina es la cromatina muy condensada y poco accesible a la maquinaria de transcripción, albergando genes inactivos o silentes. La eucromatina es más laxa y permite la actividad transcripcional."
+    },
+    {
+      "pregunta": "¿Dónde ocurre el ensamblaje de las subunidades mayor y menor de los ribosomas en eucariotas?",
+      "opciones": [
+        "Comienza en el nucléolo y se completa en el citoplasma.",
+        "Se produce por completo en el citosol a medida que se traduce el ARNm.",
+        "Ocurre íntegramente en la zona fibrilar del nucléolo.",
+        "Ocurre en el espacio perinuclear de la envoltura antes de la transcripción."
+      ],
+      "correcta": "A",
+      "explicacion": "El ARNr se sintetiza y asocia con proteínas importadas del citoplasma en el nucléolo (comenzando en la zona granular). Estas subunidades pre-ensambladas viajan a través del complejo de poro nuclear para terminar su formación en el citoplasma."
+    },
+    {
+      "pregunta": "Si un ARN mensajero posee un sitio de unión al ribosoma, y las secuencias AUG y UGA repetidas que originan las proteínas 1, 2 y 3, ¿a qué tipo de organismo pertenece más probablemente?",
+      "opciones": [
+        "A un organismo con genoma viral que infecta un núcleo.",
+        "A un eucarionte, debido a que posee intrones que serán eliminados.",
+        "A un procarionte, ya que el transcripto es monocistrónico.",
+        "A un procarionte, ya que se trata de un ARNm policistrónico."
+      ],
+      "correcta": "D",
+      "explicacion": "Un ARN mensajero que contiene información para codificar más de una proteína distinta en la misma molécula se denomina policistrónico, y este tipo de organización es propia y muy común en las células procariotas."
+    },
+    {
+      "pregunta": "¿Qué tipo de polimerasa está encargada de la transcripción de los genes que formarán los ARN de transferencia (ARNt)?",
+      "opciones": ["La ARN polimerasa I.", "La ARN polimerasa bacteriana central.", "La ARN polimerasa II.", "La ARN polimerasa III."],
+      "correcta": "D",
+      "explicacion": "En las células eucariotas, la ARN polimerasa III es responsable de la transcripción de los genes para ARNt, así como para el ARNr 5S y otros ARN pequeños. La ARN polimerasa II transcribe los pre-ARNm."
+    },
+    {
+      "pregunta": "¿Qué indica el sitio designado como +1 dentro de un gen?",
+      "opciones": [
+        "Es el primer nucleótido de la cola de poli-A.",
+        "Es la región reguladora que se ubica río arriba del promotor.",
+        "Es el sitio de terminación donde se libera la ARN polimerasa.",
+        "Es el sitio de inicio donde se incorpora el primer nucleótido transcrito."
+      ],
+      "correcta": "D",
+      "explicacion": "El sitio +1 define el primer nucleótido que la polimerasa transcribe incorporándolo al ARN. Lo que está antes de él hacia el promotor se considera \"río arriba\" y lleva números negativos (ej. -1, -2)."
+    },
+    {
+      "pregunta": "¿Qué enzima participa favoreciendo el progreso energético de la transcripción hidrolizando el producto resultante de la incorporación de nucleótidos?",
+      "opciones": ["El factor sigma.", "La pirofosfatasa.", "La poli-A polimerasa.", "La topoisomerasa."],
+      "correcta": "B",
+      "explicacion": "Al incorporar ribonucleótidos trifosfatados a la cadena de ARN, la ARN polimerasa libera pirofosfato (PPi). La enzima pirofosfatasa hidroliza este compuesto, liberando energía e impulsando así la reacción en sentido de síntesis."
+    },
+    {
+      "pregunta": "¿Cuál es la fracción más abundante de los diferentes tipos de ARN en una célula?",
+      "opciones": [
+        "El ARN mensajero, por codificar todas las proteínas celulares.",
+        "El ARN ribosómico, abarcando alrededor del 80-85% del total celular.",
+        "Los ARN pequeños nucleares y citoplasmáticos.",
+        "El pre-ARNm inmaduro, debido a que aún retiene intrones."
+      ],
+      "correcta": "B",
+      "explicacion": "El ARN ribosómico (ARNr), que junto a proteínas forma los ribosomas, es el más abundante, constituyendo entre el 80% y 85% de la fracción total de ARN de una célula. El mensajero solo representa un 3-5%."
+    },
+    {
+      "pregunta": "¿A qué hebra del ADN es complementaria la cadena de ARN recién sintetizada?",
+      "opciones": [
+        "A la hebra positiva o codificante.",
+        "A la hebra molde o negativa.",
+        "A ambas hebras en la burbuja de transcripción simultáneamente.",
+        "Al ARN espaciador del nucléolo."
+      ],
+      "correcta": "B",
+      "explicacion": "El ARN sintetizado es complementario y antiparalelo a la hebra de ADN que la polimerasa lee, la cual es la hebra molde, negativa o no codificante. La hebra codificante es idéntica en secuencia (cambiando T por U)."
+    },
+    {
+      "pregunta": "La partícula responsable del reconocimiento y remoción de los intrones en el transcripto primario está formada por:",
+      "opciones": [
+        "Múltiples unidades del factor sigma unidas a ARN polimerasa I.",
+        "Complejos de poro nuclear adaptados a la maduración del pre-ARNm.",
+        "Únicamente exones que adquieren actividad enzimática catalítica.",
+        "Complejos de ARN pequeño nuclear y proteínas denominados snRNP."
+      ],
+      "correcta": "D",
+      "explicacion": "El espliceosoma, encargado del proceso de splicing, está constituido por pequeñas ribonucleoproteínas nucleares (snRNP). Estas snRNP están formadas por ARN pequeños asociados a proteínas y participan catalíticamente en el proceso."
+    },
+    {
+      "pregunta": "Durante el ciclo del transcripto primario hacia su exportación, ¿en qué momento ocurre el proceso de adición del 'cap' o caperuza?",
+      "opciones": [
+        "Luego del splicing, cuando los exones están maduros y empalmados.",
+        "Justo al arribar el ARNm al ribosoma de la subunidad menor en el citoplasma.",
+        "Simultáneamente a la transcripción, cuando la cadena naciente alcanza unos 30 nucleótidos.",
+        "Cuando el transcripto llega a la señal de terminación AAUAAA."
+      ],
+      "correcta": "C",
+      "explicacion": "El agregado del nucleótido metilado 7-metilguanosina (capping) es un proceso co-transcripcional; ocurre a medida que el ARN polimerasa sintetiza la molécula y esta alcanza aproximadamente los 30 nucleótidos de longitud."
+    },
+    {
+      "pregunta": "¿Qué porción del nucléolo se caracteriza por estar conformada por las subunidades ribosómicas en distintas etapas de ensamblaje?",
+      "opciones": ["El complejo de poro nuclear.", "La zona fibrilar.", "El andamiaje (scaffold).", "La zona granular."],
+      "correcta": "D",
+      "explicacion": "En el nucléolo se distinguen una zona fibrilar central de ADNr y ARNr naciente, y una zona granular periférica formada por las partículas y subunidades ribosómicas en proceso de ensamblaje."
+    },
+    {
+      "pregunta": "Si un investigador observa un proceso donde un ARN mensajero está siendo sintetizado e inmediatamente un ribosoma se acopla a su extremo 5' para traducirlo, ¿qué tipo de célula está observando?",
+      "opciones": [
+        "Un fibroblasto humano en profase mitótica.",
+        "Una célula procariota sin envoltura nuclear.",
+        "Un linfocito donde la heterocromatina es abundante.",
+        "Una célula eucariota con alta tasa de síntesis del nucléolo."
+      ],
+      "correcta": "B",
+      "explicacion": "Este fenómeno de acoplamiento espaciotemporal entre transcripción y traducción es propio de las procariotas. La ausencia de núcleo permite que el ribosoma acceda al transcrito inmaduro a medida que es producido."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes es una señal necesaria dentro de un gen eucariota para que su ARNm naciente reciba la cola de adenosinas?",
+      "opciones": [
+        "El sitio de inicio definido como promotor.",
+        "La secuencia espaciadora transcrita por polimerasa I.",
+        "La presencia de la histona H1 hiperacetilada.",
+        "La secuencia de nucleótidos específica AAUAAA."
+      ],
+      "correcta": "D",
+      "explicacion": "La poliadenilación en eucariotas está dirigida por la presencia en el pre-ARNm de la secuencia específica AAUAAA, que sirve de señal para las enzimas (como poli-A polimerasa) encargadas de agregar las adenosinas."
+    },
+    {
+      "pregunta": "En el contexto de la transcripción, el término 'río abajo' hace referencia a:",
+      "opciones": [
+        "El movimiento del ARNm maduro desde el núcleo hacia el citoplasma de la célula.",
+        "La dirección en que la ARN polimerasa se desplaza sintetizando nucleótidos desde el sitio de inicio.",
+        "La zona de promotores e intensificadores que anteceden al codón de inicio.",
+        "El pasaje de subunidades 40S desde la zona granular hacia la envoltura."
+      ],
+      "correcta": "B",
+      "explicacion": "\"Río abajo\" denota la dirección en la que avanza la ARN polimerasa recorriendo el gen desde el promotor y sitio de inicio (+1) hacia la señal de terminación del transcripto."
+    },
+    {
+      "pregunta": "¿A partir de qué molécula precursora común se originan los ARNr 18S, 5,8S y 28S del ribosoma eucariota?",
+      "opciones": [
+        "A partir de transcriptos policistrónicos procariotas de vida corta.",
+        "De la asimilación del ARN 5S y proteínas citosólicas.",
+        "A partir del transcripto inmaduro denominado ARNm policistrónico.",
+        "A partir del procesamiento de un precursor grande llamado pre-ARNr 45S."
+      ],
+      "correcta": "D",
+      "explicacion": "La ARN polimerasa I sintetiza un transcripto primario conocido como pre-ARNr 45S, que luego es clivado o digerido por enzimas nucleolares para originar tres de los ARNr estructurales: 18S, 5,8S y 28S."
+    },
+    {
+      "pregunta": "¿Cómo interviene la 7-metilguanosina agregada al extremo 5' del ARN mensajero eucariota cuando el mismo llega al citosol?",
+      "opciones": [
+        "Modifica los enlaces fosfodiéster para formar asas que evitan mutaciones.",
+        "Participa activamente en el inicio de la traducción por parte del ribosoma.",
+        "Asocia a las ribonucleoproteínas RNP para que ingresen al nucléolo.",
+        "Detiene a la ARN polimerasa III señalando el final del gen."
+      ],
+      "correcta": "B",
+      "explicacion": "Además de evitar la degradación nuclear y coadyuvar en la remoción de intrones, la caperuza en 5' cumple un rol en el citoplasma, contribuyendo al reconocimiento del mensajero y el correcto inicio del proceso de traducción."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes iones es requerido obligatoriamente como cofactor metálico por la ARN polimerasa para su actividad catalítica?",
+      "opciones": [
+        "Cloruro (Cl-) o potasio (K+).",
+        "Magnesio (Mg++) o manganeso (Mn++).",
+        "Sodio (Na+) o calcio (Ca++).",
+        "Fosfato (PO4-3) en cualquiera de sus formas."
+      ],
+      "correcta": "B",
+      "explicacion": "Para catalizar el enlace fosfodiéster entre nucleótidos, la enzima ARN polimerasa requiere, de acuerdo al esquema presentado, iones bivalentes como Mg++ o Mn++ como cofactores de reacción."
+    },
+    {
+      "pregunta": "¿Qué consecuencia directa tiene la eliminación del factor sigma en una célula bacteriana en un proceso hipotético experimental?",
+      "opciones": [
+        "Las polimerasas fallarán en iniciar la transcripción por no poder reconocer el promotor.",
+        "Los intrones de sus mensajeros policistrónicos no podrán ser eliminados.",
+        "La transcripción transcurrirá con lentitud por acumulación de superenrollamientos positivos.",
+        "El transcripto primario carecerá de su secuencia protectora AAUAAA."
+      ],
+      "correcta": "A",
+      "explicacion": "En las procariotas, el factor sigma se asocia temporalmente a la ARN polimerasa y su función primordial es que el complejo reconozca el promotor del gen; sin sigma, la enzima central carece de especificidad para iniciar."
+    },
+    {
+      "pregunta": "Según la organización de la cromatina y la transcripción eucariota, la región del ADN donde ocurre la transcripción de manera predominante corresponde a:",
+      "opciones": [
+        "El andamiaje o matriz nuclear en cromosomas muy condensados.",
+        "El centríolo de un cromosoma mitótico.",
+        "La porción del genoma empaquetada como heterocromatina fuertemente metilada.",
+        "La fracción de la cromatina que se presenta más accesible, descondensada o laxa."
+      ],
+      "correcta": "D",
+      "explicacion": "Los genes que se transcriben activamente residen en un 10% del ADN que corresponde a la eucromatina accesible o laxa, cuya conformación química y física facilita el reclutamiento de las ARN polimerasas y sus factores accesorios."
+    },
+    {
+      "pregunta": "¿Por dónde abandonan el núcleo los distintos ARN mensajeros maduros acompañados por proteínas para ser leídos por los ribosomas?",
+      "opciones": [
+        "Por medio de los filamentos intermedios citoesqueléticos del citoplasma.",
+        "A través de los canales acuosos de difusión inespecífica de la envoltura.",
+        "Transportados linealmente a través del complejo de poro nuclear.",
+        "Atravesando directamente la doble barrera fosfolipídica por exocitosis masiva."
+      ],
+      "correcta": "C",
+      "explicacion": "Los ARNm unidos a poli-A se asocian con diversas proteínas transbordadoras para formar partículas RNP. El tráfico que mueve estas estructuras del núcleo al citoplasma ocurre linealmente usando el poro central de los complejos de poro nuclear."
+    },
+    {
+      "pregunta": "¿Cuál es la característica principal que se aplica a los exones en un transcripto primario de ARN de un eucariota?",
+      "opciones": [
+        "Son secuencias que codifican los genes de ARNt de la subunidad menor.",
+        "Están compuestos exclusivamente por ribonucleótidos de uracilo y guanina.",
+        "Corresponden a secuencias silentes que son removidas en forma de lazo.",
+        "Son las regiones codificadoras que se conservarán en el ARNm maduro tras el empalme."
+      ],
+      "correcta": "D",
+      "explicacion": "Los exones representan las regiones del transcripto inmaduro (pre-ARNm) que no son eliminadas por el espliceosoma. Se unen entre sí secuencialmente conformando la secuencia madura que finalmente lleva la información codificante."
+    },
+    {
+      "pregunta": "¿Qué grupo de cromosomas humanos aportan sectores de su constricción secundaria para la organización del nucléolo?",
+      "opciones": [
+        "Los metacéntricos grandes del cariotipo 1, 2 y 3.",
+        "Los homólogos pequeños submetacéntricos con alta concentración de intrones.",
+        "Los pares sexuales X e Y debido a su contenido de ARN pequeños.",
+        "Los pares acrocéntricos 13, 14, 15, 21 y 22."
+      ],
+      "correcta": "D",
+      "explicacion": "El organizador nucleolar (NOR) contiene los múltiples genes en tándem que originan los precursores de ARN ribosómico. En los humanos, esta información es provista por sectores de los cromosomas acrocéntricos pares 13, 14, 15, 21 y 22."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes reacciones metabólicas permite establecer los puentes fosfodiéster en la molécula de ARN sintetizado?",
+      "opciones": [
+        "El reemplazo cotranscripcional de un desoxirribonucleótido por un ribonucleótido.",
+        "El agregado enzimático de poliadeninas sin molde alguno postranscripcional.",
+        "La interacción catalizada por la ARN polimerasa en el extremo 3' del transcripto que crece.",
+        "La ruptura simultánea del enlace covalente en la burbuja de desenrollamiento."
+      ],
+      "correcta": "C",
+      "explicacion": "La elongación de la hebra transcripta la lleva a cabo la ARN polimerasa añadiendo, base complementaria tras base complementaria, cada nuevo monómero al extremo 3' hidroxilo libre del polímero formándose un nuevo enlace fosfodiéster."
+    },
+    {
+      "pregunta": "¿Qué sucede al final de la transcripción luego de que la ARN polimerasa reconoce la señal codificada de terminación?",
+      "opciones": [
+        "Se sintetiza simultáneamente un nuevo segmento AAUAAA del promotor basal.",
+        "El ARN transcripto se libera del ADN molde y la polimerasa se separa del gen.",
+        "El transcripto pasa a la hebra codificante en orientación 5' a 3'.",
+        "Comienza inmediatamente la replicación semiconservativa por la misma enzima."
+      ],
+      "correcta": "B",
+      "explicacion": "La fase de terminación del proceso concluye el evento transcripcional una vez detectadas las secuencias específicas. Conlleva la detención de la síntesis, la liberación total del ARNm inmaduro sintetizado y la disociación de la enzima ARN polimerasa."
+    },
+    {
+      "pregunta": "Respecto a los componentes menores del espliceosoma, el ARN pequeño nuclear (ARNpn):",
+      "opciones": [
+        "Forma un andamiaje inerte solo con fines de transporte citoplasmático.",
+        "Conformará la subunidad ribosómica 40S al llegar a la región granular nucleolar.",
+        "Posee actividad enzimática para efectuar el corte de intrones y ensamble de exones.",
+        "Es un gen intergénico promotor que orienta a la polimerasa hacia exones ricos en timina."
+      ],
+      "correcta": "C",
+      "explicacion": "Las partículas snRNP que componen el espliceosoma no consisten en un complejo únicamente proteico; sus fragmentos de ARN pequeño nuclear asociados son los verdaderos responsables de poseer actividad catalítica, participando activamente del splicing."
+    }
+  ]
+}

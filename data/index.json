@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-09T02:23:18Z",
+  "generado": "2026-10-10T01:19:46Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -140,6 +140,12 @@
           "nombre": "Núcleo interfásico",
           "archivo": "data/biologia-celular2/01-nucleo-interfasico.json",
           "preguntas": 61
+        },
+        {
+          "id": "biologia-celular2/02-transcripcion",
+          "nombre": "Transcripción",
+          "archivo": "data/biologia-celular2/02-transcripcion.json",
+          "preguntas": 40
         }
       ]
     },
