@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-11T01:04:46Z",
+  "generado": "2026-10-11T01:33:08Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -142,16 +142,10 @@
           "preguntas": 61
         },
         {
-          "id": "biologia-celular2/02-transcripcion",
+          "id": "biologia-celular2/02-transcripcion-test",
           "nombre": "Transcripción",
-          "archivo": "data/biologia-celular2/02-transcripcion.json",
-          "preguntas": 40
-        },
-        {
-          "id": "biologia-celular2/03-transcripcion-test",
-          "nombre": "Transcripción test",
-          "archivo": "data/biologia-celular2/03-transcripcion-test.json",
-          "preguntas": 40
+          "archivo": "data/biologia-celular2/02-transcripcion-test.json",
+          "preguntas": 43
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
   "materia": "Biología 2",
-  "tema": "Transcripción test",
+  "tema": "Transcripción",
   "preguntas": [
     {
       "pregunta": "La transcripción de los genes que codifican para proteínas en células eucariontes está a cargo de:",
@@ -421,6 +421,34 @@
       ],
       "correcta": "C",
       "explicacion": "Dichas partículas no basan su poder en las proteínas integrantes, sino que son sus propios y pequeños fragmentos de ARN los que actúan del mismo modo que las enzimas para ejercer el corte y empalme celular."
+    },
+    {
+      "pregunta": "El tipo de ácido ribonucleico que constituye la fracción predominante en la célula, abarcando del 80 al 85%, es el:",
+      "opciones": ["ARN pequeño celular.", "ARN de transferencia.", "ARN mensajero.", "ARN ribosomal."],
+      "correcta": "D",
+      "explicacion": "El ARN ribosomal conforma la mayor parte de la maquinaria de los ribosomas, llegando a representar entre el 80 y el 85% del ARN celular total."
+    },
+    {
+      "pregunta": "Si cruzamos los datos de abundancia y tiempo de vida celular, un ARN mensajero típico se define biológicamente por:",
+      "opciones": [
+        "Representar el 3-5% del ARN celular y tener vida muy corta.",
+        "Abarcar el 80-85% del ARN total y tener una vida muy extensa.",
+        "Constituir el 3-5% del total pero presentar una vida media alta.",
+        "Representar la gran mayoría del ARN celular con vida muy corta."
+      ],
+      "correcta": "A",
+      "explicacion": "La proporción del ARNm se mantiene constantemente baja (3-5%) y su tiempo útil es muy fugaz, degradándose rápido tras su uso."
+    },
+    {
+      "pregunta": "Una molécula de ARN mensajero maduro recién transcrita tiene como dinámica biológica particular:",
+      "opciones": [
+        "Tener una vida muy corta en función de la síntesis de una proteína concreta.",
+        "Sumar indefectiblemente el 80% de la masa del nucléolo celular.",
+        "Ensamblarse irreversiblemente con proteínas nucleares de larga duración.",
+        "Mantenerse guardada como reserva en vesículas por largo tiempo."
+      ],
+      "correcta": "A",
+      "explicacion": "El rasgo biológico del mensajero consiste en ser fugaz: nace del ADN, dirige rápidamente el orden de los aminoácidos y desaparece."
     }
   ]
 }
