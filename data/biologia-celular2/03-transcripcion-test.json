@@ -1,0 +1,226 @@
+{
+  "materia": "Biología 2",
+  "tema": "Transcripción (test)",
+  "preguntas": [
+    {
+      "pregunta": "Un compuesto experimental inhibe selectivamente a la ARN polimerasa II en cultivos celulares. ¿Qué alteración metabólica inmediata se observará indefectiblemente en estas células?",
+      "opciones": [
+        "La interrupción en la síntesis de ARN mensajeros y de la mayoría de los ARN pequeños nucleares.",
+        "El bloqueo en la producción del pre-ARNr 45S nucleolar indispensable para el ensamblaje ribosómico.",
+        "La acumulación de transcriptos maduros debido a la incapacidad de la enzima para poliadenilarlos.",
+        "El freno en la síntesis de ARN de transferencia limitando drásticamente la traducción citoplasmática."
+      ],
+      "correcta": "A",
+      "explicacion": "La ARN polimerasa II es específicamente responsable de transcribir genes codificadores de proteínas y la mayoría de los ARNpn[cite: 1]. El distractor asume erróneamente que esta enzima sintetiza todos los tipos de ARN indispensables para la traducción, ignorando el rol de las polimerasas I y III."
+    },
+    {
+      "pregunta": "Durante el avance de la maquinaria transcripcional, la ARN polimerasa establece una relación direccional estricta con las hebras de ácido nucleico. ¿Cuál de las siguientes afirmaciones describe con precisión esta dinámica espacial?",
+      "opciones": [
+        "La enzima recorre la cadena codificante en sentido 5' a 3' originando un transcripto paralelo a la misma.",
+        "La polimerasa transita sobre la hebra molde en dirección 3' a 5' sintetizando un polímero de forma antiparalela.",
+        "La síntesis del nuevo ARN ocurre orientada hacia el promotor a medida que avanza la región corriente arriba.",
+        "La enzima lee simultáneamente ambas hebras del ADN en sentidos opuestos para maximizar la tasa transcripcional."
+      ],
+      "correcta": "B",
+      "explicacion": "La síntesis del nuevo transcripto ocurre en dirección antiparalela (5' a 3'), lo que exige que la enzima recorra la hebra molde en sentido 3' a 5'[cite: 1]. El error común radica en confundir el sentido de lectura de la hebra molde con el sentido polar del crecimiento de la nueva cadena de ARN."
+    },
+    {
+      "pregunta": "Si se compara detalladamente la secuencia de un ARN mensajero con las cadenas del gen que le dio origen, ¿qué relación topológica y de homología se establece de forma directa entre estas moléculas?",
+      "opciones": [
+        "El transcripto resulta idéntico a la cadena molde debido a la acción catalítica de transcripción directa.",
+        "El ARN presenta una secuencia complementaria y antiparalela respecto a la denominada hebra codificante.",
+        "El polímero sintetizado comparte la misma secuencia de bases que la hebra positiva, sustituyendo timinas por uracilos.",
+        "El mensajero contiene bases análogas a las de la hebra negativa, conservando los enlaces fosfodiéster originales."
+      ],
+      "correcta": "C",
+      "explicacion": "La hebra codificante o positiva posee exactamente la misma secuencia que el ARN resultante, con la única salvedad del cambio de timina por uracilo[cite: 1]. Muchos asumen equivocadamente que el ARN exhibe una similitud estructural directa con su hebra molde, cuando en realidad es estrictamente su complemento."
+    },
+    {
+      "pregunta": "El proceso de adición de la caperuza en el extremo 5' del transcripto inmaduro constituye un evento crítico en la fisiología celular. ¿Qué consecuencia estructural o funcional deriva de esta modificación co-transcripcional?",
+      "opciones": [
+        "La remoción catalítica de las secuencias intrónicas por parte de las pequeñas ribonucleoproteínas nucleares.",
+        "La generación de una señal de corte que promueve la poliadenilación inmediata en la región del extremo 3'.",
+        "El direccionamiento de la polimerasa central bacteriana hacia la región promotora para iniciar la síntesis.",
+        "La protección frente a nucleasas y fosfatasas nucleares asegurando la integridad del mensajero naciente."
+      ],
+      "correcta": "D",
+      "explicacion": "La 7-metilguanosina agregada al extremo 5' protege al ARNm inmaduro de la degradación enzimática mediada por nucleasas y fosfatasas[cite: 1]. La trampa habitual es asociar esta modificación covalente protectora con los eventos de corte en el extremo 3' o el empalme dependiente de espliceosomas."
+    },
+    {
+      "pregunta": "En los sistemas biológicos procariotas, una mutación que impida la disociación del factor sigma de la enzima ARN polimerasa durante el ciclo transcripcional tendrá un impacto directo alterando principalmente:",
+      "opciones": [
+        "El progreso eficiente hacia la fase de elongación por permanecer el complejo enzimático retenido junto al promotor.",
+        "El reconocimiento preciso de la secuencia promotora originando transcriptos iniciados en sitios genómicos aleatorios.",
+        "La incapacidad del ribosoma para acoplarse espacialmente al mensajero naciente debido a bloqueos estéricos severos.",
+        "La detención prematura del empalme de exones en los transcriptos primarios destinados a codificar múltiples proteínas."
+      ],
+      "correcta": "A",
+      "explicacion": "El factor sigma dirige la enzima al promotor y debe disociarse obligatoriamente una vez que comienza la elongación de la cadena[cite: 1]. Creer que su anclaje persistente afecta el reconocimiento inicial es un concepto erróneo, ya que su función de fijación original sí logró ejecutarse correctamente."
+    },
+    {
+      "pregunta": "El nucléolo constituye una región nuclear especializada con altísima demanda metabólica celular. ¿Qué dinámica molecular justifica la conformación estructural de este aglomerado de fibras de cromatina?",
+      "opciones": [
+        "La convergencia agrupada de los genes que codifican para la síntesis masiva de las proteínas ribosómicas citosólicas.",
+        "La transcripción intensiva de los precursores de ARN ribosómico 45S mediada exclusivamente por ARN polimerasa I.",
+        "El ensamblaje íntegro y definitivo de las subunidades ribosómicas funcionales previo a su exportación al citoplasma.",
+        "La maduración sostenida de todos los transcriptos primarios celulares regulada centralmente por el complejo espliceosoma."
+      ],
+      "correcta": "B",
+      "explicacion": "El nucléolo se organiza alrededor de genes de ARN ribosómico (ADNr) que son intensamente transcriptos por la ARN polimerasa I para formar el pre-ARNr 45S[cite: 1]. El error frecuente es suponer que allí finaliza de forma absoluta el ensamblaje de ribosomas maduros, proceso que culmina funcionalmente en el citoplasma."
+    },
+    {
+      "pregunta": "El análisis transcriptómico de un microorganismo revela la presencia de abundantes mensajeros que maduran sin requerir procesamiento postranscripcional. ¿Qué otra particularidad estructural exhibirán sistemáticamente estos transcriptos?",
+      "opciones": [
+        "La presencia de extensas regiones intrónicas flanqueadas por exones altamente conservados evolutivamente.",
+        "La incorporación co-transcripcional de una caperuza metilada en el extremo 5' para facilitar el inicio traduccional.",
+        "La organización molecular de tipo policistrónica que porta información secuencial para sintetizar múltiples proteínas.",
+        "La exportación direccionada a través del complejo de poro nuclear empleando secuencias señalizadoras intrínsecas."
+      ],
+      "correcta": "C",
+      "explicacion": "Los procariontes carecen de intrones o modificaciones en los extremos de su mensajero, y muchos de sus transcriptos presentan una estructura policistrónica[cite: 1]. El distractor más tentador extrapola falazmente el uso del poro nuclear asumiendo una falsa compartimentalización en un modelo de transcripción procariota."
+    },
+    {
+      "pregunta": "Durante la etapa de maduración del pre-ARNm en las células eucariotas, las ribonucleoproteínas nucleares pequeñas (snRNP) organizan una maquinaria catalítica esencial. ¿Cuál es el rol bioquímico de estas partículas?",
+      "opciones": [
+        "Interaccionar con la ARN polimerasa II para guiar a la molécula naciente hacia los sitios de corte o poliadenilación.",
+        "Proporcionar un andamiaje proteico sobre el cual complejos enzimáticos externos ejecutan la ligación de los exones.",
+        "Sintetizar los enlaces fosfodiéster necesarios para añadir los múltiples residuos de adenina en la zona terminal.",
+        "Coordinar el complejo proceso catalítico de corte de intrones y el posterior empalme ordenado de las regiones exónicas."
+      ],
+      "correcta": "D",
+      "explicacion": "El espliceosoma, estructurado a partir de snRNP, es la entidad molecular que ejecuta catalíticamente el corte preciso de los intrones y el empalme definitivo de los exones[cite: 1]. Resulta recurrente confundir las funciones de estas partículas de procesamiento interno con los sistemas postranscripcionales que modifican el extremo 3'."
+    },
+    {
+      "pregunta": "La elongación sostenida de la molécula de ARN requiere el suministro constante de monómeros reactivos. ¿Qué transformación química transcurre cuando la enzima enlaza estos precursores a la cadena polimérica naciente?",
+      "opciones": [
+        "Los sustratos ribonucleótidos trifosfatados reaccionan liberando una molécula de pirofosfato al incorporarse como monofosfatos.",
+        "Los monómeros ingresan directamente en forma de nucleótidos monofosfato impulsados por la hidrólisis externa de ATP celular.",
+        "Las subunidades desoxirribonucleotídicas pierden un grupo fosforilo para poder establecer enlaces covalentes fosfodiéster estables.",
+        "Los precursores se asocian permanentemente a proteínas accesorias como las histonas antes de fusionarse al extremo terminal 5'."
+      ],
+      "correcta": "A",
+      "explicacion": "La síntesis utiliza ribonucleótidos trifosfatados (NTPs) como sustrato energético, los cuales al enlazarse en la cadena liberan pirofosfato quedando consecuentemente como nucleótidos monofosfato[cite: 1]. La trampa principal consiste en sugerir que el proceso requiere precursores ya desfosforilados e impulsados por hidrólisis de ATP independiente."
+    },
+    {
+      "pregunta": "Considerando la especificidad catalítica del proceso, si el análisis de la hebra molde de un genoma reporta un fragmento con la secuencia 3'-TCGATA-5', ¿cuál será la configuración exacta del producto nucleotídico generado?",
+      "opciones": [
+        "5'-TCGATA-3', al conservar rígidamente el mismo ordenamiento basal de la región complementaria genómica analizada.",
+        "5'-AGCUAU-3', resultando de la incorporación de monómeros antiparalelos y complementarios por la maquinaria enzimática.",
+        "3'-AGCUAU-5', debido a que la ARN polimerasa central sintetiza en la idéntica dirección geométrica en la que avanza.",
+        "5'-AGCTAT-3', generándose una secuencia idéntica a la cadena codificante que conserva las pirimidinas originales del molde."
+      ],
+      "correcta": "B",
+      "explicacion": "La transcripción genera un polímero de ARN complementario y antiparalelo a la molde, por lo que leyendo 3'-TCGATA-5' y reemplazando bases adecuadamente se obtiene la secuencia 5'-AGCUAU-3'[cite: 1]. Un error recurrente es invertir de forma inadecuada la polaridad geométrica o conservar subunidades de timina en el transcripto final."
+    },
+    {
+      "pregunta": "Las secuencias promotoras resultan fisiológicamente indispensables para garantizar la viabilidad de la expresión génica dirigida. ¿Qué principio molecular justifica el posicionamiento y función de estos componentes reguladores genómicos?",
+      "opciones": [
+        "Constituyen la porción líder del ARN maduro que interactúa inicialmente con la subunidad menor del sistema ribosómico.",
+        "Modifican estructuralmente a la heterocromatina promoviendo la hidrólisis transitoria de las regiones intergénicas cortas.",
+        "Operan como secuencias del ADN que atraen a la maquinaria polimerasa para iniciar la síntesis sin ser finalmente transcriptas.",
+        "Funcionan como complejos enzimáticos endógenos capaces de separar localmente la doble hélice para originar la burbuja."
+      ],
+      "correcta": "C",
+      "explicacion": "El promotor funciona como una plataforma de ADN encargada de reclutar a la enzima para iniciar el copiado sin transcribirse como parte integral del mensaje genético[cite: 1]. Muchos estudiantes asumen falazmente que, al ser elementos cruciales, las bases iniciales del promotor constituirán el primer segmento estructural del transcripto resultante."
+    },
+    {
+      "pregunta": "La temporalidad y organización espacial de la decodificación molecular difieren entre dominios biológicos. ¿Qué factor fundamental permite el acoplamiento casi simultáneo de la transcripción y la traducción en procariontes?",
+      "opciones": [
+        "La descondensación acelerada de los múltiples repliegues de heterocromatina en respuesta a factores ambientales externos.",
+        "El procesamiento ultrarrápido de los amplios intrones primarios mediante la maquinaria enzimática ribonucleoproteica celular.",
+        "La exportación lineal a gran escala de los polímeros transcriptos a través de las diversas proteínas del poro transmembrana.",
+        "La carencia de una estructura limitante que segregue los compartimentos funcionales de las polimerasas y los ribosomas libres."
+      ],
+      "correcta": "D",
+      "explicacion": "Al carecer de núcleo funcional, el ADN de los procariontes se localiza en el citosol y sus mensajeros pueden comenzar a traducirse aun encontrándose incompletos transcripcionalmente[cite: 1]. Es muy habitual confundir este fenómeno topológico y espacial con diferencias hipotéticas en la cinética de corte y maduración molecular postranscripcional."
+    },
+    {
+      "pregunta": "La conformación del complejo de preiniciación eucariota involucra una sucesión jerárquica de eventos altamente regulados. ¿De qué manera logra este sistema consolidar de forma efectiva el reconocimiento basal de su región promotora?",
+      "opciones": [
+        "Mediante el reclutamiento previo de factores de transcripción que se asocian al promotor y permiten el anclaje de la polimerasa.",
+        "A través de la afinidad autónoma intrínseca de la ARN polimerasa central por las secuencias enriquecidas en nucleótidos timina.",
+        "Requirviendo la actividad catalítica del factor sigma para generar la apertura focalizada exponiendo los sitios de lectura.",
+        "Fundamentándose en la incorporación ineludible de un nucleótido 7-metilguanosina antes de abandonar definitivamente el sitio de inicio."
+      ],
+      "correcta": "A",
+      "explicacion": "La maquinaria de iniciación eucariota depende de factores de transcripción accesorios que primero se ensamblan al promotor preparando la región para que luego ingrese la polimerasa II[cite: 1]. El distractor principal le atribuye a esta enzima central una autonomía de anclaje específica que estructuralmente resulta imposible sin colaboradores previos."
+    },
+    {
+      "pregunta": "La conclusión exitosa en la síntesis de un precursor de ARNm requiere la modificación covalente mediante poliadenilación. ¿Qué requisito estructural o señal desencadena la acción enzimática para añadir dicha cola polimérica?",
+      "opciones": [
+        "El arribo progresivo de la ARN polimerasa al codón terminador UGA demarcando el borde absoluto del polipéptido codificado.",
+        "La presencia de una secuencia de nucleótidos específica AAUAAA inscripta en el interior de la cadena del transcripto primario.",
+        "La remoción enzimática secuencial y completa de las variadas regiones intrónicas mediante hidrólisis generada por el espliceosoma.",
+        "La transcripción íntegra de un tramo continuo de múltiples residuos de timina residentes en el molde de desoxirribonucleótidos."
+      ],
+      "correcta": "B",
+      "explicacion": "La maquinaria enzimática responsable de la poliadenilación celular reacciona ante la detección de la secuencia señal AAUAAA intrínseca localizada en el propio precursor de ARN[cite: 1]. Una concepción errónea frecuente sugiere que el complejo sintetiza la cola copiándola directamente a partir de repeticiones poliméricas presentes genómicamente."
+    },
+    {
+      "pregunta": "El progreso sostenido de la burbuja de transcripción impone modificaciones topológicas estresantes sobre la doble hélice circundante. ¿A través de qué mecanismo bioquímico la célula logra corregir y disipar este límite conformacional?",
+      "opciones": [
+        "Fosforilando sistemáticamente los extremos expuestos de las histonas para desensamblar los nucleosomas de la región heterocromatínica.",
+        "Induciendo la fragmentación hidrolítica de las acumulaciones de pirofosfato por intervención de sistemas enzimáticos termodinámicos.",
+        "Mediante la actividad catalítica moduladora de una topoisomerasa que rectifica la severa tensión torsional originada estructuralmente.",
+        "Valiéndose de la actividad endonucleasa basal inherente a los variados complejos proteicos conocidos como ribonucleoproteínas nucleares."
+      ],
+      "correcta": "C",
+      "explicacion": "La separación temporal de las hebras genómicas en la burbuja de transcripción acumula tensiones de superenrollamiento que son aliviadas específicamente por la enzima topoisomerasa I[cite: 1]. El estudiante suele confundir frecuentemente esta imperiosa resolución biofísica bidimensional con fenómenos epigenéticos enfocados en alteraciones sobre grupos funcionales nucleosomales."
+    },
+    {
+      "pregunta": "El perfil transcripcional de un tipo celular particular depende drásticamente de los niveles de compactación epigenética en su material genético. En este escenario biofísico, ¿qué estado estructural habilita dinámicamente la expresión genética de fondo?",
+      "opciones": [
+        "La organización global del patrimonio genómico en segmentos de heterocromatina muy empaquetados e inaccesibles a polimerasas.",
+        "El desplazamiento integral de los componentes del nucleosoma originando extensas regiones cromosómicas funcionalmente desnudas.",
+        "La disposición sostenida de las variadas regiones del ADN condensadas en el interior de la región fibrilar central densa del nucléolo.",
+        "El mantenimiento espacial de fracciones de cromatina en estado laxo o descondensado que admitan acceso del complejo transcripcional."
+      ],
+      "correcta": "D",
+      "explicacion": "Los genes con actividad transcripcional se ubican predominantemente en porciones laxas o descondensadas de la eucromatina, conformación que viabiliza y facilita el reclutamiento de las moléculas accesorias[cite: 1]. La falacia habitual consiste en presuponer la desaparición completa del empaquetamiento con histonas para que el proceso enzimático ocurra fluidamente."
+    },
+    {
+      "pregunta": "El proceso progresivo de síntesis y estructuración de los ribosomas eucariotas funcionales demanda un intenso tráfico intracelular bidireccional coordinado. ¿Cuál de los siguientes fenómenos dinámicos constituye una etapa indispensable para dicho ensamblaje?",
+      "opciones": [
+        "El transporte centralizado de proteínas producidas en el citosol hacia el nucléolo previo al egreso de las subunidades ya pre-ensambladas.",
+        "La migración ininterrumpida de transcriptos de ARN mayor hacia los dominios adyacentes del retículo para efectuar un plegamiento definitivo.",
+        "El desplazamiento selectivo de la macromolécula ARN polimerasa I hacia compartimentos perisféricos citosólicos repletos de enzimas madurativas.",
+        "La traducción acelerada e in situ de las variadas secuencias codificantes ribosomales apoyadas directamente en las caras del poro nuclear principal."
+      ],
+      "correcta": "A",
+      "explicacion": "Las múltiples proteínas ribosómicas ingresan inicialmente al núcleo desde el citoplasma y se asocian al ARNr nucleolar, tras lo cual estas subunidades nacientes son vehiculizadas nuevamente al citoplasma para finalizar su organización[cite: 1]. Un equívoco clásico radica en visualizar al mensajero ribosomal saliendo desprovisto de interacciones proteicas previas del núcleo para acoplarse ulteriormente."
+    },
+    {
+      "pregunta": "Al extraerse una molécula madura de ARN mensajero, un equipo analítico confirma que su secuencia presenta señales de inicio y fin que codifican para múltiples péptidos metabólicos en la misma cadena. ¿A qué origen biológico corresponde más plausiblemente el espécimen analizado?",
+      "opciones": [
+        "A un núcleo eucariótico estándar, fundamentándose en los eficientes procesos enzimáticos que recortaron sus correspondientes intrones intercalados.",
+        "A un organismo u organela procariota, considerando que este tipo organizativo agrupa información compartida conformando transcriptos policistrónicos.",
+        "A un fibroblasto especializado, sustentándose en la necesidad incesante de maximizar el transporte celular citoplasmático simultáneo y constante.",
+        "A una célula bacteriana en fase divisional, debido exclusivamente a la carencia comprobable empíricamente del correspondiente proceso de capping en 5'."
+      ],
+      "correcta": "B",
+      "explicacion": "Los ARN mensajeros que transportan información agrupada secuencialmente de numerosas proteínas divergentes se designan policistrónicos, configuración molecular inmensamente frecuente en modelos procariotas[cite: 1]. El proceso analítico fallido deduce que las agrupaciones múltiples en una hebra son una optimización evolutiva universal dependiente del empalme característico celular de orden superior."
+    },
+    {
+      "pregunta": "El envenenamiento in vitro mediante inhibidores experimentales permite corroborar empíricamente la exclusividad en los productos sintetizados por las variadas ARN polimerasas. Si un fármaco suprime únicamente a la ARN polimerasa III, ¿qué fracción funcional faltará inicialmente?",
+      "opciones": [
+        "Los extensos precursores genómicos de tamaño 45S necesarios para constituir de forma integral el armazón estructural del nucléolo intracelular maduro.",
+        "Los transcriptos primarios indispensables destinados masivamente a codificar el amplio repertorio de componentes proteicos del citoesqueleto biológico.",
+        "Los adaptadores nucleotídicos especializados de transferencia y los segmentos estructurales menores del aparato ribosomal tipificados como subunidades 5S.",
+        "Los complejos mensajeros de configuración policistrónica abocados a facilitar y estabilizar el metabolismo anabólico generalizado en microbios modelos."
+      ],
+      "correcta": "C",
+      "explicacion": "La enzima ARN polimerasa III se circunscribe de forma estricta a procesar genes destinados a constituir los ARN de transferencia, ARN pequeño citoplasmático y las secuencias de ARNr 5S[cite: 1]. El error analítico radica en otorgarle responsabilidades ligadas con la extensa transcripción global nucleolar dependiente netamente de la maquinaria polimerasa tipo I."
+    },
+    {
+      "pregunta": "La caracterización milimétrica de los elementos intrínsecos de un promotor genómico revela interacciones fundamentales con la holoenzima en posiciones geográficas catalogadas como -10 y -35. ¿Qué implicancia espacial y fisiológica poseen estos componentes designados negativamente?",
+      "opciones": [
+        "Delimitan el lugar fisiológico exacto en que la maquinaria catalítica iniciará la incorporación secuencial irreversible del primer monómero nucleotídico reactivo.",
+        "Representan exclusivas formaciones intrónicas distribuidas sistemáticamente río abajo para garantizar el adecuado acople y progreso de los factores de corte celular.",
+        "Constituyen codones de detención o terminación prematuros cuya función se centra en evitar una traducción retrógrada ineficaz sobre la hebra no complementaria.",
+        "Corresponden a elementos estructurales de regulación emplazados corriente arriba respecto del inicio que operan como zonas de anclaje inicial pero nunca se transcriben."
+      ],
+      "correcta": "D",
+      "explicacion": "El lugar inicial referencial definido como +1 corresponde al primer nucleótido sintetizado, por lo cual todo aquello localizado estructuralmente antes se establece como región río arriba, se numera en forma negativa y jamás forma parte del transcripto[cite: 1]. La equivocación principal supone que la maquinaria obligatoriamente copia e inserta estas referencias basales al estructurar el extremo del nuevo producto molecular."
+    }
+  ]
+}
