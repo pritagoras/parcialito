@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-11T01:33:08Z",
+  "generado": "2026-10-12T01:27:32Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -145,7 +145,7 @@
           "id": "biologia-celular2/02-transcripcion-test",
           "nombre": "Transcripción",
           "archivo": "data/biologia-celular2/02-transcripcion-test.json",
-          "preguntas": 43
+          "preguntas": 63
         }
       ]
     },

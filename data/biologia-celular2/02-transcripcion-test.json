@@ -449,6 +449,196 @@
       ],
       "correcta": "A",
       "explicacion": "El rasgo biológico del mensajero consiste en ser fugaz: nace del ADN, dirige rápidamente el orden de los aminoácidos y desaparece."
+    },
+    {
+      "pregunta": "En el contexto de la lectura del mensaje genético, el codón AUG actúa como:",
+      "opciones": [
+        "Una señal de terminación del proceso de traducción",
+        "El codón de iniciación que establece el marco de lectura",
+        "El sitio de adición de la cola de poli A en el extremo 3'",
+        "El punto de corte para el proceso de empalme alternativo"
+      ],
+      "correcta": "B",
+      "explicacion": "El codón AUG es interpretado por los ribosomas como codón de iniciación, marcando el comienzo de la traducción y determinando el marco de lectura de los codones restantes."
+    },
+    {
+      "pregunta": "En relación a las señales que delimitan la traducción, los codones UGA, UAG y UAA funcionan como:",
+      "opciones": [
+        "Sitios de unión para los factores de transcripción basales",
+        "Señales de inicio de la polimerización del pre-ARNm",
+        "Codones de terminación o stop para la síntesis proteica",
+        "Secuencias promotoras reconocidas por la ARN polimerasa"
+      ],
+      "correcta": "C",
+      "explicacion": "Los codones UGA, UAG y UAA no especifican ningún aminoácido y actúan como señales de terminación en la traducción."
+    },
+    {
+      "pregunta": "En la maduración de los ARNm eucariotas, el extremo 5' recibe una modificación conocida como capuchón (cap), la cual consiste en:",
+      "opciones": [
+        "El agregado de un tramo de 250 adenosinas",
+        "La adición de una molécula de 7-metil-guanosina",
+        "El ligamiento de una secuencia rica en uridinas",
+        "La sustitución de ribonucleótidos por bases desoxirribosas"
+      ],
+      "correcta": "B",
+      "explicacion": "El proceso de capping consiste en la adición co-transcripcional de una 7-metil-guanosina en el extremo 5' del ARNm naciente."
+    },
+    {
+      "pregunta": "Durante la etapa de splicing en los pre-ARNm eucariotas, el extremo 5' o sitio dador del intrón se caracteriza por presentar la secuencia:",
+      "opciones": ["AG", "GU", "AAUAAA", "CCA"],
+      "correcta": "B",
+      "explicacion": "Los intrones presentan secuencias conservadas en sus extremos: la secuencia GU en el extremo 5' (sitio dador) y la secuencia AG en el extremo 3' (sitio aceptor)."
+    },
+    {
+      "pregunta": "En la molécula de ARNt, el extremo aceptor 3' al cual se liga el aminoácido está compuesto por la secuencia terminal:",
+      "opciones": ["TATAAT", "AAUAAA", "CCA", "AUG"],
+      "correcta": "C",
+      "explicacion": "Todos los ARNt presentan en su extremo 3' o aceptor el trinucleótido CCA, donde se une el aminoácido mediante la acción de la aminoacil ARNt sintetasa."
+    },
+    {
+      "pregunta": "Respecto a la señalización previa al punto de origen en bacterias, las secuencias consenso TATAAT y TTGACA corresponden a:",
+      "opciones": [
+        "La señal de poliadenilación del ARN mensajero",
+        "El sitio de unión para los ribosomas en el citosol",
+        "La unión de la holoenzima y la señalización del punto de inicio de la transcripción",
+        "El límite de corte entre exones e intrones"
+      ],
+      "correcta": "C",
+      "explicacion": "En el promotor procariota, las secuencias consenso TTGACA y TATAAT son indispensables para la unión de la holoenzima de ARN polimerasa y para señalizar el punto de inicio de la transcripción."
+    },
+    {
+      "pregunta": "¿Cuál es la definición molecular más actualizada y aceptada de 'gen' según la biología contemporánea?",
+      "opciones": [
+        "Una secuencia de nucleótidos que codifica exclusivamente para una enzima.",
+        "Un segmento de ADN transcrito que genera un producto con una función celular específica.",
+        "Una unidad hereditaria que determina características físicas visibles en un organismo.",
+        "Una cadena de ARN maduro que se traduce directamente en una cadena polipeptídica."
+      ],
+      "correcta": "B",
+      "explicacion": "Esta definición abarca tanto a los ARN mensajeros (que se traducen a proteínas) como a otros ARN no codificantes que cumplen funciones estructurales o reguladoras esenciales, superando la antigua concepción mendeliana."
+    },
+    {
+      "pregunta": "Al comparar la organización del genoma procariota y eucariota, ¿qué indica la 'paradoja del Valor C'?",
+      "opciones": [
+        "Que la cantidad de ADN 'desnudo' en procariotas siempre supera a la cantidad de ADN eucariota.",
+        "Que las células eucariotas siempre poseen cromosomas circulares con más genes esenciales.",
+        "Que la cantidad haploide de ADN de una especie no refleja necesariamente una mayor complejidad.",
+        "Que el ADN asociado a histonas se transcribe de manera más veloz que el ADN sin histonas."
+      ],
+      "correcta": "C",
+      "explicacion": "El Valor C (cantidad de ADN) varía enormemente entre eucariotas, y organismos aparentemente menos complejos pueden tener genomas mucho más grandes debido al exceso de secuencias de ADN cuyas funciones aún no se conocen o no son codificantes."
+    },
+    {
+      "pregunta": "¿Cuál es el efecto principal asociado al alto grado de metilación de citosinas en secuencias reguladoras del ADN en células eucariotas?",
+      "opciones": [
+        "Incrementa la tasa de transcripción al potenciar la unión de la ARN polimerasa II al promotor.",
+        "Activa al espliceosoma nuclear posibilitando un mecanismo de corte y empalme muy eficiente.",
+        "Se asocia a la inactivación transcripcional o silenciamiento de genes, como en el corpúsculo de Barr.",
+        "Transforma a la eucromatina activa en un segmento genómico móvil que cambia de cromosoma."
+      ],
+      "correcta": "C",
+      "explicacion": "La metilación de citosinas es una marca epigenética que favorece la compactación de la cromatina (heterocromatina), bloqueando el acceso a los factores de transcripción y resultando en el silenciamiento del gen."
+    },
+    {
+      "pregunta": "Durante el splicing efectuado por el espliceosoma, ¿qué suceso bioquímico crucial ocurre en el 'sitio de ramificación' en el interior del intrón?",
+      "opciones": [
+        "Una Adenina forma un enlace covalente con el extremo 5' escindido, originando un lazo.",
+        "Una Guanina sufre metilación profunda para permitir que el intrón se separe del exón.",
+        "Un Uracilo atrae complejos proteicos para eliminar directamente todo el marco de lectura.",
+        "Una Citosina se adhiere fuertemente al sitio aceptor del siguiente exón sin cortes previos."
+      ],
+      "correcta": "A",
+      "explicacion": "Las ribonucleoproteínas nucleares pequeñas reconocen secuencias específicas. En el primer paso del corte, el extremo 5' del intrón es clivado y se enlaza a una Adenina específica del sitio de ramificación, formando la característica estructura en lazo (lariat)."
+    },
+    {
+      "pregunta": "¿Qué función primordial cumplen las modificaciones cotranscripcionales y postranscripcionales del Capuchón 5' y la cola poli-A en el ARNm eucariota?",
+      "opciones": [
+        "Codificar para aminoácidos reguladores que determinan la vida media de la proteína final.",
+        "Dirigir internamente el mecanismo de splicing para asegurar el marco de lectura correcto.",
+        "Cortar al extenso ARNm policistrónico en fragmentos pequeños funcionales monocistrónicos.",
+        "Proteger al transcrito maduro de su degradación enzimática y facilitar la salida del núcleo."
+      ],
+      "correcta": "D",
+      "explicacion": "Tanto el Cap 5' (metil-guanosina) como la cola poli-A (adenosinas) carecen de información codificante para la proteína; su función estructural es estabilizar el ARNm contra las nucleasas y habilitar su transporte a través del poro nuclear."
+    },
+    {
+      "pregunta": "¿A qué se refiere el concepto de 'codones sinónimos' y con qué propiedad del código genético está directamente relacionado?",
+      "opciones": [
+        "A codones de diferentes organismos que traducen aminoácidos distintos, relacionado con la ambigüedad.",
+        "A codones diferentes que especifican a un mismo aminoácido, relacionado con la degeneración del código.",
+        "A tripletes de bases que codifican únicamente para la iniciación de la transcripción, relacionado con el solapamiento.",
+        "A secuencias no codificantes dentro del gen que eliminan intrones, relacionado con el splicing."
+      ],
+      "correcta": "B",
+      "explicacion": "La existencia de codones sinónimos implica que la mayoría de los aminoácidos pueden estar codificados por más de un codón, lo que define la propiedad de degeneración del código genético sin significar ambigüedad[cite: 3, 5]."
+    },
+    {
+      "pregunta": "¿Cuántos codones o tripletes de bases existen en total en el código genético?",
+      "opciones": ["16 codones.", "20 codones.", "61 codones.", "64 codones."],
+      "correcta": "D",
+      "explicacion": "El código genético consta de un total de 64 codones (resultantes de combinar las 4 bases nitrogenadas en grupos de a 3), de los cuales 61 codifican aminoácidos y 3 funcionan como señales de terminación[cite: 3, 4, 5]."
+    },
+    {
+      "pregunta": "¿Cuántos aminoácidos son codificados mediante los tripletes del código genético para formar las proteínas?",
+      "opciones": ["4 aminoácidos.", "20 aminoácidos.", "61 aminoácidos.", "64 aminoácidos."],
+      "correcta": "B",
+      "explicacion": "Las combinaciones de codones del código genético están destinadas a nombrar y especificar a los 20 aminoácidos que componen las proteínas[cite: 3, 5]."
+    },
+    {
+      "pregunta": "¿Cuáles son los tres codones de terminación o 'stop' (corte) que no especifican ningún aminoácido?",
+      "opciones": ["AUG, UAA y UAG.", "UUU, UUC y UUA.", "UGA, UAG y UAA.", "AGU, AGC y AGA."],
+      "correcta": "C",
+      "explicacion": "Los tres codones que no especifican ningún aminoácido y actúan como señales de terminación o stop en el mensaje genético son UGA, UAG y UAA[cite: 4, 5]."
+    },
+    {
+      "pregunta": "¿Cuál es la principal diferencia en cuanto a las enzimas ARN polimerasas involucradas en la transcripción entre procariotas y eucariotas?",
+      "opciones": [
+        "Los procariotas utilizan tres ARN polimerasas especializadas, mientras que los eucariotas emplean una sola.",
+        "Los procariotas emplean una única ARN polimerasa para sintetizar todos los ARN, mientras que los eucariotas poseen tres (ARN Pol I, II y III).",
+        "Los eucariotas utilizan la misma ARN polimerasa para replicar y transcribir, a diferencia de los procariotas.",
+        "Ambos grupos de organismos poseen tres ARN polimerasas exactamente idénticas en estructura y función."
+      ],
+      "correcta": "B",
+      "explicacion": "En bacterias existe un único núcleo enzimático de ARN polimerasa que sintetiza todos los tipos de ARN. En cambio, las células eucariotas cuentan con tres enzimas especializadas: ARN Pol I (ARNr 45S), ARN Pol II (ARNm y la mayoría de ARNpn) y ARN Pol III (ARNt, ARNr 5S, entre otros)."
+    },
+    {
+      "pregunta": "¿Qué subunidad es necesaria en la ARN polimerasa bacteriana para reconocer las secuencias promotoras e iniciar la transcripción?",
+      "opciones": ["La subunidad alfa (α).", "El factor basal TFIID.", "La subunidad sigma (σ).", "La proteína CAP unida a AMPc."],
+      "correcta": "C",
+      "explicacion": "El núcleo enzimático de la ARN polimerasa bacteriana requiere asociarse con la subunidad sigma (σ) para formar la holoenzima, la cual posee la capacidad específica de reconocer las secuencias promotoras en el ADN e iniciar la transcripción."
+    },
+    {
+      "pregunta": "Respecto a la organización del mensaje genético en el ARNm, ¿cuál es una diferencia fundamental entre eucariotas y procariotas?",
+      "opciones": [
+        "Los ARNm eucariotas son policistrónicos, mientras que los procariotas son monocistrónicos.",
+        "Los ARNm procariotas suelen ser policistrónicos, mientras que los ARNm maduros eucariotas son monocistrónicos.",
+        "Los ARNm eucariotas carecen de señales o secuencias de terminación de la transcripción.",
+        "Los ARNm procariotas presentan intrones que sufren splicing alternativo antes de la traducción."
+      ],
+      "correcta": "B",
+      "explicacion": "Muchos ARNm procariotas son policistrónicos, lo que significa que una sola molécula de ARNm contiene la información para sintetizar varias proteínas distintas de una vía metabólica. En eucariotas, los ARNm maduros son monocistrónicos y codifican para una sola cadena polipeptídica."
+    },
+    {
+      "pregunta": "¿Por qué razón en las células procariotas la transcripción y la traducción pueden ocurrir de forma simultánea (cotranscripcional)?",
+      "opciones": [
+        "Porque carecen de envoltura nuclear que separe espacial y temporalmente ambos procesos.",
+        "Porque los ribosomas procariotas se ensamblan directamente dentro de la burbuja de transcripción.",
+        "Porque los ARNm procariotas contienen un capuchón 5' que atrae inmediatamente a la ARN polimerasa.",
+        "Porque la ARN polimerasa bacteriana realiza el corte y empalme (splicing) de forma simultánea."
+      ],
+      "correcta": "A",
+      "explicacion": "Al no existir envoltura nuclear en procariotas, el ADN se encuentra en contacto directo con el citosol. Esto permite que los ribosomas comiencen a traducir el ARNm por su extremo 5' mientras la ARN polimerasa aún continúa transcribiendo el extremo 3'."
+    },
+    {
+      "pregunta": "¿Cuáles son las secuencias consenso promotoras características ubicadas 'río arriba' del punto de inicio (+1) en procariotas?",
+      "opciones": [
+        "La caja CAAT y las secuencias intensificadoras (enhancers).",
+        "La señal de poliadenilación AAUAAA y la caja GC.",
+        "La secuencia TTGACA en -35 y la caja TATAAT (caja Pribnow) en -10.",
+        "Las secuencias silenciadoras y los sitios de ramificación ricos en uridinas."
+      ],
+      "correcta": "C",
+      "explicacion": "El promotor procariota característico presenta dos secuencias conservadas que reconoce la holoenzima de ARN polimerasa: la secuencia TTGACA en la región -35 y la caja TATAAT (o caja Pribnow) en la región -10 respecto al punto de inicio (+1)."
     }
   ]
 }
