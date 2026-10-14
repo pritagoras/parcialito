@@ -1,0 +1,317 @@
+{
+  "materia": "Biología 2",
+  "tema": "Traducción",
+  "preguntas": [
+    {
+      "pregunta": "En el flujo de la información genética, la transcripción se define como el proceso de:",
+      "opciones": [
+        "Síntesis de una cadena de ARN utilizando una hebra de ADN como molde.",
+        "Traducción de codones de ARNm a una secuencia ordenada de aminoácidos.",
+        "Carga de aminoácidos específicos sobre sus respectivos ARN de transferencia.",
+        "Duplicación semiconservativa del material genético nuclear previo a la mitosis."
+      ],
+      "correcta": "A",
+      "explicacion": "La transcripción consiste en copiar la información contenida en la secuencia de bases del ADN para sintetizar una molécula de ARN complementaria."
+    },
+    {
+      "pregunta": "En las células eucariotas, la localización espacial de la transcripción y la traducción se caracteriza por:",
+      "opciones": [
+        "Ocurrir simultáneamente en el citosol celular.",
+        "Realizarse la transcripción en el núcleo y la traducción en el citoplasma.",
+        "Ocurrir ambas dentro del nucléolo junto a los ribosomas.",
+        "Realizarse la transcripción en el citoplasma y la traducción en el núcleo."
+      ],
+      "correcta": "B",
+      "explicacion": "En las células eucariotas la envoltura nuclear separa físicamente la transcripción nuclear de la traducción citoplasmática."
+    },
+    {
+      "pregunta": "La traducción cotranscripcional o acoplamiento transcripción-traducción en células procariotas ocurre debido a:",
+      "opciones": [
+        "La presencia de un capuchón 5' que acelera la unión del ribosoma.",
+        "La presencia de múltiples envolturas nucleares permeables.",
+        "La ausencia de envoltura nuclear que separe el ADN del citosol.",
+        "La existencia de ribosomas 80S asociados directamente al nucleoide."
+      ],
+      "correcta": "C",
+      "explicacion": "Al carecer de envoltura nuclear, el ADN procariota está en contacto directo con el citosol, permitiendo que los ribosomas comiencen a traducir el ARNm mientras se sintetiza."
+    },
+    {
+      "pregunta": "El tipo de ARN que actúa como molécula adaptadora reconociendo codones y transportando aminoácidos es el:",
+      "opciones": ["ARN pequeño nuclear (ARNpn).", "ARN mensajero (ARNm).", "ARN ribosómico (ARNr).", "ARN de transferencia (ARNt)."],
+      "correcta": "D",
+      "explicacion": "El ARNt actúa como adaptador adaptando el lenguaje de nucleótidos al de aminoácidos gracias a su anticodón y su extremo aceptor."
+    },
+    {
+      "pregunta": "En células eucariotas, la ARN polimerasa I se encarga específicamente de transcribir:",
+      "opciones": [
+        "El gen que codifica el precursor de ARN ribosómico 45S.",
+        "Todos los ARN mensajeros que codifican proteínas.",
+        "Los ARN de transferencia y el ARN ribosómico 5S.",
+        "Las partículas de ARN pequeño citoplasmático."
+      ],
+      "correcta": "A",
+      "explicacion": "La ARN polimerasa I sintetiza en la zona fibrilar del nucléolo el precursor pre-ARNr 45S, del cual derivan los ARNr 18S, 5,8S y 28S."
+    },
+    {
+      "pregunta": "La ARN polimerasa II en células eucariotas cumple la función de transcribir:",
+      "opciones": [
+        "Únicamente las secuencias de ARN ribosómico 5S extranucleolar.",
+        "Los genes no nucleolares que codifican para todos los ARNm.",
+        "Los precursores de los ARN de transferencia citosólicos.",
+        "Las secuencias que forman la subunidad menor del ribosoma 70S."
+      ],
+      "correcta": "B",
+      "explicacion": "La ARN polimerasa II transcribe los genes del ADN no nucleolar responsables de codificar los ARN mensajeros y la mayoría de los ARNpn."
+    },
+    {
+      "pregunta": "En las bacterias, la subunidad sigma de la holoenzima ARN polimerasa es esencial para:",
+      "opciones": [
+        "Catalizar la formación de los enlaces peptídicos entre aminoácidos.",
+        "Adicionar la cola de poliadeninas en el extremo 3' del transcripto.",
+        "Reconocer las secuencias promotoras del ADN e iniciar la transcripción.",
+        "Degradar los intrones liberados en forma de lazo."
+      ],
+      "correcta": "C",
+      "explicacion": "La subunidad sigma actúa como factor de inicio en procariotas, capacitando al núcleo enzimático de la ARN polimerasa para leer las secuencias promotoras."
+    },
+    {
+      "pregunta": "Durante la transcripción de un gen, la ARN polimerasa lee la hebra molde de ADN en dirección:",
+      "opciones": [
+        "5' a 3' y sintetiza la cadena de ARN en dirección 3' a 5'.",
+        "5' a 3' y sintetiza la cadena de ARN en dirección 5' a 3'.",
+        "3' a 5' y sintetiza la cadena de ARN en dirección 3' a 5'.",
+        "3' a 5' y sintetiza la cadena de ARN en dirección 5' a 3'."
+      ],
+      "correcta": "D",
+      "explicacion": "La ARN polimerasa recorre la cadena molde en sentido 3' a 5' y sintetiza el ARN en forma antiparalela, en sentido 5' a 3'."
+    },
+    {
+      "pregunta": "El proceso cotranscripcional de capping en el extremo 5' del ARNm eucariota consiste en la adición de:",
+      "opciones": [
+        "7-metil-guanosina mediante un enlace trifosfato.",
+        "Una cadena continua de aproximadamente 250 adenosinas.",
+        "Un triplete CCA libre con extremo OH terminal.",
+        "Una partícula ribonucleoproteica pequeña citoplasmática."
+      ],
+      "correcta": "A",
+      "explicacion": "El capping adiciona una molécula de 7-metil-guanosina en el extremo 5' del pre-ARNm cuando este alcanza unos 30 nucleótidos, protegiéndolo de nucleasas."
+    },
+    {
+      "pregunta": "La poliadenilación del extremo 3' del ARNm eucariota requiere el reconocimiento de la secuencia señal:",
+      "opciones": ["TATAAT.", "AAUAAA.", "CCA.", "AUG."],
+      "correcta": "B",
+      "explicacion": "La secuencia AAUAAA es reconocida por una nucleasa que corta el pre-ARNm, permitiendo que la poliA-polimerasa añada la cola de adeninas."
+    },
+    {
+      "pregunta": "El proceso de splicing o empalme en la maduración del pre-ARNm eucariota consiste en:",
+      "opciones": [
+        "Modificar químicamente las bases nitrogenadas a bases raras.",
+        "Adicionar una secuencia directora no codificadora en el extremo 5'.",
+        "Eliminar los intrones y unir los exones en una secuencia continua.",
+        "Transferir el residuo de metionina al sitio P del ribosoma."
+      ],
+      "correcta": "C",
+      "explicacion": "El splicing remueve de manera precisa las secuencias no codificantes intermedias (intrones) y empalma las regiones codificantes (exones)."
+    },
+    {
+      "pregunta": "El complejo multienzimático denominado espliceosoma está constituido por:",
+      "opciones": [
+        "ARN polimerasas tipo II unidas a factores basales de transcripción.",
+        "Aminoacil-ARNt sintetasas asociadas a moléculas de ATP.",
+        "Chaperonas moleculares y partículas del proteasoma 26S.",
+        "Partículas ribonucleoproteicas pequeñas nucleares (RNPpn)."
+      ],
+      "correcta": "D",
+      "explicacion": "Las RNPpn se ensamblan sobre los sitios conservados del intrón para formar el espliceosoma que cataliza el corte y empalme."
+    },
+    {
+      "pregunta": "Un ARN mensajero de organización policistrónica se define por:",
+      "opciones": [
+        "Contener información codificadora para sintetizar varias proteínas distintas.",
+        "Presentar una única región codificadora precedida por el capuchón 5'.",
+        "Codificar una sola cadena polipeptídica interrumpida por intrones.",
+        "Estar formado exclusivamente por ribofuranosas modificadas sin bases raras."
+      ],
+      "correcta": "A",
+      "explicacion": "Los ARNm policistrónicos, frecuentes en procariotas, poseen múltiples cistrones o regiones codificadoras que se traducen en diferentes polipéptidos."
+    },
+    {
+      "pregunta": "La propiedad del código genético denominada degeneración o redundancia significa que:",
+      "opciones": [
+        "Un solo codón puede codificar múltiples aminoácidos diferentes a la vez.",
+        "Un mismo aminoácido puede estar especificado por más de un codón.",
+        "Cada nucleótido forma parte de varios codones vecinos simultáneamente.",
+        "Existen codones sin sentido que destruyen el marco de lectura."
+      ],
+      "correcta": "B",
+      "explicacion": "La degeneración indica que existen 61 codones con sentido para 20 aminoácidos, por lo que varios codones sinónimos codifican el mismo aminoácido."
+    },
+    {
+      "pregunta": "La ausencia de ambigüedad en el código genético implica que:",
+      "opciones": [
+        "Todos los codones codifican únicamente para el aminoácido metionina.",
+        "Un cambio en la tercera base de un triplete siempre altera la proteína.",
+        "Cada codón especifica a uno y solo a un aminoácido determinado.",
+        "Los codones de terminación también pueden especificar aminoácidos."
+      ],
+      "correcta": "C",
+      "explicacion": "El código no es ambiguo porque un codón específico designa siempre a un único aminoácido en el código genético estándar."
+    },
+    {
+      "pregunta": "En el código genético estándar, los tres codones STOP o de terminación son:",
+      "opciones": ["AUG, UUG y CUG.", "UAA, UAC y UGC.", "AGA, AGG y AAG.", "UAA, UAG y UGA."],
+      "correcta": "D",
+      "explicacion": "Los tripletes UAA, UAG y UGA no codifican aminoácidos, sino que actúan como señales de terminación reconocidas por factores de liberación."
+    },
+    {
+      "pregunta": "El extremo aceptor del aminoácido en la molécula de ARNt se caracteriza por:",
+      "opciones": [
+        "Ubicarse en el extremo 5' y poseer la secuencia fija UAA.",
+        "Localizarse en el extremo 3' y finalizar en la secuencia trinucleotídica CCA.",
+        "Contener la secuencia del anticodón orientada en sentido 5' a 3'.",
+        "Estar formado por la señal de poliadenilación AAUAAA."
+      ],
+      "correcta": "B",
+      "explicacion": "En el extremo 3' del ARNt se encuentra el trinucleótido CCA, lugar donde se une covalentemente el aminoácido durante la aminoacilación."
+    },
+    {
+      "pregunta": "La reacción de aminoacilación o carga del ARNt es catalizada por la enzima:",
+      "opciones": ["ARN polimerasa III.", "Peptidil transferasa.", "Aminoacil-ARNt sintetasa.", "PoliA-polimerasa."],
+      "correcta": "C",
+      "explicacion": "Existen 20 aminoacil-ARNt sintetasas específicas que reconocen el aminoácido y su ARNt correspondiente para acoplarlos consumiendo ATP."
+    },
+    {
+      "pregunta": "En la primera fase de la aminoacilación, el aminoácido se une a un AMP generando el intermediario:",
+      "opciones": ["Peptidil-ARNt.", "Aminoacil-GTP.", "Ribonucleótido trifosfato.", "Aminoacil-AMP."],
+      "correcta": "D",
+      "explicacion": "La enzima utiliza energía de la hidrólisis del ATP para formar el complejo intermediario aminoacil-AMP con liberación de pirofosfato."
+    },
+    {
+      "pregunta": "La subunidad menor del ribosoma procariota (30S) contiene el ARN ribosómico:",
+      "opciones": ["16S.", "18S.", "23S.", "28S."],
+      "correcta": "A",
+      "explicacion": "El ribosoma procariota 70S está constituido por una subunidad menor 30S (con ARNr 16S) y una subunidad mayor 50S."
+    },
+    {
+      "pregunta": "El coeficiente de sedimentación de la subunidad mayor del ribosoma citosólico eucariota de 80S es:",
+      "opciones": ["50S.", "60S.", "40S.", "30S."],
+      "correcta": "B",
+      "explicacion": "El ribosoma eucariota 80S se compone de una subunidad menor de 40S y una subunidad mayor de 60S."
+    },
+    {
+      "pregunta": "La actividad peptidil transferasa que cataliza la formación del enlace peptídico reside en:",
+      "opciones": [
+        "Las proteínas del complejo de reconocimiento de la señal (SRP).",
+        "Los factores solubles de elongación citoplasmáticos.",
+        "El ARN ribosómico de la subunidad mayor, actuando como ribozima.",
+        "La secuencia promotora de la ARN polimerasa II."
+      ],
+      "correcta": "C",
+      "explicacion": "El centro catalítico de la peptidil transferasa está constituido principalmente por el ARNr de la subunidad mayor, constituyendo una ribozima."
+    },
+    {
+      "pregunta": "Durante la fase de iniciación de la traducción, el ARNt iniciador se posiciona directamente en el:",
+      "opciones": ["Sitio E del ribosoma.", "Sitio A del ribosoma.", "Centro promotor.", "Sitio P del ribosoma."],
+      "correcta": "D",
+      "explicacion": "A diferencia de los demás aminoacil-ARNt que ingresan al sitio A, el ARNt iniciador ingresa directamente al sitio P del ribosoma."
+    },
+    {
+      "pregunta": "El primer aminoácido incorporado en la síntesis proteica de las bacterias por el ARNt iniciador es:",
+      "opciones": ["N-formilmetionina.", "Metionina no modificada.", "Alanina.", "Cisteína."],
+      "correcta": "A",
+      "explicacion": "En procariontes (bacterias), el ARNt iniciador transporta N-formilmetionina, a diferencia de los eucariontes que incorporan metionina."
+    },
+    {
+      "pregunta": "Durante el ciclo repetitivo de elongación, los nuevos aminoacil-ARNt ingresan al ribosoma por el:",
+      "opciones": ["Sitio E.", "Sitio A.", "Sitio P.", "Sitio promotor."],
+      "correcta": "B",
+      "explicacion": "El sitio A (aminoacídico) recibe a cada nuevo aminoacil-ARNt correspondiente al codón expuesto durante la elongación."
+    },
+    {
+      "pregunta": "El desplazamiento de tres nucleótidos del ribosoma a lo largo del ARNm durante la elongación se denomina:",
+      "opciones": ["Capping.", "Splicing.", "Translocación.", "Aminoacilación."],
+      "correcta": "C",
+      "explicacion": "La translocación es el movimiento del ribosoma un codón río abajo, impulsado por factores de elongación y consumo de GTP."
+    },
+    {
+      "pregunta": "Cuando un codón STOP ingresa al sitio A del ribosoma durante la traducción, es reconocido por:",
+      "opciones": [
+        "Un ARNt supresor cargado con alanina.",
+        "La ARN polimerasa I.",
+        "La partícula de reconocimiento de señal (SRP).",
+        "Un factor de liberación proteico."
+      ],
+      "correcta": "D",
+      "explicacion": "Los codones STOP no especifican aminoácidos; son reconocidos por factores de liberación que provocan la hidrólisis y liberación de la proteína."
+    },
+    {
+      "pregunta": "El gasto energético mínimo equivalente para incorporar un aminoácido a la cadena polipeptídica es de:",
+      "opciones": [
+        "Cuatro enlaces de alta energía (2 procedentes de ATP y 2 de GTP).",
+        "Un solo enlace de alta energía aportado por ATP.",
+        "Ocho moléculas de CTP e ITP.",
+        "Dos enlaces de alta energía procedentes de UTP."
+      ],
+      "correcta": "A",
+      "explicacion": "Cada aminoácido consume 2 enlaces de alta energía en la aminoacilación (ATP a AMP) y 2 enlaces de GTP durante la entrada al sitio A y la translocación."
+    },
+    {
+      "pregunta": "Se conoce como polirribosoma o polisoma al conjunto de:",
+      "opciones": [
+        "Varias moléculas de ARNm unidas a una sola ARN polimerasa.",
+        "Múltiples ribosomas que traducen simultáneamente una misma molécula de ARNm.",
+        "Subunidades ribosómicas inactivas almacenadas en el nucléolo.",
+        "Cistrones independientes dispuestos en serie sobre un gen."
+      ],
+      "correcta": "B",
+      "explicacion": "Un polisoma es un grupo de ribosomas que leen consecutivamente un mismo ARNm, sintetizando varias copias del polipéptido a la vez."
+    },
+    {
+      "pregunta": "En la regulación transcripcional eucariota, las secuencias de ADN que estimulan la transcripción se llaman:",
+      "opciones": ["Operadores.", "Silenciadores (silencers).", "Intensificadoras (enhancers).", "Cajas TATAAT o Pribnow."],
+      "correcta": "C",
+      "explicacion": "Las secuencias intensificadoras o enhancers son regiones del ADN que estimulan la transcripción al interaccionar con proteínas activadoras específicas."
+    },
+    {
+      "pregunta": "Para sintetizar una cadena polipeptídica de 15 aminoácidos, la región codificadora del ARNm requiere, en el esquema más sencillo, un total de:",
+      "opciones": ["15 codones.", "16 codones.", "45 codones.", "48 codones."],
+      "correcta": "B",
+      "explicacion": "Se requieren n codones con sentido para los aminoácidos más un codón STOP de terminación, lo que da un total de 16 codones[cite: 5, 12, 13]."
+    },
+    {
+      "pregunta": "El número total de nucleótidos que componen la región codificadora de un ARNm (incluyendo el codón STOP) para sintetizar un polipéptido de 20 aminoácidos es de:",
+      "opciones": ["20 nucleótidos.", "21 nucleótidos.", "60 nucleótidos.", "63 nucleótidos."],
+      "correcta": "D",
+      "explicacion": "Una cadena de 20 aminoácidos necesita 21 codones en total (20 con sentido más 1 STOP), los cuales equivalen a 63 nucleótidos al multiplicarse por tres[cite: 5, 12, 13]."
+    },
+    {
+      "pregunta": "Si un tramo codificador de un ARNm contiene exactamente 30 codones (incluyendo el codón de terminación), la cadena polipeptídica resultante estará formada por:",
+      "opciones": ["29 aminoácidos.", "30 aminoácidos.", "33 aminoácidos.", "90 aminoácidos."],
+      "correcta": "A",
+      "explicacion": "El codón STOP señala el final y no aporta ningún aminoácido, por lo que a los 30 codones totales se le resta uno, resultando en 29 aminoácidos[cite: 5, 12, 13]."
+    },
+    {
+      "pregunta": "Una proteína que posee 8 aminoácidos requiere en su región codificadora de ARNm (considerando el codón STOP) una cantidad de bases igual a:",
+      "opciones": ["24 bases.", "27 bases.", "8 bases.", "9 bases."],
+      "correcta": "B",
+      "explicacion": "Se precisan 8 codones con sentido más 1 codón STOP, sumando 9 codones en total; al multiplicarse por tres bases cada uno, se obtienen 27 nucleótidos[cite: 5, 12, 13]."
+    },
+    {
+      "pregunta": "Si la región codificadora de un ARNm tiene un total de 36 nucleótidos, abarcando los codones con sentido y el codón STOP, la cantidad de aminoácidos que tendrá la proteína es:",
+      "opciones": ["36 aminoácidos.", "12 aminoácidos.", "11 aminoácidos.", "10 aminoácidos."],
+      "correcta": "C",
+      "explicacion": "Al dividir los 36 nucleótidos por 3 se obtienen 12 codones totales; restando el codón STOP final, la cadena queda compuesta por 11 aminoácidos[cite: 5, 12, 13]."
+    },
+    {
+      "pregunta": "Respecto a la función del codón AUG en el ARNm:",
+      "opciones": [
+        "Funciona invariablemente como señal de inicio en cualquier posición del transcripto.",
+        "Si se encuentra dentro de la región codificadora, codifica el sitio de inicio de la traducción",
+        "Es una secuencia del ADN reconocida exclusivamente por la ARN polimerasa.",
+        "Se ubica siempre en la región no codificadora seguidora antes del codón STOP."
+      ],
+      "correcta": "B",
+      "explicacion": "Un codón AUG ubicado dentro de una región codificadora, después de establecido el marco de lectura, no reinicia la traducción, sino que codifica una metionina interna."
+    }
+  ]
+}
