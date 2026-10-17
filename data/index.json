@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-14T01:50:47Z",
+  "generado": "2026-10-17T02:35:46Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -139,7 +139,7 @@
           "id": "biologia-celular2/01-nucleo-interfasico",
           "nombre": "Núcleo interfásico",
           "archivo": "data/biologia-celular2/01-nucleo-interfasico.json",
-          "preguntas": 61
+          "preguntas": 63
         },
         {
           "id": "biologia-celular2/02-transcripcion-test",
@@ -152,6 +152,12 @@
           "nombre": "Traducción",
           "archivo": "data/biologia-celular2/03-traduccion.json",
           "preguntas": 36
+        },
+        {
+          "id": "biologia-celular2/04-expresion-genica",
+          "nombre": "Expresión génica",
+          "archivo": "data/biologia-celular2/04-expresion-genica.json",
+          "preguntas": 37
         }
       ]
     },

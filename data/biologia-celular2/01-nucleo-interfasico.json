@@ -577,6 +577,28 @@
       "opciones": ["4 en G1 y 4 en G2", "4 en G1 y 8 en G2", "8 en G1 y 8 en G2", "2 en G1 y 4 en G2"],
       "correcta": "B",
       "explicacion": "En G1 la célula posee 4 cromosomas de una sola molécula de ADN cada uno (4 en total), mientras que tras la replicación en la fase S, en G2 cuenta con 4 cromosomas de dos moléculas cada uno (8 en total). El error habitual radica en pensar que la cantidad de moléculas de ADN permanece constante durante todas las fases de la interfase."
+    },
+    {
+      "pregunta": "El genoma se define funcionalmente como:",
+      "opciones": [
+        "El conjunto completo de material genético que posee un organismo en sus células.",
+        "La secuencia específica de aminoácidos que codifica para una proteína estructural.",
+        "El total de moléculas de ARN sintetizadas durante la etapa de transcripción.",
+        "La región del ADN encargada de regular la unión de la ARN polimerasa."
+      ],
+      "correcta": "A",
+      "explicacion": "El genoma abarca la totalidad del material genético de un organismo, incluyendo tanto los genes codificantes como las regiones no codificantes del ADN."
+    },
+    {
+      "pregunta": "Desde el punto de vista molecular, un gen se define como:",
+      "opciones": [
+        "Un conjunto de cromosomas homólogos presentes en el núcleo celular.",
+        "Una unidad de información en el ADN que codifica un ARN funcional o una proteína.",
+        "Una cadena lineal de aminoácidos unida mediante enlaces peptídicos.",
+        "El complejo macromolecular formado por histonas y material genético condensado."
+      ],
+      "correcta": "B",
+      "explicacion": "Un gen es un segmento específico de ADN que contiene las instrucciones necesarias para la síntesis de un producto funcional, como ARN o una proteína."
     }
   ]
 }

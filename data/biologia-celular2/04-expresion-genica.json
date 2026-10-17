@@ -1,0 +1,413 @@
+{
+  "materia": "Biología 2",
+  "tema": "Expresión génica",
+  "preguntas": [
+    {
+      "pregunta": "Un ARNm policistrónico se caracteriza por:",
+      "opciones": [
+        "Contener la información codificante para sintetizar varias proteínas distintas a partir de una única molécula de ARNm.",
+        "Generar diferentes variantes de proteínas únicamente mediante el proceso de splicing alternativo.",
+        "Ser el tipo de transcripto maduro predominante en los organismos eucariotas pluricelulares.",
+        "Codificar una sola cadena polipeptídica que posteriormente se degrada en el proteasoma."
+      ],
+      "correcta": "A",
+      "explicacion": "El ARNm policistrónico contiene varias regiones codificantes independientes, lo que permite la síntesis de múltiples proteínas diferentes a partir de un único transcripto, un mecanismo característico de procariotas."
+    },
+    {
+      "pregunta": "El control negativo de la transcripción en un operón ocurre cuando:",
+      "opciones": [
+        "Una proteína activadora se une al promotor incrementando la afinidad de la ARN polimerasa.",
+        "La concentración de AMP cíclico disminuye e impide la formación del complejo CAP-AMPc.",
+        "Una proteína represora se une a una secuencia reguladora y reduce o bloquea la transcripción.",
+        "La ARN polimerasa se disocia del ADN al alcanzar la señal de poliadenilación."
+      ],
+      "correcta": "C",
+      "explicacion": "Se habla de control negativo cuando la interacción de una proteína reguladora (represor) con el ADN inhibe o bloquea el avance de la transcripción."
+    },
+    {
+      "pregunta": "En el operón lac, la alolactosa actúa como un inductor fisiológico debido a que:",
+      "opciones": [
+        "Se une a la proteína CAP para aumentar la afinidad de la ARN polimerasa por el promotor.",
+        "Se une al represor Lac y provoca un cambio conformacional que disminuye su afinidad por el operador.",
+        "Modifica químicamente a la ARN polimerasa para que inicie la transcripción sin necesidad de promotor.",
+        "Promueve la metilación del ADN en el operador impidiendo la unión de la ARN polimerasa."
+      ],
+      "correcta": "B",
+      "explicacion": "La alolactosa es la molécula señal que se une al represor Lac e induce un cambio conformacional que lo libera del operador, permitiendo la transcripción."
+    },
+    {
+      "pregunta": "Cuando los niveles de glucosa son elevados en el medio extracelular de una bacteria, la concentración intracelular de AMPc es:",
+      "opciones": [
+        "Elevada, por lo que el complejo CAP-AMPc activa intensamente la transcripción del operón lac.",
+        "Indetectable, lo que provoca que el represor Lac se una de forma irreversible al promotor.",
+        "Baja, por lo que la formación del complejo CAP-AMPc se reduce y la activación del promotor es deficiente.",
+        "Constante, ya que la glucosa solo regula directamente la actividad de la beta-galactosidasa."
+      ],
+      "correcta": "C",
+      "explicacion": "En presencia de niveles altos de glucosa, la concentración de AMPc es baja, impidiendo la activación eficiente del promotor lac por el complejo CAP-AMPc."
+    },
+    {
+      "pregunta": "Para lograr la máxima tasa de expresión del operón lac se requiere que el medio contenga:",
+      "opciones": [
+        "Alta concentración de glucosa y ausencia total de lactosa.",
+        "Alta concentración de lactosa y baja concentración de glucosa.",
+        "Baja concentración de lactosa y baja concentración de glucosa.",
+        "Alta concentración de glucosa y alta concentración de lactosa."
+      ],
+      "correcta": "B",
+      "explicacion": "Con alta lactosa el represor se inactiva y libera el operador, y con baja glucosa sube el AMPc, permitiendo que CAP-AMPc active fuertemente el promotor."
+    },
+    {
+      "pregunta": "En una bacteria expuesta a concentraciones elevadas de lactosa y elevadas de glucosa, el operón lac presenta:",
+      "opciones": [
+        "Transcripción reprimida totalmente debido a la unión del represor Lac al operador.",
+        "Expresión alta impulsada por la unión de la proteína CAP unida a glucosa en el promotor.",
+        "Expresión baja o basal porque falta la activación positiva por el complejo CAP-AMPc.",
+        "Degradación rápida de la ARN polimerasa por acción del complejo ubiquitina-proteasoma."
+      ],
+      "correcta": "C",
+      "explicacion": "Aunque la lactosa inactiva al represor liberando el operador, la glucosa alta mantiene el AMPc bajo, impidiendo la activación por CAP-AMPc y resultando solo en expresión basal."
+    },
+    {
+      "pregunta": "El operón trp se clasifica como un sistema reprimible porque:",
+      "opciones": [
+        "La presencia de su producto final, el triptófano, activa al represor para disminuir la transcripción.",
+        "El triptófano se une al operador para bloquear directamente el paso de la ARN polimerasa.",
+        "Requiere la presencia continua de un inductor para mantener la ruta biosintética apagada.",
+        "Se transcribe únicamente cuando la concentración intracelular de glucosa es muy alta."
+      ],
+      "correcta": "A",
+      "explicacion": "En sistemas reprimibles como el operón trp, el producto de la vía (triptófano) actúa como correpresor activando al represor para detener la síntesis de sus propias enzimas cuando el producto abunda."
+    },
+    {
+      "pregunta": "Ante la escasez de triptófano en el medio celular, el represor Trp se encuentra en un estado:",
+      "opciones": [
+        "Activo, unido firmemente al operador e impidiendo el paso de la ARN polimerasa.",
+        "Inactivo, incapaz de unirse eficazmente al operador por sí solo, permitiendo la transcripción.",
+        "Complejado con la proteína CAP, estimulando la polimerización del ARNm en el promotor.",
+        "Degradado en el citosol por la vía ubiquitina-proteasoma debido al estrés metabólico."
+      ],
+      "correcta": "B",
+      "explicacion": "El represor Trp se sintetiza en forma inactiva y no puede unirse al operador a menos que se asocie con el triptófano, por lo que ante la falta de este aminoácido la transcripción procede."
+    },
+    {
+      "pregunta": "En la regulación del operón trp, la función del triptófano consiste en actuar como:",
+      "opciones": [
+        "Inductor que inactiva la unión de la proteína represora al ADN.",
+        "Factor de transcripción basal que se ensambla sobre la caja TATA.",
+        "Enzima catalizadora que degrada el ARNm policistrónico.",
+        "Correpresor que se une al represor inactivo para permitir su fijación al operador."
+      ],
+      "correcta": "D",
+      "explicacion": "El triptófano actúa como correpresor al unirse al represor Trp, modificando su estructura para que pueda unirse al operador y reprimir la transcripción."
+    },
+    {
+      "pregunta": "Una diferencia fundamental entre el operón lac y el operón trp radica en que:",
+      "opciones": [
+        "El operón lac codifica enzimas anabólicas y el operón trp codifica enzimas catabólicas.",
+        "El represor Lac se sintetiza en forma inactiva, mientras que el represor Trp se sintetiza activo.",
+        "El inductor en lac disminuye la afinidad del represor por el ADN, mientras que el correpresor en trp la aumenta.",
+        "El operón lac utiliza un ARNm monocistrónico y el operón trp genera un ARNm policistrónico."
+      ],
+      "correcta": "C",
+      "explicacion": "En el operón lac la alolactosa inactiva al represor reduciendo su afinidad por el operador, mientras que en trp el triptófano (correpresor) incrementa la afinidad del represor por el operador."
+    },
+    {
+      "pregunta": "A diferencia de los procariotas, en las células eucariotas la regulación de la expresión génica:",
+      "opciones": [
+        "Ocurre de forma exclusiva a nivel de la iniciación de la transcripción.",
+        "Se extiende a múltiples niveles, incluyendo el procesamiento, transporte, estabilidad y traducción del ARN.",
+        "Depende únicamente de la interacción directa entre operones y nutrientes del citoplasma.",
+        "Está acoplada simultáneamente a la traducción debido a la ausencia de envoltura nuclear."
+      ],
+      "correcta": "B",
+      "explicacion": "En eucariotas la expresión se regula en múltiples etapas jerárquicas desde la accesibilidad del ADN hasta el control pos-traduccional de la proteína."
+    },
+    {
+      "pregunta": "En relación con los promotores de genes transcritos por la ARN polimerasa II en eucariotas:",
+      "opciones": [
+        "Todos los promotores eucariotas poseen obligatoriamente una caja TATA reconocible.",
+        "La caja TATA es una secuencia consenso presente en algunos promotores que interactúa con factores basales.",
+        "La ARN polimerasa II se une al ADN promotor de forma directa sin requerir proteínas auxiliares.",
+        "El promotor se ubica a miles de pares de bases de distancia del sitio de inicio +1."
+      ],
+      "correcta": "B",
+      "explicacion": "La caja TATA es un ejemplo de elemento promotor presente en algunos genes eucariotas, pero no es un componente universal ni obligatorio en todos ellos."
+    },
+    {
+      "pregunta": "Las secuencias reguladoras conocidas como enhancers o intensificadores se caracterizan por:",
+      "opciones": [
+        "Ser proteínas difusibles que se sintetizan en el citoplasma y migran al núcleo.",
+        "Localizarse siempre a exactamente 10 pares de bases río arriba del punto de inicio.",
+        "Codificar para las enzimas encargadas del procesamiento de la cola poli-A.",
+        "Ser regiones de ADN que, al unirse a factores activadores específicos, aumentan la tasa de transcripción."
+      ],
+      "correcta": "D",
+      "explicacion": "Los enhancers son secuencias de ADN reguladoras que se unen a proteínas activadoras para incrementar la transcripción de un gen."
+    },
+    {
+      "pregunta": "Una secuencia reguladora distante (enhancer o silencer) puede influir en la actividad de un promotor lejanamente ubicado gracias a:",
+      "opciones": [
+        "El plegamiento en asa o bucle del ADN que aproxima físicamente las proteínas reguladoras al promotor.",
+        "El desplazamiento de la ARN polimerasa a lo largo del ADN sin sintetizar nucleótidos.",
+        "La degradación selectiva de las histonas mediante el complejo proteasoma 26S.",
+        "La exportación del ADN inmaduro hacia el citoplasma para interactuar con los ribosomas."
+      ],
+      "correcta": "A",
+      "explicacion": "El plegamiento tridimensional del ADN (formación de bucle o looping) permite el contacto físico entre factores unidos a secuencias distantes y el complejo basal en el promotor."
+    },
+    {
+      "pregunta": "Los factores de transcripción basales o generales en eucariotas se diferencian de los específicos en que los basales:",
+      "opciones": [
+        "Son necesarios para el ensamblaje de la ARN polimerasa II e inicio correcto en el promotor de todos los genes.",
+        "Modulan la expresión de genes de manera diferencial según el tipo celular o tejido.",
+        "Reconocen únicamente secuencias de ADN denominadas silenciadoras o enhancers.",
+        "Se unen covalentemente a los grupos metilo presentes en las citosinas de las islas CpG."
+      ],
+      "correcta": "A",
+      "explicacion": "Los factores basales son indispensables para armar el complejo de transcripción basal e iniciar la síntesis de ARN en el promotor, mientras que los específicos regulan la tasa diferencial en cada célula."
+    },
+    {
+      "pregunta": "El reconocimiento específico de las secuencias de ADN por parte de los factores de transcripción ocurre principalmente mediante:",
+      "opciones": [
+        "Enlaces covalentes irreversibles con los grupos fosfato del esqueleto de desoxirribosa.",
+        "Contactos y uniones no covalentes en los grupos químicos expuestos en el surco mayor de la doble hélice.",
+        "La ruptura de los puentes de hidrógeno entre las bases para leer la secuencia monocatenaria.",
+        "La inserción de aminoácidos hidrofóbicos dentro del núcleo central de la histona H1."
+      ],
+      "correcta": "B",
+      "explicacion": "La información química de las bases está expuesta principalmente en el surco mayor, donde los factores de transcripción establecen interacciones no covalentes específicas."
+    },
+    {
+      "pregunta": "El motivo estructural hélice-vuelta-hélice (helix-turn-helix) en los factores de transcripción cumple la función de:",
+      "opciones": [
+        "Coordinar un átomo de zinc entre dos residuos de cisteína y dos de histidina.",
+        "Colocar una hélice de reconocimiento en el surco mayor del ADN para unirse a secuencias específicas.",
+        "Catalizar la adición del capuchón 7-metilguanosina en el extremo 5' del pre-ARNm.",
+        "Formar un canal cilíndrico para la degradación proteica impulsada por ATP."
+      ],
+      "correcta": "B",
+      "explicacion": "En el motivo hélice-vuelta-hélice, dos hélices están conectadas por un giro, y una de ellas funciona como hélice de reconocimiento que encaja en el surco mayor del ADN."
+    },
+    {
+      "pregunta": "La estructura del motivo de unión al ADN denominado dedos de zinc se caracteriza por:",
+      "opciones": [
+        "La presencia de leucinas repetidas a intervalos regulares cada siete aminoácidos.",
+        "El empaquetamiento de cadenas de ARN dentro de un núcleo proteico oligomérico.",
+        "La coordinación de un ion zinc mediante residuos de aminoácidos como cisteína e histidina.",
+        "Formar una sola hélice alfa unida directamente a la cola de poliadenilación."
+      ],
+      "correcta": "C",
+      "explicacion": "Los dominios en dedo de zinc están estructuralmente estabilizados por la coordinación de un ion zinc con residuos aminoacídicos (frecuentemente cisteínas e histidinas)."
+    },
+    {
+      "pregunta": "El motivo estructural conocido como cremallera de leucina (leucine zipper) actúa principalmente favoreciendo:",
+      "opciones": [
+        "El clivado de intrones en las uniones entre secuencias exónicas.",
+        "La adición de cadenas de poliubiquitina en sustratos desnaturalizados.",
+        "La metilación de citosinas en dinucleótidos CpG del promotor.",
+        "La dimerización de proteínas mediante la interacción de regiones con leucinas repetidas."
+      ],
+      "correcta": "D",
+      "explicacion": "La cremallera de leucina presenta residuos de leucina a intervalos regulares que facilitan la interacción y dimerización de dos hélices proteicas."
+    },
+    {
+      "pregunta": "En relación con la dimerización de los factores de transcripción, es correcto afirmar que:",
+      "opciones": [
+        "Constituye una propiedad obligatoria y presente en la totalidad de los factores eucariotas.",
+        "Bloquea la capacidad del factor para reconocer secuencias reguladoras en el ADN.",
+        "Provoca la inmediata degradación del factor transcripcional en el proteasoma 26S.",
+        "Puede formar homodímeros o heterodímeros, aumentando la especificidad o estabilidad del ensamblaje al ADN."
+      ],
+      "correcta": "D",
+      "explicacion": "La dimerización no es universal, pero en las familias que la presentan permite combinar subunidades (homo o heterodímeros) incrementando la especificidad y diversidad reguladora."
+    },
+    {
+      "pregunta": "La unidad fundamental de empaquetamiento de la cromatina en eucariotas es el nucleosoma, el cual está formado por:",
+      "opciones": [
+        "Un segmento de ADN enrollado alrededor de un octámero de histonas.",
+        "Una molécula de ARN policistrónico asociada a cinco subunidades proteicas.",
+        "Un complejo de nucleasas y partículas RNPpn asociadas a la histona H1.",
+        "Una cadena de poliubiquitinas unidas a la partícula reguladora 19S."
+      ],
+      "correcta": "A",
+      "explicacion": "El nucleosoma es la unidad básica estructural de la cromatina, compuesta por ADN enrollado sobre un octámero formado por dos copias de cada histona (H2A, H2B, H3 y H4)."
+    },
+    {
+      "pregunta": "A diferencia de la heterocromatina, la eucromatina se caracteriza por ser una forma de cromatina:",
+      "opciones": [
+        "Altamente condensada e inaccesible a la maquinaria transcripcional.",
+        "Exclusivamente localizada en el corpúsculo de Barr de las células femeninas.",
+        "Que contiene únicamente genes estructurales procedentes de operones procariotas.",
+        "Menos compactada y generalmente más accesible para el inicio de la transcripción."
+      ],
+      "correcta": "D",
+      "explicacion": "La eucromatina presenta una menor compactación, lo que permite que los factores de transcripción y la ARN polimerasa accedan a los promotores de los genes activos."
+    },
+    {
+      "pregunta": "En los mamíferos, la metilación del ADN afecta habitualmente a las citosinas de dinucleótidos CpG en promotores sensibles, relacionándose con:",
+      "opciones": [
+        "Una estimulación directa e inmediata de la traducción en los ribosomas.",
+        "El incremento de la velocidad de exportación del ARNm hacia el citosol.",
+        "La conversión del ARNm monocistrónico en un mensaje policistrónico.",
+        "La represión transcripcional o silenciamiento del gen correspondiente."
+      ],
+      "correcta": "D",
+      "explicacion": "La adición de grupos metilo a citosinas en regiones reguladoras y promotores CpG suele asociarse con un estado de cromatina inactiva y represión de la transcripción."
+    },
+    {
+      "pregunta": "El corpúsculo de Barr observable en las células somáticas de hembras de mamíferos representa:",
+      "opciones": [
+        "Un cromosoma X ampliamente inactivado mediante condensación de la cromatina y mecanismos epigenéticos.",
+        "Una acumulación de proteasomas 26S dedicados a degradar el exceso de factores basales.",
+        "El sitio nucleolar donde se sintetiza y ensambla el precursor pre-ARNr 45S.",
+        "Un conjunto de ARNm policistrónicos bloqueados por la proteína reguladora de hierro."
+      ],
+      "correcta": "A",
+      "explicacion": "El corpúsculo de Barr es el cromosoma X inactivo condensado en las células de hembras de mamíferos, mantenido inactivo por marcas epigenéticas como la metilación del ADN y compactación de la cromatina."
+    },
+    {
+      "pregunta": "El proceso de splicing alternativo permite a las células eucariotas:",
+      "opciones": [
+        "Sintetizar proteínas en el citoplasma sin necesidad de pasar por la etapa de transcripción.",
+        "Traducir simultáneamente múltiples polipéptidos independientes desde un ARNm policistrónico.",
+        "Eliminar los exones del pre-ARNm para conservar únicamente las secuencias intrónicas.",
+        "Obtener diversas variantes de ARNm y distintas isoformas proteicas a partir de un único gen."
+      ],
+      "correcta": "D",
+      "explicacion": "Al combinar exones de distintas maneras a partir de un mismo transcripto primario, el splicing alternativo permite generar diferentes isoformas de una proteína a partir de un solo gen."
+    },
+    {
+      "pregunta": "El hecho de que un pre-ARNm sufra splicing alternativo originando distintas isoformas proteicas NO convierte al ARNm maduro resultante en policistrónico debido a que:",
+      "opciones": [
+        "Los intrones eliminados son traducidos en el nucléolo de forma independiente.",
+        "Cada ARNm maduro individual sigue conteniendo una sola región codificante principal para una cadena polipeptídica.",
+        "El proceso de empalme requiere la adición previa de una cola de poliubiquitina.",
+        "Todos los exones conservados corresponden a genes reguladores situados en operones distintos."
+      ],
+      "correcta": "B",
+      "explicacion": "Cada variante de ARNm maduro conserva una única región codificante principal, por lo que sigue produciendo un solo polipéptido por mensaje."
+    },
+    {
+      "pregunta": "Cuando la concentración intracelular de hierro es baja, la traducción del ARNm de la ferritina se encuentra inhibida debido a que:",
+      "opciones": [
+        "La ARN polimerasa II no puede unirse al promotor del gen de ferritina en el núcleo.",
+        "El ARNm de ferritina es destruido inmediatamente por las partículas del espliceosoma.",
+        "El complejo ubiquitina-proteasoma degrada los ribosomas asociados al extremo 3' UTR.",
+        "La proteína reguladora se une al elemento de respuesta al hierro (IRE/ERH) en la región 5' UTR y bloquea el inicio de la traducción."
+      ],
+      "correcta": "D",
+      "explicacion": "Con poco hierro libre, la proteína reguladora (IRP/aconitasa) se une a la estructura IRE en la región 5' UTR del ARNm de la ferritina e interfiere mecánicamente con la iniciación de la traducción."
+    },
+    {
+      "pregunta": "Al aumentar la disponibilidad de hierro en la célula, la síntesis de ferritina se incrementa porque:",
+      "opciones": [
+        "El hierro altera el estado funcional de la proteína reguladora, haciendo que se disocie del IRE/ERH y deje libre la región 5' UTR.",
+        "El hierro actúa como un factor basal de transcripción que se ensambla directamente en la caja TATA.",
+        "El hierro provoca la eliminación de los intrones presentes en el ARNm maduro de ferritina.",
+        "La proteína ferritina es fosforilada para evitar su reconocimiento por el proteasoma 26S."
+      ],
+      "correcta": "A",
+      "explicacion": "Al unirse hierro a la proteína reguladora, esta cambia de conformación y pierde afinidad por el IRE/ERH, liberando el extremo 5' UTR del ARNm para que los ribosomas inicien la traducción."
+    },
+    {
+      "pregunta": "La regla del extremo N-terminal en el control pos-traduccional establece que la vida media de una proteína depende en parte de:",
+      "opciones": [
+        "El número de colas poli-A presentes en el extremo 3' del transcripto de ADN.",
+        "La presencia de cajas TATA en el promotor del gen estructural correspondiente.",
+        "Las características y residuos de aminoácidos presentes en su extremo amino-terminal.",
+        "La cantidad de moléculas de alolactosa unidas al sitio de corte del espliceosoma."
+      ],
+      "correcta": "C",
+      "explicacion": "La regla del extremo N-terminal indica que la identidad de los residuos aminoacídicos en el extremo N-terminal de una proteína influye directamente en su estabilidad y tasa de degradación."
+    },
+    {
+      "pregunta": "Las chaperonas moleculares intervienen en la regulación pos-traduccional cumpliendo la función de:",
+      "opciones": [
+        "Asistir a otras proteínas para que alcancen o recuperen su plegamiento correcto y evitar su agregación.",
+        "Degradar péptidos pequeños dentro de la cámara catalítica 20S del proteasoma.",
+        "Catalizar la adición de residuos de 7-metilguanosina en el extremo 5' del ARN.",
+        "Sintetizar cadenas de ADN a partir de moldes de ARN monocistrónico."
+      ],
+      "correcta": "A",
+      "explicacion": "Las chaperonas ayudan a las proteínas recién sintetizadas o desnaturalizadas a adquirir su conformación tridimensional nativa, evitando su agregación anómala."
+    },
+    {
+      "pregunta": "El proceso de poliubiquitinación de una proteína citosólica consiste en la adición covalente de varias moléculas de ubiquitina con el fin de:",
+      "opciones": [
+        "Facilitar su exportación a través de los poros nucleares hacia el nucleolo.",
+        "Protegerla frente a la acción degradativa de las nucleasas citoplasmáticas.",
+        "Marcar la proteína para su reconocimiento y posterior degradación en el proteasoma 26S.",
+        "Aumentar su afinidad de unión por las secuencias intensificadoras del ADN."
+      ],
+      "correcta": "C",
+      "explicacion": "La unión de una cadena de poliubiquitina a una proteína actúa como señal de marcación que la dirige hacia el proteasoma 26S para su degradación."
+    },
+    {
+      "pregunta": "En la estructura del proteasoma 26S, la función del núcleo catalítico 20S radica en:",
+      "opciones": [
+        "Reconocer las marcas de poliubiquitina y reciclar las moléculas de ubiquitina libres.",
+        "Unirse a los elementos cis en el ADN para reprimir la transcripción basal.",
+        "Albergar los sitios proteolíticos internos donde la proteína desplegada es cortada en oligopéptidos.",
+        "Plegar las proteínas desnaturalizadas utilizando la energía derivada de la hidrólisis de ATP."
+      ],
+      "correcta": "C",
+      "explicacion": "El núcleo 20S es el cilindro central del proteasoma que contiene los sitios con actividad proteasa donde los polipéptidos se degradan en pequeños péptidos."
+    },
+    {
+      "pregunta": "En el complejo proteolítico del proteasoma 26S, las partículas reguladoras 19S son responsables de:",
+      "opciones": [
+        "Transcribir el gen estructural en un transcripto primario no maduro.",
+        "Sintetizar la cola de poli-A mediante la enzima poliA-polimerasa.",
+        "Splicing alternativo de las isoformas de histonas desnaturalizadas.",
+        "Reconocer la marca de poliubiquitina, desplegar el sustrato proteico con gasto de ATP y eliminar la ubiquitina."
+      ],
+      "correcta": "D",
+      "explicacion": "Las partículas reguladoras 19S reconocen la proteína marcada con poliubiquitina, remueven las ubiquitinas para su reciclaje y despliegan la proteína consumiendo ATP para introducirla al núcleo 20S."
+    },
+    {
+      "pregunta": "Un operón se define conceptualmente como una unidad de regulación y transcripción que:",
+      "opciones": [
+        "Se encuentra presente en todos los cromosomas del núcleo celular de eucariotas pluricelulares.",
+        "Codifica una única proteína que es modificada posteriormente por splicing alternativo.",
+        "Agrupa varios genes estructurales bajo el control de un único promotor y operador para coordinar su expresión.",
+        "Utiliza factores de transcripción basales para sintetizar un ARNm monocistrónico."
+      ],
+      "correcta": "C",
+      "explicacion": "Un operón es una unidad genética característica de procariotas que contiene varios genes de función relacionada bajo una misma región reguladora (promotor y operador)."
+    },
+    {
+      "pregunta": "En el modelo clásico de operón, la diferencia fundamental entre el gen regulador y el operador es que:",
+      "opciones": [
+        "El gen regulador codifica una proteína difusible (represor), mientras que el operador es una secuencia de ADN reguladora.",
+        "El gen regulador se ubica dentro del ARNm maduro y el operador se elimina durante el empalme.",
+        "El operador sintetiza el inductor y el gen regulador actúa como la señal de terminación transcripcional.",
+        "El gen regulador es un elemento cis y el operador es un factor trans difusible por el citosol."
+      ],
+      "correcta": "A",
+      "explicacion": "El gen regulador es la secuencia codificante que produce la proteína represora (factor trans), mientras que el operador es la secuencia de ADN (elemento cis) donde se une dicha proteína."
+    },
+    {
+      "pregunta": "Se define como modificación epigenética a aquel mecanismo de regulación que:",
+      "opciones": [
+        "Altera permanentemente la secuencia de nucleótidos del ADN mediante mutaciones puntuales.",
+        "Modifica el estado de expresión de los genes sin alterar la secuencia de nucleótidos del ADN.",
+        "Degrada los ARNm maduros en el citoplasma usando partículas RNPpn.",
+        "Convierte un operón inducible en un operón reprimible mediante la adición de glucosa."
+      ],
+      "correcta": "B",
+      "explicacion": "La epigenética involucra cambios heredables o persistentes en la expresión génica (como metilación del ADN u organización de cromatina) que no cambian la secuencia primaria del ADN."
+    },
+    {
+      "pregunta": "La ventaja biológica fundamental de regular la expresión génica según los requerimientos del entorno reside en que permite a la célula:",
+      "opciones": [
+        "Duplicar la cantidad de ADN cromosómico durante cada ciclo de división.",
+        "Eliminar la necesidad de sintetizar chaperonas moleculares y proteasomas.",
+        "Evitar el uso de factores de transcripción específicos en ambientes cambiantes.",
+        "Ahorrar recursos energéticos y materia prima evitando sintetizar enzimas cuando sus productos no se necesitan."
+      ],
+      "correcta": "D",
+      "explicacion": "La regulación génica le brinda a la célula eficiencia energética y metabólica, evitando el gasto de nucleótidos, aminoácidos y energía en productos no requeridos en ese momento."
+    }
+  ]
+}
