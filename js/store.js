@@ -12,6 +12,7 @@ const base = {
   mejores: {},       // { idTema: { precision, puntos, racha } }
   errores: {},       // { idPregunta: 1 }
   apodo: '',         // nombre que se muestra en el ranking público
+  dominadas: {},     // { idTema: { idPregunta: 1 } } preguntas respondidas bien al menos una vez
 };
 
 let guardado = {};

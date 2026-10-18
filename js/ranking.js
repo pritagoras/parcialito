@@ -56,6 +56,30 @@ export async function guardarPartida({ apodo, materia, tema, aciertos, total, pu
   });
 }
 
+// Guarda el progreso de uno o varios temas (una fila nueva por tema; nunca se pisa nada).
+export async function guardarProgreso(filas) {
+  if (!filas.length) return;
+  await pedir('progreso_temas', {
+    method: 'POST',
+    headers: { Prefer: 'return=minimal' },
+    body: JSON.stringify(filas),
+  });
+}
+
+// Último progreso conocido de un apodo, un registro por tema.
+export async function progresoDe(apodo) {
+  const q = new URLSearchParams({
+    select: 'materia,tema_id,tema,dominadas,total,mejor_precision,creado',
+    apodo: `eq.${apodo}`,
+    order: 'creado.desc',
+    limit: '500',
+  });
+  const filas = (await pedir(`progreso_temas?${consulta(q)}`)) || [];
+  const ultimos = new Map();   // vienen de la más nueva a la más vieja
+  for (const f of filas) if (!ultimos.has(f.tema_id)) ultimos.set(f.tema_id, f);
+  return [...ultimos.values()].sort((a, b) => (a.materia + a.tema).localeCompare(b.materia + b.tema));
+}
+
 // Ranking de una materia (o de un tema puntual): la mejor partida de cada apodo, por puntos.
 export async function rankingMateria(materia, tema = null, limite = 20) {
   const q = new URLSearchParams({
