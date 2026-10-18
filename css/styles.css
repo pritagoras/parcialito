@@ -432,3 +432,5 @@ h1, h2, h3, p { margin: 0; }
 .lista-progreso .relleno { display: block; height: 100%; background: var(--ok); border-radius: 99px; }
 .lista-progreso .pct { text-align: right; font-family: var(--pixel); color: var(--ok); }
 .lista-progreso .pct small { display: block; font-family: var(--fuente); color: var(--tenue); font-size: .8rem; }
+
+.aviso-datos { margin-top: 1.25rem; color: var(--tenue); font-size: .85rem; max-width: 52ch; }

@@ -7,7 +7,8 @@
 import { estado, guardar, hash } from './store.js';
 import { Sonido } from './sonido.js';
 import { lanzarConfeti } from './confeti.js';
-import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, rankingMateria, historialDe, progresoDe } from './ranking.js';
+import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, rankingMateria, historialDe, progresoDe } from './ranking.js';
+import { infoDispositivo } from './dispositivo.js';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -568,6 +569,18 @@ function vistaResultado() {
   // Progreso por tema: guarda cuántas preguntas dominás de cada tema que apareció en la ronda
   if (rankingActivo() && estado.apodo) {
     guardarProgreso(filasProgreso(j.preguntas)).catch(() => {});
+    // Registro privado de la ronda con datos del dispositivo (no se muestra en la página)
+    registrarSesion({
+      apodo: estado.apodo,
+      modo: meta.ranking ? 'ronda' : 'repaso',
+      materia: String(meta.materiaNombre || meta.titulo || '').slice(0, 80),
+      tema: String(meta.temaNombre || '').slice(0, 80),
+      aciertos: j.aciertos,
+      total,
+      puntos: j.puntos,
+      racha_max: j.mejorRacha,
+      ...infoDispositivo(),
+    }).catch(() => {});
   }
 
   document.getElementById('btn-otra').addEventListener('click', () => { Sonido.clic(); meta.repetir(); });
@@ -598,6 +611,7 @@ function vistaApodo() {
         <button class="btn primario" type="submit">Guardar</button>
       </form>
       ${estado.apodo ? '<button class="btn secundario" id="btn-historial">Ver mi historial</button>' : ''}
+      <p class="aviso-datos">Al terminar una ronda se guardan tu apodo, tus resultados y datos básicos de tu dispositivo (navegador, sistema, pantalla, idioma y zona horaria) para estadísticas. El ranking solo muestra apodo y puntos.</p>
     </main>`;
 
   const input = document.getElementById('inp-apodo');

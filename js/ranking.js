@@ -56,6 +56,16 @@ export async function guardarPartida({ apodo, materia, tema, aciertos, total, pu
   });
 }
 
+// Registra una ronda terminada junto con los datos del dispositivo.
+// Va a una tabla que la web solo puede escribir (no leer): se ve desde el panel de Supabase.
+export async function registrarSesion(fila) {
+  await pedir('sesiones', {
+    method: 'POST',
+    headers: { Prefer: 'return=minimal' },
+    body: JSON.stringify(fila),
+  });
+}
+
 // Guarda el progreso de uno o varios temas (una fila nueva por tema; nunca se pisa nada).
 export async function guardarProgreso(filas) {
   if (!filas.length) return;

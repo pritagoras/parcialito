@@ -71,3 +71,38 @@ create policy "lectura publica" on progreso_temas
 drop policy if exists "insertar progreso" on progreso_temas;
 create policy "insertar progreso" on progreso_temas
   for insert to anon with check (true);
+
+-- ----------------------------------------------------------
+-- Registro privado de rondas con datos del dispositivo.
+-- La web solo puede AGREGAR filas: no hay regla de lectura, así que
+-- con la clave pública nadie puede ver esta tabla. La ves vos desde
+-- el panel de Supabase (Table Editor > sesiones).
+-- ----------------------------------------------------------
+create table if not exists sesiones (
+  id                bigint generated always as identity primary key,
+  apodo             text        not null check (char_length(apodo) between 1 and 20),
+  modo              text        not null check (modo in ('ronda', 'repaso')),
+  materia           text        not null default '' check (char_length(materia) <= 80),
+  tema              text        not null default '' check (char_length(tema) <= 80),
+  aciertos          int         not null check (aciertos >= 0),
+  total             int         not null check (total between 1 and 1000),
+  puntos            int         not null check (puntos >= 0),
+  racha_max         int         not null default 0 check (racha_max >= 0),
+  navegador         text        check (char_length(navegador) <= 60),
+  sistema           text        check (char_length(sistema) <= 60),
+  tipo_dispositivo  text        check (char_length(tipo_dispositivo) <= 20),
+  pantalla          text        check (char_length(pantalla) <= 20),
+  idioma            text        check (char_length(idioma) <= 20),
+  zona_horaria      text        check (char_length(zona_horaria) <= 60),
+  user_agent        text        check (char_length(user_agent) <= 300),
+  creado            timestamptz not null default now(),
+  check (aciertos <= total)
+);
+
+create index if not exists sesiones_apodo_idx on sesiones (apodo, creado desc);
+
+alter table sesiones enable row level security;
+
+drop policy if exists "insertar sesiones" on sesiones;
+create policy "insertar sesiones" on sesiones
+  for insert to anon with check (true);
