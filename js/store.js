@@ -11,6 +11,7 @@ const base = {
   cantidad: 10,      // preguntas por partida (0 = todas)
   mejores: {},       // { idTema: { precision, puntos, racha } }
   errores: {},       // { idPregunta: 1 }
+  apodo: '',         // nombre que se muestra en el ranking público
 };
 
 let guardado = {};

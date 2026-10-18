@@ -7,6 +7,7 @@
 import { estado, guardar, hash } from './store.js';
 import { Sonido } from './sonido.js';
 import { lanzarConfeti } from './confeti.js';
+import { rankingActivo, limpiarApodo, guardarPartida, rankingMateria, historialDe } from './ranking.js';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -120,6 +121,11 @@ function vistaInicio() {
         <button class="icono" id="btn-sonido" aria-label="${estado.silencio ? 'Activar sonido' : 'Silenciar'}">${estado.silencio ? '🔇' : '🔊'}</button>
       </header>
       <p class="bajada">Elegí una materia y practicá con preguntas de opción múltiple.</p>
+      ${rankingActivo() ? `
+        <div class="barra-ranking">
+          <button class="btn secundario" id="btn-ranking">🏆 Ranking</button>
+          <button class="btn secundario" id="btn-apodo">👤 ${estado.apodo ? esc(estado.apodo) : 'Elegir apodo'}</button>
+        </div>` : ''}
       ${nErrores ? `<button class="banner-errores" id="btn-errores"><span>Repasar mis errores</span><b>${nErrores}</b></button>` : ''}
       ${indice.materias.length
         ? `<div class="materias">${tarjetas}</div>`
@@ -130,6 +136,8 @@ function vistaInicio() {
 
   document.getElementById('btn-sonido').addEventListener('click', alternarSonido);
   document.getElementById('btn-errores')?.addEventListener('click', () => { Sonido.clic(); lanzarErrores(); });
+  document.getElementById('btn-ranking')?.addEventListener('click', () => { Sonido.clic(); vistaRanking(); });
+  document.getElementById('btn-apodo')?.addEventListener('click', () => { Sonido.clic(); vistaApodo(); });
   app.querySelectorAll('.materia').forEach((b) =>
     b.addEventListener('click', () => { Sonido.clic(); vistaMateria(Number(b.dataset.materia)); }));
 }
@@ -234,6 +242,10 @@ async function lanzarTemas(materia, temas, cantidad) {
     empezarJuego(pool, {
       titulo: materia.nombre,
       temaId: temas.length === 1 ? temas[0].id : null,
+      // datos para el ranking público (solo cuentan las rondas normales)
+      ranking: true,
+      materiaNombre: materia.nombre,
+      temaNombre: temas.length === 1 ? temas[0].nombre : 'Varios temas',
       repetir: () => lanzarTemas(materia, temas, cantidad),
       volver: () => vistaInicio(),
     });
@@ -483,6 +495,7 @@ function vistaResultado() {
         <div class="cifra"><b>${precision}%</b><span>${j.aciertos} de ${total}</span></div>
         <div class="cifra"><b>${j.mejorRacha}</b><span>Mejor racha</span></div>
       </div>
+      <p class="estado-ranking" id="estado-ranking" role="status"></p>
       <div class="botones">
         <button class="btn primario" id="btn-otra">Jugar de nuevo</button>
         ${j.falladas.length ? `<button class="btn secundario" id="btn-falladas">Repasar falladas (${j.falladas.length})</button>` : ''}
@@ -495,10 +508,33 @@ function vistaResultado() {
   const falladasPool = j.falladas;
   juego = null;
 
+  // Ranking público: solo las rondas normales (no el repaso de errores ni de falladas)
+  if (rankingActivo() && meta.ranking) {
+    const estadoEl = document.getElementById('estado-ranking');
+    if (!estado.apodo) {
+      estadoEl.textContent = 'Elegí un apodo en el inicio para aparecer en el ranking.';
+    } else {
+      estadoEl.textContent = 'Guardando en el ranking…';
+      guardarPartida({
+        apodo: estado.apodo,
+        materia: meta.materiaNombre,
+        tema: meta.temaNombre,
+        aciertos: j.aciertos,
+        total,
+        puntos: j.puntos,
+        rachaMax: j.mejorRacha,
+      }).then(
+        () => { const el = document.getElementById('estado-ranking'); if (el) el.textContent = '✓ Guardado en el ranking'; },
+        () => { const el = document.getElementById('estado-ranking'); if (el) el.textContent = 'No se pudo guardar en el ranking.'; },
+      );
+    }
+  }
+
   document.getElementById('btn-otra').addEventListener('click', () => { Sonido.clic(); meta.repetir(); });
   document.getElementById('btn-falladas')?.addEventListener('click', () => {
     Sonido.clic();
-    empezarJuego(falladasPool, { ...meta, titulo: 'Repaso de falladas', temaId: null, repetir: () => empezarJuego(falladasPool, { ...meta, temaId: null }) });
+    const metaFalladas = { ...meta, temaId: null, ranking: false };
+    empezarJuego(falladasPool, { ...metaFalladas, titulo: 'Repaso de falladas', repetir: () => empezarJuego(falladasPool, metaFalladas) });
   });
   document.getElementById('btn-inicio').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
 
@@ -506,6 +542,137 @@ function vistaResultado() {
   Sonido.fin(bueno);
   if (bueno) lanzarConfeti(precision >= 90 ? 160 : 100);
   window.scrollTo(0, 0);
+}
+
+// ---------- Pantallas: apodo, ranking e historial ----------
+
+function vistaApodo() {
+  app.innerHTML = `
+    <main class="pantalla">
+      <button class="btn enlace" id="btn-volver">← Inicio</button>
+      <h1 class="titulo-seccion">Tu apodo</h1>
+      <p class="bajada">Es el nombre que se ve en el ranking. Podés cambiarlo cuando quieras.</p>
+      <form class="form-apodo" id="form-apodo">
+        <input id="inp-apodo" type="text" maxlength="20" autocomplete="off"
+               placeholder="Ej: Gonza" aria-label="Apodo" value="${esc(estado.apodo)}">
+        <button class="btn primario" type="submit">Guardar</button>
+      </form>
+      ${estado.apodo ? '<button class="btn secundario" id="btn-historial">Ver mi historial</button>' : ''}
+    </main>`;
+
+  const input = document.getElementById('inp-apodo');
+  document.getElementById('btn-volver').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
+  document.getElementById('btn-historial')?.addEventListener('click', () => {
+    Sonido.clic();
+    vistaHistorial(estado.apodo, vistaApodo);
+  });
+  document.getElementById('form-apodo').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const apodo = limpiarApodo(input.value);
+    if (!apodo) { avisar('Escribí un apodo'); input.focus(); return; }
+    estado.apodo = apodo;
+    guardar();
+    Sonido.clic();
+    vistaInicio();
+    avisar(`Listo, ${apodo}`);
+  });
+  window.scrollTo(0, 0);
+  input.focus();
+}
+
+let pedidoRanking = 0;   // descarta respuestas viejas si el usuario cambia de filtro rápido
+
+function vistaRanking(iMateria = 0, tema = '') {
+  if (!indice.materias.length) { vistaInicio(); return; }
+  const m = indice.materias[iMateria];
+
+  app.innerHTML = `
+    <main class="pantalla">
+      <button class="btn enlace" id="btn-volver">← Inicio</button>
+      <h1 class="titulo-seccion">🏆 Ranking</h1>
+      <div class="chips" role="group" aria-label="Materia">
+        ${indice.materias.map((x, i) => `
+          <button class="chip ${i === iMateria ? 'activo' : ''}" data-i="${i}">${esc(x.nombre)}</button>`).join('')}
+      </div>
+      <label class="filtro-tema">
+        <span>Tema</span>
+        <select id="sel-tema">
+          <option value="">Todos</option>
+          <option value="Varios temas" ${tema === 'Varios temas' ? 'selected' : ''}>Varios temas (mezclados)</option>
+          ${m.temas.map((t) => `<option value="${esc(t.nombre)}" ${t.nombre === tema ? 'selected' : ''}>${esc(t.nombre)}</option>`).join('')}
+        </select>
+      </label>
+      <p class="nota-ranking">Se muestra la mejor partida de cada apodo, ordenada por puntos.</p>
+      <div id="lista-ranking"><p class="estado-ranking">Cargando…</p></div>
+    </main>`;
+
+  document.getElementById('btn-volver').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
+  app.querySelectorAll('.chip').forEach((b) =>
+    b.addEventListener('click', () => { Sonido.clic(); vistaRanking(Number(b.dataset.i)); }));
+  document.getElementById('sel-tema').addEventListener('change', (e) => {
+    Sonido.clic();
+    vistaRanking(iMateria, e.target.value);
+  });
+  window.scrollTo(0, 0);
+
+  const mio = ++pedidoRanking;
+  const caja = document.getElementById('lista-ranking');
+  rankingMateria(m.nombre, tema || null).then((filas) => {
+    if (mio !== pedidoRanking) return;
+    if (!filas.length) {
+      caja.innerHTML = '<p class="estado-ranking">Todavía nadie jugó acá. ¡Sé el primero!</p>';
+      return;
+    }
+    caja.innerHTML = `<ol class="lista-ranking">${filas.map((f, n) => `
+      <li class="${estado.apodo && f.apodo.toLowerCase() === estado.apodo.toLowerCase() ? 'yo' : ''}">
+        <span class="pos">${n + 1}</span>
+        <button class="nombre-jugador" data-apodo="${esc(f.apodo)}">${esc(f.apodo)}</button>
+        <span class="detalle-fila">${esc(f.tema)} · ${f.aciertos}/${f.total}</span>
+        <b class="pts">${f.puntos}</b>
+      </li>`).join('')}</ol>`;
+    caja.querySelectorAll('.nombre-jugador').forEach((b) =>
+      b.addEventListener('click', () => {
+        Sonido.clic();
+        vistaHistorial(b.dataset.apodo, () => vistaRanking(iMateria, tema));
+      }));
+  }).catch(() => {
+    if (mio !== pedidoRanking) return;
+    caja.innerHTML = '<p class="estado-ranking">No se pudo cargar el ranking. Probá de nuevo en un rato.</p>';
+  });
+}
+
+function vistaHistorial(apodo, volver) {
+  app.innerHTML = `
+    <main class="pantalla">
+      <button class="btn enlace" id="btn-volver">← Volver</button>
+      <h1 class="titulo-seccion">Historial de ${esc(apodo)}</h1>
+      <div id="lista-historial"><p class="estado-ranking">Cargando…</p></div>
+    </main>`;
+  document.getElementById('btn-volver').addEventListener('click', () => { Sonido.clic(); volver(); });
+  window.scrollTo(0, 0);
+
+  const caja = document.getElementById('lista-historial');
+  historialDe(apodo).then((filas) => {
+    if (!caja.isConnected) return;
+    if (!filas.length) {
+      caja.innerHTML = '<p class="estado-ranking">Todavía no hay partidas guardadas.</p>';
+      return;
+    }
+    caja.innerHTML = `<ul class="lista-historial">${filas.map((f) => {
+      const pct = Math.round((f.aciertos / f.total) * 100);
+      const fecha = new Date(f.creado).toLocaleDateString('es-AR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+      return `
+        <li>
+          <div class="cuerpo">
+            <span class="nombre">${esc(f.materia)} · ${esc(f.tema)}</span>
+            <span class="detalle">${fecha} · ${f.aciertos}/${f.total} (${pct}%) · racha ${f.racha_max}</span>
+          </div>
+          <b class="pts">${f.puntos}</b>
+        </li>`;
+    }).join('')}</ul>`;
+  }).catch(() => {
+    if (caja.isConnected) caja.innerHTML = '<p class="estado-ranking">No se pudo cargar el historial.</p>';
+  });
 }
 
 // ---------- Teclado ----------
