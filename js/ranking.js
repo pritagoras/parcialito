@@ -14,17 +14,25 @@ const SUPABASE_ANON_KEY = 'sb_publishable_UXVhm9cko_YZm3GrAUBRyg_YSIfM03O';   //
 export const rankingActivo = () =>
   SUPABASE_URL.startsWith('https://') && SUPABASE_ANON_KEY.length > 20;
 
+// Acepta la URL con o sin "/rest/v1/" al final y con o sin barra final.
+const BASE = SUPABASE_URL.trim().replace(/\/rest\/v1\/?$/, '').replace(/\/+$/, '');
+
 async function pedir(ruta, opciones = {}) {
-  const r = await fetch(`${SUPABASE_URL}/rest/v1/${ruta}`, {
-    ...opciones,
-    headers: {
-      apikey: SUPABASE_ANON_KEY,
-      Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-      'Content-Type': 'application/json',
-      ...(opciones.headers || {}),
-    },
-  });
-  if (!r.ok) throw new Error(`Ranking: error ${r.status}`);
+  const headers = {
+    apikey: SUPABASE_ANON_KEY,
+    'Content-Type': 'application/json',
+    ...(opciones.headers || {}),
+  };
+  // Las claves nuevas (sb_publishable_...) NO son JWT y no van en Authorization;
+  // solo las claves viejas "anon" (empiezan con eyJ) se mandan también ahí.
+  if (SUPABASE_ANON_KEY.startsWith('eyJ')) headers.Authorization = `Bearer ${SUPABASE_ANON_KEY}`;
+
+  const r = await fetch(`${BASE}/rest/v1/${ruta}`, { ...opciones, headers });
+  if (!r.ok) {
+    // El detalle queda en la consola del navegador (F12) para poder diagnosticar.
+    console.error('[Ranking]', r.status, await r.text().catch(() => ''));
+    throw new Error(`Ranking: error ${r.status}`);
+  }
   return r.status === 204 ? null : r.json().catch(() => null);
 }
 
