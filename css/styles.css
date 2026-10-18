@@ -434,3 +434,60 @@ h1, h2, h3, p { margin: 0; }
 .lista-progreso .pct small { display: block; font-family: var(--fuente); color: var(--tenue); font-size: .8rem; }
 
 .aviso-datos { margin-top: 1.25rem; color: var(--tenue); font-size: .85rem; max-width: 52ch; }
+
+/* ---------- Imagen en la pregunta ---------- */
+.q-figura { margin: 1rem 0 0; }
+.q-figura a { display: block; }
+.q-figura img {
+  display: block;
+  max-width: 100%;
+  max-height: min(55vh, 26rem);
+  margin: 0 auto;
+  object-fit: contain;
+  background: var(--noche);
+  border: 2px solid var(--linea);
+  border-radius: 12px;
+  cursor: zoom-in;
+}
+.q-figura-error { color: var(--tenue); font-size: .92rem; text-align: center; padding: 1rem; }
+
+/* ---------- Reportar pregunta ---------- */
+.pie-tarjeta { display: flex; justify-content: flex-end; margin-top: .9rem; }
+.reportar {
+  background: none; border: 0; padding: .3rem .1rem;
+  color: var(--tenue); font-size: .88rem; font-weight: 600;
+}
+.reportar:hover { color: var(--mal); }
+.reportar[disabled] { color: var(--ok); cursor: default; }
+
+dialog.reporte {
+  width: min(92vw, 28rem);
+  padding: 1.25rem;
+  background: var(--panel);
+  color: var(--crema);
+  border: 2px solid var(--linea);
+  border-radius: var(--radio);
+}
+dialog.reporte::backdrop { background: rgba(10, 6, 24, .72); }
+dialog.reporte h2 { font-size: 1.25rem; font-weight: 800; margin-bottom: .5rem; }
+.reporte-texto {
+  color: var(--tenue); font-size: .92rem; margin-bottom: 1rem;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+dialog.reporte .campo { display: block; margin-bottom: .9rem; }
+dialog.reporte .campo > span { display: block; margin-bottom: .3rem; font-weight: 600; font-size: .95rem; }
+dialog.reporte select,
+dialog.reporte textarea {
+  width: 100%;
+  padding: .65rem .8rem;
+  background: var(--noche);
+  color: var(--crema);
+  border: 2px solid var(--linea);
+  border-radius: 12px;
+  font: inherit;
+}
+dialog.reporte textarea { resize: vertical; min-height: 4.5rem; }
+dialog.reporte select:focus,
+dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
+.reporte-estado { min-height: 1.4rem; color: var(--tenue); font-size: .92rem; }
+.reporte-botones { display: flex; justify-content: flex-end; gap: .6rem; margin-top: .4rem; }

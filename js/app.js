@@ -7,7 +7,7 @@
 import { estado, guardar, hash } from './store.js';
 import { Sonido } from './sonido.js';
 import { lanzarConfeti } from './confeti.js';
-import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, rankingMateria, historialDe, progresoDe } from './ranking.js';
+import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte } from './ranking.js';
 import { infoDispositivo } from './dispositivo.js';
 
 const app = document.getElementById('app');
@@ -55,6 +55,12 @@ function colorMateria(m, i) {
 
 // ---------- Datos ----------
 
+// Solo acepta https:// o rutas relativas (nada de javascript:, data: ni //otro-sitio)
+function urlImagen(valor) {
+  const u = String(valor || '').trim();
+  return /^https:\/\/\S+$/i.test(u) || /^(?!\/)[\w./%-]+$/.test(u) ? u : '';
+}
+
 // Convierte el JSON de un tema en preguntas listas para jugar.
 // Las preguntas inválidas se descartan (y se avisa en la consola).
 function normalizar(json, tema, materia) {
@@ -72,6 +78,8 @@ function normalizar(json, tema, materia) {
       opciones: ops,
       correcta: idx,
       explicacion: p.explicacion ? String(p.explicacion) : '',
+      imagen: urlImagen(p.imagen),
+      imagenAlt: p.imagen_alt ? String(p.imagen_alt) : '',
       tema: tema.nombre,
       temaId: tema.id,
       materia: materia.nombre,
@@ -329,6 +337,7 @@ function empezarJuego(pool, meta) {
     mejorRacha: 0,
     aciertos: 0,
     falladas: [],
+    intentos: [],     // respuestas pendientes de enviar (dificultad real)
     respondida: false,
   };
 
@@ -347,6 +356,7 @@ function empezarJuego(pool, meta) {
     if (window.confirm('¿Salir de la partida? Se pierde el progreso de esta ronda.')) {
       Sonido.clic();
       const volver = juego.meta.volver;
+      enviarIntentos(juego);
       juego = null;
       volver();
     }
@@ -379,6 +389,18 @@ function mostrarPregunta() {
     <div class="tarjeta-pregunta" id="tarjeta">
       <p class="tema-etq">${esc(q.tema)}</p>
       <h2 class="pregunta">${esc(q.texto)}</h2>
+      ${q.imagen ? `
+        <figure class="q-figura">
+          <a href="${esc(q.imagen)}" target="_blank" rel="noopener" aria-label="Abrir la imagen en tamaño completo">
+            <img src="${esc(q.imagen)}" alt="${esc(q.imagenAlt)}" loading="eager" decoding="async">
+          </a>
+        </figure>` : ''}
+      ${rankingActivo() ? `
+        <div class="pie-tarjeta">
+          <button class="reportar" id="btn-reportar" type="button" ${estado.reportadas?.[q.id] ? 'disabled' : ''}>
+            ${estado.reportadas?.[q.id] ? '✓ Reportada' : '⚑ Reportar pregunta'}
+          </button>
+        </div>` : ''}
     </div>
     <div class="opciones" id="opciones" role="group" aria-label="Opciones de respuesta">
       ${q.orden.map((oi, pos) => `
@@ -394,6 +416,10 @@ function mostrarPregunta() {
   document.querySelectorAll('.opcion').forEach((b) =>
     b.addEventListener('click', () => responder(Number(b.dataset.pos))));
   document.getElementById('btn-sig').addEventListener('click', siguiente);
+  document.getElementById('btn-reportar')?.addEventListener('click', (e) => abrirReporte(q, e.currentTarget));
+  document.querySelector('.q-figura img')?.addEventListener('error', (e) => {
+    e.currentTarget.closest('.q-figura').innerHTML = '<p class="q-figura-error">No se pudo cargar la imagen.</p>';
+  });
 }
 
 function responder(pos) {
@@ -404,6 +430,15 @@ function responder(pos) {
   const q = j.preguntas[j.i];
   const acerto = q.orden[pos] === q.correcta;
   const feedback = document.getElementById('feedback');
+
+  // Para la estadística de dificultad: solo si acertó o no (nada personal)
+  j.intentos.push({
+    pregunta_id: q.id,
+    tema_id: q.temaId,
+    pregunta: q.texto.slice(0, 160),
+    acierto: acerto,
+    modo: j.meta.ranking ? 'ronda' : 'repaso',
+  });
 
   document.getElementById('opciones').classList.add('bloqueadas');
   document.querySelectorAll('.opcion').forEach((b, p) => {
@@ -466,6 +501,81 @@ function siguiente() {
   j.i++;
   if (j.i >= j.preguntas.length) vistaResultado();
   else mostrarPregunta();
+}
+
+// ---------- Dificultad real y reportes ----------
+
+// Manda a Supabase las respuestas acumuladas de la ronda (sin esperar y sin romper nada si falla)
+function enviarIntentos(j) {
+  if (!j || !j.intentos.length) return;
+  const filas = j.intentos;
+  j.intentos = [];
+  if (rankingActivo()) registrarIntentos(filas).catch(() => {});
+}
+
+const MOTIVOS_REPORTE = [
+  ['respuesta_incorrecta', 'La respuesta marcada como correcta está mal'],
+  ['enunciado', 'El enunciado es confuso o tiene errores'],
+  ['opciones', 'Las opciones están mal armadas'],
+  ['imagen', 'La imagen no se ve o no corresponde'],
+  ['otro', 'Otro motivo'],
+];
+
+function abrirReporte(q, boton) {
+  const motivos = MOTIVOS_REPORTE.filter(([clave]) => clave !== 'imagen' || q.imagen);
+  const dlg = document.createElement('dialog');
+  dlg.className = 'reporte';
+  dlg.setAttribute('aria-labelledby', 'reporte-titulo');
+  dlg.innerHTML = `
+    <h2 id="reporte-titulo">Reportar pregunta</h2>
+    <p class="reporte-texto">${esc(q.texto)}</p>
+    <label class="campo">
+      <span>¿Qué está mal?</span>
+      <select id="reporte-motivo">
+        ${motivos.map(([clave, txt]) => `<option value="${clave}">${esc(txt)}</option>`).join('')}
+      </select>
+    </label>
+    <label class="campo">
+      <span>Comentario (opcional)</span>
+      <textarea id="reporte-comentario" rows="3" maxlength="300" placeholder="Contanos qué viste mal"></textarea>
+    </label>
+    <p class="reporte-estado" id="reporte-estado" role="status"></p>
+    <div class="reporte-botones">
+      <button class="btn secundario" id="reporte-cancelar" type="button">Cancelar</button>
+      <button class="btn primario" id="reporte-enviar" type="button">Enviar</button>
+    </div>`;
+  document.body.appendChild(dlg);
+
+  const estadoEl = dlg.querySelector('#reporte-estado');
+  const btnEnviar = dlg.querySelector('#reporte-enviar');
+  dlg.querySelector('#reporte-cancelar').addEventListener('click', () => dlg.close());
+  dlg.addEventListener('close', () => dlg.remove());
+
+  btnEnviar.addEventListener('click', async () => {
+    btnEnviar.disabled = true;
+    estadoEl.textContent = 'Enviando…';
+    try {
+      await enviarReporte({
+        pregunta_id: q.id,
+        tema_id: q.temaId,
+        pregunta: q.texto.slice(0, 300),
+        correcta: q.opciones[q.correcta].slice(0, 200),
+        motivo: dlg.querySelector('#reporte-motivo').value,
+        comentario: dlg.querySelector('#reporte-comentario').value.trim().slice(0, 300) || null,
+        apodo: estado.apodo || null,
+      });
+      (estado.reportadas ||= {})[q.id] = 1;
+      guardar();
+      if (boton?.isConnected) { boton.disabled = true; boton.textContent = '✓ Reportada'; }
+      dlg.close();
+      avisar('¡Gracias por avisar!');
+    } catch {
+      btnEnviar.disabled = false;
+      estadoEl.textContent = 'No se pudo enviar. Probá de nuevo.';
+    }
+  });
+
+  dlg.showModal();
 }
 
 // ---------- Pantalla: resultado ----------
@@ -542,6 +652,7 @@ function vistaResultado() {
 
   const { meta } = j;
   const falladasPool = j.falladas;
+  enviarIntentos(j);
   juego = null;
 
   // Ranking público: solo las rondas normales (no el repaso de errores ni de falladas)
@@ -611,7 +722,7 @@ function vistaApodo() {
         <button class="btn primario" type="submit">Guardar</button>
       </form>
       ${estado.apodo ? '<button class="btn secundario" id="btn-historial">Ver mi historial</button>' : ''}
-      <p class="aviso-datos">Al terminar una ronda se guardan tu apodo, tus resultados y datos básicos de tu dispositivo (navegador, sistema, pantalla, idioma y zona horaria) para estadísticas. El ranking solo muestra apodo y puntos.</p>
+      <p class="aviso-datos">Al terminar una ronda se guardan tu apodo, tus resultados y datos básicos de tu dispositivo (navegador, sistema, pantalla, idioma y zona horaria) para estadísticas. También se registra, sin tu apodo, si cada pregunta se respondió bien o mal. El ranking solo muestra apodo y puntos.</p>
     </main>`;
 
   const input = document.getElementById('inp-apodo');
@@ -747,6 +858,7 @@ function vistaHistorial(apodo, volver) {
 
 document.addEventListener('keydown', (e) => {
   if (!juego || e.ctrlKey || e.metaKey || e.altKey) return;
+  if (e.target.closest?.('dialog, input, textarea, select')) return;   // escribiendo en un formulario
   const k = e.key.toLowerCase();
   if (!juego.respondida) {
     const pos = ['1', '2', '3', '4'].indexOf(k);

@@ -119,3 +119,24 @@ export async function historialDe(apodo, limite = 50) {
   });
   return (await pedir(`partidas?${consulta(q)}`)) || [];
 }
+
+// Respuestas de una ronda (solo acierto/fallo por pregunta, sin apodo).
+// Sirven para calcular qué preguntas fallan más entre todos los jugadores.
+export async function registrarIntentos(filas) {
+  if (!filas.length) return;
+  await pedir('intentos_preguntas', {
+    method: 'POST',
+    headers: { Prefer: 'return=minimal' },
+    body: JSON.stringify(filas),
+  });
+}
+
+// Reporte de una pregunta mal armada o con la respuesta equivocada.
+// La web solo puede escribir; se revisa desde el panel de Supabase.
+export async function enviarReporte(fila) {
+  await pedir('reportes_preguntas', {
+    method: 'POST',
+    headers: { Prefer: 'return=minimal' },
+    body: JSON.stringify(fila),
+  });
+}
