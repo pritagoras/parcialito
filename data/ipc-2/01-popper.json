@@ -331,6 +331,13 @@
       ],
       "correcta": "C",
       "explicacion": "Dado que las vivencias subjetivas no garantizan la verdad, la objetividad popperiana se basa en el carácter público, regulado e intersubjetivo del método científico y sus decisiones de aceptación o revisión."
+    },
+    {
+      "pregunta": "a",
+      "opciones": ["a", "b", "c", "d"],
+      "correcta": "A",
+      "imagen": "data/img/p-d381630c-amm.webp",
+      "imagen_alt": "aa"
     }
   ]
 }
