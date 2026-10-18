@@ -8,8 +8,8 @@
 // ==========================================================
 
 // Supabase > Project Settings > API
-const SUPABASE_URL = '';        // ej: 'https://abcdefgh.supabase.co'
-const SUPABASE_ANON_KEY = '';   // la clave "anon" / "publishable" (es pública por diseño)
+const SUPABASE_URL = 'https://tnpcvmnwuhsxdxvwxvlh.supabase.co/rest/v1/';        // ej: 'https://abcdefgh.supabase.co'
+const SUPABASE_ANON_KEY = 'sb_publishable_UXVhm9cko_YZm3GrAUBRyg_YSIfM03O';   // la clave "anon" / "publishable" (es pública por diseño)
 
 export const rankingActivo = () =>
   SUPABASE_URL.startsWith('https://') && SUPABASE_ANON_KEY.length > 20;
