@@ -7,7 +7,8 @@
 import { estado, guardar, hash } from './store.js';
 import { Sonido } from './sonido.js';
 import { lanzarConfeti } from './confeti.js';
-import { rankingActivo, limpiarApodo, guardarPartida, rankingMateria, historialDe } from './ranking.js';
+import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, rankingMateria, historialDe, progresoDe } from './ranking.js';
+import { infoDispositivo } from './dispositivo.js';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -72,6 +73,7 @@ function normalizar(json, tema, materia) {
       correcta: idx,
       explicacion: p.explicacion ? String(p.explicacion) : '',
       tema: tema.nombre,
+      temaId: tema.id,
       materia: materia.nombre,
     });
   });
@@ -83,8 +85,20 @@ async function cargarTema(tema, materia) {
   const r = await fetch(tema.archivo, { cache: 'no-cache' });
   if (!r.ok) throw new Error(`No se pudo leer ${tema.archivo} (${r.status})`);
   const preguntas = normalizar(await r.json(), tema, materia);
+  // Si editaste o borraste preguntas, las "dominadas" viejas dejan de contar
+  if (estado.dominadas[tema.id]) {
+    const vigentes = new Set(preguntas.map((q) => q.id));
+    for (const id of Object.keys(estado.dominadas[tema.id])) {
+      if (!vigentes.has(id)) delete estado.dominadas[tema.id][id];
+    }
+  }
   cache.set(tema.id, preguntas);
   return preguntas;
+}
+
+// Cuántas preguntas del tema respondiste bien al menos una vez
+function dominadasDe(tema) {
+  return Math.min(Object.keys(estado.dominadas[tema.id] || {}).length, tema.preguntas);
 }
 
 function dominio(materia) {
@@ -165,7 +179,7 @@ function vistaMateria(i) {
         <input type="checkbox" data-n="${n}" checked>
         <span class="cuerpo">
           <span class="nombre">${esc(t.nombre)}</span><br>
-          <span class="detalle">${plural(t.preguntas, 'pregunta', 'preguntas')}</span>
+          <span class="detalle">${plural(t.preguntas, 'pregunta', 'preguntas')}${dominadasDe(t) ? ` · ${dominadasDe(t)} dominadas` : ''}</span>
         </span>
         ${mejor ? `<span class="mejor ${mejor.precision >= 80 ? 'alto' : ''}">Mejor ${mejor.precision}%</span>` : ''}
       </label>`;
@@ -406,6 +420,7 @@ function responder(pos) {
     const ganado = 100 + Math.min(j.racha - 1, 10) * 10;   // bonus por racha
     j.puntos += ganado;
     delete estado.errores[q.id];                            // ya lo sabés: sale de "errores"
+    (estado.dominadas[q.temaId] ||= {})[q.id] = 1;          // cuenta para el progreso del tema
     Sonido.acierto(j.racha);
     actualizarRacha(true);
 
@@ -454,6 +469,27 @@ function siguiente() {
 }
 
 // ---------- Pantalla: resultado ----------
+
+// Una fila de progreso por cada tema que apareció en la ronda
+function filasProgreso(preguntas) {
+  const ids = new Set(preguntas.map((q) => q.temaId));
+  const filas = [];
+  for (const m of indice.materias) {
+    for (const t of m.temas) {
+      if (!ids.has(t.id)) continue;
+      filas.push({
+        apodo: estado.apodo,
+        materia: m.nombre,
+        tema_id: t.id,
+        tema: t.nombre,
+        dominadas: dominadasDe(t),
+        total: t.preguntas,
+        mejor_precision: estado.mejores[t.id]?.precision || 0,
+      });
+    }
+  }
+  return filas;
+}
 
 function vistaResultado() {
   const j = juego;
@@ -530,6 +566,23 @@ function vistaResultado() {
     }
   }
 
+  // Progreso por tema: guarda cuántas preguntas dominás de cada tema que apareció en la ronda
+  if (rankingActivo() && estado.apodo) {
+    guardarProgreso(filasProgreso(j.preguntas)).catch(() => {});
+    // Registro privado de la ronda con datos del dispositivo (no se muestra en la página)
+    registrarSesion({
+      apodo: estado.apodo,
+      modo: meta.ranking ? 'ronda' : 'repaso',
+      materia: String(meta.materiaNombre || meta.titulo || '').slice(0, 80),
+      tema: String(meta.temaNombre || '').slice(0, 80),
+      aciertos: j.aciertos,
+      total,
+      puntos: j.puntos,
+      racha_max: j.mejorRacha,
+      ...infoDispositivo(),
+    }).catch(() => {});
+  }
+
   document.getElementById('btn-otra').addEventListener('click', () => { Sonido.clic(); meta.repetir(); });
   document.getElementById('btn-falladas')?.addEventListener('click', () => {
     Sonido.clic();
@@ -558,6 +611,7 @@ function vistaApodo() {
         <button class="btn primario" type="submit">Guardar</button>
       </form>
       ${estado.apodo ? '<button class="btn secundario" id="btn-historial">Ver mi historial</button>' : ''}
+      <p class="aviso-datos">Al terminar una ronda se guardan tu apodo, tus resultados y datos básicos de tu dispositivo (navegador, sistema, pantalla, idioma y zona horaria) para estadísticas. El ranking solo muestra apodo y puntos.</p>
     </main>`;
 
   const input = document.getElementById('inp-apodo');
@@ -652,13 +706,27 @@ function vistaHistorial(apodo, volver) {
   window.scrollTo(0, 0);
 
   const caja = document.getElementById('lista-historial');
-  historialDe(apodo).then((filas) => {
+  Promise.all([historialDe(apodo), progresoDe(apodo).catch(() => [])]).then(([filas, progreso]) => {
     if (!caja.isConnected) return;
-    if (!filas.length) {
+    if (!filas.length && !progreso.length) {
       caja.innerHTML = '<p class="estado-ranking">Todavía no hay partidas guardadas.</p>';
       return;
     }
-    caja.innerHTML = `<ul class="lista-historial">${filas.map((f) => {
+    const bloqueProgreso = progreso.length ? `
+      <h2 class="subtitulo">Progreso por tema</h2>
+      <ul class="lista-progreso">${progreso.map((p) => {
+        const pct = Math.round((p.dominadas / p.total) * 100);
+        return `
+          <li>
+            <div class="cuerpo">
+              <span class="nombre">${esc(p.materia)} · ${esc(p.tema)}</span>
+              <span class="riel"><span class="relleno" style="width:${pct}%"></span></span>
+            </div>
+            <span class="pct">${pct}%<small>${p.dominadas}/${p.total}</small></span>
+          </li>`;
+      }).join('')}</ul>
+      ${filas.length ? '<h2 class="subtitulo">Partidas</h2>' : ''}` : '';
+    caja.innerHTML = bloqueProgreso + `<ul class="lista-historial">${filas.map((f) => {
       const pct = Math.round((f.aciertos / f.total) * 100);
       const fecha = new Date(f.creado).toLocaleDateString('es-AR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
       return `
