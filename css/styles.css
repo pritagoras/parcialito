@@ -359,3 +359,61 @@ h1, h2, h3, p { margin: 0; }
 @media (max-width: 420px) {
   .puntos { display: none; }
 }
+
+/* ---------- Ranking, apodo e historial ---------- */
+.barra-ranking { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.25rem; }
+.barra-ranking .btn { padding: .6rem 1.1rem; }
+
+.titulo-seccion { font-size: clamp(1.7rem, 6vw, 2.2rem); font-weight: 800; letter-spacing: -.02em; line-height: 1.15; margin-bottom: .75rem; overflow-wrap: anywhere; }
+
+.form-apodo { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1rem; }
+.form-apodo input,
+.filtro-tema select {
+  font: inherit; color: var(--crema);
+  background: var(--panel); border: 2px solid var(--linea); border-radius: 14px;
+  padding: .75rem 1rem;
+}
+.form-apodo input { flex: 1 1 12rem; min-width: 0; }
+.form-apodo input:focus,
+.filtro-tema select:focus { border-color: var(--violeta); outline: none; }
+
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.chip {
+  padding: .45rem .95rem; border-radius: 99px;
+  background: var(--panel); border: 2px solid var(--linea);
+  font-weight: 700; font-size: .95rem;
+}
+.chip:hover { border-color: var(--violeta); }
+.chip.activo { background: var(--violeta); border-color: var(--violeta); color: #120a26; }
+
+.filtro-tema { display: flex; align-items: center; gap: .7rem; color: var(--tenue); margin-bottom: .5rem; }
+.filtro-tema select { flex: 1; min-width: 0; padding: .55rem .8rem; }
+.nota-ranking { color: var(--tenue); font-size: .9rem; margin-bottom: 1rem; }
+
+.estado-ranking { color: var(--tenue); text-align: center; padding: 1rem 0; min-height: 1.5em; }
+.resultado .estado-ranking { padding: 0 0 1.25rem; }
+
+.lista-ranking, .lista-historial { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
+.lista-ranking li {
+  display: grid; grid-template-columns: 2rem 1fr auto; align-items: center; column-gap: .75rem;
+  padding: .7rem 1rem;
+  background: var(--panel); border: 2px solid var(--linea); border-radius: 14px;
+}
+.lista-ranking li.yo { border-color: var(--ambar); background: var(--panel-2); }
+.lista-ranking .pos { font-family: var(--pixel); color: var(--ambar); text-align: center; }
+.lista-ranking .nombre-jugador {
+  background: none; border: 0; padding: 0; text-align: left;
+  font-weight: 700; overflow-wrap: anywhere;
+}
+.lista-ranking .nombre-jugador:hover { color: var(--violeta); text-decoration: underline; }
+.lista-ranking .detalle-fila { grid-column: 2; grid-row: 2; color: var(--tenue); font-size: .88rem; }
+.lista-ranking .pts, .lista-historial .pts { grid-column: 3; grid-row: 1 / span 2; font-family: var(--pixel); font-size: 1.15rem; color: var(--ambar); }
+
+.lista-historial li {
+  display: flex; align-items: center; justify-content: space-between; gap: .75rem;
+  padding: .7rem 1rem;
+  background: var(--panel); border: 2px solid var(--linea); border-radius: 14px;
+}
+.lista-historial .cuerpo { min-width: 0; }
+.lista-historial .nombre { display: block; font-weight: 700; line-height: 1.25; overflow-wrap: anywhere; }
+.lista-historial .detalle { color: var(--tenue); font-size: .88rem; }
