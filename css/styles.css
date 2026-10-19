@@ -491,3 +491,40 @@ dialog.reporte select:focus,
 dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 .reporte-estado { min-height: 1.4rem; color: var(--tenue); font-size: .92rem; }
 .reporte-botones { display: flex; justify-content: flex-end; gap: .6rem; margin-top: .4rem; }
+
+/* ---------- Repaso de hoy ---------- */
+.banner-repaso {
+  width: 100%;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: .9rem 1.1rem;
+  margin-bottom: .8rem;
+  background: rgba(155, 123, 255, .14);
+  border: 2px solid rgba(155, 123, 255, .6);
+  border-radius: var(--radio);
+  font-weight: 700;
+  text-align: left;
+}
+.banner-repaso b {
+  background: var(--violeta); color: #120a26;
+  min-width: 2rem; padding: .1rem .55rem;
+  border-radius: 99px; text-align: center;
+}
+.al-dia { color: var(--tenue); font-size: .92rem; margin: 0 0 1rem; }
+
+/* ---------- Dificultad ---------- */
+.dato-dificultad { margin-top: .5rem; font-size: .92rem; color: var(--tenue); }
+.dato-dificultad b { color: var(--ambar); }
+
+/* ---------- Simulacro ---------- */
+.grupo-botones { display: flex; flex-wrap: wrap; gap: .6rem; }
+.reloj {
+  font-family: var(--pixel); font-size: 1.05rem; white-space: nowrap;
+  padding: .3rem .7rem;
+  background: var(--panel);
+  border: 2px solid var(--linea);
+  border-radius: 12px;
+  color: var(--tenue);
+}
+.reloj.urgente { color: var(--mal); border-color: var(--mal); }
+.opcion.elegida { border-color: var(--violeta); background: var(--panel-2); }
+.opcion.elegida .letra { background: var(--violeta); border-color: var(--violeta); color: #120a26; }

@@ -30,10 +30,15 @@ create table if not exists public.intentos_preguntas (
   tema_id      text check (char_length(tema_id) <= 80),
   pregunta     text check (char_length(pregunta) <= 160),
   acierto      boolean not null,
-  modo         text not null default 'ronda' check (modo in ('ronda','repaso')),
+  modo         text not null default 'ronda' check (modo in ('ronda','repaso','simulacro')),
   creado       timestamptz not null default now()
 );
 create index if not exists intentos_preguntas_id_idx on public.intentos_preguntas (pregunta_id);
+
+-- Si la tabla ya existía de antes, acepta también los intentos del simulacro
+alter table public.intentos_preguntas drop constraint if exists intentos_preguntas_modo_check;
+alter table public.intentos_preguntas add constraint intentos_preguntas_modo_check
+  check (modo in ('ronda','repaso','simulacro'));
 
 -- ---------- Seguridad: la web solo inserta ----------
 alter table public.reportes_preguntas enable row level security;
@@ -53,6 +58,7 @@ grant insert on public.reportes_preguntas, public.intentos_preguntas to anon;
 -- ---------- Vistas para revisar (solo desde el panel) ----------
 
 -- Qué preguntas fallan más. "repaso" no cuenta: ahí se repiten justo las que ya fallaste.
+-- Sí cuentan las rondas normales y los simulacros.
 create or replace view public.dificultad_preguntas as
 select
   pregunta_id,
@@ -62,7 +68,7 @@ select
   count(*) filter (where not acierto)   as fallos,
   round(100.0 * count(*) filter (where not acierto) / count(*), 1) as pct_fallo
 from public.intentos_preguntas
-where modo = 'ronda'
+where modo in ('ronda','simulacro')
 group by pregunta_id;
 
 -- Preguntas con reportes nuevos, las más reportadas primero.
@@ -82,6 +88,41 @@ order by reportes desc, ultimo desc;
 
 -- Las vistas NO son públicas: la web (anon) no puede leerlas.
 revoke all on public.dificultad_preguntas, public.preguntas_reportadas from anon, authenticated;
+
+-- ---------- Estadística pública (la usa el juego) ----------
+-- La web no puede leer las tablas, pero sí estas dos funciones, que solo devuelven totales:
+-- cuántas veces se respondió una pregunta y cuántas se falló. Nada personal.
+
+-- Dificultad de un grupo de preguntas (hasta 500). Solo las que ya tienen 5 respuestas o más.
+create or replace function public.dificultad_publica(ids text[])
+returns table (pregunta_id text, intentos bigint, fallos bigint)
+language sql stable security definer set search_path = public
+as $$
+  select i.pregunta_id, count(*), count(*) filter (where not i.acierto)
+  from public.intentos_preguntas i
+  where i.pregunta_id = any (ids[1:500]) and i.modo in ('ronda','simulacro')
+  group by i.pregunta_id
+  having count(*) >= 5
+$$;
+
+-- Las preguntas que más se fallan, de más a menos difíciles (para el modo "Las más difíciles").
+create or replace function public.preguntas_dificiles(minimo int default 10, limite int default 40)
+returns table (pregunta_id text, intentos bigint, fallos bigint)
+language sql stable security definer set search_path = public
+as $$
+  select i.pregunta_id, count(*), count(*) filter (where not i.acierto)
+  from public.intentos_preguntas i
+  where i.modo in ('ronda','simulacro')
+  group by i.pregunta_id
+  having count(*) >= greatest(minimo, 5)
+  order by (count(*) filter (where not i.acierto))::numeric / count(*) desc, count(*) desc
+  limit least(greatest(limite, 1), 100)
+$$;
+
+revoke all on function public.dificultad_publica(text[]) from public;
+revoke all on function public.preguntas_dificiles(int, int) from public;
+grant execute on function public.dificultad_publica(text[]) to anon, authenticated;
+grant execute on function public.preguntas_dificiles(int, int) to anon, authenticated;
 
 -- ---------- Consultas útiles ----------
 -- Preguntas a revisar (muchos fallos con suficientes intentos):

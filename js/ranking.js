@@ -140,3 +140,15 @@ export async function enviarReporte(fila) {
     body: JSON.stringify(fila),
   });
 }
+
+// Estadística de dificultad de un grupo de preguntas (de todos los jugadores).
+// Devuelve [{ pregunta_id, intentos, fallos }] solo para las que ya tienen suficientes respuestas.
+export async function dificultadDe(ids) {
+  if (!ids.length) return [];
+  return (await pedir('rpc/dificultad_publica', { method: 'POST', body: JSON.stringify({ ids }) })) || [];
+}
+
+// Las preguntas que más se fallan, de más a menos difíciles.
+export async function preguntasDificiles(minimo = 10, limite = 40) {
+  return (await pedir('rpc/preguntas_dificiles', { method: 'POST', body: JSON.stringify({ minimo, limite }) })) || [];
+}
