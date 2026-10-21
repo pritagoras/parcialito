@@ -492,7 +492,7 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 .reporte-estado { min-height: 1.4rem; color: var(--tenue); font-size: .92rem; }
 .reporte-botones { display: flex; justify-content: flex-end; gap: .6rem; margin-top: .4rem; }
 
-/* ---------- Repaso de hoy ---------- */
+/* ---------- Repaso de hoy (tarjetas) ---------- */
 .banner-repaso {
   width: 100%;
   display: flex; align-items: center; justify-content: space-between;
@@ -504,6 +504,8 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
   font-weight: 700;
   text-align: left;
 }
+.banner-repaso span { display: flex; flex-direction: column; gap: .1rem; }
+.banner-repaso small { color: var(--tenue); font-weight: 500; font-size: .85rem; }
 .banner-repaso b {
   background: var(--violeta); color: #120a26;
   min-width: 2rem; padding: .1rem .55rem;
@@ -528,3 +530,132 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 .reloj.urgente { color: var(--mal); border-color: var(--mal); }
 .opcion.elegida { border-color: var(--violeta); background: var(--panel-2); }
 .opcion.elegida .letra { background: var(--violeta); border-color: var(--violeta); color: #120a26; }
+
+/* ---------- Tarjetas tipo Anki ---------- */
+.contadores-t { display: flex; gap: .6rem; font-family: var(--pixel); font-size: 1.05rem; }
+.contadores-t span { min-width: 1.4rem; text-align: center; }
+.c-nueva { color: #5CC8FF; }
+.c-aprend { color: var(--mal); }
+.c-repaso { color: var(--ok); }
+
+.flip { position: relative; perspective: 1400px; cursor: pointer; margin-bottom: 1.2rem; border-radius: var(--radio); -webkit-tap-highlight-color: transparent; }
+.flip-tilt {
+  transform-style: preserve-3d;
+  transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform .18s ease-out;
+}
+.flip-interno {
+  display: grid;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.flip.volteada .flip-interno { transform: rotateY(180deg); }
+.cara {
+  grid-area: 1 / 1;
+  min-height: 17rem;
+  display: flex; flex-direction: column; justify-content: center; gap: .8rem;
+  padding: 1.4rem 1.3rem;
+  background: var(--panel);
+  border: 2px solid var(--linea);
+  border-radius: var(--radio);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.cara.dorso { transform: rotateY(180deg); background: var(--panel-2); border-color: var(--violeta); }
+.cara .tema-etq { color: var(--tenue); font-size: .9rem; margin: 0; }
+.texto-t { font-size: clamp(1.2rem, 4.2vw, 1.55rem); font-weight: 700; line-height: 1.35; white-space: pre-line; overflow-wrap: anywhere; }
+.cara.dorso .texto-t { font-weight: 600; font-size: clamp(1.05rem, 3.8vw, 1.3rem); }
+.pista-t { color: var(--tenue); font-size: .85rem; margin: auto 0 0; text-align: center; }
+
+.acciones-t { display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; min-height: 4.2rem; }
+.acciones-t > .btn { grid-column: 1 / -1; }
+.valorar {
+  display: flex; flex-direction: column; align-items: center; gap: .15rem;
+  padding: .7rem .3rem;
+  background: var(--panel);
+  border: 2px solid var(--linea);
+  border-radius: 14px;
+  transition: transform .1s, border-color .15s;
+}
+.valorar b { font-weight: 700; }
+.valorar small { color: var(--tenue); font-weight: 500; font-size: .78rem; }
+.valorar:hover { transform: translateY(-2px); }
+.valorar.otra { border-color: rgba(255, 93, 122, .6); }
+.valorar.dificil { border-color: rgba(255, 185, 56, .6); }
+.valorar.bien { border-color: rgba(79, 224, 160, .6); }
+.valorar.facil { border-color: rgba(92, 200, 255, .6); }
+@media (max-width: 420px) { .acciones-t { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---------- Animación de la tarjeta ---------- */
+/* Giro con rebote: se levanta, se pasa un poco de largo y vuelve a su lugar */
+.flip.girando .flip-interno { animation: girar .85s cubic-bezier(.3, .6, .25, 1) both; }
+@keyframes girar {
+  0%   { transform: translateZ(0) rotateY(0deg) scale(1); }
+  30%  { transform: translateZ(44px) rotateY(62deg) scale(1); }
+  62%  { transform: translateZ(34px) rotateY(197deg) scale(1); }
+  82%  { transform: translateZ(8px) rotateY(173deg) scale(1); }
+  100% { transform: translateZ(0) rotateY(180deg) scale(1); }
+}
+
+/* Sombra en el piso: se achica cuando la tarjeta se levanta */
+.flip::after {
+  content: ''; position: absolute; left: 10%; right: 10%; bottom: -12px; height: 26px; z-index: -1;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, .5), transparent 70%);
+  filter: blur(7px); opacity: .55; pointer-events: none;
+}
+.flip.girando::after { animation: sombra .85s ease-in-out; }
+@keyframes sombra {
+  0%   { transform: scaleX(1); opacity: .55; }
+  35%  { transform: scaleX(.5); opacity: .2; }
+  62%  { transform: scaleX(.68); opacity: .28; }
+  100% { transform: scaleX(1); opacity: .55; }
+}
+
+/* Reflejo de luz que sigue al puntero y brillo que cruza la tarjeta al girar */
+.cara { position: relative; overflow: hidden; }
+.cara::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .25s;
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 30%), rgba(255, 255, 255, .16), transparent 55%);
+}
+.cara.dorso::before { background: radial-gradient(circle at calc(100% - var(--mx, 50%)) var(--my, 30%), rgba(255, 255, 255, .16), transparent 55%); }
+@media (hover: hover) { .flip:hover .cara::before { opacity: 1; } }
+.cara::after {
+  content: ''; position: absolute; inset: -30%; pointer-events: none; opacity: 0;
+  background: linear-gradient(105deg, transparent 42%, rgba(255, 255, 255, .26) 50%, transparent 58%);
+  transform: translateX(-110%);
+}
+.flip.girando .cara::after { animation: brillo .85s ease-in-out; }
+@keyframes brillo {
+  0%   { transform: translateX(-110%); opacity: 1; }
+  100% { transform: translateX(110%); opacity: 1; }
+}
+
+/* Entrada y salida de cada tarjeta */
+.flip.entra { animation: entra .5s cubic-bezier(.2, .9, .3, 1.15) both; }
+@keyframes entra {
+  from { opacity: 0; transform: translateY(30px) scale(.92) rotateX(10deg); }
+  to   { opacity: 1; transform: none; }
+}
+.flip.sale-1 { animation: sale-otra .3s ease-in forwards; }      /* otra vez: sacudida y se va a la izquierda */
+.flip.sale-2 { animation: sale-dificil .3s ease-in forwards; }   /* difícil: se hunde */
+.flip.sale-3 { animation: sale-bien .3s ease-in forwards; }      /* bien: vuela a la derecha */
+.flip.sale-4 { animation: sale-facil .3s ease-in forwards; }     /* fácil: sube y desaparece */
+@keyframes sale-otra   { 25% { transform: translateX(10px) rotate(1.5deg); } 100% { transform: translateX(-125%) rotate(-12deg); opacity: 0; } }
+@keyframes sale-dificil { to { transform: translateY(46px) scale(.9) rotate(-3deg); opacity: 0; } }
+@keyframes sale-bien   { to { transform: translateX(125%) rotate(10deg); opacity: 0; } }
+@keyframes sale-facil  { to { transform: translateY(-130%) scale(1.08) rotate(4deg); opacity: 0; } }
+
+/* Los botones aparecen de a uno cuando la tarjeta termina de girar */
+.valorar { animation: aparece .45s cubic-bezier(.2, .9, .3, 1.3) backwards; animation-delay: calc(var(--i, 0) * 70ms + 380ms); }
+@keyframes aparece {
+  from { opacity: 0; transform: translateY(14px) scale(.9); }
+  to   { opacity: 1; transform: none; }
+}
+.valorar:active { transform: scale(.96); }
+
+/* La pista respira suavemente */
+.pista-t { animation: respira 2.6s ease-in-out infinite; }
+@keyframes respira { 0%, 100% { opacity: .5; } 50% { opacity: 1; } }
+
+.ayuda-valorar { color: var(--tenue); font-size: .88rem; margin-top: .8rem; text-align: center; animation: aparece .4s ease .7s backwards; }

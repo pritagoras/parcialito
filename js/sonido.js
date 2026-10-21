@@ -28,6 +28,30 @@ function tono(freq, inicio, duracion, tipo = 'sine', volumen = 0.16, hasta = nul
   osc.stop(t0 + duracion + 0.03);
 }
 
+// Soplido de aire: ruido filtrado cuyo tono sube o baja (el "fiu" de dar vuelta una carta)
+function soplido(inicio, duracion, desde, hasta, volumen = 0.14) {
+  if (estado.silencio || !ctx) return;
+  const t0 = ctx.currentTime + inicio;
+  const n = Math.max(1, Math.ceil(ctx.sampleRate * duracion));
+  const buf = ctx.createBuffer(1, n, ctx.sampleRate);
+  const datos = buf.getChannelData(0);
+  for (let i = 0; i < n; i++) datos[i] = Math.random() * 2 - 1;
+  const fuente = ctx.createBufferSource();
+  fuente.buffer = buf;
+  const filtro = ctx.createBiquadFilter();
+  filtro.type = 'bandpass';
+  filtro.Q.value = 1.2;
+  filtro.frequency.setValueAtTime(desde, t0);
+  filtro.frequency.exponentialRampToValueAtTime(hasta, t0 + duracion);
+  const gan = ctx.createGain();
+  gan.gain.setValueAtTime(0.0001, t0);
+  gan.gain.exponentialRampToValueAtTime(volumen, t0 + duracion * 0.35);
+  gan.gain.exponentialRampToValueAtTime(0.0001, t0 + duracion);
+  fuente.connect(filtro).connect(gan).connect(ctx.destination);
+  fuente.start(t0);
+  fuente.stop(t0 + duracion + 0.02);
+}
+
 export const Sonido = {
   // Los navegadores exigen un gesto del usuario antes de reproducir audio
   iniciar() {
@@ -51,6 +75,30 @@ export const Sonido = {
   error(perdioRacha) {
     tono(220, 0, 0.28, 'sawtooth', 0.12, 110);
     if (perdioRacha) tono(165, 0.2, 0.4, 'sawtooth', 0.1, 70);
+  },
+
+  // Dar vuelta una tarjeta: soplido que sube + golpecito suave cuando "aterriza" (coincide con el rebote de la animación)
+  voltear() {
+    soplido(0, 0.34, 450, 2800, 0.34);
+    tono(190, 0.5, 0.1, 'sine', 0.12, 95);
+    tono(1500, 0.52, 0.04, 'sine', 0.04);
+  },
+
+  // Valorar una tarjeta: 1 otra vez, 2 difícil, 3 bien, 4 fácil
+  valorar(r) {
+    if (r === 1) {
+      tono(330, 0, 0.12, 'triangle', 0.1, 220);
+      tono(247, 0.09, 0.2, 'triangle', 0.08, 185);
+    } else if (r === 2) {
+      tono(392, 0, 0.14, 'triangle', 0.1);
+      tono(370, 0.08, 0.16, 'triangle', 0.07);
+    } else if (r === 3) {
+      tono(nota(0), 0, 0.14, 'triangle', 0.18);
+      tono(nota(7), 0.09, 0.22, 'triangle', 0.14);
+    } else {
+      [0, 4, 7].forEach((p, i) => tono(nota(p), i * 0.07, 0.16, 'triangle', 0.14));
+      tono(nota(12), 0.22, 0.3, 'sine', 0.12);
+    }
   },
 
   hito() {

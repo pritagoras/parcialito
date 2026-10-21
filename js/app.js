@@ -19,8 +19,10 @@ const HITOS = [3, 5, 10, 15, 20, 30, 50];   // rachas que disparan festejo
 
 let indice = null;          // contenido de data/index.json
 const cache = new Map();    // idTema -> preguntas ya cargadas
+const cacheTarjetas = new Map();   // idTema -> tarjetas ya cargadas
 let juego = null;           // partida en curso (null si no hay)
 let simu = null;            // simulacro en curso (null si no hay)
+let sesionT = null;         // sesión de tarjetas en curso (null si no hay)
 const dificultad = new Map();   // idPregunta -> { intentos, fallos } (datos de todos los jugadores)
 
 // ---------- Utilidades ----------
@@ -94,7 +96,9 @@ async function cargarTema(tema, materia) {
   if (cache.has(tema.id)) return cache.get(tema.id);
   const r = await fetch(tema.archivo, { cache: 'no-cache' });
   if (!r.ok) throw new Error(`No se pudo leer ${tema.archivo} (${r.status})`);
-  const preguntas = normalizar(await r.json(), tema, materia);
+  const json = await r.json();
+  const preguntas = normalizar(json, tema, materia);
+  cacheTarjetas.set(tema.id, normalizarTarjetas(json, tema, materia));
   // Si editaste o borraste preguntas, las "dominadas" viejas dejan de contar
   if (estado.dominadas[tema.id]) {
     const vigentes = new Set(preguntas.map((q) => q.id));
@@ -117,47 +121,308 @@ function dominio(materia) {
   return Math.round(suma / materia.temas.length);
 }
 
-// ---------- Repaso espaciado (cajas de Leitner) ----------
+// ---------- Tarjetas tipo Anki ----------
+// Las tarjetas viven en los mismos JSON de cada tema, en una lista "tarjetas": [{ "frente": "...", "dorso": "..." }].
+// Cada día se repasan las que vencen y se suman unas pocas nuevas. Vos decís qué tan bien la sabías
+// (Otra vez / Difícil / Bien / Fácil) y el intervalo hasta volver a verla se ajusta solo.
 
-const INTERVALOS = [0, 1, 3, 7, 16, 35];   // días hasta volver a ver una pregunta, según su caja (1 a 5)
-const MAX_REPASO = 20;                      // preguntas por sesión de "Repaso de hoy"
+const NUEVAS_POR_DIA = 10;   // tarjetas nuevas que se agregan por día
+const MAX_REPASOS = 200;     // tope de tarjetas a repasar en una sesión
 const diaHoy = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
 
-// estado.srs = { idPregunta: { caja, prox } }, donde prox es el número de día en que toca repasarla
-function srs() {
-  if (!estado.srs) {
-    estado.srs = {};
-    // Primera vez: arranca con lo que ya había (los errores vencen hoy; lo dominado, en unos días)
-    const hoy = diaHoy();
-    for (const id of Object.keys(estado.errores || {})) estado.srs[id] = { caja: 1, prox: hoy };
-    for (const dom of Object.values(estado.dominadas || {})) {
-      for (const id of Object.keys(dom)) {
-        if (!estado.srs[id]) estado.srs[id] = { caja: 2, prox: hoy + 1 + (parseInt(id, 36) % 6) };
-      }
+function normalizarTarjetas(json, tema, materia) {
+  const salida = [];
+  (Array.isArray(json.tarjetas) ? json.tarjetas : []).forEach((c, n) => {
+    const frente = String(c?.frente ?? c?.pregunta ?? '').trim();
+    const dorso = String(c?.dorso ?? c?.respuesta ?? '').trim();
+    if (!frente || !dorso) {
+      console.warn(`[Repaso] Tarjeta ${n + 1} de "${tema.id}" descartada: le falta el frente o el dorso.`);
+      return;
     }
-    guardar();
-  }
-  return estado.srs;
+    salida.push({ id: hash(`t|${frente}`), frente, dorso, tema: tema.nombre, temaId: tema.id, materia: materia.nombre });
+  });
+  return salida;
 }
 
-function srsRegistrar(id, acerto) {
-  const s = srs(), hoy = diaHoy(), c = s[id];
-  if (!acerto) { s[id] = { caja: 1, prox: hoy + INTERVALOS[1] }; return; }
-  if (!c) { s[id] = { caja: 2, prox: hoy + INTERVALOS[2] }; return; }
-  if (c.prox <= hoy) {   // si todavía no tocaba verla, un acierto extra no la adelanta
-    const caja = Math.min(5, c.caja + 1);
-    s[id] = { caja, prox: hoy + INTERVALOS[caja] };
-  }
-}
-
-const repasoPendiente = () => { const hoy = diaHoy(); return Object.values(srs()).filter((v) => v.prox <= hoy).length; };
-
-// Todas las preguntas de todas las materias (id -> pregunta)
+// Todas las preguntas de todas las materias (id -> pregunta). Además deja cargadas las tarjetas.
 async function cargarTodas() {
   const listas = await Promise.all(indice.materias.flatMap((m) => m.temas.map((t) => cargarTema(t, m))));
   const mapa = new Map();
   for (const lista of listas) for (const q of lista) if (!mapa.has(q.id)) mapa.set(q.id, q);
   return mapa;
+}
+
+// estado.tarjetas = { idTarjeta: { ef (facilidad), iv (intervalo en días), prox (día en que toca), l (olvidos) } }
+const memoria = () => (estado.tarjetas ||= {});
+function nuevasHoy() {
+  const hoy = diaHoy();
+  if (estado.tarjetasHoy?.dia !== hoy) estado.tarjetasHoy = { dia: hoy, nuevas: 0 };
+  return estado.tarjetasHoy;
+}
+
+function todasLasTarjetas() {
+  const vistas = new Set(), lista = [];
+  for (const m of indice.materias) {
+    for (const t of m.temas) {
+      for (const c of cacheTarjetas.get(t.id) || []) if (!vistas.has(c.id)) { vistas.add(c.id); lista.push(c); }
+    }
+  }
+  return lista;
+}
+
+function resumenTarjetas(extra = 0) {
+  const hoy = diaHoy(), mem = memoria(), todas = todasLasTarjetas();
+  const pendientes = todas.filter((c) => mem[c.id] && mem[c.id].prox <= hoy).sort((x, y) => mem[x.id].prox - mem[y.id].prox);
+  const nuevas = todas.filter((c) => !mem[c.id]);
+  const cupo = Math.max(0, NUEVAS_POR_DIA - nuevasHoy().nuevas) + extra;
+  return { total: todas.length, pendientes, nuevas, cupo, nNuevas: Math.min(cupo, nuevas.length) };
+}
+
+// Calcula cómo queda una tarjeta según cómo la contestaste (1 otra vez, 2 difícil, 3 bien, 4 fácil).
+// "aprendiendo": es nueva, o la olvidaste y todavía no la recuperaste. No modifica nada.
+function programar(est, aprendiendo, r) {
+  const ef0 = est?.ef ?? 2.5, iv0 = est?.iv ?? 0, l0 = est?.l ?? 0;
+  if (r === 1) {
+    const castiga = !!est && !aprendiendo;   // olvidar una tarjeta ya aprendida baja su facilidad
+    return { vuelve: true, ef: castiga ? Math.max(1.3, ef0 - 0.2) : ef0, iv: 0, l: castiga ? l0 + 1 : l0 };
+  }
+  if (aprendiendo) {
+    if (r === 2) return { vuelve: true, ef: ef0, iv: 0, l: l0 };
+    return { vuelve: false, ef: r === 4 ? ef0 + 0.15 : ef0, iv: r === 4 ? (est ? 3 : 4) : 1, l: l0 };
+  }
+  if (r === 2) return { vuelve: false, ef: Math.max(1.3, ef0 - 0.15), iv: Math.max(iv0 + 1, Math.round(iv0 * 1.2)), l: l0 };
+  if (r === 3) return { vuelve: false, ef: ef0, iv: Math.max(iv0 + 1, Math.round(iv0 * ef0)), l: l0 };
+  return { vuelve: false, ef: ef0 + 0.15, iv: Math.max(iv0 + 2, Math.round(iv0 * ef0 * 1.3)), l: l0 };
+}
+
+const sinMovimiento = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const vibrar = (ms) => { if (!estado.silencio) navigator.vibrate?.(ms); };
+
+// Inclinación 3D y reflejo de luz que siguen al puntero (solo con mouse; en el celular no hace falta)
+function activarInclinacion(flip) {
+  if (sinMovimiento() || !window.matchMedia('(hover: hover)').matches) return;
+  const poner = (ry, rx, mx, my) => {
+    flip.style.setProperty('--ry', `${ry}deg`);
+    flip.style.setProperty('--rx', `${rx}deg`);
+    flip.style.setProperty('--mx', `${mx}%`);
+    flip.style.setProperty('--my', `${my}%`);
+  };
+  flip.addEventListener('pointermove', (e) => {
+    if (flip.classList.contains('girando')) return;
+    const b = flip.getBoundingClientRect();
+    const x = (e.clientX - b.left) / b.width, y = (e.clientY - b.top) / b.height;
+    poner(((x - 0.5) * 9).toFixed(2), ((0.5 - y) * 7).toFixed(2), (x * 100).toFixed(1), (y * 100).toFixed(1));
+  });
+  flip.addEventListener('pointerleave', () => poner(0, 0, 50, 30));
+}
+
+function fmtIntervalo(d) {
+  if (d <= 1) return '1 día';
+  if (d < 30) return `${d} días`;
+  if (d < 365) { const m = Math.round((d / 30) * 10) / 10; return `${String(m).replace('.', ',')} ${m === 1 ? 'mes' : 'meses'}`; }
+  const y = Math.round((d / 365) * 10) / 10;
+  return `${String(y).replace('.', ',')} ${y === 1 ? 'año' : 'años'}`;
+}
+
+// Banner del inicio con las tarjetas de hoy (se completa cuando ya están cargados los temas)
+function pintarTarjetasInicio() {
+  const zona = document.getElementById('zona-tarjetas');
+  if (!zona) return;
+  const r = resumenTarjetas();
+  if (!r.total) { zona.innerHTML = ''; return; }
+  const n = r.pendientes.length + r.nNuevas;
+  if (n) {
+    zona.innerHTML = `<button class="banner-repaso" id="btn-tarjetas"><span>🃏 Repaso de hoy<small>${r.pendientes.length} para repasar · ${r.nNuevas} ${r.nNuevas === 1 ? 'nueva' : 'nuevas'}</small></span><b>${n}</b></button>`;
+    document.getElementById('btn-tarjetas').addEventListener('click', () => { Sonido.clic(); lanzarTarjetas(); });
+  } else {
+    zona.innerHTML = `<p class="al-dia">🃏 Tarjetas al día: ¡hasta mañana!${r.nuevas.length ? ' <button class="btn enlace" id="btn-mas-tarjetas">Estudiar nuevas igual</button>' : ''}</p>`;
+    document.getElementById('btn-mas-tarjetas')?.addEventListener('click', () => { Sonido.clic(); lanzarTarjetas(NUEVAS_POR_DIA); });
+  }
+}
+
+function lanzarTarjetas(extra = 0) {
+  vistaCargando('Preparando tus tarjetas…');
+  cargarTodas().then(() => {
+    const r = resumenTarjetas(extra);
+    const cola = mezclar([...r.pendientes.slice(0, MAX_REPASOS), ...r.nuevas.slice(0, r.cupo)]);
+    if (!cola.length) { vistaInicio(); avisar('No tenés tarjetas para hoy'); return; }
+    empezarTarjetas(cola);
+  }).catch(vistaError);
+}
+
+function empezarTarjetas(cola) {
+  const mem = memoria();
+  sesionT = {
+    cola: [...cola],
+    total: cola.length,
+    hechas: 0,                 // tarjetas distintas ya resueltas
+    nuevasVistas: 0, repasadas: 0, otraVez: 0,
+    origen: new Map(cola.map((c) => [c.id, mem[c.id] ? 'repaso' : 'nueva'])),
+    fallada: new Set(),        // las que se olvidaron en esta sesión
+    nuevaContada: new Set(),
+    volteada: false,
+  };
+  app.innerHTML = `
+    <main class="pantalla">
+      <div class="hud">
+        <button class="icono" id="btn-salir" aria-label="Salir (se guarda lo que ya hiciste)">✕</button>
+        <div class="progreso" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="${cola.length}" aria-valuenow="0"><div class="barra" id="barra"></div></div>
+        <div class="contadores-t" id="contadores-t" aria-label="Tarjetas pendientes"></div>
+      </div>
+      <div id="zona-t"></div>
+    </main>`;
+  document.getElementById('btn-salir').addEventListener('click', () => {
+    Sonido.clic();
+    sesionT = null;
+    guardar();
+    vistaInicio();
+  });
+  mostrarTarjeta();
+  window.scrollTo(0, 0);
+}
+
+function pintarContadoresT() {
+  const s = sesionT, mem = memoria();
+  const aprendiendo = (c) => !!mem[c.id] && (mem[c.id].iv === 0 || s.fallada.has(c.id));
+  const nNuevas = s.cola.filter((c) => !mem[c.id]).length;
+  const nAprend = s.cola.filter(aprendiendo).length;
+  const nRepaso = s.cola.length - nNuevas - nAprend;
+  document.getElementById('contadores-t').innerHTML =
+    `<span class="c-nueva" title="Nuevas">${nNuevas}</span><span class="c-aprend" title="Olvidadas, a recuperar">${nAprend}</span><span class="c-repaso" title="A repasar">${nRepaso}</span>`;
+  document.getElementById('barra').style.width = `${(s.hechas / s.total) * 100}%`;
+  document.querySelector('.progreso').setAttribute('aria-valuenow', String(s.hechas));
+}
+
+function mostrarTarjeta() {
+  const s = sesionT, c = s.cola[0];
+  s.volteada = false;
+  pintarContadoresT();
+  document.getElementById('zona-t').innerHTML = `
+    <div class="flip entra" id="flip" role="button" tabindex="0" aria-label="Tarjeta. Tocá para ver la respuesta">
+      <div class="flip-tilt">
+        <div class="flip-interno">
+          <div class="cara frente">
+            <p class="tema-etq">${esc(c.tema)}</p>
+            <div class="texto-t">${esc(c.frente)}</div>
+            <p class="pista-t">Tocá la tarjeta para darla vuelta</p>
+          </div>
+          <div class="cara dorso" aria-hidden="true">
+            <p class="tema-etq">Respuesta</p>
+            <div class="texto-t">${esc(c.dorso)}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="acciones-t" id="acciones-t"><button class="btn primario" id="btn-voltear">Mostrar respuesta</button></div>
+    <p class="ayuda-valorar" id="ayuda-valorar" hidden>Marcá qué tan bien la sabías: cuanto más fácil, más tarde vuelve a aparecer.</p>
+    <p class="ayuda-teclas">Teclado: Espacio da vuelta la tarjeta · 1 Otra vez · 2 Difícil · 3 Bien · 4 Fácil</p>`;
+  const flip = document.getElementById('flip');
+  flip.addEventListener('click', voltearTarjeta);
+  flip.addEventListener('animationend', (e) => { if (e.animationName === 'entra') flip.classList.remove('entra'); });
+  activarInclinacion(flip);
+  document.getElementById('btn-voltear').addEventListener('click', voltearTarjeta);
+}
+
+function voltearTarjeta() {
+  const s = sesionT;
+  if (!s || s.volteada) return;
+  s.volteada = true;
+  const c = s.cola[0], est = memoria()[c.id];
+  const aprendiendo = !est || est.iv === 0 || s.fallada.has(c.id);
+  const flip = document.getElementById('flip');
+  flip.classList.remove('entra');
+  flip.style.setProperty('--ry', '0deg');   // mientras gira no se inclina
+  flip.style.setProperty('--rx', '0deg');
+  flip.classList.add('volteada');
+  if (!sinMovimiento()) {
+    flip.classList.add('girando');
+    setTimeout(() => flip.classList.remove('girando'), 950);
+  }
+  flip.setAttribute('aria-label', 'Tarjeta dada vuelta');
+  flip.querySelector('.frente').setAttribute('aria-hidden', 'true');
+  flip.querySelector('.dorso').removeAttribute('aria-hidden');
+
+  const botones = [[1, 'Otra vez', 'otra'], [2, 'Difícil', 'dificil'], [3, 'Bien', 'bien'], [4, 'Fácil', 'facil']];
+  document.getElementById('acciones-t').innerHTML = botones.map(([r, txt, clase]) => {
+    const p = programar(est, aprendiendo, r);
+    return `<button class="valorar ${clase}" data-r="${r}" style="--i:${r - 1}"><b>${txt}</b><small>${p.vuelve ? '< 10 min' : fmtIntervalo(p.iv)}</small></button>`;
+  }).join('');
+  document.querySelectorAll('.valorar').forEach((b) => b.addEventListener('click', () => valorarTarjeta(Number(b.dataset.r))));
+  Sonido.voltear ? Sonido.voltear() : Sonido.clic();   // si todavía tenés el sonido.js viejo, suena el clic de siempre
+  vibrar(12);
+  document.getElementById('ayuda-valorar').hidden = false;
+}
+
+function valorarTarjeta(r) {
+  const s = sesionT;
+  if (!s || !s.volteada || s.bloqueada) return;
+  const c = s.cola.shift();
+  const mem = memoria(), est = mem[c.id], hoy = diaHoy();
+  const aprendiendo = !est || est.iv === 0 || s.fallada.has(c.id);
+  const res = programar(est, aprendiendo, r);
+
+  if (!est && !s.nuevaContada.has(c.id)) {   // la primera vez que se ve cuenta para el cupo diario
+    s.nuevaContada.add(c.id);
+    nuevasHoy().nuevas++;
+    s.nuevasVistas++;
+  }
+  if (r === 1) { s.fallada.add(c.id); s.otraVez++; }
+  if (!(res.vuelve && !est)) mem[c.id] = { ef: res.ef, iv: res.iv, prox: hoy + res.iv, l: res.l };
+
+  if (res.vuelve) {
+    s.cola.splice(Math.min(s.cola.length, r === 1 ? 3 : 6), 0, c);   // vuelve a aparecer en unas tarjetas más
+  } else {
+    s.hechas++;
+    if (s.origen.get(c.id) === 'repaso') s.repasadas++;
+  }
+  guardar();
+  if (Sonido.valorar) Sonido.valorar(r); else if (r >= 3) Sonido.acierto(1); else Sonido.clic();
+  vibrar(r === 1 ? [10, 40, 10] : 8);
+
+  const siguiente = () => {
+    if (sesionT !== s) return;   // salió de la sesión mientras la tarjeta se iba
+    s.bloqueada = false;
+    if (!s.cola.length) terminarTarjetas(); else mostrarTarjeta();
+  };
+  const flip = document.getElementById('flip');
+  if (flip && !sinMovimiento()) {
+    s.bloqueada = true;
+    flip.classList.remove('girando', 'entra');
+    flip.classList.add(`sale-${r}`);
+    setTimeout(siguiente, 300);
+  } else {
+    siguiente();
+  }
+}
+
+function terminarTarjetas() {
+  const s = sesionT;
+  sesionT = null;
+  guardar();
+  const hoy = diaHoy();
+  const r = resumenTarjetas();
+  const manana = Object.values(memoria()).filter((v) => v.prox <= hoy + 1).length;
+  app.innerHTML = `
+    <main class="pantalla resultado">
+      <div class="grande" aria-hidden="true">🎉</div>
+      <h1>¡Listo por hoy!</h1>
+      <p class="sub">Terminaste tu repaso de tarjetas.</p>
+      <div class="cifras">
+        <div class="cifra"><b>${s.nuevasVistas}</b><span>Nuevas</span></div>
+        <div class="cifra"><b>${s.repasadas}</b><span>Repasadas</span></div>
+        <div class="cifra"><b>${s.otraVez}</b><span>Otra vez</span></div>
+      </div>
+      <p class="estado-ranking">Para mañana: ${plural(manana, 'tarjeta', 'tarjetas')}.</p>
+      <div class="botones">
+        ${r.nuevas.length ? `<button class="btn primario" id="btn-mas">Estudiar ${Math.min(NUEVAS_POR_DIA, r.nuevas.length)} nuevas más</button>` : ''}
+        <button class="btn ${r.nuevas.length ? 'secundario' : 'primario'}" id="btn-inicio">Inicio</button>
+      </div>
+    </main>`;
+  document.getElementById('btn-mas')?.addEventListener('click', () => { Sonido.clic(); lanzarTarjetas(NUEVAS_POR_DIA); });
+  document.getElementById('btn-inicio').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
+  Sonido.fin(true);
+  lanzarConfeti(s.hechas ? 80 : 30);
+  window.scrollTo(0, 0);
 }
 
 // ---------- Dificultad real (datos de todos los jugadores) ----------
@@ -187,9 +452,8 @@ function textoDificultad(id) {
 function vistaInicio() {
   juego = null;
   if (simu) { clearInterval(simu.timer); simu = null; }
+  sesionT = null;
   const nErrores = Object.keys(estado.errores).length;
-  const nRepaso = repasoPendiente();
-  const hayAgenda = Object.keys(srs()).length > 0;
 
   const tarjetas = indice.materias.map((m, i) => {
     const totalPreg = m.temas.reduce((s, t) => s + t.preguntas, 0);
@@ -219,8 +483,7 @@ function vistaInicio() {
           <button class="btn secundario" id="btn-dificiles">🔥 Las más difíciles</button>
           <button class="btn secundario" id="btn-apodo">👤 ${estado.apodo ? esc(estado.apodo) : 'Elegir apodo'}</button>
         </div>` : ''}
-      ${nRepaso ? `<button class="banner-repaso" id="btn-repaso"><span>🧠 Repaso de hoy</span><b>${nRepaso}</b></button>`
-        : hayAgenda ? '<p class="al-dia">🧠 Repaso al día: no tenés nada pendiente para hoy.</p>' : ''}
+      <div id="zona-tarjetas"></div>
       ${nErrores ? `<button class="banner-errores" id="btn-errores"><span>Repasar mis errores</span><b>${nErrores}</b></button>` : ''}
       ${indice.materias.length
         ? `<div class="materias">${tarjetas}</div>`
@@ -231,12 +494,12 @@ function vistaInicio() {
 
   document.getElementById('btn-sonido').addEventListener('click', alternarSonido);
   document.getElementById('btn-errores')?.addEventListener('click', () => { Sonido.clic(); lanzarErrores(); });
-  document.getElementById('btn-repaso')?.addEventListener('click', () => { Sonido.clic(); lanzarRepasoHoy(); });
   document.getElementById('btn-dificiles')?.addEventListener('click', () => { Sonido.clic(); lanzarDificiles(); });
   document.getElementById('btn-ranking')?.addEventListener('click', () => { Sonido.clic(); vistaRanking(); });
   document.getElementById('btn-apodo')?.addEventListener('click', () => { Sonido.clic(); vistaApodo(); });
   app.querySelectorAll('.materia').forEach((b) =>
     b.addEventListener('click', () => { Sonido.clic(); vistaMateria(Number(b.dataset.materia)); }));
+  pintarTarjetasInicio();
 }
 
 function alternarSonido() {
@@ -377,34 +640,6 @@ async function lanzarErrores() {
       titulo: 'Repaso de errores',
       temaId: null,
       repetir: () => lanzarErrores(),
-      volver: () => vistaInicio(),
-    });
-  } catch (e) {
-    vistaError(e);
-  }
-}
-
-async function lanzarRepasoHoy() {
-  vistaCargando('Armando tu repaso…');
-  try {
-    const todas = await cargarTodas();
-    const s = srs(), hoy = diaHoy();
-    let cambio = false;
-    for (const id of Object.keys(s)) if (!todas.has(id)) { delete s[id]; cambio = true; }   // preguntas editadas o borradas
-    if (cambio) guardar();
-    const vencidas = Object.entries(s)
-      .filter(([, v]) => v.prox <= hoy)
-      .sort((x, y) => x[1].prox - y[1].prox || x[1].caja - y[1].caja);   // primero las más atrasadas
-    if (!vencidas.length) {
-      vistaInicio();
-      avisar('No tenés nada para repasar hoy');
-      return;
-    }
-    const pool = mezclar(vencidas.slice(0, MAX_REPASO).map(([id]) => todas.get(id)));
-    empezarJuego(pool, {
-      titulo: 'Repaso de hoy',
-      temaId: null,
-      repetir: () => lanzarRepasoHoy(),
       volver: () => vistaInicio(),
     });
   } catch (e) {
@@ -570,8 +805,6 @@ function responder(pos) {
   const q = j.preguntas[j.i];
   const acerto = q.orden[pos] === q.correcta;
   const feedback = document.getElementById('feedback');
-
-  srsRegistrar(q.id, acerto);
 
   // Para la estadística de dificultad: solo si acertó o no (nada personal)
   j.intentos.push({
@@ -1064,7 +1297,6 @@ function terminarSimulacro(porTiempo) {
     else { malas.push({ q, pos, visto }); if (pos === null) blancos++; }
 
     if (visto) {
-      srsRegistrar(q.id, ok);
       if (ok) { delete estado.errores[q.id]; (estado.dominadas[q.temaId] ||= {})[q.id] = 1; }
       else estado.errores[q.id] = 1;
       intentos.push({ pregunta_id: q.id, tema_id: q.temaId, pregunta: q.texto.slice(0, 160), acierto: ok, modo: 'simulacro' });
@@ -1289,9 +1521,14 @@ function vistaHistorial(apodo, volver) {
 // ---------- Teclado ----------
 
 document.addEventListener('keydown', (e) => {
-  if ((!juego && !simu) || e.ctrlKey || e.metaKey || e.altKey) return;
+  if ((!juego && !simu && !sesionT) || e.ctrlKey || e.metaKey || e.altKey) return;
   if (e.target.closest?.('dialog, input, textarea, select')) return;   // escribiendo en un formulario
   const k = e.key.toLowerCase();
+  if (sesionT) {
+    if (k === ' ' || k === 'enter') { e.preventDefault(); if (sesionT.volteada) valorarTarjeta(3); else voltearTarjeta(); }
+    else if (sesionT.volteada && ['1', '2', '3', '4'].includes(k)) valorarTarjeta(Number(k));
+    return;
+  }
   if (simu) {
     if (simu.fin) return;
     const pos = ['1', '2', '3', '4'].indexOf(k);
@@ -1325,7 +1562,10 @@ async function iniciar() {
     if (!r.ok) throw new Error(`No se pudo leer data/index.json (${r.status})`);
     indice = await r.json();
     indice.materias = indice.materias || [];
+    if (estado.srs) { delete estado.srs; guardar(); }   // versión anterior del repaso (sobre las preguntas)
     vistaInicio();
+    // Carga los temas en segundo plano para saber cuántas tarjetas hay para hoy
+    cargarTodas().then(pintarTarjetasInicio).catch(() => {});
   } catch (e) {
     vistaError(e);
   }
