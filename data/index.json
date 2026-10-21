@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-18T06:40:41Z",
+  "generado": "2026-10-21T01:35:41Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -191,6 +191,12 @@
           "nombre": "Popper",
           "archivo": "data/ipc-2/01-popper.json",
           "preguntas": 31
+        },
+        {
+          "id": "ipc-2/02-foucault",
+          "nombre": "Foucault",
+          "archivo": "data/ipc-2/02-foucault.json",
+          "preguntas": 0
         }
       ]
     }

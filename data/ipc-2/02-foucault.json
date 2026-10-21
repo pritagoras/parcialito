@@ -1,0 +1,109 @@
+{
+  "materia": "IPC 2",
+  "tema": "Foucault",
+  "preguntas": [
+
+  ],
+  "tarjetas": [
+    {
+      "frente": "¿Qué estudia Michel Foucault en su período genealógico?",
+      "dorso": "Estudia las condiciones históricas en las que se constituyen las instituciones, las prácticas sociales y las formas de conocimiento, así como los efectos de poder que producen sobre los individuos[cite: 1]."
+    },
+    {
+      "frente": "¿En qué consiste el método genealógico según Foucault?",
+      "dorso": "Consiste en reconstruir los procesos históricos contingentes, disputas e instituciones que hicieron posible una práctica o saber, evitando buscar un origen único o un progreso lineal[cite: 2]."
+    },
+    {
+      "frente": "¿Qué sostiene la noción de saber-poder en la obra de Foucault?",
+      "dorso": "Sostiene que el conocimiento y el poder están articulados: los saberes generan categorías para clasificar e intervenir sobre las personas, mientras que el poder crea las condiciones institucionales para producir saber[cite: 2]."
+    },
+    {
+      "frente": "¿Cómo concibe Foucault la naturaleza del poder?",
+      "dorso": "El poder no es una propiedad que alguien posee de forma centralizada, sino una relación que se ejerce en múltiples niveles mediante prácticas, normas, rutinas e instituciones[cite: 2]."
+    },
+    {
+      "frente": "¿Por qué se afirma que el poder tiene un carácter productivo?",
+      "dorso": "Porque no solo se dedica a prohibir o reprimir, sino que produce hábitos, capacidades, normas, categorías de clasificación e identidades en los individuos[cite: 2]."
+    },
+    {
+      "frente": "¿Cómo se explica el surgimiento de las ciencias humanas en la modernidad según Foucault?",
+      "dorso": "Surgen articuladas con las transformaciones de las instituciones y del sistema penal, al volverse necesario examinar, clasificar y corregir la conducta de los individuos[cite: 3]."
+    },
+    {
+      "frente": "¿Por qué la historia de la prisión funciona como hilo conductor en la obra de Foucault?",
+      "dorso": "Porque permite analizar la reorganización general del poder, mostrando el paso de la exhibición pública del castigo a la vigilancia, el examen y la corrección del individuo[cite: 3]."
+    },
+    {
+      "frente": "¿Qué cambio ocurre en el sistema penal al pasar de juzgar el acto a conocer al individuo?",
+      "dorso": "El proceso judicial ya no evalúa únicamente el delito cometido, sino también la personalidad, los hábitos, la peligrosidad y las posibilidades de rehabilitación del sujeto[cite: 3]."
+    },
+    {
+      "frente": "¿Cuál es la diferencia principal entre el enfoque de Thomas Kuhn y el de Michel Foucault?",
+      "dorso": "Kuhn analiza cómo las comunidades científicas cambian de paradigma, mientras que Foucault reconstruye las condiciones históricas de saberes e instituciones vinculados a relaciones de poder[cite: 3]."
+    },
+    {
+      "frente": "¿En qué se diferencian la figura del pecador y la del delincuente?",
+      "dorso": "El pecador se define por transgredir un orden moral o religioso, mientras que el delincuente responde a una categoría jurídico-penal y se convierte en objeto de saber experto[cite: 4]."
+    },
+    {
+      "frente": "¿Cuál era la función principal del suplicio corporal en el régimen penal tradicional?",
+      "dorso": "Exhibir públicamente el sufrimiento del condenado para manifestar de forma espectacular la fuerza de la autoridad soberana y la gravedad de la falta[cite: 5]."
+    },
+    {
+      "frente": "¿Cómo se diferencia la función del cuerpo en el suplicio respecto de la disciplina moderna?",
+      "dorso": "En el suplicio el cuerpo es la superficie visible del sufrimiento punitivo, mientras que en la disciplina el cuerpo es organizado y controlado para adquirir hábitos y conductas previsibles[cite: 5]."
+    },
+    {
+      "frente": "¿Por qué la guillotina expresa una ambivalencia en la reforma penal?",
+      "dorso": "Aunque redujo el sufrimiento prolongado mediante una ejecución rápida, mantuvo el ejercicio de la pena de muerte y la potestad punitiva sobre el condenado[cite: 5]."
+    },
+    {
+      "frente": "¿Qué cambio de racionalidad penal se produce con la llegada de la modernidad?",
+      "dorso": "Se pasa de un castigo basado en la crueldad pública y espectacular a un sistema centrado en el encierro, la vigilancia continua, la normalización y la corrección[cite: 5, 6]."
+    },
+    {
+      "frente": "¿Qué relación existe entre la industrialización y las técnicas disciplinarias?",
+      "dorso": "La industrialización requirió coordinar a muchas personas, impulsando el uso de horarios, reglamentos y distribuciones espaciales para hacer eficiente y previsible el comportamiento humano[cite: 5]."
+    },
+    {
+      "frente": "¿A qué se refiere Foucault con el \"castigo del alma\" en la prisión moderna?",
+      "dorso": "Significa que la sanción no busca causar dolor físico, sino transformar la interioridad, los hábitos, la personalidad y la conducta del detenido[cite: 6]."
+    },
+    {
+      "frente": "¿Qué es el Panóptico ideado por Jeremy Bentham?",
+      "dorso": "Es un modelo arquitectónico de prisión con celdas dispuestas alrededor de una torre central, diseñado para que un vigilante pueda observar a los internos sin ser visto[cite: 7]."
+    },
+    {
+      "frente": "¿Cómo induce el Panóptico el autocontrol en los individuos?",
+      "dorso": "Como el interno no sabe en qué momento es observado, actúa bajo la posibilidad permanente de vigilancia, interiorizando las normas y regulando su propio comportamiento[cite: 7]."
+    },
+    {
+      "frente": "¿Qué define a una sociedad disciplinaria?",
+      "dorso": "Es una sociedad donde diversas instituciones emplean técnicas continuas de distribución espacial, control del tiempo, vigilancia y examen para regular la conducta de las personas[cite: 7]."
+    },
+    {
+      "frente": "¿Cuáles son las técnicas fundamentales del poder disciplinario?",
+      "dorso": "Las técnicas principales son:\n• Distribución espacial[cite: 7]\n• Regulación temporal[cite: 7]\n• Vigilancia jerárquica[cite: 8]\n• Sanción normalizadora[cite: 8]\n• Examen y documentación[cite: 8]."
+    },
+    {
+      "frente": "¿Qué función cumple el examen en las instituciones disciplinarias?",
+      "dorso": "Combina la vigilancia con el juicio normalizador, produciendo datos sobre cada persona para convertirla en un caso individual documentado y sujeto a evaluación[cite: 8]."
+    },
+    {
+      "frente": "¿Qué significa la normalización en el marco de la teoría disciplinaria de Foucault?",
+      "dorso": "Es el proceso de comparar la conducta de una persona con un estándar prefijado para clasificarla, evaluarla y aplicar medidas correctoras[cite: 8]."
+    },
+    {
+      "frente": "¿Qué cuestiona Foucault sobre la interpretación humanista de la reforma penal?",
+      "dorso": "Cuestiona que la disminución del sufrimiento público sea mero progreso moral, señalando que representa una sofisticación del control mediante formas más continuas de vigilancia[cite: 9]."
+    },
+    {
+      "frente": "¿Qué significa la idea de pasar de \"castigar menos\" a \"castigar mejor\"?",
+      "dorso": "Significa reemplazar las ceremonias punitivas espectaculares e intermitentes por un control penal más regular, eficaz, extendido e integrado en la vida cotidiana[cite: 9]."
+    },
+    {
+      "frente": "¿En qué se distingue el planteo de Foucault del concepto de efectos de bucle de Ian Hacking?",
+      "dorso": "Hacking enfatiza cómo las personas reaccionan a las clasificaciones modificándolas, mientras que Foucault investiga la genealogía de las instituciones y la relación de saber-poder[cite: 10]."
+    }
+  ]
+}
