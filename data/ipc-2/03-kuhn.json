@@ -1,0 +1,336 @@
+{
+  "materia": "IPC 2",
+  "tema": "Kuhn",
+  "preguntas": [
+    {
+      "pregunta": "A diferencia de la filosofía clásica de la ciencia (como la de Hempel o Popper), la propuesta epistemológica de Thomas Kuhn se caracteriza por centrarse en:",
+      "opciones": [
+      "La historia efectiva de la ciencia y las prácticas colectivas de la comunidad científica",
+      "El aislamiento deductivo de hipótesis individuales desvinculadas de la comunidad",
+      "El establecimiento de reglas lógicas universales para la confirmación probabilística",
+      "La búsqueda de un método algorítmico e intemporal de falsación automática"
+      ],
+      "correcta": "A",
+      "explicacion": "Kuhn desplaza el análisis lógico abstracto hacia el estudio de la historia efectiva, las prácticas comunitarias y los marcos compartidos en los que se produce y evalúa el conocimiento[cite: 145]."
+    },
+    {
+      "pregunta": "En la metáfora utilizada para comparar la concepción clásica con la propuesta de Kuhn, la visión kuhniana equivale a mirar:",
+      "opciones": [
+      "Un mapa atemporal de verdades absolutas e inmodificables",
+      "Una fotografía estática de la estructura lógica de las teorías",
+      "Una película que reconstruye la organización histórica y los cambios de marco disciplinar",
+      "Una imagen aislada de la observación pura e independiente"
+      ],
+      "correcta": "C",
+      "explicacion": "La metáfora de la película ilustra el enfoque kuhniano, que reconstruye históricamente cómo se organiza una disciplina, cómo resuelve problemas y cómo cambia de marco a lo largo del tiempo[cite: 145, 146]."
+    },
+    {
+      "pregunta": "La etapa de la Pre-ciencia se caracteriza fundamentalmente por:",
+      "opciones": [
+      "La coexistencia de escuelas rivales que discrepan sobre los fundamentos de la disciplina",
+      "La existencia de un paradigma único aceptado unánimemente por toda la comunidad",
+      "La ausencia total de investigaciones rigurosas y de observaciones sistemáticas",
+      "La resolución continua e ininterrumpida de enigmas dentro de una tradición común"
+      ],
+      "correcta": "A",
+      "explicacion": "En la pre-ciencia conviven escuelas rivales con compromisos teóricos distintos que debaten constantemente sobre el objeto de estudio, los conceptos básicos y los métodos[cite: 146]."
+    },
+    {
+      "pregunta": "La transición de la Pre-ciencia a la Ciencia Normal ocurre cuando:",
+      "opciones": [
+      "La comunidad científica abandona todo intento de teorización para observar hechos puros",
+      "Se demuestra lógicamente que una de las escuelas posee la verdad absoluta",
+      "Se prohíbe el debate de teorías mediante normativas gubernamentales externas",
+      "Una perspectiva logra suficiente adhesión y establece un marco compartido de investigación"
+      ],
+      "correcta": "D",
+      "explicacion": "La ciencia madura o normal surge cuando la comunidad adopta un consenso sobre un marco común que delimita problemas legítimos, métodos y soluciones modelo[cite: 146]."
+    },
+    {
+      "pregunta": "Según Kuhn, la Ciencia Normal se define como:",
+      "opciones": [
+      "Un período de debate permanente e ininterrumpido sobre los principios filosóficos de la ciencia",
+      "La investigación organizada y guiada por un paradigma aceptado comunitariamente",
+      "Un estado de crisis constante provocado por el rechazo de cualquier fallo empírico",
+      "Una etapa caótica caracterizada por la fragmentación en escuelas rivales"
+      ],
+      "correcta": "B",
+      "explicacion": "Durante la ciencia normal, la comunidad científica investiga de manera organizada y relativamente estable bajo la guía de un paradigma compartido[cite: 147]."
+    },
+    {
+      "pregunta": "Un Paradigma en sentido amplio (o matriz disciplinar) incluye:",
+      "opciones": [
+      "Únicamente una hipótesis teórica aislada formulada en un enunciado matemático",
+      "Un catálogo de verdades absolutas que prohíbe el uso de experimentos",
+      "Un conjunto amplio de leyes, supuestos, métodos, valores, ejemplares y prácticas compartidas",
+      "Exclusivamente reglas expresas escritas formalmente en manuales escolares"
+      ],
+      "correcta": "C",
+      "explicacion": "El paradigma en sentido amplio comprende leyes, supuestos teóricos, compromisos metafísicos, técnicas, valores y soluciones modelo compartidos por una comunidad[cite: 147]."
+    },
+    {
+      "pregunta": "En la terminología de Kuhn, los \"ejemplares\" son:",
+      "opciones": [
+      "Muestras biológicas utilizadas únicamente en la etapa de pre-ciencia",
+      "Reglas lógicas abstractas de confirmación probabilística ideadas por Hempel",
+      "Enunciados metafísicos imposibles de contrastar mediante la experiencia",
+      "Soluciones concretas a problemas aceptados que sirven como modelos para resolver nuevos casos"
+      ],
+      "correcta": "D",
+      "explicacion": "Los ejemplares son problemas resueltos concretos que la comunidad utiliza durante la formación profesional para enseñar a aplicar las leyes y técnicas del paradigma a situaciones nuevas[cite: 147]."
+    },
+    {
+      "pregunta": "La función de la formación científica dentro de un paradigma consiste en:",
+      "opciones": [
+      "Transmitir habilidades, técnicas y modelos que introducen al científico en la tradición compartida",
+      "Inculcar el hábito de cuestionar diariamente todas las leyes fundamentales de la disciplina",
+      "Impedir que los investigadores aprendan a utilizar instrumentos o realizar mediciones",
+      "Fomentar la división de la comunidad en escuelas rivales dentro de la ciencia normal"
+      ],
+      "correcta": "A",
+      "explicacion": "La formación profesional permite socializar al científico en la práctica disciplinar, enseñándole a identificar problemas legítimos y aplicar las soluciones modelo del paradigma[cite: 148]."
+    },
+    {
+      "pregunta": "Una de las tareas habituales del trabajo de Ciencia Normal consiste en:",
+      "opciones": [
+      "Proponer teorías revolucionarias para sustituir el paradigma vigente",
+      "Aumentar la precisión de instrumentos y comparar predicciones con observaciones",
+      "Demostrar que los supuestos metafísicos del paradigma son falsos",
+      "Discutir continuamente los fundamentos del método científico en el vacío"
+      ],
+      "correcta": "B",
+      "explicacion": "La ciencia normal busca articular el paradigma, extendiendo su aplicación, determinando constantes y perfeccionando las mediciones e instrumentos[cite: 148]."
+    },
+    {
+      "pregunta": "Un \"enigma\" o puzzle se define epistemológicamente como:",
+      "opciones": [
+      "Una dificultad indestructible que refuta de manera inmediata la teoría de fondo",
+      "Un problema para el cual el paradigma vigente proporciona los recursos para buscar una solución",
+      "Un fenómeno inexplicable que obliga a suspender la investigación en la ciencia normal",
+      "Una paradoja lógica que solo se presenta en la etapa de pre-ciencia"
+      ],
+      "correcta": "B",
+      "explicacion": "Los enigmas son problemas específicos que la comunidad confía en resolver utilizando las leyes, modelos y técnicas que suministra el paradigma vigente[cite: 148]."
+    },
+    {
+      "pregunta": "La tesis de la \"carga teórica de la observación\" sostiene que:",
+      "opciones": [
+      "La realidad no existe y es una invención arbitraria creada por la mente humana",
+      "Los datos observacionales son completamente puros e independientes de todo concepto",
+      "Observar científicamente depende de las categorías, supuestos e instrumentos del observador",
+      "Los científicos siempre deben realizar observaciones sin ningún marco teórico previo"
+      ],
+      "correcta": "C",
+      "explicacion": "La carga teórica implica que la identificación, clasificación e interpretación de los datos científicos están mediadas por el marco conceptual, los instrumentos y la formación del investigador[cite: 148, 149]."
+    },
+    {
+      "pregunta": "La figura ambigua conocida como \"pato-conejo\" se utiliza como analogía para explicar que:",
+      "opciones": [
+      "Un mismo dibujo cambia físicamente según el papel en el que se imprima",
+      "Los datos observacionales garantizan una interpretación neutral e intemporal",
+      "El paradigma cambia de manera automática cada vez que un observador mira una imagen",
+      "La interpretación de una observación depende de las categorías y esquemas con los que se la organice"
+      ],
+      "correcta": "D",
+      "explicacion": "La analogía perceptiva muestra que un fenómeno no se recibe pasivamente, sino que se reconoce e interpreta a través de los conceptos y esquemas que adopta el observador[cite: 149]."
+    },
+    {
+      "pregunta": "Una \"anomalía\" se distingue de un enigma porque la anomalía:",
+      "opciones": [
+      "Es un problema que se resiste a ser resuelto según las expectativas y recursos del paradigma",
+      "Se resuelve fácilmente aplicando las reglas habituales en pocos minutos",
+      "Constituye una prueba lógica que demuestra la verdad definitiva del paradigma",
+      "Es una hipótesis teórica formulada exclusivamente durante la etapa de pre-ciencia"
+      ],
+      "correcta": "A",
+      "explicacion": "A diferencia del enigma, la anomalía pone en evidencia un desajuste o resistencia persistente entre lo que el paradigma prevé y lo que la investigación encuentra[cite: 149]."
+    },
+    {
+      "pregunta": "Ante el surgimiento de una anomalía aislada, la actitud inicial habitual de la comunidad científica en la Ciencia Normal es:",
+      "opciones": [
+      "Abandonar de inmediato el paradigma y proclamar una revolución científica",
+      "Atribuir el fallo a imprecisiones en la medición, instrumentos o cálculos locales",
+      "Declarar la invalidez de toda la matemática empleada hasta el momento",
+      "Convertir la anomalía en un nuevo paradigma sin realizar ajustes previos"
+      ],
+      "correcta": "B",
+      "explicacion": "En la ciencia normal, un fracaso inicial no invalida el paradigma; suele considerarse provisoriamente como un fallo del investigador o de sus instrumentos[cite: 149]."
+    },
+    {
+      "pregunta": "En la astronomía geocéntrica, la aparición del movimiento aparente de retrogradación de Marte funcionó como una anomalía que condujo a:",
+      "opciones": [
+      "El rechazo instantáneo de la astronomía por parte de los científicos",
+      "La demostración inmediata e irrefutable del heliocentrismo en un solo día",
+      "El desarrollo de ajustes técnicos como los epiciclos para acomodar las observaciones",
+      "La prohibición de observar el planeta Marte con instrumentos"
+      ],
+      "correcta": "C",
+      "explicacion": "La tradición geocéntrica elaboró recursos técnicos complejos (como los epiciclos) para conservar el marco general frente a la anomalía de la retrogradación[cite: 150]."
+    },
+    {
+      "pregunta": "Una acumulación de anomalías se convierte en una \"Crisis\" cuando:",
+      "opciones": [
+      "Aparece un primer fallo leve en una medición secundaria fácilmente corregible",
+      "Un científico individual decide cambiar de tema de investigación por preferencia personal",
+      "Se demuestra que las observaciones no tienen relación con las teorías",
+      "Las dificultades resisten reiterados intentos de solución y afectan compromisos teóricos básicos"
+      ],
+      "correcta": "D",
+      "explicacion": "La crisis surge cuando las anomalías persisten, se acumulan, socavan compromisos centrales y debilitan la confianza de la comunidad en la capacidad explicativa del paradigma[cite: 150]."
+    },
+    {
+      "pregunta": "Durante un período de Crisis en una disciplina científica, suele observarse como síntoma que:",
+      "opciones": [
+      "Aumenta la discusión sobre los fundamentos, supuestos y métodos de la ciencia",
+      "Todos los científicos llegan a un acuerdo unánime y definitivo sobre el método",
+      "Se prohíbe formular hipótesis alternativas que cuestionen el paradigma",
+      "La ciencia normal acelera la resolución acumulativa de enigmas ordinarios"
+      ],
+      "correcta": "A",
+      "explicacion": "En la crisis se debaten los supuestos filosóficos y los fundamentos que antes se daban por sentados, y surgen propuestas y enfoques más radicales[cite: 151]."
+    },
+    {
+      "pregunta": "Según Kuhn, la razón por la cual una anomalía no produce una falsación automática e inmediata del paradigma es que:",
+      "opciones": [
+      "Los paradigmas son verdades absolutas e inmunes a cualquier hecho empírico",
+      "Las anomalías son siempre ilusiones ópticas sin significado en el laboratorio",
+      "Las mediciones y aplicaciones son falibles, y la ciencia normalmente convive con problemas no resueltos",
+      "Los científicos desconocen la existencia de las reglas de la lógica deductiva"
+      ],
+      "correcta": "C",
+      "explicacion": "En la práctica real la ciencia convive con dificultades sin resolver; un desajuste no invalida un paradigma salvo que persista, se vuelva crítico y exista una alternativa viable[cite: 151]."
+    },
+    {
+      "pregunta": "Una \"Revolución Científica\" se define como:",
+      "opciones": [
+      "El desarrollo meramente acumulativo y continuo de datos dentro del mismo paradigma",
+      "Un período en el que se mantiene intacto el marco pero se cambian las herramientas técnicas",
+      "La transición espontánea y obligatoria de la ciencia hacia la pre-ciencia",
+      "El reemplazo de un paradigma dominante por otro incompatible con él en aspectos fundamentales"
+      ],
+      "correcta": "D",
+      "explicacion": "La revolución científica es una transformación discontinua mediante la cual un paradigma en crisis es sustituido por un nuevo marco incompatible en cuestiones centrales[cite: 151]."
+    },
+    {
+      "pregunta": "El cambio de paradigma en una Revolución Científica se caracteriza por ser \"no acumulativo\" porque:",
+      "opciones": [
+      "Se conservan exactamente todas las piezas, conceptos y explicaciones del marco anterior",
+      "El nuevo marco reorganiza los conceptos, modifica los problemas y transforma el significado de los datos",
+      "Consiste en sumar datos numéricos nuevos a la lista de verdades ya establecidas",
+      "Elimina por completo el uso de laboratorios y experimentos en la disciplina"
+      ],
+      "correcta": "B",
+      "explicacion": "En una revolución el conocimiento no se limita a añadirse acumulativamente; el nuevo paradigma altera la estructura conceptual, haciendo que ciertos problemas cambien o pierdan sentido[cite: 151]."
+    },
+    {
+      "pregunta": "Al comparar el cambio de paradigma con una \"conversión\", Kuhn intenta resaltar:",
+      "opciones": [
+      "Que la ciencia es una religión irrazonable basada en dogmas irreflexivos",
+      "Que la decisión de aceptar un paradigma depende de un algoritmo matemático automático",
+      "La profundidad de la transformación conceptual en la forma de interpretar los fenómenos",
+      "Que los científicos cambian de paradigma de forma diaria e involuntaria"
+      ],
+      "correcta": "C",
+      "explicacion": "La metáfora de la conversión subraya que el científico no cambia solo una respuesta aislada, sino todo el marco conceptual desde el cual reconoce e interpreta la evidencia[cite: 152]."
+    },
+    {
+      "pregunta": "El concepto de \"Inconmensurabilidad\" entre paradigmas rivales significa que:",
+      "opciones": [
+      "Existe una ausencia de una escala única, neutral e imparcial que decida la disputa de forma mecánica",
+      "Es absolutamente imposible que dos científicos de paradigmas distintos hablen o discutan",
+      "Todos los paradigmas son idénticos entre sí y afirman exactamente lo mismo",
+      "Las mediciones de laboratorio son siempre falsas en cualquier marco teórico"
+      ],
+      "correcta": "A",
+      "explicacion": "La inconmensurabilidad indica la falta de un estándar común e imparcial aceptado por ambos lados que resuelva la elección de paradigma mediante un algoritmo neutral[cite: 152]."
+    },
+    {
+      "pregunta": "Cuando Kuhn afirma que los científicos que adhieren a paradigmas rivales trabajan en \"mundos distintos\", se refiere a que:",
+      "opciones": [
+      "El universo físico cambia materialmente y se destruye tras cada revolución",
+      "Los investigadores reconocen, organizan y describen los fenómenos desde marcos conceptuales diferentes",
+      "Cada comunidad científica habita en un planeta diferente del sistema solar",
+      "Los experimentos no se realizan mediante objetos materiales reales"
+      ],
+      "correcta": "B",
+      "explicacion": "La expresión no implica un cambio físico del universo, sino que los conceptos y supuestos del paradigma condicionan qué distinciones, hechos y problemas se vuelven perceptibles y significativos[cite: 152]."
+    },
+    {
+      "pregunta": "El paso de la teoría del flogisto a la teoría de la combustión basada en el oxígeno de Lavoisier es un ejemplo histórico de:",
+      "opciones": [
+      "Progreso puramente acumulativo dentro de la etapa de pre-ciencia",
+      "Un enigma simple resuelto mediante la aplicación del modelo geocéntrico",
+      "Una sustitución revolucionaria de paradigma que reorganizó la explicación del fenómeno",
+      "La confirmación probabilística de una hipótesis mediante la regla de Hempel"
+      ],
+      "correcta": "C",
+      "explicacion": "La química de Lavoisier sustituyó la noción de desprendimiento de flogisto por la de combinación con el oxígeno, reestructurando conceptualmente la explicación de la combustión[cite: 153]."
+    },
+    {
+      "pregunta": "El \"progreso intraparadigmático\" se diferencia del \"progreso interparadigmático\" en que el primero:",
+      "opciones": [
+      "Ocurre durante la ciencia normal y es de carácter acumulativo en la resolución de enigmas",
+      "Representa una ruptura discontinua que cambia los estándares de la comunidad",
+      "Sucede únicamente cuando la disciplina se encuentra en un estado de crisis total",
+      "Consiste en el debate permanente entre escuelas rivales en la pre-ciencia"
+      ],
+      "correcta": "A",
+      "explicacion": "El progreso dentro de un paradigma (intraparadigmático) ocurre en la ciencia normal mediante el perfeccionamiento de técnicas, mediciones y la acumulación de soluciones a enigmas[cite: 153]."
+    },
+    {
+      "pregunta": "La metáfora del \"taller mecánico\" se utiliza para ilustrar que una revolución científica:",
+      "opciones": [
+      "Añade simplemente una herramienta más a la misma forma de organizar el trabajo",
+      "Equivale a una reorganización del marco de trabajo cuando las dificultades son insuperables con los recursos previos",
+      "Demuestra que los talleres deben cerrar definitivamente ante el primer auto averiado",
+      "Representa la continuidad perfecta e ininterrumpida de los mismos métodos"
+      ],
+      "correcta": "B",
+      "explicacion": "La analogía muestra que, mientras la ciencia normal mejora técnicas en la misma estructura, la revolución transforma el modo mismo de organizar y abordar los problemas[cite: 153]."
+    },
+    {
+      "pregunta": "Frente a la acusación de que su teoría niega el progreso, Kuhn aclara que el desarrollo científico:",
+      "opciones": [
+      "Avanza en línea recta hacia una descripción final y predeterminada de la realidad",
+      "Carece por completo de cualquier tipo de evaluación o comparación de precisión",
+      "Se reduce a la acumulación infinita de datos en la etapa de pre-ciencia",
+      "Combina etapas de progreso acumulativo en ciencia normal con reorganizaciones en las revoluciones"
+      ],
+      "correcta": "D",
+      "explicacion": "Kuhn sostiene que la ciencia progresa, pero no de forma lineal continua hacia una verdad preestablecida, sino alternando períodos de precisión acumulativa con rupturas revolucionarias[cite: 153, 154]."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes afirmaciones expresa un error frecuente al interpretar la postura de Kuhn?",
+      "opciones": [
+      "Sostener que el paradigma incluye herramientas, valores y soluciones modelo",
+      "Afirmar que una anomalía provoca la refutación inmediata e instantánea del paradigma",
+      "Distinguir entre la ciencia normal y los episodios de revolución científica",
+      "Reconocer que la observación científica está mediada por conceptos y expectativas"
+      ],
+      "correcta": "B",
+      "explicacion": "Es un error frecuente suponer que una anomalía refuta de inmediato el paradigma, ya que la comunidad suele intentar resolverla o convivir con ella antes de entrar en crisis[cite: 149, 154]."
+    },
+    {
+      "pregunta": "La diferencia central entre el estado de Pre-ciencia y el de Ciencia Normal radica en que:",
+      "opciones": [
+      "En la pre-ciencia no hay observaciones empíricas y en la ciencia normal solo hay experimentos",
+      "La pre-ciencia se da en universidades y la ciencia normal en laboratorios privados",
+      "En la pre-ciencia faltan consensos sobre fundamentos y compiten escuelas; en la ciencia normal hay un paradigma compartido",
+      "En la pre-ciencia no surgen enigmas y en la ciencia normal solo existen crisis"
+      ],
+      "correcta": "C",
+      "explicacion": "La pre-ciencia se define por el desacuerdo fundamental entre escuelas, mientras que la ciencia normal comienza cuando se establece un paradigma que articula el trabajo ordinario[cite: 146, 154]."
+    },
+    {
+      "pregunta": "En la dinámica de la ciencia según Kuhn, la función complementaria de la Ciencia Normal y de las Revoluciones consiste en que:",
+      "opciones": [
+      "La ciencia normal destruye los laboratorios y la revolución los vuelve a construir sin ideas",
+      "La ciencia normal crea anomalías intencionalmente y la revolución las prohíbe mediante leyes",
+      "La ciencia normal permite desarrollar en detalle un marco, y la revolución permite revisar sus fundamentos cuando las dificultades son críticas",
+      "La ciencia normal es exclusiva de la física y la revolución científica de la biología"
+      ],
+      "correcta": "C",
+      "explicacion": "La ciencia normal brinda la estabilidad necesaria para la investigación minuciosa de enigmas, mientras que la revolución permite reorganizar la ciencia cuando el paradigma en crisis resulta insostenible[cite: 154]."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "materia": "IPC 2",
+  "tema": "Hacking (ANKI)",
+  "preguntas": [
+
+  ],
+  "tarjetas": [
+    {
+      "frente": "¿Qué critica Ian Hacking de la concepción tradicional del conocimiento científico?",
+      "dorso": "Critica la prioridad exclusiva dada a la representación teórica como espejo del mundo.\nSostiene que el conocimiento científico también se produce mediante la práctica experimental y la intervención sobre el mundo."
+    },
+    {
+      "frente": "¿Qué significa intervenir en la filosofía de la ciencia de Hacking?",
+      "dorso": "Significa actuar sobre el mundo material mediante operaciones experimentales para producir, aislar, alterar o controlar fenómenos."
+    },
+    {
+      "frente": "¿En qué consiste el realismo de entidades según Hacking?",
+      "dorso": "Afirma que hay razones para creer en la existencia de entidades teóricas si podemos manipularlas experimentalmente para producir efectos fiables sobre otros sistemas."
+    },
+    {
+      "frente": "¿Qué diferencia existe entre el realismo de entidades y el realismo de teorías?",
+      "dorso": "El realismo de entidades acepta la existencia real de un objeto manipulable sin exigir que la teoría completa que lo describe sea definitivamente verdadera."
+    },
+    {
+      "frente": "¿Por qué el caso de los electrones apoya el realismo de entidades?",
+      "dorso": "Porque aunque no se observan a simple vista, los científicos pueden manipular haces de electrones para investigar y causar efectos reproducibles en otros sistemas."
+    },
+    {
+      "frente": "¿Qué es una clase indiferente?",
+      "dorso": "Es una categoría cuyos miembros no modifican su comportamiento ni sus propiedades físicas por el hecho de ser clasificados."
+    },
+    {
+      "frente": "¿Qué demuestra la reclasificación de Plutón como planeta enano?",
+      "dorso": "Demuestra el funcionamiento de una clase indiferente, ya que el cambio de categoría astronómica no modificó la masa, la órbita ni la constitución física de Plutón."
+    },
+    {
+      "frente": "¿Qué es una clase interactiva?",
+      "dorso": "Es una categoría aplicada a personas cuyos miembros pueden conocer la clasificación, reaccionar ante ella y alterar su comportamiento."
+    },
+    {
+      "frente": "¿En qué se diferencia el nominalismo dinámico del nominalismo estático?",
+      "dorso": "El estático entiende que las categorías solo agrupan personas preexistentes sin cambiarlas.\nEl dinámico sostiene que la categoría y el tipo de persona se constituyen y transforman mutuamente a lo largo de la historia."
+    },
+    {
+      "frente": "¿Qué es la construcción de personas según Hacking?",
+      "dorso": "Es el proceso histórico por el cual nuevas clasificaciones sociales o médicas hacen posibles nuevos tipos de personas, con formas específicas de autocomprensión, experiencia y conducta."
+    },
+    {
+      "frente": "¿Qué es el efecto bucle?",
+      "dorso": "Es el proceso de retroalimentación donde una clasificación influye en la conducta de las personas clasificadas y sus respuestas provocan que la propia categoría cambie."
+    },
+    {
+      "frente": "¿En qué se diferencia el efecto bucle de una profecía autocumplida?",
+      "dorso": "La profecía autocumplida ocurre cuando una expectativa produce el resultado esperado.\nEl efecto bucle implica un proceso más amplio donde las personas también pueden resistir o transformar la categoría y modificar sus criterios."
+    },
+    {
+      "frente": "¿Qué es el nicho ecológico en la teoría de Hacking?",
+      "dorso": "Es el conjunto de condiciones históricas, culturales, institucionales y científicas que hacen posible que una categoría humana surja y se sostenga en una época."
+    },
+    {
+      "frente": "¿Cuáles son los cuatro vectores que componen el nicho ecológico?",
+      "dorso": "Los cuatro vectores son:\n• Taxonomía médica\n• Polaridad cultural\n• Observabilidad\n• Liberación"
+    },
+    {
+      "frente": "En el análisis del nicho ecológico, ¿qué indica el vector de polaridad cultural?",
+      "dorso": "Alude a las tensiones y valoraciones de una época, como normal y anormal, que otorgan sentido cultural a una categoría determinada."
+    },
+    {
+      "frente": "En el marco del nicho ecológico, ¿a qué se refiere el vector de liberación?",
+      "dorso": "Se refiere a las posibilidades de respuesta o escape que la categoría brinda a los individuos frente a exigencias culturales de su entorno."
+    },
+    {
+      "frente": "¿Qué investiga la ontología histórica?",
+      "dorso": "Estudia cómo surgen históricamente distintas posibilidades de ser, actuar, pensar y reconocerse como persona a partir de nuevas clasificaciones e instituciones."
+    },
+    {
+      "frente": "¿Por qué la ontología histórica no implica un relativismo absoluto?",
+      "dorso": "Porque que una categoría surja bajo condiciones históricas contingentes no significa que sea falsa o irreal, ya que produce efectos objetivos en la vida social."
+    },
+    {
+      "frente": "¿Qué punto en común tienen Ian Hacking y Michel Foucault?",
+      "dorso": "Ambos comparten el interés por estudiar la relación entre el conocimiento, las instituciones de poder y la constitución histórica de los sujetos."
+    },
+    {
+      "frente": "Según el nominalismo dinámico, ¿qué cambió históricamente con la aparición del término feminicidio?",
+      "dorso": "No se crearon los asesinatos materiales de mujeres, sino la categoría para reconocer, registrar y conceptualizar estos hechos dentro de la violencia de género."
+    },
+    {
+      "frente": "¿Cómo actúa el efecto bucle en el diagnóstico de TDAH?",
+      "dorso": "El diagnóstico altera la autocomprensión del paciente y sus apoyos escolares, mientras que las respuestas de los diagnosticados llevan a los profesionales a revisar los criterios clínicos."
+    },
+    {
+      "frente": "¿Qué distingue a la homosexualidad como práctica sexual de su categoría moderna?",
+      "dorso": "Las prácticas del mismo sexo existieron siempre, pero la categoría moderna constituyó un tipo de persona e identidad social reconocible con consecuencias jurídicas y médicas."
+    },
+    {
+      "frente": "Al analizar el bullying, ¿por qué es importante distinguir la conducta previa de la categoría?",
+      "dorso": "Porque el hostigamiento escolar existía antes, pero la categoría definió criterios específicos de asimetría de poder y activó protocolos de intervención institucional."
+    },
+    {
+      "frente": "¿Qué relación hay entre sexo y género en el marco del nominalismo dinámico?",
+      "dorso": "El sexo alude a características biológicas corporales, mientras que los roles de género son clasificaciones sociales históricas que organizan expectativas de conducta."
+    },
+    {
+      "frente": "¿Por qué para Hacking un objeto de estudio en ciencias humanas es un objetivo móvil?",
+      "dorso": "Porque las personas cambian su comportamiento al ser clasificadas y estudiadas, lo que obliga a la ciencia a modificar continuamente sus teorías sobre ellas."
+    }
+  ]
+}

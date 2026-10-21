@@ -1,0 +1,109 @@
+{
+  "materia": "IPC 2",
+  "tema": "Kuhn (ANKI)",
+  "preguntas": [
+
+  ],
+  "tarjetas": [
+    {
+      "frente": "¿Qué propone Thomas Kuhn respecto al estudio de la ciencia frente a la visión clásica?.",
+      "dorso": "Sostiene que para comprender la ciencia no basta con analizar sus reglas lógicas. Es necesario estudiar la historia efectiva y la organización sociológica de las comunidades científicas."
+    },
+    {
+      "frente": "¿En qué se diferencian la metáfora de la fotografía y la película en el análisis de la ciencia?",
+      "dorso": "La fotografía evalúa una teoría de manera abstracta y estática mediante reglas lógicas. La película reconstruye históricamente cómo una disciplina se organiza, resuelve problemas y cambia de marco."
+    },
+    {
+      "frente": "¿Qué caracteriza a la etapa de pre-ciencia según Thomas Kuhn?",
+      "dorso": "Es una fase sin un consenso amplio sobre los fundamentos de la disciplina. Conviven escuelas rivales que disputan los conceptos, métodos y el objeto de estudio."
+    },
+    {
+      "frente": "¿Cómo pasa una disciplina de la pre-ciencia a la ciencia madura?",
+      "dorso": "Pasa cuando la comunidad científica adopta un marco compartido sobre los fundamentos. Este acuerdo delimita los problemas legítimos y da inicio a la ciencia normal."
+    },
+    {
+      "frente": "¿Qué es la ciencia normal?",
+      "dorso": "Es la investigación estable realizada por una comunidad científica bajo la guía de un paradigma aceptado. Su objetivo es desarrollar y ampliar el marco teórico sin cuestionar sus bases."
+    },
+    {
+      "frente": "¿Qué es un paradigma en sentido amplio?",
+      "dorso": "Es un marco conceptual compartido por una comunidad científica. Incluye leyes, modelos teóricos, métodos, instrumentos, valores y ejemplos de problemas resueltos."
+    },
+    {
+      "frente": "¿Qué son los ejemplares dentro de un paradigma?",
+      "dorso": "Son soluciones concretas a problemas aceptados por la comunidad científica. Funcionan como modelos prácticos para abordar y resolver nuevos problemas en la investigación."
+    },
+    {
+      "frente": "¿Qué función cumple la formación científica en el desarrollo de un paradigma?",
+      "dorso": "Introduce a los nuevos investigadores en las normas, técnicas y problemas aceptados. Les enseña a orientar la atención y resolver ejercicios aplicando las pautas del paradigma."
+    },
+    {
+      "frente": "¿Cuáles son las tareas habituales de la ciencia normal?",
+      "dorso": "• Calcular consecuencias de las leyes y precisar mediciones.\n• Extender el marco teórico a situaciones nuevas.\n• Perfeccionar procedimientos experimentales y resolver problemas técnicos."
+    },
+    {
+      "frente": "¿Qué es un enigma o puzzle en la ciencia normal?",
+      "dorso": "Es un problema para el cual el paradigma vigente ofrece los recursos teóricos y metodológicos necesarios para su solución. El reto del científico consiste en hallar el ajuste correcto."
+    },
+    {
+      "frente": "¿En qué consiste la carga teórica de la observación?",
+      "dorso": "Es la tesis de que la observación científica no es neutral. La identificación e interpretación de los datos depende de los conceptos, instrumentos y expectativas teóricas."
+    },
+    {
+      "frente": "¿Qué ilustra la analogía perceptiva del pato-conejo en la ciencia?",
+      "dorso": "Muestra que un mismo estímulo o dato material se interpreta según la organización conceptual adoptada. Un cambio en las categorías modifica los aspectos visibles del fenómeno."
+    },
+    {
+      "frente": "¿Qué es una anomalía en el esquema de Thomas Kuhn?",
+      "dorso": "Es un fenómeno o resultado empírico que se resiste a ser resuelto con los recursos y expectativas del paradigma vigente. Manifiesta un desajuste entre la teoría y la experiencia."
+    },
+    {
+      "frente": "¿En qué se diferencia un enigma de una anomalía?",
+      "dorso": "El enigma se aborda confiando en que el paradigma contiene la solución. La anomalía presenta una resistencia seria que pone en duda las expectativas del marco vigente."
+    },
+    {
+      "frente": "¿Por qué el movimiento retrógrado de Marte constituyó una anomalía para la astronomía geocéntrica?",
+      "dorso": "Porque el planeta parecía retroceder en el cielo, lo que chocaba con la idea de movimientos circulares simples. La astronomía geocéntrica debió añadir epiciclos para ajustar el modelo."
+    },
+    {
+      "frente": "¿Bajo qué condiciones una anomalía desencadena una crisis científica?",
+      "dorso": "Cuando se acumula, persiste en el tiempo o afecta compromisos teóricos centrales. Esto provoca que la comunidad pierda confianza en la eficacia del paradigma."
+    },
+    {
+      "frente": "¿Qué síntomas indican que una disciplina atraviesa una crisis científica?",
+      "dorso": "Aumentan las discusiones filosóficas sobre los fundamentos y los métodos. Surgen propuestas teóricas radicales y desacuerdos sobre los criterios de evaluación."
+    },
+    {
+      "frente": "¿Por qué una anomalía aislada no refuta automáticamente un paradigma?",
+      "dorso": "Porque los científicos atribuyen inicialmente los fallos a errores de medición o técnica. Además, la comunidad no abandona un paradigma sin antes contar con una alternativa viable."
+    },
+    {
+      "frente": "¿Qué es una Revolución Científica según Thomas Kuhn?",
+      "dorso": "Es el proceso por el cual un paradigma dominante es reemplazado por otro marco incompatible. Modifica los conceptos, problemas y criterios de evaluación de la disciplina."
+    },
+    {
+      "frente": "¿Por qué el cambio revolucionario entre paradigmas no es acumulativo?",
+      "dorso": "Porque el marco nuevo reorganiza la estructura del conocimiento. Esto hace que ciertos problemas previos se descarten o cambien completamente de sentido."
+    },
+    {
+      "frente": "¿Qué ilustra la metáfora de la conversión en el cambio de paradigma?",
+      "dorso": "Grafica la profundidad del cambio en el científico, quien pasa a interpretar la experiencia con un marco conceptual totalmente distinto. La transición no ocurre por un cálculo algorítmico mecánico."
+    },
+    {
+      "frente": "¿Qué es la inconmensurabilidad entre paradigmas?",
+      "dorso": "Es la imposibilidad de comparar dos paradigmas rivales mediante un estándar o lenguaje neutral común. Ambos marcos difieren en sus conceptos, problemas y criterios de validez."
+    },
+    {
+      "frente": "¿Por qué Thomas Kuhn afirma que los científicos con paradigmas rivales viven en mundos distintos?[",
+      "dorso": "Porque organizan, perciben y describen los fenómenos mediante categorías conceptuales incompatibles. Aquello que un paradigma considera evidente puede ser irrelevante para el otro."
+    },
+    {
+      "frente": "¿Qué es el progreso intraparadigmático?",
+      "dorso": "Es el avance acumulativo que ocurre durante la ciencia normal. Consiste en la resolución de enigmas, el perfeccionamiento de mediciones y la ampliación del paradigma."
+    },
+    {
+      "frente": "¿Cómo concibe Thomas Kuhn el progreso a través de las revoluciones científicas?",
+      "dorso": "No como un acercamiento lineal hacia una verdad objetiva final. Lo concibe como una reorganización que amplía la capacidad de la comunidad para resolver nuevos problemas."
+    }
+  ]
+}

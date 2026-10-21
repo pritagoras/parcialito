@@ -1,0 +1,109 @@
+{
+  "materia": "IPC 2",
+  "tema": "Popper (ANKI)",
+  "preguntas": [
+
+  ],
+  "tarjetas": [
+    {
+      "frente": "¿Qué es una inferencia inductiva?",
+      "dorso": "Es un razonamiento que pretende pasar de enunciados singulares u observacionales a conclusiones universales o generales."
+    },
+    {
+      "frente": "¿Por qué Popper sostiene que la inducción carece de justificación lógica?",
+      "dorso": "Porque una cantidad finita de observaciones singulares solo informa sobre casos efectivamente observados y no garantiza lógicamente la verdad de una conclusión universal."
+    },
+    {
+      "frente": "¿Por qué intentar justificar la inducción mediante la experiencia genera un círculo vicioso?",
+      "dorso": "Porque para justificar el principio de inducción a partir de las experiencias pasadas se necesita recurrir a la misma inferencia inductiva que se intenta probar."
+    },
+    {
+      "frente": "¿En qué consiste la regresión infinita al intentar justificar la inducción?",
+      "dorso": "Es el problema que surge al intentar justificar el principio de inducción mediante un principio de orden superior, el cual a su vez exige otro principio para justificarse sin llegar jamás a un final."
+    },
+    {
+      "frente": "¿Por qué apelar a la probabilidad no resuelve el problema lógico de la inducción?",
+      "dorso": "Porque asignar probabilidades a inferencias inductivas requiere una regla de asignación que también depende de un principio inductivo, reintroduciendo la misma dificultad lógica."
+    },
+    {
+      "frente": "¿Cómo se diferencian el inductivismo y el deductivismo respecto al origen de una teoría?",
+      "dorso": "El inductivismo sostiene que las teorías surgen generalizando datos observacionales.\nEl deductivismo propone partir de un problema e hipótesis conjeturales de las cuales se deducen consecuencias para contrastar."
+    },
+    {
+      "frente": "¿Qué diferencia establece Popper entre la psicología del conocimiento y la lógica del conocimiento?",
+      "dorso": "La psicología del conocimiento investiga el origen o la invención subjetiva de una idea.\nLa lógica del conocimiento examina las relaciones lógicas entre enunciados y los procedimientos para contrastar las teorías."
+    },
+    {
+      "frente": "¿Cuáles son los cuatro procedimientos para contrastar deductivamente una teoría?",
+      "dorso": "• Comparación lógica interna de las conclusiones para evaluar coherencia.\n• Estudio de la forma lógica para determinar si la teoría es empírica o tautológica.\n• Comparación con otras teorías para evaluar si representa un avance.\n• Aplicación empírica mediante la deducción de predicciones."
+    },
+    {
+      "frente": "¿Qué regla lógica de la deducción sustenta la falsación de una teoría?",
+      "dorso": "El Modus Tollens.\nEstablece que si una teoría implica una consecuencia y esa consecuencia resulta falsa en los hechos, la teoría queda lógicamente refutada."
+    },
+    {
+      "frente": "¿En qué consiste la asimetría lógica entre verificación y falsación?",
+      "dorso": "Ninguna cantidad de casos favorables permite verificar de forma definitiva una ley universal, pero un solo caso incompatible aceptado alcanza para demostrar deductivamente su falsedad."
+    },
+    {
+      "frente": "¿Qué significa que una teoría científica esté corroborada?",
+      "dorso": "Significa que ha superado provisionalmente contrastaciones exigentes e intentos de refutación.\nNo implica que la teoría haya sido demostrada como verdadera de forma definitiva."
+    },
+    {
+      "frente": "¿En qué consiste el criterio de demarcación propuesto por Karl Popper?",
+      "dorso": "En la falsabilidad.\nUn sistema de enunciados es científico si es susceptible de ser refutado o seleccionado en sentido negativo por la experiencia empírica."
+    },
+    {
+      "frente": "¿Por qué Popper rechaza la verificabilidad como criterio para delimitar la ciencia?",
+      "dorso": "Porque para verificar un enunciado universal se requeriría una cantidad infinita de observaciones, lo que dejaría fuera del campo científico a las leyes universales de la naturaleza."
+    },
+    {
+      "frente": "¿Cuál es la diferencia entre un enunciado falsable y uno falsado?",
+      "dorso": "Un enunciado falsable posee la posibilidad lógica de ser contradicho por la experiencia.\nUn enunciado falsado es aquel que ya ha sido puesto a prueba y refutado de manera efectiva."
+    },
+    {
+      "frente": "¿Qué es un falsador potencial?",
+      "dorso": "Es un enunciado básico lógicamente posible que describe un hecho empírico incompatible con la teoría y que, si fuera aceptado, contribuiría a refutarla."
+    },
+    {
+      "frente": "¿Por qué el psicoanálisis o el marxismo no cumplen el criterio de demarcación popperiano?",
+      "dorso": "Porque no señalan condiciones empíricas precisas ni resultados observables posibles que permitan poner a prueba la teoría y eventualmente refutarla."
+    },
+    {
+      "frente": "¿Qué es una hipótesis falsadora?",
+      "dorso": "Es una hipótesis empírica de bajo nivel, falsable y previamente corroborada, que describe el tipo de efecto que entra en conflicto directo con una teoría universal."
+    },
+    {
+      "frente": "¿Por qué una observación aislada no es suficiente para declarar falsada una teoría?",
+      "dorso": "Porque la falsación científica exige corroborar previamente una hipótesis falsadora de bajo nivel, evitando que la refutación dependa de errores perceptivos o eventos no reproducibles."
+    },
+    {
+      "frente": "¿Qué es un enunciado básico?",
+      "dorso": "Es un enunciado singular que afirma la existencia de un hecho particular en un lugar y momento determinados, apto para servir como premisa en una refutación empírica."
+    },
+    {
+      "frente": "¿Qué opciones conforman el Trilema de Fries sobre la fundamentación de los enunciados básicos?",
+      "dorso": "• Dogmatismo: aceptar el enunciado básico sin justificación.\n• Regresión infinita: justificarlo con otro enunciado en una cadena sin fin.\n• Psicologismo: fundar la validez del enunciado en la experiencia perceptiva subjetiva."
+    },
+    {
+      "frente": "¿Por qué Popper rechaza el psicologismo para justificar enunciados básicos?",
+      "dorso": "Porque las percepciones subjetivas no constituyen una justificación lógica entre enunciados y porque toda descripción usa términos universales que trascienden la experiencia inmediata."
+    },
+    {
+      "frente": "¿Cómo se resuelve la aceptación de los enunciados básicos según Popper?",
+      "dorso": "Mediante una decisión o acuerdo convencional intersubjetivo.\nLa comunidad científica acuerda aceptar un enunciado básico siguiendo reglas de procedimiento y manteniendo siempre la posibilidad de revisarlo."
+    },
+    {
+      "frente": "¿Qué representa la analogía del jurado y el juez en la ciencia según Popper?",
+      "dorso": "El veredicto del jurado equivale al enunciado básico aceptado por convención regulada, mientras que el fallo del juez representa el uso lógico y la aplicación de la teoría a partir de esa decisión."
+    },
+    {
+      "frente": "¿Qué significa la metáfora de la ciencia construida sobre pilotes en un terreno pantanoso?",
+      "dorso": "Significa que la ciencia carece de un fundamento absoluto o definitivo.\nSus bases se fijan por decisión solo hasta donde resulta suficiente para sostener de forma provisional la estructura teórica."
+    },
+    {
+      "frente": "¿Qué función cumple la experiencia dentro de la concepción epistemológica de Popper?",
+      "dorso": "La experiencia no funciona como fuente ni como fundamento definitivo de la verdad, sino como una instancia crítica de contrastación destinada a poner a prueba las teorías."
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-21T02:43:11Z",
+  "generado": "2026-10-21T03:34:18Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -171,6 +171,12 @@
           "nombre": "Comunicación Celular",
           "archivo": "data/biologia-celular2/06-comunicacion-celular.json",
           "preguntas": 40
+        },
+        {
+          "id": "biologia-celular2/07-foucault",
+          "nombre": "Foucault",
+          "archivo": "data/biologia-celular2/07-foucault.json",
+          "preguntas": 30
         }
       ]
     },
@@ -211,6 +217,39 @@
           "archivo": "data/ipc-2/02-foucault-anki.json",
           "preguntas": 0,
           "tarjetas": 25
+        },
+        {
+          "id": "ipc-2/03-kuhn",
+          "nombre": "Kuhn",
+          "archivo": "data/ipc-2/03-kuhn.json",
+          "preguntas": 30
+        },
+        {
+          "id": "ipc-2/04-popper-anki",
+          "nombre": "Popper (ANKI)",
+          "archivo": "data/ipc-2/04-popper-anki.json",
+          "preguntas": 0,
+          "tarjetas": 25
+        },
+        {
+          "id": "ipc-2/05-kuhn-anki",
+          "nombre": "Kuhn (ANKI)",
+          "archivo": "data/ipc-2/05-kuhn-anki.json",
+          "preguntas": 0,
+          "tarjetas": 25
+        },
+        {
+          "id": "ipc-2/06-hacking-anki",
+          "nombre": "Hacking (ANKI)",
+          "archivo": "data/ipc-2/06-hacking-anki.json",
+          "preguntas": 0,
+          "tarjetas": 25
+        },
+        {
+          "id": "ipc-2/07-hacking",
+          "nombre": "Hacking",
+          "archivo": "data/ipc-2/07-hacking.json",
+          "preguntas": 33
         }
       ]
     }

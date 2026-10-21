@@ -1,0 +1,336 @@
+{
+  "materia": "Biología 2",
+  "tema": "Foucault",
+  "preguntas": [
+    {
+      "pregunta": "Durante su período genealógico en la década de 1970, ¿cuáles son las dos obras de referencia en las que Foucault examina las relaciones entre saber, poder y las instituciones penales?",
+      "opciones": [
+      "La estructura de las revoluciones científicas y La verdad y las formas jurídicas",
+      "La verdad y las formas jurídicas (1973) y Vigilar y castigar (1975)",
+      "La arqueología del saber y Las palabras y las cosas",
+      "Historia de la locura en la época clásica y El nacimiento de la clínica"
+      ],
+      "correcta": "B",
+      "explicacion": "En el período genealógico, las obras centrales analizadas en el texto son 'La verdad y las formas jurídicas' (1973) y 'Vigilar y castigar. Nacimiento de la prisión' (1975)[cite: 156]."
+    },
+    {
+      "pregunta": "Según Foucault, el método genealógico consiste fundamentalmente en:",
+      "opciones": [
+      "Trazar una cronología lineal que demuestre el avance inevitable del progreso humano",
+      "Reconstruir las condiciones históricas y contingentes que hicieron posible una práctica, institución o saber",
+      "Buscar la fecha exacta del origen puro de una disciplina para validar su verdad empírica",
+      "Evaluar exclusivamente la validez lógica abstracta de las hipótesis científicas"
+      ],
+      "correcta": "B",
+      "explicacion": "La genealogía reconstruye las condiciones históricas contingentes, disputas y discontinuidades que hicieron posible que una práctica, clasificación o forma de saber llegue a parecer natural[cite: 157]."
+    },
+    {
+      "pregunta": "La articulación entre \"saber-poder\" en el pensamiento foucaultiano implica que:",
+      "opciones": [
+      "El saber es completamente neutro y exterior a cualquier tipo de relación social de poder",
+      "El poder destruye automáticamente toda validez empírica de las ciencias",
+      "El conocimiento y el poder se constituyen mutuamente: los saberes producen efectos de poder y el poder genera condiciones de saber",
+      "Solo los gobernantes de turno poseen el saber para manipular los hechos científicos"
+      ],
+      "correcta": "C",
+      "explicacion": "La noción de saber-poder sostiene que los saberes producen efectos de intervención y clasificación, mientras que las relaciones de poder establecen las condiciones en que se generan discursos de autoridad[cite: 157]."
+    },
+    {
+      "pregunta": "Al afirmar que el surgimiento de las ciencias humanas es un \"acontecimiento político\", Foucault se refiere a que:",
+      "opciones": [
+      "Dichas ciencias fueron creadas directamente por partidos políticos durante las campañas electorales",
+      "Representa una transformación en las relaciones sociales de poder y en los modos de clasificar, conocer y gobernar a los individuos",
+      "Se trata de un decreto gubernamental emitido para prohibir el pensamiento libre",
+      "Las ciencias humanas solo deben aplicarse en el ámbito de las ciencias políticas"
+      ],
+      "correcta": "B",
+      "explicacion": "El término 'político' no remite a partidos o elecciones, sino a una transformación sustancial en las relaciones de poder y en las formas de observar, clasificar y administrar a las personas[cite: 157, 166]."
+    },
+    {
+      "pregunta": "A diferencia de la concepción tradicional que representa al poder como una posesión, Foucault sostiene que el poder:",
+      "opciones": [
+      "Es una propiedad fija que pertenece exclusivamente al soberano o al Estado",
+      "Se ejerce en una red de relaciones, prácticas, técnicas y rutinas cotidianas",
+      "Funciona única y exclusivamente mediante la prohibición, la represión y la coerción física",
+      "Es una entidad omnisciente que controla de manera infalible a todos los individuos"
+      ],
+      "correcta": "B",
+      "explicacion": "Para Foucault, el poder no es algo que se posee de forma centralizada, sino una relación que se ejerce mediante prácticas, normas, rutinas e instituciones[cite: 157]."
+    },
+    {
+      "pregunta": "Foucault sostiene que el poder no es solo negativo o represivo, sino que también es \"productivo\" porque:",
+      "opciones": [
+      "Fabrica armas de castigo cada vez más crueles y visibles",
+      "Permite acumular riqueza material en manos del Estado",
+      "Genera capacidades, hábitos, formas de conocimiento, categorías y tipos de subjetividad",
+      "Garantiza la desaparición completa de cualquier forma de resistencia social"
+      ],
+      "correcta": "C",
+      "explicacion": "El poder en Foucault es productivo porque no solo prohíbe, sino que genera modos de actuar, habilidades, hábitos, saberes e identidades socialmente reconocibles[cite: 157, 158]."
+    },
+    {
+      "pregunta": "El surgimiento de disciplinas como la psicología, criminología y psiquiatría en la Modernidad se vincula históricamente con:",
+      "opciones": [
+      "El aislamiento contemplativo de los científicos sin relación con las instituciones",
+      "Transformaciones en las instituciones penales y en las formas de ejercitar el poder sobre los individuos",
+      "La sustitución completa de las ciencias naturales por las ciencias sociales",
+      "Una revelación religiosa surgida a fines del siglo XVIII"
+      ],
+      "correcta": "B",
+      "explicacion": "Las ciencias humanas emergen en articulación con las transformaciones institucionales y penales que convierten al individuo en objeto de observación, examen y corrección[cite: 158]."
+    },
+    {
+      "pregunta": "En *Vigilar y castigar*, Foucault utiliza la historia del castigo penal y la prisión como un hilo conductor para analizar:",
+      "opciones": [
+      "La arquitectura interna de los edificios medievales exclusivamente",
+      "Cómo el castigo deja de centrarse en el suplicio corporal y se reorganiza en torno a la vigilancia, corrección y conocimiento del individuo",
+      "La superioridad moral irrefutable del sistema carcelario moderno frente a cualquier alternativa",
+      "La abolición definitiva de toda forma de violencia física en la sociedad contemporánea"
+      ],
+      "correcta": "B",
+      "explicacion": "La prisión funciona como hilo conductor porque permite observar la transición entre la exhibición pública del poder soberano y la racionalidad basada en la vigilancia y la corrección disciplinaria[cite: 158]."
+    },
+    {
+      "pregunta": "En el sistema penal moderno, el proceso judicial ya no se limita a juzgar el acto delictivo en sí, sino que se extiende hacia:",
+      "opciones": [
+      "La evaluación moral y religiosa del arrepentimiento del pecador",
+      "El examen, diagnóstico y conocimiento de la personalidad, peligrosidad y conducta del autor del hecho",
+      "La imposición automática de un suplicio público en la plaza principal",
+      "La aplicación de las leyes de la física newtoniana al cuerpo del acusado"
+      ],
+      "correcta": "B",
+      "explicacion": "El sistema penal moderno desplaza su atención desde el mero acto cometido hacia el sujeto que lo cometió, indagando su personalidad, peligrosidad y posibilidad de corrección mediante saberes expertos[cite: 158]."
+    },
+    {
+      "pregunta": "Al comparar las perspectivas de Thomas Kuhn y Michel Foucault, una diferencia conceptual clave es que:",
+      "opciones": [
+      "Kuhn niega la existencia de la historia mientras que Foucault la defiende",
+      "Kuhn analiza la transformación de paradigmas en comunidades científicas, mientras Foucault investiga la genealogía de saberes, instituciones y relaciones de poder",
+      "Foucault sostiene que la ciencia avanza por revoluciones lineales y Kuhn niega el progreso",
+      "Ambos autores utilizan exactamente los mismos conceptos de \"anomalía\" y \"crisis\""
+      ],
+      "correcta": "B",
+      "explicacion": "Mientras Kuhn se enfoca en la dinámica interna de los paradigmas y comunidades científicas, Foucault estudia cómo se constituyen los saberes sobre el ser humano en relación con instituciones y prácticas de poder[cite: 158, 166]."
+    },
+    {
+      "pregunta": "La oposición entre la figura medieval del \"pecador\" y la figura moderna del \"delincuente\" sirve didácticamente para ilustrar:",
+      "opciones": [
+      "Que en la Edad Media no existía ningún tipo de ley o sistema jurídico",
+      "Un cambio histórico en la forma de definir la falta, legitimar el castigo y producir conocimiento sobre el autor",
+      "La desaparición total de la religión en la época contemporánea",
+      "Que la criminología moderna es idéntica a la teología medieval"
+      ],
+      "correcta": "B",
+      "explicacion": "La distinción esquemática ilustra la transformación en los modos de definir la transgresión (falta moral/religiosa vs. delito jurídico) y la clase de verdad que se busca producir sobre el sancionado[cite: 159]."
+    },
+    {
+      "pregunta": "En el esquema del régimen medieval de cristiandad presentado en el texto, una falta grave (como matar) se interpretaba prioritariamente como:",
+      "opciones": [
+      "Un incumplimiento de un contrato laboral de fábrica",
+      "Una violación de un mandamiento religioso que ubicaba al autor en la condición de pecador",
+      "Una anomalía estadística dentro de una curva de distribución normal",
+      "Un fallo psicológico derivado de un diagnóstico criminológico previo"
+      ],
+      "correcta": "B",
+      "explicacion": "En la matriz didáctica del régimen de cristiandad, las acciones transgresoras se comprendían dentro de una economía moral/religiosa de culpa, mandato y pecado[cite: 159]."
+    },
+    {
+      "pregunta": "En el régimen del suplicio, el objetivo central de infligir sufrimiento público sobre el cuerpo del condenado era:",
+      "opciones": [
+      "Readaptar laboralmente al individuo para que ingrese rápidamente a la fábrica",
+      "Manifestar de manera visible y ritualizada la fuerza del poder soberano y restablecer su autoridad",
+      "Recopilar datos científicos para publicar en expedientes criminológicos",
+      "Ocultar el castigo de la mirada de la población para evitar conmociones sociales"
+      ],
+      "correcta": "B",
+      "explicacion": "El suplicio corporal funcionaba como una escenificación ritualizada en la que el dolor físico manifestaba públicamente la victoria del poder soberano desafiado[cite: 159, 160]."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes opciones describe una característica propia del suplicio corporal según Foucault?",
+      "opciones": [
+      "Se trata de un control invisible, continuo y personalizado sobre la psique",
+      "Constituye un espectáculo público y ritualizado que hace visible el dolor en el cuerpo del transgresor",
+      "Utiliza boletines y exámenes escolares para evaluar el rendimiento",
+      "Busca la reforma interna del individuo mediante el trabajo disciplinado y silencioso"
+      ],
+      "correcta": "B",
+      "explicacion": "El suplicio se define por causar sufrimiento intenso en el cuerpo expuesto públicamente como espectáculo del poder del soberano[cite: 159, 160]."
+    },
+    {
+      "pregunta": "Foucault se refiere al cuerpo en la lógica del suplicio como una \"superficie de inscripción del poder\" porque:",
+      "opciones": [
+      "Sobre él se imprime de forma visible, mediante la marca o el sufrimiento, la victoria de la autoridad",
+      "En él se aplican pruebas escritas para medir el coeficiente intelectual",
+      "Se lo viste con uniformes estandarizados en las instituciones escolares",
+      "Sirve como soporte para tomar la temperatura corporal y determinar enfermedades"
+      ],
+      "correcta": "A",
+      "explicacion": "En la economía punitiva del suplicio, el cuerpo es el lugar visible donde se ejercen el dolor y la marca para manifestar la fuerza de la sanción soberana[cite: 160]."
+    },
+    {
+      "pregunta": "En el contexto de las reformas penales e ilustradas, el uso de la guillotina ejemplifica una ambivalencia debido a que:",
+      "opciones": [
+      "Aumentó la crueldad del suplicio haciéndolo más lento y doloroso",
+      "Aunque redujo el sufrimiento físico prolongado, mantuvo la manifestación de la potestad estatal de matar",
+      "Suprimió por completo la pena de muerte en toda Europa",
+      "Fue el primer instrumento utilizado para la vigilancia panóptica en las prisiones"
+      ],
+      "correcta": "B",
+      "explicacion": "La guillotina muestra que reducir el sufrimiento visible o inmediato no elimina por sí solo la potestad punitiva de ejecutar, sino que transforma sus técnicas[cite: 160]."
+    },
+    {
+      "pregunta": "El proceso histórico de la Modernidad analizado por Foucault abarca transformaciones asociadas a:",
+      "opciones": [
+      "El estancamiento de la vida urbana y el retorno a la economía feudal",
+      "La Ilustración, las revoluciones políticas, la industrialización y la expansión de sistemas burocráticos",
+      "La consolidación exclusiva de la Iglesia como único centro de administración social",
+      "La eliminación de toda forma de examen o registro institucional"
+      ],
+      "correcta": "B",
+      "explicacion": "La Modernidad en este marco se articula con la Ilustración, el desarrollo industrial, la reorganización urbana y la expansión de formas burocráticas y disciplinarias[cite: 160]."
+    },
+    {
+      "pregunta": "La expansión de la industrialización, las ciudades y los ejércitos en la Modernidad favoreció el desarrollo de:",
+      "opciones": [
+      "Prácticas de castigo exclusivamente aleatorias e impredecibles",
+      "Técnicas para coordinar grandes masas mediante horarios, reglamentos, distribución espacial y registros",
+      "El abandono total de la medición del tiempo y de la evaluación del rendimiento",
+      "La desaparición de las instituciones escolares y hospitalarias"
+      ],
+      "correcta": "B",
+      "explicacion": "La coordinación de grandes poblaciones en la era industrial impulsó mecanismos de distribución espacial, control del tiempo y evaluación sistemática de conductas[cite: 160]."
+    },
+    {
+      "pregunta": "El cambio en la racionalidad penal moderna implica que la prisión no busca simplemente aislar al detenido, sino que pretende:",
+      "opciones": [
+      "Multiplicar las torturas públicas en las plazas de la ciudad",
+      "Intervenir sobre el individuo para corregir su conducta, normalizarlo y observar sus hábitos",
+      "Perdonar incondicionalmente todos los delitos mediante rituales religiosos",
+      "Eliminar todo tipo de leyes penales escritas"
+      ],
+      "correcta": "B",
+      "explicacion": "La prisión moderna adopta una función disciplinaria: no solo retiene, sino que procura transformar hábitos, regular conductas y evaluar la adaptación a las normas[cite: 160, 161]."
+    },
+    {
+      "pregunta": "La fórmula de que en el sistema penal moderno \"se castiga el alma y no el cuerpo\" significa conceptualmente que:",
+      "opciones": [
+      "El cuerpo ya no sufre restricciones materiales ni encierro en la prisión",
+      "El objetivo penal se desplaza hacia la interioridad del sujeto (hábitos, personalidad, conducta) para corregirlo y examinarlo",
+      "Las prisiones modernas son administradas exclusivamente por sacerdotes",
+      "El delito pasa a ser considerado un pecado metafísico incorregible"
+      ],
+      "correcta": "B",
+      "explicacion": "El 'castigo del alma' alude al desplazamiento del objetivo punitivo: de la destrucción o dolor del cuerpo físico a la modificación y examen de la personalidad, hábitos y conducta[cite: 161]."
+    },
+    {
+      "pregunta": "En el régimen penal disciplinario, la intervención de disciplinas como la psiquiatría y la criminología permite responder a preguntas como:",
+      "opciones": [
+      "\"¿Qué juramento ante Dios rompió el pecador?\"",
+      "\"¿Qué tipo de individuo es el autor, cuál es su peligrosidad y cuál es su posibilidad de rehabilitación?\"",
+      "\"¿Cuál es la masa exacta del cuerpo en caída libre?\"",
+      "\"¿Qué rey firmó la cédula real en el siglo XII?\""
+      ],
+      "correcta": "B",
+      "explicacion": "Los saberes expertos introducen interrogantes centrados en el diagnóstico de la persona: peligrosidad, salud mental, motivaciones e idoneidad para la corrección[cite: 161]."
+    },
+    {
+      "pregunta": "El modelo del Panóptico de Bentham se basa esencialmente en una asimetría de la mirada en la cual:",
+      "opciones": [
+      "El vigilado puede observar constantemente al vigilante pero no a otros detenidos",
+      "El vigilante puede observar a los internos, mientras que estos no pueden saber con certeza cuándo son observados",
+      "Nadie puede ver a nadie dentro de la estructura edilicia",
+      "Todos los prisioneros se vigilan mutuamente en igualdad de condiciones"
+      ],
+      "correcta": "B",
+      "explicacion": "El principio panóptico establece que el vigilante tiene visibilidad unilateral y el interno vive en la incertidumbre de no saber cuándo está siendo inspeccionado[cite: 162]."
+    },
+    {
+      "pregunta": "La consecuencia principal de la incertidumbre creada por el dispositivo panóptico sobre el individuo es que:",
+      "opciones": [
+      "Provoca una rebelión violenta inmediata e inevitable en el establecimiento",
+      "El sujeto interioriza la vigilancia y regula su propia conducta como si fuera observado permanentemente",
+      "El individuo pierde completamente la capacidad de moverse dentro de su celda",
+      "Genera la ilusión de que el espacio está completamente deshabitado"
+      ],
+      "correcta": "B",
+      "explicacion": "Al no poder confirmar la presencia del vigilante en cada momento, el individuo asume la posibilidad de la mirada e interioriza la norma mediante el autocontrol[cite: 162]."
+    },
+    {
+      "pregunta": "Al analizar el principio del Panóptico, Foucault aclara que este no debe interpretarse como:",
+      "opciones": [
+      "Un esquema de visibilidad asimétrica aplicable a distintas instituciones",
+      "Una afirmación literal de que existe un vigilante omnisciente que observa a todos en cada segundo",
+      "Una tecnología de poder que fomenta el autocontrol",
+      "Un diagrama de la sociedad disciplinaria"
+      ],
+      "correcta": "B",
+      "explicacion": "El panóptico es un diagrama analítico de poder y visibilidad; no presupone una mirada omnisciente e infalible que controle literalmente cada segundo a todos los individuos[cite: 162]."
+    },
+    {
+      "pregunta": "Una \"sociedad disciplinaria\" busca la formación de \"cuerpos dóciles\", lo cual implica:",
+      "opciones": [
+      "Destruir físicamente las habilidades corporales de los trabajadores",
+      "Aumentar la utilidad y eficiencia del cuerpo mientras se vuelve su conducta más previsible y controlable",
+      "Liberar al cuerpo de todo tipo de horario, espacio u organización temporal",
+      "Impedir que las personas aprendan profesiones o técnicas útiles"
+      ],
+      "correcta": "B",
+      "explicacion": "Los cuerpos dóciles son aquellos cuyas aptitudes productivas o capacidades se optimizan mientras que sus comportamientos se tornan obedientes y previsibles[cite: 162]."
+    },
+    {
+      "pregunta": "Entre las técnicas disciplinarias fundamentales enumeradas en el texto se encuentran:",
+      "opciones": [
+      "El aislamiento contemplativo, la confesión religiosa obligatoria y el perdón soberano",
+      "La distribución espacial, la regulación temporal, la vigilancia jerárquica, la sanción normalizadora y el examen",
+      "La consulta popular, la votación secreta y la apelación judicial directa",
+      "La improvisación de horarios y el uso libre y sin registros de los espacios"
+      ],
+      "correcta": "B",
+      "explicacion": "Las tecnologías de poder disciplinario incluyen la distribución espacial, la regulación del tiempo, los ejercicios, la vigilancia jerárquica, la sanción normalizadora y el examen[cite: 162, 163]."
+    },
+    {
+      "pregunta": "En el marco de las tecnologías disciplinarias, el \"examen\" es una técnica clave porque:",
+      "opciones": [
+      "Sustituye el uso de cualquier documento o expediente escrito",
+      "Combina la vigilancia jerárquica con el juicio normalizador, convirtiendo al individuo en un \"caso\" documentado",
+      "Es un procedimiento que se aplica únicamente en las prisiones de máxima seguridad",
+      "Garantiza que todos los evaluados obtengan siempre el mismo resultado cuantitativo"
+      ],
+      "correcta": "B",
+      "explicacion": "El examen articula la inspección con la evaluación de estándares, permitiendo registrar la información individual e inscribir a la persona como un caso en un expediente[cite: 163]."
+    },
+    {
+      "pregunta": "En *Historia de la sexualidad*, Foucault sostiene que la Modernidad no se caracterizó únicamente por silenciar el sexo, sino por:",
+      "opciones": [
+      "Prohibir de manera absoluta todo estudio médico o jurídico sobre el cuerpo",
+      "Multiplicar discursos expertos que convirtieron a la sexualidad en objeto de saber, verdad y clasificación de las personas",
+      "Promover la libertad sexual sin ningún tipo de norma o categoría discursiva",
+      "Eliminar la distinción entre normalidad y desviación en el campo de la salud"
+      ],
+      "correcta": "B",
+      "explicacion": "Foucault cuestiona la hipótesis represiva mostrando que la Modernidad multiplicó discursos médicos, psicológicos y jurídicos sobre el sexo para clasificar e intervenir sobre las conductas[cite: 163, 164]."
+    },
+    {
+      "pregunta": "Frente al relato humanista tradicional que interpreta la disminución de los suplicios como un mero progreso moral, la crítica de Foucault plantea que:",
+      "opciones": [
+      "La suavización de las penas responde a una estrategia de \"castigar mejor\", volviendo el control más fino, continuo y eficaz",
+      "El cambio penal demuestra que las prisiones modernas no ejercen ningún tipo de poder",
+      "Las sociedades modernas son exactamente igual de crueles y espectaculares que las medievales",
+      "Las reformas penales fueron un fracaso total porque aumentaron los suplicios públicos"
+      ],
+      "correcta": "A",
+      "explicacion": "La disminución de la crueldad espectacular no implica la atenuación del poder, sino la adopción de una tecnología de control más sutil, continua y extendida ('castigar mejor')[cite: 164]."
+    },
+    {
+      "pregunta": "Al comparar la perspectiva de Michel Foucault con la de Ian Hacking, este último aporta el concepto específico de:",
+      "opciones": [
+      "Paradigma y ciencia normal",
+      "Efectos de bucle (*looping effects*), que explica cómo las personas responden y modifican las clasificaciones científicas que se aplican sobre ellas",
+      "Suplicio corporal y espectáculo público del poder soberano",
+      "Inconmensurabilidad entre marcos teóricos rivales"
+      ],
+      "correcta": "B",
+      "explicacion": "Ian Hacking complementa el análisis introduciendo la noción de 'efectos de bucle', donde las personas clasificadas reaccionan modificando las propias categorías que los describen[cite: 165, 166]."
+    }
+  ]
+}
