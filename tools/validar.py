@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-validar.py: revisa que los archivos de preguntas tengan el formato correcto.
+validar.py: revisa que los archivos de preguntas/tarjetas tengan el formato correcto.
 
 Uso:
     python tools/validar.py                      # revisa todo data/
@@ -44,10 +44,25 @@ def validar_archivo(ruta: Path):
             errores.append(f'Falta el campo "{campo}" (texto no vacío).')
 
     preguntas = datos.get("preguntas")
-    if not isinstance(preguntas, list) or not preguntas:
-        errores.append('"preguntas" debe ser una lista con al menos una pregunta.')
+    tarjetas = datos.get("tarjetas")
+
+    if preguntas is not None and not isinstance(preguntas, list):
+        errores.append('"preguntas" debe ser una lista.')
+        preguntas = []
+    elif preguntas is None:
+        preguntas = []
+
+    if tarjetas is not None and not isinstance(tarjetas, list):
+        errores.append('"tarjetas" debe ser una lista.')
+        tarjetas = []
+    elif tarjetas is None:
+        tarjetas = []
+
+    if not preguntas and not tarjetas:
+        errores.append('El tema debe contener al menos una pregunta o al menos una tarjeta.')
         return errores, avisos, 0, datos
 
+    # Validación de preguntas (si existen)
     vistas = set()
     for n, p in enumerate(preguntas, start=1):
         e = f"Pregunta {n}: "
@@ -85,6 +100,12 @@ def validar_archivo(ruta: Path):
             avisos.append(e + 'no tiene "explicacion" (se recomienda para estudiar).')
         elif REF_LETRA.search(expl):
             avisos.append(e + 'la explicación menciona una letra de opción; la app mezcla el orden.')
+
+    # Validación de tarjetas (si existen)
+    for n, t in enumerate(tarjetas, start=1):
+        e = f"Tarjeta {n}: "
+        if not isinstance(t, dict):
+            errores.append(e + "debe ser un objeto { ... }.")
 
     return errores, avisos, len(preguntas), datos
 
