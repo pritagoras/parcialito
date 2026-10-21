@@ -1,6 +1,6 @@
 // ==========================================================
 // app.js: pantallas y lógica del juego.
-// Flujo: inicio (materias) -> materia (temas) -> juego -> resultado
+// Flujo: inicio (materias) -> materia (temas) -> juego / tarjetas -> resultado
 // Los datos se leen de data/index.json (lo genera tools/actualizar_indice.py).
 // ==========================================================
 
@@ -54,19 +54,16 @@ function vistaCargando(texto) {
 }
 
 function colorMateria(m, i) {
-  return /^#[0-9a-f]{6}$/i.test(m.color || '') ? m.color : COLORES[i % COLORES.length];
+  return /^#[0-9a-f]{6}\$/i.test(m.color || '') ? m.color : COLORES[i % COLORES.length];
 }
 
 // ---------- Datos ----------
 
-// Solo acepta https:// o rutas relativas (nada de javascript:, data: ni //otro-sitio)
 function urlImagen(valor) {
   const u = String(valor || '').trim();
-  return /^https:\/\/\S+$/i.test(u) || /^(?!\/)[\w./%-]+$/.test(u) ? u : '';
+  return /^https:\/\/\S+$/i.test(u) \vert{}\vert{} /^(?!\/)[\w./\%-]+$/.test(u) ? u : '';
 }
 
-// Convierte el JSON de un tema en preguntas listas para jugar.
-// Las preguntas inválidas se descartan (y se avisa en la consola).
 function normalizar(json, tema, materia) {
   const salida = [];
   (json.preguntas || []).forEach((p, n) => {
@@ -99,7 +96,6 @@ async function cargarTema(tema, materia) {
   const json = await r.json();
   const preguntas = normalizar(json, tema, materia);
   cacheTarjetas.set(tema.id, normalizarTarjetas(json, tema, materia));
-  // Si editaste o borraste preguntas, las "dominadas" viejas dejan de contar
   if (estado.dominadas[tema.id]) {
     const vigentes = new Set(preguntas.map((q) => q.id));
     for (const id of Object.keys(estado.dominadas[tema.id])) {
@@ -110,9 +106,8 @@ async function cargarTema(tema, materia) {
   return preguntas;
 }
 
-// Cuántas preguntas del tema respondiste bien al menos una vez
 function dominadasDe(tema) {
-  return Math.min(Object.keys(estado.dominadas[tema.id] || {}).length, tema.preguntas);
+  return Math.min(Object.keys(estado.dominadas[tema.id] || {}).length, tema.preguntas || 0);
 }
 
 function dominio(materia) {
@@ -122,9 +117,6 @@ function dominio(materia) {
 }
 
 // ---------- Tarjetas tipo Anki ----------
-// Las tarjetas viven en los mismos JSON de cada tema, en una lista "tarjetas": [{ "frente": "...", "dorso": "..." }].
-// Cada día se repasan las que vencen y se suman unas pocas nuevas. Vos decís qué tan bien la sabías
-// (Otra vez / Difícil / Bien / Fácil) y el intervalo hasta volver a verla se ajusta solo.
 
 const NUEVAS_POR_DIA = 10;   // tarjetas nuevas que se agregan por día
 const MAX_REPASOS = 200;     // tope de tarjetas a repasar en una sesión
@@ -144,7 +136,6 @@ function normalizarTarjetas(json, tema, materia) {
   return salida;
 }
 
-// Todas las preguntas de todas las materias (id -> pregunta). Además deja cargadas las tarjetas.
 async function cargarTodas() {
   const listas = await Promise.all(indice.materias.flatMap((m) => m.temas.map((t) => cargarTema(t, m))));
   const mapa = new Map();
@@ -152,7 +143,6 @@ async function cargarTodas() {
   return mapa;
 }
 
-// estado.tarjetas = { idTarjeta: { ef (facilidad), iv (intervalo en días), prox (día en que toca), l (olvidos) } }
 const memoria = () => (estado.tarjetas ||= {});
 function nuevasHoy() {
   const hoy = diaHoy();
@@ -178,12 +168,10 @@ function resumenTarjetas(extra = 0) {
   return { total: todas.length, pendientes, nuevas, cupo, nNuevas: Math.min(cupo, nuevas.length) };
 }
 
-// Calcula cómo queda una tarjeta según cómo la contestaste (1 otra vez, 2 difícil, 3 bien, 4 fácil).
-// "aprendiendo": es nueva, o la olvidaste y todavía no la recuperaste. No modifica nada.
 function programar(est, aprendiendo, r) {
   const ef0 = est?.ef ?? 2.5, iv0 = est?.iv ?? 0, l0 = est?.l ?? 0;
   if (r === 1) {
-    const castiga = !!est && !aprendiendo;   // olvidar una tarjeta ya aprendida baja su facilidad
+    const castiga = !!est && !aprendiendo;
     return { vuelve: true, ef: castiga ? Math.max(1.3, ef0 - 0.2) : ef0, iv: 0, l: castiga ? l0 + 1 : l0 };
   }
   if (aprendiendo) {
@@ -198,7 +186,6 @@ function programar(est, aprendiendo, r) {
 const sinMovimiento = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const vibrar = (ms) => { if (!estado.silencio) navigator.vibrate?.(ms); };
 
-// Inclinación 3D y reflejo de luz que siguen al puntero (solo con mouse; en el celular no hace falta)
 function activarInclinacion(flip) {
   if (sinMovimiento() || !window.matchMedia('(hover: hover)').matches) return;
   const poner = (ry, rx, mx, my) => {
@@ -224,7 +211,6 @@ function fmtIntervalo(d) {
   return `${String(y).replace('.', ',')} ${y === 1 ? 'año' : 'años'}`;
 }
 
-// Banner del inicio con las tarjetas de hoy (se completa cuando ya están cargados los temas)
 function pintarTarjetasInicio() {
   const zona = document.getElementById('zona-tarjetas');
   if (!zona) return;
@@ -246,21 +232,61 @@ function lanzarTarjetas(extra = 0) {
     const r = resumenTarjetas(extra);
     const cola = mezclar([...r.pendientes.slice(0, MAX_REPASOS), ...r.nuevas.slice(0, r.cupo)]);
     if (!cola.length) { vistaInicio(); avisar('No tenés tarjetas para hoy'); return; }
-    empezarTarjetas(cola);
+    empezarTarjetas(cola, () => vistaInicio());
   }).catch(vistaError);
 }
 
-function empezarTarjetas(cola) {
+async function lanzarTarjetasTemas(materia, temas) {
+  vistaCargando('Preparando tarjetas…');
+  try {
+    for (const t of temas) await cargarTema(t, materia);
+    const hoy = diaHoy();
+    const mem = memoria();
+
+    const tarjetasTema = [];
+    for (const t of temas) {
+      for (const c of cacheTarjetas.get(t.id) || []) tarjetasTema.push(c);
+    }
+
+    if (!tarjetasTema.length) {
+      const iM = indice.materias.indexOf(materia);
+      if (iM >= 0) vistaMateria(iM); else vistaInicio();
+      avisar('Los temas seleccionados no tienen tarjetas');
+      return;
+    }
+
+    const pendientes = tarjetasTema.filter((c) => mem[c.id] && mem[c.id].prox <= hoy).sort((x, y) => mem[x.id].prox - mem[y.id].prox);
+    const nuevas = tarjetasTema.filter((c) => !mem[c.id]);
+
+    let cola = [];
+    if (pendientes.length > 0 || nuevas.length > 0) {
+      const cupo = Math.max(0, NUEVAS_POR_DIA - nuevasHoy().nuevas);
+      cola = mezclar([...pendientes.slice(0, MAX_REPASOS), ...nuevas.slice(0, cupo)]);
+    }
+    
+    if (!cola.length) {
+      cola = mezclar([...tarjetasTema]);
+    }
+
+    const iMateria = indice.materias.indexOf(materia);
+    empezarTarjetas(cola, () => vistaMateria(iMateria >= 0 ? iMateria : 0));
+  } catch (e) {
+    vistaError(e);
+  }
+}
+
+function empezarTarjetas(cola, volver = () => vistaInicio()) {
   const mem = memoria();
   sesionT = {
     cola: [...cola],
     total: cola.length,
-    hechas: 0,                 // tarjetas distintas ya resueltas
+    hechas: 0,                 
     nuevasVistas: 0, repasadas: 0, otraVez: 0,
     origen: new Map(cola.map((c) => [c.id, mem[c.id] ? 'repaso' : 'nueva'])),
-    fallada: new Set(),        // las que se olvidaron en esta sesión
+    fallada: new Set(),        
     nuevaContada: new Set(),
     volteada: false,
+    volver,
   };
   app.innerHTML = `
     <main class="pantalla">
@@ -273,9 +299,10 @@ function empezarTarjetas(cola) {
     </main>`;
   document.getElementById('btn-salir').addEventListener('click', () => {
     Sonido.clic();
+    const v = sesionT?.volver || vistaInicio;
     sesionT = null;
     guardar();
-    vistaInicio();
+    v();
   });
   mostrarTarjeta();
   window.scrollTo(0, 0);
@@ -331,7 +358,7 @@ function voltearTarjeta() {
   const aprendiendo = !est || est.iv === 0 || s.fallada.has(c.id);
   const flip = document.getElementById('flip');
   flip.classList.remove('entra');
-  flip.style.setProperty('--ry', '0deg');   // mientras gira no se inclina
+  flip.style.setProperty('--ry', '0deg');
   flip.style.setProperty('--rx', '0deg');
   flip.classList.add('volteada');
   if (!sinMovimiento()) {
@@ -348,7 +375,7 @@ function voltearTarjeta() {
     return `<button class="valorar ${clase}" data-r="${r}" style="--i:${r - 1}"><b>${txt}</b><small>${p.vuelve ? '< 10 min' : fmtIntervalo(p.iv)}</small></button>`;
   }).join('');
   document.querySelectorAll('.valorar').forEach((b) => b.addEventListener('click', () => valorarTarjeta(Number(b.dataset.r))));
-  Sonido.voltear ? Sonido.voltear() : Sonido.clic();   // si todavía tenés el sonido.js viejo, suena el clic de siempre
+  Sonido.voltear ? Sonido.voltear() : Sonido.clic();
   vibrar(12);
   document.getElementById('ayuda-valorar').hidden = false;
 }
@@ -361,7 +388,7 @@ function valorarTarjeta(r) {
   const aprendiendo = !est || est.iv === 0 || s.fallada.has(c.id);
   const res = programar(est, aprendiendo, r);
 
-  if (!est && !s.nuevaContada.has(c.id)) {   // la primera vez que se ve cuenta para el cupo diario
+  if (!est && !s.nuevaContada.has(c.id)) {
     s.nuevaContada.add(c.id);
     nuevasHoy().nuevas++;
     s.nuevasVistas++;
@@ -370,7 +397,7 @@ function valorarTarjeta(r) {
   if (!(res.vuelve && !est)) mem[c.id] = { ef: res.ef, iv: res.iv, prox: hoy + res.iv, l: res.l };
 
   if (res.vuelve) {
-    s.cola.splice(Math.min(s.cola.length, r === 1 ? 3 : 6), 0, c);   // vuelve a aparecer en unas tarjetas más
+    s.cola.splice(Math.min(s.cola.length, r === 1 ? 3 : 6), 0, c);
   } else {
     s.hechas++;
     if (s.origen.get(c.id) === 'repaso') s.repasadas++;
@@ -380,7 +407,7 @@ function valorarTarjeta(r) {
   vibrar(r === 1 ? [10, 40, 10] : 8);
 
   const siguiente = () => {
-    if (sesionT !== s) return;   // salió de la sesión mientras la tarjeta se iba
+    if (sesionT !== s) return;
     s.bloqueada = false;
     if (!s.cola.length) terminarTarjetas(); else mostrarTarjeta();
   };
@@ -397,6 +424,7 @@ function valorarTarjeta(r) {
 
 function terminarTarjetas() {
   const s = sesionT;
+  const volver = s?.volver || vistaInicio;
   sesionT = null;
   guardar();
   const hoy = diaHoy();
@@ -414,12 +442,12 @@ function terminarTarjetas() {
       </div>
       <p class="estado-ranking">Para mañana: ${plural(manana, 'tarjeta', 'tarjetas')}.</p>
       <div class="botones">
-        ${r.nuevas.length ? `<button class="btn primario" id="btn-mas">Estudiar ${Math.min(NUEVAS_POR_DIA, r.nuevas.length)} nuevas más</button>` : ''}
-        <button class="btn ${r.nuevas.length ? 'secundario' : 'primario'}" id="btn-inicio">Inicio</button>
+        ${r.nuevas.length ? `<button class="btn primario" id="btn-mas">Estudiar \${Math.min(NUEVAS_POR_DIA, r.nuevas.length)} nuevas más</button>` : ''}
+        <button class="btn ${r.nuevas.length ? 'secundario' : 'primario'}" id="btn-inicio">Volver</button>
       </div>
     </main>`;
   document.getElementById('btn-mas')?.addEventListener('click', () => { Sonido.clic(); lanzarTarjetas(NUEVAS_POR_DIA); });
-  document.getElementById('btn-inicio').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
+  document.getElementById('btn-inicio').addEventListener('click', () => { Sonido.clic(); volver(); });
   Sonido.fin(true);
   lanzarConfeti(s.hechas ? 80 : 30);
   window.scrollTo(0, 0);
@@ -427,9 +455,8 @@ function terminarTarjetas() {
 
 // ---------- Dificultad real (datos de todos los jugadores) ----------
 
-const MIN_DATOS = 10;   // con menos respuestas que esto no se muestra el porcentaje
+const MIN_DATOS = 10;
 
-// Pide en segundo plano la estadística de las preguntas de una ronda (si falla, simplemente no se muestra)
 function cargarDificultad(ids) {
   if (!rankingActivo()) return;
   const faltan = [...new Set(ids)].filter((id) => !dificultad.has(id)).slice(0, 500);
@@ -456,13 +483,24 @@ function vistaInicio() {
   const nErrores = Object.keys(estado.errores).length;
 
   const tarjetas = indice.materias.map((m, i) => {
-    const totalPreg = m.temas.reduce((s, t) => s + t.preguntas, 0);
+    const totalPreg = m.temas.reduce((s, t) => s + (t.preguntas || 0), 0);
+    const totalTarj = m.temas.reduce((s, t) => s + (t.tarjetas || 0), 0);
     const pct = dominio(m);
+
+    let metaTexto = '';
+    if (totalPreg > 0 && totalTarj > 0) {
+      metaTexto = `${plural(m.temas.length, 'tema', 'temas')}, ${plural(totalPreg, 'pregunta', 'preguntas')} · ${plural(totalTarj, 'tarjeta', 'tarjetas')}`;
+    } else if (totalTarj > 0) {
+      metaTexto = `${plural(m.temas.length, 'tema', 'temas')}, ${plural(totalTarj, 'tarjeta', 'tarjetas')}`;
+    } else {
+      metaTexto = `${plural(m.temas.length, 'tema', 'temas')}, ${plural(totalPreg, 'pregunta', 'preguntas')}`;
+    }
+
     return `
       <button class="materia" data-materia="${i}" style="--c:${colorMateria(m, i)}">
         <span class="emoji" aria-hidden="true">${esc(m.emoji || '📚')}</span>
         <h2>${esc(m.nombre)}</h2>
-        <span class="meta">${plural(m.temas.length, 'tema', 'temas')}, ${plural(totalPreg, 'pregunta', 'preguntas')}</span>
+        <span class="meta">${metaTexto}</span>
         <span class="dominio">
           <span class="riel"><span class="relleno" style="width:${pct}%"></span></span>
           <span>${pct}%</span>
@@ -481,12 +519,12 @@ function vistaInicio() {
         <div class="barra-ranking">
           <button class="btn secundario" id="btn-ranking">🏆 Ranking</button>
           <button class="btn secundario" id="btn-dificiles">🔥 Las más difíciles</button>
-          <button class="btn secundario" id="btn-apodo">👤 ${estado.apodo ? esc(estado.apodo) : 'Elegir apodo'}</button>
+          <button class="btn secundario" id="btn-apodo">👤 \${estado.apodo ? esc(estado.apodo) : 'Elegir apodo'}</button>
         </div>` : ''}
       <div id="zona-tarjetas"></div>
-      ${nErrores ? `<button class="banner-errores" id="btn-errores"><span>Repasar mis errores</span><b>${nErrores}</b></button>` : ''}
+      ${nErrores ? `<button class="banner-errores" id="btn-errores"><span>Repasar mis errores</span><b>\${nErrores}</b></button>` : ''}
       ${indice.materias.length
-        ? `<div class="materias">${tarjetas}</div>`
+        ? `<div class="materias">\${tarjetas}</div>`
         : `<div class="vacio"><strong>Todavía no hay materias</strong>
              Agregá archivos <code>.json</code> dentro de <code>data/</code> y corré
              <code>python tools/actualizar_indice.py</code>.</div>`}
@@ -520,12 +558,28 @@ function vistaMateria(i) {
 
   const filas = m.temas.map((t, n) => {
     const mejor = estado.mejores[t.id];
+    const nPreg = t.preguntas || 0;
+    const nTarj = t.tarjetas || 0;
+
+    let textoDetalle = '';
+    if (nPreg > 0 && nTarj > 0) {
+      textoDetalle = `${plural(nPreg, 'pregunta', 'preguntas')} · ${plural(nTarj, 'tarjeta', 'tarjetas')}`;
+    } else if (nTarj > 0) {
+      textoDetalle = plural(nTarj, 'tarjeta', 'tarjetas');
+    } else {
+      textoDetalle = plural(nPreg, 'pregunta', 'preguntas');
+    }
+
+    if (dominadasDe(t)) {
+      textoDetalle += ` · ${dominadasDe(t)} dominadas`;
+    }
+
     return `
       <label class="tema" style="--c:${color}">
         <input type="checkbox" data-n="${n}" checked>
         <span class="cuerpo">
           <span class="nombre">${esc(t.nombre)}</span><br>
-          <span class="detalle">${plural(t.preguntas, 'pregunta', 'preguntas')}${dominadasDe(t) ? ` · ${dominadasDe(t)} dominadas` : ''}</span>
+          <span class="detalle">${textoDetalle}</span>
         </span>
         ${mejor ? `<span class="mejor ${mejor.precision >= 80 ? 'alto' : ''}">Mejor ${mejor.precision}%</span>` : ''}
       </label>`;
@@ -548,9 +602,10 @@ function vistaMateria(i) {
       <div class="interior">
         <div class="segmentos" role="radiogroup" aria-label="Cantidad de preguntas">
           ${opcionesCantidad.map(([v, txt]) => `
-            <label><input type="radio" name="cantidad" value="${v}" ${estado.cantidad === v ? 'checked' : ''}><span>${txt}</span></label>`).join('')}
+            <label><input type="radio" name="cantidad" value="\${v}" ${estado.cantidad === v ? 'checked' : ''}><span>${txt}</span></label>`).join('')}
         </div>
         <div class="grupo-botones">
+          <button class="btn secundario" id="btn-tarjetas-tema">🃏 Tarjetas</button>
           <button class="btn secundario" id="btn-simulacro">📝 Simulacro</button>
           <button class="btn primario" id="btn-empezar"></button>
         </div>
@@ -561,18 +616,39 @@ function vistaMateria(i) {
   const btnEmpezar = document.getElementById('btn-empezar');
   const btnTodos = document.getElementById('btn-todos');
   const btnSimulacro = document.getElementById('btn-simulacro');
+  const btnTarjetasTema = document.getElementById('btn-tarjetas-tema');
 
   const seleccionados = () => checks.filter((c) => c.checked).map((c) => m.temas[Number(c.dataset.n)]);
   const cantidadElegida = () => Number(app.querySelector('input[name="cantidad"]:checked')?.value ?? 10);
 
   function actualizar() {
     const sel = seleccionados();
-    const total = sel.reduce((s, t) => s + t.preguntas, 0);
+    const totalPreg = sel.reduce((s, t) => s + (t.preguntas || 0), 0);
+    const totalTarj = sel.reduce((s, t) => s + (t.tarjetas || 0), 0);
     const c = cantidadElegida();
-    const jugar = c === 0 ? total : Math.min(c, total);
-    btnEmpezar.disabled = sel.length === 0;
-    btnSimulacro.disabled = sel.length === 0;
-    btnEmpezar.textContent = sel.length ? `Empezar (${jugar})` : 'Elegí un tema';
+    const jugar = c === 0 ? totalPreg : Math.min(c, totalPreg);
+
+    if (sel.length === 0) {
+      btnEmpezar.disabled = true;
+      btnSimulacro.disabled = true;
+      btnTarjetasTema.disabled = true;
+      btnEmpezar.textContent = 'Elegí un tema';
+    } else if (totalPreg === 0 && totalTarj > 0) {
+      btnEmpezar.disabled = false;
+      btnSimulacro.disabled = true;
+      btnTarjetasTema.disabled = false;
+      btnEmpezar.textContent = `🃏 Ver tarjetas (${totalTarj})`;
+    } else {
+      btnEmpezar.disabled = totalPreg === 0;
+      btnSimulacro.disabled = totalPreg === 0;
+      btnTarjetasTema.disabled = totalTarj === 0;
+      btnEmpezar.textContent = `Empezar (${jugar})`;
+    }
+
+    if (btnTarjetasTema) {
+      btnTarjetasTema.textContent = totalTarj > 0 ? `🃏 Tarjetas (${totalTarj})` : '🃏 Tarjetas';
+    }
+
     btnTodos.textContent = sel.length === checks.length ? 'Quitar todos' : 'Elegir todos';
   }
 
@@ -586,10 +662,25 @@ function vistaMateria(i) {
     actualizar();
   });
   document.getElementById('btn-volver').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
+  
   btnEmpezar.addEventListener('click', () => {
     Sonido.clic();
-    lanzarTemas(m, seleccionados(), cantidadElegida());
+    const sel = seleccionados();
+    const totalPreg = sel.reduce((s, t) => s + (t.preguntas || 0), 0);
+    const totalTarj = sel.reduce((s, t) => s + (t.tarjetas || 0), 0);
+
+    if (totalPreg === 0 && totalTarj > 0) {
+      lanzarTarjetasTemas(m, sel);
+    } else {
+      lanzarTemas(m, sel, cantidadElegida());
+    }
   });
+
+  btnTarjetasTema?.addEventListener('click', () => {
+    Sonido.clic();
+    lanzarTarjetasTemas(m, seleccionados());
+  });
+
   btnSimulacro.addEventListener('click', () => { Sonido.clic(); abrirConfigSimulacro(m, seleccionados()); });
 
   actualizar();
@@ -608,7 +699,6 @@ async function lanzarTemas(materia, temas, cantidad) {
     empezarJuego(pool, {
       titulo: materia.nombre,
       temaId: temas.length === 1 ? temas[0].id : null,
-      // datos para el ranking público (solo cuentan las rondas normales)
       ranking: true,
       materiaNombre: materia.nombre,
       temaNombre: temas.length === 1 ? temas[0].nombre : 'Varios temas',
@@ -629,7 +719,6 @@ async function lanzarErrores() {
     }
     pool = mezclar(pool.filter((q) => estado.errores[q.id]));
     if (!pool.length) {
-      // Los errores guardados ya no existen en los archivos (se editaron o borraron)
       estado.errores = {};
       guardar();
       vistaInicio();
@@ -659,7 +748,7 @@ async function lanzarDificiles() {
       return;
     }
     const todas = await cargarTodas();
-    const dificiles = filas.map((f) => todas.get(f.pregunta_id)).filter(Boolean);   // ya vienen de más a menos difícil
+    const dificiles = filas.map((f) => todas.get(f.pregunta_id)).filter(Boolean);
     if (dificiles.length < 5) {
       vistaInicio();
       avisar('Todavía no hay datos suficientes');
@@ -704,7 +793,6 @@ function empezarJuego(pool, meta) {
   cargarDificultad(pool.map((q) => q.id));
   juego = {
     meta,
-    // "orden" mezcla las opciones: así no importa en qué lugar las escribió el LM
     preguntas: pool.map((q) => ({ ...q, orden: mezclar([0, 1, 2, 3]) })),
     i: 0,
     puntos: 0,
@@ -712,7 +800,7 @@ function empezarJuego(pool, meta) {
     mejorRacha: 0,
     aciertos: 0,
     falladas: [],
-    intentos: [],     // respuestas pendientes de enviar (dificultad real)
+    intentos: [],
     respondida: false,
   };
 
@@ -747,7 +835,7 @@ function actualizarRacha(subio) {
   caja.classList.toggle('caliente', juego.racha >= 3);
   if (subio) {
     caja.classList.remove('sube');
-    void caja.offsetWidth;      // reinicia la animación
+    void caja.offsetWidth;
     caja.classList.add('sube');
   }
 }
@@ -766,22 +854,22 @@ function mostrarPregunta() {
       <h2 class="pregunta">${esc(q.texto)}</h2>
       ${q.imagen ? `
         <figure class="q-figura">
-          <a href="${esc(q.imagen)}" target="_blank" rel="noopener" aria-label="Abrir la imagen en tamaño completo">
+          <a href="\${esc(q.imagen)}" target="_blank" rel="noopener" aria-label="Abrir la imagen en tamaño completo">
             <img src="${esc(q.imagen)}" alt="${esc(q.imagenAlt)}" loading="eager" decoding="async">
           </a>
         </figure>` : ''}
       ${rankingActivo() ? `
         <div class="pie-tarjeta">
-          <button class="reportar" id="btn-reportar" type="button" ${estado.reportadas?.[q.id] ? 'disabled' : ''}>
-            ${estado.reportadas?.[q.id] ? '✓ Reportada' : '⚑ Reportar pregunta'}
+          <button class="reportar" id="btn-reportar" type="button" \${estado.reportadas?.[q.id] ? 'disabled' : ''}>
+            \${estado.reportadas?.[q.id] ? '✓ Reportada' : '⚑ Reportar pregunta'}
           </button>
         </div>` : ''}
     </div>
     <div class="opciones" id="opciones" role="group" aria-label="Opciones de respuesta">
       ${q.orden.map((oi, pos) => `
-        <button class="opcion" data-pos="${pos}">
-          <span class="letra" aria-hidden="true">${LETRAS[pos]}</span>
-          <span>${esc(q.opciones[oi])}</span>
+        <button class="opcion" data-pos="\${pos}">
+          <span class="letra" aria-hidden="true">\${LETRAS[pos]}</span>
+          <span>\${esc(q.opciones[oi])}</span>
         </button>`).join('')}
     </div>
     <div class="feedback" id="feedback" aria-live="polite"></div>
@@ -806,7 +894,6 @@ function responder(pos) {
   const acerto = q.orden[pos] === q.correcta;
   const feedback = document.getElementById('feedback');
 
-  // Para la estadística de dificultad: solo si acertó o no (nada personal)
   j.intentos.push({
     pregunta_id: q.id,
     tema_id: q.temaId,
@@ -827,10 +914,10 @@ function responder(pos) {
     j.racha++;
     j.aciertos++;
     j.mejorRacha = Math.max(j.mejorRacha, j.racha);
-    const ganado = 100 + Math.min(j.racha - 1, 10) * 10;   // bonus por racha
+    const ganado = 100 + Math.min(j.racha - 1, 10) * 10;
     j.puntos += ganado;
-    delete estado.errores[q.id];                            // ya lo sabés: sale de "errores"
-    (estado.dominadas[q.temaId] ||= {})[q.id] = 1;          // cuenta para el progreso del tema
+    delete estado.errores[q.id];
+    (estado.dominadas[q.temaId] ||= {})[q.id] = 1;
     Sonido.acierto(j.racha);
     actualizarRacha(true);
 
@@ -851,7 +938,7 @@ function responder(pos) {
     Sonido.error(perdida >= 3);
     actualizarRacha(false);
     document.getElementById('tarjeta').classList.add('tiembla');
-    veredicto = `<p class="veredicto mal">Incorrecto${perdida >= 3 ? `: se corta la racha de ${perdida}` : ''}</p>`;
+    veredicto = `<p class="veredicto mal">Incorrecto${perdida >= 3 ? `: se corta la racha de \${perdida}` : ''}</p>`;
   }
   guardar();
 
@@ -870,7 +957,7 @@ function responder(pos) {
 
 function siguiente() {
   const j = juego;
-  if (!j || !j.respondida) return;     // evita doble avance (Enter + clic)
+  if (!j || !j.respondida) return;
   j.respondida = false;
   Sonido.clic();
   j.i++;
@@ -880,7 +967,6 @@ function siguiente() {
 
 // ---------- Dificultad real y reportes ----------
 
-// Manda a Supabase las respuestas acumuladas de la ronda (sin esperar y sin romper nada si falla)
 function enviarIntentos(j) {
   if (!j || !j.intentos.length) return;
   const filas = j.intentos;
@@ -955,7 +1041,6 @@ function abrirReporte(q, boton) {
 
 // ---------- Pantalla: resultado ----------
 
-// Una fila de progreso por cada tema que apareció en la ronda
 function filasProgreso(preguntas) {
   const ids = new Set(preguntas.map((q) => q.temaId));
   const filas = [];
@@ -981,7 +1066,6 @@ function vistaResultado() {
   const total = j.preguntas.length;
   const precision = Math.round((j.aciertos / total) * 100);
 
-  // Guarda el mejor resultado solo si jugaste un único tema
   if (j.meta.temaId) {
     const prev = estado.mejores[j.meta.temaId] || { precision: 0, puntos: 0, racha: 0 };
     estado.mejores[j.meta.temaId] = {
@@ -1030,7 +1114,6 @@ function vistaResultado() {
   enviarIntentos(j);
   juego = null;
 
-  // Ranking público: solo las rondas normales (no el repaso de errores ni de falladas)
   if (rankingActivo() && meta.ranking) {
     const estadoEl = document.getElementById('estado-ranking');
     if (!estado.apodo) {
@@ -1052,10 +1135,8 @@ function vistaResultado() {
     }
   }
 
-  // Progreso por tema: guarda cuántas preguntas dominás de cada tema que apareció en la ronda
   if (rankingActivo() && estado.apodo) {
     guardarProgreso(filasProgreso(j.preguntas)).catch(() => {});
-    // Registro privado de la ronda con datos del dispositivo (no se muestra en la página)
     registrarSesion({
       apodo: estado.apodo,
       modo: meta.ranking ? 'ronda' : 'repaso',
@@ -1085,12 +1166,12 @@ function vistaResultado() {
 
 // ---------- Simulacro de parcial ----------
 
-const NOTA_APROBACION = 0.6;   // se aprueba con el 60 % de respuestas correctas
+const NOTA_APROBACION = 0.6;
 const fmtNota = (aciertos, total) => (Math.round((aciertos / total) * 100) / 10).toFixed(1).replace('.', ',');
 const fmtTiempo = (seg) => `${String(Math.floor(seg / 60)).padStart(2, '0')}:${String(seg % 60).padStart(2, '0')}`;
 
 function abrirConfigSimulacro(materia, temas) {
-  const total = temas.reduce((s, t) => s + t.preguntas, 0);
+  const total = temas.reduce((s, t) => s + (t.preguntas || 0), 0);
   const cants = [10, 20, 30, 40].filter((n) => n < total);
   cants.push(total);
   const cantInicial = cants.includes(estado.simuConfig?.cant) ? estado.simuConfig.cant : (cants.includes(20) ? 20 : cants[cants.length - 1]);
@@ -1161,10 +1242,10 @@ function empezarSimulacro(pool, seg, meta) {
   simu = {
     meta, total,
     preguntas: pool.map((q) => ({ ...q, orden: mezclar([0, 1, 2, 3]) })),
-    resp: Array(total).fill(null),   // posición elegida en cada pregunta (null = en blanco)
+    resp: Array(total).fill(null),
     i: 0,
-    vistas: 0,                       // hasta qué pregunta llegó
-    limite: seg * total,             // 0 = sin límite
+    vistas: 0,
+    limite: seg * total,
     t0: Date.now(),
     timer: null,
     fin: false,
@@ -1280,12 +1361,12 @@ function terminarSimulacro(porTiempo) {
   const total = s.total;
   const usado = Math.min(Math.floor((Date.now() - s.t0) / 1000), s.limite || Infinity);
   let aciertos = 0, blancos = 0;
-  const malas = [];                 // { q, pos, visto }
+  const malas = [];
   const intentos = [];
   const porTema = new Map();
 
   s.preguntas.forEach((q, i) => {
-    const visto = i < s.vistas;     // si se acabó el tiempo, las que no llegó a ver no cuentan en las estadísticas
+    const visto = i < s.vistas;
     const pos = s.resp[i];
     const ok = pos !== null && q.orden[pos] === q.correcta;
     const t = porTema.get(q.temaId) || { nombre: q.tema, ok: 0, total: 0 };
@@ -1409,7 +1490,7 @@ function vistaApodo() {
   input.focus();
 }
 
-let pedidoRanking = 0;   // descarta respuestas viejas si el usuario cambia de filtro rápido
+let pedidoRanking = 0;
 
 function vistaRanking(iMateria = 0, tema = '') {
   if (!indice.materias.length) { vistaInicio(); return; }
@@ -1522,7 +1603,7 @@ function vistaHistorial(apodo, volver) {
 
 document.addEventListener('keydown', (e) => {
   if ((!juego && !simu && !sesionT) || e.ctrlKey || e.metaKey || e.altKey) return;
-  if (e.target.closest?.('dialog, input, textarea, select')) return;   // escribiendo en un formulario
+  if (e.target.closest?.('dialog, input, textarea, select')) return;
   const k = e.key.toLowerCase();
   if (sesionT) {
     if (k === ' ' || k === 'enter') { e.preventDefault(); if (sesionT.volteada) valorarTarjeta(3); else voltearTarjeta(); }
@@ -1549,7 +1630,6 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-// El audio del navegador necesita un gesto previo del usuario
 document.addEventListener('pointerdown', () => Sonido.iniciar(), { once: true });
 document.addEventListener('keydown', () => Sonido.iniciar(), { once: true });
 
@@ -1562,9 +1642,8 @@ async function iniciar() {
     if (!r.ok) throw new Error(`No se pudo leer data/index.json (${r.status})`);
     indice = await r.json();
     indice.materias = indice.materias || [];
-    if (estado.srs) { delete estado.srs; guardar(); }   // versión anterior del repaso (sobre las preguntas)
+    if (estado.srs) { delete estado.srs; guardar(); }
     vistaInicio();
-    // Carga los temas en segundo plano para saber cuántas tarjetas hay para hoy
     cargarTodas().then(pintarTarjetasInicio).catch(() => {});
   } catch (e) {
     vistaError(e);
