@@ -54,14 +54,14 @@ function vistaCargando(texto) {
 }
 
 function colorMateria(m, i) {
-  return /^#[0-9a-f]{6}\$/i.test(m.color || '') ? m.color : COLORES[i % COLORES.length];
+  return /^#[0-9a-f]{6}$/i.test(m.color || '') ? m.color : COLORES[i % COLORES.length];
 }
 
 // ---------- Datos ----------
 
 function urlImagen(valor) {
   const u = String(valor || '').trim();
-  return /^https:\/\/\S+$/i.test(u) \vert{}\vert{} /^(?!\/)[\w./\%-]+$/.test(u) ? u : '';
+  return /^https:\/\/\S+$/i.test(u) || /^(?!\/)[\w./\%-]+$/.test(u) ? u : '';
 }
 
 function normalizar(json, tema, materia) {
@@ -442,7 +442,7 @@ function terminarTarjetas() {
       </div>
       <p class="estado-ranking">Para mañana: ${plural(manana, 'tarjeta', 'tarjetas')}.</p>
       <div class="botones">
-        ${r.nuevas.length ? `<button class="btn primario" id="btn-mas">Estudiar \${Math.min(NUEVAS_POR_DIA, r.nuevas.length)} nuevas más</button>` : ''}
+        ${r.nuevas.length ? `<button class="btn primario" id="btn-mas">Estudiar ${Math.min(NUEVAS_POR_DIA, r.nuevas.length)} nuevas más</button>` : ''}
         <button class="btn ${r.nuevas.length ? 'secundario' : 'primario'}" id="btn-inicio">Volver</button>
       </div>
     </main>`;
@@ -519,12 +519,12 @@ function vistaInicio() {
         <div class="barra-ranking">
           <button class="btn secundario" id="btn-ranking">🏆 Ranking</button>
           <button class="btn secundario" id="btn-dificiles">🔥 Las más difíciles</button>
-          <button class="btn secundario" id="btn-apodo">👤 \${estado.apodo ? esc(estado.apodo) : 'Elegir apodo'}</button>
+          <button class="btn secundario" id="btn-apodo">👤 ${estado.apodo ? esc(estado.apodo) : 'Elegir apodo'}</button>
         </div>` : ''}
       <div id="zona-tarjetas"></div>
-      ${nErrores ? `<button class="banner-errores" id="btn-errores"><span>Repasar mis errores</span><b>\${nErrores}</b></button>` : ''}
+      ${nErrores ? `<button class="banner-errores" id="btn-errores"><span>Repasar mis errores</span><b>${nErrores}</b></button>` : ''}
       ${indice.materias.length
-        ? `<div class="materias">\${tarjetas}</div>`
+        ? `<div class="materias">${tarjetas}</div>`
         : `<div class="vacio"><strong>Todavía no hay materias</strong>
              Agregá archivos <code>.json</code> dentro de <code>data/</code> y corré
              <code>python tools/actualizar_indice.py</code>.</div>`}
@@ -602,7 +602,7 @@ function vistaMateria(i) {
       <div class="interior">
         <div class="segmentos" role="radiogroup" aria-label="Cantidad de preguntas">
           ${opcionesCantidad.map(([v, txt]) => `
-            <label><input type="radio" name="cantidad" value="\${v}" ${estado.cantidad === v ? 'checked' : ''}><span>${txt}</span></label>`).join('')}
+            <label><input type="radio" name="cantidad" value="${v}" ${estado.cantidad === v ? 'checked' : ''}><span>${txt}</span></label>`).join('')}
         </div>
         <div class="grupo-botones">
           <button class="btn secundario" id="btn-tarjetas-tema">🃏 Tarjetas</button>
@@ -854,22 +854,22 @@ function mostrarPregunta() {
       <h2 class="pregunta">${esc(q.texto)}</h2>
       ${q.imagen ? `
         <figure class="q-figura">
-          <a href="\${esc(q.imagen)}" target="_blank" rel="noopener" aria-label="Abrir la imagen en tamaño completo">
+          <a href="${esc(q.imagen)}" target="_blank" rel="noopener" aria-label="Abrir la imagen en tamaño completo">
             <img src="${esc(q.imagen)}" alt="${esc(q.imagenAlt)}" loading="eager" decoding="async">
           </a>
         </figure>` : ''}
       ${rankingActivo() ? `
         <div class="pie-tarjeta">
-          <button class="reportar" id="btn-reportar" type="button" \${estado.reportadas?.[q.id] ? 'disabled' : ''}>
-            \${estado.reportadas?.[q.id] ? '✓ Reportada' : '⚑ Reportar pregunta'}
+          <button class="reportar" id="btn-reportar" type="button" ${estado.reportadas?.[q.id] ? 'disabled' : ''}>
+            ${estado.reportadas?.[q.id] ? '✓ Reportada' : '⚑ Reportar pregunta'}
           </button>
         </div>` : ''}
     </div>
     <div class="opciones" id="opciones" role="group" aria-label="Opciones de respuesta">
       ${q.orden.map((oi, pos) => `
-        <button class="opcion" data-pos="\${pos}">
-          <span class="letra" aria-hidden="true">\${LETRAS[pos]}</span>
-          <span>\${esc(q.opciones[oi])}</span>
+        <button class="opcion" data-pos="${pos}">
+          <span class="letra" aria-hidden="true">${LETRAS[pos]}</span>
+          <span>${esc(q.opciones[oi])}</span>
         </button>`).join('')}
     </div>
     <div class="feedback" id="feedback" aria-live="polite"></div>
@@ -938,7 +938,7 @@ function responder(pos) {
     Sonido.error(perdida >= 3);
     actualizarRacha(false);
     document.getElementById('tarjeta').classList.add('tiembla');
-    veredicto = `<p class="veredicto mal">Incorrecto${perdida >= 3 ? `: se corta la racha de \${perdida}` : ''}</p>`;
+    veredicto = `<p class="veredicto mal">Incorrecto${perdida >= 3 ? `: se corta la racha de ${perdida}` : ''}</p>`;
   }
   guardar();
 
