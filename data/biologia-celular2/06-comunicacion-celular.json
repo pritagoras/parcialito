@@ -1,0 +1,341 @@
+{
+  "materia": "Biología 2",
+  "tema": "Comunicación Celular",
+  "preguntas": [
+    {
+      "pregunta": "En relación a las etapas de la comunicación celular, la célula que produce y libera el mensajero químico se denomina:",
+      "opciones": ["Célula inductora", "Célula diana", "Célula blanco", "Célula inducida"],
+      "correcta": "A",
+      "explicacion": "La célula inductora o emisora es la encargada de sintetizar y liberar o presentar la señal química hacia la célula receptora."
+    },
+    {
+      "pregunta": "En la comunicación de tipo endocrina, la señal química se caracteriza por:",
+      "opciones": [
+      "Actuar sobre la misma célula que la sintetizó",
+      "Viajar a través del torrente sanguíneo hacia células blanco distantes",
+      "Difundir únicamente hacia células adyacentes a través del medio extracelular",
+      "Quedar retenida en la membrana plasmática de la célula emisora"
+      ],
+      "correcta": "B",
+      "explicacion": "En la inducción endocrina las glándulas liberan hormonas al torrente sanguíneo para alcanzar células o tejidos distantes."
+    },
+    {
+      "pregunta": "La señalización paracrina se caracteriza porque la molécula inductora:",
+      "opciones": [
+      "Viaja por el torrente sanguíneo hacia órganos alejados",
+      "Es secretada por una neurona directamente a la sangre",
+      "Difunde a través del medio extracelular actuando sobre células cercanas",
+      "Permanece unida a la membrana celular sin secretarse"
+      ],
+      "correcta": "C",
+      "explicacion": "En la comunicación paracrina la célula emite un mediador local que difunde en el entorno extracelular cercano afectando a células próximas."
+    },
+    {
+      "pregunta": "La comunicación de tipo autocrina ocurre cuando:",
+      "opciones": [
+      "Una neurona libera un neurotransmisor en la hendidura sináptica",
+      "Una célula secreta una hormona que se transporta por la sangre",
+      "Dos células conectan directamente sus citoplasmas mediante canales",
+      "El mensajero químico liberado actúa sobre receptores de la misma célula emisora"
+      ],
+      "correcta": "D",
+      "explicacion": "La inducción autocrina es un mecanismo de autorregulación en el que la señal sintetizada por la célula actúa sobre sus propios receptores."
+    },
+    {
+      "pregunta": "En la comunicación por contacto directo (o yuxtacrina), la molécula señal:",
+      "opciones": [
+      "Queda retenida en la membrana plasmática de la célula inductora",
+      "Es transportada por los vasos sanguíneos hacia tejidos alejados",
+      "Se degrada rápidamente en la hendidura sináptica",
+      "Difunde libremente por el medio extracelular a largas distancias"
+      ],
+      "correcta": "A",
+      "explicacion": "En este tipo de comunicación la señal no se secreta, sino que requiere que las células entren en contacto físico directo para interactuar con el receptor."
+    },
+    {
+      "pregunta": "Las uniones comunicantes (nexus o gap) están constituidas por canales intercelulares formados por la alineación de dos:",
+      "opciones": ["Ribosomas", "Conexones", "Receptores ionotrópicos", "Monómeros de actina"],
+      "correcta": "B",
+      "explicacion": "Cada canal de unión comunicante se forma alineando dos conexones (uno aportado por cada célula adyacente), constituidos por subunidades de conexina."
+    },
+    {
+      "pregunta": "Un conexón de una unión comunicante está compuesto habitualmente por:",
+      "opciones": ["Tres proteínas G", "Cuatro cadenas de fosfolípidos", "Seis subunidades de conexina", "Ocho moléculas de colesterol"],
+      "correcta": "C",
+      "explicacion": "Los conexones son estructuras compuestas por seis proteínas transmembrana denominadas conexinas."
+    },
+    {
+      "pregunta": "La apertura de las uniones comunicantes se cierra cuando ocurre:",
+      "opciones": [
+      "Un descenso en la concentración de sodio citosólico",
+      "Una elevación del pH en el citoplasma",
+      "Una disminución del ATP intracelular",
+      "Un aumento de la concentración intracelular de calcio"
+      ],
+      "correcta": "D",
+      "explicacion": "El aumento de la concentración citosólica de calcio o el descenso del pH intracelular provocan el cierre de las uniones comunicantes."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes sustancias puede atravesar libremente las uniones comunicantes entre células adyacentes?",
+      "opciones": ["Segundos mensajeros e iones", "Proteínas de gran tamaño", "ARN mensajero", "Complejos enzimáticos"],
+      "correcta": "A",
+      "explicacion": "Las uniones gap permiten únicamente el pasaje de pequeñas moléculas solubles y segundos mensajeros o iones entre citoplasmas acoplados."
+    },
+    {
+      "pregunta": "En relación a la comunicación sináptica o neuronal, los neurotransmisores son liberados en:",
+      "opciones": [
+      "El torrente sanguíneo",
+      "El espacio o hendidura sináptica",
+      "La luz de una glándula exocrina",
+      "La matriz mitocondrial"
+      ],
+      "correcta": "B",
+      "explicacion": "Las neuronas liberan neurotransmisores a un espacio intercelular estrecho denominado hendidura o espacio sináptico."
+    },
+    {
+      "pregunta": "En la señalización neuroendocrina, la molécula señal es producida por una neurona y:",
+      "opciones": [
+      "Se secreta al espacio extracelular local",
+      "Queda anclada permanentemente en la membrana del axón",
+      "Es vertida directamente al torrente sanguíneo",
+      "Difunde exclusivamente a través de uniones gap"
+      ],
+      "correcta": "C",
+      "explicacion": "Las neuronas neurosecretoras liberan neurohormonas a la circulación sanguínea para regular órganos a distancia."
+    },
+    {
+      "pregunta": "Las hormonas de naturaleza esteroidea se caracterizan químicamente por ser derivadas de:",
+      "opciones": ["Aminoácidos aromáticos", "Ácidos grasos esenciales", "Cadenas peptídicas", "El colesterol"],
+      "correcta": "D",
+      "explicacion": "Las hormonas esteroideas, como los estrógenos, andrógenos y glucocorticoides, se sintetizan a partir del colesterol."
+    },
+    {
+      "pregunta": "Las prostaglandinas son un ejemplo representativo de señales químicas derivadas de:",
+      "opciones": ["Ácidos grasos", "Colesterol", "Aminoácidos", "Nucleótidos de purina"],
+      "correcta": "A",
+      "explicacion": "Las prostaglandinas son mediadores químicos sintetizados a partir de derivados de ácidos grasos."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes pares de hormonas corresponde a señales de naturaleza peptídica o proteica?",
+      "opciones": [
+      "Estrógeno y progesterona",
+      "Insulina y hormona del crecimiento",
+      "Adrenalina y noradrenalina",
+      "Tiroxina y triiodotironina"
+      ],
+      "correcta": "B",
+      "explicacion": "Tanto la insulina como la hormona del crecimiento son moléculas compuestas por cadenas de aminoácidos (proteínas/péptidos)."
+    },
+    {
+      "pregunta": "Las hormonas hidrofílicas no pueden atravesar la bicapa lipídica debido a su polaridad, por lo que se unen a:",
+      "opciones": [
+      "Receptores citosólicos libres",
+      "Receptores exclusivamente nucleares",
+      "Receptores de la membrana plasmática",
+      "Chaperonas dentro del retículo"
+      ],
+      "correcta": "C",
+      "explicacion": "Al no atravesar la membrana lipídica, los ligandos hidrofílicos interactúan con receptores ubicados en la superficie celular externa."
+    },
+    {
+      "pregunta": "Las hormonas esteroideas y tiroideas, por su carácter liposoluble, se unen preferentemente a:",
+      "opciones": [
+      "Canales iónicos de la membrana",
+      "Proteínas de la matriz extracelular",
+      "Enzimas de la lámina basal",
+      "Receptores intracelulares"
+      ],
+      "correcta": "D",
+      "explicacion": "Al ser hidrofóbicas, estas hormonas difunden por la bicapa y se unen a receptores en el citosol o núcleo."
+    },
+    {
+      "pregunta": "La propiedad del complejo ligando-receptor que indica que la célula posee un número finito de receptores se denomina:",
+      "opciones": ["Saturabilidad", "Reversibilidad", "Especificidad", "Encaje inducido"],
+      "correcta": "A",
+      "explicacion": "La saturabilidad refleja que el número total de receptores en la célula es limitado, por lo que concentraciones elevadas de ligando saturan la respuesta."
+    },
+    {
+      "pregunta": "El cambio de conformación estructural recíproco entre el inductor y su receptor al unirse se conoce como:",
+      "opciones": ["Transducción de energía", "Encaje inducido", "Despolarización", "Autofosforilación"],
+      "correcta": "B",
+      "explicacion": "La unión ligando-receptor genera una adaptación estructural recíproca comparable al modelo de encaje inducido de las enzimas."
+    },
+    {
+      "pregunta": "En las vías de señalización con receptores de membrana, el mensajero extracelular que inicia la señal recibe el nombre de:",
+      "opciones": ["Segundo mensajero", "Proteína transductora", "Primer mensajero", "Enzima amplificadora"],
+      "correcta": "C",
+      "explicacion": "El ligando o señal extracelular que se une al receptor superficial actúa como el primer mensajero de la ruta."
+    },
+    {
+      "pregunta": "La conversión del reconocimiento de una señal externa en un conjunto de señales intracelulares se denomina:",
+      "opciones": ["Exocitosis", "Endocitosis dependiente de clatrina", "Transcripción reversa", "Transducción de señal"],
+      "correcta": "D",
+      "explicacion": "La transducción de señales abarca todos los procesos que transforman la unión del primer mensajero al receptor en una cascada de respuesta interna."
+    },
+    {
+      "pregunta": "En los receptores asociados a proteína G, la proteína G de membrana es un heterotrímero compuesto por las subunidades:",
+      "opciones": ["Alfa, beta y gamma", "Citosina, guanina y timina", "PKA, PKC y PKG", "Ras, Raf y Mek"],
+      "correcta": "A",
+      "explicacion": "Las proteínas G heterotriméricas están constituidas estructuralmente por tres subunidades distintas: alfa, beta y gamma."
+    },
+    {
+      "pregunta": "La subunidad alfa de la proteína G se encuentra en su estado inactivo cuando está unida a:",
+      "opciones": ["GTP", "GDP", "AMPc", "ATP"],
+      "correcta": "B",
+      "explicacion": "En estado inactivo, la subunidad alfa de la proteína G contiene guanosina difosfato (GDP) acoplado a su sitio catalítico."
+    },
+    {
+      "pregunta": "La activación de la proteína G ocurre cuando la interacción con el receptor estimulado promueve la liberación de GDP y la unión de:",
+      "opciones": ["ATP", "AMPc", "GTP", "ADP"],
+      "correcta": "C",
+      "explicacion": "Al activarse, la proteína G intercambia su GDP por una molécula de GTP, lo que provoca la disociación funcional de sus subunidades."
+    },
+    {
+      "pregunta": "La desactivación de la subunidad alfa de la proteína G se produce por su propia actividad enzimática de tipo:",
+      "opciones": ["Quinasa", "Fosfatasa", "Ciclasa", "GTPasa"],
+      "correcta": "D",
+      "explicacion": "La subunidad alfa posee actividad GTPasa intrínseca que hidroliza el GTP a GDP, retornando a la forma inactiva."
+    },
+    {
+      "pregunta": "La enzima amplificadora adenilato ciclasa es estimulada directamente por la proteína G activa de tipo:",
+      "opciones": ["Gs", "Gi", "Gq", "Ras"],
+      "correcta": "A",
+      "explicacion": "La proteína G estimuladora (Gs) unida a GTP activa a la adenilato ciclasa para incrementar la producción intracelular de AMPc."
+    },
+    {
+      "pregunta": "La enzima adenilato ciclasa cataliza la conversión de ATP en:",
+      "opciones": ["Diacilglicerol (DAG)", "AMP cíclico (AMPc)", "Inositol trifosfato (IP3)", "Fosfatidilinositol difosfato (PIP2)"],
+      "correcta": "B",
+      "explicacion": "La adenilato ciclasa utiliza moléculas de ATP como sustrato para sintetizar el segundo mensajero AMP cíclico."
+    },
+    {
+      "pregunta": "La proteína Gi se diferencia de la proteína Gs porque su activación provoca la:",
+      "opciones": [
+      "Estimulación de la fosfolipasa C",
+      "Liberación directa de calcio desde el REL",
+      "Inhibición de la adenilato ciclasa",
+      "Dimerización de receptores tirosinquinasa"
+      ],
+      "correcta": "C",
+      "explicacion": "La proteína G inhibitoria (Gi) unida a GTP inactiva a la adenilato ciclasa, reduciendo los niveles de AMPc."
+    },
+    {
+      "pregunta": "El AMPc ejerce su efecto funcional primario mediante la activación de la proteína quinasa:",
+      "opciones": [
+      "Proteína quinasa C (PKC)",
+      "Proteína quinasa B (Akt)",
+      "Proteína quinasa activada por mitógenos (MAPK)",
+      "Proteína quinasa A (PKA)"
+      ],
+      "correcta": "D",
+      "explicacion": "El AMPc se une a las subunidades regulatorias de la Proteína Quinasa A (PKA), liberando las subunidades catalíticas activas."
+    },
+    {
+      "pregunta": "La activación de la PKA por unión de AMPc ocurre específicamente al unirse este segundo mensajero a sus:",
+      "opciones": ["Subunidades regulatorias", "Subunidades catalíticas", "Dominios transmembrana", "Restos de tirosina fosforilados"],
+      "correcta": "A",
+      "explicacion": "La PKA inactiva posee subunidades regulatorias y catalíticas; la unión del AMPc a las regulatorias causa la disociación y activación de las catalíticas."
+    },
+    {
+      "pregunta": "La acción de las enzimas quinasas sobre otras proteínas consiste en:",
+      "opciones": [
+      "Eliminar grupos fosfato mediante hidrólisis",
+      "Agregar covalentemente grupos fosfato",
+      "Degradar la cadena polipeptídica",
+      "Escindir enlaces fosfodiéster"
+      ],
+      "correcta": "B",
+      "explicacion": "Las quinasas son enzimas que transfieren un grupo fosfato desde un nucleótido dador (como ATP) a aminoácidos específicos de una proteína."
+    },
+    {
+      "pregunta": "Las enzimas encargadas de remover grupos fosfato de las proteínas desfosforilándolas son las:",
+      "opciones": ["Quinasas", "Ciclasas", "Fosfatasas", "Polimerasas"],
+      "correcta": "C",
+      "explicacion": "Las fosfatasas catalizan la eliminación de grupos fosfato, revirtiendo el efecto de las quinasas en la célula."
+    },
+    {
+      "pregunta": "La vía de la proteína Gq activa como enzima amplificadora de membrana a la:",
+      "opciones": ["Adenilato ciclasa", "Fosfodiesterasa", "Proteína quinasa A", "Fosfolipasa C (PLC)"],
+      "correcta": "D",
+      "explicacion": "La proteína Gq unida a GTP activa a la fosfolipasa C (PLC), que escinde el fosfolípido de membrana PIP2."
+    },
+    {
+      "pregunta": "La enzima fosfolipasa C hidroliza al fosfolípido PIP2 generando dos segundos mensajeros denominados:",
+      "opciones": ["IP3 y DAG", "AMPc y PKA", "ATP y GTP", "Tiroxina y Adrenalina"],
+      "correcta": "A",
+      "explicacion": "La escisión de PIP2 por la PLC produce inositol trifosfato (IP3) y diacilglicerol (DAG)."
+    },
+    {
+      "pregunta": "El inositol trifosfato (IP3) difunde por el citosol y se une a receptores en el retículo endoplásmico liso provocando la:",
+      "opciones": [
+      "Síntesis de glucógeno",
+      "Liberación de calcio hacia el citosol",
+      "Inhibición de la transcripción",
+      "Captación activa de sodio"
+      ],
+      "correcta": "B",
+      "explicacion": "El IP3 abre canales de calcio dependientes de ligando en la membrana del REL, permitiendo que el calcio fluya al citosol."
+    },
+    {
+      "pregunta": "El segundo mensajero diacilglicerol (DAG) permanece asociado a la membrana y activa a la enzima:",
+      "opciones": ["Proteína quinasa A (PKA)", "Adenilato ciclasa", "Proteína quinasa C (PKC)", "Fosfodiesterasa"],
+      "correcta": "C",
+      "explicacion": "El DAG en la membrana, junto con el calcio citosólico, activa a la proteína quinasa C (PKC)."
+    },
+    {
+      "pregunta": "La calmodulina es una proteína citosólica de pequeño tamaño cuya función clave es:",
+      "opciones": [
+      "Escindir fosfolípidos de la membrana plasmática",
+      "Sintetizar moléculas de ATP a partir de ADP y Pi",
+      "Transportar glucosa a través de la membrana",
+      "Unir iones calcio y cambiar su conformación para activar otras proteínas"
+      ],
+      "correcta": "D",
+      "explicacion": "La calmodulina se une reversiblemente al calcio citosólico, cambiando su estructura para modular la actividad de quinasas y otras enzimas."
+    },
+    {
+      "pregunta": "En la vía mediada por adrenalina a través de proteína Gs en hepatocitos, el resultado metabólico final es la:",
+      "opciones": [
+      "Glucogenólisis y liberación de glucosa",
+      "Síntesis de lípidos a partir de ácidos grasos",
+      "Inhibición total de la síntesis proteica",
+      "Polimerización de nucleótidos de ARN"
+      ],
+      "correcta": "A",
+      "explicacion": "La activación de la cascada Gs-AC-PKA por adrenalina activa a la glucógeno fosforilasa, estimulando la degradación del glucógeno (glucogenólisis)."
+    },
+    {
+      "pregunta": "El concepto de amplificación de señal en una cascada catalítica explica cómo:",
+      "opciones": [
+      "Cada receptor requiere un número masivo de hormonas para activarse",
+      "Una única molécula de ligando puede generar muchas moléculas de producto final",
+      "Los segundos mensajeros destruyen los receptores de la superficie",
+      "La respuesta celular disminuye gradualmente tras cada paso enzimático"
+      ],
+      "correcta": "B",
+      "explicacion": "Dado que cada etapa intermedia de la cascada posee capacidad catalítica, un solo complejo inductor-receptor multiplica exponencialmente la respuesta final."
+    },
+    {
+      "pregunta": "Los receptores con actividad enzimática intrínseca de tipo tirosinquinasa (RTK) se caracterizan por presentar un dominio citoplasmático que:",
+      "opciones": [
+      "Genera directamente moléculas de AMPc",
+      "Actúa como canal iónico para el pasaje de cloruro",
+      "Fosforila aminoácidos tirosina en sí mismo y en otras proteínas",
+      "Hidroliza el GTP uniéndose a la subunidad alfa"
+      ],
+      "correcta": "C",
+      "explicacion": "Los RTK poseen en su dominio intracelular actividad de quinasa que fosforila residuos de tirosina (autofosforilación y fosforilación de sustratos)."
+    },
+    {
+      "pregunta": "El receptor de insulina se diferencia de otros receptores tirosinquinasa (como el de EGF o PDGF) porque antes de unirse al ligando posee una estructura:",
+      "opciones": [
+      "Monomérica",
+      "Heptamétrica con 7 pasos transmembrana",
+      "Formada por conexones",
+      "Tetramérica (dos subunidades alfa y dos beta)"
+      ],
+      "correcta": "D",
+      "explicacion": "El receptor de insulina es un tetrámero preformado formado por dos subunidades alfa externas y dos subunidades beta transmembrana, mientras que otros RTK son monómeros que dimerizan al unir el ligando."
+    }
+  ]
+}

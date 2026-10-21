@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-21T02:10:06Z",
+  "generado": "2026-10-21T02:38:57Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -158,6 +158,19 @@
           "nombre": "Expresión génica",
           "archivo": "data/biologia-celular2/04-expresion-genica.json",
           "preguntas": 37
+        },
+        {
+          "id": "biologia-celular2/05-comunicacion-celular-anki",
+          "nombre": "Comunicación Celular (ANKI)",
+          "archivo": "data/biologia-celular2/05-comunicacion-celular-anki.json",
+          "preguntas": 0,
+          "tarjetas": 25
+        },
+        {
+          "id": "biologia-celular2/06-comunicacion-celular",
+          "nombre": "Comunicación Celular",
+          "archivo": "data/biologia-celular2/06-comunicacion-celular.json",
+          "preguntas": 40
         }
       ]
     },

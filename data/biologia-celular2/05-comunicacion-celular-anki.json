@@ -1,0 +1,109 @@
+{
+  "materia": "Biología 2",
+  "tema": "Comunicación Celular (ANKI)",
+  "preguntas": [
+
+  ],
+  "tarjetas": [
+    {
+      "frente": "¿Qué es la inducción celular?",
+      "dorso": "Es el proceso mediante el cual una célula emite una señal que es reconocida por una célula blanco, modificando la actividad de esta última[cite: 15]."
+    },
+    {
+      "frente": "¿Cómo se define la comunicación autocrina?",
+      "dorso": "Es el mecanismo en el que una célula secreta una señal química que se une a receptores presentes en esa misma célula emisora para autorregular su actividad[cite: 15, 17]."
+    },
+    {
+      "frente": "¿En qué consiste la señalización paracrina?",
+      "dorso": "Es un tipo de comunicación local donde una célula libera un mensajero que se difunde a corta distancia por el medio extracelular para actuar sobre células vecinas[cite: 15, 17]."
+    },
+    {
+      "frente": "¿Qué caracteriza a la comunicación endocrina?",
+      "dorso": "Es la señalización a larga distancia en la que una glándula endocrina libera hormonas al torrente sanguíneo para alcanzar células blanco distantes[cite: 16, 17]."
+    },
+    {
+      "frente": "¿Qué estructura forma el canal de una unión comunicante o gap?",
+      "dorso": "Está formado por la alineación de dos conexones, uno aportado por cada célula adyacente, estando cada conexón constituido por seis proteínas llamadas conexinas[cite: 16]."
+    },
+    {
+      "frente": "¿Qué sustancias pueden atravesar las uniones comunicantes?",
+      "dorso": "Permiten el paso directo de iones y moléculas pequeñas compatibles con el tamaño del poro, logrando acoplamiento eléctrico y metabólico entre los citoplasmas[cite: 16]."
+    },
+    {
+      "frente": "¿En qué consiste la señalización yuxtacrina por contacto directo?",
+      "dorso": "Es un mecanismo en el que el ligando permanece unido a la membrana de la célula emisora y requiere el contacto físico directo con el receptor de la célula vecina[cite: 15, 16]."
+    },
+    {
+      "frente": "¿Qué diferencia funcional existe entre una glándula endocrina y una exocrina?",
+      "dorso": "La glándula endocrina vierte sus hormonas directamente al medio interno o a la sangre, mientras que la exocrina libera sus productos hacia superficies o cavidades a través de conductos[cite: 18]."
+    },
+    {
+      "frente": "¿Por qué el páncreas es considerado una glándula mixta?",
+      "dorso": "Porque sus islotes secretan hormonas como insulina y glucagón a la sangre, mientras que sus células acinares secretan enzimas digestivas por conductos hacia el duodeno[cite: 18]."
+    },
+    {
+      "frente": "¿Dónde se ubican habitualmente los receptores para hormonas hidrofílicas?",
+      "dorso": "Se ubican en la membrana plasmática porque las moléculas polares o de gran tamaño no pueden atravesar libremente la bicapa lipídica[cite: 18]."
+    },
+    {
+      "frente": "¿Por qué las hormonas esteroideas pueden unirse a receptores intracelulares?",
+      "dorso": "Porque al ser liposolubles pueden atravesar la membrana plasmática y unirse a receptores citosólicos o nucleares para regular la transcripción de genes[cite: 18, 19]."
+    },
+    {
+      "frente": "¿Cuáles son las propiedades principales del complejo ligando-receptor?",
+      "dorso": "Las propiedades son:\n• Especificidad al reconocer estructuras químicas particulares[cite: 19].\n• Saturabilidad por ser finito el número de receptores[cite: 19].\n• Reversibilidad por disociación del complejo[cite: 19]."
+    },
+    {
+      "frente": "¿Qué ocurre con la proteína G heterotrimérica cuando se activa?",
+      "dorso": "La subunidad alfa libera GDP y se une a GTP, separándose funcionalmente del dímero beta-gamma para regular a una enzima efectora[cite: 20]."
+    },
+    {
+      "frente": "¿Qué función cumple la actividad GTPasa intrínseca de la subunidad alfa de la proteína G?",
+      "dorso": "Hidroliza el GTP a GDP para inactivar la proteína G, permitiendo apagar la señal y reasociarse con las subunidades beta y gamma[cite: 20]."
+    },
+    {
+      "frente": "¿Qué enzima activa la proteína Gs y qué segundo mensajero produce?",
+      "dorso": "Activa a la enzima adenilato ciclasa, la cual cataliza la conversión de ATP en adenosín monofosfato cíclico o AMPc[cite: 20]."
+    },
+    {
+      "frente": "¿Cómo activa el AMPc a la proteína quinasa A o PKA?",
+      "dorso": "El AMPc se une a las subunidades reguladoras de la PKA, liberando las subunidades catalíticas activas para que fosforilen proteínas diana[cite: 21]."
+    },
+    {
+      "frente": "¿Qué productos genera la fosfolipasa C al hidrolizar el PIP2 en la vía de la proteína Gq?",
+      "dorso": "Genera dos segundos mensajeros: el inositol 1,4,5-trifosfato o IP3, que difunde al citosol, y el diacilglicerol o DAG, que permanece en la membrana[cite: 22]."
+    },
+    {
+      "frente": "¿Cuál es la función del IP3 producido por la fosfolipasa C?",
+      "dorso": "Se une a receptores-canal del retículo endoplasmático provocando la liberación de calcio almacenado hacia el citosol[cite: 22]."
+    },
+    {
+      "frente": "¿Qué estequiometría de transporte realiza la bomba sodio-potasio ATPasa en cada ciclo?",
+      "dorso": "Expulsa tres iones sodio al exterior celular e introduce dos iones potasio al interior, consumiendo una molécula de ATP[cite: 23]."
+    },
+    {
+      "frente": "¿Qué movimientos iónicos producen la despolarización y repolarización durante el potencial de acción?",
+      "dorso": "La despolarización se produce por la entrada rápida de sodio a través de canales dependientes de voltaje, mientras que la repolarización ocurre por la salida de potasio[cite: 24]."
+    },
+    {
+      "frente": "¿Por qué el potencial de acción se conduce de forma saltatoria en axones mielinizados?",
+      "dorso": "Porque la vaina de mielina aísla eléctricamente el axón y la corriente se propaga rápidamente regenerando el potencial solo en los nodos de Ranvier[cite: 24]."
+    },
+    {
+      "frente": "¿Qué desencadena la entrada de calcio en la terminal presináptica durante la sinapsis química?",
+      "dorso": "Promueve la fusión de las vesículas sinápticas con la membrana presináptica y la liberación de neurotransmisores por exocitosis al espacio sináptico[cite: 25]."
+    },
+    {
+      "frente": "¿En qué se diferencian los receptores postsinápticos ionotrópicos de los metabotrópicos?",
+      "dorso": "Los ionotrópicos son canales iónicos regulados directamente por ligando, mientras que los metabotrópicos activan vías de señalización intracelular mediadas por proteína G[cite: 25]."
+    },
+    {
+      "frente": "¿Qué diferencia existe entre la recaptación y la degradación enzimática de neurotransmisores?",
+      "dorso": "La recaptación retira el neurotransmisor del espacio sináptico mediante transportadores de membrana, mientras que la degradación enzimática lo altera químicamente[cite: 26]."
+    },
+    {
+      "frente": "¿Cuál es el mecanismo de acción principal de la cocaína en la sinapsis?",
+      "dorso": "Inhibe los transportadores de recaptación presináptica de monoaminas, aumentando la permanencia y disponibilidad del neurotransmisor en el espacio sináptico[cite: 26]."
+    }
+  ]
+}
