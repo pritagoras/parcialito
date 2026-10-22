@@ -209,17 +209,6 @@
       "explicacion": "La adenilato ciclasa utiliza moléculas de ATP como sustrato para sintetizar el segundo mensajero AMP cíclico."
     },
     {
-      "pregunta": "La proteína Gi se diferencia de la proteína Gs porque su activación provoca la:",
-      "opciones": [
-      "Estimulación de la fosfolipasa C",
-      "Liberación directa de calcio desde el REL",
-      "Inhibición de la adenilato ciclasa",
-      "Dimerización de receptores tirosinquinasa"
-      ],
-      "correcta": "C",
-      "explicacion": "La proteína G inhibitoria (Gi) unida a GTP inactiva a la adenilato ciclasa, reduciendo los niveles de AMPc."
-    },
-    {
       "pregunta": "El AMPc ejerce su efecto funcional primario mediante la activación de la proteína quinasa:",
       "opciones": [
       "Proteína quinasa C (PKC)",
@@ -260,40 +249,6 @@
       "explicacion": "La proteína Gq unida a GTP activa a la fosfolipasa C (PLC), que escinde el fosfolípido de membrana PIP2."
     },
     {
-      "pregunta": "La enzima fosfolipasa C hidroliza al fosfolípido PIP2 generando dos segundos mensajeros denominados:",
-      "opciones": ["IP3 y DAG", "AMPc y PKA", "ATP y GTP", "Tiroxina y Adrenalina"],
-      "correcta": "A",
-      "explicacion": "La escisión de PIP2 por la PLC produce inositol trifosfato (IP3) y diacilglicerol (DAG)."
-    },
-    {
-      "pregunta": "El inositol trifosfato (IP3) difunde por el citosol y se une a receptores en el retículo endoplásmico liso provocando la:",
-      "opciones": [
-      "Síntesis de glucógeno",
-      "Liberación de calcio hacia el citosol",
-      "Inhibición de la transcripción",
-      "Captación activa de sodio"
-      ],
-      "correcta": "B",
-      "explicacion": "El IP3 abre canales de calcio dependientes de ligando en la membrana del REL, permitiendo que el calcio fluya al citosol."
-    },
-    {
-      "pregunta": "El segundo mensajero diacilglicerol (DAG) permanece asociado a la membrana y activa a la enzima:",
-      "opciones": ["Proteína quinasa A (PKA)", "Adenilato ciclasa", "Proteína quinasa C (PKC)", "Fosfodiesterasa"],
-      "correcta": "C",
-      "explicacion": "El DAG en la membrana, junto con el calcio citosólico, activa a la proteína quinasa C (PKC)."
-    },
-    {
-      "pregunta": "La calmodulina es una proteína citosólica de pequeño tamaño cuya función clave es:",
-      "opciones": [
-      "Escindir fosfolípidos de la membrana plasmática",
-      "Sintetizar moléculas de ATP a partir de ADP y Pi",
-      "Transportar glucosa a través de la membrana",
-      "Unir iones calcio y cambiar su conformación para activar otras proteínas"
-      ],
-      "correcta": "D",
-      "explicacion": "La calmodulina se une reversiblemente al calcio citosólico, cambiando su estructura para modular la actividad de quinasas y otras enzimas."
-    },
-    {
       "pregunta": "En la vía mediada por adrenalina a través de proteína Gs en hepatocitos, el resultado metabólico final es la:",
       "opciones": [
       "Glucogenólisis y liberación de glucosa",
@@ -316,26 +271,93 @@
       "explicacion": "Dado que cada etapa intermedia de la cascada posee capacidad catalítica, un solo complejo inductor-receptor multiplica exponencialmente la respuesta final."
     },
     {
-      "pregunta": "Los receptores con actividad enzimática intrínseca de tipo tirosinquinasa (RTK) se caracterizan por presentar un dominio citoplasmático que:",
+      "pregunta": "En la comunicación sináptica, la relación espacial entre la célula emisora y la célula receptora se caracteriza por:",
       "opciones": [
-      "Genera directamente moléculas de AMPc",
-      "Actúa como canal iónico para el pasaje de cloruro",
-      "Fosforila aminoácidos tirosina en sí mismo y en otras proteínas",
-      "Hidroliza el GTP uniéndose a la subunidad alfa"
+      "Estar separadas por largas distancias a través del torrente sanguíneo.",
+      "Encontrarse muy cercanas entre sí en el espacio sináptico.",
+      "Requerir la fusión total de sus membranas plasmáticas.",
+      "Permancer unidas mediante conexiones permanentes tipo nexus."
       ],
-      "correcta": "C",
-      "explicacion": "Los RTK poseen en su dominio intracelular actividad de quinasa que fosforila residuos de tirosina (autofosforilación y fosforilación de sustratos)."
+      "correcta": "B",
+      "explicacion": "En la sinapsis, la neurona presináptica y la célula receptora se encuentran muy próximas, permitiendo una comunicación muy rápida mediante la liberación del neurotransmisor en el espacio sináptico."
     },
     {
-      "pregunta": "El receptor de insulina se diferencia de otros receptores tirosinquinasa (como el de EGF o PDGF) porque antes de unirse al ligando posee una estructura:",
+      "pregunta": "En la sinapsis, la llegada de la acetilcolina al receptor ionotrópico de la neurona postsináptica desencadena directamente:",
       "opciones": [
-      "Monomérica",
-      "Heptamétrica con 7 pasos transmembrana",
-      "Formada por conexones",
-      "Tetramérica (dos subunidades alfa y dos beta)"
+      "La activación de una proteína G y la producción de AMPc.",
+      "La apertura del canal iónico y el ingreso de Na+ a la célula.",
+      "La translocación de vesículas GLUT4 hacia la membrana plasmática.",
+      "La autofosforilación de residuos de tirosina en el dominio citoplasmático."
       ],
-      "correcta": "D",
-      "explicacion": "El receptor de insulina es un tetrámero preformado formado por dos subunidades alfa externas y dos subunidades beta transmembrana, mientras que otros RTK son monómeros que dimerizan al unir el ligando."
+      "correcta": "B",
+      "explicacion": "Los receptores ionotrópicos forman un canal iónico que se abre tras la unión del ligando, permitiendo el ingreso de sodio y la consecuente despolarización de la membrana."
+    },
+    {
+      "pregunta": "En relación al transporte de los neurotransmisores dentro de la neurona presináptica, estos son conducidos hacia las terminales nerviosas mediante:",
+      "opciones": [
+      "Difusión simple a través del citosol.",
+      "Flujo axónico.",
+      "Transporte endocrino sanguíneo.",
+      "Exocitosis directa desde el soma."
+      ],
+      "correcta": "B",
+      "explicacion": "Los neurotransmisores son transportados hasta las terminales nerviosas por medio del flujo axónico antes de ser liberados al espacio sináptico."
+    },
+    {
+      "pregunta": "Respecto a la velocidad de respuesta, la comunicación sináptica se distingue por actuar en un rango de tiempo de:",
+      "opciones": ["Milisegundos.", "Varias horas.", "Días enteros.", "Minutos a horas."],
+      "correcta": "A",
+      "explicacion": "La comunicación sináptica es un proceso sumamente rápido que ocurre en el orden de los milisegundos gracias a la cercanía entre las células y el mecanismo directo de sus receptores."
+    },
+    {
+      "pregunta": "El estado de potencial de reposo en la neurona postsináptica antes de la llegada del neurotransmisor se caracteriza por presentar:",
+      "opciones": [
+      "El canal del receptor ionotrópico en estado cerrado.",
+      "Un flujo masivo de sodio hacia el interior celular.",
+      "La activación previa de la enzima adenilato ciclasa.",
+      "La inactivación total de la bomba de sodio y potasio."
+      ],
+      "correcta": "A",
+      "explicacion": "Durante el potencial de reposo, el receptor ionotrópico asociado a canal se encuentra cerrado hasta que se produce la unión de la acetilcolina u otro ligando."
+    },
+    {
+      "pregunta": "Cuando la acetilcolina se une a su receptor en la neurona postsináptica, el ingreso de sodio (Na+) genera directamente un proceso de:",
+      "opciones": ["Repolarización.", "Despolarización.", "Hiperpolarización.", "Inactivación celular."],
+      "correcta": "B",
+      "explicacion": "El ingreso de cargas positivas de sodio a través del canal receptor provoca una despolarización que desencadena la propagación de la respuesta a lo largo de la neurona."
+    },
+    {
+      "pregunta": "La propagación del estímulo a lo largo de la membrana neuronal se inicia inmediatamente después de:",
+      "opciones": [
+      "La hidrólisis de GTP por parte de la subunidad alfa.",
+      "El ingreso de sodio a través del receptor ionotrópico abierto.",
+      "La síntesis de glucógeno estimulada por insulina.",
+      "La salida masiva de calcio desde el retículo endoplásmico."
+      ],
+      "correcta": "B",
+      "explicacion": "Al unirse la acetilcolina al receptor, el canal abre su poro e ingresa Na+, lo que despolariza la membrana y propaga la respuesta en la neurona."
+    },
+    {
+      "pregunta": "Durante el potencial de reposo neuronal, el ingreso inicial de sodio (Na+) a la célula se produce a favor de su gradiente debido a que:",
+      "opciones": [
+      "El sodio se encuentra en mayor concentración en el espacio extracelular que en el citosol.",
+      "El potasio empuja activamente al sodio hacia el interior de la membrana.",
+      "El citosol presenta una concentración de sodio superior a la del medio externo.",
+      "La bomba de sodio y potasio ingresa tres iones de sodio por cada ciclo."
+      ],
+      "correcta": "A",
+      "explicacion": "Al abrirse los canales ionotrópicos por la unión del ligando, el sodio ingresa a favor de su gradiente de concentración, ya que este ion se halla en mayor abundancia en el medio extracelular respecto al citoplasma."
+    },
+    {
+      "pregunta": "En el estado de potencial de reposo de la neurona postsináptica, la apertura de los canales iónicos del receptor de acetilcolina permite la entrada de:",
+      "opciones": [
+      "Sodio (Na+) hacia el citoplasma a favor de su gradiente.",
+      "Potasio (K+) desde el citoplasma hacia el medio exterior.",
+      "Calcio (Ca2+) únicamente desde las vesículas presinápticas.",
+      "Aniones de fosfato hacia la matriz extracelular."
+      ],
+      "correcta": "A",
+      "explicacion": "Tras la unión del neurotransmisor, el receptor ionotrópico se abre permitiendo la entrada directa de Na+ al citosol neuronal, iniciando la despolarización."
     }
   ]
 }

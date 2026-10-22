@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-21T03:34:18Z",
+  "generado": "2026-10-22T01:17:23Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -170,13 +170,7 @@
           "id": "biologia-celular2/06-comunicacion-celular",
           "nombre": "Comunicación Celular",
           "archivo": "data/biologia-celular2/06-comunicacion-celular.json",
-          "preguntas": 40
-        },
-        {
-          "id": "biologia-celular2/07-foucault",
-          "nombre": "Foucault",
-          "archivo": "data/biologia-celular2/07-foucault.json",
-          "preguntas": 30
+          "preguntas": 42
         }
       ]
     },
@@ -250,6 +244,12 @@
           "nombre": "Hacking",
           "archivo": "data/ipc-2/07-hacking.json",
           "preguntas": 33
+        },
+        {
+          "id": "ipc-2/08-foucault",
+          "nombre": "Foucault",
+          "archivo": "data/ipc-2/08-foucault.json",
+          "preguntas": 30
         }
       ]
     }
