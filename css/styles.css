@@ -165,9 +165,7 @@ h1, h2, h3, p { margin: 0; }
 
 .temas-barra { display: flex; justify-content: space-between; align-items: center; margin-bottom: .6rem; color: var(--tenue); }
 
-.temas { display: grid; gap: .6rem; padding-bottom: calc(11rem + env(safe-area-inset-bottom)); }
-/* En pantallas angostas la barra fija se parte en dos filas y mide más: dejamos aire de sobra */
-@media (min-width: 560px) { .temas { padding-bottom: calc(7.5rem + env(safe-area-inset-bottom)); } }
+.temas { display: grid; gap: .6rem; padding-bottom: 7.5rem; }
 
 .tema {
   display: flex; align-items: center; gap: .9rem;
@@ -661,3 +659,19 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 @keyframes respira { 0%, 100% { opacity: .5; } 50% { opacity: 1; } }
 
 .ayuda-valorar { color: var(--tenue); font-size: .88rem; margin-top: .8rem; text-align: center; animation: aparece .4s ease .7s backwards; }
+
+/* ---------- Actividades interactivas de un tema ---------- */
+.tema-bloque { display: grid; gap: .45rem; }
+.actividades-tema { display: flex; flex-wrap: wrap; gap: .4rem; padding-left: .2rem; }
+.actividades-tema:empty { display: none; }
+.btn-actividad {
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: .45rem .95rem;
+  background: rgba(155, 123, 255, .14);
+  border: 2px solid rgba(155, 123, 255, .55);
+  border-radius: 99px;
+  font-weight: 700; font-size: .92rem;
+  transition: transform .1s, border-color .15s, background-color .15s;
+}
+.btn-actividad:hover { border-color: var(--violeta); background: rgba(155, 123, 255, .24); }
+.btn-actividad:active { transform: translateY(1px); }

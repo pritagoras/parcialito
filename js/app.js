@@ -1,6 +1,6 @@
 // ==========================================================
 // app.js: pantallas y lógica del juego.
-// Flujo: inicio (materias) -> materia (temas) -> juego / tarjetas -> resultado
+// Flujo: inicio (materias) -> materia (temas) -> juego -> resultado
 // Los datos se leen de data/index.json (lo genera tools/actualizar_indice.py).
 // ==========================================================
 
@@ -9,17 +9,9 @@ import { Sonido } from './sonido.js';
 import { lanzarConfeti } from './confeti.js';
 import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles } from './ranking.js';
 import { infoDispositivo } from './dispositivo.js';
-import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js';
-import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
-
-// Actividades interactivas: un tema las activa con "actividad": "<clave>" en su JSON
-const ACTIVIDADES = {
-  replicacion: { titulo: TITULO_REPLICACION, abrir: abrirReplicacion },
-  cuadro: { titulo: TITULO_CUADRO, abrir: abrirCuadro },
-};
 
 const LETRAS = ['A', 'B', 'C', 'D'];
 const COLORES = ['#9B7BFF', '#FFB938', '#4FE0A0', '#FF7AA8', '#5CC8FF', '#FF8A5C'];
@@ -28,7 +20,9 @@ const HITOS = [3, 5, 10, 15, 20, 30, 50];   // rachas que disparan festejo
 let indice = null;          // contenido de data/index.json
 const cache = new Map();    // idTema -> preguntas ya cargadas
 const cacheTarjetas = new Map();   // idTema -> tarjetas ya cargadas
+const cacheActividades = new Map();   // idTema -> nombres de actividades ("cuadro", ...)
 let juego = null;           // partida en curso (null si no hay)
+let simu = null;            // simulacro en curso (null si no hay)
 let sesionT = null;         // sesión de tarjetas en curso (null si no hay)
 const dificultad = new Map();   // idPregunta -> { intentos, fallos } (datos de todos los jugadores)
 
@@ -66,11 +60,14 @@ function colorMateria(m, i) {
 
 // ---------- Datos ----------
 
+// Solo acepta https:// o rutas relativas (nada de javascript:, data: ni //otro-sitio)
 function urlImagen(valor) {
   const u = String(valor || '').trim();
-  return /^https:\/\/\S+$/i.test(u) || /^(?!\/)[\w./\%-]+$/.test(u) ? u : '';
+  return /^https:\/\/\S+$/i.test(u) || /^(?!\/)[\w./%-]+$/.test(u) ? u : '';
 }
 
+// Convierte el JSON de un tema en preguntas listas para jugar.
+// Las preguntas inválidas se descartan (y se avisa en la consola).
 function normalizar(json, tema, materia) {
   const salida = [];
   (json.preguntas || []).forEach((p, n) => {
@@ -103,6 +100,8 @@ async function cargarTema(tema, materia) {
   const json = await r.json();
   const preguntas = normalizar(json, tema, materia);
   cacheTarjetas.set(tema.id, normalizarTarjetas(json, tema, materia));
+  cacheActividades.set(tema.id, listaActividades(json.actividad));
+  // Si editaste o borraste preguntas, las "dominadas" viejas dejan de contar
   if (estado.dominadas[tema.id]) {
     const vigentes = new Set(preguntas.map((q) => q.id));
     for (const id of Object.keys(estado.dominadas[tema.id])) {
@@ -113,17 +112,22 @@ async function cargarTema(tema, materia) {
   return preguntas;
 }
 
+// Cuántas preguntas del tema respondiste bien al menos una vez
 function dominadasDe(tema) {
-  return Math.min(Object.keys(estado.dominadas[tema.id] || {}).length, tema.preguntas || 0);
+  return Math.min(Object.keys(estado.dominadas[tema.id] || {}).length, tema.preguntas);
 }
 
 function dominio(materia) {
-  if (!materia.temas.length) return 0;
-  const suma = materia.temas.reduce((s, t) => s + (estado.mejores[t.id]?.precision || 0), 0);
-  return Math.round(suma / materia.temas.length);
+  const temas = materia.temas.filter((t) => t.preguntas > 0);   // los mazos de solo tarjetas no tienen precisión
+  if (!temas.length) return 0;
+  const suma = temas.reduce((s, t) => s + (estado.mejores[t.id]?.precision || 0), 0);
+  return Math.round(suma / temas.length);
 }
 
 // ---------- Tarjetas tipo Anki ----------
+// Las tarjetas viven en los mismos JSON de cada tema, en una lista "tarjetas": [{ "frente": "...", "dorso": "..." }].
+// Cada día se repasan las que vencen y se suman unas pocas nuevas. Vos decís qué tan bien la sabías
+// (Otra vez / Difícil / Bien / Fácil) y el intervalo hasta volver a verla se ajusta solo.
 
 const NUEVAS_POR_DIA = 10;   // tarjetas nuevas que se agregan por día
 const MAX_REPASOS = 200;     // tope de tarjetas a repasar en una sesión
@@ -143,13 +147,18 @@ function normalizarTarjetas(json, tema, materia) {
   return salida;
 }
 
+// Todas las preguntas de todas las materias (id -> pregunta). Además deja cargadas las tarjetas.
 async function cargarTodas() {
-  const listas = await Promise.all(indice.materias.flatMap((m) => m.temas.map((t) => cargarTema(t, m))));
+  const res = await Promise.allSettled(indice.materias.flatMap((m) => m.temas.map((t) => cargarTema(t, m))));
   const mapa = new Map();
-  for (const lista of listas) for (const q of lista) if (!mapa.has(q.id)) mapa.set(q.id, q);
+  for (const r of res) {
+    if (r.status !== 'fulfilled') { console.warn('[Repaso] No se pudo cargar un tema:', r.reason); continue; }   // un tema roto no frena a los demás
+    for (const q of r.value) if (!mapa.has(q.id)) mapa.set(q.id, q);
+  }
   return mapa;
 }
 
+// estado.tarjetas = { idTarjeta: { ef (facilidad), iv (intervalo en días), prox (día en que toca), l (olvidos) } }
 const memoria = () => (estado.tarjetas ||= {});
 function nuevasHoy() {
   const hoy = diaHoy();
@@ -167,18 +176,20 @@ function todasLasTarjetas() {
   return lista;
 }
 
-function resumenTarjetas(extra = 0) {
-  const hoy = diaHoy(), mem = memoria(), todas = todasLasTarjetas();
+function resumenTarjetas(extra = 0, materia = null) {
+  const hoy = diaHoy(), mem = memoria(), todas = todasLasTarjetas().filter((c) => !materia || c.materia === materia);
   const pendientes = todas.filter((c) => mem[c.id] && mem[c.id].prox <= hoy).sort((x, y) => mem[x.id].prox - mem[y.id].prox);
   const nuevas = todas.filter((c) => !mem[c.id]);
   const cupo = Math.max(0, NUEVAS_POR_DIA - nuevasHoy().nuevas) + extra;
   return { total: todas.length, pendientes, nuevas, cupo, nNuevas: Math.min(cupo, nuevas.length) };
 }
 
+// Calcula cómo queda una tarjeta según cómo la contestaste (1 otra vez, 2 difícil, 3 bien, 4 fácil).
+// "aprendiendo": es nueva, o la olvidaste y todavía no la recuperaste. No modifica nada.
 function programar(est, aprendiendo, r) {
   const ef0 = est?.ef ?? 2.5, iv0 = est?.iv ?? 0, l0 = est?.l ?? 0;
   if (r === 1) {
-    const castiga = !!est && !aprendiendo;
+    const castiga = !!est && !aprendiendo;   // olvidar una tarjeta ya aprendida baja su facilidad
     return { vuelve: true, ef: castiga ? Math.max(1.3, ef0 - 0.2) : ef0, iv: 0, l: castiga ? l0 + 1 : l0 };
   }
   if (aprendiendo) {
@@ -193,6 +204,7 @@ function programar(est, aprendiendo, r) {
 const sinMovimiento = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const vibrar = (ms) => { if (!estado.silencio) navigator.vibrate?.(ms); };
 
+// Inclinación 3D y reflejo de luz que siguen al puntero (solo con mouse; en el celular no hace falta)
 function activarInclinacion(flip) {
   if (sinMovimiento() || !window.matchMedia('(hover: hover)').matches) return;
   const poner = (ry, rx, mx, my) => {
@@ -218,6 +230,7 @@ function fmtIntervalo(d) {
   return `${String(y).replace('.', ',')} ${y === 1 ? 'año' : 'años'}`;
 }
 
+// Banner del inicio con las tarjetas de hoy (se completa cuando ya están cargados los temas)
 function pintarTarjetasInicio() {
   const zona = document.getElementById('zona-tarjetas');
   if (!zona) return;
@@ -233,67 +246,28 @@ function pintarTarjetasInicio() {
   }
 }
 
-function lanzarTarjetas(extra = 0) {
+function lanzarTarjetas(extra = 0, materia = null) {
   vistaCargando('Preparando tus tarjetas…');
   cargarTodas().then(() => {
-    const r = resumenTarjetas(extra);
+    const r = resumenTarjetas(extra, materia);
     const cola = mezclar([...r.pendientes.slice(0, MAX_REPASOS), ...r.nuevas.slice(0, r.cupo)]);
     if (!cola.length) { vistaInicio(); avisar('No tenés tarjetas para hoy'); return; }
-    empezarTarjetas(cola, () => vistaInicio());
+    empezarTarjetas(cola, materia);
   }).catch(vistaError);
 }
 
-async function lanzarTarjetasTemas(materia, temas) {
-  vistaCargando('Preparando tarjetas…');
-  try {
-    for (const t of temas) await cargarTema(t, materia);
-    const hoy = diaHoy();
-    const mem = memoria();
-
-    const tarjetasTema = [];
-    for (const t of temas) {
-      for (const c of cacheTarjetas.get(t.id) || []) tarjetasTema.push(c);
-    }
-
-    if (!tarjetasTema.length) {
-      const iM = indice.materias.indexOf(materia);
-      if (iM >= 0) vistaMateria(iM); else vistaInicio();
-      avisar('Los temas seleccionados no tienen tarjetas');
-      return;
-    }
-
-    const pendientes = tarjetasTema.filter((c) => mem[c.id] && mem[c.id].prox <= hoy).sort((x, y) => mem[x.id].prox - mem[y.id].prox);
-    const nuevas = tarjetasTema.filter((c) => !mem[c.id]);
-
-    let cola = [];
-    if (pendientes.length > 0 || nuevas.length > 0) {
-      const cupo = Math.max(0, NUEVAS_POR_DIA - nuevasHoy().nuevas);
-      cola = mezclar([...pendientes.slice(0, MAX_REPASOS), ...nuevas.slice(0, cupo)]);
-    }
-    
-    if (!cola.length) {
-      cola = mezclar([...tarjetasTema]);
-    }
-
-    const iMateria = indice.materias.indexOf(materia);
-    empezarTarjetas(cola, () => vistaMateria(iMateria >= 0 ? iMateria : 0));
-  } catch (e) {
-    vistaError(e);
-  }
-}
-
-function empezarTarjetas(cola, volver = () => vistaInicio()) {
+function empezarTarjetas(cola, materia = null) {
   const mem = memoria();
   sesionT = {
+    materia,                   // null = todas las materias
     cola: [...cola],
     total: cola.length,
-    hechas: 0,                 
+    hechas: 0,                 // tarjetas distintas ya resueltas
     nuevasVistas: 0, repasadas: 0, otraVez: 0,
     origen: new Map(cola.map((c) => [c.id, mem[c.id] ? 'repaso' : 'nueva'])),
-    fallada: new Set(),        
+    fallada: new Set(),        // las que se olvidaron en esta sesión
     nuevaContada: new Set(),
     volteada: false,
-    volver,
   };
   app.innerHTML = `
     <main class="pantalla">
@@ -306,10 +280,9 @@ function empezarTarjetas(cola, volver = () => vistaInicio()) {
     </main>`;
   document.getElementById('btn-salir').addEventListener('click', () => {
     Sonido.clic();
-    const v = sesionT?.volver || vistaInicio;
     sesionT = null;
     guardar();
-    v();
+    vistaInicio();
   });
   mostrarTarjeta();
   window.scrollTo(0, 0);
@@ -365,7 +338,7 @@ function voltearTarjeta() {
   const aprendiendo = !est || est.iv === 0 || s.fallada.has(c.id);
   const flip = document.getElementById('flip');
   flip.classList.remove('entra');
-  flip.style.setProperty('--ry', '0deg');
+  flip.style.setProperty('--ry', '0deg');   // mientras gira no se inclina
   flip.style.setProperty('--rx', '0deg');
   flip.classList.add('volteada');
   if (!sinMovimiento()) {
@@ -382,7 +355,7 @@ function voltearTarjeta() {
     return `<button class="valorar ${clase}" data-r="${r}" style="--i:${r - 1}"><b>${txt}</b><small>${p.vuelve ? '< 10 min' : fmtIntervalo(p.iv)}</small></button>`;
   }).join('');
   document.querySelectorAll('.valorar').forEach((b) => b.addEventListener('click', () => valorarTarjeta(Number(b.dataset.r))));
-  Sonido.voltear ? Sonido.voltear() : Sonido.clic();
+  Sonido.voltear ? Sonido.voltear() : Sonido.clic();   // si todavía tenés el sonido.js viejo, suena el clic de siempre
   vibrar(12);
   document.getElementById('ayuda-valorar').hidden = false;
 }
@@ -395,7 +368,7 @@ function valorarTarjeta(r) {
   const aprendiendo = !est || est.iv === 0 || s.fallada.has(c.id);
   const res = programar(est, aprendiendo, r);
 
-  if (!est && !s.nuevaContada.has(c.id)) {
+  if (!est && !s.nuevaContada.has(c.id)) {   // la primera vez que se ve cuenta para el cupo diario
     s.nuevaContada.add(c.id);
     nuevasHoy().nuevas++;
     s.nuevasVistas++;
@@ -404,7 +377,7 @@ function valorarTarjeta(r) {
   if (!(res.vuelve && !est)) mem[c.id] = { ef: res.ef, iv: res.iv, prox: hoy + res.iv, l: res.l };
 
   if (res.vuelve) {
-    s.cola.splice(Math.min(s.cola.length, r === 1 ? 3 : 6), 0, c);
+    s.cola.splice(Math.min(s.cola.length, r === 1 ? 3 : 6), 0, c);   // vuelve a aparecer en unas tarjetas más
   } else {
     s.hechas++;
     if (s.origen.get(c.id) === 'repaso') s.repasadas++;
@@ -414,7 +387,7 @@ function valorarTarjeta(r) {
   vibrar(r === 1 ? [10, 40, 10] : 8);
 
   const siguiente = () => {
-    if (sesionT !== s) return;
+    if (sesionT !== s) return;   // salió de la sesión mientras la tarjeta se iba
     s.bloqueada = false;
     if (!s.cola.length) terminarTarjetas(); else mostrarTarjeta();
   };
@@ -431,11 +404,10 @@ function valorarTarjeta(r) {
 
 function terminarTarjetas() {
   const s = sesionT;
-  const volver = s?.volver || vistaInicio;
   sesionT = null;
   guardar();
   const hoy = diaHoy();
-  const r = resumenTarjetas();
+  const r = resumenTarjetas(0, s.materia);
   const manana = Object.values(memoria()).filter((v) => v.prox <= hoy + 1).length;
   app.innerHTML = `
     <main class="pantalla resultado">
@@ -450,11 +422,11 @@ function terminarTarjetas() {
       <p class="estado-ranking">Para mañana: ${plural(manana, 'tarjeta', 'tarjetas')}.</p>
       <div class="botones">
         ${r.nuevas.length ? `<button class="btn primario" id="btn-mas">Estudiar ${Math.min(NUEVAS_POR_DIA, r.nuevas.length)} nuevas más</button>` : ''}
-        <button class="btn ${r.nuevas.length ? 'secundario' : 'primario'}" id="btn-inicio">Volver</button>
+        <button class="btn ${r.nuevas.length ? 'secundario' : 'primario'}" id="btn-inicio">Inicio</button>
       </div>
     </main>`;
-  document.getElementById('btn-mas')?.addEventListener('click', () => { Sonido.clic(); lanzarTarjetas(NUEVAS_POR_DIA); });
-  document.getElementById('btn-inicio').addEventListener('click', () => { Sonido.clic(); volver(); });
+  document.getElementById('btn-mas')?.addEventListener('click', () => { Sonido.clic(); lanzarTarjetas(NUEVAS_POR_DIA, s.materia); });
+  document.getElementById('btn-inicio').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
   Sonido.fin(true);
   lanzarConfeti(s.hechas ? 80 : 30);
   window.scrollTo(0, 0);
@@ -462,8 +434,9 @@ function terminarTarjetas() {
 
 // ---------- Dificultad real (datos de todos los jugadores) ----------
 
-const MIN_DATOS = 10;
+const MIN_DATOS = 10;   // con menos respuestas que esto no se muestra el porcentaje
 
+// Pide en segundo plano la estadística de las preguntas de una ronda (si falla, simplemente no se muestra)
 function cargarDificultad(ids) {
   if (!rankingActivo()) return;
   const faltan = [...new Set(ids)].filter((id) => !dificultad.has(id)).slice(0, 500);
@@ -481,32 +454,86 @@ function textoDificultad(id) {
   return `<p class="dato-dificultad">📊 <b>${etiqueta}</b>: el ${pct}% de los jugadores la falla (${d.intentos} respuestas).</p>`;
 }
 
+// ---------- Actividades interactivas (cuadro comparativo, etc.) ----------
+// Un tema las declara en su JSON:  "actividad": "cuadro"  o  "actividad": ["replicacion", "cuadro"].
+// Cada actividad es un módulo js/<nombre>.js que exporta una función abrir...({ app, volver, tema }).
+// Para sumar una nueva: copiá su módulo a js/ y agregá una línea acá abajo.
+// (Los import van con el nombre escrito completo para que tools/versionar.py les ponga la versión.)
+const ACTIVIDADES = {
+  cuadro: { etiqueta: '🧩 Cuadro comparativo', cargar: () => import('./cuadro.js') },
+  replicacion: { etiqueta: '🧬 Replicación', cargar: () => import('./replicacion.js') },
+};
+
+function listaActividades(valor) {
+  const lista = Array.isArray(valor) ? valor : valor ? [valor] : [];
+  return [...new Set(lista.map((x) => String(x).trim().toLowerCase()).filter(Boolean))];
+}
+
+async function abrirActividad(nombre, iMateria, tema) {
+  const def = ACTIVIDADES[nombre];
+  if (!def) {
+    console.error(`[Actividad] No hay ninguna actividad llamada "${nombre}". Agregala en ACTIVIDADES (js/app.js).`);
+    avisar(`No conozco la actividad “${nombre}”`);
+    return;
+  }
+  vistaCargando('Abriendo la actividad…');
+  try {
+    const mod = await def.cargar();
+    const abrir = typeof mod.abrir === 'function'
+      ? mod.abrir
+      : Object.entries(mod).find(([k, v]) => /^abrir/i.test(k) && typeof v === 'function')?.[1];
+    if (!abrir) throw new Error(`El módulo de "${nombre}" no exporta una función abrir...`);
+    await abrir({ app, volver: () => vistaMateria(iMateria), tema });
+  } catch (e) {
+    console.error(`[Actividad ${nombre}]`, e);
+    vistaMateria(iMateria);
+    avisar('No se pudo abrir la actividad');
+  }
+}
+
+// Completa en segundo plano lo que depende del contenido de cada tema (botones de actividades y tarjetas de la materia)
+async function prepararExtrasMateria(i, m) {
+  await Promise.allSettled(m.temas.map((t) => cargarTema(t, m)));
+  if (!app.querySelector(`[data-vista="materia-${i}"]`)) return;   // ya cambió de pantalla
+  m.temas.forEach((t, n) => {
+    const caja = app.querySelector(`.actividades-tema[data-act="${n}"]`);
+    const acts = cacheActividades.get(t.id) || [];
+    if (!caja || !acts.length) return;
+    caja.innerHTML = acts.map((nombre) => `<button class="btn-actividad" data-a="${esc(nombre)}" data-n="${n}">${esc(ACTIVIDADES[nombre]?.etiqueta || `🎮 ${nombre}`)}</button>`).join('');
+  });
+  app.querySelectorAll('.btn-actividad').forEach((b) =>
+    b.addEventListener('click', () => { Sonido.clic(); abrirActividad(b.dataset.a, i, m.temas[Number(b.dataset.n)]); }));
+  pintarTarjetasMateria(m);
+}
+
+function pintarTarjetasMateria(m) {
+  const zona = document.getElementById('zona-tarjetas-materia');
+  if (!zona) return;
+  const r = resumenTarjetas(0, m.nombre);
+  if (!r.total) { zona.innerHTML = ''; return; }
+  const n = r.pendientes.length + r.nNuevas;
+  zona.innerHTML = `<button class="banner-repaso" id="btn-tarjetas-materia"><span>🃏 Tarjetas de ${esc(m.nombre)}<small>${n ? `${r.pendientes.length} para repasar · ${r.nNuevas} ${r.nNuevas === 1 ? 'nueva' : 'nuevas'}` : `${plural(r.total, 'tarjeta', 'tarjetas')} · al día por hoy`}</small></span><b>${n || '✓'}</b></button>`;
+  document.getElementById('btn-tarjetas-materia').addEventListener('click', () => { Sonido.clic(); lanzarTarjetas(n ? 0 : NUEVAS_POR_DIA, m.nombre); });
+}
+
 // ---------- Pantalla: inicio ----------
 
 function vistaInicio() {
   juego = null;
+  if (simu) { clearInterval(simu.timer); simu = null; }
   sesionT = null;
   const nErrores = Object.keys(estado.errores).length;
 
   const tarjetas = indice.materias.map((m, i) => {
-    const totalPreg = m.temas.reduce((s, t) => s + (t.preguntas || 0), 0);
+    const totalPreg = m.temas.reduce((s, t) => s + t.preguntas, 0);
+    const conPreg = m.temas.filter((t) => t.preguntas > 0).length;
     const totalTarj = m.temas.reduce((s, t) => s + (t.tarjetas || 0), 0);
     const pct = dominio(m);
-
-    let metaTexto = '';
-    if (totalPreg > 0 && totalTarj > 0) {
-      metaTexto = `${plural(m.temas.length, 'tema', 'temas')}, ${plural(totalPreg, 'pregunta', 'preguntas')} · ${plural(totalTarj, 'tarjeta', 'tarjetas')}`;
-    } else if (totalTarj > 0) {
-      metaTexto = `${plural(m.temas.length, 'tema', 'temas')}, ${plural(totalTarj, 'tarjeta', 'tarjetas')}`;
-    } else {
-      metaTexto = `${plural(m.temas.length, 'tema', 'temas')}, ${plural(totalPreg, 'pregunta', 'preguntas')}`;
-    }
-
     return `
       <button class="materia" data-materia="${i}" style="--c:${colorMateria(m, i)}">
         <span class="emoji" aria-hidden="true">${esc(m.emoji || '📚')}</span>
         <h2>${esc(m.nombre)}</h2>
-        <span class="meta">${metaTexto}</span>
+        <span class="meta">${conPreg ? `${plural(conPreg, 'tema', 'temas')}, ${plural(totalPreg, 'pregunta', 'preguntas')}` : 'Solo tarjetas'}${totalTarj ? ` · 🃏 ${totalTarj}` : ''}</span>
         <span class="dominio">
           <span class="riel"><span class="relleno" style="width:${pct}%"></span></span>
           <span>${pct}%</span>
@@ -557,75 +584,54 @@ function alternarSonido() {
 
 // ---------- Pantalla: materia (elegir temas) ----------
 
-// Actividades disponibles en una materia (sin repetir) según el campo "actividad" de sus temas
-// "actividad" puede ser un texto o una lista de textos. Devuelve una entrada por (actividad, tema).
-function actividadesDe(m) {
-  const lista = [];
-  for (const t of m.temas) {
-    const claves = [].concat(t.actividad || []);
-    for (const clave of claves) if (ACTIVIDADES[clave]) lista.push({ clave, titulo: ACTIVIDADES[clave].titulo, tema: t });
-  }
-  return lista;
-}
-
 function vistaMateria(i) {
   const m = indice.materias[i];
   const color = colorMateria(m, i);
   const opcionesCantidad = [[10, '10'], [20, '20'], [0, 'Todas']];
 
+  const hayPreguntas = m.temas.some((t) => t.preguntas > 0);
   const filas = m.temas.map((t, n) => {
+    if (t.preguntas === 0 && t.tarjetas > 0) return '';   // mazo de solo tarjetas: se estudia desde las tarjetas, no tiene ronda de preguntas
     const mejor = estado.mejores[t.id];
-    const nPreg = t.preguntas || 0;
-    const nTarj = t.tarjetas || 0;
-
-    let textoDetalle = '';
-    if (nPreg > 0 && nTarj > 0) {
-      textoDetalle = `${plural(nPreg, 'pregunta', 'preguntas')} · ${plural(nTarj, 'tarjeta', 'tarjetas')}`;
-    } else if (nTarj > 0) {
-      textoDetalle = plural(nTarj, 'tarjeta', 'tarjetas');
-    } else {
-      textoDetalle = plural(nPreg, 'pregunta', 'preguntas');
-    }
-
-    if (dominadasDe(t)) {
-      textoDetalle += ` · ${dominadasDe(t)} dominadas`;
-    }
-
     return `
+      <div class="tema-bloque">
       <label class="tema" style="--c:${color}">
         <input type="checkbox" data-n="${n}" checked>
         <span class="cuerpo">
           <span class="nombre">${esc(t.nombre)}</span><br>
-          <span class="detalle">${textoDetalle}</span>
+          <span class="detalle">${plural(t.preguntas, 'pregunta', 'preguntas')}${dominadasDe(t) ? ` · ${dominadasDe(t)} dominadas` : ''}</span>
         </span>
         ${mejor ? `<span class="mejor ${mejor.precision >= 80 ? 'alto' : ''}">Mejor ${mejor.precision}%</span>` : ''}
-      </label>`;
+      </label>
+      <div class="actividades-tema" data-act="${n}"></div>
+      </div>`;
   }).join('');
 
-  const actividades = actividadesDe(m);
-
   app.innerHTML = `
-    <main class="pantalla">
+    <main class="pantalla" data-vista="materia-${i}">
       <button class="btn enlace" id="btn-volver">← Materias</button>
       <div class="titulo-materia">
         <span class="emoji" aria-hidden="true">${esc(m.emoji || '📚')}</span>
         <h1>${esc(m.nombre)}</h1>
       </div>
-      ${actividades.map((a, n) => `
-        <button class="banner-repaso" data-actividad="${n}"><span>🧩 Actividad interactiva<small>${esc(a.titulo)}${actividades.filter((x) => x.clave === a.clave).length > 1 ? ' · ' + esc(a.tema.nombre) : ''}</small></span><b>▶</b></button>`).join('')}
-      <div class="temas-barra">
-        <span>Temas</span>
-        <button class="btn enlace" id="btn-todos"></button>
+      <div id="zona-tarjetas-materia"></div>
+      ${hayPreguntas ? '' : '<div class="vacio"><strong>Esta materia solo tiene tarjetas</strong>Estudialas con el botón de arriba o desde “Repaso de hoy” en el inicio.</div>'}
+      <div ${hayPreguntas ? '' : 'style="display:none"'}>
+        <div class="temas-barra">
+          <span>Temas</span>
+          <button class="btn enlace" id="btn-todos"></button>
+        </div>
+        <div class="temas">${filas}</div>
       </div>
-      <div class="temas">${filas}</div>
     </main>
-    <div class="pie-fijo">
+    <div class="pie-fijo" ${hayPreguntas ? '' : 'hidden'}>
       <div class="interior">
         <div class="segmentos" role="radiogroup" aria-label="Cantidad de preguntas">
           ${opcionesCantidad.map(([v, txt]) => `
             <label><input type="radio" name="cantidad" value="${v}" ${estado.cantidad === v ? 'checked' : ''}><span>${txt}</span></label>`).join('')}
         </div>
         <div class="grupo-botones">
+          <button class="btn secundario" id="btn-simulacro">📝 Simulacro</button>
           <button class="btn primario" id="btn-empezar"></button>
         </div>
       </div>
@@ -634,28 +640,19 @@ function vistaMateria(i) {
   const checks = [...app.querySelectorAll('.tema input')];
   const btnEmpezar = document.getElementById('btn-empezar');
   const btnTodos = document.getElementById('btn-todos');
+  const btnSimulacro = document.getElementById('btn-simulacro');
 
   const seleccionados = () => checks.filter((c) => c.checked).map((c) => m.temas[Number(c.dataset.n)]);
   const cantidadElegida = () => Number(app.querySelector('input[name="cantidad"]:checked')?.value ?? 10);
 
   function actualizar() {
     const sel = seleccionados();
-    const totalPreg = sel.reduce((s, t) => s + (t.preguntas || 0), 0);
-    const totalTarj = sel.reduce((s, t) => s + (t.tarjetas || 0), 0);
+    const total = sel.reduce((s, t) => s + t.preguntas, 0);
     const c = cantidadElegida();
-    const jugar = c === 0 ? totalPreg : Math.min(c, totalPreg);
-
-    if (sel.length === 0) {
-      btnEmpezar.disabled = true;
-      btnEmpezar.textContent = 'Elegí un tema';
-    } else if (totalPreg === 0 && totalTarj > 0) {
-      btnEmpezar.disabled = false;
-      btnEmpezar.textContent = `🃏 Ver tarjetas (${totalTarj})`;
-    } else {
-      btnEmpezar.disabled = totalPreg === 0;
-      btnEmpezar.textContent = `Empezar (${jugar})`;
-    }
-
+    const jugar = c === 0 ? total : Math.min(c, total);
+    btnEmpezar.disabled = sel.length === 0;
+    btnSimulacro.disabled = sel.length === 0;
+    btnEmpezar.textContent = sel.length ? `Empezar (${jugar})` : 'Elegí un tema';
     btnTodos.textContent = sel.length === checks.length ? 'Quitar todos' : 'Elegir todos';
   }
 
@@ -669,28 +666,15 @@ function vistaMateria(i) {
     actualizar();
   });
   document.getElementById('btn-volver').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
-  app.querySelectorAll('[data-actividad]').forEach((b) =>
-    b.addEventListener('click', () => {
-      Sonido.clic();
-      const a = actividades[Number(b.dataset.actividad)];
-      ACTIVIDADES[a.clave].abrir({ app, volver: () => vistaMateria(i), tema: a.tema, materia: m });
-    }));
-
   btnEmpezar.addEventListener('click', () => {
     Sonido.clic();
-    const sel = seleccionados();
-    const totalPreg = sel.reduce((s, t) => s + (t.preguntas || 0), 0);
-    const totalTarj = sel.reduce((s, t) => s + (t.tarjetas || 0), 0);
-
-    if (totalPreg === 0 && totalTarj > 0) {
-      lanzarTarjetasTemas(m, sel);
-    } else {
-      lanzarTemas(m, sel, cantidadElegida());
-    }
+    lanzarTemas(m, seleccionados(), cantidadElegida());
   });
+  btnSimulacro.addEventListener('click', () => { Sonido.clic(); abrirConfigSimulacro(m, seleccionados()); });
 
   actualizar();
   window.scrollTo(0, 0);
+  prepararExtrasMateria(i, m);
 }
 
 // ---------- Armado de partidas ----------
@@ -705,6 +689,7 @@ async function lanzarTemas(materia, temas, cantidad) {
     empezarJuego(pool, {
       titulo: materia.nombre,
       temaId: temas.length === 1 ? temas[0].id : null,
+      // datos para el ranking público (solo cuentan las rondas normales)
       ranking: true,
       materiaNombre: materia.nombre,
       temaNombre: temas.length === 1 ? temas[0].nombre : 'Varios temas',
@@ -725,6 +710,7 @@ async function lanzarErrores() {
     }
     pool = mezclar(pool.filter((q) => estado.errores[q.id]));
     if (!pool.length) {
+      // Los errores guardados ya no existen en los archivos (se editaron o borraron)
       estado.errores = {};
       guardar();
       vistaInicio();
@@ -754,7 +740,7 @@ async function lanzarDificiles() {
       return;
     }
     const todas = await cargarTodas();
-    const dificiles = filas.map((f) => todas.get(f.pregunta_id)).filter(Boolean);
+    const dificiles = filas.map((f) => todas.get(f.pregunta_id)).filter(Boolean);   // ya vienen de más a menos difícil
     if (dificiles.length < 5) {
       vistaInicio();
       avisar('Todavía no hay datos suficientes');
@@ -799,6 +785,7 @@ function empezarJuego(pool, meta) {
   cargarDificultad(pool.map((q) => q.id));
   juego = {
     meta,
+    // "orden" mezcla las opciones: así no importa en qué lugar las escribió el LM
     preguntas: pool.map((q) => ({ ...q, orden: mezclar([0, 1, 2, 3]) })),
     i: 0,
     puntos: 0,
@@ -806,7 +793,7 @@ function empezarJuego(pool, meta) {
     mejorRacha: 0,
     aciertos: 0,
     falladas: [],
-    intentos: [],
+    intentos: [],     // respuestas pendientes de enviar (dificultad real)
     respondida: false,
   };
 
@@ -841,7 +828,7 @@ function actualizarRacha(subio) {
   caja.classList.toggle('caliente', juego.racha >= 3);
   if (subio) {
     caja.classList.remove('sube');
-    void caja.offsetWidth;
+    void caja.offsetWidth;      // reinicia la animación
     caja.classList.add('sube');
   }
 }
@@ -900,6 +887,7 @@ function responder(pos) {
   const acerto = q.orden[pos] === q.correcta;
   const feedback = document.getElementById('feedback');
 
+  // Para la estadística de dificultad: solo si acertó o no (nada personal)
   j.intentos.push({
     pregunta_id: q.id,
     tema_id: q.temaId,
@@ -920,10 +908,10 @@ function responder(pos) {
     j.racha++;
     j.aciertos++;
     j.mejorRacha = Math.max(j.mejorRacha, j.racha);
-    const ganado = 100 + Math.min(j.racha - 1, 10) * 10;
+    const ganado = 100 + Math.min(j.racha - 1, 10) * 10;   // bonus por racha
     j.puntos += ganado;
-    delete estado.errores[q.id];
-    (estado.dominadas[q.temaId] ||= {})[q.id] = 1;
+    delete estado.errores[q.id];                            // ya lo sabés: sale de "errores"
+    (estado.dominadas[q.temaId] ||= {})[q.id] = 1;          // cuenta para el progreso del tema
     Sonido.acierto(j.racha);
     actualizarRacha(true);
 
@@ -963,7 +951,7 @@ function responder(pos) {
 
 function siguiente() {
   const j = juego;
-  if (!j || !j.respondida) return;
+  if (!j || !j.respondida) return;     // evita doble avance (Enter + clic)
   j.respondida = false;
   Sonido.clic();
   j.i++;
@@ -973,6 +961,7 @@ function siguiente() {
 
 // ---------- Dificultad real y reportes ----------
 
+// Manda a Supabase las respuestas acumuladas de la ronda (sin esperar y sin romper nada si falla)
 function enviarIntentos(j) {
   if (!j || !j.intentos.length) return;
   const filas = j.intentos;
@@ -1047,6 +1036,7 @@ function abrirReporte(q, boton) {
 
 // ---------- Pantalla: resultado ----------
 
+// Una fila de progreso por cada tema que apareció en la ronda
 function filasProgreso(preguntas) {
   const ids = new Set(preguntas.map((q) => q.temaId));
   const filas = [];
@@ -1072,6 +1062,7 @@ function vistaResultado() {
   const total = j.preguntas.length;
   const precision = Math.round((j.aciertos / total) * 100);
 
+  // Guarda el mejor resultado solo si jugaste un único tema
   if (j.meta.temaId) {
     const prev = estado.mejores[j.meta.temaId] || { precision: 0, puntos: 0, racha: 0 };
     estado.mejores[j.meta.temaId] = {
@@ -1120,6 +1111,7 @@ function vistaResultado() {
   enviarIntentos(j);
   juego = null;
 
+  // Ranking público: solo las rondas normales (no el repaso de errores ni de falladas)
   if (rankingActivo() && meta.ranking) {
     const estadoEl = document.getElementById('estado-ranking');
     if (!estado.apodo) {
@@ -1141,8 +1133,10 @@ function vistaResultado() {
     }
   }
 
+  // Progreso por tema: guarda cuántas preguntas dominás de cada tema que apareció en la ronda
   if (rankingActivo() && estado.apodo) {
     guardarProgreso(filasProgreso(j.preguntas)).catch(() => {});
+    // Registro privado de la ronda con datos del dispositivo (no se muestra en la página)
     registrarSesion({
       apodo: estado.apodo,
       modo: meta.ranking ? 'ronda' : 'repaso',
@@ -1167,6 +1161,295 @@ function vistaResultado() {
   const bueno = precision >= 70;
   Sonido.fin(bueno);
   if (bueno) lanzarConfeti(precision >= 90 ? 160 : 100);
+  window.scrollTo(0, 0);
+}
+
+// ---------- Simulacro de parcial ----------
+
+const NOTA_APROBACION = 0.6;   // se aprueba con el 60 % de respuestas correctas
+const fmtNota = (aciertos, total) => (Math.round((aciertos / total) * 100) / 10).toFixed(1).replace('.', ',');
+const fmtTiempo = (seg) => `${String(Math.floor(seg / 60)).padStart(2, '0')}:${String(seg % 60).padStart(2, '0')}`;
+
+function abrirConfigSimulacro(materia, temas) {
+  const total = temas.reduce((s, t) => s + t.preguntas, 0);
+  const cants = [10, 20, 30, 40].filter((n) => n < total);
+  cants.push(total);
+  const cantInicial = cants.includes(estado.simuConfig?.cant) ? estado.simuConfig.cant : (cants.includes(20) ? 20 : cants[cants.length - 1]);
+  const tiempos = [[0, 'Sin límite'], [60, '1 minuto por pregunta'], [90, '1 min 30 s por pregunta'], [120, '2 minutos por pregunta']];
+  const segInicial = tiempos.some(([v]) => v === estado.simuConfig?.seg) ? estado.simuConfig.seg : 90;
+
+  const dlg = document.createElement('dialog');
+  dlg.className = 'reporte';
+  dlg.setAttribute('aria-labelledby', 'sim-titulo');
+  dlg.innerHTML = `
+    <h2 id="sim-titulo">📝 Simulacro de parcial</h2>
+    <p class="reporte-texto">Preguntas mezcladas de los temas elegidos. No ves si acertaste hasta entregar.</p>
+    <label class="campo">
+      <span>Cantidad de preguntas</span>
+      <select id="sim-cant">${cants.map((n) => `<option value="${n}" ${n === cantInicial ? 'selected' : ''}>${n === total ? `Todas (${n})` : n}</option>`).join('')}</select>
+    </label>
+    <label class="campo">
+      <span>Tiempo</span>
+      <select id="sim-seg">${tiempos.map(([v, txt]) => `<option value="${v}" ${v === segInicial ? 'selected' : ''}>${txt}</option>`).join('')}</select>
+    </label>
+    <p class="reporte-estado" id="sim-resumen"></p>
+    <div class="reporte-botones">
+      <button class="btn secundario" id="sim-cancelar" type="button">Cancelar</button>
+      <button class="btn primario" id="sim-empezar" type="button">Empezar</button>
+    </div>`;
+  document.body.appendChild(dlg);
+
+  const cant = () => Number(dlg.querySelector('#sim-cant').value);
+  const seg = () => Number(dlg.querySelector('#sim-seg').value);
+  const resumen = () => {
+    dlg.querySelector('#sim-resumen').textContent =
+      `${plural(cant(), 'pregunta', 'preguntas')} · ${seg() ? `${Math.ceil((cant() * seg()) / 60)} min en total` : 'sin límite de tiempo'} · se aprueba con ${Math.round(NOTA_APROBACION * 100)}%`;
+  };
+  dlg.querySelectorAll('select').forEach((s) => s.addEventListener('change', resumen));
+  resumen();
+
+  dlg.querySelector('#sim-cancelar').addEventListener('click', () => dlg.close());
+  dlg.addEventListener('close', () => dlg.remove());
+  dlg.querySelector('#sim-empezar').addEventListener('click', () => {
+    estado.simuConfig = { cant: cant(), seg: seg() };
+    guardar();
+    const c = cant(), s = seg();
+    dlg.close();
+    lanzarSimulacro(materia, temas, c, s);
+  });
+  dlg.showModal();
+}
+
+async function lanzarSimulacro(materia, temas, cant, seg) {
+  vistaCargando('Armando el simulacro…');
+  try {
+    let pool = [];
+    for (const t of temas) pool.push(...(await cargarTema(t, materia)));
+    pool = mezclar(pool).slice(0, cant);
+    if (!pool.length) { vistaInicio(); avisar('No hay preguntas para el simulacro'); return; }
+    empezarSimulacro(pool, seg, {
+      materia: materia.nombre,
+      repetir: () => lanzarSimulacro(materia, temas, cant, seg),
+      volver: () => vistaInicio(),
+    });
+  } catch (e) {
+    vistaError(e);
+  }
+}
+
+function empezarSimulacro(pool, seg, meta) {
+  const total = pool.length;
+  simu = {
+    meta, total,
+    preguntas: pool.map((q) => ({ ...q, orden: mezclar([0, 1, 2, 3]) })),
+    resp: Array(total).fill(null),   // posición elegida en cada pregunta (null = en blanco)
+    i: 0,
+    vistas: 0,                       // hasta qué pregunta llegó
+    limite: seg * total,             // 0 = sin límite
+    t0: Date.now(),
+    timer: null,
+    fin: false,
+  };
+
+  app.innerHTML = `
+    <main class="pantalla">
+      <div class="hud">
+        <button class="icono" id="btn-salir" aria-label="Abandonar el simulacro">✕</button>
+        <div class="progreso" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="0"><div class="barra" id="barra"></div></div>
+        <div class="reloj" id="reloj" aria-label="Tiempo">⏱ <span id="reloj-t">00:00</span></div>
+      </div>
+      <div id="zona"></div>
+    </main>`;
+
+  document.getElementById('btn-salir').addEventListener('click', () => {
+    if (window.confirm('¿Abandonar el simulacro? No se guarda nada de esta ronda.')) {
+      Sonido.clic();
+      clearInterval(simu.timer);
+      const volver = simu.meta.volver;
+      simu = null;
+      volver();
+    }
+  });
+
+  simu.timer = setInterval(tickSimulacro, 1000);
+  tickSimulacro();
+  mostrarPreguntaSimu();
+  window.scrollTo(0, 0);
+}
+
+function tickSimulacro() {
+  const s = simu;
+  if (!s || s.fin) return;
+  const usado = Math.floor((Date.now() - s.t0) / 1000);
+  const resta = s.limite ? Math.max(0, s.limite - usado) : null;
+  const reloj = document.getElementById('reloj');
+  if (!reloj) return;
+  document.getElementById('reloj-t').textContent = fmtTiempo(resta ?? usado);
+  reloj.classList.toggle('urgente', resta !== null && resta <= 60);
+  if (resta === 0) terminarSimulacro(true);
+}
+
+function mostrarPreguntaSimu() {
+  const s = simu;
+  const q = s.preguntas[s.i];
+  s.vistas = Math.max(s.vistas, s.i + 1);
+  const ultima = s.i === s.total - 1;
+
+  document.getElementById('barra').style.width = `${(s.i / s.total) * 100}%`;
+  document.querySelector('.progreso').setAttribute('aria-valuenow', String(s.i));
+  document.getElementById('zona').innerHTML = `
+    <p class="contador">Pregunta ${s.i + 1} de ${s.total}</p>
+    <div class="tarjeta-pregunta">
+      <p class="tema-etq">${esc(q.tema)}</p>
+      <h2 class="pregunta">${esc(q.texto)}</h2>
+      ${q.imagen ? `
+        <figure class="q-figura">
+          <a href="${esc(q.imagen)}" target="_blank" rel="noopener" aria-label="Abrir la imagen en tamaño completo">
+            <img src="${esc(q.imagen)}" alt="${esc(q.imagenAlt)}" decoding="async">
+          </a>
+        </figure>` : ''}
+    </div>
+    <div class="opciones" id="opciones" role="group" aria-label="Opciones de respuesta">
+      ${q.orden.map((oi, pos) => `
+        <button class="opcion ${s.resp[s.i] === pos ? 'elegida' : ''}" data-pos="${pos}" aria-pressed="${s.resp[s.i] === pos}">
+          <span class="letra" aria-hidden="true">${LETRAS[pos]}</span>
+          <span>${esc(q.opciones[oi])}</span>
+        </button>`).join('')}
+    </div>
+    <div class="acciones"><button class="btn primario" id="btn-sim-sig">${ultima ? 'Entregar' : 'Siguiente'}</button></div>
+    <p class="ayuda-teclas">Teclado: 1 a 4 (o A a D) para elegir, Enter para seguir. Volvé a tocar tu respuesta para dejarla en blanco.</p>`;
+
+  document.querySelectorAll('#opciones .opcion').forEach((b) =>
+    b.addEventListener('click', () => elegirSimu(Number(b.dataset.pos))));
+  document.getElementById('btn-sim-sig').addEventListener('click', siguienteSimu);
+  document.querySelector('.q-figura img')?.addEventListener('error', (e) => {
+    e.currentTarget.closest('.q-figura').innerHTML = '<p class="q-figura-error">No se pudo cargar la imagen.</p>';
+  });
+}
+
+function elegirSimu(pos) {
+  const s = simu;
+  if (!s || s.fin) return;
+  s.resp[s.i] = s.resp[s.i] === pos ? null : pos;
+  document.querySelectorAll('#opciones .opcion').forEach((b, p) => {
+    const activa = s.resp[s.i] === p;
+    b.classList.toggle('elegida', activa);
+    b.setAttribute('aria-pressed', String(activa));
+  });
+  Sonido.clic();
+}
+
+function siguienteSimu() {
+  const s = simu;
+  if (!s || s.fin) return;
+  Sonido.clic();
+  if (s.i === s.total - 1) {
+    const blancas = s.resp.filter((r) => r === null).length;
+    if (window.confirm(blancas ? `Tenés ${plural(blancas, 'pregunta', 'preguntas')} sin responder. ¿Entregar igual?` : '¿Entregar el simulacro?')) terminarSimulacro(false);
+    return;
+  }
+  s.i++;
+  mostrarPreguntaSimu();
+}
+
+function terminarSimulacro(porTiempo) {
+  const s = simu;
+  if (!s || s.fin) return;
+  s.fin = true;
+  clearInterval(s.timer);
+
+  const total = s.total;
+  const usado = Math.min(Math.floor((Date.now() - s.t0) / 1000), s.limite || Infinity);
+  let aciertos = 0, blancos = 0;
+  const malas = [];                 // { q, pos, visto }
+  const intentos = [];
+  const porTema = new Map();
+
+  s.preguntas.forEach((q, i) => {
+    const visto = i < s.vistas;     // si se acabó el tiempo, las que no llegó a ver no cuentan en las estadísticas
+    const pos = s.resp[i];
+    const ok = pos !== null && q.orden[pos] === q.correcta;
+    const t = porTema.get(q.temaId) || { nombre: q.tema, ok: 0, total: 0 };
+    t.total++;
+    if (ok) t.ok++;
+    porTema.set(q.temaId, t);
+
+    if (ok) aciertos++;
+    else { malas.push({ q, pos, visto }); if (pos === null) blancos++; }
+
+    if (visto) {
+      if (ok) { delete estado.errores[q.id]; (estado.dominadas[q.temaId] ||= {})[q.id] = 1; }
+      else estado.errores[q.id] = 1;
+      intentos.push({ pregunta_id: q.id, tema_id: q.temaId, pregunta: q.texto.slice(0, 160), acierto: ok, modo: 'simulacro' });
+    }
+  });
+
+  const aprobado = aciertos / total >= NOTA_APROBACION;
+  const previas = (estado.simulacros || []).filter((x) => x.materia === s.meta.materia);
+  const mejorPrevia = previas.length ? Math.max(...previas.map((x) => x.nota)) : null;
+  const nota = Math.round((aciertos / total) * 100) / 10;
+  estado.simulacros = [...(estado.simulacros || []), { f: Date.now(), materia: s.meta.materia, nota, aciertos, total, seg: usado }].slice(-30);
+  guardar();
+  if (rankingActivo() && intentos.length) registrarIntentos(intentos).catch(() => {});
+
+  const meta = s.meta;
+  simu = null;
+
+  const detalle = malas.map(({ q, pos, visto }) => `
+    <details>
+      <summary>${esc(q.texto)}</summary>
+      <div class="detalle">
+        <p>${pos === null ? (visto ? 'La dejaste en blanco.' : 'No llegaste a esta pregunta.') : `Tu respuesta: ${esc(q.opciones[q.orden[pos]])}`}</p>
+        <p><strong>Respuesta:</strong> ${esc(q.opciones[q.correcta])}</p>
+        ${q.explicacion ? `<p>${esc(q.explicacion)}</p>` : ''}
+      </div>
+    </details>`).join('');
+
+  const temasHtml = porTema.size > 1 ? `
+    <h2 class="subtitulo">Por tema</h2>
+    <ul class="lista-progreso">${[...porTema.values()].map((t) => {
+      const pct = Math.round((t.ok / t.total) * 100);
+      return `
+        <li>
+          <div class="cuerpo">
+            <span class="nombre">${esc(t.nombre)}</span>
+            <span class="riel"><span class="relleno" style="width:${pct}%"></span></span>
+          </div>
+          <span class="pct">${pct}%<small>${t.ok}/${t.total}</small></span>
+        </li>`;
+    }).join('')}</ul>` : '';
+
+  app.innerHTML = `
+    <main class="pantalla resultado">
+      <div class="grande" aria-hidden="true">${aprobado ? '🎓' : '📚'}</div>
+      <h1>Nota ${fmtNota(aciertos, total)}</h1>
+      <p class="sub">${aprobado ? '¡Aprobado!' : 'Todavía no alcanza.'} ${porTiempo ? 'Se terminó el tiempo.' : ''}</p>
+      <div class="cifras">
+        <div class="cifra"><b>${aciertos}</b><span>Correctas</span></div>
+        <div class="cifra"><b>${total - aciertos - blancos}</b><span>Incorrectas</span></div>
+        <div class="cifra"><b>${blancos}</b><span>En blanco</span></div>
+      </div>
+      <p class="estado-ranking">Tiempo: ${fmtTiempo(usado)}${s.limite ? ` de ${fmtTiempo(s.limite)}` : ''} · Se aprueba con ${Math.round(NOTA_APROBACION * 100)}%${mejorPrevia !== null ? ` · Tu mejor nota anterior: ${String(mejorPrevia.toFixed(1)).replace('.', ',')}` : ''}</p>
+      <div class="botones">
+        <button class="btn primario" id="btn-otra">Repetir simulacro</button>
+        ${malas.length ? `<button class="btn secundario" id="btn-malas">Repasar errores (${malas.length})</button>` : ''}
+        <button class="btn secundario" id="btn-inicio">Inicio</button>
+      </div>
+      ${temasHtml}
+      ${malas.length ? `<section class="falladas"><h2>Para repasar</h2>${detalle}</section>` : ''}
+    </main>`;
+
+  document.getElementById('btn-otra').addEventListener('click', () => { Sonido.clic(); meta.repetir(); });
+  document.getElementById('btn-malas')?.addEventListener('click', () => {
+    Sonido.clic();
+    const pool = malas.map(({ q }) => q);
+    const metaRepaso = { titulo: 'Repaso del simulacro', temaId: null, volver: () => vistaInicio() };
+    empezarJuego(pool, { ...metaRepaso, repetir: () => empezarJuego(pool, metaRepaso) });
+  });
+  document.getElementById('btn-inicio').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
+
+  Sonido.fin(aprobado);
+  if (aprobado) lanzarConfeti(aciertos === total ? 160 : 100);
   window.scrollTo(0, 0);
 }
 
@@ -1207,7 +1490,7 @@ function vistaApodo() {
   input.focus();
 }
 
-let pedidoRanking = 0;
+let pedidoRanking = 0;   // descarta respuestas viejas si el usuario cambia de filtro rápido
 
 function vistaRanking(iMateria = 0, tema = '') {
   if (!indice.materias.length) { vistaInicio(); return; }
@@ -1226,7 +1509,7 @@ function vistaRanking(iMateria = 0, tema = '') {
         <select id="sel-tema">
           <option value="">Todos</option>
           <option value="Varios temas" ${tema === 'Varios temas' ? 'selected' : ''}>Varios temas (mezclados)</option>
-          ${m.temas.map((t) => `<option value="${esc(t.nombre)}" ${t.nombre === tema ? 'selected' : ''}>${esc(t.nombre)}</option>`).join('')}
+          ${m.temas.filter((t) => t.preguntas > 0).map((t) => `<option value="${esc(t.nombre)}" ${t.nombre === tema ? 'selected' : ''}>${esc(t.nombre)}</option>`).join('')}
         </select>
       </label>
       <p class="nota-ranking">Se muestra la mejor partida de cada apodo, ordenada por puntos.</p>
@@ -1319,12 +1602,21 @@ function vistaHistorial(apodo, volver) {
 // ---------- Teclado ----------
 
 document.addEventListener('keydown', (e) => {
-  if ((!juego && !sesionT) || e.ctrlKey || e.metaKey || e.altKey) return;
-  if (e.target.closest?.('dialog, input, textarea, select')) return;
+  if ((!juego && !simu && !sesionT) || e.ctrlKey || e.metaKey || e.altKey) return;
+  if (e.target.closest?.('dialog, input, textarea, select')) return;   // escribiendo en un formulario
   const k = e.key.toLowerCase();
   if (sesionT) {
     if (k === ' ' || k === 'enter') { e.preventDefault(); if (sesionT.volteada) valorarTarjeta(3); else voltearTarjeta(); }
     else if (sesionT.volteada && ['1', '2', '3', '4'].includes(k)) valorarTarjeta(Number(k));
+    return;
+  }
+  if (simu) {
+    if (simu.fin) return;
+    const pos = ['1', '2', '3', '4'].indexOf(k);
+    const pos2 = ['a', 'b', 'c', 'd'].indexOf(k);
+    if (pos >= 0) elegirSimu(pos);
+    else if (pos2 >= 0) elegirSimu(pos2);
+    else if (k === 'enter') { e.preventDefault(); siguienteSimu(); }
     return;
   }
   if (!juego.respondida) {
@@ -1338,6 +1630,7 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+// El audio del navegador necesita un gesto previo del usuario
 document.addEventListener('pointerdown', () => Sonido.iniciar(), { once: true });
 document.addEventListener('keydown', () => Sonido.iniciar(), { once: true });
 
@@ -1350,12 +1643,13 @@ async function iniciar() {
     if (!r.ok) throw new Error(`No se pudo leer data/index.json (${r.status})`);
     indice = await r.json();
     indice.materias = indice.materias || [];
-    if (estado.srs) { delete estado.srs; guardar(); }
+    if (estado.srs) { delete estado.srs; guardar(); }   // versión anterior del repaso (sobre las preguntas)
     vistaInicio();
+    // Carga los temas en segundo plano para saber cuántas tarjetas hay para hoy
     cargarTodas().then(pintarTarjetasInicio).catch(() => {});
   } catch (e) {
     vistaError(e);
   }
 }
 
-iniciar();
+iniciar();
