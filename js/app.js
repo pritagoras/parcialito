@@ -10,6 +10,7 @@ import { lanzarConfeti } from './confeti.js';
 import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles } from './ranking.js';
 import { infoDispositivo } from './dispositivo.js';
 import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js';
+import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -17,6 +18,7 @@ const avisoEl = document.getElementById('aviso');
 // Actividades interactivas: un tema las activa con "actividad": "<clave>" en su JSON
 const ACTIVIDADES = {
   replicacion: { titulo: TITULO_REPLICACION, abrir: abrirReplicacion },
+  cuadro: { titulo: TITULO_CUADRO, abrir: abrirCuadro },
 };
 
 const LETRAS = ['A', 'B', 'C', 'D'];
@@ -556,9 +558,14 @@ function alternarSonido() {
 // ---------- Pantalla: materia (elegir temas) ----------
 
 // Actividades disponibles en una materia (sin repetir) según el campo "actividad" de sus temas
+// "actividad" puede ser un texto o una lista de textos. Devuelve una entrada por (actividad, tema).
 function actividadesDe(m) {
-  const claves = [...new Set(m.temas.map((t) => t.actividad).filter((c) => ACTIVIDADES[c]))];
-  return claves.map((clave) => ({ clave, titulo: ACTIVIDADES[clave].titulo }));
+  const lista = [];
+  for (const t of m.temas) {
+    const claves = [].concat(t.actividad || []);
+    for (const clave of claves) if (ACTIVIDADES[clave]) lista.push({ clave, titulo: ACTIVIDADES[clave].titulo, tema: t });
+  }
+  return lista;
 }
 
 function vistaMateria(i) {
@@ -595,6 +602,8 @@ function vistaMateria(i) {
       </label>`;
   }).join('');
 
+  const actividades = actividadesDe(m);
+
   app.innerHTML = `
     <main class="pantalla">
       <button class="btn enlace" id="btn-volver">← Materias</button>
@@ -602,8 +611,8 @@ function vistaMateria(i) {
         <span class="emoji" aria-hidden="true">${esc(m.emoji || '📚')}</span>
         <h1>${esc(m.nombre)}</h1>
       </div>
-      ${actividadesDe(m).map((a) => `
-        <button class="banner-repaso" data-actividad="${esc(a.clave)}"><span>🧩 Actividad interactiva<small>${esc(a.titulo)}</small></span><b>▶</b></button>`).join('')}
+      ${actividades.map((a, n) => `
+        <button class="banner-repaso" data-actividad="${n}"><span>🧩 Actividad interactiva<small>${esc(a.titulo)}${actividades.filter((x) => x.clave === a.clave).length > 1 ? ' · ' + esc(a.tema.nombre) : ''}</small></span><b>▶</b></button>`).join('')}
       <div class="temas-barra">
         <span>Temas</span>
         <button class="btn enlace" id="btn-todos"></button>
@@ -663,7 +672,8 @@ function vistaMateria(i) {
   app.querySelectorAll('[data-actividad]').forEach((b) =>
     b.addEventListener('click', () => {
       Sonido.clic();
-      ACTIVIDADES[b.dataset.actividad].abrir({ app, volver: () => vistaMateria(i) });
+      const a = actividades[Number(b.dataset.actividad)];
+      ACTIVIDADES[a.clave].abrir({ app, volver: () => vistaMateria(i), tema: a.tema, materia: m });
     }));
 
   btnEmpezar.addEventListener('click', () => {

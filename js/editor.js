@@ -273,7 +273,9 @@
             preguntas: t.preguntas.length,
           };
           if (t.tarjetas?.length) item.tarjetas = t.tarjetas.length;
-          if (typeof t.extra?.actividad === 'string' && t.extra.actividad.trim()) item.actividad = t.extra.actividad.trim();
+          const act = t.extra?.actividad;
+          if (typeof act === 'string' && act.trim()) item.actividad = act.trim();
+          else if (Array.isArray(act)) { const l = act.filter((a) => typeof a === 'string' && a.trim()).map((a) => a.trim()); if (l.length) item.actividad = l; }
           return item;
         });
         return o;

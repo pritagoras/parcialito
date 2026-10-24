@@ -91,8 +91,13 @@ def main() -> int:
             }
             if n_tarjetas > 0:
                 item["tarjetas"] = n_tarjetas
-            if isinstance(datos.get("actividad"), str) and datos["actividad"].strip():
-                item["actividad"] = datos["actividad"].strip()
+            act = datos.get("actividad")
+            if isinstance(act, str) and act.strip():
+                item["actividad"] = act.strip()
+            elif isinstance(act, list):
+                lista_act = [a.strip() for a in act if isinstance(a, str) and a.strip()]
+                if lista_act:
+                    item["actividad"] = lista_act
             materia["temas"].append(item)
 
         materias.append(materia)

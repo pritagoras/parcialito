@@ -18,7 +18,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 DATA = RAIZ / "data"
 LETRAS = "ABCD"
-ACTIVIDADES = {"replicacion"}   # actividades interactivas que conoce la app (js/replicacion.js)
+ACTIVIDADES = {"replicacion", "cuadro"}   # actividades interactivas que conoce la app (js/replicacion.js, js/cuadro.js)
 
 # Frases que delatan una explicación atada al orden de las opciones.
 # La app mezcla las opciones, así que "la opción B" dejaría de tener sentido.
@@ -26,6 +26,35 @@ REF_LETRA = re.compile(r"\b(opci[oó]n|alternativa|inciso|respuesta)\s+[A-D]\b",
 COMODINES = re.compile(
     r"\b(todas las anteriores|ninguna de las anteriores|ambas son correctas|a y b)\b", re.IGNORECASE
 )
+
+
+def validar_cuadro(c):
+    """Revisa el objeto "cuadro" de la actividad de cuadro comparativo."""
+    e = "Cuadro: "
+    if not isinstance(c, dict):
+        return [e + 'falta el objeto "cuadro" (el tema declara la actividad "cuadro").']
+    errores = []
+    cols = c.get("columnas")
+    filas = c.get("filas")
+    if not isinstance(cols, list) or len(cols) < 2:
+        return [e + '"columnas" debe ser una lista de al menos 2 columnas.']
+    for i, col in enumerate(cols, start=1):
+        nombre = col if isinstance(col, str) else (col or {}).get("nombre") if isinstance(col, dict) else None
+        if not isinstance(nombre, str) or not nombre.strip():
+            errores.append(e + f"la columna {i} no tiene nombre.")
+    if not isinstance(filas, list) or len(filas) < 2:
+        errores.append(e + '"filas" debe ser una lista de al menos 2 filas.')
+        return errores
+    for n, f in enumerate(filas, start=1):
+        if not isinstance(f, dict) or not isinstance(f.get("aspecto"), str) or not f["aspecto"].strip():
+            errores.append(e + f'la fila {n} necesita "aspecto".')
+            continue
+        celdas = f.get("celdas")
+        if not isinstance(celdas, list) or len(celdas) != len(cols):
+            errores.append(e + f'la fila {n} ("{f["aspecto"]}") debe tener {len(cols)} celdas (tiene {len(celdas) if isinstance(celdas, list) else 0}).')
+        elif not all(isinstance(t, str) and t.strip() for t in celdas):
+            errores.append(e + f'la fila {n} ("{f["aspecto"]}") tiene celdas vacías.')
+    return errores
 
 
 def validar_archivo(ruta: Path):
@@ -65,9 +94,16 @@ def validar_archivo(ruta: Path):
         errores.append('El tema debe contener al menos una pregunta o al menos una tarjeta.')
         return errores, avisos, 0, datos
 
+    # Actividades interactivas (opcional): texto o lista de textos
     actividad = datos.get("actividad")
-    if actividad is not None and actividad not in ACTIVIDADES:
-        avisos.append(f'"actividad": "{actividad}" no existe (disponibles: {", ".join(sorted(ACTIVIDADES))}).')
+    claves = [actividad] if isinstance(actividad, str) else (actividad if isinstance(actividad, list) else [])
+    if actividad is not None and not isinstance(actividad, (str, list)):
+        errores.append('"actividad" debe ser un texto o una lista de textos.')
+    for clave in claves:
+        if clave not in ACTIVIDADES:
+            avisos.append(f'"actividad": "{clave}" no existe (disponibles: {", ".join(sorted(ACTIVIDADES))}).')
+    if "cuadro" in claves:
+        errores.extend(validar_cuadro(datos.get("cuadro")))
 
     # Validación de preguntas
     vistas = set()

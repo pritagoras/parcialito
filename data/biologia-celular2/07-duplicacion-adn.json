@@ -1,7 +1,106 @@
 {
   "materia": "Biología 2",
   "tema": "Duplicación ADN",
-  "actividad": "replicacion",
+  "actividad": ["replicacion", "cuadro"],
+  "cuadro": {
+    "titulo": "Duplicación, transcripción y traducción",
+    "columnas": [
+      {
+        "nombre": "Duplicación del ADN",
+        "corto": "Duplicación"
+      },
+      {
+        "nombre": "Transcripción",
+        "corto": "Transcripción"
+      },
+      {
+        "nombre": "Traducción",
+        "corto": "Traducción"
+      }
+    ],
+    "filas": [
+      {
+        "aspecto": "Molde",
+        "celdas": [
+          "Las dos hebras parentales; cada una sirve como molde para una hebra nueva.",
+          "Una hebra de ADN del gen transcripto.",
+          "ARNm, leído por el ribosoma en codones."
+        ]
+      },
+      {
+        "aspecto": "Producto",
+        "celdas": [
+          "Dos moléculas de ADN; cada una contiene una hebra parental y una nueva.",
+          "Una molécula de ARN, por ejemplo ARNm, ARNr o ARNt.",
+          "Una cadena polipeptídica que se alarga para formar una proteína."
+        ]
+      },
+      {
+        "aspecto": "Dirección de lectura",
+        "celdas": [
+          "La ADN polimerasa lee cada molde 3′ → 5′.",
+          "La ARN polimerasa lee el molde de ADN 3′ → 5′.",
+          "El ribosoma recorre el ARNm 5′ → 3′."
+        ]
+      },
+      {
+        "aspecto": "Dirección de síntesis",
+        "celdas": [
+          "ADN nuevo 5′ → 3′.",
+          "ARN nuevo 5′ → 3′.",
+          "La proteína crece desde el extremo amino-terminal hacia el carboxilo-terminal."
+        ]
+      },
+      {
+        "aspecto": "Maquinaria principal",
+        "celdas": [
+          "ADN polimerasas α, ε y δ en la replicación nuclear eucariota; actúan además primasa, helicasa, SSB, topoisomerasa I y ligasa.",
+          "ARN polimerasa. En eucariotas existen ARN polimerasas I, II y III; en bacterias, la ARN polimerasa reconoce el promotor con ayuda del factor sigma.",
+          "Ribosoma; la actividad peptidil-transferasa de la subunidad mayor cataliza la formación del enlace peptídico."
+        ]
+      },
+      {
+        "aspecto": "Sustratos",
+        "celdas": [
+          "**dNTPs**: dATP, dGTP, dCTP y dTTP.",
+          "**NTPs**: ATP, GTP, CTP y UTP.",
+          "Aminoácidos unidos a sus **ARNt** (aminoacil-ARNt); ATP participa en la activación y carga de cada aminoácido, y GTP se utiliza en varias etapas del proceso."
+        ]
+      },
+      {
+        "aspecto": "Enlace catalizado",
+        "celdas": [
+          "Enlace fosfodiéster entre nucleótidos de ADN.",
+          "Enlace fosfodiéster entre ribonucleótidos de ARN.",
+          "Enlace peptídico entre aminoácidos."
+        ]
+      },
+      {
+        "aspecto": "Fidelidad / corrección",
+        "celdas": [
+          "La complementariedad y la corrección de pruebas de las polimerasas ε y δ reducen errores.",
+          "La clase no desarrolló en detalle un sistema de corrección de transcripción; el reconocimiento del molde y del promotor determina el inicio correcto.",
+          "El apareamiento codón-anticodón y la unión específica de cada aminoácido a su ARNt contribuyen a la fidelidad. No se desarrolló en detalle una corrección posterior."
+        ]
+      },
+      {
+        "aspecto": "Inicio",
+        "celdas": [
+          "En el origen de replicación (ori).",
+          "En un promotor reconocido por la ARN polimerasa y los factores necesarios para iniciar la transcripción.",
+          "En el codón de inicio, habitualmente **AUG**, con el ARNt iniciador y el ensamblaje del ribosoma."
+        ]
+      },
+      {
+        "aspecto": "Terminación",
+        "celdas": [
+          "Cuando todo el ADN está copiado y las horquillas de replicación convergen.",
+          "Cuando la maquinaria alcanza señales de terminación del transcripto correspondiente.",
+          "Cuando el ribosoma encuentra un codón de terminación y actúan los factores de liberación."
+        ]
+      }
+    ]
+  },
   "preguntas": [
     {
       "pregunta": "Durante la fase S de la interfase ocurre:",
