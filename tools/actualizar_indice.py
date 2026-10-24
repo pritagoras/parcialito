@@ -5,7 +5,7 @@ actualizar_indice.py: recorre data/ y genera data/index.json.
 Estructura esperada:
     data/
       <carpeta-de-materia>/
-        _materia.json        (opcional: nombre, emoji y color de la materia)
+        _materia.json        (opcional: nombre, emoji, color y orden de la materia)
         01-primer-tema.json
         02-segundo-tema.json
 
@@ -61,32 +61,40 @@ def main() -> int:
         print("\nNo se generó el índice: corregí los errores de arriba.")
         return 1
 
+    metas = {c: leer_meta_materia(c) for c in por_materia}
+
+    def clave_orden(carpeta):
+        orden = metas[carpeta].get("orden")
+        return (orden if isinstance(orden, (int, float)) else 9999, carpeta.name)
+
     materias = []
-    for carpeta in sorted(por_materia):
+    for carpeta in sorted(por_materia, key=clave_orden):
         temas_archivo = por_materia[carpeta]
-        meta = leer_meta_materia(carpeta)
+        meta = metas[carpeta]
         primer_json = temas_archivo[0][1]
         materia = {
             "id": carpeta.name,
             "nombre": meta.get("nombre") or primer_json["materia"],
             "emoji": meta.get("emoji", "📚"),
-            "temas": [],
         }
         if meta.get("color"):
             materia["color"] = meta["color"]
+        materia["temas"] = []
 
         for ruta, datos, n in temas_archivo:
             n_tarjetas = len(datos.get("tarjetas", [])) if isinstance(datos.get("tarjetas"), list) else 0
-            item_tema = {
+            item = {
                 "id": f"{carpeta.name}/{ruta.stem}",
                 "nombre": datos["tema"],
                 "archivo": ruta.relative_to(RAIZ).as_posix(),
                 "preguntas": n,
             }
             if n_tarjetas > 0:
-                item_tema["tarjetas"] = n_tarjetas
+                item["tarjetas"] = n_tarjetas
+            if isinstance(datos.get("actividad"), str) and datos["actividad"].strip():
+                item["actividad"] = datos["actividad"].strip()
+            materia["temas"].append(item)
 
-            materia["temas"].append(item_tema)
         materias.append(materia)
 
     indice = {
@@ -99,7 +107,9 @@ def main() -> int:
     total_temas = sum(len(m["temas"]) for m in materias)
     total_preg = sum(t["preguntas"] for m in materias for t in m["temas"])
     total_tarj = sum(t.get("tarjetas", 0) for m in materias for t in m["temas"])
-    print(f"Listo: {len(materias)} materias, {total_temas} temas, {total_preg} preguntas, {total_tarj} tarjetas -> {destino.relative_to(RAIZ)}")
+    print(
+        f"Listo: {len(materias)} materias, {total_temas} temas, {total_preg} preguntas, {total_tarj} tarjetas -> {destino.relative_to(RAIZ)}"
+    )
     return 0
 
 

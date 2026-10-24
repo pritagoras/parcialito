@@ -9,9 +9,15 @@ import { Sonido } from './sonido.js';
 import { lanzarConfeti } from './confeti.js';
 import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles } from './ranking.js';
 import { infoDispositivo } from './dispositivo.js';
+import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
+
+// Actividades interactivas: un tema las activa con "actividad": "<clave>" en su JSON
+const ACTIVIDADES = {
+  replicacion: { titulo: TITULO_REPLICACION, abrir: abrirReplicacion },
+};
 
 const LETRAS = ['A', 'B', 'C', 'D'];
 const COLORES = ['#9B7BFF', '#FFB938', '#4FE0A0', '#FF7AA8', '#5CC8FF', '#FF8A5C'];
@@ -549,6 +555,12 @@ function alternarSonido() {
 
 // ---------- Pantalla: materia (elegir temas) ----------
 
+// Actividades disponibles en una materia (sin repetir) según el campo "actividad" de sus temas
+function actividadesDe(m) {
+  const claves = [...new Set(m.temas.map((t) => t.actividad).filter((c) => ACTIVIDADES[c]))];
+  return claves.map((clave) => ({ clave, titulo: ACTIVIDADES[clave].titulo }));
+}
+
 function vistaMateria(i) {
   const m = indice.materias[i];
   const color = colorMateria(m, i);
@@ -590,6 +602,8 @@ function vistaMateria(i) {
         <span class="emoji" aria-hidden="true">${esc(m.emoji || '📚')}</span>
         <h1>${esc(m.nombre)}</h1>
       </div>
+      ${actividadesDe(m).map((a) => `
+        <button class="banner-repaso" data-actividad="${esc(a.clave)}"><span>🧩 Actividad interactiva<small>${esc(a.titulo)}</small></span><b>▶</b></button>`).join('')}
       <div class="temas-barra">
         <span>Temas</span>
         <button class="btn enlace" id="btn-todos"></button>
@@ -646,7 +660,12 @@ function vistaMateria(i) {
     actualizar();
   });
   document.getElementById('btn-volver').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
-  
+  app.querySelectorAll('[data-actividad]').forEach((b) =>
+    b.addEventListener('click', () => {
+      Sonido.clic();
+      ACTIVIDADES[b.dataset.actividad].abrir({ app, volver: () => vistaMateria(i) });
+    }));
+
   btnEmpezar.addEventListener('click', () => {
     Sonido.clic();
     const sel = seleccionados();

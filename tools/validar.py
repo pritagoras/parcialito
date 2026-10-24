@@ -18,11 +18,14 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 DATA = RAIZ / "data"
 LETRAS = "ABCD"
+ACTIVIDADES = {"replicacion"}   # actividades interactivas que conoce la app (js/replicacion.js)
 
 # Frases que delatan una explicación atada al orden de las opciones.
 # La app mezcla las opciones, así que "la opción B" dejaría de tener sentido.
 REF_LETRA = re.compile(r"\b(opci[oó]n|alternativa|inciso|respuesta)\s+[A-D]\b", re.IGNORECASE)
-COMODINES = ("todas las anteriores", "ninguna de las anteriores", "ambas son correctas", "a y b")
+COMODINES = re.compile(
+    r"\b(todas las anteriores|ninguna de las anteriores|ambas son correctas|a y b)\b", re.IGNORECASE
+)
 
 
 def validar_archivo(ruta: Path):
@@ -62,7 +65,11 @@ def validar_archivo(ruta: Path):
         errores.append('El tema debe contener al menos una pregunta o al menos una tarjeta.')
         return errores, avisos, 0, datos
 
-    # Validación de preguntas (si existen)
+    actividad = datos.get("actividad")
+    if actividad is not None and actividad not in ACTIVIDADES:
+        avisos.append(f'"actividad": "{actividad}" no existe (disponibles: {", ".join(sorted(ACTIVIDADES))}).')
+
+    # Validación de preguntas
     vistas = set()
     for n, p in enumerate(preguntas, start=1):
         e = f"Pregunta {n}: "
@@ -88,7 +95,7 @@ def validar_archivo(ruta: Path):
             normales = [" ".join(o.lower().split()) for o in ops]
             if len(set(normales)) < 4:
                 errores.append(e + "hay opciones repetidas.")
-            if any(c in o for o in normales for c in COMODINES):
+            if any(COMODINES.search(o) for o in normales):
                 avisos.append(e + 'evitá opciones tipo "todas las anteriores": la app mezcla el orden.')
 
         c = p.get("correcta")
@@ -101,11 +108,18 @@ def validar_archivo(ruta: Path):
         elif REF_LETRA.search(expl):
             avisos.append(e + 'la explicación menciona una letra de opción; la app mezcla el orden.')
 
-    # Validación de tarjetas (si existen)
+    # Validación de tarjetas
     for n, t in enumerate(tarjetas, start=1):
         e = f"Tarjeta {n}: "
         if not isinstance(t, dict):
             errores.append(e + "debe ser un objeto { ... }.")
+            continue
+        frente = t.get("frente") or t.get("pregunta")
+        dorso = t.get("dorso") or t.get("respuesta")
+        if not isinstance(frente, str) or not frente.strip():
+            errores.append(e + 'falta el frente.')
+        if not isinstance(dorso, str) or not dorso.strip():
+            errores.append(e + 'falta el dorso.')
 
     return errores, avisos, len(preguntas), datos
 
