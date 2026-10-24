@@ -1,6 +1,7 @@
 {
   "materia": "Biología 2",
   "tema": "Duplicación ADN",
+  "actividad": "replicacion",
   "preguntas": [
     {
       "pregunta": "Durante la fase S de la interfase ocurre:",
