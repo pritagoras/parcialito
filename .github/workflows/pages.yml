@@ -1,5 +1,3 @@
-# Publica el sitio en GitHub Pages cada vez que hacés push a main.
-# Antes valida las preguntas y regenera data/index.json automáticamente.
 name: Publicar en GitHub Pages
 
 on:
@@ -21,27 +19,34 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.despliegue.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Descargar el repo
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Instalar Python
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.12'
 
-      - name: Validar preguntas y regenerar el índice
+      # Valida todos los temas y regenera data/index.json.
+      # Si hay un error en algún JSON, el deploy se frena y no se rompe el sitio.
+      - name: Validar temas y regenerar el índice
         run: python tools/actualizar_indice.py
 
-      - name: Armar carpeta del sitio
-        run: |
-          mkdir _sitio
-          cp -r index.html css js data _sitio/
+      # Le pone un número de versión a los archivos para que ningún celular
+      # use copias viejas guardadas (así nadie tiene que borrar datos).
+      - name: Versionar archivos
+        run: python tools/versionar.py "${GITHUB_SHA::8}"
 
-      - uses: actions/configure-pages@v5
+      - name: Preparar Pages
+        uses: actions/configure-pages@v5
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Subir el sitio
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: _sitio
+          path: .
 
-      - id: despliegue
+      - name: Publicar
+        id: deployment
         uses: actions/deploy-pages@v4
