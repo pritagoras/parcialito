@@ -10,13 +10,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=dev">
 </head>
 <body>
   <div id="app"></div>
   <canvas id="confeti" aria-hidden="true"></canvas>
   <div id="aviso" role="status" aria-live="polite"></div>
   <noscript>Necesitás activar JavaScript para usar Repaso.</noscript>
-  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/app.js?v=dev"></script>
+
+<script id="red-de-seguridad">
+(function () {
+  function aviso() {
+    var app = document.getElementById('app');
+    if (!app || app.childElementCount) return;
+    app.innerHTML = '<div style="padding:2rem 1rem;text-align:center;font-family:system-ui,sans-serif;color:#FFF3DC">' +
+      '<p style="margin:0 0 1rem">No se pudo cargar la app. Probablemente tu navegador tiene guardada una versión vieja.</p>' +
+      '<button id="act-ver" style="font:inherit;font-weight:700;padding:.8rem 1.4rem;border-radius:14px;border:0;background:#9B7BFF;color:#120a26">Actualizar</button></div>';
+    document.getElementById('act-ver').onclick = function () {
+      location.replace(location.pathname + '?actualizar=' + Date.now() + location.hash);
+    };
+  }
+  // Falla de un <script> (archivo viejo/mezclado en caché) o error al ejecutarlo
+  window.addEventListener('error', function (e) {
+    var t = e && e.target;
+    if (t && t.tagName && t.tagName !== 'SCRIPT') return;   // ignora tipografías, imágenes, etc.
+    setTimeout(aviso, 300);
+  }, true);
+  setTimeout(aviso, 6000);
+})();
+</script>
 </body>
 </html>

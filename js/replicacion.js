@@ -14,9 +14,9 @@
 // el dibujo se da vuelta al azar (molde superior 3'→5' o 5'→3') y hay que razonar.
 // ==========================================================
 
-import { estado, guardar } from './store.js';
-import { Sonido } from './sonido.js';
-import { lanzarConfeti } from './confeti.js';
+import { estado, guardar } from './store.js?v=dev';
+import { Sonido } from './sonido.js?v=dev';
+import { lanzarConfeti } from './confeti.js?v=dev';
 
 export const TITULO = 'Burbuja de replicación: líder, rezagada y molde';
 

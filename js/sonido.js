@@ -3,7 +3,7 @@
 // No usa archivos de audio: todo se genera en el navegador.
 // ==========================================================
 
-import { estado } from './store.js';
+import { estado } from './store.js?v=dev';
 
 let ctx = null;
 

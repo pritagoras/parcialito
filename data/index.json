@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-24T02:06:48Z",
+  "generado": "2026-10-24T06:32:47Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -176,7 +176,11 @@
           "id": "biologia-celular2/07-duplicacion-adn",
           "nombre": "Duplicación ADN",
           "archivo": "data/biologia-celular2/07-duplicacion-adn.json",
-          "preguntas": 45
+          "preguntas": 45,
+          "actividad": [
+            "replicacion",
+            "cuadro"
+          ]
         }
       ]
     },
