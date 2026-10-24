@@ -165,7 +165,9 @@ h1, h2, h3, p { margin: 0; }
 
 .temas-barra { display: flex; justify-content: space-between; align-items: center; margin-bottom: .6rem; color: var(--tenue); }
 
-.temas { display: grid; gap: .6rem; padding-bottom: 7.5rem; }
+.temas { display: grid; gap: .6rem; padding-bottom: calc(11rem + env(safe-area-inset-bottom)); }
+/* En pantallas angostas la barra fija se parte en dos filas y mide más: dejamos aire de sobra */
+@media (min-width: 560px) { .temas { padding-bottom: calc(7.5rem + env(safe-area-inset-bottom)); } }
 
 .tema {
   display: flex; align-items: center; gap: .9rem;

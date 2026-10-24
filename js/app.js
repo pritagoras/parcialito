@@ -21,7 +21,6 @@ let indice = null;          // contenido de data/index.json
 const cache = new Map();    // idTema -> preguntas ya cargadas
 const cacheTarjetas = new Map();   // idTema -> tarjetas ya cargadas
 let juego = null;           // partida en curso (null si no hay)
-let simu = null;            // simulacro en curso (null si no hay)
 let sesionT = null;         // sesión de tarjetas en curso (null si no hay)
 const dificultad = new Map();   // idPregunta -> { intentos, fallos } (datos de todos los jugadores)
 
@@ -478,7 +477,6 @@ function textoDificultad(id) {
 
 function vistaInicio() {
   juego = null;
-  if (simu) { clearInterval(simu.timer); simu = null; }
   sesionT = null;
   const nErrores = Object.keys(estado.errores).length;
 
@@ -605,8 +603,6 @@ function vistaMateria(i) {
             <label><input type="radio" name="cantidad" value="${v}" ${estado.cantidad === v ? 'checked' : ''}><span>${txt}</span></label>`).join('')}
         </div>
         <div class="grupo-botones">
-          <button class="btn secundario" id="btn-tarjetas-tema">🃏 Tarjetas</button>
-          <button class="btn secundario" id="btn-simulacro">📝 Simulacro</button>
           <button class="btn primario" id="btn-empezar"></button>
         </div>
       </div>
@@ -615,8 +611,6 @@ function vistaMateria(i) {
   const checks = [...app.querySelectorAll('.tema input')];
   const btnEmpezar = document.getElementById('btn-empezar');
   const btnTodos = document.getElementById('btn-todos');
-  const btnSimulacro = document.getElementById('btn-simulacro');
-  const btnTarjetasTema = document.getElementById('btn-tarjetas-tema');
 
   const seleccionados = () => checks.filter((c) => c.checked).map((c) => m.temas[Number(c.dataset.n)]);
   const cantidadElegida = () => Number(app.querySelector('input[name="cantidad"]:checked')?.value ?? 10);
@@ -630,23 +624,13 @@ function vistaMateria(i) {
 
     if (sel.length === 0) {
       btnEmpezar.disabled = true;
-      btnSimulacro.disabled = true;
-      btnTarjetasTema.disabled = true;
       btnEmpezar.textContent = 'Elegí un tema';
     } else if (totalPreg === 0 && totalTarj > 0) {
       btnEmpezar.disabled = false;
-      btnSimulacro.disabled = true;
-      btnTarjetasTema.disabled = false;
       btnEmpezar.textContent = `🃏 Ver tarjetas (${totalTarj})`;
     } else {
       btnEmpezar.disabled = totalPreg === 0;
-      btnSimulacro.disabled = totalPreg === 0;
-      btnTarjetasTema.disabled = totalTarj === 0;
       btnEmpezar.textContent = `Empezar (${jugar})`;
-    }
-
-    if (btnTarjetasTema) {
-      btnTarjetasTema.textContent = totalTarj > 0 ? `🃏 Tarjetas (${totalTarj})` : '🃏 Tarjetas';
     }
 
     btnTodos.textContent = sel.length === checks.length ? 'Quitar todos' : 'Elegir todos';
@@ -675,13 +659,6 @@ function vistaMateria(i) {
       lanzarTemas(m, sel, cantidadElegida());
     }
   });
-
-  btnTarjetasTema?.addEventListener('click', () => {
-    Sonido.clic();
-    lanzarTarjetasTemas(m, seleccionados());
-  });
-
-  btnSimulacro.addEventListener('click', () => { Sonido.clic(); abrirConfigSimulacro(m, seleccionados()); });
 
   actualizar();
   window.scrollTo(0, 0);
@@ -1164,295 +1141,6 @@ function vistaResultado() {
   window.scrollTo(0, 0);
 }
 
-// ---------- Simulacro de parcial ----------
-
-const NOTA_APROBACION = 0.6;
-const fmtNota = (aciertos, total) => (Math.round((aciertos / total) * 100) / 10).toFixed(1).replace('.', ',');
-const fmtTiempo = (seg) => `${String(Math.floor(seg / 60)).padStart(2, '0')}:${String(seg % 60).padStart(2, '0')}`;
-
-function abrirConfigSimulacro(materia, temas) {
-  const total = temas.reduce((s, t) => s + (t.preguntas || 0), 0);
-  const cants = [10, 20, 30, 40].filter((n) => n < total);
-  cants.push(total);
-  const cantInicial = cants.includes(estado.simuConfig?.cant) ? estado.simuConfig.cant : (cants.includes(20) ? 20 : cants[cants.length - 1]);
-  const tiempos = [[0, 'Sin límite'], [60, '1 minuto por pregunta'], [90, '1 min 30 s por pregunta'], [120, '2 minutos por pregunta']];
-  const segInicial = tiempos.some(([v]) => v === estado.simuConfig?.seg) ? estado.simuConfig.seg : 90;
-
-  const dlg = document.createElement('dialog');
-  dlg.className = 'reporte';
-  dlg.setAttribute('aria-labelledby', 'sim-titulo');
-  dlg.innerHTML = `
-    <h2 id="sim-titulo">📝 Simulacro de parcial</h2>
-    <p class="reporte-texto">Preguntas mezcladas de los temas elegidos. No ves si acertaste hasta entregar.</p>
-    <label class="campo">
-      <span>Cantidad de preguntas</span>
-      <select id="sim-cant">${cants.map((n) => `<option value="${n}" ${n === cantInicial ? 'selected' : ''}>${n === total ? `Todas (${n})` : n}</option>`).join('')}</select>
-    </label>
-    <label class="campo">
-      <span>Tiempo</span>
-      <select id="sim-seg">${tiempos.map(([v, txt]) => `<option value="${v}" ${v === segInicial ? 'selected' : ''}>${txt}</option>`).join('')}</select>
-    </label>
-    <p class="reporte-estado" id="sim-resumen"></p>
-    <div class="reporte-botones">
-      <button class="btn secundario" id="sim-cancelar" type="button">Cancelar</button>
-      <button class="btn primario" id="sim-empezar" type="button">Empezar</button>
-    </div>`;
-  document.body.appendChild(dlg);
-
-  const cant = () => Number(dlg.querySelector('#sim-cant').value);
-  const seg = () => Number(dlg.querySelector('#sim-seg').value);
-  const resumen = () => {
-    dlg.querySelector('#sim-resumen').textContent =
-      `${plural(cant(), 'pregunta', 'preguntas')} · ${seg() ? `${Math.ceil((cant() * seg()) / 60)} min en total` : 'sin límite de tiempo'} · se aprueba con ${Math.round(NOTA_APROBACION * 100)}%`;
-  };
-  dlg.querySelectorAll('select').forEach((s) => s.addEventListener('change', resumen));
-  resumen();
-
-  dlg.querySelector('#sim-cancelar').addEventListener('click', () => dlg.close());
-  dlg.addEventListener('close', () => dlg.remove());
-  dlg.querySelector('#sim-empezar').addEventListener('click', () => {
-    estado.simuConfig = { cant: cant(), seg: seg() };
-    guardar();
-    const c = cant(), s = seg();
-    dlg.close();
-    lanzarSimulacro(materia, temas, c, s);
-  });
-  dlg.showModal();
-}
-
-async function lanzarSimulacro(materia, temas, cant, seg) {
-  vistaCargando('Armando el simulacro…');
-  try {
-    let pool = [];
-    for (const t of temas) pool.push(...(await cargarTema(t, materia)));
-    pool = mezclar(pool).slice(0, cant);
-    if (!pool.length) { vistaInicio(); avisar('No hay preguntas para el simulacro'); return; }
-    empezarSimulacro(pool, seg, {
-      materia: materia.nombre,
-      repetir: () => lanzarSimulacro(materia, temas, cant, seg),
-      volver: () => vistaInicio(),
-    });
-  } catch (e) {
-    vistaError(e);
-  }
-}
-
-function empezarSimulacro(pool, seg, meta) {
-  const total = pool.length;
-  simu = {
-    meta, total,
-    preguntas: pool.map((q) => ({ ...q, orden: mezclar([0, 1, 2, 3]) })),
-    resp: Array(total).fill(null),
-    i: 0,
-    vistas: 0,
-    limite: seg * total,
-    t0: Date.now(),
-    timer: null,
-    fin: false,
-  };
-
-  app.innerHTML = `
-    <main class="pantalla">
-      <div class="hud">
-        <button class="icono" id="btn-salir" aria-label="Abandonar el simulacro">✕</button>
-        <div class="progreso" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="0"><div class="barra" id="barra"></div></div>
-        <div class="reloj" id="reloj" aria-label="Tiempo">⏱ <span id="reloj-t">00:00</span></div>
-      </div>
-      <div id="zona"></div>
-    </main>`;
-
-  document.getElementById('btn-salir').addEventListener('click', () => {
-    if (window.confirm('¿Abandonar el simulacro? No se guarda nada de esta ronda.')) {
-      Sonido.clic();
-      clearInterval(simu.timer);
-      const volver = simu.meta.volver;
-      simu = null;
-      volver();
-    }
-  });
-
-  simu.timer = setInterval(tickSimulacro, 1000);
-  tickSimulacro();
-  mostrarPreguntaSimu();
-  window.scrollTo(0, 0);
-}
-
-function tickSimulacro() {
-  const s = simu;
-  if (!s || s.fin) return;
-  const usado = Math.floor((Date.now() - s.t0) / 1000);
-  const resta = s.limite ? Math.max(0, s.limite - usado) : null;
-  const reloj = document.getElementById('reloj');
-  if (!reloj) return;
-  document.getElementById('reloj-t').textContent = fmtTiempo(resta ?? usado);
-  reloj.classList.toggle('urgente', resta !== null && resta <= 60);
-  if (resta === 0) terminarSimulacro(true);
-}
-
-function mostrarPreguntaSimu() {
-  const s = simu;
-  const q = s.preguntas[s.i];
-  s.vistas = Math.max(s.vistas, s.i + 1);
-  const ultima = s.i === s.total - 1;
-
-  document.getElementById('barra').style.width = `${(s.i / s.total) * 100}%`;
-  document.querySelector('.progreso').setAttribute('aria-valuenow', String(s.i));
-  document.getElementById('zona').innerHTML = `
-    <p class="contador">Pregunta ${s.i + 1} de ${s.total}</p>
-    <div class="tarjeta-pregunta">
-      <p class="tema-etq">${esc(q.tema)}</p>
-      <h2 class="pregunta">${esc(q.texto)}</h2>
-      ${q.imagen ? `
-        <figure class="q-figura">
-          <a href="${esc(q.imagen)}" target="_blank" rel="noopener" aria-label="Abrir la imagen en tamaño completo">
-            <img src="${esc(q.imagen)}" alt="${esc(q.imagenAlt)}" decoding="async">
-          </a>
-        </figure>` : ''}
-    </div>
-    <div class="opciones" id="opciones" role="group" aria-label="Opciones de respuesta">
-      ${q.orden.map((oi, pos) => `
-        <button class="opcion ${s.resp[s.i] === pos ? 'elegida' : ''}" data-pos="${pos}" aria-pressed="${s.resp[s.i] === pos}">
-          <span class="letra" aria-hidden="true">${LETRAS[pos]}</span>
-          <span>${esc(q.opciones[oi])}</span>
-        </button>`).join('')}
-    </div>
-    <div class="acciones"><button class="btn primario" id="btn-sim-sig">${ultima ? 'Entregar' : 'Siguiente'}</button></div>
-    <p class="ayuda-teclas">Teclado: 1 a 4 (o A a D) para elegir, Enter para seguir. Volvé a tocar tu respuesta para dejarla en blanco.</p>`;
-
-  document.querySelectorAll('#opciones .opcion').forEach((b) =>
-    b.addEventListener('click', () => elegirSimu(Number(b.dataset.pos))));
-  document.getElementById('btn-sim-sig').addEventListener('click', siguienteSimu);
-  document.querySelector('.q-figura img')?.addEventListener('error', (e) => {
-    e.currentTarget.closest('.q-figura').innerHTML = '<p class="q-figura-error">No se pudo cargar la imagen.</p>';
-  });
-}
-
-function elegirSimu(pos) {
-  const s = simu;
-  if (!s || s.fin) return;
-  s.resp[s.i] = s.resp[s.i] === pos ? null : pos;
-  document.querySelectorAll('#opciones .opcion').forEach((b, p) => {
-    const activa = s.resp[s.i] === p;
-    b.classList.toggle('elegida', activa);
-    b.setAttribute('aria-pressed', String(activa));
-  });
-  Sonido.clic();
-}
-
-function siguienteSimu() {
-  const s = simu;
-  if (!s || s.fin) return;
-  Sonido.clic();
-  if (s.i === s.total - 1) {
-    const blancas = s.resp.filter((r) => r === null).length;
-    if (window.confirm(blancas ? `Tenés ${plural(blancas, 'pregunta', 'preguntas')} sin responder. ¿Entregar igual?` : '¿Entregar el simulacro?')) terminarSimulacro(false);
-    return;
-  }
-  s.i++;
-  mostrarPreguntaSimu();
-}
-
-function terminarSimulacro(porTiempo) {
-  const s = simu;
-  if (!s || s.fin) return;
-  s.fin = true;
-  clearInterval(s.timer);
-
-  const total = s.total;
-  const usado = Math.min(Math.floor((Date.now() - s.t0) / 1000), s.limite || Infinity);
-  let aciertos = 0, blancos = 0;
-  const malas = [];
-  const intentos = [];
-  const porTema = new Map();
-
-  s.preguntas.forEach((q, i) => {
-    const visto = i < s.vistas;
-    const pos = s.resp[i];
-    const ok = pos !== null && q.orden[pos] === q.correcta;
-    const t = porTema.get(q.temaId) || { nombre: q.tema, ok: 0, total: 0 };
-    t.total++;
-    if (ok) t.ok++;
-    porTema.set(q.temaId, t);
-
-    if (ok) aciertos++;
-    else { malas.push({ q, pos, visto }); if (pos === null) blancos++; }
-
-    if (visto) {
-      if (ok) { delete estado.errores[q.id]; (estado.dominadas[q.temaId] ||= {})[q.id] = 1; }
-      else estado.errores[q.id] = 1;
-      intentos.push({ pregunta_id: q.id, tema_id: q.temaId, pregunta: q.texto.slice(0, 160), acierto: ok, modo: 'simulacro' });
-    }
-  });
-
-  const aprobado = aciertos / total >= NOTA_APROBACION;
-  const previas = (estado.simulacros || []).filter((x) => x.materia === s.meta.materia);
-  const mejorPrevia = previas.length ? Math.max(...previas.map((x) => x.nota)) : null;
-  const nota = Math.round((aciertos / total) * 100) / 10;
-  estado.simulacros = [...(estado.simulacros || []), { f: Date.now(), materia: s.meta.materia, nota, aciertos, total, seg: usado }].slice(-30);
-  guardar();
-  if (rankingActivo() && intentos.length) registrarIntentos(intentos).catch(() => {});
-
-  const meta = s.meta;
-  simu = null;
-
-  const detalle = malas.map(({ q, pos, visto }) => `
-    <details>
-      <summary>${esc(q.texto)}</summary>
-      <div class="detalle">
-        <p>${pos === null ? (visto ? 'La dejaste en blanco.' : 'No llegaste a esta pregunta.') : `Tu respuesta: ${esc(q.opciones[q.orden[pos]])}`}</p>
-        <p><strong>Respuesta:</strong> ${esc(q.opciones[q.correcta])}</p>
-        ${q.explicacion ? `<p>${esc(q.explicacion)}</p>` : ''}
-      </div>
-    </details>`).join('');
-
-  const temasHtml = porTema.size > 1 ? `
-    <h2 class="subtitulo">Por tema</h2>
-    <ul class="lista-progreso">${[...porTema.values()].map((t) => {
-      const pct = Math.round((t.ok / t.total) * 100);
-      return `
-        <li>
-          <div class="cuerpo">
-            <span class="nombre">${esc(t.nombre)}</span>
-            <span class="riel"><span class="relleno" style="width:${pct}%"></span></span>
-          </div>
-          <span class="pct">${pct}%<small>${t.ok}/${t.total}</small></span>
-        </li>`;
-    }).join('')}</ul>` : '';
-
-  app.innerHTML = `
-    <main class="pantalla resultado">
-      <div class="grande" aria-hidden="true">${aprobado ? '🎓' : '📚'}</div>
-      <h1>Nota ${fmtNota(aciertos, total)}</h1>
-      <p class="sub">${aprobado ? '¡Aprobado!' : 'Todavía no alcanza.'} ${porTiempo ? 'Se terminó el tiempo.' : ''}</p>
-      <div class="cifras">
-        <div class="cifra"><b>${aciertos}</b><span>Correctas</span></div>
-        <div class="cifra"><b>${total - aciertos - blancos}</b><span>Incorrectas</span></div>
-        <div class="cifra"><b>${blancos}</b><span>En blanco</span></div>
-      </div>
-      <p class="estado-ranking">Tiempo: ${fmtTiempo(usado)}${s.limite ? ` de ${fmtTiempo(s.limite)}` : ''} · Se aprueba con ${Math.round(NOTA_APROBACION * 100)}%${mejorPrevia !== null ? ` · Tu mejor nota anterior: ${String(mejorPrevia.toFixed(1)).replace('.', ',')}` : ''}</p>
-      <div class="botones">
-        <button class="btn primario" id="btn-otra">Repetir simulacro</button>
-        ${malas.length ? `<button class="btn secundario" id="btn-malas">Repasar errores (${malas.length})</button>` : ''}
-        <button class="btn secundario" id="btn-inicio">Inicio</button>
-      </div>
-      ${temasHtml}
-      ${malas.length ? `<section class="falladas"><h2>Para repasar</h2>${detalle}</section>` : ''}
-    </main>`;
-
-  document.getElementById('btn-otra').addEventListener('click', () => { Sonido.clic(); meta.repetir(); });
-  document.getElementById('btn-malas')?.addEventListener('click', () => {
-    Sonido.clic();
-    const pool = malas.map(({ q }) => q);
-    const metaRepaso = { titulo: 'Repaso del simulacro', temaId: null, volver: () => vistaInicio() };
-    empezarJuego(pool, { ...metaRepaso, repetir: () => empezarJuego(pool, metaRepaso) });
-  });
-  document.getElementById('btn-inicio').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
-
-  Sonido.fin(aprobado);
-  if (aprobado) lanzarConfeti(aciertos === total ? 160 : 100);
-  window.scrollTo(0, 0);
-}
-
 // ---------- Pantallas: apodo, ranking e historial ----------
 
 function vistaApodo() {
@@ -1602,21 +1290,12 @@ function vistaHistorial(apodo, volver) {
 // ---------- Teclado ----------
 
 document.addEventListener('keydown', (e) => {
-  if ((!juego && !simu && !sesionT) || e.ctrlKey || e.metaKey || e.altKey) return;
+  if ((!juego && !sesionT) || e.ctrlKey || e.metaKey || e.altKey) return;
   if (e.target.closest?.('dialog, input, textarea, select')) return;
   const k = e.key.toLowerCase();
   if (sesionT) {
     if (k === ' ' || k === 'enter') { e.preventDefault(); if (sesionT.volteada) valorarTarjeta(3); else voltearTarjeta(); }
     else if (sesionT.volteada && ['1', '2', '3', '4'].includes(k)) valorarTarjeta(Number(k));
-    return;
-  }
-  if (simu) {
-    if (simu.fin) return;
-    const pos = ['1', '2', '3', '4'].indexOf(k);
-    const pos2 = ['a', 'b', 'c', 'd'].indexOf(k);
-    if (pos >= 0) elegirSimu(pos);
-    else if (pos2 >= 0) elegirSimu(pos2);
-    else if (k === 'enter') { e.preventDefault(); siguienteSimu(); }
     return;
   }
   if (!juego.respondida) {
@@ -1650,4 +1329,4 @@ async function iniciar() {
   }
 }
 
-iniciar();
+iniciar();
