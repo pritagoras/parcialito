@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-25T06:34:39Z",
+  "generado": "2026-10-25T06:39:38Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -180,7 +180,8 @@
           "actividad": [
             "replicacion",
             "cuadro",
-            "horquilla"
+            "horquilla",
+            "bases"
           ]
         }
       ]
