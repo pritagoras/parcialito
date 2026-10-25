@@ -19,9 +19,9 @@
 //   Recordar     tarjeta: pensá la respuesta, mirá y calificate
 // ==========================================================
 
-import { estado, guardar } from './store.js';
-import { Sonido } from './sonido.js';
-import { lanzarConfeti } from './confeti.js';
+import { estado, guardar } from './store.js?v=dev';
+import { Sonido } from './sonido.js?v=dev';
+import { lanzarConfeti } from './confeti.js?v=dev';
 
 export const TITULO = 'Cuadro comparativo: completalo, armalo y practicalo';
 

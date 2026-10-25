@@ -12,9 +12,9 @@
 //   ¿Quién es?       identificá la enzima por su descripción
 // ==========================================================
 
-import { estado, guardar } from './store.js';
-import { Sonido } from './sonido.js';
-import { lanzarConfeti } from './confeti.js';
+import { estado, guardar } from './store.js?v=dev';
+import { Sonido } from './sonido.js?v=dev';
+import { lanzarConfeti } from './confeti.js?v=dev';
 
 export const TITULO = 'Taller de la horquilla: enzimas y enlaces';
 
