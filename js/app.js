@@ -11,6 +11,7 @@ import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrar
 import { infoDispositivo } from './dispositivo.js';
 import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js';
 import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js';
+import { abrirHorquilla, TITULO as TITULO_HORQUILLA } from './horquilla.js';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -19,6 +20,7 @@ const avisoEl = document.getElementById('aviso');
 const ACTIVIDADES = {
   replicacion: { titulo: TITULO_REPLICACION, abrir: abrirReplicacion },
   cuadro: { titulo: TITULO_CUADRO, abrir: abrirCuadro },
+  horquilla: { titulo: TITULO_HORQUILLA, abrir: abrirHorquilla },
 };
 
 const LETRAS = ['A', 'B', 'C', 'D'];
