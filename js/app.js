@@ -4,14 +4,15 @@
 // Los datos se leen de data/index.json (lo genera tools/actualizar_indice.py).
 // ==========================================================
 
-import { estado, guardar, hash } from './store.js?v=dev';
-import { Sonido } from './sonido.js?v=dev';
-import { lanzarConfeti } from './confeti.js?v=dev';
-import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles } from './ranking.js?v=dev';
-import { infoDispositivo } from './dispositivo.js?v=dev';
-import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js?v=dev';
-import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js?v=dev';
-import { abrirHorquilla, TITULO as TITULO_HORQUILLA } from './horquilla.js?v=dev';
+import { estado, guardar, hash } from './store.js';
+import { Sonido } from './sonido.js';
+import { lanzarConfeti } from './confeti.js';
+import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles } from './ranking.js';
+import { infoDispositivo } from './dispositivo.js';
+import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js';
+import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js';
+import { abrirHorquilla, TITULO as TITULO_HORQUILLA } from './horquilla.js';
+import { abrirBases, TITULO as TITULO_BASES } from './bases.js';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -21,6 +22,7 @@ const ACTIVIDADES = {
   replicacion: { titulo: TITULO_REPLICACION, abrir: abrirReplicacion },
   cuadro: { titulo: TITULO_CUADRO, abrir: abrirCuadro },
   horquilla: { titulo: TITULO_HORQUILLA, abrir: abrirHorquilla },
+  bases: { titulo: TITULO_BASES, abrir: abrirBases },
 };
 
 const LETRAS = ['A', 'B', 'C', 'D'];
@@ -1360,4 +1362,4 @@ async function iniciar() {
   }
 }
 
-iniciar();
+iniciar();

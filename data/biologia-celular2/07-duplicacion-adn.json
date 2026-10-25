@@ -1,7 +1,7 @@
 {
   "materia": "Biología 2",
   "tema": "Duplicación ADN",
-  "actividad": ["replicacion", "cuadro", "horquilla"],
+  "actividad": ["replicacion", "cuadro", "horquilla", "bases"],
   "cuadro": {
     "titulo": "Duplicación, transcripción y traducción",
     "columnas": [
