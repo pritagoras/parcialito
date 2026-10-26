@@ -2,63 +2,63 @@
   "materia": "Biología 2",
   "tema": "Duplicación del ADN IV",
   "crucigrama": {
-    "titulo": "Burbuja de replicación y ADN Polimerasas",
+    "titulo": "Burbuja de replicación y Polimerasas",
     "palabras": [
       {
         "respuesta": "Pol alfa",
-        "pista": "Enzima primasa ndive oñepyrũva ADN pyahu mbykymi omoĩvo replicación ñepyrũme[cite: 3, 7, 10]"
+        "pista": "Enzima eucariota que actúa junto a la primasa para iniciar un tramo corto de ADN"
       },
       {
         "respuesta": "Pol epsilon",
-        "pista": "Enzima omombuyasýva ha osintetizáva hebra líder térã adelantada okakuaa hagua[cite: 3, 5, 11]"
+        "pista": "Enzima eucariota encargada de elongar de forma continua la hebra líder o adelantada"
       },
       {
         "respuesta": "Pol delta",
-        "pista": "Enzima omombuyasýva hebra rezagada fragmentos de Okazaki rupive eucariotas-pe[cite: 3, 5, 10]"
+        "pista": "Enzima eucariota que sintetiza principalmente la hebra rezagada mediante la formación de fragmentos"
       },
       {
         "respuesta": "Pol I",
-        "pista": "Enzima bacterias-pe oipe'áva cebadores de ARN ha omoĩva ADN hendaguépe[cite: 7]"
+        "pista": "Enzima bacteriana encargada de remover los cebadores de ARN y reemplazarlos por ADN"
       },
       {
         "respuesta": "Pol II",
-        "pista": "Enzima procariotas-pe omba'apóva tenondete ADN oñemyatyrõ hag̃ua[cite: 7]"
+        "pista": "Enzima procariota especializada principalmente en la reparación del material genético dañado"
       },
       {
         "respuesta": "Pol III",
-        "pista": "Enzima principal ombojoajúva nucleótidos procariotas replicación-pe[cite: 7]"
+        "pista": "Principal enzima encargada de la elongación de ambas hebras en la replicación bacteriana"
       },
       {
         "respuesta": "Helicasa",
-        "pista": "Enzima omboja'óva mokõi hebra ADN rehegua omongu'évo puentes de hidrógeno[cite: 2, 8, 11]"
+        "pista": "Enzima encargada de abrir la doble hélice rompiendo las interacciones entre bases"
       },
       {
         "respuesta": "Primasa",
-        "pista": "Enzima ojapóva cebador mbykymi ARN rehegua ikatuhag̃ua oñepyrũ síntesis[cite: 3, 5, 11]"
+        "pista": "Sintetiza el cebador corto de ARN necesario para iniciar la síntesis"
       },
       {
         "respuesta": "SSB",
-        "pista": "Proteínas ojepytasóva ADN hebra única rehe anítei ojoaju jevy[cite: 2, 8, 11]"
+        "pista": "Proteínas que se unen al ADN monocatenario para estabilizarlo e impedir su reapareamiento"
       },
       {
         "respuesta": "Topoisomerasa",
-        "pista": "Enzima omoĩva corte mbyky oipe'a hag̃ua tensión torsional horquilla renondépe[cite: 3, 8, 11]"
+        "pista": "Alivia la tensión torsional realizando cortes transitorios en la cadena delante de la horquilla"
       },
       {
         "respuesta": "Horquilla",
-        "pista": "Estructura Y ra'angaichagua ojehechahápe ADN hebrakuéra ojepo'o ha osẽva[cite: 2, 4, 11]"
+        "pista": "Estructura en Y formada al separarse las hebras parentales donde avanza la síntesis"
       },
       {
         "respuesta": "Burbuja",
-        "pista": "Yvyra térã espacio ijepe'áva origen-pe oguerekóva mokõi horquilla replicación rehegua[cite: 2, 4, 11]"
+        "pista": "Región abierta formada en el sitio de origen que contiene dos estructuras de síntesis opuestas"
       },
       {
         "respuesta": "Ligasa",
-        "pista": "Enzima ombojoaju jevyva esqueleto fosfodiéster oñembotapykue hag̃ua fragmentos[cite: 3, 5, 11]"
+        "pista": "Sella las discontinuidades del esqueleto de azúcar y fosfato entre tramos de ADN"
       },
       {
         "respuesta": "Ori",
-        "pista": "ADN renda oñepyrũhápe oyvytu ha ojepo'o la doble hélice[cite: 2, 4, 11]"
+        "pista": "Secuencia específica de inicio donde se produce la apertura original de la doble hélice"
       }
     ]
   },
