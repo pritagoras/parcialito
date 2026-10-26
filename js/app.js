@@ -4,14 +4,15 @@
 // Los datos se leen de data/index.json (lo genera tools/actualizar_indice.py).
 // ==========================================================
 
-import { estado, guardar, hash } from './store.js?v=dev';
-import { Sonido } from './sonido.js?v=dev';
-import { lanzarConfeti } from './confeti.js?v=dev';
-import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles } from './ranking.js?v=dev';
-import { infoDispositivo } from './dispositivo.js?v=dev';
-import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js?v=dev';
-import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js?v=dev';
-import { abrirCrucigrama, TITULO as TITULO_CRUCIGRAMA } from './crucigrama.js?v=dev';
+import { estado, guardar, hash } from './store.js';
+import { Sonido } from './sonido.js';
+import { lanzarConfeti } from './confeti.js';
+import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, registrarVisita, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles } from './ranking.js';
+import { infoDispositivo } from './dispositivo.js';
+import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js';
+import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js';
+import { abrirHorquilla, TITULO as TITULO_HORQUILLA } from './horquilla.js';
+import { abrirBases, TITULO as TITULO_BASES } from './bases.js';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -20,7 +21,8 @@ const avisoEl = document.getElementById('aviso');
 const ACTIVIDADES = {
   replicacion: { titulo: TITULO_REPLICACION, abrir: abrirReplicacion },
   cuadro: { titulo: TITULO_CUADRO, abrir: abrirCuadro },
-  crucigrama: { titulo: TITULO_CRUCIGRAMA, abrir: abrirCrucigrama },
+  horquilla: { titulo: TITULO_HORQUILLA, abrir: abrirHorquilla },
+  bases: { titulo: TITULO_BASES, abrir: abrirBases },
 };
 
 const LETRAS = ['A', 'B', 'C', 'D'];
@@ -103,7 +105,6 @@ async function cargarTema(tema, materia) {
   const r = await fetch(tema.archivo, { cache: 'no-cache' });
   if (!r.ok) throw new Error(`No se pudo leer ${tema.archivo} (${r.status})`);
   const json = await r.json();
-  if (tema.actividad === undefined) tema.actividad = json.actividad ?? null;   // el índice no la trae: se toma del JSON del tema
   const preguntas = normalizar(json, tema, materia);
   cacheTarjetas.set(tema.id, normalizarTarjetas(json, tema, materia));
   if (estado.dominadas[tema.id]) {
@@ -571,29 +572,6 @@ function actividadesDe(m) {
   return lista;
 }
 
-// Pinta los botones de actividades de una materia (se llama de nuevo cuando termina de leer los temas)
-function pintarActividades(i, m) {
-  const zona = document.getElementById('zona-actividades');
-  if (!zona || zona.dataset.materia !== String(i)) return;   // ya cambió de pantalla
-  const actividades = actividadesDe(m);
-  zona.innerHTML = actividades.map((a, n) => `
-    <button class="banner-repaso" data-actividad="${n}"><span>🧩 Actividad interactiva<small>${esc(a.titulo)}${actividades.filter((x) => x.clave === a.clave).length > 1 ? ' · ' + esc(a.tema.nombre) : ''}</small></span><b>▶</b></button>`).join('');
-  zona.querySelectorAll('[data-actividad]').forEach((b) =>
-    b.addEventListener('click', () => {
-      Sonido.clic();
-      const a = actividades[Number(b.dataset.actividad)];
-      ACTIVIDADES[a.clave].abrir({ app, volver: () => vistaMateria(i), tema: a.tema, materia: m });
-    }));
-}
-
-// Si el índice no declara las actividades, las busca en el JSON de cada tema (queda en caché)
-async function completarActividades(i, m) {
-  const faltan = m.temas.filter((t) => t.actividad === undefined);
-  if (!faltan.length) return;
-  await Promise.allSettled(faltan.map((t) => cargarTema(t, m)));
-  pintarActividades(i, m);
-}
-
 function vistaMateria(i) {
   const m = indice.materias[i];
   const color = colorMateria(m, i);
@@ -628,6 +606,8 @@ function vistaMateria(i) {
       </label>`;
   }).join('');
 
+  const actividades = actividadesDe(m);
+
   app.innerHTML = `
     <main class="pantalla">
       <button class="btn enlace" id="btn-volver">← Materias</button>
@@ -635,7 +615,8 @@ function vistaMateria(i) {
         <span class="emoji" aria-hidden="true">${esc(m.emoji || '📚')}</span>
         <h1>${esc(m.nombre)}</h1>
       </div>
-      <div id="zona-actividades" data-materia="${i}"></div>
+      ${actividades.map((a, n) => `
+        <button class="banner-repaso" data-actividad="${n}"><span>🧩 Actividad interactiva<small>${esc(a.titulo)}${actividades.filter((x) => x.clave === a.clave).length > 1 ? ' · ' + esc(a.tema.nombre) : ''}</small></span><b>▶</b></button>`).join('')}
       <div class="temas-barra">
         <span>Temas</span>
         <button class="btn enlace" id="btn-todos"></button>
@@ -692,8 +673,12 @@ function vistaMateria(i) {
     actualizar();
   });
   document.getElementById('btn-volver').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
-  pintarActividades(i, m);
-  completarActividades(i, m);
+  app.querySelectorAll('[data-actividad]').forEach((b) =>
+    b.addEventListener('click', () => {
+      Sonido.clic();
+      const a = actividades[Number(b.dataset.actividad)];
+      ACTIVIDADES[a.clave].abrir({ app, volver: () => vistaMateria(i), tema: a.tema, materia: m });
+    }));
 
   btnEmpezar.addEventListener('click', () => {
     Sonido.clic();
@@ -1189,6 +1174,44 @@ function vistaResultado() {
   window.scrollTo(0, 0);
 }
 
+// ---------- Visitas: quién entra a la página ----------
+
+// Identificador anónimo y estable de este navegador (para reconocer a la misma persona entre visitas).
+function idVisitante() {
+  try {
+    let id = localStorage.getItem('parcialito_visitante');
+    if (!id) {
+      id = (crypto.randomUUID ? crypto.randomUUID() : `v-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`);
+      localStorage.setItem('parcialito_visitante', id);
+    }
+    return id;
+  } catch (_) {
+    return null;   // sin almacenamiento: no se puede reconocer al visitante
+  }
+}
+
+// evento: 'entrada' (abrió la página) o 'apodo' (eligió o cambió su apodo: vincula el ID con el nombre).
+function anotarVisita(evento) {
+  if (!rankingActivo()) return;
+  const visitante = idVisitante();
+  if (!visitante) return;
+  registrarVisita({
+    visitante,
+    apodo: estado.apodo || null,
+    evento,
+    ...infoDispositivo(),
+  }).catch(() => {});
+}
+
+// Una "entrada" por sesión del navegador (recargar no cuenta como visita nueva).
+function anotarEntrada() {
+  try {
+    if (sessionStorage.getItem('parcialito_entrada')) return;
+    sessionStorage.setItem('parcialito_entrada', '1');
+  } catch (_) { /* sin sessionStorage: se registra igual */ }
+  anotarVisita('entrada');
+}
+
 // ---------- Pantallas: apodo, ranking e historial ----------
 
 function vistaApodo() {
@@ -1203,7 +1226,7 @@ function vistaApodo() {
         <button class="btn primario" type="submit">Guardar</button>
       </form>
       ${estado.apodo ? '<button class="btn secundario" id="btn-historial">Ver mi historial</button>' : ''}
-      <p class="aviso-datos">Al terminar una ronda se guardan tu apodo, tus resultados y datos básicos de tu dispositivo (navegador, sistema, pantalla, idioma y zona horaria) para estadísticas. También se registra, sin tu apodo, si cada pregunta se respondió bien o mal. El ranking solo muestra apodo y puntos.</p>
+      <p class="aviso-datos">Al entrar a la página se registra la visita (con tu apodo, si ya lo elegiste). Al terminar una ronda se guardan tu apodo, tus resultados y datos básicos de tu dispositivo (navegador, sistema, pantalla, idioma y zona horaria) para estadísticas. También se registra, sin tu apodo, si cada pregunta se respondió bien o mal. El ranking solo muestra apodo y puntos.</p>
     </main>`;
 
   const input = document.getElementById('inp-apodo');
@@ -1218,6 +1241,7 @@ function vistaApodo() {
     if (!apodo) { avisar('Escribí un apodo'); input.focus(); return; }
     estado.apodo = apodo;
     guardar();
+    anotarVisita('apodo');
     Sonido.clic();
     vistaInicio();
     avisar(`Listo, ${apodo}`);
@@ -1377,4 +1401,5 @@ async function iniciar() {
   }
 }
 
+anotarEntrada();
 iniciar();

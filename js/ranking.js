@@ -152,3 +152,13 @@ export async function dificultadDe(ids) {
 export async function preguntasDificiles(minimo = 10, limite = 40) {
   return (await pedir('rpc/preguntas_dificiles', { method: 'POST', body: JSON.stringify({ minimo, limite }) })) || [];
 }
+
+// Registra una visita (entrada a la página) o la identificación de un visitante con su apodo.
+// Va a una tabla que la web solo puede escribir (no leer): se ve desde el panel de Supabase.
+export async function registrarVisita(fila) {
+  await pedir('visitas', {
+    method: 'POST',
+    headers: { Prefer: 'return=minimal' },
+    body: JSON.stringify(fila),
+  });
+}
