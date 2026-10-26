@@ -51,7 +51,7 @@ export function abrirLab({ app, volver }) {
             <div class="lab-leyenda"><span><i style="background:#4f9cff"></i>ADN</span><span><i style="background:#ffbd59"></i>Región de ADN</span><span><i style="background:#ff8a45"></i>Factor específico</span><span><i style="background:#28d7b0"></i>Factores basales</span><span><i style="background:#a58bff"></i>ARN pol II</span><span><i style="background:#ff5f9e"></i>ARN</span></div>
             <p class="lab-aviso-modelo">Esquema conceptual, no una estructura atómica a escala. Las posiciones son ilustrativas; la organización real depende del gen y del complejo.</p>
           </div>
-          <aside class="lab-info" aria-live="polite"><span class="lab-info-tipo" id="lab-tipo">PROTEÍNAS</span><h3 id="lab-nombre">Factores basales</h3><p id="lab-texto"></p><div class="lab-dato" id="lab-dato"></div><div class="lab-quiz-mini"><strong>¿Qué estás viendo?</strong><p id="lab-pregunta">Los factores basales son…</p><div id="lab-opciones"><button data-answer="proteina">Proteínas</button><button data-answer="base">Bases nitrogenadas</button><button data-answer="region">Regiones de ADN</button><button data-answer="arn">Ácido nucleico (ARN)</button></div><p id="lab-feedback" role="status"></p></div></aside>
+          <aside class="lab-info" aria-live="polite"><span class="lab-info-tipo" id="lab-tipo">PROTEÍNAS</span><h3 id="lab-nombre">Factores basales</h3><p id="lab-texto"></p><div class="lab-dato" id="lab-dato"></div><div class="lab-quiz-mini"><strong>¿Qué estás viendo?</strong><p id="lab-pregunta">Los factores basales son…</p><div id="lab-opciones"><button data-answer="proteina">Proteínas</button><button data-answer="base">Bases nitrogenadas</button><button data-answer="region">Región de ADN</button><button data-answer="acido">Ácido nucleico</button></div><p id="lab-feedback" role="status"></p></div></aside>
         </div>
         <section class="lab-guia"><div><span class="lab-eyebrow">RECORRIDO GUIADO</span><h3 id="lab-paso-titulo">Explorá libremente</h3><p id="lab-paso-texto">Seleccioná los componentes del modelo para conocer su naturaleza y función.</p></div><div class="lab-guia-acciones"><button class="btn secundario" id="lab-anterior">← Anterior</button><button class="btn primario" id="lab-siguiente">Empezar recorrido →</button></div></section>
       </section>
@@ -72,9 +72,9 @@ export function abrirLab({ app, volver }) {
     document.getElementById('lab-texto').textContent = c.texto;
     document.getElementById('lab-dato').textContent = c.dato;
     document.getElementById('lab-feedback').textContent = '';
-    const answer = id === 'adn' || id === 'promotor' || id === 'enhancer' ? 'region' : id === 'arn' ? 'arn' : 'proteina';
+    const answer = id === 'promotor' || id === 'enhancer' ? 'region' : id === 'adn' || id === 'arn' ? 'acido' : 'proteina';
     document.querySelectorAll('#lab-opciones button').forEach((b) => { b.disabled = false; b.style.borderColor = '#51417c'; b.style.opacity = '1'; });
-    document.querySelector('#lab-opciones [data-answer="arn"]').textContent = 'Ácido nucleico (ARN)';
+    document.querySelector('#lab-opciones [data-answer="acido"]').textContent = id === 'adn' ? 'Ácido nucleico (ADN)' : 'Ácido nucleico (ARN)';
     document.querySelectorAll('#lab-opciones button').forEach((b) => b.dataset.correct = String(b.dataset.answer === answer));
   };
   app.querySelectorAll('.lab-part').forEach((el) => {
