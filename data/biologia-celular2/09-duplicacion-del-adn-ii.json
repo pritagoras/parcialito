@@ -1,0 +1,71 @@
+{
+  "materia": "Biología 2",
+  "tema": "Duplicación del ADN II",
+  "crucigrama": {
+    "titulo": "Duplicación del ADN - Conceptos Avanzados",
+    "palabras": [
+      {
+        "respuesta": "SSB",
+        "pista": "Moléculas que se unen al ADN monocatenario para estabilizarlo e impedir que se vuelvan a reaparear las hebras[cite: 2, 11]"
+      },
+      {
+        "respuesta": "FPS",
+        "pista": "Factor promotor de la síntesis que regula la transición de la fase G uno a la fase S[cite: 2, 11]"
+      },
+      {
+        "respuesta": "FPM",
+        "pista": "Factor promotor de la mitosis que estimula el pasaje del ciclo celular desde G dos hacia M[cite: 2, 11]"
+      },
+      {
+        "respuesta": "dNTPs",
+        "pista": "Sustratos trifosfatados que utiliza la enzima para incorporar los desoxirribonucleótidos en la cadena naciente[cite: 2, 3, 11]"
+      },
+      {
+        "respuesta": "Mitosis",
+        "pista": "Proceso de división nuclear en la fase M que distribuye de forma equitativa el material genético duplicado[cite: 1]"
+      },
+      {
+        "respuesta": "Fidelidad",
+        "pista": "Propiedad de la copia genética garantizada por la complementariedad de bases y la corrección de errores de la enzima[cite: 3, 5, 8]"
+      },
+      {
+        "respuesta": "Polimerasa",
+        "pista": "Enzima que cataliza la adición de nucleótidos al extremo tres prima de una cadena en crecimiento[cite: 2, 10]"
+      },
+      {
+        "respuesta": "Traducción",
+        "pista": "Proceso donde el ribosoma lee la secuencia del ARN mensajero para sintetizar una cadena polipeptídica[cite: 7, 8, 11]"
+      },
+      {
+        "respuesta": "Eucariotas",
+        "pista": "Organismos cuyo material genético es lineal, está asociado a histonas y presenta múltiples orígenes de replicación[cite: 4, 7]"
+      },
+      {
+        "respuesta": "Pirofosfato",
+        "pista": "Grupo liberado durante la incorporación de cada nucleótido que contribuye energéticamente al avance de la síntesis[cite: 2, 3]"
+      },
+      {
+        "respuesta": "Topoisomerasa",
+        "pista": "Enzima que realiza cortes transitorios para aliviar la tensión torsional generada delante de la horquilla[cite: 3, 11]"
+      },
+      {
+        "respuesta": "Antiparalelas",
+        "pista": "Disposición espacial de las dos hebras del ADN que corren en sentidos opuestos, cinco a tres y tres a cinco[cite: 2, 11]"
+      },
+      {
+        "respuesta": "Transcripción",
+        "pista": "Síntesis de un tipo de ácido nucleico de hebra simple a partir de un molde de ADN[cite: 7, 11]"
+      },
+      {
+        "respuesta": "Hebra rezagada",
+        "pista": "Cadena nueva sintetizada de forma discontinua mediante fragmentos cortos en sentido opuesto al avance de la horquilla[cite: 3, 5, 11]"
+      }
+    ]
+  },
+  "actividad": [
+    "crucigrama"
+  ],
+  "preguntas": [
+
+  ]
+}

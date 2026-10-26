@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-26T01:36:41Z",
+  "generado": "2026-10-26T02:02:44Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -186,8 +186,26 @@
         },
         {
           "id": "biologia-celular2/08-duplicacion-del-adn",
-          "nombre": "Duplicación del ADN",
+          "nombre": "Duplicación del ADN I",
           "archivo": "data/biologia-celular2/08-duplicacion-del-adn.json",
+          "preguntas": 0,
+          "actividad": [
+            "crucigrama"
+          ]
+        },
+        {
+          "id": "biologia-celular2/09-duplicacion-del-adn-ii",
+          "nombre": "Duplicación del ADN II",
+          "archivo": "data/biologia-celular2/09-duplicacion-del-adn-ii.json",
+          "preguntas": 0,
+          "actividad": [
+            "crucigrama"
+          ]
+        },
+        {
+          "id": "biologia-celular2/10-duplicacion-del-adn-iii",
+          "nombre": "Duplicación del ADN III",
+          "archivo": "data/biologia-celular2/10-duplicacion-del-adn-iii.json",
           "preguntas": 0,
           "actividad": [
             "crucigrama"

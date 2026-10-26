@@ -1,0 +1,71 @@
+{
+  "materia": "Biología 2",
+  "tema": "Duplicación del ADN III",
+  "crucigrama": {
+    "titulo": "Duplicación del ADN - Variante 3",
+    "palabras": [
+      {
+        "respuesta": "ARNt",
+        "pista": "Molécula adaptadora que transporta un aminoácido específico hacia el sitio de traducción[cite: 7, 8]"
+      },
+      {
+        "respuesta": "Molde",
+        "pista": "Cadena parental cuya secuencia determina el orden de nucleótidos de la hebra nueva[cite: 2, 11]"
+      },
+      {
+        "respuesta": "Codón",
+        "pista": "Triplete de nucleótidos en el ARN mensajero que especifica la incorporación de un aminoácido[cite: 7, 8]"
+      },
+      {
+        "respuesta": "Uracilo",
+        "pista": "Base nitrogenada presente en los ribonucleótidos que reemplaza a la timina en el ARN[cite: 8]"
+      },
+      {
+        "respuesta": "Histonas",
+        "pista": "Proteínas que se sintetizan en la fase S para asociarse al ADN recién replicado[cite: 1, 7]"
+      },
+      {
+        "respuesta": "Promotor",
+        "pista": "Secuencia del gen que reconoce la ARN polimerasa para dar comienzo a la transcripción[cite: 8]"
+      },
+      {
+        "respuesta": "Ribosoma",
+        "pista": "Estructura celular encargada de formar los enlaces peptídicos durante la síntesis de proteínas[cite: 7, 8]"
+      },
+      {
+        "respuesta": "Somáticas",
+        "pista": "Tipo de células corporales donde la actividad de la telomerasa suele ser baja o indetectable[cite: 6]"
+      },
+      {
+        "respuesta": "Citocinesis",
+        "pista": "Proceso que divide el citoplasma celular completando la formación de las células hijas[cite: 1]"
+      },
+      {
+        "respuesta": "Exonucleasa",
+        "pista": "Actividad enzimática capaz de remover el nucleótido terminal mal apareado durante el copiado[cite: 3]"
+      },
+      {
+        "respuesta": "Procariotas",
+        "pista": "Organismos cuyo cromosoma circular posee habitualmente un único origen de replicación[cite: 7]"
+      },
+      {
+        "respuesta": "Proofreading",
+        "pista": "Término en inglés para la corrección de pruebas realizada por las polimerasas principales[cite: 3, 11]"
+      },
+      {
+        "respuesta": "Bidireccional",
+        "pista": "Característica de la replicación que avanza hacia ambos lados desde cada punto de origen[cite: 2, 11]"
+      },
+      {
+        "respuesta": "Transcriptasa",
+        "pista": "Tipo de enzima reversa que utiliza un molde de ARN para sintetizar ADN[cite: 6, 11]"
+      }
+    ]
+  },
+  "actividad": [
+    "crucigrama"
+  ],
+  "preguntas": [
+
+  ]
+}
