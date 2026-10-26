@@ -20,6 +20,7 @@ import { abrirComunicacion, TITULO as TITULO_COMUNICACION } from './comunicacion
 import { abrirProteinaG, TITULO as TITULO_PROTEINA_G } from './proteina-g.js?v=20261026-1';
 import { abrirLacTrp, TITULO as TITULO_LAC_TRP } from './lac-vs-trp.js?v=20261026-1';
 import { abrirComparadorComunicacion, TITULO as TITULO_COMPARADOR_COMUNICACION } from './comparador-comunicacion.js?v=20261026-1';
+import { abrirComparadores, TITULO as TITULO_COMPARADORES } from './comparadores.js?v=20261026-1';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -36,6 +37,7 @@ const ACTIVIDADES = {
   'proteina-g': { titulo: TITULO_PROTEINA_G, icono: '🧪', abrir: abrirProteinaG },
   'lac-vs-trp': { titulo: TITULO_LAC_TRP, icono: '🧫', abrir: abrirLacTrp },
   'comparador-comunicacion': { titulo: TITULO_COMPARADOR_COMUNICACION, icono: '🔁', abrir: abrirComparadorComunicacion },
+  comparadores: { titulo: TITULO_COMPARADORES, icono: '⚖️', abrir: abrirComparadores },
 };
 
 const LETRAS = ['A', 'B', 'C', 'D'];
@@ -846,7 +848,7 @@ function actividadesDe(m) {
   const lista = [];
   for (const t of m.temas) {
     const claves = [].concat(t.actividad || []);
-    for (const clave of claves) if (ACTIVIDADES[clave]) lista.push({ clave, titulo: ACTIVIDADES[clave].titulo, icono: ACTIVIDADES[clave].icono || '🧩', tema: t });
+    for (const clave of claves) if (ACTIVIDADES[clave] && clave !== 'cuadro') lista.push({ clave, titulo: ACTIVIDADES[clave].titulo, icono: ACTIVIDADES[clave].icono || '🧩', tema: t });
   }
   // El laboratorio es una actividad autónoma: aparece una sola vez en las materias de Biología.
   if (/biolog/i.test((m.id || '') + ' ' + (m.nombre || ''))) {
@@ -854,8 +856,8 @@ function actividadesDe(m) {
     lista.push({ clave: 'cromosomas', titulo: ACTIVIDADES.cromosomas.titulo, icono: ACTIVIDADES.cromosomas.icono, tema: null });
     lista.push({ clave: 'comunicacion', titulo: ACTIVIDADES.comunicacion.titulo, icono: ACTIVIDADES.comunicacion.icono, tema: null });
     lista.push({ clave: 'proteina-g', titulo: ACTIVIDADES['proteina-g'].titulo, icono: ACTIVIDADES['proteina-g'].icono, tema: null });
-    lista.push({ clave: 'lac-vs-trp', titulo: ACTIVIDADES['lac-vs-trp'].titulo, icono: ACTIVIDADES['lac-vs-trp'].icono, tema: null });
-    lista.push({ clave: 'comparador-comunicacion', titulo: ACTIVIDADES['comparador-comunicacion'].titulo, icono: ACTIVIDADES['comparador-comunicacion'].icono, tema: null });
+    const temaCuadro = m.temas.find(t => [].concat(t.actividad || []).includes('cuadro'));
+    if (temaCuadro) lista.push({ clave: 'comparadores', titulo: TITULO_COMPARADORES, icono: '⚖️', tema: temaCuadro });
   }
   return lista;
 }
