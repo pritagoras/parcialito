@@ -244,7 +244,7 @@ function htmlComparador() {
 }
 
 // ---------- Función principal ----------
-export function abrirLab({ app, volver }) {
+function abrirFactores({ app, volver }) {
   let capas = { ...CAPAS_INICIO }, modo = 'general', paso = 0, pasoActivo = false, pasoAPaso = false, sel = null;
   let chico = window.matchMedia('(max-width: 760px)'), vbActual = null, raf = 0, cerrado = false;
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
