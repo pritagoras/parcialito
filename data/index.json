@@ -173,54 +173,6 @@
           "preguntas": 42
         },
         {
-          "id": "biologia-celular2/07-duplicacion-adn",
-          "nombre": "Duplicación ADN",
-          "archivo": "data/biologia-celular2/07-duplicacion-adn.json",
-          "preguntas": 45,
-          "actividad": [
-            "replicacion",
-            "cuadro",
-            "horquilla",
-            "bases"
-          ]
-        },
-        {
-          "id": "biologia-celular2/08-duplicacion-del-adn",
-          "nombre": "Duplicación del ADN I",
-          "archivo": "data/biologia-celular2/08-duplicacion-del-adn.json",
-          "preguntas": 0,
-          "actividad": [
-            "crucigrama"
-          ]
-        },
-        {
-          "id": "biologia-celular2/09-duplicacion-del-adn-ii",
-          "nombre": "Duplicación del ADN II",
-          "archivo": "data/biologia-celular2/09-duplicacion-del-adn-ii.json",
-          "preguntas": 0,
-          "actividad": [
-            "crucigrama"
-          ]
-        },
-        {
-          "id": "biologia-celular2/10-duplicacion-del-adn-iii",
-          "nombre": "Duplicación del ADN III",
-          "archivo": "data/biologia-celular2/10-duplicacion-del-adn-iii.json",
-          "preguntas": 0,
-          "actividad": [
-            "crucigrama"
-          ]
-        },
-        {
-          "id": "biologia-celular2/11-duplicacion-del-adn-iv",
-          "nombre": "Duplicación del ADN IV",
-          "archivo": "data/biologia-celular2/11-duplicacion-del-adn-iv.json",
-          "preguntas": 0,
-          "actividad": [
-            "crucigrama"
-          ]
-        },
-        {
           "id": "biologia-celular2/12-nucleo-interfasico-i",
           "nombre": "Nucleo interfasico I",
           "archivo": "data/biologia-celular2/12-nucleo-interfasico-i.json",
@@ -251,15 +203,6 @@
           "id": "biologia-celular2/15-nucleo-interfasico-iv",
           "nombre": "Núcleo interfásico IV",
           "archivo": "data/biologia-celular2/15-nucleo-interfasico-iv.json",
-          "preguntas": 0,
-          "actividad": [
-            "crucigrama"
-          ]
-        },
-        {
-          "id": "biologia-celular2/16-duplicacion-adn-v",
-          "nombre": "Duplicación ADN V",
-          "archivo": "data/biologia-celular2/16-duplicacion-adn-v.json",
           "preguntas": 0,
           "actividad": [
             "crucigrama"
