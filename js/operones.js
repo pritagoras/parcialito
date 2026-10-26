@@ -59,7 +59,7 @@ export function abrirOperones({app, volver}) {
  .op-molecule{min-width:78px;max-width:100%;border:1px solid #31549a;border-radius:13px;background:#102653;color:#eaf1ff;padding:.65rem .75rem;font-weight:850;box-shadow:0 5px 16px #0004;cursor:pointer}
  .op-molecule small{display:block;color:#b9c9f2;font-weight:600;font-size:.68rem;margin-top:.2rem}
  .op-molecule[data-kind=protein]{border-color:#9b7bff;background:#211747}.op-molecule[data-kind=signal]{border-color:#ffb938;background:#382814}.op-molecule[data-kind=blocked]{border-color:#ff5d7a;background:#3b182b}.op-molecule[data-kind=active]{border-color:#4fe0a0;background:#0b302e}
- .op-molecule.selected{outline:2px solid #eaf1ff;outline-offset:2px;box-shadow:0 0 20px #3d8bff88}
+ .op-molecule.selected{outline:2px solid #eaf1ff;outline-offset:2px;box-shadow:0 0 20px #3d8bff88}.op-molecule.stage-focus{transform:translateY(-4px);box-shadow:0 0 19px #3d8bff88;border-color:#72a8ff}
  .op-flow-arrow{text-align:center;color:#9fc4ff;font-size:1.4rem;line-height:1.2;padding:.35rem}
  .op-scene-caption{text-align:center;color:#9fb3e6;font-size:.76rem;margin-top:.8rem}
  .op-guide-steps{display:flex;gap:.35rem;margin:.8rem 0}
@@ -115,7 +115,8 @@ export function abrirOperones({app, volver}) {
    nodos=[['ARNm ferritina','región 5′','protein'],['IRE 5′','elemento regulador','signal'],['IRP',hierro?'no unida':'unida al IRE',hierro?'protein':'blocked'],['Ribosoma',hierro?'inicia traducción':'inicio dificultado',hierro?'active':'blocked'],['Ferritina',hierro?'síntesis favorecida':'síntesis reducida',hierro?'active':'blocked']];
   }
   const diagrama=esLac||esTrp?'<div class="op-dna-track" aria-label="ADN bacteriano"></div>':'<div class="op-dna-track" style="background:linear-gradient(90deg,#a3124a,#ff4f8b,#a3124a)" aria-label="ARN mensajero"></div>';
-  const piezas=nodos.map((m,i)=>'<button type="button" class="op-molecule '+(moleculaSel===m[0]?'selected':'')+'" data-mol="'+m[0]+'" data-kind="'+m[2]+'">'+m[0]+'<small>'+m[1]+'</small></button>').join('<span class="op-flow-arrow" aria-hidden="true">→</span>');
+  const focos=esLac?[['Alolactosa','CAP–AMPc','CAP poco activo'],['Operador','LacI','Alolactosa'],['CAP–AMPc','CAP poco activo'],['ARN polimerasa','lacZ · lacY · lacA']][recorridoPaso]:esTrp?[['TrpR'],['Operador','TrpR'],['Ribosoma / trpL'],['Horquilla','Genes trpEDCBA']][recorridoPaso]:[['ARNm ferritina'],['IRE 5′','IRP'],['Ribosoma','Ferritina']][recorridoPaso];
+  const piezas=nodos.map((m,i)=>'<button type="button" class="op-molecule '+(moleculaSel===m[0]?'selected ':'')+(focos.includes(m[0])?'stage-focus':'')+'" data-mol="'+m[0]+'" data-kind="'+m[2]+'">'+m[0]+'<small>'+m[1]+'</small></button>').join('<span class="op-flow-arrow" aria-hidden="true">→</span>');
   const detalle={
    'Promotor':'Región de ADN donde se posiciona la ARN polimerasa para iniciar la transcripción.',
    'Operador':'Secuencia reguladora de ADN donde puede unirse un represor.',
