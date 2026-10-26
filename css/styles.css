@@ -700,43 +700,46 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 .tema-cruci .mejor { flex: none; font-size: .95rem; font-weight: 800; letter-spacing: .05rem; color: #b36200; }
 .tema-cruci b { flex: none; color: #6a4fd1; }
 
-/* ---------- Créditos del Desarrollador (Abajo a la izquierda) ---------- */
-.creditos-dev {
-  position: fixed;
-  left: 1.25rem;
-  bottom: 1.25rem;
-  z-index: 40;
+/* ---------- Instagram en la cabecera del menú principal ---------- */
+.acciones-cabecera {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  flex: none;
 }
 
 .dev-link {
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  color: var(--crema);
+  background: var(--panel);
+  border: 2px solid var(--linea);
+  border-radius: 12px;
   text-decoration: none;
-  color: var(--tenue);
-  font-size: .85rem;
-  font-weight: 600;
-  padding: .4rem .7rem;
-  background: rgba(35, 24, 69, .85);
-  border: 1.5px solid var(--linea);
-  border-radius: 99px;
-  backdrop-filter: blur(6px);
-  transition: color .2s ease, border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+  transition: color .18s ease, border-color .18s ease, background-color .18s ease, transform .12s ease;
 }
 
 .dev-link:hover {
   color: #E1306C;
   border-color: #E1306C;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(225, 48, 108, .2);
+  background: var(--panel-2);
 }
 
 .dev-link:active {
-  transform: translateY(0);
+  transform: scale(.94);
 }
 
 .instagram-icon {
-  width: 1rem;
-  height: 1rem;
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
   flex: none;
+}
+
+.dev-link:focus-visible {
+  outline: 3px solid var(--ambar);
+  outline-offset: 3px;
 }

@@ -581,7 +581,16 @@ function vistaInicio() {
     <main class="pantalla">
       <header class="cabecera">
         <h1 class="marca">Parcialito</h1>
-        <button class="icono" id="btn-sonido" aria-label="${estado.silencio ? 'Activar sonido' : 'Silenciar'}">${estado.silencio ? '🔇' : '🔊'}</button>
+        <div class="acciones-cabecera">
+          <button class="icono" id="btn-sonido" aria-label="${estado.silencio ? 'Activar sonido' : 'Silenciar'}">${estado.silencio ? '🔇' : '🔊'}</button>
+          <a class="dev-link" href="https://www.instagram.com/pritagoras/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Pritagoras" title="Instagram de Pritagoras">
+            <svg class="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3.25" y="3.25" width="17.5" height="17.5" rx="5" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="12" r="4.1" stroke="currentColor" stroke-width="2"/>
+              <circle cx="17.65" cy="6.55" r="1.2" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
       </header>
       <p class="bajada">Elegí una materia y practicá con preguntas de opción múltiple.</p>
       ${rankingActivo() ? `
