@@ -21,7 +21,7 @@ import { abrirProteinaG, TITULO as TITULO_PROTEINA_G } from './proteina-g.js?v=2
 import { abrirLacTrp, TITULO as TITULO_LAC_TRP } from './lac-vs-trp.js?v=20261026-1';
 import { abrirComparadorComunicacion, TITULO as TITULO_COMPARADOR_COMUNICACION } from './comparador-comunicacion.js?v=20261026-1';
 import { abrirComparadores, TITULO as TITULO_COMPARADORES } from './comparadores.js?v=20261026-1';
-import { abrirLab } from './lab.js?v=20261026-8';
+import { abrirLab } from './lab.js?v=20261026-9';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
