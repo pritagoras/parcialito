@@ -209,7 +209,7 @@ export function abrirOperones({app, volver}) {
    }
   }
   function controls(){
-  app.querySelectorAll('[data-proceso]').forEach(b=>b.onclick=()=>{Sonido.clic();recorridoProceso=b.dataset.proceso;recorridoPaso=0;moleculaSel=recorridoProceso==='ferritina'?'IRE':'Promotor';render();});
+  app.querySelectorAll('[data-proceso]').forEach(b=>b.onclick=()=>{Sonido.clic();recorridoProceso=b.dataset.proceso;recorridoPaso=0;moleculaSel=recorridoProceso==='ferritina'?'IRE 5′':'Promotor';render();});
   app.querySelectorAll('[data-rstep]').forEach(b=>b.onclick=()=>{Sonido.clic();recorridoPaso=Number(b.dataset.rstep);render();});
   $('#op-content [data-rprev]')?.addEventListener('click',()=>{Sonido.clic();recorridoPaso=Math.max(0,recorridoPaso-1);render();});
   $('#op-content [data-rnext]')?.addEventListener('click',()=>{Sonido.clic();recorridoPaso=Math.min((recorridoProceso==='lac'||recorridoProceso==='trp'?4:3)-1,recorridoPaso+1);render();});
