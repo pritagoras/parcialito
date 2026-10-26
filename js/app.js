@@ -14,6 +14,7 @@ import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js?v=dev';
 import { abrirHorquilla, TITULO as TITULO_HORQUILLA } from './horquilla.js?v=dev';
 import { abrirBases, TITULO as TITULO_BASES } from './bases.js?v=dev';
 import { abrirCrucigrama } from './crucigrama.js?v=dev';
+import { abrirOperones, TITULO as TITULO_OPERONES } from './operones.js?v=dev';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -24,6 +25,7 @@ const ACTIVIDADES = {
   cuadro: { titulo: TITULO_CUADRO, icono: '📊', abrir: abrirCuadro },
   horquilla: { titulo: TITULO_HORQUILLA, icono: '🧪', abrir: abrirHorquilla },
   bases: { titulo: TITULO_BASES, icono: '🧬', abrir: abrirBases },
+  operones: { titulo: TITULO_OPERONES, icono: '🧫', abrir: abrirOperones },
 };
 
 const LETRAS = ['A', 'B', 'C', 'D'];
@@ -718,6 +720,10 @@ function actividadesDe(m) {
   for (const t of m.temas) {
     const claves = [].concat(t.actividad || []);
     for (const clave of claves) if (ACTIVIDADES[clave]) lista.push({ clave, titulo: ACTIVIDADES[clave].titulo, icono: ACTIVIDADES[clave].icono || '🧩', tema: t });
+  }
+  // El laboratorio es una actividad autónoma: aparece una sola vez en las materias de Biología.
+  if (/biolog/i.test((m.id || '') + ' ' + (m.nombre || ''))) {
+    lista.push({ clave: 'operones', titulo: ACTIVIDADES.operones.titulo, icono: ACTIVIDADES.operones.icono, tema: null });
   }
   return lista;
 }
