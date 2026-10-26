@@ -115,16 +115,19 @@ export function abrirOperones({app, volver}) {
   </tbody></table></div>
   <p class="op-muted">La tabla resume los modelos clásicos; la regulación real puede incluir mecanismos adicionales según el organismo y las condiciones celulares.</p></section>`;
  } function quizView(){
-  if(!orden.length)orden=PREGUNTAS.map((_,i)=>i).sort(()=>Math.random()-.5);
-  const q=PREGUNTAS[orden[pregunta%orden.length]], fin=completadas>=PREGUNTAS.length;
-  $('#op-content').innerHTML='<section class="op-card"><h2>Desafío de examen</h2><p class="op-muted">Preguntas mezcladas sobre lac, trp, atenuación y ferritina · elegí y revisá la explicación.</p><div class="op-score"><div><b>'+puntos+'</b><small>Puntos</small></div><div><b>'+racha+'</b><small>Racha</small></div><div><b>'+mejor+'</b><small>Mejor racha</small></div></div>'+(fin?'<div class="op-status"><div><b>¡Ronda completada!</b> '+puntos+'/'+(PREGUNTAS.length*10)+' puntos · '+(puntos/10)+' de '+PREGUNTAS.length+' correctas.</div></div><button class="op-primary" id="op-restart">Jugar otra ronda</button>':'<div class="op-muted">Pregunta '+(completadas+1)+' de '+PREGUNTAS.length</div><p class="op-question">'+q.q+'</p>'+q.o.map((o,i)=>'<button class="op-answer" data-answer="'+i+'">'+String.fromCharCode(65+i)+'. '+o+'</button>').join('')+'<div id="op-feedback"></div>'+(respondida?'<button class="op-primary" id="op-next">Siguiente pregunta →</button>':''))+'</section>';
-  if(respondida&&!fin){
-   $('#op-feedback').innerHTML='<div class="op-feedback"><b>'+(last===q.c?'✓ Correcto':'✕ No exactamente')+'</b><p style="margin-top:.35rem">'+q.e+'</p></div>';
-   app.querySelectorAll('[data-answer]').forEach(b=>{b.disabled=true;const n=Number(b.dataset.answer);if(n===q.c)b.classList.add('good');if(n===last&&n!==q.c)b.classList.add('bad');});
-   $('#op-next').onclick=()=>{Sonido.clic();pregunta++;completadas++;respondida=false;last=-1;if(completadas===PREGUNTAS.length){Sonido.fin(puntos>=60);if(puntos>=60)lanzarConfeti(100);}render();};
+   if(!orden.length) orden=PREGUNTAS.map((_,i)=>i).sort(()=>Math.random()-.5);
+   const q=PREGUNTAS[orden[pregunta%orden.length]], fin=completadas>=PREGUNTAS.length;
+   const cuerpo=fin
+    ? `<div class="op-status"><div><b>¡Ronda completada!</b> ${puntos}/${PREGUNTAS.length*10} puntos · ${puntos/10} de ${PREGUNTAS.length} correctas.</div></div><button class="op-primary" id="op-restart">Jugar otra ronda</button>`
+    : `<div class="op-muted">Pregunta ${completadas+1} de ${PREGUNTAS.length}</div><p class="op-question">${q.q}</p>${q.o.map((o,i)=>`<button class="op-answer" data-answer="${i}">${String.fromCharCode(65+i)}. ${o}</button>`).join('')}<div id="op-feedback"></div>${respondida?'<button class="op-primary" id="op-next">Siguiente pregunta →</button>':''}`;
+   $('#op-content').innerHTML=`<section class="op-card"><h2>Desafío de examen</h2><p class="op-muted">Preguntas mezcladas sobre lac, trp, atenuación y ferritina · elegí y revisá la explicación.</p><div class="op-score"><div><b>${puntos}</b><small>Puntos</small></div><div><b>${racha}</b><small>Racha</small></div><div><b>${mejor}</b><small>Mejor racha</small></div></div>${cuerpo}</section>`;
+   if(respondida&&!fin){
+    $('#op-feedback').innerHTML='<div class="op-feedback"><b>'+(last===q.c?'✓ Correcto':'✕ No exactamente')+'</b><p style="margin-top:.35rem">'+q.e+'</p></div>';
+    app.querySelectorAll('[data-answer]').forEach(b=>{b.disabled=true;const n=Number(b.dataset.answer);if(n===q.c)b.classList.add('good');if(n===last&&n!==q.c)b.classList.add('bad');});
+    $('#op-next').onclick=()=>{Sonido.clic();pregunta++;completadas++;respondida=false;last=-1;if(completadas===PREGUNTAS.length){Sonido.fin(puntos>=60);if(puntos>=60)lanzarConfeti(100);}render();};
+   }
   }
- }
- function controls(){
+  function controls(){
   app.querySelectorAll('[data-lactosa]').forEach(b=>b.onclick=()=>{Sonido.clic();lactosa=b.dataset.lactosa==='1';render();});
   app.querySelectorAll('[data-glucosa]').forEach(b=>b.onclick=()=>{Sonido.clic();glucosa=b.dataset.glucosa==='1';render();});
   app.querySelectorAll('[data-trp]').forEach(b=>b.onclick=()=>{Sonido.clic();trp=b.dataset.trp==='1';render();});
