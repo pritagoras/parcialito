@@ -16,7 +16,7 @@ const PREGUNTAS = [
 ];
 
 export function abrirOperones({app, volver}) {
- let vista='lac', lactosa=true, glucosa=false, trp=false, atenuacion=true, hierro=false;
+ let vista='lac', lactosa=true, glucosa=false, trp=false, atenuacion=true, hierro=false, recorridoProceso='lac', recorridoPaso=0, moleculaSel='Promotor';
  let orden=[], pregunta=0, completadas=0, puntos=0, racha=0, mejor=0, respondida=false, last=-1;
  const estilos = `
  <style>
@@ -48,16 +48,96 @@ export function abrirOperones({app, volver}) {
  .op-feedback{padding:.8rem;border:1px solid var(--linea,#43347A);border-radius:11px;margin:.6rem 0;background:rgba(155,123,255,.1);font-size:.88rem}
  .op-primary{width:100%;border:0;border-radius:11px;padding:.8rem;margin-top:.5rem;background:var(--violeta,#9B7BFF);color:#170F2E;font-weight:900}
  .op-hairpins{display:grid;grid-template-columns:1fr 1fr;gap:.4rem;margin:.7rem 0}.op-hairpins span{text-align:center;padding:.6rem .2rem;border:1px solid var(--linea,#43347A);border-radius:10px;font-size:.78rem;font-weight:800}.op-hairpins .active{border-color:#FFB938;background:rgba(255,185,56,.12)}
+ .op-tabs{grid-template-columns:repeat(6,minmax(0,1fr))}
+ .op-processes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.4rem;margin:.8rem 0}
+ .op-processes button,.op-guide-steps button{border:1px solid var(--linea,#43347A);background:var(--noche,#170F2E);color:var(--tenue,#B8ABDB);border-radius:10px;padding:.65rem .4rem;font-weight:850}
+ .op-processes button[aria-pressed=true]{border-color:#5aa2ff;background:rgba(61,139,255,.16);color:#eaf1ff}
+ .op-scene{overflow:hidden;border:1px solid #23406f;border-radius:16px;background:radial-gradient(ellipse at 50% 20%,#122957 0%,#071329 58%,#040a18 100%);margin:.8rem 0;padding:1rem}
+ .op-dna-track{height:16px;margin:2rem .25rem 1.7rem;border-radius:99px;background:linear-gradient(90deg,#2365c9,#58c9ff,#2365c9);box-shadow:0 0 15px #2365c966;position:relative}
+ .op-dna-track:after{content:"";position:absolute;inset:5px 0;border-top:2px solid #d8f1ff;opacity:.8}
+ .op-molecules{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:.55rem;position:relative}
+ .op-molecule{min-width:78px;max-width:100%;border:1px solid #31549a;border-radius:13px;background:#102653;color:#eaf1ff;padding:.65rem .75rem;font-weight:850;box-shadow:0 5px 16px #0004;cursor:pointer}
+ .op-molecule small{display:block;color:#b9c9f2;font-weight:600;font-size:.68rem;margin-top:.2rem}
+ .op-molecule[data-kind=protein]{border-color:#9b7bff;background:#211747}.op-molecule[data-kind=signal]{border-color:#ffb938;background:#382814}.op-molecule[data-kind=blocked]{border-color:#ff5d7a;background:#3b182b}.op-molecule[data-kind=active]{border-color:#4fe0a0;background:#0b302e}
+ .op-molecule.selected{outline:2px solid #eaf1ff;outline-offset:2px;box-shadow:0 0 20px #3d8bff88}
+ .op-flow-arrow{text-align:center;color:#9fc4ff;font-size:1.4rem;line-height:1.2;padding:.35rem}
+ .op-scene-caption{text-align:center;color:#9fb3e6;font-size:.76rem;margin-top:.8rem}
+ .op-guide-steps{display:flex;gap:.35rem;margin:.8rem 0}
+ .op-guide-steps button{flex:1;min-width:0;padding:.55rem .2rem}
+ .op-guide-steps button[aria-current=step]{background:#235fe0;border-color:#72a8ff;color:white}
+ .op-guide-copy{padding:1rem;border:1px solid #23406f;border-radius:14px;background:linear-gradient(135deg,rgba(61,139,255,.12),rgba(7,19,41,.92))}
+ .op-guide-copy h3{margin:.35rem 0 .55rem;font-size:1.12rem}.op-guide-copy p{line-height:1.6;margin:.45rem 0}
+ .op-guide-nav{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin-top:.8rem}.op-guide-nav button{border:1px solid #31549a;border-radius:11px;padding:.75rem;background:#102653;color:#eaf1ff;font-weight:850}.op-guide-nav button:disabled{opacity:.35}
+ .op-mol-detail{margin-top:.65rem;padding:.8rem;border:1px solid var(--linea,#43347A);border-radius:11px;color:var(--tenue,#B8ABDB);font-size:.86rem;line-height:1.55}.op-mol-detail b{color:#eaf1ff}
+ @media(max-width:480px){.op-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}.op-processes{grid-template-columns:1fr}.op-scene{padding:.7rem}.op-molecule{min-width:68px;padding:.55rem}.op-guide-steps button{font-size:.75rem}}
+
  @media(max-width:480px){.op-wrap{padding-left:.8rem;padding-right:.8rem}.op-tab{font-size:.68rem}.op-genes{gap:.15rem}.op-gene{font-size:.6rem;padding:.5rem .05rem}.op-compare{grid-template-columns:1fr}}
  </style>`;
- app.innerHTML=estilos+'<main class="op-wrap"><button class="op-back" id="op-back">← Volver</button><header class="op-head"><div class="op-kicker">Laboratorio molecular · interactivo</div><h1>Operón lac, operón trp y ferritina</h1><p class="op-muted">Explorá cómo las señales ambientales y el hierro regulan la expresión génica: cambiá las condiciones, observá los mecanismos y comprobá tus predicciones.</p></header><nav class="op-tabs"><button class="op-tab" data-view="lac">🧪 lac</button><button class="op-tab" data-view="trp">🧬 trp</button><button class="op-tab" data-view="ferritina">🩸 Ferritina</button><button class="op-tab" data-view="compare">↔ Comparar</button><button class="op-tab" data-view="quiz">🎯 Desafío</button></nav><section id="op-content"></section></main>';
+ app.innerHTML=estilos+'<main class="op-wrap"><button class="op-back" id="op-back">← Volver</button><header class="op-head"><div class="op-kicker">Laboratorio molecular · interactivo</div><h1>Operón lac, operón trp y ferritina</h1><p class="op-muted">Explorá cómo las señales ambientales y el hierro regulan la expresión génica: cambiá las condiciones, observá los mecanismos y comprobá tus predicciones.</p></header><nav class="op-tabs"><button class="op-tab" data-view="recorrido">🧭 Recorrido</button><button class="op-tab" data-view="lac">🧪 lac</button><button class="op-tab" data-view="trp">🧬 trp</button><button class="op-tab" data-view="ferritina">🩸 Ferritina</button><button class="op-tab" data-view="compare">↔ Comparar</button><button class="op-tab" data-view="quiz">🎯 Desafío</button></nav><section id="op-content"></section></main>';
  const $=s=>app.querySelector(s);
  $('#op-back').onclick=()=>{Sonido.clic();volver();};
  app.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{Sonido.clic();vista=b.dataset.view;render();});
  function render(){
   app.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===vista)));
-  if(vista==='lac')lacView();else if(vista==='trp')trpView();else if(vista==='ferritina')ferritinaView();else if(vista==='compare')compareView();else quizView();
+  if(vista==='recorrido')renderRecorrido();else if(vista==='lac')lacView();else if(vista==='trp')trpView();else if(vista==='ferritina')ferritinaView();else if(vista==='compare')compareView();else quizView();
   controls();
+ }
+ function renderRecorrido(){
+  const esLac=recorridoProceso==='lac', esTrp=recorridoProceso==='trp';
+  const pasos=esLac?[
+   ['1. Señales del ambiente','La célula detecta lactosa y glucosa. La lactosa puede generar alolactosa, mientras que la glucosa modifica la señal AMPc–CAP.','La expresión alta requiere lactosa presente y glucosa baja.'],
+   ['2. LacI y el operador',lactosa?'La alolactosa se une a LacI y reduce su afinidad por el operador.':'Sin lactosa inductora, LacI se une al operador y bloquea o dificulta la transcripción.','La lactosa regula al represor; no se une directamente al ADN.'],
+   ['3. Activación por CAP',glucosa?'La glucosa alta reduce el AMPc: CAP activa poco la transcripción.':'La glucosa baja eleva el AMPc y el complejo CAP–AMPc favorece el reclutamiento de la ARN polimerasa.','La liberación del represor no significa, por sí sola, expresión máxima.'],
+   ['4. Transcripción de lacZYA',!lactosa?'LacI permanece unido al operador: la transcripción queda reprimida.':glucosa?'LacI está inactivado, pero falta activación fuerte por CAP–AMPc: la expresión es baja.':'LacI se libera y CAP–AMPc activa: la transcripción puede ser alta.','lacZ, lacY y lacA permiten captar y metabolizar lactosa.']
+  ]:esTrp?[
+   ['1. Disponibilidad de triptófano',trp?'El triptófano es abundante y puede actuar como correpresor de TrpR.':'El triptófano escasea: la célula necesita expresar genes para sintetizarlo.','lac responde a un sustrato; trp responde a la abundancia de su producto final.'],
+   ['2. TrpR y el operador',trp?'Trp se une a TrpR y favorece que el represor se una al operador.':'Sin suficiente Trp, TrpR no bloquea eficazmente el operador.','Este es el control transcripcional por represor.'],
+   ['3. Traducción del líder trpL',trp?'El ribosoma traduce el péptido líder sin detenerse en los codones de Trp.':'El ribosoma se detiene en los codones de Trp del líder por falta de aminoácido.','La posición del ribosoma modifica qué regiones del ARN pueden aparearse.'],
+   ['4. Atenuación',!atenuacion?'La atenuación está desactivada en el simulador; queda el control por TrpR.':trp?'Se favorece la horquilla 3–4 terminadora y la transcripción termina antes de los genes estructurales.':'Se favorece la horquilla 2–3 antiterminadora y la transcripción continúa.','La atenuación requiere el acoplamiento entre transcripción y traducción en bacterias.']
+  ]:[
+   ['1. Hierro disponible',hierro?'El hierro es suficiente; la célula puede producir ferritina para almacenarlo.':'El hierro escasea; conviene reducir la producción de una proteína de almacenamiento.','Ferritina se regula principalmente durante la traducción del ARNm.'],
+   ['2. IRP reconoce el IRE',hierro?'IRP deja de bloquear el IRE 5′ del ARNm de ferritina.':'IRP se une al IRE de la región 5′ no traducida y dificulta el inicio de traducción.','IRE es una región del ARN; IRP es una proteína que la reconoce.'],
+   ['3. Traducción de ferritina',hierro?'El ribosoma puede iniciar la traducción y aumenta la producción de ferritina.':'La unión IRP–IRE dificulta el inicio: se produce menos ferritina.','No confundas traducción de ARNm con transcripción desde ADN.']
+  ];
+  recorridoPaso=Math.max(0,Math.min(pasos.length-1,recorridoPaso));
+  const paso=pasos[recorridoPaso], nombre=esLac?'Operón lac':esTrp?'Operón trp':'Regulación de ferritina';
+  const descripcion=esLac?'Ajustá lactosa y glucosa en la pestaña lac para cambiar las señales.':esTrp?'Ajustá triptófano y atenuación en la pestaña trp.':'Ajustá el hierro en Ferritina para observar el control del ARNm.';
+  let nodos=[];
+  if(esLac){
+   nodos=[['Promotor','ADN','signal'],['Operador',lactosa?'LacI liberado':'LacI unido',lactosa?'active':'blocked']];
+   if(lactosa)nodos.push(['Alolactosa','se une a LacI','signal']);else nodos.push(['LacI','represor activo','blocked']);
+   nodos.push([glucosa?'CAP poco activo':'CAP–AMPc',glucosa?'glucosa alta':'glucosa baja',glucosa?'blocked':'active']);
+   nodos.push(['ARN polimerasa',!lactosa?'bloqueada':glucosa?'actividad baja':'transcripción alta',!lactosa?'blocked':glucosa?'signal':'active']);
+   nodos.push(['lacZ · lacY · lacA',lactosa?(glucosa?'expresión baja':'expresión alta'):'sin transcripción eficaz',lactosa?'active':'blocked']);
+  }else if(esTrp){
+   nodos=[['Promotor','ADN','signal'],['Operador',trp?'TrpR unido':'TrpR libre',trp?'blocked':'active'],['TrpR',trp?'activado por Trp':'sin correpresor',trp?'blocked':'protein'],['Ribosoma / trpL',trp?'avanza por el líder':'se detiene en codones Trp',trp?'signal':'active'],['Horquilla',!atenuacion?'sin atenuación':trp?'3–4 terminadora':'2–3 antiterminadora',!atenuacion?'protein':trp?'blocked':'active'],['Genes trpEDCBA',trp?'expresión reducida':'transcripción continúa',trp?'blocked':'active']];
+  }else{
+   nodos=[['ARNm ferritina','región 5′','protein'],['IRE 5′','elemento regulador','signal'],['IRP',hierro?'no unida':'unida al IRE',hierro?'protein':'blocked'],['Ribosoma',hierro?'inicia traducción':'inicio dificultado',hierro?'active':'blocked'],['Ferritina',hierro?'síntesis favorecida':'síntesis reducida',hierro?'active':'blocked']];
+  }
+  const diagrama=esLac||esTrp?'<div class="op-dna-track" aria-label="ADN bacteriano"></div>':'<div class="op-dna-track" style="background:linear-gradient(90deg,#a3124a,#ff4f8b,#a3124a)" aria-label="ARN mensajero"></div>';
+  const piezas=nodos.map((m,i)=>'<button type="button" class="op-molecule '+(moleculaSel===m[0]?'selected':'')+'" data-mol="'+m[0]+'" data-kind="'+m[2]+'">'+m[0]+'<small>'+m[1]+'</small></button>').join('<span class="op-flow-arrow" aria-hidden="true">→</span>');
+  const detalle={
+   'Promotor':'Región de ADN donde se posiciona la ARN polimerasa para iniciar la transcripción.',
+   'Operador':'Secuencia reguladora de ADN donde puede unirse un represor.',
+   'Alolactosa':'Inductor derivado de la lactosa que se une a LacI y reduce su afinidad por el operador.',
+   'LacI':'Represor del operón lac; sin inductor puede unirse al operador.',
+   'CAP–AMPc':'Complejo activador que favorece la transcripción de lac cuando la glucosa es baja.',
+   'CAP poco activo':'Con glucosa alta disminuye el AMPc y la activación por CAP.',
+   'ARN polimerasa':'Enzima que sintetiza ARN a partir de una hebra molde de ADN.',
+   'lacZ · lacY · lacA':'Genes estructurales implicados en el aprovechamiento de la lactosa.',
+   'TrpR':'Represor que se activa al unirse al triptófano, que actúa como correpresor.',
+   'Ribosoma / trpL':'La traducción del péptido líder permite detectar indirectamente la disponibilidad de triptófano.',
+   'Horquilla':'Las regiones del ARN líder pueden formar una estructura terminadora o antiterminadora.',
+   'Genes trpEDCBA':'Genes que codifican enzimas de la biosíntesis de triptófano.',
+   'ARNm ferritina':'ARN mensajero cuya traducción se ajusta según la disponibilidad de hierro.',
+   'IRE 5′':'Elemento de respuesta al hierro en la región 5′ no traducida del ARNm.',
+   'IRP':'Proteína reguladora que se une al IRE cuando el hierro escasea.',
+   'Ribosoma':'Complejo que traduce el ARNm; su inicio se dificulta cuando IRP ocupa el IRE 5′.',
+   'Ferritina':'Proteína que almacena hierro dentro de la célula.'
+  };
+  const molInfo=detalle[moleculaSel]||detalle[nodos[0][0]];
+  const botonCond=esLac?'<button class="op-primary" data-jump="lac">Cambiar lactosa y glucosa</button>':esTrp?'<button class="op-primary" data-jump="trp">Cambiar triptófano y atenuación</button>':'<button class="op-primary" data-jump="ferritina">Cambiar hierro</button>';
+  $('#op-content').innerHTML='<section class="op-card"><div class="op-kicker">Simulación guiada · paso a paso</div><h2>'+nombre+'</h2><p class="op-muted">'+descripcion+'</p><div class="op-processes" role="group" aria-label="Elegir proceso"><button data-proceso="lac" aria-pressed="'+esLac+'">🧪 Operón lac</button><button data-proceso="trp" aria-pressed="'+esTrp+'">🧬 Operón trp</button><button data-proceso="ferritina" aria-pressed="'+(!esLac&&!esTrp)+'">🩸 Ferritina</button></div><div class="op-scene">'+diagrama+'<div class="op-molecules">'+piezas+'</div><p class="op-scene-caption">Esquema molecular interactivo · seleccioná una pieza para conocer su función</p></div><div class="op-mol-detail" aria-live="polite"><b>'+moleculaSel+'.</b> '+molInfo+'</div><div class="op-guide-steps" role="group" aria-label="Etapas">'+pasos.map((p,i)=>'<button data-rstep="'+i+'" aria-current="'+(i===recorridoPaso?'step':'false')+'">'+(i+1)+'</button>').join('')+'</div><div class="op-guide-copy"><div class="op-kicker">Etapa '+(recorridoPaso+1)+' de '+pasos.length+'</div><h3>'+paso[0]+'</h3><p>'+paso[1]+'</p><p class="op-muted"><b>Idea clave:</b> '+paso[2]+'</p><div class="op-guide-nav"><button data-rprev '+(recorridoPaso===0?'disabled':'')+'>← Anterior</button><button data-rnext '+(recorridoPaso===pasos.length-1?'disabled':'')+'>Siguiente →</button></div></div><div class="op-status" style="margin-top:.8rem"><div><b>Condiciones actuales</b>'+(esLac?'Lactosa: '+(lactosa?'presente':'ausente')+' · glucosa: '+(glucosa?'alta':'baja')+'. ':esTrp?'Triptófano: '+(trp?'abundante':'escaso')+' · atenuación: '+(atenuacion?'activa':'desactivada')+'. ':'Hierro: '+(hierro?'abundante':'escaso')+'. ')+botonCond+'</div></div></section>';
  }
  function lacView(){
   const bloqueado=!lactosa, cap=!glucosa, nivel=bloqueado?'Reprimida':cap?'Alta':'Baja';
@@ -128,6 +208,13 @@ export function abrirOperones({app, volver}) {
    }
   }
   function controls(){
+  app.querySelectorAll('[data-proceso]').forEach(b=>b.onclick=()=>{Sonido.clic();recorridoProceso=b.dataset.proceso;recorridoPaso=0;moleculaSel=recorridoProceso==='ferritina'?'IRE':'Promotor';render();});
+  app.querySelectorAll('[data-rstep]').forEach(b=>b.onclick=()=>{Sonido.clic();recorridoPaso=Number(b.dataset.rstep);render();});
+  $('#op-content [data-rprev]')?.addEventListener('click',()=>{Sonido.clic();recorridoPaso=Math.max(0,recorridoPaso-1);render();});
+  $('#op-content [data-rnext]')?.addEventListener('click',()=>{Sonido.clic();recorridoPaso=Math.min((recorridoProceso==='lac'||recorridoProceso==='trp'?4:3)-1,recorridoPaso+1);render();});
+  app.querySelectorAll('[data-mol]').forEach(b=>b.onclick=()=>{Sonido.clic();moleculaSel=b.dataset.mol;render();});
+  app.querySelectorAll('[data-jump]').forEach(b=>b.onclick=()=>{Sonido.clic();vista=b.dataset.jump;render();});
+
   app.querySelectorAll('[data-lactosa]').forEach(b=>b.onclick=()=>{Sonido.clic();lactosa=b.dataset.lactosa==='1';render();});
   app.querySelectorAll('[data-glucosa]').forEach(b=>b.onclick=()=>{Sonido.clic();glucosa=b.dataset.glucosa==='1';render();});
   app.querySelectorAll('[data-trp]').forEach(b=>b.onclick=()=>{Sonido.clic();trp=b.dataset.trp==='1';render();});
