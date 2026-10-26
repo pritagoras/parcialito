@@ -26,7 +26,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 IMPORT = re.compile(r"""(['"])(\./[\w./-]+\.js)(?:\?v=\w+)?\1""")
 # src="js/xxx.js" y href="css/xxx.css" de index.html
 ENLACE = re.compile(r'((?:src|href)="(?:js|css)/[\w./-]+\.(?:js|css))(?:\?v=\w+)?"')
-ICON_ENLACE = re.compile(r'((?:src|href)="(?:ico\.png|icons/parcialito-(?:192|512)\.png))(?:\?v=\w+)?')
+ICON_ENLACE = re.compile(r'((?:src|href)="(?:ico\.png|icons/parcialito-(?:192|512)\.png))(?:\?v=\w+)?"')
 ICON_MANIFEST = re.compile(r'("src"\s*:\s*"(?:ico\.png|icons/parcialito-(?:192|512)\.png))(?:\?v=\w+)?(")')
 
 RED_DE_SEGURIDAD = """
