@@ -11,7 +11,8 @@ const PREGUNTAS = [
  {q:'¿Qué sucede con trp cuando escasea el triptófano?',o:['TrpR bloquea el operador','Aumenta la expresión de genes de síntesis de Trp','La atenuación siempre termina la transcripción','Se degrada el operón'],c:1,e:'Con poco Trp, el represor no se activa eficazmente y pueden expresarse los genes de biosíntesis.'},
  {q:'¿Qué describe la atenuación bacteriana de trp?',o:['Terminación temprana según la traducción del péptido líder','Un mecanismo exclusivo de eucariotas','Unión de lactosa a CAP','Replicación del operador'],c:0,e:'Con Trp abundante se favorece la horquilla terminadora 3–4; con Trp escaso, el ribosoma se detiene en codones de Trp y se favorece la antiterminadora 2–3.'},
  {q:'¿Cuál es la diferencia central entre lac y trp?',o:['Ambos se activan al abundar su producto','lac es inducible para usar lactosa; trp es represible cuando abunda el producto final','lac solo existe en eucariotas','trp no se regula'],c:1,e:'lac permite aprovechar un sustrato; trp frena la síntesis cuando ya hay suficiente producto.'},
- {q:'¿Qué función cumple el operador?',o:['Secuencia reguladora donde puede unirse el represor','Codifica una enzima','Es el aminoácido triptófano','Es donde se traduce el ARN'],c:0,e:'El operador es ADN regulador: la unión del represor puede impedir o dificultar la transcripción.'},\n {q:'¿Qué ocurre con la síntesis de ferritina cuando escasea el hierro?',o:['IRP se une al IRE 5′ del ARNm y dificulta la traducción','IRP bloquea el operador del ADN','La traducción aumenta al máximo','El IRE se convierte en proteína'],c:0,e:'Con poco hierro, IRP se une al IRE de la región 5′ no traducida del ARNm de ferritina y reprime la traducción.'}
+ {q:'¿Qué función cumple el operador?',o:['Secuencia reguladora donde puede unirse el represor','Codifica una enzima','Es el aminoácido triptófano','Es donde se traduce el ARN'],c:0,e:'El operador es ADN regulador: la unión del represor puede impedir o dificultar la transcripción.'},
+ {q:'¿Qué ocurre con la síntesis de ferritina cuando escasea el hierro?',o:['IRP se une al IRE 5′ del ARNm y dificulta la traducción','IRP bloquea el operador del ADN','La traducción aumenta al máximo','El IRE se convierte en proteína'],c:0,e:'Con poco hierro, IRP se une al IRE de la región 5′ no traducida del ARNm de ferritina y reprime la traducción.'}
 ];
 
 export function abrirOperones({app, volver}) {
@@ -95,9 +96,11 @@ export function abrirOperones({app, volver}) {
   app.querySelectorAll('[data-lactosa]').forEach(b=>b.onclick=()=>{Sonido.clic();lactosa=b.dataset.lactosa==='1';render();});
   app.querySelectorAll('[data-glucosa]').forEach(b=>b.onclick=()=>{Sonido.clic();glucosa=b.dataset.glucosa==='1';render();});
   app.querySelectorAll('[data-trp]').forEach(b=>b.onclick=()=>{Sonido.clic();trp=b.dataset.trp==='1';render();});
-  app.querySelectorAll('[data-atten]').forEach(b=>b.onclick=()=>{Sonido.clic();atenuacion=b.dataset.atten==='1';render();});\n  app.querySelectorAll('[data-hierro]').forEach(b=>b.onclick=()=>{Sonido.clic();hierro=b.dataset.hierro==='1';render();});
+  app.querySelectorAll('[data-atten]').forEach(b=>b.onclick=()=>{Sonido.clic();atenuacion=b.dataset.atten==='1';render();});
+  app.querySelectorAll('[data-hierro]').forEach(b=>b.onclick=()=>{Sonido.clic();hierro=b.dataset.hierro==='1';render();});
   $('#op-golac')?.addEventListener('click',()=>{Sonido.clic();vista='lac';render();});
-  $('#op-gotrp')?.addEventListener('click',()=>{Sonido.clic();vista='trp';render();});\n  $('#op-goferritina')?.addEventListener('click',()=>{Sonido.clic();vista='ferritina';render();});
+  $('#op-gotrp')?.addEventListener('click',()=>{Sonido.clic();vista='trp';render();});
+  $('#op-goferritina')?.addEventListener('click',()=>{Sonido.clic();vista='ferritina';render();});
   app.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>{
    if(respondida)return;Sonido.clic();last=Number(b.dataset.answer);respondida=true;
    if(last===PREGUNTAS[orden[pregunta%orden.length]].c){puntos+=10;racha++;mejor=Math.max(mejor,racha);Sonido.acierto(racha);}else{racha=0;Sonido.error();}
