@@ -1,3 +1,5 @@
+import { abrirOperones } from './operones.js?v=20261026-2';
+
 // Parcialito LAB · Factores de transcripción (basales y específicos)
 // Tablero con 4 pestañas: Vista 3D, Explicación, Comparador y Preguntas.
 // PC: panel de capas a la izquierda + escena grande + tarjetas abajo.
@@ -33,7 +35,7 @@ const CAPA_DESDE_PASO = { adn: 1, esp: 2, basal: 3, pol: 4, arnm: 5 };
 const CAPAS = [['adn', 'ADN', COLOR.adn], ['pol', 'ARN polimerasa II', COLOR.pol], ['basal', 'Factores basales', COLOR.basal], ['esp', 'Factores específicos', COLOR.esp], ['arnm', 'ARNm', COLOR.arnm]];
 const CAPAS_INICIO = { adn: true, pol: true, basal: true, esp: true, arnm: false };
 
-const TABS = [['vista', 'Vista 3D', '🧬'], ['explicacion', 'Explicación', '📖'], ['comparador', 'Comparador', '⚖️'], ['preguntas', 'Preguntas', '❓']];
+const TABS = [['vista', 'Vista 3D', '🧬'], ['explicacion', 'Explicación', '📖'], ['operones', 'Operones', '🧫'], ['comparador', 'Comparador', '⚖️'], ['preguntas', 'Preguntas', '❓']];
 
 // Preguntas de la pestaña Preguntas.
 const PREGUNTAS = [
@@ -252,7 +254,7 @@ export function abrirLab({ app, volver }) {
   <main class="lab2" id="lab2">
     <header class="lab-cab">
       <button class="lab-volver" id="lab-volver" aria-label="Volver al inicio">←<span> Inicio</span></button>
-      <div class="lab-tit">${iconoADN}<div><p class="lab-marca">Parcialito <b>LAB</b></p><h1>Factores de transcripción</h1><h2>Basales y específicos</h2></div></div>
+      <div class="lab-tit">${iconoADN}<div><p class="lab-marca">Parcialito <b>LAB</b></p><h1>Laboratorio de expresión génica</h1><h2>Transcripción y regulación molecular</h2></div></div>
       <nav class="lab-tabs" role="tablist" aria-label="Secciones del laboratorio">${TABS.map(([id, n, ic], i) => `<button class="lab-tab${i ? '' : ' act'}" role="tab" id="tab-${id}" aria-selected="${i ? 'false' : 'true'}" aria-controls="sec-${id}" data-tab="${id}"><span class="ic" aria-hidden="true">${ic}</span><span>${n}</span></button>`).join('')}</nav>
     </header>
 
@@ -290,6 +292,7 @@ export function abrirLab({ app, volver }) {
     </section>
 
     <section class="lab-sec" id="sec-explicacion" role="tabpanel" aria-labelledby="tab-explicacion" hidden>${htmlExplicacion()}</section>
+    <section class="lab-sec" id="sec-operones" role="tabpanel" aria-labelledby="tab-operones" hidden><div id="lab-operones-mount"></div></section>
     <section class="lab-sec" id="sec-comparador" role="tabpanel" aria-labelledby="tab-comparador" hidden>${htmlComparador()}</section>
     <section class="lab-sec" id="sec-preguntas" role="tabpanel" aria-labelledby="tab-preguntas" hidden><div id="lab-quiz" class="lab-quiz"></div></section>
   </main>`;
@@ -392,10 +395,15 @@ export function abrirLab({ app, volver }) {
   chico.addEventListener('change', alCambiar);
 
   // ----- Pestañas -----
+  let operonesMontado = false;
   function irATab(id) {
-    $$('.lab-tab').forEach((b) => { const on = b.dataset.tab === id; b.classList.toggle('act', on); b.setAttribute('aria-selected', on); });
+    $('.lab-tab').forEach((b) => { const on = b.dataset.tab === id; b.classList.toggle('act', on); b.setAttribute('aria-selected', on); });
     TABS.forEach(([t]) => { $('#sec-' + t).hidden = t !== id; });
     if (id === 'preguntas' && !$('#lab-quiz').childElementCount) reiniciarQuiz();
+    if (id === 'operones' && !operonesMontado) {
+      operonesMontado = true;
+      abrirOperones({ app: $('#lab-operones-mount'), volver: () => irATab('vista') });
+    }
     window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
   }
   $$('[data-tab]').forEach((b) => b.addEventListener('click', () => irATab(b.dataset.tab)));
@@ -576,6 +584,32 @@ function inyectarEstilos() {
   .lab-tr{grid-template-columns:1fr}.lab-th{display:none}.lab-rotulo{background:#0b1c4a;padding:9px 14px}.lab-tr p{padding:10px 14px;border-top:1px solid #16306f}.lab-tr p::before{content:attr(data-l);display:block;font-size:.7rem;letter-spacing:.05em;font-weight:700;color:var(--c);margin-bottom:2px}
   .lab-quiz{margin-top:12px;padding:16px;border-radius:18px}.lab-quiz h2{font-size:1.1rem}.lab-quiz-ops button{padding:12px}
 }
+
+/* Integración del módulo lac/trp/ferritina dentro del laboratorio nuevo */
+.lab2 .op-wrap{max-width:1100px;padding:10px 0 24px;min-height:0;background:transparent;box-shadow:none;clip-path:none;color:var(--tx)}
+.lab2 .op-head,.lab2 .op-card{border-color:var(--ln);background:rgba(8,18,48,.78)}
+.lab2 .op-head{background:linear-gradient(135deg,rgba(47,123,255,.18),rgba(8,18,48,.92))}
+.lab2 .op-kicker{color:#72a8ff}
+.lab2 .op-muted,.lab2 .op-list{color:#b9c9f2}
+.lab2 .op-tab,.lab2 .op-choice button,.lab2 .op-answer{border-color:#234488;background:#0a1534;color:#eaf1ff}
+.lab2 .op-tab[aria-pressed=true],.lab2 .op-primary{background:linear-gradient(180deg,#3b82ff,#2a63e6);color:#fff}
+.lab2 .op-choice button[aria-pressed=true]{border-color:#4a8dff;background:#12306e;box-shadow:inset 0 0 0 1px #4a8dff}
+.lab2 .op-diagram,.lab2 .op-score div{background:#040a1c;border-color:#234488}
+.lab2 .op-gene{background:rgba(47,123,255,.14);border-color:#3d8bff}
+.lab2 .op-prom{border-color:#ffc23d;background:rgba(255,194,61,.12)}
+.lab2 .op-oper{border-color:#ff7aa8;background:rgba(255,122,168,.12)}
+.lab2 .op-struct{border-color:#1fd6a5;background:rgba(31,214,165,.1)}
+.lab2 .op-status{border-color:rgba(31,214,165,.45);background:rgba(31,214,165,.08)}
+.lab2 .op-status.warn{border-color:rgba(255,194,61,.5);background:rgba(255,194,61,.08)}
+.lab2 .op-pill{background:rgba(47,123,255,.18)}
+.lab2 .op-feedback{border-color:#234488;background:#0a1534}
+.lab2 .op-answer.good{border-color:#1fd6a5;background:#0b3a35}
+.lab2 .op-answer.bad{border-color:#ff5d7a;background:#40142a}
+.lab2 .op-score b{color:#72a8ff}
+.lab2 .op-hairpins span.active{border-color:#ffc23d;background:rgba(255,194,61,.12)}
+.lab2 .op-genes{gap:.3rem}
+@media(max-width:760px){.lab2 .op-wrap{padding:4px 0 18px}.lab2 .op-tabs{position:static;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;border-radius:16px;border-width:1px;padding:5px;background:#081433;box-shadow:none}.lab2 .op-tab{font-size:.72rem;flex-direction:row;justify-content:center}.lab2 .op-card{padding:.85rem}.lab2 .op-genes{grid-template-columns:repeat(5,minmax(0,1fr))}.lab2 .op-gene{font-size:.62rem}}
+
 @media(prefers-reduced-motion:reduce){.lab2 *{animation:none!important;transition:none!important}}
 `;
 }
