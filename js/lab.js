@@ -244,6 +244,72 @@ function htmlComparador() {
 }
 
 // ---------- Función principal ----------
+/* ---------- Catálogo principal del LAB ---------- */
+export function abrirLab({ app, volver }) {
+  const temas = [
+    {id:'factores', icon:'🧬', grupo:'GENÉTICA MOLECULAR', titulo:'ADN y factores de transcripción', desc:'Explorá la doble hélice, los factores basales y específicos, la ARN polimerasa II y el inicio de la transcripción.', activo:true, tono:'azul'},
+    {id:'operones', icon:'🧫', grupo:'REGULACIÓN GÉNICA', titulo:'Operones lac y trp + ferritina', desc:'Experimentá con lactosa, glucosa, triptófano, atenuación y regulación según la disponibilidad de hierro.', activo:true, tono:'verde'},
+    {id:'comunicacion', icon:'📡', grupo:'SEÑALIZACIÓN', titulo:'Comunicación celular', desc:'Espacio preparado para receptores, segundos mensajeros y vías de transducción.', tono:'violeta'},
+    {id:'neuro', icon:'⚡', grupo:'NEUROBIOLOGÍA', titulo:'Impulso nervioso y sinapsis', desc:'Espacio preparado para potencial de acción, canales iónicos y transmisión sináptica.', tono:'ambar'},
+    {id:'celula', icon:'🔬', grupo:'BIOLOGÍA CELULAR', titulo:'La célula por dentro', desc:'Un lugar para futuros modelos de organelas, membranas y transporte celular.', tono:'rosa'},
+    {id:'nuevo', icon:'＋', grupo:'NUEVO LABORATORIO', titulo:'Próximo laboratorio', desc:'Sección libre para sumar otro proceso o tema cuando quieras ampliar el catálogo.', tono:'gris'}
+  ];
+  inyectarEstilos();
+  inyectarEstilosCatalogo();
+  function tarjeta(t) {
+    return `<button type="button" class="lab-cat-card tono-${t.tono}" data-lab-card="${t.id}">
+      <span class="lab-cat-cardtop"><span class="lab-cat-icon">${t.icon}</span><span class="lab-cat-status ${t.activo?'status-on':''}"><i></i>${t.activo?'INTERACTIVO':'ESPACIO DISPONIBLE'}</span></span>
+      <span class="lab-cat-grupo">${t.grupo}</span><strong>${t.titulo}</strong><span class="lab-cat-desc">${t.desc}</span>
+      <span class="lab-cat-accion">${t.activo?'Entrar al laboratorio':'Abrir espacio'} <b aria-hidden="true">↗</b></span>
+    </button>`;
+  }
+  function mostrarCatalogo() {
+    app.innerHTML = `<main class="lab-catalogo">
+      <header class="lab-cat-cab"><button type="button" class="lab-cat-volver" data-cat-inicio>← <span>Volver a Parcialito</span></button>
+        <div class="lab-cat-marca">PARCIALITO <b>LAB</b></div><p class="lab-cat-eyebrow">BIOLOGÍA CELULAR Y MOLECULAR</p>
+        <h1>Laboratorio</h1><p class="lab-cat-intro">Elegí qué proceso querés explorar. Cada tema tiene su propio espacio para modelos, explicaciones y actividades interactivas.</p>
+      </header>
+      <section class="lab-cat-section"><div class="lab-cat-sectionhead"><div><span class="lab-cat-kicker">EXPLORAR</span><h2>Laboratorios disponibles</h2></div><span class="lab-cat-count">02 activos</span></div><div class="lab-cat-grid">${temas.slice(0,2).map(tarjeta).join('')}</div></section>
+      <section class="lab-cat-section lab-cat-futuros"><div class="lab-cat-sectionhead"><div><span class="lab-cat-kicker">EN CONSTRUCCIÓN</span><h2>Más laboratorios</h2><p>Espacios reservados para incorporar nuevos temas sin mezclar los contenidos.</p></div><span class="lab-cat-count">${temas.length-2} espacios</span></div><div class="lab-cat-grid">${temas.slice(2).map(tarjeta).join('')}</div></section>
+      <footer class="lab-cat-pie">Un tema por laboratorio · Contenidos ampliables de forma independiente</footer></main>`;
+    app.querySelector('[data-cat-inicio]').addEventListener('click', volver);
+    app.querySelectorAll('[data-lab-card]').forEach(b=>b.addEventListener('click',()=>{
+      const t=temas.find(x=>x.id===b.dataset.labCard);
+      if(t.id==='factores') abrirFactores({app,volver:mostrarCatalogo});
+      else if(t.id==='operones') abrirOperones({app,volver:mostrarCatalogo});
+      else mostrarEspacio(t);
+    }));
+  }
+  function mostrarEspacio(t) {
+    app.innerHTML = `<main class="lab-catalogo"><header class="lab-cat-cab"><button type="button" class="lab-cat-volver" data-cat-back>← <span>Todos los laboratorios</span></button><div class="lab-cat-marca">PARCIALITO <b>LAB</b></div></header>
+      <section class="lab-cat-vacio"><span class="lab-cat-icon">${t.icon}</span><p class="lab-cat-eyebrow">${t.grupo}</p><h1>${t.titulo}</h1><p>Este espacio ya está reservado en el catálogo. Todavía no tiene un modelo interactivo, pero se puede completar después sin modificar los demás laboratorios.</p>
+      <div class="lab-cat-vacio-nota"><span>＋</span><div><strong>Espacio listo para ampliar</strong><p>Acá se podrán agregar el modelo, los controles, las explicaciones y las preguntas del tema.</p></div></div><button type="button" class="lab-cat-primary" data-cat-back>Volver al catálogo</button></section></main>`;
+    app.querySelectorAll('[data-cat-back]').forEach(b=>b.addEventListener('click',mostrarCatalogo));
+  }
+  mostrarCatalogo();
+}
+
+function inyectarEstilosCatalogo() {
+  if(document.getElementById('lab-catalogo-css')) return;
+  const st=document.createElement('style'); st.id='lab-catalogo-css';
+  st.textContent=`
+  .lab-catalogo{--ct:#eaf1ff;box-sizing:border-box;max-width:1260px;min-height:100dvh;margin:0 auto;padding:clamp(18px,4vw,42px);color:var(--ct);font-family:var(--fuente,Inter,system-ui,sans-serif);background:radial-gradient(55rem 25rem at 12% -7rem,#14327d 0,transparent 65%),radial-gradient(40rem 25rem at 100% 35%,#1a0f4d55 0,transparent 70%),#040a1c;box-shadow:0 0 0 100vmax #040a1c;clip-path:inset(0 -100vmax)}
+  .lab-cat-cab{padding-bottom:28px;border-bottom:1px solid #1c3d8f}.lab-cat-volver{display:inline-flex;gap:8px;align-items:center;padding:9px 13px;border:1px solid #1c3d8f;border-radius:11px;background:#0a1738;color:#9fb3e6;cursor:pointer;font:600 .85rem inherit}.lab-cat-volver:hover{border-color:#3d8bff;color:white}
+  .lab-cat-marca{margin-top:26px;color:#a8c7ff;font-size:.78rem;font-weight:800;letter-spacing:.16em}.lab-cat-marca b{margin-left:5px;padding:4px 7px;border-radius:6px;background:#2f7bff;color:white}
+  .lab-cat-eyebrow,.lab-cat-kicker{margin:22px 0 7px;color:#72a8ff;font-size:.72rem;font-weight:800;letter-spacing:.15em}.lab-cat-cab h1,.lab-cat-vacio h1{margin:0;font-size:clamp(2.2rem,5vw,3.7rem);line-height:1.06;letter-spacing:-.045em}.lab-cat-intro{max-width:720px;margin:15px 0 0;color:#b9c9f2;font-size:1.02rem;line-height:1.7}
+  .lab-cat-section{padding-top:30px}.lab-cat-sectionhead{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:16px}.lab-cat-sectionhead h2{margin:4px 0 0;font-size:clamp(1.25rem,2.4vw,1.7rem)}.lab-cat-sectionhead p{margin:8px 0 0;color:#9fb3e6;line-height:1.55}.lab-cat-kicker{margin:0}.lab-cat-count{white-space:nowrap;padding:6px 10px;border:1px solid #234488;border-radius:999px;color:#9fb3e6;font-size:.76rem}
+  .lab-cat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.lab-cat-card{min-width:0;display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:clamp(17px,2.6vw,25px);border:1px solid #23406f;border-radius:19px;background:linear-gradient(145deg,#0d1f48f5,#060e22f5);color:#eaf1ff;font:inherit;cursor:pointer;transition:transform .18s,border-color .18s}.lab-cat-card:hover{transform:translateY(-3px);border-color:#3d8bff}.lab-cat-card:focus-visible,.lab-cat-volver:focus-visible,.lab-cat-primary:focus-visible{outline:2px solid #83b5ff;outline-offset:3px}
+  .lab-cat-cardtop{display:flex;width:100%;align-items:center;justify-content:space-between;gap:8px;margin-bottom:22px}.lab-cat-icon{display:grid;place-items:center;width:49px;height:49px;flex:0 0 49px;border:1px solid #31549a;border-radius:14px;background:#102653;font-size:1.55rem}.lab-cat-status{display:inline-flex;align-items:center;gap:7px;padding:5px 8px;border:1px solid #34415e;border-radius:999px;color:#aab7d2;font-size:.62rem;font-weight:800;letter-spacing:.04em}.lab-cat-status i{width:6px;height:6px;border-radius:50%;background:#8793aa}.lab-cat-status.status-on{border-color:#1e6a60;background:#0b302e;color:#79e8c7}.lab-cat-status.status-on i{background:#1fd6a5}
+  .lab-cat-grupo{margin-bottom:8px;color:#72a8ff;font-size:.67rem;font-weight:800;letter-spacing:.13em}.lab-cat-card strong{font-size:clamp(1.05rem,2vw,1.35rem);line-height:1.3}.lab-cat-desc{flex:1;margin-top:10px;color:#b9c9f2;font-size:.9rem;line-height:1.65}.lab-cat-accion{display:flex;justify-content:space-between;gap:12px;width:100%;margin-top:24px;padding-top:14px;border-top:1px solid #1c3159;color:#9fc0ff;font-size:.84rem;font-weight:750}.lab-cat-accion b{font-size:1.15rem}
+  .tono-verde .lab-cat-icon{border-color:#236e63;background:#0b302e}.tono-verde .lab-cat-grupo{color:#64e4bd}.tono-violeta .lab-cat-icon{border-color:#56449b;background:#241b50}.tono-violeta .lab-cat-grupo{color:#b5a2ff}.tono-ambar .lab-cat-icon{border-color:#87602c;background:#382814}.tono-ambar .lab-cat-grupo{color:#ffd18a}.tono-rosa .lab-cat-icon{border-color:#814367;background:#381b34}.tono-rosa .lab-cat-grupo{color:#ff9bce}.tono-gris{border-style:dashed!important;background:#070f25!important}.tono-gris .lab-cat-icon{border-style:dashed}
+  .lab-cat-futuros{margin-top:12px;padding-bottom:18px;border-top:1px solid #152c5d}.lab-cat-pie{padding-top:17px;border-top:1px solid #152c5d;color:#7287b7;font-size:.78rem}
+  .lab-cat-vacio{max-width:760px;margin:clamp(45px,9vh,100px) auto;text-align:center}.lab-cat-vacio>.lab-cat-icon{margin:0 auto 23px;width:65px;height:65px;font-size:2rem}.lab-cat-vacio h1{font-size:clamp(2rem,5vw,3.3rem)}.lab-cat-vacio>p:not(.lab-cat-eyebrow){max-width:620px;margin:18px auto;color:#b9c9f2;line-height:1.7}.lab-cat-vacio-nota{display:flex;gap:14px;margin:28px auto;padding:18px;text-align:left;border:1px dashed #31518a;border-radius:15px;background:#081433}.lab-cat-vacio-nota>span{display:grid;place-items:center;flex:0 0 34px;height:34px;border-radius:10px;background:#12295b;color:#9fc0ff;font-size:1.4rem}.lab-cat-vacio-nota p{margin:5px 0 0;color:#9fb3e6;font-size:.86rem;line-height:1.5}.lab-cat-primary{padding:11px 17px;border:1px solid #3d8bff;border-radius:11px;background:#235fe0;color:white;font:700 .9rem inherit;cursor:pointer}
+  @media(max-width:680px){.lab-catalogo{padding:17px 14px 28px}.lab-cat-grid{grid-template-columns:1fr;gap:12px}.lab-cat-card{padding:17px;border-radius:16px}.lab-cat-section{padding-top:25px}.lab-cat-sectionhead{align-items:flex-start}.lab-cat-count{font-size:.68rem;padding:5px 8px}.lab-cat-desc{font-size:.87rem}.lab-cat-intro{font-size:.94rem}.lab-cat-vacio{margin:55px auto}.lab-cat-vacio-nota{padding:14px}}
+  @media(prefers-reduced-motion:reduce){.lab-cat-card{transition:none}.lab-cat-card:hover{transform:none}}
+  `;
+  document.head.appendChild(st);
+}
+
 function abrirFactores({ app, volver }) {
   let capas = { ...CAPAS_INICIO }, modo = 'general', paso = 0, pasoActivo = false, pasoAPaso = false, sel = null;
   let chico = window.matchMedia('(max-width: 760px)'), vbActual = null, raf = 0, cerrado = false;
