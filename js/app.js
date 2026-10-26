@@ -18,6 +18,8 @@ import { abrirOperones, TITULO as TITULO_OPERONES } from './operones.js?v=dev';
 import { abrirCromosomas, TITULO as TITULO_CROMOSOMAS } from './cromosomas.js?v=20261026-3';
 import { abrirComunicacion, TITULO as TITULO_COMUNICACION } from './comunicacion.js?v=20261026-2';
 import { abrirProteinaG, TITULO as TITULO_PROTEINA_G } from './proteina-g.js?v=20261026-1';
+import { abrirLacTrp, TITULO as TITULO_LAC_TRP } from './lac-vs-trp.js?v=20261026-1';
+import { abrirComparadorComunicacion, TITULO as TITULO_COMPARADOR_COMUNICACION } from './comparador-comunicacion.js?v=20261026-1';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -32,6 +34,8 @@ const ACTIVIDADES = {
   cromosomas: { titulo: TITULO_CROMOSOMAS, icono: '🧬', abrir: abrirCromosomas },
   comunicacion: { titulo: TITULO_COMUNICACION, icono: '⚡', abrir: abrirComunicacion },
   'proteina-g': { titulo: TITULO_PROTEINA_G, icono: '🧪', abrir: abrirProteinaG },
+  'lac-vs-trp': { titulo: TITULO_LAC_TRP, icono: '🧫', abrir: abrirLacTrp },
+  'comparador-comunicacion': { titulo: TITULO_COMPARADOR_COMUNICACION, icono: '🔁', abrir: abrirComparadorComunicacion },
 };
 
 const LETRAS = ['A', 'B', 'C', 'D'];
@@ -850,6 +854,8 @@ function actividadesDe(m) {
     lista.push({ clave: 'cromosomas', titulo: ACTIVIDADES.cromosomas.titulo, icono: ACTIVIDADES.cromosomas.icono, tema: null });
     lista.push({ clave: 'comunicacion', titulo: ACTIVIDADES.comunicacion.titulo, icono: ACTIVIDADES.comunicacion.icono, tema: null });
     lista.push({ clave: 'proteina-g', titulo: ACTIVIDADES['proteina-g'].titulo, icono: ACTIVIDADES['proteina-g'].icono, tema: null });
+    lista.push({ clave: 'lac-vs-trp', titulo: ACTIVIDADES['lac-vs-trp'].titulo, icono: ACTIVIDADES['lac-vs-trp'].icono, tema: null });
+    lista.push({ clave: 'comparador-comunicacion', titulo: ACTIVIDADES['comparador-comunicacion'].titulo, icono: ACTIVIDADES['comparador-comunicacion'].icono, tema: null });
   }
   return lista;
 }
