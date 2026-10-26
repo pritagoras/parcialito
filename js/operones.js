@@ -17,7 +17,7 @@ const PREGUNTAS = [
 export function abrirOperones({app, volver}) {
  let vista='lac', lactosa=true, glucosa=false, trp=false, atenuacion=true;
  let orden=[], pregunta=0, completadas=0, puntos=0, racha=0, mejor=0, respondida=false, last=-1;
- const estilos = \`
+ const estilos = `
  <style>
  .op-wrap{max-width:720px;margin:auto;padding:1rem 1rem calc(2rem + env(safe-area-inset-bottom));color:var(--crema,#FFF3DC)}
  .op-back{border:0;background:transparent;color:var(--tenue,#B8ABDB);padding:.5rem 0;font-weight:800}
@@ -48,7 +48,7 @@ export function abrirOperones({app, volver}) {
  .op-primary{width:100%;border:0;border-radius:11px;padding:.8rem;margin-top:.5rem;background:var(--violeta,#9B7BFF);color:#170F2E;font-weight:900}
  .op-hairpins{display:grid;grid-template-columns:1fr 1fr;gap:.4rem;margin:.7rem 0}.op-hairpins span{text-align:center;padding:.6rem .2rem;border:1px solid var(--linea,#43347A);border-radius:10px;font-size:.78rem;font-weight:800}.op-hairpins .active{border-color:#FFB938;background:rgba(255,185,56,.12)}
  @media(max-width:480px){.op-wrap{padding-left:.8rem;padding-right:.8rem}.op-tab{font-size:.68rem}.op-genes{gap:.15rem}.op-gene{font-size:.6rem;padding:.5rem .05rem}.op-compare{grid-template-columns:1fr}}
- </style>\`;
+ </style>`;
  app.innerHTML=estilos+'<main class="op-wrap"><button class="op-back" id="op-back">← Volver</button><header class="op-head"><div class="op-kicker">Laboratorio molecular · interactivo</div><h1>Operones lac y trp</h1><p class="op-muted">Modificá las condiciones, observá la regulación y comprobá tus predicciones.</p></header><nav class="op-tabs"><button class="op-tab" data-view="lac">🧪 lac</button><button class="op-tab" data-view="trp">🧬 trp</button><button class="op-tab" data-view="compare">↔ Comparar</button><button class="op-tab" data-view="quiz">🎯 Desafío</button></nav><section id="op-content"></section></main>';
  const $=s=>app.querySelector(s);
  $('#op-back').onclick=()=>{Sonido.clic();volver();};
