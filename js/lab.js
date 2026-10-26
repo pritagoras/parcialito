@@ -51,7 +51,7 @@ const PREGUNTAS = [
 // ---------- Escena SVG ----------
 // Dos composiciones: PC (amplia, con rótulos) y celular (compacta, con pines numerados).
 const DISEÑOS = {
-  pc: { W: 1100, H: 500, y: 260, x0: 52, x1: 1048, amp: 36, per: 150, sw: 11, etq: true, pines: false, enh: 250, esp: { x: 245, y: 175, rx: 76, ry: 60 }, bas: { x: 590, y: 212, rx: 92, ry: 78 }, pol: { x: 785, y: 236, rx: 112, ry: 104 }, pro: [520, 705], tss: 705, arn: [[735, 300], [800, 362], [905, 392], [1012, 382]] },
+  pc: { W: 1200, H: 650, y: 345, x0: 48, x1: 1150, amp: 34, per: 158, sw: 11, etq: true, pines: false, enh: 235, esp: { x: 250, y: 235, rx: 78, ry: 62 }, bas: { x: 655, y: 285, rx: 96, ry: 82 }, pol: { x: 900, y: 300, rx: 112, ry: 100 }, pro: [560, 770], tss: 770, arn: [[800, 395], [850, 475], [990, 500], [1120, 480]] },
   cel: { W: 720, H: 430, y: 235, x0: 30, x1: 692, amp: 25, per: 96, sw: 8, etq: false, pines: true, enh: 118, esp: { x: 120, y: 132, rx: 52, ry: 42 }, bas: { x: 335, y: 190, rx: 58, ry: 50 }, pol: { x: 470, y: 200, rx: 76, ry: 68 }, pro: [275, 400], tss: 400, arn: [[425, 262], [478, 322], [565, 348], [676, 336]] }
 };
 
@@ -140,18 +140,19 @@ function construirEscena(L) {
   // Rótulos (PC) o pines numerados (celular).
   let anot = '';
   if (L.etq) {
-    anot += rotulo(130, 34, 185, 52, COLOR.esp, 'Factor específico', '(activador)', 'especifico', 'esp');
-    anot += `<line class="lab-etq" data-capa="esp" x1="215" y1="86" x2="240" y2="118" stroke="${COLOR.esp}" stroke-width="1.6"/>`;
-    anot += rotulo(440, 26, 330, 58, COLOR.basal, 'Factores basales', '(TFIID, TFIIB, TFIIF, TFIIE, TFIIH)', 'basal', 'basal');
-    anot += `<line class="lab-etq" data-capa="basal" x1="560" y1="84" x2="580" y2="150" stroke="${COLOR.basal}" stroke-width="1.6"/>`;
-    anot += rotulo(840, 40, 190, 42, COLOR.pol, 'ARN polimerasa II', '', 'polimerasa', 'pol');
-    anot += `<line class="lab-etq" data-capa="pol" x1="915" y1="82" x2="880" y2="140" stroke="${COLOR.pol}" stroke-width="1.6"/>`;
-    anot += `<g class="lab-etq" data-part="enhancer" data-capa="adn"><line x1="${enh}" y1="${y + 40}" x2="${enh - 20}" y2="372" stroke="#e8f0ff" stroke-width="1.6"/>${texto(enh - 40, 395, 'Elemento de respuesta', { size: 15 })}${texto(enh - 40, 414, 'a activadores (enhancer)', { size: 15, w: 700 })}${texto(enh - 40, 433, '(puede estar a distancia)', { size: 13, fill: '#a9bde8' })}</g>`;
-    anot += `<g class="lab-etq" data-part="promotor" data-capa="adn"><path d="M${p0 + 4} 310 v10 H${tss - 24} v-10" fill="none" stroke="#5aa2ff" stroke-width="2"/>${texto((p0 + tss - 24) / 2 + 2, 346, 'Región promotora', { size: 15, w: 700 })}${texto((p0 + tss - 24) / 2 + 2, 365, '(caja TATA, Inr, DPE, etc.)', { size: 13, fill: '#a9bde8' })}</g>`;
-    anot += `<g class="lab-etq" data-capa="adn"><line x1="${tss}" y1="${y + 26}" x2="${tss}" y2="398" stroke="#9fc4ff" stroke-width="1.8" marker-end="url(#lbFlecha)"/>${texto(tss - 30, 420, 'Sitio de inicio', { size: 15 })}${texto(tss - 30, 439, 'de la transcripción', { size: 15 })}${texto(tss - 30, 458, '(+1)', { size: 15 })}</g>`;
-    anot += `<g class="lab-etq" data-part="arn" data-capa="arnm"><line x1="975" y1="410" x2="975" y2="385" stroke="${COLOR.arnm}" stroke-width="1.6"/><rect x="885" y="410" width="180" height="38" rx="12" fill="rgba(4,10,30,.82)" stroke="${COLOR.arnm}" stroke-width="2"/>${texto(975, 435, 'ARNm (en síntesis)', { fill: '#ffc2d8', size: 16, w: 600 })}</g>`;
+    anot += rotulo(70, 34, 230, 52, COLOR.esp, 'Factor específico', '(activador / represor)', 'especifico', 'esp');
+    anot += \`<path class="lab-leader" data-capa="esp" d="M185 86 L\${esp.x - 8} \${esp.y - esp.ry + 6}" stroke="\${COLOR.esp}" />\`;
+    anot += rotulo(420, 28, 350, 58, COLOR.basal, 'Factores basales', '(TFIID · TFIIB · TFIIF · TFIIE · TFIIH)', 'basal', 'basal');
+    anot += \`<path class="lab-leader" data-capa="basal" d="M595 86 L\${bas.x - 8} \${bas.y - bas.ry + 7}" stroke="\${COLOR.basal}" />\`;
+    anot += rotulo(875, 40, 255, 48, COLOR.pol, 'ARN polimerasa II', '(enzima)', 'polimerasa', 'pol');
+    anot += \`<path class="lab-leader" data-capa="pol" d="M1000 88 L\${pol.x + 12} \${pol.y - pol.ry + 10}" stroke="\${COLOR.pol}" />\`;
+    anot += \`<g class="lab-etq" data-part="enhancer" data-capa="adn"><path class="lab-leader" d="M\${enh} \${y + 40} L\${enh - 12} 470" stroke="#d9e6ff"/><rect x="55" y="475" width="285" height="58" rx="12" fill="#07132e" stroke="#6b5b1c" stroke-width="1.5"/>\${texto(72, 498, 'ENHANCER · ADN REGULADOR', { size: 14, w: 800, fill: '#ffdb70', a: 'start' })}\${texto(72, 518, 'Puede estar lejos del promotor', { size: 13, fill: '#b9c9ed', a: 'start' })}</g>\`;
+    const bx0 = p0, bx1 = tss - 18, by = y + 58;
+    anot += \`<g class="lab-etq" data-part="promotor" data-capa="adn"><path d="M\${bx0} \${by} v12 H\${bx1} v-12" fill="none" stroke="#7bb6ff" stroke-width="2.4"/><rect x="\${(bx0 + bx1) / 2 - 118}" y="\${by + 18}" width="236" height="53" rx="12" fill="#07132e" stroke="#2d6fce" stroke-width="1.5"/>\${texto((bx0 + bx1) / 2, by + 39, 'PROMOTOR', { size: 14, w: 800, fill: '#a9ceff' })}\${texto((bx0 + bx1) / 2, by + 58, 'Zona de ensamblaje basal', { size: 12, fill: '#b9c9ed' })}</g>\`;
+    anot += \`<g class="lab-etq" data-part="promotor" data-capa="adn"><path class="lab-leader" d="M\${tss} \${y + 22} V\${y + 122}" stroke="#9fc4ff"/><rect x="\${tss - 66}" y="\${y + 126}" width="132" height="54" rx="12" fill="#07132e" stroke="#365caa" stroke-width="1.5"/>\${texto(tss, y + 148, 'INICIO +1', { size: 14, w: 800, fill: '#c7dcff' })}\${texto(tss, y + 168, 'de transcripción', { size: 12, fill: '#b9c9ed' })}</g>\`;
+    anot += \`<g class="lab-etq" data-part="arn" data-capa="arnm"><path class="lab-leader" d="M990 500 L1025 535" stroke="\${COLOR.arnm}"/><rect x="930" y="540" width="220" height="42" rx="12" fill="#07132e" stroke="\${COLOR.arnm}" stroke-width="1.8"/>\${texto(1040, 566, 'ARN naciente · 5′→3′', { fill: '#ffc2d8', size: 14, w: 700 })}</g>\`;
     anot += texto(26, y - 24, '5′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' }) + texto(26, y + 44, '3′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' });
-    anot += texto(1074, y - 30, '3′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' }) + texto(1074, y + 36, '5′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' });
+    anot += texto(1174, y - 30, '3′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' }) + texto(1174, y + 36, '5′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' });
   } else {
     anot += texto(8, y - 20, '5′', { size: 14, a: 'start', fill: '#cfe0ff' }) + texto(8, y + 36, '3′', { size: 14, a: 'start', fill: '#cfe0ff' });
     anot += texto(712, y - 24, '3′', { size: 14, a: 'end', fill: '#cfe0ff' }) + texto(712, y + 32, '5′', { size: 14, a: 'end', fill: '#cfe0ff' });
@@ -179,6 +180,19 @@ const iconoADN = `<svg viewBox="0 0 48 48" width="44" height="44" aria-hidden="t
 
 function htmlCapas() {
   return CAPAS.map(([id, nombre, c]) => `<label class="lab-capa-op" style="--c:${c}"><input type="checkbox" data-capa-chk="${id}"${CAPAS_INICIO[id] ? ' checked' : ''}><i class="lab-punto"></i><span>${nombre}</span><b class="lab-sw" aria-hidden="true"></b></label>`).join('');
+}
+
+function htmlExplorer() {
+  const grupos = [
+    { titulo: 'ADN y regiones reguladoras', ids: ['adn', 'enhancer', 'promotor'], color: '#68a9ff' },
+    { titulo: 'Proteínas reguladoras y maquinaria', ids: ['especifico', 'basal', 'polimerasa'], color: '#48d8b2' },
+    { titulo: 'Producto', ids: ['arn'], color: '#ff79aa' }
+  ];
+  return \`<section class="lab-explorer" aria-label="Explorador interactivo de componentes">
+    <div class="lab-explorer-head"><div><span class="lab-kicker">EXPLORADOR DEL MODELO</span><h3>Seleccioná un componente</h3></div><p>Elegí una pieza para resaltarla en el esquema y consultar su función.</p></div>
+    <div class="lab-explorer-groups">\${grupos.map(g => \`<div class="lab-explorer-group" style="--group:\${g.color}"><h4>\${g.titulo}</h4><div class="lab-explorer-items">\${g.ids.map(id => { const p = PIEZAS[id]; return \`<button type="button" class="lab-explorer-item" data-part="\${id}" style="--part:\${p.color}"><i></i><span>\${p.nombre}</span><b>↗</b></button>\`; }).join('')}</div></div>\`).join('')}</div>
+    <div class="lab-explorer-hint"><span>01</span> ADN y secuencias <i></i><span>02</span> Unión de proteínas <i></i><span>03</span> Inicio de transcripción</div>
+  </section>\`;
 }
 
 function htmlTarjetas() {
@@ -340,6 +354,7 @@ function abrirFactores({ app, volver }) {
         <div class="lab-escenario">
           <div class="lab-escena" id="lab-escena"></div>
           <div class="lab-leyenda-cel" id="lab-leyenda-cel"></div>
+          <div id="lab-explorer-mount">${htmlExplorer()}</div>
           <article class="lab-detalle" id="lab-detalle" aria-live="polite"><span class="lab-det-tipo" id="lab-det-tipo"></span><h3 id="lab-det-nombre"></h3><p id="lab-det-texto"></p><div class="lab-det-dato" id="lab-det-dato"></div></article>
         </div>
       </div>
@@ -404,7 +419,7 @@ function abrirFactores({ app, volver }) {
       el.classList.toggle('en-foco', enFoco(el.dataset.part));
       el.classList.toggle('sel', el.dataset.part === sel);
     });
-    $$('.lab-elem').forEach((el) => el.classList.toggle('sel', el.dataset.part === sel));
+    $$('.lab-elem, .lab-explorer-item').forEach((el) => { const active = el.dataset.part === sel; el.classList.toggle('sel', active); if (el.classList.contains('lab-explorer-item')) el.setAttribute('aria-pressed', String(active)); });
     $$('[data-modo]').forEach((b) => { b.classList.toggle('act', b.dataset.modo === modo); b.setAttribute('aria-checked', b.dataset.modo === modo); });
     $('#lab-pag').textContent = `${paso + 1} / ${PASOS.length}`;
     $('#lab-prev').disabled = paso === 0; $('#lab-next').disabled = paso === PASOS.length - 1;
@@ -437,7 +452,7 @@ function abrirFactores({ app, volver }) {
     seleccionar(el.dataset.part);
     if (el.classList.contains('lab-elem') || el.closest('#lab-leyenda-cel')) $('#lab-detalle').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'nearest' });
   };
-  ['#lab-escena', '#lab-leyenda-cel', '#lab-tarjetas'].forEach((s) => { $(s).addEventListener('click', elegirPieza); $(s).addEventListener('keydown', elegirPieza); });
+  ['#lab-escena', '#lab-leyenda-cel', '#lab-tarjetas', '#lab-explorer-mount'].forEach((s) => { $(s).addEventListener('click', elegirPieza); $(s).addEventListener('keydown', elegirPieza); });
 
   $$('[data-capa-chk]').forEach((i) => i.addEventListener('change', () => { capas[i.dataset.capaChk] = i.checked; aplicar(true); }));
   $$('[data-modo]').forEach((b) => b.addEventListener('click', () => { modo = b.dataset.modo; aplicar(); }));
@@ -808,6 +823,41 @@ function inyectarEstilos() {
  .lab2 .lab-elem span{padding-left:27px}
  .lab2 .lab-real-view pdbe-molstar{height:420px!important;touch-action:pan-y}
 }
+
+/* Explorador interactivo y composición editorial del modelo 2D */
+.lab2 .lab-vista{grid-template-columns:228px minmax(0,1fr);gap:18px}
+.lab2 .lab-escena{border:1px solid #1b3978;border-radius:20px;background:radial-gradient(ellipse at 51% 43%,rgba(28,68,145,.27),rgba(4,10,28,.12) 66%);box-shadow:inset 0 1px #ffffff0a,0 14px 32px #0003}
+.lab2 .lab-svg{width:100%;max-height:none}
+.lab2 .lab-svg .lab-leader{fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;opacity:.92}
+.lab2 .lab-svg .lab-etq rect{filter:drop-shadow(0 5px 12px #0004)}
+.lab2 .lab-svg .lab-etq[data-part],.lab2 .lab-svg .lab-etq[data-capa]{cursor:pointer}
+.lab2 .lab-explorer{margin-top:14px;padding:16px;border:1px solid #203d7c;border-radius:18px;background:linear-gradient(145deg,rgba(8,20,48,.98),rgba(5,13,32,.98));box-shadow:0 10px 26px #0002}
+.lab2 .lab-explorer-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:14px}
+.lab2 .lab-kicker{display:block;margin-bottom:5px;color:#85aaff;font-size:.65rem;font-weight:800;letter-spacing:.16em}
+.lab2 .lab-explorer-head h3{font-size:1.05rem;color:#eef4ff;letter-spacing:-.02em}
+.lab2 .lab-explorer-head p{max-width:320px;color:#9fb3df;font-size:.78rem;line-height:1.45}
+.lab2 .lab-explorer-groups{display:grid;grid-template-columns:1.05fr 1.2fr .72fr;gap:10px}
+.lab2 .lab-explorer-group{min-width:0;padding:11px;border-radius:13px;background:rgba(4,12,31,.65);border:1px solid #1a3264;border-top:2px solid var(--group)}
+.lab2 .lab-explorer-group h4{min-height:30px;margin:0 0 8px;color:#c7d6f6;font-size:.73rem;line-height:1.4;font-weight:700}
+.lab2 .lab-explorer-items{display:grid;gap:6px}
+.lab2 .lab-explorer-item{display:flex;align-items:center;gap:8px;width:100%;min-width:0;padding:8px 9px;border:1px solid transparent;border-radius:9px;background:#0b1938;color:#dbe6ff;text-align:left;font-size:.75rem;line-height:1.35;transition:background .18s,border-color .18s,transform .18s}
+.lab2 .lab-explorer-item i{flex:0 0 9px;width:9px;height:9px;border-radius:50%;background:var(--part);box-shadow:0 0 10px color-mix(in srgb,var(--part) 40%,transparent)}
+.lab2 .lab-explorer-item span{flex:1;min-width:0}
+.lab2 .lab-explorer-item b{color:#8ea8d8;font-size:.9rem}
+.lab2 .lab-explorer-item:hover{transform:translateY(-1px);background:#122750;border-color:#345ba0}
+.lab2 .lab-explorer-item.sel,.lab2 .lab-explorer-item[aria-pressed=true]{background:color-mix(in srgb,var(--part) 15%,#0a1632);border-color:var(--part);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--part) 18%,transparent)}
+.lab2 .lab-explorer-hint{display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:12px;padding-top:11px;border-top:1px solid #1b3264;color:#9fb3df;font-size:.68rem}
+.lab2 .lab-explorer-hint span{color:#8fb4ff;font-weight:800}
+.lab2 .lab-explorer-hint i{width:20px;height:1px;background:#39588d}
+.lab2 #lab-explorer-mount{min-width:0}
+.lab2 .lab-detalle{margin-top:12px}
+.lab2 .lab-detalle:not(.hay){display:none}
+.lab2 .lab-tarjetas{margin-top:18px;gap:14px}
+.lab2 .lab-tarj{border-radius:17px}
+@media(max-width:1120px){.lab2 .lab-explorer-groups{grid-template-columns:1fr 1fr}.lab2 .lab-explorer-group:last-child{grid-column:1/-1}.lab2 .lab-explorer-group:last-child .lab-explorer-items{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){.lab2 .lab-vista{grid-template-columns:1fr}.lab2 .lab-explorer-groups{grid-template-columns:1fr 1fr}.lab2 .lab-explorer-group:last-child{grid-column:1/-1}}
+@media(max-width:600px){.lab2 .lab-explorer{padding:12px}.lab2 .lab-explorer-head{align-items:start;flex-direction:column;gap:5px}.lab2 .lab-explorer-head p{max-width:none}.lab2 .lab-explorer-groups{grid-template-columns:1fr}.lab2 .lab-explorer-group:last-child{grid-column:auto}.lab2 .lab-explorer-group:last-child .lab-explorer-items{grid-template-columns:1fr}.lab2 .lab-explorer-item{font-size:.8rem;padding:10px}.lab2 .lab-svg{max-height:none}}
+
 @media(prefers-reduced-motion:reduce){.lab2 *{animation:none!important;transition:none!important}}
 
 `;
