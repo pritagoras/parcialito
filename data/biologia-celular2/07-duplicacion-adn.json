@@ -1,9 +1,15 @@
 {
   "materia": "Biología 2",
   "tema": "Duplicación ADN",
-  "actividad": ["replicacion", "cuadro", "horquilla", "bases" , "crucigrama"],
+  "actividad": [
+    "replicacion",
+    "cuadro",
+    "horquilla",
+    "bases",
+    "crucigrama"
+  ],
   "cuadro": {
-    "titulo": "Duplicación, transcripción y traducción",
+    "titulo": "Duplicación del ADN vs. transcripción vs. traducción",
     "columnas": [
       {
         "nombre": "Duplicación del ADN",
@@ -20,83 +26,123 @@
     ],
     "filas": [
       {
+        "aspecto": "Finalidad",
+        "celdas": [
+          "Copiar el genoma antes de la división celular, conservando la información genética.",
+          "Producir ARN a partir de la información de un segmento de ADN.",
+          "Decodificar la secuencia del ARNm para sintetizar un polipéptido."
+        ]
+      },
+      {
         "aspecto": "Molde",
         "celdas": [
-          "Las dos hebras parentales; cada una sirve como molde para una hebra nueva.",
-          "Una hebra de ADN del gen transcripto.",
-          "ARNm, leído por el ribosoma en codones."
+          "Cada hebra parental sirve como molde para sintetizar una hebra complementaria.",
+          "Una hebra de ADN del gen transcripto funciona como molde para cada transcripto.",
+          "El ribosoma lee los codones del ARNm; el ARNm no se copia como una nueva cadena de ácido nucleico."
         ]
       },
       {
         "aspecto": "Producto",
         "celdas": [
-          "Dos moléculas de ADN; cada una contiene una hebra parental y una nueva.",
-          "Una molécula de ARN, por ejemplo ARNm, ARNr o ARNt.",
-          "Una cadena polipeptídica que se alarga para formar una proteína."
-        ]
-      },
-      {
-        "aspecto": "Dirección de lectura",
-        "celdas": [
-          "La ADN polimerasa lee cada molde 3′ → 5′.",
-          "La ARN polimerasa lee el molde de ADN 3′ → 5′.",
-          "El ribosoma recorre el ARNm 5′ → 3′."
-        ]
-      },
-      {
-        "aspecto": "Dirección de síntesis",
-        "celdas": [
-          "ADN nuevo 5′ → 3′.",
-          "ARN nuevo 5′ → 3′.",
-          "La proteína crece desde el extremo amino-terminal hacia el carboxilo-terminal."
+          "Dos moléculas de ADN, cada una con una hebra parental y una hebra recién sintetizada (replicación semiconservativa).",
+          "Una molécula de ARN; según el gen, puede ser ARNm, ARNr, ARNt u otro ARN.",
+          "Una cadena polipeptídica, que puede plegarse y modificarse para formar una proteína funcional."
         ]
       },
       {
         "aspecto": "Maquinaria principal",
         "celdas": [
-          "ADN polimerasas α, ε y δ en la replicación nuclear eucariota; actúan además primasa, helicasa, SSB, topoisomerasa I y ligasa.",
-          "ARN polimerasa. En eucariotas existen ARN polimerasas I, II y III; en bacterias, la ARN polimerasa reconoce el promotor con ayuda del factor sigma.",
-          "Ribosoma; la actividad peptidil-transferasa de la subunidad mayor cataliza la formación del enlace peptídico."
+          "ADN polimerasas, helicasa, primasa, proteínas que estabilizan ADN monocatenario, topoisomerasas y ligasa; el conjunto exacto depende del organismo.",
+          "ARN polimerasa y factores de transcripción o factores de iniciación propios del organismo.",
+          "Ribosoma, ARNt, aminoacil-ARNt sintetasas y factores de iniciación, elongación y terminación."
         ]
       },
       {
         "aspecto": "Sustratos",
         "celdas": [
-          "**dNTPs**: dATP, dGTP, dCTP y dTTP.",
-          "**NTPs**: ATP, GTP, CTP y UTP.",
-          "Aminoácidos unidos a sus **ARNt** (aminoacil-ARNt); ATP participa en la activación y carga de cada aminoácido, y GTP se utiliza en varias etapas del proceso."
+          "Desoxirribonucleótidos trifosfato: dATP, dTTP, dGTP y dCTP.",
+          "Ribonucleótidos trifosfato: ATP, UTP, GTP y CTP.",
+          "Aminoácidos transportados por ARNt cargados; ATP se usa para cargar el ARNt y GTP en varios pasos de la traducción."
         ]
       },
       {
-        "aspecto": "Enlace catalizado",
+        "aspecto": "Dirección de lectura del molde",
         "celdas": [
-          "Enlace fosfodiéster entre nucleótidos de ADN.",
-          "Enlace fosfodiéster entre ribonucleótidos de ARN.",
-          "Enlace peptídico entre aminoácidos."
+          "La ADN polimerasa lee el molde en sentido 3′→5′.",
+          "La ARN polimerasa lee la hebra molde de ADN en sentido 3′→5′.",
+          "No lee una hebra molde de ADN: el ribosoma recorre el ARNm en sentido 5′→3′."
         ]
       },
       {
-        "aspecto": "Fidelidad / corrección",
+        "aspecto": "Dirección de síntesis",
         "celdas": [
-          "La complementariedad y la corrección de pruebas de las polimerasas ε y δ reducen errores.",
-          "La clase no desarrolló en detalle un sistema de corrección de transcripción; el reconocimiento del molde y del promotor determina el inicio correcto.",
-          "El apareamiento codón-anticodón y la unión específica de cada aminoácido a su ARNt contribuyen a la fidelidad. No se desarrolló en detalle una corrección posterior."
+          "La hebra nueva de ADN se sintetiza siempre 5′→3′; por eso una hebra se sintetiza de forma continua y la otra en fragmentos de Okazaki.",
+          "El ARN se sintetiza 5′→3′.",
+          "El polipéptido crece desde el extremo amino (N) hacia el extremo carboxilo (C)."
+        ]
+      },
+      {
+        "aspecto": "Enlace formado",
+        "celdas": [
+          "Enlaces fosfodiéster entre desoxirribonucleótidos.",
+          "Enlaces fosfodiéster entre ribonucleótidos.",
+          "Enlaces peptídicos entre aminoácidos."
         ]
       },
       {
         "aspecto": "Inicio",
         "celdas": [
-          "En el origen de replicación (ori).",
-          "En un promotor reconocido por la ARN polimerasa y los factores necesarios para iniciar la transcripción.",
-          "En el codón de inicio, habitualmente **AUG**, con el ARNt iniciador y el ensamblaje del ribosoma."
+          "En un origen de replicación; las proteínas iniciadoras y la maquinaria de replicación abren y copian el ADN desde allí.",
+          "En un promotor; la ARN polimerasa y los factores necesarios reconocen dónde iniciar la síntesis de ARN.",
+          "En el codón de inicio del ARNm, normalmente AUG, con el ARNt iniciador y el ensamblaje del ribosoma."
         ]
       },
       {
         "aspecto": "Terminación",
         "celdas": [
-          "Cuando todo el ADN está copiado y las horquillas de replicación convergen.",
-          "Cuando la maquinaria alcanza señales de terminación del transcripto correspondiente.",
-          "Cuando el ribosoma encuentra un codón de terminación y actúan los factores de liberación."
+          "Cuando se completa la replicación de las regiones de ADN; las horquillas se encuentran o terminan en regiones definidas según el organismo.",
+          "Cuando actúan las señales y mecanismos de terminación propios del transcripto y del organismo.",
+          "Cuando un codón de terminación (UAA, UAG o UGA) es reconocido por factores de liberación; no codifica un aminoácido."
+        ]
+      },
+      {
+        "aspecto": "Dónde ocurre",
+        "celdas": [
+          "En eucariotas, principalmente en el núcleo; en procariotas, en la región del nucleoide del citoplasma.",
+          "En eucariotas, la transcripción nuclear de genes nucleares ocurre en el núcleo; en procariotas ocurre en el citoplasma y puede acoplarse a la traducción.",
+          "En ribosomas del citosol o asociados al retículo endoplasmático rugoso en eucariotas; en procariotas, en el citoplasma."
+        ]
+      },
+      {
+        "aspecto": "Cebador",
+        "celdas": [
+          "Sí. La ADN polimerasa necesita un extremo 3′-OH; la primasa sintetiza cebadores de ARN que luego se retiran o reemplazan según el sistema.",
+          "No requiere cebador: la ARN polimerasa puede iniciar la síntesis de ARN de novo.",
+          "No utiliza cebador de ácido nucleico; requiere ARNm, ribosoma, ARNt iniciador y factores de iniciación."
+        ]
+      },
+      {
+        "aspecto": "Relación con el ciclo celular",
+        "celdas": [
+          "En células eucariotas, ocurre durante la fase S antes de la división celular.",
+          "Puede ocurrir cuando la célula necesita expresar genes; no se limita a una única fase del ciclo celular.",
+          "Puede ocurrir cuando hay ARNm disponible y condiciones adecuadas; en muchas células sucede de forma continua y regulada."
+        ]
+      },
+      {
+        "aspecto": "Procesamiento posterior",
+        "celdas": [
+          "Se corrigen y reparan errores y se mantienen los extremos cromosómicos en determinados organismos; no se procesa como un ARN.",
+          "En eucariotas, muchos pre-ARNm se procesan (cap 5′, corte y empalme y cola poli-A); el procesamiento varía según el tipo de ARN y el organismo.",
+          "El polipéptido puede plegarse, escindirse o recibir modificaciones postraduccionales; no todos los polipéptidos requieren las mismas modificaciones."
+        ]
+      },
+      {
+        "aspecto": "Fidelidad y corrección",
+        "celdas": [
+          "La complementariedad y la corrección de pruebas de varias ADN polimerasas, junto con reparación del ADN, mantienen una alta fidelidad.",
+          "La selección de nucleótidos y la corrección limitada de la ARN polimerasa contribuyen a la fidelidad, pero los errores de transcripción no se reparan como cambios permanentes del ADN.",
+          "La selección de aminoacil-ARNt, el apareamiento codón-anticodón y controles del ribosoma contribuyen a la fidelidad; no existe una corrección posterior universal del polipéptido."
         ]
       }
     ]
@@ -142,10 +188,10 @@
     {
       "pregunta": "Durante la fase S de la interfase ocurre:",
       "opciones": [
-      "El crecimiento celular y la síntesis de ARN exclusivamente",
-      "La separación celular del citoplasma mediante citocinesis",
-      "La duplicación del ADN y la síntesis de histonas",
-      "La formación del huso mitótico para la división nuclear"
+        "El crecimiento celular y la síntesis de ARN exclusivamente",
+        "La separación celular del citoplasma mediante citocinesis",
+        "La duplicación del ADN y la síntesis de histonas",
+        "La formación del huso mitótico para la división nuclear"
       ],
       "correcta": "C",
       "explicacion": "En la fase S se lleva a cabo la duplicación del ADN celular y la síntesis de histonas asociadas."
@@ -153,10 +199,10 @@
     {
       "pregunta": "La fase G1 del ciclo celular se caracteriza por:",
       "opciones": [
-      "El crecimiento celular y la preparación de materiales para duplicar el ADN",
-      "La condensación del material genético en cromosomas visibles",
-      "La duplicación de la cantidad total de ADN cromosómico",
-      "La salida permanente de la célula hacia la mitosis"
+        "El crecimiento celular y la preparación de materiales para duplicar el ADN",
+        "La condensación del material genético en cromosomas visibles",
+        "La duplicación de la cantidad total de ADN cromosómico",
+        "La salida permanente de la célula hacia la mitosis"
       ],
       "correcta": "A",
       "explicacion": "Durante G1 la célula crece, sintetiza proteínas y ARN, y prepara los materiales necesarios para la fase de síntesis."
@@ -164,10 +210,10 @@
     {
       "pregunta": "El estado G0 representa:",
       "opciones": [
-      "El punto de control mitótico en la interfase",
-      "Un estado fuera del ciclo proliferativo donde la célula deja de dividirse",
-      "La fase donde ocurre la citocinesis irreversible",
-      "La etapa de máxima duplicación cromosómica"
+        "El punto de control mitótico en la interfase",
+        "Un estado fuera del ciclo proliferativo donde la célula deja de dividirse",
+        "La fase donde ocurre la citocinesis irreversible",
+        "La etapa de máxima duplicación cromosómica"
       ],
       "correcta": "B",
       "explicacion": "El estado G0 es una etapa fuera del ciclo activo donde la célula interrumpe su división de forma prolongada o definitiva."
@@ -175,10 +221,10 @@
     {
       "pregunta": "El Factor Promotor de la Síntesis (FPS) regula:",
       "opciones": [
-      "El pasaje de la fase G2 hacia la mitosis",
-      "La separación de las cromátidas hermanas en anafase",
-      "La reparación de los extremos teloméricos",
-      "El inicio de la duplicación del ADN en la transición de G1 a S"
+        "El pasaje de la fase G2 hacia la mitosis",
+        "La separación de las cromátidas hermanas en anafase",
+        "La reparación de los extremos teloméricos",
+        "El inicio de la duplicación del ADN en la transición de G1 a S"
       ],
       "correcta": "D",
       "explicacion": "El FPS promueve la transición de G1 a S, permitiendo el arranque de la duplicación genética."
@@ -186,10 +232,10 @@
     {
       "pregunta": "El Factor Promotor de la Mitosis (FPM) está asociado funcionalmente con:",
       "opciones": [
-      "El pasaje de la fase G1 a la fase S",
-      "La elongación de los fragmentos de Okazaki",
-      "La transición de la fase G2 a la fase M",
-      "El inicio del ensamblaje del cebador de ARN"
+        "El pasaje de la fase G1 a la fase S",
+        "La elongación de los fragmentos de Okazaki",
+        "La transición de la fase G2 a la fase M",
+        "El inicio del ensamblaje del cebador de ARN"
       ],
       "correcta": "C",
       "explicacion": "El FPM es el factor impulsor de la transición de la fase G2 hacia la mitosis."
@@ -197,10 +243,10 @@
     {
       "pregunta": "Decir que la replicación del ADN es semiconservativa significa que:",
       "opciones": [
-      "Cada molécula hija conserva una hebra parental y contiene una hebra nueva",
-      "Las dos cadenas resultantes están integradas únicamente por ADN de síntesis nueva",
-      "Una molécula hija hereda ambas hebras parentales y la otra dos hebras totalmente nuevas",
-      "Solo se replica la mitad de la información genética del cromosoma"
+        "Cada molécula hija conserva una hebra parental y contiene una hebra nueva",
+        "Las dos cadenas resultantes están integradas únicamente por ADN de síntesis nueva",
+        "Una molécula hija hereda ambas hebras parentales y la otra dos hebras totalmente nuevas",
+        "Solo se replica la mitad de la información genética del cromosoma"
       ],
       "correcta": "A",
       "explicacion": "La replicación semiconservativa conserva una cadena del ADN original en cada nueva molécula formada."
@@ -208,10 +254,10 @@
     {
       "pregunta": "La característica bidireccional de la duplicación del ADN implica que:",
       "opciones": [
-      "La síntesis ocurre en sentido 5' a 3' y simultáneamente en sentido 3' a 5'",
-      "Una hebra se copia en el núcleo y la otra en el citoplasma",
-      "El proceso avanza desde el extremo del cromosoma hacia el centro exclusivamente",
-      "La síntesis de ADN avanza desde cada origen hacia dos lados opuestos"
+        "La síntesis ocurre en sentido 5' a 3' y simultáneamente en sentido 3' a 5'",
+        "Una hebra se copia en el núcleo y la otra en el citoplasma",
+        "El proceso avanza desde el extremo del cromosoma hacia el centro exclusivamente",
+        "La síntesis de ADN avanza desde cada origen hacia dos lados opuestos"
       ],
       "correcta": "D",
       "explicacion": "La naturaleza bidireccional implica que desde el punto ori la síntesis progresa hacia ambos lados en horquillas opuestas."
@@ -219,10 +265,10 @@
     {
       "pregunta": "Las dos hebras que forman la molécula de ADN son entre sí:",
       "opciones": [
-      "Paralelas y de idéntica secuencia de bases",
-      "Complementarias y antiparalelas",
-      "Sintetizadas exclusivamente en sentido 3' a 5'",
-      "Unidas de manera covalente mediante sus extremos 3'"
+        "Paralelas y de idéntica secuencia de bases",
+        "Complementarias y antiparalelas",
+        "Sintetizadas exclusivamente en sentido 3' a 5'",
+        "Unidas de manera covalente mediante sus extremos 3'"
       ],
       "correcta": "B",
       "explicacion": "Las cadenas de ADN poseen polaridades inversas antiparalelas y secuencias de bases complementarias entre sí."
@@ -230,27 +276,32 @@
     {
       "pregunta": "Toda ADN polimerasa agrega nuevos nucleótidos en sentido:",
       "opciones": [
-      "3' a 5', agregándolos al extremo fosfato inicial",
-      "3' a 5' en la hebra líder y 5' a 3' en la hebra rezagada",
-      "5' a 3', incorporándolos en el extremo 3'-OH de la cadena naciente",
-      "Indistinto, según la orientación de la horquilla de replicación"
+        "3' a 5', agregándolos al extremo fosfato inicial",
+        "3' a 5' en la hebra líder y 5' a 3' en la hebra rezagada",
+        "5' a 3', incorporándolos en el extremo 3'-OH de la cadena naciente",
+        "Indistinto, según la orientación de la horquilla de replicación"
       ],
       "correcta": "C",
       "explicacion": "La adición de nucleótidos catalizada por la ADN polimerasa ocurre en el extremo 3'-OH de la cadena que crece."
     },
     {
       "pregunta": "Para sintetizar una cadena nueva, la ADN polimerasa lee la hebra molde en sentido:",
-      "opciones": ["3' a 5'", "5' a 3'", "Ambos sentidos alternadamente", "5' a 3' en la hebra rezagada"],
+      "opciones": [
+        "3' a 5'",
+        "5' a 3'",
+        "Ambos sentidos alternadamente",
+        "5' a 3' en la hebra rezagada"
+      ],
       "correcta": "A",
       "explicacion": "Para sintetizar en sentido 5' a 3', la enzima debe recorrer la hebra que le sirve de molde en sentido 3' a 5'."
     },
     {
       "pregunta": "La ADN polimerasa no puede iniciar una cadena desde cero porque requiere:",
       "opciones": [
-      "Un nucleótido trifosfatado de uracilo",
-      "Un corte permanente en la doble hélice por la ligasa",
-      "Una secuencia de histonas libres en el origen",
-      "Un extremo 3'-OH libre provisto por un cebador de ARN"
+        "Un nucleótido trifosfatado de uracilo",
+        "Un corte permanente en la doble hélice por la ligasa",
+        "Una secuencia de histonas libres en el origen",
+        "Un extremo 3'-OH libre provisto por un cebador de ARN"
       ],
       "correcta": "D",
       "explicacion": "La ADN polimerasa requiere imprescindiblemente un extremo 3'-OH libre que le provee el iniciador de ARN."
@@ -258,44 +309,54 @@
     {
       "pregunta": "Los sustratos consumidos durante la polimerización del ADN son:",
       "opciones": [
-      "Ribonucleótidos trifosfatados (NTPs)",
-      "Desoxirribonucleótidos trifosfatados (dNTPs)",
-      "Aminoácidos activados por ARNt",
-      "Desoxirribonucleótidos monofosfato aislados"
+        "Ribonucleótidos trifosfatados (NTPs)",
+        "Desoxirribonucleótidos trifosfatados (dNTPs)",
+        "Aminoácidos activados por ARNt",
+        "Desoxirribonucleótidos monofosfato aislados"
       ],
       "correcta": "B",
       "explicacion": "La ADN polimerasa utiliza dNTPs como sustratos trifosfatados ricos en energía para la polimerización."
     },
     {
       "pregunta": "Al incorporarse en la cadena en crecimiento de ADN, los nucleótidos quedan en forma de:",
-      "opciones": ["Trifosfatos libres", "Bifosfatos reactivos", "Monómeros monofosfato", "Cebadores estables"],
+      "opciones": [
+        "Trifosfatos libres",
+        "Bifosfatos reactivos",
+        "Monómeros monofosfato",
+        "Cebadores estables"
+      ],
       "correcta": "C",
       "explicacion": "Durante la formación del enlace fosfodiéster se libera pirofosfato y el nucleótido queda integrado como monómero monofosfato."
     },
     {
       "pregunta": "Un origen de replicación (ori) se define como:",
       "opciones": [
-      "La región específica del ADN donde comienza la apertura de las hebras e iniciación del proceso",
-      "El extremo terminal del cromosoma donde actúa la telomerasa",
-      "La secuencia de ARN cebador que coloca la primasa",
-      "El sitio final donde chocan las dos horquillas de replicación"
+        "La región específica del ADN donde comienza la apertura de las hebras e iniciación del proceso",
+        "El extremo terminal del cromosoma donde actúa la telomerasa",
+        "La secuencia de ARN cebador que coloca la primasa",
+        "El sitio final donde chocan las dos horquillas de replicación"
       ],
       "correcta": "A",
       "explicacion": "El sitio ori es la secuencia donde inicia la separación de las hebras del ADN."
     },
     {
       "pregunta": "La enzima responsable de separar las dos hebras parentales rompiendo los puentes de hidrógeno es la:",
-      "opciones": ["ADN ligasa", "Helicasa", "Topoisomerasa I", "ARN primasa"],
+      "opciones": [
+        "ADN ligasa",
+        "Helicasa",
+        "Topoisomerasa I",
+        "ARN primasa"
+      ],
       "correcta": "B",
       "explicacion": "La helicasa rompe las uniones entre bases complementarias permitiendo la apertura de la doble hélice."
     },
     {
       "pregunta": "La función de las proteínas SSB durante la replicación es:",
       "opciones": [
-      "Sintetizar el tramo inicial de ARN para la ADN polimerasa",
-      "Sellar los enlaces fosfodiéster de los fragmentos de Okazaki",
-      "Aliviar la tensión torsional delante de la horquilla",
-      "Unirse al ADN monocatenario para evitar que las hebras se reapareen"
+        "Sintetizar el tramo inicial de ARN para la ADN polimerasa",
+        "Sellar los enlaces fosfodiéster de los fragmentos de Okazaki",
+        "Aliviar la tensión torsional delante de la horquilla",
+        "Unirse al ADN monocatenario para evitar que las hebras se reapareen"
       ],
       "correcta": "D",
       "explicacion": "Las SSB estabilizan el ADN de hebra sencilla e impiden que vuelva a reaparearse durante la copia."
@@ -303,10 +364,10 @@
     {
       "pregunta": "La topoisomerasa I actúa en la replicación para:",
       "opciones": [
-      "Reemplazar los cebadores de ARN por nucleótidos de ADN",
-      "Corregir errores de apareamiento en la cadena naciente",
-      "Aliviar la tensión torsional cortando de manera transitoria una de las hebras",
-      "Sintetizar la cadena líder de forma continua"
+        "Reemplazar los cebadores de ARN por nucleótidos de ADN",
+        "Corregir errores de apareamiento en la cadena naciente",
+        "Aliviar la tensión torsional cortando de manera transitoria una de las hebras",
+        "Sintetizar la cadena líder de forma continua"
       ],
       "correcta": "C",
       "explicacion": "La topoisomerasa I efectúa cortes transitorios para aliviar el superenrollamiento mecánico generado al abrir la hélice."
@@ -314,10 +375,10 @@
     {
       "pregunta": "El cebador o primer colocado en el inicio de la síntesis está compuesto por:",
       "opciones": [
-      "Una secuencia corta de ARN sintetizada por la primasa",
-      "Un tramo largo de ADN doble hebra",
-      "Un conjunto de desoxirribonucleótidos monofosfato",
-      "Una cadena polipeptídica corta sintetizada en el ribosoma"
+        "Una secuencia corta de ARN sintetizada por la primasa",
+        "Un tramo largo de ADN doble hebra",
+        "Un conjunto de desoxirribonucleótidos monofosfato",
+        "Una cadena polipeptídica corta sintetizada en el ribosoma"
       ],
       "correcta": "A",
       "explicacion": "La primasa genera un fragmento corto de ARN cebador para abastecer de un extremo 3'-OH a la polimerasa."
@@ -325,10 +386,10 @@
     {
       "pregunta": "La ARN primasa sintetiza cebadores de una longitud aproximada de:",
       "opciones": [
-      "Cien nucleótidos de ADN",
-      "Diez nucleótidos de ARN",
-      "Un solo desoxirribonucleótido trifosfato",
-      "Un millar de bases nitrogenadas"
+        "Cien nucleótidos de ADN",
+        "Diez nucleótidos de ARN",
+        "Un solo desoxirribonucleótido trifosfato",
+        "Un millar de bases nitrogenadas"
       ],
       "correcta": "B",
       "explicacion": "El primer o cebador producido por la primasa abarca cerca de diez ribonucleótidos iniciales."
@@ -336,27 +397,32 @@
     {
       "pregunta": "La ADN polimerasa alfa (α) cumple la función de:",
       "opciones": [
-      "Elongar únicamente la hebra líder hasta el final del replicón",
-      "Sellar la discontinuidad final entre fragmentos de ADN",
-      "Degradar la cadena de ARN cebador",
-      "Iniciar un tramo corto de ADN inmediatamente después del cebador de ARN"
+        "Elongar únicamente la hebra líder hasta el final del replicón",
+        "Sellar la discontinuidad final entre fragmentos de ADN",
+        "Degradar la cadena de ARN cebador",
+        "Iniciar un tramo corto de ADN inmediatamente después del cebador de ARN"
       ],
       "correcta": "D",
       "explicacion": "La ADN polimerasa alfa actúa en conjunto con la primasa extendiendo un tramo inicial de ADN."
     },
     {
       "pregunta": "En eucariotas, la elongación continua de la hebra líder está a cargo de la:",
-      "opciones": ["ADN polimerasa alfa", "ADN ligasa", "ADN polimerasa épsilon", "ADN polimerasa III"],
+      "opciones": [
+        "ADN polimerasa alfa",
+        "ADN ligasa",
+        "ADN polimerasa épsilon",
+        "ADN polimerasa III"
+      ],
       "correcta": "C",
       "explicacion": "La polimerasa épsilon realiza la síntesis continua de la cadena adelantada durante la replicación eucariota."
     },
     {
       "pregunta": "La ADN polimerasa delta (δ) participa principalmente en:",
       "opciones": [
-      "La síntesis discontinua de la hebra rezagada",
-      "El alivio del superenrollamiento mecánico",
-      "El alargamiento directo del molde telomérico",
-      "La colocación de los cebadores de ARN"
+        "La síntesis discontinua de la hebra rezagada",
+        "El alivio del superenrollamiento mecánico",
+        "El alargamiento directo del molde telomérico",
+        "La colocación de los cebadores de ARN"
       ],
       "correcta": "A",
       "explicacion": "La polimerasa delta se encarga de extender la hebra rezagada en forma de fragmentos."
@@ -364,10 +430,10 @@
     {
       "pregunta": "La ADN ligasa cataliza la formación de enlaces:",
       "opciones": [
-      "Peptídicos entre aminoácidos contiguos",
-      "Fosfodiéster entre los fragmentos de ADN previamente sintetizados",
-      "Puentes de hidrógeno entre bases nitrogenadas complementarias",
-      "Glucosídicos entre la desoxirribosa y la base nitrogenada"
+        "Peptídicos entre aminoácidos contiguos",
+        "Fosfodiéster entre los fragmentos de ADN previamente sintetizados",
+        "Puentes de hidrógeno entre bases nitrogenadas complementarias",
+        "Glucosídicos entre la desoxirribosa y la base nitrogenada"
       ],
       "correcta": "B",
       "explicacion": "La ligasa sella las muescas uniendo covalentemente los esqueletos de azúcar-fosfato mediante enlaces fosfodiéster."
@@ -375,10 +441,10 @@
     {
       "pregunta": "La actividad de corrección de pruebas (proofreading) en las polimerasas permite:",
       "opciones": [
-      "Sintetizar cebadores sin necesidad de primasa",
-      "Unir los fragmentos de Okazaki mediante enlaces peptídicos",
-      "Aumentar la tensión torsional para abrir el origen",
-      "Reconocer y retirar el nucleótido terminal mal apareado mediante actividad exonucleasa"
+        "Sintetizar cebadores sin necesidad de primasa",
+        "Unir los fragmentos de Okazaki mediante enlaces peptídicos",
+        "Aumentar la tensión torsional para abrir el origen",
+        "Reconocer y retirar el nucleótido terminal mal apareado mediante actividad exonucleasa"
       ],
       "correcta": "D",
       "explicacion": "La corrección de pruebas elimina bases mal apareadas mediante una actividad exonucleasa de la polimerasa."
@@ -386,10 +452,10 @@
     {
       "pregunta": "Para determinar cuál hebra es la líder en una horquilla de replicación se debe verificar que:",
       "opciones": [
-      "Se ubique siempre en la parte superior de la gráfica esquemática",
-      "Carezca por completo de extremo 3'-OH libre",
-      "El molde sea leído en sentido 3' a 5' en la misma dirección en que avanza la horquilla",
-      "El molde presente polaridad 5' a 3' a medida que la horquilla se abre"
+        "Se ubique siempre en la parte superior de la gráfica esquemática",
+        "Carezca por completo de extremo 3'-OH libre",
+        "El molde sea leído en sentido 3' a 5' en la misma dirección en que avanza la horquilla",
+        "El molde presente polaridad 5' a 3' a medida que la horquilla se abre"
       ],
       "correcta": "C",
       "explicacion": "La hebra líder es continua porque el molde tiene orientación 3' a 5' a favor del movimiento de la horquilla."
@@ -397,10 +463,10 @@
     {
       "pregunta": "Los fragmentos de Okazaki se sintetizan en sentido:",
       "opciones": [
-      "5' a 3', alejándose de la dirección de avance de la horquilla",
-      "3' a 5', acompañando el avance de la horquilla",
-      "5' a 3', dirigiéndose siempre hacia el origen de replicación",
-      "3' a 5', prescindiendo de cebadores de ARN"
+        "5' a 3', alejándose de la dirección de avance de la horquilla",
+        "3' a 5', acompañando el avance de la horquilla",
+        "5' a 3', dirigiéndose siempre hacia el origen de replicación",
+        "3' a 5', prescindiendo de cebadores de ARN"
       ],
       "correcta": "A",
       "explicacion": "Los fragmentos discontinuos se extienden en sentido 5' a 3' alejándose del avance de la horquilla."
@@ -408,10 +474,10 @@
     {
       "pregunta": "A diferencia de la hebra líder, la hebra rezagada requiere:",
       "opciones": [
-      "Un único cebador para toda la duplicación del cromosoma",
-      "Un cebador de ARN por cada fragmento de Okazaki sintetizado",
-      "La ausencia total de la ADN ligasa",
-      "Lectura del molde en sentido 5' a 3' por parte de la polimerasa"
+        "Un único cebador para toda la duplicación del cromosoma",
+        "Un cebador de ARN por cada fragmento de Okazaki sintetizado",
+        "La ausencia total de la ADN ligasa",
+        "Lectura del molde en sentido 5' a 3' por parte de la polimerasa"
       ],
       "correcta": "B",
       "explicacion": "Debido al carácter discontinuo de la cadena rezagada, se sintetiza un iniciador de ARN para cada fragmento de Okazaki."
@@ -419,10 +485,10 @@
     {
       "pregunta": "Se denomina replicón al:",
       "opciones": [
-      "Sitio de unión de la telomerasa al cromosoma",
-      "Complejo formado exclusivamente por la primasa y las proteínas SSB",
-      "Extremo terminal no duplicado del ADN lineal",
-      "Segmento de ADN que se duplica a partir de un origen y sus dos horquillas"
+        "Sitio de unión de la telomerasa al cromosoma",
+        "Complejo formado exclusivamente por la primasa y las proteínas SSB",
+        "Extremo terminal no duplicado del ADN lineal",
+        "Segmento de ADN que se duplica a partir de un origen y sus dos horquillas"
       ],
       "correcta": "D",
       "explicacion": "Un replicón corresponde a la unidad de ADN que se duplica a partir de un origen y sus dos horquillas."
@@ -430,10 +496,10 @@
     {
       "pregunta": "La formación de una burbuja de replicación genera en sus extremos:",
       "opciones": [
-      "Dos secuencias teloméricas repetitivas",
-      "Dos anillos de peptidoglicano",
-      "Dos horquillas de replicación que avanzan en sentidos opuestos",
-      "Un único punto de corte irreversible por la topoisomerasa"
+        "Dos secuencias teloméricas repetitivas",
+        "Dos anillos de peptidoglicano",
+        "Dos horquillas de replicación que avanzan en sentidos opuestos",
+        "Un único punto de corte irreversible por la topoisomerasa"
       ],
       "correcta": "C",
       "explicacion": "Al abrirse el ori se origina una burbuja que presenta una horquilla en cada extremo avanzando en direcciones opuestas."
@@ -441,10 +507,10 @@
     {
       "pregunta": "La maduración de la hebra rezagada incluye necesariamente:",
       "opciones": [
-      "La eliminación de los cebadores de ARN, su reemplazo por ADN y el sellado por la ligasa",
-      "La adición de uracilo en lugar de timina en las brechas intermedias",
-      "La ruptura de la hebra líder para alinear ambas cadenas",
-      "La acción continua de la telomerasa en cada fragmento de Okazaki"
+        "La eliminación de los cebadores de ARN, su reemplazo por ADN y el sellado por la ligasa",
+        "La adición de uracilo en lugar de timina en las brechas intermedias",
+        "La ruptura de la hebra líder para alinear ambas cadenas",
+        "La acción continua de la telomerasa en cada fragmento de Okazaki"
       ],
       "correcta": "A",
       "explicacion": "La maduración requiere retirar el ARN cebador, rellenar el espacio con ADN y unir la muesca mediante ADN ligasa."
@@ -452,10 +518,10 @@
     {
       "pregunta": "La terminación de la duplicación del ADN en cromosomas eucariotas ocurre cuando:",
       "opciones": [
-      "Se agota el suministro celular de histonas libres",
-      "Se alcanza una secuencia promotor reconocida por el factor sigma",
-      "La ADN ligasa degrada a las polimerasas delta y épsilon",
-      "Las horquillas de replicación provenientes de orígenes vecinos convergen"
+        "Se agota el suministro celular de histonas libres",
+        "Se alcanza una secuencia promotor reconocida por el factor sigma",
+        "La ADN ligasa degrada a las polimerasas delta y épsilon",
+        "Las horquillas de replicación provenientes de orígenes vecinos convergen"
       ],
       "correcta": "D",
       "explicacion": "El proceso en eucariotas concluye cuando las horquillas de orígenes adyacentes se encuentran y se copia todo el ADN."
@@ -463,10 +529,10 @@
     {
       "pregunta": "Los telómeros están constituidos por:",
       "opciones": [
-      "Secuencias codificantes para las ADN polimerasas eucariotas",
-      "Secuencias repetitivas de ADN ubicadas en los extremos de cromosomas lineales",
-      "Cebadores estables de ARN que permanecen inalterados en la célula",
-      "Estructuras circulares que evitan la presencia de extremos libres"
+        "Secuencias codificantes para las ADN polimerasas eucariotas",
+        "Secuencias repetitivas de ADN ubicadas en los extremos de cromosomas lineales",
+        "Cebadores estables de ARN que permanecen inalterados en la célula",
+        "Estructuras circulares que evitan la presencia de extremos libres"
       ],
       "correcta": "B",
       "explicacion": "Los telómeros corresponden a repeticiones no codificantes en los extremos de cromosomas lineales."
@@ -474,10 +540,10 @@
     {
       "pregunta": "El denominado \"problema de la replicación del extremo\" surge porque:",
       "opciones": [
-      "La helicasa no puede separar los puentes de hidrógeno teloméricos",
-      "Las proteínas SSB bloquean el extremo 5' de la hebra líder",
-      "Al eliminar el último cebador en la hebra rezagada no hay un extremo 3'-OH para continuar el relleno",
-      "La ADN ligasa actúa únicamente en cromosomas circulares"
+        "La helicasa no puede separar los puentes de hidrógeno teloméricos",
+        "Las proteínas SSB bloquean el extremo 5' de la hebra líder",
+        "Al eliminar el último cebador en la hebra rezagada no hay un extremo 3'-OH para continuar el relleno",
+        "La ADN ligasa actúa únicamente en cromosomas circulares"
       ],
       "correcta": "C",
       "explicacion": "Al retirar el último cebador del extremo no queda un extremo 3'-OH accesible para rellenar el hueco restante."
@@ -485,10 +551,10 @@
     {
       "pregunta": "Si los telómeros se acortan progresivamente tras múltiples divisiones celulares:",
       "opciones": [
-      "Se activan señales que limitan la capacidad de proliferación de la célula",
-      "La célula ingresa inmediatamente a la fase S para duplicar nuevamente sus telómeros",
-      "El cromosoma se convierte automáticamente en un anillo circular bacteriano",
-      "La ADN polimerasa épsilon comienza a sintetizar ADN en sentido 3' a 5'"
+        "Se activan señales que limitan la capacidad de proliferación de la célula",
+        "La célula ingresa inmediatamente a la fase S para duplicar nuevamente sus telómeros",
+        "El cromosoma se convierte automáticamente en un anillo circular bacteriano",
+        "La ADN polimerasa épsilon comienza a sintetizar ADN en sentido 3' a 5'"
       ],
       "correcta": "A",
       "explicacion": "La pérdida crítica de longitud telomérica desencadena mecanismos celulares de freno proliferativo."
@@ -496,10 +562,10 @@
     {
       "pregunta": "La telomerasa es catalogada como una transcriptasa reversa porque:",
       "opciones": [
-      "Sintetiza cadenas polipeptídicas a partir de desoxirribonucleótidos",
-      "Copia una hebra de ARN para producir un transcripto de ARNm",
-      "Lee ADN en sentido 5' a 3' produciendo proteínas teloméricas",
-      "Utiliza su propio molde interno de ARN para sintetizar ADN"
+        "Sintetiza cadenas polipeptídicas a partir de desoxirribonucleótidos",
+        "Copia una hebra de ARN para producir un transcripto de ARNm",
+        "Lee ADN en sentido 5' a 3' produciendo proteínas teloméricas",
+        "Utiliza su propio molde interno de ARN para sintetizar ADN"
       ],
       "correcta": "D",
       "explicacion": "La telomerasa es una transcriptasa reversa porque sintetiza una cadena de ADN tomando como guía una secuencia de ARN propia."
@@ -507,10 +573,10 @@
     {
       "pregunta": "La función directa de la telomerasa durante el alargamiento es:",
       "opciones": [
-      "Extender directamente la hebra nueva que había quedado corta",
-      "Extender el extremo 3' de la hebra parental telomérica",
-      "Eliminar todos los cebadores de la hebra líder",
-      "Degradar las secuencias repetitivas del telómero"
+        "Extender directamente la hebra nueva que había quedado corta",
+        "Extender el extremo 3' de la hebra parental telomérica",
+        "Eliminar todos los cebadores de la hebra líder",
+        "Degradar las secuencias repetitivas del telómero"
       ],
       "correcta": "B",
       "explicacion": "La telomerasa alarga el molde parental telomérico para dar espacio a la posterior síntesis de la hebra nueva."
@@ -518,10 +584,10 @@
     {
       "pregunta": "Respecto a la actividad de la telomerasa en células somáticas humanas, esta suele ser:",
       "opciones": [
-      "Igualmente elevada en todas las etapas del desarrollo celular",
-      "La principal responsable de reemplazar a la ADN polimerasa delta",
-      "Baja o indetectable",
-      "Indispensable para el inicio de la síntesis en la fase G1"
+        "Igualmente elevada en todas las etapas del desarrollo celular",
+        "La principal responsable de reemplazar a la ADN polimerasa delta",
+        "Baja o indetectable",
+        "Indispensable para el inicio de la síntesis en la fase G1"
       ],
       "correcta": "C",
       "explicacion": "En la mayoría de los tejidos somáticos maduros la actividad telomérica se encuentra reprimida o resulta inapreciable."
@@ -529,10 +595,10 @@
     {
       "pregunta": "La presencia de telomerasa activa en células tumorales contribuye a:",
       "opciones": [
-      "Mantener la longitud telomérica y permitir una proliferación prolongada",
-      "Acelerar la degradación de los fragmentos de Okazaki",
-      "Detener el ciclo celular en el pasaje de G1 a S",
-      "Eliminar la necesidad de utilizar desoxirribonucleótidos"
+        "Mantener la longitud telomérica y permitir una proliferación prolongada",
+        "Acelerar la degradación de los fragmentos de Okazaki",
+        "Detener el ciclo celular en el pasaje de G1 a S",
+        "Eliminar la necesidad de utilizar desoxirribonucleótidos"
       ],
       "correcta": "A",
       "explicacion": "Al evitar el acortamiento cromosómico, la telomerasa permite a las células tumorales dividirse en forma indefinida."
@@ -540,10 +606,10 @@
     {
       "pregunta": "Una diferencia clave entre el ADN eucariota y el procariota es que el cromosoma bacteriano:",
       "opciones": [
-      "Contiene múltiples orígenes ori por molécula de ADN",
-      "Sintetiza su ADN exclusivamente en sentido 3' a 5'",
-      "Presenta telómeros lineales en sus extremos",
-      "Es típicamente circular y no está organizado en nucleosomas con histonas"
+        "Contiene múltiples orígenes ori por molécula de ADN",
+        "Sintetiza su ADN exclusivamente en sentido 3' a 5'",
+        "Presenta telómeros lineales en sus extremos",
+        "Es típicamente circular y no está organizado en nucleosomas con histonas"
       ],
       "correcta": "D",
       "explicacion": "El ADN de procariotas es circular y libre de la estructuración en nucleosomas característica de eucariotas."
@@ -551,33 +617,43 @@
     {
       "pregunta": "A diferencia de los cromosomas eucariotas, el cromosoma bacteriano presenta habitualmente:",
       "opciones": [
-      "Cientos de burbujas de replicación simultáneas",
-      "Un único origen de replicación",
-      "Múltiples unidades de telomerasa asociadas",
-      "Ausencia total de ADN polimerasa principal"
+        "Cientos de burbujas de replicación simultáneas",
+        "Un único origen de replicación",
+        "Múltiples unidades de telomerasa asociadas",
+        "Ausencia total de ADN polimerasa principal"
       ],
       "correcta": "B",
       "explicacion": "El cromosoma circular bacteriano inicia la replicación desde un solo sitio o punto de origen."
     },
     {
       "pregunta": "La enzima principal encargada de la mayor parte de la elongación en bacterias es la:",
-      "opciones": ["ADN polimerasa alfa", "ARN polimerasa II", "ADN polimerasa III", "ADN polimerasa épsilon"],
+      "opciones": [
+        "ADN polimerasa alfa",
+        "ARN polimerasa II",
+        "ADN polimerasa III",
+        "ADN polimerasa épsilon"
+      ],
       "correcta": "C",
       "explicacion": "En procariotas, la polimerasa III efectúa la elongación principal de ambas hebras."
     },
     {
       "pregunta": "En bacterias, la eliminación de los cebadores de ARN y su reemplazo por ADN la realiza la:",
-      "opciones": ["ADN polimerasa I", "ADN polimerasa II", "Telomerasa", "ARN primasa"],
+      "opciones": [
+        "ADN polimerasa I",
+        "ADN polimerasa II",
+        "Telomerasa",
+        "ARN primasa"
+      ],
       "correcta": "A",
       "explicacion": "La ADN polimerasa I procariota elimina los cebadores de ARN y rellena los huecos con desoxirribonucleótidos."
     },
     {
       "pregunta": "El problema del acortamiento telomérico no se presenta en bacterias porque:",
       "opciones": [
-      "Sintetizan sus proteínas directamente en el ADN",
-      "Poseen copias ilimitadas de la enzima topoisomerasa I",
-      "Sus cebadores son de ADN en lugar de ARN",
-      "Carecen de cromosomas lineales con extremos libres"
+        "Sintetizan sus proteínas directamente en el ADN",
+        "Poseen copias ilimitadas de la enzima topoisomerasa I",
+        "Sus cebadores son de ADN en lugar de ARN",
+        "Carecen de cromosomas lineales con extremos libres"
       ],
       "correcta": "D",
       "explicacion": "Al poseer genomas circulares sin extremos libres, las bacterias no enfrentan el acortamiento de extremos."
@@ -585,10 +661,10 @@
     {
       "pregunta": "A diferencia de la duplicación del ADN, el proceso de transcripción utiliza como sustratos:",
       "opciones": [
-      "Desoxirribonucleótidos trifosfatados (dNTPs)",
-      "Ribonucleótidos trifosfatados (NTPs)",
-      "Aminoácidos unidos a sus respectivos ARNt",
-      "Pirofosfatos libres y desoxirribosas"
+        "Desoxirribonucleótidos trifosfatados (dNTPs)",
+        "Ribonucleótidos trifosfatados (NTPs)",
+        "Aminoácidos unidos a sus respectivos ARNt",
+        "Pirofosfatos libres y desoxirribosas"
       ],
       "correcta": "B",
       "explicacion": "La transcripción sintetiza ARN utilizando ribonucleótidos trifosfatados como sustratos."
@@ -596,10 +672,10 @@
     {
       "pregunta": "Durante la traducción, la síntesis del polipéptido ocurre en dirección:",
       "opciones": [
-      "3' a 5' sobre la molécula proteica",
-      "Desde el extremo carboxilo-terminal hacia el amino-terminal",
-      "Desde el extremo amino-terminal hacia el carboxilo-terminal",
-      "5' a 3' mediante formación de enlaces fosfodiéster"
+        "3' a 5' sobre la molécula proteica",
+        "Desde el extremo carboxilo-terminal hacia el amino-terminal",
+        "Desde el extremo amino-terminal hacia el carboxilo-terminal",
+        "5' a 3' mediante formación de enlaces fosfodiéster"
       ],
       "correcta": "C",
       "explicacion": "El ribosoma traduce la cadena polipeptídica desde el extremo amino hacia el extremo carboxilo."
