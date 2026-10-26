@@ -21,6 +21,7 @@ import { abrirProteinaG, TITULO as TITULO_PROTEINA_G } from './proteina-g.js?v=2
 import { abrirLacTrp, TITULO as TITULO_LAC_TRP } from './lac-vs-trp.js?v=20261026-1';
 import { abrirComparadorComunicacion, TITULO as TITULO_COMPARADOR_COMUNICACION } from './comparador-comunicacion.js?v=20261026-1';
 import { abrirComparadores, TITULO as TITULO_COMPARADORES } from './comparadores.js?v=20261026-1';
+import { abrirLab } from './lab.js?v=20261026-1';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -681,6 +682,7 @@ function vistaInicio() {
         </div>
       </header>
       <p class="bajada">Elegí una materia y practicá con preguntas de opción múltiple.</p>
+      <button class="banner-lab" id="btn-lab" type="button"><span class="banner-lab-icon">🧬</span><span class="banner-lab-text"><strong>LAB <span class="banner-lab-nuevo">NUEVO</span></strong><small>Explorá la biología con modelos interactivos y recorridos guiados.</small></span><span class="banner-lab-flecha">↗</span></button>
       ${estaInstalada() || !esCelular() ? '' : `
         <div class="instalar-app-wrap">
           <button class="btn secundario btn-instalar" id="btn-instalar-app" type="button">
@@ -727,6 +729,7 @@ function vistaInicio() {
     </main>`;
 
   document.getElementById('btn-sonido').addEventListener('click', alternarSonido);
+  document.getElementById('btn-lab')?.addEventListener('click', () => { Sonido.clic(); abrirLab({ app, volver: vistaInicio }); });
   document.getElementById('btn-instalar-app')?.addEventListener('click', instalarParcialito);
   document.getElementById('btn-errores')?.addEventListener('click', () => { Sonido.clic(); lanzarErrores(); });
   document.getElementById('btn-dificiles')?.addEventListener('click', () => { Sonido.clic(); lanzarDificiles(); });
