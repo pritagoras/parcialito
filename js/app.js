@@ -751,6 +751,58 @@ function mejorCrucigrama(t) {
   return mejor;
 }
 
+function vistaSelectorJuegos(m, indiceMateria, actividades) {
+  app.innerHTML = `
+    <main class="pantalla">
+      <button class="btn enlace" id="btn-volver-selector">← ${esc(m.nombre)}</button>
+      <div class="titulo-materia"><span class="emoji" aria-hidden="true">🎮</span><h1>Juegos interactivos</h1></div>
+      <p class="bajada">Elegí una actividad para explorar el tema de forma visual e interactiva.</p>
+      <div class="temas selector-juegos">
+        ${actividades.map((a, n) => {
+          const detalle = a.tema ? a.tema.nombre : (a.titulo.includes(':') ? a.titulo.slice(a.titulo.indexOf(':') + 1).trim() : 'Actividad interactiva');
+          return `<button class="tema-cruci" data-juego="${n}">
+            <span class="ic" aria-hidden="true">${esc(a.icono || '🧩')}</span>
+            <span class="cuerpo"><span class="nombre">${esc(a.titulo)}</span><span class="detalle">${esc(detalle)}</span></span>
+            <b aria-hidden="true">▶</b>
+          </button>`;
+        }).join('')}
+      </div>
+    </main>`;
+  document.getElementById('btn-volver-selector').addEventListener('click', () => { Sonido.clic(); vistaMateria(indiceMateria); });
+  app.querySelectorAll('[data-juego]').forEach((b) => b.addEventListener('click', () => {
+    Sonido.clic();
+    const a = actividades[Number(b.dataset.juego)];
+    ACTIVIDADES[a.clave].abrir({ app, volver: () => vistaSelectorJuegos(m, indiceMateria, actividades), tema: a.tema, materia: m });
+  }));
+  window.scrollTo(0, 0);
+}
+
+function vistaSelectorCrucigramas(m, indiceMateria) {
+  const temas = m.temas.filter(tieneCrucigrama);
+  app.innerHTML = `
+    <main class="pantalla">
+      <button class="btn enlace" id="btn-volver-selector">← ${esc(m.nombre)}</button>
+      <div class="titulo-materia"><span class="emoji" aria-hidden="true">🔤</span><h1>Crucigramas</h1></div>
+      <p class="bajada">Elegí el tema del crucigrama que querés resolver.</p>
+      <div class="temas selector-crucigramas">
+        ${temas.map((t, n) => {
+          const rec = mejorCrucigrama(t);
+          return `<button class="tema-cruci" data-crucigrama="${n}">
+            <span class="ic" aria-hidden="true">🔤</span>
+            <span class="cuerpo"><span class="nombre">${esc(t.nombre)}</span><span class="detalle">Completá el tablero con las pistas</span></span>
+            ${rec ? `<span class="mejor">${'★'.repeat(rec.estrellas)}</span>` : '<b aria-hidden="true">▶</b>'}
+          </button>`;
+        }).join('')}
+      </div>
+    </main>`;
+  document.getElementById('btn-volver-selector').addEventListener('click', () => { Sonido.clic(); vistaMateria(indiceMateria); });
+  app.querySelectorAll('[data-crucigrama]').forEach((b) => b.addEventListener('click', () => {
+    Sonido.clic();
+    abrirCrucigrama({ app, volver: () => vistaSelectorCrucigramas(m, indiceMateria), tema: temas[Number(b.dataset.crucigrama)], materia: m });
+  }));
+  window.scrollTo(0, 0);
+}
+
 function vistaMateria(i) {
   const m = indice.materias[i];
   const color = colorMateria(m, i);
@@ -786,20 +838,7 @@ function vistaMateria(i) {
         ${mejor ? `<span class="mejor ${mejor.precision >= 80 ? 'alto' : ''}">Mejor ${mejor.precision}%</span>` : ''}
       </label>`;
 
-    let cruci = '';
-    if (tieneCrucigrama(t)) {
-      const rec = mejorCrucigrama(t);
-      cruci = `
-      <button class="tema-cruci ${soloCruci ? 'suelto' : ''}" data-cruci="${n}" style="--c:${color}">
-        <span class="ic" aria-hidden="true">🔤</span>
-        <span class="cuerpo">
-          <span class="nombre">Crucigrama · ${esc(t.nombre)}</span>
-          <span class="detalle">Completá el tablero con las pistas</span>
-        </span>
-        ${rec ? `<span class="mejor">${'★'.repeat(rec.estrellas)}</span>` : '<b aria-hidden="true">▶</b>'}
-      </button>`;
-    }
-    return fila + cruci;
+    return fila;
   }).join('');
 
   const actividades = actividadesDe(m);
@@ -811,8 +850,8 @@ function vistaMateria(i) {
         <span class="emoji" aria-hidden="true">${esc(m.emoji || '📚')}</span>
         <h1>${esc(m.nombre)}</h1>
       </div>
-      ${actividades.map((a, n) => `
-        <button class="banner-repaso" data-actividad="${n}"><span>${a.icono} ${esc(a.titulo.split(':')[0].trim())}<small>${esc([a.titulo.includes(':') ? a.titulo.slice(a.titulo.indexOf(':') + 1).trim() : 'Actividad interactiva', actividades.filter((x) => x.clave === a.clave).length > 1 ? a.tema.nombre : ''].filter(Boolean).join(' · '))}</small></span><b>▶</b></button>`).join('')}
+      ${actividades.length ? `<button class="banner-repaso" id="btn-grupo-juegos"><span>🎮 Juegos interactivos<small>${plural(actividades.length, 'juego disponible', 'juegos disponibles')} · elegí cuál abrir</small></span><b>▶</b></button>` : ''}
+      ${m.temas.some(tieneCrucigrama) ? `<button class="banner-repaso" id="btn-grupo-crucigramas"><span>🔤 Crucigramas<small>${plural(m.temas.filter(tieneCrucigrama).length, 'crucigrama disponible', 'crucigramas disponibles')} · elegí un tema</small></span><b>▶</b></button>` : ''}
       <div class="temas-barra">
         <span>Temas</span>
         <button class="btn enlace" id="btn-todos"></button>
@@ -869,18 +908,14 @@ function vistaMateria(i) {
     actualizar();
   });
   document.getElementById('btn-volver').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
-  app.querySelectorAll('[data-actividad]').forEach((b) =>
-    b.addEventListener('click', () => {
-      Sonido.clic();
-      const a = actividades[Number(b.dataset.actividad)];
-      ACTIVIDADES[a.clave].abrir({ app, volver: () => vistaMateria(i), tema: a.tema, materia: m });
-    }));
-
-  app.querySelectorAll('[data-cruci]').forEach((b) =>
-    b.addEventListener('click', () => {
-      Sonido.clic();
-      abrirCrucigrama({ app, volver: () => vistaMateria(i), tema: m.temas[Number(b.dataset.cruci)], materia: m });
-    }));
+  document.getElementById('btn-grupo-juegos')?.addEventListener('click', () => {
+    Sonido.clic();
+    vistaSelectorJuegos(m, i, actividades);
+  });
+  document.getElementById('btn-grupo-crucigramas')?.addEventListener('click', () => {
+    Sonido.clic();
+    vistaSelectorCrucigramas(m, i);
+  });
 
   btnEmpezar.addEventListener('click', () => {
     Sonido.clic();
