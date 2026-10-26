@@ -1,0 +1,71 @@
+{
+  "materia": "Biología 2",
+  "tema": "Duplicación del ADN IV",
+  "crucigrama": {
+    "titulo": "Burbuja de replicación y ADN Polimerasas",
+    "palabras": [
+      {
+        "respuesta": "Pol alfa",
+        "pista": "Enzima primasa ndive oñepyrũva ADN pyahu mbykymi omoĩvo replicación ñepyrũme[cite: 3, 7, 10]"
+      },
+      {
+        "respuesta": "Pol epsilon",
+        "pista": "Enzima omombuyasýva ha osintetizáva hebra líder térã adelantada okakuaa hagua[cite: 3, 5, 11]"
+      },
+      {
+        "respuesta": "Pol delta",
+        "pista": "Enzima omombuyasýva hebra rezagada fragmentos de Okazaki rupive eucariotas-pe[cite: 3, 5, 10]"
+      },
+      {
+        "respuesta": "Pol I",
+        "pista": "Enzima bacterias-pe oipe'áva cebadores de ARN ha omoĩva ADN hendaguépe[cite: 7]"
+      },
+      {
+        "respuesta": "Pol II",
+        "pista": "Enzima procariotas-pe omba'apóva tenondete ADN oñemyatyrõ hag̃ua[cite: 7]"
+      },
+      {
+        "respuesta": "Pol III",
+        "pista": "Enzima principal ombojoajúva nucleótidos procariotas replicación-pe[cite: 7]"
+      },
+      {
+        "respuesta": "Helicasa",
+        "pista": "Enzima omboja'óva mokõi hebra ADN rehegua omongu'évo puentes de hidrógeno[cite: 2, 8, 11]"
+      },
+      {
+        "respuesta": "Primasa",
+        "pista": "Enzima ojapóva cebador mbykymi ARN rehegua ikatuhag̃ua oñepyrũ síntesis[cite: 3, 5, 11]"
+      },
+      {
+        "respuesta": "SSB",
+        "pista": "Proteínas ojepytasóva ADN hebra única rehe anítei ojoaju jevy[cite: 2, 8, 11]"
+      },
+      {
+        "respuesta": "Topoisomerasa",
+        "pista": "Enzima omoĩva corte mbyky oipe'a hag̃ua tensión torsional horquilla renondépe[cite: 3, 8, 11]"
+      },
+      {
+        "respuesta": "Horquilla",
+        "pista": "Estructura Y ra'angaichagua ojehechahápe ADN hebrakuéra ojepo'o ha osẽva[cite: 2, 4, 11]"
+      },
+      {
+        "respuesta": "Burbuja",
+        "pista": "Yvyra térã espacio ijepe'áva origen-pe oguerekóva mokõi horquilla replicación rehegua[cite: 2, 4, 11]"
+      },
+      {
+        "respuesta": "Ligasa",
+        "pista": "Enzima ombojoaju jevyva esqueleto fosfodiéster oñembotapykue hag̃ua fragmentos[cite: 3, 5, 11]"
+      },
+      {
+        "respuesta": "Ori",
+        "pista": "ADN renda oñepyrũhápe oyvytu ha ojepo'o la doble hélice[cite: 2, 4, 11]"
+      }
+    ]
+  },
+  "actividad": [
+    "crucigrama"
+  ],
+  "preguntas": [
+
+  ]
+}
