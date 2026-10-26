@@ -1,0 +1,47 @@
+{
+  "materia": "Biología 2",
+  "tema": "Núcleo interfásico IV",
+  "crucigrama": {
+    "titulo": "Nucleo interfasico",
+    "palabras": [
+      {
+        "respuesta": "Alelos",
+        "pista": "Variantes alternativas de un mismo gen en posiciones homólogas."
+      },
+      {
+        "respuesta": "Core",
+        "pista": "Núcleo proteico central del nucleosoma constituido por el octámero."
+      },
+      {
+        "respuesta": "Huso",
+        "pista": "Estructura de microtúbulos encargada de mover los cromosomas."
+      },
+      {
+        "respuesta": "Homólogos",
+        "pista": "Par cromosómico con mismos loci pero con posibles alelos distintos."
+      },
+      {
+        "respuesta": "Acrocéntrico",
+        "pista": "Cromosoma cuyo centrómero se ubica muy cercano al extremo."
+      },
+      {
+        "respuesta": "Colchicina",
+        "pista": "Fármaco utilizado para detener la división en etapa metafásica."
+      },
+      {
+        "respuesta": "Translocación",
+        "pista": "Desplazamiento de un fragmento cromosómico hacia otro cromosoma distinto."
+      },
+      {
+        "respuesta": "Metacéntrico",
+        "pista": "Cromosoma con centrómero ubicado en posición prácticamente central."
+      }
+    ]
+  },
+  "actividad": [
+    "crucigrama"
+  ],
+  "preguntas": [
+
+  ]
+}

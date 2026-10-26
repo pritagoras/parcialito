@@ -1,0 +1,47 @@
+{
+  "materia": "Biología 2",
+  "tema": "Nucleo interfasico I",
+  "crucigrama": {
+    "titulo": "Nucleo interfasico",
+    "palabras": [
+      {
+        "respuesta": "Adn",
+        "pista": "Polímero bicatenario que almacena la información genética celular."
+      },
+      {
+        "respuesta": "Bucle",
+        "pista": "Dominio estructural de la fibra organizado sobre un andamiaje."
+      },
+      {
+        "respuesta": "Giemsa",
+        "pista": "Colorante empleado para revelar el patrón de bandas cromosómicas."
+      },
+      {
+        "respuesta": "Locus",
+        "pista": "Posición física específica que ocupa un gen determinado."
+      },
+      {
+        "respuesta": "Histona",
+        "pista": "Proteína básica cargada positivamente que interactúa con el ADN."
+      },
+      {
+        "respuesta": "Nucleosoma",
+        "pista": "Unidad fundamental compuesta por ADN enrollado en un octámero."
+      },
+      {
+        "respuesta": "Eucromatina",
+        "pista": "Región laxa y accesible con elevado potencial de transcripción."
+      },
+      {
+        "respuesta": "Cinetocoro",
+        "pista": "Complejo proteico del centrómero que ancla los microtúbulos."
+      }
+    ]
+  },
+  "actividad": [
+    "crucigrama"
+  ],
+  "preguntas": [
+
+  ]
+}

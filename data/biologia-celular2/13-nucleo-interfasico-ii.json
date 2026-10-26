@@ -1,0 +1,47 @@
+{
+  "materia": "Biología 2",
+  "tema": "Núcleo interfásico II",
+  "crucigrama": {
+    "titulo": "Nucleo interfasico",
+    "palabras": [
+      {
+        "respuesta": "Down",
+        "pista": "Trisomía del cromosoma veintiuno que genera síndrome homónimo."
+      },
+      {
+        "respuesta": "Brazo",
+        "pista": "Cada segmento cromosómico delimitado por la posición del centrómero."
+      },
+      {
+        "respuesta": "Gameta",
+        "pista": "Célula haploide humana especializada en la reproducción sexual."
+      },
+      {
+        "respuesta": "Interfase",
+        "pista": "Etapa del ciclo celular entre dos divisiones sucesivas."
+      },
+      {
+        "respuesta": "Solenoide",
+        "pista": "Estructura helicoidal correspondiente a la fibra de treinta nanómetros."
+      },
+      {
+        "respuesta": "Centrómero",
+        "pista": "Constricción primaria que une las dos cromátidas hermanas."
+      },
+      {
+        "respuesta": "Telómero",
+        "pista": "Estructura terminal que protege los extremos de los cromosomas."
+      },
+      {
+        "respuesta": "Octámero",
+        "pista": "Complejo proteico central formado por ocho histonas en nucleosomas."
+      }
+    ]
+  },
+  "actividad": [
+    "crucigrama"
+  ],
+  "preguntas": [
+
+  ]
+}

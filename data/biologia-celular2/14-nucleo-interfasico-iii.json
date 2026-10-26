@@ -1,0 +1,47 @@
+{
+  "materia": "Biología 2",
+  "tema": "Nucleo interfasico III",
+  "crucigrama": {
+    "titulo": "Nucleo interfasico",
+    "palabras": [
+      {
+        "respuesta": "Cigoto",
+        "pista": "Célula diploide resultante tras la fecundación de dos gametas."
+      },
+      {
+        "respuesta": "Bandas",
+        "pista": "Patrón cromosómico de tinciones con diferente intensidad al teñir."
+      },
+      {
+        "respuesta": "Turner",
+        "pista": "Afección genética producida por la monosomía del cromosoma X."
+      },
+      {
+        "respuesta": "Diploide",
+        "pista": "Estado celular que presenta dos juegos completos de cromosomas."
+      },
+      {
+        "respuesta": "Telomerasa",
+        "pista": "Enzima con actividad retrotranscriptasa que mantiene las regiones terminales."
+      },
+      {
+        "respuesta": "Autosomas",
+        "pista": "Todos los cromosomas no pertenecientes al par sexual."
+      },
+      {
+        "respuesta": "Monosomía",
+        "pista": "Pérdida de un cromosoma de un par determinado."
+      },
+      {
+        "respuesta": "Mitosis",
+        "pista": "División nuclear que genera células hijas idénticas entre sí."
+      }
+    ]
+  },
+  "actividad": [
+    "crucigrama"
+  ],
+  "preguntas": [
+
+  ]
+}
