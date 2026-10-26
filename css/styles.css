@@ -810,3 +810,23 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 @media (max-width: 480px) {
   .comentario-cabecera { align-items: flex-start; flex-direction: column; gap: .1rem; }
 }
+
+
+/* Acceso a Parcialito LAB */
+.banner-lab {
+  width: 100%; display: flex; align-items: center; gap: 14px; margin: 18px 0 22px;
+  padding: 16px 18px; text-align: left; color: var(--crema); cursor: pointer;
+  border: 1px solid rgba(155,123,255,.75); border-radius: 18px;
+  background: linear-gradient(105deg, rgba(91,62,166,.42), rgba(35,24,69,.94) 55%, rgba(24,18,48,.98));
+  box-shadow: inset 0 1px rgba(255,255,255,.04), 0 10px 30px rgba(5,3,15,.16);
+  font: inherit; transition: border-color .18s, transform .18s, box-shadow .18s;
+}
+.banner-lab:hover { border-color: var(--violeta); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(5,3,15,.25), 0 0 0 3px rgba(155,123,255,.09); }
+.banner-lab:focus-visible { outline: 2px solid var(--violeta); outline-offset: 3px; }
+.banner-lab-icon { display:grid; place-items:center; flex:0 0 48px; width:48px; height:48px; border-radius:14px; font-size:1.65rem; background:rgba(155,123,255,.17); }
+.banner-lab-text { display:flex; flex:1; min-width:0; flex-direction:column; gap:4px; }
+.banner-lab-text strong { font-size:1.06rem; letter-spacing:.06em; }
+.banner-lab-text small { color:var(--tenue); line-height:1.45; font-size:.82rem; }
+.banner-lab-nuevo { vertical-align:middle; margin-left:6px; padding:3px 6px; border-radius:6px; font-size:.58rem; letter-spacing:.08em; color:#170f2e; background:#b9a4ff; }
+.banner-lab-flecha { color:#bba8ff; font-size:1.4rem; padding:0 4px; }
+@media(max-width:480px) { .banner-lab { padding:13px; gap:10px; } .banner-lab-icon { width:40px; height:40px; flex-basis:40px; } .banner-lab-text small { font-size:.76rem; } }
