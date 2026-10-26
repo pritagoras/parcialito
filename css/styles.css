@@ -743,3 +743,37 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
   outline: 3px solid var(--ambar);
   outline-offset: 3px;
 }
+
+
+/* ---------- Instalar Parcialito (solo en el menú principal) ---------- */
+.instalar-app-wrap {
+  margin-top: -1rem;
+  margin-bottom: 1.1rem;
+}
+
+.btn-instalar {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  min-height: 2.65rem;
+  padding: .6rem .9rem;
+  border-color: rgba(155, 123, 255, .7);
+  background: rgba(35, 24, 69, .72);
+  font-size: .9rem;
+}
+
+.btn-instalar:hover {
+  background: rgba(155, 123, 255, .16);
+}
+
+.btn-instalar svg {
+  display: block;
+  width: 1.15rem;
+  height: 1.15rem;
+  flex: none;
+}
+
+@media (max-width: 420px) {
+  .instalar-app-wrap { margin-top: -.75rem; }
+  .btn-instalar { width: 100%; justify-content: center; }
+}

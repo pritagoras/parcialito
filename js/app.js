@@ -61,6 +61,59 @@ function avisar(texto) {
   temporizadorAviso = setTimeout(() => avisoEl.classList.remove('visible'), 1500);
 }
 
+function estaInstalada() {
+  return instalacionCompletada ||
+    window.matchMedia('(display-mode: standalone)').matches ||
+    navigator.standalone === true;
+}
+
+let eventoInstalacionPendiente = null;
+let instalacionCompletada = false;
+
+window.addEventListener('beforeinstallprompt', (evento) => {
+  evento.preventDefault();
+  eventoInstalacionPendiente = evento;
+});
+
+window.addEventListener('appinstalled', () => {
+  instalacionCompletada = true;
+  eventoInstalacionPendiente = null;
+  document.getElementById('btn-instalar-app')?.remove();
+  avisar('¡Parcialito se instaló correctamente!');
+});
+
+function mostrarAyudaInstalacion() {
+  const esIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+  if (esIOS) {
+    window.alert('Para instalar Parcialito en tu iPhone o iPad:\n\n1. Abrí esta página en Safari.\n2. Tocá Compartir (el cuadrado con la flecha hacia arriba).\n3. Elegí «Añadir a pantalla de inicio».');
+  } else {
+    window.alert('Para instalar Parcialito, abrí el menú del navegador (⋮ o ⋯) y elegí «Instalar Parcialito» o «Agregar a pantalla de inicio».');
+  }
+}
+
+async function instalarParcialito() {
+  if (!eventoInstalacionPendiente) {
+    mostrarAyudaInstalacion();
+    return;
+  }
+
+  const evento = eventoInstalacionPendiente;
+  eventoInstalacionPendiente = null;
+  try {
+    await evento.prompt();
+    const eleccion = await evento.userChoice;
+    if (eleccion?.outcome === 'accepted') {
+      avisar('Parcialito se está instalando…');
+    } else {
+      avisar('Podés instalarla cuando quieras desde este botón.');
+    }
+  } catch (_) {
+    mostrarAyudaInstalacion();
+  }
+}
+
 function iniciarDetectorActualizaciones(versionActual) {
   if (!versionActual || document.getElementById('aviso-actualizacion')) return;
 
@@ -593,6 +646,13 @@ function vistaInicio() {
         </div>
       </header>
       <p class="bajada">Elegí una materia y practicá con preguntas de opción múltiple.</p>
+      ${estaInstalada() ? '' : `
+        <div class="instalar-app-wrap">
+          <button class="btn secundario btn-instalar" id="btn-instalar-app" type="button">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.5v11m0 0 4-4m-4 4-4-4M4.5 16v3.5h15V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Instalar Parcialito</span>
+          </button>
+        </div>`}
       ${rankingActivo() ? `
         <div class="barra-ranking">
           <button class="btn secundario" id="btn-ranking">🏆 Ranking</button>
@@ -609,6 +669,7 @@ function vistaInicio() {
     </main>`;
 
   document.getElementById('btn-sonido').addEventListener('click', alternarSonido);
+  document.getElementById('btn-instalar-app')?.addEventListener('click', instalarParcialito);
   document.getElementById('btn-errores')?.addEventListener('click', () => { Sonido.clic(); lanzarErrores(); });
   document.getElementById('btn-dificiles')?.addEventListener('click', () => { Sonido.clic(); lanzarDificiles(); });
   document.getElementById('btn-ranking')?.addEventListener('click', () => { Sonido.clic(); vistaRanking(); });
