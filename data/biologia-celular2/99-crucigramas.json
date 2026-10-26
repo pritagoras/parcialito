@@ -1,0 +1,227 @@
+{
+  "materia": "Biología 2",
+  "tema": "Crucigramas",
+  "actividad": "crucigrama",
+  "crucigrama": [
+    {
+      "titulo": "1 · Fundamentos y estructura",
+      "palabras": [
+        {
+          "respuesta": "HELICASA",
+          "pista": "Enzima que separa las hebras de ADN al abrir la doble hélice."
+        },
+        {
+          "respuesta": "PRIMASA",
+          "pista": "Enzima que sintetiza los cebadores de ARN necesarios para iniciar la síntesis."
+        },
+        {
+          "respuesta": "POLIMERASA",
+          "pista": "Enzima que incorpora nucleótidos complementarios para alargar la hebra nueva."
+        },
+        {
+          "respuesta": "LIGASA",
+          "pista": "Enzima que une fragmentos de ADN mediante enlaces fosfodiéster."
+        },
+        {
+          "respuesta": "OKAZAKI",
+          "pista": "Apellido asociado a los fragmentos sintetizados de forma discontinua en la hebra rezagada."
+        },
+        {
+          "respuesta": "TOPOISOMERASA",
+          "pista": "Enzima que alivia la tensión torsional del ADN por delante de la horquilla de replicación."
+        },
+        {
+          "respuesta": "Cebador",
+          "pista": "Pequeño fragmento inicial que aporta un extremo 3′-OH para comenzar la síntesis de ADN."
+        },
+        {
+          "respuesta": "SEMICONSERVATIVA",
+          "pista": "Propiedad de la replicación en la que cada molécula hija conserva una hebra parental y contiene una nueva."
+        },
+        {
+          "respuesta": "Ori",
+          "pista": "Región del cromosoma donde se inicia la apertura de la cadena y comienza la duplicación del genoma"
+        },
+        {
+          "respuesta": "Fase S",
+          "pista": "Etapa de la interfase celular en la cual se sintetiza una copia completa del material genético"
+        },
+        {
+          "respuesta": "Burbuja",
+          "pista": "Región abierta de la doble hélice que se forma en el sitio de origen y posee dos horquillas"
+        },
+        {
+          "respuesta": "Replicón",
+          "pista": "Segmento de ADN que se copia de manera coordinada a partir de un sitio de inicio individual"
+        },
+        {
+          "respuesta": "Horquilla",
+          "pista": "Estructura en forma de Y donde las cadenas de ADN se separan y progresa la síntesis"
+        }
+      ]
+    },
+    {
+      "titulo": "2 · Ciclo celular y organización",
+      "palabras": [
+        {
+          "respuesta": "Telómero",
+          "pista": "Estructura con secuencias repetitivas situada en los extremos de los cromosomas lineales para proteger el material genético"
+        },
+        {
+          "respuesta": "Interfase",
+          "pista": "Período del ciclo celular que abarca las etapas G uno, S y G dos previo a la mitosis"
+        },
+        {
+          "respuesta": "Hebra líder",
+          "pista": "Cadena nueva de ADN sintetizada de forma continua en el mismo sentido del avance de la horquilla"
+        },
+        {
+          "respuesta": "Telomerasa",
+          "pista": "Ribonucleoproteína con función de transcriptasa reversa que evita el acortamiento de las regiones extremas del ADN"
+        },
+        {
+          "respuesta": "SSB",
+          "pista": "Moléculas que se unen al ADN monocatenario para estabilizarlo e impedir que se vuelvan a reaparear las hebras"
+        },
+        {
+          "respuesta": "FPS",
+          "pista": "Factor promotor de la síntesis que regula la transición de la fase G uno a la fase S"
+        },
+        {
+          "respuesta": "FPM",
+          "pista": "Factor promotor de la mitosis que estimula el pasaje del ciclo celular desde G dos hacia M"
+        },
+        {
+          "respuesta": "dNTPs",
+          "pista": "Sustratos trifosfatados que utiliza la enzima para incorporar los desoxirribonucleótidos en la cadena naciente"
+        },
+        {
+          "respuesta": "Mitosis",
+          "pista": "Proceso de división nuclear en la fase M que distribuye de forma equitativa el material genético duplicado"
+        },
+        {
+          "respuesta": "Fidelidad",
+          "pista": "Propiedad de la copia genética garantizada por la complementariedad de bases y la corrección de errores de la enzima"
+        },
+        {
+          "respuesta": "Eucariotas",
+          "pista": "Organismos cuyo material genético es lineal, está asociado a histonas y presenta múltiples orígenes de replicación"
+        },
+        {
+          "respuesta": "Pirofosfato",
+          "pista": "Grupo liberado durante la incorporación de cada nucleótido que contribuye energéticamente al avance de la síntesis"
+        },
+        {
+          "respuesta": "Antiparalelas",
+          "pista": "Disposición espacial de las dos hebras del ADN que corren en sentidos opuestos, cinco a tres y tres a cinco"
+        }
+      ]
+    },
+    {
+      "titulo": "3 · Moléculas y procesos",
+      "palabras": [
+        {
+          "respuesta": "Transcripción",
+          "pista": "Síntesis de un tipo de ácido nucleico de hebra simple a partir de un molde de ADN"
+        },
+        {
+          "respuesta": "Hebra rezagada",
+          "pista": "Cadena nueva sintetizada de forma discontinua mediante fragmentos cortos en sentido opuesto al avance de la horquilla"
+        },
+        {
+          "respuesta": "ARNt",
+          "pista": "Molécula adaptadora que transporta un aminoácido específico hacia el sitio de traducción"
+        },
+        {
+          "respuesta": "Molde",
+          "pista": "Cadena parental cuya secuencia determina el orden de nucleótidos de la hebra nueva"
+        },
+        {
+          "respuesta": "Codón",
+          "pista": "Triplete de nucleótidos en el ARN mensajero que especifica la incorporación de un aminoácido"
+        },
+        {
+          "respuesta": "Uracilo",
+          "pista": "Base nitrogenada presente en los ribonucleótidos que reemplaza a la timina en el ARN"
+        },
+        {
+          "respuesta": "Histonas",
+          "pista": "Proteínas que se sintetizan en la fase S para asociarse al ADN recién replicado"
+        },
+        {
+          "respuesta": "Promotor",
+          "pista": "Secuencia del gen que reconoce la ARN polimerasa para dar comienzo a la transcripción"
+        },
+        {
+          "respuesta": "Ribosoma",
+          "pista": "Estructura celular encargada de formar los enlaces peptídicos durante la síntesis de proteínas"
+        },
+        {
+          "respuesta": "Somáticas",
+          "pista": "Tipo de células corporales donde la actividad de la telomerasa suele ser baja o indetectable"
+        },
+        {
+          "respuesta": "Citocinesis",
+          "pista": "Proceso que divide el citoplasma celular completando la formación de las células hijas"
+        },
+        {
+          "respuesta": "Exonucleasa",
+          "pista": "Actividad enzimática capaz de remover el nucleótido terminal mal apareado durante el copiado"
+        },
+        {
+          "respuesta": "Procariotas",
+          "pista": "Organismos cuyo cromosoma circular posee habitualmente un único origen de replicación"
+        }
+      ]
+    },
+    {
+      "titulo": "4 · Polimerasas y precisión",
+      "palabras": [
+        {
+          "respuesta": "Traducción",
+          "pista": "Proceso donde el ribosoma lee la secuencia del ARN mensajero para sintetizar una cadena polipeptídica"
+        },
+        {
+          "respuesta": "Proofreading",
+          "pista": "Término en inglés para la corrección de pruebas realizada por las polimerasas principales"
+        },
+        {
+          "respuesta": "Bidireccional",
+          "pista": "Característica de la replicación que avanza hacia ambos lados desde cada punto de origen"
+        },
+        {
+          "respuesta": "Transcriptasa",
+          "pista": "Tipo de enzima reversa que utiliza un molde de ARN para sintetizar ADN"
+        },
+        {
+          "respuesta": "Alfa",
+          "pista": "Enzima eucariota que actúa junto a la primasa para iniciar un tramo corto de ADN"
+        },
+        {
+          "respuesta": "Epsilon",
+          "pista": "Enzima eucariota encargada de elongar de forma continua la hebra líder o adelantada"
+        },
+        {
+          "respuesta": "Delta",
+          "pista": "Enzima eucariota que sintetiza principalmente la hebra rezagada mediante la formación de fragmentos"
+        },
+        {
+          "respuesta": "Pol I",
+          "pista": "Enzima bacteriana encargada de remover los cebadores de ARN y reemplazarlos por ADN"
+        },
+        {
+          "respuesta": "Pol II",
+          "pista": "Enzima procariota especializada principalmente en la reparación del material genético dañado"
+        },
+        {
+          "respuesta": "Pol III",
+          "pista": "Principal enzima encargada de la elongación de ambas hebras en la replicación bacteriana"
+        },
+        {
+          "respuesta": "Discontinua",
+          "pista": "Forma de síntesis de la hebra rezagada por fragmentos."
+        }
+      ]
+    }
+  ]
+}
