@@ -676,6 +676,58 @@ function inyectarEstilos() {
 .lab2 .op-genes{gap:.3rem}
 @media(max-width:760px){.lab2 .op-wrap{padding:4px 0 18px}.lab2 .op-tabs{position:static;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;border-radius:16px;border-width:1px;padding:5px;background:#081433;box-shadow:none}.lab2 .op-tab{font-size:.72rem;flex-direction:row;justify-content:center}.lab2 .op-card{padding:.85rem}.lab2 .op-genes{grid-template-columns:repeat(5,minmax(0,1fr))}.lab2 .op-gene{font-size:.62rem}}
 
+
+/* Pulido visual de la primera sección: jerarquía, profundidad y legibilidad */
+.lab2{--ln:#24468f;--ln2:#477cf4;background:radial-gradient(ellipse at 57% 18%,rgba(27,76,174,.16),transparent 46%),radial-gradient(ellipse at 92% 65%,rgba(112,62,220,.10),transparent 35%),#040a1c}
+.lab2 .lab-cab{gap:20px}
+.lab2 .lab-tit{align-items:flex-start}
+.lab2 .lab-tit>svg{filter:drop-shadow(0 0 10px #9b6dff66);flex:none}
+.lab2 .lab-intro{max-width:62ch;color:#b9c9f2;font-size:.96rem;letter-spacing:.005em}
+.lab2 .lab-tabs{border-color:#203a7c;background:rgba(8,18,48,.86);box-shadow:0 8px 28px #02061655,inset 0 1px #ffffff08}
+.lab2 .lab-tab{padding:10px 19px;font-size:.88rem;transition:background .2s,color .2s,transform .2s}
+.lab2 .lab-tab.act{background:linear-gradient(135deg,#5268ff,#344ce8);box-shadow:0 5px 18px #334cff55,inset 0 1px #ffffff35}
+.lab2 .lab-panel,.lab2 .lab-tarj,.lab2 .lab-detalle,.lab2 .lab-real,.lab2 .lab-regla,.lab2 .lab-paso-c,.lab2 .lab-tabla,.lab2 .lab-quiz{background:linear-gradient(145deg,rgba(8,20,49,.96),rgba(5,13,34,.96));border-color:#203c7f;box-shadow:0 10px 30px #00000016,inset 0 1px #ffffff05}
+.lab2 .lab-panel{border-radius:18px;padding:14px 15px}
+.lab2 .lab-grupo{border-color:#1b3268}
+.lab2 .lab-capa-op{padding:9px 3px;font-size:.85rem}
+.lab2 .lab-punto{box-shadow:0 0 12px color-mix(in srgb,var(--c) 48%,transparent)}
+.lab2 .lab-modos button{transition:all .18s ease}
+.lab2 .lab-modos button.act{background:linear-gradient(110deg,#143b87,#10275d);box-shadow:inset 0 0 0 1px #4a8dff,0 4px 14px #0003}
+.lab2 .lab-escena{background:radial-gradient(ellipse at 50% 48%,rgba(19,48,112,.25),transparent 58%);border-radius:22px}
+.lab2 .lab-svg{filter:drop-shadow(0 10px 20px #0002)}
+.lab2 .lab-svg .lab-parte{transition:filter .2s,opacity .35s}
+.lab2 .lab-svg .lab-parte:hover,.lab2 .lab-svg .lab-parte:focus-visible{filter:brightness(1.18) drop-shadow(0 0 8px #8fbaff77)}
+.lab2 .lab-detalle{border-radius:16px;padding:16px 19px;box-shadow:inset 3px 0 0 color-mix(in srgb,var(--c,#2f7bff) 30%,transparent)}
+.lab2 .lab-detalle h3{letter-spacing:-.015em}
+.lab2 .lab-tarjetas{gap:16px;margin-top:18px}
+.lab2 .lab-tarj{border-radius:18px;padding:17px 18px}
+.lab2 .lab-tarj h3{letter-spacing:-.02em}
+.lab2 .lab-fila-f{grid-template-columns:42px 1fr;gap:12px}
+.lab2 .lab-ic{width:42px;height:42px;font-size:1.15rem}
+.lab2 .lab-elem{padding:9px 7px;transition:background .16s,border-color .16s}
+.lab2 .lab-elem span{font-size:.77rem;line-height:1.45}
+.lab2 .lab-esq{margin-top:10px}
+.lab2 .lab-tipos{background:rgba(5,14,37,.55)}
+.lab2 .lab-clave{background:linear-gradient(110deg,rgba(8,20,49,.96),rgba(6,15,38,.94));box-shadow:0 6px 20px #0002}
+.lab2 .lab-pager button{transition:transform .15s,background .15s,border-color .15s;box-shadow:inset 0 1px #ffffff10}
+.lab2 .lab-pager button:hover:not(:disabled){transform:translateY(-2px);border-color:#709cff}
+.lab2 .lab-btn,.lab2 .lab-btn-sec,.lab2 .lab-reiniciar{transition:transform .15s,filter .15s,background .15s}
+.lab2 .lab-btn:hover,.lab2 .lab-btn-sec:hover,.lab2 .lab-reiniciar:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.lab2 button:focus-visible,.lab2 summary:focus-visible,.lab2 .lab-elem:focus-visible{outline:2px solid #91baff;outline-offset:3px}
+@media(min-width:1101px){
+ .lab2 .lab-vista{grid-template-columns:238px minmax(0,1fr);gap:20px}
+ .lab2 .lab-escena{min-height:320px}
+ .lab2 .lab-svg{max-height:530px}
+ .lab2 .lab-tarjetas{grid-template-columns:1.05fr 1fr .95fr}
+}
+@media(max-width:760px){
+ .lab2 .lab-intro{font-size:.86rem;line-height:1.55}
+ .lab2 .lab-panel{box-shadow:0 8px 24px #0002}
+ .lab2 .lab-escena{box-shadow:inset 0 1px #ffffff08,0 10px 24px #0002}
+ .lab2 .lab-tarj{box-shadow:0 8px 22px #0002}
+ .lab2 .lab-clave{border-color:#3155a1}
+}
 @media(prefers-reduced-motion:reduce){.lab2 *{animation:none!important;transition:none!important}}
+
 `;
 }
