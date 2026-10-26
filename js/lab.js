@@ -310,7 +310,7 @@ function inyectarEstilosCatalogo() {
 
 function abrirFactores({ app, volver }) {
   let capas = { ...CAPAS_INICIO }, modo = 'general', paso = 0, pasoActivo = false, pasoAPaso = false, sel = null;
-  let chico = window.matchMedia('(max-width: 760px)'), vbActual = null, raf = 0, cerrado = false;
+  let chico = window.matchMedia('(max-width: 760px)'), vbActual = null, raf = 0, cerrado = false, molstarScrollObserver = null;
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   inyectarEstilos();
@@ -508,15 +508,14 @@ function abrirFactores({ app, volver }) {
       if (el.style.height === '100%' || el.style.height === '100vh' || el.style.height === '100dvh') el.style.height = height;
       if (el.style.touchAction === 'none') el.style.touchAction = touchAction;
     });
-    let scrollObserver;
     const montar = () => {
       vista.insertAdjacentHTML('afterbegin', '<pdbe-molstar id="lab-pdbe" molecule-id="7ml2" hide-controls="false" hide-logo="true" bg-color-r="4" bg-color-g="10" bg-color-b="28" lighting="glossy" style="display:block;position:relative;width:100%;height:480px;max-width:100%;z-index:0"></pdbe-molstar>');
       fb.textContent = 'Podés rotar el modelo dentro del visor; la página debe seguir desplazándose normalmente.';
       restaurarScroll();
       if (window.MutationObserver) {
-        scrollObserver = new MutationObserver(restaurarScroll);
-        scrollObserver.observe(raiz, {attributes:true, attributeFilter:['style']});
-        scrollObserver.observe(cuerpo, {attributes:true, attributeFilter:['style']});
+        molstarScrollObserver = new MutationObserver(restaurarScroll);
+        molstarScrollObserver.observe(raiz, {attributes:true, attributeFilter:['style']});
+        molstarScrollObserver.observe(cuerpo, {attributes:true, attributeFilter:['style']});
       }
     };
     if (window.customElements && window.customElements.get('pdbe-molstar')) return montar();
@@ -527,7 +526,7 @@ function abrirFactores({ app, volver }) {
     document.head.appendChild(s);
   });
 
-  $('#lab-volver').addEventListener('click', () => { cerrado = true; cancelAnimationFrame(raf); chico.removeEventListener('change', alCambiar); volver(); });
+  $('#lab-volver').addEventListener('click', () => { cerrado = true; cancelAnimationFrame(raf); molstarScrollObserver?.disconnect(); chico.removeEventListener('change', alCambiar); volver(); });
 
   pintarEscena(); ajustarTarjetas();
   seleccionar('basal'); sel = 'basal'; aplicar(true);
