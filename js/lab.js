@@ -459,7 +459,7 @@ function abrirFactores({ app, volver }) {
 
   // ----- Pestañas -----
   function irATab(id) {
-    $('.lab-tab').forEach((b) => { const on = b.dataset.tab === id; b.classList.toggle('act', on); b.setAttribute('aria-selected', on); });
+    $$('.lab-tab').forEach((b) => { const on = b.dataset.tab === id; b.classList.toggle('act', on); b.setAttribute('aria-selected', on); });
     TABS.forEach(([t]) => { $('#sec-' + t).hidden = t !== id; });
     if (id === 'preguntas' && !$('#lab-quiz').childElementCount) reiniciarQuiz();
     window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
