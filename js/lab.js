@@ -1,3 +1,5 @@
+import { abrirOperones } from './operones.js?v=20261026-10';
+
 // Parcialito LAB · Factores de transcripción (basales y específicos)
 // Tablero con cuatro secciones: Vista, Explicación, Comparador y Preguntas.
 // PC: panel de capas a la izquierda + escena grande + tarjetas abajo.
