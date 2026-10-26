@@ -101,6 +101,43 @@
       }
     ]
   },
+  "crucigrama": {
+    "titulo": "Duplicación del ADN",
+    "palabras": [
+      {
+        "respuesta": "HELICASA",
+        "pista": "Enzima que separa las hebras de ADN al abrir la doble hélice."
+      },
+      {
+        "respuesta": "PRIMASA",
+        "pista": "Enzima que sintetiza los cebadores de ARN necesarios para iniciar la síntesis."
+      },
+      {
+        "respuesta": "POLIMERASA",
+        "pista": "Enzima que incorpora nucleótidos complementarios para alargar la hebra nueva."
+      },
+      {
+        "respuesta": "LIGASA",
+        "pista": "Enzima que une fragmentos de ADN mediante enlaces fosfodiéster."
+      },
+      {
+        "respuesta": "OKAZAKI",
+        "pista": "Apellido asociado a los fragmentos sintetizados de forma discontinua en la hebra rezagada."
+      },
+      {
+        "respuesta": "TOPOISOMERASA",
+        "pista": "Enzima que alivia la tensión torsional del ADN por delante de la horquilla de replicación."
+      },
+      {
+        "respuesta": "CEBADOR",
+        "pista": "Pequeño fragmento inicial que aporta un extremo 3′-OH para comenzar la síntesis de ADN."
+      },
+      {
+        "respuesta": "SEMICONSERVATIVA",
+        "pista": "Propiedad de la replicación en la que cada molécula hija conserva una hebra parental y contiene una nueva."
+      }
+    ]
+  },
   "preguntas": [
     {
       "pregunta": "Durante la fase S de la interfase ocurre:",
