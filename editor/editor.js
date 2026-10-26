@@ -1,15 +1,21 @@
+// ==========================================================
+// editor.js: editor local de materias, temas y preguntas.
+//
+// Todo ocurre en tu navegador: no se sube nada a ningún lado.
+// Lee la carpeta data/ del repo, te deja editar y después:
+//   - escribe los cambios directo en la carpeta (Chrome / Edge), o
+//   - descarga un ZIP con la carpeta data/ lista para pisar la del repo.
+// Cada tema puede tener también tarjetas tipo Anki ("tarjetas": frente y dorso) para el repaso diario.
+// Un tema también puede tener un crucigrama ("crucigrama": palabras con pistas); el tablero lo arma el juego.
+// Las imágenes de las preguntas se recortan y se reducen en el navegador, y se guardan en data/img/.
+// ==========================================================
 'use strict';
 
 (() => {
   // ---------- Utilidades ----------
-  const $ = (s, r = document) => r.querySelector(s); const $$ = (s, r = document) => [...r.querySelectorAll(s)];
-  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#39;'
-  }[c] || c));
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const norm = (s) => String(s ?? '').trim().toLowerCase().replace(/\s+/g, ' ');
   const LETRAS = ['A', 'B', 'C', 'D'];
   const EMOJIS = ['📚', '🧬', '🔬', '🧪', '⚗️', '🧠', '🫀', '🦴', '💊', '🌱', '🌍', '📜', '⚖️', '🏛️', '💻', '📐', '➗', '📊', '💰', '🗣️', '🎨', '🎵', '⚽', '🩺'];
@@ -36,7 +42,6 @@
   let _temporizadorAviso = null;
   function avisar(texto) {
     const el = $('#aviso');
-    if (!el) return;
     el.textContent = texto;
     el.classList.add('visible');
     clearTimeout(_temporizadorAviso);
@@ -52,18 +57,18 @@
   const E = {
     materias: [],
     sel: { materia: null, tema: null },
-    abiertas: new Set(),
+    abiertas: new Set(),           // uids de preguntas desplegadas
     filtro: '',
-    handle: null,
+    handle: null,                  // carpeta data/ con permiso de escritura (si se abrió con la API)
     base: { archivos: new Map(), crudos: new Map(), secuencia: '', indice: '' },
     analisis: { lista: [], conteo: new Map(), errores: 0, avisos: 0 },
     avisosCarga: [],
-    imgs: new Map(),
-    imgNuevas: new Set(),
-    imgExistentes: new Set(),
-    imgListadoOk: false,
+    imgs: new Map(),               // nombre de imagen -> Blob (para vista previa y para escribirla al guardar)
+    imgNuevas: new Set(),          // imágenes cargadas acá que todavía no están en la carpeta del repo
+    imgExistentes: new Set(),      // nombres que ya estaban en data/img/ al abrir la carpeta
+    imgListadoOk: false,           // true si se pudo leer data/img/ (permite avisar de imágenes faltantes)
   };
-  const PROB = new WeakMap();
+  const PROB = new WeakMap();      // pregunta -> { errores, avisos }
 
   // ---------- Modelo ----------
   const nuevaPregunta = (o = {}) => ({
@@ -103,12 +108,13 @@
     });
   }
 
+  // "data/img/archivo.webp" -> "archivo.webp" (null si no apunta a data/img/)
   const nombreImagen = (ruta) => {
     const m = /^data\/img\/([\w.%-]+)$/.exec(String(ruta || '').trim());
     return m ? m[1] : null;
   };
 
-  // ---------- Validación ----------
+  // ---------- Validación (misma lógica que tools/validar.py) ----------
   const REF_LETRA = /\b(opci[oó]n|alternativa|inciso|respuesta)\s+[A-D]\b/i;
   const COMODINES = /\b(todas las anteriores|ninguna de las anteriores|ambas son correctas|a y b)\b/i;
 
@@ -127,9 +133,9 @@
     else if (REF_LETRA.test(q.explicacion)) avisos.push('La explicación menciona una letra de opción; el juego mezcla el orden.');
     if (norm(q.imagen)) {
       const n = nombreImagen(q.imagen);
-      if (!n && !/^https:\/\/\S+$/i.test(q.imagen.trim())) avisos.push('La ruta de la imagen no es válida.');
+      if (!n && !/^https:\/\/\S+$/i.test(q.imagen.trim())) avisos.push('La ruta de la imagen no es válida: el juego no la va a mostrar (tiene que ser data/img/... o https://...).');
       else if (n && E.imgListadoOk && !E.imgExistentes.has(n) && !E.imgs.has(n)) avisos.push(`La imagen "${n}" no está en data/img/.`);
-      if (!norm(q.imagenAlt)) avisos.push('La imagen no tiene descripción.');
+      if (!norm(q.imagenAlt)) avisos.push('La imagen no tiene descripción (sirve para accesibilidad).');
     }
     return { errores, avisos };
   }
@@ -138,8 +144,8 @@
     const errores = [], avisos = [];
     if (!norm(c.frente)) errores.push('Falta el frente.');
     if (!norm(c.dorso)) errores.push('Falta el dorso.');
-    if (norm(c.frente).length > 280) avisos.push('El frente es largo: conviene usar una sola idea corta.');
-    if (norm(c.dorso).length > 600) avisos.push('El dorso es muy largo.');
+    if (norm(c.frente).length > 280) avisos.push('El frente es largo: una tarjeta rinde más con una sola idea corta.');
+    if (norm(c.dorso).length > 600) avisos.push('El dorso es muy largo; probá partirlo en varias tarjetas.');
     return { errores, avisos };
   }
 
@@ -164,8 +170,15 @@
       carpetas.set(m.carpeta, true);
       m.temas.forEach((t) => {
         if (!norm(t.nombre)) reg('e', m, t, null, 'El tema no tiene nombre.');
-        if (!t.preguntas.length && (!t.tarjetas || !t.tarjetas.length)) {
-          reg('e', m, t, null, 'El tema debe contener al menos una pregunta o al menos una tarjeta.');
+        if (!t.preguntas.length && !(t.tarjetas || []).length) reg('e', m, t, null, 'El tema no tiene preguntas ni tarjetas.');
+        if (t.extra?.crucigrama !== undefined) {
+          const nc = normalizarCrucigrama(t.extra.crucigrama);
+          if (nc.error) reg('a', m, t, null, `Crucigrama: ${nc.error}`);
+          else {
+            if (nc.validas < 4) reg('a', m, t, null, `Crucigrama: tiene ${nc.validas} palabras válidas y hacen falta al menos 4.`);
+            nc.filas.filter((f) => f.problemas.length).forEach((f) => reg('a', m, t, null, `Crucigrama, palabra ${f.n}: ${f.problemas.join(' ')}`));
+            nc.filas.filter((f) => f.avisos.length).forEach((f) => reg('a', m, t, null, `Crucigrama, palabra ${f.n}: ${f.avisos.join(' ')}`));
+          }
         }
         const vistas = new Map();
         t.preguntas.forEach((q, i) => {
@@ -196,7 +209,7 @@
     E.analisis = { lista, conteo, errores, avisos };
   }
 
-  // ---------- Serialización ----------
+  // ---------- Serialización (qué se escribe en cada archivo) ----------
   const J = (v) => JSON.stringify(v);
 
   function serializarPregunta(q) {
@@ -205,7 +218,7 @@
     const enLinea = `[${lineasOps.join(', ')}]`;
     const ops = enLinea.length <= 120
       ? enLinea
-      : `[\n${lineasOps.map((l) => `${sangria}${l}`).join(',\n')}\n${sangria}]`;
+      : `[\n${lineasOps.map((l) => `${sangria}  ${l}`).join(',\n')}\n${sangria}]`;
     const campos = [
       `${sangria}"pregunta": ${J(q.pregunta)}`,
       `${sangria}"opciones": ${ops}`,
@@ -227,12 +240,13 @@
 
   function serializarTema(m, t) {
     const campos = [`  "materia": ${J(m.nombre)}`, `  "tema": ${J(t.nombre)}`];
-    for (const [k, v] of Object.entries(t.extra || {})) campos.push(`  ${J(k)}: ${J(v)}`);
+    for (const [k, v] of Object.entries(t.extra || {})) campos.push(`  ${J(k)}: ${JSON.stringify(v, null, 2).replace(/\n/g, '\n  ')}`);
     campos.push(`  "preguntas": [\n${t.preguntas.map(serializarPregunta).join(',\n')}\n  ]`);
     if (t.tarjetas?.length) campos.push(`  "tarjetas": [\n${t.tarjetas.map(serializarTarjeta).join(',\n')}\n  ]`);
     return `{\n${campos.join(',\n')}\n}\n`;
   }
 
+  // "orden" se escribe solo si el archivo ya lo tenía o si cambió el orden/conjunto de materias
   function serializarMeta(m, forzar) {
     const o = { nombre: m.nombre, emoji: m.emoji };
     if (m.color) o.color = m.color;
@@ -241,6 +255,7 @@
     return JSON.stringify(o, null, 2) + '\n';
   }
 
+  // El juego ignora el orden si no hay _materia.json con "orden"
   const metaNecesaria = (m, forzar) =>
     forzar || m.tieneMeta || m.emoji !== '📚' || !!m.color || norm(m.nombre) !== norm(m.nombreBase);
 
@@ -248,6 +263,7 @@
     return `${String(i + 1).padStart(2, '0')}-${t.parte}.json`;
   }
 
+  // Asegura que cada tema tenga un "parte" de nombre único dentro de su materia
   function normalizarPartes(m) {
     const usadas = new Set();
     m.temas.forEach((t) => {
@@ -266,23 +282,14 @@
         if (m.color) o.color = m.color;
         o.temas = m.temas.map((t, i) => {
           const archivo = nombreArchivo(t, i);
-          const item = {
-            id: `${m.carpeta}/${archivo.replace(/\.json$/, '')}`,
-            nombre: t.nombre,
-            archivo: `data/${m.carpeta}/${archivo}`,
-            preguntas: t.preguntas.length,
-          };
-          if (t.tarjetas?.length) item.tarjetas = t.tarjetas.length;
-          const act = t.extra?.actividad;
-          if (typeof act === 'string' && act.trim()) item.actividad = act.trim();
-          else if (Array.isArray(act)) { const l = act.filter((a) => typeof a === 'string' && a.trim()).map((a) => a.trim()); if (l.length) item.actividad = l; }
-          return item;
+          return { id: `${m.carpeta}/${archivo.replace(/\.json$/, '')}`, nombre: t.nombre, archivo: `data/${m.carpeta}/${archivo}`, preguntas: t.preguntas.length, ...(t.tarjetas?.length ? { tarjetas: t.tarjetas.length } : {}) };
         });
         return o;
       }),
     };
   }
 
+  // Mapa ruta (relativa a data/) -> texto, con todo lo que el editor administra
   function construirDestino() {
     const destino = new Map();
     const secuencia = E.materias.map((m) => m.carpeta).join('|');
@@ -307,6 +314,7 @@
     }
     for (const ruta of E.base.archivos.keys()) if (!destino.has(ruta)) plan.borrados.push(ruta);
     plan.indiceCambio = JSON.stringify(indiceNuevo.materias) !== E.base.indice;
+    // Imágenes nuevas que alguna pregunta usa de verdad (las que se descartaron no se escriben)
     const usadas = new Set();
     E.materias.forEach((m) => m.temas.forEach((t) => t.preguntas.forEach((q) => { const n = nombreImagen(q.imagen); if (n) usadas.add(n); })));
     plan.imagenes = [...E.imgNuevas].filter((n) => usadas.has(n) && E.imgs.has(n));
@@ -323,6 +331,7 @@
     });
   }
 
+  // Congela como "lo que está en el repo" el conjunto de archivos indicado
   function fijarBase(archivos, crudos) {
     E.base.archivos = new Map(archivos);
     E.base.crudos = new Map(crudos);
@@ -336,7 +345,7 @@
     releerOrdenesDeArchivos(archivos);
   }
 
-  // ---------- ZIP ----------
+  // ---------- ZIP (sin compresión, sin librerías) ----------
   const TABLA_CRC = (() => {
     const t = new Uint32Array(256);
     for (let n = 0; n < 256; n++) {
@@ -399,7 +408,8 @@
     return `${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}`;
   };
 
-  // ---------- Carga ----------
+  // ---------- Carga de archivos ----------
+  // mapa: ruta relativa a data/ ("materia/01-tema.json") -> texto
   function cargarArchivos(mapa) {
     const grupos = new Map();
     const problemas = [], avisos = [], gestionados = [];
@@ -424,26 +434,24 @@
       for (const f of g.temas) {
         let datos;
         try { datos = JSON.parse(f.texto); } catch (e) { problemas.push(`${f.ruta}: JSON inválido (${e.message}). No se tocó.`); continue; }
-        if (!datos || typeof datos !== 'object') {
-          problemas.push(`${f.ruta}: formato inválido. No se tocó.`);
+        if (!datos || typeof datos !== 'object' || !Array.isArray(datos.preguntas)) {
+          problemas.push(`${f.ruta}: no tiene una lista "preguntas". No se tocó.`);
           continue;
         }
         gestionados.push(f.ruta);
         const { materia, tema, preguntas, tarjetas, ...extra } = datos;
         const qs = [];
-        if (Array.isArray(preguntas)) {
-          preguntas.forEach((p, i) => {
-            if (!p || typeof p !== 'object') { avisos.push(`${f.ruta}: la pregunta ${i + 1} no es un objeto; se omitió.`); return; }
-            qs.push(preguntaDesdeJSON(p, avisos, `${f.ruta}, pregunta ${i + 1}`));
-          });
-        }
+        preguntas.forEach((p, i) => {
+          if (!p || typeof p !== 'object') { avisos.push(`${f.ruta}: la pregunta ${i + 1} no es un objeto; se omitió.`); return; }
+          qs.push(preguntaDesdeJSON(p, avisos, `${f.ruta}, pregunta ${i + 1}`));
+        });
         const ts = [];
         if (Array.isArray(tarjetas)) {
           tarjetas.forEach((c, i) => {
             if (!c || typeof c !== 'object') { avisos.push(`${f.ruta}: la tarjeta ${i + 1} no es un objeto; se omitió.`); return; }
             ts.push(tarjetaDesdeJSON(c));
           });
-        } else if (tarjetas !== undefined) extra.tarjetas = tarjetas;
+        } else if (tarjetas !== undefined) extra.tarjetas = tarjetas;   // formato raro: se conserva tal cual
         const parte = f.archivo.replace(/\.json$/i, '').replace(/^\d+[-_ ]*/, '');
         temas.push(nuevoTema({ nombre: String(tema ?? ''), parte: slug(parte), extra, preguntas: qs, tarjetas: ts, materiaCampo: String(materia ?? '') }));
       }
@@ -467,22 +475,27 @@
     E.filtro = '';
     E.avisosCarga = [...problemas, ...avisos];
 
+    // Lo que acaba de leerse es, por definición, lo que hay en el repo.
+    // Solo cuentan como "existentes" los archivos que realmente estaban en disco.
     E.base.secuencia = materias.map((m) => m.carpeta).join('|');
     const destino = construirDestino();
     const existentes = new Map();
     for (const [ruta, texto] of destino) if (mapa.has(ruta)) existentes.set(ruta, texto);
+    // Archivos leídos que el editor va a reemplazar por otro nombre: figuran como "a borrar"
     for (const ruta of gestionados) if (!destino.has(ruta)) existentes.set(ruta, mapa.get(ruta));
     const crudos = new Map();
     for (const ruta of existentes.keys()) crudos.set(ruta, mapa.get(ruta));
     fijarBase(existentes, crudos);
+    // El índice original se compara ignorando "generado"
     try {
       const idx = JSON.parse(mapa.get('index.json') || 'null');
       if (idx && Array.isArray(idx.materias)) E.base.indice = JSON.stringify(idx.materias);
-    } catch { }
+    } catch { /* se regenera igual */ }
   }
 
+  // Elige la carpeta data/ a partir de lo que el usuario seleccionó
   async function resolverDataDir(handle) {
-    try { return await handle.getDirectoryHandle('data'); } catch { }
+    try { return await handle.getDirectoryHandle('data'); } catch { /* no hay subcarpeta data */ }
     if (handle.name === 'data') return handle;
     if (window.confirm(`No encontré la carpeta "data" dentro de "${handle.name}".\n\n¿Querés que la cree ahí? (Cancelar = usar "${handle.name}" como si fuera data)`)) {
       return handle.getDirectoryHandle('data', { create: true });
@@ -520,8 +533,8 @@
     return mapa;
   }
 
-  // ---------- Imágenes ----------
-  const MAX_LADO = 1200;
+  // ---------- Imágenes de las preguntas (data/img/) ----------
+  const MAX_LADO = 1200;   // px del lado más largo: alcanza para estudiar y pesa poco
 
   function reiniciarImagenes(listadoOk = false, existentes = new Set(), blobs = new Map()) {
     E.imgListadoOk = listadoOk;
@@ -535,7 +548,7 @@
     try {
       const d = await dataDir.getDirectoryHandle('img');
       for await (const [n, h] of d.entries()) if (h.kind === 'file') nombres.add(n);
-    } catch { }
+    } catch { /* todavía no hay carpeta img */ }
     return nombres;
   }
 
@@ -550,13 +563,15 @@
     reiniciarImagenes(true, nombres, blobs);
   }
 
+  // Pasa el lienzo ya recortado a WebP (o JPEG si el navegador no lo soporta).
+  // El nombre sale del contenido: la misma imagen siempre tiene el mismo nombre y no se duplica.
   async function codificarImagen(lienzo) {
     let blob = await new Promise((ok) => lienzo.toBlob(ok, 'image/webp', 0.85));
     if (!blob || blob.type !== 'image/webp') {
       const c = document.createElement('canvas');
       c.width = lienzo.width; c.height = lienzo.height;
       const x = c.getContext('2d');
-      x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height);
+      x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height);   // JPEG no tiene transparencia
       x.drawImage(lienzo, 0, 0);
       blob = await new Promise((ok) => c.toBlob(ok, 'image/jpeg', 0.88));
     }
@@ -567,8 +582,10 @@
     return { blob, nombre };
   }
 
-  const LIMITE_BASE = 4096;
+  // ---------- Recorte de la imagen antes de usarla ----------
+  const LIMITE_BASE = 4096;   // las fotos enormes se achican un poco antes de editarlas (cuidan la memoria)
 
+  // Abre el recortador. Devuelve un <canvas> con el resultado final (ya a tamaño de salida) o null si se cancela.
   async function abrirRecorte(archivo) {
     const bmp = await createImageBitmap(archivo);
     let base = document.createElement('canvas');
@@ -589,7 +606,7 @@
           <button class="btn chico" id="rec-der" type="button" aria-label="Girar a la derecha">Girar ↷</button>
         </div>
         <div class="rec-escena"><canvas id="rec-canvas" aria-label="Imagen a recortar"></canvas></div>
-        <p class="pista">Arrastrá el recuadro para moverlo, y las esquinas o bordes para cambiarle el tamaño.</p>
+        <p class="pista">Arrastrá el recuadro para moverlo, y las esquinas o los bordes para cambiarle el tamaño. Si arrastrás fuera del recuadro, dibujás uno nuevo.</p>
         <span class="rotulo">Así va a quedar</span>
         <div class="rec-prev"><canvas id="rec-prev"></canvas></div>
         <p class="pista" id="rec-info"></p>`,
@@ -601,9 +618,9 @@
       const CURSOR = { n: 'ns-resize', s: 'ns-resize', e: 'ew-resize', w: 'ew-resize', nw: 'nwse-resize', se: 'nwse-resize', ne: 'nesw-resize', sw: 'nesw-resize' };
       const dpr = window.devicePixelRatio || 1;
       const limitar = (v, a, b) => Math.min(Math.max(v, a), b);
-      let dw = 0, dh = 0;
-      let rect = null;
-      let ratio = null;
+      let dw = 0, dh = 0;            // tamaño del lienzo en pantalla
+      let rect = null;               // recuadro de recorte, en coordenadas de pantalla
+      let ratio = null;              // proporción fija (ancho/alto) o null si es libre
       let arrastre = null;
       let aceptado = false;
 
@@ -618,13 +635,13 @@
       }
 
       const rectCompleto = () => ({ x: 0, y: 0, w: dw, h: dh });
-      function rectRatio(r) {
+      function rectRatio(r) {   // el recuadro más grande de esa proporción, centrado
         let w, h;
         if (dw / dh > r) { h = dh; w = dh * r; } else { w = dw; h = dw / r; }
         return { x: (dw - w) / 2, y: (dh - h) / 2, w, h };
       }
 
-      function asas() {
+      function asas() {   // con proporción fija solo se usan las esquinas
         const { x, y, w, h } = rect;
         const lista = [['nw', x, y], ['ne', x + w, y], ['sw', x, y + h], ['se', x + w, y + h]];
         if (!ratio) lista.push(['n', x + w / 2, y], ['s', x + w / 2, y + h], ['w', x, y + h / 2], ['e', x + w, y + h / 2]);
@@ -637,6 +654,7 @@
       const asaEn = (p) => (asas().find(([, ax, ay]) => Math.abs(p.x - ax) <= ASA && Math.abs(p.y - ay) <= ASA) || [])[0] || null;
       const dentro = (p) => p.x >= rect.x && p.x <= rect.x + rect.w && p.y >= rect.y && p.y <= rect.y + rect.h;
 
+      // Recuadro que crece desde un punto fijo (ax, ay) hacia la dirección (sx, sy)
       function desdeAncla(ax, ay, sx, sy, dx, dy) {
         const maxW = sx > 0 ? dw - ax : ax, maxH = sy > 0 ? dh - ay : ay;
         let w = dx, h = dy;
@@ -651,9 +669,9 @@
       function dibujar() {
         ctx.clearRect(0, 0, dw, dh);
         ctx.drawImage(base, 0, 0, dw, dh);
-        ctx.fillStyle = 'rgba(10, 5, 25, .62)';
+        ctx.fillStyle = 'rgba(10, 5, 25, .62)';   // oscurece lo que queda afuera
         ctx.beginPath(); ctx.rect(0, 0, dw, dh); ctx.rect(rect.x, rect.y, rect.w, rect.h); ctx.fill('evenodd');
-        ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(255, 243, 220, .35)';
+        ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(255, 243, 220, .35)';   // regla de tercios
         ctx.beginPath();
         for (let i = 1; i < 3; i++) {
           ctx.moveTo(rect.x + rect.w * i / 3, rect.y); ctx.lineTo(rect.x + rect.w * i / 3, rect.y + rect.h);
@@ -665,6 +683,7 @@
         for (const [, ax, ay] of asas()) { ctx.fillStyle = '#9B7BFF'; ctx.fillRect(ax - 6, ay - 6, 12, 12); ctx.strokeRect(ax - 6, ay - 6, 12, 12); }
       }
 
+      // Lo que realmente se va a guardar: el recorte, a lo sumo MAX_LADO px del lado más largo
       function lienzoSalida() {
         const kx = base.width / dw, ky = base.height / dh;
         const sx = rect.x * kx, sy = rect.y * ky, sw = rect.w * kx, sh = rect.h * ky;
@@ -682,13 +701,15 @@
         const k = Math.min(1, 520 / c.width, 150 / c.height);
         prev.width = Math.max(1, Math.round(c.width * k)); prev.height = Math.max(1, Math.round(c.height * k));
         prev.getContext('2d').drawImage(c, 0, 0, prev.width, prev.height);
-        info.textContent = `Tamaño final: ${c.width} × ${c.height} px. En el juego se ve entera.`;
+        const nota = c.height / c.width > 1.2
+          ? ' En el juego se ve entera, pero las imágenes muy altas se achican para entrar en pantalla.'
+          : ' En el juego se ve entera, sin recortes extra.';
+        info.textContent = `Tamaño final: ${c.width} × ${c.height} px.${nota}`;
         clearTimeout(temporizadorTam);
         temporizadorTam = setTimeout(() => c.toBlob((b) => {
-          if (b && d.open) info.textContent = `Tamaño final: ${c.width} × ${c.height} px (unos ${Math.max(1, Math.round(b.size / 1024))} KB). En el juego se ve entera.`;
+          if (b && d.open) info.textContent = `Tamaño final: ${c.width} × ${c.height} px (unos ${Math.max(1, Math.round(b.size / 1024))} KB).${nota}`;
         }, 'image/webp', 0.85), 300);
       }
-
       let cuadroPedido = false;
       const pedirRefresco = () => {
         if (cuadroPedido) return;
@@ -712,11 +733,11 @@
           rect = { ...rect, x: limitar(p.x - arrastre.dx, 0, dw - rect.w), y: limitar(p.y - arrastre.dy, 0, dh - rect.h) };
         } else if (arrastre.modo === 'asa') {
           const { a, r0 } = arrastre;
-          if (a.length === 2) {
+          if (a.length === 2) {   // esquina: el punto opuesto queda fijo
             const sx = a.includes('w') ? -1 : 1, sy = a.includes('n') ? -1 : 1;
             const ax = sx > 0 ? r0.x : r0.x + r0.w, ay = sy > 0 ? r0.y : r0.y + r0.h;
             rect = desdeAncla(ax, ay, sx, sy, Math.max(MIN, (p.x - ax) * sx), Math.max(MIN, (p.y - ay) * sy));
-          } else {
+          } else {                // borde (solo en modo libre)
             let x1 = r0.x, y1 = r0.y, x2 = r0.x + r0.w, y2 = r0.y + r0.h;
             if (a === 'w') x1 = Math.min(p.x, x2 - MIN);
             if (a === 'e') x2 = Math.max(p.x, x1 + MIN);
@@ -724,7 +745,7 @@
             if (a === 's') y2 = Math.max(p.y, y1 + MIN);
             rect = { x: x1, y: y1, w: x2 - x1, h: y2 - y1 };
           }
-        } else {
+        } else {                  // recuadro nuevo (solo si realmente se arrastró)
           if (!arrastre.activo && Math.hypot(p.x - arrastre.ax, p.y - arrastre.ay) < 6) return;
           arrastre.activo = true;
           const sx = p.x >= arrastre.ax ? 1 : -1, sy = p.y >= arrastre.ay ? 1 : -1;
@@ -735,6 +756,7 @@
       const soltar = () => { arrastre = null; };
       canvas.addEventListener('pointerup', soltar);
       canvas.addEventListener('pointercancel', soltar);
+      canvas.addEventListener('click', (e) => e.stopPropagation());
 
       $$('[data-r]', d).forEach((b) => b.addEventListener('click', () => {
         const [clave, , r] = RATIOS.find(([c]) => c === b.dataset.r);
@@ -770,7 +792,7 @@
     });
   }
 
-  const urlsImagen = new Map();
+  const urlsImagen = new Map();   // nombre -> URL temporal para la vista previa
   async function urlDeImagen(nombre) {
     if (urlsImagen.has(nombre)) return urlsImagen.get(nombre);
     let blob = E.imgs.get(nombre) || null;
@@ -783,13 +805,14 @@
     return url;
   }
 
-  // ---------- Escritura ----------
+  // ---------- Escritura en la carpeta (Chrome / Edge) ----------
   async function dirDe(raiz, partes, crear) {
     let d = raiz;
     for (const p of partes) d = await d.getDirectoryHandle(p, { create: crear });
     return d;
   }
 
+  // contenido: texto o Blob (las imágenes)
   async function escribirArchivo(raiz, ruta, contenido) {
     const partes = ruta.split('/');
     const nombre = partes.pop();
@@ -806,10 +829,10 @@
     try {
       const dir = await dirDe(raiz, partes, false);
       await dir.removeEntry(nombre);
-      if (partes.length) {
-        try { const padre = await dirDe(raiz, partes.slice(0, -1), false); await padre.removeEntry(partes[partes.length - 1]); } catch { }
+      if (partes.length) { // si la carpeta quedó vacía, se borra
+        try { const padre = await dirDe(raiz, partes.slice(0, -1), false); await padre.removeEntry(partes[partes.length - 1]); } catch { /* no estaba vacía */ }
       }
-    } catch { }
+    } catch { /* ya no existía */ }
   }
 
   async function elegirCarpetaEscritura() {
@@ -854,18 +877,16 @@
     return t;
   }
 
-  // ---------- Estado ----------
+  // ---------- Estado, borrador y avisos ----------
   function renderEstado() {
     const plan = calcularPlan();
     E.plan = plan;
     const n = cantidadCambios(plan);
     const chip = $('#estado');
-    if (!chip) return;
     const sucio = n > 0 || (plan.indiceCambio && E.materias.length > 0);
     chip.textContent = n > 0 ? `${plural(n, 'archivo', 'archivos')} con cambios` : (sucio ? 'Índice por actualizar' : 'Sin cambios');
     chip.classList.toggle('sucio', sucio);
     const b = $('#n-prob');
-    if (!b) return;
     const { errores, avisos } = E.analisis;
     b.hidden = !(errores || avisos);
     b.textContent = errores || avisos;
@@ -883,9 +904,10 @@
         materias: E.materias,
         base: { archivos: [...E.base.archivos], crudos: [...E.base.crudos], secuencia: E.base.secuencia, indice: E.base.indice },
       }));
-    } catch { }
+    } catch { /* sin espacio o bloqueado: no pasa nada */ }
   }
   const guardarBorrador = debounce(escribirBorrador, 500);
+  // Al cerrar, recargar o cambiar de pestaña se guarda enseguida, sin esperar al retardo
   window.addEventListener('pagehide', escribirBorrador);
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') escribirBorrador(); });
 
@@ -901,7 +923,6 @@
     try { d = JSON.parse(localStorage.getItem(CLAVE_BORRADOR)); } catch { d = null; }
     if (!d || !Array.isArray(d.materias) || !d.base) return;
     const b = $('#banner');
-    if (!b) return;
     b.hidden = false;
     b.innerHTML = `<span>Hay un borrador sin guardar del ${esc(new Date(d.t).toLocaleString('es-AR'))} (${plural(d.materias.length, 'materia', 'materias')}).</span>
       <button class="btn chico primario" id="bn-rest">Restaurar</button><button class="btn chico" id="bn-desc">Descartar</button>`;
@@ -916,9 +937,10 @@
       E.sel = { materia: E.materias[0]?.uid ?? null, tema: null };
       b.hidden = true;
       pintarTodo();
-      avisar('Borrador restaurado');
+      const conImagenes = E.materias.some((m) => m.temas.some((t) => t.preguntas.some((q) => nombreImagen(q.imagen))));
+      avisar(conImagenes ? 'Borrador restaurado. Si habías cargado imágenes nuevas sin guardar, volvé a elegirlas.' : 'Borrador restaurado');
     };
-    $('#bn-desc').onclick = () => { try { localStorage.removeItem(CLAVE_BORRADOR); } catch { } b.hidden = true; };
+    $('#bn-desc').onclick = () => { try { localStorage.removeItem(CLAVE_BORRADOR); } catch { /* nada */ } b.hidden = true; };
   }
 
   window.addEventListener('beforeunload', (e) => {
@@ -933,20 +955,17 @@
     if (!d.open) d.showModal();
     return d;
   }
-  const cerrarModal = () => { const d = $('#modal'); if (d && d.open) d.close(); };
-  const modalEl = $('#modal');
-  if (modalEl) modalEl.addEventListener('click', (e) => { if (e.target === e.currentTarget) cerrarModal(); });
+  const cerrarModal = () => { const d = $('#modal'); if (d.open) d.close(); };
+  $('#modal').addEventListener('click', (e) => { if (e.target === e.currentTarget) cerrarModal(); });
 
   // ---------- Lateral ----------
   function renderLateral() {
-    const el = $('#lateral');
-    if (!el) return;
     const c = E.analisis.conteo;
     const punto = (u) => {
       const x = c.get(u);
       return x?.e ? '<span class="punto err" title="Tiene errores"></span>' : x?.a ? '<span class="punto avi" title="Tiene avisos"></span>' : '';
     };
-    el.innerHTML = `
+    $('#lateral').innerHTML = `
       <div class="lat-acciones"><button class="btn chico" data-accion="nueva-materia">+ Materia</button>
         ${matActual() ? '<button class="btn chico" data-accion="nuevo-tema">+ Tema</button>' : ''}</div>
       ${E.materias.length ? '' : '<p class="pista">Todavía no hay materias.</p>'}
@@ -963,7 +982,6 @@
   // ---------- Vistas principales ----------
   function renderPrincipal() {
     const cont = $('#principal');
-    if (!cont) return;
     const m = matActual(), t = temaActual();
     if (!E.materias.length) cont.innerHTML = htmlBienvenida();
     else if (m && t) { cont.innerHTML = htmlTema(m, t); renderPreguntas(); renderTarjetas(); }
@@ -1035,6 +1053,7 @@
         <div class="paleta colores" aria-label="Colores sugeridos">${COLORES.map((c) => `<button data-accion="m-color" data-v="${c}" style="background:${c}" aria-label="Usar color ${c}"></button>`).join('')}</div>
         <details style="margin-top:.9rem"><summary class="rotulo" style="cursor:pointer">Avanzado</summary>
           <label class="campo"><span>Carpeta dentro de data/</span><input type="text" data-campo="m-carpeta" value="${esc(m.carpeta)}"></label>
+          <p class="pista">Si la cambiás, todos los archivos de la materia se mueven a la carpeta nueva al guardar.</p>
         </details>
       </div>
       <div class="tarjeta">
@@ -1089,7 +1108,26 @@
           <button class="btn chico" data-accion="importar">Pegar JSON del LM</button>
           <button class="btn chico primario" data-accion="c-nueva">+ Tarjeta</button>
         </div>
+        <p class="pista">Cada tarjeta tiene un frente (la pregunta o el concepto) y un dorso (la respuesta). En el juego se dan vuelta y vos marcás qué tan bien la sabías: con eso se arma el “Repaso de hoy”.</p>
         <div id="lista-c"></div>
+      </section>
+      ${htmlSeccionCrucigrama(t)}`;
+  }
+
+  function htmlSeccionCrucigrama(t) {
+    const cr = t.extra?.crucigrama;
+    const nc = cr !== undefined ? normalizarCrucigrama(cr) : null;
+    return `<section class="seccion-tarjetas">
+        <div class="cabecera-vista">
+          <h3>🧩 Crucigrama</h3>
+          <button class="btn chico" data-accion="x-prompt">Prompt para el LM</button>
+          <button class="btn chico" data-accion="importar">Pegar JSON del LM</button>
+          ${cr !== undefined ? '<button class="btn chico peligro" data-accion="x-quitar">Quitar crucigrama</button>' : ''}
+        </div>
+        <p class="pista">${cr === undefined
+          ? 'Este tema todavía no tiene crucigrama. Pedile a un LM las palabras con sus pistas (botón “Prompt para el LM”) y pegalas con “Pegar JSON del LM”. El tablero lo arma el juego solo y sale distinto cada vez.'
+          : nc?.error ? `Hay un crucigrama pero tiene un problema: ${esc(nc.error)}`
+          : `Crucigrama “${esc(nc.obj.titulo)}” con <b>${nc.validas}</b> palabras válidas. En el juego aparece como una actividad de la materia.`}</p>
       </section>`;
   }
 
@@ -1121,7 +1159,7 @@
     const lista = t.tarjetas || [];
     cont.innerHTML = lista.length
       ? lista.map((c, i) => htmlTarjeta(c, i)).join('')
-      : '<div class="vacia">Este tema todavía no tiene tarjetas.</div>';
+      : '<div class="vacia">Este tema todavía no tiene tarjetas. Usá “+ Tarjeta”, o pedile al LM que las arme con “Prompt para el LM” y pegalas con “Pegar JSON del LM”.</div>';
   }
 
   function tarjetaDe(el) {
@@ -1152,6 +1190,7 @@
           <input type="radio" name="c-${q.uid}" value="${LETRAS[k]}" data-campo="q-correcta" ${q.correcta === LETRAS[k] ? 'checked' : ''} aria-label="La correcta es la ${LETRAS[k]}">
           <span class="letra">${LETRAS[k]}</span>
           <input type="text" data-campo="q-op${k}" value="${esc(o)}" aria-label="Opción ${LETRAS[k]}"></div>`).join('')}
+        <p class="pista">El juego mezcla el orden de las opciones, así que no importa dónde pongas la correcta.</p>
         <label class="campo"><span>Explicación</span><textarea rows="2" data-campo="q-explicacion">${esc(q.explicacion)}</textarea></label>
         <div class="campo-imagen">
           <span class="rotulo">Imagen (opcional)</span>
@@ -1160,7 +1199,8 @@
             <label class="btn chico" style="cursor:pointer">${q.imagen ? 'Cambiar imagen' : 'Elegir imagen'}<input type="file" accept="image/*" data-campo="q-imagen-archivo" hidden></label>
             ${q.imagen ? '<button class="btn chico peligro" data-accion="q-img-quitar">Quitar imagen</button>' : ''}
           </div>
-          ${q.imagen ? `<label class="campo"><span>Descripción de la imagen</span><input type="text" data-campo="q-imagen-alt" value="${esc(q.imagenAlt)}"></label>` : ''}
+          ${q.imagen ? `<label class="campo"><span>Descripción de la imagen (para accesibilidad)</span><input type="text" data-campo="q-imagen-alt" value="${esc(q.imagenAlt)}"></label>` : ''}
+          <p class="pista">Se reduce a ${MAX_LADO} px y se guarda en data/img/ cuando guardás los cambios.</p>
         </div>
         <ul class="problemas" data-problemas>${htmlProblemas(r)}</ul>
         <div class="acciones-q">
@@ -1181,9 +1221,10 @@
     const items = t.preguntas.map((q, i) => [q, i]).filter(([q]) => !f || norm([q.pregunta, ...q.opciones, q.explicacion].join(' ')).includes(f));
     cont.innerHTML = items.length
       ? items.map(([q, i]) => htmlPregunta(q, i)).join('')
-      : `<div class="vacia">${t.preguntas.length ? 'Ninguna pregunta coincide con el filtro.' : 'Este tema no tiene preguntas de opción múltiple.'}</div>`;
+      : `<div class="vacia">${t.preguntas.length ? 'Ninguna pregunta coincide con el filtro.' : 'Este tema todavía no tiene preguntas. Usá “+ Pregunta” o “Pegar JSON del LM”.'}</div>`;
   }
 
+  // Actualiza lo que cambia mientras se escribe, sin tocar los campos (no pierde el foco)
   function refrescarTarjetas() {
     const t = temaActual();
     if (!t) return;
@@ -1195,12 +1236,11 @@
       card.classList.toggle('con-aviso', !r.errores.length && r.avisos.length > 0);
       card.querySelector('.resumen').textContent = q.pregunta || '(sin enunciado)';
       const chip = card.querySelector('.chip');
-      if (chip) {
-        chip.textContent = q.correcta || '?';
-        chip.classList.toggle('vacio', !q.correcta);
-      }
+      chip.textContent = q.correcta || '?';
+      chip.classList.toggle('vacio', !q.correcta);
       const ul = card.querySelector('[data-problemas]');
       if (ul) ul.innerHTML = htmlProblemas(r);
+      card.querySelectorAll('.opcion-edit').forEach((fila, k) => fila.classList.toggle('correcta', q.correcta === LETRAS[k]));
     });
     $$('#lista-c .tarj').forEach((card) => {
       const c = (t.tarjetas || []).find((x) => x.uid === card.dataset.c);
@@ -1218,7 +1258,7 @@
     if (ruta && m) ruta.textContent = `data/${m.carpeta}/${nombreArchivo(t, m.temas.indexOf(t))}`;
   }
 
-  // ---------- Edición ----------
+  // ---------- Edición de campos ----------
   function preguntaDe(el) {
     const card = el.closest('[data-q]');
     const t = temaActual();
@@ -1232,10 +1272,10 @@
     if (!campo) return;
     const m = matActual(), t = temaActual();
     switch (campo) {
-      case 'm-nombre': m.nombre = el.value; const tm = $('#titulo-materia'); if (tm) tm.textContent = `${m.emoji} ${m.nombre || 'Sin nombre'}`; break;
-      case 'm-emoji': m.emoji = el.value.trim() || '📚'; const tm2 = $('#titulo-materia'); if (tm2) tm2.textContent = `${m.emoji} ${m.nombre || 'Sin nombre'}`; break;
+      case 'm-nombre': m.nombre = el.value; $('#titulo-materia').textContent = `${m.emoji} ${m.nombre || 'Sin nombre'}`; break;
+      case 'm-emoji': m.emoji = el.value.trim() || '📚'; $('#titulo-materia').textContent = `${m.emoji} ${m.nombre || 'Sin nombre'}`; break;
       case 'm-color': m.color = el.value.toUpperCase(); break;
-      case 't-nombre': t.nombre = el.value; const tt = $('#titulo-tema'); if (tt) tt.textContent = t.nombre || 'Tema sin nombre'; break;
+      case 't-nombre': t.nombre = el.value; $('#titulo-tema').textContent = t.nombre || 'Tema sin nombre'; break;
       case 'c-frente':
       case 'c-dorso': {
         const c = tarjetaDe(el);
@@ -1269,7 +1309,7 @@
     if (!archivo || !q) return;
     try {
       const recortada = await abrirRecorte(archivo);
-      if (!recortada) return;
+      if (!recortada) return;   // canceló el recorte
       const { blob, nombre } = await codificarImagen(recortada);
       E.imgs.set(nombre, blob);
       if (!E.imgExistentes.has(nombre)) E.imgNuevas.add(nombre);
@@ -1279,13 +1319,12 @@
       avisar(`Imagen lista (${Math.max(1, Math.round(blob.size / 1024))} KB)`);
     } catch (err) {
       console.error(err);
-      avisar('No se pudo leer esa imagen.');
+      avisar('No se pudo leer esa imagen. Probá con un PNG, JPG o WebP.');
     }
   }
 
+  // Las vistas previas se completan solas cuando aparece una <img data-img> en pantalla
   function hidratarImagenes() {
-    const principal = $('#principal');
-    if (!principal) return;
     $$('#principal img[data-img]:not([data-listo])').forEach(async (img) => {
       img.dataset.listo = '1';
       const ruta = img.dataset.img;
@@ -1295,13 +1334,12 @@
       else {
         const p = document.createElement('p');
         p.className = 'pista';
-        p.textContent = 'No se puede mostrar la vista previa.';
+        p.textContent = 'No se puede mostrar la vista previa (la imagen no está cargada en esta sesión).';
         img.replaceWith(p);
       }
     });
   }
-  const principalEl = $('#principal');
-  if (principalEl) new MutationObserver(hidratarImagenes).observe(principalEl, { childList: true, subtree: true });
+  new MutationObserver(hidratarImagenes).observe($('#principal'), { childList: true, subtree: true });
 
   function onChange(e) {
     const el = e.target;
@@ -1327,7 +1365,7 @@
     }
   }
 
-  // ---------- Acciones ----------
+  // ---------- Acciones (clics) ----------
   const mover = (lista, i, d) => {
     const j = i + d;
     if (j < 0 || j >= lista.length) return false;
@@ -1355,7 +1393,7 @@
 
   async function abrirCarpeta() {
     if (!descartarSiHaceFalta()) return;
-    if (!TIENE_API_CARPETAS) { $('#in-carpeta')?.click(); return; }
+    if (!TIENE_API_CARPETAS) { $('#in-carpeta').click(); return; }
     try {
       const h = await window.showDirectoryPicker({ mode: 'readwrite' });
       const dataDir = await resolverDataDir(h);
@@ -1371,10 +1409,15 @@
   }
 
   function despuesDeCargar(mapa) {
-    const b = $('#banner'); if (b) b.hidden = true;
+    $('#banner').hidden = true;
     pintarTodo();
     const n = E.materias.length;
-    avisar(n ? `Abierto: ${plural(n, 'materia', 'materias')}` : 'La carpeta no tiene materias todavía');
+    avisar(n ? `Abierto: ${plural(n, 'materia', 'materias')}, ${plural(E.materias.reduce((s, m) => s + totalPreguntas(m), 0), 'pregunta', 'preguntas')}` : 'La carpeta no tiene materias todavía');
+    if (E.avisosCarga.length) {
+      abrirModal('Cosas a tener en cuenta al abrir', `
+        <p class="nota">Estos archivos no se pudieron leer del todo. Los que dicen “No se tocó” se dejan como están y no se modifican ni se borran.</p>
+        <ul class="problemas">${E.avisosCarga.map((x) => `<li class="a">${esc(x)}</li>`).join('')}</ul>`, '<button class="btn primario" onclick="this.closest(\'dialog\').close()">Entendido</button>');
+    }
   }
 
   const ACCIONES = {
@@ -1407,14 +1450,17 @@
       const nombre = window.prompt(`Nombre del tema nuevo en “${m.nombre}”:`);
       if (!nombre?.trim()) return;
       const t = crearTema(m, nombre.trim());
+      const q = nuevaPregunta();
+      t.preguntas.push(q);
+      E.abiertas.add(q.uid);
       seleccionar(m.uid, t.uid);
       refrescar();
     },
-    'mat-sube': () => { if (mover(E.materias, E.materias.indexOf(matActual()), -1)) pintarTodo(); },
-    'mat-baja': () => { if (mover(E.materias, E.materias.indexOf(matActual()), 1)) pintarTodo(); },
+    'mat-sube': () => { if (mover(E.materias, E.materias.indexOf(matActual()), -1)) { pintarTodo(); } },
+    'mat-baja': () => { if (mover(E.materias, E.materias.indexOf(matActual()), 1)) { pintarTodo(); } },
     'mat-borrar': () => {
       const m = matActual();
-      if (!window.confirm(`¿Eliminar la materia “${m.nombre}”?`)) return;
+      if (!window.confirm(`¿Eliminar la materia “${m.nombre}” con ${plural(m.temas.length, 'tema', 'temas')} y ${plural(totalPreguntas(m), 'pregunta', 'preguntas')}?\n\nSe borran sus archivos al guardar.`)) return;
       E.materias.splice(E.materias.indexOf(m), 1);
       E.sel = { materia: E.materias[0]?.uid ?? null, tema: null };
       pintarTodo();
@@ -1431,7 +1477,7 @@
     't-copiar': async () => {
       const m = matActual(), t = temaActual();
       try { await navigator.clipboard.writeText(serializarTema(m, t)); avisar('JSON copiado al portapapeles'); }
-      catch { avisar('El navegador bloqueó el portapapeles.'); }
+      catch { avisar('El navegador bloqueó el portapapeles; usá “Descargar JSON”.'); }
     },
     't-dup': () => {
       const m = matActual(), t = temaActual();
@@ -1448,16 +1494,15 @@
     },
     't-borrar': () => {
       const m = matActual(), t = temaActual();
-      if (!window.confirm(`¿Eliminar el tema “${t.nombre}”?`)) return;
+      if (!window.confirm(`¿Eliminar el tema “${t.nombre}” con ${plural(t.preguntas.length, 'pregunta', 'preguntas')}?\n\nSe borra su archivo al guardar.`)) return;
       m.temas.splice(m.temas.indexOf(t), 1);
       seleccionar(m.uid);
       refrescar();
     },
-    'abrir-todas': () => { const t = temaActual(); if (t) t.preguntas.forEach((q) => E.abiertas.add(q.uid)); renderPreguntas(); },
+    'abrir-todas': () => { temaActual().preguntas.forEach((q) => E.abiertas.add(q.uid)); renderPreguntas(); },
     'cerrar-todas': () => { E.abiertas.clear(); renderPreguntas(); },
     'q-nueva': () => {
       const t = temaActual();
-      if (!t) return;
       const q = nuevaPregunta();
       t.preguntas.push(q);
       E.abiertas.add(q.uid);
@@ -1472,10 +1517,8 @@
     'alternar': (el) => {
       const card = el.closest('[data-q]');
       const t = temaActual();
-      if (!card || !t) return;
       const i = t.preguntas.findIndex((q) => q.uid === card.dataset.q);
       const q = t.preguntas[i];
-      if (!q) return;
       if (E.abiertas.has(q.uid)) E.abiertas.delete(q.uid); else E.abiertas.add(q.uid);
       card.outerHTML = htmlPregunta(q, i);
       $(`[data-q="${q.uid}"] .preg-cab`)?.focus();
@@ -1484,7 +1527,6 @@
     'q-baja': (el) => moverPregunta(el, 1),
     'q-dup': (el) => {
       const t = temaActual(), q = preguntaDe(el);
-      if (!t || !q) return;
       const copia = JSON.parse(JSON.stringify(q));
       copia.uid = uid();
       t.preguntas.splice(t.preguntas.indexOf(q) + 1, 0, copia);
@@ -1495,19 +1537,17 @@
     },
     'q-mezclar': (el) => {
       const q = preguntaDe(el);
-      if (!q) return;
       const orden = mezclar([0, 1, 2, 3]);
       const viejaCorrecta = LETRAS.indexOf(q.correcta);
       q.opciones = orden.map((i) => q.opciones[i]);
       if (viejaCorrecta >= 0) q.correcta = LETRAS[orden.indexOf(viejaCorrecta)];
       const t = temaActual();
       const card = el.closest('[data-q]');
-      if (card && t) card.outerHTML = htmlPregunta(q, t.preguntas.indexOf(q));
+      card.outerHTML = htmlPregunta(q, t.preguntas.indexOf(q));
       refrescar();
     },
     'c-nueva': () => {
       const t = temaActual();
-      if (!t) return;
       t.tarjetas ||= [];
       const c = nuevaTarjeta();
       t.tarjetas.push(c);
@@ -1521,7 +1561,6 @@
     'c-baja': (el) => moverTarjeta(el, 1),
     'c-dup': (el) => {
       const t = temaActual(), c = tarjetaDe(el);
-      if (!t || !c) return;
       const copia = JSON.parse(JSON.stringify(c));
       copia.uid = uid();
       t.tarjetas.splice(t.tarjetas.indexOf(c) + 1, 0, copia);
@@ -1531,16 +1570,24 @@
     },
     'c-borrar': (el) => {
       const t = temaActual(), c = tarjetaDe(el);
-      if (!t || !c) return;
       if (!window.confirm('¿Eliminar esta tarjeta?')) return;
       t.tarjetas.splice(t.tarjetas.indexOf(c), 1);
       renderTarjetas();
       refrescar();
     },
     'c-prompt': () => abrirPromptTarjetas(),
+    'x-prompt': () => abrirPromptCrucigrama(),
+    'x-quitar': () => {
+      const m = matActual(), t = temaActual();
+      if (!window.confirm('¿Quitar el crucigrama de este tema?')) return;
+      delete t.extra.crucigrama;
+      const acts = [].concat(t.extra.actividad || []).filter((a) => a !== 'crucigrama');
+      if (acts.length) t.extra.actividad = acts; else delete t.extra.actividad;
+      seleccionar(m.uid, t.uid);
+      refrescar();
+    },
     'q-img-quitar': (el) => {
       const q = preguntaDe(el);
-      if (!q) return;
       q.imagen = '';
       q.imagenAlt = '';
       repintarPregunta(q);
@@ -1548,18 +1595,18 @@
     },
     'q-borrar': (el) => {
       const t = temaActual(), q = preguntaDe(el);
-      if (!t || !q) return;
       if (!window.confirm('¿Eliminar esta pregunta?')) return;
       t.preguntas.splice(t.preguntas.indexOf(q), 1);
       E.abiertas.delete(q.uid);
       renderPreguntas();
       refrescar();
+      const num = $('.estadisticas b'); if (num) num.textContent = t.preguntas.length;
     },
   };
 
   function moverTarjeta(el, d) {
     const t = temaActual(), c = tarjetaDe(el);
-    if (!t || !c || !mover(t.tarjetas, t.tarjetas.indexOf(c), d)) return;
+    if (!mover(t.tarjetas, t.tarjetas.indexOf(c), d)) return;
     renderTarjetas();
     refrescar();
     $(`[data-c="${c.uid}"]`)?.scrollIntoView({ block: 'center' });
@@ -1567,7 +1614,7 @@
 
   function moverPregunta(el, d) {
     const t = temaActual(), q = preguntaDe(el);
-    if (!t || !q || !mover(t.preguntas, t.preguntas.indexOf(q), d)) return;
+    if (!mover(t.preguntas, t.preguntas.indexOf(q), d)) return;
     renderPreguntas();
     refrescar();
     $(`[data-q="${q.uid}"]`)?.scrollIntoView({ block: 'center' });
@@ -1583,13 +1630,10 @@
     const el = e.target;
     if ((e.key === 'Enter' || e.key === ' ') && el.dataset?.accion === 'alternar') { e.preventDefault(); ACCIONES.alternar(el); }
   });
+  $('#principal').addEventListener('input', onInput);
+  $('#principal').addEventListener('change', onChange);
 
-  if (principalEl) {
-    principalEl.addEventListener('input', onInput);
-    principalEl.addEventListener('change', onChange);
-  }
-
-  // ---------- Importar LM ----------
+  // ---------- Importar lo que devuelve el LM ----------
   function extraerJSON(texto) {
     let t = texto.trim();
     const cerco = t.match(/```(?:json)?\s*([\s\S]*?)```/i);
@@ -1609,11 +1653,43 @@
 
   const alias = (o, ...claves) => { for (const k of claves) if (o[k] !== undefined) return o[k]; return undefined; };
 
+  // Letras de una respuesta tal como las usa el tablero: sin tildes, espacios ni signos (la Ñ se conserva)
+  const letrasDe = (txt) => String(txt ?? '').toUpperCase().replace(/Ñ/g, '\u0001').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\u0001/g, 'Ñ').replace(/[^A-ZÑ]/g, '');
+
+  // Revisa un crucigrama pegado o ya guardado. Devuelve { obj, filas, validas } o { error }.
+  function normalizarCrucigrama(c) {
+    if (!c || typeof c !== 'object' || Array.isArray(c)) return { error: 'El crucigrama tiene que ser un objeto con "titulo" y "palabras".' };
+    const lista = alias(c, 'palabras', 'words', 'entradas');
+    if (!Array.isArray(lista)) return { error: 'Al crucigrama le falta la lista "palabras".' };
+    const palabras = [], filas = [], vistas = new Set();
+    lista.forEach((p, i) => {
+      const o = p && typeof p === 'object' ? p : {};
+      const respuesta = String(alias(o, 'respuesta', 'palabra', 'answer', 'word') ?? '').trim();
+      const pista = String(alias(o, 'pista', 'definicion', 'clue') ?? '').trim();
+      const letras = letrasDe(respuesta);
+      const problemas = [], avisos = [];
+      if (!respuesta) problemas.push('Falta la respuesta.');
+      else if (letras.length < 2) problemas.push('La respuesta es demasiado corta.');
+      else if (letras.length > 18) problemas.push('La respuesta tiene más de 18 letras.');
+      if (!pista) problemas.push('Falta la pista.');
+      if (letras && vistas.has(letras)) problemas.push('Respuesta repetida.');
+      if (!problemas.length) {
+        vistas.add(letras);
+        if (letras.length >= 4 && letrasDe(pista).includes(letras)) avisos.push('La pista contiene la respuesta.');
+        if (letras.length > 14) avisos.push('Es muy larga: puede ensanchar el tablero.');
+        palabras.push({ respuesta, pista });
+      }
+      filas.push({ respuesta, pista, problemas, avisos, n: i + 1 });
+    });
+    const titulo = String(alias(c, 'titulo', 'title', 'nombre') ?? '').trim();
+    return { obj: { titulo: titulo || 'Crucigrama', palabras }, filas, validas: palabras.length };
+  }
+
   function normalizarLM(texto) {
     const r = extraerJSON(texto);
     if (r.error) return { error: r.error };
     const datos = r.datos;
-    let materia = '', tema = '', lista, listaT;
+    let materia = '', tema = '', lista, listaT, crucigrama = null;
     const esTarjeta = (x) => x && typeof x === 'object' && ('frente' in x || 'dorso' in x);
     if (Array.isArray(datos)) {
       if (datos.length && datos.every(esTarjeta)) listaT = datos; else lista = datos;
@@ -1622,8 +1698,12 @@
       tema = String(datos.tema ?? '').trim();
       lista = alias(datos, 'preguntas', 'questions');
       listaT = alias(datos, 'tarjetas', 'flashcards', 'cards');
+      const cr = alias(datos, 'crucigrama', 'crossword');
+      if (cr !== undefined) crucigrama = normalizarCrucigrama(cr);
     }
-    if (!Array.isArray(lista) && !Array.isArray(listaT)) return { error: 'No encontré la lista "preguntas" ni la lista "tarjetas".' };
+    if (!Array.isArray(lista) && !Array.isArray(listaT) && !(crucigrama && !crucigrama.error)) {
+      return { error: crucigrama?.error || 'No encontré la lista "preguntas", la lista "tarjetas" ni un "crucigrama".' };
+    }
     lista = Array.isArray(lista) ? lista : [];
     const tarjetas = (Array.isArray(listaT) ? listaT : []).map((c, i) => {
       if (!c || typeof c !== 'object') return { c: null, errores: ['No es un objeto.'], n: i + 1 };
@@ -1650,13 +1730,14 @@
       ops = Array.isArray(ops) ? ops.map((o) => String(o ?? '').trim()) : [];
       if (ops.length >= 2 && ops.every((o) => /^[A-Da-d][\)\.\:]\s+/.test(o))) {
         ops = ops.map((o) => o.replace(/^[A-Da-d][\)\.\:]\s+/, ''));
+        notas.push('Se quitaron los prefijos "A)", "B)"… de las opciones.');
       }
       if (ops.length !== 4) errores.push(`Tiene ${ops.length} opciones (se necesitan 4).`);
       const bruto = alias(p, 'correcta', 'respuesta', 'respuesta_correcta', 'answer', 'correct');
       let letra = '';
       if (typeof bruto === 'number') {
         const idx = base1 ? bruto - 1 : bruto;
-        if (idx >= 0 && idx < 4) { letra = LETRAS[idx]; }
+        if (idx >= 0 && idx < 4) { letra = LETRAS[idx]; notas.push(`La correcta venía como número (${bruto}); ahora es ${letra}.`); }
       } else if (typeof bruto === 'string') {
         const s = bruto.trim();
         const m1 = s.match(/^\(?([A-Da-d])[\)\.\:]?$/);
@@ -1664,8 +1745,8 @@
         else {
           const j = ops.findIndex((o) => norm(o) === norm(s));
           const m2 = s.match(/^\(?([A-Da-d])[\)\.\:]\s/);
-          if (j >= 0) { letra = LETRAS[j]; }
-          else if (m2) { letra = m2[1].toUpperCase(); }
+          if (j >= 0) { letra = LETRAS[j]; notas.push(`La correcta venía como texto; ahora es ${letra}.`); }
+          else if (m2) { letra = m2[1].toUpperCase(); notas.push(`La correcta venía como "${s.slice(0, 30)}"; se tomó ${letra}.`); }
         }
       }
       if (!enun) errores.push('Falta el enunciado.');
@@ -1678,13 +1759,22 @@
       v.errores.forEach((x) => { if (!errores.includes(x) && !/Marcá|enunciado/.test(x)) errores.push(x); });
       return { q, notas, errores, n: i + 1 };
     });
-    return { materia, tema, items, tarjetas, nota: r.nota };
+    return { materia, tema, items, tarjetas, crucigrama: crucigrama && !crucigrama.error ? crucigrama : null, errorCrucigrama: crucigrama?.error || '', nota: r.nota };
+  }
+
+  function htmlCrucigramaPrev(c, temaDestino) {
+    const malas = c.filas.filter((f) => f.problemas.length);
+    return `<div class="nota ${c.validas < 4 ? 'mal' : ''}">🧩 <b>Crucigrama “${esc(c.obj.titulo)}”</b>: ${plural(c.validas, 'palabra válida', 'palabras válidas')}${malas.length ? `, ${plural(malas.length, 'descartada', 'descartadas')}` : ''}.
+      ${c.validas < 4 ? 'Hacen falta al menos 4 palabras para armar el tablero.' : ''}
+      ${temaDestino?.extra?.crucigrama ? '<b>Este tema ya tiene un crucigrama: se va a reemplazar.</b>' : ''}
+      <ul class="vista-prev">${c.filas.map((f) => `<li><span class="et ${f.problemas.length ? 'rota' : 'ok'}">${f.problemas.length ? 'Descartada' : 'OK'}</span>
+        <span>${esc(f.respuesta || '(vacía)')} — ${esc(f.pista || '(sin pista)')}${[...f.problemas, ...f.avisos].length ? `<br><small style="color:var(--tenue)">${esc([...f.problemas, ...f.avisos].join(' '))}</small>` : ''}</span></li>`).join('')}</ul></div>`;
   }
 
   function abrirImportar() {
     const m0 = matActual(), t0 = temaActual();
     const d = abrirModal('Pegar JSON del LM', `
-      <label class="campo"><span>Pegá el JSON devuelto por el modelo</span>
+      <label class="campo"><span>Pegá lo que te devolvió el LM (se aceptan bloques de código y texto alrededor)</span>
         <textarea id="imp-texto" rows="8" placeholder='{ "materia": "...", "tema": "...", "preguntas": [ ... ], "tarjetas": [ ... ] }'></textarea></label>
       <p><label class="btn chico" style="cursor:pointer">…o abrir un archivo .json<input type="file" id="imp-archivo" accept=".json,.txt,application/json,text/plain" hidden></label></p>
       <div id="imp-prev"></div>`,
@@ -1738,6 +1828,8 @@
       const etiqueta = { ok: ['ok', 'OK'], rep: ['rep', 'Reparada'], rota: ['rota', 'Con errores'], dup: ['dup', 'Ya existe'] };
       prev.innerHTML = `
         ${res.nota ? `<div class="nota">${esc(res.nota)}</div>` : ''}
+        ${!res.items.length && !res.tarjetas.length && sel.tema === '__nuevo__' ? '<div class="nota mal">Este JSON solo trae el crucigrama. Un tema nuevo quedaría sin preguntas ni tarjetas: elegí un tema que ya tenga contenido, o agregale una pregunta o una tarjeta después.</div>' : ''}
+        ${res.errorCrucigrama ? `<div class="nota mal">${esc(res.errorCrucigrama)}</div>` : ''}
         <p class="nota"><b>${plural(res.items.length, 'pregunta', 'preguntas')}</b> y <b>${plural(res.tarjetas.length, 'tarjeta', 'tarjetas')}</b> en el JSON:
           ${cuenta('ok')} correctas, ${cuenta('rep')} reparadas, ${cuenta('rota')} con errores, ${cuenta('dup')} repetidas.</p>
         <div class="fila">
@@ -1752,12 +1844,14 @@
           ${sel.mat === '__nueva__' ? `<label class="campo"><span>Nombre de la materia nueva</span><input type="text" id="imp-nm" value="${esc(sel.nombreMat)}"></label>` : ''}
           ${sel.tema === '__nuevo__' ? `<label class="campo"><span>Nombre del tema nuevo</span><input type="text" id="imp-nt" value="${esc(sel.nombreTema)}"></label>` : ''}
         </div>
+        ${res.crucigrama ? htmlCrucigramaPrev(res.crucigrama, mm && sel.tema !== '__nuevo__' ? mm.temas.find((t) => t.uid === sel.tema) : null) : ''}
         <label class="check"><input type="checkbox" id="imp-omitir" ${omitir ? 'checked' : ''}> Omitir las que ya existen en el tema elegido</label>
-        <label class="check"><input type="checkbox" id="imp-rotas" ${conRotas ? 'checked' : ''}> Importar también las que tienen errores</label>
+        <label class="check"><input type="checkbox" id="imp-rotas" ${conRotas ? 'checked' : ''}> Importar también las que tienen errores, para corregirlas a mano</label>
         <ul class="vista-prev">${res.items.map((it) => `<li><span class="et ${etiqueta[it.estado][0]}">${etiqueta[it.estado][1]}</span>
-          <span>${esc(it.q?.pregunta || '(vacía)')}</span></li>`).join('')}${res.tarjetas.map((x) => `<li><span class="et ${etiqueta[x.estado][0]}">${etiqueta[x.estado][1]}</span>
-          <span>🃏 ${esc(x.c?.frente || '(vacía)')}</span></li>`).join('')}</ul>`;
-      const total = aImportar.length + aImportarT.length;
+          <span>${esc(it.q?.pregunta || '(vacía)')}${[...it.errores, ...it.notas].length ? `<br><small style="color:var(--tenue)">${esc([...it.errores, ...it.notas].join(' '))}</small>` : ''}</span></li>`).join('')}${res.tarjetas.map((x) => `<li><span class="et ${etiqueta[x.estado][0]}">${etiqueta[x.estado][1]}</span>
+          <span>🃏 ${esc(x.c?.frente || '(vacía)')}${x.errores.length ? `<br><small style="color:var(--tenue)">${esc(x.errores.join(' '))}</small>` : ''}</span></li>`).join('')}</ul>`;
+      ok._crucigrama = res.crucigrama && res.crucigrama.validas >= 4 ? res.crucigrama.obj : null;
+      const total = aImportar.length + aImportarT.length + (ok._crucigrama ? 1 : 0);
       ok.disabled = total === 0;
       ok.textContent = total ? `Importar ${total}` : 'Importar';
       ok._lista = aImportar;
@@ -1790,30 +1884,57 @@
       const listaT = ok._listaT || [];
       t.tarjetas ||= [];
       listaT.forEach((x) => t.tarjetas.push(x.c));
+      if (ok._crucigrama) {
+        t.extra = t.extra || {};
+        t.extra.crucigrama = ok._crucigrama;
+        const acts = [].concat(t.extra.actividad || []);
+        if (!acts.includes('crucigrama')) acts.push('crucigrama');
+        t.extra.actividad = acts;
+      }
       cerrarModal();
       seleccionar(m.uid, t.uid);
       refrescar();
-      avisar(`Importación realizada con éxito en “${t.nombre}”`);
+      const partes = [lista.length ? plural(lista.length, 'pregunta', 'preguntas') : '', listaT.length ? plural(listaT.length, 'tarjeta', 'tarjetas') : '', ok._crucigrama ? 'un crucigrama' : ''].filter(Boolean);
+      avisar(`Se importaron ${partes.join(' y ')} a “${t.nombre}”`);
     };
     txt.focus();
   }
 
-  const PROMPT_TARJETAS = "Sos un tutor experto en técnicas de estudio. Tu tarea es convertir el material en TARJETAS DE ESTUDIO tipo Anki.\n\nFORMATO DE SALIDA:\n{\n  \"materia\": \"[MATERIA]\",\n  \"tema\": \"[TEMA]\",\n  \"tarjetas\": [\n    { \"frente\": \"...\", \"dorso\": \"...\" }\n  ]\n}";
+const PROMPT_TARJETAS = "Sos un tutor experto en técnicas de estudio (recuperación activa y repetición espaciada). Tu tarea es convertir el material que te paso en TARJETAS DE ESTUDIO tipo Anki y devolverlas en un único JSON.\n\nCONTEXTO\n- Materia: [MATERIA]\n- Tema: [TEMA]\n- Cantidad de tarjetas: 25 (si el material no alcanza, hacé menos antes que inventar o repetir)\n\nREGLAS PARA CADA TARJETA\n1. Una sola idea por tarjeta. Si algo tiene varias partes, hacé varias tarjetas, o una tarjeta cuyo dorso sea una lista corta.\n2. \"frente\": una pregunta o consigna concreta, con UNA respuesta clara, que se pueda contestar de memoria. Tiene que entenderse sola, sin depender de otras tarjetas ni del material (\"según el texto\" y \"como vimos antes\" están prohibidos).\n3. \"dorso\": la respuesta directa en 1 a 3 oraciones (máximo 400 caracteres). Primero la respuesta; después, solo si hace falta, una aclaración corta. Si es una enumeración, usá líneas que empiecen con \"• \".\n4. Variá los tipos: definiciones, \"¿por qué?\", diferencias entre dos conceptos, ejemplos, causas y consecuencias, procedimientos. Fechas y autores solo si son centrales.\n5. Basate SOLO en el material. No inventes datos ni agregues contenido que no esté.\n6. Texto plano: sin numeración (\"1.\", \"Tarjeta 1\"), sin markdown (nada de **negritas**, #, tablas), sin HTML y sin emojis. Para un salto de línea usá \\n.\n7. Sin tarjetas repetidas ni casi iguales.\n8. Español rioplatense neutro, claro y sin vueltas.\n\nFORMATO DE SALIDA (obligatorio)\nDevolvé SOLO un bloque de código JSON, sin texto antes ni después, con esta estructura exacta:\n\n{\n  \"materia\": \"[MATERIA]\",\n  \"tema\": \"[TEMA]\",\n  \"tarjetas\": [\n    { \"frente\": \"...\", \"dorso\": \"...\" }\n  ]\n}\n\n- Los nombres de los campos son exactamente \"materia\", \"tema\", \"tarjetas\", \"frente\" y \"dorso\".\n- JSON válido: comillas dobles rectas, sin comas finales y sin comentarios. Las comillas dobles dentro de un texto se escriben \\\".\n\nEJEMPLO (de otra materia, solo para mostrar el estilo)\n{\n  \"materia\": \"Epistemología\",\n  \"tema\": \"Popper\",\n  \"tarjetas\": [\n    {\n      \"frente\": \"¿Qué propone el criterio de falsabilidad de Popper?\",\n      \"dorso\": \"Una teoría es científica si puede ser refutada por la experiencia.\\nNo importa cuántas veces se confirma: importa que pueda fallar.\"\n    },\n    {\n      \"frente\": \"¿En qué se diferencia el método deductivo de Popper del inductivismo?\",\n      \"dorso\": \"Popper no parte de observaciones para generalizar: propone conjeturas y trata de refutarlas con contrastaciones.\"\n    }\n  ]\n}\n\nAntes de responder, revisá una por una que cada tarjeta cumpla las reglas y que el JSON sea válido.\n\nMATERIAL\n\"\"\"\n[PEGAR ACÁ EL TEXTO, LOS APUNTES O EL TEMARIO]\n\"\"\"";
+
+const PROMPT_CRUCIGRAMA = "Sos un docente experto en armar crucigramas para estudiar. Tu tarea es convertir el material que te paso en una LISTA DE PALABRAS CON SUS PISTAS y devolverla en un único JSON. No armes el tablero: el juego lo arma solo, cruzando las palabras entre sí.\n\nCONTEXTO\n- Materia: [MATERIA]\n- Tema: [TEMA]\n- Cantidad de palabras: entre 12 y 16 (si el material no alcanza, hacé menos antes que inventar o repetir)\n\nREGLAS PARA LAS RESPUESTAS\n1. Cada respuesta es un término clave del material: un concepto, una estructura, una enzima, un autor, un proceso, etc.\n2. Entre 3 y 12 letras (nunca más de 14). Evitá siglas raras y frases largas; si hace falta una frase, que sean 2 palabras cortas (por ejemplo \"ARN mensajero\").\n3. Sin repetidas, y sin que una sea el plural o la variante de otra.\n4. Mezclá palabras largas (7 a 12 letras) con cortas (3 a 6): las cortas ayudan a que el tablero cruce bien. Incluí al menos 3 cortas.\n5. Escribilas con su ortografía correcta (tildes, ñ, mayúscula inicial). El juego ignora tildes, espacios y guiones para armar el tablero, y las muestra bien cuando se resuelven.\n6. Basate SOLO en el material. No inventes términos.\n\nREGLAS PARA LAS PISTAS\n1. Una pista breve (entre 6 y 20 palabras) que se pueda resolver sabiendo el tema.\n2. NUNCA incluyas la respuesta ni una palabra de su misma familia en la pista (para \"Helicasa\" no uses \"helicasa\" ni \"helicoidal\").\n3. La pista tiene que llevar a UNA sola respuesta: describí una función, una definición o una característica distintiva, no algo vago.\n4. Variá el estilo: definiciones, funciones, \"¿quién...?\", ejemplos, comparaciones. Evitá \"según el texto\" o \"como vimos\".\n5. Texto plano: sin numeración, sin markdown, sin HTML y sin emojis.\n\nFORMATO DE SALIDA (obligatorio)\nDevolvé SOLO un bloque de código JSON, sin texto antes ni después, con esta estructura exacta:\n\n{\n  \"materia\": \"[MATERIA]\",\n  \"tema\": \"[TEMA]\",\n  \"crucigrama\": {\n    \"titulo\": \"[TEMA]\",\n    \"palabras\": [\n      { \"respuesta\": \"...\", \"pista\": \"...\" }\n    ]\n  }\n}\n\n- Los nombres de los campos son exactamente \"materia\", \"tema\", \"crucigrama\", \"titulo\", \"palabras\", \"respuesta\" y \"pista\".\n- JSON válido: comillas dobles rectas, sin comas finales y sin comentarios. Las comillas dobles dentro de un texto se escriben \\\".\n\nEJEMPLO (de otra materia, solo para mostrar el estilo)\n{\n  \"materia\": \"Epistemología\",\n  \"tema\": \"Popper\",\n  \"crucigrama\": {\n    \"titulo\": \"Popper y la falsabilidad\",\n    \"palabras\": [\n      { \"respuesta\": \"Falsabilidad\", \"pista\": \"Criterio de Popper: una teoría es científica si puede ser refutada por la experiencia\" },\n      { \"respuesta\": \"Conjetura\", \"pista\": \"Para Popper, punto de partida de la ciencia: una hipótesis audaz que luego se somete a prueba\" },\n      { \"respuesta\": \"Refutación\", \"pista\": \"Resultado que muestra que una teoría es falsa y obliga a descartarla o modificarla\" },\n      { \"respuesta\": \"Inducción\", \"pista\": \"Razonamiento que Popper rechaza: pasar de casos observados a una ley general\" },\n      { \"respuesta\": \"Cisne\", \"pista\": \"Ave cuya variedad negra se usa como ejemplo para refutar \\\"todos son blancos\\\"\" }\n    ]\n  }\n}\n\nAntes de responder, revisá una por una que cada respuesta cumpla las reglas, que ninguna pista contenga su respuesta y que el JSON sea válido.\n\nMATERIAL\n\"\"\"\n[PEGAR ACÁ EL TEXTO, LOS APUNTES O EL TEMARIO]\n\"\"\"";
+
+  function abrirPromptCrucigrama() {
+    const m = matActual(), t = temaActual();
+    const texto = PROMPT_CRUCIGRAMA.replaceAll('[MATERIA]', m?.nombre || '[MATERIA]').replaceAll('[TEMA]', t?.nombre || '[TEMA]');
+    const d = abrirModal('Prompt para que el LM arme un crucigrama', `
+      <p class="nota">Copiá este prompt y pegalo en tu modelo de lenguaje. Reemplazá lo que está entre corchetes en <b>MATERIAL</b> por tus apuntes. Después copiá lo que te devuelva y pegalo con <b>“Pegar JSON del LM”</b>.</p>
+      <textarea id="prompt-x" rows="16" readonly>${esc(texto)}</textarea>`,
+      '<button class="btn" id="px-cerrar">Cerrar</button><button class="btn primario" id="px-copiar">Copiar prompt</button>');
+    $('#px-cerrar', d).onclick = cerrarModal;
+    $('#px-copiar', d).onclick = async () => {
+      try { await navigator.clipboard.writeText(texto); avisar('Prompt copiado'); }
+      catch { $('#prompt-x', d).select(); avisar('Quedó seleccionado: copialo con Ctrl+C'); }
+    };
+  }
 
   function abrirPromptTarjetas() {
     const m = matActual(), t = temaActual();
     const texto = PROMPT_TARJETAS.replaceAll('[MATERIA]', m?.nombre || '[MATERIA]').replaceAll('[TEMA]', t?.nombre || '[TEMA]');
-    const d = abrirModal('Prompt para tarjetas', `<textarea id="prompt-t" rows="12" readonly>${esc(texto)}</textarea>`,
+    const d = abrirModal('Prompt para que el LM arme tarjetas', `
+      <p class="nota">Copiá este prompt y pegalo en tu modelo de lenguaje. Reemplazá lo que está entre corchetes en <b>MATERIAL</b> por tus apuntes (y ajustá la cantidad de tarjetas). Después copiá lo que te devuelva y pegalo con <b>“Pegar JSON del LM”</b>.</p>
+      <textarea id="prompt-t" rows="16" readonly>${esc(texto)}</textarea>`,
       '<button class="btn" id="p-cerrar">Cerrar</button><button class="btn primario" id="p-copiar">Copiar prompt</button>');
     $('#p-cerrar', d).onclick = cerrarModal;
     $('#p-copiar', d).onclick = async () => {
       try { await navigator.clipboard.writeText(texto); avisar('Prompt copiado'); }
-      catch { $('#prompt-t', d).select(); avisar('Copiá con Ctrl+C'); }
+      catch { $('#prompt-t', d).select(); avisar('Quedó seleccionado: copialo con Ctrl+C'); }
     };
   }
 
+  // ---------- Buscar y revisar ----------
   function abrirBuscar() {
-    const d = abrirModal('Buscar', `<input type="text" id="bus-q" placeholder="Buscar…"><div id="bus-res" style="margin-top:.8rem"></div>`);
+    const d = abrirModal('Buscar en todas las preguntas', `<input type="text" id="bus-q" placeholder="Palabra o frase…" aria-label="Buscar"><div id="bus-res" style="margin-top:.8rem"></div>`);
     const inp = $('#bus-q', d), res = $('#bus-res', d);
     const pintar = () => {
       const f = norm(inp.value);
@@ -1826,7 +1947,7 @@
         if (hits.length < 60 && norm(`${c.frente} ${c.dorso}`).includes(f)) hits.push({ m, t, q: c, i, tarjeta: true });
       });
       res.innerHTML = hits.length
-        ? hits.map((h) => `<button class="resultado-busqueda" data-m="${h.m.uid}" data-t="${h.t.uid}" data-q="${h.q.uid}">${esc(h.tarjeta ? `🃏 ${h.q.frente || '(sin frente)'}` : (h.q.pregunta || '(sin enunciado)'))}<small>${esc(h.m.nombre)} › ${esc(h.t.nombre)}</small></button>`).join('')
+        ? hits.map((h) => `<button class="resultado-busqueda" data-m="${h.m.uid}" data-t="${h.t.uid}" data-q="${h.q.uid}">${esc(h.tarjeta ? `🃏 ${h.q.frente || '(sin frente)'}` : (h.q.pregunta || '(sin enunciado)'))}<small>${esc(h.m.nombre)} › ${esc(h.t.nombre)}, ${h.tarjeta ? 'tarjeta' : 'pregunta'} ${h.i + 1}</small></button>`).join('')
         : '<p class="pista">Sin resultados.</p>';
       $$('.resultado-busqueda', res).forEach((b) => b.addEventListener('click', () => irA(b.dataset.m, b.dataset.t, b.dataset.q)));
     };
@@ -1840,9 +1961,10 @@
     const { lista, errores, avisos } = E.analisis;
     const ordenada = [...lista].sort((a, b) => (a.nivel === b.nivel ? 0 : a.nivel === 'e' ? -1 : 1));
     const d = abrirModal('Revisar todo', ordenada.length
-      ? `<p class="nota"><b>${plural(errores, 'error', 'errores')}</b> y <b>${plural(avisos, 'aviso', 'avisos')}</b>.</p>
-        ${ordenada.slice(0, 300).map((p, i) => `<button class="resultado-busqueda" data-i="${i}"><span class="et ${p.nivel === 'e' ? 'rota' : 'rep'}">${p.nivel === 'e' ? 'Error' : 'Aviso'}</span> ${esc(p.texto)}<small>${esc(p.donde)}</small></button>`).join('')}`
-      : '<div class="nota"><b>Todo en orden.</b></div>');
+      ? `<p class="nota"><b>${plural(errores, 'error', 'errores')}</b> y <b>${plural(avisos, 'aviso', 'avisos')}</b>. Los errores frenan la publicación del sitio; los avisos son recomendaciones.</p>
+        ${ordenada.slice(0, 300).map((p, i) => `<button class="resultado-busqueda" data-i="${i}"><span class="et ${p.nivel === 'e' ? 'rota' : 'rep'}">${p.nivel === 'e' ? 'Error' : 'Aviso'}</span> ${esc(p.texto)}<small>${esc(p.donde)}</small></button>`).join('')}
+        ${ordenada.length > 300 ? `<p class="pista">Se muestran los primeros 300.</p>` : ''}`
+      : '<div class="nota"><b>Todo en orden.</b> No hay errores ni avisos.</div>');
     $$('.resultado-busqueda', d).forEach((b) => b.addEventListener('click', () => {
       const p = ordenada[Number(b.dataset.i)];
       irA(p.m, p.t, p.q);
@@ -1867,6 +1989,12 @@
     for (const n of plan.imagenes) {
       archivos.push({ nombre: `data/img/${n}`, bytes: new Uint8Array(await E.imgs.get(n).arrayBuffer()) });
     }
+    if (plan.borrados.length) {
+      archivos.push({
+        nombre: 'ARCHIVOS_PARA_BORRAR.txt',
+        texto: `Borrá estos archivos del repo (el ZIP no puede borrar por vos):\n\n${plan.borrados.map((r) => `data/${r}`).join('\n')}\n`,
+      });
+    }
     return archivos;
   }
 
@@ -1875,24 +2003,35 @@
     const plan = calcularPlan();
     E.plan = plan;
     const n = cantidadCambios(plan);
-    const errores = E.analisis.errores;
+    const errores = E.analisis.errores, avisos = E.analisis.avisos;
+    const lista = (titulo, arr) => (arr.length
+      ? `<details class="lista"><summary>${titulo} (${arr.length})</summary><ul>${arr.map((r) => `<li>data/${esc(r)}</li>`).join('')}</ul></details>` : '');
+    const hayAlgo = n > 0 || plan.indiceCambio;
 
     const d = abrirModal('Guardar cambios', `
       <div class="resumen-plan">
         <div class="nuevo"><b>${plan.nuevos.length}</b>nuevos</div>
         <div class="mod"><b>${plan.modificados.length}</b>modificados</div>
         <div class="borr"><b>${plan.borrados.length}</b>a borrar</div>
+        <div><b>${plan.iguales.length}</b>sin cambios</div>
       </div>
-      ${errores ? `<div class="nota mal"><b>Hay ${plural(errores, 'error', 'errores')}.</b> <button class="btn chico" id="g-ver">Verlos</button> <label class="check"><input type="checkbox" id="g-igual"> Guardar de todos modos</label></div>` : ''}
+      ${errores ? `<div class="nota mal"><b>Hay ${plural(errores, 'error', 'errores')}.</b> Si los subís así, el workflow del repo se frena y el sitio no se publica.
+        <button class="btn chico" id="g-ver">Verlos</button>
+        <label class="check"><input type="checkbox" id="g-igual"> Guardar igual de todos modos</label></div>` : ''}
+      ${!errores && avisos ? `<div class="nota">Hay ${plural(avisos, 'aviso', 'avisos')} (recomendaciones, no frenan nada). <button class="btn chico" id="g-ver">Verlos</button></div>` : ''}
+      ${lista('Archivos nuevos', plan.nuevos)}${lista('Archivos modificados', plan.modificados)}${lista('Imágenes nuevas', plan.imagenes.map((n) => `img/${n}`))}${lista('Archivos que hay que borrar', plan.borrados)}
+      <div class="nota"><b>Cómo usarlo:</b> ${TIENE_API_CARPETAS ? '“Escribir en la carpeta” guarda directo en tu repo. ' : ''}Con el ZIP, descomprimilo y copiá la carpeta <b>data</b> dentro del repo, pisando la existente.${plan.imagenes.length ? ' Las imágenes van en <b>data/img</b>: combiná las carpetas y no borres las imágenes que ya estaban.' : ''} Después hacé <code>git add . &amp;&amp; git commit &amp;&amp; git push</code>.</div>
       <div id="g-estado"></div>`,
-      `${TIENE_API_CARPETAS ? `<button class="btn primario" id="g-escribir">${E.handle ? 'Escribir en la carpeta' : 'Elegir carpeta y escribir'}</button>` : ''}
-       <button class="btn ${TIENE_API_CARPETAS ? '' : 'primario'}" id="g-zip">Descargar ZIP</button>
+      `${TIENE_API_CARPETAS ? `<button class="btn primario" id="g-escribir">${E.handle ? 'Escribir en la carpeta abierta' : 'Elegir carpeta y escribir'}</button>` : ''}
+       <button class="btn ${TIENE_API_CARPETAS ? '' : 'primario'}" id="g-zip">Descargar ZIP de data/</button>
+       <button class="btn" id="g-zip-c">Solo lo que cambió (ZIP)</button>
        <button class="btn fantasma" id="g-cerrar">Cerrar</button>`);
 
-    const botones = $$('#g-escribir, #g-zip', d);
+    const botones = $$('#g-escribir, #g-zip, #g-zip-c', d);
     const bloqueo = () => {
       const bloqueado = errores > 0 && !$('#g-igual', d)?.checked;
       botones.forEach((b) => { b.disabled = bloqueado; });
+      if (!hayAlgo) { $('#g-escribir', d) && ($('#g-escribir', d).disabled = true); $('#g-zip-c', d).disabled = true; }
     };
     bloqueo();
     $('#g-igual', d)?.addEventListener('change', bloqueo);
@@ -1900,53 +2039,69 @@
     $('#g-cerrar', d).onclick = cerrarModal;
 
     $('#g-zip', d).onclick = () => descargarZip(plan, false, d);
+    $('#g-zip-c', d).onclick = () => descargarZip(plan, true, d);
     const esc_ = $('#g-escribir', d);
     if (esc_) esc_.onclick = async () => {
       try {
         if (!E.handle) await elegirCarpetaEscritura();
-        if (!(await asegurarPermiso(E.handle))) { avisar('Sin permiso de escritura.'); return; }
+        if (!(await asegurarPermiso(E.handle))) { avisar('Sin permiso para escribir en la carpeta.'); return; }
         const p = calcularPlan();
-        for (const n of p.imagenes) await escribirArchivo(E.handle, `img/${n}`, E.imgs.get(n));
+        for (const n of p.imagenes) {   // primero las imágenes: así ningún JSON apunta a un archivo que todavía no está
+          await escribirArchivo(E.handle, `img/${n}`, E.imgs.get(n));
+          E.imgExistentes.add(n);
+          E.imgNuevas.delete(n);
+        }
         for (const r of [...p.nuevos, ...p.modificados]) await escribirArchivo(E.handle, r, p.destino.get(r));
         for (const r of p.borrados) await borrarArchivo(E.handle, r);
         if (p.indiceCambio || cantidadCambios(p) > 0 || !E.base.archivos.size) await escribirArchivo(E.handle, 'index.json', textoIndice(p.indiceNuevo));
         fijarBase(p.destino, p.destino);
         refrescar();
-        cerrarModal();
-        avisar('Cambios guardados correctamente');
+        $('#g-estado', d).innerHTML = `<div class="nota"><b>Listo.</b> Se escribieron ${plural(p.nuevos.length + p.modificados.length, 'archivo', 'archivos')}${p.imagenes.length ? ` (más ${plural(p.imagenes.length, 'imagen', 'imágenes')})` : ''} y se borraron ${p.borrados.length} en la carpeta “${esc(E.handle.name)}”.
+          Ahora podés hacer <code>git add . &amp;&amp; git commit &amp;&amp; git push</code>.</div>`;
+        botones.forEach((b) => { b.disabled = true; });
+        avisar('Cambios guardados en la carpeta');
       } catch (e) {
         if (e.name === 'AbortError') return;
         console.error(e);
-        $('#g-estado', d).innerHTML = `<div class="nota mal">Error: ${esc(e.message)}</div>`;
+        $('#g-estado', d).innerHTML = `<div class="nota mal"><b>No se pudo escribir:</b> ${esc(e.message)}. Probá con el ZIP.</div>`;
       }
     };
   }
 
   async function descargarZip(plan, soloCambios, d) {
     const archivos = await archivosParaZip(plan, soloCambios);
-    descargar(`repaso-data-${marcaTiempo()}.zip`, crearZip(archivos));
-    fijarBase(plan.destino, plan.destino);
-    refrescar();
-    cerrarModal();
-    avisar('ZIP generado');
+    descargar(`repaso-data-${marcaTiempo()}${soloCambios ? '-cambios' : ''}.zip`, crearZip(archivos));
+    $('#g-estado', d).innerHTML = `<div class="nota"><b>ZIP descargado</b> (${plural(archivos.length, 'archivo', 'archivos')}).
+      Copiá la carpeta <b>data</b> al repo${plan.borrados.length ? ' y borrá lo que indica ARCHIVOS_PARA_BORRAR.txt' : ''}.
+      <br><button class="btn chico" id="g-marcar" style="margin-top:.5rem">Ya lo copié al repo: marcar como guardado</button></div>`;
+    $('#g-marcar', d).onclick = () => {
+      plan.imagenes.forEach((n) => { E.imgExistentes.add(n); E.imgNuevas.delete(n); });
+      fijarBase(plan.destino, plan.destino);
+      refrescar();
+      cerrarModal();
+      avisar('Marcado como guardado');
+    };
   }
 
-  // ---------- Conexión inicial ----------
-  $('#btn-abrir')?.addEventListener('click', abrirCarpeta);
-  $('#btn-importar')?.addEventListener('click', abrirImportar);
-  $('#btn-buscar')?.addEventListener('click', abrirBuscar);
-  $('#btn-revisar')?.addEventListener('click', abrirRevisar);
-  $('#btn-guardar')?.addEventListener('click', abrirGuardar);
-  $('#in-carpeta')?.addEventListener('change', async (e) => {
+  // ---------- Conexión de la barra y arranque ----------
+  $('#btn-abrir').addEventListener('click', abrirCarpeta);
+  $('#btn-importar').addEventListener('click', abrirImportar);
+  $('#btn-buscar').addEventListener('click', abrirBuscar);
+  $('#btn-revisar').addEventListener('click', abrirRevisar);
+  $('#btn-guardar').addEventListener('click', abrirGuardar);
+  $('#in-carpeta').addEventListener('change', async (e) => {
     const files = [...e.target.files];
     e.target.value = '';
     if (!files.length) return;
     const mapa = await leerDesdeInput(files);
+    if (![...mapa.keys()].some((k) => k.includes('/'))) { avisar('No encontré una carpeta data/ con archivos .json en lo que elegiste.'); return; }
     E.handle = null;
     leerImagenesDesdeInput(files);
     cargarArchivos(mapa);
     despuesDeCargar(mapa);
   });
+
+  if (!TIENE_API_CARPETAS) $('#btn-abrir').textContent = 'Cargar carpeta del repo';
 
   fijarBase(new Map(), new Map());
   pintarTodo();
