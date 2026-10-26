@@ -1,0 +1,57 @@
+{
+  "materia": "Biología 2",
+  "tema": "Duplicación de ADN IV",
+  "crucigrama": {
+    "titulo": "4 · Polimerasas y precisión",
+    "palabras": [
+      {
+        "respuesta": "Traducción",
+        "pista": "Proceso donde el ribosoma lee la secuencia del ARN mensajero para sintetizar una cadena polipeptídica"
+      },
+      {
+        "respuesta": "Proofreading",
+        "pista": "Término en inglés para la corrección de pruebas realizada por las polimerasas principales"
+      },
+      {
+        "respuesta": "Bidireccional",
+        "pista": "Característica de la replicación que avanza hacia ambos lados desde cada punto de origen"
+      },
+      {
+        "respuesta": "Transcriptasa",
+        "pista": "Tipo de enzima reversa que utiliza un molde de ARN para sintetizar ADN"
+      },
+      {
+        "respuesta": "Alfa",
+        "pista": "Enzima eucariota que actúa junto a la primasa para iniciar un tramo corto de ADN"
+      },
+      {
+        "respuesta": "Epsilon",
+        "pista": "Enzima eucariota encargada de elongar de forma continua la hebra líder o adelantada"
+      },
+      {
+        "respuesta": "Delta",
+        "pista": "Enzima eucariota que sintetiza principalmente la hebra rezagada mediante la formación de fragmentos"
+      },
+      {
+        "respuesta": "Pol I",
+        "pista": "Enzima bacteriana encargada de remover los cebadores de ARN y reemplazarlos por ADN"
+      },
+      {
+        "respuesta": "Pol II",
+        "pista": "Enzima procariota especializada principalmente en la reparación del material genético dañado"
+      },
+      {
+        "respuesta": "Pol III",
+        "pista": "Principal enzima encargada de la elongación de ambas hebras en la replicación bacteriana"
+      },
+      {
+        "respuesta": "Discontinua",
+        "pista": "Forma de síntesis de la hebra rezagada por fragmentos."
+      }
+    ]
+  },
+  "actividad": [
+    "crucigrama"
+  ],
+  "preguntas": []
+}
