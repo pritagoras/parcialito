@@ -141,6 +141,29 @@ export async function enviarReporte(fila) {
   });
 }
 
+ // Comentarios públicos: se pueden leer y agregar desde la web.
+export async function comentariosPublicos() {
+  const q = new URLSearchParams({ select: 'apodo,comentario,creado', order: 'creado.desc', limit: '50' });
+  return (await pedir(`comentarios_publicos?${consulta(q)}`)) || [];
+}
+
+export async function guardarComentarioPublico(fila) {
+  await pedir('comentarios_publicos', {
+    method: 'POST',
+    headers: { Prefer: 'return=minimal' },
+    body: JSON.stringify(fila),
+  });
+}
+
+// Reportes generales privados: la web solo tiene permiso de insertar, nunca de leer.
+export async function enviarReporteGeneral(fila) {
+  await pedir('reportes_generales', {
+    method: 'POST',
+    headers: { Prefer: 'return=minimal' },
+    body: JSON.stringify(fila),
+  });
+}
+
 // Estadística de dificultad de un grupo de preguntas (de todos los jugadores).
 // Devuelve [{ pregunta_id, intentos, fallos }] solo para las que ya tienen suficientes respuestas.
 export async function dificultadDe(ids) {
