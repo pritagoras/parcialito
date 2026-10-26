@@ -4,7 +4,8 @@ import { abrirComparadorComunicacion, TITULO as TITULO_COMUNICACION } from './co
 
 export const TITULO = 'Comparadores de conceptos';
 
-export function abrirComparadores({ app, volver, temaCuadro }) {
+export function abrirComparadores({ app, volver, tema, temaCuadro }) {
+  if (!temaCuadro) temaCuadro = tema;
   const items = [
     { id: 'cuadro', icon: '🧬', titulo: 'Duplicación vs. transcripción vs. traducción', detalle: 'Tres procesos, criterios comunes y diferencias moleculares', abrir: abrirCuadro, args: { tema: temaCuadro } },
     { id: 'lac', icon: '🧫', titulo: 'Operón lac vs. operón trp', detalle: 'Inducción, represión, lactosa, glucosa y triptófano', abrir: abrirLacTrp, args: {} },
