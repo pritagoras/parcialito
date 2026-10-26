@@ -118,15 +118,18 @@ export function abrirLab({ app, volver }) {
   if (!document.getElementById(pdbeScriptId)) {
     const css = document.createElement('link');
     css.rel = 'stylesheet';
-    css.href = 'https://www.ebi.ac.uk/pdbe/pdb-component-library/css/pdbe-molstar-3.3.0.css';
+    css.href = 'https://cdn.jsdelivr.net/npm/pdbe-molstar@3.5.0/build/pdbe-molstar.css';
     document.head.appendChild(css);
     const script = document.createElement('script');
     script.id = pdbeScriptId;
-    script.src = 'https://www.ebi.ac.uk/pdbe/pdb-component-library/js/pdbe-molstar-3.3.0.js';
+    script.src = 'https://cdn.jsdelivr.net/npm/pdbe-molstar@3.5.0/build/pdbe-molstar-component.js';
     script.async = true;
-    script.onload = () => { const fb = app.querySelector('#lab-real-fallback'); if (fb) fb.textContent = 'Visor listo. Podés rotar, acercar y seleccionar componentes de la estructura.'; };
+    script.onload = () => { const fb = app.querySelector('#lab-real-fallback'); if (fb) { fb.textContent = 'Biblioteca cargada; descargando la estructura molecular…'; customElements.whenDefined('pdbe-molstar').then(() => { if (app.contains(fb)) fb.textContent = 'Visor listo. Podés rotar, acercar y seleccionar componentes de la estructura.'; }).catch(() => { if (app.contains(fb)) fb.textContent = 'La biblioteca se cargó, pero no se pudo iniciar el visor. El esquema didáctico sigue disponible abajo.'; }); } };
     script.onerror = () => { const fb = app.querySelector('#lab-real-fallback'); if (fb) fb.textContent = 'No se pudo cargar el visor externo. El laboratorio esquemático sigue disponible abajo.'; };
     document.head.appendChild(script);
+  } else if (window.customElements && window.customElements.get('pdbe-molstar')) {
+    const fb = app.querySelector('#lab-real-fallback');
+    if (fb) fb.textContent = 'Visor listo. Podés rotar, acercar y seleccionar componentes de la estructura.';
   }
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
