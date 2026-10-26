@@ -1,7 +1,5 @@
-import { abrirOperones } from './operones.js?v=20261026-8';
-
 // Parcialito LAB · Factores de transcripción (basales y específicos)
-// Tablero con 4 pestañas: Vista 3D, Explicación, Comparador y Preguntas.
+// Tablero con cuatro secciones: Vista, Explicación, Comparador y Preguntas.
 // PC: panel de capas a la izquierda + escena grande + tarjetas abajo.
 // Celular: chips de capas, escena compacta con pines numerados, tarjetas plegables
 // y navegación inferior fija.
@@ -35,7 +33,7 @@ const CAPA_DESDE_PASO = { adn: 1, esp: 2, basal: 3, pol: 4, arnm: 5 };
 const CAPAS = [['adn', 'ADN', COLOR.adn], ['pol', 'ARN polimerasa II', COLOR.pol], ['basal', 'Factores basales', COLOR.basal], ['esp', 'Factores específicos', COLOR.esp], ['arnm', 'ARNm', COLOR.arnm]];
 const CAPAS_INICIO = { adn: true, pol: true, basal: true, esp: true, arnm: false };
 
-const TABS = [['vista', 'Vista 3D', '🧬'], ['explicacion', 'Explicación', '📖'], ['operones', 'Operones', '🧫'], ['comparador', 'Comparador', '⚖️'], ['preguntas', 'Preguntas', '❓']];
+const TABS = [['vista', 'Vista 3D', '🧬'], ['explicacion', 'Explicación', '📖'], ['comparador', 'Comparador', '⚖️'], ['preguntas', 'Preguntas', '❓']];
 
 // Preguntas de la pestaña Preguntas.
 const PREGUNTAS = [
@@ -53,7 +51,7 @@ const PREGUNTAS = [
 // ---------- Escena SVG ----------
 // Dos composiciones: PC (amplia, con rótulos) y celular (compacta, con pines numerados).
 const DISEÑOS = {
-  pc: { W: 1100, H: 470, y: 250, x0: 52, x1: 1048, amp: 36, per: 150, sw: 11, etq: true, pines: false, enh: 250, esp: { x: 245, y: 165, rx: 76, ry: 60 }, bas: { x: 590, y: 202, rx: 92, ry: 78 }, pol: { x: 785, y: 226, rx: 112, ry: 104 }, pro: [520, 705], tss: 705, arn: [[735, 290], [800, 352], [905, 382], [1012, 372]] },
+  pc: { W: 1100, H: 500, y: 260, x0: 52, x1: 1048, amp: 36, per: 150, sw: 11, etq: true, pines: false, enh: 250, esp: { x: 245, y: 175, rx: 76, ry: 60 }, bas: { x: 590, y: 212, rx: 92, ry: 78 }, pol: { x: 785, y: 236, rx: 112, ry: 104 }, pro: [520, 705], tss: 705, arn: [[735, 300], [800, 362], [905, 392], [1012, 382]] },
   cel: { W: 720, H: 430, y: 235, x0: 30, x1: 692, amp: 25, per: 96, sw: 8, etq: false, pines: true, enh: 118, esp: { x: 120, y: 132, rx: 52, ry: 42 }, bas: { x: 335, y: 190, rx: 58, ry: 50 }, pol: { x: 470, y: 200, rx: 76, ry: 68 }, pro: [275, 400], tss: 400, arn: [[425, 262], [478, 322], [565, 348], [676, 336]] }
 };
 
@@ -358,8 +356,7 @@ function abrirFactores({ app, volver }) {
     </section>
 
     <section class="lab-sec" id="sec-explicacion" role="tabpanel" aria-labelledby="tab-explicacion" hidden>${htmlExplicacion()}</section>
-    <section class="lab-sec" id="sec-operones" role="tabpanel" aria-labelledby="tab-operones" hidden><div id="lab-operones-mount"></div></section>
-    <section class="lab-sec" id="sec-comparador" role="tabpanel" aria-labelledby="tab-comparador" hidden>${htmlComparador()}</section>
+        <section class="lab-sec" id="sec-comparador" role="tabpanel" aria-labelledby="tab-comparador" hidden>${htmlComparador()}</section>
     <section class="lab-sec" id="sec-preguntas" role="tabpanel" aria-labelledby="tab-preguntas" hidden><div id="lab-quiz" class="lab-quiz"></div></section>
   </main>`;
 
@@ -461,15 +458,10 @@ function abrirFactores({ app, volver }) {
   chico.addEventListener('change', alCambiar);
 
   // ----- Pestañas -----
-  let operonesMontado = false;
   function irATab(id) {
     $('.lab-tab').forEach((b) => { const on = b.dataset.tab === id; b.classList.toggle('act', on); b.setAttribute('aria-selected', on); });
     TABS.forEach(([t]) => { $('#sec-' + t).hidden = t !== id; });
     if (id === 'preguntas' && !$('#lab-quiz').childElementCount) reiniciarQuiz();
-    if (id === 'operones' && !operonesMontado) {
-      operonesMontado = true;
-      abrirOperones({ app: $('#lab-operones-mount'), volver: () => irATab('vista') });
-    }
     window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
   }
   $$('[data-tab]').forEach((b) => b.addEventListener('click', () => irATab(b.dataset.tab)));
@@ -506,9 +498,26 @@ function abrirFactores({ app, volver }) {
     if (!e.target.open || $('#lab-pdbe')) return;
     const vista = $('#lab-real-view'), fb = $('#lab-real-fb');
     fb.textContent = 'Cargando visualizador molecular…';
+    // Algunos visores moleculares intentan bloquear el scroll global. Guardamos el
+    // estado original y revertimos únicamente los bloqueos que agregue el visor.
+    const raiz = document.documentElement, cuerpo = document.body;
+    const estilosScroll = [raiz, cuerpo].map((el) => ({el, overflow: el.style.overflow, position: el.style.position, height: el.style.height, touchAction: el.style.touchAction}));
+    const restaurarScroll = () => estilosScroll.forEach(({el, overflow, position, height, touchAction}) => {
+      if (el.style.overflow === 'hidden' || el.style.overflow === 'clip') el.style.overflow = overflow;
+      if (el.style.position === 'fixed') el.style.position = position;
+      if (el.style.height === '100%' || el.style.height === '100vh' || el.style.height === '100dvh') el.style.height = height;
+      if (el.style.touchAction === 'none') el.style.touchAction = touchAction;
+    });
+    let scrollObserver;
     const montar = () => {
-      vista.insertAdjacentHTML('afterbegin', '<pdbe-molstar id="lab-pdbe" molecule-id="7ml2" hide-controls="false" hide-logo="true" bg-color-r="4" bg-color-g="10" bg-color-b="28" lighting="glossy" style="display:block;width:100%;height:520px"></pdbe-molstar>');
-      fb.textContent = 'Podés rotar, acercar y seleccionar componentes de la estructura.';
+      vista.insertAdjacentHTML('afterbegin', '<pdbe-molstar id="lab-pdbe" molecule-id="7ml2" hide-controls="false" hide-logo="true" bg-color-r="4" bg-color-g="10" bg-color-b="28" lighting="glossy" style="display:block;position:relative;width:100%;height:480px;max-width:100%;z-index:0"></pdbe-molstar>');
+      fb.textContent = 'Podés rotar el modelo dentro del visor; la página debe seguir desplazándose normalmente.';
+      restaurarScroll();
+      if (window.MutationObserver) {
+        scrollObserver = new MutationObserver(restaurarScroll);
+        scrollObserver.observe(raiz, {attributes:true, attributeFilter:['style']});
+        scrollObserver.observe(cuerpo, {attributes:true, attributeFilter:['style']});
+      }
     };
     if (window.customElements && window.customElements.get('pdbe-molstar')) return montar();
     if (!document.getElementById('lab-molstar-css')) { const l = document.createElement('link'); l.id = 'lab-molstar-css'; l.rel = 'stylesheet'; l.href = 'https://cdn.jsdelivr.net/npm/pdbe-molstar@3.5.0/build/pdbe-molstar.css'; document.head.appendChild(l); }
@@ -726,6 +735,79 @@ function inyectarEstilos() {
  .lab2 .lab-escena{box-shadow:inset 0 1px #ffffff08,0 10px 24px #0002}
  .lab2 .lab-tarj{box-shadow:0 8px 22px #0002}
  .lab2 .lab-clave{border-color:#3155a1}
+}
+
+/* Rediseño de la escena principal: más aire, rótulos legibles y paneles definidos */
+.lab2{--ln:#254581;--ln2:#477cf4;background:radial-gradient(ellipse at 58% 24%,rgba(28,72,166,.18),transparent 48%),radial-gradient(ellipse at 95% 68%,rgba(107,60,213,.10),transparent 36%),#040a1c}
+.lab2 .lab-cab{grid-template-columns:auto minmax(260px,1fr);gap:18px 20px}
+.lab2 .lab-tabs{grid-column:1/-1;justify-self:end;max-width:100%;border-color:#233d7b;background:rgba(8,18,48,.94);box-shadow:0 8px 26px #0003,inset 0 1px #ffffff08}
+.lab2 .lab-tab{padding:10px 20px;font-size:.88rem}
+.lab2 .lab-tab.act{background:linear-gradient(135deg,#5268ff,#344ce8);box-shadow:0 5px 18px #334cff55,inset 0 1px #ffffff35}
+.lab2 .lab-intro{max-width:66ch;margin:15px 0 18px;font-size:.96rem;line-height:1.65;color:#bdcffa}
+.lab2 .lab-vista{grid-template-columns:225px minmax(0,1fr);gap:20px}
+.lab2 .lab-panel,.lab2 .lab-tarj,.lab2 .lab-detalle,.lab2 .lab-real,.lab2 .lab-quiz{background:linear-gradient(145deg,rgba(9,21,51,.98),rgba(5,13,33,.98));border-color:#233f7d;box-shadow:0 10px 28px #0002,inset 0 1px #ffffff06}
+.lab2 .lab-panel{border-radius:18px;padding:14px}
+.lab2 .lab-grupo{border-color:#1a3267}
+.lab2 .lab-capa-op{padding:9px 2px;font-size:.82rem}
+.lab2 .lab-modos button{padding:10px;border-radius:11px;transition:background .18s,border-color .18s}
+.lab2 .lab-modos button.act{background:linear-gradient(110deg,#173e8b,#10275d);box-shadow:inset 0 0 0 1px #548cff}
+.lab2 .lab-escena{min-height:0;overflow:hidden;border:1px solid #1c3979;border-radius:20px;background:radial-gradient(ellipse at 50% 44%,rgba(19,48,112,.3),rgba(4,10,28,.1) 68%);box-shadow:inset 0 1px #ffffff08,0 12px 30px #0002}
+.lab2 .lab-svg{width:100%;height:auto;max-height:none;filter:drop-shadow(0 8px 20px #0002)}
+.lab2 .lab-svg .lab-etq rect{fill:rgba(5,13,34,.94);stroke-width:2.3}
+.lab2 .lab-svg .lab-etq text{paint-order:stroke;stroke:rgba(4,10,28,.35);stroke-width:.6px}
+.lab2 .lab-svg .lab-parte{transition:filter .2s,opacity .25s}
+.lab2 .lab-svg .lab-parte:hover,.lab2 .lab-svg .lab-parte:focus-visible{filter:brightness(1.18) drop-shadow(0 0 9px #8fbaff77)}
+.lab2 .lab-detalle{margin-top:12px;padding:15px 18px;border-radius:15px;border-left:4px solid var(--c,#2f7bff)}
+.lab2 .lab-detalle h3{font-size:1.12rem;letter-spacing:-.015em}
+.lab2 .lab-detalle p{max-width:85ch}
+.lab2 .lab-tarjetas{grid-template-columns:1.05fr 1fr .95fr;gap:14px;margin-top:16px}
+.lab2 .lab-tarj{padding:16px;border-radius:17px}
+.lab2 .lab-tarj h3{font-size:1rem;line-height:1.35}
+.lab2 .lab-fila-f{grid-template-columns:38px 1fr;gap:11px}
+.lab2 .lab-ic{width:38px;height:38px;font-size:1.05rem}
+.lab2 .lab-fila-f h4{font-size:.94rem}
+.lab2 .lab-fila-f p{font-size:.81rem;line-height:1.55}
+.lab2 .lab-elem{grid-template-columns:20px minmax(0,1fr);grid-template-areas:'i b' '. s';gap:3px 9px;padding:8px;border-radius:10px}
+.lab2 .lab-elem i{grid-area:i;width:17px;height:17px}
+.lab2 .lab-elem b{grid-area:b;font-size:.8rem}
+.lab2 .lab-elem span{grid-area:s;padding-left:26px;font-size:.75rem;line-height:1.45}
+.lab2 .lab-esq{height:138px}
+.lab2 .lab-tipos{background:rgba(4,12,32,.55)}
+.lab2 .lab-pie{margin-top:16px}
+.lab2 .lab-clave{border-radius:16px;background:linear-gradient(110deg,rgba(9,21,51,.98),rgba(5,13,33,.98));box-shadow:0 7px 22px #0002}
+.lab2 .lab-pager button{transition:transform .15s,background .15s,border-color .15s;box-shadow:inset 0 1px #ffffff10}
+.lab2 .lab-pager button:hover:not(:disabled){transform:translateY(-2px);border-color:#7da4ff}
+.lab2 .lab-btn,.lab2 .lab-btn-sec,.lab2 .lab-reiniciar{transition:transform .15s,filter .15s}
+.lab2 .lab-btn:hover,.lab2 .lab-btn-sec:hover,.lab2 .lab-reiniciar:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.lab2 .lab-real-view{position:relative;overflow:hidden;isolation:isolate;overscroll-behavior:contain}
+.lab2 .lab-real-view pdbe-molstar{position:relative!important;inset:auto!important;display:block!important;width:100%!important;max-width:100%!important;height:480px!important;min-height:320px;z-index:0!important;touch-action:pan-y}
+.lab2 .lab-real-view canvas{max-width:100%}
+.lab2 .lab-real[open]{overflow:visible}
+.lab2 button:focus-visible,.lab2 summary:focus-visible,.lab2 .lab-elem:focus-visible{outline:2px solid #91baff;outline-offset:3px}
+@media(min-width:1101px){
+ .lab2 .lab-vista{grid-template-columns:225px minmax(0,1fr);gap:20px}
+ .lab2 .lab-escenario{min-width:0}
+ .lab2 .lab-tarjetas{grid-template-columns:1.02fr 1fr .98fr}
+}
+@media(max-width:1100px){.lab2 .lab-tarjetas{grid-template-columns:1fr 1fr}.lab2 .lab-tarjetas .lab-tarj:last-child{grid-column:1/-1}}
+@media(max-width:900px){
+ .lab2 .lab-cab{grid-template-columns:auto minmax(0,1fr)}
+ .lab2 .lab-tabs{grid-column:1/-1;justify-self:start}
+ .lab2 .lab-vista{grid-template-columns:1fr}
+ .lab2 .lab-panel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+}
+@media(max-width:760px){
+ .lab2 .lab-cab{grid-template-columns:auto minmax(0,1fr);gap:10px}
+ .lab2 .lab-tabs{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;justify-content:space-around;overflow:visible;max-width:none;grid-column:1/-1;justify-self:stretch}
+ .lab2 .lab-tab{flex:1;padding:7px 3px;font-size:.66rem}
+ .lab2 .lab-panel{display:flex;flex-direction:column;gap:8px}
+ .lab2 .lab-escena{margin:0;border-radius:16px}
+ .lab2 .lab-svg{width:100%;max-height:370px}
+ .lab2 .lab-tarjetas{grid-template-columns:1fr;gap:10px}
+ .lab2 .lab-tarjetas .lab-tarj:last-child{grid-column:auto}
+ .lab2 .lab-elem{grid-template-columns:20px 1fr;grid-template-areas:'i b' '. s'}
+ .lab2 .lab-elem span{padding-left:27px}
+ .lab2 .lab-real-view pdbe-molstar{height:420px!important;touch-action:pan-y}
 }
 @media(prefers-reduced-motion:reduce){.lab2 *{animation:none!important;transition:none!important}}
 
