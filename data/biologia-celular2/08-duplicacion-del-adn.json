@@ -1,0 +1,71 @@
+{
+  "materia": "Biología 2",
+  "tema": "Duplicación del ADN",
+  "crucigrama": {
+    "titulo": "Duplicación del ADN",
+    "palabras": [
+      {
+        "respuesta": "Ori",
+        "pista": "Región del cromosoma donde se inicia la apertura de la cadena y comienza la duplicación del genoma"
+      },
+      {
+        "respuesta": "Fase S",
+        "pista": "Etapa de la interfase celular en la cual se sintetiza una copia completa del material genético"
+      },
+      {
+        "respuesta": "Ligasa",
+        "pista": "Enzima responsable de sellar las interrupciones del esqueleto fosfodiéster uniendo los fragmentos de ADN"
+      },
+      {
+        "respuesta": "Burbuja",
+        "pista": "Región abierta de la doble hélice que se forma en el sitio de origen y posee dos horquillas"
+      },
+      {
+        "respuesta": "Primasa",
+        "pista": "Enzima encargada de sintetizar un pequeño tramo de ARN para dar inicio a la polimerización"
+      },
+      {
+        "respuesta": "Cebador",
+        "pista": "Secuencia corta de ARN necesaria para aportar el extremo tres prima hidroxilo que requiere la polimerasa"
+      },
+      {
+        "respuesta": "Okazaki",
+        "pista": "Apellido del científico que da nombre a los tramos discontinuos sintetizados en la hebra rezagada"
+      },
+      {
+        "respuesta": "Helicasa",
+        "pista": "Enzima que rompe los puentes de hidrógeno para separar las dos cadenas del ADN"
+      },
+      {
+        "respuesta": "Replicón",
+        "pista": "Segmento de ADN que se copia de manera coordinada a partir de un sitio de inicio individual"
+      },
+      {
+        "respuesta": "Telómero",
+        "pista": "Estructura con secuencias repetitivas situada en los extremos de los cromosomas lineales para proteger el material genético"
+      },
+      {
+        "respuesta": "Horquilla",
+        "pista": "Estructura en forma de Y donde las cadenas de ADN se separan y progresa la síntesis"
+      },
+      {
+        "respuesta": "Interfase",
+        "pista": "Período del ciclo celular que abarca las etapas G uno, S y G dos previo a la mitosis"
+      },
+      {
+        "respuesta": "Hebra líder",
+        "pista": "Cadena nueva de ADN sintetizada de forma continua en el mismo sentido del avance de la horquilla"
+      },
+      {
+        "respuesta": "Telomerasa",
+        "pista": "Ribonucleoproteína con función de transcriptasa reversa que evita el acortamiento de las regiones extremas del ADN"
+      }
+    ]
+  },
+  "actividad": [
+    "crucigrama"
+  ],
+  "preguntas": [
+
+  ]
+}
