@@ -1,7 +1,7 @@
 import { Sonido } from './sonido.js?v=dev';
 import { lanzarConfeti } from './confeti.js?v=dev';
 
-export const TITULO = 'Laboratorio de operones: lac y trp';
+export const TITULO = 'Regulación genética: lac, trp y ferritina';
 
 const PREGUNTAS = [
  {q:'Hay lactosa y poca glucosa. ¿Qué ocurre con lac?',o:['LacI bloquea el operador','Expresión alta: LacI se inactiva y CAP-cAMP favorece la transcripción','Se activa TrpR','No puede transcribirse nunca'],c:1,e:'La alolactosa inactiva LacI y, con poca glucosa, aumenta cAMP: CAP-cAMP favorece la unión de la ARN polimerasa.'},
@@ -50,7 +50,7 @@ export function abrirOperones({app, volver}) {
  .op-hairpins{display:grid;grid-template-columns:1fr 1fr;gap:.4rem;margin:.7rem 0}.op-hairpins span{text-align:center;padding:.6rem .2rem;border:1px solid var(--linea,#43347A);border-radius:10px;font-size:.78rem;font-weight:800}.op-hairpins .active{border-color:#FFB938;background:rgba(255,185,56,.12)}
  @media(max-width:480px){.op-wrap{padding-left:.8rem;padding-right:.8rem}.op-tab{font-size:.68rem}.op-genes{gap:.15rem}.op-gene{font-size:.6rem;padding:.5rem .05rem}.op-compare{grid-template-columns:1fr}}
  </style>`;
- app.innerHTML=estilos+'<main class="op-wrap"><button class="op-back" id="op-back">← Volver</button><header class="op-head"><div class="op-kicker">Laboratorio molecular · interactivo</div><h1>Operones lac y trp</h1><p class="op-muted">Modificá las condiciones, observá la regulación y comprobá tus predicciones.</p></header><nav class="op-tabs"><button class="op-tab" data-view="lac">🧪 lac</button><button class="op-tab" data-view="trp">🧬 trp</button><button class="op-tab" data-view="ferritina">🩸 Ferritina</button><button class="op-tab" data-view="compare">↔ Comparar</button><button class="op-tab" data-view="quiz">🎯 Desafío</button></nav><section id="op-content"></section></main>';
+ app.innerHTML=estilos+'<main class="op-wrap"><button class="op-back" id="op-back">← Volver</button><header class="op-head"><div class="op-kicker">Laboratorio molecular · interactivo</div><h1>Operón lac, operón trp y ferritina</h1><p class="op-muted">Explorá cómo las señales ambientales y el hierro regulan la expresión génica: cambiá las condiciones, observá los mecanismos y comprobá tus predicciones.</p></header><nav class="op-tabs"><button class="op-tab" data-view="lac">🧪 lac</button><button class="op-tab" data-view="trp">🧬 trp</button><button class="op-tab" data-view="ferritina">🩸 Ferritina</button><button class="op-tab" data-view="compare">↔ Comparar</button><button class="op-tab" data-view="quiz">🎯 Desafío</button></nav><section id="op-content"></section></main>';
  const $=s=>app.querySelector(s);
  $('#op-back').onclick=()=>{Sonido.clic();volver();};
  app.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{Sonido.clic();vista=b.dataset.view;render();});
