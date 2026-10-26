@@ -91,7 +91,7 @@ export function abrirOperones({app, volver}) {
   $('#op-gotrp')?.addEventListener('click',()=>{Sonido.clic();vista='trp';render();});
   app.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>{
    if(respondida)return;Sonido.clic();last=Number(b.dataset.answer);respondida=true;
-   if(last===PREGUNTAS[orden[pregunta%orden.length]].c){puntos+=10;racha++;mejor=Math.max(mejor,racha);Sonido.acierto();}else{racha=0;Sonido.error();}
+   if(last===PREGUNTAS[orden[pregunta%orden.length]].c){puntos+=10;racha++;mejor=Math.max(mejor,racha);Sonido.acierto(racha);}else{racha=0;Sonido.error();}
    render();
   });
   $('#op-restart')?.addEventListener('click',()=>{Sonido.clic();orden=[];pregunta=0;completadas=0;puntos=0;racha=0;mejor=0;respondida=false;last=-1;render();});
