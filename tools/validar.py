@@ -18,7 +18,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 DATA = RAIZ / "data"
 LETRAS = "ABCD"
-ACTIVIDADES = {"replicacion", "cuadro", "horquilla", "bases"}   # actividades interactivas que conoce la app (js/replicacion.js, js/cuadro.js)
+ACTIVIDADES = {"replicacion", "cuadro", "horquilla", "bases", "crucigrama"}   # actividades interactivas que conoce la app (carpeta js/)
 
 # Frases que delatan una explicación atada al orden de las opciones.
 # La app mezcla las opciones, así que "la opción B" dejaría de tener sentido.
@@ -57,6 +57,28 @@ def validar_cuadro(c):
     return errores
 
 
+def validar_crucigrama(c):
+    """Devuelve (errores, avisos) del objeto "crucigrama" (lista de palabras con pistas)."""
+    e = "Crucigrama: "
+    if not isinstance(c, dict):
+        return [e + 'tiene que ser un objeto con "titulo" y "palabras".'], []
+    palabras = c.get("palabras")
+    if not isinstance(palabras, list):
+        return [e + 'falta la lista "palabras".'], []
+    validas = 0
+    avisos = []
+    for n, p in enumerate(palabras, start=1):
+        resp = p.get("respuesta") if isinstance(p, dict) else None
+        pista = p.get("pista") if isinstance(p, dict) else None
+        if not isinstance(resp, str) or not resp.strip() or not isinstance(pista, str) or not pista.strip():
+            avisos.append(e + f'la palabra {n} necesita "respuesta" y "pista"; se va a ignorar.')
+        else:
+            validas += 1
+    if validas < 4:
+        avisos.append(e + f"tiene {validas} palabras válidas y hacen falta al menos 4 para armar el tablero.")
+    return [], avisos
+
+
 def validar_archivo(ruta: Path):
     """Devuelve (errores, avisos, cantidad_de_preguntas, datos_o_None)."""
     errores, avisos = [], []
@@ -90,8 +112,9 @@ def validar_archivo(ruta: Path):
     elif tarjetas is None:
         tarjetas = []
 
-    if not preguntas and not tarjetas:
-        errores.append('El tema debe contener al menos una pregunta o al menos una tarjeta.')
+    tiene_crucigrama = isinstance(datos.get("crucigrama"), dict)
+    if not preguntas and not tarjetas and not tiene_crucigrama:
+        errores.append('El tema debe contener al menos una pregunta, una tarjeta o un crucigrama.')
         return errores, avisos, 0, datos
 
     # Actividades interactivas (opcional): texto o lista de textos
@@ -104,6 +127,10 @@ def validar_archivo(ruta: Path):
             avisos.append(f'"actividad": "{clave}" no existe (disponibles: {", ".join(sorted(ACTIVIDADES))}).')
     if "cuadro" in claves:
         errores.extend(validar_cuadro(datos.get("cuadro")))
+    if "crucigrama" in claves or "crucigrama" in datos:
+        e_c, a_c = validar_crucigrama(datos.get("crucigrama"))
+        errores.extend(e_c)
+        avisos.extend(a_c)
 
     # Validación de preguntas
     vistas = set()
