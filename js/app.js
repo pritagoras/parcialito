@@ -61,6 +61,15 @@ function avisar(texto) {
   temporizadorAviso = setTimeout(() => avisoEl.classList.remove('visible'), 1500);
 }
 
+function esCelular() {
+  const ua = navigator.userAgent || '';
+  return /iPhone|iPod|Android.*Mobile|Windows Phone|IEMobile|BlackBerry|webOS/i.test(ua);
+}
+
+function esIOS() {
+  return /iPhone|iPod/.test(navigator.userAgent || '');
+}
+
 function estaInstalada() {
   return instalacionCompletada ||
     window.matchMedia('(display-mode: standalone)').matches ||
@@ -73,6 +82,13 @@ let instalacionCompletada = false;
 window.addEventListener('beforeinstallprompt', (evento) => {
   evento.preventDefault();
   eventoInstalacionPendiente = evento;
+
+  // En Android/Chromium, mostrar el botón solo cuando el navegador habilite
+  // el cuadro de instalación nativo.
+  if (esCelular() && !estaInstalada()) {
+    const boton = document.getElementById('btn-instalar-app');
+    if (boton) boton.hidden = false;
+  }
 });
 
 window.addEventListener('appinstalled', () => {
@@ -82,35 +98,35 @@ window.addEventListener('appinstalled', () => {
   avisar('¡Parcialito se instaló correctamente!');
 });
 
-function mostrarAyudaInstalacion() {
-  const esIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
-    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-
-  if (esIOS) {
-    window.alert('Para instalar Parcialito en tu iPhone o iPad:\n\n1. Abrí esta página en Safari.\n2. Tocá Compartir (el cuadrado con la flecha hacia arriba).\n3. Elegí «Añadir a pantalla de inicio».');
-  } else {
-    window.alert('Para instalar Parcialito, abrí el menú del navegador (⋮ o ⋯) y elegí «Instalar Parcialito» o «Agregar a pantalla de inicio».');
-  }
+function mostrarAyudaInstalacionIOS() {
+  window.alert('Para instalar Parcialito en tu iPhone:\n\n1. Abrí esta página en Safari.\n2. Tocá Compartir (el cuadrado con la flecha hacia arriba).\n3. Elegí «Añadir a pantalla de inicio».');
 }
 
 async function instalarParcialito() {
   if (!eventoInstalacionPendiente) {
-    mostrarAyudaInstalacion();
+    // En iOS no existe una API para abrir el diálogo nativo desde una web.
+    if (esIOS()) mostrarAyudaInstalacionIOS();
+    else avisar('El navegador todavía no habilitó la instalación directa. Abrí Parcialito en Chrome y volvé a intentarlo.');
     return;
   }
 
   const evento = eventoInstalacionPendiente;
   eventoInstalacionPendiente = null;
+  const boton = document.getElementById('btn-instalar-app');
   try {
     await evento.prompt();
     const eleccion = await evento.userChoice;
     if (eleccion?.outcome === 'accepted') {
       avisar('Parcialito se está instalando…');
     } else {
-      avisar('Podés instalarla cuando quieras desde este botón.');
+      // El evento solo se puede usar una vez; se vuelve a mostrar cuando el
+      // navegador habilite un nuevo intento.
+      if (boton && !esIOS()) boton.hidden = true;
+      avisar('No hay problema. Podés instalarla más adelante.');
     }
   } catch (_) {
-    mostrarAyudaInstalacion();
+    if (boton && !esIOS()) boton.hidden = true;
+    avisar('No se pudo abrir la instalación. Volvé a intentarlo cuando el navegador la habilite.');
   }
 }
 
@@ -646,9 +662,9 @@ function vistaInicio() {
         </div>
       </header>
       <p class="bajada">Elegí una materia y practicá con preguntas de opción múltiple.</p>
-      ${estaInstalada() ? '' : `
+      ${estaInstalada() || !esCelular() ? '' : `
         <div class="instalar-app-wrap">
-          <button class="btn secundario btn-instalar" id="btn-instalar-app" type="button">
+          <button class="btn secundario btn-instalar" id="btn-instalar-app" type="button" ${!esIOS() && !eventoInstalacionPendiente ? 'hidden' : ''}>
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.5v11m0 0 4-4m-4 4-4-4M4.5 16v3.5h15V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span>Instalar Parcialito</span>
           </button>
