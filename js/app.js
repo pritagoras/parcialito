@@ -16,7 +16,7 @@ import { abrirBases, TITULO as TITULO_BASES } from './bases.js?v=dev';
 import { abrirCrucigrama } from './crucigrama.js?v=dev';
 import { abrirOperones, TITULO as TITULO_OPERONES } from './operones.js?v=dev';
 import { abrirCromosomas, TITULO as TITULO_CROMOSOMAS } from './cromosomas.js?v=20261026-3';
-import { abrirComunicacion, TITULO as TITULO_COMUNICACION } from './comunicacion.js?v=20261026-1';
+import { abrirComunicacion, TITULO as TITULO_COMUNICACION } from './comunicacion.js?v=20261026-2';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
