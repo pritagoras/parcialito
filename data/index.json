@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-26T02:30:34Z",
+  "generado": "2026-10-26T03:05:35Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -251,6 +251,15 @@
           "id": "biologia-celular2/15-nucleo-interfasico-iv",
           "nombre": "Núcleo interfásico IV",
           "archivo": "data/biologia-celular2/15-nucleo-interfasico-iv.json",
+          "preguntas": 0,
+          "actividad": [
+            "crucigrama"
+          ]
+        },
+        {
+          "id": "biologia-celular2/16-duplicacion-adn-v",
+          "nombre": "Duplicación ADN V",
+          "archivo": "data/biologia-celular2/16-duplicacion-adn-v.json",
           "preguntas": 0,
           "actividad": [
             "crucigrama"
