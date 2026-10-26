@@ -37,6 +37,7 @@ export function abrirLab({ app, volver }) {
       </section>
       <section class="lab-explorador">
         <div class="lab-explorador-cab"><div><span class="lab-eyebrow">MÓDULO 01</span><h2>Maquinaria de transcripción</h2></div><button class="btn secundario" id="lab-giro">↻ Rotar modelo</button></div>
+        <section class="lab-guia"><div><span class="lab-eyebrow">RECORRIDO GUIADO</span><h3 id="lab-paso-titulo">Explorá libremente</h3><p id="lab-paso-texto">Seleccioná los componentes del modelo para conocer su naturaleza y función.</p></div><div class="lab-guia-acciones"><button class="btn secundario" id="lab-anterior">← Anterior</button><button class="btn primario" id="lab-siguiente">Empezar recorrido →</button></div></section>
         <div class="lab-workspace">
           <div class="lab-visual">
             <div class="lab-visual-top"><span>MODELO ESQUEMÁTICO</span><span>Seleccioná una pieza</span></div>
@@ -62,7 +63,6 @@ export function abrirLab({ app, volver }) {
           </div>
           <aside class="lab-info" aria-live="polite"><span class="lab-info-tipo" id="lab-tipo">PROTEÍNAS</span><h3 id="lab-nombre">Factores basales</h3><p id="lab-texto"></p><div class="lab-dato" id="lab-dato"></div><div class="lab-quiz-mini"><strong>¿Qué estás viendo?</strong><p id="lab-pregunta">Los factores basales son…</p><div id="lab-opciones"><button data-answer="proteina">Proteínas</button><button data-answer="base">Bases nitrogenadas</button><button data-answer="region">Región de ADN</button><button data-answer="acido">Ácido nucleico</button></div><p id="lab-feedback" role="status"></p></div></aside>
         </div>
-        <section class="lab-guia"><div><span class="lab-eyebrow">RECORRIDO GUIADO</span><h3 id="lab-paso-titulo">Explorá libremente</h3><p id="lab-paso-texto">Seleccioná los componentes del modelo para conocer su naturaleza y función.</p></div><div class="lab-guia-acciones"><button class="btn secundario" id="lab-anterior">← Anterior</button><button class="btn primario" id="lab-siguiente">Empezar recorrido →</button></div></section>
       </section>
       <section class="lab-claves"><h2>Regla visual para el examen</h2><div class="lab-clave-grid"><article><b style="color:#ffbd59">ADN</b><p>Promotor, enhancer y sitios reguladores: son secuencias de nucleótidos.</p></article><article><b style="color:#28d7b0">PROTEÍNAS</b><p>Factores basales, factores específicos y ARN polimerasa II: son componentes proteicos.</p></article><article><b style="color:#ff5f9e">ARN</b><p>El producto inicial es ARN; luego el pre-ARNm eucariota suele procesarse.</p></article></div></section>
     </main>
