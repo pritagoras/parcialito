@@ -1,0 +1,65 @@
+{
+  "materia": "Biología 2",
+  "tema": "Duplicación de ADN III",
+  "crucigrama": {
+    "titulo": "3 · Moléculas y procesos",
+    "palabras": [
+      {
+        "respuesta": "Transcripción",
+        "pista": "Síntesis de un tipo de ácido nucleico de hebra simple a partir de un molde de ADN"
+      },
+      {
+        "respuesta": "Hebra rezagada",
+        "pista": "Cadena nueva sintetizada de forma discontinua mediante fragmentos cortos en sentido opuesto al avance de la horquilla"
+      },
+      {
+        "respuesta": "ARNt",
+        "pista": "Molécula adaptadora que transporta un aminoácido específico hacia el sitio de traducción"
+      },
+      {
+        "respuesta": "Molde",
+        "pista": "Cadena parental cuya secuencia determina el orden de nucleótidos de la hebra nueva"
+      },
+      {
+        "respuesta": "Codón",
+        "pista": "Triplete de nucleótidos en el ARN mensajero que especifica la incorporación de un aminoácido"
+      },
+      {
+        "respuesta": "Uracilo",
+        "pista": "Base nitrogenada presente en los ribonucleótidos que reemplaza a la timina en el ARN"
+      },
+      {
+        "respuesta": "Histonas",
+        "pista": "Proteínas que se sintetizan en la fase S para asociarse al ADN recién replicado"
+      },
+      {
+        "respuesta": "Promotor",
+        "pista": "Secuencia del gen que reconoce la ARN polimerasa para dar comienzo a la transcripción"
+      },
+      {
+        "respuesta": "Ribosoma",
+        "pista": "Estructura celular encargada de formar los enlaces peptídicos durante la síntesis de proteínas"
+      },
+      {
+        "respuesta": "Somáticas",
+        "pista": "Tipo de células corporales donde la actividad de la telomerasa suele ser baja o indetectable"
+      },
+      {
+        "respuesta": "Citocinesis",
+        "pista": "Proceso que divide el citoplasma celular completando la formación de las células hijas"
+      },
+      {
+        "respuesta": "Exonucleasa",
+        "pista": "Actividad enzimática capaz de remover el nucleótido terminal mal apareado durante el copiado"
+      },
+      {
+        "respuesta": "Procariotas",
+        "pista": "Organismos cuyo cromosoma circular posee habitualmente un único origen de replicación"
+      }
+    ]
+  },
+  "actividad": [
+    "crucigrama"
+  ],
+  "preguntas": []
+}
