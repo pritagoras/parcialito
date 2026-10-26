@@ -149,7 +149,7 @@ function construirEscena(L) {
     anot += `<g class="lab-etq" data-part="enhancer" data-capa="adn"><path class="lab-leader" d="M${enh} ${y + 40} L${enh - 12} 470" stroke="#d9e6ff"/><rect x="55" y="475" width="285" height="58" rx="12" fill="#07132e" stroke="#6b5b1c" stroke-width="1.5"/>${texto(72, 498, 'ENHANCER · ADN REGULADOR', { size: 14, w: 800, fill: '#ffdb70', a: 'start' })}${texto(72, 518, 'Puede estar lejos del promotor', { size: 13, fill: '#b9c9ed', a: 'start' })}</g>`;
     const bx0 = p0, bx1 = tss - 18, by = y + 58;
     anot += `<g class="lab-etq" data-part="promotor" data-capa="adn"><path d="M${bx0} ${by} v12 H${bx1} v-12" fill="none" stroke="#7bb6ff" stroke-width="2.4"/><rect x="${(bx0 + bx1) / 2 - 118}" y="${by + 18}" width="236" height="53" rx="12" fill="#07132e" stroke="#2d6fce" stroke-width="1.5"/>${texto((bx0 + bx1) / 2, by + 39, 'PROMOTOR', { size: 14, w: 800, fill: '#a9ceff' })}${texto((bx0 + bx1) / 2, by + 58, 'Zona de ensamblaje basal', { size: 12, fill: '#b9c9ed' })}</g>`;
-    anot += `<g class="lab-etq" data-part="promotor" data-capa="adn"><path class="lab-leader" d="M${tss} ${y + 22} V${y + 122}" stroke="#9fc4ff"/><rect x="${tss - 66}" y="${y + 126}" width="132" height="54" rx="12" fill="#07132e" stroke="#365caa" stroke-width="1.5"/>${texto(tss, y + 148, 'INICIO +1', { size: 14, w: 800, fill: '#c7dcff' })}${texto(tss, y + 168, 'de transcripción', { size: 12, fill: '#b9c9ed' })}</g>`;
+    anot += `<g class="lab-etq" data-part="promotor" data-capa="adn"><path class="lab-leader" d="M${tss} ${y + 22} V${y + 130}" stroke="#9fc4ff"/><rect x="${tss - 66}" y="${y + 135}" width="132" height="54" rx="12" fill="#07132e" stroke="#365caa" stroke-width="1.5"/>${texto(tss, y + 157, 'INICIO +1', { size: 14, w: 800, fill: '#c7dcff' })}${texto(tss, y + 177, 'de transcripción', { size: 12, fill: '#b9c9ed' })}</g>`;
     anot += `<g class="lab-etq" data-part="arn" data-capa="arnm"><path class="lab-leader" d="M990 500 L1025 535" stroke="${COLOR.arnm}"/><rect x="930" y="540" width="220" height="42" rx="12" fill="#07132e" stroke="${COLOR.arnm}" stroke-width="1.8"/>${texto(1040, 566, 'ARN naciente · 5′→3′', { fill: '#ffc2d8', size: 14, w: 700 })}</g>`;
     anot += texto(26, y - 24, '5′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' }) + texto(26, y + 44, '3′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' });
     anot += texto(1174, y - 30, '3′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' }) + texto(1174, y + 36, '5′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' });
@@ -831,6 +831,7 @@ function inyectarEstilos() {
 .lab2 .lab-svg .lab-leader{fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;opacity:.92}
 .lab2 .lab-svg .lab-etq rect{filter:drop-shadow(0 5px 12px #0004)}
 .lab2 .lab-svg .lab-etq[data-part],.lab2 .lab-svg .lab-etq[data-capa]{cursor:pointer}
+.lab2 .lab-svg [data-part].sel{filter:drop-shadow(0 0 10px #fff9)}
 .lab2 .lab-explorer{margin-top:14px;padding:16px;border:1px solid #203d7c;border-radius:18px;background:linear-gradient(145deg,rgba(8,20,48,.98),rgba(5,13,32,.98));box-shadow:0 10px 26px #0002}
 .lab2 .lab-explorer-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:14px}
 .lab2 .lab-kicker{display:block;margin-bottom:5px;color:#85aaff;font-size:.65rem;font-weight:800;letter-spacing:.16em}
