@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-26T03:05:35Z",
+  "generado": "2026-10-26T21:14:21Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -173,6 +173,12 @@
           "preguntas": 42
         },
         {
+          "id": "biologia-celular2/07-duplicacion-del-adn",
+          "nombre": "Duplicación del ADN",
+          "archivo": "data/biologia-celular2/07-duplicacion-del-adn.json",
+          "preguntas": 45
+        },
+        {
           "id": "biologia-celular2/12-nucleo-interfasico-i",
           "nombre": "Nucleo interfasico I",
           "archivo": "data/biologia-celular2/12-nucleo-interfasico-i.json",
@@ -207,6 +213,13 @@
           "actividad": [
             "crucigrama"
           ]
+        },
+        {
+          "id": "biologia-celular2/99-crucigramas",
+          "nombre": "Crucigramas",
+          "archivo": "data/biologia-celular2/99-crucigramas.json",
+          "preguntas": 0,
+          "actividad": "crucigrama"
         }
       ]
     },
