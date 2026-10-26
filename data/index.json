@@ -145,7 +145,10 @@
           "id": "biologia-celular2/02-transcripcion-test",
           "nombre": "Transcripción",
           "archivo": "data/biologia-celular2/02-transcripcion-test.json",
-          "preguntas": 63
+          "preguntas": 63,
+          "actividad": [
+            "operones"
+          ]
         },
         {
           "id": "biologia-celular2/03-traduccion",
