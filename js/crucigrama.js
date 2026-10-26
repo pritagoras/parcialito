@@ -25,9 +25,9 @@
 //   - el progreso se guarda: si salís, seguís donde quedaste
 // ==========================================================
 
-import { estado, guardar } from './store.js?v=dev';
-import { Sonido } from './sonido.js?v=dev';
-import { lanzarConfeti } from './confeti.js?v=dev';
+import { estado, guardar } from './store.js';
+import { Sonido } from './sonido.js';
+import { lanzarConfeti } from './confeti.js';
 
 export const TITULO = 'Crucigrama: completá el tablero con las pistas';
 

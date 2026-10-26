@@ -13,16 +13,17 @@ import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js
 import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js';
 import { abrirHorquilla, TITULO as TITULO_HORQUILLA } from './horquilla.js';
 import { abrirBases, TITULO as TITULO_BASES } from './bases.js';
+import { abrirCrucigrama } from './crucigrama.js';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
 
 // Actividades interactivas: un tema las activa con "actividad": "<clave>" en su JSON
 const ACTIVIDADES = {
-  replicacion: { titulo: TITULO_REPLICACION, abrir: abrirReplicacion },
-  cuadro: { titulo: TITULO_CUADRO, abrir: abrirCuadro },
-  horquilla: { titulo: TITULO_HORQUILLA, abrir: abrirHorquilla },
-  bases: { titulo: TITULO_BASES, abrir: abrirBases },
+  replicacion: { titulo: TITULO_REPLICACION, icono: '🫧', abrir: abrirReplicacion },
+  cuadro: { titulo: TITULO_CUADRO, icono: '📊', abrir: abrirCuadro },
+  horquilla: { titulo: TITULO_HORQUILLA, icono: '🧪', abrir: abrirHorquilla },
+  bases: { titulo: TITULO_BASES, icono: '🧬', abrir: abrirBases },
 };
 
 const LETRAS = ['A', 'B', 'C', 'D'];
@@ -567,9 +568,23 @@ function actividadesDe(m) {
   const lista = [];
   for (const t of m.temas) {
     const claves = [].concat(t.actividad || []);
-    for (const clave of claves) if (ACTIVIDADES[clave]) lista.push({ clave, titulo: ACTIVIDADES[clave].titulo, tema: t });
+    for (const clave of claves) if (ACTIVIDADES[clave]) lista.push({ clave, titulo: ACTIVIDADES[clave].titulo, icono: ACTIVIDADES[clave].icono || '🧩', tema: t });
   }
   return lista;
+}
+
+// Temas que tienen crucigrama ("actividad": [..., "crucigrama"]): salen como una fila propia debajo del tema
+const tieneCrucigrama = (t) => [].concat(t.actividad || []).includes('crucigrama');
+
+// Mejor resultado guardado de los crucigramas de un tema (el más estrellas y, a igual estrellas, el más rápido)
+function mejorCrucigrama(t) {
+  let mejor = null;
+  for (const [k, g] of Object.entries(estado.crucigramas || {})) {
+    if ((k === t.id || k.startsWith(`${t.id}#`)) && g?.mejor) {
+      if (!mejor || g.mejor.estrellas > mejor.estrellas || (g.mejor.estrellas === mejor.estrellas && g.mejor.seg < mejor.seg)) mejor = g.mejor;
+    }
+  }
+  return mejor;
 }
 
 function vistaMateria(i) {
@@ -595,7 +610,9 @@ function vistaMateria(i) {
       textoDetalle += ` · ${dominadasDe(t)} dominadas`;
     }
 
-    return `
+    // Un tema que solo tiene crucigrama (sin preguntas ni tarjetas) no se muestra como tema: solo su fila de crucigrama
+    const soloCruci = tieneCrucigrama(t) && nPreg === 0 && nTarj === 0;
+    const fila = soloCruci ? '' : `
       <label class="tema" style="--c:${color}">
         <input type="checkbox" data-n="${n}" checked>
         <span class="cuerpo">
@@ -604,6 +621,21 @@ function vistaMateria(i) {
         </span>
         ${mejor ? `<span class="mejor ${mejor.precision >= 80 ? 'alto' : ''}">Mejor ${mejor.precision}%</span>` : ''}
       </label>`;
+
+    let cruci = '';
+    if (tieneCrucigrama(t)) {
+      const rec = mejorCrucigrama(t);
+      cruci = `
+      <button class="tema-cruci ${soloCruci ? 'suelto' : ''}" data-cruci="${n}" style="--c:${color}">
+        <span class="ic" aria-hidden="true">🔤</span>
+        <span class="cuerpo">
+          <span class="nombre">Crucigrama · ${esc(t.nombre)}</span>
+          <span class="detalle">Completá el tablero con las pistas</span>
+        </span>
+        ${rec ? `<span class="mejor">${'★'.repeat(rec.estrellas)}</span>` : '<b aria-hidden="true">▶</b>'}
+      </button>`;
+    }
+    return fila + cruci;
   }).join('');
 
   const actividades = actividadesDe(m);
@@ -616,7 +648,7 @@ function vistaMateria(i) {
         <h1>${esc(m.nombre)}</h1>
       </div>
       ${actividades.map((a, n) => `
-        <button class="banner-repaso" data-actividad="${n}"><span>🧩 Actividad interactiva<small>${esc(a.titulo)}${actividades.filter((x) => x.clave === a.clave).length > 1 ? ' · ' + esc(a.tema.nombre) : ''}</small></span><b>▶</b></button>`).join('')}
+        <button class="banner-repaso" data-actividad="${n}"><span>${a.icono} ${esc(a.titulo.split(':')[0].trim())}<small>${esc([a.titulo.includes(':') ? a.titulo.slice(a.titulo.indexOf(':') + 1).trim() : 'Actividad interactiva', actividades.filter((x) => x.clave === a.clave).length > 1 ? a.tema.nombre : ''].filter(Boolean).join(' · '))}</small></span><b>▶</b></button>`).join('')}
       <div class="temas-barra">
         <span>Temas</span>
         <button class="btn enlace" id="btn-todos"></button>
@@ -678,6 +710,12 @@ function vistaMateria(i) {
       Sonido.clic();
       const a = actividades[Number(b.dataset.actividad)];
       ACTIVIDADES[a.clave].abrir({ app, volver: () => vistaMateria(i), tema: a.tema, materia: m });
+    }));
+
+  app.querySelectorAll('[data-cruci]').forEach((b) =>
+    b.addEventListener('click', () => {
+      Sonido.clic();
+      abrirCrucigrama({ app, volver: () => vistaMateria(i), tema: m.temas[Number(b.dataset.cruci)], materia: m });
     }));
 
   btnEmpezar.addEventListener('click', () => {
