@@ -86,15 +86,15 @@ window.addEventListener('beforeinstallprompt', (evento) => {
   // En Android/Chromium, mostrar el botón solo cuando el navegador habilite
   // el cuadro de instalación nativo.
   if (esCelular() && !estaInstalada()) {
-    const boton = document.getElementById('btn-instalar-app');
-    if (boton) boton.hidden = false;
+    const contenedor = document.querySelector('.instalar-app-wrap');
+    if (contenedor) contenedor.hidden = false;
   }
 });
 
 window.addEventListener('appinstalled', () => {
   instalacionCompletada = true;
   eventoInstalacionPendiente = null;
-  document.getElementById('btn-instalar-app')?.remove();
+  document.querySelector('.instalar-app-wrap')?.remove();
   avisar('¡Parcialito se instaló correctamente!');
 });
 
@@ -112,7 +112,7 @@ async function instalarParcialito() {
 
   const evento = eventoInstalacionPendiente;
   eventoInstalacionPendiente = null;
-  const boton = document.getElementById('btn-instalar-app');
+  const contenedor = document.querySelector('.instalar-app-wrap');
   try {
     await evento.prompt();
     const eleccion = await evento.userChoice;
@@ -121,11 +121,11 @@ async function instalarParcialito() {
     } else {
       // El evento solo se puede usar una vez; se vuelve a mostrar cuando el
       // navegador habilite un nuevo intento.
-      if (boton && !esIOS()) boton.hidden = true;
+      if (contenedor && !esIOS()) contenedor.hidden = true;
       avisar('No hay problema. Podés instalarla más adelante.');
     }
   } catch (_) {
-    if (boton && !esIOS()) boton.hidden = true;
+    if (contenedor && !esIOS()) contenedor.hidden = true;
     avisar('No se pudo abrir la instalación. Volvé a intentarlo cuando el navegador la habilite.');
   }
 }
@@ -663,8 +663,8 @@ function vistaInicio() {
       </header>
       <p class="bajada">Elegí una materia y practicá con preguntas de opción múltiple.</p>
       ${estaInstalada() || !esCelular() ? '' : `
-        <div class="instalar-app-wrap">
-          <button class="btn secundario btn-instalar" id="btn-instalar-app" type="button" ${!esIOS() && !eventoInstalacionPendiente ? 'hidden' : ''}>
+        <div class="instalar-app-wrap" ${!esIOS() && !eventoInstalacionPendiente ? 'hidden' : ''}>
+          <button class="btn secundario btn-instalar" id="btn-instalar-app" type="button">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.5v11m0 0 4-4m-4 4-4-4M4.5 16v3.5h15V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span>Instalar Parcialito</span>
           </button>
