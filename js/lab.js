@@ -1,4 +1,4 @@
-import { abrirOperones } from './operones.js?v=20261026-2';
+import { abrirOperones } from './operones.js?v=20261026-3';
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
 // Tablero con 4 pestañas: Vista 3D, Explicación, Comparador y Preguntas.
