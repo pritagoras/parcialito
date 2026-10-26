@@ -15,7 +15,7 @@ import { abrirHorquilla, TITULO as TITULO_HORQUILLA } from './horquilla.js?v=dev
 import { abrirBases, TITULO as TITULO_BASES } from './bases.js?v=dev';
 import { abrirCrucigrama } from './crucigrama.js?v=dev';
 import { abrirOperones, TITULO as TITULO_OPERONES } from './operones.js?v=dev';
-import { abrirCromosomas, TITULO as TITULO_CROMOSOMAS } from './cromosomas.js?v=dev';
+import { abrirCromosomas, TITULO as TITULO_CROMOSOMAS } from './cromosomas.js?v=20261026-2';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
