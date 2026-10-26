@@ -26,6 +26,8 @@ RAIZ = Path(__file__).resolve().parent.parent
 IMPORT = re.compile(r"""(['"])(\./[\w./-]+\.js)(?:\?v=\w+)?\1""")
 # src="js/xxx.js" y href="css/xxx.css" de index.html
 ENLACE = re.compile(r'((?:src|href)="(?:js|css)/[\w./-]+\.(?:js|css))(?:\?v=\w+)?"')
+ICON_ENLACE = re.compile(r'((?:src|href)="(?:ico\.png|icons/parcialito-(?:192|512)\.png))(?:\?v=\w+)?')
+ICON_MANIFEST = re.compile(r'("src"\s*:\s*"(?:ico\.png|icons/parcialito-(?:192|512)\.png))(?:\?v=\w+)?(")')
 
 RED_DE_SEGURIDAD = """
 <script id="red-de-seguridad">
@@ -68,6 +70,7 @@ def main(argv):
     html = RAIZ / "index.html"
     h = html.read_text(encoding="utf-8")
     h = ENLACE.sub(lambda m: f'{m[1]}?v={version}"', h)
+    h = ICON_ENLACE.sub(lambda m: f'{m[1]}?v={version}"', h)
     if 'id="red-de-seguridad"' not in h:
         if "</body>" in h:
             h = h.replace("</body>", RED_DE_SEGURIDAD + "</body>")
@@ -75,7 +78,17 @@ def main(argv):
             h += RED_DE_SEGURIDAD
     html.write_text(h, encoding="utf-8")
 
-    print(f"Versión {version}: {cambiados} archivos js versionados, index.html actualizado.")
+    # Versionar también los iconos del manifest para evitar que el navegador
+    # o la PWA instalada sigan usando una copia antigua.
+    manifest = RAIZ / "manifest.json"
+    if manifest.exists():
+        texto_manifest = manifest.read_text(encoding="utf-8")
+        texto_manifest = ICON_MANIFEST.sub(
+            lambda m: f'{m[1]}?v={version}{m[2]}', texto_manifest
+        )
+        manifest.write_text(texto_manifest, encoding="utf-8")
+
+    print(f"Versión {version}: {cambiados} archivos js versionados, index.html y manifest actualizados.")
     return 0
 
 

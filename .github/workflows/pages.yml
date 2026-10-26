@@ -34,6 +34,17 @@ jobs:
       - name: Validar temas y regenerar el índice
         run: python tools/actualizar_indice.py
 
+      # Si existe ico.png en la raíz, se usa para regenerar ambos tamaños PWA.
+      # Si todavía no se subió, se conservan los iconos predeterminados.
+      - name: Generar iconos desde ico.png (si existe)
+        run: |
+          if [ -f ico.png ]; then
+            python -m pip install --quiet --disable-pip-version-check pillow
+            python tools/generar_iconos.py
+          else
+            echo "No se encontró ico.png; se conservan los iconos actuales."
+          fi
+
       # Le pone un número de versión a los archivos para que ningún celular
       # use copias viejas guardadas (así nadie tiene que borrar datos).
       - name: Versionar archivos
