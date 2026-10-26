@@ -1,131 +1,581 @@
-// Parcialito LAB: catálogo de laboratorios interactivos.
-export function abrirLab({ app, volver }) {
-  const componentes = {
-    adn: { nombre: 'ADN: doble hélice', tipo: 'Ácido nucleico', color: '#4f9cff', texto: 'El ADN está formado por nucleótidos. Cada uno contiene desoxirribosa, fosfato y una base nitrogenada (A, T, C o G). Las dos hebras son complementarias y antiparalelas: una corre 5′→3′ y la otra 3′→5′.', dato: 'Las bases forman pares: A–T y G–C.' },
-    promotor: { nombre: 'Promotor', tipo: 'Región de ADN', color: '#ffbd59', texto: 'Es una región del ADN cercana al sitio donde comienza la transcripción. En genes eucariotas, algunos promotores contienen elementos como la caja TATA; no todos los promotores tienen la misma composición.', dato: 'El sitio +1 es el primer nucleótido transcrito.' },
-    enhancer: { nombre: 'Enhancer', tipo: 'Región reguladora de ADN', color: '#ff8a45', texto: 'Secuencia reguladora a la que se unen factores específicos. Puede encontrarse a cierta distancia del promotor y favorecer la transcripción mediante interacciones con el complejo regulador.', dato: 'Un enhancer es ADN, no una proteína.' },
-    especifico: { nombre: 'Factor específico', tipo: 'Proteína reguladora', color: '#ff8a45', texto: 'Reconoce secuencias reguladoras concretas y puede actuar como activador o represor. Su efecto depende del contexto celular, de las otras proteínas presentes y de la organización de la cromatina.', dato: 'Los factores específicos no son bases nitrogenadas: son proteínas.' },
-    basal: { nombre: 'Factores basales', tipo: 'Proteínas / complejo de iniciación', color: '#28d7b0', texto: 'Los factores generales de transcripción ayudan a reconocer el promotor, reclutar y posicionar la ARN polimerasa II y formar el complejo de preiniciación. Entre ellos están TFIID (que incluye TBP), TFIIB, TFIIF, TFIIE y TFIIH.', dato: 'Son necesarios para la iniciación basal de la transcripción por ARN polimerasa II.' },
-    polimerasa: { nombre: 'ARN polimerasa II', tipo: 'Complejo enzimático proteico', color: '#a58bff', texto: 'En eucariotas, sintetiza pre-ARNm usando una hebra de ADN como molde. Lee el molde en sentido 3′→5′ y sintetiza ARN en sentido 5′→3′.', dato: 'No “convierte” bases en proteínas: produce una cadena de ARN.' },
-    arn: { nombre: 'ARN naciente', tipo: 'Ácido nucleico', color: '#ff5f9e', texto: 'La cadena de ARN crece incorporando ribonucleótidos complementarios a la hebra molde. En ARN se usa uracilo (U) en lugar de timina (T).', dato: 'El ARN se sintetiza en dirección 5′→3′.' }
-  };
-  const pasos = [
-    { titulo: '1. ADN y regiones reguladoras', id: 'adn', texto: 'La información está en el ADN. El promotor y otras secuencias reguladoras son tramos de ADN, no proteínas.' },
-    { titulo: '2. Unión de factores específicos', id: 'especifico', texto: 'Activadores o represores reconocen secuencias reguladoras y modulan la probabilidad de iniciar la transcripción.' },
-    { titulo: '3. Ensamblaje basal', id: 'basal', texto: 'Los factores generales organizan el complejo de preiniciación en el promotor y facilitan la participación de la polimerasa.' },
-    { titulo: '4. Inicio de la transcripción', id: 'polimerasa', texto: 'La ARN polimerasa II usa una hebra como molde y comienza a sintetizar ARN a partir del sitio de inicio (+1).' },
-    { titulo: '5. El ARN crece', id: 'arn', texto: 'La cadena nueva crece 5′→3′. La secuencia del ARN es complementaria al molde y coincide con la codificante salvo U en lugar de T.' }
-  ];
-  let seleccionado = 'basal', paso = -1, giro = 0;
-  app.innerHTML = `
-    <main class="pantalla lab-pantalla">
-      <header class="cabecera"><button class="btn secundario" id="lab-volver">← Inicio</button><h1 class="marca">Parcialito <span style="color:#9B7BFF">LAB</span></h1><span class="lab-chip">EXPLORACIÓN</span></header>
-      <section class="lab-intro"><p class="lab-eyebrow">LABORATORIO INTERACTIVO · BIOLOGÍA 2</p><h2>Dentro de la transcripción</h2><p>Explorá el ADN, las regiones reguladoras y las proteínas que coordinan la transcripción eucariota.</p></section>
-      <section class="lab-catalogo">
-        <article class="lab-card lab-card-activo"><div class="lab-card-icon">🧬</div><div><span class="lab-estado">DISPONIBLE</span><h3>Transcripción y factores de transcripción</h3><p>Modelo molecular didáctico · ADN, promotor, factores basales y específicos, ARN polimerasa II.</p><div class="lab-tags"><span>Cuasi-3D</span><span>Explorable</span><span>Modo guiado</span></div></div></article>
-        <article class="lab-card lab-card-proximo"><div class="lab-card-icon">⚡</div><div><span class="lab-estado">PRÓXIMAMENTE</span><h3>Comunicación celular</h3><p>Receptores, proteínas G y cascadas de señalización.</p></div></article>
-        <article class="lab-card lab-card-proximo"><div class="lab-card-icon">🧠</div><div><span class="lab-estado">PRÓXIMAMENTE</span><h3>Sinapsis e impulso nervioso</h3><p>Canales iónicos, potencial de acción y neurotransmisores.</p></div></article>
-      </section>
-      <section class="lab-real">
-        <div class="lab-explorador-cab"><div><span class="lab-eyebrow">ESTRUCTURA MOLECULAR REAL</span><h2>Complejo de preiniciación de la transcripción</h2></div><span class="lab-chip">PDB · 7ML2</span></div>
-        <p class="lab-real-intro">Vista molecular interactiva de una estructura experimental de ARN polimerasa II con ADN y componentes del complejo de iniciación. Arrastrá para rotar y usá el zoom para acercarte. Esta estructura corresponde a un complejo de levadura; sirve para explorar la arquitectura molecular, no como mapa exacto de cada gen humano.</p>
-        <div class="lab-real-view">
-          <pdbe-molstar id="lab-pdbe" molecule-id="7ml2" hide-controls="false" hide-logo="true" bg-color-r="10" bg-color-g="9" bg-color-b="23" lighting="glossy" style="display:block;width:100%;height:560px"></pdbe-molstar>
-          <div class="lab-real-fallback" id="lab-real-fallback">Cargando visualizador molecular… Si no aparece, revisá la conexión a internet; el visor usa la biblioteca de PDBe.</div>
-        </div>
-        <div class="lab-real-footer"><span>🧬 Estructura experimental · representación 3D</span><a href="https://www.rcsb.org/structure/7ML2" target="_blank" rel="noopener noreferrer">Consultar ficha científica ↗</a></div>
-      </section>
-      <section class="lab-explorador">
-        <div class="lab-explorador-cab"><div><span class="lab-eyebrow">MÓDULO 01</span><h2>Maquinaria de transcripción</h2></div></div>
-        <div class="lab-workspace">
-          <div class="lab-visual">
-            <div class="lab-visual-top"><span>MODELO ESQUEMÁTICO</span><span>Seleccioná una pieza</span></div>
-            <div class="lab-molecule" id="lab-molecule" style="--giro:0deg">
-              <svg viewBox="0 0 760 380" role="img" aria-label="Modelo didáctico de ADN y complejo de transcripción">
-                <defs><linearGradient id="labDna" x1="0" x2="1"><stop stop-color="#2478e8"/><stop offset=".5" stop-color="#58c5ff"/><stop offset="1" stop-color="#2478e8"/></linearGradient><linearGradient id="labProtein" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d4c7ff"/><stop offset="1" stop-color="#7655e8"/></linearGradient></defs>
-                <g class="lab-helix" id="lab-helix">
-                  <path d="M28 178 C80 95 125 95 178 178 S275 261 328 178 S425 95 478 178 S575 261 628 178 S710 95 748 145" fill="none" stroke="url(#labDna)" stroke-width="12" stroke-linecap="round"/>
-                  <path d="M28 224 C80 307 125 307 178 224 S275 141 328 224 S425 307 478 224 S575 141 628 224 S710 307 748 257" fill="none" stroke="#3c82f6" stroke-width="12" stroke-linecap="round"/>
-                  ${Array.from({length:23},(_,i)=>{const x=35+i*31;const y1=178+Math.sin(i*.72)*63;const y2=224-Math.sin(i*.72)*63;return `<line x1="${x}" y1="${y1}" x2="${x}" y2="${y2}" stroke="${['#ffbd59','#52dfb2','#ff7ba5','#a58bff'][i%4]}" stroke-width="4" opacity=".95"/>`}).join('')}
-                </g>
-                <g class="lab-part" data-part="enhancer" tabindex="0" role="button" aria-label="Seleccionar enhancer"><rect x="58" y="145" width="100" height="22" rx="8" fill="#ff8a45" opacity=".95"/><text x="108" y="138" text-anchor="middle" fill="#ffd3b3" font-size="13">ENHANCER</text></g>
-                <g class="lab-part" data-part="especifico" tabindex="0" role="button" aria-label="Seleccionar factor específico" transform="translate(140 45)"><path d="M0 44 C-17 15 8 -4 31 9 C53 -11 82 9 78 32 C101 50 79 76 57 69 C33 87 8 70 0 44Z" fill="#ff963e" stroke="#ffc18b" stroke-width="2"/><circle cx="28" cy="30" r="7" fill="#ffe2c9" opacity=".7"/><text x="39" y="97" fill="#ffc18b" font-size="13" text-anchor="middle">FACTOR ESPECÍFICO</text></g>
-                <g class="lab-part" data-part="promotor" tabindex="0" role="button" aria-label="Seleccionar promotor"><rect x="347" y="198" width="105" height="17" rx="7" fill="#ffbd59" stroke="#ffe1a3" stroke-width="2"/><text x="399" y="242" fill="#ffdb91" font-size="13" text-anchor="middle">PROMOTOR</text></g>
-                <g class="lab-part" data-part="basal" tabindex="0" role="button" aria-label="Seleccionar factores basales" transform="translate(342 106)"><path d="M6 42 C-3 8 29 -4 49 12 C66 -5 98 11 93 37 C119 54 98 83 73 75 C49 93 20 78 6 42Z" fill="#20bda2" stroke="#83ffe8" stroke-width="2"/><circle cx="40" cy="37" r="10" fill="#9cffe9" opacity=".7"/><text x="49" y="101" fill="#83ffe8" font-size="13" text-anchor="middle">FACTORES BASALES</text></g>
-                <g class="lab-part" data-part="polimerasa" tabindex="0" role="button" aria-label="Seleccionar ARN polimerasa II" transform="translate(442 99)"><path d="M18 20 C1 -3 48 -15 65 6 C91 -10 121 8 113 32 C141 51 119 86 92 78 C69 98 37 80 35 64 C8 64 2 41 18 20Z" fill="url(#labProtein)" stroke="#c9bcff" stroke-width="2"/><circle cx="75" cy="35" r="13" fill="#f0eaff" opacity=".6"/><text x="66" y="111" fill="#c9bcff" font-size="13" text-anchor="middle">ARN POL II</text></g>
-                <g class="lab-part" data-part="arn" tabindex="0" role="button" aria-label="Seleccionar ARN naciente"><path d="M500 240 C526 270 552 266 576 286 S630 310 668 295" fill="none" stroke="#ff5f9e" stroke-width="9" stroke-linecap="round"/><circle cx="526" cy="262" r="5" fill="#ffb3d0"/><circle cx="576" cy="286" r="5" fill="#ffb3d0"/><circle cx="626" cy="304" r="5" fill="#ffb3d0"/><text x="610" y="340" fill="#ff9fc5" font-size="14" text-anchor="middle">ARN NACIENTE</text></g>
-                <text x="25" y="270" fill="#a9caff" font-size="15">3′</text><text x="26" y="157" fill="#a9caff" font-size="15">5′</text><text x="718" y="124" fill="#a9caff" font-size="15">3′</text><text x="718" y="281" fill="#a9caff" font-size="15">5′</text>
-              </svg>
-            </div>
-            <div class="lab-leyenda"><span><i style="background:#4f9cff"></i>ADN</span><span><i style="background:#ffbd59"></i>Región de ADN</span><span><i style="background:#ff8a45"></i>Factor específico</span><span><i style="background:#28d7b0"></i>Factores basales</span><span><i style="background:#a58bff"></i>ARN pol II</span><span><i style="background:#ff5f9e"></i>ARN</span></div>
-            <p class="lab-aviso-modelo">Esquema conceptual, no una estructura atómica a escala. Las posiciones son ilustrativas; la organización real depende del gen y del complejo.</p>
-        <section class="lab-guia"><div><span class="lab-eyebrow">RECORRIDO GUIADO</span><h3 id="lab-paso-titulo">Explorá libremente</h3><p id="lab-paso-texto">Seleccioná los componentes del modelo para conocer su naturaleza y función.</p></div><div class="lab-guia-acciones"><button class="btn secundario" id="lab-anterior">← Anterior</button><button class="btn primario" id="lab-siguiente">Empezar recorrido →</button></div></section>
-          </div>
-          <aside class="lab-info" aria-live="polite"><span class="lab-info-tipo" id="lab-tipo">PROTEÍNAS</span><h3 id="lab-nombre">Factores basales</h3><p id="lab-texto"></p><div class="lab-dato" id="lab-dato"></div><div class="lab-quiz-mini"><strong>¿Qué estás viendo?</strong><p id="lab-pregunta">Los factores basales son…</p><div id="lab-opciones"><button data-answer="proteina">Proteínas</button><button data-answer="base">Bases nitrogenadas</button><button data-answer="region">Región de ADN</button><button data-answer="acido">Ácido nucleico</button></div><p id="lab-feedback" role="status"></p></div></aside>
-        </div>
-      </section>
-      <section class="lab-claves"><h2>Regla visual para el examen</h2><div class="lab-clave-grid"><article><b style="color:#ffbd59">ADN</b><p>Promotor, enhancer y sitios reguladores: son secuencias de nucleótidos.</p></article><article><b style="color:#28d7b0">PROTEÍNAS</b><p>Factores basales, factores específicos y ARN polimerasa II: son componentes proteicos.</p></article><article><b style="color:#ff5f9e">ARN</b><p>El producto inicial es ARN; luego el pre-ARNm eucariota suele procesarse.</p></article></div></section>
-    </main>
-    <style>
-      .lab-pantalla{max-width:1180px}.lab-real{margin:24px 0;border:1px solid var(--linea);border-radius:22px;overflow:hidden;background:rgba(12,10,27,.55)}.lab-real-intro{color:var(--tenue);font-size:.88rem;line-height:1.6;padding:0 22px;max-width:920px}.lab-real-view{position:relative;background:#0a0917;min-height:360px}.lab-real-view pdbe-molstar{min-height:360px}.lab-real-fallback{padding:12px 18px;color:#a99dc8;font-size:.75rem}.lab-real-footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 18px;border-top:1px solid var(--linea);font-size:.75rem;color:#a99dc8}.lab-real-footer a{color:#c7b8ff;text-decoration:none}.lab-real-footer a:hover{text-decoration:underline}.lab-pantalla .cabecera{gap:12px;align-items:center}.lab-pantalla .marca{font-size:clamp(1.2rem,3vw,1.7rem)}.lab-chip,.lab-tags span{font-size:.72rem;letter-spacing:.07em;border:1px solid #51417c;border-radius:999px;padding:6px 9px;color:#c7b8ff;white-space:nowrap}.lab-intro{padding:26px 0 16px}.lab-eyebrow{font-size:.7rem;letter-spacing:.14em;font-weight:800;color:#a995ff}.lab-intro h2{font-size:clamp(1.8rem,4vw,2.7rem);margin:7px 0}.lab-intro p{color:var(--tenue);max-width:690px;line-height:1.6}.lab-catalogo{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0 28px}.lab-card{border:1px solid var(--linea);background:linear-gradient(145deg,rgba(46,32,88,.82),rgba(23,15,46,.8));border-radius:18px;padding:16px;display:flex;gap:12px;min-width:0}.lab-card-activo{border-color:#9b7bff;box-shadow:inset 0 0 0 1px #9b7bff33}.lab-card-icon{font-size:1.8rem}.lab-estado{font-size:.65rem;font-weight:800;letter-spacing:.12em;color:#4fe0a0}.lab-card-proximo .lab-estado{color:#b8abdb}.lab-card h3{font-size:1rem;margin:7px 0}.lab-card p{font-size:.83rem;color:var(--tenue);line-height:1.5;margin:0 0 12px}.lab-tags{display:flex;gap:5px;flex-wrap:wrap}.lab-tags span{font-size:.62rem;padding:4px 7px;letter-spacing:0}.lab-explorador{border:1px solid var(--linea);border-radius:22px;overflow:hidden;background:rgba(12,10,27,.45)}.lab-explorador-cab{padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--linea)}.lab-explorador-cab h2{margin:5px 0 0;font-size:1.25rem}.lab-workspace{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(260px,.8fr)}.lab-visual{padding:14px;min-width:0;border-right:1px solid var(--linea)}.lab-visual-top{display:flex;justify-content:space-between;gap:10px;color:var(--tenue);font-size:.65rem;letter-spacing:.07em}.lab-molecule{perspective:900px;transform-style:preserve-3d;transition:transform .6s ease;filter:drop-shadow(0 16px 24px #05030c77)}.lab-molecule svg{width:100%;height:auto;overflow:visible}.lab-molecule .lab-helix{transform-origin:380px 190px;transition:transform .6s ease}.lab-molecule .lab-part{cursor:pointer;outline:none;transition:filter .2s}.lab-molecule .lab-part:hover,.lab-molecule .lab-part:focus{filter:drop-shadow(0 0 9px #fff8)}.lab-molecule .lab-part.seleccionado{filter:drop-shadow(0 0 11px #fff)}.lab-molecule.giro-a{transform:rotateY(8deg) rotateX(2deg)}.lab-molecule.giro-b{transform:rotateY(-8deg) rotateX(-2deg)}.lab-leyenda{display:flex;gap:9px 14px;flex-wrap:wrap;padding:10px 2px}.lab-leyenda span{font-size:.68rem;color:#d0c7e9;display:flex;align-items:center;gap:5px}.lab-leyenda i{width:9px;height:9px;border-radius:50%;display:inline-block}.lab-aviso-modelo{font-size:.7rem;line-height:1.45;color:#9287b6;margin:5px 0}.lab-info{padding:22px;background:rgba(35,24,69,.55)}.lab-info-tipo{font-size:.68rem;letter-spacing:.1em;font-weight:800;color:#28d7b0}.lab-info h3{font-size:1.3rem;margin:9px 0}.lab-info>p{font-size:.9rem;line-height:1.65;color:#d6cdea}.lab-dato{border-left:3px solid #9b7bff;background:#9b7bff12;padding:11px 12px;font-size:.82rem;line-height:1.5;margin:16px 0}.lab-quiz-mini{border-top:1px solid var(--linea);padding-top:15px;margin-top:18px}.lab-quiz-mini strong{font-size:.9rem}.lab-quiz-mini p{font-size:.82rem;color:var(--tenue)}#lab-opciones{display:grid;gap:7px}#lab-opciones button{border:1px solid #51417c;border-radius:10px;padding:9px;background:#21183e;color:var(--crema);text-align:left;font:inherit;font-size:.8rem;cursor:pointer}#lab-opciones button:hover{border-color:#9b7bff}#lab-feedback{min-height:1.2em;font-weight:700}.lab-guia{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:18px 22px;border-top:1px solid var(--linea)}.lab-guia h3{margin:6px 0}.lab-guia p{color:var(--tenue);font-size:.86rem;line-height:1.5;max-width:620px;margin-bottom:0}.lab-guia-acciones{display:flex;gap:8px;flex-shrink:0}.lab-claves{padding:28px 0}.lab-claves h2{font-size:1.2rem}.lab-clave-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.lab-clave-grid article{border:1px solid var(--linea);border-radius:15px;padding:16px;background:#23184555}.lab-clave-grid p{color:var(--tenue);font-size:.85rem;line-height:1.55;margin-bottom:0}
-      @media(max-width:760px){.lab-real-view pdbe-molstar{height:430px!important}.lab-real-intro{padding:0 14px}.lab-real-footer{padding:12px 14px}.lab-catalogo{grid-template-columns:1fr}.lab-card{padding:13px}.lab-workspace{grid-template-columns:1fr}.lab-visual{border-right:0;border-bottom:1px solid var(--linea);padding:10px}.lab-info{padding:18px}.lab-guia{align-items:stretch;flex-direction:column}.lab-guia-acciones{display:grid;grid-template-columns:1fr 1fr}.lab-explorador-cab{align-items:flex-start;padding:16px}.lab-chip{font-size:.6rem}.lab-visual-top{font-size:.58rem}.lab-leyenda{gap:8px}.lab-leyenda span{font-size:.62rem}.lab-clave-grid{grid-template-columns:1fr}.lab-pantalla .cabecera{flex-wrap:wrap}.lab-pantalla .marca{margin-right:auto}}
-      @media(prefers-reduced-motion:reduce){.lab-molecule,.lab-molecule *{transition:none!important}}
-    </style>`;
-  const seleccionar = (id) => {
-    const c = componentes[id] || componentes.basal;
-    seleccionado = id;
-    app.querySelectorAll('.lab-part').forEach((el) => el.classList.toggle('seleccionado', el.dataset.part === id));
-    document.getElementById('lab-tipo').textContent = c.tipo.toUpperCase();
-    document.getElementById('lab-tipo').style.color = c.color;
-    document.getElementById('lab-nombre').textContent = c.nombre;
-    document.getElementById('lab-texto').textContent = c.texto;
-    document.getElementById('lab-dato').textContent = c.dato;
-    document.getElementById('lab-feedback').textContent = '';
-    const answer = id === 'promotor' || id === 'enhancer' ? 'region' : id === 'adn' || id === 'arn' ? 'acido' : 'proteina';
-    document.querySelectorAll('#lab-opciones button').forEach((b) => { b.disabled = false; b.style.borderColor = '#51417c'; b.style.opacity = '1'; });
-    document.querySelector('#lab-opciones [data-answer="acido"]').textContent = id === 'adn' ? 'Ácido nucleico (ADN)' : 'Ácido nucleico (ARN)';
-    document.querySelectorAll('#lab-opciones button').forEach((b) => b.dataset.correct = String(b.dataset.answer === answer));
-  };
-  app.querySelectorAll('.lab-part').forEach((el) => {
-    const activar = () => seleccionar(el.dataset.part);
-    el.addEventListener('click', activar);
-    el.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activar(); } });
-  });
-  document.getElementById('lab-volver').addEventListener('click', volver);
-  document.getElementById('lab-opciones').addEventListener('click', (e) => {
-    const b = e.target.closest('button[data-answer]'); if (!b) return;
-    const ok = b.dataset.correct === 'true';
-    document.getElementById('lab-feedback').textContent = ok ? '¡Bien! Identificaste la naturaleza de este componente.' : 'No exactamente. Revisá el tipo indicado arriba y volvé a intentarlo.';
-    document.getElementById('lab-feedback').style.color = ok ? '#4fe0a0' : '#ff8b9e';
-    if (ok) document.querySelectorAll('#lab-opciones button').forEach((x) => { x.disabled = true; x.style.opacity = x === b ? '1' : '.5'; });
-  });
-  const mostrarPaso = (n) => {
-    paso = Math.max(-1, Math.min(pasos.length - 1, n));
-    const titulo = document.getElementById('lab-paso-titulo'), texto = document.getElementById('lab-paso-texto'), sig = document.getElementById('lab-siguiente'), ant = document.getElementById('lab-anterior');
-    if (paso < 0) { titulo.textContent = 'Explorá libremente'; texto.textContent = 'Seleccioná los componentes del modelo para conocer su naturaleza y función.'; sig.textContent = 'Empezar recorrido →'; }
-    else { titulo.textContent = pasos[paso].titulo; texto.textContent = pasos[paso].texto; seleccionar(pasos[paso].id); sig.textContent = paso === pasos.length - 1 ? 'Volver al inicio ↺' : 'Siguiente paso →'; }
-    ant.disabled = paso <= 0; ant.style.opacity = paso <= 0 ? '.55' : '1';
-  };
-  document.getElementById('lab-siguiente').addEventListener('click', () => mostrarPaso(paso >= pasos.length - 1 ? -1 : paso + 1));
-  document.getElementById('lab-anterior').addEventListener('click', () => mostrarPaso(paso <= 0 ? -1 : paso - 1));
-  seleccionar(seleccionado); mostrarPaso(-1);
-  // Carga el visor experimental desde PDBe; el esquema didáctico sigue disponible debajo.
-  const pdbeScriptId = 'parcialito-pdbe-molstar-script';
-  if (!document.getElementById(pdbeScriptId)) {
-    const css = document.createElement('link');
-    css.rel = 'stylesheet';
-    css.href = 'https://cdn.jsdelivr.net/npm/pdbe-molstar@3.5.0/build/pdbe-molstar.css';
-    document.head.appendChild(css);
-    const script = document.createElement('script');
-    script.id = pdbeScriptId;
-    script.src = 'https://cdn.jsdelivr.net/npm/pdbe-molstar@3.5.0/build/pdbe-molstar-component.js';
-    script.async = true;
-    script.onload = () => { const fb = app.querySelector('#lab-real-fallback'); if (fb) { fb.textContent = 'Biblioteca cargada; descargando la estructura molecular…'; customElements.whenDefined('pdbe-molstar').then(() => { if (app.contains(fb)) fb.textContent = 'Visor listo. Podés rotar, acercar y seleccionar componentes de la estructura.'; }).catch(() => { if (app.contains(fb)) fb.textContent = 'La biblioteca se cargó, pero no se pudo iniciar el visor. El esquema didáctico sigue disponible abajo.'; }); } };
-    script.onerror = () => { const fb = app.querySelector('#lab-real-fallback'); if (fb) fb.textContent = 'No se pudo cargar el visor externo. El laboratorio esquemático sigue disponible abajo.'; };
-    document.head.appendChild(script);
-  } else if (window.customElements && window.customElements.get('pdbe-molstar')) {
-    const fb = app.querySelector('#lab-real-fallback');
-    if (fb) fb.textContent = 'Visor listo. Podés rotar, acercar y seleccionar componentes de la estructura.';
+// Parcialito LAB · Factores de transcripción (basales y específicos)
+// Tablero con 4 pestañas: Vista 3D, Explicación, Comparador y Preguntas.
+// PC: panel de capas a la izquierda + escena grande + tarjetas abajo.
+// Celular: chips de capas, escena compacta con pines numerados, tarjetas plegables
+// y navegación inferior fija.
+
+const COLOR = { adn: '#3d8bff', esp: '#ff9a2e', basal: '#1fd6a5', pol: '#9b6dff', arnm: '#ff4f8b', prom: '#ffc23d' };
+
+// Piezas del modelo. "capa" dice con qué interruptor se muestran; "pin" es el número en celular.
+const PIEZAS = {
+  adn: { capa: 'adn', nombre: 'ADN: doble hélice', tipo: 'Ácido nucleico', color: COLOR.adn, texto: 'El ADN está formado por nucleótidos. Cada uno contiene desoxirribosa, fosfato y una base nitrogenada (A, T, C o G). Las dos hebras son complementarias y antiparalelas: una corre 5′→3′ y la otra 3′→5′.', dato: 'Las bases forman pares: A–T y G–C.' },
+  especifico: { capa: 'esp', pin: 1, nombre: 'Factor específico', tipo: 'Proteína reguladora', color: COLOR.esp, texto: 'Reconoce secuencias reguladoras concretas y puede actuar como activador o represor. Su efecto depende del contexto celular, de las otras proteínas presentes y de la organización de la cromatina.', dato: 'Los factores específicos no son bases nitrogenadas: son proteínas.' },
+  enhancer: { capa: 'adn', pin: 2, nombre: 'Enhancer', tipo: 'Región reguladora de ADN', color: COLOR.prom, texto: 'Secuencia reguladora a la que se unen factores específicos. Puede encontrarse a cierta distancia del promotor y favorecer la transcripción mediante interacciones con el complejo regulador.', dato: 'Un enhancer es ADN, no una proteína.' },
+  promotor: { capa: 'adn', pin: 3, nombre: 'Promotor', tipo: 'Región de ADN', color: COLOR.prom, texto: 'Es una región del ADN cercana al sitio donde comienza la transcripción. En genes eucariotas, algunos promotores contienen elementos como la caja TATA; no todos los promotores tienen la misma composición.', dato: 'El sitio +1 es el primer nucleótido transcrito.' },
+  basal: { capa: 'basal', pin: 4, nombre: 'Factores basales', tipo: 'Proteínas / complejo de iniciación', color: COLOR.basal, texto: 'Los factores generales de transcripción ayudan a reconocer el promotor, reclutar y posicionar la ARN polimerasa II y formar el complejo de preiniciación. Entre ellos están TFIID (que incluye TBP), TFIIB, TFIIF, TFIIE y TFIIH.', dato: 'Son necesarios para la iniciación basal de la transcripción por ARN polimerasa II.' },
+  polimerasa: { capa: 'pol', pin: 5, nombre: 'ARN polimerasa II', tipo: 'Complejo enzimático proteico', color: COLOR.pol, texto: 'En eucariotas, sintetiza pre-ARNm usando una hebra de ADN como molde. Lee el molde en sentido 3′→5′ y sintetiza ARN en sentido 5′→3′.', dato: 'No “convierte” bases en proteínas: produce una cadena de ARN.' },
+  arn: { capa: 'arnm', pin: 6, nombre: 'ARNm naciente', tipo: 'Ácido nucleico', color: COLOR.arnm, texto: 'La cadena de ARN crece incorporando ribonucleótidos complementarios a la hebra molde. En ARN se usa uracilo (U) en lugar de timina (T).', dato: 'El ARN se sintetiza en dirección 5′→3′.' }
+};
+
+// Recorrido guiado (el paginador 1/5 y la pestaña Explicación usan lo mismo).
+const PASOS = [
+  { titulo: 'ADN y regiones reguladoras', piezas: ['adn', 'promotor', 'enhancer'], texto: 'La información está en el ADN. El promotor y otras secuencias reguladoras son tramos de ADN, no proteínas.', clave: 'El promotor y el enhancer son secuencias de ADN: no son proteínas.' },
+  { titulo: 'Unión de factores específicos', piezas: ['especifico', 'enhancer'], texto: 'Activadores o represores reconocen secuencias reguladoras (enhancers o silenciadores) y modulan la probabilidad de iniciar la transcripción. Pueden actuar a distancia.', clave: 'Los factores específicos se unen a enhancers o silenciadores, aunque estén lejos del promotor, y aumentan o disminuyen la transcripción.' },
+  { titulo: 'Ensamblaje basal', piezas: ['basal', 'promotor'], texto: 'Los factores generales (TFIID, TFIIB, TFIIF, TFIIE y TFIIH) organizan el complejo de preiniciación en el promotor y facilitan la participación de la polimerasa.', clave: 'Los factores basales se ensamblan en el promotor y forman el complejo de preiniciación.' },
+  { titulo: 'Inicio de la transcripción', piezas: ['polimerasa'], texto: 'La ARN polimerasa II usa una hebra como molde y comienza a sintetizar ARN a partir del sitio de inicio (+1).', clave: 'La ARN polimerasa II llega al promotor con ayuda de los factores basales y arranca en el sitio +1.' },
+  { titulo: 'El ARN crece', piezas: ['arn'], texto: 'La cadena nueva crece 5′→3′. La secuencia del ARN es complementaria al molde y coincide con la codificante salvo U en lugar de T.', clave: 'El ARN crece en sentido 5′→3′ y lleva U en lugar de T.' }
+];
+const CLAVE_GENERAL = 'los factores específicos pueden actuar a distancia (enhancers) y su interacción con el complejo basal facilita la formación del complejo de iniciación y el inicio de la transcripción.';
+
+// Capa que se agrega en cada paso cuando se activa "Paso a paso".
+const CAPA_DESDE_PASO = { adn: 1, esp: 2, basal: 3, pol: 4, arnm: 5 };
+
+const CAPAS = [['adn', 'ADN', COLOR.adn], ['pol', 'ARN polimerasa II', COLOR.pol], ['basal', 'Factores basales', COLOR.basal], ['esp', 'Factores específicos', COLOR.esp], ['arnm', 'ARNm', COLOR.arnm]];
+const CAPAS_INICIO = { adn: true, pol: true, basal: true, esp: true, arnm: false };
+
+const TABS = [['vista', 'Vista 3D', '🧬'], ['explicacion', 'Explicación', '📖'], ['comparador', 'Comparador', '⚖️'], ['preguntas', 'Preguntas', '❓']];
+
+// Preguntas de la pestaña Preguntas.
+const PREGUNTAS = [
+  { q: 'Los factores basales de transcripción son…', o: ['Proteínas', 'Secuencias de ADN', 'Moléculas de ARN', 'Bases nitrogenadas'], ok: 0, exp: 'Son proteínas (TFIID, TFIIB, TFIIF, TFIIE, TFIIH) que forman el complejo de preiniciación.' },
+  { q: 'El promotor es…', o: ['Una proteína del complejo basal', 'Una región de ADN', 'Una enzima', 'Un tipo de ARN'], ok: 1, exp: 'El promotor es ADN: la secuencia donde se ensamblan los factores basales.' },
+  { q: '¿Cuál de estas opciones NO es un factor basal?', o: ['TFIIB', 'TFIID', 'Un activador específico', 'TFIIH'], ok: 2, exp: 'Los activadores y represores son factores específicos; los basales son los TFII.' },
+  { q: 'Un enhancer…', o: ['Es una proteína que activa genes', 'Es una secuencia de ADN que puede estar lejos del promotor', 'Sintetiza ARN mensajero', 'Es la hebra de ARN naciente'], ok: 1, exp: 'El enhancer es ADN regulador; las proteínas que se le unen son los factores específicos.' },
+  { q: 'La ARN polimerasa II sintetiza ARN en sentido…', o: ['3′→5′', '5′→3′', 'En ambos sentidos', 'Depende de la base'], ok: 1, exp: 'Todo ácido nucleico se sintetiza 5′→3′. La polimerasa lee el molde 3′→5′.' },
+  { q: 'Los factores específicos pueden…', o: ['Solo activar la transcripción', 'Solo reprimirla', 'Aumentar o disminuir la transcripción', 'Reemplazar a la ARN polimerasa'], ok: 2, exp: 'Pueden ser activadores o represores, según la proteína y el contexto celular.' },
+  { q: 'TBP, la proteína que se une a la caja TATA, forma parte de…', o: ['TFIIH', 'TFIID', 'TFIIF', 'La ARN polimerasa II'], ok: 1, exp: 'TFIID incluye la proteína de unión a TATA (TBP).' },
+  { q: 'En el ARN, la base que reemplaza a la timina es…', o: ['Adenina', 'Citosina', 'Uracilo', 'Guanina'], ok: 2, exp: 'El ARN usa uracilo (U) en lugar de timina (T).' },
+  { q: 'El sitio +1 es…', o: ['El primer nucleótido que se transcribe', 'La caja TATA', 'Un factor basal', 'El final del gen'], ok: 0, exp: 'Es el sitio de inicio de la transcripción.' }
+];
+
+// ---------- Escena SVG ----------
+// Dos composiciones: PC (amplia, con rótulos) y celular (compacta, con pines numerados).
+const DISEÑOS = {
+  pc: { W: 1100, H: 470, y: 250, x0: 52, x1: 1048, amp: 36, per: 150, sw: 11, etq: true, pines: false, enh: 250, esp: { x: 245, y: 165, rx: 76, ry: 60 }, bas: { x: 590, y: 202, rx: 92, ry: 78 }, pol: { x: 785, y: 226, rx: 112, ry: 104 }, pro: [520, 705], tss: 705, arn: [[735, 290], [800, 352], [905, 382], [1012, 372]] },
+  cel: { W: 720, H: 430, y: 235, x0: 30, x1: 692, amp: 25, per: 96, sw: 8, etq: false, pines: true, enh: 118, esp: { x: 120, y: 132, rx: 52, ry: 42 }, bas: { x: 335, y: 190, rx: 58, ry: 50 }, pol: { x: 470, y: 200, rx: 76, ry: 68 }, pro: [275, 400], tss: 400, arn: [[425, 262], [478, 322], [565, 348], [676, 336]] }
+};
+
+function azar(semilla) { let s = semilla; return () => (s = (s * 16807) % 2147483647) / 2147483647; }
+
+// Esfera "burbujeante": un cúmulo de círculos con degradado, para dar sensación de volumen.
+function esfera(c, grad, semilla) {
+  const r = azar(semilla), n = Math.round((c.rx * c.ry) / 105), menor = Math.min(c.rx, c.ry), bolas = [];
+  for (let i = 0; i < n; i++) {
+    const a = r() * Math.PI * 2, d = Math.sqrt(r());
+    bolas.push({ x: c.x + Math.cos(a) * d * c.rx * 0.8, y: c.y + Math.sin(a) * d * c.ry * 0.8, r: menor * (0.22 + r() * 0.15) });
   }
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  const m = Math.round(n / 2.4);
+  for (let i = 0; i < m; i++) {
+    const a = (i / m) * Math.PI * 2 + r() * 0.3;
+    bolas.push({ x: c.x + Math.cos(a) * c.rx * 0.86, y: c.y + Math.sin(a) * c.ry * 0.86, r: menor * (0.2 + r() * 0.1) });
+  }
+  bolas.sort((p, q) => p.y - q.y);
+  return `<ellipse cx="${c.x}" cy="${c.y}" rx="${c.rx * 0.9}" ry="${c.ry * 0.9}" fill="url(#lg-${grad}-o)"/>` + bolas.map((b) => `<circle cx="${b.x.toFixed(1)}" cy="${b.y.toFixed(1)}" r="${b.r.toFixed(1)}" fill="url(#lg-${grad})"/>`).join('');
+}
+
+// Doble hélice: hebras que se cruzan (la de atrás más oscura) y peldaños entre ellas.
+function helice(L) {
+  const { x0, x1, y, amp, per, sw } = L, N = Math.round((x1 - x0) / 5), P = [];
+  for (let i = 0; i <= N; i++) {
+    const x = x0 + ((x1 - x0) * i) / N, f = ((x - x0) / per) * 2 * Math.PI;
+    P.push({ x, a: y - amp * Math.sin(f), b: y + amp * Math.sin(f), c: Math.cos(f) });
+  }
+  const tramos = []; let cur = { f: P[0].c + P[1].c >= 0, i0: 0 };
+  for (let i = 1; i < N; i++) {
+    const f = P[i].c + P[i + 1].c >= 0;
+    if (f !== cur.f) { cur.i1 = i; tramos.push(cur); cur = { f, i0: i }; }
+  }
+  cur.i1 = N; tramos.push(cur);
+  const trazo = (t, k) => 'M' + P.slice(t.i0, t.i1 + 1).map((p) => p.x.toFixed(1) + ' ' + p[k].toFixed(1)).join(' L');
+  const atras = tramos.map((t) => trazo(t, t.f ? 'b' : 'a')).join(' ');
+  const frente = tramos.map((t) => trazo(t, t.f ? 'a' : 'b')).join(' ');
+  let peldanos = '';
+  for (let x = x0 + per / 16, k = 0; x < x1; x += per / 8, k++) {
+    const f = ((x - x0) / per) * 2 * Math.PI, ya = y - amp * Math.sin(f), yb = y + amp * Math.sin(f);
+    peldanos += `<line x1="${x.toFixed(1)}" y1="${ya.toFixed(1)}" x2="${x.toFixed(1)}" y2="${yb.toFixed(1)}" stroke="${k % 2 ? '#35d4ff' : '#5b9bff'}" stroke-width="${(sw * 0.38).toFixed(1)}" stroke-linecap="round" opacity=".9"/>`;
+  }
+  const base = `fill="none" stroke-linecap="round" stroke-linejoin="round"`;
+  return `<g class="lab-capa" data-capa="adn" data-part="adn"><g filter="url(#lbGlow)"><path d="${atras}" ${base} stroke="#1646a8" stroke-width="${sw}"/>${peldanos}<path d="${frente}" ${base} stroke="url(#gDna)" stroke-width="${sw}"/><path d="${frente}" ${base} stroke="#cfe6ff" stroke-width="${(sw * 0.22).toFixed(1)}" opacity=".55"/></g></g>`;
+}
+
+function texto(x, y, s, o = {}) {
+  return `<text x="${x}" y="${y}" fill="${o.fill || '#eaf1ff'}" font-size="${o.size || 15}" font-weight="${o.w || 500}" text-anchor="${o.a || 'middle'}">${s}</text>`;
+}
+function rotulo(x, y, w, h, color, t1, t2, parte, capa) {
+  return `<g class="lab-etq" data-part="${parte}" data-capa="${capa}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="12" fill="rgba(4,10,30,.82)" stroke="${color}" stroke-width="2"/>${texto(x + w / 2, y + (t2 ? 23 : h / 2 + 6), t1, { fill: color, size: 18, w: 700 })}${t2 ? texto(x + w / 2, y + 43, t2, { fill: '#cfe0ff', size: 13 }) : ''}</g>`;
+}
+
+function construirEscena(L) {
+  const { W, H, y, sw, enh, esp, bas, pol, pro, tss, arn } = L;
+  const g = (id, luz, base, sombra) => `<radialGradient id="lg-${id}" cx=".36" cy=".3" r=".78"><stop offset="0" stop-color="${luz}"/><stop offset=".5" stop-color="${base}"/><stop offset="1" stop-color="${sombra}"/></radialGradient><radialGradient id="lg-${id}-o" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="${base}"/><stop offset="1" stop-color="${sombra}"/></radialGradient>`;
+  const defs = `<defs>
+    <linearGradient id="gDna" x1="0" x2="1"><stop offset="0" stop-color="#2f7bff"/><stop offset=".5" stop-color="#58c9ff"/><stop offset="1" stop-color="#2f7bff"/></linearGradient>
+    <linearGradient id="gBanda" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".45"/></linearGradient>
+    ${g('esp', '#ffd9a6', '#ff9a2e', '#a24a00')}${g('basal', '#9dffe2', '#14c496', '#06594a')}${g('pol', '#dccdff', '#7c52ff', '#3a1fa6')}
+    <filter id="lbGlow" x="-10%" y="-40%" width="120%" height="180%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="lbSombra" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#000" flood-opacity=".55"/></filter>
+    <marker id="lbFlecha" markerWidth="9" markerHeight="9" refX="4.5" refY="7" orient="auto"><path d="M0 0 L4.5 8 L9 0" fill="none" stroke="#9fc4ff" stroke-width="1.6"/></marker>
+  </defs>`;
+
+  // Enhancer: dos barras amarillas que abrazan la hélice.
+  const en = `<g class="lab-capa lab-parte" data-capa="adn" data-part="enhancer" tabindex="0" role="button" aria-label="Seleccionar enhancer"><path d="M${enh - 26} ${y - 38} L${enh + 26} ${y + 38} M${enh - 26} ${y + 38} L${enh + 26} ${y - 38}" stroke="#7a5a00" stroke-width="${sw * 1.9}" stroke-linecap="round"/><path d="M${enh - 26} ${y - 38} L${enh + 26} ${y + 38} M${enh - 26} ${y + 38} L${enh + 26} ${y - 38}" stroke="#ffd23d" stroke-width="${sw * 1.4}" stroke-linecap="round"/></g>`;
+
+  const bEsp = `<g class="lab-capa lab-parte lab-flota" data-capa="esp" data-part="especifico" tabindex="0" role="button" aria-label="Seleccionar factor específico"><g filter="url(#lbSombra)">${esfera(esp, 'esp', 7)}</g></g>`;
+  const bBas = `<g class="lab-capa lab-parte lab-flota" data-capa="basal" data-part="basal" tabindex="0" role="button" aria-label="Seleccionar factores basales"><g filter="url(#lbSombra)">${esfera(bas, 'basal', 11)}</g></g>`;
+  const bPol = `<g class="lab-capa lab-parte lab-flota" data-capa="pol" data-part="polimerasa" tabindex="0" role="button" aria-label="Seleccionar ARN polimerasa II"><g filter="url(#lbSombra)">${esfera(pol, 'pol', 23)}</g></g>`;
+
+  // Arco punteado: el factor específico "habla" con el complejo basal a distancia.
+  const ax = esp.x + esp.rx * 0.6, ay = esp.y - esp.ry * 0.95, bx = bas.x - bas.rx * 0.5, by = bas.y - bas.ry * 0.9;
+  const arco = `<path class="lab-arco lab-capa" data-capa="esp" d="M${ax} ${ay} Q${(ax + bx) / 2} ${Math.min(ay, by) - 55} ${bx} ${by}" fill="none" stroke="#e8f0ff" stroke-width="2" stroke-dasharray="3 6" stroke-linecap="round"/>`;
+
+  // Promotor: tres bandas de color que "abrazan" el ADN (se dibujan por delante de las esferas).
+  const [p0, p1] = pro, tercio = (p1 - p0) / 3, alto = sw * 3.6, cols = ['#ff9f2e', '#19c997', '#2f86ff'];
+  const banda = cols.map((c, i) => `<rect x="${(p0 + tercio * i).toFixed(1)}" y="${y - alto / 2}" width="${tercio.toFixed(1)}" height="${alto}" fill="${c}"/><rect x="${(p0 + tercio * i).toFixed(1)}" y="${y - alto / 2}" width="${tercio.toFixed(1)}" height="${alto}" fill="url(#gBanda)"/>`).join('');
+  const prom = `<g class="lab-capa lab-parte" data-capa="adn" data-part="promotor" tabindex="0" role="button" aria-label="Seleccionar promotor"><clipPath id="lbRecorte"><rect x="${p0}" y="${y - alto / 2}" width="${p1 - p0}" height="${alto}" rx="${alto / 2.4}"/></clipPath><g clip-path="url(#lbRecorte)">${banda}</g></g>`;
+
+  // ARNm naciente.
+  const [a0, a1, a2, a3] = arn, dArn = `M${a0} C${a1} ${a2} ${a3}`.replace(/,/g, ' ');
+  const mrna = `<g class="lab-capa lab-parte" data-capa="arnm" data-part="arn" tabindex="0" role="button" aria-label="Seleccionar ARN naciente"><g filter="url(#lbGlow)"><path d="${dArn}" fill="none" stroke="#a3124a" stroke-width="${sw * 1.1}" stroke-linecap="round"/><path d="${dArn}" fill="none" stroke="#ff4f8b" stroke-width="${sw * 0.8}" stroke-linecap="round"/><path d="${dArn}" fill="none" stroke="#ffc2d8" stroke-width="${sw * 0.2}" stroke-linecap="round" opacity=".7"/></g><path d="${dArn}" fill="none" stroke="transparent" stroke-width="${sw * 3}"/></g>`;
+
+  // Rótulos (PC) o pines numerados (celular).
+  let anot = '';
+  if (L.etq) {
+    anot += rotulo(130, 34, 185, 52, COLOR.esp, 'Factor específico', '(activador)', 'especifico', 'esp');
+    anot += `<line class="lab-etq" data-capa="esp" x1="215" y1="86" x2="240" y2="118" stroke="${COLOR.esp}" stroke-width="1.6"/>`;
+    anot += rotulo(440, 26, 330, 58, COLOR.basal, 'Factores basales', '(TFIID, TFIIB, TFIIF, TFIIE, TFIIH)', 'basal', 'basal');
+    anot += `<line class="lab-etq" data-capa="basal" x1="560" y1="84" x2="580" y2="150" stroke="${COLOR.basal}" stroke-width="1.6"/>`;
+    anot += rotulo(840, 40, 190, 42, COLOR.pol, 'ARN polimerasa II', '', 'polimerasa', 'pol');
+    anot += `<line class="lab-etq" data-capa="pol" x1="915" y1="82" x2="880" y2="140" stroke="${COLOR.pol}" stroke-width="1.6"/>`;
+    anot += `<g class="lab-etq" data-part="enhancer" data-capa="adn"><line x1="${enh}" y1="${y + 40}" x2="${enh - 20}" y2="372" stroke="#e8f0ff" stroke-width="1.6"/>${texto(enh - 40, 395, 'Elemento de respuesta', { size: 15 })}${texto(enh - 40, 414, 'a activadores (enhancer)', { size: 15, w: 700 })}${texto(enh - 40, 433, '(puede estar a distancia)', { size: 13, fill: '#a9bde8' })}</g>`;
+    anot += `<g class="lab-etq" data-part="promotor" data-capa="adn"><path d="M${p0 + 4} 310 v10 H${tss - 24} v-10" fill="none" stroke="#5aa2ff" stroke-width="2"/>${texto((p0 + tss - 24) / 2 + 2, 346, 'Región promotora', { size: 15, w: 700 })}${texto((p0 + tss - 24) / 2 + 2, 365, '(caja TATA, Inr, DPE, etc.)', { size: 13, fill: '#a9bde8' })}</g>`;
+    anot += `<g class="lab-etq" data-capa="adn"><line x1="${tss}" y1="${y + 26}" x2="${tss}" y2="398" stroke="#9fc4ff" stroke-width="1.8" marker-end="url(#lbFlecha)"/>${texto(tss - 30, 420, 'Sitio de inicio', { size: 15 })}${texto(tss - 30, 439, 'de la transcripción', { size: 15 })}${texto(tss - 30, 458, '(+1)', { size: 15 })}</g>`;
+    anot += `<g class="lab-etq" data-part="arn" data-capa="arnm"><line x1="975" y1="410" x2="975" y2="385" stroke="${COLOR.arnm}" stroke-width="1.6"/><rect x="885" y="410" width="180" height="38" rx="12" fill="rgba(4,10,30,.82)" stroke="${COLOR.arnm}" stroke-width="2"/>${texto(975, 435, 'ARNm (en síntesis)', { fill: '#ffc2d8', size: 16, w: 600 })}</g>`;
+    anot += texto(26, y - 24, '5′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' }) + texto(26, y + 44, '3′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' });
+    anot += texto(1074, y - 30, '3′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' }) + texto(1074, y + 36, '5′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' });
+  } else {
+    anot += texto(8, y - 20, '5′', { size: 14, a: 'start', fill: '#cfe0ff' }) + texto(8, y + 36, '3′', { size: 14, a: 'start', fill: '#cfe0ff' });
+    anot += texto(712, y - 24, '3′', { size: 14, a: 'end', fill: '#cfe0ff' }) + texto(712, y + 32, '5′', { size: 14, a: 'end', fill: '#cfe0ff' });
+    anot += `<line class="lab-capa" data-capa="adn" x1="${tss}" y1="${y + 22}" x2="${tss}" y2="${y + 62}" stroke="#9fc4ff" stroke-width="1.6" marker-end="url(#lbFlecha)"/>` + texto(tss, y + 82, '+1', { size: 13, fill: '#9fc4ff', w: 700 });
+  }
+  if (L.pines) {
+    const pos = { especifico: [esp.x + esp.rx * 0.85, esp.y - esp.ry * 0.9], enhancer: [enh, y + 50], promotor: [(p0 + p1) / 2 - 20, y + 54], basal: [bas.x - bas.rx * 0.65, bas.y - bas.ry * 0.95], polimerasa: [pol.x + pol.rx * 0.65, pol.y - pol.ry * 0.95], arn: [a2[0], a2[1] - 26] };
+    Object.keys(pos).forEach((id) => {
+      const p = PIEZAS[id], [px, py] = pos[id];
+      anot += `<g class="lab-pin" data-part="${id}" data-capa="${p.capa}"><circle cx="${px}" cy="${py}" r="24" fill="transparent"/><circle cx="${px}" cy="${py}" r="13" fill="${p.color === COLOR.prom ? '#ffc23d' : p.color}" stroke="#fff" stroke-width="2"/><text x="${px}" y="${py + 5}" text-anchor="middle" font-size="14" font-weight="800" fill="#06102a">${p.pin}</text></g>`;
+    });
+  }
+  return `<svg class="lab-svg" id="lab-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="Modelo didáctico de ADN, factores basales, factores específicos y ARN polimerasa II" preserveAspectRatio="xMidYMid meet">${defs}${helice(L)}${en}${arco}${bEsp}${bBas}${bPol}${prom}${mrna}${anot}</svg>`;
+}
+
+// Cuadros de vista (viewBox) para "Vista general" y "Primer plano".
+function cuadros(L) {
+  const general = L.etq ? [0, 0, L.W, L.H] : [0, 40, L.W, 340];
+  const x0 = L.pro[0] - 90, x1 = L.pol.x + L.pol.rx + 60, y0 = L.bas.y - L.bas.ry - 50, y1 = L.y + 130;
+  return { general, cerca: [x0, y0, x1 - x0, y1 - y0] };
+}
+
+// ---------- HTML de las secciones ----------
+const iconoADN = `<svg viewBox="0 0 48 48" width="44" height="44" aria-hidden="true"><defs><linearGradient id="lbIc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b79bff"/><stop offset="1" stop-color="#7c52ff"/></linearGradient></defs><path d="M14 4c0 12 20 14 20 24S14 36 14 44M34 4c0 12-20 14-20 24s20 8 20 16" fill="none" stroke="url(#lbIc)" stroke-width="4" stroke-linecap="round"/><path d="M17 12h14M15 20h18M15 36h18M17 44h0" stroke="url(#lbIc)" stroke-width="3" stroke-linecap="round"/></svg>`;
+
+function htmlCapas() {
+  return CAPAS.map(([id, nombre, c]) => `<label class="lab-capa-op" style="--c:${c}"><input type="checkbox" data-capa-chk="${id}"${CAPAS_INICIO[id] ? ' checked' : ''}><i class="lab-punto"></i><span>${nombre}</span><b class="lab-sw" aria-hidden="true"></b></label>`).join('');
+}
+
+function htmlTarjetas() {
+  const fila = (c, ic, t, d) => `<div class="lab-fila-f" style="--c:${c}"><span class="lab-ic">${ic}</span><div><h4>${t}</h4><p>${d}</p></div></div>`;
+  const elem = (c, n, d, parte) => `<button type="button" class="lab-elem" data-part="${parte}" style="--c:${c}"><i></i><b>${n}</b><span>${d}</span></button>`;
+  return `
+  <details class="lab-tarj" open><summary><h3>¿Qué hace cada factor?</h3></summary><div class="lab-tarj-cuerpo">
+    ${fila(COLOR.basal, '🧩', 'Factores basales', 'Forman el complejo de preiniciación y permiten que la ARN polimerasa II se una al promotor. Incluyen TFIID, TFIIB, TFIIF, TFIIE y TFIIH.')}
+    ${fila(COLOR.esp, '🎛️', 'Factores específicos', 'Se unen a secuencias reguladoras (enhancers o silenciadores) y aumentan o disminuyen la transcripción. Pueden ser activadores o represores.')}
+    ${fila(COLOR.pol, '⚙️', 'ARN polimerasa II', 'Es reclutada al promotor por los factores basales y sintetiza el ARN mensajero en dirección 5′→3′.')}
+  </div></details>
+  <details class="lab-tarj" open><summary><h3>¿Qué es cada elemento?</h3></summary><div class="lab-tarj-cuerpo lab-elems">
+    ${elem(COLOR.adn, 'ADN', 'Doble hélice que contiene la información genética.', 'adn')}
+    ${elem(COLOR.pol, 'ARN polimerasa II', 'Enzima que sintetiza el ARN mensajero.', 'polimerasa')}
+    ${elem(COLOR.basal, 'TFIID, TFIIB, TFIIF, TFIIE, TFIIH', 'Factores basales de transcripción.', 'basal')}
+    ${elem(COLOR.esp, 'Activadores / Represores', 'Proteínas que se unen a secuencias reguladoras.', 'especifico')}
+    ${elem(COLOR.prom, 'Promotor', 'Secuencia de ADN donde se ensamblan los factores basales.', 'promotor')}
+    ${elem(COLOR.arnm, 'ARNm', 'Copia del gen, sintetizada en dirección 5′→3′.', 'arn')}
+  </div></details>
+  <details class="lab-tarj" open><summary><h3>Esquema de la región promotora <small>(eucariotas)</small></h3></summary><div class="lab-tarj-cuerpo">
+    <div class="lab-esq" aria-label="Esquema: enhancer lejano, cajas CAAT y TATA, Inr y sitio de inicio +1">
+      <span class="lab-esq-enh">Enhancer<small>(lejos)</small></span>
+      <div class="lab-esq-barra"><i class="b0"></i><i class="b1"><em>CAAT<br>box</em></i><i class="b2"><em>TATA<br>box</em></i><i class="b3"><em>Inr</em></i><i class="b4"></i></div>
+      <span class="lab-esq-mas">+1</span><span class="lab-esq-ini">Inicio de<br>transcripción</span>
+    </div>
+    <div class="lab-tipos"><h4>Tipos de factores</h4><div class="lab-tipos-cols">
+      <div style="--c:${COLOR.basal}"><b><i></i>Basales</b><ul><li>TFIID (TBP)</li><li>TFIIB</li><li>TFIIF</li><li>TFIIE</li><li>TFIIH</li></ul></div>
+      <div style="--c:${COLOR.esp}"><b><i></i>Específicos</b><ul><li>Activadores</li><li>Represores</li></ul></div>
+    </div></div>
+  </div></details>`;
+}
+
+function htmlExplicacion() {
+  const pasos = PASOS.map((p, i) => `<article class="lab-paso-c" style="--c:${[COLOR.adn, COLOR.esp, COLOR.basal, COLOR.pol, COLOR.arnm][i]}"><span class="lab-num">${i + 1}</span><div><h3>${p.titulo}</h3><p>${p.texto}</p><button type="button" class="lab-btn-sec" data-ver-paso="${i}">Ver en el modelo →</button></div></article>`).join('');
+  return `<div class="lab-doble"><div class="lab-lista-pasos">${pasos}</div>
+    <aside class="lab-regla"><h3>Regla visual para el examen</h3>
+      <article style="--c:${COLOR.prom}"><b>ADN</b><p>Promotor, enhancer y sitios reguladores: son secuencias de nucleótidos.</p></article>
+      <article style="--c:${COLOR.basal}"><b>PROTEÍNAS</b><p>Factores basales, factores específicos y ARN polimerasa II: son componentes proteicos.</p></article>
+      <article style="--c:${COLOR.arnm}"><b>ARN</b><p>El producto inicial es ARN; luego el pre-ARNm eucariota suele procesarse.</p></article>
+    </aside></div>`;
+}
+
+function tabla(cab, filas, colores) {
+  return `<div class="lab-tabla" role="table"><div class="lab-tr lab-th" role="row"><span></span>${cab.map((c, i) => `<b style="--c:${colores[i]}">${c}</b>`).join('')}</div>${filas.map((f) => `<div class="lab-tr" role="row"><span class="lab-rotulo">${f[0]}</span>${f.slice(1).map((c, i) => `<p data-l="${cab[i]}" style="--c:${colores[i]}">${c}</p>`).join('')}</div>`).join('')}</div>`;
+}
+function htmlComparador() {
+  const t1 = tabla(['Factores basales', 'Factores específicos', 'ARN polimerasa II'], [
+    ['Naturaleza', 'Proteínas', 'Proteínas', 'Complejo enzimático proteico'],
+    ['Actúan sobre', 'El promotor', 'Enhancers o silenciadores', 'El promotor, reclutada por los basales'],
+    ['Función', 'Forman el complejo de preiniciación', 'Aumentan o disminuyen la transcripción', 'Sintetiza ARN en sentido 5′→3′'],
+    ['Distancia', 'Actúan en el promotor', 'Pueden actuar a distancia', 'Comienza en el sitio +1'],
+    ['Ejemplos', 'TFIID (TBP), TFIIB, TFIIF, TFIIE, TFIIH', 'Activadores y represores', 'ARN pol II (sintetiza pre-ARNm)']
+  ], [COLOR.basal, COLOR.esp, COLOR.pol]);
+  const t2 = tabla(['Promotor', 'Enhancer'], [
+    ['Naturaleza', 'Secuencia de ADN', 'Secuencia de ADN'],
+    ['Ubicación', 'Cerca del sitio de inicio (+1)', 'Puede estar lejos del promotor'],
+    ['Qué se le une', 'Factores basales y ARN polimerasa II', 'Factores específicos (activadores)'],
+    ['Efecto', 'Permite la iniciación basal', 'Aumenta la transcripción']
+  ], [COLOR.prom, COLOR.prom]);
+  return `<section class="lab-bloque"><h2>Factores y enzima</h2>${t1}</section><section class="lab-bloque"><h2>Secuencias de ADN reguladoras</h2>${t2}</section>`;
+}
+
+// ---------- Función principal ----------
+export function abrirLab({ app, volver }) {
+  let capas = { ...CAPAS_INICIO }, modo = 'general', paso = 0, pasoActivo = false, pasoAPaso = false, sel = null;
+  let chico = window.matchMedia('(max-width: 760px)'), vbActual = null, raf = 0, cerrado = false;
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  inyectarEstilos();
+  app.innerHTML = `
+  <main class="lab2" id="lab2">
+    <header class="lab-cab">
+      <button class="lab-volver" id="lab-volver" aria-label="Volver al inicio">←<span> Inicio</span></button>
+      <div class="lab-tit">${iconoADN}<div><p class="lab-marca">Parcialito <b>LAB</b></p><h1>Factores de transcripción</h1><h2>Basales y específicos</h2></div></div>
+      <nav class="lab-tabs" role="tablist" aria-label="Secciones del laboratorio">${TABS.map(([id, n, ic], i) => `<button class="lab-tab${i ? '' : ' act'}" role="tab" id="tab-${id}" aria-selected="${i ? 'false' : 'true'}" aria-controls="sec-${id}" data-tab="${id}"><span class="ic" aria-hidden="true">${ic}</span><span>${n}</span></button>`).join('')}</nav>
+    </header>
+
+    <section class="lab-sec" id="sec-vista" role="tabpanel" aria-labelledby="tab-vista">
+      <p class="lab-intro">Explorá cómo se organizan y actúan los factores de transcripción en la hebra de ADN para iniciar la transcripción.</p>
+      <div class="lab-vista">
+        <aside class="lab-panel" aria-label="Controles del modelo">
+          <details class="lab-grupo" open><summary>Capas</summary><div class="lab-capas">${htmlCapas()}</div></details>
+          <details class="lab-grupo" open><summary>Modo de vista</summary><div class="lab-modos" role="radiogroup" aria-label="Modo de vista">
+            <button type="button" role="radio" aria-checked="true" class="act" data-modo="general"><i>⛶</i>Vista general</button>
+            <button type="button" role="radio" aria-checked="false" data-modo="cerca"><i>⌖</i>Primer plano</button>
+            <button type="button" role="radio" aria-checked="false" data-modo="lateral"><i>⟲</i>Vista lateral</button>
+          </div></details>
+          <details class="lab-grupo" open><summary>Animación</summary><div class="lab-anim">
+            <label class="lab-capa-op lab-paso-sw"><input type="checkbox" id="lab-pasoapaso"><span class="lab-play" aria-hidden="true">▶</span><span>Paso a paso</span><b class="lab-sw" aria-hidden="true"></b></label>
+            <button type="button" class="lab-reiniciar" id="lab-reiniciar">↻ Reiniciar</button>
+          </div></details>
+        </aside>
+        <div class="lab-escenario">
+          <div class="lab-escena" id="lab-escena"></div>
+          <div class="lab-leyenda-cel" id="lab-leyenda-cel"></div>
+          <article class="lab-detalle" id="lab-detalle" aria-live="polite"><span class="lab-det-tipo" id="lab-det-tipo"></span><h3 id="lab-det-nombre"></h3><p id="lab-det-texto"></p><div class="lab-det-dato" id="lab-det-dato"></div></article>
+        </div>
+      </div>
+      <div class="lab-tarjetas" id="lab-tarjetas">${htmlTarjetas()}</div>
+      <div class="lab-pie">
+        <div class="lab-clave"><span class="lab-bombilla" aria-hidden="true">💡</span><p id="lab-clave"><b>Dato clave:</b> ${CLAVE_GENERAL}</p></div>
+        <div class="lab-pager" role="group" aria-label="Pasos del recorrido"><button type="button" id="lab-prev" aria-label="Paso anterior">‹</button><span id="lab-pag" aria-live="polite">1 / ${PASOS.length}</span><button type="button" id="lab-next" aria-label="Paso siguiente">›</button></div>
+      </div>
+      <details class="lab-real" id="lab-real"><summary><span>🔬 Estructura experimental real</span><em>PDB 7ML2</em></summary>
+        <p>Vista molecular interactiva de ARN polimerasa II con ADN y componentes del complejo de iniciación. Arrastrá para rotar y usá el zoom para acercarte. Es un complejo de levadura: sirve para explorar la arquitectura molecular, no como mapa exacto de cada gen humano.</p>
+        <div class="lab-real-view" id="lab-real-view"><div class="lab-real-fb" id="lab-real-fb">Se carga al abrir esta sección.</div></div>
+        <div class="lab-real-pie"><span>Estructura experimental · representación 3D</span><a href="https://www.rcsb.org/structure/7ML2" target="_blank" rel="noopener noreferrer">Ficha científica ↗</a></div>
+      </details>
+    </section>
+
+    <section class="lab-sec" id="sec-explicacion" role="tabpanel" aria-labelledby="tab-explicacion" hidden>${htmlExplicacion()}</section>
+    <section class="lab-sec" id="sec-comparador" role="tabpanel" aria-labelledby="tab-comparador" hidden>${htmlComparador()}</section>
+    <section class="lab-sec" id="sec-preguntas" role="tabpanel" aria-labelledby="tab-preguntas" hidden><div id="lab-quiz" class="lab-quiz"></div></section>
+  </main>`;
+
+  const $ = (s) => app.querySelector(s), $$ = (s) => [...app.querySelectorAll(s)];
+  const escena = $('#lab-escena');
+
+  // ----- Escena -----
+  function pintarEscena() {
+    const L = chico.matches ? DISEÑOS.cel : DISEÑOS.pc;
+    escena.innerHTML = construirEscena(L);
+    vbActual = null;
+    $('#lab-leyenda-cel').innerHTML = chico.matches
+      ? Object.keys(PIEZAS).filter((id) => PIEZAS[id].pin).sort((a, b) => PIEZAS[a].pin - PIEZAS[b].pin).map((id) => `<button type="button" data-part="${id}" data-capa="${PIEZAS[id].capa}"><b style="background:${PIEZAS[id].color}">${PIEZAS[id].pin}</b>${PIEZAS[id].nombre}</button>`).join('')
+      : '';
+    aplicar(true);
+  }
+
+  function irA(vb) {
+    const svg = $('#lab-svg'); if (!svg) return;
+    cancelAnimationFrame(raf);
+    const desde = vbActual || vb, t0 = performance.now(), dur = reduce ? 0 : 480;
+    const marco = (t) => {
+      const k = dur ? Math.min(1, (t - t0) / dur) : 1, e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+      vbActual = desde.map((d, i) => d + (vb[i] - d) * e);
+      svg.setAttribute('viewBox', vbActual.join(' '));
+      if (k < 1) raf = requestAnimationFrame(marco);
+    };
+    raf = requestAnimationFrame(marco);
+  }
+
+  function capaVisible(c) {
+    if (pasoAPaso) return paso + 1 >= CAPA_DESDE_PASO[c];
+    return !!capas[c];
+  }
+  function enFoco(parte) { return pasoActivo && PASOS[paso].piezas.includes(parte); }
+
+  // Refleja el estado (capas, foco, selección, vista) en la escena y los controles.
+  function aplicar(sinVista) {
+    $$('[data-capa]').forEach((el) => { if (el.tagName !== 'INPUT') el.classList.toggle('oculto', !capaVisible(el.dataset.capa)); });
+    $$('[data-capa-chk]').forEach((i) => { i.checked = capaVisible(i.dataset.capaChk); i.disabled = pasoAPaso; });
+    const hayFoco = pasoActivo;
+    escena.classList.toggle('foco-on', hayFoco);
+    escena.classList.toggle('lateral', modo === 'lateral');
+    $$('#lab-escena [data-part], #lab-leyenda-cel [data-part]').forEach((el) => {
+      el.classList.toggle('en-foco', enFoco(el.dataset.part));
+      el.classList.toggle('sel', el.dataset.part === sel);
+    });
+    $$('.lab-elem').forEach((el) => el.classList.toggle('sel', el.dataset.part === sel));
+    $$('[data-modo]').forEach((b) => { b.classList.toggle('act', b.dataset.modo === modo); b.setAttribute('aria-checked', b.dataset.modo === modo); });
+    $('#lab-pag').textContent = `${paso + 1} / ${PASOS.length}`;
+    $('#lab-prev').disabled = paso === 0; $('#lab-next').disabled = paso === PASOS.length - 1;
+    $('#lab-clave').innerHTML = `<b>Dato clave:</b> ${pasoActivo ? PASOS[paso].clave : CLAVE_GENERAL}`;
+    $('#lab-pasoapaso').checked = pasoAPaso;
+    $('.lab-pie').classList.toggle('con-paso', pasoActivo);
+    if (!sinVista) { const c = cuadros(chico.matches ? DISEÑOS.cel : DISEÑOS.pc); irA(modo === 'cerca' ? c.cerca : c.general); }
+    else { const c = cuadros(chico.matches ? DISEÑOS.cel : DISEÑOS.pc); const svg = $('#lab-svg'); if (svg) { vbActual = modo === 'cerca' ? c.cerca : c.general; svg.setAttribute('viewBox', vbActual.join(' ')); } }
+  }
+
+  function seleccionar(id) {
+    const p = PIEZAS[id]; if (!p) return;
+    sel = id;
+    const t = $('#lab-det-tipo'); t.textContent = p.tipo.toUpperCase(); t.style.color = p.color;
+    $('#lab-det-nombre').textContent = p.nombre; $('#lab-det-texto').textContent = p.texto; $('#lab-det-dato').textContent = p.dato;
+    $('#lab-detalle').style.setProperty('--c', p.color); $('#lab-detalle').classList.add('hay');
+    aplicar(true);
+  }
+
+  function irAPaso(n, activo = true) {
+    paso = Math.max(0, Math.min(PASOS.length - 1, n)); pasoActivo = activo;
+    if (activo) seleccionar(PASOS[paso].piezas[0]); else aplicar(true);
+  }
+
+  // ----- Eventos del tablero -----
+  const elegirPieza = (e) => {
+    const el = e.target.closest('[data-part]'); if (!el || el.classList.contains('oculto')) return;
+    if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return;
+    if (e.type === 'keydown') e.preventDefault();
+    seleccionar(el.dataset.part);
+    if (el.classList.contains('lab-elem') || el.closest('#lab-leyenda-cel')) $('#lab-detalle').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'nearest' });
+  };
+  ['#lab-escena', '#lab-leyenda-cel', '#lab-tarjetas'].forEach((s) => { $(s).addEventListener('click', elegirPieza); $(s).addEventListener('keydown', elegirPieza); });
+
+  $$('[data-capa-chk]').forEach((i) => i.addEventListener('change', () => { capas[i.dataset.capaChk] = i.checked; aplicar(true); }));
+  $$('[data-modo]').forEach((b) => b.addEventListener('click', () => { modo = b.dataset.modo; aplicar(); }));
+  $('#lab-pasoapaso').addEventListener('change', (e) => { pasoAPaso = e.target.checked; if (pasoAPaso) { pasoActivo = true; seleccionar(PASOS[paso].piezas[0]); } else aplicar(true); });
+  $('#lab-prev').addEventListener('click', () => irAPaso(paso - 1));
+  $('#lab-next').addEventListener('click', () => irAPaso(paso + 1));
+  $('#lab-reiniciar').addEventListener('click', () => {
+    capas = { ...CAPAS_INICIO }; modo = 'general'; paso = 0; pasoActivo = false; pasoAPaso = false; sel = null;
+    $('#lab-detalle').classList.remove('hay'); aplicar();
+  });
+
+  // Tarjetas: abiertas y fijas en PC; plegables y cerradas en celular.
+  const ajustarTarjetas = () => $$('.lab-tarj, .lab-grupo').forEach((d) => { d.open = !chico.matches || d.classList.contains('lab-grupo'); });
+  $$('.lab-tarj > summary').forEach((s) => s.addEventListener('click', (e) => { if (!chico.matches) e.preventDefault(); }));
+  $$('.lab-grupo > summary').forEach((s) => s.addEventListener('click', (e) => { if (!chico.matches) e.preventDefault(); }));
+  // Al cambiar entre PC y celular se vuelve a dibujar la escena con la otra composición.
+  const alCambiar = () => { pintarEscena(); ajustarTarjetas(); if (sel) seleccionar(sel); };
+  chico.addEventListener('change', alCambiar);
+
+  // ----- Pestañas -----
+  function irATab(id) {
+    $$('.lab-tab').forEach((b) => { const on = b.dataset.tab === id; b.classList.toggle('act', on); b.setAttribute('aria-selected', on); });
+    TABS.forEach(([t]) => { $('#sec-' + t).hidden = t !== id; });
+    if (id === 'preguntas' && !$('#lab-quiz').childElementCount) reiniciarQuiz();
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  }
+  $$('[data-tab]').forEach((b) => b.addEventListener('click', () => irATab(b.dataset.tab)));
+  $('.lab-tabs').addEventListener('keydown', (e) => {
+    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    const t = $$('.lab-tab'), i = t.findIndex((b) => b.classList.contains('act')), n = (i + (e.key === 'ArrowRight' ? 1 : -1) + t.length) % t.length;
+    irATab(t[n].dataset.tab); t[n].focus();
+  });
+  $$('[data-ver-paso]').forEach((b) => b.addEventListener('click', () => { irATab('vista'); irAPaso(Number(b.dataset.verPaso)); }));
+
+  // ----- Preguntas -----
+  let q = { i: 0, aciertos: 0, orden: [] };
+  function reiniciarQuiz() { q = { i: 0, aciertos: 0, orden: PREGUNTAS.map((_, k) => k).sort(() => Math.random() - 0.5) }; pintarPregunta(); }
+  function pintarPregunta() {
+    const cont = $('#lab-quiz');
+    if (q.i >= PREGUNTAS.length) {
+      const pct = Math.round((q.aciertos / PREGUNTAS.length) * 100);
+      cont.innerHTML = `<div class="lab-quiz-fin"><span class="lab-quiz-medalla">${pct >= 80 ? '🏆' : pct >= 50 ? '👍' : '📚'}</span><h2>${q.aciertos} de ${PREGUNTAS.length} correctas</h2><p>${pct >= 80 ? '¡Excelente! Tenés muy claro quién es quién en la transcripción.' : pct >= 50 ? 'Vas bien. Repasá la pestaña Comparador y probá de nuevo.' : 'Repasá la pestaña Explicación y volvé a intentarlo.'}</p><button class="lab-btn" id="lab-q-reint">Reintentar</button></div>`;
+      $('#lab-q-reint').addEventListener('click', reiniciarQuiz); return;
+    }
+    const p = PREGUNTAS[q.orden[q.i]], ops = p.o.map((t, k) => ({ t, ok: k === p.ok })).sort(() => Math.random() - 0.5);
+    cont.innerHTML = `<div class="lab-quiz-top"><span>Pregunta ${q.i + 1} de ${PREGUNTAS.length}</span><span>✔ ${q.aciertos}</span></div><div class="lab-quiz-barra"><i style="width:${(q.i / PREGUNTAS.length) * 100}%"></i></div><h2>${p.q}</h2><div class="lab-quiz-ops">${ops.map((o, k) => `<button type="button" data-ok="${o.ok}"><b>${'ABCD'[k]}</b>${o.t}</button>`).join('')}</div><div class="lab-quiz-fb" id="lab-q-fb" role="status"></div>`;
+    cont.querySelectorAll('.lab-quiz-ops button').forEach((b) => b.addEventListener('click', () => {
+      const ok = b.dataset.ok === 'true'; if (ok) q.aciertos++;
+      cont.querySelectorAll('.lab-quiz-ops button').forEach((x) => { x.disabled = true; x.classList.toggle('bien', x.dataset.ok === 'true'); });
+      if (!ok) b.classList.add('mal');
+      $('#lab-q-fb').innerHTML = `<p class="${ok ? 'ok' : 'no'}">${ok ? '¡Correcto!' : 'No exactamente.'} ${p.exp}</p><button class="lab-btn" id="lab-q-sig">${q.i === PREGUNTAS.length - 1 ? 'Ver resultado' : 'Siguiente →'}</button>`;
+      $('#lab-q-sig').addEventListener('click', () => { q.i++; pintarPregunta(); });
+    }));
+  }
+
+  // ----- Estructura real (se carga solo si se abre) -----
+  $('#lab-real').addEventListener('toggle', (e) => {
+    if (!e.target.open || $('#lab-pdbe')) return;
+    const vista = $('#lab-real-view'), fb = $('#lab-real-fb');
+    fb.textContent = 'Cargando visualizador molecular…';
+    const montar = () => {
+      vista.insertAdjacentHTML('afterbegin', '<pdbe-molstar id="lab-pdbe" molecule-id="7ml2" hide-controls="false" hide-logo="true" bg-color-r="4" bg-color-g="10" bg-color-b="28" lighting="glossy" style="display:block;width:100%;height:520px"></pdbe-molstar>');
+      fb.textContent = 'Podés rotar, acercar y seleccionar componentes de la estructura.';
+    };
+    if (window.customElements && window.customElements.get('pdbe-molstar')) return montar();
+    if (!document.getElementById('lab-molstar-css')) { const l = document.createElement('link'); l.id = 'lab-molstar-css'; l.rel = 'stylesheet'; l.href = 'https://cdn.jsdelivr.net/npm/pdbe-molstar@3.5.0/build/pdbe-molstar.css'; document.head.appendChild(l); }
+    const s = document.createElement('script'); s.src = 'https://cdn.jsdelivr.net/npm/pdbe-molstar@3.5.0/build/pdbe-molstar-component.js'; s.async = true;
+    s.onload = () => customElements.whenDefined('pdbe-molstar').then(montar).catch(() => { fb.textContent = 'No se pudo iniciar el visor. El modelo esquemático sigue disponible arriba.'; });
+    s.onerror = () => { fb.textContent = 'No se pudo cargar el visor externo. Revisá tu conexión; el modelo esquemático sigue disponible arriba.'; };
+    document.head.appendChild(s);
+  });
+
+  $('#lab-volver').addEventListener('click', () => { cerrado = true; cancelAnimationFrame(raf); chico.removeEventListener('change', alCambiar); volver(); });
+
+  pintarEscena(); ajustarTarjetas();
+  seleccionar('basal'); sel = 'basal'; aplicar(true);
+  window.scrollTo({ top: 0 });
+}
+
+// ---------- Estilos (se inyectan una sola vez) ----------
+function inyectarEstilos() {
+  let st = document.getElementById('lab2-css');
+  if (!st) { st = document.createElement('style'); st.id = 'lab2-css'; document.head.appendChild(st); }
+  st.textContent = `
+.lab2{--b0:#040a1c;--b1:#081433;--ln:#1c3d8f;--ln2:#2f5fd0;--tx:#eaf1ff;--mu:#9fb3e6;--az:#2f7bff;
+  position:relative;max-width:1260px;margin:0 auto;padding:22px 24px 44px;color:var(--tx);min-height:100dvh;font-family:var(--fuente);
+  background:radial-gradient(60rem 28rem at 12% -6rem,#0f2468 0,transparent 62%),radial-gradient(40rem 24rem at 100% 30%,#1a0f4d55 0,transparent 70%),var(--b0);
+  box-shadow:0 0 0 100vmax var(--b0);clip-path:inset(0 -100vmax)}
+.lab2 *{box-sizing:border-box}.lab2 h1,.lab2 h2,.lab2 h3,.lab2 h4,.lab2 p{margin:0}.lab2 button{font:inherit;color:inherit;cursor:pointer}
+.lab2 [hidden]{display:none!important}
+.lab-cab{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px}
+.lab-volver{border:1px solid var(--ln);background:#0a1738;border-radius:12px;padding:9px 14px;font-weight:600;color:var(--mu)}.lab-volver:hover{border-color:var(--az);color:#fff}
+.lab-tit{display:flex;align-items:center;gap:12px;min-width:0}.lab-marca{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}.lab-marca b{color:#a98bff}
+.lab-tit h1{font-size:clamp(1.5rem,2.6vw,2.1rem);font-weight:700;line-height:1.1;letter-spacing:-.01em;color:#dfe8ff}.lab-tit h2{font-size:clamp(1.15rem,2vw,1.55rem);font-weight:600;color:#c9d8ff;line-height:1.2}
+.lab-tabs{display:flex;gap:4px;padding:6px;border-radius:999px;background:rgba(9,20,52,.9);border:1px solid var(--ln);box-shadow:0 0 28px #1a4bd033}
+.lab-tab{border:0;background:transparent;border-radius:999px;padding:11px 24px;color:var(--mu);font-weight:600;white-space:nowrap;display:flex;gap:6px;align-items:center;transition:background .2s,color .2s}
+.lab-tab .ic{display:none}.lab-tab:hover{color:#fff}.lab-tab.act{background:linear-gradient(180deg,#3b82ff,#2a63e6);color:#fff;box-shadow:0 0 18px #2f7bff88}
+.lab-tab:focus-visible,.lab-volver:focus-visible,.lab2 summary:focus-visible,.lab-elem:focus-visible{outline:2px solid #7fb0ff;outline-offset:2px}
+.lab-intro{color:#b9c9f2;max-width:560px;line-height:1.5;margin:14px 0 22px;font-size:1rem}.lab-vista>*{min-width:0}
+.lab-vista{display:grid;grid-template-columns:250px minmax(0,1fr);gap:22px;align-items:start}
+.lab-panel{border:1px solid var(--ln);border-radius:20px;background:rgba(8,18,48,.78);padding:12px 16px;box-shadow:inset 0 0 30px #1a3fb01a}
+.lab-grupo{padding:10px 0;border-bottom:1px solid #16306f}.lab-grupo:last-child{border-bottom:0}
+.lab-grupo>summary{list-style:none;font-weight:600;font-size:.9rem;color:#dfe8ff;display:flex;align-items:center;gap:8px;padding:2px 0 8px;cursor:default}.lab-grupo>summary::-webkit-details-marker{display:none}
+.lab-grupo>summary::before{content:'⌄';color:var(--mu);font-size:.9rem}
+.lab-capa-op{display:flex;align-items:center;gap:10px;padding:8px 2px;cursor:pointer;font-size:.88rem;color:#d3def9;position:relative}
+.lab-capa-op input{position:absolute;opacity:0;pointer-events:none}.lab-punto{width:14px;height:14px;border-radius:50%;background:var(--c);box-shadow:0 0 8px var(--c);flex:0 0 14px}
+.lab-capa-op>span:not(.lab-play){flex:1}.lab-sw{width:42px;height:24px;border-radius:99px;background:#243a78;position:relative;transition:background .2s;flex:0 0 42px}
+.lab-sw::after{content:'';position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:transform .2s}
+.lab-capa-op input:checked~.lab-sw{background:#2f7bff}.lab-capa-op input:checked~.lab-sw::after{transform:translateX(18px)}
+.lab-capa-op input:focus-visible~.lab-sw{outline:2px solid #7fb0ff;outline-offset:2px}.lab-capa-op input:disabled~*{opacity:.75}
+.lab-modos{display:grid;gap:8px}.lab-modos button{display:flex;gap:10px;align-items:center;border:1px solid #1f3a85;background:#0a1534;border-radius:12px;padding:11px 12px;font-size:.88rem;color:#d3def9;text-align:left}
+.lab-modos button i{font-style:normal;width:20px;text-align:center;color:var(--mu)}.lab-modos button.act{border-color:#4a8dff;background:#12306e;color:#fff;box-shadow:0 0 16px #2f7bff55}.lab-modos button:hover{border-color:#4a8dff}
+.lab-play{width:30px;height:30px;border-radius:50%;border:2px solid #3b82ff;display:grid;place-items:center;font-size:.7rem;color:#8fb8ff;flex:0 0 30px}
+.lab-reiniciar{width:100%;margin-top:8px;border:1px solid #2a4aa5;background:#112a66;border-radius:12px;padding:11px;font-weight:600;color:#e5eeff}.lab-reiniciar:hover{background:#17388a}
+.lab-escenario{min-width:0}.lab-escena{position:relative;border-radius:22px;perspective:1100px;min-height:300px;overflow:hidden}
+.lab-svg{display:block;width:100%;height:auto;max-height:560px;overflow:visible;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.lab-escena.lateral .lab-svg{transform:rotateY(-26deg) rotateX(7deg) scale(.92)}
+.lab-svg text{font-family:var(--fuente);pointer-events:none}.lab-svg .lab-capa,.lab-svg .lab-etq,.lab-svg .lab-pin{transition:opacity .45s}
+.lab-svg .oculto,.lab-leyenda-cel .oculto{opacity:0;pointer-events:none}.lab-leyenda-cel .oculto{opacity:.35;pointer-events:auto}
+.lab-svg [data-part]{cursor:pointer;outline:none}.lab-svg .lab-parte:hover,.lab-svg .lab-parte:focus-visible{filter:brightness(1.18)}
+.lab-svg .lab-parte.sel{filter:drop-shadow(0 0 10px #fff)}.lab-svg .lab-etq.sel rect{fill:rgba(30,60,140,.9)}
+.lab-escena.foco-on .lab-svg [data-part]:not(.en-foco){opacity:.28}.lab-escena.foco-on .lab-svg .lab-parte.en-foco{filter:drop-shadow(0 0 14px #fff)}
+.lab-escena.foco-on .lab-svg .oculto{opacity:0}
+.lab-arco{animation:lab-marcha 1.4s linear infinite}@keyframes lab-marcha{to{stroke-dashoffset:-18}}
+.lab-flota{animation:lab-flota 7s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.lab-flota:nth-of-type(3n){animation-delay:-2s}@keyframes lab-flota{50%{transform:translateY(-4px)}}
+.lab-leyenda-cel{display:none}
+.lab-detalle{margin-top:14px;border:1px solid var(--ln);border-left:4px solid var(--c,#2f7bff);border-radius:16px;background:rgba(8,18,48,.8);padding:14px 18px;display:grid;grid-template-columns:minmax(0,1fr);gap:6px}
+.lab-det-tipo{font-size:.68rem;letter-spacing:.12em;font-weight:800}.lab-detalle h3{font-size:1.15rem}.lab-detalle p{font-size:.9rem;line-height:1.6;color:#cdd9f7}
+.lab-det-dato{font-size:.84rem;color:#9fc4ff;border-top:1px dashed #234488;padding-top:8px;margin-top:2px}.lab-det-dato::before{content:'Ojo: ';font-weight:800;color:#c7dcff}
+.lab-tarjetas{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:22px;align-items:stretch}
+.lab-tarj{border:1px solid var(--ln);border-radius:20px;background:rgba(8,18,48,.78);padding:18px 20px;box-shadow:inset 0 0 30px #1a3fb01a}
+.lab-tarj>summary{list-style:none;cursor:default}.lab-tarj>summary::-webkit-details-marker{display:none}.lab-tarj h3{font-size:1.1rem;font-weight:700;color:#e6eeff}.lab-tarj h3 small{font-weight:500;color:#5aa2ff;font-size:inherit}
+.lab-tarj-cuerpo{margin-top:14px;display:grid;gap:16px}
+.lab-fila-f{display:grid;grid-template-columns:48px 1fr;gap:14px}.lab-fila-f h4{color:var(--c);font-size:1.02rem;font-weight:700;margin-bottom:3px}.lab-fila-f p{font-size:.85rem;line-height:1.5;color:#cdd9f7}
+.lab-ic{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-size:1.3rem;background:color-mix(in srgb,var(--c) 28%,#06102a);border:2px solid color-mix(in srgb,var(--c) 70%,#fff);box-shadow:0 0 14px color-mix(in srgb,var(--c) 45%,transparent)}
+.lab-elems{gap:6px}.lab-elem{display:grid;grid-template-columns:22px minmax(0,.9fr) minmax(0,1.2fr);gap:12px;align-items:center;text-align:left;border:1px solid transparent;background:transparent;border-radius:12px;padding:7px 6px}
+.lab-elem i{width:20px;height:20px;border-radius:50%;background:var(--c);box-shadow:0 0 10px color-mix(in srgb,var(--c) 70%,transparent)}.lab-elem b{color:var(--c);font-size:.84rem;line-height:1.25}.lab-elem span{font-size:.78rem;color:#b4c4ec;line-height:1.35}
+.lab-elem:hover,.lab-elem.sel{background:#102656;border-color:#2a4aa5}
+.lab-esq{position:relative;height:130px;margin-top:4px}.lab-esq-enh{position:absolute;left:0;top:0;border:2px solid #ffb43a;border-radius:10px;padding:5px 11px;color:#ffc866;font-weight:700;font-size:.82rem;line-height:1.1;text-align:center}.lab-esq-enh small{display:block;font-weight:500;font-size:.72rem}
+.lab-esq-enh::after{content:'';position:absolute;left:100%;top:50%;width:46px;height:60px;border:2px solid #ffb43a;border-left:0;border-bottom:0;border-radius:0 40px 0 0;transform:translateY(0)}
+.lab-esq-barra{position:absolute;left:0;right:0;top:62px;height:34px;display:grid;grid-template-columns:.9fr 1fr 1fr .9fr 1fr;border-radius:6px}.lab-esq-barra i{position:relative;display:block}
+.lab-esq-barra .b0{background:#2f7bff;border-radius:6px 0 0 6px}.lab-esq-barra .b1{background:#6a5bff}.lab-esq-barra .b2{background:#ff4f8b}.lab-esq-barra .b3{background:#2f86ff}.lab-esq-barra .b4{background:#7c52ff;border-radius:0 6px 6px 0}
+.lab-esq-barra em{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:112%;padding:5px 2px;border-radius:5px;font-style:normal;font-weight:700;font-size:.72rem;line-height:1.1;text-align:center;color:#fff;background:inherit;box-shadow:0 2px 8px #0008}
+.lab-esq-barra .b1 em{color:#10163d;background:#7567ff}.lab-esq-mas{position:absolute;right:16%;top:12px;font-size:.8rem;color:#c9d8ff}.lab-esq-mas::after{content:'';position:absolute;left:0;top:16px;width:2px;height:70px;background:#5fe0ff}
+.lab-esq-ini{position:absolute;right:0;top:100px;font-size:.7rem;line-height:1.2;color:#9d86ff;text-align:right}
+.lab-tipos{border:1px solid #1f3a85;border-radius:14px;padding:12px 14px}.lab-tipos h4{font-size:.85rem;margin-bottom:8px}.lab-tipos-cols{display:grid;grid-template-columns:1fr 1fr;gap:10px}.lab-tipos b{display:flex;align-items:center;gap:8px;font-size:.82rem;color:#dfe8ff;margin-bottom:4px}.lab-tipos b i{width:11px;height:11px;border-radius:50%;background:var(--c)}
+.lab-tipos ul{margin:0;padding:0;list-style:none;font-size:.78rem;color:#b9c9f2}.lab-tipos li{padding:2px 0 2px 18px;position:relative}.lab-tipos li::before{content:'';position:absolute;left:3px;top:.75em;width:5px;height:5px;border-radius:50%;background:var(--c)}
+.lab-pie{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-top:20px}.lab-clave{flex:1;display:flex;align-items:center;gap:14px;border:1px solid var(--ln);border-radius:999px;background:rgba(8,18,48,.78);padding:12px 24px;min-width:0}
+.lab-clave p{font-size:.84rem;line-height:1.45;color:#c4d3f6}.lab-clave b{color:#fff}.lab-bombilla{font-size:1.5rem;filter:drop-shadow(0 0 8px #ffc23d88)}
+.lab-pager{display:flex;align-items:center;gap:14px;font-size:.92rem;color:#cfdcff;white-space:nowrap}.lab-pager button{width:52px;height:52px;border-radius:14px;border:1px solid var(--ln2);background:#0e2457;font-size:1.6rem;line-height:1;color:#fff}.lab-pager button:hover:not(:disabled){background:#1a3b8c}.lab-pager button:disabled{opacity:.35;cursor:default}
+.lab-real{margin-top:22px;border:1px solid var(--ln);border-radius:20px;background:rgba(8,18,48,.6);overflow:hidden}.lab-real>summary{list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;padding:16px 20px;font-weight:600;cursor:pointer}.lab-real>summary::-webkit-details-marker{display:none}.lab-real>summary em{font-style:normal;font-size:.72rem;letter-spacing:.07em;border:1px solid #2f4fa5;border-radius:99px;padding:5px 10px;color:#a9c4ff}
+.lab-real>p{padding:0 20px 14px;color:#a9bbe6;font-size:.86rem;line-height:1.6;max-width:900px}.lab-real-view{background:#040a1c;min-height:120px}.lab-real-fb{padding:12px 20px;font-size:.78rem;color:#8fa3d6}.lab-real-pie{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 20px;border-top:1px solid var(--ln);font-size:.78rem;color:#8fa3d6}.lab-real-pie a{color:#9cc2ff;text-decoration:none}
+.lab-sec{animation:lab-ent .35s ease}@keyframes lab-ent{from{opacity:0;transform:translateY(8px)}}
+.lab-doble{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,1fr);gap:22px;margin-top:22px;align-items:start}
+.lab-lista-pasos{display:grid;gap:14px}.lab-paso-c{display:grid;grid-template-columns:48px 1fr;gap:16px;border:1px solid var(--ln);border-left:4px solid var(--c);border-radius:18px;background:rgba(8,18,48,.78);padding:18px 20px}
+.lab-num{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:1.1rem;color:#06102a;background:var(--c);box-shadow:0 0 16px color-mix(in srgb,var(--c) 60%,transparent)}
+.lab-paso-c h3{font-size:1.05rem;color:var(--c);margin-bottom:5px}.lab-paso-c p{font-size:.92rem;line-height:1.6;color:#cdd9f7}
+.lab-btn-sec{margin-top:12px;border:1px solid #2a4aa5;background:#0e2457;border-radius:10px;padding:9px 14px;font-size:.84rem;font-weight:600;color:#dbe6ff}.lab-btn-sec:hover{background:#17388a}
+.lab-regla{border:1px solid var(--ln);border-radius:20px;background:rgba(8,18,48,.78);padding:20px;display:grid;gap:12px;position:sticky;top:16px}.lab-regla h3{font-size:1.05rem}.lab-regla article{border:1px solid #1f3a85;border-radius:14px;padding:14px;background:#0a1534}.lab-regla b{color:var(--c);letter-spacing:.06em;font-size:.82rem}.lab-regla p{font-size:.86rem;line-height:1.5;color:#b9c9f2;margin-top:4px}
+.lab-bloque{margin-top:22px}.lab-bloque h2{font-size:1.15rem;margin-bottom:12px}
+.lab-tabla{border:1px solid var(--ln);border-radius:18px;overflow:hidden;background:rgba(8,18,48,.78)}.lab-tr{display:grid;grid-template-columns:150px repeat(auto-fit,minmax(0,1fr));border-top:1px solid #16306f}.lab-tr:first-child{border-top:0}
+.lab-th{background:#0b1c4a}.lab-th b{padding:14px 16px;color:var(--c);font-size:.95rem}.lab-tr p,.lab-rotulo{padding:13px 16px;font-size:.88rem;line-height:1.5;color:#cdd9f7}.lab-rotulo{color:#8fa8e6;font-weight:600;font-size:.8rem;letter-spacing:.04em}
+.lab-quiz{max-width:720px;margin:26px auto 0;border:1px solid var(--ln);border-radius:22px;background:rgba(8,18,48,.78);padding:24px}
+.lab-quiz-top{display:flex;justify-content:space-between;font-size:.8rem;color:var(--mu)}.lab-quiz-barra{height:8px;border-radius:99px;background:#112456;margin:10px 0 18px;overflow:hidden}.lab-quiz-barra i{display:block;height:100%;background:linear-gradient(90deg,#2f7bff,#1fd6a5);transition:width .4s}
+.lab-quiz h2{font-size:1.3rem;line-height:1.35;margin-bottom:16px}.lab-quiz-ops{display:grid;gap:10px}.lab-quiz-ops button{display:flex;gap:12px;align-items:center;text-align:left;border:1px solid #234488;background:#0a1534;border-radius:14px;padding:14px;font-size:.95rem;color:#e5eeff}
+.lab-quiz-ops button b{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:#16306f;font-size:.8rem;flex:0 0 28px}.lab-quiz-ops button:hover:not(:disabled){border-color:#4a8dff}.lab-quiz-ops button:disabled{cursor:default}
+.lab-quiz-ops .bien{border-color:#1fd6a5;background:#0b3a35}.lab-quiz-ops .bien b{background:#1fd6a5;color:#04251f}.lab-quiz-ops .mal{border-color:#ff5d7a;background:#40142a}.lab-quiz-ops .mal b{background:#ff5d7a;color:#2a0612}
+.lab-quiz-fb{margin-top:16px;display:grid;gap:12px}.lab-quiz-fb p{font-size:.92rem;line-height:1.55;color:#cdd9f7}.lab-quiz-fb .ok::first-line{color:#1fd6a5;font-weight:700}.lab-quiz-fb .no::first-line{color:#ff8ba0;font-weight:700}
+.lab-btn{border:0;border-radius:12px;padding:13px 20px;font-weight:700;background:linear-gradient(180deg,#3b82ff,#2a63e6);color:#fff;justify-self:start;box-shadow:0 0 18px #2f7bff55}
+.lab-quiz-fin{text-align:center;display:grid;gap:12px;justify-items:center;padding:12px 0}.lab-quiz-medalla{font-size:3rem}.lab-quiz-fin p{color:#b9c9f2}
+
+/* ===== Celular: composición propia ===== */
+@media(max-width:1100px){.lab-tarjetas{grid-template-columns:1fr 1fr}.lab-tarjetas .lab-tarj:last-child{grid-column:1/-1}.lab-doble{grid-template-columns:1fr}.lab-regla{position:static}}
+@media(max-width:900px){.lab-cab{grid-template-columns:auto 1fr}.lab-tabs{grid-column:1/-1;justify-self:start;max-width:100%;overflow-x:auto}.lab-vista{grid-template-columns:1fr}.lab-panel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.lab-grupo{border-bottom:0}}
+@media(max-width:760px){
+  .lab2{padding:12px 14px calc(92px + env(safe-area-inset-bottom));clip-path:none;box-shadow:none;max-width:none}
+  .lab-cab{grid-template-columns:auto 1fr;gap:10px}.lab-volver span{display:none}.lab-volver{padding:9px 12px}
+  .lab-tit svg{width:34px;height:34px}.lab-tit h1{font-size:1.15rem}.lab-tit h2{font-size:.92rem}.lab-marca{font-size:.62rem}
+  .lab-tabs{position:fixed;left:0;right:0;bottom:0;z-index:60;border-radius:20px 20px 0 0;border-width:1px 0 0;padding:6px 8px calc(6px + env(safe-area-inset-bottom));justify-content:space-around;background:rgba(5,12,34,.97);backdrop-filter:blur(12px);box-shadow:0 -10px 30px #0008;overflow:visible;max-width:none;justify-self:stretch}
+  .lab-tab{flex:1;flex-direction:column;gap:2px;padding:7px 4px;font-size:.68rem;border-radius:14px}.lab-tab .ic{display:block;font-size:1.25rem;line-height:1}
+  .lab-intro{font-size:.88rem;margin:10px 0 12px}
+  .lab-vista{gap:10px}
+  .lab-panel{display:flex;flex-direction:column;gap:8px;padding:10px;border-radius:16px}
+  .lab-grupo{padding:0}.lab-grupo>summary{display:none}
+  .lab-capas{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 6px;scrollbar-width:none;margin:0 -2px}.lab-capas::-webkit-scrollbar{display:none}
+  .lab-capas .lab-capa-op{flex:0 0 auto;border:1px solid #234488;background:#0a1534;border-radius:99px;padding:8px 12px;font-size:.78rem;gap:7px;white-space:nowrap}
+  .lab-capas .lab-capa-op span{flex:0 0 auto}.lab-capas .lab-sw{display:none}.lab-capas .lab-punto{width:10px;height:10px;flex-basis:10px;opacity:.35;box-shadow:none}
+  .lab-capas .lab-capa-op:has(input:checked){border-color:var(--c);background:color-mix(in srgb,var(--c) 18%,#06102a)}.lab-capas .lab-capa-op:has(input:checked) .lab-punto{opacity:1;box-shadow:0 0 8px var(--c)}
+  .lab-modos{grid-template-columns:repeat(3,1fr);gap:6px;background:#0a1534;border:1px solid #234488;border-radius:14px;padding:4px}.lab-modos button{flex-direction:column;gap:2px;border:0;background:transparent;padding:8px 2px;font-size:.7rem;text-align:center;border-radius:11px;box-shadow:none!important}.lab-modos button i{width:auto;font-size:1.05rem}.lab-modos button.act{background:#1a47a8}
+  .lab-anim{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center}.lab-anim .lab-paso-sw{border:1px solid #234488;background:#0a1534;border-radius:12px;padding:6px 10px;font-size:.82rem}.lab-reiniciar{width:auto;margin:0;padding:11px 14px;font-size:.82rem}.lab-play{width:26px;height:26px;flex-basis:26px}
+  .lab-escena{min-height:0;margin:0 -6px;border-radius:16px;background:radial-gradient(circle at 50% 40%,#0c1f58 0,#050d28 75%);border:1px solid var(--ln)}.lab-svg{max-height:340px}.lab-escena.lateral .lab-svg{transform:rotateY(-18deg) rotateX(5deg) scale(.9)}
+  .lab-leyenda-cel{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.lab-leyenda-cel button{display:flex;align-items:center;gap:9px;border:1px solid #234488;background:#0a1534;border-radius:12px;padding:9px 10px;font-size:.76rem;text-align:left;color:#d3def9;line-height:1.2}.lab-leyenda-cel button b{width:22px;height:22px;flex:0 0 22px;border-radius:50%;display:grid;place-items:center;color:#06102a;font-size:.76rem}.lab-leyenda-cel button.sel{border-color:#fff;background:#12306e}
+  .lab-detalle{padding:12px 14px}.lab-detalle h3{font-size:1.02rem}.lab-detalle p{font-size:.86rem}
+  .lab-tarjetas{grid-template-columns:1fr;gap:10px;margin-top:14px}.lab-tarjetas .lab-tarj:last-child{grid-column:auto}
+  .lab-tarj{padding:0;border-radius:16px}.lab-tarj>summary{cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:15px 16px}.lab-tarj>summary::after{content:'⌄';color:var(--mu);font-size:1.2rem;transition:transform .2s}.lab-tarj[open]>summary::after{transform:rotate(180deg)}.lab-tarj h3{font-size:1rem}
+  .lab-tarj-cuerpo{margin:0;padding:0 16px 16px}.lab-elem{grid-template-columns:20px 1fr;grid-template-areas:'i b' '. s';gap:2px 10px}.lab-elem i{grid-area:i}.lab-elem b{grid-area:b}.lab-elem span{grid-area:s}
+  .lab-pie{position:sticky;bottom:calc(76px + env(safe-area-inset-bottom));z-index:40;flex-direction:column-reverse;align-items:stretch;gap:8px;margin-top:14px}
+  .lab-clave{border-radius:16px;padding:10px 14px;background:rgba(6,14,40,.97);backdrop-filter:blur(8px);gap:10px}.lab-clave p{font-size:.74rem;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.lab-bombilla{font-size:1.1rem}.lab-capas,.lab-modos,.lab-anim{min-width:0}
+  .lab-pager{justify-content:space-between;background:rgba(6,14,40,.97);border:1px solid var(--ln);border-radius:16px;padding:6px}.lab-pager button{width:46px;height:38px;border-radius:11px;font-size:1.4rem}.lab-pie:not(.con-paso) .lab-clave{display:none}.lab-pie{bottom:calc(72px + env(safe-area-inset-bottom))}
+  .lab-real>summary{padding:14px 16px;font-size:.92rem}.lab-real>p{padding:0 16px 12px}.lab-real-view pdbe-molstar{height:380px!important}
+  .lab-paso-c{grid-template-columns:38px 1fr;gap:12px;padding:14px}.lab-num{width:36px;height:36px;font-size:.95rem}.lab-btn-sec{width:100%}
+  .lab-tr{grid-template-columns:1fr}.lab-th{display:none}.lab-rotulo{background:#0b1c4a;padding:9px 14px}.lab-tr p{padding:10px 14px;border-top:1px solid #16306f}.lab-tr p::before{content:attr(data-l);display:block;font-size:.7rem;letter-spacing:.05em;font-weight:700;color:var(--c);margin-bottom:2px}
+  .lab-quiz{margin-top:12px;padding:16px;border-radius:18px}.lab-quiz h2{font-size:1.1rem}.lab-quiz-ops button{padding:12px}
+}
+@media(prefers-reduced-motion:reduce){.lab2 *{animation:none!important;transition:none!important}}
+`;
 }
