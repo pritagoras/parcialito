@@ -56,7 +56,7 @@ export function abrirMaduracionARNm({app, volver}) {
         ? [{x:95,w:85,t:'E1',c:'#4c8dff'},{x:190,w:85,t:'E2',c:'#4c8dff'},{x:285,w:85,t:'E3',c:'#4c8dff'},{x:380,w:85,t:'E4',c:'#4c8dff'}]
         : [{x:95,w:85,t:'E1',c:'#4c8dff'},{x:270,w:85,t:'E2',c:'#4c8dff'},{x:445,w:85,t:'E3',c:'#4c8dff'},{x:620,w:85,t:'E4',c:'#4c8dff'}];
     const introns = [{x:180,w:90,t:'I1'},{x:355,w:90,t:'I2'},{x:530,w:90,t:'I3'}];
-    const showIntrons = paso < 2;
+    const showIntrons = paso < 3;
     const exonMarkup = exons.map(e=>`<g class="mr-exon" data-part="${e.t}" tabindex="0" role="button" aria-label="Seleccionar exón ${e.t}"><rect x="${e.x}" y="139" width="${e.w}" height="44" rx="10" fill="${e.c}" stroke="#d9e8ff" stroke-opacity=".7"/><text x="${e.x+e.w/2}" y="166" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">${e.t}</text></g>`).join('');
     const intronMarkup = introns.map((e,i)=>`<g class="${showIntrons?'mr-intron':'mr-intron sale'}"><path d="M${e.x} 161 H${e.x+e.w}" stroke="#ff9b69" stroke-width="5" stroke-linecap="round" stroke-dasharray="6 7"/><text x="${e.x+e.w/2}" y="123" text-anchor="middle" fill="#ffb18c" font-size="12">${e.t} · intrón</text></g>`).join('');
     const cap = paso >= 0 ? `<g class="mr-cap"><path d="M62 161 H94" stroke="#d5e4ff" stroke-width="5" stroke-linecap="round"/><circle cx="53" cy="161" r="17" fill="#ffc66d" stroke="#fff0c8" stroke-width="2"/><text x="53" y="165" text-anchor="middle" fill="#35210a" font-size="11" font-weight="900">m⁷G</text><text x="53" y="194" text-anchor="middle" fill="#ffc66d" font-size="11">CAP 5′</text></g>` : '';
