@@ -51,8 +51,8 @@ export function abrirTraduccion({app,volver}) {
  const p=etapas[paso];
  const codones=['AUG','GCU','UUU','GGC','UAA'], aas=['Met','Ala','Phe','Gly','STOP'];
  const idx=paso===0?0:paso===1?0:paso<=3?1:paso<=4?2:paso<=6?2:paso===7?3:paso===8?3:4;
- const shift=Math.min(4,Math.max(0,Math.floor((paso-1)/2)));
- const track=codones.map((c,i)=>{const x=36+i*91-shift*28;const active=i===idx;return '<g transform="translate('+x+' 0)"><rect x="0" y="118" width="76" height="36" rx="7" fill="'+(c==='UAA'?'#4b2039':active?'#174a43':'#102849')+'" stroke="'+(c==='UAA'?'#ff8eae':active?'#55e0b3':'#2d527c')+'" stroke-width="'+(active?2.5:1.3)+'"/><text x="38" y="140" text-anchor="middle" fill="#f1f6ff" font-size="13" font-weight="800">'+c+'</text><text x="38" y="169" text-anchor="middle" fill="#a9bddc" font-size="10">'+aas[i]+'</text></g>';}).join('');
+ const shift=paso<4?0:paso<7?1:paso<9?2:3;
+ const track=codones.map((c,i)=>{const x=222+i*87-shift*87;const active=i===idx;return '<g transform="translate('+x+' 0)"><rect x="0" y="118" width="76" height="36" rx="7" fill="'+(c==='UAA'?'#4b2039':active?'#174a43':'#102849')+'" stroke="'+(c==='UAA'?'#ff8eae':active?'#55e0b3':'#2d527c')+'" stroke-width="'+(active?2.5:1.3)+'"/><text x="38" y="140" text-anchor="middle" fill="#f1f6ff" font-size="13" font-weight="800">'+c+'</text><text x="38" y="169" text-anchor="middle" fill="#a9bddc" font-size="10">'+aas[i]+'</text></g>';}).join('');
  const aaColors=['#ff8eae','#ffc66d','#5ca8ff','#55e0b3'];
  const chain=Array.from({length:p.chain},(_,i)=>'<g><line x1="'+(252+i*24)+'" y1="'+(46+(i%2)*7)+'" x2="'+(276+i*24)+'" y2="'+(46+((i+1)%2)*7)+'" stroke="#eaf2ff" stroke-width="3"/><circle cx="'+(252+i*24)+'" cy="'+(46+(i%2)*7)+'" r="10" fill="'+aaColors[i%4]+'" stroke="#fff" stroke-opacity=".65"/><text x="'+(252+i*24)+'" y="'+(49+(i%2)*7)+'" text-anchor="middle" fill="#071226" font-size="8" font-weight="900">'+['M','A','F','G'][i]+'</text></g>').join('');
  const hasP=paso>=1&&paso<9, hasA=p.a===1&&paso<9, released=paso===9;
