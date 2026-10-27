@@ -20,7 +20,7 @@ import { abrirProteinaG, TITULO as TITULO_PROTEINA_G } from './proteina-g.js?v=2
 import { abrirLacTrp, TITULO as TITULO_LAC_TRP } from './lac-vs-trp.js?v=20261026-1';
 import { abrirComparadorComunicacion, TITULO as TITULO_COMPARADOR_COMUNICACION } from './comparador-comunicacion.js?v=20261026-1';
 import { abrirComparadores, TITULO as TITULO_COMPARADORES } from './comparadores.js?v=20261026-1';
-import { abrirLab } from './lab.js?v=20261027-9';
+import { abrirLab } from './lab.js?v=20261027-10';
 import { abrirTelomeros, TITULO as TITULO_TELOMEROS } from './telomeros.js?v=20261027-1';
 
 const app = document.getElementById('app');
