@@ -7,7 +7,7 @@ import { abrirComunicacion } from './comunicacion.js?v=20261027-3';
 import { abrirTraduccion } from './traduccion.js?v=20261027-3';
 import { abrirProteinaG } from './proteina-g.js?v=20261027-2';
 import { abrirMitosis } from './mitosis.js?v=20261027-12';
-import { abrirMeiosis } from './meiosis.js?v=20261027-3';
+import { abrirMeiosis } from './meiosis.js?v=20261027-4';
 
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
@@ -344,15 +344,15 @@ export function abrirLab({ app, volver }) {
   inyectarEstilosCatalogo();
   function abrirDivisionCelular(){
     let tema='mitosis';
-    const temasDiv={
-      mitosis:{icon:'🧫',n:'01',titulo:'Mitosis y citocinesis',bajada:'Una división celular para conservar la dotación cromosómica.',detalle:'Seguí la condensación de los cromosomas, su alineación, la separación de cromátidas hermanas y la formación de dos células hijas.',pasos:['Profase','Metafase','Anafase','Telofase','Citocinesis'],accion:()=>abrirMitosis({app,volver:abrirDivisionCelular})},
-      meiosis:{icon:'🧬',n:'02',titulo:'Meiosis I y II',bajada:'Dos divisiones para reducir la dotación cromosómica y generar variabilidad.',detalle:'Explorá la sinapsis de homólogos, el crossing-over con intercambio recíproco de segmentos, la separación de homólogos y después de cromátidas hermanas.',pasos:['Sinapsis','Crossing-over','Meiosis I','Meiosis II'],accion:()=>abrirMeiosis({app,volver:abrirDivisionCelular})}
+    const datos={
+      mitosis:{icon:'🧫',n:'01',titulo:'Mitosis y citocinesis',bajada:'Una división celular para conservar la dotación cromosómica.',detalle:'Seguí la condensación, alineación y separación de cromátidas hermanas hasta formar dos células hijas.',pasos:['Profase','Metafase','Anafase','Telofase','Citocinesis'],abrir:()=>abrirMitosis({app,volver:abrirDivisionCelular})},
+      meiosis:{icon:'🧬',n:'02',titulo:'Meiosis I y II',bajada:'Dos divisiones que reducen la dotación cromosómica y generan variabilidad.',detalle:'Explorá la sinapsis de homólogos, el crossing-over, la separación de homólogos y después de cromátidas hermanas.',pasos:['Sinapsis','Crossing-over','Meiosis I','Meiosis II'],abrir:()=>abrirMeiosis({app,volver:abrirDivisionCelular})}
     };
     function pintar(){
-      const t=temasDiv[tema];
+      const t=datos[tema];
       app.innerHTML=`<section class="mitlab div-hub">
         <button class="ml-back" id="div-back">← Volver al catálogo</button>
-        <header class="ml-hero"><div><div class="ml-kicker">PARCIALITO LAB · BIOLOGÍA CELULAR</div><h1>División celular</h1><p>Elegí el proceso y recorré sus etapas con modelos interactivos.</p></div></header>
+        <header class="ml-hero"><div><div class="ml-kicker">PARCIALITO LAB · BIOLOGÍA CELULAR</div><h1>División celular</h1><p>Elegí un tema para explorar sus etapas con el modelo interactivo.</p></div></header>
         <nav class="div-tabs" aria-label="Temas de división celular">
           <button type="button" data-div="mitosis" class="${tema==='mitosis'?'activo':''}"><span>🧫</span><b>Mitosis</b><small>Una división</small></button>
           <button type="button" data-div="meiosis" class="${tema==='meiosis'?'activo':''}"><span>🧬</span><b>Meiosis I y II</b><small>Dos divisiones</small></button>
@@ -363,39 +363,14 @@ export function abrirLab({ app, volver }) {
             <div class="div-tags">${t.pasos.map((p,i)=>`<span><i>${String(i+1).padStart(2,'0')}</i>${p}</span>`).join('')}</div>
             <button type="button" class="div-open" id="div-open">Entrar al modelo <b>→</b></button>
           </div>
-        </article>
-      </section>`;
+        </article></section>`;
       app.querySelector('#div-back').onclick=mostrarCatalogo;
       app.querySelectorAll('[data-div]').forEach(b=>b.onclick=()=>{tema=b.dataset.div;pintar()});
-      app.querySelector('#div-open').onclick=t.accion;
+      app.querySelector('#div-open').onclick=t.abrir;
     }
-    const st=document.createElement('style');
-    st.id='div-hub-css';
-    document.getElementById('div-hub-css')?.remove();
-    st.textContent=`
-      .div-hub{max-width:1120px;margin:0 auto;padding:clamp(14px,3vw,30px);color:#edf3ff}
-      .div-hub .ml-hero{margin-bottom:20px}
-      .div-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:7px;border:1px solid #294578;border-radius:17px;background:#08162f;margin:18px 0 16px}
-      .div-tabs button{display:grid;grid-template-columns:38px 1fr;grid-template-rows:auto auto;align-items:center;text-align:left;column-gap:10px;padding:12px;border:1px solid transparent;border-radius:12px;background:transparent;color:#aebfe0;cursor:pointer;font:inherit}
-      .div-tabs button>span{grid-row:1/3;display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:#162b4e;font-size:21px}
-      .div-tabs button b{font-size:14px;color:#dbe7ff}.div-tabs button small{font-size:11px;color:#8fa6d0}
-      .div-tabs button.activo{background:linear-gradient(120deg,#1b3765,#142747);border-color:#477cf4;box-shadow:inset 0 0 0 1px #477cf433}
-      .div-tabs button.activo b{color:#fff}
-      .div-feature{display:grid;grid-template-columns:minmax(190px,.8fr) minmax(0,1.2fr);gap:clamp(16px,3vw,32px);align-items:stretch;padding:clamp(16px,3vw,30px);border:1px solid #2c4777;border-radius:22px;background:radial-gradient(ellipse at 22% 42%,#1c3764 0,transparent 58%),linear-gradient(140deg,#101f3b,#09152b);overflow:hidden}
-      .div-art{min-height:240px;position:relative;display:grid;place-items:center;border:1px solid #2c4777;border-radius:17px;background:radial-gradient(circle at center,#1c3d69,#09152c 72%);overflow:hidden}
-      .div-cell{width:150px;height:150px;border:2px solid #7898d0;border-radius:50%;position:relative;box-shadow:0 0 45px #4f82dd22,inset 0 0 25px #5a83d222}
-      .div-cell i{position:absolute;left:50%;top:50%;width:9px;height:44px;border-radius:8px;background:#9f91ff;box-shadow:0 0 0 2px #9f91ff22;transform-origin:center}
-      .div-cell i:nth-child(1){transform:translate(-50%,-50%) rotate(35deg)}.div-cell i:nth-child(2){transform:translate(-50%,-50%) rotate(-35deg);background:#ff9f78}
-      .div-cell i:nth-child(3){transform:translate(-50%,-50%) rotate(80deg);background:#63e8c3}.div-cell i:nth-child(4){transform:translate(-50%,-50%) rotate(-80deg);background:#ffce69}
-      .div-meiosis .div-cell i:nth-child(1){transform:translate(-100%,-70%) rotate(35deg)}.div-meiosis .div-cell i:nth-child(2){transform:translate(0,-30%) rotate(-35deg)}.div-meiosis .div-cell i:nth-child(3){transform:translate(-100%,-20%) rotate(80deg)}.div-meiosis .div-cell i:nth-child(4){transform:translate(0,-80%) rotate(-80deg)}
-      .div-art-label{position:absolute;bottom:12px;left:12px;color:#8fa9d8;font-size:10px;font-weight:800;letter-spacing:.12em}
-      .div-info{align-self:center}.div-info h2{margin:6px 0 8px;font-size:clamp(22px,3vw,31px);color:#f0f5ff}.div-info h3{margin:0 0 10px;font-size:15px;font-weight:600;color:#c2d4f7}.div-info p{line-height:1.65;color:#aebfe0;font-size:14px}
-      .div-tags{display:flex;gap:7px;flex-wrap:wrap;margin:17px 0 20px}.div-tags span{display:flex;align-items:center;gap:6px;padding:6px 9px;border:1px solid #2c4777;border-radius:9px;background:#0a1932;color:#c5d6f7;font-size:11px}.div-tags i{font-style:normal;color:#63e8c3;font-size:9px;font-weight:800}
-      .div-open{display:flex;justify-content:space-between;align-items:center;gap:18px;width:100%;max-width:330px;padding:13px 16px;border:1px solid #4b77cf;border-radius:12px;background:linear-gradient(110deg,#234b8d,#193665);color:#fff;font-weight:700;cursor:pointer;font:inherit}.div-open b{font-size:20px}
-      @media(max-width:600px){.div-tabs{gap:5px;padding:5px}.div-tabs button{grid-template-columns:29px 1fr;gap:7px;padding:9px 7px}.div-tabs button>span{width:29px;height:32px;font-size:17px}.div-tabs button b{font-size:12px}.div-tabs button small{font-size:10px}.div-feature{grid-template-columns:1fr;padding:13px;gap:15px}.div-art{min-height:180px}.div-cell{width:125px;height:125px}.div-info h2{font-size:23px}.div-open{max-width:none}}
-    `;
-    document.head.appendChild(st);
-    pintar();
+    const st=document.createElement('style');st.id='div-hub-css';document.getElementById(st.id)?.remove();
+    st.textContent='.div-hub{max-width:1120px;margin:auto;padding:clamp(14px,3vw,30px);color:#edf3ff}.div-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:7px;border:1px solid #294578;border-radius:16px;background:#08162f;margin:18px 0}.div-tabs button{display:grid;grid-template-columns:36px 1fr;grid-template-rows:auto auto;gap:2px 10px;text-align:left;padding:12px;border:1px solid transparent;border-radius:12px;background:transparent;color:#aebfe0;font:inherit}.div-tabs button>span{grid-row:1/3;display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:#162b4e;font-size:21px}.div-tabs b{font-size:14px;color:#dbe7ff}.div-tabs small{font-size:11px;color:#8fa6d0}.div-tabs .activo{background:#1b3765;border-color:#477cf4}.div-feature{display:grid;grid-template-columns:minmax(150px,.8fr) minmax(0,1.2fr);gap:24px;align-items:center;padding:clamp(14px,3vw,28px);border:1px solid #2c4777;border-radius:20px;background:radial-gradient(ellipse at 22% 42%,#1c3764,transparent 58%),linear-gradient(140deg,#101f3b,#09152b)}.div-art{min-height:220px;position:relative;display:grid;place-items:center;border:1px solid #2c4777;border-radius:16px;background:radial-gradient(circle,#1c3d69,#09152c 72%)}.div-cell{width:140px;height:140px;border:2px solid #7898d0;border-radius:50%;position:relative}.div-cell i{position:absolute;left:50%;top:50%;width:9px;height:44px;border-radius:8px;background:#9f91ff;transform:translate(-50%,-50%) rotate(35deg)}.div-cell i:nth-child(2){transform:translate(-50%,-50%) rotate(-35deg);background:#ff9f78}.div-cell i:nth-child(3){transform:translate(-50%,-50%) rotate(80deg);background:#63e8c3}.div-cell i:nth-child(4){transform:translate(-50%,-50%) rotate(-80deg);background:#ffce69}.div-art-label{position:absolute;bottom:10px;left:10px;color:#8fa9d8;font-size:10px;font-weight:800;letter-spacing:.1em}.div-info h2{font-size:clamp(22px,3vw,30px);margin:6px 0}.div-info h3{font-size:15px;color:#c2d4f7}.div-info p{line-height:1.6;color:#aebfe0;font-size:14px}.div-tags{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0}.div-tags span{padding:6px 8px;border:1px solid #2c4777;border-radius:8px;background:#0a1932;color:#c5d6f7;font-size:11px}.div-tags i{font-style:normal;color:#63e8c3;margin-right:5px}.div-open{display:flex;justify-content:space-between;width:100%;max-width:330px;padding:13px 15px;border:1px solid #4b77cf;border-radius:12px;background:linear-gradient(110deg,#234b8d,#193665);color:white;font:inherit;font-weight:700}@media(max-width:600px){.div-feature{grid-template-columns:1fr;gap:14px;padding:13px}.div-art{min-height:175px}.div-cell{width:120px;height:120px}.div-open{max-width:none}.div-tabs button{grid-template-columns:28px 1fr;gap:4px 7px;padding:9px 7px}.div-tabs button>span{width:28px;height:30px;font-size:17px}.div-tabs b{font-size:12px}.div-tabs small{font-size:10px}}';
+    document.head.appendChild(st);pintar();
   }
   function tarjeta(t) {
     return `<button type="button" class="lab-cat-card tono-${t.tono}" data-lab-card="${t.id}">
