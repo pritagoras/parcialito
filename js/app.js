@@ -857,7 +857,6 @@ function actividadesDe(m) {
   }
   // El laboratorio es una actividad autónoma: aparece una sola vez en las materias de Biología.
   if (/biolog/i.test((m.id || '') + ' ' + (m.nombre || ''))) {
-    lista.push({ clave: 'bases', titulo: ACTIVIDADES.bases.titulo, icono: ACTIVIDADES.bases.icono, tema: null });
     lista.push({ clave: 'operones', titulo: ACTIVIDADES.operones.titulo, icono: ACTIVIDADES.operones.icono, tema: null });
     lista.push({ clave: 'cromosomas', titulo: ACTIVIDADES.cromosomas.titulo, icono: ACTIVIDADES.cromosomas.icono, tema: null });
     lista.push({ clave: 'comunicacion', titulo: ACTIVIDADES.comunicacion.titulo, icono: ACTIVIDADES.comunicacion.icono, tema: null });
