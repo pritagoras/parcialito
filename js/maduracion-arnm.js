@@ -47,10 +47,15 @@ export function abrirMaduracionARNm({app, volver}) {
 
   function dibujo() {
     const alternativo = paso === 3;
-    const exons = alternativo && isoforma === 'B'
-      ? [{x:95,w:85,t:'E1',c:'#4c8dff'},{x:270,w:85,t:'E2',c:'#4c8dff'},{x:445,w:85,t:'E4',c:'#ff8bb6'},{x:620,w:85,t:'E5',c:'#4c8dff'}]
-      : [{x:95,w:85,t:'E1',c:'#4c8dff'},{x:270,w:85,t:'E2',c:'#4c8dff'},{x:445,w:85,t:alternativo?'E3':'E3',c:alternativo?'#ff8bb6':'#4c8dff'},{x:620,w:85,t:'E4',c:'#4c8dff'}];
-    const introns = [{x:180,w:90,t:'I1'},{x:355,w:90,t:'I2'},{x:530,w:90,t:alternativo?'I3':'I3'}];
+    const compacta = paso >= 2;
+    const exons = alternativo
+      ? (isoforma === 'B'
+        ? [{x:95,w:85,t:'E1',c:'#4c8dff'},{x:190,w:85,t:'E2',c:'#4c8dff'},{x:285,w:85,t:'E4',c:'#ff8bb6'},{x:380,w:85,t:'E5',c:'#4c8dff'}]
+        : [{x:95,w:85,t:'E1',c:'#4c8dff'},{x:190,w:85,t:'E2',c:'#4c8dff'},{x:285,w:85,t:'E3',c:'#ff8bb6'},{x:380,w:85,t:'E5',c:'#4c8dff'}])
+      : compacta
+        ? [{x:95,w:85,t:'E1',c:'#4c8dff'},{x:190,w:85,t:'E2',c:'#4c8dff'},{x:285,w:85,t:'E3',c:'#4c8dff'},{x:380,w:85,t:'E4',c:'#4c8dff'}]
+        : [{x:95,w:85,t:'E1',c:'#4c8dff'},{x:270,w:85,t:'E2',c:'#4c8dff'},{x:445,w:85,t:'E3',c:'#4c8dff'},{x:620,w:85,t:'E4',c:'#4c8dff'}];
+    const introns = [{x:180,w:90,t:'I1'},{x:355,w:90,t:'I2'},{x:530,w:90,t:'I3'}];
     const showIntrons = paso < 2;
     const exonMarkup = exons.map(e=>`<g class="mr-exon" data-part="${e.t}" tabindex="0" role="button" aria-label="Seleccionar exón ${e.t}"><rect x="${e.x}" y="139" width="${e.w}" height="44" rx="10" fill="${e.c}" stroke="#d9e8ff" stroke-opacity=".7"/><text x="${e.x+e.w/2}" y="166" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">${e.t}</text></g>`).join('');
     const intronMarkup = introns.map((e,i)=>`<g class="${showIntrons?'mr-intron':'mr-intron sale'}"><path d="M${e.x} 161 H${e.x+e.w}" stroke="#ff9b69" stroke-width="5" stroke-linecap="round" stroke-dasharray="6 7"/><text x="${e.x+e.w/2}" y="123" text-anchor="middle" fill="#ffb18c" font-size="12">${e.t} · intrón</text></g>`).join('');
