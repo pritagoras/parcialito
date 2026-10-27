@@ -95,12 +95,15 @@ function cellSvg(step){
    } else if(earlyA||lateA){
      nuclei='';
      for(let i=0;i<4;i++){
-       const y=130+(i%2)*43;
-       const leftX=earlyA?145-i*5:103+(i%2)*12;
-       const rightX=earlyA?215+i*5:257-(i%2)*12;
+       const y=earlyA?116+i*29:105+i*25;
+       const leftX=earlyA?132+(i%2)*8:82+(i%2)*16;
+       const rightX=earlyA?228-(i%2)*8:278-(i%2)*16;
        const col=['#a99aff','#c7aaff','#63e8c3','#46c9a9'][i];
-       chromosomes+=chrom(leftX,y,.58,-58,col,true);
-       chromosomes+=chrom(rightX,y,.58,58,col,true);
+       // Cada polo recibe una cromátida de cada uno de los cuatro cromosomas duplicados.
+       chromosomes+=chrom(leftX,y,.48,-58,col,true);
+       chromosomes+=chrom(leftX+12,y+8,.48,-58,col,true);
+       chromosomes+=chrom(rightX,y,.48,58,col,true);
+       chromosomes+=chrom(rightX-12,y+8,.48,58,col,true);
      }
    } else {
      nuclei='<circle cx="125" cy="180" r="47" fill="#1b2853" fill-opacity=".48" stroke="#a99aff" stroke-width="2.2"/><circle cx="235" cy="180" r="47" fill="#1b2853" fill-opacity=".48" stroke="#a99aff" stroke-width="2.2"/>';
