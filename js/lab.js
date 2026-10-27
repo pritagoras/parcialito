@@ -877,7 +877,7 @@ function inyectarEstilos() {
  .lab2 .lab-real-view pdbe-molstar{height:420px!important;touch-action:pan-y}
 }
 
-.lab2 .lab-vista{grid-template-columns:228px minmax(0,1fr);gap:18px}
+.lab2 .lab-vista{grid-template-columns:minmax(0,1fr);gap:14px}
 .lab2 .lab-escena{border:1px solid #1b3978;border-radius:20px;background:radial-gradient(ellipse at 51% 43%,rgba(28,68,145,.27),rgba(4,10,28,.12) 66%);box-shadow:inset 0 1px #ffffff0a,0 14px 32px #0003}
 .lab2 .lab-svg{width:100%;max-height:none}
 .lab2 .lab-svg .lab-leader{fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;opacity:.92}
@@ -955,6 +955,7 @@ function inyectarEstilos() {
 @media(min-width:901px){.lab2 .lab-vista{grid-template-columns:224px minmax(0,1fr);gap:22px}}
 @media(min-width:1101px){.lab2 .lab-tarjetas{grid-template-columns:1.2fr 1.1fr 1fr}}
 
+.lab2 .lab-esq{max-width:560px;margin-left:auto;margin-right:auto}
 @media(prefers-reduced-motion:reduce){.lab2 *{animation:none!important;transition:none!important}}
 
 `;
