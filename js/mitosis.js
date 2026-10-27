@@ -73,7 +73,7 @@ function cellSvg(step){
    centrosomes=centrosome(p1[0],p1[1],-28)+centrosome(p2[0],p2[1],35);
    if(!early){
      let targets=[];
-     if(meta){for(let i=0;i<8;i++)targets.push([180+(i%2?10:-10),95+i*24]);}
+     if(meta){for(let i=0;i<4;i++)targets.push([180,130+i*33]);}
      else if(earlyA){for(let i=0;i<6;i++){targets.push([126+i*8,135+(i%3)*23]);targets.push([234-i*8,135+(i%3)*23]);}}
      else if(lateA){for(let i=0;i<6;i++){targets.push([112+(i%3)*12,105+i%3*45]);targets.push([248-(i%3)*12,105+i%3*45]);}}
      else if(telo||cyto){for(let i=0;i<5;i++){targets.push([135+(i%2)*13,145+(i%3)*18]);targets.push([225-(i%2)*13,145+(i%3)*18]);}}
@@ -87,21 +87,26 @@ function cellSvg(step){
    if(early||promet){
      if(early)nuclei='<circle cx="180" cy="180" r="66" fill="#1a2854" fill-opacity=".62" stroke="#a99aff" stroke-width="2.5" stroke-dasharray="5 5"/>';
      else nuclei='<circle cx="180" cy="180" r="66" fill="#1a2854" fill-opacity=".22" stroke="#a99aff" stroke-width="2" stroke-dasharray="5 7"/>';
-     for(let i=0;i<6;i++)chromosomes+=chrom(142+(i%3)*35,150+Math.floor(i/3)*58,.66,(i%3-1)*23,i%2?'#63e8c3':'#a99aff');
+     for(let i=0;i<4;i++)chromosomes+=chrom(143+(i%2)*34,151+Math.floor(i/2)*57,.66,(i%2?18:-18),['#a99aff','#c7aaff','#63e8c3','#46c9a9'][i]);
    } else if(meta){
      nuclei='';
-     for(let i=0;i<8;i++)chromosomes+=chrom(180+(i%2?12:-12),88+i*24,.58,(i%3-1)*12,i%2?'#63e8c3':'#a99aff');
-     labels='<text x="180" y="348" fill="#ffcf78" font-size="10" text-anchor="middle">PLACA METAFÁSICA · ECUADOR</text>';
+     for(let i=0;i<4;i++){const y=130+i*33;const col=['#a99aff','#c7aaff','#63e8c3','#46c9a9'][i];chromosomes+=chrom(180,y,.72,(i%2?8:-8),col);}
+     labels='<text x="180" y="348" fill="#ffcf78" font-size="10" text-anchor="middle">ECUADOR · 2 PARES HOMÓLOGOS</text>';
    } else if(earlyA||lateA){
      nuclei='';
-     for(let i=0;i<6;i++){
-       const y=118+(i%3)*31;
-       chromosomes+=chrom((earlyA?115+i*8:87+(i%3)*15),y,.5,-58,'#a99aff',true);
-       chromosomes+=chrom((earlyA?245-i*8:273-(i%3)*15),y,.5,58,'#63e8c3',true);
+     for(let i=0;i<4;i++){
+       const y=130+(i%2)*43;
+       const leftX=earlyA?145-i*5:103+(i%2)*12;
+       const rightX=earlyA?215+i*5:257-(i%2)*12;
+       const col=['#a99aff','#c7aaff','#63e8c3','#46c9a9'][i];
+       chromosomes+=chrom(leftX,y,.58,-58,col,true);
+       chromosomes+=chrom(rightX,y,.58,58,col,true);
      }
    } else {
      nuclei='<circle cx="125" cy="180" r="47" fill="#1b2853" fill-opacity=".48" stroke="#a99aff" stroke-width="2.2"/><circle cx="235" cy="180" r="47" fill="#1b2853" fill-opacity=".48" stroke="#a99aff" stroke-width="2.2"/>';
-     for(let i=0;i<5;i++){chromosomes+=chrom(113+(i%2)*16,158+(i%3)*19,.4,(i%3-1)*20,'#a99aff')+chrom(223+(i%2)*16,158+(i%3)*19,.4,(i%3-1)*20,'#63e8c3');}
+     const cols=['#a99aff','#c7aaff','#63e8c3','#46c9a9'];
+     for(let i=0;i<4;i++){const y=153+(i%2)*24;chromosomes+=chrom(113+(i%2)*18,y,.36,(i%2?12:-12),cols[i],true)+chrom(223+(i%2)*18,y,.36,(i%2?12:-12),cols[i],true);}
+     labels='<text x="125" y="240" fill="#b9cafa" font-size="8" text-anchor="middle">4 cromosomas</text><text x="235" y="240" fill="#b9cafa" font-size="8" text-anchor="middle">4 cromosomas</text>';
    }
    if(cyto)labels+='<text x="180" y="348" fill="#ff83b5" font-size="10" text-anchor="middle">SURCO DE SEGMENTACIÓN</text>';
  }
