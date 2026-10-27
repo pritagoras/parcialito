@@ -17,9 +17,9 @@ export function abrirTelomeros({app,volver}){
   const top=core+tail;
   const bot='GGCATTGGCATGGCATGGCATGGCATGGCATGGC';
   html+='<text x="22" y="112" fill="#a9c4ef" font-size="12" font-weight="700">Hebra rica en G</text><text x="22" y="132" fill="#dce8ff" font-size="11">5′ → 3′</text>';
-  top.split('').forEach((b,i)=>{const x=150+i*15.2;html+='<rect x="'+x+'" y="94" width="13" height="25" rx="3" fill="'+(i>=core.length?'#55c7ff':'#3279d0')+'"/><text x="'+(x+6.5)+'" y="110" text-anchor="middle" font-size="8.5" font-weight="800" fill="#071326">'+b+'</text>';});
+  top.split('').forEach((b,i)=>{const x=150+i*9.5;html+='<rect x="'+x+'" y="94" width="8.3" height="25" rx="3" fill="'+(i>=core.length?'#55c7ff':'#3279d0')+'"/><text x="'+(x+4.15)+'" y="110" text-anchor="middle" font-size="8.5" font-weight="800" fill="#071326">'+b+'</text>';});
   html+='<text x="22" y="181" fill="#a9c4ef" font-size="12" font-weight="700">Hebra complementaria</text><text x="22" y="201" fill="#dce8ff" font-size="11">3′ ← 5′</text>';
-  bot.split('').forEach((b,i)=>{const x=150+i*15.2;html+='<rect x="'+x+'" y="163" width="13" height="25" rx="3" fill="#d887b7"/><text x="'+(x+6.5)+'" y="179" text-anchor="middle" font-size="8.5" font-weight="800" fill="#071326">'+b+'</text>';});
+  bot.split('').forEach((b,i)=>{const x=150+i*9.5;html+='<rect x="'+x+'" y="163" width="8.3" height="25" rx="3" fill="#d887b7"/><text x="'+(x+6.5)+'" y="179" text-anchor="middle" font-size="8.5" font-weight="800" fill="#071326">'+b+'</text>';});
   if(etapa===0)html+='<path d="M650 145 l16 16 m-16 0 l16 -16" stroke="#ff7f9d" stroke-width="4"/><text x="656" y="183" fill="#ff9fb5" font-size="10" text-anchor="middle">hueco terminal</text>';
   if(etapa>=1)html+='<rect x="490" y="39" width="180" height="40" rx="12" fill="#6044b9" stroke="#c2b1ff" stroke-width="2"/><text x="580" y="56" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">TELOMERASA</text><text x="580" y="70" fill="#e5dcff" font-size="10" text-anchor="middle">ARN molde interno</text><path d="M580 79 Q600 92 630 94" stroke="#c2b1ff" stroke-width="2" stroke-dasharray="4 4" fill="none"/>';
   if(etapa>=2)html+='<path d="M580 89 Q620 72 680 89" stroke="#5de0bd" stroke-width="3" fill="none"/><text x="630" y="66" fill="#7cf0d2" font-size="10" text-anchor="middle">+ TTAGGG</text>';
