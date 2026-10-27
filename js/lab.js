@@ -1,5 +1,5 @@
 import { abrirOperones } from './operones.js?v=20261026-10';
-import { abrirLabReplicacion } from './lab-replicacion.js?v=20261026-4';
+import { abrirLabReplicacion } from './lab-replicacion.js?v=20261027-1';
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
 // Tablero con cuatro secciones: Vista, Explicación, Comparador y Preguntas.
