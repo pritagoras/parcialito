@@ -96,7 +96,7 @@ export function abrirMaduracionARNm({app, volver}) {
     app.querySelector('#mr-back').onclick=volver;
     app.querySelectorAll('[data-step]').forEach(b=>b.onclick=()=>{paso=+b.dataset.step;render();});
     app.querySelector('#mr-prev').onclick=()=>{if(paso>0){paso--;render();}};
-    app.querySelector('#mr-next').onclick=()=>{if(paso<3){paso++;render();}else{app.querySelector('#mr-quiz-card')?.scrollIntoView({behavior:'smooth'});app.querySelector('#mr-quiz')?.scrollIntoView({behavior:'smooth',block:'center'});}});
+    app.querySelector('#mr-next').onclick=()=>{if(paso<3){paso++;render();}else{app.querySelector('#mr-quiz-card')?.scrollIntoView({behavior:'smooth'});app.querySelector('#mr-quiz')?.scrollIntoView({behavior:'smooth',block:'center'});}};
     app.querySelectorAll('[data-iso]').forEach(b=>b.onclick=()=>{isoforma=b.dataset.iso;render();});
     app.querySelectorAll('[data-part]').forEach(el=>{const pick=()=>{seleccionado=el.dataset.part;const note=app.querySelector('#mr-selected');if(note)note.textContent='Seleccionaste '+seleccionado+'. Mirá el color y la posición en el esquema.';};el.addEventListener('click',pick);el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pick();}});});
     paintQuiz();
