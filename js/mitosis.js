@@ -45,26 +45,68 @@ const css = `
 function heroSvg(){return '<svg class="ml-orbit" viewBox="0 0 180 160" role="img" aria-label="Cromosomas durante la división"><defs><linearGradient id="mh" x2="1" y2="1"><stop stop-color="#8d9cff"/><stop offset="1" stop-color="#4c42c8"/></linearGradient></defs><ellipse cx="90" cy="80" rx="73" ry="60" fill="#0d2047" stroke="#4565b0" stroke-dasharray="4 7"/><g class="ml-animated" stroke-linecap="round" stroke-width="15" fill="none"><path d="M55 43L81 91M81 43L55 91" stroke="#6fe5ca"/><path d="M103 60L129 108M129 60L103 108" stroke="url(#mh)"/></g><circle cx="68" cy="67" r="5" fill="#ffcf78"/><circle cx="116" cy="84" r="5" fill="#ffcf78"/></svg>'}
 
 function cellSvg(step){
- const s=FASES[step], stage=s.id; const late=stage==='profase-tardia', meta=stage==='metafase', earlyA=stage==='anafase-temprana', lateA=stage==='anafase-tardia', telo=stage.startsWith('telofase'), cyto=stage.startsWith('citocinesis'), final=stage==='citocinesis-final';
- const nuclei=s.nucleo, sep=earlyA||lateA||telo||cyto, xL=sep?115:180,xR=sep?285:180;
- const chrom=(x,y,scale=1,rotate=0,color='#9b8cff',single=false)=>`<g class="ml-chrom" transform="translate(${x} ${y}) rotate(${rotate}) scale(${scale})" stroke="${color}" stroke-width="7" stroke-linecap="round" fill="none"><path d="${single?'M-7 -21 L7 21':'M-14 -24 L2 0 L-14 24 M14 -24 L-2 0 L14 24'}"/><circle cx="0" cy="0" r="4" fill="#ffce79" stroke="none"/></g>`;
- let body='';
- if(!sep){
-  const count=meta?8:6;
-  for(let i=0;i<count;i++){const x=meta?180+(i%2?15:-15):120+(i%3)*55,y=meta?42+i*30:55+Math.floor(i/3)*85;body+=chrom(x,y,.72,(i%3-1)*13,i%2?'#63e8c3':'#a69aff');}
- }else{
-  const count=6;
-  for(let i=0;i<count;i++){const y=58+(i%3)*43,xx=earlyA?110+i*23:lateA?60+i*22: xL+(i%3)*18;body+=chrom(xx,y,.57,earlyA?-65:lateA?-72:0,'#a69aff',earlyA||lateA);}
-  for(let i=0;i<count;i++){const y=58+(i%3)*43,xx=earlyA?290-i*23:lateA?310-i*22:xR-(i%3)*18;body+=chrom(xx,y,.57,earlyA?65:lateA?72:0,'#63e8c3',earlyA||lateA);}
+ const s=FASES[step], stage=s.id;
+ const promet=stage==='profase-tardia', meta=stage==='metafase';
+ const earlyA=stage==='anafase-temprana', lateA=stage==='anafase-tardia';
+ const telo=stage.startsWith('telofase'), cyto=stage.startsWith('citocinesis');
+ const final=stage==='citocinesis-final', early=stage==='profase-temprana';
+ const split=earlyA||lateA||telo||cyto;
+ const poles=split||promet||meta?[[83,180],[277,180]]:[[112,112],[248,248]];
+ const chrom=(x,y,scale=1,rotate=0,color='#a99aff',single=false)=>'<g class="ml-chrom" transform="translate('+x+' '+y+') rotate('+rotate+') scale('+scale+')" stroke="'+color+'" stroke-width="7" stroke-linecap="round" fill="none"><path d="'+(single?'M-5 -18 L5 18':'M-12 -21 L2 0 L-12 21 M12 -21 L-2 0 L12 21')+'"/><circle cx="0" cy="0" r="4" fill="#ffcf78" stroke="none"/></g>';
+ let cell='', fibers='', centrosomes='', nuclei='', chromosomes='', labels='';
+ const centrosome=(x,y,angle)=>'<g transform="translate('+x+' '+y+') rotate('+angle+')"><rect x="-11" y="-4" width="22" height="8" rx="4" fill="#ffcf78" stroke="#ffe4a7" stroke-width="1.2"/><rect x="-4" y="-11" width="8" height="22" rx="4" fill="#ffcf78" stroke="#ffe4a7" stroke-width="1.2"/><circle r="3" fill="#fff1c9"/></g>';
+ if(final){
+   cell='<circle cx="105" cy="180" r="77" fill="#10234a" fill-opacity=".75" stroke="#5475c6" stroke-width="3"/><circle cx="255" cy="180" r="77" fill="#10234a" fill-opacity=".75" stroke="#5475c6" stroke-width="3"/>';
+   nuclei='<circle cx="105" cy="180" r="37" fill="#1c2853" stroke="#a99aff" stroke-width="2"/><circle cx="255" cy="180" r="37" fill="#1c2853" stroke="#a99aff" stroke-width="2"/>';
+   chromosomes=chrom(92,171,.42,-25,'#a99aff')+chrom(116,188,.42,25,'#63e8c3')+chrom(242,171,.42,-25,'#a99aff')+chrom(266,188,.42,25,'#63e8c3');
+   labels='<text x="105" y="278" fill="#b9cafa" font-size="10" text-anchor="middle">CÉLULA HIJA 1</text><text x="255" y="278" fill="#b9cafa" font-size="10" text-anchor="middle">CÉLULA HIJA 2</text>';
+ } else {
+   const radius=cyto?145:151;
+   let outline;
+   if(cyto&&!final){
+     outline='<path d="M180 29 C263 29 326 91 326 180 C326 269 263 331 180 331 C97 331 34 269 34 180 C34 151 67 151 67 180 C67 209 97 209 97 180 C97 91 97 29 180 29Z" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/>';
+     // The furrow is drawn over the circular membrane to emphasize constriction without hiding the interior.
+     outline='<path d="M180 29 C263 29 326 91 326 180 C326 269 263 331 180 331 C97 331 34 269 34 180 C34 151 70 151 70 180 C70 209 97 209 97 180 C97 91 97 29 180 29Z" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/>';
+   } else outline='<circle cx="180" cy="180" r="'+radius+'" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/>';
+   cell=outline;
+   const p1=poles[0],p2=poles[1];
+   centrosomes=centrosome(p1[0],p1[1],-28)+centrosome(p2[0],p2[1],35);
+   if(!early){
+     let targets=[];
+     if(meta){for(let i=0;i<8;i++)targets.push([180+(i%2?10:-10),95+i*24]);}
+     else if(earlyA){for(let i=0;i<6;i++){targets.push([126+i*8,135+(i%3)*23]);targets.push([234-i*8,135+(i%3)*23]);}}
+     else if(lateA){for(let i=0;i<6;i++){targets.push([112+(i%3)*12,105+i%3*45]);targets.push([248-(i%3)*12,105+i%3*45]);}}
+     else if(telo||cyto){for(let i=0;i<5;i++){targets.push([135+(i%2)*13,145+(i%3)*18]);targets.push([225-(i%2)*13,145+(i%3)*18]);}}
+     else {for(let i=0;i<6;i++)targets.push([135+(i%3)*22,135+Math.floor(i/3)*65]);}
+     fibers='<g stroke="#54cfe6" stroke-width="1.35" opacity=".66" fill="none">';
+     targets.forEach(([x,y],i)=>{fibers+='<path d="M'+p1[0]+' '+p1[1]+' Q'+(140+i*2)+' '+(y-22)+' '+x+' '+y+'"/><path d="M'+p2[0]+' '+p2[1]+' Q'+(220-i*2)+' '+(y+22)+' '+x+' '+y+'"/>';});
+     // Interpolar microtúbulos polares, visibles aunque no estén unidos a cromosomas.
+     for(let i=0;i<5;i++){fibers+='<path d="M'+p1[0]+' '+p1[1]+' Q180 '+(105+i*18)+' '+p2[0]+' '+p2[1]+'"/>';}
+     fibers+='</g>';
+   }
+   if(early||promet){
+     if(early)nuclei='<circle cx="180" cy="180" r="66" fill="#1a2854" fill-opacity=".62" stroke="#a99aff" stroke-width="2.5" stroke-dasharray="5 5"/>';
+     else nuclei='<circle cx="180" cy="180" r="66" fill="#1a2854" fill-opacity=".22" stroke="#a99aff" stroke-width="2" stroke-dasharray="5 7"/>';
+     for(let i=0;i<6;i++)chromosomes+=chrom(142+(i%3)*35,150+Math.floor(i/3)*58,.66,(i%3-1)*23,i%2?'#63e8c3':'#a99aff');
+   } else if(meta){
+     nuclei='';
+     for(let i=0;i<8;i++)chromosomes+=chrom(180+(i%2?12:-12),88+i*24,.58,(i%3-1)*12,i%2?'#63e8c3':'#a99aff');
+     labels='<text x="180" y="348" fill="#ffcf78" font-size="10" text-anchor="middle">PLACA METAFÁSICA · ECUADOR</text>';
+   } else if(earlyA||lateA){
+     nuclei='';
+     for(let i=0;i<6;i++){
+       const y=118+(i%3)*31;
+       chromosomes+=chrom((earlyA?115+i*8:87+(i%3)*15),y,.5,-58,'#a99aff',true);
+       chromosomes+=chrom((earlyA?245-i*8:273-(i%3)*15),y,.5,58,'#63e8c3',true);
+     }
+   } else {
+     nuclei='<circle cx="125" cy="180" r="47" fill="#1b2853" fill-opacity=".48" stroke="#a99aff" stroke-width="2.2"/><circle cx="235" cy="180" r="47" fill="#1b2853" fill-opacity=".48" stroke="#a99aff" stroke-width="2.2"/>';
+     for(let i=0;i<5;i++){chromosomes+=chrom(113+(i%2)*16,158+(i%3)*19,.4,(i%3-1)*20,'#a99aff')+chrom(223+(i%2)*16,158+(i%3)*19,.4,(i%3-1)*20,'#63e8c3');}
+   }
+   if(cyto)labels+='<text x="180" y="348" fill="#ff83b5" font-size="10" text-anchor="middle">SURCO DE SEGMENTACIÓN</text>';
  }
- let nucleus='';
- if(nuclei){const ns=sep?[[xL,80],[xR,80]]:[[180,80]];nucleus=ns.map(([x,y])=>'<ellipse cx="'+x+'" cy="'+y+'" rx="'+(cyto?(final?43:35):48)+'" ry="'+(cyto?(final?48:39):52)+'" fill="#16244b" fill-opacity=".32" stroke="#9ba8ff" stroke-width="2.2" stroke-dasharray="'+(stage==='profase-temprana'?'4 5':'none')+'"/>').join('');}
- const spindle=(!nuclei||late||meta||sep)?'<g stroke="#54cfe6" stroke-width="1.4" opacity=".65">'+Array.from({length:8},(_,i)=>'<path d="M24 28 Q180 '+(i*20+15)+' 336 28"/><path d="M24 132 Q180 '+(i*20+15)+' 336 132"/>').join('')+'</g>':'';
- const furrow=cyto?'<path d="M180 17 Q'+(final?'143 80 180 143':'160 80 180 143')+'" stroke="#ff83b5" stroke-width="7" fill="none" stroke-linecap="round"/>':'';
- const cell=final?'<path d="M25 80 Q25 25 80 25 Q130 25 150 80 Q130 135 80 135 Q25 135 25 80 M210 80 Q230 25 280 25 Q335 25 335 80 Q335 135 280 135 Q230 135 210 80" fill="#10234a" stroke="#5475c6" stroke-width="2"/>':'<ellipse cx="180" cy="80" rx="'+(cyto?155:155)+'" ry="66" fill="#10234a" fill-opacity=".4" stroke="#5475c6" stroke-width="2.5"/>';
- const mid=meta?'<line x1="180" y1="15" x2="180" y2="145" stroke="#ffcf78" stroke-width="1.5" stroke-dasharray="4 5" opacity=".8"/>':'';
- const labels=meta?'<text x="180" y="157" fill="#ffcf78" font-size="9" text-anchor="middle">PLACA METAFÁSICA</text>':cyto?'<text x="180" y="157" fill="#ff83b5" font-size="9" text-anchor="middle">SURCO DE SEGMENTACIÓN</text>':'';
- return '<svg viewBox="0 0 360 170" role="img" aria-label="'+s.nombre+'">'+cell+spindle+nucleus+body+mid+furrow+labels+'</svg>';
+ const mid=meta?'<line x1="180" y1="43" x2="180" y2="317" stroke="#ffcf78" stroke-width="1.4" stroke-dasharray="4 6" opacity=".72"/>':'';
+ return '<svg viewBox="0 0 360 360" role="img" aria-label="'+s.nombre+': célula circular, huso mitótico, centrosomas y cromosomas"><defs><radialGradient id="mlcyto"><stop stop-color="#1c376c"/><stop offset="1" stop-color="#0a1730"/></radialGradient></defs>'+cell+fibers+nuclei+chromosomes+centrosomes+mid+labels+'</svg>';
 }
 
 export function abrirMitosis({app,volver}){
