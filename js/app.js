@@ -12,7 +12,7 @@ import { infoDispositivo } from './dispositivo.js?v=dev';
 import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js?v=dev';
 import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js?v=dev';
 import { abrirHorquilla, TITULO as TITULO_HORQUILLA } from './horquilla.js?v=dev';
-import { abrirBases, TITULO as TITULO_BASES } from './bases.js?v=dev';
+import { abrirBases, TITULO as TITULO_BASES } from './bases.js?v=20261027-1';
 import { abrirCrucigrama } from './crucigrama.js?v=dev';
 import { abrirOperones, TITULO as TITULO_OPERONES } from './operones.js?v=20261026-9';
 import { abrirCromosomas, TITULO as TITULO_CROMOSOMAS } from './cromosomas.js?v=20261026-3';
@@ -22,6 +22,7 @@ import { abrirLacTrp, TITULO as TITULO_LAC_TRP } from './lac-vs-trp.js?v=2026102
 import { abrirComparadorComunicacion, TITULO as TITULO_COMPARADOR_COMUNICACION } from './comparador-comunicacion.js?v=20261026-1';
 import { abrirComparadores, TITULO as TITULO_COMPARADORES } from './comparadores.js?v=20261026-1';
 import { abrirLab } from './lab.js?v=20261027-2';
+import { abrirTelomeros, TITULO as TITULO_TELOMEROS } from './telomeros.js?v=20261027-1';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -32,6 +33,7 @@ const ACTIVIDADES = {
   cuadro: { titulo: TITULO_CUADRO, icono: '📊', abrir: abrirCuadro },
   horquilla: { titulo: TITULO_HORQUILLA, icono: '🧪', abrir: abrirHorquilla },
   bases: { titulo: TITULO_BASES, icono: '🧬', abrir: abrirBases },
+  telomeros: { titulo: TITULO_TELOMEROS, icono: '🧢', abrir: abrirTelomeros },
   operones: { titulo: TITULO_OPERONES, icono: '🧫', abrir: abrirOperones },
   cromosomas: { titulo: TITULO_CROMOSOMAS, icono: '🧬', abrir: abrirCromosomas },
   comunicacion: { titulo: TITULO_COMUNICACION, icono: '⚡', abrir: abrirComunicacion },
@@ -855,6 +857,7 @@ function actividadesDe(m) {
   }
   // El laboratorio es una actividad autónoma: aparece una sola vez en las materias de Biología.
   if (/biolog/i.test((m.id || '') + ' ' + (m.nombre || ''))) {
+    lista.push({ clave: 'bases', titulo: ACTIVIDADES.bases.titulo, icono: ACTIVIDADES.bases.icono, tema: null });
     lista.push({ clave: 'operones', titulo: ACTIVIDADES.operones.titulo, icono: ACTIVIDADES.operones.icono, tema: null });
     lista.push({ clave: 'cromosomas', titulo: ACTIVIDADES.cromosomas.titulo, icono: ACTIVIDADES.cromosomas.icono, tema: null });
     lista.push({ clave: 'comunicacion', titulo: ACTIVIDADES.comunicacion.titulo, icono: ACTIVIDADES.comunicacion.icono, tema: null });
