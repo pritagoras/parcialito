@@ -1,7 +1,6 @@
 import { abrirOperones } from './operones.js?v=20261026-10';
 import { abrirLabReplicacion } from './lab-replicacion.js?v=20261027-1';
-import { abrirMaduracionARNm } from './maduracion-arnm.js?v=20261027-1';
-import { abrirTranscripcion } from './transcripcion.js?v=20261027-1';
+import { abrirTranscripcion } from './transcripcion.js?v=20261027-2';
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
 // Tablero con cuatro secciones: Vista, Explicación, Comparador y Preguntas.
@@ -353,7 +352,6 @@ export function abrirLab({ app, volver }) {
       if(t.id==='factores') abrirFactores({app,volver:mostrarCatalogo});
       else if(t.id==='operones') abrirOperones({app,volver:mostrarCatalogo});
       else if(t.id==='replicacion') abrirLabReplicacion({app,volver:mostrarCatalogo});
-      else if(t.id==='maduracion') abrirMaduracionARNm({app,volver:mostrarCatalogo});
       else if(t.id==='transcripcion') abrirTranscripcion({app,volver:mostrarCatalogo});
       else mostrarEspacio(t);
     }));
