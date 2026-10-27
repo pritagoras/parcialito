@@ -16,7 +16,7 @@ import { estado, guardar } from './store.js?v=dev';
 import { Sonido } from './sonido.js?v=dev';
 import { lanzarConfeti } from './confeti.js?v=dev';
 
-export const TITULO = 'Laboratorio de bases: complementariedad';
+export const TITULO = 'Laboratorio de bases';
 
 // ==========================================================
 // DATOS
@@ -45,7 +45,7 @@ const PROC = {
     nota: 'El anticodón del ARNt se aparea con el codón del ARNm de forma antiparalela: A–U y G–C.',
   },
 };
-const PROC_CHIPS = [['mix', 'Mixto'], ['dup', 'Duplicación'], ['trans', 'Transcripción'], ['tel', 'Telomerasa'], ['anti', 'Anticodón'], ['libre', '⚙️ Elegir molde y producto']];
+const PROC_CHIPS = [['mix', 'Mixto'], ['dup', 'Duplicación'], ['trans', 'Transcripción'], ['anti', 'Anticodón'], ['libre', '⚙️ Elegir molde y producto']];
 
 const COLOR = { A: '#FF8A5C', T: '#FFB938', U: '#D58BFF', G: '#5CC8FF', C: '#4FE0A0' };
 const ABC = { ADN: ['A', 'C', 'G', 'T'], ARN: ['A', 'C', 'G', 'U'] };
@@ -225,7 +225,6 @@ export function abrirBases({ app, volver }) {
     ['flujo', '🎲 Flujo'],
     ['cod', '🔤 Codones'],
     ['adnarn', '⚗️ ADN vs ARN'],
-    ['tel', '🧢 Telómeros'],
   ];
   let modo = 'comp';
   let procSel = 'mix';
@@ -330,14 +329,14 @@ export function abrirBases({ app, volver }) {
   }
   function iniciarModo() {
     S = { id: Math.random() };
-    ({ comp: vComp, flujo: vFlujo, cod: vCod, adnarn: vAdnArn, tel: vTel })[modo]();
+    ({ comp: vComp, flujo: vFlujo, cod: vCod, adnarn: vAdnArn })[modo]();
   }
 
   // ======================================================
   // Hebras (render común a Complementar y Flujo)
   // ======================================================
   function nuevaHebra(largoFlujo) {
-    const clave = procSel === 'mix' ? azar(['dup', 'trans', 'tel', 'anti']) : procSel;
+    const clave = procSel === 'mix' ? azar(['dup', 'trans', 'anti']) : procSel;
     let P = PROC[clave];
     if (clave === 'libre') {
       const map = { G: 'C', C: 'G' };
@@ -787,20 +786,7 @@ export function abrirBases({ app, volver }) {
     correrCola(qs, 'adnarn');
   }
 
-  // ======================================================
-  // Modo 5: Telómeros
-  // ======================================================
-  function vTel() {
-    const qs = mezclar(TELOM).slice(0, POR_RONDA).map((q) => ({
-      pista: 'Telómeros y telomerasa',
-      html: `<p class="texto">${esc(q.t)}</p>`,
-      ops: [{ t: q.ok, ok: true }, ...q.mal.map((t) => ({ t, ok: false }))],
-      mono: /^5′-[ACGTU]+-3′$/.test(q.ok),
-      e: esc(q.e),
-    }));
-    qs[0].antes = `<p class="ba-nota">Tip: practicá la telomerasa en <b>Complementar</b> o <b>Flujo</b> con el proceso “Telomerasa”.</p>`;
-    correrCola(qs, 'telomeros');
-  }
+  // Los telómeros se estudian en su simulación propia dentro del laboratorio de duplicación.
 
   // ---------- arranque ----------
   nuevaRonda();
