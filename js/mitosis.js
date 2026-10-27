@@ -51,7 +51,7 @@ function cellSvg(step){
  const telo=stage.startsWith('telofase'), cyto=stage.startsWith('citocinesis'), final=stage==='citocinesis-final';
  const colors=['#a99aff','#c7aaff','#63e8c3','#46c9a9'];
  const names=['Homólogo 1 · par A','Homólogo 2 · par A','Homólogo 1 · par B','Homólogo 2 · par B'];
- const chrom=(x,y,scale=1,angle=0,color='#a99aff',single=false)=>'<g transform="translate('+x+' '+y+') rotate('+angle+') scale('+scale+')"><path d="'+(single?'M-5 -19 L5 19':'M-12 -21 L0 0 L-12 21 M12 -21 L0 0 L12 21')+'" stroke="'+color+'" stroke-width="7" stroke-linecap="round" fill="none"/><ellipse cx="0" cy="0" rx="5.2" ry="6.5" fill="#ffcf78" stroke="#fff0c2" stroke-width="1.2"/><ellipse cx="0" cy="0" rx="2.4" ry="3.7" fill="#fff8dd" stroke="#d9a64b" stroke-width=".8"/></g>';
+ const chrom=(x,y,scale=1,angle=0,color='#a99aff',single=false)=>'<g transform="translate('+x+' '+y+') rotate('+angle+') scale('+scale+')"><path d="'+(single?'M-5 -19 L5 19':'M-12 -21 L0 0 L-12 21 M12 -21 L0 0 L12 21')+'" stroke="'+color+'" stroke-width="7" stroke-linecap="round" fill="none"/></g>';
  const cent=(x,y,angle)=>'<g transform="translate('+x+' '+y+') rotate('+angle+')"><rect x="-11" y="-4" width="22" height="8" rx="4" fill="#ffcf78" stroke="#ffe4a7"/><rect x="-4" y="-11" width="8" height="22" rx="4" fill="#ffcf78" stroke="#ffe4a7"/></g>';
  let cell='', nuclei='', fibers='', chromosomes='', centrosomes='', labels='',mid='';
  if(final){
@@ -103,7 +103,7 @@ function cellSvg(step){
      labels='<text x="112" y="245" fill="#c5d2f4" font-size="9" text-anchor="middle">2n = 4</text><text x="248" y="245" fill="#c5d2f4" font-size="9" text-anchor="middle">2n = 4</text>';
    }
  }
- const kinLabel=meta?'<g font-size="9" fill="#fff0c2"><path d="M193 150 L225 133" stroke="#ffcf78" stroke-width="1.2"/><text x="228" y="132">Centrómero</text><path d="M187 151 L226 164" stroke="#fff8dd" stroke-width="1.2"/><text x="229" y="168">Cinetocoro</text><text x="180" y="65" text-anchor="middle">Cinetocoros hermanos orientados a polos opuestos</text></g>':'';
+ const kinLabel=meta?'<text x="180" y="65" fill="#fff0c2" font-size="10" text-anchor="middle">Cinetocoros unidos a polos opuestos</text>':'';
  return '<svg viewBox="0 0 360 360" role="img" aria-label="'+s.nombre+': dos pares homólogos identificados por color, cromátidas hermanas, cinetocoros y huso mitótico"><defs><radialGradient id="mlcyto"><stop stop-color="#1c376c"/><stop offset="1" stop-color="#0a1730"/></radialGradient></defs>'+cell+fibers+nuclei+chromosomes+centrosomes+mid+labels+kinLabel+'</svg>';
 }
 export function abrirMitosis({app,volver}){
