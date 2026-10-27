@@ -16,11 +16,11 @@ import { abrirBases, TITULO as TITULO_BASES } from './bases.js?v=20261027-1';
 import { abrirCrucigrama } from './crucigrama.js?v=dev';
 import { abrirOperones, TITULO as TITULO_OPERONES } from './operones.js?v=20261026-9';
 import { abrirComunicacion, TITULO as TITULO_COMUNICACION } from './comunicacion.js?v=20261027-3';
-import { abrirProteinaG, TITULO as TITULO_PROTEINA_G } from './proteina-g.js?v=20261026-1';
+import { abrirProteinaG, TITULO as TITULO_PROTEINA_G } from './proteina-g.js?v=20261027-2';
 import { abrirLacTrp, TITULO as TITULO_LAC_TRP } from './lac-vs-trp.js?v=20261026-1';
 import { abrirComparadorComunicacion, TITULO as TITULO_COMPARADOR_COMUNICACION } from './comparador-comunicacion.js?v=20261026-1';
 import { abrirComparadores, TITULO as TITULO_COMPARADORES } from './comparadores.js?v=20261026-1';
-import { abrirLab } from './lab.js?v=20261027-7';
+import { abrirLab } from './lab.js?v=20261027-8';
 import { abrirTelomeros, TITULO as TITULO_TELOMEROS } from './telomeros.js?v=20261027-1';
 
 const app = document.getElementById('app');
