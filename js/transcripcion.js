@@ -1,163 +1,121 @@
-// Parcialito LAB · Transcripción
-// Modelo interactivo del paso de la información del ADN al ARN: iniciación, elongación y terminación.
+// Parcialito LAB · Transcripción integrada: procariotas, eucariotas y maduración del ARNm.
 export const TITULO_TRANSCRIPCION = 'Transcripción: del ADN al ARN';
 
-const PASOS = [
-  { id:'inicio', titulo:'01 · Iniciación', corto:'Iniciación', color:'#ffc66d',
-    texto:'La ARN polimerasa y los factores de transcripción reconocen el promotor y forman el complejo de iniciación. En eucariotas, la ARN polimerasa II transcribe los genes que producen pre-ARNm.',
-    clave:'El promotor indica dónde se organiza el inicio; no se copia íntegramente como parte del ARN.' },
-  { id:'apertura', titulo:'02 · Apertura local', corto:'Apertura', color:'#5cc8ff',
-    texto:'El ADN se abre localmente y deja expuesta la hebra molde. La polimerasa lee esa hebra en sentido 3′→5′ para sintetizar ARN en sentido 5′→3′.',
-    clave:'Se separa un tramo pequeño de ADN; el resto de la doble hélice permanece unido.' },
-  { id:'elongacion', titulo:'03 · Elongación', corto:'Elongación', color:'#9b7bff',
-    texto:'La ARN polimerasa avanza por la hebra molde e incorpora ribonucleótidos complementarios. La cadena de ARN se alarga por su extremo 3′ y usa uracilo (U) en lugar de timina (T).',
-    clave:'El ARN nuevo es complementario al molde y coincide con la hebra codificante salvo que U reemplaza a T.' },
-  { id:'terminacion', titulo:'04 · Terminación', corto:'Terminación', color:'#ff7aa8',
-    texto:'Al alcanzar las señales de terminación propias del sistema, el transcripto se libera y la polimerasa se separa del ADN. En eucariotas, el transcripto primario que dará lugar al ARNm todavía debe madurar.',
-    clave:'La transcripción produce ARN; no produce una proteína. En genes eucariotas, el producto inicial suele ser pre-ARNm.' }
+const ETAPAS = [
+ {id:'inicio',nombre:'Iniciación',texto:'La ARN polimerasa reconoce el promotor con ayuda de proteínas de inicio. En bacterias, el factor sigma dirige a la polimerasa hacia promotores; en eucariotas, los factores generales de transcripción ensamblan el complejo correspondiente.',clave:'El promotor orienta el inicio; normalmente no se transcribe como parte del ARN.'},
+ {id:'apertura',nombre:'Apertura local',texto:'Se abre una burbuja pequeña de ADN. La hebra molde queda expuesta y la polimerasa la lee en sentido 3′→5′. La topoisomerasa no fabrica ARN: reduce la tensión topológica que se acumula en el ADN mientras se desplaza la maquinaria.',clave:'La topoisomerasa alivia superenrollamientos; la helicasa no es una etapa universal separada de la ARN polimerasa.'},
+ {id:'elongacion',nombre:'Elongación',texto:'La polimerasa incorpora ATP, GTP, CTP o UTP según la complementariedad con la hebra molde. Cada incorporación libera pirofosfato (PPi); la pirofosfatasa inorgánica puede hidrolizarlo a fosfato inorgánico y favorecer termodinámicamente el avance global.',clave:'Molde 3′→5′; ARN nuevo 5′→3′. En el ARN se usa U, no T.'},
+ {id:'terminacion',nombre:'Terminación',texto:'La transcripción termina por señales específicas. En bacterias, la terminación puede ser dependiente de Rho o intrínseca; en eucariotas, los mecanismos varían según la polimerasa y el tipo de transcripto. El ARN se libera y la polimerasa se recicla.',clave:'Transcripción produce ARN, no proteína. En eucariotas, el pre-ARNm suele requerir maduración.'}
 ];
 
-const BASES = [
-  ['A','U','#ffc66d'], ['T','A','#5cc8ff'], ['C','G','#4fe0a0'], ['G','C','#ff7aa8'],
-  ['T','A','#5cc8ff'], ['A','U','#ffc66d'], ['G','C','#ff7aa8'], ['C','G','#4fe0a0'],
-  ['A','U','#ffc66d'], ['C','G','#4fe0a0'], ['T','A','#5cc8ff'], ['G','C','#ff7aa8']
+const SISTEMAS = {
+ procariota:{nombre:'Procariotas (modelo bacteriano)',sub:'Una ARN polimerasa principal',detalle:'En bacterias, una ARN polimerasa central (α₂ββ′ω) se asocia con un factor sigma para reconocer promotores. Esa maquinaria transcribe ARNm, ARNr, ARNt y otros ARN. La transcripción ocurre en el citoplasma y puede acoplarse a la traducción.',puntos:['No hay núcleo: ADN y ribosomas comparten el compartimento celular.','El ARNm suele requerir menos procesamiento que el eucariota; no lleva cap 5′ típico ni cola poli-A estabilizadora equivalente.','Los ARNm pueden ser policistrónicos: un transcripto puede contener varios marcos de lectura.'],color:'#5ee5bd'},
+ eucariota:{nombre:'Eucariotas (núcleo)',sub:'Varias ARN polimerasas nucleares',detalle:'La transcripción nuclear está separada espacialmente de la traducción. La ARN polimerasa II produce pre-ARNm y numerosos ARN reguladores; el pre-ARNm se procesa antes de exportarse al citoplasma.',puntos:['El ADN está asociado a cromatina y el acceso depende de regulación y remodelado.','El pre-ARNm suele recibir cap 5′, splicing y corte más poliadenilación 3′.','Transcripción y traducción están separadas por la envoltura nuclear.'],color:'#8f83ff'}
+};
+
+const POLS = [
+ {id:'polI',titulo:'ARN polimerasa I',lugar:'Núcleo · nucléolo',producto:'Pre-ARNr 45S',destino:'Origina ARNr 18S, 5,8S y 28S tras procesamiento.',color:'#ffc66d'},
+ {id:'polII',titulo:'ARN polimerasa II',lugar:'Núcleo',producto:'Pre-ARNm',destino:'Produce los precursores de la mayoría de proteínas; también muchos snRNA, miRNA y lncRNA.',color:'#8f83ff'},
+ {id:'polIII',titulo:'ARN polimerasa III',lugar:'Núcleo',producto:'ARNt y ARNr 5S',destino:'También sintetiza algunos ARN pequeños. El ARNt se procesa antes de funcionar en traducción.',color:'#5cc8ff'}
 ];
-let paso = 0, timer = null, reproduciendo = false;
+const MADURACION = [
+ {id:'cap',titulo:'Cap 5′',color:'#ffc66d',texto:'Se añade una 7-metilguanosina al extremo 5′ mediante un enlace inusual 5′–5′ trifosfato. Contribuye a proteger el transcripto y a su reconocimiento para exportación e inicio de traducción.',clave:'Cap 5′ = nucleótido modificado añadido; no es una larga secuencia de adeninas.'},
+ {id:'splicing',titulo:'Splicing',color:'#8f83ff',texto:'El espliceosoma reconoce sitios de empalme y elimina intrones del pre-ARNm, uniendo exones. El proceso debe mantener el marco y las uniones correctas para producir un ARN funcional.',clave:'Intrones fuera; exones unidos. No todos los ARN eucariotas se procesan de la misma manera.'},
+ {id:'alternativo',titulo:'Splicing alternativo',color:'#ff7aa8',texto:'Distintas combinaciones de exones pueden conservarse en transcritos maduros provenientes de un mismo gen. Así, un gen puede originar variantes de ARN y, en muchos casos, diferentes isoformas proteicas.',clave:'Un mismo gen puede generar más de una variante de ARNm.'},
+ {id:'poliA',titulo:'Corte y cola poli-A',color:'#5ee5bd',texto:'El extremo 3′ del pre-ARNm se corta tras una señal de poliadenilación; la poli-A polimerasa agrega adeninas que no se copian directamente desde una larga secuencia de T del ADN molde. La cola contribuye a estabilidad, exportación y regulación de la vida media.',clave:'La cola poli-A se añade al extremo 3′ después del corte.'}
+];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let timer=null;
 
-const esc = (s) => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const reducirMovimiento = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-export function abrirTranscripcion({app, volver}) {
-  detener();
-  inyectarEstilos();
-  app.innerHTML = `
-  <main class="trn">
-    <header class="trn-head">
-      <button class="trn-back" type="button" data-volver>← Laboratorio</button>
-      <div class="trn-kicker">PARCIALITO LAB · GENÉTICA MOLECULAR</div>
-      <h1>Transcripción: del ADN al ARN</h1>
-      <p>Seguí cómo la ARN polimerasa usa una hebra de ADN como molde para producir una cadena de ARN, paso a paso.</p>
-    </header>
-    <nav class="trn-tabs" aria-label="Modos del laboratorio">
-      <button type="button" class="act" data-modo="modelo">🧬 Modelo animado</button>
-      <button type="button" data-modo="guia">📖 Guía del proceso</button>
-      <button type="button" data-modo="quiz">❓ Comprobá lo aprendido</button>
-    </nav>
-    <section data-vista="modelo">
-      <div class="trn-layout">
-        <aside class="trn-panel">
-          <span class="trn-label">RECORRIDO</span>
-          <div class="trn-pasos" data-pasos></div>
-          <div class="trn-controls">
-            <button type="button" data-play>▶ Reproducir</button>
-            <div><button type="button" data-prev aria-label="Paso anterior">←</button><button type="button" data-next aria-label="Paso siguiente">Siguiente →</button></div>
-            <button type="button" class="trn-reset" data-reset>↺ Reiniciar recorrido</button>
-          </div>
-        </aside>
-        <div class="trn-scene-wrap">
-          <div class="trn-scene-head"><span class="trn-live" data-live>ETAPA 01 / 04</span><span class="trn-legend"><i></i> ADN <i></i> ARN <i></i> Polimerasa</span></div>
-          <div class="trn-scene" data-scene></div>
-          <div class="trn-caption"><span class="trn-stepnum" data-num>01</span><div><h2 data-title></h2><p data-text></p><strong data-clave></strong></div></div>
-        </div>
-      </div>
-    </section>
-    <section data-vista="guia" hidden>
-      <div class="trn-guide" data-guide></div>
-      <div class="trn-note"><b>Direccionalidad esencial</b><span>La ARN polimerasa lee la hebra molde 3′→5′ y sintetiza el ARN 5′→3′. La síntesis de ácidos nucleicos siempre ocurre agregando nucleótidos al extremo 3′ de la cadena nueva.</span></div>
-    </section>
-    <section data-vista="quiz" hidden>
-      <div class="trn-quiz"><div class="trn-label">PREGUNTA RÁPIDA</div><h2 data-q></h2><div class="trn-options" data-options></div><p class="trn-feedback" data-feedback aria-live="polite"></p><button type="button" data-qnext>Siguiente pregunta →</button></div>
-    </section>
-    <footer class="trn-foot"><span>TRANSCRIPCIÓN ≠ TRADUCCIÓN</span><p>La transcripción copia información del ADN en ARN. La maduración del pre-ARNm es un proceso posterior, conectado con este laboratorio.</p></footer>
-  </main>`;
-
-  const root=app.querySelector('.trn');
-  root.querySelector('[data-volver]').addEventListener('click',()=>{detener();volver();});
-  root.querySelectorAll('[data-modo]').forEach(b=>b.addEventListener('click',()=>{
-    root.querySelectorAll('[data-modo]').forEach(x=>x.classList.toggle('act',x===b));
-    root.querySelectorAll('[data-vista]').forEach(v=>v.hidden=v.dataset.vista!==b.dataset.modo);
-    if(b.dataset.modo!=='modelo') detener();
-  }));
-  root.querySelector('[data-play]').addEventListener('click',()=>reproduciendo?detener():reproducir());
-  root.querySelector('[data-prev]').addEventListener('click',()=>{detener();mostrar(paso-1);});
-  root.querySelector('[data-next]').addEventListener('click',()=>{detener();mostrar(paso+1);});
-  root.querySelector('[data-reset]').addEventListener('click',()=>{detener();mostrar(0);});
-  root.querySelector('[data-guide]').innerHTML=PASOS.map((p,i)=>`<article class="trn-guide-card" style="--c:${p.color}"><span>ETAPA 0${i+1}</span><h2>${p.titulo}</h2><p>${p.texto}</p><b>${p.clave}</b></article>`).join('');
-  prepararQuiz(root);
-  mostrar(0);
-  function mostrar(n){
-    paso=Math.max(0,Math.min(PASOS.length-1,n));
-    const p=PASOS[paso];
-    root.querySelector('[data-live]').textContent=`ETAPA 0${paso+1} / 04`;
-    root.querySelector('[data-num]').textContent=`0${paso+1}`;
-    root.querySelector('[data-title]').textContent=p.titulo;
-    root.querySelector('[data-text]').textContent=p.texto;
-    root.querySelector('[data-clave]').textContent=p.clave;
-    root.querySelector('[data-pasos]').innerHTML=PASOS.map((x,i)=>`<button type="button" class="trn-step ${i===paso?'act':''}" data-step="${i}"><i style="--c:${x.color}">${String(i+1).padStart(2,'0')}</i><span>${x.corto}<small>${['Complejo de inicio','ADN abierto','Síntesis de ARN','Liberación del transcripto'][i]}</small></span><b>${i===paso?'●':'○'}</b></button>`).join('');
-    root.querySelectorAll('[data-step]').forEach(b=>b.addEventListener('click',()=>{detener();mostrar(Number(b.dataset.step));}));
-    root.querySelector('[data-prev]').disabled=paso===0;
-    root.querySelector('[data-next]').disabled=paso===PASOS.length-1;
-    root.querySelector('[data-play]').textContent=reproduciendo?'Ⅱ Pausar':paso===PASOS.length-1?'↺ Repetir':'▶ Reproducir';
-    root.querySelector('[data-scene]').innerHTML=escena(paso);
-  }
-  function reproducir(){
-    if(reducirMovimiento()){mostrar(paso+1);return;}
-    if(paso===PASOS.length-1) mostrar(0);
-    reproduciendo=true;root.querySelector('[data-play]').textContent='Ⅱ Pausar';
-    timer=window.setInterval(()=>{if(paso>=PASOS.length-1){detener();return;}mostrar(paso+1);},2600);
-  }
-  function detener(){if(timer!==null)window.clearInterval(timer);timer=null;reproduciendo=false;const b=app.querySelector('[data-play]');if(b)b.textContent=paso===PASOS.length-1?'↺ Repetir':'▶ Reproducir';}
-  function prepararQuiz(root){
-    const preguntas=[
-      {q:'¿En qué sentido sintetiza ARN la ARN polimerasa?',o:['3′→5′','5′→3′','En ambos sentidos'],ok:1,e:'La cadena nueva crece agregando nucleótidos al extremo 3′, por eso la síntesis es 5′→3′.'},
-      {q:'¿Qué hebra utiliza la ARN polimerasa como molde?',o:['La hebra codificante','La hebra molde, leída 3′→5′','Las dos hebras simultáneamente'],ok:1,e:'La polimerasa lee la hebra molde en dirección 3′→5′ y produce una cadena complementaria.'},
-      {q:'¿Qué base del ARN ocupa el lugar de la timina?',o:['Uracilo (U)','Guanina (G)','Citosina (C)'],ok:0,e:'En ARN se usa uracilo; por eso, frente a una A del molde, se incorpora U al ARN.'},
-      {q:'¿Qué producto se obtiene directamente de la transcripción de un gen eucariota codificante?',o:['Una proteína','ADN duplicado','Un transcripto de ARN, generalmente pre-ARNm'],ok:2,e:'La transcripción produce ARN. En genes eucariotas codificantes, el producto inicial suele procesarse para formar ARNm maduro.'}
-    ];
-    let qi=0,respondida=false;
-    const pintar=()=>{const p=preguntas[qi];root.querySelector('[data-q]').textContent=p.q;root.querySelector('[data-options]').innerHTML=p.o.map((o,i)=>`<button type="button" data-opt="${i}">${o}</button>`).join('');root.querySelector('[data-feedback]').textContent='';root.querySelector('[data-qnext]').disabled=true;respondida=false;root.querySelectorAll('[data-opt]').forEach(b=>b.addEventListener('click',()=>{if(respondida)return;respondida=true;const ok=Number(b.dataset.opt)===p.ok;root.querySelectorAll('[data-opt]').forEach(x=>{x.disabled=true;if(Number(x.dataset.opt)===p.ok)x.classList.add('good');});if(!ok)b.classList.add('bad');root.querySelector('[data-feedback]').textContent=(ok?'Correcto. ':'No exactamente. ')+p.e;root.querySelector('[data-qnext]').disabled=false;}));};
-    root.querySelector('[data-qnext]').addEventListener('click',()=>{qi=(qi+1)%preguntas.length;pintar();});pintar();
-  }
+export function abrirTranscripcion({app,volver}){
+ if(timer!==null){clearInterval(timer);timer=null;}
+ estilos();
+ app.innerHTML=`
+ <main class="trn">
+  <header class="trn-head"><button class="trn-back" data-volver>← Laboratorio</button><div class="trn-kicker">PARCIALITO LAB · GENÉTICA MOLECULAR</div><h1>Transcripción: del ADN al ARN</h1><p>Explorá el mecanismo, compará procariotas y eucariotas, identificá qué ARN fabrica cada polimerasa y continuá con la maduración del pre-ARNm dentro del mismo laboratorio.</p></header>
+  <nav class="trn-subnav" aria-label="Subtemas del laboratorio">
+   <button class="act" data-tab="proceso">🧬 Proceso</button><button data-tab="sistemas">⚖️ Procariotas / eucariotas</button><button data-tab="polimerasas">🧪 Tipos de ARN polimerasa</button><button data-tab="enzimas">⚙️ Enzimas auxiliares</button><button data-tab="maduracion">🧩 Maduración del ARNm</button>
+  </nav>
+  <section data-panel="proceso">
+   <div class="trn-switch"><span>ORGANISMO</span><button class="act" data-org="eucariota">Eucariota</button><button data-org="procariota">Procariota (bacteria)</button></div>
+   <div class="trn-layout"><aside class="trn-panel"><span class="trn-label">RECORRIDO DE LA TRANSCRIPCIÓN</span><div class="trn-steps" data-steps></div><div class="trn-controls"><button data-play>▶ Reproducir recorrido</button><div><button data-prev>← Anterior</button><button data-next>Siguiente →</button></div><button data-reset>↺ Reiniciar</button></div></aside>
+   <div class="trn-scene-wrap"><div class="trn-scene-head"><b data-orgtitle></b><span class="trn-pill" data-stepnum>ETAPA 1 / 4</span></div><div class="trn-scene" data-scene></div><article class="trn-explain"><span class="trn-kicker" data-stage>ETAPA 01</span><h2 data-title></h2><p data-text></p><strong data-key></strong></article><div class="trn-quickfacts" data-facts></div></div></div>
+  </section>
+  <section data-panel="sistemas" hidden><div class="trn-sectionintro"><span class="trn-kicker">COMPARACIÓN DIRECTA</span><h2>La lógica general se conserva; la maquinaria cambia</h2><p>Ambos sistemas sintetizan ARN 5′→3′ usando ADN como molde, pero difieren en organización celular, complejidad de la maquinaria y procesamiento del transcripto.</p></div><div class="trn-compare" data-compare></div></section>
+  <section data-panel="polimerasas" hidden><div class="trn-sectionintro"><span class="trn-kicker">¿QUÉ ARN FABRICA CADA UNA?</span><h2>Polimerasas nucleares eucariotas</h2><p>Estas son las tres principales ARN polimerasas nucleares de eucariotas. No deben confundirse con la ARN polimerasa bacteriana única principal.</p></div><div class="trn-polygrid" data-poly></div><div class="trn-note"><b>Ojo con la nomenclatura</b><span>La polimerasa I fabrica el precursor que dará ARNr 18S, 5,8S y 28S; la polimerasa III fabrica ARNr 5S y ARNt. La polimerasa II fabrica la mayoría de los pre-ARNm.</span></div></section>
+  <section data-panel="enzimas" hidden><div class="trn-sectionintro"><span class="trn-kicker">MAQUINARIA Y APOYO</span><h2>Quién hace qué durante la transcripción</h2><p>Seleccioná mentalmente la función de cada componente: no todas las proteínas que participan en el proceso son polimerasas, y no todas actúan sobre el ARN.</p></div><div class="trn-enzymegrid">
+   <article class="trn-enz" style="--c:#8f83ff"><span>01</span><h3>ARN polimerasa</h3><p>Lee la hebra molde y cataliza la formación de enlaces fosfodiéster para alargar ARN en dirección 5′→3′.</p><b>Hace el ARN.</b></article>
+   <article class="trn-enz" style="--c:#5cc8ff"><span>02</span><h3>Topoisomerasa</h3><p>Alivia la tensión y los superenrollamientos del ADN generados por el avance de la maquinaria. En bacterias, la ADN girasa es una topoisomerasa importante.</p><b>Gestiona la topología del ADN; no sintetiza ARN.</b></article>
+   <article class="trn-enz" style="--c:#5ee5bd"><span>03</span><h3>Pirofosfatasa inorgánica</h3><p>Hidroliza el pirofosfato (PPi) liberado al incorporar cada ribonucleótido trifosfato: PPi → 2 Pi. Esto favorece que la reacción global avance.</p><b>Procesa PPi; no lee el ADN.</b></article>
+   <article class="trn-enz" style="--c:#ffc66d"><span>04</span><h3>Factores de inicio</h3><p>En bacterias, el factor sigma ayuda a reconocer promotores. En eucariotas, los factores generales se ensamblan con la polimerasa adecuada en el promotor.</p><b>Ayudan a reconocer dónde iniciar.</b></article>
+   <article class="trn-enz" style="--c:#ff7aa8"><span>05</span><h3>Factores de terminación</h3><p>Participan en la liberación del transcripto. En bacterias existe terminación dependiente de Rho e intrínseca; en eucariotas el mecanismo depende de la polimerasa y del transcripto.</p><b>Ayudan a terminar correctamente.</b></article>
+   <article class="trn-enz" style="--c:#ffb86b"><span>06</span><h3>Fosfatasas y otras enzimas</h3><p>El nombre “fosfatasa” abarca enzimas que quitan grupos fosfato a sustratos concretos. No es un sinónimo de pirofosfatasa: hay que identificar la enzima y la reacción específica.</p><b>Función según el sustrato; no son intercambiables.</b></article>
+  </div></section>
+  <section data-panel="maduracion" hidden><div class="trn-sectionintro"><span class="trn-kicker">SUBTEMA · DESPUÉS DE TRANSCRIBIR</span><h2>Maduración del pre-ARNm</h2><p>En eucariotas, la transcripción por ARN polimerasa II produce normalmente un pre-ARNm que se procesa. Elegí cada operación para ver qué cambia en el transcripto.</p></div><div class="trn-maturelayout"><nav class="trn-maturesteps" data-maturesteps></nav><div class="trn-maturecard"><div class="trn-maturevisual" data-maturevisual></div><div class="trn-maturetext"><span class="trn-kicker" data-maturetag></span><h3 data-maturetitle></h3><p data-maturetext></p><b data-maturekey></b></div></div></div><div class="trn-note"><b>Orden conceptual</b><span>El cap se añade temprano; el splicing puede ocurrir cotranscripcionalmente; el extremo 3′ se corta y poliadenila. No es una secuencia rígida idéntica para todos los transcritos. En bacterias no existe este procesamiento nuclear eucariota típico.</span></div></section>
+  <footer class="trn-foot"><b>TRANSCRIPCIÓN ≠ MADURACIÓN ≠ TRADUCCIÓN</b><p>La transcripción fabrica ARN a partir de ADN. La maduración modifica ciertos transcritos, como el pre-ARNm eucariota. La traducción usa un ARNm para sintetizar un polipéptido.</p></footer>
+ </main>`;
+ const root=app.querySelector('.trn');let etapa=0,organismo='eucariota',mad=0,repro=false;
+ root.querySelector('[data-volver]').addEventListener('click',()=>{if(timer!==null)clearInterval(timer);timer=null;volver();});
+ root.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>{root.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('act',x===b));root.querySelectorAll('[data-panel]').forEach(x=>x.hidden=x.dataset.panel!==b.dataset.tab);pausar();}));
+ root.querySelectorAll('[data-org]').forEach(b=>b.addEventListener('click',()=>{organismo=b.dataset.org;root.querySelectorAll('[data-org]').forEach(x=>x.classList.toggle('act',x===b));pintarEtapa();}));
+ root.querySelector('[data-prev]').addEventListener('click',()=>{pausar();etapa=Math.max(0,etapa-1);pintarEtapa();});
+ root.querySelector('[data-next]').addEventListener('click',()=>{pausar();etapa=(etapa+1)%ETAPAS.length;pintarEtapa();});
+ root.querySelector('[data-reset]').addEventListener('click',()=>{pausar();etapa=0;pintarEtapa();});
+ root.querySelector('[data-play]').addEventListener('click',()=>reproducir());
+ root.querySelector('[data-compare]').innerHTML=Object.entries(SISTEMAS).map(([id,s])=>`<article class="trn-system" style="--c:${s.color}"><span class="trn-kicker">${id==='procariota'?'BACTERIAS':'EUCARIOTAS'}</span><h3>${s.nombre}</h3><h4>${s.sub}</h4><p>${s.detalle}</p><ul>${s.puntos.map(p=>`<li>${p}</li>`).join('')}</ul></article>`).join('');
+ root.querySelector('[data-poly]').innerHTML=POLS.map(p=>`<article class="trn-poly" style="--c:${p.color}"><span class="trn-kicker">${p.lugar}</span><h3>${p.titulo}</h3><div class="trn-producto">${p.producto}</div><p>${p.destino}</p></article>`).join('');
+ root.querySelector('[data-maturesteps]').innerHTML=MADURACION.map((m,i)=>`<button type="button" data-mature="${i}" class="${i===0?'act':''}" style="--c:${m.color}"><i>0${i+1}</i><span>${m.titulo}</span></button>`).join('');
+ root.querySelectorAll('[data-mature]').forEach(b=>b.addEventListener('click',()=>{mad=Number(b.dataset.mature);pintarMaduracion();}));
+ pintarMaduracion();pintarEtapa();
+ function pausar(){if(timer!==null)clearInterval(timer);timer=null;repro=false;const b=root.querySelector('[data-play]');if(b)b.textContent='▶ Reproducir recorrido';}
+ function reproducir(){if(timer!==null){pausar();return;}repro=true;root.querySelector('[data-play]').textContent='Ⅱ Pausar';timer=setInterval(()=>{etapa=(etapa+1)%ETAPAS.length;pintarEtapa();},2500);}
+ function pintarEtapa(){
+  const e=ETAPAS[etapa],s=SISTEMAS[organismo];root.querySelector('[data-orgtitle]').textContent=s.nombre;root.querySelector('[data-stepnum]').textContent=`ETAPA ${etapa+1} / ${ETAPAS.length}`;root.querySelector('[data-stage]').textContent=`ETAPA 0${etapa+1}`;root.querySelector('[data-title]').textContent=e.nombre;root.querySelector('[data-text]').textContent=e.texto;root.querySelector('[data-key]').textContent=e.clave;
+  root.querySelector('[data-steps]').innerHTML=ETAPAS.map((x,i)=>`<button type="button" class="${i===etapa?'act':''}" data-stagebtn="${i}"><i>0${i+1}</i><span>${x.nombre}</span><b>${i===etapa?'●':'○'}</b></button>`).join('');
+  root.querySelectorAll('[data-stagebtn]').forEach(b=>b.addEventListener('click',()=>{pausar();etapa=Number(b.dataset.stagebtn);pintarEtapa();}));
+  root.querySelector('[data-scene]').innerHTML=escena(etapa,organismo);
+  root.querySelector('[data-facts]').innerHTML=(organismo==='eucariota'?['Pol II → pre-ARNm','Núcleo: transcripción separada de traducción','Maduración antes de exportar']:['Una polimerasa principal + sigma','Transcripción y traducción pueden acoplarse','ARNm a menudo policistrónico']).map(x=>`<span>${x}</span>`).join('');
+ }
+ function pintarMaduracion(){
+  const m=MADURACION[mad];root.querySelectorAll('[data-mature]').forEach(b=>b.classList.toggle('act',Number(b.dataset.mature)===mad));root.querySelector('[data-maturetag]').textContent=`PROCESAMIENTO 0${mad+1} / 04`;root.querySelector('[data-maturetitle]').textContent=m.titulo;root.querySelector('[data-maturetext]').textContent=m.texto;root.querySelector('[data-maturekey]').textContent=m.clave;root.querySelector('[data-maturevisual]').innerHTML=visualMaduracion(mad);
+ }
 }
 
-function escena(etapa){
-  const abierto=etapa>=1, creciendo=etapa>=2, terminado=etapa>=3;
-  const xs=BASES.map((_,i)=>70+i*44);
-  const dnaTop=xs.map((x,i)=>`<line x1="${x}" y1="155" x2="${x}" y2="245" stroke="#315a9f" stroke-width="3" opacity=".8"/>`).join('');
-  const dna1=xs.map((x,i)=>`<rect x="${x-3}" y="150" width="6" height="100" rx="3" fill="#4d8fff" opacity=".6"/>`).join('');
-  const bases=BASES.map(([m,r,c],i)=>`<g><line x1="${xs[i]}" y1="155" x2="${xs[i]}" y2="245" stroke="${c}" stroke-width="3" opacity="${abierto?.9:.5}"/><text x="${xs[i]}" y="143" text-anchor="middle" fill="#b8cafa" font-size="12">${m}</text><text x="${xs[i]}" y="263" text-anchor="middle" fill="#b8cafa" font-size="12">${['T','A','G','C','T','A','C','G','T','G','A','C'][i]}</text></g>`).join('');
-  const arn=BASES.slice(0,creciendo?Math.min(12,(etapa-1)*4+4):0).map(([m,r,c],i)=>`<g><circle cx="${xs[i]}" cy="${terminado?315:295}" r="12" fill="${c}" opacity=".95"/><text x="${xs[i]}" y="${terminado?319:299}" text-anchor="middle" fill="#081329" font-size="11" font-weight="800">${r}</text></g>`).join('');
-  const polx=etapa===0?270:etapa===1?330:etapa===2?420:550;
-  const pol=`<g class="trn-pol" transform="translate(${polx} 192)"><ellipse rx="66" ry="45" fill="#9b7bff" opacity=".16"/><path d="M-55,-14 Q-52,-49 -10,-45 Q22,-59 50,-31 Q70,-6 49,20 Q25,48 -12,37 Q-54,43 -60,7Z" fill="#6f58d9" stroke="#b6a7ff" stroke-width="2.5"/><text y="5" text-anchor="middle" fill="#fff" font-size="12" font-weight="800">ARN pol.</text></g>`;
-  const prom= `<rect x="185" y="125" width="116" height="25" rx="7" fill="#ffc66d" fill-opacity=".2" stroke="#ffc66d"/><text x="243" y="141" text-anchor="middle" fill="#ffe2a3" font-size="11">PROMOTOR</text>`;
-  const burbuja=abierto?`<rect x="260" y="142" width="260" height="111" rx="44" fill="#5cc8ff" fill-opacity=".07" stroke="#5cc8ff" stroke-dasharray="5 5"/>`:'';
-  const etiquetas=`<text x="32" y="104" fill="#a9c5ff" font-size="13">Hebra codificante</text><text x="32" y="284" fill="#a9c5ff" font-size="13">Hebra molde</text><text x="500" y="350" fill="#ff93ba" font-size="13">ARN naciente 5′→3′</text>`;
-  return `<svg viewBox="0 0 640 390" role="img" aria-label="Modelo esquemático de transcripción del ADN al ARN"><defs><linearGradient id="trnDna" x1="0" x2="1"><stop stop-color="#3d8bff"/><stop offset="1" stop-color="#5cc8ff"/></linearGradient></defs>
-    <path d="M35 155 H605" stroke="url(#trnDna)" stroke-width="8" stroke-linecap="round"/><path d="M35 245 H605" stroke="#2755a3" stroke-width="8" stroke-linecap="round"/>
-    ${dnaTop}${bases}${prom}${burbuja}${pol}${arn}
-    <path d="M${polx+28} 226 Q${polx+58} 257 ${Math.min(595,polx+90)} 293" fill="none" stroke="#ff7aa8" stroke-width="3" stroke-dasharray="5 4" opacity="${creciendo?.9:0}"/>
-    ${etiquetas}
-    <text x="320" y="35" text-anchor="middle" fill="#eaf1ff" font-size="18" font-weight="700">${['Complejo de iniciación','Apertura local del ADN','Elongación del ARN','Liberación del transcripto'][etapa]}</text>
-  </svg>`;
+function escena(etapa,organismo){
+ const e=ETAPAS[etapa],x=etapa===0?180:etapa===1?300:etapa===2?420:520;
+ const bases=['A','T','G','C','C','A','T','G','A','C'];const xs=bases.map((_,i)=>48+i*53);
+ const dna=xs.map((v,i)=>`<g><line x1="${v}" y1="142" x2="${v}" y2="215" stroke="#426db5" stroke-width="3"/><text x="${v}" y="132" fill="#d5e3ff" font-size="12" text-anchor="middle">${bases[i]}</text><text x="${v}" y="235" fill="#b9c9ee" font-size="12" text-anchor="middle">${['U','A','C','G','G','U','A','C','U','G'][i]}</text></g>`).join('');
+ const arn=etapa<2?'':xs.slice(0,etapa===2?7:10).map((v,i)=>`<circle cx="${v}" cy="278" r="12" fill="${['#ffc66d','#5cc8ff','#5ee5bd','#ff7aa8'][i%4]}"/><text x="${v}" y="282" text-anchor="middle" fill="#081329" font-size="10" font-weight="800">${['U','A','C','G','G','U','A','C','U','G'][i]}</text>`).join('');
+ const prom='<rect x="110" y="98" width="120" height="24" rx="7" fill="#ffc66d" fill-opacity=".16" stroke="#ffc66d"/><text x="170" y="114" text-anchor="middle" fill="#ffe2a3" font-size="11">PROMOTOR</text>';
+ const pol=`<g transform="translate(${x} 180)"><ellipse rx="59" ry="43" fill="${organismo==='eucariota'?'#8f83ff':'#5ee5bd'}" fill-opacity=".2"/><path d="M-45,-12 Q-44,-42 -9,-37 Q23,-48 44,-23 Q59,0 37,24 Q13,42 -16,31 Q-48,33 -50,6Z" fill="${organismo==='eucariota'?'#6655c9':'#198d7a'}" stroke="${organismo==='eucariota'?'#b9adff':'#7ef0d0'}" stroke-width="2"/><text y="4" text-anchor="middle" fill="white" font-size="11" font-weight="800">${organismo==='eucariota'?'ARN pol.':'ARN pol. + σ'}</text></g>`;
+ const extra=etapa>=1?'<rect x="240" y="128" width="235" height="103" rx="42" fill="#5cc8ff" fill-opacity=".07" stroke="#5cc8ff" stroke-dasharray="5 5"/>':'';
+ const topois=etapa>=1?'<g transform="translate(495 90)"><circle r="20" fill="#5cc8ff" fill-opacity=".18" stroke="#5cc8ff"/><text y="4" text-anchor="middle" fill="#a8e8ff" font-size="9">Topo</text></g>':'';
+ const pp=etapa>=2?'<g transform="translate(540 320)"><rect x="-42" y="-14" width="84" height="28" rx="9" fill="#5ee5bd" fill-opacity=".16" stroke="#5ee5bd"/><text y="4" text-anchor="middle" fill="#a4ffe7" font-size="10">PPi → 2 Pi</text></g>':'';
+ return `<svg viewBox="0 0 600 365" role="img" aria-label="Esquema de transcripción en ${esc(organismo)}"><defs><linearGradient id="trnDNA" x1="0" x2="1"><stop stop-color="#3d8bff"/><stop offset="1" stop-color="#5cc8ff"/></linearGradient></defs><text x="300" y="28" text-anchor="middle" fill="#eaf1ff" font-size="17" font-weight="700">${['Reconocimiento del promotor','Burbuja de transcripción','Síntesis de ARN 5′→3′','Liberación del transcripto'][etapa]}</text><path d="M28 142 H570" stroke="url(#trnDNA)" stroke-width="7" stroke-linecap="round"/><path d="M28 215 H570" stroke="#2755a3" stroke-width="7" stroke-linecap="round"/>${dna}${prom}${extra}${pol}${arn}${topois}${pp}<text x="28" y="114" fill="#a9c5ff" font-size="11">Hebra codificante</text><text x="28" y="253" fill="#a9c5ff" font-size="11">Hebra molde 3′→5′</text><text x="330" y="318" fill="#ff9fbe" font-size="12">ARN naciente 5′→3′</text><text x="300" y="350" text-anchor="middle" fill="#aabce5" font-size="10">${organismo==='eucariota'?'NÚCLEO · cromatina y factores generales':'CITOPLASMA · factor sigma y operones'}</text></svg>`;
 }
-
-function inyectarEstilos(){
+function visualMaduracion(i){
+ const labels=['Cap 5′','Intrones','Exones unidos','Cola poli-A'];const colors=['#ffc66d','#8f83ff','#ff7aa8','#5ee5bd'];
+ let items='';
+ if(i===0)items='<rect x="70" y="85" width="28" height="32" rx="8" fill="#ffc66d"/><text x="84" y="105" text-anchor="middle" fill="#071329" font-size="10" font-weight="800">CAP</text><path d="M100 101 H490" stroke="#ff7aa8" stroke-width="8" stroke-linecap="round"/>';
+ if(i===1)items='<path d="M65 100 H175 M230 100 H320 M375 100 H490" stroke="#5ee5bd" stroke-width="13" stroke-linecap="round"/><path d="M175 100 Q202 48 230 100 M320 100 Q347 152 375 100" fill="none" stroke="#8f83ff" stroke-width="8"/><text x="202" y="42" fill="#c9c0ff" font-size="11" text-anchor="middle">Intrón</text><text x="347" y="166" fill="#c9c0ff" font-size="11" text-anchor="middle">Intrón</text>';
+ if(i===2)items='<path d="M65 100 H490" stroke="#5ee5bd" stroke-width="13" stroke-linecap="round"/><rect x="155" y="82" width="70" height="36" rx="9" fill="#ff7aa8"/><rect x="300" y="82" width="70" height="36" rx="9" fill="#ffc66d"/><text x="190" y="104" text-anchor="middle" fill="#071329" font-size="11" font-weight="800">EXÓN</text><text x="335" y="104" text-anchor="middle" fill="#071329" font-size="11" font-weight="800">EXÓN</text>';
+ if(i===3)items='<path d="M65 100 H350" stroke="#5ee5bd" stroke-width="13" stroke-linecap="round"/>'+Array.from({length:8},(_,n)=>`<circle cx="${370+n*17}" cy="100" r="7" fill="#ffc66d"/>`).join('')+'<text x="430" y="75" fill="#ffe2a3" font-size="11" text-anchor="middle">AAAAAA…</text>';
+ return `<svg viewBox="0 0 560 200" role="img" aria-label="${labels[i]} durante la maduración del pre-ARNm"><text x="280" y="35" text-anchor="middle" fill="#eaf1ff" font-size="17" font-weight="700">${labels[i]}</text>${items}<text x="280" y="170" text-anchor="middle" fill="#aabce5" font-size="11">pre-ARNm → ARN procesado</text></svg>`;
+}
+function estilos(){
  if(document.getElementById('transcripcion-lab-css'))return;
- const st=document.createElement('style');st.id='transcripcion-lab-css';
- st.textContent=`
- .trn{--tx:#eaf1ff;--mut:#afc2ee;--ln:#254581;max-width:1260px;min-height:100dvh;margin:0 auto;padding:clamp(16px,3vw,30px);box-sizing:border-box;color:var(--tx);font-family:var(--fuente,Inter,system-ui,sans-serif);background:radial-gradient(ellipse at 58% 16%,rgba(45,81,190,.2),transparent 50%),radial-gradient(ellipse at 95% 65%,rgba(118,64,225,.12),transparent 35%),#040a1c;box-shadow:0 0 0 100vmax #040a1c;clip-path:inset(0 -100vmax)}
- .trn *{box-sizing:border-box}.trn button{font:inherit;cursor:pointer}.trn button:focus-visible{outline:2px solid #9fc0ff;outline-offset:3px}.trn [hidden]{display:none!important}
- .trn-head{padding-bottom:20px;border-bottom:1px solid #1c3d80}.trn-back{border:1px solid #244581;border-radius:10px;background:#0b1940;color:#bcd0ff;padding:8px 12px;font-size:.82rem!important}.trn-kicker{margin-top:22px;color:#81aaff;font-size:.7rem;font-weight:800;letter-spacing:.14em}.trn h1{margin:7px 0 8px;font-size:clamp(1.55rem,3vw,2.3rem);line-height:1.12;letter-spacing:-.035em}.trn-head p{max-width:66ch;color:var(--mut);line-height:1.6;margin:0}
- .trn-tabs{display:flex;gap:7px;flex-wrap:wrap;margin:20px 0}.trn-tabs button{padding:10px 15px;border:1px solid #244581;border-radius:11px;background:#091638;color:#bfd0f7;font-size:.83rem}.trn-tabs button.act{background:linear-gradient(135deg,#5268ff,#344ce8);border-color:#7188ff;color:white}
- .trn-layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:18px}.trn-panel,.trn-scene-wrap,.trn-guide-card,.trn-note,.trn-quiz{border:1px solid #203c7f;border-radius:18px;background:linear-gradient(145deg,rgba(9,21,51,.98),rgba(5,13,33,.98));box-shadow:0 10px 28px #0002}
- .trn-panel{padding:15px}.trn-label{display:block;font-size:.68rem;letter-spacing:.13em;color:#8fb0ff;font-weight:800;margin-bottom:12px}.trn-pasos{display:grid;gap:7px}.trn-step{display:flex;align-items:center;gap:9px;width:100%;text-align:left;padding:10px 8px;border:1px solid #1c356d;border-radius:11px;background:#071432;color:#dce7ff}.trn-step.act{border-color:#638aff;background:#12285a}.trn-step i{display:grid;place-items:center;width:31px;height:31px;flex:none;border-radius:9px;background:color-mix(in srgb,var(--c) 18%,#071432);border:1px solid var(--c);font-size:.7rem;font-style:normal;font-weight:800}.trn-step span{font-size:.83rem;font-weight:700}.trn-step small{display:block;margin-top:3px;font-size:.68rem;font-weight:500;color:#9fb3e4}.trn-step b{margin-left:auto;color:#90aaff;font-size:.65rem}
- .trn-controls{display:grid;gap:8px;margin-top:16px}.trn-controls>button,.trn-controls div button,.trn-quiz>button{padding:10px;border:1px solid #3559a4;border-radius:10px;background:#163475;color:#f4f7ff;font-size:.82rem;font-weight:700}.trn-controls div{display:grid;grid-template-columns:1fr 1.6fr;gap:7px}.trn-controls button:disabled{opacity:.35;cursor:default}.trn-controls .trn-reset{background:#091638;color:#b8cafa;border-color:#203c7f}
- .trn-scene-wrap{padding:14px;min-width:0}.trn-scene-head{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.trn-live{font-size:.7rem;font-weight:800;letter-spacing:.1em;color:#a9c2ff}.trn-legend{display:flex;align-items:center;gap:6px;color:#aabce5;font-size:.68rem}.trn-legend i{display:inline-block;width:9px;height:9px;border-radius:50%;background:#4d8fff}.trn-legend i:nth-of-type(2){background:#ff7aa8}.trn-legend i:nth-of-type(3){background:#9b7bff}.trn-scene{margin-top:12px;border:1px solid #1a3470;border-radius:16px;background:radial-gradient(ellipse at 50% 45%,rgba(28,68,145,.28),rgba(4,10,28,.2) 70%);overflow:hidden}.trn-scene svg{display:block;width:100%;height:auto}.trn-pol{filter:drop-shadow(0 0 12px #8c77ff88)}.trn-caption{display:grid;grid-template-columns:42px 1fr;gap:12px;margin-top:14px;padding:14px;border:1px solid #1d3978;border-radius:14px;background:#071432}.trn-stepnum{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:#142d67;color:#a9c4ff;font-weight:800}.trn-caption h2{font-size:1.1rem;margin:0 0 6px}.trn-caption p{font-size:.87rem;line-height:1.6;color:#b8c9ee;margin:0 0 10px}.trn-caption strong{font-size:.8rem;line-height:1.5;color:#ffe0a0}
- .trn-guide{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.trn-guide-card{padding:18px;border-top:3px solid var(--c)}.trn-guide-card>span{font-size:.68rem;font-weight:800;color:var(--c);letter-spacing:.1em}.trn-guide-card h2{font-size:1.08rem;margin:10px 0}.trn-guide-card p,.trn-guide-card b{font-size:.86rem;line-height:1.65;color:#b9c9ee}.trn-guide-card b{display:block;margin-top:10px;color:#ffe0a0}.trn-note{display:grid;grid-template-columns:180px 1fr;gap:15px;padding:18px;margin-top:14px}.trn-note b{color:#91b5ff}.trn-note span{font-size:.88rem;line-height:1.6;color:#b9c9ee}
- .trn-quiz{padding:clamp(18px,4vw,30px);max-width:850px;margin:auto}.trn-quiz h2{font-size:1.2rem;line-height:1.4}.trn-options{display:grid;gap:8px;margin:18px 0}.trn-options button{text-align:left;padding:12px;border:1px solid #284783;border-radius:11px;background:#081638;color:#dce7ff}.trn-options button.good{border-color:#1fd6a5;background:#0b3a35}.trn-options button.bad{border-color:#ff7aa8;background:#40142a}.trn-options button:disabled{cursor:default}.trn-feedback{color:#b9c9ee;line-height:1.6;min-height:2.5em}.trn-quiz>button:disabled{opacity:.4}
- .trn-foot{margin-top:22px;padding:16px 18px;border:1px solid #243e7c;border-radius:14px;background:#071432}.trn-foot span{font-size:.68rem;font-weight:800;letter-spacing:.12em;color:#ff9fbe}.trn-foot p{font-size:.82rem;line-height:1.55;color:#aebfe6;margin:7px 0 0}
- @media(max-width:780px){.trn{padding:15px}.trn-layout{grid-template-columns:1fr}.trn-panel{padding:12px}.trn-pasos{grid-template-columns:repeat(2,minmax(0,1fr))}.trn-step{padding:8px 6px}.trn-step small{font-size:.62rem}.trn-controls{grid-template-columns:1fr 1fr}.trn-controls .trn-reset{grid-column:1/-1}.trn-scene-wrap{padding:9px}.trn-guide{grid-template-columns:1fr}.trn-note{grid-template-columns:1fr;gap:7px}.trn-tabs button{flex:1;font-size:.75rem;padding:10px 8px}}
+ const st=document.createElement('style');st.id='transcripcion-lab-css';st.textContent=`
+ .trn{--tx:#eaf1ff;--mut:#b9c9ee;max-width:1260px;min-height:100dvh;margin:0 auto;padding:clamp(15px,3vw,30px);box-sizing:border-box;color:var(--tx);font-family:var(--fuente,Inter,system-ui,sans-serif);background:radial-gradient(ellipse at 58% 16%,#2d51be33,transparent 50%),radial-gradient(ellipse at 95% 65%,#7640e21f,transparent 35%),#040a1c;box-shadow:0 0 0 100vmax #040a1c;clip-path:inset(0 -100vmax)}
+ .trn *{box-sizing:border-box}.trn button{font:inherit;cursor:pointer}.trn [hidden]{display:none!important}.trn button:focus-visible{outline:2px solid #9fc0ff;outline-offset:3px}
+ .trn-head{padding-bottom:20px;border-bottom:1px solid #1c3d80}.trn-back{border:1px solid #244581;border-radius:10px;background:#0b1940;color:#bcd0ff;padding:8px 12px;font-size:.82rem}.trn-kicker{display:block;color:#81aaff;font-size:.68rem;font-weight:800;letter-spacing:.13em}.trn-head .trn-kicker{margin-top:22px}.trn h1{margin:7px 0 8px;font-size:clamp(1.55rem,3vw,2.25rem);line-height:1.12;letter-spacing:-.035em}.trn-head p,.trn-sectionintro p{max-width:75ch;color:var(--mut);line-height:1.65;margin:0}
+ .trn-subnav{display:flex;flex-wrap:wrap;gap:7px;margin:19px 0}.trn-subnav button,.trn-switch button{padding:10px 13px;border:1px solid #244581;border-radius:11px;background:#091638;color:#bfd0f7;font-size:.82rem}.trn-subnav button.act,.trn-switch button.act{background:linear-gradient(135deg,#5268ff,#344ce8);border-color:#7188ff;color:#fff}
+ .trn-switch{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin-bottom:13px;padding:11px 13px;border:1px solid #203c7f;border-radius:14px;background:#081432}.trn-switch span{font-size:.68rem;font-weight:800;letter-spacing:.1em;color:#8fb0ff;margin-right:5px}
+ .trn-layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:16px}.trn-panel,.trn-scene-wrap,.trn-explain,.trn-system,.trn-poly,.trn-enz,.trn-maturecard,.trn-note{border:1px solid #203c7f;border-radius:17px;background:linear-gradient(145deg,#091533f5,#050d21f5);box-shadow:0 10px 28px #0002}.trn-panel{padding:13px}.trn-label{display:block;font-size:.67rem;letter-spacing:.12em;color:#8fb0ff;font-weight:800;margin-bottom:12px}.trn-steps{display:grid;gap:7px}.trn-steps button{display:flex;align-items:center;gap:9px;width:100%;padding:10px 8px;text-align:left;border:1px solid #1c356d;border-radius:11px;background:#071432;color:#dce7ff}.trn-steps button.act{border-color:#638aff;background:#12285a}.trn-steps i,.trn-maturesteps i{display:grid;place-items:center;width:29px;height:29px;flex:none;border-radius:9px;background:#172b5a;color:#a9c4ff;font-size:.7rem;font-style:normal;font-weight:800}.trn-steps span{font-size:.82rem;font-weight:700}.trn-steps b{margin-left:auto;font-size:.62rem;color:#90aaff}.trn-controls{display:grid;gap:7px;margin-top:15px}.trn-controls>button,.trn-controls div button{padding:10px;border:1px solid #3559a4;border-radius:10px;background:#163475;color:#f4f7ff;font-size:.8rem;font-weight:700}.trn-controls div{display:grid;grid-template-columns:1fr 1fr;gap:7px}.trn-controls [data-reset]{background:#091638;color:#b8cafa;border-color:#203c7f}
+ .trn-scene-wrap{min-width:0;padding:13px}.trn-scene-head{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;color:#a9c2ff;font-size:.78rem}.trn-pill{padding:5px 9px;border:1px solid #31559a;border-radius:999px;background:#10285e;font-size:.67rem}.trn-scene{margin-top:12px;overflow:hidden;border:1px solid #1a3470;border-radius:15px;background:radial-gradient(ellipse at 50% 45%,#1c44952b,#040a1c33 70%)}.trn-scene svg,.trn-maturevisual svg{display:block;width:100%;height:auto}.trn-explain{margin-top:12px;padding:15px;border-left:4px solid #8f83ff}.trn-explain h2{margin:7px 0;font-size:1.15rem}.trn-explain p,.trn-system p,.trn-system li,.trn-poly p,.trn-enz p,.trn-maturetext p{font-size:.86rem;line-height:1.65;color:#b9c9ee}.trn-explain strong,.trn-maturetext b{display:block;margin-top:9px;color:#ffe0a0;font-size:.8rem;line-height:1.55}.trn-quickfacts{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.trn-quickfacts span{padding:7px 10px;border:1px solid #254581;border-radius:999px;background:#081638;color:#b9c9ee;font-size:.72rem}
+ .trn-sectionintro{margin:10px 0 18px}.trn-sectionintro h2{margin:7px 0;font-size:clamp(1.25rem,2.5vw,1.75rem)}.trn-compare,.trn-polygrid,.trn-enzymegrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.trn-system,.trn-poly,.trn-enz{padding:18px;border-top:3px solid var(--c)}.trn-system h3,.trn-poly h3,.trn-enz h3{margin:8px 0;font-size:1.12rem}.trn-system h4{margin:0 0 9px;color:var(--c);font-size:.88rem}.trn-system ul{padding-left:20px}.trn-system li{margin:6px 0}.trn-polygrid{grid-template-columns:repeat(3,minmax(0,1fr))}.trn-producto{display:inline-block;margin:7px 0;padding:9px 12px;border:1px solid color-mix(in srgb,var(--c) 50%,#244581);border-radius:10px;background:color-mix(in srgb,var(--c) 12%,#071432);color:var(--c);font-weight:800}.trn-enz>span{color:var(--c);font-size:.7rem;font-weight:800;letter-spacing:.1em}.trn-enz b{font-size:.78rem;line-height:1.5;color:var(--c)}.trn-note{display:grid;grid-template-columns:180px 1fr;gap:15px;padding:16px;margin-top:14px}.trn-note b{color:#91b5ff}.trn-note span{font-size:.85rem;line-height:1.65;color:#b9c9ee}
+ .trn-maturelayout{display:grid;grid-template-columns:205px minmax(0,1fr);gap:13px}.trn-maturesteps{display:grid;align-content:start;gap:7px}.trn-maturesteps button{display:flex;align-items:center;gap:10px;padding:10px;border:1px solid #203c7f;border-radius:11px;background:#081432;color:#dce7ff;text-align:left}.trn-maturesteps button.act{border-color:var(--c);background:color-mix(in srgb,var(--c) 13%,#081432)}.trn-maturesteps button.act i{background:var(--c);color:#071329}.trn-maturesteps span{font-size:.83rem;font-weight:700}.trn-maturecard{overflow:hidden}.trn-maturevisual{padding:10px;border-bottom:1px solid #203c7f;background:radial-gradient(ellipse at 50% 45%,#1c44952b,transparent 70%)}.trn-maturetext{padding:18px}.trn-maturetext h3{margin:8px 0}.trn-foot{margin-top:20px;padding:16px 18px;border:1px solid #243e7c;border-radius:14px;background:#071432}.trn-foot>b{font-size:.68rem;font-weight:800;letter-spacing:.1em;color:#ff9fbe}.trn-foot p{font-size:.82rem;line-height:1.6;color:#aebfe6;margin:7px 0 0}
+ @media(max-width:850px){.trn-layout{grid-template-columns:1fr}.trn-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.trn-polygrid{grid-template-columns:1fr 1fr}.trn-enzymegrid,.trn-compare{grid-template-columns:1fr 1fr}.trn-maturelayout{grid-template-columns:1fr}.trn-maturesteps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+ @media(max-width:560px){.trn{padding:14px}.trn-subnav{display:grid;grid-template-columns:1fr 1fr}.trn-subnav button{padding:10px 7px;font-size:.73rem}.trn-switch{align-items:stretch}.trn-switch span{width:100%}.trn-switch button{flex:1;font-size:.73rem}.trn-steps{gap:6px}.trn-steps button{padding:8px 6px}.trn-steps span{font-size:.75rem}.trn-compare,.trn-polygrid,.trn-enzymegrid{grid-template-columns:1fr}.trn-note{grid-template-columns:1fr;gap:6px}.trn-maturesteps{grid-template-columns:1fr 1fr}.trn-maturesteps button{padding:8px}.trn-maturesteps span{font-size:.75rem}}
  @media(prefers-reduced-motion:reduce){.trn *{animation:none!important;transition:none!important}}
- `;
- document.head.appendChild(st);
+ `;document.head.appendChild(st);
 }
