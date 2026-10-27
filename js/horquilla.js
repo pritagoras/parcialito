@@ -527,12 +527,7 @@ export function abrirHorquilla({ app, volver }) {
   inyectarEstilos();
 
   const MODOS = [
-    ['modelo', '🧬 Modelo de polimerasas'],
-    ['armar', '🧰 Armar el equipo'],
-    ['enlaces', '🔬 Enlaces'],
-    ['falta', '🔧 ¿Y si falta…?'],
-    ['orden', '⏱️ Orden'],
-    ['quien', '🎯 ¿Quién es?'],
+    ['modelo', '🧬 Modelo principal'],
   ];
   let modo = 'modelo';
   let dom = 'pro';
@@ -652,10 +647,9 @@ export function abrirHorquilla({ app, volver }) {
         ['alfa','ADN polimerasa α','Inicio: trabaja en complejo con la primasa; el complejo produce el cebador ARN-ADN.','No realiza la elongación larga de las hebras.'],
         ['epsilon','ADN polimerasa ε','Elonga principalmente la hebra líder de forma continua.','Tiene función de corrección de pruebas.'],
         ['delta','ADN polimerasa δ','Elonga principalmente la hebra rezagada y sus fragmentos de Okazaki.','Participa en corrección de pruebas y maduración de la replicación.'],
-        ['gamma','ADN polimerasa γ','Replica y mantiene el ADN mitocondrial.','Se presenta aparte de la horquilla nuclear.'],
       ];
     const extras = dom === 'euca'
-      ? `<section class="hq-polgrupo"><h3>Polimerasas de reparación · fuera de la horquilla principal</h3><div class="hq-polgrid">${[['beta','Pol β','Reparación por escisión de bases.'],['lambda','Pol λ','Participa en vías específicas de reparación.'],['theta','Pol θ','Reparación especializada; no es elongadora principal.']].map(([id,n,t])=>`<article class="hq-polcard" style="--pol:${ENZ[id].color}"><b>${n}</b><p>${t}</p><small>Reparación del ADN</small></article>`).join('')}</div></section>` : '';
+      ? `<section class="hq-polgrupo"><h3>ADN mitocondrial</h3><div class="hq-polgrid"><article class="hq-polcard" style="--pol:${ENZ.gamma.color}"><div class="hq-polcard-head"><span class="hq-polbadge">γ</span><b>ADN polimerasa γ</b></div><p>Replica y mantiene el ADN mitocondrial.</p><small>No es la polimerasa principal de la horquilla nuclear.</small></article></div></section><section class="hq-polgrupo"><h3>Polimerasas de reparación · fuera de la horquilla principal</h3><div class="hq-polgrid">${[['beta','Pol β','Reparación por escisión de bases.'],['lambda','Pol λ','Participa en vías específicas de reparación.'],['theta','Pol θ','Reparación especializada; no es elongadora principal.']].map(([id,n,t])=>`<article class="hq-polcard" style="--pol:${ENZ[id].color}"><div class="hq-polcard-head"><span class="hq-polbadge">${ENZ[id].corto.replace('Pol ','')}</span><b>${n}</b></div><p>${t}</p><small>Reparación del ADN</small></article>`).join('')}</div></section>` : '';
     zona().innerHTML = `
       ${selectorDominio()}
       <section class="hq-modelo-hero"><div><span class="hq-eyebrow">MODELO PRINCIPAL</span><h2>${dom === 'pro' ? 'Horquilla bacteriana' : 'Horquilla eucariota'}</h2><p>${dom === 'pro' ? 'Pol III realiza la elongación principal; Pol I madura los fragmentos y Pol II se asocia a reparación.' : 'Pol α inicia; Pol ε elonga principalmente la líder y Pol δ la rezagada. Pol γ queda vinculada al ADN mitocondrial.'}</p></div><span class="hq-modelo-tag">5′ → 3′</span></section>
