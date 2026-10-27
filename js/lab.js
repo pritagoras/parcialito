@@ -6,7 +6,7 @@ import { abrirCromosomas } from './cromosomas.js?v=20261027-1';
 import { abrirComunicacion } from './comunicacion.js?v=20261027-3';
 import { abrirTraduccion } from './traduccion.js?v=20261027-3';
 import { abrirProteinaG } from './proteina-g.js?v=20261027-2';
-import { abrirMitosis } from './mitosis.js?v=20261027-11';
+import { abrirMitosis } from './mitosis.js?v=20261027-12';
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
 // Tablero con cuatro secciones: Vista, Explicación, Comparador y Preguntas.
