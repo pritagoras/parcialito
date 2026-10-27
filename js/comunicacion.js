@@ -42,6 +42,40 @@ const MENSAJEROS = [
 const FAMILIAS = ['Esteroide','Péptido / proteína','Derivado de aminoácido','Derivado lipídico','Neurotransmisor (categoría funcional)','Gas señalizador','Éster de colina y acetato'];
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
+function tipoVisual(nombre,grande){
+ const w=grande?300:150,h=grande?170:78,m=w/2,r=grande?25:13;
+ let s='<svg viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Modelo animado de '+nombre+'"><defs><linearGradient id="ccA"><stop stop-color="#287e78"/><stop offset="1" stop-color="#24547b"/></linearGradient><linearGradient id="ccB"><stop stop-color="#4d3c83"/><stop offset="1" stop-color="#7960b6"/></linearGradient></defs>';
+ const cell=(x,y,rad,g)=>'<circle cx="'+x+'" cy="'+y+'" r="'+rad+'" fill="url(#'+g+')" stroke="'+(g==='ccA'?'#4FE0A0':'#B9A1FF')+'" stroke-width="2"/><circle cx="'+x+'" cy="'+y+'" r="'+(rad*.3)+'" fill="#fff" opacity=".35"/>';
+ const dot=(x,y,i)=>'<circle class="cc-pulse" style="animation-delay:'+(i*.13)+'s" cx="'+x+'" cy="'+y+'" r="'+(grande?4:2.5)+'" fill="#FFB938"/>';
+ if(nombre==='Yuxtacrina'){
+ s+='<rect x="'+(w*.05)+'" y="12" width="'+(w*.4)+'" height="'+(h-24)+'" rx="12" fill="#173c4a" stroke="#4FE0A0"/><rect x="'+(w*.55)+'" y="12" width="'+(w*.4)+'" height="'+(h-24)+'" rx="12" fill="#30264f" stroke="#B9A1FF"/><path d="M'+(w*.45)+' '+(h*.43)+' H'+(w*.55)+' M'+(w*.45)+' '+(h*.58)+' H'+(w*.55)+'" stroke="#FFB938" stroke-width="'+(grande?5:3)+'"/>'+dot(m,h*.43,0)+'<text x="'+(w*.25)+'" y="'+(h*.35)+'" fill="#fff3dc" text-anchor="middle" font-size="'+(grande?12:7)+'">Ligando</text><text x="'+(w*.75)+'" y="'+(h*.35)+'" fill="#fff3dc" text-anchor="middle" font-size="'+(grande?12:7)+'">Receptor</text>';
+ }else if(nombre==='Paracrina'){
+ s+=cell(w*.15,h*.5,r,'ccA')+cell(w*.85,h*.5,r,'ccB')+'<path class="cc-flow" d="M'+(w*.25)+' '+(h*.5)+' Q'+m+' '+(h*.1)+' '+(w*.75)+' '+(h*.5)+'" stroke="#FFB938" stroke-width="2" fill="none"/>';
+ for(let i=0;i<6;i++)s+=dot(w*(.3+i*.08),h*(i%2?.4:.62),i);
+ }else if(nombre==='Autocrina'){
+ s+=cell(m,h*.5,grande?42:21,'ccA')+'<path class="cc-flow" d="M'+(w*.28)+' '+(h*.4)+' Q'+m+' 4 '+(w*.72)+' '+(h*.4)+'" stroke="#FFB938" stroke-width="2" fill="none"/>';
+ for(let i=0;i<7;i++){const a=i*6.283/7;s+=dot(m+Math.cos(a)*(grande?52:26),h*.5+Math.sin(a)*(grande?43:21),i);}
+ }else if(nombre==='Endocrina'){
+ s+='<path d="M5 '+(h*.5)+' H'+(w-5)+'" stroke="#FF7AA8" stroke-width="'+(grande?18:9)+'" opacity=".18"/><path class="cc-flow" d="M5 '+(h*.5)+' H'+(w-5)+'" stroke="#FF7AA8" stroke-width="2" fill="none"/>'+cell(w*.1,h*.5,grande?18:9,'ccA')+cell(w*.9,h*.5,grande?21:10,'ccB');
+ for(let i=0;i<6;i++)s+=dot(w*(.25+i*.09),h*(i%2?.4:.6),i);
+ s+='<text x="'+m+'" y="'+(h*.88)+'" text-anchor="middle" fill="#ffb8d0" font-size="'+(grande?11:6)+'">sangre</text>';
+ }else if(nombre==='Neuronal / sináptica'){
+ s+='<path d="M8 12 Q'+(w*.22)+' 2 '+(w*.33)+' 14 L'+(w*.36)+' '+(h*.48)+' H8Z" fill="#315d81" stroke="#4FE0A0" stroke-width="2"/><path d="M8 '+(h*.69)+' H'+(w-8)+'" stroke="#B9A1FF" stroke-width="'+(grande?14:7)+'" stroke-linecap="round"/>';
+ for(let i=0;i<7;i++)s+=dot(w*(.15+i*.1),h*(.4+(i%2)*.1),i);
+ s+='<text x="'+m+'" y="'+(h*.92)+'" text-anchor="middle" fill="#d8cfff" font-size="'+(grande?11:6)+'">hendidura sináptica</text>';
+ }else if(nombre==='Neuroendocrina'){
+ s+='<path d="M'+(w*.12)+' '+(h*.8)+' Q'+(w*.28)+' '+(h*.6)+' '+(w*.38)+' '+(h*.36)+' T'+(w*.55)+' '+(h*.35)+'" fill="none" stroke="#4FE0A0" stroke-width="'+(grande?13:6)+'" stroke-linecap="round"/><path class="cc-flow" d="M'+(w*.73)+' 8 V'+(h-8)+'" stroke="#FF7AA8" stroke-width="'+(grande?18:9)+'" opacity=".65"/>';
+ for(let i=0;i<5;i++)s+=dot(w*(.42+i*.06),h*(.38+i*.1),i);
+ s+='<text x="'+(w*.73)+'" y="'+(h*.9)+'" text-anchor="middle" fill="#ffb8d0" font-size="'+(grande?11:6)+'">sangre</text>';
+ }else{
+ s+=cell(w*.15,h*.5,r,'ccA')+cell(w*.85,h*.5,r,'ccB');
+ for(let i=0;i<3;i++)s+='<path d="M'+(w*.29)+' '+(h*(.39+i*.12))+' H'+(w*.71)+'" stroke="#FFB938" stroke-width="'+(grande?5:2.5)+'" stroke-linecap="round"/>';
+ for(let i=0;i<4;i++)s+=dot(w*(.35+i*.1),h*(i%2?.42:.6),i);
+ s+='<text x="'+m+'" y="'+(h*.88)+'" text-anchor="middle" fill="#ffdfa0" font-size="'+(grande?11:6)+'">canales gap</text>';
+ }
+ return s+'</svg>';
+}
+
 export function abrirComunicacion({app, volver}) {
  let vista='tipos', indiceCaso=0, aciertos=0, contestada=false, elegida=-1, ronda=[], mIndex=0, mRespuesta=-1, mRevelado=false, paso=0, potencial='reposo', bloqueador='ninguno';
  const estilos = `
@@ -72,6 +106,7 @@ export function abrirComunicacion({app, volver}) {
  .cc-feedback.good{border-color:rgba(79,224,160,.6);background:rgba(79,224,160,.08)}
  .cc-score{display:flex;gap:.5rem}.cc-score div{flex:1;text-align:center;border:1px solid var(--linea,#43347A);background:var(--noche,#170F2E);border-radius:10px;padding:.6rem .2rem}.cc-score b{display:block;color:var(--ambar,#FFB938);font-size:1.1rem}.cc-score small{color:var(--tenue,#B8ABDB);font-size:.7rem}
  .cc-syn svg{width:100%;height:auto;display:block;background:var(--noche,#170F2E);border:1px solid var(--linea,#43347A);border-radius:13px}
+.cc-syn svg .cc-pulse{animation:ccPulse 1.4s ease-in-out infinite}.cc-syn svg .cc-flow{stroke-dasharray:5 7;animation:ccFlow 1.1s linear infinite}@keyframes ccPulse{0%,100%{opacity:.3}50%{opacity:1;filter:drop-shadow(0 0 5px currentColor)}}@keyframes ccFlow{to{stroke-dashoffset:-24}}.cc-wrap .cc-type-art{display:block;width:100%;height:78px;margin-bottom:.5rem;border-radius:10px;background:radial-gradient(ellipse,#26304e,#170f2e)}.cc-wrap .cc-type-art svg{width:100%;height:100%;border:0;background:transparent}.cc-wrap .cc-type-detail-art{width:100%;max-height:220px;margin:.4rem 0}.cc-wrap .cc-type-detail-art svg{width:100%;height:auto;border:0;background:transparent}
  .cc-note{border-left:3px solid var(--ambar,#FFB938);padding:.65rem .8rem;background:rgba(255,185,56,.07);border-radius:0 10px 10px 0;font-size:.86rem;line-height:1.5}
  .cc-row{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}.cc-row>*{flex:1}
  .cc-table{width:100%;border-collapse:collapse;font-size:.85rem}.cc-table th,.cc-table td{text-align:left;vertical-align:top;padding:.6rem .45rem;border-bottom:1px solid var(--linea,#43347A)}.cc-table th{color:var(--violeta,#9B7BFF)}
@@ -89,8 +124,8 @@ export function abrirComunicacion({app, volver}) {
   window.scrollTo({top:0,behavior:'auto'});
  }
  function tiposView(){
-  $('#cc-content').innerHTML=`<section class="cc-card"><h2>Mapa de mecanismos</h2><p class="cc-muted">Elegí una tarjeta para distinguir el criterio de clasificación. Los mecanismos pueden describirse desde más de un eje: distancia, contacto, célula emisora y vía de transporte.</p><div class="cc-grid">${TIPOS.map((t,i)=>`<button class="cc-tile" data-tipo="${i}"><strong>${esc(t.nombre)}</strong><small>${esc(t.pista)}<br>${esc(t.ej)}</small></button>`).join('')}</div><div id="cc-tipo-info"></div></section><section class="cc-card"><div class="cc-kicker">Desafío de clasificación</div><h2>¿Qué mecanismo describe el caso?</h2><div class="cc-score"><div><b>${aciertos}</b><small>Aciertos</small></div><div><b>${indiceCaso+1}/${CASOS.length}</b><small>Pregunta</small></div><div><b>${ronda.length||CASOS.length}</b><small>Casos</small></div></div><p class="cc-muted" style="margin-top:.8rem">${esc(CASOS[indiceCaso].q)}</p>${TIPOS.map((t,i)=>`<button class="cc-choice ${contestada&&elegida===i&&elegida!==CASOS[indiceCaso].c?'bad':''} ${contestada&&CASOS[indiceCaso].c===i?'good':''}" data-caso="${i}" aria-pressed="${elegida===i}">${esc(t.nombre)}</button>`).join('')}${contestada?`<div class="cc-feedback ${elegida===CASOS[indiceCaso].c?'good':''}"><b>${elegida===CASOS[indiceCaso].c?'✓ Correcto':'↻ Repasemos'}</b><p>${esc(CASOS[indiceCaso].e)}</p></div><button class="cc-primary" id="cc-next">${indiceCaso===CASOS.length-1?'Reiniciar ronda':'Siguiente caso →'}</button>`: `<button class="cc-primary" id="cc-check" disabled>Comprobar respuesta</button>`}</section>`;
-  app.querySelectorAll('[data-tipo]').forEach(b=>b.onclick=()=>{Sonido.clic();const t=TIPOS[Number(b.dataset.tipo)];$('#cc-tipo-info').innerHTML=`<div class="cc-feedback"><b>${esc(t.nombre)}</b><p>${esc(t.desc)}</p><p><b>Ejemplo:</b> ${esc(t.ej)}</p></div>`;});
+  $('#cc-content').innerHTML=`<section class="cc-card"><h2>Mapa de mecanismos</h2><p class="cc-muted">Elegí una tarjeta para distinguir el criterio de clasificación. Los mecanismos pueden describirse desde más de un eje: distancia, contacto, célula emisora y vía de transporte.</p><div class="cc-grid">${TIPOS.map((t,i)=>`<button class="cc-tile" data-tipo="${i}"><span class="cc-type-art">${tipoVisual(t.nombre,false)}</span><strong>${esc(t.nombre)}</strong><small>${esc(t.pista)}<br>${esc(t.ej)}</small></button>`).join('')}</div><div id="cc-tipo-info"></div></section><section class="cc-card"><div class="cc-kicker">Desafío de clasificación</div><h2>¿Qué mecanismo describe el caso?</h2><div class="cc-score"><div><b>${aciertos}</b><small>Aciertos</small></div><div><b>${indiceCaso+1}/${CASOS.length}</b><small>Pregunta</small></div><div><b>${ronda.length||CASOS.length}</b><small>Casos</small></div></div><p class="cc-muted" style="margin-top:.8rem">${esc(CASOS[indiceCaso].q)}</p>${TIPOS.map((t,i)=>`<button class="cc-choice ${contestada&&elegida===i&&elegida!==CASOS[indiceCaso].c?'bad':''} ${contestada&&CASOS[indiceCaso].c===i?'good':''}" data-caso="${i}" aria-pressed="${elegida===i}">${esc(t.nombre)}</button>`).join('')}${contestada?`<div class="cc-feedback ${elegida===CASOS[indiceCaso].c?'good':''}"><b>${elegida===CASOS[indiceCaso].c?'✓ Correcto':'↻ Repasemos'}</b><p>${esc(CASOS[indiceCaso].e)}</p></div><button class="cc-primary" id="cc-next">${indiceCaso===CASOS.length-1?'Reiniciar ronda':'Siguiente caso →'}</button>`: `<button class="cc-primary" id="cc-check" disabled>Comprobar respuesta</button>`}</section>`;
+  app.querySelectorAll('[data-tipo]').forEach(b=>b.onclick=()=>{Sonido.clic();const t=TIPOS[Number(b.dataset.tipo)];$('#cc-tipo-info').innerHTML=`<div class="cc-feedback"><div class="cc-type-detail-art">${tipoVisual(t.nombre,true)}</div><b>${esc(t.nombre)}</b><p>${esc(t.desc)}</p><p><b>Ejemplo:</b> ${esc(t.ej)}</p></div>`;});
   app.querySelectorAll('[data-caso]').forEach(b=>b.onclick=()=>{if(contestada)return;elegida=Number(b.dataset.caso);$('#cc-content').querySelectorAll('[data-caso]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));$('#cc-check').disabled=false;Sonido.clic();});
   $('#cc-check')?.addEventListener('click',()=>{contestada=true;if(elegida===CASOS[indiceCaso].c)aciertos++;Sonido.clic();tiposView();});
   $('#cc-next')?.addEventListener('click',()=>{Sonido.clic();if(indiceCaso===CASOS.length-1){indiceCaso=0;aciertos=0;}else indiceCaso++;contestada=false;elegida=-1;tiposView();});
