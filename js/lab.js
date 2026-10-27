@@ -2,6 +2,7 @@ import { abrirOperones } from './operones.js?v=20261026-10';
 import { abrirLabReplicacion } from './lab-replicacion.js?v=20261027-2';
 import { abrirBases } from './bases.js?v=20261027-1';
 import { abrirTranscripcion } from './transcripcion.js?v=20261027-8';
+import { abrirCromosomas } from './cromosomas.js?v=20261027-1';
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
 // Tablero con cuatro secciones: Vista, Explicación, Comparador y Preguntas.
@@ -325,6 +326,7 @@ export function abrirLab({ app, volver }) {
     {id:'replicacion', icon:'🧬', grupo:'DUPLICACIÓN DEL ADN', titulo:'Duplicación del ADN · laboratorio integrador', desc:'Unificá el modelo de replicación, la horquilla, el cuadro comparativo y el crucigrama en un solo recorrido interactivo.', activo:true, tono:'azul'},
     {id:'bases', icon:'🧬', grupo:'GENÉTICA MOLECULAR', titulo:'Laboratorio de bases', desc:'Practicá complementariedad, flujo de bases, codones, anticodones y diferencias entre ADN y ARN con ejercicios interactivos.', activo:true, tono:'verde'},
     {id:'transcripcion', icon:'🧬', grupo:'GENÉTICA MOLECULAR', titulo:'Transcripción: del ADN al ARN', desc:'Seguí la iniciación, apertura local, elongación y terminación con una animación interactiva del proceso.', activo:true, tono:'azul'},
+    {id:'cromosomas', icon:'🧬', grupo:'NÚCLEO Y CROMATINA', titulo:'Laboratorio de cromosomas', desc:'Explorá el ciclo celular, las cromátidas, la compactación de la cromatina, las deleciones y los cariotipos con modelos visuales interactivos.', activo:true, tono:'violeta'},
     {id:'comunicacion', icon:'📡', grupo:'SEÑALIZACIÓN', titulo:'Comunicación celular', desc:'Espacio preparado para receptores, segundos mensajeros y vías de transducción.', tono:'violeta'},
     {id:'neuro', icon:'⚡', grupo:'NEUROBIOLOGÍA', titulo:'Impulso nervioso y sinapsis', desc:'Espacio preparado para potencial de acción, canales iónicos y transmisión sináptica.', tono:'ambar'},
     {id:'celula', icon:'🔬', grupo:'BIOLOGÍA CELULAR', titulo:'La célula por dentro', desc:'Un lugar para futuros modelos de organelas, membranas y transporte celular.', tono:'rosa'},
@@ -345,7 +347,7 @@ export function abrirLab({ app, volver }) {
         <div class="lab-cat-marca">PARCIALITO <b>LAB</b></div><p class="lab-cat-eyebrow">BIOLOGÍA CELULAR Y MOLECULAR</p>
         <h1>Laboratorio</h1><p class="lab-cat-intro">Elegí qué proceso querés explorar. Cada tema tiene su propio espacio para modelos, explicaciones y actividades interactivas.</p>
       </header>
-      <section class="lab-cat-section"><div class="lab-cat-sectionhead"><div><span class="lab-cat-kicker">EXPLORAR</span><h2>Laboratorios disponibles</h2></div><span class="lab-cat-count">05 activos</span></div><div class="lab-cat-grid">${temas.filter(t=>t.activo).map(tarjeta).join('')}</div></section>
+      <section class="lab-cat-section"><div class="lab-cat-sectionhead"><div><span class="lab-cat-kicker">EXPLORAR</span><h2>Laboratorios disponibles</h2></div><span class="lab-cat-count">06 activos</span></div><div class="lab-cat-grid">${temas.filter(t=>t.activo).map(tarjeta).join('')}</div></section>
       <section class="lab-cat-section lab-cat-futuros"><div class="lab-cat-sectionhead"><div><span class="lab-cat-kicker">EN CONSTRUCCIÓN</span><h2>Más laboratorios</h2><p>Espacios reservados para incorporar nuevos temas sin mezclar los contenidos.</p></div><span class="lab-cat-count">${temas.filter(t=>!t.activo).length} espacios</span></div><div class="lab-cat-grid">${temas.filter(t=>!t.activo).map(tarjeta).join('')}</div></section>
       <footer class="lab-cat-pie">Un tema por laboratorio · Contenidos ampliables de forma independiente</footer></main>`;
     app.querySelector('[data-cat-inicio]').addEventListener('click', volver);
@@ -356,6 +358,7 @@ export function abrirLab({ app, volver }) {
       else if(t.id==='replicacion') abrirLabReplicacion({app,volver:mostrarCatalogo});
       else if(t.id==='bases') abrirBases({app,volver:mostrarCatalogo});
       else if(t.id==='transcripcion') abrirTranscripcion({app,volver:mostrarCatalogo});
+      else if(t.id==='cromosomas') abrirCromosomas({app,volver:mostrarCatalogo});
       else mostrarEspacio(t);
     }));
   }
