@@ -46,77 +46,66 @@ function heroSvg(){return '<svg class="ml-orbit" viewBox="0 0 180 160" role="img
 
 function cellSvg(step){
  const s=FASES[step], stage=s.id;
- const promet=stage==='profase-tardia', meta=stage==='metafase';
+ const early=stage==='profase-temprana', promet=stage==='profase-tardia', meta=stage==='metafase';
  const earlyA=stage==='anafase-temprana', lateA=stage==='anafase-tardia';
- const telo=stage.startsWith('telofase'), cyto=stage.startsWith('citocinesis');
- const final=stage==='citocinesis-final', early=stage==='profase-temprana';
- const split=earlyA||lateA||telo||cyto;
- const poles=split||promet||meta?[[83,180],[277,180]]:[[112,112],[248,248]];
- const chrom=(x,y,scale=1,rotate=0,color='#a99aff',single=false)=>'<g class="ml-chrom" transform="translate('+x+' '+y+') rotate('+rotate+') scale('+scale+')" stroke="'+color+'" stroke-width="7" stroke-linecap="round" fill="none"><path d="'+(single?'M-5 -18 L5 18':'M-12 -21 L2 0 L-12 21 M12 -21 L-2 0 L12 21')+'"/><circle cx="0" cy="0" r="4" fill="#ffcf78" stroke="none"/></g>';
- let cell='', fibers='', centrosomes='', nuclei='', chromosomes='', labels='';
- const centrosome=(x,y,angle)=>'<g transform="translate('+x+' '+y+') rotate('+angle+')"><rect x="-11" y="-4" width="22" height="8" rx="4" fill="#ffcf78" stroke="#ffe4a7" stroke-width="1.2"/><rect x="-4" y="-11" width="8" height="22" rx="4" fill="#ffcf78" stroke="#ffe4a7" stroke-width="1.2"/><circle r="3" fill="#fff1c9"/></g>';
+ const telo=stage.startsWith('telofase'), cyto=stage.startsWith('citocinesis'), final=stage==='citocinesis-final';
+ const colors=['#a99aff','#c7aaff','#63e8c3','#46c9a9'];
+ const names=['Homólogo 1 · par A','Homólogo 2 · par A','Homólogo 1 · par B','Homólogo 2 · par B'];
+ const chrom=(x,y,scale=1,angle=0,color='#a99aff',single=false)=>'<g transform="translate('+x+' '+y+') rotate('+angle+') scale('+scale+')"><path d="'+(single?'M-5 -19 L5 19':'M-12 -21 L0 0 L-12 21 M12 -21 L0 0 L12 21')+'" stroke="'+color+'" stroke-width="7" stroke-linecap="round" fill="none"/><circle cx="0" cy="0" r="4.2" fill="#ffcf78" stroke="#fff0c2" stroke-width="1"/>'+(single?'<circle cx="0" cy="-1" r="2.2" fill="#fff8dd"/>':'<circle cx="-1.8" cy="-1.5" r="2.2" fill="#fff8dd"/><circle cx="1.8" cy="1.5" r="2.2" fill="#fff8dd"/>')+'</g>';
+ const cent=(x,y,angle)=>'<g transform="translate('+x+' '+y+') rotate('+angle+')"><rect x="-11" y="-4" width="22" height="8" rx="4" fill="#ffcf78" stroke="#ffe4a7"/><rect x="-4" y="-11" width="8" height="22" rx="4" fill="#ffcf78" stroke="#ffe4a7"/></g>';
+ let cell='', nuclei='', fibers='', chromosomes='', centrosomes='', labels='',mid='';
  if(final){
-   cell='<circle cx="105" cy="180" r="77" fill="#10234a" fill-opacity=".75" stroke="#5475c6" stroke-width="3"/><circle cx="255" cy="180" r="77" fill="#10234a" fill-opacity=".75" stroke="#5475c6" stroke-width="3"/>';
-   nuclei='<circle cx="105" cy="180" r="37" fill="#1c2853" stroke="#a99aff" stroke-width="2"/><circle cx="255" cy="180" r="37" fill="#1c2853" stroke="#a99aff" stroke-width="2"/>';
-   const cols=['#a99aff','#c7aaff','#63e8c3','#46c9a9'];chromosomes='';for(let i=0;i<4;i++){const y=163+(i%2)*23;chromosomes+=chrom(91+(i%2)*16,y,.31,(i%2?12:-12),cols[i],true)+chrom(241+(i%2)*16,y,.31,(i%2?12:-12),cols[i],true);}
-   labels='<text x="105" y="278" fill="#b9cafa" font-size="10" text-anchor="middle">CÉLULA HIJA 1</text><text x="255" y="278" fill="#b9cafa" font-size="10" text-anchor="middle">CÉLULA HIJA 2</text>';
+   cell='<circle cx="105" cy="180" r="76" fill="#10234a" fill-opacity=".8" stroke="#5475c6" stroke-width="3"/><circle cx="255" cy="180" r="76" fill="#10234a" fill-opacity=".8" stroke="#5475c6" stroke-width="3"/>';
+   nuclei='<circle cx="105" cy="180" r="43" fill="#1b2853" stroke="#a99aff" stroke-width="2.2"/><circle cx="255" cy="180" r="43" fill="#1b2853" stroke="#a99aff" stroke-width="2.2"/>';
+   for(let i=0;i<4;i++){const y=163+(i%2)*25;chromosomes+=chrom(91+(i%2)*12,y,.32,-12,colors[i],true)+chrom(241+(i%2)*12,y,.32,-12,colors[i],true);}
+   labels='<text x="105" y="270" fill="#b9cafa" font-size="10" text-anchor="middle">HIJA 1 · 2n = 4</text><text x="255" y="270" fill="#b9cafa" font-size="10" text-anchor="middle">HIJA 2 · 2n = 4</text>';
  } else {
-   const radius=cyto?145:151;
-   let outline;
-   if(cyto&&!final){
-     outline='<path d="M180 29 C263 29 326 91 326 180 C326 269 263 331 180 331 C97 331 34 269 34 180 C34 151 67 151 67 180 C67 209 97 209 97 180 C97 91 97 29 180 29Z" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/>';
-     // The furrow is drawn over the circular membrane to emphasize constriction without hiding the interior.
-     outline='<path d="M180 29 C263 29 326 91 326 180 C326 269 263 331 180 331 C97 331 34 269 34 180 C34 151 70 151 70 180 C70 209 97 209 97 180 C97 91 97 29 180 29Z" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/>';
-   } else outline='<circle cx="180" cy="180" r="'+radius+'" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/>';
-   cell=outline;
-   const p1=poles[0],p2=poles[1];
-   centrosomes=centrosome(p1[0],p1[1],-28)+centrosome(p2[0],p2[1],35);
-   if(!early){
-     let targets=[];
-     if(meta){for(let i=0;i<4;i++)targets.push([180,130+i*33]);}
-     else if(earlyA){for(let i=0;i<6;i++){targets.push([126+i*8,135+(i%3)*23]);targets.push([234-i*8,135+(i%3)*23]);}}
-     else if(lateA){for(let i=0;i<6;i++){targets.push([112+(i%3)*12,105+i%3*45]);targets.push([248-(i%3)*12,105+i%3*45]);}}
-     else if(telo||cyto){for(let i=0;i<5;i++){targets.push([135+(i%2)*13,145+(i%3)*18]);targets.push([225-(i%2)*13,145+(i%3)*18]);}}
-     else {for(let i=0;i<6;i++)targets.push([135+(i%3)*22,135+Math.floor(i/3)*65]);}
-     fibers='<g stroke="#54cfe6" stroke-width="1.35" opacity=".66" fill="none">';
-     targets.forEach(([x,y],i)=>{fibers+='<path d="M'+p1[0]+' '+p1[1]+' Q'+(140+i*2)+' '+(y-22)+' '+x+' '+y+'"/><path d="M'+p2[0]+' '+p2[1]+' Q'+(220-i*2)+' '+(y+22)+' '+x+' '+y+'"/>';});
-     // Interpolar microtúbulos polares, visibles aunque no estén unidos a cromosomas.
-     for(let i=0;i<5;i++){fibers+='<path d="M'+p1[0]+' '+p1[1]+' Q180 '+(105+i*18)+' '+p2[0]+' '+p2[1]+'"/>';}
-     fibers+='</g>';
-   }
+   cell=cyto
+    ?'<path d="M180 29 C263 29 326 91 326 180 C326 269 263 331 180 331 C97 331 34 269 34 180 C34 91 97 29 180 29Z" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/><path d="M34 180 Q66 180 91 180 M269 180 Q294 180 326 180" stroke="#ff83b5" stroke-width="3" stroke-dasharray="4 5"/>'
+    :'<circle cx="180" cy="180" r="151" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/>';
+   const leftPole=[75,180],rightPole=[285,180];
+   centrosomes=cent(75,180,-28)+cent(285,180,35);
    if(early||promet){
-     if(early)nuclei='<circle cx="180" cy="180" r="66" fill="#1a2854" fill-opacity=".62" stroke="#a99aff" stroke-width="2.5" stroke-dasharray="5 5"/>';
-     else nuclei='<circle cx="180" cy="180" r="66" fill="#1a2854" fill-opacity=".22" stroke="#a99aff" stroke-width="2" stroke-dasharray="5 7"/>';
-     for(let i=0;i<4;i++)chromosomes+=chrom(143+(i%2)*34,151+Math.floor(i/2)*57,.66,(i%2?18:-18),['#a99aff','#c7aaff','#63e8c3','#46c9a9'][i]);
+     nuclei='<circle cx="180" cy="180" r="70" fill="#1a2854" fill-opacity=".4" stroke="#a99aff" stroke-width="2" stroke-dasharray="'+(early?'0':'5 6')+'"/>';
+     // Four duplicated chromosomes: two homologous pairs, each homologue has two sister chromatids.
+     const pts=[[150,150],[210,150],[150,210],[210,210]];
+     pts.forEach((p,i)=>{chromosomes+=chrom(p[0],p[1],.65,(i%2?12:-12),colors[i]);});
+     labels='<text x="180" y="270" fill="#c5d2f4" font-size="10" text-anchor="middle">2 PARES HOMÓLOGOS · 4 CROMOSOMAS DUPLICADOS</text>';
    } else if(meta){
-     nuclei='';
-     for(let i=0;i<4;i++){const y=130+i*33;const col=['#a99aff','#c7aaff','#63e8c3','#46c9a9'][i];chromosomes+=chrom(180,y,.72,(i%2?8:-8),col);}
-     labels='<text x="180" y="348" fill="#ffcf78" font-size="10" text-anchor="middle">ECUADOR · 2 PARES HOMÓLOGOS</text>';
-   } else if(earlyA||lateA){
-     nuclei='';
+     mid='<line x1="180" y1="48" x2="180" y2="312" stroke="#ffcf78" stroke-width="1.5" stroke-dasharray="4 5"/>';
+     // Four X-shaped duplicated chromosomes align on the equatorial plate. Sister kinetochores face opposite poles.
+     const ys=[112,150,210,248];
      for(let i=0;i<4;i++){
-       const y=earlyA?116+i*29:105+i*25;
-       const leftX=earlyA?132+(i%2)*8:82+(i%2)*16;
-       const rightX=earlyA?228-(i%2)*8:278-(i%2)*16;
-       const col=['#a99aff','#c7aaff','#63e8c3','#46c9a9'][i];
-       // Cada polo recibe una cromátida de cada uno de los cuatro cromosomas duplicados.
-       chromosomes+=chrom(leftX,y,.48,-58,col,true);
-       chromosomes+=chrom(leftX+12,y+8,.48,-58,col,true);
-       chromosomes+=chrom(rightX,y,.48,58,col,true);
-       chromosomes+=chrom(rightX-12,y+8,.48,58,col,true);
+       const y=ys[i], col=colors[i], x=180;
+       chromosomes+=chrom(x,y,.68,0,col);
+       fibers+='<g stroke="#54cfe6" stroke-width="1.5" fill="none" opacity=".92"><path d="M75 180 Q'+(112)+' '+y+' '+(x-7)+' '+y+'"/><path d="M285 180 Q248 '+y+' '+(x+7)+' '+y+'"/></g>';
+       // Explicit kinetochore markers on each sister chromatid, attached to opposite spindle poles.
+       labels+='<circle cx="'+(x-7)+'" cy="'+y+'" r="3.4" fill="#fff2be" stroke="#ffcf78" stroke-width="1.5"/><circle cx="'+(x+7)+'" cy="'+y+'" r="3.4" fill="#fff2be" stroke="#ffcf78" stroke-width="1.5"/>';
      }
+     labels+='<text x="180" y="333" fill="#ffcf78" font-size="10" text-anchor="middle">PLACA ECUATORIAL · 2 PARES HOMÓLOGOS</text>';
+   } else if(earlyA||lateA){
+     // The sisters have split at their centromeres. One copy of each chromosome moves to each pole.
+     for(let i=0;i<4;i++){
+       const y=earlyA?112+i*35:105+i*39;
+       const lx=earlyA?140-(i%2)*6:102+(i%2)*13;
+       const rx=earlyA?220+(i%2)*6:258-(i%2)*13;
+       chromosomes+=chrom(lx,y,.52,-55,colors[i],true)+chrom(rx,y,.52,55,colors[i],true);
+       // kinetochore fibers follow the separated daughter chromosomes
+       fibers+='<g stroke="#54cfe6" stroke-width="1.35" fill="none" opacity=".78"><path d="M75 180 Q'+(95)+' '+y+' '+lx+' '+y+'"/><path d="M285 180 Q265 '+y+' '+rx+' '+y+'"/></g>';
+     }
+     labels='<text x="180" y="333" fill="#ffcf78" font-size="10" text-anchor="middle">'+(earlyA?'CROMÁTIDAS HERMANAS SE SEPARAN':'CROMOSOMAS HIJOS EN POLOS OPUESTOS')+'</text>';
    } else {
-     nuclei='<circle cx="125" cy="180" r="47" fill="#1b2853" fill-opacity=".48" stroke="#a99aff" stroke-width="2.2"/><circle cx="235" cy="180" r="47" fill="#1b2853" fill-opacity=".48" stroke="#a99aff" stroke-width="2.2"/>';
-     const cols=['#a99aff','#c7aaff','#63e8c3','#46c9a9'];
-     for(let i=0;i<4;i++){const y=153+(i%2)*24;chromosomes+=chrom(113+(i%2)*18,y,.36,(i%2?12:-12),cols[i],true)+chrom(223+(i%2)*18,y,.36,(i%2?12:-12),cols[i],true);}
-     labels='<text x="125" y="240" fill="#b9cafa" font-size="8" text-anchor="middle">4 cromosomas</text><text x="235" y="240" fill="#b9cafa" font-size="8" text-anchor="middle">4 cromosomas</text>';
+     nuclei='<circle cx="112" cy="180" r="50" fill="#1b2853" fill-opacity=".62" stroke="#a99aff" stroke-width="2.2"/><circle cx="248" cy="180" r="50" fill="#1b2853" fill-opacity=".62" stroke="#a99aff" stroke-width="2.2"/>';
+     for(let i=0;i<4;i++){
+       const y=154+(i%2)*27;
+       chromosomes+=chrom(104+(i%2)*14,y,.34,-10,colors[i],true)+chrom(240+(i%2)*14,y,.34,-10,colors[i],true);
+     }
+     labels='<text x="112" y="245" fill="#c5d2f4" font-size="9" text-anchor="middle">2n = 4</text><text x="248" y="245" fill="#c5d2f4" font-size="9" text-anchor="middle">2n = 4</text>';
    }
-   if(cyto)labels+='<text x="180" y="348" fill="#ff83b5" font-size="10" text-anchor="middle">SURCO DE SEGMENTACIÓN</text>';
  }
- const mid=meta?'<line x1="180" y1="43" x2="180" y2="317" stroke="#ffcf78" stroke-width="1.4" stroke-dasharray="4 6" opacity=".72"/>':'';
- return '<svg viewBox="0 0 360 360" role="img" aria-label="'+s.nombre+': célula circular, huso mitótico, centrosomas y cromosomas"><defs><radialGradient id="mlcyto"><stop stop-color="#1c376c"/><stop offset="1" stop-color="#0a1730"/></radialGradient></defs>'+cell+fibers+nuclei+chromosomes+centrosomes+mid+labels+'</svg>';
+ const kinLabel=meta?'<text x="180" y="65" fill="#fff0c2" font-size="10" text-anchor="middle">Cinetocoros hermanos unidos a polos opuestos</text>':'';
+ return '<svg viewBox="0 0 360 360" role="img" aria-label="'+s.nombre+': dos pares homólogos identificados por color, cromátidas hermanas, cinetocoros y huso mitótico"><defs><radialGradient id="mlcyto"><stop stop-color="#1c376c"/><stop offset="1" stop-color="#0a1730"/></radialGradient></defs>'+cell+fibers+nuclei+chromosomes+centrosomes+mid+labels+kinLabel+'</svg>';
 }
-
 export function abrirMitosis({app,volver}){
  const old=document.getElementById('mitlab-css');if(old)old.remove();const style=document.createElement('style');style.id='mitlab-css';style.textContent=css;document.head.appendChild(style);
  let step=0,tab='recorrido',playing=false,timer=null,qi=0,score=0,answered=false,finished=false,mode='animal';
