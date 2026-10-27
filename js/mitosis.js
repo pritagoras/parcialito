@@ -56,6 +56,8 @@ function cellSvg(step){
  let cell='', nuclei='', fibers='', chromosomes='', centrosomes='', labels='',mid='';
  if(final){
    cell='<circle cx="105" cy="180" r="76" fill="#10234a" fill-opacity=".8" stroke="#5475c6" stroke-width="3"/><circle cx="255" cy="180" r="76" fill="#10234a" fill-opacity=".8" stroke="#5475c6" stroke-width="3"/>';
+   // Cada célula hija conserva un centrosoma con su par de centríolos.
+   centrosomes=cent(67,180,-28)+cent(285,180,35);
    nuclei='<circle cx="105" cy="180" r="43" fill="#1b2853" stroke="#a99aff" stroke-width="2.2"/><circle cx="255" cy="180" r="43" fill="#1b2853" stroke="#a99aff" stroke-width="2.2"/>';
    for(let i=0;i<4;i++){const y=163+(i%2)*25;chromosomes+=chrom(91+(i%2)*12,y,.32,-12,colors[i],true)+chrom(241+(i%2)*12,y,.32,-12,colors[i],true);}
    labels='<text x="105" y="270" fill="#b9cafa" font-size="10" text-anchor="middle">HIJA 1 · 2n = 4</text><text x="255" y="270" fill="#b9cafa" font-size="10" text-anchor="middle">HIJA 2 · 2n = 4</text>';
@@ -64,7 +66,8 @@ function cellSvg(step){
     ?'<path d="M180 29 C263 29 326 91 326 180 C326 269 263 331 180 331 C97 331 34 269 34 180 C34 91 97 29 180 29Z" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/><path d="M34 180 Q66 180 91 180 M269 180 Q294 180 326 180" stroke="#ff83b5" stroke-width="3" stroke-dasharray="4 5"/>'
     :'<circle cx="180" cy="180" r="151" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/>';
    const leftPole=[75,180],rightPole=[285,180];
-   centrosomes=cent(75,180,-28)+cent(285,180,35);
+   // En profase los centrosomas se separan; desde metafase se ubican en polos opuestos.
+   centrosomes=(early?cent(143,180,-28)+cent(217,180,35):cent(75,180,-28)+cent(285,180,35));
    if(early||promet){
      nuclei='<circle cx="180" cy="180" r="70" fill="#1a2854" fill-opacity=".4" stroke="#a99aff" stroke-width="2" stroke-dasharray="'+(early?'0':'5 6')+'"/>';
      // Four duplicated chromosomes: two homologous pairs, each homologue has two sister chromatids.
@@ -95,6 +98,8 @@ function cellSvg(step){
      }
      labels='<text x="180" y="333" fill="#ffcf78" font-size="10" text-anchor="middle">'+(earlyA?'CROMÁTIDAS HERMANAS SE SEPARAN':'CROMOSOMAS HIJOS EN POLOS OPUESTOS')+'</text>';
    } else {
+     // En telofase, cada polo queda junto al núcleo hijo que se está reconstruyendo.
+     centrosomes=cent(69,180,-28)+cent(291,180,35);
      nuclei='<circle cx="112" cy="180" r="50" fill="#1b2853" fill-opacity=".62" stroke="#a99aff" stroke-width="2.2"/><circle cx="248" cy="180" r="50" fill="#1b2853" fill-opacity=".62" stroke="#a99aff" stroke-width="2.2"/>';
      for(let i=0;i<4;i++){
        const y=154+(i%2)*27;
