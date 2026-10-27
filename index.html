@@ -23,7 +23,16 @@
 
 
   <noscript>Necesitás activar JavaScript para usar Repaso.</noscript>
-  <script type="module" src="js/app.js?v=20261027-7"></script>
+  <script>
+    if ('serviceWorker' in navigator && location.protocol === 'https:') {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js?v=20261027-1', { scope: './' }).catch((error) => {
+          console.warn('[Parcialito] No se pudo registrar el service worker:', error);
+        });
+      });
+    }
+  </script>
+  <script type="module" src="js/app.js?v=20261027-8"></script>
 
 <script id="red-de-seguridad">
 (function () {
