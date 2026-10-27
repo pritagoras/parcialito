@@ -4,7 +4,7 @@ import { abrirBases } from './bases.js?v=20261027-1';
 import { abrirTranscripcion } from './transcripcion.js?v=20261027-8';
 import { abrirCromosomas } from './cromosomas.js?v=20261027-1';
 import { abrirComunicacion } from './comunicacion.js?v=20261027-3';
-import { abrirTraduccion } from './traduccion.js?v=20261027-2';
+import { abrirTraduccion } from './traduccion.js?v=20261027-3';
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
 // Tablero con cuatro secciones: Vista, Explicación, Comparador y Preguntas.
