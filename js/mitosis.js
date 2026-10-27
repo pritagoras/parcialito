@@ -58,7 +58,7 @@ function cellSvg(step){
  if(final){
    cell='<circle cx="105" cy="180" r="77" fill="#10234a" fill-opacity=".75" stroke="#5475c6" stroke-width="3"/><circle cx="255" cy="180" r="77" fill="#10234a" fill-opacity=".75" stroke="#5475c6" stroke-width="3"/>';
    nuclei='<circle cx="105" cy="180" r="37" fill="#1c2853" stroke="#a99aff" stroke-width="2"/><circle cx="255" cy="180" r="37" fill="#1c2853" stroke="#a99aff" stroke-width="2"/>';
-   chromosomes=chrom(92,171,.42,-25,'#a99aff')+chrom(116,188,.42,25,'#63e8c3')+chrom(242,171,.42,-25,'#a99aff')+chrom(266,188,.42,25,'#63e8c3');
+   const cols=['#a99aff','#c7aaff','#63e8c3','#46c9a9'];chromosomes='';for(let i=0;i<4;i++){const y=163+(i%2)*23;chromosomes+=chrom(91+(i%2)*16,y,.31,(i%2?12:-12),cols[i],true)+chrom(241+(i%2)*16,y,.31,(i%2?12:-12),cols[i],true);}
    labels='<text x="105" y="278" fill="#b9cafa" font-size="10" text-anchor="middle">CÉLULA HIJA 1</text><text x="255" y="278" fill="#b9cafa" font-size="10" text-anchor="middle">CÉLULA HIJA 2</text>';
  } else {
    const radius=cyto?145:151;
