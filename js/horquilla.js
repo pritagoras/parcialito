@@ -96,10 +96,38 @@ const ENZ = {
   },
   delta: {
     nombre: 'ADN polimerasa δ (delta)', corto: 'Pol δ', dom: 'euca', color: '#5CC8FF', pol: true,
-    funcion: 'sintetiza la hebra rezagada, fragmento por fragmento (eucariotas).',
-    enlace: 'Forma enlaces fosfodiéster al elongar los fragmentos de Okazaki; tiene corrección de pruebas.',
-    perfil: 'En eucariotas, sintetiza la hebra rezagada en forma de fragmentos de Okazaki.',
+    funcion: 'sintetiza principalmente la hebra rezagada, fragmento por fragmento.',
+    enlace: 'Forma enlaces fosfodiéster al elongar los fragmentos de Okazaki; participa en corrección de pruebas.',
+    perfil: 'En eucariotas, sintetiza principalmente la hebra rezagada en forma de fragmentos de Okazaki.',
     falta: 'Los fragmentos de Okazaki no se alargan: la hebra rezagada queda sin copiar.',
+  },
+  gamma: {
+    nombre: 'ADN polimerasa γ (gamma)', corto: 'Pol γ', dom: 'euca', color: '#9B6DFF', pol: true,
+    funcion: 'replica y mantiene el ADN mitocondrial.',
+    enlace: 'Sintetiza ADN mitocondrial; no es la polimerasa principal de la horquilla nuclear.',
+    perfil: 'En eucariotas, replica y mantiene el ADN de las mitocondrias.',
+    falta: 'Se compromete la replicación y el mantenimiento del ADN mitocondrial.',
+  },
+  beta: {
+    nombre: 'ADN polimerasa β (beta)', corto: 'Pol β', dom: 'euca', color: '#FF4F8B', pol: true,
+    funcion: 'participa principalmente en reparación del ADN, especialmente reparación por escisión de bases.',
+    enlace: 'Rellena pequeños tramos de ADN durante procesos de reparación.',
+    perfil: 'Polimerasa eucariota asociada a reparación del ADN; no es una polimerasa replicativa principal.',
+    falta: 'Se dificulta una vía importante de reparación del ADN.',
+  },
+  lambda: {
+    nombre: 'ADN polimerasa λ (lambda)', corto: 'Pol λ', dom: 'euca', color: '#FFC23D', pol: true,
+    funcion: 'participa en vías de reparación del ADN.',
+    enlace: 'Sintetiza ADN en contextos específicos de reparación.',
+    perfil: 'Polimerasa eucariota que participa en reparación del ADN.',
+    falta: 'Puede afectarse la reparación en la que interviene esta polimerasa.',
+  },
+  theta: {
+    nombre: 'ADN polimerasa θ (theta)', corto: 'Pol θ', dom: 'euca', color: '#FF9A2E', pol: true,
+    funcion: 'participa en una vía especializada de reparación del ADN.',
+    enlace: 'Interviene en síntesis de ADN asociada a reparación, incluida la unión de extremos mediada por polimerasa θ.',
+    perfil: 'Polimerasa eucariota vinculada a una vía especializada de reparación del ADN.',
+    falta: 'Puede afectarse la vía especializada de reparación en la que interviene.',
   },
 };
 
@@ -409,7 +437,8 @@ function inyectarEstilos() {
   const st = document.createElement('style');
   st.id = 'estilos-horquilla';
   st.textContent = `
-.pantalla.hq { max-width: 860px; }
+.pantalla.hq { max-width: 1120px; }
+.hq-modelo-hero{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;padding:1rem 1.1rem;margin:.5rem 0;border:1px solid #27458f;border-radius:18px;background:linear-gradient(120deg,rgba(19,44,94,.92),rgba(8,20,54,.94))}.hq-modelo-hero h2{margin:.25rem 0;font-size:clamp(1.3rem,3vw,1.8rem);color:#e3ebff}.hq-modelo-hero p{margin:.3rem 0;color:#b6c8f4;line-height:1.5}.hq-eyebrow{font-size:.68rem;letter-spacing:.14em;font-weight:850;color:#8fb8ff}.hq-modelo-tag{white-space:nowrap;border:1px solid #4168c5;border-radius:99px;padding:.45rem .7rem;color:#bcd1ff;font-weight:800}.hq-lienzo-modelo{background:radial-gradient(ellipse at 50% 40%,#142d5b,#071127 72%);border-color:#27458f;padding:.65rem}.hq-leyenda{display:flex;gap:.6rem 1rem;flex-wrap:wrap;margin:.65rem 0 1.2rem;color:#b6c8f4;font-size:.78rem}.hq-leyenda span{display:flex;align-items:center;gap:.4rem}.hq-leyenda i{width:9px;height:9px;border-radius:50%;background:var(--c,#9B7BFF);display:inline-block}.hq-polgrupo{margin:1.2rem 0}.hq-polgrupo-top{display:flex;align-items:center;justify-content:space-between;gap:1rem}.hq-polgrupo h3,.hq-aux h3{margin:.25rem 0 .65rem;color:#e3ebff;font-size:1.15rem}.hq-contador{color:#9fb9ec;font-size:.78rem}.hq-polgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem}.hq-polcard{min-width:0;padding:.9rem;border:1px solid color-mix(in srgb,var(--pol) 55%,#25438c);border-top:3px solid var(--pol);border-radius:14px;background:linear-gradient(145deg,rgba(15,31,66,.98),rgba(7,17,39,.98))}.hq-polcard-head{display:flex;align-items:center;gap:.6rem}.hq-polcard b{color:#e3ebff;line-height:1.25}.hq-polbadge{display:grid;place-items:center;flex:0 0 36px;height:36px;border-radius:11px;background:color-mix(in srgb,var(--pol) 20%,#0b1736);border:1px solid var(--pol);color:var(--pol);font-weight:900}.hq-polcard p{font-size:.87rem;line-height:1.5;color:#c1d0ef;margin:.7rem 0}.hq-polcard small{display:block;color:#9eb7e8;font-size:.76rem;line-height:1.45}.hq-aux{margin:1.4rem 0;padding:1rem;border:1px solid #25438c;border-radius:17px;background:rgba(8,20,54,.65)}.hq-aux>div:first-child p{color:#9fb7e6;font-size:.87rem;margin:.3rem 0 .8rem}.hq-auxgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem}.hq-auxcard{display:flex;flex-direction:column;align-items:flex-start;gap:.35rem;text-align:left;padding:.85rem;border:1px solid #2a467e;border-radius:12px;background:#0a1734;color:#e3ebff;cursor:pointer}.hq-auxcard span{font-size:.8rem;color:#a9c1f2;line-height:1.4}.hq-auxcard i{font-style:normal;color:#7eabff;font-size:.76rem;font-weight:800;margin-top:.2rem}
 .hq .chips { margin-bottom: .6rem; }
 .hq-hud { display: flex; flex-wrap: wrap; gap: .4rem .9rem; align-items: center; color: var(--tenue); font-size: .95rem; margin: .2rem 0 .5rem; }
 .hq-hud b { color: var(--crema); }
@@ -484,6 +513,7 @@ function inyectarEstilos() {
 .hq-paso:hover { border-color: var(--violeta); }
 .hq-paso.tiembla { animation: hq-tiembla .4s ease; border-color: var(--mal); }
 .hq-dom { display: inline-flex; gap: .4rem; margin-bottom: .6rem; }
+@media (max-width:760px){.hq-polgrid{grid-template-columns:1fr}.hq-auxgrid{grid-template-columns:1fr}.hq-modelo-hero{display:block}.hq-modelo-tag{display:inline-block;margin-top:.5rem}.pantalla.hq{max-width:100%}}
 @media (prefers-reduced-motion: reduce) { .hq-lienzo .slot.sel .vac, .hq-lienzo .slot.falta .vac { animation: none; } }
 `;
   document.head.appendChild(st);
@@ -497,13 +527,14 @@ export function abrirHorquilla({ app, volver }) {
   inyectarEstilos();
 
   const MODOS = [
+    ['modelo', '🧬 Modelo de polimerasas'],
     ['armar', '🧰 Armar el equipo'],
     ['enlaces', '🔬 Enlaces'],
     ['falta', '🔧 ¿Y si falta…?'],
     ['orden', '⏱️ Orden'],
     ['quien', '🎯 ¿Quién es?'],
   ];
-  let modo = 'armar';
+  let modo = 'modelo';
   let dom = 'pro';
   let S = {};
   let ronda = null;
@@ -579,7 +610,8 @@ export function abrirHorquilla({ app, volver }) {
     app.innerHTML = `
       <main class="pantalla hq">
         <button class="btn enlace" id="hq-volver">← Volver</button>
-        <h1 class="titulo-seccion">🧪 Taller de la horquilla</h1>
+        <h1 class="titulo-seccion">🧬 Horquilla de replicación · polimerasas</h1>
+        <p class="sub">Modelo principal de la maquinaria replicativa. Las actividades de práctica quedan como herramientas auxiliares.</p>
         <div class="chips" id="hq-modos" role="group" aria-label="Modo">
           ${MODOS.map(([m, t]) => `<button class="chip ${m === modo ? 'activo' : ''}" data-modo="${m}">${t}</button>`).join('')}
         </div>
@@ -598,7 +630,42 @@ export function abrirHorquilla({ app, volver }) {
   }
   function iniciarModo() {
     S = {};
-    ({ armar: vArmar, enlaces: vEnlaces, falta: vFalta, orden: vOrden, quien: vQuien })[modo]();
+    ({ modelo: vModelo, armar: vArmar, enlaces: vEnlaces, falta: vFalta, orden: vOrden, quien: vQuien })[modo]();
+  }
+
+  // ======================================================
+  // Modo principal: modelo integrado de polimerasas
+  // ======================================================
+  function vModelo() {
+    const llenos = new Map();
+    const mapa = dom === 'pro'
+      ? { topo: 'topo1', hel: 'helicasa', ssb: 'ssb', pri: 'primasa', lid: 'pol3', rez: 'pol3', cebo: 'pol1', lig: 'ligasa', rep: 'pol2' }
+      : { topo: 'topo1', hel: 'helicasa', ssb: 'ssb', pri: 'primasa', alfa: 'alfa', lid: 'epsilon', rez: 'delta', lig: 'ligasa' };
+    Object.entries(mapa).forEach(([slot, enz]) => llenos.set(slot, enz));
+    const pols = dom === 'pro'
+      ? [
+        ['pol3','ADN polimerasa III','Elongación principal: sintetiza la hebra líder y los fragmentos de Okazaki.','5′ → 3′; corrección de pruebas 3′ → 5′.'],
+        ['pol1','ADN polimerasa I','Elimina cebadores de ARN y rellena los huecos con ADN.','Actividad exonucleasa 5′ → 3′ para retirar cebadores; también puede corregir 3′ → 5′.'],
+        ['pol2','ADN polimerasa II','Participa principalmente en reparación y recuperación ante daño del ADN.','No es la polimerasa replicativa principal.'],
+      ]
+      : [
+        ['alfa','ADN polimerasa α','Inicio: trabaja en complejo con la primasa; el complejo produce el cebador ARN-ADN.','No realiza la elongación larga de las hebras.'],
+        ['epsilon','ADN polimerasa ε','Elonga principalmente la hebra líder de forma continua.','Tiene función de corrección de pruebas.'],
+        ['delta','ADN polimerasa δ','Elonga principalmente la hebra rezagada y sus fragmentos de Okazaki.','Participa en corrección de pruebas y maduración de la replicación.'],
+        ['gamma','ADN polimerasa γ','Replica y mantiene el ADN mitocondrial.','Se presenta aparte de la horquilla nuclear.'],
+      ];
+    const extras = dom === 'euca'
+      ? `<section class="hq-polgrupo"><h3>Polimerasas de reparación · fuera de la horquilla principal</h3><div class="hq-polgrid">${[['beta','Pol β','Reparación por escisión de bases.'],['lambda','Pol λ','Participa en vías específicas de reparación.'],['theta','Pol θ','Reparación especializada; no es elongadora principal.']].map(([id,n,t])=>`<article class="hq-polcard" style="--pol:${ENZ[id].color}"><b>${n}</b><p>${t}</p><small>Reparación del ADN</small></article>`).join('')}</div></section>` : '';
+    zona().innerHTML = `
+      ${selectorDominio()}
+      <section class="hq-modelo-hero"><div><span class="hq-eyebrow">MODELO PRINCIPAL</span><h2>${dom === 'pro' ? 'Horquilla bacteriana' : 'Horquilla eucariota'}</h2><p>${dom === 'pro' ? 'Pol III realiza la elongación principal; Pol I madura los fragmentos y Pol II se asocia a reparación.' : 'Pol α inicia; Pol ε elonga principalmente la líder y Pol δ la rezagada. Pol γ queda vinculada al ADN mitocondrial.'}</p></div><span class="hq-modelo-tag">5′ → 3′</span></section>
+      <div class="hq-lienzo hq-lienzo-modelo">${escena(dom, llenos, null, new Set(), false)}</div>
+      <div class="hq-leyenda"><span><i style="--c:#9B7BFF"></i>Molde parental</span><span><i style="--c:#FFB938"></i>ADN nuevo</span><span><i style="--c:#FF7AA8"></i>Cebadores</span><span><i style="--c:#4FE0A0"></i>Polimerasa líder eucariota</span></div>
+      <section class="hq-polgrupo"><div class="hq-polgrupo-top"><div><span class="hq-eyebrow">FICHAS DE FUNCIÓN</span><h3>${dom === 'pro' ? 'Las tres polimerasas bacterianas' : 'Polimerasas eucariotas'}</h3></div><span class="hq-contador">${pols.length} fichas</span></div><div class="hq-polgrid">${pols.map(([id,n,t,d])=>`<article class="hq-polcard" style="--pol:${ENZ[id].color}"><div class="hq-polcard-head"><span class="hq-polbadge">${ENZ[id].corto.replace('Pol ','')}</span><b>${n}</b></div><p>${t}</p><small>${d}</small></article>`).join('')}</div></section>
+      ${extras}
+      <section class="hq-aux"><div><span class="hq-eyebrow">HERRAMIENTAS COMPLEMENTARIAS</span><h3>Practicá cada mecanismo</h3><p>Las actividades anteriores se conservan acá como ejercicios auxiliares, sin competir con el modelo principal.</p></div><div class="hq-auxgrid">${[['armar','🧰 Armar el equipo','Ubicá las enzimas en la horquilla.'],['enlaces','🔬 Enlaces','Puentes de hidrógeno, fosfodiéster y glucosídico.'],['falta','🔧 ¿Y si falta…?','Predecí qué proceso se altera.'],['orden','⏱️ Orden','Ordená la maduración de un fragmento.'],['quien','🎯 ¿Quién es?','Reconocé cada proteína por su función.']].map(([id,t,d])=>`<button class="hq-auxcard" data-aux="${id}"><b>${t}</b><span>${d}</span><i>Practicar ↗</i></button>`).join('')}</div></section>`;
+    enlazarDominio();
+    zona().querySelectorAll('[data-aux]').forEach(b=>b.addEventListener('click',()=>cambiarModo(b.dataset.aux)));
   }
 
   // ======================================================
