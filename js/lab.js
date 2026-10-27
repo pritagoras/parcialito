@@ -34,7 +34,7 @@ const CLAVE_GENERAL = 'los factores específicos pueden actuar a distancia (enha
 const CAPA_DESDE_PASO = { adn: 1, esp: 2, basal: 3, pol: 4, arnm: 5 };
 
 const CAPAS = [['adn', 'ADN', COLOR.adn], ['pol', 'ARN polimerasa II', COLOR.pol], ['basal', 'Factores basales', COLOR.basal], ['esp', 'Factores específicos', COLOR.esp], ['arnm', 'ARNm', COLOR.arnm]];
-const CAPAS_INICIO = { adn: true, pol: true, basal: true, esp: true, arnm: false };
+const CAPAS_INICIO = { adn: true, pol: true, basal: true, esp: true, arnm: true };
 
 const TABS = [['vista', 'Vista 3D', '🧬'], ['explicacion', 'Explicación', '📖'], ['comparador', 'Comparador', '⚖️'], ['preguntas', 'Preguntas', '❓']];
 
@@ -52,28 +52,36 @@ const PREGUNTAS = [
 ];
 
 // ---------- Escena SVG ----------
-// Dos composiciones: PC (amplia, con rótulos) y celular (compacta, con pines numerados).
+// Dos composiciones: PC (réplica de la imagen de referencia, con rótulos) y celular (compacta, con pines numerados).
+// La de PC está dibujada sobre un lienzo de 1040 × 510 unidades.
 const DISEÑOS = {
-  pc: { W: 1200, H: 650, y: 345, x0: 48, x1: 1150, amp: 34, per: 158, sw: 11, etq: true, pines: false, enh: 235, esp: { x: 250, y: 235, rx: 78, ry: 62 }, bas: { x: 655, y: 285, rx: 96, ry: 82 }, pol: { x: 900, y: 300, rx: 112, ry: 100 }, pro: [560, 770], tss: 770, arn: [[800, 395], [850, 475], [990, 500], [1120, 480]] },
+  pc: { W: 1040, H: 510, y: 238, x0: 40, x1: 1000, amp: 36, per: 150, sw: 15, tilt: 1.5, sinBrillo: true, etq: true, pines: false, enh: 212, esp: { x: 208, y: 160, rx: 66, ry: 54, b: 5.6 }, bas: { x: 475, y: 176, rx: 80, ry: 70, b: 6.2 }, pol: { x: 638, y: 228, rx: 124, ry: 106, b: 7.4 }, pro: [398, 572], tss: 567, arn: [[572, 268], [606, 332], [690, 358], [836, 378]] },
   cel: { W: 720, H: 430, y: 235, x0: 30, x1: 692, amp: 25, per: 96, sw: 8, etq: false, pines: true, enh: 118, esp: { x: 120, y: 132, rx: 52, ry: 42 }, bas: { x: 335, y: 190, rx: 58, ry: 50 }, pol: { x: 470, y: 200, rx: 76, ry: 68 }, pro: [275, 400], tss: 400, arn: [[425, 262], [478, 322], [565, 348], [676, 336]] }
 };
 
 function azar(semilla) { let s = semilla; return () => (s = (s * 16807) % 2147483647) / 2147483647; }
 
 // Esfera "burbujeante": un cúmulo de círculos con degradado, para dar sensación de volumen.
+// Si el cuerpo trae "b" (radio base de cada burbuja) la superficie sale más fina y rugosa.
 function esfera(c, grad, semilla) {
-  const r = azar(semilla), n = Math.round((c.rx * c.ry) / 105), menor = Math.min(c.rx, c.ry), bolas = [];
+  const r = azar(semilla), fino = !!c.b, menor = Math.min(c.rx, c.ry), bolas = [];
+  const n = Math.round((c.rx * c.ry) / (fino ? 0.55 * c.b * c.b : 105));
+  const f1 = r() * 6.28, f2 = r() * 6.28;
+  const forma = (a) => (fino ? 1 + 0.07 * Math.sin(3 * a + f1) + 0.05 * Math.sin(5 * a + f2) : 1);
+  const radio = (k) => (fino ? c.b * (0.75 + r() * 0.6) * k : menor * (0.22 + r() * 0.15) * k);
   for (let i = 0; i < n; i++) {
-    const a = r() * Math.PI * 2, d = Math.sqrt(r());
-    bolas.push({ x: c.x + Math.cos(a) * d * c.rx * 0.8, y: c.y + Math.sin(a) * d * c.ry * 0.8, r: menor * (0.22 + r() * 0.15) });
+    const a = r() * Math.PI * 2, d = Math.sqrt(r()), f = forma(a);
+    bolas.push({ x: c.x + Math.cos(a) * d * c.rx * 0.8 * f, y: c.y + Math.sin(a) * d * c.ry * 0.8 * f, r: radio(1) });
   }
-  const m = Math.round(n / 2.4);
+  const m = Math.round(n / (fino ? 1.6 : 2.4));
   for (let i = 0; i < m; i++) {
-    const a = (i / m) * Math.PI * 2 + r() * 0.3;
-    bolas.push({ x: c.x + Math.cos(a) * c.rx * 0.86, y: c.y + Math.sin(a) * c.ry * 0.86, r: menor * (0.2 + r() * 0.1) });
+    const a = (i / m) * Math.PI * 2 + r() * 0.3, f = forma(a);
+    bolas.push({ x: c.x + Math.cos(a) * c.rx * 0.88 * f, y: c.y + Math.sin(a) * c.ry * 0.88 * f, r: radio(fino ? 0.95 : 0.9) });
   }
   bolas.sort((p, q) => p.y - q.y);
-  return `<ellipse cx="${c.x}" cy="${c.y}" rx="${c.rx * 0.9}" ry="${c.ry * 0.9}" fill="url(#lg-${grad}-o)"/>` + bolas.map((b) => `<circle cx="${b.x.toFixed(1)}" cy="${b.y.toFixed(1)}" r="${b.r.toFixed(1)}" fill="url(#lg-${grad})"/>`).join('');
+  let cuerpo = `<ellipse cx="${c.x}" cy="${c.y}" rx="${c.rx * 0.9}" ry="${c.ry * 0.9}" fill="url(#lg-${grad}-o)"/>`;
+  if (fino) cuerpo = `<path d="M${Array.from({ length: 48 }, (_, i) => { const a = (i / 48) * Math.PI * 2, f = forma(a) * 0.93; return (c.x + Math.cos(a) * c.rx * f).toFixed(1) + ' ' + (c.y + Math.sin(a) * c.ry * f).toFixed(1); }).join(' L')}Z" fill="url(#lg-${grad}-o)"/>`;
+  return cuerpo + bolas.map((b) => `<circle cx="${b.x.toFixed(1)}" cy="${b.y.toFixed(1)}" r="${b.r.toFixed(1)}" fill="url(#lg-${grad})"${fino ? ' stroke="rgba(0,0,25,.30)" stroke-width=".6"' : ''}/>`).join('');
 }
 
 // Doble hélice: hebras que se cruzan (la de atrás más oscura) y peldaños entre ellas.
@@ -98,27 +106,85 @@ function helice(L) {
     peldanos += `<line x1="${x.toFixed(1)}" y1="${ya.toFixed(1)}" x2="${x.toFixed(1)}" y2="${yb.toFixed(1)}" stroke="${k % 2 ? '#35d4ff' : '#5b9bff'}" stroke-width="${(sw * 0.38).toFixed(1)}" stroke-linecap="round" opacity=".9"/>`;
   }
   const base = `fill="none" stroke-linecap="round" stroke-linejoin="round"`;
-  return `<g class="lab-capa" data-capa="adn" data-part="adn"><g filter="url(#lbGlow)"><path d="${atras}" ${base} stroke="#1646a8" stroke-width="${sw}"/>${peldanos}<path d="${frente}" ${base} stroke="url(#gDna)" stroke-width="${sw}"/><path d="${frente}" ${base} stroke="#cfe6ff" stroke-width="${(sw * 0.22).toFixed(1)}" opacity=".55"/></g></g>`;
+  const cuerpo = `<g${L.sinBrillo ? ' filter="url(#lbSombra)"' : ' filter="url(#lbGlow)"'}><path d="${atras}" ${base} stroke="#1646a8" stroke-width="${sw}"/>${peldanos}<path d="${frente}" ${base} stroke="url(#gDna)" stroke-width="${sw}"/><path d="${frente}" ${base} stroke="#cfe6ff" stroke-width="${(sw * 0.22).toFixed(1)}" opacity=".55"/></g>`;
+  return `<g class="lab-capa" data-capa="adn" data-part="adn">${L.tilt ? `<g transform="rotate(${L.tilt} ${(x0 + x1) / 2} ${y})">${cuerpo}</g>` : cuerpo}</g>`;
 }
 
 function texto(x, y, s, o = {}) {
   return `<text x="${x}" y="${y}" fill="${o.fill || '#eaf1ff'}" font-size="${o.size || 15}" font-weight="${o.w || 500}" text-anchor="${o.a || 'middle'}">${s}</text>`;
 }
-function rotulo(x, y, w, h, color, t1, t2, parte, capa) {
-  return `<g class="lab-etq" data-part="${parte}" data-capa="${capa}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="12" fill="rgba(4,10,30,.82)" stroke="${color}" stroke-width="2"/>${texto(x + w / 2, y + (t2 ? 23 : h / 2 + 6), t1, { fill: color, size: 18, w: 700 })}${t2 ? texto(x + w / 2, y + 43, t2, { fill: '#cfe0ff', size: 13 }) : ''}</g>`;
-}
 
-function construirEscena(L) {
-  const { W, H, y, sw, enh, esp, bas, pol, pro, tss, arn } = L;
+// Gradientes y filtros comunes a las dos composiciones.
+function definiciones() {
   const g = (id, luz, base, sombra) => `<radialGradient id="lg-${id}" cx=".36" cy=".3" r=".78"><stop offset="0" stop-color="${luz}"/><stop offset=".5" stop-color="${base}"/><stop offset="1" stop-color="${sombra}"/></radialGradient><radialGradient id="lg-${id}-o" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="${base}"/><stop offset="1" stop-color="${sombra}"/></radialGradient>`;
-  const defs = `<defs>
+  return `<defs>
     <linearGradient id="gDna" x1="0" x2="1"><stop offset="0" stop-color="#2f7bff"/><stop offset=".5" stop-color="#58c9ff"/><stop offset="1" stop-color="#2f7bff"/></linearGradient>
     <linearGradient id="gBanda" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".45"/></linearGradient>
-    ${g('esp', '#ffd9a6', '#ff9a2e', '#a24a00')}${g('basal', '#9dffe2', '#14c496', '#06594a')}${g('pol', '#dccdff', '#7c52ff', '#3a1fa6')}
+    ${g('esp', '#ffc27a', '#e5800f', '#7a3500')}${g('basal', '#8ff2c4', '#1bb37a', '#06553a')}${g('pol', '#8f80ff', '#4430c9', '#160a5c')}
     <filter id="lbGlow" x="-10%" y="-40%" width="120%" height="180%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <filter id="lbSombra" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#000" flood-opacity=".55"/></filter>
-    <marker id="lbFlecha" markerWidth="9" markerHeight="9" refX="4.5" refY="7" orient="auto"><path d="M0 0 L4.5 8 L9 0" fill="none" stroke="#9fc4ff" stroke-width="1.6"/></marker>
+    <marker id="lbFlecha" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1.5 1.5 L8 5 L1.5 8.5" fill="none" stroke="#cfe0ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
   </defs>`;
+}
+
+// Rótulo con recuadro de la composición de PC: título de color y, abajo, una línea de detalle.
+function etiqueta(x, y, w, h, color, t1, t2, parte, capa) {
+  const ty = t2 ? y + 23 : y + h / 2 + 5.5;
+  return `<g class="lab-etq" data-part="${parte}" data-capa="${capa}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="11" fill="rgba(4,10,30,.55)" stroke="${color}" stroke-width="1.6"/>${texto(x + 14, ty, t1, { fill: color, size: 15, w: 700, a: 'start' })}${t2 ? texto(x + 14, y + 41, t2, { fill: '#dbe6ff', size: 12, a: 'start' }) : ''}</g>`;
+}
+
+// Composición de PC: réplica de la imagen de referencia.
+function escenaPC(L) {
+  const { W, H, y, sw, enh, esp, bas, pol, pro, tss, arn } = L;
+  const [p0, p1] = pro, centro = (L.x0 + L.x1) / 2;
+  const enhY = y + (enh - centro) * Math.sin((L.tilt * Math.PI) / 180);
+
+  // Enhancer: tramo amarillo que cruza la hélice.
+  const cruz = `M${enh - 30} ${enhY - 27} L${enh + 30} ${enhY + 27} M${enh - 30} ${enhY + 27} L${enh + 30} ${enhY - 27}`;
+  const en = `<g class="lab-capa lab-parte" data-capa="adn" data-part="enhancer" tabindex="0" role="button" aria-label="Seleccionar enhancer"><path d="${cruz}" stroke="#7a5a00" stroke-width="${sw * 1.35}" stroke-linecap="round" fill="none"/><path d="${cruz}" stroke="#ffd23d" stroke-width="${sw * 1.0}" stroke-linecap="round" fill="none"/><path d="${cruz}" stroke="#fff3b0" stroke-width="${sw * 0.28}" stroke-linecap="round" fill="none" opacity=".6"/></g>`;
+
+  const bEsp = `<g class="lab-capa lab-parte lab-flota" data-capa="esp" data-part="especifico" tabindex="0" role="button" aria-label="Seleccionar factor específico"><g filter="url(#lbSombra)">${esfera(esp, 'esp', 7)}</g></g>`;
+  const bBas = `<g class="lab-capa lab-parte lab-flota" data-capa="basal" data-part="basal" tabindex="0" role="button" aria-label="Seleccionar factores basales"><g filter="url(#lbSombra)">${esfera(bas, 'basal', 11)}</g></g>`;
+  const bPol = `<g class="lab-capa lab-parte lab-flota" data-capa="pol" data-part="polimerasa" tabindex="0" role="button" aria-label="Seleccionar ARN polimerasa II"><g filter="url(#lbSombra)">${esfera(pol, 'pol', 23)}</g></g>`;
+
+  // Arco punteado: el factor específico "habla" con el complejo basal a distancia.
+  const arco = `<path class="lab-arco lab-capa" data-capa="esp" d="M${esp.x + 50} ${esp.y - 48} Q${(esp.x + bas.x) / 2 + 40} ${esp.y - 88} ${bas.x - 62} ${bas.y - 8}" fill="none" stroke="#e8f0ff" stroke-width="1.8" stroke-dasharray="3 6" stroke-linecap="round"/>`;
+
+  // Promotor: tres tramos de color (naranja, verde, azul) que abrazan el ADN, como un barril.
+  const alto = 74, top = 233, cols = [['#ff9f2e', p0, 440, 0], ['#19c997', 440, 500, 7], ['#2f86ff', 500, p1, 12]];
+  const banda = cols.map(([c, a, b, d]) => `<rect x="${a}" y="${top + d}" width="${b - a}" height="${alto - d}" fill="${c}"/><rect x="${a}" y="${top + d}" width="${b - a}" height="${alto - d}" fill="url(#gBanda)"/>`).join('');
+  let anillos = '';
+  for (let x = p0 + 9; x < p1 - 4; x += 9) anillos += `<line x1="${x}" y1="${top + 2}" x2="${x}" y2="${top + alto - 2}" stroke="rgba(0,10,40,.28)" stroke-width="1.4"/>`;
+  const prom = `<g class="lab-capa lab-parte" data-capa="adn" data-part="promotor" tabindex="0" role="button" aria-label="Seleccionar promotor"><clipPath id="lbRecorte"><rect x="${p0}" y="${top}" width="${p1 - p0}" height="${alto}" rx="18"/></clipPath><g filter="url(#lbSombra)"><g clip-path="url(#lbRecorte)">${banda}${anillos}<rect x="${p0}" y="${top}" width="${p1 - p0}" height="9" fill="#fff" opacity=".18"/></g></g></g>`;
+
+  // ARNm naciente.
+  const [a0, a1, a2, a3] = arn, dArn = `M${a0} C${a1} ${a2} ${a3}`.replace(/,/g, ' ');
+  const mrna = `<g class="lab-capa lab-parte" data-capa="arnm" data-part="arn" tabindex="0" role="button" aria-label="Seleccionar ARN naciente"><g filter="url(#lbSombra)"><path d="${dArn}" fill="none" stroke="#8e0f3d" stroke-width="${sw * 1.18}" stroke-linecap="round"/><path d="${dArn}" fill="none" stroke="#f0245f" stroke-width="${sw * 0.96}" stroke-linecap="round"/><path d="${dArn}" fill="none" stroke="#ff9cbc" stroke-width="${sw * 0.16}" stroke-linecap="round" opacity=".7" transform="translate(0 -2)"/><path d="${dArn}" fill="none" stroke="#7a0f3a" stroke-width="${sw * 0.96}" stroke-dasharray="1.6 7.4" opacity=".5"/></g><path d="${dArn}" fill="none" stroke="transparent" stroke-width="${sw * 3}"/></g>`;
+
+  // Rótulos y guías.
+  const guia = (capa, d, color, punta) => `<g class="lab-capa" data-capa="${capa}"><path class="lab-leader" d="${d}" stroke="${color}"/>${punta ? `<circle cx="${punta[0]}" cy="${punta[1]}" r="3.6" fill="${color}"/>` : ''}</g>`;
+  let anot = '';
+  anot += etiqueta(98, 28, 150, 54, COLOR.esp, 'Factor específico', '(activador)', 'especifico', 'esp');
+  anot += guia('esp', `M168 82 L${esp.x - 3} ${esp.y - 2}`, COLOR.esp, [esp.x - 3, esp.y - 2]);
+  anot += etiqueta(386, 32, 207, 50, COLOR.basal, 'Factores basales', '(TFIID, TFIIB, TFIIF, TFIIE, TFIIH)', 'basal', 'basal');
+  anot += guia('basal', `M440 90 L${bas.x - 3} ${bas.y + 17}`, COLOR.basal, [bas.x - 3, bas.y + 17]);
+  anot += etiqueta(648, 47, 153, 38, COLOR.pol, 'ARN polimerasa II', '', 'polimerasa', 'pol');
+  anot += guia('pol', 'M681 91 L650 135', COLOR.pol);
+  anot += `<g class="lab-etq" data-part="enhancer" data-capa="adn"><path class="lab-leader" d="M182 325 L${enh + 1} ${enhY + 28}" stroke="#eef4ff"/>${texto(150, 337, 'Elemento de respuesta', { size: 13.5, fill: '#eef4ff' })}${texto(150, 355, 'a activadores (enhancer)', { size: 13.5, w: 600, fill: '#ffffff' })}${texto(150, 373, '(puede estar a distancia)', { size: 11.5, fill: '#b9c9ed' })}</g>`;
+  anot += `<g class="lab-etq" data-part="promotor" data-capa="adn"><path d="M340 318 V329 Q340 331 342 331 H471 Q473 331 473 329 V318" fill="none" stroke="#5ca8ff" stroke-width="2.6" stroke-linecap="round"/>${texto(406, 352, 'Región promotora', { size: 13.5, w: 600, fill: '#ffffff' })}${texto(406, 371, '(caja TATA, Inr, DPE, etc.)', { size: 11.5, fill: '#cfdcf7' })}</g>`;
+  anot += `<g class="lab-etq" data-part="promotor" data-capa="adn"><line class="lab-leader" x1="${tss}" y1="318" x2="${tss}" y2="${y + 138}" stroke="#bcd4ff" marker-end="url(#lbFlecha)"/>${texto(557, 403, 'Sitio de inicio', { size: 13.5, fill: '#eef4ff' })}${texto(557, 421, 'de la transcripción', { size: 13.5, fill: '#eef4ff' })}${texto(557, 439, '(+1)', { size: 13.5, fill: '#eef4ff' })}</g>`;
+  anot += guia('arnm', 'M760 372 L797 405', COLOR.arnm);
+  anot += `<g class="lab-etq" data-part="arn" data-capa="arnm"><rect x="800" y="391" width="156" height="38" rx="11" fill="rgba(4,10,30,.55)" stroke="${COLOR.arnm}" stroke-width="1.6"/>${texto(878, 415, 'ARNm (en síntesis)', { size: 14.5, w: 500, fill: '#ffe1ec' })}</g>`;
+  anot += texto(26, 195, '5′', { size: 17, a: 'start', fill: '#e3ecff' }) + texto(30, 273, '3′', { size: 17, a: 'start', fill: '#e3ecff' });
+  anot += texto(1008, 222, '3′', { size: 17, a: 'start', fill: '#e3ecff' }) + texto(1008, 298, '5′', { size: 17, a: 'start', fill: '#e3ecff' });
+
+  return `<svg class="lab-svg" id="lab-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="Modelo didáctico de ADN, factores basales, factores específicos y ARN polimerasa II" preserveAspectRatio="xMidYMid meet">${definiciones()}${helice(L)}${en}${arco}${bEsp}${bBas}${prom}${bPol}${mrna}${anot}</svg>`;
+}
+
+// Composición de celular: compacta, con pines numerados.
+function escenaCel(L) {
+  const { W, H, y, sw, enh, esp, bas, pol, pro, tss, arn } = L;
+  const defs = definiciones();
 
   // Enhancer: dos barras amarillas que abrazan la hélice.
   const en = `<g class="lab-capa lab-parte" data-capa="adn" data-part="enhancer" tabindex="0" role="button" aria-label="Seleccionar enhancer"><path d="M${enh - 26} ${y - 38} L${enh + 26} ${y + 38} M${enh - 26} ${y + 38} L${enh + 26} ${y - 38}" stroke="#7a5a00" stroke-width="${sw * 1.9}" stroke-linecap="round"/><path d="M${enh - 26} ${y - 38} L${enh + 26} ${y + 38} M${enh - 26} ${y + 38} L${enh + 26} ${y - 38}" stroke="#ffd23d" stroke-width="${sw * 1.4}" stroke-linecap="round"/></g>`;
@@ -140,36 +206,19 @@ function construirEscena(L) {
   const [a0, a1, a2, a3] = arn, dArn = `M${a0} C${a1} ${a2} ${a3}`.replace(/,/g, ' ');
   const mrna = `<g class="lab-capa lab-parte" data-capa="arnm" data-part="arn" tabindex="0" role="button" aria-label="Seleccionar ARN naciente"><g filter="url(#lbGlow)"><path d="${dArn}" fill="none" stroke="#a3124a" stroke-width="${sw * 1.1}" stroke-linecap="round"/><path d="${dArn}" fill="none" stroke="#ff4f8b" stroke-width="${sw * 0.8}" stroke-linecap="round"/><path d="${dArn}" fill="none" stroke="#ffc2d8" stroke-width="${sw * 0.2}" stroke-linecap="round" opacity=".7"/></g><path d="${dArn}" fill="none" stroke="transparent" stroke-width="${sw * 3}"/></g>`;
 
-  // Rótulos (PC) o pines numerados (celular).
-  let anot = '';
-  if (L.etq) {
-    anot += rotulo(70, 34, 230, 52, COLOR.esp, 'Factor específico', '(activador / represor)', 'especifico', 'esp');
-    anot += `<path class="lab-leader" data-capa="esp" d="M185 86 L${esp.x - 8} ${esp.y - esp.ry + 6}" stroke="${COLOR.esp}" />`;
-    anot += rotulo(420, 28, 350, 58, COLOR.basal, 'Factores basales', '(TFIID · TFIIB · TFIIF · TFIIE · TFIIH)', 'basal', 'basal');
-    anot += `<path class="lab-leader" data-capa="basal" d="M595 86 L${bas.x - 8} ${bas.y - bas.ry + 7}" stroke="${COLOR.basal}" />`;
-    anot += rotulo(875, 40, 255, 48, COLOR.pol, 'ARN polimerasa II', '(enzima)', 'polimerasa', 'pol');
-    anot += `<path class="lab-leader" data-capa="pol" d="M1000 88 L${pol.x + 12} ${pol.y - pol.ry + 10}" stroke="${COLOR.pol}" />`;
-    anot += `<g class="lab-etq" data-part="enhancer" data-capa="adn"><path class="lab-leader" d="M${enh} ${y + 40} L${enh - 12} 470" stroke="#d9e6ff"/><rect x="55" y="475" width="285" height="58" rx="12" fill="#07132e" stroke="#6b5b1c" stroke-width="1.5"/>${texto(72, 498, 'ENHANCER · ADN REGULADOR', { size: 14, w: 800, fill: '#ffdb70', a: 'start' })}${texto(72, 518, 'Puede estar lejos del promotor', { size: 13, fill: '#b9c9ed', a: 'start' })}</g>`;
-    const bx0 = p0, bx1 = tss - 18, by = y + 58;
-    anot += `<g class="lab-etq" data-part="promotor" data-capa="adn"><path d="M${bx0} ${by} v12 H${bx1} v-12" fill="none" stroke="#7bb6ff" stroke-width="2.4"/><rect x="${(bx0 + bx1) / 2 - 118}" y="${by + 18}" width="236" height="53" rx="12" fill="#07132e" stroke="#2d6fce" stroke-width="1.5"/>${texto((bx0 + bx1) / 2, by + 39, 'PROMOTOR', { size: 14, w: 800, fill: '#a9ceff' })}${texto((bx0 + bx1) / 2, by + 58, 'Zona de ensamblaje basal', { size: 12, fill: '#b9c9ed' })}</g>`;
-    anot += `<g class="lab-etq" data-part="promotor" data-capa="adn"><path class="lab-leader" d="M${tss} ${y + 22} V${y + 130}" stroke="#9fc4ff"/><rect x="${tss - 66}" y="${y + 135}" width="132" height="54" rx="12" fill="#07132e" stroke="#365caa" stroke-width="1.5"/>${texto(tss, y + 157, 'INICIO +1', { size: 14, w: 800, fill: '#c7dcff' })}${texto(tss, y + 177, 'de transcripción', { size: 12, fill: '#b9c9ed' })}</g>`;
-    anot += `<g class="lab-etq" data-part="arn" data-capa="arnm"><path class="lab-leader" d="M990 500 L1025 535" stroke="${COLOR.arnm}"/><rect x="930" y="540" width="220" height="42" rx="12" fill="#07132e" stroke="${COLOR.arnm}" stroke-width="1.8"/>${texto(1040, 566, 'ARN naciente · 5′→3′', { fill: '#ffc2d8', size: 14, w: 700 })}</g>`;
-    anot += texto(26, y - 24, '5′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' }) + texto(26, y + 44, '3′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' });
-    anot += texto(1174, y - 30, '3′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' }) + texto(1174, y + 36, '5′', { size: 18, w: 600, a: 'start', fill: '#cfe0ff' });
-  } else {
-    anot += texto(8, y - 20, '5′', { size: 14, a: 'start', fill: '#cfe0ff' }) + texto(8, y + 36, '3′', { size: 14, a: 'start', fill: '#cfe0ff' });
-    anot += texto(712, y - 24, '3′', { size: 14, a: 'end', fill: '#cfe0ff' }) + texto(712, y + 32, '5′', { size: 14, a: 'end', fill: '#cfe0ff' });
-    anot += `<line class="lab-capa" data-capa="adn" x1="${tss}" y1="${y + 22}" x2="${tss}" y2="${y + 62}" stroke="#9fc4ff" stroke-width="1.6" marker-end="url(#lbFlecha)"/>` + texto(tss, y + 82, '+1', { size: 13, fill: '#9fc4ff', w: 700 });
-  }
-  if (L.pines) {
-    const pos = { especifico: [esp.x + esp.rx * 0.85, esp.y - esp.ry * 0.9], enhancer: [enh, y + 50], promotor: [(p0 + p1) / 2 - 20, y + 54], basal: [bas.x - bas.rx * 0.65, bas.y - bas.ry * 0.95], polimerasa: [pol.x + pol.rx * 0.65, pol.y - pol.ry * 0.95], arn: [a2[0], a2[1] - 26] };
-    Object.keys(pos).forEach((id) => {
-      const p = PIEZAS[id], [px, py] = pos[id];
-      anot += `<g class="lab-pin" data-part="${id}" data-capa="${p.capa}"><circle cx="${px}" cy="${py}" r="24" fill="transparent"/><circle cx="${px}" cy="${py}" r="13" fill="${p.color === COLOR.prom ? '#ffc23d' : p.color}" stroke="#fff" stroke-width="2"/><text x="${px}" y="${py + 5}" text-anchor="middle" font-size="14" font-weight="800" fill="#06102a">${p.pin}</text></g>`;
-    });
-  }
+  // Pines numerados.
+  let anot = texto(8, y - 20, '5′', { size: 14, a: 'start', fill: '#cfe0ff' }) + texto(8, y + 36, '3′', { size: 14, a: 'start', fill: '#cfe0ff' });
+  anot += texto(712, y - 24, '3′', { size: 14, a: 'end', fill: '#cfe0ff' }) + texto(712, y + 32, '5′', { size: 14, a: 'end', fill: '#cfe0ff' });
+  anot += `<line class="lab-capa" data-capa="adn" x1="${tss}" y1="${y + 22}" x2="${tss}" y2="${y + 62}" stroke="#9fc4ff" stroke-width="1.6" marker-end="url(#lbFlecha)"/>` + texto(tss, y + 82, '+1', { size: 13, fill: '#9fc4ff', w: 700 });
+  const pos = { especifico: [esp.x + esp.rx * 0.85, esp.y - esp.ry * 0.9], enhancer: [enh, y + 50], promotor: [(p0 + p1) / 2 - 20, y + 54], basal: [bas.x - bas.rx * 0.65, bas.y - bas.ry * 0.95], polimerasa: [pol.x + pol.rx * 0.65, pol.y - pol.ry * 0.95], arn: [a2[0], a2[1] - 26] };
+  Object.keys(pos).forEach((id) => {
+    const p = PIEZAS[id], [px, py] = pos[id];
+    anot += `<g class="lab-pin" data-part="${id}" data-capa="${p.capa}"><circle cx="${px}" cy="${py}" r="24" fill="transparent"/><circle cx="${px}" cy="${py}" r="13" fill="${p.color === COLOR.prom ? '#ffc23d' : p.color}" stroke="#fff" stroke-width="2"/><text x="${px}" y="${py + 5}" text-anchor="middle" font-size="14" font-weight="800" fill="#06102a">${p.pin}</text></g>`;
+  });
   return `<svg class="lab-svg" id="lab-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="Modelo didáctico de ADN, factores basales, factores específicos y ARN polimerasa II" preserveAspectRatio="xMidYMid meet">${defs}${helice(L)}${en}${arco}${bEsp}${bBas}${bPol}${prom}${mrna}${anot}</svg>`;
 }
+
+function construirEscena(L) { return L.etq ? escenaPC(L) : escenaCel(L); }
 
 // Cuadros de vista (viewBox) para "Vista general" y "Primer plano".
 function cuadros(L) {
@@ -179,48 +228,55 @@ function cuadros(L) {
 }
 
 // ---------- HTML de las secciones ----------
-const iconoADN = `<svg viewBox="0 0 48 48" width="44" height="44" aria-hidden="true"><defs><linearGradient id="lbIc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b79bff"/><stop offset="1" stop-color="#7c52ff"/></linearGradient></defs><path d="M14 4c0 12 20 14 20 24S14 36 14 44M34 4c0 12-20 14-20 24s20 8 20 16" fill="none" stroke="url(#lbIc)" stroke-width="4" stroke-linecap="round"/><path d="M17 12h14M15 20h18M15 36h18M17 44h0" stroke="url(#lbIc)" stroke-width="3" stroke-linecap="round"/></svg>`;
+const iconoADN = `<svg viewBox="0 0 48 48" width="48" height="52" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><defs><linearGradient id="lbIc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b79bff"/><stop offset="1" stop-color="#7c52ff"/></linearGradient></defs><path d="M14 4c0 12 20 14 20 24S14 36 14 44M34 4c0 12-20 14-20 24s20 8 20 16" fill="none" stroke="url(#lbIc)" stroke-width="4" stroke-linecap="round"/><path d="M17 12h14M15 20h18M15 36h18M17 44h0" stroke="url(#lbIc)" stroke-width="3" stroke-linecap="round"/></svg>`;
 
 function htmlCapas() {
   return CAPAS.map(([id, nombre, c]) => `<label class="lab-capa-op" style="--c:${c}"><input type="checkbox" data-capa-chk="${id}"${CAPAS_INICIO[id] ? ' checked' : ''}><i class="lab-punto"></i><span>${nombre}</span><b class="lab-sw" aria-hidden="true"></b></label>`).join('');
 }
 
-function htmlExplorer() {
-  const grupos = [
-    { titulo: 'ADN y regiones reguladoras', ids: ['adn', 'enhancer', 'promotor'], color: '#68a9ff' },
-    { titulo: 'Proteínas reguladoras y maquinaria', ids: ['especifico', 'basal', 'polimerasa'], color: '#48d8b2' },
-    { titulo: 'Producto', ids: ['arn'], color: '#ff79aa' }
-  ];
-  return `<section class="lab-explorer" aria-label="Explorador interactivo de componentes">
-    <div class="lab-explorer-head"><div><span class="lab-kicker">EXPLORADOR DEL MODELO</span><h3>Seleccioná un componente</h3></div><p>Elegí una pieza para resaltarla en el esquema y consultar su función.</p></div>
-    <div class="lab-explorer-groups">${grupos.map(g => `<div class="lab-explorer-group" style="--group:${g.color}"><h4>${g.titulo}</h4><div class="lab-explorer-items">${g.ids.map(id => { const p = PIEZAS[id]; return `<button type="button" class="lab-explorer-item" data-part="${id}" style="--part:${p.color}"><i></i><span>${p.nombre}</span><b>↗</b></button>`; }).join('')}</div></div>`).join('')}</div>
-    <div class="lab-explorer-hint"><span>01</span> ADN y secuencias <i></i><span>02</span> Unión de proteínas <i></i><span>03</span> Inicio de transcripción</div>
-  </section>`;
-}
+// Íconos blancos de los círculos de "¿Qué hace cada factor?".
+const svgIc = (d) => `<svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+const ICONOS = {
+  basal: svgIc('<circle cx="9" cy="8" r="3"/><path d="M3.5 19.5c0-3.4 2.4-5.6 5.5-5.6s5.5 2.2 5.5 5.6"/><circle cx="17" cy="9.5" r="2.4"/><path d="M16.2 14.2c2.8-.3 4.8 1.6 4.8 4.4"/>'),
+  esp: svgIc('<circle cx="12" cy="8" r="3.2"/><path d="M5.5 20c0-3.6 2.8-6 6.5-6s6.5 2.4 6.5 6"/><path d="M9.5 17.2h5"/>'),
+  pol: svgIc('<rect x="3.2" y="8.6" width="17.6" height="6.8" rx="3.4" transform="rotate(-45 12 12)"/><path d="M9.4 9.4l5.2 5.2"/>')
+};
 
 function htmlTarjetas() {
   const fila = (c, ic, t, d) => `<div class="lab-fila-f" style="--c:${c}"><span class="lab-ic">${ic}</span><div><h4>${t}</h4><p>${d}</p></div></div>`;
   const elem = (c, n, d, parte) => `<button type="button" class="lab-elem" data-part="${parte}" style="--c:${c}"><i></i><b>${n}</b><span>${d}</span></button>`;
+  const u = (t) => `<u>${t}</u>`;
+  const lista = `${u('TFIID')}, ${u('TFIIB')}, ${u('TFIIF')}, ${u('TFIIE')} y ${u('TFIIH')}`;
+  // Esquema de la región promotora (coordenadas en un lienzo de 340 × 160).
+  const esquema = `<svg class="lab-esq" viewBox="0 6 340 152" role="img" aria-label="Esquema: enhancer lejano, cajas CAAT y TATA, Inr y sitio de inicio +1">
+      <rect x="1" y="12" width="73" height="47" rx="10" fill="rgba(255,180,58,.06)" stroke="#ffb43a" stroke-width="1.6"/>
+      <text x="37.5" y="32" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffc866">Enhancer</text><text x="37.5" y="48" text-anchor="middle" font-size="12" fill="#ffc866">(lejos)</text>
+      <path d="M77 37 C100 37 111 48 114 68 M108.5 61.5 L114 69.5 L119.5 61.5" fill="none" stroke="#ffb43a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="21" y="83" width="300" height="30" rx="6" fill="#2f6cf5"/>
+      <rect x="259" y="83" width="62" height="30" rx="6" fill="#7c52ff"/><rect x="259" y="83" width="12" height="30" fill="#7c52ff"/>
+      <rect x="211" y="83" width="48" height="30" fill="#3a86ff"/>
+      <rect x="81" y="83" width="50" height="50" rx="5" fill="#6a5cf0"/><rect x="141" y="83" width="54" height="50" rx="5" fill="#ff4f8b"/>
+      <g font-size="13" font-weight="700" text-anchor="middle"><text x="106" y="102" fill="#10163d">CAAT</text><text x="106" y="120" fill="#10163d">box</text><text x="168" y="102" fill="#2a0f2c">TATA</text><text x="168" y="120" fill="#2a0f2c">box</text><text x="235" y="103" fill="#eaf3ff">Inr</text></g>
+      <text x="277" y="38" text-anchor="middle" font-size="12.5" fill="#c9d8ff">+1</text>
+      <path d="M277 122 V52 H306 M300 47 L307 52 L300 57" fill="none" stroke="#5fe0ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      <g font-size="12" fill="#9d86ff" text-anchor="end"><text x="337" y="141">Inicio de</text><text x="337" y="155">transcripción</text></g>
+    </svg>`;
   return `
   <details class="lab-tarj" open><summary><h3>¿Qué hace cada factor?</h3></summary><div class="lab-tarj-cuerpo">
-    ${fila(COLOR.basal, '🧩', 'Factores basales', 'Forman el complejo de preiniciación y permiten que la ARN polimerasa II se una al promotor. Incluyen TFIID, TFIIB, TFIIF, TFIIE y TFIIH.')}
-    ${fila(COLOR.esp, '🎛️', 'Factores específicos', 'Se unen a secuencias reguladoras (enhancers o silenciadores) y aumentan o disminuyen la transcripción. Pueden ser activadores o represores.')}
-    ${fila(COLOR.pol, '⚙️', 'ARN polimerasa II', 'Es reclutada al promotor por los factores basales y sintetiza el ARN mensajero en dirección 5′→3′.')}
+    ${fila(COLOR.basal, ICONOS.basal, 'Factores basales', `Forman el complejo de preiniciación y permiten que la ARN polimerasa II se una al promotor.<br>Incluyen: ${lista}.`)}
+    ${fila(COLOR.esp, ICONOS.esp, 'Factores específicos', `Se unen a secuencias reguladoras <b>(enhancers o silenciadores)</b> y aumentan o disminuyen la transcripción.<br>Pueden ser <b>activadores</b> o <b>represores</b>.`)}
+    ${fila(COLOR.pol, ICONOS.pol, 'ARN polimerasa II', 'Reconoce el promotor y sintetiza el ARN mensajero<br><b>en dirección 5′ → 3′.</b>')}
   </div></details>
   <details class="lab-tarj" open><summary><h3>¿Qué es cada elemento?</h3></summary><div class="lab-tarj-cuerpo lab-elems">
     ${elem(COLOR.adn, 'ADN', 'Doble hélice que contiene la información genética.', 'adn')}
     ${elem(COLOR.pol, 'ARN polimerasa II', 'Enzima que sintetiza el ARN mensajero.', 'polimerasa')}
-    ${elem(COLOR.basal, 'TFIID, TFIIB, TFIIF, TFIIE, TFIIH', 'Factores basales de transcripción.', 'basal')}
-    ${elem(COLOR.esp, 'Activadores / Represores', 'Proteínas que se unen a secuencias reguladoras.', 'especifico')}
+    ${elem(COLOR.basal, 'TFIID, TFIIB, TFIIF,<br>TFIIE, TFIIH', 'Factores basales de transcripción.', 'basal')}
+    ${elem(COLOR.esp, 'Activadores<br>/ Represores', 'Proteínas que se unen a secuencias reguladoras.', 'especifico')}
     ${elem(COLOR.prom, 'Promotor', 'Secuencia de ADN donde se ensamblan los factores basales.', 'promotor')}
-    ${elem(COLOR.arnm, 'ARNm', 'Copia del gen, sintetizada en dirección 5′→3′.', 'arn')}
+    ${elem(COLOR.arnm, 'ARNm', 'Copia del gen, sintetizada en dirección 5′ → 3′.', 'arn')}
   </div></details>
   <details class="lab-tarj" open><summary><h3>Esquema de la región promotora <small>(eucariotas)</small></h3></summary><div class="lab-tarj-cuerpo">
-    <div class="lab-esq" aria-label="Esquema: enhancer lejano, cajas CAAT y TATA, Inr y sitio de inicio +1">
-      <span class="lab-esq-enh">Enhancer<small>(lejos)</small></span>
-      <div class="lab-esq-barra"><i class="b0"></i><i class="b1"><em>CAAT<br>box</em></i><i class="b2"><em>TATA<br>box</em></i><i class="b3"><em>Inr</em></i><i class="b4"></i></div>
-      <span class="lab-esq-mas">+1</span><span class="lab-esq-ini">Inicio de<br>transcripción</span>
-    </div>
+    ${esquema}
     <div class="lab-tipos"><h4>Tipos de factores</h4><div class="lab-tipos-cols">
       <div style="--c:${COLOR.basal}"><b><i></i>Basales</b><ul><li>TFIID (TBP)</li><li>TFIIB</li><li>TFIIF</li><li>TFIIE</li><li>TFIIH</li></ul></div>
       <div style="--c:${COLOR.esp}"><b><i></i>Específicos</b><ul><li>Activadores</li><li>Represores</li></ul></div>
@@ -336,8 +392,10 @@ function abrirFactores({ app, volver }) {
   app.innerHTML = `
   <main class="lab2" id="lab2">
     <header class="lab-cab">
-      <button class="lab-volver" id="lab-volver" aria-label="Volver al inicio">←<span> Inicio</span></button>
-      <div class="lab-tit">${iconoADN}<div><p class="lab-marca">Parcialito <b>LAB</b></p><h1>Laboratorio de expresión génica</h1><h2>Transcripción y regulación molecular</h2></div></div>
+      <div class="lab-tit">
+        <button class="lab-volver" id="lab-volver" aria-label="Volver al catálogo de laboratorios" title="Volver">←</button>
+        ${iconoADN}<div><h1>Factores de transcripción</h1><h2>Basales y específicos</h2></div>
+      </div>
       <nav class="lab-tabs" role="tablist" aria-label="Secciones del laboratorio">${TABS.map(([id, n, ic], i) => `<button class="lab-tab${i ? '' : ' act'}" role="tab" id="tab-${id}" aria-selected="${i ? 'false' : 'true'}" aria-controls="sec-${id}" data-tab="${id}"><span class="ic" aria-hidden="true">${ic}</span><span>${n}</span></button>`).join('')}</nav>
     </header>
 
@@ -359,7 +417,6 @@ function abrirFactores({ app, volver }) {
         <div class="lab-escenario">
           <div class="lab-escena" id="lab-escena"></div>
           <div class="lab-leyenda-cel" id="lab-leyenda-cel"></div>
-          <div id="lab-explorer-mount">${htmlExplorer()}</div>
           <article class="lab-detalle" id="lab-detalle" aria-live="polite"><span class="lab-det-tipo" id="lab-det-tipo"></span><h3 id="lab-det-nombre"></h3><p id="lab-det-texto"></p><div class="lab-det-dato" id="lab-det-dato"></div></article>
         </div>
       </div>
@@ -424,7 +481,7 @@ function abrirFactores({ app, volver }) {
       el.classList.toggle('en-foco', enFoco(el.dataset.part));
       el.classList.toggle('sel', el.dataset.part === sel);
     });
-    $$('.lab-elem, .lab-explorer-item').forEach((el) => { const active = el.dataset.part === sel; el.classList.toggle('sel', active); if (el.classList.contains('lab-explorer-item')) el.setAttribute('aria-pressed', String(active)); });
+    $$('.lab-elem').forEach((el) => el.classList.toggle('sel', el.dataset.part === sel));
     $$('[data-modo]').forEach((b) => { b.classList.toggle('act', b.dataset.modo === modo); b.setAttribute('aria-checked', b.dataset.modo === modo); });
     $('#lab-pag').textContent = `${paso + 1} / ${PASOS.length}`;
     $('#lab-prev').disabled = paso === 0; $('#lab-next').disabled = paso === PASOS.length - 1;
@@ -457,7 +514,7 @@ function abrirFactores({ app, volver }) {
     seleccionar(el.dataset.part);
     if (el.classList.contains('lab-elem') || el.closest('#lab-leyenda-cel')) $('#lab-detalle').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'nearest' });
   };
-  ['#lab-escena', '#lab-leyenda-cel', '#lab-tarjetas', '#lab-explorer-mount'].forEach((s) => { $(s).addEventListener('click', elegirPieza); $(s).addEventListener('keydown', elegirPieza); });
+  ['#lab-escena', '#lab-leyenda-cel', '#lab-tarjetas'].forEach((s) => { $(s).addEventListener('click', elegirPieza); $(s).addEventListener('keydown', elegirPieza); });
 
   $$('[data-capa-chk]').forEach((i) => i.addEventListener('change', () => { capas[i.dataset.capaChk] = i.checked; aplicar(true); }));
   $$('[data-modo]').forEach((b) => b.addEventListener('click', () => { modo = b.dataset.modo; aplicar(); }));
@@ -549,7 +606,7 @@ function abrirFactores({ app, volver }) {
   $('#lab-volver').addEventListener('click', () => { cerrado = true; cancelAnimationFrame(raf); molstarScrollObserver?.disconnect(); chico.removeEventListener('change', alCambiar); volver(); });
 
   pintarEscena(); ajustarTarjetas();
-  seleccionar('basal'); sel = 'basal'; aplicar(true);
+  aplicar(true);
   window.scrollTo({ top: 0 });
 }
 
@@ -559,7 +616,7 @@ function inyectarEstilos() {
   if (!st) { st = document.createElement('style'); st.id = 'lab2-css'; document.head.appendChild(st); }
   st.textContent = `
 .lab2{--b0:#040a1c;--b1:#081433;--ln:#1c3d8f;--ln2:#2f5fd0;--tx:#eaf1ff;--mu:#9fb3e6;--az:#2f7bff;
-  position:relative;max-width:1260px;margin:0 auto;padding:22px 24px 44px;color:var(--tx);min-height:100dvh;font-family:var(--fuente);
+  position:relative;max-width:1312px;margin:0 auto;padding:22px 24px 44px;color:var(--tx);min-height:100dvh;font-family:var(--fuente);
   background:radial-gradient(60rem 28rem at 12% -6rem,#0f2468 0,transparent 62%),radial-gradient(40rem 24rem at 100% 30%,#1a0f4d55 0,transparent 70%),var(--b0);
   box-shadow:0 0 0 100vmax var(--b0);clip-path:inset(0 -100vmax)}
 .lab2 *{box-sizing:border-box}.lab2 h1,.lab2 h2,.lab2 h3,.lab2 h4,.lab2 p{margin:0}.lab2 button{font:inherit;color:inherit;cursor:pointer}
@@ -612,13 +669,6 @@ function inyectarEstilos() {
 .lab-elems{gap:6px}.lab-elem{display:grid;grid-template-columns:22px minmax(0,.9fr) minmax(0,1.2fr);gap:12px;align-items:center;text-align:left;border:1px solid transparent;background:transparent;border-radius:12px;padding:7px 6px}
 .lab-elem i{width:20px;height:20px;border-radius:50%;background:var(--c);box-shadow:0 0 10px color-mix(in srgb,var(--c) 70%,transparent)}.lab-elem b{color:var(--c);font-size:.84rem;line-height:1.25}.lab-elem span{font-size:.78rem;color:#b4c4ec;line-height:1.35}
 .lab-elem:hover,.lab-elem.sel{background:#102656;border-color:#2a4aa5}
-.lab-esq{position:relative;height:130px;margin-top:4px}.lab-esq-enh{position:absolute;left:0;top:0;border:2px solid #ffb43a;border-radius:10px;padding:5px 11px;color:#ffc866;font-weight:700;font-size:.82rem;line-height:1.1;text-align:center}.lab-esq-enh small{display:block;font-weight:500;font-size:.72rem}
-.lab-esq-enh::after{content:'';position:absolute;left:100%;top:50%;width:46px;height:60px;border:2px solid #ffb43a;border-left:0;border-bottom:0;border-radius:0 40px 0 0;transform:translateY(0)}
-.lab-esq-barra{position:absolute;left:0;right:0;top:62px;height:34px;display:grid;grid-template-columns:.9fr 1fr 1fr .9fr 1fr;border-radius:6px}.lab-esq-barra i{position:relative;display:block}
-.lab-esq-barra .b0{background:#2f7bff;border-radius:6px 0 0 6px}.lab-esq-barra .b1{background:#6a5bff}.lab-esq-barra .b2{background:#ff4f8b}.lab-esq-barra .b3{background:#2f86ff}.lab-esq-barra .b4{background:#7c52ff;border-radius:0 6px 6px 0}
-.lab-esq-barra em{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:112%;padding:5px 2px;border-radius:5px;font-style:normal;font-weight:700;font-size:.72rem;line-height:1.1;text-align:center;color:#fff;background:inherit;box-shadow:0 2px 8px #0008}
-.lab-esq-barra .b1 em{color:#10163d;background:#7567ff}.lab-esq-mas{position:absolute;right:16%;top:12px;font-size:.8rem;color:#c9d8ff}.lab-esq-mas::after{content:'';position:absolute;left:0;top:16px;width:2px;height:70px;background:#5fe0ff}
-.lab-esq-ini{position:absolute;right:0;top:100px;font-size:.7rem;line-height:1.2;color:#9d86ff;text-align:right}
 .lab-tipos{border:1px solid #1f3a85;border-radius:14px;padding:12px 14px}.lab-tipos h4{font-size:.85rem;margin-bottom:8px}.lab-tipos-cols{display:grid;grid-template-columns:1fr 1fr;gap:10px}.lab-tipos b{display:flex;align-items:center;gap:8px;font-size:.82rem;color:#dfe8ff;margin-bottom:4px}.lab-tipos b i{width:11px;height:11px;border-radius:50%;background:var(--c)}
 .lab-tipos ul{margin:0;padding:0;list-style:none;font-size:.78rem;color:#b9c9f2}.lab-tipos li{padding:2px 0 2px 18px;position:relative}.lab-tipos li::before{content:'';position:absolute;left:3px;top:.75em;width:5px;height:5px;border-radius:50%;background:var(--c)}
 .lab-pie{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-top:20px}.lab-clave{flex:1;display:flex;align-items:center;gap:14px;border:1px solid var(--ln);border-radius:999px;background:rgba(8,18,48,.78);padding:12px 24px;min-width:0}
@@ -734,7 +784,6 @@ function inyectarEstilos() {
 .lab2 .lab-ic{width:42px;height:42px;font-size:1.15rem}
 .lab2 .lab-elem{padding:9px 7px;transition:background .16s,border-color .16s}
 .lab2 .lab-elem span{font-size:.77rem;line-height:1.45}
-.lab2 .lab-esq{margin-top:10px}
 .lab2 .lab-tipos{background:rgba(5,14,37,.55)}
 .lab2 .lab-clave{background:linear-gradient(110deg,rgba(8,20,49,.96),rgba(6,15,38,.94));box-shadow:0 6px 20px #0002}
 .lab2 .lab-pager button{transition:transform .15s,background .15s,border-color .15s;box-shadow:inset 0 1px #ffffff10}
@@ -790,7 +839,6 @@ function inyectarEstilos() {
 .lab2 .lab-elem i{grid-area:i;width:17px;height:17px}
 .lab2 .lab-elem b{grid-area:b;font-size:.8rem}
 .lab2 .lab-elem span{grid-area:s;padding-left:26px;font-size:.75rem;line-height:1.45}
-.lab2 .lab-esq{height:138px}
 .lab2 .lab-tipos{background:rgba(4,12,32,.55)}
 .lab2 .lab-pie{margin-top:16px}
 .lab2 .lab-clave{border-radius:16px;background:linear-gradient(110deg,rgba(9,21,51,.98),rgba(5,13,33,.98));box-shadow:0 7px 22px #0002}
@@ -829,7 +877,6 @@ function inyectarEstilos() {
  .lab2 .lab-real-view pdbe-molstar{height:420px!important;touch-action:pan-y}
 }
 
-/* Explorador interactivo y composición editorial del modelo 2D */
 .lab2 .lab-vista{grid-template-columns:228px minmax(0,1fr);gap:18px}
 .lab2 .lab-escena{border:1px solid #1b3978;border-radius:20px;background:radial-gradient(ellipse at 51% 43%,rgba(28,68,145,.27),rgba(4,10,28,.12) 66%);box-shadow:inset 0 1px #ffffff0a,0 14px 32px #0003}
 .lab2 .lab-svg{width:100%;max-height:none}
@@ -837,32 +884,76 @@ function inyectarEstilos() {
 .lab2 .lab-svg .lab-etq rect{filter:drop-shadow(0 5px 12px #0004)}
 .lab2 .lab-svg .lab-etq[data-part],.lab2 .lab-svg .lab-etq[data-capa]{cursor:pointer}
 .lab2 .lab-svg [data-part].sel{filter:drop-shadow(0 0 10px #fff9)}
-.lab2 .lab-explorer{margin-top:14px;padding:16px;border:1px solid #203d7c;border-radius:18px;background:linear-gradient(145deg,rgba(8,20,48,.98),rgba(5,13,32,.98));box-shadow:0 10px 26px #0002}
-.lab2 .lab-explorer-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:14px}
-.lab2 .lab-kicker{display:block;margin-bottom:5px;color:#85aaff;font-size:.65rem;font-weight:800;letter-spacing:.16em}
-.lab2 .lab-explorer-head h3{font-size:1.05rem;color:#eef4ff;letter-spacing:-.02em}
-.lab2 .lab-explorer-head p{max-width:320px;color:#9fb3df;font-size:.78rem;line-height:1.45}
-.lab2 .lab-explorer-groups{display:grid;grid-template-columns:1.05fr 1.2fr .72fr;gap:10px}
-.lab2 .lab-explorer-group{min-width:0;padding:11px;border-radius:13px;background:rgba(4,12,31,.65);border:1px solid #1a3264;border-top:2px solid var(--group)}
-.lab2 .lab-explorer-group h4{min-height:30px;margin:0 0 8px;color:#c7d6f6;font-size:.73rem;line-height:1.4;font-weight:700}
-.lab2 .lab-explorer-items{display:grid;gap:6px}
-.lab2 .lab-explorer-item{display:flex;align-items:center;gap:8px;width:100%;min-width:0;padding:8px 9px;border:1px solid transparent;border-radius:9px;background:#0b1938;color:#dbe6ff;text-align:left;font-size:.75rem;line-height:1.35;transition:background .18s,border-color .18s,transform .18s}
-.lab2 .lab-explorer-item i{flex:0 0 9px;width:9px;height:9px;border-radius:50%;background:var(--part);box-shadow:0 0 10px color-mix(in srgb,var(--part) 40%,transparent)}
-.lab2 .lab-explorer-item span{flex:1;min-width:0}
-.lab2 .lab-explorer-item b{color:#8ea8d8;font-size:.9rem}
-.lab2 .lab-explorer-item:hover{transform:translateY(-1px);background:#122750;border-color:#345ba0}
-.lab2 .lab-explorer-item.sel,.lab2 .lab-explorer-item[aria-pressed=true]{background:color-mix(in srgb,var(--part) 15%,#0a1632);border-color:var(--part);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--part) 18%,transparent)}
-.lab2 .lab-explorer-hint{display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:12px;padding-top:11px;border-top:1px solid #1b3264;color:#9fb3df;font-size:.68rem}
-.lab2 .lab-explorer-hint span{color:#8fb4ff;font-weight:800}
-.lab2 .lab-explorer-hint i{width:20px;height:1px;background:#39588d}
-.lab2 #lab-explorer-mount{min-width:0}
 .lab2 .lab-detalle{margin-top:12px}
 .lab2 .lab-detalle:not(.hay){display:none}
 .lab2 .lab-tarjetas{margin-top:18px;gap:14px}
 .lab2 .lab-tarj{border-radius:17px}
-@media(max-width:1120px){.lab2 .lab-explorer-groups{grid-template-columns:1fr 1fr}.lab2 .lab-explorer-group:last-child{grid-column:1/-1}.lab2 .lab-explorer-group:last-child .lab-explorer-items{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:900px){.lab2 .lab-vista{grid-template-columns:1fr}.lab2 .lab-explorer-groups{grid-template-columns:1fr 1fr}.lab2 .lab-explorer-group:last-child{grid-column:1/-1}}
-@media(max-width:600px){.lab2 .lab-explorer{padding:12px}.lab2 .lab-explorer-head{align-items:start;flex-direction:column;gap:5px}.lab2 .lab-explorer-head p{max-width:none}.lab2 .lab-explorer-groups{grid-template-columns:1fr}.lab2 .lab-explorer-group:last-child{grid-column:auto}.lab2 .lab-explorer-group:last-child .lab-explorer-items{grid-template-columns:1fr}.lab2 .lab-explorer-item{font-size:.8rem;padding:10px}.lab2 .lab-svg{max-height:none}}
+
+/* ===== Diseño de referencia (PC y tablet): réplica de la imagen del laboratorio de transcripción ===== */
+@media(min-width:761px){
+ .lab2{padding:20px 22px 44px;background:radial-gradient(ellipse at 56% 22%,rgba(27,70,160,.20),transparent 50%),radial-gradient(ellipse at 96% 66%,rgba(104,58,210,.11),transparent 38%),#040a1f}
+ .lab2 .lab-cab{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px 24px}
+ .lab2 .lab-tit{display:flex;align-items:center;gap:14px}
+ .lab2 .lab-tit>svg{width:48px;height:52px;flex:none;filter:drop-shadow(0 0 10px #9b6dff66)}
+ .lab2 .lab-tit h1{font-size:clamp(1.45rem,2.2vw,1.72rem);font-weight:700;letter-spacing:-.01em;line-height:1.12;color:#e3ebff}
+ .lab2 .lab-tit h2{margin-top:1px;font-size:clamp(1.05rem,1.6vw,1.3rem);font-weight:600;line-height:1.2;color:#cfdbff}
+ .lab2 .lab-volver{display:grid;place-items:center;width:34px;height:34px;padding:0;flex:none;border-radius:50%;font-size:1rem;line-height:1;border-color:#27458f;background:#0a1a42}
+ .lab2 .lab-tabs{grid-column:auto;justify-self:auto;padding:6px;border-color:#25418a;background:rgba(8,20,54,.92)}
+ .lab2 .lab-tab{padding:10px 23px;font-size:.92rem}
+ .lab2 .lab-tab.act{background:linear-gradient(180deg,#3f66ff,#2f4de6);box-shadow:0 0 22px #3b5bff77,inset 0 1px #ffffff40}
+ .lab2 .lab-intro{max-width:33em;margin:14px 0 20px;font-size:.88rem;line-height:1.5;color:#b6c8f4}
+
+ .lab2 .lab-panel{padding:10px 13px 14px;border-radius:22px;border-color:#27458f}
+ .lab2 .lab-grupo{padding:9px 0}
+ .lab2 .lab-grupo>summary{padding:2px 0 7px;font-size:.84rem}
+ .lab2 .lab-capa-op{padding:6.5px 2px;gap:8px;font-size:.8rem}
+ .lab2 .lab-punto{width:14px;height:14px;flex:0 0 14px}
+ .lab2 .lab-capa-op input:not(:checked)+.lab-punto{opacity:.45;box-shadow:none}
+ .lab2 .lab-sw{width:32px;height:19px;flex:0 0 32px}
+ .lab2 .lab-sw::after{top:2.5px;left:2.5px;width:14px;height:14px}
+ .lab2 .lab-capa-op input:checked~.lab-sw::after{transform:translateX(13px)}
+ .lab2 .lab-modos{gap:6px}
+ .lab2 .lab-modos button{padding:8px 10px;border-radius:10px;font-size:.82rem}
+ .lab2 .lab-play{width:28px;height:28px;flex:0 0 28px}
+ .lab2 .lab-reiniciar{margin-top:6px;padding:8px;border-radius:11px;font-size:.85rem;background:#13306f}
+
+ .lab2 .lab-escena{border:0;border-radius:0;background:none;box-shadow:none;overflow:visible}
+ .lab2 .lab-svg{filter:none;max-height:none}
+ .lab2 .lab-svg .lab-leader{stroke-width:1.5}
+ .lab2 .lab-svg .lab-etq rect{filter:none}
+ .lab2 .lab-detalle{margin-top:6px}
+
+ .lab2 .lab-tarjetas{margin-top:22px;gap:18px}
+ .lab2 .lab-tarj{padding:16px 20px;border-radius:16px;border-color:#25438c}
+ .lab2 .lab-tarj h3{font-size:.94rem;letter-spacing:-.01em}
+ .lab2 .lab-tarj-cuerpo{margin-top:14px;gap:16px}
+ .lab2 .lab-fila-f{grid-template-columns:42px 1fr;gap:12px}
+ .lab2 .lab-ic{width:42px;height:42px;font-size:1rem;border:2px solid color-mix(in srgb,var(--c) 55%,#fff);background:radial-gradient(circle at 35% 28%,color-mix(in srgb,var(--c) 92%,#fff),color-mix(in srgb,var(--c) 78%,#000));box-shadow:0 0 16px color-mix(in srgb,var(--c) 45%,transparent)}
+ .lab2 .lab-fila-f h4{margin-bottom:3px;font-size:.98rem}
+ .lab2 .lab-fila-f p{font-size:.81rem;line-height:1.5;color:#a9c1f2}
+ .lab2 .lab-fila-f p b{color:#eaf1ff;font-weight:600}
+ .lab2 .lab-fila-f u{text-decoration-thickness:1px;text-underline-offset:2px}
+ .lab2 .lab-elems{gap:0}
+ .lab2 .lab-elem{display:grid;grid-template-columns:30px 92px minmax(0,1fr);grid-template-areas:none;gap:0 10px;align-items:center;min-height:48px;padding:5px 4px;border-radius:12px}
+ .lab2 .lab-elem i{grid-area:auto;width:27px;height:27px}
+ .lab2 .lab-elem b{grid-area:auto;font-size:.67rem;line-height:1.25}
+ .lab2 .lab-elem span{grid-area:auto;padding-left:0;font-size:.67rem;line-height:1.4;color:#b4c6ee}
+ .lab2 .lab-esq{display:block;width:100%;height:auto;margin-top:0;overflow:visible}
+ .lab2 .lab-tipos{margin-top:0;padding:11px 16px 12px;border-color:#25438c;border-radius:12px;background:rgba(5,14,38,.5)}
+ .lab2 .lab-tipos h4{margin-bottom:8px;font-size:.88rem}
+ .lab2 .lab-tipos b{margin-bottom:3px;font-size:.82rem}
+ .lab2 .lab-tipos ul{font-size:.76rem}
+ .lab2 .lab-tipos li{padding:1px 0 1px 19px}
+
+ .lab2 .lab-pie{margin-top:20px;gap:24px;align-items:center}
+ .lab2 .lab-clave{flex:0 1 58%;border-radius:999px;padding:12px 26px;border-color:#2b4a98;background:rgba(7,18,46,.9);box-shadow:none}
+ .lab2 .lab-clave p{font-size:.78rem;line-height:1.5}
+ .lab2 .lab-pager{margin-left:auto;gap:16px}
+ .lab2 .lab-pager span{font-size:.86rem}
+ .lab2 .lab-pager button{width:44px;height:44px;border-radius:12px;font-size:1.5rem;background:#10285e;border-color:#2f58b8}
+}
+@media(min-width:901px){.lab2 .lab-vista{grid-template-columns:224px minmax(0,1fr);gap:22px}}
+@media(min-width:1101px){.lab2 .lab-tarjetas{grid-template-columns:1.2fr 1.1fr 1fr}}
 
 @media(prefers-reduced-motion:reduce){.lab2 *{animation:none!important;transition:none!important}}
 
