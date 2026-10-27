@@ -114,7 +114,7 @@ export function abrirCromosomas({app,volver}) {
   root.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));
   if(tab==='ciclo'){
    const n=ploidia==='2n'?46:23,anafase=fase==='Anafase',rep=!['G1','S'].includes(fase);
-   const crom=anafase?n*2:n, cromat=fase==='G1'?n:fase==='S'?'En duplicación':n*2;
+   const crom=anafase?n*2:n, cromat=fase==='G1'||fase==='Telofase'?n:fase==='S'?'En duplicación':n*2;
    const baseC=ploidia==='2n'?'2C':'1C'; const adn=fase==='G1'?baseC:fase==='S'?(ploidia==='2n'?'2C → 4C':'1C → 2C'):['G2','Profase','Metafase','Anafase'].includes(fase)?(ploidia==='2n'?'4C':'2C'):'se distribuye';
    const desc={G1:'La célula crece y mantiene cromosomas de una cromátida.',S:'Se replica el ADN: las cromátidas hermanas se van formando.',G2:'El ADN ya está duplicado; cada cromosoma tiene dos cromátidas.',Profase:'La cromatina se condensa y los cromosomas se vuelven visibles.',Metafase:'Los cromosomas duplicados se alinean en el plano ecuatorial.',Anafase:'Las cromátidas hermanas se separan y cada una pasa a ser un cromosoma.',Telofase:'Se reorganizan los núcleos y comienza la descondensación.'}[fase];
    const phases=['G1','S','G2','Profase','Metafase','Anafase','Telofase'];
