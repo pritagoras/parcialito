@@ -115,9 +115,9 @@ function inicializarSintesis(root){
  let molde='TACGGACTT',paso=0;
  const arnBase={A:'U',T:'A',C:'G',G:'C'};
  const adnBase={A:'T',T:'A',C:'G',G:'C'};
- const limpio=()=>input.value.toUpperCase().replace(/\\s+/g,'');
+ const limpio=()=>input.value.toUpperCase().replace(/\s+/g,'');
  function preparar(nuevo){
-  const seq=String(nuevo).toUpperCase().replace(/\\s+/g,'');
+  const seq=String(nuevo).toUpperCase().replace(/\s+/g,'');
   if(!seq || !/^[ATCG]+$/.test(seq) || seq.length>24){
    input.setAttribute('aria-invalid','true');
    root.querySelector('[data-synth-status]').textContent='Secuencia no válida: ingresá entre 1 y 24 bases usando solo A, T, C y G.';
