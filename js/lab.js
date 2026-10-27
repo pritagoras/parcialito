@@ -6,6 +6,7 @@ import { abrirCromosomas } from './cromosomas.js?v=20261027-1';
 import { abrirComunicacion } from './comunicacion.js?v=20261027-3';
 import { abrirTraduccion } from './traduccion.js?v=20261027-3';
 import { abrirProteinaG } from './proteina-g.js?v=20261027-2';
+import { abrirMitosis } from './mitosis.js?v=20261027-1';
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
 // Tablero con cuatro secciones: Vista, Explicación, Comparador y Preguntas.
@@ -329,7 +330,8 @@ export function abrirLab({ app, volver }) {
     {id:'replicacion', icon:'🧬', grupo:'DUPLICACIÓN DEL ADN', titulo:'Duplicación del ADN · laboratorio integrador', desc:'Unificá el modelo de replicación, la horquilla, el cuadro comparativo y el crucigrama en un solo recorrido interactivo.', activo:true, tono:'azul'},
     {id:'bases', icon:'🧬', grupo:'GENÉTICA MOLECULAR', titulo:'Laboratorio de bases', desc:'Practicá complementariedad, flujo de bases, codones, anticodones y diferencias entre ADN y ARN con ejercicios interactivos.', activo:true, tono:'verde'},
     {id:'transcripcion', icon:'🧬', grupo:'GENÉTICA MOLECULAR', titulo:'Transcripción: del ADN al ARN', desc:'Seguí la iniciación, apertura local, elongación y terminación con una animación interactiva del proceso.', activo:true, tono:'azul'},
-    {id:'cromosomas', icon:'🧬', grupo:'NÚCLEO Y CROMATINA', titulo:'Laboratorio de cromosomas', desc:'Explorá el ciclo celular, las cromátidas, la compactación de la cromatina, las deleciones y los cariotipos con modelos visuales interactivos.', activo:true, tono:'violeta'},
+    {id:'cromosomas', icon:'🧬', grupo:'NÚCLEO Y CROMATINA', titulo:'Laboratorio de cromosomas', desc:'Explorá la estructura, compactación de la cromatina y los cariotipos con modelos visuales interactivos.', activo:true, tono:'violeta'},
+    {id:'mitosis', icon:'🧫', grupo:'DIVISIÓN CELULAR', titulo:'Mitosis y citocinesis', desc:'Recorré profase temprana y tardía, metafase, anafase, telofase y citocinesis con animación guiada, mecanismos moleculares y desafío interactivo.', activo:true, tono:'verde'},
     {id:'proteina-g', icon:'🧬', grupo:'SEÑALIZACIÓN CELULAR', titulo:'Proteínas G: cascadas y apagado de la señal', desc:'Compará Gs, Gi y Gq con cascadas visuales; explorá AMPc/PKA, IP₃/DAG/Ca²⁺ y los mecanismos que terminan la señal.', activo:true, tono:'violeta'},
     {id:'comunicacion', icon:'📡', grupo:'SEÑALIZACIÓN Y UNIONES GAP', titulo:'Comunicación celular y sinapsis', desc:'Explorá los mecanismos de señalización, la transmisión sináptica y las uniones comunicantes formadas por conexones y conexinas.', activo:true, tono:'violeta'},
     {id:'neuro', icon:'⚡', grupo:'NEUROBIOLOGÍA', titulo:'Impulso nervioso y sinapsis', desc:'Espacio preparado para potencial de acción, canales iónicos y transmisión sináptica.', tono:'ambar'},
@@ -364,6 +366,7 @@ export function abrirLab({ app, volver }) {
       else if(t.id==='bases') abrirBases({app,volver:mostrarCatalogo});
       else if(t.id==='transcripcion') abrirTranscripcion({app,volver:mostrarCatalogo});
       else if(t.id==='cromosomas') abrirCromosomas({app,volver:mostrarCatalogo});
+      else if(t.id==='mitosis') abrirMitosis({app,volver:mostrarCatalogo});
       else if(t.id==='comunicacion') abrirComunicacion({app,volver:mostrarCatalogo});
       else if(t.id==='proteina-g') abrirProteinaG({app,volver:mostrarCatalogo});
       else mostrarEspacio(t);
