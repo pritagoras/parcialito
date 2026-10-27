@@ -7,6 +7,8 @@ import { abrirComunicacion } from './comunicacion.js?v=20261027-3';
 import { abrirTraduccion } from './traduccion.js?v=20261027-3';
 import { abrirProteinaG } from './proteina-g.js?v=20261027-2';
 import { abrirMitosis } from './mitosis.js?v=20261027-12';
+import { abrirMeiosis } from './meiosis.js?v=20261027-1';
+
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
 // Tablero con cuatro secciones: Vista, Explicación, Comparador y Preguntas.
@@ -340,6 +342,12 @@ export function abrirLab({ app, volver }) {
   ];
   inyectarEstilos();
   inyectarEstilosCatalogo();
+  function abrirDivisionCelular(){
+    app.innerHTML=`<section class="mitlab"><button class="ml-back" id="div-back">← Volver al catálogo</button><header class="ml-hero"><div><div class="ml-kicker">PARCIALITO LAB · DIVISIÓN CELULAR</div><h1>Laboratorio de división celular</h1><p>Elegí uno de los dos sublaboratorios. Cada uno tiene su propio recorrido por fases, estructuras y mecanismos.</p></div></header><div class="ml-layout"><button class="ml-card" id="go-mitosis"><h2>🧫 Sublab 1 · Mitosis y citocinesis</h2><p>Una división nuclear: separación de cromátidas hermanas y formación de dos células hijas con la misma dotación cromosómica.</p><strong>Abrir mitosis →</strong></button><button class="ml-card" id="go-meiosis"><h2>🧬 Sublab 2 · Meiosis I y II</h2><p>Dos divisiones consecutivas: apareamiento de homólogos, crossing-over, separación de homólogos y luego de cromátidas hermanas.</p><strong>Abrir meiosis →</strong></button></div></section>`;
+    app.querySelector('#div-back').onclick=mostrarCatalogo;
+    app.querySelector('#go-mitosis').onclick=()=>abrirMitosis({app,volver:abrirDivisionCelular});
+    app.querySelector('#go-meiosis').onclick=()=>abrirMeiosis({app,volver:abrirDivisionCelular});
+  }
   function tarjeta(t) {
     return `<button type="button" class="lab-cat-card tono-${t.tono}" data-lab-card="${t.id}">
       <span class="lab-cat-cardtop"><span class="lab-cat-icon">${t.icon}</span><span class="lab-cat-status ${t.activo?'status-on':''}"><i></i>${t.activo?'INTERACTIVO':'ESPACIO DISPONIBLE'}</span></span>
@@ -366,7 +374,7 @@ export function abrirLab({ app, volver }) {
       else if(t.id==='bases') abrirBases({app,volver:mostrarCatalogo});
       else if(t.id==='transcripcion') abrirTranscripcion({app,volver:mostrarCatalogo});
       else if(t.id==='cromosomas') abrirCromosomas({app,volver:mostrarCatalogo});
-      else if(t.id==='mitosis') abrirMitosis({app,volver:mostrarCatalogo});
+      else if(t.id==='mitosis') abrirDivisionCelular();
       else if(t.id==='comunicacion') abrirComunicacion({app,volver:mostrarCatalogo});
       else if(t.id==='proteina-g') abrirProteinaG({app,volver:mostrarCatalogo});
       else mostrarEspacio(t);
