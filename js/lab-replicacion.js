@@ -1,6 +1,6 @@
 // Laboratorio integrador: reutiliza las actividades originales, sin duplicar sus versiones.
 import { abrirReplicacion } from './replicacion.js?v=dev';
-import { abrirHorquilla } from './horquilla.js?v=dev';
+import { abrirHorquilla } from './horquilla.js?v=20261027-1';
 import { abrirBases } from './bases.js?v=dev';
 import { abrirCuadro } from './cuadro.js?v=dev';
 const ARCHIVO='data/lab-duplicacion-adn.json';
