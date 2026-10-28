@@ -36,7 +36,8 @@ const css = `
 .mitlab .ml-detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:15px}.mitlab .ml-detail{border:1px solid #20386f;background:#09152d;border-radius:14px;padding:14px}.mitlab .ml-detail b{display:block;color:var(--mint);font-size:.84rem;margin-bottom:7px}.mitlab .ml-detail p{color:#b4c5ec;font-size:.82rem;margin:0}
 .mitlab .ml-mini-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 15px}.mitlab .ml-mini-tabs button.active{border-color:var(--mint);background:#103b47}.mitlab .ml-compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mitlab .ml-compare article{border:1px solid #20386f;border-radius:14px;background:#08142a;padding:15px}.mitlab .ml-compare h3{margin:0 0 8px;font-size:1rem}.mitlab .ml-compare p{color:#bacaf0;font-size:.87rem;margin:0}
 .mitlab .ml-q{font-size:1.12rem;font-weight:750;line-height:1.5;margin:18px 0}.mitlab .ml-answers{display:grid;grid-template-columns:1fr 1fr;gap:9px}.mitlab .ml-answer{text-align:left;display:flex;gap:10px;align-items:flex-start}.mitlab .ml-answer .letter{display:grid;place-items:center;min-width:27px;height:27px;border-radius:8px;background:#1a2d5c;font-weight:800}.mitlab .ml-answer.good{border-color:#3ed9a5;background:#10372f}.mitlab .ml-answer.bad{border-color:#ff7096;background:#3a1830}.mitlab .ml-feedback{color:#c3d2f4;min-height:38px;margin:13px 0}.mitlab .ml-muted{color:#9db2e1;font-size:.84rem}
-@keyframes ml-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}.mitlab .ml-animated{animation:ml-float 3.4s ease-in-out infinite}.mitlab .ml-chrom{transition:transform .45s ease,opacity .35s;animation:ml-float 2.8s ease-in-out infinite}
+@keyframes ml-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}.mitlab .ml-animated{animation:ml-float 3.4s ease-in-out infinite}.mitlab .ml-chrom{transition:transform .45s ease,opacity .35s}
+@media(prefers-reduced-motion:no-preference){.mitlab .ml-chromosome{transform-box:fill-box;transform-origin:center;animation:ml-chrom-enter .38s ease-out both}.mitlab .ml-travel-left{animation:ml-travel-left .82s cubic-bezier(.2,.7,.25,1) both}.mitlab .ml-travel-right{animation:ml-travel-right .82s cubic-bezier(.2,.7,.25,1) both}@keyframes ml-chrom-enter{from{opacity:.2;scale:.78}to{opacity:1;scale:1}}@keyframes ml-travel-left{from{translate:55px 0;opacity:.55}to{translate:0 0;opacity:1}}@keyframes ml-travel-right{from{translate:-55px 0;opacity:.55}to{translate:0 0;opacity:1}}}
 @media(max-width:850px){.mitlab .ml-layout{grid-template-columns:1fr}.mitlab .ml-scene{min-height:240px}.mitlab .ml-phases{grid-template-columns:repeat(3,minmax(0,1fr))}.mitlab .ml-detail-grid{grid-template-columns:1fr}.mitlab .ml-orbit{width:95px;flex-basis:95px}}
 @media(max-width:540px){.mitlab .ml-hero{align-items:flex-start}.mitlab .ml-orbit{width:65px;flex-basis:65px}.mitlab .ml-nav{position:static}.mitlab .ml-stats{grid-template-columns:1fr 1fr}.mitlab .ml-answers,.mitlab .ml-compare{grid-template-columns:1fr}.mitlab .ml-head{display:block}.mitlab .ml-chip{display:inline-block;margin-top:9px}.mitlab .ml-controls{align-items:stretch}.mitlab .ml-scene-controls{margin-top:8px}.mitlab .ml-controlgroup{width:100%}.mitlab .ml-controlgroup button{flex:1}}
 @media(prefers-reduced-motion:reduce){.mitlab *{animation:none!important;transition:none!important}}
@@ -51,7 +52,7 @@ function cellSvg(step){
  const telo=stage.startsWith('telofase'), cyto=stage.startsWith('citocinesis'), final=stage==='citocinesis-final';
  const colors=['#a99aff','#c7aaff','#63e8c3','#46c9a9'];
  const names=['Homólogo 1 · par A','Homólogo 2 · par A','Homólogo 1 · par B','Homólogo 2 · par B'];
- const chrom=(x,y,scale=1,angle=0,color='#a99aff',single=false)=>'<g transform="translate('+x+' '+y+') rotate('+angle+') scale('+scale+')"><path d="'+(single?'M-5 -19 L5 19':'M-12 -21 L0 0 L-12 21 M12 -21 L0 0 L12 21')+'" stroke="'+color+'" stroke-width="7" stroke-linecap="round" fill="none"/></g>';
+ const chrom=(x,y,scale=1,angle=0,color='#a99aff',single=false,movement='')=>'<g class="ml-chromosome '+movement+'" transform="translate('+x+' '+y+') rotate('+angle+') scale('+scale+')"><path d="'+(single?'M-5 -19 L5 19':'M-12 -21 L0 0 L-12 21 M12 -21 L0 0 L12 21')+'" stroke="'+color+'" stroke-width="7" stroke-linecap="round" fill="none"/><circle cx="0" cy="0" r="5.2" fill="#ffcf78" stroke="#fff0c2" stroke-width="1.4"/></g>';
  const cent=(x,y,angle)=>'<g transform="translate('+x+' '+y+') rotate('+angle+')"><rect x="-11" y="-4" width="22" height="8" rx="4" fill="#ffcf78" stroke="#ffe4a7"/><rect x="-4" y="-11" width="8" height="22" rx="4" fill="#ffcf78" stroke="#ffe4a7"/></g>';
  let cell='', nuclei='', fibers='', chromosomes='', centrosomes='', labels='',mid='';
  if(final){
@@ -92,7 +93,7 @@ function cellSvg(step){
        const y=earlyA?112+i*35:105+i*39;
        const lx=earlyA?140-(i%2)*6:102+(i%2)*13;
        const rx=earlyA?220+(i%2)*6:258-(i%2)*13;
-       chromosomes+=chrom(lx,y,.52,-55,colors[i],true)+chrom(rx,y,.52,55,colors[i],true);
+       chromosomes+=chrom(lx,y,.52,-55,colors[i],true,'ml-travel-left')+chrom(rx,y,.52,55,colors[i],true,'ml-travel-right');
        // kinetochore fibers follow the separated daughter chromosomes
        fibers+='<g stroke="#54cfe6" stroke-width="1.35" fill="none" opacity=".78"><path d="M75 180 Q'+(95)+' '+y+' '+lx+' '+y+'"/><path d="M285 180 Q265 '+y+' '+rx+' '+y+'"/></g>';
      }
