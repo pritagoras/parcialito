@@ -812,6 +812,30 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 }
 
 
+/* Acceso destacado al segundo parcial */
+.banner-segundo {
+  position: relative; isolation: isolate; overflow: hidden; margin: 18px 0 12px; padding: 17px;
+  border: 1px solid rgba(255, 187, 64, .88); border-radius: 20px;
+  background: radial-gradient(ellipse at 92% -15%, rgba(255, 228, 112, .7), transparent 37%),
+    linear-gradient(125deg, #e94379 0%, #a52bd0 47%, #5438de 100%);
+  box-shadow: 0 12px 34px rgba(70, 18, 114, .35), inset 0 1px rgba(255,255,255,.28);
+}
+.banner-segundo::after { content:""; position:absolute; z-index:-1; width:170px; height:170px; right:-54px; bottom:-115px; border:1px solid rgba(255,255,255,.24); border-radius:50%; box-shadow:0 0 0 17px rgba(255,255,255,.06),0 0 0 35px rgba(255,255,255,.04); }
+.sp-cabecera { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.sp-sello { color:#3a1746; background:#ffe47a; border:1px solid rgba(255,255,255,.65); border-radius:999px; padding:4px 9px; font-size:.65rem; font-weight:900; letter-spacing:.1em; }
+.sp-numero { color:rgba(255,255,255,.75); font-weight:900; font-size:.8rem; letter-spacing:.16em; }
+.banner-segundo h2 { margin:9px 0 3px; color:#fff9ed; font-size:clamp(1.55rem,6vw,2rem); line-height:1.1; letter-spacing:-.035em; }
+.sp-descripcion { color:#ffe8f4; font-size:.85rem; margin:0 0 13px; }
+.sp-tema { display:flex; align-items:center; gap:11px; width:100%; padding:11px; text-align:left; color:#fff9ed; border:1px solid rgba(255,255,255,.5); border-radius:14px; background:rgba(32,14,73,.62); box-shadow:inset 0 1px rgba(255,255,255,.12); font:inherit; transition:transform .18s,border-color .18s,background .18s; }
+.sp-tema:hover { transform:translateY(-2px); border-color:#fff2a8; background:rgba(32,14,73,.78); }
+.sp-tema:focus-visible { outline:3px solid #fff2a8; outline-offset:3px; }
+.sp-tema-icono { display:grid; place-items:center; flex:0 0 42px; width:42px; height:42px; border-radius:12px; background:linear-gradient(145deg,#ffe47a,#ffad53); font-size:1.35rem; }
+.sp-tema-texto { display:grid; flex:1; min-width:0; gap:2px; }
+.sp-tema-texto strong { font-size:.88rem; line-height:1.3; }
+.sp-tema-texto small { color:#f5cee4; font-size:.72rem; }
+.sp-tema-accion { display:flex; align-items:center; gap:5px; color:#fff2a8; white-space:nowrap; font-size:.75rem; font-weight:800; }
+.sp-tema-accion b { font-size:1rem; }
+
 /* Acceso a Parcialito LAB */
 .banner-lab {
   width: 100%; display: flex; align-items: center; gap: 14px; margin: 18px 0 22px;
@@ -829,4 +853,4 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 .banner-lab-text small { color:var(--tenue); line-height:1.45; font-size:.82rem; }
 .banner-lab-nuevo { vertical-align:middle; margin-left:6px; padding:3px 6px; border-radius:6px; font-size:.58rem; letter-spacing:.08em; color:#170f2e; background:#b9a4ff; }
 .banner-lab-flecha { color:#bba8ff; font-size:1.4rem; padding:0 4px; }
-@media(max-width:480px) { .banner-lab { padding:13px; gap:10px; } .banner-lab-icon { width:40px; height:40px; flex-basis:40px; } .banner-lab-text small { font-size:.76rem; } }
+@media(max-width:480px) { .banner-segundo { padding:14px; }.sp-tema { gap:8px; padding:9px; }.sp-tema-icono { flex-basis:38px; width:38px; height:38px; }.sp-tema-texto strong { font-size:.8rem; }.sp-tema-accion { font-size:.7rem; }.banner-lab { padding:13px; gap:10px; } .banner-lab-icon { width:40px; height:40px; flex-basis:40px; } .banner-lab-text small { font-size:.76rem; } }

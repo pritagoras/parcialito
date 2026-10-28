@@ -682,6 +682,16 @@ function vistaInicio() {
         </div>
       </header>
       <p class="bajada">Elegí una materia y practicá con preguntas de opción múltiple.</p>
+      <section class="banner-segundo" aria-labelledby="segundo-parcial-titulo">
+        <div class="sp-cabecera"><span class="sp-sello">✦ NUEVO ESPACIO</span><span class="sp-numero">02</span></div>
+        <h2 id="segundo-parcial-titulo">Segundo parcial</h2>
+        <p class="sp-descripcion">Un lugar destacado para preparar los temas del segundo parcial.</p>
+        <button class="sp-tema" id="btn-sp-ciclo" type="button">
+          <span class="sp-tema-icono" aria-hidden="true">🧬</span>
+          <span class="sp-tema-texto"><strong>Ciclo celular, mitosis y meiosis</strong><small>5 preguntas · Opción múltiple</small></span>
+          <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
+        </button>
+      </section>
       <button class="banner-lab" id="btn-lab" type="button"><span class="banner-lab-icon">🧬</span><span class="banner-lab-text"><strong>LAB <span class="banner-lab-nuevo">NUEVO</span></strong><small>Explorá la biología con modelos interactivos y recorridos guiados.</small></span><span class="banner-lab-flecha">↗</span></button>
       ${estaInstalada() || !esCelular() ? '' : `
         <div class="instalar-app-wrap">
@@ -729,6 +739,7 @@ function vistaInicio() {
     </main>`;
 
   document.getElementById('btn-sonido').addEventListener('click', alternarSonido);
+  document.getElementById('btn-sp-ciclo')?.addEventListener('click', () => { Sonido.clic(); lanzarSegundoParcial(); });
   document.getElementById('btn-lab')?.addEventListener('click', () => { Sonido.clic(); abrirLab({ app, volver: vistaInicio }); });
   document.getElementById('btn-instalar-app')?.addEventListener('click', instalarParcialito);
   document.getElementById('btn-errores')?.addEventListener('click', () => { Sonido.clic(); lanzarErrores(); });
@@ -743,6 +754,54 @@ function vistaInicio() {
   app.querySelectorAll('.materia').forEach((b) =>
     b.addEventListener('click', () => { Sonido.clic(); vistaMateria(Number(b.dataset.materia)); }));
   pintarTarjetasInicio();
+}
+
+function lanzarSegundoParcial() {
+  const temaId = 'segundo-parcial/ciclo-celular-mitosis-meiosis';
+  const base = [
+    {
+      texto: '¿En qué etapa del ciclo celular se duplica el ADN antes de la división?',
+      opciones: ['G1', 'S', 'G2', 'M'], correcta: 1,
+      explicacion: 'La fase S de la interfase es cuando se replica el ADN. Así, cada cromosoma queda formado por dos cromátidas hermanas antes de comenzar la división.'
+    },
+    {
+      texto: '¿Qué se separa durante la anafase I de la meiosis?',
+      opciones: ['Las cromátidas hermanas', 'Los cromosomas homólogos', 'Los nucléolos', 'Los centrómeros de cada cromosoma'], correcta: 1,
+      explicacion: 'En anafase I se separan los cromosomas homólogos. Los centrómeros no se dividen y las cromátidas hermanas permanecen unidas hasta anafase II.'
+    },
+    {
+      texto: '¿En qué proceso ocurre el crossing-over que genera cromátidas recombinantes?',
+      opciones: ['Profase I de meiosis', 'Metafase de mitosis', 'Anafase II de meiosis', 'Citocinesis'], correcta: 0,
+      explicacion: 'Durante profase I, cromátidas no hermanas de cromosomas homólogos intercambian segmentos equivalentes de ADN en los quiasmas.'
+    },
+    {
+      texto: '¿Cuál es el resultado habitual de una meiosis completa en una célula diploide?',
+      opciones: ['Dos células diploides idénticas', 'Cuatro células haploides', 'Una célula tetraploide', 'Dos células haploides idénticas'], correcta: 1,
+      explicacion: 'La meiosis comprende dos divisiones y produce habitualmente cuatro células haploides, con combinaciones genéticas distintas.'
+    },
+    {
+      texto: '¿Qué sucede en la anafase de la mitosis?',
+      opciones: ['Se aparean los cromosomas homólogos', 'Se separan las cromátidas hermanas', 'Se replica el ADN', 'Se forman cuatro núcleos haploides'], correcta: 1,
+      explicacion: 'En la anafase mitótica, los centrómeros se dividen y las cromátidas hermanas migran a polos opuestos, conservando el número cromosómico en cada célula hija.'
+    }
+  ];
+  const pool = base.map((q, i) => ({
+    ...q,
+    id: hash(`${temaId}|${i}|${q.texto}`),
+    tema: 'Ciclo celular, mitosis y meiosis',
+    temaId,
+    materia: 'Segundo parcial',
+  }));
+  const meta = {
+    titulo: 'Segundo parcial',
+    temaId,
+    ranking: false,
+    materiaNombre: 'Segundo parcial',
+    temaNombre: 'Ciclo celular, mitosis y meiosis',
+    repetir: () => lanzarSegundoParcial(),
+    volver: () => vistaInicio(),
+  };
+  empezarJuego(pool, meta);
 }
 
 function alternarSonido() {
