@@ -809,7 +809,9 @@ async function lanzarSegundoParcial() {
     repetir: () => lanzarSegundoParcial(),
     volver: () => vistaInicio(),
   };
-  empezarJuego(pool, meta);
+  // Barajar al iniciar cada partida (también al pulsar «Jugar de nuevo»).
+  // Se mezcla una copia para no alterar el pool cacheado ni el orden de origen de los JSON.
+  empezarJuego(mezclar(pool), meta);
 }
 
 // Actualiza el cartel del banner con la cantidad real de preguntas.
