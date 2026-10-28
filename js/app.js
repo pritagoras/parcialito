@@ -243,6 +243,9 @@ function normalizar(json, tema, materia) {
       tema: tema.nombre,
       temaId: tema.id,
       materia: materia.nombre,
+      // Procedencia exacta para que cada reporte pueda volver al JSON original.
+      archivoJson: tema.archivo || null,
+      numeroPregunta: n + 1,
     });
   });
   return salida;
@@ -773,7 +776,7 @@ async function cargarSegundoParcial() {
     if (!rr.ok) { console.warn(`[Segundo parcial] No se pudo leer ${t.archivo} (${rr.status})`); return []; }
     const json = await rr.json();
     const stem = t.archivo.replace(/^.*\//, '').replace(/\.json$/, '');
-    return normalizar(json, { id: `segundo-parcial/${stem}`, nombre: json.tema || stem }, materia);
+    return normalizar(json, { id: `segundo-parcial/${stem}`, nombre: json.tema || stem, archivo: t.archivo }, materia);
   }));
   const vistas = new Set();
   const pool = [];
@@ -1487,7 +1490,10 @@ function abrirReporte(q, boton) {
     try {
       await enviarReporte({
         pregunta_id: q.id,
+        pregunta_hash: q.id,
         tema_id: q.temaId,
+        archivo_json: q.archivoJson || null,
+        pregunta_numero: q.numeroPregunta || null,
         pregunta: q.texto.slice(0, 300),
         correcta: q.opciones[q.correcta].slice(0, 200),
         motivo: dlg.querySelector('#reporte-motivo').value,
