@@ -18,7 +18,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 DATA = RAIZ / "data"
 LETRAS = "ABCD"
-ACTIVIDADES = {"replicacion", "cuadro", "horquilla", "bases", "crucigrama"}   # actividades interactivas que conoce la app (carpeta js/)
+ACTIVIDADES = {"replicacion", "cuadro", "horquilla", "bases", "crucigrama", "division"}   # actividades interactivas que conoce la app (carpeta js/)
 
 # Frases que delatan una explicación atada al orden de las opciones.
 # La app mezcla las opciones, así que "la opción B" dejaría de tener sentido.

@@ -14,6 +14,7 @@ import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js?v=dev';
 import { abrirHorquilla, TITULO as TITULO_HORQUILLA } from './horquilla.js?v=dev';
 import { abrirBases, TITULO as TITULO_BASES } from './bases.js?v=dev';
 import { abrirCrucigrama } from './crucigrama.js?v=dev';
+import { abrirDivision, TITULO as TITULO_DIVISION } from './division.js?v=dev';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -24,6 +25,7 @@ const ACTIVIDADES = {
   cuadro: { titulo: TITULO_CUADRO, icono: '📊', abrir: abrirCuadro },
   horquilla: { titulo: TITULO_HORQUILLA, icono: '🧪', abrir: abrirHorquilla },
   bases: { titulo: TITULO_BASES, icono: '🧬', abrir: abrirBases },
+  division: { titulo: TITULO_DIVISION, icono: '🔬', abrir: abrirDivision },
 };
 
 const LETRAS = ['A', 'B', 'C', 'D'];

@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-26T03:05:35Z",
+  "generado": "2026-10-28T00:55:02Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -139,7 +139,10 @@
           "id": "biologia-celular2/01-nucleo-interfasico",
           "nombre": "Núcleo interfásico",
           "archivo": "data/biologia-celular2/01-nucleo-interfasico.json",
-          "preguntas": 63
+          "preguntas": 63,
+          "actividad": [
+            "division"
+          ]
         },
         {
           "id": "biologia-celular2/02-transcripcion-test",
@@ -181,7 +184,8 @@
             "replicacion",
             "cuadro",
             "horquilla",
-            "bases"
+            "bases",
+            "crucigrama"
           ]
         },
         {
