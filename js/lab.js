@@ -9,7 +9,7 @@ import { abrirProteinaG } from './proteina-g.js?v=20261027-2';
 import { abrirMitosis } from './mitosis.js?v=20261027-13';
 import { abrirMeiosis } from './meiosis.js?v=20261028-1';
 import { abrirCantidadADN } from './cantidad-adn.js?v=20261028-1';
-import { abrirComparadorDivision } from './comparador-division.js?v=20261028-3';
+import { abrirComparadorDivision } from './comparador-division.js?v=20261028-4';
 
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
