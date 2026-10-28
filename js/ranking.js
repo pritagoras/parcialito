@@ -134,11 +134,23 @@ export async function registrarIntentos(filas) {
 // Reporte de una pregunta mal armada o con la respuesta equivocada.
 // La web solo puede escribir; se revisa desde el panel de Supabase.
 export async function enviarReporte(fila) {
-  await pedir('reportes_preguntas', {
+  const opciones = {
     method: 'POST',
     headers: { Prefer: 'return=minimal' },
     body: JSON.stringify(fila),
-  });
+  };
+  try {
+    await pedir('reportes_preguntas', opciones);
+  } catch (error) {
+    // Compatibilidad temporal: si Supabase todavía no tiene las columnas
+    // de procedencia, reintentar con los campos originales para no perder el reporte.
+    const { archivo_json, pregunta_numero, pregunta_hash, ...filaCompatible } = fila;
+    if (!('archivo_json' in fila) && !('pregunta_numero' in fila) && !('pregunta_hash' in fila)) throw error;
+    await pedir('reportes_preguntas', {
+      ...opciones,
+      body: JSON.stringify(filaCompatible),
+    });
+  }
 }
 
  // Comentarios públicos: se pueden leer y agregar desde la web.
