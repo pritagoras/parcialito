@@ -62,9 +62,9 @@ function dibujo(n){
   s+=single(66,126,A,-12,null,'travel-left')+single(116,126,A,12,B,'travel-right')+single(66,164,G,-12,null,'travel-left')+single(116,164,G,12,null,'travel-right')+single(234,126,B,-12,A,'travel-left')+single(284,126,B,12,null,'travel-right')+single(234,164,Y,-12,null,'travel-left')+single(284,164,Y,12,null,'travel-right');
   s+=txt(180,39,'SEPARACIÓN DE CROMÁTIDAS HERMANAS',11,G)+txt(94,244,'n = 2',10)+txt(266,244,'n = 2',10)+txt(180,286,'Cada cromátida pasa a ser un cromosoma',10);
  }else if(n===9){
-  s+=cell(94,145,68,78)+cell(266,145,68,78)+nucleus(94,145,43)+nucleus(266,145,43)+nucleus(94,145,25)+nucleus(266,145,25);
-  s+=single(80,126,A,-12)+single(108,164,G,12)+single(252,126,B,-12)+single(280,164,Y,12);
-  s+=txt(180,39,'RECONSTITUCIÓN DE NÚCLEOS',12,G)+txt(94,244,'2n? No: n = 2',10)+txt(266,244,'n = 2',10)+txt(180,286,'Cuatro núcleos haploides en total',10);
+  s+=cell(94,145,68,78)+cell(266,145,68,78)+nucleus(73,128,24)+nucleus(115,162,24)+nucleus(245,128,24)+nucleus(287,162,24);
+  s+=single(73,128,A,-12)+single(115,162,G,12)+single(245,128,B,-12)+single(287,162,Y,12);
+  s+=txt(180,39,'RECONSTITUCIÓN DE NÚCLEOS',12,G)+txt(94,244,'2 núcleos haploides',10)+txt(266,244,'2 núcleos haploides',10)+txt(180,286,'Cuatro núcleos haploides en total',10);
  }else{
   const pos=[[82,87,A],[278,87,B],[82,204,G],[278,204,Y]];
   pos.forEach(([x,y,c])=>{s+=cell(x,y,38,42)+nucleus(x,y,24)+single(x-9,y,c,-8)+single(x+9,y,c,8)});
