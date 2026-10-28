@@ -863,6 +863,7 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 .pantalla-segundo-limpia .ayuda-teclas { display:none; }
 .pantalla-segundo-limpia .hud { justify-content:flex-start; margin-bottom:.7rem; }
 .pantalla-segundo-limpia .acciones { min-height:0; margin:.65rem 0 0; }
+.pantalla-segundo-limpia .acciones #btn-sig[hidden] { display:none; }
 .pantalla-segundo-limpia .pie-tarjeta-abajo { margin-top:.25rem; padding-top:.3rem; border-top:1px solid rgba(184,171,219,.12); }
 .pantalla-segundo-limpia .reportar { font-size:.76rem; font-weight:500; opacity:.78; }
 .pantalla-segundo-limpia .reportar:hover,.pantalla-segundo-limpia .reportar:focus-visible { opacity:1; }
