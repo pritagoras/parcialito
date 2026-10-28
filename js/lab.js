@@ -8,7 +8,7 @@ import { abrirTraduccion } from './traduccion.js?v=20261027-3';
 import { abrirProteinaG } from './proteina-g.js?v=20261027-2';
 import { abrirMitosis } from './mitosis.js?v=20261027-13';
 import { abrirMeiosis } from './meiosis.js?v=20261027-7';
-import { abrirCantidadADN } from './cantidad-adn.js?v=20261027-4';
+import { abrirCantidadADN } from './cantidad-adn.js?v=20261027-5';
 
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
