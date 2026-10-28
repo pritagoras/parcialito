@@ -10,9 +10,6 @@ alter table public.reportes_preguntas
 create index if not exists reportes_preguntas_hash_idx
   on public.reportes_preguntas (pregunta_hash);
 
-create index if not exists reportes_preguntas_creado_idx
-  on public.reportes_preguntas (creado desc);
-
 comment on column public.reportes_preguntas.archivo_json is
   'Ruta del JSON de origen dentro del repositorio Parcialito, por ejemplo data/biologia-celular/04-tema-celula-eucariota.json';
 comment on column public.reportes_preguntas.pregunta_numero is
