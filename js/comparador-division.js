@@ -20,8 +20,8 @@ const meiosis = [
 ['Anafase II','Las cromátidas hermanas se separan hacia polos opuestos.','Separación de hermanas','División ecuacional, semejante a la mitosis en este aspecto.'],
 ['Telofase II y citocinesis','Se forman los núcleos y se completa la separación de los productos celulares.','4 productos haploides','Cada producto tiene la mitad del número de cromosomas de la célula original.']
 ];
-export function abrirComparadorDivision({app,volver}){
- let modo='visual',fase=0,varModo='cross',paso=0,auto=null;
+export function abrirComparadorDivision({app,volver,initialMode='visual'}){
+ let modo=initialMode,fase=0,varModo='cross',paso=0,auto=null;
  const stop=()=>{if(auto)clearInterval(auto);auto=null;};
  const C=['#a99aff','#ff9f78','#63e8c3','#f3ce67'];
  const chrom=(x,y,c,dup=true,swap=null)=>dup?'<g transform="translate('+x+' '+y+')"><path d="M-7 -19L7 19M7 -19L-7 19" stroke="'+c+'" stroke-width="5" stroke-linecap="round"/>'+(swap?'<path d="M1 4L7 19" stroke="'+swap+'" stroke-width="5" stroke-linecap="round"/>':'')+'<circle r="3" fill="#fff0b5"/></g>':'<g transform="translate('+x+' '+y+')"><path d="M-5 -17L0 0L-5 17M5 -17L0 0L5 17" stroke="'+c+'" stroke-width="5" stroke-linecap="round"/>'+(swap?'<path d="M1 4L5 16" stroke="'+swap+'" stroke-width="5"/>':'')+'<circle r="2.5" fill="#fff0b5"/></g>';
