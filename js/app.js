@@ -795,6 +795,7 @@ function lanzarSegundoParcial() {
   const meta = {
     titulo: 'Segundo parcial',
     temaId,
+    estilo: 'hoja-parcial',
     ranking: false,
     materiaNombre: 'Segundo parcial',
     temaNombre: 'Ciclo celular, mitosis y meiosis',
@@ -1238,7 +1239,15 @@ function empezarJuego(pool, meta) {
   };
 
   app.innerHTML = `
-    <main class="pantalla">
+    <main class="pantalla ${meta.estilo === 'hoja-parcial' ? 'pantalla-hoja-parcial' : ''}">
+      ${meta.estilo === 'hoja-parcial' ? `
+        <header class="hoja-membrete">
+          <div class="hoja-marca"><span>PARCIALITO</span><i>·</i><span>BIOLOGÍA</span></div>
+          <span class="hoja-tipo">EVALUACIÓN DE PRÁCTICA</span>
+          <h1>Segundo parcial</h1>
+          <p>Ciclo celular · Mitosis y meiosis</p>
+          <div class="hoja-datos"><span>Nombre y apellido <i></i></span><span>Fecha <i></i></span></div>
+        </header>` : ''}
       <div class="hud">
         <button class="icono" id="btn-salir" aria-label="Salir de la partida">✕</button>
         <div class="progreso" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="${pool.length}" aria-valuenow="0"><div class="barra" id="barra"></div></div>
@@ -1524,7 +1533,7 @@ function vistaResultado() {
     </details>`).join('');
 
   app.innerHTML = `
-    <main class="pantalla resultado">
+    <main class="pantalla resultado ${j.meta.estilo === 'hoja-parcial' ? 'pantalla-hoja-parcial' : ''}">
       <div class="grande" aria-hidden="true">${emoji}</div>
       <h1>${titulo}</h1>
       <p class="sub">${sub}</p>
