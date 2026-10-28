@@ -1,0 +1,177 @@
+{
+  "materia": "Biología 2",
+  "tema": "Mitosis y meiosis",
+  "preguntas": [
+    {
+      "pregunta": "La división del citoplasma que permite separar el material citoplasmático entre las dos células hijas se denomina:",
+      "opciones": ["Citocinesis", "Cariocinesis", "Interfase", "Intercinesis"],
+      "correcta": "A",
+      "explicacion": "La citocinesis es la etapa en la que el citoplasma celular se divide para dar lugar a dos células hijas independientes."
+    },
+    {
+      "pregunta": "En la etapa S de la interfase ocurre el siguiente proceso:",
+      "opciones": [
+        "La síntesis de pared celular",
+        "La duplicación del ADN y la síntesis de histonas",
+        "La separación de las cromátidas hermanas",
+        "La desorganización de la envoltura nuclear"
+      ],
+      "correcta": "B",
+      "explicacion": "Durante la fase S de la interfase tiene lugar la replicación del ADN y la síntesis de histonas para empaquetar las nuevas moléculas."
+    },
+    {
+      "pregunta": "El factor promotor de la síntesis (FPS) está constituido por la asociación entre:",
+      "opciones": ["Cdk1 y Ciclina M", "Cdk1 y Ciclina G1", "Cdk2 y Ciclina G1", "Cdk2 y Ciclina M"],
+      "correcta": "C",
+      "explicacion": "El FPS se forma por la unión de la quinasa Cdk2 con la ciclina G1 para permitir la transición a la fase S."
+    },
+    {
+      "pregunta": "El factor promotor de la mitosis (FPM) ejerce su función reguladora al:",
+      "opciones": [
+        "Degradar la proteína securina",
+        "Sintetizar las cadenas retardadas de ADN",
+        "Recomponer la envoltura nuclear",
+        "Fosforilar las láminas nucleares y las condensinas"
+      ],
+      "correcta": "D",
+      "explicacion": "El FPM fosforila láminas nucleares para desorganizar la envoltura nuclear y condensinas para empaquetar los cromosomas en profase."
+    },
+    {
+      "pregunta": "La alineación completa de los cromosomas condensados en la placa ecuatorial define la fase mitótica llamada:",
+      "opciones": ["Profase", "Prometafase", "Anafase", "Metafase"],
+      "correcta": "D",
+      "explicacion": "Durante la metafase, los cromosomas unidos al huso se ubican ordenadamente en el plano ecuatorial de la célula."
+    },
+    {
+      "pregunta": "En las células animales, la citocinesis se lleva a cabo mediante un estrangulamiento guiado por un anillo contráctil formado por:",
+      "opciones": ["Microtúbulos y tubulina", "Pectina y celulosa", "Actina y miosina", "Láminas y condensinas"],
+      "correcta": "C",
+      "explicacion": "Un anillo ecuatorial compuesto por microfilamentos de actina y miosina genera la constricción que divide el citoplasma animal."
+    },
+    {
+      "pregunta": "Si una célula diploide humana completa la mitosis pero no efectúa la citocinesis, el resultado es:",
+      "opciones": ["Una célula binucleada", "Dos células haploides", "Cuatro células haploides", "Una célula aneuploide en G0"],
+      "correcta": "A",
+      "explicacion": "Al dividirse el núcleo (cariocinesis) sin fragmentar el citoplasma (citocinesis), ambos núcleos permanecen en la misma célula."
+    },
+    {
+      "pregunta": "Una célula somática humana en el período G2 de la interfase presenta un contenido de cromosomas y ADN de:",
+      "opciones": [
+        "2n = 46 cromosomas no duplicados y 2C de ADN",
+        "2n = 46 cromosomas duplicados y 4C de ADN",
+        "n = 23 cromosomas duplicados y 2C de ADN",
+        "2n = 92 cromosomas no duplicados y 4C de ADN"
+      ],
+      "correcta": "B",
+      "explicacion": "Tras replicar el ADN en la fase S, la célula mantiene su ploidía diploide (46 cromosomas) pero duplica sus cromátidas, alcanzando 4C de ADN."
+    },
+    {
+      "pregunta": "La subetapa de la profase I meiótica en la cual ocurre el apareamiento o sinapsis de los cromosomas homólogos es el:",
+      "opciones": ["Leptonema", "Paquinema", "Cigonema", "Diplonema"],
+      "correcta": "C",
+      "explicacion": "Durante el cigonema los cromosomas homólogos se reconocen y alinean formando el complejo sinaptonémico."
+    },
+    {
+      "pregunta": "En la anafase I de la meiosis se produce la separación de:",
+      "opciones": [
+        "Las cromátidas hermanas hacia polos opuestos",
+        "Los cromosomas homólogos hacia polos opuestos",
+        "Los centríolos hacia la placa ecuatorial",
+        "Las ciclinas de sus quinasas dependientes"
+      ],
+      "correcta": "B",
+      "explicacion": "La primera división meiótica es reduccional porque separa los cromosomas homólogos de cada par, mientras las cromátidas hermanas siguen unidas."
+    },
+    {
+      "pregunta": "La consecuencia meiótica que convierte a la primera división en reduccional es que las células resultantes son:",
+      "opciones": [
+        "Diploides con cromosomas de 1 cromátide",
+        "Diploides con cromosomas de 2 cromátides",
+        "Haploides con cromosomas de 2 cromátides",
+        "Haploides con cromosomas de 1 cromátide"
+      ],
+      "correcta": "C",
+      "explicacion": "Al final de la meiosis I cada célula tiene un solo juego completo de cromosomas (n), aunque cada cromosoma aún posee dos cromátidas."
+    },
+    {
+      "pregunta": "En la anafase II de la meiosis se separan:",
+      "opciones": ["Los bivalentes apareados", "Los cromosomas homólogos", "Las vesículas de Golgi", "Las cromátidas hermanas"],
+      "correcta": "D",
+      "explicacion": "La meiosis II es una división ecuacional análoga a la mitosis donde se separan las cromátidas hermanas de cada cromosoma."
+    },
+    {
+      "pregunta": "La segunda división meiótica se diferencia de la mitosis común en que la meiosis II:",
+      "opciones": [
+        "Comienza a partir de células haploides sin duplicación previa del ADN",
+        "No requiere la formación del huso acromático",
+        "Ocurre en células somáticas en período G1",
+        "Duplica el número de cromosomas mediante sinapsis"
+      ],
+      "correcta": "A",
+      "explicacion": "La meiosis II se inicia en células haploides derivadas de la meiosis I y no presenta una fase S en la intercinesis intermedia."
+    },
+    {
+      "pregunta": "En la espermatogénesis humana, cada espermatocito primario da origen finalmente a:",
+      "opciones": [
+        "Un espermatozoide funcional y tres cuerpos polares",
+        "Cuatro espermátidas haploides que se diferencian en espermatozoides",
+        "Dos espermatogonias diploides e idénticas",
+        "Ocho gametas haploides sin flagelo"
+      ],
+      "correcta": "B",
+      "explicacion": "Las dos divisiones meióticas del espermatocito primario generan cuatro espermátidas haploides de igual tamaño que luego pasan por espermiogénesis."
+    },
+    {
+      "pregunta": "La diseminación de células tumorales desde un tumor primario hacia otros órganos mediante vasos sanguíneos o linfáticos se denomina:",
+      "opciones": ["Espermiogénesis", "Sinapsis", "Metástasis", "Transducción"],
+      "correcta": "C",
+      "explicacion": "La metástasis es la propagación y establecimiento de focos tumorales secundarios a partir del desprendimiento del tumor original."
+    },
+    {
+      "pregunta": "Los microtúbulos del huso mitótico que unen los centrosomas directamente a los cinetocoros cromosómicos se llaman:",
+      "opciones": ["Cinetocóricos", "Polares", "Astrales", "Interzonales"],
+      "correcta": "A",
+      "explicacion": "Los microtúbulos cinetocóricos o cromosómicos son aquellos que se anclan en las estructuras proteicas de los centrómeros."
+    },
+    {
+      "pregunta": "El complejo proteico que mantiene unidas a las cromátidas hermanas a lo largo de su estructura durante G2 y profase se denomina:",
+      "opciones": ["Condensina", "Tubulina", "Cohesina", "Actina"],
+      "correcta": "C",
+      "explicacion": "Las cohesinas garantizan la cohesión entre las cromátidas duplicadas desde su replicación hasta su escisión en la anafase."
+    },
+    {
+      "pregunta": "El conjunto de cuatro cromátidas formado por el apareamiento completo de un par de homólogos en profase I recibe el nombre de:",
+      "opciones": ["Diploide", "Quiasma", "Centrómero", "Tétrada"],
+      "correcta": "D",
+      "explicacion": "Al aparearse los dos cromosomas homólogos (cada uno duplicado con dos cromátidas), el conjunto reúne cuatro cromátidas o tétrada."
+    },
+    {
+      "pregunta": "El punto de control M o de control del huso verifica que:",
+      "opciones": [
+        "El ADN esté completamente replicado sin lesiones",
+        "Todos los cromosomas estén unidos y orientados bimodalmente al huso",
+        "La célula haya alcanzado el tamaño mínimo en la etapa G1",
+        "La ciclina M haya sido destruida por la separasa"
+      ],
+      "correcta": "B",
+      "explicacion": "El punto M supervisa el correcto acoplamiento de cada cinetocoro al huso para evitar errores de no disyunción en la anafase."
+    },
+    {
+      "pregunta": "Al observar una célula diploide de una especie con 2n = 14 en la anafase mitótica, el número total de cromosomas en la célula es:",
+      "opciones": ["7", "14", "28", "56"],
+      "correcta": "C",
+      "explicacion": "En la anafase, al separarse las cromátidas hermanas, cada una pasa a contarse como un cromosoma hijo individual, duplicando temporalmente el total celular a 28."
+    },
+    {
+      "pregunta": "Las dos fuentes principales de variabilidad genética introducidas exclusivamente durante la meiosis son:",
+      "opciones": [
+        "La replicación semiconservativa y la citocinesis",
+        "La degradación de securina y la síntesis de histonas",
+        "La fosforilación de láminas y la reparación por escisión",
+        "El crossing-over y la segregación independiente de homólogos"
+      ],
+      "correcta": "D",
+      "explicacion": "La recombinación por entrecruzamiento en profase I y la orientación y separación al azar de los homólogos generan la diversidad genética de las gametas."
+    }
+  ]
+}
