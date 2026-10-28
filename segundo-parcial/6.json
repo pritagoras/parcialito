@@ -164,7 +164,7 @@
         "cualquier tipo de neurona funcional cuando transmite un impulso nervioso.",
         "las células gliales del sistema nervioso central."
       ],
-      "correcta": "E",
+      "correcta": "C",
       "explicacion": "La apertura de los canales de Na+ dependientes de voltaje y el consiguiente ingreso de sodio es el mecanismo despolarizante común a todas las neuronas activas."
     },
     {
@@ -175,7 +175,7 @@
         "una inhibición inmediata de la señal postsináptica.",
         "una persistencia prolongada de dopamina generando una estimulación sostenida."
       ],
-      "correcta": "E",
+      "correcta": "D",
       "explicacion": "Al inhibir el transportador de recaptación, la dopamina permanece más tiempo en el espacio sináptico estimulando de forma continua los receptores postsinápticos."
     },
     {
@@ -186,7 +186,7 @@
         "continua hacia un receptor sensorial.",
         "saltatoria por axones amielínicos."
       ],
-      "correcta": "E",
+      "correcta": "B",
       "explicacion": "En el SNP, la mielinización por células de Schwann genera los nódulos de Ranvier que permiten la conducción saltatoria hacia los efectores."
     },
     {
@@ -230,7 +230,7 @@
         "el cromosoma sexual Y.",
         "el ADN mitocondrial exclusivamente."
       ],
-      "correcta": "E",
+      "correcta": "B",
       "explicacion": "Las afecciones ligadas al sexo recesivas corresponden a loci ubicados en el cromosoma X, expresándose fenotípicamente en varones hemicigotas."
     },
     {
@@ -329,7 +329,7 @@
         "23 pares de autosomas.",
         "ningún cromosoma sexual."
       ],
-      "correcta": "E",
+      "correcta": "B",
       "explicacion": "Las espermátides son células haploides (n = 23) compuestas por 22 autosomas simples y un único cromosoma sexual (X o Y)."
     },
     {
@@ -340,7 +340,7 @@
         "la proteína sintetizada mantendrá exactamente la misma secuencia de aminoácidos.",
         "la proteína perderá completamente su función de transporte."
       ],
-      "correcta": "E",
+      "correcta": "C",
       "explicacion": "Las mutaciones silenciosas cambian la base de un codón por un triplete sinónimo que codifica el mismo aminoácido, conservando la secuencia de la proteína."
     },
     {

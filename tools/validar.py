@@ -164,7 +164,9 @@ def validar_archivo(ruta: Path):
         elif not all(isinstance(o, str) and o.strip() for o in ops):
             errores.append(e + "todas las opciones deben ser texto no vacío.")
         else:
-            normales = [" ".join(o.lower().split()) for o in ops]
+            # La mayúscula puede cambiar el significado de un genotipo (RR, Rr, rr).
+            # Normalizamos espacios, pero conservamos el resto del texto.
+            normales = [" ".join(o.split()) for o in ops]
             if len(set(normales)) < 4:
                 errores.append(e + "hay opciones repetidas.")
             if any(COMODINES.search(o) for o in normales):
