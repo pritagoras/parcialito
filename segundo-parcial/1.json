@@ -1,0 +1,1227 @@
+{
+  "materia": "Biología Celular y Molecular",
+  "tema": "Parciales de Biología (Integrador)",
+  "preguntas": [
+    {
+      "pregunta": "Con respecto a la replicación del ADN se puede afirmar que:",
+      "opciones": [
+        "al finalizar, cada molécula de ADN sintetizada presenta una cadena nueva y una cadena original.",
+        "la RNA polimerasa es la encargada de polimerizar las nuevas cadenas utilizando nucleósidos trifosfatados.",
+        "está modulada por factores de transcripción que se unen a las regiones promotoras.",
+        "es la responsable de generar los cromosomas homólogos durante la fase S del ciclo celular."
+      ],
+      "correcta": "A",
+      "explicacion": "La replicación del ADN es un proceso semiconservativo, lo que significa que cada molécula hija conserva una hebra parental intacta y contiene una hebra recién sintetizada."
+    },
+    {
+      "pregunta": "Según el Dogma Central de la Biología Molecular:",
+      "opciones": [
+        "la secuencia de aminoácidos de un polipéptido permite determinar unívocamente la secuencia de nucleótidos del ARN.",
+        "la secuencia de nucleótidos del ADN permite determinar unívocamente la secuencia de nucleótidos del ARN.",
+        "la secuencia de aminoácidos de un polipéptido puede determinar unívocamente la secuencia de nucleótidos del ADN.",
+        "la replicación debe ocurrir previamente a la transcripción y a la traducción de un gen."
+      ],
+      "correcta": "B",
+      "explicacion": "La secuencia de ADN determina exactamente la secuencia del ARN transcrito por complementariedad de bases, mientras que el proceso inverso no permite reconstruir la secuencia original debido a la degeneración del código genético."
+    },
+    {
+      "pregunta": "En relación con el proceso de transcripción se puede afirmar que:",
+      "opciones": [
+        "requiere ribosomas que lean la cadena molde en dirección 5' a 3'.",
+        "da como resultado directo un polipéptido.",
+        "se produce exclusivamente en regiones de heterocromatina.",
+        "requiere de la ARN polimerasa y otros factores proteicos."
+      ],
+      "correcta": "D",
+      "explicacion": "La transcripción es el proceso mediante el cual la ARN polimerasa y diversas proteínas auxiliares sintetizan moléculas de ARN a partir de un molde de ADN."
+    },
+    {
+      "pregunta": "Acerca del proceso de corte y empalme (splicing) del ARN se puede afirmar que:",
+      "opciones": [
+        "puede dar lugar a distintos ARN mensajeros maduros.",
+        "ocurre principalmente en el citoplasma.",
+        "se eliminan los exones dejando solo los intrones.",
+        "alarga la molécula de ARN mensajero al agregar nucleótidos."
+      ],
+      "correcta": "A",
+      "explicacion": "El procesamiento de corte y empalme elimina los intrones y une los exones, permitiendo que el splicing alternativo genere diferentes ARN mensajeros a partir de un mismo transcripto."
+    },
+    {
+      "pregunta": "En relación con el código genético, se puede afirmar que:",
+      "opciones": [
+        "contiene información estructural para la síntesis de los tres tipos de ARN.",
+        "cada aminoácido puede estar codificado por más de un codón.",
+        "cada codón puede codificar múltiples aminoácidos diferentes.",
+        "el de una célula humana y el de una célula de ratón son totalmente distintos."
+      ],
+      "correcta": "B",
+      "explicacion": "El código genético es degenerado o redundante, lo que implica que la mayoría de los aminoácidos pueden ser especificados por más de una tripleta o codón."
+    },
+    {
+      "pregunta": "Se dice que un organismo es transgénico cuando se le ha introducido un gen de un organismo de otra especie. Este gen expresa la misma proteína que en el organismo de origen debido a que:",
+      "opciones": [
+        "el código genético es universal.",
+        "todos los seres vivos están constituidos por células.",
+        "el código genético es degenerado.",
+        "todos los seres vivos sintetizan sus proteínas a partir de los mismos aminoácidos."
+      ],
+      "correcta": "A",
+      "explicacion": "La conservación del código genético a través de las especies permite que la maquinaria celular de un organismo interprete los codones de un gen foráneo produciendo la misma secuencia aminoacídica."
+    },
+    {
+      "pregunta": "En un tubo de ensayo se colocan ARNm de ratón, ribosomas y enzimas de traducción de perro, aminoácidos unidos a ARNt de cabra y ATP. ¿A qué organismo corresponderá el polipéptido sintetizado?",
+      "opciones": [
+        "Solo de perro.",
+        "Solo de cabra.",
+        "Una mezcla de polipéptidos de cabra y de ratón.",
+        "Solo de ratón."
+      ],
+      "correcta": "D",
+      "explicacion": "La secuencia del ARN mensajero es la que contiene la información instructiva que determina el orden de los aminoácidos en la proteína sintetizada."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes factores constituye un cambio heredable que se podría observar en el fenotipo?",
+      "opciones": [
+        "Errores en el proceso de traducción.",
+        "Errores en la replicación del ADN.",
+        "Ocurrencia de mutaciones silenciosas.",
+        "Errores simultáneos en la transcripción y traducción."
+      ],
+      "correcta": "B",
+      "explicacion": "Los errores no corregidos durante la duplicación del ADN se fijan en el material genético y se transmiten a las células hijas como mutaciones hereditarias."
+    },
+    {
+      "pregunta": "Una mutación en el gen que codifica un polipéptido:",
+      "opciones": [
+        "siempre es el resultado de inserciones o deleciones de nucleótidos.",
+        "siempre altera la estructura final de la proteína afectando su función.",
+        "siempre produce polipéptidos más cortos que el silvestre.",
+        "a veces puede producir cambios en la secuencia de aminoácidos del polipéptido."
+      ],
+      "correcta": "D",
+      "explicacion": "Debido a la redundancia del código genético y a la ubicación del cambio, una alteración en la secuencia de nucleótidos puede modificar el aminoácido codificado o resultar silenciosa."
+    },
+    {
+      "pregunta": "En un núcleo interfásico:",
+      "opciones": [
+        "la cromatina se encuentra totalmente condensada.",
+        "se encuentra tanto eucromatina como heterocromatina.",
+        "se encuentra desorganizada la envoltura nuclear.",
+        "no se observa el nucléolo por falta de actividad."
+      ],
+      "correcta": "B",
+      "explicacion": "Durante la interfase, la cromatina presenta regiones laxas o transcripcionalmente activas (eucromatina) y regiones condensadas o inactivas (heterocromatina)."
+    },
+    {
+      "pregunta": "Con respecto a las ciclinas durante el control del ciclo celular:",
+      "opciones": [
+        "el aumento de su concentración detiene por completo el ciclo celular.",
+        "su alta concentración es característica de células en estado G0.",
+        "el aumento de su concentración puede promover el ingreso a la mitosis.",
+        "el aumento de su concentración detiene la replicación del ADN."
+      ],
+      "correcta": "C",
+      "explicacion": "Las ciclinas regulan la progresión del ciclo celular activando quinasas dependientes de ciclinas (CDK), promoviendo la transición entre fases como el pasaje a mitosis."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes características NO corresponde a una célula cancerosa?",
+      "opciones": [
+        "Presencia de la enzima telomerasa activa.",
+        "Detenimiento prolongado del ciclo celular en la fase G1.",
+        "Mitosis y proliferación descontrolada.",
+        "Acumulación de mutaciones en genes supresores de tumores."
+      ],
+      "correcta": "B",
+      "explicacion": "Las células tumorales pierden los mecanismos de control que inducen la detención en los puntos de chequeo, por lo que avanzan de forma continua en el ciclo celular."
+    },
+    {
+      "pregunta": "La apoptosis es un mecanismo genéticamente programado que:",
+      "opciones": [
+        "puede activarse cuando el genoma se encuentra severamente dañado.",
+        "ocurre en todas las células en algún momento del ciclo celular.",
+        "conduce a la proliferación celular masiva.",
+        "solo se produce cuando el gen p53 presenta una mutación inactivante."
+      ],
+      "correcta": "A",
+      "explicacion": "La muerte celular programada o apoptosis se desencadena frente a señales internas como un daño irreparable en el ADN para evitar la propagación de células anómalas."
+    },
+    {
+      "pregunta": "La división mitótica de una célula somática de mamífero (2n) origina:",
+      "opciones": [
+        "gametas haploides.",
+        "gametas diploides.",
+        "dos células somáticas diploides.",
+        "cuatro células somáticas haploides."
+      ],
+      "correcta": "C",
+      "explicacion": "La mitosis es una división conservativa que duplica la célula madre produciendo dos células hijas genéticamente idénticas y con la misma cantidad de cromosomas (2n)."
+    },
+    {
+      "pregunta": "¿Cuáles de las siguientes células de un mismo individuo tienen igual cantidad de ADN?",
+      "opciones": [
+        "Un fibroblasto en profase y un astrocito en fase G2.",
+        "Una neurona en fase G0 y un fibroblasto en profase.",
+        "Una espermátide y una espermatogonia.",
+        "Un ovocito primario en profase I y un hepatocito en fase G1."
+      ],
+      "correcta": "A",
+      "explicacion": "Tanto una célula en la fase G2 como una que atraviesa la profase ya han completado la replicación de su material genético en la fase S, poseyendo una cantidad equivalente de ADN (4C)."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes afirmaciones es correcta respecto de la meiosis?",
+      "opciones": [
+        "Es un proceso ecuacional porque separa entre las células hijas el ADN duplicado durante la fase S.",
+        "Es un proceso reduccional como consecuencia de la segregación de los cromosomas homólogos.",
+        "Ocurre en células somáticas de forma de regenerar tejidos dañados.",
+        "Genera células hijas genéticamente idénticas a la célula madre."
+      ],
+      "correcta": "B",
+      "explicacion": "Durante la primera división meiótica se separan los pares de cromosomas homólogos, lo que reduce la dotación cromosómica a la mitad (de diploide a haploide)."
+    },
+    {
+      "pregunta": "La mitosis y la meiosis tienen en común que:",
+      "opciones": [
+        "en ambas se produce la separación de cromosomas homólogos y cromátides hermanas.",
+        "las células hijas de ambas tienen la misma dotación cromosómica que la célula madre.",
+        "ambas ocurren con frecuencia en células somáticas.",
+        "ambas dependen de la polimerización y despolimerización de microtúbulos."
+      ],
+      "correcta": "D",
+      "explicacion": "Ambos tipos de división celular emplean el huso acromático compuesto por microtúbulos para el anclaje, alineación y separación de los cromosomas."
+    },
+    {
+      "pregunta": "El conejo es un organismo mamífero diploide con 2n = 44. Por tanto, una cigota de conejo tiene:",
+      "opciones": [
+        "42 cromosomas somáticos (autosomas) + un par de cromosomas sexuales.",
+        "22 cromosomas totales en su núcleo.",
+        "44 pares de cromosomas autosómicos.",
+        "44 autosomas no sexuales."
+      ],
+      "correcta": "A",
+      "explicacion": "En un organismo diploide de 44 cromosomas, el genoma se organiza en 21 pares de autosomas (42 en total) y un par de cromosomas sexuales que determinan el sexo."
+    },
+    {
+      "pregunta": "En cierta planta, la resistencia a un herbicida es dominante (R) y la sensibilidad es recesiva (r). La descendencia de un cruzamiento consta de 510 sensibles y 490 resistentes. Los genotipos de los progenitores son:",
+      "opciones": [
+        "RR y rr",
+        "Rr y Rr",
+        "Rr y rr",
+        "RR y Rr"
+      ],
+      "correcta": "C",
+      "explicacion": "Una proporción fenotípica aproximadamente 1:1 entre individuos dominantes y recesivos es característica de la cruza de prueba entre un heterocigota (Rr) y un homocigota recesivo (rr)."
+    },
+    {
+      "pregunta": "La probabilidad de obtener gametas de genotipo \"Ab\" a partir de un individuo con genotipo AABbCcDD es:",
+      "opciones": [
+        "0",
+        "1",
+        "1/2",
+        "1/4"
+      ],
+      "correcta": "C",
+      "explicacion": "Dado que el locus A es homocigota AA, todas las gametas llevan A; para el locus B (Bb), la probabilidad de heredar la alelo b es de 1/2. Por ende, la probabilidad combinada para esos alelos es 1/2."
+    },
+    {
+      "pregunta": "La segunda ley de Mendel o principio de la segregación independiente:",
+      "opciones": [
+        "se cumple siempre para cualquier par de genes en el genoma.",
+        "se cumple cuando los genes están fuertemente ligados en el mismo cromosoma.",
+        "se cumple si los genes se ubican en distintos pares de cromosomas homólogos.",
+        "es consecuencia directa de los eventos que ocurren durante la anafase mitótica."
+      ],
+      "correcta": "C",
+      "explicacion": "La distribución independiente de alelos ocurre si los loci se encuentran en cromosomas distintos o lo suficientemente alejados en el mismo cromosoma como para segregar sin ligamiento."
+    },
+    {
+      "pregunta": "Se cruzan dos líneas puras de ratones: marrón con orejas grandes x blanco con orejas chicas. La F1 es 100% marrón con orejas grandes. Si se cruza un F1 con un doble homocigota recesivo, ¿cuál es la probabilidad de obtener ratones marrones con orejas chicas?",
+      "opciones": [
+        "1/4",
+        "0",
+        "1",
+        "1/2"
+      ],
+      "correcta": "A",
+      "explicacion": "En una cruza de prueba de un dihíbrido (AaBb x aabb), se obtienen cuatro fenotipos posibles en proporciones equimolares (25% o 1/4 cada uno)."
+    },
+    {
+      "pregunta": "Una mujer de grupo A (cuya madre es grupo O) tiene hijos con un hombre de grupo B (cuyo padre es grupo A). ¿Qué porcentaje de sus hijos se espera que sean heterocigotas?",
+      "opciones": [
+        "0%",
+        "25%",
+        "50%",
+        "75%"
+      ],
+      "correcta": "D",
+      "explicacion": "La madre es de genotipo AO y el padre es AB (al haber heredado el alelo A de su padre). Del cruce AO x AB resultan los genotipos AA, AB, AO y BO, de los cuales tres de cuatro son heterocigotas."
+    },
+    {
+      "pregunta": "En relación con los genes ligados, se puede afirmar que:",
+      "opciones": [
+        "no cumplen con la primera ley de Mendel de la segregación de alelos.",
+        "no se segregan independientemente durante el proceso meiótico.",
+        "uno de ellos codifica una proteína que actúa sobre el otro gen.",
+        "se corresponden siempre con organismos homocigotas."
+      ],
+      "correcta": "B",
+      "explicacion": "Al encontrarse ubicados físicamente en el mismo cromosoma, los genes ligados tienden a heredarse juntos y no segregan de forma independiente."
+    },
+    {
+      "pregunta": "Un determinado antibiótico logra controlar una infección bacteriana. Sin embargo, al cabo de un tiempo, la infección reaparece y el antibiótico resulta inocuo. Esto se debe a que:",
+      "opciones": [
+        "las bacterias mutaron intencionalmente con la finalidad de perfeccionarse.",
+        "las bacterias desarrollaron defensas inducidas directamente por el antibiótico.",
+        "algunas bacterias poseían una mutación previa que les confirió resistencia.",
+        "el antibiótico forzó a las bacterias a adaptarse al medio."
+      ],
+      "correcta": "C",
+      "explicacion": "La variación genética por mutación es previa a la exposición; el antibiótico ejerce una presión de selección eliminando a las sensibles y favoreciendo la reproducción de las resistentes."
+    },
+    {
+      "pregunta": "El descenso drástico de una población debido a un desastre natural que reduce la variabilidad genética en los supervivientes es un ejemplo de:",
+      "opciones": [
+        "selección sexual.",
+        "aislamiento reproductivo.",
+        "cuello de botella.",
+        "efecto fundador."
+      ],
+      "correcta": "C",
+      "explicacion": "El efecto de cuello de botella ocurre cuando un evento catastrófico reduce drásticamente el tamaño poblacional, alterando aleatoriamente las frecuencias génicas de los sobrevivientes."
+    },
+    {
+      "pregunta": "La teoría de la evolución biológica aceptada actualmente permite afirmar que:",
+      "opciones": [
+        "la evolución ocurre por la necesidad individual de los organismos para sobrevivir.",
+        "uno de los mecanismos que produce cambios evolutivos es la deriva génica.",
+        "todas las mutaciones generan alelos con ventajas adaptativas inmediatas.",
+        "la evolución ocurre por mutaciones acumuladas únicamente en células somáticas."
+      ],
+      "correcta": "B",
+      "explicacion": "La deriva génica es un mecanismo evolutivo estocástico que cambia las frecuencias alélicas de las poblaciones debido al azar, independiente de la selección natural."
+    },
+    {
+      "pregunta": "Al aplicar un insecticida la población de plagas disminuye pero luego resurge siendo resistente. Según la teoría sintética de la evolución, esto ocurre porque:",
+      "opciones": [
+        "el insecticida induce mutaciones adaptativas en el organismo.",
+        "las plagas adquieren resistencia por el uso repetido del compuesto.",
+        "las plagas desarrollan defensas inmunitarias contra el químico.",
+        "cambia la frecuencia del alelo de resistencia preexistente en la población."
+      ],
+      "correcta": "D",
+      "explicacion": "La aplicación del plaguicida selecciona favorablemente a los individuos que ya portaban alelos de resistencia, aumentando su frecuencia en las generaciones subsecuentes."
+    },
+    {
+      "pregunta": "La comparación de los genomas de la levadura (eucarionte) y las bacterias (procariontes) muestra que solo la levadura posee genes que codifican:",
+      "opciones": [
+        "enzimas de vías metabólicas centrales.",
+        "ARN ribosómicos.",
+        "ARN polimerasas.",
+        "proteínas específicas de orgánulos delimitados por membrana."
+      ],
+      "correcta": "D",
+      "explicacion": "Dado que las bacterias carecen de orgánulos membranosos internos, sus genomas no codifican proteínas destinadas a estructuras compartimentalizadas como la mitocondria."
+    },
+    {
+      "pregunta": "El aumento progresivo del tamaño cerebral en el linaje humano a lo largo de la evolución se explica por:",
+      "opciones": [
+        "mutaciones generadas para adquirir intencionalmente mayor tecnología.",
+        "la necesidad biológica directa de adaptarse a climas fríos.",
+        "surgimiento de mutaciones azarosas en genes del desarrollo favorecidas por selección natural.",
+        "el uso continuado del órgano que provocó su hipertrofia heredable."
+      ],
+      "correcta": "C",
+      "explicacion": "Las mutaciones genéticas se producen de manera aleatoria y solo persisten e incrementan su presencia en la población si otorgan una ventaja reproductiva seleccionada por el entorno."
+    },
+    {
+      "pregunta": "Si a un óvulo de coneja negra (NN) se le extrae el núcleo y se le trasplanta el de una célula somática de una coneja blanca (nn), el individuo clonado resultante será:",
+      "opciones": [
+        "un conejo con fenotipo blanco.",
+        "un conejo con genotipo Nn.",
+        "un conejo con fenotipo negro.",
+        "un embrión no viable por usar células diferenciadas."
+      ],
+      "correcta": "A",
+      "explicacion": "El proceso de transferencia nuclear aporta todo el genoma nuclear del donante de la célula somática, por lo que el clon expresará el fenotipo homocigota recesivo (blanco)."
+    },
+    {
+      "pregunta": "Una célula epitelial y una célula hepática de un mismo individuo se diferencian principalmente en:",
+      "opciones": [
+        "la información genética global presente en sus núcleos.",
+        "el número y forma de los cromosomas que contienen.",
+        "al menos algunos de los ARN mensajeros que cada una sintetiza.",
+        "el tipo de código genético que emplean para traducir proteínas."
+      ],
+      "correcta": "C",
+      "explicacion": "Todas las células somáticas de un organismo comparten el mismo genoma, pero la expresión génica diferencial hace que sinteticen distintos conjuntos de ARNm y proteínas."
+    },
+    {
+      "pregunta": "El proceso de diferenciación celular implica esencialmente:",
+      "opciones": [
+        "la pérdida selectiva de cromosomas innecesarios.",
+        "la alteración del código genético según el tejido.",
+        "la acumulación de mutaciones estructurales dirigidas.",
+        "una expresión selectiva y diferencial de genes."
+      ],
+      "correcta": "D",
+      "explicacion": "La especialización de las células se logra mediante la activación y inactivación regulada de genes específicos sin modificar la secuencia primaria del ADN."
+    },
+    {
+      "pregunta": "En relación con la conducción del impulso nervioso se puede afirmar que:",
+      "opciones": [
+        "la llegada del potencial de acción ocasiona la liberación de neurotransmisores presinápticos.",
+        "la unión del neurotransmisor siempre produce hiperpolarización en la célula postsináptica.",
+        "el potencial de acción pierde intensidad a medida que avanza por el axón.",
+        "los neurotransmisores ingresan a la neurona postsináptica por endocitosis."
+      ],
+      "correcta": "A",
+      "explicacion": "La despolarización provocada por el potencial de acción al alcanzar el terminal axónico estimula la exocitosis de las vesículas sinápticas que contienen neurotransmisores."
+    },
+    {
+      "pregunta": "La presencia de la vaina de mielina rodeando los axones en el sistema nervioso permite que:",
+      "opciones": [
+        "no se requieran neurotransmisores en la sinapsis.",
+        "desaparezca la necesidad de la bomba de sodio-potasio.",
+        "el impulso nervioso se propague a mayor velocidad.",
+        "las sinapsis se transformen en eventos exclusivamente mecánicos."
+      ],
+      "correcta": "C",
+      "explicacion": "La mielina actúa como aislante eléctrico permitiendo la conducción saltatoria del potencial de acción entre los nodos de Ranvier, incrementando la velocidad de señalización."
+    },
+    {
+      "pregunta": "La cocaína actúa inhibiendo la recaptación de dopamina (neurotransmisor excitatorio); por consiguiente:",
+      "opciones": [
+        "bloquea por completo la transmisión de impulsos.",
+        "produce una hiperpolarización continua en la neurona postsináptica.",
+        "disminuye la concentración del neurotransmisor en la hendidura sináptica.",
+        "produce una despolarización más prolongada en la neurona postsináptica."
+      ],
+      "correcta": "D",
+      "explicacion": "Al bloquearse la recaptación, la dopamina permanece durante más tiempo estimulando sus receptores en la hendidura sináptica, extendiendo la despolarización de la membrana postsináptica."
+    },
+    {
+      "pregunta": "La adrenoleucodistrofia (ALD) es una enfermedad metabólica relacionada con un defecto funcional a nivel de:",
+      "opciones": [
+        "los lisosomas.",
+        "la síntesis de vesículas de transporte.",
+        "los peroxisomas.",
+        "el retículo endoplásmico liso."
+      ],
+      "correcta": "C",
+      "explicacion": "La ALD es un trastorno caracterizado por la falla en las enzimas peroxisomales encargadas de la beta-oxidación de los ácidos grasos de cadena muy larga."
+    },
+    {
+      "pregunta": "El sitio específico de reconocimiento y unión de la ARN polimerasa en el ADN se denomina:",
+      "opciones": [
+        "Operador",
+        "Promotor",
+        "Activador",
+        "Silenciador"
+      ],
+      "correcta": "B",
+      "explicacion": "El promotor es una secuencia regulatoria del ADN requerida para el acoplamiento de la ARN polimerasa y el inicio correcto de la transcripción."
+    },
+    {
+      "pregunta": "Un espermatocito secundario humano contiene en su núcleo:",
+      "opciones": [
+        "46 cromosomas duplicados.",
+        "23 cromosomas simples.",
+        "23 cromosomas duplicados.",
+        "46 cromosomas simples."
+      ],
+      "correcta": "C",
+      "explicacion": "Al finalizar la primera división meiótica se obtienen células haploides (n=23), pero cuyos cromosomas aún están formados por dos cromátides hermanas duplicadas."
+    },
+    {
+      "pregunta": "Para la síntesis in vitro de dos polipéptidos diferentes pertenecientes a dos especies distintas se requeriría utilizar:",
+      "opciones": [
+        "los mismos ARNm, ARNt y ARNr.",
+        "distintos ARNt y ARNr, pero los mismos ARNm.",
+        "los mismos ARNt y ARNr, pero distintos ARNm.",
+        "los mismos ARNm y ARNt, pero distintos ARNr."
+      ],
+      "correcta": "C",
+      "explicacion": "La especificidad de la proteína depende exclusivamente del mensaje codificado en el ARNm, mientras que los componentes ribosómicos y los ARNt cumplen funciones genéricas en la maquinaria de traducción."
+    },
+    {
+      "pregunta": "Se define como alelo a:",
+      "opciones": [
+        "la posición física que ocupa un gen dentro del cromosoma.",
+        "las alteraciones de secuencia producidas por agentes mutágenos.",
+        "cada una de las formas alternativas que puede presentar un gen en un determinado locus.",
+        "la condición genotípica exclusivamente heterocigota de un rasgo."
+      ],
+      "correcta": "C",
+      "explicacion": "Un alelo representa una variante de la secuencia de nucleótidos de un gen que ocupa una localización específica (locus) en un cromosoma."
+    },
+    {
+      "pregunta": "Los nucleosomas son estructuras celulares que:",
+      "opciones": [
+        "degradan proteínas mal plegadas en el citosol.",
+        "forman los poros de la envoltura nuclear.",
+        "constituyen las unidades fundamentales de empaquetamiento de la cromatina.",
+        "procesan los intrones de los ARN precursores."
+      ],
+      "correcta": "C",
+      "explicacion": "Un nucleosoma consiste en un fragmento de ADN enrollado alrededor de un octámero de proteínas histonas, formando el nivel básico de condensación de la cromatina."
+    },
+    {
+      "pregunta": "Los organizadores nucleolares (NOR) son regiones del genoma que:",
+      "opciones": [
+        "contienen copias de genes que codifican para el ARN ribosomal.",
+        "se forman de manera transitoria durante la metafase.",
+        "están constituidos por heterocromatina transcripcionalmente inerte.",
+        "permiten el anclaje de los cromosomas a la lámina nuclear."
+      ],
+      "correcta": "A",
+      "explicacion": "Estas regiones cromosómicas albergan las repeticiones de genes de ARNr alrededor de las cuales se organiza y ensambla el nucléolo durante la interfase."
+    },
+    {
+      "pregunta": "El grado de compactación de la cromatina influye directamente en los siguientes procesos EXCEPTO en:",
+      "opciones": [
+        "la transcripción del ADN.",
+        "la traducción del ARN.",
+        "la regulación epigenética de la expresión génica.",
+        "la replicación del ADN."
+      ],
+      "correcta": "B",
+      "explicacion": "La traducción de proteínas toma lugar en los ribosomas dentro del citoplasma, por lo que no está condicionada por el estado estructural de la cromatina nuclear."
+    },
+    {
+      "pregunta": "Una función biológica compartida por los microtúbulos, los filamentos de actina y los filamentos intermedios es:",
+      "opciones": [
+        "el movimiento ciliar.",
+        "el transporte de vesículas.",
+        "el soporte y sostén estructural celular.",
+        "la contracción muscular de fibras."
+      ],
+      "correcta": "C",
+      "explicacion": "Si bien poseen dinámicas y componentes moleculares variados, los tres elementos del citoesqueleto cooperan para dar forma, resistencia e integridad física a la célula."
+    },
+    {
+      "pregunta": "La actividad de la enzima telomerasa evita el acortamiento de las extremidades cromosómicas principalmente en:",
+      "opciones": [
+        "células cancerosas y células embrionarias.",
+        "células epiteliales diferenciadas.",
+        "células del tejido muscular esquelético.",
+        "eritrocitos y plaquetas maduras."
+      ],
+      "correcta": "A",
+      "explicacion": "La telomerasa se encuentra activa en linajes celulares de división ilimitada, como células madre embrionarias, germinales y la gran mayoría de células tumorales."
+    },
+    {
+      "pregunta": "Un gen se define formalmente como un segmento de ADN que:",
+      "opciones": [
+        "siempre se traduce para formar una proteína funcional.",
+        "se transcribe para sintetizar una molécula de ARN funcional.",
+        "varía en número según el fenotipo del individuo.",
+        "se transcribe exclusivamente en células de organismos eucariontes."
+      ],
+      "correcta": "B",
+      "explicacion": "Un gen es una unidad física de herencia que codifica un producto funcional de ARN, el cual puede ser traducido a proteína o actuar como ARN no codificante (ARNt, ARNr, etc.)."
+    },
+    {
+      "pregunta": "Para la transcripción de un gen la enzima ARN polimerasa debe:",
+      "opciones": [
+        "leer la cadena molde de ADN en sentido 3' a 5'.",
+        "requerir la incorporación de desoxirribonucleótidos trifosfato.",
+        "sintetizar la nueva cadena de ARN en dirección 3' a 5'.",
+        "adicionar una capuchón 5' de forma simultánea en procariontes."
+      ],
+      "correcta": "A",
+      "explicacion": "La ARN polimerasa recorre la hebra molde de ADN en sentido 3'->5' para poder polimerizar el ARN en dirección antiparalela 5'->3'."
+    },
+    {
+      "pregunta": "Los productos directos de los procesos de traducción y transcripción son, respectivamente:",
+      "opciones": [
+        "polímeros de desoxirribonucleótidos y polímeros de aminoácidos.",
+        "polímeros de ribonucleótidos y polímeros de aminoácidos.",
+        "polímeros de aminoácidos y polímeros de ribonucleótidos.",
+        "polímeros de aminoácidos y polímeros de desoxirribonucleótidos."
+      ],
+      "correcta": "C",
+      "explicacion": "La traducción sintetiza cadenas polipeptídicas (proteínas) uniendo aminoácidos, mientras que la transcripción genera polímeros de ARN (ribonucleótidos)."
+    },
+    {
+      "pregunta": "La regulación mediada por la unión de la proteína aconitasa a los elementos de respuesta al hierro (IRE) en el ARNm es un control de tipo:",
+      "opciones": [
+        "traduccional.",
+        "transcripcional.",
+        "post-traduccional por degradación.",
+        "transporte a través del poro."
+      ],
+      "correcta": "A",
+      "explicacion": "La aconitasa actúa uniéndose al ARN mensajero para bloquear o facilitar la iniciación de la traducción en respuesta a los niveles de hierro intracelular."
+    },
+    {
+      "pregunta": "En los seres humanos, los cromosomas sexuales se encuentran ubicados en:",
+      "opciones": [
+        "únicamente las gametas maduras.",
+        "exclusivamente las células de los órganos reproductores.",
+        "todas las células nucleadas del organismo.",
+        "solamente los glóbulos rojos."
+      ],
+      "correcta": "C",
+      "explicacion": "Salvo células anucleadas como los eritrocitos, todas las células somáticas de un individuo contienen el juego completo de cromosomas, incluyendo el par sexual."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes funciones metabólicas es característica del Retículo Endoplásmico Liso (REL)?",
+      "opciones": [
+        "Síntesis de proteínas de exportación.",
+        "Almacenamiento y liberación de calcio intracelular.",
+        "Síntesis de enzimas digestivas lisosomales.",
+        "Modificación postraduccional con azúcares N-ligados."
+      ],
+      "correcta": "B",
+      "explicacion": "Además de la síntesis de lípidos y detoxificación, el REL funciona como el principal depósito de iones calcio dentro del citoplasma."
+    },
+    {
+      "pregunta": "Los genes ligados no cumplen con la segunda ley de Mendel debido a que:",
+      "opciones": [
+        "los alelos mutantes actúan siempre como letales precoces.",
+        "al estar en el mismo cromosoma no segregan de forma independiente.",
+        "impiden la distinción fenotípica de los heterocigotas.",
+        "sufren modificaciones químicas durante la fecundación."
+      ],
+      "correcta": "B",
+      "explicacion": "Al hallarse situados sobre el mismo filamento cromosómico, los genes ligados co-segregan en las gametas a menos que ocurra un evento de recombinación."
+    },
+    {
+      "pregunta": "Si una célula somática se encuentra en la etapa G1 de la interfase:",
+      "opciones": [
+        "el Factor Promotor de la Mitosis (FPM) inducirá la división inmediata.",
+        "la presencia del Factor Promotor de la Fase S (FPS) la estimulará a duplicar su ADN.",
+        "en ausencia de ciclinas S avanzará espontáneamente hacia la fase G2.",
+        "reducirá su contenido de ADN a la mitad."
+      ],
+      "correcta": "B",
+      "explicacion": "El complejo FPS (Cdk-ciclina de fase S) promueve la transición del punto de control G1/S e inicia el proceso de replicación del ADN."
+    },
+    {
+      "pregunta": "En las vías de señalización celular, un segundo mensajero se caracteriza por ser una molécula que:",
+      "opciones": [
+        "se sintetiza o libera en el interior celular tras la activación de un receptor.",
+        "ingresa desde el espacio extracelular junto con el ligando.",
+        "actúa unívocamente aumentando los niveles de AMP cíclico.",
+        "atraviesa directamente la membrana para unirse a promotores nucleares."
+      ],
+      "correcta": "A",
+      "explicacion": "Los segundos mensajeros (como el cAMP o el IP3) son pequeñas moléculas o iones citoplasmáticos que se generan en respuesta a una señal extracelular previa."
+    },
+    {
+      "pregunta": "En las células somáticas de un organismo con complemento cromosómico 2n = 10, la cantidad de moléculas de ADN será:",
+      "opciones": [
+        "5 en la fase G1 y 10 en la fase G2.",
+        "10 en la fase G1 y 20 en la fase G2.",
+        "10 en la fase G1 y 40 en la fase G2.",
+        "20 en la fase G1 y 10 al finalizar la división."
+      ],
+      "correcta": "B",
+      "explicacion": "Durante G1 hay tantas moléculas de ADN como cromosomas simples (10). Tras la replicación en S, cada cromosoma tiene dos cromátides, sumando 20 moléculas de ADN en G2."
+    },
+    {
+      "pregunta": "Los sustratos requeridos por la ARN polimerasa para el proceso de transcripción son:",
+      "opciones": [
+        "desoxirribonucleótidos trifosfatados (dNTPs).",
+        "ribonucleótidos monofosfatados.",
+        "ribonucleótidos trifosfatados (NTPs).",
+        "aminoácidos activados con ATP."
+      ],
+      "correcta": "C",
+      "explicacion": "La transcripción utiliza como monómeros los ribonucleótidos trifosfatados (ATP, GTP, CTP, UTP), cuya hidrólisis aporta la energía para el enlace fosfodiéster."
+    },
+    {
+      "pregunta": "En un organismo diploide con 2n = 12, una célula en la profase II de la meiosis presentará:",
+      "opciones": [
+        "6 cromosomas duplicados.",
+        "12 cromosomas duplicados.",
+        "6 bivalentes recombinantes.",
+        "12 cromosomas simples."
+      ],
+      "correcta": "A",
+      "explicacion": "La primera división meiótica reduce la cantidad cromosómica a la mitad (n=6). En profase II, cada uno de estos 6 cromosomas sigue compuesto por dos cromátides."
+    },
+    {
+      "pregunta": "Los lisosomas se caracterizan funcionalmente por:",
+      "opciones": [
+        "operar sus enzimas digestivas a un pH óptimo alcalino.",
+        "desprenderse directamente por gemación del retículo endoplásmico liso.",
+        "participar activamente en procesos de heterofagocitosis y autofagocitosis.",
+        "carecer de membrana lipídica para liberar hidrolasas al citosol."
+      ],
+      "correcta": "C",
+      "explicacion": "Los lisosomas son orgánulos encargados de degradar tanto material extracelular incorporado por endocitosis/fagocitosis como componentes celulares viejos por autofagia."
+    },
+    {
+      "pregunta": "Los receptores de membrana plasmática participantes en la señalización celular pueden:",
+      "opciones": [
+        "desplazarse directamente al núcleo para actuar como factores de transcripción.",
+        "amplificar la señal química desencadenando cascadas enzimáticas intracelulares.",
+        "unirse exclusivamente a ligandos hidrofóbicos que atraviesan la bicapa.",
+        "sintetizar ATP como respuesta inmediata al ligando."
+      ],
+      "correcta": "B",
+      "explicacion": "La unión de un ligando al dominio extracelular del receptor de membrana gatilla la activación de efectores y segundos mensajeros que amplifican la señal recibida."
+    },
+    {
+      "pregunta": "La ovogénesis y la espermatogénesis humanas comparten y se diferencian respectivamente en que:",
+      "opciones": [
+        "ambas ocurren por meiosis y las dos producen cuatro gametas funcionales.",
+        "ambas se inician en la pubertad pero difieren en la cantidad de ADN resultante.",
+        "ambas ocurren por división meiótica pero se inician en etapas distintas del desarrollo.",
+        "ambas producen gametas diploides mediante procesos citocinéticos asimétricos."
+      ],
+      "correcta": "C",
+      "explicacion": "Ambos gametogénesis emplean la meiosis, pero la ovogénesis comienza en la etapa prenatal interrumpiéndose en profase I, mientras que la espermatogénesis inicia en la pubertad."
+    },
+    {
+      "pregunta": "Si en la bacteria E. coli ocurre una mutación puntual en el promotor del operón lactosa que impide la unión de la ARN polimerasa:",
+      "opciones": [
+        "los genes estructurales se transcribirán de forma constitutiva.",
+        "no se transcribirán los genes estructurales del operón.",
+        "se inactivará la síntesis de la proteína represora.",
+        "aumentará la afinidad del operador por la lactosa."
+      ],
+      "correcta": "B",
+      "explicacion": "Sin el acoplamiento funcional de la ARN polimerasa al sitio promotor, la transcripción de los genes estructurales queda completamente bloqueada."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes células presenta la mayor cantidad de ADN en su núcleo?",
+      "opciones": [
+        "Una neurona en fase G0.",
+        "Un leucocito recién formado tras dividirse.",
+        "Un hepatocito al inicio de la mitosis.",
+        "Un espermatozoide maduro."
+      ],
+      "correcta": "C",
+      "explicacion": "Un hepatocito al comienzo de la división celular ha completado la replicación, teniendo una cantidad de ADN de 4C, superior al estado G0/G1 (2C) o haploide (1C)."
+    },
+    {
+      "pregunta": "Dos cromosomas de un mismo organismo que poseen similar morfología, tamaño y codifican para las mismas características se denominan:",
+      "opciones": [
+        "Homólogos",
+        "Diploides",
+        "Cromátides",
+        "Homocigotos"
+      ],
+      "correcta": "A",
+      "explicacion": "Los cromosomas homólogos forman pares en células diploides; poseen los mismos loci génicos organizados en la misma secuencia, aunque pueden portar alelos distintos."
+    },
+    {
+      "pregunta": "El proceso de traducción en células eucariontes se distingue por ser un evento:",
+      "opciones": [
+        "que ocurre en forma simultánea a la transcripción dentro del núcleo.",
+        "post-transcripcional que se lleva a cabo en el citoplasma.",
+        "exergónico que no requiere moléculas de ATP ni GTP.",
+        "que utiliza desoxirribonucleótidos como adaptadores de aminoácidos."
+      ],
+      "correcta": "B",
+      "explicacion": "Debido a la presencia de la envoltura nuclear, en eucariontes la transcripción y el procesamiento del ARN ocurren en el núcleo, finalizando antes de la traducción citoplasmática."
+    },
+    {
+      "pregunta": "Para que una pareja de padres sanos tenga un hijo varón afectado por hemofilia (enfermedad recesiva ligada al cromosoma X), sus genotipos deben ser:",
+      "opciones": [
+        "Madre XH XH y Padre Xh Y",
+        "Madre XH Xh y Padre XH Y",
+        "Madre Xh Xh y Padre XH Y",
+        "Madre XH Xh y Padre Xh Y"
+      ],
+      "correcta": "B",
+      "explicacion": "El hijo varón hereda el cromosoma Y de su padre sano (XH Y) y debe recibir el cromosoma que porta el alelo recesivo (Xh) de su madre, quien es portadora heterocigota (XH Xh)."
+    },
+    {
+      "pregunta": "Mediante el mecanismo de splicing alternativo la célula puede producir:",
+      "opciones": [
+        "diferentes transcriptos primarios a partir de distintos genes.",
+        "distintas variantes de ARN mensajeros maduros a partir del mismo pre-ARNm.",
+        "ARN ribosómicos con distintas velocidades de traducción.",
+        "múltiples copias exactas de ARN de transferencia."
+      ],
+      "correcta": "B",
+      "explicacion": "El splicing alternativo permite incluir o excluir selectivamente ciertos exones de un transcripto primario, generando diversidad de ARN mensajeros y proteínas."
+    },
+    {
+      "pregunta": "Las hormonas esteroideas ejercen su acción biológica uniéndose a:",
+      "opciones": [
+        "receptores intracelulares que actúan modulando la expresión en el ADN.",
+        "receptores de membrana acoplados a proteína G.",
+        "canales iónicos dependientes de voltaje.",
+        "receptores enzimáticos tirosina quinasa de superficie."
+      ],
+      "correcta": "A",
+      "explicacion": "Por su naturaleza lipofílica, las hormonas esteroides difunden a través de la membrana plasmática y se unen a receptores citoplasmáticos o nucleares que regulan la transcripción génica."
+    },
+    {
+      "pregunta": "Durante la duplicación del ADN, los llamados fragmentos de Okazaki son:",
+      "opciones": [
+        "segmentos discontinuos de ADN sintetizados en la hebra retrasada.",
+        "secuencias continuas de ARN producidas en la hebra líder.",
+        "pequeños cebadores de ARN necesarios para iniciar la replicación.",
+        "enzimas encargadas de desenrollar la doble hélice."
+      ],
+      "correcta": "A",
+      "explicacion": "Dado que la ADN polimerasa solo sintetiza en dirección 5'->3', la hebra retrasada debe duplicarse discontinuamente mediante la unión posterior de los fragmentos de Okazaki."
+    },
+    {
+      "pregunta": "La resistencia a la tensión y tracción mecánica de la matriz extracelular está dada fundamentalmente por:",
+      "opciones": [
+        "la fibronectina.",
+        "la elastina.",
+        "el colágeno.",
+        "los glucosaminoglicanos."
+      ],
+      "correcta": "C",
+      "explicacion": "Las fibras de colágeno forman redes macromoleculares de gran fuerza estructural que impiden el estiramiento excesivo de los tejidos."
+    },
+    {
+      "pregunta": "¿Qué fenotipos sanguíneos pueden presentar los hijos de un hombre de grupo B y una mujer de grupo A, ambos siendo homocigotas?",
+      "opciones": [
+        "Únicamente grupo A o B.",
+        "Únicamente grupo AB.",
+        "Grupos B, AB o O.",
+        "Únicamente grupo O."
+      ],
+      "correcta": "B",
+      "explicacion": "El cruce entre un genotipo IB IB y un genotipo IA IA dará un 100% de descendencia de genotipo codominante IA IB, expresando el fenotipo AB."
+    },
+    {
+      "pregunta": "El color gris (G) del cuerpo en la mosca Drosophila es dominante sobre el negro (g). Si al cruzar dos moscas grises nacen individuos negros, los padres eran:",
+      "opciones": [
+        "gg x gg",
+        "GG x GG",
+        "GG x gg",
+        "Gg x Gg"
+      ],
+      "correcta": "D",
+      "explicacion": "Para que se exprese el fenotipo recesivo (gg) en la progenie, ambos progenitores fenotípicamente dominantes deben ser portadores del alelo recesivo (heterocigotas Gg)."
+    },
+    {
+      "pregunta": "Si la hebra molde de ADN presenta la secuencia 3'-CTTCGTCAAATG-5', el polipéptido resultante tras la transcripción y traducción será: (Glu: GAA, Ala: GCA, Val: GUU, Tyr: UAC)",
+      "opciones": [
+        "Ala-Val-Tyr-Glu",
+        "Glu-Val-Ala-Tyr",
+        "Tyr-Glu-Ala-Val",
+        "Glu-Ala-Val-Tyr"
+      ],
+      "correcta": "D",
+      "explicacion": "La transcripción genera el ARNm 5'-GAAGCAGUUUAC-3'. Leyendo los codones de 5' a 3': GAA (Glu), GCA (Ala), GUU (Val) y UAC (Tyr)."
+    },
+    {
+      "pregunta": "La adición de la cola de poli-A durante el procesamiento del ARNm eucarionte sirve para:",
+      "opciones": [
+        "facilitar el splicing de los exones codificantes.",
+        "permitir la unión de la ARN polimerasa al promotor.",
+        "aumentar la estabilidad y vida media del ARNm en el citoplasma.",
+        "promover la metilación del ADN nuclear."
+      ],
+      "correcta": "C",
+      "explicacion": "La cola de poliadeninas protege al transcripto mensajero de la degradación por parte de las exonucleasas citoplasmáticas, prolongando su vida media."
+    },
+    {
+      "pregunta": "Si durante la traducción proteica se inhibe la acción de la enzima peptidil transferasa:",
+      "opciones": [
+        "no podrá ensamblarse el complejo de iniciación.",
+        "los aminoácidos no lograrán unirse a sus ARNt.",
+        "se impedirá la formación del enlace peptídico entre aminoácidos.",
+        "el ribosoma no reconocerá el codón de parada."
+      ],
+      "correcta": "C",
+      "explicacion": "La peptidil transferasa es la actividad ribozímica de la subunidad mayor del ribosoma que cataliza la formación del enlace covalente peptídico."
+    },
+    {
+      "pregunta": "Una persona con síndrome de Down (trisomía del par 21) presenta en su cariotipo un total de:",
+      "opciones": [
+        "44 autosomas + 2 cromosomas sexuales.",
+        "45 autosomas + 2 cromosomas sexuales.",
+        "22 autosomas + 3 cromosomas sexuales.",
+        "46 autosomas + 1 cromosoma sexual."
+      ],
+      "correcta": "B",
+      "explicacion": "Al tener tres copias del cromosoma 21 en lugar de dos, la persona cuenta con 45 autosomas en total más el par de cromosomas sexuales (47 cromosomas)."
+    },
+    {
+      "pregunta": "La enzima adenilato ciclasa interviene en la señalización celular actuando como:",
+      "opciones": [
+        "un receptor de superficie para hormonas proteicas.",
+        "un canal iónico activado por ligando.",
+        "una enzima efectora de membrana activada por una proteína G.",
+        "un factor de transcripción dependiente de fosforilación."
+      ],
+      "correcta": "C",
+      "explicacion": "La adenilato ciclasa se localiza en la membrana plasmática y es estimulada por subunidades de proteínas G para sintetizar AMPc a partir de ATP."
+    },
+    {
+      "pregunta": "Los microtúbulos son componentes esenciales del citoesqueleto que:",
+      "opciones": [
+        "forman las fibras contráctiles de las células musculares.",
+        "se unen a los desmosomas para dar resistencia al epitelio.",
+        "constituyen la estructura interna de centríolos y cuerpos basales.",
+        "intervienen en la formación de microvellosidades intestinales."
+      ],
+      "correcta": "C",
+      "explicacion": "Los centríolos y cuerpos basales están formados por estructuras cilíndricas organizadas a partir de tripletes de microtúbulos."
+    },
+    {
+      "pregunta": "En el operón lactosa de E. coli, cuando no hay lactosa disponible en el medio:",
+      "opciones": [
+        "la proteína represora se une al sitio operador.",
+        "el inductor interactúa con la ARN polimerasa.",
+        "la ARN polimerasa se une con mayor afinidad al operador.",
+        "el represor se acopla al promotor bloqueando el ARNm."
+      ],
+      "correcta": "A",
+      "explicacion": "En ausencia del inductor, la proteína represora libre se une al operador impidiendo físicamente el avance de la ARN polimerasa."
+    },
+    {
+      "pregunta": "Los genes que codifican para las proteínas histonas y la tubulina se transcriben en:",
+      "opciones": [
+        "el núcleo celular.",
+        "el citoplasma celular.",
+        "el retículo endoplásmico rugoso.",
+        "el complejo de Golgi."
+      ],
+      "correcta": "A",
+      "explicacion": "La transcripción de cualquier gen nuclear ocurre en el nucleoplasma; posteriormente los ARN mensajeros son exportados al citoplasma para su traducción."
+    },
+    {
+      "pregunta": "Durante el ciclo celular de una célula eucarionte, la fase G2 se caracteriza por:",
+      "opciones": [
+        "poseer la mitad de ADN que la fase G1.",
+        "poseer el doble de cantidad de ADN que la fase G1.",
+        "ser la etapa de mayor duración de toda la interfase.",
+        "desarrollarse inmediatamente después de la citocinesis."
+      ],
+      "correcta": "B",
+      "explicacion": "Dado que la fase S (de replicación del ADN) transcurre entre G1 y G2, la célula en G2 cuenta con el doble de material genético que en G1."
+    },
+    {
+      "pregunta": "La función principal del ARN mensajero durante el proceso de traducción es:",
+      "opciones": [
+        "transportar los aminoácidos hasta el sitio A del ribosoma.",
+        "aportar la secuencia codificante de codones que determina la estructura primaria de la proteína.",
+        "catalizar la formación del enlace peptídico.",
+        "formar el armazón estructural de las subunidades ribosómicas."
+      ],
+      "correcta": "B",
+      "explicacion": "El ARNm lleva la copia de la información genética del gen, ordenada en tripletes o codones que dictan el orden exacto de los aminoácidos."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes grupos comprende proteínas que poseen Secuencia de Localización Nuclear (NLS)?",
+      "opciones": [
+        "ARN polimerasa, factores de transcripción y proteínas ribosomales.",
+        "Enzimas glucolíticas, actina y miosina.",
+        "Proteínas del complejo de poro, receptores de membrana y colágeno.",
+        "ARNt sintetasa, anticuerpos e histonas modifiadoras."
+      ],
+      "correcta": "A",
+      "explicacion": "Las proteínas que deben cumplir funciones dentro del núcleo o nucléolo requieren señales peptídicas NLS para ser reconocidas por las importinas."
+    },
+    {
+      "pregunta": "Una diferencia fundamental entre la división por mitosis y por meiosis es que en la meiosis:",
+      "opciones": [
+        "no participa el huso acromático.",
+        "se separan los cromosomas homólogos durante la primera división.",
+        "no ocurre una duplicación previa del ADN.",
+        "se generan células idénticas a la célula progenitora."
+      ],
+      "correcta": "B",
+      "explicacion": "La separación de los cromosomas homólogos durante la anafase I es un evento exclusivo de la meiosis que reduce la ploidía celular."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes proteínas presenta un péptido señal en su extremo N-terminal durante su síntesis?",
+      "opciones": [
+        "Enzima piruvato quinasa de la glucólisis.",
+        "ADN polimerasa nuclear.",
+        "Receptor transmembrana de un factor de crecimiento.",
+        "Proteína de filamento intermedio (queratina)."
+      ],
+      "correcta": "C",
+      "explicacion": "Las proteínas de membrana o de secreción poseen un péptido señal que redirige al ribosoma hacia la membrana del retículo endoplásmico rugoso."
+    },
+    {
+      "pregunta": "Al dividirse una célula diploide mediante el proceso de mitosis, el resultado final es:",
+      "opciones": [
+        "dos células hijas con la mitad de cromosomas que la madre.",
+        "cuatro células hijas genéticamente variadas.",
+        "dos células hijas con el mismo número de cromosomas e información que la célula madre.",
+        "dos células con el doble de contenido genético."
+      ],
+      "correcta": "C",
+      "explicacion": "La mitosis produce dos células somáticas genéticamente idénticas entre sí y con respecto a la célula progenitora."
+    },
+    {
+      "pregunta": "El código genético se define como degenerado porque:",
+      "opciones": [
+        "un mismo codón puede especificar varios aminoácidos distintos.",
+        "un mismo aminoácido puede estar codificado por más de un codón.",
+        "existen codones que no codifican ninguna secuencia.",
+        "varía sustancialmente entre procariontes y eucariontes."
+      ],
+      "correcta": "B",
+      "explicacion": "Existen 61 codones para codificar 20 aminoácidos estándar, lo que implica que la mayoría de los aminoácidos son determinados por múltiples codones sinónimos."
+    },
+    {
+      "pregunta": "A través del complejo del poro nuclear pueden ingresar desde el citoplasma hacia el interior del núcleo:",
+      "opciones": [
+        "las enzimas encargadas de la traducción.",
+        "proteínas ribosomales sintetizadas en el citosol.",
+        "moléculas de ARN mensajero maduro.",
+        "vesículas procedentes del complejo de Golgi."
+      ],
+      "correcta": "D",
+      "explicacion": "Las proteínas que integrarán las subunidades ribosómicas se traducen en el citosol y deben ser importadas al núcleo a través de los poros para ensamblarse en el nucléolo."
+    },
+    {
+      "pregunta": "Al comparar una neurona y una célula muscular pertenecientes al mismo individuo, se observa que poseen:",
+      "opciones": [
+        "diferente secuencia general de ADN genómico.",
+        "diferente conjunto de ARN mensajeros expresados.",
+        "distinto código genético para la síntesis proteica.",
+        "diferentes variantes de ARN polimerasas nucleares."
+      ],
+      "correcta": "B",
+      "explicacion": "Aunque poseen el mismo genoma, cada tipo celular realiza una transcripción selectiva que genera un perfil distinto de ARNm y proteínas."
+    },
+    {
+      "pregunta": "Es una característica de la duplicación del ADN en organismos eucariontes:",
+      "opciones": [
+        "ser conservativa, unidireccional y con un único origen de replicación.",
+        "ser semiconservativa, bidireccional y presentar múltiples orígenes de replicación (ORI).",
+        "ser dispersiva, unidireccional y sin requerir cebadores.",
+        "iniciar en un único origen de replicación por cromosoma."
+      ],
+      "correcta": "B",
+      "explicacion": "Debido a la gran longitud de los cromosomas eucariotas, la replicación es semiconservativa, bidireccional y comienza simultáneamente en múltiples puntos (ORI)."
+    },
+    {
+      "pregunta": "El daltonismo es un rasgo recesivo ligado al cromosoma X. Si una mujer sana (padre daltónico) tiene hijos con un hombre sano, la probabilidad de que sus hijos varones sean daltónicos es del:",
+      "opciones": [
+        "0%",
+        "100%",
+        "50%",
+        "25%"
+      ],
+      "correcta": "C",
+      "explicacion": "La mujer es portadora heterocigota (X D X d) al haber heredado el alelo de su padre. Cada hijo varón tiene un 50% de probabilidad de recibir su cromosoma X d."
+    },
+    {
+      "pregunta": "Durante el proceso de replicación del ADN, un fallo en la función correctora de pruebas de la ADN polimerasa puede causar:",
+      "opciones": [
+        "que la enzima sintetice ADN en dirección 3' a 5'.",
+        "que no se corrijan desemparejamientos y se fijen mutaciones.",
+        "que se incorpore uracilo en lugar de timina de forma normal.",
+        "que la ARN polimerasa detenga la transcripción."
+      ],
+      "correcta": "B",
+      "explicacion": "La actividad exonucleasa 3'->5' de la ADN polimerasa corrige errores de apareamiento; si esta falla, los nucleótidos incorrectos permanecen y generan mutaciones."
+    },
+    {
+      "pregunta": "Respecto a las características de un virus, es correcto afirmar que:",
+      "opciones": [
+        "se ubica dentro del nivel de organización celular.",
+        "posee ribosomas propios para sintetizar sus cápsides.",
+        "pertenece al nivel de complejos macromoleculares y contiene un solo tipo de ácido nucleico.",
+        "realiza metabolismo propio independiente de la célula hospedadora."
+      ],
+      "correcta": "C",
+      "explicacion": "Los virus son agregados macromoleculares acelulares que contienen ADN o ARN (pero no ambos simultáneamente) y dependen del entorno celular para replicarse."
+    },
+    {
+      "pregunta": "Los linfocitos B desempeñan un rol fundamental en la respuesta inmune adaptativa mediante:",
+      "opciones": [
+        "la inducción de la integración viral en el genoma huésped.",
+        "la síntesis y secreción de anticuerpos específicos contra antígenos.",
+        "la fagocitosis directa de bacterias y hongos.",
+        "la lisis de células infectadas por mecanismos citotóxicos."
+      ],
+      "correcta": "B",
+      "explicacion": "Al activarse y diferenciarse en células plasmáticas, los linfocitos B producen y liberan inmunoglobulinas (anticuerpos) específicas contra determinantes antigénicos."
+    },
+    {
+      "pregunta": "Una bacteria y un mamífero como un perro comparten:",
+      "opciones": [
+        "la misma secuencia exacta de nucleótidos en su genoma.",
+        "el mismo cariotipo y número cromosómico.",
+        "el mismo código genético para la traducción.",
+        "el mismo tipo de empaquetamiento con histonas."
+      ],
+      "correcta": "C",
+      "explicacion": "El código genético es universal en casi todos los seres vivos, permitiendo que la misma asignación de codones corresponda a los mismos aminoácidos."
+    },
+    {
+      "pregunta": "Se define como provirus a:",
+      "opciones": [
+        "el genoma viral de ADN integrado en el ADN de la célula hospedadora.",
+        "el proceso de ensamblaje de la cápside dentro del citoplasma.",
+        "un virus carente de envoltura lipídica.",
+        "la fase de lisis acelerada de una bacteria."
+      ],
+      "correcta": "A",
+      "explicacion": "Un provirus es la forma que adopta un genoma viral cuando se inserta covalentemente en el material genético de la célula infectada."
+    },
+    {
+      "pregunta": "En cobayos, el pelo oscuro (N) es dominante sobre el albino (n). Si se cruza un macho oscuro homocigota con una hembra albina, la probabilidad de tener descendencia albina es:",
+      "opciones": [
+        "0%",
+        "25%",
+        "50%",
+        "100%"
+      ],
+      "correcta": "A",
+      "explicacion": "La cruza entre NN x nn produce un 100% de descendientes heterocigotas Nn, presentando todos el fenotipo dominante (oscuro)."
+    },
+    {
+      "pregunta": "Las cromátides hermanas y las cromátides recombinantes se separan respectivamente durante:",
+      "opciones": [
+        "la profase mitótica y la metafase I.",
+        "la anafase mitótica y la anafase II meiótica.",
+        "la anafase I y la anafase II meiótica.",
+        "la telofase I y la telofase II."
+      ],
+      "correcta": "B",
+      "explicacion": "Durante la anafase de la mitosis se separan las cromátides hermanas idénticas, mientras que en anafase II de la meiosis se separan las cromátides que fueron recombinadas por crossing-over."
+    },
+    {
+      "pregunta": "Con respecto a la síntesis de ARN mensajero es correcto afirmar que:",
+      "opciones": [
+        "es un proceso en el cual se duplica el ADN celular.",
+        "en organismos procariontes no existe el proceso de splicing de intrones.",
+        "requiere únicamente de desoxirribonucleótidos libre de fosfato.",
+        "ocurre simultáneamente en el nucléolo en todos los seres vivos."
+      ],
+      "correcta": "B",
+      "explicacion": "Los genes bacterianos carecen de intrones en su mayoría, por lo que el ARNm se traduce directamente a medida que se transcribe sin sufrir splicing."
+    },
+    {
+      "pregunta": "Durante la fase de transcripción en una célula eucarionte, la ARN polimerasa:",
+      "opciones": [
+        "sintetiza la hebra de ARN en sentido 3' a 5'.",
+        "utiliza desoxirribonucleótidos trifosfato como sustrato.",
+        "se desplaza leyendo la cadena molde de ADN en sentido 3' a 5'.",
+        "necesita de cebadores producidos por la primasa."
+      ],
+      "correcta": "C",
+      "explicacion": "La enzima ARN polimerasa recorre el molde de ADN en dirección 3'->5' para formar una cadena de ARN antiparalela en sentido 5'->3'."
+    },
+    {
+      "pregunta": "Las cromátides hermanas de un cromosoma se generan durante:",
+      "opciones": [
+        "la etapa S de la interfase.",
+        "la etapa G1 de la interfase.",
+        "la profase de la meiosis I.",
+        "la etapa G2 posterior a la división."
+      ],
+      "correcta": "A",
+      "explicacion": "Durante la fase S se duplica la molécula de ADN, dando lugar a dos cromátides idénticas unidas por el centrómero."
+    },
+    {
+      "pregunta": "Se cruzan dos conejos de pelo marrón y tienen un descendiente albino. ¿Cuáles son los genotipos de los padres y del hijo?",
+      "opciones": [
+        "Padres AA e hijo Aa",
+        "Padres aa e hijo aa",
+        "Padres Aa e hijo AA",
+        "Padres Aa e hijo aa"
+      ],
+      "correcta": "D",
+      "explicacion": "Para que dos padres con fenotipo dominante tengan un hijo con el fenotipo recesivo (aa), ambos deben ser portadores del alelo recesivo (heterocigotas Aa)."
+    },
+    {
+      "pregunta": "Si al cruzar un toro y una vaca de cuernos largos (dominante) se obtiene una cría de cuernos cortos, ¿qué probabilidad hay de obtener una cría de cuernos cortos al cruzar ese mismo toro con una vaca de cuernos cortos?",
+      "opciones": [
+        "1/2",
+        "1/4",
+        "3/4",
+        "0"
+      ],
+      "correcta": "A",
+      "explicacion": "La cría corta demuestra que el toro de cuernos largos es heterocigota (Cc). Al cruzarlo con una vaca recesiva (cc), la probabilidad de crías cc es del 50% (1/2)."
+    },
+    {
+      "pregunta": "Dos padres de ojos marrones tienen cuatro hijos: tres con ojos marrones y uno con ojos celestes. El genotipo de los padres es:",
+      "opciones": [
+        "Homocigota recesivo.",
+        "Un padre homocigota dominante y el otro recesivo.",
+        "Heterocigota ambos padres.",
+        "Homocigota dominante ambos padres."
+      ],
+      "correcta": "C",
+      "explicacion": "La manifestación del rasgo recesivo en la progenie requiere que ambos progenitores transmitan un alelo recesivo, siendo necesariamente heterocigotas."
+    },
+    {
+      "pregunta": "En un cruzamiento de prueba o retrocruza se aparean:",
+      "opciones": [
+        "un individuo de genotipo heterocigota con otro dominante.",
+        "un individuo de fenotipo dominante y genotipo incierto con un homocigota recesivo.",
+        "dos individuos homocigotas recesivos.",
+        "dos individuos heterocigotas para el mismo rasgo."
+      ],
+      "correcta": "B",
+      "explicacion": "Esta cruza sirve para determinar si un individuo dominante es homocigota o heterocigota al analizar si aparece el fenotipo recesivo en la descendencia."
+    },
+    {
+      "pregunta": "Una célula con dotación 2n = 16 que se divide por mitosis dará como resultado:",
+      "opciones": [
+        "dos células n=8 con cromosomas simples.",
+        "dos células 2n=16 con cromosomas simples.",
+        "dos células 2n=16 con cromosomas duplicados.",
+        "cuatro células n=8 con cromosomas duplicados."
+      ],
+      "correcta": "B",
+      "explicacion": "Al finalizar la citocinesis mitótica, cada una de las dos células hijas mantiene la diploidía (2n=16) y sus cromosomas consisten en una sola cromátide."
+    },
+    {
+      "pregunta": "Durante el proceso de duplicación del ADN:",
+      "opciones": [
+        "la enzima ADN polimerasa une los fragmentos discontinuos de ADN.",
+        "las topoisomerasas o girasas alivian la tensión rompiendo uniones fosfodiéster.",
+        "el cebador de ARN aporta un extremo 5' libre para el enganche de la enzima.",
+        "la ligasa sintetiza los puentes de hidrógeno entre las bases."
+      ],
+      "correcta": "B",
+      "explicacion": "Las topoisomerasas cortan transitoriamente los enlaces fosfodiéster del ADN para liberar el superenrollamiento generado por la apertura de la horquilla."
+    },
+    {
+      "pregunta": "Cualquier célula somática de un organismo diploide se caracteriza por:",
+      "opciones": [
+        "carecer totalmente de cromosomas homólogos.",
+        "presentar cromosomas homólogos únicamente durante la fase M.",
+        "poseer pares de cromosomas homólogos, uno proveniente de cada progenitor.",
+        "contener la mitad de la información genética de la especie."
+      ],
+      "correcta": "C",
+      "explicacion": "Las células diploides se componen de juegos de cromosomas organizados en pares de homólogos: uno heredado por vía materna y otro por vía paterna."
+    },
+    {
+      "pregunta": "Durante el desarrollo de la ovogénesis humana, los ovocitos primarios detienen su división celular en la etapa de:",
+      "opciones": [
+        "Metafase I",
+        "Telofase I",
+        "Profase I",
+        "Metafase II"
+      ],
+      "correcta": "C",
+      "explicacion": "Los ovocitos I inician la meiosis en el periodo fetal y quedan arrestados en el diplotene de la profase I hasta el inicio de la maduración sexual."
+    },
+    {
+      "pregunta": "Según la transmisión hereditaria mendeliana, un individuo con genotipo AaBB producirá gametas de tipo:",
+      "opciones": [
+        "A, a y B en proporciones iguales.",
+        "únicamente aB.",
+        "AB y aB en igual proporción.",
+        "Aa y Bb juntas."
+      ],
+      "correcta": "C",
+      "explicacion": "El locus A aporta los alelos A o a (50% cada uno), mientras que el locus B solo puede aportar el alelo B. Por ende, las gametas posibles son AB y aB."
+    },
+    {
+      "pregunta": "Al observar una célula meiótica con 8 bivalentes alneados en la placa ecuatorial, se deduce que la célula madre era:",
+      "opciones": [
+        "n = 8 en la profase I.",
+        "2n = 8 en la anafase meiótica.",
+        "2n = 16 en la metafase I.",
+        "2n = 16 en la metafase II."
+      ],
+      "correcta": "C",
+      "explicacion": "Un bivalente o tétrada representa un par de homólogos apareados. Si hay 8 bivalentes en la placa metafásica de la meiosis I, la diploidía total es 2n = 16."
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "materia": "Biología Celular y Molecular",
+  "tema": "Parciales de Biología (Integrador)",
+  "preguntas": [
+    {
+      "pregunta": "Desde la perspectiva de la teoría sintética de la evolución, el cuello largo de las jirafas se explica por:",
+      "opciones": [
+        "la necesidad individual de alcanzar las hojas más altas de los árboles.",
+        "el estiramiento continuo de las vértebras cervicales transmitido a la progenie.",
+        "la supervivencia y reproducción diferencial de individuos con cuellos más largos producto de mutaciones azarosas previas.",
+        "la invariabilidad de las especies desde su origen primigenio."
+      ],
+      "correcta": "C",
+      "explicacion": "La selección natural actúa sobre variaciones genéticas heredables preexistentes en la población, favoreciendo a los individuos con mayor adecuación biológica frente al entorno."
+    },
+    {
+      "pregunta": "Salvo en el caso de los gemelos monocigóticos, no existen dos seres humanos idénticos. Esta enorme diversidad genética individual se debe principalmente a:",
+      "opciones": [
+        "la alta tasa de mutaciones que ocurren durante la segmentación del cigoto.",
+        "la recombinación meiótica por entrecruzamiento y la segregación aleatoria de cromosomas durante la reproducción sexual.",
+        "la influencia directa de las condiciones ambientales durante el desarrollo embrionario.",
+        "las mutaciones somáticas acumuladas en el tejido epitelial."
+      ],
+      "correcta": "B",
+      "explicacion": "La reproducción sexual genera variabilidad genética única mediante el entrecruzamiento en profase I, la distribución independiente de homólogos en anafase I y la fecundación al azar."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes conceptos constituye un pilar fundamental en la teoría de la evolución por selección natural planteada por Darwin?",
+      "opciones": [
+        "El uso y desuso de los órganos como motor de cambio.",
+        "La tendencia interna teleológica hacia la perfección.",
+        "La existencia de un antepasado común para especies emparentadas.",
+        "La modificación deliberada del genoma ante la necesidad de sobrevivir."
+      ],
+      "correcta": "C",
+      "explicacion": "El concepto de descendencia con modificación a partir de un ancestro común representa una idea central de la teoría evolutiva darwiniana."
+    },
+    {
+      "pregunta": "El proceso morfogenético responsable directa de la eliminación del tejido interdigital durante el desarrollo embrionario de los miembros en mamíferos es la:",
+      "opciones": [
+        "mitosis asimétrica.",
+        "inducción embrionaria secundaria.",
+        "apoptosis o muerte celular programada.",
+        "formación del patrón epitelial."
+      ],
+      "correcta": "C",
+      "explicacion": "La apoptosis esculpe las estructuras embrionarias como los dedos mediante la eliminación controlada del tejido mesenquimático interdigital."
+    },
+    {
+      "pregunta": "Los genes reguladores conocidos como genes homeóticos (Hox) se caracterizan por:",
+      "opciones": [
+        "encontrarse exclusivamente en el genoma de drosofílidos.",
+        "definir la identidad de los segmentos corporales al controlar la expresión de genes de estructuras específicas.",
+        "carecer de secuencias conservadas entre invertebrados y vertebrados.",
+        "codificar proteínas del citoesqueleto embrionario."
+      ],
+      "correcta": "B",
+      "explicacion": "Los genes Hox son factores de transcripción altamente conservados evolutivamente que determinan el patrón de desarrollo anteroposterior y la identidad segmental."
+    },
+    {
+      "pregunta": "La diferenciación celular que permite a células del mismo organismo adquirir formas y funciones especializadas radica en:",
+      "opciones": [
+        "la eliminación progresiva de genes innecesarios del genoma.",
+        "la mutación diferencial del ADN según el tejido en formación.",
+        "la transcripción y expresión diferencial de conjuntos específicos de genes.",
+        "la pérdida de parejas de cromosomas homólogos."
+      ],
+      "correcta": "C",
+      "explicacion": "Aunque todas las células somáticas comparten el mismo genoma, se diferencian según qué subconjunto de genes se transcribe y traduce de forma selectiva."
+    },
+    {
+      "pregunta": "Respecto al potencial de las células madre embrionarias en las primeras etapas del desarrollo, es correcto afirmar que:",
+      "opciones": [
+        "presentan un alto grado de diferenciación terminal.",
+        "se encuentran únicamente en los tejidos adultos maduros.",
+        "las células de las primeras mórulas son totipotentes.",
+        "han perdido más de la mitad de sus secuencias de ADN."
+      ],
+      "correcta": "C",
+      "explicacion": "El cigoto y las blastómeras tempranas son totipotentes, capaces de dar origen a todos los tejidos embrionarios y extraembrionarios."
+    },
+    {
+      "pregunta": "Los determinantes citoplasmáticos presentes en el óvulo no fecundado se caracterizan por ser:",
+      "opciones": [
+        "moléculas sintetizadas por los genes maternos y distribuidas asimétricamente para regular la expresión génica embrionaria.",
+        "productos directos de la expresión del genoma del espermatozoide.",
+        "enzimas de la vía secretora producidas por el propio embrión.",
+        "mecanismos de barrera contra la polispermia."
+      ],
+      "correcta": "A",
+      "explicacion": "Los determinantes citoplasmáticos (ARNm y proteínas) son de origen materno y, al repartirse desigualmente durante las primeras clivajes, especifican destinos celulares."
+    },
+    {
+      "pregunta": "Los experimentos exitosos de clonación por transferencia nuclear a partir de núcleos de células adultas diferenciadas demostraron que:",
+      "opciones": [
+        "las células diferenciadas pierden irreversiblemente gran parte de su genoma.",
+        "la información hereditaria completa se conserva intacta tras la diferenciación celular.",
+        "el citoplasma del óvulo carece de factores reguladores del ADN.",
+        "las células diferenciadas sufren mutaciones dirigidas durante su especialización."
+      ],
+      "correcta": "C",
+      "explicacion": "Al reprogramar el núcleo de una célula diferenciada e introducirlo en un óvulo enucleado, este demuestra conservar la totipotencia del genoma completo."
+    },
+    {
+      "pregunta": "El tamaño del genoma (C-value) en los organismos eucariontes se caracteriza por:",
+      "opciones": [
+        "guardar una relación estrictamente proporcional con la complejidad funcional del organismo.",
+        "aumentar siempre en proporción directa con el número total de genes.",
+        "no presentar una relación correlativa directa con la complejidad o el número de genes (Paradoja del valor C).",
+        "depender de manera lineal del peso corporal del individuo."
+      ],
+      "correcta": "C",
+      "explicacion": "La paradoja del valor C indica que la cantidad de ADN por núcleo haploide en eucariotas no se relaciona directamente con la complejidad biológica ni el número de genes."
+    },
+    {
+      "pregunta": "En un organismo diploide con complemento 2n = 20 cromosomas, el número de cromosomas aportado por cada gameta parental en la fecundación es:",
+      "opciones": [
+        "10 cromosomas.",
+        "20 cromosomas.",
+        "5 cromosomas.",
+        "40 cromosomas."
+      ],
+      "correcta": "A",
+      "explicacion": "Las gametas son células haploides (n) que contienen la mitad del complemento cromosómico de la especie (n = 10)."
+    },
+    {
+      "pregunta": "Al concluir la telofase de la división mitótica en una célula somática humana, cada uno de los núcleos hijos resultantes contiene:",
+      "opciones": [
+        "23 cromosomas duplicados.",
+        "46 cromosomas simples constituidos por una sola cromátida.",
+        "46 cromosomas dobles constituidos por dos cromátides.",
+        "23 cromosomas simples."
+      ],
+      "correcta": "B",
+      "explicacion": "La mitosis separa las cromátides hermanas en anafase, por lo que en telofase se constituyen dos núcleos diploides con 46 cromosomas no duplicados."
+    },
+    {
+      "pregunta": "Un gen que codifica para un ARN de transferencia (ARNt) en una célula eucarionte se caracteriza por:",
+      "opciones": [
+        "carecer de secuencia promotora por no sintetizar proteínas.",
+        "transcribir un único tipo específico de ARNt.",
+        "transcribirse de forma exclusiva durante el período S del ciclo.",
+        "sintetizar indistintamente ARNt para cualquier aminoácido."
+      ],
+      "correcta": "B",
+      "explicacion": "Cada gen de ARNt es específico y codifica para una molécula de ARNt con un anticodón particular que reconoce a un aminoácido determinado."
+    },
+    {
+      "pregunta": "Durante el proceso de duplicación del ADN en la horquilla de replicación, se observa que la hebra líder o continua:",
+      "opciones": [
+        "requiere mayor cantidad de cebadores de ARN que la hebra retrasada.",
+        "necesita de un único cebador o primer de ARN para iniciar su síntesis.",
+        "no precisa de cebadores para ser extendida por la ADN polimerasa.",
+        "se sintetiza de forma discontinua mediante fragmentos de Okazaki."
+      ],
+      "correcta": "B",
+      "explicacion": "Al sintetizarse continuamente en dirección 5'->3' hacia el avance de la horquilla, la hebra líder solo necesita un cebador inicial, a diferencia de la hebra retrasada."
+    },
+    {
+      "pregunta": "Al finalizar la replicación semiconservativa del ADN, cada una de las moléculas dobles resultantes se compone de:",
+      "opciones": [
+        "dos hebras totalmente nuevas sintetizadas *de novo*.",
+        "una hebra de origen parental y una hebra recién sintetizada.",
+        "dos hebras parentales reagrupadas.",
+        "una hebra de ARN y una hebra de ADN."
+      ],
+      "correcta": "B",
+      "explicacion": "El modelo semiconservativo establece que cada molécula hija conserva una de las dos hebras parentales que sirvió como molde y una hebra nueva complementaria."
+    },
+    {
+      "pregunta": "A través del complejo del poro nuclear transitan hacia y desde el nucleoplasma:",
+      "opciones": [
+        "las subunidades ribosómicas ensambladas en el nucléolo hacia el citosol y las proteínas ribosómicas hacia el núcleo.",
+        "exclusivamente moléculas de agua e iones por difusión simple.",
+        "las enzimas digestivas de la vía secretora.",
+        "las vesículas procedentes del complejo de Golgi."
+      ],
+      "correcta": "A",
+      "explicacion": "Las proteínas ribosómicas sintetizadas en el citosol ingresan por el poro para ensamblarse en el nucléolo, mientras que las subunidades formadas son exportadas al citosol."
+    },
+    {
+      "pregunta": "En el sistema del operón lactosa de bacterias, el complejo represor activo detiene la transcripción al unirse específicamente a:",
+      "opciones": [
+        "los genes estructurales lacZ y lacY.",
+        "la secuencia del promotor.",
+        "la región del operador.",
+        "la ARN polimerasa."
+      ],
+      "correcta": "C",
+      "explicacion": "La proteína represora activa reconoce la secuencia de bases del operador impidiendo el avance físico de la ARN polimerasa."
+    },
+    {
+      "pregunta": "La secuencia de desoxirribonucleótidos en el ADN donde se ensamblan la ARN polimerasa y los factores de transcripción para iniciar la síntesis de ARN se denomina:",
+      "opciones": [
+        "Operador.",
+        "Intrón.",
+        "Promotor.",
+        "Codón de inicio."
+      ],
+      "correcta": "C",
+      "explicacion": "El promotor es la región reguladora no codificante indispensable para dirigir el posicionamiento e inicio de la transcripción."
+    },
+    {
+      "pregunta": "Si un embrión humano en desarrollo presenta un recuento cariotípico de 44 cromosomas en lugar de los 46 habituales, se trata de una:",
+      "opciones": [
+        "variación diploide fisiológica.",
+        "aberración cromosómica numérica o aneuploidía.",
+        "mutación silenciosa puntual.",
+        "alteración que solo afecta a las mitocondrias."
+      ],
+      "correcta": "B",
+      "explicacion": "Cualquier desviación del número euploide característico de la especie (como 2n = 46) constituye una alteración numérica o aneuploidía."
+    },
+    {
+      "pregunta": "Debido a la universalidad casi absoluta del código genético, si se introduce un ARNm eucariota en un sistema de traducción bacteriano in vitro, este podrá:",
+      "opciones": [
+        "sintetizar la proteína correspondiente reconociendo los mismos codones.",
+        "mutar las bases nitrogenadas a uracilo.",
+        "destruir el ARNm por falta de núcleo.",
+        "modificar la secuencia de aminoácidos a una versión procariota."
+      ],
+      "correcta": "A",
+      "explicacion": "La universalidad del código permite que la maquinaria traduccional reconozca la correlación triplete-aminoácido entre distintos reinos biológicos."
+    },
+    {
+      "pregunta": "En el mecanismo del operón triptófano de E. coli, la adición de triptófano en el medio provoca que este actúe como:",
+      "opciones": [
+        "un inductor que degrada la ARN polimerasa.",
+        "un correpresor que se une al aporepresor para acoplarlo al operador.",
+        "un activador de la transcripción de los genes de síntesis.",
+        "un inhibidor de la traducción ribosomal."
+      ],
+      "correcta": "B",
+      "explicacion": "El triptófano es un correpresor que activa a la proteína represora inactiva, permitiendo su unión al operador para reprimir la síntesis."
+    },
+    {
+      "pregunta": "Una mujer de cabello oscuro (Mm) y grupo sanguíneo O (ii) concibe un hijo de cabello claro (mm) y grupo A (Ai). El genotipo materno y del hijo son respectivamente:",
+      "opciones": [
+        "MMii y mmAi",
+        "Mmii e iiAi",
+        "Mmii y mmAi",
+        "MMAi y mmAi"
+      ],
+      "correcta": "C",
+      "explicacion": "La madre es Mmii (aporta el alelo 'm' para pelo claro y el alelo 'i' para grupo O) y el hijo es mmAi (recibió 'm' y 'i' de la madre y 'm' y 'A' del padre)."
+    },
+    {
+      "pregunta": "En el transcurso de la anafase I de la meiosis se produce un evento crucial que consiste en la:",
+      "opciones": [
+        "separación de las cromátides hermanas hacia polos opuestos.",
+        "separación y migración de los cromosomas homólogos a los polos celulares.",
+        "duplicación del ADN nuclear.",
+        "condensación inicial de la cromatina."
+      ],
+      "correcta": "B",
+      "explicacion": "La anafase I separa los cromosomas homólogos duplicados, lo que fundamenta la primera ley de Mendel de la segregación de alelos."
+    },
+    {
+      "pregunta": "Durante la fase S del ciclo celular eucarionte, la síntesis de ADN se acompaña obligatoriamente de la:",
+      "opciones": [
+        "síntesis masiva de proteínas histonas para empaquetar las nuevas cadenas de ADN.",
+        "separación de los cromosomas homólogos.",
+        "desorganización irreversible del nucléolo.",
+        "degradación de todas las ciclinas."
+      ],
+      "correcta": "A",
+      "explicacion": "En la fase S la replicación del ADN requiere la síntesis coordinada de histonas para ensamblar los nucleosomas de las hebras hijas."
+    },
+    {
+      "pregunta": "Durante la reacción de síntesis de la hebra de ADN, la hidrólisis del grupo pirofosfato (PPi) liberado al incorporar cada dNTP sirve para:",
+      "opciones": [
+        "activar a la enzima helicasa.",
+        "aportar la energía libre exergónica que impulsa la polimerización irreversible de la cadena.",
+        "sintetizar el cebador de ARN.",
+        "formar el complejo de poro nuclear."
+      ],
+      "correcta": "B",
+      "explicacion": "La rotura del enlace fosfoanhídrido y la posterior hidrólisis del pirofosfato favorecen termodinámicamente la unión fosfodiéster."
+    },
+    {
+      "pregunta": "Si un par de progenitores de fenotipo A y B tienen un primer hijo de grupo sanguíneo O (ii), la probabilidad de que su próximo hijo sea de grupo O es del:",
+      "opciones": [
+        "0%",
+        "50%",
+        "25%",
+        "75%"
+      ],
+      "correcta": "C",
+      "explicacion": "Al tener un hijo O (ii), los padres son obligadamente heterocigotas (Ai x Bi). El cruzamiento da un 25% de probabilidad para el genotipo ii."
+    },
+    {
+      "pregunta": "En la espermatogénesis, la anafase II de la meiosis se caracteriza por la:",
+      "opciones": [
+        "separación de los cromosomas homólogos.",
+        "separación de las cromátides hermanas recombinadas hacia polos opuestos.",
+        "diferenciación morfológica de la cola o flagelo.",
+        "duplicación previa de los centríolos."
+      ],
+      "correcta": "B",
+      "explicacion": "La meiosis II es una división ecuacional en la que se escinden los centrómeros separando las cromátides hermanas."
+    },
+    {
+      "pregunta": "Si en una muestra de ADN bicatenario se determina que el 30% de las bases nitrogenadas corresponde a Adenina (A), el porcentaje de Guanina (G) será del:",
+      "opciones": [
+        "30%",
+        "50%",
+        "20%",
+        "40%"
+      ],
+      "correcta": "C",
+      "explicacion": "Por la regla de Chargaff: A = T = 30% (suma 60%). El 40% restante corresponde a G + C, por lo que G = 20% y C = 20%."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes proteínas no requiere ingresar al lumen del retículo endoplásmico rugoso (REG) ni transitar por el complejo de Golgi?",
+      "opciones": [
+        "Una proteína receptora de la membrana plasmática.",
+        "Una enzima hidrolítica lisosomal.",
+        "Una enzima citosólica de la vía glucolítica.",
+        "Una hormona peptídica de secreción."
+      ],
+      "correcta": "C",
+      "explicacion": "Las enzimas de la glucólisis se traducen en ribosomas libres y permanecen activas en el citosol sin pasar por el sistema de endomembranas."
+    },
+    {
+      "pregunta": "El péptido señal presente en las proteínas dirigidas a la vía secretora se caracteriza por ser una secuencia de aminoácidos ubicada en:",
+      "opciones": [
+        "el extremo amino terminal que guía el complejo ribosoma-ARNm hacia la membrana del REG.",
+        "el extremo carboxilo terminal para retención nuclear.",
+        "el asa del ARN de transferencia.",
+        "la secuencia del promotor génico."
+      ],
+      "correcta": "A",
+      "explicacion": "El péptido señal aminoterminal es reconocido por la partícula SRP para translocar la proteína naciente al interior del REG."
+    },
+    {
+      "pregunta": "En las bacterias, la replicación de su único cromosoma circular se caracteriza por iniciarse en:",
+      "opciones": [
+        "múltiples orígenes distribuidos aleatoriamente.",
+        "los telómeros de la molécula lineal.",
+        "un único sitio de origen (oriC) y progresar de forma bidireccional.",
+        "el centrómero del cromosoma."
+      ],
+      "correcta": "C",
+      "explicacion": "El genoma procarionte posee un único origen de replicación bien definido a partir del cual se forman dos horquillas en direcciones opuestas."
+    },
+    {
+      "pregunta": "El cebador o primer indispensable para la iniciación de la síntesis de ADN por las polimerasas está constituido por:",
+      "opciones": [
+        "un fragmento de ADN de cadena doble.",
+        "un corto oligonucleótido de ARN sintetizado por la enzima primasa.",
+        "una cadena proteica rica en aminoácidos básicos.",
+        "una molécula de desoxirribonucleótido monofosfato."
+      ],
+      "correcta": "B",
+      "explicacion": "La primasa (ARN polimerasa) sintetiza un corto tramo de ARN complementario que ofrece el extremo 3'-OH libre a la ADN polimerasa."
+    },
+    {
+      "pregunta": "Las dos cadenas de ADN idénticas que resultan de la replicación semiconservativa durante la fase S constituirán en la división:",
+      "opciones": [
+        "los dos cromosomas de un par de homólogos.",
+        "las dos cromátides hermanas de un cromosoma duplicado.",
+        "dos cromosomas de pares diferentes.",
+        "dos subunidades de histonas."
+      ],
+      "correcta": "B",
+      "explicacion": "Las dos moléculas hijas dobles producidas por replicación permanecen unidas por la cohesina formando las dos cromátides hermanas."
+    },
+    {
+      "pregunta": "Si en un fragmento de la secuencia codificante de un gen se produce la inserción de tres nucleótidos (un codón completo), la consecuencia será:",
+      "opciones": [
+        "un corrimiento grave del marco de lectura traduccional.",
+        "la adición de un aminoácido a la proteína conservando el marco de lectura posterior.",
+        "la interrupción instantánea de la transcripción.",
+        "la degradación completa del ADN."
+      ],
+      "correcta": "B",
+      "explicacion": "Al insertar un múltiplo exacto de tres bases (un codón), se suma o resta un residuo aminoacídico sin alterar el marco de lectura de los codones siguientes."
+    },
+    {
+      "pregunta": "La cola de poliadeninas (poli-A) que se añade al extremo 3' del pre-ARNm eucarionte cumple la función de:",
+      "opciones": [
+        "favorecer la estabilidad de la molécula, su exportación al citosol y el inicio de la traducción.",
+        "codificar para los aminoácidos del dominio catalítico.",
+        "permitir la eliminación de exones por el espliceosoma.",
+        "unir el ARNm al promotor génico."
+      ],
+      "correcta": "A",
+      "explicacion": "La poliadenilación en 3' protege al ARNm maduro de la degradación por exonucleasas y facilita su reconocimiento traduccional."
+    },
+    {
+      "pregunta": "El axónema que constituye el núcleo estructural del flagelo en una célula eucarionte está integrado por una organización de:",
+      "opciones": [
+        "filamentos de actina y miosina.",
+        "microtúbulos dispuestos en un patrón de 9 pares periféricos y 1 par central (9+2).",
+        "filamentos intermedios de queratina.",
+        "fibrillas de colágeno extracelular."
+      ],
+      "correcta": "B",
+      "explicacion": "Los cilios y flagelos eucariotas poseen una arquitectura interna basada en un axonema de microtúbulos de tubulina organizados en un arreglo 9+2."
+    }
+  ]
+}

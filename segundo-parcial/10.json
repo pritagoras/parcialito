@@ -1,0 +1,336 @@
+{
+  "materia": "Biología Celular y Molecular",
+  "tema": "Parciales de Biología (Integrador)",
+  "preguntas": [
+    {
+      "pregunta": "Si se analiza una célula somática en fase G1 perteneciente a una especie diploide con 2n = 8 cromosomas, dicha célula contendrá en su núcleo:",
+      "opciones": [
+        "8 cromosomas simples y 8 moléculas de ADN (8 cromátides).",
+        "8 cromosomas dobles y 16 cromátides.",
+        "4 cromosomas simples y 8 cromátides.",
+        "16 cromosomas simples y 16 cromátides."
+      ],
+      "correcta": "A",
+      "explicacion": "En el período G1 previo a la fase S, la célula diploide posee 8 cromosomas constituidos por una sola cromátide (8 moléculas de ADN)[cite: 10]."
+    },
+    {
+      "pregunta": "Un hombre de visión normal y una mujer de visión normal tienen una hija que se casa con un hombre sano y da a luz a un hijo varón daltónico. De esta línea genealógica se deduce directamente que:",
+      "opciones": [
+        "todos los hijos varones de la mujer serán daltónicos.",
+        "la madre de la mujer era portadora obligada del alelo para la ceguera al color.",
+        "la mujer es portadora del alelo recesivo de la ceguera a los colores ligado al X.",
+        "el padre de la mujer era daltónico."
+      ],
+      "correcta": "C",
+      "explicacion": "Para transmitir el cromosoma X con el alelo recesivo del daltonismo a su hijo varón, la madre debe ser heterocigota portadora del rasgo ligado al sexo[cite: 10]."
+    },
+    {
+      "pregunta": "En las células de mamíferos, el proceso de importación de proteínas histónicas desde el citosol hacia el nucleoplasma requiere de:",
+      "opciones": [
+        "la presencia de una secuencia de localización nuclear (NLS) reconocida por una importina.",
+        "una señal de exportación nuclear (NES) y la hidrólisis directa de ATP.",
+        "su empaquetamiento previo en vesículas del complejo de Golgi.",
+        "su paso a través del retículo endoplásmico rugoso (RER)."
+      ],
+      "correcta": "A",
+      "explicacion": "Las histonas se sintetizan en los ribosomas citosólicos y poseen secuencias NLS que permiten su transporte activo al núcleo mediante receptores del tipo importina[cite: 10]."
+    },
+    {
+      "pregunta": "Desde el punto de vista de la evolución sintética (Neodarwinismo), la principal fuerza impulsora que genera selección natural adaptativa sobre una población es:",
+      "opciones": [
+        "la tendencia interna de las especies a la perfección.",
+        "las variaciones de las presiones ambientales que determinan la reproducción diferencial de variantes heredables.",
+        "el desuso prolongado de las estructuras anatómicas no utilizadas.",
+        "la aparición de macromutaciones universales en cada generación."
+      ],
+      "correcta": "B",
+      "explicacion": "El ambiente actúa como filtro selectivo determinando la reproducción diferencial de los individuos con genotipos de mayor adecuación biológica[cite: 10]."
+    },
+    {
+      "pregunta": "El concepto de 'reloj molecular' empleado en la biología evolutiva para reconstruir la filogenia de las especies se fundamenta en que:",
+      "opciones": [
+        "las mutaciones neutras se acumulan en las secuencias genómicas a una tasa aproximadamente constante a lo largo del tiempo.",
+        "la velocidad de la selección natural es fija en todos los ecosistemas.",
+        "el tamaño corporal determina la frecuencia de mutación en eucariotas.",
+        "las proteínas aumentan su tamaño a medida que las especies evolucionan."
+      ],
+      "correcta": "A",
+      "explicacion": "Al acumularse sustituciones neutras a ritmo casi constante, la divergencia de secuencias de nucleótidos permite estimar el tiempo transcurrido desde la separación de un ancestro común[cite: 10]."
+    },
+    {
+      "pregunta": "La teoría evolutiva de la Neutralidad (propuesta por Motoo Kimura) postula que:",
+      "opciones": [
+        "todas las mutaciones son letales y eliminadas de inmediato por la selección natural.",
+        "la mayoría de las mutaciones a nivel molecular no son perjudiciales ni ventajosas, sino neutras, fijándose por deriva génica.",
+        "la selección natural favorece únicamente a los organismos más fuertes físicamente.",
+        "las mutaciones ocurren de manera dirigida para responder a exigencias del medio."
+      ],
+      "correcta": "B",
+      "explicacion": "Según la teoría neutralista, gran parte de la variabilidad genética molecular se debe a la fijación al azar por deriva génica de mutaciones adaptativamente neutras[cite: 10]."
+    },
+    {
+      "pregunta": "En un organismo diploide 2n = 10, ¿cuántos cromosomas y cuántas cromátides compondrán el núcleo de cada polo celular durante la telofase II de la meiosis?",
+      "opciones": [
+        "10 cromosomas dobles.",
+        "5 cromosomas simples (de una sola cromátide).",
+        "5 cromosomas dobles (con dos cromátides hermanas).",
+        "10 cromosomas simples."
+      ],
+      "correcta": "B",
+      "explicacion": "Tras la meiosis II reduccional y ecuacional, cada polo recibe una dotación haploide (n = 5) de cromosomas no duplicados[cite: 10]."
+    },
+    {
+      "pregunta": "Si a un cultivo celular en fase G1 del ciclo se le adicionan desoxirribonucleótidos marcados radiactivamente, la radiactividad en las moléculas de ADN durante la fase G2 posterior se detectará en:",
+      "opciones": [
+        "una de las dos hebras de cada molécula de ADN recién sintetizada (modelo semiconservativo).",
+        "las dos hebras de todas las moléculas de ADN.",
+        "exclusivamente los cromosomas sexuales.",
+        "las moléculas de ARN mensajero del citoplasma."
+      ],
+      "correcta": "A",
+      "explicacion": "Debido al mecanismo semiconservativo, cada nueva molécula de ADN duplicada en S incorpora una hebra con el nucleótido radiactivo y conserva una hebra molde no marcada[cite: 10]."
+    },
+    {
+      "pregunta": "En las células vegetales, el proceso de citocinesis a diferencia de las células animales se caracteriza por ser:",
+      "opciones": [
+        "centrípeto por la formación de un anillo contráctil de actina y miosina.",
+        "centrífugo mediante la formación del fragmoplasto a partir de vesículas del complejo de Golgi.",
+        "ausente por la falta de huso mitótico.",
+        "mediado directamente por la lámina nuclear."
+      ],
+      "correcta": "B",
+      "explicacion": "La pared celular impide la estrangulación; las células vegetales construyen la tabicación desde el centro hacia afuera mediante la fusión de vesículas en el fragmoplasto[cite: 10]."
+    },
+    {
+      "pregunta": "El código genético se define como 'no ambiguo' debido a la propiedad por la cual:",
+      "opciones": [
+        "varios codones pueden codificar para un mismo aminoácido.",
+        "un codón específico determina de manera unívoca a un solo aminoácido.",
+        "todos los tripletes codifican señales de iniciación.",
+        "su estructura varía en los organismos procariotas."
+      ],
+      "correcta": "B",
+      "explicacion": "La no ambigüedad del código genético asegura que no exista confusión traduccional: cada triplete o codón codifica para un único aminoácido específico[cite: 10]."
+    },
+    {
+      "pregunta": "Si la secuencia del codón en la hebra del ARN mensajero es 5'-CCA-3', la secuencia complementaria del anticodón en la molécula de ARNt será:",
+      "opciones": [
+        "3'-GGU-5'",
+        "5'-GGU-3'",
+        "3'-CCA-5'",
+        "5'-GGT-3'"
+      ],
+      "correcta": "A",
+      "explicacion": "El apareamiento de bases entre codón y anticodón es antiparalelo y complementario: 5'-CCA-3' se aparea con 3'-GGU-5'[cite: 10]."
+    },
+    {
+      "pregunta": "La modificación postranscripcional del pre-ARNm eucarionte denominada poliadenilación (cola poli-A en 3') cumple la función de:",
+      "opciones": [
+        "señalizar la ubicación del promotor génico.",
+        "proteger al ARNm de la degradación por exonucleasas y facilitar su exportación al citosol.",
+        "codificar para los residuos de metionina iniciales.",
+        "sintetizar el capuchón en el extremo 5'."
+      ],
+      "correcta": "B",
+      "explicacion": "La adición de la cola de poliadeninas en el extremo 3' confiere estabilidad al ARNm frente a la degradación citoplásmica y promueve la traducción[cite: 10]."
+    },
+    {
+      "pregunta": "Una mutación puntual en la región codificante de un gen que cambia un nucleótido sin alterar la secuencia de aminoácidos de la proteína resultante se denomina:",
+      "opciones": [
+        "Mutación silenciosa.",
+        "Mutación de sentido erróneo (missense).",
+        "Mutación sin sentido (nonsense).",
+        "Mutación por corrimiento del marco de lectura (frameshift)."
+      ],
+      "correcta": "A",
+      "explicacion": "Por la degeneración del código genético, el reemplazo de una base por otra que genera un codón sinónimo no modifica el aminoácido y es una mutación silenciosa[cite: 10]."
+    },
+    {
+      "pregunta": "En las células eucariontes, el complejo de la telomerasa funciona mecánicamente como una:",
+      "opciones": [
+        "ARN polimerasa que sintetiza cebadores de ARN en el citosol.",
+        "ADN polimerasa dependiente de ARN (transcriptasa reversa) que extiende los extremos 3' del ADN cromosómico.",
+        "endonucleasa de restricción de intrones.",
+        "topoisomerasa especializada en liberar nudos en los plásmidos."
+      ],
+      "correcta": "B",
+      "explicacion": "La telomerasa contiene su propio molde de ARN interno y utiliza su actividad transcriptasa reversa para prolongar los extremos de los cromosomas lineales[cite: 10]."
+    },
+    {
+      "pregunta": "La regulación del paso de la fase G1 a la fase S en el ciclo celular depende de la activación del complejo enzimático formado por:",
+      "opciones": [
+        "la Cdk2 asociada a la Ciclina E (o Ciclina D-Cdk4/6).",
+        "la Cdk1 acoplada a la Ciclina B.",
+        "la helicasa activa acoplada a la ligasa.",
+        "la ARN polimerasa I."
+      ],
+      "correcta": "A",
+      "explicacion": "Los complejos Cdk-ciclina de G1/S fosforilan proteínas diana (como Rb) impulsando la entrada de la célula a la fase de replicación del ADN[cite: 10]."
+    },
+    {
+      "pregunta": "Si el gen i (regulador) del operón lactosa sufre una mutación por un triplete de terminación prematuro que impide la síntesis de la proteína represora:",
+      "opciones": [
+        "el operón se expresará constitutivamente incluso en ausencia de lactosa.",
+        "la ARN polimerasa se unirá de forma irreversible al promotor sin transcribir.",
+        "el operón quedará reprimido de manera permanente.",
+        "se detendrá la glucólisis celular."
+      ],
+      "correcta": "A",
+      "explicacion": "Al no producirse el represor lacI, el operador permanece despejado permitiendo la transcripción continua de los genes estructurales (expresión constitutiva)[cite: 10]."
+    },
+    {
+      "pregunta": "Las proteínas solubles destinas al citosol celular o al nucleoplasma se sintetizan en:",
+      "opciones": [
+        "polirribosomas libres en el citoplasma.",
+        "ribosomas unidos a la membrana externa del RER.",
+        "el interior de la luz de la envoltura nuclear.",
+        "los complejos del poro nuclear."
+      ],
+      "correcta": "A",
+      "explicacion": "Las proteínas que no pertenecen al sistema de endomembranas ni se exportan son traducidas por ribosomas citosólicos no asociados a membranas[cite: 10]."
+    },
+    {
+      "pregunta": "La enzima conocida como ADN helicasa participa en la replicación celular mediante:",
+      "opciones": [
+        "la rotura de los enlaces fosfodiéster de la hebra molde.",
+        "la ruptura de los puentes de hidrógeno que unen las bases nitrogenadas parentales.",
+        "la formación del enlace peptídico en la horquilla.",
+        "el reemplazo del cebador de ARN por ADN."
+      ],
+      "correcta": "B",
+      "explicacion": "La helicasa consume ATP para separar las dos cadenas de la doble hélice rompiendo los puentes de hidrógeno entre las bases de la horquilla[cite: 10]."
+    },
+    {
+      "pregunta": "Un fallo o mutación en el gen que codifica para la proteína p53 en células humanas predispone a la formación de tumores porque p53 actúa fisiológicamente como:",
+      "opciones": [
+        "un factor supresor tumoral que arresta el ciclo celular ante daño genómico o induce apoptosis.",
+        "un oncogén que estimula la división incontrolada en fase G1.",
+        "una quinasa responsable de la fosforilación de la lámina nuclear.",
+        "una polimerasa de corrección de pruebas."
+      ],
+      "correcta": "A",
+      "explicacion": "La proteína p53 monitoriza la integridad del ADN; al detectar lesiones detiene el ciclo transcribiendo p21 o activa la apoptosis para evitar la proliferación de la célula dañada[cite: 10]."
+    },
+    {
+      "pregunta": "A diferencia de las células procariotas, la transcripción y traducción en las células eucariotas se caracterizan por estar:",
+      "opciones": [
+        "acopladas simultáneamente en el mismo compartimento.",
+        "espacial y temporalmente separadas por la presencia de la envoltura nuclear.",
+        "ausentes de regulación por proteínas reguladoras.",
+        "libres de mecanismos de splicing o empalme."
+      ],
+      "correcta": "B",
+      "explicacion": "La membrana nuclear separa la transcripción y el procesamiento del ARN (nucleares) del proceso de traducción (citoplásmico)[cite: 10]."
+    },
+    {
+      "pregunta": "La remoción de los cebadores de ARN y su posterior reemplazo por cadenas de ADN durante la replicación en la bacteria E. coli es catalizada por la enzima:",
+      "opciones": [
+        "ADN polimerasa I.",
+        "ADN polimerasa III.",
+        "ARN primasa.",
+        "Topoisomerasa I."
+      ],
+      "correcta": "A",
+      "explicacion": "La ADN polimerasa I procariota posee actividad exonucleasa 5'->3' para degradar los cebadores de ARN y sintetizar ADN en su reemplazo[cite: 10]."
+    },
+    {
+      "pregunta": "Las mutaciones generadas por la radiación ultravioleta al inducir la formación de dímeros de timina alteran el ADN porque:",
+      "opciones": [
+        "degradan los nucleosomas de los telómeros.",
+        "distorsionan la estructura helicoidal del ADN e impiden el avance de las polimerasas.",
+        "inhiben de forma irreversible a la enzima peptidil transferasa.",
+        "eliminan las regiones promotoras del operón."
+      ],
+      "correcta": "B",
+      "explicacion": "La unión covalente aberrante entre timinas adyacentes distorsiona la hélice, bloqueando las maquinarias de replicación y transcripción si no es reparada[cite: 10]."
+    },
+    {
+      "pregunta": "En el cariotipo humano somático femenino normal (46, XX), el número de autosomas y cromosomas sexuales presentes es respectivamente:",
+      "opciones": [
+        "44 autosomas y 2 cromosomas sexuales X.",
+        "23 autosomas y 23 cromosomas sexuales.",
+        "46 autosomas y ningún cromosoma sexual.",
+        "22 autosomas y 1 cromosoma X."
+      ],
+      "correcta": "A",
+      "explicacion": "El complemento diploide somático comprende 22 pares de autosomas (44) y un par de cromosomas sexuales (XX o XY)[cite: 10]."
+    },
+    {
+      "pregunta": "Durante la espermatogénesis humana, la primera división meiótica reduccional transforma a un espermatocito primario (2n) en:",
+      "opciones": [
+        "dos espermatocitos secundarios (n) con cromosomas duplicados.",
+        "cuatro espermátides haploides con cromosomas simples.",
+        "dos espermatogonias diploides.",
+        "cuatro espermatozoos funcionales."
+      ],
+      "correcta": "A",
+      "explicacion": "La meiosis I separa los cromosomas homólogos dando lugar a dos células hijas haploides (n) pero que retienen sus cromosomas dobles (espermatocitos II)[cite: 10]."
+    },
+    {
+      "pregunta": "Un hombre con grupo sanguíneo B y una mujer con grupo sanguíneo A, ambos homocigotas, tendrán una descendencia con una probabilidad del 100% para el grupo:",
+      "opciones": [
+        "Grupo AB.",
+        "Grupo O.",
+        "Grupo A.",
+        "Grupo B."
+      ],
+      "correcta": "A",
+      "explicacion": "El cruzamiento entre el genotipo I^B I^B y el genotipo I^A I^A origina exclusivamente el genotipo codominante I^A I^B (grupo AB)[cite: 10]."
+    },
+    {
+      "pregunta": "Una mujer portadora del alelo de la hemofilia (X H X h) concibe con un varón sano (X H Y). La probabilidad de que sus hijos varones nazcan hemofílicos es de:",
+      "opciones": [
+        "0%",
+        "50%",
+        "25%",
+        "100%"
+      ],
+      "correcta": "B",
+      "explicacion": "Los hijos varones reciben el Y del padre; de la madre portadora tienen un 50% de probabilidad de heredar el cromosoma X h patológico[cite: 10]."
+    },
+    {
+      "pregunta": "Un ratón albino de pelo largo (homocigota recesivo aall) se cruza con una hembra. Si el 50% de la descendencia es de pelo negro y corto y el 50% es de pelo negro y largo, se deduce que la hembra es:",
+      "opciones": [
+        "homocigota dominante para el color de pelo y heterocigota para la longitud.",
+        "heterocigota para ambos caracteres.",
+        "homocigota recesiva para el color y el largo.",
+        "heterocigota para el color y homocigota recesiva para el largo."
+      ],
+      "correcta": "A",
+      "explicacion": "Al obtener 100% de pelo negro la hembra es AA; la segregación 1:1 en la longitud del pelo evidencia que la hembra es Ll (AaLl x aall)[cite: 10]."
+    },
+    {
+      "pregunta": "La estructura conocida como nucleosoma está compuesta molecularmente por:",
+      "opciones": [
+        "un tramo de ADN envuelto alrededor de un octámero de proteínas histonas (dos copias de H2A, H2B, H3 y H4).",
+        "una molécula de ARN ribosomal unida a proteínas de la lámina.",
+        "un complejo catalítico formado por la ARN polimerasa II.",
+        "los microtúbulos cinetocóricos del centrómero."
+      ],
+      "correcta": "A",
+      "explicacion": "El nucleosoma es la unidad básica estructural de la cromatina, formado por aproximadamente 146 pares de bases de ADN enrollados sobre un octámero de histonas[cite: 10]."
+    },
+    {
+      "pregunta": "La enzima peptidil transferasa responsable de catalizar la formación del enlace peptídico en la traducción es una:",
+      "opciones": [
+        "ribozima o componente catalítico de ARN de la subunidad mayor del ribosoma.",
+        "quinasa que utiliza ATP citosólico.",
+        "proteína libre de la vía secretora.",
+        "transcriptasa reversa intranuclear."
+      ],
+      "correcta": "A",
+      "explicacion": "La actividad peptidil transferasa es ejercida directamente por la estructura de ARNr de la subunidad mayor del ribosoma (ribozima)[cite: 10]."
+    },
+    {
+      "pregunta": "El mecanismo de regulación génica denominado empalme alternativo (splicing alternativo) permite a las células eucariontes:",
+      "opciones": [
+        "sintetizar diferentes isoformas proteicas a partir de un único transcripto primario de pre-ARNm.",
+        "eliminar los intrones en el citoplasma celular.",
+        "duplicar el genoma en ausencia de la fase S.",
+        "modificar el código genético universal."
+      ],
+      "correcta": "A",
+      "explicacion": "El splicing alternativo combina diferencialmente los exones de un mismo pre-ARNm, permitiendo diversificar la expresión proteica del genoma[cite: 10]."
+    }
+  ]
+}

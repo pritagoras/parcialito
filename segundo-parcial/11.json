@@ -1,0 +1,336 @@
+{
+  "materia": "Biología Celular y Molecular",
+  "tema": "Parciales de Biología (Integrador)",
+  "preguntas": [
+    {
+      "pregunta": "El sitio o secuencia de ADN denominado promotor cumple la función de:",
+      "opciones": [
+        "permitir el posicionamiento e inicio de la transcripción por la ARN polimerasa.",
+        "unir a la ADN polimerasa durante la fase S del ciclo celular.",
+        "reconocer al ribosoma para el inicio de la traducción.",
+        "unirse al espliceosoma para eliminar los intrones del transcripto."
+      ],
+      "correcta": "A",
+      "explicacion": "El promotor es la secuencia reguladora específica en el ADN que reconoce la ARN polimerasa (junto a factores de transcripción) para posicionarse e iniciar la síntesis de ARN[cite: 11]."
+    },
+    {
+      "pregunta": "Si en el operón lactosa ocurre una mutación en el gen regulador lacI que provoca la pérdida total de afinidad de la proteína represora por el inductor (alolactosa):",
+      "opciones": [
+        "la ARN polimerasa transcribirá de forma constitutiva los genes estructurales.",
+        "el represor se unirá permanentemente al operador, impidiendo la transcripción del operón.",
+        "se producirán grandes cantidades de beta-galactosidasa.",
+        "el represor perderá afinidad por la secuencia del operador."
+      ],
+      "correcta": "B",
+      "explicacion": "Al no unirse al inductor, el represor no sufre el cambio conformacional necesario para desengancharse del operador, permaneciendo unido al ADN y bloqueando la transcripción[cite: 11]."
+    },
+    {
+      "pregunta": "Si la cantidad de ADN de una célula somática en la fase G2 es de 44 unidades arbitrarias, ¿cuánto ADN se espera encontrar en el núcleo de cada célula resultante tras la telofase II meiótica?",
+      "opciones": [
+        "11 unidades arbitrarias.",
+        "22 unidades arbitrarias.",
+        "44 unidades arbitrarias.",
+        "88 unidades arbitrarias."
+      ],
+      "correcta": "A",
+      "explicacion": "En G2 la célula presenta el ADN duplicado (4C = 44). La meiosis I reduce este contenido a 2C (22) y la meiosis II lo reduce nuevamente a la mitad (1C = 11 unidades)[cite: 11]."
+    },
+    {
+      "pregunta": "La diferencia fundamental entre el concepto de 'información genética' y el de 'código genético' radica en que:",
+      "opciones": [
+        "la información genética es la secuencia de nucleótidos del ADN de un organismo, mientras que el código genético es la regla universal de equivalencia entre codones de ARNm y aminoácidos.",
+        "la información genética determina el tipo de carbohidratos y el código determina el ADN.",
+        "la información genética es idéntica en todas las especies y el código genético es específico de cada individuo.",
+        "la información genética reside en el ARNt y el código genético en el ARNm."
+      ],
+      "correcta": "A",
+      "explicacion": "La información genética es la secuencia particular de bases nitrogenadas del genoma de un ser vivo, mientras que el código genético es el conjunto de reglas universales que asigna a cada triplete de ARNm un aminoácido específico[cite: 11]."
+    },
+    {
+      "pregunta": "La enzima ADN polimerasa III de las bacterias procariontes se caracteriza catalíticamente por:",
+      "opciones": [
+        "polimerizar en sentido 5' -> 3', poseer actividad exonucleasa de corrección 3' -> 5' y sintetizar una hebra antiparalela.",
+        "polimerizar en sentido 3' -> 5' y carecer de función autocorrectora.",
+        "sintetizar en sentido 5' -> 3' utilizando exclusivamente ribonucleótidos.",
+        "sellar las muescas entre los fragmentos de Okazaki."
+      ],
+      "correcta": "A",
+      "explicacion": "La ADN Pol III de bacterias cataliza la síntesis 5'->3' con alta procesividad y corrige errores mediante su actividad exonucleasa 3'->5' (proofreading)[cite: 11]."
+    },
+    {
+      "pregunta": "Si una célula somática humana en fase G1 se cultiva en presencia de desoxirribonucleótidos marcados radiactivamente, en la metafase mitótica subsiguiente se observará radiactividad en:",
+      "opciones": [
+        "ambas cromátides hermanas de cada uno de los 46 cromosomas duplicados.",
+        "una sola cromátide de la mitad de los cromosomas.",
+        "exclusivamente en la cromátide del cromosoma Y.",
+        "ninguna cromátide por ser replicación conservativa."
+      ],
+      "correcta": "A",
+      "explicacion": "Al replicarse el ADN durante la fase S en medio radiactivo, cada hebra molde parental incorpora una hebra hija marcada; por lo tanto, ambas cromátides hermanas de todos los cromosomas contendrán radiactividad[cite: 11]."
+    },
+    {
+      "pregunta": "La presencia de intrones en la estructura de los genes eucariontes permite que, mediante el mecanismo de splicing alternativo:",
+      "opciones": [
+        "se transcriban ARNm de estructura policistrónica.",
+        "se pueda obtener más de un tipo de ARNm maduro y sintetizar diferentes proteínas a partir de una única secuencia génica.",
+        "se acelere la velocidad de polimerización de la ARN polimerasa II.",
+        "se duplique el número de cromosomas durante la interfase."
+      ],
+      "correcta": "B",
+      "explicacion": "El empalme alternativo combina selectivamente exones e intrones, permitiendo a la célula generar diferentes isoformas de proteínas a partir de un solo gen[cite: 11]."
+    },
+    {
+      "pregunta": "Si una célula en cultivo carece completamente de timidina trifosfato (dTTP) durante la interfase:",
+      "opciones": [
+        "no podrá sintetizar ADN en la fase S y se detendrá el ciclo impidiendo la división celular.",
+        "la célula podrá dividirse por mitosis pero sin formar huso acromático.",
+        "se acelerará la velocidad de síntesis de las proteínas histónicas.",
+        "sintetizará un genoma con uracilo en lugar de timina."
+      ],
+      "correcta": "A",
+      "explicacion": "Al faltar el nucleótido de timina (dTTP), la ADN polimerasa no puede replicar el ADN en la fase S, bloqueando la progresión del ciclo celular[cite: 11]."
+    },
+    {
+      "pregunta": "La síntesis de ADN retrotranscripto (cDNA) a partir de un molde de ARN es una reacción catalizada por la enzima:",
+      "opciones": [
+        "ARN polimerasa I.",
+        "Transcriptasa reversa o retrotranscriptasa.",
+        "ADN ligasa.",
+        "ARN primasa."
+      ],
+      "correcta": "B",
+      "explicacion": "La transcriptasa reversa es una ADN polimerasa dependiente de ARN que sintetiza ADN complementario (cDNA) utilizando un molde de ARN[cite: 11]."
+    },
+    {
+      "pregunta": "En la replicación del ADN, la existencia de una hebra continua (líder) y una hebra discontinua (retrasada) es provocada por:",
+      "opciones": [
+        "la antiparalelidad del ADN y la limitación de la ADN polimerasa de sintetizar exclusivamente en sentido 5' -> 3'.",
+        "la presencia de histonas solo en una de las dos hebras parentales.",
+        "el uso exclusivo de ribonucleótidos en la hebra adelantada.",
+        "que la replicación es conservativa en procariotas."
+      ],
+      "correcta": "A",
+      "explicacion": "Al ser las cadenas de la doble hélice antiparalelas y al poder sintetizar la ADN polimerasa solo en sentido 5'->3', una hebra se sintetiza en forma continua hacia la horquilla y la otra discontinuamente hacia afuera[cite: 11]."
+    },
+    {
+      "pregunta": "A diferencia de las células eucariontes, durante el proceso de transcripción en bacterias se observa que:",
+      "opciones": [
+        "se pueden generar moléculas de ARN mensajero policistrónico que codifican varias proteínas.",
+        "las moléculas de ARNm requieren de capping 5' y cola poli-A en 3' antes de ser traducidas.",
+        "intervienen tres tipos de ARN polimerasas nucleares especializadas.",
+        "requiere obligatoriamente de la presencia de nucleosomas."
+      ],
+      "correcta": "A",
+      "explicacion": "En bacterias, los operones son transcriptos en moléculas de ARNm policistrónicos que contienen marcos de lectura para múltiples enzimas de una ruta metabólica[cite: 11]."
+    },
+    {
+      "pregunta": "La sustitución de una base nitrogenada por otra en la región codificante de un gen no siempre altera la secuencia de aminoácidos de la proteína producida debido a que:",
+      "opciones": [
+        "el código genético es degenerado y varios codones pueden codificar el mismo aminoácido.",
+        "el código genético es ambiguo y un codón representa varios aminoácidos.",
+        "las ARN polimerasas corrigen la secuencia durante la traducción.",
+        "el ribosoma ignora los cambios en la primera base del codón."
+      ],
+      "correcta": "A",
+      "explicacion": "La degeneración del código implica la existencia de codones sinónimos; si la sustitución origina un codón que especifica el mismo aminoácido (mutación silenciosa), la proteína no cambia[cite: 11]."
+    },
+    {
+      "pregunta": "Los genes eucariontes que codifican para proteínas funcionales corresponden en su gran mayoría a secuencias de tipo:",
+      "opciones": [
+        "ADN de copia única o baja repetición.",
+        "ADN altamente repetitivo en tándem.",
+        "ADN satélite centromérico.",
+        "elementos heterocromáticos constitutivos."
+      ],
+      "correcta": "A",
+      "explicacion": "La mayor parte de los genes que codifican polipéptidos en el genoma eucariota se encuentran en la fracción de ADN de copia única (no repetido)[cite: 11]."
+    },
+    {
+      "pregunta": "En las bacterias, el factor proteico rho (ρ) participa específicamente en el proceso de:",
+      "opciones": [
+        "la terminación de la transcripción de ciertos genes.",
+        "el reconocimiento del sitio promotor.",
+        "la iniciación de la replicación del ADN.",
+        "el empaquetamiento del nucleoide."
+      ],
+      "correcta": "A",
+      "explicacion": "El factor rho es una helicasa que se desplaza sobre el ARN emergente y provoca la disociación del complejo de transcripción en los terminadores rho-dependientes en procariotas[cite: 11]."
+    },
+    {
+      "pregunta": "La posibilidad de expresar un gen de insulina humana en una bacteria y obtener la proteína funcional es posible gracias a que ambos organismos comparten:",
+      "opciones": [
+        "el mismo código genético (universalidad del código).",
+        "el mismo tipo de intrones y mecanismos de splicing.",
+        "la presencia de envoltura nuclear.",
+        "los mismos factores de transcripción basales."
+      ],
+      "correcta": "A",
+      "explicacion": "La universalidad del código genético establece que los mismos tripletes codifican los mismos aminoácidos tanto en humanos como en bacterias[cite: 11]."
+    },
+    {
+      "pregunta": "La remoción de la capuchón (Cap 5') en el extremo 5' de un ARN mensajero eucarionte maduro provoca directamente:",
+      "opciones": [
+        "la imposibilidad de formar el complejo de iniciación para la traducción.",
+        "la terminación prematura de la replicación del ADN.",
+        "la adición automática de un nuevo intrón.",
+        "la conversión del ARNm en un ARN policistrónico."
+      ],
+      "correcta": "A",
+      "explicacion": "El Cap 5' es la estructura reconocida por los factores eIF4E/eIF4F para reclutar la subunidad menor del ribosoma e iniciar la traducción[cite: 11]."
+    },
+    {
+      "pregunta": "Durante la fase de elongación de la traducción proteica, la enzima encargada de catalizar la formación del enlace peptídico es la:",
+      "opciones": [
+        "Peptidil transferasa (actividad ribozímica de la subunidad mayor del ribosoma).",
+        "Aminoacil-ARNt sintetasa.",
+        "ARN polimerasa II.",
+        "ADN ligasa."
+      ],
+      "correcta": "A",
+      "explicacion": "La peptidil transferasa es la actividad catalítica exercida por el ARNr de la subunidad mayor que transfiere el grupo carboxilo del péptido al grupo amino del nuevo aminoácido[cite: 11]."
+    },
+    {
+      "pregunta": "La inhibición de la ARN polimerasa II eucarionte afecta selectivamente la síntesis celular de:",
+      "opciones": [
+        "ARN mensajeros (ARNm).",
+        "ARN de transferencia (ARNt).",
+        "ARN ribosómico 5S.",
+        "todos los ARN bacterianos."
+      ],
+      "correcta": "A",
+      "explicacion": "En el núcleo eucariota, la ARN polimerasa II es la enzima responsable de la transcripción de los pre-ARNm que darán origen a las proteínas[cite: 11]."
+    },
+    {
+      "pregunta": "En las células eucariontes, los factores de transcripción basales regulan el inicio de la síntesis de ARN al unirse a la secuencia:",
+      "opciones": [
+        "del promotor (como la caja TATA).",
+        "del operador.",
+        "de la cola de poliadeninas.",
+        "del codón de parada."
+      ],
+      "correcta": "A",
+      "explicacion": "Los factores de transcripción basales (TFIID, TFIIB, etc.) reconocen el promotor del gen y forman el complejo preinicio para reclutar a la ARN polimerasa II[cite: 11]."
+    },
+    {
+      "pregunta": "La eucromatina se diferencia de la heterocromatina en que estructuralmente presenta:",
+      "opciones": [
+        "un menor grado de empaquetamiento y condensación, siendo transcripcionalmente activa.",
+        "una máxima condensación visible en metafase.",
+        "secuencias genómicas completamente inactivas.",
+        "ausencia de proteínas histónicas."
+      ],
+      "correcta": "A",
+      "explicacion": "La eucromatina es la forma laxa de la cromatina durante la interfase que permite el acceso de la maquinaria de transcripción a los genes[cite: 11]."
+    },
+    {
+      "pregunta": "Dos genes A y B cumplen la Segunda Ley de Mendel (segregación independiente) si se encuentran ubicados en:",
+      "opciones": [
+        "pares de cromosomas homólogos diferentes.",
+        "el mismo cromosoma muy próximos entre sí.",
+        "el mismo brazo cromosómico sin crossing-over.",
+        "el genoma mitocondrial exclusivamente."
+      ],
+      "correcta": "A",
+      "explicacion": "La segregación independiente de alelos se cumple cuando los loci génicos se localizan en pares de cromosomas homólogos distintos o distantes en el mismo cromosoma[cite: 11]."
+    },
+    {
+      "pregunta": "Si un individuo presenta una dotación cromosómica de 2n = 20, la cantidad de cromosomas recibida de su progenitor paterno es de:",
+      "opciones": [
+        "10 cromosomas.",
+        "20 cromosomas.",
+        "5 cromosomas.",
+        "40 cromosomas."
+      ],
+      "correcta": "A",
+      "explicacion": "Cada progenitor aporta una dotación haploide (n = 10) de cromosomas a través de su respectiva gameta durante la fecundación[cite: 11]."
+    },
+    {
+      "pregunta": "Una mujer portadora heterocigota del alelo del daltonismo (X D X d) y un hombre de visión normal (X D Y) tienen descendencia. La probabilidad de que sus hijas mujeres resulten daltónicas es de:",
+      "opciones": [
+        "0%",
+        "25%",
+        "50%",
+        "100%"
+      ],
+      "correcta": "A",
+      "explicacion": "Las hijas mujeres reciben obligatoriamente el cromosoma X D del padre sano, por lo que ninguna presentará el fenotipo daltónico recesivo (serán 50% sanas homocigotas y 50% portadoras)[cite: 11]."
+    },
+    {
+      "pregunta": "Si se cruzan dos plantas de guisante heterocigotas para semillas amarillas y lisas (AaLl x AaLl), ¿cuál es la probabilidad de obtener descendencia con semillas rugosas (ll)?",
+      "opciones": [
+        "25% (1/4)",
+        "50% (1/2)",
+        "75% (3/4)",
+        "100%"
+      ],
+      "correcta": "B",
+      "explicacion": "Para la característica de textura (Ll x Ll), la segregación monohíbrida da 1/4 LL, 2/2 Ll y 1/4 ll. Por ende, la probabilidad de semillas rugosas (ll) es del 25% (1/4)[cite: 11]."
+    },
+    {
+      "pregunta": "En genética de poblaciones, la llegada o salida de individuos en etapa reproductiva entre distintas poblaciones que altera las frecuencias alélicas se conoce como:",
+      "opciones": [
+        "Flujo génico (migración).",
+        "Efecto fundador.",
+        "Cuello de botella.",
+        "Selección estabilizadora."
+      ],
+      "correcta": "A",
+      "explicacion": "El flujo génico ocurre por la inmigración o emigración de organismos reproductivos (o sus gametas), lo que introduce o elimina alelos de la población[cite: 11]."
+    },
+    {
+      "pregunta": "Un evento de 'cuello de botella' poblacional se caracteriza genéticamente por provocar:",
+      "opciones": [
+        "una drástica y rápida reducción del tamaño poblacional y de la variabilidad genética por deriva génica.",
+        "un incremento repentino de las mutaciones adaptativas.",
+        "la eliminación de todos los alelos dominantes por selección natural.",
+        "la duplicación del cariotipo de la especie."
+      ],
+      "correcta": "A",
+      "explicacion": "Un cuello de botella ocurre cuando un evento catastrófico reduce severamente el número de individuos, disminuyendo drásticamente la diversidad genética por azar (deriva génica)[cite: 11]."
+    },
+    {
+      "pregunta": "El estudio evolutivo de la secuencia del ADN mitocondrial es de gran utilidad biológica en humanos debido a que:",
+      "opciones": [
+        "presenta una tasa de mutación rápida y se hereda de forma estrictamente materna sin recombinación.",
+        "se hereda exclusivamente por vía paterna.",
+        "sufre crossing-over constante en la interfase.",
+        "posee la misma secuencia en todas las especies."
+      ],
+      "correcta": "A",
+      "explicacion": "El ADN mitocondrial se transmite por vía materna y no recombina, lo que sumado a su tasa evolutiva permite rastrear linajes maternos ancestros[cite: 11]."
+    },
+    {
+      "pregunta": "En las células somáticas animales, el huso mitótico acromático es una estructura citoesquelética integrada por:",
+      "opciones": [
+        "microtúbulos polares, cinetocóricos y astrales.",
+        "filamentos intermedios de queratina.",
+        "microfilamentos de actina y miosina.",
+        "fibras de colágeno del matriz extracelular."
+      ],
+      "correcta": "A",
+      "explicacion": "El huso mitótico se organiza a partir del centrosoma mediante microtúbulos clasificables en polares, cinetocóricos y astrales según su interacción[cite: 11]."
+    },
+    {
+      "pregunta": "El proceso de recombinación o intercambio de segmentos entre cromátides no hermanas de cromosomas homólogos (crossing-over) ocurre en:",
+      "opciones": [
+        "la profase I de la meiosis.",
+        "la profase de la mitosis.",
+        "la anafase II meiótica.",
+        "la fase S de la interfase."
+      ],
+      "correcta": "A",
+      "explicacion": "El crossing-over tiene lugar durante el paquitene de la profase I meiótica, generando nuevas combinaciones alélicas en los cromosomas recombinantes[cite: 11]."
+    },
+    {
+      "pregunta": "Una mujer de grupo sanguíneo A (A0) y un hombre de grupo B (B0) que ya han tenido un hijo de grupo sanguíneo O (00), presentan en cada nuevo embarazo una probabilidad de tener un hijo de grupo O del:",
+      "opciones": [
+        "25% (1/4)",
+        "50% (1/2)",
+        "75% (3/4)",
+        "0%"
+      ],
+      "correcta": "A",
+      "explicacion": "Al ser ambos heterocigotas (A0 x B0), la combinación de los dos alelos recesivos 0 origina el genotipo 00 con una probabilidad de 1/4 (25%)[cite: 11]."
+    }
+  ]
+}

@@ -1,0 +1,864 @@
+{
+  "materia": "Biología Celular y Molecular",
+  "tema": "Parciales de Biología (Integrador)",
+  "preguntas": [
+    {
+      "pregunta": "En la profase mitótica, ¿cuál de las siguientes características estructurales presenta la célula?",
+      "opciones": [
+        "Los cromosomas homólogos se encuentran apareados formando bivalentes.",
+        "Los bivalentes se ubican exactamente en el plano ecuatorial.",
+        "Cada cromosoma está constituido por dos cromátides hermanas.",
+        "Se produce el fenómeno de crossing-over o entrecruzamiento."
+      ],
+      "correcta": "C",
+      "explicacion": "En la profase mitótica cada cromosoma ya duplicado está formado por dos cromátides hermanas; el apareamiento de homólogos y el entrecruzamiento son exclusivos de la meiosis."
+    },
+    {
+      "pregunta": "La formación de un espermatozoide a partir de una espermátida se explica a partir de:",
+      "opciones": [
+        "la recombinación meiótica de genes.",
+        "la eliminación masiva de secuencias no codificantes.",
+        "el proceso de diferenciación celular.",
+        "una nueva reducción del número cromosómico."
+      ],
+      "correcta": "C",
+      "explicacion": "La espermiogénesis transforma las espermátidas haploides en espermatozoides mediante modificaciones estructurales de diferenciación celular, sin divisiones adicionales."
+    },
+    {
+      "pregunta": "La diferenciación celular en los organismos multicelulares es un fenómeno determinado por:",
+      "opciones": [
+        "la pérdida progresiva de ciertos genes del genoma.",
+        "la eliminación selectiva de cromosomas.",
+        "la expresión diferencial de los genes.",
+        "el acortamiento telomérico en la interfase."
+      ],
+      "correcta": "C",
+      "explicacion": "Todas las células somáticas de un organismo comparten el mismo genoma, pero se diferencian funcionalmente al expresar conjuntos distintos de genes."
+    },
+    {
+      "pregunta": "Durante la profase I meiótica, una célula con una dotación 2n = 8 contendrá:",
+      "opciones": [
+        "8 cromosomas y 16 cromátidas.",
+        "4 cromosomas y 8 cromátidas.",
+        "8 cromosomas y 8 cromátidas.",
+        "16 cromosomas y 16 cromátidas."
+      ],
+      "correcta": "A",
+      "explicacion": "Tras completar la fase S de la interfase, la célula conserva sus 8 cromosomas diploides, pero cada uno está formado por dos cromátides hermanas (16 en total)."
+    },
+    {
+      "pregunta": "La migración y separación de los cromosomas homólogos hacia los polos ocurre en la:",
+      "opciones": [
+        "Anafase II meiótica.",
+        "Anafase mitótica.",
+        "Telofase I meiótica.",
+        "Anafase I meiótica."
+      ],
+      "correcta": "D",
+      "explicacion": "Durante la anafase I de la meiosis se disocian y separan los cromosomas homólogos, mientras que las cromátides hermanas se separan recíprocamente en anafase II y en la mitosis."
+    },
+    {
+      "pregunta": "La separación física de las cromátidas hermanas ocurre de manera característica en:",
+      "opciones": [
+        "Anafase I meiótica únicamente.",
+        "Metafase I meiótica.",
+        "Anafase mitótica y anafase II meiótica.",
+        "Profase I y profase II meiótica."
+      ],
+      "correcta": "C",
+      "explicacion": "Las cromátides hermanas se disocian y migran a los polos opuestos tanto durante la anafase de la mitosis como en la anafase II de la meiosis."
+    },
+    {
+      "pregunta": "En una especie con dotación 2n = 8, cada uno de sus espermatocitos I contendrá:",
+      "opciones": [
+        "8 cromosomas duplicados.",
+        "8 pares de cromosomas.",
+        "4 cromosomas duplicados.",
+        "16 cromosomas simples."
+      ],
+      "correcta": "A",
+      "explicacion": "El espermatocito primario es una célula diploide (2n = 8) que ya ha duplicado su ADN en la fase S, por lo que posee 8 cromosomas dobles."
+    },
+    {
+      "pregunta": "Una célula eucarionte que presenta 48 cromosomas duplicados alineados en la placa ecuatorial corresponde a:",
+      "opciones": [
+        "una célula 2n = 48 en metafase mitótica.",
+        "una célula n = 96 en anafase mitótica.",
+        "una célula 2n = 96 en metafase I meiótica.",
+        "una célula 2n = 48 en metafase II meiótica."
+      ],
+      "correcta": "A",
+      "explicacion": "Durante la metafase de la mitosis, una célula diploideubica individualmente todos sus cromosomas duplicados a lo largo del plano ecuatorial."
+    },
+    {
+      "pregunta": "Durante la telofase de la mitosis ocurre el siguiente evento clave:",
+      "opciones": [
+        "Se separan los cromosomas homólogos.",
+        "Se organiza y descondensa la membrana nuclear en cada polo.",
+        "Se forman los bivalentes o tétradas.",
+        "Se escinden los enlaces de cohesina en las cromátides."
+      ],
+      "correcta": "B",
+      "explicacion": "En la telofase concluye la migración cromosómica y se reconstruye la envoltura nuclear alrededor de cada juego cromosómico telofásico."
+    },
+    {
+      "pregunta": "En el ciclo biológico de una especie con reproducción sexual, el proceso meiótico permite:",
+      "opciones": [
+        "incrementar el número de células somáticas de forma exponencial.",
+        "mantener constante el número cromosómico de la especie a lo largo de las generaciones.",
+        "conservar exactamente la misma combinación alélica en las células hijas.",
+        "eliminar los errores introducidos durante la replicación del ADN."
+      ],
+      "correcta": "B",
+      "explicacion": "Al reducir la ploidía a la mitad en la formación de gametas, la meiosis compensa la duplicación cromosómica que ocurre posteriormente en la fecundación."
+    },
+    {
+      "pregunta": "Tanto en el desarrollo de la mitosis como en el de la meiosis se produce:",
+      "opciones": [
+        "la formación obligatoria de bivalentes.",
+        "la separación de cromosomas homólogos.",
+        "el entrecruzamiento de cromátidas no hermanas.",
+        "la separación de las cromátidas hermanas."
+      ],
+      "correcta": "D",
+      "explicacion": "La separación de cromátides hermanas es un mecanismo común a la anafase mitótica y a la anafase II meiótica."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes tipos celulares presenta una mayor cantidad de moléculas de ADN en su núcleo?",
+      "opciones": [
+        "Neurona mature en G0.",
+        "Ovocito II en metafase II.",
+        "Ovogonia en la fase G2 de la interfase.",
+        "Espermátide haploide."
+      ],
+      "correcta": "C",
+      "explicacion": "La ovogonia en G2 es diploide y ya completó la duplicación del ADN, alcanzando un valor de 4C, superior a las fases G1/G0 (2C) o células haploides."
+    },
+    {
+      "pregunta": "Sabiendo que la fibrosis quística se hereda por un alelo autosómico recesivo, si dos progenitores sanos tienen un hijo enfermo, esto indica que:",
+      "opciones": [
+        "la madre y el padre son heterocigotas.",
+        "el padre es homocigota dominante y la madre heterocigota.",
+        "la madre es homocigota dominante y el padre recesivo.",
+        "ambos padres son homocigotas dominantes."
+      ],
+      "correcta": "A",
+      "explicacion": "La manifestación de una afección autosómica recesiva en la descendencia requiere que ambos progenitores asintomáticos sean portadores heterocigotas."
+    },
+    {
+      "pregunta": "Una mujer de grupo sanguíneo A da a luz a un hijo de grupo O. ¿Cuáles de las siguientes combinaciones genotípicas paternas es compatible?",
+      "opciones": [
+        "Padre grupo O (OO) y madre de genotipo A0.",
+        "Padre grupo B (BB) y madre de genotipo AA.",
+        "Padre grupo AB (AB) y madre de genotipo A0.",
+        "Padre grupo O (OO) y madre de genotipo AA."
+      ],
+      "correcta": "A",
+      "explicacion": "Para que nazca un descendiente de grupo O (OO), la madre de grupo A debe aportar el alelo O (A0) y el padre debe ser portador o ser del grupo O (OO)."
+    },
+    {
+      "pregunta": "La hemofilia es una condición recesiva ligada al cromosoma X. Si una pareja tiene un hijo varón con hemofilia, esto implica que:",
+      "opciones": [
+        "ambos padres aportaron el alelo recesivo en la fecundación.",
+        "la madre es portadora del alelo recesivo.",
+        "el padre transmitió el cromosoma X mutado al varón.",
+        "el hijo sufrió una pérdida de autosomas."
+      ],
+      "correcta": "B",
+      "explicacion": "Los varones reciben su único cromosoma X por vía materna. Si desarrollan la enfermedad, la madre es portadora del alelo mutado."
+    },
+    {
+      "pregunta": "Si una mujer heterocigota para el daltonismo tiene descendencia con un hombre daltónico, en respecto a los hijos varones se prevé que:",
+      "opciones": [
+        "ninguno padezca daltonismo.",
+        "el 100 % de los varones sean sanos.",
+        "el 50 % de los varones sean daltónicos.",
+        "el 100 % de los varones sean daltónicos."
+      ],
+      "correcta": "C",
+      "explicacion": "Al ser la madre heterocigota (X D X d), existe un 50 % de probabilidad de que transmita el cromosoma X d con el alelo recesivo a sus hijos varones."
+    },
+    {
+      "pregunta": "Al cruzar una planta de flores rojas (dominante) con una de flores blancas (recesivo) se obtienen 39 plantas rojas y 41 blancas. Los genotipos de los progenitores son:",
+      "opciones": [
+        "AA x aa",
+        "Aa x aa",
+        "aa x AA",
+        "AA x Aa"
+      ],
+      "correcta": "B",
+      "explicacion": "Una proporción de descendientes cercana a 1:1 (50% dominantes y 50% recesivos) refleja la cruza entre un heterocigota (Aa) y un recesivo (aa)."
+    },
+    {
+      "pregunta": "Una persona con fenotipo sanguíneo AB producirá meióticamente:",
+      "opciones": [
+        "gametas portadoras del alelo A y gametas portadoras del alelo B en igual proporción.",
+        "gametas que llevan juntos los alelos A y B en cada núcleo.",
+        "gametas que contienen únicamente el alelo B.",
+        "gametas sin receptores de superficie."
+      ],
+      "correcta": "A",
+      "explicacion": "Debido a la segregación de alelos durante la meiosis, la mitad de las gametas de un individuo codominante AB llevará el alelo A y la otra mitad el alelo B."
+    },
+    {
+      "pregunta": "¿Qué proporción fenotípica se espera de la cruza entre un individuo heterocigota (Aa) y un homocigota recesivo (aa)?",
+      "opciones": [
+        "100 % de fenotipo dominante.",
+        "75 % de fenotipo dominante y 25 % recesivo.",
+        "25 % de fenotipo dominante y 75 % recesivo.",
+        "50 % de fenotipo dominante y 50 % de fenotipo recesivo."
+      ],
+      "correcta": "D",
+      "explicacion": "El cruzamiento Aa x aa produce la mitad de la descendencia heterocigota (Aa, fenotipo dominante) y la otra mitad recesiva (aa)."
+    },
+    {
+      "pregunta": "Una mujer heterocigota para el daltonismo se cruza con un hombre de visión normal. Dentro de la descendencia femenina se espera:",
+      "opciones": [
+        "un 25 % de mujeres daltónicas.",
+        "un 50 % de mujeres daltónicas.",
+        "un 0 % de mujeres daltónicas.",
+        "un 100 % de mujeres daltónicas."
+      ],
+      "correcta": "C",
+      "explicacion": "Como el padre es sano (X D Y), aporta siempre un cromosoma X D dominante a todas sus hijas, impidiendo que manifiesten el fenotipo daltónico."
+    },
+    {
+      "pregunta": "El mecanismo de crossing-over actúa como fuente de variabilidad genética porque permite:",
+      "opciones": [
+        "la separación aleatoria de las cromátides en anafase II.",
+        "la reducción del número total de cromosomas del cigoto.",
+        "la aceleración de las divisiones del ciclo celular.",
+        "el intercambio de segmentos de ADN entre cromátidas no hermanas de cromosomas homólogos."
+      ],
+      "correcta": "D",
+      "explicacion": "Durante la profase I, el entrecruzamiento rompe y recombina fragmentos entre homólogos, produciendo nuevas combinaciones alélicas en los cromosomas."
+    },
+    {
+      "pregunta": "Un cruzamiento de prueba o retrocruza se utiliza en genética experimental para:",
+      "opciones": [
+        "demostrar que dos genes están físicamente ligados.",
+        "determinar si un individuo de fenotipo dominante es homocigota o heterocigota.",
+        "alterar las proporciones esperadas por la segregación mendeliana.",
+        "identificar si una mutación es producida por radiación."
+      ],
+      "correcta": "B",
+      "explicacion": "Al cruzar el individuo dominante de genotipo desconocido con un homocigota recesivo, la presencia de descendientes recesivos revela su heterocigosis."
+    },
+    {
+      "pregunta": "La afirmación de que la selección natural es el principal motor del cambio adaptativo en las especies corresponde a:",
+      "opciones": [
+        "la teoría saltacionista.",
+        "la teoría neutralista.",
+        "la teoría de Darwin.",
+        "la teoría de Lamarck."
+      ],
+      "correcta": "C",
+      "explicacion": "Charles Darwin postuló la selección natural como el mecanismo por el cual las variantes heredables ventajosas se preservan en la población."
+    },
+    {
+      "pregunta": "La aparición de un nuevo alelo previamente inexistente dentro del acervo génico de una población se explica por:",
+      "opciones": [
+        "la llegada e inmigración de individuos provenientes de otra población con distinta información genética.",
+        "la ocurrencia de crossing-over durante la meiosis.",
+        "el efecto directo de la selección natural sobre la supervivencia.",
+        "la separación de cromosomas durante la mitosis."
+      ],
+      "correcta": "A",
+      "explicacion": "El flujo génico mediante inmigración introduce alelos alternativos en una población donde antes no estaban presentes."
+    },
+    {
+      "pregunta": "El mecanismo de selección natural se fundamenta en:",
+      "opciones": [
+        "la transformación adaptativa individual frente a cambios del entorno.",
+        "la modificación directa del genoma celular inducida por el clima.",
+        "la alteración consciente de las tasas de mutación.",
+        "la supervivencia y reproducción diferencial de los individuos mejor adaptados."
+      ],
+      "correcta": "D",
+      "explicacion": "La selección natural opera diferenciando la supervivencia y el éxito reproductivo de los organismos en función de sus características heredables."
+    },
+    {
+      "pregunta": "En la ultraestructura del nucléolo es posible distinguir:",
+      "opciones": [
+        "una matriz lipídica rodeada por heterocromatina.",
+        "un componente fibrilar interno rodeado por una región granular.",
+        "una membrana doble lipídica que lo aísla del nucleoplasma.",
+        "cromosomas mitóticos completamente condensados."
+      ],
+      "correcta": "B",
+      "explicacion": "El nucléolo carece de membrana y presenta una zona fibrilar (donde se transcriben los genes de ARNr) y una zona granular (donde se ensamblan las subunidades ribosómicas)."
+    },
+    {
+      "pregunta": "En el nucleoplasma celular ocurre de manera fisiológica:",
+      "opciones": [
+        "la síntesis de las proteínas histonas.",
+        "la traducción de las proteínas ribosomales.",
+        "la síntesis y procesamiento de los ARN de transferencia (ARNt).",
+        "el ensamblaje final de las proteínas de exportación."
+      ],
+      "correcta": "C",
+      "explicacion": "Los ARNt son transcritos por la ARN polimerasa III y procesados dentro del espacio nucleoplásmico antes de ser exportados al citosol."
+    },
+    {
+      "pregunta": "Las secuencias de ADN que constituyen la heterocromatina se caracterizan por ser:",
+      "opciones": [
+        "transcripcionalmente activas y laxas.",
+        "muy accesibles a los factores de transcripción.",
+        "secuencias que se traducen en el nucléolo.",
+        "transcripcionalmente inactivas y altamente condensadas."
+      ],
+      "correcta": "D",
+      "explicacion": "La heterocromatina permanece muy compacta durante la interfase, lo que impide el acceso de la maquinaria de transcripción a su ADN."
+    },
+    {
+      "pregunta": "Los niveles de organización de la cromatina conocidos como solenoides y bucles se diferencian entre sí por:",
+      "opciones": [
+        "los tipos de bases nitrogenadas presentes.",
+        "el número de membranas que los recubren.",
+        "su grado de empaquetamiento y condensación.",
+        "los aminoácidos que constituyen el ADN."
+      ],
+      "correcta": "C",
+      "explicacion": "El solenoide (fibra de 30 nm) representa un grado de empaquetamiento de la cromatina inferior al de los bucles o asas integrados en el andamio proteico."
+    },
+    {
+      "pregunta": "En el estado de condensación máxima del ADN durante la metafase:",
+      "opciones": [
+        "el ADN se transcribe activamente pero no se replica.",
+        "el ADN se replica activamente pero no se transcribe.",
+        "el ADN puede expresarse y replicarse simultáneamente.",
+        "el ADN no puede transcribirse ni replicarse."
+      ],
+      "correcta": "D",
+      "explicacion": "La hipercondensación del ADN en la división celular bloquea físicamente la apertura de la hélice, impidiendo la transcripción y la replicación."
+    },
+    {
+      "pregunta": "El complejo del poro nuclear permite el paso selectivo desde el citoplasma hacia el núcleo de:",
+      "opciones": [
+        "subunidades de histonas y enzimas ARN polimerasas.",
+        "moléculas de ARN de transferencia cargadas.",
+        "vesículas procedentes del retículo endoplásmico rugoso.",
+        "complejos ribosómicos funcionales completos."
+      ],
+      "correcta": "A",
+      "explicacion": "Proteínas de acción nuclear como histonas y polimerasas son sintetizadas en el citosol e importadas activamente por los poros vía señales NLS."
+    },
+    {
+      "pregunta": "El cariotipo humano se define formalmente como:",
+      "opciones": [
+        "la secuencia completa de nucleótidos del genoma.",
+        "el conjunto de genes expresados en una célula somática.",
+        "la representación ordenada de los cromosomas de una célula somática.",
+        "el recuento de los ARN mensajeros nucleares."
+      ],
+      "correcta": "C",
+      "explicacion": "Un cariotipo es un mapa o fotomicrografía ordenada de los cromosomas metafásicos sistematizados por tamaño y morfología."
+    },
+    {
+      "pregunta": "Los tripletes de nucleótidos denominados anticodones se localizan en la estructura del:",
+      "opciones": [
+        "ARN mensajero (ARNm).",
+        "ARN ribosomal (ARNr).",
+        "ADN genómico.",
+        "ARN de transferencia (ARNt)."
+      ],
+      "correcta": "D",
+      "explicacion": "Cada ARNt posee un asa con un anticodón específico que se aparea por complementariedad con el codón correspondiente del ARNm."
+    },
+    {
+      "pregunta": "Presentan señales de localización nuclear (NLS) para ingresar al núcleo proteínas como:",
+      "opciones": [
+        "las histonas y las ARN polimerasas.",
+        "la actina y la miosina citoplásmicas.",
+        "la hemoglobina y la mioglobina.",
+        "las enzimas digestivas pancreáticas."
+      ],
+      "correcta": "A",
+      "explicacion": "Las histonas y las polimerasas se sintetizan en los ribosomas citosólicos y poseen secuencias NLS para ser transportadas al compartimento nuclear."
+    },
+    {
+      "pregunta": "Durante el proceso de traducción, el movimiento de avance del ribosoma exactamente tres nucleótidos sobre el ARNm se denomina:",
+      "opciones": [
+        "activación del aminoácido.",
+        "iniciación de la cadena.",
+        "translocación durante la elongación.",
+        "terminación por factor de liberación."
+      ],
+      "correcta": "C",
+      "explicacion": "En la fase de elongación, el desplazamiento del ribosoma un codón hacia el extremo 3' del ARNm recibe el nombre de translocación."
+    },
+    {
+      "pregunta": "En relación con el mecanismo del operón triptófano en bacterias, se verifica que:",
+      "opciones": [
+        "en ausencia de triptófano el operón permanece reprimido.",
+        "en presencia de triptófano se transcriben los genes estructurales.",
+        "en presencia de triptófano el complejo represor se une al operador.",
+        "la ARN polimerasa es bloqueada en ausencia de triptófano."
+      ],
+      "correcta": "C",
+      "explicacion": "El triptófano actúa como un correpresor: al unirse a la proteína represora, esta cambia de conformación y se acopla al operador, impidiendo la transcripción."
+    },
+    {
+      "pregunta": "La enzima ADN helicasa cumple un rol central durante la replicación al:",
+      "opciones": [
+        "desenrollar y separar las dos hebras de ADN abriendo la horquilla.",
+        "aliviar la tensión de superenrollamiento del ADN.",
+        "sellar las muescas del esqueleto fosfodiéster.",
+        "sintetizar el cebador de ARN inicial."
+      ],
+      "correcta": "A",
+      "explicacion": "La helicasa rompe los puentes de hidrógeno entre las bases nitrogenadas complementarias para abrir la burbuja de replicación."
+    },
+    {
+      "pregunta": "Es una característica de la duplicación del ADN exclusiva de las células eucariotas en comparación con las bacterias:",
+      "opciones": [
+        "el carácter bidireccional de la horquilla.",
+        "la síntesis semiconservativa.",
+        "la presencia de múltiples sitios de origen de replicación (ORI).",
+        "la síntesis discontinua en la hebra retrasada."
+      ],
+      "correcta": "C",
+      "explicacion": "A diferencia del único origen de replicación del cromosoma bacteriano circular, los cromosomas eucariotas poseen múltiples orígenes de replicación por molécula."
+    },
+    {
+      "pregunta": "En un organismo unicelular eucarionte, la división por mitosis cumple la función biológica de:",
+      "opciones": [
+        "reparar tejidos diferenciados.",
+        "garantizar el crecimiento corporal.",
+        "constituir el mecanismo de reproducción asexual.",
+        "generar gametas haploides."
+      ],
+      "correcta": "C",
+      "explicacion": "En seres unicelulares, la división mitótica origina dos organismos independientes, constituyendo un evento reproductivo."
+    },
+    {
+      "pregunta": "En relación con la biogénesis de los ribosomas en células eucariotas, es correcto afirmar que:",
+      "opciones": [
+        "se sintetizan íntegramente dentro del citosol.",
+        "participan de forma directa en el proceso de transcripción del ADN.",
+        "carecen de componentes proteicos en su estructura.",
+        "contienen ARNr producido en el nucléolo y proteínas sintetizadas en el citoplasma."
+      ],
+      "correcta": "D",
+      "explicacion": "El ARNr se transcribe y procesa en el nucléolo, mientras que las proteínas ribosómicas provienen del citosol y son importadas al núcleo para su ensamblaje."
+    },
+    {
+      "pregunta": "La división celular meiótica se caracteriza por ser un proceso que:",
+      "opciones": [
+        "consiste en una única división que produce células idénticas.",
+        "comprende dos divisiones consecutivas que generan cuatro células genéticamente distintas.",
+        "ocurre en células somáticas para regenerar estructuras.",
+        "mantiene intacta la diploidía de la célula madre."
+      ],
+      "correcta": "B",
+      "explicacion": "La meiosis consiste en una duplicación de ADN seguida de dos divisiones nucleares (meiosis I y II), dando lugar a cuatro células haploides con variabilidad genética."
+    },
+    {
+      "pregunta": "En un organismo diploide, ¿cuántos alelos como máximo pueden estar presentes para un gen autosómico determinado en el genoma de un solo individuo?",
+      "opciones": [
+        "1 alelo.",
+        "2 alelos.",
+        "3 alelos.",
+        "4 alelos."
+      ],
+      "correcta": "B",
+      "explicacion": "Independientemente de cuántos alelos existan en la población general, un individuo diploide solo posee dos alelos por locus en sus cromosomas homólogos."
+    },
+    {
+      "pregunta": "En el ganado Shorthorn, el pelo puede ser rojo (RR), blanco (WW) o ruano (RW, codominante). Si se cruza un toro ruano con una vaca blanca, la F1 será:",
+      "opciones": [
+        "25 % blanco y 75 % ruano.",
+        "50 % blanco y 50 % ruano.",
+        "50 % blanco y 50 % rojo.",
+        "100 % de pelaje ruano."
+      ],
+      "correcta": "B",
+      "explicacion": "Al cruzar RW x WW, los genotipos obtenidos son 50% RW (fenotipo ruano) y 50% WW (fenotipo blanco)."
+    },
+    {
+      "pregunta": "El efecto del azar sobre la variación de las frecuencias alélicas en poblaciones de tamaño reducido se conoce como:",
+      "opciones": [
+        "presión de selección natural.",
+        "reproducción diferencial.",
+        "deriva génica.",
+        "panmixia."
+      ],
+      "correcta": "C",
+      "explicacion": "La deriva génica es la fluctuación aleatoria de las frecuencias génicas entre generaciones, cuyo impacto es especialmente acusado en poblaciones pequeñas."
+    },
+    {
+      "pregunta": "Si se aplica un inhibidor farmacológico de la síntesis de proteínas durante la fase G2 del ciclo celular:",
+      "opciones": [
+        "se acelerará el inicio de la replicación.",
+        "se impedirá el ingreso de la célula a la fase M.",
+        "la célula completará la mitosis sin contratiempos.",
+        "se duplicará el número de cromosomas espontáneamente."
+      ],
+      "correcta": "B",
+      "explicacion": "Durante G2 se sintetizan proteínas esenciales para la división celular (como ciclinas M y tubulinas); su supresión bloquea la transición hacia la mitosis."
+    },
+    {
+      "pregunta": "Durante la etapa de mitosis, la actividad biosintética nuclear de la célula experimenta:",
+      "opciones": [
+        "un cese de la síntesis de ARN y una drástica reducción en la síntesis proteica.",
+        "un incremento acelerado en la transcripción de ARNm.",
+        "una tasa constante de síntesis respecto a la interfase.",
+        "la activación de la duplicación cromosómica."
+      ],
+      "correcta": "A",
+      "explicacion": "La alta condensación de la cromatina y la reorganización celular durante la mitosis detienen casi por completo la transcripción y reducen la traducción."
+    },
+    {
+      "pregunta": "Durante la metafase II de la meiosis se observa que:",
+      "opciones": [
+        "las cromátides hermanas se separan hacia los polos.",
+        "los bivalentes homólogos se alinean en el ecuador.",
+        "se separan los cromosomas homólogos.",
+        "los cromosomas duplicados individuales se alinean en la placa ecuatorial."
+      ],
+      "correcta": "D",
+      "explicacion": "En la metafase II, las células haploides posicionan sus cromosomas dobles de forma individual sobre el plano ecuatorial antes de escindir sus cromátides."
+    },
+    {
+      "pregunta": "En una célula de dotación 2n = 10 que se encuentra atravesando la fase G2, el número total de cromátides es:",
+      "opciones": [
+        "5 cromátides.",
+        "10 cromátides.",
+        "20 cromátides.",
+        "40 cromátides."
+      ],
+      "correcta": "C",
+      "explicacion": "Con 10 cromosomas duplicados en la fase G2, cada uno posee dos cromátides hermanas, sumando un total de 20 cromátides en el núcleo."
+    },
+    {
+      "pregunta": "El intervalo del ciclo celular comprendido entre el término de la fase S y el comienzo de la fase M se denomina:",
+      "opciones": [
+        "fase G1, donde disminuye la masa celular.",
+        "fase G0, caracterizada por alta división.",
+        "fase G2, en la cual la célula se prepara para la división.",
+        "fase S2, de reparación telomérica."
+      ],
+      "correcta": "C",
+      "explicacion": "G2 es el segundo intervalo de la interfase donde la célula sintetiza componentes proteicos y verifica el ADN replicado antes de ingresar a la mitosis."
+    },
+    {
+      "pregunta": "La separación física de los cromosomas homólogos es un acontecimiento definitorio de la:",
+      "opciones": [
+        "anafase mitótica.",
+        "anafase I meiótica.",
+        "anafase II meiótica.",
+        "telofase II meiótica."
+      ],
+      "correcta": "B",
+      "explicacion": "En la anafase I los pares de homólogos anclados por quiasmas se separan migrando hacia polos opuestos de la célula meiótica."
+    },
+    {
+      "pregunta": "Se consideran divisiones de tipo ecuacional a:",
+      "opciones": [
+        "la mitosis y la meiosis I.",
+        "la mitosis y la meiosis II.",
+        "la meiosis I exclusivamente.",
+        "la citocinesis bacteriana."
+      ],
+      "correcta": "B",
+      "explicacion": "La mitosis y la meiosis II son divisiones ecuacionales porque conservan el número de cromosomas por núcleo al separar cromátides hermanas."
+    },
+    {
+      "pregunta": "Si por una mutación puntual surge un codón de terminación dentro de una secuencia codificante en el ARNm, la consecuencia será que:",
+      "opciones": [
+        "el ARNm transcrito se alargará significativamente.",
+        "la proteína sintetizada resultará más larga.",
+        "la proteína traducida resultará más corta o truncada.",
+        "se interrumpirá inmediatamente la transcripción."
+      ],
+      "correcta": "C",
+      "explicacion": "La aparición de un codón stop prematuro provoca la liberación anticipada de la cadena polipeptídica durante la traducción, acortando la proteína."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes factores constituye el origen primario de nuevas variantes génicas en una población?",
+      "opciones": [
+        "La selección natural.",
+        "La deriva génica.",
+        "Las mutaciones en la secuencia del ADN.",
+        "El proceso de mitosis."
+      ],
+      "correcta": "C",
+      "explicacion": "Las mutaciones son la fuente primaria de variabilidad genética, ya que generan nuevos alelos sobre los cuales actúan las fuerzas evolutivas."
+    },
+    {
+      "pregunta": "Las células somáticas humanas contienen 46 cromosomas. ¿Cuántos autosomas están presentes en el núcleo de una célula renal humana?",
+      "opciones": [
+        "46 autosomas.",
+        "23 autosomas.",
+        "44 autosomas.",
+        "22 autosomas."
+      ],
+      "correcta": "C",
+      "explicacion": "El cariotipo humano somático se compone de 44 autosomas (22 pares) y 2 cromosomas sexuales (XX o XY)."
+    },
+    {
+      "pregunta": "Las enzimas topoisomerasas cumplen durante la replicación celular la función de:",
+      "opciones": [
+        "romper los puentes de hidrógeno de la hélice.",
+        "corregir el superenrollamiento y aliviar la tensión torsional.",
+        "sintetizar el cebador de ARN.",
+        "unir covalentemente las bases expuestas."
+      ],
+      "correcta": "B",
+      "explicacion": "Al cortar y resellar transitoriamente las hebras de ADN, las topoisomerasas eliminan el superenrollamiento generado por el avance de la helicasa."
+    },
+    {
+      "pregunta": "Proteínas del núcleo celular como las histonas se caracterizan por:",
+      "opciones": [
+        "unirse de forma inespecífica a la molécula de ADN.",
+        "unirse únicamente a secuencias promotoras específicas.",
+        "degradar el ARN mensajero maduro.",
+        "formar los canales del complejo de poro."
+      ],
+      "correcta": "A",
+      "explicacion": "Las histonas son proteínas básicas cargadas positivamente que interactúan electrostáticamente con el esqueleto fosfato del ADN sin especificidad de secuencia."
+    },
+    {
+      "pregunta": "Respecto a las propiedades del código genético, es correcto sostener que:",
+      "opciones": [
+        "múltiples codones diferentes pueden codificar un mismo aminoácido.",
+        "un solo codón especifica habitualmente varios aminoácidos.",
+        "los codones sinónimos codifican aminoácidos estructuralmente opuestos.",
+        "es degenerado porque cambia en cada especie."
+      ],
+      "correcta": "A",
+      "explicacion": "La degeneración del código genético radica en que existen 61 codones codificantes para 20 aminoácidos, existiendo codones sinónimos."
+    },
+    {
+      "pregunta": "Los factores basales de la transcripción en células eucariotas actúan:",
+      "opciones": [
+        "inhibiendo el avance de la polimerasa.",
+        "mediando el reclutamiento y unión de la ARN polimerasa al promotor.",
+        "degradando los intrones en el nucléolo.",
+        "marcando la señal de poliadenilación."
+      ],
+      "correcta": "B",
+      "explicacion": "Los factores de transcripción generales o basales forman el complejo de preiniciación necesario para que la ARN polimerasa reconozca el promotor."
+    },
+    {
+      "pregunta": "El procesamiento pre-ARNm denominado splicing consiste en un mecanismo que:",
+      "opciones": [
+        "se produce de manera exclusiva en bacterias.",
+        "elimina los exones conservando únicamente intrones.",
+        "añade nucleótidos de timina en el extremo 3'.",
+        "elimina los intrones y empalma los exones en transcriptos eucariontes."
+      ],
+      "correcta": "D",
+      "explicacion": "El splicing es el corte de las secuencias no codificantes (intrones) y la ligación de las secuencias codificantes (exones) para generar el ARNm maduro."
+    },
+    {
+      "pregunta": "Los factores de liberación proteicos que intervienen en la traducción reconocen específicamente a:",
+      "opciones": [
+        "la cola de poliadeninas en 3'.",
+        "los ARN de transferencia iniciadores.",
+        "los codones de terminación (STOP) situados en el sitio A.",
+        "las secuencias promotoras del ARN."
+      ],
+      "correcta": "C",
+      "explicacion": "Los factores de liberación reconocen los codones UAA, UAG o UGA en el sitio A del ribosoma, gatillando la finalización de la síntesis proteica."
+    },
+    {
+      "pregunta": "En una especie con complemento 2n = 6, el número de cromátides presentes en una célula durante la fase G1 de la interfase es:",
+      "opciones": [
+        "3 cromátides.",
+        "6 cromátides.",
+        "12 cromátides.",
+        "18 cromátides."
+      ],
+      "correcta": "B",
+      "explicacion": "En la fase G1 el ADN aún no se ha duplicado, por lo que cada uno de los 6 cromosomas consta de una sola cromátida (6 cromátides en total)."
+    },
+    {
+      "pregunta": "En los conejos, al cruzar dos individuos heterocigotas de pelo negro (Bb x Bb), el porcentaje de descendientes con genotipo homocigota recesivo (bb) es del:",
+      "opciones": [
+        "0 %",
+        "25 %",
+        "50 %",
+        "75 %"
+      ],
+      "correcta": "B",
+      "explicacion": "El cruce de dos heterocigotas Bb da una proporción genotípica mendeliana de 1/4 BB, 1/2 Bb y 1/4 bb (25% homocigota recesivo)."
+    },
+    {
+      "pregunta": "El evento de recombinación cromosómica (crossing-over) es exclusivo de la etapa de:",
+      "opciones": [
+        "Profase mitótica.",
+        "Profase I de la meiosis.",
+        "Profase II de la meiosis.",
+        "Metafase II de la meiosis."
+      ],
+      "correcta": "B",
+      "explicacion": "El entrecruzamiento de segmentos genéticos ocurre únicamente durante el apareamiento de homólogos en la profase I meiótica."
+    },
+    {
+      "pregunta": "La división celular que conduce desde un ovocito primario a la formación de un ovocito secundario es la:",
+      "opciones": [
+        "Interfase.",
+        "Mitosis.",
+        "Meiosis I.",
+        "Meiosis II."
+      ],
+      "correcta": "C",
+      "explicacion": "El ovocito primario (2n) completa la meiosis I para producir un ovocito secundario (n) y el primer cuerpo polar."
+    },
+    {
+      "pregunta": "La N-formilmetionina es un aminoácido modificado que se caracteriza por:",
+      "opciones": [
+        "ubicarse siempre en el extremo carboxilo terminal.",
+        "formar el aminoácido de iniciación en la traducción de procariontes.",
+        "incorporarse en todas las posiciones de histonas eucariotas.",
+        "unirse covalentemente a la capuchón 5' del ARNm."
+      ],
+      "correcta": "B",
+      "explicacion": "En bacterias, el primer aminoácido incorporado en la síntesis proteica durante el inicio de la traducción es la N-formilmetionina."
+    },
+    {
+      "pregunta": "Durante la duplicación del ADN, la síntesis de la hebra continua o adelantada se realiza sobre la hebra molde que presenta orientación:",
+      "opciones": [
+        "3' a 5' en dirección al avance de la horquilla.",
+        "5' a 3' en dirección al avance de la horquilla.",
+        "3' a 5' en sentido opuesto a la horquilla.",
+        "aleatoria durante la fase S."
+      ],
+      "correcta": "A",
+      "explicacion": "La ADN polimerasa sintetiza en dirección 5'->3'. Por ende, lee de forma continua la cadena molde orientada en sentido 3'->5' hacia la horquilla."
+    },
+    {
+      "pregunta": "Las enzimas ARN polimerasas eucariontes requieren para unirse al promotor de un gen:",
+      "opciones": [
+        "la presencia directa de desoxirribonucleótidos.",
+        "la asistencia de los factores basales de la transcripción.",
+        "la eliminación previa de todos los exones del ADN.",
+        "la presencia de ARNt iniciadores."
+      ],
+      "correcta": "B",
+      "explicacion": "A diferencia de las bacterias, las ARN polimerasas eucariotas no reconocen solas el promotor y precisan el ensamblaje previo de factores basales."
+    },
+    {
+      "pregunta": "La relación de orientación y secuencia entre la hebra molde de ADN y el transcripto de ARN resultante es que son:",
+      "opciones": [
+        "paralelos y de idéntica secuencia de bases.",
+        "antiparalelos y de idéntica secuencia de bases.",
+        "antiparalelos y complementarios.",
+        "paralelos y complementarios."
+      ],
+      "correcta": "C",
+      "explicacion": "El ARN se sintetiza antiparalelo a la hebra molde de ADN y con una secuencia de bases complementaria (incorporando uracilo en lugar de timina)."
+    },
+    {
+      "pregunta": "La formación del enlace peptídico durante el proceso de traducción es catalizada por la enzima:",
+      "opciones": [
+        "peptidil transferasa (actividad ribozímica del ARNr).",
+        "aminoacil-ARNt sintetasa.",
+        "ARN polimerasa II.",
+        "ARN helicasa."
+      ],
+      "correcta": "A",
+      "explicacion": "La peptidil transferasa es una ribozima integrada en la subunidad mayor del ribosoma que une los aminoácidos mediante enlaces peptídicos."
+    },
+    {
+      "pregunta": "Las quinasas dependientes de ciclinas (CDK) alcanzan su estado activo fundamentalmente cuando:",
+      "opciones": [
+        "se encuentran aisladas en el citosol.",
+        "disminuye el nivel de ATP en la célula.",
+        "se unen a su correspondiente proteína ciclina reguladora.",
+        "se degradan los fosfatos intracelulares."
+      ],
+      "correcta": "C",
+      "explicacion": "Las CDK son inactivas por sí solas y requieren obligatoriamente acoplarse a una ciclina específica para adquirir actividad quinasa."
+    },
+    {
+      "pregunta": "Dos conejos de pelaje negro tienen una camada con 4 crías negras y 2 blancas. ¿Cuál es el genotipo más probable de ambos progenitores?",
+      "opciones": [
+        "Ambos son homocigotas recesivos (bb).",
+        "Ambos son homocigotas dominantes (BB).",
+        "Un padre es BB y el otro es bb.",
+        "Ambos son heterocigotas (Bb)."
+      ],
+      "correcta": "D",
+      "explicacion": "Al tener fenotipo dominante (negro) pero producir descendencia con fenotipo recesivo (blanco), ambos padres deben poseer el alelo recesivo en heterocigosis (Bb)."
+    },
+    {
+      "pregunta": "Los cromosomas homólogos se definen funcionalmente como aquellos que:",
+      "opciones": [
+        "se forman tras la duplicación de una sola cromátide.",
+        "presentan el mismo ordenamiento de loci y patrones de bandas.",
+        "se separan obligatoriamente durante la anafase mitótica.",
+        "contienen secuencias de ADN completamente idénticas nucleótido a nucleótido."
+      ],
+      "correcta": "B",
+      "explicacion": "Los homólogos conservan la misma estructura, tamaño y patrón de bandas citogenéticas con loci equivalentes, aunque sus alelos pueden diferir."
+    },
+    {
+      "pregunta": "El proceso de traducción del ARN mensajero en eucariontes se caracteriza por:",
+      "opciones": [
+        "ser un proceso exergónico que produce nucleótidos.",
+        "ocurrir en forma simultánea a la transcripción dentro del núcleo.",
+        "requerir la disponibilidad de aminoácidos activados unirlos a ARNt.",
+        "ser catalizado por la ARN polimerasa I."
+      ],
+      "correcta": "C",
+      "explicacion": "La traducción requiere que los aminoácidos sean acoplados previamente a sus ARNt específicos mediante gasto energético en el citoplasma."
+    },
+    {
+      "pregunta": "En la especie humana, la meiótica femenina finaliza completamente el proceso de ovogénesis en:",
+      "opciones": [
+        "cada fase de la ovulación.",
+        "el desarrollo embrionario intrauterino.",
+        "el momento de la fecundación por el espermatozoide.",
+        "la fase lútea del ciclo menstrual."
+      ],
+      "correcta": "C",
+      "explicacion": "El ovocito secundario detenido en metafase II solo completa la segunda división meiótica tras la entrada del espermatozoide en la fecundación."
+    },
+    {
+      "pregunta": "Las regiones reguladoras del ADN conocidas como promotores se caracterizan por:",
+      "opciones": [
+        "ser secuencias que se traducen en el ribosoma.",
+        "poseer sitios de unión para el ensamblaje de la maquinaria transcripcional.",
+        "encontrarse exclusivamente en virus de ARN.",
+        "ser eliminadas del pre-ARNm por el complejo de splicing."
+      ],
+      "correcta": "B",
+      "explicacion": "El promotor es la región no codificante del ADN reconocida por factores y polimerasas para iniciar la transcripción de un gen."
+    },
+    {
+      "pregunta": "Los segmentos de un gen eucarionte que permanecen en el ARNm maduro y pueden expresarse se denominan:",
+      "opciones": [
+        "intrones.",
+        "operadores.",
+        "exones.",
+        "promotores."
+      ],
+      "correcta": "C",
+      "explicacion": "Los exones son los fragmentos de la secuencia génica que se conservan en la molécula de ARNm procesada tras la remoción de intrones."
+    },
+    {
+      "pregunta": "Los cromosomas cuya estructura presenta el centrómero en posición media, delimitando brazos de igual longitud, se clasifican como:",
+      "opciones": [
+        "submetacéntricos.",
+        "metacéntricos.",
+        "acrocéntricos.",
+        "telocéntricos."
+      ],
+      "correcta": "B",
+      "explicacion": "Los cromosomas metacéntricos poseen el centrómero equidistante de ambos extremos cromosómicos, dando brazos p y q de longitud equivalente."
+    },
+    {
+      "pregunta": "Una mujer sana cuyo padre era daltónico (recisivo ligado al X) se casa con un hombre sano. La probabilidad de que sus hijos varones sean daltónicos es del:",
+      "opciones": [
+        "100 %",
+        "75 %",
+        "50 %",
+        "0 %"
+      ],
+      "correcta": "C",
+      "explicacion": "La mujer es obligadamente heterocigota portadora (X D X d). Transmitirá el cromosoma recesivo al 50 % de sus hijos varones, manifestando la enfermedad."
+    }
+  ]
+}

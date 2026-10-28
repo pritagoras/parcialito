@@ -1,0 +1,336 @@
+{
+  "materia": "Biología Celular y Molecular",
+  "tema": "Parciales de Biología (Integrador)",
+  "preguntas": [
+    {
+      "pregunta": "En las células animales, el proceso de división por mitosis produce como resultado exacto:",
+      "opciones": [
+        "2 células hijas genéticamente idénticas entre sí y con la misma información que la célula madre en G1.",
+        "4 células hijas haploides con variabilidad por recombinación.",
+        "2 células hijas con la mitad de las moléculas de ADN que la madre en G1.",
+        "2 células hijas con el doble de cromosomas que la célula madre."
+      ],
+      "correcta": "A",
+      "explicacion": "La mitosis es una división ecuacional conservativa que reparte el ADN duplicado en S de forma equitativa, originando dos células idénticas a la progenitora en G1[cite: 12]."
+    },
+    {
+      "pregunta": "La teoría Neutralista de la evolución molecular (propuesta por Motoo Kimura) establece fundamentalmente que:",
+      "opciones": [
+        "únicamente se fijan en el genoma las mutaciones con un alto valor adaptativo positivo.",
+        "la mayoría de las mutaciones a nivel molecular originan alelos neutros sin ventaja ni desventaja adaptativa inmediata.",
+        "la selección natural es la causa de todas las sustituciones de nucleótidos.",
+        "todas las mutaciones provocan enfermedades genéticas letales."
+      ],
+      "correcta": "B",
+      "explicacion": "El neutralismo sostiene que a nivel molecular la mayoría de las mutaciones son neutras y su destino en la población está gobernado por el azar (deriva génica) más que por la selección natural[cite: 12]."
+    },
+    {
+      "pregunta": "Las secuencias genómicas móviles conocidas como transposones se definen como:",
+      "opciones": [
+        "segmentos de ADN flanqueados por secuencias específicas con la capacidad de cambiar de posición dentro del genoma.",
+        "virus de ARN que integran un provirus en la membrana celular.",
+        "plásmidos bacterianos que codifican resistencia a antibióticos.",
+        "regiones repetitivas ubicadas en los telómeros de los cromosomas."
+      ],
+      "correcta": "A",
+      "explicacion": "Un transposón es una unidad de ADN que porta la información enzimática para escindirse o replicarse e insertarse en un nuevo sitio genómico[cite: 12]."
+    },
+    {
+      "pregunta": "El mecanismo de corrección de pruebas (proofreading) durante la replicación del ADN procariota depende de la enzima ADN Polimerasa III gracias a su actividad:",
+      "opciones": [
+        "exonucleasa en sentido 3' -> 5'.",
+        "exonucleasa en sentido 5' -> 3'.",
+        "endonucleasa independientemente de la dirección.",
+        "primasa de ribonucleótidos."
+      ],
+      "correcta": "A",
+      "explicacion": "La actividad exonucleasa 3'->5' le permite a la ADN polimerasa retroceder, remover el nucleótido mal apareado en el extremo 3' e incorporar el correcto[cite: 12]."
+    },
+    {
+      "pregunta": "En el control del ciclo celular eucariota, la activación de las quinasas dependientes de ciclinas (CDK) ocurre cuando:",
+      "opciones": [
+        "se unen a sus correspondientes ciclinas reguladoras, cuya concentración varía según la fase del ciclo.",
+        "aumenta la concentración de la lámina nuclear.",
+        "se hidroliza de forma irreversible el factor p53.",
+        "las quinasas son degradadas por el proteasoma."
+      ],
+      "correcta": "A",
+      "explicacion": "Mientras que los niveles de CDK se mantienen relativamente constantes, la síntesis y degradación oscilatoria de las ciclinas activa selectivamente las CDK en cada fase del ciclo[cite: 12]."
+    },
+    {
+      "pregunta": "Durante la duplicación del ADN, los cebadores o primers de ARN cumplen la función indispensable de:",
+      "opciones": [
+        "proveer un extremo 3'-OH libre requerido por la ADN polimerasa para iniciar la polimerización.",
+        "sellar los fragmentos de Okazaki en la hebra retrasada.",
+        "reemplazar a la helicasa en la apertura de la hélice.",
+        "proteger a los telómeros de la degradación."
+      ],
+      "correcta": "A",
+      "explicacion": "Las ADN polimerasas no pueden iniciar una cadena *de novo*; la primasa sintetiza un corto oligonucleótido de ARN para aportar el extremo 3'-OH inicial[cite: 12]."
+    },
+    {
+      "pregunta": "Una molécula de ARNm eucariota maduro se diferencia del transcripto primario (pre-ARNm) por la presencia de:",
+      "opciones": [
+        "exones exclusivamente, capuchón de 7-metilguanosina en 5' y cola poli-A en 3'.",
+        "intrones, exones y secuencias reguladoras promotoras.",
+        "subunidades ribosómicas y bases raras.",
+        "secuencias policistrónicas traducibles."
+      ],
+      "correcta": "A",
+      "explicacion": "El procesamiento del pre-ARNm comprende la eliminación de intrones por splicing y las adiciones de la capuchón 5' y la cola poli-A en 3'[cite: 12]."
+    },
+    {
+      "pregunta": "Si en la bacteria Escherichia coli se inhibe la unión del factor sigma (σ) a la ARN polimerasa central, la consecuencia inmediata sobre la transcripción es que:",
+      "opciones": [
+        "la ARN polimerasa pierde la capacidad de reconocer específicamente las secuencias promotoras del ADN.",
+        "la enzima se vuelve hiperactiva y sintetiza ARN sin control.",
+        "se detiene la replicación del cromosoma bacteriano.",
+        "se bloquea la traducción en el ribosoma."
+      ],
+      "correcta": "A",
+      "explicacion": "El factor sigma se une al núcleo catalítico de la ARN polimerasa bacteriana para formar la holoenzima y otorgarle especificidad de unión a las secuencias promotoras -10 y -35[cite: 12]."
+    },
+    {
+      "pregunta": "Una célula somática de un organismo diploide con 2n = 10 que transita la fase G2 de la interfase se caracteriza por poseer:",
+      "opciones": [
+        "20 moléculas de ADN en forma de cromatina laxa duplicada.",
+        "10 moléculas de ADN totalmente condensadas en cromosomas.",
+        "5 bivalentes alineados en la placa ecuatorial.",
+        "40 moléculas de ADN no duplicadas."
+      ],
+      "correcta": "A",
+      "explicacion": "Tras la duplicación del ADN en la fase S, la célula diploide (2n = 10) pasa a G2 con 10 cromosomas dobles (20 moléculas de ADN) en estado de cromatina laxa[cite: 12]."
+    },
+    {
+      "pregunta": "La inhibición de las enzimas topoisomerasas durante la replicación celular bloquea el proceso al impedir:",
+      "opciones": [
+        "el alivio del superenrollamiento y la tensión torsional generados por el desenrollamiento de la hélice.",
+        "la ruptura de los puentes de hidrógeno de las bases nitrogenadas.",
+        "la adición del capuchón 5' al ARN.",
+        "la activación de los aminoácidos en el citosol."
+      ],
+      "correcta": "A",
+      "explicacion": "Las topoisomerasas o girasas realizan cortes transitorios en el esqueleto del ADN para liberar la tensión de superenrollamiento por delante de la horquilla de replicación[cite: 12]."
+    },
+    {
+      "pregunta": "La interacción entre el ligando adrenalina y su receptor acoplado a proteína Gs desencadena como respuesta celular primaria:",
+      "opciones": [
+        "el incremento en los niveles de AMPc citoplásmico por la activación de la adenilato ciclasa.",
+        "la inactivación total de las quinasas celulares.",
+        "la apertura directa del canal sin intervención de segundos mensajeros.",
+        "la disminución de los niveles de calcio dentro de la mitocondria."
+      ],
+      "correcta": "A",
+      "explicacion": "El receptor β-adrenérgico activa a la proteína Gs, cuya subunidad alfa estimula a la adenilato ciclasa para sintetizar AMPc a partir de ATP[cite: 12]."
+    },
+    {
+      "pregunta": "En las bacterias, el disacárido lactosa induce la expresión del operón lactosa al unirse a la proteína represora y provocar:",
+      "opciones": [
+        "su inactivación conformacional, lo que le impide unirse a la secuencia del operador.",
+        "su unión irreversible a la región del promotor.",
+        "la degradación completa de la ARN polimerasa.",
+        "la síntesis inmediata del operón triptófano."
+      ],
+      "correcta": "A",
+      "explicacion": "La alolactosa actúe como inductoruniéndose al represor lacI; la alteración alostérica reduce su afinidad por el operador y despeja el camino a la ARN polimerasa[cite: 12]."
+    },
+    {
+      "pregunta": "A diferencia de la replicación del ADN, la transcripción de ARN se caracteriza energéticamente por utilizar como sustratos y fuente de energía a los:",
+      "opciones": [
+        "ribonucleótidos trifosfatados (ATP, GTP, CTP, UTP).",
+        "desoxirribonucleótidos trifosfatados (dATP, dGTP, dCTP, dTTP).",
+        "aminoácidos activados por la aminoacil-ARNt sintetasa.",
+        "ácidos grasos del citosol."
+      ],
+      "correcta": "A",
+      "explicacion": "La ARN polimerasa requiere ribonucleótidos trifosfato; la escisión de sus enlaces de pirofosfato impulsa la síntesis del enlace fosfodiéster[cite: 12]."
+    },
+    {
+      "pregunta": "Si por una mutación puntual se introduce un codón de terminación prematuro en la región media de un exón codificante:",
+      "opciones": [
+        "la traducción se interrumpirá anticipadamente, produciendo un polipéptido más corto (truncado).",
+        "la proteína resultante tendrá una mayor longitud de la normal.",
+        "se bloqueará el inicio de la replicación en el núcleo.",
+        "se sintetizará una cola de poliadeninas en la mutación."
+      ],
+      "correcta": "A",
+      "explicacion": "Las mutaciones sin sentido (nonsense) generan codones de parada (UAA, UAG, UGA) que provocan la liberación prematura de la cadena polipeptídica en el ribosoma[cite: 12]."
+    },
+    {
+      "pregunta": "La región del nucléolo conocida como zona granular cumple la función biológica de:",
+      "opciones": [
+        "ensamblar las moléculas de ARNr procesadas con las proteínas ribosómicas importadas.",
+        "transcribir los genes que codifican para las histonas.",
+        "degradar los ARN mensajeros defectuosos.",
+        "sintetizar los fosfolípidos de la envoltura nuclear."
+      ],
+      "correcta": "A",
+      "explicacion": "En el nucléolo, la región fibrilar transcribe y procesa el ARNr 45S, mientras que la región granular realiza el ensamblaje de las subunidades ribosómicas preliminares[cite: 12]."
+    },
+    {
+      "pregunta": "Se dice que un ARN mensajero es monocistrónico cuando la molécula posee:",
+      "opciones": [
+        "la información codificante para la síntesis de un único polipéptido.",
+        "múltiples sitios de unión al ribosoma para sintetizar varios péptidos distintos.",
+        "únicamente secuencias no codificantes intrónicas.",
+        "una sola base nitrogenada en toda su longitud."
+      ],
+      "correcta": "A",
+      "explicacion": "Los ARNm monocistrónicos, característicos de los eucariontes, contienen un único marco abierto de lectura para sintetizar un solo tipo de proteína[cite: 12]."
+    },
+    {
+      "pregunta": "Un varón y una mujer de cabello negro tienen 6 hijos: 4 de cabello negro y 2 de cabello claro (recesivo). Se deduce que los genotipos parentales son:",
+      "opciones": [
+        "ambos heterocigotas (Aa x Aa).",
+        "ambos homocigotas recesivos (aa x aa).",
+        "uno homocigota dominante y el otro heterocigota.",
+        "ambos homocigotas dominantes (AA x AA)."
+      ],
+      "correcta": "A",
+      "explicacion": "La manifestación de un fenotipo recesivo (cabello claro aa) en la descendencia de padres con fenotipo dominante exige que ambos progenitores sean portadores heterocigotas (Aa)[cite: 12]."
+    },
+    {
+      "pregunta": "Una célula germinal en fase de profase II meiótica proveniente de una especie con 2n = 12 se caracteriza por presentar:",
+      "opciones": [
+        "6 cromosomas duplicados (constituidos por dos cromátides hermanas).",
+        "12 cromosomas simples.",
+        "6 bivalentes o tétradas apareadas.",
+        "12 cromosomas duplicados."
+      ],
+      "correcta": "A",
+      "explicacion": "La meiosis I es reduccional, por lo que las células resultantes en meiosis II contienen la mitad de cromosomas (n = 6), manteniéndose duplicados hasta anafase II[cite: 12]."
+    },
+    {
+      "pregunta": "En el contexto del Neodarwinismo, la teoría Sintética de la evolución define al proceso evolutivo como:",
+      "opciones": [
+        "los cambios acumulados a lo largo del tiempo en las frecuencias génicas de la población debido a la selección natural y mutaciones.",
+        "la transmisión a los descendientes de los caracteres adquiridos por el individuo.",
+        "saltos macroevolutivos bruscos sin estadios intermedios.",
+        "la supervivencia del organismo físicamente más fuerte sin influencias del ambiente."
+      ],
+      "correcta": "A",
+      "explicacion": "La teoría sintética combina la selección natural darwiniana con los principios de la genética de poblaciones, definiendo evolución como la variación en las frecuencias de alelos del pool génico[cite: 12]."
+    },
+    {
+      "pregunta": "El principio de equilibrio genético de Hardy-Weinberg se cumple en una población bajo las condiciones de:",
+      "opciones": [
+        "ausencia de mutaciones, apareamiento totalmente al azar (panmixia) y un tamaño poblacional sumamente grande.",
+        "alta tasa de mutaciones e inmigración constante.",
+        "fuerte presión de selección natural y poblaciones pequeñas.",
+        "presencia de deriva génica por cuello de botella."
+      ],
+      "correcta": "A",
+      "explicacion": "El modelo de Hardy-Weinberg demuestra que las frecuencias génicas y genotípicas se mantienen constantes si no actúan mutación, selección, migración ni deriva génica, en poblaciones infinitas con panmixia[cite: 12]."
+    },
+    {
+      "pregunta": "Si la enzima aminoacil-ARNt sintetasa específica para el aminoácido leucina resulta no funcional por una mutación:",
+      "opciones": [
+        "se detiene la traducción de proteínas que requieren leucina y la célula termina muriendo.",
+        "la leucina es reemplazada automáticamente por alanina sin alterar la célula.",
+        "el ARNm reemplaza los codones de leucina por codones stop.",
+        "la ARN polimerasa se une a la glucosa."
+      ],
+      "correcta": "A",
+      "explicacion": "Al no poder cargarse los ARNt correspondientes con leucina, los ribosomas se detienen en los codones de leucina, bloqueando la síntesis proteica esencial[cite: 12]."
+    },
+    {
+      "pregunta": "La mutación por inserción de dos nucleótidos en el medio de la secuencia codificante de un gen provoca:",
+      "opciones": [
+        "un corrimiento del marco de lectura traduccional que altera toda la secuencia de aminoácidos posterior.",
+        "la sustitución de únicamente un aminoácido en la proteína.",
+        "la duplicación del promotor génico.",
+        "la conversión directa de la proteína en histona."
+      ],
+      "correcta": "A",
+      "explicacion": "Las inserciones que no son múltiplos de tres bases desfasan la agrupación de tripletes a partir de la mutación, alterando completamente la traducción posterior[cite: 12]."
+    },
+    {
+      "pregunta": "A diferencia de la replicación del ADN, las enzimas ARN polimerasas se caracterizan funcionalmente porque:",
+      "opciones": [
+        "pueden iniciar la síntesis de ARN *de novo* sin necesidad de un cebador o primer preexistente.",
+        "sintetizan la hebra en sentido 3' -> 5'.",
+        "utilizan desoxirribonucleótidos en lugar de ribonucleótidos.",
+        "se encuentran exclusivamente dentro del nucléolo."
+      ],
+      "correcta": "A",
+      "explicacion": "La ARN polimerasa no requiere de un extremo 3'-OH preexistente para comenzar la transcripción, a diferencia de la ADN polimerasa[cite: 12]."
+    },
+    {
+      "pregunta": "El proceso de maduración del pre-ARNm eucariota conocido como splicing o corte y empalme tiene lugar en:",
+      "opciones": [
+        "el núcleo celular, eliminando intrones y ligando exones.",
+        "el citosol sobre los polisomas.",
+        "el interior de la luz del RER.",
+        "los complejos del poro nuclear durante el transporte."
+      ],
+      "correcta": "A",
+      "explicacion": "El splicing es un procesamiento estrictamente nuclear catalizado por el complejo RNPpn (espliceosoma) antes del transporte del ARNm maduro al citoplasma[cite: 12]."
+    },
+    {
+      "pregunta": "Si las células somáticas de un organismo diploide poseen 10 moléculas de ADN en la fase G1, ¿cuántos cromosomas y cromátides hermanas contendrá un ovocito II en metafase II?",
+      "opciones": [
+        "5 cromosomas y 10 cromátides hermanas.",
+        "10 cromosomas y 20 cromátides hermanas.",
+        "5 cromosomas y 5 cromátides hermanas.",
+        "10 cromosomas y 10 cromátides hermanas."
+      ],
+      "correcta": "A",
+      "explicacion": "En G1 2n = 10 cromosomas simples (10 moléculas). Tras la meiosis I reduccional, el ovocito II es haploide (n = 5), conteniendo 5 cromosomas dobles (10 cromátides)[cite: 12]."
+    },
+    {
+      "pregunta": "Un espermatocito secundario (II) se diferencia morfológicamente y genéticamente de un espermatozoide maduro de la misma especie en que el primero:",
+      "opciones": [
+        "posee sus cromosomas formados por dos cromátides hermanas, mientras que el espermatozoide los tiene simples.",
+        "es una célula diploide (2n) y el espermatozoide es haploide.",
+        "carece por completo de material genético.",
+        "contiene el doble de cromosomas que el espermatocito I."
+      ],
+      "correcta": "A",
+      "explicacion": "Tanto el espermatocito II como el espermatozoide son células haploides (n), pero el espermatocito II aún no ha realizado la división ecuacional de meiosis II, retener sus cromosomas duplicados[cite: 12]."
+    },
+    {
+      "pregunta": "En las células somáticas diploides de una especie animal, el número de autosomas y cromosomas sexuales presentes se define como:",
+      "opciones": [
+        "todos los cromosomas del cariotipo excepto la pareja de cromosomas sexuales que determinan el sexo.",
+        "exclusivamente el par de cromosomas X e Y.",
+        "los cromosomas que se encuentran en el nucléolo.",
+        "los cromosomas provenientes únicamente del progenitor materno."
+      ],
+      "correcta": "A",
+      "explicacion": "El cariotipo de una célula somática se compone de autosomas (pares comunes a ambos sexos) y un par de heterocromosomas o cromosomas sexuales (XX o XY)[cite: 12]."
+    },
+    {
+      "pregunta": "Durante la etapa de la metafase I de la meiosis, una célula diploide con 2n = 10 presentará en la placa ecuatorial:",
+      "opciones": [
+        "5 bivalentes o tétradas (pares de cromosomas homólogos apareados).",
+        "10 cromosomas simples alineados individualmente.",
+        "20 cromosomas simples no apareados.",
+        "2 bivalentes y 8 cromátides sueltas."
+      ],
+      "correcta": "A",
+      "explicacion": "En la metafase I meiótica, los cromosomas homólogos duplicados se alinean en parejas (bivalentes o tétradas) a ambos lados del plano ecuatorial[cite: 12]."
+    },
+    {
+      "pregunta": "Un varón afectado por una mutación recesiva ligada al cromosoma X (X b Y) transmitirá el alelo mutado a:",
+      "opciones": [
+        "el 100% de sus hijas mujeres y a ninguno de sus hijos varones.",
+        "el 50% de sus hijos varones únicamente.",
+        "todos sus descendientes de ambos sexos por igual.",
+        "únicamente a sus nietos varones a través de su hijo."
+      ],
+      "correcta": "A",
+      "explicacion": "El padre aporta su único cromosoma X a sus hijas mujeres (convirtiéndolas en portadoras obligadas) y aporta el cromosoma Y a sus hijos varones[cite: 12]."
+    },
+    {
+      "pregunta": "El mecanismo evolutivo conocido como deriva génica altera la composición genómica de las poblaciones mediante:",
+      "opciones": [
+        "fluctuaciones aleatorias en las frecuencias de los alelos producidas por eventos azarosos.",
+        "la adaptación fisiológica directa ante cambios del clima.",
+        "el aumento constante de la tasa de mutación inducida por la radiación.",
+        "la reproducción exclusiva de los organismos más corpulentos."
+      ],
+      "correcta": "A",
+      "explicacion": "La deriva génica es un proceso estocástico (azaroso) que causa cambios aleatorios en las frecuencias alélicas de una generación a otra, con mayor impacto en poblaciones pequeñas[cite: 12]."
+    }
+  ]
+}

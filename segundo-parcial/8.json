@@ -1,0 +1,556 @@
+{
+  "materia": "Biología Celular y Molecular",
+  "tema": "Parciales de Biología (Integrador)",
+  "preguntas": [
+    {
+      "pregunta": "La desorganización de la envoltura nuclear durante la profase mitótica o meiótica se produce fundamentalmente como consecuencia de la:",
+      "opciones": [
+        "disrupción de los microtúbulos polares del huso.",
+        "pérdida de la estructura de la lámina nuclear por fosforilación de sus filamentos intermedios.",
+        "acción contráctil del anillo de actina y miosina.",
+        "actividad enzimática del cinetocoro en la placa ecuatorial."
+      ],
+      "correcta": "B",
+      "explicacion": "La desorganización de la envoltura nuclear requiere la desensambladura de la lámina nuclear, promovida por la fosforilación de las láminas intermedias por la quinasa CDK1."
+    },
+    {
+      "pregunta": "Es un ejemplo clásico de patología originada por una alteración o pérdida del control del ciclo celular:",
+      "opciones": [
+        "El síndrome de Down.",
+        "La hemofilia A.",
+        "El cáncer.",
+        "El síndrome de Turner."
+      ],
+      "correcta": "C",
+      "explicacion": "El cáncer representa una proliferación celular descontrolada provocada por la acumulación de mutaciones en oncogenes y genes supresores de tumores."
+    },
+    {
+      "pregunta": "Durante la metafase de la mitosis celular, el material genético se caracteriza por:",
+      "opciones": [
+        "alcanzar el grado máximo de condensación y empaquetamiento cromosómico.",
+        "iniciar la duplicación semiconservativa del ADN.",
+        "desorganizar el huso mitótico acromático.",
+        "separar los cromosomas homólogos hacia los polos."
+      ],
+      "correcta": "A",
+      "explicacion": "En la metafase mitótica los cromosomas alineados en el plano ecuatorial muestran su máxima condensación, siendo el momento ideal para la confección del cariotipo."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes tipos celulares presenta la mayor cantidad de ADN por núcleo en el estado indicado?",
+      "opciones": [
+        "Una neurona madura en estado G0.",
+        "Una célula epitelial al inicio de la mitosis (fase M).",
+        "Una célula epitelial en la fase G1 de la interfase.",
+        "Un espermatozoide haploide."
+      ],
+      "correcta": "B",
+      "explicacion": "La célula epitelial en la transición G2/M ya ha duplicado su ADN en la fase S, conteniendo un valor de 4C de ADN, superior al valor de G0/G1 (2C) o haploide (1C)."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes fenómenos genéticos o celulares puede ocurrir indistintamente en organismos con reproducción sexual o asexual?",
+      "opciones": [
+        "La segregación independiente de los cromosomas homólogos.",
+        "La mutación en la secuencia génica del ADN.",
+        "El entrecruzamiento cromosómico (crossing-over).",
+        "La no disyunción meiótica."
+      ],
+      "correcta": "B",
+      "explicacion": "Las mutaciones ocurren por errores aleatorios durante la replicación o por agentes mutágenos, sucediendo tanto en organismos de reproducción asexual como sexual."
+    },
+    {
+      "pregunta": "El cese casi total de la actividad de transcripción génica en el núcleo es una característica propia de la fase del ciclo celular denominada:",
+      "opciones": [
+        "Fase G1.",
+        "Fase S.",
+        "Fase G2.",
+        "Fase M (mitosis)."
+      ],
+      "correcta": "D",
+      "explicacion": "La elevada condensación de la cromatina en cromosomas mitóticos bloquea físicamente la unión de las ARN polimerasas, deteniendo la transcripción."
+    },
+    {
+      "pregunta": "Una propiedad común que comparten los sistemas de expresión génica en células procariontes y eucariontes es la presencia de:",
+      "opciones": [
+        "factores de transcripción específicos de tipo homeodominio.",
+        "la subunidad sigma para el reconocimiento del promotor.",
+        "modificaciones postranscripcionales con cola poli-A en todos los ARNm.",
+        "secuencias promotoras en el ADN para la iniciación de la transcripción."
+      ],
+      "correcta": "D",
+      "explicacion": "En ambos reinos la transcripción depende de secuencias promotoras específicas ubicadas río arriba del sitio de inicio para posicionar la ARN polimerasa."
+    },
+    {
+      "pregunta": "Tanto la enzima ADN polimerasa como la ARN polimerasa se caracterizan catalíticamente por:",
+      "opciones": [
+        "sintetizar la hebra nueva en dirección 3' -> 5'.",
+        "catalizar la síntesis de una hebra de ácido nucleico en dirección 5' -> 3'.",
+        "poseer actividad exonucleasa de corrección de pruebas 3' -> 5'.",
+        "requerir obligatoriamente un cebador o primer de ARN."
+      ],
+      "correcta": "B",
+      "explicacion": "Ambas enzimas polimerizan nucleótidos en dirección 5'->3' agregando el nuevo monómero al extremo 3'-OH libre mediante enlace fosfodiéster."
+    },
+    {
+      "pregunta": "En cuanto a la vida media de los distintos tipos de ARN celulares, se verifica que:",
+      "opciones": [
+        "el ARNm posee la mayor estabilidad y duración dentro de la célula.",
+        "el ARNr se degrada completamente tras traducir cada molécula de ARNm.",
+        "el ARNt presenta mayor vida media que el ARNm al ser reutilizado para transportar múltiples aminoácidos.",
+        "todos los tipos de ARN poseen la misma tasa de degradación."
+      ],
+      "correcta": "C",
+      "explicacion": "Los ARN de transferencia y ribosómicos son altamente estables y reutilizables en múltiples ciclos de traducción, a diferencia del ARNm que posee vida media más corta."
+    },
+    {
+      "pregunta": "En el procesamiento del ARN de las células eucariontes, los intrones se definen como:",
+      "opciones": [
+        "secuencias eliminadas del transcripto primario por la acción del complejo del espliceosoma.",
+        "secuencias codificantes que se traducen en el ribosoma.",
+        "adiciones de nucleótidos de adenina en el extremo 3'.",
+        "secuencias de ADN reguladoras situadas en el promotor."
+      ],
+      "correcta": "A",
+      "explicacion": "Los intrones son secuencias no codificantes transcriptas en el pre-ARNm que son removidas durante el splicing en el núcleo antes de la traducción."
+    },
+    {
+      "pregunta": "La característica de que una molécula de ARN mensajero sea policistrónica indica que:",
+      "opciones": [
+        "proviene de un organismo eucarionte y posee múltiples intrones.",
+        "corresponde a células procariontes y contiene la información para sintetizar varias cadenas polipeptídicas.",
+        "contiene múltiples capuchones 5' para varios ribosomas.",
+        "solo codifica para una única proteína en células vegetales."
+      ],
+      "correcta": "B",
+      "explicacion": "En bacterias, los operones transcriben ARNm policistrónicos que albergan secuencias codificantes para múltiples enzimas de una misma vía metabólica."
+    },
+    {
+      "pregunta": "Durante la traducción, la formación del enlace peptídico se caracteriza energéticamente por:",
+      "opciones": [
+        "requerir la hidrólisis directa de ATP por parte del ribosoma.",
+        "ser catalizada por el propio aminoácido en el sitio E.",
+        "requerir la energía liberada por la ruptura del enlace éster entre el aminoácido y su ARNt en el sitio P.",
+        "ser una reacción totalmente irreversible mediada por ADN polimerasa."
+      ],
+      "correcta": "C",
+      "explicacion": "La transferencia de la cadena peptídica desde el ARNt del sitio P al aminoacil-ARNt del sitio A aprovecha la energía del enlace de alta energía generado durante la aminoacilación."
+    },
+    {
+      "pregunta": "En el mecanismo de traducción proteica, la terminación de la cadena polipeptídica se desencadena cuando:",
+      "opciones": [
+        "un factor de liberación proteico reconoce y se une a un codón de terminación en el sitio A.",
+        "un ARNt especial con un anticodón complementario al codón stop ingresa al sitio A.",
+        "la ARN polimerasa se desprendió del ADN.",
+        "se agotan las reservas de GTP en el citosol."
+      ],
+      "correcta": "A",
+      "explicacion": "Los codones stop (UAA, UAG, UGA) no son reconocidos por ARNt sino por factores proteicos de liberación que hidrolizan el enlace con el péptido."
+    },
+    {
+      "pregunta": "La enzima aminoacil-ARNt sintetasa realiza su función fisiológica al:",
+      "opciones": [
+        "catalizar el acoplamiento covalente entre un aminoácido específico y su ARNt consumiendo ATP.",
+        "transcribir los genes de ARNt en el nucléolo.",
+        "formar el enlace peptídico dentro de la subunidad mayor del ribosoma.",
+        "unir la capuchón 5' al ARNm."
+      ],
+      "correcta": "A",
+      "explicacion": "Esta enzima garantiza la fidelidad de la traducción acoplando el aminoácido correcto al extremo 3' del ARNt correspondiente mediante gasto de ATP."
+    },
+    {
+      "pregunta": "Durante la síntesis de proteínas en el ribosoma, la cadena polipeptídica se elonga unidireccionalmente desde el extremo:",
+      "opciones": [
+        "carboxilo terminal hacia el extremo amino terminal.",
+        "amino terminal hacia el extremo carboxilo terminal.",
+        "5' fosfato hacia el extremo 3' hidroxilo.",
+        "3' hidroxilo hacia el extremo 5' fosfato."
+      ],
+      "correcta": "B",
+      "explicacion": "El primer aminoácido expone su grupo amino libre (N-terminal) y cada nuevo aminoácido se añade por su grupo amino al carboxilo terminal (C-terminal) del péptido en crecimiento."
+    },
+    {
+      "pregunta": "La información genética que especifica la estructura primaria (secuencia de aminoácidos) de una proteína reside en:",
+      "opciones": [
+        "las secuencias no codificantes de los intrones.",
+        "la secuencia de nucleótidos de la región codificante del gen.",
+        "la estructura terciaria del ARN ribosomal.",
+        "el extremo aceptor del ARN de transferencia."
+      ],
+      "correcta": "B",
+      "explicacion": "El orden lineal de los nucleótidos en los exones o marco abierto de lectura codifica directamente la secuencia de aminoácidos según la tabla del código genético."
+    },
+    {
+      "pregunta": "Si por una mutación puntual un ARNm maduro pierde completamente el triplete AUG, la consecuencia inmediata será:",
+      "opciones": [
+        "el bloqueo del inicio de la transcripción en el núcleo.",
+        "la incapacidad de formar el complejo de iniciación para traducir la proteína.",
+        "la degradación del ADN promotor.",
+        "la traducción de una proteína el doble de larga."
+      ],
+      "correcta": "B",
+      "explicacion": "El codón AUG funciona como la señal de inicio universal reconocida por el ARNt iniciador para establecer el marco de lectura en el ribosoma."
+    },
+    {
+      "pregunta": "Se dice que el código genético es degenerado o redundante debido a que:",
+      "opciones": [
+        "un mismo codón puede especificar varios aminoácidos diferentes.",
+        "varios codones distintos pueden codificar para un mismo aminoácido.",
+        "el código varía ampliamente entre especies de bacterias y animales.",
+        "carece de señales de terminación de la traducción."
+      ],
+      "correcta": "B",
+      "explicacion": "Existen 61 codones codificantes para solo 20 aminoácidos, lo que implica que la mayoría de los aminoácidos son especificados por más de un codón (codones sinónimos)."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes mutaciones en la región codificante de un gen provoca un corrimiento del marco de lectura (frameshift)?",
+      "opciones": [
+        "La sustitución de una base nitrogenada por otra.",
+        "La sustitución de un codón por un codón sinónimo.",
+        "La deleción o pérdida de un solo nucleótido.",
+        "La deleción de un triplete o codón completo."
+      ],
+      "correcta": "C",
+      "explicacion": "La pérdida o ganancia de un número de nucleótidos que no sea múltiplo de tres altera la agrupación de todos los tripletes siguientes en la traducción."
+    },
+    {
+      "pregunta": "Las proteínas G heterotriméricas asociadas a receptores de membrana se caracterizan por poseer actividad enzimática intrínseca de tipo:",
+      "opciones": [
+        "Adenilato ciclasa.",
+        "GTPasa.",
+        "Tirosina quinasa.",
+        "Fosfolipasa C."
+      ],
+      "correcta": "B",
+      "explicacion": "Las proteínas G se activan al unir GTP y se inactivan automáticamente al hidrolizar el GTP a GDP gracias a su actividad GTPasa intrínseca."
+    },
+    {
+      "pregunta": "Tanto una hormona proteica de secreción como una enzima hidrolítica lisosomal comparten en su biogénesis que:",
+      "opciones": [
+        "se liberan mediante exocitosis constitutiva al medio extracelular.",
+        "se traducen íntegramente en ribosomas libres del citosol.",
+        "inician su traducción en ribosomas citosólicos y la completan tras ser translocadas al REG.",
+        "carecen de secuencia de péptido señal en su extremo N-terminal."
+      ],
+      "correcta": "C",
+      "explicacion": "Ambas forman parte de la vía secretora/endomembranas; su péptido señal es reconocido por la SRP dirigiendo el ribosoma hacia la membrana del RER."
+    },
+    {
+      "pregunta": "En las células animales diferenciadas, los telómeros cumplen la función de:",
+      "opciones": [
+        "evitar el superenrollamiento del ADN durante la transcripción.",
+        "proteger a las regiones codificantes de los extremos cromosómicos de la degradación progresiva en cada replicación.",
+        "unir las cromátides hermanas durante la profase.",
+        "sintetizar los cebadores de ARN."
+      ],
+      "correcta": "B",
+      "explicacion": "Los telómeros consisten en repeticiones no codificantes en los extremos del ADN lineal que previenen la pérdida de genes por el problema de la replicación terminal."
+    },
+    {
+      "pregunta": "La definición biológica de un gen corresponde a:",
+      "opciones": [
+        "una secuencia de ADN que codifica para un producto funcional, ya sea una proteína o un ARN no codificante.",
+        "cualquier secuencia de aminoácidos en una cadena peptídica.",
+        "un segmento de ARN de transferencia citoplásmico.",
+        "una proteína estructural del nucléolo."
+      ],
+      "correcta": "A",
+      "explicacion": "Un gen es la unidad física y funcional de la herencia formada por un segmento de ADN que se transcribe para dar un ARN funcional o un ARNm traducible a proteína."
+    },
+    {
+      "pregunta": "En las hembras de los mamíferos, el proceso de inactivaicón de uno de los cromosomas X en las células somáticas conduce a la formación de la estructura conocida como:",
+      "opciones": [
+        "Centrómero secundario.",
+        "Corpúsculo de Barr (heterocromatina facultativa).",
+        "Región organizadora nucleolar (NOR).",
+        "Eucromatina transcripcionalmente activa."
+      ],
+      "correcta": "B",
+      "explicacion": "Para compensar la dosis génica, uno de los dos cromosomas X en hembras se condensa en heterocromatina facultativa, formando el corpúsculo de Barr visible en la periferia nuclear."
+    },
+    {
+      "pregunta": "Los productos directos resultante de la replicación semiconservativa de una molécula de ADN celular constituyen las:",
+      "opciones": [
+        "dos hebras de una sola cromátida simple.",
+        "dos cromátides hermanas de un cromosoma duplicado.",
+        "dos parejas de cromosomas homólogos.",
+        "dos subunidades de un ribosoma."
+      ],
+      "correcta": "B",
+      "explicacion": "Tras la duplicación del ADN en la fase S, las dos dobles hélices resultantes permanecen asociadas por cohesinas constituyendo las dos cromátides hermanas del cromosoma."
+    },
+    {
+      "pregunta": "Durante la duplicación del ADN, la enzima helicasa cumple el rol de:",
+      "opciones": [
+        "aliviar la tensión torsional provocada por el superenrollamiento.",
+        "separar las dos hebras parentales rompiendo los puentes de hidrógeno entre las bases.",
+        "sintetizar el cebador de ARN en la cadena retrasada.",
+        "sellar los enlaces fosfodiéster entre los fragmentos de Okazaki."
+      ],
+      "correcta": "B",
+      "explicacion": "La helicasa se desplaza a lo largo del ADN desenrollando la doble hélice y separando las dos cadenas mediante la ruptura de las uniones por puentes de hidrógeno."
+    },
+    {
+      "pregunta": "La energía requerida para la formación del enlace fosfodiéster durante la síntesis de ADN proviene de la:",
+      "opciones": [
+        "hidrólisis de moléculas de ATP libre citoplásmico.",
+        "hidrólisis de pirofosfato del desoxirribonucleótido trifosfato (dNTP) incorporado a la cadena.",
+        "actividad exergónica de la topoisomerasa.",
+        "energía potencial del gradiente de protones."
+      ],
+      "correcta": "B",
+      "explicacion": "Cada dNTP entrante porta en sus enlaces fosfoanhídrido la energía necesaria; la liberación y posterior hidrólisis del pirofosfato (PPi) impulsa la reacción de polimerización."
+    },
+    {
+      "pregunta": "Las proteínas conocidas como SSB (Single-Stranded Binding proteins) actúan en la horquilla de replicación para:",
+      "opciones": [
+        "sintetizar los fragmentos de Okazaki.",
+        "evitar que las hebras simples de ADN separadas por la helicasa se renaturalicen o apareen prematuramente.",
+        "reemplazar los cebadores de ARN por ADN.",
+        "formar el complejo de poro nuclear."
+      ],
+      "correcta": "B",
+      "explicacion": "Las proteínas de unión a hebra sencilla (SSB o RPA) se acoplan al ADN monocatenario para estabilizarlo y prevenir la formación de estructuras secundarias o el reapareamiento."
+    },
+    {
+      "pregunta": "En el cromosoma bacteriano circular, la replicación del ADN se caracteriza por iniciar en:",
+      "opciones": [
+        "múltiples sitios de origen aleatorios en cada ciclo.",
+        "un único sitio de origen (oriC) a partir del cual el proceso avanza bidireccionalmente.",
+        "los telómeros terminales de la cadena.",
+        "el sitio de inserción de los ribosomas."
+      ],
+      "correcta": "B",
+      "explicacion": "El genoma procarionte posee un único origen de replicación (oriC) desde el cual dos horquillas avanzan en direcciones opuestas hasta completar el círculo."
+    },
+    {
+      "pregunta": "Si en una bacteria ocurre una mutación inactivante en el gen de la ADN polimerasa I, el proceso que se verá afectado inmediatamente es la:",
+      "opciones": [
+        "iniciación de la transcripción del ARNm.",
+        "eliminación de los cebadores de ARN y su reemplazo por ADN en la hebra retrasada.",
+        "apertura de la hélice por la helicasa.",
+        "traducción de las proteínas ribosomales."
+      ],
+      "correcta": "B",
+      "explicacion": "La ADN polimerasa I bacteriana posee actividad exonucleasa 5'->3' especializada en degradar los cebadores de ARN y rellenar los huecos con ADN."
+    },
+    {
+      "pregunta": "La actividad de corrección de pruebas (proofreading) durante la síntesis de ADN depende de la capacidad de la ADN polimerasa de actuar como:",
+      "opciones": [
+        "endonucleasa en sentido 5' -> 3'.",
+        "exonucleasa en sentido 3' -> 5' para remover el nucleótido mal apareado.",
+        "ligasa de fragmentos monocatenarios.",
+        "primasa de ribonucleótidos."
+      ],
+      "correcta": "B",
+      "explicacion": "Al detectar una base mal apareada en el extremo 3', la ADN polimerasa retrocede utilizando su actividad exonucleasa 3'->5' para escindir el nucleótido incorrecto."
+    },
+    {
+      "pregunta": "Al cruzar dos moscas heterocigotas de alas largas se obtienen 122 moscas de alas largas y 41 de alas cortas (proporción 3:1). Esto indica que:",
+      "opciones": [
+        "el alelo alas cortas es dominante.",
+        "el alelo alas cortas es recesivo y ambos progenitores eran heterocigotas.",
+        "ambos progenitores eran homocigotas recesivos.",
+        "el rasgo está ligado al cromosoma Y."
+      ],
+      "correcta": "B",
+      "explicacion": "La proporción fenotípica 3:1 en la descendencia es la prueba mendeliana clásica de un cruzamiento monohíbrido entre dos individuos heterocigotas (Aa x Aa)."
+    },
+    {
+      "pregunta": "Al cruzar dos individuos heterocigotas para dos genes independientes con dominancia completa (AaBb x AaBb), la proporción de descendientes que expresan ambos caracteres dominantes es del:",
+      "opciones": [
+        "1/16",
+        "3/16",
+        "9/16",
+        "100%"
+      ],
+      "correcta": "C",
+      "explicacion": "En el cruzamiento dihíbrido mendeliano, la segregación independiente origina la proporción fenotípica 9:3:3:1, donde 9/16 expresan ambos rasgos dominantes."
+    },
+    {
+      "pregunta": "Un hombre afectado por una enfermedad dominante ligada al cromosoma X (X D Y) concibe con una mujer sana (X d X d). Se cumple que:",
+      "opciones": [
+        "todos sus hijos varones serán enfermos.",
+        "el 50% de sus hijos varones heredará la afección.",
+        "el 100% de sus hijas mujeres heredará la enfermedad.",
+        "ninguna de sus hijas resultará afectada."
+      ],
+      "correcta": "C",
+      "explicacion": "El padre afectado transmite obligadamente su único cromosoma X D a todas sus hijas mujeres, quienes manifestarán el fenotipo patológico dominante."
+    },
+    {
+      "pregunta": "Al cruzar dos caballos heterocigotas de pelaje negro (Bb x Bb), la probabilidad de obtener un descendiente de genotipo homocigota dominante (BB) es del:",
+      "opciones": [
+        "100%",
+        "50%",
+        "25%",
+        "0%"
+      ],
+      "correcta": "C",
+      "explicacion": "El cruzamiento entre dos heterocigotas Bb genera una proporción genotípica de 1/4 BB (25%), 1/2 Bb (50%) y 1/4 bb (25%)."
+    },
+    {
+      "pregunta": "En las plantas de gallina andaluza, la cruza entre variantes de plumaje negro (BB) y blanco (bb) origina una F1 de color azul grisáceo por dominancia incompleta. En la F2 la proporción fenotípica será:",
+      "opciones": [
+        "50% negros y 50% blancos.",
+        "100% de aves azules.",
+        "1/4 negros, 1/2 azules grisáceos y 1/4 blancos.",
+        "3/4 negros y 1/4 blancos."
+      ],
+      "correcta": "C",
+      "explicacion": "En la dominancia incompleta las proporciones genotípicas y fenotípicas coinciden en la F2 (1/4 homocigota dominante, 1/2 heterocigota intermedio y 1/4 homocigota recesivo)."
+    },
+    {
+      "pregunta": "Si dos padres de fenotipo normal conciben una hija con una enfermedad autosómica recesiva, la probabilidad de que su siguiente hijo resulte afectado es del:",
+      "opciones": [
+        "25%",
+        "50%",
+        "75%",
+        "100%"
+      ],
+      "correcta": "A",
+      "explicacion": "Para tener una hija recesiva (aa), ambos padres deben ser heterocigotas (Aa). La probabilidad de transmitir ambos alelos recesivos en cada nuevo embarazo es del 25% (1/4)."
+    },
+    {
+      "pregunta": "Un hombre afectado por una anomalía dominante ligada al cromosoma X (X D Y) y una mujer normal (X d X d) tienen un hijo varón. La probabilidad de que el varón esté enfermo es de:",
+      "opciones": [
+        "0",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "correcta": "A",
+      "explicacion": "Los hijos varones reciben el cromosoma Y del padre y un cromosoma X d normal de la madre, por lo que resulta imposible que hereden la enfermedad paterna."
+    },
+    {
+      "pregunta": "Una célula muscular y una célula epitelial provenientes del mismo individuo adulto se caracterizan por:",
+      "opciones": [
+        "expresar exactamente las mismas moléculas de ARNm.",
+        "derivar de la misma célula huevo o cigoto por mitosis, diferenciándose por la expresión de conjuntos génicos distintos.",
+        "contener una cantidad diferente de cromosomas en su núcleo.",
+        "poseer secuencias de ADN completamente opuestas."
+      ],
+      "correcta": "B",
+      "explicacion": "Salvo mutaciones somáticas, todas las células somáticas comparten el mismo genoma diploide, pero su identidad histológica depende de los programas de expresión génica diferencial."
+    },
+    {
+      "pregunta": "En las células somáticas diploides de una especie con 2n = 40, la presencia de un gen autosómico con 4 alelos posibles en la población implica que cada célula en G1 tendrá:",
+      "opciones": [
+        "un solo alelo.",
+        "dos alelos para dicho gen.",
+        "tres alelos.",
+        "cuatro alelos."
+      ],
+      "correcta": "B",
+      "explicacion": "Al ser un organismo diploide (2n), cada individuo solo posee dos cromosomas homólogos por par y, por ende, únicamente dos alelos por locus en sus células somáticas."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes causas NO contribuye al incremento de la variabilidad genética entre generaciones?",
+      "opciones": [
+        "El entrecruzamiento de segmentos entre cromátides hermanas durante la profase I.",
+        "La segregación aleatoria de cromosomas homólogos en la anafase I.",
+        "El entrecruzamiento entre cromátidas no hermanas de cromosomas homólogos.",
+        "La fecundación al azar entre gametas."
+      ],
+      "correcta": "A",
+      "explicacion": "Las cromátides hermanas son copias idénticas sintetizadas durante la replicación; el intercambio entre ellas no genera combinaciones alélicas nuevas, a diferencia del crossing-over entre homólogos."
+    },
+    {
+      "pregunta": "El complejo de poro nuclear se define estructuralmente como una barrera que:",
+      "opciones": [
+        "permite la difusión libre e indiscriminada de todas las macromoléculas.",
+        "regula de forma selectiva el transporte nucleocitoplásmico de proteínas y complejos de ARN.",
+        "se compone únicamente de una bicapa lipídica sin proteínas.",
+        "constituye la vía de salida del ADN cromosómico hacia el citosol."
+      ],
+      "correcta": "B",
+      "explicacion": "El complejo del poro nuclear está integrado por nucleoporinas organizadas para actuar como un canal selectivo regulado por señales NLS y NES mediante importinas y exportinas."
+    },
+    {
+      "pregunta": "En el núcleo celular, la región conocida como organizador nucleolar (NOR) contiene los genes que codifican para:",
+      "opciones": [
+        "los ARN mensajeros de las proteínas ribosómicas.",
+        "los ARN ribosómicos (ARNr).",
+        "los ARN de transferencia.",
+        "las proteínas histonas nucleosómicas."
+      ],
+      "correcta": "B",
+      "explicacion": "Las regiones NOR albergan los cúmulos de genes en tándem que transcriben el precursor del ARN ribosomal (ARNr 45S en eucariotas superiores)."
+    },
+    {
+      "pregunta": "Las secuencias genómicas conocidas como elementos transponibles o transposones se caracterizan por:",
+      "opciones": [
+        "ser fragmentos de ADN capaces de cambiar de posición dentro del genoma celular.",
+        "encontrarse exclusivamente en el ADN mitocondrial.",
+        "codificar únicamente para proteínas de los poros nucleares.",
+        "permanecer inmóviles en los centrómeros de todos los cromosomas."
+      ],
+      "correcta": "A",
+      "explicacion": "Los transposones o 'genes saltarines' son secuencias de ADN que pueden desplazarse a nuevas ubicaciones genómicas por mecanismos de replicación o escisión."
+    },
+    {
+      "pregunta": "El proceso de maduración del pre-ARNm denominado splicing o corte y empalme permite:",
+      "opciones": [
+        "la adición de nucleótidos de timina en el extremo 3'.",
+        "la eliminación selectiva de los intrones y la ligación covalente de los exones.",
+        "la inserción de secuencias no codificantes en el citoplasma.",
+        "la degradación del transcripto primario en el lisosoma."
+      ],
+      "correcta": "B",
+      "explicacion": "El splicing es un mecanismo nuclear mediado por el espliceosoma que escinde las regiones intrónicas no codificantes y une los exones para formar el ARNm maduro."
+    },
+    {
+      "pregunta": "El término genoma se define formalmente como:",
+      "opciones": [
+        "la totalidad de la información genética contenida en un organismo o especie.",
+        "únicamente el conjunto de genes que codifican enzimas digestivas.",
+        "la secuencia del ARN ribosomal presente en el nucléolo.",
+        "la colección de proteínas sintetizadas en el retículo endoplásmico."
+      ],
+      "correcta": "A",
+      "explicacion": "El genoma comprende todo el material hereditario de un organismo, incluyendo tanto las regiones codificantes como las no codificantes de su ADN."
+    },
+    {
+      "pregunta": "La modificación covalente del pre-ARNm eucarionte conocida como Cap o capuchón 5' cumple la función de:",
+      "opciones": [
+        "marcar el sitio de poliadenilación en el extremo 3'.",
+        "proteger al transcripto de la degradación y permitir el reconocimiento por el complejo de iniciación traduccional.",
+        "sintetizar la secuencia de aminoácidos iniciadora.",
+        "eliminar los exones transcritos."
+      ],
+      "correcta": "B",
+      "explicacion": "La adición de la 7-metilguanosina (Cap 5') estabiliza el pre-ARNm contra la acción de exonucleasas y es esencial para la exportación nuclear y el ensamblaje del ribosoma."
+    },
+    {
+      "pregunta": "A diferencia de las células eucariontes, el proceso de traducción en bacterias se caracteriza por ocurrir de manera:",
+      "opciones": [
+        "posterior a la maduración y exportación del transcripto.",
+        "exclusivamente dentro del compartimento nuclear.",
+        "simultánea o cotranscripcional al desarrollo de la transcripción.",
+        "independiente de la presencia de ribosomas."
+      ],
+      "correcta": "C",
+      "explicacion": "Al carecer de envoltura nuclear, los ribosomas bacterianos se acoplan inmediatamente al extremo 5' del ARNm mientras este se continúa transcribiendo del ADN."
+    },
+    {
+      "pregunta": "Si en un ensayo farmacológico se inhibe la actividad de la enzima peptidil transferasa, el efecto directo en la traducción será:",
+      "opciones": [
+        "la imposibilidad de transcribir el ADN a pre-ARNm.",
+        "el bloqueo de la iniciación por falta de capuchón 5'.",
+        "la interrupción de la elongación al no poder formarse los enlaces peptídicos entre aminoácidos.",
+        "la incapacidad de añadir la cola de poliadeninas."
+      ],
+      "correcta": "C",
+      "explicacion": "La peptidil transferasa es la ribozima del ARNr que cataliza la formación de enlaces peptídicos; su inhibición detiene inmediatamente la fase de elongación."
+    },
+    {
+      "pregunta": "En el sistema de regulación del operón lactosa en E. coli, el disacárido lactosa actúa fisiológicamente como:",
+      "opciones": [
+        "una fuente alternativa de carbono cuyo derivado inactiva al represor para inducir la transcripción.",
+        "un correpresor que se une al operador deteniendo a la polimerasa.",
+        "un inhibidor directo de la síntesis de AMP cíclico.",
+        "una enzima que degrada a la beta-galactosidasa."
+      ],
+      "correcta": "A",
+      "explicacion": "La lactosa se transforma en alolactosa, la cual se une a la proteína represora desactivando su capacidad de unirse al operador y permitiendo la transcripción."
+    }
+  ]
+}

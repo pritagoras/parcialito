@@ -1,0 +1,611 @@
+{
+  "materia": "Biología Celular y Molecular",
+  "tema": "Parciales de Biología (Integrador)",
+  "preguntas": [
+    {
+      "pregunta": "Cuando un macho de pelaje claro (homocigota recesivo aa) se cruza con una hembra de pelaje oscuro, se obtiene un 50% de descendientes con fenotipo dominante. El genotipo de la hembra es:",
+      "opciones": [
+        "homocigota recesivo (aa).",
+        "homocigota dominante (AA).",
+        "heterocigota (Aa).",
+        "hemicigota (A-)."
+      ],
+      "correcta": "C",
+      "explicacion": "Un cruzamiento de prueba entre un individuo recesivo (aa) y uno dominante heterocigota (Aa) produce una proporción fenotípica 1:1 (50% dominantes y 50% recesivos)."
+    },
+    {
+      "pregunta": "En las células eucariontes, los genes que codifican para el precursor del ARN ribosomal 45S se localizan en:",
+      "opciones": [
+        "el nucleoplasma laxo.",
+        "la cromatina extranucleolar.",
+        "el ADN mitocondrial.",
+        "los organizadores nucleolares (NOR)."
+      ],
+      "correcta": "D",
+      "explicacion": "Las regiones de organización nucleolar (NOR) contienen repeticiones de genes que codifican el ARNr 45S rodeados por el tejido nucleolar."
+    },
+    {
+      "pregunta": "Uno de los requerimientos fundamentales para que la ARN polimerasa lleve a cabo la transcripción es disponer de:",
+      "opciones": [
+        "un molde de ARN monocatenario.",
+        "ribonucleótidos trifosfatados.",
+        "un cebador sintetizado por la primasa.",
+        "desoxirribonucleótidos monofosfatados."
+      ],
+      "correcta": "B",
+      "explicacion": "La transcripción utiliza ribonucleótidos trifosfatados (ATP, CTP, GTP, UTP) como sustratos y fuente de energía para sintetizar la hebra de ARN."
+    },
+    {
+      "pregunta": "Se cruzan dos cobayos homocigotas: negro (AA) x blanco (aa). La F1 es 100% negra (Aa). Al cruzar dos individuos de la F1 entre sí, la proporción genotípica en la F2 será:",
+      "opciones": [
+        "25% aa, 50% Aa y 25% AA.",
+        "50% AA y 50% aa.",
+        "50% Aa y 50% aa.",
+        "75% Aa y 25% AA."
+      ],
+      "correcta": "A",
+      "explicacion": "La cruza monohíbrida entre heterocigotas (Aa x Aa) da la proporción genotípica mendeliana clásica 1 AA : 2 Aa : 1 aa."
+    },
+    {
+      "pregunta": "En un organismo diploide con 2n = 40 cromosomas, al finalizar la primera división meiótica (Telofase I) cada polo celular contendrá:",
+      "opciones": [
+        "40 cromosomas constituidos por una sola cromátida.",
+        "20 cromosomas constituidos por dos cromátidas hermanas.",
+        "20 cromosomas constituidos por una sola cromátida.",
+        "40 cromosomas constituidos por dos cromátidas hermanas."
+      ],
+      "correcta": "B",
+      "explicacion": "La meiosis I es reduccional, por lo que separa los 20 pares de homólogos hacia los polos; cada uno de los 20 cromosomas conserva sus dos cromátides."
+    },
+    {
+      "pregunta": "En la estructura de un gen eucarionte, un intrón se define como una secuencia que:",
+      "opciones": [
+        "se transcribe a pre-ARNm pero no se traduce a proteína.",
+        "se transcribe a pre-ARNm y posteriormente se traduce.",
+        "no se transcribe pero se traduce directamente.",
+        "permanece inactiva sin transcribirse ni traducirse."
+      ],
+      "correcta": "A",
+      "explicacion": "Los intrones son transcriptos dentro del ARN heterogéneo nuclear pero luego son escindidos por el espliceosoma antes de la traducción."
+    },
+    {
+      "pregunta": "El operón lactosa de bacterias se encuentra sujeto a control positivo cuando:",
+      "opciones": [
+        "la glucosa es la única fuente de carbono disponible.",
+        "ausentan simultáneamente la glucosa y la lactosa.",
+        "los niveles de AMPc en el citoplasma son elevados.",
+        "el represor permanece unido al operador."
+      ],
+      "correcta": "C",
+      "explicacion": "El control positivo requiere que la proteína CAP se una al AMPc (cuyo nivel aumenta al disminuir la glucosa) para estimular fuertemente la transcripción del operón."
+    },
+    {
+      "pregunta": "Una célula haploide con n = 8 cromosomas puede originarse directamente a partir de:",
+      "opciones": [
+        "una célula diploide 2n = 8 que sufre meiosis reduccional.",
+        "una célula diploide 2n = 16 que sufre mitosis.",
+        "una célula haploide n = 16 que sufre meiosis.",
+        "una célula haploide n = 8 que se divide por mitosis."
+      ],
+      "correcta": "D",
+      "explicacion": "La mitosis es una división conservativa que mantiene exactamente la dotación y cantidad cromosómica de la célula progenitora (n -> n)."
+    },
+    {
+      "pregunta": "En una célula con complemento 2n = 24 se verifica la presencia de:",
+      "opciones": [
+        "24 cromosomas completamente diferentes en forma.",
+        "12 pares de cromosomas homólogos.",
+        "24 pares de cromosomas homólogos.",
+        "12 cromosomas duplicados."
+      ],
+      "correcta": "B",
+      "explicacion": "Una célula diploide (2n) organiza su material genético en pares equivalentes; si 2n = 24, cuenta con 12 pares de homólogos."
+    },
+    {
+      "pregunta": "En una célula con 2n = 10, la fase G2 de la interfase se caracteriza por presentar:",
+      "opciones": [
+        "20 moléculas de ADN en estado de cromatina.",
+        "20 moléculas de ADN condensadas en cromosomas visibles.",
+        "10 moléculas de ADN condensadas en cromosomas visibles.",
+        "10 moléculas de ADN en estado de cromatina."
+      ],
+      "correcta": "A",
+      "explicacion": "Tras la duplicación del ADN en la fase S, la célula en G2 contiene 20 moléculas de ADN (cromátides dobles) aún descondensadas como cromatina."
+    },
+    {
+      "pregunta": "En el linaje germinal masculino, un espermatocito II se caracteriza por poseer:",
+      "opciones": [
+        "2n cromosomas formados por dos cromátides hermanas.",
+        "n cromosomas formados por dos cromátides hermanas.",
+        "2n cromosomas formados por una cromátida simple.",
+        "n cromosomas formados por una cromátida simple."
+      ],
+      "correcta": "B",
+      "explicacion": "El espermatocito secundario surge de la meiosis I, por lo que es una célula haploide (n) con sus cromosomas aún duplicados en dos cromátides."
+    },
+    {
+      "pregunta": "Durante la profase I de la meiosis, los ovocitos primarios contienen:",
+      "opciones": [
+        "2n cromosomas constituidos por dos cromátides cada uno.",
+        "n cromosomas constituidos por dos cromátides cada uno.",
+        "n cromosomas constituidos por una sola cromátida.",
+        "2n cromosomas constituidos por una sola cromátida."
+      ],
+      "correcta": "A",
+      "explicacion": "Los ovocitos I son células diploides (2n) que han replicado su ADN en la interfase previa, ingresando a profase I con cromosomas dobles."
+    },
+    {
+      "pregunta": "Durante la espermatogénesis humana, en la anafase II ocurre la:",
+      "opciones": [
+        "separación de los cromosomas homólogos.",
+        "separación de las cromátides hermanas hacia los polos.",
+        "transformación de espermátides en espermatozoides.",
+        "duplicación previa del material genético."
+      ],
+      "correcta": "B",
+      "explicacion": "En la anafase II meiótica se rompen las uniones de cohesina centromérica y se separan las cromátides hermanas hacia los polos opuestos."
+    },
+    {
+      "pregunta": "El mecanismo de entrecruzamiento o crossing-over promueve la variabilidad genética porque permite:",
+      "opciones": [
+        "el intercambio de segmentos de ADN entre cromátidas no hermanas de cromosomas homólogos.",
+        "el intercambio de ADN entre cromosomas no homólogos.",
+        "la separación estocástica de autosomas en la anafase.",
+        "la inducción de mutaciones cromosómicas estructurales."
+      ],
+      "correcta": "A",
+      "explicacion": "El crossing-over rompe y liga segmentos equivalentes entre homólogos paternos y maternos durante la profase I meiótica."
+    },
+    {
+      "pregunta": "Una mujer de pelo oscuro (Mm) y grupo sanguíneo O (00) tiene un hijo de pelo claro (mm) y grupo A (A0). El genotipo materno y el del hijo son respectivamente:",
+      "opciones": [
+        "Mujer MM00 y Hijo mmA0",
+        "Mujer Mm00 y Hijo mmA0",
+        "Mujer MmA0 y Hijo MmA0",
+        "Mujer MM00 y Hijo MmA0"
+      ],
+      "correcta": "B",
+      "explicacion": "Para tener un hijo claro (mm), la madre debe ser heterocigota (Mm). Siendo la madre de grupo O (00), aporta el alelo O al hijo (A0)."
+    },
+    {
+      "pregunta": "El huso mitótico presente durante la división celular se define como:",
+      "opciones": [
+        "una red citoplásmica rígida que otorga la forma celular.",
+        "un sistema de vesículas membranosas provenientes de la envoltura nuclear.",
+        "una estructura proteica formada por microtúbulos que guía la separación de los cromosomas.",
+        "un complejo de filamentos de actina encargado de la citocinesis."
+      ],
+      "correcta": "C",
+      "explicacion": "El huso mitótico está constituido por microtúbulos polares, cinetocóricos y astrales que mueven de forma coordinada a los cromosomas."
+    },
+    {
+      "pregunta": "El principal punto de regulación o restricción del ciclo celular eucarionte opera en la transición de:",
+      "opciones": [
+        "fase G1 a fase G2.",
+        "fase G1 a mitosis.",
+        "fase G1 a fase S.",
+        "fase G2 a fase G1."
+      ],
+      "correcta": "C",
+      "explicacion": "El punto de restricción en G1/S evalúa si la célula reúne las condiciones necesarias para iniciar la replicación del ADN."
+    },
+    {
+      "pregunta": "Los genes ubicados sobre el mismo cromosoma que no segregan de forma independiente pueden separarse mediante:",
+      "opciones": [
+        "fecundación.",
+        "mitosis.",
+        "crossing-over o entrecruzamiento.",
+        "transducción."
+      ],
+      "correcta": "D",
+      "explicacion": "El entrecruzamiento en profase I meiótica permite la recombinación entre loci ligados produciendo combinaciones alélicas nuevas."
+    },
+    {
+      "pregunta": "En el proceso de ovogénesis, la reducción de la cantidad de cromosomas a la mitad sucede entre:",
+      "opciones": [
+        "la ovogonia y el ovocito primario.",
+        "el ovocito primario y el ovocito secundario.",
+        "el ovocito secundario y el óvulo.",
+        "el momento de la ovulación y la fecundación."
+      ],
+      "correcta": "B",
+      "explicacion": "La meiosis I transforma el ovocito primario (2n) en un ovocito secundario haploide (n) y el primer cuerpo polar."
+    },
+    {
+      "pregunta": "Un hombre con visión normal se casa con una mujer sana (padre daltónico). Su hija Penélope tiene un hijo varón daltónico. Esto demuestra que:",
+      "opciones": [
+        "los abuelos nunca pudieron tener descendientes normales.",
+        "todos los hijos de Penélope serán daltónicos.",
+        "la abuela materna era portadora del alelo de daltonismo.",
+        "el abuelo materno transmitió el daltonismo a sus nietas."
+      ],
+      "correcta": "C",
+      "explicacion": "Para que Penélope transmita el daltonismo a su hijo, debió recibir el cromosoma X afectado de su madre (la abuela), quien actuaba como portadora."
+    },
+    {
+      "pregunta": "En las células eucariontes, durante la fase S del ciclo celular ocurre:",
+      "opciones": [
+        "la síntesis acelerada de histonas junto a la duplicación del ADN.",
+        "la separación de los ADN recién duplicados.",
+        "la condensación y diferenciación inicial del ADN.",
+        "la detención completa de la transcripción."
+      ],
+      "correcta": "A",
+      "explicacion": "La fase S acopla la replicación del genoma con la traducción de histonas requeridas para empaquetar las nuevas cadenas de ADN."
+    },
+    {
+      "pregunta": "Al observar una célula de origen 2n = 10 durante la metafase II meiótica se visualizarán:",
+      "opciones": [
+        "10 cromosomas duplicados.",
+        "10 cromosomas simples.",
+        "5 cromosomas duplicados.",
+        "5 cromosomas simples."
+      ],
+      "correcta": "C",
+      "explicacion": "Tras la meiosis I, la célula es haploide (n = 5), alineando en la placa metafásica de la meiosis II 5 cromosomas dobles."
+    },
+    {
+      "pregunta": "Una célula somática diploide (2n = 8) al encontrarse en la fase G1 de la interfase contendrá:",
+      "opciones": [
+        "8 cromosomas y 16 cromátides.",
+        "4 cromosomas y 8 cromátides.",
+        "8 cromosomas y 8 cromátides.",
+        "16 cromosomas y 16 cromátides."
+      ],
+      "correcta": "C",
+      "explicacion": "En la fase G1 previa a la replicación, la célula posee 8 cromosomas no duplicados, lo que equivale a 8 cromátides en total."
+    },
+    {
+      "pregunta": "Si una mujer de grupo A (A0) y un hombre de grupo B (B0) tienen un hijo de grupo O (00), la probabilidad de que su siguiente hijo sea también grupo O es de:",
+      "opciones": [
+        "0",
+        "1/2",
+        "1/4",
+        "3/4"
+      ],
+      "correcta": "C",
+      "explicacion": "En el cruce A0 x B0, la combinación genotípica 00 tiene una probabilidad constante de 1/4 (25%) en cada concepción."
+    },
+    {
+      "pregunta": "Dos padres cuyo fenotipo es el factor Rh+ pueden concebir un hijo con sangre factor Rh- (recesivo) si:",
+      "opciones": [
+        "ambos padres son heterocigotas.",
+        "ambos padres son homocigotas recesivos.",
+        "ambos padres son homocigotas dominantes.",
+        "uno es homocigota dominante y el otro es heterocigota."
+      ],
+      "correcta": "A",
+      "explicacion": "El rasgo recesivo Rh- solo puede reaparecer en la descendencia si ambos progenitores de fenotipo Rh+ llevan el alelo recesivo en heterocigosis."
+    },
+    {
+      "pregunta": "En uno de los polos de una célula 2n = 16 al concluir la Telofase II de la meiosis se encontrarán:",
+      "opciones": [
+        "16 cromosomas simples.",
+        "8 cromosomas formados por una sola cromátida.",
+        "8 cromosomas formados por dos cromátides hermanas.",
+        "4 cromosomas formados por dos cromátides."
+      ],
+      "correcta": "B",
+      "explicacion": "Al concluir la meiosis II, cada núcleo hijo recibe un juego haploide (n = 8) integrado por cromosomas simples no duplicados."
+    },
+    {
+      "pregunta": "Respecto a la división celular en plantas superiores y animales, es correcto afirmar que:",
+      "opciones": [
+        "en células animales no se desintegra la envoltura nuclear.",
+        "en las células vegetales se forma el huso acromático anastral a pesar de carecer de centríolos.",
+        "la citocinesis en vegetales ocurre por estrangulamiento del anillo de actina.",
+        "las células vegetales no forman huso mitótico."
+      ],
+      "correcta": "D",
+      "explicacion": "Las plantas superiores organizan sus husos acromáticos anastrales desde centros organizadores de microtúbulos desprovistos de centríolos."
+    },
+    {
+      "pregunta": "El mecanismo de selección natural expuesto por Darwin en la teoría de la evolución se basa en:",
+      "opciones": [
+        "la fuerza vital adaptativa presente en los tejidos.",
+        "la tendencia celular interna hacia el perfeccionamiento.",
+        "la reproducción y supervivencia diferencial de los individuos mejor adaptados al entorno.",
+        "la transmisión hereditaria del uso y desuso muscular."
+      ],
+      "correcta": "C",
+      "explicacion": "La selección natural favorece la reproducción de variantes con rasgos heredables que confieren mayor adecuación biológica o fitness."
+    },
+    {
+      "pregunta": "La Teoría Neutralista de la evolución molecular sostiene fundamentalmente que:",
+      "opciones": [
+        "solo se conservan aquellas mutaciones con un alto valor adaptativo.",
+        "la mayoría de los cambios a nivel molecular corresponden a alelos neutros fijados por deriva génica.",
+        "las mutaciones ocurren exclusivamente en secuencias reguladoras.",
+        "todas las mutaciones son perjudiciales para el organismo."
+      ],
+      "correcta": "B",
+      "explicacion": "Según Motoo Kimura, la mayoría de las mutaciones a nivel molecular no son ventajosas ni perjudiciales, fijándose por deriva azarosa."
+    },
+    {
+      "pregunta": "La Teoría Sintética de la evolución o Neodarwinismo sostiene que:",
+      "opciones": [
+        "las mutaciones con valor adaptativo son preservadas por la selección natural aumentando su frecuencia.",
+        "las frecuencias génicas varían sin relación con la presión ambiental.",
+        "los caracteres adquiridos en vida se transmiten a la descendencia.",
+        "los saltos macroevolutivos no dependen de pequeñas mutaciones."
+      ],
+      "correcta": "A",
+      "explicacion": "La teoría sintética fundamenta el cambio evolutivo en la selección natural actuando sobre mutaciones génicas dentro de las poblaciones."
+    },
+    {
+      "pregunta": "El concepto de \"reloj molecular\" utilizado en la biología evolutiva se basa en que:",
+      "opciones": [
+        "la tasa constante de mutaciones en secuencias permite estimar el tiempo de divergencia entre especies.",
+        "las mutaciones nucleotídicas no suceden al azar en la población.",
+        "las secuencias de ARN no acumulan sustituciones evolutivas.",
+        "las tasas de cambio varían erráticamente imposibilitando su datación."
+      ],
+      "correcta": "A",
+      "explicacion": "Suponiendo una acumulación constante de mutaciones neutras a lo largo del tiempo, la cantidad de diferencias permite calibrar la divergencia entre especies."
+    },
+    {
+      "pregunta": "Un operón bacteriano se define como un conjunto de genes que:",
+      "opciones": [
+        "se transcriben juntos bajo el control de un único promotor participando en una misma vía metabólica.",
+        "codifican individualmente para ARN mensajeros monocistrónicos independientes.",
+        "regulan exclusivamente la segregación cromosómica bacteriana.",
+        "intervienen en la formación de la pared celular en eucariontes."
+      ],
+      "correcta": "A",
+      "explicacion": "Un operón es una unidad funcional procarionte donde varios genes de una ruta metabólica se expresan en un único transcripto policistrónico."
+    },
+    {
+      "pregunta": "El proceso de autoduplicación del ADN se caracteriza por ser:",
+      "opciones": [
+        "no conservativo, unidireccional y exergónico.",
+        "semiconservativo, bidireccional y anabólico.",
+        "semiconservativo, unidireccional y catabólico.",
+        "conservativo, bidireccional y endergónico."
+      ],
+      "correcta": "B",
+      "explicacion": "La replicación sintetiza cadenas de nucleótidos (anabolismo) conservando una hebra molde (semiconservativa) y avanzando en ambas direcciones desde el origen."
+    },
+    {
+      "pregunta": "Es un rasgo característico de la expresión génica en células procariontes:",
+      "opciones": [
+        "el empaquetamiento del ADN mediante nucleosomas de histonas.",
+        "el procesamiento de intrones mediante splicing alternativo.",
+        "la adición de la capuchón 5' y la cola poli-A.",
+        "la síntesis de ARNm policistrónico y la traducción cotranscripcional."
+      ],
+      "correcta": "D",
+      "explicacion": "En bacterias, la falta de envoltura nuclear permite que los ribosomas comiencen a traducir el ARNm policistrónico mientras aún se transcribe."
+    },
+    {
+      "pregunta": "La región del ADN denominada promotor consiste en una secuencia de:",
+      "opciones": [
+        "ribonucleótidos requeridos para la traducción.",
+        "desoxirribonucleótidos que interactúan con factores para regular el inicio de la transcripción.",
+        "ribonucleótidos esenciales para la elongación del ARNm.",
+        "aminoácidos que guían a la ARN polimerasa."
+      ],
+      "correcta": "B",
+      "explicacion": "El promotor es un segmento de desoxirribonucleótidos en la región reguladora del gen donde se acopla la maquinaria de transcripción."
+    },
+    {
+      "pregunta": "Durante la transcripción de las células, la energía para formar las uniones fosfodiéster en el ARN es provista por:",
+      "opciones": [
+        "únicamente moléculas de ATP libres en el citosol.",
+        "la hidrólisis del pirofosfato de cada ribonucleótido trifosfatado entrante.",
+        "la actividad exergónica de la ADN ligasa.",
+        "desoxirribonucleótidos libres en el núcleo."
+      ],
+      "correcta": "B",
+      "explicacion": "Cada ribonucleótido trifosfato (ATP, UTP, GTP, CTP) aporta en la escisión de su grupo pirofosfato la energía para su propia incorporación."
+    },
+    {
+      "pregunta": "A diferencia de las células eucariontes, los genes codificantes en bacterias se caracterizan por:",
+      "opciones": [
+        "presentar múltiples intrones y exones.",
+        "carecer de intrones y contener secuencias continuas para una o varias proteínas.",
+        "traducirse dentro del nucléolo bacteriano.",
+        "requerir el procesamiento de corte y empalme."
+      ],
+      "correcta": "B",
+      "explicacion": "Los genes bacterianos estándar no poseen secuencias intrónicas intercaladas, presentando marcos abiertos de lectura continuos."
+    },
+    {
+      "pregunta": "La mutación puntual por inserción de un solo nucleótido dentro de la secuencia de un exón provoca:",
+      "opciones": [
+        "un alteración o corrimiento del marco de lectura traduccional.",
+        "una mutación silenciosa que conserva la proteína.",
+        "la duplicación completa del cromosoma afectado.",
+        "la eliminación directa del promotor génico."
+      ],
+      "correcta": "A",
+      "explicacion": "Al no ser múltiplo de tres, la adición de una base altera la agrupación de los codones siguientes cambiando la secuencia proteica completa."
+    },
+    {
+      "pregunta": "Decimos que el código genético no es ambiguo debido a que:",
+      "opciones": [
+        "cada codón específico codifica exclusivamente para un solo aminoácido determinado.",
+        "un mismo codón puede traducir múltiples aminoácidos según el tejido.",
+        "varios codones pueden codificar el mismo aminoácido.",
+        "varía sustancialmente entre procariontes y eucariontes."
+      ],
+      "correcta": "A",
+      "explicacion": "La no ambigüedad del código significa que cada triplete o codón representa una y solo una señal o aminoácido en la traducción."
+    },
+    {
+      "pregunta": "Durante la traducción, el ribosoma realiza la lectura de los codones del ARNm en dirección:",
+      "opciones": [
+        "5' a 3' a partir del codón de inicio AUG.",
+        "3' a 5' a partir del codón de inicio AUG.",
+        "5' a 3' de forma independiente a la presencia de codones de inicio.",
+        "3' a 5' reconociendo la cola de poliadeninas."
+      ],
+      "correcta": "A",
+      "explicacion": "La maquinaria de traducción se ensambla en el extremo 5' del ARNm y se desplaza en sentido 5'->3' iniciando la fase abierta en el codón AUG."
+    },
+    {
+      "pregunta": "Si en un preparado citogenético humano se observan 23 cromosomas duplicados alineados en el plano ecuatorial, la célula está en:",
+      "opciones": [
+        "Metafase de la mitosis.",
+        "Metafase I de la meiosis.",
+        "Metafase II de la meiosis.",
+        "Profase I de la meiosis."
+      ],
+      "correcta": "C",
+      "explicacion": "La presencia de 23 cromosomas (número haploide humano) formados por dos cromátides y alineados en el ecuador es característica de la metafase II."
+    },
+    {
+      "pregunta": "La proteína represora activa del operón lactosa en E. coli es codificada por:",
+      "opciones": [
+        "el gen regulador (lacI).",
+        "los genes estructurales (lacZ, lacY).",
+        "la secuencia del operador.",
+        "la ARN polimerasa."
+      ],
+      "correcta": "A",
+      "explicacion": "El gen regulador lacI produce constitutivamente la proteína represora que, en ausencia de alolactosa, se une al operador."
+    },
+    {
+      "pregunta": "La orientación y separación independiente de los cromosomas homólogos durante la meiosis contribuye a:",
+      "opciones": [
+        "reducir la variabilidad genotípica de las gametas.",
+        "incrementar la variabilidad genética porque ocurre de manera aleatoria.",
+        "mantener la identidad cromosómica materna en todos los óvulos.",
+        "evitar la recombinación genética."
+      ],
+      "correcta": "B",
+      "explicacion": "La segregación al azar de los pares homólogos paternos y maternos en anafase I genera combinaciones cromosómicas haploides diversas."
+    },
+    {
+      "pregunta": "Para realizar el cariotipo de una especie animal, las células del cultivo deben bloquearse mediante drogas en la etapa de:",
+      "opciones": [
+        "fase S de la interfase.",
+        "fase G1 de la interfase.",
+        "metafase mitótica.",
+        "telofase de la división."
+      ],
+      "correcta": "D",
+      "explicacion": "Se utilizan reactivos como la colchicina para detener a las células en metafase, momento de mayor condensación y visibilidad de los cromosomas."
+    },
+    {
+      "pregunta": "Si en un experimento sobre el operón lactosa ocurre una mutación en el gen regulador que priva al represor de su sitio de unión a la lactosa:",
+      "opciones": [
+        "el represor permanecerá unido al operador de forma constitutiva bloqueando la transcripción.",
+        "la ARN polimerasa transcribirá los genes de forma ilimitada.",
+        "el represor perderá afinidad por la secuencia del operador.",
+        "se acumularán grandes niveles de beta-galactosidasa."
+      ],
+      "correcta": "A",
+      "explicacion": "Al no poder unirse al inductor (lactosa), la proteína represora no sufre el cambio conformacional de inactivación y se mantiene unida al operador."
+    },
+    {
+      "pregunta": "Los ribonucleótidos trifosfatados son moléculas requeridas para la transcripción en:",
+      "opciones": [
+        "tanto células eucariontes como procariontes.",
+        "únicamente bacterias gramnegativas.",
+        "exclusivamente células eucariotas superiores.",
+        "solamente virus de ADN."
+      ],
+      "correcta": "A",
+      "explicacion": "Toda síntesis enzimática de ARN (sea procarionte o eucarionte) utiliza ribonucleótidos trifosfato como unidades monoméricas."
+    },
+    {
+      "pregunta": "La fidelidad en el proceso de traducción proteica depende fundamentalmente de dos pasos de verificación:",
+      "opciones": [
+        "la iniciación y la terminación en el sitio A.",
+        "la activación/aminoacilación correcta del aminoácido y el apareamiento codón-anticodón.",
+        "el desplazamiento del ribosoma y la adición del capuchón.",
+        "la eliminación de intrones y la fosforilación de CDK."
+      ],
+      "correcta": "C",
+      "explicacion": "La precisión traduccional se garantiza al unir el aminoácido al ARNt correcto (aminoacilación) y al aparear fielmente el anticodón con el ARNm."
+    },
+    {
+      "pregunta": "Dada la hebra de ADN codificante (antimolde) orientada 3'-GGCCAGTA-5', la secuencia del transcripto primario de ARN resultante será:",
+      "opciones": [
+        "5'-CCGGGTCAT-3'",
+        "3'-GGCCCAGUA-5'",
+        "5'-CCGGGUCAU-3'",
+        "3'-GGCCCAGTA-5'"
+      ],
+      "correcta": "C",
+      "explicacion": "El ARN presenta la misma orientación y secuencia que la hebra codificante (reemplazando T por U), la cual reordenada en sentido 5'->3' resulta en 5'-CCGGGUCAU-3'."
+    },
+    {
+      "pregunta": "Experimentos in vitro demuestran que un ARNm maduro de origen humano expuesto a ribosomas bacterianos y ARNt de ratón sintetiza:",
+      "opciones": [
+        "una proteína bacteriana.",
+        "una proteína de ratón.",
+        "una proteína de vaca.",
+        "una proteína humana."
+      ],
+      "correcta": "D",
+      "explicacion": "Debido a la universalidad del código genético, la secuencia de codones del ARNm humano determina el orden de aminoácidos independientemente de la especie del ribosoma."
+    },
+    {
+      "pregunta": "Una mutación puntual ocurrida dentro del gen que codifica para una proteína:",
+      "opciones": [
+        "modifica siempre la estructura primaria de la proteína.",
+        "genera inevitablemente una cadena más corta.",
+        "puede resultar silenciosa y no afectar la secuencia de aminoácidos.",
+        "impide la síntesis del ARN mensajero."
+      ],
+      "correcta": "D",
+      "explicacion": "Debido a la degeneración del código genético, un cambio de base puede dar lugar a un codón sinónimo que codifique el mismo aminoácido."
+    },
+    {
+      "pregunta": "La falta de actividad de la enzima ADN ligasa afectará directamente el proceso de replicación impidiendo:",
+      "opciones": [
+        "el correcto apareamiento de bases complementarias.",
+        "la iniciación de la transcripción nucleolar.",
+        "el sellado covalente de los fragmentos de Okazaki en la hebra retrasada.",
+        "la separación de las cadenas por la helicasa."
+      ],
+      "correcta": "C",
+      "explicacion": "La ADN ligasa sella las discontinuidades del esqueleto fosfodiéster entre los fragmentos de ADN sintetizados en la hebra retrasada."
+    },
+    {
+      "pregunta": "Si en un cultivo de bacterias se inhibe selectivamente la ADN polimerasa III, el resultado inmediato será:",
+      "opciones": [
+        "se bloqueará la síntesis continua y discontinua de ambas cadenas de ADN.",
+        "no se desenrollará la doble hélice.",
+        "se impedirá la síntesis de cebadores por la primasa.",
+        "se detendrá la traducción en los ribosomas."
+      ],
+      "correcta": "A",
+      "explicacion": "La ADN polimerasa III es el complejo replicativo principal en procariotas, responsable de elongar tanto la hebra líder como la retrasada."
+    },
+    {
+      "pregunta": "Para la iniciación de la duplicación del ADN celular se requiere la disponibilidad de:",
+      "opciones": [
+        "exclusivamente desoxirribonucleótidos trifosfatados.",
+        "ribonucleótidos y desoxirribonucleótidos monofosfatados.",
+        "ribonucleótidos trifosfatados para los cebadores y desoxirribonucleótidos trifosfatados para la elongación.",
+        "únicamente enzimas topoisomerasas."
+      ],
+      "correcta": "D",
+      "explicacion": "La primasa requiere ribonucleótidos (NTPs) para formar los cebadores de ARN, mientras que las ADN polimerasas consumen desoxirribonucleótidos (dNTPs)."
+    },
+    {
+      "pregunta": "En las bacterias, el operón triptófano se expresará de manera continua y constante si:",
+      "opciones": [
+        "el operador sufre una mutación que le impide interaccionar con el represor.",
+        "el promotor no es reconocido por la ARN polimerasa.",
+        "se suministran dosis masivas de triptófano en el medio.",
+        "el represor permanece unido activamente al operador."
+      ],
+      "correcta": "A",
+      "explicacion": "Si el operador no puede ser reconocido por el complejo represor-triptófano, la ARN polimerasa no encuentra impedimentos para transcribir los genes continuamente."
+    },
+    {
+      "pregunta": "Durante la etapa de procesamiento o maduración post-transcripcional del ARNm eucarionte se produce:",
+      "opciones": [
+        "el agregado del capuchón Cap en el extremo 3'.",
+        "la adición de la cola de poliadeninas (poli-A) en el extremo 3'.",
+        "la eliminación enzimática de los exones codificantes.",
+        "la retención de todas las secuencias intrónicas."
+      ],
+      "correcta": "B",
+      "explicacion": "El procesamiento del ARNm incluye la adición de la capuchón 5', el corte y empalme de intrones y la adición de la cola poli-A en el extremo 3'."
+    }
+  ]
+}

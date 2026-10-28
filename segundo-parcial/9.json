@@ -1,0 +1,556 @@
+{
+  "materia": "Biología Celular y Molecular",
+  "tema": "Parciales de Biología (Integrador)",
+  "preguntas": [
+    {
+      "pregunta": "Respecto al metabolismo celular durante el periodo interfásico del ciclo, es correcto afirmar que la célula:",
+      "opciones": [
+        "permanece en un estado de reposo o inactividad metabólica.",
+        "sintetiza proteínas activamente pero es incapaz de duplicar su ADN.",
+        "se mantiene metabólicamente activa y duplica su ADN en la fase S.",
+        "detiene la producción de ATP hasta la fase M."
+      ],
+      "correcta": "C",
+      "explicacion": "La interfase (G1, S, G2) es un período de alta actividad metabólica, crecimiento celular y síntesis, donde en la fase S se duplica el ADN[cite: 9]."
+    },
+    {
+      "pregunta": "Las secuencias genómicas conocidas como elementos transponibles o transposones se definen como:",
+      "opciones": [
+        "fragmentos de ADN capaces de cambiar de posición dentro del genoma.",
+        "secuencias que se heredan exclusivamente por vía materna.",
+        "bloques altamente repetidos de ADN satélite centromérico.",
+        "genes que solo se transcriben durante la meiosis."
+      ],
+      "correcta": "A",
+      "explicacion": "Los transposones son unidades genéticas móviles que pueden transponerse o cambiar de lugar dentro del genoma celular[cite: 9]."
+    },
+    {
+      "pregunta": "El proceso de procesamiento del pre-ARNm denominado splicing o corte y empalme permite:",
+      "opciones": [
+        "la degradación del transcripto en el nucleoplasma.",
+        "la eliminación de los intrones no codificantes y la unión de los exones para obtener un ARNm maduro.",
+        "la adición de una secuencia de poliadeninas en el extremo 5'.",
+        "la traducción directa del pre-ARNm en los ribosomas."
+      ],
+      "correcta": "B",
+      "explicacion": "El splicing remueve de manera precisa las secuencias intrónicas del pre-ARNm y liga las secuencias exónicas para formar el ARNm maduro[cite: 9]."
+    },
+    {
+      "pregunta": "Las modificaciones co- y post-transcripcionales del ARNm en células eucariontes incluyen:",
+      "opciones": [
+        "la adición de la capuchón (Cap 5') en el extremo 5' y una cola de poliadeninas (poli-A) en el extremo 3'.",
+        "la adición de intrones a la secuencia codificante.",
+        "el empaquetamiento del ARN con histonas.",
+        "la eliminación de la secuencia promotora del ADN."
+      ],
+      "correcta": "A",
+      "explicacion": "La maduración del ARNm eucarionte requiere el capping en 5', la poliadenilación en 3' y la eliminación de intrones[cite: 9]."
+    },
+    {
+      "pregunta": "Para sintetizar un polipéptido eucarionte de 150 aminoácidos, la molécula de transcripto primario (pre-ARNm) requerirá de una longitud de:",
+      "opciones": [
+        "exactamente 150 nucleótidos.",
+        "450 nucleótidos sin contar el codón de parada.",
+        "más de 450 nucleótidos al incluir intrones y regiones no traducidas (UTR).",
+        "menos de 300 nucleótidos por la degeneración del código."
+      ],
+      "correcta": "C",
+      "explicacion": "150 aminoácidos exigen 450 nucleótidos codificantes; al sumarse los intrones y las regiones 5' y 3' UTR, el transcripto primario supera los 450 nucleótidos[cite: 9]."
+    },
+    {
+      "pregunta": "Las secuencias reguladoras del ADN conocidas como promotores se caracterizan por:",
+      "opciones": [
+        "ubicarse inmediatamente después del codón de terminación.",
+        "ser secuencias conservadas necesarias para señalizar el sitio e inicio de la transcripción.",
+        "traducirse junto con el primer exón del gen.",
+        "sintetizar los cebadores de ARN durante la replicación."
+      ],
+      "correcta": "B",
+      "explicacion": "El promotor es la región reguladora del ADN reconocida por la maquinaria transcripcional para posicionar a la ARN polimerasa e iniciar la transcripción[cite: 9]."
+    },
+    {
+      "pregunta": "La adición de la capuchón o Cap 5' al extremo 5' del pre-ARNm eucarionte cumple la función de:",
+      "opciones": [
+        "marcar el sitio de terminación de la transcripción.",
+        "permitir la formación del complejo de iniciación para la traducción y proteger la molécula.",
+        "codificar para los primeros aminoácidos de la proteína.",
+        "unir el ARNm a la lámina nuclear."
+      ],
+      "correcta": "B",
+      "explicacion": "El Cap 5' es reconocido por los factores de iniciación de la traducción en el citosol y protege al ARNm de la degradación por exonucleasas 5'->3'[cite: 9]."
+    },
+    {
+      "pregunta": "Un codón se define como un triplete de nucleótidos consecutivos presente en la estructura del:",
+      "opciones": [
+        "ARN de transferencia (ARNt).",
+        "ARN ribosomal (ARNr).",
+        "ARN mensajero (ARNm).",
+        "ADN centromérico."
+      ],
+      "correcta": "C",
+      "explicacion": "Los codones son los tripletes de bases nitrogenadas del ARNm que especifican un aminoácido o una señal de parada durante la traducción[cite: 9]."
+    },
+    {
+      "pregunta": "En un gen eucarionte, la región denominada exón se caracteriza por ser un segmento que:",
+      "opciones": [
+        "se transcribe a pre-ARNm y permanece en la molécula madura traducible.",
+        "no se transcribe pero se traduce directamente.",
+        "se elimina del pre-ARNm mediante el espliceosoma.",
+        "permanece inactivo en la heterocromatina."
+      ],
+      "correcta": "A",
+      "explicacion": "Los exones son las secuencias génicas que se conservan en el ARNm procesado tras la remoción de los intrones durante el splicing[cite: 9]."
+    },
+    {
+      "pregunta": "Se afirma que el código genético es degenerado o redundante debido a que:",
+      "opciones": [
+        "un mismo codón puede codificar para varios aminoácidos distintos.",
+        "más de un codón puede codificar para el mismo aminoácido.",
+        "su secuencia varía entre organismos procariotas y eucariotas.",
+        "contiene codones que no pueden ser leídos por los ribosomas."
+      ],
+      "correcta": "B",
+      "explicacion": "Existe más de un codón (codones sinónimos) para la mayoría de los aminoácidos, lo que define la degeneración del código genético[cite: 9]."
+    },
+    {
+      "pregunta": "A diferencia de los ARNm eucariontes, las moléculas de ARNm en células procariontes se caracterizan por ser:",
+      "opciones": [
+        "policistrónicas y traducirse de forma cotranscripcional.",
+        "monocistrónicas y sufrir un extenso splicing postranscripcional.",
+        "traducidas exclusivamente dentro del núcleo celular.",
+        "poseer largas colas de poliadeninas en su extremo 3'."
+      ],
+      "correcta": "A",
+      "explicacion": "Los ARNm bacterianos suelen ser policistrónicos (codifican varias proteínas) y se traducen de forma simultánea a la transcripción al carecer de núcleo[cite: 9]."
+    },
+    {
+      "pregunta": "La enzima encargada de catalizar la unión covalente entre un aminoácido específico y su correspondiente ARNt es la:",
+      "opciones": [
+        "Peptidasa señal.",
+        "Aminoacil-ARNt sintetasa.",
+        "Peptidil transferasa.",
+        "ARN polimerasa II."
+      ],
+      "correcta": "B",
+      "explicacion": "La aminoacil-ARNt sintetasa reconoce al aminoácido y a su ARNt correspondiente, uniéndolos covalentemente mediante el consumo de ATP[cite: 9]."
+    },
+    {
+      "pregunta": "En las células bacterianas, el proceso de traducción de las proteínas se desarrolla de forma:",
+      "opciones": [
+        "posterior a la maduración y exportación del ARNm.",
+        "simultánea o cotranscripcional a la transcripción del ADN.",
+        "exclusiva en la fase G2 del ciclo celular.",
+        "independiente de la formación de enlaces peptídicos."
+      ],
+      "correcta": "B",
+      "explicacion": "Al no existir una envoltura nuclear que separe la transcripción de la traducción, en procariotas ambos procesos ocurren acoplados en el citoplasma[cite: 9]."
+    },
+    {
+      "pregunta": "Si en un sistema traduccional in vitro se inhibe la actividad de la enzima peptidil transferasa, el resultado inmediato será:",
+      "opciones": [
+        "la imposibilidad de transcribir el ADN a ARN.",
+        "el bloqueo del inicio del ensamblaje ribosomal.",
+        "la detención de la elongación al no poder formarse los enlaces peptídicos.",
+        "la degradación del capuchón 5'."
+      ],
+      "correcta": "C",
+      "explicacion": "La peptidil transferasa (actividad ribozímica del ARNr) cataliza la formación del enlace peptídico en la etapa de elongación; su inhibición detiene la cadena[cite: 9]."
+    },
+    {
+      "pregunta": "En la regulación del operón lactosa en bacterias, la lactosa funciona fisiológicamente como:",
+      "opciones": [
+        "una fuente alternativa de carbono que inactiva a la proteína represora.",
+        "un correpresor que bloquea la unión de la ARN polimerasa.",
+        "un inhibidor de la síntesis del complejo AMPc-CAP.",
+        "una enzima que degrada al operador."
+      ],
+      "correcta": "A",
+      "explicacion": "La alolactosa (derivada de la lactosa) se une al represor lacI modificando su conformación, lo que impide que se acople al operador e induce el operón[cite: 9]."
+    },
+    {
+      "pregunta": "Las secuencias reguladoras del ADN en eucariontes conocidas como intensificadores (enhancers) y silenciadores (silencers) actúan:",
+      "opciones": [
+        "transcribiéndose a moléculas de ARNm funcional.",
+        "uniendo proteínas reguladoras (activadores o represores) para modular la tasa de transcripción sin ser traducidas.",
+        "eliminando intrones del pre-ARNm.",
+        "codificando para las enzimas del huso mitótico."
+      ],
+      "correcta": "B",
+      "explicacion": "Los enhancers y silencers son elementos reguladores en cis en el ADN que se unen a factores de transcripción específicos para aumentar o reducir la transcripción[cite: 9]."
+    },
+    {
+      "pregunta": "Un ARN de transferencia (ARNt) se une al aminoácido correspondiente especificado por su anticodón gracias a:",
+      "opciones": [
+        "la acción catalítica selectiva de la aminoacil-ARNt sintetasa específica.",
+        "la atracción electrostática inespecífica en el ribosoma.",
+        "la secuencia del codón de inicio AUG.",
+        "la degradación previa de la lámina nuclear."
+      ],
+      "correcta": "A",
+      "explicacion": "Cada aminoacil-ARNt sintetasa reconoce de forma exacta tanto el aminoácido como las secuencias determinantes del ARNt correspondiente[cite: 9]."
+    },
+    {
+      "pregunta": "La función principal de las enzimas topoisomerasas durante la replicación del ADN es:",
+      "opciones": [
+        "sintetizar los cebadores de ARN.",
+        "cortar y religar las hebras de ADN para aliviar la tensión de superenrollamiento.",
+        "unir los fragmentos de Okazaki en la hebra retrasada.",
+        "romper los puentes de hidrógeno de la doble hélice."
+      ],
+      "correcta": "B",
+      "explicacion": "Las topoisomerasas alucian el superenrollamiento positivo generado por el avance de la helicasa realizando cortes transitorios en el esqueleto de ADN[cite: 9]."
+    },
+    {
+      "pregunta": "Durante la duplicación del ADN, la enzima ADN polimerasa cataliza la adición de nucleótidos únicamente en dirección:",
+      "opciones": [
+        "3' a 5' sobre la hebra nueva.",
+        "5' a 3' agregando el monómero al extremo 3'-OH libre.",
+        "aleatoria según la fase S.",
+        "3' a 5' en la hebra líder y 5' a 3' en la retrasada."
+      ],
+      "correcta": "B",
+      "explicacion": "Todas las ADN polimerasas conocidas polimerizan en sentido 5'->3', requiriendo un extremo 3'-OH preexistente para formar el enlace fosfodiéster[cite: 9]."
+    },
+    {
+      "pregunta": "El proceso de replicación del ADN en las células eucariontes se define genéricamente como:",
+      "opciones": [
+        "unidireccional, conservativo y con un único origen de replicación.",
+        "bidireccional, semiconservativo y con múltiples orígenes de replicación (ORI).",
+        "no conservativo, dispersivo y dependiente de un solo promotor.",
+        "bidireccional, conservativo y exclusivo de la metafase."
+      ],
+      "correcta": "B",
+      "explicacion": "La replicación eucariota es semiconservativa (conserva una hebra molde), bidireccional desde las horquillas e inicia en múltiples orígenes por cromosoma[cite: 9]."
+    },
+    {
+      "pregunta": "Los fragmentos de Okazaki sintetizados durante la replicación del ADN consisten en:",
+      "opciones": [
+        "segmentos continuos de proteínas nucleares.",
+        "segmentos discontinuos de ADN sintetizados en la hebra retrasada.",
+        "oligonucleótidos de ARN formados por la primasa.",
+        "secuencias repetidas de los telómeros."
+      ],
+      "correcta": "B",
+      "explicacion": "La síntesis de la hebra retrasada ocurre de forma discontinua mediante la formación de pequeños tramos de ADN llamados fragmentos de Okazaki[cite: 9]."
+    },
+    {
+      "pregunta": "Si un individuo se expone a agentes mutagénicos que alteran el ADN, las mutaciones producidas se transmitirán a la descendencia únicamente si afectan a:",
+      "opciones": [
+        "las células del tejido epitelial.",
+        "las células musculares estriadas.",
+        "el ADN de las células de la línea germinal.",
+        "el ARN mensajero citoplásmico."
+      ],
+      "correcta": "C",
+      "explicacion": "Solo las mutaciones presentes en el ADN de las células germinales que originan los gametos se heredan en las siguientes generaciones[cite: 9]."
+    },
+    {
+      "pregunta": "Durante la fase de anafase mitótica se produce la:",
+      "opciones": [
+        "separación de las cromátides hermanas hacia polos opuestos de la célula.",
+        "separación de los cromosomas homólogos hacia polos opuestos.",
+        "desintegración de la envoltura nuclear.",
+        "alineación de los bivalentes en el ecuador."
+      ],
+      "correcta": "A",
+      "explicacion": "En la anafase de la mitosis se escinden los centrómeros y las cromátides hermanas se separan impulsadas por los microtúbulos cinetocóricos[cite: 9]."
+    },
+    {
+      "pregunta": "En una célula germinal con dotación 2n = 12 que atraviesa la profase II de la meiosis, el número de cromosomas presentes es de:",
+      "opciones": [
+        "12 cromosomas duplicados.",
+        "12 cromosomas simples.",
+        "6 cromosomas duplicados.",
+        "6 bivalentes o tétradas."
+      ],
+      "correcta": "D",
+      "explicacion": "Al concluir la meiosis I reduccional, las células resultantes son haploides (n = 6); en profase II contienen 6 cromosomas aún duplicados[cite: 9]."
+    },
+    {
+      "pregunta": "Un cruzamiento de prueba o retrocruza se define en genética experimental como el apareamiento entre:",
+      "opciones": [
+        "un individuo de fenotipo dominante y genotipo desconocido con un individuo de fenotipo recesivo (homocigota recesivo).",
+        "dos individuos heterocigotas de la generación F1.",
+        "un individuo homocigota dominante con otro homocigota dominante.",
+        "dos individuos de fenotipo recesivo."
+      ],
+      "correcta": "A",
+      "explicacion": "El cruzamiento de prueba revela si un organismo con fenotipo dominante es homocigota o heterocigota al cruzarlo con un recesivo[cite: 9]."
+    },
+    {
+      "pregunta": "En el desarrollo de la división celular por mitosis se verifica que:",
+      "opciones": [
+        "genera cuatro células hijas haploides con variabilidad genética.",
+        "produce dos células hijas genéticamente idénticas entre sí y a la célula madre en G1.",
+        "es una división exclusiva de células somáticas diploides.",
+        "requiere obligatoriamente del entrecruzamiento entre homólogos."
+      ],
+      "correcta": "B",
+      "explicacion": "La mitosis es una división conservativa que reparte equitativamente el material duplicado, produciendo dos células genéticamente idénticas[cite: 9]."
+    },
+    {
+      "pregunta": "En una célula diploide con 2n = 4, el número total de cromátides presentes durante la fase G2 de la interfase será de:",
+      "opciones": [
+        "2 cromátides.",
+        "4 cromátides.",
+        "8 cromátides.",
+        "16 cromátides."
+      ],
+      "correcta": "C",
+      "explicacion": "Con 4 cromosomas duplicados en la fase G2, cada uno constituido por 2 cromátides hermanas, la célula suma un total de 8 cromátides[cite: 9]."
+    },
+    {
+      "pregunta": "La función biológica esencial de la división por meiosis en las especies con reproducción sexual es:",
+      "opciones": [
+        "mantener constante el número cromosómico de la especie de generación en generación al reducir la ploidía a la mitad.",
+        "producir células somáticas idénticas para la regeneración tisular.",
+        "duplicar la cantidad de ADN del cigoto.",
+        "eliminar los intrones del genoma."
+      ],
+      "correcta": "A",
+      "explicacion": "Al generar gametas haploides (n), la meiosis compensa la duplicación cromosómica que ocurre durante la fecundación[cite: 9]."
+    },
+    {
+      "pregunta": "En las bacterias, la presencia del aminoácido triptófano en el medio de cultivo provoca:",
+      "opciones": [
+        "la activación de la transcripción de los genes estructurales del operón trp.",
+        "la unión del complejo represor-triptófano al operador, bloqueando la transcripción del operón.",
+        "la degradación de la ARN polimerasa.",
+        "la síntesis constitutiva de enzimas biosintéticas."
+      ],
+      "correcta": "B",
+      "explicacion": "El triptófano actúa como correpresor activando a la proteína represora; el complejo se une al operador e inhibe la transcripción[cite: 9]."
+    },
+    {
+      "pregunta": "La teoría endosimbiótica propuesta para el origen de la célula eucarionte explica la aparición de:",
+      "opciones": [
+        "el complejo de Golgi y el retículo endoplásmico.",
+        "organelas semiautónomas como mitocondrias y cloroplastos a partir de procariontes englobados.",
+        "el huso acromático y los centríolos.",
+        "la lámina nuclear y los poros nucleares."
+      ],
+      "correcta": "B",
+      "explicacion": "La teoría endosimbiótica postula que mitocondrias y cloroplastos evolucionaron a partir de bacterias endosimbiontes fagocitadas por células ancestrales[cite: 9]."
+    },
+    {
+      "pregunta": "Los dos eventos metabólicos y genéticos que resultan exclusivos de las células procariontes son:",
+      "opciones": [
+        "la adición de la capuchón (Cap 5') y la cola de poli-A.",
+        "el procesamiento de intrones (splicing) y la traducción postranscripcional.",
+        "la síntesis de ARNm policistrónicos y la traducción cotranscripcional.",
+        "la presencia de nucleosomas y cromosomas lineales."
+      ],
+      "correcta": "C",
+      "explicacion": "La presencia de operones que producen ARNm policistrónicos y el acoplamiento directo de la traducción a la transcripción son propios de bacterias[cite: 9]."
+    },
+    {
+      "pregunta": "Un gen de origen bacteriano se caracteriza estructuralmente por contener:",
+      "opciones": [
+        "múltiples exones e intrones intercalados.",
+        "información continua para una o varias cadenas polipeptídicas sin intrones.",
+        "secuencias que se procesan por el espliceosoma.",
+        "una cola de poliadeninas codificada en su ADN."
+      ],
+      "correcta": "B",
+      "explicacion": "Los genes bacterianos carecen de intrones en sus marcos de lectura codificantes, presentando secuencias codificantes continuas[cite: 9]."
+    },
+    {
+      "pregunta": "La mutación puntual por inserción de un solo nucleótido dentro de la secuencia de un exón genera como consecuencia:",
+      "opciones": [
+        "un corrimiento o alteración en el marco de lectura traduccional.",
+        "una mutación silenciosa que no altera la proteína.",
+        "la duplicación completa del cromosoma.",
+        "la pérdida inmediata del promotor génico."
+      ],
+      "correcta": "A",
+      "explicacion": "Al no ser múltiplo de tres, la adición de una base desplaza la lectura de los tripletes siguientes, alterando la secuencia aminoacídica de la proteína[cite: 9]."
+    },
+    {
+      "pregunta": "Se afirma que el código genético no es ambiguo debido a que:",
+      "opciones": [
+        "cada codón específico codifica únicamente para un solo aminoácido determinado.",
+        "varios codones pueden codificar para el mismo aminoácido.",
+        "un codón puede especificar diferentes aminoácidos según la célula.",
+        "el código varía ampliamente entre procariotas y eucariotas."
+      ],
+      "correcta": "A",
+      "explicacion": "La no ambigüedad del código significa que cada triplete codificante representa de forma unívoca a un único aminoácido específico[cite: 9]."
+    },
+    {
+      "pregunta": "Durante el proceso de traducción, el ribosoma realiza la lectura de los codones del ARNm en dirección:",
+      "opciones": [
+        "5' a 3' comenzando a partir del codón de inicio AUG.",
+        "3' a 5' reconociendo la cola de poliadeninas.",
+        "5' a 3' de manera independiente de la presencia del codón AUG.",
+        "3' a 5' a partir del sitio de terminación."
+      ],
+      "correcta": "A",
+      "explicacion": "La maquinaria traduccional avanza leyendo la hebra de ARNm en sentido 5'->3', estableciendo la fase de lectura a partir del primer AUG[cite: 9]."
+    },
+    {
+      "pregunta": "Si en una fotomicrografía de una célula humana somática en división se observan 23 cromosomas duplicados alineados en la placa ecuatorial, se trata de una:",
+      "opciones": [
+        "Metafase de la mitosis.",
+        "Metafase I de la meiosis.",
+        "Metafase II de la meiosis.",
+        "Profase I de la meiosis."
+      ],
+      "correcta": "C",
+      "explicacion": "La alineación ecuatorial de 23 cromosomas dobles (número haploide humano n = 23) es característica de la metafase II meiótica[cite: 9]."
+    },
+    {
+      "pregunta": "En el operón lactosa de E. coli, la proteína represora activa es un producto codificado por:",
+      "opciones": [
+        "el gen regulador (lacI).",
+        "los genes estructurales (lacZ, lacY).",
+        "la secuencia del operador.",
+        "la enzima ARN polimerasa."
+      ],
+      "correcta": "A",
+      "explicacion": "El gen regulador lacI transcribe y traduce de forma constitutiva la proteína represora que reconoce la secuencia del operador[cite: 9]."
+    },
+    {
+      "pregunta": "La separación aleatoria de los cromosomas homólogos durante la anafase I meiótica promueve:",
+      "opciones": [
+        "el incremento de la variabilidad genética en las gametas por distribución independiente.",
+        "la conservación estricta de las combinaciones genómicas maternas.",
+        "la formación de células somáticas diploides idénticas.",
+        "el bloqueo de la fecundación."
+      ],
+      "correcta": "A",
+      "explicacion": "La orientación y separación independiente de cada par homólogo genera múltiples combinaciones cromosómicas haploides en las células hijas[cite: 9]."
+    },
+    {
+      "pregunta": "Para la elaboración del cariotipo clínico de una especie, se emplean fármacos que detienen la división celular en la etapa de:",
+      "opciones": [
+        "Interfase G1.",
+        "Fase S.",
+        "Metafase mitótica.",
+        "Telofase II."
+      ],
+      "correcta": "D",
+      "explicacion": "Se utilizan drogas inhibidoras del huso (como la colchicina) para acumular células en metafase, cuando los cromosomas muestran su mayor condensación[cite: 9]."
+    },
+    {
+      "pregunta": "Una célula somática de un organismo diploide con 2n = 10 contendrá durante las fases G1 y G2 de la interfase respectivamente:",
+      "opciones": [
+        "10 moléculas de ADN en G1 y 20 moléculas de ADN en G2.",
+        "5 moléculas de ADN en G1 y 10 moléculas de ADN en G2.",
+        "20 moléculas de ADN en G1 y 20 moléculas de ADN en G2.",
+        "10 moléculas de ADN en G1 y 40 moléculas de ADN en G2."
+      ],
+      "correcta": "A",
+      "explicacion": "En G1 la célula posee 10 cromosomas simples (10 moléculas de ADN); tras la replicación en la fase S, en G2 posee 10 cromosomas dobles (20 moléculas)[cite: 9]."
+    },
+    {
+      "pregunta": "Si en el gen regulador del operón lactosa ocurre una mutación que elimina el sitio de unión para la lactosa en la proteína represora:",
+      "opciones": [
+        "el represor permanecerá unido al operador de forma constitutiva, bloqueando la transcripción.",
+        "la ARN polimerasa transcribirá los genes ilimitadamente.",
+        "el represor perderá afinidad por el operador.",
+        "se acumularán grandes cantidades de ARNm policistrónicos."
+      ],
+      "correcta": "A",
+      "explicacion": "Al no poder unirse al inductor (alolactosa), el represor no sufre el cambio conformacional que lo desengancha del operador, reprimiendo el operón[cite: 9]."
+    },
+    {
+      "pregunta": "En las células de mamíferos, el nucléolo es la estructura subnuclear especializada en:",
+      "opciones": [
+        "la transcripción del ARNr precursor y el ensamblaje de las subunidades ribosómicas.",
+        "la síntesis de proteínas histonas.",
+        "la duplicación semiconservativa del ADN.",
+        "el empaquetamiento del ADN en solesnoides."
+      ],
+      "correcta": "A",
+      "explicacion": "El nucléolo se organiza alrededor de las regiones NOR para transcribir el ARNr 45S, procesarlo y ensamblarlo con las proteínas ribosómicas[cite: 9]."
+    },
+    {
+      "pregunta": "Los anticodones se definen como tripletes de nucleótidos complementarios y antiparalelos presentes en la molécula de:",
+      "opciones": [
+        "ARN mensajero (ARNm).",
+        "ARN ribosomal (ARNr).",
+        "ARN de transferencia (ARNt).",
+        "ADN polimerasa."
+      ],
+      "correcta": "C",
+      "explicacion": "Cada ARNt posee un asa con un anticodón que reconoce específicamente por complementariedad de bases al codón correspondiente del ARNm[cite: 9]."
+    },
+    {
+      "pregunta": "Un mecanismo de regulación de la expresión génica presente tanto en células procariontes como eucariontes es la:",
+      "opciones": [
+        "heterocromatización del ADN.",
+        "remoción de intrones por splicing alternativo.",
+        "unión de proteínas reguladoras específicas a secuencias del ADN.",
+        "exportación regulada a través de poros nucleares."
+      ],
+      "correcta": "C",
+      "explicacion": "En ambos dominios la transcripción se modula mediante la interacción de proteínas reguladoras (represores/activadores) con secuencias específicas del ADN[cite: 9]."
+    },
+    {
+      "pregunta": "Al comparar dos tipos celulares diferenciados de un mismo individuo (como una neurona y una célula miocárdica), se comprueba que difieren en:",
+      "opciones": [
+        "su secuencia primaria de ADN nuclear.",
+        "el conjunto de moléculas de ARN mensajero que expresan.",
+        "el código genético utilizado para traducir proteínas.",
+        "los tipos de bases nitrogenadas de sus genomas."
+      ],
+      "correcta": "B",
+      "explicacion": "Aunque comparten el mismo genoma, las células diferenciadas se distinguen por el perfil de expresión génica, produciendo diferentes ARNm y proteínas[cite: 9]."
+    },
+    {
+      "pregunta": "Dada la cadena de ADN codificante (antimolde) orientada 3'-GGCCAGTA-5', la secuencia del transcripto primario de ARN equivalente será:",
+      "opciones": [
+        "5'-CCGGGTCAT-3'",
+        "3'-GGCCCAGUA-5'",
+        "5'-CCGGGUCAU-3'",
+        "3'-GGCCCAGTA-5'"
+      ],
+      "correcta": "C",
+      "explicacion": "El transcripto de ARN tiene la misma polaridad (5'->3') y secuencia que la cadena codificante reordenada, reemplazando T por U: 5'-CCGGGUCAU-3'[cite: 9]."
+    },
+    {
+      "pregunta": "En una especie con complemento 2n = 24, el número de pares de cromosomas homólogos presentes en sus células somáticas es de:",
+      "opciones": [
+        "24 pares.",
+        "12 pares.",
+        "6 pares.",
+        "48 pares."
+      ],
+      "correcta": "B",
+      "explicacion": "El número diploide 2n = 24 indica que la célula contiene 12 pares de cromosomas homólogos en su núcleo[cite: 9]."
+    },
+    {
+      "pregunta": "En las células germinales masculinas, un espermatocito II se caracteriza por ser una célula:",
+      "opciones": [
+        "diploide con cromosomas simples.",
+        "haploide (n) con sus cromosomas formados por dos cromátides hermanas.",
+        "diploide (2n) con cromosomas duplicados.",
+        "haploide (n) con cromosomas simples."
+      ],
+      "correcta": "B",
+      "explicacion": "El espermatocito II surge de la primera división reduccional de la meiosis, por lo que es haploide (n) pero conserva sus cromosomas dobles[cite: 9]."
+    },
+    {
+      "pregunta": "Durante la fase de profase I de la ovogénesis meiótica, los ovocitos primarios se caracterizan por poseer:",
+      "opciones": [
+        "2n cromosomas constituidos por dos cromátides hermanas cada uno.",
+        "n cromosomas constituidos por dos cromátides.",
+        "n cromosomas con una sola cromátida.",
+        "2n cromosomas simples."
+      ],
+      "correcta": "A",
+      "explicacion": "El ovocito primario es diploide (2n) y ha replicado su ADN en la interfase previa, entrando a profase I con cromosomas duplicados[cite: 9]."
+    },
+    {
+      "pregunta": "El fenómeno de diferenciación morfológica que transforma una espermátida haploide en un espermatozoide funcional se denomina:",
+      "opciones": [
+        "Recombinación meiótica.",
+        "Splicing alternativo.",
+        "Espermiogénesis o diferenciación celular.",
+        "División reduccional."
+      ],
+      "correcta": "C",
+      "explicacion": "La espermiogénesis es el proceso de diferenciación celular que remodela a la espermátida (condensación cromatínica, formación del acrosoma y flagelo) sin divisiones[cite: 9]."
+    }
+  ]
+}
