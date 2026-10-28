@@ -1,0 +1,65 @@
+{
+  "materia": "Biología 2",
+  "tema": "Duplicación de ADN I",
+  "crucigrama": {
+    "titulo": "1 · Fundamentos y estructura",
+    "palabras": [
+      {
+        "respuesta": "HELICASA",
+        "pista": "Enzima que separa las hebras de ADN al abrir la doble hélice."
+      },
+      {
+        "respuesta": "PRIMASA",
+        "pista": "Enzima que sintetiza los cebadores de ARN necesarios para iniciar la síntesis."
+      },
+      {
+        "respuesta": "POLIMERASA",
+        "pista": "Enzima que incorpora nucleótidos complementarios para alargar la hebra nueva."
+      },
+      {
+        "respuesta": "LIGASA",
+        "pista": "Enzima que une fragmentos de ADN mediante enlaces fosfodiéster."
+      },
+      {
+        "respuesta": "OKAZAKI",
+        "pista": "Apellido asociado a los fragmentos sintetizados de forma discontinua en la hebra rezagada."
+      },
+      {
+        "respuesta": "TOPOISOMERASA",
+        "pista": "Enzima que alivia la tensión torsional del ADN por delante de la horquilla de replicación."
+      },
+      {
+        "respuesta": "Cebador",
+        "pista": "Pequeño fragmento inicial que aporta un extremo 3′-OH para comenzar la síntesis de ADN."
+      },
+      {
+        "respuesta": "SEMICONSERVATIVA",
+        "pista": "Propiedad de la replicación en la que cada molécula hija conserva una hebra parental y contiene una nueva."
+      },
+      {
+        "respuesta": "Ori",
+        "pista": "Región del cromosoma donde se inicia la apertura de la cadena y comienza la duplicación del genoma"
+      },
+      {
+        "respuesta": "Fase S",
+        "pista": "Etapa de la interfase celular en la cual se sintetiza una copia completa del material genético"
+      },
+      {
+        "respuesta": "Burbuja",
+        "pista": "Región abierta de la doble hélice que se forma en el sitio de origen y posee dos horquillas"
+      },
+      {
+        "respuesta": "Replicón",
+        "pista": "Segmento de ADN que se copia de manera coordinada a partir de un sitio de inicio individual"
+      },
+      {
+        "respuesta": "Horquilla",
+        "pista": "Estructura en forma de Y donde las cadenas de ADN se separan y progresa la síntesis"
+      }
+    ]
+  },
+  "actividad": [
+    "crucigrama"
+  ],
+  "preguntas": []
+}

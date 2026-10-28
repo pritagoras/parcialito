@@ -7,14 +7,21 @@
 import { estado, guardar, hash } from './store.js?v=dev';
 import { Sonido } from './sonido.js?v=dev';
 import { lanzarConfeti } from './confeti.js?v=dev';
-import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, registrarVisita, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles } from './ranking.js?v=dev';
+import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, registrarVisita, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles, comentariosPublicos, guardarComentarioPublico, enviarReporteGeneral } from './ranking.js?v=dev';
 import { infoDispositivo } from './dispositivo.js?v=dev';
 import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js?v=dev';
 import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js?v=dev';
 import { abrirHorquilla, TITULO as TITULO_HORQUILLA } from './horquilla.js?v=dev';
-import { abrirBases, TITULO as TITULO_BASES } from './bases.js?v=dev';
+import { abrirBases, TITULO as TITULO_BASES } from './bases.js?v=20261027-1';
 import { abrirCrucigrama } from './crucigrama.js?v=dev';
-import { abrirDivision, TITULO as TITULO_DIVISION } from './division.js?v=dev';
+import { abrirOperones, TITULO as TITULO_OPERONES } from './operones.js?v=20261026-9';
+import { abrirComunicacion, TITULO as TITULO_COMUNICACION } from './comunicacion.js?v=20261027-3';
+import { abrirProteinaG, TITULO as TITULO_PROTEINA_G } from './proteina-g.js?v=20261027-2';
+import { abrirLacTrp, TITULO as TITULO_LAC_TRP } from './lac-vs-trp.js?v=20261026-1';
+import { abrirComparadorComunicacion, TITULO as TITULO_COMPARADOR_COMUNICACION } from './comparador-comunicacion.js?v=20261026-1';
+import { abrirComparadores, TITULO as TITULO_COMPARADORES } from './comparadores.js?v=20261026-1';
+import { abrirLab } from './lab.js?v=20261027-22';
+import { abrirTelomeros, TITULO as TITULO_TELOMEROS } from './telomeros.js?v=20261027-1';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -25,7 +32,13 @@ const ACTIVIDADES = {
   cuadro: { titulo: TITULO_CUADRO, icono: '📊', abrir: abrirCuadro },
   horquilla: { titulo: TITULO_HORQUILLA, icono: '🧪', abrir: abrirHorquilla },
   bases: { titulo: TITULO_BASES, icono: '🧬', abrir: abrirBases },
-  division: { titulo: TITULO_DIVISION, icono: '🔬', abrir: abrirDivision },
+  telomeros: { titulo: TITULO_TELOMEROS, icono: '🧢', abrir: abrirTelomeros },
+  operones: { titulo: TITULO_OPERONES, icono: '🧫', abrir: abrirOperones },
+  comunicacion: { titulo: TITULO_COMUNICACION, icono: '⚡', abrir: abrirComunicacion },
+  'proteina-g': { titulo: TITULO_PROTEINA_G, icono: '🧪', abrir: abrirProteinaG },
+  'lac-vs-trp': { titulo: TITULO_LAC_TRP, icono: '🧫', abrir: abrirLacTrp },
+  'comparador-comunicacion': { titulo: TITULO_COMPARADOR_COMUNICACION, icono: '🔁', abrir: abrirComparadorComunicacion },
+  comparadores: { titulo: TITULO_COMPARADORES, icono: '⚖️', abrir: abrirComparadores },
 };
 
 const LETRAS = ['A', 'B', 'C', 'D'];
@@ -65,7 +78,10 @@ function avisar(texto) {
 
 function esCelular() {
   const ua = navigator.userAgent || '';
-  return /iPhone|iPod|Android.*Mobile|Windows Phone|IEMobile|BlackBerry|webOS/i.test(ua);
+  // Chromium reciente ofrece una detección explícita; el patrón clásico cubre
+  // Safari y otros navegadores que no implementan userAgentData.
+  return navigator.userAgentData?.mobile === true ||
+    /iPhone|iPod|Android.*Mobile|Windows Phone|IEMobile|BlackBerry|webOS|Opera Mini/i.test(ua);
 }
 
 function esIOS() {
@@ -85,8 +101,8 @@ window.addEventListener('beforeinstallprompt', (evento) => {
   evento.preventDefault();
   eventoInstalacionPendiente = evento;
 
-  // En Android/Chromium, mostrar el botón solo cuando el navegador habilite
-  // el cuadro de instalación nativo.
+  // Si el aviso nativo aparece después de renderizar el menú, conservar visible
+  // el botón para que pueda abrirlo directamente.
   if (esCelular() && !estaInstalada()) {
     const contenedor = document.querySelector('.instalar-app-wrap');
     if (contenedor) contenedor.hidden = false;
@@ -104,11 +120,15 @@ function mostrarAyudaInstalacionIOS() {
   window.alert('Para instalar Parcialito en tu iPhone:\n\n1. Abrí esta página en Safari.\n2. Tocá Compartir (el cuadrado con la flecha hacia arriba).\n3. Elegí «Añadir a pantalla de inicio».');
 }
 
+function mostrarAyudaInstalacionAndroid() {
+  window.alert('Para instalar Parcialito en tu celular:\n\n1. Abrí el menú del navegador (⋮ o Compartir).\n2. Buscá «Instalar aplicación» o «Añadir a pantalla de inicio».\n3. Confirmá la instalación.\n\nCuando el navegador habilite el aviso nativo, este botón lo abrirá directamente.');
+}
+
 async function instalarParcialito() {
   if (!eventoInstalacionPendiente) {
-    // En iOS no existe una API para abrir el diálogo nativo desde una web.
+    // Si la API de instalación no está disponible, explicar el método manual.
     if (esIOS()) mostrarAyudaInstalacionIOS();
-    else avisar('El navegador todavía no habilitó la instalación directa. Abrí Parcialito en Chrome y volvé a intentarlo.');
+    else mostrarAyudaInstalacionAndroid();
     return;
   }
 
@@ -121,14 +141,12 @@ async function instalarParcialito() {
     if (eleccion?.outcome === 'accepted') {
       avisar('Parcialito se está instalando…');
     } else {
-      // El evento solo se puede usar una vez; se vuelve a mostrar cuando el
-      // navegador habilite un nuevo intento.
-      if (contenedor && !esIOS()) contenedor.hidden = true;
+      // No ocultar el botón: el evento puede volver a estar disponible más tarde,
+      // y si no, el botón ofrece las instrucciones manuales como alternativa.
       avisar('No hay problema. Podés instalarla más adelante.');
     }
   } catch (_) {
-    if (contenedor && !esIOS()) contenedor.hidden = true;
-    avisar('No se pudo abrir la instalación. Volvé a intentarlo cuando el navegador la habilite.');
+    avisar('No se pudo abrir la instalación. Volvé a intentarlo o usá el menú del navegador.');
   }
 }
 
@@ -664,8 +682,9 @@ function vistaInicio() {
         </div>
       </header>
       <p class="bajada">Elegí una materia y practicá con preguntas de opción múltiple.</p>
+      <button class="banner-lab" id="btn-lab" type="button"><span class="banner-lab-icon">🧬</span><span class="banner-lab-text"><strong>LAB <span class="banner-lab-nuevo">NUEVO</span></strong><small>Explorá la biología con modelos interactivos y recorridos guiados.</small></span><span class="banner-lab-flecha">↗</span></button>
       ${estaInstalada() || !esCelular() ? '' : `
-        <div class="instalar-app-wrap" ${!esIOS() && !eventoInstalacionPendiente ? 'hidden' : ''}>
+        <div class="instalar-app-wrap">
           <button class="btn secundario btn-instalar" id="btn-instalar-app" type="button">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.5v11m0 0 4-4m-4 4-4-4M4.5 16v3.5h15V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span>Instalar Parcialito</span>
@@ -684,14 +703,43 @@ function vistaInicio() {
         : `<div class="vacio"><strong>Todavía no hay materias</strong>
              Agregá archivos <code>.json</code> dentro de <code>data/</code> y corré
              <code>python tools/actualizar_indice.py</code>.</div>`}
+      <section class="participacion" aria-label="Comentarios y reportes">
+        <details class="panel-comentarios" id="panel-comentarios">
+          <summary>
+            <svg class="icono-lineal" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H6l-3 2v-9.5A7.5 7.5 0 0 1 10.5 4h2A7.5 7.5 0 0 1 20 11.5Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Comentarios</span>
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m7 10 5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="comentarios-contenido">
+            <p class="participacion-ayuda">Dejá una idea, una duda o un comentario para quienes usan Parcialito.</p>
+            <form id="form-comentario" class="form-participacion">
+              <label class="campo"><span>Tu apodo</span><input id="comentario-apodo" name="apodo" maxlength="20" required placeholder="Ej. BioFan23" autocomplete="nickname"></label>
+              <label class="campo"><span>Comentario</span><textarea id="comentario-texto" name="comentario" maxlength="500" rows="3" required placeholder="¿Qué te gustaría compartir?"></textarea></label>
+              <button class="btn primario" id="comentario-enviar" type="submit">Publicar comentario</button>
+              <p class="participacion-estado" id="comentario-estado" role="status" aria-live="polite"></p>
+            </form>
+            <div class="lista-comentarios" id="lista-comentarios"><p class="estado-ranking">Abrí esta sección para cargar los comentarios…</p></div>
+          </div>
+        </details>
+        <button class="btn reporte-general-boton" id="btn-reporte-general" type="button">
+          <svg class="icono-lineal" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 21V4m0 1c5-4 9 4 14 0v11c-5 4-9-4-14 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Enviar reporte privado</span>
+        </button>
+      </section>
     </main>`;
 
   document.getElementById('btn-sonido').addEventListener('click', alternarSonido);
+  document.getElementById('btn-lab')?.addEventListener('click', () => { Sonido.clic(); abrirLab({ app, volver: vistaInicio }); });
   document.getElementById('btn-instalar-app')?.addEventListener('click', instalarParcialito);
   document.getElementById('btn-errores')?.addEventListener('click', () => { Sonido.clic(); lanzarErrores(); });
   document.getElementById('btn-dificiles')?.addEventListener('click', () => { Sonido.clic(); lanzarDificiles(); });
   document.getElementById('btn-ranking')?.addEventListener('click', () => { Sonido.clic(); vistaRanking(); });
   document.getElementById('btn-apodo')?.addEventListener('click', () => { Sonido.clic(); vistaApodo(); });
+  document.getElementById('panel-comentarios')?.addEventListener('toggle', (e) => {
+    if (e.target.open) cargarComentariosPublicos();
+  });
+  document.getElementById('form-comentario')?.addEventListener('submit', publicarComentario);
+  document.getElementById('btn-reporte-general')?.addEventListener('click', () => { Sonido.clic(); abrirReporteGeneral(); });
   app.querySelectorAll('.materia').forEach((b) =>
     b.addEventListener('click', () => { Sonido.clic(); vistaMateria(Number(b.dataset.materia)); }));
   pintarTarjetasInicio();
@@ -706,6 +754,95 @@ function alternarSonido() {
   Sonido.clic();
 }
 
+// ---------- Participación: comentarios públicos y reportes privados ----------
+
+let comentariosCargando = false;
+
+async function cargarComentariosPublicos() {
+  const caja = document.getElementById('lista-comentarios');
+  if (!caja || comentariosCargando) return;
+  comentariosCargando = true;
+  caja.innerHTML = '<p class="estado-ranking">Cargando comentarios…</p>';
+  try {
+    const filas = await comentariosPublicos();
+    if (!caja.isConnected) return;
+    caja.innerHTML = filas.length ? filas.map((f) => `
+      <article class="comentario-publico">
+        <div class="comentario-cabecera"><strong>${esc(f.apodo)}</strong><time datetime="${esc(f.creado)}">${new Date(f.creado).toLocaleDateString('es-AR', { day: 'numeric', month: 'short', year: 'numeric' })}</time></div>
+        <p>${esc(f.comentario)}</p>
+      </article>`).join('') : '<p class="estado-ranking">Todavía no hay comentarios. ¡Podés ser el primero!</p>';
+  } catch {
+    if (caja.isConnected) caja.innerHTML = '<p class="estado-ranking">No se pudieron cargar los comentarios. Probá de nuevo más tarde.</p>';
+  } finally {
+    comentariosCargando = false;
+  }
+}
+
+async function publicarComentario(e) {
+  e.preventDefault();
+  const form = e.currentTarget;
+  const apodoEl = document.getElementById('comentario-apodo');
+  const textoEl = document.getElementById('comentario-texto');
+  const estadoEl = document.getElementById('comentario-estado');
+  const boton = document.getElementById('comentario-enviar');
+  const apodo = limpiarApodo(apodoEl.value);
+  const comentario = textoEl.value.trim().slice(0, 500);
+  if (!apodo || !comentario) { estadoEl.textContent = 'Completá el apodo y el comentario.'; return; }
+  boton.disabled = true;
+  estadoEl.textContent = 'Publicando…';
+  try {
+    await guardarComentarioPublico({ apodo, comentario });
+    textoEl.value = '';
+    estadoEl.textContent = '¡Comentario publicado!';
+    await cargarComentariosPublicos();
+  } catch {
+    estadoEl.textContent = 'No se pudo publicar. Es posible que falte activar la tabla de comentarios en Supabase.';
+  } finally {
+    boton.disabled = false;
+  }
+}
+
+function abrirReporteGeneral() {
+  const dlg = document.createElement('dialog');
+  dlg.className = 'reporte';
+  dlg.setAttribute('aria-labelledby', 'reporte-general-titulo');
+  dlg.innerHTML = `
+    <h2 id="reporte-general-titulo">Reporte privado</h2>
+    <p class="participacion-ayuda">Este mensaje solo vos, como responsable de Parcialito, podrás revisarlo. No aparecerá en los comentarios públicos.</p>
+    <form id="form-reporte-general" class="form-participacion">
+      <label class="campo"><span>Motivo</span><select id="reporte-general-motivo"><option value="error">Error en la página o una pregunta</option><option value="sugerencia">Sugerencia de mejora</option><option value="tecnico">Problema técnico</option><option value="otro">Otro</option></select></label>
+      <label class="campo"><span>Apodo (opcional)</span><input id="reporte-general-apodo" maxlength="20" placeholder="Tu apodo"></label>
+      <label class="campo"><span>Detalle</span><textarea id="reporte-general-texto" rows="4" maxlength="1000" required placeholder="Contame qué pasó o qué cambiarías"></textarea></label>
+      <p class="participacion-estado" id="reporte-general-estado" role="status" aria-live="polite"></p>
+      <div class="reporte-botones"><button class="btn secundario" id="reporte-general-cancelar" type="button">Cancelar</button><button class="btn primario" id="reporte-general-enviar" type="submit">Enviar en privado</button></div>
+    </form>`;
+  document.body.appendChild(dlg);
+  dlg.addEventListener('close', () => dlg.remove());
+  dlg.querySelector('#reporte-general-cancelar').addEventListener('click', () => dlg.close());
+  dlg.querySelector('#form-reporte-general').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const boton = dlg.querySelector('#reporte-general-enviar');
+    const estadoEl = dlg.querySelector('#reporte-general-estado');
+    boton.disabled = true;
+    estadoEl.textContent = 'Enviando…';
+    try {
+      await enviarReporteGeneral({
+        motivo: dlg.querySelector('#reporte-general-motivo').value,
+        apodo: limpiarApodo(dlg.querySelector('#reporte-general-apodo').value) || null,
+        comentario: dlg.querySelector('#reporte-general-texto').value.trim().slice(0, 1000),
+        pagina: location.pathname.slice(0, 200)
+      });
+      estadoEl.textContent = 'Reporte enviado de forma privada. ¡Gracias!';
+      boton.textContent = 'Enviado';
+      setTimeout(() => { if (dlg.open) dlg.close(); }, 1100);
+    } catch {
+      estadoEl.textContent = 'No se pudo enviar. Es posible que falte activar la tabla de reportes en Supabase.';
+      boton.disabled = false;
+    }
+  });
+  dlg.showModal();
+}
+
 // ---------- Pantalla: materia (elegir temas) ----------
 
 // Actividades disponibles en una materia (sin repetir) según el campo "actividad" de sus temas
@@ -714,7 +851,15 @@ function actividadesDe(m) {
   const lista = [];
   for (const t of m.temas) {
     const claves = [].concat(t.actividad || []);
-    for (const clave of claves) if (ACTIVIDADES[clave]) lista.push({ clave, titulo: ACTIVIDADES[clave].titulo, icono: ACTIVIDADES[clave].icono || '🧩', tema: t });
+    for (const clave of claves) if (ACTIVIDADES[clave] && clave !== 'cuadro') lista.push({ clave, titulo: ACTIVIDADES[clave].titulo, icono: ACTIVIDADES[clave].icono || '🧩', tema: t });
+  }
+  // El laboratorio es una actividad autónoma: aparece una sola vez en las materias de Biología.
+  if (/biolog/i.test((m.id || '') + ' ' + (m.nombre || ''))) {
+    lista.push({ clave: 'operones', titulo: ACTIVIDADES.operones.titulo, icono: ACTIVIDADES.operones.icono, tema: null });
+    lista.push({ clave: 'comunicacion', titulo: ACTIVIDADES.comunicacion.titulo, icono: ACTIVIDADES.comunicacion.icono, tema: null });
+    lista.push({ clave: 'proteina-g', titulo: ACTIVIDADES['proteina-g'].titulo, icono: ACTIVIDADES['proteina-g'].icono, tema: null });
+    const temaCuadro = m.temas.find(t => [].concat(t.actividad || []).includes('cuadro'));
+    if (temaCuadro) lista.push({ clave: 'comparadores', titulo: TITULO_COMPARADORES, icono: '⚖️', tema: temaCuadro });
   }
   return lista;
 }
@@ -731,6 +876,58 @@ function mejorCrucigrama(t) {
     }
   }
   return mejor;
+}
+
+function vistaSelectorJuegos(m, indiceMateria, actividades) {
+  app.innerHTML = `
+    <main class="pantalla">
+      <button class="btn enlace" id="btn-volver-selector">← ${esc(m.nombre)}</button>
+      <div class="titulo-materia"><span class="emoji" aria-hidden="true">🎮</span><h1>Juegos interactivos</h1></div>
+      <p class="bajada">Elegí una actividad para explorar el tema de forma visual e interactiva.</p>
+      <div class="temas selector-juegos">
+        ${actividades.map((a, n) => {
+          const detalle = a.tema ? a.tema.nombre : (a.titulo.includes(':') ? a.titulo.slice(a.titulo.indexOf(':') + 1).trim() : 'Actividad interactiva');
+          return `<button class="tema-cruci" data-juego="${n}">
+            <span class="ic" aria-hidden="true">${esc(a.icono || '🧩')}</span>
+            <span class="cuerpo"><span class="nombre">${esc(a.titulo)}</span><span class="detalle">${esc(detalle)}</span></span>
+            <b aria-hidden="true">▶</b>
+          </button>`;
+        }).join('')}
+      </div>
+    </main>`;
+  document.getElementById('btn-volver-selector').addEventListener('click', () => { Sonido.clic(); vistaMateria(indiceMateria); });
+  app.querySelectorAll('[data-juego]').forEach((b) => b.addEventListener('click', () => {
+    Sonido.clic();
+    const a = actividades[Number(b.dataset.juego)];
+    ACTIVIDADES[a.clave].abrir({ app, volver: () => vistaSelectorJuegos(m, indiceMateria, actividades), tema: a.tema, materia: m });
+  }));
+  window.scrollTo(0, 0);
+}
+
+function vistaSelectorCrucigramas(m, indiceMateria) {
+  const temas = m.temas.filter(tieneCrucigrama);
+  app.innerHTML = `
+    <main class="pantalla">
+      <button class="btn enlace" id="btn-volver-selector">← ${esc(m.nombre)}</button>
+      <div class="titulo-materia"><span class="emoji" aria-hidden="true">🔤</span><h1>Crucigramas</h1></div>
+      <p class="bajada">Elegí el tema del crucigrama que querés resolver.</p>
+      <div class="temas selector-crucigramas">
+        ${temas.map((t, n) => {
+          const rec = mejorCrucigrama(t);
+          return `<button class="tema-cruci" data-crucigrama="${n}">
+            <span class="ic" aria-hidden="true">🔤</span>
+            <span class="cuerpo"><span class="nombre">${esc(t.nombre)}</span><span class="detalle">Completá el tablero con las pistas</span></span>
+            ${rec ? `<span class="mejor">${'★'.repeat(rec.estrellas)}</span>` : '<b aria-hidden="true">▶</b>'}
+          </button>`;
+        }).join('')}
+      </div>
+    </main>`;
+  document.getElementById('btn-volver-selector').addEventListener('click', () => { Sonido.clic(); vistaMateria(indiceMateria); });
+  app.querySelectorAll('[data-crucigrama]').forEach((b) => b.addEventListener('click', () => {
+    Sonido.clic();
+    abrirCrucigrama({ app, volver: () => vistaSelectorCrucigramas(m, indiceMateria), tema: temas[Number(b.dataset.crucigrama)], materia: m });
+  }));
+  window.scrollTo(0, 0);
 }
 
 function vistaMateria(i) {
@@ -768,20 +965,7 @@ function vistaMateria(i) {
         ${mejor ? `<span class="mejor ${mejor.precision >= 80 ? 'alto' : ''}">Mejor ${mejor.precision}%</span>` : ''}
       </label>`;
 
-    let cruci = '';
-    if (tieneCrucigrama(t)) {
-      const rec = mejorCrucigrama(t);
-      cruci = `
-      <button class="tema-cruci ${soloCruci ? 'suelto' : ''}" data-cruci="${n}" style="--c:${color}">
-        <span class="ic" aria-hidden="true">🔤</span>
-        <span class="cuerpo">
-          <span class="nombre">Crucigrama · ${esc(t.nombre)}</span>
-          <span class="detalle">Completá el tablero con las pistas</span>
-        </span>
-        ${rec ? `<span class="mejor">${'★'.repeat(rec.estrellas)}</span>` : '<b aria-hidden="true">▶</b>'}
-      </button>`;
-    }
-    return fila + cruci;
+    return fila;
   }).join('');
 
   const actividades = actividadesDe(m);
@@ -793,8 +977,8 @@ function vistaMateria(i) {
         <span class="emoji" aria-hidden="true">${esc(m.emoji || '📚')}</span>
         <h1>${esc(m.nombre)}</h1>
       </div>
-      ${actividades.map((a, n) => `
-        <button class="banner-repaso" data-actividad="${n}"><span>${a.icono} ${esc(a.titulo.split(':')[0].trim())}<small>${esc([a.titulo.includes(':') ? a.titulo.slice(a.titulo.indexOf(':') + 1).trim() : 'Actividad interactiva', actividades.filter((x) => x.clave === a.clave).length > 1 ? a.tema.nombre : ''].filter(Boolean).join(' · '))}</small></span><b>▶</b></button>`).join('')}
+      ${actividades.length ? `<button class="banner-repaso" id="btn-grupo-juegos"><span>🎮 Juegos interactivos<small>${plural(actividades.length, 'juego disponible', 'juegos disponibles')} · elegí cuál abrir</small></span><b>▶</b></button>` : ''}
+      ${m.temas.some(tieneCrucigrama) ? `<button class="banner-repaso" id="btn-grupo-crucigramas"><span>🔤 Crucigramas<small>${plural(m.temas.filter(tieneCrucigrama).length, 'crucigrama disponible', 'crucigramas disponibles')} · elegí un tema</small></span><b>▶</b></button>` : ''}
       <div class="temas-barra">
         <span>Temas</span>
         <button class="btn enlace" id="btn-todos"></button>
@@ -851,18 +1035,14 @@ function vistaMateria(i) {
     actualizar();
   });
   document.getElementById('btn-volver').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
-  app.querySelectorAll('[data-actividad]').forEach((b) =>
-    b.addEventListener('click', () => {
-      Sonido.clic();
-      const a = actividades[Number(b.dataset.actividad)];
-      ACTIVIDADES[a.clave].abrir({ app, volver: () => vistaMateria(i), tema: a.tema, materia: m });
-    }));
-
-  app.querySelectorAll('[data-cruci]').forEach((b) =>
-    b.addEventListener('click', () => {
-      Sonido.clic();
-      abrirCrucigrama({ app, volver: () => vistaMateria(i), tema: m.temas[Number(b.dataset.cruci)], materia: m });
-    }));
+  document.getElementById('btn-grupo-juegos')?.addEventListener('click', () => {
+    Sonido.clic();
+    vistaSelectorJuegos(m, i, actividades);
+  });
+  document.getElementById('btn-grupo-crucigramas')?.addEventListener('click', () => {
+    Sonido.clic();
+    vistaSelectorCrucigramas(m, i);
+  });
 
   btnEmpezar.addEventListener('click', () => {
     Sonido.clic();

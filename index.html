@@ -6,8 +6,8 @@
   <title>Parcialito: trivia para estudiar</title>
   <meta name="description" content="Practicá con preguntas de opción múltiple por materia y tema, con racha, puntos y sonidos.">
   <meta name="theme-color" content="#170F2E">
-  <link rel="icon" type="image/svg+xml" href="icons/parcialito.svg">
-  <link rel="apple-touch-icon" href="icons/parcialito-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="ico.png">
+  <link rel="apple-touch-icon" href="ico.png">
   <link rel="manifest" href="manifest.json">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Parcialito">
@@ -23,28 +23,46 @@
 
 
   <noscript>Necesitás activar JavaScript para usar Repaso.</noscript>
-  <script type="module" src="js/app.js?v=dev"></script>
+  <script>
+    if ('serviceWorker' in navigator && location.protocol === 'https:') {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js?v=20261027-1', { scope: './' }).catch((error) => {
+          console.warn('[Parcialito] No se pudo registrar el service worker:', error);
+        });
+      });
+    }
+  </script>
+  <script type="module" src="js/app.js?v=20261027-15"></script>
 
 <script id="red-de-seguridad">
 (function () {
+  var detalle = 'No se pudo cargar js/app.js o alguno de sus módulos.';
   function aviso() {
     var app = document.getElementById('app');
     if (!app || app.childElementCount) return;
-    app.innerHTML = '<div style="padding:2rem 1rem;text-align:center;font-family:system-ui,sans-serif;color:#FFF3DC">' +
-      '<p style="margin:0 0 1rem">No se pudo cargar la app. Probablemente tu navegador tiene guardada una versión vieja.</p>' +
-      '<button id="act-ver" style="font:inherit;font-weight:700;padding:.8rem 1.4rem;border-radius:14px;border:0;background:#9B7BFF;color:#120a26">Actualizar</button></div>';
+    app.innerHTML = '<div style="padding:2rem 1rem;text-align:center;font-family:system-ui,sans-serif;color:#FFF3DC;overflow-wrap:anywhere">' +
+      '<p style="margin:0 0 1rem">Parcialito no pudo iniciar. Detecté este problema:</p>' +
+      '<pre style="white-space:pre-wrap;text-align:left;font-size:.85rem;background:#211e31;padding:12px;border-radius:10px">' +
+      detalle.replace(/[&<>]/g, function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];}) + '</pre>' +
+      '<button id="act-ver" style="font:inherit;font-weight:700;padding:.8rem 1.4rem;border-radius:14px;border:0;background:#9B7BFF;color:#120a26">Volver a intentar</button></div>';
     document.getElementById('act-ver').onclick = function () {
       location.replace(location.pathname + '?actualizar=' + Date.now() + location.hash);
     };
   }
-  // Falla de un <script> (archivo viejo/mezclado en caché) o error al ejecutarlo
   window.addEventListener('error', function (e) {
     var t = e && e.target;
-    if (t && t.tagName && t.tagName !== 'SCRIPT') return;   // ignora tipografías, imágenes, etc.
+    if (t && t.tagName && t.tagName !== 'SCRIPT') return;
+    if (e && e.message) detalle = e.message + (e.filename ? '\\nArchivo: ' + e.filename : '') + (e.lineno ? '\\nLínea: ' + e.lineno : '');
     setTimeout(aviso, 300);
   }, true);
+  window.addEventListener('unhandledrejection', function(e) {
+    var r = e && e.reason;
+    detalle = 'Error de módulo: ' + (r && r.message ? r.message : String(r || 'desconocido'));
+    setTimeout(aviso, 300);
+  });
   setTimeout(aviso, 6000);
 })();
 </script>
+<!-- Diagnóstico de inicio: versión 2 -->
 </body>
 </html>

@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-28T00:55:02Z",
+  "generado": "2026-10-26T21:17:54Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -139,10 +139,7 @@
           "id": "biologia-celular2/01-nucleo-interfasico",
           "nombre": "Núcleo interfásico",
           "archivo": "data/biologia-celular2/01-nucleo-interfasico.json",
-          "preguntas": 63,
-          "actividad": [
-            "division"
-          ]
+          "preguntas": 63
         },
         {
           "id": "biologia-celular2/02-transcripcion-test",
@@ -176,53 +173,10 @@
           "preguntas": 42
         },
         {
-          "id": "biologia-celular2/07-duplicacion-adn",
-          "nombre": "Duplicación ADN",
-          "archivo": "data/biologia-celular2/07-duplicacion-adn.json",
-          "preguntas": 45,
-          "actividad": [
-            "replicacion",
-            "cuadro",
-            "horquilla",
-            "bases",
-            "crucigrama"
-          ]
-        },
-        {
-          "id": "biologia-celular2/08-duplicacion-del-adn",
-          "nombre": "Duplicación del ADN I",
-          "archivo": "data/biologia-celular2/08-duplicacion-del-adn.json",
-          "preguntas": 0,
-          "actividad": [
-            "crucigrama"
-          ]
-        },
-        {
-          "id": "biologia-celular2/09-duplicacion-del-adn-ii",
-          "nombre": "Duplicación del ADN II",
-          "archivo": "data/biologia-celular2/09-duplicacion-del-adn-ii.json",
-          "preguntas": 0,
-          "actividad": [
-            "crucigrama"
-          ]
-        },
-        {
-          "id": "biologia-celular2/10-duplicacion-del-adn-iii",
-          "nombre": "Duplicación del ADN III",
-          "archivo": "data/biologia-celular2/10-duplicacion-del-adn-iii.json",
-          "preguntas": 0,
-          "actividad": [
-            "crucigrama"
-          ]
-        },
-        {
-          "id": "biologia-celular2/11-duplicacion-del-adn-iv",
-          "nombre": "Duplicación del ADN IV",
-          "archivo": "data/biologia-celular2/11-duplicacion-del-adn-iv.json",
-          "preguntas": 0,
-          "actividad": [
-            "crucigrama"
-          ]
+          "id": "biologia-celular2/07-duplicacion-del-adn",
+          "nombre": "Duplicación del ADN",
+          "archivo": "data/biologia-celular2/07-duplicacion-del-adn.json",
+          "preguntas": 45
         },
         {
           "id": "biologia-celular2/12-nucleo-interfasico-i",
@@ -261,9 +215,36 @@
           ]
         },
         {
-          "id": "biologia-celular2/16-duplicacion-adn-v",
-          "nombre": "Duplicación ADN V",
-          "archivo": "data/biologia-celular2/16-duplicacion-adn-v.json",
+          "id": "biologia-celular2/16-duplicacion-adn-i",
+          "nombre": "Duplicación de ADN I",
+          "archivo": "data/biologia-celular2/16-duplicacion-adn-i.json",
+          "preguntas": 0,
+          "actividad": [
+            "crucigrama"
+          ]
+        },
+        {
+          "id": "biologia-celular2/17-duplicacion-adn-ii",
+          "nombre": "Duplicación de ADN II",
+          "archivo": "data/biologia-celular2/17-duplicacion-adn-ii.json",
+          "preguntas": 0,
+          "actividad": [
+            "crucigrama"
+          ]
+        },
+        {
+          "id": "biologia-celular2/18-duplicacion-adn-iii",
+          "nombre": "Duplicación de ADN III",
+          "archivo": "data/biologia-celular2/18-duplicacion-adn-iii.json",
+          "preguntas": 0,
+          "actividad": [
+            "crucigrama"
+          ]
+        },
+        {
+          "id": "biologia-celular2/19-duplicacion-adn-iv",
+          "nombre": "Duplicación de ADN IV",
+          "archivo": "data/biologia-celular2/19-duplicacion-adn-iv.json",
           "preguntas": 0,
           "actividad": [
             "crucigrama"

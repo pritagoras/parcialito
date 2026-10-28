@@ -1,9 +1,25 @@
 {
   "materia": "Biología 2",
-  "tema": "Duplicación del ADN II",
+  "tema": "Duplicación de ADN II",
   "crucigrama": {
-    "titulo": "Duplicación del ADN - Conceptos Avanzados",
+    "titulo": "2 · Ciclo celular y organización",
     "palabras": [
+      {
+        "respuesta": "Telómero",
+        "pista": "Estructura con secuencias repetitivas situada en los extremos de los cromosomas lineales para proteger el material genético"
+      },
+      {
+        "respuesta": "Interfase",
+        "pista": "Período del ciclo celular que abarca las etapas G uno, S y G dos previo a la mitosis"
+      },
+      {
+        "respuesta": "Hebra líder",
+        "pista": "Cadena nueva de ADN sintetizada de forma continua en el mismo sentido del avance de la horquilla"
+      },
+      {
+        "respuesta": "Telomerasa",
+        "pista": "Ribonucleoproteína con función de transcriptasa reversa que evita el acortamiento de las regiones extremas del ADN"
+      },
       {
         "respuesta": "SSB",
         "pista": "Moléculas que se unen al ADN monocatenario para estabilizarlo e impedir que se vuelvan a reaparear las hebras"
@@ -29,14 +45,6 @@
         "pista": "Propiedad de la copia genética garantizada por la complementariedad de bases y la corrección de errores de la enzima"
       },
       {
-        "respuesta": "Polimerasa",
-        "pista": "Enzima que cataliza la adición de nucleótidos al extremo tres prima de una cadena en crecimiento"
-      },
-      {
-        "respuesta": "Traducción",
-        "pista": "Proceso donde el ribosoma lee la secuencia del ARN mensajero para sintetizar una cadena polipeptídica"
-      },
-      {
         "respuesta": "Eucariotas",
         "pista": "Organismos cuyo material genético es lineal, está asociado a histonas y presenta múltiples orígenes de replicación"
       },
@@ -45,27 +53,13 @@
         "pista": "Grupo liberado durante la incorporación de cada nucleótido que contribuye energéticamente al avance de la síntesis"
       },
       {
-        "respuesta": "Topoisomerasa",
-        "pista": "Enzima que realiza cortes transitorios para aliviar la tensión torsional generada delante de la horquilla"
-      },
-      {
         "respuesta": "Antiparalelas",
         "pista": "Disposición espacial de las dos hebras del ADN que corren en sentidos opuestos, cinco a tres y tres a cinco"
-      },
-      {
-        "respuesta": "Transcripción",
-        "pista": "Síntesis de un tipo de ácido nucleico de hebra simple a partir de un molde de ADN"
-      },
-      {
-        "respuesta": "Hebra rezagada",
-        "pista": "Cadena nueva sintetizada de forma discontinua mediante fragmentos cortos en sentido opuesto al avance de la horquilla"
       }
     ]
   },
   "actividad": [
     "crucigrama"
   ],
-  "preguntas": [
-
-  ]
+  "preguntas": []
 }

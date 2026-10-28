@@ -58,7 +58,16 @@ def validar_cuadro(c):
 
 
 def validar_crucigrama(c):
-    """Devuelve (errores, avisos) del objeto "crucigrama" (lista de palabras con pistas)."""
+    """Devuelve (errores, avisos) del crucigrama o de una lista de crucigramas."""
+    if isinstance(c, list):
+        errores, avisos = [], []
+        for n, item in enumerate(c, start=1):
+            e, a = validar_crucigrama(item)
+            errores.extend(f"Crucigrama {n}: {x}" for x in e)
+            avisos.extend(f"Crucigrama {n}: {x}" for x in a)
+        if not c:
+            avisos.append("La lista de crucigramas está vacía.")
+        return errores, avisos
     e = "Crucigrama: "
     if not isinstance(c, dict):
         return [e + 'tiene que ser un objeto con "titulo" y "palabras".'], []
@@ -112,7 +121,7 @@ def validar_archivo(ruta: Path):
     elif tarjetas is None:
         tarjetas = []
 
-    tiene_crucigrama = isinstance(datos.get("crucigrama"), dict)
+    tiene_crucigrama = isinstance(datos.get("crucigrama"), (dict, list))
     if not preguntas and not tarjetas and not tiene_crucigrama:
         errores.append('El tema debe contener al menos una pregunta, una tarjeta o un crucigrama.')
         return errores, avisos, 0, datos

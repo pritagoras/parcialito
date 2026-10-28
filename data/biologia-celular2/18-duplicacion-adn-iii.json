@@ -1,9 +1,17 @@
 {
   "materia": "Biología 2",
-  "tema": "Duplicación del ADN III",
+  "tema": "Duplicación de ADN III",
   "crucigrama": {
-    "titulo": "Duplicación del ADN - Variante 3",
+    "titulo": "3 · Moléculas y procesos",
     "palabras": [
+      {
+        "respuesta": "Transcripción",
+        "pista": "Síntesis de un tipo de ácido nucleico de hebra simple a partir de un molde de ADN"
+      },
+      {
+        "respuesta": "Hebra rezagada",
+        "pista": "Cadena nueva sintetizada de forma discontinua mediante fragmentos cortos en sentido opuesto al avance de la horquilla"
+      },
       {
         "respuesta": "ARNt",
         "pista": "Molécula adaptadora que transporta un aminoácido específico hacia el sitio de traducción"
@@ -47,25 +55,11 @@
       {
         "respuesta": "Procariotas",
         "pista": "Organismos cuyo cromosoma circular posee habitualmente un único origen de replicación"
-      },
-      {
-        "respuesta": "Proofreading",
-        "pista": "Término en inglés para la corrección de pruebas realizada por las polimerasas principales"
-      },
-      {
-        "respuesta": "Bidireccional",
-        "pista": "Característica de la replicación que avanza hacia ambos lados desde cada punto de origen"
-      },
-      {
-        "respuesta": "Transcriptasa",
-        "pista": "Tipo de enzima reversa que utiliza un molde de ARN para sintetizar ADN"
       }
     ]
   },
   "actividad": [
     "crucigrama"
   ],
-  "preguntas": [
-
-  ]
+  "preguntas": []
 }
