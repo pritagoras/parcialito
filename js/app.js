@@ -7,7 +7,7 @@
 import { estado, guardar, hash } from './store.js?v=dev';
 import { Sonido } from './sonido.js?v=dev';
 import { lanzarConfeti } from './confeti.js?v=dev';
-import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, registrarVisita, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles, comentariosPublicos, guardarComentarioPublico, enviarReporteGeneral } from './ranking.js?v=dev';
+import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, registrarVisita, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles, comentariosPublicos, guardarComentarioPublico, enviarReporteGeneral } from './ranking.js?v=20261028-1';
 import { infoDispositivo } from './dispositivo.js?v=dev';
 import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js?v=dev';
 import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js?v=dev';
