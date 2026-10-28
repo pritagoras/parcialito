@@ -688,7 +688,7 @@ function vistaInicio() {
         <p class="sp-descripcion">Un lugar destacado para preparar los temas del segundo parcial.</p>
         <button class="sp-tema" id="btn-sp-ciclo" type="button">
           <span class="sp-tema-icono" aria-hidden="true">🧬</span>
-          <span class="sp-tema-texto"><strong>Ciclo celular, mitosis y meiosis</strong><small>5 preguntas · Opción múltiple</small></span>
+          <span class="sp-tema-texto"><strong>Todas las preguntas juntas</strong><small>Opción múltiple</small></span>
           <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
         </button>
       </section>
@@ -754,55 +754,74 @@ function vistaInicio() {
   app.querySelectorAll('.materia').forEach((b) =>
     b.addEventListener('click', () => { Sonido.clic(); vistaMateria(Number(b.dataset.materia)); }));
   pintarTarjetasInicio();
+  pintarResumenSegundoParcial();
 }
 
-function lanzarSegundoParcial() {
-  const temaId = 'segundo-parcial/ciclo-celular-mitosis-meiosis';
-  const base = [
-    {
-      texto: '¿En qué etapa del ciclo celular se duplica el ADN antes de la división?',
-      opciones: ['G1', 'S', 'G2', 'M'], correcta: 1,
-      explicacion: 'La fase S de la interfase es cuando se replica el ADN. Así, cada cromosoma queda formado por dos cromátidas hermanas antes de comenzar la división.'
-    },
-    {
-      texto: '¿Qué se separa durante la anafase I de la meiosis?',
-      opciones: ['Las cromátidas hermanas', 'Los cromosomas homólogos', 'Los nucléolos', 'Los centrómeros de cada cromosoma'], correcta: 1,
-      explicacion: 'En anafase I se separan los cromosomas homólogos. Los centrómeros no se dividen y las cromátidas hermanas permanecen unidas hasta anafase II.'
-    },
-    {
-      texto: '¿En qué proceso ocurre el crossing-over que genera cromátidas recombinantes?',
-      opciones: ['Profase I de meiosis', 'Metafase de mitosis', 'Anafase II de meiosis', 'Citocinesis'], correcta: 0,
-      explicacion: 'Durante profase I, cromátidas no hermanas de cromosomas homólogos intercambian segmentos equivalentes de ADN en los quiasmas.'
-    },
-    {
-      texto: '¿Cuál es el resultado habitual de una meiosis completa en una célula diploide?',
-      opciones: ['Dos células diploides idénticas', 'Cuatro células haploides', 'Una célula tetraploide', 'Dos células haploides idénticas'], correcta: 1,
-      explicacion: 'La meiosis comprende dos divisiones y produce habitualmente cuatro células haploides, con combinaciones genéticas distintas.'
-    },
-    {
-      texto: '¿Qué sucede en la anafase de la mitosis?',
-      opciones: ['Se aparean los cromosomas homólogos', 'Se separan las cromátidas hermanas', 'Se replica el ADN', 'Se forman cuatro núcleos haploides'], correcta: 1,
-      explicacion: 'En la anafase mitótica, los centrómeros se dividen y las cromátidas hermanas migran a polos opuestos, conservando el número cromosómico en cada célula hija.'
-    }
-  ];
-  const pool = base.map((q, i) => ({
-    ...q,
-    id: hash(`${temaId}|${i}|${q.texto}`),
-    tema: 'Ciclo celular, mitosis y meiosis',
-    temaId,
-    materia: 'Segundo parcial',
+// Segundo parcial: junta TODOS los JSON de la carpeta segundo-parcial/ en un único juego.
+// La lista de archivos sale de segundo-parcial/index.json (lo genera tools/actualizar_indice.py).
+const SEGUNDO_PARCIAL_TEMA_ID = 'segundo-parcial/todas';
+let segundoParcialPool = null;
+
+async function cargarSegundoParcial() {
+  if (segundoParcialPool) return segundoParcialPool;
+  const r = await fetch('segundo-parcial/index.json', { cache: 'no-cache' });
+  if (!r.ok) throw new Error(`No se pudo leer segundo-parcial/index.json (${r.status})`);
+  const manifiesto = await r.json();
+  const materia = { nombre: 'Segundo parcial' };
+  const listas = await Promise.all((manifiesto.temas || []).map(async (t) => {
+    const rr = await fetch(t.archivo, { cache: 'no-cache' });
+    if (!rr.ok) { console.warn(`[Segundo parcial] No se pudo leer ${t.archivo} (${rr.status})`); return []; }
+    const json = await rr.json();
+    const stem = t.archivo.replace(/^.*\//, '').replace(/\.json$/, '');
+    return normalizar(json, { id: `segundo-parcial/${stem}`, nombre: json.tema || stem }, materia);
   }));
+  const vistas = new Set();
+  const pool = [];
+  for (const q of listas.flat()) {
+    if (vistas.has(q.id)) continue;
+    vistas.add(q.id);
+    pool.push({ ...q, temaId: SEGUNDO_PARCIAL_TEMA_ID });
+  }
+  segundoParcialPool = pool;
+  return pool;
+}
+
+async function lanzarSegundoParcial() {
+  let pool;
+  try {
+    pool = await cargarSegundoParcial();
+  } catch (e) {
+    console.warn('[Segundo parcial]', e);
+    alert('No se pudieron cargar las preguntas del Segundo parcial. Probá de nuevo en un rato.');
+    return;
+  }
+  if (!pool.length) {
+    alert('Todavía no hay preguntas en el Segundo parcial.');
+    return;
+  }
   const meta = {
     titulo: 'Segundo parcial',
-    temaId,
+    temaId: SEGUNDO_PARCIAL_TEMA_ID,
     estilo: 'parcial-limpio',
     ranking: false,
     materiaNombre: 'Segundo parcial',
-    temaNombre: 'Ciclo celular, mitosis y meiosis',
+    temaNombre: 'Todos los temas',
     repetir: () => lanzarSegundoParcial(),
     volver: () => vistaInicio(),
   };
   empezarJuego(pool, meta);
+}
+
+// Actualiza el cartel del banner con la cantidad real de preguntas.
+async function pintarResumenSegundoParcial() {
+  const caja = document.querySelector('#btn-sp-ciclo .sp-tema-texto');
+  if (!caja) return;
+  try {
+    const pool = await cargarSegundoParcial();
+    if (!caja.isConnected) return;
+    const temas = new Set(pool.map((q) => q.tema)).size;
+    caja.innerHTML = `<strong>Todas las preguntas juntas</strong><small>${pool.length} preguntas · ${temas} ${temas === 1 ? 'tema' : 'temas'} · Opción múltiple</small>`;
+  } catch { /* se deja el texto por defecto */ }
 }
 
 function alternarSonido() {

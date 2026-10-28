@@ -207,8 +207,21 @@ def archivos_de_preguntas():
     )
 
 
+SEGUNDO_PARCIAL = RAIZ / "segundo-parcial"
+
+
+def archivos_segundo_parcial():
+    """Todos los .json de segundo-parcial/ (menos index.json y los que empiezan con guion bajo)."""
+    if not SEGUNDO_PARCIAL.exists():
+        return []
+    return sorted(
+        f for f in SEGUNDO_PARCIAL.glob("*.json")
+        if f.name != "index.json" and not f.name.startswith("_")
+    )
+
+
 def main(argv):
-    rutas = [Path(a) for a in argv] if argv else archivos_de_preguntas()
+    rutas = [Path(a) for a in argv] if argv else archivos_de_preguntas() + archivos_segundo_parcial()
     if not rutas:
         print("No hay archivos de preguntas en data/.")
         return 0

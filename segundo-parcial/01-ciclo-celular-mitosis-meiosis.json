@@ -1,0 +1,36 @@
+{
+  "materia": "Segundo parcial",
+  "tema": "Ciclo celular, mitosis y meiosis",
+  "preguntas": [
+    {
+      "pregunta": "¿En qué etapa del ciclo celular se duplica el ADN antes de la división?",
+      "opciones": ["G1", "S", "G2", "M"],
+      "correcta": "B",
+      "explicacion": "La fase S de la interfase es cuando se replica el ADN. Así, cada cromosoma queda formado por dos cromátidas hermanas antes de comenzar la división."
+    },
+    {
+      "pregunta": "¿Qué se separa durante la anafase I de la meiosis?",
+      "opciones": ["Las cromátidas hermanas", "Los cromosomas homólogos", "Los nucléolos", "Los centrómeros de cada cromosoma"],
+      "correcta": "B",
+      "explicacion": "En anafase I se separan los cromosomas homólogos. Los centrómeros no se dividen y las cromátidas hermanas permanecen unidas hasta anafase II."
+    },
+    {
+      "pregunta": "¿En qué proceso ocurre el crossing-over que genera cromátidas recombinantes?",
+      "opciones": ["Profase I de meiosis", "Metafase de mitosis", "Anafase II de meiosis", "Citocinesis"],
+      "correcta": "A",
+      "explicacion": "Durante profase I, cromátidas no hermanas de cromosomas homólogos intercambian segmentos equivalentes de ADN en los quiasmas."
+    },
+    {
+      "pregunta": "¿Cuál es el resultado habitual de una meiosis completa en una célula diploide?",
+      "opciones": ["Dos células diploides idénticas", "Cuatro células haploides", "Una célula tetraploide", "Dos células haploides idénticas"],
+      "correcta": "B",
+      "explicacion": "La meiosis comprende dos divisiones y produce habitualmente cuatro células haploides, con combinaciones genéticas distintas."
+    },
+    {
+      "pregunta": "¿Qué sucede en la anafase de la mitosis?",
+      "opciones": ["Se aparean los cromosomas homólogos", "Se separan las cromátidas hermanas", "Se replica el ADN", "Se forman cuatro núcleos haploides"],
+      "correcta": "B",
+      "explicacion": "En la anafase mitótica, los centrómeros se dividen y las cromátidas hermanas migran a polos opuestos, conservando el número cromosómico en cada célula hija."
+    }
+  ]
+}

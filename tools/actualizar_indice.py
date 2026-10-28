@@ -20,7 +20,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-from validar import DATA, RAIZ, archivos_de_preguntas, validar_archivo
+from validar import DATA, RAIZ, SEGUNDO_PARCIAL, archivos_de_preguntas, archivos_segundo_parcial, validar_archivo
 
 
 def leer_meta_materia(carpeta: Path) -> dict:
@@ -57,9 +57,34 @@ def main() -> int:
             print(f"[aviso] {rel}: {m}")
         por_materia.setdefault(ruta.parent, []).append((ruta, datos, n))
 
+    # Segundo parcial: todos los JSON de segundo-parcial/ se juntan en un único juego.
+    segundo = []
+    for ruta in archivos_segundo_parcial():
+        errores, avisos, n, datos = validar_archivo(ruta)
+        rel = ruta.relative_to(RAIZ)
+        if errores:
+            hay_errores = True
+            print(f"[ERROR] {rel}")
+            for m in errores:
+                print(f"   x {m}")
+            continue
+        for m in avisos:
+            print(f"[aviso] {rel}: {m}")
+        segundo.append({"archivo": rel.as_posix(), "tema": datos["tema"], "preguntas": n})
+
     if hay_errores:
         print("\nNo se generó el índice: corregí los errores de arriba.")
         return 1
+
+    if SEGUNDO_PARCIAL.exists():
+        manifiesto = {
+            "generado": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "temas": segundo,
+        }
+        (SEGUNDO_PARCIAL / "index.json").write_text(
+            json.dumps(manifiesto, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        print(f"Segundo parcial: {len(segundo)} archivos, {sum(t['preguntas'] for t in segundo)} preguntas -> segundo-parcial/index.json")
 
     metas = {c: leer_meta_materia(c) for c in por_materia}
 
