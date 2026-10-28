@@ -119,7 +119,7 @@ export function abrirCantidadADN({app,volver}={}){
       '</div>'+
       '<section class="adn-card"><div class="adn-card-head"><div><h2>'+d.titulo+'</h2><p>'+d.sub+'</p></div><span class="adn-unit">C = contenido de ADN</span></div>'+
         construirGrafico(d)+
-        '<div class="adn-legend"><span><i class="adn-key" style="background:'+d.color+'"></i>Contenido de ADN por célula</span><span>4C · ADN duplicado</span><span>2C · contenido diploide inicial</span><span>1C · contenido de cada gameto</span></div></section>'+
+        '<div class="adn-legend"><span><i class="adn-key" style="background:'+d.color+'"></i>Contenido de ADN por célula</span><span>4C · ADN duplicado</span><span>2C · cantidad total de ADN</span><span>1C · contenido de cada gameto</span></div></section>'+
       '<div class="adn-note"><span class="adn-note-icon" aria-hidden="true">i</span><p>'+d.nota+'</p></div>'+
       '<section class="adn-steps" aria-label="Valores de ADN por etapa">'+tarjetasEtapas(d)+'</section>'+
       fec+comparacion+
