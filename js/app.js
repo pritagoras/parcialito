@@ -795,7 +795,7 @@ function lanzarSegundoParcial() {
   const meta = {
     titulo: 'Segundo parcial',
     temaId,
-    estilo: 'hoja-parcial',
+    estilo: 'parcial-limpio',
     ranking: false,
     materiaNombre: 'Segundo parcial',
     temaNombre: 'Ciclo celular, mitosis y meiosis',
@@ -1239,15 +1239,7 @@ function empezarJuego(pool, meta) {
   };
 
   app.innerHTML = `
-    <main class="pantalla ${meta.estilo === 'hoja-parcial' ? 'pantalla-hoja-parcial' : ''}">
-      ${meta.estilo === 'hoja-parcial' ? `
-        <header class="hoja-membrete">
-          <div class="hoja-marca"><span>PARCIALITO</span><i>·</i><span>BIOLOGÍA</span></div>
-          <span class="hoja-tipo">EVALUACIÓN DE PRÁCTICA</span>
-          <h1>Segundo parcial</h1>
-          <p>Ciclo celular · Mitosis y meiosis</p>
-          <div class="hoja-datos"><span>Nombre y apellido <i></i></span><span>Fecha <i></i></span></div>
-        </header>` : ''}
+    <main class="pantalla ${meta.estilo === 'parcial-limpio' ? 'pantalla-segundo-limpia' : ''}">
       <div class="hud">
         <button class="icono" id="btn-salir" aria-label="Salir de la partida">✕</button>
         <div class="progreso" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="${pool.length}" aria-valuenow="0"><div class="barra" id="barra"></div></div>
@@ -1300,7 +1292,7 @@ function mostrarPregunta() {
             <img src="${esc(q.imagen)}" alt="${esc(q.imagenAlt)}" loading="eager" decoding="async">
           </a>
         </figure>` : ''}
-      ${rankingActivo() ? `
+      ${rankingActivo() && j.meta.estilo !== 'parcial-limpio' ? `
         <div class="pie-tarjeta">
           <button class="reportar" id="btn-reportar" type="button" ${estado.reportadas?.[q.id] ? 'disabled' : ''}>
             ${estado.reportadas?.[q.id] ? '✓ Reportada' : '⚑ Reportar pregunta'}
@@ -1316,7 +1308,13 @@ function mostrarPregunta() {
     </div>
     <div class="feedback" id="feedback" aria-live="polite"></div>
     <div class="acciones"><button class="btn primario" id="btn-sig" hidden></button></div>
-    <p class="ayuda-teclas">Teclado: 1 a 4 (o A a D) para responder, Enter para seguir.</p>`;
+    ${rankingActivo() && j.meta.estilo === 'parcial-limpio' ? `
+      <div class="pie-tarjeta pie-tarjeta-abajo">
+        <button class="reportar" id="btn-reportar" type="button" ${estado.reportadas?.[q.id] ? 'disabled' : ''}>
+          ${estado.reportadas?.[q.id] ? '✓ Reportada' : '⚑ Reportar pregunta'}
+        </button>
+      </div>` : ''}
+    ${j.meta.estilo === 'parcial-limpio' ? '' : '<p class="ayuda-teclas">Teclado: 1 a 4 (o A a D) para responder, Enter para seguir.</p>'}`;
 
   document.querySelectorAll('.opcion').forEach((b) =>
     b.addEventListener('click', () => responder(Number(b.dataset.pos))));
@@ -1333,6 +1331,7 @@ function responder(pos) {
   j.respondida = true;
 
   const q = j.preguntas[j.i];
+  const modoLimpio = j.meta.estilo === 'parcial-limpio';
   const acerto = q.orden[pos] === q.correcta;
   const feedback = document.getElementById('feedback');
 
@@ -1353,38 +1352,45 @@ function responder(pos) {
 
   let veredicto;
   if (acerto) {
-    j.racha++;
     j.aciertos++;
-    j.mejorRacha = Math.max(j.mejorRacha, j.racha);
-    const ganado = 100 + Math.min(j.racha - 1, 10) * 10;
-    j.puntos += ganado;
     delete estado.errores[q.id];
     (estado.dominadas[q.temaId] ||= {})[q.id] = 1;
-    Sonido.acierto(j.racha);
-    actualizarRacha(true);
+    if (modoLimpio) {
+      veredicto = '<p class="veredicto ok">¡Correcto!</p>';
+    } else {
+      j.racha++;
+      j.mejorRacha = Math.max(j.mejorRacha, j.racha);
+      const ganado = 100 + Math.min(j.racha - 1, 10) * 10;
+      j.puntos += ganado;
+      Sonido.acierto(j.racha);
+      actualizarRacha(true);
 
-    const esHito = HITOS.includes(j.racha);
-    if (esHito) {
-      setTimeout(() => {
-        Sonido.hito();
-        avisar(`¡Racha de ${j.racha}!`);
-        lanzarConfeti(j.racha >= 10 ? 140 : 70);
-      }, 250);
+      if (HITOS.includes(j.racha)) {
+        setTimeout(() => {
+          Sonido.hito();
+          avisar(`¡Racha de ${j.racha}!`);
+          lanzarConfeti(j.racha >= 10 ? 140 : 70);
+        }, 250);
+      }
+      veredicto = `<p class="veredicto ok">¡Correcto! +${ganado}</p>`;
     }
-    veredicto = `<p class="veredicto ok">¡Correcto! +${ganado}</p>`;
   } else {
-    const perdida = j.racha;
-    j.racha = 0;
+    if (!modoLimpio) {
+      const perdida = j.racha;
+      j.racha = 0;
+      Sonido.error(perdida >= 3);
+      actualizarRacha(false);
+      document.getElementById('tarjeta').classList.add('tiembla');
+      veredicto = `<p class="veredicto mal">Incorrecto${perdida >= 3 ? `: se corta la racha de ${perdida}` : ''}</p>`;
+    } else {
+      veredicto = '<p class="veredicto mal">Repasemos esta respuesta.</p>';
+    }
     j.falladas.push(q);
     estado.errores[q.id] = 1;
-    Sonido.error(perdida >= 3);
-    actualizarRacha(false);
-    document.getElementById('tarjeta').classList.add('tiembla');
-    veredicto = `<p class="veredicto mal">Incorrecto${perdida >= 3 ? `: se corta la racha de ${perdida}` : ''}</p>`;
   }
   guardar();
 
-  feedback.innerHTML = veredicto + (q.explicacion ? `<p class="explicacion">${esc(q.explicacion)}</p>` : '') + textoDificultad(q.id);
+  feedback.innerHTML = veredicto + (q.explicacion ? `<p class="explicacion">${esc(q.explicacion)}</p>` : '') + (modoLimpio ? '' : textoDificultad(q.id));
 
   const ultima = j.i === j.preguntas.length - 1;
   document.getElementById('barra').style.width = `${((j.i + 1) / j.preguntas.length) * 100}%`;
@@ -1533,7 +1539,7 @@ function vistaResultado() {
     </details>`).join('');
 
   app.innerHTML = `
-    <main class="pantalla resultado ${j.meta.estilo === 'hoja-parcial' ? 'pantalla-hoja-parcial' : ''}">
+    <main class="pantalla resultado ${j.meta.estilo === 'parcial-limpio' ? 'pantalla-segundo-limpia' : ''}">
       <div class="grande" aria-hidden="true">${emoji}</div>
       <h1>${titulo}</h1>
       <p class="sub">${sub}</p>
