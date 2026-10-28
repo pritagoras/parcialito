@@ -11,7 +11,7 @@
         "todas las proteínas de la célula quedarán truncadas de forma irreversible."
       ],
       "correcta": "C",
-      "explicacion": "Los errores de transcripción cometiendo fallos de copia en la ARN polimerasa no alteran la secuencia del ADN genómico, por lo que el molde permanece indemne para futuras transcripciones."[cite: 6]
+      "explicacion": "Los errores de transcripción cometiendo fallos de copia en la ARN polimerasa no alteran la secuencia del ADN genómico, por lo que el molde permanece indemne para futuras transcripciones."
     },
     {
       "pregunta": "El factor promotor de la fase S (FPS) cumple un rol regulador esencial al estimular directamente:",
@@ -22,7 +22,7 @@
         "la escisión del anillo contráctil de actina."
       ],
       "correcta": "C",
-      "explicacion": "El complejo FPS (CDK2-Ciclina A/E) impulsa a la célula a cruzar el punto de restricción G1/S e iniciar la replicación del ADN."[cite: 6]
+      "explicacion": "El complejo FPS (CDK2-Ciclina A/E) impulsa a la célula a cruzar el punto de restricción G1/S e iniciar la replicación del ADN."
     },
     {
       "pregunta": "Comparando el contenido nuclear de una célula eucarionte en distintos momentos de su ciclo, la cantidad de ADN es equivalente entre:",
@@ -33,7 +33,7 @@
         "la profase mitótica y la fase G1."
       ],
       "correcta": "C",
-      "explicacion": "Tanto en la fase G2 como en la metafase I de la meiosis, el ADN ya ha completado su replicación en la fase S, contando con un valor de 4C."[cite: 6]
+      "explicacion": "Tanto en la fase G2 como en la metafase I de la meiosis, el ADN ya ha completado su replicación en la fase S, contando con un valor de 4C."
     },
     {
       "pregunta": "Si un cultivo de células animales muestra una incorporación masiva de timidina radiactiva al núcleo, esto indica que las células se encuentran en:",
@@ -44,7 +44,7 @@
         "fase M."
       ],
       "correcta": "B",
-      "explicacion": "La timidina es un nucleósido exclusivo del ADN que se incorpora activamente a la nueva cadena durante el proceso de replicación en la fase S."[cite: 6]
+      "explicacion": "La timidina es un nucleósido exclusivo del ADN que se incorpora activamente a la nueva cadena durante el proceso de replicación en la fase S."
     },
     {
       "pregunta": "Respecto al proceso de división en organismos procariontes, se verifica que la bacteria:",
@@ -55,7 +55,7 @@
         "duplica su molécula de ADN y se divide mediante fisión binaria."
       ],
       "correcta": "D",
-      "explicacion": "Las bacterias carecen de núcleo y huso mitótico; replican su ADN circular unido a la membrana y se dividen de manera asexual por fisión binaria."[cite: 6]
+      "explicacion": "Las bacterias carecen de núcleo y huso mitótico; replican su ADN circular unido a la membrana y se dividen de manera asexual por fisión binaria."
     },
     {
       "pregunta": "Tanto las enzimas ADN polimerasas como las ARN polimerasas comparten la propiedad catalítica de:",
@@ -66,7 +66,7 @@
         "catalizar la ruptura de puentes de hidrógeno."
       ],
       "correcta": "B",
-      "explicacion": "Ambas polimerasas leen la hebra molde en dirección 3'->5' para polimerizar la hebra nueva en sentido 5'->3' mediante enlace fosfodiéster."[cite: 6]
+      "explicacion": "Ambas polimerasas leen la hebra molde en dirección 3'->5' para polimerizar la hebra nueva en sentido 5'->3' mediante enlace fosfodiéster."
     },
     {
       "pregunta": "Durante la apertura de la horquilla de replicación, la enzima helicasa cumple la función específica de:",
@@ -77,7 +77,7 @@
         "sintetizar los oligonucleótidos de ARN iniciadores."
       ],
       "correcta": "C",
-      "explicacion": "La helicasa avanza separando las dos hebras de ADN mediante la ruptura de las uniones por puentes de hidrógeno entre las bases."[cite: 6]
+      "explicacion": "La helicasa avanza separando las dos hebras de ADN mediante la ruptura de las uniones por puentes de hidrógeno entre las bases."
     },
     {
       "pregunta": "Al comparar los mecanismos de duplicación del ADN en organismos procariotas y eucariotas, se observa que ambos requieren:",
@@ -88,7 +88,7 @@
         "la desorganización previa de la envoltura nuclear."
       ],
       "correcta": "B",
-      "explicacion": "En ambos dominios biológicos, las ADN polimerasas no pueden iniciar la síntesis *de novo* y precisan un cebador generado por una ARN primasa."[cite: 6]
+      "explicacion": "En ambos dominios biológicos, las ADN polimerasas no pueden iniciar la síntesis *de novo* y precisan un cebador generado por una ARN primasa."
     },
     {
       "pregunta": "Para que una mutación inducida por agentes ambientales o radiación sea transmitida a la descendencia de un organismo, debe afectar al ADN de:",
@@ -99,7 +99,7 @@
         "las células somáticas del sistema nervioso."
       ],
       "correcta": "C",
-      "explicacion": "Solo las mutaciones presentes en la línea germinal pueden transmitirse mediante la fecundación a la siguiente generación."[cite: 6]
+      "explicacion": "Solo las mutaciones presentes en la línea germinal pueden transmitirse mediante la fecundación a la siguiente generación."
     },
     {
       "pregunta": "El estudio del cariotipo humano resulta una técnica útil en el diagnóstico clínico para:",
@@ -110,7 +110,7 @@
         "identificar el grado de metilación de un gen promotor."
       ],
       "correcta": "D",
-      "explicacion": "El análisis citogenético del cariotipo permite visualizar alteraciones macroestructurales o variaciones en el número de cromosomas (como trisomías)."[cite: 6]
+      "explicacion": "El análisis citogenético del cariotipo permite visualizar alteraciones macroestructurales o variaciones en el número de cromosomas (como trisomías)."
     },
     {
       "pregunta": "Un hepatocito diploide perteneciente a un hombre saludable contendrá un complemento cromosómico de:",
@@ -121,7 +121,7 @@
         "46 autosomas y un cromosoma X."
       ],
       "correcta": "B",
-      "explicacion": "Las células somáticas masculinas diploides (2n = 46) albergan 22 pares de autosomas (44) y un par heterómorfo de cromosomas sexuales (XY)."[cite: 6]
+      "explicacion": "Las células somáticas masculinas diploides (2n = 46) albergan 22 pares de autosomas (44) y un par heterómorfo de cromosomas sexuales (XY)."
     },
     {
       "pregunta": "En una célula con dotación 2n = 8 que transcurre la metafase de la mitosis, es posible contabilizar:",
@@ -132,7 +132,7 @@
         "4 bivalentes o tétradas."
       ],
       "correcta": "B",
-      "explicacion": "Cada uno de los 8 cromosomas metafásicos se halla duplicado en dos cromátides hermanas, sumando 16 moléculas de ADN monocatenarias."[cite: 6]
+      "explicacion": "Cada uno de los 8 cromosomas metafásicos se halla duplicado en dos cromátides hermanas, sumando 16 moléculas de ADN monocatenarias."
     },
     {
       "pregunta": "En el varón humano, el proceso de espermatogénesis se caracteriza fisiológicamente por:",
@@ -143,7 +143,7 @@
         "completar la meiosis I antes del nacimiento."
       ],
       "correcta": "D",
-      "explicacion": "A diferencia de la ovogénesis, la espermatogénesis se activa a partir de la pubertad estimulada por hormonas gonadotróficas y se mantiene en la vida adulta."[cite: 6]
+      "explicacion": "A diferencia de la ovogénesis, la espermatogénesis se activa a partir de la pubertad estimulada por hormonas gonadotróficas y se mantiene en la vida adulta."
     },
     {
       "pregunta": "En la especie humana, la primera división meiótica (meiosis I) en las células germinales femeninas se inicia durante:",
@@ -154,7 +154,7 @@
         "la penetración del espermatozoide en el ovocito."
       ],
       "correcta": "D",
-      "explicacion": "Los ovocitos primarios comienzan la profase I meiótica durante la gestación fetal, quedando detenidos en la etapa de dictiotene hasta la maduración folicular."[cite: 6]
+      "explicacion": "Los ovocitos primarios comienzan la profase I meiótica durante la gestación fetal, quedando detenidos en la etapa de dictiotene hasta la maduración folicular."
     },
     {
       "pregunta": "La propagación del potencial de acción a través del flujo de iones sodio se produce de forma fisiológica en:",
@@ -165,7 +165,7 @@
         "las células gliales del sistema nervioso central."
       ],
       "correcta": "E",
-      "explicacion": "La apertura de los canales de Na+ dependientes de voltaje y el consiguiente ingreso de sodio es el mecanismo despolarizante común a todas las neuronas activas."[cite: 6]
+      "explicacion": "La apertura de los canales de Na+ dependientes de voltaje y el consiguiente ingreso de sodio es el mecanismo despolarizante común a todas las neuronas activas."
     },
     {
       "pregunta": "La droga cocaína actúa bloqueando la recaptación de dopamina en el terminal presináptico. Esto genera en la hendidura sináptica:",
@@ -176,7 +176,7 @@
         "una persistencia prolongada de dopamina generando una estimulación sostenida."
       ],
       "correcta": "E",
-      "explicacion": "Al inhibir el transportador de recaptación, la dopamina permanece más tiempo en el espacio sináptico estimulando de forma continua los receptores postsinápticos."[cite: 6]
+      "explicacion": "Al inhibir el transportador de recaptación, la dopamina permanece más tiempo en el espacio sináptico estimulando de forma continua los receptores postsinápticos."
     },
     {
       "pregunta": "Las neuronas efarentes o motoras del sistema nervioso periférico conducen la señal eléctrica de forma:",
@@ -187,7 +187,7 @@
         "saltatoria por axones amielínicos."
       ],
       "correcta": "E",
-      "explicacion": "En el SNP, la mielinización por células de Schwann genera los nódulos de Ranvier que permiten la conducción saltatoria hacia los efectores."[cite: 6]
+      "explicacion": "En el SNP, la mielinización por células de Schwann genera los nódulos de Ranvier que permiten la conducción saltatoria hacia los efectores."
     },
     {
       "pregunta": "El daño mielínico que sufren los axones neuronales en la adrenoleucodistrofia (ALD) altera la transmisión de impulsos provocando que:",
@@ -198,7 +198,7 @@
         "incrementen la velocidad de la conducción saltatoria."
       ],
       "correcta": "C",
-      "explicacion": "La pérdida del aislamiento lipídico de la mielina disipa la corriente eléctrica, reduciendo drásticamente la velocidad de despolarización y conducción del impulso."[cite: 6]
+      "explicacion": "La pérdida del aislamiento lipídico de la mielina disipa la corriente eléctrica, reduciendo drásticamente la velocidad de despolarización y conducción del impulso."
     },
     {
       "pregunta": "Si una mujer portadora del alelo de la hemofilia (X H X h) concibe con un hombre sano (X H Y), la probabilidad de tener un hijo varón o una hija mujer hemofílicos es respectivamente del:",
@@ -209,7 +209,7 @@
         "100% para varones y 0% para mujeres."
       ],
       "correcta": "D",
-      "explicacion": "Los varones tienen un 50% de probabilidad de recibir el cromosoma X h de la madre; las hijas reciben siempre el cromosoma X H sano del padre, por lo que ninguna será hemofílica."[cite: 6]
+      "explicacion": "Los varones tienen un 50% de probabilidad de recibir el cromosoma X h de la madre; las hijas reciben siempre el cromosoma X H sano del padre, por lo que ninguna será hemofílica."
     },
     {
       "pregunta": "Una mujer de grupo sanguíneo O (ii) se casó con un hombre de grupo AB (I A I B). Respecto a la descendencia se afirma correctamente que:",
@@ -220,7 +220,7 @@
         "todas las hijas serán del grupo sanguíneo materno."
       ],
       "correcta": "C",
-      "explicacion": "La cruza entre ii y I A I B produce genotipos heterocigotas I A i (grupo A) y I B i (grupo B) en proporciones del 50%, imposibilitando el fenotipo O."[cite: 6]
+      "explicacion": "La cruza entre ii y I A I B produce genotipos heterocigotas I A i (grupo A) y I B i (grupo B) en proporciones del 50%, imposibilitando el fenotipo O."
     },
     {
       "pregunta": "En las enfermedades con patrón de herencia recesivo ligado al cromosoma X, el gen mutado se ubica en:",
@@ -231,7 +231,7 @@
         "el ADN mitocondrial exclusivamente."
       ],
       "correcta": "E",
-      "explicacion": "Las afecciones ligadas al sexo recesivas corresponden a loci ubicados en el cromosoma X, expresándose fenotípicamente en varones hemicigotas."[cite: 6]
+      "explicacion": "Las afecciones ligadas al sexo recesivas corresponden a loci ubicados en el cromosoma X, expresándose fenotípicamente en varones hemicigotas."
     },
     {
       "pregunta": "Si dos progenitores sanos conciben un primer hijo afectado simultáneamente por albinismo y fenilcetonuria (ambas enfermedades autosómicas recesivas independientes), la probabilidad de que su próximo hijo también manifieste ambas condiciones es de:",
@@ -242,7 +242,7 @@
         "1/8"
       ],
       "correcta": "C",
-      "explicacion": "Al ser sanos con un hijo recesivo, ambos padres son diheterocigotas (AaPp). La probabilidad de ser albino es 1/4 y de tener fenilcetonuria es 1/4; combinadas es 1/4 x 1/4 = 1/16."[cite: 6]
+      "explicacion": "Al ser sanos con un hijo recesivo, ambos padres son diheterocigotas (AaPp). La probabilidad de ser albino es 1/4 y de tener fenilcetonuria es 1/4; combinadas es 1/4 x 1/4 = 1/16."
     },
     {
       "pregunta": "Un par de cromosomas homólogos se caracteriza estructuralmente por:",
@@ -253,7 +253,7 @@
         "originarse directamente por la duplicación del ADN en la fase S."
       ],
       "correcta": "B",
-      "explicacion": "Los homólogos son cromosomas de origen parental distinto que comparten el mapa genético y la morfología, pero pueden diferenciarse en sus variaciones alélicas."[cite: 6]
+      "explicacion": "Los homólogos son cromosomas de origen parental distinto que comparten el mapa genético y la morfología, pero pueden diferenciarse en sus variaciones alélicas."
     },
     {
       "pregunta": "Durante la metafase de la mitosis en células somáticas humanas (2n = 46), el núcleo contiene:",
@@ -264,7 +264,7 @@
         "92 cromosomas independientes."
       ],
       "correcta": "A",
-      "explicacion": "En la metafase mitótica de una célula humana somática se distinguen los 46 cromosomas alineados individualmente, cada uno integrado por dos cromátides dobles."[cite: 6]
+      "explicacion": "En la metafase mitótica de una célula humana somática se distinguen los 46 cromosomas alineados individualmente, cada uno integrado por dos cromátides dobles."
     },
     {
       "pregunta": "Al observar astrocitos humanos dividiéndose en cultivo con 46 cromosomas duplicados posicionados en el plano ecuatorial, la fase mitótica corresponde a:",
@@ -275,7 +275,7 @@
         "Telofase."
       ],
       "correcta": "C",
-      "explicacion": "La alineación cromosómica en el ecuador del huso acromático define la metafase mitótica en las células somáticas (como los astrocitos)."[cite: 6]
+      "explicacion": "La alineación cromosómica en el ecuador del huso acromático define la metafase mitótica en las células somáticas (como los astrocitos)."
     },
     {
       "pregunta": "La molécula de ácido nucleico monocatenario encargada de transportar aminoácidos específicos hacia el ribosoma durante la traducción es el:",
@@ -286,7 +286,7 @@
         "ARN pequeño nuclear (snARN)."
       ],
       "correcta": "C",
-      "explicacion": "El ARNt posee una estructura en hoja de trébol con un extremo aceptor para el aminoácido y un asa anticodón para aparearse con el ARNm."[cite: 6]
+      "explicacion": "El ARNt posee una estructura en hoja de trébol con un extremo aceptor para el aminoácido y un asa anticodón para aparearse con el ARNm."
     },
     {
       "pregunta": "¿Cuál de los siguientes procesos biológicos NO requiere el apareamiento complementario entre bases nitrogenadas?",
@@ -297,7 +297,7 @@
         "Interacción codón-anticodón durante la traducción."
       ],
       "correcta": "A",
-      "explicacion": "El plegamiento proteico depende de interacciones entre los residuos de aminoácidos (puentes disulfuro, interacciones hidrofóbicas, puentes de hidrógeno peptídicos) y no de bases de nucleótidos."[cite: 6]
+      "explicacion": "El plegamiento proteico depende de interacciones entre los residuos de aminoácidos (puentes disulfuro, interacciones hidrofóbicas, puentes de hidrógeno peptídicos) y no de bases de nucleótidos."
     },
     {
       "pregunta": "Los codones CGU y CGC traducen ambos el aminoácido arginina. Esta característica demuestra que el código genético es:",
@@ -308,7 +308,7 @@
         "Incompleto."
       ],
       "correcta": "C",
-      "explicacion": "La degeneración del código genético consiste en la existencia de múltiples codones sinónimos que especifican un mismo aminoácido."[cite: 6]
+      "explicacion": "La degeneración del código genético consiste en la existencia de múltiples codones sinónimos que especifican un mismo aminoácido."
     },
     {
       "pregunta": "El proceso de transcripción eucarionte conduce directamente a la:",
@@ -319,7 +319,7 @@
         "duplicación del par de centríolos."
       ],
       "correcta": "D",
-      "explicacion": "La transcripción es la síntesis catalizada por ARN polimerasas de una hebra de ARN complementaria a una secuencia génica de ADN."[cite: 6]
+      "explicacion": "La transcripción es la síntesis catalizada por ARN polimerasas de una hebra de ARN complementaria a una secuencia génica de ADN."
     },
     {
       "pregunta": "En la especie humana, una espermátide haploide resultante de la meiosis contiene en su núcleo:",
@@ -330,7 +330,7 @@
         "ningún cromosoma sexual."
       ],
       "correcta": "E",
-      "explicacion": "Las espermátides son células haploides (n = 23) compuestas por 22 autosomas simples y un único cromosoma sexual (X o Y)."[cite: 6]
+      "explicacion": "Las espermátides son células haploides (n = 23) compuestas por 22 autosomas simples y un único cromosoma sexual (X o Y)."
     },
     {
       "pregunta": "Si un gen de la hemoglobina sufre una mutación silenciosa o sinónima en su región codificante, el resultado será que:",
@@ -341,7 +341,7 @@
         "la proteína perderá completamente su función de transporte."
       ],
       "correcta": "E",
-      "explicacion": "Las mutaciones silenciosas cambian la base de un codón por un triplete sinónimo que codifica el mismo aminoácido, conservando la secuencia de la proteína."[cite: 6]
+      "explicacion": "Las mutaciones silenciosas cambian la base de un codón por un triplete sinónimo que codifica el mismo aminoácido, conservando la secuencia de la proteína."
     },
     {
       "pregunta": "Un gen de una especie eucarionte puede expresarse correctamente tras ser introducido en el genoma de una bacteria debido a que:",
@@ -352,7 +352,7 @@
         "ambos dominios realizan splicing intrónico."
       ],
       "correcta": "D",
-      "explicacion": "La universalidad del código genético permite que los codones del ARNm sean leídos e interpretados para los mismos aminoácidos en procariontes y eucariontes."[cite: 6]
+      "explicacion": "La universalidad del código genético permite que los codones del ARNm sean leídos e interpretados para los mismos aminoácidos en procariontes y eucariontes."
     },
     {
       "pregunta": "Las proteínas conocidas como ciclinas se caracterizan fisiológicamente por:",
@@ -363,7 +363,7 @@
         "degradar de forma irreversible el ADN al final de la mitosis."
       ],
       "correcta": "B",
-      "explicacion": "Las ciclinas sintetizan y degradan de forma periódica en el ciclo celular, regulando la activación de sus correspondientes CDK asociadas."[cite: 6]
+      "explicacion": "Las ciclinas sintetizan y degradan de forma periódica en el ciclo celular, regulando la activación de sus correspondientes CDK asociadas."
     }
   ]
 }

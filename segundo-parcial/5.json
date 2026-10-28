@@ -11,7 +11,7 @@
         "80 nucleótidos."
       ],
       "correcta": "A",
-      "explicacion": "Cada aminoácido requiere un triplete (80 x 3 = 240 nucleótidos), a los que debe sumarse el codón de terminación y las regiones no traducidas (UTR) en ambos extremos."[cite: 5]
+      "explicacion": "Cada aminoácido requiere un triplete (80 x 3 = 240 nucleótidos), a los que debe sumarse el codón de terminación y las regiones no traducidas (UTR) en ambos extremos."
     },
     {
       "pregunta": "Respecto a la producción de descendencia mediante el proceso meióтический en mamíferos, la meiosis femenina se caracteriza por poder producir:",
@@ -22,7 +22,7 @@
         "cuatro gametas funcionales de igual tamaño."
       ],
       "correcta": "B",
-      "explicacion": "La meiosis femenina incluye citocinesis asimétricas que originan un único óvulo funcional haploide y corpúsculos o glóbulos polares degenerativos."[cite: 5]
+      "explicacion": "La meiosis femenina incluye citocinesis asimétricas que originan un único óvulo funcional haploide y corpúsculos o glóbulos polares degenerativos."
     },
     {
       "pregunta": "Una característica en común entre los procesos de división por mitosis y meiosis es la:",
@@ -33,7 +33,7 @@
         "separación de las cromátidas hermanas hacia los polos."
       ],
       "correcta": "D",
-      "explicacion": "Tanto en la anafase mitótica como en la anafase II de la meiosis se disocian las cohesinas centroméricas permitiendo la separación de cromátides hermanas."[cite: 5]
+      "explicacion": "Tanto en la anafase mitótica como en la anafase II de la meiosis se disocian las cohesinas centroméricas permitiendo la separación de cromátides hermanas."
     },
     {
       "pregunta": "¿Cuál de los siguientes tipos celulares posee una mayor cantidad de moléculas de ADN en su núcleo celular?",
@@ -44,7 +44,7 @@
         "Una ovogonia en la fase G2 de la interfase."
       ],
       "correcta": "D",
-      "explicacion": "La ovogonia en fase G2 es una célula diploide que ya completó la replicación en S, conteniendo 4C de ADN, superior a células en G0/G1 (2C) o haploides (1C)."[cite: 5]
+      "explicacion": "La ovogonia en fase G2 es una célula diploide que ya completó la replicación en S, conteniendo 4C de ADN, superior a células en G0/G1 (2C) o haploides (1C)."
     },
     {
       "pregunta": "Si dos progenitores sanos conciben un hijo que manifiesta fibrosis quística (enfermedad autosómica recesiva), esto implica genotípicamente que:",
@@ -55,7 +55,7 @@
         "ambos progenitores son homocigotas dominantes."
       ],
       "correcta": "B",
-      "explicacion": "Para que aparezca un individuo homocigota recesivo a partir de padres sanos, ambos deben poseer obligadamente el alelo recesivo en heterocigosis (Aa x Aa)."[cite: 5]
+      "explicacion": "Para que aparezca un individuo homocigota recesivo a partir de padres sanos, ambos deben poseer obligadamente el alelo recesivo en heterocigosis (Aa x Aa)."
     },
     {
       "pregunta": "Una mujer de grupo sanguíneo A tiene un hijo de grupo O. ¿Cuál es el genotipo más probable de los padres?",
@@ -66,7 +66,7 @@
         "Padre grupo O (OO) y madre de genotipo AA."
       ],
       "correcta": "A",
-      "explicacion": "Para que nazca un hijo de grupo O (OO), ambos progenitores deben donar un alelo recesivo O; por ende, la madre A debe ser A0 y el padre aportar O."[cite: 5]
+      "explicacion": "Para que nazca un hijo de grupo O (OO), ambos progenitores deben donar un alelo recesivo O; por ende, la madre A debe ser A0 y el padre aportar O."
     },
     {
       "pregunta": "Un varón padece hemofilia (condición recesiva ligada al cromosoma X). Sabiendo esto, se deduce correctamente que:",
@@ -77,7 +77,7 @@
         "la afección ocurrió por una falla en la mitosis somática."
       ],
       "correcta": "C",
-      "explicacion": "El hijo varón recibe el cromosoma Y del padre y el cromosoma X de la madre. Al estar afectado, el alelo recesivo proviene inevitablemente de la madre portadora."[cite: 5]
+      "explicacion": "El hijo varón recibe el cromosoma Y del padre y el cromosoma X de la madre. Al estar afectado, el alelo recesivo proviene inevitablemente de la madre portadora."
     },
     {
       "pregunta": "Si una mujer heterocigota para el daltonismo tiene descendencia con un hombre daltónico, respecto a sus hijos varones se prevé que:",
@@ -88,7 +88,7 @@
         "todos los varones sean sanos."
       ],
       "correcta": "A",
-      "explicacion": "La madre (X D X d) tiene un 50% de probabilidades de transmitir el cromosoma recesivo X d a sus hijos varones, manifestándose en ellos el fenotipo daltónico."[cite: 5]
+      "explicacion": "La madre (X D X d) tiene un 50% de probabilidades de transmitir el cromosoma recesivo X d a sus hijos varones, manifestándose en ellos el fenotipo daltónico."
     },
     {
       "pregunta": "Al cruzar plantas de flores rojas dominantes con flores blancas recesivas se obtienen 39 plantas rojas y 41 blancas. ¿Cuáles son los genotipos parentales?",
@@ -99,7 +99,7 @@
         "Aa x aa"
       ],
       "correcta": "D",
-      "explicacion": "La obtención de una descendencia en proporción 1:1 (aproximadamente 50% fenotipo dominante y 50% recesivo) es indicativa del cruce de prueba Aa x aa."[cite: 5]
+      "explicacion": "La obtención de una descendencia en proporción 1:1 (aproximadamente 50% fenotipo dominante y 50% recesivo) es indicativa del cruce de prueba Aa x aa."
     },
     {
       "pregunta": "Una persona con fenotipo sanguíneo codominante AB producirá por segregación meiótica:",
@@ -110,7 +110,7 @@
         "gametas con el alelo A y gametas con el alelo B en igual proporción."
       ],
       "correcta": "D",
-      "explicacion": "La primera ley de Mendel establece la segregación de alelos durante la formación de gametas: el individuo AB generará 50% de gametas A y 50% de gametas B."[cite: 5]
+      "explicacion": "La primera ley de Mendel establece la segregación de alelos durante la formación de gametas: el individuo AB generará 50% de gametas A y 50% de gametas B."
     },
     {
       "pregunta": "¿Qué proporción fenotípica se espera al cruzar un individuo heterocigota (Aa) con uno homocigota recesivo (aa)?",
@@ -121,7 +121,7 @@
         "1/4 de fenotipo dominante."
       ],
       "correcta": "C",
-      "explicacion": "El cruzamiento Aa x aa origina un 50% de descendientes heterocigotas (Aa) y un 50% de descendientes homocigotas recesivos (aa)."[cite: 5]
+      "explicacion": "El cruzamiento Aa x aa origina un 50% de descendientes heterocigotas (Aa) y un 50% de descendientes homocigotas recesivos (aa)."
     },
     {
       "pregunta": "Una mujer heterocigota para el daltonismo concibe con un hombre de visión normal. Respecto a la descendencia se espera:",
@@ -132,7 +132,7 @@
         "0% de mujeres daltónicas y 50% de los varones daltónicos."
       ],
       "correcta": "D",
-      "explicacion": "Como el padre aporta el alelo normal X D a todas sus hijas, ninguna mujer será daltónica; mientras que la madre transmitirá el alelo mutado al 50% de los varones."[cite: 5]
+      "explicacion": "Como el padre aporta el alelo normal X D a todas sus hijas, ninguna mujer será daltónica; mientras que la madre transmitirá el alelo mutado al 50% de los varones."
     },
     {
       "pregunta": "El entrecruzamiento cromosómico (crossing-over) constituye una fuente de variabilidad genética debido a que permite:",
@@ -143,7 +143,7 @@
         "la inactivación del cromosoma X en hembras."
       ],
       "correcta": "C",
-      "explicacion": "Durante el paquitene de la profase I, las cromátidas no hermanas intercambian fragmentos equivalentes de ADN, recombinando los alelos maternos y paternos."[cite: 5]
+      "explicacion": "Durante el paquitene de la profase I, las cromátidas no hermanas intercambian fragmentos equivalentes de ADN, recombinando los alelos maternos y paternos."
     },
     {
       "pregunta": "En genética experimental, el cruzamiento de prueba se utiliza fundamentalmente para:",
@@ -154,7 +154,7 @@
         "evaluar si el carácter está ligado a los cromosomas sexuales."
       ],
       "correcta": "C",
-      "explicacion": "Al cruzar el individuo dominante de genotipo desconocido con un homocigota recesivo, la aparición de fenotipo recesivo confirma su heterocigosis."[cite: 5]
+      "explicacion": "Al cruzar el individuo dominante de genotipo desconocido con un homocigota recesivo, la aparición de fenotipo recesivo confirma su heterocigosis."
     },
     {
       "pregunta": "Según los postulados evolutivos de Lamarck, una característica o rasgo en un individuo surge:",
@@ -165,7 +165,7 @@
         "porque resulta de utilidad biológica para el organismo frente a una necesidad."
       ],
       "correcta": "D",
-      "explicacion": "Lamarck sostenía que las necesidades impuestas por el entorno inducían el uso o desuso de órganos, generando adaptaciones adquiridas con un fin utilitario."[cite: 5]
+      "explicacion": "Lamarck sostenía que las necesidades impuestas por el entorno inducían el uso o desuso de órganos, generando adaptaciones adquiridas con un fin utilitario."
     },
     {
       "pregunta": "La afirmación de que la selección natural actúa como el motor principal del cambio adaptativo corresponde a la teoría de:",
@@ -176,7 +176,7 @@
         "Jean-Baptiste Lamarck."
       ],
       "correcta": "C",
-      "explicacion": "Darwin postuló que la reproducción diferencial de variantes heredables ventajosas (selección natural) es el mecanismo clave del proceso evolutivo."[cite: 5]
+      "explicacion": "Darwin postuló que la reproducción diferencial de variantes heredables ventajosas (selección natural) es el mecanismo clave del proceso evolutivo."
     },
     {
       "pregunta": "En los genes eucariontes que poseen intrones y exones, se verifica durante la transcripción que:",
@@ -187,7 +187,7 @@
         "los intrones son transcriptos inicialmente al pre-ARNm."
       ],
       "correcta": "D",
-      "explicacion": "La ARN polimerasa transcribe tanto intrones como exones en la molécula de pre-ARNm; posteriormente, los intrones se eliminan mediante el splicing."[cite: 5]
+      "explicacion": "La ARN polimerasa transcribe tanto intrones como exones en la molécula de pre-ARNm; posteriormente, los intrones se eliminan mediante el splicing."
     },
     {
       "pregunta": "La enzima aminoacil-ARNt sintetasa desempeña un rol crítico en la traducción al catalizar:",
@@ -198,7 +198,7 @@
         "el movimiento de translocación del ribosoma sobre el ARNm."
       ],
       "correcta": "A",
-      "explicacion": "Esta enzima reconoce de forma específica un aminoácido y su ARNt afín, consumiendo ATP para unirlos en una reacción de aminoacilación."[cite: 5]
+      "explicacion": "Esta enzima reconoce de forma específica un aminoácido y su ARNt afín, consumiendo ATP para unirlos en una reacción de aminoacilación."
     },
     {
       "pregunta": "Durante la etapa de elongación en la síntesis de proteínas, el fenómeno de translocación consiste en el:",
@@ -209,7 +209,7 @@
         "reconocimiento del codón de inicio por la metionina."
       ],
       "correcta": "B",
-      "explicacion": "Durante la translocación, el ribosoma avanza exactamente tres nucleótidos (un codón) hacia el extremo 3' del ARNm, vaciando el sitio A."[cite: 5]
+      "explicacion": "Durante la translocación, el ribosoma avanza exactamente tres nucleótidos (un codón) hacia el extremo 3' del ARNm, vaciando el sitio A."
     },
     {
       "pregunta": "La incorporación de un alelo novedoso dentro del acervo génico de una población puede ser consecuencia de:",
@@ -220,7 +220,7 @@
         "el flujo génico por la inmigración de individuos genéticamente diferentes."
       ],
       "correcta": "D",
-      "explicacion": "El flujo génico ocasionado por la inmigración de organismos reproductivos puede introducir alelos alternativos en una población receptora."[cite: 5]
+      "explicacion": "El flujo génico ocasionado por la inmigración de organismos reproductivos puede introducir alelos alternativos en una población receptora."
     },
     {
       "pregunta": "El mecanismo de selección natural en una población se basa fundamentalmente en la:",
@@ -231,7 +231,7 @@
         "modificación intencionada de la tasa de mutación."
       ],
       "correcta": "A",
-      "explicacion": "Aquellos individuos con rasgos heredables que otorgan mayor adecuación biológica dejan, en promedio, más descendencia, aumentando la frecuencia de sus alelos."[cite: 5]
+      "explicacion": "Aquellos individuos con rasgos heredables que otorgan mayor adecuación biológica dejan, en promedio, más descendencia, aumentando la frecuencia de sus alelos."
     },
     {
       "pregunta": "En la ultraestructura del nucléolo es posible identificar una organización formada por:",
@@ -242,7 +242,7 @@
         "complejos de poros nucleares especializados."
       ],
       "correcta": "A",
-      "explicacion": "El nucléolo carece de membrana y presenta una región fibrilar (donde se transcriben los genes de ARNr) y una región granular (donde se ensamblan las subunidades ribosómicas)."[cite: 5]
+      "explicacion": "El nucléolo carece de membrana y presenta una región fibrilar (donde se transcriben los genes de ARNr) y una región granular (donde se ensamblan las subunidades ribosómicas)."
     },
     {
       "pregunta": "En el nucleoplasma de una célula eucarionte se lleva a cabo fisiológicamente:",
@@ -253,7 +253,7 @@
         "el ensamblaje definitivo de los ribosomas maduros."
       ],
       "correcta": "C",
-      "explicacion": "Los ARN de transferencia son sintetizados por la ARN polimerasa III dentro del nucleoplasma celular."[cite: 5]
+      "explicacion": "Los ARN de transferencia son sintetizados por la ARN polimerasa III dentro del nucleoplasma celular."
     },
     {
       "pregunta": "Las secuencias de ADN que integran la heterocromatina se caracterizan por ser:",
@@ -264,7 +264,7 @@
         "regiones laxas que carecen de proteínas histonas."
       ],
       "correcta": "B",
-      "explicacion": "La heterocromatina se mantiene altamente compactada durante la interfase, impidiendo el acceso de los factores de transcripción al ADN."[cite: 5]
+      "explicacion": "La heterocromatina se mantiene altamente compactada durante la interfase, impidiendo el acceso de los factores de transcripción al ADN."
     },
     {
       "pregunta": "La cromatina interfásica y los cromosomas mitóticos se diferencian principalmente en:",
@@ -275,7 +275,7 @@
         "su nivel de empaquetamiento y condensación estructural."
       ],
       "correcta": "D",
-      "explicacion": "La cromatina y los cromosomas consisten en el mismo material genético asociado a proteínas, variando únicamente en su grado de condensación estructural."[cite: 5]
+      "explicacion": "La cromatina y los cromosomas consisten en el mismo material genético asociado a proteínas, variando únicamente en su grado de condensación estructural."
     },
     {
       "pregunta": "En el nivel máximo de condensación del ADN durante la división celular, este:",
@@ -286,7 +286,7 @@
         "podrá expresarse y duplicarse simultáneamente."
       ],
       "correcta": "A",
-      "explicacion": "La hipercondensación cromosómica en la fase M bloquea físicamente el acceso de las polimerasas, impidiendo tanto la transcripción como la replicación."[cite: 5]
+      "explicacion": "La hipercondensación cromosómica en la fase M bloquea físicamente el acceso de las polimerasas, impidiendo tanto la transcripción como la replicación."
     },
     {
       "pregunta": "El complejo del poro nuclear permite el transporte selectivo desde el citosol hacia el núcleo de:",
@@ -297,7 +297,7 @@
         "proteínas nucleares como histonas y ARN polimerasas."
       ],
       "correcta": "D",
-      "explicacion": "Las proteínas con señal NLS (como histonas y polimerasas) se traducen en el citosol y son importadas activamente a través del complejo de poro nuclear."[cite: 5]
+      "explicacion": "Las proteínas con señal NLS (como histonas y polimerasas) se traducen en el citosol y son importadas activamente a través del complejo de poro nuclear."
     },
     {
       "pregunta": "El cariotipo de una especie se define formalmente como:",
@@ -308,7 +308,7 @@
         "la representación organizada de los cromosomas de una célula somática."
       ],
       "correcta": "D",
-      "explicacion": "El cariotipo es la sistematización ordenada de los cromosomas metafásicos de una célula somática clasificados según tamaño y centrómero."[cite: 5]
+      "explicacion": "El cariotipo es la sistematización ordenada de los cromosomas metafásicos de una célula somática clasificados según tamaño y centrómero."
     },
     {
       "pregunta": "Las leyes de la herencia mendeliana encuentran su explicación citológica en los eventos que ocurren durante la:",
@@ -319,7 +319,7 @@
         "anafase II de la meiosis."
       ],
       "correcta": "A",
-      "explicacion": "La segregación de alelos y la distribución independiente mendeliana dependen directamente de la separación de los cromosomas homólogos en anafase I."[cite: 5]
+      "explicacion": "La segregación de alelos y la distribución independiente mendeliana dependen directamente de la separación de los cromosomas homólogos en anafase I."
     },
     {
       "pregunta": "Si una mujer padece fenilcetonuria (enfermedad autosómica recesiva), la probabilidad de que sus óvulos lleven el alelo de la enfermedad es del:",
@@ -330,7 +330,7 @@
         "0%"
       ],
       "correcta": "A",
-      "explicacion": "Al estar afectada, su genotipo es homocigota recesivo (aa). Por ende, el 100% de las gametas producidas llevarán el alelo mutante 'a'."[cite: 5]
+      "explicacion": "Al estar afectada, su genotipo es homocigota recesivo (aa). Por ende, el 100% de las gametas producidas llevarán el alelo mutante 'a'."
     },
     {
       "pregunta": "Al cruzar un macho de patas largas (dominante) con una hembra de patas cortas (recesiva) nacen 250 descendientes de patas largas y 250 de patas cortas. Se deduce que el macho es:",
@@ -341,7 +341,7 @@
         "hemicigota."
       ],
       "correcta": "C",
-      "explicacion": "La obtención de una proporción 1:1 (50% dominantes y 50% recesivos) en un cruce de prueba indica que el progenitor dominante es heterocigota (Aa)."[cite: 5]
+      "explicacion": "La obtención de una proporción 1:1 (50% dominantes y 50% recesivos) en un cruce de prueba indica que el progenitor dominante es heterocigota (Aa)."
     },
     {
       "pregunta": "Sabiendo que la adrenoleucodistrofia es una enfermedad recesiva ligada al cromosoma X, se cumple que:",
@@ -352,7 +352,7 @@
         "las mujeres la manifiestan con un solo alelo recesivo."
       ],
       "correcta": "C",
-      "explicacion": "Al ser un rasgo recesivo ligado al X, las mujeres precisan la homocigosis recesiva (X d X d) para manifestar el fenotipo patológico."[cite: 5]
+      "explicacion": "Al ser un rasgo recesivo ligado al X, las mujeres precisan la homocigosis recesiva (X d X d) para manifestar el fenotipo patológico."
     },
     {
       "pregunta": "Para determinar el genotipo de un ratón macho que presenta un rasgo dominante (como la ausencia de cola), este debe cruzarse con una hembra:",
@@ -363,7 +363,7 @@
         "heterocigota para el rasgo."
       ],
       "correcta": "A",
-      "explicacion": "El cruzamiento de prueba exige aparear al individuo de genotipo incierto con un homocigota recesivo para revelar si es homocigota o heterocigota."[cite: 5]
+      "explicacion": "El cruzamiento de prueba exige aparear al individuo de genotipo incierto con un homocigota recesivo para revelar si es homocigota o heterocigota."
     },
     {
       "pregunta": "En un cruzamiento entre un individuo homocigota dominante y uno homocigota recesivo (AA x aa), se verifica que:",
@@ -374,7 +374,7 @@
         "todos los descendientes resultan ser homocigotas."
       ],
       "correcta": "A",
-      "explicacion": "La F1 de la cruza AA x aa es 100% heterocigota (Aa), expresando de manera uniforme el fenotipo del progenitor dominante."[cite: 5]
+      "explicacion": "La F1 de la cruza AA x aa es 100% heterocigota (Aa), expresando de manera uniforme el fenotipo del progenitor dominante."
     },
     {
       "pregunta": "En un cruzamiento de prueba de un individuo dihíbrido heterocigota para dos loci independientes (AaBb x aabb), se obtendrán:",
@@ -385,7 +385,7 @@
         "únicamente dos clases fenotípicas."
       ],
       "correcta": "A",
-      "explicacion": "El cruzamiento prueba de un diheterocigota da una proporción 1:1:1:1 para las cuatro combinaciones genotípicas y fenotípicas posibles."[cite: 5]
+      "explicacion": "El cruzamiento prueba de un diheterocigota da una proporción 1:1:1:1 para las cuatro combinaciones genotípicas y fenotípicas posibles."
     },
     {
       "pregunta": "¿Qué combinación de fenotipos parentales permite concebir un hijo con sangre de tipo AB y factor Rh+?",
@@ -396,7 +396,7 @@
         "Madre A+ y Padre B+"
       ],
       "correcta": "D",
-      "explicacion": "Para ser AB, un progenitor debe aportar el alelo A y el otro el alelo B. Si ambos son Rh+ heterocigotas (Rr) o homocigotas (RR), transmitirán el factor Rh+."[cite: 5]
+      "explicacion": "Para ser AB, un progenitor debe aportar el alelo A y el otro el alelo B. Si ambos son Rh+ heterocigotas (Rr) o homocigotas (RR), transmitirán el factor Rh+."
     },
     {
       "pregunta": "En organismos con reproducción exclusivamente asexual, la variabilidad genética entre individuos surge a partir de:",
@@ -407,7 +407,7 @@
         "la fecundación aleatoria de gametas."
       ],
       "correcta": "C",
-      "explicacion": "En ausencia de meiosis y fecundación sexual, las mutaciones genéticas constituyen la fuente primaria de diversidad genética en linajes asexuales."[cite: 5]
+      "explicacion": "En ausencia de meiosis y fecundación sexual, las mutaciones genéticas constituyen la fuente primaria de diversidad genética en linajes asexuales."
     },
     {
       "pregunta": "Desde la perspectiva biológica, una especie se define como un grupo de poblaciones cuyos miembros:",
@@ -418,7 +418,7 @@
         "permanecen geográficamente aislados de todo entorno."
       ],
       "correcta": "C",
-      "explicacion": "El concepto biológico de especie (Mayr) establece que la capacidad de intercruzamiento y la viabilidad de la descendencia definen los límites de una especie."[cite: 5]
+      "explicacion": "El concepto biológico de especie (Mayr) establece que la capacidad de intercruzamiento y la viabilidad de la descendencia definen los límites de una especie."
     },
     {
       "pregunta": "Dentro del marco de la Teoría Sintética de la evolución, la unidad fundamental sobre la que opera el cambio evolutivo es:",
@@ -429,7 +429,7 @@
         "la comunidad ecológica."
       ],
       "correcta": "B",
-      "explicacion": "La evolución se define formalmente como el cambio en las frecuencias alélicas del acervo génico de una población a lo largo de las generaciones."[cite: 5]
+      "explicacion": "La evolución se define formalmente como el cambio en las frecuencias alélicas del acervo génico de una población a lo largo de las generaciones."
     },
     {
       "pregunta": "Una diferencia fundamental entre la señalización endocrina y la señalización paracrina reside en que:",
@@ -440,7 +440,7 @@
         "la paracrina no utiliza receptores específicos de membrana."
       ],
       "correcta": "C",
-      "explicacion": "Las hormonas endocrinas son volcadas a la sangre para actuar lejos de su origen, mientras que las señales paracrinas difunden localmente en el intersticio."[cite: 5]
+      "explicacion": "Las hormonas endocrinas son volcadas a la sangre para actuar lejos de su origen, mientras que las señales paracrinas difunden localmente en el intersticio."
     },
     {
       "pregunta": "Las moléculas que actúan como neurotransmisores en la sinapsis química se caracterizan generalmente por ser:",
@@ -451,7 +451,7 @@
         "segundos mensajeros de acción intracelular."
       ],
       "correcta": "B",
-      "explicacion": "La mayoría de los neurotransmisores (como acetilcolina o glutamato) son hidrosolubles y activan receptores acoplados a canales o proteínas G en la superficie celular."[cite: 5]
+      "explicacion": "La mayoría de los neurotransmisores (como acetilcolina o glutamato) son hidrosolubles y activan receptores acoplados a canales o proteínas G en la superficie celular."
     },
     {
       "pregunta": "Identifique el orden correcto de los eventos iniciales en la vía de señalización de la adrenalina:",
@@ -462,7 +462,7 @@
         "Activación de la proteína G -> unión al receptor -> degradación de ATP."
       ],
       "correcta": "A",
-      "explicacion": "La adrenalina se une a su receptor beta-adrenérgico, activando a la proteína Gs que estimula a la adenilato ciclasa para producir AMPc a partir de ATP."[cite: 5]
+      "explicacion": "La adrenalina se une a su receptor beta-adrenérgico, activando a la proteína Gs que estimula a la adenilato ciclasa para producir AMPc a partir de ATP."
     },
     {
       "pregunta": "La modificación postraduccional de proteínas mediante fosforilación se caracteriza por ser:",
@@ -473,7 +473,7 @@
         "una modificación que solo ocurre dentro de los lisosomas."
       ],
       "correcta": "B",
-      "explicacion": "Las quinasas añaden fosfatos y las fosfatasas los remueven; este cambio reversible cambia la conformación y actividad de las proteínas diana."[cite: 5]
+      "explicacion": "Las quinasas añaden fosfatos y las fosfatasas los remueven; este cambio reversible cambia la conformación y actividad de las proteínas diana."
     },
     {
       "pregunta": "Tanto una hormona esteroidea como un neurotransmisor peptídico comparten la característica de que:",
@@ -484,7 +484,7 @@
         "actúan únicamente dentro del núcleo celular."
       ],
       "correcta": "B",
-      "explicacion": "Independientemente de la ubicación del receptor (membrana o intracelular), ambas señales requieren la interacción específica con un receptor."[cite: 5]
+      "explicacion": "Independientemente de la ubicación del receptor (membrana o intracelular), ambas señales requieren la interacción específica con un receptor."
     },
     {
       "pregunta": "Las proteínas que integran la lámina nuclear se caracterizan por sintetizarse en:",
@@ -495,7 +495,7 @@
         "los complejos de poro nuclear."
       ],
       "correcta": "C",
-      "explicacion": "Las láminas nucleares son proteínas citosólicas que se traducen en ribosomas libres y son importadas al núcleo mediante señales de localización nuclear (NLS)."[cite: 5]
+      "explicacion": "Las láminas nucleares son proteínas citosólicas que se traducen en ribosomas libres y son importadas al núcleo mediante señales de localización nuclear (NLS)."
     },
     {
       "pregunta": "¿Cuál de los siguientes procesos moleculares ocurre tanto en el núcleo de un eucarionte como en el citoplasma de un procarionte?",
@@ -506,7 +506,7 @@
         "La adición de la cola de poliadeninas al ARNm."
       ],
       "correcta": "A",
-      "explicacion": "La síntesis de ARNr por la ARN polimerasa es un proceso transcripcional presente tanto en el genoma nuclear eucariota como en el ADN bacteriano."[cite: 5]
+      "explicacion": "La síntesis de ARNr por la ARN polimerasa es un proceso transcripcional presente tanto en el genoma nuclear eucariota como en el ADN bacteriano."
     },
     {
       "pregunta": "En las células procariontes, a diferencia de las eucariontes, los tipos de ARN (ARNm, ARNt y ARNr) son transcriptos por:",
@@ -517,7 +517,7 @@
         "factores de transcripción específicos exclusivamente."
       ],
       "correcta": "B",
-      "explicacion": "Las bacterias poseen un único tipo de ARN polimerasa encargada de sintetizar todos los tipos de ARN celulares."[cite: 5]
+      "explicacion": "Las bacterias poseen un único tipo de ARN polimerasa encargada de sintetizar todos los tipos de ARN celulares."
     },
     {
       "pregunta": "Los llamados factores de transcripción específicos en eucariontes se definen como:",
@@ -528,7 +528,7 @@
         "componentes estructurales de la lámina nuclear."
       ],
       "correcta": "B",
-      "explicacion": "Son proteínas que reconocen elementos cis-reguladores en el ADN para aumentar o reprimir la tasa de transcripción de genes específicos."[cite: 5]
+      "explicacion": "Son proteínas que reconocen elementos cis-reguladores en el ADN para aumentar o reprimir la tasa de transcripción de genes específicos."
     },
     {
       "pregunta": "Para que la enzima ARN polimerasa bacteriana realice la transcripción, se requiere como sustrato la presencia de:",
@@ -539,7 +539,7 @@
         "cebadores de ARN previamente sintetizados."
       ],
       "correcta": "C",
-      "explicacion": "La transcripción bacteriana necesita la hebra de ADN como molde y los cuatro ribonucleótidos trifosfato (ATP, UTP, GTP, CTP) para elongar el ARN."[cite: 5]
+      "explicacion": "La transcripción bacteriana necesita la hebra de ADN como molde y los cuatro ribonucleótidos trifosfato (ATP, UTP, GTP, CTP) para elongar el ARN."
     },
     {
       "pregunta": "La hebra de ADN codificante u orientada posee respecto a la secuencia del ARNm transcrito:",
@@ -550,7 +550,7 @@
         "una secuencia idéntica incluyendo las bases de timina."
       ],
       "correcta": "A",
-      "explicacion": "La hebra codificante tiene la misma polaridad (5'->3') y secuencia de bases que el ARNm producido, con la diferencia de contener timina en vez de uracilo."[cite: 5]
+      "explicacion": "La hebra codificante tiene la misma polaridad (5'->3') y secuencia de bases que el ARNm producido, con la diferencia de contener timina en vez de uracilo."
     },
     {
       "pregunta": "Para la síntesis de una proteína eucariota madura formada por 200 aminoácidos, el transcripto primario (pre-ARNm) debió contener:",
@@ -561,7 +561,7 @@
         "más de 600 nucleótidos al incluir intrones y secuencias no traducidas."
       ],
       "correcta": "D",
-      "explicacion": "200 aminoácidos requieren 600 nucleótidos codificantes; al sumarse el codón stop, las regiones UTR y los intrones escindidos, la longitud del pre-ARNm supera 600 bases."[cite: 5]
+      "explicacion": "200 aminoácidos requieren 600 nucleótidos codificantes; al sumarse el codón stop, las regiones UTR y los intrones escindidos, la longitud del pre-ARNm supera 600 bases."
     },
     {
       "pregunta": "Un mecanismo de regulación de la expresión génica que resulta exclusivo de los organismos eucariontes es:",
@@ -572,7 +572,7 @@
         "el control inducible por metabolitos."
       ],
       "correcta": "B",
-      "explicacion": "La condensación de la cromatina en heterocromatina inactiva mediante modificaciones epigenéticas de histonas y metilación es exclusiva de eucariontes."[cite: 5]
+      "explicacion": "La condensación de la cromatina en heterocromatina inactiva mediante modificaciones epigenéticas de histonas y metilación es exclusiva de eucariontes."
     },
     {
       "pregunta": "En el operón lactosa de E. coli, el disacárido lactosa cumple la función de:",
@@ -583,7 +583,7 @@
         "codificar para la enzima beta-galactosidasa."
       ],
       "correcta": "A",
-      "explicacion": "La lactosa (convertida en alolactosa) se une al represor lacI modificando su conformación, impidiendo que se acople al operador y liberando la transcripción."[cite: 5]
+      "explicacion": "La lactosa (convertida en alolactosa) se une al represor lacI modificando su conformación, impidiendo que se acople al operador y liberando la transcripción."
     },
     {
       "pregunta": "Respecto al funcionamiento del operón triptófano en bacterias, se verifica que la proteína represora se sintetiza de forma:",
@@ -594,7 +594,7 @@
         "reprimible en presencia de glucosa."
       ],
       "correcta": "B",
-      "explicacion": "El gen regulador produce un aporrepresor inactivo que solo adquiere la conformación de unión al operador cuando se acopla al triptófano."[cite: 5]
+      "explicacion": "El gen regulador produce un aporrepresor inactivo que solo adquiere la conformación de unión al operador cuando se acopla al triptófano."
     },
     {
       "pregunta": "Si un cultivo de E. coli se desarrolla en un medio de crecimiento con alta concentración de triptófano:",
@@ -605,7 +605,7 @@
         "aumentará la síntesis de encimas biosintéticas."
       ],
       "correcta": "B",
-      "explicacion": "El exceso de triptófano activa al represor, el cual se une al operador del operón trp inhibiendo la transcripción de los genes de síntesis del aminoácido."[cite: 5]
+      "explicacion": "El exceso de triptófano activa al represor, el cual se une al operador del operón trp inhibiendo la transcripción de los genes de síntesis del aminoácido."
     }
   ]
 }

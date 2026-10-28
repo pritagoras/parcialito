@@ -11,7 +11,7 @@
         "la hidrólisis de desoxirribonucleótidos trifosfatados."
       ],
       "correcta": "B",
-      "explicacion": "La hidrólisis del enlace pirofosfato de los ribonucleótidos trifosfatados entrantes aporta la energía necesaria para la síntesis del ARN."[cite: 2]
+      "explicacion": "La hidrólisis del enlace pirofosfato de los ribonucleótidos trifosfatados entrantes aporta la energía necesaria para la síntesis del ARN."
     },
     {
       "pregunta": "Los bivalentes o tétradas se forman durante la etapa de:",
@@ -22,7 +22,7 @@
         "Profase II de la meiosis."
       ],
       "correcta": "A",
-      "explicacion": "Los cromosomas homólogos se aparean durante la profase I meiótica formando bivalentes compuestas por cuatro cromátidas."[cite: 2]
+      "explicacion": "Los cromosomas homólogos se aparean durante la profase I meiótica formando bivalentes compuestas por cuatro cromátidas."
     },
     {
       "pregunta": "En una célula somática humana diploide (2n = 46), la cantidad de moléculas de ADN nucleares será de:",
@@ -33,7 +33,7 @@
         "23 en el periodo G1 y en la profase I meiótica."
       ],
       "correcta": "A",
-      "explicacion": "Tras la duplicación en la fase S, cada uno de los 46 cromosomas posee dos cromátides hermanas, sumando 92 moléculas de ADN."[cite: 2]
+      "explicacion": "Tras la duplicación en la fase S, cada uno de los 46 cromosomas posee dos cromátides hermanas, sumando 92 moléculas de ADN."
     },
     {
       "pregunta": "Un ARN mensajero policistrónico se define funcionalmente por:",
@@ -44,7 +44,7 @@
         "poseer un solo marco de lectura para un único polipéptido."
       ],
       "correcta": "B",
-      "explicacion": "Los ARNm policistrónicos, típicos de procariontes, poseen múltiples regiones codificantes traducidas a diferentes proteínas."[cite: 2]
+      "explicacion": "Los ARNm policistrónicos, típicos de procariontes, poseen múltiples regiones codificantes traducidas a diferentes proteínas."
     },
     {
       "pregunta": "La enzima responsable de reconocer la secuencia promotora de un gen para iniciar la síntesis de ARN es la:",
@@ -55,7 +55,7 @@
         "ADN polimerasa."
       ],
       "correcta": "C",
-      "explicacion": "La ARN polimerasa se une a la región promotora del ADN para iniciar la transcripción de las cadenas nucleotídicas."[cite: 2]
+      "explicacion": "La ARN polimerasa se une a la región promotora del ADN para iniciar la transcripción de las cadenas nucleotídicas."
     },
     {
       "pregunta": "Respecto a las características estructurales del código genético, es correcto afirmar que:",
@@ -66,7 +66,7 @@
         "es degenerado, no ambiguo y prácticamente universal."
       ],
       "correcta": "D",
-      "explicacion": "El código genético se organiza en codones de tres nucleótidos, es degenerado por presentar codones sinónimos y es compartido por casi todos los organismos."[cite: 2]
+      "explicacion": "El código genético se organiza en codones de tres nucleótidos, es degenerado por presentar codones sinónimos y es compartido por casi todos los organismos."
     },
     {
       "pregunta": "El proceso de transcripción celular se clasifica metabólicamente como:",
@@ -77,7 +77,7 @@
         "anabólico y exergónico."
       ],
       "correcta": "B",
-      "explicacion": "La transcripción es una vía anabólica de biosíntesis de polímeros que requiere un aporte de energía química."[cite: 2]
+      "explicacion": "La transcripción es una vía anabólica de biosíntesis de polímeros que requiere un aporte de energía química."
     },
     {
       "pregunta": "Un individuo heterocigota para dos genes independientes (AaBb) ubicados en distintos pares de homólogos producirá las gametas:",
@@ -88,7 +88,7 @@
         "Ab y aB exclusivamente."
       ],
       "correcta": "C",
-      "explicacion": "Debido a la segregación independiente de loci no ligados, el diheterocigota produce cuatro tipos de gametas en igual proporción."[cite: 2]
+      "explicacion": "Debido a la segregación independiente de loci no ligados, el diheterocigota produce cuatro tipos de gametas en igual proporción."
     },
     {
       "pregunta": "Durante la síntesis de ARN en el proceso transcripcional, la ARN polimerasa:",
@@ -99,7 +99,7 @@
         "requiere la presencia de un cebador de ARN para iniciar el proceso."
       ],
       "correcta": "C",
-      "explicacion": "La ARN polimerasa sintetiza ARN incorporando ribonucleótidos por complementariedad de bases frente a la hebra molde de ADN."[cite: 2]
+      "explicacion": "La ARN polimerasa sintetiza ARN incorporando ribonucleótidos por complementariedad de bases frente a la hebra molde de ADN."
     },
     {
       "pregunta": "Al concluir la segunda división meiótica en la especie humana, cada célula resultante contiene:",
@@ -110,7 +110,7 @@
         "23 cromosomas simples y 23 moléculas de ADN."
       ],
       "correcta": "D",
-      "explicacion": "La meiosis II separa las cromátides hermanas, generando células haploides con 23 cromosomas no duplicados."[cite: 2]
+      "explicacion": "La meiosis II separa las cromátides hermanas, generando células haploides con 23 cromosomas no duplicados."
     },
     {
       "pregunta": "El proceso morfogenético mediante el cual una espermátida se transforma en un espermatozoide funcional se denomina:",
@@ -121,7 +121,7 @@
         "meiosis II."
       ],
       "correcta": "C",
-      "explicacion": "La espermiogénesis es una fase de diferenciación estructural sin divisiones celulares que convierte la espermátida en espermatozoide."[cite: 2]
+      "explicacion": "La espermiogénesis es una fase de diferenciación estructural sin divisiones celulares que convierte la espermátida en espermatozoide."
     },
     {
       "pregunta": "Respecto a la biología de los retrovirus, es correcto sostener que:",
@@ -132,7 +132,7 @@
         "requieren solo de ADN polimerasas celulares para su replicación."
       ],
       "correcta": "B",
-      "explicacion": "Los retrovirus poseen un genoma de ARN y utilizan la enzima transcriptasa inversa para copiar su información a ADN."[cite: 2]
+      "explicacion": "Los retrovirus poseen un genoma de ARN y utilizan la enzima transcriptasa inversa para copiar su información a ADN."
     },
     {
       "pregunta": "El proceso de maduración o procesamiento del transcripto primario de ARNm en eucariontes incluye:",
@@ -143,7 +143,7 @@
         "el empaquetamiento directo con histonas citoplasmáticas."
       ],
       "correcta": "A",
-      "explicacion": "El procesamiento del pre-ARNm eucarionte ocurre en el núcleo e involucra el splicing (remoción de intrones), el capping 5' y la adición de la cola poli-A en 3'."[cite: 2]
+      "explicacion": "El procesamiento del pre-ARNm eucarionte ocurre en el núcleo e involucra el splicing (remoción de intrones), el capping 5' y la adición de la cola poli-A en 3'."
     },
     {
       "pregunta": "El evento de terminación de la traducción en el ribosoma se desencadena cuando:",
@@ -154,7 +154,7 @@
         "un codón de terminación ingresa y se posiciona en el sitio A."
       ],
       "correcta": "D",
-      "explicacion": "Cuando un codón de terminación (UAA, UAG o UGA) ingresa al sitio A, es reconocido por un factor de liberación que hidroliza el complejo."[cite: 2]
+      "explicacion": "Cuando un codón de terminación (UAA, UAG o UGA) ingresa al sitio A, es reconocido por un factor de liberación que hidroliza el complejo."
     },
     {
       "pregunta": "El crossing-over y la separación de las cromátidas recombinantes toman lugar respectivamente en:",
@@ -165,7 +165,7 @@
         "Profase I y Telofase II meiótica."
       ],
       "correcta": "A",
-      "explicacion": "El entrecruzamiento o crossing-over ocurre en el paquitene de la profase I, mientras que las cromátidas recombinantes se segregan en la anafase II."[cite: 2]
+      "explicacion": "El entrecruzamiento o crossing-over ocurre en el paquitene de la profase I, mientras que las cromátidas recombinantes se segregan en la anafase II."
     },
     {
       "pregunta": "Una célula somática masculina que iniciará la mitosis contiene en su núcleo:",
@@ -176,7 +176,7 @@
         "24 pares de cromosomas duplicados homólogos."
       ],
       "correcta": "A",
-      "explicacion": "Una célula somática humana masculina cuenta con 44 autosomas y 2 cromosomas sexuales (XY), los cuales se encuentran duplicados tras la fase S."[cite: 2]
+      "explicacion": "Una célula somática humana masculina cuenta con 44 autosomas y 2 cromosomas sexuales (XY), los cuales se encuentran duplicados tras la fase S."
     },
     {
       "pregunta": "Los distintos tipos de ARN (ARNm, ARNt y ARNr) se sintetizan a través del proceso de:",
@@ -187,7 +187,7 @@
         "retrotranscripción."
       ],
       "correcta": "B",
-      "explicacion": "Todos los tipos de ARN celulares son generados por las ARN polimerasas mediante la transcripción de secuencias específicas de ADN."[cite: 2]
+      "explicacion": "Todos los tipos de ARN celulares son generados por las ARN polimerasas mediante la transcripción de secuencias específicas de ADN."
     },
     {
       "pregunta": "Dentro de las funciones generales asociadas al citosol celular se encuentra la de:",
@@ -198,7 +198,7 @@
         "sintetizar lípidos de membrana en ausencia de orgánulos."
       ],
       "correcta": "C",
-      "explicacion": "El citosol actúa como la matriz acuosa donde suceden múltiples rutas metabólicas y se almacenan nutrientes e inclusiones como el glucógeno."[cite: 2]
+      "explicacion": "El citosol actúa como la matriz acuosa donde suceden múltiples rutas metabólicas y se almacenan nutrientes e inclusiones como el glucógeno."
     },
     {
       "pregunta": "Los filamentos intermedios del citoesqueleto se caracterizan por presentar un diámetro de aproximadamente:",
@@ -209,7 +209,7 @@
         "50 nm."
       ],
       "correcta": "C",
-      "explicacion": "Los filamentos intermedios poseen un grosor promedio de 10 nm, intermedio entre los filamentos de actina (7 nm) y los microtúbulos (25 nm)."[cite: 2]
+      "explicacion": "Los filamentos intermedios poseen un grosor promedio de 10 nm, intermedio entre los filamentos de actina (7 nm) y los microtúbulos (25 nm)."
     },
     {
       "pregunta": "El cuerpo basal es una estructura subcelular cuya función principal es:",
@@ -220,7 +220,7 @@
         "sintetizar componentes proteicos de la matriz extracelular."
       ],
       "correcta": "A",
-      "explicacion": "El cuerpo basal es un centro organizador de microtúbulos especializado que ancla y estructura el axonema ciliar y flagelar."[cite: 2]
+      "explicacion": "El cuerpo basal es un centro organizador de microtúbulos especializado que ancla y estructura el axonema ciliar y flagelar."
     },
     {
       "pregunta": "Respecto a las características y propiedades del citosol, es correcto afimar que:",
@@ -231,7 +231,7 @@
         "se encuentra en un estado inmutable de gel rígido."
       ],
       "correcta": "C",
-      "explicacion": "El citosol es una solución coloidal dinámica cuyos componentes, estado sol-gel y organización varían con el tipo celular y las necesidades metabólicas."[cite: 2]
+      "explicacion": "El citosol es una solución coloidal dinámica cuyos componentes, estado sol-gel y organización varían con el tipo celular y las necesidades metabólicas."
     },
     {
       "pregunta": "El glucógeno acumulado en el tejido muscular esquelético se caracteriza por:",
@@ -242,7 +242,7 @@
         "ser una reserva lipídica de lenta movilización."
       ],
       "correcta": "B",
-      "explicacion": "El glucógeno muscular es un polisacárido de glucosa que actúa como reserva de rápida movilización y puede depletarse durante la actividad intensa."[cite: 2]
+      "explicacion": "El glucógeno muscular es un polisacárido de glucosa que actúa como reserva de rápida movilización y puede depletarse durante la actividad intensa."
     },
     {
       "pregunta": "Respecto a la composición y estructura de los ribosomas celulares, es correcto afirmar que:",
@@ -253,7 +253,7 @@
         "poseen una sola subunidad de alto peso molecular."
       ],
       "correcta": "C",
-      "explicacion": "Los ribosomas son complejos supramoleculares integrados por proteínas ribosómicas y moléculas de ARN ribosomal (ARNr)."[cite: 2]
+      "explicacion": "Los ribosomas son complejos supramoleculares integrados por proteínas ribosómicas y moléculas de ARN ribosomal (ARNr)."
     },
     {
       "pregunta": "El colágeno es una macrolecúla de la matriz extracelular clasificada como una:",
@@ -264,7 +264,7 @@
         "proteína de transporte plasmático de oxígeno."
       ],
       "correcta": "B",
-      "explicacion": "El colágeno forma fibras insolubles de gran rigidez que otorgan resistencia estructural a los tejidos conectivos."[cite: 2]
+      "explicacion": "El colágeno forma fibras insolubles de gran rigidez que otorgan resistencia estructural a los tejidos conectivos."
     },
     {
       "pregunta": "La señalización mediada por la hormona glucagón utiliza como segundo mensajero intracelular al:",
@@ -275,7 +275,7 @@
         "Inositol trifosfato (IP3)."
       ],
       "correcta": "A",
-      "explicacion": "El glucagón se une a un receptor acoplado a proteína Gs que activa a la adenilato ciclasa para elevar los niveles de AMPc."[cite: 2]
+      "explicacion": "El glucagón se une a un receptor acoplado a proteína Gs que activa a la adenilato ciclasa para elevar los niveles de AMPc."
     },
     {
       "pregunta": "Las uniones celulares de tipo desmosoma se caracterizan por anclarse intracelularmente a:",
@@ -286,7 +286,7 @@
         "los componentes fibrosos de la lámina basal."
       ],
       "correcta": "B",
-      "explicacion": "Los desmosomas otorgan resistencia mecánica conectando las redes de filamentos intermedios entre células adyacentes."[cite: 2]
+      "explicacion": "Los desmosomas otorgan resistencia mecánica conectando las redes de filamentos intermedios entre células adyacentes."
     },
     {
       "pregunta": "Son componentes proteicos propios de la matriz extracelular:",
@@ -297,7 +297,7 @@
         "la miosina y la queratina."
       ],
       "correcta": "B",
-      "explicacion": "Tanto la elastina como la fibronectina son proteínas estructurales y adhesivas secretadas al espacio extracelular."[cite: 2]
+      "explicacion": "Tanto la elastina como la fibronectina son proteínas estructurales y adhesivas secretadas al espacio extracelular."
     },
     {
       "pregunta": "La proteína elastina se destaca por atribuirle a los tejidos la propiedad de:",
@@ -308,7 +308,7 @@
         "fluidez plasmática extracelular."
       ],
       "correcta": "B",
-      "explicacion": "La elastina confiere elasticidad permitiendo que tejidos como arterias y pulmones recuperen su forma tras la deformación."[cite: 2]
+      "explicacion": "La elastina confiere elasticidad permitiendo que tejidos como arterias y pulmones recuperen su forma tras la deformación."
     },
     {
       "pregunta": "El condroitín sulfato es un componente de la matriz extracelular perteneciente al grupo de los:",
@@ -319,7 +319,7 @@
         "microfilamentos estructurales."
       ],
       "correcta": "A",
-      "explicacion": "El condroitín sulfato es un glucosaminoglucano sulfatado esencial en la matriz de cartílagos, tendones y tejidos de sostén."[cite: 2]
+      "explicacion": "El condroitín sulfato es un glucosaminoglucano sulfatado esencial en la matriz de cartílagos, tendones y tejidos de sostén."
     },
     {
       "pregunta": "La eucromatina se distingue de la heterocromatina por presentar:",
@@ -330,7 +330,7 @@
         "ausencia total de proteínas histonas asociadas."
       ],
       "correcta": "A",
-      "explicacion": "La eucromatina está menos condensada durante la interfase, permitiendo el acceso de la ARN polimerasa para la transcripción."[cite: 2]
+      "explicacion": "La eucromatina está menos condensada durante la interfase, permitiendo el acceso de la ARN polimerasa para la transcripción."
     },
     {
       "pregunta": "¿Cuál de las siguientes estructuras NO forma parte de la anatomía de un cromosoma eucarionte?",
@@ -341,7 +341,7 @@
         "Centrómero"
       ],
       "correcta": "C",
-      "explicacion": "El término protómero refiere a una subunidad proteica estructural y no a un elemento constitutivo de la arquitectura cromosómica."[cite: 2]
+      "explicacion": "El término protómero refiere a una subunidad proteica estructural y no a un elemento constitutivo de la arquitectura cromosómica."
     },
     {
       "pregunta": "La envoltura nuclear se diferencia de otras membranas por estar constituida por:",
@@ -352,7 +352,7 @@
         "tres membranas lipídicas concéntricas."
       ],
       "correcta": "B",
-      "explicacion": "El núcleo está delimitado por una envoltura formada por dos membranas concéntricas (interna y externa) interrumpidas por poros nucleares."[cite: 2]
+      "explicacion": "El núcleo está delimitado por una envoltura formada por dos membranas concéntricas (interna y externa) interrumpidas por poros nucleares."
     },
     {
       "pregunta": "¿Cuál de las siguientes funciones NO corresponde a las regiones teloméricas del cromosoma?",
@@ -363,7 +363,7 @@
         "Permitir la duplicación completa del ADN en los extremos."
       ],
       "correcta": "B",
-      "explicacion": "El cinetócoro es una estructura proteica que se ensambla en la región del centrómero, no en los telómeros terminales."[cite: 2]
+      "explicacion": "El cinetócoro es una estructura proteica que se ensambla en la región del centrómero, no en los telómeros terminales."
     },
     {
       "pregunta": "Los cromosomas cuyo centrómero se ubica en posición central dividiendo al cromosoma en dos brazos de igual longitud son:",
@@ -374,7 +374,7 @@
         "telocéntricos."
       ],
       "correcta": "B",
-      "explicacion": "En los cromosomas metacéntricos, el centrómero se localiza en el punto medio, resultando en brazos de proporciones equivalentes."[cite: 2]
+      "explicacion": "En los cromosomas metacéntricos, el centrómero se localiza en el punto medio, resultando en brazos de proporciones equivalentes."
     },
     {
       "pregunta": "El empaquetamiento y condensación progresiva de la cromatina para formar cromosomas visibles tiene como función principal:",
@@ -385,7 +385,7 @@
         "promover la síntesis proteica citoplasmática."
       ],
       "correcta": "B",
-      "explicacion": "La compactación cromosómica en la fase M evita el enredo de las hebras de ADN y garantiza su correcta separación hacia los polos."[cite: 2]
+      "explicacion": "La compactación cromosómica en la fase M evita el enredo de las hebras de ADN y garantiza su correcta separación hacia los polos."
     },
     {
       "pregunta": "Los factores de transcripción basales o generales intervienen en la expresión génica mediante:",
@@ -396,7 +396,7 @@
         "la adición de la cola de poliadeninas al ARN mensajero."
       ],
       "correcta": "A",
-      "explicacion": "Los factores basales son indispensables para dirigir a la ARN polimerasa al sitio promotor y constituir el complejo de iniciación básico."[cite: 2]
+      "explicacion": "Los factores basales son indispensables para dirigir a la ARN polimerasa al sitio promotor y constituir el complejo de iniciación básico."
     },
     {
       "pregunta": "Durante la síntesis del transcripto de ARN, la ARN polimerasa se desplaza recorriendo:",
@@ -407,7 +407,7 @@
         "el transcripto de ARN en dirección 3' a 5'."
       ],
       "correcta": "A",
-      "explicacion": "La enzima lee la hebra molde en dirección 3'->5' para poder polimerizar la nueva cadena de ARN en dirección antiparalela 5'->3'."[cite: 2]
+      "explicacion": "La enzima lee la hebra molde en dirección 3'->5' para poder polimerizar la nueva cadena de ARN en dirección antiparalela 5'->3'."
     },
     {
       "pregunta": "Las tres etapas consecutivas que definen el proceso de transcripción son:",
@@ -418,7 +418,7 @@
         "maduración, traducción y plegamiento."
       ],
       "correcta": "B",
-      "explicacion": "La transcripción se divide formalmente en iniciación (unión al promotor), elongación (síntesis del ARN) y terminación."[cite: 2]
+      "explicacion": "La transcripción se divide formalmente en iniciación (unión al promotor), elongación (síntesis del ARN) y terminación."
     },
     {
       "pregunta": "Los nucleosomas son unidades estructurales del material genético presentes en:",
@@ -429,7 +429,7 @@
         "bacterias y arqueas de forma idéntica."
       ],
       "correcta": "B",
-      "explicacion": "La organización de la cromatina en nucleosomas mediante proteínas histonas es un rasgo característico de las células eucariontes."[cite: 2]
+      "explicacion": "La organización de la cromatina en nucleosomas mediante proteínas histonas es un rasgo característico de las células eucariontes."
     },
     {
       "pregunta": "Para llevar a cabo el proceso de transcripción génica se requiere indiscutiblemente de:",
@@ -440,7 +440,7 @@
         "ribosomas y aminoácidos activados."
       ],
       "correcta": "B",
-      "explicacion": "La transcripción precisa de una ARN polimerasa funcional y de ribonucleótidos trifosfato (ATP, CTP, GTP, UTP) como bloques estructurales."[cite: 2]
+      "explicacion": "La transcripción precisa de una ARN polimerasa funcional y de ribonucleótidos trifosfato (ATP, CTP, GTP, UTP) como bloques estructurales."
     },
     {
       "pregunta": "La reacción de activación y carga de un aminoácido en su correspondiente ARNt se caracteriza por:",
@@ -451,7 +451,7 @@
         "ser una reacción espontánea que no requiere catálisis enzimática."
       ],
       "correcta": "B",
-      "explicacion": "La aminoacil-ARNt sintetasa une el aminoácido al ATP formando un intermediario activado y luego lo transfiere al extremo 3' del ARNt."[cite: 2]
+      "explicacion": "La aminoacil-ARNt sintetasa une el aminoácido al ATP formando un intermediario activado y luego lo transfiere al extremo 3' del ARNt."
     },
     {
       "pregunta": "En el ciclo celular eucarionte, la verificación del tamaño celular, disponibilidad de nutrientes y daño en el ADN ocurre en el control de la fase:",
@@ -462,7 +462,7 @@
         "Metafase"
       ],
       "correcta": "B",
-      "explicacion": "El punto de control G1 (punto de restricción) evalúa las condiciones ambientales, el tamaño y la integridad del ADN antes de autorizar la duplicación."[cite: 2]
+      "explicacion": "El punto de control G1 (punto de restricción) evalúa las condiciones ambientales, el tamaño y la integridad del ADN antes de autorizar la duplicación."
     },
     {
       "pregunta": "Los tres puntos de control principales del ciclo celular se encuentran localizados entre:",
@@ -473,7 +473,7 @@
         "G1/S, S/G2 y en la Anafase."
       ],
       "correcta": "A",
-      "explicacion": "Los puntos de verificación clave regulan la entrada a replicación (G1/S), el ingreso a mitosis (G2/M) y la correcta alineación cromosómica (punto de chequeo del huso)."[cite: 2]
+      "explicacion": "Los puntos de verificación clave regulan la entrada a replicación (G1/S), el ingreso a mitosis (G2/M) y la correcta alineación cromosómica (punto de chequeo del huso)."
     },
     {
       "pregunta": "Durante la fase M de la mitosis, las cromátidas hermanas permanecen estrechamente asociadas gracias a complejos proteicos denominados:",
@@ -484,7 +484,7 @@
         "cinesinas."
       ],
       "correcta": "A",
-      "explicacion": "Las cohesinas forman anillos proteicos que mantienen unidas a las cromátidas hermanas desde la fase S hasta su escisión en anafase."[cite: 2]
+      "explicacion": "Las cohesinas forman anillos proteicos que mantienen unidas a las cromátidas hermanas desde la fase S hasta su escisión en anafase."
     },
     {
       "pregunta": "La separación física y migración de las cromátidas hermanas hacia polos opuestos es un evento característico de la:",
@@ -495,7 +495,7 @@
         "telofase mitótica."
       ],
       "correcta": "C",
-      "explicacion": "Durante la anafase se inactivan las cohesinas centroméricas, permitiendo que las cromátidas se separen y migren a los polos opuestos impulsadas por el huso."[cite: 2]
+      "explicacion": "Durante la anafase se inactivan las cohesinas centroméricas, permitiendo que las cromátidas se separen y migren a los polos opuestos impulsadas por el huso."
     },
     {
       "pregunta": "Un hombre es hemofílico (enfermedad recesiva ligada al cromosoma X). Sabiendo que su madre era portadora y su padre sano, se concluye que el alelo mutado:",
@@ -506,7 +506,7 @@
         "fue aportado por el gameto paterno en el cromosoma X."
       ],
       "correcta": "B",
-      "explicacion": "Los varones heredan de su madre el cromosoma X. Al ser la madre portadora (XH Xh), transmitió el cromosoma Xh afectado a su hijo."[cite: 2]
+      "explicacion": "Los varones heredan de su madre el cromosoma X. Al ser la madre portadora (XH Xh), transmitió el cromosoma Xh afectado a su hijo."
     },
     {
       "pregunta": "La alineación cromosómica en la placa ecuatorial del huso mitótico sucede durante la:",
@@ -517,7 +517,7 @@
         "telofase."
       ],
       "correcta": "B",
-      "explicacion": "En la metafase, los cromosomas alcanzan su máxima condensación y se ubican alineados en el plano plano ecuatorial de la célula."[cite: 2]
+      "explicacion": "En la metafase, los cromosomas alcanzan su máxima condensación y se ubican alineados en el plano plano ecuatorial de la célula."
     },
     {
       "pregunta": "Cuando en un individuo heterocigota se expresan de manera simultánea y detectable los fenotipos de ambos alelos codificantes, se habla de:",
@@ -528,7 +528,7 @@
         "herencia poligénica."
       ],
       "correcta": "B",
-      "explicacion": "En la codominancia ambos alelos se manifiestan por completo en el heterocigota sin enmascararse ni mezclarse (ej. grupo sanguíneo AB)."[cite: 2]
+      "explicacion": "En la codominancia ambos alelos se manifiestan por completo en el heterocigota sin enmascararse ni mezclarse (ej. grupo sanguíneo AB)."
     },
     {
       "pregunta": "La integración de la teoría de la selección natural de Darwin con las leyes de la genética mendeliana se conoce como:",
@@ -539,7 +539,7 @@
         "Lamarckismo moderno."
       ],
       "correcta": "A",
-      "explicacion": "La teoría sintética combina los mecanismos de selección natural con la genética de poblaciones y la herencia mendeliana para explicar la evolución."[cite: 2]
+      "explicacion": "La teoría sintética combina los mecanismos de selección natural con la genética de poblaciones y la herencia mendeliana para explicar la evolución."
     },
     {
       "pregunta": "Para la síntesis de un polipéptido de 80 aminoácidos en un eucarionte, el ARNm maduro requerirá de una longitud mínima de:",
@@ -550,7 +550,7 @@
         "exactamente 160 nucleótidos."
       ],
       "correcta": "C",
-      "explicacion": "80 aminoácidos precisan 240 nucleótidos (80 codones de 3 bases), más el codón de parada y las regiones UTR no traducidas en ambos extremos."[cite: 2]
+      "explicacion": "80 aminoácidos precisan 240 nucleótidos (80 codones de 3 bases), más el codón de parada y las regiones UTR no traducidas en ambos extremos."
     },
     {
       "pregunta": "Los ARN mensajeros de origen procarionte se caracterizan por ser frecuentemente policistrónicos, lo que significa que:",
@@ -561,7 +561,7 @@
         "solo pueden ser traducidos por un ribosoma a la vez."
       ],
       "correcta": "B",
-      "explicacion": "Un ARNm policistrónico alberga múltiples marcos abiertos de lectura que permiten traducir varias proteínas independientes a partir de una única molécula de ARN."[cite: 2]
+      "explicacion": "Un ARNm policistrónico alberga múltiples marcos abiertos de lectura que permiten traducir varias proteínas independientes a partir de una única molécula de ARN."
     },
     {
       "pregunta": "En la estructura de los genes eucariontes se cumple que:",
@@ -572,7 +572,7 @@
         "los exones permanecen dentro del núcleo celular sin ser exportados."
       ],
       "correcta": "A",
-      "explicacion": "Tanto exones como intrones se transcriben en el ARN precursor, pero los intrones son escindidos en el núcleo antes de la traducción citoplasmática."[cite: 2]
+      "explicacion": "Tanto exones como intrones se transcriben en el ARN precursor, pero los intrones son escindidos en el núcleo antes de la traducción citoplasmática."
     },
     {
       "pregunta": "La enzima aminoacil-ARNt sintetasa cumple la función de:",
@@ -583,7 +583,7 @@
         "unir los factores de terminación al codón stop."
       ],
       "correcta": "B",
-      "explicacion": "Esta enzima garantiza la fidelidad de la traducción acoplando correctamente cada aminoácido a su ARNt cognado consumiendo ATP."[cite: 2]
+      "explicacion": "Esta enzima garantiza la fidelidad de la traducción acoplando correctamente cada aminoácido a su ARNt cognado consumiendo ATP."
     },
     {
       "pregunta": "Durante la fase de elongación proteica, el fenómeno de translocación ribosómica consiste en:",
@@ -594,7 +594,7 @@
         "la liberación de la cadena peptídica sintetizada."
       ],
       "correcta": "D",
-      "explicacion": "En la translocación, el ribosoma avanza exactamente tres nucleótidos (un codón) en dirección 5'->3', moviendo los ARNt entre los sitios A, P y E."[cite: 2]
+      "explicacion": "En la translocación, el ribosoma avanza exactamente tres nucleótidos (un codón) en dirección 5'->3', moviendo los ARNt entre los sitios A, P y E."
     },
     {
       "pregunta": "El operón lactosa en la bacteria Escherichia coli es un ejemplo de sistema de:",
@@ -605,7 +605,7 @@
         "transporte activo de azúcares a través de vesículas."
       ],
       "correcta": "A",
-      "explicacion": "El operón lac es el modelo clásico de control inducible de la transcripción en bacterias en respuesta a nutrientes disponibles."[cite: 2]
+      "explicacion": "El operón lac es el modelo clásico de control inducible de la transcripción en bacterias en respuesta a nutrientes disponibles."
     },
     {
       "pregunta": "El mecanismo de splicing alternativo permite:",
@@ -616,7 +616,7 @@
         "traducir un ARN mensajero dentro del nucléolo."
       ],
       "correcta": "A",
-      "explicacion": "Mediante el ordenamiento variable de exones, un único pre-ARNm puede dar origen a diferentes isoformas de ARN mensajero maduro y proteínas."[cite: 2]
+      "explicacion": "Mediante el ordenamiento variable de exones, un único pre-ARNm puede dar origen a diferentes isoformas de ARN mensajero maduro y proteínas."
     },
     {
       "pregunta": "Las enzimas topoisomerasas desempeñan un papel crucial durante la replicación del ADN al:",
@@ -627,7 +627,7 @@
         "romper los puentes de hidrógeno entre bases nitrogenadas."
       ],
       "correcta": "B",
-      "explicacion": "Las topoisomerasas realizan cortes transitorios en el esqueleto fosfodiéster para liberar el estrés de torsión por delante de la horquilla."[cite: 2]
+      "explicacion": "Las topoisomerasas realizan cortes transitorios en el esqueleto fosfodiéster para liberar el estrés de torsión por delante de la horquilla."
     },
     {
       "pregunta": "Durante la fase S de la interfase celular ocurren los siguientes eventos clave:",
@@ -638,7 +638,7 @@
         "el ensamblaje del huso acromático y alineación ecuatorial."
       ],
       "correcta": "A",
-      "explicacion": "En la fase S se duplica el genoma y de forma acoplada se sintetizan las histonas para empaquetar el nuevo ADN."[cite: 2]
+      "explicacion": "En la fase S se duplica el genoma y de forma acoplada se sintetizan las histonas para empaquetar el nuevo ADN."
     },
     {
       "pregunta": "Las proteínas ciclinas participan en el control del ciclo celular caracterizándose por:",
@@ -649,7 +649,7 @@
         "destruir directamente a las enzimas CDK tras la división."
       ],
       "correcta": "A",
-      "explicacion": "Las concentraciones de ciclinas fluctúan marcadamente según la fase del ciclo, activando transitoriamente a las quinasas dependientes de ciclinas (CDK)."[cite: 2]
+      "explicacion": "Las concentraciones de ciclinas fluctúan marcadamente según la fase del ciclo, activando transitoriamente a las quinasas dependientes de ciclinas (CDK)."
     },
     {
       "pregunta": "El estado de condensación máxima de la cromatina nuclear se observa durante la:",
@@ -660,7 +660,7 @@
         "fase G2 de la interfase."
       ],
       "correcta": "C",
-      "explicacion": "Durante la metafase mitótica o meiótica, los cromosomas alcanzan su nivel más alto de empaquetamiento y condensación."[cite: 2]
+      "explicacion": "Durante la metafase mitótica o meiótica, los cromosomas alcanzan su nivel más alto de empaquetamiento y condensación."
     },
     {
       "pregunta": "Dos células somáticas diferenciadas (como un hepatocito y un miocito) provenientes de un mismo individuo poseen:",
@@ -671,7 +671,7 @@
         "diferente cantidad de ADN en la misma fase del ciclo."
       ],
       "correcta": "C",
-      "explicacion": "Todas las células somáticas no mutadas de un individuo comparten el mismo genoma diploide, variando únicamente su patrón de expresión génica."[cite: 2]
+      "explicacion": "Todas las células somáticas no mutadas de un individuo comparten el mismo genoma diploide, variando únicamente su patrón de expresión génica."
     },
     {
       "pregunta": "La síntesis asimétrica con una hebra adelantada y una retrasada durante la replicación del ADN se debe a que:",
@@ -682,7 +682,7 @@
         "las helicasas solo desnaturalizan una hebra a la vez."
       ],
       "correcta": "B",
-      "explicacion": "Dado el carácter antiparalelo del ADN y la limitación de la ADN polimerasa de polimerizar únicamente en sentido 5'->3', una hebra se copia discontinuamente."[cite: 2]
+      "explicacion": "Dado el carácter antiparalelo del ADN y la limitación de la ADN polimerasa de polimerizar únicamente en sentido 5'->3', una hebra se copia discontinuamente."
     },
     {
       "pregunta": "La enzima ADN ligasa es esencial en la duplicación del ADN porque cumple la función de:",
@@ -693,7 +693,7 @@
         "remplazar los ribonucleótidos por desoxirribonucleótidos."
       ],
       "correcta": "D",
-      "explicacion": "La ADN ligasa sella las muescas monohebraicas en el esqueleto de azúcares y fosfatos uniendo el extremo 3'-OH con el 5'-fosfato adyacente."[cite: 2]
+      "explicacion": "La ADN ligasa sella las muescas monohebraicas en el esqueleto de azúcares y fosfatos uniendo el extremo 3'-OH con el 5'-fosfato adyacente."
     },
     {
       "pregunta": "Para que la enzima ADN polimerasa pueda comenzar la síntesis de una nueva hebra de ADN se requiere fundamentalmente de:",
@@ -704,7 +704,7 @@
         "la degradación previa de las histonas del nucleosoma."
       ],
       "correcta": "B",
-      "explicacion": "Las ADN polimerasas no pueden iniciar cadenas de novo y necesitan un cebador o primer que provea un grupo 3'-OH libre para elongar."[cite: 2]
+      "explicacion": "Las ADN polimerasas no pueden iniciar cadenas de novo y necesitan un cebador o primer que provea un grupo 3'-OH libre para elongar."
     },
     {
       "pregunta": "La duplicación del material genético de un cromosoma durante la fase S da como resultado la formación de:",
@@ -715,7 +715,7 @@
         "una tétrada o bivalente meiótica."
       ],
       "correcta": "C",
-      "explicacion": "La replicación de un cromosoma genera dos copias idénticas llamadas cromátides hermanas, que se mantienen unidas hasta la anafase."[cite: 2]
+      "explicacion": "La replicación de un cromosoma genera dos copias idénticas llamadas cromátides hermanas, que se mantienen unidas hasta la anafase."
     }
   ]
 }
