@@ -135,6 +135,33 @@ export function abrirCantidadADN({app,volver}={}){
       '<div class="adn-practica-acciones">'+(revisadaPractica?'<button type="button" class="adn-accion primaria" data-practica-siguiente>'+(indicePractica===preguntasPractica.length-1?'Ver resultado':'Siguiente pregunta')+' →</button>':'<button type="button" class="adn-accion primaria" data-practica-comprobar '+(seleccionPractica===null?'disabled':'')+'>Comprobar respuesta</button>')+'</div>')+'</section>';
   }
 
+
+  let dibujoModo='mitosis';
+  let dibujoPuntos=[];
+  const dibujoModelos={
+    mitosis:{labels:['G₁','S','G₂','Profase','Metafase','Anafase','Citocinesis'],values:[2,4,4,4,4,2,2]},
+    meiosis:{labels:['G₁','S','G₂','Profase I','Metafase I','Meiosis I','Profase II','Metafase II','Meiosis II','Gameto'],values:[2,4,4,4,4,2,2,2,1,1]}
+  };
+  function dibujoHTML(){
+    const m=dibujoModelos[dibujoModo], w=640,h=260,left=48,right=18,top=22,bottom=48;
+    const xs=m.labels.map((_,i)=>left+i*(w-left-right)/(m.labels.length-1));
+    const y=v=>top+(4-v)*(h-top-bottom)/3;
+    const ref=m.values.map((v,i)=>(i?'L':'M')+xs[i]+' '+y(v)).join(' ');
+    const trazos=dibujoPuntos.slice(1).map((p,i)=>{
+      const a=dibujoPuntos[i],correcto=a.value===m.values[a.index]&&p.value===m.values[p.index];
+      return '<line x1="'+xs[a.index]+'" y1="'+y(a.value)+'" x2="'+xs[p.index]+'" y2="'+y(p.value)+'" stroke="'+(correcto?'#20b981':'#ef4444')+'" stroke-width="4" stroke-linecap="round"/>';
+    }).join('');
+    const pts=dibujoPuntos.map(p=>'<circle cx="'+xs[p.index]+'" cy="'+y(p.value)+'" r="5" fill="'+(p.value===m.values[p.index]?'#20b981':'#ef4444')+'"/>').join('');
+    const grid=[1,2,3,4].map(v=>'<g><line x1="'+left+'" y1="'+y(v)+'" x2="'+(w-right)+'" y2="'+y(v)+'" stroke="#8992a3" stroke-opacity=".22" stroke-dasharray="4 4"/><text x="'+(left-12)+'" y="'+(y(v)+4)+'" fill="currentColor" font-size="12" text-anchor="end">'+v+'C</text></g>').join('');
+    const labels=m.labels.map((t,i)=>'<text x="'+xs[i]+'" y="'+(h-20)+'" fill="currentColor" font-size="'+(m.labels.length>8?9:11)+'" text-anchor="middle">'+t+'</text>').join('');
+    return '<section class="adn-draw"><div class="adn-draw-head"><div><div class="adn-fec-eyebrow">MODO INTERACTIVO</div><h2>Dibujá vos la curva de ADN</h2><p>Tocá cada columna y elegí el nivel de ADN. Cada tramo se corrige al instante.</p></div><div class="adn-draw-switch"><button type="button" data-draw-mode="mitosis" class="'+(dibujoModo==='mitosis'?'on':'')+'">Mitosis</button><button type="button" data-draw-mode="meiosis" class="'+(dibujoModo==='meiosis'?'on':'')+'">Meiosis</button></div></div>'+
+    '<div class="adn-draw-legend"><span><i style="background:#9ca3af"></i>Curva correcta</span><span><i style="background:#20b981"></i>Tramo correcto</span><span><i style="background:#ef4444"></i>Tramo incorrecto</span></div>'+
+    '<div class="adn-draw-canvas"><svg viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Gráfico para dibujar cantidad de ADN">'+grid+'<path d="'+ref+'" fill="none" stroke="#9ca3af" stroke-width="3" stroke-dasharray="6 6" opacity=".75"/>'+trazos+pts+labels+'</svg></div>'+
+    '<p class="adn-draw-instruction">Elegí el nivel para cada etapa, de izquierda a derecha:</p><div class="adn-draw-levels">'+m.labels.map((t,i)=>'<label><span>'+t+'</span><select data-draw-index="'+i+'"><option value="">Elegir C</option><option value="1" '+(dibujoPuntos[i]?.value===1?'selected':'')+'>1C</option><option value="2" '+(dibujoPuntos[i]?.value===2?'selected':'')+'>2C</option><option value="3" '+(dibujoPuntos[i]?.value===3?'selected':'')+'>3C</option><option value="4" '+(dibujoPuntos[i]?.value===4?'selected':'')+'>4C</option></select></label>').join('')+'</div>'+
+    '<div class="adn-draw-foot"><span role="status">'+(dibujoPuntos.length===m.labels.length?'¡Curva completa! Revisá los tramos rojos y corregilos.':'Completaste '+dibujoPuntos.length+' de '+m.labels.length+' etapas.')+'</span><button type="button" class="adn-accion" data-draw-reset>Reiniciar dibujo</button></div></section>';
+  }
+  const dibujoCSS = '.adn-draw{margin:24px 0;padding:clamp(16px,3vw,26px);border:1px solid var(--adn-border,#343044);border-radius:22px;background:var(--adn-panel,rgba(255,255,255,.025))}.adn-draw-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.adn-draw h2{margin:5px 0 8px;font-size:clamp(20px,3vw,27px)}.adn-draw p{line-height:1.55}.adn-draw-switch{display:flex;gap:6px;flex-wrap:wrap}.adn-draw-switch button{border:1px solid #77708b;background:transparent;color:inherit;border-radius:10px;padding:9px 12px}.adn-draw-switch button.on{background:#7c3aed;color:#fff}.adn-draw-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;margin:14px 0}.adn-draw-legend span{display:flex;align-items:center;gap:6px}.adn-draw-legend i{width:10px;height:10px;border-radius:50%;display:inline-block}.adn-draw-canvas{width:100%;overflow-x:auto}.adn-draw-canvas svg{display:block;width:100%;min-width:520px;max-height:320px}.adn-draw-instruction{font-weight:700;margin:18px 0 10px}.adn-draw-levels{display:grid;grid-template-columns:repeat(auto-fit,minmax(95px,1fr));gap:9px}.adn-draw-levels label{display:grid;gap:6px;font-size:12px}.adn-draw-levels select{width:100%;min-width:0;border:1px solid #817b92;background:#211a35;color:inherit;border-radius:9px;padding:10px 6px}.adn-draw-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:16px;font-size:13px}.adn-draw-foot [role=status]{line-height:1.5}@media(max-width:560px){.adn-draw-head{display:block}.adn-draw-switch{margin:12px 0}.adn-draw-foot{align-items:flex-start;flex-direction:column}}';
+
   function render(){
     const d=modelos[proceso];
     const fec=proceso==='meiosis'?bloqueFecundacion():'';
@@ -154,9 +181,13 @@ export function abrirCantidadADN({app,volver}={}){
       '<div class="adn-note"><span class="adn-note-icon" aria-hidden="true">i</span><p>'+d.nota+'</p></div>'+
       '<section class="adn-steps" aria-label="Valores de ADN por etapa">'+tarjetasEtapas(d)+'</section>'+
       fec+comparacion+
+      dibujoHTML()+
       bloquePractica()+
     '</section>';
     app.querySelector('#adn-back').onclick=volver;
+    app.querySelectorAll('[data-draw-mode]').forEach(function(b){b.onclick=function(){dibujoModo=b.dataset.drawMode;dibujoPuntos=[];render()}});
+    app.querySelectorAll('[data-draw-index]').forEach(function(sel){sel.onchange=function(){const i=Number(sel.dataset.drawIndex),v=sel.value===''?null:Number(sel.value);dibujoPuntos=dibujoPuntos.filter(p=>p.index<i);if(v!==null)dibujoPuntos.push({index:i,value:v});render()}});
+    const resetDibujo=app.querySelector('[data-draw-reset]');if(resetDibujo)resetDibujo.onclick=function(){dibujoPuntos=[];render()};
     app.querySelectorAll('[data-p]').forEach(function(b){b.onclick=function(){proceso=b.dataset.p;render()}});
     app.querySelectorAll('[data-practica-op]').forEach(function(b){b.onclick=function(){if(revisadaPractica)return;seleccionPractica=Number(b.dataset.practicaOp);render()}});
     const comprobar=app.querySelector('[data-practica-comprobar]');
@@ -165,6 +196,6 @@ export function abrirCantidadADN({app,volver}={}){
     if(siguiente)siguiente.onclick=function(){if(!revisadaPractica)return;if(indicePractica<preguntasPractica.length-1){indicePractica++;seleccionPractica=null;revisadaPractica=false}else{respondidasPractica=preguntasPractica.length+0;indicePractica=preguntasPractica.length-1;const panel=app.querySelector('.adn-practica');if(panel){panel.innerHTML='<div class="adn-final-practica"><div class="adn-final-icon">✓</div><h3>'+(aciertosPractica>=8?'¡Excelente dominio!':aciertosPractica>=6?'¡Muy bien!':'¡Buen repaso!')+'</h3><p>Resultado: <strong>'+aciertosPractica+' de '+preguntasPractica.length+'</strong>. Volvé a intentarlo para afianzar los conceptos.</p><button type="button" class="adn-accion primaria" data-practica-reiniciar>Mezclar y volver a practicar</button></div>';panel.querySelector('[data-practica-reiniciar]').onclick=function(){mezclarPractica();render()};return}}render()};
     app.querySelectorAll('[data-practica-reiniciar]').forEach(function(b){b.onclick=function(){mezclarPractica();render()}});
   }
-  if(!document.getElementById('adn-lab-css')){const st=document.createElement('style');st.id='adn-lab-css';st.textContent=css+cssPractica;document.head.appendChild(st)}else{document.getElementById('adn-lab-css').textContent=css+cssPractica}
+  if(!document.getElementById('adn-lab-css')){const st=document.createElement('style');st.id='adn-lab-css';st.textContent=css+cssPractica+dibujoCSS;document.head.appendChild(st)}else{document.getElementById('adn-lab-css').textContent=css+cssPractica+dibujoCSS}
   render();
 }
