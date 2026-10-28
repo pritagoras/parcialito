@@ -366,7 +366,9 @@ export function abrirLab({ app, volver }) {
           '<button type="button" data-div="mitosis" class="'+(tema==='mitosis'?'activo':'')+'" aria-pressed="'+(tema==='mitosis')+'"><span>🧫</span><b>Mitosis</b><small>Una división</small></button>'+
           '<button type="button" data-div="meiosis" class="'+(tema==='meiosis'?'activo':'')+'" aria-pressed="'+(tema==='meiosis')+'"><span>🧬</span><b>Meiosis I y II</b><small>Dos divisiones</small></button>'+
           '<button type="button" data-div="adn" class="'+(tema==='adn'?'activo':'')+'" aria-pressed="'+(tema==='adn')+'"><span>📈</span><b>ADN y fecundación</b><small>2C · 4C · 1C</small></button>'+
-        '<button type="button" data-extra="comparar" class="div-extra">🔎 Comparación completa <small>Vista conjunta · índice de fases · guía escrita</small></button>'+\n        '<button type="button" data-extra="variabilidad" class="div-extra">🧬 Variabilidad genética <small>Crossing-over y segregación al azar</small></button>'+\n        '</nav>'+
+        '<button type="button" data-extra="comparar" class="div-extra">🔎 Comparación completa <small>Vista conjunta · índice de fases · guía escrita</small></button>'+
+        '<button type="button" data-extra="variabilidad" class="div-extra">🧬 Variabilidad genética <small>Crossing-over y segregación al azar</small></button>'+
+        '</nav>'+
         '<article class="div-feature div-'+tema+'">'+diagramaActual()+
           '<div class="div-info"><div class="div-tagline">'+t.tipo+'</div><h2>'+t.icon+' '+t.titulo+'</h2><h3>'+t.bajada+'</h3><p>'+t.detalle+'</p>'+
             '<div class="div-tags">'+t.pasos.map((p,i)=>'<span><i>'+String(i+1).padStart(2,'0')+'</i>'+p+'</span>').join('')+'</div>'+
