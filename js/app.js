@@ -771,19 +771,29 @@ async function cargarSegundoParcial() {
   if (!r.ok) throw new Error(`No se pudo leer segundo-parcial/index.json (${r.status})`);
   const manifiesto = await r.json();
   const materia = { nombre: 'Segundo parcial' };
-  const listas = await Promise.all((manifiesto.temas || []).map(async (t) => {
+  if (!Array.isArray(manifiesto.temas) || !manifiesto.temas.length) {
+    throw new Error('El índice del Segundo parcial no contiene archivos.');
+  }
+  const listas = await Promise.all(manifiesto.temas.map(async (t) => {
     const rr = await fetch(t.archivo, { cache: 'no-cache' });
-    if (!rr.ok) { console.warn(`[Segundo parcial] No se pudo leer ${t.archivo} (${rr.status})`); return []; }
+    if (!rr.ok) throw new Error(`No se pudo leer ${t.archivo} (${rr.status})`);
     const json = await rr.json();
+    if (!Array.isArray(json.preguntas)) throw new Error(`${t.archivo} no contiene un array de preguntas válido.`);
     const stem = t.archivo.replace(/^.*\//, '').replace(/\.json$/, '');
-    return normalizar(json, { id: `segundo-parcial/${stem}`, nombre: json.tema || stem, archivo: t.archivo }, materia);
+    const normalizadas = normalizar(json, { id: `segundo-parcial/${stem}`, nombre: json.tema || stem, archivo: t.archivo }, materia);
+    if (normalizadas.length !== json.preguntas.length) {
+      throw new Error(`${t.archivo}: se cargaron ${normalizadas.length} de ${json.preguntas.length}; hay preguntas con formato inválido.`);
+    }
+    if (Number.isInteger(t.preguntas) && t.preguntas !== json.preguntas.length) {
+      throw new Error(`${t.archivo}: el índice declara ${t.preguntas} preguntas, pero el JSON contiene ${json.preguntas.length}.`);
+    }
+    return normalizadas;
   }));
-  const vistas = new Set();
-  const pool = [];
-  for (const q of listas.flat()) {
-    if (vistas.has(q.id)) continue;
-    vistas.add(q.id);
-    pool.push({ ...q, temaId: SEGUNDO_PARCIAL_TEMA_ID });
+  // No descartamos preguntas por coincidencias de hash: cada registro válido del banco entra al juego.
+  const pool = listas.flat().map((q) => ({ ...q, temaId: SEGUNDO_PARCIAL_TEMA_ID }));
+  const totalDeclarado = manifiesto.temas.reduce((s, t) => s + (Number(t.preguntas) || 0), 0);
+  if (totalDeclarado && pool.length !== totalDeclarado) {
+    throw new Error(`El banco declara ${totalDeclarado} preguntas, pero se cargaron ${pool.length}.`);
   }
   segundoParcialPool = pool;
   return pool;
