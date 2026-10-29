@@ -4,7 +4,12 @@
   "preguntas": [
     {
       "pregunta": "La división del citoplasma que permite separar el material citoplasmático entre las dos células hijas se denomina:",
-      "opciones": ["Citocinesis", "Cariocinesis", "Interfase", "Intercinesis"],
+      "opciones": [
+        "Citocinesis",
+        "Cariocinesis",
+        "Interfase",
+        "Intercinesis"
+      ],
       "correcta": "A",
       "explicacion": "La citocinesis es la etapa en la que el citoplasma celular se divide para dar lugar a dos células hijas independientes."
     },
@@ -21,7 +26,12 @@
     },
     {
       "pregunta": "El factor promotor de la síntesis (FPS) está constituido por la asociación entre:",
-      "opciones": ["Cdk1 y Ciclina M", "Cdk1 y Ciclina G1", "Cdk2 y Ciclina G1", "Cdk2 y Ciclina M"],
+      "opciones": [
+        "Cdk1 y Ciclina M",
+        "Cdk1 y Ciclina G1",
+        "Cdk2 y Ciclina G1",
+        "Cdk2 y Ciclina M"
+      ],
       "correcta": "C",
       "explicacion": "El FPS se forma por la unión de la quinasa Cdk2 con la ciclina G1 para permitir la transición a la fase S."
     },
@@ -38,19 +48,34 @@
     },
     {
       "pregunta": "La alineación completa de los cromosomas condensados en la placa ecuatorial define la fase mitótica llamada:",
-      "opciones": ["Profase", "Prometafase", "Anafase", "Metafase"],
+      "opciones": [
+        "Profase",
+        "Prometafase",
+        "Anafase",
+        "Metafase"
+      ],
       "correcta": "D",
       "explicacion": "Durante la metafase, los cromosomas unidos al huso se ubican ordenadamente en el plano ecuatorial de la célula."
     },
     {
       "pregunta": "En las células animales, la citocinesis se lleva a cabo mediante un estrangulamiento guiado por un anillo contráctil formado por:",
-      "opciones": ["Microtúbulos y tubulina", "Pectina y celulosa", "Actina y miosina", "Láminas y condensinas"],
+      "opciones": [
+        "Microtúbulos y tubulina",
+        "Pectina y celulosa",
+        "Actina y miosina",
+        "Láminas y condensinas"
+      ],
       "correcta": "C",
       "explicacion": "Un anillo ecuatorial compuesto por microfilamentos de actina y miosina genera la constricción que divide el citoplasma animal."
     },
     {
       "pregunta": "Si una célula diploide humana completa la mitosis pero no efectúa la citocinesis, el resultado es:",
-      "opciones": ["Una célula binucleada", "Dos células haploides", "Cuatro células haploides", "Una célula aneuploide en G0"],
+      "opciones": [
+        "Una célula binucleada",
+        "Dos células haploides",
+        "Cuatro células haploides",
+        "Una célula aneuploide en G0"
+      ],
       "correcta": "A",
       "explicacion": "Al dividirse el núcleo (cariocinesis) sin fragmentar el citoplasma (citocinesis), ambos núcleos permanecen en la misma célula."
     },
@@ -67,7 +92,12 @@
     },
     {
       "pregunta": "La subetapa de la profase I meiótica en la cual ocurre el apareamiento o sinapsis de los cromosomas homólogos es el:",
-      "opciones": ["Leptonema", "Paquinema", "Cigonema", "Diplonema"],
+      "opciones": [
+        "Leptonema",
+        "Paquinema",
+        "Cigonema",
+        "Diplonema"
+      ],
       "correcta": "C",
       "explicacion": "Durante el cigonema los cromosomas homólogos se reconocen y alinean formando el complejo sinaptonémico."
     },
@@ -95,7 +125,12 @@
     },
     {
       "pregunta": "En la anafase II de la meiosis se separan:",
-      "opciones": ["Los bivalentes apareados", "Los cromosomas homólogos", "Las vesículas de Golgi", "Las cromátidas hermanas"],
+      "opciones": [
+        "Los bivalentes apareados",
+        "Los cromosomas homólogos",
+        "Las vesículas de Golgi",
+        "Las cromátidas hermanas"
+      ],
       "correcta": "D",
       "explicacion": "La meiosis II es una división ecuacional análoga a la mitosis donde se separan las cromátidas hermanas de cada cromosoma."
     },
@@ -123,25 +158,45 @@
     },
     {
       "pregunta": "La diseminación de células tumorales desde un tumor primario hacia otros órganos mediante vasos sanguíneos o linfáticos se denomina:",
-      "opciones": ["Espermiogénesis", "Sinapsis", "Metástasis", "Transducción"],
+      "opciones": [
+        "Espermiogénesis",
+        "Sinapsis",
+        "Metástasis",
+        "Transducción"
+      ],
       "correcta": "C",
       "explicacion": "La metástasis es la propagación y establecimiento de focos tumorales secundarios a partir del desprendimiento del tumor original."
     },
     {
       "pregunta": "Los microtúbulos del huso mitótico que unen los centrosomas directamente a los cinetocoros cromosómicos se llaman:",
-      "opciones": ["Cinetocóricos", "Polares", "Astrales", "Interzonales"],
+      "opciones": [
+        "Cinetocóricos",
+        "Polares",
+        "Astrales",
+        "Interzonales"
+      ],
       "correcta": "A",
       "explicacion": "Los microtúbulos cinetocóricos o cromosómicos son aquellos que se anclan en las estructuras proteicas de los centrómeros."
     },
     {
       "pregunta": "El complejo proteico que mantiene unidas a las cromátidas hermanas a lo largo de su estructura durante G2 y profase se denomina:",
-      "opciones": ["Condensina", "Tubulina", "Cohesina", "Actina"],
+      "opciones": [
+        "Condensina",
+        "Tubulina",
+        "Cohesina",
+        "Actina"
+      ],
       "correcta": "C",
       "explicacion": "Las cohesinas garantizan la cohesión entre las cromátidas duplicadas desde su replicación hasta su escisión en la anafase."
     },
     {
       "pregunta": "El conjunto de cuatro cromátidas formado por el apareamiento completo de un par de homólogos en profase I recibe el nombre de:",
-      "opciones": ["Diploide", "Quiasma", "Centrómero", "Tétrada"],
+      "opciones": [
+        "Diploide",
+        "Quiasma",
+        "Centrómero",
+        "Tétrada"
+      ],
       "correcta": "D",
       "explicacion": "Al aparearse los dos cromosomas homólogos (cada uno duplicado con dos cromátidas), el conjunto reúne cuatro cromátidas o tétrada."
     },
@@ -158,7 +213,12 @@
     },
     {
       "pregunta": "Al observar una célula diploide de una especie con 2n = 14 en la anafase mitótica, el número total de cromosomas en la célula es:",
-      "opciones": ["7", "14", "28", "56"],
+      "opciones": [
+        "7",
+        "14",
+        "28",
+        "56"
+      ],
       "correcta": "C",
       "explicacion": "En la anafase, al separarse las cromátidas hermanas, cada una pasa a contarse como un cromosoma hijo individual, duplicando temporalmente el total celular a 28."
     },
@@ -172,6 +232,501 @@
       ],
       "correcta": "D",
       "explicacion": "La recombinación por entrecruzamiento en profase I y la orientación y separación al azar de los homólogos generan la diversidad genética de las gametas."
+    },
+    {
+      "pregunta": "En 2n=8, cada hija tras mitosis tiene",
+      "opciones": [
+        "n=4",
+        "2n=8 simples",
+        "2n=8 duplicados",
+        "4n=16"
+      ],
+      "correcta": "B",
+      "explicacion": "La mitosis conserva la ploidía."
+    },
+    {
+      "pregunta": "Una célula 2n=10 en G1 es",
+      "opciones": [
+        "5 cromosomas, 2C",
+        "10 cromosomas, 2C",
+        "10 cromosomas, 4C",
+        "20 cromosomas, 4C"
+      ],
+      "correcta": "B",
+      "explicacion": "En G1 el ADN aún no se replicó."
+    },
+    {
+      "pregunta": "Una célula 2n=10 tras fase S es",
+      "opciones": [
+        "n=5, 2C",
+        "2n=10, 4C",
+        "4n=20, 4C",
+        "2n=20, 2C"
+      ],
+      "correcta": "B",
+      "explicacion": "Se duplica ADN, no la ploidía."
+    },
+    {
+      "pregunta": "Tras meiosis I en 2n=8 cada producto tiene",
+      "opciones": [
+        "8 simples",
+        "4 duplicados",
+        "4 simples",
+        "8 duplicados"
+      ],
+      "correcta": "B",
+      "explicacion": "Se separan homólogos."
+    },
+    {
+      "pregunta": "Tras meiosis II en 2n=8 cada producto tiene",
+      "opciones": [
+        "8 duplicados",
+        "4 simples",
+        "4 pares homólogos",
+        "16 cromosomas"
+      ],
+      "correcta": "B",
+      "explicacion": "Se separan cromátidas hermanas."
+    },
+    {
+      "pregunta": "La notación n indica",
+      "opciones": [
+        "Cantidad de ADN",
+        "Juegos cromosómicos",
+        "Cromátidas",
+        "Genes"
+      ],
+      "correcta": "B",
+      "explicacion": "n expresa ploidía."
+    },
+    {
+      "pregunta": "La notación C indica",
+      "opciones": [
+        "Ploidía",
+        "Cantidad relativa de ADN",
+        "Centrómeros",
+        "Células"
+      ],
+      "correcta": "B",
+      "explicacion": "C y n son medidas distintas."
+    },
+    {
+      "pregunta": "Una célula diploide en G1 suele ser",
+      "opciones": [
+        "2n, 2C",
+        "2n, 4C",
+        "n, 2C",
+        "n, 1C"
+      ],
+      "correcta": "A",
+      "explicacion": "Antes de S tiene 2C."
+    },
+    {
+      "pregunta": "Una célula diploide en G2 suele ser",
+      "opciones": [
+        "2n, 2C",
+        "2n, 4C",
+        "n, 1C",
+        "4n, 4C"
+      ],
+      "correcta": "B",
+      "explicacion": "ADN duplicado, ploidía conservada."
+    },
+    {
+      "pregunta": "Un gameto humano normal presenta",
+      "opciones": [
+        "2n=46, 2C",
+        "n=23, 1C",
+        "n=46, 1C",
+        "2n=23, 2C"
+      ],
+      "correcta": "B",
+      "explicacion": "Los gametos son haploides."
+    },
+    {
+      "pregunta": "Un cigoto humano antes de S presenta",
+      "opciones": [
+        "n=23, 1C",
+        "2n=46, 2C",
+        "2n=46, 4C",
+        "4n=92"
+      ],
+      "correcta": "B",
+      "explicacion": "La fecundación restaura diploidía."
+    },
+    {
+      "pregunta": "En metafase mitótica humana hay",
+      "opciones": [
+        "23 cromosomas, 46 cromátidas",
+        "46 cromosomas, 92 cromátidas",
+        "92 cromosomas, 92 cromátidas",
+        "46 cromosomas, 46 cromátidas"
+      ],
+      "correcta": "B",
+      "explicacion": "Cada cromosoma tiene dos cromátidas."
+    },
+    {
+      "pregunta": "En anafase mitótica humana antes de citocinesis hay",
+      "opciones": [
+        "23 cromosomas",
+        "46 cromosomas",
+        "92 cromosomas",
+        "184 cromosomas"
+      ],
+      "correcta": "C",
+      "explicacion": "Las cromátidas separadas cuentan como cromosomas."
+    },
+    {
+      "pregunta": "Una célula 2n=6 en metafase tiene",
+      "opciones": [
+        "6 cromosomas, 6 cromátidas",
+        "6 cromosomas, 12 cromátidas",
+        "12 cromosomas, 12 cromátidas",
+        "3 cromosomas, 6 cromátidas"
+      ],
+      "correcta": "B",
+      "explicacion": "Cada cromosoma está duplicado."
+    },
+    {
+      "pregunta": "En anafase I se separan",
+      "opciones": [
+        "Cromátidas hermanas",
+        "Cromosomas homólogos",
+        "Nucleótidos",
+        "Centríolos"
+      ],
+      "correcta": "B",
+      "explicacion": "Meiosis I es reduccional."
+    },
+    {
+      "pregunta": "El crossing-over ocurre principalmente en",
+      "opciones": [
+        "Profase mitótica",
+        "Paquiteno de profase I",
+        "Metafase II",
+        "Anafase I"
+      ],
+      "correcta": "B",
+      "explicacion": "Ocurre entre cromátidas no hermanas."
+    },
+    {
+      "pregunta": "Los quiasmas reflejan",
+      "opciones": [
+        "Uniones ribosómicas",
+        "Entrecruzamientos entre homólogos",
+        "Centrosomas",
+        "Replicación"
+      ],
+      "correcta": "B",
+      "explicacion": "Son manifestaciones de recombinación."
+    },
+    {
+      "pregunta": "La sinapsis de homólogos ocurre en",
+      "opciones": [
+        "Profase I",
+        "Metafase II",
+        "Anafase mitótica",
+        "Telofase II"
+      ],
+      "correcta": "A",
+      "explicacion": "Los homólogos se aparean en profase I."
+    },
+    {
+      "pregunta": "Una tétrada contiene",
+      "opciones": [
+        "Dos homólogos duplicados, cuatro cromátidas",
+        "Cuatro cromosomas simples",
+        "Dos cromátidas",
+        "Cuatro centríolos"
+      ],
+      "correcta": "A",
+      "explicacion": "Cada homólogo aporta dos cromátidas."
+    },
+    {
+      "pregunta": "En anafase mitótica se separan",
+      "opciones": [
+        "Homólogos",
+        "Cromátidas hermanas",
+        "Tétradas",
+        "Genes"
+      ],
+      "correcta": "B",
+      "explicacion": "Mitosis separa cromátidas hermanas."
+    },
+    {
+      "pregunta": "En anafase II se separan",
+      "opciones": [
+        "Homólogos duplicados",
+        "Cromátidas hermanas",
+        "Tétradas",
+        "Núcleos"
+      ],
+      "correcta": "B",
+      "explicacion": "Meiosis II es ecuacional."
+    },
+    {
+      "pregunta": "La prometafase se caracteriza por",
+      "opciones": [
+        "Replicación",
+        "Desorganización de envoltura y unión del huso",
+        "Reaparece nucléolo",
+        "Sinapsis"
+      ],
+      "correcta": "B",
+      "explicacion": "El huso accede a los cinetocoros."
+    },
+    {
+      "pregunta": "La metafase se reconoce por",
+      "opciones": [
+        "Replicación",
+        "Alineación en placa ecuatorial",
+        "Reaparece nucléolo",
+        "Separación de homólogos"
+      ],
+      "correcta": "B",
+      "explicacion": "Los cromosomas se alinean en el ecuador."
+    },
+    {
+      "pregunta": "En telofase ocurre",
+      "opciones": [
+        "Nueva fase S",
+        "Reformación nuclear y descondensación",
+        "Sinapsis",
+        "Duplicación cromosómica"
+      ],
+      "correcta": "B",
+      "explicacion": "Se reorganizan los núcleos hijos."
+    },
+    {
+      "pregunta": "La citocinesis divide ___; cariocinesis divide ___",
+      "opciones": [
+        "núcleo; citoplasma",
+        "citoplasma; núcleo",
+        "ADN; membrana",
+        "cromátidas; ribosomas"
+      ],
+      "correcta": "B",
+      "explicacion": "División citoplasmática y nuclear."
+    },
+    {
+      "pregunta": "El anillo contráctil animal contiene",
+      "opciones": [
+        "Tubulina",
+        "Actina y miosina",
+        "Celulosa",
+        "Condensina"
+      ],
+      "correcta": "B",
+      "explicacion": "Actina y miosina producen el surco."
+    },
+    {
+      "pregunta": "La citocinesis vegetal suele formar",
+      "opciones": [
+        "Surco animal",
+        "Placa celular de vesículas",
+        "Tétradas",
+        "Célula sin pared"
+      ],
+      "correcta": "B",
+      "explicacion": "La placa origina la nueva pared."
+    },
+    {
+      "pregunta": "La meiosis comprende",
+      "opciones": [
+        "Una división",
+        "Dos divisiones sucesivas",
+        "Tres fases S",
+        "Cuatro replicaciones"
+      ],
+      "correcta": "B",
+      "explicacion": "Meiosis I y II siguen a una sola replicación."
+    },
+    {
+      "pregunta": "Antes de meiosis I y II ocurre",
+      "opciones": [
+        "Cero fases S",
+        "Una fase S",
+        "Dos fases S",
+        "Cuatro fases S"
+      ],
+      "correcta": "B",
+      "explicacion": "No hay fase S entre divisiones."
+    },
+    {
+      "pregunta": "Una especie 2n=16 produce gametos con",
+      "opciones": [
+        "16 cromosomas",
+        "8 cromosomas",
+        "32 cromosomas",
+        "4 cromosomas"
+      ],
+      "correcta": "B",
+      "explicacion": "Meiosis reduce a n=8."
+    },
+    {
+      "pregunta": "Si n=7, una célula diploide tiene",
+      "opciones": [
+        "7",
+        "14",
+        "21",
+        "28"
+      ],
+      "correcta": "B",
+      "explicacion": "2n es el doble de n."
+    },
+    {
+      "pregunta": "En 2n=12 tras meiosis I cada producto tiene",
+      "opciones": [
+        "6 cromosomas, 12 cromátidas",
+        "12 y 12",
+        "6 y 6",
+        "12 y 24"
+      ],
+      "correcta": "A",
+      "explicacion": "Cada cromosoma haploide aún está duplicado."
+    },
+    {
+      "pregunta": "En 2n=12 tras meiosis II cada producto tiene",
+      "opciones": [
+        "12 duplicados",
+        "6 simples",
+        "6 duplicados",
+        "24"
+      ],
+      "correcta": "B",
+      "explicacion": "Cada producto es n=6."
+    },
+    {
+      "pregunta": "La meiosis normalmente produce",
+      "opciones": [
+        "Dos diploides idénticas",
+        "Cuatro haploides variables",
+        "Cuatro diploides",
+        "Una tetraploide"
+      ],
+      "correcta": "B",
+      "explicacion": "Recombinación y segregación generan variabilidad."
+    },
+    {
+      "pregunta": "La mitosis normalmente produce",
+      "opciones": [
+        "Cuatro haploides",
+        "Dos hijas con igual ploidía",
+        "Dos gametos",
+        "Reducción 2n a n"
+      ],
+      "correcta": "B",
+      "explicacion": "La mitosis conserva dotación cromosómica."
+    },
+    {
+      "pregunta": "La segregación independiente se vincula a",
+      "opciones": [
+        "Orientación aleatoria de bivalentes en metafase I",
+        "Replicación en G2",
+        "Citocinesis",
+        "Condensación"
+      ],
+      "correcta": "A",
+      "explicacion": "Cada par se orienta independientemente."
+    },
+    {
+      "pregunta": "Tres pares homólogos permiten ___ combinaciones independientes",
+      "opciones": [
+        "3",
+        "6",
+        "8",
+        "16"
+      ],
+      "correcta": "C",
+      "explicacion": "2^3=8, sin contar crossing-over."
+    },
+    {
+      "pregunta": "No disyunción en meiosis I significa",
+      "opciones": [
+        "Falla de cromátidas en II",
+        "Falla de separación de homólogos",
+        "No se replica ADN",
+        "Falla citocinesis"
+      ],
+      "correcta": "B",
+      "explicacion": "El error afecta homólogos."
+    },
+    {
+      "pregunta": "No disyunción en meiosis II significa",
+      "opciones": [
+        "No se aparean homólogos",
+        "No se separan cromátidas hermanas",
+        "ADN se replica dos veces",
+        "No se desarma envoltura"
+      ],
+      "correcta": "B",
+      "explicacion": "El error afecta cromátidas."
+    },
+    {
+      "pregunta": "Diferencia central entre meiosis I y II",
+      "opciones": [
+        "I separa homólogos; II cromátidas",
+        "I replica; II transcribe",
+        "I solo en haploides",
+        "II reduce ploidía primero"
+      ],
+      "correcta": "A",
+      "explicacion": "La reducción ocurre en meiosis I."
+    },
+    {
+      "pregunta": "Meiosis I es reduccional porque",
+      "opciones": [
+        "Reduce citoplasma",
+        "Pasa de 2n a n al separar homólogos",
+        "Duplica n",
+        "Elimina centrómeros"
+      ],
+      "correcta": "B",
+      "explicacion": "Se reduce el número de juegos."
+    },
+    {
+      "pregunta": "Meiosis II es ecuacional porque",
+      "opciones": [
+        "Aumenta ploidía",
+        "Separa cromátidas sin reducir otra vez juegos",
+        "Replica ADN",
+        "Reúne homólogos"
+      ],
+      "correcta": "B",
+      "explicacion": "Las células permanecen haploides."
+    },
+    {
+      "pregunta": "Una célula n=5 con cromosomas duplicados tiene",
+      "opciones": [
+        "5 cromosomas, 5 cromátidas",
+        "5 cromosomas, 10 cromátidas",
+        "10 cromosomas, 10 cromátidas",
+        "2n=10"
+      ],
+      "correcta": "B",
+      "explicacion": "Sigue siendo haploide."
+    },
+    {
+      "pregunta": "¿Cuál es correcta sobre n y C?",
+      "opciones": [
+        "Si cambia C cambia n",
+        "n mide juegos; C cantidad de ADN",
+        "Son equivalentes",
+        "4C siempre es tetraploide"
+      ],
+      "correcta": "B",
+      "explicacion": "S cambia C sin cambiar n."
+    },
+    {
+      "pregunta": "Una célula 2n=8 en profase mitótica tiene",
+      "opciones": [
+        "8 duplicados, 16 cromátidas, 4C",
+        "16 cromosomas, 16 cromátidas",
+        "4 cromosomas, 8 cromátidas",
+        "8 simples, 2C"
+      ],
+      "correcta": "A",
+      "explicacion": "Profase ocurre tras replicación."
     }
   ]
 }
