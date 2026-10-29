@@ -318,7 +318,7 @@
         "unión de aminoácidos mediante enlaces peptídicos.",
         "duplicación del par de centríolos."
       ],
-      "correcta": "D",
+      "correcta": "B",
       "explicacion": "La transcripción es la síntesis catalizada por ARN polimerasas de una hebra de ARN complementaria a una secuencia génica de ADN."
     },
     {
@@ -351,7 +351,7 @@
         "los ribosomas bacterianos y eucariotas son exactamente iguales.",
         "ambos dominios realizan splicing intrónico."
       ],
-      "correcta": "D",
+      "correcta": "B",
       "explicacion": "La universalidad del código genético permite que los codones del ARNm sean leídos e interpretados para los mismos aminoácidos en procariontes y eucariontes."
     },
     {
