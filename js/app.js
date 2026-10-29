@@ -763,7 +763,6 @@ function vistaInicio() {
 // Segundo parcial: junta TODOS los JSON de la carpeta segundo-parcial/ en un único juego.
 // La lista de archivos sale de segundo-parcial/index.json (lo genera tools/actualizar_indice.py).
 const SEGUNDO_PARCIAL_TEMA_ID = 'segundo-parcial/todas';
-const SEGUNDO_PARCIAL_PREGUNTAS_POR_PARTIDA = 25;
 let segundoParcialPool = null;
 
 async function cargarSegundoParcial() {
@@ -813,9 +812,8 @@ async function lanzarSegundoParcial() {
     repetir: () => lanzarSegundoParcial(),
     volver: () => vistaInicio(),
   };
-  // Cada partida toma una muestra nueva del banco completo: evita repetir siempre el mismo examen.
-  // No hay repetidas dentro de la partida; al volver a jugar se extrae otra muestra aleatoria.
-  const muestra = mezclar(pool).slice(0, Math.min(SEGUNDO_PARCIAL_PREGUNTAS_POR_PARTIDA, pool.length));
+  // Cada partida incluye TODO el banco, en un orden aleatorio.
+  const muestra = mezclar(pool);
   empezarJuego(muestra, meta);
 }
 
@@ -827,7 +825,7 @@ async function pintarResumenSegundoParcial() {
     const pool = await cargarSegundoParcial();
     if (!caja.isConnected) return;
     const temas = new Set(pool.map((q) => q.tema)).size;
-    caja.innerHTML = `<strong>Banco completo de preguntas</strong><small>${pool.length} disponibles · ${Math.min(SEGUNDO_PARCIAL_PREGUNTAS_POR_PARTIDA, pool.length)} aleatorias por partida · ${temas} ${temas === 1 ? 'tema' : 'temas'}</small>`;
+    caja.innerHTML = `<strong>Banco completo de preguntas</strong><small>${pool.length} disponibles · todas las ${pool.length} preguntas por partida · ${temas} ${temas === 1 ? 'tema' : 'temas'}</small>`;
   } catch { /* se deja el texto por defecto */ }
 }
 
