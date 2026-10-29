@@ -822,9 +822,22 @@ async function lanzarSegundoParcial() {
     repetir: () => lanzarSegundoParcial(),
     volver: () => vistaInicio(),
   };
-  // Cada partida incluye TODO el banco, en un orden aleatorio.
-  const muestra = mezclar(pool);
-  empezarJuego(muestra, meta);
+  // Cada partida incluye TODO el banco (no se descarta ninguna pregunta), pero ordenado así:
+  //   1) primero las que nunca respondiste,
+  //   2) después las que la última vez fallaste,
+  //   3) al final las que la última vez acertaste.
+  // Dentro de cada grupo el orden es aleatorio.
+  empezarJuego(ordenInteligente(pool), meta);
+}
+
+function ordenInteligente(pool) {
+  const vistas = estado.vistasSP || {};
+  const grupos = [[], [], []];
+  for (const q of pool) {
+    const v = vistas[q.id];
+    grupos[v === 2 ? 2 : v === 1 ? 1 : 0].push(q);
+  }
+  return grupos.flatMap((g) => mezclar(g));
 }
 
 // Actualiza el cartel del banner con la cantidad real de preguntas.
@@ -835,7 +848,10 @@ async function pintarResumenSegundoParcial() {
     const pool = await cargarSegundoParcial();
     if (!caja.isConnected) return;
     const temas = new Set(pool.map((q) => q.tema)).size;
-    caja.innerHTML = `<strong>Banco completo de preguntas</strong><small>${pool.length} disponibles · todas las ${pool.length} preguntas por partida · ${temas} ${temas === 1 ? 'tema' : 'temas'}</small>`;
+    const vistas = estado.vistasSP || {};
+    const nuevas = pool.filter((q) => !vistas[q.id]).length;
+    const detalle = nuevas === pool.length ? 'ninguna respondida todavía' : `${nuevas} sin responder`;
+    caja.innerHTML = `<strong>Banco completo de preguntas</strong><small>${pool.length} disponibles · ${detalle} · las ya respondidas van al final · ${temas} ${temas === 1 ? 'tema' : 'temas'}</small>`;
   } catch { /* se deja el texto por defecto */ }
 }
 
@@ -1376,6 +1392,11 @@ function responder(pos) {
     acierto: acerto,
     modo: j.meta.ranking ? 'ronda' : 'repaso',
   });
+
+  // Segundo parcial: recordamos qué preguntas ya respondiste para mandarlas al final en la próxima partida.
+  if (j.meta.temaId === SEGUNDO_PARCIAL_TEMA_ID) {
+    (estado.vistasSP ||= {})[q.id] = acerto ? 2 : 1;
+  }
 
   document.getElementById('opciones').classList.add('bloqueadas');
   document.querySelectorAll('.opcion').forEach((b, p) => {
