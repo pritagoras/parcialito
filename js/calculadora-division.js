@@ -92,10 +92,11 @@ export function abrirCalculadoraDivision({app,volver}={}) {
    const stages=currentStages();index=Math.max(0,Math.min(index,stages.length-1));
    const st=stages[index],v=count(st[3]),human=ploidy==='diploide'&&n===23;
    const fmt=x=>x.toLocaleString('es-AR');
+   const cromatidasSeparadas=['mitotic-anaphase','meiosis-anaphase2'].includes(st[3]);
    const metrics=v?[
      [v.nuclei?'Núcleos en la célula':'Células / productos',v.nuclei||v.cell],
      ['Cromosomas por célula',v.chrom],
-     ['Cromátides por célula',v.chromatids],
+     [cromatidasSeparadas?'Cromosomas de 1 cromátida':'Cromátides por célula',v.chromatids],
      ['ADN total por célula',v.dna+'C']
    ]:[['Células', '1 → 2 → 4'],['Cromosomas','No aplicable'],['Cromátides','No aplicable'],['ADN','No aplicable']];
    app.innerHTML='<main class="divcalc"><button class="dc-back" id="dc-back">← Volver al laboratorio</button><header class="dc-head"><div class="dc-kicker">PARCIALITO LAB · HERRAMIENTA DE CÁLCULO</div><h1>Calculadora de cromosomas y ADN</h1><p class="dc-intro">Elegí la ploidía, definí cuántos cromosomas tiene un juego haploide (n) y recorré cada etapa. Los valores se recalculan en tiempo real.</p></header>'+
@@ -104,7 +105,7 @@ export function abrirCalculadoraDivision({app,volver}={}) {
     (process==='meiosis'&&ploidy==='haploide'?'<div class="dc-warning"><b>Importante:</b> la meiosis convencional requiere pares de cromosomas homólogos. Una célula haploide no tiene esos pares; por eso no puede realizar una meiosis I reduccional normal. Para estudiar el proceso meiótico estándar, seleccioná diploide.</div>':'')+
     '<section class="dc-card"><div class="dc-stage-head"><div><h2>'+st[0]+'</h2><p>'+st[1]+'</p></div><span class="dc-pill">'+(process==='mitosis'?'MITOSIS':'MEIOSIS I · II')+'</span></div><p class="dc-explain">'+st[2]+'</p>'+
     '<div class="dc-summary">'+metrics.map(([a,b])=>'<div class="dc-metric"><span>'+a+'</span><b>'+b+'</b></div>').join('')+'</div>'+
-    (v&&v.perPole?'<p class="dc-foot">Por cada polo: '+fmt(v.perPole[0])+' cromosomas · '+fmt(v.perPole[1])+' cromátides · '+v.perPole[2]+'C de ADN.</p>':'')+
+    (v&&v.perPole?'<p class="dc-foot">Por cada polo: '+fmt(v.perPole[0])+' cromosomas · '+fmt(v.perPole[1])+(cromatidasSeparadas?' cromosomas de una cromátida':' cromátides')+' · '+v.perPole[2]+'C de ADN.</p>':'')+
     '<div class="dc-controls" style="margin-top:16px;grid-template-columns:auto 1fr auto"><button id="dc-prev" '+(!index?'disabled':'')+'>← Anterior</button><label>Etapa<select id="dc-stage">'+stages.map((x,i)=>'<option value="'+i+'" '+(i===index?'selected':'')+'>'+(i+1)+'. '+x[0]+'</option>').join('')+'</select></label><button id="dc-next" '+(index===stages.length-1?'disabled':'')+'>Siguiente →</button></div>'+
     '<div class="dc-stage-list">'+stages.map((x,i)=>'<button type="button" data-stage="'+i+'" class="'+(i===index?'on':'')+'">'+(i+1)+'. '+x[0]+'<small>'+x[1]+'</small></button>').join('')+'</div></section>'+
     '<p class="dc-foot">Convención: “cromosomas” cuenta centrómeros. Antes de separar cromátidas hermanas, un cromosoma duplicado cuenta como 1 cromosoma y 2 cromátidas. C representa el contenido de ADN relativo a un juego haploide no replicado.</p>';
