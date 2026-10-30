@@ -849,12 +849,19 @@ function ordenInteligente(pool) {
 // Vista de consulta: permite recorrer TODO el pool sin iniciar una partida.
 function vistaBancoSegundoParcial() {
   vistaCargando('Cargando el banco completo…');
-  cargarSegundoParcial().then((pool) => {
-    const temas = [...new Set(pool.map((q) => q.tema))].sort((x, y) => x.localeCompare(y, 'es'));
+  cargarSegundoParcial().then((poolOriginal) => {
+    const pool = poolOriginal.map((q, i) => ({ ...q, numeroPool: i + 1 }));
+    const archivos = [...new Set(pool.map((q) => q.archivoJson).filter(Boolean))].sort((x, y) =>
+      Number(x.match(/(\\d+)\\.json$/)?.[1] || 0) - Number(y.match(/(\\d+)\\.json$/)?.[1] || 0));
     const porPagina = 25;
     let busqueda = '';
-    let temaElegido = '';
+    let archivoElegido = '';
     let pagina = 0;
+
+    const nombreArchivo = (ruta) => {
+      const n = ruta?.match(/(\\d+)\\.json$/)?.[1];
+      return n ? `Archivo ${n}` : 'Archivo de origen';
+    };
 
     app.innerHTML = `
       <main class="pantalla banco-sp">
@@ -867,17 +874,17 @@ function vistaBancoSegundoParcial() {
         <section class="banco-sp-panel">
           <div class="banco-sp-resumen">
             <div><strong>${pool.length}</strong><span>preguntas en el pool</span></div>
-            <div><strong>${temas.length}</strong><span>temas / archivos</span></div>
+            <div><strong>${archivos.length}</strong><span>archivos integrados</span></div>
           </div>
           <label class="banco-sp-busqueda">
             <span>Buscar una pregunta</span>
             <input id="banco-buscar" type="search" placeholder="Escribí una palabra o concepto…" autocomplete="off">
           </label>
           <label class="banco-sp-filtro">
-            <span>Filtrar por tema</span>
-            <select id="banco-tema">
-              <option value="">Todos los temas</option>
-              ${temas.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join('')}
+            <span>Filtrar por archivo de origen</span>
+            <select id="banco-archivo">
+              <option value="">Todos los archivos</option>
+              ${archivos.map((ruta) => `<option value="${esc(ruta)}">${esc(nombreArchivo(ruta))}</option>`).join('')}
             </select>
           </label>
           <div class="banco-sp-estado" id="banco-estado" aria-live="polite"></div>
@@ -895,15 +902,15 @@ function vistaBancoSegundoParcial() {
       pagina = 0;
       pintar();
     });
-    document.getElementById('banco-tema').addEventListener('change', (e) => {
-      temaElegido = e.target.value;
+    document.getElementById('banco-archivo').addEventListener('change', (e) => {
+      archivoElegido = e.target.value;
       pagina = 0;
       pintar();
     });
 
     function pintar() {
       const filtradas = pool.filter((q) => {
-        if (temaElegido && q.tema !== temaElegido) return false;
+        if (archivoElegido && q.archivoJson !== archivoElegido) return false;
         if (!busqueda) return true;
         const texto = [q.texto, q.tema, ...q.opciones, q.explicacion].join(' ').toLocaleLowerCase('es');
         return texto.includes(busqueda);
@@ -919,11 +926,11 @@ function vistaBancoSegundoParcial() {
       estadoEl.textContent = filtradas.length
         ? `Mostrando ${inicio + 1}–${inicio + visibles.length} de ${filtradas.length} preguntas`
         : 'No hay preguntas que coincidan con la búsqueda.';
-      lista.innerHTML = visibles.map((q, i) => `
+      lista.innerHTML = visibles.map((q) => `
         <article class="banco-pregunta">
           <div class="banco-pregunta-meta">
-            <span>Pregunta ${inicio + i + 1}</span>
-            <span>${esc(q.tema)}</span>
+            <span>Pregunta ${q.numeroPool}</span>
+            <span>${esc(nombreArchivo(q.archivoJson))} · ${esc(q.tema)}</span>
           </div>
           <h2>${esc(q.texto)}</h2>
           ${q.imagen ? `<figure class="banco-pregunta-imagen"><img src="${esc(q.imagen)}" alt="${esc(q.imagenAlt || 'Imagen de la pregunta')}" loading="lazy"></figure>` : ''}
@@ -968,11 +975,11 @@ async function pintarResumenSegundoParcial() {
   try {
     const pool = await cargarSegundoParcial();
     if (!caja.isConnected) return;
-    const temas = new Set(pool.map((q) => q.tema)).size;
+    const archivos = new Set(pool.map((q) => q.archivoJson).filter(Boolean)).size;
     const vistas = estado.vistasSP || {};
     const nuevas = pool.filter((q) => !vistas[q.id]).length;
     const detalle = nuevas === pool.length ? 'ninguna respondida todavía' : `${nuevas} sin responder`;
-    caja.innerHTML = `<strong>Banco completo de preguntas</strong><small>${pool.length} disponibles · ${detalle} · las ya respondidas van al final · ${temas} ${temas === 1 ? 'tema' : 'temas'}</small>`;
+    caja.innerHTML = `<strong>Banco completo de preguntas</strong><small>${pool.length} disponibles · ${detalle} · las ya respondidas van al final · ${archivos} archivos</small>`;
   } catch { /* se deja el texto por defecto */ }
 }
 
