@@ -41,7 +41,7 @@ const highlightBank=[
  [["Beautiful","adj"],["flowers","noun"],["grow","verb"],["near","other"],["the","other"],["river","noun"],["in","other"],["spring","noun"]],
  [["I","noun"],["often","adv"],["read","verb"],["interesting","adj"],["stories","noun"],["before","other"],["bed","noun"]],
  [["The","other"],["teacher","noun"],["explained","verb"],["the","other"],["new","adj"],["topic","noun"],["clearly","adv"]],
- [["We","noun"],["are","verb"],["very","adv"],["excited","adj"],["about","other"],["our","noun"],["trip","noun"]]
+ [["We","noun"],["are","verb"],["very","adv"],["excited","adj"],["about","other"],["our","noun"],["neighbors","noun"],["trip","noun"]]
 ];
 let highlightIndex=0;
 function loadHighlight(){sentenceWords.splice(0,sentenceWords.length,...highlightBank[highlightIndex].map(x=>[...x]));selected=-1;selectedLabel.textContent="Choose a word above";feedback.textContent="Choose a word, then choose its grammatical function.";feedback.style.color="";draw();}
