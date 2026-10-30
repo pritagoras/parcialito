@@ -926,3 +926,29 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
   .banco-opciones li b { grid-column:2; }
   .banco-sp-paginacion .btn { padding:8px; font-size:.7rem; }
 }
+
+
+/* Práctica del segundo parcial a partir de palabras clave. */
+.banco-practica-palabras {
+  display:grid; gap:10px; padding:15px;
+  border:1px solid rgba(155,123,255,.55); border-radius:16px;
+  background:linear-gradient(145deg,rgba(155,123,255,.12),rgba(46,32,88,.72));
+}
+.banco-practica-cabecera { display:flex; align-items:center; gap:10px; }
+.banco-practica-icono {
+  display:grid; place-items:center; flex:0 0 38px; height:38px;
+  border-radius:12px; color:var(--crema); background:rgba(155,123,255,.2);
+  font-size:1.65rem; font-weight:800;
+}
+.banco-practica-cabecera h2 { margin:0; color:var(--crema); font-size:.98rem; }
+.banco-practica-cabecera p { margin:3px 0 0; color:var(--tenue); font-size:.76rem; line-height:1.4; }
+.banco-practica-ayuda { margin-top:-4px; color:var(--tenue); font-size:.72rem; line-height:1.45; }
+.banco-practica-resultado { min-height:1.2em; color:var(--ok); font-size:.78rem; font-weight:700; }
+.banco-practica-iniciar {
+  width:100%; padding:12px 14px; border:0; border-radius:12px;
+  color:#170F2E; background:var(--violeta); font:inherit; font-size:.84rem;
+  font-weight:800; cursor:pointer; transition:filter .18s,transform .18s;
+}
+.banco-practica-iniciar:hover:not(:disabled) { filter:brightness(1.12); transform:translateY(-1px); }
+.banco-practica-iniciar:focus-visible { outline:3px solid var(--crema); outline-offset:3px; }
+.banco-practica-iniciar:disabled { opacity:.42; cursor:not-allowed; }
