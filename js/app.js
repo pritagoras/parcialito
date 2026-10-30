@@ -1542,6 +1542,66 @@ function actualizarRacha(subio) {
   }
 }
 
+
+/* Perrito de Parcialito: SVG en línea y dividido en partes (cola, patas, cabeza, ojos, medalla)
+   para animarlas por separado desde el CSS. */
+const MASCOTA_HTML = `
+  <div class="mascota-camina">
+    <div class="mascota-sombra"></div>
+    <div class="mascota-cuerpo">
+      <svg class="perro" viewBox="0 0 180 126" focusable="false" aria-hidden="true">
+        <defs>
+          <linearGradient id="mp-pelo" x2="0" y2="1"><stop stop-color="#fffdf7"/><stop offset="1" stop-color="#e9dfd3"/></linearGradient>
+          <linearGradient id="mp-azul" x2="0" y2="1"><stop stop-color="#4169bd"/><stop offset="1" stop-color="#18366f"/></linearGradient>
+        </defs>
+        <g class="p-cola">
+          <path d="M39 66 C20 58 18 35 30 24 C41 15 53 27 48 39 C44 48 51 53 58 54" fill="none" stroke="#8d7d86" stroke-width="13" stroke-linecap="round"/>
+          <path d="M39 64 C23 56 22 36 32 27 C40 20 48 29 44 39 C41 47 49 51 56 53" fill="none" stroke="url(#mp-pelo)" stroke-width="9" stroke-linecap="round"/>
+        </g>
+        <path d="M39 61 C47 46 77 43 107 52 C129 59 136 78 123 96 L48 98 C34 88 31 74 39 61Z" fill="url(#mp-pelo)" stroke="#8c7b85" stroke-width="2.5"/>
+        <g class="p-pata p-pata-a"><path d="M48 83 L45 108 Q44 116 53 116 L63 116 Q68 113 64 107 L67 88" fill="url(#mp-pelo)" stroke="#8c7b85" stroke-width="2.2"/></g>
+        <g class="p-pata p-pata-b"><path d="M103 85 L108 108 Q110 116 120 115 L128 112 Q131 108 124 103 L120 80" fill="url(#mp-pelo)" stroke="#8c7b85" stroke-width="2.2"/></g>
+        <g class="p-pata p-pata-c"><path d="M75 84 L76 108 Q76 116 86 116 L95 114 Q98 110 91 104 L91 82" fill="#f7f0e7" stroke="#8c7b85" stroke-width="2.2"/></g>
+        <g class="p-cabeza">
+          <path d="M105 29 C91 23 87 41 94 57 C99 68 113 65 118 52Z" fill="#d9c9c1" stroke="#8c7b85" stroke-width="2"/>
+          <path d="M108 31 C99 31 98 43 105 54 C111 58 117 49 116 41Z" fill="#f0d9d7"/>
+          <path d="M105 31 C108 10 133 7 150 21 C168 35 166 65 151 79 C137 93 109 82 101 63 C94 48 96 37 105 31Z" fill="url(#mp-pelo)" stroke="#8c7b85" stroke-width="2.5"/>
+          <path class="p-oreja" d="M143 20 C153 10 166 20 166 34 C165 45 157 49 150 42" fill="#f3e8df" stroke="#8c7b85" stroke-width="2"/>
+          <g class="p-ojos">
+            <ellipse cx="128" cy="49" rx="5" ry="7" fill="#211b2d"/><ellipse cx="153" cy="48" rx="5" ry="7" fill="#211b2d"/>
+            <circle cx="129.5" cy="46.5" r="1.7" fill="#fff"/><circle cx="154.5" cy="45.5" r="1.7" fill="#fff"/>
+          </g>
+          <ellipse cx="144" cy="65" rx="19" ry="13" fill="#fffaf2"/>
+          <path d="M139 61 Q145 54 151 61 Q149 67 144 67 Q140 66 139 61Z" fill="#292333"/>
+          <ellipse class="p-lengua" cx="140" cy="77" rx="4.5" ry="5.5" fill="#f08a96"/>
+          <path d="M144 68 Q143 76 136 74" fill="none" stroke="#8c5963" stroke-width="2" stroke-linecap="round"/>
+          <path d="M122 17 Q111 7 113 20 Q114 28 125 24 L128 20 Q140 31 145 21 Q147 9 132 16 L128 19Z" fill="#e63946" stroke="#9e1e32" stroke-width="1.8"/>
+          <circle cx="128" cy="20" r="4" fill="#f7b2a7" stroke="#9e1e32" stroke-width="1"/>
+        </g>
+        <path d="M103 73 Q124 91 151 77 L155 85 Q127 101 100 82Z" fill="url(#mp-azul)" stroke="#18366f" stroke-width="2"/>
+        <g class="p-medalla">
+          <path d="M130 91 L130 99" stroke="#d8a92e" stroke-width="3"/>
+          <circle cx="130" cy="105" r="10" fill="#f5c84b" stroke="#8b5c19" stroke-width="2"/>
+          <text x="130" y="109" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="900" fill="#32234d">T</text>
+        </g>
+        <g transform="translate(152 4)"><path class="p-corazon p-c1" d="M0 4 C-8 -2 -4 -9 0 -4 C4 -9 8 -2 0 4Z" fill="#ff5d7a"/></g>
+        <g transform="translate(126 0)"><path class="p-corazon p-c2" d="M0 4 C-8 -2 -4 -9 0 -4 C4 -9 8 -2 0 4Z" fill="#ff8fa3"/></g>
+        <g transform="translate(166 14)"><path class="p-corazon p-c3" d="M0 4 C-8 -2 -4 -9 0 -4 C4 -9 8 -2 0 4Z" fill="#ff5d7a"/></g>
+        <g transform="translate(162 34)"><path class="p-gota" d="M0 -6 C4 0 5 4 0 6 C-5 4 -4 0 0 -6Z" fill="#7fc4ff" stroke="#3b8fd6" stroke-width="1"/></g>
+      </svg>
+    </div>
+  </div>`;
+
+/* El perrito se frena y reacciona: salta y mueve la cola si acertás, agacha la cabeza si fallás.
+   En los hitos de racha hace una voltereta. Se reinicia solo al dibujar la pregunta siguiente. */
+function reaccionMascota(acerto, hito) {
+  const m = document.querySelector('.mascota-paseo');
+  if (!m) return;
+  m.dataset.estado = acerto ? 'acierto' : 'error';
+  if (hito) m.dataset.hito = '1';
+}
+
+
 function mostrarPregunta() {
   const j = juego;
   const q = j.preguntas[j.i];
@@ -1574,9 +1634,7 @@ function mostrarPregunta() {
           <span>${esc(q.opciones[oi])}</span>
         </button>`).join('')}
     </div>
-    <div class="mascota-paseo" aria-hidden="true">
-      <img src="assets/mascota-parcialito.svg" alt="" width="150" height="105" decoding="async">
-    </div>
+    <div class="mascota-paseo" aria-hidden="true">${MASCOTA_HTML}</div>
     <div class="feedback" id="feedback" aria-live="polite"></div>
     <div class="acciones"><button class="btn primario" id="btn-sig" hidden></button></div>
     ${rankingActivo() && j.meta.estilo === 'parcial-limpio' ? `
@@ -1664,6 +1722,7 @@ function responder(pos) {
     j.falladas.push(q);
     estado.errores[q.id] = 1;
   }
+  reaccionMascota(acerto, acerto && !modoLimpio && HITOS.includes(j.racha));
   guardar();
 
   feedback.innerHTML = veredicto + (q.explicacion ? `<p class="explicacion">${esc(q.explicacion)}</p>` : '') + (modoLimpio ? '' : textoDificultad(q.id));
