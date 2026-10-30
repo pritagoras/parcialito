@@ -849,11 +849,11 @@ function ordenInteligente(pool) {
 // Normaliza tildes y mayúsculas para que la búsqueda por palabras sea flexible.
 function normalizarTerminoBanco(valor) {
   return String(valor || '').toLocaleLowerCase('es')
-    .normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
 
 function separarPalabrasBanco(valor) {
-  return [...new Set(normalizarTerminoBanco(valor).split(/[\\s,;]+/).map((p) => p.trim()).filter(Boolean))];
+  return [...new Set(normalizarTerminoBanco(valor).split(/[\s,;]+/).map((p) => p.trim()).filter(Boolean))];
 }
 
 function preguntasPorPalabras(pool, palabras) {
