@@ -1613,6 +1613,9 @@ function mostrarPregunta() {
   const pantalla = zona?.closest('.pantalla');
   // Mantener viva la misma instancia del perrito mientras se reconstruye el contenido de cada pregunta.
   if (mascota && pantalla && mascota.parentElement !== pantalla) pantalla.appendChild(mascota);
+  // La reacción de la respuesta anterior termina aquí; el paseo principal no se reinicia.
+  mascota?.removeAttribute('data-estado');
+  mascota?.removeAttribute('data-hito');
 
   document.getElementById('barra').style.width = `${(j.i / j.preguntas.length) * 100}%`;
 
