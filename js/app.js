@@ -1574,6 +1574,9 @@ function mostrarPregunta() {
           <span>${esc(q.opciones[oi])}</span>
         </button>`).join('')}
     </div>
+    <div class="mascota-paseo" aria-hidden="true">
+      <img src="assets/mascota-parcialito.svg" alt="" width="150" height="105" decoding="async">
+    </div>
     <div class="feedback" id="feedback" aria-live="polite"></div>
     <div class="acciones"><button class="btn primario" id="btn-sig" hidden></button></div>
     ${rankingActivo() && j.meta.estilo === 'parcial-limpio' ? `
