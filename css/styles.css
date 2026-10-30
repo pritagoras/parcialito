@@ -956,6 +956,7 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 
 /* Mascota de Parcialito: paseo decorativo debajo de las respuestas. */
 .mascota-paseo {
+  display: none !important; /* Desactivada temporalmente; conservar el código para reactivarla. */
   --m-w: min(132px, 35vw);
   --salto: 30px;
   position: relative;
