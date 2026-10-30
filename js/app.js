@@ -694,6 +694,11 @@ function vistaInicio() {
           <span class="sp-tema-texto"><strong>Todas las preguntas juntas</strong><small>Opción múltiple</small></span>
           <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
         </button>
+        <button class="sp-banco" id="btn-sp-banco" type="button">
+          <span class="sp-banco-icono" aria-hidden="true">☷</span>
+          <span class="sp-banco-texto"><strong>Ver el banco completo</strong><small>Explorá todas las preguntas, opciones y respuestas</small></span>
+          <span class="sp-banco-flecha" aria-hidden="true">↗</span>
+        </button>
       </section>
       <button class="banner-lab" id="btn-lab" type="button"><span class="banner-lab-icon">🧬</span><span class="banner-lab-text"><strong>LAB <span class="banner-lab-nuevo">NUEVO</span></strong><small>Explorá la biología con modelos interactivos y recorridos guiados.</small></span><span class="banner-lab-flecha">↗</span></button>
       ${estaInstalada() || !esCelular() ? '' : `
@@ -743,6 +748,7 @@ function vistaInicio() {
 
   document.getElementById('btn-sonido').addEventListener('click', alternarSonido);
   document.getElementById('btn-sp-ciclo')?.addEventListener('click', () => { Sonido.clic(); lanzarSegundoParcial(); });
+  document.getElementById('btn-sp-banco')?.addEventListener('click', () => { Sonido.clic(); vistaBancoSegundoParcial(); });
   document.getElementById('btn-lab')?.addEventListener('click', () => { Sonido.clic(); abrirLab({ app, volver: vistaInicio }); });
   document.getElementById('btn-instalar-app')?.addEventListener('click', instalarParcialito);
   document.getElementById('btn-errores')?.addEventListener('click', () => { Sonido.clic(); lanzarErrores(); });
@@ -838,6 +844,121 @@ function ordenInteligente(pool) {
     grupos[v === 2 ? 2 : v === 1 ? 1 : 0].push(q);
   }
   return grupos.flatMap((g) => mezclar(g));
+}
+
+// Vista de consulta: permite recorrer TODO el pool sin iniciar una partida.
+function vistaBancoSegundoParcial() {
+  vistaCargando('Cargando el banco completo…');
+  cargarSegundoParcial().then((pool) => {
+    const temas = [...new Set(pool.map((q) => q.tema))].sort((x, y) => x.localeCompare(y, 'es'));
+    const porPagina = 25;
+    let busqueda = '';
+    let temaElegido = '';
+    let pagina = 0;
+
+    app.innerHTML = `
+      <main class="pantalla banco-sp">
+        <button class="btn enlace" id="btn-volver-banco">← Inicio</button>
+        <div class="titulo-materia">
+          <span class="emoji" aria-hidden="true">📚</span>
+          <h1>Banco completo</h1>
+        </div>
+        <p class="bajada">Segundo parcial · consultá las preguntas sin iniciar una partida.</p>
+        <section class="banco-sp-panel">
+          <div class="banco-sp-resumen">
+            <div><strong>${pool.length}</strong><span>preguntas en el pool</span></div>
+            <div><strong>${temas.length}</strong><span>temas / archivos</span></div>
+          </div>
+          <label class="banco-sp-busqueda">
+            <span>Buscar una pregunta</span>
+            <input id="banco-buscar" type="search" placeholder="Escribí una palabra o concepto…" autocomplete="off">
+          </label>
+          <label class="banco-sp-filtro">
+            <span>Filtrar por tema</span>
+            <select id="banco-tema">
+              <option value="">Todos los temas</option>
+              ${temas.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join('')}
+            </select>
+          </label>
+          <div class="banco-sp-estado" id="banco-estado" aria-live="polite"></div>
+          <div class="banco-sp-lista" id="banco-lista"></div>
+          <nav class="banco-sp-paginacion" id="banco-paginacion" aria-label="Páginas del banco"></nav>
+        </section>
+      </main>`;
+
+    document.getElementById('btn-volver-banco').addEventListener('click', () => {
+      Sonido.clic();
+      vistaInicio();
+    });
+    document.getElementById('banco-buscar').addEventListener('input', (e) => {
+      busqueda = e.target.value.trim().toLocaleLowerCase('es');
+      pagina = 0;
+      pintar();
+    });
+    document.getElementById('banco-tema').addEventListener('change', (e) => {
+      temaElegido = e.target.value;
+      pagina = 0;
+      pintar();
+    });
+
+    function pintar() {
+      const filtradas = pool.filter((q) => {
+        if (temaElegido && q.tema !== temaElegido) return false;
+        if (!busqueda) return true;
+        const texto = [q.texto, q.tema, ...q.opciones, q.explicacion].join(' ').toLocaleLowerCase('es');
+        return texto.includes(busqueda);
+      });
+      const totalPaginas = Math.max(1, Math.ceil(filtradas.length / porPagina));
+      pagina = Math.min(pagina, totalPaginas - 1);
+      const inicio = pagina * porPagina;
+      const visibles = filtradas.slice(inicio, inicio + porPagina);
+      const estadoEl = document.getElementById('banco-estado');
+      const lista = document.getElementById('banco-lista');
+      const nav = document.getElementById('banco-paginacion');
+
+      estadoEl.textContent = filtradas.length
+        ? `Mostrando ${inicio + 1}–${inicio + visibles.length} de ${filtradas.length} preguntas`
+        : 'No hay preguntas que coincidan con la búsqueda.';
+      lista.innerHTML = visibles.map((q, i) => `
+        <article class="banco-pregunta">
+          <div class="banco-pregunta-meta">
+            <span>Pregunta ${inicio + i + 1}</span>
+            <span>${esc(q.tema)}</span>
+          </div>
+          <h2>${esc(q.texto)}</h2>
+          ${q.imagen ? `<figure class="banco-pregunta-imagen"><img src="${esc(q.imagen)}" alt="${esc(q.imagenAlt || 'Imagen de la pregunta')}" loading="lazy"></figure>` : ''}
+          <ol class="banco-opciones">
+            ${q.opciones.map((op, n) => `
+              <li class="${n === q.correcta ? 'es-correcta' : ''}">
+                <span>${LETRAS[n]}.</span><span>${esc(op)}</span>
+                ${n === q.correcta ? '<b>Correcta</b>' : ''}
+              </li>`).join('')}
+          </ol>
+          ${q.explicacion ? `<details class="banco-explicacion"><summary>Ver explicación</summary><p>${esc(q.explicacion)}</p></details>` : ''}
+        </article>`).join('');
+
+      nav.innerHTML = `
+        <button class="btn secundario" id="banco-anterior" ${pagina === 0 ? 'disabled' : ''}>← Anterior</button>
+        <span>Página ${pagina + 1} de ${totalPaginas}</span>
+        <button class="btn secundario" id="banco-siguiente" ${pagina >= totalPaginas - 1 ? 'disabled' : ''}>Siguiente →</button>`;
+      document.getElementById('banco-anterior').addEventListener('click', () => {
+        pagina--;
+        pintar();
+        window.scrollTo(0, 0);
+      });
+      document.getElementById('banco-siguiente').addEventListener('click', () => {
+        pagina++;
+        pintar();
+        window.scrollTo(0, 0);
+      });
+    }
+
+    pintar();
+    window.scrollTo(0, 0);
+  }).catch((e) => {
+    console.error('[Banco del segundo parcial]', e);
+    vistaError(e);
+  });
 }
 
 // Actualiza el cartel del banner con la cantidad real de preguntas.
