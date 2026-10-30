@@ -10,6 +10,7 @@ import { abrirMitosis } from './mitosis.js?v=20261027-13';
 import { abrirMeiosis } from './meiosis.js?v=20261028-1';
 import { abrirCantidadADN } from './cantidad-adn.js?v=20261028-1';
 import { abrirComparadorDivision } from './comparador-division.js?v=20261028-4';
+import { abrirCalculadoraDivision } from './calculadora-division.js?v=20261030-1';
 
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
@@ -368,6 +369,7 @@ export function abrirLab({ app, volver }) {
           '<button type="button" data-div="adn" class="'+(tema==='adn'?'activo':'')+'" aria-pressed="'+(tema==='adn')+'"><span>📈</span><b>ADN y fecundación</b><small>2C · 4C · 1C</small></button>'+
         '<button type="button" data-extra="comparar" class="div-extra">🔎 Comparación completa <small>Vista conjunta · índice de fases · guía escrita</small></button>'+
         '<button type="button" data-extra="variabilidad" class="div-extra">🧬 Variabilidad genética <small>Crossing-over y segregación al azar</small></button>'+
+        '<button type="button" data-extra="calculadora" class="div-extra">🧮 Calculadora de cromosomas <small>Ploidía · cromátides · ADN por etapa</small></button>'+
         '</nav>'+
         '<article class="div-feature div-'+tema+'">'+diagramaActual()+
           '<div class="div-info"><div class="div-tagline">'+t.tipo+'</div><h2>'+t.icon+' '+t.titulo+'</h2><h3>'+t.bajada+'</h3><p>'+t.detalle+'</p>'+
@@ -377,7 +379,7 @@ export function abrirLab({ app, volver }) {
         '</article></section>';
       app.querySelector('#div-back').onclick=mostrarCatalogo;
       app.querySelectorAll('[data-div]').forEach(b=>b.onclick=()=>{tema=b.dataset.div;pintar()});
-      app.querySelectorAll('[data-extra]').forEach(b=>b.onclick=()=>abrirComparadorDivision({app,volver:abrirDivisionCelular,initialMode:b.dataset.extra==='variabilidad'?'var':'visual'}));
+      app.querySelectorAll('[data-extra]').forEach(b=>b.onclick=()=>{if(b.dataset.extra==='calculadora')abrirCalculadoraDivision({app,volver:abrirDivisionCelular});else abrirComparadorDivision({app,volver:abrirDivisionCelular,initialMode:b.dataset.extra==='variabilidad'?'var':'visual'});});
       app.querySelector('#div-open').onclick=t.abrir;
     }
     const st=document.createElement('style');
