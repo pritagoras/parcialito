@@ -388,7 +388,7 @@
       "explicacion": "La maquinaria traduccional avanza leyendo la hebra de ARNm en sentido 5'->3', estableciendo la fase de lectura a partir del primer AUG[cite: 9]."
     },
     {
-      "pregunta": "Si en una fotomicrografía de una célula humana somática en división se observan 23 cromosomas duplicados alineados en la placa ecuatorial, se trata de una:",
+      "pregunta": "Si en una fotomicrografía de una célula humana en división se observan 23 cromosomas duplicados alineados en la placa ecuatorial, se trata de una:",
       "opciones": [
         "Metafase de la mitosis.",
         "Metafase I de la meiosis.",
@@ -396,7 +396,8 @@
         "Profase I de la meiosis."
       ],
       "correcta": "C",
-      "explicacion": "La alineación ecuatorial de 23 cromosomas dobles (número haploide humano n = 23) es característica de la metafase II meiótica[cite: 9]."
+      "explicacion": "La metafase II presenta 23 cromosomas duplicados (n = 23 en humanos) alineados individualmente en la placa ecuatorial. No corresponde a una célula somática diploide en metafase mitótica, que presenta 46 cromosomas.",
+      "id": "1x07m1b"
     },
     {
       "pregunta": "En el operón lactosa de E. coli, la proteína represora activa es un producto codificado por:",
