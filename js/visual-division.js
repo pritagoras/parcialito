@@ -23,6 +23,7 @@ const css=`
 .divvisual .dv-key{font-size:11px;color:#91a9d4;margin-top:10px}
 @media(max-width:650px){.divvisual .dv-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.divvisual .dv-svg{min-height:150px}}
 `;
+const A='#59c5ff',B='#f2b65d',C='#a78bfa',D='#64d7a1';
 const phases={
  mitosis:[
  ['Interfase · G₁','Antes de duplicar el ADN','Hay cuatro cromosomas: dos pares de homólogos. Cada cromosoma tiene una cromátida.','g1'],
@@ -68,7 +69,7 @@ function diagram(kind){
  const X=(x,y,i,rot=0,accent=null)=>chromosome(x,y,colors[i],true,rot,accent);
  if(kind==='g1'){
    out.push(cell(300,150,180,105,colors.map((c,i)=>rod(235+(i%2)*42,112+Math.floor(i/2)*75,i)).join('')));
- }else if(['replicated','prophase','prometa','pro2'].includes(kind)){
+ }else if(['replicated','prophase','prometa'].includes(kind)){
    out.push(cell(300,150,180,105,[X(235,112,0),X(277,112,1),X(235,187,2),X(277,187,3)].join('')));
  }else if(['synapsis','cross','chiasma'].includes(kind)){
    const accents=kind==='cross'||kind==='chiasma';
@@ -88,15 +89,15 @@ function diagram(kind){
    out.push(cell(195,150,105,80,[rod(170,140,0),rod(210,140,1),rod(170,175,2),rod(210,175,3)].join('')));
    out.push(cell(405,150,105,80,[rod(380,140,0),rod(420,140,1),rod(380,175,2),rod(420,175,3)].join('')));
  }else if(kind==='telo1'||kind==='pro2'){
-   out.push(cell(195,150,105,80,[X(170,140,0),X(210,140,1)].join('')));
-   out.push(cell(405,150,105,80,[X(380,140,2),X(420,140,3)].join('')));
+   out.push(cell(195,150,105,80,[X(170,140,0),X(210,140,2)].join('')));
+   out.push(cell(405,150,105,80,[X(380,140,1),X(420,140,3)].join('')));
  }else if(kind==='ana2'){
    out.push(cell(195,150,105,80,[rod(135,120,0),rod(160,120,1),rod(225,180,0),rod(250,180,1)].join('')));
    out.push(cell(405,150,105,80,[rod(345,120,2),rod(370,120,3),rod(435,180,2),rod(460,180,3)].join('')));
  }else if(kind==='telo2'||kind==='end2'){
    [[135,125],[265,125],[335,125],[465,125]].forEach((p,j)=>{
-     const i=j<2?0:2, k=j%2?1:3;
-     out.push(cell(p[0],p[1],58,48,[rod(p[0]-13,p[1],i),rod(p[0]+13,p[1],k)].join('')));
+     const i=j<2?0:1, k=j<2?2:3;
+     out.push(cell(p[0],p[1],58,48,[rod(p[0]-13,p[1],j<2?0:1),rod(p[0]+13,p[1],j<2?2:3)].join('')));
    });
  }
  const label=kind.startsWith('meta')?'PLACA ECUATORIAL':kind==='ana'||kind.startsWith('ana')?'SEPARACIÓN CROMOSÓMICA':kind==='synapsis'||kind==='cross'||kind==='chiasma'?'HOMOLOGÍA Y RECOMBINACIÓN':'CROMOSOMAS · 2n = 4';
