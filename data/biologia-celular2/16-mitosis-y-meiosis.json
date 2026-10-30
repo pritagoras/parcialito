@@ -728,6 +728,765 @@
       ],
       "correcta": "A",
       "explicacion": "Profase ocurre tras replicación."
+    },
+    {
+      "pregunta": "¿Qué caracteriza al estado G0 del ciclo celular?",
+      "opciones": [
+        "La célula está replicando activamente su ADN.",
+        "La célula sale del ciclo proliferativo y permanece en un estado quiescente, reversible o permanente según el tipo celular.",
+        "Los cromosomas están alineados en la placa ecuatorial.",
+        "La célula ya separó sus cromátidas hermanas."
+      ],
+      "correcta": "B",
+      "explicacion": "En G0 la célula no avanza hacia la división. Algunas células pueden reingresar al ciclo ante señales; otras, como muchas neuronas maduras, permanecen allí de forma prolongada."
+    },
+    {
+      "pregunta": "El punto de restricción de G1 permite que la célula:",
+      "opciones": [
+        "Compruebe si las condiciones y señales son adecuadas para comprometerse con la replicación del ADN.",
+        "Verifique que todos los cromosomas estén unidos al huso.",
+        "Compruebe que terminó la citocinesis.",
+        "Inicie la separación de cromátidas."
+      ],
+      "correcta": "A",
+      "explicacion": "El punto de restricción integra señales de crecimiento, nutrientes, tamaño celular y estado del ADN antes de comprometerse con la fase S."
+    },
+    {
+      "pregunta": "¿Qué situación puede detener el ciclo celular en el control G1/S?",
+      "opciones": [
+        "La falta de unión de un cinetocoro al huso.",
+        "La presencia de daño en el ADN antes de replicarlo.",
+        "La ausencia de quiasmas en metafase II.",
+        "La formación de la placa celular vegetal."
+      ],
+      "correcta": "B",
+      "explicacion": "El control G1/S puede frenar el ciclo si detecta daño en el ADN, evitando que se replique una molécula dañada."
+    },
+    {
+      "pregunta": "El control G2/M comprueba principalmente que:",
+      "opciones": [
+        "Los cromosomas homólogos hayan realizado crossing-over.",
+        "La célula haya completado la replicación del ADN y no presente daño incompatible con la mitosis.",
+        "La citocinesis haya terminado.",
+        "Los gametos tengan número haploide."
+      ],
+      "correcta": "B",
+      "explicacion": "Antes de entrar en mitosis, la célula verifica que la replicación esté completa y que el ADN pueda segregarse correctamente."
+    },
+    {
+      "pregunta": "Si un cinetocoro no está correctamente unido a los microtúbulos del huso, el punto de control del huso:",
+      "opciones": [
+        "Activa inmediatamente la telofase.",
+        "Impide la activación del complejo que desencadena la anafase.",
+        "Duplica nuevamente el ADN.",
+        "Desarma los cromosomas homólogos."
+      ],
+      "correcta": "B",
+      "explicacion": "El checkpoint del huso retrasa la anafase hasta que los cromosomas estén correctamente unidos y bajo tensión bipolar."
+    },
+    {
+      "pregunta": "¿Qué combinación regula directamente la transición G2/M en células animales?",
+      "opciones": [
+        "Ciclina B asociada a CDK1.",
+        "Ciclina E asociada a CDK2.",
+        "Ciclina D asociada a CDK4 exclusivamente.",
+        "Ciclina A asociada a una ADN ligasa."
+      ],
+      "correcta": "A",
+      "explicacion": "El complejo ciclina B-CDK1, también llamado MPF o factor promotor de la mitosis, impulsa la entrada en mitosis."
+    },
+    {
+      "pregunta": "¿Cuál es una función de las ciclinas en el ciclo celular?",
+      "opciones": [
+        "Degradar directamente el ADN duplicado.",
+        "Activar quinasas dependientes de ciclinas y regular temporalmente su actividad.",
+        "Formar el huso como proteínas estructurales principales.",
+        "Separar físicamente los cromosomas homólogos."
+      ],
+      "correcta": "B",
+      "explicacion": "Las concentraciones de ciclinas varían durante el ciclo y regulan la actividad de las CDK que fosforilan proteínas diana."
+    },
+    {
+      "pregunta": "En una célula animal, el centrosoma funciona principalmente como:",
+      "opciones": [
+        "Centro organizador de microtúbulos que contribuye a formar el huso mitótico.",
+        "Lugar donde se sintetizan los ribosomas.",
+        "Estructura que une cromátidas hermanas.",
+        "Compartimento donde ocurre el crossing-over."
+      ],
+      "correcta": "A",
+      "explicacion": "El centrosoma organiza microtúbulos y, tras duplicarse, ayuda a establecer los dos polos del huso mitótico."
+    },
+    {
+      "pregunta": "El cinetocoro es:",
+      "opciones": [
+        "Una región de ADN que contiene genes ribosomales.",
+        "Un complejo proteico ensamblado sobre el centrómero al que se unen microtúbulos del huso.",
+        "El anillo de actina que divide el citoplasma.",
+        "Una enzima que replica los telómeros."
+      ],
+      "correcta": "B",
+      "explicacion": "El cinetocoro se forma sobre la región centromérica y permite el acoplamiento de los cromosomas al huso."
+    },
+    {
+      "pregunta": "Los microtúbulos polares del huso mitótico:",
+      "opciones": [
+        "Se unen directamente al ADN de los telómeros.",
+        "Se superponen con microtúbulos del polo opuesto y contribuyen a separar los polos.",
+        "Forman el anillo contráctil de la citocinesis.",
+        "Mantienen unidos los cromosomas homólogos durante profase I."
+      ],
+      "correcta": "B",
+      "explicacion": "Los microtúbulos interpolares o polares interactúan entre sí y ayudan a elongar el huso durante la anafase B."
+    },
+    {
+      "pregunta": "Los microtúbulos astrales de una célula animal contribuyen a:",
+      "opciones": [
+        "Anclar y posicionar el huso respecto de la corteza celular.",
+        "Separar las cromátidas mediante corte de cohesinas.",
+        "Formar el complejo sinaptonémico.",
+        "Sintetizar la nueva pared celular."
+      ],
+      "correcta": "A",
+      "explicacion": "Los microtúbulos astrales irradian desde los centrosomas y ayudan a orientar y posicionar el huso."
+    },
+    {
+      "pregunta": "Durante la profase mitótica ocurre principalmente:",
+      "opciones": [
+        "La separación de cromátidas hermanas.",
+        "La condensación de la cromatina y la organización inicial del huso.",
+        "La replicación del ADN.",
+        "La formación de cuatro núcleos haploides."
+      ],
+      "correcta": "B",
+      "explicacion": "En profase la cromatina se condensa en cromosomas visibles y comienza a organizarse el huso mitótico."
+    },
+    {
+      "pregunta": "¿Qué evento distingue especialmente a la prometafase mitótica?",
+      "opciones": [
+        "La duplicación de los centríolos en fase S.",
+        "La desorganización de la envoltura nuclear y el acceso de los microtúbulos a los cinetocoros.",
+        "La separación de homólogos.",
+        "La formación de la placa celular."
+      ],
+      "correcta": "B",
+      "explicacion": "Al desorganizarse la envoltura nuclear, los microtúbulos del huso pueden capturar los cinetocoros."
+    },
+    {
+      "pregunta": "En la anafase mitótica, la separación de cromátidas hermanas ocurre porque:",
+      "opciones": [
+        "Se degrada la cohesión que las mantenía unidas en la región centromérica.",
+        "Se duplica el centrómero y se forma otro cromosoma homólogo.",
+        "Se forma el complejo sinaptonémico.",
+        "Se replica nuevamente el ADN."
+      ],
+      "correcta": "A",
+      "explicacion": "La activación del complejo APC/C conduce a la degradación de securina y permite que separasa escinda cohesinas centroméricas."
+    },
+    {
+      "pregunta": "La anafase A se caracteriza por:",
+      "opciones": [
+        "El alejamiento de los polos por elongación de microtúbulos polares.",
+        "El desplazamiento de los cromosomas hacia los polos por acortamiento de microtúbulos cinetocóricos.",
+        "La reconstrucción de la envoltura nuclear.",
+        "La formación de la placa celular."
+      ],
+      "correcta": "B",
+      "explicacion": "En la anafase A los cromosomas se desplazan hacia los polos, en parte por el acortamiento de los microtúbulos unidos a sus cinetocoros."
+    },
+    {
+      "pregunta": "La anafase B contribuye a la separación de los polos mediante:",
+      "opciones": [
+        "El alargamiento del huso por deslizamiento de microtúbulos polares y fuerzas sobre microtúbulos astrales.",
+        "La duplicación de los cromosomas.",
+        "La sinapsis de homólogos.",
+        "La degradación de los telómeros."
+      ],
+      "correcta": "A",
+      "explicacion": "En anafase B los polos se alejan por fuerzas generadas entre microtúbulos interpolare y por interacciones con la corteza celular."
+    },
+    {
+      "pregunta": "Durante la telofase mitótica normalmente:",
+      "opciones": [
+        "Los cromosomas se duplican por segunda vez.",
+        "Los cromosomas llegan a los polos, se reorganizan las envolturas nucleares y comienza la descondensación.",
+        "Los homólogos forman tétradas.",
+        "Se separan por primera vez las cromátidas."
+      ],
+      "correcta": "B",
+      "explicacion": "La telofase revierte varios cambios de la profase: se reconstruyen los núcleos y los cromosomas comienzan a descondensarse."
+    },
+    {
+      "pregunta": "En la citocinesis de una célula vegetal, la nueva separación entre células se inicia mediante:",
+      "opciones": [
+        "Un surco de segmentación generado por actina y miosina.",
+        "Una placa celular formada por vesículas que se fusionan en el plano ecuatorial.",
+        "La ruptura de la pared celular completa.",
+        "La separación de los centrómeros."
+      ],
+      "correcta": "B",
+      "explicacion": "Las vesículas, principalmente derivadas del Golgi, se fusionan para formar la placa celular, que crece hacia la periferia y origina la nueva pared."
+    },
+    {
+      "pregunta": "¿Por qué la colchicina puede utilizarse para preparar cariotipos?",
+      "opciones": [
+        "Porque estimula el crossing-over.",
+        "Porque altera los microtúbulos del huso y detiene o acumula células en metafase.",
+        "Porque descondensa la cromatina en G1.",
+        "Porque induce la duplicación de los centrómeros."
+      ],
+      "correcta": "B",
+      "explicacion": "La colchicina interfiere con la dinámica de los microtúbulos y permite acumular células con cromosomas muy condensados, útiles para el análisis."
+    },
+    {
+      "pregunta": "En un cariotipo convencional, los cromosomas se fotografían y ordenan preferentemente cuando están:",
+      "opciones": [
+        "En G1, con cromatina laxa.",
+        "En metafase, altamente condensados y distinguibles.",
+        "En telofase, ya descondensados.",
+        "En fase S, mientras se replica el ADN."
+      ],
+      "correcta": "B",
+      "explicacion": "La metafase facilita observar la morfología, el tamaño y la posición del centrómero de cada cromosoma."
+    },
+    {
+      "pregunta": "¿Cuál es una función biológica central de la mitosis en organismos pluricelulares?",
+      "opciones": [
+        "Producir gametos haploides mediante dos divisiones.",
+        "Permitir crecimiento, renovación y reparación de tejidos conservando normalmente la dotación cromosómica.",
+        "Generar variabilidad mediante crossing-over.",
+        "Reducir a la mitad el número de cromosomas."
+      ],
+      "correcta": "B",
+      "explicacion": "La mitosis produce células hijas con la misma ploidía que la célula progenitora y sostiene el crecimiento y mantenimiento de tejidos."
+    },
+    {
+      "pregunta": "En organismos eucariontes unicelulares, la mitosis puede participar en:",
+      "opciones": [
+        "La reproducción asexual.",
+        "La fecundación.",
+        "La reducción cromosómica obligatoria.",
+        "La formación de bivalentes."
+      ],
+      "correcta": "A",
+      "explicacion": "En muchos eucariontes unicelulares, la división mitótica permite generar nuevos individuos genéticamente muy similares."
+    },
+    {
+      "pregunta": "Si ocurre cariocinesis pero no citocinesis, el resultado inmediato más probable es:",
+      "opciones": [
+        "Dos células haploides separadas.",
+        "Una célula con dos núcleos.",
+        "Una célula sin ADN.",
+        "Cuatro gametos."
+      ],
+      "correcta": "B",
+      "explicacion": "La división nuclear sin separación del citoplasma deja los núcleos hijos dentro de una misma célula."
+    },
+    {
+      "pregunta": "La meiosis ocurre principalmente en células de linajes que producen:",
+      "opciones": [
+        "Células somáticas para crecimiento.",
+        "Células reproductivas o esporas, según el ciclo de vida del organismo.",
+        "Eritrocitos maduros.",
+        "Células musculares diferenciadas."
+      ],
+      "correcta": "B",
+      "explicacion": "La meiosis forma células haploides destinadas a la reproducción sexual o a etapas haploides del ciclo de vida."
+    },
+    {
+      "pregunta": "Los cromosomas homólogos se definen como aquellos que:",
+      "opciones": [
+        "Son dos cromátidas hermanas unidas por cohesinas.",
+        "Tienen los mismos genes en los mismos loci, aunque pueden portar alelos diferentes, y uno procede de cada progenitor en organismos diploides.",
+        "Tienen necesariamente secuencias de ADN idénticas.",
+        "Siempre permanecen unidos durante la mitosis."
+      ],
+      "correcta": "B",
+      "explicacion": "Los homólogos forman pares en organismos diploides; comparten loci génicos, pero no necesariamente los mismos alelos."
+    },
+    {
+      "pregunta": "En el leptoteno de la profase I meiótica:",
+      "opciones": [
+        "Los cromosomas comienzan a condensarse y se hacen visibles como filamentos.",
+        "Los homólogos completan la sinapsis.",
+        "Los quiasmas se terminalizan por completo.",
+        "Se separan los homólogos hacia polos opuestos."
+      ],
+      "correcta": "A",
+      "explicacion": "El leptoteno es la primera subetapa de profase I y se caracteriza por el inicio de la condensación cromosómica."
+    },
+    {
+      "pregunta": "Durante el cigoteno o zigoteno de profase I:",
+      "opciones": [
+        "Se separan las cromátidas hermanas.",
+        "Comienza la sinapsis y el apareamiento de los cromosomas homólogos.",
+        "Se completa la citocinesis.",
+        "Se alinean los bivalentes en el ecuador."
+      ],
+      "correcta": "B",
+      "explicacion": "En cigoteno los homólogos se aproximan y comienza a ensamblarse el complejo sinaptonémico."
+    },
+    {
+      "pregunta": "El paquiteno de la profase I se caracteriza por:",
+      "opciones": [
+        "La desaparición de todos los quiasmas.",
+        "La sinapsis completa de los homólogos y la ocurrencia del crossing-over.",
+        "La separación de cromátidas hermanas.",
+        "La formación de dos células haploides."
+      ],
+      "correcta": "B",
+      "explicacion": "En paquiteno los homólogos están apareados y se producen eventos de recombinación entre cromátidas no hermanas."
+    },
+    {
+      "pregunta": "Durante el diploteno de la profase I:",
+      "opciones": [
+        "Los homólogos comienzan a separarse, pero permanecen unidos en los quiasmas.",
+        "Se inicia la replicación del ADN.",
+        "Se separan los centrómeros.",
+        "Se forma la placa celular."
+      ],
+      "correcta": "A",
+      "explicacion": "El complejo sinaptonémico se desarma y los homólogos se apartan parcialmente, permaneciendo conectados en los quiasmas."
+    },
+    {
+      "pregunta": "La diacinesis, última subetapa de la profase I, se asocia con:",
+      "opciones": [
+        "La máxima condensación cromosómica y la preparación para la metafase I.",
+        "La duplicación de los homólogos.",
+        "La separación de cromátidas hermanas.",
+        "La formación de la envoltura nuclear en cuatro células."
+      ],
+      "correcta": "A",
+      "explicacion": "En diacinesis los cromosomas alcanzan alta condensación y la célula se prepara para la primera división meiótica."
+    },
+    {
+      "pregunta": "El complejo sinaptonémico es una estructura que:",
+      "opciones": [
+        "Une temporalmente a los cromosomas homólogos durante la profase I.",
+        "Mantiene unidos los microtúbulos del huso en metafase II.",
+        "Forma el anillo contráctil.",
+        "Replica los centrómeros."
+      ],
+      "correcta": "A",
+      "explicacion": "El complejo sinaptonémico facilita el apareamiento estrecho de los homólogos durante la profase I."
+    },
+    {
+      "pregunta": "El crossing-over meiótico ocurre habitualmente entre:",
+      "opciones": [
+        "Cromátidas hermanas del mismo cromosoma.",
+        "Cromátidas no hermanas de cromosomas homólogos.",
+        "Cromosomas no homólogos al azar.",
+        "Cromátidas de dos células distintas."
+      ],
+      "correcta": "B",
+      "explicacion": "La recombinación clásica de profase I intercambia segmentos entre cromátidas no hermanas de homólogos."
+    },
+    {
+      "pregunta": "¿Qué consecuencia directa tiene el crossing-over?",
+      "opciones": [
+        "Reduce el número cromosómico de 2n a n.",
+        "Genera cromátidas recombinantes con nuevas combinaciones de alelos.",
+        "Duplica el ADN de cada cromosoma.",
+        "Impide la segregación independiente."
+      ],
+      "correcta": "B",
+      "explicacion": "El intercambio de segmentos entre cromátidas no hermanas produce nuevas combinaciones alélicas."
+    },
+    {
+      "pregunta": "Los quiasmas son:",
+      "opciones": [
+        "Los puntos visibles de conexión entre homólogos que reflejan eventos de recombinación.",
+        "Los sitios donde se sintetizan los centrómeros.",
+        "Los extremos de los microtúbulos astrales.",
+        "Los complejos que degradan cohesinas."
+      ],
+      "correcta": "A",
+      "explicacion": "Los quiasmas representan conexiones físicas asociadas al crossing-over y ayudan a mantener unidos a los homólogos hasta su separación."
+    },
+    {
+      "pregunta": "En metafase I de la meiosis se alinean en la placa ecuatorial:",
+      "opciones": [
+        "Cromosomas individuales sin relación con sus homólogos.",
+        "Pares de cromosomas homólogos formando bivalentes.",
+        "Cromátidas hermanas ya separadas.",
+        "Cuatro núcleos haploides."
+      ],
+      "correcta": "B",
+      "explicacion": "En metafase I los bivalentes se ubican en el ecuador; la orientación de cada par es independiente de los demás."
+    },
+    {
+      "pregunta": "La orientación aleatoria de cada par de homólogos en metafase I produce:",
+      "opciones": [
+        "Segregación independiente de los cromosomas maternos y paternos.",
+        "Duplicación adicional del ADN.",
+        "Eliminación de los quiasmas antes del crossing-over.",
+        "Aumento de la ploidía."
+      ],
+      "correcta": "A",
+      "explicacion": "La orientación de cada bivalente es independiente y genera distintas combinaciones de cromosomas maternos y paternos en las células hijas."
+    },
+    {
+      "pregunta": "Al finalizar la anafase I, cada polo recibe:",
+      "opciones": [
+        "Una cromátida de cada cromosoma homólogo.",
+        "Un cromosoma de cada par homólogo, todavía formado por dos cromátidas.",
+        "Ambos homólogos de cada par.",
+        "Cuatro copias de cada cromosoma."
+      ],
+      "correcta": "B",
+      "explicacion": "En anafase I se separan los homólogos; las cromátidas hermanas de cada cromosoma siguen unidas."
+    },
+    {
+      "pregunta": "La intercinesis es:",
+      "opciones": [
+        "Una segunda fase S entre meiosis I y II.",
+        "Un intervalo entre meiosis I y II en el que no se replica nuevamente el ADN.",
+        "La etapa en que ocurre el crossing-over.",
+        "La citocinesis de la mitosis."
+      ],
+      "correcta": "B",
+      "explicacion": "La intercinesis puede incluir una breve reorganización celular, pero no incluye una nueva fase S."
+    },
+    {
+      "pregunta": "En metafase II de la meiosis se alinean:",
+      "opciones": [
+        "Pares de homólogos formando bivalentes.",
+        "Cromosomas haploides duplicados, individualmente, en el plano ecuatorial.",
+        "Cromátidas hermanas ya separadas.",
+        "Cromosomas diploides no duplicados."
+      ],
+      "correcta": "B",
+      "explicacion": "Cada célula que entra en meiosis II es haploide, y sus cromosomas todavía están duplicados."
+    },
+    {
+      "pregunta": "Al finalizar la meiosis II, cada producto celular normalmente contiene:",
+      "opciones": [
+        "Cromosomas haploides no duplicados.",
+        "Cromosomas diploides duplicados.",
+        "Pares completos de homólogos.",
+        "El doble de ADN que la célula inicial."
+      ],
+      "correcta": "A",
+      "explicacion": "La meiosis II separa las cromátidas hermanas y produce células haploides con cromosomas de una cromátida."
+    },
+    {
+      "pregunta": "En la ovogénesis humana, la división del citoplasma durante la meiosis suele ser:",
+      "opciones": [
+        "Simétrica, con cuatro óvulos funcionales.",
+        "Asimétrica, con un óvulo grande y cuerpos polares pequeños.",
+        "Inexistente en ambas divisiones.",
+        "Simétrica, con dos óvulos diploides."
+      ],
+      "correcta": "B",
+      "explicacion": "La ovogénesis conserva la mayor parte del citoplasma en una célula, mientras los cuerpos polares reciben poco citoplasma."
+    },
+    {
+      "pregunta": "En la espermatogénesis humana, un espermatocito primario completa la meiosis y origina:",
+      "opciones": [
+        "Dos espermatozoides diploides.",
+        "Cuatro espermátidas haploides, que luego se diferencian.",
+        "Un óvulo y tres cuerpos polares.",
+        "Dos células somáticas idénticas."
+      ],
+      "correcta": "B",
+      "explicacion": "La meiosis de un espermatocito primario produce cuatro espermátidas haploides, que maduran mediante espermiogénesis."
+    },
+    {
+      "pregunta": "¿Cuál es la relación correcta entre meiosis y variabilidad genética?",
+      "opciones": [
+        "La meiosis produce siempre cuatro células genéticamente idénticas.",
+        "El crossing-over y la segregación independiente contribuyen a generar combinaciones genéticas distintas.",
+        "La variabilidad aparece porque se duplica el número de cromosomas.",
+        "La meiosis elimina toda diferencia entre alelos."
+      ],
+      "correcta": "B",
+      "explicacion": "La recombinación y la distribución independiente de homólogos son fuentes centrales de variabilidad genética."
+    },
+    {
+      "pregunta": "Una célula diploide de una especie con 2n = 6 se encuentra en G1. ¿Cuántos cromosomas y moléculas de ADN tiene?",
+      "opciones": [
+        "6 cromosomas y 6 moléculas de ADN.",
+        "6 cromosomas y 12 moléculas de ADN.",
+        "3 cromosomas y 6 moléculas de ADN.",
+        "12 cromosomas y 12 moléculas de ADN."
+      ],
+      "correcta": "A",
+      "explicacion": "En G1 cada cromosoma tiene una cromátida; por lo tanto hay 6 cromosomas y 6 moléculas de ADN, con contenido 2C."
+    },
+    {
+      "pregunta": "Una célula 2n = 6 acaba de completar la fase S. ¿Cuál es su constitución?",
+      "opciones": [
+        "12 cromosomas y 12 cromátidas.",
+        "6 cromosomas duplicados, 12 cromátidas y 4C de ADN.",
+        "3 cromosomas duplicados y 2C de ADN.",
+        "6 cromosomas simples y 2C de ADN."
+      ],
+      "correcta": "B",
+      "explicacion": "La replicación duplica el ADN y las cromátidas, pero no cambia el número de cromosomas ni la ploidía."
+    },
+    {
+      "pregunta": "En metafase mitótica de una especie 2n = 6 se observan:",
+      "opciones": [
+        "6 cromosomas duplicados y 12 cromátidas.",
+        "12 cromosomas simples y 12 cromátidas.",
+        "3 cromosomas duplicados y 6 cromátidas.",
+        "6 cromosomas simples y 6 cromátidas."
+      ],
+      "correcta": "A",
+      "explicacion": "En metafase mitótica cada cromosoma está formado por dos cromátidas hermanas; el número cromosómico sigue siendo 2n = 6."
+    },
+    {
+      "pregunta": "En anafase mitótica de una célula 2n = 6, antes de la citocinesis, ¿cuántos cromosomas hay en toda la célula?",
+      "opciones": [
+        "3",
+        "6",
+        "12",
+        "24"
+      ],
+      "correcta": "C",
+      "explicacion": "Al separarse las cromátidas hermanas, cada una pasa a contarse como cromosoma independiente. Hay 12 en la célula completa, seis migrando hacia cada polo."
+    },
+    {
+      "pregunta": "Después de la mitosis y la citocinesis de una célula 2n = 6, cada célula hija presenta:",
+      "opciones": [
+        "3 cromosomas simples.",
+        "6 cromosomas simples y 2C de ADN.",
+        "6 cromosomas duplicados y 4C de ADN.",
+        "12 cromosomas simples."
+      ],
+      "correcta": "B",
+      "explicacion": "Cada hija recibe una copia de cada cromosoma y queda con la misma ploidía que la célula inicial en G1."
+    },
+    {
+      "pregunta": "Una célula 2n = 6 termina la meiosis I. Cada célula resultante contiene:",
+      "opciones": [
+        "6 cromosomas simples.",
+        "3 cromosomas duplicados y 2C de ADN.",
+        "3 cromosomas simples y 1C de ADN.",
+        "6 cromosomas duplicados y 4C de ADN."
+      ],
+      "correcta": "B",
+      "explicacion": "Meiosis I separa homólogos: cada célula queda con n = 3 cromosomas, pero cada uno conserva dos cromátidas."
+    },
+    {
+      "pregunta": "Una célula 2n = 6 termina la meiosis II. Cada producto contiene:",
+      "opciones": [
+        "3 cromosomas simples.",
+        "6 cromosomas duplicados.",
+        "6 cromosomas simples.",
+        "12 cromosomas simples."
+      ],
+      "correcta": "A",
+      "explicacion": "Meiosis II separa cromátidas hermanas y genera productos haploides con n = 3 cromosomas no duplicados."
+    },
+    {
+      "pregunta": "Una célula haploide n = 4 en metafase II tiene:",
+      "opciones": [
+        "4 cromosomas duplicados y 8 cromátidas.",
+        "8 cromosomas simples.",
+        "2 cromosomas duplicados.",
+        "4 cromosomas simples y 1C."
+      ],
+      "correcta": "A",
+      "explicacion": "La célula es haploide, pero todavía tiene cromosomas duplicados: cuatro cromosomas y ocho cromátidas."
+    },
+    {
+      "pregunta": "Un espermatocito primario humano, luego de la fase S y antes de meiosis I, presenta:",
+      "opciones": [
+        "n = 23 y 1C.",
+        "2n = 46 y 2C.",
+        "2n = 46 y 4C.",
+        "4n = 92 y 4C."
+      ],
+      "correcta": "C",
+      "explicacion": "El espermatocito primario es diploide y ya replicó su ADN: 46 cromosomas duplicados y 4C."
+    },
+    {
+      "pregunta": "Un espermatocito secundario humano inmediatamente después de meiosis I presenta:",
+      "opciones": [
+        "2n = 46 y 4C.",
+        "n = 23 y 2C.",
+        "n = 23 y 1C.",
+        "2n = 46 y 2C."
+      ],
+      "correcta": "B",
+      "explicacion": "Después de separar homólogos, cada célula es haploide, pero sus 23 cromosomas aún están duplicados."
+    },
+    {
+      "pregunta": "¿Qué afirmación distingue correctamente n de C?",
+      "opciones": [
+        "n cuenta cromátidas y C cuenta cromosomas.",
+        "n expresa el número de juegos cromosómicos y C la cantidad relativa de ADN.",
+        "n y C siempre aumentan juntos.",
+        "4C significa necesariamente tetraploidía."
+      ],
+      "correcta": "B",
+      "explicacion": "La ploidía y el contenido de ADN son magnitudes distintas: la fase S aumenta C sin modificar n."
+    },
+    {
+      "pregunta": "Una célula humana somática en G1 presenta:",
+      "opciones": [
+        "n = 23 y 1C.",
+        "2n = 46 y 2C.",
+        "2n = 46 y 4C.",
+        "4n = 92 y 4C."
+      ],
+      "correcta": "B",
+      "explicacion": "En G1 la célula somática diploide tiene 46 cromosomas no duplicados y 2C de ADN."
+    },
+    {
+      "pregunta": "Una célula humana en metafase II tiene:",
+      "opciones": [
+        "46 cromosomas duplicados.",
+        "23 cromosomas duplicados.",
+        "23 cromosomas simples.",
+        "46 cromosomas simples."
+      ],
+      "correcta": "B",
+      "explicacion": "Tras meiosis I, cada célula tiene 23 cromosomas, cada uno compuesto por dos cromátidas."
+    },
+    {
+      "pregunta": "Una célula con 4C de ADN necesariamente es tetraploide (4n). ¿Es correcto?",
+      "opciones": [
+        "Sí, C y n son equivalentes.",
+        "No; una célula diploide en G2 puede tener 2n y 4C.",
+        "Sí, toda replicación duplica la ploidía.",
+        "No; 4C significa que no tiene cromosomas."
+      ],
+      "correcta": "B",
+      "explicacion": "Una célula diploide después de replicar su ADN mantiene 2n, aunque su contenido de ADN sea 4C."
+    },
+    {
+      "pregunta": "El crossing-over modifica principalmente:",
+      "opciones": [
+        "El número de cromosomas de la célula.",
+        "La combinación de alelos en cromátidas recombinantes, sin cambiar por sí mismo la ploidía.",
+        "La cantidad de centríolos.",
+        "La cantidad de juegos cromosómicos."
+      ],
+      "correcta": "B",
+      "explicacion": "El intercambio de segmentos genera nuevas combinaciones alélicas, pero no altera el número de cromosomas ni la ploidía."
+    },
+    {
+      "pregunta": "En una especie con n = 4, ¿cuántas combinaciones cromosómicas distintas pueden originarse por segregación independiente, sin considerar crossing-over?",
+      "opciones": [
+        "4",
+        "8",
+        "16",
+        "32"
+      ],
+      "correcta": "C",
+      "explicacion": "La cantidad teórica es 2^n. Para n = 4, existen 2^4 = 16 combinaciones posibles."
+    },
+    {
+      "pregunta": "Si ocurre no disyunción de un par de homólogos durante meiosis I, el resultado típico tras completar la meiosis es:",
+      "opciones": [
+        "Cuatro gametos normales.",
+        "Dos gametos con n+1 y dos con n−1.",
+        "Dos gametos normales, uno n+1 y uno n−1.",
+        "Cuatro gametos diploides."
+      ],
+      "correcta": "B",
+      "explicacion": "Si los homólogos no se separan en meiosis I, las cuatro células finales suelen ser aneuploides: dos con un cromosoma extra y dos con uno menos."
+    },
+    {
+      "pregunta": "Si ocurre no disyunción de cromátidas hermanas en una de las dos células durante meiosis II, el resultado típico es:",
+      "opciones": [
+        "Cuatro gametos anormales iguales.",
+        "Dos gametos normales, uno n+1 y uno n−1.",
+        "Cuatro gametos normales.",
+        "Dos gametos diploides y dos haploides."
+      ],
+      "correcta": "B",
+      "explicacion": "La no disyunción en meiosis II afecta a una de las dos células: se forman dos gametos normales y dos aneuploides."
+    },
+    {
+      "pregunta": "Una trisomía se caracteriza por:",
+      "opciones": [
+        "La pérdida de un cromosoma de un par.",
+        "La presencia de tres copias de un cromosoma particular.",
+        "La presencia de tres juegos cromosómicos completos.",
+        "La duplicación de todas las cromátidas sin división celular."
+      ],
+      "correcta": "B",
+      "explicacion": "En una trisomía hay una copia adicional de un cromosoma específico; en humanos suele expresarse como 2n+1."
+    },
+    {
+      "pregunta": "El síndrome de Turner clásico se asocia con:",
+      "opciones": [
+        "Trisomía 21.",
+        "Monosomía X (45,X).",
+        "XXY.",
+        "Trisomía de todos los cromosomas."
+      ],
+      "correcta": "B",
+      "explicacion": "El cariotipo clásico 45,X implica la presencia de un solo cromosoma X y constituye una monosomía sexual."
+    },
+    {
+      "pregunta": "El mosaicismo cromosómico puede originarse cuando:",
+      "opciones": [
+        "Todas las células reciben siempre el mismo complemento cromosómico.",
+        "Un error mitótico poscigótico genera dos o más líneas celulares con dotaciones cromosómicas diferentes.",
+        "Ocurre crossing-over normal en profase I.",
+        "Se produce la fecundación de dos gametos haploides normales."
+      ],
+      "correcta": "B",
+      "explicacion": "Un error de segregación durante una división mitótica temprana puede originar poblaciones celulares distintas dentro de un mismo organismo."
+    },
+    {
+      "pregunta": "La poliploidía se diferencia de la aneuploidía porque:",
+      "opciones": [
+        "La poliploidía implica juegos cromosómicos completos adicionales; la aneuploidía afecta cromosomas individuales.",
+        "La poliploidía afecta solo un gen y la aneuploidía todo el genoma.",
+        "Son términos equivalentes.",
+        "La aneuploidía siempre duplica todos los cromosomas."
+      ],
+      "correcta": "A",
+      "explicacion": "La poliploidía modifica el número de juegos completos (por ejemplo, 3n); la aneuploidía cambia el número de uno o algunos cromosomas (por ejemplo, 2n+1)."
+    },
+    {
+      "pregunta": "¿Qué proceso restablece la diploidía en un ciclo sexual haplonte o diplonte?",
+      "opciones": [
+        "La mitosis.",
+        "La fecundación, por fusión de dos núcleos haploides.",
+        "El crossing-over.",
+        "La citocinesis."
+      ],
+      "correcta": "B",
+      "explicacion": "La unión de dos gametos haploides durante la fecundación restablece el número diploide en el cigoto."
+    },
+    {
+      "pregunta": "¿Cuál es la diferencia correcta entre cromosomas homólogos y cromátidas hermanas?",
+      "opciones": [
+        "Los homólogos son copias idénticas producidas en fase S; las hermanas proceden de progenitores distintos.",
+        "Las cromátidas hermanas son copias replicadas de un cromosoma; los homólogos forman un par con los mismos loci y origen parental distinto.",
+        "Son sinónimos.",
+        "Los homólogos solo existen después de meiosis II."
+      ],
+      "correcta": "B",
+      "explicacion": "Las cromátidas hermanas se generan por replicación de un mismo cromosoma; los homólogos son los dos miembros de un par diploide."
+    },
+    {
+      "pregunta": "¿En cuál de estos procesos ocurre normalmente crossing-over entre cromátidas no hermanas?",
+      "opciones": [
+        "Mitosis de células somáticas.",
+        "Profase I de meiosis.",
+        "Metafase II de meiosis.",
+        "Citocinesis."
+      ],
+      "correcta": "B",
+      "explicacion": "El crossing-over característico de la meiosis ocurre durante la profase I, principalmente en paquiteno."
+    },
+    {
+      "pregunta": "Una alteración que inactiva un punto de control del ciclo celular puede favorecer:",
+      "opciones": [
+        "La detención permanente de todas las células en G0.",
+        "La proliferación con daño genético y contribuir al desarrollo tumoral.",
+        "La formación obligatoria de gametos haploides.",
+        "La eliminación de todos los cromosomas duplicados."
+      ],
+      "correcta": "B",
+      "explicacion": "La pérdida de controles permite que células con daño o segregación defectuosa sigan dividiéndose, aumentando el riesgo de transformación tumoral."
     }
   ]
 }
