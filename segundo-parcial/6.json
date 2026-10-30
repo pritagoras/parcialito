@@ -352,7 +352,7 @@
         "ambos dominios realizan splicing intrónico."
       ],
       "correcta": "B",
-      "explicacion": "La universalidad del código genético permite que los codones del ARNm sean leídos e interpretados para los mismos aminoácidos en procariontes y eucariontes."
+      "explicacion": "El código genético es prácticamente universal, por lo que los codones se traducen en los mismos aminoácidos. Para expresar un gen eucarionte en bacterias, la secuencia codificante debe ser compatible con la maquinaria bacteriana; normalmente se utiliza ADNc sin intrones y un promotor reconocido por la bacteria."
     },
     {
       "pregunta": "Las proteínas conocidas como ciclinas se caracterizan fisiológicamente por:",
