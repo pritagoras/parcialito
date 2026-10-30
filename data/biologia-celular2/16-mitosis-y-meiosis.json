@@ -542,7 +542,7 @@
       "explicacion": "Meiosis I y II siguen a una sola replicación."
     },
     {
-      "pregunta": "Antes de meiosis I y II ocurre",
+      "pregunta": "¿Cuántas fases S ocurren antes de que comiencen las dos divisiones de la meiosis?",
       "opciones": [
         "Cero fases S",
         "Una fase S",
@@ -550,7 +550,8 @@
         "Cuatro fases S"
       ],
       "correcta": "B",
-      "explicacion": "No hay fase S entre divisiones."
+      "explicacion": "La duplicación del ADN ocurre una sola vez, durante la fase S de la interfase premeiótica. Entre meiosis I y meiosis II hay intercinesis, pero no una nueva fase S ni duplicación del ADN.",
+      "id": "at66hy"
     },
     {
       "pregunta": "Una especie 2n=16 produce gametos con",
