@@ -852,14 +852,14 @@ function vistaBancoSegundoParcial() {
   cargarSegundoParcial().then((poolOriginal) => {
     const pool = poolOriginal.map((q, i) => ({ ...q, numeroPool: i + 1 }));
     const archivos = [...new Set(pool.map((q) => q.archivoJson).filter(Boolean))].sort((x, y) =>
-      Number(x.match(/(\\d+)\\.json$/)?.[1] || 0) - Number(y.match(/(\\d+)\\.json$/)?.[1] || 0));
+      Number(x.match(/(\d+)\.json$/)?.[1] || 0) - Number(y.match(/(\d+)\.json$/)?.[1] || 0));
     const porPagina = 25;
     let busqueda = '';
     let archivoElegido = '';
     let pagina = 0;
 
     const nombreArchivo = (ruta) => {
-      const n = ruta?.match(/(\\d+)\\.json$/)?.[1];
+      const n = ruta?.match(/(\d+)\.json$/)?.[1];
       return n ? `Archivo ${n}` : 'Archivo de origen';
     };
 
