@@ -952,3 +952,49 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 .banco-practica-iniciar:hover:not(:disabled) { filter:brightness(1.12); transform:translateY(-1px); }
 .banco-practica-iniciar:focus-visible { outline:3px solid var(--crema); outline-offset:3px; }
 .banco-practica-iniciar:disabled { opacity:.42; cursor:not-allowed; }
+
+
+/* Mascota de Parcialito: paseo decorativo debajo de las respuestas. */
+.mascota-paseo {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 88px;
+  margin: .15rem 0 -.1rem;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+.mascota-paseo img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: clamp(88px, 25vw, 132px);
+  height: auto;
+  object-fit: contain;
+  transform-origin: center bottom;
+  animation: paseo-parcialito 15s ease-in-out infinite;
+  filter: drop-shadow(0 3px 2px rgba(20, 10, 45, .12));
+}
+@keyframes paseo-parcialito {
+  0%, 7% { transform: translateX(0) scaleX(1) translateY(0); }
+  40% { transform: translateX(calc(100vw - 160px)) scaleX(1) translateY(-2px); }
+  47%, 52% { transform: translateX(calc(100vw - 160px)) scaleX(-1) translateY(0); }
+  87% { transform: translateX(0) scaleX(-1) translateY(-2px); }
+  94%, 100% { transform: translateX(0) scaleX(1) translateY(0); }
+}
+@media (max-width: 480px) {
+  .mascota-paseo { height: 76px; }
+  .mascota-paseo img { width: 100px; }
+  @keyframes paseo-parcialito {
+    0%, 7% { transform: translateX(0) scaleX(1) translateY(0); }
+    40% { transform: translateX(calc(100vw - 125px)) scaleX(1) translateY(-2px); }
+    47%, 52% { transform: translateX(calc(100vw - 125px)) scaleX(-1) translateY(0); }
+    87% { transform: translateX(0) scaleX(-1) translateY(-2px); }
+    94%, 100% { transform: translateX(0) scaleX(1) translateY(0); }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mascota-paseo img { animation: none; }
+}
