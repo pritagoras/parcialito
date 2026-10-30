@@ -701,6 +701,7 @@ function vistaInicio() {
         </button>
       </section>
       <button class="banner-lab" id="btn-lab" type="button"><span class="banner-lab-icon">🧬</span><span class="banner-lab-text"><strong>LAB <span class="banner-lab-nuevo">NUEVO</span></strong><small>Explorá la biología con modelos interactivos y recorridos guiados.</small></span><span class="banner-lab-flecha">↗</span></button>
+      <a class="banner-lab english-entry" href="english/" aria-label="Abrir English Practice"><span class="banner-lab-icon">🇬🇧</span><span class="banner-lab-text"><strong>ENGLISH PRACTICE</strong><small>Grammar, vocabulary, reading y ejercicios interactivos.</small></span><span class="banner-lab-flecha">↗</span></a>
       ${estaInstalada() || !esCelular() ? '' : `
         <div class="instalar-app-wrap">
           <button class="btn secundario btn-instalar" id="btn-instalar-app" type="button">
