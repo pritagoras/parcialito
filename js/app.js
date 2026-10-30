@@ -846,6 +846,59 @@ function ordenInteligente(pool) {
   return grupos.flatMap((g) => mezclar(g));
 }
 
+// Normaliza tildes y mayúsculas para que la búsqueda por palabras sea flexible.
+function normalizarTerminoBanco(valor) {
+  return String(valor || '').toLocaleLowerCase('es')
+    .normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
+}
+
+function separarPalabrasBanco(valor) {
+  return [...new Set(normalizarTerminoBanco(valor).split(/[\\s,;]+/).map((p) => p.trim()).filter(Boolean))];
+}
+
+function preguntasPorPalabras(pool, palabras) {
+  return pool.filter((q) => {
+    const contenido = normalizarTerminoBanco([
+      q.texto, q.tema, ...(q.opciones || []), q.explicacion
+    ].join(' '));
+    // Con varias palabras se incluyen preguntas que coincidan con AL MENOS una.
+    return palabras.some((palabra) => contenido.includes(palabra));
+  });
+}
+
+async function lanzarSegundoParcialPorPalabras(entrada) {
+  const palabras = separarPalabrasBanco(entrada);
+  if (!palabras.length) {
+    alert('Escribí al menos una palabra para preparar la práctica.');
+    return;
+  }
+  let pool;
+  try {
+    pool = await cargarSegundoParcial();
+  } catch (e) {
+    console.warn('[Práctica por palabras]', e);
+    alert('No se pudieron cargar las preguntas del Segundo parcial. Probá de nuevo en un rato.');
+    return;
+  }
+  const filtradas = preguntasPorPalabras(pool, palabras);
+  if (!filtradas.length) {
+    alert('No encontramos preguntas con esas palabras. Probá con otros términos.');
+    return;
+  }
+  const etiqueta = palabras.join(', ');
+  const meta = {
+    titulo: 'Segundo parcial · palabras clave',
+    temaId: SEGUNDO_PARCIAL_TEMA_ID,
+    estilo: 'parcial-limpio',
+    ranking: false,
+    materiaNombre: 'Segundo parcial',
+    temaNombre: `Palabras: ${etiqueta}`,
+    repetir: () => lanzarSegundoParcialPorPalabras(palabras.join(' ')),
+    volver: () => vistaBancoSegundoParcial(),
+  };
+  empezarJuego(ordenInteligente(filtradas), meta);
+}
+
 // Vista de consulta: permite recorrer TODO el pool sin iniciar una partida.
 function vistaBancoSegundoParcial() {
   vistaCargando('Cargando el banco completo…');
@@ -876,9 +929,25 @@ function vistaBancoSegundoParcial() {
             <div><strong>${pool.length}</strong><span>preguntas en el pool</span></div>
             <div><strong>${archivos.length}</strong><span>archivos integrados</span></div>
           </div>
+          <section class="banco-practica-palabras" aria-labelledby="banco-practica-titulo">
+            <div class="banco-practica-cabecera">
+              <span class="banco-practica-icono" aria-hidden="true">⌕</span>
+              <div>
+                <h2 id="banco-practica-titulo">Practicar por palabras clave</h2>
+                <p>Escribí una o varias palabras y jugá con las preguntas relacionadas.</p>
+              </div>
+            </div>
+            <label class="banco-sp-busqueda" for="banco-practica-input">
+              <span>¿Qué querés practicar?</span>
+              <input id="banco-practica-input" type="search" placeholder="Ej.: mitosis, meiosis, crossing over…" autocomplete="off">
+            </label>
+            <div class="banco-practica-ayuda">Separá las palabras con espacios o comas. Se incluirán preguntas que coincidan con cualquiera de ellas.</div>
+            <div class="banco-practica-resultado" id="banco-practica-resultado" aria-live="polite">Escribí para ver cuántas preguntas coinciden.</div>
+            <button class="btn banco-practica-iniciar" id="btn-practicar-palabras" type="button" disabled>Practicar estas preguntas →</button>
+          </section>
           <label class="banco-sp-busqueda">
-            <span>Buscar una pregunta</span>
-            <input id="banco-buscar" type="search" placeholder="Escribí una palabra o concepto…" autocomplete="off">
+            <span>Buscar una pregunta en el banco</span>
+            <input id="banco-buscar" type="search" placeholder="Escribí para filtrar la lista…" autocomplete="off">
           </label>
           <label class="banco-sp-filtro">
             <span>Filtrar por archivo de origen</span>
@@ -897,6 +966,27 @@ function vistaBancoSegundoParcial() {
       Sonido.clic();
       vistaInicio();
     });
+    const inputPractica = document.getElementById('banco-practica-input');
+    const botonPractica = document.getElementById('btn-practicar-palabras');
+    const resultadoPractica = document.getElementById('banco-practica-resultado');
+    inputPractica.addEventListener('input', () => {
+      const palabras = separarPalabrasBanco(inputPractica.value);
+      const cantidad = palabras.length ? preguntasPorPalabras(pool, palabras).length : 0;
+      resultadoPractica.textContent = palabras.length
+        ? (cantidad
+          ? `${cantidad} pregunta${cantidad === 1 ? '' : 's'} coinciden. Se incluirán coincidencias con cualquiera de las palabras.`
+          : 'No encontramos coincidencias. Probá con otros términos.')
+        : 'Escribí para ver cuántas preguntas coinciden.';
+      botonPractica.disabled = cantidad === 0;
+      botonPractica.textContent = cantidad
+        ? `Practicar ${cantidad} pregunta${cantidad === 1 ? '' : 's'} →`
+        : 'Practicar estas preguntas →';
+    });
+    botonPractica.addEventListener('click', () => {
+      Sonido.clic();
+      lanzarSegundoParcialPorPalabras(inputPractica.value);
+    });
+
     document.getElementById('banco-buscar').addEventListener('input', (e) => {
       busqueda = e.target.value.trim().toLocaleLowerCase('es');
       pagina = 0;
