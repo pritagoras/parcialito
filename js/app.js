@@ -1515,7 +1515,8 @@ function empezarJuego(pool, meta) {
         <div class="racha" id="racha" aria-label="Racha"><span class="llama" aria-hidden="true">🔥</span><span id="racha-n">0</span></div>
       </div>
       <div id="zona"></div>
-      </main>`;
+      <div class="mascota-paseo" aria-hidden="true">${MASCOTA_HTML}</div>
+    </main>`;
 
   document.getElementById('btn-salir').addEventListener('click', () => {
     if (window.confirm('¿Salir de la partida? Se pierde el progreso de esta ronda.')) {
@@ -1640,7 +1641,6 @@ function mostrarPregunta() {
           <span>${esc(q.opciones[oi])}</span>
         </button>`).join('')}
     </div>
-    <div class="mascota-paseo" aria-hidden="true">${MASCOTA_HTML}</div>
     <div class="feedback" id="feedback" aria-live="polite"></div>
     <div class="acciones"><button class="btn primario" id="btn-sig" hidden></button></div>
     ${rankingActivo() && j.meta.estilo === 'parcial-limpio' ? `
