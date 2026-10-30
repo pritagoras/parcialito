@@ -233,7 +233,7 @@ function normalizar(json, tema, materia) {
       return;
     }
     salida.push({
-      id: hash(p.pregunta),
+      id: p.id || hash(p.pregunta),
       texto: String(p.pregunta),
       opciones: ops,
       correcta: idx,
