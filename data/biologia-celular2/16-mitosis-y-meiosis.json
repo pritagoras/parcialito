@@ -25,15 +25,15 @@
       "explicacion": "Durante la fase S de la interfase tiene lugar la replicación del ADN y la síntesis de histonas para empaquetar las nuevas moléculas."
     },
     {
-      "pregunta": "El factor promotor de la síntesis (FPS) está constituido por la asociación entre:",
+      "pregunta": "El factor promotor de la fase S (FPS o complejo G1/S-CDK) está constituido principalmente por la asociación entre:",
       "opciones": [
         "Cdk1 y Ciclina M",
         "Cdk1 y Ciclina G1",
-        "Cdk2 y Ciclina G1",
+        "Cdk2 y ciclina E (ciclina G1/S)",
         "Cdk2 y Ciclina M"
       ],
       "correcta": "C",
-      "explicacion": "El FPS se forma por la unión de la quinasa Cdk2 con la ciclina G1 para permitir la transición a la fase S."
+      "explicacion": "En células animales, el complejo ciclina E-CDK2 promueve la transición de G1 a S y la entrada en la fase de síntesis del ADN. La nomenclatura puede variar entre materiales, pero ciclina E es la denominación molecular habitual."
     },
     {
       "pregunta": "El factor promotor de la mitosis (FPM) ejerce su función reguladora al:",
