@@ -75,16 +75,20 @@ function diagram(kind){
    const accents=kind==='cross'||kind==='chiasma';
    out.push(cell(300,150,180,105,[X(248,115,0,0,accents?B:null),X(275,115,1,0,accents?A:null),X(248,185,2,0,accents?D:null),X(275,185,3,0,accents?C:null)].join('')));
    out.push('<path d="M248 83 Q261 68 275 83 M248 153 Q261 138 275 153" fill="none" stroke="#f5e7a4" stroke-width="2" stroke-dasharray="4 4"/>');
- }else if(kind==='meta'||kind==='meta2'){
-   out.push(cell(300,150,180,105,[X(230,110,0),X(270,110,1),X(230,190,2),X(270,190,3)].join('')));
+ }else if(kind==='meta'){
+   out.push(cell(300,150,180,105,[X(300,95,0),X(300,132,1),X(300,169,2),X(300,206,3)].join('')));
    out.push('<path d="M300 55 V245" stroke="#f5d27b" stroke-width="2" stroke-dasharray="5 6"/>');
+ }else if(kind==='meta2'){
+   out.push(cell(195,150,105,80,[X(195,132,0),X(195,168,2)].join('')));
+   out.push(cell(405,150,105,80,[X(405,132,1),X(405,168,3)].join('')));
+   out.push('<path d="M195 82 V218 M405 82 V218" stroke="#f5d27b" stroke-width="2" stroke-dasharray="5 6"/>');
  }else if(kind==='meta1'){
    out.push(cell(300,150,180,105,[X(240,120,0),X(265,120,1),X(335,180,2),X(360,180,3)].join('')));
    out.push('<path d="M300 55 V245" stroke="#f5d27b" stroke-width="2" stroke-dasharray="5 6"/>');
  }else if(kind==='ana'){
    out.push(cell(300,150,180,105,[rod(180,115,0),rod(205,115,1),rod(230,115,2),rod(255,115,3),rod(345,185,0),rod(370,185,1),rod(395,185,2),rod(420,185,3)].join('')));
  }else if(kind==='ana1'){
-   out.push(cell(300,150,180,105,[X(185,115,0),X(215,115,1),X(385,185,2),X(415,185,3)].join('')));
+   out.push(cell(300,150,180,105,[X(185,115,0),X(215,115,2),X(385,185,1),X(415,185,3)].join('')));
  }else if(kind==='telo'||kind==='end'){
    out.push(cell(195,150,105,80,[rod(170,140,0),rod(210,140,1),rod(170,175,2),rod(210,175,3)].join('')));
    out.push(cell(405,150,105,80,[rod(380,140,0),rod(420,140,1),rod(380,175,2),rod(420,175,3)].join('')));
