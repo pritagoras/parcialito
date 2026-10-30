@@ -1515,7 +1515,7 @@ function empezarJuego(pool, meta) {
         <div class="racha" id="racha" aria-label="Racha"><span class="llama" aria-hidden="true">🔥</span><span id="racha-n">0</span></div>
       </div>
       <div id="zona"></div>
-    </main>`;
+      </main>`;
 
   document.getElementById('btn-salir').addEventListener('click', () => {
     if (window.confirm('¿Salir de la partida? Se pierde el progreso de esta ronda.')) {
@@ -1607,9 +1607,15 @@ function mostrarPregunta() {
   const q = j.preguntas[j.i];
   j.respondida = false;
 
+  const zona = document.getElementById('zona');
+  const mascota = document.querySelector('.mascota-paseo');
+  const pantalla = zona?.closest('.pantalla');
+  // Mantener viva la misma instancia del perrito mientras se reconstruye el contenido de cada pregunta.
+  if (mascota && pantalla && mascota.parentElement !== pantalla) pantalla.appendChild(mascota);
+
   document.getElementById('barra').style.width = `${(j.i / j.preguntas.length) * 100}%`;
 
-  document.getElementById('zona').innerHTML = `
+  zona.innerHTML = `
     <p class="contador">Pregunta ${j.i + 1} de ${j.preguntas.length}</p>
     <div class="tarjeta-pregunta" id="tarjeta">
       <p class="tema-etq">${esc(q.tema)}</p>
@@ -1644,6 +1650,10 @@ function mostrarPregunta() {
         </button>
       </div>` : ''}
     ${j.meta.estilo === 'parcial-limpio' ? '' : '<p class="ayuda-teclas">Teclado: 1 a 4 (o A a D) para responder, Enter para seguir.</p>'}`;
+
+  // Volvemos a colocar el mismo nodo debajo de las opciones: sus animaciones CSS siguen en curso.
+  const feedbackActual = document.getElementById('feedback');
+  if (mascota && feedbackActual) zona.insertBefore(mascota, feedbackActual);
 
   document.querySelectorAll('.opcion').forEach((b) =>
     b.addEventListener('click', () => responder(Number(b.dataset.pos))));
