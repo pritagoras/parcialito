@@ -76,10 +76,10 @@ export function abrirCalculadoraDivision({app,volver}={}) {
      if(stage==='same')return {cell:1,chrom:start,chromatids:start,dna:p};
      if(stage==='replicated')return {cell:1,chrom:start,chromatids:start*2,dna:p*2};
      if(stage==='mitotic-anaphase')return {cell:1,chrom:start*2,chromatids:start*2,dna:p*2,perPole:[start,start,p]};
-     if(stage==='daughter-nuclei')return {cell:2,chrom:start,chromatids:start,dna:p};
+     if(stage==='daughter-nuclei')return {cell:1,nuclei:2,chrom:start,chromatids:start,dna:p};
      return {cell:2,chrom:start,chromatids:start,dna:p};
    }
-   if(ploidy==='haploide')return null;
+   if(ploidy==='haploide'){if(stage==='same')return {cell:1,chrom:n,chromatids:n,dna:1};if(stage==='replicated')return {cell:1,chrom:n,chromatids:n*2,dna:2};return null;}
    if(stage==='same')return {cell:1,chrom:start,chromatids:start,dna:2};
    if(stage==='replicated')return {cell:1,chrom:start,chromatids:start*2,dna:4};
    if(stage==='meiosis-anaphase1')return {cell:1,chrom:start,chromatids:start*2,dna:4,perPole:[n,n*2,2]};
@@ -93,7 +93,7 @@ export function abrirCalculadoraDivision({app,volver}={}) {
    const st=stages[index],v=count(st[3]),human=ploidy==='diploide'&&n===23;
    const fmt=x=>x.toLocaleString('es-AR');
    const metrics=v?[
-     ['Células / productos',v.cell],
+     [v.nuclei?'Núcleos en la célula':'Células / productos',v.nuclei||v.cell],
      ['Cromosomas por célula',v.chrom],
      ['Cromátides por célula',v.chromatids],
      ['ADN total por célula',v.dna+'C']
