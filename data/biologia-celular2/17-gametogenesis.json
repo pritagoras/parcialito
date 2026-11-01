@@ -1,0 +1,381 @@
+{
+  "materia": "Biología 2",
+  "tema": "Gametogénesis",
+  "preguntas": [
+    {
+      "pregunta": "En relación a la ploidía de las células somáticas humanas, estas se caracterizan por ser:",
+      "opciones": [
+        "diploides con 46 cromosomas organizados en 23 pares de homólogos.",
+        "haploides con 23 cromosomas sin pares homólogos.",
+        "diploides con 23 cromosomas totales y dos copias del genoma.",
+        "haploides con 46 cromosomas duplicados procedentes de un solo progenitor."
+      ],
+      "correcta": "A",
+      "explicacion": "Las células somáticas humanas son diploides (2n = 46), lo que significa que poseen 23 pares de cromosomas homólogos."
+    },
+    {
+      "pregunta": "El número de cromosomas presente en una célula se determina de manera directa contando:",
+      "opciones": [
+        "la cantidad de telómeros.",
+        "el número de centrómeros.",
+        "la cantidad total de moléculas de ADN.",
+        "el número de cromátidas hermanas."
+      ],
+      "correcta": "B",
+      "explicacion": "El número de cromosomas en una célula se define y cuenta por la cantidad de centrómeros presentes, independientemente de si los cromosomas son simples o duplicados."
+    },
+    {
+      "pregunta": "En el ciclo celular, una célula diploide humana (2n = 46) en período G1 previo a la fase S presenta:",
+      "opciones": [
+        "46 cromosomas duplicados y un contenido de ADN de 4c.",
+        "23 cromosomas simples y un contenido de ADN de 1c.",
+        "46 cromosomas simples y un contenido de ADN de 2c.",
+        "92 cromátidas hermanas y un contenido de ADN de 4c."
+      ],
+      "correcta": "C",
+      "explicacion": "En la fase G1 previa a la duplicación del ADN, una célula diploide posee 46 cromosomas simples, 46 moléculas de ADN y un contenido equivalente a 2c."
+    },
+    {
+      "pregunta": "Luego de la replicación del ADN en la fase S del ciclo celular:",
+      "opciones": [
+        "se duplica el número de cromosomas pasando la célula a ser 4n.",
+        "la ploidía de la célula cambia de haploide a diploide.",
+        "los cromosomas homólogos se separan en células distintas.",
+        "se mantiene el número de cromosomas pero cada uno queda formado por dos cromátidas hermanas."
+      ],
+      "correcta": "D",
+      "explicacion": "La replicación del ADN duplica la cantidad de material genético (pasando de 2c a 4c) generando cromátidas hermanas, pero no modifica el número de cromosomas ni altera la ploidía de la célula."
+    },
+    {
+      "pregunta": "En relación a la división celular meiótica, la Meiosis I se define como una división:",
+      "opciones": [
+        "reduccional porque separa los cromosomas homólogos y reduce la ploidía de 2n a n.",
+        "ecuacional porque separa las cromátidas hermanas manteniendo la ploidía en 2n.",
+        "reduccional porque elimina la totalidad del citoplasma celular.",
+        "ecuacional porque duplica la cantidad de material genético antes de separar las gametas."
+      ],
+      "correcta": "A",
+      "explicacion": "La Meiosis I es reduccional debido a que distribuye los integrantes de cada par de cromosomas homólogos en células hijas diferentes, pasando del estado diploide al haploide."
+    },
+    {
+      "pregunta": "Durante la profase I meiótica, el apareamiento específico de los cromosomas homólogos recibe el nombre de:",
+      "opciones": ["interfase.", "sinapsis.", "terminalización.", "intercinesis."],
+      "correcta": "B",
+      "explicacion": "La sinapsis es el proceso de apareamiento altamente específico entre los cromosomas homólogos que tiene lugar durante la profase I de la meiosis."
+    },
+    {
+      "pregunta": "El complejo proteico que se forma entre los cromosomas homólogos para mantener su apareamiento se denomina:",
+      "opciones": ["complejo sinaptonémico.", "huso acromático.", "áster astral.", "cinetocoro."],
+      "correcta": "A",
+      "explicacion": "El complejo sinaptonémico es la estructura proteica interpuesta entre los cromosomas homólogos que sostiene el apareamiento durante la profase meiótica."
+    },
+    {
+      "pregunta": "Al conjunto formado por un par de cromosomas homólogos apareados constituido por cuatro cromátidas se lo conoce como:",
+      "opciones": ["cromosoma simple.", "diploide no replicado.", "bivalente o tétrada.", "cuerpo polar."],
+      "correcta": "C",
+      "explicacion": "El par de homólogos apareados recibe las denominaciones equivalentes de bivalente (por los dos cromosomas) o tétrada (por las cuatro cromátidas)."
+    },
+    {
+      "pregunta": "La subetapa de la profase I en la cual ocurre el intercambio de segmentos genéticos entre cromátidas no hermanas es:",
+      "opciones": ["leptonema.", "cigonema.", "paquinema.", "diacinesis."],
+      "correcta": "C",
+      "explicacion": "Durante el paquinema de la profase I se produce el entrecruzamiento o crossing over, proceso en el que se intercambian segmentos entre cromátidas no hermanas."
+    },
+    {
+      "pregunta": "Los puntos visibles que evidencian los sitios donde ocurrió el entrecruzamiento o crossing over se denominan:",
+      "opciones": ["centrómeros.", "cinetocoros.", "centrosomas.", "quiasmas."],
+      "correcta": "D",
+      "explicacion": "Los quiasmas son las estructuras o puntos de contacto visibles a través de los cuales los cromosomas homólogos permanecen unidos evidenciando el intercambio genético previo."
+    },
+    {
+      "pregunta": "La subetapa de la profase I caracterizada por la terminalización de los quiasmas y la desorganización de la envoltura nuclear es la:",
+      "opciones": ["diacinesis.", "diplonema.", "cigonema.", "paquinema."],
+      "correcta": "A",
+      "explicacion": "En la diacinesis se alcanza la máxima condensación cromosómica, los quiasmas se desplazan hacia los extremos y se desintegra la envoltura nuclear."
+    },
+    {
+      "pregunta": "En la metafase I de la meiosis, las estructuras que se alinean en la placa ecuatorial son:",
+      "opciones": [
+        "las cromátidas hermanas individuales separadas de sus centrómeros.",
+        "los pares de cromosomas homólogos unidos en bivalentes.",
+        "cuatro células haploides unidas por sus ejes proteicos.",
+        "las espermátidas en proceso de diferenciación morfológica."
+      ],
+      "correcta": "B",
+      "explicacion": "Durante la metafase I, son los pares de cromosomas homólogos (bivalentes) los que se disponen alineados en el plano ecuatorial de la célula."
+    },
+    {
+      "pregunta": "Durante la anafase I meiótica ocurre la:",
+      "opciones": [
+        "división simultánea de los centrómeros de cada cromosoma.",
+        "duplicación previa de la masa total de ADN celular.",
+        "separación de los cromosomas homólogos hacia polos opuestos.",
+        "descondensación completa de las cromátidas simples."
+      ],
+      "correcta": "C",
+      "explicacion": "La anafase I se caracteriza por la separación de los cromosomas homólogos y su migración a polos opuestos, manteniendo sus cromátidas hermanas unidas por el centrómero."
+    },
+    {
+      "pregunta": "Al finalizar la Meiosis I y completarse la telofase I se obtienen:",
+      "opciones": [
+        "dos células haploides con cromosomas duplicados.",
+        "dos células diploides genéticamente idénticas a la célula madre.",
+        "cuatro células haploides con cromosomas simples.",
+        "una célula diploide con cuatro cuerpos polares adosados."
+      ],
+      "correcta": "A",
+      "explicacion": "La primera división meiótica concluye reduciendo la ploidía, de modo que genera dos células haploides (n) cuyos cromosomas aún permanecen en estado duplicado (2c)."
+    },
+    {
+      "pregunta": "El intervalo comprendido entre la Meiosis I y la Meiosis II se denomina:",
+      "opciones": ["cigonema.", "intercinesis.", "fase S suplementaria.", "espermiogénesis."],
+      "correcta": "B",
+      "explicacion": "La intercinesis es el período de transición que puede existir entre ambas divisiones meióticas, durante el cual no se produce replicación del ADN."
+    },
+    {
+      "pregunta": "Las dos fuentes principales de variabilidad genética introducidas durante la meiosis son:",
+      "opciones": [
+        "la condensación de la cromatina y la formación del citoplasma.",
+        "el crossing over en profase I y la segregación al azar de homólogos en anafase I.",
+        "la duplicación del ADN en la intercinesis y la mitosis ecuacional.",
+        "la división de los centrómeros en profase II y la deglución del cuerpo polar."
+      ],
+      "correcta": "B",
+      "explicacion": "La variabilidad genética meiótica proviene de la recombinación por entrecruzamiento (profase I) y de la segregación independiente de los cromosomas homólogos (anafase I)."
+    },
+    {
+      "pregunta": "Respecto a la Meiosis II, este proceso se define como una división:",
+      "opciones": [
+        "reduccional porque convierte células haploides en tetraploides.",
+        "mitótica sin presencia de huso acromático ni centríolos.",
+        "ecuacional porque separa las cromátidas hermanas sin modificar la ploidía.",
+        "duplicativa porque sintetiza una copia completa de genoma en metafase II."
+      ],
+      "correcta": "C",
+      "explicacion": "La Meiosis II es una división ecuacional en la que se dividen los centrómeros y se separan las cromátidas hermanas de células que ya eran haploides."
+    },
+    {
+      "pregunta": "En la anafase II de la meiosis se produce el evento de:",
+      "opciones": [
+        "separación de los cromosomas homólogos apareados.",
+        "formación del complejo sinaptonémico entre las cromátidas.",
+        "separación de las cromátidas hermanas migrando hacia polos opuestos.",
+        "alineamiento de los bivalentes en la placa metafásica."
+      ],
+      "correcta": "C",
+      "explicacion": "En la anafase II, a diferencia de la anafase I, se dividen los centrómeros y las cromátidas hermanas se separan dirigiéndose a polos opuestos."
+    },
+    {
+      "pregunta": "Una célula humana (2n = 46) que se encuentra en metafase II meiótica contiene:",
+      "opciones": [
+        "23 cromosomas duplicados y 46 cromátidas.",
+        "46 cromosomas simples y 46 cromátidas.",
+        "46 cromosomas duplicados y 92 cromátidas.",
+        "23 cromosomas simples y 23 cromátidas."
+      ],
+      "correcta": "A",
+      "explicacion": "En la metafase II, la célula ya es haploide (n = 23), pero al no haber separado sus cromátidas hermanas, presenta 23 cromosomas duplicados (46 cromátidas)."
+    },
+    {
+      "pregunta": "La falla en la correcta segregación de los cromosomas durante la meiosis da origen a anomalías numéricas denominadas:",
+      "opciones": ["bivalentes.", "sinapsis.", "aneuploidías.", "intercinesis."],
+      "correcta": "C",
+      "explicacion": "La no disyunción meiótica produce un exceso o defecto en el número normal de cromosomas, cuadro genético clasificado como aneuploidía."
+    },
+    {
+      "pregunta": "La presencia de un cromosoma autosómico extra en la cigota humana (2n + 1 = 47), como ocurre en el síndrome de Down, es un ejemplo de:",
+      "opciones": ["poliploidía ecuacional.", "trisomía.", "monosomía haploide.", "espermiogénesis asimétrica."],
+      "correcta": "B",
+      "explicacion": "Una trisomía es un tipo de aneuploidía caracterizada por la presencia de un cromosoma adicional (2n + 1), sumando 47 cromosomas en la cigota."
+    },
+    {
+      "pregunta": "En el sistema reproductor masculino, la espermatogénesis se lleva a cabo en:",
+      "opciones": [
+        "los folículos ováricos.",
+        "las trompas de Falopio.",
+        "el estroma del cuerpo lúteo.",
+        "los túbulos seminíferos de los testículos."
+      ],
+      "correcta": "D",
+      "explicacion": "La producción de espermatozoides o espermatogénesis ocurre específicamente dentro de los túbulos seminíferos presentes en los testículos."
+    },
+    {
+      "pregunta": "En la línea germinal masculina, la diferenciación celular con inicio de divisiones meióticas comienza a partir de:",
+      "opciones": ["el tercer mes de vida fetal.", "la pubertad.", "la fertilización del óvulo.", "el nacimiento inmediato."],
+      "correcta": "B",
+      "explicacion": "Aunque las espermatogonias están presentes previamente, la diferenciación hacia espermatocitos y el inicio de la meiosis en el varón se desencadenan en la pubertad."
+    },
+    {
+      "pregunta": "Las células diploides del testículo que se dividen activamente por mitosis para mantener la población germinal son las:",
+      "opciones": ["espermátidas.", "espermatogonias.", "espermatocitos secundarios.", "gametas maduras."],
+      "correcta": "B",
+      "explicacion": "Las espermatogonias son las células germinales precursoras diploides que proliferan mediante divisiones mitóticas dentro del túbulo seminífero."
+    },
+    {
+      "pregunta": "El espermatocito primario se caracteriza genéticamente por ser una célula:",
+      "opciones": [
+        "haploide con 23 cromosomas simples y contenido 1c.",
+        "haploide con 23 cromosomas duplicados y contenido 2c.",
+        "diploide con 46 cromosomas duplicados y contenido 4c.",
+        "tetraploide con 92 cromosomas simples y contenido 2c."
+      ],
+      "correcta": "C",
+      "explicacion": "El espermatocito primario ha duplicado su ADN pero aún no ha realizado la primera división reduccional, por lo que es diploide (2n) con contenido 4c."
+    },
+    {
+      "pregunta": "Al concluir la Meiosis I en el testículo, un espermatocito primario da origen a:",
+      "opciones": [
+        "cuatro espermátidas haploides de tamaño desigual.",
+        "dos espermatocitos secundarios haploides (n = 23, 2c).",
+        "una ovogonia diploide y un cuerpo polar.",
+        "dos espermatozoides maduros provistos de flagelo."
+      ],
+      "correcta": "B",
+      "explicacion": "Tras la división reduccional de la Meiosis I, cada espermatocito primario origina dos espermatocitos secundarios haploides con cromosomas duplicados."
+    },
+    {
+      "pregunta": "Las cuatro células haploides resultantes de la Meiosis II en el varón, antes de su transformación morfológica, se denominan:",
+      "opciones": ["espermatogonias.", "ovocitos primarios.", "cuerpos polares.", "espermátidas."],
+      "correcta": "D",
+      "explicacion": "Las espermátidas son los cuatro productos haploides inmaduros obtenidos directamente al finalizar la segunda división meiótica."
+    },
+    {
+      "pregunta": "La espermiogénesis se define estrictamente como el proceso de:",
+      "opciones": [
+        "división celular reduccional entre espermatogonia y espermatocito I.",
+        "separación aleatoria de cromosomas homólogos en la metafase I.",
+        "maduración y diferenciación morfológica de espermátidas a espermatozoides.",
+        "duplicación mitótica de las células germinales embrionarias."
+      ],
+      "correcta": "C",
+      "explicacion": "La espermiogénesis es la etapa final de diferenciación morfológica (sin divisiones celulares) donde la espermátida se transforma en un espermatozoide."
+    },
+    {
+      "pregunta": "Durante la espermiogénesis ocurren modificaciones estructurales en la célula como la:",
+      "opciones": [
+        "pérdida de gran parte del citoplasma y formación del flagelo.",
+        "replicación del ADN aumentando su contenido a 4c.",
+        "condensación de los cromosomas homólogos en bivalentes.",
+        "duplicación del número de cromosomas centroméricos."
+      ],
+      "correcta": "A",
+      "explicacion": "Durante la espermiogénesis, la célula descarta la mayor parte del citoplasma, condensa su núcleo y desarrolla un flagelo para su movilidad."
+    },
+    {
+      "pregunta": "Por cada espermatocito primario que completa íntegramente la meiosis se producen:",
+      "opciones": [
+        "un espermatozoide funcional y tres cuerpos polares.",
+        "dos espermatozoides diploides idénticos.",
+        "cuatro espermatozoides funcionales.",
+        "ocho espermátidas haploides inactivas."
+      ],
+      "correcta": "C",
+      "explicacion": "A diferencia de la ovogénesis, la espermatogénesis reparte el citoplasma equitativamente produciendo cuatro espermatozoides funcionales por cada espermatocito I."
+    },
+    {
+      "pregunta": "En el sistema reproductor femenino, los ovocitos se desarrollan en el interior de estructuras denominadas:",
+      "opciones": [
+        "folículos ováricos situados en las gónadas femeninas.",
+        "túbulos seminíferos de las trompas uterinas.",
+        "conductos deferentes de la corteza renal.",
+        "cuerpos polares degenerados del miometrio."
+      ],
+      "correcta": "A",
+      "explicacion": "Los ovocitos se encuentran y desarrollan dentro de los folículos ováricos ubicados en las gónadas femeninas (ovarios)."
+    },
+    {
+      "pregunta": "En la ovogénesis humana, la primera detención meiótica ocurre en los ovocitos primarios durante:",
+      "opciones": [
+        "la metafase II del ciclo menstrual adulto.",
+        "la profase I durante la vida fetal.",
+        "el momento exacto de la fertilización por el espermatozoide.",
+        "el periodo G2 de la interfase embrionaria."
+      ],
+      "correcta": "B",
+      "explicacion": "La meiosis I se inicia en la etapa embrionaria (alrededor del tercer mes de vida fetal) y queda detenida en profase I antes del nacimiento."
+    },
+    {
+      "pregunta": "El ovocito secundario resultante de la Meiosis I se distingue por recibir:",
+      "opciones": [
+        "un cuarto del ADN total y ningún organoide citoplasmático.",
+        "la mitad del citoplasma originando dos gametas equivalentes.",
+        "dos juegos diploides completos de cromosomas homólogos.",
+        "casi la totalidad del citoplasma celular en la división asimétrica."
+      ],
+      "correcta": "D",
+      "explicacion": "La primera división meiótica en la mujer es asimétrica, por lo que el ovocito secundario conserva casi todo el citoplasma mientras que el primer cuerpo polar recibe una cantidad mínima."
+    },
+    {
+      "pregunta": "La célula liberada por el ovario durante la ovulación corresponde a un:",
+      "opciones": [
+        "ovocito secundario detenido en metafase II.",
+        "ovocito primario detenido en diacinesis.",
+        "óvulo maduro que completó la Meiosis II.",
+        "cuerpo polar funcional listo para la fecundación."
+      ],
+      "correcta": "A",
+      "explicacion": "La célula que se libera en la ovulación es el ovocito secundario, el cual ha completado la Meiosis I y se halla detenido en la metafase II."
+    },
+    {
+      "pregunta": "La Meiosis II en la línea germinal femenina se completa únicamente si se produce:",
+      "opciones": [
+        "la desintegración del moco cervical.",
+        "la fecundación del ovocito secundario por un espermatozoide.",
+        "la ovulación en ausencia de estímulo hormonal.",
+        "la división de la espermatogonia en el ovario."
+      ],
+      "correcta": "B",
+      "explicacion": "El ovocito secundario reanuda y culmina la segunda división meiótica únicamente si es fertilizado por un espermatozoide en las trompas de Falopio."
+    },
+    {
+      "pregunta": "Como resultado de la ovogénesis completa a partir de un ovocito primario, el producto funcional obtenido es:",
+      "opciones": [
+        "cuatro óvulos maduros idénticos entre sí.",
+        "dos ovocitos secundarios y dos espermátidas.",
+        "tres óvulos fértiles y un cuerpo polar sobrante.",
+        "un solo óvulo funcional y hasta tres cuerpos polares."
+      ],
+      "correcta": "D",
+      "explicacion": "Debido a las divisiones citoplasmáticas asimétricas, la ovogénesis genera únicamente una gameta funcional (el óvulo) y cuerpos polares no funcionales que degeneran."
+    },
+    {
+      "pregunta": "Las hormonas que estimulan la ovulación y cuya liberación es inhibida por el uso de píldoras anticonceptivas son las:",
+      "opciones": [
+        "gonadotrofinas LH y FSH.",
+        "histonas de la matriz del citoplasma.",
+        "enzimas ADN polimerasas del folículo.",
+        "tubulinas de las fibras astrales."
+      ],
+      "correcta": "A",
+      "explicacion": "Las píldoras anticonceptivas hormonales actúan inhibiendo la liberación de las gonadotrofinas LH y FSH, impidiendo así la estimulación de la ovulación."
+    },
+    {
+      "pregunta": "A diferencia de las espermatogonias que producen espermatozoides de forma continua desde la pubertad, la reserva de ovocitos en la mujer:",
+      "opciones": [
+        "se sintetiza semanalmente mediante mitosis postnatales.",
+        "aumenta exponencialmente con el paso de la edad materna.",
+        "es ilimitada y se renueva continuamente durante toda la vida.",
+        "es finita y sus células iniciaron la meiosis en la vida fetal."
+      ],
+      "correcta": "D",
+      "explicacion": "La mujer nace con una reserva finita de ovocitos primarios detenidos en profase I cuya proliferación mitótica concluyó en la etapa fetal."
+    },
+    {
+      "pregunta": "En relación al contenido de ADN, una gameta humana madura haploide (n = 23) caracterizada por tener cromosomas simples presenta una notación de:",
+      "opciones": ["4c de contenido de ADN.", "2c de contenido de ADN.", "3c de contenido de ADN.", "1c de contenido de ADN."],
+      "correcta": "D",
+      "explicacion": "Una gameta haploide con cromosomas no duplicados posee una cantidad de ADN equivalente a 1c (un juego haploide no duplicado)."
+    },
+    {
+      "pregunta": "Al comparar Mitosis y Meiosis I, una diferencia fundamental en la metafase es que:",
+      "opciones": [
+        "en la mitosis los cromosomas no poseen centrómeros visibles.",
+        "en la meiosis I se duplican los centrómeros de forma prematura.",
+        "en la mitosis los homólogos forman tétradas en la placa ecuatorial.",
+        "en la meiosis I se alinean pares de homólogos y en la mitosis cromosomas individuales."
+      ],
+      "correcta": "D",
+      "explicacion": "En la metafase I de la meiosis los cromosomas se ordenan sobre la placa ecuatorial en pares de homólogos (bivalentes), mientras que en la mitosis lo hacen como cromosomas individuales."
+    }
+  ]
+}

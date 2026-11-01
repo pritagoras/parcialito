@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-30T19:26:01Z",
+  "generado": "2026-11-01T00:28:11Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -255,6 +255,12 @@
           "nombre": "Mitosis y meiosis",
           "archivo": "data/biologia-celular2/16-mitosis-y-meiosis.json",
           "preguntas": 135
+        },
+        {
+          "id": "biologia-celular2/17-gametogenesis",
+          "nombre": "Gametogénesis",
+          "archivo": "data/biologia-celular2/17-gametogenesis.json",
+          "preguntas": 40
         }
       ]
     },
