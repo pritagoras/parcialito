@@ -12,7 +12,7 @@ import { abrirCantidadADN } from './cantidad-adn.js?v=20261028-1';
 import { abrirComparadorDivision } from './comparador-division.js?v=20261028-4';
 import { abrirCalculadoraDivision } from './calculadora-division.js?v=20261030-1';
 import { abrirVisualDivision } from './visual-division.js?v=20261030-1';
-import { abrirLabGametogenesis } from './lab-gametogenesis.js?v=20261031-1';
+import { abrirLabGametogenesis } from './lab-gametogenesis.js?v=20261101-2';
 
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
