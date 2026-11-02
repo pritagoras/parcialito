@@ -59,37 +59,67 @@
     },
     {
       "pregunta": "Durante la profase I meiótica, el apareamiento específico de los cromosomas homólogos recibe el nombre de:",
-      "opciones": ["interfase.", "sinapsis.", "terminalización.", "intercinesis."],
+      "opciones": [
+        "interfase.",
+        "sinapsis.",
+        "terminalización.",
+        "intercinesis."
+      ],
       "correcta": "B",
       "explicacion": "La sinapsis es el proceso de apareamiento altamente específico entre los cromosomas homólogos que tiene lugar durante la profase I de la meiosis."
     },
     {
       "pregunta": "El complejo proteico que se forma entre los cromosomas homólogos para mantener su apareamiento se denomina:",
-      "opciones": ["complejo sinaptonémico.", "huso acromático.", "áster astral.", "cinetocoro."],
+      "opciones": [
+        "complejo sinaptonémico.",
+        "huso acromático.",
+        "áster astral.",
+        "cinetocoro."
+      ],
       "correcta": "A",
       "explicacion": "El complejo sinaptonémico es la estructura proteica interpuesta entre los cromosomas homólogos que sostiene el apareamiento durante la profase meiótica."
     },
     {
       "pregunta": "Al conjunto formado por un par de cromosomas homólogos apareados constituido por cuatro cromátidas se lo conoce como:",
-      "opciones": ["cromosoma simple.", "diploide no replicado.", "bivalente o tétrada.", "cuerpo polar."],
+      "opciones": [
+        "cromosoma simple.",
+        "diploide no replicado.",
+        "bivalente o tétrada.",
+        "cuerpo polar."
+      ],
       "correcta": "C",
       "explicacion": "El par de homólogos apareados recibe las denominaciones equivalentes de bivalente (por los dos cromosomas) o tétrada (por las cuatro cromátidas)."
     },
     {
       "pregunta": "La subetapa de la profase I en la cual ocurre el intercambio de segmentos genéticos entre cromátidas no hermanas es:",
-      "opciones": ["leptonema.", "cigonema.", "paquinema.", "diacinesis."],
+      "opciones": [
+        "leptonema.",
+        "cigonema.",
+        "paquinema.",
+        "diacinesis."
+      ],
       "correcta": "C",
       "explicacion": "Durante el paquinema de la profase I se produce el entrecruzamiento o crossing over, proceso en el que se intercambian segmentos entre cromátidas no hermanas."
     },
     {
       "pregunta": "Los puntos visibles que evidencian los sitios donde ocurrió el entrecruzamiento o crossing over se denominan:",
-      "opciones": ["centrómeros.", "cinetocoros.", "centrosomas.", "quiasmas."],
+      "opciones": [
+        "centrómeros.",
+        "cinetocoros.",
+        "centrosomas.",
+        "quiasmas."
+      ],
       "correcta": "D",
       "explicacion": "Los quiasmas son las estructuras o puntos de contacto visibles a través de los cuales los cromosomas homólogos permanecen unidos evidenciando el intercambio genético previo."
     },
     {
       "pregunta": "La subetapa de la profase I caracterizada por la terminalización de los quiasmas y la desorganización de la envoltura nuclear es la:",
-      "opciones": ["diacinesis.", "diplonema.", "cigonema.", "paquinema."],
+      "opciones": [
+        "diacinesis.",
+        "diplonema.",
+        "cigonema.",
+        "paquinema."
+      ],
       "correcta": "A",
       "explicacion": "En la diacinesis se alcanza la máxima condensación cromosómica, los quiasmas se desplazan hacia los extremos y se desintegra la envoltura nuclear."
     },
@@ -128,7 +158,12 @@
     },
     {
       "pregunta": "El intervalo comprendido entre la Meiosis I y la Meiosis II se denomina:",
-      "opciones": ["cigonema.", "intercinesis.", "fase S suplementaria.", "espermiogénesis."],
+      "opciones": [
+        "cigonema.",
+        "intercinesis.",
+        "fase S suplementaria.",
+        "espermiogénesis."
+      ],
       "correcta": "B",
       "explicacion": "La intercinesis es el período de transición que puede existir entre ambas divisiones meióticas, durante el cual no se produce replicación del ADN."
     },
@@ -178,13 +213,23 @@
     },
     {
       "pregunta": "La falla en la correcta segregación de los cromosomas durante la meiosis da origen a anomalías numéricas denominadas:",
-      "opciones": ["bivalentes.", "sinapsis.", "aneuploidías.", "intercinesis."],
+      "opciones": [
+        "bivalentes.",
+        "sinapsis.",
+        "aneuploidías.",
+        "intercinesis."
+      ],
       "correcta": "C",
       "explicacion": "La no disyunción meiótica produce un exceso o defecto en el número normal de cromosomas, cuadro genético clasificado como aneuploidía."
     },
     {
       "pregunta": "La presencia de un cromosoma autosómico extra en la cigota humana (2n + 1 = 47), como ocurre en el síndrome de Down, es un ejemplo de:",
-      "opciones": ["poliploidía ecuacional.", "trisomía.", "monosomía haploide.", "espermiogénesis asimétrica."],
+      "opciones": [
+        "poliploidía ecuacional.",
+        "trisomía.",
+        "monosomía haploide.",
+        "espermiogénesis asimétrica."
+      ],
       "correcta": "B",
       "explicacion": "Una trisomía es un tipo de aneuploidía caracterizada por la presencia de un cromosoma adicional (2n + 1), sumando 47 cromosomas en la cigota."
     },
@@ -200,14 +245,24 @@
       "explicacion": "La producción de espermatozoides o espermatogénesis ocurre específicamente dentro de los túbulos seminíferos presentes en los testículos."
     },
     {
-      "pregunta": "En la línea germinal masculina, la diferenciación celular con inicio de divisiones meióticas comienza a partir de:",
-      "opciones": ["el tercer mes de vida fetal.", "la pubertad.", "la fertilización del óvulo.", "el nacimiento inmediato."],
+      "pregunta": "En la línea germinal masculina humana, el inicio de la meiosis ocurre normalmente a partir de:",
+      "opciones": [
+        "la vida fetal, antes del nacimiento.",
+        "la pubertad.",
+        "la fecundación del ovocito.",
+        "el nacimiento, de manera inmediata."
+      ],
       "correcta": "B",
-      "explicacion": "Aunque las espermatogonias están presentes previamente, la diferenciación hacia espermatocitos y el inicio de la meiosis en el varón se desencadenan en la pubertad."
+      "explicacion": "Las espermatogonias están presentes antes, pero el inicio de la meiosis y la producción sostenida de espermatozoides comienzan normalmente desde la pubertad."
     },
     {
       "pregunta": "Las células diploides del testículo que se dividen activamente por mitosis para mantener la población germinal son las:",
-      "opciones": ["espermátidas.", "espermatogonias.", "espermatocitos secundarios.", "gametas maduras."],
+      "opciones": [
+        "espermátidas.",
+        "espermatogonias.",
+        "espermatocitos secundarios.",
+        "gametas maduras."
+      ],
       "correcta": "B",
       "explicacion": "Las espermatogonias son las células germinales precursoras diploides que proliferan mediante divisiones mitóticas dentro del túbulo seminífero."
     },
@@ -235,7 +290,12 @@
     },
     {
       "pregunta": "Las cuatro células haploides resultantes de la Meiosis II en el varón, antes de su transformación morfológica, se denominan:",
-      "opciones": ["espermatogonias.", "ovocitos primarios.", "cuerpos polares.", "espermátidas."],
+      "opciones": [
+        "espermatogonias.",
+        "ovocitos primarios.",
+        "cuerpos polares.",
+        "espermátidas."
+      ],
       "correcta": "D",
       "explicacion": "Las espermátidas son los cuatro productos haploides inmaduros obtenidos directamente al finalizar la segunda división meiótica."
     },
@@ -264,13 +324,13 @@
     {
       "pregunta": "Por cada espermatocito primario que completa íntegramente la meiosis se producen:",
       "opciones": [
-        "un espermatozoide funcional y tres cuerpos polares.",
-        "dos espermatozoides diploides idénticos.",
-        "cuatro espermatozoides funcionales.",
-        "ocho espermátidas haploides inactivas."
+        "un espermatozoide diploide y tres cuerpos polares.",
+        "dos espermatozoides diploides genéticamente idénticos.",
+        "cuatro espermátidas haploides que luego pueden diferenciarse en espermatozoides mediante espermiogénesis.",
+        "ocho espermatocitos secundarios haploides."
       ],
       "correcta": "C",
-      "explicacion": "A diferencia de la ovogénesis, la espermatogénesis reparte el citoplasma equitativamente produciendo cuatro espermatozoides funcionales por cada espermatocito I."
+      "explicacion": "Un espermatocito primario completa meiosis I y II y origina cuatro espermátidas haploides. Luego, cada una puede diferenciarse morfológicamente en un espermatozoide durante la espermiogénesis."
     },
     {
       "pregunta": "En el sistema reproductor femenino, los ovocitos se desarrollan en el interior de estructuras denominadas:",
@@ -339,30 +399,35 @@
       "explicacion": "Debido a las divisiones citoplasmáticas asimétricas, la ovogénesis genera únicamente una gameta funcional (el óvulo) y cuerpos polares no funcionales que degeneran."
     },
     {
-      "pregunta": "Las hormonas que estimulan la ovulación y cuya liberación es inhibida por el uso de píldoras anticonceptivas son las:",
+      "pregunta": "Según el material de estudio, los anticonceptivos hormonales inhiben la liberación de las gonadotrofinas asociadas con la estimulación de la ovulación. Estas son:",
       "opciones": [
-        "gonadotrofinas LH y FSH.",
-        "histonas de la matriz del citoplasma.",
-        "enzimas ADN polimerasas del folículo.",
-        "tubulinas de las fibras astrales."
+        "FSH y LH.",
+        "estrógenos y progesterona.",
+        "testosterona y progesterona.",
+        "FSH y testosterona."
       ],
       "correcta": "A",
-      "explicacion": "Las píldoras anticonceptivas hormonales actúan inhibiendo la liberación de las gonadotrofinas LH y FSH, impidiendo así la estimulación de la ovulación."
+      "explicacion": "El material señala que los anticonceptivos hormonales inhiben la liberación de FSH y LH. Las fuentes las vinculan con la estimulación de la ovulación, sin desarrollar en detalle todas las acciones individuales de cada hormona."
     },
     {
-      "pregunta": "A diferencia de las espermatogonias que producen espermatozoides de forma continua desde la pubertad, la reserva de ovocitos en la mujer:",
+      "pregunta": "A diferencia de la espermatogénesis, que se mantiene desde la pubertad gracias a la mitosis de espermatogonias, la reserva de ovocitos en la mujer:",
       "opciones": [
-        "se sintetiza semanalmente mediante mitosis postnatales.",
-        "aumenta exponencialmente con el paso de la edad materna.",
-        "es ilimitada y se renueva continuamente durante toda la vida.",
-        "es finita y sus células iniciaron la meiosis en la vida fetal."
+        "se renueva de forma continua mediante mitosis después del nacimiento.",
+        "aumenta progresivamente durante toda la vida reproductiva.",
+        "es finita y está constituida por ovocitos que iniciaron la meiosis durante la vida fetal.",
+        "se forma recién después de la primera ovulación."
       ],
-      "correcta": "D",
-      "explicacion": "La mujer nace con una reserva finita de ovocitos primarios detenidos en profase I cuya proliferación mitótica concluyó en la etapa fetal."
+      "correcta": "C",
+      "explicacion": "La reserva femenina es finita: las ovogonias proliferan durante la vida fetal y los ovocitos primarios inician la meiosis antes del nacimiento. En cambio, la línea masculina mantiene espermatogonias que continúan dividiéndose por mitosis desde la pubertad."
     },
     {
       "pregunta": "En relación al contenido de ADN, una gameta humana madura haploide (n = 23) caracterizada por tener cromosomas simples presenta una notación de:",
-      "opciones": ["4c de contenido de ADN.", "2c de contenido de ADN.", "3c de contenido de ADN.", "1c de contenido de ADN."],
+      "opciones": [
+        "4c de contenido de ADN.",
+        "2c de contenido de ADN.",
+        "3c de contenido de ADN.",
+        "1c de contenido de ADN."
+      ],
       "correcta": "D",
       "explicacion": "Una gameta haploide con cromosomas no duplicados posee una cantidad de ADN equivalente a 1c (un juego haploide no duplicado)."
     },
@@ -376,6 +441,105 @@
       ],
       "correcta": "D",
       "explicacion": "En la metafase I de la meiosis los cromosomas se ordenan sobre la placa ecuatorial en pares de homólogos (bivalentes), mientras que en la mitosis lo hacen como cromosomas individuales."
+    },
+    {
+      "pregunta": "Un ovocito primario humano que permanece detenido en profase I, antes de completar la primera división meiótica, presenta:",
+      "opciones": [
+        "46 cromosomas duplicados, 92 cromátidas y 4c de ADN.",
+        "23 cromosomas simples, 23 cromátidas y 1c de ADN.",
+        "23 cromosomas duplicados, 46 cromátidas y 2c de ADN.",
+        "46 cromosomas simples, 46 cromátidas y 4c de ADN."
+      ],
+      "correcta": "A",
+      "explicacion": "El ovocito primario ya replicó su ADN, pero todavía no separó los cromosomas homólogos. Por eso continúa siendo diploide (2n = 46) y tiene cromosomas duplicados, 92 cromátidas y 4c de ADN."
+    },
+    {
+      "pregunta": "Al finalizar la meiosis I de un ovocito primario humano, el ovocito secundario y el primer cuerpo polar presentan cada uno:",
+      "opciones": [
+        "46 cromosomas simples y 2c de ADN.",
+        "23 cromosomas duplicados, 46 cromátidas y 2c de ADN.",
+        "23 cromosomas simples, 23 cromátidas y 1c de ADN.",
+        "46 cromosomas duplicados y 4c de ADN."
+      ],
+      "correcta": "B",
+      "explicacion": "La meiosis I separa los homólogos y reduce la ploidía. Se forman dos células haploides (n = 23), pero cada cromosoma todavía conserva sus dos cromátidas hermanas: 46 cromátidas y 2c de ADN por célula."
+    },
+    {
+      "pregunta": "Cuando el ovocito secundario completa la meiosis II como consecuencia de la fecundación, el resultado inmediato es:",
+      "opciones": [
+        "un ovocito primario diploide y dos espermatocitos secundarios.",
+        "dos óvulos funcionales con 23 cromosomas duplicados cada uno.",
+        "un óvulo haploide con 23 cromosomas simples y un segundo cuerpo polar; luego, al reunirse los genomas parentales, se restablece la dotación diploide del cigoto.",
+        "un ovocito secundario diploide con 46 cromosomas simples."
+      ],
+      "correcta": "C",
+      "explicacion": "La fecundación permite que el ovocito secundario reanude y complete la meiosis II. Se forma un óvulo haploide con 23 cromosomas simples (1c) y el segundo cuerpo polar. La reunión del material genético materno y paterno restablece 2n = 46 en el cigoto."
+    },
+    {
+      "pregunta": "¿Cuál es el orden correcto de las etapas de la línea germinal masculina desde la célula precursora hasta la gameta diferenciada?",
+      "opciones": [
+        "Espermatocito secundario → espermatogonia → espermátida → espermatocito primario → espermatozoide.",
+        "Espermatogonia → espermatocito primario → espermatocitos secundarios → espermátidas → espermatozoides.",
+        "Espermatogonia → espermátida → espermatocito primario → espermatozoide → espermatocito secundario.",
+        "Espermatocito primario → espermatogonia → espermatozoide → espermátida → espermatocitos secundarios."
+      ],
+      "correcta": "B",
+      "explicacion": "Las espermatogonias originan espermatocitos primarios, que realizan meiosis I y forman espermatocitos secundarios. Estos completan meiosis II y producen espermátidas, que se diferencian en espermatozoides mediante espermiogénesis."
+    },
+    {
+      "pregunta": "La diferencia principal entre el reparto citoplasmático de la espermatogénesis y el de la ovogénesis es que:",
+      "opciones": [
+        "en la ovogénesis el citoplasma se reparte de manera asimétrica y casi todo queda en una única célula; en la espermatogénesis no ocurre esa asimetría extrema.",
+        "en la espermatogénesis una célula conserva todo el citoplasma y las otras tres forman cuerpos polares.",
+        "en ambos procesos el citoplasma se distribuye siempre de manera idéntica entre cuatro células.",
+        "en la ovogénesis el citoplasma se elimina por completo antes de la meiosis I."
+      ],
+      "correcta": "A",
+      "explicacion": "En la ovogénesis las divisiones son asimétricas: el ovocito conserva casi todo el citoplasma y los cuerpos polares reciben muy poco. En la espermatogénesis se obtienen cuatro productos meióticos sin una asimetría citoplasmática extrema."
+    },
+    {
+      "pregunta": "¿Qué comparación temporal entre la espermatogénesis y la ovogénesis es correcta?",
+      "opciones": [
+        "Ambas líneas germinales comienzan la meiosis recién después de la pubertad.",
+        "La ovogénesis comienza después de la fecundación y la espermatogénesis durante la vida fetal.",
+        "La meiosis masculina comienza normalmente en la pubertad y continúa; la femenina se inicia durante la vida fetal y queda detenida en profase I hasta su reanudación en la vida reproductiva.",
+        "La meiosis femenina termina antes del nacimiento, mientras que la masculina se detiene en profase I."
+      ],
+      "correcta": "C",
+      "explicacion": "En la línea masculina, la meiosis comienza a partir de la pubertad y la producción puede mantenerse. En la femenina, los ovocitos inician meiosis durante la vida fetal, quedan detenidos en profase I y algunos reanudan su desarrollo después de la pubertad."
+    },
+    {
+      "pregunta": "Respecto del desarrollo folicular y la ovulación, ¿qué afirmación coincide con la explicación de clase?",
+      "opciones": [
+        "En cada ciclo todos los folículos que comienzan a desarrollarse llegan necesariamente a la ovulación.",
+        "En cada ciclo puede comenzar el desarrollo de más de un folículo, pero generalmente uno alcanza la etapa que culmina con la ovulación.",
+        "La ovulación libera un ovocito primario detenido en profase I.",
+        "Los folículos se desarrollan únicamente después de completarse la fecundación."
+      ],
+      "correcta": "B",
+      "explicacion": "Según el esquema y la explicación del profesor, en cada ciclo puede comenzar el desarrollo de más de un folículo, aunque generalmente uno alcanza la etapa preovulatoria y libera el ovocito secundario."
+    },
+    {
+      "pregunta": "¿Cuál es la diferencia entre menstruación y ciclo menstrual?",
+      "opciones": [
+        "Son dos nombres equivalentes para todo el proceso que ocurre entre dos ovulaciones.",
+        "La menstruación es la etapa en la que se completa la meiosis II.",
+        "El ciclo menstrual es un acontecimiento breve dentro de la menstruación.",
+        "La menstruación es un acontecimiento que forma parte del ciclo menstrual, pero no representa el ciclo completo."
+      ],
+      "correcta": "D",
+      "explicacion": "El ciclo menstrual comprende una secuencia de cambios que se repiten; la menstruación es uno de sus acontecimientos y no debe usarse como sinónimo de todo el ciclo."
+    },
+    {
+      "pregunta": "¿Qué conjunto de hormonas enumera el material como relacionado con la gametogénesis masculina y femenina, respectivamente?",
+      "opciones": [
+        "Masculina: FSH, LH y testosterona; femenina: FSH, LH, estrógenos y progesterona.",
+        "Masculina: estrógenos y progesterona; femenina: testosterona y FSH.",
+        "Masculina: únicamente progesterona; femenina: únicamente testosterona.",
+        "Masculina: FSH y estrógenos; femenina: LH y testosterona."
+      ],
+      "correcta": "A",
+      "explicacion": "El cuadro comparativo del material enumera FSH, LH y testosterona para la línea masculina, y FSH, LH, estrógenos y progesterona para la femenina. Las fuentes describen su participación general, pero no desarrollan todas las acciones hormonales individuales."
     }
   ]
 }
