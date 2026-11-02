@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-02T01:14:37Z",
+  "generado": "2026-11-02T02:07:04Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -260,7 +260,7 @@
           "id": "biologia-celular2/17-gametogenesis",
           "nombre": "Gametogénesis",
           "archivo": "data/biologia-celular2/17-gametogenesis.json",
-          "preguntas": 49
+          "preguntas": 80
         }
       ]
     },
