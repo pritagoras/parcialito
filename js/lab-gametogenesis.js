@@ -53,6 +53,349 @@ const PREGUNTAS = [
 {q:'¿Cuál es la diferencia entre menstruación y ciclo menstrual?',o:['Son términos equivalentes','La menstruación es un acontecimiento dentro del ciclo, no el ciclo completo','El ciclo menstrual ocurre solo durante la menstruación','La menstruación es la meiosis II'],a:1,e:'La menstruación es uno de los acontecimientos del ciclo menstrual; no representa toda la secuencia cíclica.'},
 {q:'¿Qué conjunto de hormonas enumera el material para la línea germinal femenina?',o:['FSH, LH, estrógenos y progesterona','FSH, testosterona y adrenalina','LH, testosterona y progesterona','Solo estrógenos y progesterona'],a:0,e:'El cuadro del material enumera FSH, LH, estrógenos y progesterona para la línea femenina, sin desarrollar en detalle todas sus acciones individuales.'}
 ];
+const COMPARACIONES_ADN = [
+  {
+    "q": "¿Qué célula contiene más ADN por célula: un ovocito primario detenido en profase I o una espermátida recién formada?",
+    "o": [
+      "La espermátida, porque ya terminó la meiosis.",
+      "El ovocito primario: 4c frente a 1c, cuatro veces más ADN.",
+      "Ambas contienen 2c.",
+      "Tienen igual cantidad por ser células germinales."
+    ],
+    "a": 1,
+    "e": "El ovocito primario está en 2n, 4c; la espermátida terminó meiosis II y está en n, 1c. El ovocito primario contiene cuatro veces más ADN."
+  },
+  {
+    "q": "Al comparar un espermatocito primario y un ovocito primario humanos, ambos después de replicar el ADN y antes de completar meiosis I, ¿cuál tiene más ADN?",
+    "o": [
+      "El espermatocito primario, porque produce cuatro gametas.",
+      "El ovocito primario, porque conserva más citoplasma.",
+      "Tienen la misma cantidad: ambos son 2n, 4c, con 46 cromosomas y 92 cromátidas.",
+      "El ovocito primario tiene 2c y el espermatocito 4c."
+    ],
+    "a": 2,
+    "e": "Ambas células ya duplicaron el ADN, pero todavía no separaron los homólogos: 46 cromosomas duplicados, 92 cromátidas y 4c."
+  },
+  {
+    "q": "¿Qué contiene más ADN por célula: el ovocito secundario que se libera en la ovulación o un espermatozoide maduro?",
+    "o": [
+      "El espermatozoide: 2c y el ovocito 1c.",
+      "El ovocito secundario: 2c y el espermatozoide 1c.",
+      "Ambos tienen 1c porque son haploides.",
+      "Ambos tienen 2c porque ya completaron una división meiótica."
+    ],
+    "a": 1,
+    "e": "El ovocito ovulado está detenido en metafase II: n, 2c. El espermatozoide completó meiosis II: n, 1c. El ovocito contiene el doble de ADN."
+  },
+  {
+    "q": "Un espermatocito secundario y un ovocito secundario detenido en metafase II tienen, cada uno, ¿qué contenido genético?",
+    "o": [
+      "2n, 4c.",
+      "n, 1c.",
+      "n, 2c: 23 cromosomas duplicados, 46 cromátidas y 2c.",
+      "2n, 2c."
+    ],
+    "a": 2,
+    "e": "Ambas células completaron meiosis I: son haploides, pero todavía conservan cromátidas hermanas unidas. Cada una tiene n=23 y 2c."
+  },
+  {
+    "q": "¿Qué diferencia de contenido de ADN existe entre una espermátida y un espermatozoide maduro?",
+    "o": [
+      "La espermátida tiene 2c y el espermatozoide 1c.",
+      "El espermatozoide duplica su ADN durante la espermiogénesis.",
+      "No hay diferencia: ambos son n, 1c; la espermiogénesis cambia la morfología, no el ADN.",
+      "La espermátida es 2n y el espermatozoide n."
+    ],
+    "a": 2,
+    "e": "La espermiogénesis no es una división. La espermátida y el espermatozoide conservan 23 cromosomas simples y 1c."
+  },
+  {
+    "q": "Si se comparan una espermatogonia en G1 y una ovogonia antes de replicar su ADN, ¿cuál tiene más información genética?",
+    "o": [
+      "La espermatogonia, por estar en el testículo.",
+      "La ovogonia, porque dará origen al ovocito.",
+      "Ambas tienen la misma cantidad: 2n, 2c y 46 cromosomas simples.",
+      "Ambas son n, 1c."
+    ],
+    "a": 2,
+    "e": "Ambas son células germinales diploides antes de fase S: 46 cromosomas simples y 2c."
+  },
+  {
+    "q": "¿Qué célula tiene el doble de ADN por célula: una espermatogonia en G1 o un espermatocito primario después de la fase S?",
+    "o": [
+      "La espermatogonia: 4c frente a 2c.",
+      "El espermatocito primario: 4c frente a 2c.",
+      "Tienen igual cantidad porque ambos son 2n.",
+      "La espermatogonia, porque aún no se dividió."
+    ],
+    "a": 1,
+    "e": "La espermatogonia en G1 tiene 2n, 2c. El espermatocito primario ya replicó el ADN y tiene 2n, 4c."
+  },
+  {
+    "q": "¿Qué contiene más ADN por célula: una ovogonia en G1 o un ovocito primario detenido en profase I?",
+    "o": [
+      "La ovogonia, porque es diploide.",
+      "El ovocito primario: 4c frente a 2c.",
+      "Ambos tienen 4c por ser diploides.",
+      "Ambos tienen 2c porque no completaron meiosis I."
+    ],
+    "a": 1,
+    "e": "La ovogonia en G1 tiene 2c. El ovocito primario ya atravesó fase S y permanece en profase I con 4c. Ambos son 2n."
+  },
+  {
+    "q": "¿Qué diferencia de ADN hay entre el ovocito primario detenido en profase I y el ovocito secundario recién formado tras meiosis I?",
+    "o": [
+      "El ovocito secundario tiene el doble: 4c frente a 2c.",
+      "El ovocito primario tiene el doble: 4c frente a 2c.",
+      "Tienen igual cantidad: ambos 2c.",
+      "El ovocito primario es 1c y el secundario 2c."
+    ],
+    "a": 1,
+    "e": "Antes de meiosis I, el ovocito primario tiene 2n, 4c. Después de separar los homólogos, el ovocito secundario es n, 2c."
+  },
+  {
+    "q": "Al finalizar meiosis I de la ovogénesis, ¿cómo se comparan el ovocito secundario y el primer cuerpo polar en su contenido cromosómico?",
+    "o": [
+      "El ovocito secundario tiene 2c y el cuerpo polar 1c.",
+      "El cuerpo polar es diploide y el ovocito haploide.",
+      "Ambos son n, 2c y contienen igual ADN, aunque el ovocito conserva casi todo el citoplasma.",
+      "El ovocito secundario tiene 4c porque retuvo el citoplasma."
+    ],
+    "a": 2,
+    "e": "La división es asimétrica en citoplasma, no en la reducción cromosómica. Ambos reciben un juego haploide de cromosomas duplicados: n, 2c."
+  },
+  {
+    "q": "¿Qué contiene más ADN por célula: un ovocito primario detenido en profase I o un espermatocito secundario después de meiosis I?",
+    "o": [
+      "El espermatocito secundario, porque separó homólogos.",
+      "El ovocito primario: 4c frente a 2c.",
+      "Ambos tienen 2c.",
+      "Ambos tienen 4c."
+    ],
+    "a": 1,
+    "e": "El ovocito primario aún es 2n, 4c. El espermatocito secundario ya es n, 2c."
+  },
+  {
+    "q": "¿Cuántas veces más ADN tiene un espermatocito primario humano que un espermatozoide maduro?",
+    "o": [
+      "Dos veces: 2c frente a 1c.",
+      "Cuatro veces: 4c frente a 1c.",
+      "La misma cantidad por ser células germinales.",
+      "Dos veces: ambos tienen 46 moléculas de ADN."
+    ],
+    "a": 1,
+    "e": "El espermatocito primario tiene 4c después de replicar; el espermatozoide tiene 1c. La relación es 4:1."
+  },
+  {
+    "q": "Por célula, ¿qué etapa contiene más ADN: metafase I o metafase II?",
+    "o": [
+      "Metafase II: 4c frente a 2c.",
+      "Ambas tienen 2c.",
+      "Metafase I: 2n, 4c; metafase II: n, 2c.",
+      "Ambas tienen 4c."
+    ],
+    "a": 2,
+    "e": "En metafase I la célula conserva ambos juegos de homólogos: 2n, 4c. En metafase II cada célula es haploide: n, 2c."
+  },
+  {
+    "q": "¿Qué contiene más ADN: el ovocito secundario ovulado en metafase II o el óvulo después de completar meiosis II?",
+    "o": [
+      "El óvulo, porque ya está listo para fecundarse.",
+      "El ovocito secundario: 2c frente a 1c.",
+      "Ambos tienen 1c.",
+      "Ambos tienen 2c."
+    ],
+    "a": 1,
+    "e": "Antes de completar meiosis II, el ovocito secundario tiene 2c; al terminarla, el óvulo queda con cromosomas simples y 1c."
+  },
+  {
+    "q": "Al comparar un óvulo humano recién formado tras meiosis II con un espermatozoide maduro, ¿qué afirmación es correcta?",
+    "o": [
+      "El óvulo tiene 2c y el espermatozoide 1c.",
+      "El espermatozoide es 2n y el óvulo n.",
+      "Ambos son haploides y tienen 1c, con 23 cromosomas simples.",
+      "El óvulo tiene 46 cromosomas y el espermatozoide 23."
+    ],
+    "a": 2,
+    "e": "Una vez completada meiosis II, ambas gametas maduras son n=23, con 23 cromátidas y 1c."
+  },
+  {
+    "q": "Antes de la primera replicación del ADN del cigoto, ¿cómo se compara su contenido total de ADN con el de un espermatozoide?",
+    "o": [
+      "El cigoto tiene 2c y el espermatozoide 1c; el cigoto tiene el doble.",
+      "El cigoto tiene 4c y el espermatozoide 1c.",
+      "Ambos tienen 1c.",
+      "El espermatozoide tiene el doble."
+    ],
+    "a": 0,
+    "e": "La unión de dos genomas haploides de 1c restablece 2n, 2c en el cigoto antes de fase S. Tiene el doble de ADN que un espermatozoide."
+  },
+  {
+    "q": "Un ovocito secundario detenido en metafase II y un cigoto antes de su primera fase S, ¿tienen la misma cantidad de ADN?",
+    "o": [
+      "No: el cigoto tiene 4c y el ovocito 2c.",
+      "Sí, ambos tienen 2c, aunque el ovocito es n y el cigoto 2n.",
+      "Sí, ambos son 2n, 2c.",
+      "No: el ovocito tiene 1c y el cigoto 2c."
+    ],
+    "a": 1,
+    "e": "Ambos contienen 2c total. El ovocito es n con 23 cromosomas duplicados; el cigoto 2n con 46 cromosomas simples. Igual ADN no implica igual ploidía."
+  },
+  {
+    "q": "¿Qué diferencia existe entre un ovocito primario detenido en profase I y un cigoto antes de fase S, aunque ambos sean diploides?",
+    "o": [
+      "No hay diferencia: 2n siempre significa 2c.",
+      "El cigoto tiene 4c y el ovocito 2c.",
+      "El ovocito primario tiene 4c y el cigoto 2c: misma ploidía, distinta cantidad de ADN.",
+      "El ovocito primario es n y el cigoto 2n."
+    ],
+    "a": 2,
+    "e": "Ambos son 2n, pero el ovocito primario ya duplicó su ADN y está en 4c. El cigoto previo a fase S tiene 2c."
+  },
+  {
+    "q": "Durante anafase I, antes de completarse la citocinesis, ¿qué diferencia hay entre el ADN total de la célula y el ADN que corresponde a cada polo?",
+    "o": [
+      "La célula completa tiene 2c y cada polo 4c.",
+      "La célula completa conserva 4c; cada futuro núcleo recibe 2c.",
+      "La célula completa tiene 1c y cada polo 2c.",
+      "Cada polo tiene 4c."
+    ],
+    "a": 1,
+    "e": "En anafase I el ADN total de la célula sigue siendo 4c hasta la división. Cada futuro núcleo recibe n, 2c."
+  },
+  {
+    "q": "En anafase II, comparando el ADN de cada futuro núcleo con el de la célula haploide antes de separar cromátidas, ¿qué ocurre?",
+    "o": [
+      "Cada futuro núcleo recibe 1c, la mitad de los 2c de la célula en metafase II.",
+      "Cada futuro núcleo recibe 2c.",
+      "La ploidía vuelve a 2n y el ADN queda en 4c.",
+      "No cambia: cada futuro núcleo sigue en 2c."
+    ],
+    "a": 0,
+    "e": "La célula en metafase II tiene n, 2c. Al separarse las cromátidas, cada futuro núcleo recibe n cromosomas simples y 1c."
+  },
+  {
+    "q": "¿Qué comparación entre un espermatocito secundario al terminar meiosis I y una espermátida al terminar meiosis II es correcta?",
+    "o": [
+      "Ambos tienen n, pero el secundario 2c y la espermátida 1c.",
+      "El secundario es 2n, 4c y la espermátida n, 2c.",
+      "Ambos tienen n, 1c.",
+      "La espermátida tiene el doble de ADN."
+    ],
+    "a": 0,
+    "e": "Después de meiosis I, el espermatocito secundario es n, 2c. Después de meiosis II, la espermátida es n, 1c."
+  },
+  {
+    "q": "¿Cómo se comparan el número de cromosomas y el contenido de ADN de un ovocito primario en profase I y un espermatocito secundario?",
+    "o": [
+      "Ambos tienen 23 cromosomas y 2c.",
+      "El ovocito primario tiene 46 cromosomas y 4c; el secundario 23 cromosomas y 2c.",
+      "El ovocito tiene 92 cromosomas y 2c.",
+      "Ambos tienen 46 cromosomas y 4c."
+    ],
+    "a": 1,
+    "e": "El ovocito primario tiene 2n, 4c; el espermatocito secundario n, 2c. Los cromosomas se cuentan por centrómeros."
+  },
+  {
+    "q": "Una célula primaria masculina completa meiosis I. ¿Cómo se compara el ADN de las dos células secundarias juntas con el ADN de la célula primaria antes de dividirse?",
+    "o": [
+      "Las dos células juntas tienen la mitad.",
+      "Las dos células juntas conservan 4c en total; cada una recibe 2c.",
+      "Las dos juntas tienen 8c.",
+      "Cada secundaria tiene 1c, total 2c."
+    ],
+    "a": 1,
+    "e": "Antes de meiosis I el espermatocito primario contiene 4c. Cada célula secundaria recibe 2c; juntas conservan los 4c iniciales."
+  },
+  {
+    "q": "Si se considera el ADN total de los cuatro productos de la espermatogénesis al finalizar meiosis II, ¿cómo se compara con el ADN del espermatocito primario antes de dividirse?",
+    "o": [
+      "Los cuatro productos juntos contienen 4c, igual que la célula primaria; cada espermátida tiene 1c.",
+      "Los cuatro juntos contienen 1c.",
+      "Los cuatro juntos contienen 8c.",
+      "Cada espermátida tiene 4c."
+    ],
+    "a": 0,
+    "e": "El espermatocito primario empieza con 4c. Al final hay cuatro espermátidas de 1c: 4 × 1c = 4c en conjunto."
+  },
+  {
+    "q": "¿Qué contiene más ADN por célula: el primer cuerpo polar recién formado o un espermatozoide maduro?",
+    "o": [
+      "El espermatozoide: 2c frente a 1c.",
+      "Ambos tienen 1c.",
+      "El primer cuerpo polar: 2c frente a 1c, aunque tenga mucho menos citoplasma.",
+      "El primer cuerpo polar es 2n, 4c."
+    ],
+    "a": 2,
+    "e": "El primer cuerpo polar se forma al completar meiosis I y es n, 2c. El espermatozoide es n, 1c. El tamaño citoplasmático no determina el ADN nuclear."
+  },
+  {
+    "q": "¿Qué comparación es correcta entre el segundo cuerpo polar y un espermatozoide maduro?",
+    "o": [
+      "El segundo cuerpo polar tiene 2c y el espermatozoide 1c.",
+      "Ambos son haploides con cromosomas simples y 1c.",
+      "El segundo cuerpo polar es diploide.",
+      "El espermatozoide tiene 4c."
+    ],
+    "a": 1,
+    "e": "El segundo cuerpo polar se produce al finalizar meiosis II: es n, 1c, al igual que el óvulo y el espermatozoide maduros."
+  },
+  {
+    "q": "Compara un ovocito secundario en metafase II con una espermatogonia en G1. ¿Qué afirmación distingue correctamente ADN y ploidía?",
+    "o": [
+      "Ambos tienen 2c, pero el ovocito es n con 23 cromosomas duplicados y la espermatogonia 2n con 46 simples.",
+      "Ambos son 2n porque tienen 2c.",
+      "El ovocito tiene 4c y la espermatogonia 1c.",
+      "La espermatogonia tiene menos cromosomas."
+    ],
+    "a": 0,
+    "e": "Ambas tienen 2c de ADN total, pero el ovocito es haploide con 23 cromosomas duplicados; la espermatogonia es diploide con 46 simples."
+  },
+  {
+    "q": "Compara una espermatogonia en G1 y un ovocito primario detenido en profase I. ¿Qué afirmación es correcta?",
+    "o": [
+      "Tienen igual número de cromosomas, 46, pero el ovocito tiene el doble de ADN: 4c frente a 2c.",
+      "El ovocito tiene 92 cromosomas.",
+      "La espermatogonia tiene más ADN.",
+      "Ambos tienen 46 cromosomas simples y 2c."
+    ],
+    "a": 0,
+    "e": "Ambas conservan 46 cromosomas y son diploides. El ovocito primario ya replicó su ADN: 4c; la espermatogonia en G1 tiene 2c."
+  },
+  {
+    "q": "¿Qué pareja tiene igual cantidad de ADN por célula, pero distinta ploidía: ovocito secundario en metafase II o espermatogonia en G1?",
+    "o": [
+      "No tienen igual ADN: el ovocito tiene 4c y la espermatogonia 2c.",
+      "Ambos tienen 2c, pero el ovocito es n y la espermatogonia 2n.",
+      "Ambos son n, 2c.",
+      "El ovocito tiene 1c y la espermatogonia 4c."
+    ],
+    "a": 1,
+    "e": "El ovocito secundario tiene n, 2c; la espermatogonia en G1 tiene 2n, 2c. Igual cantidad total de ADN no significa igual número de juegos cromosómicos."
+  },
+  {
+    "q": "¿Cuál comparación muestra dos células con el mismo número de cromosomas, pero diferente cantidad de moléculas de ADN?",
+    "o": [
+      "Espermátida y espermatozoide: ambos 23 cromosomas, pero 23 y 46 moléculas.",
+      "Espermatogonia en G1 y ovocito primario en profase I: ambas 46 cromosomas, pero 46 y 92 moléculas de ADN.",
+      "Ovocito secundario y espermatocito secundario: 23 cromosomas, pero 23 y 92 moléculas.",
+      "Óvulo y cigoto: ambos 46 cromosomas y 1c."
+    ],
+    "a": 1,
+    "e": "Ambas tienen 46 cromosomas. La espermatogonia en G1 tiene cromosomas simples (46 moléculas de ADN, 2c); el ovocito primario tiene duplicados (92 moléculas, 4c)."
+  },
+  {
+    "q": "¿Qué cambio ocurre en el contenido de ADN al pasar de una célula diploide en G1 a un espermatocito primario después de la fase S?",
+    "o": [
+      "Pasa de 2c a 4c sin cambiar 2n ni los 46 cromosomas.",
+      "Pasa de 2n a n y de 2c a 1c.",
+      "Pasa de 46 a 92 cromosomas y mantiene 2c.",
+      "Pasa de 2c a 1c."
+    ],
+    "a": 0,
+    "e": "Durante fase S se duplica el ADN de 2c a 4c. El número de cromosomas sigue siendo 46 y la ploidía 2n; cada cromosoma pasa a tener dos cromátidas."
+  }
+];
 const EXPLICACION = [
 {h:'Ploidía y contenido de ADN',p:'La ploidía (n o 2n) expresa la cantidad de juegos cromosómicos. El contenido de ADN (c) indica cuánto material genético posee la célula. La replicación transforma 2c en 4c, pero no duplica la ploidía ni el número de cromosomas.'},
 {h:'Meiosis I: división reduccional',p:'En profase I ocurren leptonema, cigonema, paquinema, diplonema y diacinesis. La sinapsis aproxima homólogos; el crossing over genera recombinación entre cromátidas no hermanas. En anafase I se separan los homólogos y cada célula resultante es haploide, con cromosomas duplicados.'},
@@ -65,7 +408,7 @@ const EXPLICACION = [
 ];
 const CSS = '.gameto{--bg:#050b1b;--ink:#eaf1ff;--muted:#a8bce7;--mint:#5ce5bf;--gold:#ffc66d;color:var(--ink);max-width:1240px;margin:0 auto;padding:clamp(13px,2.6vw,30px);background:radial-gradient(ellipse at 55% 0%,#182b64 0,transparent 48%),var(--bg);border:1px solid #1e3470;border-radius:24px;font-family:inherit;overflow:hidden}.gameto *{box-sizing:border-box}.gameto button,.gameto select{font:inherit;color:var(--ink);background:#10234a;border:1px solid #2c4785;border-radius:12px;padding:9px 12px;cursor:pointer}.gameto button:hover{border-color:#86a9ff}.gameto button:focus-visible,.gameto select:focus-visible{outline:2px solid var(--mint);outline-offset:3px}.gameto button:disabled{opacity:.4;cursor:not-allowed}.gameto .gm-back{background:transparent;border:0;color:#b6c8ef;padding:5px 0}.gameto .gm-kicker{color:var(--mint);font-size:.7rem;font-weight:850;letter-spacing:.16em;margin:12px 0 8px}.gameto h1{font-size:clamp(1.8rem,4.7vw,3rem);line-height:1.04;letter-spacing:-.04em;margin:0 0 10px}.gameto h2{font-size:clamp(1.15rem,3vw,1.6rem);margin:0 0 8px}.gameto h3{font-size:1rem;margin:0 0 7px}.gameto p{color:#bacaf0;line-height:1.65}.gameto .gm-hero{padding:17px 0 21px;border-bottom:1px solid #243b6c}.gameto .gm-hero p{max-width:790px;margin:0}.gameto .gm-tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}.gameto .gm-tags span{border:1px solid #294574;background:#0b1c3a;border-radius:99px;padding:6px 10px;font-size:.74rem;color:#bdd3fa}.gameto .gm-tabs{display:flex;gap:7px;overflow-x:auto;padding:7px;margin:16px 0;border:1px solid #1c3267;border-radius:15px;background:#071229}.gameto .gm-tabs button{flex:0 0 auto;font-size:.82rem}.gameto .gm-tabs button.active,.gameto .gm-mode.active,.gameto .gm-phase.active{background:linear-gradient(135deg,#385ce6,#473db7);border-color:#829aff;box-shadow:0 0 18px #526eff2a}.gameto .gm-modebar{display:flex;gap:7px;flex-wrap:wrap;margin:4px 0 14px}.gameto .gm-modebar button{font-size:.8rem}.gameto .gm-card{border:1px solid #233c78;border-radius:18px;background:linear-gradient(145deg,#0a1834,#071126);padding:clamp(13px,2.5vw,22px);margin:12px 0;min-width:0}.gameto .gm-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:13px}.gameto .gm-head p{margin:4px 0 0;font-size:.85rem}.gameto .gm-chip{font-size:.66rem;letter-spacing:.08em;color:var(--mint);border:1px solid #276b70;border-radius:999px;padding:7px 9px;white-space:nowrap}.gameto .gm-layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.8fr);gap:14px;align-items:stretch}.gameto .gm-scene{display:grid;place-items:center;min-height:290px;border:1px solid #1e3974;border-radius:17px;background:radial-gradient(ellipse at center,#142b5a 0,#07132c 68%);overflow:hidden;padding:8px}.gameto .gm-scene svg{width:100%;height:auto;max-height:430px;display:block}.gameto .gm-readout{display:flex;flex-direction:column;gap:10px}.gameto .gm-phase-title{font-size:1.22rem;font-weight:850;line-height:1.2}.gameto .gm-sub{color:var(--mint);font-size:.78rem;font-weight:750}.gameto .gm-readout p{font-size:.88rem;margin:0}.gameto .gm-key{border-left:3px solid var(--gold);background:#111e3b;padding:11px 13px;border-radius:0 12px 12px 0;font-size:.83rem;line-height:1.55;color:#e6edff}.gameto .gm-key b{color:var(--gold)}.gameto .gm-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}.gameto .gm-stat{background:#0a1730;border:1px solid #1d346b;border-radius:12px;padding:10px;min-width:0}.gameto .gm-stat span{display:block;color:#9eb4e4;font-size:.68rem;margin-bottom:5px}.gameto .gm-stat b{font-size:.92rem}.gameto .gm-phases{display:flex;gap:6px;overflow-x:auto;padding:3px 1px 10px;margin:8px 0 3px}.gameto .gm-phase{flex:0 0 auto;font-size:.73rem;line-height:1.25;padding:8px 10px;min-height:40px}.gameto .gm-progress{height:5px;border-radius:99px;background:#15254a;overflow:hidden;margin:12px 0}.gameto .gm-progress span{display:block;height:100%;background:linear-gradient(90deg,#5ce5bf,#a99aff,#ff83b5)}.gameto .gm-controls{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px}.gameto .gm-primary{background:linear-gradient(135deg,#4b65f1,#5243bc);border-color:#8295ff;font-weight:750}.gameto .gm-next{background:#153a3b;border-color:#3b8979}.gameto .gm-selectrow{display:flex;gap:9px;align-items:center;flex-wrap:wrap;color:#b8c9ed;font-size:.8rem}.gameto .gm-selectrow select{padding:8px 10px;font-size:.8rem}.gameto .gm-legend{display:flex;gap:10px;flex-wrap:wrap;color:#aebfe3;font-size:.72rem;margin-top:8px}.gameto .gm-legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}.gameto .gm-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.gameto .gm-grid article{border:1px solid #20386f;background:#09152d;border-radius:14px;padding:14px}.gameto .gm-grid p{font-size:.82rem;margin:7px 0 0}.gameto .gm-note{border:1px solid #30466e;background:#0a1730;border-radius:13px;padding:13px;color:#c6d5f1;margin-top:12px;font-size:.82rem;line-height:1.55}.gameto .gm-note strong{color:var(--gold)}.gameto .gm-table-wrap{overflow-x:auto;border:1px solid #263e70;border-radius:13px}.gameto table{width:100%;border-collapse:collapse;font-size:.81rem;min-width:680px}.gameto th{background:#17294e;color:#dce7ff;text-align:left;font-size:.75rem;padding:11px 10px}.gameto td{padding:10px;border-top:1px solid #23385f;color:#c2d0ef;vertical-align:top;line-height:1.5}.gameto tr:nth-child(even) td{background:#0c1b36}.gameto .gm-quiz-q{font-size:1.12rem;font-weight:800;line-height:1.5;margin:17px 0}.gameto .gm-answers{display:grid;grid-template-columns:1fr 1fr;gap:9px}.gameto .gm-answer{text-align:left;display:flex;gap:10px;align-items:flex-start;line-height:1.45}.gameto .gm-letter{display:grid;place-items:center;min-width:27px;height:27px;border-radius:8px;background:#1a2d5c;font-weight:800}.gameto .gm-answer.good{border-color:#3ed9a5;background:#10372f}.gameto .gm-answer.bad{border-color:#ff7096;background:#3a1830}.gameto .gm-feedback{color:#c3d2f4;min-height:40px;margin:12px 0;font-size:.86rem}.gameto .gm-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;color:#9db2e1;font-size:.8rem}.gameto .gm-result{text-align:center;padding:25px}.gameto .gm-result .score{font-size:3rem;font-weight:900;color:#91b8ff}.gameto .gm-stat-big{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.gameto .gm-stat-big article{background:#09152d;border:1px solid #20386f;border-radius:12px;padding:12px}.gameto .gm-stat-big span{display:block;color:#9eb4e4;font-size:.7rem}.gameto .gm-stat-big strong{display:block;font-size:1.2rem;margin-top:4px}.gameto .gm-small{font-size:.75rem;color:#9eb3dc}.gameto .gm-calculator{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.gameto .gm-calculator label{display:flex;flex-direction:column;gap:6px;color:#aebfe3;font-size:.77rem}.gameto .gm-calculator select{width:100%}.gameto .gm-warning{padding:10px 12px;border-left:3px solid #ffbd70;background:#241d2b;border-radius:0 10px 10px 0;color:#ffe7c7;font-size:.8rem;line-height:1.5;margin-top:10px}@media(max-width:850px){.gameto .gm-layout{grid-template-columns:1fr}.gameto .gm-scene{min-height:240px}.gameto .gm-stats{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gameto{border-radius:16px;padding:12px}.gameto .gm-head{display:block}.gameto .gm-chip{display:inline-block;margin-top:8px}.gameto .gm-grid,.gameto .gm-answers,.gameto .gm-calculator{grid-template-columns:1fr}.gameto .gm-stat-big{grid-template-columns:1fr 1fr}.gameto .gm-stats{grid-template-columns:1fr 1fr}.gameto .gm-controls{align-items:stretch}.gameto .gm-controls button{flex:1}.gameto .gm-tabs{position:sticky;top:0;z-index:5}.gameto .gm-stagegrid{grid-template-columns:1fr 1fr}}@media(prefers-reduced-motion:no-preference){.gameto .gm-chr{transform-box:fill-box;transform-origin:center;animation:gm-enter .42s ease-out both}.gameto .gm-move-left{animation:gm-left .7s ease-out both}.gameto .gm-move-right{animation:gm-right .7s ease-out both}@keyframes gm-enter{from{opacity:.2;scale:.8}to{opacity:1;scale:1}}@keyframes gm-left{from{translate:25px 0;opacity:.4}to{translate:0 0;opacity:1}}@keyframes gm-right{from{translate:-25px 0;opacity:.4}to{translate:0 0;opacity:1}}}@media(prefers-reduced-motion:reduce){.gameto *{animation:none!important;transition:none!important}}';
 export function abrirLabGametogenesis({app,volver}){
- let tab='vista',mode='meiosis',mi=0,orientation=0,track={esperma:0,ovo:0},n2=4,calc='g1',qi=0,score=0,answered=false,quizPool=[],timer=null,playing=false;
+ let tab='vista',mode='meiosis',mi=0,orientation=0,track={esperma:0,ovo:0},n2=4,calc='g1',qi=0,score=0,answered=false,quizType='general',quizPool=[],timer=null,playing=false;
  if(!document.getElementById('gm-lab-css')){const st=document.createElement('style');st.id='gm-lab-css';st.textContent=CSS;document.head.appendChild(st);}
  const stop=()=>{if(timer){clearInterval(timer);timer=null;}playing=false;};
  function statsFor(id,N){
@@ -185,10 +528,11 @@ export function abrirLabGametogenesis({app,volver}){
  function shuffle(a){const x=a.slice();for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]];}return x;}
  function renderQuiz(){
   const mount=app.querySelector('#gm-view');
-  if(qi>=quizPool.length){const pct=Math.round(score/quizPool.length*100);mount.innerHTML='<section class="gm-card gm-result"><div class="gm-kicker">DESAFÍO COMPLETADO</div><div class="score">'+score+' / '+quizPool.length+'</div><h2>'+pct+'% de respuestas correctas</h2><p>'+(pct>=85?'Muy buen dominio de meiosis y gametogénesis.':pct>=65?'Buen trabajo. Repasá las explicaciones de los errores.':'Volvé a recorrer los modelos y probá otra ronda.')+'</p><button class="gm-primary" id="gm-retry">Reintentar</button> <button id="gm-qhome">Volver a LAB</button></section>';mount.querySelector('#gm-retry').onclick=()=>{qi=0;score=0;answered=false;quizPool=shuffle(PREGUNTAS);renderQuiz();};mount.querySelector('#gm-qhome').onclick=volver;return;}
+  if(qi>=quizPool.length){const pct=Math.round(score/quizPool.length*100);mount.innerHTML='<section class="gm-card gm-result"><div class="gm-kicker">DESAFÍO COMPLETADO</div><div class="score">'+score+' / '+quizPool.length+'</div><h2>'+pct+'% de respuestas correctas</h2><p>'+(pct>=85?'Muy buen dominio de meiosis y gametogénesis.':pct>=65?'Buen trabajo. Repasá las explicaciones de los errores.':'Volvé a recorrer los modelos y probá otra ronda.')+'</p><button class="gm-primary" id="gm-retry">Reintentar</button> <button id="gm-qhome">Volver a LAB</button></section>';mount.querySelector('#gm-retry').onclick=()=>{qi=0;score=0;answered=false;quizPool=shuffle(quizType==='comparaciones'?COMPARACIONES_ADN:PREGUNTAS);renderQuiz();};mount.querySelector('#gm-qhome').onclick=volver;return;}
   const q=quizPool[qi];
-  mount.innerHTML='<section class="gm-card"><div class="gm-head"><div><div class="gm-kicker">AUTOEVALUACIÓN · GAMETOGÉNESIS</div><h2>Comprobá lo que entendiste</h2><p>Respondé y revisá la explicación de cada pregunta.</p></div><span class="gm-chip">PREGUNTA '+(qi+1)+' / '+quizPool.length+'</span></div><div class="gm-progress"><span style="width:'+((qi+(answered?1:0))/quizPool.length*100)+'%"></span></div><div class="gm-quiz-q">'+esc(q.q)+'</div><div class="gm-answers">'+q.o.map((x,i)=>'<button class="gm-answer" data-answer="'+i+'" '+(answered?'disabled':'')+'><span class="gm-letter">'+('ABCD'[i])+'</span><span>'+esc(x)+'</span></button>').join('')+'</div><p class="gm-feedback" id="gm-feedback">'+(answered?esc(q.e):'')+'</p><div class="gm-foot"><span>'+(answered?'Puntaje: '+score+' / '+(qi+1):'Respondé para ver tu puntaje parcial')+'</span><button class="gm-primary" id="gm-qnext" '+(!answered?'disabled':'')+'>'+(qi===quizPool.length-1?'Ver resultado':'Siguiente pregunta →')+'</button></div></section>';
-  mount.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>{if(answered)return;answered=true;const pick=Number(b.dataset.answer),ok=pick===q.a;if(ok)score++;mount.querySelectorAll('[data-answer]').forEach(x=>{x.disabled=true;if(Number(x.dataset.answer)===q.a)x.classList.add('good');});if(!ok)b.classList.add('bad');mount.querySelector('#gm-feedback').textContent=(ok?'¡Correcto! ':'No exactamente. ')+q.e;mount.querySelector('#gm-qnext').disabled=false;});
+  mount.innerHTML='<section class="gm-card"><div class="gm-modebar"><button data-quiz-set="general" class="gm-mode '+(quizType==='general'?'active':'')+'">Repaso general · '+PREGUNTAS.length+'</button><button data-quiz-set="comparaciones" class="gm-mode '+(quizType==='comparaciones'?'active':'')+'">Comparar ADN y cromosomas · '+COMPARACIONES_ADN.length+'</button></div><div class="gm-note"><strong>Regla:</strong> compará ADN (c), ploidía (n) y número de cromosomas por separado. Salvo que la consigna diga lo contrario, compará cada célula individualmente, no sumes células distintas.</div><div class="gm-head"><div><div class="gm-kicker">AUTOEVALUACIÓN · GAMETOGÉNESIS</div><h2>Comprobá lo que entendiste</h2><p>Respondé y revisá la explicación de cada pregunta.</p></div><span class="gm-chip">PREGUNTA '+(qi+1)+' / '+quizPool.length+'</span></div><div class="gm-progress"><span style="width:'+((qi+(answered?1:0))/quizPool.length*100)+'%"></span></div><div class="gm-quiz-q">'+esc(q.q)+'</div><div class="gm-answers">'+q.o.map((x,i)=>'<button class="gm-answer" data-answer="'+i+'" '+(answered?'disabled':'')+'><span class="gm-letter">'+('ABCD'[i])+'</span><span>'+esc(x)+'</span></button>').join('')+'</div><p class="gm-feedback" id="gm-feedback">'+(answered?esc(q.e):'')+'</p><div class="gm-foot"><span>'+(answered?'Puntaje: '+score+' / '+(qi+1):'Respondé para ver tu puntaje parcial')+'</span><button class="gm-primary" id="gm-qnext" '+(!answered?'disabled':'')+'>'+(qi===quizPool.length-1?'Ver resultado':'Siguiente pregunta →')+'</button></div></section>';
+  mount.querySelectorAll('[data-quiz-set]').forEach(b=>b.onclick=()=>{const next=b.dataset.quizSet;if(next===quizType)return;quizType=next;qi=0;score=0;answered=false;quizPool=shuffle(quizType==='comparaciones'?COMPARACIONES_ADN:PREGUNTAS);renderQuiz();});
+   mount.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>{if(answered)return;answered=true;const pick=Number(b.dataset.answer),ok=pick===q.a;if(ok)score++;mount.querySelectorAll('[data-answer]').forEach(x=>{x.disabled=true;if(Number(x.dataset.answer)===q.a)x.classList.add('good');});if(!ok)b.classList.add('bad');mount.querySelector('#gm-feedback').textContent=(ok?'¡Correcto! ':'No exactamente. ')+q.e;mount.querySelector('#gm-qnext').disabled=false;});
   mount.querySelector('#gm-qnext').onclick=()=>{if(!answered)return;qi++;answered=false;renderQuiz();};
  }
  function renderViewInto(main){
@@ -205,7 +549,7 @@ export function abrirLabGametogenesis({app,volver}){
   if(tab==='vista')renderViewInto(main);
   else if(tab==='explicacion'){main.innerHTML='<div id="gm-view"></div>';renderExplain();}
   else if(tab==='comparador'){main.innerHTML='<div id="gm-view"></div>';renderCompare();}
-  else{main.innerHTML='<div id="gm-view"></div>';qi=0;score=0;answered=false;quizPool=shuffle(PREGUNTAS);renderQuiz();}
+  else{main.innerHTML='<div id="gm-view"></div>';qi=0;score=0;answered=false;quizType='general';quizPool=shuffle(PREGUNTAS);renderQuiz();}
  }
  render();
 }
