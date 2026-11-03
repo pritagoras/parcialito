@@ -32,9 +32,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Popper distingue la pregunta psicológica por el origen o génesis de una idea de la pregunta lógica por su validez y contrastación. Que una hipótesis surja de una intuición u observación no constituye por sí mismo su justificación lógica.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «La psicología estudia las reglas deductivas de validación, mientras que la lógica analisa los procesos mentales del investigador.» es incorrecta porque el punto central es: Popper distingue la pregunta psicológica por el origen o génesis de una idea de la pregunta lógica por su validez y contrastación. Que una hipótesis surja de una intuición u observación no constituye por sí mismo su justificación lógica.",
-        "C": "La alternativa «La psicología justifica inductivamente las teorías, mientras que la lógica se encarga de verificar concluyentemente los enunciados.» es incorrecta porque el punto central es: Popper distingue la pregunta psicológica por el origen o génesis de una idea de la pregunta lógica por su validez y contrastación. Que una hipótesis surja de una intuición u observación no constituye por sí mismo su justificación lógica.",
-        "D": "La alternativa «La psicología analiza la estructura formal del Modus Tollens, mientras que la lógica investiga la intuición empírica del científico.» es incorrecta porque el punto central es: Popper distingue la pregunta psicológica por el origen o génesis de una idea de la pregunta lógica por su validez y contrastación. Que una hipótesis surja de una intuición u observación no constituye por sí mismo su justificación lógica."
+        "A": "Desplaza la cuestión desde la evaluación lógica y pública de enunciados hacia el origen subjetivo de una idea. Popper distingue la génesis psicológica de una hipótesis de las razones lógicas para aceptarla o rechazarla.",
+        "C": "Convierte la resistencia a determinadas pruebas en una verificación final. Popper habla de corroboración provisional: ninguna serie finita de casos favorables demuestra deductivamente una ley universal.",
+        "D": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos."
       },
       "expansionEstudio": [
         {
@@ -75,9 +75,9 @@
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Una información empírica finita solo da cuenta de los casos observados. Extender esa regularidad a todos los casos del dominio implica un salto que no posee justificación lógica válida, pues siempre existe el riesgo de que aparezca un caso contrario.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Porque los enunciados singulares carecen de términos universales en su descripción lingüística.» es incorrecta porque el punto central es: Una información empírica finita solo da cuenta de los casos observados. Extender esa regularidad a todos los casos del dominio implica un salto que no posee justificación lógica válida, pues siempre existe el riesgo de que aparezca un caso contrario.",
-        "B": "La alternativa «Porque las observaciones empíricas están siempre distorsionadas por ilusiones ópticas o sensoriales.» es incorrecta porque el punto central es: Una información empírica finita solo da cuenta de los casos observados. Extender esa regularidad a todos los casos del dominio implica un salto que no posee justificación lógica válida, pues siempre existe el riesgo de que aparezca un caso contrario.",
-        "D": "La alternativa «Porque la inducción requiere de una hipótesis falsadora previa para poder validar el salto hacia el enunciado universal.» es incorrecta porque el punto central es: Una información empírica finita solo da cuenta de los casos observados. Extender esa regularidad a todos los casos del dominio implica un salto que no posee justificación lógica válida, pues siempre existe el riesgo de que aparezca un caso contrario."
+        "A": "Esta opción propone «Porque los enunciados singulares carecen de términos universales en su descripción lingüística.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "B": "Esta opción propone «Porque las observaciones empíricas están siempre distorsionadas por ilusiones ópticas o sensoriales.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional."
       },
       "expansionEstudio": [
         {
@@ -118,9 +118,9 @@
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Justificar el principio de inducción basándose en experiencias pasadas implica apelar a un razonamiento inductivo para validar la inducción misma, lo que cae en un círculo vicioso.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Porque desemboca en una contradicción de la lógica deductiva estándar.» es incorrecta porque el punto central es: Justificar el principio de inducción basándose en experiencias pasadas implica apelar a un razonamiento inductivo para validar la inducción misma, lo que cae en un círculo vicioso.",
-        "B": "La alternativa «Porque requiere asumir un juicio sintético a priori irrefutable.» es incorrecta porque el punto central es: Justificar el principio de inducción basándose en experiencias pasadas implica apelar a un razonamiento inductivo para validar la inducción misma, lo que cae en un círculo vicioso.",
-        "D": "La alternativa «Porque transforma de manera inevitable una afirmación empírica en una tautología.» es incorrecta porque el punto central es: Justificar el principio de inducción basándose en experiencias pasadas implica apelar a un razonamiento inductivo para validar la inducción misma, lo que cae en un círculo vicioso."
+        "A": "Esta opción propone «Porque desemboca en una contradicción de la lógica deductiva estándar.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "B": "Trata el enunciado como un fundamento incuestionable. La aceptación metodológica de un enunciado básico no es dogmática: debe estar abierta a controles, crítica y revisión intersubjetiva.",
+        "D": "Al abarcar cualquier resultado posible, la proposición no excluye nada que pudiera contar en su contra. Por eso carece del riesgo empírico que requiere la falsabilidad."
       },
       "expansionEstudio": [
         {
@@ -161,9 +161,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Si el principio de inducción se pretende justificar mediante otro de orden superior, este último requerirá a su vez una nueva norma de justificación, conduciendo a una regresión infinita de principios.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «A un dogmatismo psicologista insalvable.» es incorrecta porque el punto central es: Si el principio de inducción se pretende justificar mediante otro de orden superior, este último requerirá a su vez una nueva norma de justificación, conduciendo a una regresión infinita de principios.",
-        "C": "La alternativa «A la pérdida de falsabilidad del sistema.» es incorrecta porque el punto central es: Si el principio de inducción se pretende justificar mediante otro de orden superior, este último requerirá a su vez una nueva norma de justificación, conduciendo a una regresión infinita de principios.",
-        "D": "La alternativa «A la transformación del sistema en un enunciado analítico.» es incorrecta porque el punto central es: Si el principio de inducción se pretende justificar mediante otro de orden superior, este último requerirá a su vez una nueva norma de justificación, conduciendo a una regresión infinita de principios."
+        "A": "Esta opción propone «A un dogmatismo psicologista insalvable.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "C": "Esta opción propone «A la pérdida de falsabilidad del sistema.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Esta opción propone «A la transformación del sistema en un enunciado analítico.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
       },
       "expansionEstudio": [
         {
@@ -204,9 +204,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Popper señala que apelar al apriorismo kantiano no ofrece una fundamentación satisfactoria para justificar lógicamente enunciados sintéticos universales en el ámbito empírico.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Considera que el principio de causalidad es una tautología analítica sin contenido sintético.» es incorrecta porque el punto central es: Popper señala que apelar al apriorismo kantiano no ofrece una fundamentación satisfactoria para justificar lógicamente enunciados sintéticos universales en el ámbito empírico.",
-        "C": "La alternativa «Afirma que la causalidad kantiana depende de la corroboración provisional de enunciados singulares.» es incorrecta porque el punto central es: Popper señala que apelar al apriorismo kantiano no ofrece una fundamentación satisfactoria para justificar lógicamente enunciados sintéticos universales en el ámbito empírico.",
-        "D": "La alternativa «Argumenta que la postura kantiana reduce los enunciados científicos a simples decisiones de un jurado.» es incorrecta porque el punto central es: Popper señala que apelar al apriorismo kantiano no ofrece una fundamentación satisfactoria para justificar lógicamente enunciados sintéticos universales en el ámbito empírico."
+        "A": "Al abarcar cualquier resultado posible, la proposición no excluye nada que pudiera contar en su contra. Por eso carece del riesgo empírico que requiere la falsabilidad.",
+        "C": "Esta opción propone «Afirma que la causalidad kantiana depende de la corroboración provisional de enunciados singulares.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Interpreta la aceptación metodológica como una decisión arbitraria o como verdad por votación. El acuerdo no hace verdadero al enunciado: permite aceptarlo provisionalmente bajo procedimientos públicos y revisables."
       },
       "expansionEstudio": [
         {
@@ -247,9 +247,9 @@
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Para asignar grados de probabilidad mediante inducción se necesita una regla que valide esa asignación; si esa regla depende nuevamente de una inferencia probable, reaparece la regresión infinita o la necesidad de un principio a priori.",
       "refutacionIncorrectas": {
-        "B": "La alternativa «Porque la probabilidad exige una verificación definitiva que la ciencia empírica no puede alcanzar.» es incorrecta porque el punto central es: Para asignar grados de probabilidad mediante inducción se necesita una regla que valide esa asignación; si esa regla depende nuevamente de una inferencia probable, reaparece la regresión infinita o la necesidad de un principio a priori.",
-        "C": "La alternativa «Porque la probabilidad transforma los enunciados universales en afirmaciones no falsables de bajo nivel.» es incorrecta porque el punto central es: Para asignar grados de probabilidad mediante inducción se necesita una regla que valide esa asignación; si esa regla depende nuevamente de una inferencia probable, reaparece la regresión infinita o la necesidad de un principio a priori.",
-        "D": "La alternativa «Porque la asignación probabilística impide deducir consecuencias singulares mediante el Modus Tollens.» es incorrecta porque el punto central es: Para asignar grados de probabilidad mediante inducción se necesita una regla que valide esa asignación; si esa regla depende nuevamente de una inferencia probable, reaparece la regresión infinita o la necesidad de un principio a priori."
+        "B": "Convierte la resistencia a determinadas pruebas en una verificación final. Popper habla de corroboración provisional: ninguna serie finita de casos favorables demuestra deductivamente una ley universal.",
+        "C": "Esta opción propone «Porque la probabilidad transforma los enunciados universales en afirmaciones no falsables de bajo nivel.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Invierte o reemplaza la forma deductiva pertinente. El modus tollens opera desde una consecuencia esperada y su negación (T → P; ¬P) para inferir que la hipótesis queda contradicha; no demuestra la teoría cuando P se cumple."
       },
       "expansionEstudio": [
         {
@@ -290,9 +290,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "La comparación lógica interna contrasta las conclusiones derivadas del sistema entre sí con el propósito de examinar su coherencia interna y evitar contradicciones.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «En la confrontación directa de la teoría con las percepciones inmediatas del científico.» es incorrecta porque el punto central es: La comparación lógica interna contrasta las conclusiones derivadas del sistema entre sí con el propósito de examinar su coherencia interna y evitar contradicciones.",
-        "C": "La alternativa «En evaluar si la nueva teoría supone un adelanto respecto de otras teorías competidoras.» es incorrecta porque el punto central es: La comparación lógica interna contrasta las conclusiones derivadas del sistema entre sí con el propósito de examinar su coherencia interna y evitar contradicciones.",
-        "D": "La alternativa «En analizar la forma de la teoría para cerciorarse de que no sea puramente tautológica.» es incorrecta porque el punto central es: La comparación lógica interna contrasta las conclusiones derivadas del sistema entre sí con el propósito de examinar su coherencia interna y evitar contradicciones."
+        "A": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos.",
+        "C": "Confunde el examen de consistencia entre las consecuencias de un sistema con otro procedimiento de contrastación. La comparación interna busca detectar contradicciones y examinar la coherencia lógica, no comparar percepciones o teorías rivales.",
+        "D": "Confunde el examen de consistencia entre las consecuencias de un sistema con otro procedimiento de contrastación. La comparación interna busca detectar contradicciones y examinar la coherencia lógica, no comparar percepciones o teorías rivales."
       },
       "expansionEstudio": [
         {
@@ -333,9 +333,9 @@
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "El Modus Tollens es la regla deductiva formal que permite concluir la falsedad de la premisa teórica general (no-P) a partir de la negación o incompatibilidad de una de sus consecuencias observacionales (no-Q).",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Demostrar deductivamente la verdad absoluta de una hipótesis cuando la predicción se cumple.» es incorrecta porque el punto central es: El Modus Tollens es la regla deductiva formal que permite concluir la falsedad de la premisa teórica general (no-P) a partir de la negación o incompatibilidad de una de sus consecuencias observacionales (no-Q).",
-        "B": "La alternativa «Garantizar la confirmación probabilística de una teoría mediante la acumulación de consecuencias verdaderas.» es incorrecta porque el punto central es: El Modus Tollens es la regla deductiva formal que permite concluir la falsedad de la premisa teórica general (no-P) a partir de la negación o incompatibilidad de una de sus consecuencias observacionales (no-Q).",
-        "D": "La alternativa «Proporcionar una regla inductiva que permita transformar enunciados básicos en leyes universales.» es incorrecta porque el punto central es: El Modus Tollens es la regla deductiva formal que permite concluir la falsedad de la premisa teórica general (no-P) a partir de la negación o incompatibilidad de una de sus consecuencias observacionales (no-Q)."
+        "A": "Convierte la resistencia a determinadas pruebas en una verificación final. Popper habla de corroboración provisional: ninguna serie finita de casos favorables demuestra deductivamente una ley universal.",
+        "B": "Esta opción propone «Garantizar la confirmación probabilística de una teoría mediante la acumulación de consecuencias verdaderas.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional."
       },
       "expansionEstudio": [
         {
@@ -376,9 +376,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Existe una asimetría formal: ningún número de verificaciones singulares permite derivar deductivamente la verdad de un enunciado universal, pero una sola consecuencia incompatible permite deducir su falsedad.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Un enunciado universal se confirma con un caso positivo, pero requiere infinitas observaciones para ser falsado.» es incorrecta porque el punto central es: Existe una asimetría formal: ningún número de verificaciones singulares permite derivar deductivamente la verdad de un enunciado universal, pero una sola consecuencia incompatible permite deducir su falsedad.",
-        "C": "La alternativa «Las hipótesis universales son siempre falsables, mientras que las hipótesis singulares son plenamente verificables de forma definitiva.» es incorrecta porque el punto central es: Existe una asimetría formal: ningún número de verificaciones singulares permite derivar deductivamente la verdad de un enunciado universal, pero una sola consecuencia incompatible permite deducir su falsedad.",
-        "D": "La alternativa «La falsación de una teoría depende de decisiones convencionales, mientras que su verificación depende puramente de la lógica pura.» es incorrecta porque el punto central es: Existe una asimetría formal: ningún número de verificaciones singulares permite derivar deductivamente la verdad de un enunciado universal, pero una sola consecuencia incompatible permite deducir su falsedad."
+        "A": "Esta opción propone «Un enunciado universal se confirma con un caso positivo, pero requiere infinitas observaciones para ser falsado.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "C": "Esta opción propone «Las hipótesis universales son siempre falsables, mientras que las hipótesis singulares son plenamente verificables de forma definitiva.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Interpreta la aceptación metodológica como una decisión arbitraria o como verdad por votación. El acuerdo no hace verdadero al enunciado: permite aceptarlo provisionalmente bajo procedimientos públicos y revisables."
       },
       "expansionEstudio": [
         {
@@ -419,9 +419,9 @@
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "La corroboración no es verificación ni prueba de verdad absoluta; simplemente señala que la hipótesis resistió los intentos de contrastación hasta la fecha, manteniéndose vigente de forma provisional.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Que se ha demostrado lógicamente su verdad definitiva mediante contrastaciones definitivas.» es incorrecta porque el punto central es: La corroboración no es verificación ni prueba de verdad absoluta; simplemente señala que la hipótesis resistió los intentos de contrastación hasta la fecha, manteniéndose vigente de forma provisional.",
-        "B": "La alternativa «Que ha aumentado sustancialmente su probabilidad inductiva gracias al número de casos observados.» es incorrecta porque el punto central es: La corroboración no es verificación ni prueba de verdad absoluta; simplemente señala que la hipótesis resistió los intentos de contrastación hasta la fecha, manteniéndose vigente de forma provisional.",
-        "D": "La alternativa «Que sus enunciados básicos han sido transformados en principios dogmáticos e irrefutables.» es incorrecta porque el punto central es: La corroboración no es verificación ni prueba de verdad absoluta; simplemente señala que la hipótesis resistió los intentos de contrastación hasta la fecha, manteniéndose vigente de forma provisional."
+        "A": "Convierte la resistencia a determinadas pruebas en una verificación final. Popper habla de corroboración provisional: ninguna serie finita de casos favorables demuestra deductivamente una ley universal.",
+        "B": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional.",
+        "D": "Trata el enunciado como un fundamento incuestionable. La aceptación metodológica de un enunciado básico no es dogmática: debe estar abierta a controles, crítica y revisión intersubjetiva."
       },
       "expansionEstudio": [
         {
@@ -462,9 +462,9 @@
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Exigir verificabilidad concluyente dejaría fuera de la ciencia natural a las mismísimas leyes universales, las cuales abarcan infinitos casos posibles y nunca pueden comprobarse totalmente mediante observaciones finitas.",
       "refutacionIncorrectas": {
-        "B": "La alternativa «Porque exige el uso exclusivo de razonamientos deductivos como el Modus Tollens.» es incorrecta porque el punto central es: Exigir verificabilidad concluyente dejaría fuera de la ciencia natural a las mismísimas leyes universales, las cuales abarcan infinitos casos posibles y nunca pueden comprobarse totalmente mediante observaciones finitas.",
-        "C": "La alternativa «Porque promueve la incorporación de enunciados metafísicos no susceptibles de observación.» es incorrecta porque el punto central es: Exigir verificabilidad concluyente dejaría fuera de la ciencia natural a las mismísimas leyes universales, las cuales abarcan infinitos casos posibles y nunca pueden comprobarse totalmente mediante observaciones finitas.",
-        "D": "La alternativa «Porque impide que los científicos acepten enunciados básicos mediante decisiones intersubjetivas.» es incorrecta porque el punto central es: Exigir verificabilidad concluyente dejaría fuera de la ciencia natural a las mismísimas leyes universales, las cuales abarcan infinitos casos posibles y nunca pueden comprobarse totalmente mediante observaciones finitas."
+        "B": "Invierte o reemplaza la forma deductiva pertinente. El modus tollens opera desde una consecuencia esperada y su negación (T → P; ¬P) para inferir que la hipótesis queda contradicha; no demuestra la teoría cuando P se cumple.",
+        "C": "Esta opción propone «Porque promueve la incorporación de enunciados metafísicos no susceptibles de observación.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Interpreta la aceptación metodológica como una decisión arbitraria o como verdad por votación. El acuerdo no hace verdadero al enunciado: permite aceptarlo provisionalmente bajo procedimientos públicos y revisables."
       },
       "expansionEstudio": [
         {
@@ -505,9 +505,9 @@
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Un enunciado es falsable cuando posee la propiedad lógica de ofrecer condiciones de fracaso empírico, es decir, cuando existe al menos un falsador potencial que podría contradecirlo.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Como aquel enunciado que ya ha sido puesto a prueba y resultó ser empíricamente falso.» es incorrecta porque el punto central es: Un enunciado es falsable cuando posee la propiedad lógica de ofrecer condiciones de fracaso empírico, es decir, cuando existe al menos un falsador potencial que podría contradecirlo.",
-        "B": "La alternativa «Como una proposición cuya verdad ha sido plenamente justificada mediante la experiencia intersubjetiva.» es incorrecta porque el punto central es: Un enunciado es falsable cuando posee la propiedad lógica de ofrecer condiciones de fracaso empírico, es decir, cuando existe al menos un falsador potencial que podría contradecirlo.",
-        "D": "La alternativa «Como una tautología que abarca todas las posibilidades lógicas de un fenómeno determinado.» es incorrecta porque el punto central es: Un enunciado es falsable cuando posee la propiedad lógica de ofrecer condiciones de fracaso empírico, es decir, cuando existe al menos un falsador potencial que podría contradecirlo."
+        "A": "Esta opción propone «Como aquel enunciado que ya ha sido puesto a prueba y resultó ser empíricamente falso.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "B": "Convierte la resistencia a determinadas pruebas en una verificación final. Popper habla de corroboración provisional: ninguna serie finita de casos favorables demuestra deductivamente una ley universal.",
+        "D": "Al abarcar cualquier resultado posible, la proposición no excluye nada que pudiera contar en su contra. Por eso carece del riesgo empírico que requiere la falsabilidad."
       },
       "expansionEstudio": [
         {
@@ -548,9 +548,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "La falsabilidad es la capacidad o condición estructural de una teoría para someterse a prueba; la falsación es el evento metodológico en el cual la teoría efectivamente choca con un enunciado básico aceptado y queda refutada.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «El falsable es un enunciado de bajo nivel y el falsado es una ley universal de alto nivel.» es incorrecta porque el punto central es: La falsabilidad es la capacidad o condición estructural de una teoría para someterse a prueba; la falsación es el evento metodológico en el cual la teoría efectivamente choca con un enunciado básico aceptado y queda refutada.",
-        "C": "La alternativa «El enunciado falsable carece de significación científica, mientras que el falsado forma parte del conocimiento verificado.» es incorrecta porque el punto central es: La falsabilidad es la capacidad o condición estructural de una teoría para someterse a prueba; la falsación es el evento metodológico en el cual la teoría efectivamente choca con un enunciado básico aceptado y queda refutada.",
-        "D": "La alternativa «La falsabilidad depende del psicologismo del investigador y la falsación de una regresión infinita de pruebas.» es incorrecta porque el punto central es: La falsabilidad es la capacidad o condición estructural de una teoría para someterse a prueba; la falsación es el evento metodológico en el cual la teoría efectivamente choca con un enunciado básico aceptado y queda refutada."
+        "A": "Esta opción propone «El falsable es un enunciado de bajo nivel y el falsado es una ley universal de alto nivel.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "C": "Esta opción propone «El enunciado falsable carece de significación científica, mientras que el falsado forma parte del conocimiento verificado.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Este planteo prolonga la cadena de justificaciones en lugar de resolverla: cada fundamento exigiría otro fundamento, generando una regresión infinita."
       },
       "expansionEstudio": [
         {
@@ -591,9 +591,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Un falsador potencial es un enunciado básico posible que describe un hecho singular que, de ser aceptado por la comunidad científica, entraría en contradicción directa con la teoría.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Un evento psicológico derivado de las sensaciones subjetivas del investigador.» es incorrecta porque el punto central es: Un falsador potencial es un enunciado básico posible que describe un hecho singular que, de ser aceptado por la comunidad científica, entraría en contradicción directa con la teoría.",
-        "C": "La alternativa «Una hipótesis de alto nivel que reemplaza provisionalmente a una teoría que ha sido refutada.» es incorrecta porque el punto central es: Un falsador potencial es un enunciado básico posible que describe un hecho singular que, de ser aceptado por la comunidad científica, entraría en contradicción directa con la teoría.",
-        "D": "La alternativa «Una generalización inductiva fundamentada en una cantidad finita pero grande de casos.» es incorrecta porque el punto central es: Un falsador potencial es un enunciado básico posible que describe un hecho singular que, de ser aceptado por la comunidad científica, entraría en contradicción directa con la teoría."
+        "A": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos.",
+        "C": "Esta opción propone «Una hipótesis de alto nivel que reemplaza provisionalmente a una teoría que ha sido refutada.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional."
       },
       "expansionEstudio": [
         {
@@ -634,9 +634,9 @@
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Los enunciados tautológicos abarcan todas las posibilidades empíricas imaginables, por lo cual no prohiben ningún acontecimiento ni admiten un falsador potencial que pueda ponerlos a prueba.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Porque expresa una hipótesis de nivel singular que no posee suficiente grado de corroboración.» es incorrecta porque el punto central es: Los enunciados tautológicos abarcan todas las posibilidades empíricas imaginables, por lo cual no prohiben ningún acontecimiento ni admiten un falsador potencial que pueda ponerlos a prueba.",
-        "B": "La alternativa «Porque carece de una forma lógica deductiva que permita extraer inferencias inductivas.» es incorrecta porque el punto central es: Los enunciados tautológicos abarcan todas las posibilidades empíricas imaginables, por lo cual no prohiben ningún acontecimiento ni admiten un falsador potencial que pueda ponerlos a prueba.",
-        "D": "La alternativa «Porque no ha sido sometido a la decisión del jurado en una contrastación intersubjetiva.» es incorrecta porque el punto central es: Los enunciados tautológicos abarcan todas las posibilidades empíricas imaginables, por lo cual no prohiben ningún acontecimiento ni admiten un falsador potencial que pueda ponerlos a prueba."
+        "A": "Esta opción propone «Porque expresa una hipótesis de nivel singular que no posee suficiente grado de corroboración.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "B": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional.",
+        "D": "Interpreta la aceptación metodológica como una decisión arbitraria o como verdad por votación. El acuerdo no hace verdadero al enunciado: permite aceptarlo provisionalmente bajo procedimientos públicos y revisables."
       },
       "expansionEstudio": [
         {
@@ -677,9 +677,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "El problema metodológico señalados para estos sistemas no es que se haya probado su falsedad factual, sino su falta de falsabilidad: sus formulaciones suelen reinterpretar cualquier dato para evitar chocar con la experiencia.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Que se ha demostrado científicamente que todas sus afirmaciones singulares son totalmente falsas.» es incorrecta porque el punto central es: El problema metodológico señalados para estos sistemas no es que se haya probado su falsedad factual, sino su falta de falsabilidad: sus formulaciones suelen reinterpretar cualquier dato para evitar chocar con la experiencia.",
-        "C": "La alternativa «Que utilizan el Modus Tollens para validar sus hipótesis mediante razonamientos circulares.» es incorrecta porque el punto central es: El problema metodológico señalados para estos sistemas no es que se haya probado su falsedad factual, sino su falta de falsabilidad: sus formulaciones suelen reinterpretar cualquier dato para evitar chocar con la experiencia.",
-        "D": "La alternativa «Que se estructuran sobre la base de una cantidad insuficiente de casos observados en la experiencia.» es incorrecta porque el punto central es: El problema metodológico señalados para estos sistemas no es que se haya probado su falsedad factual, sino su falta de falsabilidad: sus formulaciones suelen reinterpretar cualquier dato para evitar chocar con la experiencia."
+        "A": "Esta opción propone «Que se ha demostrado científicamente que todas sus afirmaciones singulares son totalmente falsas.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "C": "Invierte o reemplaza la forma deductiva pertinente. El modus tollens opera desde una consecuencia esperada y su negación (T → P; ¬P) para inferir que la hipótesis queda contradicha; no demuestra la teoría cuando P se cumple.",
+        "D": "Esta opción propone «Que se estructuran sobre la base de una cantidad insuficiente de casos observados en la experiencia.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
       },
       "expansionEstudio": [
         {
@@ -720,9 +720,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Para que una teoría sea falsada no basta un hecho aislado o dudoso; se requiere corroborar previamente una hipótesis falsadora de bajo nivel que describa de manera reproducible el efecto que contradice a la teoría.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Sustituir el Modus Tollens por una inferencia probable de mayor alcance explicativo.» es incorrecta porque el punto central es: Para que una teoría sea falsada no basta un hecho aislado o dudoso; se requiere corroborar previamente una hipótesis falsadora de bajo nivel que describa de manera reproducible el efecto que contradice a la teoría.",
-        "C": "La alternativa «Demostrar que los enunciados básicos universales son tautologías no revisables.» es incorrecta porque el punto central es: Para que una teoría sea falsada no basta un hecho aislado o dudoso; se requiere corroborar previamente una hipótesis falsadora de bajo nivel que describa de manera reproducible el efecto que contradice a la teoría.",
-        "D": "La alternativa «Resolver el Trilema de Fries mediante el recurso de las percepciones sensoriales puras.» es incorrecta porque el punto central es: Para que una teoría sea falsada no basta un hecho aislado o dudoso; se requiere corroborar previamente una hipótesis falsadora de bajo nivel que describa de manera reproducible el efecto que contradice a la teoría."
+        "A": "Invierte o reemplaza la forma deductiva pertinente. El modus tollens opera desde una consecuencia esperada y su negación (T → P; ¬P) para inferir que la hipótesis queda contradicha; no demuestra la teoría cuando P se cumple.",
+        "C": "Al abarcar cualquier resultado posible, la proposición no excluye nada que pudiera contar en su contra. Por eso carece del riesgo empírico que requiere la falsabilidad.",
+        "D": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos."
       },
       "expansionEstudio": [
         {
@@ -763,9 +763,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Mientras que las leyes universales cuantifican de forma irrestricta sobre todos los casos del dominio, enunciados existenciales como \"existe al menos un cuervo blanco\" tienen un nivel inferior al restringir su cuantificación a parte del dominio.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Todos los animales vertebrados poseen sistema nervioso.» es incorrecta porque el punto central es: Mientras que las leyes universales cuantifican de forma irrestricta sobre todos los casos del dominio, enunciados existenciales como \"existe al menos un cuervo blanco\" tienen un nivel inferior al restringir su cuantificación a parte del dominio.",
-        "C": "La alternativa «Ningún cuerpo con masa puede superar la velocidad de la luz.» es incorrecta porque el punto central es: Mientras que las leyes universales cuantifican de forma irrestricta sobre todos los casos del dominio, enunciados existenciales como \"existe al menos un cuervo blanco\" tienen un nivel inferior al restringir su cuantificación a parte del dominio.",
-        "D": "La alternativa «Si un objeto se sumerge en agua, la masa de su volumen desplazado se conserva en todos los casos.» es incorrecta porque el punto central es: Mientras que las leyes universales cuantifican de forma irrestricta sobre todos los casos del dominio, enunciados existenciales como \"existe al menos un cuervo blanco\" tienen un nivel inferior al restringir su cuantificación a parte del dominio."
+        "A": "Esta opción propone «Todos los animales vertebrados poseen sistema nervioso.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "C": "Esta opción propone «Ningún cuerpo con masa puede superar la velocidad de la luz.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Esta opción propone «Si un objeto se sumerge en agua, la masa de su volumen desplazado se conserva en todos los casos.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
       },
       "expansionEstudio": [
         {
@@ -806,9 +806,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Un enunciado básico no es la vivencia del observador sino una afirmación lingüística singular acerca de un hecho determinado, apta para actuar como premisa en una contrastación.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «La descripción subjetiva de un juicio de percepción o sensación empírica inmediata.» es incorrecta porque el punto central es: Un enunciado básico no es la vivencia del observador sino una afirmación lingüística singular acerca de un hecho determinado, apta para actuar como premisa en una contrastación.",
-        "C": "La alternativa «Un axioma teórico irrefutable que sirve de pilar para construir leyes universales.» es incorrecta porque el punto central es: Un enunciado básico no es la vivencia del observador sino una afirmación lingüística singular acerca de un hecho determinado, apta para actuar como premisa en una contrastación.",
-        "D": "La alternativa «Una inferencia probable extraída a partir de una muestra estadísticamente representativa.» es incorrecta porque el punto central es: Un enunciado básico no es la vivencia del observador sino una afirmación lingüística singular acerca de un hecho determinado, apta para actuar como premisa en una contrastación."
+        "A": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos.",
+        "C": "Trata el enunciado como un fundamento incuestionable. La aceptación metodológica de un enunciado básico no es dogmática: debe estar abierta a controles, crítica y revisión intersubjetiva.",
+        "D": "Esta opción propone «Una inferencia probable extraída a partir de una muestra estadísticamente representativa.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
       },
       "expansionEstudio": [
         {
@@ -849,9 +849,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Fries planteó que la justificación de los enunciados se enfrenta a tres alternativas problemáticas: aceptarlos sin justificación (dogmatismo), justificarlos mediante otros enunciados de manera interminable (regresión infinita) o basarlos en la experiencia perceptiva (psicologismo).",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Inducción, deducción y corroboración.» es incorrecta porque el punto central es: Fries planteó que la justificación de los enunciados se enfrenta a tres alternativas problemáticas: aceptarlos sin justificación (dogmatismo), justificarlos mediante otros enunciados de manera interminable (regresión infinita) o basarlos en la experiencia perceptiva (psicologismo).",
-        "C": "La alternativa «Falsabilidad, verificación y demarcación.» es incorrecta porque el punto central es: Fries planteó que la justificación de los enunciados se enfrenta a tres alternativas problemáticas: aceptarlos sin justificación (dogmatismo), justificarlos mediante otros enunciados de manera interminable (regresión infinita) o basarlos en la experiencia perceptiva (psicologismo).",
-        "D": "La alternativa «Tautología, juicio sintético y convención.» es incorrecta porque el punto central es: Fries planteó que la justificación de los enunciados se enfrenta a tres alternativas problemáticas: aceptarlos sin justificación (dogmatismo), justificarlos mediante otros enunciados de manera interminable (regresión infinita) o basarlos en la experiencia perceptiva (psicologismo)."
+        "A": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional.",
+        "C": "Esta opción propone «Falsabilidad, verificación y demarcación.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Al abarcar cualquier resultado posible, la proposición no excluye nada que pudiera contar en su contra. Por eso carece del riesgo empírico que requiere la falsabilidad."
       },
       "expansionEstudio": [
         {
@@ -892,9 +892,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Tener una vivencia o percepción es un hecho psicológico individual. Un hecho de la conciencia no puede establecer una relación de justificación lógica con una proposición del lenguaje.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Porque las experiencias perceptivas son entes teóricos que no pueden contrastarse con leyes universales.» es incorrecta porque el punto central es: Tener una vivencia o percepción es un hecho psicológico individual. Un hecho de la conciencia no puede establecer una relación de justificación lógica con una proposición del lenguaje.",
-        "C": "La alternativa «Porque las percepciones subjetivas garantizan la verificación definitiva, impidiendo la falsabilidad.» es incorrecta porque el punto central es: Tener una vivencia o percepción es un hecho psicológico individual. Un hecho de la conciencia no puede establecer una relación de justificación lógica con una proposición del lenguaje.",
-        "D": "La alternativa «Porque el psicologismo obliga a recurrir al Modus Tollens para validar las sensaciones.» es incorrecta porque el punto central es: Tener una vivencia o percepción es un hecho psicológico individual. Un hecho de la conciencia no puede establecer una relación de justificación lógica con una proposición del lenguaje."
+        "A": "Desplaza la cuestión desde la evaluación lógica y pública de enunciados hacia el origen subjetivo de una idea. Popper distingue la génesis psicológica de una hipótesis de las razones lógicas para aceptarla o rechazarla.",
+        "C": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos.",
+        "D": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos."
       },
       "expansionEstudio": [
         {
@@ -935,9 +935,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Términos como \"vaso\" o \"blanco\" implican un comportamiento regular y conceptual que va más allá de la pura sensación momentánea, de modo que los enunciados jamás pueden reducirse enteramente a vivencias sensoriales.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «A que los enunciados científicos describen realidades metafísicas inalcanzables para la observación.» es incorrecta porque el punto central es: Términos como \"vaso\" o \"blanco\" implican un comportamiento regular y conceptual que va más allá de la pura sensación momentánea, de modo que los enunciados jamás pueden reducirse enteramente a vivencias sensoriales.",
-        "C": "La alternativa «A que la ciencia trasciende la lógica formal mediante el uso de la inducción probable.» es incorrecta porque el punto central es: Términos como \"vaso\" o \"blanco\" implican un comportamiento regular y conceptual que va más allá de la pura sensación momentánea, de modo que los enunciados jamás pueden reducirse enteramente a vivencias sensoriales.",
-        "D": "La alternativa «A que las leyes universales son independientes de las decisiones convencionales de la comunidad.» es incorrecta porque el punto central es: Términos como \"vaso\" o \"blanco\" implican un comportamiento regular y conceptual que va más allá de la pura sensación momentánea, de modo que los enunciados jamás pueden reducirse enteramente a vivencias sensoriales."
+        "A": "Esta opción propone «A que los enunciados científicos describen realidades metafísicas inalcanzables para la observación.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "C": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional.",
+        "D": "Interpreta la aceptación metodológica como una decisión arbitraria o como verdad por votación. El acuerdo no hace verdadero al enunciado: permite aceptarlo provisionalmente bajo procedimientos públicos y revisables."
       },
       "expansionEstudio": [
         {
@@ -978,9 +978,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Al no existir un fundamento empírico absoluto, la aceptación de los enunciados básicos descansa sobre decisiones o convenciones regladas que adopta de forma intersubjetiva la comunidad científica.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Mediante una demostración deductiva derivada de axiomas matemáticos inapelables.» es incorrecta porque el punto central es: Al no existir un fundamento empírico absoluto, la aceptación de los enunciados básicos descansa sobre decisiones o convenciones regladas que adopta de forma intersubjetiva la comunidad científica.",
-        "C": "La alternativa «Por medio de la confirmación acumulativa de impresiones sensoriales individuales.» es incorrecta porque el punto central es: Al no existir un fundamento empírico absoluto, la aceptación de los enunciados básicos descansa sobre decisiones o convenciones regladas que adopta de forma intersubjetiva la comunidad científica.",
-        "D": "La alternativa «Por la verificación concluyente de que el enunciado coincide perfectamente con la realidad.» es incorrecta porque el punto central es: Al no existir un fundamento empírico absoluto, la aceptación de los enunciados básicos descansa sobre decisiones o convenciones regladas que adopta de forma intersubjetiva la comunidad científica."
+        "A": "Esta opción propone «Mediante una demostración deductiva derivada de axiomas matemáticos inapelables.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "C": "Esta opción propone «Por medio de la confirmación acumulativa de impresiones sensoriales individuales.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Convierte la resistencia a determinadas pruebas en una verificación final. Popper habla de corroboración provisional: ninguna serie finita de casos favorables demuestra deductivamente una ley universal."
       },
       "expansionEstudio": [
         {
@@ -1021,9 +1021,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Se trata de una detención táctica para poder poner a prueba la teoría. No es un dogma absoluto porque si surgen dudas o se exige una nueva prueba, el enunciado básico aceptado puede someterse nuevamente a contrastación.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «En que el enunciado básico se convierte en un dogma definitivo inapelable.» es incorrecta porque el punto central es: Se trata de una detención táctica para poder poner a prueba la teoría. No es un dogma absoluto porque si surgen dudas o se exige una nueva prueba, el enunciado básico aceptado puede someterse nuevamente a contrastación.",
-        "C": "La alternativa «En que se asume que la percepción sensorial ha verificado la verdad de la premisa.» es incorrecta porque el punto central es: Se trata de una detención táctica para poder poner a prueba la teoría. No es un dogma absoluto porque si surgen dudas o se exige una nueva prueba, el enunciado básico aceptado puede someterse nuevamente a contrastación.",
-        "D": "La alternativa «En que ese enunciado no requiere someterse al criterio de falsabilidad.» es incorrecta porque el punto central es: Se trata de una detención táctica para poder poner a prueba la teoría. No es un dogma absoluto porque si surgen dudas o se exige una nueva prueba, el enunciado básico aceptado puede someterse nuevamente a contrastación."
+        "A": "Confunde el enunciado básico con una percepción privada o con un principio universal irrefutable. Se trata de una proposición singular contrastable, aceptada metodológicamente y sometida a controles públicos.",
+        "C": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos.",
+        "D": "Esta opción propone «En que ese enunciado no requiere someterse al criterio de falsabilidad.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
       },
       "expansionEstudio": [
         {
@@ -1064,9 +1064,9 @@
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "El veredicto del jurado representa la decisión reglada que da por establecido un hecho de manera convencional. Sobre ese veredicto aceptado, el juez aplica luego las relaciones lógicas y legales del sistema.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Con el código legal escrito que rige el juzgamiento de los hechos.» es incorrecta porque el punto central es: El veredicto del jurado representa la decisión reglada que da por establecido un hecho de manera convencional. Sobre ese veredicto aceptado, el juez aplica luego las relaciones lógicas y legales del sistema.",
-        "B": "La alternativa «Con la argumentación deductiva contenida en la sentencia redactada por el juez.» es incorrecta porque el punto central es: El veredicto del jurado representa la decisión reglada que da por establecido un hecho de manera convencional. Sobre ese veredicto aceptado, el juez aplica luego las relaciones lógicas y legales del sistema.",
-        "D": "La alternativa «Con la confesión espontánea y psicológica brindada por el acusado.» es incorrecta porque el punto central es: El veredicto del jurado representa la decisión reglada que da por establecido un hecho de manera convencional. Sobre ese veredicto aceptado, el juez aplica luego las relaciones lógicas y legales del sistema."
+        "A": "Esta opción propone «Con el código legal escrito que rige el juzgamiento de los hechos.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "B": "Esta opción propone «Con la argumentación deductiva contenida en la sentencia redactada por el juez.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Esta opción propone «Con la confesión espontánea y psicológica brindada por el acusado.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
       },
       "expansionEstudio": [
         {
@@ -1107,9 +1107,9 @@
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "La metáfora subraya que la ciencia no tiene un fundamento natural definitivo sobre la roca firme de la experiencia. Se hincan pilotes hasta hallar la firmeza suficiente para sostener la estructura, con la posibilidad constante de seguir hundiéndolos si hace falta.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Que el conocimiento científico carece por completo de rigor y validez metodológica.» es incorrecta porque el punto central es: La metáfora subraya que la ciencia no tiene un fundamento natural definitivo sobre la roca firme de la experiencia. Se hincan pilotes hasta hallar la firmeza suficiente para sostener la estructura, con la posibilidad constante de seguir hundiéndolos si hace falta.",
-        "B": "La alternativa «Que las teorías científicas descansan sobre impresiones psicológicas inestables.» es incorrecta porque el punto central es: La metáfora subraya que la ciencia no tiene un fundamento natural definitivo sobre la roca firme de la experiencia. Se hincan pilotes hasta hallar la firmeza suficiente para sostener la estructura, con la posibilidad constante de seguir hundiéndolos si hace falta.",
-        "D": "La alternativa «Que el método inductivo permite construir una base sólida a pesar de la inestabilidad de los datos.» es incorrecta porque el punto central es: La metáfora subraya que la ciencia no tiene un fundamento natural definitivo sobre la roca firme de la experiencia. Se hincan pilotes hasta hallar la firmeza suficiente para sostener la estructura, con la posibilidad constante de seguir hundiéndolos si hace falta."
+        "A": "Esta opción propone «Que el conocimiento científico carece por completo de rigor y validez metodológica.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "B": "Esta opción propone «Que las teorías científicas descansan sobre impresiones psicológicas inestables.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional."
       },
       "expansionEstudio": [
         {
@@ -1150,9 +1150,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Para Popper, la experiencia no es el origen lógico ni el fundamento de las teorías, sino la instancia negativa encargada de contrastar y eventualmente chocar con las consecuencias derivadas de las conjeturas.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Generar lógicamente hipótesis universales mediante el análisis cuantitativo de frecuencias.» es incorrecta porque el punto central es: Para Popper, la experiencia no es el origen lógico ni el fundamento de las teorías, sino la instancia negativa encargada de contrastar y eventualmente chocar con las consecuencias derivadas de las conjeturas.",
-        "C": "La alternativa «Confirmar paulatinamente el grado de probabilidad de que una conjetura sea verdadera.» es incorrecta porque el punto central es: Para Popper, la experiencia no es el origen lógico ni el fundamento de las teorías, sino la instancia negativa encargada de contrastar y eventualmente chocar con las consecuencias derivadas de las conjeturas.",
-        "D": "La alternativa «Justificar psicológicamente las certezas científicas alcanzadas por los investigadores.» es incorrecta porque el punto central es: Para Popper, la experiencia no es el origen lógico ni el fundamento de las teorías, sino la instancia negativa encargada de contrastar y eventualmente chocar con las consecuencias derivadas de las conjeturas."
+        "A": "Esta opción propone «Generar lógicamente hipótesis universales mediante el análisis cuantitativo de frecuencias.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "C": "Esta opción propone «Confirmar paulatinamente el grado de probabilidad de que una conjetura sea verdadera.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Esta opción propone «Justificar psicológicamente las certezas científicas alcanzadas por los investigadores.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
       },
       "expansionEstudio": [
         {
@@ -1193,9 +1193,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Mientras que el positivismo busca un grado de confirmación o probabilidad creciente mediante la acumulación de datos, para Popper una teoría que supera las pruebas permanece en un estado de corroboración provisional.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «El positivismo los considera verdaderos por definición; Popper sostiene que son hipótesis falsadas de bajo nivel.» es incorrecta porque el punto central es: Mientras que el positivismo busca un grado de confirmación o probabilidad creciente mediante la acumulación de datos, para Popper una teoría que supera las pruebas permanece en un estado de corroboración provisional.",
-        "C": "La alternativa «El positivismo rechaza el uso de enunciados básicos; Popper los fundamenta en la observación pura.» es incorrecta porque el punto central es: Mientras que el positivismo busca un grado de confirmación o probabilidad creciente mediante la acumulación de datos, para Popper una teoría que supera las pruebas permanece en un estado de corroboración provisional.",
-        "D": "La alternativa «El positivismo aplica el Modus Tollens para verificar; Popper usa la probabilidad inductiva para refutar.» es incorrecta porque el punto central es: Mientras que el positivismo busca un grado de confirmación o probabilidad creciente mediante la acumulación de datos, para Popper una teoría que supera las pruebas permanece en un estado de corroboración provisional."
+        "A": "Esta opción propone «El positivismo los considera verdaderos por definición; Popper sostiene que son hipótesis falsadas de bajo nivel.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "C": "Esta opción propone «El positivismo rechaza el uso de enunciados básicos; Popper los fundamenta en la observación pura.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional."
       },
       "expansionEstudio": [
         {
@@ -1236,9 +1236,9 @@
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Resistir contrastaciones severas constituye un éxito provisorio denominado corroboración. Afirmar que una teoría ha quedado demostrada como verdadera ignora la asimetría lógica de la refutación y la posibilidad de fallar en el futuro.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Que debió utilizar una hipótesis falsadora de nivel superior antes de realizar los experimentos.» es incorrecta porque el punto central es: Resistir contrastaciones severas constituye un éxito provisorio denominado corroboración. Afirmar que una teoría ha quedado demostrada como verdadera ignora la asimetría lógica de la refutación y la posibilidad de fallar en el futuro.",
-        "C": "La alternativa «Que diez experimentos bastan para refutar la teoría, pero no para elevar su probabilidad inductiva.» es incorrecta porque el punto central es: Resistir contrastaciones severas constituye un éxito provisorio denominado corroboración. Afirmar que una teoría ha quedado demostrada como verdadera ignora la asimetría lógica de la refutación y la posibilidad de fallar en el futuro.",
-        "D": "La alternativa «Que los experimentos solo tienen valor si se fundamentan en percepciones psicológicas indiscutibles.» es incorrecta porque el punto central es: Resistir contrastaciones severas constituye un éxito provisorio denominado corroboración. Afirmar que una teoría ha quedado demostrada como verdadera ignora la asimetría lógica de la refutación y la posibilidad de fallar en el futuro."
+        "A": "Invierte el nivel o la función de la hipótesis falsadora. Esta debe describir un resultado empírico específico incompatible con la teoría de mayor nivel y poder someterse a contrastación propia.",
+        "C": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional.",
+        "D": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos."
       },
       "expansionEstudio": [
         {
@@ -1279,9 +1279,9 @@
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Dado que las vivencias subjetivas no garantizan la verdad, la objetividad popperiana se basa en el carácter público, regulado e intersubjetivo del método científico y sus decisiones de aceptación o revisión.",
       "refutacionIncorrectas": {
-        "A": "La alternativa «Como la garantía absoluta proporcionada por la observación directa y libre de prejuicios.» es incorrecta porque el punto central es: Dado que las vivencias subjetivas no garantizan la verdad, la objetividad popperiana se basa en el carácter público, regulado e intersubjetivo del método científico y sus decisiones de aceptación o revisión.",
-        "B": "La alternativa «Como el resultado de elevar al máximo el grado de probabilidad de las inferencias inductivas.» es incorrecta porque el punto central es: Dado que las vivencias subjetivas no garantizan la verdad, la objetividad popperiana se basa en el carácter público, regulado e intersubjetivo del método científico y sus decisiones de aceptación o revisión.",
-        "D": "La alternativa «Como la eliminación total de dogmas metodológicos y la renuncia a la formulación de conjeturas.» es incorrecta porque el punto central es: Dado que las vivencias subjetivas no garantizan la verdad, la objetividad popperiana se basa en el carácter público, regulado e intersubjetivo del método científico y sus decisiones de aceptación o revisión."
+        "A": "Esta opción propone «Como la garantía absoluta proporcionada por la observación directa y libre de prejuicios.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "B": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional.",
+        "D": "Esta opción propone «Como la eliminación total de dogmas metodológicos y la renuncia a la formulación de conjeturas.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
       },
       "expansionEstudio": [
         {
@@ -1322,9 +1322,9 @@
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "",
       "refutacionIncorrectas": {
-        "B": "La alternativa «b» es incorrecta porque el punto central es: ",
-        "C": "La alternativa «c» es incorrecta porque el punto central es: ",
-        "D": "La alternativa «d» es incorrecta porque el punto central es: "
+        "B": "Esta opción propone «b», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "C": "Esta opción propone «c», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
+        "D": "Esta opción propone «d», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
       },
       "expansionEstudio": [
         {
