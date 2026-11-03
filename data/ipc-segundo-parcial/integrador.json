@@ -706,5 +706,79 @@
         }
       ]
     }
+  ],
+  "tarjetas": [
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué diferencia conceptual debe conservarse entre los tres autores?",
+      "dorso": "Kuhn analiza matrices disciplinares y cambios paradigmáticos; Foucault reconstruye prácticas, instituciones y relaciones de poder-saber; Bourdieu estudia disposiciones incorporadas y campos sociales. Su articulación no borra sus objetos específicos."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿En qué puede relacionarse ambos enfoques?",
+      "dorso": "Ambos permiten cuestionar una concepción de conocimiento desligada de prácticas y condiciones históricas, aunque analizan procesos diferentes."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿El habitus es una regla consciente que cada sujeto decide aplicar?",
+      "dorso": "No. Se refiere a disposiciones incorporadas que orientan la práctica, muchas veces sin formularse como reglas explícitas o decisiones deliberadas."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Cómo se relacionan habitus y campo?",
+      "dorso": "El habitus reúne disposiciones incorporadas; el campo es el espacio relacional en el que esas disposiciones se forman, operan y encuentran límites u oportunidades."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Por qué no conviene reducir el habitus a una opinión individual?",
+      "dorso": "Porque se forma socialmente mediante experiencias y aprendizajes duraderos, y orienta prácticas más allá de una decisión consciente aislada."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Cómo puede conectarse este caso con Bourdieu?",
+      "dorso": "Las prácticas escolares también contribuyen a formar disposiciones incorporadas y criterios de percepción, que pueden analizarse mediante habitus y campo."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿En qué se diferencian esos mecanismos?",
+      "dorso": "En Kuhn se trata de compromisos de una comunidad científica que orientan la observación; en Foucault, de prácticas institucionales y relaciones de poder que producen objetos de saber e intervención."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué significa reconocer mediaciones sin negar la realidad?",
+      "dorso": "Significa estudiar cómo se producen observaciones y clasificaciones y evaluar sus evidencias, sin concluir que los hechos son creados enteramente por el lenguaje o la institución."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué aporta Bourdieu como complemento, sin reemplazar a Kuhn?",
+      "dorso": "Permite preguntar cómo disposiciones incorporadas y posiciones en un campo influyen en la práctica, el reconocimiento y la percepción de los agentes."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Por qué no se debe concluir que los datos son falsos?",
+      "dorso": "Porque el análisis investiga las condiciones de producción y los efectos del conocimiento; no demuestra automáticamente que la información sea falsa."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué relación tiene esta idea con la visibilidad?",
+      "dorso": "Los esquemas incorporados pueden orientar qué aspectos se perciben como relevantes, normales o desviados, sin que el sujeto tenga que formular conscientemente una regla."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Puede una comunidad científica estudiarse también como campo?",
+      "dorso": "Sí, como extensión del análisis bourdieusiano de las relaciones y posiciones sociales, pero eso no elimina la especificidad epistemológica del paradigma en Kuhn."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué pregunta se hace cada autor?",
+      "dorso": "Foucault: cómo se ejercen relaciones de poder y se producen sujetos mediante prácticas; Bourdieu: cómo las disposiciones y posiciones sociales orientan la práctica."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué cuidado metodológico exige el caso?",
+      "dorso": "Distinguir entre el fenómeno, las categorías disponibles y los procedimientos que permiten registrarlo; la ausencia en un formulario no demuestra ausencia material."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué aspecto no debe perderse al combinar ambos?",
+      "dorso": "Kuhn analiza el funcionamiento y cambio de paradigmas; Bourdieu aporta un análisis sociológico de disposiciones, posiciones y disputas por legitimidad."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué tienen en común sin ser idénticos?",
+      "dorso": "Ambos permiten cuestionar una percepción completamente independiente de marcos y aprendizajes; difieren en el objeto y nivel de análisis."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Cuál es el eje común del cruce?",
+      "dorso": "Cómo los marcos conceptuales, las prácticas institucionales y las disposiciones incorporadas orientan qué se ve, cómo se interpreta y qué se considera digno de conocimiento."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué error sería más grave al responder una consigna integradora?",
+      "dorso": "Atribuir a los tres autores la misma teoría o utilizar sus conceptos como sinónimos, en lugar de explicar qué aspecto distinto ilumina cada uno."
+    }
   ]
 }
