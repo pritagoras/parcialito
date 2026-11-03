@@ -1437,7 +1437,7 @@ function vistaIPCSegundoParcial(m, materiaIndex) {
       <section class="ipc-p2-resumen">
         <strong>${config.preguntas}</strong>
         <span>preguntas de opción múltiple</span>
-        <small>5 bloques · cuestionarios y consulta imprimible</small>
+        <small>5 bloques · ${config.tarjetas} tarjetas SM-2 · banco imprimible</small>
       </section>
       <section class="ipc-p2-selector">
         <h2>Elegí el autor o el bloque</h2>
@@ -1457,7 +1457,7 @@ function vistaIPCSegundoParcial(m, materiaIndex) {
           <article class="ipc-p2-autor">
             <div class="ipc-p2-autor-cabecera">
               <h3>${esc(a.autor)}</h3>
-              <span>${a.preguntas} preguntas</span>
+              <span>${a.preguntas} preguntas · ${a.tarjetas} tarjetas</span>
             </div>
             <p>${esc(a.clave === 'hacking' ? 'Clases humanas · efecto de bucle · nicho ecológico · ontología histórica · representar e intervenir' :
               a.clave === 'popper' ? 'Falsabilidad · corroboración · base empírica · enunciados básicos · modus tollens' :
