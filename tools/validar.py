@@ -199,11 +199,13 @@ def validar_archivo(ruta: Path):
 
 
 def archivos_de_preguntas():
-    """Todos los .json de data/<materia>/ que no empiezan con guion bajo."""
+    """JSON de temas con formato estándar; el banco IPC especial usa otro esquema."""
     return sorted(
         f
         for carpeta in DATA.iterdir()
-        if carpeta.is_dir() and not carpeta.name.startswith((".", "_"))
+        if carpeta.is_dir()
+        and not carpeta.name.startswith((".", "_"))
+        and carpeta.name != "ipc-segundo-parcial"
         for f in carpeta.glob("*.json")
         if not f.name.startswith("_")
     )
