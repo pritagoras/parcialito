@@ -13,6 +13,7 @@ import { abrirComparadorDivision } from './comparador-division.js?v=20261028-4';
 import { abrirCalculadoraDivision } from './calculadora-division.js?v=20261030-1';
 import { abrirVisualDivision } from './visual-division.js?v=20261030-1';
 import { abrirLabGametogenesis } from './lab-gametogenesis.js?v=20261101-5';
+import { abrirLabGenetica } from './lab-genetica.js?v=20261103-1';
 
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
@@ -340,6 +341,7 @@ export function abrirLab({ app, volver }) {
     {id:'cromosomas', icon:'🧬', grupo:'NÚCLEO Y CROMATINA', titulo:'Laboratorio de cromosomas', desc:'Explorá la estructura, compactación de la cromatina y los cariotipos con modelos visuales interactivos.', activo:true, tono:'violeta'},
     {id:'mitosis', icon:'🧫', grupo:'DIVISIÓN CELULAR', titulo:'Mitosis y meiosis', desc:'Compará mitosis y meiosis con simuladores, cantidad de ADN por etapa y un recorrido visual hasta la fecundación y el cigoto.', activo:true, tono:'verde'},
     {id:'gametogenesis', icon:'🧬', grupo:'REPRODUCCIÓN CELULAR', titulo:'Gametogénesis: formación de gametas', desc:'Recorré la meiosis, compará espermatogénesis y ovogénesis, visualizá las detenciones meióticas y calculá cromosomas, cromátidas y ADN.', activo:true, tono:'violeta'},
+    {id:'genetica', icon:'🧬', grupo:'GENÉTICA MENDELIANA', titulo:'Genética: Mendel, grupos sanguíneos y herencia ligada al sexo', desc:'Cruzá progenitores con cuadros de Punnett: primera ley de Mendel, grupos ABO y Rh, daltonismo y hemofilia con árbol genealógico y preguntas.', activo:true, tono:'rosa'},
     {id:'proteina-g', icon:'🧬', grupo:'SEÑALIZACIÓN CELULAR', titulo:'Proteínas G: cascadas y apagado de la señal', desc:'Compará Gs, Gi y Gq con cascadas visuales; explorá AMPc/PKA, IP₃/DAG/Ca²⁺ y los mecanismos que terminan la señal.', activo:true, tono:'violeta'},
     {id:'comunicacion', icon:'📡', grupo:'SEÑALIZACIÓN Y UNIONES GAP', titulo:'Comunicación celular y sinapsis', desc:'Explorá los mecanismos de señalización, la transmisión sináptica y las uniones comunicantes formadas por conexones y conexinas.', activo:true, tono:'violeta'},
     {id:'neuro', icon:'⚡', grupo:'NEUROBIOLOGÍA', titulo:'Impulso nervioso y sinapsis', desc:'Espacio preparado para potencial de acción, canales iónicos y transmisión sináptica.', tono:'ambar'},
@@ -421,6 +423,7 @@ export function abrirLab({ app, volver }) {
       else if(t.id==='cromosomas') abrirCromosomas({app,volver:mostrarCatalogo});
       else if(t.id==='mitosis') abrirDivisionCelular();
       else if(t.id==='gametogenesis') abrirLabGametogenesis({app,volver:mostrarCatalogo});
+      else if(t.id==='genetica') abrirLabGenetica({app,volver:mostrarCatalogo});
       else if(t.id==='comunicacion') abrirComunicacion({app,volver:mostrarCatalogo});
       else if(t.id==='proteina-g') abrirProteinaG({app,volver:mostrarCatalogo});
       else mostrarEspacio(t);
