@@ -286,7 +286,7 @@
     },
     {
       "id": "ipc-2",
-      "nombre": "IPC 2",
+      "nombre": "IPC",
       "emoji": "📜",
       "temas": [
         {
@@ -341,7 +341,53 @@
           "archivo": "data/ipc-2/08-foucault.json",
           "preguntas": 30
         }
-      ]
+      ],
+      "segundoParcial": {
+        "nombre": "Segundo Parcial",
+        "preguntas": 241,
+        "autores": [
+          {
+            "id": "ipc-p2-hacking",
+            "clave": "hacking",
+            "autor": "Ian Hacking",
+            "etiqueta": "Hacking",
+            "archivo": "data/ipc-segundo-parcial/hacking.json",
+            "preguntas": 57
+          },
+          {
+            "id": "ipc-p2-popper",
+            "clave": "popper",
+            "autor": "Karl Popper",
+            "etiqueta": "Popper",
+            "archivo": "data/ipc-segundo-parcial/popper.json",
+            "preguntas": 57
+          },
+          {
+            "id": "ipc-p2-foucault",
+            "clave": "foucault",
+            "autor": "Michel Foucault",
+            "etiqueta": "Foucault",
+            "archivo": "data/ipc-segundo-parcial/foucault.json",
+            "preguntas": 55
+          },
+          {
+            "id": "ipc-p2-kuhn",
+            "clave": "kuhn",
+            "autor": "Thomas Kuhn",
+            "etiqueta": "Kuhn",
+            "archivo": "data/ipc-segundo-parcial/kuhn.json",
+            "preguntas": 54
+          },
+          {
+            "id": "ipc-p2-integrador",
+            "clave": "integrador",
+            "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+            "etiqueta": "Integrador",
+            "archivo": "data/ipc-segundo-parcial/integrador.json",
+            "preguntas": 18
+          }
+        ]
+      }
     }
   ]
 }
