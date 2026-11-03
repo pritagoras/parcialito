@@ -2359,5 +2359,367 @@
         }
       ]
     }
+  ],
+  "tarjetas": [
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La concepción clásica entiende que las teorías científicas son representaciones de la realidad que funcionan como un espejo del mundo."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Hacking cuestiona que la ciencia se comprenda únicamente desde las teorías y la representación, rescatando la dimensión epistemológica de la práctica experimental."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Intervenir implica manipular materiales, controlar variables y producir fenómenos mediante la práctica experimental."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El realismo de entidades se apoya en la capacidad de manipular entidades de forma fiable para intervenir en otros fenómenos."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Los electrones ilustran el realismo de entidades porque, aunque no se observen a simple vista, pueden ser manipulados para producir efectos controlados y reproducibles."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Los miembros de una clase indiferente no reaccionan ni modifican su conducta física o natural por el mero hecho de ser clasificados."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Plutón no cambió su masa ni su trayectoria orbital al ser reclasificado, lo que ilustra el comportamiento de una clase indiferente."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Las clases interactivas aplican a seres humanos capaces de reaccionar, reinterpretar su conducta y modificar la categoría que se les aplica."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El nominalismo dinámico sostiene que las clasificaciones y las formas de ser persona interactúan y se transforman conjuntamente a lo largo de la historia."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La construcción de personas describe cómo nuevas clasificaciones e instituciones hacen posibles formas inéditas de experiencia y autocomprensión."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El efecto bucle implica que las personas responden a las clasificaciones que se les aplican y sus respuestas modifican la categoría y las prácticas institucionales."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "En la fase de revisión del efecto bucle, las instituciones ajustan o transforman los límites de la categoría basándose en la conducta de los clasificados."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El efecto bucle contempla una retroalimentación compleja donde los sujetos pueden resistir, reinterpretar y alterar la categoría original."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El nicho ecológico identifica la trama de condiciones específicas que permiten que una categoría humana surja, sea inteligible y se sostenga en una época."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Hacking identifica cuatro vectores centrales para analizar el nicho ecológico: taxonomía médica, polaridad cultural, observabilidad y liberación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La polaridad cultural alude a las valoraciones y oposiciones de una sociedad (como normal/anormal o responsabilidad/incapacidad) que vuelven inteligible una categoría."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El vector de liberación se refiere a las salidas o justificaciones que una categoría ofrece a los individuos frente a presiones de su entorno cultural."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La ontología histórica estudia la constitución de categorías, instituciones y tipos de personas como posibilidades de existencia que aparecen en momentos específicos."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Hacking y Foucault comparten el análisis de cómo los discursos de saber e instituciones de poder intervienen en la constitución histórica de los sujetos."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La contingencia histórica señala que las categorías surgen bajo condiciones particulares de una época, lo que no niega sus efectos objetivos ni su realidad."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La categoría de feminicidio no inventa los hechos materiales, sino que ofrece el marco histórico e institucional para reconocerlos y organizarlos como un problema específico."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Estudiar la constitución histórica del TDAH y sus efectos de bucle permite comprender el impacto de la clasificación sin invalidar la realidad de las dificultades del individuo."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La categoría de bullying organiza y delimita un tipo particular de agresión con criterios de asimetría de poder, modificando las respuestas escolares e institucionales."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El análisis distingue las prácticas o afectos entre personas del mismo sexo de la categoría histórica moderna que constituyó una forma particular de identidad social."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El análisis de Hacking distingue las características biológicas del sexo de las normas y clasificaciones de género, las cuales organizan roles y son modificadas por las personas."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "En las ciencias humanas, las personas responden a las teorías y clasificaciones que las describen, haciendo que el objeto de estudio se transforme continuamente."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Agregar una nueva categoría (como 'ropa para limpiar') reorganiza prendas preexistentes creando una clase funcional, del mismo modo en que operan ciertas clasificaciones humanas."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Hacking plantea que la práctica experimental y la representación teórica se retroalimentan continuamente en la producción del conocimiento científico."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La capacidad de producir efectos reproducibles mediante manipulación controlada ofrece razones para atribuir capacidades causales a la entidad investigada."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El antirrealismo reúne posturas que dudan de que el éxito explicativo o predictivo de una teoría garantice la existencia real de las entidades no observables que menciona."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La fuga disociativa ilustra cómo la confluencia de la taxonomía médica, tensiones culturales y posibilidades de respuesta constituyeron el nicho ecológico de una enfermedad transitoria."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Las ciencias humanas se enfocan en la constitución histórica de categorizaciones y personas, mientras que las ciencias naturales abordan la justificación del conocimiento del mundo natural."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El análisis riguroso de Hacking separa los acontecimientos o vivencias previas de la categoría histórica e institucional que permite clasificarlos y actuar sobre ellos."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué debe evitarse al analizar diagnósticos escolares?",
+      "dorso": "No concluir que las dificultades son ficticias: hay que distinguir las experiencias, los criterios de diagnóstico y los efectos que produce la clasificación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Por qué se usa Plutón como contraste?",
+      "dorso": "Para mostrar que no toda clasificación es interactiva: algunos objetos no pueden responder a la categoría que se les aplica."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué dos planos conviene separar?",
+      "dorso": "La existencia de prácticas concretas de hostigamiento y la formación histórica de una categoría que las delimita, registra y vuelve objeto de intervención."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué evidencia ayudaría a identificar interacción?",
+      "dorso": "Cambios en autocomprensión, conducta, trato institucional o criterios expertos vinculados con la circulación de la clasificación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué diferencia existe con una clase interactiva?",
+      "dorso": "En la interactiva hay posibilidad de respuesta y retroalimentación; en la indiferente, la clasificación no transforma al objeto por ser clasificado."
+    },
+    {
+      "frente": "Ian Hacking · ¿Cuáles son los momentos mínimos del bucle?",
+      "dorso": "La categoría circula, las personas o instituciones responden, esas respuestas modifican a los clasificados y la clasificación puede revisarse."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué puede modificarse en este circuito?",
+      "dorso": "La conducta, la autocomprensión, el trato institucional, los conocimientos expertos y los criterios de clasificación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué respuestas pueden modificar una categoría?",
+      "dorso": "Identificación, apropiación, rechazo, resistencia, ocultamiento o negociación, siempre que tengan efectos sobre los sujetos o el sistema clasificatorio."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué elemento amplía el alcance del bucle?",
+      "dorso": "Que la respuesta no solo modifica la conducta individual: puede obligar a revisar la categoría y el conocimiento experto que la sostiene."
+    },
+    {
+      "frente": "Ian Hacking · ¿Por qué la respuesta no es uniforme?",
+      "dorso": "Porque las personas tienen posiciones, recursos, experiencias y relaciones institucionales diferentes frente a la clasificación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué condiciones pueden integrar un nicho?",
+      "dorso": "Vocabularios culturales, instituciones, prácticas profesionales, tecnologías, normas y conocimientos disponibles."
+    },
+    {
+      "frente": "Ian Hacking · ¿Los vectores son etapas cronológicas?",
+      "dorso": "No. Son dimensiones que se articulan en una configuración histórica y no una secuencia fija."
+    },
+    {
+      "frente": "Ian Hacking · ¿Por qué importa la polaridad cultural?",
+      "dorso": "Porque una conducta puede adquirir significados distintos según las oposiciones morales y culturales disponibles en una época."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué ejemplos aumentan la observabilidad?",
+      "dorso": "Registros hospitalarios, tribunales, escuelas, estadísticas, formularios y protocolos que reúnen casos bajo criterios compartidos."
+    },
+    {
+      "frente": "Ian Hacking · ¿La evasión supone simulación consciente?",
+      "dorso": "No necesariamente. Se analiza una posibilidad de salida o respuesta reconocible en un contexto histórico, sin atribuir intenciones universales."
+    },
+    {
+      "frente": "Ian Hacking · ¿Cómo se aplican a un caso actual?",
+      "dorso": "Como herramienta analítica situada: hay que justificar la función de cada dimensión y no asumir que todo diagnóstico encaja de forma idéntica."
+    },
+    {
+      "frente": "Ian Hacking · ¿Puede cambiar el nicho tras aparecer una categoría?",
+      "dorso": "Sí. Nuevas instituciones, tecnologías, saberes y prácticas modifican el espacio histórico en el que la clasificación opera."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué diferencia hay con un nominalismo meramente lingüístico?",
+      "dorso": "El nominalismo dinámico no se limita a nombres: analiza cómo las clasificaciones intervienen en la configuración histórica de tipos humanos y sus relaciones con instituciones y saberes."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué elementos intervienen?",
+      "dorso": "Clasificación, personas clasificadas, instituciones, conocimiento experto y expertos que producen y aplican ese conocimiento."
+    },
+    {
+      "frente": "Ian Hacking · ¿Por qué no basta con estudiar el nombre de una categoría?",
+      "dorso": "Hay que reconstruir qué personas agrupa, quién la aplica, qué saberes la sostienen y qué efectos generan las instituciones."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué puede preexistir a una categoría nueva?",
+      "dorso": "Experiencias, conductas y sufrimientos; lo históricamente nuevo puede ser el modo de agruparlos, interpretarlos e intervenir sobre ellos."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué no se deduce automáticamente de la historicidad?",
+      "dorso": "No se deduce que el fenómeno sea irreal, que la categoría carezca de utilidad ni que toda clasificación sea igualmente adecuada."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué pregunta expresa este enfoque?",
+      "dorso": "¿Qué condiciones tuvieron que existir para que una forma particular de experiencia o identidad pudiera reconocerse y vivirse?"
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué pregunta ayuda a identificar contingencia?",
+      "dorso": "¿Qué condiciones históricas tuvieron que reunirse para que esta categoría apareciera en este momento y no en otro?"
+    }
   ]
 }
