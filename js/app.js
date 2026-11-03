@@ -329,7 +329,8 @@ function nuevasHoy() {
 function todasLasTarjetas() {
   const vistas = new Set(), lista = [];
   for (const m of indice.materias) {
-    for (const t of m.temas) {
+    const fuentes = [...m.temas, ...(m.segundoParcial?.autores || [])];
+    for (const t of fuentes) {
       for (const c of cacheTarjetas.get(t.id) || []) if (!vistas.has(c.id)) { vistas.add(c.id); lista.push(c); }
     }
   }
@@ -412,7 +413,7 @@ function lanzarTarjetas(extra = 0) {
   }).catch(vistaError);
 }
 
-async function lanzarTarjetasTemas(materia, temas) {
+async function lanzarTarjetasTemas(materia, temas, alFinalizar = null) {
   vistaCargando('Preparando tarjetas…');
   try {
     for (const t of temas) await cargarTema(t, materia);
@@ -445,7 +446,7 @@ async function lanzarTarjetasTemas(materia, temas) {
     }
 
     const iMateria = indice.materias.indexOf(materia);
-    empezarTarjetas(cola, () => vistaMateria(iMateria >= 0 ? iMateria : 0));
+    empezarTarjetas(cola, alFinalizar || (() => vistaMateria(iMateria >= 0 ? iMateria : 0)));
   } catch (e) {
     vistaError(e);
   }
@@ -1448,6 +1449,7 @@ function vistaIPCSegundoParcial(m, materiaIndex) {
         <div class="ipc-p2-acciones">
           <button class="btn primario" id="btn-ipc-p2-practicar">Practicar los 5 bloques →</button>
           <button class="btn secundario" id="btn-ipc-p2-banco">Consultar banco completo</button>
+          <button class="btn secundario" id="btn-ipc-p2-tarjetas">Repasar tarjetas SM-2</button>
         </div>
       </section>
       <section class="ipc-p2-autores" aria-label="Bloques por autor">
@@ -1465,6 +1467,7 @@ function vistaIPCSegundoParcial(m, materiaIndex) {
             <div class="ipc-p2-autor-acciones">
               <button class="btn enlace" type="button" data-practicar-autor="${esc(a.clave)}">Practicar este bloque →</button>
               <button class="btn enlace" type="button" data-ver-autor="${esc(a.clave)}">Ver preguntas</button>
+              <button class="btn enlace" type="button" data-tarjetas-autor="${esc(a.clave)}">Tarjetas SM-2 →</button>
             </div>
           </article>`).join('')}
       </section>
@@ -1506,6 +1509,10 @@ function vistaIPCSegundoParcial(m, materiaIndex) {
     Sonido.clic();
     vistaBancoIPC(m, materiaIndex, listaAutores());
   });
+  document.getElementById('btn-ipc-p2-tarjetas').addEventListener('click', () => {
+    Sonido.clic();
+    lanzarTarjetasIPCSegundoParcial(m, materiaIndex, listaAutores());
+  });
   app.querySelectorAll('[data-practicar-autor]').forEach((b) => b.addEventListener('click', () => {
     Sonido.clic();
     const autor = autores.find((a) => a.clave === b.dataset.practicarAutor);
@@ -1515,6 +1522,11 @@ function vistaIPCSegundoParcial(m, materiaIndex) {
     Sonido.clic();
     const autor = autores.find((a) => a.clave === b.dataset.verAutor);
     if (autor) vistaBancoIPC(m, materiaIndex, [autor]);
+  }));
+  app.querySelectorAll('[data-tarjetas-autor]').forEach((b) => b.addEventListener('click', () => {
+    Sonido.clic();
+    const autor = autores.find((a) => a.clave === b.dataset.tarjetasAutor);
+    if (autor) lanzarTarjetasIPCSegundoParcial(m, materiaIndex, [autor]);
   }));
   actualizarSeleccion();
   window.scrollTo(0, 0);
@@ -1532,6 +1544,17 @@ async function cargarPreguntasIPC(m, autores) {
     pool.push(...await cargarTema(tema, m));
   }
   return pool;
+}
+
+async function lanzarTarjetasIPCSegundoParcial(m, materiaIndex, autores) {
+  const temas = autores.map((autor) => ({
+    id: autor.id,
+    nombre: autor.etiqueta || autor.autor,
+    archivo: autor.archivo,
+    preguntas: autor.preguntas || 0,
+    tarjetas: autor.tarjetas || 0,
+  }));
+  await lanzarTarjetasTemas(m, temas, () => vistaIPCSegundoParcial(m, materiaIndex));
 }
 
 async function lanzarIPCSegundoParcial(m, materiaIndex, autores) {
