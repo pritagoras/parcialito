@@ -34,7 +34,7 @@ const GLOSARIO = [
   ['Homocigota', 'Tiene los dos alelos iguales (RR o rr).'],
   ['Heterocigota', 'Tiene los dos alelos distintos (Rr).'],
   ['Genotipo', 'Combinación de alelos que tiene el individuo.'],
-  ['Fenotipo', 'Característica que se observa (semilla lisa o rugosa). Depende del genotipo y, a veces, del ambiente.'],
+  ['Fenotipo', 'Característica que se observa (semilla amarilla o verde). Depende del genotipo y, a veces, del ambiente.'],
   ['Dominante', 'Alelo que se expresa también en el heterocigota. Se escribe con mayúscula.'],
   ['Recesivo', 'Alelo que solo se expresa en homocigosis. Se escribe con minúscula.']
 ];
@@ -70,16 +70,38 @@ const MADRES = [['N', 'N'], ['N', 'a'], ['a', 'a']];
 const PADRES = [['N', 'Y'], ['a', 'Y']];
 
 const PREGUNTAS = [
-  // --- Mendel
-  { t: 'mendel', q: 'Mendel cruzó plantas de arveja de línea pura de semilla lisa (RR) con plantas de línea pura de semilla rugosa (rr). ¿Cómo es la F1?', o: ['Todas lisas, genotipo Rr', 'La mitad lisas y la mitad rugosas', '75 % lisas y 25 % rugosas', 'Todas rugosas, genotipo rr'], ok: 0, exp: 'Cada progenitor aporta un solo alelo (R o r), así que toda la F1 es Rr. Como R es dominante, todas las semillas son lisas: es la uniformidad de la F1.' },
-  { t: 'mendel', q: 'Al cruzar dos heterocigotas Aa × Aa, ¿qué proporción fenotípica se espera si A es dominante?', o: ['1 : 1', '3 : 1', '1 : 2 : 1', '100 % dominante'], ok: 1, exp: 'Salen 3 individuos con el fenotipo dominante (AA, Aa, Aa) y 1 con el recesivo (aa).' },
-  { t: 'mendel', q: '¿Cuál es la proporción genotípica del cruce Aa × Aa?', o: ['3 : 1', '1 : 1', '1 AA : 2 Aa : 1 aa', '2 AA : 2 aa'], ok: 2, exp: 'Del cuadro de Punnett salen 1 AA, 2 Aa y 1 aa. El fenotipo dominante (3) agrupa a AA y Aa.' },
-  { t: 'mendel', q: 'Una planta de semilla lisa puede ser RR o Rr. ¿Qué cruzamiento permite saber cuál es su genotipo?', o: ['Cruzarla con otra RR', 'Cruzarla con una planta rr (cruzamiento prueba)', 'Autofecundar una planta rr', 'Cruzarla con otra Rr'], ok: 1, exp: 'El homocigota recesivo solo aporta alelos r. Si toda la descendencia es lisa, la planta era RR; si aparece la mitad rugosa, era Rr.' },
-  { t: 'mendel', q: 'Un individuo heterocigota es aquel que…', o: ['tiene dos alelos iguales', 'tiene dos alelos distintos para un gen', 'solo tiene alelos recesivos', 'no expresa ningún alelo'], ok: 1, exp: 'Heterocigota (Aa) significa alelos distintos. Si tiene los dos iguales (AA o aa) es homocigota.' },
-  { t: 'mendel', q: 'En el cruzamiento prueba Aa × aa, ¿qué porcentaje de la descendencia tiene el fenotipo recesivo?', o: ['0 %', '25 %', '75 %', '50 %'], ok: 3, exp: 'Las gametas Aa dan A o a, y las aa dan solo a: la mitad es Aa (dominante) y la mitad aa (recesiva).' },
-  { t: 'mendel', q: '¿Cuándo se manifiesta en el fenotipo un alelo recesivo?', o: ['Siempre que esté presente', 'Solo en homocigosis, con dos copias', 'Solo en las plantas heterocigotas', 'Nunca, porque se pierde en la F1'], ok: 1, exp: 'En el heterocigota lo tapa el dominante, pero no desaparece: se conserva y reaparece en la F2 cuando se combinan dos alelos recesivos.' },
-  { t: 'mendel', q: 'Una planta heterocigota Aa forma gametas. ¿Cómo se reparten los alelos?', o: ['Todas las gametas llevan A y a', 'Todas llevan A', '50 % llevan A y 50 % llevan a; cada gameta lleva un solo alelo', '75 % llevan A y 25 % llevan a'], ok: 2, exp: 'Es la segregación: los dos alelos se separan al formarse las gametas, en la meiosis, y cada gameta recibe uno solo.' },
-  { t: 'mendel', q: 'En el cruce AA × Aa, ¿puede nacer un descendiente con el fenotipo recesivo?', o: ['Sí, 25 %', 'Sí, 50 %', 'No, 0 %', 'Sí, 75 %'], ok: 2, exp: 'El progenitor AA solo aporta A, así que todos los hijos tienen al menos un alelo dominante: 50 % AA y 50 % Aa.' },
+  // --- Mendel: primera ley, color de semillas y deducción de F1/parentales
+  { t: 'mendel', q: "Se cruzan dos líneas puras de arvejas: una produce semillas amarillas (YY) y la otra semillas verdes (yy). ¿Cuál será el genotipo de la F1?", o: ["100 % YY","100 % Yy","50 % YY y 50 % yy","100 % yy"], ok: 1, exp: "La línea amarilla solo forma gametas Y y la verde solo forma gametas y. Todos los descendientes reciben Y de un progenitor e y del otro: son Yy." },
+  { t: 'mendel', q: "En el cruce YY × yy, ¿qué fenotipo tendrá la primera generación filial?", o: ["100 % semillas verdes","75 % amarillas y 25 % verdes","100 % semillas amarillas","50 % amarillas y 50 % verdes"], ok: 2, exp: "Todos los descendientes son Yy. Como Y domina sobre y, todas las semillas de la F1 son amarillas." },
+  { t: 'mendel', q: "Una F1 está formada por individuos 100 % heterocigotas (Yy). Si los progenitores eran líneas puras, ¿qué genotipos tenían?", o: ["YY × yy","Yy × Yy","YY × YY","yy × yy"], ok: 0, exp: "Para que todos los descendientes sean Yy y los progenitores sean líneas puras, uno debe aportar siempre Y (YY) y el otro siempre y (yy)." },
+  { t: 'mendel', q: "Se sabe que uno de los progenitores era verde (yy) y que toda la F1 resultó amarilla. ¿Qué genotipo debía tener el progenitor amarillo?", o: ["Yy","yy","YY","No puede determinarse aunque toda la F1 sea amarilla"], ok: 2, exp: "Si el progenitor amarillo fuera Yy, al cruzarlo con yy aparecerían descendientes verdes. Para que toda la F1 sea amarilla, debe ser YY." },
+  { t: 'mendel', q: "Una planta amarilla de genotipo desconocido se cruza con una planta verde (yy). La descendencia resulta mitad amarilla y mitad verde. ¿Cuál era el genotipo de la planta amarilla?", o: ["YY","Yy","yy","YY o yy"], ok: 1, exp: "La planta verde aporta siempre y. Para obtener mitad Yy (amarillas) y mitad yy (verdes), la planta amarilla debe producir gametas Y e y: su genotipo era Yy." },
+  { t: 'mendel', q: "Se cruzan dos líneas puras de semillas amarillas. ¿Qué genotipo tendrá la F1?", o: ["100 % Yy","100 % yy","100 % YY","50 % YY y 50 % Yy"], ok: 2, exp: "Si ambas líneas son puras y amarillas, sus genotipos son YY. Cada progenitor aporta Y, por lo que toda la descendencia es YY." },
+  { t: 'mendel', q: "Se cruzan dos líneas puras de semillas verdes (yy × yy). ¿Cómo será la F1?", o: ["100 % amarilla Yy","100 % verde yy","50 % amarilla y 50 % verde","100 % amarilla YY"], ok: 1, exp: "Los dos progenitores solo pueden producir gametas y. Todos los descendientes serán yy y tendrán semillas verdes." },
+  { t: 'mendel', q: "Al cruzar dos líneas puras de distinto color, la F1 resulta completamente amarilla. ¿Qué alelo es dominante?", o: ["El alelo para semillas verdes","Ambos alelos son codominantes","No se puede saber","El alelo para semillas amarillas"], ok: 3, exp: "En una F1 uniforme de un cruce entre líneas puras contrastantes, el fenotipo que se expresa en los heterocigotas corresponde al alelo dominante: Y, amarillo." },
+  { t: 'mendel', q: "El análisis genético de una F1 revela que todos sus individuos son Yy. ¿Qué combinación de parentales puros explica ese resultado?", o: ["YY × yy","YY × YY","Yy × Yy","yy × yy"], ok: 0, exp: "Un parental puro YY aporta exclusivamente Y y uno puro yy aporta exclusivamente y. Por eso todos los descendientes son Yy." },
+  { t: 'mendel', q: "Una F1 presenta únicamente semillas amarillas, pero no se analizaron sus genotipos ni se conoce si los parentales eran líneas puras. ¿Qué se puede concluir?", o: ["Que todos los individuos son necesariamente YY","Que todos son necesariamente Yy","Que expresan el fenotipo dominante, pero no alcanza para conocer todos sus genotipos","Que el alelo verde desapareció"], ok: 2, exp: "El color amarillo puede corresponder a YY o a Yy. Observar solo el fenotipo no permite asegurar el genotipo ni reconstruir de manera única los parentales." },
+  { t: 'mendel', q: "¿Qué genotipos pueden producir el fenotipo de semillas amarillas cuando Y es dominante?", o: ["Solo YY","YY o Yy","Solo Yy","YY o yy"], ok: 1, exp: "El alelo Y se expresa tanto en homocigosis (YY) como en heterocigosis (Yy)." },
+  { t: 'mendel', q: "Si el color verde es recesivo, ¿qué genotipo debe tener una planta con semillas verdes?", o: ["YY","Yy","YY o Yy","yy"], ok: 3, exp: "El fenotipo recesivo solo se manifiesta cuando no hay ningún alelo dominante: el individuo debe ser yy." },
+  { t: 'mendel', q: "¿Qué tipo de gametas puede producir una línea pura amarilla (YY)?", o: ["Solo gametas Y","Gametas Y e y en igual proporción","Solo gametas y","Gametas YY"], ok: 0, exp: "Un individuo YY tiene dos alelos iguales. Al formarse las gametas, cada una recibe un solo alelo y todas llevan Y." },
+  { t: 'mendel', q: "¿Qué alelo lleva cada gameta de una línea pura verde (yy)?", o: ["Y","Yy","y","YY"], ok: 2, exp: "El progenitor yy solo puede aportar el alelo y. Cada gameta contiene un único alelo para ese gen." },
+  { t: 'mendel', q: "En un cruce entre YY y yy, ¿qué combinación genética aparece en cada casilla del cuadro de Punnett?", o: ["YY","Yy","yy","Yy o yy"], ok: 1, exp: "Todas las combinaciones unen una gameta Y con una gameta y. Por eso las cuatro casillas contienen Yy." },
+  { t: 'mendel', q: "En la F1 del cruce YY × yy, ¿qué porcentaje de descendientes tendrá semillas verdes?", o: ["25 %","50 %","75 %","0 %"], ok: 3, exp: "No aparece ningún genotipo yy en esa F1: todos son Yy y expresan el color amarillo. El alelo verde permanece presente, pero no se manifiesta." },
+  { t: 'mendel', q: "¿Por qué el color verde no aparece en la F1 del cruce YY × yy?", o: ["Porque el alelo verde se elimina durante la fecundación","Porque el alelo verde deja de existir","Porque Y domina sobre y en los heterocigotas Yy","Porque las gametas verdes no participan"], ok: 2, exp: "El alelo recesivo y no desaparece: queda en el genotipo Yy, pero el alelo dominante Y determina el fenotipo amarillo." },
+  { t: 'mendel', q: "¿Qué representa la F1 en un experimento de cruzamiento?", o: ["La generación de progenitores originales","La primera generación de descendientes obtenida al cruzar los parentales","La generación formada exclusivamente por individuos recesivos","La segunda generación de descendientes"], ok: 1, exp: "F1 significa primera generación filial: es la descendencia directa del cruce entre los parentales (P)." },
+  { t: 'mendel', q: "¿Qué establece la ley de uniformidad de la F1, en el caso de dos líneas puras que difieren en un carácter?", o: ["La F1 presenta siempre cuatro fenotipos","La F1 es uniforme y expresa el carácter dominante","La F1 es mitad dominante y mitad recesiva","Todos los descendientes son homocigotas recesivos"], ok: 1, exp: "Al cruzar dos líneas puras que difieren en un carácter, todos los individuos de la F1 son iguales entre sí y heterocigotas; expresan el rasgo dominante." },
+  { t: 'mendel', q: "¿Qué condición es fundamental para aplicar la ley de uniformidad en el cruce clásico de Mendel?", o: ["Que ambos progenitores sean heterocigotas","Que se estudien dos genes a la vez","Que los progenitores sean líneas puras y difieran en el carácter estudiado","Que la F1 se cruce consigo misma"], ok: 2, exp: "El cruce clásico se realiza entre dos líneas puras (homocigotas) que presentan variantes opuestas del mismo carácter." },
+  { t: 'mendel', q: "Una planta amarilla se cruza con una verde (yy) y aparece al menos un descendiente verde. ¿Qué genotipo tenía la planta amarilla?", o: ["YY","Yy","yy","No existe ningún genotipo posible"], ok: 1, exp: "Para que nazca un descendiente yy, ambos progenitores deben aportar y. La planta amarilla debe tener un alelo Y y uno y: Yy." },
+  { t: 'mendel', q: "¿Puede aparecer una semilla verde en la F1 de un cruce entre líneas puras YY × yy?", o: ["Sí, en el 25 %","Sí, en el 50 %","No, porque todos los descendientes son Yy","Sí, en el 75 %"], ok: 2, exp: "No. El cruce produce exclusivamente individuos Yy. El fenotipo verde requiere el genotipo yy." },
+  { t: 'mendel', q: "Dos líneas puras producen una F1 en la que todas las semillas son verdes. Si el color verde es recesivo, ¿qué genotipo tienen los dos parentales?", o: ["YY × yy","Yy × Yy","YY × YY","yy × yy"], ok: 3, exp: "Para que toda la F1 sea verde, todos los descendientes deben ser yy. Si ambos parentales son líneas puras, los dos son yy." },
+  { t: 'mendel', q: "Si todos los individuos de una F1 son Yy, ¿qué alelos recibió cada descendiente de sus progenitores?", o: ["Y de ambos","y de ambos","Y de uno e y del otro","Dos alelos Y y uno y"], ok: 2, exp: "Cada descendiente recibe un alelo de cada progenitor. En este caso, uno aportó Y y el otro aportó y." },
+  { t: 'mendel', q: "¿Qué cruce permite obtener una F1 completamente heterocigota Yy cuando se usan parentales homocigotas?", o: ["YY × yy","YY × YY","yy × yy","Yy × Yy"], ok: 0, exp: "El cruce de homocigota dominante con homocigota recesivo produce descendientes Yy en el 100 % de los casos." },
+  { t: 'mendel', q: "Una F1 de semillas amarillas tiene genotipo Yy en todos sus individuos. ¿Qué fenotipo expresa el alelo recesivo en esa generación?", o: ["Verde, porque y está presente","No se expresa; queda enmascarado por Y","Amarillo, porque y es dominante","No se puede determinar"], ok: 1, exp: "Aunque todos llevan el alelo y, el fenotipo es amarillo porque Y es dominante. La presencia de un alelo recesivo no implica que se exprese." },
+  { t: 'mendel', q: "Un estudiante afirma que YY × yy produce una F1 con 75 % de semillas amarillas y 25 % verdes. ¿Cuál es la corrección?", o: ["La F1 será 50 % amarilla y 50 % verde","La F1 será 100 % verde","La F1 será 75 % verde y 25 % amarilla","La F1 será 100 % amarilla y genéticamente Yy"], ok: 3, exp: "El resultado 3:1 corresponde al fenotipo de una F2 obtenida al cruzar dos heterocigotas Yy × Yy. En YY × yy, toda la F1 es Yy y amarilla." },
+  { t: 'mendel', q: "¿Qué información hace posible reconstruir con mayor seguridad los parentales a partir de una F1?", o: ["Solo saber que la F1 es amarilla","Saber que la F1 es 100 % Yy y que los parentales eran líneas puras","Conocer únicamente el número de semillas","Saber que al menos un parental era amarillo"], ok: 1, exp: "La combinación de uniformidad genotípica (todos Yy) y parentales de línea pura permite inferir que el cruce fue YY × yy." },
+  { t: 'mendel', q: "Una línea pura amarilla se cruza con una línea pura verde. ¿Qué proporción de la F1 será heterocigota?", o: ["0 %","25 %","50 %","100 %"], ok: 3, exp: "Todos los descendientes reciben Y del parental amarillo YY e y del verde yy. Por lo tanto, el 100 % es heterocigota Yy." },
+  { t: 'mendel', q: "¿Cuál de estas afirmaciones diferencia correctamente fenotipo y genotipo en la F1 de YY × yy?", o: ["Fenotipo: Yy; genotipo: amarillo","Fenotipo: amarillo; genotipo: Yy","Fenotipo: verde; genotipo: yy","Fenotipo y genotipo significan lo mismo"], ok: 1, exp: "El genotipo es la combinación de alelos (Yy); el fenotipo es el rasgo observable (semillas amarillas)." },
+  { t: 'mendel', q: "Un informe indica que la F1 fue 100 % amarilla y 100 % Yy. ¿Qué conclusión es compatible con el modelo mendeliano de líneas puras?", o: ["Un parental YY y el otro yy","Ambos parentales yy","Ambos parentales YY","Un parental Yy y el otro yy"], ok: 0, exp: "El cruce entre líneas puras YY y yy explica que toda la F1 sea heterocigota Yy y exprese el color amarillo." },
   // --- Grupos sanguíneos
   { t: 'abo', q: '¿Cuántos alelos distintos existen en la población para el grupo sanguíneo ABO?', o: ['Dos: A y B', 'Tres: I^A, I^B e i', 'Cuatro: A, B, AB y O', 'Uno solo'], ok: 1, exp: 'Es un caso de alelismo múltiple: en la población hay tres alelos, pero cada persona tiene solo dos.' },
   { t: 'abo', q: 'Una persona con genotipo I^AI^B tiene grupo AB porque los alelos I^A e I^B son…', o: ['recesivos entre sí', 'codominantes', 'letales en conjunto', 'ligados al sexo'], ok: 1, exp: 'En la codominancia los dos alelos se expresan a la vez: el glóbulo rojo lleva antígenos A y B.' },
@@ -213,6 +235,18 @@ function inyectarEstilos() {
 .gen-temas button:hover{border-color:#6695ee}
 .gen-temas span{font-size:.78rem;color:#a8bddf}
 .gen-res{text-align:center}
+.gen-boceto{margin:16px 0 4px;padding:14px;border:1px solid #38548c;border-radius:15px;background:linear-gradient(135deg,rgba(22,44,83,.82),rgba(9,21,47,.96))}
+.gen-boceto-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
+.gen-boceto-head strong{display:block;color:#fff;font-size:.88rem}
+.gen-boceto-head small{display:block;margin-top:3px;color:#9db6e8;font-size:.72rem;line-height:1.4}
+.gen-boceto-grid{display:grid;grid-template-columns:minmax(82px,.8fr) repeat(2,minmax(0,1fr));gap:6px;max-width:520px;margin:8px auto 0}
+.gen-boceto-corner{display:grid;place-items:center;color:#7189bd;font-size:1.15rem;font-weight:800}
+.gen-boceto-item{display:grid;gap:4px;min-width:0;padding:7px;border:1px solid #294575;border-radius:10px;background:#09152f}
+.gen-boceto-item span{font-size:.64rem;line-height:1.2;color:#9db6e8}
+.gen-boceto-item input{width:100%;min-width:0;padding:8px 4px;border:1px dashed #5577b0;border-radius:7px;background:#0d1e3c;color:#fff;text-align:center;font:inherit;font-size:1rem;font-weight:800;outline:none}
+.gen-boceto-item input:focus{border-color:#8db7ff;box-shadow:0 0 0 2px rgba(141,183,255,.16)}
+.gen-boceto-hint{margin:10px 0 0!important;color:#8fa9d6!important;font-size:.72rem!important;line-height:1.45!important}
+@media(max-width:620px){.gen-boceto{padding:10px}.gen-boceto-grid{grid-template-columns:minmax(70px,.78fr) repeat(2,minmax(0,1fr));gap:5px}.gen-boceto-item{padding:6px 4px}.gen-boceto-item span{font-size:.59rem}}
 .gen-res h2{font-size:2.6rem;margin:10px 0}
 .gen button:focus-visible{outline:2px solid #9bd0ff;outline-offset:2px}
 @media(max-width:860px){.gen-grid{grid-template-columns:minmax(0,1fr)}}
@@ -259,7 +293,7 @@ export function abrirLabGenetica({ app, volver }) {
   inyectarEstilos();
   const S = {
     sec: 'mendel',
-    m: { c: 0, k1: 2, k2: 0 },
+    m: { c: 1, k1: 2, k2: 0 },
     a: { g1: 1, g2: 3, r1: 1, r2: 2 },
     s: { cond: 'dalt', m: 1, p: 0 },
     q: { fase: 'inicio', cola: [], i: 0, puntos: 0, resp: false, filtro: 'todas' }
@@ -491,7 +525,34 @@ export function abrirLabGenetica({ app, volver }) {
   function mezclar(a) { const r = [...a]; for (let i = r.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; } return r; }
   function iniciarQuiz(filtro) {
     const base = PREGUNTAS.filter(p => filtro === 'todas' || p.t === filtro);
-    S.q = { fase: 'pregunta', filtro, i: 0, puntos: 0, resp: false, cola: mezclar(base).map(p => ({ q: p.q, exp: p.exp, o: mezclar(p.o.map((t, i) => ({ t, ok: i === p.ok }))) })) };
+    S.q = { fase: 'pregunta', filtro, i: 0, puntos: 0, resp: false, cola: mezclar(base).map(p => ({ q: p.q, exp: p.exp, boceto: p.t === 'mendel', borrador: {}, o: mezclar(p.o.map((t, i) => ({ t, ok: i === p.ok }))) })) };
+  }
+
+  function bocetoPunnettHTML(q) {
+    if (!q.boceto) return '';
+    const valores = q.borrador || {};
+    const campos = [
+      ['g2a', 'P2 · gameta 1', 'Gameta 1 del progenitor 2'],
+      ['g2b', 'P2 · gameta 2', 'Gameta 2 del progenitor 2'],
+      ['g1a', 'P1 · gameta 1', 'Gameta 1 del progenitor 1'],
+      ['h11', 'F1 · casilla 1', 'Genotipo descendiente 1'],
+      ['h12', 'F1 · casilla 2', 'Genotipo descendiente 2'],
+      ['g1b', 'P1 · gameta 2', 'Gameta 2 del progenitor 1'],
+      ['h21', 'F1 · casilla 3', 'Genotipo descendiente 3'],
+      ['h22', 'F1 · casilla 4', 'Genotipo descendiente 4']
+    ];
+    return `<section class="gen-boceto" aria-label="Cuadro de Punnett editable">
+      <div class="gen-boceto-head">
+        <div><strong>✏️ Tu cuadro de Punnett</strong><small>Completá las gametas y combiná los alelos en las cuatro casillas.</small></div>
+        <button type="button" class="gen-act sec" data-act="q-boceto-clear">Limpiar</button>
+      </div>
+      <div class="gen-boceto-grid">
+        <div class="gen-boceto-corner" aria-hidden="true">×</div>
+        ${campos.slice(0,2).map(([k,l,a]) => `<label class="gen-boceto-item"><span>${l}</span><input type="text" maxlength="4" autocomplete="off" autocapitalize="off" spellcheck="false" data-boceto="${k}" aria-label="${a}" value="${esc(valores[k] || '')}" placeholder="·"></label>`).join('')}
+        ${campos.slice(2).map(([k,l,a]) => `<label class="gen-boceto-item"><span>${l}</span><input type="text" maxlength="4" autocomplete="off" autocapitalize="off" spellcheck="false" data-boceto="${k}" aria-label="${a}" value="${esc(valores[k] || '')}" placeholder="·"></label>`).join('')}
+      </div>
+      <p class="gen-boceto-hint">Es un espacio de trabajo personal: no se corrige ni modifica tu puntaje. Podés escribir Y, y, Yy, etc.</p>
+    </section>`;
   }
 
   function secQuiz() {
@@ -510,6 +571,7 @@ export function abrirLabGenetica({ app, volver }) {
       <div class="gen-prog"><i style="width:${Q.i / Q.cola.length * 100}%"></i></div>
       <div class="gen-card"><h2>${rich(q.q)}</h2>
       <div class="gen-op">${q.o.map((o, i) => `<button type="button" data-act="q-ans" data-v="${i}"><b>${'ABCD'[i]}</b><span>${rich(o.t)}</span></button>`).join('')}</div>
+      ${bocetoPunnettHTML(q)}
       <p class="gen-fb" id="gen-fb" aria-live="polite"></p>
       <button type="button" class="gen-act" id="gen-next" data-act="q-next" disabled>${Q.i === Q.cola.length - 1 ? 'Ver resultado' : 'Siguiente →'}</button></div></div>`;
   }
@@ -538,6 +600,14 @@ export function abrirLabGenetica({ app, volver }) {
       <nav class="gen-tabs" aria-label="Secciones del laboratorio de genética">${SECCIONES.map(([k, ic, n]) => `<button type="button" class="${S.sec === k ? 'on' : ''}" data-act="tab" data-v="${k}" aria-current="${S.sec === k}"><span aria-hidden="true">${ic}</span>${n}</button>`).join('')}</nav>
       <section>${cuerpo}</section></main>`;
     app.querySelector('.gen').addEventListener('click', onClick);
+    app.querySelector('.gen').addEventListener('input', e => {
+      const input = e.target.closest('[data-boceto]');
+      if (!input) return;
+      const actual = S.q.cola[S.q.i];
+      if (!actual || !actual.boceto) return;
+      actual.borrador ||= {};
+      actual.borrador[input.dataset.boceto] = input.value;
+    });
     window.scrollTo(0, irArriba ? 0 : y);
   }
 
@@ -562,6 +632,12 @@ export function abrirLabGenetica({ app, volver }) {
       case 'q-start': iniciarQuiz(v); break;
       case 'q-menu': S.q = { fase: 'inicio', cola: [], i: 0, puntos: 0, resp: false, filtro: 'todas' }; break;
       case 'q-ans': responder(+v); return;
+      case 'q-boceto-clear': {
+        const actual = S.q.cola[S.q.i];
+        if (actual) actual.borrador = {};
+        app.querySelectorAll('[data-boceto]').forEach(input => { input.value = ''; });
+        return;
+      }
       case 'q-next': S.q.i++; S.q.resp = false; if (S.q.i >= S.q.cola.length) S.q.fase = 'fin'; break;
       default: return;
     }
