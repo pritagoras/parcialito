@@ -2351,5 +2351,355 @@
         }
       ]
     }
+  ],
+  "tarjetas": [
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Popper distingue la pregunta psicológica por el origen o génesis de una idea de la pregunta lógica por su validez y contrastación. Que una hipótesis surja de una intuición u observación no constituye por sí mismo su justificación lógica."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Una información empírica finita solo da cuenta de los casos observados. Extender esa regularidad a todos los casos del dominio implica un salto que no posee justificación lógica válida, pues siempre existe el riesgo de que aparezca un caso contrario."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Justificar el principio de inducción basándose en experiencias pasadas implica apelar a un razonamiento inductivo para validar la inducción misma, lo que cae en un círculo vicioso."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Si el principio de inducción se pretende justificar mediante otro de orden superior, este último requerirá a su vez una nueva norma de justificación, conduciendo a una regresión infinita de principios."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Popper señala que apelar al apriorismo kantiano no ofrece una fundamentación satisfactoria para justificar lógicamente enunciados sintéticos universales en el ámbito empírico."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Para asignar grados de probabilidad mediante inducción se necesita una regla que valide esa asignación; si esa regla depende nuevamente de una inferencia probable, reaparece la regresión infinita o la necesidad de un principio a priori."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La comparación lógica interna contrasta las conclusiones derivadas del sistema entre sí con el propósito de examinar su coherencia interna y evitar contradicciones."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El Modus Tollens es la regla deductiva formal que permite concluir la falsedad de la premisa teórica general (no-P) a partir de la negación o incompatibilidad de una de sus consecuencias observacionales (no-Q)."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Existe una asimetría formal: ningún número de verificaciones singulares permite derivar deductivamente la verdad de un enunciado universal, pero una sola consecuencia incompatible permite deducir su falsedad."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La corroboración no es verificación ni prueba de verdad absoluta; simplemente señala que la hipótesis resistió los intentos de contrastación hasta la fecha, manteniéndose vigente de forma provisional."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Exigir verificabilidad concluyente dejaría fuera de la ciencia natural a las mismísimas leyes universales, las cuales abarcan infinitos casos posibles y nunca pueden comprobarse totalmente mediante observaciones finitas."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Un enunciado es falsable cuando posee la propiedad lógica de ofrecer condiciones de fracaso empírico, es decir, cuando existe al menos un falsador potencial que podría contradecirlo."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La falsabilidad es la capacidad o condición estructural de una teoría para someterse a prueba; la falsación es el evento metodológico en el cual la teoría efectivamente choca con un enunciado básico aceptado y queda refutada."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Un falsador potencial es un enunciado básico posible que describe un hecho singular que, de ser aceptado por la comunidad científica, entraría en contradicción directa con la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Los enunciados tautológicos abarcan todas las posibilidades empíricas imaginables, por lo cual no prohiben ningún acontecimiento ni admiten un falsador potencial que pueda ponerlos a prueba."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El problema metodológico señalados para estos sistemas no es que se haya probado su falsedad factual, sino su falta de falsabilidad: sus formulaciones suelen reinterpretar cualquier dato para evitar chocar con la experiencia."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Para que una teoría sea falsada no basta un hecho aislado o dudoso; se requiere corroborar previamente una hipótesis falsadora de bajo nivel que describa de manera reproducible el efecto que contradice a la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Mientras que las leyes universales cuantifican de forma irrestricta sobre todos los casos del dominio, enunciados existenciales como \"existe al menos un cuervo blanco\" tienen un nivel inferior al restringir su cuantificación a parte del dominio."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Un enunciado básico no es la vivencia del observador sino una afirmación lingüística singular acerca de un hecho determinado, apta para actuar como premisa en una contrastación."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Fries planteó que la justificación de los enunciados se enfrenta a tres alternativas problemáticas: aceptarlos sin justificación (dogmatismo), justificarlos mediante otros enunciados de manera interminable (regresión infinita) o basarlos en la experiencia perceptiva (psicologismo)."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Tener una vivencia o percepción es un hecho psicológico individual. Un hecho de la conciencia no puede establecer una relación de justificación lógica con una proposición del lenguaje."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Términos como \"vaso\" o \"blanco\" implican un comportamiento regular y conceptual que va más allá de la pura sensación momentánea, de modo que los enunciados jamás pueden reducirse enteramente a vivencias sensoriales."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Al no existir un fundamento empírico absoluto, la aceptación de los enunciados básicos descansa sobre decisiones o convenciones regladas que adopta de forma intersubjetiva la comunidad científica."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Se trata de una detención táctica para poder poner a prueba la teoría. No es un dogma absoluto porque si surgen dudas o se exige una nueva prueba, el enunciado básico aceptado puede someterse nuevamente a contrastación."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El veredicto del jurado representa la decisión reglada que da por establecido un hecho de manera convencional. Sobre ese veredicto aceptado, el juez aplica luego las relaciones lógicas y legales del sistema."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La metáfora subraya que la ciencia no tiene un fundamento natural definitivo sobre la roca firme de la experiencia. Se hincan pilotes hasta hallar la firmeza suficiente para sostener la estructura, con la posibilidad constante de seguir hundiéndolos si hace falta."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Para Popper, la experiencia no es el origen lógico ni el fundamento de las teorías, sino la instancia negativa encargada de contrastar y eventualmente chocar con las consecuencias derivadas de las conjeturas."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Mientras que el positivismo busca un grado de confirmación o probabilidad creciente mediante la acumulación de datos, para Popper una teoría que supera las pruebas permanece en un estado de corroboración provisional."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Resistir contrastaciones severas constituye un éxito provisorio denominado corroboración. Afirmar que una teoría ha quedado demostrada como verdadera ignora la asimetría lógica de la refutación y la posibilidad de fallar en el futuro."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Dado que las vivencias subjetivas no garantizan la verdad, la objetividad popperiana se basa en el carácter público, regulado e intersubjetivo del método científico y sus decisiones de aceptación o revisión."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error lógico o epistemológico conviene evitar?",
+      "dorso": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
+    },
+    {
+      "frente": "Karl Popper · ¿Una teoría falsable es necesariamente falsa?",
+      "dorso": "No. Falsable significa que podría entrar en conflicto con ciertos resultados. Puede superar contrastaciones y continuar siendo provisionalmente aceptada."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué ejemplo distingue ambas nociones?",
+      "dorso": "Una teoría puede ser falsable desde que se formula y no haber sido falsada; solo se habla de falsación cuando se acepta un resultado incompatible mediante una contrastación adecuada."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué significa correr un riesgo empírico?",
+      "dorso": "Que la teoría prohíbe ciertos resultados concebibles y especifica qué observación, bajo condiciones adecuadas, entraría en conflicto con ella."
+    },
+    {
+      "frente": "Karl Popper · ¿Por qué una teoría que lo explica todo puede explicar demasiado poco?",
+      "dorso": "Porque no prohíbe ningún resultado y no permite diseñar una prueba capaz de mostrar que falla."
+    },
+    {
+      "frente": "Karl Popper · ¿Cuál es la tríada que conviene distinguir?",
+      "dorso": "Falsable: puede entrar en conflicto con un resultado; falsada: se aceptó un resultado incompatible; corroborada: resistió pruebas determinadas."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué hace severa a una prueba?",
+      "dorso": "Que expone a la teoría a un riesgo real de fracasar: deben estar claros los resultados posibles que contarían en su contra."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué sí puede aportar una serie de casos favorables?",
+      "dorso": "Puede contribuir a la corroboración provisional de la teoría, especialmente si las pruebas fueron exigentes, pero no a su verificación final."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué diferencia hay entre inducción y deducción?",
+      "dorso": "La inducción intenta pasar de casos observados a una ley general; la deducción extrae consecuencias lógicas de hipótesis ya formuladas."
+    },
+    {
+      "frente": "Karl Popper · ¿Una teoría bien corroborada puede ser falsable?",
+      "dorso": "Sí. Una teoría puede haber resistido contrastaciones exigentes y seguir siendo susceptible de entrar en conflicto con nuevos resultados."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué error aparece al pasar de «P ocurrió» a «T es verdadera»?",
+      "dorso": "Se incurre en una inferencia inválida, como afirmar el consecuente: que una predicción se cumpla no demuestra que la teoría sea la única explicación posible."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué diferencia hay entre los tres cuernos?",
+      "dorso": "Dogmatismo detiene la justificación; regresión infinita la prolonga sin término; psicologismo la apoya en una experiencia privada."
+    },
+    {
+      "frente": "Karl Popper · ¿Observar y justificar son lo mismo?",
+      "dorso": "No. La percepción puede motivar una observación, pero justificar científicamente exige enunciados examinables y controles intersubjetivos."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué diferencia hay entre origen psicológico y justificación lógica?",
+      "dorso": "Una percepción puede explicar por qué surgió una hipótesis, pero su evaluación depende de razones y pruebas intersubjetivas."
+    },
+    {
+      "frente": "Karl Popper · ¿Cómo evita Popper el fundamento absoluto?",
+      "dorso": "Acepta provisionalmente enunciados básicos mediante decisiones metodológicas intersubjetivas, que permanecen revisables y sometidas a controles."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué diferencia la convención metodológica del dogmatismo?",
+      "dorso": "La convención popperiana se sostiene en controles públicos y puede reabrirse; el dogmatismo trata el punto de partida como intocable."
+    },
+    {
+      "frente": "Karl Popper · ¿Por qué no se identifican con sensaciones?",
+      "dorso": "Porque una sensación es un estado psicológico; un enunciado básico es una proposición pública que puede ser examinada y discutida."
+    },
+    {
+      "frente": "Karl Popper · ¿Por qué la aceptación no equivale a arbitrariedad?",
+      "dorso": "Porque los enunciados deben someterse a controles, discusión e inspecciones intersubjetivas; no quedan fuera de la crítica."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué evita esta metáfora?",
+      "dorso": "Evita tanto buscar una certeza perceptiva absoluta como aceptar enunciados sin controles críticos."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué lugar ocupa el desacuerdo?",
+      "dorso": "El desacuerdo puede reabrir la revisión del enunciado, pedir nuevos controles y someter la decisión metodológica a crítica."
+    },
+    {
+      "frente": "Karl Popper · ¿Por qué el resultado no «habla solo»?",
+      "dorso": "Porque hay que revisar instrumentos, mediciones y condiciones; puede ser necesaria una hipótesis falsadora de nivel inferior que describa el resultado."
+    },
+    {
+      "frente": "Karl Popper · ¿Por qué se requieren niveles distintos de hipótesis?",
+      "dorso": "La teoría general produce consecuencias; una hipótesis empírica más específica permite describir y controlar el resultado que entraría en conflicto con ellas."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué diferencia hay entre una anomalía de medición y una falsación?",
+      "dorso": "Una anomalía puede deberse a un error instrumental; la falsación requiere aceptar un enunciado básico incompatible después de controles apropiados."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué conclusión sí es legítima?",
+      "dorso": "Que la teoría resistió esa contrastación y puede considerarse corroborada en ese contexto, sin excluir futuras pruebas."
+    },
+    {
+      "frente": "Karl Popper · ¿Qué lugar ocupa la inducción en este esquema?",
+      "dorso": "No justifica lógicamente leyes universales; Popper privilegia la formulación de hipótesis y la deducción de consecuencias sometibles a pruebas."
+    },
+    {
+      "frente": "Karl Popper · ¿Por qué esta solución no es dogmática?",
+      "dorso": "Porque la aceptación no se considera final ni inmune a la crítica: se apoya en procedimientos de examen compartido."
+    },
+    {
+      "frente": "Karl Popper · ¿Cuál es el error en afirmar «no fue falsada, por lo tanto no es falsable»?",
+      "dorso": "Confunde una propiedad de la teoría con su historia de contrastaciones: una teoría puede ser falsable aunque todavía no haya sido refutada."
+    }
   ]
 }
