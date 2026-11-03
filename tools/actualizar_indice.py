@@ -35,11 +35,31 @@ def leer_meta_materia(carpeta: Path) -> dict:
         return {}
 
 
+def leer_configuraciones_extra() -> dict:
+    """Conserva metadatos especiales del índice que no pertenecen a temas estándar."""
+    ruta = DATA / "index.json"
+    try:
+        previo = json.loads(ruta.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError, UnicodeDecodeError):
+        return {}
+
+    extras = {}
+    campos_generados = {"id", "nombre", "emoji", "color", "temas"}
+    for materia in previo.get("materias", []):
+        if not isinstance(materia, dict) or not isinstance(materia.get("id"), str):
+            continue
+        propios = {k: v for k, v in materia.items() if k not in campos_generados}
+        if propios:
+            extras[materia["id"]] = propios
+    return extras
+
+
 def main() -> int:
     if not DATA.exists():
         print("No existe la carpeta data/.")
         return 1
 
+    extras_materia = leer_configuraciones_extra()
     archivos = archivos_de_preguntas()
     hay_errores = False
     por_materia = {}
@@ -105,6 +125,8 @@ def main() -> int:
         if meta.get("color"):
             materia["color"] = meta["color"]
         materia["temas"] = []
+        # Ej.: IPC conserva su bloque "segundoParcial", cargado por un módulo propio.
+        materia.update(extras_materia.get(carpeta.name, {}))
 
         for ruta, datos, n in temas_archivo:
             n_tarjetas = len(datos.get("tarjetas", [])) if isinstance(datos.get("tarjetas"), list) else 0
