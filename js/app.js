@@ -1638,7 +1638,7 @@ async function vistaBancoIPC(m, materiaIndex, autoresIniciales = m.segundoParcia
             </div>
             <h2>${esc(q.texto)}</h2>
             <ol class="ipc-p2-banco-opciones">
-              ${q.opciones.map((op, k) => `<li class="${k === q.correcta ? 'correcta' : ''}"><b>${L[k]}.</b><span>${esc(op)}</span>${k === q.correcta ? '<strong>Correcta</strong>' : ''}</li>`).join('')}
+              ${q.opciones.map((op, k) => `<li class="${k === q.correcta ? 'correcta' : ''}"><b>${LETRAS[k]}.</b><span>${esc(op)}</span>${k === q.correcta ? '<strong>Correcta</strong>' : ''}</li>`).join('')}
             </ol>
             <section class="ipc-p2-justificacion">
               <h3>Justificación de la respuesta correcta</h3>
