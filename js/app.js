@@ -226,24 +226,38 @@ function urlImagen(valor) {
 function normalizar(json, tema, materia) {
   const salida = [];
   (json.preguntas || []).forEach((p, n) => {
-    const ops = Array.isArray(p.opciones) ? p.opciones.map(String) : [];
-    const idx = LETRAS.indexOf(String(p.correcta || '').trim().toUpperCase());
-    if (!p.pregunta || ops.length !== 4 || idx < 0) {
+    const textoPregunta = String(p.enunciado ?? p.pregunta ?? '').trim();
+    const ops = Array.isArray(p.opciones)
+      ? p.opciones.map((op) => String(typeof op === 'object' && op !== null ? (op.texto ?? op.text ?? '') : op))
+      : [];
+    const clave = String(p.respuestaCorrecta ?? p.correcta ?? '').trim().toUpperCase();
+    const idx = LETRAS.indexOf(clave);
+    if (!textoPregunta || ops.length !== 4 || ops.some((op) => !op) || idx < 0) {
       console.warn(`[Repaso] Pregunta ${n + 1} de "${tema.id}" descartada: formato inválido.`);
       return;
     }
+    const expansion = Array.isArray(p.expansionEstudio)
+      ? p.expansionEstudio
+          .filter((x) => x && (x.pregunta || x.respuesta))
+          .map((x) => ({ pregunta: String(x.pregunta || ''), respuesta: String(x.respuesta || '') }))
+      : [];
     salida.push({
-      id: p.id || hash(p.pregunta),
-      texto: String(p.pregunta),
+      id: p.id || hash(textoPregunta),
+      texto: textoPregunta,
       opciones: ops,
       correcta: idx,
-      explicacion: p.explicacion ? String(p.explicacion) : '',
+      explicacion: String(p.justificacionCorrecta ?? p.explicacion ?? ''),
+      refutacionIncorrectas: p.refutacionIncorrectas && typeof p.refutacionIncorrectas === 'object'
+        ? p.refutacionIncorrectas
+        : {},
+      expansionEstudio: expansion,
+      autor: String(p.autor || ''),
+      subtema: String(p.subtema || ''),
       imagen: urlImagen(p.imagen),
       imagenAlt: p.imagen_alt ? String(p.imagen_alt) : '',
-      tema: tema.nombre,
+      tema: p.subtema ? `${p.autor ? p.autor + ' · ' : ''}${p.subtema}` : tema.nombre,
       temaId: tema.id,
       materia: materia.nombre,
-      // Procedencia exacta para que cada reporte pueda volver al JSON original.
       archivoJson: tema.archivo || null,
       numeroPregunta: n + 1,
     });
@@ -1307,6 +1321,7 @@ function vistaMateria(i) {
       </div>
       ${actividades.length ? `<button class="banner-repaso" id="btn-grupo-juegos"><span>🎮 Juegos interactivos<small>${plural(actividades.length, 'juego disponible', 'juegos disponibles')} · elegí cuál abrir</small></span><b>▶</b></button>` : ''}
       ${m.temas.some(tieneCrucigrama) ? `<button class="banner-repaso" id="btn-grupo-crucigramas"><span>🔤 Crucigramas<small>${plural(m.temas.filter(tieneCrucigrama).length, 'crucigrama disponible', 'crucigramas disponibles')} · elegí un tema</small></span><b>▶</b></button>` : ''}
+      ${m.segundoParcial ? `<button class="banner-repaso ipc-p2-entry" id="btn-ipc-p2"><span>📚 Segundo Parcial<small>${m.segundoParcial.preguntas} preguntas · Hacking, Popper, Foucault, Kuhn e integrador</small></span><b>▶</b></button>` : ''}
       <div class="temas-barra">
         <span>Temas</span>
         <button class="btn enlace" id="btn-todos"></button>
@@ -1371,6 +1386,10 @@ function vistaMateria(i) {
     Sonido.clic();
     vistaSelectorCrucigramas(m, i);
   });
+  document.getElementById('btn-ipc-p2')?.addEventListener('click', () => {
+    Sonido.clic();
+    vistaIPCSegundoParcial(m, i);
+  });
 
   btnEmpezar.addEventListener('click', () => {
     Sonido.clic();
@@ -1387,6 +1406,298 @@ function vistaMateria(i) {
 
   actualizar();
   window.scrollTo(0, 0);
+}
+
+
+// ---------- IPC: Segundo Parcial por autor ----------
+
+function vistaIPCSegundoParcial(m, materiaIndex) {
+  const config = m.segundoParcial;
+  if (!config?.autores?.length) {
+    vistaMateria(materiaIndex);
+    avisar('No se encontró la configuración del Segundo Parcial de IPC.');
+    return;
+  }
+  let autorActivo = 'todos';
+  const autores = config.autores;
+  const listaAutores = () => autorActivo === 'todos'
+    ? autores
+    : autores.filter((a) => a.clave === autorActivo);
+  const cantidadActiva = () => listaAutores().reduce((s, a) => s + (a.preguntas || 0), 0);
+
+  app.innerHTML = `
+    <main class="pantalla ipc-p2-wrap">
+      <button class="btn enlace" id="btn-ipc-p2-volver">← IPC</button>
+      <div class="titulo-materia">
+        <span class="emoji" aria-hidden="true">📜</span>
+        <h1>Segundo Parcial</h1>
+      </div>
+      <p class="bajada">Banco de estudio por autor y un bloque integrador. Cada pregunta incluye explicación, análisis de distractores y expansión de estudio.</p>
+      <section class="ipc-p2-resumen">
+        <strong>${config.preguntas}</strong>
+        <span>preguntas de opción múltiple</span>
+        <small>5 bloques · cuestionarios y consulta imprimible</small>
+      </section>
+      <section class="ipc-p2-selector">
+        <h2>Elegí el autor o el bloque</h2>
+        <div class="ipc-p2-chips" id="ipc-p2-chips">
+          <button class="ipc-p2-chip activa" type="button" data-autor="todos" aria-pressed="true">Todos <small>${config.preguntas}</small></button>
+          ${autores.map((a) => `<button class="ipc-p2-chip" type="button" data-autor="${esc(a.clave)}" aria-pressed="false">${esc(a.etiqueta)} <small>${a.preguntas}</small></button>`).join('')}
+        </div>
+        <p class="ipc-p2-seleccion" id="ipc-p2-seleccion">Todos los bloques · ${config.preguntas} preguntas</p>
+        <div class="ipc-p2-acciones">
+          <button class="btn primario" id="btn-ipc-p2-practicar">Practicar los 5 bloques →</button>
+          <button class="btn secundario" id="btn-ipc-p2-banco">Consultar banco completo</button>
+        </div>
+      </section>
+      <section class="ipc-p2-autores" aria-label="Bloques por autor">
+        ${autores.map((a) => `
+          <article class="ipc-p2-autor">
+            <div class="ipc-p2-autor-cabecera">
+              <h3>${esc(a.autor)}</h3>
+              <span>${a.preguntas} preguntas</span>
+            </div>
+            <p>${esc(a.clave === 'hacking' ? 'Clases humanas · efecto de bucle · nicho ecológico · ontología histórica · representar e intervenir' :
+              a.clave === 'popper' ? 'Falsabilidad · corroboración · base empírica · enunciados básicos · modus tollens' :
+              a.clave === 'foucault' ? 'Poder-saber · microfísica · Panóptico · disciplina · genealogía del castigo' :
+              a.clave === 'kuhn' ? 'Matriz disciplinar · ciencia normal · anomalías · revoluciones · inconmensurabilidad · Kuhn-loss' :
+              'Kuhn · Foucault · Bourdieu · visibilidad · habitus y campo')}</p>
+            <div class="ipc-p2-autor-acciones">
+              <button class="btn enlace" type="button" data-practicar-autor="${esc(a.clave)}">Practicar este bloque →</button>
+              <button class="btn enlace" type="button" data-ver-autor="${esc(a.clave)}">Ver preguntas</button>
+            </div>
+          </article>`).join('')}
+      </section>
+    </main>`;
+
+  document.getElementById('btn-ipc-p2-volver').addEventListener('click', () => {
+    Sonido.clic();
+    vistaMateria(materiaIndex);
+  });
+  const botonPracticar = document.getElementById('btn-ipc-p2-practicar');
+  const botonBanco = document.getElementById('btn-ipc-p2-banco');
+
+  function actualizarSeleccion() {
+    const lista = listaAutores();
+    const total = cantidadActiva();
+    app.querySelectorAll('[data-autor]').forEach((b) => {
+      const activo = b.dataset.autor === autorActivo;
+      b.classList.toggle('activa', activo);
+      b.setAttribute('aria-pressed', String(activo));
+    });
+    document.getElementById('ipc-p2-seleccion').textContent = autorActivo === 'todos'
+      ? `Todos los bloques · ${total} preguntas`
+      : `${lista[0].autor} · ${total} preguntas`;
+    botonPracticar.textContent = autorActivo === 'todos'
+      ? `Practicar los 5 bloques (${total}) →`
+      : `Practicar ${lista[0].etiqueta} (${total}) →`;
+  }
+
+  app.querySelectorAll('[data-autor]').forEach((b) => b.addEventListener('click', () => {
+    Sonido.clic();
+    autorActivo = b.dataset.autor;
+    actualizarSeleccion();
+  }));
+  botonPracticar.addEventListener('click', () => {
+    Sonido.clic();
+    lanzarIPCSegundoParcial(m, materiaIndex, listaAutores());
+  });
+  botonBanco.addEventListener('click', () => {
+    Sonido.clic();
+    vistaBancoIPC(m, materiaIndex, listaAutores());
+  });
+  app.querySelectorAll('[data-practicar-autor]').forEach((b) => b.addEventListener('click', () => {
+    Sonido.clic();
+    const autor = autores.find((a) => a.clave === b.dataset.practicarAutor);
+    if (autor) lanzarIPCSegundoParcial(m, materiaIndex, [autor]);
+  }));
+  app.querySelectorAll('[data-ver-autor]').forEach((b) => b.addEventListener('click', () => {
+    Sonido.clic();
+    const autor = autores.find((a) => a.clave === b.dataset.verAutor);
+    if (autor) vistaBancoIPC(m, materiaIndex, [autor]);
+  }));
+  actualizarSeleccion();
+  window.scrollTo(0, 0);
+}
+
+async function cargarPreguntasIPC(m, autores) {
+  const pool = [];
+  for (const autor of autores) {
+    const tema = {
+      id: autor.id,
+      nombre: autor.etiqueta || autor.autor,
+      archivo: autor.archivo,
+      preguntas: autor.preguntas || 0,
+    };
+    pool.push(...await cargarTema(tema, m));
+  }
+  return pool;
+}
+
+async function lanzarIPCSegundoParcial(m, materiaIndex, autores) {
+  vistaCargando('Preparando el Segundo Parcial de IPC…');
+  try {
+    const pool = mezclar(await cargarPreguntasIPC(m, autores));
+    if (!pool.length) throw new Error('No se encontraron preguntas en los bloques elegidos.');
+    const nombre = autores.length === 1 ? autores[0].autor : 'Segundo Parcial';
+    empezarJuego(pool, {
+      titulo: `IPC · ${nombre}`,
+      temaId: autores.length === 1 ? autores[0].id : null,
+      categoria: 'ipc-segundo-parcial',
+      ranking: true,
+      materiaNombre: m.nombre,
+      temaNombre: nombre,
+      repetir: () => lanzarIPCSegundoParcial(m, materiaIndex, autores),
+      volver: () => vistaIPCSegundoParcial(m, materiaIndex),
+    });
+  } catch (e) {
+    vistaError(e);
+  }
+}
+
+async function vistaBancoIPC(m, materiaIndex, autoresIniciales = m.segundoParcial.autores) {
+  vistaCargando('Cargando el banco de IPC…');
+  try {
+    const pool = await cargarPreguntasIPC(m, autoresIniciales);
+    const autoresDisponibles = autoresIniciales;
+    const subtemas = [...new Set(pool.map((q) => q.subtema).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'es'));
+    let autorFiltro = '';
+    let subtemaFiltro = '';
+    let busqueda = '';
+    let pagina = 0;
+    let porPagina = 20;
+
+    app.innerHTML = `
+      <main class="pantalla ipc-p2-bank-print">
+        <div class="ipc-p2-bank-head ipc-no-print">
+          <button class="btn enlace" id="btn-ipc-banco-volver">← Segundo Parcial</button>
+          <div class="ipc-p2-bank-actions">
+            <button class="btn secundario" id="btn-ipc-banco-print">Imprimir / guardar PDF</button>
+            <button class="btn primario" id="btn-ipc-banco-practicar">Practicar búsqueda →</button>
+          </div>
+        </div>
+        <div class="titulo-materia">
+          <span class="emoji" aria-hidden="true">📚</span>
+          <h1>Banco de preguntas · IPC</h1>
+        </div>
+        <p class="bajada ipc-no-print">Consultá justificaciones, refutaciones y expansiones. La impresión incluye todos los resultados del filtro seleccionado.</p>
+        <section class="ipc-p2-bank-filtros ipc-no-print">
+          <label><span>Buscar enunciado, opción o explicación</span><input id="ipc-buscar" type="search" placeholder="Ej.: efecto de bucle, enunciado básico, Panóptico…" autocomplete="off"></label>
+          <label><span>Autor</span><select id="ipc-filtro-autor">
+            <option value="">Todos los autores incluidos</option>
+            ${autoresDisponibles.map((a) => `<option value="${esc(a.clave)}">${esc(a.etiqueta)}</option>`).join('')}
+          </select></label>
+          <label><span>Subtema</span><select id="ipc-filtro-subtema">
+            <option value="">Todos los subtemas</option>
+            ${subtemas.map((s) => `<option value="${esc(s)}">${esc(s)}</option>`).join('')}
+          </select></label>
+        </section>
+        <div class="ipc-p2-bank-count" id="ipc-banco-estado" aria-live="polite"></div>
+        <section class="ipc-p2-bank-lista" id="ipc-banco-lista"></section>
+        <nav class="ipc-p2-bank-pages ipc-no-print" id="ipc-banco-paginacion" aria-label="Páginas del banco"></nav>
+        <footer class="ipc-p2-bank-footer">
+          Parcialito · IPC · Segundo Parcial · ${pool.length} preguntas cargadas
+        </footer>
+      </main>`;
+
+    document.getElementById('btn-ipc-banco-volver').addEventListener('click', () => {
+      Sonido.clic();
+      vistaIPCSegundoParcial(m, materiaIndex);
+    });
+    const input = document.getElementById('ipc-buscar');
+    const selectAutor = document.getElementById('ipc-filtro-autor');
+    const selectSubtema = document.getElementById('ipc-filtro-subtema');
+
+    const filtradas = () => pool.filter((q) => {
+      if (autorFiltro && q.autor !== (autoresDisponibles.find((a) => a.clave === autorFiltro)?.autor || '')) return false;
+      if (subtemaFiltro && q.subtema !== subtemaFiltro) return false;
+      if (!busqueda) return true;
+      const refs = Object.values(q.refutacionIncorrectas || {});
+      const exp = (q.expansionEstudio || []).flatMap((x) => [x.pregunta, x.respuesta]);
+      const texto = [q.texto, q.autor, q.subtema, ...q.opciones, q.explicacion, ...refs, ...exp].join(' ').toLocaleLowerCase('es');
+      return texto.includes(busqueda);
+    });
+
+    function pintarBanco() {
+      const todos = filtradas();
+      const totalPaginas = Math.max(1, Math.ceil(todos.length / porPagina));
+      pagina = Math.min(pagina, totalPaginas - 1);
+      const inicio = pagina * porPagina;
+      const visibles = todos.slice(inicio, inicio + porPagina);
+      document.getElementById('ipc-banco-estado').textContent = todos.length
+        ? `Mostrando ${inicio + 1}–${inicio + visibles.length} de ${todos.length} preguntas`
+        : 'No hay preguntas que coincidan con los filtros.';
+      document.getElementById('ipc-banco-lista').innerHTML = visibles.map((q, n) => {
+        const refs = Object.entries(q.refutacionIncorrectas || {});
+        const expansiones = q.expansionEstudio || [];
+        return `
+          <article class="ipc-p2-banco-pregunta">
+            <div class="ipc-p2-banco-meta">
+              <span>Pregunta ${inicio + n + 1}</span>
+              <span>${esc(q.autor || 'IPC')} · ${esc(q.subtema || q.tema)}</span>
+            </div>
+            <h2>${esc(q.texto)}</h2>
+            <ol class="ipc-p2-banco-opciones">
+              ${q.opciones.map((op, k) => `<li class="${k === q.correcta ? 'correcta' : ''}"><b>${L[k]}.</b><span>${esc(op)}</span>${k === q.correcta ? '<strong>Correcta</strong>' : ''}</li>`).join('')}
+            </ol>
+            <section class="ipc-p2-justificacion">
+              <h3>Justificación de la respuesta correcta</h3>
+              <p>${esc(q.explicacion || 'Sin justificación cargada.')}</p>
+            </section>
+            ${refs.length ? `<details class="ipc-p2-distractores" open>
+              <summary>Refutación de las respuestas incorrectas</summary>
+              <ul>${refs.map(([letra, motivo]) => `<li><b>${esc(letra)}.</b> ${esc(motivo)}</li>`).join('')}</ul>
+            </details>` : ''}
+            ${expansiones.length ? `<section class="ipc-p2-expansion">
+              <h3>Expansión de estudio</h3>
+              ${expansiones.map((x) => `<div><h4>${esc(x.pregunta)}</h4><p>${esc(x.respuesta)}</p></div>`).join('')}
+            </section>` : ''}
+          </article>`;
+      }).join('');
+      document.getElementById('ipc-banco-paginacion').innerHTML = `
+        <button class="btn secundario" id="ipc-pagina-anterior" ${pagina === 0 ? 'disabled' : ''}>← Anterior</button>
+        <span>Página ${pagina + 1} de ${totalPaginas}</span>
+        <button class="btn secundario" id="ipc-pagina-siguiente" ${pagina >= totalPaginas - 1 ? 'disabled' : ''}>Siguiente →</button>`;
+      document.getElementById('ipc-pagina-anterior').addEventListener('click', () => { pagina--; pintarBanco(); window.scrollTo(0, 0); });
+      document.getElementById('ipc-pagina-siguiente').addEventListener('click', () => { pagina++; pintarBanco(); window.scrollTo(0, 0); });
+      document.getElementById('btn-ipc-banco-practicar').disabled = todos.length === 0;
+      document.getElementById('btn-ipc-banco-practicar').textContent = `Practicar estas ${todos.length} preguntas →`;
+    }
+
+    input.addEventListener('input', () => { busqueda = input.value.trim().toLocaleLowerCase('es'); pagina = 0; pintarBanco(); });
+    selectAutor.addEventListener('change', () => { autorFiltro = selectAutor.value; pagina = 0; pintarBanco(); });
+    selectSubtema.addEventListener('change', () => { subtemaFiltro = selectSubtema.value; pagina = 0; pintarBanco(); });
+    document.getElementById('btn-ipc-banco-practicar').addEventListener('click', () => {
+      const poolFiltrado = filtradas();
+      if (!poolFiltrado.length) return;
+      Sonido.clic();
+      const keys = autoresDisponibles.filter((a) => poolFiltrado.some((q) => q.temaId === a.id));
+      empezarJuego(mezclar(poolFiltrado), {
+        titulo: 'IPC · Segundo Parcial',
+        temaId: keys.length === 1 ? keys[0].id : null,
+        categoria: 'ipc-segundo-parcial',
+        ranking: true,
+        materiaNombre: m.nombre,
+        temaNombre: keys.length === 1 ? keys[0].autor : 'Banco filtrado',
+        repetir: () => vistaBancoIPC(m, materiaIndex, keys.length ? keys : autoresDisponibles),
+        volver: () => vistaBancoIPC(m, materiaIndex, autoresDisponibles),
+      });
+    });
+    document.getElementById('btn-ipc-banco-print').addEventListener('click', () => {
+      Sonido.clic();
+      porPagina = Math.max(1, filtradas().length);
+      pagina = 0;
+      pintarBanco();
+      window.print();
+      porPagina = 20;
+      pintarBanco();
+    });
+
+    pintarBanco();
+    window.scrollTo(0, 0);
+  } catch (e) {
+    vistaError(e);
+  }
 }
 
 // ---------- Armado de partidas ----------
@@ -1667,6 +1978,19 @@ function mostrarPregunta() {
   });
 }
 
+
+function detalleDidacticoHTML(q) {
+  const refs = Object.entries(q.refutacionIncorrectas || {});
+  const expansion = q.expansionEstudio || [];
+  if (!refs.length && !expansion.length) return '';
+  return `
+    <details class="detalle-didactico">
+      <summary>Analizar distractores y ampliar estudio</summary>
+      ${refs.length ? `<section><h4>Por qué son incorrectas las otras opciones</h4><ul>${refs.map(([letra, texto]) => `<li><b>${esc(letra)}.</b> ${esc(texto)}</li>`).join('')}</ul></section>` : ''}
+      ${expansion.length ? `<section><h4>Expansión de estudio</h4>${expansion.map((x) => `<div class="detalle-expansion"><strong>${esc(x.pregunta)}</strong><p>${esc(x.respuesta)}</p></div>`).join('')}</section>` : ''}
+    </details>`;
+}
+
 function responder(pos) {
   const j = juego;
   if (!j || j.respondida) return;
@@ -1738,7 +2062,10 @@ function responder(pos) {
   reaccionMascota(acerto, acerto && !modoLimpio && HITOS.includes(j.racha));
   guardar();
 
-  feedback.innerHTML = veredicto + (q.explicacion ? `<p class="explicacion">${esc(q.explicacion)}</p>` : '') + (modoLimpio ? '' : textoDificultad(q.id));
+  feedback.innerHTML = veredicto
+    + (q.explicacion ? `<p class="explicacion">${esc(q.explicacion)}</p>` : '')
+    + detalleDidacticoHTML(q)
+    + (modoLimpio ? '' : textoDificultad(q.id));
 
   const ultima = j.i === j.preguntas.length - 1;
   document.getElementById('barra').style.width = `${((j.i + 1) / j.preguntas.length) * 100}%`;
