@@ -102,6 +102,14 @@ const PREGUNTAS = [
   { t: 'mendel', q: "Una línea pura amarilla se cruza con una línea pura verde. ¿Qué proporción de la F1 será heterocigota?", o: ["0 %","25 %","50 %","100 %"], ok: 3, exp: "Todos los descendientes reciben Y del parental amarillo YY e y del verde yy. Por lo tanto, el 100 % es heterocigota Yy." },
   { t: 'mendel', q: "¿Cuál de estas afirmaciones diferencia correctamente fenotipo y genotipo en la F1 de YY × yy?", o: ["Fenotipo: Yy; genotipo: amarillo","Fenotipo: amarillo; genotipo: Yy","Fenotipo: verde; genotipo: yy","Fenotipo y genotipo significan lo mismo"], ok: 1, exp: "El genotipo es la combinación de alelos (Yy); el fenotipo es el rasgo observable (semillas amarillas)." },
   { t: 'mendel', q: "Un informe indica que la F1 fue 100 % amarilla y 100 % Yy. ¿Qué conclusión es compatible con el modelo mendeliano de líneas puras?", o: ["Un parental YY y el otro yy","Ambos parentales yy","Ambos parentales YY","Un parental Yy y el otro yy"], ok: 0, exp: "El cruce entre líneas puras YY y yy explica que toda la F1 sea heterocigota Yy y exprese el color amarillo." },
+  // --- Dominancia incompleta y codominancia
+  { t: 'dom', q: 'Se cruzan un dondiego de noche de flores rojas (C^RC^R) con uno de flores blancas (C^BC^B). Hay dominancia incompleta. ¿Cómo es la F1?', o: ['Todas rojas', 'Todas rosadas', 'La mitad rojas y la mitad blancas', 'Todas blancas'], ok: 1, exp: 'Toda la F1 es C^RC^B. Como ningún alelo domina del todo, el heterocigota tiene un fenotipo intermedio: flores rosadas.' },
+  { t: 'dom', q: 'Al cruzar dos dondiegos de flores rosadas (C^RC^B × C^RC^B), ¿qué proporción fenotípica se espera en la F2?', o: ['3 rosadas : 1 blanca', '1 roja : 2 rosadas : 1 blanca', '1 roja : 1 blanca', '100 % rosadas'], ok: 1, exp: 'Salen 1 C^RC^R (roja), 2 C^RC^B (rosadas) y 1 C^BC^B (blanca). En la dominancia incompleta la proporción fenotípica coincide con la genotípica.' },
+  { t: 'dom', q: '¿Cuál es la diferencia entre dominancia incompleta y codominancia?', o: ['En la codominancia el heterocigota muestra los dos fenotipos a la vez; en la incompleta muestra uno intermedio', 'En la incompleta los dos alelos se expresan sin mezclarse; en la codominancia hay un fenotipo intermedio', 'No hay diferencia: son dos nombres para lo mismo', 'En la codominancia el alelo recesivo desaparece de la F1'], ok: 0, exp: 'Incompleta: fenotipo intermedio, como la flor rosada. Codominancia: se expresan los dos alelos a la vez, como los antígenos A y B del grupo AB.' },
+  { t: 'dom', q: 'En el ganado Shorthorn, el cruce de un animal rojo con uno blanco da terneros ruanos, con pelos rojos y pelos blancos. ¿Qué tipo de herencia es?', o: ['Dominancia completa', 'Dominancia incompleta', 'Codominancia', 'Herencia ligada al sexo'], ok: 2, exp: 'Los dos alelos se expresan a la vez: cada pelo es rojo o blanco, no hay un color intermedio mezclado.' },
+  { t: 'dom', q: '¿Cómo cambia la proporción fenotípica de la F2 (heterocigota × heterocigota) en la dominancia incompleta respecto de la dominancia completa?', o: ['Sigue siendo 3 : 1', 'Pasa a 1 : 2 : 1, porque el heterocigota se distingue', 'Pasa a 1 : 1', 'Pasa a 9 : 3 : 3 : 1'], ok: 1, exp: 'Con dominancia completa, AA y Aa se ven igual (3 : 1). Con dominancia incompleta, cada genotipo tiene su fenotipo (1 : 2 : 1).' },
+  { t: 'dom', q: 'Una persona del grupo AB (I^AI^B) es un ejemplo de…', o: ['dominancia completa del alelo A', 'dominancia incompleta', 'codominancia entre I^A e I^B', 'herencia ligada al X'], ok: 2, exp: 'Los dos alelos se expresan a la vez: el glóbulo rojo lleva antígenos A y B.' },
+  { t: 'dom', q: 'En dominancia incompleta, se cruza una planta de flores rosadas con una de flores blancas. ¿Qué descendencia se espera?', o: ['Todas rosadas', 'Todas blancas', '50 % rosadas y 50 % blancas', '25 % rojas, 50 % rosadas y 25 % blancas'], ok: 2, exp: 'C^RC^B × C^BC^B da 50 % C^RC^B (rosadas) y 50 % C^BC^B (blancas). No aparecen rojas porque ningún progenitor aporta C^R en las dos gametas.' },
   // --- Grupos sanguíneos
   { t: 'abo', q: '¿Cuántos alelos distintos existen en la población para el grupo sanguíneo ABO?', o: ['Dos: A y B', 'Tres: I^A, I^B e i', 'Cuatro: A, B, AB y O', 'Uno solo'], ok: 1, exp: 'Es un caso de alelismo múltiple: en la población hay tres alelos, pero cada persona tiene solo dos.' },
   { t: 'abo', q: 'Una persona con genotipo I^AI^B tiene grupo AB porque los alelos I^A e I^B son…', o: ['recesivos entre sí', 'codominantes', 'letales en conjunto', 'ligados al sexo'], ok: 1, exp: 'En la codominancia los dos alelos se expresan a la vez: el glóbulo rojo lleva antígenos A y B.' },
@@ -122,7 +130,7 @@ const PREGUNTAS = [
   { t: 'sexo', q: '¿Qué proteína falta en la hemofilia A y cuál en la hemofilia B?', o: ['Hemofilia A: factor IX; hemofilia B: factor VIII', 'Hemofilia A: factor VIII; hemofilia B: factor IX', 'En las dos falta la hemoglobina', 'En las dos falta el fibrinógeno'], ok: 1, exp: 'La A (la más frecuente) es una deficiencia del factor VIII y la B del factor IX. Los dos genes están en el X.' },
   { t: 'sexo', q: '¿Puede un varón transmitir un alelo ligado al X a su hijo varón?', o: ['Sí, siempre', 'Sí, solo si está afectado', 'No: a sus hijos varones les da el cromosoma Y', 'Sí, si su pareja es portadora'], ok: 2, exp: 'Un varón le da el Y a sus hijos varones y el X a sus hijas. Por eso no hay transmisión de padre a hijo varón en la herencia ligada al X.' }
 ];
-const TEMAS_Q = [['todas', 'Todo el laboratorio'], ['mendel', 'Mendel'], ['abo', 'Grupos sanguíneos'], ['sexo', 'Daltonismo y hemofilia']];
+const TEMAS_Q = [['todas', 'Todo el laboratorio'], ['mendel', 'Mendel'], ['dom', 'Dominancia y codominancia'], ['abo', 'Grupos sanguíneos'], ['sexo', 'Daltonismo y hemofilia']];
 
 /* ------------------------------------------------------------------ */
 /* CÁLCULO                                                              */
@@ -175,6 +183,11 @@ function inyectarEstilos() {
 .gen-chip.on{border-color:#6f8dff;background:linear-gradient(135deg,#243f9b,#1d2f78);box-shadow:0 0 14px rgba(63,102,255,.4)}
 .gen-lbl{margin:14px 0 7px;font-size:.74rem;letter-spacing:.1em;font-weight:800;color:#84b1ff}
 .gen-lbl:first-child{margin-top:0}
+.gen-vista{display:inline-flex;gap:6px;margin:0 0 16px;padding:5px;border:1px solid #25438c;border-radius:14px;background:rgba(8,20,54,.9)}
+.gen-vista button{border:1px solid transparent;border-radius:10px;padding:9px 14px;background:transparent;color:#a9c1f2;font:inherit;font-size:.84rem;font-weight:650;cursor:pointer}
+.gen-vista button.on{background:linear-gradient(135deg,#3f66ff,#2f4de6);color:#fff}
+.gen-arbol{overflow-x:auto}
+.gen-arbol svg{display:block;width:100%;min-width:600px;height:auto;max-width:760px;margin:0 auto}
 .gen-pun{width:100%;max-width:420px;border-collapse:separate;border-spacing:6px;table-layout:fixed;margin:4px auto 0}
 .gen-pun th,.gen-pun td{border-radius:12px;text-align:center;vertical-align:middle;padding:0}
 .gen-pun-corner{color:#6f89c4;font-size:1.1rem;height:46px}
@@ -286,6 +299,46 @@ function xs(al, L, x, y, size = 15) {
 }
 
 /* ------------------------------------------------------------------ */
+/* DOMINANCIA INCOMPLETA Y CODOMINANCIA                                 */
+/* ------------------------------------------------------------------ */
+
+// cat[k]: categoría de fenotipo según la cantidad de alelos 2 (0, 1 o 2)
+const MODOS = {
+  comp: { nombre: 'Dominancia completa', ej: 'Color de la semilla de arveja', a1: 'Y', a2: 'y', fen: ['amarilla', 'verde'], cat: [0, 0, 1], col: ['#ffd23d', '#7ee06b'] },
+  inc: { nombre: 'Dominancia incompleta', ej: 'Color de la flor del dondiego de noche (Mirabilis jalapa)', a1: 'R', a2: 'B', fen: ['roja', 'rosada', 'blanca'], cat: [0, 1, 2], col: ['#ff4f6d', '#ff9fc0', '#f4f1fa'] },
+  cod: { nombre: 'Codominancia', ej: 'Pelaje del ganado Shorthorn', a1: 'R', a2: 'B', fen: ['rojo', 'ruano', 'blanco'], cat: [0, 1, 2], col: ['#c0392b', '#d98a80', '#f4f1fa'] }
+};
+const PRESETS_DOM = [
+  { id: 'p', et: 'P · homocigotas distintos', k1: 0, k2: 2 },
+  { id: 'f2', et: 'F1 × F1', k1: 1, k2: 1 },
+  { id: 'hh', et: 'Heterocigota × homocigota', k1: 1, k2: 2 }
+];
+const PUNTOS_RUANO = [[14, 14], [22, 11], [29, 15], [12, 23], [19, 20], [27, 23], [33, 24], [15, 31], [23, 29], [30, 31], [21, 35], [17, 17], [26, 18], [10, 29]];
+
+// Muestra de color del fenotipo: semilla (comp), flor (inc) o pelaje (cod)
+function muestra(modo, cat, px = 44) {
+  const col = MODOS[modo].col[cat];
+  let f;
+  if (modo === 'comp') f = `<circle cx="22" cy="22" r="17" fill="${col}" stroke="#00000066" stroke-width="2"/>`;
+  else if (modo === 'inc') f = [0, 1, 2, 3, 4].map(i => `<circle cx="${22 + 11 * Math.cos(i * 1.2566 - 1.57)}" cy="${22 + 11 * Math.sin(i * 1.2566 - 1.57)}" r="9" fill="${col}" stroke="#00000044"/>`).join('') + '<circle cx="22" cy="22" r="5.5" fill="#ffd23d"/>';
+  else if (cat === 1) f = '<circle cx="22" cy="22" r="18" fill="#c0392b" stroke="#00000055" stroke-width="2"/>' + PUNTOS_RUANO.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="2.6" fill="#f4f1fa"/>`).join('');
+  else f = `<circle cx="22" cy="22" r="18" fill="${col}" stroke="#00000055" stroke-width="2"/>`;
+  return `<svg width="${px}" height="${px}" viewBox="0 0 44 44" aria-hidden="true">${f}</svg>`;
+}
+
+// Planta de arveja con vainas; el color de las semillas es el fenotipo que se quiere mostrar
+function planta(cx, cy, semilla, esc = 1) {
+  const sem = (x, y) => `<circle cx="${x}" cy="${y}" r="7" fill="${semilla}" stroke="#00000066" stroke-width="1.5"/>`;
+  const vaina = (px, py, rot) => `<g transform="rotate(${rot} ${px} ${py})"><rect x="${px - 30}" y="${py - 10}" width="60" height="20" rx="10" fill="#1d6b4766" stroke="#35b97a" stroke-width="2"/>${sem(px - 17, py)}${sem(px, py)}${sem(px + 17, py)}</g>`;
+  return `<g transform="translate(${cx} ${cy}) scale(${esc}) translate(${-cx} ${-cy})">
+    <path d="M${cx} ${cy + 56} C${cx - 3} ${cy + 30} ${cx + 3} ${cy + 5} ${cx} ${cy - 34}" stroke="#2fa36b" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="${cx - 18}" cy="${cy + 34}" rx="16" ry="7" transform="rotate(-30 ${cx - 18} ${cy + 34})" fill="#38c27f"/>
+    <ellipse cx="${cx + 18}" cy="${cy + 42}" rx="16" ry="7" transform="rotate(30 ${cx + 18} ${cy + 42})" fill="#38c27f"/>
+    <ellipse cx="${cx}" cy="${cy - 38}" rx="13" ry="8" fill="#38c27f"/>
+    ${vaina(cx - 28, cy + 2, -22)}${vaina(cx + 28, cy + 16, 22)}</g>`;
+}
+
+/* ------------------------------------------------------------------ */
 /* LABORATORIO                                                          */
 /* ------------------------------------------------------------------ */
 
@@ -293,7 +346,8 @@ export function abrirLabGenetica({ app, volver }) {
   inyectarEstilos();
   const S = {
     sec: 'mendel',
-    m: { c: 1, k1: 2, k2: 0 },
+    m: { c: 1, k1: 2, k2: 0, vista: 'punnett', paso: 3 },
+    d: { modo: 'inc', k1: 0, k2: 2 },
     a: { g1: 1, g2: 3, r1: 1, r2: 2 },
     s: { cond: 'dalt', m: 1, p: 0 },
     q: { fase: 'inicio', cola: [], i: 0, puntos: 0, resp: false, filtro: 'todas' }
@@ -313,6 +367,12 @@ export function abrirLabGenetica({ app, volver }) {
   }
 
   function secMendel() {
+    const v = S.m.vista;
+    const tog = `<div class="gen-vista" role="group" aria-label="Vista de la sección"><button type="button" class="${v === 'punnett' ? 'on' : ''}" data-act="m-vista" data-v="punnett" aria-pressed="${v === 'punnett'}">▦ Cuadro de Punnett</button><button type="button" class="${v === 'arbol' ? 'on' : ''}" data-act="m-vista" data-v="arbol" aria-pressed="${v === 'arbol'}">🌳 Árbol de generaciones</button></div>`;
+    return tog + (v === 'arbol' ? vistaArbol() : secMendelPunnett());
+  }
+
+  function secMendelPunnett() {
     const C = CARACTERES[S.m.c], L = C.L, l = L.toLowerCase();
     const gen = k => (k === 2 ? L + L : k === 1 ? L + l : l + l);
     const gam = k => (k === 2 ? [L, L] : k === 1 ? [L, l] : [l, l]);
@@ -362,6 +422,122 @@ export function abrirLabGenetica({ app, volver }) {
         </div>
         <div class="gen-card"><h2>Vocabulario</h2><div class="gen-glos" style="margin-top:10px">${GLOSARIO.map(([t, d]) => `<div><b>${t}</b>${d}</div>`).join('')}</div></div>
         ${clave('los alelos se separan al formarse las gametas (meiosis) y se vuelven a juntar al azar en la fecundación. Por eso el recesivo puede quedar oculto en la F1 y reaparecer en la F2.')}
+      </div>
+    </div>`;
+  }
+
+  /* ---------- Árbol de Mendel (solo color de la semilla) ---------- */
+  function vistaArbol() {
+    const paso = S.m.paso, AM = '#ffd23d', VE = '#7ee06b';
+    const t = (x, y, txt, color = '#e3ebff', size = 16, w = 800) => `<text x="${x}" y="${y}" text-anchor="middle" fill="${color}" font-size="${size}" font-weight="${w}">${txt}</text>`;
+    const gam = (x, y, l, col) => `<circle cx="${x}" cy="${y}" r="14" fill="#0b1d44" stroke="${col}" stroke-width="2.5"/>${t(x, y + 6, l, col, 17)}`;
+    const lin = d => `<path d="${d}" stroke="#6f8dff" stroke-width="2.5" fill="none" stroke-linecap="round"/>`;
+    let s = `<svg viewBox="0 0 760 700" role="img" aria-label="Árbol de generaciones de Mendel para el color de la semilla de arveja: generaciones P, F1 y F2"><rect x="2" y="2" width="756" height="696" rx="22" fill="#08142b" stroke="#25438c"/>`;
+    // P
+    s += t(44, 92, 'P', '#84b1ff', 24) + planta(230, 75, AM, .85) + planta(530, 75, VE, .85);
+    s += t(380, 92, '×', '#9db6e8', 30, 600);
+    s += t(230, 148, 'YY', '#fff', 20) + t(230, 166, 'semillas amarillas', AM, 13, 700) + t(530, 148, 'yy', '#fff', 20) + t(530, 166, 'semillas verdes', VE, 13, 700);
+    if (paso >= 2) {
+      s += lin('M230 214 L380 256') + lin('M530 214 L380 256') + gam(230, 200, 'Y', AM) + gam(530, 200, 'y', VE) + t(150, 205, 'gametas', '#9db6e8', 13, 600);
+      s += t(44, 312, 'F1', '#84b1ff', 24) + planta(380, 300, AM, .85);
+      s += t(380, 372, 'Yy', '#fff', 20) + t(380, 390, '100 % amarillas', AM, 13, 700) + t(380, 408, 'uniformidad de la F1', '#ffc17e', 12, 700);
+    }
+    if (paso >= 3) {
+      const xs = [140, 300, 460, 620], gn = ['YY', 'Yy', 'Yy', 'yy'];
+      s += lin('M380 414 L350 428') + lin('M380 414 L410 428') + gam(350, 442, 'Y', AM) + gam(410, 442, 'y', VE);
+      s += t(250, 447, 'gametas', '#9db6e8', 13, 600) + t(570, 447, 'autofecundación F1 × F1', '#9db6e8', 13, 600);
+      s += lin('M350 456 L380 478') + lin('M410 456 L380 478') + lin('M140 478 H620') + xs.map(x => lin(`M${x} 478 V500`)).join('');
+      s += t(44, 562, 'F2', '#84b1ff', 24);
+      xs.forEach((x, i) => { const verde = gn[i] === 'yy'; s += planta(x, 545, verde ? VE : AM, .85) + t(x, 618, gn[i], '#fff', 20) + t(x, 636, verde ? 'verde' : 'amarilla', verde ? VE : AM, 13, 700); });
+      s += t(380, 678, '3 amarillas : 1 verde  ·  1 YY : 2 Yy : 1 yy', '#e3ebff', 18);
+    }
+    s += '</svg>';
+    const chip = (v, et) => `<button type="button" class="gen-chip ${paso === v ? 'on' : ''}" data-act="m-paso" data-v="${v}" aria-pressed="${paso === v}"><span>${et}</span></button>`;
+    return `<div class="gen-stack">
+      <div class="gen-card">
+        <h2>Árbol de generaciones: color de la semilla</h2>
+        <p>Mendel cruzó arvejas de línea pura con semillas <b>amarillas</b> (alelo dominante <b>Y</b>) y <b>verdes</b> (alelo recesivo <b>y</b>). En la arveja el color es un carácter de la semilla: lo que ves en las vainas es el color de las semillas de cada generación.</p>
+        <p class="gen-lbl">MOSTRAR HASTA</p>
+        <div class="gen-chips">${chip(1, 'P · líneas puras')}${chip(2, 'F1 · híbridos')}${chip(3, 'F2 · F1 × F1')}</div>
+      </div>
+      <div class="gen-card gen-arbol">${s}</div>
+      <div class="gen-card">
+        <div class="gen-gens">
+          <div><div class="t">P · LÍNEAS PURAS</div><div class="g">YY × yy</div><div class="f">amarilla × verde</div></div>
+          <div><div class="t">F1 · 1.ª LEY</div><div class="g">100 % Yy</div><div class="f">todas amarillas: uniformidad</div></div>
+          <div><div class="t">F2 · SEGREGACIÓN</div><div class="g">1 YY : 2 Yy : 1 yy</div><div class="f">3 amarillas : 1 verde</div></div>
+        </div>
+        <div class="gen-nota">El alelo <b>y</b> no desapareció en la F1: estaba oculto en las plantas Yy y reaparece en 1 de cada 4 de la F2. En sus experimentos Mendel contó 6022 semillas amarillas y 2001 verdes, casi exactamente 3 : 1.</div>
+      </div>
+      ${clave('de P a F2 el genotipo cambia (YY, yy → Yy → YY, Yy, yy) pero los alelos no se mezclan: se separan en las gametas y se recombinan al azar en la fecundación.')}
+    </div>`;
+  }
+
+  /* ---------- Dominancia incompleta y codominancia ---------- */
+  function secDom() {
+    const D = S.d, M = MODOS[D.modo], A1 = M.a1, A2 = M.a2;
+    const al = a => (D.modo === 'comp' ? a : `C<sup>${a}</sup>`);
+    const gen = k => al(k === 2 ? A2 : A1) + al(k === 0 ? A1 : A2);
+    const gam = k => (k === 0 ? [A1, A1] : k === 1 ? [A1, A2] : [A2, A2]);
+    const orden = (a, b) => (b === A1 && a !== A1 ? [b, a] : [a, b]);
+    const g1 = gam(D.k1), g2 = gam(D.k2);
+    const cel = punnett(g1, g2, orden);
+    const nA2 = c => c.filter(x => x === A2).length;
+    const n = [0, 1, 2].map(i => cel.filter(c => nA2(c) === i).length);
+    const nF = M.fen.map((_, ci) => [0, 1, 2].reduce((acc, i) => acc + (M.cat[i] === ci ? n[i] : 0), 0));
+    const colG = [COLOR.dom, COLOR.het, COLOR.rec];
+    const mcd = (a, b) => (b ? mcd(b, a % b) : a);
+    const razon = arr => { const nz = arr.filter(v => v > 0); if (nz.length === 1) return '100 %'; const g = nz.reduce(mcd); return nz.map(v => v / g).join(' : '); };
+    const kk = [D.k1, D.k2].sort().join('');
+    const comp = D.modo === 'comp', inc = D.modo === 'inc';
+    const lect = (() => {
+      if (kk === '02') return comp ? 'Toda la F1 es Yy y se ve amarilla: el alelo Y domina por completo.' : inc ? 'Toda la F1 es heterocigota y tiene un <b>fenotipo intermedio</b> (flores rosadas): ningún alelo domina del todo al otro.' : 'Toda la F1 es heterocigota y muestra <b>los dos fenotipos a la vez</b>: el pelaje ruano tiene pelos rojos y pelos blancos en el mismo animal.';
+      if (kk === '11') return comp ? 'Proporción 3 : 1. El heterocigota Yy se ve igual que YY, por eso no se pueden distinguir mirando el fenotipo.' : 'Proporción 1 : 2 : 1 <b>en genotipo y también en fenotipo</b>. Como el heterocigota se distingue, cada genotipo tiene su propio fenotipo.';
+      if (kk === '00' || kk === '22') return 'Los dos progenitores son homocigotas iguales: toda la descendencia es igual a ellos.';
+      if (comp) return kk === '01' ? 'Toda la descendencia se ve amarilla, pero la mitad es YY y la otra mitad Yy.' : 'Es un cruzamiento prueba: mitad amarillas (Yy) y mitad verdes (yy).';
+      return 'Proporción 1 : 1. Como cada genotipo tiene su fenotipo, se reconoce el genotipo mirando el fenotipo: acá no hace falta un cruzamiento prueba.';
+    })();
+    const selP = (n2, k) => `<div class="gen-chips">${[0, 1, 2].map(v => `<button type="button" class="gen-chip ${k === v ? 'on' : ''}" data-act="d-k${n2}" data-v="${v}" aria-pressed="${k === v}"><span>${gen(v)}</span><small>${M.fen[M.cat[v]]}</small></button>`).join('')}</div>`;
+    const colorCel = c => M.col[M.cat[nA2(c)]] + '66';
+
+    return `<div class="gen-grid">
+      <div class="gen-stack"><div class="gen-card">
+        <p class="gen-lbl">TIPO DE HERENCIA</p>
+        <div class="gen-chips">${Object.entries(MODOS).map(([k, m]) => `<button type="button" class="gen-chip ${D.modo === k ? 'on' : ''}" data-act="d-modo" data-v="${k}" aria-pressed="${D.modo === k}"><span>${m.nombre}</span><small>${m.ej}</small></button>`).join('')}</div>
+        <p class="gen-lbl">CRUCES</p>
+        <div class="gen-chips">${PRESETS_DOM.map(p => `<button type="button" class="gen-chip ${D.k1 === p.k1 && D.k2 === p.k2 ? 'on' : ''}" data-act="d-pre" data-v="${p.id}"><span>${p.et}</span></button>`).join('')}</div>
+        <p class="gen-lbl">PROGENITOR 1 (filas)</p>${selP(1, D.k1)}
+        <p class="gen-lbl">PROGENITOR 2 (columnas)</p>${selP(2, D.k2)}
+      </div></div>
+      <div class="gen-stack">
+        <div class="gen-card">
+          <h2>${M.nombre}: ${gen(D.k1)} × ${gen(D.k2)}</h2>
+          <p>${comp ? 'Un alelo domina por completo: el heterocigota se ve igual que el homocigota dominante.' : inc ? 'Ningún alelo domina del todo: el heterocigota tiene un fenotipo <b>intermedio</b> entre los dos homocigotas.' : 'Los dos alelos se expresan <b>a la vez</b> en el heterocigota, sin mezclarse.'}</p>
+          ${tablaPunnett(g1.map(al), g2.map(al), cel, c => `${al(c[0])}${al(c[1])}<small>${M.fen[M.cat[nA2(c)]]}</small>`, colorCel)}
+          <p class="gen-leyenda">Filas: gametas del progenitor 1 · columnas: gametas del progenitor 2</p>
+          <h3>GENOTIPOS</h3>
+          ${barras([0, 1, 2].map(i => ({ etq: gen(i), n: n[i], total: 4, color: colG[i] })))}
+          <h3>FENOTIPOS</h3>
+          ${barras(M.fen.map((f, i) => ({ etq: f, n: nF[i], total: 4, color: M.col[i] })))}
+          <p style="margin-top:12px">Proporción genotípica <b>${razon(n)}</b> · proporción fenotípica <b>${razon(nF)}</b></p>
+          <div class="gen-nota">${lect}</div>
+        </div>
+        <div class="gen-card">
+          <h2>Fenotipos posibles</h2>
+          <div class="gen-chips" style="margin-top:10px">${M.fen.map((f, i) => `<span class="gen-chip" style="cursor:default;flex-direction:row;align-items:center;gap:10px">${muestra(D.modo, i)}<span>${f}<small style="display:block">${comp ? (i === 0 ? 'YY o Yy' : 'yy') : gen(i === 0 ? 0 : i === 1 ? 1 : 2)}</small></span></span>`).join('')}</div>
+        </div>
+        <div class="gen-card">
+          <h2>Comparación</h2>
+          <div class="gen-scroll"><table class="gen-tabla"><thead><tr><th></th><th>DOMINANCIA COMPLETA</th><th>DOMINANCIA INCOMPLETA</th><th>CODOMINANCIA</th></tr></thead><tbody>
+            <tr><td><b>Heterocigota</b></td><td>Igual al homocigota dominante</td><td>Intermedio entre los dos homocigotas (mezcla)</td><td>Muestra los dos fenotipos a la vez, sin mezclarse</td></tr>
+            <tr><td><b>F1 (AA × aa)</b></td><td>Todos como el dominante</td><td>Todos intermedios</td><td>Todos con ambos fenotipos</td></tr>
+            <tr><td><b>F2 fenotipos</b></td><td>3 : 1</td><td>1 : 2 : 1</td><td>1 : 2 : 1</td></tr>
+            <tr><td><b>F2 genotipos</b></td><td>1 : 2 : 1</td><td>1 : 2 : 1</td><td>1 : 2 : 1</td></tr>
+            <tr><td><b>Ejemplos</b></td><td>Color de la semilla de arveja</td><td>Dondiego de noche y boca de dragón: rojas × blancas dan flores rosadas</td><td>Grupo AB (I<sup>A</sup>I<sup>B</sup>) y ganado ruano</td></tr>
+          </tbody></table></div>
+          <div class="gen-nota"><b>¿Se mezclan los alelos?</b> No. En la dominancia incompleta la F1 es rosada, pero al cruzar dos rosadas reaparecen plantas rojas y blancas en la F2. Los alelos se separan igual que siempre; lo que cambia es cómo se expresa el heterocigota.</div>
+        </div>
+        ${clave('si el heterocigota tiene un fenotipo propio (intermedio o con los dos a la vez), la proporción fenotípica de la F2 es 1 : 2 : 1, igual que la genotípica. Con dominancia completa es 3 : 1.')}
       </div>
     </div>`;
   }
@@ -588,11 +764,11 @@ export function abrirLabGenetica({ app, volver }) {
   }
 
   /* ---------- Estructura general ---------- */
-  const SECCIONES = [['mendel', '🌱', 'Primera ley de Mendel'], ['abo', '🩸', 'Grupos sanguíneos'], ['sexo', '🧬', 'Daltonismo y hemofilia'], ['quiz', '✓', 'Preguntas']];
+  const SECCIONES = [['mendel', '🌱', 'Primera ley de Mendel'], ['dom', '🎨', 'Dominancia y codominancia'], ['abo', '🩸', 'Grupos sanguíneos'], ['sexo', '🧬', 'Daltonismo y hemofilia'], ['quiz', '✓', 'Preguntas']];
 
   function render(irArriba) {
     const y = window.scrollY;
-    const cuerpo = S.sec === 'mendel' ? secMendel() : S.sec === 'abo' ? secABO() : S.sec === 'sexo' ? secSexo() : secQuiz();
+    const cuerpo = S.sec === 'mendel' ? secMendel() : S.sec === 'dom' ? secDom() : S.sec === 'abo' ? secABO() : S.sec === 'sexo' ? secSexo() : secQuiz();
     app.innerHTML = `<main class="gen">
       <header class="gen-head"><button type="button" class="gen-back" data-act="volver">← Volver a Laboratorios</button>
         <div class="gen-kicker">PARCIALITO LAB · GENÉTICA</div><h1>Genética mendeliana</h1>
@@ -618,6 +794,12 @@ export function abrirLabGenetica({ app, volver }) {
     switch (act) {
       case 'volver': volver(); return;
       case 'tab': S.sec = v; render(true); return;
+      case 'm-vista': S.m.vista = v; break;
+      case 'm-paso': S.m.paso = +v; break;
+      case 'd-modo': S.d.modo = v; break;
+      case 'd-k1': S.d.k1 = +v; break;
+      case 'd-k2': S.d.k2 = +v; break;
+      case 'd-pre': { const p = PRESETS_DOM.find(x => x.id === v); S.d.k1 = p.k1; S.d.k2 = p.k2; break; }
       case 'm-car': S.m.c = +v; break;
       case 'm-k1': S.m.k1 = +v; break;
       case 'm-k2': S.m.k2 = +v; break;
