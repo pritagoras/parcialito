@@ -716,27 +716,27 @@
       "opciones": [
         {
           "id": "A",
-          "texto": "Hacking permite analizar la interacción entre clasificación y personas clasificadas; Foucault, la producción institucional de saber y objetos de intervención."
+          "texto": "Popper explica la aceptación de enunciados básicos y Kuhn la falsación de la categoría."
         },
         {
           "id": "B",
-          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+          "texto": "Kuhn analiza la elección entre paradigmas y Bourdieu la pérdida kuhniana de logros."
         },
         {
           "id": "C",
-          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+          "texto": "Hacking permite analizar la interacción entre clasificación y personas clasificadas; Foucault, la producción institucional de saber y objetos de intervención."
         },
         {
           "id": "D",
-          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+          "texto": "Foucault explica el efecto de bucle y Hacking la disciplina carcelaria."
         }
       ],
-      "respuestaCorrecta": "A",
+      "respuestaCorrecta": "C",
       "justificacionCorrecta": "Hacking explica la dinámica interactiva de las clasificaciones humanas y sus efectos de bucle. Foucault permite analizar cómo registros, saberes y prácticas institucionales producen objetos de conocimiento e intervención. Son enfoques articulables, no idénticos.",
       "refutacionIncorrectas": {
-        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Hacking explica la dinámica interactiva de las clasificaciones humanas y sus efectos de bucle. Foucault permite analizar cómo registros, saberes y prácticas institucionales producen objetos de conocimiento e intervención. Son enfoques articulables, no idénticos.",
-        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Hacking explica la dinámica interactiva de las clasificaciones humanas y sus efectos de bucle. Foucault permite analizar cómo registros, saberes y prácticas institucionales producen objetos de conocimiento e intervención. Son enfoques articulables, no idénticos.",
-        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Hacking explica la dinámica interactiva de las clasificaciones humanas y sus efectos de bucle. Foucault permite analizar cómo registros, saberes y prácticas institucionales producen objetos de conocimiento e intervención. Son enfoques articulables, no idénticos."
+        "A": "Los conceptos de Popper y Kuhn no describen los mecanismos de clasificación humana y producción institucional planteados.",
+        "B": "La pérdida kuhniana no corresponde al análisis de disposiciones ni a la reacción de personas clasificadas.",
+        "D": "Intercambia los aportes: el efecto de bucle es de Hacking y la disciplina institucional es un eje de Foucault."
       },
       "expansionEstudio": [
         {
@@ -759,23 +759,23 @@
         },
         {
           "id": "B",
-          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+          "texto": "Ambos sostienen que todo conocimiento es falso porque depende de instituciones."
         },
         {
           "id": "C",
-          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+          "texto": "Kuhn estudia exclusivamente la vigilancia disciplinaria y Foucault la estructura lógica de las revoluciones científicas."
         },
         {
           "id": "D",
-          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+          "texto": "Foucault explica la elección de paradigmas mediante valores epistemológicos y Kuhn el poder soberano."
         }
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Kuhn se ocupa de la estructura y dinámica de las comunidades científicas y sus paradigmas. Foucault analiza cómo prácticas, instituciones y relaciones de poder participan en la producción de saber. La coincidencia en atender a condiciones históricas no vuelve equivalentes sus conceptos.",
       "refutacionIncorrectas": {
-        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Kuhn se ocupa de la estructura y dinámica de las comunidades científicas y sus paradigmas. Foucault analiza cómo prácticas, instituciones y relaciones de poder participan en la producción de saber. La coincidencia en atender a condiciones históricas no vuelve equivalentes sus conceptos.",
-        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Kuhn se ocupa de la estructura y dinámica de las comunidades científicas y sus paradigmas. Foucault analiza cómo prácticas, instituciones y relaciones de poder participan en la producción de saber. La coincidencia en atender a condiciones históricas no vuelve equivalentes sus conceptos.",
-        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Kuhn se ocupa de la estructura y dinámica de las comunidades científicas y sus paradigmas. Foucault analiza cómo prácticas, instituciones y relaciones de poder participan en la producción de saber. La coincidencia en atender a condiciones históricas no vuelve equivalentes sus conceptos."
+        "B": "Reconocer condiciones históricas e institucionales no equivale a afirmar que todo conocimiento sea falso.",
+        "C": "Atribuye a cada autor el objeto principal del otro y omite sus diferencias conceptuales.",
+        "D": "Intercambia los enfoques: los valores epistemológicos son centrales en Kuhn, mientras Foucault analiza tecnologías de poder y saber."
       },
       "expansionEstudio": [
         {
@@ -794,27 +794,27 @@
       "opciones": [
         {
           "id": "A",
-          "texto": "Distinguir el fenómeno de las categorías y procedimientos que lo hacen visible; la ausencia de registro no demuestra ausencia material."
+          "texto": "Aceptar la conclusión porque todo registro institucional representa exhaustivamente la realidad."
         },
         {
           "id": "B",
-          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+          "texto": "Distinguir el fenómeno de las categorías y procedimientos que lo hacen visible; la ausencia de registro no demuestra ausencia material."
         },
         {
           "id": "C",
-          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+          "texto": "Concluir que la conducta fue creada íntegramente por el formulario y que no existía antes."
         },
         {
           "id": "D",
-          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+          "texto": "Aplicar el trilema de Fries, porque toda omisión documental constituye una regresión infinita."
         }
       ],
-      "respuestaCorrecta": "A",
+      "respuestaCorrecta": "B",
       "justificacionCorrecta": "Hacking permite preguntar cómo una clasificación organiza un fenómeno; Foucault, cómo los dispositivos institucionales producen visibilidad y documentación; Kuhn, cómo los marcos orientan la observación. Ninguno autoriza a inferir que lo no registrado no existe.",
       "refutacionIncorrectas": {
-        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Hacking permite preguntar cómo una clasificación organiza un fenómeno; Foucault, cómo los dispositivos institucionales producen visibilidad y documentación; Kuhn, cómo los marcos orientan la observación. Ninguno autoriza a inferir que lo no registrado no existe.",
-        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Hacking permite preguntar cómo una clasificación organiza un fenómeno; Foucault, cómo los dispositivos institucionales producen visibilidad y documentación; Kuhn, cómo los marcos orientan la observación. Ninguno autoriza a inferir que lo no registrado no existe.",
-        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Hacking permite preguntar cómo una clasificación organiza un fenómeno; Foucault, cómo los dispositivos institucionales producen visibilidad y documentación; Kuhn, cómo los marcos orientan la observación. Ninguno autoriza a inferir que lo no registrado no existe."
+        "A": "Un registro es selectivo y depende de categorías y procedimientos; no debe suponerse exhaustivo.",
+        "C": "La mediación de una categoría no demuestra que el fenómeno material haya sido creado íntegramente por ella.",
+        "D": "El trilema de Fries trata la justificación de la base empírica, no la ausencia de una categoría documental."
       },
       "expansionEstudio": [
         {
@@ -833,27 +833,27 @@
       "opciones": [
         {
           "id": "A",
-          "texto": "El habitus refiere a disposiciones incorporadas que orientan prácticas; la matriz disciplinar reúne compromisos compartidos propios de una comunidad científica."
+          "texto": "El habitus y la matriz disciplinar son sinónimos porque ambos describen reglas conscientes."
         },
         {
           "id": "B",
-          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+          "texto": "El habitus refiere a disposiciones incorporadas que orientan prácticas; la matriz disciplinar reúne compromisos compartidos propios de una comunidad científica."
         },
         {
           "id": "C",
-          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+          "texto": "El habitus describe únicamente el método experimental y la matriz disciplinar las posiciones económicas de los investigadores."
         },
         {
           "id": "D",
-          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+          "texto": "La matriz disciplinar es una forma de castigo institucional y el habitus una anomalía científica."
         }
       ],
-      "respuestaCorrecta": "A",
+      "respuestaCorrecta": "B",
       "justificacionCorrecta": "Bourdieu analiza disposiciones socialmente incorporadas y su relación con los campos. Kuhn analiza compromisos, valores, generalizaciones y ejemplares que estructuran una comunidad científica. Pueden relacionarse sin reducir uno al otro.",
       "refutacionIncorrectas": {
-        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Bourdieu analiza disposiciones socialmente incorporadas y su relación con los campos. Kuhn analiza compromisos, valores, generalizaciones y ejemplares que estructuran una comunidad científica. Pueden relacionarse sin reducir uno al otro.",
-        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Bourdieu analiza disposiciones socialmente incorporadas y su relación con los campos. Kuhn analiza compromisos, valores, generalizaciones y ejemplares que estructuran una comunidad científica. Pueden relacionarse sin reducir uno al otro.",
-        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Bourdieu analiza disposiciones socialmente incorporadas y su relación con los campos. Kuhn analiza compromisos, valores, generalizaciones y ejemplares que estructuran una comunidad científica. Pueden relacionarse sin reducir uno al otro."
+        "A": "Ambos conceptos orientan prácticas, pero pertenecen a marcos teóricos distintos y no son equivalentes ni necesariamente conscientes.",
+        "C": "Intercambia los niveles de análisis y reduce cada concepto a un aspecto que no lo define.",
+        "D": "Confunde conceptos de Bourdieu y Kuhn con categorías de Foucault y con anomalías kuhnianas."
       },
       "expansionEstudio": [
         {
@@ -876,23 +876,23 @@
         },
         {
           "id": "B",
-          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+          "texto": "Toda nueva clasificación representa un progreso moral y científico respecto de la anterior."
         },
         {
           "id": "C",
-          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+          "texto": "La persistencia de categorías anteriores demuestra que no hubo transformación histórica."
         },
         {
           "id": "D",
-          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+          "texto": "El cambio solo puede explicarse por una decisión individual y no por instituciones o relaciones sociales."
         }
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Hacking permite analizar la modificación interactiva de categorías; Foucault, las transformaciones y coexistencias de técnicas institucionales. El cambio histórico no debe confundirse con progreso lineal ni con sustitución instantánea.",
       "refutacionIncorrectas": {
-        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Hacking permite analizar la modificación interactiva de categorías; Foucault, las transformaciones y coexistencias de técnicas institucionales. El cambio histórico no debe confundirse con progreso lineal ni con sustitución instantánea.",
-        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Hacking permite analizar la modificación interactiva de categorías; Foucault, las transformaciones y coexistencias de técnicas institucionales. El cambio histórico no debe confundirse con progreso lineal ni con sustitución instantánea.",
-        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Hacking permite analizar la modificación interactiva de categorías; Foucault, las transformaciones y coexistencias de técnicas institucionales. El cambio histórico no debe confundirse con progreso lineal ni con sustitución instantánea."
+        "B": "Ni Hacking ni Foucault autorizan a identificar automáticamente transformación histórica con progreso moral o científico.",
+        "C": "Las formas anteriores pueden persistir y coexistir con nuevas prácticas; eso no niega la transformación.",
+        "D": "La situación requiere considerar categorías, instituciones y respuestas de los sujetos, no una causa individual aislada."
       },
       "expansionEstudio": [
         {
