@@ -2358,6 +2358,201 @@
           "respuesta": "¿Qué condiciones históricas tuvieron que reunirse para que esta categoría apareciera en este momento y no en otro?"
         }
       ]
+    },
+    {
+      "id": "ipc-p2-hacking-058",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "En un hospital, una categoría diagnóstica se modifica por nuevas clasificaciones médicas, cambia su valoración cultural, se vuelve más observable mediante registros y algunas personas la adoptan estratégicamente para reclamar derechos. ¿Cómo interpreta Hacking esta situación?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Clasificación médica, polaridad cultural, visibilidad y evasión/liberación actúan como vectores relacionados del nicho ecológico de la categoría."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Los cuatro vectores permiten describir dimensiones que interactúan en la configuración histórica de una categoría. El caso no presenta etapas sucesivas, sino cambios conectados en clasificación, valoración, observabilidad y apropiación.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Los cuatro vectores permiten describir dimensiones que interactúan en la configuración histórica de una categoría. El caso no presenta etapas sucesivas, sino cambios conectados en clasificación, valoración, observabilidad y apropiación.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Los cuatro vectores permiten describir dimensiones que interactúan en la configuración histórica de una categoría. El caso no presenta etapas sucesivas, sino cambios conectados en clasificación, valoración, observabilidad y apropiación.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Los cuatro vectores permiten describir dimensiones que interactúan en la configuración histórica de una categoría. El caso no presenta etapas sucesivas, sino cambios conectados en clasificación, valoración, observabilidad y apropiación."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Los cuatro vectores permiten describir dimensiones que interactúan en la configuración histórica de una categoría. El caso no presenta etapas sucesivas, sino cambios conectados en clasificación, valoración, observabilidad y apropiación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-059",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Ontología histórica",
+      "enunciado": "Una práctica que hoy se reconoce como una forma específica de experiencia personal no era descrita del mismo modo en otra época. ¿Qué pregunta expresa mejor la ontología histórica de Hacking?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "¿Bajo qué condiciones históricas llegó a ser posible que las personas se comprendieran y actuaran de esa manera?"
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La ontología histórica indaga cómo ciertas formas de ser, experimentar y reconocerse emergen bajo condiciones históricas concretas. No se limita a estudiar el nombre de una categoría ni supone que la experiencia sea ficticia.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. La ontología histórica indaga cómo ciertas formas de ser, experimentar y reconocerse emergen bajo condiciones históricas concretas. No se limita a estudiar el nombre de una categoría ni supone que la experiencia sea ficticia.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. La ontología histórica indaga cómo ciertas formas de ser, experimentar y reconocerse emergen bajo condiciones históricas concretas. No se limita a estudiar el nombre de una categoría ni supone que la experiencia sea ficticia.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. La ontología histórica indaga cómo ciertas formas de ser, experimentar y reconocerse emergen bajo condiciones históricas concretas. No se limita a estudiar el nombre de una categoría ni supone que la experiencia sea ficticia."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "La ontología histórica indaga cómo ciertas formas de ser, experimentar y reconocerse emergen bajo condiciones históricas concretas. No se limita a estudiar el nombre de una categoría ni supone que la experiencia sea ficticia."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-060",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nominalismo dinámico y efecto de bucle",
+      "enunciado": "Una institución crea una clasificación para describir a un grupo. Las personas clasificadas conocen la categoría, modifican algunas conductas y, con el tiempo, los especialistas revisan la clasificación. ¿Qué concepto nombra más directamente esta retroalimentación?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Efecto de bucle."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El efecto de bucle describe la interacción entre clasificaciones humanas y personas clasificadas: la categoría puede modificar a quienes incluye y esas respuestas transforman, a su vez, la clasificación. El nominalismo dinámico es el marco más amplio que analiza la formación conjunta de categorías y tipos de personas.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. El efecto de bucle describe la interacción entre clasificaciones humanas y personas clasificadas: la categoría puede modificar a quienes incluye y esas respuestas transforman, a su vez, la clasificación. El nominalismo dinámico es el marco más amplio que analiza la formación conjunta de categorías y tipos de personas.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. El efecto de bucle describe la interacción entre clasificaciones humanas y personas clasificadas: la categoría puede modificar a quienes incluye y esas respuestas transforman, a su vez, la clasificación. El nominalismo dinámico es el marco más amplio que analiza la formación conjunta de categorías y tipos de personas.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. El efecto de bucle describe la interacción entre clasificaciones humanas y personas clasificadas: la categoría puede modificar a quienes incluye y esas respuestas transforman, a su vez, la clasificación. El nominalismo dinámico es el marco más amplio que analiza la formación conjunta de categorías y tipos de personas."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "El efecto de bucle describe la interacción entre clasificaciones humanas y personas clasificadas: la categoría puede modificar a quienes incluye y esas respuestas transforman, a su vez, la clasificación. El nominalismo dinámico es el marco más amplio que analiza la formación conjunta de categorías y tipos de personas."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-061",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Clasificaciones humanas",
+      "enunciado": "¿Por qué las clasificaciones de personas pueden diferir de las clasificaciones de objetos naturales en el planteo de Hacking?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque las personas clasificadas pueden conocer, aceptar, rechazar o modificar la categoría, alterando el fenómeno que se intenta describir."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Las personas pueden reaccionar a las clasificaciones y cambiar sus prácticas o autocomprensiones. Esto introduce una dinámica interactiva que no se presenta del mismo modo en la clasificación de objetos indiferentes.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Las personas pueden reaccionar a las clasificaciones y cambiar sus prácticas o autocomprensiones. Esto introduce una dinámica interactiva que no se presenta del mismo modo en la clasificación de objetos indiferentes.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Las personas pueden reaccionar a las clasificaciones y cambiar sus prácticas o autocomprensiones. Esto introduce una dinámica interactiva que no se presenta del mismo modo en la clasificación de objetos indiferentes.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Las personas pueden reaccionar a las clasificaciones y cambiar sus prácticas o autocomprensiones. Esto introduce una dinámica interactiva que no se presenta del mismo modo en la clasificación de objetos indiferentes."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Las personas pueden reaccionar a las clasificaciones y cambiar sus prácticas o autocomprensiones. Esto introduce una dinámica interactiva que no se presenta del mismo modo en la clasificación de objetos indiferentes."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-062",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Representar e intervenir",
+      "enunciado": "Un equipo no logra decidir si una entidad microscópica existe porque varias teorías rivales la describen de manera diferente. Sin embargo, consigue utilizarla de forma estable para producir efectos experimentales controlados. ¿Qué argumento de Hacking resulta pertinente?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La capacidad de intervenir experimentalmente con una entidad ofrece una razón para tomar en serio su realidad, más allá de resolver por completo su representación teórica."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Hacking destaca que la intervención experimental puede respaldar el realismo de entidades: manipular algo de manera fiable para producir otros fenómenos constituye un argumento que no depende exclusivamente de una teoría descriptiva definitiva.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Hacking destaca que la intervención experimental puede respaldar el realismo de entidades: manipular algo de manera fiable para producir otros fenómenos constituye un argumento que no depende exclusivamente de una teoría descriptiva definitiva.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Hacking destaca que la intervención experimental puede respaldar el realismo de entidades: manipular algo de manera fiable para producir otros fenómenos constituye un argumento que no depende exclusivamente de una teoría descriptiva definitiva.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Hacking destaca que la intervención experimental puede respaldar el realismo de entidades: manipular algo de manera fiable para producir otros fenómenos constituye un argumento que no depende exclusivamente de una teoría descriptiva definitiva."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Hacking destaca que la intervención experimental puede respaldar el realismo de entidades: manipular algo de manera fiable para producir otros fenómenos constituye un argumento que no depende exclusivamente de una teoría descriptiva definitiva."
+        }
+      ]
     }
   ],
   "tarjetas": [
