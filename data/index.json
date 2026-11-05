@@ -344,7 +344,7 @@
       ],
       "segundoParcial": {
         "nombre": "Segundo Parcial",
-        "preguntas": 261,
+        "preguntas": 286,
         "autores": [
           {
             "id": "ipc-p2-hacking",
@@ -352,7 +352,7 @@
             "autor": "Ian Hacking",
             "etiqueta": "Hacking",
             "archivo": "data/ipc-segundo-parcial/hacking.json",
-            "preguntas": 57,
+            "preguntas": 62,
             "tarjetas": 90
           },
           {
@@ -361,7 +361,7 @@
             "autor": "Karl Popper",
             "etiqueta": "Popper",
             "archivo": "data/ipc-segundo-parcial/popper.json",
-            "preguntas": 57,
+            "preguntas": 62,
             "tarjetas": 87
           },
           {
@@ -370,7 +370,7 @@
             "autor": "Michel Foucault",
             "etiqueta": "Foucault",
             "archivo": "data/ipc-segundo-parcial/foucault.json",
-            "preguntas": 55,
+            "preguntas": 60,
             "tarjetas": 85
           },
           {
@@ -379,7 +379,7 @@
             "autor": "Thomas Kuhn",
             "etiqueta": "Kuhn",
             "archivo": "data/ipc-segundo-parcial/kuhn.json",
-            "preguntas": 74,
+            "preguntas": 79,
             "tarjetas": 84
           },
           {
@@ -388,7 +388,7 @@
             "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
             "etiqueta": "Integrador",
             "archivo": "data/ipc-segundo-parcial/integrador.json",
-            "preguntas": 18,
+            "preguntas": 23,
             "tarjetas": 18
           }
         ],
