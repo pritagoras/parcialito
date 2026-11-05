@@ -1502,7 +1502,7 @@ function vistaIPCSegundoParcial(m, materiaIndex) {
     '<div class="ipc-modelo-intro"><div><span class="ipc-modelo-kicker">PRÁCTICA GUIADA</span><h2>Modelo de parcial</h2></div>' +
     '<p>Los 9 puntos del examen de referencia, separados por consigna. Practicá cada punto con sus variantes o resolvé una simulación completa.</p></div>' +
     '<button class="btn primario ipc-modelo-completo" id="btn-ipc-modelo-completo">Simular el modelo completo · 9 preguntas →</button>' +
-    '<div class="ipc-modelo-puntos">' + IPC_MODELO_PARCIAL.map((p) => ' +
+    '<div class="ipc-modelo-puntos">' + IPC_MODELO_PARCIAL.map((p) =>
       '<article class="ipc-modelo-punto"><div class="ipc-modelo-punto-top"><span class="ipc-modelo-num">' + String(p.numero).padStart(2, '0') + '</span><span class="ipc-modelo-autor">' + esc(p.autorEtiqueta) + '</span></div>' +
       '<h3>' + esc(p.titulo) + '</h3><p>' + esc(p.consigna) + '</p>' +
       '<div class="ipc-modelo-punto-foot"><span data-ipc-modelo-count="' + p.id + '">Cargando variantes…</span><button class="btn enlace" type="button" data-ipc-modelo-punto="' + p.id + '">Practicar este punto →</button></div></article>'
@@ -1517,7 +1517,7 @@ function vistaIPCSegundoParcial(m, materiaIndex) {
         <h1>Segundo Parcial</h1>
       </div>
       <p class="bajada">Banco de estudio por autor y un bloque integrador. Cada pregunta incluye explicación, análisis de distractores y expansión de estudio.</p>
-      \${modeloMarkup}
+      ${modeloMarkup}
       <section class="ipc-p2-resumen">
         <strong>${config.preguntas}</strong>
         <span>preguntas de opción múltiple</span>
