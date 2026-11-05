@@ -2229,6 +2229,666 @@
           "respuesta": "Reconocer que la observación está orientada por marcos no elimina evidencias ni razones comparativas: los valores epistemológicos siguen permitiendo discutir elecciones."
         }
       ]
+    },
+    {
+      "id": "ipc-p2-kuhn-055",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nEn un observatorio, varios registros muestran una desviación que el modelo astronómico vigente no anticipa. El equipo repite las mediciones y revisa la calibración; la desviación persiste, aunque todavía no hay una pérdida general de confianza en el marco teórico.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Enigma"
+        },
+        {
+          "id": "B",
+          "texto": "Anomalía"
+        },
+        {
+          "id": "C",
+          "texto": "Crisis"
+        },
+        {
+          "id": "D",
+          "texto": "Inconmensurabilidad"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Respuesta: Anomalía. El resultado no encaja con las expectativas del paradigma y resiste controles, por lo que es una anomalía. Que persista no alcanza, por sí solo, para afirmar que la comunidad atraviesa una crisis.",
+      "refutacionIncorrectas": {
+        "A": "Un enigma es un problema abordable con los recursos del paradigma; aquí el resultado persiste fuera de lo esperado.",
+        "C": "La crisis supone una inestabilidad más amplia y una afectación de la confianza comunitaria, dato que el caso niega expresamente.",
+        "D": "La inconmensurabilidad refiere a la comparación entre paradigmas rivales, no a un resultado inesperado dentro de una investigación."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-056",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Anomalía». ¿Cuál es la justificación más adecuada?\n\nEn un observatorio, varios registros muestran una desviación que el modelo astronómico vigente no anticipa. El equipo repite las mediciones y revisa la calibración; la desviación persiste, aunque todavía no hay una pérdida general de confianza en el marco teórico.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque el resultado no encaja con las expectativas del paradigma y resiste controles, por lo que es una anomalía. Que persista no alcanza, por sí solo, para afirmar que la comunidad atraviesa una crisis."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: El resultado no encaja con las expectativas del paradigma y resiste controles, por lo que es una anomalía. Que persista no alcanza, por sí solo, para afirmar que la comunidad atraviesa una crisis.",
+      "refutacionIncorrectas": {
+        "B": "Una dificultad no produce automáticamente una revolución ni obliga a abandonar el paradigma. Kuhn analiza la persistencia, relevancia y respuesta de la comunidad.",
+        "C": "La perspectiva de Kuhn destaca que los conceptos, problemas y criterios se organizan históricamente dentro de marcos compartidos; no son significados invariables al margen de las prácticas.",
+        "D": "Kuhn cuestiona la idea de una observación completamente neutral y de un progreso exclusivamente acumulativo: los paradigmas orientan la investigación y las revoluciones reorganizan sus marcos."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-057",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nUn laboratorio obtiene repetidamente una reacción química cuyo producto no coincide con lo previsto por el marco aceptado. Se descartan errores de procedimiento, pero el hallazgo aún se estudia como un problema localizado.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Paradigma"
+        },
+        {
+          "id": "B",
+          "texto": "Revolución científica"
+        },
+        {
+          "id": "C",
+          "texto": "Anomalía"
+        },
+        {
+          "id": "D",
+          "texto": "Enigma"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Respuesta: Anomalía. La discrepancia persistente entre el resultado y lo que el paradigma permite esperar constituye una anomalía. El caso no describe todavía una crisis de toda la disciplina.",
+      "refutacionIncorrectas": {
+        "A": "Un paradigma es el marco compartido que orienta la investigación, no la discrepancia concreta que aparece en ella.",
+        "B": "Una revolución implica una transformación del marco disciplinar; el caso solo presenta un resultado problemático.",
+        "D": "Un enigma es un problema considerado resoluble mediante las herramientas habituales del paradigma; el hallazgo descrito resiste esas expectativas."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-058",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Anomalía». ¿Cuál es la justificación más adecuada?\n\nUn laboratorio obtiene repetidamente una reacción química cuyo producto no coincide con lo previsto por el marco aceptado. Se descartan errores de procedimiento, pero el hallazgo aún se estudia como un problema localizado.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque la discrepancia persistente entre el resultado y lo que el paradigma permite esperar constituye una anomalía. El caso no describe todavía una crisis de toda la disciplina."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: La discrepancia persistente entre el resultado y lo que el paradigma permite esperar constituye una anomalía. El caso no describe todavía una crisis de toda la disciplina.",
+      "refutacionIncorrectas": {
+        "B": "Una dificultad no produce automáticamente una revolución ni obliga a abandonar el paradigma. Kuhn analiza la persistencia, relevancia y respuesta de la comunidad.",
+        "C": "La perspectiva de Kuhn destaca que los conceptos, problemas y criterios se organizan históricamente dentro de marcos compartidos; no son significados invariables al margen de las prácticas.",
+        "D": "Kuhn cuestiona la idea de una observación completamente neutral y de un progreso exclusivamente acumulativo: los paradigmas orientan la investigación y las revoluciones reorganizan sus marcos."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-059",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nUn grupo de físicos detecta pequeñas diferencias entre dos mediciones. El paradigma vigente ofrece ecuaciones y técnicas conocidas para calcular la causa, y los investigadores trabajan dentro de ese marco hasta resolver el problema.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Crisis"
+        },
+        {
+          "id": "B",
+          "texto": "Enigma"
+        },
+        {
+          "id": "C",
+          "texto": "Anomalía"
+        },
+        {
+          "id": "D",
+          "texto": "Inconmensurabilidad"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Respuesta: Enigma. Es un enigma porque se trata de un problema que la comunidad considera resoluble mediante los recursos teóricos, matemáticos e instrumentales del paradigma vigente.",
+      "refutacionIncorrectas": {
+        "A": "No se describe una acumulación de dificultades que debilite la confianza en los fundamentos del paradigma.",
+        "C": "La anomalía supone un desajuste resistente respecto de las expectativas del marco; aquí el problema se resuelve con sus herramientas.",
+        "D": "La inconmensurabilidad trata la relación entre paradigmas rivales, no la resolución ordinaria de un problema dentro de uno."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-060",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Enigma». ¿Cuál es la justificación más adecuada?\n\nUn grupo de físicos detecta pequeñas diferencias entre dos mediciones. El paradigma vigente ofrece ecuaciones y técnicas conocidas para calcular la causa, y los investigadores trabajan dentro de ese marco hasta resolver el problema.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque es un enigma porque se trata de un problema que la comunidad considera resoluble mediante los recursos teóricos, matemáticos e instrumentales del paradigma vigente."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: Es un enigma porque se trata de un problema que la comunidad considera resoluble mediante los recursos teóricos, matemáticos e instrumentales del paradigma vigente.",
+      "refutacionIncorrectas": {
+        "B": "Una dificultad no produce automáticamente una revolución ni obliga a abandonar el paradigma. Kuhn analiza la persistencia, relevancia y respuesta de la comunidad.",
+        "C": "La perspectiva de Kuhn destaca que los conceptos, problemas y criterios se organizan históricamente dentro de marcos compartidos; no son significados invariables al margen de las prácticas.",
+        "D": "Kuhn cuestiona la idea de una observación completamente neutral y de un progreso exclusivamente acumulativo: los paradigmas orientan la investigación y las revoluciones reorganizan sus marcos."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-061",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nDurante una investigación, un equipo busca explicar una variación pequeña en los resultados. La comunidad reconoce el problema como legítimo y sabe qué procedimientos, modelos y mediciones debe aplicar para encontrar una solución.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Paradigma"
+        },
+        {
+          "id": "B",
+          "texto": "Anomalía"
+        },
+        {
+          "id": "C",
+          "texto": "Enigma"
+        },
+        {
+          "id": "D",
+          "texto": "Crisis"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Respuesta: Enigma. El problema es un enigma de ciencia normal: el paradigma delimita qué pregunta investigar y proporciona modelos y procedimientos para intentar resolverla.",
+      "refutacionIncorrectas": {
+        "A": "El paradigma es el marco compartido que organiza la investigación; no es el problema específico que el equipo intenta resolver.",
+        "B": "No se presenta un resultado que resista las expectativas del paradigma, sino un problema que se aborda con sus procedimientos.",
+        "D": "La crisis implica cuestionamientos más amplios sobre la capacidad del marco y sus compromisos fundamentales."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-062",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Enigma». ¿Cuál es la justificación más adecuada?\n\nDurante una investigación, un equipo busca explicar una variación pequeña en los resultados. La comunidad reconoce el problema como legítimo y sabe qué procedimientos, modelos y mediciones debe aplicar para encontrar una solución.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque el problema es un enigma de ciencia normal: el paradigma delimita qué pregunta investigar y proporciona modelos y procedimientos para intentar resolverla."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: El problema es un enigma de ciencia normal: el paradigma delimita qué pregunta investigar y proporciona modelos y procedimientos para intentar resolverla.",
+      "refutacionIncorrectas": {
+        "B": "Una dificultad no produce automáticamente una revolución ni obliga a abandonar el paradigma. Kuhn analiza la persistencia, relevancia y respuesta de la comunidad.",
+        "C": "La perspectiva de Kuhn destaca que los conceptos, problemas y criterios se organizan históricamente dentro de marcos compartidos; no son significados invariables al margen de las prácticas.",
+        "D": "Kuhn cuestiona la idea de una observación completamente neutral y de un progreso exclusivamente acumulativo: los paradigmas orientan la investigación y las revoluciones reorganizan sus marcos."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-063",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nDurante años se acumulan resultados que contradicen predicciones centrales de una disciplina. Los intentos de ajuste fracasan, varios grupos cuestionan supuestos básicos y la comunidad pierde confianza en que el paradigma pueda resolver esas dificultades.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Enigma"
+        },
+        {
+          "id": "B",
+          "texto": "Crisis"
+        },
+        {
+          "id": "C",
+          "texto": "Paradigma"
+        },
+        {
+          "id": "D",
+          "texto": "Anomalía aislada"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Respuesta: Crisis. La acumulación de anomalías relevantes afecta compromisos centrales y debilita la confianza comunitaria. Esa situación más amplia caracteriza una crisis, no una anomalía aislada.",
+      "refutacionIncorrectas": {
+        "A": "Un enigma es un problema que se espera resolver con las herramientas del paradigma; aquí los intentos reiterados fracasan y se cuestionan sus fundamentos.",
+        "C": "El paradigma es el marco compartido de investigación, no el estado de inestabilidad descrito.",
+        "D": "Una anomalía aislada no alcanza para describir la acumulación de dificultades y la pérdida de confianza de la comunidad."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-064",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Crisis». ¿Cuál es la justificación más adecuada?\n\nDurante años se acumulan resultados que contradicen predicciones centrales de una disciplina. Los intentos de ajuste fracasan, varios grupos cuestionan supuestos básicos y la comunidad pierde confianza en que el paradigma pueda resolver esas dificultades.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque la acumulación de anomalías relevantes afecta compromisos centrales y debilita la confianza comunitaria. Esa situación más amplia caracteriza una crisis, no una anomalía aislada."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: La acumulación de anomalías relevantes afecta compromisos centrales y debilita la confianza comunitaria. Esa situación más amplia caracteriza una crisis, no una anomalía aislada.",
+      "refutacionIncorrectas": {
+        "B": "Una dificultad no produce automáticamente una revolución ni obliga a abandonar el paradigma. Kuhn analiza la persistencia, relevancia y respuesta de la comunidad.",
+        "C": "La perspectiva de Kuhn destaca que los conceptos, problemas y criterios se organizan históricamente dentro de marcos compartidos; no son significados invariables al margen de las prácticas.",
+        "D": "Kuhn cuestiona la idea de una observación completamente neutral y de un progreso exclusivamente acumulativo: los paradigmas orientan la investigación y las revoluciones reorganizan sus marcos."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-065",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nEn una disciplina, distintos equipos reproducen anomalías que afectan principios centrales. Se multiplican las discusiones sobre los fundamentos, aparecen propuestas alternativas y parte de la comunidad deja de confiar en las soluciones habituales.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Ciencia normal"
+        },
+        {
+          "id": "B",
+          "texto": "Enigma"
+        },
+        {
+          "id": "C",
+          "texto": "Crisis"
+        },
+        {
+          "id": "D",
+          "texto": "Inconmensurabilidad"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Respuesta: Crisis. El caso reúne los rasgos de una crisis kuhniana: anomalías persistentes y relevantes, cuestionamiento de compromisos básicos, debate sobre fundamentos y debilitamiento de la confianza en el paradigma.",
+      "refutacionIncorrectas": {
+        "A": "La ciencia normal se caracteriza por resolver enigmas dentro de un marco compartido, no por cuestionar sus fundamentos de manera extendida.",
+        "B": "El enigma es un problema abordable con las herramientas del paradigma; aquí estas se muestran insuficientes frente a dificultades persistentes.",
+        "D": "La inconmensurabilidad describe la relación entre paradigmas rivales y la ausencia de una medida neutral única; no nombra por sí misma el período de inestabilidad."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-066",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Crisis». ¿Cuál es la justificación más adecuada?\n\nEn una disciplina, distintos equipos reproducen anomalías que afectan principios centrales. Se multiplican las discusiones sobre los fundamentos, aparecen propuestas alternativas y parte de la comunidad deja de confiar en las soluciones habituales.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque el caso reúne los rasgos de una crisis kuhniana: anomalías persistentes y relevantes, cuestionamiento de compromisos básicos, debate sobre fundamentos y debilitamiento de la confianza en el paradigma."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: El caso reúne los rasgos de una crisis kuhniana: anomalías persistentes y relevantes, cuestionamiento de compromisos básicos, debate sobre fundamentos y debilitamiento de la confianza en el paradigma.",
+      "refutacionIncorrectas": {
+        "B": "Una dificultad no produce automáticamente una revolución ni obliga a abandonar el paradigma. Kuhn analiza la persistencia, relevancia y respuesta de la comunidad.",
+        "C": "La perspectiva de Kuhn destaca que los conceptos, problemas y criterios se organizan históricamente dentro de marcos compartidos; no son significados invariables al margen de las prácticas.",
+        "D": "Kuhn cuestiona la idea de una observación completamente neutral y de un progreso exclusivamente acumulativo: los paradigmas orientan la investigación y las revoluciones reorganizan sus marcos."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-067",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nUna comunidad científica comparte leyes, supuestos, valores, métodos, instrumentos y soluciones ejemplares. La formación de nuevos investigadores les enseña a reconocer problemas legítimos y a resolverlos siguiendo esa tradición.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Paradigma"
+        },
+        {
+          "id": "B",
+          "texto": "Anomalía"
+        },
+        {
+          "id": "C",
+          "texto": "Crisis"
+        },
+        {
+          "id": "D",
+          "texto": "Inconmensurabilidad"
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Respuesta: Paradigma. El conjunto de compromisos, prácticas, valores y ejemplares compartidos constituye un paradigma o matriz disciplinar. No se reduce a una hipótesis aislada ni a una sola ley.",
+      "refutacionIncorrectas": {
+        "B": "La anomalía es una discrepancia respecto de las expectativas del marco, no el marco compartido mismo.",
+        "C": "La crisis es un período de inestabilidad del paradigma; el escenario describe una tradición compartida y operativa.",
+        "D": "La inconmensurabilidad se refiere a la comparación entre paradigmas rivales, no a la estructura interna de uno."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-068",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Paradigma». ¿Cuál es la justificación más adecuada?\n\nUna comunidad científica comparte leyes, supuestos, valores, métodos, instrumentos y soluciones ejemplares. La formación de nuevos investigadores les enseña a reconocer problemas legítimos y a resolverlos siguiendo esa tradición.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque el conjunto de compromisos, prácticas, valores y ejemplares compartidos constituye un paradigma o matriz disciplinar. No se reduce a una hipótesis aislada ni a una sola ley."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: El conjunto de compromisos, prácticas, valores y ejemplares compartidos constituye un paradigma o matriz disciplinar. No se reduce a una hipótesis aislada ni a una sola ley.",
+      "refutacionIncorrectas": {
+        "B": "Una dificultad no produce automáticamente una revolución ni obliga a abandonar el paradigma. Kuhn analiza la persistencia, relevancia y respuesta de la comunidad.",
+        "C": "La perspectiva de Kuhn destaca que los conceptos, problemas y criterios se organizan históricamente dentro de marcos compartidos; no son significados invariables al margen de las prácticas.",
+        "D": "Kuhn cuestiona la idea de una observación completamente neutral y de un progreso exclusivamente acumulativo: los paradigmas orientan la investigación y las revoluciones reorganizan sus marcos."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-069",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nEn una disciplina, los investigadores acuerdan qué problemas son relevantes, qué instrumentos usar, qué explicaciones se consideran aceptables y qué soluciones anteriores sirven como modelos para nuevos trabajos.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Enigma"
+        },
+        {
+          "id": "B",
+          "texto": "Revolución científica"
+        },
+        {
+          "id": "C",
+          "texto": "Paradigma"
+        },
+        {
+          "id": "D",
+          "texto": "Crisis"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Respuesta: Paradigma. Ese marco común de supuestos, valores, métodos y ejemplares organiza la ciencia normal. Esa función compartida es característica de un paradigma.",
+      "refutacionIncorrectas": {
+        "A": "Un enigma es un problema particular que se intenta resolver dentro del marco, no el conjunto de compromisos que orienta la disciplina.",
+        "B": "Una revolución transforma el marco compartido; el caso describe el marco ya establecido, no su reemplazo.",
+        "D": "La crisis supone dificultades que debilitan la confianza en el marco; aquí se presenta un consenso operativo."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-070",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Paradigma». ¿Cuál es la justificación más adecuada?\n\nEn una disciplina, los investigadores acuerdan qué problemas son relevantes, qué instrumentos usar, qué explicaciones se consideran aceptables y qué soluciones anteriores sirven como modelos para nuevos trabajos.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque ese marco común de supuestos, valores, métodos y ejemplares organiza la ciencia normal. Esa función compartida es característica de un paradigma."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: Ese marco común de supuestos, valores, métodos y ejemplares organiza la ciencia normal. Esa función compartida es característica de un paradigma.",
+      "refutacionIncorrectas": {
+        "B": "Una dificultad no produce automáticamente una revolución ni obliga a abandonar el paradigma. Kuhn analiza la persistencia, relevancia y respuesta de la comunidad.",
+        "C": "La perspectiva de Kuhn destaca que los conceptos, problemas y criterios se organizan históricamente dentro de marcos compartidos; no son significados invariables al margen de las prácticas.",
+        "D": "Kuhn cuestiona la idea de una observación completamente neutral y de un progreso exclusivamente acumulativo: los paradigmas orientan la investigación y las revoluciones reorganizan sus marcos."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-071",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nDos comunidades científicas rivales interpretan ciertos fenómenos mediante conceptos diferentes y priorizan problemas distintos. No existe una escala neutral, aceptada por ambas, que permita decidir mecánicamente cuál paradigma es superior.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Anomalía"
+        },
+        {
+          "id": "B",
+          "texto": "Inconmensurabilidad"
+        },
+        {
+          "id": "C",
+          "texto": "Enigma"
+        },
+        {
+          "id": "D",
+          "texto": "Crisis"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Respuesta: Inconmensurabilidad. La inconmensurabilidad señala que los paradigmas no siempre pueden compararse mediante un patrón único y neutral, porque organizan conceptos, problemas y criterios de evaluación de manera diferente. No implica que sea imposible dialogar.",
+      "refutacionIncorrectas": {
+        "A": "Una anomalía es un resultado que no encaja con las expectativas de un paradigma; aquí se compara la relación entre dos marcos rivales.",
+        "C": "Un enigma es un problema resoluble dentro de un paradigma, no una dificultad de comparación entre marcos distintos.",
+        "D": "La crisis es una etapa de inestabilidad de una comunidad; el caso se centra en la comparación entre paradigmas."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-072",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Inconmensurabilidad». ¿Cuál es la justificación más adecuada?\n\nDos comunidades científicas rivales interpretan ciertos fenómenos mediante conceptos diferentes y priorizan problemas distintos. No existe una escala neutral, aceptada por ambas, que permita decidir mecánicamente cuál paradigma es superior.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque la inconmensurabilidad señala que los paradigmas no siempre pueden compararse mediante un patrón único y neutral, porque organizan conceptos, problemas y criterios de evaluación de manera diferente. No implica que sea imposible dialogar."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: La inconmensurabilidad señala que los paradigmas no siempre pueden compararse mediante un patrón único y neutral, porque organizan conceptos, problemas y criterios de evaluación de manera diferente. No implica que sea imposible dialogar.",
+      "refutacionIncorrectas": {
+        "B": "Una dificultad no produce automáticamente una revolución ni obliga a abandonar el paradigma. Kuhn analiza la persistencia, relevancia y respuesta de la comunidad.",
+        "C": "La perspectiva de Kuhn destaca que los conceptos, problemas y criterios se organizan históricamente dentro de marcos compartidos; no son significados invariables al margen de las prácticas.",
+        "D": "Kuhn cuestiona la idea de una observación completamente neutral y de un progreso exclusivamente acumulativo: los paradigmas orientan la investigación y las revoluciones reorganizan sus marcos."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-073",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nAl comparar dos teorías históricas, los investigadores advierten que términos centrales cambiaron de significado y que cada tradición considera relevantes problemas y pruebas diferentes. Aun así, pueden discutir razones y evaluar ventajas y límites.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Crisis"
+        },
+        {
+          "id": "B",
+          "texto": "Paradigma"
+        },
+        {
+          "id": "C",
+          "texto": "Inconmensurabilidad"
+        },
+        {
+          "id": "D",
+          "texto": "Anomalía"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Respuesta: Inconmensurabilidad. La inconmensurabilidad no significa incomunicación absoluta ni relativismo total. Indica que no hay una medida completamente neutral y compartida que resuelva automáticamente la comparación entre paradigmas.",
+      "refutacionIncorrectas": {
+        "A": "La crisis describe la pérdida de estabilidad y confianza en un paradigma, no la dificultad de comparación entre marcos rivales.",
+        "B": "Un paradigma es un marco compartido; el concepto preguntado refiere a la relación comparativa entre dos de ellos.",
+        "D": "La anomalía es un desajuste dentro de la investigación guiada por un paradigma, no la diferencia de significados y criterios entre tradiciones."
+      }
+    },
+    {
+      "id": "ipc-p2-kuhn-074",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Inconmensurabilidad». ¿Cuál es la justificación más adecuada?\n\nAl comparar dos teorías históricas, los investigadores advierten que términos centrales cambiaron de significado y que cada tradición considera relevantes problemas y pruebas diferentes. Aun así, pueden discutir razones y evaluar ventajas y límites.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque la inconmensurabilidad no significa incomunicación absoluta ni relativismo total. Indica que no hay una medida completamente neutral y compartida que resuelva automáticamente la comparación entre paradigmas."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: La inconmensurabilidad no significa incomunicación absoluta ni relativismo total. Indica que no hay una medida completamente neutral y compartida que resuelva automáticamente la comparación entre paradigmas.",
+      "refutacionIncorrectas": {
+        "B": "Una dificultad no produce automáticamente una revolución ni obliga a abandonar el paradigma. Kuhn analiza la persistencia, relevancia y respuesta de la comunidad.",
+        "C": "La perspectiva de Kuhn destaca que los conceptos, problemas y criterios se organizan históricamente dentro de marcos compartidos; no son significados invariables al margen de las prácticas.",
+        "D": "Kuhn cuestiona la idea de una observación completamente neutral y de un progreso exclusivamente acumulativo: los paradigmas orientan la investigación y las revoluciones reorganizan sus marcos."
+      }
     }
   ],
   "tarjetas": [
