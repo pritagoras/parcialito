@@ -715,6 +715,16 @@ function vistaInicio() {
           <span class="sp-banco-flecha" aria-hidden="true">↗</span>
         </button>
       </section>
+      <section class="banner-segundo banner-ipc-segundo" aria-labelledby="ipc-segundo-parcial-titulo">
+        <div class="sp-cabecera"><span class="sp-sello">✦ ESPACIO DE ESTUDIO</span><span class="sp-numero">IPC · 02</span></div>
+        <h2 id="ipc-segundo-parcial-titulo">Segundo parcial · IPC</h2>
+        <p class="sp-descripcion">Prepará Hacking, Popper, Foucault y Kuhn con el modelo de examen, variantes y banco de preguntas.</p>
+        <button class="sp-tema" id="btn-ipc-segundo-home" type="button">
+          <span class="sp-tema-icono" aria-hidden="true">📜</span>
+          <span class="sp-tema-texto"><strong>Entrar al segundo parcial de IPC</strong><small>261 preguntas · 9 puntos del modelo de parcial</small></span>
+          <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
+        </button>
+      </section>
       <button class="banner-lab" id="btn-lab" type="button"><span class="banner-lab-icon">🧬</span><span class="banner-lab-text"><strong>LAB <span class="banner-lab-nuevo">NUEVO</span></strong><small>Explorá la biología con modelos interactivos y recorridos guiados.</small></span><span class="banner-lab-flecha">↗</span></button>
       ${estaInstalada() || !esCelular() ? '' : `
         <div class="instalar-app-wrap">
@@ -764,6 +774,13 @@ function vistaInicio() {
   document.getElementById('btn-sonido').addEventListener('click', alternarSonido);
   document.getElementById('btn-sp-ciclo')?.addEventListener('click', () => { Sonido.clic(); lanzarSegundoParcial(); });
   document.getElementById('btn-sp-banco')?.addEventListener('click', () => { Sonido.clic(); vistaBancoSegundoParcial(); });
+  document.getElementById('btn-ipc-segundo-home')?.addEventListener('click', () => {
+    Sonido.clic();
+    const ipcIndex = indice.materias.findIndex((m) => m.id === 'ipc-2');
+    const ipcMateria = indice.materias[ipcIndex];
+    if (ipcMateria?.segundoParcial) vistaIPCSegundoParcial(ipcMateria, ipcIndex, vistaInicio);
+    else avisar('No se encontró el banco del Segundo Parcial de IPC.');
+  });
   document.getElementById('btn-lab')?.addEventListener('click', () => { Sonido.clic(); abrirLab({ app, volver: vistaInicio }); });
   document.getElementById('btn-instalar-app')?.addEventListener('click', instalarParcialito);
   document.getElementById('btn-errores')?.addEventListener('click', () => { Sonido.clic(); lanzarErrores(); });
@@ -1322,7 +1339,6 @@ function vistaMateria(i) {
       </div>
       ${actividades.length ? `<button class="banner-repaso" id="btn-grupo-juegos"><span>🎮 Juegos interactivos<small>${plural(actividades.length, 'juego disponible', 'juegos disponibles')} · elegí cuál abrir</small></span><b>▶</b></button>` : ''}
       ${m.temas.some(tieneCrucigrama) ? `<button class="banner-repaso" id="btn-grupo-crucigramas"><span>🔤 Crucigramas<small>${plural(m.temas.filter(tieneCrucigrama).length, 'crucigrama disponible', 'crucigramas disponibles')} · elegí un tema</small></span><b>▶</b></button>` : ''}
-      ${m.segundoParcial ? `<button class="banner-repaso ipc-p2-entry" id="btn-ipc-p2"><span>📚 Segundo Parcial<small>${m.segundoParcial.preguntas} preguntas · Hacking, Popper, Foucault, Kuhn e integrador</small></span><b>▶</b></button>` : ''}
       <div class="temas-barra">
         <span>Temas</span>
         <button class="btn enlace" id="btn-todos"></button>
@@ -1485,7 +1501,7 @@ async function lanzarIPCModeloCompleto(m, materiaIndex) {
 
 // ---------- IPC: Segundo Parcial por autor ----------
 
-function vistaIPCSegundoParcial(m, materiaIndex) {
+function vistaIPCSegundoParcial(m, materiaIndex, volver = () => vistaMateria(materiaIndex)) {
   const config = m.segundoParcial;
   if (!config?.autores?.length) {
     vistaMateria(materiaIndex);
@@ -1578,7 +1594,7 @@ function vistaIPCSegundoParcial(m, materiaIndex) {
 
   document.getElementById('btn-ipc-p2-volver').addEventListener('click', () => {
     Sonido.clic();
-    vistaMateria(materiaIndex);
+    volver();
   });
   const botonPracticar = document.getElementById('btn-ipc-p2-practicar');
   const botonBanco = document.getElementById('btn-ipc-p2-banco');
