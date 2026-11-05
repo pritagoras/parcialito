@@ -2350,6 +2350,201 @@
           "respuesta": "Confunde una propiedad de la teoría con su historia de contrastaciones: una teoría puede ser falsable aunque todavía no haya sido refutada."
         }
       ]
+    },
+    {
+      "id": "ipc-p2-popper-058",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Karl Popper",
+      "subtema": "Hipótesis falsadora y contrastación",
+      "enunciado": "Una teoría predice que, bajo condiciones C, un material siempre conduce electricidad. Un experimento bien controlado muestra que una muestra no conduce. Antes de rechazar la teoría, ¿qué paso es coherente con Popper?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Examinar las condiciones iniciales y los supuestos auxiliares, y contrastar el enunciado singular que funciona como posible falsador."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La deducción permite derivar una predicción, pero el resultado depende también de condiciones y supuestos auxiliares. El enunciado falsador debe someterse a control; no se lo acepta como una observación infalible.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. La deducción permite derivar una predicción, pero el resultado depende también de condiciones y supuestos auxiliares. El enunciado falsador debe someterse a control; no se lo acepta como una observación infalible.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. La deducción permite derivar una predicción, pero el resultado depende también de condiciones y supuestos auxiliares. El enunciado falsador debe someterse a control; no se lo acepta como una observación infalible.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. La deducción permite derivar una predicción, pero el resultado depende también de condiciones y supuestos auxiliares. El enunciado falsador debe someterse a control; no se lo acepta como una observación infalible."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "La deducción permite derivar una predicción, pero el resultado depende también de condiciones y supuestos auxiliares. El enunciado falsador debe someterse a control; no se lo acepta como una observación infalible."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-popper-059",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Karl Popper",
+      "subtema": "Modus tollens",
+      "enunciado": "Si una teoría T, junto con condiciones iniciales y auxiliares, implica la predicción P, y se acepta ¬P mediante una contrastación pertinente, ¿qué conclusión se sigue lógicamente?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que el conjunto de premisas sometido a prueba queda refutado; para atribuir el rechazo específicamente a T hay que considerar las condiciones y auxiliares."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El modus tollens permite inferir la falsedad del antecedente del condicional cuando se niega su consecuente. En una contrastación real, la predicción depende de T y de otras premisas, por lo que el resultado no identifica automáticamente cuál falló.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. El modus tollens permite inferir la falsedad del antecedente del condicional cuando se niega su consecuente. En una contrastación real, la predicción depende de T y de otras premisas, por lo que el resultado no identifica automáticamente cuál falló.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. El modus tollens permite inferir la falsedad del antecedente del condicional cuando se niega su consecuente. En una contrastación real, la predicción depende de T y de otras premisas, por lo que el resultado no identifica automáticamente cuál falló.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. El modus tollens permite inferir la falsedad del antecedente del condicional cuando se niega su consecuente. En una contrastación real, la predicción depende de T y de otras premisas, por lo que el resultado no identifica automáticamente cuál falló."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "El modus tollens permite inferir la falsedad del antecedente del condicional cuando se niega su consecuente. En una contrastación real, la predicción depende de T y de otras premisas, por lo que el resultado no identifica automáticamente cuál falló."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-popper-060",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Karl Popper",
+      "subtema": "Trilema de Fries y base empírica",
+      "enunciado": "Un investigador justifica un enunciado observacional apelando a otro, luego a un tercero, y así sucesivamente. ¿Qué dificultad del trilema de Fries aparece?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La regresión infinita: cada justificación exige otra y no se alcanza un punto de apoyo definitivo."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La regresión infinita surge cuando toda afirmación debe justificarse mediante otra sin detener la cadena. Las otras salidas clásicas del trilema son el dogmatismo y el psicologismo.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. La regresión infinita surge cuando toda afirmación debe justificarse mediante otra sin detener la cadena. Las otras salidas clásicas del trilema son el dogmatismo y el psicologismo.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. La regresión infinita surge cuando toda afirmación debe justificarse mediante otra sin detener la cadena. Las otras salidas clásicas del trilema son el dogmatismo y el psicologismo.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. La regresión infinita surge cuando toda afirmación debe justificarse mediante otra sin detener la cadena. Las otras salidas clásicas del trilema son el dogmatismo y el psicologismo."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "La regresión infinita surge cuando toda afirmación debe justificarse mediante otra sin detener la cadena. Las otras salidas clásicas del trilema son el dogmatismo y el psicologismo."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-popper-061",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Karl Popper",
+      "subtema": "Enunciados básicos e intersubjetividad",
+      "enunciado": "Dos investigadores discrepan sobre una lectura instrumental. Tras calibrar el equipo, repetir el procedimiento y explicitar criterios públicos, acuerdan aceptar provisionalmente un enunciado singular. ¿Cómo lo interpretaría Popper?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Como un enunciado básico aceptado por decisión metodológica intersubjetiva y revisable, no como una percepción privada infalible."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Los enunciados básicos son singulares y pueden funcionar como base de contrastación cuando la comunidad los acepta mediante procedimientos públicos. Su aceptación es convencional en sentido metodológico, pero no arbitraria ni definitiva.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Los enunciados básicos son singulares y pueden funcionar como base de contrastación cuando la comunidad los acepta mediante procedimientos públicos. Su aceptación es convencional en sentido metodológico, pero no arbitraria ni definitiva.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Los enunciados básicos son singulares y pueden funcionar como base de contrastación cuando la comunidad los acepta mediante procedimientos públicos. Su aceptación es convencional en sentido metodológico, pero no arbitraria ni definitiva.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Los enunciados básicos son singulares y pueden funcionar como base de contrastación cuando la comunidad los acepta mediante procedimientos públicos. Su aceptación es convencional en sentido metodológico, pero no arbitraria ni definitiva."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Los enunciados básicos son singulares y pueden funcionar como base de contrastación cuando la comunidad los acepta mediante procedimientos públicos. Su aceptación es convencional en sentido metodológico, pero no arbitraria ni definitiva."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-popper-062",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Karl Popper",
+      "subtema": "Falsabilidad y contenido empírico",
+      "enunciado": "Dos teorías explican los resultados ya observados. La teoría A además prohíbe varios resultados posibles que la teoría B permite. Si ambas tienen el mismo apoyo actual, ¿qué afirmación es popperiana?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "A posee mayor contenido empírico y asume un riesgo mayor de entrar en conflicto con la experiencia."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Una teoría que excluye más estados posibles es más informativa y más falsable: ofrece más oportunidades de contrastación y de refutación. Esto no significa que ya haya sido falsada ni que sea automáticamente verdadera.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Una teoría que excluye más estados posibles es más informativa y más falsable: ofrece más oportunidades de contrastación y de refutación. Esto no significa que ya haya sido falsada ni que sea automáticamente verdadera.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Una teoría que excluye más estados posibles es más informativa y más falsable: ofrece más oportunidades de contrastación y de refutación. Esto no significa que ya haya sido falsada ni que sea automáticamente verdadera.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Una teoría que excluye más estados posibles es más informativa y más falsable: ofrece más oportunidades de contrastación y de refutación. Esto no significa que ya haya sido falsada ni que sea automáticamente verdadera."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Una teoría que excluye más estados posibles es más informativa y más falsable: ofrece más oportunidades de contrastación y de refutación. Esto no significa que ya haya sido falsada ni que sea automáticamente verdadera."
+        }
+      ]
     }
   ],
   "tarjetas": [
