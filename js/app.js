@@ -1746,7 +1746,7 @@ async function vistaBancoIPC(m, materiaIndex, autoresIniciales = m.segundoParcia
           <span class="emoji" aria-hidden="true">📚</span>
           <h1>Banco de preguntas · IPC</h1>
         </div>
-        <p class="bajada ipc-no-print">Consultá justificaciones, refutaciones y expansiones. La impresión incluye todos los resultados del filtro seleccionado.</p>
+        <p class="bajada ipc-no-print">Consultá la justificación de cada respuesta correcta. La impresión incluye todos los resultados del filtro seleccionado.</p>
         <section class="ipc-p2-bank-filtros ipc-no-print">
           <label><span>Buscar enunciado, opción o explicación</span><input id="ipc-buscar" type="search" placeholder="Ej.: efecto de bucle, enunciado básico, Panóptico…" autocomplete="off"></label>
           <label><span>Autor</span><select id="ipc-filtro-autor">
@@ -1778,9 +1778,8 @@ async function vistaBancoIPC(m, materiaIndex, autoresIniciales = m.segundoParcia
       if (autorFiltro && q.autor !== (autoresDisponibles.find((a) => a.clave === autorFiltro)?.autor || '')) return false;
       if (subtemaFiltro && q.subtema !== subtemaFiltro) return false;
       if (!busqueda) return true;
-      const refs = Object.values(q.refutacionIncorrectas || {});
       const exp = (q.expansionEstudio || []).flatMap((x) => [x.pregunta, x.respuesta]);
-      const texto = [q.texto, q.autor, q.subtema, ...q.opciones, q.explicacion, ...refs, ...exp].join(' ').toLocaleLowerCase('es');
+      const texto = [q.texto, q.autor, q.subtema, ...q.opciones, q.explicacion, ...exp].join(' ').toLocaleLowerCase('es');
       return texto.includes(busqueda);
     });
 
@@ -1794,7 +1793,6 @@ async function vistaBancoIPC(m, materiaIndex, autoresIniciales = m.segundoParcia
         ? `Mostrando ${inicio + 1}–${inicio + visibles.length} de ${todos.length} preguntas`
         : 'No hay preguntas que coincidan con los filtros.';
       document.getElementById('ipc-banco-lista').innerHTML = visibles.map((q, n) => {
-        const refs = Object.entries(q.refutacionIncorrectas || {});
         const expansiones = q.expansionEstudio || [];
         return `
           <article class="ipc-p2-banco-pregunta">
@@ -1810,10 +1808,6 @@ async function vistaBancoIPC(m, materiaIndex, autoresIniciales = m.segundoParcia
               <h3>Justificación de la respuesta correcta</h3>
               <p>${esc(q.explicacion || 'Sin justificación cargada.')}</p>
             </section>
-            ${refs.length ? `<details class="ipc-p2-distractores" open>
-              <summary>Refutación de las respuestas incorrectas</summary>
-              <ul>${refs.map(([letra, motivo]) => `<li><b>${esc(letra)}.</b> ${esc(motivo)}</li>`).join('')}</ul>
-            </details>` : ''}
             ${expansiones.length ? `<section class="ipc-p2-expansion">
               <h3>Expansión de estudio</h3>
               ${expansiones.map((x) => `<div><h4>${esc(x.pregunta)}</h4><p>${esc(x.respuesta)}</p></div>`).join('')}
@@ -2146,12 +2140,13 @@ function mostrarPregunta() {
 
 
 function detalleDidacticoHTML(q) {
-  const refs = Object.entries(q.refutacionIncorrectas || {});
+  const esSegundoParcialIPC = q.temaId === SEGUNDO_PARCIAL_TEMA_ID;
+  const refs = esSegundoParcialIPC ? [] : Object.entries(q.refutacionIncorrectas || {});
   const expansion = q.expansionEstudio || [];
   if (!refs.length && !expansion.length) return '';
   return `
     <details class="detalle-didactico">
-      <summary>Analizar distractores y ampliar estudio</summary>
+      <summary>${refs.length ? 'Analizar distractores y ampliar estudio' : 'Ampliar estudio'}</summary>
       ${refs.length ? `<section><h4>Por qué son incorrectas las otras opciones</h4><ul>${refs.map(([letra, texto]) => `<li><b>${esc(letra)}.</b> ${esc(texto)}</li>`).join('')}</ul></section>` : ''}
       ${expansion.length ? `<section><h4>Expansión de estudio</h4>${expansion.map((x) => `<div class="detalle-expansion"><strong>${esc(x.pregunta)}</strong><p>${esc(x.respuesta)}</p></div>`).join('')}</section>` : ''}
     </details>`;
