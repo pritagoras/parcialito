@@ -31,11 +31,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "La concepción clásica entiende que las teorías científicas son representaciones de la realidad que funcionan como un espejo del mundo.",
-      "refutacionIncorrectas": {
-        "B": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "C": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado.",
-        "D": "Presenta un factor como explicación exclusiva y deja fuera el carácter relacional e histórico del proceso. El concepto exige atender a la interacción entre categorías, personas, expertos e instituciones, no a una causa única."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -74,11 +69,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Hacking cuestiona que la ciencia se comprenda únicamente desde las teorías y la representación, rescatando la dimensión epistemológica de la práctica experimental.",
-      "refutacionIncorrectas": {
-        "A": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "D": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -117,11 +107,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Intervenir implica manipular materiales, controlar variables y producir fenómenos mediante la práctica experimental.",
-      "refutacionIncorrectas": {
-        "A": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "B": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "D": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -160,11 +145,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "El realismo de entidades se apoya en la capacidad de manipular entidades de forma fiable para intervenir en otros fenómenos.",
-      "refutacionIncorrectas": {
-        "A": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "B": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "C": "Presenta un factor como explicación exclusiva y deja fuera el carácter relacional e histórico del proceso. El concepto exige atender a la interacción entre categorías, personas, expertos e instituciones, no a una causa única."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -203,11 +183,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Los electrones ilustran el realismo de entidades porque, aunque no se observen a simple vista, pueden ser manipulados para producir efectos controlados y reproducibles.",
-      "refutacionIncorrectas": {
-        "B": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "D": "Reduce el proceso a una expectativa que produce linealmente el resultado. El efecto de bucle implica retroalimentación: la clasificación afecta a los sujetos y sus respuestas pueden transformar después la categoría y el conocimiento experto."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -246,11 +221,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Los miembros de una clase indiferente no reaccionan ni modifican su conducta física o natural por el mero hecho de ser clasificados.",
-      "refutacionIncorrectas": {
-        "A": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "D": "Presenta un factor como explicación exclusiva y deja fuera el carácter relacional e histórico del proceso. El concepto exige atender a la interacción entre categorías, personas, expertos e instituciones, no a una causa única."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -289,11 +259,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Plutón no cambió su masa ni su trayectoria orbital al ser reclasificado, lo que ilustra el comportamiento de una clase indiferente.",
-      "refutacionIncorrectas": {
-        "A": "Traslada a objetos naturales una capacidad de respuesta propia de las clases humanas interactivas. Una reclasificación astronómica puede cambiar el vocabulario científico sin que el objeto conozca la etiqueta ni modifique sus propiedades por ella.",
-        "B": "Traslada a objetos naturales una capacidad de respuesta propia de las clases humanas interactivas. Una reclasificación astronómica puede cambiar el vocabulario científico sin que el objeto conozca la etiqueta ni modifique sus propiedades por ella.",
-        "D": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -332,11 +297,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "Las clases interactivas aplican a seres humanos capaces de reaccionar, reinterpretar su conducta y modificar la categoría que se les aplica.",
-      "refutacionIncorrectas": {
-        "A": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado.",
-        "B": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "C": "Supone que las clasificaciones humanas son estables y ahistóricas. Hacking estudia cómo los criterios y los tipos de personas pueden mutar al cambiar las prácticas, las instituciones y las respuestas de los clasificados."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -375,11 +335,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "El nominalismo dinámico sostiene que las clasificaciones y las formas de ser persona interactúan y se transforman conjuntamente a lo largo de la historia.",
-      "refutacionIncorrectas": {
-        "B": "Interpreta «construcción de personas» como fabricación biológica o creación material desde cero. La tesis refiere a la formación histórica de tipos humanos reconocibles mediante categorías, expertos e instituciones.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "D": "Confunde construcción histórica con falsedad o arbitrariedad. Para Hacking una categoría puede ser histórica, describir experiencias reales y producir consecuencias institucionales y subjetivas."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -418,11 +373,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "La construcción de personas describe cómo nuevas clasificaciones e instituciones hacen posibles formas inéditas de experiencia y autocomprensión.",
-      "refutacionIncorrectas": {
-        "A": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado.",
-        "C": "Confunde construcción histórica con falsedad o arbitrariedad. Para Hacking una categoría puede ser histórica, describir experiencias reales y producir consecuencias institucionales y subjetivas.",
-        "D": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -461,11 +411,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "El efecto bucle implica que las personas responden a las clasificaciones que se les aplican y sus respuestas modifican la categoría y las prácticas institucionales.",
-      "refutacionIncorrectas": {
-        "A": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la retroalimentación entre clasificación y personas hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "B": "Invierte la distinción: una clase indiferente no responde a la clasificación, mientras que la situación descrita en la consigna exige precisamente una interacción de los clasificados con la categoría.",
-        "D": "Reduce el proceso a una expectativa que produce linealmente el resultado. El efecto de bucle implica retroalimentación: la clasificación afecta a los sujetos y sus respuestas pueden transformar después la categoría y el conocimiento experto."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -504,11 +449,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "En la fase de revisión del efecto bucle, las instituciones ajustan o transforman los límites de la categoría basándose en la conducta de los clasificados.",
-      "refutacionIncorrectas": {
-        "A": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la retroalimentación entre clasificación y personas hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "B": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la retroalimentación entre clasificación y personas hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la retroalimentación entre clasificación y personas hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -547,11 +487,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "El efecto bucle contempla una retroalimentación compleja donde los sujetos pueden resistir, reinterpretar y alterar la categoría original.",
-      "refutacionIncorrectas": {
-        "B": "Reduce el proceso a una expectativa que produce linealmente el resultado. El efecto de bucle implica retroalimentación: la clasificación afecta a los sujetos y sus respuestas pueden transformar después la categoría y el conocimiento experto.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la retroalimentación entre clasificación y personas hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "D": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la retroalimentación entre clasificación y personas hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -590,11 +525,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "El nicho ecológico identifica la trama de condiciones específicas que permiten que una categoría humana surja, sea inteligible y se sostenga en una época.",
-      "refutacionIncorrectas": {
-        "A": "Lee literalmente la metáfora ecológica. El nicho no es un lugar físico ni el hábitat de una especie: es una configuración histórica de saberes, instituciones, valores y prácticas que hace viable una clasificación.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde las condiciones históricas que hacen posible una clasificación hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "D": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -633,11 +563,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Hacking identifica cuatro vectores centrales para analizar el nicho ecológico: taxonomía médica, polaridad cultural, observabilidad y liberación.",
-      "refutacionIncorrectas": {
-        "A": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde las condiciones históricas que hacen posible una clasificación hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "B": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde las condiciones históricas que hacen posible una clasificación hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "D": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde las condiciones históricas que hacen posible una clasificación hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -676,11 +601,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "La polaridad cultural alude a las valoraciones y oposiciones de una sociedad (como normal/anormal o responsabilidad/incapacidad) que vuelven inteligible una categoría.",
-      "refutacionIncorrectas": {
-        "A": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado.",
-        "B": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado.",
-        "C": "Interpreta «liberación» como emancipación colectiva y definitiva. En el vector de Hacking se trata de una posible salida o respuesta socialmente inteligible frente a tensiones históricas, no de una liberación total garantizada."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -719,11 +639,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "El vector de liberación se refiere a las salidas o justificaciones que una categoría ofrece a los individuos frente a presiones de su entorno cultural.",
-      "refutacionIncorrectas": {
-        "B": "Interpreta «liberación» como emancipación colectiva y definitiva. En el vector de Hacking se trata de una posible salida o respuesta socialmente inteligible frente a tensiones históricas, no de una liberación total garantizada.",
-        "C": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado.",
-        "D": "Confunde una posible función de evasión/liberación con la desaparición automática de la categoría. El vector no supone que el diagnóstico se borre ni que todos los casos produzcan el mismo desenlace."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -762,11 +677,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "La ontología histórica estudia la constitución de categorías, instituciones y tipos de personas como posibilidades de existencia que aparecen en momentos específicos.",
-      "refutacionIncorrectas": {
-        "A": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "D": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -805,11 +715,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Hacking y Foucault comparten el análisis de cómo los discursos de saber e instituciones de poder intervienen en la constitución histórica de los sujetos.",
-      "refutacionIncorrectas": {
-        "A": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "B": "Traslada a objetos naturales una capacidad de respuesta propia de las clases humanas interactivas. Una reclasificación astronómica puede cambiar el vocabulario científico sin que el objeto conozca la etiqueta ni modifique sus propiedades por ella.",
-        "D": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -848,11 +753,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "La contingencia histórica señala que las categorías surgen bajo condiciones particulares de una época, lo que no niega sus efectos objetivos ni su realidad.",
-      "refutacionIncorrectas": {
-        "A": "Confunde construcción histórica con falsedad o arbitrariedad. Para Hacking una categoría puede ser histórica, describir experiencias reales y producir consecuencias institucionales y subjetivas.",
-        "B": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -891,11 +791,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "La categoría de feminicidio no inventa los hechos materiales, sino que ofrece el marco histórico e institucional para reconocerlos y organizarlos como un problema específico.",
-      "refutacionIncorrectas": {
-        "B": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "D": "Invierte la distinción: una clase indiferente no responde a la clasificación, mientras que la situación descrita en la consigna exige precisamente una interacción de los clasificados con la categoría."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -934,11 +829,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Estudiar la constitución histórica del TDAH y sus efectos de bucle permite comprender el impacto de la clasificación sin invalidar la realidad de las dificultades del individuo.",
-      "refutacionIncorrectas": {
-        "A": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "C": "Invierte la distinción: una clase indiferente no responde a la clasificación, mientras que la situación descrita en la consigna exige precisamente una interacción de los clasificados con la categoría.",
-        "D": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -977,11 +867,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "La categoría de bullying organiza y delimita un tipo particular de agresión con criterios de asimetría de poder, modificando las respuestas escolares e institucionales.",
-      "refutacionIncorrectas": {
-        "A": "Supone que las clasificaciones humanas son estables y ahistóricas. Hacking estudia cómo los criterios y los tipos de personas pueden mutar al cambiar las prácticas, las instituciones y las respuestas de los clasificados.",
-        "B": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "D": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1020,11 +905,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "El análisis distingue las prácticas o afectos entre personas del mismo sexo de la categoría histórica moderna que constituyó una forma particular de identidad social.",
-      "refutacionIncorrectas": {
-        "A": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "B": "Reduce el proceso a una expectativa que produce linealmente el resultado. El efecto de bucle implica retroalimentación: la clasificación afecta a los sujetos y sus respuestas pueden transformar después la categoría y el conocimiento experto.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1063,11 +943,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "El análisis de Hacking distingue las características biológicas del sexo de las normas y clasificaciones de género, las cuales organizan roles y son modificadas por las personas.",
-      "refutacionIncorrectas": {
-        "B": "Supone que las clasificaciones humanas son estables y ahistóricas. Hacking estudia cómo los criterios y los tipos de personas pueden mutar al cambiar las prácticas, las instituciones y las respuestas de los clasificados.",
-        "C": "Invierte la distinción: una clase indiferente no responde a la clasificación, mientras que la situación descrita en la consigna exige precisamente una interacción de los clasificados con la categoría.",
-        "D": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1106,11 +981,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "En las ciencias humanas, las personas responden a las teorías y clasificaciones que las describen, haciendo que el objeto de estudio se transforme continuamente.",
-      "refutacionIncorrectas": {
-        "A": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "D": "Traslada a objetos naturales una capacidad de respuesta propia de las clases humanas interactivas. Una reclasificación astronómica puede cambiar el vocabulario científico sin que el objeto conozca la etiqueta ni modifique sus propiedades por ella."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1149,11 +1019,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Agregar una nueva categoría (como 'ropa para limpiar') reorganiza prendas preexistentes creando una clase funcional, del mismo modo en que operan ciertas clasificaciones humanas.",
-      "refutacionIncorrectas": {
-        "A": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado.",
-        "B": "Traslada a objetos naturales una capacidad de respuesta propia de las clases humanas interactivas. Una reclasificación astronómica puede cambiar el vocabulario científico sin que el objeto conozca la etiqueta ni modifique sus propiedades por ella.",
-        "D": "Extiende indebidamente el apoyo a una entidad o a una práctica hacia la verdad definitiva de toda la teoría. Hacking distingue el realismo de entidades del realismo de teorías."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1192,11 +1057,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "Hacking plantea que la práctica experimental y la representación teórica se retroalimentan continuamente en la producción del conocimiento científico.",
-      "refutacionIncorrectas": {
-        "A": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "B": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1235,11 +1095,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "La capacidad de producir efectos reproducibles mediante manipulación controlada ofrece razones para atribuir capacidades causales a la entidad investigada.",
-      "refutacionIncorrectas": {
-        "B": "Extiende indebidamente el apoyo a una entidad o a una práctica hacia la verdad definitiva de toda la teoría. Hacking distingue el realismo de entidades del realismo de teorías.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "D": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1278,11 +1133,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "El antirrealismo reúne posturas que dudan de que el éxito explicativo o predictivo de una teoría garantice la existencia real de las entidades no observables que menciona.",
-      "refutacionIncorrectas": {
-        "A": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado.",
-        "C": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "D": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1321,11 +1171,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "La fuga disociativa ilustra cómo la confluencia de la taxonomía médica, tensiones culturales y posibilidades de respuesta constituyeron el nicho ecológico de una enfermedad transitoria.",
-      "refutacionIncorrectas": {
-        "A": "Invierte la distinción: una clase indiferente no responde a la clasificación, mientras que la situación descrita en la consigna exige precisamente una interacción de los clasificados con la categoría.",
-        "B": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado.",
-        "D": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1364,11 +1209,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "Las ciencias humanas se enfocan en la constitución histórica de categorizaciones y personas, mientras que las ciencias naturales abordan la justificación del conocimiento del mundo natural.",
-      "refutacionIncorrectas": {
-        "A": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "B": "Mezcla el problema de la clasificación humana con la intervención experimental sobre entidades. La manipulación pertenece al argumento de Hacking sobre realismo de entidades; no define por sí misma el concepto social preguntado.",
-        "C": "Extiende indebidamente el apoyo a una entidad o a una práctica hacia la verdad definitiva de toda la teoría. Hacking distingue el realismo de entidades del realismo de teorías."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1407,11 +1247,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "El análisis riguroso de Hacking separa los acontecimientos o vivencias previas de la categoría histórica e institucional que permite clasificarlos y actuar sobre ellos.",
-      "refutacionIncorrectas": {
-        "A": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "B": "Esta alternativa no responde al mecanismo específico del enunciado. Confunde o desplaza el análisis desde la distinción conceptual examinada hacia una afirmación diferente; por eso no explica el caso planteado.",
-        "C": "Invierte la distinción: una clase indiferente no responde a la clasificación, mientras que la situación descrita en la consigna exige precisamente una interacción de los clasificados con la categoría."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1450,11 +1285,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "La categoría entra en las prácticas escolares y puede modificar el trato y la autocomprensión. La interacción se demuestra por esas respuestas y por sus efectos de retorno sobre la clasificación.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «La autoridad de quienes diseñaron la categoría.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La categoría entra en las prácticas escolares y puede modificar el trato y la autocomprensión. La interacción se demuestra por esas respuestas y por sus efectos de retorno sobre la clasificación.",
-        "C": "La alternativa «La estabilidad universal del diagnóstico.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La categoría entra en las prácticas escolares y puede modificar el trato y la autocomprensión. La interacción se demuestra por esas respuestas y por sus efectos de retorno sobre la clasificación.",
-        "D": "La alternativa «La observación instrumental del comportamiento.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La categoría entra en las prácticas escolares y puede modificar el trato y la autocomprensión. La interacción se demuestra por esas respuestas y por sus efectos de retorno sobre la clasificación."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué debe evitarse al analizar diagnósticos escolares?",
@@ -1489,11 +1319,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Plutón no conoce ni responde a la taxonomía. La reclasificación cambia su posición en el sistema de categorías, no sus propiedades por el solo hecho de recibir una nueva denominación.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «La reclasificación modifica por sí misma las propiedades físicas.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Plutón no conoce ni responde a la taxonomía. La reclasificación cambia su posición en el sistema de categorías, no sus propiedades por el solo hecho de recibir una nueva denominación.",
-        "B": "La alternativa «Todas las clasificaciones astronómicas son arbitrarias.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Plutón no conoce ni responde a la taxonomía. La reclasificación cambia su posición en el sistema de categorías, no sus propiedades por el solo hecho de recibir una nueva denominación.",
-        "D": "La alternativa «Plutón desarrolla un efecto de bucle.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Plutón no conoce ni responde a la taxonomía. La reclasificación cambia su posición en el sistema de categorías, no sus propiedades por el solo hecho de recibir una nueva denominación."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Por qué se usa Plutón como contraste?",
@@ -1528,11 +1353,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "La existencia previa de episodios de hostigamiento no impide que una categoría histórica delimite criterios, produzca registros y habilite nuevas intervenciones. Experiencias, clasificación y efectos deben analizarse por separado.",
-      "refutacionIncorrectas": {
-        "B": "La alternativa «El bullying comenzó únicamente cuando se acuñó la palabra.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La existencia previa de episodios de hostigamiento no impide que una categoría histórica delimite criterios, produzca registros y habilite nuevas intervenciones. Experiencias, clasificación y efectos deben analizarse por separado.",
-        "C": "La alternativa «La clasificación no produce efectos porque las conductas ya existían.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La existencia previa de episodios de hostigamiento no impide que una categoría histórica delimite criterios, produzca registros y habilite nuevas intervenciones. Experiencias, clasificación y efectos deben analizarse por separado.",
-        "D": "La alternativa «Todo conflicto escolar constituye bullying.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La existencia previa de episodios de hostigamiento no impide que una categoría histórica delimite criterios, produzca registros y habilite nuevas intervenciones. Experiencias, clasificación y efectos deben analizarse por separado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué dos planos conviene separar?",
@@ -1567,11 +1387,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "El bucle requiere vías concretas de interacción: circulación, aplicación institucional, respuesta de las personas o transformación de las prácticas que las afectan. Una etiqueta aislada no demuestra ese proceso.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Ya se produjo necesariamente un bucle completo.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El bucle requiere vías concretas de interacción: circulación, aplicación institucional, respuesta de las personas o transformación de las prácticas que las afectan. Una etiqueta aislada no demuestra ese proceso.",
-        "B": "La alternativa «La categoría es falsa.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El bucle requiere vías concretas de interacción: circulación, aplicación institucional, respuesta de las personas o transformación de las prácticas que las afectan. Una etiqueta aislada no demuestra ese proceso.",
-        "C": "La alternativa «Todos los individuos cambiaron su conducta sin saberlo.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El bucle requiere vías concretas de interacción: circulación, aplicación institucional, respuesta de las personas o transformación de las prácticas que las afectan. Una etiqueta aislada no demuestra ese proceso."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué evidencia ayudaría a identificar interacción?",
@@ -1606,11 +1421,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Una clase indiferente no interactúa con la categoría. La taxonomía puede cambiar por razones científicas, pero los miembros no conocen ni responden a la etiqueta y no cambian por ello sus propiedades.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Sus integrantes son personas que rechazan la categoría.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una clase indiferente no interactúa con la categoría. La taxonomía puede cambiar por razones científicas, pero los miembros no conocen ni responden a la etiqueta y no cambian por ello sus propiedades.",
-        "C": "La alternativa «La categoría es necesariamente falsa.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una clase indiferente no interactúa con la categoría. La taxonomía puede cambiar por razones científicas, pero los miembros no conocen ni responden a la etiqueta y no cambian por ello sus propiedades.",
-        "D": "La alternativa «La clasificación no puede revisarse.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una clase indiferente no interactúa con la categoría. La taxonomía puede cambiar por razones científicas, pero los miembros no conocen ni responden a la etiqueta y no cambian por ello sus propiedades."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué diferencia existe con una clase interactiva?",
@@ -1645,11 +1455,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "El efecto de bucle es la retroalimentación entre la categoría, las personas clasificadas, las instituciones y el conocimiento experto. La clasificación influye en los sujetos y sus respuestas pueden transformar la categoría.",
-      "refutacionIncorrectas": {
-        "B": "La alternativa «Falsación por modus tollens.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El efecto de bucle es la retroalimentación entre la categoría, las personas clasificadas, las instituciones y el conocimiento experto. La clasificación influye en los sujetos y sus respuestas pueden transformar la categoría.",
-        "C": "La alternativa «Matriz disciplinar.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El efecto de bucle es la retroalimentación entre la categoría, las personas clasificadas, las instituciones y el conocimiento experto. La clasificación influye en los sujetos y sus respuestas pueden transformar la categoría.",
-        "D": "La alternativa «Suplicio soberano.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El efecto de bucle es la retroalimentación entre la categoría, las personas clasificadas, las instituciones y el conocimiento experto. La clasificación influye en los sujetos y sus respuestas pueden transformar la categoría."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Cuáles son los momentos mínimos del bucle?",
@@ -1684,11 +1489,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "La dinámica es circular: una clasificación afecta a las personas, pero sus respuestas y prácticas pueden obligar a revisar el conocimiento y la clasificación. No es una influencia unilateral.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Porque las personas no conocen la categoría.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La dinámica es circular: una clasificación afecta a las personas, pero sus respuestas y prácticas pueden obligar a revisar el conocimiento y la clasificación. No es una influencia unilateral.",
-        "B": "La alternativa «Porque solo cambia la conducta institucional.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La dinámica es circular: una clasificación afecta a las personas, pero sus respuestas y prácticas pueden obligar a revisar el conocimiento y la clasificación. No es una influencia unilateral.",
-        "D": "La alternativa «Porque la categoría permanece idéntica aunque cambie la población.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La dinámica es circular: una clasificación afecta a las personas, pero sus respuestas y prácticas pueden obligar a revisar el conocimiento y la clasificación. No es una influencia unilateral."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué puede modificarse en este circuito?",
@@ -1723,11 +1523,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "La interacción no exige adhesión. Rechazar, resistir u ocultar una categoría puede tener consecuencias institucionales y alterar el modo en que se aplica o revisa.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «No hay interacción porque no aceptó la etiqueta.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La interacción no exige adhesión. Rechazar, resistir u ocultar una categoría puede tener consecuencias institucionales y alterar el modo en que se aplica o revisa.",
-        "B": "La alternativa «Hay interacción solo si todos los expertos renuncian a clasificar.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La interacción no exige adhesión. Rechazar, resistir u ocultar una categoría puede tener consecuencias institucionales y alterar el modo en que se aplica o revisa.",
-        "C": "La alternativa «El rechazo demuestra que la categoría siempre fue falsa.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La interacción no exige adhesión. Rechazar, resistir u ocultar una categoría puede tener consecuencias institucionales y alterar el modo en que se aplica o revisa."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué respuestas pueden modificar una categoría?",
@@ -1762,11 +1557,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "El efecto de bucle no se limita a que una expectativa produzca el resultado anticipado. Analiza cómo las categorías y los clasificados se transforman mutuamente, incluidos los cambios en conocimientos e instituciones.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Son conceptos idénticos.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El efecto de bucle no se limita a que una expectativa produzca el resultado anticipado. Analiza cómo las categorías y los clasificados se transforman mutuamente, incluidos los cambios en conocimientos e instituciones.",
-        "C": "La alternativa «El bucle solo ocurre en ciencias naturales.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El efecto de bucle no se limita a que una expectativa produzca el resultado anticipado. Analiza cómo las categorías y los clasificados se transforman mutuamente, incluidos los cambios en conocimientos e instituciones.",
-        "D": "La alternativa «La profecía autocumplida requiere una revisión taxonómica.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El efecto de bucle no se limita a que una expectativa produzca el resultado anticipado. Analiza cómo las categorías y los clasificados se transforman mutuamente, incluidos los cambios en conocimientos e instituciones."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué elemento amplía el alcance del bucle?",
@@ -1801,11 +1591,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Hacking no presupone una respuesta homogénea. La interacción puede ser positiva, negativa o ambivalente y debe reconstruirse en el contexto concreto.",
-      "refutacionIncorrectas": {
-        "B": "La alternativa «Se reconoce que la categoría es histórica.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Hacking no presupone una respuesta homogénea. La interacción puede ser positiva, negativa o ambivalente y debe reconstruirse en el contexto concreto.",
-        "C": "La alternativa «Se distingue entre categoría y experiencia.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Hacking no presupone una respuesta homogénea. La interacción puede ser positiva, negativa o ambivalente y debe reconstruirse en el contexto concreto.",
-        "D": "La alternativa «Se admite que hay instituciones.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Hacking no presupone una respuesta homogénea. La interacción puede ser positiva, negativa o ambivalente y debe reconstruirse en el contexto concreto."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Por qué la respuesta no es uniforme?",
@@ -1840,11 +1625,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "El nicho ecológico es una configuración de condiciones sociales, culturales, médicas, institucionales y técnicas. No es un hábitat biológico literal ni una etapa temporal fija.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «El lugar físico donde viven los clasificados.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El nicho ecológico es una configuración de condiciones sociales, culturales, médicas, institucionales y técnicas. No es un hábitat biológico literal ni una etapa temporal fija.",
-        "B": "La alternativa «Una fase cronológica de la ciencia normal.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El nicho ecológico es una configuración de condiciones sociales, culturales, médicas, institucionales y técnicas. No es un hábitat biológico literal ni una etapa temporal fija.",
-        "C": "La alternativa «El conjunto de síntomas que define una enfermedad sin contexto histórico.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El nicho ecológico es una configuración de condiciones sociales, culturales, médicas, institucionales y técnicas. No es un hábitat biológico literal ni una etapa temporal fija."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué condiciones pueden integrar un nicho?",
@@ -1879,11 +1659,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Los vectores reconstruyen dimensiones de un nicho: disponibilidad de una categoría médica, tensiones valorativas de época, condiciones para observar y registrar casos, y una posible función de salida o liberación.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Paradigma, anomalía, crisis y revolución.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Los vectores reconstruyen dimensiones de un nicho: disponibilidad de una categoría médica, tensiones valorativas de época, condiciones para observar y registrar casos, y una posible función de salida o liberación.",
-        "C": "La alternativa «Vigilancia, examen, encierro y sanción.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Los vectores reconstruyen dimensiones de un nicho: disponibilidad de una categoría médica, tensiones valorativas de época, condiciones para observar y registrar casos, y una posible función de salida o liberación.",
-        "D": "La alternativa «Hipótesis, predicción, prueba y verificación.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Los vectores reconstruyen dimensiones de un nicho: disponibilidad de una categoría médica, tensiones valorativas de época, condiciones para observar y registrar casos, y una posible función de salida o liberación."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Los vectores son etapas cronológicas?",
@@ -1918,11 +1693,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "La polaridad cultural refiere a oposiciones valorativas de una época que otorgan sentido a una conducta y ayudan a explicar por qué cierta clasificación pudo adquirir relevancia.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Visibilidad y observabilidad.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La polaridad cultural refiere a oposiciones valorativas de una época que otorgan sentido a una conducta y ayudan a explicar por qué cierta clasificación pudo adquirir relevancia.",
-        "B": "La alternativa «Clasificación médica.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La polaridad cultural refiere a oposiciones valorativas de una época que otorgan sentido a una conducta y ayudan a explicar por qué cierta clasificación pudo adquirir relevancia.",
-        "D": "La alternativa «Evasión o liberación.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La polaridad cultural refiere a oposiciones valorativas de una época que otorgan sentido a una conducta y ayudan a explicar por qué cierta clasificación pudo adquirir relevancia."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Por qué importa la polaridad cultural?",
@@ -1957,11 +1727,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "La observabilidad requiere observadores, lugares institucionales y procedimientos que permitan hacer visible el fenómeno como conjunto de casos comparables y registrables.",
-      "refutacionIncorrectas": {
-        "B": "La alternativa «Una categoría que ofrece una salida frente a tensiones sociales.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La observabilidad requiere observadores, lugares institucionales y procedimientos que permitan hacer visible el fenómeno como conjunto de casos comparables y registrables.",
-        "C": "La alternativa «La aparición de un diagnóstico experto.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La observabilidad requiere observadores, lugares institucionales y procedimientos que permitan hacer visible el fenómeno como conjunto de casos comparables y registrables.",
-        "D": "La alternativa «Una oposición moral entre virtud y vicio.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La observabilidad requiere observadores, lugares institucionales y procedimientos que permitan hacer visible el fenómeno como conjunto de casos comparables y registrables."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué ejemplos aumentan la observabilidad?",
@@ -1996,11 +1761,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "El vector de evasión/liberación analiza una posible función que la categoría cumple en un contexto histórico. No supone necesariamente simulación consciente ni una intención idéntica en todos los individuos.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Una demostración experimental de la verdad del diagnóstico.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El vector de evasión/liberación analiza una posible función que la categoría cumple en un contexto histórico. No supone necesariamente simulación consciente ni una intención idéntica en todos los individuos.",
-        "B": "La alternativa «La eliminación de toda norma cultural.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El vector de evasión/liberación analiza una posible función que la categoría cumple en un contexto histórico. No supone necesariamente simulación consciente ni una intención idéntica en todos los individuos.",
-        "C": "La alternativa «La imposibilidad de responder a una clasificación.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El vector de evasión/liberación analiza una posible función que la categoría cumple en un contexto histórico. No supone necesariamente simulación consciente ni una intención idéntica en todos los individuos."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿La evasión supone simulación consciente?",
@@ -2035,11 +1795,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Los vectores no son etapas cronológicas ni causas aisladas. Importa la configuración conjunta de condiciones que vuelve viable una clasificación en un contexto específico.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Como cuatro etapas obligatorias que siempre ocurren en el mismo orden.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Los vectores no son etapas cronológicas ni causas aisladas. Importa la configuración conjunta de condiciones que vuelve viable una clasificación en un contexto específico.",
-        "C": "La alternativa «Como sinónimos de la categoría médica.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Los vectores no son etapas cronológicas ni causas aisladas. Importa la configuración conjunta de condiciones que vuelve viable una clasificación en un contexto específico.",
-        "D": "La alternativa «Como cuatro tipos de clases humanas.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Los vectores no son etapas cronológicas ni causas aisladas. Importa la configuración conjunta de condiciones que vuelve viable una clasificación en un contexto específico."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Cómo se aplican a un caso actual?",
@@ -2074,11 +1829,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "El nicho explica las condiciones históricas de posibilidad de una categoría. El bucle analiza la interacción que puede desencadenarse cuando se aplica y las personas responden.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «El nicho es una consecuencia del modus tollens.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El nicho explica las condiciones históricas de posibilidad de una categoría. El bucle analiza la interacción que puede desencadenarse cuando se aplica y las personas responden.",
-        "B": "La alternativa «El bucle describe el hábitat físico de una persona.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El nicho explica las condiciones históricas de posibilidad de una categoría. El bucle analiza la interacción que puede desencadenarse cuando se aplica y las personas responden.",
-        "D": "La alternativa «Son nombres diferentes para el mismo fenómeno.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El nicho explica las condiciones históricas de posibilidad de una categoría. El bucle analiza la interacción que puede desencadenarse cuando se aplica y las personas responden."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Puede cambiar el nicho tras aparecer una categoría?",
@@ -2113,11 +1863,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "El nominalismo dinámico destaca que las clasificaciones pueden contribuir a configurar tipos humanos reconocibles y que las personas clasificadas pueden, a su vez, modificar las categorías.",
-      "refutacionIncorrectas": {
-        "B": "La alternativa «Toda clase humana existe igual en todas las épocas.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El nominalismo dinámico destaca que las clasificaciones pueden contribuir a configurar tipos humanos reconocibles y que las personas clasificadas pueden, a su vez, modificar las categorías.",
-        "C": "La alternativa «Las palabras nunca modifican las prácticas sociales.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El nominalismo dinámico destaca que las clasificaciones pueden contribuir a configurar tipos humanos reconocibles y que las personas clasificadas pueden, a su vez, modificar las categorías.",
-        "D": "La alternativa «Toda categoría social es falsa por haber sido construida.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El nominalismo dinámico destaca que las clasificaciones pueden contribuir a configurar tipos humanos reconocibles y que las personas clasificadas pueden, a su vez, modificar las categorías."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué diferencia hay con un nominalismo meramente lingüístico?",
@@ -2152,11 +1897,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "No significa crear individuos desde cero. Describe cómo una red de clasificaciones, personas, instituciones, conocimiento experto y expertos contribuye a formar tipos humanos socialmente reconocibles.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Fabricar físicamente individuos mediante el lenguaje.» es incorrecta porque no respeta la distinción desarrollada en la justificación: No significa crear individuos desde cero. Describe cómo una red de clasificaciones, personas, instituciones, conocimiento experto y expertos contribuye a formar tipos humanos socialmente reconocibles.",
-        "B": "La alternativa «Demostrar que los fenómenos humanos no existían antes del diagnóstico.» es incorrecta porque no respeta la distinción desarrollada en la justificación: No significa crear individuos desde cero. Describe cómo una red de clasificaciones, personas, instituciones, conocimiento experto y expertos contribuye a formar tipos humanos socialmente reconocibles.",
-        "C": "La alternativa «Clasificar personas sin que intervengan instituciones ni expertos.» es incorrecta porque no respeta la distinción desarrollada en la justificación: No significa crear individuos desde cero. Describe cómo una red de clasificaciones, personas, instituciones, conocimiento experto y expertos contribuye a formar tipos humanos socialmente reconocibles."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué elementos intervienen?",
@@ -2191,11 +1931,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "El proceso incluye la categoría, las personas, las instituciones que la aplican, los conocimientos que describen al grupo y los expertos que producen y revisan esos saberes.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Teoría, predicción, enunciado básico, deducción y falsación.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El proceso incluye la categoría, las personas, las instituciones que la aplican, los conocimientos que describen al grupo y los expertos que producen y revisan esos saberes.",
-        "C": "La alternativa «Vigilancia, suplicio, prisión, examen y castigo.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El proceso incluye la categoría, las personas, las instituciones que la aplican, los conocimientos que describen al grupo y los expertos que producen y revisan esos saberes.",
-        "D": "La alternativa «Valores, ejemplares, anomalías, paradigmas y revolución.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El proceso incluye la categoría, las personas, las instituciones que la aplican, los conocimientos que describen al grupo y los expertos que producen y revisan esos saberes."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Por qué no basta con estudiar el nombre de una categoría?",
@@ -2230,11 +1965,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Hacking cuestiona que todas las categorías sean etiquetas aplicadas a clases completamente formadas. En ciertos casos clasificar contribuye a configurar una forma de reconocimiento, tratamiento y autocomprensión.",
-      "refutacionIncorrectas": {
-        "B": "La alternativa «Ambas expresiones significan lo mismo.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Hacking cuestiona que todas las categorías sean etiquetas aplicadas a clases completamente formadas. En ciertos casos clasificar contribuye a configurar una forma de reconocimiento, tratamiento y autocomprensión.",
-        "C": "La alternativa «Hacer una clase implica inventar todos los rasgos físicos de cada individuo.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Hacking cuestiona que todas las categorías sean etiquetas aplicadas a clases completamente formadas. En ciertos casos clasificar contribuye a configurar una forma de reconocimiento, tratamiento y autocomprensión.",
-        "D": "La alternativa «Descubrir siempre significa falsar una teoría.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Hacking cuestiona que todas las categorías sean etiquetas aplicadas a clases completamente formadas. En ciertos casos clasificar contribuye a configurar una forma de reconocimiento, tratamiento y autocomprensión."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué puede preexistir a una categoría nueva?",
@@ -2269,11 +1999,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "La historicidad no demuestra falsedad. Es necesario distinguir experiencias, criterios clasificatorios y efectos institucionales, y evaluar cada dimensión en lugar de concluir que todo es ficticio.",
-      "refutacionIncorrectas": {
-        "B": "La alternativa «Porque todo lo construido es verdadero.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La historicidad no demuestra falsedad. Es necesario distinguir experiencias, criterios clasificatorios y efectos institucionales, y evaluar cada dimensión en lugar de concluir que todo es ficticio.",
-        "C": "La alternativa «Porque solo importa la aceptación de los expertos.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La historicidad no demuestra falsedad. Es necesario distinguir experiencias, criterios clasificatorios y efectos institucionales, y evaluar cada dimensión en lugar de concluir que todo es ficticio.",
-        "D": "La alternativa «Porque los hechos dejan de existir cuando cambian los nombres.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La historicidad no demuestra falsedad. Es necesario distinguir experiencias, criterios clasificatorios y efectos institucionales, y evaluar cada dimensión en lugar de concluir que todo es ficticio."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué no se deduce automáticamente de la historicidad?",
@@ -2308,11 +2033,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "La ontología histórica reconstruye cómo ciertas posibilidades de existencia se vuelven inteligibles y practicables en momentos concretos. No se limita a fechar palabras ni a describir esencias ahistóricas.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «La existencia de verdades eternas sin contexto.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La ontología histórica reconstruye cómo ciertas posibilidades de existencia se vuelven inteligibles y practicables en momentos concretos. No se limita a fechar palabras ni a describir esencias ahistóricas.",
-        "B": "La alternativa «La estructura formal de los argumentos deductivos.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La ontología histórica reconstruye cómo ciertas posibilidades de existencia se vuelven inteligibles y practicables en momentos concretos. No se limita a fechar palabras ni a describir esencias ahistóricas.",
-        "C": "La alternativa «La distribución del poder soberano en el Estado.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La ontología histórica reconstruye cómo ciertas posibilidades de existencia se vuelven inteligibles y practicables en momentos concretos. No se limita a fechar palabras ni a describir esencias ahistóricas."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué pregunta expresa este enfoque?",
@@ -2347,11 +2067,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "La contingencia indica que una clasificación pudo emerger bajo ciertas condiciones y no tenía que existir siempre ni en todas partes. La tarea es reconstruir qué condiciones la hicieron posible.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Que debía aparecer necesariamente en todas las sociedades.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La contingencia indica que una clasificación pudo emerger bajo ciertas condiciones y no tenía que existir siempre ni en todas partes. La tarea es reconstruir qué condiciones la hicieron posible.",
-        "C": "La alternativa «Que no puede estudiarse con evidencia.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La contingencia indica que una clasificación pudo emerger bajo ciertas condiciones y no tenía que existir siempre ni en todas partes. La tarea es reconstruir qué condiciones la hicieron posible.",
-        "D": "La alternativa «Que la categoría es una decisión individual arbitraria.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La contingencia indica que una clasificación pudo emerger bajo ciertas condiciones y no tenía que existir siempre ni en todas partes. La tarea es reconstruir qué condiciones la hicieron posible."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué pregunta ayuda a identificar contingencia?",
@@ -2386,11 +2101,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Los cuatro vectores permiten describir dimensiones que interactúan en la configuración histórica de una categoría: clasificación, polaridad cultural, visibilidad y evasión o liberación. No son fases cronológicas ni factores aislados.",
-      "refutacionIncorrectas": {
-        "B": "Reduce un proceso multidimensional a una causa única y desconoce que los vectores pueden influirse recíprocamente.",
-        "C": "Confunde estabilización provisional con pérdida de historicidad: una clasificación puede seguir transformándose aunque esté institucionalizada.",
-        "D": "Invierte el argumento de Hacking: las personas clasificadas pueden responder a las categorías y modificar sus efectos."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción permite resolver esta consigna?",
@@ -2425,11 +2135,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "La ontología histórica indaga cómo ciertas formas de ser, experimentar y reconocerse emergen bajo condiciones históricas concretas. No se limita al origen de una palabra ni supone que la experiencia sea ficticia.",
-      "refutacionIncorrectas": {
-        "A": "Reduce la ontología histórica a una historia terminológica; Hacking pregunta por las condiciones de posibilidad de ciertas formas de existencia.",
-        "C": "Supone una esencia transhistórica que deja fuera el problema de cómo cambian las formas de experiencia y autocomprensión.",
-        "D": "Confunde historicidad con irrealidad: que una categoría tenga historia no demuestra que el fenómeno sea ficticio."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción permite resolver esta consigna?",
@@ -2464,11 +2169,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "El efecto de bucle describe la interacción entre clasificaciones humanas y personas clasificadas: la categoría puede modificar a quienes incluye y esas respuestas transforman, a su vez, la clasificación.",
-      "refutacionIncorrectas": {
-        "A": "La ontología histórica es un marco más amplio sobre las condiciones históricas de ciertas formas de ser; no nombra específicamente la retroalimentación descrita.",
-        "B": "El realismo de entidades trata la intervención experimental sobre entidades, no la reacción de personas a una clasificación.",
-        "D": "Una clasificación indiferente no produce este tipo de respuesta interactiva."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción permite resolver esta consigna?",
@@ -2503,11 +2203,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Las personas pueden reaccionar a las clasificaciones y cambiar sus prácticas o autocomprensiones. Esto introduce una dinámica interactiva que no se presenta del mismo modo en la clasificación de objetos indiferentes.",
-      "refutacionIncorrectas": {
-        "A": "La posibilidad de interacción no implica arbitrariedad ni niega la existencia de fenómenos reales.",
-        "C": "Las clasificaciones de objetos naturales también pueden cambiar con el conocimiento y los instrumentos; la diferencia central es la reacción del clasificado.",
-        "D": "El efecto de bucle es una posibilidad condicionada, no una consecuencia necesaria de toda clasificación."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción permite resolver esta consigna?",
@@ -2542,11 +2237,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Hacking destaca que la intervención experimental puede respaldar el realismo de entidades: manipular algo de manera fiable para producir otros fenómenos constituye un argumento que no depende exclusivamente de una teoría descriptiva definitiva.",
-      "refutacionIncorrectas": {
-        "B": "Reproduce la prioridad exclusiva de la representación teórica que Hacking cuestiona.",
-        "C": "La capacidad de intervenir no valida simultáneamente todas las teorías que intentan describir la entidad.",
-        "D": "Hacking justamente sostiene que la práctica experimental puede aportar razones para el realismo aun cuando persistan desacuerdos representacionales."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción permite resolver esta consigna?",
