@@ -836,6 +836,20 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 .sp-tema-accion { display:flex; align-items:center; gap:5px; color:#fff2a8; white-space:nowrap; font-size:.75rem; font-weight:800; }
 .sp-tema-accion b { font-size:1rem; }
 
+/* Segundo parcial de IPC: mismo lenguaje visual, identidad violeta propia. */
+.banner-ipc-segundo {
+  margin-top: 10px;
+  border-color: rgba(183,157,255,.9);
+  background:
+    radial-gradient(ellipse at 92% -15%, rgba(190,169,255,.52), transparent 38%),
+    linear-gradient(125deg, #39245f 0%, #5235a0 52%, #30215d 100%);
+  box-shadow: 0 12px 30px rgba(35,18,82,.3), inset 0 1px rgba(255,255,255,.22);
+}
+.banner-ipc-segundo .sp-sello { color:#27174c; background:#d5c6ff; }
+.banner-ipc-segundo .sp-tema-icono { background:linear-gradient(145deg,#d7c8ff,#a88aff); }
+.banner-ipc-segundo .sp-tema:hover { border-color:#e2d8ff; background:rgba(24,14,55,.76); }
+.banner-ipc-segundo .sp-tema-accion { color:#e0d5ff; }
+
 /* Acceso a Parcialito LAB */
 .banner-lab {
   width: 100%; display: flex; align-items: center; gap: 14px; margin: 18px 0 22px;
