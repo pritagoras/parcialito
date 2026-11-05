@@ -1129,6 +1129,30 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 @media(max-width:480px){.english-banner{gap:11px;padding:14px 13px}.english-banner-mark{width:44px;height:44px;flex-basis:44px;font-size:17px}.english-banner-copy strong{font-size:12px}.english-banner-copy small{font-size:10px}.english-banner-cta{font-size:8px;gap:5px}}
 
 
+/* ---------- IPC: modelo de parcial ---------- */
+.ipc-modelo-panel { margin:0 0 1.2rem; padding:1rem; border:1px solid rgba(155,123,255,.42); border-radius:20px; background:linear-gradient(145deg,rgba(76,54,125,.24),rgba(31,24,54,.82)); }
+.ipc-modelo-intro { display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; margin-bottom:.9rem; }
+.ipc-modelo-kicker { color:var(--violeta); font-size:.68rem; font-weight:850; letter-spacing:.13em; }
+.ipc-modelo-intro h2 { margin:.2rem 0 0; font-size:1.25rem; }
+.ipc-modelo-intro p { max-width:420px; margin:.25rem 0 0; color:var(--tenue); font-size:.82rem; line-height:1.5; }
+.ipc-modelo-completo { width:100%; margin-bottom:.85rem; }
+.ipc-modelo-puntos { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.65rem; }
+.ipc-modelo-punto { min-width:0; padding:.85rem; border:1px solid var(--linea); border-radius:14px; background:rgba(19,15,35,.55); }
+.ipc-modelo-punto-top { display:flex; align-items:center; justify-content:space-between; gap:.5rem; }
+.ipc-modelo-num { color:var(--violeta); font-size:.75rem; font-weight:900; letter-spacing:.08em; }
+.ipc-modelo-autor { color:var(--tenue); font-size:.7rem; font-weight:700; }
+.ipc-modelo-punto h3 { margin:.45rem 0 .3rem; font-size:.92rem; line-height:1.3; }
+.ipc-modelo-punto p { min-height:3.2em; margin:0; color:var(--tenue); font-size:.77rem; line-height:1.45; }
+.ipc-modelo-punto-foot { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.35rem; margin-top:.55rem; padding-top:.45rem; border-top:1px solid rgba(184,171,219,.13); }
+.ipc-modelo-punto-foot span { color:var(--tenue); font-size:.7rem; }
+.ipc-modelo-punto-foot .btn { padding:.25rem 0; font-size:.78rem; }
+@media(max-width:620px) {
+  .ipc-modelo-intro { display:block; }
+  .ipc-modelo-intro p { margin-top:.45rem; }
+  .ipc-modelo-puntos { grid-template-columns:1fr; }
+  .ipc-modelo-punto p { min-height:0; }
+}
+
 /* ---------- IPC: Segundo Parcial ---------- */
 .ipc-p2-entry { border-color: rgba(155,123,255,.55); background: linear-gradient(105deg,#302354,#241a43); }
 .ipc-p2-entry:hover { border-color: var(--violeta); }
