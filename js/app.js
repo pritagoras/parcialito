@@ -1471,27 +1471,33 @@ async function lanzarIPCPuntoModelo(m, materiaIndex, punto) {
   }
 }
 
-async function lanzarIPCModeloCompleto(m, materiaIndex) {
-  vistaCargando('Armando una simulación de los 9 puntos…');
+// Todas las variantes de todos los puntos, en orden de punto (1 → 9).
+// Si una pregunta sirve para más de un punto, se cuenta una sola vez (en el primero).
+async function cargarTodasPreguntasIPCModelo(m) {
+  const porPunto = await Promise.all(IPC_MODELO_PARCIAL.map((p) => cargarPreguntasIPCPunto(m, p)));
+  const usados = new Set();
+  const pool = [];
+  IPC_MODELO_PARCIAL.forEach((punto, i) => {
+    const propias = porPunto[i].filter((q) => !usados.has(q.id));
+    propias.forEach((q) => usados.add(q.id));
+    pool.push(...mezclar(propias).map((q) => ({ ...q, tema: 'Punto ' + punto.numero + ' · ' + punto.titulo })));
+  });
+  return pool;
+}
+
+async function lanzarIPCModeloTodas(m, materiaIndex) {
+  vistaCargando('Preparando todas las preguntas del modelo…');
   try {
-    const pool = [];
-    const usados = new Set();
-    for (const punto of IPC_MODELO_PARCIAL) {
-      const variantes = await cargarPreguntasIPCPunto(m, punto);
-      const disponibles = variantes.filter((q) => !usados.has(q.id));
-      const elegida = mezclar(disponibles.length ? disponibles : variantes)[0];
-      if (!elegida) throw new Error('No se encontraron variantes para el punto ' + punto.numero + '.');
-      usados.add(elegida.id);
-      pool.push({ ...elegida, tema: 'Punto ' + punto.numero + ' · ' + punto.titulo });
-    }
+    const pool = await cargarTodasPreguntasIPCModelo(m);
+    if (!pool.length) throw new Error('Todavía no hay preguntas disponibles para el modelo.');
     empezarJuego(pool, {
       titulo: 'IPC · Modelo de parcial',
-      temaId: 'ipc-modelo-completo',
+      temaId: 'ipc-modelo-todas',
       categoria: 'ipc-segundo-parcial',
       ranking: true,
       materiaNombre: m.nombre,
-      temaNombre: 'Simulación de los 9 puntos',
-      repetir: () => lanzarIPCModeloCompleto(m, materiaIndex),
+      temaNombre: 'Todas las preguntas del modelo',
+      repetir: () => lanzarIPCModeloTodas(m, materiaIndex),
       volver: () => vistaIPCSegundoParcial(m, materiaIndex),
     });
   } catch (e) {
@@ -1516,8 +1522,8 @@ function vistaIPCSegundoParcial(m, materiaIndex, volver = () => vistaMateria(mat
   const cantidadActiva = () => listaAutores().reduce((s, a) => s + (a.preguntas || 0), 0);
   const modeloMarkup = '<section class="ipc-modelo-panel">' +
     '<div class="ipc-modelo-intro"><div><span class="ipc-modelo-kicker">PRÁCTICA GUIADA</span><h2>Modelo de parcial</h2></div>' +
-    '<p>Los 9 puntos del examen de referencia, separados por consigna. Practicá cada punto con sus variantes o resolvé una simulación completa.</p></div>' +
-    '<button class="btn primario ipc-modelo-completo" id="btn-ipc-modelo-completo">Simular el modelo completo · 9 preguntas →</button>' +
+    '<p>Los puntos del examen de referencia, separados por consigna. Practicá cada punto con todas sus variantes o recorré todas las preguntas del modelo, ordenadas por punto.</p></div>' +
+    '<button class="btn primario ipc-modelo-completo" id="btn-ipc-modelo-completo">Practicar todas las preguntas del modelo →</button>' +
     '<div class="ipc-modelo-puntos">' + IPC_MODELO_PARCIAL.map((p) =>
       '<article class="ipc-modelo-punto"><div class="ipc-modelo-punto-top"><span class="ipc-modelo-num">' + String(p.numero).padStart(2, '0') + '</span><span class="ipc-modelo-autor">' + esc(p.autorEtiqueta) + '</span></div>' +
       '<h3>' + esc(p.titulo) + '</h3><p>' + esc(p.consigna) + '</p>' +
@@ -1575,7 +1581,7 @@ function vistaIPCSegundoParcial(m, materiaIndex, volver = () => vistaMateria(mat
 
   document.getElementById('btn-ipc-modelo-completo').addEventListener('click', () => {
     Sonido.clic();
-    lanzarIPCModeloCompleto(m, materiaIndex);
+    lanzarIPCModeloTodas(m, materiaIndex);
   });
   app.querySelectorAll('[data-ipc-modelo-punto]').forEach((b) => b.addEventListener('click', () => {
     Sonido.clic();
@@ -1586,11 +1592,15 @@ function vistaIPCSegundoParcial(m, materiaIndex, volver = () => vistaMateria(mat
     try {
       const preguntas = await cargarPreguntasIPCPunto(m, p);
       const el = app.querySelector('[data-ipc-modelo-count="' + p.id + '"]');
-      if (el) el.textContent = preguntas.length + (preguntas.length === 1 ? ' variante' : ' variantes');
+      if (el) el.textContent = preguntas.length + (preguntas.length === 1 ? ' pregunta' : ' preguntas');
     } catch (e) {
       console.warn('[Modelo IPC]', e);
     }
   });
+  cargarTodasPreguntasIPCModelo(m).then((todas) => {
+    const btn = document.getElementById('btn-ipc-modelo-completo');
+    if (btn && todas.length) btn.textContent = 'Practicar todas las preguntas del modelo (' + todas.length + ') →';
+  }).catch((e) => console.warn('[Modelo IPC]', e));
 
   document.getElementById('btn-ipc-p2-volver').addEventListener('click', () => {
     Sonido.clic();
