@@ -2268,6 +2268,201 @@
           "respuesta": "Del castigo público del cuerpo como manifestación de soberanía hacia técnicas de encierro, vigilancia, examen y normalización del individuo."
         }
       ]
+    },
+    {
+      "id": "ipc-p2-foucault-056",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Panoptismo y autocontrol",
+      "enunciado": "En una institución, cada persona puede ser observada sin saber cuándo ocurre efectivamente la vigilancia. Con el tiempo, regula su conducta incluso cuando no ve a ningún supervisor. ¿Qué mecanismo describe mejor Foucault?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La posibilidad permanente e incierta de vigilancia se interioriza y produce autocontrol."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El panoptismo funciona mediante una asimetría de visibilidad y la posibilidad constante de ser observado. La incertidumbre sobre el momento de la vigilancia favorece que el individuo regule por sí mismo su conducta.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. El panoptismo funciona mediante una asimetría de visibilidad y la posibilidad constante de ser observado. La incertidumbre sobre el momento de la vigilancia favorece que el individuo regule por sí mismo su conducta.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. El panoptismo funciona mediante una asimetría de visibilidad y la posibilidad constante de ser observado. La incertidumbre sobre el momento de la vigilancia favorece que el individuo regule por sí mismo su conducta.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. El panoptismo funciona mediante una asimetría de visibilidad y la posibilidad constante de ser observado. La incertidumbre sobre el momento de la vigilancia favorece que el individuo regule por sí mismo su conducta."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "El panoptismo funciona mediante una asimetría de visibilidad y la posibilidad constante de ser observado. La incertidumbre sobre el momento de la vigilancia favorece que el individuo regule por sí mismo su conducta."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-057",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Vigilancia y examen",
+      "enunciado": "Una escuela registra asistencia y movimientos, pero además realiza evaluaciones periódicas, compara resultados con normas y construye expedientes individuales. ¿Qué agrega el examen a la vigilancia?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Combina observación jerárquica y juicio normalizador, produciendo documentación y saber individual sobre cada alumno."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El examen no es solo mirar o vigilar: articula observación, comparación con una norma y registro documental. Así convierte a cada individuo en un caso susceptible de conocimiento e intervención.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. El examen no es solo mirar o vigilar: articula observación, comparación con una norma y registro documental. Así convierte a cada individuo en un caso susceptible de conocimiento e intervención.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. El examen no es solo mirar o vigilar: articula observación, comparación con una norma y registro documental. Así convierte a cada individuo en un caso susceptible de conocimiento e intervención.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. El examen no es solo mirar o vigilar: articula observación, comparación con una norma y registro documental. Así convierte a cada individuo en un caso susceptible de conocimiento e intervención."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "El examen no es solo mirar o vigilar: articula observación, comparación con una norma y registro documental. Así convierte a cada individuo en un caso susceptible de conocimiento e intervención."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-058",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Suplicio y disciplina",
+      "enunciado": "Una reforma elimina las ejecuciones públicas como espectáculo, pero extiende el encierro, la inspección cotidiana y los programas de corrección. ¿Qué interpretación evita una lectura simplista del cambio penal?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Se reorganizan las técnicas y los objetivos del poder: del castigo soberano exhibido hacia mecanismos disciplinarios de vigilancia y corrección."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Foucault no presenta el cambio como una marcha lineal hacia una humanidad mayor. Analiza una transformación en las tecnologías del poder y en el modo de actuar sobre los cuerpos y las conductas.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Foucault no presenta el cambio como una marcha lineal hacia una humanidad mayor. Analiza una transformación en las tecnologías del poder y en el modo de actuar sobre los cuerpos y las conductas.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Foucault no presenta el cambio como una marcha lineal hacia una humanidad mayor. Analiza una transformación en las tecnologías del poder y en el modo de actuar sobre los cuerpos y las conductas.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Foucault no presenta el cambio como una marcha lineal hacia una humanidad mayor. Analiza una transformación en las tecnologías del poder y en el modo de actuar sobre los cuerpos y las conductas."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Foucault no presenta el cambio como una marcha lineal hacia una humanidad mayor. Analiza una transformación en las tecnologías del poder y en el modo de actuar sobre los cuerpos y las conductas."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-059",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Infractor y delincuente",
+      "enunciado": "Tras ingresar en prisión, una persona queda sometida a informes psicológicos, clasificaciones, antecedentes y evaluaciones de peligrosidad. ¿Qué permite comprender la distinción foucaultiana entre infractor y delincuente?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La institución penal no solo sanciona un acto jurídico: produce un objeto de saber e intervención alrededor de la vida y personalidad del individuo."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El infractor remite al sujeto del acto ilegal; la figura del delincuente se construye mediante saberes y prácticas que reúnen historia, conducta y rasgos personales. Esto no significa que el delito sea inventado, sino que la institución produce una categoría específica de intervención.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. El infractor remite al sujeto del acto ilegal; la figura del delincuente se construye mediante saberes y prácticas que reúnen historia, conducta y rasgos personales. Esto no significa que el delito sea inventado, sino que la institución produce una categoría específica de intervención.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. El infractor remite al sujeto del acto ilegal; la figura del delincuente se construye mediante saberes y prácticas que reúnen historia, conducta y rasgos personales. Esto no significa que el delito sea inventado, sino que la institución produce una categoría específica de intervención.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. El infractor remite al sujeto del acto ilegal; la figura del delincuente se construye mediante saberes y prácticas que reúnen historia, conducta y rasgos personales. Esto no significa que el delito sea inventado, sino que la institución produce una categoría específica de intervención."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "El infractor remite al sujeto del acto ilegal; la figura del delincuente se construye mediante saberes y prácticas que reúnen historia, conducta y rasgos personales. Esto no significa que el delito sea inventado, sino que la institución produce una categoría específica de intervención."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-060",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Poder productivo y coexistencia",
+      "enunciado": "En un sistema penitenciario persisten castigos restrictivos, mientras se incorporan terapias, evaluaciones y programas de reinserción que clasifican a los internos. ¿Qué conclusión es más adecuada?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Las técnicas punitivas y disciplinarias pueden coexistir; el poder también produce saberes, identidades y modos de conducta."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El poder no actúa únicamente prohibiendo o reprimiendo. Produce categorías, conocimientos y formas de subjetividad; además, una transformación histórica no exige que desaparezcan de inmediato las técnicas anteriores.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. El poder no actúa únicamente prohibiendo o reprimiendo. Produce categorías, conocimientos y formas de subjetividad; además, una transformación histórica no exige que desaparezcan de inmediato las técnicas anteriores.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. El poder no actúa únicamente prohibiendo o reprimiendo. Produce categorías, conocimientos y formas de subjetividad; además, una transformación histórica no exige que desaparezcan de inmediato las técnicas anteriores.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. El poder no actúa únicamente prohibiendo o reprimiendo. Produce categorías, conocimientos y formas de subjetividad; además, una transformación histórica no exige que desaparezcan de inmediato las técnicas anteriores."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "El poder no actúa únicamente prohibiendo o reprimiendo. Produce categorías, conocimientos y formas de subjetividad; además, una transformación histórica no exige que desaparezcan de inmediato las técnicas anteriores."
+        }
+      ]
     }
   ],
   "tarjetas": [
