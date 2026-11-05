@@ -21,6 +21,7 @@ import { abrirLacTrp, TITULO as TITULO_LAC_TRP } from './lac-vs-trp.js?v=2026102
 import { abrirComparadorComunicacion, TITULO as TITULO_COMPARADOR_COMUNICACION } from './comparador-comunicacion.js?v=20261026-1';
 import { abrirComparadores, TITULO as TITULO_COMPARADORES } from './comparadores.js?v=20261026-1';
 import { abrirLab } from './lab.js?v=20261104-1';
+import { abrirGuiaKuhn } from './guia-kuhn.js?v=dev';
 import { abrirTelomeros, TITULO as TITULO_TELOMEROS } from './telomeros.js?v=20261027-1';
 
 const app = document.getElementById('app');
@@ -1428,15 +1429,15 @@ function vistaMateria(i) {
 
 // ---------- IPC: modelo de parcial por puntos ----------
 const IPC_MODELO_PARCIAL = [
-  { id:'p1', numero:1, autorClave:'hacking', autorEtiqueta:'Hacking', titulo:'Ciencias humanas y clasificaciones', consigna:'Tesis de Hacking sobre cómo las clasificaciones de las ciencias humanas interactúan con las personas clasificadas.', subtemas:['Clases humanas e indiferentes','Nominalismo dinámico y making up people','Ontología histórica y tipos humanos','Ontología histórica'] },
+  { id:'p1', numero:1, autorClave:'hacking', autorEtiqueta:'Hacking', titulo:'Ciencias humanas y clasificaciones', consigna:'Tesis de Hacking sobre cómo las clasificaciones de las ciencias humanas interactúan con las personas clasificadas.', subtemas:['Clases humanas e indiferentes','Nominalismo dinámico y making up people','Ontología histórica y tipos humanos','Ontología histórica','Representar e intervenir / realismo de entidades'] },
   { id:'p2', numero:2, autorClave:'hacking', autorEtiqueta:'Hacking', titulo:'Nicho ecológico', consigna:'Reconocer qué significa “nicho ecológico” dentro del análisis de Hacking.', subtemas:['Nicho ecológico y cuatro vectores'] },
   { id:'p3', numero:3, autorClave:'popper', autorEtiqueta:'Popper', titulo:'Psicologismo y enunciados básicos', consigna:'Identificar por qué Popper rechaza fundamentar los enunciados básicos en estados psicológicos o percepciones privadas.', subtemas:['Base empírica y trilema de Fries','Enunciados básicos y convención','Síntesis de Popper'] },
   { id:'p4', numero:4, autorClave:'popper', autorEtiqueta:'Popper', titulo:'Cuándo una teoría está falsada', consigna:'Distinguir falsabilidad, falsación efectiva, corroboración y verificación.', subtemas:['Estructura lógica de la falsación','Falsación, corroboración y verificación','Demarcación y falsabilidad'] },
-  { id:'p5', numero:5, autorClave:'foucault', autorEtiqueta:'Foucault', titulo:'Ciencias humanas y modernidad política', consigna:'Relacionar la emergencia de las ciencias humanas con las formas modernas de organización política.', subtemas:['Ciencias humanas y modernidad política','Síntesis Foucault'] },
-  { id:'p6', numero:6, autorClave:'foucault', autorEtiqueta:'Foucault', titulo:'Concepción relacional del poder', consigna:'Reconocer el poder como una relación productiva y capilar, no como una cosa que alguien posee.', subtemas:['Concepción relacional, microfísica y saber-poder','Concepción relacional y productiva del poder','Microfísica del poder y saber-poder'] },
-  { id:'p7', numero:7, autorClave:'kuhn', autorEtiqueta:'Kuhn', titulo:'Revolución científica y cambio de paradigma', consigna:'Consigna de desarrollo convertida a opción múltiple: explicar por qué una revolución no equivale a reemplazar un paradigma falso o refutado por otro definitivamente verdadero.', subtemas:['Revolución científica','Pérdida kuhniana','Paradigma y matriz disciplinar','Valores y elección de paradigmas','Síntesis de Kuhn'] },
+  { id:'p5', numero:5, autorClave:'foucault', autorEtiqueta:'Foucault', titulo:'Ciencias humanas y modernidad política', consigna:'Relacionar la emergencia de las ciencias humanas con las formas modernas de organización política.', subtemas:['Ciencias humanas y modernidad política','Síntesis Foucault','Técnicas disciplinarias','Panoptismo y visibilidad'] },
+  { id:'p6', numero:6, autorClave:'foucault', autorEtiqueta:'Foucault', titulo:'Concepción relacional del poder', consigna:'Reconocer el poder como una relación productiva y capilar, no como una cosa que alguien posee.', subtemas:['Concepción relacional, microfísica y saber-poder','Concepción relacional y productiva del poder','Microfísica del poder y saber-poder','Genealogía y transformación del castigo'] },
+  { id:'p7', numero:7, autorClave:'kuhn', autorEtiqueta:'Kuhn', titulo:'Revolución científica y cambio de paradigma', consigna:'Consigna de desarrollo convertida a opción múltiple: explicar por qué una revolución no equivale a reemplazar un paradigma falso o refutado por otro definitivamente verdadero.', subtemas:['Revolución científica','Pérdida kuhniana','Paradigma y matriz disciplinar','Valores y elección de paradigmas','Síntesis de Kuhn','Paradigma, matriz disciplinar y ciencia normal','Valores, elección y carga teórica','Carga teórica y Gestalt'] },
   { id:'p8', numero:8, autorClave:'hacking', autorEtiqueta:'Hacking', titulo:'Clase interactiva', consigna:'Definir una clase interactiva y distinguirla de una clasificación indiferente.', subtemas:['Clases humanas e indiferentes','Efecto de bucle','Nominalismo dinámico y making up people'] },
-  { id:'p9', numero:9, autorClave:'kuhn', autorEtiqueta:'Kuhn', titulo:'Situación problemática: anomalía, enigma o crisis', consigna:'Caso de referencia: una señal de radio no encaja con las leyes astrofísicas aceptadas; se revisan varias veces la calibración y el software, pero la anomalía persiste. Identificar y justificar el concepto kuhniano.', subtemas:['Identificación de conceptos: situaciones tipo parcial','Justificación de situaciones: variantes del ejercicio 9','Anomalía, enigma y crisis','Inconmensurabilidad'] }
+  { id:'p9', numero:9, autorClave:'kuhn', autorEtiqueta:'Kuhn', titulo:'Situación problemática: anomalía, enigma o crisis', consigna:'Caso de referencia: una señal de radio no encaja con las leyes astrofísicas aceptadas; se revisan varias veces la calibración y el software, pero la anomalía persiste. Identificar y justificar el concepto kuhniano.', subtemas:['Identificación de conceptos: situaciones tipo parcial','Justificación de situaciones: variantes del ejercicio 9','Anomalía, enigma y crisis','Inconmensurabilidad','Ciencia normal y enigmas'] }
 ];
 
 function autorIPCPorClave(m, clave) {
@@ -1529,6 +1530,10 @@ function vistaIPCSegundoParcial(m, materiaIndex, volver = () => vistaMateria(mat
       '<h3>' + esc(p.titulo) + '</h3><p>' + esc(p.consigna) + '</p>' +
       '<div class="ipc-modelo-punto-foot"><span data-ipc-modelo-count="' + p.id + '">Cargando variantes…</span><button class="btn enlace" type="button" data-ipc-modelo-punto="' + p.id + '">Practicar este punto →</button></div></article>'
     ).join('') + '</div></section>';
+  const guiaMarkup = '<section class="ipc-guia-panel"><span class="ipc-modelo-kicker">GUÍA DE ESTUDIO</span>' +
+    '<h2>Ejercicio 9: anomalía, enigma, crisis y paradigma</h2>' +
+    '<p>Cómo distinguir cada concepto de Kuhn y cómo justificarlo cuando el parcial te da un texto.</p>' +
+    '<button class="btn secundario" id="btn-ipc-guia-kuhn" type="button">Abrir la guía de Kuhn →</button></section>';
 
 
   app.innerHTML = `
@@ -1540,6 +1545,7 @@ function vistaIPCSegundoParcial(m, materiaIndex, volver = () => vistaMateria(mat
       </div>
       <p class="bajada">Banco de estudio por autor y un bloque integrador. Cada pregunta incluye explicación, análisis de distractores y expansión de estudio.</p>
       ${modeloMarkup}
+      ${guiaMarkup}
       <section class="ipc-p2-resumen">
         <strong>${config.preguntas}</strong>
         <span>preguntas de opción múltiple</span>
@@ -1582,6 +1588,14 @@ function vistaIPCSegundoParcial(m, materiaIndex, volver = () => vistaMateria(mat
   document.getElementById('btn-ipc-modelo-completo').addEventListener('click', () => {
     Sonido.clic();
     lanzarIPCModeloTodas(m, materiaIndex);
+  });
+  document.getElementById('btn-ipc-guia-kuhn').addEventListener('click', () => {
+    Sonido.clic();
+    abrirGuiaKuhn({
+      app,
+      volver: () => vistaIPCSegundoParcial(m, materiaIndex, volver),
+      practicar: () => lanzarIPCPuntoModelo(m, materiaIndex, IPC_MODELO_PARCIAL.find((p) => p.id === 'p9')),
+    });
   });
   app.querySelectorAll('[data-ipc-modelo-punto]').forEach((b) => b.addEventListener('click', () => {
     Sonido.clic();

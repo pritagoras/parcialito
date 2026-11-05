@@ -1150,6 +1150,10 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 .ipc-modelo-intro h2 { margin:.2rem 0 0; font-size:1.25rem; }
 .ipc-modelo-intro p { max-width:420px; margin:.25rem 0 0; color:var(--tenue); font-size:.82rem; line-height:1.5; }
 .ipc-modelo-completo { width:100%; margin-bottom:.85rem; }
+.ipc-guia-panel { margin:0 0 1.2rem; padding:1rem; border:1px solid rgba(255,185,56,.45); border-radius:20px; background:linear-gradient(145deg,rgba(255,185,56,.12),rgba(31,24,54,.82)); }
+.ipc-guia-panel .ipc-modelo-kicker { color:var(--ambar); }
+.ipc-guia-panel h2 { margin:.2rem 0 0; font-size:1.25rem; }
+.ipc-guia-panel p { margin:.3rem 0 .8rem; color:var(--tenue); font-size:.85rem; line-height:1.5; }
 .ipc-modelo-puntos { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.65rem; }
 .ipc-modelo-punto { min-width:0; padding:.85rem; border:1px solid var(--linea); border-radius:14px; background:rgba(19,15,35,.55); }
 .ipc-modelo-punto-top { display:flex; align-items:center; justify-content:space-between; gap:.5rem; }
