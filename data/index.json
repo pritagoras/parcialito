@@ -344,7 +344,7 @@
       ],
       "segundoParcial": {
         "nombre": "Segundo Parcial",
-        "preguntas": 241,
+        "preguntas": 261,
         "autores": [
           {
             "id": "ipc-p2-hacking",
@@ -379,7 +379,7 @@
             "autor": "Thomas Kuhn",
             "etiqueta": "Kuhn",
             "archivo": "data/ipc-segundo-parcial/kuhn.json",
-            "preguntas": 54,
+            "preguntas": 74,
             "tarjetas": 84
           },
           {
