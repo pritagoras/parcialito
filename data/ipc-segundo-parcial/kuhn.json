@@ -2904,28 +2904,28 @@
         },
         {
           "id": "B",
-          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+          "texto": "Que la comunidad ya abandonó su paradigma y comenzó una revolución."
         },
         {
           "id": "C",
-          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+          "texto": "Que el paradigma fue refutado de manera concluyente por un solo resultado."
         },
         {
           "id": "D",
-          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+          "texto": "Que la ciencia normal terminó necesariamente porque toda anomalía produce una crisis."
         }
       ],
       "respuestaCorrecta": "A",
-      "justificacionCorrecta": "Una anomalía es una dificultad respecto de las expectativas del paradigma. Se convierte en un elemento de crisis cuando adquiere una importancia persistente y compromete la confianza en la práctica normal; la revolución implica el cambio de marco.",
+      "justificacionCorrecta": "Una anomalía es una dificultad respecto de las expectativas del paradigma. Se convierte en un elemento de crisis cuando adquiere importancia persistente y compromete la confianza en la práctica normal; la revolución implica el cambio de marco.",
       "refutacionIncorrectas": {
-        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Una anomalía es una dificultad respecto de las expectativas del paradigma. Se convierte en un elemento de crisis cuando adquiere una importancia persistente y compromete la confianza en la práctica normal; la revolución implica el cambio de marco.",
-        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Una anomalía es una dificultad respecto de las expectativas del paradigma. Se convierte en un elemento de crisis cuando adquiere una importancia persistente y compromete la confianza en la práctica normal; la revolución implica el cambio de marco.",
-        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Una anomalía es una dificultad respecto de las expectativas del paradigma. Se convierte en un elemento de crisis cuando adquiere una importancia persistente y compromete la confianza en la práctica normal; la revolución implica el cambio de marco."
+        "B": "La aparición de un resultado inesperado no demuestra por sí sola que la comunidad haya abandonado el paradigma.",
+        "C": "Kuhn no concibe cada anomalía como una refutación concluyente e inmediata del paradigma.",
+        "D": "Las anomalías son habituales en la ciencia normal y pueden permanecer sin desencadenar una crisis."
       },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción permite resolver esta consigna?",
-          "respuesta": "Una anomalía es una dificultad respecto de las expectativas del paradigma. Se convierte en un elemento de crisis cuando adquiere una importancia persistente y compromete la confianza en la práctica normal; la revolución implica el cambio de marco."
+          "respuesta": "Una anomalía es una dificultad respecto de las expectativas del paradigma. Se convierte en un elemento de crisis cuando adquiere importancia persistente y compromete la confianza en la práctica normal; la revolución implica el cambio de marco."
         }
       ]
     },
@@ -2939,27 +2939,27 @@
       "opciones": [
         {
           "id": "A",
-          "texto": "Pérdida kuhniana."
+          "texto": "Inconmensurabilidad, porque dos teorías no pueden compararse bajo ningún criterio."
         },
         {
           "id": "B",
-          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+          "texto": "Ciencia normal, porque la comunidad resuelve enigmas dentro del paradigma vigente."
         },
         {
           "id": "C",
-          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+          "texto": "Pérdida kuhniana, porque el cambio puede implicar abandonar logros o capacidades valorados del paradigma anterior."
         },
         {
           "id": "D",
-          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+          "texto": "Anomalía, porque todo problema no resuelto constituye una dificultad del paradigma nuevo."
         }
       ],
-      "respuestaCorrecta": "A",
+      "respuestaCorrecta": "C",
       "justificacionCorrecta": "Kuhn reconoce que el cambio de paradigma puede implicar ganancias y pérdidas: la teoría nueva no necesariamente conserva todas las capacidades explicativas o problemas valorados por la anterior.",
       "refutacionIncorrectas": {
-        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Kuhn reconoce que el cambio de paradigma puede implicar ganancias y pérdidas: la teoría nueva no necesariamente conserva todas las capacidades explicativas o problemas valorados por la anterior.",
-        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Kuhn reconoce que el cambio de paradigma puede implicar ganancias y pérdidas: la teoría nueva no necesariamente conserva todas las capacidades explicativas o problemas valorados por la anterior.",
-        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Kuhn reconoce que el cambio de paradigma puede implicar ganancias y pérdidas: la teoría nueva no necesariamente conserva todas las capacidades explicativas o problemas valorados por la anterior."
+        "A": "La inconmensurabilidad refiere a dificultades de comparación y traducción, no al costo de perder logros explicativos.",
+        "B": "La ciencia normal describe la resolución de enigmas dentro de un paradigma, no el balance de ganancias y pérdidas entre paradigmas.",
+        "D": "Una dificultad no resuelta puede ser una anomalía, pero la noción preguntada es la pérdida que acompaña a un cambio."
       },
       "expansionEstudio": [
         {
@@ -2978,27 +2978,27 @@
       "opciones": [
         {
           "id": "A",
-          "texto": "Los científicos ponderan valores compartidos, como precisión, coherencia, alcance y fecundidad, pero pueden asignarles pesos distintos."
+          "texto": "Los científicos deciden exclusivamente por preferencias personales, sin valores compartidos."
         },
         {
           "id": "B",
-          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+          "texto": "Los valores epistemológicos orientan la elección, pero los científicos pueden ponderarlos de manera diferente y llegar a decisiones distintas."
         },
         {
           "id": "C",
-          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+          "texto": "Existe un algoritmo universal que asigna un peso fijo a cada valor y determina una única elección racional."
         },
         {
           "id": "D",
-          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+          "texto": "La elección depende solo de la cantidad de observaciones acumuladas, sin considerar coherencia ni fecundidad."
         }
       ],
-      "respuestaCorrecta": "A",
+      "respuestaCorrecta": "B",
       "justificacionCorrecta": "Los valores epistemológicos orientan la elección, pero no funcionan como un algoritmo que obliga a todos a decidir de idéntica manera. Su aplicación admite diferencias de juicio entre científicos competentes.",
       "refutacionIncorrectas": {
-        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Los valores epistemológicos orientan la elección, pero no funcionan como un algoritmo que obliga a todos a decidir de idéntica manera. Su aplicación admite diferencias de juicio entre científicos competentes.",
-        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Los valores epistemológicos orientan la elección, pero no funcionan como un algoritmo que obliga a todos a decidir de idéntica manera. Su aplicación admite diferencias de juicio entre científicos competentes.",
-        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Los valores epistemológicos orientan la elección, pero no funcionan como un algoritmo que obliga a todos a decidir de idéntica manera. Su aplicación admite diferencias de juicio entre científicos competentes."
+        "A": "Kuhn no reduce la elección a preferencias arbitrarias: reconoce valores compartidos por la comunidad.",
+        "C": "Los valores no forman un algoritmo mecánico que elimine el juicio de los científicos.",
+        "D": "La elección puede considerar precisión, coherencia, alcance, simplicidad y fecundidad, entre otros valores."
       },
       "expansionEstudio": [
         {
@@ -3021,23 +3021,23 @@
         },
         {
           "id": "B",
-          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+          "texto": "Que los científicos de ambas comunidades no pueden comunicarse ni comprender ninguna afirmación del otro grupo."
         },
         {
           "id": "C",
-          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+          "texto": "Que toda teoría es igualmente verdadera y no puede evaluarse mediante razones."
         },
         {
           "id": "D",
-          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+          "texto": "Que el cambio de paradigma ocurre por una decisión irracional y sin argumentos."
         }
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "La inconmensurabilidad señala dificultades de traducción y comparación global entre marcos conceptuales. No equivale a incomunicación absoluta, arbitrariedad ni imposibilidad de ofrecer razones.",
       "refutacionIncorrectas": {
-        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. La inconmensurabilidad señala dificultades de traducción y comparación global entre marcos conceptuales. No equivale a incomunicación absoluta, arbitrariedad ni imposibilidad de ofrecer razones.",
-        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. La inconmensurabilidad señala dificultades de traducción y comparación global entre marcos conceptuales. No equivale a incomunicación absoluta, arbitrariedad ni imposibilidad de ofrecer razones.",
-        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. La inconmensurabilidad señala dificultades de traducción y comparación global entre marcos conceptuales. No equivale a incomunicación absoluta, arbitrariedad ni imposibilidad de ofrecer razones."
+        "B": "La inconmensurabilidad no impide toda comunicación; señala límites y dificultades de traducción entre marcos.",
+        "C": "No implica relativismo absoluto ni igualdad automática entre teorías.",
+        "D": "Kuhn reconoce que los científicos pueden ofrecer razones y argumentos, aunque no exista un algoritmo neutral que resuelva toda elección."
       },
       "expansionEstudio": [
         {
@@ -3056,27 +3056,27 @@
       "opciones": [
         {
           "id": "A",
-          "texto": "Ofrecen modelos concretos de resolución que enseñan a reconocer semejanzas relevantes y a trabajar con problemas nuevos."
+          "texto": "Son reglas explícitas que permiten deducir mecánicamente la solución de cualquier problema futuro."
         },
         {
           "id": "B",
-          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+          "texto": "Son observaciones neutrales que no dependen de la formación de la comunidad."
         },
         {
           "id": "C",
-          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+          "texto": "Son anomalías que obligan a abandonar el paradigma cada vez que se aplican."
         },
         {
           "id": "D",
-          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+          "texto": "Ofrecen modelos concretos de resolución que enseñan a reconocer semejanzas relevantes y a trabajar con problemas nuevos."
         }
       ],
-      "respuestaCorrecta": "A",
+      "respuestaCorrecta": "D",
       "justificacionCorrecta": "Los ejemplares son soluciones de problemas que funcionan como modelos compartidos. Su aprendizaje contribuye a formar la práctica de la ciencia normal y orienta qué rasgos se consideran relevantes en situaciones nuevas.",
       "refutacionIncorrectas": {
-        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Los ejemplares son soluciones de problemas que funcionan como modelos compartidos. Su aprendizaje contribuye a formar la práctica de la ciencia normal y orienta qué rasgos se consideran relevantes en situaciones nuevas.",
-        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Los ejemplares son soluciones de problemas que funcionan como modelos compartidos. Su aprendizaje contribuye a formar la práctica de la ciencia normal y orienta qué rasgos se consideran relevantes en situaciones nuevas.",
-        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Los ejemplares son soluciones de problemas que funcionan como modelos compartidos. Su aprendizaje contribuye a formar la práctica de la ciencia normal y orienta qué rasgos se consideran relevantes en situaciones nuevas."
+        "A": "Los ejemplares orientan el juicio y la resolución, pero no constituyen algoritmos que resuelvan mecánicamente todo caso.",
+        "B": "El aprendizaje de ejemplares participa en la formación de la mirada científica; no es una observación completamente neutral.",
+        "C": "Los ejemplares son modelos de resolución aceptados, no anomalías que cuestionen necesariamente el paradigma."
       },
       "expansionEstudio": [
         {
