@@ -705,6 +705,201 @@
           "respuesta": "Atribuir a los tres autores la misma teoría o utilizar sus conceptos como sinónimos, en lugar de explicar qué aspecto distinto ilumina cada uno."
         }
       ]
+    },
+    {
+      "id": "ipc-p2-integrador-019",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Clasificación y producción institucional",
+      "enunciado": "Un hospital incorpora una categoría diagnóstica; las personas clasificadas reaccionan a ella y modifican sus prácticas, mientras la institución acumula expedientes que orientan nuevas intervenciones. ¿Qué articulación es más precisa?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Hacking permite analizar la interacción entre clasificación y personas clasificadas; Foucault, la producción institucional de saber y objetos de intervención."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Hacking explica la dinámica interactiva de las clasificaciones humanas y sus efectos de bucle. Foucault permite analizar cómo registros, saberes y prácticas institucionales producen objetos de conocimiento e intervención. Son enfoques articulables, no idénticos.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Hacking explica la dinámica interactiva de las clasificaciones humanas y sus efectos de bucle. Foucault permite analizar cómo registros, saberes y prácticas institucionales producen objetos de conocimiento e intervención. Son enfoques articulables, no idénticos.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Hacking explica la dinámica interactiva de las clasificaciones humanas y sus efectos de bucle. Foucault permite analizar cómo registros, saberes y prácticas institucionales producen objetos de conocimiento e intervención. Son enfoques articulables, no idénticos.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Hacking explica la dinámica interactiva de las clasificaciones humanas y sus efectos de bucle. Foucault permite analizar cómo registros, saberes y prácticas institucionales producen objetos de conocimiento e intervención. Son enfoques articulables, no idénticos."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Hacking explica la dinámica interactiva de las clasificaciones humanas y sus efectos de bucle. Foucault permite analizar cómo registros, saberes y prácticas institucionales producen objetos de conocimiento e intervención. Son enfoques articulables, no idénticos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-020",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Paradigma y poder-saber",
+      "enunciado": "Una institución científica define qué problemas considera legítimos, organiza procedimientos de observación y excluye ciertas preguntas de su agenda. ¿Qué comparación evita confundir a Kuhn con Foucault?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Kuhn analiza los compromisos y ejemplares de una comunidad científica; Foucault permite examinar las prácticas institucionales y relaciones de poder-saber que organizan la producción de conocimiento."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Kuhn se ocupa de la estructura y dinámica de las comunidades científicas y sus paradigmas. Foucault analiza cómo prácticas, instituciones y relaciones de poder participan en la producción de saber. La coincidencia en atender a condiciones históricas no vuelve equivalentes sus conceptos.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Kuhn se ocupa de la estructura y dinámica de las comunidades científicas y sus paradigmas. Foucault analiza cómo prácticas, instituciones y relaciones de poder participan en la producción de saber. La coincidencia en atender a condiciones históricas no vuelve equivalentes sus conceptos.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Kuhn se ocupa de la estructura y dinámica de las comunidades científicas y sus paradigmas. Foucault analiza cómo prácticas, instituciones y relaciones de poder participan en la producción de saber. La coincidencia en atender a condiciones históricas no vuelve equivalentes sus conceptos.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Kuhn se ocupa de la estructura y dinámica de las comunidades científicas y sus paradigmas. Foucault analiza cómo prácticas, instituciones y relaciones de poder participan en la producción de saber. La coincidencia en atender a condiciones históricas no vuelve equivalentes sus conceptos."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Kuhn se ocupa de la estructura y dinámica de las comunidades científicas y sus paradigmas. Foucault analiza cómo prácticas, instituciones y relaciones de poder participan en la producción de saber. La coincidencia en atender a condiciones históricas no vuelve equivalentes sus conceptos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-021",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Evidencia y clasificación",
+      "enunciado": "Un registro administrativo no contempla cierta conducta y un investigador concluye que esa conducta no existe. ¿Qué corrección conjunta es más rigurosa?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Distinguir el fenómeno de las categorías y procedimientos que lo hacen visible; la ausencia de registro no demuestra ausencia material."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Hacking permite preguntar cómo una clasificación organiza un fenómeno; Foucault, cómo los dispositivos institucionales producen visibilidad y documentación; Kuhn, cómo los marcos orientan la observación. Ninguno autoriza a inferir que lo no registrado no existe.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Hacking permite preguntar cómo una clasificación organiza un fenómeno; Foucault, cómo los dispositivos institucionales producen visibilidad y documentación; Kuhn, cómo los marcos orientan la observación. Ninguno autoriza a inferir que lo no registrado no existe.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Hacking permite preguntar cómo una clasificación organiza un fenómeno; Foucault, cómo los dispositivos institucionales producen visibilidad y documentación; Kuhn, cómo los marcos orientan la observación. Ninguno autoriza a inferir que lo no registrado no existe.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Hacking permite preguntar cómo una clasificación organiza un fenómeno; Foucault, cómo los dispositivos institucionales producen visibilidad y documentación; Kuhn, cómo los marcos orientan la observación. Ninguno autoriza a inferir que lo no registrado no existe."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Hacking permite preguntar cómo una clasificación organiza un fenómeno; Foucault, cómo los dispositivos institucionales producen visibilidad y documentación; Kuhn, cómo los marcos orientan la observación. Ninguno autoriza a inferir que lo no registrado no existe."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-022",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Disposiciones y matriz disciplinar",
+      "enunciado": "Un equipo de investigación comparte formas aprendidas de valorar problemas y, además, trabaja con ejemplares y compromisos teóricos comunes. ¿Qué distinción entre Bourdieu y Kuhn corresponde?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El habitus refiere a disposiciones incorporadas que orientan prácticas; la matriz disciplinar reúne compromisos compartidos propios de una comunidad científica."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Bourdieu analiza disposiciones socialmente incorporadas y su relación con los campos. Kuhn analiza compromisos, valores, generalizaciones y ejemplares que estructuran una comunidad científica. Pueden relacionarse sin reducir uno al otro.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Bourdieu analiza disposiciones socialmente incorporadas y su relación con los campos. Kuhn analiza compromisos, valores, generalizaciones y ejemplares que estructuran una comunidad científica. Pueden relacionarse sin reducir uno al otro.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Bourdieu analiza disposiciones socialmente incorporadas y su relación con los campos. Kuhn analiza compromisos, valores, generalizaciones y ejemplares que estructuran una comunidad científica. Pueden relacionarse sin reducir uno al otro.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Bourdieu analiza disposiciones socialmente incorporadas y su relación con los campos. Kuhn analiza compromisos, valores, generalizaciones y ejemplares que estructuran una comunidad científica. Pueden relacionarse sin reducir uno al otro."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Bourdieu analiza disposiciones socialmente incorporadas y su relación con los campos. Kuhn analiza compromisos, valores, generalizaciones y ejemplares que estructuran una comunidad científica. Pueden relacionarse sin reducir uno al otro."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-023",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Cambio histórico y progreso",
+      "enunciado": "Una nueva forma de clasificar una población modifica la autocomprensión de las personas y las prácticas institucionales, pero no elimina por completo las categorías anteriores. ¿Qué conclusión es más cuidadosa?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Los cambios históricos pueden reorganizar categorías, prácticas y sujetos sin seguir una secuencia lineal ni borrar de inmediato formas previas."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje."
+        },
+        {
+          "id": "D",
+          "texto": "El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Hacking permite analizar la modificación interactiva de categorías; Foucault, las transformaciones y coexistencias de técnicas institucionales. El cambio histórico no debe confundirse con progreso lineal ni con sustitución instantánea.",
+      "refutacionIncorrectas": {
+        "B": "La opción «La categoría se modifica únicamente por una decisión individual, sin interacción con prácticas o instituciones.» no es la más adecuada. Hacking permite analizar la modificación interactiva de categorías; Foucault, las transformaciones y coexistencias de técnicas institucionales. El cambio histórico no debe confundirse con progreso lineal ni con sustitución instantánea.",
+        "C": "La opción «El caso demuestra que los hechos carecen de existencia independiente y son solo efectos del lenguaje.» no es la más adecuada. Hacking permite analizar la modificación interactiva de categorías; Foucault, las transformaciones y coexistencias de técnicas institucionales. El cambio histórico no debe confundirse con progreso lineal ni con sustitución instantánea.",
+        "D": "La opción «El proceso debe entenderse como una secuencia automática y universal, idéntica en cualquier contexto histórico.» no es la más adecuada. Hacking permite analizar la modificación interactiva de categorías; Foucault, las transformaciones y coexistencias de técnicas institucionales. El cambio histórico no debe confundirse con progreso lineal ni con sustitución instantánea."
+      },
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Hacking permite analizar la modificación interactiva de categorías; Foucault, las transformaciones y coexistencias de técnicas institucionales. El cambio histórico no debe confundirse con progreso lineal ni con sustitución instantánea."
+        }
+      ]
     }
   ],
   "tarjetas": [
