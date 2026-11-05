@@ -1410,6 +1410,79 @@ function vistaMateria(i) {
 }
 
 
+// ---------- IPC: modelo de parcial por puntos ----------
+const IPC_MODELO_PARCIAL = [
+  { id:'p1', numero:1, autorClave:'hacking', autorEtiqueta:'Hacking', titulo:'Ciencias humanas y clasificaciones', consigna:'Tesis de Hacking sobre cómo las clasificaciones de las ciencias humanas interactúan con las personas clasificadas.', subtemas:['Clases humanas e indiferentes','Nominalismo dinámico y making up people','Ontología histórica y tipos humanos','Ontología histórica'] },
+  { id:'p2', numero:2, autorClave:'hacking', autorEtiqueta:'Hacking', titulo:'Nicho ecológico', consigna:'Reconocer qué significa “nicho ecológico” dentro del análisis de Hacking.', subtemas:['Nicho ecológico y cuatro vectores'] },
+  { id:'p3', numero:3, autorClave:'popper', autorEtiqueta:'Popper', titulo:'Psicologismo y enunciados básicos', consigna:'Identificar por qué Popper rechaza fundamentar los enunciados básicos en estados psicológicos o percepciones privadas.', subtemas:['Base empírica y trilema de Fries','Enunciados básicos y convención','Síntesis de Popper'] },
+  { id:'p4', numero:4, autorClave:'popper', autorEtiqueta:'Popper', titulo:'Cuándo una teoría está falsada', consigna:'Distinguir falsabilidad, falsación efectiva, corroboración y verificación.', subtemas:['Estructura lógica de la falsación','Falsación, corroboración y verificación','Demarcación y falsabilidad'] },
+  { id:'p5', numero:5, autorClave:'foucault', autorEtiqueta:'Foucault', titulo:'Ciencias humanas y modernidad política', consigna:'Relacionar la emergencia de las ciencias humanas con las formas modernas de organización política.', subtemas:['Ciencias humanas y modernidad política','Síntesis Foucault'] },
+  { id:'p6', numero:6, autorClave:'foucault', autorEtiqueta:'Foucault', titulo:'Concepción relacional del poder', consigna:'Reconocer el poder como una relación productiva y capilar, no como una cosa que alguien posee.', subtemas:['Concepción relacional, microfísica y saber-poder','Concepción relacional y productiva del poder','Microfísica del poder y saber-poder'] },
+  { id:'p7', numero:7, autorClave:'kuhn', autorEtiqueta:'Kuhn', titulo:'Revolución científica y cambio de paradigma', consigna:'Por qué una revolución no equivale a reemplazar un paradigma falso o refutado por otro definitivamente verdadero.', subtemas:['Revolución científica','Pérdida kuhniana','Paradigma y matriz disciplinar','Valores y elección de paradigmas','Síntesis de Kuhn'] },
+  { id:'p8', numero:8, autorClave:'hacking', autorEtiqueta:'Hacking', titulo:'Clase interactiva', consigna:'Definir una clase interactiva y distinguirla de una clasificación indiferente.', subtemas:['Clases humanas e indiferentes','Efecto de bucle','Nominalismo dinámico y making up people'] },
+  { id:'p9', numero:9, autorClave:'kuhn', autorEtiqueta:'Kuhn', titulo:'Situación problemática: anomalía, enigma o crisis', consigna:'Analizar un hallazgo persistente que no encaja con las expectativas de la comunidad científica y justificar qué concepto kuhniano permite interpretarlo.', subtemas:['Identificación de conceptos: situaciones tipo parcial','Justificación de situaciones: variantes del ejercicio 9','Anomalía, enigma y crisis','Inconmensurabilidad'] }
+];
+
+function autorIPCPorClave(m, clave) {
+  return m.segundoParcial.autores.find((a) => a.clave === clave);
+}
+
+async function cargarPreguntasIPCPunto(m, punto) {
+  const autor = autorIPCPorClave(m, punto.autorClave);
+  if (!autor) return [];
+  const pool = await cargarPreguntasIPC(m, [autor]);
+  const subtemas = new Set(punto.subtemas);
+  return pool.filter((q) => subtemas.has(q.subtema));
+}
+
+async function lanzarIPCPuntoModelo(m, materiaIndex, punto) {
+  vistaCargando('Preparando el punto ' + punto.numero + ' del modelo…');
+  try {
+    const pool = mezclar(await cargarPreguntasIPCPunto(m, punto));
+    if (!pool.length) throw new Error('Todavía no hay variantes disponibles para este punto.');
+    empezarJuego(pool, {
+      titulo: 'IPC · Modelo · Punto ' + punto.numero,
+      temaId: 'ipc-modelo-' + punto.id,
+      categoria: 'ipc-segundo-parcial',
+      ranking: true,
+      materiaNombre: m.nombre,
+      temaNombre: 'Punto ' + punto.numero + ' · ' + punto.titulo,
+      repetir: () => lanzarIPCPuntoModelo(m, materiaIndex, punto),
+      volver: () => vistaIPCSegundoParcial(m, materiaIndex),
+    });
+  } catch (e) {
+    vistaError(e);
+  }
+}
+
+async function lanzarIPCModeloCompleto(m, materiaIndex) {
+  vistaCargando('Armando una simulación de los 9 puntos…');
+  try {
+    const pool = [];
+    const usados = new Set();
+    for (const punto of IPC_MODELO_PARCIAL) {
+      const variantes = await cargarPreguntasIPCPunto(m, punto);
+      const disponibles = variantes.filter((q) => !usados.has(q.id));
+      const elegida = mezclar(disponibles.length ? disponibles : variantes)[0];
+      if (!elegida) throw new Error('No se encontraron variantes para el punto ' + punto.numero + '.');
+      usados.add(elegida.id);
+      pool.push({ ...elegida, tema: 'Punto ' + punto.numero + ' · ' + punto.titulo });
+    }
+    empezarJuego(pool, {
+      titulo: 'IPC · Modelo de parcial',
+      temaId: 'ipc-modelo-completo',
+      categoria: 'ipc-segundo-parcial',
+      ranking: true,
+      materiaNombre: m.nombre,
+      temaNombre: 'Simulación de los 9 puntos',
+      repetir: () => lanzarIPCModeloCompleto(m, materiaIndex),
+      volver: () => vistaIPCSegundoParcial(m, materiaIndex),
+    });
+  } catch (e) {
+    vistaError(e);
+  }
+}
+
 // ---------- IPC: Segundo Parcial por autor ----------
 
 function vistaIPCSegundoParcial(m, materiaIndex) {
@@ -1425,6 +1498,16 @@ function vistaIPCSegundoParcial(m, materiaIndex) {
     ? autores
     : autores.filter((a) => a.clave === autorActivo);
   const cantidadActiva = () => listaAutores().reduce((s, a) => s + (a.preguntas || 0), 0);
+  const modeloMarkup = '<section class="ipc-modelo-panel">' +
+    '<div class="ipc-modelo-intro"><div><span class="ipc-modelo-kicker">PRÁCTICA GUIADA</span><h2>Modelo de parcial</h2></div>' +
+    '<p>Los 9 puntos del examen de referencia, separados por consigna. Practicá cada punto con sus variantes o resolvé una simulación completa.</p></div>' +
+    '<button class="btn primario ipc-modelo-completo" id="btn-ipc-modelo-completo">Simular el modelo completo · 9 preguntas →</button>' +
+    '<div class="ipc-modelo-puntos">' + IPC_MODELO_PARCIAL.map((p) => ' +
+      '<article class="ipc-modelo-punto"><div class="ipc-modelo-punto-top"><span class="ipc-modelo-num">' + String(p.numero).padStart(2, '0') + '</span><span class="ipc-modelo-autor">' + esc(p.autorEtiqueta) + '</span></div>' +
+      '<h3>' + esc(p.titulo) + '</h3><p>' + esc(p.consigna) + '</p>' +
+      '<div class="ipc-modelo-punto-foot"><span data-ipc-modelo-count="' + p.id + '">Cargando variantes…</span><button class="btn enlace" type="button" data-ipc-modelo-punto="' + p.id + '">Practicar este punto →</button></div></article>'
+    ).join('') + '</div></section>';
+
 
   app.innerHTML = `
     <main class="pantalla ipc-p2-wrap">
@@ -1434,6 +1517,7 @@ function vistaIPCSegundoParcial(m, materiaIndex) {
         <h1>Segundo Parcial</h1>
       </div>
       <p class="bajada">Banco de estudio por autor y un bloque integrador. Cada pregunta incluye explicación, análisis de distractores y expansión de estudio.</p>
+      \${modeloMarkup}
       <section class="ipc-p2-resumen">
         <strong>${config.preguntas}</strong>
         <span>preguntas de opción múltiple</span>
@@ -1472,6 +1556,25 @@ function vistaIPCSegundoParcial(m, materiaIndex) {
           </article>`).join('')}
       </section>
     </main>`;
+
+  document.getElementById('btn-ipc-modelo-completo').addEventListener('click', () => {
+    Sonido.clic();
+    lanzarIPCModeloCompleto(m, materiaIndex);
+  });
+  app.querySelectorAll('[data-ipc-modelo-punto]').forEach((b) => b.addEventListener('click', () => {
+    Sonido.clic();
+    const punto = IPC_MODELO_PARCIAL.find((p) => p.id === b.dataset.ipcModeloPunto);
+    if (punto) lanzarIPCPuntoModelo(m, materiaIndex, punto);
+  }));
+  IPC_MODELO_PARCIAL.forEach(async (p) => {
+    try {
+      const preguntas = await cargarPreguntasIPCPunto(m, p);
+      const el = app.querySelector('[data-ipc-modelo-count="' + p.id + '"]');
+      if (el) el.textContent = preguntas.length + (preguntas.length === 1 ? ' variante' : ' variantes');
+    } catch (e) {
+      console.warn('[Modelo IPC]', e);
+    }
+  });
 
   document.getElementById('btn-ipc-p2-volver').addEventListener('click', () => {
     Sonido.clic();
