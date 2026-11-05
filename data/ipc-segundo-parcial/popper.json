@@ -31,11 +31,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Popper distingue la pregunta psicológica por el origen o génesis de una idea de la pregunta lógica por su validez y contrastación. Que una hipótesis surja de una intuición u observación no constituye por sí mismo su justificación lógica.",
-      "refutacionIncorrectas": {
-        "A": "Desplaza la cuestión desde la evaluación lógica y pública de enunciados hacia el origen subjetivo de una idea. Popper distingue la génesis psicológica de una hipótesis de las razones lógicas para aceptarla o rechazarla.",
-        "C": "Convierte la resistencia a determinadas pruebas en una verificación final. Popper habla de corroboración provisional: ninguna serie finita de casos favorables demuestra deductivamente una ley universal.",
-        "D": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -74,11 +69,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Una información empírica finita solo da cuenta de los casos observados. Extender esa regularidad a todos los casos del dominio implica un salto que no posee justificación lógica válida, pues siempre existe el riesgo de que aparezca un caso contrario.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «Porque los enunciados singulares carecen de términos universales en su descripción lingüística.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "B": "Esta opción propone «Porque las observaciones empíricas están siempre distorsionadas por ilusiones ópticas o sensoriales.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -117,11 +107,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Justificar el principio de inducción basándose en experiencias pasadas implica apelar a un razonamiento inductivo para validar la inducción misma, lo que cae en un círculo vicioso.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «Porque desemboca en una contradicción de la lógica deductiva estándar.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "B": "Trata el enunciado como un fundamento incuestionable. La aceptación metodológica de un enunciado básico no es dogmática: debe estar abierta a controles, crítica y revisión intersubjetiva.",
-        "D": "Al abarcar cualquier resultado posible, la proposición no excluye nada que pudiera contar en su contra. Por eso carece del riesgo empírico que requiere la falsabilidad."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -160,11 +145,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Si el principio de inducción se pretende justificar mediante otro de orden superior, este último requerirá a su vez una nueva norma de justificación, conduciendo a una regresión infinita de principios.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «A un dogmatismo psicologista insalvable.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "C": "Esta opción propone «A la pérdida de falsabilidad del sistema.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Esta opción propone «A la transformación del sistema en un enunciado analítico.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -203,11 +183,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Popper señala que apelar al apriorismo kantiano no ofrece una fundamentación satisfactoria para justificar lógicamente enunciados sintéticos universales en el ámbito empírico.",
-      "refutacionIncorrectas": {
-        "A": "Al abarcar cualquier resultado posible, la proposición no excluye nada que pudiera contar en su contra. Por eso carece del riesgo empírico que requiere la falsabilidad.",
-        "C": "Esta opción propone «Afirma que la causalidad kantiana depende de la corroboración provisional de enunciados singulares.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Interpreta la aceptación metodológica como una decisión arbitraria o como verdad por votación. El acuerdo no hace verdadero al enunciado: permite aceptarlo provisionalmente bajo procedimientos públicos y revisables."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -246,11 +221,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Para asignar grados de probabilidad mediante inducción se necesita una regla que valide esa asignación; si esa regla depende nuevamente de una inferencia probable, reaparece la regresión infinita o la necesidad de un principio a priori.",
-      "refutacionIncorrectas": {
-        "B": "Convierte la resistencia a determinadas pruebas en una verificación final. Popper habla de corroboración provisional: ninguna serie finita de casos favorables demuestra deductivamente una ley universal.",
-        "C": "Esta opción propone «Porque la probabilidad transforma los enunciados universales en afirmaciones no falsables de bajo nivel.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Invierte o reemplaza la forma deductiva pertinente. El modus tollens opera desde una consecuencia esperada y su negación (T → P; ¬P) para inferir que la hipótesis queda contradicha; no demuestra la teoría cuando P se cumple."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -289,11 +259,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "La comparación lógica interna contrasta las conclusiones derivadas del sistema entre sí con el propósito de examinar su coherencia interna y evitar contradicciones.",
-      "refutacionIncorrectas": {
-        "A": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos.",
-        "C": "Confunde el examen de consistencia entre las consecuencias de un sistema con otro procedimiento de contrastación. La comparación interna busca detectar contradicciones y examinar la coherencia lógica, no comparar percepciones o teorías rivales.",
-        "D": "Confunde el examen de consistencia entre las consecuencias de un sistema con otro procedimiento de contrastación. La comparación interna busca detectar contradicciones y examinar la coherencia lógica, no comparar percepciones o teorías rivales."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -332,11 +297,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "El Modus Tollens es la regla deductiva formal que permite concluir la falsedad de la premisa teórica general (no-P) a partir de la negación o incompatibilidad de una de sus consecuencias observacionales (no-Q).",
-      "refutacionIncorrectas": {
-        "A": "Convierte la resistencia a determinadas pruebas en una verificación final. Popper habla de corroboración provisional: ninguna serie finita de casos favorables demuestra deductivamente una ley universal.",
-        "B": "Esta opción propone «Garantizar la confirmación probabilística de una teoría mediante la acumulación de consecuencias verdaderas.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -375,11 +335,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Existe una asimetría formal: ningún número de verificaciones singulares permite derivar deductivamente la verdad de un enunciado universal, pero una sola consecuencia incompatible permite deducir su falsedad.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «Un enunciado universal se confirma con un caso positivo, pero requiere infinitas observaciones para ser falsado.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "C": "Esta opción propone «Las hipótesis universales son siempre falsables, mientras que las hipótesis singulares son plenamente verificables de forma definitiva.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Interpreta la aceptación metodológica como una decisión arbitraria o como verdad por votación. El acuerdo no hace verdadero al enunciado: permite aceptarlo provisionalmente bajo procedimientos públicos y revisables."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -418,11 +373,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "La corroboración no es verificación ni prueba de verdad absoluta; simplemente señala que la hipótesis resistió los intentos de contrastación hasta la fecha, manteniéndose vigente de forma provisional.",
-      "refutacionIncorrectas": {
-        "A": "Convierte la resistencia a determinadas pruebas en una verificación final. Popper habla de corroboración provisional: ninguna serie finita de casos favorables demuestra deductivamente una ley universal.",
-        "B": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional.",
-        "D": "Trata el enunciado como un fundamento incuestionable. La aceptación metodológica de un enunciado básico no es dogmática: debe estar abierta a controles, crítica y revisión intersubjetiva."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -461,11 +411,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Exigir verificabilidad concluyente dejaría fuera de la ciencia natural a las mismísimas leyes universales, las cuales abarcan infinitos casos posibles y nunca pueden comprobarse totalmente mediante observaciones finitas.",
-      "refutacionIncorrectas": {
-        "B": "Invierte o reemplaza la forma deductiva pertinente. El modus tollens opera desde una consecuencia esperada y su negación (T → P; ¬P) para inferir que la hipótesis queda contradicha; no demuestra la teoría cuando P se cumple.",
-        "C": "Esta opción propone «Porque promueve la incorporación de enunciados metafísicos no susceptibles de observación.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Interpreta la aceptación metodológica como una decisión arbitraria o como verdad por votación. El acuerdo no hace verdadero al enunciado: permite aceptarlo provisionalmente bajo procedimientos públicos y revisables."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -504,11 +449,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Un enunciado es falsable cuando posee la propiedad lógica de ofrecer condiciones de fracaso empírico, es decir, cuando existe al menos un falsador potencial que podría contradecirlo.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «Como aquel enunciado que ya ha sido puesto a prueba y resultó ser empíricamente falso.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "B": "Convierte la resistencia a determinadas pruebas en una verificación final. Popper habla de corroboración provisional: ninguna serie finita de casos favorables demuestra deductivamente una ley universal.",
-        "D": "Al abarcar cualquier resultado posible, la proposición no excluye nada que pudiera contar en su contra. Por eso carece del riesgo empírico que requiere la falsabilidad."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -547,11 +487,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "La falsabilidad es la capacidad o condición estructural de una teoría para someterse a prueba; la falsación es el evento metodológico en el cual la teoría efectivamente choca con un enunciado básico aceptado y queda refutada.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «El falsable es un enunciado de bajo nivel y el falsado es una ley universal de alto nivel.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "C": "Esta opción propone «El enunciado falsable carece de significación científica, mientras que el falsado forma parte del conocimiento verificado.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Este planteo prolonga la cadena de justificaciones en lugar de resolverla: cada fundamento exigiría otro fundamento, generando una regresión infinita."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -590,11 +525,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Un falsador potencial es un enunciado básico posible que describe un hecho singular que, de ser aceptado por la comunidad científica, entraría en contradicción directa con la teoría.",
-      "refutacionIncorrectas": {
-        "A": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos.",
-        "C": "Esta opción propone «Una hipótesis de alto nivel que reemplaza provisionalmente a una teoría que ha sido refutada.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -633,11 +563,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Los enunciados tautológicos abarcan todas las posibilidades empíricas imaginables, por lo cual no prohiben ningún acontecimiento ni admiten un falsador potencial que pueda ponerlos a prueba.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «Porque expresa una hipótesis de nivel singular que no posee suficiente grado de corroboración.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "B": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional.",
-        "D": "Interpreta la aceptación metodológica como una decisión arbitraria o como verdad por votación. El acuerdo no hace verdadero al enunciado: permite aceptarlo provisionalmente bajo procedimientos públicos y revisables."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -676,11 +601,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "El problema metodológico señalados para estos sistemas no es que se haya probado su falsedad factual, sino su falta de falsabilidad: sus formulaciones suelen reinterpretar cualquier dato para evitar chocar con la experiencia.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «Que se ha demostrado científicamente que todas sus afirmaciones singulares son totalmente falsas.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "C": "Invierte o reemplaza la forma deductiva pertinente. El modus tollens opera desde una consecuencia esperada y su negación (T → P; ¬P) para inferir que la hipótesis queda contradicha; no demuestra la teoría cuando P se cumple.",
-        "D": "Esta opción propone «Que se estructuran sobre la base de una cantidad insuficiente de casos observados en la experiencia.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -719,11 +639,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Para que una teoría sea falsada no basta un hecho aislado o dudoso; se requiere corroborar previamente una hipótesis falsadora de bajo nivel que describa de manera reproducible el efecto que contradice a la teoría.",
-      "refutacionIncorrectas": {
-        "A": "Invierte o reemplaza la forma deductiva pertinente. El modus tollens opera desde una consecuencia esperada y su negación (T → P; ¬P) para inferir que la hipótesis queda contradicha; no demuestra la teoría cuando P se cumple.",
-        "C": "Al abarcar cualquier resultado posible, la proposición no excluye nada que pudiera contar en su contra. Por eso carece del riesgo empírico que requiere la falsabilidad.",
-        "D": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -762,11 +677,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Mientras que las leyes universales cuantifican de forma irrestricta sobre todos los casos del dominio, enunciados existenciales como \"existe al menos un cuervo blanco\" tienen un nivel inferior al restringir su cuantificación a parte del dominio.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «Todos los animales vertebrados poseen sistema nervioso.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "C": "Esta opción propone «Ningún cuerpo con masa puede superar la velocidad de la luz.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Esta opción propone «Si un objeto se sumerge en agua, la masa de su volumen desplazado se conserva en todos los casos.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -805,11 +715,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Un enunciado básico no es la vivencia del observador sino una afirmación lingüística singular acerca de un hecho determinado, apta para actuar como premisa en una contrastación.",
-      "refutacionIncorrectas": {
-        "A": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos.",
-        "C": "Trata el enunciado como un fundamento incuestionable. La aceptación metodológica de un enunciado básico no es dogmática: debe estar abierta a controles, crítica y revisión intersubjetiva.",
-        "D": "Esta opción propone «Una inferencia probable extraída a partir de una muestra estadísticamente representativa.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -848,11 +753,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Fries planteó que la justificación de los enunciados se enfrenta a tres alternativas problemáticas: aceptarlos sin justificación (dogmatismo), justificarlos mediante otros enunciados de manera interminable (regresión infinita) o basarlos en la experiencia perceptiva (psicologismo).",
-      "refutacionIncorrectas": {
-        "A": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional.",
-        "C": "Esta opción propone «Falsabilidad, verificación y demarcación.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Al abarcar cualquier resultado posible, la proposición no excluye nada que pudiera contar en su contra. Por eso carece del riesgo empírico que requiere la falsabilidad."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -891,11 +791,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Tener una vivencia o percepción es un hecho psicológico individual. Un hecho de la conciencia no puede establecer una relación de justificación lógica con una proposición del lenguaje.",
-      "refutacionIncorrectas": {
-        "A": "Desplaza la cuestión desde la evaluación lógica y pública de enunciados hacia el origen subjetivo de una idea. Popper distingue la génesis psicológica de una hipótesis de las razones lógicas para aceptarla o rechazarla.",
-        "C": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos.",
-        "D": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -934,11 +829,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Términos como \"vaso\" o \"blanco\" implican un comportamiento regular y conceptual que va más allá de la pura sensación momentánea, de modo que los enunciados jamás pueden reducirse enteramente a vivencias sensoriales.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «A que los enunciados científicos describen realidades metafísicas inalcanzables para la observación.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "C": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional.",
-        "D": "Interpreta la aceptación metodológica como una decisión arbitraria o como verdad por votación. El acuerdo no hace verdadero al enunciado: permite aceptarlo provisionalmente bajo procedimientos públicos y revisables."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -977,11 +867,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Al no existir un fundamento empírico absoluto, la aceptación de los enunciados básicos descansa sobre decisiones o convenciones regladas que adopta de forma intersubjetiva la comunidad científica.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «Mediante una demostración deductiva derivada de axiomas matemáticos inapelables.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "C": "Esta opción propone «Por medio de la confirmación acumulativa de impresiones sensoriales individuales.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Convierte la resistencia a determinadas pruebas en una verificación final. Popper habla de corroboración provisional: ninguna serie finita de casos favorables demuestra deductivamente una ley universal."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1020,11 +905,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Se trata de una detención táctica para poder poner a prueba la teoría. No es un dogma absoluto porque si surgen dudas o se exige una nueva prueba, el enunciado básico aceptado puede someterse nuevamente a contrastación.",
-      "refutacionIncorrectas": {
-        "A": "Confunde el enunciado básico con una percepción privada o con un principio universal irrefutable. Se trata de una proposición singular contrastable, aceptada metodológicamente y sometida a controles públicos.",
-        "C": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos.",
-        "D": "Esta opción propone «En que ese enunciado no requiere someterse al criterio de falsabilidad.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1063,11 +943,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "El veredicto del jurado representa la decisión reglada que da por establecido un hecho de manera convencional. Sobre ese veredicto aceptado, el juez aplica luego las relaciones lógicas y legales del sistema.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «Con el código legal escrito que rige el juzgamiento de los hechos.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "B": "Esta opción propone «Con la argumentación deductiva contenida en la sentencia redactada por el juez.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Esta opción propone «Con la confesión espontánea y psicológica brindada por el acusado.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1106,11 +981,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "La metáfora subraya que la ciencia no tiene un fundamento natural definitivo sobre la roca firme de la experiencia. Se hincan pilotes hasta hallar la firmeza suficiente para sostener la estructura, con la posibilidad constante de seguir hundiéndolos si hace falta.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «Que el conocimiento científico carece por completo de rigor y validez metodológica.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "B": "Esta opción propone «Que las teorías científicas descansan sobre impresiones psicológicas inestables.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1149,11 +1019,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Para Popper, la experiencia no es el origen lógico ni el fundamento de las teorías, sino la instancia negativa encargada de contrastar y eventualmente chocar con las consecuencias derivadas de las conjeturas.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «Generar lógicamente hipótesis universales mediante el análisis cuantitativo de frecuencias.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "C": "Esta opción propone «Confirmar paulatinamente el grado de probabilidad de que una conjetura sea verdadera.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Esta opción propone «Justificar psicológicamente las certezas científicas alcanzadas por los investigadores.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1192,11 +1057,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Mientras que el positivismo busca un grado de confirmación o probabilidad creciente mediante la acumulación de datos, para Popper una teoría que supera las pruebas permanece en un estado de corroboración provisional.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «El positivismo los considera verdaderos por definición; Popper sostiene que son hipótesis falsadas de bajo nivel.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "C": "Esta opción propone «El positivismo rechaza el uso de enunciados básicos; Popper los fundamenta en la observación pura.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1235,11 +1095,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Resistir contrastaciones severas constituye un éxito provisorio denominado corroboración. Afirmar que una teoría ha quedado demostrada como verdadera ignora la asimetría lógica de la refutación y la posibilidad de fallar en el futuro.",
-      "refutacionIncorrectas": {
-        "A": "Invierte el nivel o la función de la hipótesis falsadora. Esta debe describir un resultado empírico específico incompatible con la teoría de mayor nivel y poder someterse a contrastación propia.",
-        "C": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional.",
-        "D": "Confunde una vivencia psicológica privada con la justificación lógica de un enunciado. Para Popper, percibir puede motivar una observación, pero la base empírica exige proposiciones públicas sometidas a controles intersubjetivos."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1278,11 +1133,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Dado que las vivencias subjetivas no garantizan la verdad, la objetividad popperiana se basa en el carácter público, regulado e intersubjetivo del método científico y sus decisiones de aceptación o revisión.",
-      "refutacionIncorrectas": {
-        "A": "Esta opción propone «Como la garantía absoluta proporcionada por la observación directa y libre de prejuicios.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "B": "Recurre a la inducción para justificar una afirmación universal. La repetición de casos favorables no garantiza lógicamente que todos los casos no observados se comporten igual; solo puede aportar corroboración provisional.",
-        "D": "Esta opción propone «Como la eliminación total de dogmas metodológicos y la renuncia a la formulación de conjeturas.», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1321,11 +1171,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "",
-      "refutacionIncorrectas": {
-        "B": "Esta opción propone «b», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "C": "Esta opción propone «c», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles.",
-        "D": "Esta opción propone «d», pero no responde al paso lógico que exige la consigna. La clave popperiana es distinguir la posibilidad de prueba, la aceptación revisable de enunciados básicos y el resultado provisional de una contrastación; esta alternativa confunde esos niveles."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
@@ -1364,11 +1209,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Una teoría es falsable cuando excluye ciertos resultados posibles y puede entrar en conflicto con ellos. No es necesario que ya haya sido refutada; debe exponerse a un riesgo empírico identificable.",
-      "refutacionIncorrectas": {
-        "B": "La alternativa «La mayoría de la comunidad la considera verdadera.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una teoría es falsable cuando excluye ciertos resultados posibles y puede entrar en conflicto con ellos. No es necesario que ya haya sido refutada; debe exponerse a un riesgo empírico identificable.",
-        "C": "La alternativa «Es compatible con cualquier resultado posible.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una teoría es falsable cuando excluye ciertos resultados posibles y puede entrar en conflicto con ellos. No es necesario que ya haya sido refutada; debe exponerse a un riesgo empírico identificable.",
-        "D": "La alternativa «Sus afirmaciones no pueden ponerse a prueba.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una teoría es falsable cuando excluye ciertos resultados posibles y puede entrar en conflicto con ellos. No es necesario que ya haya sido refutada; debe exponerse a un riesgo empírico identificable."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Una teoría falsable es necesariamente falsa?",
@@ -1403,11 +1243,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "La falsabilidad funciona como criterio de demarcación: indica que la teoría puede entrar en conflicto con resultados posibles. La falsación es una situación metodológica concreta en la que se acepta un enunciado básico incompatible tras controles pertinentes.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «La falsabilidad es un resultado experimental adverso y la falsación es solo una posibilidad lógica.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La falsabilidad funciona como criterio de demarcación: indica que la teoría puede entrar en conflicto con resultados posibles. La falsación es una situación metodológica concreta en la que se acepta un enunciado básico incompatible tras controles pertinentes.",
-        "C": "La alternativa «Ambas expresan verificación definitiva.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La falsabilidad funciona como criterio de demarcación: indica que la teoría puede entrar en conflicto con resultados posibles. La falsación es una situación metodológica concreta en la que se acepta un enunciado básico incompatible tras controles pertinentes.",
-        "D": "La alternativa «Falsabilidad significa imposibilidad de contrastación.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La falsabilidad funciona como criterio de demarcación: indica que la teoría puede entrar en conflicto con resultados posibles. La falsación es una situación metodológica concreta en la que se acepta un enunciado básico incompatible tras controles pertinentes."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué ejemplo distingue ambas nociones?",
@@ -1442,11 +1277,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Una teoría que acomoda todo resultado no indica qué podría contar en su contra. Al no excluir posibilidades, no ofrece un riesgo empírico claro y pierde fuerza como candidata a teoría empírica falsable.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «La teoría tiene el mayor contenido empírico posible.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una teoría que acomoda todo resultado no indica qué podría contar en su contra. Al no excluir posibilidades, no ofrece un riesgo empírico claro y pierde fuerza como candidata a teoría empírica falsable.",
-        "B": "La alternativa «La teoría quedó corroborada.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una teoría que acomoda todo resultado no indica qué podría contar en su contra. Al no excluir posibilidades, no ofrece un riesgo empírico claro y pierde fuerza como candidata a teoría empírica falsable.",
-        "D": "La alternativa «La teoría fue falsada por el hecho de ser flexible.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una teoría que acomoda todo resultado no indica qué podría contar en su contra. Al no excluir posibilidades, no ofrece un riesgo empírico claro y pierde fuerza como candidata a teoría empírica falsable."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué significa correr un riesgo empírico?",
@@ -1481,11 +1311,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Cuanto más precisa sea una teoría al excluir resultados posibles, mayor será su contenido empírico y su falsabilidad. Su ventaja no es que esté demostrada, sino que se expone a pruebas exigentes.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Y tiene mayor contenido empírico porque se adapta a todo.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Cuanto más precisa sea una teoría al excluir resultados posibles, mayor será su contenido empírico y su falsabilidad. Su ventaja no es que esté demostrada, sino que se expone a pruebas exigentes.",
-        "C": "La alternativa «Ambas son equivalentes si sus autores las aceptan.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Cuanto más precisa sea una teoría al excluir resultados posibles, mayor será su contenido empírico y su falsabilidad. Su ventaja no es que esté demostrada, sino que se expone a pruebas exigentes.",
-        "D": "La alternativa «Y es más científica porque nunca puede fracasar.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Cuanto más precisa sea una teoría al excluir resultados posibles, mayor será su contenido empírico y su falsabilidad. Su ventaja no es que esté demostrada, sino que se expone a pruebas exigentes."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Por qué una teoría que lo explica todo puede explicar demasiado poco?",
@@ -1520,11 +1345,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "Falsabilidad es una propiedad de la estructura contrastable de una teoría, no el hecho histórico de haber sufrido una refutación. Una teoría puede ser falsable y permanecer sin falsar.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Que no es científica hasta ser falsada.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Falsabilidad es una propiedad de la estructura contrastable de una teoría, no el hecho histórico de haber sufrido una refutación. Una teoría puede ser falsable y permanecer sin falsar.",
-        "B": "La alternativa «Que ya fue verificada para siempre.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Falsabilidad es una propiedad de la estructura contrastable de una teoría, no el hecho histórico de haber sufrido una refutación. Una teoría puede ser falsable y permanecer sin falsar.",
-        "C": "La alternativa «Que perdió su falsabilidad porque resistió las pruebas.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Falsabilidad es una propiedad de la estructura contrastable de una teoría, no el hecho histórico de haber sufrido una refutación. Una teoría puede ser falsable y permanecer sin falsar."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Cuál es la tríada que conviene distinguir?",
@@ -1559,11 +1379,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "La corroboración registra que la teoría resistió contrastaciones exigentes. No convierte una cantidad finita de pruebas en demostración definitiva ni elimina la posibilidad de futuras refutaciones.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Quedó verificada para siempre.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La corroboración registra que la teoría resistió contrastaciones exigentes. No convierte una cantidad finita de pruebas en demostración definitiva ni elimina la posibilidad de futuras refutaciones.",
-        "C": "La alternativa «Dejó de ser falsable.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La corroboración registra que la teoría resistió contrastaciones exigentes. No convierte una cantidad finita de pruebas en demostración definitiva ni elimina la posibilidad de futuras refutaciones.",
-        "D": "La alternativa «Fue falsada por las pruebas.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La corroboración registra que la teoría resistió contrastaciones exigentes. No convierte una cantidad finita de pruebas en demostración definitiva ni elimina la posibilidad de futuras refutaciones."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué hace severa a una prueba?",
@@ -1598,11 +1413,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Aunque se observen numerosos casos compatibles, siempre pueden existir casos no examinados que contradigan la afirmación universal. La inducción no ofrece una demostración lógica concluyente.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Porque las observaciones no pueden formularse como enunciados.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Aunque se observen numerosos casos compatibles, siempre pueden existir casos no examinados que contradigan la afirmación universal. La inducción no ofrece una demostración lógica concluyente.",
-        "B": "La alternativa «Porque toda teoría universal es falsa.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Aunque se observen numerosos casos compatibles, siempre pueden existir casos no examinados que contradigan la afirmación universal. La inducción no ofrece una demostración lógica concluyente.",
-        "D": "La alternativa «Porque la ciencia no utiliza experiencias empíricas.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Aunque se observen numerosos casos compatibles, siempre pueden existir casos no examinados que contradigan la afirmación universal. La inducción no ofrece una demostración lógica concluyente."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué sí puede aportar una serie de casos favorables?",
@@ -1637,11 +1447,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "El argumento intenta justificar una ley universal por acumulación inductiva de casos particulares. Popper objeta que ningún número finito de observaciones favorables garantiza que no aparezca un contraejemplo.",
-      "refutacionIncorrectas": {
-        "B": "La alternativa «La observación de cisnes nunca es empírica.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El argumento intenta justificar una ley universal por acumulación inductiva de casos particulares. Popper objeta que ningún número finito de observaciones favorables garantiza que no aparezca un contraejemplo.",
-        "C": "La alternativa «La teoría ya fue falsada por repetición.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El argumento intenta justificar una ley universal por acumulación inductiva de casos particulares. Popper objeta que ningún número finito de observaciones favorables garantiza que no aparezca un contraejemplo.",
-        "D": "La alternativa «El razonamiento es deductivamente válido.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El argumento intenta justificar una ley universal por acumulación inductiva de casos particulares. Popper objeta que ningún número finito de observaciones favorables garantiza que no aparezca un contraejemplo."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué diferencia hay entre inducción y deducción?",
@@ -1676,11 +1481,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "La corroboración tiene carácter provisional: informa cómo respondió la teoría a determinadas pruebas, pero no permite cerrar para siempre la investigación ni descartar contrastaciones futuras.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Corroboración equivale a verdad final.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La corroboración tiene carácter provisional: informa cómo respondió la teoría a determinadas pruebas, pero no permite cerrar para siempre la investigación ni descartar contrastaciones futuras.",
-        "B": "La alternativa «Una teoría corroborada nunca puede revisarse.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La corroboración tiene carácter provisional: informa cómo respondió la teoría a determinadas pruebas, pero no permite cerrar para siempre la investigación ni descartar contrastaciones futuras.",
-        "C": "La alternativa «La verdad depende del consenso de la comunidad.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La corroboración tiene carácter provisional: informa cómo respondió la teoría a determinadas pruebas, pero no permite cerrar para siempre la investigación ni descartar contrastaciones futuras."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Una teoría bien corroborada puede ser falsable?",
@@ -1715,11 +1515,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Un resultado favorable es compatible con la teoría y puede contribuir a su corroboración, pero no produce la refutación lógica ni una verificación definitiva de una ley universal.",
-      "refutacionIncorrectas": {
-        "B": "La alternativa «Porque las predicciones no se derivan de las teorías.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Un resultado favorable es compatible con la teoría y puede contribuir a su corroboración, pero no produce la refutación lógica ni una verificación definitiva de una ley universal.",
-        "C": "La alternativa «Porque toda confirmación constituye un enunciado básico incompatible.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Un resultado favorable es compatible con la teoría y puede contribuir a su corroboración, pero no produce la refutación lógica ni una verificación definitiva de una ley universal.",
-        "D": "La alternativa «Porque la verificación solo se aplica a ciencias humanas.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Un resultado favorable es compatible con la teoría y puede contribuir a su corroboración, pero no produce la refutación lógica ni una verificación definitiva de una ley universal."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué error aparece al pasar de «P ocurrió» a «T es verdadera»?",
@@ -1754,11 +1549,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "El trilema identifica tres dificultades: detener la justificación y aceptar dogmáticamente; prolongarla indefinidamente; o buscar su fundamento en una experiencia perceptiva subjetiva, el psicologismo.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Inducción, deducción y analogía.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El trilema identifica tres dificultades: detener la justificación y aceptar dogmáticamente; prolongarla indefinidamente; o buscar su fundamento en una experiencia perceptiva subjetiva, el psicologismo.",
-        "C": "La alternativa «Falsabilidad, falsación y corroboración.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El trilema identifica tres dificultades: detener la justificación y aceptar dogmáticamente; prolongarla indefinidamente; o buscar su fundamento en una experiencia perceptiva subjetiva, el psicologismo.",
-        "D": "La alternativa «Paradigma, anomalía y crisis.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El trilema identifica tres dificultades: detener la justificación y aceptar dogmáticamente; prolongarla indefinidamente; o buscar su fundamento en una experiencia perceptiva subjetiva, el psicologismo."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué diferencia hay entre los tres cuernos?",
@@ -1793,11 +1583,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "El psicologismo confunde una experiencia subjetiva —tener una percepción— con la justificación lógica de un enunciado científico. Una sensación privada no garantiza por sí misma la verdad de una proposición.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Dogmatismo institucional.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El psicologismo confunde una experiencia subjetiva —tener una percepción— con la justificación lógica de un enunciado científico. Una sensación privada no garantiza por sí misma la verdad de una proposición.",
-        "B": "La alternativa «Regresión infinita.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El psicologismo confunde una experiencia subjetiva —tener una percepción— con la justificación lógica de un enunciado científico. Una sensación privada no garantiza por sí misma la verdad de una proposición.",
-        "D": "La alternativa «Inconmensurabilidad.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El psicologismo confunde una experiencia subjetiva —tener una percepción— con la justificación lógica de un enunciado científico. Una sensación privada no garantiza por sí misma la verdad de una proposición."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Observar y justificar son lo mismo?",
@@ -1832,11 +1617,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "El problema no es que toda percepción sea falsa, sino que la experiencia subjetiva no constituye una justificación lógica infalible. La discusión científica necesita afirmaciones públicas que otros puedan examinar.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Porque toda percepción es falsa.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El problema no es que toda percepción sea falsa, sino que la experiencia subjetiva no constituye una justificación lógica infalible. La discusión científica necesita afirmaciones públicas que otros puedan examinar.",
-        "B": "La alternativa «Porque la ciencia no utiliza observaciones.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El problema no es que toda percepción sea falsa, sino que la experiencia subjetiva no constituye una justificación lógica infalible. La discusión científica necesita afirmaciones públicas que otros puedan examinar.",
-        "C": "La alternativa «Porque solo se aceptan creencias metafísicas.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El problema no es que toda percepción sea falsa, sino que la experiencia subjetiva no constituye una justificación lógica infalible. La discusión científica necesita afirmaciones públicas que otros puedan examinar."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué diferencia hay entre origen psicológico y justificación lógica?",
@@ -1871,11 +1651,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "La regresión infinita surge cuando cada fundamento exige otro fundamento, sin que se alcance un punto de aceptación metodológica que permita continuar la contrastación.",
-      "refutacionIncorrectas": {
-        "B": "La alternativa «Psicologismo.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La regresión infinita surge cuando cada fundamento exige otro fundamento, sin que se alcance un punto de aceptación metodológica que permita continuar la contrastación.",
-        "C": "La alternativa «Dogmatismo.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La regresión infinita surge cuando cada fundamento exige otro fundamento, sin que se alcance un punto de aceptación metodológica que permita continuar la contrastación.",
-        "D": "La alternativa «Falsación.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La regresión infinita surge cuando cada fundamento exige otro fundamento, sin que se alcance un punto de aceptación metodológica que permita continuar la contrastación."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Cómo evita Popper el fundamento absoluto?",
@@ -1910,11 +1685,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "El dogmatismo aparece cuando se detiene la exigencia de justificación y se acepta un enunciado sin una discusión crítica adecuada. Popper no propone aceptar arbitrariamente cualquier afirmación.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Psicologismo.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El dogmatismo aparece cuando se detiene la exigencia de justificación y se acepta un enunciado sin una discusión crítica adecuada. Popper no propone aceptar arbitrariamente cualquier afirmación.",
-        "B": "La alternativa «Regresión infinita.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El dogmatismo aparece cuando se detiene la exigencia de justificación y se acepta un enunciado sin una discusión crítica adecuada. Popper no propone aceptar arbitrariamente cualquier afirmación.",
-        "D": "La alternativa «Corroboración.» es incorrecta porque no respeta la distinción desarrollada en la justificación: El dogmatismo aparece cuando se detiene la exigencia de justificación y se acepta un enunciado sin una discusión crítica adecuada. Popper no propone aceptar arbitrariamente cualquier afirmación."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué diferencia la convención metodológica del dogmatismo?",
@@ -1949,11 +1719,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "Los enunciados básicos son proposiciones singulares sobre hechos particulares. Pueden integrar una contrastación al describir un resultado que sea incompatible con una consecuencia de la teoría.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Una experiencia privada imposible de comunicar.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Los enunciados básicos son proposiciones singulares sobre hechos particulares. Pueden integrar una contrastación al describir un resultado que sea incompatible con una consecuencia de la teoría.",
-        "C": "La alternativa «Una ley universal confirmada por inducción.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Los enunciados básicos son proposiciones singulares sobre hechos particulares. Pueden integrar una contrastación al describir un resultado que sea incompatible con una consecuencia de la teoría.",
-        "D": "La alternativa «Una definición que no admite revisión.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Los enunciados básicos son proposiciones singulares sobre hechos particulares. Pueden integrar una contrastación al describir un resultado que sea incompatible con una consecuencia de la teoría."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Por qué no se identifican con sensaciones?",
@@ -1988,11 +1753,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "La convención no es capricho ni verdad por consenso. Es una decisión metodológica para continuar la contrastación, bajo procedimientos públicos y revisables.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Que se eligen arbitrariamente según preferencias personales.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La convención no es capricho ni verdad por consenso. Es una decisión metodológica para continuar la contrastación, bajo procedimientos públicos y revisables.",
-        "B": "La alternativa «Que una votación los vuelve infalibles.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La convención no es capricho ni verdad por consenso. Es una decisión metodológica para continuar la contrastación, bajo procedimientos públicos y revisables.",
-        "D": "La alternativa «Que no requieren ninguna contrastación.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La convención no es capricho ni verdad por consenso. Es una decisión metodológica para continuar la contrastación, bajo procedimientos públicos y revisables."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Por qué la aceptación no equivale a arbitrariedad?",
@@ -2027,11 +1787,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "Los pilotes permiten sostener provisionalmente una construcción sin llegar a una roca firme e incuestionable. Los enunciados básicos aceptados sirven para contrastar teorías, pero pueden revisarse.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Que la ciencia se apoya en fundamentos absolutamente seguros e inmodificables.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Los pilotes permiten sostener provisionalmente una construcción sin llegar a una roca firme e incuestionable. Los enunciados básicos aceptados sirven para contrastar teorías, pero pueden revisarse.",
-        "B": "La alternativa «Que los enunciados básicos son experiencias privadas.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Los pilotes permiten sostener provisionalmente una construcción sin llegar a una roca firme e incuestionable. Los enunciados básicos aceptados sirven para contrastar teorías, pero pueden revisarse.",
-        "C": "La alternativa «Que la ciencia avanza sin observaciones.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Los pilotes permiten sostener provisionalmente una construcción sin llegar a una roca firme e incuestionable. Los enunciados básicos aceptados sirven para contrastar teorías, pero pueden revisarse."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué evita esta metáfora?",
@@ -2066,11 +1821,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "La intersubjetividad remite a procedimientos y afirmaciones accesibles a examen compartido. No exige experiencias psicológicas idénticas ni transforma un acuerdo en verdad infalible.",
-      "refutacionIncorrectas": {
-        "B": "La alternativa «Que todos deben tener idénticas sensaciones privadas.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La intersubjetividad remite a procedimientos y afirmaciones accesibles a examen compartido. No exige experiencias psicológicas idénticas ni transforma un acuerdo en verdad infalible.",
-        "C": "La alternativa «Que la comunidad decide la verdad por mayoría.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La intersubjetividad remite a procedimientos y afirmaciones accesibles a examen compartido. No exige experiencias psicológicas idénticas ni transforma un acuerdo en verdad infalible.",
-        "D": "La alternativa «Que el enunciado ya no puede revisarse.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La intersubjetividad remite a procedimientos y afirmaciones accesibles a examen compartido. No exige experiencias psicológicas idénticas ni transforma un acuerdo en verdad infalible."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué lugar ocupa el desacuerdo?",
@@ -2105,11 +1855,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "La estructura es: T → P; se acepta ¬P; por modus tollens se deduce ¬T, siempre dentro de las condiciones de contrastación pertinentes. El resultado requiere controles y aceptación de un enunciado básico.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Afirmación del consecuente.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La estructura es: T → P; se acepta ¬P; por modus tollens se deduce ¬T, siempre dentro de las condiciones de contrastación pertinentes. El resultado requiere controles y aceptación de un enunciado básico.",
-        "C": "La alternativa «Generalización inductiva de P a T.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La estructura es: T → P; se acepta ¬P; por modus tollens se deduce ¬T, siempre dentro de las condiciones de contrastación pertinentes. El resultado requiere controles y aceptación de un enunciado básico.",
-        "D": "La alternativa «Modus ponens: si no-P, entonces T.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La estructura es: T → P; se acepta ¬P; por modus tollens se deduce ¬T, siempre dentro de las condiciones de contrastación pertinentes. El resultado requiere controles y aceptación de un enunciado básico."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Por qué el resultado no «habla solo»?",
@@ -2144,11 +1889,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Una hipótesis falsadora de nivel inferior precisa el resultado incompatible con la teoría superior. Debe poder contrastarse y estar suficientemente corroborada para que la falsación no dependa de una impresión dudosa.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Reemplaza automáticamente toda teoría universal.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una hipótesis falsadora de nivel inferior precisa el resultado incompatible con la teoría superior. Debe poder contrastarse y estar suficientemente corroborada para que la falsación no dependa de una impresión dudosa.",
-        "B": "La alternativa «Es una opinión subjetiva sobre una observación.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una hipótesis falsadora de nivel inferior precisa el resultado incompatible con la teoría superior. Debe poder contrastarse y estar suficientemente corroborada para que la falsación no dependa de una impresión dudosa.",
-        "D": "La alternativa «Convierte una predicción favorable en verificación definitiva.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una hipótesis falsadora de nivel inferior precisa el resultado incompatible con la teoría superior. Debe poder contrastarse y estar suficientemente corroborada para que la falsación no dependa de una impresión dudosa."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Por qué se requieren niveles distintos de hipótesis?",
@@ -2183,11 +1923,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "Una observación inesperada no basta por sí sola. Se deben revisar las condiciones, la medición y las hipótesis auxiliares para establecer si el resultado adverso está justificado como enunciado básico.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Declarar falsada la teoría inmediatamente.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una observación inesperada no basta por sí sola. Se deben revisar las condiciones, la medición y las hipótesis auxiliares para establecer si el resultado adverso está justificado como enunciado básico.",
-        "B": "La alternativa «Ignorar cualquier resultado adverso.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una observación inesperada no basta por sí sola. Se deben revisar las condiciones, la medición y las hipótesis auxiliares para establecer si el resultado adverso está justificado como enunciado básico.",
-        "C": "La alternativa «Aceptar que todas las teorías son equivalentes.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Una observación inesperada no basta por sí sola. Se deben revisar las condiciones, la medición y las hipótesis auxiliares para establecer si el resultado adverso está justificado como enunciado básico."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué diferencia hay entre una anomalía de medición y una falsación?",
@@ -2222,11 +1957,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "De T → P y P no se deduce T: otras teorías pueden producir la misma predicción. El éxito de una prueba favorece la corroboración, pero no verifica definitivamente la teoría.",
-      "refutacionIncorrectas": {
-        "B": "La alternativa «Porque toda deducción es inválida.» es incorrecta porque no respeta la distinción desarrollada en la justificación: De T → P y P no se deduce T: otras teorías pueden producir la misma predicción. El éxito de una prueba favorece la corroboración, pero no verifica definitivamente la teoría.",
-        "C": "La alternativa «Porque la teoría no puede implicar predicciones.» es incorrecta porque no respeta la distinción desarrollada en la justificación: De T → P y P no se deduce T: otras teorías pueden producir la misma predicción. El éxito de una prueba favorece la corroboración, pero no verifica definitivamente la teoría.",
-        "D": "La alternativa «Porque el resultado confirma una negación.» es incorrecta porque no respeta la distinción desarrollada en la justificación: De T → P y P no se deduce T: otras teorías pueden producir la misma predicción. El éxito de una prueba favorece la corroboración, pero no verifica definitivamente la teoría."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué conclusión sí es legítima?",
@@ -2261,11 +1991,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "La secuencia parte de hipótesis o teorías y deduce consecuencias contrastables. Los resultados se evalúan mediante enunciados básicos aceptados metodológicamente, lo que puede llevar a corroboración provisional o falsación.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «Observación pura → inducción → verificación permanente.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La secuencia parte de hipótesis o teorías y deduce consecuencias contrastables. Los resultados se evalúan mediante enunciados básicos aceptados metodológicamente, lo que puede llevar a corroboración provisional o falsación.",
-        "C": "La alternativa «Consenso → verdad definitiva → eliminación de toda revisión.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La secuencia parte de hipótesis o teorías y deduce consecuencias contrastables. Los resultados se evalúan mediante enunciados básicos aceptados metodológicamente, lo que puede llevar a corroboración provisional o falsación.",
-        "D": "La alternativa «Experiencia privada → certeza → ley universal.» es incorrecta porque no respeta la distinción desarrollada en la justificación: La secuencia parte de hipótesis o teorías y deduce consecuencias contrastables. Los resultados se evalúan mediante enunciados básicos aceptados metodológicamente, lo que puede llevar a corroboración provisional o falsación."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué lugar ocupa la inducción en este esquema?",
@@ -2300,11 +2025,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Popper rechaza convertir una experiencia perceptiva subjetiva en fundamento lógico infalible. Los enunciados básicos se aceptan para la contrastación bajo controles intersubjetivos y siguen abiertos a revisión.",
-      "refutacionIncorrectas": {
-        "A": "La alternativa «La percepción privada garantiza el enunciado.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Popper rechaza convertir una experiencia perceptiva subjetiva en fundamento lógico infalible. Los enunciados básicos se aceptan para la contrastación bajo controles intersubjetivos y siguen abiertos a revisión.",
-        "B": "La alternativa «Los enunciados básicos no requieren revisión.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Popper rechaza convertir una experiencia perceptiva subjetiva en fundamento lógico infalible. Los enunciados básicos se aceptan para la contrastación bajo controles intersubjetivos y siguen abiertos a revisión.",
-        "D": "La alternativa «La ciencia prescinde de toda experiencia.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Popper rechaza convertir una experiencia perceptiva subjetiva en fundamento lógico infalible. Los enunciados básicos se aceptan para la contrastación bajo controles intersubjetivos y siguen abiertos a revisión."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Por qué esta solución no es dogmática?",
@@ -2339,11 +2059,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Falsabilidad es la posibilidad lógica y empírica de entrar en conflicto con resultados; falsación es aceptar una incompatibilidad después de contrastar; corroboración es haber resistido pruebas concretas. Son conceptos relacionados, pero no equivalentes.",
-      "refutacionIncorrectas": {
-        "B": "La alternativa «Distinguir entre teorías universales y enunciados singulares.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Falsabilidad es la posibilidad lógica y empírica de entrar en conflicto con resultados; falsación es aceptar una incompatibilidad después de contrastar; corroboración es haber resistido pruebas concretas. Son conceptos relacionados, pero no equivalentes.",
-        "C": "La alternativa «Reconocer que las pruebas pueden ser exigentes.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Falsabilidad es la posibilidad lógica y empírica de entrar en conflicto con resultados; falsación es aceptar una incompatibilidad después de contrastar; corroboración es haber resistido pruebas concretas. Son conceptos relacionados, pero no equivalentes.",
-        "D": "La alternativa «Aceptar que los enunciados básicos sean revisables.» es incorrecta porque no respeta la distinción desarrollada en la justificación: Falsabilidad es la posibilidad lógica y empírica de entrar en conflicto con resultados; falsación es aceptar una incompatibilidad después de contrastar; corroboración es haber resistido pruebas concretas. Son conceptos relacionados, pero no equivalentes."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Cuál es el error en afirmar «no fue falsada, por lo tanto no es falsable»?",
@@ -2378,11 +2093,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "La predicción depende de la teoría, las condiciones iniciales y supuestos auxiliares. El enunciado falsador debe someterse a control; no se lo acepta como una observación infalible.",
-      "refutacionIncorrectas": {
-        "A": "Popper no funda la base empírica en percepciones privadas incuestionables.",
-        "B": "Repetir puede ser parte del control, pero hacerlo para obtener el resultado esperado introduce sesgo y no contrasta críticamente la hipótesis.",
-        "D": "Un resultado singular no autoriza una generalización universal; además, el caso solo pone a prueba el conjunto de premisas implicadas."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción permite resolver esta consigna?",
@@ -2417,11 +2127,6 @@
       ],
       "respuestaCorrecta": "B",
       "justificacionCorrecta": "El modus tollens permite inferir la falsedad del antecedente del condicional cuando se niega su consecuente. En una contrastación real, la predicción depende de T y de otras premisas, por lo que el resultado no identifica automáticamente cuál falló.",
-      "refutacionIncorrectas": {
-        "A": "La deducción refuta el conjunto de premisas que implica P; no determina por sí sola cuál de ellas debe abandonarse.",
-        "C": "La corroboración no se obtiene por la mera formulación previa de una predicción, sino por el resultado de una contrastación exigente.",
-        "D": "Los enunciados básicos aceptados pueden funcionar como falsadores; no existe inmunidad lógica de las teorías."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción permite resolver esta consigna?",
@@ -2456,11 +2161,6 @@
       ],
       "respuestaCorrecta": "D",
       "justificacionCorrecta": "La regresión infinita surge cuando toda afirmación debe justificarse mediante otra sin detener la cadena. Las otras salidas clásicas del trilema son el dogmatismo y el psicologismo.",
-      "refutacionIncorrectas": {
-        "A": "El psicologismo funda la certeza en experiencias o percepciones subjetivas; no describe una cadena interminable de justificaciones.",
-        "B": "El dogmatismo detiene la justificación aceptando un enunciado sin más; aquí sucede lo contrario, la cadena no termina.",
-        "C": "La inconmensurabilidad es un concepto kuhniano y no corresponde al problema lógico planteado."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción permite resolver esta consigna?",
@@ -2495,11 +2195,6 @@
       ],
       "respuestaCorrecta": "A",
       "justificacionCorrecta": "Los enunciados básicos son singulares y pueden funcionar como base de contrastación cuando la comunidad los acepta mediante procedimientos públicos. Su aceptación es metodológica y revisable, no arbitraria ni definitiva.",
-      "refutacionIncorrectas": {
-        "B": "La aceptación intersubjetiva no convierte un enunciado singular en una verdad universal ni lo vuelve irrevocable.",
-        "C": "Los enunciados básicos sí pueden intervenir en la contrastación de teorías.",
-        "D": "Popper distingue la lógica del conocimiento de la descripción psicológica de experiencias privadas."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción permite resolver esta consigna?",
@@ -2534,11 +2229,6 @@
       ],
       "respuestaCorrecta": "C",
       "justificacionCorrecta": "Una teoría que excluye más estados posibles es más informativa y más falsable: ofrece más oportunidades de contrastación y de refutación. Esto no significa que ya haya sido falsada ni que sea automáticamente verdadera.",
-      "refutacionIncorrectas": {
-        "A": "Permitir más resultados reduce el contenido empírico, porque la teoría prohíbe menos estados posibles.",
-        "B": "Ser falsable no equivale a estar falsada; la exclusión de resultados expresa riesgo contrastable, no refutación efectiva.",
-        "D": "El contenido empírico depende también de los resultados que cada teoría excluye, no solo de los ya explicados."
-      },
       "expansionEstudio": [
         {
           "pregunta": "¿Qué distinción permite resolver esta consigna?",
