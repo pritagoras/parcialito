@@ -340,6 +340,12 @@
           "nombre": "Foucault",
           "archivo": "data/ipc-2/08-foucault.json",
           "preguntas": 30
+        },
+        {
+          "id": "ipc-2/09-hacking-conceptos",
+          "nombre": "Hacking: conceptos y distinciones",
+          "archivo": "data/ipc-2/09-hacking-conceptos.json",
+          "preguntas": 30
         }
       ],
       "segundoParcial": {
