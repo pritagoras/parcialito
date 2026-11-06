@@ -1,0 +1,336 @@
+{
+  "materia": "IPC 2",
+  "tema": "Hacking: conceptos y distinciones",
+  "preguntas": [
+    {
+      "pregunta": "Cuando Hacking habla de un «espacio de posibilidades» que permite que una categoría de personas aparezca en una época, ¿a qué concepto se refiere?",
+      "opciones": [
+        "A la formación discursiva, entendida como el conjunto completo de condiciones sociales e institucionales.",
+        "Al nicho ecológico, es decir, al entramado histórico que vuelve posible que esa categoría surja.",
+        "A la construcción de personas, entendida como el nombre que recibe el espacio institucional.",
+        "A la ontología histórica, entendida como una clasificación médica particular."
+      ],
+      "correcta": "B",
+      "explicacion": "La pista «espacio de posibilidades» apunta al nicho ecológico. No es un lugar físico: es la combinación de condiciones culturales, institucionales, médicas y prácticas que permite que una categoría humana pueda surgir y sostenerse."
+    },
+    {
+      "pregunta": "Una categoría diagnóstica solo puede aparecer cuando existen determinadas instituciones, vocabularios médicos, prácticas de observación y preocupaciones culturales. ¿Cómo denomina Hacking a ese contexto de posibilidad?",
+      "opciones": [
+        "Efecto bucle.",
+        "Nominalismo dinámico.",
+        "Formación discursiva.",
+        "Nicho ecológico."
+      ],
+      "correcta": "D",
+      "explicacion": "El nicho ecológico reúne las condiciones que hacen posible una categoría en un momento histórico. La formación discursiva puede ser una parte de ese contexto, pero no agota todos sus componentes."
+    },
+    {
+      "pregunta": "En una consigna se lee: «No se pregunta por la etiqueta en sí, sino por el ambiente histórico, cultural e institucional que permitió que esa clasificación apareciera». ¿Qué concepto se está evaluando?",
+      "opciones": [
+        "Nicho ecológico.",
+        "Ontología histórica.",
+        "Construcción de personas.",
+        "Nominalismo dinámico."
+      ],
+      "correcta": "A",
+      "explicacion": "La consigna describe el marco concreto de condiciones que habilita una clasificación. Eso es el nicho ecológico; el nominalismo dinámico, en cambio, es la tesis general sobre la interacción entre categorías y personas."
+    },
+    {
+      "pregunta": "¿Cuál de estas situaciones describe mejor un nicho ecológico?",
+      "opciones": [
+        "Una persona cambia su conducta después de conocer la etiqueta que le asignaron.",
+        "Una institución modifica la definición de una categoría luego de observar las respuestas de quienes fueron clasificados.",
+        "En una época coinciden saberes médicos, reglas institucionales, valores culturales y prácticas que hacen imaginable una nueva categoría.",
+        "Un investigador estudia, en términos generales, cómo cambian históricamente las formas de ser persona."
+      ],
+      "correcta": "C",
+      "explicacion": "El nicho ecológico es la configuración de condiciones de una época. La primera situación alude a una respuesta de las personas; la segunda, a una posible vuelta del efecto bucle; la cuarta, al proyecto más amplio de ontología histórica."
+    },
+    {
+      "pregunta": "¿Por qué el nicho ecológico no debe confundirse con un simple «contexto social» mencionado de manera vaga?",
+      "opciones": [
+        "Porque se refiere exclusivamente a las características biológicas de quienes reciben una clasificación.",
+        "Porque identifica una combinación concreta de condiciones que vuelve posible que una categoría surja, sea reconocible y funcione.",
+        "Porque designa únicamente las palabras que aparecen en los manuales científicos.",
+        "Porque explica lo que una persona siente después de recibir un diagnóstico."
+      ],
+      "correcta": "B",
+      "explicacion": "No significa solamente que «la sociedad influye». El concepto permite analizar qué condiciones específicas —instituciones, saberes, valores, observaciones y prácticas— hicieron posible una categoría."
+    },
+    {
+      "pregunta": "Si una pregunta menciona «las condiciones de posibilidad» de una categoría humana, ¿qué conviene identificar antes que nada?",
+      "opciones": [
+        "La formación discursiva, porque siempre equivale al conjunto total de condiciones.",
+        "El efecto bucle, porque explica el origen de cualquier institución.",
+        "La construcción de personas, porque nombra el ambiente histórico.",
+        "El nicho ecológico, porque señala el marco histórico que habilita la aparición de esa categoría."
+      ],
+      "correcta": "D",
+      "explicacion": "«Condiciones de posibilidad» y «espacio donde pudo surgir» son pistas características del nicho ecológico. Luego puede analizarse qué papel tuvieron los discursos, las instituciones y las prácticas."
+    },
+    {
+      "pregunta": "¿Qué sostiene el nominalismo dinámico de Ian Hacking?",
+      "opciones": [
+        "Que las categorías humanas y las formas de ser de las personas se constituyen e influyen mutuamente a lo largo de la historia.",
+        "Que los nombres solo describen tipos de personas que ya estaban definidos de una vez y para siempre.",
+        "Que las categorías son palabras arbitrarias sin consecuencias sobre la vida social.",
+        "Que toda clasificación científica funciona igual que clasificar planetas."
+      ],
+      "correcta": "A",
+      "explicacion": "El nominalismo dinámico afirma que no hay siempre un tipo humano completamente formado esperando recibir un nombre. La clasificación y las personas clasificadas pueden transformarse recíprocamente en la historia."
+    },
+    {
+      "pregunta": "Una consigna afirma: «Las clasificaciones no se limitan a poner nombres a grupos preexistentes: también contribuyen a formar el tipo de persona que describen». ¿Qué idea expresa?",
+      "opciones": [
+        "La formación discursiva.",
+        "El nicho ecológico.",
+        "El nominalismo dinámico.",
+        "La clase indiferente."
+      ],
+      "correcta": "C",
+      "explicacion": "La frase expresa el nominalismo dinámico: los nombres y las clases de personas se forman en una relación histórica e interactiva, en vez de ser etiquetas neutrales aplicadas desde afuera."
+    },
+    {
+      "pregunta": "¿Qué diferencia al nominalismo dinámico de una concepción estática de las clasificaciones?",
+      "opciones": [
+        "El dinámico sostiene que las palabras no tienen ningún efecto, mientras que el estático sostiene que sí lo tienen.",
+        "El dinámico estudia solo objetos naturales, mientras que el estático estudia personas.",
+        "El dinámico considera que toda categoría desaparece inmediatamente después de ser creada.",
+        "El dinámico contempla que la clasificación puede modificar a las personas y que esas respuestas pueden modificar la propia clasificación."
+      ],
+      "correcta": "D",
+      "explicacion": "La diferencia central es la interacción y el cambio. Una mirada estática trata la categoría como una etiqueta aplicada a personas ya constituidas; el nominalismo dinámico estudia la influencia recíproca entre ambas."
+    },
+    {
+      "pregunta": "Cuando Hacking plantea que un nombre y el tipo de persona nombrado «se hacen mutuamente» a lo largo del tiempo, ¿qué está destacando?",
+      "opciones": [
+        "Que primero aparece una etiqueta definitiva y luego las personas deben adaptarse sin modificarla.",
+        "Que las clasificaciones y las personas clasificadas mantienen una relación histórica de influencia recíproca.",
+        "Que el nombre crea materialmente desde cero a todos los individuos.",
+        "Que las categorías humanas son equivalentes a las especies biológicas."
+      ],
+      "correcta": "B",
+      "explicacion": "La expresión «se hacen mutuamente» resume el nominalismo dinámico. No significa que una palabra cree físicamente a las personas, sino que la categoría contribuye a organizar identidades, experiencias y conductas, mientras las respuestas humanas también pueden transformarla."
+    },
+    {
+      "pregunta": "Una nueva clasificación cambia cómo las personas se entienden a sí mismas; luego, sus respuestas llevan a los especialistas a revisar la clasificación. ¿Qué marco general permite comprender esa relación recíproca?",
+      "opciones": [
+        "El nominalismo dinámico.",
+        "La formación discursiva, exclusivamente.",
+        "La clase indiferente.",
+        "El nicho ecológico, entendido como efecto sobre la conducta individual."
+      ],
+      "correcta": "A",
+      "explicacion": "El nominalismo dinámico es la tesis general de la interacción entre los nombres o categorías y los tipos de personas. El efecto bucle describe más específicamente el circuito de retroalimentación que puede producirse."
+    },
+    {
+      "pregunta": "¿Cuál es la mejor forma de resumir el nominalismo dinámico sin confundirlo con una simple invención de palabras?",
+      "opciones": [
+        "La sociedad inventa etiquetas, pero estas nunca cambian la experiencia de nadie.",
+        "Los especialistas descubren nombres naturales que permanecen idénticos en todas las épocas.",
+        "Las personas crean las categorías por sí solas, sin intervención de instituciones ni saberes.",
+        "Clasificar personas puede cambiar las maneras de vivir y comprenderse, y esos cambios pueden repercutir en la clasificación."
+      ],
+      "correcta": "D",
+      "explicacion": "El nominalismo dinámico no dice simplemente que «todo es inventado». Explica una relación histórica de ida y vuelta entre clasificaciones, instituciones y personas."
+    },
+    {
+      "pregunta": "¿A qué se refiere Hacking con «hacer personas» o *making up people*?",
+      "opciones": [
+        "A fabricar físicamente individuos mediante una técnica científica.",
+        "Al proceso histórico por el que las clasificaciones e instituciones contribuyen a formar nuevos tipos de personas socialmente reconocibles.",
+        "A crear el nicho ecológico antes de que exista cualquier categoría.",
+        "A establecer reglas gramaticales para que una disciplina pueda hablar de un fenómeno."
+      ],
+      "correcta": "B",
+      "explicacion": "«Hacer personas» no significa fabricar cuerpos. Se refiere a cómo una categoría, junto con las prácticas e instituciones asociadas, puede abrir una forma particular de reconocerse, describirse y actuar."
+    },
+    {
+      "pregunta": "Una persona empieza a interpretar experiencias propias mediante una categoría que antes no utilizaba; esa clasificación modifica su identidad y las posibilidades que reconoce para actuar. ¿Qué concepto describe mejor ese proceso?",
+      "opciones": [
+        "Formación discursiva.",
+        "Nicho ecológico.",
+        "Construcción de personas (*making up people*).",
+        "Ontología histórica, como nombre específico del cambio individual."
+      ],
+      "correcta": "C",
+      "explicacion": "La construcción de personas pone el foco en lo que ocurre con los sujetos cuando aparece y se aplica una nueva categoría: puede cambiar la autocomprensión, la experiencia y las formas de actuar."
+    },
+    {
+      "pregunta": "¿Cuál es la diferencia más importante entre nicho ecológico y construcción de personas?",
+      "opciones": [
+        "El nicho ecológico es el marco de condiciones que hace posible una categoría; la construcción de personas es el proceso por el que esa categoría contribuye a formar maneras de ser y comprenderse.",
+        "El nicho ecológico describe cambios individuales; la construcción de personas describe exclusivamente instituciones.",
+        "Ambos términos son sinónimos y pueden intercambiarse en cualquier consigna.",
+        "La construcción de personas es una teoría de Foucault y el nicho ecológico una teoría de Popper."
+      ],
+      "correcta": "A",
+      "explicacion": "Una manera sencilla de distinguirlos: nicho = condiciones o marco; construcción de personas = formación histórica de tipos humanos y sus experiencias. Uno ayuda a explicar dónde y cómo pudo surgir la categoría; el otro, qué hace posible en las personas."
+    },
+    {
+      "pregunta": "Si una pregunta se concentra en «qué efectos tiene una clasificación sobre la identidad, la experiencia y la conducta de los clasificados», ¿qué concepto busca?",
+      "opciones": [
+        "Nicho ecológico.",
+        "Formación discursiva.",
+        "Ontología histórica.",
+        "Construcción de personas."
+      ],
+      "correcta": "D",
+      "explicacion": "La pista está en los efectos sobre los sujetos. La construcción de personas aborda cómo una clasificación contribuye a constituir formas de identidad, experiencia y acción."
+    },
+    {
+      "pregunta": "¿Cómo se relacionan la construcción de personas y el efecto bucle?",
+      "opciones": [
+        "Son exactamente el mismo término y no existe ninguna diferencia entre ellos.",
+        "La construcción de personas se refiere al proceso de formación de tipos humanos; el efecto bucle destaca la retroalimentación por la que las personas responden a la clasificación y esta puede modificarse.",
+        "El efecto bucle describe el ambiente previo y la construcción de personas describe las reglas gramaticales.",
+        "La construcción de personas ocurre solo en ciencias naturales y el efecto bucle solo en astronomía."
+      ],
+      "correcta": "B",
+      "explicacion": "Están relacionados, pero no son idénticos. «Hacer personas» pone el foco en la formación histórica de tipos humanos; el efecto bucle señala el circuito de respuestas y revisiones que puede darse entre clasificados e instituciones."
+    },
+    {
+      "pregunta": "¿Qué estudia la ontología histórica en el proyecto de Hacking?",
+      "opciones": [
+        "La evolución biológica de los seres humanos como especie.",
+        "La historia de todos los nombres propios de las personas.",
+        "Cómo llegan a existir históricamente determinadas posibilidades de pensar, actuar, ser reconocido y convertirse en un tipo de persona u objeto de conocimiento.",
+        "La clasificación de los discursos según su corrección gramatical."
+      ],
+      "correcta": "C",
+      "explicacion": "La ontología histórica pregunta cómo ciertas formas de ser, pensar y actuar llegan a ser posibles en momentos históricos concretos. No es una cronología de descubrimientos ni una teoría biológica."
+    },
+    {
+      "pregunta": "Una consigna pregunta por el proyecto filosófico amplio que investiga cómo ciertas clases de personas y objetos de conocimiento llegan a existir históricamente. ¿Qué concepto corresponde?",
+      "opciones": [
+        "Ontología histórica.",
+        "Efecto bucle.",
+        "Nicho ecológico.",
+        "Formación discursiva."
+      ],
+      "correcta": "A",
+      "explicacion": "La ontología histórica es el marco general de investigación sobre la constitución histórica de posibilidades de existencia y de conocimiento."
+    },
+    {
+      "pregunta": "¿Por qué la ontología histórica puede entenderse como un «paraguas» teórico más amplio que el nicho ecológico?",
+      "opciones": [
+        "Porque la ontología histórica es un vector del nicho ecológico.",
+        "Porque ambos conceptos explican exclusivamente el lenguaje médico.",
+        "Porque el nicho ecológico estudia toda la historia del ser y la ontología histórica solo una institución.",
+        "Porque la ontología histórica es el proyecto amplio sobre cómo surgen históricamente ciertas posibilidades; el nicho ecológico es una herramienta para analizar las condiciones concretas de aparición de una categoría."
+      ],
+      "correcta": "D",
+      "explicacion": "La relación es de nivel y alcance: ontología histórica = proyecto general; nicho ecológico = análisis de las condiciones que hicieron posible una categoría particular."
+    },
+    {
+      "pregunta": "Decir que una categoría humana tiene una historia y podría no haber surgido en otra época significa que:",
+      "opciones": [
+        "La categoría es necesariamente falsa y no tiene efectos reales.",
+        "Su aparición es históricamente contingente: depende de condiciones determinadas y no es inevitable ni universal.",
+        "Las personas clasificadas no existían antes de que apareciera el nombre.",
+        "La categoría carece de toda relación con prácticas e instituciones."
+      ],
+      "correcta": "B",
+      "explicacion": "La contingencia histórica significa que algo pudo surgir bajo ciertas condiciones y no necesariamente en cualquier tiempo o lugar. Eso no vuelve ficticios sus efectos ni niega las experiencias de las personas."
+    },
+    {
+      "pregunta": "¿Qué pregunta representa mejor la mirada de la ontología histórica?",
+      "opciones": [
+        "¿Qué palabra aparece primero en el diccionario?",
+        "¿Qué individuo inventó una etiqueta y en qué fecha exacta?",
+        "¿Qué condiciones históricas hicieron posible que ciertas experiencias se entendieran y vivieran como un tipo específico de persona?",
+        "¿Qué clasificación es verdadera para todas las sociedades y épocas?"
+      ],
+      "correcta": "C",
+      "explicacion": "La ontología histórica no se limita a buscar el origen de una palabra. Investiga cómo se constituyeron históricamente nuevas posibilidades de experiencia, conocimiento y existencia."
+    },
+    {
+      "pregunta": "¿Cómo se vincula la ontología histórica con el estudio de las categorías humanas?",
+      "opciones": [
+        "Permite analizar cómo las categorías, prácticas e instituciones hacen aparecer históricamente determinadas formas de ser y de reconocerse.",
+        "Demuestra que todas las categorías existieron siempre de la misma manera.",
+        "Sostiene que los nombres no influyen en la vida de las personas.",
+        "Se limita a establecer qué clasificación tiene mayor aceptación estadística."
+      ],
+      "correcta": "A",
+      "explicacion": "La perspectiva histórica muestra que las formas de clasificar y las posibilidades de ser una determinada clase de persona no son necesariamente eternas: se constituyen en condiciones históricas concretas."
+    },
+    {
+      "pregunta": "¿Qué significa «formación discursiva» en el sentido tomado de Michel Foucault?",
+      "opciones": [
+        "El conjunto de sentimientos privados de las personas clasificadas.",
+        "El espacio geográfico donde se reúnen los investigadores.",
+        "El efecto que produce una clasificación en la identidad de un individuo.",
+        "El conjunto de reglas y regularidades que organiza qué puede decirse, cómo puede decirse y qué objetos pueden reconocerse como parte de un saber."
+      ],
+      "correcta": "D",
+      "explicacion": "Una formación discursiva no es simplemente un conjunto de palabras. Remite a reglas históricas que organizan los enunciados, los objetos de los que se habla y las posiciones desde las que se puede hablar con autoridad."
+    },
+    {
+      "pregunta": "En una época, la psiquiatría establece un vocabulario, criterios de diagnóstico, maneras legítimas de describir síntomas y procedimientos para hablar de ciertos pacientes. ¿Qué concepto ayuda a analizar esas reglas del saber?",
+      "opciones": [
+        "Construcción de personas.",
+        "Formación discursiva.",
+        "Nominalismo dinámico.",
+        "Efecto bucle."
+      ],
+      "correcta": "B",
+      "explicacion": "La formación discursiva se refiere a las reglas que organizan un campo de saber: qué puede enunciarse, qué se reconoce como objeto y qué cuenta como descripción válida."
+    },
+    {
+      "pregunta": "¿Por qué no conviene utilizar «formación discursiva» como sinónimo exacto de «nicho ecológico»?",
+      "opciones": [
+        "Porque la formación discursiva se ocupa de las reglas del saber y de lo decible, mientras que el nicho ecológico abarca un conjunto más amplio de condiciones históricas, culturales, institucionales y prácticas.",
+        "Porque la formación discursiva solo se aplica a las ciencias naturales y el nicho solo a la política.",
+        "Porque el nicho ecológico es una categoría lingüística y la formación discursiva es un efecto psicológico.",
+        "Porque Hacking rechaza cualquier relación entre discurso e instituciones."
+      ],
+      "correcta": "A",
+      "explicacion": "La formación discursiva ilumina la dimensión de las reglas del discurso y del saber. El nicho ecológico es más amplio: incluye también instituciones, valores culturales, formas de observación, prácticas y posibilidades de acción."
+    },
+    {
+      "pregunta": "Si la consigna pregunta por las reglas que determinan qué puede formularse como conocimiento verdadero dentro de la medicina o la psiquiatría en una época, ¿qué término es el más preciso?",
+      "opciones": [
+        "Ontología histórica.",
+        "Nicho ecológico.",
+        "Formación discursiva.",
+        "Construcción de personas."
+      ],
+      "correcta": "C",
+      "explicacion": "La pista es «reglas de lo que puede decirse como verdadero» dentro de un campo de saber. Eso remite a la formación discursiva. El nicho ecológico incluye esta dimensión, pero no se limita a ella."
+    },
+    {
+      "pregunta": "¿Qué relación puede establecerse entre formación discursiva y nicho ecológico?",
+      "opciones": [
+        "La formación discursiva reemplaza al nicho ecológico y vuelve innecesario analizar las instituciones.",
+        "El nicho ecológico es una parte de la formación discursiva y solo incluye palabras.",
+        "No existe ninguna relación entre ambos conceptos.",
+        "Las reglas del discurso pueden integrar las condiciones del nicho ecológico, pero este último también comprende factores no reducibles al lenguaje."
+      ],
+      "correcta": "D",
+      "explicacion": "Una formación discursiva puede ser una dimensión importante del nicho: organiza qué se puede conocer y decir. Pero el nicho también comprende prácticas, instituciones, valores culturales y otras condiciones históricas."
+    },
+    {
+      "pregunta": "Una pregunta menciona «el entramado de reglas del lenguaje técnico y del saber médico que permite describir un fenómeno de cierta manera». ¿Cuál es la mejor respuesta?",
+      "opciones": [
+        "Nominalismo dinámico.",
+        "Formación discursiva.",
+        "Construcción de personas.",
+        "Efecto bucle."
+      ],
+      "correcta": "B",
+      "explicacion": "La referencia a reglas del lenguaje técnico y del saber apunta a la formación discursiva. No debe confundirse con el efecto de esas clasificaciones sobre las personas ni con el marco histórico más amplio del nicho ecológico."
+    },
+    {
+      "pregunta": "Una categoría humana aparece en un momento histórico. Para explicarla, se estudian las reglas del discurso médico, las instituciones que la aplican, los valores culturales de la época y las respuestas de las personas clasificadas. ¿Qué opción ordena mejor los conceptos?",
+      "opciones": [
+        "Formación discursiva: todo el proceso; nicho: solo el lenguaje; efecto bucle: el origen de la categoría.",
+        "Construcción de personas: reglas del lenguaje; ontología histórica: una etiqueta clínica; nominalismo dinámico: una institución.",
+        "Formación discursiva: reglas del saber; nicho ecológico: conjunto de condiciones; construcción de personas: formación de tipos humanos; efecto bucle: retroalimentación; nominalismo dinámico: tesis general de interacción.",
+        "Nicho ecológico: efecto individual; formación discursiva: respuesta del sujeto; ontología histórica: vector de observabilidad."
+      ],
+      "correcta": "C",
+      "explicacion": "Esta es la distinción integradora: cada término enfoca un nivel diferente. Las reglas discursivas son una dimensión del contexto; el nicho reúne condiciones; la construcción de personas se centra en los sujetos; el efecto bucle describe la retroalimentación; y el nominalismo dinámico es la tesis general de interacción."
+    }
+  ]
+}
