@@ -20,7 +20,17 @@ const PREGUNTAS = [
  {q:'¿Qué ocurre en prometafase?',o:['Se duplica el ADN','Se forma la placa celular vegetal','Se fragmenta la envoltura nuclear y se capturan cromosomas con el huso','Se fusionan los dos núcleos'],c:2,e:'La fragmentación de la envoltura nuclear permite el acceso de los microtúbulos a los cromosomas.'},
  {q:'¿Qué activa directamente la separación de cromátidas hermanas?',o:['La escisión de cohesinas por separasa','La síntesis de ADN','La formación del nucléolo','La polimerización de actina solamente'],c:0,e:'El cambio visible fundamental es que las cromátidas hermanas dejan de formar un cromosoma duplicado y pasan a ser cromosomas hijos independientes.'},
  {q:'¿Qué distingue a mitosis de citocinesis?',o:['Son dos nombres para lo mismo','Mitosis divide el núcleo; citocinesis separa el citoplasma','Mitosis solo ocurre en plantas','Citocinesis duplica los cromosomas'],c:1,e:'La mitosis distribuye los cromosomas en núcleos hijos; la citocinesis separa físicamente el citoplasma.'},
- {q:'¿Cómo se forma el surco de segmentación en una célula animal?',o:['Por una placa de celulosa','Por contracción de un anillo de actina y miosina II','Por separación de centrómeros','Por desaparición de los ribosomas'],c:1,e:'El surco aparece en el plano medio y se profundiza hasta dividir el citoplasma.'}
+ {q:'¿Cómo se forma el surco de segmentación en una célula animal?',o:['Por una placa de celulosa','Por contracción de un anillo de actina y miosina II','Por separación de centrómeros','Por desaparición de los ribosomas'],c:1,e:'El surco aparece en el plano medio y se profundiza hasta dividir el citoplasma.'},
+ {q:'¿Cuántos cromosomas duplicados se observan en una célula 2n = 4 durante metafase?',o:['Dos','Cuatro','Ocho','Dieciséis'],c:1,e:'La duplicación del ADN no duplica el número de cromosomas: siguen siendo cuatro, cada uno con dos cromátidas.'},
+ {q:'¿Qué ocurre con el número de cromosomas cuando se separan las cromátidas en anafase?',o:['Cada cromátida pasa a contarse como un cromosoma hijo','El número se reduce a la mitad','Los cromosomas desaparecen','Se forman pares homólogos nuevos'],c:0,e:'Al separarse las cromátidas hermanas, cada una constituye un cromosoma independiente.'},
+ {q:'¿Qué es el cinetocoro?',o:['Una región de síntesis de ADN','Un complejo proteico del centrómero donde se unen microtúbulos','Una enzima del nucléolo','Una parte del anillo contráctil'],c:1,e:'El cinetocoro se ensambla sobre la región centromérica y permite la unión con microtúbulos del huso.'},
+ {q:'¿Qué función cumple el punto de control del huso?',o:['Acelerar la replicación','Verificar la correcta unión de los cromosomas antes de anafase','Formar la placa celular','Duplicar los centríolos durante anafase'],c:1,e:'El punto de control evita iniciar la anafase si hay cinetocoros sin unión o con unión incorrecta.'},
+ {q:'¿Qué sucede con la envoltura nuclear durante la prometafase?',o:['Se duplica','Se desorganiza y permite el acceso del huso','Se convierte en cromatina','Forma el surco de segmentación'],c:1,e:'La desorganización de la envoltura nuclear permite que los microtúbulos del huso contacten los cromosomas.'},
+ {q:'¿Qué proteína motora participa junto con actina en el anillo contráctil animal?',o:['Miosina II','Cohesina','Separasa','Tubulina alfa exclusivamente'],c:0,e:'La interacción actina-miosina II contrae el anillo y profundiza el surco de segmentación.'},
+ {q:'En una célula 2n = 4, ¿cuántos cromosomas recibe cada núcleo hijo al terminar la mitosis?',o:['Dos','Cuatro','Ocho','Depende del tamaño celular'],c:1,e:'La mitosis conserva la dotación cromosómica: cada núcleo hijo recibe cuatro cromosomas.'},
+ {q:'¿Cuál es la diferencia principal entre placa metafásica y placa celular?',o:['Son sinónimos','La primera es el plano de alineación cromosómica; la segunda se forma en citocinesis vegetal','Ambas son estructuras permanentes','La placa metafásica separa el citoplasma'],c:1,e:'La placa metafásica es un plano imaginario de alineación; la placa celular es una estructura nueva que divide la célula vegetal.'},
+ {q:'¿Qué estructura organiza el sitio de formación de la placa celular vegetal?',o:['El fragmoplasto','El centrosoma con centríolos','El surco de segmentación','El cinetocoro'],c:0,e:'El fragmoplasto organiza microtúbulos y guía vesículas que se fusionan para formar la placa celular.'},
+ {q:'¿En qué etapa se reconstruyen las envolturas nucleares?',o:['Profase temprana','Metafase','Anafase temprana','Telofase'],c:3,e:'Durante telofase se reconstituyen las envolturas nucleares alrededor de cada conjunto cromosómico.'}
 ];
 
 const css = `
@@ -51,66 +61,68 @@ function cellSvg(step){
  const earlyA=stage==='anafase-temprana', lateA=stage==='anafase-tardia';
  const telo=stage.startsWith('telofase'), cyto=stage.startsWith('citocinesis'), final=stage==='citocinesis-final';
  const colors=['#a99aff','#c7aaff','#63e8c3','#46c9a9'];
- const names=['Homólogo 1 · par A','Homólogo 2 · par A','Homólogo 1 · par B','Homólogo 2 · par B'];
- const chrom=(x,y,scale=1,angle=0,color='#a99aff',single=false,movement='')=>'<g class="ml-chromosome '+movement+'" transform="translate('+x+' '+y+') rotate('+angle+') scale('+scale+')"><path d="'+(single?'M-5 -19 L5 19':'M-12 -21 L0 0 L-12 21 M12 -21 L0 0 L12 21')+'" stroke="'+color+'" stroke-width="7" stroke-linecap="round" fill="none"/><circle cx="0" cy="0" r="5.2" fill="#ffcf78" stroke="#fff0c2" stroke-width="1.4"/></g>';
+ const chrom=(x,y,scale=1,angle=0,color='#a99aff',single=false)=>'<g class="ml-chromosome" transform="translate('+x+' '+y+') rotate('+angle+') scale('+scale+')"><path d="'+(single?'M-5 -19 L5 19':'M-12 -21 L0 0 L-12 21 M12 -21 L0 0 L12 21')+'" stroke="'+color+'" stroke-width="7" stroke-linecap="round" fill="none"/><circle cx="0" cy="0" r="5.2" fill="#ffcf78" stroke="#fff0c2" stroke-width="1.4"/></g>';
  const cent=(x,y,angle)=>'<g transform="translate('+x+' '+y+') rotate('+angle+')"><rect x="-11" y="-4" width="22" height="8" rx="4" fill="#ffcf78" stroke="#ffe4a7"/><rect x="-4" y="-11" width="8" height="22" rx="4" fill="#ffcf78" stroke="#ffe4a7"/></g>';
- let cell='', nuclei='', fibers='', chromosomes='', centrosomes='', labels='',mid='';
+ let cell='', nuclei='', fibers='', chromosomes='', centrosomes='', labels='', mid='';
+ const addDaughterSet=(cx,cy,scale=.38)=>{
+   // Cada núcleo recibe exactamente cuatro cromosomas hijos: uno de cada tipo.
+   for(let i=0;i<4;i++){
+     const x=cx+((i%2)*17-8), y=cy+(i<2?-13:13);
+     chromosomes+=chrom(x,y,scale,(i%2?12:-12),colors[i],true);
+   }
+ };
  if(final){
    cell='<circle cx="105" cy="180" r="76" fill="#10234a" fill-opacity=".8" stroke="#5475c6" stroke-width="3"/><circle cx="255" cy="180" r="76" fill="#10234a" fill-opacity=".8" stroke="#5475c6" stroke-width="3"/>';
-   // Cada célula hija conserva un centrosoma con su par de centríolos.
-   centrosomes=cent(67,180,-28)+cent(285,180,35);
    nuclei='<circle cx="105" cy="180" r="43" fill="#1b2853" stroke="#a99aff" stroke-width="2.2"/><circle cx="255" cy="180" r="43" fill="#1b2853" stroke="#a99aff" stroke-width="2.2"/>';
-   for(let i=0;i<4;i++){const y=163+(i%2)*25;chromosomes+=chrom(91+(i%2)*12,y,.32,-12,colors[i],true)+chrom(241+(i%2)*12,y,.32,-12,colors[i],true);}
+   centrosomes=cent(67,180,-28)+cent(293,180,35);
+   addDaughterSet(105,180,.36); addDaughterSet(255,180,.36);
    labels='<text x="105" y="270" fill="#b9cafa" font-size="10" text-anchor="middle">HIJA 1 · 2n = 4</text><text x="255" y="270" fill="#b9cafa" font-size="10" text-anchor="middle">HIJA 2 · 2n = 4</text>';
  } else {
-   cell=cyto
-    ?'<path d="M180 29 C263 29 326 91 326 180 C326 269 263 331 180 331 C97 331 34 269 34 180 C34 91 97 29 180 29Z" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/><path d="M34 180 Q66 180 91 180 M269 180 Q294 180 326 180" stroke="#ff83b5" stroke-width="3" stroke-dasharray="4 5"/>'
-    :'<circle cx="180" cy="180" r="151" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/>';
-   const leftPole=[75,180],rightPole=[285,180];
-   // En profase los centrosomas se separan; desde metafase se ubican en polos opuestos.
+   if(cyto){
+     // Surco de segmentación progresivo: la constricción aparece en la zona ecuatorial.
+     const pinch=final?38:(stage==='citocinesis-inicio'?12:25);
+     cell='<path d="M180 29 C263 29 326 91 326 180 C326 269 263 331 180 331 C97 331 34 269 34 180 C34 91 97 29 180 29Z" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/><path d="M34 180 Q'+(180-pinch)+' 180 180 180 Q'+(180+pinch)+' 180 326 180" stroke="#ff83b5" stroke-width="3" fill="none" opacity=".9"/>';
+   } else {
+     cell='<circle cx="180" cy="180" r="151" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/>';
+   }
    centrosomes=(early?cent(143,180,-28)+cent(217,180,35):cent(75,180,-28)+cent(285,180,35));
    if(early||promet){
      nuclei='<circle cx="180" cy="180" r="70" fill="#1a2854" fill-opacity=".4" stroke="#a99aff" stroke-width="2" stroke-dasharray="'+(early?'0':'5 6')+'"/>';
-     // Four duplicated chromosomes: two homologous pairs, each homologue has two sister chromatids.
      const pts=[[150,150],[210,150],[150,210],[210,210]];
      pts.forEach((p,i)=>{chromosomes+=chrom(p[0],p[1],.65,(i%2?12:-12),colors[i]);});
-     labels='<text x="180" y="270" fill="#c5d2f4" font-size="10" text-anchor="middle">2 PARES HOMÓLOGOS · 4 CROMOSOMAS DUPLICADOS</text>';
+     labels='<text x="180" y="270" fill="#c5d2f4" font-size="10" text-anchor="middle">4 CROMOSOMAS DUPLICADOS · 2 PARES</text>';
    } else if(meta){
      mid='<line x1="180" y1="48" x2="180" y2="312" stroke="#ffcf78" stroke-width="1.5" stroke-dasharray="4 5"/>';
-     // Four X-shaped duplicated chromosomes align on the equatorial plate. Sister kinetochores face opposite poles.
-     const ys=[112,150,210,248];
+     const ys=[105,150,210,255];
      for(let i=0;i<4;i++){
-       const y=ys[i], col=colors[i], x=180;
-       chromosomes+=chrom(x,y,.68,0,col);
-       fibers+='<g stroke="#54cfe6" stroke-width="1.5" fill="none" opacity=".92"><path d="M75 180 Q'+(112)+' '+y+' '+(x-7)+' '+y+'"/><path d="M285 180 Q248 '+y+' '+(x+7)+' '+y+'"/></g>';
-       // Explicit kinetochore markers on each sister chromatid, attached to opposite spindle poles.
-       labels+='<circle cx="'+(x-7)+'" cy="'+y+'" r="3.4" fill="#fff2be" stroke="#ffcf78" stroke-width="1.5"/><circle cx="'+(x+7)+'" cy="'+y+'" r="3.4" fill="#fff2be" stroke="#ffcf78" stroke-width="1.5"/>';
+       const y=ys[i], col=colors[i];
+       chromosomes+=chrom(180,y,.68,0,col);
+       // Cada cromátida hermana se orienta hacia un polo opuesto.
+       fibers+='<g stroke="#54cfe6" stroke-width="1.5" fill="none" opacity=".92"><path d="M75 180 Q112 '+y+' 172 '+y+'"/><path d="M285 180 Q248 '+y+' 188 '+y+'"/></g>';
+       labels+='<circle cx="172" cy="'+y+'" r="3.5" fill="#fff2be" stroke="#ffcf78" stroke-width="1.3"/><circle cx="188" cy="'+y+'" r="3.5" fill="#fff2be" stroke="#ffcf78" stroke-width="1.3"/>';
      }
-     labels+='<text x="180" y="333" fill="#ffcf78" font-size="10" text-anchor="middle">PLACA ECUATORIAL · 2 PARES HOMÓLOGOS</text>';
+     labels+='<text x="180" y="333" fill="#ffcf78" font-size="10" text-anchor="middle">PLACA ECUATORIAL · 4 CROMOSOMAS</text>';
    } else if(earlyA||lateA){
-     // The sisters have split at their centromeres. One copy of each chromosome moves to each pole.
+     // Se separan las cromátidas hermanas: cada polo recibe cuatro cromosomas hijos.
+     const leftYs=[125,155,205,235], rightYs=[125,155,205,235];
      for(let i=0;i<4;i++){
-       const y=earlyA?112+i*35:105+i*39;
-       const lx=earlyA?140-(i%2)*6:102+(i%2)*13;
-       const rx=earlyA?220+(i%2)*6:258-(i%2)*13;
-       chromosomes+=chrom(lx,y,.52,-55,colors[i],true,'ml-travel-left')+chrom(rx,y,.52,55,colors[i],true,'ml-travel-right');
-       // kinetochore fibers follow the separated daughter chromosomes
-       fibers+='<g stroke="#54cfe6" stroke-width="1.35" fill="none" opacity=".78"><path d="M75 180 Q'+(95)+' '+y+' '+lx+' '+y+'"/><path d="M285 180 Q265 '+y+' '+rx+' '+y+'"/></g>';
+       const lx=earlyA?142:105, rx=earlyA?218:255;
+       const yL=leftYs[i], yR=rightYs[i];
+       chromosomes+=chrom(lx+(i%2)*-5,yL,.5,-55,colors[i],true)+chrom(rx+(i%2)*5,yR,.5,55,colors[i],true);
+       fibers+='<g stroke="#54cfe6" stroke-width="1.35" fill="none" opacity=".78"><path d="M75 180 Q100 '+yL+' '+(lx-5)+' '+yL+'"/><path d="M285 180 Q260 '+yR+' '+(rx+5)+' '+yR+'"/></g>';
      }
-     labels='<text x="180" y="333" fill="#ffcf78" font-size="10" text-anchor="middle">'+(earlyA?'CROMÁTIDAS HERMANAS SE SEPARAN':'CROMOSOMAS HIJOS EN POLOS OPUESTOS')+'</text>';
-   } else {
-     // En telofase, cada polo queda junto al núcleo hijo que se está reconstruyendo.
-     centrosomes=cent(69,180,-28)+cent(291,180,35);
+     labels='<text x="180" y="333" fill="#ffcf78" font-size="10" text-anchor="middle">4 CROMOSOMAS HIJOS HACIA CADA POLO</text>';
+   } else if(telo||cyto){
      nuclei='<circle cx="112" cy="180" r="50" fill="#1b2853" fill-opacity=".62" stroke="#a99aff" stroke-width="2.2"/><circle cx="248" cy="180" r="50" fill="#1b2853" fill-opacity=".62" stroke="#a99aff" stroke-width="2.2"/>';
-     for(let i=0;i<4;i++){
-       const y=154+(i%2)*27;
-       chromosomes+=chrom(104+(i%2)*14,y,.34,-10,colors[i],true)+chrom(240+(i%2)*14,y,.34,-10,colors[i],true);
-     }
+     addDaughterSet(112,180,.34); addDaughterSet(248,180,.34);
+     centrosomes=cent(69,180,-28)+cent(291,180,35);
      labels='<text x="112" y="245" fill="#c5d2f4" font-size="9" text-anchor="middle">2n = 4</text><text x="248" y="245" fill="#c5d2f4" font-size="9" text-anchor="middle">2n = 4</text>';
    }
  }
- const kinLabel=meta?'<text x="180" y="65" fill="#fff0c2" font-size="10" text-anchor="middle">Cinetocoros unidos a polos opuestos</text>':'';
- const parts='<g class="ml-hotspot" tabindex="0" role="button" data-part="cromosomas" aria-label="Identificar cromosomas"><circle cx="180" cy="150" r="25" fill="transparent"/><title>Cromosomas y cromátidas</title></g><g class="ml-hotspot" tabindex="0" role="button" data-part="centrosomas" aria-label="Identificar centrosomas y centríolos"><circle cx="75" cy="180" r="19" fill="transparent"/><circle cx="285" cy="180" r="19" fill="transparent"/><title>Centrosomas y pares de centríolos</title></g><g class="ml-hotspot" tabindex="0" role="button" data-part="huso" aria-label="Identificar huso mitótico"><circle cx="112" cy="180" r="17" fill="transparent"/><circle cx="248" cy="180" r="17" fill="transparent"/><title>Microtúbulos del huso mitótico</title></g><g class="ml-hotspot" tabindex="0" role="button" data-part="membrana" aria-label="Identificar membrana celular"><circle cx="180" cy="32" r="12" fill="transparent"/><title>Membrana celular</title></g><g class="ml-hotspot" tabindex="0" role="button" data-part="cinetocoro" aria-label="Identificar cinetocoro"><circle cx="173" cy="150" r="8" fill="transparent"/><title>Cinetocoro en la región del centrómero</title></g><g class="ml-hotspot" tabindex="0" role="button" data-part="nucleo" aria-label="Identificar envoltura nuclear"><circle cx="180" cy="220" r="23" fill="transparent"/><title>Envoltura nuclear o región del núcleo</title></g><g class="ml-annotations"><path d="M180 150 L228 105 L279 105"/><text x="232" y="98">Cromosoma duplicado</text><path d="M75 180 L46 145 L12 145"/><text x="12" y="137">Centrosoma</text><path d="M112 180 L93 230 L20 230"/><text x="20" y="222">Huso mitótico</text><path d="M180 32 L220 48 L285 48"/><text x="225" y="41">Membrana celular</text><path d="M173 150 L145 120 L95 120"/><text x="95" y="112">Cinetocoro</text><path d="M180 220 L218 257 L280 257"/><text x="220" y="250">Envoltura nuclear</text></g>'; return '<svg viewBox="0 0 360 360" role="img" aria-label="'+s.nombre+': dos pares homólogos identificados por color, cromátidas hermanas, cinetocoros y huso mitótico"><defs><radialGradient id="mlcyto"><stop stop-color="#1c376c"/><stop offset="1" stop-color="#0a1730"/></radialGradient></defs>'+'<g class="ml-cell-boundary">'+cell+'</g><g class="ml-spindle-lines">'+fibers+'</g><g class="ml-nuclear-envelope">'+nuclei+'</g><g>'+chromosomes+'</g><g class="ml-centrosomes">'+centrosomes+'</g>'+mid+labels+kinLabel+parts+'</svg>';
+ const kinLabel=meta?'<text x="180" y="65" fill="#fff0c2" font-size="10" text-anchor="middle">Cinetocoros orientados a polos opuestos</text>':'';
+ // Se retiran hotspots fijos que antes apuntaban a coordenadas incorrectas. La identificación se hace con controles etiquetados y estables.
+ const parts='<g class="ml-annotations"><path d="M180 150 L228 105 L279 105"/><text x="232" y="98">Cromosoma duplicado</text><path d="M75 180 L46 145 L12 145"/><text x="12" y="137">Centrosoma</text><path d="M112 180 L93 230 L20 230"/><text x="20" y="222">Huso mitótico</text><path d="M180 32 L220 48 L285 48"/><text x="225" y="41">Membrana celular</text></g>';
+ return '<svg viewBox="0 0 360 360" role="img" aria-label="'+s.nombre+': modelo de célula animal con cuatro cromosomas, cromátidas hermanas, huso mitótico y núcleos hijos"><g class="ml-cell-boundary">'+cell+'</g><g class="ml-spindle-lines">'+fibers+'</g><g class="ml-nuclear-envelope">'+nuclei+'</g><g>'+chromosomes+'</g><g class="ml-centrosomes">'+centrosomes+'</g>'+mid+labels+kinLabel+parts+'</svg>';
 }
 export function abrirMitosis({app,volver}){
  const old=document.getElementById('mitlab-css');if(old)old.remove();const style=document.createElement('style');style.id='mitlab-css';style.textContent=css;document.head.appendChild(style);
@@ -123,7 +135,7 @@ export function abrirMitosis({app,volver}){
   if(tab==='recorrido'){
    const s=FASES[step],pct=Math.round((step+1)/FASES.length*100);
    content.innerHTML='<section class="ml-card"><div class="ml-head"><div><h2>Recorrido paso a paso</h2><p>Seleccioná una etapa o usá el avance guiado. Las etapas tempranas y tardías se muestran por separado.</p></div><span class="ml-chip">'+String(step+1).padStart(2,'0')+' / '+FASES.length+'</span></div><div class="ml-phases">'+FASES.map((f,i)=>'<button data-step="'+i+'" class="'+(i===step?'active':'')+'">'+f.grupo+'<small>'+(['Temprana','Tardía','Alineación','Separación','Migración','Temprana','Tardía','Inicio','Final'][i])+'</small></button>').join('')+'</div><div class="ml-progress"><span style="width:'+pct+'%"></span></div><div class="ml-layout"><div><div class="ml-scene">'+cellSvg(step)+'</div><div class="ml-legend"><span><i style="--dot:#5475c6"></i>Membrana celular</span><span><i style="--dot:#ffcf78"></i>Centrosomas / centríolos</span><span><i style="--dot:#54cfe6"></i>Microtúbulos del huso</span><span><i style="--dot:#a99aff"></i>Cromosomas</span><span><i style="--dot:#ff83b5"></i>Surco de segmentación</span></div><div class="ml-controls ml-scene-controls"><button type="button" class="ml-annotation-toggle" id="ml-annotations">Mostrar flechas y nombres</button><span class="ml-muted">También podés tocar las estructuras del dibujo.</span></div><div class="ml-identify"><button data-part-info="cromosomas">Cromátidas</button><button data-part-info="centrosomas">Centríolos</button><button data-part-info="huso">Huso mitótico</button><button data-part-info="cinetocoro">Cinetocoro</button><button data-part-info="nucleo">Envoltura nuclear</button><button data-part-info="membrana">Membrana</button></div><div class="ml-part-info" id="ml-part-info" aria-live="polite">Tocá un elemento del dibujo o elegí una estructura para identificarla.</div><div class="ml-stats"><div class="ml-stat"><span>Fase principal</span><b>'+s.grupo+'</b></div><div class="ml-stat"><span>Evento</span><b>'+s.evento+'</b></div><div class="ml-stat"><span>Etapa</span><b>'+String(step+1).padStart(2,'0')+' / '+FASES.length+'</b></div></div><div class="ml-controls ml-scene-controls"><div class="ml-controlgroup"><button id="ml-prev" '+(step===0?'disabled':'')+'>← Anterior</button><button class="ml-primary" id="ml-next">'+(step===FASES.length-1?'Volver al inicio ↺':'Siguiente etapa →')+'</button></div><label class="ml-autoplay"><input id="ml-play" type="checkbox" '+(playing?'checked':'')+'> Reproducción automática</label></div></div><div class="ml-readout"><div class="ml-sub">'+s.sub+'</div><div class="ml-phase-title">'+s.nombre+'</div><p>'+s.texto+'</p><div class="ml-key"><b>Idea clave</b><br>'+s.clave+'</div></div></div></section><div class="ml-detail-grid"><article class="ml-detail"><b>Qué observar</b><p>'+s.evento+'. Seguí la posición de los cromosomas, la envoltura nuclear y el huso a medida que avanza el proceso.</p></article><article class="ml-detail"><b>Qué ocurre con el ADN</b><p>El ADN se duplicó previamente durante la fase S de la interfase. La mitosis distribuye ese material; no es una etapa de replicación.</p></article><article class="ml-detail"><b>Control de precisión</b><p>El control del huso ayuda a evitar la separación prematura cuando los cromosomas no están correctamente unidos a polos opuestos.</p></article></div>';
-   const partInfo={cromosomas:['Cromosoma duplicado y cromátidas hermanas','Antes de la anafase, cada cromosoma duplicado tiene dos cromátidas hermanas unidas en la región del centrómero. Al separarse, cada cromátida pasa a ser un cromosoma hijo.'],centrosomas:['Centrosomas y pares de centríolos','En esta representación de célula animal, los centrosomas organizan el huso mitótico. Cada centrosoma contiene un par de centríolos; se separan hacia polos opuestos.'],huso:['Huso mitótico','Está formado por microtúbulos. Los microtúbulos del cinetocoro se unen a los cromosomas; otros microtúbulos se solapan y contribuyen a separar los polos.'],cinetocoro:['Cinetocoro','Es un complejo proteico ensamblado en la región del centrómero. Allí se unen los microtúbulos del huso que participan en el movimiento y la segregación de los cromosomas.'],nucleo:['Envoltura nuclear','Rodea el núcleo durante la interfase y la profase temprana. Se desorganiza al avanzar la división y se reconstruye alrededor de cada conjunto cromosómico en telofase.'],membrana:['Membrana celular','Delimita la célula. En la citocinesis animal se estrecha en la zona media y forma el surco de segmentación.']};const info=root.querySelector('#ml-part-info');const showPart=id=>{const d=partInfo[id];if(d&&info)info.innerHTML='<b>'+d[0]+':</b> '+d[1]};root.querySelectorAll('[data-part-info]').forEach(b=>b.onclick=()=>showPart(b.dataset.partInfo));root.querySelectorAll('.ml-hotspot').forEach(h=>{const act=()=>showPart(h.dataset.part);h.addEventListener('click',act);h.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();act()}})});const ann=root.querySelector('#ml-annotations');if(ann)ann.onclick=()=>{const scene=root.querySelector('.ml-scene');scene.classList.toggle('ml-show-annotations');ann.textContent=scene.classList.contains('ml-show-annotations')?'Ocultar flechas y nombres':'Mostrar flechas y nombres'};root.querySelectorAll('[data-step]').forEach(b=>b.onclick=()=>{stop();step=Number(b.dataset.step);render()});
+   const partInfo={cromosomas:['Cromosomas y cromátidas hermanas','El modelo representa dos pares homólogos (2n = 4). Antes de anafase hay cuatro cromosomas duplicados, cada uno formado por dos cromátidas hermanas. Después de separarse, cada polo recibe cuatro cromosomas hijos.'],centrosomas:['Centrosomas y pares de centríolos','En esta representación de célula animal, los centrosomas organizan el huso mitótico. Cada centrosoma contiene un par de centríolos; se separan hacia polos opuestos.'],huso:['Huso mitótico','Está formado por microtúbulos. Los microtúbulos del cinetocoro se unen a los cromosomas; otros microtúbulos se solapan y contribuyen a separar los polos.'],cinetocoro:['Cinetocoro','Es un complejo proteico ensamblado en la región del centrómero. Allí se unen los microtúbulos del huso que participan en el movimiento y la segregación de los cromosomas.'],nucleo:['Envoltura nuclear','Rodea el núcleo durante la interfase y la profase temprana. Se desorganiza al avanzar la división y se reconstruye alrededor de cada conjunto cromosómico en telofase.'],membrana:['Membrana celular','Delimita la célula. En la citocinesis animal se estrecha en la zona media y forma el surco de segmentación.']};const info=root.querySelector('#ml-part-info');const showPart=id=>{const d=partInfo[id];if(d&&info)info.innerHTML='<b>'+d[0]+':</b> '+d[1]};root.querySelectorAll('[data-part-info]').forEach(b=>b.onclick=()=>showPart(b.dataset.partInfo));const ann=root.querySelector('#ml-annotations');if(ann)ann.onclick=()=>{const scene=root.querySelector('.ml-scene');scene.classList.toggle('ml-show-annotations');ann.textContent=scene.classList.contains('ml-show-annotations')?'Ocultar flechas y nombres':'Mostrar flechas y nombres'};root.querySelectorAll('[data-step]').forEach(b=>b.onclick=()=>{stop();step=Number(b.dataset.step);render()});
    root.querySelector('#ml-prev').onclick=()=>{stop();step=Math.max(0,step-1);render()};
    root.querySelector('#ml-next').onclick=()=>{stop();step=step===FASES.length-1?0:step+1;render()};
    root.querySelector('#ml-play').onchange=e=>{stop();if(e.target.checked){playing=true;timer=setInterval(()=>{step=(step+1)%FASES.length;render();},2600)}};
