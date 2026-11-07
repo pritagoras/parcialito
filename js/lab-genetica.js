@@ -620,6 +620,64 @@ if (Array.isArray(PREGUNTAS[PREGUNTAS.length - 1])) {
 
 const TEMAS_Q = [['repaso', 'Quiz · Clase de repaso'], ['todas', 'Todo el laboratorio'], ['mendel', 'Mendel'], ['dom', 'Dominancia y codominancia'], ['abo', 'Grupos sanguíneos'], ['sexo', 'Daltonismo y hemofilia']];
 
+// Incorpora, sin reemplazar el banco local, las preguntas de herencia genética
+// de los JSON del segundo parcial de Biología. Se cargan una sola vez por sesión.
+let cargaSegundoParcialGenetica = null;
+function cargarSegundoParcialGenetica() {
+  if (cargaSegundoParcialGenetica) return cargaSegundoParcialGenetica;
+  cargaSegundoParcialGenetica = (async () => {
+    const rutas = Array.from({ length: 13 }, (_, i) =>
+      new URL(`../segundo-parcial/${i + 1}.json`, import.meta.url)
+    );
+    const archivos = await Promise.all(rutas.map(async url => {
+      try {
+        const respuesta = await fetch(url);
+        if (!respuesta.ok) return null;
+        return await respuesta.json();
+      } catch (error) {
+        console.warn('[LAB Genética] No se pudo leer un JSON del segundo parcial:', url.href, error);
+        return null;
+      }
+    }));
+
+    const normalizar = texto => String(texto || '')
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase().replace(/[^a-z0-9]+/g, '');
+    const esGenetica = item => {
+      const texto = `${item?.pregunta || ''} ${item?.explicacion || ''}`;
+      return /mendel|alelo|genotipo|fenotipo|homocig|heterocig|dominancia|dominante|recesiv|codominan|herencia|hemofilia|daltonismo|grupo sanguineo|sanguineo|ligad[oa]s? al cromosoma x|cruzamiento de prueba|retrocruza|segregacion independiente|genes ligados|ligamiento|hardy.?weinberg|genetica de poblaciones|flujo genico|deriva genica|frecuencia alelica|cuello de botella|efecto fundador/i.test(texto);
+    };
+
+    const existentes = new Set(PREGUNTAS.map(p => normalizar(p.q)));
+    let agregadas = 0;
+    for (const archivo of archivos) {
+      for (const item of (archivo?.preguntas || [])) {
+        const pregunta = String(item?.pregunta || '').trim();
+        const opciones = Array.isArray(item?.opciones) ? item.opciones.map(x => String(x ?? '')) : [];
+        const correcta = 'ABCD'.indexOf(String(item?.correcta || '').trim().toUpperCase());
+        const clave = normalizar(pregunta);
+        if (!pregunta || !esGenetica(item) || opciones.length !== 4 || correcta < 0 || existentes.has(clave)) continue;
+        PREGUNTAS.push({
+          t: 'repaso',
+          q: pregunta,
+          o: opciones,
+          ok: correcta,
+          exp: String(item.explicacion || 'Revisá cómo se relacionan los alelos, los genotipos y los fenotipos en este caso.')
+        });
+        existentes.add(clave);
+        agregadas++;
+      }
+    }
+    return agregadas;
+  })().catch(error => {
+    console.warn('[LAB Genética] No se pudo incorporar el banco del segundo parcial:', error);
+    cargaSegundoParcialGenetica = null;
+    return 0;
+  });
+  return cargaSegundoParcialGenetica;
+}
+
+
 /* ------------------------------------------------------------------ */
 /* CÁLCULO                                                              */
 /* ------------------------------------------------------------------ */
@@ -1187,7 +1245,8 @@ export function abrirLabGenetica({ app, volver }) {
 
   /* ---------- Preguntas ---------- */
   function mezclar(a) { const r = [...a]; for (let i = r.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; } return r; }
-  function iniciarQuiz(filtro) {
+  async function iniciarQuiz(filtro) {
+    await cargarSegundoParcialGenetica();
     const base = PREGUNTAS.filter(p => filtro === 'todas' || p.t === filtro);
     S.q = { fase: 'pregunta', filtro, i: 0, puntos: 0, resp: false, cola: mezclar(base).map(p => ({ q: p.q, exp: p.exp, boceto: p.t === 'mendel', borrador: {}, o: mezclar(p.o.map((t, i) => ({ t, ok: i === p.ok }))) })) };
   }
@@ -1222,8 +1281,11 @@ export function abrirLabGenetica({ app, volver }) {
   function secQuiz() {
     const Q = S.q;
     if (Q.fase === 'inicio') {
-      return `<div class="gen-q"><div class="gen-card"><h2>Quiz de genética</h2><p>${PREGUNTAS.length} preguntas de opción múltiple con corrección y explicación inmediata. El bloque <b>Clase de repaso</b> reúne 40 variantes nuevas inspiradas en los ejercicios de cierre del apunte:</p>
+      return `<div class="gen-q"><div class="gen-card"><h2>Quiz de genética</h2><p>${PREGUNTAS.length} preguntas de opción múltiple con corrección y explicación inmediata. El bloque <b>Clase de repaso</b> reúne las preguntas originales del laboratorio y las preguntas de herencia genética del segundo parcial de Biología:</p>
         <div class="gen-temas">${TEMAS_Q.map(([k, n]) => `<button type="button" data-act="q-start" data-v="${k}"><b>${n}</b><span>${PREGUNTAS.filter(p => k === 'todas' || p.t === k).length} preguntas</span></button>`).join('')}</div></div></div>`;
+    }
+    if (Q.fase === 'cargando') {
+      return `<div class="gen-q"><div class="gen-card"><h2>Preparando el quiz…</h2><p>Estamos incorporando las preguntas de genética del segundo parcial.</p></div></div>`;
     }
     if (Q.fase === 'fin') {
       const p = Math.round(Q.puntos / Q.cola.length * 100);
@@ -1299,7 +1361,12 @@ export function abrirLabGenetica({ app, volver }) {
       case 's-cond': S.s.cond = v; break;
       case 's-m': S.s.m = +v; break;
       case 's-p': S.s.p = +v; break;
-      case 'q-start': iniciarQuiz(v); break;
+      case 'q-start': {
+        S.q = { fase: 'cargando', cola: [], i: 0, puntos: 0, resp: false, filtro: v };
+        render(true);
+        iniciarQuiz(v).then(() => render(false));
+        return;
+      }
       case 'q-menu': S.q = { fase: 'inicio', cola: [], i: 0, puntos: 0, resp: false, filtro: 'todas' }; break;
       case 'q-ans': responder(+v); return;
       case 'q-boceto-clear': {
@@ -1315,4 +1382,7 @@ export function abrirLabGenetica({ app, volver }) {
   }
 
   render(true);
+  cargarSegundoParcialGenetica().then(() => {
+    if (S.sec === 'quiz' && S.q.fase === 'inicio') render(false);
+  });
 }
