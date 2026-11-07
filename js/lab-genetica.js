@@ -644,7 +644,8 @@ function cargarSegundoParcialGenetica() {
       .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
       .toLowerCase().replace(/[^a-z0-9]+/g, '');
     const esGenetica = item => {
-      const texto = `${item?.pregunta || ''} ${item?.explicacion || ''}`;
+      const texto = `${item?.pregunta || ''} ${item?.explicacion || ''}`
+        .normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
       return /mendel|alelo|genotipo|fenotipo|homocig|heterocig|dominancia|dominante|recesiv|codominan|herencia|hemofilia|daltonismo|grupo sanguineo|sanguineo|ligad[oa]s? al cromosoma x|cruzamiento de prueba|retrocruza|segregacion independiente|genes ligados|ligamiento|hardy.?weinberg|genetica de poblaciones|flujo genico|deriva genica|frecuencia alelica|cuello de botella|efecto fundador/i.test(texto);
     };
 
