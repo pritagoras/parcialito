@@ -3,17 +3,6 @@
   "tema": "Parciales de Biología (Integrador)",
   "preguntas": [
     {
-      "pregunta": "Para la síntesis de un polipéptido de 80 aminoácidos en una célula eucarionte, la molécula de ARNm maduro requerirá de una longitud de:",
-      "opciones": [
-        "más de 240 nucleótidos.",
-        "exactamente 240 nucleótidos.",
-        "82 nucleótidos.",
-        "80 nucleótidos."
-      ],
-      "correcta": "A",
-      "explicacion": "Cada aminoácido requiere un triplete (80 x 3 = 240 nucleótidos), a los que debe sumarse el codón de terminación y las regiones no traducidas (UTR) en ambos extremos."
-    },
-    {
       "pregunta": "Respecto a la producción de descendencia mediante el proceso meióтический en mamíferos, la meiosis femenina se caracteriza por poder producir:",
       "opciones": [
         "únicamente células somáticas diploides.",
@@ -34,17 +23,6 @@
       ],
       "correcta": "D",
       "explicacion": "Tanto en la anafase mitótica como en la anafase II de la meiosis se disocian las cohesinas centroméricas permitiendo la separación de cromátides hermanas."
-    },
-    {
-      "pregunta": "¿Cuál de los siguientes tipos celulares posee una mayor cantidad de moléculas de ADN en su núcleo celular?",
-      "opciones": [
-        "Una neurona en periodo G0.",
-        "Un ovocito II en metafase II.",
-        "Una espermátide haploide.",
-        "Una ovogonia en la fase G2 de la interfase."
-      ],
-      "correcta": "D",
-      "explicacion": "La ovogonia en fase G2 es una célula diploide que ya completó la replicación en S, conteniendo 4C de ADN, superior a células en G0/G1 (2C) o haploides (1C)."
     },
     {
       "pregunta": "Si dos progenitores sanos conciben un hijo que manifiesta fibrosis quística (enfermedad autosómica recesiva), esto implica genotípicamente que:",
@@ -78,17 +56,6 @@
       ],
       "correcta": "C",
       "explicacion": "El hijo varón recibe el cromosoma Y del padre y el cromosoma X de la madre. Al estar afectado, el alelo recesivo proviene inevitablemente de la madre portadora."
-    },
-    {
-      "pregunta": "Si una mujer heterocigota para el daltonismo tiene descendencia con un hombre daltónico, respecto a sus hijos varones se prevé que:",
-      "opciones": [
-        "el 50% de los hijos varones sean daltónicos.",
-        "ningún hijo varón presente daltonismo.",
-        "el 100% de las hijas mujeres sean daltónicas.",
-        "todos los varones sean sanos."
-      ],
-      "correcta": "A",
-      "explicacion": "La madre (X D X d) tiene un 50% de probabilidades de transmitir el cromosoma recesivo X d a sus hijos varones, manifestándose en ellos el fenotipo daltónico."
     },
     {
       "pregunta": "Al cruzar plantas de flores rojas dominantes con flores blancas recesivas se obtienen 39 plantas rojas y 41 blancas. ¿Cuáles son los genotipos parentales?",
@@ -144,17 +111,6 @@
       ],
       "correcta": "C",
       "explicacion": "Durante el paquitene de la profase I, las cromátidas no hermanas intercambian fragmentos equivalentes de ADN, recombinando los alelos maternos y paternos."
-    },
-    {
-      "pregunta": "En genética experimental, el cruzamiento de prueba se utiliza fundamentalmente para:",
-      "opciones": [
-        "demostrar que dos loci se encuentran en el mismo cromosoma.",
-        "confirmar que un gen responde a patrones mendelianos.",
-        "determinar si un organismo de fenotipo dominante es homocigota o heterocigota.",
-        "evaluar si el carácter está ligado a los cromosomas sexuales."
-      ],
-      "correcta": "C",
-      "explicacion": "Al cruzar el individuo dominante de genotipo desconocido con un homocigota recesivo, la aparición de fenotipo recesivo confirma su heterocigosis."
     },
     {
       "pregunta": "Según los postulados evolutivos de Lamarck, una característica o rasgo en un individuo surge:",
@@ -254,17 +210,6 @@
       ],
       "correcta": "C",
       "explicacion": "Los ARN de transferencia son sintetizados por la ARN polimerasa III dentro del nucleoplasma celular."
-    },
-    {
-      "pregunta": "Las secuencias de ADN que integran la heterocromatina se caracterizan por ser:",
-      "opciones": [
-        "transcripcionalmente inanimadas y poco condensadas.",
-        "transcripcionalmente inactivas y altamente condensadas.",
-        "transcritas de forma constante en el ciclo celular.",
-        "regiones laxas que carecen de proteínas histonas."
-      ],
-      "correcta": "B",
-      "explicacion": "La heterocromatina se mantiene altamente compactada durante la interfase, impidiendo el acceso de los factores de transcripción al ADN."
     },
     {
       "pregunta": "La cromatina interfásica y los cromosomas mitóticos se diferencian principalmente en:",

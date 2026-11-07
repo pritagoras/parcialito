@@ -570,25 +570,25 @@
         "A secuencias no codificantes dentro del gen que eliminan intrones, relacionado con el splicing."
       ],
       "correcta": "B",
-      "explicacion": "La existencia de codones sinónimos implica que la mayoría de los aminoácidos pueden estar codificados por más de un codón, lo que define la propiedad de degeneración del código genético sin significar ambigüedad[cite: 3, 5]."
+      "explicacion": "La existencia de codones sinónimos implica que la mayoría de los aminoácidos pueden estar codificados por más de un codón, lo que define la propiedad de degeneración del código genético sin significar ambigüedad."
     },
     {
       "pregunta": "¿Cuántos codones o tripletes de bases existen en total en el código genético?",
       "opciones": ["16 codones.", "20 codones.", "61 codones.", "64 codones."],
       "correcta": "D",
-      "explicacion": "El código genético consta de un total de 64 codones (resultantes de combinar las 4 bases nitrogenadas en grupos de a 3), de los cuales 61 codifican aminoácidos y 3 funcionan como señales de terminación[cite: 3, 4, 5]."
+      "explicacion": "El código genético consta de un total de 64 codones (resultantes de combinar las 4 bases nitrogenadas en grupos de a 3), de los cuales 61 codifican aminoácidos y 3 funcionan como señales de terminación."
     },
     {
       "pregunta": "¿Cuántos aminoácidos son codificados mediante los tripletes del código genético para formar las proteínas?",
       "opciones": ["4 aminoácidos.", "20 aminoácidos.", "61 aminoácidos.", "64 aminoácidos."],
       "correcta": "B",
-      "explicacion": "Las combinaciones de codones del código genético están destinadas a nombrar y especificar a los 20 aminoácidos que componen las proteínas[cite: 3, 5]."
+      "explicacion": "Las combinaciones de codones del código genético están destinadas a nombrar y especificar a los 20 aminoácidos que componen las proteínas."
     },
     {
       "pregunta": "¿Cuáles son los tres codones de terminación o 'stop' (corte) que no especifican ningún aminoácido?",
       "opciones": ["AUG, UAA y UAG.", "UUU, UUC y UUA.", "UGA, UAG y UAA.", "AGU, AGC y AGA."],
       "correcta": "C",
-      "explicacion": "Los tres codones que no especifican ningún aminoácido y actúan como señales de terminación o stop en el mensaje genético son UGA, UAG y UAA[cite: 4, 5]."
+      "explicacion": "Los tres codones que no especifican ningún aminoácido y actúan como señales de terminación o stop en el mensaje genético son UGA, UAG y UAA."
     },
     {
       "pregunta": "¿Cuál es la principal diferencia en cuanto a las enzimas ARN polimerasas involucradas en la transcripción entre procariotas y eucariotas?",

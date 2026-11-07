@@ -520,7 +520,7 @@
       "explicacion": "La precisión traduccional se garantiza al unir el aminoácido al ARNt correcto (aminoacilación) y al aparear fielmente el anticodón con el ARNm."
     },
     {
-      "pregunta": "Dada la hebra de ADN codificante (antimolde) orientada 3'-GGCCAGTA-5', la secuencia del transcripto primario de ARN resultante será:",
+      "pregunta": "Dada la hebra de ADN molde orientada 3'-GGCCCAGTA-5', la secuencia del transcripto primario de ARN resultante será:",
       "opciones": [
         "5'-CCGGGTCAT-3'",
         "3'-GGCCCAGUA-5'",
@@ -528,7 +528,7 @@
         "3'-GGCCCAGTA-5'"
       ],
       "correcta": "C",
-      "explicacion": "El ARN presenta la misma orientación y secuencia que la hebra codificante (reemplazando T por U), la cual reordenada en sentido 5'->3' resulta en 5'-CCGGGUCAU-3'."
+      "explicacion": "El ARN es complementario y antiparalelo a la hebra molde (reemplazando T por U): 3'-GGCCCAGTA-5' se transcribe como 5'-CCGGGUCAU-3'."
     },
     {
       "pregunta": "Experimentos in vitro demuestran que un ARNm maduro de origen humano expuesto a ribosomas bacterianos y ARNt de ratón sintetiza:",

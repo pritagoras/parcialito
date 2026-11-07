@@ -276,31 +276,31 @@
       "pregunta": "Para sintetizar una cadena polipeptídica de 15 aminoácidos, la región codificadora del ARNm requiere, en el esquema más sencillo, un total de:",
       "opciones": ["15 codones.", "16 codones.", "45 codones.", "48 codones."],
       "correcta": "B",
-      "explicacion": "Se requieren n codones con sentido para los aminoácidos más un codón STOP de terminación, lo que da un total de 16 codones[cite: 5, 12, 13]."
+      "explicacion": "Se requieren n codones con sentido para los aminoácidos más un codón STOP de terminación, lo que da un total de 16 codones."
     },
     {
       "pregunta": "El número total de nucleótidos que componen la región codificadora de un ARNm (incluyendo el codón STOP) para sintetizar un polipéptido de 20 aminoácidos es de:",
       "opciones": ["20 nucleótidos.", "21 nucleótidos.", "60 nucleótidos.", "63 nucleótidos."],
       "correcta": "D",
-      "explicacion": "Una cadena de 20 aminoácidos necesita 21 codones en total (20 con sentido más 1 STOP), los cuales equivalen a 63 nucleótidos al multiplicarse por tres[cite: 5, 12, 13]."
+      "explicacion": "Una cadena de 20 aminoácidos necesita 21 codones en total (20 con sentido más 1 STOP), los cuales equivalen a 63 nucleótidos al multiplicarse por tres."
     },
     {
       "pregunta": "Si un tramo codificador de un ARNm contiene exactamente 30 codones (incluyendo el codón de terminación), la cadena polipeptídica resultante estará formada por:",
       "opciones": ["29 aminoácidos.", "30 aminoácidos.", "33 aminoácidos.", "90 aminoácidos."],
       "correcta": "A",
-      "explicacion": "El codón STOP señala el final y no aporta ningún aminoácido, por lo que a los 30 codones totales se le resta uno, resultando en 29 aminoácidos[cite: 5, 12, 13]."
+      "explicacion": "El codón STOP señala el final y no aporta ningún aminoácido, por lo que a los 30 codones totales se le resta uno, resultando en 29 aminoácidos."
     },
     {
       "pregunta": "Una proteína que posee 8 aminoácidos requiere en su región codificadora de ARNm (considerando el codón STOP) una cantidad de bases igual a:",
       "opciones": ["24 bases.", "27 bases.", "8 bases.", "9 bases."],
       "correcta": "B",
-      "explicacion": "Se precisan 8 codones con sentido más 1 codón STOP, sumando 9 codones en total; al multiplicarse por tres bases cada uno, se obtienen 27 nucleótidos[cite: 5, 12, 13]."
+      "explicacion": "Se precisan 8 codones con sentido más 1 codón STOP, sumando 9 codones en total; al multiplicarse por tres bases cada uno, se obtienen 27 nucleótidos."
     },
     {
       "pregunta": "Si la región codificadora de un ARNm tiene un total de 36 nucleótidos, abarcando los codones con sentido y el codón STOP, la cantidad de aminoácidos que tendrá la proteína es:",
       "opciones": ["36 aminoácidos.", "12 aminoácidos.", "11 aminoácidos.", "10 aminoácidos."],
       "correcta": "C",
-      "explicacion": "Al dividir los 36 nucleótidos por 3 se obtienen 12 codones totales; restando el codón STOP final, la cadena queda compuesta por 11 aminoácidos[cite: 5, 12, 13]."
+      "explicacion": "Al dividir los 36 nucleótidos por 3 se obtienen 12 codones totales; restando el codón STOP final, la cadena queda compuesta por 11 aminoácidos."
     },
     {
       "pregunta": "Respecto a la función del codón AUG en el ARNm:",

@@ -1,50 +1,10 @@
 {
-  "generado": "2026-10-28T15:05:43Z",
+  "generado": "2026-11-07T21:54:59Z",
   "temas": [
     {
       "archivo": "segundo-parcial/1.json",
       "tema": "Parciales de Biología (Integrador)",
       "preguntas": 111
-    },
-    {
-      "archivo": "segundo-parcial/2.json",
-      "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 65
-    },
-    {
-      "archivo": "segundo-parcial/3.json",
-      "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 78
-    },
-    {
-      "archivo": "segundo-parcial/4.json",
-      "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 55
-    },
-    {
-      "archivo": "segundo-parcial/5.json",
-      "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 55
-    },
-    {
-      "archivo": "segundo-parcial/6.json",
-      "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 33
-    },
-    {
-      "archivo": "segundo-parcial/7.json",
-      "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 36
-    },
-    {
-      "archivo": "segundo-parcial/8.json",
-      "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 50
-    },
-    {
-      "archivo": "segundo-parcial/9.json",
-      "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 50
     },
     {
       "archivo": "segundo-parcial/10.json",
@@ -65,6 +25,46 @@
       "archivo": "segundo-parcial/13.json",
       "tema": "Parciales de Biología (Integrador)",
       "preguntas": 23
+    },
+    {
+      "archivo": "segundo-parcial/2.json",
+      "tema": "Parciales de Biología (Integrador)",
+      "preguntas": 65
+    },
+    {
+      "archivo": "segundo-parcial/3.json",
+      "tema": "Parciales de Biología (Integrador)",
+      "preguntas": 78
+    },
+    {
+      "archivo": "segundo-parcial/4.json",
+      "tema": "Parciales de Biología (Integrador)",
+      "preguntas": 55
+    },
+    {
+      "archivo": "segundo-parcial/5.json",
+      "tema": "Parciales de Biología (Integrador)",
+      "preguntas": 50
+    },
+    {
+      "archivo": "segundo-parcial/6.json",
+      "tema": "Parciales de Biología (Integrador)",
+      "preguntas": 33
+    },
+    {
+      "archivo": "segundo-parcial/7.json",
+      "tema": "Parciales de Biología (Integrador)",
+      "preguntas": 36
+    },
+    {
+      "archivo": "segundo-parcial/8.json",
+      "tema": "Parciales de Biología (Integrador)",
+      "preguntas": 50
+    },
+    {
+      "archivo": "segundo-parcial/9.json",
+      "tema": "Parciales de Biología (Integrador)",
+      "preguntas": 46
     }
   ]
 }

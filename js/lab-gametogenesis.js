@@ -1,8 +1,8 @@
 // Parcialito LAB · Gametogénesis: meiosis, espermatogénesis y ovogénesis.
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const MEIOSIS = [
-{id:'g1',name:'G1 · antes de replicar',group:'Interfase',text:'La célula germinal es diploide. Cada cromosoma tiene una sola cromátida. En humanos: 46 cromosomas y 46 moléculas de ADN.',key:'En G1 hay 2n y 2c.'},
-{id:'s',name:'Después de fase S',group:'Replicación previa',text:'El ADN se duplica una sola vez antes de la meiosis. Cada cromosoma queda formado por dos cromátidas hermanas, pero la ploidía y el número de cromosomas no cambian.',key:'Se duplica el ADN, no el número de cromosomas: 2n y 4c.'},
+{id:'g1',name:'G1 · antes de replicar',group:'Interfase',text:'La célula germinal es diploide. Cada cromosoma tiene una sola cromátida. En humanos: 46 cromosomas y 46 moléculas de ADN.',key:'En G1 hay 2n y 2C.'},
+{id:'s',name:'Después de fase S',group:'Replicación previa',text:'El ADN se duplica una sola vez antes de la meiosis. Cada cromosoma queda formado por dos cromátidas hermanas, pero la ploidía y el número de cromosomas no cambian.',key:'Se duplica el ADN, no el número de cromosomas: 2n y 4C.'},
 {id:'lepto',name:'Leptonema',group:'Profase I · subetapa 1',text:'Los cromosomas comienzan a condensarse y se observan como filamentos largos y delgados. Las cromátidas todavía no se distinguen claramente.',key:'Leptonema: comienzo de la condensación.'},
 {id:'cygo',name:'Cigonema',group:'Profase I · subetapa 2',text:'Los cromosomas homólogos se reconocen y se aparean mediante sinapsis. Entre ellos se organiza el complejo sinaptonémico. El par recibe el nombre de bivalente.',key:'Sinapsis = apareamiento de cromosomas homólogos.'},
 {id:'pachi',name:'Paquinema',group:'Profase I · subetapa 3',text:'Los homólogos están apareados a lo largo de toda su extensión. Se reconoce una tétrada de cuatro cromátidas. Ocurre crossing over entre cromátidas no hermanas.',key:'Paquinema: crossing over y recombinación genética.'},
@@ -10,25 +10,25 @@ const MEIOSIS = [
 {id:'diaci',name:'Diacinesis',group:'Profase I · subetapa 5',text:'Los cromosomas alcanzan una condensación máxima. Los quiasmas se desplazan hacia los extremos. Se desorganiza la envoltura nuclear y se organiza el huso.',key:'Diacinesis: máxima condensación y preparación para la división.'},
 {id:'meta1',name:'Metafase I',group:'Meiosis I · alineación',text:'Los pares de homólogos se ubican en el plano ecuatorial. La orientación de cada par es independiente y al azar, lo que contribuye a la variabilidad genética.',key:'Se alinean bivalentes; la orientación de cada par es independiente.'},
 {id:'ana1',name:'Anafase I',group:'Meiosis I · división reduccional',text:'Los cromosomas homólogos se separan y migran a polos opuestos. Las cromátidas hermanas permanecen unidas por sus centrómeros.',key:'Anafase I separa homólogos, no cromátidas hermanas.'},
-{id:'telo1',name:'Telofase I y citocinesis',group:'Fin de meiosis I',text:'Se forman dos células haploides. Cada una recibió un representante de cada par de homólogos, pero sus cromosomas continúan duplicados.',key:'Después de meiosis I: n cromosomas duplicados y 2c por célula.'},
+{id:'telo1',name:'Telofase I y citocinesis',group:'Fin de meiosis I',text:'Se forman dos células haploides. Cada una recibió un representante de cada par de homólogos, pero sus cromosomas continúan duplicados.',key:'Después de meiosis I: n cromosomas duplicados y 2C por célula.'},
 {id:'pro2',name:'Profase II',group:'Meiosis II · preparación',text:'En cada célula haploide se organiza nuevamente el huso. No existe una nueva duplicación del ADN entre meiosis I y meiosis II.',key:'No hay una segunda fase S entre ambas divisiones.'},
 {id:'meta2',name:'Metafase II',group:'Meiosis II · alineación',text:'Los cromosomas, todavía formados por dos cromátidas hermanas, se alinean individualmente en el plano ecuatorial de cada célula.',key:'En metafase II se alinean cromosomas individuales, no pares de homólogos.'},
 {id:'ana2',name:'Anafase II',group:'Meiosis II · división ecuacional',text:'Los centrómeros se dividen y las cromátidas hermanas se separan. Desde ese momento cada cromátida pasa a considerarse un cromosoma independiente.',key:'Anafase II separa cromátidas hermanas.'},
-{id:'telo2',name:'Telofase II y citocinesis',group:'Fin de la meiosis',text:'Se reorganizan los núcleos y termina la división del citoplasma. El resultado general son cuatro productos haploides con cromosomas simples.',key:'Resultado general: cuatro productos haploides con 1c.'}
+{id:'telo2',name:'Telofase II y citocinesis',group:'Fin de la meiosis',text:'Se reorganizan los núcleos y termina la división del citoplasma. El resultado general son cuatro productos haploides con cromosomas simples.',key:'Resultado general: cuatro productos haploides con 1C.'}
 ];
 const ESPERMA = [
-{name:'Espermatogonia',group:'Célula germinal inicial',text:'La espermatogonia es diploide. Se mantiene mediante divisiones mitóticas; algunas células continúan la población germinal y otras se diferencian para ingresar en meiosis.',key:'En humanos: 46 cromosomas simples y 2c antes de replicar el ADN.',cells:1,chr:46,chrom:46,dna:46,pl:'2n',c:'2c'},
-{name:'Espermatocito primario',group:'Ingreso en meiosis I',text:'Cuando la espermatogonia inicia la meiosis I pasa a llamarse espermatocito primario. Ya duplicó el ADN, pero todavía conserva los dos juegos de cromosomas homólogos.',key:'Sigue siendo diploide: 46 cromosomas y 92 cromátidas.',cells:1,chr:46,chrom:92,dna:92,pl:'2n',c:'4c'},
-{name:'Espermatocitos secundarios',group:'Fin de meiosis I',text:'Al separarse los cromosomas homólogos se forman dos espermatocitos secundarios. Cada uno es haploide, aunque sus cromosomas todavía tienen dos cromátidas.',key:'Cada célula: 23 cromosomas duplicados, 46 cromátidas y 2c.',cells:2,chr:23,chrom:46,dna:46,pl:'n',c:'2c'},
-{name:'Espermátidas',group:'Fin de meiosis II',text:'Los espermatocitos secundarios completan la meiosis II y separan sus cromátidas hermanas. Se forman cuatro espermátidas haploides.',key:'Cada espermátida: 23 cromosomas simples y 1c.',cells:4,chr:23,chrom:23,dna:23,pl:'n',c:'1c'},
-{name:'Espermatozoides',group:'Espermiogénesis',text:'Durante la espermiogénesis las espermátidas se diferencian morfológicamente: condensan el núcleo, forman el acrosoma y el flagelo y pierden gran parte del citoplasma. No ocurre otra división.',key:'La espermiogénesis cambia la morfología, no la ploidía ni el número de cromosomas.',cells:4,chr:23,chrom:23,dna:23,pl:'n',c:'1c'}
+{name:'Espermatogonia',group:'Célula germinal inicial',text:'La espermatogonia es diploide. Se mantiene mediante divisiones mitóticas; algunas células continúan la población germinal y otras se diferencian para ingresar en meiosis.',key:'En humanos: 46 cromosomas simples y 2C antes de replicar el ADN.',cells:1,chr:46,chrom:46,dna:46,pl:'2n',c:'2C'},
+{name:'Espermatocito primario',group:'Ingreso en meiosis I',text:'Cuando la espermatogonia inicia la meiosis I pasa a llamarse espermatocito primario. Ya duplicó el ADN, pero todavía conserva los dos juegos de cromosomas homólogos.',key:'Sigue siendo diploide: 46 cromosomas y 92 cromátidas.',cells:1,chr:46,chrom:92,dna:92,pl:'2n',c:'4C'},
+{name:'Espermatocitos secundarios',group:'Fin de meiosis I',text:'Al separarse los cromosomas homólogos se forman dos espermatocitos secundarios. Cada uno es haploide, aunque sus cromosomas todavía tienen dos cromátidas.',key:'Cada célula: 23 cromosomas duplicados, 46 cromátidas y 2C.',cells:2,chr:23,chrom:46,dna:46,pl:'n',c:'2C'},
+{name:'Espermátidas',group:'Fin de meiosis II',text:'Los espermatocitos secundarios completan la meiosis II y separan sus cromátidas hermanas. Se forman cuatro espermátidas haploides.',key:'Cada espermátida: 23 cromosomas simples y 1C.',cells:4,chr:23,chrom:23,dna:23,pl:'n',c:'1C'},
+{name:'Espermatozoides',group:'Espermiogénesis',text:'Durante la espermiogénesis las espermátidas se diferencian morfológicamente: condensan el núcleo, forman el acrosoma y el flagelo y pierden gran parte del citoplasma. No ocurre otra división.',key:'La espermiogénesis cambia la morfología, no la ploidía ni el número de cromosomas.',cells:4,chr:23,chrom:23,dna:23,pl:'n',c:'1C'}
 ];
 const OVOGENESIS = [
-{name:'Ovogonia',group:'Etapa embrionaria',text:'Las ovogonias son diploides y se multiplican por mitosis durante el desarrollo fetal. Alrededor del tercer mes comienzan a ingresar en meiosis I y pasan a denominarse ovocitos primarios.',key:'La ovogonia es la célula germinal inicial (2n); al ingresar en meiosis I se transforma en ovocito primario.',chr:46,chrom:46,dna:46,pl:'2n',c:'2c',pause:''},
-{name:'Ovocito primario',group:'Inicio de meiosis I · vida fetal',text:'Al ingresar en meiosis, la ovogonia pasa a llamarse ovocito primario. Inicia la meiosis I y queda detenido en profase I avanzada (diplonema/dictioteno) antes del nacimiento.',key:'Primera detención: profase I. La reserva de ovocitos primarios está presente al nacer.',chr:46,chrom:92,dna:92,pl:'2n',c:'4c',pause:'DETENIDO EN PROFASE I'},
-{name:'Ovocito secundario + primer cuerpo polar',group:'Finalización de meiosis I',text:'Desde la pubertad, en cada ciclo puede comenzar el desarrollo de más de un folículo. Algunos ovocitos reanudan la meiosis I, pero generalmente uno alcanza la etapa que culmina con la ovulación: se forma un ovocito secundario grande y un primer cuerpo polar pequeño.',key:'La citocinesis es asimétrica: el ovocito secundario conserva casi todo el citoplasma.',chr:23,chrom:46,dna:46,pl:'n',c:'2c',pause:''},
-{name:'Ovocito secundario ovulado',group:'Ovulación · meiosis II',text:'El ovocito secundario es liberado durante la ovulación. Comienza la meiosis II y queda detenido en metafase II mientras no ocurra la fecundación.',key:'Segunda detención: metafase II. Lo que se ovula es el ovocito secundario, no un óvulo que ya terminó la meiosis.',chr:23,chrom:46,dna:46,pl:'n',c:'2c',pause:'DETENIDO EN METAFASE II'},
-{name:'Óvulo + segundo cuerpo polar',group:'Tras la fecundación',text:'La fecundación desencadena señales que permiten completar la meiosis II. Se forma el óvulo y el segundo cuerpo polar; el primer cuerpo polar puede dividirse. Luego se combina el material genético de ambas gametas.',key:'Óvulo: n = 23 y 1c. Se forma el segundo cuerpo polar; el primero puede dividirse. Tras la unión de los pronúcleos se restablece 2n = 46 en el cigoto.',chr:23,chrom:23,dna:23,pl:'n',c:'1c',pause:''}
+{name:'Ovogonia',group:'Etapa embrionaria',text:'Las ovogonias son diploides y se multiplican por mitosis durante el desarrollo fetal. Alrededor del tercer mes comienzan a ingresar en meiosis I y pasan a denominarse ovocitos primarios.',key:'La ovogonia es la célula germinal inicial (2n); al ingresar en meiosis I se transforma en ovocito primario.',chr:46,chrom:46,dna:46,pl:'2n',c:'2C',pause:''},
+{name:'Ovocito primario',group:'Inicio de meiosis I · vida fetal',text:'Al ingresar en meiosis, la ovogonia pasa a llamarse ovocito primario. Inicia la meiosis I y queda detenido en profase I avanzada (diplonema/dictioteno) antes del nacimiento.',key:'Primera detención: profase I. La reserva de ovocitos primarios está presente al nacer.',chr:46,chrom:92,dna:92,pl:'2n',c:'4C',pause:'DETENIDO EN PROFASE I'},
+{name:'Ovocito secundario + primer cuerpo polar',group:'Finalización de meiosis I',text:'Desde la pubertad, en cada ciclo puede comenzar el desarrollo de más de un folículo. Algunos ovocitos reanudan la meiosis I, pero generalmente uno alcanza la etapa que culmina con la ovulación: se forma un ovocito secundario grande y un primer cuerpo polar pequeño.',key:'La citocinesis es asimétrica: el ovocito secundario conserva casi todo el citoplasma.',chr:23,chrom:46,dna:46,pl:'n',c:'2C',pause:''},
+{name:'Ovocito secundario ovulado',group:'Ovulación · meiosis II',text:'El ovocito secundario es liberado durante la ovulación. Comienza la meiosis II y queda detenido en metafase II mientras no ocurra la fecundación.',key:'Segunda detención: metafase II. Lo que se ovula es el ovocito secundario, no un óvulo que ya terminó la meiosis.',chr:23,chrom:46,dna:46,pl:'n',c:'2C',pause:'DETENIDO EN METAFASE II'},
+{name:'Óvulo + segundo cuerpo polar',group:'Tras la fecundación',text:'La fecundación desencadena señales que permiten completar la meiosis II. Se forma el óvulo y el segundo cuerpo polar; el primer cuerpo polar puede dividirse. Luego se combina el material genético de ambas gametas.',key:'Óvulo: n = 23 y 1C. Se forma el segundo cuerpo polar; el primero puede dividirse. Tras la unión de los pronúcleos se restablece 2n = 46 en el cigoto.',chr:23,chrom:23,dna:23,pl:'n',c:'1C',pause:''}
 ];
 const PREGUNTAS = [
 {q:'¿Qué se separa durante la anafase I?',o:['Cromátidas hermanas','Cromosomas homólogos','Moléculas de ADN','Centríolos'],a:1,e:'En anafase I se separan los cromosomas homólogos. Las cromátidas hermanas permanecen unidas.'},
@@ -40,14 +40,13 @@ const PREGUNTAS = [
 {q:'¿Qué proceso transforma espermátidas en espermatozoides?',o:['Espermatogénesis II','Ovulación','Espermiogénesis','Sinapsis'],a:2,e:'La espermiogénesis es la diferenciación morfológica final; no es una división ni cambia la ploidía.'},
 {q:'¿Cuándo comienza la meiosis en la ovogénesis?',o:['En la pubertad','Después de la fecundación','Durante la vida fetal','En la menopausia'],a:2,e:'Las ovogonias ingresan en meiosis durante la vida fetal y pasan a ser ovocitos primarios.'},
 {q:'¿En qué etapa queda detenido el ovocito primario?',o:['Metafase I','Profase I avanzada (dictioteno)','Anafase II','Metafase II'],a:1,e:'La primera detención de la ovogénesis ocurre en profase I avanzada, también llamada dictioteno.'},
-{q:'¿Qué célula se libera durante la ovulación?',o:['Ovocito primario','Óvulo con meiosis II completa','Ovocito secundario detenido en metafase II','Ovogonia'],a:2,e:'El ovocito secundario completa meiosis I, inicia meiosis II y queda detenido en metafase II.'},
 {q:'¿Qué permite completar la meiosis II del ovocito?',o:['El pico de FSH por sí solo','La fecundación','La menstruación','La formación del cuerpo lúteo'],a:1,e:'La fecundación desencadena señales que reanudan y completan la meiosis II.'},
 {q:'¿Por qué se forman cuerpos polares?',o:['Para conservar todo el citoplasma en cuatro células','Para eliminar cromosomas duplicados por mitosis','Para repartir el citoplasma de forma desigual y conservarlo en el ovocito','Para producir espermatozoides'],a:2,e:'Las divisiones asimétricas concentran casi todo el citoplasma en una única célula funcional.'},
 {q:'Una célula 2n=8 después de la fase S tiene:',o:['8 cromosomas y 8 cromátidas','16 cromosomas y 16 cromátidas','8 cromosomas y 16 cromátidas','4 cromosomas y 8 cromátidas'],a:2,e:'La replicación duplica las cromátidas y el ADN, pero no el número de cromosomas.'},
-{q:'Después de meiosis II, una célula humana contiene:',o:['46 cromosomas duplicados','23 cromosomas simples','23 pares de homólogos','46 cromátidas'],a:1,e:'Cada producto haploide contiene 23 cromosomas simples y 1c.'},
+{q:'Después de meiosis II, una célula humana contiene:',o:['46 cromosomas duplicados','23 cromosomas simples','23 pares de homólogos','46 cromátidas'],a:1,e:'Cada producto haploide contiene 23 cromosomas simples y 1C.'},
 {q:'¿Cuál es el resultado general de la meiosis en la espermatogénesis?',o:['Dos espermatozoides diploides','Cuatro espermátidas haploides','Un óvulo y tres cuerpos polares','Dos espermatocitos primarios'],a:1,e:'Un espermatocito primario completa meiosis I y II y origina cuatro espermátidas haploides.'},
-{q:'¿Qué contenido cromosómico tiene un ovocito primario humano detenido en profase I?',o:['23 cromosomas simples y 1c','46 cromosomas duplicados y 4c','23 cromosomas duplicados y 2c','46 cromosomas simples y 2c'],a:1,e:'El ovocito primario ya duplicó el ADN, pero todavía conserva los dos juegos de homólogos: 2n = 46, 92 cromátidas y 4c.'},
-{q:'Al terminar la meiosis I del ovocito primario, el ovocito secundario es:',o:['Diploide, con 46 cromosomas simples','Haploide, con 23 cromosomas duplicados y 2c','Haploide, con 23 cromosomas simples y 1c','Diploide, con 46 cromosomas duplicados'],a:1,e:'La meiosis I separa homólogos. El ovocito secundario queda haploide, pero conserva cromosomas duplicados: 23 cromosomas, 46 cromátidas y 2c.'},
+{q:'¿Qué contenido cromosómico tiene un ovocito primario humano detenido en profase I?',o:['23 cromosomas simples y 1C','46 cromosomas duplicados y 4C','23 cromosomas duplicados y 2C','46 cromosomas simples y 2C'],a:1,e:'El ovocito primario ya duplicó el ADN, pero todavía conserva los dos juegos de homólogos: 2n = 46, 92 cromátidas y 4C.'},
+{q:'Al terminar la meiosis I del ovocito primario, el ovocito secundario es:',o:['Diploide, con 46 cromosomas simples','Haploide, con 23 cromosomas duplicados y 2C','Haploide, con 23 cromosomas simples y 1C','Diploide, con 46 cromosomas duplicados'],a:1,e:'La meiosis I separa homólogos. El ovocito secundario queda haploide, pero conserva cromosomas duplicados: 23 cromosomas, 46 cromátidas y 2C.'},
 {q:'¿Qué célula se libera en la ovulación?',o:['Ovocito primario detenido en profase I','Óvulo que ya completó meiosis II','Ovocito secundario detenido en metafase II','Ovogonia diploide'],a:2,e:'En la ovulación se libera un ovocito secundario que inició meiosis II y queda detenido en metafase II hasta la fecundación.'},
 {q:'¿Qué sucede con los folículos durante un ciclo ovárico según el material de clase?',o:['Todos los folículos que comienzan a crecer ovulan','Puede comenzar el desarrollo de más de uno, pero generalmente uno alcanza la ovulación','Los folículos comienzan a desarrollarse después de la fecundación','Ningún folículo se desarrolla después de la pubertad'],a:1,e:'Puede comenzar el desarrollo de más de un folículo, aunque generalmente uno llega a la etapa preovulatoria y libera el ovocito secundario.'},
 {q:'¿Cuál es la diferencia entre menstruación y ciclo menstrual?',o:['Son términos equivalentes','La menstruación es un acontecimiento dentro del ciclo, no el ciclo completo','El ciclo menstrual ocurre solo durante la menstruación','La menstruación es la meiosis II'],a:1,e:'La menstruación es uno de los acontecimientos del ciclo menstrual; no representa toda la secuencia cíclica.'},
@@ -58,320 +57,320 @@ const COMPARACIONES_ADN = [
     "q": "¿Qué célula contiene más ADN por célula: un ovocito primario detenido en profase I o una espermátida recién formada?",
     "o": [
       "La espermátida, porque ya terminó la meiosis.",
-      "El ovocito primario: 4c frente a 1c, cuatro veces más ADN.",
-      "Ambas contienen 2c.",
+      "El ovocito primario: 4C frente a 1C, cuatro veces más ADN.",
+      "Ambas contienen 2C.",
       "Tienen igual cantidad por ser células germinales."
     ],
     "a": 1,
-    "e": "El ovocito primario está en 2n, 4c; la espermátida terminó meiosis II y está en n, 1c. El ovocito primario contiene cuatro veces más ADN."
+    "e": "El ovocito primario está en 2n, 4C; la espermátida terminó meiosis II y está en n, 1C. El ovocito primario contiene cuatro veces más ADN."
   },
   {
     "q": "Al comparar un espermatocito primario y un ovocito primario humanos, ambos después de replicar el ADN y antes de completar meiosis I, ¿cuál tiene más ADN?",
     "o": [
       "El espermatocito primario, porque produce cuatro gametas.",
       "El ovocito primario, porque conserva más citoplasma.",
-      "Tienen la misma cantidad: ambos son 2n, 4c, con 46 cromosomas y 92 cromátidas.",
-      "El ovocito primario tiene 2c y el espermatocito 4c."
+      "Tienen la misma cantidad: ambos son 2n, 4C, con 46 cromosomas y 92 cromátidas.",
+      "El ovocito primario tiene 2C y el espermatocito 4C."
     ],
     "a": 2,
-    "e": "Ambas células ya duplicaron el ADN, pero todavía no separaron los homólogos: 46 cromosomas duplicados, 92 cromátidas y 4c."
+    "e": "Ambas células ya duplicaron el ADN, pero todavía no separaron los homólogos: 46 cromosomas duplicados, 92 cromátidas y 4C."
   },
   {
     "q": "¿Qué contiene más ADN por célula: el ovocito secundario que se libera en la ovulación o un espermatozoide maduro?",
     "o": [
-      "El espermatozoide: 2c y el ovocito 1c.",
-      "El ovocito secundario: 2c y el espermatozoide 1c.",
-      "Ambos tienen 1c porque son haploides.",
-      "Ambos tienen 2c porque ya completaron una división meiótica."
+      "El espermatozoide: 2C y el ovocito 1C.",
+      "El ovocito secundario: 2C y el espermatozoide 1C.",
+      "Ambos tienen 1C porque son haploides.",
+      "Ambos tienen 2C porque ya completaron una división meiótica."
     ],
     "a": 1,
-    "e": "El ovocito ovulado está detenido en metafase II: n, 2c. El espermatozoide completó meiosis II: n, 1c. El ovocito contiene el doble de ADN."
+    "e": "El ovocito ovulado está detenido en metafase II: n, 2C. El espermatozoide completó meiosis II: n, 1C. El ovocito contiene el doble de ADN."
   },
   {
     "q": "Un espermatocito secundario y un ovocito secundario detenido en metafase II tienen, cada uno, ¿qué contenido genético?",
     "o": [
-      "2n, 4c.",
-      "n, 1c.",
-      "n, 2c: 23 cromosomas duplicados, 46 cromátidas y 2c.",
-      "2n, 2c."
+      "2n, 4C.",
+      "n, 1C.",
+      "n, 2C: 23 cromosomas duplicados, 46 cromátidas y 2C.",
+      "2n, 2C."
     ],
     "a": 2,
-    "e": "Ambas células completaron meiosis I: son haploides, pero todavía conservan cromátidas hermanas unidas. Cada una tiene n=23 y 2c."
+    "e": "Ambas células completaron meiosis I: son haploides, pero todavía conservan cromátidas hermanas unidas. Cada una tiene n=23 y 2C."
   },
   {
     "q": "¿Qué diferencia de contenido de ADN existe entre una espermátida y un espermatozoide maduro?",
     "o": [
-      "La espermátida tiene 2c y el espermatozoide 1c.",
+      "La espermátida tiene 2C y el espermatozoide 1C.",
       "El espermatozoide duplica su ADN durante la espermiogénesis.",
-      "No hay diferencia: ambos son n, 1c; la espermiogénesis cambia la morfología, no el ADN.",
+      "No hay diferencia: ambos son n, 1C; la espermiogénesis cambia la morfología, no el ADN.",
       "La espermátida es 2n y el espermatozoide n."
     ],
     "a": 2,
-    "e": "La espermiogénesis no es una división. La espermátida y el espermatozoide conservan 23 cromosomas simples y 1c."
+    "e": "La espermiogénesis no es una división. La espermátida y el espermatozoide conservan 23 cromosomas simples y 1C."
   },
   {
     "q": "Si se comparan una espermatogonia en G1 y una ovogonia antes de replicar su ADN, ¿cuál tiene más información genética?",
     "o": [
       "La espermatogonia, por estar en el testículo.",
       "La ovogonia, porque dará origen al ovocito.",
-      "Ambas tienen la misma cantidad: 2n, 2c y 46 cromosomas simples.",
-      "Ambas son n, 1c."
+      "Ambas tienen la misma cantidad: 2n, 2C y 46 cromosomas simples.",
+      "Ambas son n, 1C."
     ],
     "a": 2,
-    "e": "Ambas son células germinales diploides antes de fase S: 46 cromosomas simples y 2c."
+    "e": "Ambas son células germinales diploides antes de fase S: 46 cromosomas simples y 2C."
   },
   {
     "q": "¿Qué célula tiene el doble de ADN por célula: una espermatogonia en G1 o un espermatocito primario después de la fase S?",
     "o": [
-      "La espermatogonia: 4c frente a 2c.",
-      "El espermatocito primario: 4c frente a 2c.",
+      "La espermatogonia: 4C frente a 2C.",
+      "El espermatocito primario: 4C frente a 2C.",
       "Tienen igual cantidad porque ambos son 2n.",
       "La espermatogonia, porque aún no se dividió."
     ],
     "a": 1,
-    "e": "La espermatogonia en G1 tiene 2n, 2c. El espermatocito primario ya replicó el ADN y tiene 2n, 4c."
+    "e": "La espermatogonia en G1 tiene 2n, 2C. El espermatocito primario ya replicó el ADN y tiene 2n, 4C."
   },
   {
     "q": "¿Qué contiene más ADN por célula: una ovogonia en G1 o un ovocito primario detenido en profase I?",
     "o": [
       "La ovogonia, porque es diploide.",
-      "El ovocito primario: 4c frente a 2c.",
-      "Ambos tienen 4c por ser diploides.",
-      "Ambos tienen 2c porque no completaron meiosis I."
+      "El ovocito primario: 4C frente a 2C.",
+      "Ambos tienen 4C por ser diploides.",
+      "Ambos tienen 2C porque no completaron meiosis I."
     ],
     "a": 1,
-    "e": "La ovogonia en G1 tiene 2c. El ovocito primario ya atravesó fase S y permanece en profase I con 4c. Ambos son 2n."
+    "e": "La ovogonia en G1 tiene 2C. El ovocito primario ya atravesó fase S y permanece en profase I con 4C. Ambos son 2n."
   },
   {
     "q": "¿Qué diferencia de ADN hay entre el ovocito primario detenido en profase I y el ovocito secundario recién formado tras meiosis I?",
     "o": [
-      "El ovocito secundario tiene el doble: 4c frente a 2c.",
-      "El ovocito primario tiene el doble: 4c frente a 2c.",
-      "Tienen igual cantidad: ambos 2c.",
-      "El ovocito primario es 1c y el secundario 2c."
+      "El ovocito secundario tiene el doble: 4C frente a 2C.",
+      "El ovocito primario tiene el doble: 4C frente a 2C.",
+      "Tienen igual cantidad: ambos 2C.",
+      "El ovocito primario es 1C y el secundario 2C."
     ],
     "a": 1,
-    "e": "Antes de meiosis I, el ovocito primario tiene 2n, 4c. Después de separar los homólogos, el ovocito secundario es n, 2c."
+    "e": "Antes de meiosis I, el ovocito primario tiene 2n, 4C. Después de separar los homólogos, el ovocito secundario es n, 2C."
   },
   {
     "q": "Al finalizar meiosis I de la ovogénesis, ¿cómo se comparan el ovocito secundario y el primer cuerpo polar en su contenido cromosómico?",
     "o": [
-      "El ovocito secundario tiene 2c y el cuerpo polar 1c.",
+      "El ovocito secundario tiene 2C y el cuerpo polar 1C.",
       "El cuerpo polar es diploide y el ovocito haploide.",
-      "Ambos son n, 2c y contienen igual ADN, aunque el ovocito conserva casi todo el citoplasma.",
-      "El ovocito secundario tiene 4c porque retuvo el citoplasma."
+      "Ambos son n, 2C y contienen igual ADN, aunque el ovocito conserva casi todo el citoplasma.",
+      "El ovocito secundario tiene 4C porque retuvo el citoplasma."
     ],
     "a": 2,
-    "e": "La división es asimétrica en citoplasma, no en la reducción cromosómica. Ambos reciben un juego haploide de cromosomas duplicados: n, 2c."
+    "e": "La división es asimétrica en citoplasma, no en la reducción cromosómica. Ambos reciben un juego haploide de cromosomas duplicados: n, 2C."
   },
   {
     "q": "¿Qué contiene más ADN por célula: un ovocito primario detenido en profase I o un espermatocito secundario después de meiosis I?",
     "o": [
       "El espermatocito secundario, porque separó homólogos.",
-      "El ovocito primario: 4c frente a 2c.",
-      "Ambos tienen 2c.",
-      "Ambos tienen 4c."
+      "El ovocito primario: 4C frente a 2C.",
+      "Ambos tienen 2C.",
+      "Ambos tienen 4C."
     ],
     "a": 1,
-    "e": "El ovocito primario aún es 2n, 4c. El espermatocito secundario ya es n, 2c."
+    "e": "El ovocito primario aún es 2n, 4C. El espermatocito secundario ya es n, 2C."
   },
   {
     "q": "¿Cuántas veces más ADN tiene un espermatocito primario humano que un espermatozoide maduro?",
     "o": [
-      "Dos veces: 2c frente a 1c.",
-      "Cuatro veces: 4c frente a 1c.",
+      "Dos veces: 2C frente a 1C.",
+      "Cuatro veces: 4C frente a 1C.",
       "La misma cantidad por ser células germinales.",
       "Dos veces: ambos tienen 46 moléculas de ADN."
     ],
     "a": 1,
-    "e": "El espermatocito primario tiene 4c después de replicar; el espermatozoide tiene 1c. La relación es 4:1."
+    "e": "El espermatocito primario tiene 4C después de replicar; el espermatozoide tiene 1C. La relación es 4:1."
   },
   {
     "q": "Por célula, ¿qué etapa contiene más ADN: metafase I o metafase II?",
     "o": [
-      "Metafase II: 4c frente a 2c.",
-      "Ambas tienen 2c.",
-      "Metafase I: 2n, 4c; metafase II: n, 2c.",
-      "Ambas tienen 4c."
+      "Metafase II: 4C frente a 2C.",
+      "Ambas tienen 2C.",
+      "Metafase I: 2n, 4C; metafase II: n, 2C.",
+      "Ambas tienen 4C."
     ],
     "a": 2,
-    "e": "En metafase I la célula conserva ambos juegos de homólogos: 2n, 4c. En metafase II cada célula es haploide: n, 2c."
+    "e": "En metafase I la célula conserva ambos juegos de homólogos: 2n, 4C. En metafase II cada célula es haploide: n, 2C."
   },
   {
     "q": "¿Qué contiene más ADN: el ovocito secundario ovulado en metafase II o el óvulo después de completar meiosis II?",
     "o": [
       "El óvulo, porque ya está listo para fecundarse.",
-      "El ovocito secundario: 2c frente a 1c.",
-      "Ambos tienen 1c.",
-      "Ambos tienen 2c."
+      "El ovocito secundario: 2C frente a 1C.",
+      "Ambos tienen 1C.",
+      "Ambos tienen 2C."
     ],
     "a": 1,
-    "e": "Antes de completar meiosis II, el ovocito secundario tiene 2c; al terminarla, el óvulo queda con cromosomas simples y 1c."
+    "e": "Antes de completar meiosis II, el ovocito secundario tiene 2C; al terminarla, el óvulo queda con cromosomas simples y 1C."
   },
   {
     "q": "Al comparar un óvulo humano recién formado tras meiosis II con un espermatozoide maduro, ¿qué afirmación es correcta?",
     "o": [
-      "El óvulo tiene 2c y el espermatozoide 1c.",
+      "El óvulo tiene 2C y el espermatozoide 1C.",
       "El espermatozoide es 2n y el óvulo n.",
-      "Ambos son haploides y tienen 1c, con 23 cromosomas simples.",
+      "Ambos son haploides y tienen 1C, con 23 cromosomas simples.",
       "El óvulo tiene 46 cromosomas y el espermatozoide 23."
     ],
     "a": 2,
-    "e": "Una vez completada meiosis II, ambas gametas maduras son n=23, con 23 cromátidas y 1c."
+    "e": "Una vez completada meiosis II, ambas gametas maduras son n=23, con 23 cromátidas y 1C."
   },
   {
     "q": "Antes de la primera replicación del ADN del cigoto, ¿cómo se compara su contenido total de ADN con el de un espermatozoide?",
     "o": [
-      "El cigoto tiene 2c y el espermatozoide 1c; el cigoto tiene el doble.",
-      "El cigoto tiene 4c y el espermatozoide 1c.",
-      "Ambos tienen 1c.",
+      "El cigoto tiene 2C y el espermatozoide 1C; el cigoto tiene el doble.",
+      "El cigoto tiene 4C y el espermatozoide 1C.",
+      "Ambos tienen 1C.",
       "El espermatozoide tiene el doble."
     ],
     "a": 0,
-    "e": "La unión de dos genomas haploides de 1c restablece 2n, 2c en el cigoto antes de fase S. Tiene el doble de ADN que un espermatozoide."
+    "e": "La unión de dos genomas haploides de 1C restablece 2n, 2C en el cigoto antes de fase S. Tiene el doble de ADN que un espermatozoide."
   },
   {
     "q": "Un ovocito secundario detenido en metafase II y un cigoto antes de su primera fase S, ¿tienen la misma cantidad de ADN?",
     "o": [
-      "No: el cigoto tiene 4c y el ovocito 2c.",
-      "Sí, ambos tienen 2c, aunque el ovocito es n y el cigoto 2n.",
-      "Sí, ambos son 2n, 2c.",
-      "No: el ovocito tiene 1c y el cigoto 2c."
+      "No: el cigoto tiene 4C y el ovocito 2C.",
+      "Sí, ambos tienen 2C, aunque el ovocito es n y el cigoto 2n.",
+      "Sí, ambos son 2n, 2C.",
+      "No: el ovocito tiene 1C y el cigoto 2C."
     ],
     "a": 1,
-    "e": "Ambos contienen 2c total. El ovocito es n con 23 cromosomas duplicados; el cigoto 2n con 46 cromosomas simples. Igual ADN no implica igual ploidía."
+    "e": "Ambos contienen 2C total. El ovocito es n con 23 cromosomas duplicados; el cigoto 2n con 46 cromosomas simples. Igual ADN no implica igual ploidía."
   },
   {
     "q": "¿Qué diferencia existe entre un ovocito primario detenido en profase I y un cigoto antes de fase S, aunque ambos sean diploides?",
     "o": [
-      "No hay diferencia: 2n siempre significa 2c.",
-      "El cigoto tiene 4c y el ovocito 2c.",
-      "El ovocito primario tiene 4c y el cigoto 2c: misma ploidía, distinta cantidad de ADN.",
+      "No hay diferencia: 2n siempre significa 2C.",
+      "El cigoto tiene 4C y el ovocito 2C.",
+      "El ovocito primario tiene 4C y el cigoto 2C: misma ploidía, distinta cantidad de ADN.",
       "El ovocito primario es n y el cigoto 2n."
     ],
     "a": 2,
-    "e": "Ambos son 2n, pero el ovocito primario ya duplicó su ADN y está en 4c. El cigoto previo a fase S tiene 2c."
+    "e": "Ambos son 2n, pero el ovocito primario ya duplicó su ADN y está en 4C. El cigoto previo a fase S tiene 2C."
   },
   {
     "q": "Durante anafase I, antes de completarse la citocinesis, ¿qué diferencia hay entre el ADN total de la célula y el ADN que corresponde a cada polo?",
     "o": [
-      "La célula completa tiene 2c y cada polo 4c.",
-      "La célula completa conserva 4c; cada futuro núcleo recibe 2c.",
-      "La célula completa tiene 1c y cada polo 2c.",
-      "Cada polo tiene 4c."
+      "La célula completa tiene 2C y cada polo 4C.",
+      "La célula completa conserva 4C; cada futuro núcleo recibe 2C.",
+      "La célula completa tiene 1C y cada polo 2C.",
+      "Cada polo tiene 4C."
     ],
     "a": 1,
-    "e": "En anafase I el ADN total de la célula sigue siendo 4c hasta la división. Cada futuro núcleo recibe n, 2c."
+    "e": "En anafase I el ADN total de la célula sigue siendo 4C hasta la división. Cada futuro núcleo recibe n, 2C."
   },
   {
     "q": "En anafase II, comparando el ADN de cada futuro núcleo con el de la célula haploide antes de separar cromátidas, ¿qué ocurre?",
     "o": [
-      "Cada futuro núcleo recibe 1c, la mitad de los 2c de la célula en metafase II.",
-      "Cada futuro núcleo recibe 2c.",
-      "La ploidía vuelve a 2n y el ADN queda en 4c.",
-      "No cambia: cada futuro núcleo sigue en 2c."
+      "Cada futuro núcleo recibe 1C, la mitad de los 2C de la célula en metafase II.",
+      "Cada futuro núcleo recibe 2C.",
+      "La ploidía vuelve a 2n y el ADN queda en 4C.",
+      "No cambia: cada futuro núcleo sigue en 2C."
     ],
     "a": 0,
-    "e": "La célula en metafase II tiene n, 2c. Al separarse las cromátidas, cada futuro núcleo recibe n cromosomas simples y 1c."
+    "e": "La célula en metafase II tiene n, 2C. Al separarse las cromátidas, cada futuro núcleo recibe n cromosomas simples y 1C."
   },
   {
     "q": "¿Qué comparación entre un espermatocito secundario al terminar meiosis I y una espermátida al terminar meiosis II es correcta?",
     "o": [
-      "Ambos tienen n, pero el secundario 2c y la espermátida 1c.",
-      "El secundario es 2n, 4c y la espermátida n, 2c.",
-      "Ambos tienen n, 1c.",
+      "Ambos tienen n, pero el secundario 2C y la espermátida 1C.",
+      "El secundario es 2n, 4C y la espermátida n, 2C.",
+      "Ambos tienen n, 1C.",
       "La espermátida tiene el doble de ADN."
     ],
     "a": 0,
-    "e": "Después de meiosis I, el espermatocito secundario es n, 2c. Después de meiosis II, la espermátida es n, 1c."
+    "e": "Después de meiosis I, el espermatocito secundario es n, 2C. Después de meiosis II, la espermátida es n, 1C."
   },
   {
     "q": "¿Cómo se comparan el número de cromosomas y el contenido de ADN de un ovocito primario en profase I y un espermatocito secundario?",
     "o": [
-      "Ambos tienen 23 cromosomas y 2c.",
-      "El ovocito primario tiene 46 cromosomas y 4c; el secundario 23 cromosomas y 2c.",
-      "El ovocito tiene 92 cromosomas y 2c.",
-      "Ambos tienen 46 cromosomas y 4c."
+      "Ambos tienen 23 cromosomas y 2C.",
+      "El ovocito primario tiene 46 cromosomas y 4C; el secundario 23 cromosomas y 2C.",
+      "El ovocito tiene 92 cromosomas y 2C.",
+      "Ambos tienen 46 cromosomas y 4C."
     ],
     "a": 1,
-    "e": "El ovocito primario tiene 2n, 4c; el espermatocito secundario n, 2c. Los cromosomas se cuentan por centrómeros."
+    "e": "El ovocito primario tiene 2n, 4C; el espermatocito secundario n, 2C. Los cromosomas se cuentan por centrómeros."
   },
   {
     "q": "Una célula primaria masculina completa meiosis I. ¿Cómo se compara el ADN de las dos células secundarias juntas con el ADN de la célula primaria antes de dividirse?",
     "o": [
       "Las dos células juntas tienen la mitad.",
-      "Las dos células juntas conservan 4c en total; cada una recibe 2c.",
+      "Las dos células juntas conservan 4C en total; cada una recibe 2C.",
       "Las dos juntas tienen 8c.",
-      "Cada secundaria tiene 1c, total 2c."
+      "Cada secundaria tiene 1C, total 2C."
     ],
     "a": 1,
-    "e": "Antes de meiosis I el espermatocito primario contiene 4c. Cada célula secundaria recibe 2c; juntas conservan los 4c iniciales."
+    "e": "Antes de meiosis I el espermatocito primario contiene 4C. Cada célula secundaria recibe 2C; juntas conservan los 4C iniciales."
   },
   {
     "q": "Si se considera el ADN total de los cuatro productos de la espermatogénesis al finalizar meiosis II, ¿cómo se compara con el ADN del espermatocito primario antes de dividirse?",
     "o": [
-      "Los cuatro productos juntos contienen 4c, igual que la célula primaria; cada espermátida tiene 1c.",
-      "Los cuatro juntos contienen 1c.",
+      "Los cuatro productos juntos contienen 4C, igual que la célula primaria; cada espermátida tiene 1C.",
+      "Los cuatro juntos contienen 1C.",
       "Los cuatro juntos contienen 8c.",
-      "Cada espermátida tiene 4c."
+      "Cada espermátida tiene 4C."
     ],
     "a": 0,
-    "e": "El espermatocito primario empieza con 4c. Al final hay cuatro espermátidas de 1c: 4 × 1c = 4c en conjunto."
+    "e": "El espermatocito primario empieza con 4C. Al final hay cuatro espermátidas de 1C: 4 × 1C = 4C en conjunto."
   },
   {
     "q": "¿Qué contiene más ADN por célula: el primer cuerpo polar recién formado o un espermatozoide maduro?",
     "o": [
-      "El espermatozoide: 2c frente a 1c.",
-      "Ambos tienen 1c.",
-      "El primer cuerpo polar: 2c frente a 1c, aunque tenga mucho menos citoplasma.",
-      "El primer cuerpo polar es 2n, 4c."
+      "El espermatozoide: 2C frente a 1C.",
+      "Ambos tienen 1C.",
+      "El primer cuerpo polar: 2C frente a 1C, aunque tenga mucho menos citoplasma.",
+      "El primer cuerpo polar es 2n, 4C."
     ],
     "a": 2,
-    "e": "El primer cuerpo polar se forma al completar meiosis I y es n, 2c. El espermatozoide es n, 1c. El tamaño citoplasmático no determina el ADN nuclear."
+    "e": "El primer cuerpo polar se forma al completar meiosis I y es n, 2C. El espermatozoide es n, 1C. El tamaño citoplasmático no determina el ADN nuclear."
   },
   {
     "q": "¿Qué comparación es correcta entre el segundo cuerpo polar y un espermatozoide maduro?",
     "o": [
-      "El segundo cuerpo polar tiene 2c y el espermatozoide 1c.",
-      "Ambos son haploides con cromosomas simples y 1c.",
+      "El segundo cuerpo polar tiene 2C y el espermatozoide 1C.",
+      "Ambos son haploides con cromosomas simples y 1C.",
       "El segundo cuerpo polar es diploide.",
-      "El espermatozoide tiene 4c."
+      "El espermatozoide tiene 4C."
     ],
     "a": 1,
-    "e": "El segundo cuerpo polar se produce al finalizar meiosis II: es n, 1c, al igual que el óvulo y el espermatozoide maduros."
+    "e": "El segundo cuerpo polar se produce al finalizar meiosis II: es n, 1C, al igual que el óvulo y el espermatozoide maduros."
   },
   {
     "q": "Compara un ovocito secundario en metafase II con una espermatogonia en G1. ¿Qué afirmación distingue correctamente ADN y ploidía?",
     "o": [
-      "Ambos tienen 2c, pero el ovocito es n con 23 cromosomas duplicados y la espermatogonia 2n con 46 simples.",
-      "Ambos son 2n porque tienen 2c.",
-      "El ovocito tiene 4c y la espermatogonia 1c.",
+      "Ambos tienen 2C, pero el ovocito es n con 23 cromosomas duplicados y la espermatogonia 2n con 46 simples.",
+      "Ambos son 2n porque tienen 2C.",
+      "El ovocito tiene 4C y la espermatogonia 1C.",
       "La espermatogonia tiene menos cromosomas."
     ],
     "a": 0,
-    "e": "Ambas tienen 2c de ADN total, pero el ovocito es haploide con 23 cromosomas duplicados; la espermatogonia es diploide con 46 simples."
+    "e": "Ambas tienen 2C de ADN total, pero el ovocito es haploide con 23 cromosomas duplicados; la espermatogonia es diploide con 46 simples."
   },
   {
     "q": "Compara una espermatogonia en G1 y un ovocito primario detenido en profase I. ¿Qué afirmación es correcta?",
     "o": [
-      "Tienen igual número de cromosomas, 46, pero el ovocito tiene el doble de ADN: 4c frente a 2c.",
+      "Tienen igual número de cromosomas, 46, pero el ovocito tiene el doble de ADN: 4C frente a 2C.",
       "El ovocito tiene 92 cromosomas.",
       "La espermatogonia tiene más ADN.",
-      "Ambos tienen 46 cromosomas simples y 2c."
+      "Ambos tienen 46 cromosomas simples y 2C."
     ],
     "a": 0,
-    "e": "Ambas conservan 46 cromosomas y son diploides. El ovocito primario ya replicó su ADN: 4c; la espermatogonia en G1 tiene 2c."
+    "e": "Ambas conservan 46 cromosomas y son diploides. El ovocito primario ya replicó su ADN: 4C; la espermatogonia en G1 tiene 2C."
   },
   {
     "q": "¿Qué pareja tiene igual cantidad de ADN por célula, pero distinta ploidía: ovocito secundario en metafase II o espermatogonia en G1?",
     "o": [
-      "No tienen igual ADN: el ovocito tiene 4c y la espermatogonia 2c.",
-      "Ambos tienen 2c, pero el ovocito es n y la espermatogonia 2n.",
-      "Ambos son n, 2c.",
-      "El ovocito tiene 1c y la espermatogonia 4c."
+      "No tienen igual ADN: el ovocito tiene 4C y la espermatogonia 2C.",
+      "Ambos tienen 2C, pero el ovocito es n y la espermatogonia 2n.",
+      "Ambos son n, 2C.",
+      "El ovocito tiene 1C y la espermatogonia 4C."
     ],
     "a": 1,
-    "e": "El ovocito secundario tiene n, 2c; la espermatogonia en G1 tiene 2n, 2c. Igual cantidad total de ADN no significa igual número de juegos cromosómicos."
+    "e": "El ovocito secundario tiene n, 2C; la espermatogonia en G1 tiene 2n, 2C. Igual cantidad total de ADN no significa igual número de juegos cromosómicos."
   },
   {
     "q": "¿Cuál comparación muestra dos células con el mismo número de cromosomas, pero diferente cantidad de moléculas de ADN?",
@@ -379,25 +378,25 @@ const COMPARACIONES_ADN = [
       "Espermátida y espermatozoide: ambos 23 cromosomas, pero 23 y 46 moléculas.",
       "Espermatogonia en G1 y ovocito primario en profase I: ambas 46 cromosomas, pero 46 y 92 moléculas de ADN.",
       "Ovocito secundario y espermatocito secundario: 23 cromosomas, pero 23 y 92 moléculas.",
-      "Óvulo y cigoto: ambos 46 cromosomas y 1c."
+      "Óvulo y cigoto: ambos 46 cromosomas y 1C."
     ],
     "a": 1,
-    "e": "Ambas tienen 46 cromosomas. La espermatogonia en G1 tiene cromosomas simples (46 moléculas de ADN, 2c); el ovocito primario tiene duplicados (92 moléculas, 4c)."
+    "e": "Ambas tienen 46 cromosomas. La espermatogonia en G1 tiene cromosomas simples (46 moléculas de ADN, 2C); el ovocito primario tiene duplicados (92 moléculas, 4C)."
   },
   {
     "q": "¿Qué cambio ocurre en el contenido de ADN al pasar de una célula diploide en G1 a un espermatocito primario después de la fase S?",
     "o": [
-      "Pasa de 2c a 4c sin cambiar 2n ni los 46 cromosomas.",
-      "Pasa de 2n a n y de 2c a 1c.",
-      "Pasa de 46 a 92 cromosomas y mantiene 2c.",
-      "Pasa de 2c a 1c."
+      "Pasa de 2C a 4C sin cambiar 2n ni los 46 cromosomas.",
+      "Pasa de 2n a n y de 2C a 1C.",
+      "Pasa de 46 a 92 cromosomas y mantiene 2C.",
+      "Pasa de 2C a 1C."
     ],
     "a": 0,
-    "e": "Durante fase S se duplica el ADN de 2c a 4c. El número de cromosomas sigue siendo 46 y la ploidía 2n; cada cromosoma pasa a tener dos cromátidas."
+    "e": "Durante fase S se duplica el ADN de 2C a 4C. El número de cromosomas sigue siendo 46 y la ploidía 2n; cada cromosoma pasa a tener dos cromátidas."
   }
 ];
 const EXPLICACION = [
-{h:'Ploidía y contenido de ADN',p:'La ploidía (n o 2n) expresa la cantidad de juegos cromosómicos. El contenido de ADN (c) indica cuánto material genético posee la célula. La replicación transforma 2c en 4c, pero no duplica la ploidía ni el número de cromosomas.'},
+{h:'Ploidía y contenido de ADN',p:'La ploidía (n o 2n) expresa la cantidad de juegos cromosómicos. El contenido de ADN (c) indica cuánto material genético posee la célula. La replicación transforma 2C en 4C, pero no duplica la ploidía ni el número de cromosomas.'},
 {h:'Meiosis I: división reduccional',p:'En profase I ocurren leptonema, cigonema, paquinema, diplonema y diacinesis. La sinapsis aproxima homólogos; el crossing over genera recombinación entre cromátidas no hermanas. En anafase I se separan los homólogos y cada célula resultante es haploide, con cromosomas duplicados.'},
 {h:'Meiosis II: división ecuacional',p:'No hay una nueva replicación de ADN. Los cromosomas se alinean individualmente y en anafase II se separan las cromátidas hermanas. El resultado general son cuatro productos haploides con cromosomas simples.'},
 {h:'Espermatogénesis y espermiogénesis',p:'La espermatogénesis ocurre en los túbulos seminíferos y la diferenciación meiótica comienza en la pubertad. Cada espermatocito primario produce cuatro espermátidas. La espermiogénesis es la diferenciación morfológica de esas espermátidas en espermatozoides: formación del acrosoma y flagelo, condensación nuclear y pérdida de gran parte del citoplasma.'},
@@ -413,13 +412,13 @@ export function abrirLabGametogenesis({app,volver}){
  const stop=()=>{if(timer){clearInterval(timer);timer=null;}playing=false;};
  function statsFor(id,N){
   const n=N/2;
-  if(id==='g1')return {pl:'2n',chr:N,ch:N,dna:N,c:'2c',label:'Por célula'};
-  if(id==='s'||['lepto','cygo','pachi','diplo','diaci','meta1'].includes(id))return {pl:'2n',chr:N,ch:N*2,dna:N*2,c:'4c',label:'Por célula'};
-  if(id==='ana1')return {pl:'n',chr:n,ch:N,dna:N,c:'2c',label:'Por futuro núcleo'};
-  if(id==='telo1'||id==='pro2'||id==='meta2')return {pl:'n',chr:n,ch:N,dna:N,c:'2c',label:'Por célula'};
-  if(id==='ana2')return {pl:'n',chr:n,ch:n,dna:n,c:'1c',label:'Por futuro núcleo'};
-  if(id==='telo2')return {pl:'n',chr:n,ch:n,dna:n,c:'1c',label:'Por producto'};
-  return {pl:'2n',chr:N,ch:N,dna:N,c:'2c',label:'Por célula'};
+  if(id==='g1')return {pl:'2n',chr:N,ch:N,dna:N,c:'2C',label:'Por célula'};
+  if(id==='s'||['lepto','cygo','pachi','diplo','diaci','meta1'].includes(id))return {pl:'2n',chr:N,ch:N*2,dna:N*2,c:'4C',label:'Por célula'};
+  if(id==='ana1')return {pl:'n',chr:n,ch:N,dna:N,c:'2C',label:'Por futuro núcleo'};
+  if(id==='telo1'||id==='pro2'||id==='meta2')return {pl:'n',chr:n,ch:N,dna:N,c:'2C',label:'Por célula'};
+  if(id==='ana2')return {pl:'n',chr:n,ch:n,dna:n,c:'1C',label:'Por futuro núcleo'};
+  if(id==='telo2')return {pl:'n',chr:n,ch:n,dna:n,c:'1C',label:'Por producto'};
+  return {pl:'2n',chr:N,ch:N,dna:N,c:'2C',label:'Por célula'};
  }
  function statCards(s){return '<div class="gm-stats"><div class="gm-stat"><span>Ploidía</span><b>'+s.pl+'</b></div><div class="gm-stat"><span>Cromosomas</span><b>'+s.chr+'</b></div><div class="gm-stat"><span>Cromátidas</span><b>'+s.ch+'</b></div><div class="gm-stat"><span>Moléculas de ADN</span><b>'+s.dna+'</b></div><div class="gm-stat"><span>Contenido</span><b>'+s.c+'</b></div><div class="gm-stat"><span>Referencia</span><b>'+s.label+'</b></div></div>';}
  function ellipse(x,y,rx,ry,stroke){return '<ellipse cx="'+x+'" cy="'+y+'" rx="'+rx+'" ry="'+ry+'" fill="#10234a" fill-opacity=".8" stroke="'+(stroke||'#6685d4')+'" stroke-width="2.5"/>';}
@@ -477,10 +476,10 @@ export function abrirLabGametogenesis({app,volver}){
    else{[[130,125],[300,125],[470,125],[640,125]].forEach((p,j)=>{const c=['#a99aff','#5ce5bf','#ff9d80','#f3ce67'][j];s+='<g><ellipse cx="'+p[0]+'" cy="'+p[1]+'" rx="19" ry="24" fill="'+c+'" stroke="#fff" stroke-width="1.2"/><path d="M'+p[0]+' '+(p[1]+22)+' Q'+(p[0]-24)+' 220 '+(p[0]+4)+' 280" fill="none" stroke="#7edcf4" stroke-width="4" stroke-linecap="round"/><path d="M'+(p[0]-12)+' '+(p[1]-20)+' Q'+p[0]+' '+(p[1]-38)+' '+(p[0]+13)+' '+(p[1]-20)+'" fill="#ffc66d" stroke="#ffe5ae"/></g>';});s+=caption(380,35,'ESPERMATOZOIDES')+caption(380,300,'Cabeza · acrosoma · pieza intermedia · flagelo','#5ce5bf');}
   }else{
    if(i===0){s+=ellipse(380,150,75,70)+chromosome(355,140,'#a99aff',false)+chromosome(405,165,'#ff9d80',false)+caption(380,35,'OVOGONIA · 2n')+caption(380,260,'Proliferación mitótica durante la vida fetal','#a9caff');}
-   else if(i===1){s+=ellipse(360,150,105,95)+ellipse(360,150,69,61,'#a99aff')+chromosome(335,130,'#a99aff',true)+chromosome(385,170,'#ff9d80',true)+caption(360,35,'OVOCITO PRIMARIO · 2n, 4c')+caption(360,275,'Profase I avanzada · dictioteno','#ffcf78')+'<rect x="485" y="110" width="190" height="58" rx="12" fill="#2b2336" stroke="#ffbd70"/>'+caption(580,134,'DETENIDO','#ffcf78')+caption(580,153,'hasta la pubertad','#eaf1ff');}
+   else if(i===1){s+=ellipse(360,150,105,95)+ellipse(360,150,69,61,'#a99aff')+chromosome(335,130,'#a99aff',true)+chromosome(385,170,'#ff9d80',true)+caption(360,35,'OVOCITO PRIMARIO · 2n, 4C')+caption(360,275,'Profase I avanzada · dictioteno','#ffcf78')+'<rect x="485" y="110" width="190" height="58" rx="12" fill="#2b2336" stroke="#ffbd70"/>'+caption(580,134,'DETENIDO','#ffcf78')+caption(580,153,'hasta la pubertad','#eaf1ff');}
    else if(i===2){s+=ellipse(255,150,102,94)+ellipse(500,150,27,25)+chromosome(230,145,'#a99aff',true)+chromosome(280,165,'#ff9d80',true)+chromosome(500,150,'#ffcf78',true)+caption(255,35,'OVOCITO SECUNDARIO')+caption(500,215,'1.er cuerpo polar','#ffcf78')+caption(255,276,'Casi todo el citoplasma','#5ce5bf');}
    else if(i===3){s+=ellipse(345,150,112,100)+chromosome(315,130,'#a99aff',true)+chromosome(375,170,'#ff9d80',true)+ellipse(495,230,21,19)+caption(345,35,'OVOCITO II')+caption(345,275,'Metafase II · ovulación','#ffcf78')+caption(495,270,'1.er cuerpo polar','#a9caff')+'<rect x="485" y="65" width="190" height="52" rx="12" fill="#2b2336" stroke="#ffbd70"/>'+caption(580,87,'DETENIDO','#ffcf78')+caption(580,104,'hasta fecundación','#eaf1ff');}
-   else{s+=ellipse(330,150,104,94)+chromosome(330,150,'#a99aff',false)+ellipse(515,90,22,18)+ellipse(515,155,16,14)+ellipse(515,210,12,10)+caption(330,35,'ÓVULO · n, 1c')+caption(515,255,'Cuerpos polares',11,'#ffcf78')+'<path d="M650 150 Q610 125 585 138" fill="none" stroke="#7edcf4" stroke-width="3" stroke-linecap="round"/>'+caption(640,115,'Espermatozoide',10,'#7edcf4')+caption(380,300,'La unión de pronúcleos restablece 2n en el cigoto','#5ce5bf');}
+   else{s+=ellipse(330,150,104,94)+chromosome(330,150,'#a99aff',false)+ellipse(515,90,22,18)+ellipse(515,155,16,14)+ellipse(515,210,12,10)+caption(330,35,'ÓVULO · n, 1C')+caption(515,255,'Cuerpos polares',11,'#ffcf78')+'<path d="M650 150 Q610 125 585 138" fill="none" stroke="#7edcf4" stroke-width="3" stroke-linecap="round"/>'+caption(640,115,'Espermatozoide',10,'#7edcf4')+caption(380,300,'La unión de pronúcleos restablece 2n en el cigoto','#5ce5bf');}
   }
   return s+'</svg>';
  }
@@ -493,11 +492,11 @@ export function abrirLabGametogenesis({app,volver}){
  }
  function calcState(){
   const N=n2,n=N/2;
-  if(calc==='g1')return {title:'G1 · antes de replicar',pl:'2n',chr:N,chrom:N,dna:N,c:'2c',desc:'Cada cromosoma tiene una sola cromátida. La célula conserva dos juegos cromosómicos.'};
-  if(calc==='s')return {title:'Después de fase S / metafase I',pl:'2n',chr:N,chrom:N*2,dna:N*2,c:'4c',desc:'El ADN se duplicó: cada cromosoma tiene dos cromátidas. No cambió el número de cromosomas.'};
-  if(calc==='mi1')return {title:'Después de meiosis I',pl:'n',chr:n,chrom:N,dna:N,c:'2c',desc:'Los homólogos se separaron. Cada célula es haploide, pero conserva cromosomas duplicados.'};
-  if(calc==='mii')return {title:'Después de meiosis II',pl:'n',chr:n,chrom:n,dna:n,c:'1c',desc:'Las cromátidas hermanas se separaron. Cada producto haploide tiene cromosomas simples.'};
-  return {title:'Ovocito secundario · metafase II',pl:'n',chr:n,chrom:N,dna:N,c:'2c',desc:'El ovocito secundario ya es haploide, aunque sus cromosomas siguen duplicados. Permanece detenido hasta la fecundación.'};
+  if(calc==='g1')return {title:'G1 · antes de replicar',pl:'2n',chr:N,chrom:N,dna:N,c:'2C',desc:'Cada cromosoma tiene una sola cromátida. La célula conserva dos juegos cromosómicos.'};
+  if(calc==='s')return {title:'Después de fase S / metafase I',pl:'2n',chr:N,chrom:N*2,dna:N*2,c:'4C',desc:'El ADN se duplicó: cada cromosoma tiene dos cromátidas. No cambió el número de cromosomas.'};
+  if(calc==='mi1')return {title:'Después de meiosis I',pl:'n',chr:n,chrom:N,dna:N,c:'2C',desc:'Los homólogos se separaron. Cada célula es haploide, pero conserva cromosomas duplicados.'};
+  if(calc==='mii')return {title:'Después de meiosis II',pl:'n',chr:n,chrom:n,dna:n,c:'1C',desc:'Las cromátidas hermanas se separaron. Cada producto haploide tiene cromosomas simples.'};
+  return {title:'Ovocito secundario · metafase II',pl:'n',chr:n,chrom:N,dna:N,c:'2C',desc:'El ovocito secundario ya es haploide, aunque sus cromosomas siguen duplicados. Permanece detenido hasta la fecundación.'};
  }
  function renderCalc(){
   const x=calcState(),mount=app.querySelector('#gm-view');

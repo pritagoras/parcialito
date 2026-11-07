@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-05T19:00:00Z",
+  "generado": "2026-11-07T21:54:59Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -286,7 +286,7 @@
     },
     {
       "id": "ipc-2",
-      "nombre": "IPC",
+      "nombre": "IPC 2",
       "emoji": "📜",
       "temas": [
         {

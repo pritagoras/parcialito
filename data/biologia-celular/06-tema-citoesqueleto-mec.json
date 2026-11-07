@@ -11,7 +11,7 @@
         "Microtúbulos: 25 nm, Filamentos Intermedios: 8 nm, Microfilamentos: 10 nm."
       ],
       "correcta": "A",
-      "explicacion": "El esquema comparativo especifica que los microtúbulos tienen un diámetro de 25 nm, los filamentos intermedios miden 10 nm y los microfilamentos miden 8 nm[cite: 148]. Confundir los diámetros de los filamentos intermedios y los microfilamentos es un error común si no se revisan bien los valores[cite: 148]."
+      "explicacion": "El esquema comparativo especifica que los microtúbulos tienen un diámetro de 25 nm, los filamentos intermedios miden 10 nm y los microfilamentos miden 8 nm. Confundir los diámetros de los filamentos intermedios y los microfilamentos es un error común si no se revisan bien los valores."
     },
     {
       "pregunta": "¿Cómo están constituidos los heterodímeros que forman la unidad de subunidad del microtúbulo?",
@@ -22,7 +22,7 @@
         "Por proteínas de kinesina y dineína unidas covalentemente."
       ],
       "correcta": "B",
-      "explicacion": "La subunidad básica del microtúbulo es el heterodímero de tubulina formado por tubulina alfa y tubulina beta[cite: 149]. La actina constituye los microfilamentos[cite: 163] y las vimentinas o queratinas forman filamentos intermedios[cite: 169]."
+      "explicacion": "La subunidad básica del microtúbulo es el heterodímero de tubulina formado por tubulina alfa y tubulina beta. La actina constituye los microfilamentos y las vimentinas o queratinas forman filamentos intermedios."
     },
     {
       "pregunta": "¿Qué diferencia funcional de velocidad caracteriza a los extremos polarizados de un microtúbulo?",
@@ -33,7 +33,7 @@
         "El extremo menos carece de polaridad porque se encuentra completamente bloqueado por la pared celular."
       ],
       "correcta": "B",
-      "explicacion": "Los microtúbulos tienen polaridad: un extremo (extremo más) tiende a polimerizar o despolimerizar a mayor velocidad, mientras que en el otro extremo (extremo menos) ocurre lo mismo pero a menor velocidad[cite: 150]."
+      "explicacion": "Los microtúbulos tienen polaridad: un extremo (extremo más) tiende a polimerizar o despolimerizar a mayor velocidad, mientras que en el otro extremo (extremo menos) ocurre lo mismo pero a menor velocidad."
     },
     {
       "pregunta": "¿Qué estructura celular actúa como el Centro Organizador de Microtúbulos (COMT) citoplasmáticos en la interfase celular?",
@@ -44,7 +44,7 @@
         "El desmosoma localizado en la cara apico-lateral."
       ],
       "correcta": "B",
-      "explicacion": "El centrosoma o centro celular, mediante su matriz pericentriolar, funciona como el COMT que organiza la red de microtúbulos citoplasmáticos[cite: 151]. El cinetocoro es el punto de anclaje de microtúbulos al cromosoma en la división[cite: 153]."
+      "explicacion": "El centrosoma o centro celular, mediante su matriz pericentriolar, funciona como el COMT que organiza la red de microtúbulos citoplasmáticos. El cinetocoro es el punto de anclaje de microtúbulos al cromosoma en la división."
     },
     {
       "pregunta": "¿En qué sentido desplazan sus cargas a lo largo de los microtúbulos las proteínas motoras kinesina y dineína respectivamente?",
@@ -55,7 +55,7 @@
         "La kinesina transporta vesículas sobre filamentos de actina y la dineína sobre microtúbulos."
       ],
       "correcta": "B",
-      "explicacion": "El material explicita que la kinesina transporta desde el extremo menos hacia el extremo más, mientras que la dineína lo hace desde el extremo más hacia el extremo menos[cite: 152]."
+      "explicacion": "El material explicita que la kinesina transporta desde el extremo menos hacia el extremo más, mientras que la dineína lo hace desde el extremo más hacia el extremo menos."
     },
     {
       "pregunta": "¿Qué disposición de microtúbulos presenta la estructura interna de un centríolo?",
@@ -66,7 +66,7 @@
         "Disposición 13+0 integrada por trece protofilamentos individuales paralelos."
       ],
       "correcta": "B",
-      "explicacion": "Un centríolo tiene una estructura con disposición 9+0 formada por 9 tripletes de microtúbulos (con un microtúbulo A completo y los B y C incompletos)[cite: 155]."
+      "explicacion": "Un centríolo tiene una estructura con disposición 9+0 formada por 9 tripletes de microtúbulos (con un microtúbulo A completo y los B y C incompletos)."
     },
     {
       "pregunta": "¿Cuál es la diferencia estructural entre el axonema de un cilio y su cuerpo basal?",
@@ -77,7 +77,7 @@
         "El axonema carece de brazos de dineína mientras que el cuerpo basal contiene dineína y nexina."
       ],
       "correcta": "A",
-      "explicacion": "El cilio en su porción sobresaliente (axonema) tiene disposición 9+2 con dobletes externos y un par central, mientras que el cuerpo basal tiene disposición 9+0 con 9 tripletes[cite: 159, 162]."
+      "explicacion": "El cilio en su porción sobresaliente (axonema) tiene disposición 9+2 con dobletes externos y un par central, mientras que el cuerpo basal tiene disposición 9+0 con 9 tripletes."
     },
     {
       "pregunta": "¿Qué consecuencia fisiológica produce un defecto genético en los brazos de dineína de las cilias o flagelos?",
@@ -88,7 +88,7 @@
         "Ruptura de la pared celular en las células vegetales adyacentes."
       ],
       "correcta": "B",
-      "explicacion": "Los brazos de dineína son los motores responsables del deslizamiento y movimiento del axonema; un defecto en la dineína impide el movimiento i.e., inmovilidad flagelar en espermatozoides o cilias respiratorias[cite: 160, 161]."
+      "explicacion": "Los brazos de dineína son los motores responsables del deslizamiento y movimiento del axonema; un defecto en la dineína impide el movimiento i.e., inmovilidad flagelar en espermatozoides o cilias respiratorias."
     },
     {
       "pregunta": "¿Cómo actúa la droga Paclitaxel (Taxol) sobre la dinámica de los microtúbulos?",
@@ -99,7 +99,7 @@
         "Inhibe de forma competitiva el movimiento de las miosinas II sobre el anillo contráctil."
       ],
       "correcta": "B",
-      "explicacion": "El Taxol impide la despolimerización de los microtúbulos, estabilizándolos de forma anómala, lo que frena la dinámica del huso mitótico y bloquea la división celular[cite: 167]."
+      "explicacion": "El Taxol impide la despolimerización de los microtúbulos, estabilizándolos de forma anómala, lo que frena la dinámica del huso mitótico y bloquea la división celular."
     },
     {
       "pregunta": "¿Qué efecto produce la citocalasina B en el citoesqueleto celular?",
@@ -110,25 +110,25 @@
         "Degrada selectivamente los tetrámeros solubles de vimentina."
       ],
       "correcta": "B",
-      "explicacion": "La citocalasina B actúa sobre los microfilamentos de actina uniéndose a sus extremos, lo que detiene su polimerización y conduce a su despolimerización[cite: 167]."
+      "explicacion": "La citocalasina B actúa sobre los microfilamentos de actina uniéndose a sus extremos, lo que detiene su polimerización y conduce a su despolimerización."
     },
     {
       "pregunta": "¿Qué nucleótido hidroliza la actina G para polimerizarse y transformarse en actina F?",
       "opciones": ["GTP", "ATP", "CTP", "AMPc"],
       "correcta": "B",
-      "explicacion": "Los monómeros de actina G requieren ATP durante el proceso de nucleación y polimerización para formar el filamento helicoidal de actina F[cite: 163]."
+      "explicacion": "Los monómeros de actina G requieren ATP durante el proceso de nucleación y polimerización para formar el filamento helicoidal de actina F."
     },
     {
       "pregunta": "¿Qué estructuras celulares de la migración celular están constituidas por redes o haces de microfilamentos de actina?",
       "opciones": ["Cilias y flagelos.", "Lamelipodios y filopodios.", "Desmotúbulos y plasmodesmos.", "Centríolos y axonemas."],
       "correcta": "B",
-      "explicacion": "El movimiento ameboide y la migración celular dependen del reordenamiento de los microfilamentos de actina que forman proyecciones llamadas lamelipodios (redes) y filopodios (haces)[cite: 164]."
+      "explicacion": "El movimiento ameboide y la migración celular dependen del reordenamiento de los microfilamentos de actina que forman proyecciones llamadas lamelipodios (redes) y filopodios (haces)."
     },
     {
       "pregunta": "¿Qué proteína motora interactúa con los filamentos de actina permitiendo la contracción celular y la formación del anillo contráctil en la división celular?",
       "opciones": ["Dineína flagelar", "Miosina II", "Kinesina citoplasmática", "Conexina 43"],
       "correcta": "B",
-      "explicacion": "La contracción celular y el deslizamiento de los filamentos de actina (así como el anillo contráctil de la citocinesis) se llevan a cabo mediante la interacción con miosina II[cite: 164, 165]."
+      "explicacion": "La contracción celular y el deslizamiento de los filamentos de actina (así como el anillo contráctil de la citocinesis) se llevan a cabo mediante la interacción con miosina II."
     },
     {
       "pregunta": "¿Cuál es el componente del citoesqueleto que proporciona sostén estructural en el interior de las microvellosidades del epitelio intestinal?",
@@ -139,7 +139,7 @@
         "Microtúbulos astrales fijados a la red terminal."
       ],
       "correcta": "B",
-      "explicacion": "El eje de sostén de cada microvellosidad intestinal está formado por haces longitudinales de microfilamentos de actina[cite: 164, 165, 166]."
+      "explicacion": "El eje de sostén de cada microvellosidad intestinal está formado por haces longitudinales de microfilamentos de actina."
     },
     {
       "pregunta": "¿Qué secuencia de organización jerárquica siguen las unidades proteicas para formar un filamento intermedio?",
@@ -150,13 +150,13 @@
         "Proteína de cubierta -> Triskelion de 3 ramas -> Jaula poliédrica."
       ],
       "correcta": "A",
-      "explicacion": "Un filamento intermedio se ensambla a partir de monómeros que forman dímeros paralelos, estos se asocian en tetrámeros antiparalelos, luego forman filas llamadas protofibrillas y finalmente 8 protofibrillas agrupadas se enrollan en el filamento de 10 nm[cite: 168]."
+      "explicacion": "Un filamento intermedio se ensambla a partir de monómeros que forman dímeros paralelos, estos se asocian en tetrámeros antiparalelos, luego forman filas llamadas protofibrillas y finalmente 8 protofibrillas agrupadas se enrollan en el filamento de 10 nm."
     },
     {
       "pregunta": "¿Qué tipo de filamento intermedio se localiza en la cara interna de la envoltura nuclear constituyendo la lámina nuclear?",
       "opciones": ["Tonofilamentos de queratina", "Laminofilamentos", "Neurofilamentos", "Filamentos de vimentina"],
       "correcta": "B",
-      "explicacion": "Los laminofilamentos forman la lámina nuclear en la superficie interna de la envoltura nuclear, siendo los únicos filamentos intermedios que no se ubican en el citoplasma[cite: 169]."
+      "explicacion": "Los laminofilamentos forman la lámina nuclear en la superficie interna de la envoltura nuclear, siendo los únicos filamentos intermedios que no se ubican en el citoplasma."
     },
     {
       "pregunta": "¿En qué tipo celular específico se expresan los filamentos de desmina según la clasificación del citoesqueleto?",
@@ -167,7 +167,7 @@
         "En los fibroblastos del tejido conjuntivo."
       ],
       "correcta": "B",
-      "explicacion": "Los filamentos de desmina son los filamentos intermedios característicos que se encuentran en el músculo[cite: 169]."
+      "explicacion": "Los filamentos de desmina son los filamentos intermedios característicos que se encuentran en el músculo."
     },
     {
       "pregunta": "¿Cuál es la función principal que distingue de forma general a los filamentos intermedios frente a los microtúbulos y microfilamentos?",
@@ -178,19 +178,19 @@
         "Catalizar la hidrólisis de ATP y GTP durante la migración celular."
       ],
       "correcta": "B",
-      "explicacion": "A diferencia de las estructuras dinámicas o de transporte, la función primaria de los filamentos intermedios es brindar resistencia mecánica y fuerza de tensión a las células[cite: 168, 169]."
+      "explicacion": "A diferencia de las estructuras dinámicas o de transporte, la función primaria de los filamentos intermedios es brindar resistencia mecánica y fuerza de tensión a las células."
     },
     {
       "pregunta": "¿Qué drogas antineoplásicas actúan sobre los microtúbulos del huso mitótico impidiendo la división celular de forma similar a la colchicina?",
       "opciones": ["Citocalasina B y Faloidina.", "Vinblastina y vincristina.", "Laminina y Fibronectina.", "Ocludina y Claudina."],
       "correcta": "B",
-      "explicacion": "La vinblastina y la vincristina actúan sobre las tubulinas impidiendo la polimerización de forma selectiva en los microtúbulos del huso mitótico, deteniendo la división celular[cite: 167]."
+      "explicacion": "La vinblastina y la vincristina actúan sobre las tubulinas impidiendo la polimerización de forma selectiva en los microtúbulos del huso mitótico, deteniendo la división celular."
     },
     {
       "pregunta": "En las células gliales del sistema nervioso, ¿qué clase de filamento intermedio actúa como soporte estructural?",
       "opciones": ["Neurofilamentos", "Filamentos gliales", "Queratinas epiteliales", "Desmina"],
       "correcta": "B",
-      "explicacion": "Las células gliales contienen filamentos gliales como su clase específica de filamento intermedio de soporte[cite: 169]."
+      "explicacion": "Las células gliales contienen filamentos gliales como su clase específica de filamento intermedio de soporte."
     },
     {
       "pregunta": "¿Cómo se dividen químicamente los componentes de la matriz extracelular (MEC)?",
@@ -201,7 +201,7 @@
         "Componentes citosólicos solubles y componentes nucleares insolubles."
       ],
       "correcta": "B",
-      "explicacion": "La MEC está conformada por componentes fluidos (glicosaminoglicanos y proteoglicanos) y componentes fibrosos (proteínas estructurales como el colágeno y proteínas adhesivas como fibronectina y laminina)[cite: 171]."
+      "explicacion": "La MEC está conformada por componentes fluidos (glicosaminoglicanos y proteoglicanos) y componentes fibrosos (proteínas estructurales como el colágeno y proteínas adhesivas como fibronectina y laminina)."
     },
     {
       "pregunta": "¿Qué propiedad funcional poseen los componentes fluidos de la MEC gracias a los grupos ácidos de los glicosaminoglicanos?",
@@ -212,7 +212,7 @@
         "Degradan activamente las fibras de colágeno mediante hidrólisis ácida."
       ],
       "correcta": "B",
-      "explicacion": "Los glicosaminoglicanos poseen grupos ácidos con carga negativa que fijan cationes ($Na^+$, $K^+$) y atraen grandes cantidades de agua, formando geles hidratados que resisten fuerzas de compresión[cite: 172]."
+      "explicacion": "Los glicosaminoglicanos poseen grupos ácidos con carga negativa que fijan cationes ($Na^+$, $K^+$) y atraen grandes cantidades de agua, formando geles hidratados que resisten fuerzas de compresión."
     },
     {
       "pregunta": "¿Cuál es la función biomecánica fundamental de la proteína estructural colágeno en la matriz extracelular?",
@@ -223,13 +223,13 @@
         "Despolimerizarse frente a aumentos en la concentración de calcio citosólico."
       ],
       "correcta": "B",
-      "explicacion": "Las fibras de colágeno son componentes fibrosos estructurales cuya función principal es conferir resistencia a las fuerzas de tracción en los tejidos[cite: 173]."
+      "explicacion": "Las fibras de colágeno son componentes fibrosos estructurales cuya función principal es conferir resistencia a las fuerzas de tracción en los tejidos."
     },
     {
       "pregunta": "¿Qué tipo de colágeno se encuentra localizado característicamente en la lámina basal de las células epiteliales?",
       "opciones": ["Colágeno Tipo I", "Colágeno Tipo IV", "Colágeno Tipo II", "Colágeno Tipo III"],
       "correcta": "B",
-      "explicacion": "El material especifica que el colágeno Tipo IV está presente en la membrana o lámina basal, a diferencia de los tipos I, II y III presentes en dermis, huesos, tendones o cartílago[cite: 173]."
+      "explicacion": "El material especifica que el colágeno Tipo IV está presente en la membrana o lámina basal, a diferencia de los tipos I, II y III presentes en dermis, huesos, tendones o cartílago."
     },
     {
       "pregunta": "¿En qué tejido orgánico se halla predominantemente el colágeno Tipo II?",
@@ -240,19 +240,19 @@
         "En los axones de los neurofilamentos."
       ],
       "correcta": "B",
-      "explicacion": "El colágeno Tipo II se encuentra localizado principalmente en la matriz del tejido cartilaginoso[cite: 173]."
+      "explicacion": "El colágeno Tipo II se encuentra localizado principalmente en la matriz del tejido cartilaginoso."
     },
     {
       "pregunta": "¿Cuáles son las principales proteínas adhesivas mencionadas en la matriz extracelular?",
       "opciones": ["Tubulina y Actina G.", "Fibronectina y laminina.", "Desmoplacina y placoglobina.", "Ocludina y conexina."],
       "correcta": "B",
-      "explicacion": "Las proteínas fibrosas de la MEC incluyen a las estructurales (colágenos) y a las proteínas adhesivas (fibronectina y laminina)[cite: 171]."
+      "explicacion": "Las proteínas fibrosas de la MEC incluyen a las estructurales (colágenos) y a las proteínas adhesivas (fibronectina y laminina)."
     },
     {
       "pregunta": "¿Qué tipo celular se encarga de sintetizar y secretar la mayor parte de los componentes de la MEC en el tejido conjuntivo?",
       "opciones": ["Fibroblasto", "Célula caliciforme", "Célula cebada", "Macrófago"],
       "correcta": "A",
-      "explicacion": "El tejido conjuntivo subyacente a los epitelios está compuesto mayoritariamente por matriz extracelular producida y secretada por los fibroblastos[cite: 175]."
+      "explicacion": "El tejido conjuntivo subyacente a los epitelios está compuesto mayoritariamente por matriz extracelular producida y secretada por los fibroblastos."
     },
     {
       "pregunta": "¿Qué función cumplen las uniones estrechas (u oclusivas) en las células epiteliales?",
@@ -263,13 +263,13 @@
         "Permitir la contracción coordinada del tejido muscular cardíaco mediante acoplamiento eléctrico."
       ],
       "correcta": "B",
-      "explicacion": "Las uniones estrechas sellan el espacio intercelular impidiendo el paso libre por la vía paracelular y separan la membrana plasmática en los dominios apical y basolateral, manteniendo su asimetría[cite: 177]."
+      "explicacion": "Las uniones estrechas sellan el espacio intercelular impidiendo el paso libre por la vía paracelular y separan la membrana plasmática en los dominios apical y basolateral, manteniendo su asimetría."
     },
     {
       "pregunta": "¿Qué proteína transmembrana específica forma parte de las uniones estrechas?",
       "opciones": ["Ocludina", "Cadherina", "Conexina", "Integrina"],
       "correcta": "A",
-      "explicacion": "La ocludina (junto con las claudinas) es la proteína transmembrana encargada de sellar la vía paracelular en las uniones estrechas[cite: 177]."
+      "explicacion": "La ocludina (junto con las claudinas) es la proteína transmembrana encargada de sellar la vía paracelular en las uniones estrechas."
     },
     {
       "pregunta": "¿Cuáles son los tres tipos de uniones clasificadas como uniones de anclaje?",
@@ -280,7 +280,7 @@
         "Vía paracelular, vía transcelular y membrana basal."
       ],
       "correcta": "B",
-      "explicacion": "Las uniones de anclaje comprenden tres estructuras: desmosomas, hemidesmosomas y uniones adherentes[cite: 176, 179]."
+      "explicacion": "Las uniones de anclaje comprenden tres estructuras: desmosomas, hemidesmosomas y uniones adherentes."
     },
     {
       "pregunta": "¿Qué elementos estructurales conectan los desmosomas en el interior del citoplasma de células vecinas?",
@@ -291,13 +291,13 @@
         "Conexones formados por subunidades de conexina orientadas al espacio extracelular."
       ],
       "correcta": "B",
-      "explicacion": "Los desmosomas vinculan células entre sí acoplando las proteínas de adhesión (cadherinas) con placas de unión citoplasmáticas a las que se anclan los filamentos intermedios (ej. queratina)[cite: 170, 179]."
+      "explicacion": "Los desmosomas vinculan células entre sí acoplando las proteínas de adhesión (cadherinas) con placas de unión citoplasmáticas a las que se anclan los filamentos intermedios (ej. queratina)."
     },
     {
       "pregunta": "¿Qué proteína transmembrana media la unión entre la célula y la matriz extracelular en los hemidesmosomas?",
       "opciones": ["Cadherina", "Integrina", "Conexina", "Ocludina"],
       "correcta": "B",
-      "explicacion": "A diferencia de los desmosomas que usan cadherinas entre células, los hemidesmosomas emplean integrinas como proteínas transmembrana para fijar la célula a la matriz extracelular[cite: 179]."
+      "explicacion": "A diferencia de los desmosomas que usan cadherinas entre células, los hemidesmosomas emplean integrinas como proteínas transmembrana para fijar la célula a la matriz extracelular."
     },
     {
       "pregunta": "¿A qué componente del citoesqueleto se unen las proteínas transmembranas en las uniones adherentes?",
@@ -308,7 +308,7 @@
         "A laminofilamentos de la envoltura nuclear."
       ],
       "correcta": "A",
-      "explicacion": "Las uniones adherentes se caracterizan por anclarse intracelularmente a los filamentos de actina[cite: 179, 180]."
+      "explicacion": "Las uniones adherentes se caracterizan por anclarse intracelularmente a los filamentos de actina."
     },
     {
       "pregunta": "¿Qué proteínas accesorias participan intracelularmente en el complejo de la unión adherente conectando la integrina con la actina?",
@@ -319,7 +319,7 @@
         "Ocludina, claudina y conexina."
       ],
       "correcta": "A",
-      "explicacion": "En las uniones adherentes mecánicas con la matriz, la integrina se une a los filamentos de actina mediante la mediación de un complejo proteico que incluye talina, vinculina, paxilina y alfa-actinina[cite: 180]."
+      "explicacion": "En las uniones adherentes mecánicas con la matriz, la integrina se une a los filamentos de actina mediante la mediación de un complejo proteico que incluye talina, vinculina, paxilina y alfa-actinina."
     },
     {
       "pregunta": "¿Cuál es la función principal de las uniones comunicantes, de hendidura, gap o nexus?",
@@ -330,7 +330,7 @@
         "Formar la cubierta externa impermeabilizante de las microvellosidades."
       ],
       "correcta": "B",
-      "explicacion": "Las uniones comunicantes forman canales que conectan los citoplasmas de células contiguas, haciendo posible el transporte pasivo de pequeños metabolitos (acoplamiento metabólico) e iones (acoplamiento eléctrico)[cite: 181]."
+      "explicacion": "Las uniones comunicantes forman canales que conectan los citoplasmas de células contiguas, haciendo posible el transporte pasivo de pequeños metabolitos (acoplamiento metabólico) e iones (acoplamiento eléctrico)."
     },
     {
       "pregunta": "¿Cómo está constituido estructuralmente un 'conexón' en una unión de hendidura (gap)?",
@@ -341,7 +341,7 @@
         "Por un agregados poliméricos de proteoglicanos e hidratos de carbono."
       ],
       "correcta": "B",
-      "explicacion": "Un conexón es la semicanal hemisférica integrada por un anillo formado por 6 subunidades proteicas de conexina[cite: 181, 182]."
+      "explicacion": "Un conexón es la semicanal hemisférica integrada por un anillo formado por 6 subunidades proteicas de conexina."
     },
     {
       "pregunta": "¿Bajo qué condiciones fisiológicas intracelulares se produce el cierre de los canales de las uniones comunicantes?",
@@ -352,19 +352,19 @@
         "Cuando se despolimerizan los microfilamentos de actina corticales."
       ],
       "correcta": "B",
-      "explicacion": "Los canales de las uniones comunicantes son regulados: se cierran si se eleva el $Ca^{2+}$ intracelular o desciende el pH interno, protegiendo a la célula de daños en células vecinas[cite: 181]."
+      "explicacion": "Los canales de las uniones comunicantes son regulados: se cierran si se eleva el $Ca^{2+}$ intracelular o desciende el pH interno, protegiendo a la célula de daños en células vecinas."
     },
     {
       "pregunta": "¿Qué estructura de comunicación intercelular es propia de las células vegetales dada la ausencia de uniones de hendidura?",
       "opciones": ["Hemidesmosoma", "Plasmodesmo", "Axonema", "Unión adherente"],
       "correcta": "B",
-      "explicacion": "Las células vegetales carecen de las uniones comunicantes animales y emplean los plasmodesmos (canales que atraviesan la pared celular) para conectar directamente sus citoplasmas[cite: 183]."
+      "explicacion": "Las células vegetales carecen de las uniones comunicantes animales y emplean los plasmodesmos (canales que atraviesan la pared celular) para conectar directamente sus citoplasmas."
     },
     {
       "pregunta": "¿Qué elemento del retículo endoplasmático liso atraviesa el centro del canal de un plasmodesmo?",
       "opciones": ["Axonema central", "Desmotúbulo", "Conexón", "Protofibrilla"],
       "correcta": "B",
-      "explicacion": "El plasmodesmo contiene en su centro un túbulo derivado del retículo endoplasmático liso llamado desmotúbulo[cite: 183]."
+      "explicacion": "El plasmodesmo contiene en su centro un túbulo derivado del retículo endoplasmático liso llamado desmotúbulo."
     },
     {
       "pregunta": "¿En qué región de la superficie celular epitelial se localizan los hemidesmosomas?",
@@ -375,7 +375,7 @@
         "Exclusivamente en los anillos contráctiles durante la citocinesis."
       ],
       "correcta": "B",
-      "explicacion": "Los hemidesmosomas son uniones de anclaje situadas en la membrana basal de las células epiteliales para fijarlas a la matriz extracelular (lámina basal)[cite: 178, 179]."
+      "explicacion": "Los hemidesmosomas son uniones de anclaje situadas en la membrana basal de las células epiteliales para fijarlas a la matriz extracelular (lámina basal)."
     }
   ]
 }

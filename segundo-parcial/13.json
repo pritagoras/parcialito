@@ -11,7 +11,7 @@
         "5' -> 3', sintetizando la cadena de ARN de manera bidireccional."
       ],
       "correcta": "C",
-      "explicacion": "La ARN polimerasa lee la cadena molde de ADN en sentido 3'->5' para polimerizar los ribonucleótidos en sentido 5'->3'[cite: 13]."
+      "explicacion": "La ARN polimerasa lee la cadena molde de ADN en sentido 3'->5' para polimerizar los ribonucleótidos en sentido 5'->3'."
     },
     {
       "pregunta": "Respecto a la hebra de ADN utilizada como molde durante la transcripción génica, es correcto afirmar que:",
@@ -22,7 +22,7 @@
         "la hebra molde se degrada inmediatamente tras finalizar la síntesis del ARN."
       ],
       "correcta": "B",
-      "explicacion": "La ARN polimerasa sintetiza una hebra de ARN complementaria y antiparalela a la cadena de ADN que utiliza como molde[cite: 13]."
+      "explicacion": "La ARN polimerasa sintetiza una hebra de ARN complementaria y antiparalela a la cadena de ADN que utiliza como molde."
     },
     {
       "pregunta": "Tanto el proceso de replicación del ADN como el de transcripción a ARN comparten como requisito fundamental:",
@@ -33,7 +33,7 @@
         "la acción directa del complejo del espliceosoma."
       ],
       "correcta": "B",
-      "explicacion": "Ambos procesos requieren una cadena de ADN que actúe como molde para la adición de los nucleótidos correspondientes[cite: 13]."
+      "explicacion": "Ambos procesos requieren una cadena de ADN que actúe como molde para la adición de los nucleótidos correspondientes."
     },
     {
       "pregunta": "Durante la síntesis de ARN en células eucariontes y procariontes, la fuente de energía necesaria para formar los enlaces fosfodiéster proviene de:",
@@ -44,7 +44,7 @@
         "la energía potencial de la membrana nuclear."
       ],
       "correcta": "B",
-      "explicacion": "La incorporación de los ribonucleótidos trifosfato (ATP, CTP, GTP, UTP) aporta la energía necesaria mediante la separación y posterior hidrólisis del pirofosfato[cite: 13]."
+      "explicacion": "La incorporación de los ribonucleótidos trifosfato (ATP, CTP, GTP, UTP) aporta la energía necesaria mediante la separación y posterior hidrólisis del pirofosfato."
     },
     {
       "pregunta": "El mecanismo de regulación de la expresión génica conocido como empalme o splicing alternativo se caracteriza por:",
@@ -55,7 +55,7 @@
         "modificar directamente la secuencia de desoxirribonucleótidos del genoma."
       ],
       "correcta": "A",
-      "explicacion": "El splicing alternativo combina de distintas formas los exones de un pre-ARNm, produciendo diferentes ARNm maduros y variantes proteicas a partir de un mismo gen[cite: 13]."
+      "explicacion": "El splicing alternativo combina de distintas formas los exones de un pre-ARNm, produciendo diferentes ARNm maduros y variantes proteicas a partir de un mismo gen."
     },
     {
       "pregunta": "Se afirma que una molécula de ARN mensajero eucarionte es monocistrónica porque:",
@@ -66,7 +66,7 @@
         "contiene la información de varios genes de una misma vía metabólica."
       ],
       "correcta": "A",
-      "explicacion": "Un ARNm monocistrónico posee un único sitio de inicio y terminación de la traducción, traduciéndose en una sola cadena polipeptídica[cite: 13]."
+      "explicacion": "Un ARNm monocistrónico posee un único sitio de inicio y terminación de la traducción, traduciéndose en una sola cadena polipeptídica."
     },
     {
       "pregunta": "La propiedad del código genético denominada 'degeneración' se define como:",
@@ -77,7 +77,7 @@
         "la inestabilidad química de las moléculas de ARNm en el citosol."
       ],
       "correcta": "A",
-      "explicacion": "Debido a que existen 61 codones para 20 aminoácidos, la mayoría de estos son especificados por más de un codón (degeneración o redundancia del código)[cite: 13]."
+      "explicacion": "Debido a que existen 61 codones para 20 aminoácidos, la mayoría de estos son especificados por más de un codón (degeneración o redundancia del código)."
     },
     {
       "pregunta": "En el ciclo celular eucarionte, la síntesis masiva de proteínas histónicas ocurre coordinadamente con la duplicación del ADN durante la fase:",
@@ -88,7 +88,7 @@
         "M."
       ],
       "correcta": "A",
-      "explicacion": "Durante la fase S se duplica la cantidad de ADN y simultáneamente se sintetizan las histonas requeridas para empaquetar las nuevas hebras en nucleosomas[cite: 13]."
+      "explicacion": "Durante la fase S se duplica la cantidad de ADN y simultáneamente se sintetizan las histonas requeridas para empaquetar las nuevas hebras en nucleosomas."
     },
     {
       "pregunta": "En la replicación del ADN, el sitio específico de la hélice donde comienza la separación de las cadenas e inicia el proceso se denomina:",
@@ -99,7 +99,7 @@
         "Caja TATA."
       ],
       "correcta": "B",
-      "explicacion": "El origen de replicación es la secuencia específica de ADN reconocida por proteínas iniciadoras para abrir la hélice y formar las horquillas[cite: 13]."
+      "explicacion": "El origen de replicación es la secuencia específica de ADN reconocida por proteínas iniciadoras para abrir la hélice y formar las horquillas."
     },
     {
       "pregunta": "Si un cultivo de células se trata con colchicina (fármaco que bloquea la polimerización de microtúbulos), el efecto directo sobre la división celular será:",
@@ -110,7 +110,7 @@
         "inhibir la actividad de la enzima ARN polimerasa II."
       ],
       "correcta": "A",
-      "explicacion": "La colchicina despolimeriza la tubulina impidiendo la formación del huso acromático, lo que arresta la división celular en metafase[cite: 13]."
+      "explicacion": "La colchicina despolimeriza la tubulina impidiendo la formación del huso acromático, lo que arresta la división celular en metafase."
     },
     {
       "pregunta": "¿Mediante qué mecanismo meiótico pueden separarse dos genes que se encuentran originalmente ligados en un mismo cromosoma?",
@@ -121,7 +121,7 @@
         "Fusión de los cinetocoros en la metafase I."
       ],
       "correcta": "B",
-      "explicacion": "El crossing-over entre cromátides no hermanas de cromosomas homólogos permite romper el ligamiento al intercambiar segmentos y recombinar alelos[cite: 13]."
+      "explicacion": "El crossing-over entre cromátides no hermanas de cromosomas homólogos permite romper el ligamiento al intercambiar segmentos y recombinar alelos."
     },
     {
       "pregunta": "En la especie humana, el resultado directo de la segunda división meiótica (meiosis II) durante la ovogénesis es la formación de:",
@@ -132,7 +132,7 @@
         "dos ovocitos secundarios con cromosomas duplicados."
       ],
       "correcta": "A",
-      "explicacion": "La meiosis II en la ovogénesis concluye de manera asimétrica produciendo un único óvulo haploide (23 cromosomas de 1 cromátide) y el segundo cuerpo polar[cite: 13]."
+      "explicacion": "La meiosis II en la ovogénesis concluye de manera asimétrica produciendo un único óvulo haploide (23 cromosomas de 1 cromátide) y el segundo cuerpo polar."
     },
     {
       "pregunta": "Si una célula somática diploide (2n = 46) con una cantidad de ADN igual a 100 unidades en G1 se divide por mitosis, cada una de las células hijas resultantes tendrá:",
@@ -143,7 +143,7 @@
         "n = 23 cromosomas y 100 unidades de ADN."
       ],
       "correcta": "A",
-      "explicacion": "La mitosis es una división conservativa que mantiene la ploidía y restituye la cantidad de ADN propia del estado G1 en ambas células hijas[cite: 13]."
+      "explicacion": "La mitosis es una división conservativa que mantiene la ploidía y restituye la cantidad de ADN propia del estado G1 en ambas células hijas."
     },
     {
       "pregunta": "En las células germinales masculinas, la separación de las cromátides hermanas recombinadas para formar las espermátides tiene lugar durante la:",
@@ -154,7 +154,7 @@
         "Fase G2 del espermatocito I."
       ],
       "correcta": "C",
-      "explicacion": "Durante la anafase II se escinden los centrómeros separando las cromátides hermanas hacia los polos, dando origen a células haploides con cromosomas simples (espermátides)[cite: 13]."
+      "explicacion": "Durante la anafase II se escinden los centrómeros separando las cromátides hermanas hacia los polos, dando origen a células haploides con cromosomas simples (espermátides)."
     },
     {
       "pregunta": "Si un hombre de grupo sanguíneo AB (I^A I^B) concibe con una mujer de grupo sanguíneo O (ii), los genotipos posibles para su descendencia son:",
@@ -165,7 +165,7 @@
         "25% de cada grupo (A, B, AB, O)."
       ],
       "correcta": "A",
-      "explicacion": "El progenitor AB aporta el alelo I^A o I^B y la madre O apporta únicamente el alelo recesivo i, resultando en hijos heterocigotas de grupo A o B[cite: 13]."
+      "explicacion": "El progenitor AB aporta el alelo I^A o I^B y la madre O apporta únicamente el alelo recesivo i, resultando en hijos heterocigotas de grupo A o B."
     },
     {
       "pregunta": "Una célula germinal con complemento 2n = 8 que concluye la primera división meiótica (telofase I) presentará en cada polo celular:",
@@ -176,7 +176,7 @@
         "8 bivalentes apareados."
       ],
       "correcta": "A",
-      "explicacion": "La meiosis I es reduccional: divide a la mitad el número de cromosomas (n = 4 en cada polo), pero estos permanecen duplicados[cite: 13]."
+      "explicacion": "La meiosis I es reduccional: divide a la mitad el número de cromosomas (n = 4 en cada polo), pero estos permanecen duplicados."
     },
     {
       "pregunta": "Se afirma que un hombre varón (XY) es hemicigota para la mayoría de los genes localizados en el cromosoma X debido a que:",
@@ -187,7 +187,7 @@
         "ha inactivado su cromosoma X formando un corpúsculo de Barr."
       ],
       "correcta": "A",
-      "explicacion": "Al tener un solo cromosoma X (XY), el varón expresa cualquier alelo presente en este cromosoma (hemicigosis), careciendo de locus homólogo en el Y[cite: 13]."
+      "explicacion": "Al tener un solo cromosoma X (XY), el varón expresa cualquier alelo presente en este cromosoma (hemicigosis), careciendo de locus homólogo en el Y."
     },
     {
       "pregunta": "Desde el punto de vista evolutivo, la aparición de resistencia a un pesticida en una población de insectos se explica porque:",
@@ -198,7 +198,7 @@
         "la resistencia surgió por deriva génica exclusiva en poblaciones infinitas."
       ],
       "correcta": "B",
-      "explicacion": "La variación genotípica de resistencia preexistía en la población; la aplicación del químico eliminó a los susceptibles y seleccionó a los resistentes[cite: 13]."
+      "explicacion": "La variación genotípica de resistencia preexistía en la población; la aplicación del químico eliminó a los susceptibles y seleccionó a los resistentes."
     },
     {
       "pregunta": "Al cruzar dos individuos heterocigotas para dos genes independientes con dominancia completa (AaBb x AaBb), la proporción de la descendencia que expresará ambos rasgos dominantes es:",
@@ -209,7 +209,7 @@
         "1/4"
       ],
       "correcta": "A",
-      "explicacion": "La proporción fenotípica clásica mendeliana para un cruzamiento dihíbrido es 9:3:3:1, donde 9 de cada 16 descendientes muestran ambos fenotipos dominantes[cite: 13]."
+      "explicacion": "La proporción fenotípica clásica mendeliana para un cruzamiento dihíbrido es 9:3:3:1, donde 9 de cada 16 descendientes muestran ambos fenotipos dominantes."
     },
     {
       "pregunta": "Si una mujer portadora de daltonismo (X^N X^n) tiene hijos con un varón de visión normal (X^N Y), la proporción esperada de varones daltónicos respecto al total de hijos varones es de:",
@@ -220,7 +220,7 @@
         "25% del total de la descendencia femenina."
       ],
       "correcta": "A",
-      "explicacion": "Dado que el padre aporta el cromosoma Y a los varones, la mitad de estos heredará de la madre el cromosoma X^n con el alelo de la ceguera al color[cite: 13]."
+      "explicacion": "Dado que el padre aporta el cromosoma Y a los varones, la mitad de estos heredará de la madre el cromosoma X^n con el alelo de la ceguera al color."
     },
     {
       "pregunta": "Una pareja compuesta por un hombre y una mujer de ojos oscuros y cabello castaño conciben un hijo de ojos celestes y cabello rubio (ambos rasgos recesivos). Esto demuestra que los genotipos de los padres eran:",
@@ -231,7 +231,7 @@
         "hemicigotas para los dos genes."
       ],
       "correcta": "A",
-      "explicacion": "Para que nazca un hijo con dos fenotipos recesivos (nn cc), obligadamente ambos progenitores dominantes deben ser heterocigotas portadores (Nn Cc)[cite: 13]."
+      "explicacion": "Para que nazca un hijo con dos fenotipos recesivos (nn cc), obligadamente ambos progenitores dominantes deben ser heterocigotas portadores (Nn Cc)."
     },
     {
       "pregunta": "Si en un cruzamiento de prueba (retrocruza) entre un organismo de fenotipo dominante para dos genes y un homocigota recesivo (AaBb x aabb) se obtienen 4 fenotipos en proporciones 1:1:1:1, se concluye que:",
@@ -242,7 +242,7 @@
         "el progenitor de fenotipo dominante era homocigota estricto."
       ],
       "correcta": "A",
-      "explicacion": "La proporción 1:1:1:1 en una retrocruza demuestra la segregación independiente de dos loci (Segunda Ley de Mendel)[cite: 13]."
+      "explicacion": "La proporción 1:1:1:1 en una retrocruza demuestra la segregación independiente de dos loci (Segunda Ley de Mendel)."
     },
     {
       "pregunta": "La selección natural actuando como motor del cambio evolutivo requiere de forma indispensable que en la población exista:",
@@ -253,7 +253,7 @@
         "reproducción asexual obligada."
       ],
       "correcta": "A",
-      "explicacion": "Sin variación genotípica/fenotípica heredable, la selección natural no puede favorecer diferencialmente a unos genotipos sobre otros[cite: 13]."
+      "explicacion": "Sin variación genotípica/fenotípica heredable, la selección natural no puede favorecer diferencialmente a unos genotipos sobre otros."
     }
   ]
 }

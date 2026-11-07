@@ -187,6 +187,9 @@ def validar_archivo(ruta: Path):
         elif REF_LETRA.search(expl):
             avisos.append(e + 'la explicación menciona una letra de opción; la app mezcla el orden.')
 
+        if re.search(r"\[cite:", json.dumps(p, ensure_ascii=False)):
+            avisos.append(e + 'quedó un resto "[cite: N]" que dejó el LM; borralo del texto.')
+
     # Validación de tarjetas
     for n, t in enumerate(tarjetas, start=1):
         e = f"Tarjeta {n}: "
