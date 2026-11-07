@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Los .bat necesitan saltos de línea de Windows
+*.bat text eol=crlf

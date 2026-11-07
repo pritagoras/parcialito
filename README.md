@@ -14,6 +14,7 @@ y funciona como app instalable (PWA). No hay build: es HTML + JS en módulos + J
 | `data/img/` | Imágenes de las preguntas (las crea el editor) |
 | `segundo-parcial/` | JSON de "Parciales de Biología (Integrador)"; se juntan en un único juego |
 | `js/editor.js` | Editor local de materias, temas y preguntas |
+| `probar.bat` | Prueba la app en tu compu (servidor local + navegador) |
 | `tools/` | Validador, generador de índice, iconos, versionado y SQL de Supabase |
 | `PROMPT_PARA_LM.md`, `PROMPT_LAB_PARA_LM.md` | Prompts para generar preguntas y laboratorios con un LM |
 
@@ -26,6 +27,15 @@ y funciona como app instalable (PWA). No hay build: es HTML + JS en módulos + J
 
 Para revisar a mano: `python tools/validar.py` (o pasándole un archivo).
 Errores = el archivo no sirve. Avisos = anda, pero conviene mirarlo.
+
+## Probar en tu compu
+
+Hacé doble clic en `probar.bat` (necesita Python). Valida los temas, regenera el índice,
+levanta la app en `http://localhost:8000` y abre el navegador. Guardá un cambio y recargá
+con F5: el servidor no usa caché, así que ves siempre la versión nueva. Se corta con Ctrl+C.
+Si necesitás otro puerto: `python tools/servidor_local.py --puerto 8080`.
+
+Ojo: las partidas que juegues ahí también se guardan en el ranking real (Supabase).
 
 ## Reglas del formato
 
