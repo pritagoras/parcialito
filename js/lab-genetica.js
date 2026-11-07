@@ -128,9 +128,491 @@ const PREGUNTAS = [
   { t: 'sexo', q: '¿Qué se necesita para que una mujer tenga una enfermedad recesiva ligada al X?', o: ['Un solo alelo alterado', 'Dos alelos alterados: uno de cada progenitor', 'Que su padre sea portador y su madre sana', 'Que tenga un cromosoma Y'], ok: 1, exp: 'Debe ser X^aX^a: el padre tiene que estar afectado y la madre ser portadora o estar afectada.' },
   { t: 'sexo', q: 'Una mujer portadora (X^HX^h) y un varón hemofílico (X^hY) tienen un hijo. ¿Qué probabilidad hay de que tenga hemofilia, sin importar su sexo?', o: ['25 %', '75 %', '0 %', '50 %'], ok: 3, exp: 'Los cuatro genotipos posibles son X^HX^h (hija portadora), X^hX^h (hija afectada), X^HY (hijo sano) y X^hY (hijo afectado), 25 % cada uno. Hay dos afectados de cuatro.' },
   { t: 'sexo', q: '¿Qué proteína falta en la hemofilia A y cuál en la hemofilia B?', o: ['Hemofilia A: factor IX; hemofilia B: factor VIII', 'Hemofilia A: factor VIII; hemofilia B: factor IX', 'En las dos falta la hemoglobina', 'En las dos falta el fibrinógeno'], ok: 1, exp: 'La A (la más frecuente) es una deficiencia del factor VIII y la B del factor IX. Los dos genes están en el X.' },
-  { t: 'sexo', q: '¿Puede un varón transmitir un alelo ligado al X a su hijo varón?', o: ['Sí, siempre', 'Sí, solo si está afectado', 'No: a sus hijos varones les da el cromosoma Y', 'Sí, si su pareja es portadora'], ok: 2, exp: 'Un varón le da el Y a sus hijos varones y el X a sus hijas. Por eso no hay transmisión de padre a hijo varón en la herencia ligada al X.' }
+  { t: 'sexo', q: '¿Puede un varón transmitir un alelo ligado al X a su hijo varón?', o: ['Sí, siempre', 'Sí, solo si está afectado', 'No: a sus hijos varones les da el cromosoma Y', 'Sí, si su pareja es portadora'], ok: 2, exp: 'Un varón le da el Y a sus hijos varones y el X a sus hijas. Por eso no hay transmisión de padre a hijo varón en la herencia ligada al X.' },
+[
+  {
+    "t": "repaso",
+    "q": "Se cruzan dos individuos heterocigotas para un carácter (Aa × Aa). ¿Qué probabilidad existe de obtener descendientes aa?",
+    "o": [
+      "0 %",
+      "25 %",
+      "50 %",
+      "75 %"
+    ],
+    "ok": 1,
+    "exp": "El cuadro de Punnett produce AA, Aa, Aa y aa. Solo una de las cuatro combinaciones es aa: 25 %."
+  },
+  {
+    "t": "repaso",
+    "q": "En la cruza Aa × aa, ¿qué proporción genotípica se espera en la descendencia?",
+    "o": [
+      "100 % Aa",
+      "50 % Aa y 50 % aa",
+      "25 % AA, 50 % Aa y 25 % aa",
+      "100 % aa"
+    ],
+    "ok": 1,
+    "exp": "El progenitor Aa produce gametas A y a; el progenitor aa solo produce gametas a. Se obtienen Aa y aa en partes iguales."
+  },
+  {
+    "t": "repaso",
+    "q": "En una cruza Aa × Aa, ¿qué porcentaje de la descendencia expresará el carácter recesivo?",
+    "o": [
+      "25 %",
+      "50 %",
+      "75 %",
+      "100 %"
+    ],
+    "ok": 0,
+    "exp": "El fenotipo recesivo solo aparece en los individuos aa. La proporción esperada de aa en Aa × Aa es 1/4, es decir, 25 %."
+  },
+  {
+    "t": "repaso",
+    "q": "Si A determina un fenotipo dominante, ¿qué proporción fenotípica se espera al cruzar Aa × Aa?",
+    "o": [
+      "100 % dominante",
+      "50 % dominante y 50 % recesivo",
+      "25 % dominante y 75 % recesivo",
+      "75 % dominante y 25 % recesivo"
+    ],
+    "ok": 3,
+    "exp": "Tres de las cuatro combinaciones posibles son AA o Aa y expresan el rasgo dominante. Una es aa y expresa el recesivo: 3:1."
+  },
+  {
+    "t": "repaso",
+    "q": "Se cruzan dos líneas puras, una homocigota dominante (AA) y otra homocigota recesiva (aa). ¿Cómo será la F1?",
+    "o": [
+      "50 % AA y 50 % aa",
+      "100 % Aa",
+      "100 % AA",
+      "25 % AA, 50 % Aa y 25 % aa"
+    ],
+    "ok": 1,
+    "exp": "El progenitor AA solo aporta gametas A y el aa solo aporta gametas a. Toda la F1 será heterocigota Aa."
+  },
+  {
+    "t": "repaso",
+    "q": "En caballos, el pelaje negro (B) domina sobre el marrón (b). Un caballo negro de genotipo desconocido se cruza con uno marrón y nace descendencia negra y marrón en partes iguales. ¿Cuál es el genotipo del caballo negro?",
+    "o": [
+      "BB",
+      "Bb",
+      "bb",
+      "No puede tener un genotipo mendeliano"
+    ],
+    "ok": 1,
+    "exp": "El caballo marrón es bb y siempre aporta b. Para obtener mitad de crías Bb (negras) y mitad bb (marrones), el caballo negro debe ser Bb."
+  },
+  {
+    "t": "repaso",
+    "q": "En caballos, B determina pelaje negro y b pelaje marrón. ¿Qué descendencia se espera de la cruza BB × bb?",
+    "o": [
+      "100 % marrones",
+      "50 % negros y 50 % marrones",
+      "100 % negros, todos Bb",
+      "75 % negros y 25 % marrones"
+    ],
+    "ok": 2,
+    "exp": "El progenitor BB aporta siempre B y el bb aporta siempre b. Toda la descendencia será Bb y expresará el pelaje negro."
+  },
+  {
+    "t": "repaso",
+    "q": "Se cruza un caballo negro heterocigota (Bb) con uno marrón (bb). ¿Qué proporción fenotípica se espera?",
+    "o": [
+      "100 % negros",
+      "75 % negros y 25 % marrones",
+      "50 % negros y 50 % marrones",
+      "100 % marrones"
+    ],
+    "ok": 2,
+    "exp": "El caballo Bb produce gametas B y b; el bb solo produce gametas b. Se espera mitad Bb (negros) y mitad bb (marrones)."
+  },
+  {
+    "t": "repaso",
+    "q": "Dos caballos de pelaje negro tienen un potrillo marrón. Si el marrón es recesivo (bb), ¿qué genotipos debían tener los progenitores?",
+    "o": [
+      "BB y BB",
+      "BB y Bb",
+      "Bb y Bb",
+      "bb y bb"
+    ],
+    "ok": 2,
+    "exp": "El potrillo marrón es bb, por lo que recibió un alelo b de cada progenitor. Como ambos padres son negros, deben ser heterocigotas Bb."
+  },
+  {
+    "t": "repaso",
+    "q": "En ratones, el pelaje oscuro (B) domina sobre el claro (b). Un macho bb se cruza con una hembra de pelaje oscuro y el 50 % de las crías tiene pelaje oscuro. ¿Cuál es el genotipo de la hembra?",
+    "o": [
+      "BB",
+      "Bb",
+      "bb",
+      "Puede ser BB o bb"
+    ],
+    "ok": 1,
+    "exp": "El macho bb solo aporta b. Para obtener 50 % Bb (oscuros) y 50 % bb (claros), la hembra debe producir gametas B y b: es Bb."
+  },
+  {
+    "t": "repaso",
+    "q": "¿Qué genotipos pueden corresponder a un individuo que expresa un carácter dominante con dominancia completa?",
+    "o": [
+      "Únicamente AA",
+      "Únicamente Aa",
+      "AA o Aa",
+      "AA o aa"
+    ],
+    "ok": 2,
+    "exp": "Con dominancia completa, tanto el homocigota dominante AA como el heterocigota Aa expresan el fenotipo dominante. El fenotipo por sí solo no permite distinguirlos."
+  },
+  {
+    "t": "repaso",
+    "q": "¿Qué genotipo debe tener necesariamente un individuo que manifiesta un carácter recesivo?",
+    "o": [
+      "AA",
+      "Aa",
+      "AA o Aa",
+      "aa"
+    ],
+    "ok": 3,
+    "exp": "El alelo recesivo solo se expresa cuando está en homocigosis. Por eso el genotipo debe ser aa."
+  },
+  {
+    "t": "repaso",
+    "q": "Se cruza un individuo heterocigota (Aa) con uno homocigota dominante (AA). ¿Qué genotipos se esperan?",
+    "o": [
+      "50 % AA y 50 % Aa",
+      "50 % Aa y 50 % aa",
+      "100 % Aa",
+      "100 % AA"
+    ],
+    "ok": 0,
+    "exp": "El progenitor Aa produce gametas A y a; el AA solo produce gametas A. La descendencia será mitad AA y mitad Aa, y toda expresará el fenotipo dominante."
+  },
+  {
+    "t": "repaso",
+    "q": "En la cruza Aa × aa, ¿qué porcentaje de descendientes tendrá el genotipo Aa?",
+    "o": [
+      "25 %",
+      "50 %",
+      "75 %",
+      "100 %"
+    ],
+    "ok": 1,
+    "exp": "Las combinaciones posibles son Aa y aa en igual proporción. Por lo tanto, la mitad de la descendencia será Aa."
+  },
+  {
+    "t": "repaso",
+    "q": "¿Con qué individuo se debe cruzar una planta de fenotipo dominante y genotipo desconocido para realizar un cruzamiento prueba?",
+    "o": [
+      "Con una planta homocigota dominante",
+      "Con una planta heterocigota",
+      "Con una planta homocigota recesiva",
+      "Con cualquier planta de fenotipo dominante"
+    ],
+    "ok": 2,
+    "exp": "Se utiliza un individuo homocigota recesivo porque solo produce gametas recesivas. Así, el fenotipo de la descendencia permite distinguir si el individuo problema era homocigota dominante o heterocigota."
+  },
+  {
+    "t": "repaso",
+    "q": "En un cruzamiento prueba, un caballo negro de genotipo desconocido se cruza con uno marrón (bb). Si el caballo negro es BB, ¿qué descendencia se espera?",
+    "o": [
+      "100 % negros Bb",
+      "50 % negros y 50 % marrones",
+      "100 % marrones bb",
+      "25 % negros y 75 % marrones"
+    ],
+    "ok": 0,
+    "exp": "El caballo BB solo produce gametas B y el bb solo produce gametas b. Toda la descendencia será Bb y tendrá pelaje negro."
+  },
+  {
+    "t": "repaso",
+    "q": "En un cruzamiento prueba, un caballo negro heterocigota (Bb) se cruza con uno marrón (bb). ¿Qué resultado se espera?",
+    "o": [
+      "100 % negros",
+      "100 % marrones",
+      "75 % negros y 25 % marrones",
+      "50 % negros y 50 % marrones"
+    ],
+    "ok": 3,
+    "exp": "El caballo Bb produce gametas B y b en igual proporción; el bb aporta siempre b. La descendencia esperada es 1 Bb negro : 1 bb marrón."
+  },
+  {
+    "t": "repaso",
+    "q": "En la cruza Aa × Aa, ¿cuál es la proporción genotípica esperada?",
+    "o": [
+      "3 AA : 1 aa",
+      "1 AA : 2 Aa : 1 aa",
+      "1 Aa : 1 aa",
+      "3 Aa : 1 AA"
+    ],
+    "ok": 1,
+    "exp": "Las cuatro combinaciones son AA, Aa, Aa y aa. La proporción genotípica es 1:2:1."
+  },
+  {
+    "t": "repaso",
+    "q": "¿Qué tipos de gametas produce un individuo heterocigota Aa para ese gen?",
+    "o": [
+      "Solo gametas A",
+      "Solo gametas a",
+      "Gametas A y a en igual proporción",
+      "Gametas Aa"
+    ],
+    "ok": 2,
+    "exp": "Durante la formación de gametas los dos alelos se segregan. Cada gameta recibe uno solo: aproximadamente la mitad lleva A y la otra mitad a."
+  },
+  {
+    "t": "repaso",
+    "q": "¿Qué grupos sanguíneos pueden tener los descendientes de la cruza I^AI^B × ii?",
+    "o": [
+      "A y B",
+      "A y O",
+      "AB y O",
+      "A, B, AB y O"
+    ],
+    "ok": 0,
+    "exp": "El progenitor AB produce gametas I^A o I^B y el progenitor O solo produce gametas i. Se obtienen I^Ai (grupo A) o I^Bi (grupo B), 50 % de cada uno."
+  },
+  {
+    "t": "repaso",
+    "q": "Una persona del grupo A (I^Ai) tiene hijos con una persona del grupo B (I^Bi). ¿Qué grupos sanguíneos podrían aparecer?",
+    "o": [
+      "Solo A y B",
+      "A, B, AB y O, en 25 % cada uno",
+      "Solo AB y O",
+      "Solo A y AB"
+    ],
+    "ok": 1,
+    "exp": "Las gametas posibles son I^A o i y I^B o i. Las combinaciones son I^AI^B (AB), I^Ai (A), I^Bi (B) e ii (O), cada una con 25 %."
+  },
+  {
+    "t": "repaso",
+    "q": "¿Qué grupo sanguíneo tendrá la descendencia de una persona I^AI^A y otra ii?",
+    "o": [
+      "100 % grupo A",
+      "50 % A y 50 % O",
+      "100 % grupo AB",
+      "100 % grupo O"
+    ],
+    "ok": 0,
+    "exp": "El primer progenitor solo aporta I^A y el segundo solo aporta i. Todos los descendientes serán I^Ai, fenotípicamente grupo A."
+  },
+  {
+    "t": "repaso",
+    "q": "De la cruza I^AI^B × ii, ¿qué grupos sanguíneos NO pueden aparecer en la descendencia?",
+    "o": [
+      "A y B",
+      "AB y O",
+      "Solo A",
+      "Solo B"
+    ],
+    "ok": 1,
+    "exp": "Los descendientes reciben I^A o I^B del progenitor AB y siempre i del progenitor O. Por eso pueden ser A o B, pero no AB ni O."
+  },
+  {
+    "t": "repaso",
+    "q": "Una pareja en la que ambos progenitores son del grupo O tiene descendencia. ¿Qué grupo sanguíneo podrán tener sus hijos?",
+    "o": [
+      "A",
+      "B",
+      "AB",
+      "Solo O"
+    ],
+    "ok": 3,
+    "exp": "Ambos progenitores del grupo O tienen genotipo ii y solo producen gametas i. Todos sus hijos serán ii, grupo O."
+  },
+  {
+    "t": "repaso",
+    "q": "Una persona de grupo sanguíneo A puede tener cuál de estos genotipos?",
+    "o": [
+      "I^AI^A o I^Ai",
+      "I^AI^B o ii",
+      "Solo I^AI^B",
+      "I^Bi o ii"
+    ],
+    "ok": 0,
+    "exp": "El alelo I^A domina sobre i. Por eso tanto I^AI^A como I^Ai producen fenotipo A."
+  },
+  {
+    "t": "repaso",
+    "q": "Una persona de grupo sanguíneo B puede tener cuál de estos genotipos?",
+    "o": [
+      "I^AI^A o I^Ai",
+      "I^BI^B o I^Bi",
+      "Solo I^AI^B",
+      "I^Ai o ii"
+    ],
+    "ok": 1,
+    "exp": "El alelo I^B domina sobre i. Por eso los genotipos I^BI^B e I^Bi producen fenotipo B."
+  },
+  {
+    "t": "repaso",
+    "q": "Una pareja formada por una persona de grupo A y otra de grupo B tiene un hijo de grupo O. ¿Qué genotipos parentales explican ese resultado?",
+    "o": [
+      "I^AI^A × I^BI^B",
+      "I^AI^A × I^Bi",
+      "I^Ai × I^Bi",
+      "I^AI^B × ii"
+    ],
+    "ok": 2,
+    "exp": "El hijo O es ii, por lo que cada progenitor debió aportar i. El progenitor A debe ser I^Ai y el B debe ser I^Bi."
+  },
+  {
+    "t": "repaso",
+    "q": "¿Qué descendencia se espera de la cruza entre una persona AB (I^AI^B) y una persona O (ii)?",
+    "o": [
+      "50 % grupo A y 50 % grupo B",
+      "100 % grupo AB",
+      "25 % de cada grupo",
+      "50 % grupo AB y 50 % grupo O"
+    ],
+    "ok": 0,
+    "exp": "La persona AB produce gametas I^A e I^B; la persona O produce solo i. Se esperan 50 % I^Ai (A) y 50 % I^Bi (B)."
+  },
+  {
+    "t": "repaso",
+    "q": "Dos personas de grupo AB tienen descendencia. ¿Qué proporción fenotípica se espera?",
+    "o": [
+      "100 % AB",
+      "50 % A y 50 % B",
+      "25 % A, 50 % AB y 25 % B",
+      "25 % A, 25 % B, 25 % AB y 25 % O"
+    ],
+    "ok": 2,
+    "exp": "La cruza I^AI^B × I^AI^B produce I^AI^A, I^AI^B, I^AI^B e I^BI^B. No aparece el alelo i: la proporción es 25 % A, 50 % AB y 25 % B."
+  },
+  {
+    "t": "repaso",
+    "q": "El grupo sanguíneo AB es un ejemplo de codominancia porque…",
+    "o": [
+      "I^A e I^B se expresan simultáneamente",
+      "I^A oculta por completo a I^B",
+      "I^B oculta por completo a I^A",
+      "Los dos alelos se mezclan y forman un alelo nuevo"
+    ],
+    "ok": 0,
+    "exp": "En el heterocigota I^AI^B se expresan ambos alelos: los glóbulos rojos presentan antígenos A y B."
+  },
+  {
+    "t": "repaso",
+    "q": "Una mujer portadora de daltonismo (X^DX^d) tiene hijos con un varón de visión normal (X^DY). ¿Qué proporción de sus hijos varones será daltónica?",
+    "o": [
+      "0 %",
+      "25 %",
+      "50 %",
+      "100 %"
+    ],
+    "ok": 2,
+    "exp": "Los hijos varones reciben Y del padre y su único cromosoma X de la madre. La mitad recibe X^d y será daltónica; la otra mitad recibe X^D y tendrá visión normal."
+  },
+  {
+    "t": "repaso",
+    "q": "En la cruza X^DX^d × X^DY, ¿qué porcentaje de toda la descendencia se espera que sea daltónica?",
+    "o": [
+      "0 %",
+      "25 %",
+      "50 %",
+      "75 %"
+    ],
+    "ok": 1,
+    "exp": "De las cuatro combinaciones posibles, una es X^dY (varón daltónico). Las otras son una hija portadora, una hija sana no portadora y un hijo sano: 25 % de toda la descendencia será daltónica."
+  },
+  {
+    "t": "repaso",
+    "q": "En la cruza entre una mujer portadora X^DX^d y un varón sano X^DY, ¿qué proporción de las hijas será portadora?",
+    "o": [
+      "0 %",
+      "25 %",
+      "50 %",
+      "100 %"
+    ],
+    "ok": 2,
+    "exp": "Todas las hijas reciben X^D del padre sano. De la madre, la mitad recibe X^d y será X^DX^d (portadora), y la otra mitad X^D."
+  },
+  {
+    "t": "repaso",
+    "q": "¿Cuál es el genotipo de un varón daltónico si el daltonismo es recesivo y está ligado al cromosoma X?",
+    "o": [
+      "X^DX^D",
+      "X^DX^d",
+      "X^dY",
+      "X^dX^d"
+    ],
+    "ok": 2,
+    "exp": "El varón tiene un cromosoma X y uno Y. Para expresar el daltonismo recesivo, su único X debe llevar el alelo d: X^dY."
+  },
+  {
+    "t": "repaso",
+    "q": "¿Cuál es el genotipo de una mujer daltónica cuando el rasgo es recesivo ligado al X?",
+    "o": [
+      "X^DX^D",
+      "X^DX^d",
+      "X^dY",
+      "X^dX^d"
+    ],
+    "ok": 3,
+    "exp": "Una mujer tiene dos cromosomas X y necesita dos alelos recesivos para expresar el daltonismo: X^dX^d."
+  },
+  {
+    "t": "repaso",
+    "q": "Un varón daltónico (X^dY) tiene hijos con una mujer de visión normal homocigota (X^DX^D). ¿Cómo será la descendencia?",
+    "o": [
+      "Todas las hijas portadoras y todos los hijos varones sanos",
+      "Todas las hijas daltónicas y todos los hijos varones sanos",
+      "Todos los descendientes daltónicos",
+      "Todas las hijas sanas no portadoras y todos los hijos varones daltónicos"
+    ],
+    "ok": 0,
+    "exp": "El padre transmite su X^d a todas las hijas y su Y a todos los hijos varones. La madre siempre aporta X^D: las hijas serán portadoras y los hijos varones tendrán visión normal."
+  },
+  {
+    "t": "repaso",
+    "q": "Una mujer daltónica (X^dX^d) tiene hijos con un varón de visión normal (X^DY). ¿Qué se espera?",
+    "o": [
+      "Todas las hijas daltónicas y todos los hijos sanos",
+      "Todas las hijas portadoras y todos los hijos varones daltónicos",
+      "La mitad de las hijas portadoras y la mitad de los hijos daltónicos",
+      "Todos los descendientes serán sanos"
+    ],
+    "ok": 1,
+    "exp": "La madre siempre aporta X^d. El padre aporta X^D a las hijas (que serán X^DX^d, portadoras) y Y a los hijos varones (que serán X^dY, daltónicos)."
+  },
+  {
+    "t": "repaso",
+    "q": "Una pareja tiene visión normal, pero tiene un hijo varón daltónico. Si se considera herencia recesiva ligada al X y no se contemplan mutaciones nuevas, ¿qué genotipos deben tener los padres?",
+    "o": [
+      "Padre X^dY y madre X^DX^D",
+      "Padre X^DY y madre X^DX^d",
+      "Padre X^DY y madre X^dX^d",
+      "Padre X^dY y madre X^DX^d"
+    ],
+    "ok": 1,
+    "exp": "El padre sano es X^DY. El hijo varón recibe Y del padre y X^d de la madre; como ella tiene visión normal, debe ser heterocigota portadora X^DX^d."
+  },
+  {
+    "t": "repaso",
+    "q": "En la herencia recesiva ligada al X, ¿puede un padre transmitir directamente su alelo ligado al X a un hijo varón?",
+    "o": [
+      "Sí, siempre",
+      "Sí, cuando el padre está afectado",
+      "No, porque al hijo varón le transmite el cromosoma Y",
+      "Solo si la madre también está afectada"
+    ],
+    "ok": 2,
+    "exp": "El padre aporta el cromosoma Y a sus hijos varones y el X a sus hijas. Por eso no transmite directamente a un hijo varón un alelo que está en su cromosoma X."
+  },
+  {
+    "t": "repaso",
+    "q": "Una mujer portadora de hemofilia (X^HX^h) tiene hijos con un varón hemofílico (X^hY). ¿Qué probabilidad existe de que un hijo cualquiera tenga hemofilia?",
+    "o": [
+      "25 %",
+      "50 %",
+      "75 %",
+      "100 %"
+    ],
+    "ok": 1,
+    "exp": "Las combinaciones posibles son X^HX^h (hija portadora), X^hX^h (hija afectada), X^HY (hijo sano) y X^hY (hijo afectado). Dos de las cuatro posibilidades presentan hemofilia: 50 %."
+  }
+]
 ];
-const TEMAS_Q = [['todas', 'Todo el laboratorio'], ['mendel', 'Mendel'], ['dom', 'Dominancia y codominancia'], ['abo', 'Grupos sanguíneos'], ['sexo', 'Daltonismo y hemofilia']];
+const TEMAS_Q = [['repaso', 'Quiz · Clase de repaso'], ['todas', 'Todo el laboratorio'], ['mendel', 'Mendel'], ['dom', 'Dominancia y codominancia'], ['abo', 'Grupos sanguíneos'], ['sexo', 'Daltonismo y hemofilia']];
 
 /* ------------------------------------------------------------------ */
 /* CÁLCULO                                                              */
@@ -734,7 +1216,7 @@ export function abrirLabGenetica({ app, volver }) {
   function secQuiz() {
     const Q = S.q;
     if (Q.fase === 'inicio') {
-      return `<div class="gen-q"><div class="gen-card"><h2>Preguntas de genética</h2><p>${PREGUNTAS.length} preguntas de opción múltiple con explicación en cada respuesta. Elegí qué querés repasar:</p>
+      return `<div class="gen-q"><div class="gen-card"><h2>Quiz de genética</h2><p>${PREGUNTAS.length} preguntas de opción múltiple con corrección y explicación inmediata. El bloque <b>Clase de repaso</b> reúne 40 variantes nuevas inspiradas en los ejercicios de cierre del apunte:</p>
         <div class="gen-temas">${TEMAS_Q.map(([k, n]) => `<button type="button" data-act="q-start" data-v="${k}"><b>${n}</b><span>${PREGUNTAS.filter(p => k === 'todas' || p.t === k).length} preguntas</span></button>`).join('')}</div></div></div>`;
     }
     if (Q.fase === 'fin') {
@@ -764,7 +1246,7 @@ export function abrirLabGenetica({ app, volver }) {
   }
 
   /* ---------- Estructura general ---------- */
-  const SECCIONES = [['mendel', '🌱', 'Primera ley de Mendel'], ['dom', '🎨', 'Dominancia y codominancia'], ['abo', '🩸', 'Grupos sanguíneos'], ['sexo', '🧬', 'Daltonismo y hemofilia'], ['quiz', '✓', 'Preguntas']];
+  const SECCIONES = [['mendel', '🌱', 'Primera ley de Mendel'], ['dom', '🎨', 'Dominancia y codominancia'], ['abo', '🩸', 'Grupos sanguíneos'], ['sexo', '🧬', 'Daltonismo y hemofilia'], ['quiz', '✓', 'Quiz · clase de repaso']];
 
   function render(irArriba) {
     const y = window.scrollY;
