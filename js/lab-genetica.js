@@ -612,6 +612,12 @@ const PREGUNTAS = [
   }
 ]
 ];
+
+// Las variantes de la clase de repaso se incorporan como preguntas individuales.
+if (Array.isArray(PREGUNTAS[PREGUNTAS.length - 1])) {
+  PREGUNTAS.push(...PREGUNTAS.pop());
+}
+
 const TEMAS_Q = [['repaso', 'Quiz · Clase de repaso'], ['todas', 'Todo el laboratorio'], ['mendel', 'Mendel'], ['dom', 'Dominancia y codominancia'], ['abo', 'Grupos sanguíneos'], ['sexo', 'Daltonismo y hemofilia']];
 
 /* ------------------------------------------------------------------ */
