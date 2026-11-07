@@ -22,9 +22,14 @@ ACTIVIDADES = {"replicacion", "cuadro", "horquilla", "bases", "crucigrama", "div
 
 # Frases que delatan una explicación atada al orden de las opciones.
 # La app mezcla las opciones, así que "la opción B" dejaría de tener sentido.
-REF_LETRA = re.compile(r"\b(opci[oó]n|alternativa|inciso|respuesta)\s+[A-D]\b", re.IGNORECASE)
+# Ojo: la letra "a" en minúscula suele ser la preposición ("en respuesta a una señal"),
+# así que solo se acepta como letra de opción si va seguida de ")", ".", ":" o fin de texto.
+REF_LETRA = re.compile(
+    r"\b(?i:opci[oó]n|alternativa|inciso|respuesta)\s+(?:[A-D]|[b-d]|a(?=\s*[).,;:]|\s*$))\b"
+)
+# "A y B" solo cuenta como comodín si es la opción completa (no un genotipo como "AB y aB").
 COMODINES = re.compile(
-    r"\b(todas las anteriores|ninguna de las anteriores|ambas son correctas|a y b)\b", re.IGNORECASE
+    r"\b(?i:todas las anteriores|ninguna de las anteriores|ambas son correctas)\b|^\s*[Aa]\s+y\s+[Bb]\W*$"
 )
 
 
