@@ -81,7 +81,7 @@ function cellSvg(step){
    if(cyto){
      // Surco de segmentación progresivo: la constricción aparece en la zona ecuatorial.
      const pinch=final?38:(stage==='citocinesis-inicio'?12:25);
-     cell='<path d="M180 29 C263 29 326 91 326 180 C326 269 263 331 180 331 C97 331 34 269 34 180 C34 91 97 29 180 29Z" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/><path d="M34 180 Q'+(180-pinch)+' 180 180 180 Q'+(180+pinch)+' 180 326 180" stroke="#ff83b5" stroke-width="3" fill="none" opacity=".9"/>';
+     cell='<path d="M180 29 C260 29 326 91 326 145 C326 162 '+(326-pinch)+' 164 '+(326-pinch)+' 180 C'+(326-pinch)+' 196 326 198 326 215 C326 269 260 331 180 331 C100 331 34 269 34 215 C34 198 '+(34+pinch)+' 196 '+(34+pinch)+' 180 C'+(34+pinch)+' 164 34 162 34 145 C34 91 100 29 180 29Z" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/><path d="M'+(34+pinch)+' 180 Q180 180 '+(326-pinch)+' 180" stroke="#ff83b5" stroke-width="2" stroke-dasharray="4 5" fill="none" opacity=".9"/>';
    } else {
      cell='<circle cx="180" cy="180" r="151" fill="#10234a" fill-opacity=".56" stroke="#5475c6" stroke-width="3"/>';
    }
