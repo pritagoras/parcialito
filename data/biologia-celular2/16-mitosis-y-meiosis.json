@@ -522,10 +522,10 @@
     {
       "pregunta": "La citocinesis vegetal suele formar",
       "opciones": [
-        "Surco animal",
+        "Un surco de segmentación generado por un anillo contráctil de actina y miosina.",
         "Placa celular de vesículas",
-        "Tétradas",
-        "Célula sin pared"
+        "Un conjunto de tétradas que se dispone en la placa ecuatorial antes de la anafase.",
+        "Una nueva envoltura nuclear formada por vesículas del retículo endoplasmático."
       ],
       "correcta": "B",
       "explicacion": "La placa origina la nueva pared."
@@ -1194,10 +1194,10 @@
     {
       "pregunta": "¿Cuál es la relación correcta entre meiosis y variabilidad genética?",
       "opciones": [
-        "La meiosis produce siempre cuatro células genéticamente idénticas.",
+        "La meiosis produce cuatro células genéticamente idénticas porque cada cromosoma se replica antes de dividirse.",
         "El crossing-over y la segregación independiente contribuyen a generar combinaciones genéticas distintas.",
-        "La variabilidad aparece porque se duplica el número de cromosomas.",
-        "La meiosis elimina toda diferencia entre alelos."
+        "La variabilidad aparece porque se duplica el número de cromosomas en cada gameta resultante.",
+        "La meiosis elimina las diferencias entre alelos al repartir copias idénticas en cada célula."
       ],
       "correcta": "B",
       "explicacion": "La recombinación y la distribución independiente de homólogos son fuentes centrales de variabilidad genética."
@@ -1283,9 +1283,9 @@
       "pregunta": "Una célula haploide n = 4 en metafase II tiene:",
       "opciones": [
         "4 cromosomas duplicados y 8 cromátidas.",
-        "8 cromosomas simples.",
-        "2 cromosomas duplicados.",
-        "4 cromosomas simples y 1C."
+        "8 cromosomas simples, cada uno con una molécula de ADN.",
+        "2 cromosomas duplicados y 4 cromátidas, por reducción de n durante meiosis II.",
+        "4 cromosomas simples y 1C de ADN, porque ya se separaron las cromátidas."
       ],
       "correcta": "A",
       "explicacion": "La célula es haploide, pero todavía tiene cromosomas duplicados: cuatro cromosomas y ocho cromátidas."
@@ -1425,10 +1425,10 @@
     {
       "pregunta": "El mosaicismo cromosómico puede originarse cuando:",
       "opciones": [
-        "Todas las células reciben siempre el mismo complemento cromosómico.",
+        "Todas las células del organismo reciben el mismo complemento cromosómico desde la primera división del cigoto.",
         "Un error mitótico poscigótico genera dos o más líneas celulares con dotaciones cromosómicas diferentes.",
-        "Ocurre crossing-over normal en profase I.",
-        "Se produce la fecundación de dos gametos haploides normales."
+        "El crossing-over normal de la profase I genera líneas somáticas con distinto número de cromosomas.",
+        "La fecundación de dos gametos haploides normales produce por sí misma dos poblaciones celulares distintas."
       ],
       "correcta": "B",
       "explicacion": "Un error de segregación durante una división mitótica temprana puede originar poblaciones celulares distintas dentro de un mismo organismo."
