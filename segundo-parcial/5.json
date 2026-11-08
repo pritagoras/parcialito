@@ -467,10 +467,10 @@
     {
       "pregunta": "Los llamados factores de transcripción específicos en eucariontes se definen como:",
       "opciones": [
-        "secuencias no codificantes del ADN promotor.",
+        "proteínas que reconocen secuencias reguladoras específicas del ADN y modulan la transcripción.",
         "proteínas regulatorias con afinidad por regiones potenciadoras o silenciadoras del ADN.",
-        "enzimas encargadas del corte y empalme del pre-ARNm.",
-        "componentes estructurales de la lámina nuclear."
+        "secuencias de ADN que se unen directamente a la ARN polimerasa para catalizar la transcripción.",
+        "proteínas que forman parte del espliceosoma y eliminan intrones del pre-ARNm."
       ],
       "correcta": "B",
       "explicacion": "Son proteínas que reconocen elementos cis-reguladores en el ADN para aumentar o reprimir la tasa de transcripción de genes específicos."
