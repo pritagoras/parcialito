@@ -302,10 +302,10 @@
     {
       "pregunta": "La notación C indica",
       "opciones": [
-        "Ploidía",
+        "El número de juegos cromosómicos presentes en el núcleo celular.",
         "Cantidad relativa de ADN",
-        "Centrómeros",
-        "Células"
+        "La cantidad de cromosomas que poseen dos cromátidas hermanas.",
+        "El número de moléculas de ADN que forman un cromosoma duplicado."
       ],
       "correcta": "B",
       "explicacion": "C y n son medidas distintas."
@@ -445,10 +445,10 @@
     {
       "pregunta": "En anafase mitótica se separan",
       "opciones": [
-        "Homólogos",
+        "Los cromosomas homólogos de cada par, uno hacia cada polo celular.",
         "Cromátidas hermanas",
-        "Tétradas",
-        "Genes"
+        "Las cuatro cromátidas que integran cada tétrada meiótica.",
+        "Los genes homólogos ubicados en los mismos loci de cromosomas diferentes."
       ],
       "correcta": "B",
       "explicacion": "Mitosis separa cromátidas hermanas."
@@ -579,9 +579,9 @@
       "pregunta": "En 2n=12 tras meiosis I cada producto tiene",
       "opciones": [
         "6 cromosomas, 12 cromátidas",
-        "12 y 12",
-        "6 y 6",
-        "12 y 24"
+        "12 cromosomas, 12 cromátidas",
+        "6 cromosomas, 6 cromátidas",
+        "12 cromosomas, 24 cromátidas"
       ],
       "correcta": "A",
       "explicacion": "Cada cromosoma haploide aún está duplicado."
@@ -622,10 +622,10 @@
     {
       "pregunta": "La segregación independiente se vincula a",
       "opciones": [
+        "La replicación del ADN durante la fase S previa a la meiosis.",
         "Orientación aleatoria de bivalentes en metafase I",
-        "Replicación en G2",
-        "Citocinesis",
-        "Condensación"
+        "La citocinesis que separa el citoplasma al finalizar la meiosis I.",
+        "La condensación de la cromatina durante la profase I."
       ],
       "correcta": "A",
       "explicacion": "Cada par se orienta independientemente."
@@ -688,10 +688,10 @@
     {
       "pregunta": "Meiosis II es ecuacional porque",
       "opciones": [
-        "Aumenta ploidía",
+        "Reduce el número de juegos cromosómicos de 2n a n al separar homólogos.",
         "Separa cromátidas sin reducir otra vez juegos",
-        "Replica ADN",
-        "Reúne homólogos"
+        "Duplica el ADN antes de repartirlo entre las células hijas.",
+        "Mantiene unidos los homólogos para formar bivalentes."
       ],
       "correcta": "B",
       "explicacion": "Las células permanecen haploides."
@@ -732,10 +732,10 @@
     {
       "pregunta": "¿Qué caracteriza al estado G0 del ciclo celular?",
       "opciones": [
-        "La célula está replicando activamente su ADN.",
+        "La célula duplica su ADN y se prepara para ingresar en la fase G2.",
         "La célula sale del ciclo proliferativo y permanece en un estado quiescente, reversible o permanente según el tipo celular.",
-        "Los cromosomas están alineados en la placa ecuatorial.",
-        "La célula ya separó sus cromátidas hermanas."
+        "La célula organiza los cromosomas duplicados sobre la placa ecuatorial del huso.",
+        "La célula completa la separación de cromátidas y comienza la reconstrucción nuclear."
       ],
       "correcta": "B",
       "explicacion": "En G0 la célula no avanza hacia la división. Algunas células pueden reingresar al ciclo ante señales; otras, como muchas neuronas maduras, permanecen allí de forma prolongada."
@@ -864,10 +864,10 @@
     {
       "pregunta": "¿Qué evento distingue especialmente a la prometafase mitótica?",
       "opciones": [
-        "La duplicación de los centríolos en fase S.",
+        "La duplicación del ADN y la formación de dos centrosomas durante la fase S.",
         "La desorganización de la envoltura nuclear y el acceso de los microtúbulos a los cinetocoros.",
-        "La separación de homólogos.",
-        "La formación de la placa celular."
+        "La separación de los cromosomas homólogos hacia polos opuestos de la célula.",
+        "La formación de una placa celular que divide el citoplasma vegetal."
       ],
       "correcta": "B",
       "explicacion": "Al desorganizarse la envoltura nuclear, los microtúbulos del huso pueden capturar los cinetocoros."
@@ -898,9 +898,9 @@
       "pregunta": "La anafase B contribuye a la separación de los polos mediante:",
       "opciones": [
         "El alargamiento del huso por deslizamiento de microtúbulos polares y fuerzas sobre microtúbulos astrales.",
-        "La duplicación de los cromosomas.",
-        "La sinapsis de homólogos.",
-        "La degradación de los telómeros."
+        "La separación de las cromátidas hermanas por activación de separasa y pérdida de cohesión centromérica.",
+        "La migración de los cromosomas hacia los polos por acortamiento de microtúbulos cinetocóricos.",
+        "La separación de cromosomas homólogos apareados mediante la disolución de los quiasmas."
       ],
       "correcta": "A",
       "explicacion": "En anafase B los polos se alejan por fuerzas generadas entre microtúbulos interpolare y por interacciones con la corteza celular."
@@ -908,10 +908,10 @@
     {
       "pregunta": "Durante la telofase mitótica normalmente:",
       "opciones": [
-        "Los cromosomas se duplican por segunda vez.",
+        "Los cromosomas duplican su ADN y vuelven a formar cromátidas hermanas.",
         "Los cromosomas llegan a los polos, se reorganizan las envolturas nucleares y comienza la descondensación.",
-        "Los homólogos forman tétradas.",
-        "Se separan por primera vez las cromátidas."
+        "Los cromosomas homólogos se aparean y forman tétradas para iniciar la recombinación.",
+        "Los centrómeros se dividen y las cromátidas hermanas migran hacia polos opuestos."
       ],
       "correcta": "B",
       "explicacion": "La telofase revierte varios cambios de la profase: se reconstruyen los núcleos y los cromosomas comienzan a descondensarse."
@@ -952,10 +952,10 @@
     {
       "pregunta": "¿Cuál es una función biológica central de la mitosis en organismos pluricelulares?",
       "opciones": [
-        "Producir gametos haploides mediante dos divisiones.",
+        "Producir gametos haploides mediante dos divisiones y reducir la dotación cromosómica.",
         "Permitir crecimiento, renovación y reparación de tejidos conservando normalmente la dotación cromosómica.",
-        "Generar variabilidad mediante crossing-over.",
-        "Reducir a la mitad el número de cromosomas."
+        "Generar variabilidad mediante el intercambio de segmentos entre cromátidas homólogas.",
+        "Reducir a la mitad el número de cromosomas durante la división de células somáticas."
       ],
       "correcta": "B",
       "explicacion": "La mitosis produce células hijas con la misma ploidía que la célula progenitora y sostiene el crecimiento y mantenimiento de tejidos."
@@ -985,10 +985,10 @@
     {
       "pregunta": "La meiosis ocurre principalmente en células de linajes que producen:",
       "opciones": [
-        "Células somáticas para crecimiento.",
+        "Células somáticas destinadas al crecimiento y a la reparación de tejidos.",
         "Células reproductivas o esporas, según el ciclo de vida del organismo.",
-        "Eritrocitos maduros.",
-        "Células musculares diferenciadas."
+        "Células sanguíneas maduras que pierden el núcleo durante su diferenciación.",
+        "Células musculares diferenciadas que conservan su capacidad contráctil."
       ],
       "correcta": "B",
       "explicacion": "La meiosis forma células haploides destinadas a la reproducción sexual o a etapas haploides del ciclo de vida."
@@ -996,10 +996,10 @@
     {
       "pregunta": "Los cromosomas homólogos se definen como aquellos que:",
       "opciones": [
-        "Son dos cromátidas hermanas unidas por cohesinas.",
+        "Son dos cromátidas hermanas de un mismo cromosoma, unidas por cohesinas desde la fase S.",
         "Tienen los mismos genes en los mismos loci, aunque pueden portar alelos diferentes, y uno procede de cada progenitor en organismos diploides.",
-        "Tienen necesariamente secuencias de ADN idénticas.",
-        "Siempre permanecen unidos durante la mitosis."
+        "Son copias con secuencias idénticas que se originan exclusivamente durante la replicación del ADN.",
+        "Son cromosomas que permanecen unidos físicamente durante todas las etapas de la mitosis."
       ],
       "correcta": "B",
       "explicacion": "Los homólogos forman pares en organismos diploides; comparten loci génicos, pero no necesariamente los mismos alelos."
@@ -1040,10 +1040,10 @@
     {
       "pregunta": "Durante el diploteno de la profase I:",
       "opciones": [
+        "Los homólogos se aparean por primera vez y comienza la formación del complejo sinaptonémico.",
         "Los homólogos comienzan a separarse, pero permanecen unidos en los quiasmas.",
-        "Se inicia la replicación del ADN.",
-        "Se separan los centrómeros.",
-        "Se forma la placa celular."
+        "Los centrómeros se dividen y las cromátidas hermanas migran a polos opuestos.",
+        "Los cromosomas se alinean individualmente en la placa ecuatorial de la metafase II."
       ],
       "correcta": "A",
       "explicacion": "El complejo sinaptonémico se desarma y los homólogos se apartan parcialmente, permaneciendo conectados en los quiasmas."
@@ -1359,10 +1359,10 @@
     {
       "pregunta": "El crossing-over modifica principalmente:",
       "opciones": [
-        "El número de cromosomas de la célula.",
+        "La cantidad de cromosomas por núcleo, al separar los homólogos durante la meiosis I.",
         "La combinación de alelos en cromátidas recombinantes, sin cambiar por sí mismo la ploidía.",
-        "La cantidad de centríolos.",
-        "La cantidad de juegos cromosómicos."
+        "La cantidad de centrosomas que organiza el huso durante la división celular.",
+        "La cantidad de juegos cromosómicos que recibe cada célula hija al terminar la meiosis."
       ],
       "correcta": "B",
       "explicacion": "El intercambio de segmentos genera nuevas combinaciones alélicas, pero no altera el número de cromosomas ni la ploidía."
@@ -1447,10 +1447,10 @@
     {
       "pregunta": "¿Qué proceso restablece la diploidía en un ciclo sexual haplonte o diplonte?",
       "opciones": [
-        "La mitosis.",
+        "La mitosis, mediante la duplicación previa del ADN y la división equitativa de cromátidas.",
         "La fecundación, por fusión de dos núcleos haploides.",
-        "El crossing-over.",
-        "La citocinesis."
+        "El crossing-over, mediante el intercambio de segmentos entre cromátidas homólogas.",
+        "La citocinesis, mediante la distribución del citoplasma entre las células hijas."
       ],
       "correcta": "B",
       "explicacion": "La unión de dos gametos haploides durante la fecundación restablece el número diploide en el cigoto."
