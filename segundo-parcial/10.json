@@ -83,9 +83,9 @@
       "pregunta": "Si a un cultivo celular en fase G1 del ciclo se le adicionan desoxirribonucleótidos marcados radiactivamente, la radiactividad en las moléculas de ADN durante la fase G2 posterior se detectará en:",
       "opciones": [
         "una de las dos hebras de cada molécula de ADN recién sintetizada (modelo semiconservativo).",
-        "las dos hebras de todas las moléculas de ADN.",
-        "exclusivamente los cromosomas sexuales.",
-        "las moléculas de ARN mensajero del citoplasma."
+        "una hebra parental y una hebra nueva en cada molécula de ADN duplicada, debido a la replicación semiconservativa.",
+        "ambas hebras de cada molécula, porque los nucleótidos marcados se incorporan también a las cadenas parentales.",
+        "solo una de las dos moléculas hijas completas, porque la replicación conserva intacta la otra molécula parental."
       ],
       "correcta": "A",
       "explicacion": "Debido al mecanismo semiconservativo, cada nueva molécula de ADN duplicada en S incorpora una hebra con el nucleótido radiactivo y conserva una hebra molde no marcada."
@@ -126,10 +126,10 @@
     {
       "pregunta": "La modificación postranscripcional del pre-ARNm eucarionte denominada poliadenilación (cola poli-A en 3') cumple la función de:",
       "opciones": [
-        "señalizar la ubicación del promotor génico.",
+        "favorecer la estabilidad del ARNm y su exportación nuclear, además de contribuir a una traducción eficiente.",
         "proteger al ARNm de la degradación por exonucleasas y facilitar su exportación al citosol.",
-        "codificar para los residuos de metionina iniciales.",
-        "sintetizar el capuchón en el extremo 5'."
+        "marcar el extremo 3' para que la ARN polimerasa reconozca el promotor del gen.",
+        "proporcionar el codón de inicio que permite incorporar metionina al comienzo de la proteína."
       ],
       "correcta": "B",
       "explicacion": "La adición de la cola de poliadeninas en el extremo 3' confiere estabilidad al ARNm frente a la degradación citoplásmica y promueve la traducción."
@@ -148,10 +148,10 @@
     {
       "pregunta": "En las células eucariontes, el complejo de la telomerasa funciona mecánicamente como una:",
       "opciones": [
-        "ARN polimerasa que sintetiza cebadores de ARN en el citosol.",
+        "una ADN polimerasa que utiliza un molde de ARN propio para extender el extremo 3' de los telómeros.",
         "ADN polimerasa dependiente de ARN (transcriptasa reversa) que extiende los extremos 3' del ADN cromosómico.",
-        "endonucleasa de restricción de intrones.",
-        "topoisomerasa especializada en liberar nudos en los plásmidos."
+        "una ARN polimerasa que copia los extremos cromosómicos a partir de un molde de ADN.",
+        "una exonucleasa que elimina nucleótidos del extremo 5' para evitar el acortamiento cromosómico."
       ],
       "correcta": "B",
       "explicacion": "La telomerasa contiene su propio molde de ARN interno y utiliza su actividad transcriptasa reversa para prolongar los extremos de los cromosomas lineales."
@@ -303,9 +303,9 @@
       "pregunta": "La estructura conocida como nucleosoma está compuesta molecularmente por:",
       "opciones": [
         "un tramo de ADN envuelto alrededor de un octámero de proteínas histonas (dos copias de H2A, H2B, H3 y H4).",
-        "una molécula de ARN ribosomal unida a proteínas de la lámina.",
-        "un complejo catalítico formado por la ARN polimerasa II.",
-        "los microtúbulos cinetocóricos del centrómero."
+        "ADN asociado a un octámero de histonas formado por H2A, H2B, H3 y H4, alrededor del cual se enrolla la doble hélice.",
+        "ADN enrollado alrededor de un tetrámero de histonas H1, H2A, H2B y H3.",
+        "un octámero de histonas unido a ARN ribosomal que constituye el núcleo del ribosoma."
       ],
       "correcta": "A",
       "explicacion": "El nucleosoma es la unidad básica estructural de la cromatina, formado por aproximadamente 146 pares de bases de ADN enrollados sobre un octámero de histonas."
@@ -314,9 +314,9 @@
       "pregunta": "La enzima peptidil transferasa responsable de catalizar la formación del enlace peptídico en la traducción es una:",
       "opciones": [
         "ribozima o componente catalítico de ARN de la subunidad mayor del ribosoma.",
-        "quinasa que utiliza ATP citosólico.",
-        "proteína libre de la vía secretora.",
-        "transcriptasa reversa intranuclear."
+        "una ribozima cuyo centro catalítico está formado por ARN ribosómico de la subunidad mayor.",
+        "una enzima proteica que carga aminoácidos sobre los ARNt utilizando ATP.",
+        "un factor de elongación que hidroliza GTP para desplazar el ribosoma sobre el ARNm."
       ],
       "correcta": "A",
       "explicacion": "La actividad peptidil transferasa es ejercida directamente por la estructura de ARNr de la subunidad mayor del ribosoma (ribozima)."
@@ -325,9 +325,9 @@
       "pregunta": "El mecanismo de regulación génica denominado empalme alternativo (splicing alternativo) permite a las células eucariontes:",
       "opciones": [
         "sintetizar diferentes isoformas proteicas a partir de un único transcripto primario de pre-ARNm.",
-        "eliminar los intrones en el citoplasma celular.",
-        "duplicar el genoma en ausencia de la fase S.",
-        "modificar el código genético universal."
+        "producir distintos ARNm maduros mediante combinaciones alternativas de exones de un mismo pre-ARNm.",
+        "eliminar intrones después de que el ARNm haya sido traducido en el citoplasma.",
+        "combinar exones de genes diferentes para formar una única molécula de ADN recombinante."
       ],
       "correcta": "A",
       "explicacion": "El splicing alternativo combina diferencialmente los exones de un mismo pre-ARNm, permitiendo diversificar la expresión proteica del genoma."
