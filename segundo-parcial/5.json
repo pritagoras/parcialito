@@ -85,7 +85,7 @@
         "3/4 de fenotipo dominante y 1/4 de fenotipo recesivo.",
         "todos los descendientes con fenotipo dominante.",
         "1/2 de fenotipo dominante y 1/2 de fenotipo recesivo.",
-        "1/2 de fenotipo dominante y 1/2 de fenotipo recesivo."
+        "1/4 de fenotipo dominante y 3/4 de fenotipo recesivo."
       ],
       "correcta": "C",
       "explicacion": "El cruzamiento Aa x aa origina un 50% de descendientes heterocigotas (Aa) y un 50% de descendientes homocigotas recesivos (aa)."
