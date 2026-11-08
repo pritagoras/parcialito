@@ -38,10 +38,10 @@
     {
       "pregunta": "Durante la síntesis de ARN en células eucariontes y procariontes, la fuente de energía necesaria para formar los enlaces fosfodiéster proviene de:",
       "opciones": [
-        "la hidrólisis del pirofosfato liberado cuando se incorpora cada ribonucleótido trifosfato a la cadena.",
-        "la hidrólisis del grupo pirofosfato de cada ribonucleótido trifosfato (NTP) incorporado.",
         "la hidrólisis de ATP libre, independiente de los ribonucleótidos que se incorporan.",
-        "la energía liberada por la ruptura de enlaces peptídicos de proteínas nucleares."
+        "la hidrólisis del grupo pirofosfato de cada ribonucleótido trifosfato (NTP) incorporado.",
+        "la energía liberada por la ruptura de enlaces peptídicos de proteínas nucleares.",
+        "la hidrólisis de GTP por factores de elongación asociados a la ARN polimerasa."
       ],
       "correcta": "B",
       "explicacion": "La incorporación de los ribonucleótidos trifosfato (ATP, CTP, GTP, UTP) aporta la energía necesaria mediante la separación y posterior hidrólisis del pirofosfato."
