@@ -324,10 +324,10 @@
     {
       "pregunta": "Por cada espermatocito primario que completa íntegramente la meiosis se producen:",
       "opciones": [
-        "un espermatozoide diploide y tres cuerpos polares.",
-        "dos espermatozoides diploides genéticamente idénticos.",
-        "cuatro espermátidas haploides que luego pueden diferenciarse en espermatozoides mediante espermiogénesis.",
-        "ocho espermatocitos secundarios haploides."
+        "Un espermatozoide diploide y tres células haploides que funcionan como cuerpos polares.",
+        "Dos espermatozoides diploides genéticamente idénticos por división ecuacional.",
+        "Cuatro espermátidas haploides que luego pueden diferenciarse en espermatozoides mediante espermiogénesis.",
+        "Ocho espermatocitos secundarios haploides por una duplicación adicional durante meiosis II."
       ],
       "correcta": "C",
       "explicacion": "Un espermatocito primario completa meiosis I y II y origina cuatro espermátidas haploides. Luego, cada una puede diferenciarse morfológicamente en un espermatozoide durante la espermiogénesis."
@@ -490,9 +490,9 @@
       "pregunta": "La diferencia principal entre el reparto citoplasmático de la espermatogénesis y el de la ovogénesis es que:",
       "opciones": [
         "en la ovogénesis el citoplasma se reparte de manera asimétrica y casi todo queda en una única célula; en la espermatogénesis no ocurre esa asimetría extrema.",
-        "en la espermatogénesis una célula conserva todo el citoplasma y las otras tres forman cuerpos polares.",
-        "en ambos procesos el citoplasma se distribuye siempre de manera idéntica entre cuatro células.",
-        "en la ovogénesis el citoplasma se elimina por completo antes de la meiosis I."
+        "en la espermatogénesis una célula conserva casi todo el citoplasma y las otras tres forman cuerpos polares.",
+        "en ambos procesos el citoplasma se distribuye de manera equivalente entre cuatro células funcionales.",
+        "en la ovogénesis el citoplasma se elimina antes de meiosis I y se reparte por igual al finalizar."
       ],
       "correcta": "A",
       "explicacion": "En la ovogénesis las divisiones son asimétricas: el ovocito conserva casi todo el citoplasma y los cuerpos polares reciben muy poco. En la espermatogénesis se obtienen cuatro productos meióticos sin una asimetría citoplasmática extrema."
@@ -500,10 +500,10 @@
     {
       "pregunta": "¿Qué comparación temporal entre la espermatogénesis y la ovogénesis es correcta?",
       "opciones": [
-        "Ambas líneas germinales comienzan la meiosis recién después de la pubertad.",
+        "Ambas líneas germinales comienzan la meiosis recién después de la pubertad y continúan sin detenciones.",
         "La ovogénesis comienza después de la fecundación y la espermatogénesis durante la vida fetal.",
         "La meiosis masculina comienza normalmente en la pubertad y continúa; la femenina se inicia durante la vida fetal y queda detenida en profase I hasta su reanudación en la vida reproductiva.",
-        "La meiosis femenina termina antes del nacimiento, mientras que la masculina se detiene en profase I."
+        "La meiosis femenina termina antes del nacimiento, mientras que la masculina queda detenida en profase I."
       ],
       "correcta": "C",
       "explicacion": "En la línea masculina, la meiosis comienza a partir de la pubertad y la producción puede mantenerse. En la femenina, los ovocitos inician meiosis durante la vida fetal, quedan detenidos en profase I y algunos reanudan su desarrollo después de la pubertad."
@@ -643,10 +643,10 @@
     {
       "pregunta": "Al finalizar meiosis I de la ovogénesis, ¿cómo se comparan el ovocito secundario y el primer cuerpo polar en su contenido cromosómico?",
       "opciones": [
-        "El ovocito secundario tiene 2c y el cuerpo polar 1c.",
-        "El cuerpo polar es diploide y el ovocito haploide.",
+        "El ovocito secundario tiene 2c y el cuerpo polar 1c, porque la división es asimétrica.",
+        "El cuerpo polar es diploide y el ovocito secundario haploide, debido a la retención del citoplasma.",
         "Ambos son n, 2c y contienen igual ADN, aunque el ovocito conserva casi todo el citoplasma.",
-        "El ovocito secundario tiene 4c porque retuvo el citoplasma."
+        "El ovocito secundario tiene 4c porque retuvo casi todo el citoplasma, mientras el cuerpo polar tiene 2c."
       ],
       "correcta": "C",
       "explicacion": "La división es asimétrica en citoplasma, no en la reducción cromosómica. Ambos reciben un juego haploide de cromosomas duplicados: n, 2c."
@@ -710,9 +710,9 @@
       "pregunta": "Antes de la primera replicación del ADN del cigoto, ¿cómo se compara su contenido total de ADN con el de un espermatozoide?",
       "opciones": [
         "El cigoto tiene 2c y el espermatozoide 1c; el cigoto tiene el doble.",
-        "El cigoto tiene 4c y el espermatozoide 1c.",
-        "Ambos tienen 1c.",
-        "El espermatozoide tiene el doble."
+        "El cigoto tiene 4c y el espermatozoide 1c, porque ya duplicó el ADN al formarse.",
+        "Ambos tienen 1c, ya que el cigoto conserva la condición haploide hasta la fase S.",
+        "El espermatozoide tiene el doble de ADN porque aporta cromosomas compactados."
       ],
       "correcta": "A",
       "explicacion": "La unión de dos genomas haploides de 1c restablece 2n, 2c en el cigoto antes de fase S. Tiene el doble de ADN que un espermatozoide."
@@ -720,10 +720,10 @@
     {
       "pregunta": "Un ovocito secundario detenido en metafase II y un cigoto antes de su primera fase S, ¿tienen la misma cantidad de ADN?",
       "opciones": [
-        "No: el cigoto tiene 4c y el ovocito 2c.",
+        "No: el cigoto tiene 4c y el ovocito 2c, porque la fecundación duplica el ADN.",
         "Sí, ambos tienen 2c, aunque el ovocito es n y el cigoto 2n.",
-        "Sí, ambos son 2n, 2c.",
-        "No: el ovocito tiene 1c y el cigoto 2c."
+        "Sí, ambos son 2n, 2c, porque la fecundación restablece la diploidía sin alterar el ADN.",
+        "No: el ovocito tiene 1c y el cigoto 2c, porque el ovocito ya completó meiosis II."
       ],
       "correcta": "B",
       "explicacion": "Ambos contienen 2c total. El ovocito es n con 23 cromosomas duplicados; el cigoto 2n con 46 cromosomas simples. Igual ADN no implica igual ploidía."
@@ -731,10 +731,10 @@
     {
       "pregunta": "¿Qué diferencia existe entre un ovocito primario detenido en profase I y un cigoto antes de fase S, aunque ambos sean diploides?",
       "opciones": [
-        "No hay diferencia: 2n siempre significa 2c.",
-        "El cigoto tiene 4c y el ovocito 2c.",
+        "No hay diferencia: toda célula diploide posee siempre 2c de ADN, cualquiera sea su etapa.",
+        "El cigoto tiene 4c y el ovocito 2c, porque la fecundación duplica inmediatamente el ADN.",
         "El ovocito primario tiene 4c y el cigoto 2c: misma ploidía, distinta cantidad de ADN.",
-        "El ovocito primario es n y el cigoto 2n."
+        "El ovocito primario es n y el cigoto 2n, aunque ambos tengan la misma cantidad de ADN."
       ],
       "correcta": "C",
       "explicacion": "Ambos son 2n, pero el ovocito primario ya duplicó su ADN y está en 4c. El cigoto previo a fase S tiene 2c."
@@ -753,10 +753,10 @@
     {
       "pregunta": "En anafase II, comparando el ADN de cada futuro núcleo con el de la célula haploide antes de separar cromátidas, ¿qué ocurre?",
       "opciones": [
+        "Cada futuro núcleo recibe 2c, porque conserva las dos cromátidas de cada cromosoma.",
         "Cada futuro núcleo recibe 1c, la mitad de los 2c de la célula en metafase II.",
-        "Cada futuro núcleo recibe 2c.",
-        "La ploidía vuelve a 2n y el ADN queda en 4c.",
-        "No cambia: cada futuro núcleo sigue en 2c."
+        "Cada futuro núcleo recupera 2n y recibe 4c al separarse los cromosomas homólogos.",
+        "No cambia el contenido de ADN: cada futuro núcleo mantiene 2c luego de la división."
       ],
       "correcta": "A",
       "explicacion": "La célula en metafase II tiene n, 2c. Al separarse las cromátidas, cada futuro núcleo recibe n cromosomas simples y 1c."
@@ -786,10 +786,10 @@
     {
       "pregunta": "Una célula primaria masculina completa meiosis I. ¿Cómo se compara el ADN de las dos células secundarias juntas con el ADN de la célula primaria antes de dividirse?",
       "opciones": [
-        "Las dos células juntas tienen la mitad.",
+        "Las dos células juntas contienen 2c, porque la meiosis I reduce a la mitad el ADN total.",
         "Las dos células juntas conservan 4c en total; cada una recibe 2c.",
-        "Las dos juntas tienen 8c.",
-        "Cada secundaria tiene 1c, total 2c."
+        "Las dos células juntas contienen 8c, porque cada cromosoma se replica antes de separarse.",
+        "Cada célula secundaria recibe 1c, por lo que ambas reúnen 2c en total."
       ],
       "correcta": "B",
       "explicacion": "Antes de meiosis I el espermatocito primario contiene 4c. Cada célula secundaria recibe 2c; juntas conservan los 4c iniciales."
