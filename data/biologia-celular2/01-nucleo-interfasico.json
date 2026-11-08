@@ -125,7 +125,12 @@
     },
     {
       "pregunta": "¿Cómo se denomina la estructura de empaquetamiento de 30 nm de diámetro descrita en la clase?",
-      "opciones": ["Nucleosoma.", "Andamiaje o scaffold.", "Solenoide.", "Cromosoma metafásico."],
+      "opciones": [
+        "Nucleosoma.",
+        "Andamiaje o scaffold.",
+        "Solenoide.",
+        "Cromosoma metafásico."
+      ],
       "correcta": "C",
       "explicacion": "El nivel de 30 nm resulta de la compactación de la fibra de 10 nm y recibe la denominación de fibra de 30 nm o solenoide, descrita como una estructura helicoidal o en resorte."
     },
@@ -142,7 +147,12 @@
     },
     {
       "pregunta": "¿A qué nivel de compactación y diámetro corresponde el cromosoma metafásico altamente condensado?",
-      "opciones": ["Nivel de 30 nm.", "Nivel de 300 nm.", "Nivel de 700 nm.", "Nivel de 1500 nm."],
+      "opciones": [
+        "Nivel de 30 nm.",
+        "Nivel de 300 nm.",
+        "Nivel de 700 nm.",
+        "Nivel de 1500 nm."
+      ],
       "correcta": "D",
       "explicacion": "En el esquema conceptual presentado, el máximo grado de condensación se alcanza en la metafase y corresponde aproximadamente a un diámetro de 1500 nm."
     },
@@ -170,7 +180,12 @@
     },
     {
       "pregunta": "Según la bibliografía, ¿qué modificación química en las histonas se asocia con un estado más accesible de la cromatina?",
-      "opciones": ["La metilación.", "La acetilación.", "La condensación fosfórica.", "La desaminación de aminoácidos básicos."],
+      "opciones": [
+        "La metilación.",
+        "La acetilación.",
+        "La condensación fosfórica.",
+        "La desaminación de aminoácidos básicos."
+      ],
       "correcta": "B",
       "explicacion": "En el marco bibliográfico, la acetilación de histonas se vincula a una estructura de cromatina más accesible (eucromatina), mientras que la metilación se relaciona con estados más condensados."
     },
@@ -198,7 +213,12 @@
     },
     {
       "pregunta": "¿Cómo se clasifica un cromosoma cuyo centrómero se encuentra ubicado prácticamente en uno de sus extremos, generando un brazo p extremadamente pequeño?",
-      "opciones": ["Metacéntrico.", "Submetacéntrico.", "Acrocéntrico.", "Telocéntrico absoluto."],
+      "opciones": [
+        "Metacéntrico.",
+        "Submetacéntrico.",
+        "Acrocéntrico.",
+        "Telocéntrico absoluto."
+      ],
       "correcta": "C",
       "explicacion": "En los cromosomas acrocéntricos, el centrómero está muy próximo a un extremo, resultando en un brazo p diminuto (p << q). En metacéntricos p ≈ q y en submetacéntricos p < q."
     },
@@ -248,7 +268,12 @@
     },
     {
       "pregunta": "¿Qué droga se utiliza habitualmente en la preparación de un cariotipo para detener a las células en división cuando sus cromosomas están condensados?",
-      "opciones": ["Colchicina.", "Giemsa.", "Histona H1.", "Retrotranscriptasa."],
+      "opciones": [
+        "Colchicina.",
+        "Giemsa.",
+        "Histona H1.",
+        "Retrotranscriptasa."
+      ],
       "correcta": "A",
       "explicacion": "En el procedimiento clásico para armar un cariotipo se usa colchicina para detener el ciclo celular durante la mitosis, momento en que los cromosomas presentan un elevado grado de condensación."
     },
@@ -265,7 +290,12 @@
     },
     {
       "pregunta": "¿Cuál es la secuencia repetitiva característica del telómero humano mencionada en la bibliografía?",
-      "opciones": ["5'-ATCGAT-3'", "5'-TTAGGG-3'", "5'-GGCACC-3'", "5'-CCCTTT-3'"],
+      "opciones": [
+        "5'-ATCGAT-3'",
+        "5'-TTAGGG-3'",
+        "5'-GGCACC-3'",
+        "5'-CCCTTT-3'"
+      ],
       "correcta": "B",
       "explicacion": "La bibliografía señala explícitamente que la secuencia repetitiva característica del telómero humano en dirección 5' a 3' es TTAGGG."
     },
@@ -348,7 +378,12 @@
     },
     {
       "pregunta": "En la nomenclatura estándar del ciclo celular, ¿cuál es el significado correcto de la sigla \"G\" en las fases G1 y G2?",
-      "opciones": ["Growth (crecimiento).", "Gap (intervalo o brecha).", "Gene (gen).", "Group (grupo)."],
+      "opciones": [
+        "Growth (crecimiento).",
+        "Gap (intervalo o brecha).",
+        "Gene (gen).",
+        "Group (grupo)."
+      ],
       "correcta": "B",
       "explicacion": "Aunque en la explicación oral se asocie G con crecimiento debido a los procesos de desarrollo que ocurren, la nomenclatura oficial proviene del término inglés Gap 1 y Gap 2."
     },
@@ -365,13 +400,23 @@
     },
     {
       "pregunta": "En el nucléolo se sintetizan:",
-      "opciones": ["Precursores de ARNr", "ARNt", "Pre ARNm", "ARNm"],
+      "opciones": [
+        "Precursores de ARNr",
+        "ARNt maduros cargados con aminoácidos",
+        "Pre-ARNm antes del corte y empalme",
+        "ARNm maduro listo para exportación"
+      ],
       "correcta": "A",
       "explicacion": "El nucléolo es el subdominio nuclear donde se lleva a cabo la transcripción de los precursores de ARN ribosomal (el pre-ARNr 45S) por parte de la ARN polimerasa I, así como su procesamiento y el ensamblado de las subunidades ribosómicas."
     },
     {
       "pregunta": "Los organizadores nucleolares aportan información para la síntesis de:",
-      "opciones": ["ARNm", "ARNr", "ARNt", "Ribosomas"],
+      "opciones": [
+        "ARNm",
+        "ARNr",
+        "ARNt",
+        "Ribosomas"
+      ],
       "correcta": "B",
       "explicacion": "Las Regiones Organizadoras Nucleolares (NOR) son zonas cromosómicas que contienen repeticiones en tándem de los genes que codifican para el ARN ribosomal (ARNr)."
     },
@@ -498,31 +543,56 @@
     },
     {
       "pregunta": "¿Qué secuencia repetitiva característica de desoxirribonucleótidos en dirección 5' 3' conforma la estructura del ADN telomérico en los cromosomas humanos?",
-      "opciones": ["5'-AAUCCC-3'", "5'-TTAGGG-3'", "5'-CCCTAA-3'", "5'-AATCCC-3'"],
+      "opciones": [
+        "5'-AAUCCC-3'",
+        "5'-TTAGGG-3'",
+        "5'-CCCTAA-3'",
+        "5'-AATCCC-3'"
+      ],
       "correcta": "B",
       "explicacion": "Los telómeros forman parte del ADN, por lo que sus cadenas están compuestas por desoxirribonucleótidos con las bases Timina (T), Adenina (A), Guanina (G) y Citosina (C) (nunca Uracilo)."
     },
     {
       "pregunta": "¿Qué secuencia de ribonucleótidos en dirección 3' a 5' está presente en el molde de ARN integrado en la estructura de la enzima telomerasa humana?",
-      "opciones": ["3'-AAUCCC-5'", "3'-TTAGGG-5'", "3'-AATCCC-5'", "3'-UAAGGG-5'"],
+      "opciones": [
+        "3'-AAUCCC-5'",
+        "3'-TTAGGG-5'",
+        "3'-AATCCC-5'",
+        "3'-UAAGGG-5'"
+      ],
       "correcta": "A",
       "explicacion": "La telomerasa es una ribonucleoproteína (una enzima compleja formada por proteína y ARN). El molde interno que lleva consigo es una molécula de ARN (TERC), por lo que contiene Uracilo (U) en lugar de Timina."
     },
     {
       "pregunta": "¿Cuántas moléculas de ADN contiene el núcleo de una célula diploide con 2n = 8 durante la fase G1?",
-      "opciones": ["4 moléculas", "8 moléculas", "16 moléculas", "32 moléculas"],
+      "opciones": [
+        "4 moléculas",
+        "8 moléculas",
+        "16 moléculas",
+        "32 moléculas"
+      ],
       "correcta": "B",
       "explicacion": "En la etapa G1 los cromosomas no han duplicado su material genético, por lo que cada cromosoma poseerá una sola molécula de ADN, haciendo un total de 8 moléculas. El error común radica en asumir que la replicación ya ocurrió y duplicar el número de moléculas a 16."
     },
     {
       "pregunta": "¿Cuántas moléculas de ADN se encuentran en el núcleo de una célula 2n = 6 durante el estadio G2?",
-      "opciones": ["3 moléculas", "6 moléculas", "12 moléculas", "24 moléculas"],
+      "opciones": [
+        "3 moléculas",
+        "6 moléculas",
+        "12 moléculas",
+        "24 moléculas"
+      ],
       "correcta": "C",
       "explicacion": "Durante la etapa G2, tras haber completado la fase S de duplicación del ADN, cada uno de los 6 cromosomas cuenta con dos cromátidas hermanas, sumando un total de 12 moléculas de ADN. Un error muy frecuente es olvidar la replicación del ADN y responder que conserva 6 moléculas como en G1."
     },
     {
       "pregunta": "¿Cuántos pares de cromosomas homólogos presenta una célula somática diploide cuya dotación es 2n = 16?",
-      "opciones": ["8 pares", "16 pares", "32 pares", "4 pares"],
+      "opciones": [
+        "8 pares",
+        "16 pares",
+        "32 pares",
+        "4 pares"
+      ],
       "correcta": "A",
       "explicacion": "Al ser una célula diploide (2n = 16), el número total de cromosomas se divide entre dos para determinar el número de pares homólogos, resultando en 8 pares. El fallo habitual consiste en confundir la cantidad total de cromosomas con la cantidad de pares homólogos existentes."
     },
@@ -539,7 +609,12 @@
     },
     {
       "pregunta": "Si una célula haploide de un organismo posee n = 5, ¿cuántas moléculas de ADN habrá en el núcleo de sus células diploides (2n) en la fase G2?",
-      "opciones": ["5 moléculas", "10 moléculas", "20 moléculas", "40 moléculas"],
+      "opciones": [
+        "5 moléculas",
+        "10 moléculas",
+        "20 moléculas",
+        "40 moléculas"
+      ],
       "correcta": "C",
       "explicacion": "Si el número haploide es n = 5, la célula diploide tendrá 2n = 10 cromosomas. Dado que en G2 el ADN ya se ha duplicado durante la fase S, habrá el doble de moléculas respecto al número de cromosomas, sumando 20 moléculas. Es muy frecuente confundir el valor haploide con el diploide o no tomar en cuenta el duplicado posterior a la fase S."
     },
@@ -556,25 +631,45 @@
     },
     {
       "pregunta": "Una célula con 2n = 12 se encuentra al final de la fase G1. ¿Cuántas cromátidas totales componen su material genético en este estadio?",
-      "opciones": ["6 cromátidas", "12 cromátidas", "24 cromátidas", "48 cromátidas"],
+      "opciones": [
+        "6 cromátidas",
+        "12 cromátidas",
+        "24 cromátidas",
+        "48 cromátidas"
+      ],
       "correcta": "B",
       "explicacion": "En G1 los cromosomas no han sido duplicados, por lo que cada uno consta de una única cromátida simple, sumando un total de 12 cromátidas. Un distractor recurrente surge al asumir erróneamente que cada cromosoma siempre posee dos cromátidas hermanas antes de la fase S."
     },
     {
       "pregunta": "¿Cuántos pares de cromosomas homólogos se observan en una célula gamética (gameto) de una especie con 2n = 10?",
-      "opciones": ["0 pares", "5 pares", "10 pares", "2.5 pares"],
+      "opciones": [
+        "0 pares",
+        "5 pares",
+        "10 pares",
+        "2.5 pares"
+      ],
       "correcta": "A",
       "explicacion": "Los gametos son células haploides (n = 5), lo que significa que poseen un único juego cromosómico sin pares de homólogos presentes. El error clásico reside en dividir 10 entre 2 y suponer que posee 5 pares, obviando la definición fundamental de haploidía."
     },
     {
       "pregunta": "¿En cuál de las siguientes etapas del ciclo celular la célula sintetiza activamente proteínas prealistándose para la división, pero con el ADN ya duplicado?",
-      "opciones": ["Fase G1", "Fase S", "Fase G2", "Fase G0"],
+      "opciones": [
+        "Fase G1",
+        "Fase S",
+        "Fase G2",
+        "Fase G0"
+      ],
       "correcta": "C",
       "explicacion": "La fase G2 transcurre entre la síntesis de ADN (fase S) y la mitosis, caracterizándose por la verificación de la replicación y la preparación final para la división. La confusión usual es marcar G1, donde también hay intensa síntesis de proteínas, pero con el ADN todavía sin duplicar."
     },
     {
       "pregunta": "Una especie vegetal presenta células diploides con 2n = 4. ¿Cuántas moléculas de ADN se contabilizan en el núcleo durante la fase G1 y durante la fase G2, respectivamente?",
-      "opciones": ["4 en G1 y 4 en G2", "4 en G1 y 8 en G2", "8 en G1 y 8 en G2", "2 en G1 y 4 en G2"],
+      "opciones": [
+        "4 en G1 y 4 en G2",
+        "4 en G1 y 8 en G2",
+        "8 en G1 y 8 en G2",
+        "2 en G1 y 4 en G2"
+      ],
       "correcta": "B",
       "explicacion": "En G1 la célula posee 4 cromosomas de una sola molécula de ADN cada uno (4 en total), mientras que tras la replicación en la fase S, en G2 cuenta con 4 cromosomas de dos moléculas cada uno (8 en total). El error habitual radica en pensar que la cantidad de moléculas de ADN permanece constante durante todas las fases de la interfase."
     },
