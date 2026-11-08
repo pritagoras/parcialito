@@ -324,7 +324,7 @@
     {
       "pregunta": "El péptido señal presente en las proteínas dirigidas a la vía secretora se caracteriza por ser una secuencia de aminoácidos ubicada en:",
       "opciones": [
-        "el extremo amino terminal que guía el complejo ribosoma-ARNm hacia la membrana del REG.",
+        "una secuencia amino-terminal hidrofílica que se une directamente al ADN del retículo endoplasmático.",
         "el extremo amino terminal, donde puede ser reconocido por la partícula de reconocimiento de señal (SRP).",
         "una región interna que funciona como señal de importación hacia la matriz mitocondrial.",
         "el extremo carboxilo terminal, que puede actuar como señal de localización peroxisomal."
@@ -366,7 +366,7 @@
       "explicacion": "Las dos moléculas hijas dobles producidas por replicación permanecen unidas por la cohesina formando las dos cromátides hermanas."
     },
     {
-      "pregunta": "Si en un fragmento de la secuencia codificante de un gen se produce la inserción de tres nucleótidos (un codón completo), la consecuencia será:",
+      "pregunta": "Si en la secuencia codificante de un gen se inserta un triplete que codifica un aminoácido (no un codón de terminación), la consecuencia será:",
       "opciones": [
         "la pérdida de un nucleótido y el corrimiento del marco de lectura desde el sitio de la mutación.",
         "la adición de un aminoácido a la proteína conservando el marco de lectura posterior.",
