@@ -83,9 +83,9 @@
       "pregunta": "Los determinantes citoplasmáticos presentes en el óvulo no fecundado se caracterizan por ser:",
       "opciones": [
         "moléculas sintetizadas por los genes maternos y distribuidas asimétricamente para regular la expresión génica embrionaria.",
-        "productos directos de la expresión del genoma del espermatozoide.",
-        "enzimas de la vía secretora producidas por el propio embrión.",
-        "mecanismos de barrera contra la polispermia."
+        "ARNm y proteínas depositados por la madre durante la ovogénesis, que pueden distribuirse de manera desigual en el citoplasma.",
+        "proteínas y ARN sintetizados exclusivamente por el genoma paterno después de la fecundación.",
+        "moléculas producidas por el embrión solo después de que se activa su propio genoma."
       ],
       "correcta": "A",
       "explicacion": "Los determinantes citoplasmáticos (ARNm y proteínas) son de origen materno y, al repartirse desigualmente durante las primeras clivajes, especifican destinos celulares."
@@ -380,9 +380,9 @@
       "pregunta": "La cola de poliadeninas (poli-A) que se añade al extremo 3' del pre-ARNm eucarionte cumple la función de:",
       "opciones": [
         "favorecer la estabilidad de la molécula, su exportación al citosol y el inicio de la traducción.",
-        "codificar para los aminoácidos del dominio catalítico.",
-        "permitir la eliminación de exones por el espliceosoma.",
-        "unir el ARNm al promotor génico."
+        "aumentar la estabilidad del ARNm, facilitar su exportación nuclear y favorecer su traducción.",
+        "permitir el reconocimiento del promotor por la ARN polimerasa II durante la transcripción.",
+        "marcar los intrones que deben conservarse en el ARNm maduro para su traducción."
       ],
       "correcta": "A",
       "explicacion": "La poliadenilación en 3' protege al ARNm maduro de la degradación por exonucleasas y facilita su reconocimiento traduccional."
