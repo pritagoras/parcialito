@@ -291,13 +291,13 @@
     {
       "pregunta": "El estudio evolutivo de la secuencia del ADN mitocondrial es de gran utilidad biológica en humanos debido a que:",
       "opciones": [
-        "presenta una tasa de mutación rápida y se hereda de forma estrictamente materna sin recombinación.",
+        "se transmite de forma predominantemente paterna y presenta una tasa de mutación prácticamente nula.",
         "se transmite principalmente por vía materna y acumula sustituciones que permiten comparar linajes y parentescos.",
         "se transmite principalmente por vía paterna y no presenta variación entre individuos de una población.",
         "se recombina de manera frecuente durante la meiosis, generando marcadores exclusivos de cada gameta."
       ],
-      "correcta": "A",
-      "explicacion": "El ADN mitocondrial se transmite por vía materna y no recombina, lo que sumado a su tasa evolutiva permite rastrear linajes maternos ancestros."
+      "correcta": "B",
+      "explicacion": "En humanos, el ADN mitocondrial se hereda casi siempre por vía materna y acumula variaciones a lo largo de las generaciones, por lo que resulta útil para estudiar linajes maternos. La transmisión se describe como predominantemente materna, evitando presentarla como una regla absolutamente sin excepciones."
     },
     {
       "pregunta": "En las células somáticas animales, el huso mitótico acromático es una estructura citoesquelética integrada por:",
