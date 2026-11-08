@@ -219,8 +219,8 @@
         "apareamiento preferencial entre individuos emparentados y ausencia de mutaciones nuevas.",
         "selección natural intensa, migración frecuente y tamaño poblacional reducido."
       ],
-      "correcta": "A",
-      "explicacion": "El modelo de Hardy-Weinberg demuestra que las frecuencias génicas y genotípicas se mantienen constantes si no actúan mutación, selección, migración ni deriva génica, en poblaciones infinitas con panmixia."
+      "correcta": "B",
+      "explicacion": "El equilibrio de Hardy-Weinberg requiere, en el modelo clásico, ausencia de mutación, migración y selección natural; apareamiento aleatorio (panmixia); y una población muy grande, de modo que la deriva génica sea despreciable. La opción B reúne estas condiciones."
     },
     {
       "pregunta": "Si la enzima aminoacil-ARNt sintetasa específica para el aminoácido leucina resulta no funcional por una mutación:",
