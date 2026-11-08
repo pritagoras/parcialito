@@ -93,9 +93,9 @@
     {
       "pregunta": "La síntesis de ADN retrotranscripto (cDNA) a partir de un molde de ARN es una reacción catalizada por la enzima:",
       "opciones": [
-        "Transcriptasa reversa, una ADN polimerasa que utiliza ARN como molde.",
-        "Transcriptasa reversa o retrotranscriptasa.",
         "ARN polimerasa dependiente de ADN, que sintetiza ARN a partir de una hebra molde de ADN.",
+        "Transcriptasa reversa o retrotranscriptasa.",
+        "ADN ligasa, que une fragmentos de ADN mediante enlaces fosfodiéster.",
         "ADN polimerasa I, que elimina cebadores de ARN y rellena los espacios con ADN."
       ],
       "correcta": "B",
@@ -182,9 +182,9 @@
       "pregunta": "Durante la fase de elongación de la traducción proteica, la enzima encargada de catalizar la formación del enlace peptídico es la:",
       "opciones": [
         "Peptidil transferasa (actividad ribozímica de la subunidad mayor del ribosoma).",
-        "Peptidil transferasa, actividad catalítica del ARN ribosómico de la subunidad mayor.",
-        "Aminoacil-ARNt sintetasa, que une cada aminoácido con su ARNt específico antes de la traducción.",
-        "Factor de elongación EF-Tu/eEF1A, que entrega el aminoacil-ARNt al sitio A utilizando GTP."
+        "Aminoacil-ARNt sintetasa, que une cada aminoácido con su ARNt antes de la traducción.",
+        "Factor de elongación EF-Tu/eEF1A, que entrega el aminoacil-ARNt al sitio A utilizando GTP.",
+        "Factor de liberación, que reconoce los codones de terminación y promueve la liberación del polipéptido."
       ],
       "correcta": "A",
       "explicacion": "La peptidil transferasa es la actividad catalítica exercida por el ARNr de la subunidad mayor que transfiere el grupo carboxilo del péptido al grupo amino del nuevo aminoácido."
