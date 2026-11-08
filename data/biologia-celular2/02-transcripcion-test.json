@@ -4,7 +4,12 @@
   "preguntas": [
     {
       "pregunta": "La transcripción de los genes que codifican para proteínas en células eucariontes está a cargo de:",
-      "opciones": ["La ARN polimerasa II.", "La ARN polimerasa I.", "La ARN polimerasa III.", "La enzima topoisomerasa I."],
+      "opciones": [
+        "La ARN polimerasa II.",
+        "La ARN polimerasa I.",
+        "La ARN polimerasa III.",
+        "La enzima topoisomerasa I."
+      ],
       "correcta": "A",
       "explicacion": "La ARN polimerasa II es la responsable de transcribir los genes codificadores de proteínas. La I sintetiza el ARNr principal y la III se encarga del ARNt y otros ARN pequeños."
     },
@@ -21,7 +26,12 @@
     },
     {
       "pregunta": "La hebra de ADN que posee idéntica secuencia que el ARN transcripto, sustituyendo únicamente las timinas por uracilos, se denomina:",
-      "opciones": ["Hebra molde.", "Hebra negativa.", "Hebra codificante.", "Hebra inactiva."],
+      "opciones": [
+        "Hebra molde.",
+        "Hebra negativa.",
+        "Hebra codificante.",
+        "Hebra inactiva."
+      ],
       "correcta": "C",
       "explicacion": "La hebra codificante tiene la misma secuencia de bases que el ARN recién sintetizado. La polimerasa utiliza como guía a la hebra complementaria, conocida como hebra molde."
     },
@@ -49,7 +59,12 @@
     },
     {
       "pregunta": "En las células eucariontes, los genes que codifican para los precursores de ARN ribosómico 45S se transcriben en:",
-      "opciones": ["El nucleoplasma libre.", "El nucléolo.", "El retículo endoplasmático rugoso.", "El citosol celular."],
+      "opciones": [
+        "El nucleoplasma libre.",
+        "El nucléolo.",
+        "El retículo endoplasmático rugoso.",
+        "El citosol celular."
+      ],
       "correcta": "B",
       "explicacion": "La ARN polimerasa I transcribe el pre-ARNr 45S dentro del nucléolo, una región nuclear especializada donde se agrupan los genes ribosómicos de la célula."
     },
@@ -88,7 +103,12 @@
     },
     {
       "pregunta": "Si la hebra molde del ADN posee la secuencia 3'-TCGATA-5', la secuencia complementaria del ARN transcripto será:",
-      "opciones": ["5'-TCGATA-3'", "5'-AGCUAU-3'", "5'-AGCUA-3'", "3'-AGCUAU-5'"],
+      "opciones": [
+        "5'-TCGATA-3'",
+        "5'-AGCUAU-3'",
+        "5'-AGCUA-3'",
+        "3'-AGCUAU-5'"
+      ],
       "correcta": "B",
       "explicacion": "La síntesis de ARN se realiza emparejando bases complementarias de forma antiparalela. Cambiando la T por A, la C por G, la G por C y la A por U, el resultado es 5'-AGCUAU-3'."
     },
@@ -424,7 +444,12 @@
     },
     {
       "pregunta": "El tipo de ácido ribonucleico que constituye la fracción predominante en la célula, abarcando del 80 al 85%, es el:",
-      "opciones": ["ARN pequeño celular.", "ARN de transferencia.", "ARN mensajero.", "ARN ribosomal."],
+      "opciones": [
+        "ARN pequeño celular.",
+        "ARN de transferencia.",
+        "ARN mensajero.",
+        "ARN ribosomal."
+      ],
       "correcta": "D",
       "explicacion": "El ARN ribosomal conforma la mayor parte de la maquinaria de los ribosomas, llegando a representar entre el 80 y el 85% del ARN celular total."
     },
@@ -485,23 +510,33 @@
     },
     {
       "pregunta": "Durante la etapa de splicing en los pre-ARNm eucariotas, el extremo 5' o sitio dador del intrón se caracteriza por presentar la secuencia:",
-      "opciones": ["AG", "GU", "AAUAAA", "CCA"],
+      "opciones": [
+        "AG",
+        "GU",
+        "AAUAAA",
+        "CCA"
+      ],
       "correcta": "B",
       "explicacion": "Los intrones presentan secuencias conservadas en sus extremos: la secuencia GU en el extremo 5' (sitio dador) y la secuencia AG en el extremo 3' (sitio aceptor)."
     },
     {
       "pregunta": "En la molécula de ARNt, el extremo aceptor 3' al cual se liga el aminoácido está compuesto por la secuencia terminal:",
-      "opciones": ["TATAAT", "AAUAAA", "CCA", "AUG"],
+      "opciones": [
+        "TATAAT",
+        "AAUAAA",
+        "CCA",
+        "AUG"
+      ],
       "correcta": "C",
       "explicacion": "Todos los ARNt presentan en su extremo 3' o aceptor el trinucleótido CCA, donde se une el aminoácido mediante la acción de la aminoacil ARNt sintetasa."
     },
     {
       "pregunta": "Respecto a la señalización previa al punto de origen en bacterias, las secuencias consenso TATAAT y TTGACA corresponden a:",
       "opciones": [
-        "La señal de poliadenilación del ARN mensajero",
-        "El sitio de unión para los ribosomas en el citosol",
+        "Las señales que indican el procesamiento del extremo 3' y la poliadenilación del transcripto bacteriano.",
+        "La secuencia Shine-Dalgarno que permite el reconocimiento del ARNm por el ribosoma.",
         "La unión de la holoenzima y la señalización del punto de inicio de la transcripción",
-        "El límite de corte entre exones e intrones"
+        "Las señales que delimitan los intrones que serán eliminados durante el splicing del ARN."
       ],
       "correcta": "C",
       "explicacion": "En el promotor procariota, las secuencias consenso TTGACA y TATAAT son indispensables para la unión de la holoenzima de ARN polimerasa y para señalizar el punto de inicio de la transcripción."
@@ -574,19 +609,34 @@
     },
     {
       "pregunta": "¿Cuántos codones o tripletes de bases existen en total en el código genético?",
-      "opciones": ["16 codones.", "20 codones.", "61 codones.", "64 codones."],
+      "opciones": [
+        "16 codones.",
+        "20 codones.",
+        "61 codones.",
+        "64 codones."
+      ],
       "correcta": "D",
       "explicacion": "El código genético consta de un total de 64 codones (resultantes de combinar las 4 bases nitrogenadas en grupos de a 3), de los cuales 61 codifican aminoácidos y 3 funcionan como señales de terminación."
     },
     {
       "pregunta": "¿Cuántos aminoácidos son codificados mediante los tripletes del código genético para formar las proteínas?",
-      "opciones": ["4 aminoácidos.", "20 aminoácidos.", "61 aminoácidos.", "64 aminoácidos."],
+      "opciones": [
+        "4 aminoácidos.",
+        "20 aminoácidos.",
+        "61 aminoácidos.",
+        "64 aminoácidos."
+      ],
       "correcta": "B",
       "explicacion": "Las combinaciones de codones del código genético están destinadas a nombrar y especificar a los 20 aminoácidos que componen las proteínas."
     },
     {
       "pregunta": "¿Cuáles son los tres codones de terminación o 'stop' (corte) que no especifican ningún aminoácido?",
-      "opciones": ["AUG, UAA y UAG.", "UUU, UUC y UUA.", "UGA, UAG y UAA.", "AGU, AGC y AGA."],
+      "opciones": [
+        "AUG, UAA y UAG.",
+        "UUU, UUC y UUA.",
+        "UGA, UAG y UAA.",
+        "AGU, AGC y AGA."
+      ],
       "correcta": "C",
       "explicacion": "Los tres codones que no especifican ningún aminoácido y actúan como señales de terminación o stop en el mensaje genético son UGA, UAG y UAA."
     },
@@ -603,7 +653,12 @@
     },
     {
       "pregunta": "¿Qué subunidad es necesaria en la ARN polimerasa bacteriana para reconocer las secuencias promotoras e iniciar la transcripción?",
-      "opciones": ["La subunidad alfa (α).", "El factor basal TFIID.", "La subunidad sigma (σ).", "La proteína CAP unida a AMPc."],
+      "opciones": [
+        "La subunidad alfa (α).",
+        "El factor basal TFIID.",
+        "La subunidad sigma (σ).",
+        "La proteína CAP unida a AMPc."
+      ],
       "correcta": "C",
       "explicacion": "El núcleo enzimático de la ARN polimerasa bacteriana requiere asociarse con la subunidad sigma (σ) para formar la holoenzima, la cual posee la capacidad específica de reconocer las secuencias promotoras en el ADN e iniciar la transcripción."
     },
