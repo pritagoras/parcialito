@@ -113,12 +113,12 @@
       "explicacion": "Los intrones son secuencias no codificantes transcriptas en el pre-ARNm que son removidas durante el splicing en el núcleo antes de la traducción."
     },
     {
-      "pregunta": "La característica de que una molécula de ARN mensajero sea policistrónica indica que:",
+      "pregunta": "En bacterias, un ARN mensajero policistrónico se caracteriza por:",
       "opciones": [
-        "contiene un único marco de lectura que puede ser traducido por varios ribosomas simultáneamente.",
-        "corresponde a células procariontes y contiene la información para sintetizar varias cadenas polipeptídicas.",
-        "presenta varios sitios de poliadenilación que originan distintas versiones de un mismo polipéptido.",
-        "incluye varios exones alternativos que se combinan durante el procesamiento de un pre-ARNm eucarionte."
+        "contener un único marco de lectura que puede ser traducido por varios ribosomas simultáneamente.",
+        "contener secuencias codificantes para la síntesis de varias cadenas polipeptídicas.",
+        "presentar varios sitios de poliadenilación que originan distintas versiones de un mismo polipéptido.",
+        "incluir varios exones alternativos que se combinan durante el procesamiento de un pre-ARNm eucarionte."
       ],
       "correcta": "B",
       "explicacion": "En bacterias, los operones transcriben ARNm policistrónicos que albergan secuencias codificantes para múltiples enzimas de una misma vía metabólica."
@@ -322,7 +322,7 @@
       "explicacion": "El genoma procarionte posee un único origen de replicación (oriC) desde el cual dos horquillas avanzan en direcciones opuestas hasta completar el círculo."
     },
     {
-      "pregunta": "Si en una bacteria ocurre una mutación inactivante en el gen de la ADN polimerasa I, el proceso que se verá afectado inmediatamente es la:",
+      "pregunta": "¿Qué combinación de procesos es característica de la expresión génica bacteriana?",
       "opciones": [
         "el retiro de los cebadores de ARN y el relleno de los espacios con ADN durante la maduración de los fragmentos de Okazaki.",
         "eliminación de los cebadores de ARN y su reemplazo por ADN en la hebra retrasada.",
