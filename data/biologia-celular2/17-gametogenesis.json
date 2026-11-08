@@ -467,10 +467,10 @@
     {
       "pregunta": "Cuando el ovocito secundario completa la meiosis II como consecuencia de la fecundación, el resultado inmediato es:",
       "opciones": [
-        "un ovocito primario diploide y dos espermatocitos secundarios.",
-        "dos óvulos funcionales con 23 cromosomas duplicados cada uno.",
-        "un óvulo haploide con 23 cromosomas simples y un segundo cuerpo polar; luego, al reunirse los genomas parentales, se restablece la dotación diploide del cigoto.",
-        "un ovocito secundario diploide con 46 cromosomas simples."
+        "Dos ovocitos haploides con 23 cromosomas duplicados y un cuerpo polar que luego se fusiona con el cigoto.",
+        "Un óvulo haploide con 23 cromosomas duplicados y un segundo cuerpo polar; luego se restablece la diploidía.",
+        "Un óvulo haploide con 23 cromosomas simples y un segundo cuerpo polar; luego, al reunirse los genomas parentales, se restablece la dotación diploide del cigoto.",
+        "Un ovocito secundario diploide con 46 cromosomas simples y un cuerpo polar haploide."
       ],
       "correcta": "C",
       "explicacion": "La fecundación permite que el ovocito secundario reanude y complete la meiosis II. Se forma un óvulo haploide con 23 cromosomas simples (1c) y el segundo cuerpo polar. La reunión del material genético materno y paterno restablece 2n = 46 en el cigoto."
@@ -577,10 +577,10 @@
     {
       "pregunta": "Un espermatocito secundario y un ovocito secundario detenido en metafase II tienen, cada uno, ¿qué contenido genético?",
       "opciones": [
-        "2n, 4c.",
-        "n, 1c.",
+        "2n, 4c: 46 cromosomas duplicados, 92 cromátidas y 4c.",
+        "n, 1c: 23 cromosomas simples, 23 cromátidas y 1c.",
         "n, 2c: 23 cromosomas duplicados, 46 cromátidas y 2c.",
-        "2n, 2c."
+        "2n, 2c: 46 cromosomas simples, 46 cromátidas y 2c."
       ],
       "correcta": "C",
       "explicacion": "Ambas células completaron meiosis I: son haploides, pero todavía conservan cromátidas hermanas unidas. Cada una tiene n=23 y 2c."
@@ -775,10 +775,10 @@
     {
       "pregunta": "¿Cómo se comparan el número de cromosomas y el contenido de ADN de un ovocito primario en profase I y un espermatocito secundario?",
       "opciones": [
-        "Ambos tienen 23 cromosomas y 2c.",
+        "Ambos tienen 23 cromosomas y 2c, porque ya completaron la primera división meiótica.",
         "El ovocito primario tiene 46 cromosomas y 4c; el secundario 23 cromosomas y 2c.",
-        "El ovocito tiene 92 cromosomas y 2c.",
-        "Ambos tienen 46 cromosomas y 4c."
+        "El ovocito tiene 92 cromosomas y 4c; el secundario 46 cromosomas y 2c.",
+        "Ambos tienen 46 cromosomas y 2c, porque la replicación no modifica el número cromosómico."
       ],
       "correcta": "B",
       "explicacion": "El ovocito primario tiene 2n, 4c; el espermatocito secundario n, 2c. Los cromosomas se cuentan por centrómeros."
@@ -797,10 +797,10 @@
     {
       "pregunta": "Si se considera el ADN total de los cuatro productos de la espermatogénesis al finalizar meiosis II, ¿cómo se compara con el ADN del espermatocito primario antes de dividirse?",
       "opciones": [
+        "Los cuatro productos juntos contienen 2c, la mitad que el espermatocito primario; cada espermátida tiene 0,5c.",
         "Los cuatro productos juntos contienen 4c, igual que la célula primaria; cada espermátida tiene 1c.",
-        "Los cuatro juntos contienen 1c.",
-        "Los cuatro juntos contienen 8c.",
-        "Cada espermátida tiene 4c."
+        "Los cuatro productos juntos contienen 8c, el doble que la célula primaria; cada espermátida tiene 2c.",
+        "Cada espermátida conserva 4c, por lo que los cuatro productos reúnen 16c."
       ],
       "correcta": "A",
       "explicacion": "El espermatocito primario empieza con 4c. Al final hay cuatro espermátidas de 1c: 4 × 1c = 4c en conjunto."
@@ -808,10 +808,10 @@
     {
       "pregunta": "¿Qué contiene más ADN por célula: el primer cuerpo polar recién formado o un espermatozoide maduro?",
       "opciones": [
-        "El espermatozoide: 2c frente a 1c.",
-        "Ambos tienen 1c.",
+        "El espermatozoide: 2c frente a 1c, porque conserva cromátidas hermanas.",
+        "Ambos tienen 2c, porque se originan a partir de células haploides.",
         "El primer cuerpo polar: 2c frente a 1c, aunque tenga mucho menos citoplasma.",
-        "El primer cuerpo polar es 2n, 4c."
+        "El primer cuerpo polar es 2n, 4c, mientras que el espermatozoide es n, 1c."
       ],
       "correcta": "C",
       "explicacion": "El primer cuerpo polar se forma al completar meiosis I y es n, 2c. El espermatozoide es n, 1c. El tamaño citoplasmático no determina el ADN nuclear."
@@ -830,10 +830,10 @@
     {
       "pregunta": "Compara un ovocito secundario en metafase II con una espermatogonia en G1. ¿Qué afirmación distingue correctamente ADN y ploidía?",
       "opciones": [
+        "Ambos tienen 2c, pero el ovocito es 2n con 46 cromosomas duplicados y la espermatogonia n con 23 simples.",
         "Ambos tienen 2c, pero el ovocito es n con 23 cromosomas duplicados y la espermatogonia 2n con 46 simples.",
-        "Ambos son 2n porque tienen 2c.",
-        "El ovocito tiene 4c y la espermatogonia 1c.",
-        "La espermatogonia tiene menos cromosomas."
+        "El ovocito tiene 4c y 23 cromosomas simples; la espermatogonia 1c y 46 cromosomas duplicados.",
+        "La espermatogonia tiene 2c y 23 cromosomas duplicados; el ovocito 1c y 46 simples."
       ],
       "correcta": "A",
       "explicacion": "Ambas tienen 2c de ADN total, pero el ovocito es haploide con 23 cromosomas duplicados; la espermatogonia es diploide con 46 simples."
@@ -842,9 +842,9 @@
       "pregunta": "Compara una espermatogonia en G1 y un ovocito primario detenido en profase I. ¿Qué afirmación es correcta?",
       "opciones": [
         "Tienen igual número de cromosomas, 46, pero el ovocito tiene el doble de ADN: 4c frente a 2c.",
-        "El ovocito tiene 92 cromosomas.",
-        "La espermatogonia tiene más ADN.",
-        "Ambos tienen 46 cromosomas simples y 2c."
+        "El ovocito tiene 92 cromosomas duplicados y la espermatogonia 46 cromosomas simples.",
+        "La espermatogonia tiene 4c y el ovocito 2c, aunque ambas poseen 46 cromosomas.",
+        "Ambos tienen 46 cromosomas simples y 2c, porque la ploidía es la misma."
       ],
       "correcta": "A",
       "explicacion": "Ambas conservan 46 cromosomas y son diploides. El ovocito primario ya replicó su ADN: 4c; la espermatogonia en G1 tiene 2c."
