@@ -60,9 +60,9 @@
     {
       "pregunta": "El cese casi total de la actividad de transcripción génica en el núcleo es una característica propia de la fase del ciclo celular denominada:",
       "opciones": [
-        "Fase G1.",
-        "Fase S.",
-        "Fase G2.",
+        "Fase M, cuando la cromatina alcanza su máxima condensación y la transcripción disminuye marcadamente.",
+        "Fase S, cuando la replicación del ADN desplaza a la ARN polimerasa de todos los genes.",
+        "Fase G2, cuando se desensambla la envoltura nuclear y se detiene la transcripción.",
         "Fase M (mitosis)."
       ],
       "correcta": "D",
@@ -302,10 +302,10 @@
     {
       "pregunta": "Las proteínas conocidas como SSB (Single-Stranded Binding proteins) actúan en la horquilla de replicación para:",
       "opciones": [
-        "sintetizar los fragmentos de Okazaki.",
+        "estabilizar las hebras molde separadas y evitar que formen estructuras secundarias o vuelvan a aparearse.",
         "evitar que las hebras simples de ADN separadas por la helicasa se renaturalicen o apareen prematuramente.",
-        "reemplazar los cebadores de ARN por ADN.",
-        "formar el complejo de poro nuclear."
+        "sintetizar los cebadores cortos de ARN que permiten iniciar cada fragmento de Okazaki.",
+        "retirar los cebadores de ARN y rellenar los espacios con desoxirribonucleótidos."
       ],
       "correcta": "B",
       "explicacion": "Las proteínas de unión a hebra sencilla (SSB o RPA) se acoplan al ADN monocatenario para estabilizarlo y prevenir la formación de estructuras secundarias o el reapareamiento."
@@ -324,10 +324,10 @@
     {
       "pregunta": "Si en una bacteria ocurre una mutación inactivante en el gen de la ADN polimerasa I, el proceso que se verá afectado inmediatamente es la:",
       "opciones": [
-        "iniciación de la transcripción del ARNm.",
+        "el retiro de los cebadores de ARN y el relleno de los espacios con ADN durante la maduración de los fragmentos de Okazaki.",
         "eliminación de los cebadores de ARN y su reemplazo por ADN en la hebra retrasada.",
-        "apertura de la hélice por la helicasa.",
-        "traducción de las proteínas ribosomales."
+        "la separación de las hebras parentales en el origen de replicación.",
+        "la síntesis de los cebadores de ARN necesarios para iniciar la replicación."
       ],
       "correcta": "B",
       "explicacion": "La ADN polimerasa I bacteriana posee actividad exonucleasa 5'->3' especializada en degradar los cebadores de ARN y rellenar los huecos con ADN."
@@ -335,10 +335,10 @@
     {
       "pregunta": "La actividad de corrección de pruebas (proofreading) durante la síntesis de ADN depende de la capacidad de la ADN polimerasa de actuar como:",
       "opciones": [
-        "endonucleasa en sentido 5' -> 3'.",
+        "exonucleasa 3' → 5' que elimina el nucleótido mal incorporado desde el extremo de la cadena en crecimiento.",
         "exonucleasa en sentido 3' -> 5' para remover el nucleótido mal apareado.",
-        "ligasa de fragmentos monocatenarios.",
-        "primasa de ribonucleótidos."
+        "exonucleasa 5' → 3' que retira los cebadores de ARN durante la replicación bacteriana.",
+        "endonucleasa que corta ambas hebras cuando detecta un apareamiento incorrecto."
       ],
       "correcta": "B",
       "explicacion": "Al detectar una base mal apareada en el extremo 3', la ADN polimerasa retrocede utilizando su actividad exonucleasa 3'->5' para escindir el nucleótido incorrecto."
@@ -390,10 +390,10 @@
     {
       "pregunta": "En las plantas de gallina andaluza, la cruza entre variantes de plumaje negro (BB) y blanco (bb) origina una F1 de color azul grisáceo por dominancia incompleta. En la F2 la proporción fenotípica será:",
       "opciones": [
-        "50% negros y 50% blancos.",
-        "100% de aves azules.",
+        "1/4 negros, 1/2 azul grisáceo y 1/4 blancos, por segregación de los alelos en la F1 heterocigota.",
+        "3/4 azul grisáceo y 1/4 negro, por dominancia completa del alelo B.",
         "1/4 negros, 1/2 azules grisáceos y 1/4 blancos.",
-        "3/4 negros y 1/4 blancos."
+        "1/2 negros y 1/2 blancos, porque el heterocigota no expresa un fenotipo intermedio."
       ],
       "correcta": "C",
       "explicacion": "En la dominancia incompleta las proporciones genotípicas y fenotípicas coinciden en la F2 (1/4 homocigota dominante, 1/2 heterocigota intermedio y 1/4 homocigota recesivo)."
@@ -423,10 +423,10 @@
     {
       "pregunta": "Una célula muscular y una célula epitelial provenientes del mismo individuo adulto se caracterizan por:",
       "opciones": [
-        "expresar exactamente las mismas moléculas de ARNm.",
+        "derivar del mismo cigoto y conservar, en general, el mismo genoma nuclear, aunque expresen genes diferentes.",
         "derivar de la misma célula huevo o cigoto por mitosis, diferenciándose por la expresión de conjuntos génicos distintos.",
-        "contener una cantidad diferente de cromosomas en su núcleo.",
-        "poseer secuencias de ADN completamente opuestas."
+        "presentar genomas nucleares distintos porque cada tejido pierde genes que no utiliza.",
+        "expresar el mismo conjunto de genes, pero traducirlos con códigos genéticos específicos de cada tejido."
       ],
       "correcta": "B",
       "explicacion": "Salvo mutaciones somáticas, todas las células somáticas comparten el mismo genoma diploide, pero su identidad histológica depende de los programas de expresión génica diferencial."
@@ -434,10 +434,10 @@
     {
       "pregunta": "En las células somáticas diploides de una especie con 2n = 40, la presencia de un gen autosómico con 4 alelos posibles en la población implica que cada célula en G1 tendrá:",
       "opciones": [
-        "un solo alelo.",
+        "dos copias alélicas, una heredada de cada progenitor, aunque en la población existan más variantes.",
         "dos alelos para dicho gen.",
-        "tres alelos.",
-        "cuatro alelos."
+        "cuatro copias alélicas, una por cada variante posible del gen en la población.",
+        "una sola copia alélica, porque los genes autosómicos se expresan en una única cromátide."
       ],
       "correcta": "B",
       "explicacion": "Al ser un organismo diploide (2n), cada individuo solo posee dos cromosomas homólogos por par y, por ende, únicamente dos alelos por locus en sus células somáticas."
@@ -511,10 +511,10 @@
     {
       "pregunta": "La modificación covalente del pre-ARNm eucarionte conocida como Cap o capuchón 5' cumple la función de:",
       "opciones": [
-        "marcar el sitio de poliadenilación en el extremo 3'.",
+        "proteger el extremo 5' y facilitar el reconocimiento del ARNm por los factores de iniciación de la traducción.",
         "proteger al transcripto de la degradación y permitir el reconocimiento por el complejo de iniciación traduccional.",
-        "sintetizar la secuencia de aminoácidos iniciadora.",
-        "eliminar los exones transcritos."
+        "señalar el extremo 3' donde se agrega la cola poli-A durante el procesamiento del transcripto.",
+        "favorecer el reconocimiento del sitio de corte y empalme por las ribonucleoproteínas del espliceosoma."
       ],
       "correcta": "B",
       "explicacion": "La adición de la 7-metilguanosina (Cap 5') estabiliza el pre-ARNm contra la acción de exonucleasas y es esencial para la exportación nuclear y el ensamblaje del ribosoma."
@@ -533,10 +533,10 @@
     {
       "pregunta": "Si en un ensayo farmacológico se inhibe la actividad de la enzima peptidil transferasa, el efecto directo en la traducción será:",
       "opciones": [
-        "la imposibilidad de transcribir el ADN a pre-ARNm.",
-        "el bloqueo de la iniciación por falta de capuchón 5'.",
+        "la elongación se detiene porque el ribosoma no puede catalizar la formación de enlaces peptídicos.",
+        "la iniciación se bloquea porque el ribosoma no puede reconocer el codón AUG del ARNm.",
         "la interrupción de la elongación al no poder formarse los enlaces peptídicos entre aminoácidos.",
-        "la incapacidad de añadir la cola de poliadeninas."
+        "la terminación se impide porque los factores de liberación no pueden reconocer los codones stop."
       ],
       "correcta": "C",
       "explicacion": "La peptidil transferasa es la ribozima del ARNr que cataliza la formación de enlaces peptídicos; su inhibición detiene inmediatamente la fase de elongación."
