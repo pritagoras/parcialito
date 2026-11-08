@@ -599,10 +599,10 @@
     {
       "pregunta": "¿Cuál es el orden correcto de los principales acontecimientos de la vía Gq?",
       "opciones": [
-        "Gq → adenilato ciclasa → AMPc → PKA → PIP₂",
+        "Ligando → GPCR → Gαq-GTP → adenilato ciclasa → AMPc → PKA",
         "Ligando → GPCR → Gαq-GTP → PLCβ → PIP₂ escindido en IP₃ y DAG → liberación de Ca²⁺ y activación de efectores",
-        "Ligando → PKA → GTP → conexones → calcio extracelular",
-        "IP₃ → receptor de membrana → Gs → ATP → DAG"
+        "Ligando → receptor tirosina quinasa → Ras → MAPK → respuesta nuclear",
+        "Ligando → GPCR → Gαs-GTP → PLCβ → IP₃ y DAG → activación de PKA"
       ],
       "correcta": "B",
       "explicacion": "La secuencia comienza con el ligando y el receptor acoplado a Gq. Gαq activa PLCβ; esta hidroliza PIP₂ y produce IP₃ y DAG. IP₃ promueve la liberación de Ca²⁺, mientras DAG y Ca²⁺ favorecen la activación de PKC; el calcio también regula proteínas mediante calmodulina."
@@ -808,10 +808,10 @@
     {
       "pregunta": "¿Qué función cumple el glucocálix en la comunicación y el reconocimiento celular?",
       "opciones": [
-        "Constituye el canal que conecta directamente dos citoplasmas",
+        "Es un conjunto de canales proteicos que comunica directamente los citoplasmas de células vecinas",
         "Es una cubierta rica en carbohidratos asociada a glucoproteínas y glucolípidos que participa en protección e identificación celular",
-        "Hidroliza PIP₂ para producir IP₃ y DAG",
-        "Actúa como bomba que intercambia Na⁺ por K⁺"
+        "Es un complejo enzimático que hidroliza PIP₂ para producir IP₃ y DAG",
+        "Es un sistema de transporte activo que mantiene los gradientes de Na⁺ y K⁺"
       ],
       "correcta": "B",
       "explicacion": "El glucocálix se ubica en la cara extracelular de la membrana y contiene cadenas de carbohidratos asociadas a glucoproteínas y glucolípidos. Participa en protección, interacción con el entorno y reconocimiento celular."
