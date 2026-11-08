@@ -237,9 +237,9 @@
       "pregunta": "La mutación por inserción de dos nucleótidos en el medio de la secuencia codificante de un gen provoca:",
       "opciones": [
         "un corrimiento del marco de lectura traduccional que altera toda la secuencia de aminoácidos posterior.",
-        "un cambio del marco de lectura a partir del sitio de inserción, que puede alterar los codones posteriores.",
-        "la incorporación de un aminoácido adicional sin modificar la lectura de los tripletes siguientes.",
-        "la sustitución de un único aminoácido, independientemente de la posición de la inserción."
+        "la incorporación de dos nucleótidos adicionales sin alterar la lectura de los tripletes siguientes.",
+        "la sustitución de un único aminoácido sin modificar el marco de lectura.",
+        "la incorporación de un aminoácido adicional y la conservación del marco de lectura posterior."
       ],
       "correcta": "A",
       "explicacion": "Las inserciones que no son múltiplos de tres bases desfasan la agrupación de tripletes a partir de la mutación, alterando completamente la traducción posterior."
