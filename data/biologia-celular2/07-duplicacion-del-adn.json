@@ -27,10 +27,10 @@
     {
       "pregunta": "El estado G0 representa:",
       "opciones": [
-        "El punto de control mitótico en la interfase",
+        "El punto de control que detiene la célula cuando detecta errores en la unión al huso mitótico.",
         "Un estado fuera del ciclo proliferativo donde la célula deja de dividirse",
-        "La fase donde ocurre la citocinesis irreversible",
-        "La etapa de máxima duplicación cromosómica"
+        "La fase terminal de la mitosis en la que se separa el citoplasma de las células hijas.",
+        "La etapa de fase S en la que se duplica la cantidad de ADN y se sintetizan histonas."
       ],
       "correcta": "B",
       "explicacion": "El estado G0 es una etapa fuera del ciclo activo donde la célula interrumpe su división de forma prolongada o definitiva."
