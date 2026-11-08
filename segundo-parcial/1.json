@@ -22,7 +22,7 @@
         "la replicación debe ocurrir previamente a la transcripción y a la traducción de un gen."
       ],
       "correcta": "B",
-      "explicacion": "La secuencia de ADN determina exactamente la secuencia del ARN transcrito por complementariedad de bases, mientras que el proceso inverso no permite reconstruir la secuencia original debido a la degeneración del código genético."
+      "explicacion": "Durante la transcripción de un gen, la secuencia de la hebra molde de ADN determina por complementariedad la secuencia del transcripto primario de ARN. El procesamiento posterior (por ejemplo, splicing y edición en ciertos casos) puede modificar el ARN maduro."
     },
     {
       "pregunta": "En relación con el proceso de transcripción se puede afirmar que:",
@@ -66,7 +66,7 @@
         "todos los seres vivos sintetizan sus proteínas a partir de los mismos aminoácidos."
       ],
       "correcta": "A",
-      "explicacion": "La conservación del código genético a través de las especies permite que la maquinaria celular de un organismo interprete los codones de un gen foráneo produciendo la misma secuencia aminoacídica."
+      "explicacion": "El código genético es prácticamente universal: la mayoría de los organismos comparten la correspondencia entre codones y aminoácidos, aunque existen excepciones, como algunos códigos genéticos mitocondriales."
     },
     {
       "pregunta": "En un tubo de ensayo se colocan ARNm de ratón, ribosomas y enzimas de traducción de perro, aminoácidos unidos a ARNt de cabra y ATP. ¿Qué determina la secuencia de aminoácidos del polipéptido sintetizado?",
@@ -80,7 +80,7 @@
       "explicacion": "La secuencia del ARN mensajero es la que contiene la información instructiva que determina el orden de los aminoácidos en la proteína sintetizada."
     },
     {
-      "pregunta": "¿Cuál de los siguientes eventos puede originar una mutación heredable si el cambio queda fijado en el ADN?",
+      "pregunta": "¿Cuál de los siguientes eventos puede originar una mutación heredable si el cambio queda fijado en el ADN de una célula de la línea germinal?",
       "opciones": [
         "Errores en el proceso de traducción.",
         "Errores en la replicación del ADN.",
@@ -88,7 +88,7 @@
         "Errores simultáneos en la transcripción y traducción."
       ],
       "correcta": "B",
-      "explicacion": "Un error durante la replicación puede escapar a los mecanismos de corrección y reparación y quedar fijado como una mutación en el ADN. Si ocurre en una línea germinal, puede transmitirse a la descendencia; no todo error de replicación produce necesariamente un cambio fenotípico."
+      "explicacion": "Un error durante la replicación puede escapar a los mecanismos de corrección y reparación y quedar fijado como una mutación en el ADN. Si ocurre en una célula de la línea germinal, puede transmitirse a la descendencia; no todo error de replicación produce necesariamente un cambio fenotípico."
     },
     {
       "pregunta": "Una mutación en el gen que codifica un polipéptido:",
