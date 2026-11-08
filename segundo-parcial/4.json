@@ -379,10 +379,10 @@
     {
       "pregunta": "La región del ADN denominada promotor consiste en una secuencia de:",
       "opciones": [
-        "ribonucleótidos requeridos para la traducción.",
+        "ribonucleótidos que forman parte del transcripto primario.",
         "desoxirribonucleótidos que interactúan con factores para regular el inicio de la transcripción.",
-        "ribonucleótidos esenciales para la elongación del ARNm.",
-        "aminoácidos que guían a la ARN polimerasa."
+        "desoxirribonucleótidos que constituyen un sitio de unión para factores de transcripción y la ARN polimerasa.",
+        "aminoácidos que integran el dominio de unión al ADN de la ARN polimerasa."
       ],
       "correcta": "B",
       "explicacion": "El promotor es un segmento de desoxirribonucleótidos en la región reguladora del gen donde se acopla la maquinaria de transcripción."
@@ -401,10 +401,10 @@
     {
       "pregunta": "A diferencia de las células eucariontes, los genes codificantes en bacterias se caracterizan por:",
       "opciones": [
-        "presentar múltiples intrones y exones.",
+        "contener intrones que se eliminan mediante el espliceosoma antes de la traducción.",
         "carecer de intrones y contener secuencias continuas para una o varias proteínas.",
-        "traducirse dentro del nucléolo bacteriano.",
-        "requerir el procesamiento de corte y empalme."
+        "presentar secuencias codificantes continuas, aunque algunos transcriptos pueden incluir regiones no traducidas.",
+        "requerir un procesamiento nuclear de corte y empalme para generar ARNm maduro."
       ],
       "correcta": "B",
       "explicacion": "Los genes bacterianos estándar no poseen secuencias intrónicas intercaladas, presentando marcos abiertos de lectura continuos."
