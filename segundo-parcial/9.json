@@ -16,10 +16,10 @@
     {
       "pregunta": "El proceso de procesamiento del pre-ARNm denominado splicing o corte y empalme permite:",
       "opciones": [
-        "la degradación del transcripto en el nucleoplasma.",
+        "la eliminación de intrones y la unión de exones para formar un ARNm maduro.",
         "la eliminación de los intrones no codificantes y la unión de los exones para obtener un ARNm maduro.",
-        "la adición de una secuencia de poliadeninas en el extremo 5'.",
-        "la traducción directa del pre-ARNm en los ribosomas."
+        "la selección de un sitio de inicio de replicación para duplicar el gen antes de traducirlo.",
+        "la eliminación de exones y la unión de intrones para producir una molécula de ARN funcional."
       ],
       "correcta": "B",
       "explicacion": "El splicing remueve de manera precisa las secuencias intrónicas del pre-ARNm y liga las secuencias exónicas para formar el ARNm maduro."
@@ -28,9 +28,9 @@
       "pregunta": "Las modificaciones co- y post-transcripcionales del ARNm en células eucariontes incluyen:",
       "opciones": [
         "la adición de la capuchón (Cap 5') en el extremo 5' y una cola de poliadeninas (poli-A) en el extremo 3'.",
-        "la adición de intrones a la secuencia codificante.",
-        "el empaquetamiento del ARN con histonas.",
-        "la eliminación de la secuencia promotora del ADN."
+        "la adición de un capuchón 5' y de una cola poli-A 3', junto con el procesamiento de intrones cuando corresponde.",
+        "la incorporación de histonas al transcripto y la eliminación de los promotores del ARN.",
+        "la adición de una cola poli-A en el extremo 5' y de un capuchón en el extremo 3'."
       ],
       "correcta": "A",
       "explicacion": "La maduración del ARNm eucarionte requiere el capping en 5', la poliadenilación en 3' y la eliminación de intrones."
@@ -159,10 +159,10 @@
     {
       "pregunta": "Las secuencias reguladoras del ADN en eucariontes conocidas como intensificadores (enhancers) y silenciadores (silencers) actúan:",
       "opciones": [
-        "transcribiéndose a moléculas de ARNm funcional.",
+        "uniendo factores de transcripción que aumentan o disminuyen la frecuencia de iniciación en un promotor.",
         "uniendo proteínas reguladoras (activadores o represores) para modular la tasa de transcripción sin ser traducidas.",
-        "eliminando intrones del pre-ARNm.",
-        "codificando para las enzimas del huso mitótico."
+        "actuando como sitios de unión para proteínas reguladoras que modifican la actividad transcripcional, incluso a distancia.",
+        "codificando pequeños ARN que se unen directamente a los ribosomas para regular la traducción."
       ],
       "correcta": "B",
       "explicacion": "Los enhancers y silencers son elementos reguladores en cis en el ADN que se unen a factores de transcripción específicos para aumentar o reducir la transcripción."
@@ -181,10 +181,10 @@
     {
       "pregunta": "La función principal de las enzimas topoisomerasas durante la replicación del ADN es:",
       "opciones": [
-        "sintetizar los cebadores de ARN.",
+        "eliminar segmentos de ADN y volver a unirlos para modificar la secuencia del gen.",
         "cortar y religar las hebras de ADN para aliviar la tensión de superenrollamiento.",
-        "unir los fragmentos de Okazaki en la hebra retrasada.",
-        "romper los puentes de hidrógeno de la doble hélice."
+        "disminuir la tensión torsional del ADN mediante cortes transitorios y posterior religación de sus hebras.",
+        "separar las dos hebras de ADN rompiendo los puentes de hidrógeno entre bases complementarias."
       ],
       "correcta": "B",
       "explicacion": "Las topoisomerasas alucian el superenrollamiento positivo generado por el avance de la helicasa realizando cortes transitorios en el esqueleto de ADN."
@@ -292,9 +292,9 @@
       "pregunta": "La función biológica esencial de la división por meiosis en las especies con reproducción sexual es:",
       "opciones": [
         "mantener constante el número cromosómico de la especie de generación en generación al reducir la ploidía a la mitad.",
-        "producir células somáticas idénticas para la regeneración tisular.",
-        "duplicar la cantidad de ADN del cigoto.",
-        "eliminar los intrones del genoma."
+        "producir gametas haploides para que la fecundación restablezca el número cromosómico característico de la especie.",
+        "generar células diploides idénticas para el crecimiento y la reparación de tejidos.",
+        "reducir a la mitad la cantidad de ADN sin modificar el número de cromosomas."
       ],
       "correcta": "A",
       "explicacion": "Al generar gametas haploides (n), la meiosis compensa la duplicación cromosómica que ocurre durante la fecundación."
@@ -313,10 +313,10 @@
     {
       "pregunta": "La teoría endosimbiótica propuesta para el origen de la célula eucarionte explica la aparición de:",
       "opciones": [
-        "el complejo de Golgi y el retículo endoplásmico.",
+        "la aparición de mitocondrias y cloroplastos a partir de bacterias incorporadas por una célula ancestral.",
         "organelas semiautónomas como mitocondrias y cloroplastos a partir de procariontes englobados.",
-        "el huso acromático y los centríolos.",
-        "la lámina nuclear y los poros nucleares."
+        "el origen del núcleo y del sistema de endomembranas a partir de invaginaciones de la membrana plasmática.",
+        "la formación de ribosomas eucariontes a partir de la fusión de dos tipos de bacterias."
       ],
       "correcta": "B",
       "explicacion": "La teoría endosimbiótica postula que mitocondrias y cloroplastos evolucionaron a partir de bacterias endosimbiontes fagocitadas por células ancestrales."
