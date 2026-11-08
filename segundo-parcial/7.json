@@ -171,9 +171,9 @@
       "pregunta": "A través del complejo del poro nuclear transitan hacia y desde el nucleoplasma:",
       "opciones": [
         "las subunidades ribosómicas ensambladas en el nucléolo hacia el citosol y las proteínas ribosómicas hacia el núcleo.",
-        "exclusivamente moléculas de agua e iones por difusión simple.",
-        "las enzimas digestivas de la vía secretora.",
-        "las vesículas procedentes del complejo de Golgi."
+        "el ARNm maduro y las subunidades ribosómicas hacia el citosol, y proteínas con señal NLS hacia el núcleo.",
+        "las proteínas destinadas a mitocondrias desde el citosol, sin atravesar la envoltura nuclear.",
+        "los factores de transcripción desde el núcleo hacia el citoplasma para su degradación."
       ],
       "correcta": "A",
       "explicacion": "Las proteínas ribosómicas sintetizadas en el citosol ingresan por el poro para ensamblarse en el nucléolo, mientras que las subunidades formadas son exportadas al citosol."
@@ -259,9 +259,9 @@
       "pregunta": "Durante la fase S del ciclo celular eucarionte, la síntesis de ADN se acompaña obligatoriamente de la:",
       "opciones": [
         "síntesis masiva de proteínas histonas para empaquetar las nuevas cadenas de ADN.",
-        "separación de los cromosomas homólogos.",
-        "desorganización irreversible del nucléolo.",
-        "degradación de todas las ciclinas."
+        "síntesis de ARN mensajero a partir de los genes que codifican histonas, coordinada con la replicación.",
+        "duplicación de los centríolos para formar los polos del huso mitótico.",
+        "separación de las cromátides hermanas antes de que finalice la replicación."
       ],
       "correcta": "A",
       "explicacion": "En la fase S la replicación del ADN requiere la síntesis coordinada de histonas para ensamblar los nucleosomas de las hebras hijas."
@@ -269,10 +269,10 @@
     {
       "pregunta": "Durante la reacción de síntesis de la hebra de ADN, la hidrólisis del grupo pirofosfato (PPi) liberado al incorporar cada dNTP sirve para:",
       "opciones": [
-        "activar a la enzima helicasa.",
+        "reducir la tensión torsional que se genera por delante de la horquilla de replicación.",
         "aportar la energía libre exergónica que impulsa la polimerización irreversible de la cadena.",
-        "sintetizar el cebador de ARN.",
-        "formar el complejo de poro nuclear."
+        "aportar energía para la unión de los cebadores de ARN a la hebra molde.",
+        "favorecer el desplazamiento de la ADN polimerasa mediante la hidrólisis de ATP."
       ],
       "correcta": "B",
       "explicacion": "La rotura del enlace fosfoanhídrido y la posterior hidrólisis del pirofosfato favorecen termodinámicamente la unión fosfodiéster."
@@ -325,9 +325,9 @@
       "pregunta": "El péptido señal presente en las proteínas dirigidas a la vía secretora se caracteriza por ser una secuencia de aminoácidos ubicada en:",
       "opciones": [
         "el extremo amino terminal que guía el complejo ribosoma-ARNm hacia la membrana del REG.",
-        "el extremo carboxilo terminal para retención nuclear.",
-        "el asa del ARN de transferencia.",
-        "la secuencia del promotor génico."
+        "el extremo amino terminal, donde puede ser reconocido por la partícula de reconocimiento de señal (SRP).",
+        "una región interna que funciona como señal de importación hacia la matriz mitocondrial.",
+        "el extremo carboxilo terminal, que puede actuar como señal de localización peroxisomal."
       ],
       "correcta": "A",
       "explicacion": "El péptido señal aminoterminal es reconocido por la partícula SRP para translocar la proteína naciente al interior del REG."
@@ -368,10 +368,10 @@
     {
       "pregunta": "Si en un fragmento de la secuencia codificante de un gen se produce la inserción de tres nucleótidos (un codón completo), la consecuencia será:",
       "opciones": [
-        "un corrimiento grave del marco de lectura traduccional.",
+        "la incorporación de un aminoácido sin modificar el marco de lectura de los codones posteriores.",
         "la adición de un aminoácido a la proteína conservando el marco de lectura posterior.",
-        "la interrupción instantánea de la transcripción.",
-        "la degradación completa del ADN."
+        "la sustitución de un aminoácido por otro y el cambio del marco de lectura desde ese punto.",
+        "la terminación prematura de la traducción si el triplete insertado corresponde a un codón stop."
       ],
       "correcta": "B",
       "explicacion": "Al insertar un múltiplo exacto de tres bases (un codón), se suma o resta un residuo aminoacídico sin alterar el marco de lectura de los codones siguientes."
@@ -390,10 +390,10 @@
     {
       "pregunta": "El axónema que constituye el núcleo estructural del flagelo en una célula eucarionte está integrado por una organización de:",
       "opciones": [
-        "filamentos de actina y miosina.",
+        "nueve tripletes periféricos sin par central, como en los centríolos.",
         "microtúbulos dispuestos en un patrón de 9 pares periféricos y 1 par central (9+2).",
-        "filamentos intermedios de queratina.",
-        "fibrillas de colágeno extracelular."
+        "nueve dobletes periféricos sin microtúbulos centrales, como en ciertos cilios primarios.",
+        "dobletes de microtúbulos asociados a filamentos de actina y miosina."
       ],
       "correcta": "B",
       "explicacion": "Los cilios y flagelos eucariotas poseen una arquitectura interna basada en un axonema de microtúbulos de tubulina organizados en un arreglo 9+2."
