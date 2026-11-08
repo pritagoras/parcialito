@@ -754,9 +754,9 @@
       "pregunta": "La formación del enlace peptídico durante el proceso de traducción es catalizada por la enzima:",
       "opciones": [
         "peptidil transferasa (actividad ribozímica del ARNr).",
-        "aminoacil-ARNt sintetasa, que une cada aminoácido con su ARNt correspondiente.",
-        "factor de elongación, que facilita la entrada del aminoacil-ARNt al sitio A.",
-        "peptidil transferasa, actividad catalítica asociada al ARN ribosómico de la subunidad mayor."
+        "aminoacil-ARNt sintetasa, que carga el aminoácido correspondiente sobre su ARNt.",
+        "factor de elongación, que facilita el ingreso del aminoacil-ARNt al sitio A.",
+        "ARN polimerasa ribosomal, que sintetiza el ARNr durante la formación de ribosomas."
       ],
       "correcta": "A",
       "explicacion": "La peptidil transferasa es una ribozima integrada en la subunidad mayor del ribosoma que une los aminoácidos mediante enlaces peptídicos."
