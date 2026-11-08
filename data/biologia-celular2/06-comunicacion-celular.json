@@ -674,15 +674,15 @@
       "explicacion": "Los factores de amplificación de etapas sucesivas se multiplican: 5 × 4 = 20. Es un máximo ideal ilustrativo; la amplificación real depende de concentraciones, duración y regulación."
     },
     {
-      "pregunta": "Una despolarización inicial de la membrana neuronal desencadena un potencial de acción completo cuando:",
+      "pregunta": "En el eje hipotálamo-hipófisis, ¿qué función cumplen los factores liberadores e inhibidores producidos por neuronas hipotalámicas?",
       "opciones": [
-        "Se abren los receptores intracelulares de hormonas esteroideas",
-        "La bomba Na⁺/K⁺ deja de consumir ATP",
-        "El calcio se une a la calmodulina",
-        "La membrana alcanza el umbral necesario para activar suficientes canales de Na⁺ dependientes de voltaje"
+        "Se unen directamente al ADN de todas las células del organismo",
+        "Regulan la secreción hormonal de la adenohipófisis",
+        "Se liberan desde la neurohipófisis y producen potenciales de acción en el axón",
+        "Actúan como enzimas digestivas secretadas por el páncreas"
       ],
-      "correcta": "D",
-      "explicacion": "La entrada de Na⁺ puede producir una despolarización inicial, pero para generar un potencial de acción debe alcanzarse el umbral. Entonces se activa la respuesta regenerativa de los canales de Na⁺ dependientes de voltaje."
+      "correcta": "B",
+      "explicacion": "Las neuronas hipotalámicas producen factores liberadores o inhibidores que regulan la secreción de la adenohipófisis. En cambio, la oxitocina y la ADH se sintetizan en neuronas hipotalámicas y se liberan a la sangre desde la neurohipófisis."
     },
     {
       "pregunta": "El principio de todo o nada del potencial de acción significa que:",
