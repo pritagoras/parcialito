@@ -149,9 +149,9 @@
       "pregunta": "Un origen de replicación (ori) se define como:",
       "opciones": [
         "La región específica del ADN donde comienza la apertura de las hebras e iniciación del proceso",
-        "El extremo terminal del cromosoma donde actúa la telomerasa",
-        "La secuencia de ARN cebador que coloca la primasa",
-        "El sitio final donde chocan las dos horquillas de replicación"
+        "El extremo terminal del cromosoma donde se une la telomerasa para extender las repeticiones teloméricas.",
+        "La secuencia de ARN que sintetiza la primasa para iniciar la elongación de una nueva hebra.",
+        "El sitio de terminación donde convergen las horquillas y se completa la replicación del cromosoma."
       ],
       "correcta": "A",
       "explicacion": "El sitio ori es la secuencia donde inicia la separación de las hebras del ADN."
@@ -357,10 +357,10 @@
     {
       "pregunta": "El denominado \"problema de la replicación del extremo\" surge porque:",
       "opciones": [
-        "La helicasa no puede separar los puentes de hidrógeno teloméricos",
-        "Las proteínas SSB bloquean el extremo 5' de la hebra líder",
+        "La helicasa no puede separar los puentes de hidrógeno de las regiones teloméricas al final de la replicación.",
+        "Las proteínas SSB bloquean el extremo 5' de la hebra líder e impiden que actúe la ADN polimerasa.",
         "Al eliminar el último cebador en la hebra rezagada no hay un extremo 3'-OH para continuar el relleno",
-        "La ADN ligasa actúa únicamente en cromosomas circulares"
+        "La ADN ligasa actúa únicamente sobre cromosomas circulares y no puede unir fragmentos de Okazaki."
       ],
       "correcta": "C",
       "explicacion": "Al retirar el último cebador del extremo no queda un extremo 3'-OH accesible para rellenar el hueco restante."
