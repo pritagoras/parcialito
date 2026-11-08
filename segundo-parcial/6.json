@@ -327,7 +327,7 @@
         "23 cromosomas duplicados, cada uno con dos cromátides hermanas.",
         "22 autosomas y 1 cromosoma sexual (X o Y).",
         "22 autosomas y dos cromosomas sexuales en cada gameta.",
-        "22 autosomas y un cromosoma sexual, X o Y, cada uno con una cromátide."
+        "22 pares de autosomas y un par de cromosomas sexuales."
       ],
       "correcta": "B",
       "explicacion": "Las espermátides son células haploides (n = 23) compuestas por 22 autosomas simples y un único cromosoma sexual (X o Y)."
