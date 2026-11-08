@@ -4,17 +4,22 @@
   "preguntas": [
     {
       "pregunta": "En relación a las etapas de la comunicación celular, la célula que produce y libera el mensajero químico se denomina:",
-      "opciones": ["Célula inductora", "Célula diana", "Célula blanco", "Célula inducida"],
+      "opciones": [
+        "Célula inductora",
+        "Célula diana",
+        "Célula blanco",
+        "Célula inducida"
+      ],
       "correcta": "A",
       "explicacion": "La célula inductora o emisora es la encargada de sintetizar y liberar o presentar la señal química hacia la célula receptora."
     },
     {
       "pregunta": "En la comunicación de tipo endocrina, la señal química se caracteriza por:",
       "opciones": [
-      "Actuar sobre la misma célula que la sintetizó",
-      "Viajar a través del torrente sanguíneo hacia células blanco distantes",
-      "Difundir únicamente hacia células adyacentes a través del medio extracelular",
-      "Quedar retenida en la membrana plasmática de la célula emisora"
+        "Actuar sobre la misma célula que la sintetizó",
+        "Viajar a través del torrente sanguíneo hacia células blanco distantes",
+        "Difundir únicamente hacia células adyacentes a través del medio extracelular",
+        "Quedar retenida en la membrana plasmática de la célula emisora"
       ],
       "correcta": "B",
       "explicacion": "En la inducción endocrina las glándulas liberan hormonas al torrente sanguíneo para alcanzar células o tejidos distantes."
@@ -22,10 +27,10 @@
     {
       "pregunta": "La señalización paracrina se caracteriza porque la molécula inductora:",
       "opciones": [
-      "Viaja por el torrente sanguíneo hacia órganos alejados",
-      "Es secretada por una neurona directamente a la sangre",
-      "Difunde a través del medio extracelular actuando sobre células cercanas",
-      "Permanece unida a la membrana celular sin secretarse"
+        "Viaja por el torrente sanguíneo hacia órganos alejados",
+        "Es secretada por una neurona directamente a la sangre",
+        "Difunde a través del medio extracelular actuando sobre células cercanas",
+        "Permanece unida a la membrana celular sin secretarse"
       ],
       "correcta": "C",
       "explicacion": "En la comunicación paracrina la célula emite un mediador local que difunde en el entorno extracelular cercano afectando a células próximas."
@@ -33,10 +38,10 @@
     {
       "pregunta": "La comunicación de tipo autocrina ocurre cuando:",
       "opciones": [
-      "Una neurona libera un neurotransmisor en la hendidura sináptica",
-      "Una célula secreta una hormona que se transporta por la sangre",
-      "Dos células conectan directamente sus citoplasmas mediante canales",
-      "El mensajero químico liberado actúa sobre receptores de la misma célula emisora"
+        "Una neurona libera un neurotransmisor en la hendidura sináptica",
+        "Una célula secreta una hormona que se transporta por la sangre",
+        "Dos células conectan directamente sus citoplasmas mediante canales",
+        "El mensajero químico liberado actúa sobre receptores de la misma célula emisora"
       ],
       "correcta": "D",
       "explicacion": "La inducción autocrina es un mecanismo de autorregulación en el que la señal sintetizada por la célula actúa sobre sus propios receptores."
@@ -44,50 +49,65 @@
     {
       "pregunta": "En la comunicación por contacto directo (o yuxtacrina), la molécula señal:",
       "opciones": [
-      "Queda retenida en la membrana plasmática de la célula inductora",
-      "Es transportada por los vasos sanguíneos hacia tejidos alejados",
-      "Se degrada rápidamente en la hendidura sináptica",
-      "Difunde libremente por el medio extracelular a largas distancias"
+        "Queda retenida en la membrana plasmática de la célula inductora",
+        "Es transportada por los vasos sanguíneos hacia tejidos alejados",
+        "Se degrada rápidamente en la hendidura sináptica",
+        "Difunde libremente por el medio extracelular a largas distancias"
       ],
       "correcta": "A",
       "explicacion": "En este tipo de comunicación la señal no se secreta, sino que requiere que las células entren en contacto físico directo para interactuar con el receptor."
     },
     {
       "pregunta": "Las uniones comunicantes (nexus o gap) están constituidas por canales intercelulares formados por la alineación de dos:",
-      "opciones": ["Ribosomas", "Conexones", "Receptores ionotrópicos", "Monómeros de actina"],
+      "opciones": [
+        "Ribosomas",
+        "Conexones",
+        "Receptores ionotrópicos",
+        "Monómeros de actina"
+      ],
       "correcta": "B",
       "explicacion": "Cada canal de unión comunicante se forma alineando dos conexones (uno aportado por cada célula adyacente), constituidos por subunidades de conexina."
     },
     {
       "pregunta": "Un conexón de una unión comunicante está compuesto habitualmente por:",
-      "opciones": ["Tres proteínas G", "Cuatro cadenas de fosfolípidos", "Seis subunidades de conexina", "Ocho moléculas de colesterol"],
+      "opciones": [
+        "Tres proteínas G",
+        "Cuatro cadenas de fosfolípidos",
+        "Seis subunidades de conexina",
+        "Ocho moléculas de colesterol"
+      ],
       "correcta": "C",
       "explicacion": "Los conexones son estructuras compuestas por seis proteínas transmembrana denominadas conexinas."
     },
     {
       "pregunta": "La apertura de las uniones comunicantes se cierra cuando ocurre:",
       "opciones": [
-      "Un descenso en la concentración de sodio citosólico",
-      "Una elevación del pH en el citoplasma",
-      "Una disminución del ATP intracelular",
-      "Un aumento de la concentración intracelular de calcio"
+        "Un descenso en la concentración de sodio citosólico",
+        "Una elevación del pH en el citoplasma",
+        "Una disminución del ATP intracelular",
+        "Un aumento de la concentración intracelular de calcio"
       ],
       "correcta": "D",
       "explicacion": "El aumento de la concentración citosólica de calcio o el descenso del pH intracelular provocan el cierre de las uniones comunicantes."
     },
     {
       "pregunta": "¿Cuál de las siguientes sustancias puede atravesar libremente las uniones comunicantes entre células adyacentes?",
-      "opciones": ["Segundos mensajeros e iones", "Proteínas de gran tamaño", "ARN mensajero", "Complejos enzimáticos"],
+      "opciones": [
+        "Segundos mensajeros e iones",
+        "Proteínas de gran tamaño",
+        "ARN mensajero",
+        "Complejos enzimáticos"
+      ],
       "correcta": "A",
       "explicacion": "Las uniones gap permiten únicamente el pasaje de pequeñas moléculas solubles y segundos mensajeros o iones entre citoplasmas acoplados."
     },
     {
       "pregunta": "En relación a la comunicación sináptica o neuronal, los neurotransmisores son liberados en:",
       "opciones": [
-      "El torrente sanguíneo",
-      "El espacio o hendidura sináptica",
-      "La luz de una glándula exocrina",
-      "La matriz mitocondrial"
+        "El torrente sanguíneo",
+        "El espacio o hendidura sináptica",
+        "La luz de una glándula exocrina",
+        "La matriz mitocondrial"
       ],
       "correcta": "B",
       "explicacion": "Las neuronas liberan neurotransmisores a un espacio intercelular estrecho denominado hendidura o espacio sináptico."
@@ -95,33 +115,43 @@
     {
       "pregunta": "En la señalización neuroendocrina, la molécula señal es producida por una neurona y:",
       "opciones": [
-      "Se secreta al espacio extracelular local",
-      "Queda anclada permanentemente en la membrana del axón",
-      "Es vertida directamente al torrente sanguíneo",
-      "Difunde exclusivamente a través de uniones gap"
+        "Se secreta al espacio extracelular local",
+        "Queda anclada permanentemente en la membrana del axón",
+        "Es vertida directamente al torrente sanguíneo",
+        "Difunde exclusivamente a través de uniones gap"
       ],
       "correcta": "C",
       "explicacion": "Las neuronas neurosecretoras liberan neurohormonas a la circulación sanguínea para regular órganos a distancia."
     },
     {
       "pregunta": "Las hormonas de naturaleza esteroidea se caracterizan químicamente por ser derivadas de:",
-      "opciones": ["Aminoácidos aromáticos", "Ácidos grasos esenciales", "Cadenas peptídicas", "El colesterol"],
+      "opciones": [
+        "Aminoácidos aromáticos",
+        "Ácidos grasos esenciales",
+        "Cadenas peptídicas",
+        "El colesterol"
+      ],
       "correcta": "D",
       "explicacion": "Las hormonas esteroideas, como los estrógenos, andrógenos y glucocorticoides, se sintetizan a partir del colesterol."
     },
     {
       "pregunta": "Las prostaglandinas son un ejemplo representativo de señales químicas derivadas de:",
-      "opciones": ["Ácidos grasos", "Colesterol", "Aminoácidos", "Nucleótidos de purina"],
+      "opciones": [
+        "Ácidos grasos",
+        "Colesterol",
+        "Aminoácidos",
+        "Nucleótidos de purina"
+      ],
       "correcta": "A",
       "explicacion": "Las prostaglandinas son mediadores químicos sintetizados a partir de derivados de ácidos grasos."
     },
     {
       "pregunta": "¿Cuál de los siguientes pares de hormonas corresponde a señales de naturaleza peptídica o proteica?",
       "opciones": [
-      "Estrógeno y progesterona",
-      "Insulina y hormona del crecimiento",
-      "Adrenalina y noradrenalina",
-      "Tiroxina y triiodotironina"
+        "Estrógeno y progesterona",
+        "Insulina y hormona del crecimiento",
+        "Adrenalina y noradrenalina",
+        "Tiroxina y triiodotironina"
       ],
       "correcta": "B",
       "explicacion": "Tanto la insulina como la hormona del crecimiento son moléculas compuestas por cadenas de aminoácidos (proteínas/péptidos)."
@@ -129,10 +159,10 @@
     {
       "pregunta": "Las hormonas hidrofílicas no pueden atravesar la bicapa lipídica debido a su polaridad, por lo que se unen a:",
       "opciones": [
-      "Receptores citosólicos libres",
-      "Receptores exclusivamente nucleares",
-      "Receptores de la membrana plasmática",
-      "Chaperonas dentro del retículo"
+        "Receptores citosólicos libres",
+        "Receptores exclusivamente nucleares",
+        "Receptores de la membrana plasmática",
+        "Chaperonas dentro del retículo"
       ],
       "correcta": "C",
       "explicacion": "Al no atravesar la membrana lipídica, los ligandos hidrofílicos interactúan con receptores ubicados en la superficie celular externa."
@@ -140,121 +170,186 @@
     {
       "pregunta": "Las hormonas esteroideas y tiroideas, por su carácter liposoluble, se unen preferentemente a:",
       "opciones": [
-      "Canales iónicos de la membrana",
-      "Proteínas de la matriz extracelular",
-      "Enzimas de la lámina basal",
-      "Receptores intracelulares"
+        "Canales iónicos de la membrana",
+        "Proteínas de la matriz extracelular",
+        "Enzimas de la lámina basal",
+        "Receptores intracelulares"
       ],
       "correcta": "D",
       "explicacion": "Al ser hidrofóbicas, estas hormonas difunden por la bicapa y se unen a receptores en el citosol o núcleo."
     },
     {
       "pregunta": "La propiedad del complejo ligando-receptor que indica que la célula posee un número finito de receptores se denomina:",
-      "opciones": ["Saturabilidad", "Reversibilidad", "Especificidad", "Encaje inducido"],
+      "opciones": [
+        "Saturabilidad",
+        "Reversibilidad",
+        "Especificidad",
+        "Encaje inducido"
+      ],
       "correcta": "A",
       "explicacion": "La saturabilidad refleja que el número total de receptores en la célula es limitado, por lo que concentraciones elevadas de ligando saturan la respuesta."
     },
     {
       "pregunta": "El cambio de conformación estructural recíproco entre el inductor y su receptor al unirse se conoce como:",
-      "opciones": ["Transducción de energía", "Encaje inducido", "Despolarización", "Autofosforilación"],
+      "opciones": [
+        "Transducción de energía",
+        "Encaje inducido",
+        "Despolarización",
+        "Autofosforilación"
+      ],
       "correcta": "B",
       "explicacion": "La unión ligando-receptor genera una adaptación estructural recíproca comparable al modelo de encaje inducido de las enzimas."
     },
     {
       "pregunta": "En las vías de señalización con receptores de membrana, el mensajero extracelular que inicia la señal recibe el nombre de:",
-      "opciones": ["Segundo mensajero", "Proteína transductora", "Primer mensajero", "Enzima amplificadora"],
+      "opciones": [
+        "Segundo mensajero",
+        "Proteína transductora",
+        "Primer mensajero",
+        "Enzima amplificadora"
+      ],
       "correcta": "C",
       "explicacion": "El ligando o señal extracelular que se une al receptor superficial actúa como el primer mensajero de la ruta."
     },
     {
       "pregunta": "La conversión del reconocimiento de una señal externa en un conjunto de señales intracelulares se denomina:",
-      "opciones": ["Exocitosis", "Endocitosis dependiente de clatrina", "Transcripción reversa", "Transducción de señal"],
+      "opciones": [
+        "Exocitosis",
+        "Endocitosis dependiente de clatrina",
+        "Transcripción reversa",
+        "Transducción de señal"
+      ],
       "correcta": "D",
       "explicacion": "La transducción de señales abarca todos los procesos que transforman la unión del primer mensajero al receptor en una cascada de respuesta interna."
     },
     {
       "pregunta": "En los receptores asociados a proteína G, la proteína G de membrana es un heterotrímero compuesto por las subunidades:",
-      "opciones": ["Alfa, beta y gamma", "Citosina, guanina y timina", "PKA, PKC y PKG", "Ras, Raf y Mek"],
+      "opciones": [
+        "Alfa, beta y gamma",
+        "Citosina, guanina y timina",
+        "PKA, PKC y PKG",
+        "Ras, Raf y Mek"
+      ],
       "correcta": "A",
       "explicacion": "Las proteínas G heterotriméricas están constituidas estructuralmente por tres subunidades distintas: alfa, beta y gamma."
     },
     {
       "pregunta": "La subunidad alfa de la proteína G se encuentra en su estado inactivo cuando está unida a:",
-      "opciones": ["GTP", "GDP", "AMPc", "ATP"],
+      "opciones": [
+        "GTP",
+        "GDP",
+        "AMPc",
+        "ATP"
+      ],
       "correcta": "B",
       "explicacion": "En estado inactivo, la subunidad alfa de la proteína G contiene guanosina difosfato (GDP) acoplado a su sitio catalítico."
     },
     {
       "pregunta": "La activación de la proteína G ocurre cuando la interacción con el receptor estimulado promueve la liberación de GDP y la unión de:",
-      "opciones": ["ATP", "AMPc", "GTP", "ADP"],
+      "opciones": [
+        "ATP",
+        "AMPc",
+        "GTP",
+        "ADP"
+      ],
       "correcta": "C",
       "explicacion": "Al activarse, la proteína G intercambia su GDP por una molécula de GTP, lo que provoca la disociación funcional de sus subunidades."
     },
     {
       "pregunta": "La desactivación de la subunidad alfa de la proteína G se produce por su propia actividad enzimática de tipo:",
-      "opciones": ["Quinasa", "Fosfatasa", "Ciclasa", "GTPasa"],
+      "opciones": [
+        "Quinasa",
+        "Fosfatasa",
+        "Ciclasa",
+        "GTPasa"
+      ],
       "correcta": "D",
       "explicacion": "La subunidad alfa posee actividad GTPasa intrínseca que hidroliza el GTP a GDP, retornando a la forma inactiva."
     },
     {
       "pregunta": "La enzima amplificadora adenilato ciclasa es estimulada directamente por la proteína G activa de tipo:",
-      "opciones": ["Gs", "Gi", "Gq", "Ras"],
+      "opciones": [
+        "Gs",
+        "Gi",
+        "Gq",
+        "Ras"
+      ],
       "correcta": "A",
       "explicacion": "La proteína G estimuladora (Gs) unida a GTP activa a la adenilato ciclasa para incrementar la producción intracelular de AMPc."
     },
     {
       "pregunta": "La enzima adenilato ciclasa cataliza la conversión de ATP en:",
-      "opciones": ["Diacilglicerol (DAG)", "AMP cíclico (AMPc)", "Inositol trifosfato (IP3)", "Fosfatidilinositol difosfato (PIP2)"],
+      "opciones": [
+        "Diacilglicerol (DAG)",
+        "AMP cíclico (AMPc)",
+        "Inositol trifosfato (IP3)",
+        "Fosfatidilinositol difosfato (PIP2)"
+      ],
       "correcta": "B",
       "explicacion": "La adenilato ciclasa utiliza moléculas de ATP como sustrato para sintetizar el segundo mensajero AMP cíclico."
     },
     {
       "pregunta": "El AMPc ejerce su efecto funcional primario mediante la activación de la proteína quinasa:",
       "opciones": [
-      "Proteína quinasa C (PKC)",
-      "Proteína quinasa B (Akt)",
-      "Proteína quinasa activada por mitógenos (MAPK)",
-      "Proteína quinasa A (PKA)"
+        "Proteína quinasa C (PKC)",
+        "Proteína quinasa B (Akt)",
+        "Proteína quinasa activada por mitógenos (MAPK)",
+        "Proteína quinasa A (PKA)"
       ],
       "correcta": "D",
       "explicacion": "El AMPc se une a las subunidades regulatorias de la Proteína Quinasa A (PKA), liberando las subunidades catalíticas activas."
     },
     {
       "pregunta": "La activación de la PKA por unión de AMPc ocurre específicamente al unirse este segundo mensajero a sus:",
-      "opciones": ["Subunidades regulatorias", "Subunidades catalíticas", "Dominios transmembrana", "Restos de tirosina fosforilados"],
+      "opciones": [
+        "Subunidades regulatorias",
+        "Subunidades catalíticas",
+        "Dominios transmembrana",
+        "Restos de tirosina fosforilados"
+      ],
       "correcta": "A",
       "explicacion": "La PKA inactiva posee subunidades regulatorias y catalíticas; la unión del AMPc a las regulatorias causa la disociación y activación de las catalíticas."
     },
     {
       "pregunta": "La acción de las enzimas quinasas sobre otras proteínas consiste en:",
       "opciones": [
-      "Eliminar grupos fosfato mediante hidrólisis",
-      "Agregar covalentemente grupos fosfato",
-      "Degradar la cadena polipeptídica",
-      "Escindir enlaces fosfodiéster"
+        "Eliminar grupos fosfato mediante hidrólisis",
+        "Agregar covalentemente grupos fosfato",
+        "Degradar la cadena polipeptídica",
+        "Escindir enlaces fosfodiéster"
       ],
       "correcta": "B",
       "explicacion": "Las quinasas son enzimas que transfieren un grupo fosfato desde un nucleótido dador (como ATP) a aminoácidos específicos de una proteína."
     },
     {
       "pregunta": "Las enzimas encargadas de remover grupos fosfato de las proteínas desfosforilándolas son las:",
-      "opciones": ["Quinasas", "Ciclasas", "Fosfatasas", "Polimerasas"],
+      "opciones": [
+        "Quinasas",
+        "Ciclasas",
+        "Fosfatasas",
+        "Polimerasas"
+      ],
       "correcta": "C",
       "explicacion": "Las fosfatasas catalizan la eliminación de grupos fosfato, revirtiendo el efecto de las quinasas en la célula."
     },
     {
       "pregunta": "La vía de la proteína Gq activa como enzima amplificadora de membrana a la:",
-      "opciones": ["Adenilato ciclasa", "Fosfodiesterasa", "Proteína quinasa A", "Fosfolipasa C (PLC)"],
+      "opciones": [
+        "Adenilato ciclasa",
+        "Fosfodiesterasa",
+        "Proteína quinasa A",
+        "Fosfolipasa C (PLC)"
+      ],
       "correcta": "D",
       "explicacion": "La proteína Gq unida a GTP activa a la fosfolipasa C (PLC), que escinde el fosfolípido de membrana PIP2."
     },
     {
       "pregunta": "En la vía mediada por adrenalina a través de proteína Gs en hepatocitos, el resultado metabólico final es la:",
       "opciones": [
-      "Glucogenólisis y liberación de glucosa",
-      "Síntesis de lípidos a partir de ácidos grasos",
-      "Inhibición total de la síntesis proteica",
-      "Polimerización de nucleótidos de ARN"
+        "Glucogenólisis y liberación de glucosa",
+        "Síntesis de lípidos a partir de ácidos grasos",
+        "Inhibición total de la síntesis proteica",
+        "Polimerización de nucleótidos de ARN"
       ],
       "correcta": "A",
       "explicacion": "La activación de la cascada Gs-AC-PKA por adrenalina activa a la glucógeno fosforilasa, estimulando la degradación del glucógeno (glucogenólisis)."
@@ -262,10 +357,10 @@
     {
       "pregunta": "El concepto de amplificación de señal en una cascada catalítica explica cómo:",
       "opciones": [
-      "Cada receptor requiere un número masivo de hormonas para activarse",
-      "Una única molécula de ligando puede generar muchas moléculas de producto final",
-      "Los segundos mensajeros destruyen los receptores de la superficie",
-      "La respuesta celular disminuye gradualmente tras cada paso enzimático"
+        "Cada receptor requiere un número masivo de hormonas para activarse",
+        "Una única molécula de ligando puede generar muchas moléculas de producto final",
+        "Los segundos mensajeros destruyen los receptores de la superficie",
+        "La respuesta celular disminuye gradualmente tras cada paso enzimático"
       ],
       "correcta": "B",
       "explicacion": "Dado que cada etapa intermedia de la cascada posee capacidad catalítica, un solo complejo inductor-receptor multiplica exponencialmente la respuesta final."
@@ -273,10 +368,10 @@
     {
       "pregunta": "En la comunicación sináptica, la relación espacial entre la célula emisora y la célula receptora se caracteriza por:",
       "opciones": [
-      "Estar separadas por largas distancias a través del torrente sanguíneo.",
-      "Encontrarse muy cercanas entre sí en el espacio sináptico.",
-      "Requerir la fusión total de sus membranas plasmáticas.",
-      "Permancer unidas mediante conexiones permanentes tipo nexus."
+        "Estar separadas por largas distancias a través del torrente sanguíneo.",
+        "Encontrarse muy cercanas entre sí en el espacio sináptico.",
+        "Requerir la fusión total de sus membranas plasmáticas.",
+        "Permancer unidas mediante conexiones permanentes tipo nexus."
       ],
       "correcta": "B",
       "explicacion": "En la sinapsis, la neurona presináptica y la célula receptora se encuentran muy próximas, permitiendo una comunicación muy rápida mediante la liberación del neurotransmisor en el espacio sináptico."
@@ -284,10 +379,10 @@
     {
       "pregunta": "En la sinapsis, la llegada de la acetilcolina al receptor ionotrópico de la neurona postsináptica desencadena directamente:",
       "opciones": [
-      "La activación de una proteína G y la producción de AMPc.",
-      "La apertura del canal iónico y el ingreso de Na+ a la célula.",
-      "La translocación de vesículas GLUT4 hacia la membrana plasmática.",
-      "La autofosforilación de residuos de tirosina en el dominio citoplasmático."
+        "La activación de una proteína G y la producción de AMPc.",
+        "La apertura del canal iónico y el ingreso de Na+ a la célula.",
+        "La translocación de vesículas GLUT4 hacia la membrana plasmática.",
+        "La autofosforilación de residuos de tirosina en el dominio citoplasmático."
       ],
       "correcta": "B",
       "explicacion": "Los receptores ionotrópicos forman un canal iónico que se abre tras la unión del ligando, permitiendo el ingreso de sodio y la consecuente despolarización de la membrana."
@@ -295,55 +390,65 @@
     {
       "pregunta": "En relación al transporte de los neurotransmisores dentro de la neurona presináptica, estos son conducidos hacia las terminales nerviosas mediante:",
       "opciones": [
-      "Difusión simple a través del citosol.",
-      "Flujo axónico.",
-      "Transporte endocrino sanguíneo.",
-      "Exocitosis directa desde el soma."
+        "Difusión simple a través del citosol.",
+        "Flujo axónico.",
+        "Transporte endocrino sanguíneo.",
+        "Exocitosis directa desde el soma."
       ],
       "correcta": "B",
       "explicacion": "Los neurotransmisores son transportados hasta las terminales nerviosas por medio del flujo axónico antes de ser liberados al espacio sináptico."
     },
     {
       "pregunta": "Respecto a la velocidad de respuesta, la comunicación sináptica se distingue por actuar en un rango de tiempo de:",
-      "opciones": ["Milisegundos.", "Varias horas.", "Días enteros.", "Minutos a horas."],
+      "opciones": [
+        "Milisegundos.",
+        "Varias horas.",
+        "Días enteros.",
+        "Minutos a horas."
+      ],
       "correcta": "A",
       "explicacion": "La comunicación sináptica es un proceso sumamente rápido que ocurre en el orden de los milisegundos gracias a la cercanía entre las células y el mecanismo directo de sus receptores."
     },
     {
       "pregunta": "El estado de potencial de reposo en la neurona postsináptica antes de la llegada del neurotransmisor se caracteriza por presentar:",
       "opciones": [
-      "El canal del receptor ionotrópico en estado cerrado.",
-      "Un flujo masivo de sodio hacia el interior celular.",
-      "La activación previa de la enzima adenilato ciclasa.",
-      "La inactivación total de la bomba de sodio y potasio."
+        "El canal del receptor ionotrópico en estado cerrado.",
+        "Un flujo masivo de sodio hacia el interior celular.",
+        "La activación previa de la enzima adenilato ciclasa.",
+        "La inactivación total de la bomba de sodio y potasio."
       ],
       "correcta": "A",
       "explicacion": "Durante el potencial de reposo, el receptor ionotrópico asociado a canal se encuentra cerrado hasta que se produce la unión de la acetilcolina u otro ligando."
     },
     {
       "pregunta": "Cuando la acetilcolina se une a su receptor en la neurona postsináptica, el ingreso de sodio (Na+) genera directamente un proceso de:",
-      "opciones": ["Repolarización.", "Despolarización.", "Hiperpolarización.", "Inactivación celular."],
+      "opciones": [
+        "Repolarización.",
+        "Despolarización.",
+        "Hiperpolarización.",
+        "Inactivación celular."
+      ],
       "correcta": "B",
       "explicacion": "El ingreso de cargas positivas de sodio a través del canal receptor provoca una despolarización que desencadena la propagación de la respuesta a lo largo de la neurona."
     },
     {
-      "pregunta": "La propagación del estímulo a lo largo de la membrana neuronal se inicia inmediatamente después de:",
+      "pregunta": "La despolarización inicial de la membrana neuronal desencadena un potencial de acción completo cuando:",
       "opciones": [
-      "La hidrólisis de GTP por parte de la subunidad alfa.",
-      "El ingreso de sodio a través del receptor ionotrópico abierto.",
-      "La síntesis de glucógeno estimulada por insulina.",
-      "La salida masiva de calcio desde el retículo endoplásmico."
+        "Se abren los receptores intracelulares de hormonas esteroideas",
+        "La bomba Na⁺/K⁺ deja de consumir ATP",
+        "El calcio se une a la calmodulina",
+        "La membrana alcanza el umbral necesario para activar suficientes canales de Na⁺ dependientes de voltaje"
       ],
-      "correcta": "B",
-      "explicacion": "Al unirse la acetilcolina al receptor, el canal abre su poro e ingresa Na+, lo que despolariza la membrana y propaga la respuesta en la neurona."
+      "correcta": "D",
+      "explicacion": "La entrada de Na⁺ puede producir una despolarización inicial, pero para generar un potencial de acción debe alcanzarse el umbral. Entonces se activa la respuesta regenerativa de los canales de Na⁺ dependientes de voltaje."
     },
     {
       "pregunta": "Durante el potencial de reposo neuronal, el ingreso inicial de sodio (Na+) a la célula se produce a favor de su gradiente debido a que:",
       "opciones": [
-      "El sodio se encuentra en mayor concentración en el espacio extracelular que en el citosol.",
-      "El potasio empuja activamente al sodio hacia el interior de la membrana.",
-      "El citosol presenta una concentración de sodio superior a la del medio externo.",
-      "La bomba de sodio y potasio ingresa tres iones de sodio por cada ciclo."
+        "El sodio se encuentra en mayor concentración en el espacio extracelular que en el citosol.",
+        "El potasio empuja activamente al sodio hacia el interior de la membrana.",
+        "El citosol presenta una concentración de sodio superior a la del medio externo.",
+        "La bomba de sodio y potasio ingresa tres iones de sodio por cada ciclo."
       ],
       "correcta": "A",
       "explicacion": "Al abrirse los canales ionotrópicos por la unión del ligando, el sodio ingresa a favor de su gradiente de concentración, ya que este ion se halla en mayor abundancia en el medio extracelular respecto al citoplasma."
@@ -351,13 +456,354 @@
     {
       "pregunta": "En el estado de potencial de reposo de la neurona postsináptica, la apertura de los canales iónicos del receptor de acetilcolina permite la entrada de:",
       "opciones": [
-      "Sodio (Na+) hacia el citoplasma a favor de su gradiente.",
-      "Potasio (K+) desde el citoplasma hacia el medio exterior.",
-      "Calcio (Ca2+) únicamente desde las vesículas presinápticas.",
-      "Aniones de fosfato hacia la matriz extracelular."
+        "Sodio (Na+) hacia el citoplasma a favor de su gradiente.",
+        "Potasio (K+) desde el citoplasma hacia el medio exterior.",
+        "Calcio (Ca2+) únicamente desde las vesículas presinápticas.",
+        "Aniones de fosfato hacia la matriz extracelular."
       ],
       "correcta": "A",
       "explicacion": "Tras la unión del neurotransmisor, el receptor ionotrópico se abre permitiendo la entrada directa de Na+ al citosol neuronal, iniciando la despolarización."
+    },
+    {
+      "pregunta": "Los receptores acoplados a proteína G (GPCR) se caracterizan estructuralmente por presentar:",
+      "opciones": [
+        "Siete segmentos transmembrana",
+        "Una única hélice transmembrana y actividad ATPasa",
+        "Seis subunidades de conexina",
+        "Un canal central para el paso directo de Na+"
+      ],
+      "correcta": "A",
+      "explicacion": "Los GPCR poseen siete segmentos transmembrana. La unión del ligando modifica su conformación y permite que interactúen con la proteína G situada en la cara citosólica de la membrana."
+    },
+    {
+      "pregunta": "Cuando un GPCR activa una proteína G heterotrimérica, el receptor favorece principalmente que la subunidad alfa:",
+      "opciones": [
+        "Fosforile directamente al GDP para convertirlo en GTP",
+        "Libere GDP y una GTP disponible en el citosol",
+        "Degrade el GTP y se una a AMPc",
+        "Se desprenda de la membrana y entre al núcleo"
+      ],
+      "correcta": "B",
+      "explicacion": "El receptor facilita el intercambio de nucleótidos: el GDP sale de la subunidad alfa y el GTP disponible se une. El receptor no transforma químicamente GDP en GTP ni le transfiere un fosfato."
+    },
+    {
+      "pregunta": "Luego del intercambio GDP por GTP, ¿qué afirmación describe mejor el comportamiento de las subunidades de la proteína G?",
+      "opciones": [
+        "Solo la subunidad beta puede regular efectores",
+        "Las tres subunidades se degradan inmediatamente",
+        "Alfa-GTP y el dímero beta-gamma pueden regular efectores",
+        "El dímero beta-gamma se convierte en una enzima que produce ATP"
+      ],
+      "correcta": "C",
+      "explicacion": "La activación permite que alfa-GTP y el dímero beta-gamma regulen proteínas efectoras. La separación es funcional y reversible; beta-gamma no es solamente un soporte estructural."
+    },
+    {
+      "pregunta": "La proteína Gi se diferencia de Gs porque, al regular la adenilato ciclasa, Gi:",
+      "opciones": [
+        "La estimula y aumenta el AMPc",
+        "Activa directamente a la PKA",
+        "Hidroliza PIP₂ para formar IP₃ y DAG",
+        "La inhibe y disminuye la producción de AMPc"
+      ],
+      "correcta": "D",
+      "explicacion": "Gs estimula la adenilato ciclasa y eleva el AMPc; Gi la inhibe y reduce su producción. Gq, en cambio, activa la fosfolipasa C."
+    },
+    {
+      "pregunta": "¿Qué asociación entre proteína G y enzima efectora es correcta?",
+      "opciones": [
+        "Gs: estimula adenilato ciclasa; Gi: inhibe adenilato ciclasa; Gq: activa fosfolipasa C",
+        "Gs: activa fosfolipasa C; Gi: activa PKA; Gq: inhibe adenilato ciclasa",
+        "Gs: activa PKC; Gi: produce IP₃; Gq: sintetiza AMPc",
+        "Gs, Gi y Gq activan siempre la misma enzima"
+      ],
+      "correcta": "A",
+      "explicacion": "La distinción funcional central es: Gs aumenta la actividad de adenilato ciclasa, Gi la reduce y Gq activa la fosfolipasa C, iniciando la vía de IP₃, DAG y calcio."
+    },
+    {
+      "pregunta": "En la vía de señalización mediada por Gq, la subunidad Gαq activa principalmente a:",
+      "opciones": [
+        "La adenilato ciclasa",
+        "La fosfolipasa C beta (PLCβ)",
+        "La fosfodiesterasa que degrada AMPc",
+        "La proteín-quinasa A"
+      ],
+      "correcta": "B",
+      "explicacion": "Gαq unida a GTP regula a la fosfolipasa C-β (PLCβ), una enzima efectora de membrana que inicia la escisión de PIP₂."
+    },
+    {
+      "pregunta": "En la vía Gq, el PIP₂ cumple la función de:",
+      "opciones": [
+        "Ser el segundo mensajero que se une a calmodulina",
+        "Ser una quinasa que fosforila a PKC",
+        "Actuar como fosfolípido de membrana que sirve de sustrato para PLCβ",
+        "Transportar calcio desde el retículo al citosol"
+      ],
+      "correcta": "C",
+      "explicacion": "El PIP₂ es un fosfolípido de la cara interna de la membrana plasmática. La PLCβ lo hidroliza y genera los dos mensajeros IP₃ y DAG; por eso, PIP₂ es el sustrato de la reacción, no uno de sus productos."
+    },
+    {
+      "pregunta": "Después de que la PLCβ hidroliza PIP₂, ¿qué característica distingue al IP₃?",
+      "opciones": [
+        "Permanece insertado en la bicapa y activa por sí solo PKC",
+        "Se convierte en AMPc en el citosol",
+        "Es una proteína que bombea calcio",
+        "Difunde por el citosol y se une a receptores-canal del retículo endoplasmático"
+      ],
+      "correcta": "D",
+      "explicacion": "El IP₃ es soluble y se desplaza por el citosol hasta unirse a receptores-canal del retículo endoplasmático, promoviendo la liberación del Ca²⁺ almacenado."
+    },
+    {
+      "pregunta": "¿Qué sucede con el DAG generado por la fosfolipasa C?",
+      "opciones": [
+        "Permanece asociado a la membrana y participa en la activación de PKC",
+        "Difunde hasta el núcleo y se une directamente al ADN",
+        "Se transforma en GDP para apagar Gq",
+        "Abre por sí solo los canales de calcio del retículo"
+      ],
+      "correcta": "A",
+      "explicacion": "A diferencia del IP₃, el DAG permanece asociado a la membrana. Junto con el Ca²⁺ favorece la activación de formas convencionales de PKC."
+    },
+    {
+      "pregunta": "En la vía Gq, el aumento de Ca²⁺ citosólico se produce principalmente porque:",
+      "opciones": [
+        "La adenilato ciclasa lo sintetiza a partir de ATP",
+        "El IP₃ abre canales-receptores del retículo endoplasmático y libera el calcio almacenado",
+        "La subunidad beta de la proteína G bombea calcio desde el exterior",
+        "El DAG se convierte químicamente en calcio"
+      ],
+      "correcta": "B",
+      "explicacion": "El IP₃ se une a receptores-canal del retículo endoplasmático. Al abrirse, permiten que parte del Ca²⁺ almacenado en ese compartimento pase al citosol."
+    },
+    {
+      "pregunta": "En las formas convencionales de proteína quinasa C (PKC), su activación en la vía Gq es favorecida por:",
+      "opciones": [
+        "GDP y AMPc",
+        "IP₃ y ATP exclusivamente",
+        "DAG y Ca²⁺",
+        "PIP₂ y GTP unidos directamente a PKC"
+      ],
+      "correcta": "C",
+      "explicacion": "El DAG permanece en la membrana y, junto con el Ca²⁺ citosólico, favorece la activación de las formas convencionales de PKC. PKC luego fosforila proteínas diana."
+    },
+    {
+      "pregunta": "¿Qué ocurre cuando el Ca²⁺ citosólico se une a la calmodulina?",
+      "opciones": [
+        "La calmodulina degrada PIP₂",
+        "La calmodulina reemplaza a la subunidad alfa de Gq",
+        "Se convierte en una bomba que expulsa sodio",
+        "La calmodulina cambia de conformación y puede regular otras proteínas dependientes de calcio"
+      ],
+      "correcta": "D",
+      "explicacion": "La calmodulina es una proteína reguladora que cambia de conformación al unir Ca²⁺. El complejo Ca²⁺-calmodulina puede activar enzimas y quinasas, según el tipo celular."
+    },
+    {
+      "pregunta": "¿Cuál es el orden correcto de los principales acontecimientos de la vía Gq?",
+      "opciones": [
+        "Gq → adenilato ciclasa → AMPc → PKA → PIP₂",
+        "Ligando → GPCR → Gαq-GTP → PLCβ → PIP₂ escindido en IP₃ y DAG → liberación de Ca²⁺ y activación de efectores",
+        "Ligando → PKA → GTP → conexones → calcio extracelular",
+        "IP₃ → receptor de membrana → Gs → ATP → DAG"
+      ],
+      "correcta": "B",
+      "explicacion": "La secuencia comienza con el ligando y el receptor acoplado a Gq. Gαq activa PLCβ; esta hidroliza PIP₂ y produce IP₃ y DAG. IP₃ promueve la liberación de Ca²⁺, mientras DAG y Ca²⁺ favorecen la activación de PKC; el calcio también regula proteínas mediante calmodulina."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes opciones identifica correctamente a un segundo mensajero?",
+      "opciones": [
+        "La hormona extracelular que todavía no se unió al receptor",
+        "La proteína receptora que reconoce al ligando",
+        "Una molécula o ion intracelular cuya concentración o actividad cambia y transmite la señal",
+        "El gen que codifica al receptor de membrana"
+      ],
+      "correcta": "C",
+      "explicacion": "Un segundo mensajero es una molécula o ion intracelular que cambia como consecuencia de la activación del receptor y transmite la información a otras proteínas. Entre los ejemplos del tema están AMPc, Ca²⁺, IP₃ y DAG."
+    },
+    {
+      "pregunta": "¿Qué diferencia permite distinguir la acción de la adenilato ciclasa de la fosfolipasa C?",
+      "opciones": [
+        "La adenilato ciclasa convierte ATP en AMPc; la fosfolipasa C hidroliza PIP₂ para generar IP₃ y DAG",
+        "Ambas convierten ATP en AMPc, pero responden a proteínas G distintas",
+        "La adenilato ciclasa libera calcio del retículo y la PLC fosforila glucógeno",
+        "La PLC degrada AMPc y la adenilato ciclasa produce DAG"
+      ],
+      "correcta": "A",
+      "explicacion": "La adenilato ciclasa produce AMPc a partir de ATP, típicamente bajo regulación de Gs o Gi. La PLCβ actúa sobre PIP₂ y genera IP₃ y DAG en la vía Gq."
+    },
+    {
+      "pregunta": "¿Qué mecanismo contribuye a terminar la señal de una vía dependiente de AMPc?",
+      "opciones": [
+        "La conversión de AMPc en GTP por la proteína G",
+        "La degradación del AMPc por fosfodiesterasas",
+        "La unión irreversible del AMPc a la membrana",
+        "La transformación de PKA en una conexina"
+      ],
+      "correcta": "B",
+      "explicacion": "Las fosfodiesterasas degradan el AMPc y contribuyen a reducir la señal. También participan la hidrólisis de GTP por la proteína G, la disociación del ligando y la desfosforilación de proteínas."
+    },
+    {
+      "pregunta": "¿Qué afirmación sobre la fosforilación de proteínas es correcta?",
+      "opciones": [
+        "Siempre activa cualquier proteína que recibe un fosfato",
+        "Solo puede ocurrir en proteínas de membrana",
+        "Es irreversible una vez que actúa una quinasa",
+        "Puede activar o inhibir la proteína diana, según cuál sea el sustrato y el contexto"
+      ],
+      "correcta": "D",
+      "explicacion": "Las quinasas transfieren grupos fosfato desde ATP a proteínas diana. El efecto funcional depende del sustrato: la fosforilación puede activar una proteína e inhibir otra."
+    },
+    {
+      "pregunta": "¿Qué relación existe entre quinasas y fosfatasas en la regulación de una respuesta celular?",
+      "opciones": [
+        "Las quinasas eliminan fosfatos y las fosfatasas los agregan",
+        "Ambas realizan exactamente la misma reacción",
+        "Las quinasas agregan grupos fosfato y las fosfatasas los eliminan",
+        "Las fosfatasas producen AMPc y las quinasas producen IP₃"
+      ],
+      "correcta": "C",
+      "explicacion": "Las quinasas transfieren grupos fosfato a proteínas; las fosfatasas los retiran. El estado funcional de muchas proteínas depende del equilibrio entre ambas actividades."
+    },
+    {
+      "pregunta": "En un ejemplo ideal, si una etapa de una cascada amplifica la señal por un factor de 5 y la siguiente por un factor de 4, ¿cuál es la amplificación teórica conjunta?",
+      "opciones": [
+        "9 veces, porque se suman los factores",
+        "20 veces, porque se multiplican los factores",
+        "1,25 veces, porque se dividen los factores",
+        "5 veces, porque solo cuenta la primera etapa"
+      ],
+      "correcta": "B",
+      "explicacion": "Los factores de amplificación de etapas sucesivas se multiplican: 5 × 4 = 20. Es un máximo ideal ilustrativo; la amplificación real depende de concentraciones, duración y regulación."
+    },
+    {
+      "pregunta": "Una despolarización inicial de la membrana neuronal desencadena un potencial de acción completo cuando:",
+      "opciones": [
+        "Se abren los receptores intracelulares de hormonas esteroideas",
+        "La bomba Na⁺/K⁺ deja de consumir ATP",
+        "El calcio se une a la calmodulina",
+        "La membrana alcanza el umbral necesario para activar suficientes canales de Na⁺ dependientes de voltaje"
+      ],
+      "correcta": "D",
+      "explicacion": "La entrada de Na⁺ puede producir una despolarización inicial, pero para generar un potencial de acción debe alcanzarse el umbral. Entonces se activa la respuesta regenerativa de los canales de Na⁺ dependientes de voltaje."
+    },
+    {
+      "pregunta": "El principio de todo o nada del potencial de acción significa que:",
+      "opciones": [
+        "Una vez alcanzado el umbral se genera un potencial completo; un estímulo subumbral no lo produce",
+        "La amplitud del potencial aumenta proporcionalmente con cualquier aumento del estímulo",
+        "Cada estímulo produce siempre una respuesta parcial",
+        "La neurona solo responde cuando todos sus canales están abiertos simultáneamente"
+      ],
+      "correcta": "A",
+      "explicacion": "Una vez superado el umbral se desarrolla un potencial de acción completo. Los estímulos subumbrales no generan por sí solos un potencial de acción completo; la intensidad puede codificarse por la frecuencia y el patrón de disparo."
+    },
+    {
+      "pregunta": "Durante las fases principales del potencial de acción, ¿qué movimiento iónico se asocia correctamente con cada etapa?",
+      "opciones": [
+        "Despolarización: salida de K⁺; repolarización: entrada de Na⁺",
+        "Despolarización y repolarización: entrada de Ca²⁺ exclusivamente",
+        "Despolarización: entrada de Na⁺; repolarización: salida de K⁺",
+        "Despolarización: salida de Na⁺; repolarización: entrada de K⁺"
+      ],
+      "correcta": "C",
+      "explicacion": "La apertura rápida de canales de Na⁺ dependientes de voltaje permite la entrada de sodio y produce la despolarización. Luego, la salida de K⁺ por canales dependientes de voltaje contribuye a la repolarización."
+    },
+    {
+      "pregunta": "En cada ciclo de la Na⁺/K⁺-ATPasa, la célula:",
+      "opciones": [
+        "Introduce tres Na⁺ y expulsa dos K⁺ sin consumir ATP",
+        "Expulsa tres Na⁺ e introduce dos K⁺ utilizando ATP",
+        "Expulsa dos Na⁺ e introduce tres K⁺ utilizando GTP",
+        "Intercambia un Na⁺ por un K⁺ sin gasto energético"
+      ],
+      "correcta": "B",
+      "explicacion": "Por cada ATP hidrolizado, la bomba expulsa tres iones Na⁺ e introduce dos iones K⁺. Así mantiene gradientes iónicos fundamentales para la excitabilidad neuronal."
+    },
+    {
+      "pregunta": "¿Qué diferencia funcional existe entre un canal iónico y la Na⁺/K⁺-ATPasa?",
+      "opciones": [
+        "Ambos bombean iones contra gradiente y consumen ATP en cada paso",
+        "El canal sintetiza ATP y la bomba permite difusión simple",
+        "El canal transporta proteínas grandes y la bomba transporta neurotransmisores",
+        "El canal permite flujo pasivo según el gradiente electroquímico; la bomba utiliza ATP para mover iones contra sus gradientes"
+      ],
+      "correcta": "D",
+      "explicacion": "Los canales abiertos permiten el movimiento pasivo y selectivo de iones según su gradiente electroquímico. La Na⁺/K⁺-ATPasa es un transportador activo que consume ATP para mantener los gradientes."
+    },
+    {
+      "pregunta": "En un axón mielinizado, la conducción saltatoria ocurre porque:",
+      "opciones": [
+        "El potencial de acción se regenera principalmente en los nodos de Ranvier y la corriente se propaga bajo la mielina",
+        "La mielina produce neurotransmisores que saltan entre neuronas",
+        "Los canales dependientes de voltaje se distribuyen uniformemente bajo toda la mielina",
+        "La bomba Na⁺/K⁺ genera por sí sola cada potencial de acción en los internodos"
+      ],
+      "correcta": "A",
+      "explicacion": "La mielina aísla eléctricamente los internodos. La corriente se propaga con rapidez bajo esos segmentos y el potencial de acción se regenera en los nodos de Ranvier."
+    },
+    {
+      "pregunta": "En una sinapsis química, ¿qué consecuencia inmediata tiene la entrada de Ca²⁺ en la terminal presináptica?",
+      "opciones": [
+        "La degradación del neurotransmisor antes de liberarse",
+        "La apertura de los receptores postsinápticos sin que se libere mensajero",
+        "La activación de la bomba Na⁺/K⁺ en la célula postsináptica",
+        "La activación de la maquinaria de fusión vesicular y la exocitosis del neurotransmisor"
+      ],
+      "correcta": "D",
+      "explicacion": "La llegada del potencial de acción abre canales de Ca²⁺ dependientes de voltaje en la terminal presináptica. El calcio que ingresa activa la maquinaria de liberación y promueve la fusión de vesículas con la membrana."
+    },
+    {
+      "pregunta": "¿Qué diferencia a un receptor metabotrópico de uno ionotrópico en la membrana postsináptica?",
+      "opciones": [
+        "El metabotrópico siempre es intracelular y el ionotrópico siempre es nuclear",
+        "El ionotrópico regula directamente un canal; el metabotrópico activa vías intracelulares, frecuentemente mediadas por proteína G",
+        "El ionotrópico produce hormonas y el metabotrópico libera neurotransmisores",
+        "Ambos son canales que se abren directamente por el ligando"
+      ],
+      "correcta": "B",
+      "explicacion": "Los receptores ionotrópicos son canales regulados por ligando. Los metabotrópicos activan proteínas G u otras vías intracelulares que pueden regular canales, enzimas y segundos mensajeros."
+    },
+    {
+      "pregunta": "¿Cuál es la diferencia central entre una sinapsis eléctrica y una química?",
+      "opciones": [
+        "La eléctrica requiere neurotransmisores y la química conecta directamente los citoplasmas",
+        "La química ocurre sin receptores y la eléctrica utiliza receptores metabotrópicos",
+        "La eléctrica transmite corriente por uniones comunicantes; la química libera neurotransmisores que se unen a receptores",
+        "Ambas dependen obligatoriamente de la liberación de neurotransmisores"
+      ],
+      "correcta": "C",
+      "explicacion": "En la sinapsis eléctrica, la corriente iónica pasa directamente entre células mediante uniones comunicantes. En la química, la célula presináptica libera neurotransmisores que atraviesan la hendidura y se unen a receptores postsinápticos."
+    },
+    {
+      "pregunta": "¿Por qué se considera que el páncreas es una glándula mixta?",
+      "opciones": [
+        "Porque sus islotes liberan insulina y glucagón a la sangre y sus células acinares secretan enzimas digestivas por conductos",
+        "Porque libera todas sus secreciones al torrente sanguíneo",
+        "Porque produce hormonas esteroideas y neurotransmisores en el mismo tejido",
+        "Porque sus secreciones exocrinas se convierten en hormonas al llegar al duodeno"
+      ],
+      "correcta": "A",
+      "explicacion": "El componente endocrino de los islotes pancreáticos libera hormonas como insulina y glucagón a la sangre. El componente exocrino de las células acinares vierte enzimas digestivas por conductos hacia el duodeno."
+    },
+    {
+      "pregunta": "¿Qué diferencia existe entre recaptación y degradación enzimática de un neurotransmisor?",
+      "opciones": [
+        "La recaptación lo destruye químicamente y la degradación lo transporta intacto",
+        "La recaptación ocurre solo en la célula postsináptica y la degradación solo en la sangre",
+        "Ambos mecanismos significan que el neurotransmisor se une de forma permanente al receptor",
+        "La recaptación lo retira mediante transportadores de membrana; la degradación lo transforma químicamente mediante enzimas"
+      ],
+      "correcta": "D",
+      "explicacion": "La recaptación introduce el neurotransmisor en una célula mediante transportadores. La degradación enzimática modifica químicamente la molécula; ambos mecanismos contribuyen a terminar la señal."
+    },
+    {
+      "pregunta": "¿Qué comparación entre cocaína y anestésicos locales corresponde al mecanismo descrito en la guía?",
+      "opciones": [
+        "Ambos bloquean la adenilato ciclasa",
+        "La cocaína inhibe transportadores de recaptación de monoaminas; los anestésicos locales bloquean canales de Na⁺ dependientes de voltaje",
+        "La cocaína bloquea canales de Na⁺ y los anestésicos locales inhiben la recaptación de dopamina",
+        "Ambos activan receptores Gq para aumentar el calcio"
+      ],
+      "correcta": "B",
+      "explicacion": "La cocaína inhibe transportadores de recaptación de monoaminas y prolonga su disponibilidad extracelular. Los anestésicos locales bloquean principalmente canales de Na⁺ dependientes de voltaje y dificultan la propagación del potencial de acción."
     }
   ]
 }
