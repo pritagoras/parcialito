@@ -17,7 +17,7 @@
       "pregunta": "Según el Dogma Central de la Biología Molecular:",
       "opciones": [
         "la secuencia de aminoácidos de un polipéptido permite determinar unívocamente la secuencia de nucleótidos del ARN.",
-        "la secuencia de nucleótidos del ADN permite determinar unívocamente la secuencia de nucleótidos del ARN.",
+        "la secuencia nucleotídica de la hebra molde de ADN determina la secuencia complementaria del transcripto primario de ARN.",
         "la secuencia de aminoácidos de un polipéptido puede determinar unívocamente la secuencia de nucleótidos del ADN.",
         "la replicación debe ocurrir previamente a la transcripción y a la traducción de un gen."
       ],
@@ -50,7 +50,7 @@
       "pregunta": "En relación con el código genético, se puede afirmar que:",
       "opciones": [
         "contiene información estructural para la síntesis de los tres tipos de ARN.",
-        "cada aminoácido puede estar codificado por más de un codón.",
+        "la mayoría de los aminoácidos pueden estar codificados por más de un codón.",
         "cada codón puede codificar múltiples aminoácidos diferentes.",
         "el de una célula humana y el de una célula de ratón son totalmente distintos."
       ],
@@ -60,7 +60,7 @@
     {
       "pregunta": "Se dice que un organismo es transgénico cuando se le ha introducido un gen de un organismo de otra especie. Este gen expresa la misma proteína que en el organismo de origen debido a que:",
       "opciones": [
-        "el código genético es universal.",
+        "el código genético es prácticamente universal.",
         "todos los seres vivos están constituidos por células.",
         "el código genético es degenerado.",
         "todos los seres vivos sintetizan sus proteínas a partir de los mismos aminoácidos."
@@ -69,7 +69,7 @@
       "explicacion": "La conservación del código genético a través de las especies permite que la maquinaria celular de un organismo interprete los codones de un gen foráneo produciendo la misma secuencia aminoacídica."
     },
     {
-      "pregunta": "En un tubo de ensayo se colocan ARNm de ratón, ribosomas y enzimas de traducción de perro, aminoácidos unidos a ARNt de cabra y ATP. ¿A qué organismo corresponderá el polipéptido sintetizado?",
+      "pregunta": "En un tubo de ensayo se colocan ARNm de ratón, ribosomas y enzimas de traducción de perro, aminoácidos unidos a ARNt de cabra y ATP. ¿Qué determina la secuencia de aminoácidos del polipéptido sintetizado?",
       "opciones": [
         "Solo de perro.",
         "Solo de cabra.",
@@ -80,7 +80,7 @@
       "explicacion": "La secuencia del ARN mensajero es la que contiene la información instructiva que determina el orden de los aminoácidos en la proteína sintetizada."
     },
     {
-      "pregunta": "¿Cuál de los siguientes factores constituye un cambio heredable que se podría observar en el fenotipo?",
+      "pregunta": "¿Cuál de los siguientes eventos puede originar una mutación heredable si el cambio queda fijado en el ADN?",
       "opciones": [
         "Errores en el proceso de traducción.",
         "Errores en la replicación del ADN.",
@@ -88,7 +88,7 @@
         "Errores simultáneos en la transcripción y traducción."
       ],
       "correcta": "B",
-      "explicacion": "Los errores no corregidos durante la duplicación del ADN se fijan en el material genético y se transmiten a las células hijas como mutaciones hereditarias."
+      "explicacion": "Un error durante la replicación puede escapar a los mecanismos de corrección y reparación y quedar fijado como una mutación en el ADN. Si ocurre en una línea germinal, puede transmitirse a la descendencia; no todo error de replicación produce necesariamente un cambio fenotípico."
     },
     {
       "pregunta": "Una mutación en el gen que codifica un polipéptido:",
@@ -234,7 +234,7 @@
       "explicacion": "La distribución independiente de alelos ocurre si los loci se encuentran en cromosomas distintos o lo suficientemente alejados en el mismo cromosoma como para segregar sin ligamiento."
     },
     {
-      "pregunta": "Se cruzan dos líneas puras de ratones: marrón con orejas grandes x blanco con orejas chicas. La F1 es 100% marrón con orejas grandes. Si se cruza un F1 con un doble homocigota recesivo, ¿cuál es la probabilidad de obtener ratones marrones con orejas chicas?",
+      "pregunta": "Se cruzan dos líneas puras de ratones: marrón con orejas grandes × blanco con orejas chicas. La F1 es 100% marrón con orejas grandes. Suponiendo que los genes se segregan independientemente, si se cruza un individuo F1 con un doble homocigota recesivo, ¿cuál es la probabilidad de obtener ratones marrones con orejas chicas?",
       "opciones": [
         "1/4",
         "0",
@@ -253,7 +253,7 @@
         "75%"
       ],
       "correcta": "D",
-      "explicacion": "La madre es de genotipo AO y el padre es AB (al haber heredado el alelo A de su padre). Del cruce AO x AB resultan los genotipos AA, AB, AO y BO, de los cuales tres de cuatro son heterocigotas."
+      "explicacion": "La mujer es AO porque su madre de grupo O solo pudo aportarle el alelo O. El hombre es BO: al ser de grupo B y tener un padre de grupo A, necesariamente recibió el alelo O de ese padre y el alelo B de su madre. En el cruce AO × BO se obtienen AB, AO, BO y OO en proporciones iguales; tres de los cuatro genotipos son heterocigotas (75%)."
     },
     {
       "pregunta": "En relación con los genes ligados, se puede afirmar que:",
@@ -388,15 +388,15 @@
       "explicacion": "La mielina actúa como aislante eléctrico permitiendo la conducción saltatoria del potencial de acción entre los nodos de Ranvier, incrementando la velocidad de señalización."
     },
     {
-      "pregunta": "La cocaína actúa inhibiendo la recaptación de dopamina (neurotransmisor excitatorio); por consiguiente:",
+      "pregunta": "La cocaína actúa inhibiendo la recaptación de dopamina. Por consiguiente, en una sinapsis dopaminérgica:",
       "opciones": [
         "bloquea por completo la transmisión de impulsos.",
         "produce una hiperpolarización continua en la neurona postsináptica.",
-        "disminuye la concentración del neurotransmisor en la hendidura sináptica.",
-        "produce una despolarización más prolongada en la neurona postsináptica."
+        "disminuye la concentración de dopamina en la hendidura sináptica.",
+        "prolonga la permanencia de dopamina en la hendidura sináptica y la activación de sus receptores."
       ],
       "correcta": "D",
-      "explicacion": "Al bloquearse la recaptación, la dopamina permanece durante más tiempo estimulando sus receptores en la hendidura sináptica, extendiendo la despolarización de la membrana postsináptica."
+      "explicacion": "Al inhibirse el transportador de recaptación, la dopamina permanece más tiempo en el espacio extracelular y puede prolongar la activación de sus receptores. No corresponde afirmar que la dopamina sea siempre excitatoria: el efecto postsináptico depende del subtipo de receptor y de la célula."
     },
     {
       "pregunta": "La adrenoleucodistrofia (ALD) es una enfermedad metabólica relacionada con un defecto funcional a nivel de:",
