@@ -28,9 +28,9 @@
       "pregunta": "Las secuencias genómicas móviles conocidas como transposones se definen como:",
       "opciones": [
         "segmentos de ADN flanqueados por secuencias específicas con la capacidad de cambiar de posición dentro del genoma.",
-        "virus de ARN que integran un provirus en la membrana celular.",
-        "plásmidos bacterianos que codifican resistencia a antibióticos.",
-        "regiones repetitivas ubicadas en los telómeros de los cromosomas."
+        "segmentos de ADN capaces de desplazarse a nuevas posiciones del genoma mediante mecanismos de transposición.",
+        "secuencias de ARN que salen del núcleo y se integran en la membrana plasmática.",
+        "plásmidos extracromosómicos que siempre se replican de forma independiente del cromosoma bacteriano."
       ],
       "correcta": "A",
       "explicacion": "Un transposón es una unidad de ADN que porta la información enzimática para escindirse o replicarse e insertarse en un nuevo sitio genómico."
@@ -50,9 +50,9 @@
       "pregunta": "En el control del ciclo celular eucariota, la activación de las quinasas dependientes de ciclinas (CDK) ocurre cuando:",
       "opciones": [
         "se unen a sus correspondientes ciclinas reguladoras, cuya concentración varía según la fase del ciclo.",
-        "aumenta la concentración de la lámina nuclear.",
-        "se hidroliza de forma irreversible el factor p53.",
-        "las quinasas son degradadas por el proteasoma."
+        "se asocian con ciclinas específicas, y su actividad también puede regularse por fosforilación y desfosforilación.",
+        "se unen directamente al ADN en los orígenes de replicación para iniciar la fase S.",
+        "se activan cuando las ciclinas son degradadas y liberan a las CDK en el citoplasma."
       ],
       "correcta": "A",
       "explicacion": "Mientras que los niveles de CDK se mantienen relativamente constantes, la síntesis y degradación oscilatoria de las ciclinas activa selectivamente las CDK en cada fase del ciclo."
@@ -61,9 +61,9 @@
       "pregunta": "Durante la duplicación del ADN, los cebadores o primers de ARN cumplen la función indispensable de:",
       "opciones": [
         "proveer un extremo 3'-OH libre requerido por la ADN polimerasa para iniciar la polimerización.",
-        "sellar los fragmentos de Okazaki en la hebra retrasada.",
-        "reemplazar a la helicasa en la apertura de la hélice.",
-        "proteger a los telómeros de la degradación."
+        "aportar un extremo 3'-OH libre desde el cual la ADN polimerasa pueda extender la nueva cadena.",
+        "proporcionar el extremo 5' fosfato que la ligasa necesita para unir fragmentos de Okazaki.",
+        "señalar a la helicasa el sitio exacto donde debe separar las hebras parentales."
       ],
       "correcta": "A",
       "explicacion": "Las ADN polimerasas no pueden iniciar una cadena *de novo*; la primasa sintetiza un corto oligonucleótido de ARN para aportar el extremo 3'-OH inicial."
@@ -83,9 +83,9 @@
       "pregunta": "Si en la bacteria Escherichia coli se inhibe la unión del factor sigma (σ) a la ARN polimerasa central, la consecuencia inmediata sobre la transcripción es que:",
       "opciones": [
         "la ARN polimerasa pierde la capacidad de reconocer específicamente las secuencias promotoras del ADN.",
-        "la enzima se vuelve hiperactiva y sintetiza ARN sin control.",
-        "se detiene la replicación del cromosoma bacteriano.",
-        "se bloquea la traducción en el ribosoma."
+        "el reconocimiento eficiente de los promotores bacterianos por la ARN polimerasa queda comprometido.",
+        "la ARN polimerasa central reconoce con mayor afinidad los terminadores rho-dependientes.",
+        "la enzima pierde su actividad catalítica y deja de formar enlaces fosfodiéster en cualquier contexto."
       ],
       "correcta": "A",
       "explicacion": "El factor sigma se une al núcleo catalítico de la ARN polimerasa bacteriana para formar la holoenzima y otorgarle especificidad de unión a las secuencias promotoras -10 y -35."
@@ -105,9 +105,9 @@
       "pregunta": "La inhibición de las enzimas topoisomerasas durante la replicación celular bloquea el proceso al impedir:",
       "opciones": [
         "el alivio del superenrollamiento y la tensión torsional generados por el desenrollamiento de la hélice.",
-        "la ruptura de los puentes de hidrógeno de las bases nitrogenadas.",
-        "la adición del capuchón 5' al ARN.",
-        "la activación de los aminoácidos en el citosol."
+        "disminuir la tensión torsional que se acumula por delante de la horquilla cuando se separan las hebras.",
+        "romper los puentes de hidrógeno entre las bases para abrir la doble hélice.",
+        "unir los fragmentos de Okazaki después de que se eliminan los cebadores."
       ],
       "correcta": "A",
       "explicacion": "Las topoisomerasas o girasas realizan cortes transitorios en el esqueleto del ADN para liberar la tensión de superenrollamiento por delante de la horquilla de replicación."
@@ -127,9 +127,9 @@
       "pregunta": "En las bacterias, el disacárido lactosa induce la expresión del operón lactosa al unirse a la proteína represora y provocar:",
       "opciones": [
         "su inactivación conformacional, lo que le impide unirse a la secuencia del operador.",
-        "su unión irreversible a la región del promotor.",
-        "la degradación completa de la ARN polimerasa.",
-        "la síntesis inmediata del operón triptófano."
+        "cambia la conformación del represor y reduce su afinidad por el operador, permitiendo la transcripción.",
+        "aumenta la afinidad del represor por el operador y bloquea la unión de la ARN polimerasa.",
+        "se une a la ARN polimerasa y la transforma en una enzima capaz de transcribir el operón trp."
       ],
       "correcta": "A",
       "explicacion": "La alolactosa actúe como inductoruniéndose al represor lacI; la alteración alostérica reduce su afinidad por el operador y despeja el camino a la ARN polimerasa."
@@ -149,9 +149,9 @@
       "pregunta": "Si por una mutación puntual se introduce un codón de terminación prematuro en la región media de un exón codificante:",
       "opciones": [
         "la traducción se interrumpirá anticipadamente, produciendo un polipéptido más corto (truncado).",
-        "la proteína resultante tendrá una mayor longitud de la normal.",
-        "se bloqueará el inicio de la replicación en el núcleo.",
-        "se sintetizará una cola de poliadeninas en la mutación."
+        "la traducción termina antes de tiempo y puede originar una proteína truncada, si el transcripto escapa a la degradación mediada por codones sin sentido.",
+        "la ARN polimerasa detiene la transcripción en el promotor y no produce ningún ARN mensajero.",
+        "el ribosoma continúa la traducción hasta el final y agrega una región de aminoácidos adicional."
       ],
       "correcta": "A",
       "explicacion": "Las mutaciones sin sentido (nonsense) generan codones de parada (UAA, UAG, UGA) que provocan la liberación prematura de la cadena polipeptídica en el ribosoma."
@@ -160,9 +160,9 @@
       "pregunta": "La región del nucléolo conocida como zona granular cumple la función biológica de:",
       "opciones": [
         "ensamblar las moléculas de ARNr procesadas con las proteínas ribosómicas importadas.",
-        "transcribir los genes que codifican para las histonas.",
-        "degradar los ARN mensajeros defectuosos.",
-        "sintetizar los fosfolípidos de la envoltura nuclear."
+        "participar en el procesamiento del ARNr y en el ensamblaje inicial de las subunidades ribosómicas.",
+        "sintetizar la mayor parte de las proteínas ribosómicas que luego se incorporan al nucléolo.",
+        "degradar selectivamente los ARNm que contienen codones de terminación prematuros."
       ],
       "correcta": "A",
       "explicacion": "En el nucléolo, la región fibrilar transcribe y procesa el ARNr 45S, mientras que la región granular realiza el ensamblaje de las subunidades ribosómicas preliminares."
@@ -193,9 +193,9 @@
       "pregunta": "Una célula germinal en fase de profase II meiótica proveniente de una especie con 2n = 12 se caracteriza por presentar:",
       "opciones": [
         "6 cromosomas duplicados (constituidos por dos cromátides hermanas).",
-        "12 cromosomas simples.",
-        "6 bivalentes o tétradas apareadas.",
-        "12 cromosomas duplicados."
+        "6 cromosomas, cada uno formado por dos cromátides hermanas.",
+        "12 cromosomas, cada uno formado por una cromátide.",
+        "6 pares de cromosomas homólogos apareados en bivalentes."
       ],
       "correcta": "A",
       "explicacion": "La meiosis I es reduccional, por lo que las células resultantes en meiosis II contienen la mitad de cromosomas (n = 6), manteniéndose duplicados hasta anafase II."
@@ -215,9 +215,9 @@
       "pregunta": "El principio de equilibrio genético de Hardy-Weinberg se cumple en una población bajo las condiciones de:",
       "opciones": [
         "ausencia de mutaciones, apareamiento totalmente al azar (panmixia) y un tamaño poblacional sumamente grande.",
-        "alta tasa de mutaciones e inmigración constante.",
-        "fuerte presión de selección natural y poblaciones pequeñas.",
-        "presencia de deriva génica por cuello de botella."
+        "ausencia de mutación, migración y selección, apareamiento aleatorio y tamaño poblacional muy grande.",
+        "apareamiento preferencial entre individuos emparentados y ausencia de mutaciones nuevas.",
+        "selección natural intensa, migración frecuente y tamaño poblacional reducido."
       ],
       "correcta": "A",
       "explicacion": "El modelo de Hardy-Weinberg demuestra que las frecuencias génicas y genotípicas se mantienen constantes si no actúan mutación, selección, migración ni deriva génica, en poblaciones infinitas con panmixia."
@@ -237,9 +237,9 @@
       "pregunta": "La mutación por inserción de dos nucleótidos en el medio de la secuencia codificante de un gen provoca:",
       "opciones": [
         "un corrimiento del marco de lectura traduccional que altera toda la secuencia de aminoácidos posterior.",
-        "la sustitución de únicamente un aminoácido en la proteína.",
-        "la duplicación del promotor génico.",
-        "la conversión directa de la proteína en histona."
+        "un cambio del marco de lectura a partir del sitio de inserción, que puede alterar los codones posteriores.",
+        "la incorporación de un aminoácido adicional sin modificar la lectura de los tripletes siguientes.",
+        "la sustitución de un único aminoácido, independientemente de la posición de la inserción."
       ],
       "correcta": "A",
       "explicacion": "Las inserciones que no son múltiplos de tres bases desfasan la agrupación de tripletes a partir de la mutación, alterando completamente la traducción posterior."
