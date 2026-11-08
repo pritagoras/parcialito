@@ -171,9 +171,9 @@
       "pregunta": "Una célula germinal con complemento 2n = 8 que concluye la primera división meiótica (telofase I) presentará en cada polo celular:",
       "opciones": [
         "4 cromosomas duplicados (constituidos por dos cromátides hermanas cada uno).",
-        "8 cromosomas simples.",
-        "4 cromosomas simples no duplicados.",
-        "8 bivalentes apareados."
+        "8 cromosomas duplicados, cada uno con dos cromátides hermanas.",
+        "4 cromosomas simples, cada uno constituido por una cromátide.",
+        "4 cromosomas duplicados, cada uno formado por dos cromátides hermanas."
       ],
       "correcta": "A",
       "explicacion": "La meiosis I es reduccional: divide a la mitad el número de cromosomas (n = 4 en cada polo), pero estos permanecen duplicados."
