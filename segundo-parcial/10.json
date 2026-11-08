@@ -38,9 +38,9 @@
     {
       "pregunta": "Desde el punto de vista de la evolución sintética (Neodarwinismo), la principal fuerza impulsora que genera selección natural adaptativa sobre una población es:",
       "opciones": [
-        "la selección diferencial de variantes hereditarias en función de las condiciones ambientales.",
-        "las variaciones de las presiones ambientales que determinan la reproducción diferencial de variantes heredables.",
         "la necesidad de los organismos de modificar sus órganos para adaptarse al ambiente.",
+        "las variaciones de las presiones ambientales que determinan la reproducción diferencial de variantes heredables.",
+        "la aparición de variaciones heredables y su reproducción diferencial bajo distintas presiones ambientales.",
         "la transmisión hereditaria de cambios adquiridos durante la vida de cada individuo."
       ],
       "correcta": "B",
