@@ -291,9 +291,9 @@
     {
       "pregunta": "Cuando la concentración intracelular de hierro es baja, la traducción del ARNm de la ferritina se encuentra inhibida debido a que:",
       "opciones": [
-        "La ARN polimerasa II no puede unirse al promotor del gen de ferritina en el núcleo.",
-        "El ARNm de ferritina es destruido inmediatamente por las partículas del espliceosoma.",
-        "El complejo ubiquitina-proteasoma degrada los ribosomas asociados al extremo 3' UTR.",
+        "La ARN polimerasa II no reconoce el promotor del gen de ferritina cuando disminuye el hierro citosólico.",
+        "El ARNm de ferritina es eliminado por el espliceosoma antes de completar su procesamiento nuclear.",
+        "El complejo ubiquitina-proteasoma degrada los ribosomas que se unen al extremo 3' UTR del ARNm.",
         "La proteína reguladora se une al elemento de respuesta al hierro (IRE/ERH) en la región 5' UTR y bloquea el inicio de la traducción."
       ],
       "correcta": "D",
@@ -357,9 +357,9 @@
     {
       "pregunta": "En el complejo proteolítico del proteasoma 26S, las partículas reguladoras 19S son responsables de:",
       "opciones": [
-        "Transcribir el gen estructural en un transcripto primario no maduro.",
-        "Sintetizar la cola de poli-A mediante la enzima poliA-polimerasa.",
-        "Splicing alternativo de las isoformas de histonas desnaturalizadas.",
+        "Transcribir el gen estructural en un transcripto primario y reconocer sus secuencias promotoras.",
+        "Sintetizar la cola de poli-A del ARNm mediante la enzima poliA-polimerasa nuclear.",
+        "Realizar el splicing alternativo de los transcritos que codifican proteínas destinadas al proteasoma.",
         "Reconocer la marca de poliubiquitina, desplegar el sustrato proteico con gasto de ATP y eliminar la ubiquitina."
       ],
       "correcta": "D",
