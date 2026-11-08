@@ -82,10 +82,10 @@
     {
       "pregunta": "¿Qué proporción fenotípica se espera al cruzar un individuo heterocigota (Aa) con uno homocigota recesivo (aa)?",
       "opciones": [
-        "3:1 a favor del dominante.",
-        "100% de fenotipo dominante.",
+        "3/4 de fenotipo dominante y 1/4 de fenotipo recesivo.",
+        "todos los descendientes con fenotipo dominante.",
         "1/2 de fenotipo dominante y 1/2 de fenotipo recesivo.",
-        "1/4 de fenotipo dominante."
+        "1/2 de fenotipo dominante y 1/2 de fenotipo recesivo."
       ],
       "correcta": "C",
       "explicacion": "El cruzamiento Aa x aa origina un 50% de descendientes heterocigotas (Aa) y un 50% de descendientes homocigotas recesivos (aa)."
@@ -500,9 +500,9 @@
     {
       "pregunta": "Para la síntesis de una proteína eucariota madura formada por 200 aminoácidos, el transcripto primario (pre-ARNm) debió contener:",
       "opciones": [
-        "exactamente 200 nucleótidos.",
-        "exactamente 600 nucleótidos.",
-        "menos de 400 nucleótidos.",
+        "exactamente 600 nucleótidos, correspondientes a los codones que especifican los aminoácidos.",
+        "menos de 600 nucleótidos, porque los intrones se incorporan después de la transcripción.",
+        "más de 600 nucleótidos, ya que el pre-ARNm puede incluir intrones y regiones no traducidas.",
         "más de 600 nucleótidos al incluir intrones y secuencias no traducidas."
       ],
       "correcta": "D",
@@ -533,10 +533,10 @@
     {
       "pregunta": "Respecto al funcionamiento del operón triptófano en bacterias, se verifica que la proteína represora se sintetiza de forma:",
       "opciones": [
-        "inducible e inactiva.",
+        "inducible, ya que su síntesis solo comienza cuando el triptófano está presente.",
         "constitutiva e inactiva, requiriendo del triptófano como correpresor.",
-        "constitutiva y activa por sí sola.",
-        "reprimible en presencia de glucosa."
+        "constitutiva, pero requiere la unión del triptófano para adquirir actividad represora.",
+        "reprimible, y se activa cuando la concentración de triptófano disminuye."
       ],
       "correcta": "B",
       "explicacion": "El gen regulador produce un aporrepresor inactivo que solo adquiere la conformación de unión al operador cuando se acopla al triptófano."
