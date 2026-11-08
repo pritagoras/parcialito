@@ -159,7 +159,7 @@
     {
       "pregunta": "Las secuencias reguladoras del ADN en eucariontes conocidas como intensificadores (enhancers) y silenciadores (silencers) actúan:",
       "opciones": [
-        "uniendo factores de transcripción que aumentan o disminuyen la frecuencia de iniciación en un promotor.",
+        "uniendo proteínas que modifican la estabilidad del ARNm después de la transcripción.",
         "uniendo proteínas reguladoras (activadores o represores) para modular la tasa de transcripción sin ser traducidas.",
         "actuando como sitios de unión para proteínas reguladoras que modifican la actividad transcripcional, incluso a distancia.",
         "codificando pequeños ARN que se unen directamente a los ribosomas para regular la traducción."
@@ -313,9 +313,9 @@
     {
       "pregunta": "La teoría endosimbiótica propuesta para el origen de la célula eucarionte explica la aparición de:",
       "opciones": [
-        "la aparición de mitocondrias y cloroplastos a partir de bacterias incorporadas por una célula ancestral.",
-        "organelas semiautónomas como mitocondrias y cloroplastos a partir de procariontes englobados.",
         "el origen del núcleo y del sistema de endomembranas a partir de invaginaciones de la membrana plasmática.",
+        "organelas semiautónomas como mitocondrias y cloroplastos a partir de procariontes englobados.",
+        "la aparición de mitocondrias y cloroplastos a partir de bacterias incorporadas por una célula ancestral.",
         "la formación de ribosomas eucariontes a partir de la fusión de dos tipos de bacterias."
       ],
       "correcta": "B",
@@ -479,9 +479,9 @@
     {
       "pregunta": "En las células germinales masculinas, un espermatocito II se caracteriza por ser una célula:",
       "opciones": [
-        "haploide, con un cromosoma de cada par homólogo y dos cromátides por cromosoma.",
-        "haploide (n) con sus cromosomas formados por dos cromátides hermanas.",
         "diploide, con ambos cromosomas homólogos todavía apareados.",
+        "haploide (n) con sus cromosomas formados por dos cromátides hermanas.",
+        "diploide, con un juego cromosómico de origen materno y otro de origen paterno.",
         "haploide, con cromosomas de una sola cromátide después de la meiosis II."
       ],
       "correcta": "B",
