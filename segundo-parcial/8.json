@@ -5,10 +5,10 @@
     {
       "pregunta": "La desorganización de la envoltura nuclear durante la profase mitótica o meiótica se produce fundamentalmente como consecuencia de la:",
       "opciones": [
-        "disrupción de los microtúbulos polares del huso.",
+        "desensamblaje de los filamentos de lámina nuclear tras su fosforilación por quinasas mitóticas.",
         "pérdida de la estructura de la lámina nuclear por fosforilación de sus filamentos intermedios.",
-        "acción contráctil del anillo de actina y miosina.",
-        "actividad enzimática del cinetocoro en la placa ecuatorial."
+        "despolimerización de los microtúbulos cinetocóricos que mantienen unidos los cromosomas.",
+        "contracción del anillo de actina y miosina que separa el citoplasma al final de la división."
       ],
       "correcta": "B",
       "explicacion": "La desorganización de la envoltura nuclear requiere la desensambladura de la lámina nuclear, promovida por la fosforilación de las láminas intermedias por la quinasa CDK1."
@@ -93,10 +93,10 @@
     {
       "pregunta": "En cuanto a la vida media de los distintos tipos de ARN celulares, se verifica que:",
       "opciones": [
-        "el ARNm posee la mayor estabilidad y duración dentro de la célula.",
-        "el ARNr se degrada completamente tras traducir cada molécula de ARNm.",
+        "el ARNt suele ser más estable que el ARNm porque participa repetidamente en distintos ciclos de traducción.",
+        "el ARNr tiene una vida media menor que el ARNm porque se consume durante cada ronda de traducción.",
         "el ARNt presenta mayor vida media que el ARNm al ser reutilizado para transportar múltiples aminoácidos.",
-        "todos los tipos de ARN poseen la misma tasa de degradación."
+        "el ARNm y el ARNt presentan necesariamente la misma vida media en todos los tipos celulares."
       ],
       "correcta": "C",
       "explicacion": "Los ARN de transferencia y ribosómicos son altamente estables y reutilizables en múltiples ciclos de traducción, a diferencia del ARNm que posee vida media más corta."
@@ -105,9 +105,9 @@
       "pregunta": "En el procesamiento del ARN de las células eucariontes, los intrones se definen como:",
       "opciones": [
         "secuencias eliminadas del transcripto primario por la acción del complejo del espliceosoma.",
-        "secuencias codificantes que se traducen en el ribosoma.",
-        "adiciones de nucleótidos de adenina en el extremo 3'.",
-        "secuencias de ADN reguladoras situadas en el promotor."
+        "secuencias que se eliminan del pre-ARNm durante el splicing antes de que el ARNm maduro sea traducido.",
+        "secuencias que permanecen en el ARNm maduro y pueden formar parte de la región traducida.",
+        "secuencias que funcionan como señales de inicio y terminación de la transcripción en el ADN."
       ],
       "correcta": "A",
       "explicacion": "Los intrones son secuencias no codificantes transcriptas en el pre-ARNm que son removidas durante el splicing en el núcleo antes de la traducción."
@@ -115,10 +115,10 @@
     {
       "pregunta": "La característica de que una molécula de ARN mensajero sea policistrónica indica que:",
       "opciones": [
-        "proviene de un organismo eucarionte y posee múltiples intrones.",
+        "contiene varios marcos de lectura que pueden traducirse en polipéptidos diferentes a partir de un mismo transcripto.",
         "corresponde a células procariontes y contiene la información para sintetizar varias cadenas polipeptídicas.",
-        "contiene múltiples capuchones 5' para varios ribosomas.",
-        "solo codifica para una única proteína en células vegetales."
+        "presenta varios sitios de poliadenilación que generan una única proteína de mayor tamaño.",
+        "incluye varios exones alternativos que se combinan durante el splicing de un pre-ARNm eucarionte."
       ],
       "correcta": "B",
       "explicacion": "En bacterias, los operones transcriben ARNm policistrónicos que albergan secuencias codificantes para múltiples enzimas de una misma vía metabólica."
@@ -126,10 +126,10 @@
     {
       "pregunta": "Durante la traducción, la formación del enlace peptídico se caracteriza energéticamente por:",
       "opciones": [
-        "requerir la hidrólisis directa de ATP por parte del ribosoma.",
-        "ser catalizada por el propio aminoácido en el sitio E.",
+        "aprovechar la energía almacenada en el enlace éster del aminoacil-ARNt que ocupa el sitio A.",
+        "requerir la hidrólisis directa de ATP por la peptidil transferasa para unir dos aminoácidos.",
         "requerir la energía liberada por la ruptura del enlace éster entre el aminoácido y su ARNt en el sitio P.",
-        "ser una reacción totalmente irreversible mediada por ADN polimerasa."
+        "depender de la hidrólisis de GTP por los factores de elongación para catalizar químicamente el enlace."
       ],
       "correcta": "C",
       "explicacion": "La transferencia de la cadena peptídica desde el ARNt del sitio P al aminoacil-ARNt del sitio A aprovecha la energía del enlace de alta energía generado durante la aminoacilación."
@@ -236,10 +236,10 @@
     {
       "pregunta": "En las células animales diferenciadas, los telómeros cumplen la función de:",
       "opciones": [
-        "evitar el superenrollamiento del ADN durante la transcripción.",
+        "proteger los extremos cromosómicos y limitar la pérdida de secuencias durante la replicación del ADN lineal.",
         "proteger a las regiones codificantes de los extremos cromosómicos de la degradación progresiva en cada replicación.",
-        "unir las cromátides hermanas durante la profase.",
-        "sintetizar los cebadores de ARN."
+        "facilitar el reconocimiento de los orígenes de replicación en los cromosomas eucariontes.",
+        "mantener unidos los cromosomas homólogos durante el apareamiento de la profase I."
       ],
       "correcta": "B",
       "explicacion": "Los telómeros consisten en repeticiones no codificantes en los extremos del ADN lineal que previenen la pérdida de genes por el problema de la replicación terminal."
@@ -248,9 +248,9 @@
       "pregunta": "La definición biológica de un gen corresponde a:",
       "opciones": [
         "una secuencia de ADN que codifica para un producto funcional, ya sea una proteína o un ARN no codificante.",
-        "cualquier secuencia de aminoácidos en una cadena peptídica.",
-        "un segmento de ARN de transferencia citoplásmico.",
-        "una proteína estructural del nucléolo."
+        "una secuencia de ADN cuya transcripción origina un producto funcional, que puede ser un ARN o una proteína.",
+        "una región de ADN que siempre se traduce íntegramente en una única proteína.",
+        "una secuencia reguladora que necesariamente incluye el promotor y todos los enhancers del cromosoma."
       ],
       "correcta": "A",
       "explicacion": "Un gen es la unidad física y funcional de la herencia formada por un segmento de ADN que se transcribe para dar un ARN funcional o un ARNm traducible a proteína."
@@ -291,10 +291,10 @@
     {
       "pregunta": "La energía requerida para la formación del enlace fosfodiéster durante la síntesis de ADN proviene de la:",
       "opciones": [
-        "hidrólisis de moléculas de ATP libre citoplásmico.",
+        "la hidrólisis del enlace fosfoanhídrido del ATP consumido por la helicasa en cada nucleótido incorporado.",
         "hidrólisis de pirofosfato del desoxirribonucleótido trifosfato (dNTP) incorporado a la cadena.",
-        "actividad exergónica de la topoisomerasa.",
-        "energía potencial del gradiente de protones."
+        "la energía liberada por la hidrólisis del pirofosfato asociado al dNTP incorporado.",
+        "la energía almacenada en los enlaces peptídicos de las proteínas de la horquilla."
       ],
       "correcta": "B",
       "explicacion": "Cada dNTP entrante porta en sus enlaces fosfoanhídrido la energía necesaria; la liberación y posterior hidrólisis del pirofosfato (PPi) impulsa la reacción de polimerización."
