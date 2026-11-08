@@ -247,10 +247,10 @@
     {
       "pregunta": "¿Cuál es la constitución cromosómica normal de una célula somática en la especie humana?",
       "opciones": [
-        "23 cromosomas autosómicos y 1 cromosoma sexual.",
-        "46 pares de cromosomas autosómicos y 2 pares sexuales.",
+        "23 cromosomas autosómicos y un único cromosoma sexual, sin formar pares homólogos.",
+        "46 pares de cromosomas autosómicos y dos pares de cromosomas sexuales en cada núcleo.",
         "46 cromosomas, distribuidos en 22 pares de autosomas y 1 par de cromosomas sexuales.",
-        "45 cromosomas totales organizados en pares idénticos."
+        "45 cromosomas totales, organizados en pares homólogos y un cromosoma sexual sin pareja."
       ],
       "correcta": "C",
       "explicacion": "El cariotipo humano normal consta de 2n = 46 cromosomas, lo que equivale a 23 pares: 22 pares de autosomas y 1 par de cromosomas sexuales (XX o XY)."
@@ -522,10 +522,10 @@
     {
       "pregunta": "Durante la meiosis, ¿cuál es el fallo celular directo que ocasiona la aparición de gametas con exceso o defecto de cromosomas (como en las trisomías y monosomías)?",
       "opciones": [
-        "La duplicación fallida de los telómeros en la fase S de la interfase.",
+        "La duplicación incompleta de los telómeros durante la fase S, que genera gametas con cromosomas más cortos.",
         "La no disyunción cromosómica o separación anómala de homólogos o cromátidas hermanas durante la anafase meiótica.",
-        "La desacetilación masiva de las histonas en el núcleo interfásico.",
-        "La rotura del andamiaje proteico (scaffold) durante la profase mitótica."
+        "La desacetilación de histonas durante la interfase, que modifica la compactación de la cromatina.",
+        "La rotura del andamiaje proteico nuclear durante la profase mitótica, que altera la forma de los cromosomas."
       ],
       "correcta": "B",
       "explicacion": "Las aneuploidías numéricas (trisomías y monosomías) se originan principalmente por un fenómeno de no disyunción meiótica, donde los cromosomas homólogos (en Meiosis I) o las cromátidas hermanas (en Meiosis II) no se separan adecuadamente hacia los polos opuestos."
