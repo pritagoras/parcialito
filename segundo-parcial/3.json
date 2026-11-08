@@ -256,7 +256,7 @@
       "explicacion": "Charles Darwin postuló la selección natural como el mecanismo por el cual las variantes heredables ventajosas se preservan en la población."
     },
     {
-      "pregunta": "La aparición de un nuevo alelo previamente inexistente dentro del acervo génico de una población se explica por:",
+      "pregunta": "La incorporación a una población de un alelo que ya estaba presente en otra población, pero ausente en la primera, puede explicarse por:",
       "opciones": [
         "la llegada e inmigración de individuos provenientes de otra población con distinta información genética.",
         "la ocurrencia de crossing-over durante la meiosis.",
@@ -264,7 +264,7 @@
         "la separación de cromosomas durante la mitosis."
       ],
       "correcta": "A",
-      "explicacion": "El flujo génico mediante inmigración introduce alelos alternativos en una población donde antes no estaban presentes."
+      "explicacion": "El flujo génico ocurre cuando individuos o gametas migran entre poblaciones y se reproducen, introduciendo alelos que ya estaban presentes en la población de origen. La aparición de alelos nuevos en sentido evolutivo se debe, en última instancia, a mutaciones."
     },
     {
       "pregunta": "El mecanismo de selección natural se fundamenta en:",
