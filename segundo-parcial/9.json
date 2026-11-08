@@ -252,8 +252,8 @@
         "6 cromosomas duplicados.",
         "6 bivalentes o tétradas."
       ],
-      "correcta": "D",
-      "explicacion": "Al concluir la meiosis I reduccional, las células resultantes son haploides (n = 6); en profase II contienen 6 cromosomas aún duplicados."
+      "correcta": "C",
+      "explicacion": "Al finalizar la meiosis I, los cromosomas homólogos ya se separaron y cada célula resultante es haploide (n = 6). En profase II hay 6 cromosomas duplicados, cada uno formado por dos cromátidas hermanas; los bivalentes o tétradas solo aparecen durante la profase I."
     },
     {
       "pregunta": "Un cruzamiento de prueba o retrocruza se define en genética experimental como el apareamiento entre:",
