@@ -5,10 +5,10 @@
     {
       "pregunta": "La desorganización de la envoltura nuclear durante la profase mitótica o meiótica se produce fundamentalmente como consecuencia de la:",
       "opciones": [
-        "desensamblaje de los filamentos de lámina nuclear tras su fosforilación por quinasas mitóticas.",
+        "la despolimerización de los microtúbulos del huso, que altera la segregación cromosómica.",
         "pérdida de la estructura de la lámina nuclear por fosforilación de sus filamentos intermedios.",
-        "despolimerización de los microtúbulos cinetocóricos que mantienen unidos los cromosomas.",
-        "contracción del anillo de actina y miosina que separa el citoplasma al final de la división."
+        "la contracción del anillo de actina y miosina durante la citocinesis.",
+        "la pérdida de anclaje de los cromosomas al cinetocoro durante la metafase."
       ],
       "correcta": "B",
       "explicacion": "La desorganización de la envoltura nuclear requiere la desensambladura de la lámina nuclear, promovida por la fosforilación de las láminas intermedias por la quinasa CDK1."
@@ -60,9 +60,9 @@
     {
       "pregunta": "El cese casi total de la actividad de transcripción génica en el núcleo es una característica propia de la fase del ciclo celular denominada:",
       "opciones": [
-        "Fase M, cuando la cromatina alcanza su máxima condensación y la transcripción disminuye marcadamente.",
-        "Fase S, cuando la replicación del ADN desplaza a la ARN polimerasa de todos los genes.",
-        "Fase G2, cuando se desensambla la envoltura nuclear y se detiene la transcripción.",
+        "Fase G1, cuando la célula crece y mantiene una intensa actividad biosintética.",
+        "Fase S, durante la cual se replica el ADN y continúa la expresión de numerosos genes.",
+        "Fase G2, cuando se sintetizan proteínas necesarias para la división celular.",
         "Fase M (mitosis)."
       ],
       "correcta": "D",
@@ -93,10 +93,10 @@
     {
       "pregunta": "En cuanto a la vida media de los distintos tipos de ARN celulares, se verifica que:",
       "opciones": [
-        "el ARNt suele ser más estable que el ARNm porque participa repetidamente en distintos ciclos de traducción.",
-        "el ARNr tiene una vida media menor que el ARNm porque se consume durante cada ronda de traducción.",
+        "el ARNm suele ser más estable que el ARNt porque permanece asociado a los ribosomas.",
+        "el ARNr se degrada después de cada ciclo de traducción y debe sintetizarse nuevamente.",
         "el ARNt presenta mayor vida media que el ARNm al ser reutilizado para transportar múltiples aminoácidos.",
-        "el ARNm y el ARNt presentan necesariamente la misma vida media en todos los tipos celulares."
+        "el ARNt y el ARNm presentan necesariamente la misma vida media en todos los tipos celulares."
       ],
       "correcta": "C",
       "explicacion": "Los ARN de transferencia y ribosómicos son altamente estables y reutilizables en múltiples ciclos de traducción, a diferencia del ARNm que posee vida media más corta."
@@ -115,10 +115,10 @@
     {
       "pregunta": "La característica de que una molécula de ARN mensajero sea policistrónica indica que:",
       "opciones": [
-        "contiene varios marcos de lectura que pueden traducirse en polipéptidos diferentes a partir de un mismo transcripto.",
+        "contiene un único marco de lectura que puede ser traducido por varios ribosomas simultáneamente.",
         "corresponde a células procariontes y contiene la información para sintetizar varias cadenas polipeptídicas.",
-        "presenta varios sitios de poliadenilación que generan una única proteína de mayor tamaño.",
-        "incluye varios exones alternativos que se combinan durante el splicing de un pre-ARNm eucarionte."
+        "presenta varios sitios de poliadenilación que originan distintas versiones de un mismo polipéptido.",
+        "incluye varios exones alternativos que se combinan durante el procesamiento de un pre-ARNm eucarionte."
       ],
       "correcta": "B",
       "explicacion": "En bacterias, los operones transcriben ARNm policistrónicos que albergan secuencias codificantes para múltiples enzimas de una misma vía metabólica."
@@ -126,10 +126,10 @@
     {
       "pregunta": "Durante la traducción, la formación del enlace peptídico se caracteriza energéticamente por:",
       "opciones": [
-        "aprovechar la energía almacenada en el enlace éster del aminoacil-ARNt que ocupa el sitio A.",
-        "requerir la hidrólisis directa de ATP por la peptidil transferasa para unir dos aminoácidos.",
+        "depender de la hidrólisis de GTP por los factores de elongación para catalizar químicamente el enlace.",
+        "requerir la hidrólisis directa de ATP por el ribosoma para unir los aminoácidos.",
         "requerir la energía liberada por la ruptura del enlace éster entre el aminoácido y su ARNt en el sitio P.",
-        "depender de la hidrólisis de GTP por los factores de elongación para catalizar químicamente el enlace."
+        "ser catalizada por la aminoacil-ARNt sintetasa después de que el ARNt ingresa al ribosoma."
       ],
       "correcta": "C",
       "explicacion": "La transferencia de la cadena peptídica desde el ARNt del sitio P al aminoacil-ARNt del sitio A aprovecha la energía del enlace de alta energía generado durante la aminoacilación."
@@ -236,10 +236,10 @@
     {
       "pregunta": "En las células animales diferenciadas, los telómeros cumplen la función de:",
       "opciones": [
-        "proteger los extremos cromosómicos y limitar la pérdida de secuencias durante la replicación del ADN lineal.",
-        "proteger a las regiones codificantes de los extremos cromosómicos de la degradación progresiva en cada replicación.",
         "facilitar el reconocimiento de los orígenes de replicación en los cromosomas eucariontes.",
-        "mantener unidos los cromosomas homólogos durante el apareamiento de la profase I."
+        "proteger a las regiones codificantes de los extremos cromosómicos de la degradación progresiva en cada replicación.",
+        "mantener unidos los cromosomas homólogos durante el apareamiento de la profase I.",
+        "regular el inicio de la transcripción al reclutar factores basales al promotor."
       ],
       "correcta": "B",
       "explicacion": "Los telómeros consisten en repeticiones no codificantes en los extremos del ADN lineal que previenen la pérdida de genes por el problema de la replicación terminal."
@@ -335,10 +335,10 @@
     {
       "pregunta": "La actividad de corrección de pruebas (proofreading) durante la síntesis de ADN depende de la capacidad de la ADN polimerasa de actuar como:",
       "opciones": [
-        "exonucleasa 3' → 5' que elimina el nucleótido mal incorporado desde el extremo de la cadena en crecimiento.",
-        "exonucleasa en sentido 3' -> 5' para remover el nucleótido mal apareado.",
         "exonucleasa 5' → 3' que retira los cebadores de ARN durante la replicación bacteriana.",
-        "endonucleasa que corta ambas hebras cuando detecta un apareamiento incorrecto."
+        "exonucleasa en sentido 3' -> 5' para remover el nucleótido mal apareado.",
+        "ligasa que sella las discontinuidades entre fragmentos de ADN.",
+        "primasa que sintetiza los cebadores cortos de ARN necesarios para iniciar la replicación."
       ],
       "correcta": "B",
       "explicacion": "Al detectar una base mal apareada en el extremo 3', la ADN polimerasa retrocede utilizando su actividad exonucleasa 3'->5' para escindir el nucleótido incorrecto."
@@ -390,10 +390,10 @@
     {
       "pregunta": "En las plantas de gallina andaluza, la cruza entre variantes de plumaje negro (BB) y blanco (bb) origina una F1 de color azul grisáceo por dominancia incompleta. En la F2 la proporción fenotípica será:",
       "opciones": [
-        "1/4 negros, 1/2 azul grisáceo y 1/4 blancos, por segregación de los alelos en la F1 heterocigota.",
+        "1/2 negros y 1/2 blancos, porque el heterocigota no expresa un fenotipo intermedio.",
         "3/4 azul grisáceo y 1/4 negro, por dominancia completa del alelo B.",
         "1/4 negros, 1/2 azules grisáceos y 1/4 blancos.",
-        "1/2 negros y 1/2 blancos, porque el heterocigota no expresa un fenotipo intermedio."
+        "1/2 negros, 1/4 azul grisáceo y 1/4 blancos, por segregación independiente."
       ],
       "correcta": "C",
       "explicacion": "En la dominancia incompleta las proporciones genotípicas y fenotípicas coinciden en la F2 (1/4 homocigota dominante, 1/2 heterocigota intermedio y 1/4 homocigota recesivo)."
@@ -423,10 +423,10 @@
     {
       "pregunta": "Una célula muscular y una célula epitelial provenientes del mismo individuo adulto se caracterizan por:",
       "opciones": [
-        "derivar del mismo cigoto y conservar, en general, el mismo genoma nuclear, aunque expresen genes diferentes.",
-        "derivar de la misma célula huevo o cigoto por mitosis, diferenciándose por la expresión de conjuntos génicos distintos.",
         "presentar genomas nucleares distintos porque cada tejido pierde genes que no utiliza.",
-        "expresar el mismo conjunto de genes, pero traducirlos con códigos genéticos específicos de cada tejido."
+        "derivar de la misma célula huevo o cigoto por mitosis, diferenciándose por la expresión de conjuntos génicos distintos.",
+        "expresar el mismo conjunto de genes, pero traducirlos con códigos genéticos específicos de cada tejido.",
+        "tener cantidades diferentes de ADN nuclear como consecuencia de la diferenciación celular."
       ],
       "correcta": "B",
       "explicacion": "Salvo mutaciones somáticas, todas las células somáticas comparten el mismo genoma diploide, pero su identidad histológica depende de los programas de expresión génica diferencial."
@@ -434,10 +434,10 @@
     {
       "pregunta": "En las células somáticas diploides de una especie con 2n = 40, la presencia de un gen autosómico con 4 alelos posibles en la población implica que cada célula en G1 tendrá:",
       "opciones": [
-        "dos copias alélicas, una heredada de cada progenitor, aunque en la población existan más variantes.",
+        "una sola copia alélica, porque el gen autosómico se encuentra en un único cromosoma.",
         "dos alelos para dicho gen.",
         "cuatro copias alélicas, una por cada variante posible del gen en la población.",
-        "una sola copia alélica, porque los genes autosómicos se expresan en una única cromátide."
+        "una copia de cada uno de los cuatro alelos existentes en la población."
       ],
       "correcta": "B",
       "explicacion": "Al ser un organismo diploide (2n), cada individuo solo posee dos cromosomas homólogos por par y, por ende, únicamente dos alelos por locus en sus células somáticas."
