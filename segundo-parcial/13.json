@@ -124,7 +124,7 @@
       "explicacion": "El crossing-over entre cromátides no hermanas de cromosomas homólogos permite romper el ligamiento al intercambiar segmentos y recombinar alelos."
     },
     {
-      "pregunta": "En la especie humana, el resultado directo de la segunda división meiótica (meiosis II) durante la ovogénesis es la formación de:",
+      "pregunta": "En la especie humana, cuando la fecundación desencadena la reanudación y finalización de la segunda división meiótica durante la ovogénesis, se forman:",
       "opciones": [
         "un óvulo haploide con 23 cromosomas simples y un cuerpo polar.",
         "dos células diploides con 46 cromosomas cada una.",
@@ -132,7 +132,7 @@
         "dos ovocitos secundarios con cromosomas duplicados."
       ],
       "correcta": "A",
-      "explicacion": "La meiosis II en la ovogénesis concluye de manera asimétrica produciendo un único óvulo haploide (23 cromosomas de 1 cromátide) y el segundo cuerpo polar."
+      "explicacion": "El ovocito secundario humano queda detenido en metafase II y completa esta división cuando se produce la fecundación. Entonces se originan el óvulo haploide, con 23 cromosomas simples, y el segundo cuerpo polar."
     },
     {
       "pregunta": "Si una célula somática diploide (2n = 46) con una cantidad de ADN igual a 100 unidades en G1 se divide por mitosis, cada una de las células hijas resultantes tendrá:",
