@@ -38,10 +38,10 @@
     {
       "pregunta": "Desde el punto de vista de la evolución sintética (Neodarwinismo), la principal fuerza impulsora que genera selección natural adaptativa sobre una población es:",
       "opciones": [
-        "la tendencia interna de las especies a la perfección.",
+        "la selección diferencial de variantes hereditarias en función de las condiciones ambientales.",
         "las variaciones de las presiones ambientales que determinan la reproducción diferencial de variantes heredables.",
-        "el desuso prolongado de las estructuras anatómicas no utilizadas.",
-        "la aparición de macromutaciones universales en cada generación."
+        "la necesidad de los organismos de modificar sus órganos para adaptarse al ambiente.",
+        "la transmisión hereditaria de cambios adquiridos durante la vida de cada individuo."
       ],
       "correcta": "B",
       "explicacion": "El ambiente actúa como filtro selectivo determinando la reproducción diferencial de los individuos con genotipos de mayor adecuación biológica."
@@ -50,9 +50,9 @@
       "pregunta": "El concepto de 'reloj molecular' empleado en la biología evolutiva para reconstruir la filogenia de las especies se fundamenta en que:",
       "opciones": [
         "las mutaciones neutras se acumulan en las secuencias genómicas a una tasa aproximadamente constante a lo largo del tiempo.",
-        "la velocidad de la selección natural es fija en todos los ecosistemas.",
-        "el tamaño corporal determina la frecuencia de mutación en eucariotas.",
-        "las proteínas aumentan su tamaño a medida que las especies evolucionan."
+        "la acumulación de sustituciones neutrales o casi neutrales a tasas aproximadamente regulares en ciertos linajes.",
+        "la acumulación de mutaciones ventajosas a una tasa idéntica en todas las especies.",
+        "la conservación de secuencias proteicas sin cambios a lo largo de toda la evolución."
       ],
       "correcta": "A",
       "explicacion": "Al acumularse sustituciones neutras a ritmo casi constante, la divergencia de secuencias de nucleótidos permite estimar el tiempo transcurrido desde la separación de un ancestro común."
