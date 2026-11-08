@@ -577,10 +577,10 @@
     {
       "pregunta": "¿Cuál de los siguientes factores constituye el origen primario de nuevas variantes génicas en una población?",
       "opciones": [
-        "La selección natural.",
-        "La deriva génica.",
+        "La recombinación genética durante la meiosis.",
+        "La selección natural que modifica las frecuencias alélicas.",
         "Las mutaciones en la secuencia del ADN.",
-        "El proceso de mitosis."
+        "Las mutaciones que originan nuevos alelos en el material genético."
       ],
       "correcta": "C",
       "explicacion": "Las mutaciones son la fuente primaria de variabilidad genética, ya que generan nuevos alelos sobre los cuales actúan las fuerzas evolutivas."
@@ -632,10 +632,10 @@
     {
       "pregunta": "Los factores basales de la transcripción en células eucariotas actúan:",
       "opciones": [
-        "inhibiendo el avance de la polimerasa.",
+        "reconociendo secuencias terminadoras para finalizar la transcripción.",
         "mediando el reclutamiento y unión de la ARN polimerasa al promotor.",
-        "degradando los intrones en el nucléolo.",
-        "marcando la señal de poliadenilación."
+        "reclutando a la ARN polimerasa II y favoreciendo su posicionamiento en el promotor.",
+        "catalizando el corte y empalme de intrones durante la maduración del ARNm."
       ],
       "correcta": "B",
       "explicacion": "Los factores de transcripción generales o basales forman el complejo de preiniciación necesario para que la ARN polimerasa reconozca el promotor."
@@ -754,9 +754,9 @@
       "pregunta": "La formación del enlace peptídico durante el proceso de traducción es catalizada por la enzima:",
       "opciones": [
         "peptidil transferasa (actividad ribozímica del ARNr).",
-        "aminoacil-ARNt sintetasa.",
-        "ARN polimerasa II.",
-        "ARN helicasa."
+        "aminoacil-ARNt sintetasa, que une cada aminoácido con su ARNt correspondiente.",
+        "factor de elongación, que facilita la entrada del aminoacil-ARNt al sitio A.",
+        "peptidil transferasa, actividad catalítica asociada al ARN ribosómico de la subunidad mayor."
       ],
       "correcta": "A",
       "explicacion": "La peptidil transferasa es una ribozima integrada en la subunidad mayor del ribosoma que une los aminoácidos mediante enlaces peptídicos."
