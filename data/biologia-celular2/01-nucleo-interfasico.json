@@ -258,10 +258,10 @@
     {
       "pregunta": "¿Por qué las gametas humanas (óvulos y espermatozoides) son células haploides (n = 23)?",
       "opciones": [
-        "Porque han perdido la mitad de su ADN por tinción con Giemsa.",
+        "Porque durante la meiosis pierden todos los cromosomas sexuales y conservan solo autosomas.",
         "Porque al unirse en la fecundación restablecen la condición diploide de 46 cromosomas en el cigoto.",
-        "Porque son células que se mantienen indefinidamente en la fase G0.",
-        "Porque carecen de histonas y no pueden formar la fibra de 30 nm."
+        "Porque ingresan en G0 y pierden la capacidad de duplicar su material genético.",
+        "Porque eliminan las histonas y dejan de organizar el ADN en cromatina."
       ],
       "correcta": "B",
       "explicacion": "La condición haploide (n = 23) de las gametas permite que, tras la fecundación (23 + 23), se restablezca la diploidía característica de la especie (2n = 46) en el cigoto resultante."
