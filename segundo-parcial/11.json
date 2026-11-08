@@ -39,9 +39,9 @@
       "pregunta": "La diferencia fundamental entre el concepto de 'información genética' y el de 'código genético' radica en que:",
       "opciones": [
         "la información genética es la secuencia de nucleótidos del ADN de un organismo, mientras que el código genético es la regla universal de equivalencia entre codones de ARNm y aminoácidos.",
-        "la información genética determina el tipo de carbohidratos y el código determina el ADN.",
-        "la información genética es idéntica en todas las especies y el código genético es específico de cada individuo.",
-        "la información genética reside en el ARNt y el código genético en el ARNm."
+        "la información genética es el contenido heredable almacenado en la secuencia de ADN, mientras que el código genético relaciona codones con aminoácidos.",
+        "la información genética es la correspondencia entre codones y aminoácidos, mientras que el código genético es la secuencia completa de ADN.",
+        "la información genética describe solo genes codificantes, mientras que el código genético comprende las secuencias reguladoras del genoma."
       ],
       "correcta": "A",
       "explicacion": "La información genética es la secuencia particular de bases nitrogenadas del genoma de un ser vivo, mientras que el código genético es el conjunto de reglas universales que asigna a cada triplete de ARNm un aminoácido específico."
@@ -71,10 +71,10 @@
     {
       "pregunta": "La presencia de intrones en la estructura de los genes eucariontes permite que, mediante el mecanismo de splicing alternativo:",
       "opciones": [
-        "se transcriban ARNm de estructura policistrónica.",
+        "se obtengan diferentes ARNm maduros al incluir o excluir combinaciones específicas de exones del mismo pre-ARNm.",
         "se pueda obtener más de un tipo de ARNm maduro y sintetizar diferentes proteínas a partir de una única secuencia génica.",
-        "se acelere la velocidad de polimerización de la ARN polimerasa II.",
-        "se duplique el número de cromosomas durante la interfase."
+        "se produzcan ARNm policistrónicos con varios genes completos en una misma molécula.",
+        "se eliminen todos los exones y se conserven los intrones para su traducción en el citoplasma."
       ],
       "correcta": "B",
       "explicacion": "El empalme alternativo combina selectivamente exones e intrones, permitiendo a la célula generar diferentes isoformas de proteínas a partir de un solo gen."
@@ -93,10 +93,10 @@
     {
       "pregunta": "La síntesis de ADN retrotranscripto (cDNA) a partir de un molde de ARN es una reacción catalizada por la enzima:",
       "opciones": [
-        "ARN polimerasa I.",
+        "Transcriptasa reversa, una ADN polimerasa que utiliza ARN como molde.",
         "Transcriptasa reversa o retrotranscriptasa.",
-        "ADN ligasa.",
-        "ARN primasa."
+        "ARN polimerasa dependiente de ADN, que sintetiza ARN a partir de una hebra molde de ADN.",
+        "ADN polimerasa I, que elimina cebadores de ARN y rellena los espacios con ADN."
       ],
       "correcta": "B",
       "explicacion": "La transcriptasa reversa es una ADN polimerasa dependiente de ARN que sintetiza ADN complementario (cDNA) utilizando un molde de ARN."
@@ -105,9 +105,9 @@
       "pregunta": "En la replicación del ADN, la existencia de una hebra continua (líder) y una hebra discontinua (retrasada) es provocada por:",
       "opciones": [
         "la antiparalelidad del ADN y la limitación de la ADN polimerasa de sintetizar exclusivamente en sentido 5' -> 3'.",
-        "la presencia de histonas solo en una de las dos hebras parentales.",
-        "el uso exclusivo de ribonucleótidos en la hebra adelantada.",
-        "que la replicación es conservativa en procariotas."
+        "la antiparalelidad de las hebras y la síntesis de ADN exclusivamente en dirección 5' → 3'.",
+        "la capacidad de la ADN polimerasa para sintetizar una hebra en dirección 5' → 3' y la otra en dirección 3' → 5'.",
+        "la presencia de dos orígenes de replicación que avanzan en sentidos opuestos sobre cada hebra."
       ],
       "correcta": "A",
       "explicacion": "Al ser las cadenas de la doble hélice antiparalelas y al poder sintetizar la ADN polimerasa solo en sentido 5'->3', una hebra se sintetiza en forma continua hacia la horquilla y la otra discontinuamente hacia afuera."
@@ -182,9 +182,9 @@
       "pregunta": "Durante la fase de elongación de la traducción proteica, la enzima encargada de catalizar la formación del enlace peptídico es la:",
       "opciones": [
         "Peptidil transferasa (actividad ribozímica de la subunidad mayor del ribosoma).",
-        "Aminoacil-ARNt sintetasa.",
-        "ARN polimerasa II.",
-        "ADN ligasa."
+        "Peptidil transferasa, actividad catalítica del ARN ribosómico de la subunidad mayor.",
+        "Aminoacil-ARNt sintetasa, que une cada aminoácido con su ARNt específico antes de la traducción.",
+        "Factor de elongación EF-Tu/eEF1A, que entrega el aminoacil-ARNt al sitio A utilizando GTP."
       ],
       "correcta": "A",
       "explicacion": "La peptidil transferasa es la actividad catalítica exercida por el ARNr de la subunidad mayor que transfiere el grupo carboxilo del péptido al grupo amino del nuevo aminoácido."
@@ -215,9 +215,9 @@
       "pregunta": "La eucromatina se diferencia de la heterocromatina en que estructuralmente presenta:",
       "opciones": [
         "un menor grado de empaquetamiento y condensación, siendo transcripcionalmente activa.",
-        "una máxima condensación visible en metafase.",
-        "secuencias genómicas completamente inactivas.",
-        "ausencia de proteínas histónicas."
+        "un empaquetamiento menos compacto que facilita el acceso de la maquinaria de transcripción.",
+        "una asociación más intensa con histonas que impide de manera estable la transcripción de sus genes.",
+        "una composición carente de histonas que permite la replicación sin participación de proteínas."
       ],
       "correcta": "A",
       "explicacion": "La eucromatina es la forma laxa de la cromatina durante la interfase que permite el acceso de la maquinaria de transcripción a los genes."
