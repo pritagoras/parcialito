@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-08T19:38:00Z",
+  "generado": "2026-11-08T19:41:00Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -170,7 +170,7 @@
           "id": "biologia-celular2/06-comunicacion-celular",
           "nombre": "Comunicación Celular",
           "archivo": "data/biologia-celular2/06-comunicacion-celular.json",
-          "preguntas": 73
+          "preguntas": 77
         },
         {
           "id": "biologia-celular2/07-duplicacion-del-adn",
