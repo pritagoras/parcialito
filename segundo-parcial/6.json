@@ -11,7 +11,7 @@
         "todas las proteínas de la célula quedarán truncadas de forma irreversible."
       ],
       "correcta": "C",
-      "explicacion": "Los errores de transcripción cometiendo fallos de copia en la ARN polimerasa no alteran la secuencia del ADN genómico, por lo que el molde permanece indemne para futuras transcripciones."
+      "explicacion": "Un error de incorporación durante la transcripción puede generar un ARNm con un codón de terminación prematuro, pero no modifica la secuencia del ADN genómico. Por eso, transcripciones posteriores pueden producir ARNm sin ese error."
     },
     {
       "pregunta": "El factor promotor de la fase S (FPS) cumple un rol regulador esencial al estimular directamente:",
