@@ -219,8 +219,8 @@
         "todos los varones serán de grupo O.",
         "todas las hijas serán del grupo sanguíneo materno."
       ],
-      "correcta": "C",
-      "explicacion": "La cruza entre ii y I A I B produce genotipos heterocigotas I A i (grupo A) y I B i (grupo B) en proporciones del 50%, imposibilitando el fenotipo O."
+      "correcta": "B",
+      "explicacion": "En el cruce ii × IᴬIᴮ, la madre solo aporta i y el padre aporta Iᴬ o Iᴮ. La descendencia será 50% Iᴬi (grupo A) y 50% Iᴮi (grupo B), independientemente del sexo; no se esperan hijos de grupo O ni AB."
     },
     {
       "pregunta": "En las enfermedades con patrón de herencia recesivo ligado al cromosoma X, el gen mutado se ubica en:",
