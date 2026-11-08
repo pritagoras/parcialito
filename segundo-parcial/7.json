@@ -368,9 +368,9 @@
     {
       "pregunta": "Si en un fragmento de la secuencia codificante de un gen se produce la inserción de tres nucleótidos (un codón completo), la consecuencia será:",
       "opciones": [
-        "la incorporación de un aminoácido adicional sin modificar el marco de lectura de los codones posteriores.",
+        "la pérdida de un nucleótido y el corrimiento del marco de lectura desde el sitio de la mutación.",
         "la adición de un aminoácido a la proteína conservando el marco de lectura posterior.",
-        "la sustitución de un aminoácido por otro y el cambio del marco de lectura desde ese punto.",
+        "la sustitución de un aminoácido por otro sin modificar el marco de lectura.",
         "la terminación prematura de la traducción si el triplete insertado corresponde a un codón stop."
       ],
       "correcta": "B",
