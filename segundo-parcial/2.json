@@ -115,10 +115,10 @@
     {
       "pregunta": "El proceso morfogenético mediante el cual una espermátida se transforma en un espermatozoide funcional se denomina:",
       "opciones": [
-        "mitosis.",
-        "meiosis I.",
+        "espermiogénesis.",
+        "espermatocitogénesis.",
         "diferenciación celular.",
-        "meiosis II."
+        "capacitación espermática."
       ],
       "correcta": "C",
       "explicacion": "La espermiogénesis es una fase de diferenciación estructural sin divisiones celulares que convierte la espermátida en espermatozoide."
