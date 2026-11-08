@@ -500,9 +500,9 @@
     {
       "pregunta": "Para la síntesis de una proteína eucariota madura formada por 200 aminoácidos, el transcripto primario (pre-ARNm) debió contener:",
       "opciones": [
-        "exactamente 600 nucleótidos, correspondientes a los codones que especifican los aminoácidos.",
+        "exactamente 600 nucleótidos, porque el pre-ARNm no contiene regiones no traducidas.",
         "menos de 600 nucleótidos, porque los intrones se incorporan después de la transcripción.",
-        "más de 600 nucleótidos, ya que el pre-ARNm puede incluir intrones y regiones no traducidas.",
+        "exactamente 600 nucleótidos, ya que los intrones se eliminan antes de que ocurra la transcripción.",
         "más de 600 nucleótidos al incluir intrones y secuencias no traducidas."
       ],
       "correcta": "D",
