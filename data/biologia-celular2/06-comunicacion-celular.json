@@ -434,9 +434,9 @@
     {
       "pregunta": "La despolarización inicial de la membrana neuronal desencadena un potencial de acción completo cuando:",
       "opciones": [
-        "Se abren los receptores intracelulares de hormonas esteroideas",
-        "La bomba Na⁺/K⁺ deja de consumir ATP",
-        "El calcio se une a la calmodulina",
+        "La unión de hormonas esteroideas a receptores nucleares activa la despolarización de la membrana.",
+        "La bomba Na⁺/K⁺ deja de consumir ATP y permite que el potencial de membrana alcance el umbral.",
+        "El calcio se une a la calmodulina y abre directamente los canales de sodio dependientes de voltaje.",
         "La membrana alcanza el umbral necesario para activar suficientes canales de Na⁺ dependientes de voltaje"
       ],
       "correcta": "D",
@@ -588,9 +588,9 @@
     {
       "pregunta": "¿Qué ocurre cuando el Ca²⁺ citosólico se une a la calmodulina?",
       "opciones": [
-        "La calmodulina degrada PIP₂",
-        "La calmodulina reemplaza a la subunidad alfa de Gq",
-        "Se convierte en una bomba que expulsa sodio",
+        "La calmodulina hidroliza PIP₂ y genera directamente IP₃ y DAG en la membrana.",
+        "La calmodulina reemplaza a la subunidad alfa de Gq y se une al receptor de membrana.",
+        "La calmodulina se transforma en una bomba que expulsa sodio mediante consumo de ATP.",
         "La calmodulina cambia de conformación y puede regular otras proteínas dependientes de calcio"
       ],
       "correcta": "D",
@@ -610,10 +610,10 @@
     {
       "pregunta": "¿Cuál de las siguientes opciones identifica correctamente a un segundo mensajero?",
       "opciones": [
-        "La hormona extracelular que todavía no se unió al receptor",
-        "La proteína receptora que reconoce al ligando",
+        "La hormona extracelular que circula por la sangre antes de unirse a su receptor específico.",
+        "La proteína receptora de membrana que reconoce al ligando y transmite la señal al interior.",
         "Una molécula o ion intracelular cuya concentración o actividad cambia y transmite la señal",
-        "El gen que codifica al receptor de membrana"
+        "El gen nuclear que contiene la información para sintetizar el receptor de membrana."
       ],
       "correcta": "C",
       "explicacion": "Un segundo mensajero es una molécula o ion intracelular que cambia como consecuencia de la activación del receptor y transmite la información a otras proteínas. Entre los ejemplos del tema están AMPc, Ca²⁺, IP₃ y DAG."
@@ -643,9 +643,9 @@
     {
       "pregunta": "¿Qué afirmación sobre la fosforilación de proteínas es correcta?",
       "opciones": [
-        "Siempre activa cualquier proteína que recibe un fosfato",
-        "Solo puede ocurrir en proteínas de membrana",
-        "Es irreversible una vez que actúa una quinasa",
+        "La fosforilación siempre activa cualquier proteína, independientemente del aminoácido modificado.",
+        "La fosforilación solo puede ocurrir en proteínas integrales de la membrana plasmática.",
+        "La fosforilación es irreversible una vez que una quinasa incorpora el grupo fosfato.",
         "Puede activar o inhibir la proteína diana, según cuál sea el sustrato y el contexto"
       ],
       "correcta": "D",
@@ -720,9 +720,9 @@
     {
       "pregunta": "¿Qué diferencia funcional existe entre un canal iónico y la Na⁺/K⁺-ATPasa?",
       "opciones": [
-        "Ambos bombean iones contra gradiente y consumen ATP en cada paso",
-        "El canal sintetiza ATP y la bomba permite difusión simple",
-        "El canal transporta proteínas grandes y la bomba transporta neurotransmisores",
+        "Ambos bombean iones contra gradiente y consumen ATP en cada ciclo de transporte.",
+        "El canal sintetiza ATP y la bomba permite difusión simple a favor del gradiente.",
+        "El canal transporta proteínas grandes y la bomba libera neurotransmisores a la hendidura.",
         "El canal permite flujo pasivo según el gradiente electroquímico; la bomba utiliza ATP para mover iones contra sus gradientes"
       ],
       "correcta": "D",
@@ -753,10 +753,10 @@
     {
       "pregunta": "¿Qué diferencia a un receptor metabotrópico de uno ionotrópico en la membrana postsináptica?",
       "opciones": [
-        "El metabotrópico siempre es intracelular y el ionotrópico siempre es nuclear",
+        "El metabotrópico siempre es intracelular y el ionotrópico siempre se localiza en el núcleo celular.",
         "El ionotrópico regula directamente un canal; el metabotrópico activa vías intracelulares, frecuentemente mediadas por proteína G",
-        "El ionotrópico produce hormonas y el metabotrópico libera neurotransmisores",
-        "Ambos son canales que se abren directamente por el ligando"
+        "El ionotrópico produce hormonas y el metabotrópico libera neurotransmisores hacia la hendidura sináptica.",
+        "Ambos son canales que se abren directamente por el ligando y no activan señalización intracelular."
       ],
       "correcta": "B",
       "explicacion": "Los receptores ionotrópicos son canales regulados por ligando. Los metabotrópicos activan proteínas G u otras vías intracelulares que pueden regular canales, enzimas y segundos mensajeros."
@@ -776,9 +776,9 @@
       "pregunta": "¿Por qué se considera que el páncreas es una glándula mixta?",
       "opciones": [
         "Porque sus islotes liberan insulina y glucagón a la sangre y sus células acinares secretan enzimas digestivas por conductos",
-        "Porque libera todas sus secreciones al torrente sanguíneo",
-        "Porque produce hormonas esteroideas y neurotransmisores en el mismo tejido",
-        "Porque sus secreciones exocrinas se convierten en hormonas al llegar al duodeno"
+        "Porque todas sus secreciones, tanto hormonales como enzimáticas, se liberan directamente al torrente sanguíneo.",
+        "Porque produce hormonas esteroideas y neurotransmisores en las mismas células endocrinas.",
+        "Porque sus secreciones exocrinas se transforman en hormonas al llegar al duodeno."
       ],
       "correcta": "A",
       "explicacion": "El componente endocrino de los islotes pancreáticos libera hormonas como insulina y glucagón a la sangre. El componente exocrino de las células acinares vierte enzimas digestivas por conductos hacia el duodeno."
