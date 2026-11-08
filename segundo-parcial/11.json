@@ -71,7 +71,7 @@
     {
       "pregunta": "La presencia de intrones en la estructura de los genes eucariontes permite que, mediante el mecanismo de splicing alternativo:",
       "opciones": [
-        "se obtengan diferentes ARNm maduros al incluir o excluir combinaciones específicas de exones del mismo pre-ARNm.",
+        "se obtengan diferentes ARNm maduros al combinar intrones y traducirlos directamente.",
         "se pueda obtener más de un tipo de ARNm maduro y sintetizar diferentes proteínas a partir de una única secuencia génica.",
         "se produzcan ARNm policistrónicos con varios genes completos en una misma molécula.",
         "se eliminen todos los exones y se conserven los intrones para su traducción en el citoplasma."
@@ -170,13 +170,13 @@
     {
       "pregunta": "La remoción de la capuchón (Cap 5') en el extremo 5' de un ARN mensajero eucarionte maduro provoca directamente:",
       "opciones": [
-        "la imposibilidad de formar el complejo de iniciación para la traducción.",
+        "una marcada disminución de la iniciación de la traducción dependiente del cap 5'.",
         "la terminación prematura de la replicación del ADN.",
         "la adición automática de un nuevo intrón.",
         "la conversión del ARNm en un ARN policistrónico."
       ],
       "correcta": "A",
-      "explicacion": "El Cap 5' es la estructura reconocida por los factores eIF4E/eIF4F para reclutar la subunidad menor del ribosoma e iniciar la traducción."
+      "explicacion": "El cap 5' es reconocido por factores de iniciación como eIF4E, que participa en el reclutamiento del ribosoma. Su eliminación reduce marcadamente la iniciación de la traducción dependiente del cap, aunque existen mecanismos de iniciación independientes del cap para ciertos ARNm."
     },
     {
       "pregunta": "Durante la fase de elongación de la traducción proteica, la enzima encargada de catalizar la formación del enlace peptídico es la:",
