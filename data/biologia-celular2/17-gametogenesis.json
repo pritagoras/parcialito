@@ -500,10 +500,10 @@
     {
       "pregunta": "¿Qué comparación temporal entre la espermatogénesis y la ovogénesis es correcta?",
       "opciones": [
-        "Ambas líneas germinales comienzan la meiosis recién después de la pubertad y continúan sin detenciones.",
-        "La ovogénesis comienza después de la fecundación y la espermatogénesis durante la vida fetal.",
+        "La meiosis masculina comienza en la vida fetal y queda detenida en profase I; la femenina comienza en la pubertad y continúa.",
+        "La ovogénesis comienza después de la fecundación, mientras la espermatogénesis se inicia durante la vida fetal.",
         "La meiosis masculina comienza normalmente en la pubertad y continúa; la femenina se inicia durante la vida fetal y queda detenida en profase I hasta su reanudación en la vida reproductiva.",
-        "La meiosis femenina termina antes del nacimiento, mientras que la masculina queda detenida en profase I."
+        "La meiosis femenina finaliza antes del nacimiento, mientras que la masculina queda detenida en profase I durante toda la vida."
       ],
       "correcta": "C",
       "explicacion": "En la línea masculina, la meiosis comienza a partir de la pubertad y la producción puede mantenerse. En la femenina, los ovocitos inician meiosis durante la vida fetal, quedan detenidos en profase I y algunos reanudan su desarrollo después de la pubertad."
