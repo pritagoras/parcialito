@@ -193,9 +193,9 @@
       "pregunta": "El conejo es un organismo mamífero diploide con 2n = 44. Por tanto, una cigota de conejo tiene:",
       "opciones": [
         "42 cromosomas somáticos (autosomas) + un par de cromosomas sexuales.",
-        "22 cromosomas totales en su núcleo.",
-        "44 pares de cromosomas autosómicos.",
-        "44 autosomas no sexuales."
+        "22 pares de cromosomas homólogos, incluidos los cromosomas sexuales.",
+        "44 cromosomas autosómicos y ningún cromosoma sexual.",
+        "22 cromosomas en total, uno de cada par homólogo."
       ],
       "correcta": "A",
       "explicacion": "En un organismo diploide de 44 cromosomas, el genoma se organiza en 21 pares de autosomas (42 en total) y un par de cromosomas sexuales que determinan el sexo."
