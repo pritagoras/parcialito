@@ -302,10 +302,10 @@
     {
       "pregunta": "Los codones CGU y CGC traducen ambos el aminoácido arginina. Esta característica demuestra que el código genético es:",
       "opciones": [
-        "Universal.",
-        "Ambiguo.",
+        "Universal, porque los mismos codones suelen especificar los mismos aminoácidos en distintos organismos.",
+        "Ambiguo, porque un mismo codón puede incorporar aminoácidos diferentes según el contexto.",
         "Degenerado o redundante.",
-        "Incompleto."
+        "Degenerado, porque distintos codones pueden especificar un mismo aminoácido."
       ],
       "correcta": "C",
       "explicacion": "La degeneración del código genético consiste en la existencia de múltiples codones sinónimos que especifican un mismo aminoácido."
@@ -324,10 +324,10 @@
     {
       "pregunta": "En la especie humana, una espermátide haploide resultante de la meiosis contiene en su núcleo:",
       "opciones": [
-        "2 cromosomas sexuales.",
+        "23 cromosomas duplicados, cada uno con dos cromátides hermanas.",
         "22 autosomas y 1 cromosoma sexual (X o Y).",
-        "23 pares de autosomas.",
-        "ningún cromosoma sexual."
+        "22 autosomas y dos cromosomas sexuales en cada gameta.",
+        "22 autosomas y un cromosoma sexual, X o Y, cada uno con una cromátide."
       ],
       "correcta": "B",
       "explicacion": "Las espermátides son células haploides (n = 23) compuestas por 22 autosomas simples y un único cromosoma sexual (X o Y)."
