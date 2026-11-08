@@ -804,6 +804,50 @@
       ],
       "correcta": "B",
       "explicacion": "La cocaína inhibe transportadores de recaptación de monoaminas y prolonga su disponibilidad extracelular. Los anestésicos locales bloquean principalmente canales de Na⁺ dependientes de voltaje y dificultan la propagación del potencial de acción."
+    },
+    {
+      "pregunta": "¿Qué función cumple el glucocálix en la comunicación y el reconocimiento celular?",
+      "opciones": [
+        "Constituye el canal que conecta directamente dos citoplasmas",
+        "Es una cubierta rica en carbohidratos asociada a glucoproteínas y glucolípidos que participa en protección e identificación celular",
+        "Hidroliza PIP₂ para producir IP₃ y DAG",
+        "Actúa como bomba que intercambia Na⁺ por K⁺"
+      ],
+      "correcta": "B",
+      "explicacion": "El glucocálix se ubica en la cara extracelular de la membrana y contiene cadenas de carbohidratos asociadas a glucoproteínas y glucolípidos. Participa en protección, interacción con el entorno y reconocimiento celular."
+    },
+    {
+      "pregunta": "Una misma hormona circula por la sangre, pero produce respuestas diferentes en dos tejidos. ¿Cuál es la explicación más adecuada?",
+      "opciones": [
+        "Todos los tejidos poseen receptores idénticos y responden de manera universal",
+        "La hormona cambia su estructura química al atravesar cada tejido",
+        "La respuesta depende de los receptores y de la maquinaria intracelular que expresa cada tipo celular",
+        "La hormona solo puede actuar sobre el tejido que la sintetizó"
+      ],
+      "correcta": "C",
+      "explicacion": "La especificidad depende del reconocimiento ligando-receptor y de las vías disponibles en cada célula. Por eso, una misma señal puede provocar respuestas distintas o no generar respuesta en células que carecen del receptor adecuado."
+    },
+    {
+      "pregunta": "¿Qué significa que la unión entre un ligando y su receptor sea reversible?",
+      "opciones": [
+        "Que el ligando y el receptor pueden disociarse y el receptor quedar disponible nuevamente",
+        "Que el receptor se destruye cada vez que reconoce un ligando",
+        "Que el ligando atraviesa siempre la membrana y se convierte en segundo mensajero",
+        "Que la unión solo puede ocurrir una vez durante la vida de la célula"
+      ],
+      "correcta": "A",
+      "explicacion": "La reversibilidad indica que muchos complejos ligando-receptor pueden disociarse. Esto contribuye a limitar la señal y permite que el receptor vuelva a estar disponible."
+    },
+    {
+      "pregunta": "¿Qué distingue a un receptor de membrana con actividad tirosina-quinasa de un receptor acoplado a proteína G?",
+      "opciones": [
+        "El receptor tirosina-quinasa es siempre un canal para Na⁺",
+        "El receptor acoplado a proteína G fosforila directamente tirosinas con su propio dominio enzimático",
+        "Ambos son receptores intracelulares que regulan directamente el ADN",
+        "El receptor tirosina-quinasa activa un dominio enzimático propio o proteínas asociadas; el GPCR regula una proteína G transductora"
+      ],
+      "correcta": "D",
+      "explicacion": "Los receptores con actividad enzimática, como los receptores tirosina-quinasa, activan dominios enzimáticos propios o proteínas asociadas. Los GPCR, en cambio, transmiten la señal mediante proteínas G heterotriméricas."
     }
   ]
 }
