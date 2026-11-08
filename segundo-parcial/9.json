@@ -259,9 +259,9 @@
       "pregunta": "Un cruzamiento de prueba o retrocruza se define en genética experimental como el apareamiento entre:",
       "opciones": [
         "un individuo de fenotipo dominante y genotipo desconocido con un individuo de fenotipo recesivo (homocigota recesivo).",
-        "dos individuos heterocigotas de la generación F1.",
-        "un individuo homocigota dominante con otro homocigota dominante.",
-        "dos individuos de fenotipo recesivo."
+        "un individuo con fenotipo dominante y genotipo no determinado, cruzado con un homocigota recesivo para los loci estudiados.",
+        "dos individuos heterocigotas para los genes que se desean analizar.",
+        "un individuo homocigota dominante cruzado con otro homocigota recesivo para confirmar la dominancia."
       ],
       "correcta": "A",
       "explicacion": "El cruzamiento de prueba revela si un organismo con fenotipo dominante es homocigota o heterocigota al cruzarlo con un recesivo."
@@ -425,9 +425,9 @@
       "pregunta": "En las células de mamíferos, el nucléolo es la estructura subnuclear especializada en:",
       "opciones": [
         "la transcripción del ARNr precursor y el ensamblaje de las subunidades ribosómicas.",
-        "la síntesis de proteínas histonas.",
-        "la duplicación semiconservativa del ADN.",
-        "el empaquetamiento del ADN en solesnoides."
+        "la transcripción y el procesamiento de ARNr, junto con el ensamblaje inicial de las subunidades ribosómicas.",
+        "la replicación de los cromosomas y la separación de las cromátides hermanas.",
+        "la síntesis de proteínas ribosómicas a partir de ARNm dentro del núcleo."
       ],
       "correcta": "A",
       "explicacion": "El nucléolo se organiza alrededor de las regiones NOR para transcribir el ARNr 45S, procesarlo y ensamblarlo con las proteínas ribosómicas."
@@ -479,10 +479,10 @@
     {
       "pregunta": "En las células germinales masculinas, un espermatocito II se caracteriza por ser una célula:",
       "opciones": [
-        "diploide con cromosomas simples.",
+        "haploide, con un cromosoma de cada par homólogo y dos cromátides por cromosoma.",
         "haploide (n) con sus cromosomas formados por dos cromátides hermanas.",
-        "diploide (2n) con cromosomas duplicados.",
-        "haploide (n) con cromosomas simples."
+        "diploide, con ambos cromosomas homólogos todavía apareados.",
+        "haploide, con cromosomas de una sola cromátide después de la meiosis II."
       ],
       "correcta": "B",
       "explicacion": "El espermatocito II surge de la primera división reduccional de la meiosis, por lo que es haploide (n) pero conserva sus cromosomas dobles."
