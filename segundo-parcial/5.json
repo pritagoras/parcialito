@@ -470,7 +470,7 @@
         "secuencias reguladoras del ADN que pueden aumentar o disminuir la transcripción.",
         "proteínas regulatorias con afinidad por regiones potenciadoras o silenciadoras del ADN.",
         "proteínas que reconocen regiones potenciadoras o silenciadoras y modulan la expresión génica.",
-        "proteínas que forman parte del espliceosoma y participan en la eliminación de intrones."
+        "proteínas que modifican la estructura de la cromatina mediante la acetilación de histonas."
       ],
       "correcta": "B",
       "explicacion": "Son proteínas que reconocen elementos cis-reguladores en el ADN para aumentar o reprimir la tasa de transcripción de genes específicos."
