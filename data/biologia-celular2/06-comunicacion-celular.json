@@ -599,10 +599,10 @@
     {
       "pregunta": "¿Cuál es el orden correcto de los principales acontecimientos de la vía Gq?",
       "opciones": [
-        "Ligando → GPCR → Gαq-GTP → adenilato ciclasa → AMPc → PKA",
+        "Ligando → GPCR → Gαq-GTP → adenilato ciclasa → AMPc → activación de PKA y sus sustratos",
         "Ligando → GPCR → Gαq-GTP → PLCβ → PIP₂ escindido en IP₃ y DAG → liberación de Ca²⁺ y activación de efectores",
-        "Ligando → receptor tirosina quinasa → Ras → MAPK → respuesta nuclear",
-        "Ligando → GPCR → Gαs-GTP → PLCβ → IP₃ y DAG → activación de PKA"
+        "Ligando → receptor tirosina quinasa → Ras-GTP → cascada MAPK → regulación de la expresión génica",
+        "Ligando → GPCR → Gαs-GTP → PLCβ → IP₃ y DAG → activación de PKA y liberación de calcio"
       ],
       "correcta": "B",
       "explicacion": "La secuencia comienza con el ligando y el receptor acoplado a Gq. Gαq activa PLCβ; esta hidroliza PIP₂ y produce IP₃ y DAG. IP₃ promueve la liberación de Ca²⁺, mientras DAG y Ca²⁺ favorecen la activación de PKC; el calcio también regula proteínas mediante calmodulina."
