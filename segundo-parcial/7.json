@@ -3,17 +3,6 @@
   "tema": "Parciales de Biología (Integrador)",
   "preguntas": [
     {
-      "pregunta": "Desde la perspectiva de la teoría sintética de la evolución, el cuello largo de las jirafas se explica por:",
-      "opciones": [
-        "la necesidad individual de alcanzar las hojas más altas de los árboles.",
-        "el estiramiento continuo de las vértebras cervicales transmitido a la progenie.",
-        "la supervivencia y reproducción diferencial de individuos con cuellos más largos producto de mutaciones azarosas previas.",
-        "la invariabilidad de las especies desde su origen primigenio."
-      ],
-      "correcta": "C",
-      "explicacion": "La selección natural actúa sobre variaciones genéticas heredables preexistentes en la población, favoreciendo a los individuos con mayor adecuación biológica frente al entorno."
-    },
-    {
       "pregunta": "Salvo en el caso de los gemelos monocigóticos, no existen dos seres humanos idénticos. Esta enorme diversidad genética individual se debe principalmente a:",
       "opciones": [
         "la alta tasa de mutaciones que ocurren durante la segmentación del cigoto.",
@@ -23,17 +12,6 @@
       ],
       "correcta": "B",
       "explicacion": "La reproducción sexual genera variabilidad genética única mediante el entrecruzamiento en profase I, la distribución independiente de homólogos en anafase I y la fecundación al azar."
-    },
-    {
-      "pregunta": "¿Cuál de los siguientes conceptos constituye un pilar fundamental en la teoría de la evolución por selección natural planteada por Darwin?",
-      "opciones": [
-        "El uso y desuso de los órganos como motor de cambio.",
-        "La tendencia interna teleológica hacia la perfección.",
-        "La existencia de un antepasado común para especies emparentadas.",
-        "La modificación deliberada del genoma ante la necesidad de sobrevivir."
-      ],
-      "correcta": "C",
-      "explicacion": "El concepto de descendencia con modificación a partir de un ancestro común representa una idea central de la teoría evolutiva darwiniana."
     },
     {
       "pregunta": "El proceso morfogenético responsable directa de la eliminación del tejido interdigital durante el desarrollo embrionario de los miembros en mamíferos es la:",

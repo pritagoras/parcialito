@@ -300,50 +300,6 @@
       "explicacion": "Las plantas superiores organizan sus husos acromáticos anastrales desde centros organizadores de microtúbulos desprovistos de centríolos."
     },
     {
-      "pregunta": "El mecanismo de selección natural expuesto por Darwin en la teoría de la evolución se basa en:",
-      "opciones": [
-        "la fuerza vital adaptativa presente en los tejidos.",
-        "la tendencia celular interna hacia el perfeccionamiento.",
-        "la reproducción y supervivencia diferencial de los individuos mejor adaptados al entorno.",
-        "la transmisión hereditaria del uso y desuso muscular."
-      ],
-      "correcta": "C",
-      "explicacion": "La selección natural favorece la reproducción de variantes con rasgos heredables que confieren mayor adecuación biológica o fitness."
-    },
-    {
-      "pregunta": "La Teoría Neutralista de la evolución molecular sostiene fundamentalmente que:",
-      "opciones": [
-        "solo se conservan aquellas mutaciones con un alto valor adaptativo.",
-        "la mayoría de los cambios a nivel molecular corresponden a alelos neutros fijados por deriva génica.",
-        "las mutaciones ocurren exclusivamente en secuencias reguladoras.",
-        "todas las mutaciones son perjudiciales para el organismo."
-      ],
-      "correcta": "B",
-      "explicacion": "Según Motoo Kimura, la mayoría de las mutaciones a nivel molecular no son ventajosas ni perjudiciales, fijándose por deriva azarosa."
-    },
-    {
-      "pregunta": "La Teoría Sintética de la evolución o Neodarwinismo sostiene que:",
-      "opciones": [
-        "las mutaciones con valor adaptativo son preservadas por la selección natural aumentando su frecuencia.",
-        "las frecuencias génicas varían sin relación con la presión ambiental.",
-        "los caracteres adquiridos en vida se transmiten a la descendencia.",
-        "los saltos macroevolutivos no dependen de pequeñas mutaciones."
-      ],
-      "correcta": "A",
-      "explicacion": "La teoría sintética fundamenta el cambio evolutivo en la selección natural actuando sobre mutaciones génicas dentro de las poblaciones."
-    },
-    {
-      "pregunta": "El concepto de \"reloj molecular\" utilizado en la biología evolutiva se basa en que:",
-      "opciones": [
-        "la tasa constante de mutaciones en secuencias permite estimar el tiempo de divergencia entre especies.",
-        "las mutaciones nucleotídicas no suceden al azar en la población.",
-        "las secuencias de ARN no acumulan sustituciones evolutivas.",
-        "las tasas de cambio varían erráticamente imposibilitando su datación."
-      ],
-      "correcta": "A",
-      "explicacion": "Suponiendo una acumulación constante de mutaciones neutras a lo largo del tiempo, la cantidad de diferencias permite calibrar la divergencia entre especies."
-    },
-    {
       "pregunta": "Un operón bacteriano se define como un conjunto de genes que:",
       "opciones": [
         "se transcriben juntos bajo el control de un único promotor participando en una misma vía metabólica.",

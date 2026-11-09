@@ -1,0 +1,307 @@
+{
+  "materia": "Biología · Segundo Parcial",
+  "tema": "Teoría de la vida y evolución — preguntas apartadas para revisión",
+  "descripcion": "Banco separado para auditar. Se conservan las preguntas originales y su ubicación; no forman parte del pool activo.",
+  "preguntas": [
+    {
+      "pregunta": "La teoría de la evolución biológica aceptada actualmente permite afirmar que:",
+      "opciones": [
+        "la evolución ocurre por la necesidad individual de los organismos para sobrevivir.",
+        "uno de los mecanismos que produce cambios evolutivos es la deriva génica.",
+        "todas las mutaciones generan alelos con ventajas adaptativas inmediatas.",
+        "la evolución ocurre por mutaciones acumuladas únicamente en células somáticas."
+      ],
+      "correcta": "B",
+      "explicacion": "La deriva génica es un mecanismo evolutivo estocástico que cambia las frecuencias alélicas de las poblaciones debido al azar, independiente de la selección natural.",
+      "_revision": {
+        "archivo": "segundo-parcial/1.json",
+        "preguntaOriginal": 27
+      }
+    },
+    {
+      "pregunta": "Al aplicar un insecticida la población de plagas disminuye pero luego resurge siendo resistente. Según la teoría sintética de la evolución, esto ocurre porque:",
+      "opciones": [
+        "el insecticida induce mutaciones adaptativas en el organismo.",
+        "las plagas adquieren resistencia por el uso repetido del compuesto.",
+        "las plagas desarrollan defensas inmunitarias contra el químico.",
+        "cambia la frecuencia del alelo de resistencia preexistente en la población."
+      ],
+      "correcta": "D",
+      "explicacion": "La aplicación del plaguicida selecciona favorablemente a los individuos que ya portaban alelos de resistencia, aumentando su frecuencia en las generaciones subsecuentes.",
+      "_revision": {
+        "archivo": "segundo-parcial/1.json",
+        "preguntaOriginal": 28
+      }
+    },
+    {
+      "pregunta": "El aumento progresivo del tamaño cerebral en el linaje humano a lo largo de la evolución se explica por:",
+      "opciones": [
+        "mutaciones generadas para adquirir intencionalmente mayor tecnología.",
+        "la necesidad biológica directa de adaptarse a climas fríos.",
+        "surgimiento de mutaciones azarosas en genes del desarrollo favorecidas por selección natural.",
+        "el uso continuado del órgano que provocó su hipertrofia heredable."
+      ],
+      "correcta": "C",
+      "explicacion": "Las mutaciones genéticas se producen de manera aleatoria y solo persisten e incrementan su presencia en la población si otorgan una ventaja reproductiva seleccionada por el entorno.",
+      "_revision": {
+        "archivo": "segundo-parcial/1.json",
+        "preguntaOriginal": 30
+      }
+    },
+    {
+      "pregunta": "La integración de la teoría de la selección natural de Darwin con las leyes de la genética mendeliana se conoce como:",
+      "opciones": [
+        "Teoría sintética de la evolución o Neodarwinismo.",
+        "Teoría del equilibrio puntuado.",
+        "Teoría neutralista de la evolución molecular.",
+        "Lamarckismo moderno."
+      ],
+      "correcta": "A",
+      "explicacion": "La teoría sintética combina los mecanismos de selección natural con la genética de poblaciones y la herencia mendeliana para explicar la evolución.",
+      "_revision": {
+        "archivo": "segundo-parcial/2.json",
+        "preguntaOriginal": 49
+      }
+    },
+    {
+      "pregunta": "La afirmación de que la selección natural es el principal motor del cambio adaptativo en las especies corresponde a:",
+      "opciones": [
+        "la teoría saltacionista.",
+        "la teoría neutralista.",
+        "la teoría de Darwin.",
+        "la teoría de Lamarck."
+      ],
+      "correcta": "C",
+      "explicacion": "Charles Darwin postuló la selección natural como el mecanismo por el cual las variantes heredables ventajosas se preservan en la población.",
+      "_revision": {
+        "archivo": "segundo-parcial/3.json",
+        "preguntaOriginal": 23
+      }
+    },
+    {
+      "pregunta": "La incorporación a una población de un alelo que ya estaba presente en otra población, pero ausente en la primera, puede explicarse por:",
+      "opciones": [
+        "la llegada e inmigración de individuos provenientes de otra población con distinta información genética.",
+        "la ocurrencia de crossing-over durante la meiosis.",
+        "el efecto directo de la selección natural sobre la supervivencia.",
+        "la separación de cromosomas durante la mitosis."
+      ],
+      "correcta": "A",
+      "explicacion": "El flujo génico ocurre cuando individuos o gametas migran entre poblaciones y se reproducen, introduciendo alelos que ya estaban presentes en la población de origen. La aparición de alelos nuevos en sentido evolutivo se debe, en última instancia, a mutaciones.",
+      "_revision": {
+        "archivo": "segundo-parcial/3.json",
+        "preguntaOriginal": 24
+      }
+    },
+    {
+      "pregunta": "El mecanismo de selección natural se fundamenta en:",
+      "opciones": [
+        "la transformación adaptativa individual frente a cambios del entorno.",
+        "la modificación directa del genoma celular inducida por el clima.",
+        "la alteración consciente de las tasas de mutación.",
+        "la supervivencia y reproducción diferencial de los individuos mejor adaptados."
+      ],
+      "correcta": "D",
+      "explicacion": "La selección natural opera diferenciando la supervivencia y el éxito reproductivo de los organismos en función de sus características heredables.",
+      "_revision": {
+        "archivo": "segundo-parcial/3.json",
+        "preguntaOriginal": 25
+      }
+    },
+    {
+      "pregunta": "El efecto del azar sobre la variación de las frecuencias alélicas en poblaciones de tamaño reducido se conoce como:",
+      "opciones": [
+        "presión de selección natural.",
+        "reproducción diferencial.",
+        "deriva génica.",
+        "panmixia."
+      ],
+      "correcta": "C",
+      "explicacion": "La deriva génica es la fluctuación aleatoria de las frecuencias génicas entre generaciones, cuyo impacto es especialmente acusado en poblaciones pequeñas.",
+      "_revision": {
+        "archivo": "segundo-parcial/3.json",
+        "preguntaOriginal": 44
+      }
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes factores constituye el origen primario de nuevas variantes génicas en una población?",
+      "opciones": [
+        "La recombinación genética durante la meiosis.",
+        "La selección natural que modifica las frecuencias alélicas.",
+        "Las mutaciones en la secuencia del ADN.",
+        "Las mutaciones que originan nuevos alelos en el material genético."
+      ],
+      "correcta": "C",
+      "explicacion": "Las mutaciones son la fuente primaria de variabilidad genética, ya que generan nuevos alelos sobre los cuales actúan las fuerzas evolutivas.",
+      "_revision": {
+        "archivo": "segundo-parcial/3.json",
+        "preguntaOriginal": 53
+      }
+    },
+    {
+      "pregunta": "El mecanismo de selección natural expuesto por Darwin en la teoría de la evolución se basa en:",
+      "opciones": [
+        "la fuerza vital adaptativa presente en los tejidos.",
+        "la tendencia celular interna hacia el perfeccionamiento.",
+        "la reproducción y supervivencia diferencial de los individuos mejor adaptados al entorno.",
+        "la transmisión hereditaria del uso y desuso muscular."
+      ],
+      "correcta": "C",
+      "explicacion": "La selección natural favorece la reproducción de variantes con rasgos heredables que confieren mayor adecuación biológica o fitness.",
+      "_revision": {
+        "archivo": "segundo-parcial/4.json",
+        "preguntaOriginal": 28
+      }
+    },
+    {
+      "pregunta": "La Teoría Neutralista de la evolución molecular sostiene fundamentalmente que:",
+      "opciones": [
+        "solo se conservan aquellas mutaciones con un alto valor adaptativo.",
+        "la mayoría de los cambios a nivel molecular corresponden a alelos neutros fijados por deriva génica.",
+        "las mutaciones ocurren exclusivamente en secuencias reguladoras.",
+        "todas las mutaciones son perjudiciales para el organismo."
+      ],
+      "correcta": "B",
+      "explicacion": "Según Motoo Kimura, la mayoría de las mutaciones a nivel molecular no son ventajosas ni perjudiciales, fijándose por deriva azarosa.",
+      "_revision": {
+        "archivo": "segundo-parcial/4.json",
+        "preguntaOriginal": 29
+      }
+    },
+    {
+      "pregunta": "La Teoría Sintética de la evolución o Neodarwinismo sostiene que:",
+      "opciones": [
+        "las mutaciones con valor adaptativo son preservadas por la selección natural aumentando su frecuencia.",
+        "las frecuencias génicas varían sin relación con la presión ambiental.",
+        "los caracteres adquiridos en vida se transmiten a la descendencia.",
+        "los saltos macroevolutivos no dependen de pequeñas mutaciones."
+      ],
+      "correcta": "A",
+      "explicacion": "La teoría sintética fundamenta el cambio evolutivo en la selección natural actuando sobre mutaciones génicas dentro de las poblaciones.",
+      "_revision": {
+        "archivo": "segundo-parcial/4.json",
+        "preguntaOriginal": 30
+      }
+    },
+    {
+      "pregunta": "El concepto de \"reloj molecular\" utilizado en la biología evolutiva se basa en que:",
+      "opciones": [
+        "la tasa constante de mutaciones en secuencias permite estimar el tiempo de divergencia entre especies.",
+        "las mutaciones nucleotídicas no suceden al azar en la población.",
+        "las secuencias de ARN no acumulan sustituciones evolutivas.",
+        "las tasas de cambio varían erráticamente imposibilitando su datación."
+      ],
+      "correcta": "A",
+      "explicacion": "Suponiendo una acumulación constante de mutaciones neutras a lo largo del tiempo, la cantidad de diferencias permite calibrar la divergencia entre especies.",
+      "_revision": {
+        "archivo": "segundo-parcial/4.json",
+        "preguntaOriginal": 31
+      }
+    },
+    {
+      "pregunta": "Según los postulados evolutivos de Lamarck, una característica o rasgo en un individuo surge:",
+      "opciones": [
+        "por mutaciones azarosas en el genoma.",
+        "por variaciones genéticas previa exposición al ambiente.",
+        "por modificaciones en la secuencia de nucleótidos de las gametas.",
+        "porque resulta de utilidad biológica para el organismo frente a una necesidad."
+      ],
+      "correcta": "D",
+      "explicacion": "Lamarck sostenía que las necesidades impuestas por el entorno inducían el uso o desuso de órganos, generando adaptaciones adquiridas con un fin utilitario.",
+      "_revision": {
+        "archivo": "segundo-parcial/5.json",
+        "preguntaOriginal": 11
+      }
+    },
+    {
+      "pregunta": "La afirmación de que la selección natural actúa como el motor principal del cambio adaptativo corresponde a la teoría de:",
+      "opciones": [
+        "la evolución por equilibrios puntuados.",
+        "la neutralidad evolutiva.",
+        "Charles Darwin.",
+        "Jean-Baptiste Lamarck."
+      ],
+      "correcta": "C",
+      "explicacion": "Darwin postuló que la reproducción diferencial de variantes heredables ventajosas (selección natural) es el mecanismo clave del proceso evolutivo.",
+      "_revision": {
+        "archivo": "segundo-parcial/5.json",
+        "preguntaOriginal": 12
+      }
+    },
+    {
+      "pregunta": "La incorporación de un alelo novedoso dentro del acervo génico de una población puede ser consecuencia de:",
+      "opciones": [
+        "la acción directa de la selección natural.",
+        "los eventos de entrecruzamiento durante la meiosis.",
+        "la acumulación de mutaciones somáticas no heredables.",
+        "el flujo génico por la inmigración de individuos genéticamente diferentes."
+      ],
+      "correcta": "D",
+      "explicacion": "El flujo génico ocasionado por la inmigración de organismos reproductivos puede introducir alelos alternativos en una población receptora.",
+      "_revision": {
+        "archivo": "segundo-parcial/5.json",
+        "preguntaOriginal": 16
+      }
+    },
+    {
+      "pregunta": "El mecanismo de selección natural en una población se basa fundamentalmente en la:",
+      "opciones": [
+        "supervivencia y reproducción diferencial de los individuos mejor adaptados.",
+        "capacidad de los organismos de mutar voluntariamente para adaptarse.",
+        "transformación progresiva del fenotipo de un individuo durante su vida.",
+        "modificación intencionada de la tasa de mutación."
+      ],
+      "correcta": "A",
+      "explicacion": "Aquellos individuos con rasgos heredables que otorgan mayor adecuación biológica dejan, en promedio, más descendencia, aumentando la frecuencia de sus alelos.",
+      "_revision": {
+        "archivo": "segundo-parcial/5.json",
+        "preguntaOriginal": 17
+      }
+    },
+    {
+      "pregunta": "Dentro del marco de la Teoría Sintética de la evolución, la unidad fundamental sobre la que opera el cambio evolutivo es:",
+      "opciones": [
+        "el individuo aislado.",
+        "la población.",
+        "la especie entera a escala global.",
+        "la comunidad ecológica."
+      ],
+      "correcta": "B",
+      "explicacion": "La evolución se define formalmente como el cambio en las frecuencias alélicas del acervo génico de una población a lo largo de las generaciones.",
+      "_revision": {
+        "archivo": "segundo-parcial/5.json",
+        "preguntaOriginal": 34
+      }
+    },
+    {
+      "pregunta": "Desde la perspectiva de la teoría sintética de la evolución, el cuello largo de las jirafas se explica por:",
+      "opciones": [
+        "la necesidad individual de alcanzar las hojas más altas de los árboles.",
+        "el estiramiento continuo de las vértebras cervicales transmitido a la progenie.",
+        "la supervivencia y reproducción diferencial de individuos con cuellos más largos producto de mutaciones azarosas previas.",
+        "la invariabilidad de las especies desde su origen primigenio."
+      ],
+      "correcta": "C",
+      "explicacion": "La selección natural actúa sobre variaciones genéticas heredables preexistentes en la población, favoreciendo a los individuos con mayor adecuación biológica frente al entorno.",
+      "_revision": {
+        "archivo": "segundo-parcial/7.json",
+        "preguntaOriginal": 1
+      }
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes conceptos constituye un pilar fundamental en la teoría de la evolución por selección natural planteada por Darwin?",
+      "opciones": [
+        "El uso y desuso de los órganos como motor de cambio.",
+        "La tendencia interna teleológica hacia la perfección.",
+        "La existencia de un antepasado común para especies emparentadas.",
+        "La modificación deliberada del genoma ante la necesidad de sobrevivir."
+      ],
+      "correcta": "C",
+      "explicacion": "El concepto de descendencia con modificación a partir de un ancestro común representa una idea central de la teoría evolutiva darwiniana.",
+      "_revision": {
+        "archivo": "segundo-parcial/7.json",
+        "preguntaOriginal": 3
+      }
+    }
+  ]
+}

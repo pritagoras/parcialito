@@ -289,28 +289,6 @@
       "explicacion": "El efecto de cuello de botella ocurre cuando un evento catastrófico reduce drásticamente el tamaño poblacional, alterando aleatoriamente las frecuencias génicas de los sobrevivientes."
     },
     {
-      "pregunta": "La teoría de la evolución biológica aceptada actualmente permite afirmar que:",
-      "opciones": [
-        "la evolución ocurre por la necesidad individual de los organismos para sobrevivir.",
-        "uno de los mecanismos que produce cambios evolutivos es la deriva génica.",
-        "todas las mutaciones generan alelos con ventajas adaptativas inmediatas.",
-        "la evolución ocurre por mutaciones acumuladas únicamente en células somáticas."
-      ],
-      "correcta": "B",
-      "explicacion": "La deriva génica es un mecanismo evolutivo estocástico que cambia las frecuencias alélicas de las poblaciones debido al azar, independiente de la selección natural."
-    },
-    {
-      "pregunta": "Al aplicar un insecticida la población de plagas disminuye pero luego resurge siendo resistente. Según la teoría sintética de la evolución, esto ocurre porque:",
-      "opciones": [
-        "el insecticida induce mutaciones adaptativas en el organismo.",
-        "las plagas adquieren resistencia por el uso repetido del compuesto.",
-        "las plagas desarrollan defensas inmunitarias contra el químico.",
-        "cambia la frecuencia del alelo de resistencia preexistente en la población."
-      ],
-      "correcta": "D",
-      "explicacion": "La aplicación del plaguicida selecciona favorablemente a los individuos que ya portaban alelos de resistencia, aumentando su frecuencia en las generaciones subsecuentes."
-    },
-    {
       "pregunta": "La comparación de los genomas de la levadura (eucarionte) y las bacterias (procariontes) muestra que solo la levadura posee genes que codifican:",
       "opciones": [
         "enzimas de vías metabólicas centrales.",
@@ -320,17 +298,6 @@
       ],
       "correcta": "D",
       "explicacion": "Dado que las bacterias carecen de orgánulos membranosos internos, sus genomas no codifican proteínas destinadas a estructuras compartimentalizadas como la mitocondria."
-    },
-    {
-      "pregunta": "El aumento progresivo del tamaño cerebral en el linaje humano a lo largo de la evolución se explica por:",
-      "opciones": [
-        "mutaciones generadas para adquirir intencionalmente mayor tecnología.",
-        "la necesidad biológica directa de adaptarse a climas fríos.",
-        "surgimiento de mutaciones azarosas en genes del desarrollo favorecidas por selección natural.",
-        "el uso continuado del órgano que provocó su hipertrofia heredable."
-      ],
-      "correcta": "C",
-      "explicacion": "Las mutaciones genéticas se producen de manera aleatoria y solo persisten e incrementan su presencia en la población si otorgan una ventaja reproductiva seleccionada por el entorno."
     },
     {
       "pregunta": "Si a un óvulo de coneja negra (NN) se le extrae el núcleo y se le trasplanta el de una célula somática de una coneja blanca (nn), el individuo clonado resultante será:",

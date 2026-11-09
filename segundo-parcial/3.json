@@ -245,39 +245,6 @@
       "explicacion": "Al cruzar el individuo dominante de genotipo desconocido con un homocigota recesivo, la presencia de descendientes recesivos revela su heterocigosis."
     },
     {
-      "pregunta": "La afirmación de que la selección natural es el principal motor del cambio adaptativo en las especies corresponde a:",
-      "opciones": [
-        "la teoría saltacionista.",
-        "la teoría neutralista.",
-        "la teoría de Darwin.",
-        "la teoría de Lamarck."
-      ],
-      "correcta": "C",
-      "explicacion": "Charles Darwin postuló la selección natural como el mecanismo por el cual las variantes heredables ventajosas se preservan en la población."
-    },
-    {
-      "pregunta": "La incorporación a una población de un alelo que ya estaba presente en otra población, pero ausente en la primera, puede explicarse por:",
-      "opciones": [
-        "la llegada e inmigración de individuos provenientes de otra población con distinta información genética.",
-        "la ocurrencia de crossing-over durante la meiosis.",
-        "el efecto directo de la selección natural sobre la supervivencia.",
-        "la separación de cromosomas durante la mitosis."
-      ],
-      "correcta": "A",
-      "explicacion": "El flujo génico ocurre cuando individuos o gametas migran entre poblaciones y se reproducen, introduciendo alelos que ya estaban presentes en la población de origen. La aparición de alelos nuevos en sentido evolutivo se debe, en última instancia, a mutaciones."
-    },
-    {
-      "pregunta": "El mecanismo de selección natural se fundamenta en:",
-      "opciones": [
-        "la transformación adaptativa individual frente a cambios del entorno.",
-        "la modificación directa del genoma celular inducida por el clima.",
-        "la alteración consciente de las tasas de mutación.",
-        "la supervivencia y reproducción diferencial de los individuos mejor adaptados."
-      ],
-      "correcta": "D",
-      "explicacion": "La selección natural opera diferenciando la supervivencia y el éxito reproductivo de los organismos en función de sus características heredables."
-    },
-    {
       "pregunta": "En la ultraestructura del nucléolo es posible distinguir:",
       "opciones": [
         "una matriz lipídica rodeada por heterocromatina.",
@@ -476,17 +443,6 @@
       "explicacion": "Al cruzar RW x WW, los genotipos obtenidos son 50% RW (fenotipo ruano) y 50% WW (fenotipo blanco)."
     },
     {
-      "pregunta": "El efecto del azar sobre la variación de las frecuencias alélicas en poblaciones de tamaño reducido se conoce como:",
-      "opciones": [
-        "presión de selección natural.",
-        "reproducción diferencial.",
-        "deriva génica.",
-        "panmixia."
-      ],
-      "correcta": "C",
-      "explicacion": "La deriva génica es la fluctuación aleatoria de las frecuencias génicas entre generaciones, cuyo impacto es especialmente acusado en poblaciones pequeñas."
-    },
-    {
       "pregunta": "Si se aplica un inhibidor farmacológico de la síntesis de proteínas durante la fase G2 del ciclo celular:",
       "opciones": [
         "se acelerará el inicio de la replicación.",
@@ -573,17 +529,6 @@
       ],
       "correcta": "C",
       "explicacion": "La aparición de un codón stop prematuro provoca la liberación anticipada de la cadena polipeptídica durante la traducción, acortando la proteína."
-    },
-    {
-      "pregunta": "¿Cuál de los siguientes factores constituye el origen primario de nuevas variantes génicas en una población?",
-      "opciones": [
-        "La recombinación genética durante la meiosis.",
-        "La selección natural que modifica las frecuencias alélicas.",
-        "Las mutaciones en la secuencia del ADN.",
-        "Las mutaciones que originan nuevos alelos en el material genético."
-      ],
-      "correcta": "C",
-      "explicacion": "Las mutaciones son la fuente primaria de variabilidad genética, ya que generan nuevos alelos sobre los cuales actúan las fuerzas evolutivas."
     },
     {
       "pregunta": "Las células somáticas humanas contienen 46 cromosomas. ¿Cuántos autosomas están presentes en el núcleo de una célula renal humana?",

@@ -113,28 +113,6 @@
       "explicacion": "Durante el paquitene de la profase I, las cromátidas no hermanas intercambian fragmentos equivalentes de ADN, recombinando los alelos maternos y paternos."
     },
     {
-      "pregunta": "Según los postulados evolutivos de Lamarck, una característica o rasgo en un individuo surge:",
-      "opciones": [
-        "por mutaciones azarosas en el genoma.",
-        "por variaciones genéticas previa exposición al ambiente.",
-        "por modificaciones en la secuencia de nucleótidos de las gametas.",
-        "porque resulta de utilidad biológica para el organismo frente a una necesidad."
-      ],
-      "correcta": "D",
-      "explicacion": "Lamarck sostenía que las necesidades impuestas por el entorno inducían el uso o desuso de órganos, generando adaptaciones adquiridas con un fin utilitario."
-    },
-    {
-      "pregunta": "La afirmación de que la selección natural actúa como el motor principal del cambio adaptativo corresponde a la teoría de:",
-      "opciones": [
-        "la evolución por equilibrios puntuados.",
-        "la neutralidad evolutiva.",
-        "Charles Darwin.",
-        "Jean-Baptiste Lamarck."
-      ],
-      "correcta": "C",
-      "explicacion": "Darwin postuló que la reproducción diferencial de variantes heredables ventajosas (selección natural) es el mecanismo clave del proceso evolutivo."
-    },
-    {
       "pregunta": "En los genes eucariontes que poseen intrones y exones, se verifica durante la transcripción que:",
       "opciones": [
         "los exones permanecen sin transcribirse.",
@@ -166,28 +144,6 @@
       ],
       "correcta": "B",
       "explicacion": "Durante la translocación, el ribosoma avanza exactamente tres nucleótidos (un codón) hacia el extremo 3' del ARNm, vaciando el sitio A."
-    },
-    {
-      "pregunta": "La incorporación de un alelo novedoso dentro del acervo génico de una población puede ser consecuencia de:",
-      "opciones": [
-        "la acción directa de la selección natural.",
-        "los eventos de entrecruzamiento durante la meiosis.",
-        "la acumulación de mutaciones somáticas no heredables.",
-        "el flujo génico por la inmigración de individuos genéticamente diferentes."
-      ],
-      "correcta": "D",
-      "explicacion": "El flujo génico ocasionado por la inmigración de organismos reproductivos puede introducir alelos alternativos en una población receptora."
-    },
-    {
-      "pregunta": "El mecanismo de selección natural en una población se basa fundamentalmente en la:",
-      "opciones": [
-        "supervivencia y reproducción diferencial de los individuos mejor adaptados.",
-        "capacidad de los organismos de mutar voluntariamente para adaptarse.",
-        "transformación progresiva del fenotipo de un individuo durante su vida.",
-        "modificación intencionada de la tasa de mutación."
-      ],
-      "correcta": "A",
-      "explicacion": "Aquellos individuos con rasgos heredables que otorgan mayor adecuación biológica dejan, en promedio, más descendencia, aumentando la frecuencia de sus alelos."
     },
     {
       "pregunta": "En la ultraestructura del nucléolo es posible identificar una organización formada por:",
@@ -364,17 +320,6 @@
       ],
       "correcta": "C",
       "explicacion": "El concepto biológico de especie (Mayr) establece que la capacidad de intercruzamiento y la viabilidad de la descendencia definen los límites de una especie."
-    },
-    {
-      "pregunta": "Dentro del marco de la Teoría Sintética de la evolución, la unidad fundamental sobre la que opera el cambio evolutivo es:",
-      "opciones": [
-        "el individuo aislado.",
-        "la población.",
-        "la especie entera a escala global.",
-        "la comunidad ecológica."
-      ],
-      "correcta": "B",
-      "explicacion": "La evolución se define formalmente como el cambio en las frecuencias alélicas del acervo génico de una población a lo largo de las generaciones."
     },
     {
       "pregunta": "Una diferencia fundamental entre la señalización endocrina y la señalización paracrina reside en que:",
