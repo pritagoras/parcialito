@@ -267,28 +267,6 @@
       "explicacion": "Para la característica de textura (Ll x Ll), la segregación monohíbrida da 1/4 LL, 2/2 Ll y 1/4 ll. Por ende, la probabilidad de semillas rugosas (ll) es del 25% (1/4)."
     },
     {
-      "pregunta": "En genética de poblaciones, la llegada o salida de individuos en etapa reproductiva entre distintas poblaciones que altera las frecuencias alélicas se conoce como:",
-      "opciones": [
-        "Flujo génico (migración).",
-        "Efecto fundador.",
-        "Cuello de botella.",
-        "Selección estabilizadora."
-      ],
-      "correcta": "A",
-      "explicacion": "El flujo génico ocurre por la inmigración o emigración de organismos reproductivos (o sus gametas), lo que introduce o elimina alelos de la población."
-    },
-    {
-      "pregunta": "Un evento de 'cuello de botella' poblacional se caracteriza genéticamente por provocar:",
-      "opciones": [
-        "una drástica y rápida reducción del tamaño poblacional y de la variabilidad genética por deriva génica.",
-        "un incremento repentino de las mutaciones adaptativas.",
-        "la eliminación de todos los alelos dominantes por selección natural.",
-        "la duplicación del cariotipo de la especie."
-      ],
-      "correcta": "A",
-      "explicacion": "Un cuello de botella ocurre cuando un evento catastrófico reduce severamente el número de individuos, disminuyendo drásticamente la diversidad genética por azar (deriva génica)."
-    },
-    {
       "pregunta": "El estudio evolutivo de la secuencia del ADN mitocondrial es de gran utilidad biológica en humanos debido a que:",
       "opciones": [
         "se transmite de forma predominantemente paterna y presenta una tasa de mutación prácticamente nula.",

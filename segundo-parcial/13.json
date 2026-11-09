@@ -190,17 +190,6 @@
       "explicacion": "Al tener un solo cromosoma X (XY), el varón expresa cualquier alelo presente en este cromosoma (hemicigosis), careciendo de locus homólogo en el Y."
     },
     {
-      "pregunta": "Desde el punto de vista evolutivo, la aparición de resistencia a un pesticida en una población de insectos se explica porque:",
-      "opciones": [
-        "el pesticida provocó mutaciones adaptativas deliberadas en los insectos expuestos.",
-        "existía variabilidad genética previa y el pesticida actuó como agente de selección natural favoreciendo a los fenotipos resistentes.",
-        "los insectos desarrollaron inmunidad individual y la transmitieron por vía somática.",
-        "la resistencia surgió por deriva génica exclusiva en poblaciones infinitas."
-      ],
-      "correcta": "B",
-      "explicacion": "La variación genotípica de resistencia preexistía en la población; la aplicación del químico eliminó a los susceptibles y seleccionó a los resistentes."
-    },
-    {
       "pregunta": "Al cruzar dos individuos heterocigotas para dos genes independientes con dominancia completa (AaBb x AaBb), la proporción de la descendencia que expresará ambos rasgos dominantes es:",
       "opciones": [
         "9/16",
@@ -243,17 +232,6 @@
       ],
       "correcta": "A",
       "explicacion": "La proporción 1:1:1:1 en una retrocruza demuestra la segregación independiente de dos loci (Segunda Ley de Mendel)."
-    },
-    {
-      "pregunta": "La selección natural actuando como motor del cambio evolutivo requiere de forma indispensable que en la población exista:",
-      "opciones": [
-        "variabilidad fenotípica heredable entre los individuos.",
-        "ausencia total de mutaciones genómicas.",
-        "un número idéntico de cromosomas en todas las especies.",
-        "reproducción asexual obligada."
-      ],
-      "correcta": "A",
-      "explicacion": "Sin variación genotípica/fenotípica heredable, la selección natural no puede favorecer diferencialmente a unos genotipos sobre otros."
     }
   ]
 }

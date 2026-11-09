@@ -14,17 +14,6 @@
       "explicacion": "La mitosis es una división ecuacional conservativa que reparte el ADN duplicado en S de forma equitativa, originando dos células idénticas a la progenitora en G1."
     },
     {
-      "pregunta": "La teoría Neutralista de la evolución molecular (propuesta por Motoo Kimura) establece fundamentalmente que:",
-      "opciones": [
-        "únicamente se fijan en el genoma las mutaciones con un alto valor adaptativo positivo.",
-        "la mayoría de las mutaciones a nivel molecular originan alelos neutros sin ventaja ni desventaja adaptativa inmediata.",
-        "la selección natural es la causa de todas las sustituciones de nucleótidos.",
-        "todas las mutaciones provocan enfermedades genéticas letales."
-      ],
-      "correcta": "B",
-      "explicacion": "El neutralismo sostiene que a nivel molecular la mayoría de las mutaciones son neutras y su destino en la población está gobernado por el azar (deriva génica) más que por la selección natural."
-    },
-    {
       "pregunta": "Las secuencias genómicas móviles conocidas como transposones se definen como:",
       "opciones": [
         "segmentos de ADN flanqueados por secuencias específicas con la capacidad de cambiar de posición dentro del genoma.",
@@ -201,28 +190,6 @@
       "explicacion": "La meiosis I es reduccional, por lo que las células resultantes en meiosis II contienen la mitad de cromosomas (n = 6), manteniéndose duplicados hasta anafase II."
     },
     {
-      "pregunta": "En el contexto del Neodarwinismo, la teoría Sintética de la evolución define al proceso evolutivo como:",
-      "opciones": [
-        "los cambios acumulados a lo largo del tiempo en las frecuencias génicas de la población debido a la selección natural y mutaciones.",
-        "la transmisión a los descendientes de los caracteres adquiridos por el individuo.",
-        "saltos macroevolutivos bruscos sin estadios intermedios.",
-        "la supervivencia del organismo físicamente más fuerte sin influencias del ambiente."
-      ],
-      "correcta": "A",
-      "explicacion": "La teoría sintética combina la selección natural darwiniana con los principios de la genética de poblaciones, definiendo evolución como la variación en las frecuencias de alelos del pool génico."
-    },
-    {
-      "pregunta": "El principio de equilibrio genético de Hardy-Weinberg se cumple en una población bajo las condiciones de:",
-      "opciones": [
-        "ausencia de mutaciones, apareamiento totalmente al azar (panmixia) y un tamaño poblacional sumamente grande.",
-        "ausencia de mutación, migración y selección, apareamiento aleatorio y tamaño poblacional muy grande.",
-        "apareamiento preferencial entre individuos emparentados y ausencia de mutaciones nuevas.",
-        "selección natural intensa, migración frecuente y tamaño poblacional reducido."
-      ],
-      "correcta": "B",
-      "explicacion": "El equilibrio de Hardy-Weinberg requiere, en el modelo clásico, ausencia de mutación, migración y selección natural; apareamiento aleatorio (panmixia); y una población muy grande, de modo que la deriva génica sea despreciable. La opción B reúne estas condiciones."
-    },
-    {
       "pregunta": "Si la enzima aminoacil-ARNt sintetasa específica para el aminoácido leucina resulta no funcional por una mutación:",
       "opciones": [
         "se detiene la traducción de proteínas que requieren leucina y la célula termina muriendo.",
@@ -320,17 +287,6 @@
       ],
       "correcta": "A",
       "explicacion": "El padre aporta su único cromosoma X a sus hijas mujeres (convirtiéndolas en portadoras obligadas) y aporta el cromosoma Y a sus hijos varones."
-    },
-    {
-      "pregunta": "El mecanismo evolutivo conocido como deriva génica altera la composición genómica de las poblaciones mediante:",
-      "opciones": [
-        "fluctuaciones aleatorias en las frecuencias de los alelos producidas por eventos azarosos.",
-        "la adaptación fisiológica directa ante cambios del clima.",
-        "el aumento constante de la tasa de mutación inducida por la radiación.",
-        "la reproducción exclusiva de los organismos más corpulentos."
-      ],
-      "correcta": "A",
-      "explicacion": "La deriva génica es un proceso estocástico (azaroso) que causa cambios aleatorios en las frecuencias alélicas de una generación a otra, con mayor impacto en poblaciones pequeñas."
     }
   ]
 }

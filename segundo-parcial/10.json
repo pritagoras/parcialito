@@ -36,39 +36,6 @@
       "explicacion": "Las histonas se sintetizan en los ribosomas citosólicos y poseen secuencias NLS que permiten su transporte activo al núcleo mediante receptores del tipo importina."
     },
     {
-      "pregunta": "Desde el punto de vista de la evolución sintética (Neodarwinismo), la principal fuerza impulsora que genera selección natural adaptativa sobre una población es:",
-      "opciones": [
-        "la necesidad de los organismos de modificar sus órganos para adaptarse al ambiente.",
-        "las variaciones de las presiones ambientales que determinan la reproducción diferencial de variantes heredables.",
-        "los cambios aleatorios en las frecuencias alélicas por deriva génica, independientemente de la aptitud.",
-        "la transmisión hereditaria de cambios adquiridos durante la vida de cada individuo."
-      ],
-      "correcta": "B",
-      "explicacion": "El ambiente actúa como filtro selectivo determinando la reproducción diferencial de los individuos con genotipos de mayor adecuación biológica."
-    },
-    {
-      "pregunta": "El concepto de 'reloj molecular' empleado en la biología evolutiva para reconstruir la filogenia de las especies se fundamenta en que:",
-      "opciones": [
-        "las mutaciones neutras se acumulan en las secuencias genómicas a una tasa aproximadamente constante a lo largo del tiempo.",
-        "la acumulación de sustituciones neutrales o casi neutrales a tasas aproximadamente regulares en ciertos linajes.",
-        "la acumulación de mutaciones ventajosas a una tasa idéntica en todas las especies.",
-        "la conservación de secuencias proteicas sin cambios a lo largo de toda la evolución."
-      ],
-      "correcta": "A",
-      "explicacion": "Al acumularse sustituciones neutras a ritmo casi constante, la divergencia de secuencias de nucleótidos permite estimar el tiempo transcurrido desde la separación de un ancestro común."
-    },
-    {
-      "pregunta": "La teoría evolutiva de la Neutralidad (propuesta por Motoo Kimura) postula que:",
-      "opciones": [
-        "todas las mutaciones son letales y eliminadas de inmediato por la selección natural.",
-        "la mayoría de las mutaciones a nivel molecular no son perjudiciales ni ventajosas, sino neutras, fijándose por deriva génica.",
-        "la selección natural favorece únicamente a los organismos más fuertes físicamente.",
-        "las mutaciones ocurren de manera dirigida para responder a exigencias del medio."
-      ],
-      "correcta": "B",
-      "explicacion": "Según la teoría neutralista, gran parte de la variabilidad genética molecular se debe a la fijación al azar por deriva génica de mutaciones adaptativamente neutras."
-    },
-    {
       "pregunta": "En un organismo diploide 2n = 10, ¿cuántos cromosomas y cuántas cromátides compondrán el núcleo de cada polo celular durante la telofase II de la meiosis?",
       "opciones": [
         "10 cromosomas dobles.",

@@ -1,50 +1,50 @@
 {
-  "generado": "2026-11-07T21:54:59Z",
+  "generado": "2026-11-09T21:29:34Z",
   "temas": [
     {
       "archivo": "segundo-parcial/1.json",
       "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 111
+      "preguntas": 108
     },
     {
       "archivo": "segundo-parcial/10.json",
       "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 30
+      "preguntas": 27
     },
     {
       "archivo": "segundo-parcial/11.json",
       "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 30
+      "preguntas": 28
     },
     {
       "archivo": "segundo-parcial/12.json",
       "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 30
+      "preguntas": 26
     },
     {
       "archivo": "segundo-parcial/13.json",
       "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 23
+      "preguntas": 21
     },
     {
       "archivo": "segundo-parcial/2.json",
       "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 65
+      "preguntas": 64
     },
     {
       "archivo": "segundo-parcial/3.json",
       "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 78
+      "preguntas": 73
     },
     {
       "archivo": "segundo-parcial/4.json",
       "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 55
+      "preguntas": 51
     },
     {
       "archivo": "segundo-parcial/5.json",
       "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 50
+      "preguntas": 45
     },
     {
       "archivo": "segundo-parcial/6.json",
@@ -54,7 +54,7 @@
     {
       "archivo": "segundo-parcial/7.json",
       "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 36
+      "preguntas": 34
     },
     {
       "archivo": "segundo-parcial/8.json",
@@ -64,7 +64,7 @@
     {
       "archivo": "segundo-parcial/9.json",
       "tema": "Parciales de Biología (Integrador)",
-      "preguntas": 46
+      "preguntas": 45
     }
   ]
 }

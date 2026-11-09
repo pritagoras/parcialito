@@ -302,6 +302,186 @@
         "archivo": "segundo-parcial/7.json",
         "preguntaOriginal": 3
       }
+    },
+    {
+      "pregunta": "La teoría endosimbiótica propuesta para el origen de la célula eucarionte explica la aparición de:",
+      "opciones": [
+        "el origen del núcleo y del sistema de endomembranas a partir de invaginaciones de la membrana plasmática.",
+        "organelas semiautónomas como mitocondrias y cloroplastos a partir de procariontes englobados.",
+        "la formación de peroxisomas y lisosomas a partir de bacterias incorporadas por una célula ancestral.",
+        "la formación de ribosomas eucariontes a partir de la fusión de dos tipos de bacterias."
+      ],
+      "correcta": "B",
+      "explicacion": "La teoría endosimbiótica postula que mitocondrias y cloroplastos evolucionaron a partir de bacterias endosimbiontes fagocitadas por células ancestrales.",
+      "_revision": {
+        "archivo": "segundo-parcial/9.json",
+        "preguntaOriginal": 29
+      }
+    },
+    {
+      "pregunta": "Desde el punto de vista de la evolución sintética (Neodarwinismo), la principal fuerza impulsora que genera selección natural adaptativa sobre una población es:",
+      "opciones": [
+        "la necesidad de los organismos de modificar sus órganos para adaptarse al ambiente.",
+        "las variaciones de las presiones ambientales que determinan la reproducción diferencial de variantes heredables.",
+        "los cambios aleatorios en las frecuencias alélicas por deriva génica, independientemente de la aptitud.",
+        "la transmisión hereditaria de cambios adquiridos durante la vida de cada individuo."
+      ],
+      "correcta": "B",
+      "explicacion": "El ambiente actúa como filtro selectivo determinando la reproducción diferencial de los individuos con genotipos de mayor adecuación biológica.",
+      "_revision": {
+        "archivo": "segundo-parcial/10.json",
+        "preguntaOriginal": 4
+      }
+    },
+    {
+      "pregunta": "El concepto de 'reloj molecular' empleado en la biología evolutiva para reconstruir la filogenia de las especies se fundamenta en que:",
+      "opciones": [
+        "las mutaciones neutras se acumulan en las secuencias genómicas a una tasa aproximadamente constante a lo largo del tiempo.",
+        "la acumulación de sustituciones neutrales o casi neutrales a tasas aproximadamente regulares en ciertos linajes.",
+        "la acumulación de mutaciones ventajosas a una tasa idéntica en todas las especies.",
+        "la conservación de secuencias proteicas sin cambios a lo largo de toda la evolución."
+      ],
+      "correcta": "A",
+      "explicacion": "Al acumularse sustituciones neutras a ritmo casi constante, la divergencia de secuencias de nucleótidos permite estimar el tiempo transcurrido desde la separación de un ancestro común.",
+      "_revision": {
+        "archivo": "segundo-parcial/10.json",
+        "preguntaOriginal": 5
+      }
+    },
+    {
+      "pregunta": "La teoría evolutiva de la Neutralidad (propuesta por Motoo Kimura) postula que:",
+      "opciones": [
+        "todas las mutaciones son letales y eliminadas de inmediato por la selección natural.",
+        "la mayoría de las mutaciones a nivel molecular no son perjudiciales ni ventajosas, sino neutras, fijándose por deriva génica.",
+        "la selección natural favorece únicamente a los organismos más fuertes físicamente.",
+        "las mutaciones ocurren de manera dirigida para responder a exigencias del medio."
+      ],
+      "correcta": "B",
+      "explicacion": "Según la teoría neutralista, gran parte de la variabilidad genética molecular se debe a la fijación al azar por deriva génica de mutaciones adaptativamente neutras.",
+      "_revision": {
+        "archivo": "segundo-parcial/10.json",
+        "preguntaOriginal": 6
+      }
+    },
+    {
+      "pregunta": "En genética de poblaciones, la llegada o salida de individuos en etapa reproductiva entre distintas poblaciones que altera las frecuencias alélicas se conoce como:",
+      "opciones": [
+        "Flujo génico (migración).",
+        "Efecto fundador.",
+        "Cuello de botella.",
+        "Selección estabilizadora."
+      ],
+      "correcta": "A",
+      "explicacion": "El flujo génico ocurre por la inmigración o emigración de organismos reproductivos (o sus gametas), lo que introduce o elimina alelos de la población.",
+      "_revision": {
+        "archivo": "segundo-parcial/11.json",
+        "preguntaOriginal": 25
+      }
+    },
+    {
+      "pregunta": "Un evento de 'cuello de botella' poblacional se caracteriza genéticamente por provocar:",
+      "opciones": [
+        "una drástica y rápida reducción del tamaño poblacional y de la variabilidad genética por deriva génica.",
+        "un incremento repentino de las mutaciones adaptativas.",
+        "la eliminación de todos los alelos dominantes por selección natural.",
+        "la duplicación del cariotipo de la especie."
+      ],
+      "correcta": "A",
+      "explicacion": "Un cuello de botella ocurre cuando un evento catastrófico reduce severamente el número de individuos, disminuyendo drásticamente la diversidad genética por azar (deriva génica).",
+      "_revision": {
+        "archivo": "segundo-parcial/11.json",
+        "preguntaOriginal": 26
+      }
+    },
+    {
+      "pregunta": "La teoría Neutralista de la evolución molecular (propuesta por Motoo Kimura) establece fundamentalmente que:",
+      "opciones": [
+        "únicamente se fijan en el genoma las mutaciones con un alto valor adaptativo positivo.",
+        "la mayoría de las mutaciones a nivel molecular originan alelos neutros sin ventaja ni desventaja adaptativa inmediata.",
+        "la selección natural es la causa de todas las sustituciones de nucleótidos.",
+        "todas las mutaciones provocan enfermedades genéticas letales."
+      ],
+      "correcta": "B",
+      "explicacion": "El neutralismo sostiene que a nivel molecular la mayoría de las mutaciones son neutras y su destino en la población está gobernado por el azar (deriva génica) más que por la selección natural.",
+      "_revision": {
+        "archivo": "segundo-parcial/12.json",
+        "preguntaOriginal": 2
+      }
+    },
+    {
+      "pregunta": "En el contexto del Neodarwinismo, la teoría Sintética de la evolución define al proceso evolutivo como:",
+      "opciones": [
+        "los cambios acumulados a lo largo del tiempo en las frecuencias génicas de la población debido a la selección natural y mutaciones.",
+        "la transmisión a los descendientes de los caracteres adquiridos por el individuo.",
+        "saltos macroevolutivos bruscos sin estadios intermedios.",
+        "la supervivencia del organismo físicamente más fuerte sin influencias del ambiente."
+      ],
+      "correcta": "A",
+      "explicacion": "La teoría sintética combina la selección natural darwiniana con los principios de la genética de poblaciones, definiendo evolución como la variación en las frecuencias de alelos del pool génico.",
+      "_revision": {
+        "archivo": "segundo-parcial/12.json",
+        "preguntaOriginal": 19
+      }
+    },
+    {
+      "pregunta": "El principio de equilibrio genético de Hardy-Weinberg se cumple en una población bajo las condiciones de:",
+      "opciones": [
+        "ausencia de mutaciones, apareamiento totalmente al azar (panmixia) y un tamaño poblacional sumamente grande.",
+        "ausencia de mutación, migración y selección, apareamiento aleatorio y tamaño poblacional muy grande.",
+        "apareamiento preferencial entre individuos emparentados y ausencia de mutaciones nuevas.",
+        "selección natural intensa, migración frecuente y tamaño poblacional reducido."
+      ],
+      "correcta": "B",
+      "explicacion": "El equilibrio de Hardy-Weinberg requiere, en el modelo clásico, ausencia de mutación, migración y selección natural; apareamiento aleatorio (panmixia); y una población muy grande, de modo que la deriva génica sea despreciable. La opción B reúne estas condiciones.",
+      "_revision": {
+        "archivo": "segundo-parcial/12.json",
+        "preguntaOriginal": 20
+      }
+    },
+    {
+      "pregunta": "El mecanismo evolutivo conocido como deriva génica altera la composición genómica de las poblaciones mediante:",
+      "opciones": [
+        "fluctuaciones aleatorias en las frecuencias de los alelos producidas por eventos azarosos.",
+        "la adaptación fisiológica directa ante cambios del clima.",
+        "el aumento constante de la tasa de mutación inducida por la radiación.",
+        "la reproducción exclusiva de los organismos más corpulentos."
+      ],
+      "correcta": "A",
+      "explicacion": "La deriva génica es un proceso estocástico (azaroso) que causa cambios aleatorios en las frecuencias alélicas de una generación a otra, con mayor impacto en poblaciones pequeñas.",
+      "_revision": {
+        "archivo": "segundo-parcial/12.json",
+        "preguntaOriginal": 30
+      }
+    },
+    {
+      "pregunta": "Desde el punto de vista evolutivo, la aparición de resistencia a un pesticida en una población de insectos se explica porque:",
+      "opciones": [
+        "el pesticida provocó mutaciones adaptativas deliberadas en los insectos expuestos.",
+        "existía variabilidad genética previa y el pesticida actuó como agente de selección natural favoreciendo a los fenotipos resistentes.",
+        "los insectos desarrollaron inmunidad individual y la transmitieron por vía somática.",
+        "la resistencia surgió por deriva génica exclusiva en poblaciones infinitas."
+      ],
+      "correcta": "B",
+      "explicacion": "La variación genotípica de resistencia preexistía en la población; la aplicación del químico eliminó a los susceptibles y seleccionó a los resistentes.",
+      "_revision": {
+        "archivo": "segundo-parcial/13.json",
+        "preguntaOriginal": 18
+      }
+    },
+    {
+      "pregunta": "La selección natural actuando como motor del cambio evolutivo requiere de forma indispensable que en la población exista:",
+      "opciones": [
+        "variabilidad fenotípica heredable entre los individuos.",
+        "ausencia total de mutaciones genómicas.",
+        "un número idéntico de cromosomas en todas las especies.",
+        "reproducción asexual obligada."
+      ],
+      "correcta": "A",
+      "explicacion": "Sin variación genotípica/fenotípica heredable, la selección natural no puede favorecer diferencialmente a unos genotipos sobre otros.",
+      "_revision": {
+        "archivo": "segundo-parcial/13.json",
+        "preguntaOriginal": 23
+      }
     }
   ]
 }
