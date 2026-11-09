@@ -22,8 +22,10 @@
     const style = document.createElement('style');
     style.id = 'estilos-banco-tema';
     style.textContent = `
-      .btn-ver-banco-tema { display:block; width:100%; margin:-5px 0 10px; padding:7px 12px; border:1px solid rgba(155,123,255,.45); border-radius:10px; background:rgba(155,123,255,.08); color:#D9CCFF; font:600 12px Inter,system-ui,sans-serif; text-align:left; cursor:pointer; }
-      .btn-ver-banco-tema:hover { background:rgba(155,123,255,.16); }
+      .btn-ver-banco-tema { display:inline-flex; align-items:center; width:auto; max-width:100%; margin:-2px 0 7px 3.1rem; padding:3px 0; border:0; border-radius:0; background:transparent; color:var(--tenue, #B8ABDB); font:500 12px var(--fuente, Inter, system-ui, sans-serif); text-align:left; cursor:pointer; opacity:.82; transition:color .15s, opacity .15s; }
+      .btn-ver-banco-tema:hover { color:var(--crema, #FFF3DC); opacity:1; text-decoration:underline; text-underline-offset:3px; }
+      .btn-ver-banco-tema:focus-visible { outline:2px solid var(--violeta, #9B7BFF); outline-offset:3px; border-radius:3px; }
+      @media(max-width:480px) { .btn-ver-banco-tema { margin-left:2.8rem; } }
       .banco-tema-dialog { width:min(760px,calc(100vw - 24px)); max-width:760px; max-height:88dvh; padding:0; border:1px solid rgba(155,123,255,.45); border-radius:18px; color:#FFF3DC; background:#170F2E; box-shadow:0 20px 70px #0009; }
       .banco-tema-dialog::backdrop { background:rgba(8,5,18,.78); backdrop-filter:blur(3px); }
       .banco-tema-cabeza { position:sticky; top:0; z-index:2; padding:18px; background:#211845; border-bottom:1px solid #ffffff20; }
