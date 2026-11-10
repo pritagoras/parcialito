@@ -1,0 +1,424 @@
+{
+  "materia": "Biología 2",
+  "tema": "Proteína G: Gs, Gi y Gq",
+  "preguntas": [
+    {
+      "pregunta": "En una vía de señalización mediada por un receptor acoplado a proteína G, ¿qué evento activa directamente a la proteína G heterotrimérica?",
+      "opciones": [
+        "La unión del ligando al receptor facilita el intercambio de GDP por GTP en la subunidad Gα.",
+        "La subunidad Gβ fosforila a Gα y libera ATP.",
+        "El receptor hidroliza GTP y lo convierte en GDP.",
+        "La proteína G ingresa al núcleo y se une al ADN."
+      ],
+      "correcta": "A",
+      "explicacion": "El receptor activado actúa como factor de intercambio de nucleótidos: favorece la salida de GDP y la unión de GTP a Gα. No fosforila a la proteína G."
+    },
+    {
+      "pregunta": "¿Qué característica distingue al estado activo de una subunidad Gα?",
+      "opciones": [
+        "Tiene GDP unido y permanece asociada de manera obligatoria al receptor.",
+        "Tiene GTP unido y puede regular proteínas efectoras.",
+        "Está fosforilada por PKA y unida al ADN.",
+        "Perdió sus nucleótidos y se degrada inmediatamente."
+      ],
+      "correcta": "B",
+      "explicacion": "La unión de GTP produce el estado activo de Gα, que puede separarse funcionalmente del complejo βγ y modular efectores."
+    },
+    {
+      "pregunta": "La proteína Gs se denomina estimuladora porque, en su vía clásica,",
+      "opciones": [
+        "inhibe la fosfolipasa C-β.",
+        "degrada directamente el AMPc.",
+        "activa la adenilato ciclasa y eleva el AMPc.",
+        "bloquea la unión de GTP a Gα."
+      ],
+      "correcta": "C",
+      "explicacion": "Gαs–GTP estimula la adenilato ciclasa, aumentando la conversión de ATP en AMPc."
+    },
+    {
+      "pregunta": "¿Cuál es el efecto más directo de la activación de una proteína Gi clásica sobre la adenilato ciclasa?",
+      "opciones": [
+        "Aumenta su actividad y eleva el AMPc.",
+        "La convierte en fosfolipasa C.",
+        "Activa directamente la PKA.",
+        "Disminuye su actividad y reduce la producción de AMPc."
+      ],
+      "correcta": "D",
+      "explicacion": "Gαi inhibe la adenilato ciclasa; por eso suele disminuir la concentración intracelular de AMPc y la actividad de PKA dependiente de este mensajero."
+    },
+    {
+      "pregunta": "En la vía Gq, la proteína efectora activada típicamente por Gαq es",
+      "opciones": [
+        "la fosfolipasa C-β (PLCβ).",
+        "la adenilato ciclasa.",
+        "la proteína quinasa A.",
+        "la fosfodiesterasa de AMPc."
+      ],
+      "correcta": "A",
+      "explicacion": "Gαq activa PLCβ, que hidroliza el fosfolípido PIP₂ y genera los segundos mensajeros IP₃ y DAG."
+    },
+    {
+      "pregunta": "La activación de PLCβ por Gq produce directamente",
+      "opciones": [
+        "ATP y AMPc a partir de GTP.",
+        "IP₃ y DAG a partir de PIP₂.",
+        "GDP y GTP a partir de ATP.",
+        "Ca²⁺ y PKA a partir de colesterol."
+      ],
+      "correcta": "B",
+      "explicacion": "PLCβ escinde PIP₂ en IP₃ soluble y DAG, que permanece asociado a la membrana."
+    },
+    {
+      "pregunta": "¿Qué función cumple principalmente el IP₃ en la vía Gq?",
+      "opciones": [
+        "Activa directamente la adenilato ciclasa.",
+        "Fosforila proteínas diana en el citosol.",
+        "Se une a receptores del retículo endoplasmático y promueve la liberación de Ca²⁺.",
+        "Degrada el DAG en el espacio extracelular."
+      ],
+      "correcta": "C",
+      "explicacion": "IP₃ difunde por el citosol y se une a canales-receptores de IP₃ del retículo endoplasmático, favoreciendo la salida de Ca²⁺ al citosol."
+    },
+    {
+      "pregunta": "En la vía Gq, el DAG contribuye a la señalización porque",
+      "opciones": [
+        "se convierte en AMPc para activar PKA.",
+        "transporta GTP hacia el núcleo.",
+        "inhibe la liberación de calcio desde el retículo.",
+        "permanece en la membrana y, junto con Ca²⁺, favorece la activación de PKC."
+      ],
+      "correcta": "D",
+      "explicacion": "DAG es un segundo mensajero lipídico de membrana. En muchas isoformas convencionales de PKC, coopera con Ca²⁺ para promover su activación."
+    },
+    {
+      "pregunta": "¿Qué asociación entre proteína G y efector es correcta?",
+      "opciones": [
+        "Gs–adenilato ciclasa; Gi–inhibición de adenilato ciclasa; Gq–PLCβ.",
+        "Gs–PLCβ; Gi–PKC; Gq–adenilato ciclasa.",
+        "Gs–fosfodiesterasa; Gi–IP₃; Gq–PKA.",
+        "Gs–receptor nuclear; Gi–canal de ADN; Gq–ribosoma."
+      ],
+      "correcta": "A",
+      "explicacion": "La asociación clásica es Gs con estimulación de adenilato ciclasa, Gi con inhibición de adenilato ciclasa y Gq con activación de PLCβ."
+    },
+    {
+      "pregunta": "Si se activa Gs en una célula que expresa adenilato ciclasa funcional, ¿qué cambio se espera inicialmente?",
+      "opciones": [
+        "Disminución de IP₃ por degradación de PIP₂.",
+        "Aumento de la síntesis de AMPc a partir de ATP.",
+        "Liberación directa de Ca²⁺ por apertura del receptor de IP₃.",
+        "Inhibición inmediata de todas las quinasas celulares."
+      ],
+      "correcta": "B",
+      "explicacion": "El aumento de actividad de adenilato ciclasa eleva la producción de AMPc, que puede activar PKA y otras proteínas sensibles a nucleótidos cíclicos."
+    },
+    {
+      "pregunta": "El AMPc actúa como segundo mensajero en la vía Gs porque",
+      "opciones": [
+        "es el ligando extracelular que se une al GPCR.",
+        "forma parte de la subunidad Gβγ.",
+        "se produce dentro de la célula y transmite/amplifica la señal hacia blancos como PKA.",
+        "hidroliza el GTP unido a Gα."
+      ],
+      "correcta": "C",
+      "explicacion": "El AMPc se sintetiza intracelularmente por adenilato ciclasa y transmite la señal recibida por el receptor hacia efectores como PKA."
+    },
+    {
+      "pregunta": "La proteína quinasa activada clásicamente por el AMPc es",
+      "opciones": [
+        "PKC.",
+        "PLCβ.",
+        "PKG exclusivamente.",
+        "PKA."
+      ],
+      "correcta": "D",
+      "explicacion": "El AMPc se une a las subunidades reguladoras de PKA y permite la actividad de sus subunidades catalíticas."
+    },
+    {
+      "pregunta": "Una disminución de AMPc tras activar Gi suele provocar",
+      "opciones": [
+        "menor activación de PKA dependiente de AMPc.",
+        "mayor activación directa de PKA.",
+        "producción obligatoria de IP₃ por PLCβ.",
+        "liberación de calcio por el receptor de IP₃ en todos los casos."
+      ],
+      "correcta": "A",
+      "explicacion": "Al disminuir el AMPc, disminuye la activación de PKA dependiente de ese mensajero. El resultado final depende también de otras señales presentes en la célula."
+    },
+    {
+      "pregunta": "¿Qué enunciado compara correctamente Gs y Gi?",
+      "opciones": [
+        "Ambas activan PLCβ y producen IP₃.",
+        "Regulan en sentidos opuestos la actividad de la adenilato ciclasa en la vía clásica.",
+        "Gs inhibe AC y Gi la estimula.",
+        "Ambas convierten PIP₂ en DAG."
+      ],
+      "correcta": "B",
+      "explicacion": "Gs estimula y Gi inhibe la adenilato ciclasa; por ello sus efectos clásicos sobre AMPc son opuestos."
+    },
+    {
+      "pregunta": "Una célula recibe una señal y aumenta IP₃, DAG y Ca²⁺ citosólico. ¿Qué vía es la explicación más probable?",
+      "opciones": [
+        "Gs.",
+        "Gi.",
+        "Gq.",
+        "Una vía que necesariamente activa PKA por AMPc."
+      ],
+      "correcta": "C",
+      "explicacion": "El patrón IP₃/DAG y la movilización de Ca²⁺ desde depósitos intracelulares es característico de la activación de Gq–PLCβ."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes secuencias representa correctamente la vía Gq?",
+      "opciones": [
+        "GPCR → Gq → adenilato ciclasa → AMPc → PKA.",
+        "GPCR → Gi → PLCβ → IP₃ → PKA.",
+        "GPCR → Gs → PLCβ → DAG → PKC.",
+        "GPCR → Gq → PLCβ → PIP₂ escindido en IP₃ y DAG → aumento de Ca²⁺ y activación de PKC."
+      ],
+      "correcta": "D",
+      "explicacion": "Gq activa PLCβ, que genera IP₃ y DAG. IP₃ eleva Ca²⁺ citosólico y DAG, junto con Ca²⁺ en las isoformas apropiadas, contribuye a activar PKC."
+    },
+    {
+      "pregunta": "¿Qué sucede cuando Gα hidroliza el GTP unido a GDP?",
+      "opciones": [
+        "Se inactiva y disminuye su capacidad de regular al efector; puede reasociarse con Gβγ.",
+        "Se activa de forma irreversible y se une al receptor.",
+        "Se transforma en una quinasa.",
+        "Produce directamente AMPc."
+      ],
+      "correcta": "A",
+      "explicacion": "La actividad GTPasa intrínseca de Gα convierte GTP en GDP y Pi, favoreciendo el retorno al estado inactivo y el reensamblaje del heterotrímero."
+    },
+    {
+      "pregunta": "El intercambio GDP por GTP en Gα es promovido directamente por",
+      "opciones": [
+        "la PKA.",
+        "el receptor GPCR activado, que actúa como factor de intercambio.",
+        "la fosfodiesterasa.",
+        "la subunidad Gβ actuando como ADN polimerasa."
+      ],
+      "correcta": "B",
+      "explicacion": "El GPCR activado facilita el intercambio de nucleótidos en Gα. Este proceso activa la proteína G sin requerir fosforilación de Gα."
+    },
+    {
+      "pregunta": "¿Qué función cumplen las proteínas RGS en muchas vías de señalización por proteína G?",
+      "opciones": [
+        "Sintetizan AMPc a partir de ATP.",
+        "Actúan como receptores de ligandos extracelulares.",
+        "Aceleran la actividad GTPasa de Gα y favorecen la terminación de la señal.",
+        "Abren directamente los canales de IP₃ del retículo."
+      ],
+      "correcta": "C",
+      "explicacion": "Las proteínas RGS regulan negativamente la señalización al acelerar la hidrólisis de GTP por Gα, acortando el tiempo en estado activo."
+    },
+    {
+      "pregunta": "Una fosfodiesterasa que degrada AMPc afecta de manera más directa a",
+      "opciones": [
+        "la generación de IP₃ por PLCβ.",
+        "el intercambio de GDP por GTP en Gαq.",
+        "la unión del ligando al GPCR.",
+        "la duración de la señal mediada por AMPc, reduciendo la activación de PKA."
+      ],
+      "correcta": "D",
+      "explicacion": "Las fosfodiesterasas convierten AMPc en 5′-AMP. Al disminuir AMPc, limitan la activación de PKA y contribuyen a terminar la señal."
+    },
+    {
+      "pregunta": "Si se inhibe farmacológicamente la adenilato ciclasa, ¿qué respuesta se espera ante un estímulo que normalmente activa Gs?",
+      "opciones": [
+        "La producción de AMPc inducida por esa vía se reduce o desaparece.",
+        "Aumenta necesariamente la formación de IP₃.",
+        "Se activa directamente PKC por DAG.",
+        "Gαs no puede unir GTP."
+      ],
+      "correcta": "A",
+      "explicacion": "Aunque Gs se active, la inhibición de su efector impide o reduce la síntesis de AMPc; no convierte automáticamente la señal en una vía Gq."
+    },
+    {
+      "pregunta": "Si se bloquea PLCβ, ¿qué efecto directo se espera sobre la señalización iniciada por Gq?",
+      "opciones": [
+        "Aumenta la producción de AMPc por la misma enzima.",
+        "Disminuye la generación de IP₃ y DAG a partir de PIP₂.",
+        "Se impide la unión de adrenalina a cualquier GPCR.",
+        "Gαq pierde su capacidad de hidrolizar GTP."
+      ],
+      "correcta": "B",
+      "explicacion": "PLCβ es el efector de Gq que produce IP₃ y DAG. Su inhibición reduce la generación de ambos segundos mensajeros."
+    },
+    {
+      "pregunta": "Un receptor α₁-adrenérgico suele acoplarse principalmente a",
+      "opciones": [
+        "Gi y disminuir AMPc.",
+        "Gs y activar PKA por AMPc.",
+        "Gq y activar PLCβ.",
+        "una tirosina quinasa nuclear sin proteína G."
+      ],
+      "correcta": "C",
+      "explicacion": "El receptor α₁ es un ejemplo clásico de GPCR acoplado a Gq, que activa PLCβ y la vía IP₃/DAG/Ca²⁺."
+    },
+    {
+      "pregunta": "Un receptor β-adrenérgico clásico suele activar principalmente",
+      "opciones": [
+        "Gq y la formación de IP₃.",
+        "Gi y la inhibición de adenilato ciclasa.",
+        "una proteína RGS como segundo mensajero.",
+        "Gs y el aumento de AMPc."
+      ],
+      "correcta": "D",
+      "explicacion": "Los receptores β-adrenérgicos se acoplan típicamente a Gs, estimulando adenilato ciclasa y aumentando AMPc."
+    },
+    {
+      "pregunta": "¿Cuál es el papel de la subunidad Gβγ después de la activación del heterotrímero?",
+      "opciones": [
+        "También puede regular efectores, como ciertos canales iónicos y enzimas; no es simplemente un componente inerte.",
+        "Se convierte en AMPc y activa PKA.",
+        "Hidroliza PIP₂ para producir IP₃.",
+        "Se transforma en el ligando extracelular."
+      ],
+      "correcta": "A",
+      "explicacion": "Tras el intercambio de nucleótidos, Gα–GTP y el dímero Gβγ pueden regular distintos efectores. Gβγ participa en la modulación de canales y otras proteínas."
+    },
+    {
+      "pregunta": "¿Cuál afirmación sobre los segundos mensajeros es correcta?",
+      "opciones": [
+        "El ligando extracelular y el segundo mensajero son siempre la misma molécula.",
+        "AMPc, IP₃, DAG y Ca²⁺ pueden actuar como segundos mensajeros intracelulares.",
+        "GDP es el principal segundo mensajero de todas las vías GPCR.",
+        "Los segundos mensajeros solo se encuentran fuera de la célula."
+      ],
+      "correcta": "B",
+      "explicacion": "El ligando es la señal extracelular inicial; los segundos mensajeros intracelulares propagan y amplifican la información dentro de la célula."
+    },
+    {
+      "pregunta": "Una célula expresa receptores acoplados a Gs y Gq. Tras un estímulo, se observan aumento de AMPc y aumento de Ca²⁺ citosólico. ¿Qué interpretación es más adecuada?",
+      "opciones": [
+        "Es imposible porque AMPc y Ca²⁺ nunca pueden aumentar en una misma célula.",
+        "La célula necesariamente convirtió Gs en Gq.",
+        "Pueden estar activándose en paralelo dos vías de señalización distintas.",
+        "El aumento de Ca²⁺ demuestra que la adenilato ciclasa se convirtió en PLCβ."
+      ],
+      "correcta": "C",
+      "explicacion": "Una célula puede expresar distintos receptores y activar varias rutas en paralelo. Gs puede elevar AMPc mientras Gq promueve IP₃ y liberación de Ca²⁺."
+    },
+    {
+      "pregunta": "¿Qué diferencia funcional existe entre PKA y PKC en estas vías clásicas?",
+      "opciones": [
+        "PKA es activada por IP₃ y PKC por GDP.",
+        "Ambas son activadas exclusivamente por AMPc.",
+        "PKC sintetiza AMPc y PKA produce IP₃.",
+        "PKA suele activarse por AMPc, mientras que ciertas isoformas de PKC responden a DAG y Ca²⁺."
+      ],
+      "correcta": "D",
+      "explicacion": "PKA es el efector clásico del AMPc. Las isoformas convencionales de PKC son reguladas por DAG y Ca²⁺; existen otras isoformas con requisitos distintos."
+    },
+    {
+      "pregunta": "Si una mutación impide la hidrólisis de GTP en Gαs, ¿qué consecuencia es más probable?",
+      "opciones": [
+        "Gαs puede permanecer activa durante más tiempo y sostener la estimulación de adenilato ciclasa.",
+        "Gαs queda permanentemente unida a GDP.",
+        "La vía Gq se activa automáticamente y produce IP₃.",
+        "El receptor no puede unir ningún ligando."
+      ],
+      "correcta": "A",
+      "explicacion": "Si Gαs no puede hidrolizar GTP, su retorno al estado inactivo se dificulta y la señal hacia adenilato ciclasa puede prolongarse."
+    },
+    {
+      "pregunta": "¿Cuál de estas afirmaciones evita una confusión frecuente al comparar Gs, Gi y Gq?",
+      "opciones": [
+        "Gs, Gi y Gq son enzimas que degradan segundos mensajeros.",
+        "Gs y Gi regulan principalmente adenilato ciclasa, mientras Gq regula PLCβ.",
+        "Gi activa siempre PKA y Gs activa siempre PKC.",
+        "Gq produce AMPc como único segundo mensajero."
+      ],
+      "correcta": "B",
+      "explicacion": "La comparación central es: Gs estimula AC, Gi inhibe AC y Gq activa PLCβ. De allí derivan los segundos mensajeros característicos de cada ruta."
+    },
+    {
+      "pregunta": "En la vía Gq, el aumento de Ca²⁺ citosólico puede producirse porque",
+      "opciones": [
+        "Gαq transforma GTP directamente en Ca²⁺.",
+        "DAG atraviesa el núcleo y abre canales de sodio.",
+        "IP₃ se une a su receptor-canal en el retículo endoplasmático y favorece la salida de Ca²⁺.",
+        "PKA bombea Ca²⁺ desde el exterior hacia el retículo."
+      ],
+      "correcta": "C",
+      "explicacion": "IP₃ se une a receptores del retículo endoplasmático que funcionan como canales de Ca²⁺, liberando el ion al citosol."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes pares representa un efector y su producto/señal característicos?",
+      "opciones": [
+        "PLCβ → AMPc; adenilato ciclasa → IP₃.",
+        "PKA → PIP₂; PKC → GDP.",
+        "Fosfodiesterasa → DAG; RGS → Ca²⁺.",
+        "Adenilato ciclasa → AMPc; PLCβ → IP₃ + DAG."
+      ],
+      "correcta": "D",
+      "explicacion": "La adenilato ciclasa produce AMPc a partir de ATP, mientras PLCβ hidroliza PIP₂ para generar IP₃ y DAG."
+    },
+    {
+      "pregunta": "Un agonista activa un GPCR acoplado a Gi. ¿Qué resultado sería coherente con la vía clásica, sin asumir efectos adicionales?",
+      "opciones": [
+        "Menor actividad de adenilato ciclasa y menor concentración de AMPc.",
+        "Mayor actividad de adenilato ciclasa y mayor AMPc.",
+        "Activación directa de PLCβ por Gαi como regla universal.",
+        "Aumento obligatorio de IP₃ y DAG."
+      ],
+      "correcta": "A",
+      "explicacion": "El efecto clásico de Gαi es inhibir adenilato ciclasa y reducir AMPc. Las subunidades Gβγ pueden modular otros blancos, según el tipo celular."
+    },
+    {
+      "pregunta": "¿Por qué no debe afirmarse que toda activación de proteína G termina necesariamente en PKA?",
+      "opciones": [
+        "Porque PKA está fuera de la célula.",
+        "Porque las distintas familias regulan efectores y segundos mensajeros diferentes; Gq, por ejemplo, activa PLCβ y la vía IP₃/DAG/Ca²⁺.",
+        "Porque las proteínas G solo funcionan en bacterias.",
+        "Porque PKA es el receptor que reconoce todos los ligandos."
+      ],
+      "correcta": "B",
+      "explicacion": "No todas las rutas GPCR usan AMPc. Gs y Gi regulan adenilato ciclasa, mientras Gq activa PLCβ y moviliza IP₃, DAG y Ca²⁺."
+    },
+    {
+      "pregunta": "Una señal aumenta la actividad de PKC sin elevar de forma detectable el AMPc. ¿Qué explicación encaja mejor con una vía Gq?",
+      "opciones": [
+        "Gq activa adenilato ciclasa y PKA, que se transforma en PKC.",
+        "Gi aumenta AMPc y convierte PKA en PLCβ.",
+        "Gq activa PLCβ; DAG y Ca²⁺ favorecen la activación de ciertas isoformas de PKC.",
+        "Gq degrada AMPc para producir directamente PKC."
+      ],
+      "correcta": "C",
+      "explicacion": "La vía Gq–PLCβ genera DAG e IP₃; IP₃ eleva Ca²⁺ citosólico y DAG junto con Ca²⁺ activa isoformas convencionales de PKC."
+    },
+    {
+      "pregunta": "¿Qué enunciado describe mejor la amplificación de señal en una cascada GPCR?",
+      "opciones": [
+        "Cada receptor solo puede activar una molécula efectora y no hay amplificación.",
+        "La señal se amplifica únicamente cuando el ligando entra al núcleo.",
+        "La amplificación requiere que el receptor se replique.",
+        "Un receptor activado puede activar varias proteínas G y cada efector puede generar numerosas moléculas de segundo mensajero."
+      ],
+      "correcta": "D",
+      "explicacion": "La amplificación surge porque un receptor puede activar múltiples proteínas G y los efectores catalíticos producen muchas moléculas de segundos mensajeros, multiplicando la señal."
+    },
+    {
+      "pregunta": "Si una célula tiene una mutación que impide que Gαq intercambie GDP por GTP, ¿qué paso se verá afectado más directamente?",
+      "opciones": [
+        "La activación de Gq por el GPCR y, en consecuencia, la estimulación de PLCβ.",
+        "La degradación de AMPc por fosfodiesterasa.",
+        "La unión de IP₃ a su receptor en el retículo, aunque IP₃ se haya formado normalmente.",
+        "La unión del ligando a su receptor extracelular en todos los casos."
+      ],
+      "correcta": "A",
+      "explicacion": "Sin el intercambio GDP/GTP, Gαq no alcanza adecuadamente el estado activo y no puede estimular PLCβ de la manera habitual."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes secuencias ubica correctamente los eventos de la vía Gs?",
+      "opciones": [
+        "PKA → ATP → GTP → receptor → Gs.",
+        "Ligando → GPCR → Gs–GTP → adenilato ciclasa → AMPc → PKA.",
+        "Ligando → Gq → PLCβ → AMPc → PKA.",
+        "Ligando → Gi → PLCβ → IP₃ → adenilato ciclasa."
+      ],
+      "correcta": "B",
+      "explicacion": "La secuencia clásica es ligando y GPCR, activación de Gs por intercambio GDP/GTP, estimulación de adenilato ciclasa, aumento de AMPc y activación de PKA."
+    }
+  ]
+}
