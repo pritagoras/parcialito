@@ -835,6 +835,29 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 .sp-tema-texto small { color:#f5cee4; font-size:.72rem; }
 .sp-tema-accion { display:flex; align-items:center; gap:5px; color:#fff2a8; white-space:nowrap; font-size:.75rem; font-weight:800; }
 .sp-tema-accion b { font-size:1rem; }
+.sp-tema-por-tema { margin-top:8px; background:rgba(32,14,73,.42); }
+.sp-tema-por-tema .sp-tema-icono { background:linear-gradient(145deg,#c4b4ff,#8f83ff); }
+.banner-segundo .sp-banco { border-color:rgba(255,255,255,.18); background:rgba(35,18,76,.14); }
+.banner-segundo .sp-banco:hover { border-color:rgba(255,255,255,.34); background:rgba(35,18,76,.25); }
+.banner-segundo .sp-banco-icono { color:#e6d8ff; background:rgba(255,255,255,.07); }
+.banner-segundo .sp-banco-texto small { color:rgba(255,239,249,.78); }
+.banner-segundo .sp-banco-flecha { color:#e6d8ff; }
+
+/* Selector de temas del Segundo parcial de Biología */
+.estudio-sp { padding-bottom:2rem; }
+.estudio-sp-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin:20px 0; }
+.estudio-sp-card { display:flex; align-items:flex-start; gap:12px; min-width:0; padding:16px; text-align:left; color:var(--crema); border:1px solid rgba(155,123,255,.28); border-radius:16px; background:linear-gradient(145deg,rgba(48,35,82,.88),rgba(28,22,51,.96)); box-shadow:inset 0 1px rgba(255,255,255,.04); font:inherit; cursor:pointer; transition:transform .18s,border-color .18s,background .18s; }
+.estudio-sp-card:hover:not(:disabled) { transform:translateY(-2px); border-color:rgba(255,228,122,.7); background:linear-gradient(145deg,rgba(66,47,111,.94),rgba(35,26,65,.98)); }
+.estudio-sp-card:focus-visible { outline:3px solid #ffe47a; outline-offset:3px; }
+.estudio-sp-card:disabled { opacity:.5; cursor:default; }
+.estudio-sp-icono { display:grid; place-items:center; flex:0 0 42px; width:42px; height:42px; border-radius:12px; background:rgba(155,123,255,.17); font-size:1.35rem; }
+.estudio-sp-texto { display:flex; flex:1; min-width:0; flex-direction:column; gap:5px; }
+.estudio-sp-texto strong { font-size:.95rem; line-height:1.3; }
+.estudio-sp-texto small { color:var(--tenue); font-size:.76rem; line-height:1.45; }
+.estudio-sp-texto em { color:#ffe47a; font-size:.72rem; font-style:normal; font-weight:800; }
+.estudio-sp-flecha { color:#d2c5ff; font-size:1.2rem; }
+.estudio-sp-banco { margin-top:4px; }
+@media(max-width:620px) { .estudio-sp-grid { grid-template-columns:1fr; gap:9px; }.estudio-sp-card { padding:13px; } }
 
 /* Segundo parcial de IPC: mismo lenguaje visual, identidad violeta propia. */
 .banner-ipc-segundo {

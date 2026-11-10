@@ -710,6 +710,11 @@ function vistaInicio() {
           <span class="sp-tema-texto"><strong>Todas las preguntas juntas</strong><small>Opción múltiple</small></span>
           <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
         </button>
+        <button class="sp-tema sp-tema-por-tema" id="btn-sp-temas" type="button">
+          <span class="sp-tema-icono" aria-hidden="true">🗂️</span>
+          <span class="sp-tema-texto"><strong>Estudiar por tema</strong><small>Núcleo, duplicación, transcripción, traducción, herencia y más</small></span>
+          <span class="sp-tema-accion">Elegir <b aria-hidden="true">↗</b></span>
+        </button>
         <button class="sp-banco" id="btn-sp-banco" type="button">
           <span class="sp-banco-icono" aria-hidden="true">☷</span>
           <span class="sp-banco-texto"><strong>Ver el banco completo</strong><small>Explorá todas las preguntas, opciones y respuestas</small></span>
@@ -774,6 +779,7 @@ function vistaInicio() {
 
   document.getElementById('btn-sonido').addEventListener('click', alternarSonido);
   document.getElementById('btn-sp-ciclo')?.addEventListener('click', () => { Sonido.clic(); lanzarSegundoParcial(); });
+  document.getElementById('btn-sp-temas')?.addEventListener('click', () => { Sonido.clic(); vistaEstudioSegundoParcial(); });
   document.getElementById('btn-sp-banco')?.addEventListener('click', () => { Sonido.clic(); vistaBancoSegundoParcial(); });
   document.getElementById('btn-ipc-segundo-home')?.addEventListener('click', () => {
     Sonido.clic();
@@ -803,6 +809,16 @@ function vistaInicio() {
 // La lista de archivos sale de segundo-parcial/index.json (lo genera tools/actualizar_indice.py).
 const SEGUNDO_PARCIAL_TEMA_ID = 'segundo-parcial/todas';
 let segundoParcialPool = null;
+
+const TEMAS_SEGUNDO_PARCIAL = [
+  { id: 'nucleo', nombre: 'Núcleo y cromatina', icono: '🔬', descripcion: 'Envoltura nuclear, nucléolo, cromatina y organización del ADN.', patron: /\b(nucleo|nucleolo|cromatina|nucleosoma|histonas?|eucromatina|heterocromatina|poro nuclear|envoltura nuclear)\b/ },
+  { id: 'duplicacion', nombre: 'Duplicación del ADN', icono: '🧬', descripcion: 'Replicación, horquilla, enzimas y reparación del ADN.', patron: /\b(replicacion|duplicacion|replicar|duplicar|helicasa|primasa|ligasa|okazaki|horquilla|telomerasa|polimerasa de adn)\b/ },
+  { id: 'transcripcion', nombre: 'Transcripción y maduración', icono: '📝', descripcion: 'Síntesis de ARN, promotores, splicing y procesamiento.', patron: /\b(transcripcion|transcripto|transcrito|arn polimerasa|splicing|empalme|intrones?|exones?|promotor|operon|poli.?a|cap 5)\b/ },
+  { id: 'traduccion', nombre: 'Traducción y proteínas', icono: '🧫', descripcion: 'Ribosomas, código genético y síntesis de proteínas.', patron: /\b(traduccion|ribosomas?|arnm|arn t|arn de transferencia|codones?|anticodones?|aminoacidos?|polipeptidos?|proteinas?|peptidil|codigo genetico)\b/ },
+  { id: 'herencia', nombre: 'Herencia y genética', icono: '🌱', descripcion: 'Genes, alelos, genotipos, fenotipos y patrones hereditarios.', patron: /\b(herencia|mendel|alelos?|genes?|genotipos?|fenotipos?|homocig|heterocig|dominante|recesiv|cruzamiento|mutacion|genetica|gametos?|hered)\b/ },
+  { id: 'division', nombre: 'Mitosis y meiosis', icono: '🧩', descripcion: 'División celular, cromosomas, gametogénesis y variabilidad.', patron: /\b(mitosis|meiosis|cromosomas?|cromatidas?|homologos|crossing over|entrecruzamiento|sinapsis|anafase|profase|metafase|telofase|citocinesis|gametogenesis)\b/ },
+  { id: 'ciclo', nombre: 'Ciclo celular', icono: '🔄', descripcion: 'Interfase, fases del ciclo y puntos de control.', patron: /\b(ciclo celular|interfase|fase s|fase g1|fase g2|punto de control|checkpoint|ciclinas?|cdk)\b/ },
+];
 
 async function cargarSegundoParcial() {
   if (segundoParcialPool) return segundoParcialPool;
@@ -867,6 +883,61 @@ async function lanzarSegundoParcial() {
   //   3) al final las que la última vez acertaste.
   // Dentro de cada grupo el orden es aleatorio.
   empezarJuego(ordenInteligente(pool), meta);
+}
+
+function preguntasDeTemaSegundoParcial(pool, tema) {
+  return pool.filter((q) => tema.patron.test(normalizarTerminoBanco(`${q.texto} ${q.explicacion || ''}`)));
+}
+
+function vistaEstudioSegundoParcial() {
+  vistaCargando('Preparando los temas…');
+  cargarSegundoParcial().then((pool) => {
+    const temas = TEMAS_SEGUNDO_PARCIAL.map((tema) => ({ ...tema, cantidad: preguntasDeTemaSegundoParcial(pool, tema).length }));
+    app.innerHTML = `
+      <main class="pantalla estudio-sp">
+        <button class="btn enlace" id="btn-volver-temas-sp">← Inicio</button>
+        <div class="titulo-materia"><span class="emoji" aria-hidden="true">🗂️</span><h1>Segundo parcial por tema</h1></div>
+        <p class="bajada">Elegí un tema para practicar sus preguntas. También podés volver al recorrido completo cuando quieras.</p>
+        <section class="estudio-sp-grid" aria-label="Temas del segundo parcial">
+          ${temas.map((tema) => `
+            <button class="estudio-sp-card" type="button" data-tema-sp="${tema.id}" ${tema.cantidad ? '' : 'disabled'}>
+              <span class="estudio-sp-icono" aria-hidden="true">${tema.icono}</span>
+              <span class="estudio-sp-texto"><strong>${tema.nombre}</strong><small>${tema.descripcion}</small><em>${tema.cantidad} preguntas</em></span>
+              <span class="estudio-sp-flecha" aria-hidden="true">↗</span>
+            </button>`).join('')}
+        </section>
+        <button class="sp-banco estudio-sp-banco" id="btn-banco-desde-temas" type="button"><span class="sp-banco-icono" aria-hidden="true">☷</span><span class="sp-banco-texto"><strong>Ver el banco completo</strong><small>Explorá las preguntas, opciones y respuestas</small></span><span class="sp-banco-flecha" aria-hidden="true">↗</span></button>
+      </main>`;
+    document.getElementById('btn-volver-temas-sp').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
+    document.getElementById('btn-banco-desde-temas').addEventListener('click', () => { Sonido.clic(); vistaBancoSegundoParcial(); });
+    app.querySelectorAll('[data-tema-sp]').forEach((boton) => boton.addEventListener('click', () => {
+      Sonido.clic();
+      const tema = TEMAS_SEGUNDO_PARCIAL.find((item) => item.id === boton.dataset.temaSp);
+      if (tema) lanzarSegundoParcialPorTema(tema, pool);
+    }));
+    window.scrollTo(0, 0);
+  }).catch((e) => {
+    console.error('[Temas del segundo parcial]', e);
+    vistaError(e);
+  });
+}
+
+function lanzarSegundoParcialPorTema(tema, poolOriginal) {
+  const pool = preguntasDeTemaSegundoParcial(poolOriginal, tema);
+  if (!pool.length) {
+    avisar(`Todavía no hay preguntas clasificadas en ${tema.nombre}.`);
+    return;
+  }
+  empezarJuego(ordenInteligente(pool), {
+    titulo: `Segundo parcial · ${tema.nombre}`,
+    temaId: SEGUNDO_PARCIAL_TEMA_ID,
+    estilo: 'parcial-limpio',
+    ranking: false,
+    materiaNombre: 'Segundo parcial',
+    temaNombre: tema.nombre,
+    repetir: () => lanzarSegundoParcialPorTema(tema, poolOriginal),
+    volver: () => vistaEstudioSegundoParcial(),
+  });
 }
 
 function ordenInteligente(pool) {
