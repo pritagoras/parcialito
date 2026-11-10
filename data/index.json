@@ -261,6 +261,12 @@
           "nombre": "Gametogénesis",
           "archivo": "data/biologia-celular2/17-gametogenesis.json",
           "preguntas": 80
+        },
+        {
+          "id": "biologia-celular2/18-proteina-g-gs-gi-gq",
+          "nombre": "Proteína G: Gs, Gi y Gq",
+          "archivo": "data/biologia-celular2/18-proteina-g-gs-gi-gq.json",
+          "preguntas": 38
         }
       ]
     },
