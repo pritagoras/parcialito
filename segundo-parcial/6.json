@@ -98,7 +98,7 @@
         "determinar la tasa de trascripción celular.",
         "identificar el grado de metilación de un gen promotor."
       ],
-      "correcta": "D",
+      "correcta": "B",
       "explicacion": "El análisis citogenético del cariotipo permite visualizar alteraciones macroestructurales o variaciones en el número de cromosomas (como trisomías)."
     },
     {
@@ -142,7 +142,7 @@
         "el desarrollo embrionario e intrauterino.",
         "la penetración del espermatozoide en el ovocito."
       ],
-      "correcta": "D",
+      "correcta": "C",
       "explicacion": "Los ovocitos primarios comienzan la profase I meiótica durante la gestación fetal, quedando detenidos en la etapa de dictiotene hasta la maduración folicular."
     },
     {
@@ -318,8 +318,8 @@
         "fluctuar en sus concentraciones celulares para activar a las quinasas dependientes de ciclinas (CDK).",
         "degradar de forma irreversible el ADN al final de la mitosis."
       ],
-      "correcta": "B",
-      "explicacion": "Las ciclinas sintetizan y degradan de forma periódica en el ciclo celular, regulando la activación de sus correspondientes CDK asociadas."
+      "correcta": "C",
+      "explicacion": "Las concentraciones de las distintas ciclinas aumentan y disminuyen de manera cíclica. Al unirse a sus CDK, las activan y regulan el avance entre las fases del ciclo celular."
     }
   ]
 }
