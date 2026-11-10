@@ -3,17 +3,6 @@
   "tema": "Parciales de Biología (Integrador)",
   "preguntas": [
     {
-      "pregunta": "Salvo en el caso de los gemelos monocigóticos, no existen dos seres humanos idénticos. Esta enorme diversidad genética individual se debe principalmente a:",
-      "opciones": [
-        "la alta tasa de mutaciones que ocurren durante la segmentación del cigoto.",
-        "la recombinación meiótica por entrecruzamiento y la segregación aleatoria de cromosomas durante la reproducción sexual.",
-        "la influencia directa de las condiciones ambientales durante el desarrollo embrionario.",
-        "las mutaciones somáticas acumuladas en el tejido epitelial."
-      ],
-      "correcta": "B",
-      "explicacion": "La reproducción sexual genera variabilidad genética única mediante el entrecruzamiento en profase I, la distribución independiente de homólogos en anafase I y la fecundación al azar."
-    },
-    {
       "pregunta": "El proceso morfogenético responsable directa de la eliminación del tejido interdigital durante el desarrollo embrionario de los miembros en mamíferos es la:",
       "opciones": [
         "mitosis asimétrica.",
@@ -210,17 +199,6 @@
       ],
       "correcta": "B",
       "explicacion": "El triptófano es un correpresor que activa a la proteína represora inactiva, permitiendo su unión al operador para reprimir la síntesis."
-    },
-    {
-      "pregunta": "Una mujer de cabello oscuro (Mm) y grupo sanguíneo O (ii) concibe un hijo de cabello claro (mm) y grupo A (Ai). El genotipo materno y del hijo son respectivamente:",
-      "opciones": [
-        "MMii y mmAi",
-        "Mmii e iiAi",
-        "Mmii y mmAi",
-        "MMAi y mmAi"
-      ],
-      "correcta": "C",
-      "explicacion": "La madre es Mmii (aporta el alelo 'm' para pelo claro y el alelo 'i' para grupo O) y el hijo es mmAi (recibió 'm' y 'i' de la madre y 'm' y 'A' del padre)."
     },
     {
       "pregunta": "En el transcurso de la anafase I de la meiosis se produce un evento crucial que consiste en la:",

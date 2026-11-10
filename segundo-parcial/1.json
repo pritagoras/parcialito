@@ -80,17 +80,6 @@
       "explicacion": "La secuencia del ARN mensajero es la que contiene la información instructiva que determina el orden de los aminoácidos en la proteína sintetizada."
     },
     {
-      "pregunta": "¿Cuál de los siguientes eventos puede originar una mutación heredable si el cambio queda fijado en el ADN de una célula de la línea germinal?",
-      "opciones": [
-        "Errores en el proceso de traducción.",
-        "Errores en la replicación del ADN.",
-        "Ocurrencia de mutaciones silenciosas.",
-        "Errores simultáneos en la transcripción y traducción."
-      ],
-      "correcta": "B",
-      "explicacion": "Un error durante la replicación puede escapar a los mecanismos de corrección y reparación y quedar fijado como una mutación en el ADN. Si ocurre en una célula de la línea germinal, puede transmitirse a la descendencia; no todo error de replicación produce necesariamente un cambio fenotípico."
-    },
-    {
       "pregunta": "Una mutación en el gen que codifica un polipéptido:",
       "opciones": [
         "siempre es el resultado de inserciones o deleciones de nucleótidos.",
@@ -212,39 +201,6 @@
       "explicacion": "Una proporción fenotípica aproximadamente 1:1 entre individuos dominantes y recesivos es característica de la cruza de prueba entre un heterocigota (Rr) y un homocigota recesivo (rr)."
     },
     {
-      "pregunta": "La probabilidad de obtener gametas de genotipo \"Ab\" a partir de un individuo con genotipo AABbCcDD es:",
-      "opciones": [
-        "0",
-        "1",
-        "1/2",
-        "1/4"
-      ],
-      "correcta": "C",
-      "explicacion": "Dado que el locus A es homocigota AA, todas las gametas llevan A; para el locus B (Bb), la probabilidad de heredar la alelo b es de 1/2. Por ende, la probabilidad combinada para esos alelos es 1/2."
-    },
-    {
-      "pregunta": "La segunda ley de Mendel o principio de la segregación independiente:",
-      "opciones": [
-        "se cumple siempre para cualquier par de genes en el genoma.",
-        "se cumple cuando los genes están fuertemente ligados en el mismo cromosoma.",
-        "se cumple si los genes se ubican en distintos pares de cromosomas homólogos.",
-        "es consecuencia directa de los eventos que ocurren durante la anafase mitótica."
-      ],
-      "correcta": "C",
-      "explicacion": "La distribución independiente de alelos ocurre si los loci se encuentran en cromosomas distintos o lo suficientemente alejados en el mismo cromosoma como para segregar sin ligamiento."
-    },
-    {
-      "pregunta": "Se cruzan dos líneas puras de ratones: marrón con orejas grandes × blanco con orejas chicas. La F1 es 100% marrón con orejas grandes. Suponiendo que los genes se segregan independientemente, si se cruza un individuo F1 con un doble homocigota recesivo, ¿cuál es la probabilidad de obtener ratones marrones con orejas chicas?",
-      "opciones": [
-        "1/4",
-        "0",
-        "1",
-        "1/2"
-      ],
-      "correcta": "A",
-      "explicacion": "En una cruza de prueba de un dihíbrido (AaBb x aabb), se obtienen cuatro fenotipos posibles en proporciones equimolares (25% o 1/4 cada uno)."
-    },
-    {
       "pregunta": "Una mujer de grupo A (cuya madre es grupo O) tiene hijos con un hombre de grupo B (cuyo padre es grupo A). ¿Qué porcentaje de sus hijos se espera que sean heterocigotas?",
       "opciones": [
         "0%",
@@ -254,39 +210,6 @@
       ],
       "correcta": "D",
       "explicacion": "La mujer es AO porque su madre de grupo O solo pudo aportarle el alelo O. El hombre es BO: al ser de grupo B y tener un padre de grupo A, necesariamente recibió el alelo O de ese padre y el alelo B de su madre. En el cruce AO × BO se obtienen AB, AO, BO y OO en proporciones iguales; tres de los cuatro genotipos son heterocigotas (75%)."
-    },
-    {
-      "pregunta": "En relación con los genes ligados, se puede afirmar que:",
-      "opciones": [
-        "no cumplen con la primera ley de Mendel de la segregación de alelos.",
-        "no se segregan independientemente durante el proceso meiótico.",
-        "uno de ellos codifica una proteína que actúa sobre el otro gen.",
-        "se corresponden siempre con organismos homocigotas."
-      ],
-      "correcta": "B",
-      "explicacion": "Al encontrarse ubicados físicamente en el mismo cromosoma, los genes ligados tienden a heredarse juntos y no segregan de forma independiente."
-    },
-    {
-      "pregunta": "Un determinado antibiótico logra controlar una infección bacteriana. Sin embargo, al cabo de un tiempo, la infección reaparece y el antibiótico resulta inocuo. Esto se debe a que:",
-      "opciones": [
-        "las bacterias mutaron intencionalmente con la finalidad de perfeccionarse.",
-        "las bacterias desarrollaron defensas inducidas directamente por el antibiótico.",
-        "algunas bacterias poseían una mutación previa que les confirió resistencia.",
-        "el antibiótico forzó a las bacterias a adaptarse al medio."
-      ],
-      "correcta": "C",
-      "explicacion": "La variación genética por mutación es previa a la exposición; el antibiótico ejerce una presión de selección eliminando a las sensibles y favoreciendo la reproducción de las resistentes."
-    },
-    {
-      "pregunta": "El descenso drástico de una población debido a un desastre natural que reduce la variabilidad genética en los supervivientes es un ejemplo de:",
-      "opciones": [
-        "selección sexual.",
-        "aislamiento reproductivo.",
-        "cuello de botella.",
-        "efecto fundador."
-      ],
-      "correcta": "C",
-      "explicacion": "El efecto de cuello de botella ocurre cuando un evento catastrófico reduce drásticamente el tamaño poblacional, alterando aleatoriamente las frecuencias génicas de los sobrevivientes."
     },
     {
       "pregunta": "La comparación de los genomas de la levadura (eucarionte) y las bacterias (procariontes) muestra que solo la levadura posee genes que codifican:",
@@ -542,17 +465,6 @@
       "explicacion": "Además de la síntesis de lípidos y detoxificación, el REL funciona como el principal depósito de iones calcio dentro del citoplasma."
     },
     {
-      "pregunta": "Los genes ligados no cumplen con la segunda ley de Mendel debido a que:",
-      "opciones": [
-        "los alelos mutantes actúan siempre como letales precoces.",
-        "al estar en el mismo cromosoma no segregan de forma independiente.",
-        "impiden la distinción fenotípica de los heterocigotas.",
-        "sufren modificaciones químicas durante la fecundación."
-      ],
-      "correcta": "B",
-      "explicacion": "Al hallarse situados sobre el mismo filamento cromosómico, los genes ligados co-segregan en las gametas a menos que ocurra un evento de recombinación."
-    },
-    {
       "pregunta": "Si una célula somática se encuentra en la etapa G1 de la interfase:",
       "opciones": [
         "el Factor Promotor de la Mitosis (FPM) inducirá la división inmediata.",
@@ -683,17 +595,6 @@
       ],
       "correcta": "B",
       "explicacion": "Debido a la presencia de la envoltura nuclear, en eucariontes la transcripción y el procesamiento del ARN ocurren en el núcleo, finalizando antes de la traducción citoplasmática."
-    },
-    {
-      "pregunta": "Para que una pareja de padres sanos tenga un hijo varón afectado por hemofilia (enfermedad recesiva ligada al cromosoma X), sus genotipos deben ser:",
-      "opciones": [
-        "Madre XH XH y Padre Xh Y",
-        "Madre XH Xh y Padre XH Y",
-        "Madre Xh Xh y Padre XH Y",
-        "Madre XH Xh y Padre Xh Y"
-      ],
-      "correcta": "B",
-      "explicacion": "El hijo varón hereda el cromosoma Y de su padre sano (XH Y) y debe recibir el cromosoma que porta el alelo recesivo (Xh) de su madre, quien es portadora heterocigota (XH Xh)."
     },
     {
       "pregunta": "Mediante el mecanismo de splicing alternativo la célula puede producir:",
@@ -958,17 +859,6 @@
       ],
       "correcta": "B",
       "explicacion": "Debido a la gran longitud de los cromosomas eucariotas, la replicación es semiconservativa, bidireccional y comienza simultáneamente en múltiples puntos (ORI)."
-    },
-    {
-      "pregunta": "El daltonismo es un rasgo recesivo ligado al cromosoma X. Si una mujer sana (padre daltónico) tiene hijos con un hombre sano, la probabilidad de que sus hijos varones sean daltónicos es del:",
-      "opciones": [
-        "0%",
-        "100%",
-        "50%",
-        "25%"
-      ],
-      "correcta": "C",
-      "explicacion": "La mujer es portadora heterocigota (X D X d) al haber heredado el alelo de su padre. Cada hijo varón tiene un 50% de probabilidad de recibir su cromosoma X d."
     },
     {
       "pregunta": "Durante el proceso de replicación del ADN, un fallo en la función correctora de pruebas de la ADN polimerasa puede causar:",

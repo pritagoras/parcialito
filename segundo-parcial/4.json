@@ -146,28 +146,6 @@
       "explicacion": "En la anafase II meiótica se rompen las uniones de cohesina centromérica y se separan las cromátides hermanas hacia los polos opuestos."
     },
     {
-      "pregunta": "El mecanismo de entrecruzamiento o crossing-over promueve la variabilidad genética porque permite:",
-      "opciones": [
-        "el intercambio de segmentos de ADN entre cromátidas hermanas de un mismo cromosoma.",
-        "el intercambio de segmentos de ADN entre cromátidas no hermanas de cromosomas homólogos durante la profase I.",
-        "el intercambio de segmentos entre cromátidas hermanas de un mismo cromosoma durante la mitosis.",
-        "la separación al azar de cromosomas homólogos hacia polos opuestos en la anafase I."
-      ],
-      "correcta": "B",
-      "explicacion": "El crossing-over rompe y liga segmentos equivalentes entre homólogos paternos y maternos durante la profase I meiótica."
-    },
-    {
-      "pregunta": "Una mujer de pelo oscuro (Mm) y grupo sanguíneo O (00) tiene un hijo de pelo claro (mm) y grupo A (A0). El genotipo materno y el del hijo son respectivamente:",
-      "opciones": [
-        "Mujer MM00 y Hijo mmA0",
-        "Mujer Mm00 y Hijo mmA0",
-        "Mujer MmA0 y Hijo MmA0",
-        "Mujer MM00 y Hijo MmA0"
-      ],
-      "correcta": "B",
-      "explicacion": "Para tener un hijo claro (mm), la madre debe ser heterocigota (Mm). Siendo la madre de grupo O (00), aporta el alelo O al hijo (A0)."
-    },
-    {
       "pregunta": "El huso mitótico presente durante la división celular se define como:",
       "opciones": [
         "una red citoplásmica rígida que otorga la forma celular.",
@@ -190,17 +168,6 @@
       "explicacion": "El punto de restricción en G1/S evalúa si la célula reúne las condiciones necesarias para iniciar la replicación del ADN."
     },
     {
-      "pregunta": "Los genes ubicados sobre el mismo cromosoma que no segregan de forma independiente pueden separarse mediante:",
-      "opciones": [
-        "fecundación.",
-        "mitosis.",
-        "crossing-over o entrecruzamiento.",
-        "transducción."
-      ],
-      "correcta": "C",
-      "explicacion": "El crossing-over durante la profase I de la meiosis permite intercambiar segmentos entre cromátidas no hermanas de cromosomas homólogos y puede generar cromátidas recombinantes, separando combinaciones de alelos que estaban ligados."
-    },
-    {
       "pregunta": "En el proceso de ovogénesis, la reducción de la cantidad de cromosomas a la mitad sucede entre:",
       "opciones": [
         "la ovogonia y el ovocito primario.",
@@ -210,17 +177,6 @@
       ],
       "correcta": "B",
       "explicacion": "La meiosis I transforma el ovocito primario (2n) en un ovocito secundario haploide (n) y el primer cuerpo polar."
-    },
-    {
-      "pregunta": "Un hombre con visión normal se casa con una mujer sana (padre daltónico). Su hija Penélope tiene un hijo varón daltónico. Esto demuestra que:",
-      "opciones": [
-        "los abuelos nunca pudieron tener descendientes normales.",
-        "todos los hijos de Penélope serán daltónicos.",
-        "la abuela materna era portadora del alelo de daltonismo.",
-        "el abuelo materno transmitió el daltonismo a sus nietas."
-      ],
-      "correcta": "C",
-      "explicacion": "Para que Penélope transmita el daltonismo a su hijo, debió recibir el cromosoma X afectado de su madre (la abuela), quien actuaba como portadora."
     },
     {
       "pregunta": "En las células eucariontes, durante la fase S del ciclo celular ocurre:",

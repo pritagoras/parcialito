@@ -223,17 +223,6 @@
       "explicacion": "La eucromatina es la forma laxa de la cromatina durante la interfase que permite el acceso de la maquinaria de transcripción a los genes."
     },
     {
-      "pregunta": "Dos genes A y B cumplen la Segunda Ley de Mendel (segregación independiente) si se encuentran ubicados en:",
-      "opciones": [
-        "pares de cromosomas homólogos diferentes.",
-        "el mismo cromosoma muy próximos entre sí.",
-        "el mismo brazo cromosómico sin crossing-over.",
-        "el genoma mitocondrial exclusivamente."
-      ],
-      "correcta": "A",
-      "explicacion": "La segregación independiente de alelos se cumple cuando los loci génicos se localizan en pares de cromosomas homólogos distintos o distantes en el mismo cromosoma."
-    },
-    {
       "pregunta": "Si un individuo presenta una dotación cromosómica de 2n = 20, la cantidad de cromosomas recibida de su progenitor paterno es de:",
       "opciones": [
         "10 cromosomas.",
@@ -243,28 +232,6 @@
       ],
       "correcta": "A",
       "explicacion": "Cada progenitor aporta una dotación haploide (n = 10) de cromosomas a través de su respectiva gameta durante la fecundación."
-    },
-    {
-      "pregunta": "Una mujer portadora heterocigota del alelo del daltonismo (X D X d) y un hombre de visión normal (X D Y) tienen descendencia. La probabilidad de que sus hijas mujeres resulten daltónicas es de:",
-      "opciones": [
-        "0%",
-        "25%",
-        "50%",
-        "100%"
-      ],
-      "correcta": "A",
-      "explicacion": "Las hijas mujeres reciben obligatoriamente el cromosoma X D del padre sano, por lo que ninguna presentará el fenotipo daltónico recesivo (serán 50% sanas homocigotas y 50% portadoras)."
-    },
-    {
-      "pregunta": "Si se cruzan dos plantas de guisante heterocigotas para semillas amarillas y lisas (AaLl x AaLl), ¿cuál es la probabilidad de obtener descendencia con semillas rugosas (ll)?",
-      "opciones": [
-        "25% (1/4)",
-        "50% (1/2)",
-        "75% (3/4)",
-        "100%"
-      ],
-      "correcta": "B",
-      "explicacion": "Para la característica de textura (Ll x Ll), la segregación monohíbrida da 1/4 LL, 2/2 Ll y 1/4 ll. Por ende, la probabilidad de semillas rugosas (ll) es del 25% (1/4)."
     },
     {
       "pregunta": "El estudio evolutivo de la secuencia del ADN mitocondrial es de gran utilidad biológica en humanos debido a que:",
@@ -287,17 +254,6 @@
       ],
       "correcta": "A",
       "explicacion": "El huso mitótico se organiza a partir del centrosoma mediante microtúbulos clasificables en polares, cinetocóricos y astrales según su interacción."
-    },
-    {
-      "pregunta": "El proceso de recombinación o intercambio de segmentos entre cromátides no hermanas de cromosomas homólogos (crossing-over) ocurre en:",
-      "opciones": [
-        "la profase I de la meiosis.",
-        "la profase de la mitosis.",
-        "la anafase II meiótica.",
-        "la fase S de la interfase."
-      ],
-      "correcta": "A",
-      "explicacion": "El crossing-over tiene lugar durante el paquitene de la profase I meiótica, generando nuevas combinaciones alélicas en los cromosomas recombinantes."
     },
     {
       "pregunta": "Una mujer de grupo sanguíneo A (A0) y un hombre de grupo B (B0) que ya han tenido un hijo de grupo sanguíneo O (00), presentan en cada nuevo embarazo una probabilidad de tener un hijo de grupo O del:",

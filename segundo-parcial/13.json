@@ -113,17 +113,6 @@
       "explicacion": "La colchicina despolimeriza la tubulina impidiendo la formación del huso acromático, lo que arresta la división celular en metafase."
     },
     {
-      "pregunta": "¿Mediante qué mecanismo meiótico pueden separarse dos genes que se encuentran originalmente ligados en un mismo cromosoma?",
-      "opciones": [
-        "Segregación independiente en la anafase II.",
-        "Entre cruzamiento o crossing-over en la profase I.",
-        "Transcripción alternativa en la interfase.",
-        "Fusión de los cinetocoros en la metafase I."
-      ],
-      "correcta": "B",
-      "explicacion": "El crossing-over entre cromátides no hermanas de cromosomas homólogos permite romper el ligamiento al intercambiar segmentos y recombinar alelos."
-    },
-    {
       "pregunta": "En la especie humana, cuando la fecundación desencadena la reanudación y finalización de la segunda división meiótica durante la ovogénesis, se forman:",
       "opciones": [
         "un óvulo haploide con 23 cromosomas simples y un cuerpo polar.",
@@ -177,61 +166,6 @@
       ],
       "correcta": "A",
       "explicacion": "La meiosis I es reduccional: divide a la mitad el número de cromosomas (n = 4 en cada polo), pero estos permanecen duplicados."
-    },
-    {
-      "pregunta": "Se afirma que un hombre varón (XY) es hemicigota para la mayoría de los genes localizados en el cromosoma X debido a que:",
-      "opciones": [
-        "posee una sola copia del cromosoma X y carece de un alelo homólogo en el cromosoma Y.",
-        "sus genes del cromosoma X se expresan únicamente en las células musculares.",
-        "presenta dos copias idénticas del gen en el cromosoma Y.",
-        "ha inactivado su cromosoma X formando un corpúsculo de Barr."
-      ],
-      "correcta": "A",
-      "explicacion": "Al tener un solo cromosoma X (XY), el varón expresa cualquier alelo presente en este cromosoma (hemicigosis), careciendo de locus homólogo en el Y."
-    },
-    {
-      "pregunta": "Al cruzar dos individuos heterocigotas para dos genes independientes con dominancia completa (AaBb x AaBb), la proporción de la descendencia que expresará ambos rasgos dominantes es:",
-      "opciones": [
-        "9/16",
-        "3/16",
-        "1/16",
-        "1/4"
-      ],
-      "correcta": "A",
-      "explicacion": "La proporción fenotípica clásica mendeliana para un cruzamiento dihíbrido es 9:3:3:1, donde 9 de cada 16 descendientes muestran ambos fenotipos dominantes."
-    },
-    {
-      "pregunta": "Si una mujer portadora de daltonismo (X^N X^n) tiene hijos con un varón de visión normal (X^N Y), la proporción esperada de varones daltónicos respecto al total de hijos varones es de:",
-      "opciones": [
-        "50% (1/2 de los hijos varones).",
-        "100% de los hijos varones.",
-        "0% de los hijos varones.",
-        "25% del total de la descendencia femenina."
-      ],
-      "correcta": "A",
-      "explicacion": "Dado que el padre aporta el cromosoma Y a los varones, la mitad de estos heredará de la madre el cromosoma X^n con el alelo de la ceguera al color."
-    },
-    {
-      "pregunta": "Una pareja compuesta por un hombre y una mujer de ojos oscuros y cabello castaño conciben un hijo de ojos celestes y cabello rubio (ambos rasgos recesivos). Esto demuestra que los genotipos de los padres eran:",
-      "opciones": [
-        "heterocigotas para ambas características (Nn Cc).",
-        "homocigotas dominantes para ambas características (NN CC).",
-        "homocigotas recesivos para el color de ojos y heterocigotas para el cabello.",
-        "hemicigotas para los dos genes."
-      ],
-      "correcta": "A",
-      "explicacion": "Para que nazca un hijo con dos fenotipos recesivos (nn cc), obligadamente ambos progenitores dominantes deben ser heterocigotas portadores (Nn Cc)."
-    },
-    {
-      "pregunta": "Si en un cruzamiento de prueba (retrocruza) entre un organismo de fenotipo dominante para dos genes y un homocigota recesivo (AaBb x aabb) se obtienen 4 fenotipos en proporciones 1:1:1:1, se concluye que:",
-      "opciones": [
-        "los dos genes se encuentran en pares de cromosomas homólogos distintos y segregan independientemente.",
-        "los dos genes están completamente ligados sin entrecruzamiento.",
-        "ocurrió una mutación por corrimiento del marco de lectura.",
-        "el progenitor de fenotipo dominante era homocigota estricto."
-      ],
-      "correcta": "A",
-      "explicacion": "La proporción 1:1:1:1 en una retrocruza demuestra la segregación independiente de dos loci (Segunda Ley de Mendel)."
     }
   ]
 }

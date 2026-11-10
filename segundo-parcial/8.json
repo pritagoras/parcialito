@@ -47,17 +47,6 @@
       "explicacion": "La célula epitelial en la transición G2/M ya ha duplicado su ADN en la fase S, conteniendo un valor de 4C de ADN, superior al valor de G0/G1 (2C) o haploide (1C)."
     },
     {
-      "pregunta": "¿Cuál de los siguientes fenómenos genéticos o celulares puede ocurrir indistintamente en organismos con reproducción sexual o asexual?",
-      "opciones": [
-        "La segregación independiente de los cromosomas homólogos.",
-        "La mutación en la secuencia génica del ADN.",
-        "El entrecruzamiento cromosómico (crossing-over).",
-        "La no disyunción meiótica."
-      ],
-      "correcta": "B",
-      "explicacion": "Las mutaciones ocurren por errores aleatorios durante la replicación o por agentes mutágenos, sucediendo tanto en organismos de reproducción asexual como sexual."
-    },
-    {
       "pregunta": "El cese casi total de la actividad de transcripción génica en el núcleo es una característica propia de la fase del ciclo celular denominada:",
       "opciones": [
         "Fase G1, cuando la célula crece y mantiene una intensa actividad biosintética.",
@@ -355,28 +344,6 @@
       "explicacion": "La proporción fenotípica 3:1 en la descendencia es la prueba mendeliana clásica de un cruzamiento monohíbrido entre dos individuos heterocigotas (Aa x Aa)."
     },
     {
-      "pregunta": "Al cruzar dos individuos heterocigotas para dos genes independientes con dominancia completa (AaBb x AaBb), la proporción de descendientes que expresan ambos caracteres dominantes es del:",
-      "opciones": [
-        "1/16",
-        "3/16",
-        "9/16",
-        "100%"
-      ],
-      "correcta": "C",
-      "explicacion": "En el cruzamiento dihíbrido mendeliano, la segregación independiente origina la proporción fenotípica 9:3:3:1, donde 9/16 expresan ambos rasgos dominantes."
-    },
-    {
-      "pregunta": "Un hombre afectado por una enfermedad dominante ligada al cromosoma X (X D Y) concibe con una mujer sana (X d X d). Se cumple que:",
-      "opciones": [
-        "todos sus hijos varones serán enfermos.",
-        "el 50% de sus hijos varones heredará la afección.",
-        "el 100% de sus hijas mujeres heredará la enfermedad.",
-        "ninguna de sus hijas resultará afectada."
-      ],
-      "correcta": "C",
-      "explicacion": "El padre afectado transmite obligadamente su único cromosoma X D a todas sus hijas mujeres, quienes manifestarán el fenotipo patológico dominante."
-    },
-    {
       "pregunta": "Al cruzar dos caballos heterocigotas de pelaje negro (Bb x Bb), la probabilidad de obtener un descendiente de genotipo homocigota dominante (BB) es del:",
       "opciones": [
         "100%",
@@ -410,17 +377,6 @@
       "explicacion": "Para tener una hija recesiva (aa), ambos padres deben ser heterocigotas (Aa). La probabilidad de transmitir ambos alelos recesivos en cada nuevo embarazo es del 25% (1/4)."
     },
     {
-      "pregunta": "Un hombre afectado por una anomalía dominante ligada al cromosoma X (X D Y) y una mujer normal (X d X d) tienen un hijo varón. La probabilidad de que el varón esté enfermo es de:",
-      "opciones": [
-        "0",
-        "1/2",
-        "3/4",
-        "1"
-      ],
-      "correcta": "A",
-      "explicacion": "Los hijos varones reciben el cromosoma Y del padre y un cromosoma X d normal de la madre, por lo que resulta imposible que hereden la enfermedad paterna."
-    },
-    {
       "pregunta": "Una célula muscular y una célula epitelial provenientes del mismo individuo adulto se caracterizan por:",
       "opciones": [
         "presentar genomas nucleares distintos porque cada tejido pierde genes que no utiliza.",
@@ -441,17 +397,6 @@
       ],
       "correcta": "B",
       "explicacion": "Al ser un organismo diploide (2n), cada individuo solo posee dos cromosomas homólogos por par y, por ende, únicamente dos alelos por locus en sus células somáticas."
-    },
-    {
-      "pregunta": "¿Cuál de las siguientes causas NO contribuye al incremento de la variabilidad genética entre generaciones?",
-      "opciones": [
-        "El entrecruzamiento de segmentos entre cromátides hermanas durante la profase I.",
-        "La segregación aleatoria de cromosomas homólogos en la anafase I.",
-        "El entrecruzamiento entre cromátidas no hermanas de cromosomas homólogos.",
-        "La fecundación al azar entre gametas."
-      ],
-      "correcta": "A",
-      "explicacion": "Las cromátides hermanas son copias idénticas sintetizadas durante la replicación; el intercambio entre ellas no genera combinaciones alélicas nuevas, a diferencia del crossing-over entre homólogos."
     },
     {
       "pregunta": "El complejo de poro nuclear se define estructuralmente como una barrera que:",

@@ -80,17 +80,6 @@
       "explicacion": "La transcripción es una vía anabólica de biosíntesis de polímeros que requiere un aporte de energía química."
     },
     {
-      "pregunta": "Un individuo heterocigota para dos genes independientes (AaBb) ubicados en distintos pares de homólogos producirá las gametas:",
-      "opciones": [
-        "AB, Ab y ab solamente.",
-        "Aa y Bb únicamente.",
-        "AB, Ab, aB y ab.",
-        "Ab y aB exclusivamente."
-      ],
-      "correcta": "C",
-      "explicacion": "Debido a la segregación independiente de loci no ligados, el diheterocigota produce cuatro tipos de gametas en igual proporción."
-    },
-    {
       "pregunta": "Durante la síntesis de ARN en el proceso transcripcional, la ARN polimerasa:",
       "opciones": [
         "incorpora desoxirribonucleótidos sobre la cadena codificante.",
@@ -155,17 +144,6 @@
       ],
       "correcta": "D",
       "explicacion": "Cuando un codón de terminación (UAA, UAG o UGA) ingresa al sitio A, es reconocido por un factor de liberación que hidroliza el complejo."
-    },
-    {
-      "pregunta": "El crossing-over y la separación de las cromátidas recombinantes toman lugar respectivamente en:",
-      "opciones": [
-        "Profase I y Anafase II meiótica.",
-        "Profase II y Anafase II meiótica.",
-        "Profase I y Metafase I meiótica.",
-        "Profase I y Telofase II meiótica."
-      ],
-      "correcta": "A",
-      "explicacion": "El entrecruzamiento o crossing-over ocurre en el paquitene de la profase I, mientras que las cromátidas recombinantes se segregan en la anafase II."
     },
     {
       "pregunta": "Una célula somática masculina que iniciará la mitosis contiene en su núcleo:",
@@ -496,17 +474,6 @@
       ],
       "correcta": "C",
       "explicacion": "Durante la anafase se inactivan las cohesinas centroméricas, permitiendo que las cromátidas se separen y migren a los polos opuestos impulsadas por el huso."
-    },
-    {
-      "pregunta": "Un hombre es hemofílico (enfermedad recesiva ligada al cromosoma X). Sabiendo que su madre era portadora y su padre sano, se concluye que el alelo mutado:",
-      "opciones": [
-        "fue heredado de su padre a través del cromosoma Y.",
-        "fue heredado de su madre a través del cromosoma X.",
-        "surgió por una mutación somática espontánea en su tejido muscular.",
-        "fue aportado por el gameto paterno en el cromosoma X."
-      ],
-      "correcta": "B",
-      "explicacion": "Los varones heredan de su madre el cromosoma X. Al ser la madre portadora (XH Xh), transmitió el cromosoma Xh afectado a su hijo."
     },
     {
       "pregunta": "La alineación cromosómica en la placa ecuatorial del huso mitótico sucede durante la:",

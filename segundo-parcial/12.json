@@ -276,17 +276,6 @@
       ],
       "correcta": "A",
       "explicacion": "En la metafase I meiótica, los cromosomas homólogos duplicados se alinean en parejas (bivalentes o tétradas) a ambos lados del plano ecuatorial."
-    },
-    {
-      "pregunta": "Un varón afectado por una mutación recesiva ligada al cromosoma X (X b Y) transmitirá el alelo mutado a:",
-      "opciones": [
-        "el 100% de sus hijas mujeres y a ninguno de sus hijos varones.",
-        "el 50% de sus hijos varones únicamente.",
-        "todos sus descendientes de ambos sexos por igual.",
-        "únicamente a sus nietos varones a través de su hijo."
-      ],
-      "correcta": "A",
-      "explicacion": "El padre aporta su único cromosoma X a sus hijas mujeres (convirtiéndolas en portadoras obligadas) y aporta el cromosoma Y a sus hijos varones."
     }
   ]
 }

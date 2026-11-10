@@ -91,17 +91,6 @@
       "explicacion": "En ambos dominios biológicos, las ADN polimerasas no pueden iniciar la síntesis *de novo* y precisan un cebador generado por una ARN primasa."
     },
     {
-      "pregunta": "Para que una mutación inducida por agentes ambientales o radiación sea transmitida a la descendencia de un organismo, debe afectar al ADN de:",
-      "opciones": [
-        "las células del tejido epitelial.",
-        "las células musculares estriadas.",
-        "las células germinales que originan los gametos.",
-        "las células somáticas del sistema nervioso."
-      ],
-      "correcta": "C",
-      "explicacion": "Solo las mutaciones presentes en la línea germinal pueden transmitirse mediante la fecundación a la siguiente generación."
-    },
-    {
       "pregunta": "El estudio del cariotipo humano resulta una técnica útil en el diagnóstico clínico para:",
       "opciones": [
         "secuenciar las mutaciones puntuales responsables de la hemofilia.",
@@ -201,17 +190,6 @@
       "explicacion": "La pérdida del aislamiento lipídico de la mielina disipa la corriente eléctrica, reduciendo drásticamente la velocidad de despolarización y conducción del impulso."
     },
     {
-      "pregunta": "Si una mujer portadora del alelo de la hemofilia (X H X h) concibe con un hombre sano (X H Y), la probabilidad de tener un hijo varón o una hija mujer hemofílicos es respectivamente del:",
-      "opciones": [
-        "50% para varones y 50% para mujeres.",
-        "0% para varones y 100% para mujeres.",
-        "50% para los varones y 0% para las hijas mujeres.",
-        "100% para varones y 0% para mujeres."
-      ],
-      "correcta": "D",
-      "explicacion": "Los varones tienen un 50% de probabilidad de recibir el cromosoma X h de la madre; las hijas reciben siempre el cromosoma X H sano del padre, por lo que ninguna será hemofílica."
-    },
-    {
       "pregunta": "Una mujer de grupo sanguíneo O (ii) se casó con un hombre de grupo AB (I A I B). Respecto a la descendencia se afirma correctamente que:",
       "opciones": [
         "todos los hijos manifestarán el grupo AB.",
@@ -221,28 +199,6 @@
       ],
       "correcta": "B",
       "explicacion": "En el cruce ii × IᴬIᴮ, la madre solo aporta i y el padre aporta Iᴬ o Iᴮ. La descendencia será 50% Iᴬi (grupo A) y 50% Iᴮi (grupo B), independientemente del sexo; no se esperan hijos de grupo O ni AB."
-    },
-    {
-      "pregunta": "En las enfermedades con patrón de herencia recesivo ligado al cromosoma X, el gen mutado se ubica en:",
-      "opciones": [
-        "un autosoma homólogo.",
-        "el cromosoma sexual X.",
-        "el cromosoma sexual Y.",
-        "el ADN mitocondrial exclusivamente."
-      ],
-      "correcta": "B",
-      "explicacion": "Las afecciones ligadas al sexo recesivas corresponden a loci ubicados en el cromosoma X, expresándose fenotípicamente en varones hemicigotas."
-    },
-    {
-      "pregunta": "Si dos progenitores sanos conciben un primer hijo afectado simultáneamente por albinismo y fenilcetonuria (ambas enfermedades autosómicas recesivas independientes), la probabilidad de que su próximo hijo también manifieste ambas condiciones es de:",
-      "opciones": [
-        "1/4",
-        "1/2",
-        "1/16",
-        "1/8"
-      ],
-      "correcta": "C",
-      "explicacion": "Al ser sanos con un hijo recesivo, ambos padres son diheterocigotas (AaPp). La probabilidad de ser albino es 1/4 y de tener fenilcetonuria es 1/4; combinadas es 1/4 x 1/4 = 1/16."
     },
     {
       "pregunta": "Un par de cromosomas homólogos se caracteriza estructuralmente por:",

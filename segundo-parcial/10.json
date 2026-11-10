@@ -14,17 +14,6 @@
       "explicacion": "En el período G1 previo a la fase S, la célula diploide posee 8 cromosomas constituidos por una sola cromátide (8 moléculas de ADN)."
     },
     {
-      "pregunta": "Un hombre de visión normal y una mujer de visión normal tienen una hija que se casa con un hombre sano y da a luz a un hijo varón daltónico. De esta línea genealógica se deduce directamente que:",
-      "opciones": [
-        "todos los hijos varones de la mujer serán daltónicos.",
-        "la madre de la mujer era portadora obligada del alelo para la ceguera al color.",
-        "la mujer es portadora del alelo recesivo de la ceguera a los colores ligado al X.",
-        "el padre de la mujer era daltónico."
-      ],
-      "correcta": "C",
-      "explicacion": "Para transmitir el cromosoma X con el alelo recesivo del daltonismo a su hijo varón, la madre debe ser heterocigota portadora del rasgo ligado al sexo."
-    },
-    {
       "pregunta": "En las células de mamíferos, el proceso de importación de proteínas histónicas desde el citosol hacia el nucleoplasma requiere de:",
       "opciones": [
         "la presencia de una secuencia de localización nuclear (NLS) reconocida por una importina.",
@@ -243,28 +232,6 @@
       ],
       "correcta": "A",
       "explicacion": "El cruzamiento entre el genotipo I^B I^B y el genotipo I^A I^A origina exclusivamente el genotipo codominante I^A I^B (grupo AB)."
-    },
-    {
-      "pregunta": "Una mujer portadora del alelo de la hemofilia (X H X h) concibe con un varón sano (X H Y). La probabilidad de que sus hijos varones nazcan hemofílicos es de:",
-      "opciones": [
-        "0%",
-        "50%",
-        "25%",
-        "100%"
-      ],
-      "correcta": "B",
-      "explicacion": "Los hijos varones reciben el Y del padre; de la madre portadora tienen un 50% de probabilidad de heredar el cromosoma X h patológico."
-    },
-    {
-      "pregunta": "Un ratón albino de pelo largo (homocigota recesivo aall) se cruza con una hembra. Si el 50% de la descendencia es de pelo negro y corto y el 50% es de pelo negro y largo, se deduce que la hembra es:",
-      "opciones": [
-        "homocigota dominante para el color de pelo y heterocigota para la longitud.",
-        "heterocigota para ambos caracteres.",
-        "homocigota recesiva para el color y el largo.",
-        "heterocigota para el color y homocigota recesiva para el largo."
-      ],
-      "correcta": "A",
-      "explicacion": "Al obtener 100% de pelo negro la hembra es AA; la segregación 1:1 en la longitud del pelo evidencia que la hembra es Ll (AaLl x aall)."
     },
     {
       "pregunta": "La estructura conocida como nucleosoma está compuesta molecularmente por:",
