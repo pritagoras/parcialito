@@ -23,6 +23,7 @@ import { abrirComparadores, TITULO as TITULO_COMPARADORES } from './comparadores
 import { abrirLab } from './lab.js?v=20261107-4';
 import { abrirGuiaKuhn } from './guia-kuhn.js?v=dev';
 import { abrirTelomeros, TITULO as TITULO_TELOMEROS } from './telomeros.js?v=20261027-1';
+import { abrirAtlasCromosomas, TITULO as TITULO_ATLAS_CROMOSOMAS } from './atlas-cromosomas.js?v=20261110-1';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -34,6 +35,7 @@ const ACTIVIDADES = {
   horquilla: { titulo: TITULO_HORQUILLA, icono: '🧪', abrir: abrirHorquilla },
   bases: { titulo: TITULO_BASES, icono: '🧬', abrir: abrirBases },
   telomeros: { titulo: TITULO_TELOMEROS, icono: '🧢', abrir: abrirTelomeros },
+  'atlas-cromosomas': { titulo: TITULO_ATLAS_CROMOSOMAS, icono: '🧬', abrir: abrirAtlasCromosomas },
   operones: { titulo: TITULO_OPERONES, icono: '🧫', abrir: abrirOperones },
   comunicacion: { titulo: TITULO_COMUNICACION, icono: '⚡', abrir: abrirComunicacion },
   'proteina-g': { titulo: TITULO_PROTEINA_G, icono: '🧪', abrir: abrirProteinaG },
@@ -1290,6 +1292,9 @@ function actividadesDe(m) {
     lista.push({ clave: 'operones', titulo: ACTIVIDADES.operones.titulo, icono: ACTIVIDADES.operones.icono, tema: null });
     lista.push({ clave: 'comunicacion', titulo: ACTIVIDADES.comunicacion.titulo, icono: ACTIVIDADES.comunicacion.icono, tema: null });
     lista.push({ clave: 'proteina-g', titulo: ACTIVIDADES['proteina-g'].titulo, icono: ACTIVIDADES['proteina-g'].icono, tema: null });
+    if (m.id === 'biologia-celular2') {
+      lista.push({ clave: 'atlas-cromosomas', titulo: TITULO_ATLAS_CROMOSOMAS, icono: '🧬', tema: null });
+    }
     const temaCuadro = m.temas.find(t => [].concat(t.actividad || []).includes('cuadro'));
     if (temaCuadro) lista.push({ clave: 'comparadores', titulo: TITULO_COMPARADORES, icono: '⚖️', tema: temaCuadro });
   }
