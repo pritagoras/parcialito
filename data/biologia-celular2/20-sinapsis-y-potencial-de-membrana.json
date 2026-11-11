@@ -1,0 +1,446 @@
+{
+  "materia": "Biología 2",
+  "tema": "Sinapsis y potencial de membrana",
+  "preguntas": [
+    {
+      "pregunta": "En una neurona en reposo, ¿dónde se encuentra la mayor concentración de Na⁺?",
+      "opciones": [
+        "Afuera de la célula",
+        "Dentro de la célula",
+        "En cantidades iguales a ambos lados",
+        "Solamente en el núcleo"
+      ],
+      "correcta": "A",
+      "explicacion": "El sodio (Na⁺) está mucho más concentrado en el líquido extracelular que en el citoplasma."
+    },
+    {
+      "pregunta": "En una neurona en reposo, ¿dónde se encuentra la mayor concentración de K⁺?",
+      "opciones": [
+        "En el espacio extracelular",
+        "Dentro de la célula",
+        "En la hendidura sináptica exclusivamente",
+        "En cantidades iguales a ambos lados"
+      ],
+      "correcta": "B",
+      "explicacion": "El potasio (K⁺) está más concentrado dentro de la neurona."
+    },
+    {
+      "pregunta": "¿Cómo es normalmente el potencial de membrana de una neurona en reposo?",
+      "opciones": [
+        "El interior es positivo respecto del exterior",
+        "No existe diferencia de cargas",
+        "El interior es negativo respecto del exterior",
+        "Ambos lados tienen siempre carga neutra"
+      ],
+      "correcta": "C",
+      "explicacion": "En reposo, el interior neuronal es relativamente negativo; suele aproximarse a −70 mV."
+    },
+    {
+      "pregunta": "¿Qué describe mejor el potencial de reposo?",
+      "opciones": [
+        "Una diferencia de potencial eléctrico entre el interior y el exterior de la membrana",
+        "La ausencia total de iones",
+        "La liberación de neurotransmisores",
+        "La apertura permanente de todos los canales"
+      ],
+      "correcta": "A",
+      "explicacion": "El potencial de reposo es la diferencia de voltaje a través de la membrana cuando la neurona no está generando un potencial de acción."
+    },
+    {
+      "pregunta": "¿Qué ion atraviesa principalmente la membrana hacia el interior durante la fase ascendente de un potencial de acción?",
+      "opciones": [
+        "Cl⁻",
+        "K⁺",
+        "Ca²⁺ exclusivamente",
+        "Na⁺"
+      ],
+      "correcta": "D",
+      "explicacion": "La apertura de canales de Na⁺ dependientes de voltaje permite la entrada rápida de sodio y despolariza la membrana."
+    },
+    {
+      "pregunta": "¿Qué sucede con el potencial de membrana durante la despolarización?",
+      "opciones": [
+        "Se vuelve más negativo",
+        "Se vuelve menos negativo y puede hacerse positivo",
+        "No cambia",
+        "La neurona pierde todos sus iones"
+      ],
+      "correcta": "B",
+      "explicacion": "La entrada de cargas positivas, principalmente Na⁺, hace que el interior sea menos negativo."
+    },
+    {
+      "pregunta": "¿Qué provoca la apertura de los canales de Na⁺ dependientes de voltaje?",
+      "opciones": [
+        "La llegada de la membrana al umbral",
+        "La unión de ATP al neurotransmisor",
+        "La salida de vesículas sinápticas",
+        "La acción directa de la bomba sodio-potasio en cada canal"
+      ],
+      "correcta": "A",
+      "explicacion": "Al alcanzar el umbral se abren canales de Na⁺ regulados por voltaje y se inicia la despolarización rápida."
+    },
+    {
+      "pregunta": "Durante la repolarización del potencial de acción, ¿qué ocurre principalmente?",
+      "opciones": [
+        "Entra Na⁺ masivamente",
+        "Entra glucosa",
+        "Sale K⁺ de la neurona",
+        "Sale Ca²⁺ de las vesículas"
+      ],
+      "correcta": "C",
+      "explicacion": "La inactivación de canales de Na⁺ y la apertura de canales de K⁺ permiten la salida de potasio y el retorno hacia valores negativos."
+    },
+    {
+      "pregunta": "¿Qué ion sale principalmente durante la repolarización?",
+      "opciones": [
+        "Sodio",
+        "Potasio",
+        "Cloruro",
+        "Calcio"
+      ],
+      "correcta": "B",
+      "explicacion": "La salida de K⁺ contribuye a recuperar la negatividad del interior celular."
+    },
+    {
+      "pregunta": "¿Qué es la hiperpolarización posterior al potencial de acción?",
+      "opciones": [
+        "Una inversión permanente de la membrana",
+        "La entrada de Na⁺ que inicia otro potencial",
+        "La desaparición del gradiente iónico",
+        "Un potencial más negativo que el valor de reposo"
+      ],
+      "correcta": "D",
+      "explicacion": "Algunos canales de K⁺ tardan en cerrarse, por lo que continúa saliendo K⁺ y el potencial se vuelve transitoriamente más negativo que el reposo."
+    },
+    {
+      "pregunta": "¿Qué característica tienen los canales iónicos dependientes de voltaje?",
+      "opciones": [
+        "Se abren o cierran ante cambios del potencial de membrana",
+        "Transportan siempre iones sin regulación",
+        "Se abren solamente al unirse un neurotransmisor",
+        "Utilizan ATP para bombear iones contra gradiente"
+      ],
+      "correcta": "A",
+      "explicacion": "Estos canales responden a cambios eléctricos de la membrana, como los que ocurren durante un potencial de acción."
+    },
+    {
+      "pregunta": "¿Qué caracteriza a un canal iónico dependiente de ligando?",
+      "opciones": [
+        "Se abre cuando la membrana alcanza −70 mV",
+        "Bombea tres sodios hacia afuera",
+        "Se abre cuando una molécula señal, como un neurotransmisor, se une a él",
+        "Sintetiza neurotransmisores"
+      ],
+      "correcta": "C",
+      "explicacion": "La unión del ligando al receptor-canal modifica su conformación y permite el paso selectivo de iones."
+    },
+    {
+      "pregunta": "¿Cuál es la función principal de la bomba Na⁺/K⁺-ATPasa?",
+      "opciones": [
+        "Producir neurotransmisores",
+        "Mantener los gradientes de Na⁺ y K⁺ usando energía de ATP",
+        "Abrir canales de calcio en la terminal axónica",
+        "Transportar sodio y potasio a favor de sus gradientes sin energía"
+      ],
+      "correcta": "B",
+      "explicacion": "La bomba utiliza ATP para transportar iones contra sus gradientes y contribuir al mantenimiento de las condiciones iónicas de reposo."
+    },
+    {
+      "pregunta": "En cada ciclo, ¿cuántos iones transporta la bomba Na⁺/K⁺-ATPasa?",
+      "opciones": [
+        "2 Na⁺ hacia afuera y 3 K⁺ hacia adentro",
+        "3 Na⁺ hacia adentro y 2 K⁺ hacia afuera",
+        "2 Na⁺ y 2 K⁺ hacia afuera",
+        "3 Na⁺ hacia afuera y 2 K⁺ hacia adentro"
+      ],
+      "correcta": "D",
+      "explicacion": "Por cada ATP hidrolizado, expulsa tres Na⁺ e introduce dos K⁺."
+    },
+    {
+      "pregunta": "¿Por qué la bomba sodio-potasio necesita ATP?",
+      "opciones": [
+        "Porque mueve Na⁺ y K⁺ contra sus gradientes electroquímicos",
+        "Porque permite que los iones atraviesen canales abiertos a favor del gradiente",
+        "Porque libera neurotransmisores",
+        "Porque transforma sodio en potasio"
+      ],
+      "correcta": "A",
+      "explicacion": "El transporte activo contra gradiente requiere energía, que aporta la hidrólisis de ATP."
+    },
+    {
+      "pregunta": "¿La bomba Na⁺/K⁺ es la responsable directa de la fase rápida de despolarización?",
+      "opciones": [
+        "Sí, porque introduce tres sodios",
+        "Sí, porque abre canales de voltaje",
+        "No; la despolarización rápida se debe principalmente a la entrada de Na⁺ por canales dependientes de voltaje",
+        "No; la despolarización ocurre por salida de K⁺"
+      ],
+      "correcta": "C",
+      "explicacion": "La bomba mantiene gradientes a largo plazo; la fase rápida del potencial de acción depende de canales de Na⁺ regulados por voltaje."
+    },
+    {
+      "pregunta": "¿Qué significa que la bomba Na⁺/K⁺ sea electrogénica?",
+      "opciones": [
+        "Que produce neurotransmisores eléctricos",
+        "Que expulsa más cargas positivas de las que introduce en cada ciclo",
+        "Que no necesita energía",
+        "Que transporta la misma cantidad de cargas en ambos sentidos"
+      ],
+      "correcta": "B",
+      "explicacion": "Saca tres cargas positivas e introduce dos, por lo que genera una salida neta de una carga positiva por ciclo."
+    },
+    {
+      "pregunta": "¿Qué es una sinapsis?",
+      "opciones": [
+        "Una división del núcleo neuronal",
+        "Un tipo de mitocondria",
+        "Una unión exclusiva entre axones",
+        "Una zona especializada de comunicación entre una neurona y otra célula"
+      ],
+      "correcta": "D",
+      "explicacion": "La sinapsis permite transmitir información desde una célula presináptica hacia una postsináptica o célula efectora."
+    },
+    {
+      "pregunta": "¿Qué es la hendidura o espacio sináptico?",
+      "opciones": [
+        "El pequeño espacio entre las membranas de las células que participan en una sinapsis química",
+        "El interior de la vesícula sináptica",
+        "El espacio dentro del núcleo",
+        "El citoplasma de la neurona presináptica"
+      ],
+      "correcta": "A",
+      "explicacion": "En la sinapsis química, la hendidura sináptica separa la terminal presináptica de la membrana postsináptica."
+    },
+    {
+      "pregunta": "¿Qué estructura contiene neurotransmisores en la terminal presináptica?",
+      "opciones": [
+        "Los lisosomas",
+        "Los ribosomas",
+        "Las vesículas sinápticas",
+        "Los microtúbulos del núcleo"
+      ],
+      "correcta": "C",
+      "explicacion": "Las vesículas sinápticas almacenan neurotransmisores y pueden fusionarse con la membrana presináptica."
+    },
+    {
+      "pregunta": "¿Qué evento suele iniciar la liberación de neurotransmisores en una sinapsis química?",
+      "opciones": [
+        "La salida de Na⁺ desde el núcleo",
+        "La llegada del potencial de acción a la terminal y la apertura de canales de Ca²⁺",
+        "La entrada de K⁺ a las vesículas",
+        "La acción de la bomba sodio-potasio dentro de la hendidura"
+      ],
+      "correcta": "B",
+      "explicacion": "La despolarización de la terminal abre canales de Ca²⁺ dependientes de voltaje; el ingreso de calcio desencadena la exocitosis."
+    },
+    {
+      "pregunta": "¿Qué función cumple el Ca²⁺ en la terminal presináptica?",
+      "opciones": [
+        "Impide la fusión de vesículas",
+        "Destruye los neurotransmisores",
+        "Repolariza por sí solo todo el axón",
+        "Favorece la fusión de vesículas con la membrana y la liberación del neurotransmisor"
+      ],
+      "correcta": "D",
+      "explicacion": "El aumento local de Ca²⁺ activa la maquinaria de fusión vesicular y promueve la exocitosis."
+    },
+    {
+      "pregunta": "Una vez liberado, ¿cómo llega el neurotransmisor a la membrana postsináptica?",
+      "opciones": [
+        "Difunde a través de la hendidura sináptica",
+        "Viaja por el interior del axón postsináptico",
+        "Es bombeado por la Na⁺/K⁺-ATPasa",
+        "Se convierte en un canal iónico"
+      ],
+      "correcta": "A",
+      "explicacion": "El neurotransmisor atraviesa por difusión el espacio sináptico y puede unirse a receptores postsinápticos."
+    },
+    {
+      "pregunta": "¿Qué sucede cuando un neurotransmisor se une a un receptor ionotrópico?",
+      "opciones": [
+        "Se activa directamente la transcripción del ADN",
+        "Se degrada la membrana",
+        "Se abre o cierra un canal iónico asociado al receptor",
+        "Se forma una nueva vesícula presináptica"
+      ],
+      "correcta": "C",
+      "explicacion": "Los receptores ionotrópicos son canales activados por ligando y producen respuestas postsinápticas rápidas."
+    },
+    {
+      "pregunta": "¿Qué diferencia básica existe entre receptores ionotrópicos y metabotrópicos?",
+      "opciones": [
+        "Los dos son siempre canales de Na⁺",
+        "Los ionotrópicos son canales; los metabotrópicos actúan mediante proteínas y cascadas de señalización",
+        "Los metabotrópicos están solo en el núcleo",
+        "Los ionotrópicos necesitan siempre ATP para bombear iones"
+      ],
+      "correcta": "B",
+      "explicacion": "Los ionotrópicos regulan directamente un canal; los metabotrópicos activan mecanismos intracelulares que modulan canales u otras funciones."
+    },
+    {
+      "pregunta": "¿Qué es un potencial postsináptico excitatorio (PPSE)?",
+      "opciones": [
+        "Una señal que siempre bloquea el potencial de acción",
+        "La liberación de K⁺ desde el núcleo",
+        "Una hiperpolarización obligatoria",
+        "Un cambio que acerca el potencial de membrana al umbral y aumenta la probabilidad de disparo"
+      ],
+      "correcta": "D",
+      "explicacion": "Un PPSE suele despolarizar la membrana postsináptica y aumentar la probabilidad de alcanzar el umbral."
+    },
+    {
+      "pregunta": "¿Qué es un potencial postsináptico inhibitorio (PPSI)?",
+      "opciones": [
+        "Un cambio que aleja el potencial de membrana del umbral o reduce la excitabilidad",
+        "Una señal que siempre genera un potencial de acción",
+        "La entrada obligatoria de Na⁺",
+        "La liberación de neurotransmisores hacia la sangre"
+      ],
+      "correcta": "A",
+      "explicacion": "Un PPSI suele hiperpolarizar o estabilizar la membrana, haciendo menos probable que alcance el umbral."
+    },
+    {
+      "pregunta": "¿Qué iones participan frecuentemente en respuestas postsinápticas inhibitorias?",
+      "opciones": [
+        "Solamente Na⁺",
+        "Solamente ATP",
+        "Cl⁻ y/o K⁺",
+        "Solamente glucosa"
+      ],
+      "correcta": "C",
+      "explicacion": "La entrada de Cl⁻ o la salida de K⁺ puede inhibir al volver el interior más negativo o estabilizarlo."
+    },
+    {
+      "pregunta": "¿Qué ocurre con el neurotransmisor después de cumplir su función?",
+      "opciones": [
+        "Permanece unido para siempre al receptor",
+        "Puede ser recaptado, degradado enzimáticamente o difundirse fuera de la hendidura",
+        "Se transforma en ADN",
+        "Es bombeado al núcleo postsináptico"
+      ],
+      "correcta": "B",
+      "explicacion": "La señal debe finalizar; según el neurotransmisor, puede haber recaptación, degradación enzimática o difusión."
+    },
+    {
+      "pregunta": "¿Qué es la recaptación de un neurotransmisor?",
+      "opciones": [
+        "La apertura de canales de Na⁺",
+        "La salida de K⁺ durante la repolarización",
+        "La fusión de vesículas con la membrana",
+        "El transporte del neurotransmisor desde el espacio sináptico hacia la célula que lo liberó o células cercanas"
+      ],
+      "correcta": "D",
+      "explicacion": "Transportadores específicos retiran neurotransmisores de la hendidura y contribuyen a terminar la señal."
+    },
+    {
+      "pregunta": "¿Qué caracteriza a una sinapsis eléctrica?",
+      "opciones": [
+        "Las células se comunican mediante uniones comunicantes que permiten el paso directo de corriente iónica",
+        "Siempre utiliza vesículas con neurotransmisores",
+        "Tiene una hendidura química amplia",
+        "Es necesariamente más lenta que la química"
+      ],
+      "correcta": "A",
+      "explicacion": "Las uniones gap conectan eléctricamente células vecinas y permiten el paso directo de iones y pequeñas moléculas."
+    },
+    {
+      "pregunta": "¿Qué caracteriza a una sinapsis química?",
+      "opciones": [
+        "El citoplasma de ambas células queda siempre conectado",
+        "No utiliza receptores",
+        "Utiliza neurotransmisores liberados en una hendidura sináptica",
+        "No presenta retraso en la transmisión"
+      ],
+      "correcta": "C",
+      "explicacion": "La señal se transmite mediante liberación de mensajeros químicos que se unen a receptores de la célula postsináptica."
+    },
+    {
+      "pregunta": "En general, ¿qué diferencia funcional suele existir entre sinapsis eléctrica y química?",
+      "opciones": [
+        "La eléctrica siempre es unidireccional y lenta",
+        "La eléctrica suele ser muy rápida y puede ser bidireccional; la química suele ser más lenta y generalmente unidireccional",
+        "La química no permite regular la señal",
+        "La eléctrica requiere neurotransmisores"
+      ],
+      "correcta": "B",
+      "explicacion": "La conexión directa de las uniones gap permite transmisión muy rápida; la sinapsis química incorpora liberación y unión de neurotransmisores."
+    },
+    {
+      "pregunta": "¿Qué lado de una sinapsis química libera el neurotransmisor?",
+      "opciones": [
+        "La membrana postsináptica",
+        "Ambas membranas siempre al mismo tiempo",
+        "La hendidura sináptica",
+        "La terminal presináptica"
+      ],
+      "correcta": "D",
+      "explicacion": "La terminal presináptica contiene vesículas que liberan neurotransmisor por exocitosis."
+    },
+    {
+      "pregunta": "¿Dónde se encuentran habitualmente los receptores que reconocen al neurotransmisor?",
+      "opciones": [
+        "En la membrana postsináptica",
+        "Dentro de las vesículas presinápticas",
+        "En el ADN del axón",
+        "En la bomba sodio-potasio"
+      ],
+      "correcta": "A",
+      "explicacion": "Los receptores postsinápticos reconocen el neurotransmisor y generan una respuesta en la célula receptora."
+    },
+    {
+      "pregunta": "¿Qué relación existe entre el potencial de acción y la liberación del neurotransmisor?",
+      "opciones": [
+        "El potencial de acción destruye las vesículas",
+        "El potencial de acción entra en la hendidura como una molécula",
+        "La despolarización de la terminal abre canales de Ca²⁺ y desencadena la liberación vesicular",
+        "El potencial de acción convierte K⁺ en neurotransmisor"
+      ],
+      "correcta": "C",
+      "explicacion": "La llegada del potencial de acción despolariza la terminal presináptica, abre canales de Ca²⁺ y el calcio promueve la exocitosis."
+    },
+    {
+      "pregunta": "¿Qué ocurre si se bloquean los canales de Ca²⁺ dependientes de voltaje de la terminal presináptica?",
+      "opciones": [
+        "Se libera más neurotransmisor en todos los casos",
+        "Disminuye mucho la liberación de neurotransmisor",
+        "La bomba sodio-potasio deja de existir",
+        "La hendidura sináptica se cierra físicamente"
+      ],
+      "correcta": "B",
+      "explicacion": "Sin el ingreso de Ca²⁺, la fusión de vesículas y la exocitosis del neurotransmisor se reducen marcadamente."
+    },
+    {
+      "pregunta": "¿Por qué una neurona puede integrar varias señales sinápticas?",
+      "opciones": [
+        "Porque cada sinapsis genera siempre un potencial de acción independiente",
+        "Porque los neurotransmisores se mezclan en el núcleo",
+        "Porque la bomba Na⁺/K⁺ suma ATP",
+        "Porque los potenciales postsinápticos excitatorios e inhibitorios pueden sumarse en el tiempo y el espacio"
+      ],
+      "correcta": "D",
+      "explicacion": "La neurona integra PPSE y PPSI; la suma resultante determina si se alcanza el umbral para generar un potencial de acción."
+    },
+    {
+      "pregunta": "¿Cuál es el orden correcto de los eventos en una sinapsis química?",
+      "opciones": [
+        "Potencial de acción → entrada de Ca²⁺ → exocitosis → difusión del neurotransmisor → unión a receptores",
+        "Unión al receptor → potencial de acción → síntesis de ATP → entrada de Ca²⁺",
+        "Exocitosis → repolarización → síntesis de ADN → unión al receptor",
+        "Entrada de K⁺ → liberación de Na⁺ → difusión de ATP"
+      ],
+      "correcta": "A",
+      "explicacion": "La secuencia general comienza con la llegada del potencial de acción, continúa con la entrada de Ca²⁺ y la liberación del neurotransmisor, y termina con su unión a receptores y eliminación."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes afirmaciones sobre el sodio y el potasio es correcta en una neurona en reposo?",
+      "opciones": [
+        "Hay más K⁺ afuera y más Na⁺ adentro",
+        "Ambos iones están concentrados solamente afuera",
+        "Hay más Na⁺ afuera y más K⁺ adentro",
+        "La concentración de ambos es idéntica a ambos lados"
+      ],
+      "correcta": "C",
+      "explicacion": "El gradiente típico es Na⁺ alto afuera y K⁺ alto adentro; estos gradientes son esenciales para la excitabilidad neuronal."
+    }
+  ]
+}
