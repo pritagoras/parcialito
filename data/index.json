@@ -273,6 +273,12 @@
           "nombre": "Fases de mitosis, meiosis y gametogénesis",
           "archivo": "data/biologia-celular2/19-fases-de-mitosis-meiosis-y-gametogenesis.json",
           "preguntas": 73
+        },
+        {
+          "id": "biologia-celular2/20-sinapsis-y-potencial-de-membrana",
+          "nombre": "Sinapsis y potencial de membrana",
+          "archivo": "data/biologia-celular2/20-sinapsis-y-potencial-de-membrana.json",
+          "preguntas": 40
         }
       ]
     },
