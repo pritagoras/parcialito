@@ -252,8 +252,8 @@
         "Plegamiento tridimensional de las cadenas polipeptídicas.",
         "Interacción codón-anticodón durante la traducción."
       ],
-      "correcta": "A",
-      "explicacion": "El plegamiento proteico depende de interacciones entre los residuos de aminoácidos (puentes disulfuro, interacciones hidrofóbicas, puentes de hidrógeno peptídicos) y no de bases de nucleótidos."
+      "correcta": "C",
+      "explicacion": "La replicación del ADN, la transcripción y la interacción codón-anticodón requieren apareamiento complementario entre bases nitrogenadas. En cambio, el plegamiento tridimensional de una proteína depende de las interacciones entre sus aminoácidos, no del apareamiento de bases."
     },
     {
       "pregunta": "Los codones CGU y CGC traducen ambos el aminoácido arginina. Esta característica demuestra que el código genético es:",
