@@ -311,15 +311,15 @@
       "explicacion": "El genoma procarionte posee un único origen de replicación (oriC) desde el cual dos horquillas avanzan en direcciones opuestas hasta completar el círculo."
     },
     {
-      "pregunta": "¿Qué combinación de procesos es característica de la expresión génica bacteriana?",
+      "pregunta": "Durante la replicación del ADN bacteriano, ¿qué función cumple la ADN polimerasa I en la hebra retrasada?",
       "opciones": [
-        "el retiro de los cebadores de ARN y el relleno de los espacios con ADN durante la maduración de los fragmentos de Okazaki.",
-        "eliminación de los cebadores de ARN y su reemplazo por ADN en la hebra retrasada.",
-        "la separación de las hebras parentales en el origen de replicación.",
-        "la síntesis de los cebadores de ARN necesarios para iniciar la replicación."
+        "sellar las discontinuidades entre fragmentos de ADN mediante la formación de enlaces fosfodiéster.",
+        "eliminar los cebadores de ARN y reemplazarlos por ADN en los fragmentos de Okazaki.",
+        "sintetizar los cebadores de ARN necesarios para iniciar cada fragmento de Okazaki.",
+        "separar las dos hebras parentales de ADN en la horquilla de replicación."
       ],
       "correcta": "B",
-      "explicacion": "La ADN polimerasa I bacteriana posee actividad exonucleasa 5'->3' especializada en degradar los cebadores de ARN y rellenar los huecos con ADN."
+      "explicacion": "La ADN polimerasa I bacteriana elimina los cebadores de ARN mediante su actividad exonucleasa 5'→3' y, simultáneamente, rellena los espacios con desoxirribonucleótidos. La ADN ligasa sella luego las discontinuidades restantes."
     },
     {
       "pregunta": "La actividad de corrección de pruebas (proofreading) durante la síntesis de ADN depende de la capacidad de la ADN polimerasa de actuar como:",
