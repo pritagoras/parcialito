@@ -454,17 +454,6 @@
       "explicacion": "Salvo células anucleadas como los eritrocitos, todas las células somáticas de un individuo contienen el juego completo de cromosomas, incluyendo el par sexual."
     },
     {
-      "pregunta": "¿Cuál de las siguientes funciones metabólicas es característica del Retículo Endoplásmico Liso (REL)?",
-      "opciones": [
-        "Síntesis de proteínas de exportación.",
-        "Almacenamiento y liberación de calcio intracelular.",
-        "Síntesis de enzimas digestivas lisosomales.",
-        "Modificación postraduccional con azúcares N-ligados."
-      ],
-      "correcta": "B",
-      "explicacion": "Además de la síntesis de lípidos y detoxificación, el REL funciona como el principal depósito de iones calcio dentro del citoplasma."
-    },
-    {
       "pregunta": "Si una célula somática se encuentra en la etapa G1 de la interfase:",
       "opciones": [
         "el Factor Promotor de la Mitosis (FPM) inducirá la división inmediata.",
@@ -881,17 +870,6 @@
       ],
       "correcta": "C",
       "explicacion": "Los virus son agregados macromoleculares acelulares que contienen ADN o ARN (pero no ambos simultáneamente) y dependen del entorno celular para replicarse."
-    },
-    {
-      "pregunta": "Los linfocitos B desempeñan un rol fundamental en la respuesta inmune adaptativa mediante:",
-      "opciones": [
-        "la inducción de la integración viral en el genoma huésped.",
-        "la síntesis y secreción de anticuerpos específicos contra antígenos.",
-        "la fagocitosis directa de bacterias y hongos.",
-        "la lisis de células infectadas por mecanismos citotóxicos."
-      ],
-      "correcta": "B",
-      "explicacion": "Al activarse y diferenciarse en células plasmáticas, los linfocitos B producen y liberan inmunoglobulinas (anticuerpos) específicas contra determinantes antigénicos."
     },
     {
       "pregunta": "Una bacteria y un mamífero como un perro comparten:",
