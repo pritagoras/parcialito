@@ -168,6 +168,9 @@
       const titulo = document.querySelector('.titulo-materia h1');
       const contenedor = document.querySelector('main.pantalla .temas');
       if (!titulo || !contenedor) return;
+      // Los estilos deben existir antes de insertar los botones; de lo contrario
+      // el navegador muestra el aspecto nativo blanco/celeste del elemento button.
+      instalarEstilos();
       try {
         const indice = await cargarIndice();
         const materia = indice.materias.find(m => m.nombre === titulo.textContent.trim());
