@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-10T02:58:38Z",
+  "generado": "2026-11-11T04:05:25Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -267,6 +267,12 @@
           "nombre": "Proteína G: Gs, Gi y Gq",
           "archivo": "data/biologia-celular2/18-proteina-g-gs-gi-gq.json",
           "preguntas": 38
+        },
+        {
+          "id": "biologia-celular2/19-fases-de-mitosis-meiosis-y-gametogenesis",
+          "nombre": "Fases de mitosis, meiosis y gametogénesis",
+          "archivo": "data/biologia-celular2/19-fases-de-mitosis-meiosis-y-gametogenesis.json",
+          "preguntas": 73
         }
       ]
     },
