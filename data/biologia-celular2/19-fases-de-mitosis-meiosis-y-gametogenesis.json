@@ -1,0 +1,809 @@
+{
+  "materia": "Biología 2",
+  "tema": "Fases de mitosis, meiosis y gametogénesis",
+  "preguntas": [
+    {
+      "pregunta": "Durante G1 del ciclo celular, ¿qué sucede principalmente?",
+      "opciones": [
+        "La célula crece, sintetiza proteínas y aumenta o renueva sus componentes.",
+        "Se separan las cromátidas hermanas.",
+        "Se aparean los cromosomas homólogos.",
+        "Se divide el citoplasma."
+      ],
+      "correcta": "A",
+      "explicacion": "G1 es una etapa de crecimiento y actividad metabólica. La célula produce componentes que necesitará para continuar el ciclo."
+    },
+    {
+      "pregunta": "¿En qué fase del ciclo celular se duplica el ADN?",
+      "opciones": [
+        "G2",
+        "S",
+        "G1",
+        "M"
+      ],
+      "correcta": "B",
+      "explicacion": "La fase S es la etapa de síntesis de ADN: cada cromosoma queda formado por dos cromátidas hermanas."
+    },
+    {
+      "pregunta": "Una célula ya duplicó su ADN y se prepara para comenzar la división. ¿En qué fase se encuentra?",
+      "opciones": [
+        "G1",
+        "S",
+        "G2",
+        "Citocinesis"
+      ],
+      "correcta": "C",
+      "explicacion": "En G2 la célula continúa creciendo, revisa el ADN duplicado y prepara componentes para la fase M."
+    },
+    {
+      "pregunta": "¿En qué fase de la mitosis la cromatina comienza a condensarse en cromosomas visibles?",
+      "opciones": [
+        "Telofase",
+        "Anafase",
+        "Metafase",
+        "Profase"
+      ],
+      "correcta": "D",
+      "explicacion": "En profase la cromatina se compacta y los cromosomas se hacen visibles. También comienza a organizarse el huso mitótico."
+    },
+    {
+      "pregunta": "¿En qué fase de la mitosis se desorganiza la envoltura nuclear y los microtúbulos del huso pueden acceder a los cromosomas?",
+      "opciones": [
+        "Prometafase",
+        "Telofase",
+        "Anafase",
+        "G1"
+      ],
+      "correcta": "A",
+      "explicacion": "En prometafase la envoltura nuclear se desorganiza y los microtúbulos del huso pueden unirse a los cinetocoros."
+    },
+    {
+      "pregunta": "Los cromosomas duplicados se ubican en el plano ecuatorial de la célula. ¿Qué fase de la mitosis está ocurriendo?",
+      "opciones": [
+        "Profase",
+        "Metafase",
+        "Telofase",
+        "Citocinesis"
+      ],
+      "correcta": "B",
+      "explicacion": "En metafase los cromosomas se alinean en el plano ecuatorial y quedan conectados al huso mitótico desde polos opuestos."
+    },
+    {
+      "pregunta": "¿En qué fase de la mitosis se separan las cromátidas hermanas y migran hacia polos opuestos?",
+      "opciones": [
+        "Profase",
+        "Metafase",
+        "Anafase",
+        "Telofase"
+      ],
+      "correcta": "C",
+      "explicacion": "En anafase se separan las cromátidas hermanas; desde ese momento cada una constituye un cromosoma independiente."
+    },
+    {
+      "pregunta": "La envoltura nuclear vuelve a formarse alrededor de cada conjunto de cromosomas. ¿En qué fase ocurre?",
+      "opciones": [
+        "Metafase",
+        "Prometafase",
+        "Anafase",
+        "Telofase"
+      ],
+      "correcta": "D",
+      "explicacion": "En telofase se reorganizan los núcleos hijos y los cromosomas comienzan a descondensarse."
+    },
+    {
+      "pregunta": "¿Cómo se llama la etapa en la que se divide el citoplasma para separar físicamente las células hijas?",
+      "opciones": [
+        "Citocinesis",
+        "Cariocinesis",
+        "Interfase",
+        "Sinapsis"
+      ],
+      "correcta": "A",
+      "explicacion": "La citocinesis divide el citoplasma. Suele coincidir temporalmente con la telofase o producirse hacia el final de ella."
+    },
+    {
+      "pregunta": "¿En qué fase de la mitosis comienza a organizarse el huso mitótico mientras los cromosomas se condensan?",
+      "opciones": [
+        "Anafase",
+        "Profase",
+        "Telofase",
+        "Citocinesis"
+      ],
+      "correcta": "B",
+      "explicacion": "El huso mitótico comienza a organizarse durante la profase y participa en el movimiento posterior de los cromosomas."
+    },
+    {
+      "pregunta": "¿En qué fase se produce la unión de los microtúbulos del huso a los cinetocoros de los cromosomas?",
+      "opciones": [
+        "Telofase",
+        "Anafase",
+        "Prometafase",
+        "G1"
+      ],
+      "correcta": "C",
+      "explicacion": "La unión de los microtúbulos a los cinetocoros ocurre durante la prometafase, después de la desorganización de la envoltura nuclear."
+    },
+    {
+      "pregunta": "Una célula presenta dos grupos de cromosomas en polos opuestos y está reconstruyendo dos núcleos. ¿Qué fase atraviesa?",
+      "opciones": [
+        "Metafase",
+        "Profase",
+        "Anafase",
+        "Telofase"
+      ],
+      "correcta": "D",
+      "explicacion": "La telofase comienza cuando los cromosomas ya llegaron a polos opuestos y se reorganizan las envolturas nucleares."
+    },
+    {
+      "pregunta": "¿En qué fase mitótica se verifica que los cromosomas estén correctamente unidos al huso antes de permitir su separación?",
+      "opciones": [
+        "Metafase",
+        "Profase",
+        "Telofase",
+        "Citocinesis"
+      ],
+      "correcta": "A",
+      "explicacion": "El punto de control del huso actúa durante la metafase y evita que se inicie la anafase si hay cromosomas sin una unión correcta."
+    },
+    {
+      "pregunta": "En una célula animal aparece un surco que profundiza hasta separar las dos células hijas. ¿Qué proceso está ocurriendo?",
+      "opciones": [
+        "Sinapsis",
+        "Citocinesis",
+        "Replicación",
+        "Entrecruzamiento"
+      ],
+      "correcta": "B",
+      "explicacion": "En muchas células animales la citocinesis ocurre mediante un anillo contráctil que genera un surco de segmentación."
+    },
+    {
+      "pregunta": "En una célula vegetal se forma una placa celular que dará origen a la nueva pared entre las células hijas. ¿En qué proceso ocurre?",
+      "opciones": [
+        "Duplicación del ADN",
+        "Anafase",
+        "Citocinesis",
+        "Sinapsis"
+      ],
+      "correcta": "C",
+      "explicacion": "En la citocinesis vegetal, vesículas se reúnen en el centro y forman la placa celular, que origina la separación entre las células hijas."
+    },
+    {
+      "pregunta": "¿En qué etapa del ciclo celular ocurre la duplicación de los cromosomas antes de la mitosis?",
+      "opciones": [
+        "Profase",
+        "Metafase",
+        "Anafase",
+        "Fase S de la interfase"
+      ],
+      "correcta": "D",
+      "explicacion": "El ADN se replica durante la fase S de la interfase, antes de que comience la mitosis."
+    },
+    {
+      "pregunta": "La célula está creciendo y sintetizando componentes, pero todavía no está duplicando su ADN. ¿Qué fase corresponde?",
+      "opciones": [
+        "G1",
+        "S",
+        "G2",
+        "Anafase"
+      ],
+      "correcta": "A",
+      "explicacion": "En G1 predomina el crecimiento celular y la síntesis de componentes; la duplicación del ADN ocurre después, en S."
+    },
+    {
+      "pregunta": "¿Qué fase sigue inmediatamente a la metafase mitótica?",
+      "opciones": [
+        "Telofase",
+        "Anafase",
+        "Profase",
+        "Prometafase"
+      ],
+      "correcta": "B",
+      "explicacion": "Después de comprobar la correcta unión al huso, comienza la anafase y se separan las cromátidas hermanas."
+    },
+    {
+      "pregunta": "¿Qué fase sigue a la anafase en la secuencia clásica de la mitosis?",
+      "opciones": [
+        "Profase",
+        "Metafase",
+        "Telofase",
+        "G2"
+      ],
+      "correcta": "C",
+      "explicacion": "Luego de que los cromosomas llegan a los polos durante la anafase, comienza la telofase y se reconstruyen los núcleos."
+    },
+    {
+      "pregunta": "¿En qué parte del ciclo celular se encuentra una célula que ya terminó la división y vuelve a realizar sus funciones habituales?",
+      "opciones": [
+        "Anafase",
+        "Prometafase",
+        "Citocinesis",
+        "Interfase"
+      ],
+      "correcta": "D",
+      "explicacion": "La interfase comprende G1, S y G2. Es el período entre divisiones en el que la célula crece, replica su ADN y se prepara para dividirse."
+    },
+    {
+      "pregunta": "Antes de comenzar la meiosis I, ¿en qué fase del ciclo celular se duplica el ADN?",
+      "opciones": [
+        "Fase S de la interfase",
+        "Profase II",
+        "Metafase I",
+        "Anafase I"
+      ],
+      "correcta": "A",
+      "explicacion": "La replicación del ADN ocurre una sola vez, durante la fase S previa a la meiosis I."
+    },
+    {
+      "pregunta": "¿En qué fase de la meiosis los cromosomas homólogos se aparean?",
+      "opciones": [
+        "Metafase II",
+        "Profase I",
+        "Anafase I",
+        "Telofase II"
+      ],
+      "correcta": "B",
+      "explicacion": "Durante la profase I los cromosomas homólogos se reconocen y se aparean, formando pares de homólogos."
+    },
+    {
+      "pregunta": "¿En qué fase de la meiosis ocurre el crossing over o entrecruzamiento entre cromátidas no hermanas de cromosomas homólogos?",
+      "opciones": [
+        "Metafase I",
+        "Anafase I",
+        "Profase I",
+        "Profase II"
+      ],
+      "correcta": "C",
+      "explicacion": "El crossing over ocurre durante la profase I, cuando los cromosomas homólogos están apareados. Intercambia segmentos entre cromátidas no hermanas y contribuye a la variabilidad genética."
+    },
+    {
+      "pregunta": "Los pares de cromosomas homólogos se ubican en el plano ecuatorial, uno frente al otro. ¿Qué fase es?",
+      "opciones": [
+        "Anafase I",
+        "Metafase II",
+        "Telofase I",
+        "Metafase I"
+      ],
+      "correcta": "D",
+      "explicacion": "En metafase I se alinean los pares de homólogos en el plano ecuatorial de la célula."
+    },
+    {
+      "pregunta": "¿En qué fase de la meiosis la orientación de cada par de homólogos hacia los polos queda establecida de manera independiente?",
+      "opciones": [
+        "Metafase I",
+        "Anafase II",
+        "Profase II",
+        "Telofase I"
+      ],
+      "correcta": "A",
+      "explicacion": "La orientación aleatoria de cada par de homólogos en metafase I permite la distribución independiente de los cromosomas maternos y paternos."
+    },
+    {
+      "pregunta": "¿En qué fase de la meiosis I se separan los cromosomas homólogos?",
+      "opciones": [
+        "Metafase I",
+        "Anafase I",
+        "Anafase II",
+        "Telofase II"
+      ],
+      "correcta": "B",
+      "explicacion": "En anafase I se separan los cromosomas homólogos. Las cromátidas hermanas permanecen unidas, por lo que se reduce la ploidía."
+    },
+    {
+      "pregunta": "Al finalizar la primera división meiótica, ¿en qué fase se reorganizan los núcleos y se obtienen dos células haploides con cromosomas todavía duplicados?",
+      "opciones": [
+        "Profase I",
+        "Metafase II",
+        "Telofase I",
+        "Anafase II"
+      ],
+      "correcta": "C",
+      "explicacion": "En telofase I los cromosomas homólogos ya están en células diferentes. Cada célula es haploide, pero sus cromosomas aún tienen dos cromátidas."
+    },
+    {
+      "pregunta": "¿Cómo se denomina el intervalo entre la meiosis I y la meiosis II, durante el cual no se replica nuevamente el ADN?",
+      "opciones": [
+        "Interfase S",
+        "Profase II",
+        "Citocinesis I",
+        "Intercinesis"
+      ],
+      "correcta": "D",
+      "explicacion": "La intercinesis es el intervalo entre ambas divisiones meióticas. No incluye una nueva fase S ni una duplicación del ADN."
+    },
+    {
+      "pregunta": "¿En qué fase de la meiosis II se organiza nuevamente el huso y los cromosomas se preparan para alinearse?",
+      "opciones": [
+        "Profase II",
+        "Metafase I",
+        "Anafase I",
+        "Telofase II"
+      ],
+      "correcta": "A",
+      "explicacion": "En profase II se organiza el huso de la segunda división y los cromosomas se preparan para su alineación."
+    },
+    {
+      "pregunta": "En la segunda división meiótica, los cromosomas se alinean individualmente en el plano ecuatorial. ¿Qué fase es?",
+      "opciones": [
+        "Metafase I",
+        "Metafase II",
+        "Anafase I",
+        "Telofase I"
+      ],
+      "correcta": "B",
+      "explicacion": "En metafase II cada cromosoma se ubica individualmente en el ecuador, de manera semejante a la metafase mitótica."
+    },
+    {
+      "pregunta": "¿En qué fase de la meiosis II se separan las cromátidas hermanas?",
+      "opciones": [
+        "Anafase I",
+        "Metafase II",
+        "Anafase II",
+        "Profase II"
+      ],
+      "correcta": "C",
+      "explicacion": "En anafase II se separan las cromátidas hermanas y migran hacia polos opuestos."
+    },
+    {
+      "pregunta": "La segunda división meiótica termina y se reorganizan los núcleos de las células resultantes. ¿Qué fase es?",
+      "opciones": [
+        "Telofase I",
+        "Metafase II",
+        "Profase II",
+        "Telofase II"
+      ],
+      "correcta": "D",
+      "explicacion": "En telofase II se reorganizan los núcleos y, junto con la citocinesis, se completa la formación de células haploides."
+    },
+    {
+      "pregunta": "¿En qué etapa de la meiosis ocurre la división reduccional, al separarse los cromosomas homólogos?",
+      "opciones": [
+        "Anafase I",
+        "Anafase II",
+        "Metafase II",
+        "Telofase II"
+      ],
+      "correcta": "A",
+      "explicacion": "La separación de homólogos ocurre en anafase I y reduce de dos juegos cromosómicos a uno."
+    },
+    {
+      "pregunta": "¿En qué etapa ocurre la separación de cromátidas hermanas durante la meiosis?",
+      "opciones": [
+        "Anafase I",
+        "Anafase II",
+        "Metafase I",
+        "Profase I"
+      ],
+      "correcta": "B",
+      "explicacion": "Las cromátidas hermanas se separan en anafase II. En anafase I se separan los homólogos, no las cromátidas hermanas."
+    },
+    {
+      "pregunta": "¿En qué fase se produce la distribución independiente de los cromosomas homólogos que contribuye a generar gametos diferentes?",
+      "opciones": [
+        "Profase II",
+        "Telofase I",
+        "Metafase I",
+        "Anafase II"
+      ],
+      "correcta": "C",
+      "explicacion": "La disposición aleatoria de los pares homólogos en metafase I determina combinaciones cromosómicas distintas en las células resultantes."
+    },
+    {
+      "pregunta": "Una célula termina la meiosis I y comienza la meiosis II sin volver a duplicar su ADN. ¿Qué etapa separa ambas divisiones?",
+      "opciones": [
+        "Fase S",
+        "G2",
+        "Profase I",
+        "Intercinesis"
+      ],
+      "correcta": "D",
+      "explicacion": "La intercinesis separa la meiosis I de la II y no incluye replicación del ADN."
+    },
+    {
+      "pregunta": "¿Qué sucede con las cromátidas hermanas durante la anafase I?",
+      "opciones": [
+        "Permanecen unidas mientras se separan los homólogos.",
+        "Se separan y migran a polos opuestos.",
+        "Se duplican nuevamente.",
+        "Se descondensan y forman dos núcleos."
+      ],
+      "correcta": "A",
+      "explicacion": "En anafase I se separan los cromosomas homólogos; las cromátidas hermanas continúan unidas por sus centrómeros."
+    },
+    {
+      "pregunta": "¿Qué evento distingue a la profase I de la profase de la mitosis?",
+      "opciones": [
+        "La separación de cromátidas hermanas.",
+        "El apareamiento de homólogos y el crossing over.",
+        "La citocinesis.",
+        "La alineación individual de cromosomas."
+      ],
+      "correcta": "B",
+      "explicacion": "En profase I se aparean los cromosomas homólogos y puede ocurrir crossing over, eventos que no forman parte de la profase mitótica."
+    },
+    {
+      "pregunta": "¿Cuántas divisiones nucleares consecutivas comprende la meiosis?",
+      "opciones": [
+        "Una",
+        "Tres",
+        "Dos",
+        "Cuatro"
+      ],
+      "correcta": "C",
+      "explicacion": "La meiosis comprende dos divisiones: meiosis I y meiosis II. El ADN se replica una sola vez antes de la primera."
+    },
+    {
+      "pregunta": "¿En qué momento de la meiosis se forman dos células haploides cuyos cromosomas aún están duplicados?",
+      "opciones": [
+        "Al final de la profase I",
+        "Al final de la metafase II",
+        "Al final de la anafase II",
+        "Al final de la meiosis I, durante la telofase I y citocinesis"
+      ],
+      "correcta": "D",
+      "explicacion": "Al finalizar la meiosis I, las células son haploides, pero cada cromosoma todavía conserva sus dos cromátidas hermanas."
+    },
+    {
+      "pregunta": "¿En qué etapa se alinean los cromosomas individualmente y ya no como pares de homólogos?",
+      "opciones": [
+        "Metafase II",
+        "Metafase I",
+        "Profase I",
+        "Anafase I"
+      ],
+      "correcta": "A",
+      "explicacion": "En metafase II los cromosomas se alinean individualmente. En metafase I lo hacen los pares de homólogos."
+    },
+    {
+      "pregunta": "¿En qué fase se produce el crossing over que genera nuevas combinaciones de alelos?",
+      "opciones": [
+        "Anafase I",
+        "Profase I",
+        "Metafase II",
+        "Telofase I"
+      ],
+      "correcta": "B",
+      "explicacion": "El crossing over ocurre en profase I entre cromátidas no hermanas de cromosomas homólogos y produce recombinación genética."
+    },
+    {
+      "pregunta": "¿En cuál de las siguientes fases los cromosomas homólogos todavía están unidos como pares y se ubican en el ecuador celular?",
+      "opciones": [
+        "Metafase II",
+        "Anafase I",
+        "Metafase I",
+        "Anafase II"
+      ],
+      "correcta": "C",
+      "explicacion": "En metafase I los homólogos permanecen asociados como pares y se disponen en el plano ecuatorial antes de separarse."
+    },
+    {
+      "pregunta": "¿En qué etapa de la meiosis se separan los homólogos, pero no las cromátidas hermanas?",
+      "opciones": [
+        "Anafase II",
+        "Metafase I",
+        "Telofase II",
+        "Anafase I"
+      ],
+      "correcta": "D",
+      "explicacion": "La anafase I separa homólogos. Las cromátidas hermanas se mantienen unidas hasta la anafase II."
+    },
+    {
+      "pregunta": "Durante la espermatogénesis, ¿en qué fase las espermatogonias se multiplican por mitosis?",
+      "opciones": [
+        "Fase de multiplicación",
+        "Fase de diferenciación final",
+        "Fase de espermiación",
+        "Fase de ovulación"
+      ],
+      "correcta": "A",
+      "explicacion": "En la fase de multiplicación las espermatogonias realizan mitosis para mantener la población de células germinales y producir células que continuarán el proceso."
+    },
+    {
+      "pregunta": "Una espermatogonia aumenta su tamaño y se transforma en un espermatocito primario. ¿Qué fase de la espermatogénesis representa?",
+      "opciones": [
+        "Multiplicación",
+        "Crecimiento",
+        "Espermiogénesis",
+        "Espermiación"
+      ],
+      "correcta": "B",
+      "explicacion": "En la fase de crecimiento la célula germinal aumenta de tamaño y se prepara para iniciar la meiosis."
+    },
+    {
+      "pregunta": "¿En qué fase de la espermatogénesis el espermatocito primario realiza la primera división meiótica?",
+      "opciones": [
+        "Multiplicación",
+        "Espermiogénesis",
+        "Maduración",
+        "Espermiación"
+      ],
+      "correcta": "C",
+      "explicacion": "La fase de maduración comprende las divisiones meióticas que transforman los espermatocitos en espermátidas."
+    },
+    {
+      "pregunta": "Al terminar la meiosis I de la espermatogénesis, ¿qué tipo de célula se forma?",
+      "opciones": [
+        "Espermatogonia",
+        "Espermátida",
+        "Espermatozoide",
+        "Espermatocito secundario"
+      ],
+      "correcta": "D",
+      "explicacion": "Cada espermatocito primario origina dos espermatocitos secundarios al completar la primera división meiótica."
+    },
+    {
+      "pregunta": "Al finalizar la meiosis II de la espermatogénesis, ¿qué célula se obtiene?",
+      "opciones": [
+        "Espermátida",
+        "Espermatocito primario",
+        "Espermatogonia",
+        "Espermatozoide maduro"
+      ],
+      "correcta": "A",
+      "explicacion": "Los espermatocitos secundarios realizan la meiosis II y originan espermátidas haploides."
+    },
+    {
+      "pregunta": "¿Cómo se denomina la transformación de las espermátidas en espermatozoides, sin que ocurra otra división celular?",
+      "opciones": [
+        "Espermiación",
+        "Espermiogénesis",
+        "Multiplicación",
+        "Maduración meiótica"
+      ],
+      "correcta": "B",
+      "explicacion": "La espermiogénesis es la diferenciación morfológica de la espermátida: se forma el acrosoma y el flagelo, se condensa el núcleo y se reorganiza el citoplasma."
+    },
+    {
+      "pregunta": "Durante la espermiogénesis, ¿en qué etapa se desarrolla el flagelo y se condensa el núcleo de la futura célula espermática?",
+      "opciones": [
+        "Meiosis I",
+        "Meiosis II",
+        "Espermiogénesis",
+        "Multiplicación"
+      ],
+      "correcta": "C",
+      "explicacion": "La formación del flagelo y la compactación nuclear son cambios de diferenciación propios de la espermiogénesis."
+    },
+    {
+      "pregunta": "¿Cómo se llama la liberación de los espermatozoides hacia la luz de los túbulos seminíferos?",
+      "opciones": [
+        "Espermiogénesis",
+        "Fase de crecimiento",
+        "Meiosis II",
+        "Espermiación"
+      ],
+      "correcta": "D",
+      "explicacion": "La espermiación es la liberación de los espermatozoides ya diferenciados hacia la luz del túbulo seminífero."
+    },
+    {
+      "pregunta": "¿En qué fase de la ovogénesis las ovogonias se multiplican mediante mitosis?",
+      "opciones": [
+        "Multiplicación",
+        "Maduración",
+        "Ovulación",
+        "Fecundación"
+      ],
+      "correcta": "A",
+      "explicacion": "La fase de multiplicación corresponde a las mitosis de las ovogonias, principalmente durante el desarrollo fetal."
+    },
+    {
+      "pregunta": "Una célula germinal femenina aumenta considerablemente su tamaño y acumula citoplasma y reservas. ¿Qué fase de la ovogénesis es?",
+      "opciones": [
+        "Maduración",
+        "Crecimiento",
+        "Multiplicación",
+        "Fecundación"
+      ],
+      "correcta": "B",
+      "explicacion": "En la fase de crecimiento el ovocito aumenta de tamaño y acumula componentes que serán importantes para el desarrollo temprano."
+    },
+    {
+      "pregunta": "¿En qué fase de la ovogénesis el ovocito primario inicia la meiosis?",
+      "opciones": [
+        "Fase de multiplicación",
+        "Fase de crecimiento",
+        "Fase de maduración",
+        "Fase de fecundación"
+      ],
+      "correcta": "C",
+      "explicacion": "La fase de maduración comprende la meiosis. En la especie humana, el ovocito primario inicia este proceso durante la vida fetal."
+    },
+    {
+      "pregunta": "¿En qué fase meiótica queda detenido el ovocito primario durante un período prolongado, desde antes del nacimiento?",
+      "opciones": [
+        "Metafase II",
+        "Anafase I",
+        "Telofase I",
+        "Profase I"
+      ],
+      "correcta": "D",
+      "explicacion": "El ovocito primario queda detenido en profase I. Puede reanudar la meiosis en ciclos ováricos posteriores."
+    },
+    {
+      "pregunta": "El ovocito primario reanuda la meiosis y completa la primera división, originando un ovocito secundario y un cuerpo polar. ¿Qué etapa acaba de completar?",
+      "opciones": [
+        "Meiosis I",
+        "Meiosis II",
+        "Mitosis",
+        "Espermiogénesis"
+      ],
+      "correcta": "A",
+      "explicacion": "La finalización de la meiosis I produce un ovocito secundario y el primer cuerpo polar, con una distribución desigual del citoplasma."
+    },
+    {
+      "pregunta": "¿Qué estructura se libera habitualmente durante la ovulación humana?",
+      "opciones": [
+        "Un ovocito primario detenido en profase I.",
+        "Un ovocito secundario detenido en metafase II.",
+        "Un óvulo que ya completó la meiosis II.",
+        "Una ovogonia diploide."
+      ],
+      "correcta": "B",
+      "explicacion": "En la ovulación se libera un ovocito secundario que permanece detenido en metafase II hasta que ocurra la fecundación."
+    },
+    {
+      "pregunta": "¿En qué fase queda detenido el ovocito secundario que es liberado durante la ovulación?",
+      "opciones": [
+        "Profase I",
+        "Telofase I",
+        "Metafase II",
+        "Anafase II"
+      ],
+      "correcta": "C",
+      "explicacion": "El ovocito secundario inicia la meiosis II y queda detenido en metafase II. La fecundación permite completar esa división."
+    },
+    {
+      "pregunta": "¿Qué evento permite que el ovocito secundario complete la meiosis II?",
+      "opciones": [
+        "La ovulación por sí sola.",
+        "El inicio de la pubertad.",
+        "La finalización de la meiosis I.",
+        "La fecundación"
+      ],
+      "correcta": "D",
+      "explicacion": "La entrada del espermatozoide desencadena la reanudación y finalización de la meiosis II del ovocito secundario."
+    },
+    {
+      "pregunta": "¿En qué momento de la ovogénesis se forma el segundo cuerpo polar?",
+      "opciones": [
+        "Al completarse la meiosis II, luego de la fecundación.",
+        "Durante la multiplicación de las ovogonias.",
+        "Al comenzar la fase de crecimiento.",
+        "Durante la profase I fetal."
+      ],
+      "correcta": "A",
+      "explicacion": "La meiosis II se completa tras la fecundación y genera el segundo cuerpo polar junto con el gameto femenino maduro."
+    },
+    {
+      "pregunta": "¿Cuál es la diferencia más característica entre el resultado de la espermatogénesis y el de la ovogénesis?",
+      "opciones": [
+        "Ambas producen cuatro gametos funcionales iguales.",
+        "La espermatogénesis produce cuatro espermátidas; la ovogénesis produce una célula funcional grande y cuerpos polares.",
+        "La ovogénesis produce cuatro óvulos funcionales.",
+        "La espermatogénesis no incluye meiosis."
+      ],
+      "correcta": "B",
+      "explicacion": "La citocinesis de la ovogénesis es desigual: concentra casi todo el citoplasma en una célula, mientras que la espermatogénesis genera cuatro espermátidas."
+    },
+    {
+      "pregunta": "¿En qué etapa de la espermatogénesis las espermátidas adquieren la forma característica del espermatozoide?",
+      "opciones": [
+        "Multiplicación",
+        "Crecimiento",
+        "Espermiogénesis",
+        "Espermiación"
+      ],
+      "correcta": "C",
+      "explicacion": "La espermiogénesis transforma espermátidas redondeadas en espermatozoides diferenciados, sin agregar divisiones meióticas."
+    },
+    {
+      "pregunta": "¿Qué fase de la gametogénesis incluye las divisiones meióticas que reducen la ploidía?",
+      "opciones": [
+        "Multiplicación",
+        "Crecimiento",
+        "Espermiación",
+        "Maduración"
+      ],
+      "correcta": "D",
+      "explicacion": "La fase de maduración incluye la meiosis y reduce el número de juegos cromosómicos para formar células haploides."
+    },
+    {
+      "pregunta": "Una célula germinal femenina se encuentra detenida en profase I mientras crece y acumula reservas. ¿A qué etapa de la ovogénesis corresponde?",
+      "opciones": [
+        "Crecimiento",
+        "Multiplicación",
+        "Fecundación",
+        "Ovulación"
+      ],
+      "correcta": "A",
+      "explicacion": "Durante el crecimiento, el ovocito primario aumenta de tamaño y permanece detenido en profase I durante un período prolongado."
+    },
+    {
+      "pregunta": "¿En qué fase de la espermatogénesis se originan las espermátidas haploides a partir de los espermatocitos secundarios?",
+      "opciones": [
+        "Espermiogénesis",
+        "Maduración, durante la meiosis II",
+        "Multiplicación",
+        "Espermiación"
+      ],
+      "correcta": "B",
+      "explicacion": "La segunda división meiótica de la fase de maduración produce las espermátidas haploides."
+    },
+    {
+      "pregunta": "¿En qué momento de la ovogénesis se origina el ovocito secundario?",
+      "opciones": [
+        "Durante la fase de multiplicación.",
+        "Durante la profase I fetal.",
+        "Al completarse la meiosis I, dentro de la fase de maduración.",
+        "Durante la espermiogénesis."
+      ],
+      "correcta": "C",
+      "explicacion": "El ovocito primario completa la meiosis I y origina un ovocito secundario y el primer cuerpo polar."
+    },
+    {
+      "pregunta": "¿Cuál es la secuencia correcta de las células durante la espermatogénesis, desde la célula germinal inicial hasta la célula que entra en diferenciación?",
+      "opciones": [
+        "Espermátida → espermatogonia → espermatocito primario → espermatozoide.",
+        "Espermatocito secundario → espermatogonia → espermátida → espermatocito primario.",
+        "Espermatogonia → espermátida → espermatocito primario → espermatozoide.",
+        "Espermatogonia → espermatocito primario → espermatocito secundario → espermátida."
+      ],
+      "correcta": "D",
+      "explicacion": "La secuencia celular es espermatogonia, espermatocito primario, espermatocito secundario y espermátida. Luego ocurre la espermiogénesis."
+    },
+    {
+      "pregunta": "¿En qué etapa del proceso se liberan los espermatozoides ya diferenciados, pero todavía dentro del testículo?",
+      "opciones": [
+        "Espermiación",
+        "Espermiogénesis",
+        "Fase de crecimiento",
+        "Meiosis I"
+      ],
+      "correcta": "A",
+      "explicacion": "La espermiación libera los espermatozoides hacia la luz de los túbulos seminíferos; no es una división celular."
+    },
+    {
+      "pregunta": "¿Qué proceso ocurre durante la fase de crecimiento de la ovogénesis, antes de que el ovocito complete la meiosis I?",
+      "opciones": [
+        "Separación de cromátidas hermanas.",
+        "Aumento del tamaño celular y acumulación de citoplasma.",
+        "Liberación del espermatozoide.",
+        "Formación del segundo cuerpo polar."
+      ],
+      "correcta": "B",
+      "explicacion": "Durante el crecimiento el ovocito acumula citoplasma, orgánulos y reservas; todavía no ha completado la primera división meiótica."
+    },
+    {
+      "pregunta": "¿En qué estado se encuentra el ovocito secundario inmediatamente antes de ser fecundado?",
+      "opciones": [
+        "Diploide en profase I.",
+        "Haploide en telofase II.",
+        "Haploide en metafase II.",
+        "Diploide en metafase I."
+      ],
+      "correcta": "C",
+      "explicacion": "El ovocito secundario es haploide y permanece detenido en metafase II hasta que la fecundación desencadena la finalización de la meiosis."
+    },
+    {
+      "pregunta": "¿Qué etapa diferencia a una espermátida de un espermatozoide?",
+      "opciones": [
+        "La meiosis I",
+        "La fase S",
+        "La meiosis II",
+        "La espermiogénesis"
+      ],
+      "correcta": "D",
+      "explicacion": "La espermiogénesis es el proceso de diferenciación que transforma la espermátida en espermatozoide."
+    },
+    {
+      "pregunta": "Si se pregunta en qué fase de la ovogénesis se forman los cuerpos polares como consecuencia de divisiones meióticas desiguales, ¿cuál es la respuesta general?",
+      "opciones": [
+        "Maduración",
+        "Multiplicación",
+        "Crecimiento",
+        "Espermiación"
+      ],
+      "correcta": "A",
+      "explicacion": "Los cuerpos polares se originan durante la fase de maduración, cuando ocurren las divisiones meióticas con reparto desigual del citoplasma."
+    }
+  ]
+}
