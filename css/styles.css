@@ -1302,10 +1302,15 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 .tema-practica-link span { color:var(--ok); font-variant-numeric:tabular-nums; }
 .tema-practica-completo { display:flex; align-items:center; justify-content:center; padding:.55rem .6rem; border:1px dashed rgba(79,224,160,.35); border-radius:11px; color:var(--ok); font-size:.78rem; font-weight:650; }
 .banco-materia { margin:1.6rem 0 8.5rem; padding-top:1.2rem; border-top:1px solid var(--linea); }
-.banco-materia-cabecera { margin-bottom:.85rem; }
-.banco-materia-cabecera h2 { margin:0; color:var(--crema); font-size:1.12rem; }
-.banco-materia-cabecera p { margin:.25rem 0 0; color:var(--tenue); font-size:.83rem; line-height:1.45; }
-.banco-materia-temas { display:grid; gap:.35rem; }
+.banco-materia-cabecera { display:flex; align-items:center; justify-content:space-between; gap:.8rem; padding:.2rem 0; cursor:pointer; list-style:none; }
+.banco-materia-cabecera::-webkit-details-marker { display:none; }
+.banco-materia-cabecera:focus-visible { outline:2px solid rgba(155,123,255,.65); outline-offset:3px; border-radius:8px; }
+.banco-materia-textos { display:grid; gap:.25rem; min-width:0; }
+.banco-materia-textos strong { color:var(--crema); font-size:1.12rem; }
+.banco-materia-textos small { color:var(--tenue); font-size:.83rem; line-height:1.45; }
+.banco-materia-flecha { flex:none; display:grid; place-items:center; width:2rem; height:2rem; border:1px solid var(--linea); border-radius:50%; color:var(--tenue); transition:transform .2s; }
+.banco-materia[open] .banco-materia-flecha { transform:rotate(180deg); }
+.banco-materia-temas { display:grid; gap:.35rem; margin-top:.85rem; }
 .banco-materia-tema { display:flex; align-items:center; justify-content:space-between; gap:.7rem; width:100%; padding:.72rem .8rem; border:1px solid var(--linea); border-radius:10px; background:rgba(255,255,255,.025); color:var(--crema); font:inherit; text-align:left; cursor:pointer; }
 .banco-materia-tema:hover,.banco-materia-tema.activo { background:var(--panel-2); border-color:var(--violeta); }
 .banco-materia-tema span { font-size:.86rem; font-weight:600; }

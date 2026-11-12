@@ -1510,15 +1510,18 @@ function vistaMateria(i) {
         <button class="btn enlace" id="btn-todos"></button>
       </div>
       <div class="temas">${filas}</div>
-      <section class="banco-materia" aria-labelledby="banco-materia-titulo">
-        <div class="banco-materia-cabecera">
-          <h2 id="banco-materia-titulo">Banco de preguntas</h2>
-          <p>Ver todas las preguntas de cada tema, con sus opciones y respuestas correctas.</p>
-        </div>
+      <details class="banco-materia">
+        <summary class="banco-materia-cabecera">
+          <span class="banco-materia-textos">
+            <strong id="banco-materia-titulo">Banco de preguntas</strong>
+            <small>Ver todas las preguntas de cada tema, con sus opciones y respuestas correctas.</small>
+          </span>
+          <span class="banco-materia-flecha" aria-hidden="true">▾</span>
+        </summary>
         <div class="banco-materia-temas" id="banco-materia-temas">
           ${m.temas.map((t,n)=>(t.preguntas>0) ? `<button type="button" class="banco-materia-tema" data-banco-tema="${n}"><span>${esc(t.nombre)}</span><small>${t.preguntas} preguntas</small></button>` : '').join('')}
         </div>
-      </section>
+      </details>
     </main>
     <div class="pie-fijo">
       <div class="interior">
