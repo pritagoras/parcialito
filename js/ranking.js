@@ -59,6 +59,7 @@ export async function registrarTelemetria(filas) {
     method: 'POST',
     headers: { Prefer: 'return=minimal' },
     body: JSON.stringify(filas),
+    keepalive: true,
   });
 }
 
