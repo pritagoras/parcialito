@@ -644,14 +644,18 @@ function cargarSegundoParcialGenetica(){
   const rutas=Array.from({length:13},(_,i)=>new URL(`../segundo-parcial/${i+1}.json`,import.meta.url));
   const archivos=await Promise.all(rutas.map(async url=>{try{const r=await fetch(url);return r.ok?await r.json():null;}catch(error){console.warn('[LAB Genética] JSON no disponible:',url.href,error);return null;}}));
   function clasificar(item){
-   const t=`${item?.pregunta||''} ${item?.explicacion||''} ${(item?.opciones||[]).join(' ')}`.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-   if(/\brh\b|rhesus|anti[- ]?d|factor rh|factor rhesus|rh\s*[+\-]/i.test(t))return null;
-   if(/dalton|hemofili|ligad[oa]s? al cromosoma x|cromosoma x.{0,35}recesiv|x\s*\^[dh]/i.test(t))return 'sexo';
-   if(/grupo sanguineo|tipo sanguineo|grupos? abo|\babo\b|i\s*\^\s*[ab]|grupo (?:a|b|ab|o)\b|antigenos? a y b/i.test(t))return 'abo';
-   const f1=/\bf1\b|primera generacion filial|uniformidad de la f1|primera ley de mendel/i.test(t);
-   const puro=/lineas? puras?|homocigota[s]?\s+(?:dominante|recesiv[oa])/i.test(t);
-   const fuera=/\bf2\b|cruzamiento de prueba|retrocruza|heterocigota.{0,20}heterocigota|3\s*[:/]\s*1|1\s*[:/]\s*1|segregacion independiente/i.test(t);
-   return puro&&!fuera&&(f1||/descendencia|descendientes|progenie/i.test(t))?'mendel':null;
+   const pregunta=String(item?.pregunta||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+   const contexto=`${pregunta} ${item?.explicacion||''} ${(item?.opciones||[]).join(' ')}`.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+   if(/\brh\b|rhesus|anti[- ]?d|factor rh|factor rhesus|rh\s*[+\-]/i.test(contexto))return null;
+   // Herencia ligada al X: solo daltonismo y hemofilia, no otros temas cromosómicos.
+   if(/dalton|hemofili/i.test(pregunta))return 'sexo';
+   // ABO: debe aparecer explícitamente un grupo/tipo sanguíneo o el sistema ABO en el enunciado.
+   if(/(?:grupo|tipo)\s+(?:sanguineo\s+)?(?:a|b|ab|o)\b|sistema abo|\babo\b|\bi\s*\^\s*[ab]/i.test(pregunta))return 'abo';
+   // Primera ley: cruce de líneas puras/homocigotas y uniformidad de F1.
+   const f1=/\bf1\b|primera generacion filial|uniformidad de la f1|primera ley de mendel/i.test(contexto);
+   const puro=/lineas? puras?|homocigota[s]?\s+(?:dominante|recesiv[oa])/i.test(pregunta);
+   const fuera=/\bf2\b|cruzamiento de prueba|retrocruza|heterocigota.{0,35}heterocigota|\b(?:aa|bb|cc|dd|rr|yy)\s*[x×]\s*(?:aa|bb|cc|dd|rr|yy)\b|1\s*[:/]\s*1|3\s*[:/]\s*1/i.test(pregunta);
+   return puro&&!fuera&&(f1||/descendencia|descendientes|progenie/i.test(pregunta))?'mendel':null;
   }
   const existentes=new Set(PREGUNTAS.map(p=>normalizarPregunta(p.q))),firmas=new Set();let agregadas=0;
   for(const archivo of archivos)for(const item of (archivo?.preguntas||[])){
