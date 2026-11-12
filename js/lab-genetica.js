@@ -654,7 +654,7 @@ function cargarSegundoParcialGenetica(){
    // Primera ley: cruce de líneas puras/homocigotas y uniformidad de F1.
    const f1=/\bf1\b|primera generacion filial|uniformidad de la f1|primera ley de mendel/i.test(contexto);
    const puro=/lineas? puras?|homocigota[s]?\s+(?:dominante|recesiv[oa])/i.test(pregunta);
-   const fuera=/\bf2\b|cruzamiento de prueba|retrocruza|heterocigota.{0,35}heterocigota|\b(?:aa|bb|cc|dd|rr|yy)\s*[x×]\s*(?:aa|bb|cc|dd|rr|yy)\b|1\s*[:/]\s*1|3\s*[:/]\s*1/i.test(pregunta);
+   const fuera=/\bf2\b|cruzamiento de prueba|retrocruza|heterocigota.{0,35}heterocigota|1\s*[:/]\s*1|3\s*[:/]\s*1/i.test(pregunta);
    return puro&&!fuera&&(f1||/descendencia|descendientes|progenie/i.test(pregunta))?'mendel':null;
   }
   const existentes=new Set(PREGUNTAS.map(p=>normalizarPregunta(p.q))),firmas=new Set();let agregadas=0;
@@ -663,7 +663,18 @@ function cargarSegundoParcialGenetica(){
    const ok='ABCD'.indexOf(String(item?.correcta||'').trim().toUpperCase()),tipo=clasificar(item),key=normalizarPregunta(pregunta);
    if(!pregunta||!tipo||o.length!==4||ok<0||existentes.has(key))continue;
    const concepto=normalizarPregunta(pregunta+' '+(item?.explicacion||''));
-   if(tipo==='abo'&&/proximo|siguiente|nuevo embarazo/.test(concepto)&&/grupo o|genotipo ii|genotipo 00/.test(concepto)){if(firmas.has('abo-next-O'))continue;firmas.add('abo-next-O');}
+   if(tipo==='abo'){
+    const esA= /grupo a/.test(key), esB= /grupo b/.test(key), esAB= /grupo ab/.test(key), esO= /grupo o/.test(key);
+    if(esA&&esB&&/homocigota/.test(key))continue;
+    if(esA&&esB&&esO&&/hijo/.test(key)&&!/proximo|siguiente|nuevo embarazo/.test(key))continue;
+    if(esAB&&esO)continue;
+    if(/fenotipo sanguineo ab/.test(key)&&/gametas|meiotica|meiotico/.test(key))continue;
+    if(esA&&esO&&/hijo/.test(key)&&/compatibles/.test(key))continue;
+    if(/proximo|siguiente|nuevo embarazo/.test(concepto)&&/grupo o|genotipo ii|genotipo 00/.test(concepto)){
+     if(firmas.has('abo-next-O'))continue;
+     firmas.add('abo-next-O');
+    }
+   }
    PREGUNTAS.push({t:tipo,q:pregunta,o,ok,exp:String(item.explicacion||'Revisá la relación entre genotipos, alelos y fenotipos.')});existentes.add(key);agregadas++;
   }
   return agregadas;
