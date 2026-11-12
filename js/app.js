@@ -277,18 +277,75 @@ async function cargarTema(tema, materia) {
   const json = await r.json();
   const preguntas = normalizar(json, tema, materia);
   cacheTarjetas.set(tema.id, normalizarTarjetas(json, tema, materia));
-  if (estado.dominadas[tema.id]) {
-    const vigentes = new Set(preguntas.map((q) => q.id));
-    for (const id of Object.keys(estado.dominadas[tema.id])) {
-      if (!vigentes.has(id)) delete estado.dominadas[tema.id][id];
-    }
+  const progreso = progresoMCDe(tema.id);
+  const vigentes = new Set(preguntas.map((q) => q.id));
+  for (const id of Object.keys(progreso)) {
+    if (!vigentes.has(id)) delete progreso[id];
   }
   cache.set(tema.id, preguntas);
   return preguntas;
 }
 
+function progresoMCDe(temaId) {
+  estado.dominioMC ||= {};
+  return (estado.dominioMC[temaId] ||= {});
+}
+
+function datoDominioMC(q) {
+  return progresoMCDe(q.temaId)[q.id] || null;
+}
+
+function estadoPreguntaMC(q) {
+  const dato = datoDominioMC(q);
+  if (!dato || !dato.intentos) return null;
+  return {
+    dominada: !!dato.dominada,
+    racha: Math.min(3, Number(dato.racha) || 0),
+    intentos: Number(dato.intentos) || 0,
+  };
+}
+
+function registrarDominioMC(q, acerto, idSesion) {
+  const progreso = progresoMCDe(q.temaId);
+  const dato = progreso[q.id] || { intentos: 0, aciertos: 0, errores: 0, racha: 0, dominada: false };
+  // Una pregunta suma como máximo una vez por partida: evita repetirla para acelerar el dominio.
+  if (dato.ultimaSesion === idSesion) return;
+  dato.intentos++;
+  if (acerto) {
+    dato.aciertos++;
+    dato.racha = Math.min(3, (Number(dato.racha) || 0) + 1);
+    dato.dominada = dato.racha >= 3;
+  } else {
+    dato.errores++;
+    dato.racha = 0;
+    dato.dominada = false;
+  }
+  dato.ultimaSesion = idSesion;
+  progreso[q.id] = dato;
+}
+
+function htmlEstadoPreguntaMC(q) {
+  const estadoMC = estadoPreguntaMC(q);
+  if (!estadoMC) return '';
+  return estadoMC.dominada
+    ? '<div class="estado-pregunta estado-pregunta-dominada"><span class="estado-punto"></span><span>Dominada</span></div>'
+    : `<div class="estado-pregunta estado-pregunta-practica"><span class="estado-punto"></span><span>En práctica</span><small>${estadoMC.racha}/3 aciertos</small></div>`;
+}
+
+function actualizarEstadoVisualMC(q) {
+  const tarjeta = document.getElementById('tarjeta');
+  if (!tarjeta) return;
+  tarjeta.classList.remove('pregunta-dominada', 'pregunta-practica');
+  const anterior = tarjeta.querySelector('.estado-pregunta');
+  anterior?.remove();
+  const estadoMC = estadoPreguntaMC(q);
+  if (!estadoMC) return;
+  tarjeta.classList.add(estadoMC.dominada ? 'pregunta-dominada' : 'pregunta-practica');
+  tarjeta.insertAdjacentHTML('afterbegin', htmlEstadoPreguntaMC(q));
+}
+
 function dominadasDe(tema) {
-  return Math.min(Object.keys(estado.dominadas[tema.id] || {}).length, tema.preguntas || 0);
+  return Object.values(progresoMCDe(tema.id)).filter((dato) => dato?.dominada).length;
 }
 
 function dominio(materia) {
@@ -663,7 +720,7 @@ function vistaInicio() {
   sesionT = null;
   const nErrores = Object.keys(estado.errores).length;
   const dominadasMegaclase = Math.min(
-    Object.keys(estado.dominadas[MEGACLASE_TEMA_ID] || {}).length,
+    Object.values(progresoMCDe(MEGACLASE_TEMA_ID)).filter((dato) => dato?.dominada).length,
     MEGACLASE_TOTAL,
   );
 
@@ -1991,10 +2048,9 @@ async function lanzarMegaclase() {
       archivo: 'data/megaclase-marucbc-2026.json',
     };
     const pool = normalizar(json, tema, materia);
-    const dominadas = estado.dominadas[tema.id] || {};
     const ordenadas = [
-      ...pool.filter((pregunta) => !dominadas[pregunta.id]),
-      ...pool.filter((pregunta) => dominadas[pregunta.id]),
+      ...pool.filter((pregunta) => !estadoPreguntaMC(pregunta)?.dominada),
+      ...pool.filter((pregunta) => estadoPreguntaMC(pregunta)?.dominada),
     ];
     empezarJuego(ordenadas, {
       titulo: tema.nombre,
@@ -2103,6 +2159,7 @@ function empezarJuego(pool, meta) {
     falladas: [],
     intentos: [],
     respondida: false,
+    idSesion: window.crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(36).slice(2)}`,
   };
 
   app.innerHTML = `
@@ -2218,9 +2275,12 @@ function mostrarPregunta() {
 
   document.getElementById('barra').style.width = `${(j.i / j.preguntas.length) * 100}%`;
 
+  const estadoMC = estadoPreguntaMC(q);
+  const claseEstadoMC = estadoMC ? (estadoMC.dominada ? 'pregunta-dominada' : 'pregunta-practica') : '';
   zona.innerHTML = `
     <p class="contador">Pregunta ${j.i + 1} de ${j.preguntas.length}</p>
-    <div class="tarjeta-pregunta" id="tarjeta">
+    <div class="tarjeta-pregunta ${claseEstadoMC}" id="tarjeta">
+      ${htmlEstadoPreguntaMC(q)}
       <p class="tema-etq">${esc(q.tema)}</p>
       <h2 class="pregunta">${esc(q.texto)}</h2>
       ${q.imagen ? `
@@ -2288,6 +2348,7 @@ function responder(pos) {
   const q = j.preguntas[j.i];
   const modoLimpio = j.meta.estilo === 'parcial-limpio';
   const acerto = q.orden[pos] === q.correcta;
+  registrarDominioMC(q, acerto, j.idSesion);
   const feedback = document.getElementById('feedback');
 
   j.intentos.push({
@@ -2314,7 +2375,6 @@ function responder(pos) {
   if (acerto) {
     j.aciertos++;
     delete estado.errores[q.id];
-    (estado.dominadas[q.temaId] ||= {})[q.id] = 1;
     if (modoLimpio) {
       veredicto = '<p class="veredicto ok">¡Correcto!</p>';
     } else {
@@ -2349,6 +2409,7 @@ function responder(pos) {
     estado.errores[q.id] = 1;
   }
   reaccionMascota(acerto, acerto && !modoLimpio && HITOS.includes(j.racha));
+  actualizarEstadoVisualMC(q);
   guardar();
 
   feedback.innerHTML = veredicto
