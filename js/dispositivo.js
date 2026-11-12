@@ -40,11 +40,11 @@ function detectarTipo(ua) {
 function modeloDesdeUA(ua) {
   const reglas = [
     /(SM-[A-Z0-9]+)/i,
-    /(motorola moto [^;)]+?)(?:\\s+Build\\/|[;)])/i,
-    /(moto [a-z0-9 +()-]{2,30}?)(?:\\s+Build\\/|[;)])/i,
-    /(Redmi [^;)]+?)(?:\\s+Build\\/|[;)])/i,
-    /(POCO [^;)]+?)(?:\\s+Build\\/|[;)])/i,
-    /(Pixel [^;)]+?)(?:\\s+Build\\/|[;)])/i,
+    /(motorola moto [^;)]+?)(?:\s+Build\/|[;)])/i,
+    /(moto [a-z0-9 +()-]{2,30}?)(?:\s+Build\/|[;)])/i,
+    /(Redmi [^;)]+?)(?:\s+Build\/|[;)])/i,
+    /(POCO [^;)]+?)(?:\s+Build\/|[;)])/i,
+    /(Pixel [^;)]+?)(?:\s+Build\/|[;)])/i,
     /(CPH\d{4})/i,
     /(V\d{4}[A-Z]?)/i,
   ];
