@@ -314,11 +314,12 @@ function registrarDominioMC(q, acerto, idSesion) {
   if (acerto) {
     dato.aciertos++;
     dato.racha = Math.min(3, (Number(dato.racha) || 0) + 1);
-    dato.dominada = dato.racha >= 3;
+    // El dominio es permanente: una vez alcanzado, los errores posteriores no lo quitan.
+    dato.dominada = !!dato.dominada || dato.racha >= 3;
   } else {
     dato.errores++;
     dato.racha = 0;
-    dato.dominada = false;
+    // Si todavía no estaba dominada, sigue en práctica. Si ya lo estaba, conserva el dominio.
   }
   dato.ultimaSesion = idSesion;
   progreso[q.id] = dato;
