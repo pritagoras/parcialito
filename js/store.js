@@ -12,7 +12,8 @@ const base = {
   mejores: {},       // { idTema: { precision, puntos, racha } }
   errores: {},       // { idPregunta: 1 }
   apodo: '',         // nombre que se muestra en el ranking público
-  dominadas: {},     // { idTema: { idPregunta: 1 } } preguntas respondidas bien al menos una vez
+  dominadas: {},     // legado: se conserva para no romper datos antiguos
+  dominioMC: {},      // { idTema: { idPregunta: { intentos, aciertos, errores, racha, dominada, ultimaSesion } } }
   vistasSP: {},      // Segundo parcial: { idPregunta: 1 (última vez fallada) | 2 (última vez acertada) }; sin entrada = nunca respondida
 };
 
