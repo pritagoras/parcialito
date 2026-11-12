@@ -723,6 +723,16 @@ function vistaInicio() {
           <span class="sp-banco-flecha" aria-hidden="true">↗</span>
         </button>
       </section>
+      <section class="banner-segundo banner-megaclase" aria-labelledby="megaclase-titulo">
+        <div class="sp-cabecera"><span class="sp-sello">✦ MEGACLASE · MARU</span><span class="sp-numero">CBC · 2026</span></div>
+        <h2 id="megaclase-titulo">Repaso del segundo parcial</h2>
+        <p class="sp-descripcion">Practicá las 135 preguntas del compilado con respuesta explicada y sus figuras originales.</p>
+        <button class="sp-tema" id="btn-megaclase" type="button">
+          <span class="sp-tema-icono" aria-hidden="true">📝</span>
+          <span class="sp-tema-texto"><strong>Entrar al repaso de Maru</strong><small>Opción múltiple · Biología CBC</small></span>
+          <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
+        </button>
+      </section>
       <section class="banner-segundo banner-ipc-segundo" aria-labelledby="ipc-segundo-parcial-titulo">
         <div class="sp-cabecera"><span class="sp-sello">✦ ESPACIO DE ESTUDIO</span><span class="sp-numero">IPC · 02</span></div>
         <h2 id="ipc-segundo-parcial-titulo">Segundo parcial · IPC</h2>
@@ -784,6 +794,7 @@ function vistaInicio() {
   document.getElementById('btn-sp-ciclo')?.addEventListener('click', () => { Sonido.clic(); lanzarSegundoParcial(); });
   document.getElementById('btn-sp-temas')?.addEventListener('click', () => { Sonido.clic(); vistaEstudioSegundoParcial(); });
   document.getElementById('btn-sp-banco')?.addEventListener('click', () => { Sonido.clic(); vistaBancoSegundoParcial(); });
+  document.getElementById('btn-megaclase')?.addEventListener('click', () => { Sonido.clic(); lanzarMegaclase(); });
   document.getElementById('btn-ipc-segundo-home')?.addEventListener('click', () => {
     Sonido.clic();
     const ipcIndex = indice.materias.findIndex((m) => m.id === 'ipc-2');
@@ -1955,6 +1966,34 @@ async function lanzarTemas(materia, temas, cantidad) {
       temaNombre: temas.length === 1 ? temas[0].nombre : 'Varios temas',
       repetir: () => lanzarTemas(materia, temas, cantidad),
       volver: () => vistaInicio(),
+    });
+  } catch (e) {
+    vistaError(e);
+  }
+}
+
+async function lanzarMegaclase() {
+  vistaCargando('Preparando las preguntas de la megaclase…');
+  try {
+    const r = await fetch('data/megaclase-marucbc-2026.json', { cache: 'no-cache' });
+    if (!r.ok) throw new Error(\`No se pudo leer el repaso de Maru (\${r.status})\`);
+    const json = await r.json();
+    const materia = { nombre: json.materia || 'Biología CBC' };
+    const tema = {
+      id: 'megaclase-marucbc-2026',
+      nombre: json.tema || 'Megaclase de repaso · Segundo parcial 2026',
+      archivo: 'data/megaclase-marucbc-2026.json',
+    };
+    const pool = normalizar(json, tema, materia);
+    empezarJuego(pool, {
+      titulo: tema.nombre,
+      temaId: tema.id,
+      ranking: false,
+      estilo: 'parcial-limpio',
+      materiaNombre: materia.nombre,
+      temaNombre: tema.nombre,
+      repetir: lanzarMegaclase,
+      volver: vistaInicio,
     });
   } catch (e) {
     vistaError(e);

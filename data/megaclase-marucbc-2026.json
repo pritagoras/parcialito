@@ -1,0 +1,1635 @@
+{
+  "materia": "Biología CBC",
+  "tema": "Megaclase de repaso · Segundo parcial 2026 · Maru",
+  "fuente": "Compilado de preguntas de segundo parcial CBC, Biología con Maru.",
+  "preguntas": [
+    {
+      "pregunta": "¿Cuál de las siguientes estructuras es importada desde el citoplasma hacia el núcleo?",
+      "opciones": [
+        "Proteínas de membrana y factores de traducción.",
+        "Subunidades ribosómicas y ARN mensajero.",
+        "Las proteínas ribosómicas y proteínas de la lámina nuclear.",
+        "ARNt (de transferencia) y ARN ribosomal."
+      ],
+      "id": "megaclase-maru-2026-001",
+      "correcta": "C",
+      "explicacion": "Las proteínas ribosómicas y las láminas tienen señales de localización nuclear y se importan desde el citoplasma."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes estructuras es exportada desde el núcleo al citoplasma?",
+      "opciones": [
+        "Las proteínas de la lámina nuclear.",
+        "Las proteínas ribosómicas.",
+        "Los factores de transcripción.",
+        "Subunidades ribosómicas."
+      ],
+      "id": "megaclase-maru-2026-002",
+      "correcta": "D",
+      "explicacion": "Las subunidades ribosómicas se ensamblan en el núcleo y salen por los poros para participar en la traducción."
+    },
+    {
+      "pregunta": "La heterocromatina corresponde a secuencias del ADN:",
+      "opciones": [
+        "Altamente repetitivas, que se transcriben activamente durante todo el ciclo celular.",
+        "Asociadas a la transcripción de ARN ribosomal.",
+        "Asociadas a la transcripción de ARN de transferencia.",
+        "Altamente repetitivas que son transcripcionalmente inactivas."
+      ],
+      "id": "megaclase-maru-2026-003",
+      "correcta": "D",
+      "explicacion": "La heterocromatina está compactada; muchas de sus secuencias repetitivas permanecen transcripcionalmente silenciadas."
+    },
+    {
+      "pregunta": "El ADN genómico de las células Procariontes:",
+      "opciones": [
+        "Sólo llega al grado de condensación de nucleosoma.",
+        "Son varios cromosomas circulares.",
+        "Es una única molécula lineal, asociada a proteínas no histónicas.",
+        "Es una única molécula circular."
+      ],
+      "id": "megaclase-maru-2026-004",
+      "correcta": "D",
+      "explicacion": "El genoma procariota típico consiste en una molécula principal de ADN circular, sin núcleo ni telómeros."
+    },
+    {
+      "pregunta": "La localización de un gen que codifica para la enzima peptidil transferasa se encontrará en las secuencias:",
+      "opciones": [
+        "Centroméricas del ADN.",
+        "Teloméricas del ADN.",
+        "Heterocromáticas del ADN.",
+        "Eucromáticas del ADN."
+      ],
+      "id": "megaclase-maru-2026-005",
+      "correcta": "D",
+      "explicacion": "Los genes que se transcriben activamente suelen estar en eucromatina, que es más accesible."
+    },
+    {
+      "pregunta": "Tanto en procariontes como en eucariontes, la traducción ocurre:",
+      "opciones": [
+        "Una vez que el ARN haya madurado.",
+        "En ribosomas asociados al RER o a la envoltura nuclear.",
+        "A partir de un codón AUG.",
+        "Simultáneamente con la transcripción."
+      ],
+      "id": "megaclase-maru-2026-006",
+      "correcta": "C",
+      "explicacion": "La traducción comienza normalmente en un codón de inicio AUG tanto en procariotas como en eucariotas."
+    },
+    {
+      "pregunta": "Tres codones sinónimos:",
+      "opciones": [
+        "Informan para un mismo aminoácido.",
+        "Informan para varios aminoácidos cada uno.",
+        "Informan para tres aminoácidos diferentes.",
+        "No informan para ningún aminoácido."
+      ],
+      "id": "megaclase-maru-2026-007",
+      "correcta": "A",
+      "explicacion": "Codones sinónimos son tripletes distintos que especifican el mismo aminoácido."
+    },
+    {
+      "pregunta": "Para transcribir un gen en procariontes y eucariontes se requiere, entre otras cosas:",
+      "opciones": [
+        "Una ARN polimerasa que lea la cadena molde de ADN en dirección 3' a 5'.",
+        "Disponibilidad de los siguientes sustratos: ATP, GTP, TTP y CTP.",
+        "La síntesis previa de un cebador o primer.",
+        "Factores de transcripción basales y específicos."
+      ],
+      "id": "megaclase-maru-2026-008",
+      "correcta": "A",
+      "explicacion": "La ARN polimerasa lee la hebra molde de ADN en sentido 3′→5′ para sintetizar ARN 5′→3′."
+    },
+    {
+      "pregunta": "En el siguiente esquema el número 4 representa a la enzima:",
+      "opciones": [
+        "ARN polimerasa.",
+        "ADN ligasa.",
+        "Transcriptasa reversa.",
+        "ADN polimerasa."
+      ],
+      "id": "megaclase-maru-2026-009",
+      "correcta": "A",
+      "explicacion": "El número 4 señala el complejo enzimático que sintetiza el transcripto de ARN: la ARN polimerasa.",
+      "imagen": "assets/megaclase-marucbc-2026/p3-figura1.png",
+      "imagen_alt": "Esquema de transcripción; el rótulo 4 señala la ARN polimerasa."
+    },
+    {
+      "pregunta": "La cola poli A (poliadenilación) es característica de los:",
+      "opciones": [
+        "ARNm eucariotas y sirve para proteger de la degradación enzimática en el 5'.",
+        "ARNm procariotas y sirve para dar el marco de lectura.",
+        "ARNm procariotas y sirve para una correcta traducción.",
+        "ARNm eucariotas y sirve para proteger de la degradación enzimática en el 3'."
+      ],
+      "id": "megaclase-maru-2026-010",
+      "correcta": "D",
+      "explicacion": "La cola poli-A se agrega al extremo 3′ del ARNm eucariota y contribuye a su estabilidad."
+    },
+    {
+      "pregunta": "Mediante el empalme o “splicing” alternativo pueden obtenerse:",
+      "opciones": [
+        "Distintos ARN ribosomales.",
+        "Distintos ARN mensajeros maduros pero iguales proteínas.",
+        "Distintos ARN mensajeros maduros.",
+        "Distintos transcriptos primarios."
+      ],
+      "id": "megaclase-maru-2026-011",
+      "correcta": "C",
+      "explicacion": "El splicing alternativo combina exones de distintas maneras y genera ARNm maduros diferentes."
+    },
+    {
+      "pregunta": "La actividad catalítica del ribosoma encargada de elongar el péptido, una vez que el aminoácido requerido ha sido ubicado se denomina:",
+      "opciones": [
+        "Aminoacil sintetasa.",
+        "Aminoacil-elongasa.",
+        "Translocasa.",
+        "Peptidil-transferasa."
+      ],
+      "id": "megaclase-maru-2026-012",
+      "correcta": "D",
+      "explicacion": "La peptidil-transferasa del ribosoma cataliza el enlace peptídico que alarga la cadena."
+    },
+    {
+      "pregunta": "La aminoacil-ARNt sintetasa es un complejo enzimático que posibilita:",
+      "opciones": [
+        "La transcripción, ya que participa en la remoción de los intrones.",
+        "La traducción, ya que cataliza la formación de las uniones peptídicas.",
+        "La transcripción, ya que participa en la activación de los nucleótidos.",
+        "La traducción, ya que participa en la activación de los aminoácidos."
+      ],
+      "id": "megaclase-maru-2026-013",
+      "correcta": "D",
+      "explicacion": "La aminoacil-ARNt sintetasa carga el aminoácido correcto en su ARNt, paso necesario para traducir."
+    },
+    {
+      "pregunta": "Indique el transcripto 1° obtenido a partir de la siguiente secuencia molde: 3'ATCGATCG5'",
+      "opciones": [
+        "5'UAGCUAGC3'",
+        "5'AUCGAUCG3'",
+        "3'AUCGAUCG5'",
+        "3'UAGCUAGC5'"
+      ],
+      "id": "megaclase-maru-2026-014",
+      "correcta": "A",
+      "explicacion": "El ARN es complementario y antiparalelo a la molde: 3′-ATCGATCG-5′ produce 5′-UAGCUAGC-3′."
+    },
+    {
+      "pregunta": "Dado el siguiente codón: 5' CCA 3', el anticodón que le corresponde en el ARNt es:",
+      "opciones": [
+        "5' GGA 3'",
+        "3' CCA 5'",
+        "5' GGT 3'",
+        "3' GGU 5'"
+      ],
+      "id": "megaclase-maru-2026-015",
+      "correcta": "D",
+      "explicacion": "El anticodón debe aparearse de forma complementaria y antiparalela con CCA: 3′-GGU-5′."
+    },
+    {
+      "pregunta": "Dada la secuencia 5' ...AUGCCAUCCGGC...3' de un ARNm:",
+      "opciones": [
+        "La sustitución de la sexta base podría resultar en la codificación del mismo polipéptido.",
+        "La inserción de A entre la séptima y la octava base no altera el marco de lectura.",
+        "La sustitución de cualquier base nunca altera la secuencia de aminoácidos resultante.",
+        "La deleción de la tercera base dará como resultado el mismo polipéptido."
+      ],
+      "id": "megaclase-maru-2026-016",
+      "correcta": "A",
+      "explicacion": "La sexta base está en el codón CCA; sustituirla puede producir CAU, que también codifica histidina (CAC)."
+    },
+    {
+      "pregunta": "¿Qué polipéptido será sintetizado a partir del siguiente fragmento de ADN molde? 3′ CTT CGT CAA ATG ATT 5′ (GUU→Val, GCA→Ala, UAC→Tyr, GAA→Glu)",
+      "opciones": [
+        "COOH Glu-Ala-Val-Tyr NH₂",
+        "NH₂ Ala-Val-Tyr-Glu COOH",
+        "NH₂ Glu-Ala-Val-Tyr-STOP COOH",
+        "NH₂ Glu-Ala-Val-Tyr COOH"
+      ],
+      "id": "megaclase-maru-2026-017",
+      "correcta": "C",
+      "explicacion": "La lectura se inicia por el extremo amino y la secuencia y clave de codones dadas conducen a Glu-Ala-Val-Tyr seguido de STOP.",
+      "imagen": "assets/megaclase-marucbc-2026/p4-figura1.png",
+      "imagen_alt": "Tabla del código genético para identificar los aminoácidos."
+    },
+    {
+      "pregunta": "Observe la figura e indique cuál es el último aminoácido de esta proteína y cuál es el anticodón de su ARNt:",
+      "opciones": [
+        "Gly / 5' CCG 3'",
+        "Gly / 3' CCG 5'",
+        "Pro / 5' GGC 3'",
+        "Pro / 5' CCG 3'"
+      ],
+      "id": "megaclase-maru-2026-018",
+      "correcta": "B",
+      "explicacion": "La figura muestra el codón GGC para glicina; su anticodón complementario y antiparalelo es 3′-CCG-5′.",
+      "imagen": "assets/megaclase-marucbc-2026/p5-figura4.png",
+      "imagen_alt": "Ribosoma en el codón de terminación, con el último aminoácido glicina y el anticodón indicado."
+    },
+    {
+      "pregunta": "Dada la siguiente cadena de ADN: 5' A T T G C G C 3' Señale en cuál de las siguientes opciones de cadena complementaria a la dada, se produjo una mutación por sustitución:",
+      "opciones": [
+        "3' TTAAACGCG 5'",
+        "3' TTACGCG 5'",
+        "3' TTAACGCG 5'",
+        "3' TTAGCGCG 5'"
+      ],
+      "id": "megaclase-maru-2026-019",
+      "correcta": "B",
+      "explicacion": "La cadena complementaria esperada sería 3′-TAACGCG-5′. El PDF no ofrece esa secuencia; se corrigió la opción B para representar una única sustitución."
+    },
+    {
+      "pregunta": "Partiendo de una célula 2n = 6, ¿cuántos cromosomas y con cuántas cromátidas tendrá en cada polo en anafase II?",
+      "opciones": [
+        "3 cromosomas de una cromátida cada uno.",
+        "3 cromosomas de dos cromátidas cada uno.",
+        "6 cromosomas de dos cromátidas cada uno.",
+        "6 cromosomas de una cromátida cada uno."
+      ],
+      "id": "megaclase-maru-2026-020",
+      "correcta": "A",
+      "explicacion": "Tras meiosis I hay n=3 cromosomas duplicados; en anafase II las cromátidas se separan y cada polo recibe tres cromosomas de una cromátida."
+    },
+    {
+      "pregunta": "¿Qué probabilidad tiene una pareja AB y A de tener un hijo B?",
+      "opciones": [
+        "50 %.",
+        "25 %.",
+        "75 %.",
+        "0 %."
+      ],
+      "id": "megaclase-maru-2026-021",
+      "correcta": "A",
+      "explicacion": "Si el progenitor de fenotipo A es heterocigota (Iᴬi), el cruce IᴬIᴮ × Iᴬi produce descendencia B en la mitad de los casos."
+    },
+    {
+      "pregunta": "La enzima responsable de la retrotranscripción es la:",
+      "opciones": [
+        "Peptidil transferasa.",
+        "ARN pol II.",
+        "Transcriptasa reversa.",
+        "ADN pol III."
+      ],
+      "id": "megaclase-maru-2026-022",
+      "correcta": "C",
+      "explicacion": "La transcriptasa reversa sintetiza ADN utilizando ARN como molde."
+    },
+    {
+      "pregunta": "El operón lac se encuentra bajo control positivo cuando:",
+      "opciones": [
+        "La única fuente de carbonos es glucosa.",
+        "La concentración de AMP cíclico y de lactosa en el citoplasma bacteriano es alta.",
+        "No hay lactosa en el medio extracelular.",
+        "No hay lactosa ni glucosa como fuente de carbonos."
+      ],
+      "id": "megaclase-maru-2026-023",
+      "correcta": "B",
+      "explicacion": "Con lactosa presente y glucosa escasa, sube el AMPc y CAP activa la transcripción del operón lac."
+    },
+    {
+      "pregunta": "¿Qué sucede cuando el triptófano está presente en la célula?",
+      "opciones": [
+        "Se sintetizan enzimas para la producción de triptófano.",
+        "El operón triptófano se activa.",
+        "La ARN polimerasa se une al promotor.",
+        "El represor triptófano se une al operador triptófano."
+      ],
+      "id": "megaclase-maru-2026-024",
+      "correcta": "D",
+      "explicacion": "El triptófano actúa como correpresor: activa al represor, que se une al operador y frena el operón."
+    },
+    {
+      "pregunta": "Se coloca una muestra de bacterias en medio nutritivo que solo contiene lactosa como fuente de alimento. Al cabo de unas horas las bacterias mueren, aunque todas las condiciones para su reproducción fueran óptimas. Una explicación posible podría ser:",
+      "opciones": [
+        "Que la proteína represora tenga afinidad por el promotor del Operón Lactosa y se una a él.",
+        "Que la lactosa tenga afinidad por el operador del Operón Lactosa y se una, bloqueándolo.",
+        "Que la lactosa inhiba la unión de la ARN polimerasa al sitio promotor del Operón Lactosa.",
+        "Que el represor del Operón Lactosa presente una mutación que no le permita reconocer la lactosa."
+      ],
+      "id": "megaclase-maru-2026-025",
+      "correcta": "D",
+      "explicacion": "Si el represor no reconoce lactosa, no se inactiva y puede bloquear el operón, impidiendo usar lactosa como nutriente."
+    },
+    {
+      "pregunta": "En la figura, la enzima D está representando a:",
+      "opciones": [
+        "Transcriptasa reversa.",
+        "ADN polimerasa.",
+        "ARN polimerasa.",
+        "ADN ligasa."
+      ],
+      "id": "megaclase-maru-2026-026",
+      "correcta": "D",
+      "explicacion": "En el esquema de replicación, D sella los cortes entre fragmentos de Okazaki: es la ADN ligasa.",
+      "imagen": "assets/megaclase-marucbc-2026/p7-figura1.png",
+      "imagen_alt": "Esquema de replicación del ADN con enzimas señaladas por letras."
+    },
+    {
+      "pregunta": "Las células procariontes se diferencian de las eucariontes porque carecen de:",
+      "opciones": [
+        "Genes reguladores.",
+        "ADN polimerasa.",
+        "Telómeros.",
+        "Ribosomas."
+      ],
+      "id": "megaclase-maru-2026-027",
+      "correcta": "C",
+      "explicacion": "Las procariotas tienen genes reguladores, ADN polimerasa y ribosomas, pero carecen de telómeros al tener ADN circular."
+    },
+    {
+      "pregunta": "La replicación del ADN es:",
+      "opciones": [
+        "No conservativa: cada célula hija tendrá dos cadenas de ADN nuevas.",
+        "Semiconservativa: una cadena original y una nueva para cada célula hija.",
+        "Conservativa: las células hijas conservarán una molécula vieja y una nueva.",
+        "Semiconservativa: las células hijas conservan la mitad de la información genética."
+      ],
+      "id": "megaclase-maru-2026-028",
+      "correcta": "B",
+      "explicacion": "La replicación semiconservativa conserva una hebra parental y sintetiza una nueva en cada molécula hija."
+    },
+    {
+      "pregunta": "La enzima helicasa:",
+      "opciones": [
+        "Se encarga de abrir la doble hélice mediante el gasto de ATP.",
+        "Alivia la tensión en la doble hebra que se genera como consecuencia de la apertura de la doble hélice.",
+        "Abre la doble hélice y la mantiene abierta, sin gasto de energía.",
+        "Sintetiza el cebador para la ADN pol."
+      ],
+      "id": "megaclase-maru-2026-029",
+      "correcta": "A",
+      "explicacion": "La helicasa abre la doble hélice y consume ATP; la topoisomerasa, no la helicasa, alivia el superenrollamiento."
+    },
+    {
+      "pregunta": "Durante el ciclo celular, la etapa:",
+      "opciones": [
+        "S contiene el doble de ADN que G2.",
+        "G2 es la más larga del ciclo.",
+        "G0 comienza al terminar M y termina al comenzar G2.",
+        "G1 contiene la mitad de ADN que G2."
+      ],
+      "id": "megaclase-maru-2026-030",
+      "correcta": "D",
+      "explicacion": "En G1 hay la mitad de ADN que tras la duplicación en G2; la fase S lo duplica."
+    },
+    {
+      "pregunta": "El cáncer es una patología relacionada con:",
+      "opciones": [
+        "La incapacidad de un tejido de duplicar sus células",
+        "Una trisomía",
+        "La pérdida del control del ciclo celular",
+        "La aparición de células tetraploides"
+      ],
+      "id": "megaclase-maru-2026-031",
+      "correcta": "C",
+      "explicacion": "El cáncer suele surgir cuando se pierde la regulación de proliferación y de los puntos de control del ciclo celular."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes células humanas contiene mayor cantidad de ADN en las etapas del ciclo celular indicadas?",
+      "opciones": [
+        "Célula epitelial en G2",
+        "Neurona en G0",
+        "Célula hepática en G1",
+        "Óvulo"
+      ],
+      "id": "megaclase-maru-2026-032",
+      "correcta": "A",
+      "explicacion": "En G2 el ADN ya se duplicó, por lo que una célula epitelial diploide tiene el doble que una célula en G1 o G0 y que un óvulo."
+    },
+    {
+      "pregunta": "Los nuevos alelos de un gen pueden surgir por:",
+      "opciones": [
+        "Unión de gametas al azar",
+        "Reproducción sexual",
+        "Mutación de alelos preexistentes",
+        "Migración de cromosomas al azar"
+      ],
+      "id": "megaclase-maru-2026-033",
+      "correcta": "C",
+      "explicacion": "Las mutaciones cambian la secuencia de un alelo y pueden originar alelos nuevos."
+    },
+    {
+      "pregunta": "Si una célula posee 7 cromosomas con dos cromátidas cada uno:",
+      "opciones": [
+        "Es el producto final de la mitosis de una célula n=7",
+        "Puede estar en metafase II y provenir de una célula 2n=14",
+        "Es el producto de la meiosis II de una célula 2n=14",
+        "Puede estar en metafase I y provenir de una célula n=7"
+      ],
+      "id": "megaclase-maru-2026-034",
+      "correcta": "B",
+      "explicacion": "En metafase II la célula es haploide: puede tener siete cromosomas duplicados si la célula de origen era 2n=14."
+    },
+    {
+      "pregunta": "Los cromosomas homólogos:",
+      "opciones": [
+        "Portan información para los mismos caracteres",
+        "Contienen idéntica información",
+        "Siempre presentan alelos distintos en cada locus",
+        "Están presentes en células haploides"
+      ],
+      "id": "megaclase-maru-2026-035",
+      "correcta": "A",
+      "explicacion": "Los homólogos portan genes para los mismos caracteres en los mismos loci, aunque sus alelos pueden diferir."
+    },
+    {
+      "pregunta": "El cariotipo puede obtenerse utilizando células:",
+      "opciones": [
+        "Somáticas en G2",
+        "Somáticas en metafase",
+        "Germinales en profase II",
+        "Germinales en G2"
+      ],
+      "id": "megaclase-maru-2026-036",
+      "correcta": "B",
+      "explicacion": "La metafase ofrece cromosomas condensados y alineados, apropiados para preparar un cariotipo."
+    },
+    {
+      "pregunta": "¿Cuál es la probabilidad de que al cabo de la meiosis I de un individuo de genotipo AABbCc, las células resultantes porten el alelo A? (asuma que la meiosis es normal):",
+      "opciones": [
+        "0",
+        "1",
+        "1/2",
+        "1/4"
+      ],
+      "id": "megaclase-maru-2026-037",
+      "correcta": "B",
+      "explicacion": "AABbCc siempre aporta el alelo A: el locus A es homocigota, así que la probabilidad es 1."
+    },
+    {
+      "pregunta": "Una bacteria y una célula humana tienen en común:",
+      "opciones": [
+        "La estructura y número de sus mitocondrias",
+        "La presencia de regiones promotoras al inicio de sus genes, si bien esas regiones difieren en posición y secuencia.",
+        "El número de genes de sus genomas",
+        "Los procesos de maduración postranscripcionales de sus ARNm"
+      ],
+      "id": "megaclase-maru-2026-038",
+      "correcta": "B",
+      "explicacion": "Procariotas y eucariotas tienen promotores, aunque las secuencias y su organización difieren."
+    },
+    {
+      "pregunta": "Si un individuo produce anticuerpos que deterioran el cinetocoro, sus células tendrán dificultades para:",
+      "opciones": [
+        "Rearmar la envoltura nuclear luego de la división",
+        "Movilizar sus cromosomas durante la división",
+        "Duplicar sus centriolos",
+        "Realizar la citocinesis"
+      ],
+      "id": "megaclase-maru-2026-039",
+      "correcta": "B",
+      "explicacion": "Los cinetocoros conectan los cromosomas con los microtúbulos del huso y permiten su movimiento."
+    },
+    {
+      "pregunta": "Los microtúbulos:",
+      "opciones": [
+        "Son estructuras citoesqueléticas rígidas, que no pueden variar en longitud.",
+        "Se asocian espontáneamente para formar las fibras musculares",
+        "Se forman por la polimerización de actina",
+        "Participan en el desplazamiento de los cromosomas hacia los polos durante la anafase"
+      ],
+      "id": "megaclase-maru-2026-040",
+      "correcta": "D",
+      "explicacion": "Los microtúbulos del huso se acortan y desplazan cromosomas hacia los polos durante la anafase."
+    },
+    {
+      "pregunta": "Una diferencia entre la ADN pol y la ARN pol es que:",
+      "opciones": [
+        "ADN pol utiliza como molde al ADN y la ARN pol al ARN.",
+        "ADN pol lee en dirección 5' → 3' y la ARN pol lo hace 3' → 5'.",
+        "ADN pol requiere de cebador y la ARN pol no.",
+        "ADN pol polimeriza ribonucleótidos y la ARN pol desoxirribonucleótidos."
+      ],
+      "id": "megaclase-maru-2026-041",
+      "correcta": "C",
+      "explicacion": "La ADN polimerasa necesita un cebador con un extremo 3′-OH; la ARN polimerasa puede iniciar sin él."
+    },
+    {
+      "pregunta": "¿En cuáles de las siguientes etapas se observan cromosomas con dos cromátidas?",
+      "opciones": [
+        "Profase mitótica.",
+        "Anafase mitótica.",
+        "G1.",
+        "Anafase II."
+      ],
+      "id": "megaclase-maru-2026-042",
+      "correcta": "A",
+      "explicacion": "En profase mitótica, cada cromosoma ya duplicado tiene dos cromátidas hermanas."
+    },
+    {
+      "pregunta": "El mecanismo de corrección de pruebas:",
+      "opciones": [
+        "Ocurre durante la etapa S.",
+        "Ocurre una vez que todo el ADN fue duplicado.",
+        "Lo realizan tanto la ADN polimerasa como la primasa.",
+        "Es cien por ciento eficiente."
+      ],
+      "id": "megaclase-maru-2026-043",
+      "correcta": "A",
+      "explicacion": "La corrección de pruebas ocurre durante la síntesis de ADN (fase S), mientras las polimerasas incorporan nucleótidos."
+    },
+    {
+      "pregunta": "La helicasa:",
+      "opciones": [
+        "Rompe uniones fosfodiéster.",
+        "Rompe uniones puente de hidrógeno.",
+        "Forma uniones fosfodiéster.",
+        "Forma uniones puente de hidrógeno."
+      ],
+      "id": "megaclase-maru-2026-044",
+      "correcta": "B",
+      "explicacion": "La helicasa separa las hebras rompiendo los puentes de hidrógeno entre bases complementarias."
+    },
+    {
+      "pregunta": "Las mutaciones:",
+      "opciones": [
+        "Son alteraciones en la secuencia de nucleótidos del ADN.",
+        "Son alteraciones en la secuencia de nucleótidos del ARNm.",
+        "Son alteraciones en la secuencia de nucleótidos del ARNt.",
+        "Son alteraciones en la secuencia de aminoácidos de una proteína."
+      ],
+      "id": "megaclase-maru-2026-045",
+      "correcta": "A",
+      "explicacion": "Una mutación es un cambio heredable en la secuencia de nucleótidos del ADN."
+    },
+    {
+      "pregunta": "Roberto es de grupo sanguíneo A, siendo su padre de grupo 0. Susana es de grupo 0, siendo su madre de grupo A. ¿Cuál es la probabilidad de que el hijo de Roberto y Susana sea de grupo 0?",
+      "opciones": [
+        "0 %.",
+        "25 %.",
+        "50 %.",
+        "75 %."
+      ],
+      "id": "megaclase-maru-2026-046",
+      "correcta": "C",
+      "explicacion": "Roberto, hijo de un progenitor O, debe ser Iᴬi; Susana es ii. Iᴬi × ii da 50 % de hijos ii, grupo O."
+    },
+    {
+      "pregunta": "En un ARNm policistrónico habrá:",
+      "opciones": [
+        "Más de un codón de inicio y de terminación.",
+        "Un solo codón de inicio y de terminación.",
+        "Más de un codón de inicio, pero uno solo de terminación.",
+        "Un solo codón de inicio, pero más de uno de terminación."
+      ],
+      "id": "megaclase-maru-2026-047",
+      "correcta": "A",
+      "explicacion": "Un ARNm policistrónico contiene varios marcos de lectura y por eso múltiples inicios y terminaciones."
+    },
+    {
+      "pregunta": "La heterocromatina:",
+      "opciones": [
+        "No permite el ingreso de la ARN polimerasa para la transcripción de los genes.",
+        "Es la cromatina laxa que puede expresarse.",
+        "No se expresa porque no contiene información genética.",
+        "Se expresa durante la división celular."
+      ],
+      "id": "megaclase-maru-2026-048",
+      "correcta": "A",
+      "explicacion": "La compactación de la heterocromatina dificulta el acceso de la maquinaria de transcripción."
+    },
+    {
+      "pregunta": "Juan y Cristina son pareja, ambos del grupo sanguíneo B y homocigotas recesivos para el color de ojos. Tienen un hijo. ¿Cuál de los siguientes es un posible fenotipo del hijo sabiendo que ojos celestes es el alelo recesivo?",
+      "opciones": [
+        "Ojos celestes y grupo 0.",
+        "Ojos negros y grupo 0.",
+        "Ojos celestes y grupo AB.",
+        "Ojos negros y grupo B."
+      ],
+      "id": "megaclase-maru-2026-049",
+      "correcta": "A",
+      "explicacion": "Dos progenitores B pueden ser heterocigotas y tener un hijo O; ambos son bb para ojos celestes, así que todos sus hijos serán celestes."
+    },
+    {
+      "pregunta": "¿Cuáles de las siguientes moléculas podrían ser transportadas por una importina?",
+      "opciones": [
+        "Aminoácidos libres.",
+        "ARN de transferencia.",
+        "Ribonucleótidos para la síntesis de ADN y ARN.",
+        "ARN polimerasa."
+      ],
+      "id": "megaclase-maru-2026-050",
+      "correcta": "D",
+      "explicacion": "La ARN polimerasa posee señal de localización nuclear y puede entrar unida a importinas."
+    },
+    {
+      "pregunta": "La lámina nuclear:",
+      "opciones": [
+        "Se encuentra en la cara citoplasmática de la envoltura nuclear.",
+        "Está constituida por microfilamentos.",
+        "Se despolimeriza al final de la mitosis.",
+        "Se desorganiza al comienzo de la división celular."
+      ],
+      "id": "megaclase-maru-2026-051",
+      "correcta": "D",
+      "explicacion": "La lámina nuclear se desorganiza al comenzar la mitosis y vuelve a ensamblarse al final."
+    },
+    {
+      "pregunta": "En todas las células de un individuo pluricelular se encuentran:",
+      "opciones": [
+        "Los mismos tipos de histonas.",
+        "Los mismos tipos de ARN mensajero.",
+        "Los mismos tipos de ARNt y de mensajeros.",
+        "Las mismas proteínas."
+      ],
+      "id": "megaclase-maru-2026-052",
+      "correcta": "A",
+      "explicacion": "Las células de un organismo comparten el genoma y el repertorio general de histonas, aunque expresen distintos genes."
+    },
+    {
+      "pregunta": "En un polirribosoma eucarionte:",
+      "opciones": [
+        "Se sintetizan distintos tipos de cadenas polipeptídicas.",
+        "Se sintetiza la misma cadena polipeptídica varias veces.",
+        "Los ribosomas leen información genética distinta.",
+        "Los ribosomas leen información genética distinta pero sintetizan la misma proteína."
+      ],
+      "id": "megaclase-maru-2026-053",
+      "correcta": "B",
+      "explicacion": "En un polirribosoma varios ribosomas traducen el mismo ARNm y producen copias de la misma cadena polipeptídica."
+    },
+    {
+      "pregunta": "Si una mujer es daltónica y su pareja no, ¿qué se puede afirmar acerca de los futuros hijos de la pareja?",
+      "opciones": [
+        "Los varones tienen un 100 % de probabilidades de ser daltónicos y las mujeres un 0 %.",
+        "Los varones tienen un 50 % de probabilidades de ser daltónicos y las mujeres un 0 %.",
+        "Los varones y las mujeres tienen un 50 % de probabilidades de ser daltónicos.",
+        "Los varones tienen un 0 % de probabilidades de ser daltónicos y las mujeres un 50 %."
+      ],
+      "id": "megaclase-maru-2026-054",
+      "correcta": "A",
+      "explicacion": "Una mujer daltónica es XᶜXᶜ; con un varón no daltónico XᴺY, todos los hijos varones serán daltónicos y las hijas portadoras."
+    },
+    {
+      "pregunta": "¿Mediante qué proceso pueden ser separados los genes ligados?",
+      "opciones": [
+        "Fertilización.",
+        "Mitosis.",
+        "Meiosis II.",
+        "Crossing-over."
+      ],
+      "id": "megaclase-maru-2026-055",
+      "correcta": "D",
+      "explicacion": "El crossing-over entre cromosomas homólogos puede recombinar y separar genes ligados."
+    },
+    {
+      "pregunta": "El transporte a través del complejo del poro nuclear:",
+      "opciones": [
+        "Es con gasto de energía para todas las sustancias.",
+        "Requiere de una señal de localización nuclear para el ingreso al núcleo de las proteínas.",
+        "Requiere que el ARN posea una señal de localización nuclear.",
+        "Se da a través de proteínas canal."
+      ],
+      "id": "megaclase-maru-2026-056",
+      "correcta": "B",
+      "explicacion": "Las proteínas que ingresan al núcleo utilizan una señal de localización nuclear reconocida por importinas."
+    },
+    {
+      "pregunta": "Un ratón albino de pelo largo, homocigota recesivo para ambos caracteres, se cruza repetidamente con una hembra. Sumando todos los casos, la mitad de la descendencia resulta de pelo negro y corto, entonces la hembra puede ser:",
+      "opciones": [
+        "Homocigota dominante para ambos caracteres.",
+        "Heterocigota para ambos caracteres.",
+        "Homocigota dominante para color de pelo y heterocigota para largo de pelo.",
+        "Homocigota recesiva para largo de pelo y heterocigota para color de pelo."
+      ],
+      "id": "megaclase-maru-2026-057",
+      "correcta": "C",
+      "explicacion": "En el cruzamiento prueba aa bb, la hembra AABb produce gametos AB y Ab por igual: la mitad de la descendencia resulta negra y corta."
+    },
+    {
+      "pregunta": "Durante la ovogénesis, la reducción del número de cromosomas se produce:",
+      "opciones": [
+        "Entre la ovogonia y el ovocito primario.",
+        "Entre el ovocito primario y el secundario.",
+        "Entre el ovocito secundario y el óvulo.",
+        "En el momento de la fecundación."
+      ],
+      "id": "megaclase-maru-2026-058",
+      "correcta": "B",
+      "explicacion": "La meiosis I reduce de 2n a n; por eso el cambio ocurre del ovocito primario al secundario."
+    },
+    {
+      "pregunta": "El último paso en la formación de espermatozoides es:",
+      "opciones": [
+        "Mitosis.",
+        "Diferenciación.",
+        "Meiosis I.",
+        "Meiosis II."
+      ],
+      "id": "megaclase-maru-2026-059",
+      "correcta": "B",
+      "explicacion": "Después de las dos meiosis, la espermátida se diferencia por espermiogénesis y forma el espermatozoide."
+    },
+    {
+      "pregunta": "¿Qué sucedería con el funcionamiento del operón lactosa si se produjera una mutación en el gen regulador que provocara la pérdida de afinidad por la lactosa?",
+      "opciones": [
+        "El represor se enlazaría permanentemente al operador.",
+        "El represor perdería afinidad por el operador.",
+        "La ARN polimerasa transcribiría activamente los genes estructurales.",
+        "Se acumularían grandes cantidades de ARNm policistrónicos."
+      ],
+      "id": "megaclase-maru-2026-060",
+      "correcta": "A",
+      "explicacion": "Sin unión de lactosa, el represor mutante permanece unido al operador y bloquea la transcripción del operón."
+    },
+    {
+      "pregunta": "Las cromátides de un cromosoma duplicado de una célula somática:",
+      "opciones": [
+        "Son idénticas.",
+        "Son diferentes pues tienen alelos diferentes.",
+        "Son homólogas.",
+        "Son diferentes pues existe entrecruzamiento."
+      ],
+      "id": "megaclase-maru-2026-061",
+      "correcta": "A",
+      "explicacion": "Las cromátidas hermanas se originan al duplicarse un cromosoma y, salvo mutaciones, son copias equivalentes."
+    },
+    {
+      "pregunta": "La poliadenilación permite:",
+      "opciones": [
+        "La exclusión de segmentos no codificantes.",
+        "Incrementar la vida media del ARNm en el citoplasma.",
+        "La unión de la ARN pol a la región promotora.",
+        "La metilación del ADN en la heterocromatina."
+      ],
+      "id": "megaclase-maru-2026-062",
+      "correcta": "B",
+      "explicacion": "La cola poli-A protege al ARNm de la degradación y aumenta su vida media en el citoplasma."
+    },
+    {
+      "pregunta": "Un intrón es un segmento del:",
+      "opciones": [
+        "ADN que no se transcribe.",
+        "ARNm maduro que no se traduce.",
+        "ADN que no se transcribe ni se traduce.",
+        "Transcripto primario que no se traduce."
+      ],
+      "id": "megaclase-maru-2026-063",
+      "correcta": "D",
+      "explicacion": "El intrón se transcribe al transcripto primario y luego se elimina; no queda en el ARNm maduro traducible."
+    },
+    {
+      "pregunta": "En la transcripción:",
+      "opciones": [
+        "La topoisomerasa relaja el superenrollamiento de la doble hélice.",
+        "La ADN polimerasa se une al ARNm en una zona llamada promotor.",
+        "La ARN polimerasa lee la cadena molde en sentido 5' → 3' y polimeriza en sentido 3' → 5'.",
+        "Los ribonucleótidos usados durante la transcripción son ATP, GTP, TTP y CTP."
+      ],
+      "id": "megaclase-maru-2026-064",
+      "correcta": "A",
+      "explicacion": "La topoisomerasa reduce la tensión del ADN por delante de la burbuja de transcripción."
+    },
+    {
+      "pregunta": "La enzima que cataliza la unión del aminoácido con su ARNt es:",
+      "opciones": [
+        "ARN polimerasa.",
+        "ARNt sintetasa.",
+        "Aminoacil ARNt sintetasa.",
+        "Primasa."
+      ],
+      "id": "megaclase-maru-2026-065",
+      "correcta": "C",
+      "explicacion": "La aminoacil-ARNt sintetasa cataliza la unión del aminoácido con su ARNt correspondiente."
+    },
+    {
+      "pregunta": "El operón Lac puede ser controlado:",
+      "opciones": [
+        "Negativamente a través de la proteína represora.",
+        "Negativamente a través del complejo AMPc-CAP.",
+        "Negativamente sólo a través de la CAP.",
+        "Positivamente a través de la proteína represora."
+      ],
+      "id": "megaclase-maru-2026-066",
+      "correcta": "A",
+      "explicacion": "El represor ejerce control negativo: al unirse al operador impide la transcripción del operón lac."
+    },
+    {
+      "pregunta": "Durante la transcripción, la energía necesaria para la síntesis de la cadena de ARN es aportada por:",
+      "opciones": [
+        "El ATP y el GTP únicamente.",
+        "Cada ribonucleótido que formará parte de la nueva cadena.",
+        "Cada desoxirribonucleótido que formará parte de la nueva cadena.",
+        "Las enzimas, junto a cada ribonucleótido que formará parte de la nueva cadena."
+      ],
+      "id": "megaclase-maru-2026-067",
+      "correcta": "B",
+      "explicacion": "La hidrólisis de los enlaces de cada ribonucleótido trifosfato incorporado aporta energía a la síntesis de ARN."
+    },
+    {
+      "pregunta": "El ARN se sintetiza durante la transcripción a partir de una:",
+      "opciones": [
+        "Secuencia molde de ADN, leída en el sentido 3' → 5'.",
+        "Secuencia codificante de ADN, leída en el sentido 5' → 3'.",
+        "Secuencia molde de ADN, leída en el sentido 5' → 3'.",
+        "Secuencia codificante de ADN, leída en el sentido 3' → 5'."
+      ],
+      "id": "megaclase-maru-2026-068",
+      "correcta": "A",
+      "explicacion": "La ARN polimerasa utiliza la hebra molde de ADN en orientación 3′→5′ y produce ARN en dirección 5′→3′."
+    },
+    {
+      "pregunta": "El proceso de splicing:",
+      "opciones": [
+        "Ocurre sobre ARNm procarionte policistrónico.",
+        "En eucariontes, da como resultado un transcripto primario.",
+        "Consiste en la eliminación de intrones y empalme de exones.",
+        "Consiste en el alargamiento de la cadena de ARNm maduro por agregado de exones."
+      ],
+      "id": "megaclase-maru-2026-069",
+      "correcta": "C",
+      "explicacion": "El splicing elimina intrones del transcripto y empalma sus exones para formar ARNm maduro."
+    },
+    {
+      "pregunta": "Indicar la opción correcta:",
+      "opciones": [
+        "En bacterias los genes poseen intrones.",
+        "Los intrones se transcriben pero no se traducen.",
+        "En eucariontes los genes son policistrónicos.",
+        "En eucariontes existen operones."
+      ],
+      "id": "megaclase-maru-2026-070",
+      "correcta": "B",
+      "explicacion": "Los intrones se transcriben al precursor, pero se eliminan antes de la traducción."
+    },
+    {
+      "pregunta": "Muchos ARN mensajeros procariontas son policistrónicos. Esa característica indica que contienen:",
+      "opciones": [
+        "Información para la síntesis de distintos polipéptidos.",
+        "Información para sintetizar muchas copias de la misma proteína.",
+        "Información para ser traducida por un polirribosoma.",
+        "Secuencias codificantes y no codificantes."
+      ],
+      "id": "megaclase-maru-2026-071",
+      "correcta": "A",
+      "explicacion": "Policistrónico significa que un mismo ARNm contiene información para más de un polipéptido."
+    },
+    {
+      "pregunta": "Los ARNm eucariotas se diferencian de los ARNm procariotas en que los primeros:",
+      "opciones": [
+        "Son monocistrónicos y su traducción es cotranscripcional.",
+        "Son monocistrónicos y su traducción es postranscripcional.",
+        "Son policistrónicos y poseen intrones.",
+        "Son policistrónicos y sufren capping en el extremo 5'."
+      ],
+      "id": "megaclase-maru-2026-072",
+      "correcta": "B",
+      "explicacion": "En eucariotas, el ARNm suele ser monocistrónico y se traduce después de su procesamiento y exportación."
+    },
+    {
+      "pregunta": "Respecto de la duplicación del ADN:",
+      "opciones": [
+        "La ARN primasa une los fragmentos de Okazaki.",
+        "La ligasa alivia la tensión generada por delante de la burbuja de replicación.",
+        "Las topoisomerasas cortan uniones puente de hidrógeno entre las bases nitrogenadas complementarias.",
+        "La ADN pol I elimina el cebador."
+      ],
+      "id": "megaclase-maru-2026-073",
+      "correcta": "D",
+      "explicacion": "En bacterias, la ADN polimerasa I puede retirar los cebadores de ARN con su actividad exonucleasa 5′→3′."
+    },
+    {
+      "pregunta": "Una bacteria que tiene inhibido el gen de la ADN pol III:",
+      "opciones": [
+        "No puede sintetizar ARN mensajero.",
+        "Sólo podrá hacer la transcripción.",
+        "No podrá reproducirse.",
+        "No podrá sintetizar proteínas."
+      ],
+      "id": "megaclase-maru-2026-074",
+      "correcta": "C",
+      "explicacion": "Sin ADN polimerasa III bacteriana no puede completarse la replicación cromosómica, por lo que la bacteria no puede reproducirse."
+    },
+    {
+      "pregunta": "La duplicación del ADN:",
+      "opciones": [
+        "Es un proceso conservativo catalizado por la ADN polimerasa y se da en fase G2.",
+        "Se produce cuando en el núcleo la cromatina está laxa y se da en cualquier momento durante la interfase.",
+        "Se produce cuando en el núcleo la cromatina está compactada en fase S.",
+        "Se produce cuando en el núcleo la cromatina está laxa en fase S."
+      ],
+      "id": "megaclase-maru-2026-075",
+      "correcta": "D",
+      "explicacion": "En células eucariotas, la cromatina está accesible durante la fase S, cuando se duplica el ADN."
+    },
+    {
+      "pregunta": "Indicar cuál NO es la opción correcta sobre el citoesqueleto:",
+      "opciones": [
+        "Red intrincada de filamentos proteicos.",
+        "Es una estructura estática.",
+        "Responsable de los movimientos y forma de la célula.",
+        "Interviene en la localización y soporte de los orgánulos."
+      ],
+      "id": "megaclase-maru-2026-076",
+      "correcta": "B",
+      "explicacion": "El citoesqueleto es dinámico: sus filamentos se ensamblan y desensamblan para cambiar forma y movimiento."
+    },
+    {
+      "pregunta": "Con respecto al centrómero:",
+      "opciones": [
+        "Está formado por secuencias repetitivas codificantes.",
+        "La estructura única de la cromatina centromérica contiene una variante de la H3: CenH3 o CENP-A.",
+        "Se encuentra en los extremos de los cromosomas.",
+        "Es sintetizado por la telomerasa."
+      ],
+      "id": "megaclase-maru-2026-077",
+      "correcta": "B",
+      "explicacion": "La cromatina centromérica suele incluir CENP-A, una variante de histona H3 que define el centrómero funcional."
+    },
+    {
+      "pregunta": "Con respecto al complejo Ciclina-Cdk, marque la opción CORRECTA:",
+      "opciones": [
+        "La ciclina es la porción proteica reguladora y la cinasa la porción proteica catalítica.",
+        "Su actividad depende de la concentración de las ciclinas.",
+        "Puede inactivarse mediante la fosforilación de las cinasas.",
+        "Todas son correctas."
+      ],
+      "id": "megaclase-maru-2026-078",
+      "correcta": "D",
+      "explicacion": "Las ciclinas regulan a las Cdks y su concentración cambia; la fosforilación inhibitoria de una Cdk también puede reducir su actividad."
+    },
+    {
+      "pregunta": "Los cilios y flagelos:",
+      "opciones": [
+        "Tienen una estructura \"9+3\", nueve pares de microtúbulos fusionados formando un cilindro externo y dos centriolos centrales.",
+        "Tienen estructura \"9+3\" fusionados formando un cilindro central.",
+        "Tienen una estructura \"9+2\" formando un cilindro externo y dos microtúbulos centrales.",
+        "Tienen una estructura \"9+2\" formando un cilindro externo."
+      ],
+      "id": "megaclase-maru-2026-079",
+      "correcta": "C",
+      "explicacion": "El axonema típico de cilios y flagelos tiene nueve dobletes periféricos y dos microtúbulos centrales: 9+2."
+    },
+    {
+      "pregunta": "Con respecto a la importación de proteínas a través del complejo del poro nuclear:",
+      "opciones": [
+        "Dependen de la presencia de la señal de localización nuclear y su asociación con importinas.",
+        "Una vez dentro del núcleo la importina se separa de la proteína y se une a la Ran GTP.",
+        "La importina junto con la Ran GTP sale por el complejo del poro y se separa de esta por la acción de la Ran GAP.",
+        "Todas son correctas."
+      ],
+      "id": "megaclase-maru-2026-080",
+      "correcta": "D",
+      "explicacion": "La señal nuclear y la importina median la entrada; Ran-GTP libera la carga en el núcleo y facilita el reciclado de importina en el citoplasma."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes enzimas remueve un segmento dañado de ADN?",
+      "opciones": [
+        "Helicasa.",
+        "ADN topoisomerasa.",
+        "Nucleasa.",
+        "ADN polimerasa III."
+      ],
+      "id": "megaclase-maru-2026-081",
+      "correcta": "C",
+      "explicacion": "Nucleasas cortan y eliminan el tramo dañado; luego otras enzimas rellenan y sellan la reparación."
+    },
+    {
+      "pregunta": "Con respecto a las roturas bicatenarias del ADN, marque la opción INCORRECTA:",
+      "opciones": [
+        "El mecanismo de reparación es la unión de extremos no homólogos y recombinación homóloga.",
+        "En la unión de extremos no homólogos hay pérdida de información genética.",
+        "En la recombinación homóloga se utiliza la hebra homóloga como molde.",
+        "No se puede reparar."
+      ],
+      "id": "megaclase-maru-2026-082",
+      "correcta": "D",
+      "explicacion": "Las roturas de doble hebra sí se reparan, principalmente por unión de extremos no homólogos o recombinación homóloga."
+    },
+    {
+      "pregunta": "Con respecto a los filamentos de actina, marque la opción INCORRECTA:",
+      "opciones": [
+        "Son polímeros de la proteína globular actina.",
+        "Pueden formar estructuras transitorias.",
+        "La disposición de los filamentos de actina de una célula depende de los tipos de proteínas de unión a actina presentes.",
+        "Forman hebras gruesas y flexibles."
+      ],
+      "id": "megaclase-maru-2026-083",
+      "correcta": "D",
+      "explicacion": "Los filamentos de actina son polímeros finos y flexibles, no hebras gruesas (esa descripción corresponde a filamentos intermedios)."
+    },
+    {
+      "pregunta": "El splicing alternativo es una modificación postranscripcional que permite regular la expresión de un gen, produciendo formas alternativas de:",
+      "opciones": [
+        "Transcripto primario maduro.",
+        "ARNm maduro.",
+        "Transcripto primario inmaduro.",
+        "ARNm inmaduro."
+      ],
+      "id": "megaclase-maru-2026-084",
+      "correcta": "B",
+      "explicacion": "El splicing alternativo ocurre durante el procesamiento y genera distintas combinaciones de exones en ARNm maduros."
+    },
+    {
+      "pregunta": "Durante la prometafase:",
+      "opciones": [
+        "Los cromosomas se unen al huso mitótico de forma azarosa.",
+        "Cada cromátide hermana tiene su cinetocoro dispuesto en dirección opuesta.",
+        "La envoltura nuclear desaparece.",
+        "Todas son correctas."
+      ],
+      "id": "megaclase-maru-2026-085",
+      "correcta": "D",
+      "explicacion": "En prometafase desaparece la envoltura, los microtúbulos se unen a cinetocoros de modo inicialmente azaroso y las hermanas se conectan a polos opuestos."
+    },
+    {
+      "pregunta": "Durante la anafase:",
+      "opciones": [
+        "Los cromosomas homólogos están alineados en el plano ecuatorial de la célula.",
+        "El APC/C degrada a la securina, activando a la separasa, permitiendo la segregación de las cromátides hermanas.",
+        "Se degrada a las cohesinas separando los cromosomas homólogos.",
+        "Ninguna es correcta."
+      ],
+      "id": "megaclase-maru-2026-086",
+      "correcta": "B",
+      "explicacion": "APC/C degrada securina, libera separasa y permite cortar cohesinas para separar cromátidas hermanas."
+    },
+    {
+      "pregunta": "Si la duplicación del ADN es incompleta:",
+      "opciones": [
+        "La célula avanza a la siguiente fase.",
+        "La fase S se retrasa.",
+        "La fase G2 se retrasa, inhibiéndose la fosfatasa que activa al M-Cdk.",
+        "La fase G1 se detiene."
+      ],
+      "id": "megaclase-maru-2026-087",
+      "correcta": "B",
+      "explicacion": "El punto de control de fase S retrasa la progresión si la replicación está incompleta."
+    },
+    {
+      "pregunta": "La Ran GEF:",
+      "opciones": [
+        "Permite la salida de sustancias a través del complejo del poro.",
+        "Activa a la Ran GAP intercambiando GDP por GTP en el núcleo.",
+        "Activa a la Ran GDP intercambiando GDP por GTP en el núcleo.",
+        "Activa a la importina en el citoplasma."
+      ],
+      "id": "megaclase-maru-2026-088",
+      "correcta": "C",
+      "explicacion": "Ran-GEF nuclear intercambia GDP por GTP en Ran, generando Ran-GTP."
+    },
+    {
+      "pregunta": "En la transición de la fase G1 a la fase S:",
+      "opciones": [
+        "El sistema de control verifica si el entorno es favorable.",
+        "Verifica si el ADN viene dañado.",
+        "Se activan los complejos G1-Cdk, G1/S-Cdk y S-Cdk.",
+        "Todas son correctas."
+      ],
+      "id": "megaclase-maru-2026-089",
+      "correcta": "D",
+      "explicacion": "El punto de control G1/S evalúa condiciones y daño, y activa Cdks de G1, transición y fase S."
+    },
+    {
+      "pregunta": "La contracción de las células musculares se debe a:",
+      "opciones": [
+        "Los filamentos de actina asociados a miosina.",
+        "Los filamentos intermedios asociados a actina.",
+        "Los microtúbulos asociados a dineínas y miosina.",
+        "A los filamentos intermedios de queratina."
+      ],
+      "id": "megaclase-maru-2026-090",
+      "correcta": "A",
+      "explicacion": "La contracción muscular resulta del deslizamiento de filamentos de actina impulsado por miosina."
+    },
+    {
+      "pregunta": "El nucleosoma:",
+      "opciones": [
+        "Unidad básica estructural de la cromatina; el ADN se enrolla alrededor de un núcleo de 8 histonas y se sujeta a través de la histona H1.",
+        "Está formado por cuatro histonas.",
+        "Es el máximo grado de condensación del ADN.",
+        "Es el componente principal del enrollamiento del ARN."
+      ],
+      "id": "megaclase-maru-2026-091",
+      "correcta": "A",
+      "explicacion": "El nucleosoma contiene ADN enrollado alrededor de un octámero de histonas; H1 contribuye a organizar el ADN enlazador."
+    },
+    {
+      "pregunta": "La exportación del ARNm por el complejo del poro nuclear:",
+      "opciones": [
+        "Depende de una señal de exportación nuclear.",
+        "Depende de la Ran GTP.",
+        "Depende de un complejo de exportación específico.",
+        "Ninguna es correcta."
+      ],
+      "id": "megaclase-maru-2026-092",
+      "correcta": "C",
+      "explicacion": "La exportación de ARNm utiliza receptores y complejos de exportación específicos; no depende del mecanismo Ran típico de proteínas."
+    },
+    {
+      "pregunta": "Con respecto a la proteína p53:",
+      "opciones": [
+        "Frente al daño en el ADN, aumenta su concentración en G1.",
+        "Es un factor de transcripción para la proteína p21 que inhibe a la Cdk.",
+        "Su ausencia o deficiencia induce a la formación de células cancerosas.",
+        "Todas son correctas."
+      ],
+      "id": "megaclase-maru-2026-093",
+      "correcta": "D",
+      "explicacion": "p53 se estabiliza ante daño, induce p21 para inhibir Cdks y limita proliferación; perder p53 favorece cáncer."
+    },
+    {
+      "pregunta": "Los filamentos intermedios:",
+      "opciones": [
+        "Están formados por dímeros de tubulina.",
+        "Están formados por proteínas fibrosas.",
+        "Están formados por dineína y kinesina.",
+        "Están formados por polisacáridos."
+      ],
+      "id": "megaclase-maru-2026-094",
+      "correcta": "B",
+      "explicacion": "Los filamentos intermedios están compuestos por proteínas fibrosas como queratinas, vimentina y láminas."
+    },
+    {
+      "pregunta": "La apertura de los sitios de origen de la replicación viene dada por la FPS, que se origina por la interacción de:",
+      "opciones": [
+        "Ciclina G2 con las Cdk2.",
+        "Ciclina M con las Cdk2.",
+        "Ciclina G1 con las Cdk2.",
+        "Ciclina M con las Cdk1."
+      ],
+      "id": "megaclase-maru-2026-095",
+      "correcta": "C",
+      "explicacion": "El FPS/S-Cdk se asocia con Cdk2 y ciclina de G1/S para activar el inicio de la replicación."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes afirmaciones NO corresponde al control transcripcional?",
+      "opciones": [
+        "Grado de condensación de la cromatina.",
+        "Splicing alternativo.",
+        "Factores de transcripción.",
+        "Grado de metilación."
+      ],
+      "id": "megaclase-maru-2026-096",
+      "correcta": "B",
+      "explicacion": "El splicing alternativo es control postranscripcional, no control de la transcripción propiamente dicha."
+    },
+    {
+      "pregunta": "¿Cuál de estos mecanismos de control en la regulación de la expresión génica ocurre en el núcleo?",
+      "opciones": [
+        "Control del procesamiento del ARN.",
+        "Control de la degradación de los ARNm.",
+        "Control de la traducción.",
+        "Control de la actividad proteica."
+      ],
+      "id": "megaclase-maru-2026-097",
+      "correcta": "A",
+      "explicacion": "El procesamiento del ARN, incluido el corte y empalme, ocurre en el núcleo eucariota."
+    },
+    {
+      "pregunta": "Durante la anafase:",
+      "opciones": [
+        "Los cromosomas homólogos están alineados en el plano ecuatorial de la célula.",
+        "El APC/C degrada a la securina, activando a la separasa, permitiendo la segregación de las cromátides hermanas.",
+        "Se degrada a las cohesinas separando los cromosomas homólogos.",
+        "Ninguna es correcta."
+      ],
+      "id": "megaclase-maru-2026-098",
+      "correcta": "B",
+      "explicacion": "La degradación de securina por APC/C activa separasa y separa cromátidas hermanas en anafase."
+    },
+    {
+      "pregunta": "Si la duplicación del ADN es incompleta:",
+      "opciones": [
+        "La célula avanza a la siguiente fase.",
+        "La fase S se retrasa.",
+        "La fase G2 se retrasa, inhibiéndose la fosfatasa que activa al M-Cdk.",
+        "La fase G1 se detiene."
+      ],
+      "id": "megaclase-maru-2026-099",
+      "correcta": "B",
+      "explicacion": "El control de la fase S retrasa el ciclo hasta completar la replicación del ADN."
+    },
+    {
+      "pregunta": "Con respecto a las roturas bicatenarias del ADN, marque la opción INCORRECTA:",
+      "opciones": [
+        "El mecanismo de reparación es la unión de extremos no homólogos y recombinación homóloga.",
+        "En la unión de extremos no homólogos hay pérdida de información genética.",
+        "En la recombinación homóloga se utiliza la hebra homóloga como molde.",
+        "No se puede reparar."
+      ],
+      "id": "megaclase-maru-2026-100",
+      "correcta": "D",
+      "explicacion": "La unión de extremos y la recombinación homóloga son vías de reparación de roturas bicatenarias."
+    },
+    {
+      "pregunta": "Con respecto a la proteína p53:",
+      "opciones": [
+        "Frente al daño en el ADN, aumenta su concentración en G1.",
+        "Es un factor de transcripción para la proteína p21 que inhibe a la Cdk.",
+        "Su ausencia o deficiencia induce a la formación de células cancerosas.",
+        "Todas son correctas."
+      ],
+      "id": "megaclase-maru-2026-101",
+      "correcta": "D",
+      "explicacion": "p53 responde al daño, promueve p21 y actúa como supresor tumoral; las tres afirmaciones describen su papel."
+    },
+    {
+      "pregunta": "Los nucleosomas:",
+      "opciones": [
+        "Se encuentran solamente cuando la cromatina está en su mínimo grado de condensación.",
+        "Se encuentran cuando la cromatina está en su mínimo grado de condensación, o en estado de cromosoma condensado.",
+        "Se encuentran solamente en la eucromatina.",
+        "Se encuentran solamente en la heterocromatina."
+      ],
+      "id": "megaclase-maru-2026-102",
+      "correcta": "B",
+      "explicacion": "Los nucleosomas persisten como unidad de empaquetamiento tanto en cromatina poco condensada como en cromosomas."
+    },
+    {
+      "pregunta": "Indique la opción correcta sobre la eucromatina y los cromosomas compactos:",
+      "opciones": [
+        "Ambos contienen ADN e histonas.",
+        "Presentan regiones condensadas y regiones no condensadas.",
+        "Presentan el mismo grado de empaquetamiento.",
+        "La eucromatina tiene histonas y los cromosomas compactados, no."
+      ],
+      "id": "megaclase-maru-2026-103",
+      "correcta": "A",
+      "explicacion": "Eucromatina y cromosomas compactos contienen ADN asociado con histonas y otras proteínas."
+    },
+    {
+      "pregunta": "Un cromosoma es:",
+      "opciones": [
+        "Una molécula de ADN asociada a las histonas, sin otros tipos de proteínas.",
+        "Una molécula de ADN asociada a histonas, y otros tipos de proteínas.",
+        "Una molécula de ADN, sin proteínas asociadas.",
+        "Una molécula de ADN en estado de eucromatina."
+      ],
+      "id": "megaclase-maru-2026-104",
+      "correcta": "B",
+      "explicacion": "Un cromosoma es ADN asociado con histonas y con otras proteínas estructurales y reguladoras."
+    },
+    {
+      "pregunta": "Se dice que una célula es diploide porque:",
+      "opciones": [
+        "Cada cromosoma tiene un par homólogo.",
+        "Cada cromosoma tiene dos pares de homólogos.",
+        "Cada cromosoma tiene dos cromátidas hermanas.",
+        "Cada cromosoma está duplicado."
+      ],
+      "id": "megaclase-maru-2026-105",
+      "correcta": "A",
+      "explicacion": "Diploide significa dos juegos de cromosomas homólogos, uno heredado de cada progenitor."
+    },
+    {
+      "pregunta": "Un cariotipo de varón y uno de mujer:",
+      "opciones": [
+        "Se diferencian en el par de cromosomas sexuales.",
+        "Se diferencian en las características de los autosomas.",
+        "Son iguales en el número y el tipo de cromosomas.",
+        "Se diferencian en el número de cromosomas sexuales."
+      ],
+      "id": "megaclase-maru-2026-106",
+      "correcta": "A",
+      "explicacion": "En el cariotipo XX y XY cambia el par sexual; el número total de cromosomas es igual."
+    },
+    {
+      "pregunta": "En una célula somática de un varón:",
+      "opciones": [
+        "Hay 23 pares de autosomas, más un par de cromosomas sexuales X e Y.",
+        "Hay 22 pares de autosomas, más un par de cromosomas sexuales X e Y.",
+        "Hay 46 cromosomas más un par de cromosomas sexuales X e Y.",
+        "No hay cromosomas sexuales."
+      ],
+      "id": "megaclase-maru-2026-107",
+      "correcta": "B",
+      "explicacion": "Un varón humano tiene 22 pares de autosomas y un par sexual XY."
+    },
+    {
+      "pregunta": "Las células de diferentes tejidos tienen distintas formas y realizan distintas funciones. Esto se debe a que:",
+      "opciones": [
+        "Tienen distinta información genética a lo largo del desarrollo.",
+        "Comienzan teniendo la misma información genética pero esta va cambiando a lo largo del desarrollo.",
+        "Algunos genes se activan y otros se inactivan a lo largo del desarrollo.",
+        "Tienen distinta información genética cuando ya están diferenciadas."
+      ],
+      "id": "megaclase-maru-2026-108",
+      "correcta": "C",
+      "explicacion": "La diferenciación depende de qué genes se activan o silencian, aunque la mayoría de las células conserve el mismo ADN."
+    },
+    {
+      "pregunta": "Las células epiteliales fabrican melanina, en cambio las musculares no, pero estas últimas fabrican grandes cantidades de actina y miosina. Indique la opción correcta sobre la regulación de los genes para fabricar melanina y actina/miosina.",
+      "opciones": [
+        "Las células musculares carecen de información para fabricar melanina.",
+        "Las células musculares tienen información para fabricar melanina, pero no la fabrican.",
+        "Las células epiteliales carecen de información para fabricar actina y miosina.",
+        "Las células epiteliales tienen información para fabricar melanina, pero no para fabricar actina y miosina."
+      ],
+      "id": "megaclase-maru-2026-109",
+      "correcta": "B",
+      "explicacion": "Las células musculares conservan los genes de melanina, pero no los expresan; la regulación génica produce diferencias celulares."
+    },
+    {
+      "pregunta": "Un gen en estado de heterocromatina o de eucromatina:",
+      "opciones": [
+        "Tiene distinta información según en qué estado se encuentre.",
+        "Tiene la misma información, independientemente del estado en que se encuentre.",
+        "Se podrá transcribir en cualquiera de los dos estados.",
+        "Si se transcribe, inevitablemente se expresará."
+      ],
+      "id": "megaclase-maru-2026-110",
+      "correcta": "B",
+      "explicacion": "Cambiar entre eucromatina y heterocromatina regula accesibilidad, no altera la secuencia de ADN del gen."
+    },
+    {
+      "pregunta": "¿Cuál es la función de las secuencias de ADN intensificadoras o enhancer?",
+      "opciones": [
+        "Activar la transcripción tras unirse a factores de transcripción específicos.",
+        "Inhibir la transcripción tras unirse a factores de transcripción específicos.",
+        "Unirse al promotor para activar la transcripción.",
+        "Unirse a la ARN polimerasa para iniciar la transcripción."
+      ],
+      "id": "megaclase-maru-2026-111",
+      "correcta": "A",
+      "explicacion": "Los enhancers activan la transcripción al unirse a factores de transcripción específicos."
+    },
+    {
+      "pregunta": "El splicing alternativo permite:",
+      "opciones": [
+        "Fabricar un polipéptido utilizando transcriptos primarios distintos.",
+        "Fabricar distintos polipéptidos a partir de una única secuencia de ADN.",
+        "Fabricar distintos polipéptidos a partir de distintos transcriptos primarios.",
+        "Fabricar distintos transcriptos primarios."
+      ],
+      "id": "megaclase-maru-2026-112",
+      "correcta": "B",
+      "explicacion": "A partir de una misma secuencia de ADN, el splicing alternativo puede generar ARNm y polipéptidos distintos."
+    },
+    {
+      "pregunta": "Se dice que un gen que codifica una proteína está activo (o se expresa) cuando:",
+      "opciones": [
+        "El gen se transcribe, independientemente de que se traduzca.",
+        "El gen se transcribe y finalmente se produce una proteína funcional.",
+        "La célula tiene información para esa proteína, independientemente de que se fabrique o no.",
+        "El ARN mensajero madure, aunque el ARN maduro aún no se traduzca."
+      ],
+      "id": "megaclase-maru-2026-113",
+      "correcta": "B",
+      "explicacion": "La expresión de un gen codificante culmina en una proteína funcional, más allá de producir el transcripto."
+    },
+    {
+      "pregunta": "La metilación de promotor de un gen:",
+      "opciones": [
+        "Activa la transcripción del gen.",
+        "Inhibe la traducción del gen.",
+        "No impide que el gen se transcriba, pero sí que se traduzca.",
+        "Impide que el gen se transcriba."
+      ],
+      "id": "megaclase-maru-2026-114",
+      "correcta": "D",
+      "explicacion": "La metilación del promotor suele impedir el reclutamiento de la maquinaria de transcripción y silenciar el gen."
+    },
+    {
+      "pregunta": "Una proteína se une a secuencias activadoras del gen, interactúa a la vez con la ARN polimerasa y con otras proteínas, y se activa la transcripción de un gen. ¿A qué proteína nos estamos refiriendo?",
+      "opciones": [
+        "Factor de transcripción basal.",
+        "Factor de transcripción específico.",
+        "ARN polimerasa.",
+        "Enhancer."
+      ],
+      "id": "megaclase-maru-2026-115",
+      "correcta": "B",
+      "explicacion": "Los factores de transcripción específicos se unen a elementos activadores y colaboran con la ARN polimerasa."
+    },
+    {
+      "pregunta": "La enzima ligasa:",
+      "opciones": [
+        "Une una cadena de ADN con un fragmento de Okazaki.",
+        "Une fragmentos de ADN con ARN cebador.",
+        "Une a la hebra líder con la rezagada.",
+        "Une una cadena de ADN con su cadena complementaria."
+      ],
+      "id": "megaclase-maru-2026-116",
+      "correcta": "A",
+      "explicacion": "La ligasa sella enlaces fosfodiéster entre el fragmento de Okazaki y la cadena de ADN contigua."
+    },
+    {
+      "pregunta": "Si se inhibe la actividad de la ADN polimerasa:",
+      "opciones": [
+        "No se sintetizan cebadores.",
+        "No se sintetiza ADN.",
+        "No se sintetizan cebadores ni ADN.",
+        "No se abren las cadenas de ADN."
+      ],
+      "id": "megaclase-maru-2026-117",
+      "correcta": "B",
+      "explicacion": "La ADN polimerasa sintetiza ADN; al inhibirla, la replicación no puede avanzar."
+    },
+    {
+      "pregunta": "Un cebador es:",
+      "opciones": [
+        "Una secuencia de ARN que se encuentra en la hebra líder y en la rezagada.",
+        "Una secuencia de ADN que se encuentra en la hebra líder y en la rezagada.",
+        "Una secuencia de ARN que se encuentra sólo en la hebra rezagada.",
+        "Una secuencia de ADN que se encuentra sólo en la hebra rezagada."
+      ],
+      "id": "megaclase-maru-2026-118",
+      "correcta": "A",
+      "explicacion": "Cada hebra nueva, líder y rezagada, requiere un cebador corto de ARN para iniciar la síntesis."
+    },
+    {
+      "pregunta": "En un cromosoma con dos cromátidas hermanas:",
+      "opciones": [
+        "Una cromátida tiene una molécula de ADN vieja, y la otra cromátida tiene una molécula de ADN nueva.",
+        "Cada cromátida tiene una cadena de ADN vieja y una cadena nueva.",
+        "Ambas cromátidas están hechas de ADN cien por ciento recién sintetizado.",
+        "Una cromátida tiene la cadena líder, y la otra, la rezagada."
+      ],
+      "id": "megaclase-maru-2026-119",
+      "correcta": "B",
+      "explicacion": "Cada cromátida se replica semiconservativamente y queda formada por una hebra parental y una recién sintetizada."
+    },
+    {
+      "pregunta": "Indique qué nucleótidos se necesitan para la duplicación del ADN (considerando que hay que sintetizar también un ARN cebador):",
+      "opciones": [
+        "ATP, GTP, TTP y CTP, únicamente.",
+        "ATP, GTP, UTP, CTP, dATP, dGTP, dTTP y dCTP.",
+        "ATP, GMP, TMP y CMP, únicamente.",
+        "ATP, GMP, UMP, CMP, dATP, dGMP, dTMP y dMTP únicamente."
+      ],
+      "id": "megaclase-maru-2026-120",
+      "correcta": "B",
+      "explicacion": "El cebador requiere ribonucleótidos (incluido UTP) y la nueva cadena requiere los cuatro desoxirribonucleótidos."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes enzimas tiene actividad exonucleasa 5′→3′ para remover el cebador de ARN?",
+      "opciones": [
+        "Ligasa.",
+        "ADN polimerasa I.",
+        "Primasa.",
+        "ADN polimerasa III."
+      ],
+      "id": "megaclase-maru-2026-121",
+      "correcta": "B",
+      "explicacion": "La ADN polimerasa I retira cebadores con actividad exonucleasa 5′→3′ y rellena los huecos con ADN."
+    },
+    {
+      "pregunta": "Los telómeros:",
+      "opciones": [
+        "Son los extremos de la molécula de ADN, y se acortan en cada duplicación, en eucariontes.",
+        "Son los extremos de la molécula de ADN, y se acortan en cada duplicación, en procariontes.",
+        "Se encuentran tanto en procariontes como en eucariontes.",
+        "Se mantienen inalterables tras la duplicación."
+      ],
+      "id": "megaclase-maru-2026-122",
+      "correcta": "A",
+      "explicacion": "Los cromosomas eucariotas lineales tienen telómeros que tienden a acortarse con cada replicación."
+    },
+    {
+      "pregunta": "La telomerasa:",
+      "opciones": [
+        "Prolonga los extremos del ADN utilizando un ARN molde en su sitio activo.",
+        "Fabrica ARN a partir de ADN.",
+        "Es una enzima que fabrica ARN.",
+        "Es un tipo de ARN polimerasa."
+      ],
+      "id": "megaclase-maru-2026-123",
+      "correcta": "A",
+      "explicacion": "La telomerasa extiende extremos cromosómicos usando como molde su propio ARN."
+    },
+    {
+      "pregunta": "Cuando una célula duplica el ADN:",
+      "opciones": [
+        "Puede pasar a la fase G0 y no dividirse.",
+        "Se dividirá.",
+        "Puede quedarse en G2 y no dividirse.",
+        "Puede dividirse o no, indistintamente."
+      ],
+      "id": "megaclase-maru-2026-124",
+      "correcta": "C",
+      "explicacion": "Tras replicar el ADN, una célula puede permanecer en G2 sin completar la división."
+    },
+    {
+      "pregunta": "Las quinasas dependientes de ciclina:",
+      "opciones": [
+        "Son proteínas cuya concentración aumenta y baja a lo largo del ciclo celular.",
+        "Son enzimas que activan a otras proteínas, si es que están unidas a una ciclina.",
+        "Son enzimas que pueden activar a otras proteínas aunque no estén unidas a ciclinas.",
+        "Son enzimas que forman parte de una ciclina."
+      ],
+      "id": "megaclase-maru-2026-125",
+      "correcta": "B",
+      "explicacion": "Las Cdks son quinasas catalíticas cuya actividad depende de asociarse con una ciclina."
+    },
+    {
+      "pregunta": "El FPS (factor promotor de la etapa S):",
+      "opciones": [
+        "Induce la activación de proteínas encargadas de iniciar la división.",
+        "Induce la activación de proteínas encargadas de duplicar el ADN.",
+        "Contiene dos ciclinas que estimulan la división celular.",
+        "Se forma en G2."
+      ],
+      "id": "megaclase-maru-2026-126",
+      "correcta": "B",
+      "explicacion": "El FPS activa proteínas que licencian e inician la duplicación del ADN."
+    },
+    {
+      "pregunta": "El FPM (factor promotor de la etapa M):",
+      "opciones": [
+        "Está formado por dos quinasas.",
+        "Induce la activación de proteínas encargadas de duplicar el ADN.",
+        "Está formado por una quinasa y una ciclina M.",
+        "Está formado por dos ciclinas."
+      ],
+      "id": "megaclase-maru-2026-127",
+      "correcta": "C",
+      "explicacion": "El FPM incluye Cdk1 asociada a ciclina M y promueve la entrada en mitosis."
+    },
+    {
+      "pregunta": "Las ciclinas D y B:",
+      "opciones": [
+        "Aumentan en G1 y G2 respectivamente.",
+        "Aumentan en G2 y G1 respectivamente.",
+        "Aumentan en forma conjunta en G1 y sus niveles disminuyen en G2.",
+        "Se unen con el mismo tipo de quinasa."
+      ],
+      "id": "megaclase-maru-2026-128",
+      "correcta": "A",
+      "explicacion": "Ciclina D se acumula en G1 y ciclina B aumenta hacia G2/mitosis."
+    },
+    {
+      "pregunta": "La función de la mitosis en un organismo pluricelular es:",
+      "opciones": [
+        "Reproducción del organismo.",
+        "Crecimiento y reproducción del organismo.",
+        "Crecimiento y reparación de los tejidos del organismo.",
+        "Duplicar el ADN para el crecimiento del organismo."
+      ],
+      "id": "megaclase-maru-2026-129",
+      "correcta": "C",
+      "explicacion": "En organismos pluricelulares la mitosis permite crecer y reemplazar o reparar células de tejidos."
+    },
+    {
+      "pregunta": "Durante la metafase, una célula 2n = 8 tendrá:",
+      "opciones": [
+        "8 cromosomas y 16 cromátidas.",
+        "4 cromosomas y 8 cromátidas.",
+        "8 cromosomas y 8 cromátidas.",
+        "16 cromosomas y 16 cromátidas."
+      ],
+      "id": "megaclase-maru-2026-130",
+      "correcta": "A",
+      "explicacion": "En metafase mitótica, 2n=8 indica ocho cromosomas duplicados, es decir, dieciséis cromátidas."
+    },
+    {
+      "pregunta": "En la meiosis, las células hijas:",
+      "opciones": [
+        "Tienen la misma información genética que la célula madre.",
+        "Tienen la misma información genética entre sí.",
+        "Tienen distinta información genética entre sí.",
+        "Tienen la misma información genética entre sí, pero distinta a la de la célula madre."
+      ],
+      "id": "megaclase-maru-2026-131",
+      "correcta": "C",
+      "explicacion": "La recombinación y la distribución independiente hacen que las células de una meiosis difieran entre sí."
+    },
+    {
+      "pregunta": "Un espermatocito I (2n = 4) en metafase tiene:",
+      "opciones": [
+        "Cuatro cromosomas con dos cromátidas cada uno.",
+        "Cuatro moléculas de ADN.",
+        "Cuatro cromosomas con dos cromátidas cada uno, y cuatro moléculas de ADN.",
+        "Ocho cromosomas."
+      ],
+      "id": "megaclase-maru-2026-132",
+      "correcta": "A",
+      "explicacion": "Un espermatocito primario 2n=4 en metafase I tiene cuatro cromosomas duplicados, ocho moléculas de ADN."
+    },
+    {
+      "pregunta": "Un espermatocito II que proviene de una célula 2n = 8, dará:",
+      "opciones": [
+        "Dos células con ocho moléculas de ADN cada una.",
+        "Dos células con ocho cromosomas y cuatro moléculas de ADN cada una.",
+        "Dos células con cuatro moléculas y ocho cromosomas de ADN cada una.",
+        "Dos células con cuatro moléculas de ADN cada una."
+      ],
+      "id": "megaclase-maru-2026-133",
+      "correcta": "D",
+      "explicacion": "Meiosis II produce dos células haploides; para 2n=8, cada una queda con cuatro cromosomas y cuatro moléculas de ADN."
+    },
+    {
+      "pregunta": "Un ovocito II con cinco cromosomas en metafase, provino de:",
+      "opciones": [
+        "Una célula 2n = 10.",
+        "Una célula 2n = 20.",
+        "Una célula n = 5.",
+        "Una célula 2n = 5."
+      ],
+      "id": "megaclase-maru-2026-134",
+      "correcta": "A",
+      "explicacion": "Un ovocito secundario es haploide (n=5); proviene de una célula diploide 2n=10."
+    },
+    {
+      "pregunta": "Una célula 2n = 4:",
+      "opciones": [
+        "Dará dos células 2n = 2 por meiosis I.",
+        "Dará dos células n = 2 por meiosis I.",
+        "Dará cuatro células n = 4 por meiosis.",
+        "Dará cuatro células 2n = 2 por meiosis."
+      ],
+      "id": "megaclase-maru-2026-135",
+      "correcta": "B",
+      "explicacion": "La meiosis I reduce 2n=4 a n=2 en dos células; la meiosis II separa cromátidas y forma cuatro células haploides."
+    }
+  ]
+}

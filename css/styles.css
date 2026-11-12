@@ -872,6 +872,18 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 .banner-ipc-segundo .sp-tema-icono { background:linear-gradient(145deg,#d7c8ff,#a88aff); }
 .banner-ipc-segundo .sp-tema:hover { border-color:#e2d8ff; background:rgba(24,14,55,.76); }
 .banner-ipc-segundo .sp-tema-accion { color:#e0d5ff; }
+.banner-megaclase {
+  margin-top: 10px;
+  border-color: rgba(255,208,134,.88);
+  background:
+    radial-gradient(ellipse at 92% -15%, rgba(255,210,126,.52), transparent 38%),
+    linear-gradient(125deg,#71374b 0%,#6d3a83 52%,#3c3273 100%);
+  box-shadow: 0 12px 30px rgba(63,22,58,.3), inset 0 1px rgba(255,255,255,.22);
+}
+.banner-megaclase .sp-sello { color:#4d2539; background:#ffd58d; }
+.banner-megaclase .sp-tema-icono { background:linear-gradient(145deg,#ffd58d,#ffad74); }
+.banner-megaclase .sp-tema:hover { border-color:#ffe0a7; background:rgba(44,20,69,.78); }
+.banner-megaclase .sp-tema-accion { color:#ffe1a8; }
 
 /* Acceso a Parcialito LAB */
 .banner-lab {
