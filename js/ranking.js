@@ -44,6 +44,24 @@ export function limpiarApodo(texto) {
   return String(texto || '').replace(/\s+/g, ' ').trim().slice(0, 20);
 }
 
+// Telemetría privada: upsert de perfil y escritura de eventos, sin apodos.
+export async function registrarDispositivo(fila) {
+  await pedir('dispositivos?on_conflict=dispositivo_id', {
+    method: 'POST',
+    headers: { Prefer: 'resolution=merge-duplicates,return=minimal' },
+    body: JSON.stringify(fila),
+  });
+}
+
+export async function registrarTelemetria(filas) {
+  if (!filas?.length) return;
+  await pedir('telemetria_dispositivos', {
+    method: 'POST',
+    headers: { Prefer: 'return=minimal' },
+    body: JSON.stringify(filas),
+  });
+}
+
 // Guarda una partida terminada.
 export async function guardarPartida({ apodo, materia, tema, aciertos, total, puntos, rachaMax }) {
   await pedir('partidas', {
