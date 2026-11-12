@@ -47,6 +47,8 @@ const ACTIVIDADES = {
 const LETRAS = ['A', 'B', 'C', 'D'];
 const COLORES = ['#9B7BFF', '#FFB938', '#4FE0A0', '#FF7AA8', '#5CC8FF', '#FF8A5C'];
 const HITOS = [3, 5, 10, 15, 20, 30, 50];   // rachas que disparan festejo
+const MEGACLASE_TEMA_ID = 'megaclase-marucbc-2026';
+const MEGACLASE_TOTAL = 135;
 
 let indice = null;          // contenido de data/index.json
 const cache = new Map();    // idTema -> preguntas ya cargadas
@@ -660,6 +662,10 @@ function vistaInicio() {
   juego = null;
   sesionT = null;
   const nErrores = Object.keys(estado.errores).length;
+  const dominadasMegaclase = Math.min(
+    Object.keys(estado.dominadas[MEGACLASE_TEMA_ID] || {}).length,
+    MEGACLASE_TOTAL,
+  );
 
   const tarjetas = indice.materias.map((m, i) => {
     const totalPreg = m.temas.reduce((s, t) => s + (t.preguntas || 0), 0);
@@ -726,10 +732,10 @@ function vistaInicio() {
       <section class="banner-segundo banner-megaclase" aria-labelledby="megaclase-titulo">
         <div class="sp-cabecera"><span class="sp-sello">✦ MEGACLASE · MARU</span><span class="sp-numero">CBC · 2026</span></div>
         <h2 id="megaclase-titulo">Repaso del segundo parcial</h2>
-        <p class="sp-descripcion">Practicá las 135 preguntas del compilado con respuesta explicada y sus figuras originales.</p>
+        <p class="sp-descripcion">Practicá las 135 preguntas del compilado con respuesta explicada y sus figuras originales. Las que ya dominás quedan al final cuando vuelvas.</p>
         <button class="sp-tema" id="btn-megaclase" type="button">
           <span class="sp-tema-icono" aria-hidden="true">📝</span>
-          <span class="sp-tema-texto"><strong>Entrar al repaso de Maru</strong><small>Opción múltiple · Biología CBC</small></span>
+          <span class="sp-tema-texto"><strong>Entrar al repaso de Maru</strong><small>Opción múltiple · ${dominadasMegaclase}/${MEGACLASE_TOTAL} dominadas</small></span>
           <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
         </button>
       </section>
@@ -1980,12 +1986,17 @@ async function lanzarMegaclase() {
     const json = await r.json();
     const materia = { nombre: json.materia || 'Biología CBC' };
     const tema = {
-      id: 'megaclase-marucbc-2026',
+      id: MEGACLASE_TEMA_ID,
       nombre: json.tema || 'Megaclase de repaso · Segundo parcial 2026',
       archivo: 'data/megaclase-marucbc-2026.json',
     };
     const pool = normalizar(json, tema, materia);
-    empezarJuego(pool, {
+    const dominadas = estado.dominadas[tema.id] || {};
+    const ordenadas = [
+      ...pool.filter((pregunta) => !dominadas[pregunta.id]),
+      ...pool.filter((pregunta) => dominadas[pregunta.id]),
+    ];
+    empezarJuego(ordenadas, {
       titulo: tema.nombre,
       temaId: tema.id,
       ranking: false,
