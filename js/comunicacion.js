@@ -103,6 +103,7 @@ function sinapsisArt(paso,potencial,bloqueador){
 
 export function abrirComunicacion({app, volver}) {
  let vista='tipos', indiceCaso=0, aciertos=0, contestada=false, elegida=-1, ronda=[], mIndex=0, mRespuesta=-1, mRevelado=false, paso=0, potencial='reposo', bloqueador='ninguno';
+ let intensidadAccion=20, tiempoAccion=0, accionPausada=false, accionTerminada=false, accionFrame=null, accionInicio=0;
  const estilos = `
  <style>
  .cc-wrap{max-width:850px;margin:auto;padding:1rem 1rem calc(2rem + env(safe-area-inset-bottom));color:var(--crema,#FFF3DC)}
@@ -138,14 +139,94 @@ export function abrirComunicacion({app, volver}) {
  .cc-ions{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}.cc-ions div{padding:.65rem .3rem;text-align:center;border:1px solid var(--linea,#43347A);border-radius:10px;background:var(--noche,#170F2E)}.cc-ions b{display:block;font-size:1.05rem;color:var(--ambar,#FFB938)}.cc-ions small{color:var(--tenue,#B8ABDB);font-size:.72rem}
  @media(max-width:540px){.cc-wrap{padding-left:.75rem;padding-right:.75rem}.cc-grid{grid-template-columns:1fr}.cc-tabs{gap:.25rem}.cc-tab{font-size:.7rem;padding:.65rem .2rem}.cc-table{font-size:.77rem}.cc-table th,.cc-table td{padding:.45rem .25rem}}
  @media(prefers-reduced-motion:reduce){.cc-wrap *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+
+ .cc-tabs{grid-template-columns:repeat(auto-fit,minmax(118px,1fr))}
+ .cc-ap-main{overflow:hidden;background:#1b1b1b;border-color:#292929;color:#f1f1f1}
+ .cc-ap-main h2,.cc-ap-main h3{color:#f4f4f4}
+ .cc-ap-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:.8rem}
+ .cc-ap-head h2{font-size:clamp(1.1rem,4vw,1.45rem);font-weight:500;margin:0 0 .4rem}
+ .cc-ap-phase{display:inline-flex;align-items:center;padding:.25rem .55rem;border-radius:99px;background:#292929;color:#e3e3e3;font-size:.72rem}
+ .cc-ap-metrics{display:flex;gap:1rem;flex-shrink:0}
+ .cc-ap-metric{display:grid;gap:.1rem;color:#aaa;font-size:.68rem}
+ .cc-ap-metric strong{color:#f7f7f7;font-size:1.25rem;line-height:1.2;font-weight:600;white-space:nowrap}
+ .cc-ap-chart{padding:.35rem .45rem .15rem;border-radius:18px;background:#1c1c1c;border:1px solid #262626}
+ .cc-ap-chart svg{display:block;width:100%;height:auto}
+ .cc-ap-chart .cc-ap-grid{stroke:#383838;stroke-width:1}
+ .cc-ap-chart .cc-ap-grid-label{fill:#999;font-size:12px}
+ .cc-ap-chart .cc-ap-time-label{fill:#999;font-size:12px;text-anchor:middle}
+ .cc-ap-chart .cc-ap-threshold{stroke:#ef514c;stroke-width:1.6;stroke-dasharray:6 4}
+ .cc-ap-chart .cc-ap-threshold-label{fill:#f25c55;font-size:12px}
+ .cc-ap-chart .cc-ap-curve{fill:none;stroke:#8ccfff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 3px rgba(140,207,255,.22))}
+ .cc-ap-chart .cc-ap-cursor{fill:#9bd5ff;stroke:#d9f0ff;stroke-width:1.5}
+ .cc-ap-channels{margin-top:.8rem;padding:.9rem;border-radius:19px;background:#1e1e1e}
+ .cc-ap-channels h3{font-size:1.05rem;margin:0 0 .25rem}
+ .cc-ap-channel-caption{font-size:.76rem;color:#aaa;margin:0 0 .7rem;line-height:1.4}
+ .cc-ap-channel-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem}
+ .cc-ap-channel{min-width:0;padding:.7rem;border-radius:14px;background:#151515;border:1px solid #242424}
+ .cc-ap-channel-head{display:flex;align-items:center;justify-content:space-between;gap:.35rem;flex-wrap:wrap}
+ .cc-ap-channel-head b{font-size:.86rem}
+ .cc-ap-badge{padding:.2rem .45rem;border-radius:99px;background:#292929;color:#eee;font-size:.67rem;white-space:nowrap}
+ .cc-ap-badge.open{background:rgba(79,224,160,.15);color:#65e6a7}
+ .cc-ap-badge.inactive{background:rgba(255,185,56,.14);color:#ffc65f}
+ .cc-ap-art{height:74px;display:flex;align-items:center;justify-content:center;gap:0;margin:.35rem 0}
+ .cc-ap-art svg{width:100%;max-width:190px;height:70px}
+ .cc-ap-art .cc-ap-membrane{fill:#353535}
+ .cc-ap-art .cc-ap-na-gate{fill:#8ccfff;transition:transform .2s,opacity .2s}
+ .cc-ap-art .cc-ap-k-gate{fill:#4fe0a0;transition:transform .2s,opacity .2s}
+ .cc-ap-art .cc-ap-flow{opacity:0;transition:opacity .2s}
+ .cc-ap-art .cc-ap-flow.visible{opacity:1}
+ .cc-ap-art .cc-ap-m-na-open{transform:translateY(-7px)}
+ .cc-ap-art .cc-ap-h-na-closed{opacity:.35}
+ .cc-ap-art .cc-ap-k-open{transform:translateY(-8px)}
+ .cc-ap-channel p{margin:.15rem 0 0;color:#aaa;font-size:.72rem;line-height:1.4;min-height:2.5em}
+ .cc-ap-controls{padding:.9rem;margin-top:.8rem;border:1px solid #303030;border-radius:18px;background:#1d1d1d}
+ .cc-ap-control-row{display:flex;flex-wrap:wrap;gap:.45rem}
+ .cc-ap-button{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;padding:.62rem .8rem;border:1px solid #373737;border-radius:99px;background:#1a1a1a;color:#eee;font:700 .78rem/1.2 Inter,system-ui,sans-serif;cursor:pointer}
+ .cc-ap-button:hover{border-color:#777}
+ .cc-ap-button.active{background:#1c315f;border-color:#85bfff;color:#f4f8ff}
+ .cc-ap-button:focus-visible,.cc-ap-range:focus-visible{outline:2px solid #8ccfff;outline-offset:2px}
+ .cc-ap-button:disabled{opacity:.5;cursor:default}
+ .cc-ap-slider{display:grid;grid-template-columns:1fr auto;gap:.4rem .8rem;margin-top:.9rem;align-items:center}
+ .cc-ap-slider label{font-size:.78rem;color:#bcbcbc}
+ .cc-ap-slider output{font-weight:800;color:#f4f4f4;font-variant-numeric:tabular-nums}
+ .cc-ap-range{grid-column:1/-1;width:100%;accent-color:#8ccfff}
+ .cc-ap-experiment-note{margin:.7rem 0 0;color:#aaa;font-size:.76rem;line-height:1.45}
+ .cc-ap-phase-panel{margin-top:.8rem;padding:.9rem;border:1px solid var(--linea,#43347A);border-radius:16px;background:var(--panel,#231845)}
+ .cc-ap-phase-panel h3{margin:0 0 .2rem;font-size:1rem}
+ .cc-ap-phase-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.45rem;margin-top:.7rem}
+ .cc-ap-phase-tile{padding:.6rem;border:1px solid var(--linea,#43347A);border-radius:11px;background:var(--noche,#170F2E);min-width:0}
+ .cc-ap-phase-tile.active{border-color:#8ccfff;background:rgba(140,207,255,.1)}
+ .cc-ap-phase-tile b{display:block;font-size:.76rem;margin-bottom:.2rem}
+ .cc-ap-phase-tile small{display:block;color:var(--tenue,#B8ABDB);font-size:.68rem;line-height:1.4}
+ .cc-ap-explain-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem;margin-top:.8rem}
+ .cc-ap-explain{padding:.85rem;border:1px solid var(--linea,#43347A);border-radius:13px;background:var(--panel,#231845)}
+ .cc-ap-explain h3{font-size:.92rem;margin:0 0 .3rem}
+ .cc-ap-explain p{margin:0;color:var(--tenue,#B8ABDB);font-size:.8rem;line-height:1.5}
+ .cc-ap-explain strong{color:var(--crema,#FFF3DC)}
+ .cc-ap-footnote{margin:.7rem 0 0;color:#999;font-size:.72rem;line-height:1.45}
+ @media(max-width:620px){
+   .cc-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+   .cc-ap-head{display:block}
+   .cc-ap-metrics{margin-top:.65rem;justify-content:flex-start}
+   .cc-ap-channel-grid{grid-template-columns:1fr}
+   .cc-ap-channel{display:grid;grid-template-columns:1fr 1.1fr;align-items:center;gap:.4rem .7rem}
+   .cc-ap-channel-head{grid-column:1/-1}
+   .cc-ap-art{grid-column:1;grid-row:2;height:58px}
+   .cc-ap-channel p{grid-column:2;grid-row:2;min-height:0}
+   .cc-ap-phase-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+   .cc-ap-explain-grid{grid-template-columns:1fr}
+ }
+
  </style>`;
- app.innerHTML=estilos+`<main class="cc-wrap"><button class="cc-back" id="cc-back">← Volver</button><header class="cc-head"><div class="cc-kicker">Biología celular y molecular · interactivo</div><h1>Comunicación celular</h1><p class="cc-muted">Clasificá señales, reconocé la química de los mensajeros y explorá una sinapsis paso a paso.</p></header><nav class="cc-tabs" aria-label="Secciones"><button class="cc-tab" data-view="tipos">🧩 Comunicación</button><button class="cc-tab" data-view="quimica">🧪 Mensajeros</button><button class="cc-tab" data-view="sinapsis">⚡ Sinapsis</button><button class="cc-tab" data-view="conexinas">🔗 Conexinas y gap</button><button class="cc-tab" data-view="repaso">📚 Repaso</button></nav><section id="cc-content"></section></main>`;
+ app.innerHTML=estilos+`<main class="cc-wrap"><button class="cc-back" id="cc-back">← Volver</button><header class="cc-head"><div class="cc-kicker">Biología celular y molecular · interactivo</div><h1>Comunicación celular</h1><p class="cc-muted">Clasificá señales, reconocé la química de los mensajeros y explorá una sinapsis paso a paso.</p></header><nav class="cc-tabs" aria-label="Secciones"><button class="cc-tab" data-view="tipos">🧩 Comunicación</button><button class="cc-tab" data-view="quimica">🧪 Mensajeros</button><button class="cc-tab" data-view="sinapsis">⚡ Sinapsis</button><button class="cc-tab" data-view="potencial">📈 Potencial de acción</button><button class="cc-tab" data-view="conexinas">🔗 Conexinas y gap</button><button class="cc-tab" data-view="repaso">📚 Repaso</button></nav><section id="cc-content"></section></main>`;
  const $=s=>app.querySelector(s);
- $('#cc-back').onclick=()=>{Sonido.clic();volver();};
+ $('#cc-back').onclick=()=>{detenerAnimacionPotencial();Sonido.clic();volver();};
  app.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{Sonido.clic();vista=b.dataset.view;render();});
  function render(){
+  detenerAnimacionPotencial();
   app.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===vista)));
-  if(vista==='tipos')tiposView();else if(vista==='quimica')quimicaView();else if(vista==='sinapsis')sinapsisView();else if(vista==='conexinas')conexinasView();else repasoView();
+  if(vista==='tipos')tiposView();else if(vista==='quimica')quimicaView();else if(vista==='sinapsis')sinapsisView();else if(vista==='potencial')potencialAccionView();else if(vista==='conexinas')conexinasView();else repasoView();
   window.scrollTo({top:0,behavior:'auto'});
  }
  function tiposView(){
@@ -166,6 +247,239 @@ export function abrirComunicacion({app, volver}) {
   const svg='<svg viewBox="0 0 620 300" role="img" aria-label="Dos conexones formados por seis conexinas se acoplan para conectar los citoplasmas de dos células"><rect x="8" y="18" width="238" height="264" rx="16" fill="#205a69" fill-opacity=".55" stroke="#4fe0a0"/><rect x="374" y="18" width="238" height="264" rx="16" fill="#4b3b80" fill-opacity=".55" stroke="#b9a1ff"/><text x="127" y="43" fill="#d8fff5" text-anchor="middle" font-size="15" font-weight="700">Célula A</text><text x="493" y="43" fill="#e0d6ff" text-anchor="middle" font-size="15" font-weight="700">Célula B</text><rect x="229" y="65" width="12" height="205" rx="6" fill="#55d6b2"/><rect x="379" y="65" width="12" height="205" rx="6" fill="#b9a1ff"/><g transform="translate(290 155)"><circle r="48" fill="#183e4b" stroke="#55d6b2" stroke-width="3"/><circle r="27" fill="#102c39" stroke="#b9fff0" stroke-width="2"/><circle r="11" fill="#ffb938"/><path d="M0 -48 V-27 M41 -24 L23 -13 M41 24 L23 13 M0 48 V27 M-41 24 L-23 13 M-41 -24 L-23 -13" stroke="#b9fff0" stroke-width="7" stroke-linecap="round"/></g><g transform="translate(330 155)"><circle r="48" fill="#34285d" stroke="#b9a1ff" stroke-width="3"/><circle r="27" fill="#20183e" stroke="#e0d6ff" stroke-width="2"/><circle r="11" fill="#ffb938"/><path d="M0 -48 V-27 M41 -24 L23 -13 M41 24 L23 13 M0 48 V27 M-41 24 L-23 13 M-41 -24 L-23 -13" stroke="#e0d6ff" stroke-width="7" stroke-linecap="round"/></g><path d="M310 144 V166 M303 159 L310 166 L317 159" stroke="#ffb938" stroke-width="3" fill="none"/><text x="310" y="78" text-anchor="middle" fill="#fff3dc" font-size="14" font-weight="700">Canal gap</text><text x="310" y="235" text-anchor="middle" fill="#fff3dc" font-size="12">paso directo</text></svg>';
   $('#cc-content').innerHTML='<section class="cc-card cc-syn"><div class="cc-kicker">Uniones comunicantes · gap junctions</div><h2>Conexinas → conexón → canal intercelular</h2><p class="cc-muted">Cada conexón (hemicanal) está formado habitualmente por seis proteínas conexina. Un conexón de una célula se acopla con otro de la célula vecina y forma un canal continuo entre ambos citoplasmas.</p>'+svg+'<div class="cc-feedback"><b>Conexina</b><p>Es una proteína transmembrana que funciona como una subunidad del canal.</p><b>Conexón o hemicanal</b><p>Conjunto habitual de seis conexinas ensambladas en una membrana celular.</p><b>Unión gap</b><p>Acoplamiento de dos conexones enfrentados, uno de cada célula. El canal permite el paso directo de iones y moléculas pequeñas entre citoplasmas, según su tamaño, carga y la permeabilidad del canal.</p></div></section><section class="cc-card"><h2>¿Para qué sirven?</h2><p class="cc-muted">Permiten acoplamiento eléctrico y metabólico. En el músculo cardíaco contribuyen a propagar corrientes iónicas entre células y coordinar su actividad. No son sinapsis químicas: no requieren liberar neurotransmisor en una hendidura extracelular para conectar directamente ambos citoplasmas.</p><div class="cc-note">Precisión: las uniones gap no están siempre abiertas; su permeabilidad puede regularse por factores como voltaje, pH, Ca²⁺ intracelular y el tipo de conexina.</div></section>';
  }
+
+ function detenerAnimacionPotencial(){
+  if(accionFrame!==null){cancelAnimationFrame(accionFrame);accionFrame=null;}
+ }
+
+ function voltajeAccion(t){
+  const supra=intensidadAccion>=15;
+  const puntos=supra
+   ? [[0,-70],[.38,-70],[.65,-55],[.88,-18],[1.12,30],[1.32,18],[1.62,-18],[1.96,-55],[2.28,-80],[2.85,-75],[3.35,-70],[5,-70]]
+   : [[0,-70],[.4,-70],[.72,-70+intensidadAccion],[1.02,-70+intensidadAccion*.88],[1.42,-70+intensidadAccion*.55],[2.05,-70+intensidadAccion*.2],[2.8,-70+intensidadAccion*.04],[3.5,-70],[5,-70]];
+  if(t<=0)return puntos[0][1];
+  for(let i=1;i<puntos.length;i++){
+   if(t<=puntos[i][0]){
+    const a=puntos[i-1],b=puntos[i];
+    const u=Math.max(0,Math.min(1,(t-a[0])/(b[0]-a[0])));
+    const suave=u*u*(3-2*u);
+    return a[1]+(b[1]-a[1])*suave;
+   }
+  }
+  return puntos[puntos.length-1][1];
+ }
+
+ function faseAccion(t){
+  if(intensidadAccion<15){
+   if(t<.4)return {id:'reposo',titulo:'Potencial de reposo',detalle:'La membrana permanece cerca de −70 mV. El interior es relativamente negativo y se mantienen los gradientes de Na⁺ y K⁺.'};
+   if(t<1.3)return {id:'subumbral',titulo:'Despolarización local subumbral',detalle:'El estímulo vuelve el interior menos negativo, pero no alcanza el umbral cercano a −55 mV. No se dispara un potencial de acción.'};
+   if(t<3.4)return {id:'subumbral',titulo:'Disipación del potencial graduado',detalle:'La respuesta local pierde amplitud con el tiempo y se aproxima nuevamente al potencial de reposo.'};
+   return {id:'retorno',titulo:'Retorno al reposo',detalle:'El potencial vuelve a −70 mV. Como no se alcanzó el umbral, no hubo respuesta de todo o nada.'};
+  }
+  if(t<.65)return {id:'reposo',titulo:'Reposo y llegada del estímulo',detalle:'La membrana parte de unos −70 mV. El estímulo despolarizante lleva el segmento hacia el umbral.'};
+  if(t<.82)return {id:'umbral',titulo:'Umbral de disparo',detalle:'Alrededor de −55 mV se activa la apertura regenerativa de canales de Na⁺ dependientes de voltaje.'};
+  if(t<1.16)return {id:'despolarizacion',titulo:'Despolarización',detalle:'Se abren rápidamente las compuertas de activación de Na⁺. El sodio entra a favor de su gradiente electroquímico y el voltaje sube.'};
+  if(t<1.55)return {id:'pico',titulo:'Pico u overshoot',detalle:'El interior llega a ser positivo (cerca de +30 mV). Los canales de Na⁺ se inactivan y los de K⁺ terminan de abrirse.'};
+  if(t<2.15)return {id:'repolarizacion',titulo:'Repolarización',detalle:'Disminuye la entrada de Na⁺ porque sus canales están inactivados; el K⁺ sale por canales dependientes de voltaje y el interior se hace negativo otra vez.'};
+  if(t<2.9)return {id:'hiperpolarizacion',titulo:'Hiperpolarización',detalle:'Los canales de K⁺ tardan en cerrarse. Sigue saliendo K⁺ y el potencial cae transitoriamente por debajo de −70 mV.'};
+  return {id:'retorno',titulo:'Retorno al reposo',detalle:'Los canales de K⁺ se cierran y los canales de Na⁺ recuperan su estado de reposo. Los gradientes se conservan y mantienen mediante transportadores y la Na⁺/K⁺-ATPasa.'};
+ }
+
+ function estadoCanalesAccion(t){
+  if(intensidadAccion<15||t<.65)return {
+   na:'Cerrado',naClass:'',naTexto:'Compuerta m cerrada y h abierta. El canal está disponible, pero no conduce Na⁺.',
+   k:'Cerrado',kClass:'',kTexto:'Canal de K⁺ dependiente de voltaje cerrado.'
+  };
+  if(t<1.16)return {
+   na:'Abierto',naClass:'open',naTexto:'m abierta y h abierta: entra Na⁺ rápidamente y se acelera la despolarización.',
+   k:'Cerrado',kClass:'',kTexto:'El canal de K⁺ todavía está cerrado; su apertura es más lenta.'
+  };
+  if(t<1.55)return {
+   na:'Inactivado',naClass:'inactive',naTexto:'La compuerta h se cierra: el canal deja de conducir Na⁺ aunque la membrana siga despolarizada.',
+   k:'Abriéndose',kClass:'open',kTexto:'Los canales de K⁺ dependientes de voltaje comienzan a abrirse.'
+  };
+  if(t<2.15)return {
+   na:'Inactivado',naClass:'inactive',naTexto:'El canal de Na⁺ sigue inactivado; todavía no está disponible para otro disparo.',
+   k:'Abierto',kClass:'open',kTexto:'Sale K⁺ de la célula y el voltaje regresa a valores negativos.'
+  };
+  if(t<2.9)return {
+   na:'Recuperándose',naClass:'',naTexto:'Los canales de Na⁺ vuelven al estado cerrado y disponible.',
+   k:'Cerrándose',kClass:'open',kTexto:'El cierre tardío permite que siga saliendo K⁺ y aparezca la hiperpolarización.'
+  };
+  return {
+   na:'Cerrado',naClass:'',naTexto:'m cerrada y h abierta: estado de reposo, disponible para un nuevo potencial.',
+   k:'Cerrado',kClass:'',kTexto:'Los canales de K⁺ de voltaje vuelven al estado cerrado.'
+  };
+ }
+
+ function actualizarMarcoAccion(t){
+  const f=faseAccion(t),v=voltajeAccion(t),supra=intensidadAccion>=15;
+  const x0=68,x1=680,y0=28,h=185;
+  const px=(ms)=>x0+(ms/5)*(x1-x0);
+  const py=(mv)=>y0+((40-mv)/130)*h;
+  let d='';
+  const pasos=Math.max(1,Math.ceil(t/.035));
+  for(let i=0;i<=pasos;i++){
+   const ms=t*i/pasos;
+   d+=(i?' L':'M')+px(ms).toFixed(2)+' '+py(voltajeAccion(ms)).toFixed(2);
+  }
+  const path=$('#cc-ap-path'),dot=$('#cc-ap-dot');
+  if(path)path.setAttribute('d',d);
+  if(dot){dot.setAttribute('cx',px(t).toFixed(2));dot.setAttribute('cy',py(v).toFixed(2));}
+  const phase=$('#cc-ap-phase'),vm=$('#cc-ap-vm'),time=$('#cc-ap-time'),detail=$('#cc-ap-detail');
+  if(phase)phase.textContent=f.titulo;
+  if(vm)vm.textContent=(v>0?'+':'')+Math.round(v)+' mV';
+  if(time)time.textContent=t.toFixed(1).replace('.',',')+' ms';
+  if(detail)detail.textContent=f.detalle;
+  const msg=$('#cc-ap-message');
+  if(msg){
+   if(t>=5){
+    msg.textContent=supra
+     ?'Se alcanzó el umbral y se generó un potencial de acción completo. Es una respuesta de todo o nada: un estímulo más intenso no aumenta la amplitud del potencial.'
+     :'El estímulo de +'+intensidadAccion+' mV fue subumbral: produjo un potencial local graduado que se disipó, sin generar un potencial de acción.';
+   }else if(!supra){
+    msg.textContent='El estímulo de +'+intensidadAccion+' mV no alcanza el umbral de −55 mV. La respuesta es local y graduada.';
+   }else{
+    msg.textContent='Estímulo supraumbral: se está recorriendo la secuencia eléctrica completa de una neurona.';
+   }
+  }
+  document.querySelectorAll('.cc-ap-phase-tile').forEach(el=>el.classList.toggle('active',el.dataset.phase===f.id));
+  const canales=estadoCanalesAccion(t);
+  const naBadge=$('#cc-ap-na-badge'),naText=$('#cc-ap-na-text'),kBadge=$('#cc-ap-k-badge'),kText=$('#cc-ap-k-text');
+  const naM=$('#cc-ap-na-m'),naH=$('#cc-ap-na-h'),naFlow=$('#cc-ap-na-flow');
+  const kGate=$('#cc-ap-k-gate'),kFlow=$('#cc-ap-k-flow');
+  if(naBadge){naBadge.textContent=canales.na;naBadge.className='cc-ap-badge '+canales.naClass;}
+  if(naText)naText.textContent=canales.naTexto;
+  if(kBadge){kBadge.textContent=canales.k;kBadge.className='cc-ap-badge '+canales.kClass;}
+  if(kText)kText.textContent=canales.kTexto;
+  if(naM)naM.setAttribute('class','cc-ap-na-gate '+(canales.na==='Abierto'?'cc-ap-m-na-open':''));
+  if(naH)naH.setAttribute('class','cc-ap-na-gate '+(canales.na==='Inactivado'?'cc-ap-h-na-closed':''));
+  if(naFlow)naFlow.setAttribute('class','cc-ap-flow '+(canales.na==='Abierto'?'visible':''));
+  if(kGate)kGate.setAttribute('class','cc-ap-k-gate '+(canales.k==='Abierto'||canales.k==='Abriéndose'||canales.k==='Cerrándose'?'cc-ap-k-open':''));
+  if(kFlow)kFlow.setAttribute('class','cc-ap-flow '+(canales.k==='Abierto'||canales.k==='Abriéndose'||canales.k==='Cerrándose'?'visible':''));
+  const weak=$('#cc-ap-weak'),strong=$('#cc-ap-strong'),range=$('#cc-ap-range'),value=$('#cc-ap-intensity');
+  if(weak)weak.classList.toggle('active',!supra);
+  if(strong)strong.classList.toggle('active',supra);
+  if(range&&Number(range.value)!==intensidadAccion)range.value=String(intensidadAccion);
+  if(value)value.textContent='+'+intensidadAccion+' mV';
+ }
+
+ function iniciarAnimacionPotencial(reiniciar){
+  detenerAnimacionPotencial();
+  if(reiniciar){tiempoAccion=0;accionTerminada=false;}
+  accionPausada=false;
+  accionInicio=performance.now()-(tiempoAccion/5)*3900;
+  actualizarMarcoAccion(tiempoAccion);
+  const cuadro=(ahora)=>{
+   if(accionPausada||vista!=='potencial'){accionFrame=null;return;}
+   tiempoAccion=Math.min(5,((ahora-accionInicio)/3900)*5);
+   actualizarMarcoAccion(tiempoAccion);
+   if(tiempoAccion>=5){accionTerminada=true;accionFrame=null;const b=$('#cc-ap-pause');if(b)b.textContent='↻ Repetir';return;}
+   accionFrame=requestAnimationFrame(cuadro);
+  };
+  accionFrame=requestAnimationFrame(cuadro);
+  const b=$('#cc-ap-pause');if(b)b.textContent='Ⅱ Pausar';
+ }
+
+ function seleccionarEstimulo(valor){
+  intensidadAccion=valor;
+  const range=$('#cc-ap-range');
+  if(range)range.value=String(valor);
+  iniciarAnimacionPotencial(true);
+  Sonido.clic();
+ }
+
+ function potencialAccionView(){
+  const y=(v)=>28+((40-v)/130)*185;
+  const x=(t)=>68+(t/5)*612;
+  const yTicks=[40,0,-55,-70,-85].map(v=>
+   '<g><line class="cc-ap-grid" x1="68" x2="680" y1="'+y(v)+'" y2="'+y(v)+'"/><text class="cc-ap-grid-label" x="4" y="'+(y(v)+4)+'">'+v+' mV</text></g>'
+  ).join('');
+  const xTicks=[0,1,2,3,4,5].map(t=>
+   '<g><line class="cc-ap-grid" x1="'+x(t)+'" x2="'+x(t)+'" y1="28" y2="213"/><text class="cc-ap-time-label" x="'+x(t)+'" y="235">'+t+' ms</text></g>'
+  ).join('');
+  const fases=[
+   ['reposo','Reposo','≈ −70 mV; interior negativo.'],
+   ['umbral','Umbral','≈ −55 mV; dispara la respuesta.'],
+   ['subumbral','Potencial local','Graduado; no llega al umbral.'],
+   ['despolarizacion','Despolarización','Entra Na⁺; el voltaje sube.'],
+   ['pico','Pico','Na⁺ se inactiva; K⁺ abre.'],
+   ['repolarizacion','Repolarización','Sale K⁺; vuelve la negatividad.'],
+   ['hiperpolarizacion','Hiperpolarización','K⁺ sigue saliendo un poco más.'],
+   ['retorno','Retorno','Se recupera el reposo.']
+  ];
+  const faseHtml=fases.map(f=>
+   '<div class="cc-ap-phase-tile" data-phase="'+f[0]+'"><b>'+f[1]+'</b><small>'+f[2]+'</small></div>'
+  ).join('');
+  $('#cc-content').innerHTML=
+   '<section class="cc-card cc-ap-main">'+
+    '<header class="cc-ap-head"><div><h2>Potencial de Acción Neuronal</h2><span class="cc-ap-phase" id="cc-ap-phase">Reposo y llegada del estímulo</span></div>'+
+     '<div class="cc-ap-metrics"><div class="cc-ap-metric">Voltaje (Vₘ)<strong id="cc-ap-vm">−70 mV</strong></div><div class="cc-ap-metric">Tiempo<strong id="cc-ap-time">0,0 ms</strong></div></div></header>'+
+    '<div class="cc-ap-chart"><svg viewBox="0 0 700 250" role="img" aria-label="Gráfico animado de voltaje de membrana durante un potencial de acción, con umbral en menos 55 milivoltios">'+
+     yTicks+xTicks+
+     '<line class="cc-ap-threshold" x1="68" x2="680" y1="'+y(-55)+'" y2="'+y(-55)+'"/>'+
+     '<text class="cc-ap-threshold-label" x="675" y="'+(y(-55)-7)+'" text-anchor="end">Umbral (−55 mV)</text>'+
+     '<path id="cc-ap-path" class="cc-ap-curve" d=""/><circle id="cc-ap-dot" class="cc-ap-cursor" cx="68" cy="'+y(-70)+'" r="4"/></svg></div>'+
+    '<section class="cc-ap-channels"><h3>Canales iónicos y transporte</h3><p class="cc-ap-channel-caption" id="cc-ap-detail">En reposo: el interior neuronal se mantiene alrededor de −70 mV.</p>'+
+     '<div class="cc-ap-channel-grid">'+
+      '<article class="cc-ap-channel"><div class="cc-ap-channel-head"><b>Canal Na⁺</b><span class="cc-ap-badge" id="cc-ap-na-badge">Cerrado</span></div>'+
+       '<div class="cc-ap-art"><svg viewBox="0 0 190 70" role="img" aria-label="Canal de sodio con compuertas de activación m e inactivación h">'+
+        '<rect class="cc-ap-membrane" x="4" y="25" width="48" height="20" rx="6"/><rect class="cc-ap-membrane" x="138" y="25" width="48" height="20" rx="6"/>'+
+        '<rect id="cc-ap-na-m" class="cc-ap-na-gate" x="62" y="14" width="14" height="42" rx="7"/><rect id="cc-ap-na-h" class="cc-ap-na-gate" x="112" y="14" width="14" height="42" rx="7"/>'+
+        '<path id="cc-ap-na-flow" class="cc-ap-flow" d="M94 5 V59 M88 52 L94 60 L100 52" stroke="#8ccfff" stroke-width="3" fill="none"/>'+
+        '<text x="69" y="68" fill="#aaa" font-size="9" text-anchor="middle">m</text><text x="119" y="68" fill="#aaa" font-size="9" text-anchor="middle">h</text></svg></div>'+
+       '<p id="cc-ap-na-text">Compuerta m cerrada y h abierta. El canal está disponible, pero no conduce Na⁺.</p></article>'+
+      '<article class="cc-ap-channel"><div class="cc-ap-channel-head"><b>Canal K⁺</b><span class="cc-ap-badge" id="cc-ap-k-badge">Cerrado</span></div>'+
+       '<div class="cc-ap-art"><svg viewBox="0 0 190 70" role="img" aria-label="Canal de potasio dependiente de voltaje">'+
+        '<rect class="cc-ap-membrane" x="4" y="25" width="48" height="20" rx="6"/><rect class="cc-ap-membrane" x="138" y="25" width="48" height="20" rx="6"/>'+
+        '<rect id="cc-ap-k-gate" class="cc-ap-k-gate" x="72" y="14" width="15" height="42" rx="7"/><rect class="cc-ap-k-gate" x="104" y="14" width="15" height="42" rx="7"/>'+
+        '<path id="cc-ap-k-flow" class="cc-ap-flow" d="M95 60 V6 M89 14 L95 6 L101 14" stroke="#4fe0a0" stroke-width="3" fill="none"/>'+
+       '</svg></div><p id="cc-ap-k-text">Canal de K⁺ dependiente de voltaje cerrado.</p></article>'+
+      '<article class="cc-ap-channel"><div class="cc-ap-channel-head"><b>Bomba Na⁺/K⁺</b><span class="cc-ap-badge open">Activa · ATP</span></div>'+
+       '<div class="cc-ap-art"><svg viewBox="0 0 190 70" role="img" aria-label="Bomba sodio potasio que expulsa tres sodios e introduce dos potasios">'+
+        '<rect class="cc-ap-membrane" x="4" y="25" width="48" height="20" rx="6"/><rect class="cc-ap-membrane" x="138" y="25" width="48" height="20" rx="6"/>'+
+        '<rect x="72" y="14" width="46" height="42" rx="14" fill="#252525" stroke="#aaa" stroke-width="1.5"/>'+
+        '<path d="M88 47 V18 M82 25 L88 17 L94 25" stroke="#8ccfff" stroke-width="2.7" fill="none"/><path d="M104 19 V48 M98 41 L104 49 L110 41" stroke="#4fe0a0" stroke-width="2.7" fill="none"/></svg></div>'+
+       '<p>3 Na⁺ salen y 2 K⁺ entran por ATP; mantiene los gradientes iónicos.</p></article>'+
+     '</div></section>'+
+    '<section class="cc-ap-controls"><div class="cc-ap-control-row">'+
+     '<button type="button" class="cc-ap-button" id="cc-ap-weak">ϟ Estímulo débil (subumbral)</button>'+
+     '<button type="button" class="cc-ap-button active" id="cc-ap-strong">ϟ Estímulo fuerte (supraumbral)</button>'+
+     '<button type="button" class="cc-ap-button" id="cc-ap-pause">Ⅱ Pausar</button>'+
+     '<button type="button" class="cc-ap-button" id="cc-ap-reset">↻ Reiniciar</button></div>'+
+     '<div class="cc-ap-slider"><label for="cc-ap-range">Intensidad del estímulo aplicado</label><output id="cc-ap-intensity">+20 mV</output>'+
+      '<input class="cc-ap-range" id="cc-ap-range" type="range" min="0" max="25" step="1" value="'+intensidadAccion+'"/></div>'+
+     '<p class="cc-ap-experiment-note" id="cc-ap-message">El estímulo supera el umbral y genera un potencial de acción completo.</p></section>'+
+   '</section>'+
+   '<section class="cc-ap-phase-panel"><h3>Fases del potencial de acción</h3><p class="cc-muted">Observá qué cambia en la membrana a medida que avanza la curva.</p><div class="cc-ap-phase-grid">'+faseHtml+'</div></section>'+
+   '<section class="cc-ap-explain-grid">'+
+    '<article class="cc-ap-explain"><h3>1. Reposo y gradientes</h3><p>El potencial suele ser cercano a <strong>−70 mV</strong>. Hay más Na⁺ y Ca²⁺ afuera, y más K⁺ adentro. La permeabilidad selectiva, los canales de fuga y los gradientes electroquímicos explican el voltaje.</p></article>'+
+    '<article class="cc-ap-explain"><h3>2. Umbral y todo o nada</h3><p>Alrededor de <strong>−55 mV</strong> se abren suficientes canales de Na⁺ para producir una despolarización regenerativa. Si el umbral no se alcanza, queda un potencial local graduado; si se alcanza, se dispara el potencial completo.</p></article>'+
+    '<article class="cc-ap-explain"><h3>3. Repolarización</h3><p>Los canales de Na⁺ se inactivan y los de K⁺ se abren con retraso. La <strong>salida de K⁺</strong> hace que el interior vuelva a ser negativo. La bomba Na⁺/K⁺ no produce esta caída rápida.</p></article>'+
+    '<article class="cc-ap-explain"><h3>4. Períodos refractarios</h3><p><strong>Absoluto:</strong> los canales de Na⁺ inactivados impiden otro potencial. <strong>Relativo:</strong> durante la hiperpolarización puede iniciarse otro, pero hace falta un estímulo mayor.</p></article>'+
+    '<article class="cc-ap-explain"><h3>5. Propagación por el axón</h3><p>Las corrientes locales despolarizan el segmento vecino. La región que acaba de activarse queda refractaria, favoreciendo el avance hacia adelante. En axones mielinizados, la conducción es saltatoria entre nodos de Ranvier.</p></article>'+
+    '<article class="cc-ap-explain"><h3>6. Conexión con la sinapsis</h3><p>Cuando el potencial llega a la terminal presináptica, abre canales de <strong>Ca²⁺ dependientes de voltaje</strong>. El Ca²⁺ que entra desencadena la fusión de vesículas y la liberación del neurotransmisor.</p></article>'+
+   '</section>'+
+   '<p class="cc-ap-footnote">Modelo didáctico de una neurona típica. Los valores de −70 mV, −55 mV y +30 mV, así como los tiempos, son aproximados y varían según el tipo celular.</p>';
+
+  $('#cc-ap-weak').onclick=()=>seleccionarEstimulo(10);
+  $('#cc-ap-strong').onclick=()=>seleccionarEstimulo(20);
+  $('#cc-ap-range').addEventListener('input',e=>{
+   intensidadAccion=Number(e.target.value);
+   iniciarAnimacionPotencial(true);
+  });
+  $('#cc-ap-pause').onclick=()=>{
+   if(accionTerminada){iniciarAnimacionPotencial(true);return;}
+   if(!accionPausada){
+    accionPausada=true;detenerAnimacionPotencial();
+    $('#cc-ap-pause').textContent='▶ Reanudar';
+   }else iniciarAnimacionPotencial(false);
+   Sonido.clic();
+  };
+  $('#cc-ap-reset').onclick=()=>{iniciarAnimacionPotencial(true);Sonido.clic();};
+  iniciarAnimacionPotencial(true);
+ }
+
  function sinapsisView(){
   const etapas=[
    ['1. Potencial de acción','La despolarización llega a la terminal presináptica y cambia el potencial de membrana.'],
