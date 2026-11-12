@@ -86,7 +86,6 @@ export function infoDispositivo() {
       user_agent: ua.slice(0, 300),
       fabricante: inferirFabricante('', ua),
       modelo: null,
-      plataforma: detectarSistema(ua),
       instalada: window.matchMedia?.('(display-mode: standalone)').matches || navigator.standalone === true,
     };
   } catch {
