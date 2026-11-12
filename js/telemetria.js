@@ -140,8 +140,8 @@ function instrumentarVistas() {
   let pendiente = false;
   const revisar = () => {
     pendiente = false;
-    const titulo = root.querySelector('h1')?.textContent?.trim().replace(/\s+/g, ' ').slice(0, 100) || '';
-    if (titulo && titulo !== vistaActual) {
+    const titulo = root.querySelector('h1')?.textContent?.trim().replace(/\s+/g, ' ').slice(0, 80) || '';
+    if (titulo && titulo.length <= 80 && !/[?¿]/.test(titulo) && titulo !== vistaActual) {
       vistaActual = titulo;
       encolar('vista', { datos: { titulo } });
     }
@@ -162,14 +162,16 @@ export async function iniciarTelemetria() {
 
   try {
     const perfil = await perfilDispositivo();
-    await registrarDispositivo({
+    const fila = Object.fromEntries(Object.entries({
       dispositivo_id: dispositivoId,
       ...perfil,
       version_app: VERSION_APP,
       ultima_visita: new Date().toISOString(),
-    });
+    }).filter(([, valor]) => valor !== null && valor !== undefined));
+    await registrarDispositivo(fila);
   } catch {
-    // Si el perfil no se puede guardar, la aplicación sigue funcionando.
+    // Si todavía no se ejecutó el SQL o falla la red, no acumular eventos huérfanos.
+    return;
   }
 
   encolar('app_open');
