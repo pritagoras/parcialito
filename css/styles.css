@@ -1299,3 +1299,53 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
   .ipc-p2-bank-print .ipc-p2-expansion h4 { color:#111 !important; }
   .ipc-p2-bank-print .ipc-p2-bank-footer { color:#555 !important; border-color:#bbb !important; }
 }
+
+
+/* ---------- Directorio público de jugadores ---------- */
+.barra-ranking { gap: .55rem; }
+.jugadores-cabecera {
+  display:flex; flex-wrap:wrap; gap:.65rem; margin:.9rem 0 1rem;
+}
+.jugadores-cabecera > div {
+  display:flex; align-items:baseline; gap:.45rem; flex:1 1 9rem; min-width:0;
+  padding:.75rem .9rem; border:1px solid var(--linea); border-radius:13px; background:var(--panel);
+}
+.jugadores-cabecera strong { color:var(--crema); font-size:1.25rem; font-weight:850; }
+.jugadores-cabecera span { color:var(--tenue); font-size:.8rem; }
+.jugadores-busqueda { display:grid; gap:.35rem; margin:.5rem 0; color:var(--tenue); font-size:.82rem; font-weight:650; }
+.jugadores-busqueda input {
+  width:100%; min-width:0; padding:.75rem .9rem; border:1px solid var(--linea);
+  border-radius:12px; background:var(--panel); color:var(--crema); font:inherit;
+}
+.jugadores-busqueda input:focus { outline:none; border-color:var(--violeta); }
+.jugadores-contador { margin:.7rem 0; color:var(--tenue); font-size:.8rem; }
+.lista-jugadores { display:grid; gap:.55rem; margin:0; padding:0; list-style:none; }
+.jugador-fila { min-width:0; border:1px solid var(--linea); border-radius:14px; background:var(--panel); overflow:hidden; }
+.jugador-fila.jugador-propio { border-color:rgba(255,185,56,.6); background:var(--panel-2); }
+.jugador-enlace {
+  position:relative; display:grid; width:100%; min-width:0; gap:.48rem;
+  padding:.85rem 2.7rem .85rem .95rem; border:0; background:transparent; color:var(--crema);
+  text-align:left; cursor:pointer; font:inherit;
+}
+.jugador-enlace:hover { background:rgba(155,123,255,.055); }
+.jugador-enlace:focus-visible { outline:2px solid var(--violeta); outline-offset:-3px; }
+.jugador-cabecera-fila { display:flex; align-items:center; justify-content:space-between; gap:.65rem; min-width:0; }
+.jugador-cabecera-fila strong { min-width:0; overflow-wrap:anywhere; font-size:.96rem; }
+.jugador-cabecera-fila > span { flex:0 0 auto; color:var(--tenue); font-size:.78rem; font-weight:700; font-variant-numeric:tabular-nums; }
+.jugador-riel { display:block; height:6px; overflow:hidden; border-radius:99px; background:var(--noche); }
+.jugador-riel i { display:block; height:100%; border-radius:inherit; background:var(--ok); }
+.jugador-detalle { display:flex; flex-wrap:wrap; justify-content:space-between; gap:.25rem .8rem; color:var(--tenue); font-size:.75rem; line-height:1.4; }
+.jugador-flecha { position:absolute; right:1rem; top:50%; transform:translateY(-50%); color:var(--tenue); font-size:1rem; }
+.jugador-stats {
+  display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.55rem; margin:.9rem 0 1.1rem;
+}
+.jugador-stats > div {
+  display:grid; align-content:center; gap:.25rem; min-width:0; padding:.8rem .7rem;
+  border:1px solid var(--linea); border-radius:13px; background:var(--panel); text-align:center;
+}
+.jugador-stats strong { color:var(--crema); font-size:1.2rem; font-weight:850; font-variant-numeric:tabular-nums; overflow-wrap:anywhere; }
+.jugador-stats span { color:var(--tenue); font-size:.7rem; line-height:1.3; }
+@media(max-width:620px) {
+  .barra-ranking .btn { flex:1 1 calc(50% - .55rem); padding:.6rem .7rem; }
+  .jugador-stats { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
