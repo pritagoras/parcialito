@@ -122,8 +122,11 @@ function instrumentarErrores() {
     }
     encolar('js_error', {
       recurso: String(e.filename || '').split('?')[0].slice(-180) || null,
-      codigo: Number(e.lineno) || null,
-      datos: { mensaje: String(e.message || 'Error').slice(0, 180), columna: Number(e.colno) || null },
+      datos: {
+        mensaje: String(e.message || 'Error').slice(0, 180),
+        linea: Number(e.lineno) || null,
+        columna: Number(e.colno) || null,
+      },
     });
   });
   window.addEventListener('unhandledrejection', e => {
