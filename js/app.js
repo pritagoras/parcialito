@@ -7,7 +7,7 @@
 import { estado, guardar, hash } from './store.js?v=dev';
 import { Sonido } from './sonido.js?v=dev';
 import { lanzarConfeti } from './confeti.js?v=dev';
-import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, registrarVisita, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles, comentariosPublicos, guardarComentarioPublico, enviarReporteGeneral } from './ranking.js?v=20261028-1';
+import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, registrarVisita, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles, comentariosPublicos, guardarComentarioPublico, enviarReporteGeneral, jugadoresPublicos } from './ranking.js?v=20261111-1';
 import { infoDispositivo } from './dispositivo.js?v=dev';
 import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js?v=dev';
 import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js?v=dev';
@@ -744,6 +744,7 @@ function vistaInicio() {
       ${rankingActivo() ? `
         <div class="barra-ranking">
           <button class="btn secundario" id="btn-ranking">🏆 Ranking</button>
+          <button class="btn secundario" id="btn-jugadores">👥 Jugadores</button>
           <button class="btn secundario" id="btn-dificiles">🔥 Las más difíciles</button>
           <button class="btn secundario" id="btn-apodo">👤 ${estado.apodo ? esc(estado.apodo) : 'Elegir apodo'}</button>
         </div>` : ''}
@@ -795,6 +796,7 @@ function vistaInicio() {
   document.getElementById('btn-errores')?.addEventListener('click', () => { Sonido.clic(); lanzarErrores(); });
   document.getElementById('btn-dificiles')?.addEventListener('click', () => { Sonido.clic(); lanzarDificiles(); });
   document.getElementById('btn-ranking')?.addEventListener('click', () => { Sonido.clic(); vistaRanking(); });
+  document.getElementById('btn-jugadores')?.addEventListener('click', () => { Sonido.clic(); vistaJugadores(); });
   document.getElementById('btn-apodo')?.addEventListener('click', () => { Sonido.clic(); vistaApodo(); });
   document.getElementById('panel-comentarios')?.addEventListener('toggle', (e) => {
     if (e.target.open) cargarComentariosPublicos();
@@ -2407,9 +2409,12 @@ function abrirReporte(q, boton) {
 function filasProgreso(preguntas) {
   const ids = new Set(preguntas.map((q) => q.temaId));
   const filas = [];
+  const vistos = new Set();
   for (const m of indice.materias) {
-    for (const t of m.temas) {
-      if (!ids.has(t.id)) continue;
+    const temas = [...(m.temas || []), ...(m.segundoParcial?.autores || [])];
+    for (const t of temas) {
+      if (!ids.has(t.id) || vistos.has(t.id)) continue;
+      vistos.add(t.id);
       filas.push({
         apodo: estado.apodo,
         materia: m.nombre,
@@ -2565,6 +2570,170 @@ function anotarEntrada() {
   anotarVisita('entrada');
 }
 
+
+// ---------- Directorio público de jugadores ----------
+
+function claveTema(materia, tema) {
+  const normalizar = (s) => String(s || '').toLowerCase().replace(/\s+/g, ' ').trim();
+  return `${normalizar(materia)}::${normalizar(tema)}`;
+}
+
+function catalogoTemasPublicados() {
+  const porId = new Map();
+  const porNombre = new Map();
+  for (const m of indice.materias) {
+    const temas = [...(m.temas || []), ...(m.segundoParcial?.autores || [])];
+    for (const t of temas) {
+      if (!t?.id || Number(t.preguntas || 0) < 1 || porId.has(t.id)) continue;
+      const dato = { id: t.id, materia: m.nombre, tema: t.nombre };
+      porId.set(t.id, dato);
+      porNombre.set(claveTema(m.nombre, t.nombre), dato);
+    }
+  }
+  return { lista: [...porId.values()], porId, porNombre };
+}
+
+function resumirJugadores(datos) {
+  const catalogo = catalogoTemasPublicados();
+  const mapa = new Map();
+  const obtener = (apodo) => {
+    const nombre = String(apodo || '').trim();
+    if (!nombre) return null;
+    const clave = nombre.toLocaleLowerCase('es');
+    if (!mapa.has(clave)) {
+      mapa.set(clave, {
+        apodo: nombre, temas: new Set(), partidas: 0,
+        aciertos: 0, preguntas: 0, ultimaActividad: null, ultimaMs: 0,
+      });
+    }
+    return mapa.get(clave);
+  };
+  const actualizarFecha = (jugador, fecha) => {
+    const ms = Date.parse(fecha || '');
+    if (Number.isFinite(ms) && ms > jugador.ultimaMs) {
+      jugador.ultimaMs = ms;
+      jugador.ultimaActividad = fecha;
+    }
+  };
+
+  for (const fila of datos.progreso || []) {
+    const jugador = obtener(fila.apodo);
+    if (!jugador) continue;
+    const tema = catalogo.porId.get(fila.tema_id) ||
+      catalogo.porNombre.get(claveTema(fila.materia, fila.tema));
+    if (tema) jugador.temas.add(tema.id);
+    actualizarFecha(jugador, fila.creado);
+  }
+  for (const fila of datos.partidas || []) {
+    const jugador = obtener(fila.apodo);
+    if (!jugador) continue;
+    const tema = catalogo.porNombre.get(claveTema(fila.materia, fila.tema));
+    if (tema) jugador.temas.add(tema.id);
+    jugador.partidas++;
+    jugador.aciertos += Number(fila.aciertos) || 0;
+    jugador.preguntas += Number(fila.total) || 0;
+    actualizarFecha(jugador, fila.creado);
+  }
+
+  const totalTemas = catalogo.lista.length;
+  const jugadores = [...mapa.values()].map((j) => ({
+    ...j,
+    temas: j.temas.size,
+    totalTemas,
+    cobertura: totalTemas ? Math.round((j.temas.size / totalTemas) * 100) : 0,
+    precision: j.preguntas ? Math.round((j.aciertos / j.preguntas) * 100) : null,
+  })).sort((a, b) =>
+    b.temas - a.temas ||
+    b.partidas - a.partidas ||
+    b.ultimaMs - a.ultimaMs ||
+    a.apodo.localeCompare(b.apodo, 'es')
+  );
+
+  return { jugadores, totalTemas };
+}
+
+function fechaCorta(fecha) {
+  if (!fecha) return 'Sin actividad reciente';
+  const ms = Date.parse(fecha);
+  if (!Number.isFinite(ms)) return 'Sin actividad reciente';
+  return new Date(ms).toLocaleDateString('es-AR', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+function vistaJugadores(filtroInicial = '') {
+  app.innerHTML = `
+    <main class="pantalla">
+      <button class="btn enlace" id="btn-volver">← Inicio</button>
+      <h1 class="titulo-seccion">👥 Jugadores</h1>
+      <p class="nota-ranking">Conocé quiénes juegan y cuánto contenido de Parcialito recorrió cada persona.</p>
+      <div class="jugadores-cabecera" id="jugadores-cabecera"><span class="estado-ranking">Cargando jugadores…</span></div>
+      <label class="jugadores-busqueda">
+        <span>Buscar jugador</span>
+        <input id="jugadores-filtro" type="search" maxlength="20" placeholder="Escribí un apodo…" autocomplete="off">
+      </label>
+      <p class="jugadores-contador" id="jugadores-contador"></p>
+      <ol class="lista-jugadores" id="lista-jugadores"><li class="estado-ranking">Cargando…</li></ol>
+    </main>`;
+
+  document.getElementById('btn-volver').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
+  const filtro = document.getElementById('jugadores-filtro');
+  const cabecera = document.getElementById('jugadores-cabecera');
+  const contador = document.getElementById('jugadores-contador');
+  const lista = document.getElementById('lista-jugadores');
+  filtro.value = filtroInicial;
+
+  let jugadores = [];
+  let totalTemas = 0;
+  function pintarLista() {
+    const termino = filtro.value.trim().toLocaleLowerCase('es');
+    const visibles = jugadores.filter((j) => j.apodo.toLocaleLowerCase('es').includes(termino));
+    contador.textContent = `${visibles.length} de ${jugadores.length} jugadores`;
+    if (!visibles.length) {
+      lista.innerHTML = jugadores.length
+        ? '<li class="estado-ranking">No hay jugadores que coincidan con esa búsqueda.</li>'
+        : '<li class="estado-ranking">Todavía no hay jugadores registrados. ¡Sé el primero en aparecer!</li>';
+      return;
+    }
+    lista.innerHTML = visibles.map((j) => `
+      <li class="jugador-fila ${estado.apodo && estado.apodo.toLowerCase() === j.apodo.toLowerCase() ? 'jugador-propio' : ''}">
+        <button class="jugador-enlace" type="button" data-apodo="${esc(j.apodo)}">
+          <span class="jugador-cabecera-fila">
+            <strong>${esc(j.apodo)}</strong>
+            <span>${j.temas}/${totalTemas} temas</span>
+          </span>
+          <span class="jugador-riel" aria-label="${j.cobertura}% de cobertura temática"><i style="width:${j.cobertura}%"></i></span>
+          <span class="jugador-detalle">
+            ${j.partidas ? `${j.partidas} partidas puntuadas · ${j.precision}% de precisión` : 'Actividad registrada por tema'}
+            <span>Última actividad: ${fechaCorta(j.ultimaActividad)}</span>
+          </span>
+          <span class="jugador-flecha" aria-hidden="true">↗</span>
+        </button>
+      </li>`).join('');
+    lista.querySelectorAll('.jugador-enlace').forEach((b) => b.addEventListener('click', () => {
+      Sonido.clic();
+      const busqueda = filtro.value;
+      vistaHistorial(b.dataset.apodo, () => vistaJugadores(busqueda));
+    }));
+  }
+
+  filtro.addEventListener('input', pintarLista);
+  window.scrollTo(0, 0);
+  jugadoresPublicos().then((datos) => {
+    if (!lista.isConnected) return;
+    const resumen = resumirJugadores(datos);
+    jugadores = resumen.jugadores;
+    totalTemas = resumen.totalTemas;
+    cabecera.innerHTML = `
+      <div><strong>${jugadores.length}</strong><span>jugadores registrados</span></div>
+      <div><strong>${totalTemas}</strong><span>temas disponibles</span></div>`;
+    pintarLista();
+  }).catch(() => {
+    if (!lista.isConnected) return;
+    cabecera.innerHTML = '';
+    contador.textContent = '';
+    lista.innerHTML = '<li class="estado-ranking">No se pudo cargar el directorio. Probá de nuevo en un rato.</li>';
+  });
+}
+
 // ---------- Pantallas: apodo, ranking e historial ----------
 
 function vistaApodo() {
@@ -2579,7 +2748,7 @@ function vistaApodo() {
         <button class="btn primario" type="submit">Guardar</button>
       </form>
       ${estado.apodo ? '<button class="btn secundario" id="btn-historial">Ver mi historial</button>' : ''}
-      <p class="aviso-datos">Al entrar a la página se registra la visita (con tu apodo, si ya lo elegiste). Al terminar una ronda se guardan tu apodo, tus resultados y datos básicos de tu dispositivo (navegador, sistema, pantalla, idioma y zona horaria) para estadísticas. También se registra, sin tu apodo, si cada pregunta se respondió bien o mal. El ranking solo muestra apodo y puntos.</p>
+      <p class="aviso-datos">Al entrar a la página se registra la visita (con tu apodo, si ya lo elegiste). Al terminar una ronda se guardan tu apodo, tus resultados y el progreso de los temas practicados. El ranking y el directorio de jugadores muestran estadísticas asociadas a tu apodo. Los datos básicos de tu dispositivo se usan solo para estadísticas internas y no son públicos. También se registra, sin tu apodo, si cada pregunta se respondió bien o mal.</p>
     </main>`;
 
   const input = document.getElementById('inp-apodo');
@@ -2675,12 +2844,36 @@ function vistaHistorial(apodo, volver) {
   window.scrollTo(0, 0);
 
   const caja = document.getElementById('lista-historial');
-  Promise.all([historialDe(apodo), progresoDe(apodo).catch(() => [])]).then(([filas, progreso]) => {
+  Promise.all([historialDe(apodo, 500), progresoDe(apodo).catch(() => [])]).then(([filas, progreso]) => {
     if (!caja.isConnected) return;
     if (!filas.length && !progreso.length) {
       caja.innerHTML = '<p class="estado-ranking">Todavía no hay partidas guardadas.</p>';
       return;
     }
+    const catalogo = catalogoTemasPublicados();
+    const totalTemas = catalogo.lista.length;
+    const temasJugados = new Set();
+    for (const p of progreso) {
+      const t = catalogo.porId.get(p.tema_id) || catalogo.porNombre.get(claveTema(p.materia, p.tema));
+      if (t) temasJugados.add(t.id);
+    }
+    for (const f of filas) {
+      const t = catalogo.porNombre.get(claveTema(f.materia, f.tema));
+      if (t) temasJugados.add(t.id);
+    }
+    const aciertosTotales = filas.reduce((s, f) => s + (Number(f.aciertos) || 0), 0);
+    const preguntasTotales = filas.reduce((s, f) => s + (Number(f.total) || 0), 0);
+    const precisionGlobal = preguntasTotales ? Math.round((aciertosTotales / preguntasTotales) * 100) : null;
+    const coberturaTemas = totalTemas ? Math.round((temasJugados.size / totalTemas) * 100) : 0;
+    const partidasLabel = filas.length >= 500 ? '500+' : String(filas.length);
+    const bloqueResumen = `
+      <div class="jugador-stats">
+        <div><strong>${temasJugados.size}/${totalTemas}</strong><span>temas practicados</span></div>
+        <div><strong>${coberturaTemas}%</strong><span>cobertura temática</span></div>
+        <div><strong>${partidasLabel}</strong><span>partidas puntuadas</span></div>
+        <div><strong>${precisionGlobal === null ? '—' : precisionGlobal + '%'}</strong><span>precisión acumulada</span></div>
+      </div>
+      ${filas.length >= 500 ? '<p class="nota-ranking">Se muestran las últimas 500 partidas guardadas.</p>' : ''}`;
     const bloqueProgreso = progreso.length ? `
       <h2 class="subtitulo">Progreso por tema</h2>
       <ul class="lista-progreso">${progreso.map((p) => {
@@ -2695,7 +2888,7 @@ function vistaHistorial(apodo, volver) {
           </li>`;
       }).join('')}</ul>
       ${filas.length ? '<h2 class="subtitulo">Partidas</h2>' : ''}` : '';
-    caja.innerHTML = bloqueProgreso + `<ul class="lista-historial">${filas.map((f) => {
+    caja.innerHTML = bloqueResumen + bloqueProgreso + `<ul class="lista-historial">${filas.map((f) => {
       const pct = Math.round((f.aciertos / f.total) * 100);
       const fecha = new Date(f.creado).toLocaleDateString('es-AR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
       return `
