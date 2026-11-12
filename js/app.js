@@ -1976,7 +1976,7 @@ async function lanzarMegaclase() {
   vistaCargando('Preparando las preguntas de la megaclase…');
   try {
     const r = await fetch('data/megaclase-marucbc-2026.json', { cache: 'no-cache' });
-    if (!r.ok) throw new Error(\`No se pudo leer el repaso de Maru (\${r.status})\`);
+    if (!r.ok) throw new Error('No se pudo leer el repaso de Maru (' + r.status + ')');
     const json = await r.json();
     const materia = { nombre: json.materia || 'Biología CBC' };
     const tema = {
