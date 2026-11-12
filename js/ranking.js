@@ -109,6 +109,41 @@ export async function rankingMateria(materia, tema = null, limite = 20) {
   return [...mejores.values()].slice(0, limite);
 }
 
+// Lee las tablas públicas por bloques para superar el límite de filas por respuesta.
+async function leerFilasPublicas(ruta, maxFilas = 20000) {
+  const bloque = 1000;
+  const filas = [];
+  for (let desde = 0; desde < maxFilas; desde += bloque) {
+    const pagina = (await pedir(ruta, {
+      headers: {
+        Range: `${desde}-${desde + bloque - 1}`,
+        'Range-Unit': 'items',
+      },
+    })) || [];
+    filas.push(...pagina);
+    if (pagina.length < bloque) break;
+  }
+  return filas;
+}
+
+// Solo consulta apodos, partidas y progreso temático. No lee sesiones privadas
+// ni datos del dispositivo.
+export async function jugadoresPublicos() {
+  const qProgreso = new URLSearchParams({
+    select: 'apodo,materia,tema_id,tema,dominadas,total,mejor_precision,creado',
+    order: 'creado.desc',
+  });
+  const qPartidas = new URLSearchParams({
+    select: 'apodo,materia,tema,aciertos,total,puntos,creado',
+    order: 'creado.desc',
+  });
+  const [progreso, partidas] = await Promise.all([
+    leerFilasPublicas(`progreso_temas?${consulta(qProgreso)}`),
+    leerFilasPublicas(`partidas?${consulta(qPartidas)}`),
+  ]);
+  return { progreso, partidas };
+}
+
 // Historial de un apodo: sus partidas, de la más nueva a la más vieja.
 export async function historialDe(apodo, limite = 50) {
   const q = new URLSearchParams({
