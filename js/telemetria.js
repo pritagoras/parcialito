@@ -43,9 +43,10 @@ async function vaciar() {
 }
 
 function observarRendimiento() {
-  try {
-    const nav = performance.getEntriesByType('navigation')[0];
-    if (nav) {
+  const registrarCarga = () => {
+    try {
+      const nav = performance.getEntriesByType('navigation')[0];
+      if (!nav) return;
       const carga = Math.round(nav.loadEventEnd || nav.domContentLoadedEventEnd || nav.duration);
       encolar('page_load', {
         duracion_ms: Number.isFinite(carga) && carga > 0 ? carga : null,
@@ -54,8 +55,10 @@ function observarRendimiento() {
           transfer_size: nav.transferSize || null,
         },
       });
-    }
-  } catch {}
+    } catch {}
+  };
+  if (document.readyState === 'complete') registrarCarga();
+  else window.addEventListener('load', registrarCarga, { once: true });
 
   const observar = (tipo, callback) => {
     try {
@@ -163,6 +166,12 @@ export async function iniciarTelemetria() {
   dispositivoId = idDispositivo();
   if (!dispositivoId) return;
 
+  // Instrumentar antes de la carga inicial para medir también data/index.json.
+  instrumentarFetch();
+  instrumentarErrores();
+  observarRendimiento();
+  instrumentarVistas();
+
   try {
     const perfil = await perfilDispositivo();
     const fila = Object.fromEntries(Object.entries({
@@ -173,15 +182,13 @@ export async function iniciarTelemetria() {
     }).filter(([, valor]) => valor !== null && valor !== undefined));
     await registrarDispositivo(fila);
   } catch {
-    // Si todavía no se ejecutó el SQL o falla la red, no acumular eventos huérfanos.
+    // Si todavía no se ejecutó el SQL o falla la red, descartar eventos huérfanos.
+    dispositivoId = null;
+    cola.length = 0;
     return;
   }
 
   encolar('app_open');
-  instrumentarFetch();
-  instrumentarErrores();
-  observarRendimiento();
-  instrumentarVistas();
 
   window.addEventListener('pagehide', () => {
     encolar('web_vitals', { datos: {
