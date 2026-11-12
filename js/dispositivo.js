@@ -69,34 +69,42 @@ export function idDispositivo() {
 export function infoDispositivo() {
   try {
     const ua = navigator.userAgent || '';
-    const conexion = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
     return {
       navegador: detectarNavegador(ua),
       sistema: detectarSistema(ua),
       tipo_dispositivo: detectarTipo(ua),
       pantalla: `${screen.width}x${screen.height}`,
-      viewport: `${Math.round(innerWidth)}x${Math.round(innerHeight)}`,
-      dpr: Number.isFinite(devicePixelRatio) ? Math.round(devicePixelRatio * 100) / 100 : null,
-      ram_gb: Number.isFinite(navigator.deviceMemory) ? navigator.deviceMemory : null,
-      nucleos: Number.isFinite(navigator.hardwareConcurrency) ? navigator.hardwareConcurrency : null,
-      conexion: String(conexion?.effectiveType || '').slice(0, 20) || null,
-      save_data: typeof conexion?.saveData === 'boolean' ? conexion.saveData : null,
       idioma: String(navigator.language || '').slice(0, 20),
       zona_horaria: String(Intl.DateTimeFormat().resolvedOptions().timeZone || '').slice(0, 60),
       user_agent: ua.slice(0, 300),
-      fabricante: inferirFabricante('', ua),
-      modelo: null,
-      instalada: window.matchMedia?.('(display-mode: standalone)').matches || navigator.standalone === true,
     };
   } catch {
     return {};
   }
 }
 
+function infoCapacidades() {
+  const base = infoDispositivo();
+  const ua = navigator.userAgent || '';
+  const conexion = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+  return {
+    ...base,
+    viewport: `${Math.round(innerWidth)}x${Math.round(innerHeight)}`,
+    dpr: Number.isFinite(devicePixelRatio) ? Math.round(devicePixelRatio * 100) / 100 : null,
+    ram_gb: Number.isFinite(navigator.deviceMemory) ? navigator.deviceMemory : null,
+    nucleos: Number.isFinite(navigator.hardwareConcurrency) ? navigator.hardwareConcurrency : null,
+    conexion: String(conexion?.effectiveType || '').slice(0, 20) || null,
+    save_data: typeof conexion?.saveData === 'boolean' ? conexion.saveData : null,
+    fabricante: inferirFabricante('', ua),
+    modelo: null,
+    instalada: window.matchMedia?.('(display-mode: standalone)').matches || navigator.standalone === true,
+  };
+}
+
 // User-Agent Client Hints puede revelar el modelo en algunos Android/Chromium.
 // Safari/iOS y otros navegadores pueden no exponerlo: en ese caso queda null.
 export async function perfilDispositivo() {
-  const base = infoDispositivo();
+  const base = infoCapacidades();
   try {
     const hints = navigator.userAgentData;
     if (hints?.getHighEntropyValues) {
