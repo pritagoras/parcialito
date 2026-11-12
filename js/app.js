@@ -350,6 +350,21 @@ function dominadasDe(tema) {
   return Object.values(progresoMCDe(tema.id)).filter((dato) => dato?.dominada).length;
 }
 
+function resumenDominioTema(tema) {
+  const preguntas = cache.get(tema.id);
+  const total = preguntas ? preguntas.length : Math.max(0, Number(tema.preguntas) || 0);
+  const dominadas = preguntas
+    ? preguntas.filter((q) => estadoPreguntaMC(q)?.dominada).length
+    : Math.min(total, dominadasDe(tema));
+  return {
+    total,
+    dominadas,
+    pendientes: Math.max(0, total - dominadas),
+    porcentaje: total ? Math.round((dominadas / total) * 100) : 0,
+    completo: total > 0 && dominadas >= total,
+  };
+}
+
 function dominio(materia) {
   if (!materia.temas.length) return 0;
   const suma = materia.temas.reduce((s, t) => s + (estado.mejores[t.id]?.precision || 0), 0);
@@ -1454,6 +1469,7 @@ function vistaMateria(i) {
     const mejor = estado.mejores[t.id];
     const nPreg = t.preguntas || 0;
     const nTarj = t.tarjetas || 0;
+    const dominioTema = resumenDominioTema(t);
 
     let textoDetalle = '';
     if (nPreg > 0 && nTarj > 0) {
@@ -1464,23 +1480,37 @@ function vistaMateria(i) {
       textoDetalle = plural(nPreg, 'pregunta', 'preguntas');
     }
 
-    if (dominadasDe(t)) {
-      textoDetalle += ` · ${dominadasDe(t)} dominadas`;
+    if (dominioTema.dominadas) {
+      textoDetalle += ` · ${dominioTema.dominadas} dominadas`;
     }
 
     // Un tema que solo tiene crucigrama (sin preguntas ni tarjetas) no se muestra como tema: solo su fila de crucigrama
     const soloCruci = tieneCrucigrama(t) && nPreg === 0 && nTarj === 0;
-    const fila = soloCruci ? '' : `
-      <label class="tema" style="--c:${color}">
-        <input type="checkbox" data-n="${n}" checked>
-        <span class="cuerpo">
-          <span class="nombre">${esc(t.nombre)}</span><br>
-          <span class="detalle">${textoDetalle}</span>
-        </span>
-        ${mejor ? `<span class="mejor ${mejor.precision >= 80 ? 'alto' : ''}">Mejor ${mejor.precision}%</span>` : ''}
-      </label>`;
+    if (soloCruci) return '';
 
-    return fila;
+    const barraDominio = nPreg > 0 ? `
+      <span class="tema-progreso" role="progressbar" aria-label="Dominio de ${esc(t.nombre)}" aria-valuemin="0" aria-valuemax="${dominioTema.total}" aria-valuenow="${dominioTema.dominadas}">
+        <span class="tema-progreso-relleno" style="width:${dominioTema.porcentaje}%"></span>
+      </span>
+      <span class="tema-progreso-detalle">${dominioTema.dominadas}/${dominioTema.total} dominadas</span>` : '';
+
+    const acciones = nPreg > 0 ? `
+      <button class="tema-accion-btn tema-accion-todas" type="button" data-practicar-todas="${n}">Practicar todas <span>${nPreg}</span></button>
+      ${dominioTema.pendientes > 0 ? `<button class="tema-accion-btn tema-accion-pendientes" type="button" data-practicar-pendientes="${n}">Practicar no dominadas <span>${dominioTema.pendientes}</span></button>` : ''}` : '';
+
+    return `
+      <div class="tema-item">
+        <label class="tema" style="--c:${color}">
+          <input type="checkbox" data-n="${n}" checked>
+          <span class="cuerpo">
+            <span class="nombre">${esc(t.nombre)} ${dominioTema.completo ? '<span class="coronita" role="img" aria-label="Tema completamente dominado" title="Tema completamente dominado">👑</span>' : ''}</span><br>
+            <span class="detalle">${textoDetalle}</span>
+            ${barraDominio}
+          </span>
+          ${mejor ? `<span class="mejor ${mejor.precision >= 80 ? 'alto' : ''}">Mejor ${mejor.precision}%</span>` : ''}
+        </label>
+        ${nPreg > 0 ? `<button class="tema-abrir" type="button" data-abrir-tema="${n}" aria-expanded="false" aria-label="Abrir opciones de ${esc(t.nombre)}">⌄</button><div class="tema-acciones" data-acciones-tema="${n}" hidden>${acciones}</div>` : ''}
+      </div>`;
   }).join('');
 
   const actividades = actividadesDe(m);
@@ -1539,6 +1569,24 @@ function vistaMateria(i) {
 
     btnTodos.textContent = sel.length === checks.length ? 'Quitar todos' : 'Elegir todos';
   }
+
+  app.querySelectorAll('[data-abrir-tema]').forEach((b) => b.addEventListener('click', () => {
+    const n = Number(b.dataset.abrirTema);
+    const panel = app.querySelector(`[data-acciones-tema="${n}"]`);
+    const abrir = b.getAttribute('aria-expanded') !== 'true';
+    b.setAttribute('aria-expanded', String(abrir));
+    b.textContent = abrir ? '⌃' : '⌄';
+    if (panel) panel.hidden = !abrir;
+    Sonido.clic();
+  }));
+  app.querySelectorAll('[data-practicar-todas]').forEach((b) => b.addEventListener('click', () => {
+    Sonido.clic();
+    lanzarPracticaTema(m, m.temas[Number(b.dataset.practicarTodas)], i, false);
+  }));
+  app.querySelectorAll('[data-practicar-pendientes]').forEach((b) => b.addEventListener('click', () => {
+    Sonido.clic();
+    lanzarPracticaTema(m, m.temas[Number(b.dataset.practicarPendientes)], i, true);
+  }));
 
   checks.forEach((c) => c.addEventListener('change', () => { Sonido.clic(); actualizar(); }));
   app.querySelectorAll('input[name="cantidad"]').forEach((r) =>
@@ -2015,6 +2063,35 @@ async function vistaBancoIPC(m, materiaIndex, autoresIniciales = m.segundoParcia
 }
 
 // ---------- Armado de partidas ----------
+
+async function lanzarPracticaTema(materia, tema, indiceMateria, soloNoDominadas = false) {
+  vistaCargando(soloNoDominadas ? 'Preparando tus preguntas pendientes…' : 'Preparando el tema…');
+  try {
+    const preguntas = await cargarTema(tema, materia);
+    const pool = soloNoDominadas
+      ? preguntas.filter((q) => !estadoPreguntaMC(q)?.dominada)
+      : preguntas;
+
+    if (!pool.length) {
+      vistaMateria(indiceMateria);
+      avisar(soloNoDominadas ? '¡Ya dominaste todas las preguntas de este tema!' : 'Este tema no tiene preguntas disponibles');
+      return;
+    }
+
+    const iniciar = () => lanzarPracticaTema(materia, tema, indiceMateria, soloNoDominadas);
+    empezarJuego(mezclar(pool), {
+      titulo: materia.nombre,
+      temaId: tema.id,
+      ranking: true,
+      materiaNombre: materia.nombre,
+      temaNombre: tema.nombre,
+      repetir: iniciar,
+      volver: () => vistaMateria(indiceMateria),
+    });
+  } catch (e) {
+    vistaError(e);
+  }
+}
 
 async function lanzarTemas(materia, temas, cantidad) {
   vistaCargando('Preparando preguntas…');
