@@ -82,7 +82,7 @@ select
   d.*,
   count(t.id) filter (where t.evento = 'app_open') as visitas,
   round(avg(t.duracion_ms) filter (where t.evento = 'page_load')) as carga_promedio_ms,
-  count(t.id) filter (where t.evento in ('js_error', 'promise_error', 'fetch_error', 'json_error')) as errores,
+  count(t.id) filter (where t.evento in ('js_error', 'promise_error', 'fetch_error', 'json_error', 'resource_error')) as errores,
   max(t.creado) as ultimo_evento
 from public.dispositivos d
 left join public.telemetria_dispositivos t on t.dispositivo_id = d.dispositivo_id
