@@ -13,7 +13,7 @@ import { abrirComparadorDivision } from './comparador-division.js?v=20261028-4';
 import { abrirCalculadoraDivision } from './calculadora-division.js?v=20261030-1';
 import { abrirVisualDivision } from './visual-division.js?v=20261030-1';
 import { abrirLabGametogenesis } from './lab-gametogenesis.js?v=20261101-5';
-import { abrirLabGenetica } from './lab-genetica.js?v=20261107-4';
+import { abrirLabGenetica } from './lab-genetica.js?v=20261111-1';
 
 
 // Parcialito LAB · Factores de transcripción (basales y específicos)
