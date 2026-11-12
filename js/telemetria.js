@@ -1,5 +1,5 @@
 // ==========================================================
-// telemetria.js: perfil anónimo del dispositivo + diagnóstico.
+// telemetria.js: perfil técnico seudónimo del dispositivo + diagnóstico.
 // Los eventos no contienen apodo, respuestas ni texto escrito.
 // ==========================================================
 import { rankingActivo, registrarDispositivo, registrarTelemetria } from './ranking.js?v=20261112-telemetria1';
