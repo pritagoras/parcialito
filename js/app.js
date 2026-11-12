@@ -4,7 +4,7 @@
 // Los datos se leen de data/index.json (lo genera tools/actualizar_indice.py).
 // ==========================================================
 
-import { estado, guardar, hash } from './store.js?v=dev';
+import { estado, guardar, hash } from './store.js?v=20261112-1';
 import { Sonido } from './sonido.js?v=dev';
 import { lanzarConfeti } from './confeti.js?v=dev';
 import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, registrarVisita, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles, comentariosPublicos, guardarComentarioPublico, enviarReporteGeneral, jugadoresPublicos } from './ranking.js?v=20261111-1';
