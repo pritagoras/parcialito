@@ -38,6 +38,8 @@ create index if not exists dispositivos_modelo_idx
 create index if not exists dispositivos_ultima_visita_idx
   on public.dispositivos (ultima_visita desc);
 
+grant insert, update on public.dispositivos to anon;
+
 alter table public.dispositivos enable row level security;
 drop policy if exists "telemetria crear perfil dispositivo" on public.dispositivos;
 create policy "telemetria crear perfil dispositivo" on public.dispositivos
@@ -63,6 +65,9 @@ create index if not exists telemetria_dispositivo_fecha_idx
   on public.telemetria_dispositivos (dispositivo_id, creado desc);
 create index if not exists telemetria_evento_fecha_idx
   on public.telemetria_dispositivos (evento, creado desc);
+
+grant insert on public.telemetria_dispositivos to anon;
+grant usage, select on sequence public.telemetria_dispositivos_id_seq to anon;
 
 alter table public.telemetria_dispositivos enable row level security;
 drop policy if exists "telemetria insertar eventos" on public.telemetria_dispositivos;
