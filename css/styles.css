@@ -1380,3 +1380,7 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
   .barra-ranking .btn { flex:1 1 calc(50% - .55rem); padding:.6rem .7rem; }
   .jugador-stats { grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
+
+
+/* Conteo de preguntas dominadas por tema en el ranking público. */
+.detalle-dominadas { display:block; grid-column:2 / -1; color:var(--texto-suave, #9b91ae); font-size:11px; line-height:1.4; overflow-wrap:anywhere; }
