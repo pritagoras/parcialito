@@ -2528,15 +2528,19 @@ function filasProgreso(preguntas) {
       if (!ids.has(t.id) || vistos.has(t.id)) continue;
       vistos.add(t.id);
       filas.push({
-        apodo: estado.apodo,
-        materia: m.nombre,
-        tema_id: t.id,
-        tema: t.nombre,
-        dominadas: dominadasDe(t),
-        total: t.preguntas,
+        apodo: estado.apodo, materia: m.nombre, tema_id: t.id, tema: t.nombre,
+        dominadas: dominadasDe(t), total: t.preguntas,
         mejor_precision: estado.mejores[t.id]?.precision || 0,
       });
     }
+  }
+  if (ids.has(MEGACLASE_TEMA_ID) && !vistos.has(MEGACLASE_TEMA_ID)) {
+    filas.push({
+      apodo: estado.apodo, materia: 'Biología 2', tema_id: MEGACLASE_TEMA_ID,
+      tema: 'Megaclase de repaso · Segundo parcial 2026 · Maru',
+      dominadas: Math.min(dominadasDe({ id: MEGACLASE_TEMA_ID }), MEGACLASE_TOTAL),
+      total: MEGACLASE_TOTAL, mejor_precision: estado.mejores[MEGACLASE_TEMA_ID]?.precision || 0,
+    });
   }
   return filas;
 }
@@ -2701,6 +2705,16 @@ function catalogoTemasPublicados() {
       porId.set(t.id, dato);
       porNombre.set(claveTema(m.nombre, t.nombre), dato);
     }
+  }
+  // Banco externo de Maru, integrado a Biología 2 para perfiles y ranking.
+  if (!porId.has(MEGACLASE_TEMA_ID)) {
+    const dato = {
+      id: MEGACLASE_TEMA_ID, materia: 'Biología 2',
+      tema: 'Megaclase de repaso · Segundo parcial 2026 · Maru',
+      preguntas: MEGACLASE_TOTAL,
+    };
+    porId.set(MEGACLASE_TEMA_ID, dato);
+    porNombre.set(claveTema(dato.materia, dato.tema), dato);
   }
   return { lista: [...porId.values()], porId, porNombre };
 }
@@ -2903,7 +2917,7 @@ function vistaRanking(iMateria = 0, tema = '') {
         <select id="sel-tema">
           <option value="">Todos</option>
           <option value="Varios temas" ${tema === 'Varios temas' ? 'selected' : ''}>Varios temas (mezclados)</option>
-          ${m.temas.map((t) => `<option value="${esc(t.nombre)}" ${t.nombre === tema ? 'selected' : ''}>${esc(t.nombre)}</option>`).join('')}
+          ${[...(m.temas || []), ...(m.segundoParcial?.autores || []), ...(m.id === 'biologia-celular2' ? [{ nombre: 'Megaclase de repaso · Segundo parcial 2026 · Maru' }] : [])].map((t) => `<option value="${esc(t.nombre)}" ${t.nombre === tema ? 'selected' : ''}>${esc(t.nombre)}</option>`).join('')}
         </select>
       </label>
       <p class="nota-ranking">Se muestra la mejor partida de cada apodo, ordenada por puntos.</p>
@@ -2931,7 +2945,8 @@ function vistaRanking(iMateria = 0, tema = '') {
       <li class="${estado.apodo && f.apodo.toLowerCase() === estado.apodo.toLowerCase() ? 'yo' : ''}">
         <span class="pos">${n + 1}</span>
         <button class="nombre-jugador" data-apodo="${esc(f.apodo)}">${esc(f.apodo)}</button>
-        <span class="detalle-fila">${esc(f.tema)} · ${f.aciertos}/${f.total}</span>
+        <span class="detalle-fila">${esc(f.tema)} · ${f.total ? `${f.aciertos}/${f.total}` : 'progreso registrado'}</span>
+        ${f.dominioTemas?.length ? `<span class="detalle-dominadas">${f.dominioTemas.map((d) => `${esc(d.tema)}: ${d.dominadas}/${d.total} dominadas`).join(' · ')}</span>` : ''}
         <b class="pts">${f.puntos}</b>
       </li>`).join('')}</ol>`;
     caja.querySelectorAll('.nombre-jugador').forEach((b) =>
