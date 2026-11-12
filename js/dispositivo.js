@@ -37,6 +37,24 @@ function detectarTipo(ua) {
   return 'escritorio';
 }
 
+function modeloDesdeUA(ua) {
+  const reglas = [
+    /(SM-[A-Z0-9]+)/i,
+    /(motorola moto [^;)]+)/i,
+    /(moto [a-z0-9 +()-]{2,30})/i,
+    /(Redmi [^;)]+)/i,
+    /(POCO [^;)]+)/i,
+    /(Pixel [^;)]+)/i,
+    /(CPH\\d{4})/i,
+    /(V\\d{4}[A-Z]?)/i,
+  ];
+  for (const regla of reglas) {
+    const m = String(ua || '').match(regla);
+    if (m) return m[1].trim().slice(0, 100);
+  }
+  return null;
+}
+
 function inferirFabricante(modelo, ua) {
   const s = `${modelo || ''} ${ua || ''}`.toLowerCase();
   if (/iphone|ipad/.test(s)) return 'Apple';
@@ -111,7 +129,7 @@ export async function perfilDispositivo() {
       const extra = await hints.getHighEntropyValues([
         'model', 'platformVersion', 'architecture', 'bitness', 'fullVersionList',
       ]);
-      const modelo = String(extra.model || '').trim().slice(0, 100) || null;
+      const modelo = String(extra.model || '').trim().slice(0, 100) || modeloDesdeUA(base.user_agent);
       base.modelo = modelo;
       base.fabricante = inferirFabricante(modelo, base.user_agent) || base.fabricante;
       if (extra.platformVersion) base.version_plataforma = String(extra.platformVersion).slice(0, 30);
@@ -122,6 +140,7 @@ export async function perfilDispositivo() {
         if (navegador?.version) base.version_navegador = String(navegador.version).slice(0, 30);
       }
     }
+    if (!base.modelo) base.modelo = modeloDesdeUA(base.user_agent);
     if (!base.modelo && /iPhone|iPad/.test(base.user_agent)) {
       base.fabricante = 'Apple';
       base.modelo = /iPad/.test(base.user_agent) ? 'iPad (modelo no expuesto por Safari)' : 'iPhone (modelo no expuesto por Safari)';
