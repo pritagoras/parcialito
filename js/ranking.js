@@ -99,12 +99,40 @@ export async function rankingMateria(materia, tema = null, limite = 20) {
     limit: '500',
   });
   if (tema) q.set('tema', `eq.${tema}`);
-  const filas = (await pedir(`partidas?${consulta(q)}`)) || [];
-
-  const mejores = new Map();   // ya vienen ordenadas: la primera de cada apodo es su mejor
-  for (const f of filas) {
-    const clave = f.apodo.toLowerCase();
-    if (!mejores.has(clave)) mejores.set(clave, f);
+  const qp = new URLSearchParams({
+    select: 'apodo,materia,tema_id,tema,dominadas,total,creado',
+    materia: `eq.${materia}`,
+    order: 'creado.desc',
+    limit: '5000',
+  });
+  const [filas, progreso] = await Promise.all([
+    pedir(`partidas?${consulta(q)}`),
+    pedir(`progreso_temas?${consulta(qp)}`),
+  ]);
+  const mejores = new Map();
+  for (const f of (filas || [])) {
+    const clave = f.apodo.toLocaleLowerCase('es');
+    if (!mejores.has(clave)) mejores.set(clave, { ...f, dominioTemas: [] });
+  }
+  const porJugador = new Map();
+  for (const p of (progreso || [])) {
+    if (tema && p.tema !== tema) continue;
+    const clave = String(p.apodo || '').toLocaleLowerCase('es');
+    if (!clave) continue;
+    if (!porJugador.has(clave)) porJugador.set(clave, new Map());
+    const temas = porJugador.get(clave);
+    const idTema = p.tema_id || p.tema;
+    if (!temas.has(idTema)) temas.set(idTema, {
+      tema: p.tema, dominadas: Number(p.dominadas) || 0, total: Number(p.total) || 0,
+    });
+    if (!mejores.has(clave)) mejores.set(clave, {
+      apodo: p.apodo, tema: p.tema, aciertos: 0, total: 0,
+      puntos: 0, racha_max: 0, creado: p.creado, dominioTemas: [],
+    });
+  }
+  for (const [clave, f] of mejores) {
+    f.dominioTemas = [...(porJugador.get(clave)?.values() || [])]
+      .sort((a, b) => a.tema.localeCompare(b.tema, 'es'));
   }
   return [...mejores.values()].slice(0, limite);
 }
