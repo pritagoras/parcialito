@@ -17,6 +17,7 @@ y funciona como app instalable (PWA). No hay build: es HTML + JS en módulos + J
 | `probar.bat` | Prueba la app en tu compu (servidor local + navegador) |
 | `tools/` | Validador, generador de índice, iconos, versionado y SQL de Supabase |
 | `PROMPT_PARA_LM.md`, `PROMPT_LAB_PARA_LM.md` | Prompts para generar preguntas y laboratorios con un LM |
+| `backups/` | Material guardado que no se muestra en la app (IPC 2 y Semiología 2); ver `backups/README.md` |
 
 ## Agregar o modificar contenido
 

@@ -1,45 +1,18 @@
 // Banco consultable por tema: muestra todas las preguntas sin alterar el modo de juego.
+// Se abre desde la sección "Banco de preguntas" que está abajo de todo en cada materia (js/app.js):
+//   window.ParcialitoBanco.abrir(tema, materia)
 (() => {
   const LETRAS = ['A', 'B', 'C', 'D'];
-  let indicePromise;
 
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   }[c]));
-
-  function cargarIndice() {
-    if (!indicePromise) {
-      indicePromise = fetch('data/index.json', { cache: 'no-cache' }).then(r => {
-        if (!r.ok) throw new Error('No se pudo cargar el índice de temas.');
-        return r.json();
-      });
-    }
-    return indicePromise;
-  }
 
   function instalarEstilos() {
     if (document.getElementById('estilos-banco-tema')) return;
     const style = document.createElement('style');
     style.id = 'estilos-banco-tema';
     style.textContent = `
-      .btn-ver-banco-tema {
-        display:flex; align-items:center; width:calc(100% - 3.1rem); max-width:100%;
-        min-width:0; margin:-.3rem 0 .15rem 3.1rem; padding:.38rem .65rem;
-        border:1px solid rgba(184,171,219,.14); border-radius:9px;
-        background:rgba(35,24,69,.34); color:var(--tenue, #B8ABDB);
-        font:500 .78rem/1.35 var(--fuente, Inter, system-ui, sans-serif);
-        text-align:left; cursor:pointer; transition:background-color .15s,border-color .15s,color .15s;
-      }
-      .btn-ver-banco-tema:hover {
-        background:rgba(46,32,88,.52); border-color:rgba(184,171,219,.28);
-        color:var(--crema, #FFF3DC);
-      }
-      .btn-ver-banco-tema:focus-visible {
-        outline:2px solid rgba(155,123,255,.65); outline-offset:2px; border-radius:9px;
-      }
-      @media(max-width:480px) {
-        .btn-ver-banco-tema { width:calc(100% - 2.8rem); margin-left:2.8rem; padding:.42rem .6rem; }
-      }
       .banco-tema-dialog { width:min(760px,calc(100vw - 24px)); max-width:760px; max-height:88dvh; padding:0; border:1px solid rgba(155,123,255,.45); border-radius:18px; color:#FFF3DC; background:#170F2E; box-shadow:0 20px 70px #0009; }
       .banco-tema-dialog::backdrop { background:rgba(8,5,18,.78); backdrop-filter:blur(3px); }
       .banco-tema-cabeza { position:sticky; top:0; z-index:2; padding:18px; background:#211845; border-bottom:1px solid #ffffff20; }
@@ -159,41 +132,6 @@
     });
   }
 
-  let programando = false;
-  function mejorarPantalla() {
-    if (programando) return;
-    programando = true;
-    queueMicrotask(async () => {
-      programando = false;
-      const titulo = document.querySelector('.titulo-materia h1');
-      const contenedor = document.querySelector('main.pantalla .temas');
-      if (!titulo || !contenedor) return;
-      // Los estilos deben existir antes de insertar los botones; de lo contrario
-      // el navegador muestra el aspecto nativo blanco/celeste del elemento button.
-      instalarEstilos();
-      try {
-        const indice = await cargarIndice();
-        const materia = indice.materias.find(m => m.nombre === titulo.textContent.trim());
-        if (!materia) return;
-        contenedor.querySelectorAll('label.tema input[data-n]').forEach(input => {
-          const fila = input.closest('label.tema');
-          if (!fila || fila.nextElementSibling?.classList.contains('btn-ver-banco-tema')) return;
-          const tema = materia.temas[Number(input.dataset.n)];
-          if (!tema || !(tema.preguntas > 0)) return;
-          const boton = document.createElement('button');
-          boton.type = 'button';
-          boton.className = 'btn-ver-banco-tema';
-          boton.textContent = 'Ver todas las preguntas · ' + tema.preguntas;
-          boton.addEventListener('click', () => abrirDialogo(tema, materia));
-          fila.insertAdjacentElement('afterend', boton);
-        });
-      } catch (e) {
-        console.warn('[Banco por tema]', e);
-      }
-    });
-  }
-
-  const observer = new MutationObserver(mejorarPantalla);
-  observer.observe(document.getElementById('app') || document.body, { childList: true, subtree: true });
-  mejorarPantalla();
+  // Las materias lo usan para abrir el banco de un tema.
+  window.ParcialitoBanco = { abrir: abrirDialogo };
 })();
