@@ -114,12 +114,7 @@ async function leerFilasPublicas(ruta, maxFilas = 20000) {
   const bloque = 1000;
   const filas = [];
   for (let desde = 0; desde < maxFilas; desde += bloque) {
-    const pagina = (await pedir(ruta, {
-      headers: {
-        Range: `${desde}-${desde + bloque - 1}`,
-        'Range-Unit': 'items',
-      },
-    })) || [];
+    const pagina = (await pedir(`${ruta}&limit=${bloque}&offset=${desde}`)) || [];
     filas.push(...pagina);
     if (pagina.length < bloque) break;
   }
