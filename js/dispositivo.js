@@ -45,8 +45,8 @@ function modeloDesdeUA(ua) {
     /(Redmi [^;)]+)/i,
     /(POCO [^;)]+)/i,
     /(Pixel [^;)]+)/i,
-    /(CPH\\d{4})/i,
-    /(V\\d{4}[A-Z]?)/i,
+    /(CPH\d{4})/i,
+    /(V\d{4}[A-Z]?)/i,
   ];
   for (const regla of reglas) {
     const m = String(ua || '').match(regla);
@@ -73,9 +73,17 @@ export function idDispositivo() {
   try {
     let id = localStorage.getItem('parcialito_dispositivo_id');
     if (!id) {
-      id = crypto.randomUUID
-        ? crypto.randomUUID()
-        : `d-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 14)}`;
+      if (crypto.randomUUID) {
+        id = crypto.randomUUID();
+      } else {
+        const bytes = new Uint8Array(16);
+        if (crypto.getRandomValues) crypto.getRandomValues(bytes);
+        else for (let i = 0; i < bytes.length; i++) bytes[i] = Math.floor(Math.random() * 256);
+        bytes[6] = (bytes[6] & 0x0f) | 0x40;
+        bytes[8] = (bytes[8] & 0x3f) | 0x80;
+        const hex = [...bytes].map(x => x.toString(16).padStart(2, '0')).join('');
+        id = `${hex.slice(0, 8)}-${hex.slice(8, 12)}-${hex.slice(12, 16)}-${hex.slice(16, 20)}-${hex.slice(20)}`;
+      }
       localStorage.setItem('parcialito_dispositivo_id', id);
     }
     return id;
