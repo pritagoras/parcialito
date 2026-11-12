@@ -9,6 +9,7 @@ import { Sonido } from './sonido.js?v=dev';
 import { lanzarConfeti } from './confeti.js?v=dev';
 import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, registrarVisita, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles, comentariosPublicos, guardarComentarioPublico, enviarReporteGeneral, jugadoresPublicos } from './ranking.js?v=20261112-2';
 import { infoDispositivo } from './dispositivo.js?v=dev';
+import { iniciarTelemetria } from './telemetria.js?v=20261112-telemetria1';
 import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js?v=dev';
 import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js?v=dev';
 import { abrirHorquilla, TITULO as TITULO_HORQUILLA } from './horquilla.js?v=dev';
@@ -3076,4 +3077,5 @@ async function iniciar() {
 }
 
 anotarEntrada();
+iniciarTelemetria().catch(() => {});
 iniciar();
