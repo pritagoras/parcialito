@@ -192,6 +192,106 @@ h1, h2, h3, p { margin: 0; }
 }
 .tema .mejor.alto { color: var(--ok); }
 
+/* Dominio por tema: barra verde y acceso a las dos modalidades de práctica. */
+.tema-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: stretch;
+  gap: .45rem;
+}
+.tema-item .tema { min-width: 0; }
+.tema .coronita {
+  display: inline-block;
+  margin-left: .2rem;
+  color: #E5B94F;
+  font-size: .95em;
+  vertical-align: .02em;
+  filter: drop-shadow(0 1px 2px rgba(229,185,79,.2));
+}
+.tema-progreso {
+  display: block;
+  width: 100%;
+  height: 6px;
+  margin-top: .55rem;
+  overflow: hidden;
+  border-radius: 99px;
+  background: rgba(255,255,255,.09);
+}
+.tema-progreso-relleno {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--ok, #4FE0A0);
+  transition: width .25s ease;
+}
+.tema-progreso-detalle {
+  display: block;
+  margin-top: .22rem;
+  color: var(--tenue);
+  font-size: .76rem;
+  line-height: 1.25;
+}
+.tema-abrir {
+  align-self: stretch;
+  min-width: 2.7rem;
+  padding: .5rem;
+  border: 2px solid var(--linea);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--crema);
+  font: inherit;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+.tema-abrir:hover,
+.tema-abrir[aria-expanded="true"] {
+  border-color: var(--violeta);
+  background: var(--panel-2);
+}
+.tema-acciones {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .55rem;
+  padding: .65rem;
+  margin-top: -.1rem;
+  border: 1px solid var(--linea);
+  border-radius: 12px;
+  background: var(--panel-2);
+}
+.tema-acciones[hidden] { display: none !important; }
+.tema-accion-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  min-height: 2.8rem;
+  padding: .65rem .75rem;
+  border: 1px solid var(--linea);
+  border-radius: 10px;
+  background: var(--panel);
+  color: var(--crema);
+  font: 600 .88rem/1.25 Inter, system-ui, sans-serif;
+  text-align: left;
+  cursor: pointer;
+}
+.tema-accion-btn span {
+  flex: none;
+  color: var(--tenue);
+  font-size: .8rem;
+  font-variant-numeric: tabular-nums;
+}
+.tema-accion-pendientes {
+  border-color: rgba(79,224,160,.45);
+}
+.tema-accion-pendientes span { color: var(--ok); }
+@media (max-width: 520px) {
+  .tema-item { gap: .35rem; }
+  .tema-item .tema { gap: .6rem; padding: .8rem .7rem; }
+  .tema-acciones { grid-template-columns: 1fr; }
+  .tema-accion-btn { min-height: 2.65rem; }
+}
+
 .pie-fijo {
   position: fixed; left: 0; right: 0; bottom: 0;
   padding: .9rem 1rem calc(.9rem + env(safe-area-inset-bottom));
