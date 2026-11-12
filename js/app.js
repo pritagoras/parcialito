@@ -1494,10 +1494,6 @@ function vistaMateria(i) {
       </span>
       <span class="tema-progreso-detalle">${dominioTema.dominadas}/${dominioTema.total} dominadas</span>` : '';
 
-    const acciones = nPreg > 0 ? `
-      <button class="tema-accion-btn tema-accion-todas" type="button" data-practicar-todas="${n}">Practicar todas <span>${nPreg}</span></button>
-      ${dominioTema.pendientes > 0 ? `<button class="tema-accion-btn tema-accion-pendientes" type="button" data-practicar-pendientes="${n}">Practicar no dominadas <span>${dominioTema.pendientes}</span></button>` : ''}` : '';
-
     return `
       <div class="tema-item">
         <label class="tema" style="--c:${color}">
@@ -1509,7 +1505,10 @@ function vistaMateria(i) {
           </span>
           ${mejor ? `<span class="mejor ${mejor.precision >= 80 ? 'alto' : ''}">Mejor ${mejor.precision}%</span>` : ''}
         </label>
-        ${nPreg > 0 ? `<button class="tema-abrir" type="button" data-abrir-tema="${n}" aria-expanded="false" aria-label="Abrir opciones de ${esc(t.nombre)}">⌄</button><div class="tema-acciones" data-acciones-tema="${n}" hidden>${acciones}</div>` : ''}
+        ${nPreg > 0 ? `<div class="tema-practicas">
+          ${dominioTema.pendientes > 0 ? `<button type="button" class="tema-practica-link" data-practicar-pendientes="${n}">Practicar no dominadas <span>${dominioTema.pendientes}</span></button>` : '<span class="tema-practica-completo">Todas dominadas</span>'}
+          <button type="button" class="tema-practica-link" data-practicar-todas="${n}">Practicar todas <span>${nPreg}</span></button>
+        </div>` : ''}
       </div>`;
   }).join('');
 
@@ -1529,6 +1528,18 @@ function vistaMateria(i) {
         <button class="btn enlace" id="btn-todos"></button>
       </div>
       <div class="temas">${filas}</div>
+      <section class="banco-materia" aria-labelledby="banco-materia-titulo">
+        <div class="banco-materia-cabecera">
+          <h2 id="banco-materia-titulo">Banco de preguntas</h2>
+          <p>Consultá preguntas, opciones y respuestas correctas por tema.</p>
+        </div>
+        <div class="banco-materia-temas" id="banco-materia-temas">
+          ${m.temas.map((t,n)=>tieneCrucigrama(t) && !(t.preguntas>0) ? '' : `<button type="button" class="banco-materia-tema" data-banco-tema="${n}"><span>${esc(t.nombre)}</span><small>${t.preguntas||0} preguntas</small></button>`).join('')}
+        </div>
+        <div class="banco-materia-contenido" id="banco-materia-contenido" aria-live="polite">
+          <p class="banco-materia-vacio">Elegí un tema para consultar sus preguntas.</p>
+        </div>
+      </section>
     </main>
     <div class="pie-fijo">
       <div class="interior">
@@ -1570,15 +1581,6 @@ function vistaMateria(i) {
     btnTodos.textContent = sel.length === checks.length ? 'Quitar todos' : 'Elegir todos';
   }
 
-  app.querySelectorAll('[data-abrir-tema]').forEach((b) => b.addEventListener('click', () => {
-    const n = Number(b.dataset.abrirTema);
-    const panel = app.querySelector(`[data-acciones-tema="${n}"]`);
-    const abrir = b.getAttribute('aria-expanded') !== 'true';
-    b.setAttribute('aria-expanded', String(abrir));
-    b.textContent = abrir ? '⌃' : '⌄';
-    if (panel) panel.hidden = !abrir;
-    Sonido.clic();
-  }));
   app.querySelectorAll('[data-practicar-todas]').forEach((b) => b.addEventListener('click', () => {
     Sonido.clic();
     lanzarPracticaTema(m, m.temas[Number(b.dataset.practicarTodas)], i, false);
@@ -1588,6 +1590,42 @@ function vistaMateria(i) {
     lanzarPracticaTema(m, m.temas[Number(b.dataset.practicarPendientes)], i, true);
   }));
 
+  const bancoTemas = app.querySelector('#banco-materia-temas');
+  const bancoContenido = app.querySelector('#banco-materia-contenido');
+  let bancoActual = { preguntas: [], indice: 0, tema: null };
+  function pintarPreguntaBanco() {
+    const q = bancoActual.preguntas[bancoActual.indice];
+    if (!q) return;
+    bancoContenido.innerHTML = `
+      <article class="banco-materia-pregunta">
+        <div class="banco-materia-meta"><span>${esc(bancoActual.tema.nombre)}</span><span>${bancoActual.indice+1} / ${bancoActual.preguntas.length}</span></div>
+        <h3>${esc(q.texto)}</h3>
+        ${q.imagen ? `<figure class="banco-materia-imagen"><img src="${esc(q.imagen)}" alt="${esc(q.imagenAlt)}" loading="lazy"></figure>` : ''}
+        <ol class="banco-materia-opciones">
+          ${q.opciones.map((op,n)=>`<li class="${n===q.correcta?'correcta':''}"><span>${LETRAS[n]}.</span><span>${esc(op)}</span>${n===q.correcta?'<b>Correcta</b>':''}</li>`).join('')}
+        </ol>
+        ${q.explicacion ? `<div class="banco-materia-justificacion"><strong>Justificación</strong><p>${esc(q.explicacion)}</p></div>` : '<p class="banco-materia-sin-justificacion">No hay justificación cargada para esta pregunta.</p>'}
+        <div class="banco-materia-navegacion">
+          <button type="button" class="banco-materia-nav" data-banco-anterior ${bancoActual.indice===0?'disabled':''}>← Anterior</button>
+          <button type="button" class="banco-materia-nav" data-banco-siguiente ${bancoActual.indice===bancoActual.preguntas.length-1?'disabled':''}>Siguiente →</button>
+        </div>
+      </article>`;
+    bancoContenido.querySelector('[data-banco-anterior]')?.addEventListener('click',()=>{bancoActual.indice--;pintarPreguntaBanco();});
+    bancoContenido.querySelector('[data-banco-siguiente]')?.addEventListener('click',()=>{bancoActual.indice++;pintarPreguntaBanco();});
+  }
+  bancoTemas?.querySelectorAll('[data-banco-tema]').forEach((b)=>b.addEventListener('click',async()=>{
+    const tema=m.temas[Number(b.dataset.bancoTema)];
+    bancoTemas.querySelectorAll('.banco-materia-tema').forEach(x=>x.classList.toggle('activo',x===b));
+    bancoContenido.innerHTML='<p class="banco-materia-vacio">Cargando preguntas…</p>';
+    try {
+      const preguntas=await cargarTema(tema,m);
+      bancoActual={preguntas,indice:0,tema};
+      if(!preguntas.length){bancoContenido.innerHTML='<p class="banco-materia-vacio">Este tema no tiene preguntas disponibles.</p>';return;}
+      pintarPreguntaBanco();
+    } catch(e) {
+      bancoContenido.innerHTML=`<p class="banco-materia-error">No se pudo cargar el banco: ${esc(e.message||e)}</p>`;
+    }
+  }));
   checks.forEach((c) => c.addEventListener('change', () => { Sonido.clic(); actualizar(); }));
   app.querySelectorAll('input[name="cantidad"]').forEach((r) =>
     r.addEventListener('change', () => { estado.cantidad = cantidadElegida(); guardar(); Sonido.clic(); actualizar(); }));
