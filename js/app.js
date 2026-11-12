@@ -8,7 +8,7 @@ import { estado, guardar, hash } from './store.js?v=20261112-1';
 import { Sonido } from './sonido.js?v=dev';
 import { lanzarConfeti } from './confeti.js?v=dev';
 import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, registrarVisita, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles, comentariosPublicos, guardarComentarioPublico, enviarReporteGeneral, jugadoresPublicos } from './ranking.js?v=20261112-telemetria1';
-import { infoDispositivo } from './dispositivo.js?v=20261112-telemetria1';
+import { infoDispositivo, perfilDispositivo } from './dispositivo.js?v=20261112-visitas-modelo1';
 import { iniciarTelemetria } from './telemetria.js?v=20261112-telemetria1';
 import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js?v=dev';
 import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js?v=dev';
@@ -2666,15 +2666,23 @@ function idVisitante() {
 }
 
 // evento: 'entrada' (abrió la página) o 'apodo' (eligió o cambió su apodo: vincula el ID con el nombre).
-function anotarVisita(evento) {
+async function anotarVisita(evento) {
   if (!rankingActivo()) return;
   const visitante = idVisitante();
   if (!visitante) return;
+  let perfil = {};
+  try {
+    perfil = await perfilDispositivo();
+  } catch (_) {
+    // Si el navegador no expone el modelo, se registra la visita igualmente.
+  }
   registrarVisita({
     visitante,
     apodo: estado.apodo || null,
     evento,
     ...infoDispositivo(),
+    fabricante: perfil.fabricante || null,
+    modelo: perfil.modelo || null,
   }).catch(() => {});
 }
 
