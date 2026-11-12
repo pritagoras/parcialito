@@ -1,7 +1,7 @@
 -- ==========================================================
 -- TELEMETRÍA DE DISPOSITIVOS PARA PARCIALITO
 -- Ejecutar una sola vez (o volver a ejecutar: es idempotente).
--- Crea un perfil técnico por navegador/dispositivo y un historial
+-- Crea un perfil técnico seudónimo por navegador/dispositivo y un historial
 -- separado de eventos de rendimiento/errores/uso.
 -- No guarda apodos, IP, GPS, IMEI ni número de serie.
 -- ==========================================================
