@@ -252,6 +252,25 @@ h1, h2, h3, p { margin: 0; }
   border-radius: var(--radio);
   margin-bottom: 1rem;
 }
+
+/* Estado de dominio personal de cada pregunta MC. */
+.tarjeta-pregunta.pregunta-dominada { border-color: rgba(79, 224, 160, .52); }
+.tarjeta-pregunta.pregunta-practica { border-color: rgba(255, 185, 56, .48); }
+.estado-pregunta {
+  display: flex; align-items: center; gap: .45rem;
+  width: fit-content; max-width: 100%;
+  margin: 0 0 .8rem auto;
+  padding: .3rem .58rem;
+  border: 1px solid var(--linea);
+  border-radius: 999px;
+  font-size: .72rem; font-weight: 800; line-height: 1.2;
+}
+.estado-punto { width: .48rem; height: .48rem; flex: none; border-radius: 50%; }
+.estado-pregunta-dominada { color: var(--ok); border-color: rgba(79, 224, 160, .35); background: rgba(79, 224, 160, .07); }
+.estado-pregunta-dominada .estado-punto { background: var(--ok); }
+.estado-pregunta-practica { color: #D9A13B; border-color: rgba(255, 185, 56, .32); background: rgba(255, 185, 56, .06); }
+.estado-pregunta-practica .estado-punto { background: #D9A13B; }
+.estado-pregunta small { margin-left: .15rem; color: var(--tenue); font-size: .68rem; font-weight: 600; }
 .tarjeta-pregunta .tema-etq { color: var(--tenue); font-size: .92rem; margin-bottom: .5rem; }
 .pregunta { font-size: clamp(1.25rem, 4.4vw, 1.6rem); font-weight: 700; line-height: 1.3; max-width: 38em; }
 .tarjeta-pregunta.tiembla { animation: tiembla .4s ease; }
