@@ -958,20 +958,33 @@ async function cargarPrimerParcial() {
     throw new Error(`El banco original del Primer parcial declara ${tema.preguntas} preguntas, pero se cargaron ${originales.length}.`);
   }
 
-  // Banco adicional independiente: se puede retirar sin modificar el JSON original.
-  const temaExtra = {
-    id: 'biologia-celular/mix-adicional-primer-parcial',
-    nombre: 'Preguntas adicionales del Primer parcial',
-    archivo: 'data/biologia-celular/16-mix-adicional-primer-parcial.json',
-    preguntas: 40,
-  };
-  const adicionales = await cargarTema(temaExtra, materia);
-  if (adicionales.length !== temaExtra.preguntas) {
-    throw new Error(`El banco adicional declara ${temaExtra.preguntas} preguntas, pero se cargaron ${adicionales.length}.`);
-  }
+  // Bancos adicionales independientes: se pueden retirar sin modificar el JSON original.
+  const temasExtra = [
+    {
+      id: 'biologia-celular/mix-adicional-primer-parcial',
+      nombre: 'Preguntas adicionales del Primer parcial · Lote 1',
+      archivo: 'data/biologia-celular/16-mix-adicional-primer-parcial.json',
+      preguntas: 40,
+    },
+    {
+      id: 'biologia-celular/mix-adicional-primer-parcial-2',
+      nombre: 'Preguntas adicionales del Primer parcial · Lote 2',
+      archivo: 'data/biologia-celular/17-mix-adicional-primer-parcial.json',
+      preguntas: 50,
+    },
+  ];
   const ids = new Set(originales.map((q) => q.id));
-  if (adicionales.some((q) => ids.has(q.id))) {
-    throw new Error('El banco adicional contiene identificadores repetidos con el banco original.');
+  const adicionales = [];
+  for (const temaExtra of temasExtra) {
+    const lote = await cargarTema(temaExtra, materia);
+    if (lote.length !== temaExtra.preguntas) {
+      throw new Error(`El banco adicional ${temaExtra.archivo} declara ${temaExtra.preguntas} preguntas, pero se cargaron ${lote.length}.`);
+    }
+    if (lote.some((q) => ids.has(q.id))) {
+      throw new Error(`El banco adicional ${temaExtra.archivo} contiene identificadores repetidos con otro lote del Primer parcial.`);
+    }
+    for (const q of lote) ids.add(q.id);
+    adicionales.push(...lote);
   }
   const pool = [...originales, ...adicionales];
   primerParcialPool = pool;
