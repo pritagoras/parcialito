@@ -7,9 +7,9 @@
 import { estado, guardar, hash } from './store.js?v=20261112-1';
 import { Sonido } from './sonido.js?v=dev';
 import { lanzarConfeti } from './confeti.js?v=dev';
-import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, registrarVisita, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles, comentariosPublicos, guardarComentarioPublico, enviarReporteGeneral, jugadoresPublicos } from './ranking.js?v=20261112-telemetria1';
-import { infoDispositivo, perfilDispositivo } from './dispositivo.js?v=20261112-visitas-modelo1';
-import { iniciarTelemetria } from './telemetria.js?v=20261112-telemetria1';
+import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, registrarVisita, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles, comentariosPublicos, guardarComentarioPublico, enviarReporteGeneral, jugadoresPublicos } from './ranking.js?v=20261112-dispositivos2';
+import { idDispositivo, infoDispositivo, perfilDispositivo } from './dispositivo.js?v=20261112-dispositivos2';
+import { iniciarTelemetria } from './telemetria.js?v=20261112-dispositivos2';
 import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js?v=dev';
 import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js?v=dev';
 import { abrirHorquilla, TITULO as TITULO_HORQUILLA } from './horquilla.js?v=dev';
@@ -2261,6 +2261,7 @@ function vistaResultado() {
       total,
       puntos: j.puntos,
       racha_max: j.mejorRacha,
+      dispositivo_id: idDispositivo(),
       ...infoDispositivo(),
     }).catch(() => {});
   }
@@ -2308,6 +2309,7 @@ async function anotarVisita(evento) {
   }
   registrarVisita({
     visitante,
+    dispositivo_id: idDispositivo(),
     apodo: estado.apodo || null,
     evento,
     ...infoDispositivo(),
