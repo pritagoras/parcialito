@@ -10,6 +10,7 @@ import { lanzarConfeti } from './confeti.js?v=dev';
 import { rankingActivo, limpiarApodo, guardarPartida, guardarProgreso, registrarSesion, registrarVisita, rankingMateria, historialDe, progresoDe, registrarIntentos, enviarReporte, dificultadDe, preguntasDificiles, comentariosPublicos, guardarComentarioPublico, enviarReporteGeneral, jugadoresPublicos } from './ranking.js?v=20261112-dispositivos3';
 import { idDispositivo, infoDispositivo, perfilDispositivo } from './dispositivo.js?v=20261112-dispositivos3';
 import { iniciarTelemetria } from './telemetria.js?v=20261112-dispositivos4';
+import { iniciarActividad, registrarEventoActividad, idSesionActividad } from './actividad.js?v=20261113-1';
 import { abrirReplicacion, TITULO as TITULO_REPLICACION } from './replicacion.js?v=dev';
 import { abrirCuadro, TITULO as TITULO_CUADRO } from './cuadro.js?v=dev';
 import { abrirHorquilla, TITULO as TITULO_HORQUILLA } from './horquilla.js?v=dev';
@@ -1779,6 +1780,7 @@ function empezarJuego(pool, meta) {
     avisar('No hay preguntas para jugar');
     return;
   }
+  registrarEventoActividad('juego_inicio', { materia: meta.materiaNombre || meta.titulo, tema: meta.temaNombre, modo: meta.ranking ? 'ronda' : 'repaso', total_preguntas: pool.length });
   cargarDificultad(pool.map((q) => q.id));
   juego = {
     meta,
@@ -1810,6 +1812,7 @@ function empezarJuego(pool, meta) {
     if (window.confirm('¿Salir de la partida? Se pierde el progreso de esta ronda.')) {
       Sonido.clic();
       const volver = juego.meta.volver;
+      registrarEventoActividad('juego_abandono', { materia: juego.meta.materiaNombre || juego.meta.titulo, tema: juego.meta.temaNombre, modo: juego.meta.ranking ? 'ronda' : 'repaso', total_preguntas: juego.preguntas.length, datos: { respondidas: juego.intentos.length } });
       enviarIntentos(juego);
       juego = null;
       volver();
@@ -1894,6 +1897,7 @@ function reaccionMascota(acerto, hito) {
 function mostrarPregunta() {
   const j = juego;
   const q = j.preguntas[j.i];
+  registrarEventoActividad('pregunta', { materia: j.meta.materiaNombre || j.meta.titulo, tema: q.tema || j.meta.temaNombre, modo: j.meta.ranking ? 'ronda' : 'repaso', pregunta_id: q.id, pregunta: q.texto, numero_pregunta: j.i + 1, total_preguntas: j.preguntas.length });
   j.respondida = false;
 
   const zona = document.getElementById('zona');
@@ -1980,6 +1984,7 @@ function responder(pos) {
   const q = j.preguntas[j.i];
   const modoLimpio = j.meta.estilo === 'parcial-limpio';
   const acerto = q.orden[pos] === q.correcta;
+  registrarEventoActividad('respuesta', { materia: j.meta.materiaNombre || j.meta.titulo, tema: q.tema || j.meta.temaNombre, modo: j.meta.ranking ? 'ronda' : 'repaso', pregunta_id: q.id, pregunta: q.texto, seleccion: q.opciones[q.orden[pos]], respuesta_correcta: q.opciones[q.correcta], acierto: acerto, numero_pregunta: j.i + 1, total_preguntas: j.preguntas.length });
   registrarDominioMC(q, acerto, j.idSesion);
   const feedback = document.getElementById('feedback');
 
@@ -2225,6 +2230,7 @@ function vistaResultado() {
     </main>`;
 
   const { meta } = j;
+  registrarEventoActividad('juego_fin', { materia: meta.materiaNombre || meta.titulo, tema: meta.temaNombre, modo: meta.ranking ? 'ronda' : 'repaso', total_preguntas: total, datos: { aciertos: j.aciertos, puntos: j.puntos, precision, racha_max: j.mejorRacha } });
   const falladasPool = j.falladas;
   enviarIntentos(j);
   juego = null;
@@ -2262,6 +2268,7 @@ function vistaResultado() {
       puntos: j.puntos,
       racha_max: j.mejorRacha,
       dispositivo_id: idDispositivo(),
+      actividad_session_id: idSesionActividad(),
       ...infoDispositivo(),
     }).catch(() => {});
   }
@@ -2717,5 +2724,6 @@ async function iniciar() {
 }
 
 anotarEntrada();
+iniciarActividad().catch(() => {});
 iniciarTelemetria().catch(() => {});
 iniciar();
