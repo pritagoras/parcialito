@@ -75,8 +75,7 @@ create unique index if not exists dispositivos_dispositivo_id_uidx
 
 alter table public.dispositivos enable row level security;
 
--- El cliente no necesita acceso directo a la tabla: el perfil se actualiza
--- mediante la función controlada de abajo.
+-- La tabla no se puede leer ni modificar desde el cliente. Solo admite altas controladas.
 do $$
 declare p record;
 begin
@@ -91,12 +90,20 @@ $$;
 
 revoke all on public.dispositivos from anon, authenticated;
 
+grant insert on public.dispositivos to anon, authenticated;
+drop policy if exists dispositivos_insert_anon on public.dispositivos;
+create policy dispositivos_insert_anon
+  on public.dispositivos
+  for insert to anon, authenticated
+  with check (dispositivo_id is not null);
+
+
 -- 2) Alta/actualización controlada del perfil.
 -- Evita depender de una política UPDATE para el upsert de PostgREST.
 create or replace function public.registrar_dispositivo(p_dispositivo jsonb)
 returns void
 language plpgsql
-security definer
+security invoker
 set search_path = public, pg_temp
 as $$
 declare
@@ -154,29 +161,7 @@ begin
     now(),
     v_ultima
   )
-  on conflict (dispositivo_id) do update set
-    fabricante = coalesce(excluded.fabricante, dispositivos.fabricante),
-    modelo = coalesce(excluded.modelo, dispositivos.modelo),
-    navegador = coalesce(excluded.navegador, dispositivos.navegador),
-    version_navegador = coalesce(excluded.version_navegador, dispositivos.version_navegador),
-    sistema = coalesce(excluded.sistema, dispositivos.sistema),
-    version_plataforma = coalesce(excluded.version_plataforma, dispositivos.version_plataforma),
-    arquitectura = coalesce(excluded.arquitectura, dispositivos.arquitectura),
-    bits = coalesce(excluded.bits, dispositivos.bits),
-    tipo_dispositivo = coalesce(excluded.tipo_dispositivo, dispositivos.tipo_dispositivo),
-    pantalla = coalesce(excluded.pantalla, dispositivos.pantalla),
-    viewport = coalesce(excluded.viewport, dispositivos.viewport),
-    dpr = coalesce(excluded.dpr, dispositivos.dpr),
-    ram_gb = coalesce(excluded.ram_gb, dispositivos.ram_gb),
-    nucleos = coalesce(excluded.nucleos, dispositivos.nucleos),
-    conexion = coalesce(excluded.conexion, dispositivos.conexion),
-    save_data = coalesce(excluded.save_data, dispositivos.save_data),
-    instalada = coalesce(excluded.instalada, dispositivos.instalada),
-    idioma = coalesce(excluded.idioma, dispositivos.idioma),
-    zona_horaria = coalesce(excluded.zona_horaria, dispositivos.zona_horaria),
-    user_agent = coalesce(excluded.user_agent, dispositivos.user_agent),
-    version_app = coalesce(excluded.version_app, dispositivos.version_app),
-    ultima_visita = greatest(dispositivos.ultima_visita, excluded.ultima_visita);
+  on conflict (dispositivo_id) do nothing;
 end;
 $$;
 
