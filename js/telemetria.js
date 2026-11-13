@@ -2,8 +2,8 @@
 // telemetria.js: perfil técnico seudónimo del dispositivo + diagnóstico.
 // Los eventos no contienen apodo, respuestas ni texto escrito.
 // ==========================================================
-import { rankingActivo, registrarDispositivo, registrarTelemetria } from './ranking.js?v=20261112-dispositivos2';
-import { idDispositivo, perfilDispositivo } from './dispositivo.js?v=20261112-dispositivos2';
+import { rankingActivo, registrarDispositivo, registrarTelemetria } from './ranking.js?v=20261112-dispositivos3';
+import { idDispositivo, perfilDispositivo } from './dispositivo.js?v=20261112-dispositivos3';
 
 const VERSION_APP = '2026.11.12-telemetria1';
 const cola = [];
