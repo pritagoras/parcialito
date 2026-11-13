@@ -18,11 +18,17 @@ function rutaActual() {
 
 function encolar(evento, extra = {}) {
   if (!dispositivoId || !rankingActivo()) return;
+  // Todas las filas llevan las mismas claves: PostgREST rechaza con 400 los lotes
+  // cuyas filas no comparten el mismo conjunto de columnas.
   cola.push({
     dispositivo_id: dispositivoId,
     evento,
+    duracion_ms: null,
     ruta: rutaActual(),
+    recurso: null,
+    codigo: null,
     version_app: VERSION_APP,
+    datos: {},
     ...extra,
   });
   if (cola.length >= 8) vaciar();
