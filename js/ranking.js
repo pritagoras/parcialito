@@ -46,10 +46,9 @@ export function limpiarApodo(texto) {
 
 // Telemetría privada: upsert de perfil y escritura de eventos, sin apodos.
 export async function registrarDispositivo(fila) {
-  await pedir('dispositivos?on_conflict=dispositivo_id', {
+  await pedir('rpc/registrar_dispositivo', {
     method: 'POST',
-    headers: { Prefer: 'resolution=merge-duplicates,return=minimal' },
-    body: JSON.stringify(fila),
+    body: JSON.stringify({ p_dispositivo: fila }),
   });
 }
 
