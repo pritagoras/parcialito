@@ -85,3 +85,43 @@ body.admin-dashboard{height:100vh;height:100dvh;overflow:hidden}
   .dashboard .toolbar{margin-bottom:6px}
   .dashboard .layout{grid-template-rows:minmax(105px,.43fr) minmax(190px,1.57fr);gap:6px}
 }
+
+
+/* Scroll táctil robusto para listas e historial del panel */
+.dashboard .list,
+.dashboard .detail-panel {
+  min-height: 0;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  scrollbar-width: thin;
+}
+.dashboard .detail-panel {
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  min-height: 0;
+}
+@media (max-width: 760px) {
+  .dashboard .layout {
+    min-height: 0;
+    grid-template-rows: minmax(105px, .42fr) minmax(0, 1.58fr);
+  }
+  .dashboard .layout > .sessions-panel,
+  .dashboard .layout > .detail-panel {
+    min-height: 0;
+    max-height: 100%;
+  }
+  .dashboard .detail-panel {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+    padding-bottom: max(24px, env(safe-area-inset-bottom));
+  }
+  .dashboard .list {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+}
