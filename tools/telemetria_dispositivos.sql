@@ -20,7 +20,7 @@
 
 -- 1) Perfil actual de cada navegador/dispositivo.
 create table if not exists public.dispositivos (
-  dispositivo_id       text primary key,
+  dispositivo_id       uuid primary key,
   fabricante           text,
   modelo               text,
   navegador            text,
@@ -100,14 +100,14 @@ security definer
 set search_path = public, pg_temp
 as $$
 declare
-  v_id text;
+  v_id uuid;
   v_ultima timestamptz;
 begin
   if p_dispositivo is null or jsonb_typeof(p_dispositivo) <> 'object' then
     raise exception 'El perfil del dispositivo debe ser un objeto JSON.';
   end if;
 
-  v_id := nullif(btrim(p_dispositivo->>'dispositivo_id'), '');
+  v_id := nullif(btrim(p_dispositivo->>'dispositivo_id'), '')::uuid;
   if v_id is null or char_length(v_id) < 10 or char_length(v_id) > 80 then
     raise exception 'dispositivo_id ausente o inválido.';
   end if;
@@ -125,7 +125,7 @@ begin
     primera_visita, ultima_visita
   ) values (
     v_id,
-    left(nullif(p_dispositivo->>'fabricante',''), 80),
+    left(nullif(p_dispositivo->>'fabricante',''), 50),
     left(nullif(p_dispositivo->>'modelo',''), 100),
     left(nullif(p_dispositivo->>'navegador',''), 60),
     left(nullif(p_dispositivo->>'version_navegador',''), 30),
@@ -186,7 +186,7 @@ grant execute on function public.registrar_dispositivo(jsonb) to anon, authentic
 -- 3) Historial técnico: una fila por carga, vista, error o métrica.
 create table if not exists public.telemetria_dispositivos (
   id              bigint generated always as identity primary key,
-  dispositivo_id  text not null references public.dispositivos(dispositivo_id) on delete cascade,
+  dispositivo_id  uuid not null references public.dispositivos(dispositivo_id) on delete cascade,
   evento          text not null,
   ruta            text,
   version_app     text,
@@ -220,7 +220,7 @@ create policy telemetria_dispositivos_insert_anon
   on public.telemetria_dispositivos
   for insert to anon, authenticated
   with check (
-    char_length(dispositivo_id) between 10 and 80
+    dispositivo_id is not null
     and char_length(evento) between 1 and 50
   );
 grant insert on public.telemetria_dispositivos to anon, authenticated;
@@ -230,7 +230,7 @@ grant insert on public.telemetria_dispositivos to anon, authenticated;
 create table if not exists public.visitas (
   id                 bigint generated always as identity primary key,
   visitante          text not null,
-  dispositivo_id     text,
+  dispositivo_id     uuid,
   apodo              text,
   evento             text not null default 'entrada',
   navegador          text,
@@ -245,7 +245,7 @@ create table if not exists public.visitas (
   creado             timestamptz not null default now()
 );
 
-alter table public.visitas add column if not exists dispositivo_id text;
+alter table public.visitas add column if not exists dispositivo_id uuid;
 alter table public.visitas add column if not exists visitante text;
 alter table public.visitas add column if not exists apodo text;
 alter table public.visitas add column if not exists evento text default 'entrada';
@@ -269,7 +269,7 @@ create index if not exists visitas_visitante_fecha_idx
 -- ya guardaban un ID seudónimo estable en visitante. Se reutiliza ese mismo ID
 -- para crear el perfil retroactivo y asociar las visitas antiguas.
 update public.visitas
-set dispositivo_id = visitante::text
+set dispositivo_id = visitante::uuid
 where dispositivo_id is null
   and visitante is not null;
 
@@ -278,7 +278,7 @@ insert into public.dispositivos (
   pantalla, idioma, zona_horaria, user_agent, primera_visita, ultima_visita
 )
 select
-  v.visitante::text,
+  v.visitante::uuid,
   (array_agg(nullif(v.fabricante,'') order by v.creado desc))[1],
   (array_agg(nullif(v.modelo,'') order by v.creado desc))[1],
   (array_agg(nullif(v.navegador,'') order by v.creado desc))[1],
@@ -291,8 +291,8 @@ select
   min(v.creado),
   max(v.creado)
 from public.visitas v
-where v.visitante is not null
-group by v.visitante::text
+where v.visitante ~* '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$'
+group by v.visitante::uuid
 on conflict (dispositivo_id) do update set
   fabricante = coalesce(dispositivos.fabricante, excluded.fabricante),
   modelo = coalesce(dispositivos.modelo, excluded.modelo),
@@ -306,6 +306,22 @@ on conflict (dispositivo_id) do update set
   primera_visita = least(dispositivos.primera_visita, excluded.primera_visita),
   ultima_visita = greatest(dispositivos.ultima_visita, excluded.ultima_visita);
 
+-- Vincular visitas históricas con el perfil técnico del mismo navegador.
+do $$
+begin
+  if not exists (
+    select 1 from pg_constraint
+    where conname = 'visitas_dispositivo_id_fkey'
+      and conrelid = 'public.visitas'::regclass
+  ) then
+    alter table public.visitas
+      add constraint visitas_dispositivo_id_fkey
+      foreign key (dispositivo_id)
+      references public.dispositivos(dispositivo_id)
+      on delete set null;
+  end if;
+end
+$$;
 alter table public.visitas enable row level security;
 do $$
 declare p record;
@@ -347,16 +363,16 @@ create table if not exists public.sesiones (
   idioma            text,
   zona_horaria      text,
   user_agent        text,
-  dispositivo_id    text,
+  dispositivo_id    uuid,
   creado            timestamptz not null default now(),
   check (aciertos <= total)
 );
-alter table public.sesiones add column if not exists dispositivo_id text;
+alter table public.sesiones add column if not exists dispositivo_id uuid;
 create index if not exists sesiones_dispositivo_fecha_idx
   on public.sesiones (dispositivo_id, creado desc);
 
 alter table public.sesiones enable row level security;
-do $
+do $$
 declare p record;
 begin
   for p in
@@ -366,7 +382,7 @@ begin
     execute format('drop policy %I on public.sesiones', p.policyname);
   end loop;
 end
-$;
+$$;
 create policy sesiones_insert_anon
   on public.sesiones
   for insert to anon, authenticated
@@ -380,7 +396,7 @@ grant insert on public.sesiones to anon, authenticated;
 
 -- Dar permiso de uso únicamente a las secuencias de identidad necesarias
 -- para que los INSERT del navegador no fallen por permisos de secuencia.
-do $
+do $$
 declare v_seq text;
 begin
   v_seq := pg_get_serial_sequence('public.telemetria_dispositivos', 'id');
@@ -396,7 +412,7 @@ begin
     execute format('grant usage, select on sequence %s to anon, authenticated', v_seq);
   end if;
 end
-$;
+$$;
 
 -- 6) Vista: un renglón por dispositivo con indicadores agregados.
 create or replace view public.dispositivos_resumen as
@@ -469,7 +485,8 @@ left join lateral (
 ) e on true;
 
 -- 7) Vista: línea de tiempo de visitas, actividad técnica y partidas por dispositivo.
-create or replace view public.historial_dispositivos as
+drop view if exists public.historial_dispositivos;
+create view public.historial_dispositivos as
 select
   ('evento:' || t.id::text) as registro_id,
   t.dispositivo_id,
@@ -567,3 +584,7 @@ comment on view public.historial_dispositivos is
   'Línea de tiempo cronológica de actividad enlazada a cada dispositivo.';
 comment on view public.rendimiento_dispositivos_diario is
   'Métricas diarias de rendimiento por dispositivo.';
+
+
+-- Recargar el esquema de PostgREST para exponer el RPC y las columnas nuevas.
+notify pgrst, 'reload schema';
