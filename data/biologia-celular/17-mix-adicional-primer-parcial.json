@@ -1,0 +1,658 @@
+{
+  "materia": "Biología 1",
+  "tema": "Preguntas adicionales · Mix Primer Parcial",
+  "version": 2,
+  "descripcion": "Segundo lote independiente de preguntas nuevas para ampliar el mix del Primer Parcial.",
+  "preguntas": [
+    {
+      "id": "b1mix041",
+      "subtema": "Bacteriófagos: ciclo lisogénico",
+      "pregunta": "Un cultivo de E. coli lisogénica para un fago temperado se expone a una dosis moderada de luz UV y, poco después, gran parte de las células lisa y libera fagos. ¿Qué explica mejor este resultado?",
+      "opciones": [
+        "La luz UV modifica las proteínas de la cápside de los profagos, que quedan activos y rompen la pared bacteriana.",
+        "El daño al ADN bacteriano activa la respuesta SOS, se inactiva el represor del profago, el genoma viral se escinde y entra en ciclo lítico.",
+        "La luz UV induce la integración de nuevos fagos en el cromosoma, lo que satura la maquinaria de replicación y causa la lisis.",
+        "El profago, que se replicaba como plásmido libre, queda liberado de la regulación bacteriana por la mutación inducida en su origen de replicación."
+      ],
+      "correcta": "B",
+      "explicacion": "En el estado lisogénico el profago integrado se mantiene reprimido. El daño al ADN activa la respuesta SOS, el represor se inactiva (se autoproteoliza), el profago se escinde y se expresan los genes líticos. No es un efecto sobre la cápside ni una nueva integración."
+    },
+    {
+      "id": "b1mix042",
+      "subtema": "Viroides",
+      "pregunta": "¿Cuál de las siguientes características distingue a un viroide de un virus típico?",
+      "opciones": [
+        "Posee ADN de doble cadena protegido por una cápside proteica simple.",
+        "Codifica una ARN polimerasa propia que utiliza para replicarse en el citoplasma.",
+        "Es una partícula con envoltura lipídica derivada de la membrana de la célula huésped.",
+        "Es un ARN circular pequeño, sin cápside y sin capacidad de codificar proteínas, que depende de enzimas del hospedador para replicarse."
+      ],
+      "correcta": "D",
+      "explicacion": "Los viroides son ARN monocatenarios circulares, desnudos y no codificantes que infectan plantas y se replican aprovechando enzimas del hospedador. No tienen cápside, envoltura ni genes que codifiquen proteínas."
+    },
+    {
+      "id": "b1mix043",
+      "subtema": "Priones",
+      "pregunta": "Un homogenado de tejido nervioso infectivo se trata con nucleasas y luz UV (que destruye ácidos nucleicos) y conserva su infectividad, pero la pierde cuando se lo trata con proteasas bajo condiciones desnaturalizantes. ¿Qué conclusión es la más coherente?",
+      "opciones": [
+        "El agente infectivo es una proteína con plegamiento anómalo que induce el cambio conformacional de la proteína celular normal, sin requerir genoma propio.",
+        "El agente es un virus cuyo ARN está protegido por una cápside resistente a la UV.",
+        "El agente es un viroide, cuyo ARN circular es resistente a nucleasas por su estructura cerrada.",
+        "El agente es una bacteria sin pared cuyo ADN se repara rápidamente tras el tratamiento con UV."
+      ],
+      "correcta": "A",
+      "explicacion": "La resistencia a nucleasas y UV junto con la sensibilidad a proteasas indica que el agente es proteico. Los priones (PrPSc) son isoformas mal plegadas que convierten a la PrPC normal en PrPSc, sin ácido nucleico propio."
+    },
+    {
+      "id": "b1mix044",
+      "subtema": "Virus ARN y retrovirus",
+      "pregunta": "Un virus con genoma de ARN monocatenario de polaridad positiva contiene transcriptasa inversa en el virión. Si se trata la célula infectada con un inhibidor específico de esa enzima, ¿qué etapa del ciclo se bloquea primero?",
+      "opciones": [
+        "La traducción directa del genoma viral por los ribosomas del huésped.",
+        "El ensamblaje de las proteínas de la cápside en el citoplasma.",
+        "La síntesis de una copia de ADN a partir del ARN viral, necesaria para su integración y expresión posterior.",
+        "La adsorción del virión a los receptores de la membrana plasmática."
+      ],
+      "correcta": "C",
+      "explicacion": "La transcriptasa inversa sintetiza ADN a partir del ARN viral. Sin esta etapa no hay provirus integrado ni transcripción posterior. La adsorción y el ensamblaje son pasos independientes de esta enzima."
+    },
+    {
+      "id": "b1mix045",
+      "subtema": "Teoría celular y definición de vida",
+      "pregunta": "Se describe una entidad que contiene ácido nucleico y proteínas, se replica, pero no tiene metabolismo propio y no puede reproducirse fuera de un hospedador. Desde la teoría celular:",
+      "opciones": [
+        "Debe considerarse una célula reducida, porque se reproduce y posee información genética.",
+        "No constituye una unidad celular: carece de organización y metabolismo propios, por lo que es una entidad acelular.",
+        "Es una célula procariota degenerada que perdió su membrana plasmática.",
+        "Es un organismo pluricelular simple, porque depende de las células de otro organismo."
+      ],
+      "correcta": "B",
+      "explicacion": "La teoría celular establece que la célula es la unidad estructural y funcional de los seres vivos. Una entidad sin metabolismo ni autonomía reproductiva, que depende de una célula, es acelular, como los virus."
+    },
+    {
+      "id": "b1mix046",
+      "subtema": "Niveles de organización",
+      "pregunta": "¿Cuál de los siguientes ejemplos ilustra mejor una propiedad emergente en un nivel de organización superior al de sus componentes?",
+      "opciones": [
+        "La capacidad de bombeo del corazón, que resulta de la acción coordinada de las células musculares en un órgano y no está presente en una célula aislada.",
+        "La presencia de ADN en el núcleo de cada célula del hígado.",
+        "La existencia de enlaces covalentes entre los aminoácidos de una proteína.",
+        "La capacidad de una molécula de agua de formar puentes de hidrógeno."
+      ],
+      "correcta": "A",
+      "explicacion": "Una propiedad emergente aparece cuando los componentes se organizan en un nivel superior y no puede deducirse de cada componente aislado. El bombeo cardíaco es una propiedad del órgano. Las otras opciones describen propiedades de componentes individuales."
+    },
+    {
+      "id": "b1mix047",
+      "subtema": "Células procariotas: pared celular",
+      "pregunta": "Una bacteria Gram positiva se trata con lisozima y se la coloca en un medio hipotónico. En un segundo ensayo, se la coloca en un medio isotónico. ¿Qué se espera?",
+      "opciones": [
+        "En ambos medios se produce plasmólisis, porque la lisozima inhibe el transporte de agua.",
+        "En ambos medios la bacteria se mantiene intacta, porque la membrana plasmática es suficiente para resistir la presión osmótica.",
+        "En medio hipotónico la bacteria se contrae y en el isotónico se hincha.",
+        "En medio hipotónico se produce lisis osmótica, mientras que en el isotónico la célula persiste como protoplasto, sin pared pero viable."
+      ],
+      "correcta": "D",
+      "explicacion": "La lisozima hidroliza el peptidoglucano. Sin pared, en un medio hipotónico entra agua y la célula estalla; en un medio isotónico no hay gradiente osmótico y la célula sobrevive como protoplasto."
+    },
+    {
+      "id": "b1mix048",
+      "subtema": "Procariotas vs eucariotas: ribosomas",
+      "pregunta": "Algunos antibióticos que inhiben ribosomas bacterianos 70S pueden causar toxicidad en células humanas. ¿Cuál es la explicación más adecuada?",
+      "opciones": [
+        "Los ribosomas citoplasmáticos humanos son idénticos a los 70S bacterianos.",
+        "Estos antibióticos atraviesan la envoltura nuclear y bloquean la transcripción.",
+        "Las mitocondrias poseen ribosomas de tipo procariota, como consecuencia de su origen endosimbiótico, y pueden ser afectadas.",
+        "Las células humanas carecen de ribosomas 80S, por lo que dependen de los 70S."
+      ],
+      "correcta": "C",
+      "explicacion": "Los ribosomas citoplasmáticos eucariotas son 80S, pero las mitocondrias tienen ribosomas 70S similares a los bacterianos. Algunos antibióticos pueden inhibir la síntesis proteica mitocondrial."
+    },
+    {
+      "id": "b1mix049",
+      "subtema": "Teoría endosimbiótica",
+      "pregunta": "¿Qué conjunto de observaciones respalda de forma más sólida el origen endosimbiótico de las mitocondrias?",
+      "opciones": [
+        "Doble membrana, ADN circular propio, ribosomas de tipo procariota y multiplicación por división similar a la fisión binaria.",
+        "Presencia de membrana simple, ADN lineal con histonas y síntesis de lípidos en el interior.",
+        "Capacidad de realizar fotosíntesis, pigmentos fotosintéticos y tilacoides.",
+        "Localización en el interior del núcleo, ribosomas 80S y replicación sincronizada con el ADN nuclear."
+      ],
+      "correcta": "A",
+      "explicacion": "La doble membrana, el genoma circular, los ribosomas 70S y la división por fisión son rasgos compatibles con un ancestro procariota incorporado por endosimbiosis. Los otros conjuntos no corresponden a la mitocondria o son rasgos eucariotas típicos."
+    },
+    {
+      "id": "b1mix050",
+      "subtema": "Peroxisomas",
+      "pregunta": "Una célula presenta una catalasa peroxisomal inactiva. ¿Cuál es la consecuencia más directa?",
+      "opciones": [
+        "No podrá sintetizar ATP en la mitocondria.",
+        "Acumulará proteínas mal plegadas en el retículo endoplásmico.",
+        "Los lisosomas dejarán de recibir hidrolasas ácidas desde el Golgi.",
+        "Se acumulará peróxido de hidrógeno generado por las oxidasas peroxisomales, con daño oxidativo."
+      ],
+      "correcta": "D",
+      "explicacion": "Los peroxisomas generan H2O2 en reacciones oxidativas (por ejemplo, β-oxidación de ácidos grasos de cadena muy larga) y la catalasa lo descompone en agua y oxígeno. Sin catalasa, el H2O2 se acumula y daña componentes celulares."
+    },
+    {
+      "id": "b1mix051",
+      "subtema": "Núcleo y transporte nucleocitoplasmático",
+      "pregunta": "Una célula expresa una histona que carece de la señal de localización nuclear (NLS). ¿Qué se espera?",
+      "opciones": [
+        "La histona se importa al núcleo por difusión simple a través de los poros.",
+        "La histona se sintetiza en el citosol pero no ingresa al núcleo, por lo que no puede integrarse a los nucleosomas.",
+        "La histona se transcribe en el citoplasma y se ensambla directamente con el ADN mitocondrial.",
+        "La histona ingresa al retículo endoplásmico y se secreta."
+      ],
+      "correcta": "B",
+      "explicacion": "Las proteínas nucleares se sintetizan en ribosomas libres y se importan por reconocimiento de la NLS por importinas. Sin NLS la histona queda en el citosol y no puede formar nucleosomas."
+    },
+    {
+      "id": "b1mix052",
+      "subtema": "Retículo endoplásmico: SRP",
+      "pregunta": "En un sistema in vitro se traduce el ARNm de una proteína secretora en presencia de la partícula de reconocimiento de la señal (SRP), pero sin membranas del retículo endoplásmico. ¿Qué ocurre?",
+      "opciones": [
+        "La traducción continúa sin cambios y se obtiene la proteína completa.",
+        "El ribosoma se separa del ARNm y la proteína se degrada inmediatamente.",
+        "La elongación se detiene tras sintetizarse el péptido señal, hasta que el complejo se acople a la membrana del retículo.",
+        "El péptido señal se escinde por acción de la SRP y la proteína se libera en el medio."
+      ],
+      "correcta": "C",
+      "explicacion": "La SRP reconoce el péptido señal naciente y detiene la elongación. La traducción se reanuda cuando el complejo se une al receptor de SRP en la membrana del RE. Sin membranas, el arresto se mantiene."
+    },
+    {
+      "id": "b1mix053",
+      "subtema": "Aparato de Golgi y lisosomas",
+      "pregunta": "Una mutación inactiva la enzima que agrega manosa-6-fosfato a las hidrolasas ácidas en el Golgi. ¿Cuál es la consecuencia más probable?",
+      "opciones": [
+        "Las hidrolasas permanecen en el retículo endoplásmico rugoso y se degradan.",
+        "Las hidrolasas se sintetizan en el lisosoma, por lo que no se afectan.",
+        "Los lisosomas funcionan con normalidad porque pueden reconocer las hidrolasas por su secuencia aminoacídica.",
+        "Las hidrolasas se secretan al medio extracelular en lugar de dirigirse a los lisosomas, que quedan deficientes y acumulan material no digerido."
+      ],
+      "correcta": "D",
+      "explicacion": "La manosa-6-fosfato es la señal que reconocen los receptores en el trans-Golgi para dirigir las hidrolasas a los lisosomas. Sin ella, las enzimas siguen la vía por defecto y se secretan; los lisosomas quedan deficientes."
+    },
+    {
+      "id": "b1mix054",
+      "subtema": "Tráfico vesicular: COPII",
+      "pregunta": "Si se bloquea el ensamblaje del recubrimiento COPII, ¿qué se espera observar?",
+      "opciones": [
+        "Acumulación de proteínas recién sintetizadas en el retículo endoplásmico, con ausencia de transporte hacia el Golgi.",
+        "Acumulación de vesículas recubiertas de clatrina en la membrana plasmática.",
+        "Fusión masiva de vesículas del Golgi con el retículo endoplásmico.",
+        "Bloqueo de la endocitosis mediada por receptor."
+      ],
+      "correcta": "A",
+      "explicacion": "COPII forma las vesículas que transportan carga desde el RE hacia el Golgi (transporte anterógrado). Si no se ensambla, la carga queda retenida en el RE."
+    },
+    {
+      "id": "b1mix055",
+      "subtema": "Lisosomas: pH",
+      "pregunta": "Se bloquea la bomba de protones de la membrana lisosomal con un inhibidor específico. Las hidrolasas ácidas están correctamente sintetizadas y dirigidas a los lisosomas. ¿Qué ocurre?",
+      "opciones": [
+        "Las hidrolasas se activan en exceso, porque el pH neutro es el óptimo.",
+        "Las hidrolasas son exportadas al citosol, donde degradan proteínas.",
+        "El pH lisosomal aumenta y las hidrolasas pierden actividad, a pesar de estar presentes, por lo que se compromete la degradación.",
+        "Los lisosomas se fusionan con el núcleo para compensar la pérdida de acidez."
+      ],
+      "correcta": "C",
+      "explicacion": "Las hidrolasas lisosomales tienen su actividad óptima a pH ácido (~4,5-5), mantenido por la bomba de H+ dependiente de ATP. Si el pH sube, las enzimas pierden actividad."
+    },
+    {
+      "id": "b1mix056",
+      "subtema": "Retículo endoplásmico liso",
+      "pregunta": "Hepatocitos expuestos de forma prolongada a fármacos como el fenobarbital muestran una proliferación marcada de cierto compartimiento. ¿Cuál es el cambio esperado y su sentido funcional?",
+      "opciones": [
+        "Aumento del Golgi para secretar más fármaco al exterior.",
+        "Expansión del retículo endoplásmico liso, que contiene enzimas (como citocromo P450) involucradas en la detoxificación.",
+        "Aumento de los peroxisomas para sintetizar el fármaco.",
+        "Aumento de los ribosomas libres para degradar el fármaco por proteólisis."
+      ],
+      "correcta": "B",
+      "explicacion": "El RE liso hepático contiene enzimas de detoxificación (sistema del citocromo P450). La exposición crónica a fármacos induce la proliferación de este compartimiento."
+    },
+    {
+      "id": "b1mix057",
+      "subtema": "Microtúbulos",
+      "pregunta": "Células en cultivo se tratan con colchicina, que impide la polimerización de la tubulina. ¿Qué efecto se observa sobre la división celular?",
+      "opciones": [
+        "No se forma el huso mitótico y las células quedan detenidas en metafase (mitosis).",
+        "Las células completan la mitosis pero no pueden realizar la citocinesis.",
+        "Las células se detienen en G1 por falta de ADN polimerasa.",
+        "Los cromosomas se condensan en exceso y se separan prematuramente."
+      ],
+      "correcta": "A",
+      "explicacion": "El huso mitótico está formado por microtúbulos. Si la tubulina no polimeriza, los cromosomas no pueden alinearse ni segregarse y las células se acumulan en metafase."
+    },
+    {
+      "id": "b1mix058",
+      "subtema": "Microfilamentos y citocinesis",
+      "pregunta": "Tras tratar células con citocalasina D (inhibe la polimerización de actina), el cultivo muestra con el tiempo muchas células con dos núcleos. ¿Cuál es la explicación más adecuada?",
+      "opciones": [
+        "La citocalasina induce la fusión de células vecinas por ruptura de membranas.",
+        "El huso mitótico se duplica, lo que genera dos núcleos en cada célula.",
+        "La replicación del ADN se detiene en la fase S y se acumulan copias nucleares.",
+        "Se completa la mitosis pero falla la citocinesis, porque el anillo contráctil de actina no se forma."
+      ],
+      "correcta": "D",
+      "explicacion": "La citocinesis animal depende del anillo contráctil de actina y miosina. Si no se forma, se completa la división nuclear sin división del citoplasma y se originan células binucleadas."
+    },
+    {
+      "id": "b1mix059",
+      "subtema": "Filamentos intermedios",
+      "pregunta": "¿Cuál de las siguientes afirmaciones sobre el ensamblaje de los filamentos del citoesqueleto es correcta?",
+      "opciones": [
+        "Los filamentos intermedios necesitan GTP para polimerizar, como los microtúbulos.",
+        "Los filamentos intermedios presentan extremos + y − con distinta velocidad de polimerización, como la actina.",
+        "Los filamentos intermedios no tienen polaridad ni requieren unión e hidrólisis de nucleótidos para ensamblarse, a diferencia de los microtúbulos y la actina.",
+        "Los filamentos intermedios son los únicos que sirven de rieles para motores moleculares."
+      ],
+      "correcta": "C",
+      "explicacion": "Los filamentos intermedios son estructuras apolares y estables, formadas por subunidades fibrosas que se asocian lateralmente sin unir nucleótidos. Los microtúbulos (GTP) y la actina (ATP) son polares y dinámicos."
+    },
+    {
+      "id": "b1mix060",
+      "subtema": "Proteínas motoras",
+      "pregunta": "Una vesícula debe transportarse desde el cuerpo neuronal hasta el extremo del axón, donde los microtúbulos orientan su extremo + hacia el terminal. ¿Qué motor se espera que la transporte?",
+      "opciones": [
+        "Dineína citoplasmática, porque se desplaza hacia el extremo +.",
+        "Kinesina, que se desplaza hacia el extremo + de los microtúbulos con gasto de ATP.",
+        "Miosina II, que se desplaza sobre los filamentos intermedios.",
+        "Dineína axonémica, que se desplaza hacia el extremo −."
+      ],
+      "correcta": "B",
+      "explicacion": "La kinesina se mueve hacia el extremo + de los microtúbulos (transporte anterógrado en el axón); la dineína citoplasmática se mueve hacia el extremo − (retrógrado). Ambas usan ATP."
+    },
+    {
+      "id": "b1mix061",
+      "subtema": "Membrana plasmática: fluidez",
+      "pregunta": "Una bacteria cultivada a 37 °C se transfiere a 15 °C. Para mantener la fluidez de su membrana, es esperable que:",
+      "opciones": [
+        "Aumente la proporción de ácidos grasos saturados de cadena larga.",
+        "Disminuya la síntesis de fosfolípidos.",
+        "Incorpore colesterol en su membrana plasmática.",
+        "Aumente la proporción de ácidos grasos insaturados (o de cadena más corta) en los fosfolípidos."
+      ],
+      "correcta": "D",
+      "explicacion": "A baja temperatura la membrana tiende a rigidizarse. Los ácidos grasos insaturados, con codos por dobles enlaces cis, reducen el empaquetamiento y mantienen la fluidez. Las bacterias en general no sintetizan colesterol."
+    },
+    {
+      "id": "b1mix062",
+      "subtema": "Transporte: difusión facilitada",
+      "pregunta": "Un soluto polar ingresa a una célula con una cinética de saturación (la velocidad alcanza un máximo al aumentar la concentración), sin gasto de ATP y siempre a favor de su gradiente. ¿Qué mecanismo es más compatible?",
+      "opciones": [
+        "Difusión facilitada mediada por una proteína transportadora o canal.",
+        "Difusión simple a través de la bicapa lipídica.",
+        "Transporte activo primario.",
+        "Endocitosis mediada por clatrina."
+      ],
+      "correcta": "A",
+      "explicacion": "La saturación indica una proteína limitante, y la ausencia de ATP y el movimiento a favor del gradiente indican transporte pasivo. Es difusión facilitada. La difusión simple no satura."
+    },
+    {
+      "id": "b1mix063",
+      "subtema": "Bomba Na+/K+",
+      "pregunta": "Se trata una célula con ouabaína, inhibidor de la bomba Na+/K+ ATPasa. ¿Qué consecuencia es la más inmediata?",
+      "opciones": [
+        "Aumenta la concentración intracelular de K+ y disminuye la de Na+.",
+        "Se disipan progresivamente los gradientes de Na+ y K+, y se afectan procesos dependientes del gradiente de Na+, como el cotransporte de glucosa.",
+        "La membrana se hiperpolariza de manera permanente.",
+        "Aumenta la síntesis de ATP mitocondrial para compensar."
+      ],
+      "correcta": "B",
+      "explicacion": "La bomba mantiene bajo el Na+ intracelular y alto el K+. Al bloquearla, los gradientes se disipan, se despolariza la membrana y fallan los transportes activos secundarios que usan el gradiente de Na+."
+    },
+    {
+      "id": "b1mix064",
+      "subtema": "Transporte activo secundario",
+      "pregunta": "Un transportador de membrana ingresa glucosa a la célula en contra de su gradiente de concentración, acoplado al ingreso de Na+ a favor de su gradiente electroquímico. Este mecanismo es:",
+      "opciones": [
+        "Difusión facilitada, porque no consume ATP directamente.",
+        "Transporte activo primario, porque el transportador hidroliza ATP.",
+        "Transporte activo secundario (cotransporte), que utiliza la energía del gradiente de Na+ generado por la bomba Na+/K+.",
+        "Endocitosis mediada por receptor."
+      ],
+      "correcta": "C",
+      "explicacion": "El movimiento de glucosa contra gradiente se acopla a la energía del gradiente de Na+, que depende de la bomba Na+/K+ ATPasa. El ATP se usa de forma indirecta: es transporte activo secundario."
+    },
+    {
+      "id": "b1mix065",
+      "subtema": "Ósmosis en células vegetales",
+      "pregunta": "Una célula vegetal turgente se coloca en una solución hipertónica. ¿Qué se observa?",
+      "opciones": [
+        "La membrana se separa de la pared celular por pérdida de agua (plasmólisis).",
+        "La célula se hincha y estalla por falta de pared.",
+        "El agua ingresa hasta que la turgencia aumenta aún más.",
+        "La pared celular se disuelve y la célula adopta forma esférica."
+      ],
+      "correcta": "A",
+      "explicacion": "En un medio hipertónico el agua sale de la célula por ósmosis, el protoplasto se contrae y la membrana se separa de la pared rígida: plasmólisis."
+    },
+    {
+      "id": "b1mix066",
+      "subtema": "Potencial de membrana",
+      "pregunta": "Si se bloquean los canales de K+ de fuga de una célula en reposo, ¿qué esperaría observar?",
+      "opciones": [
+        "Hiperpolarización, porque sale más K+.",
+        "Ningún cambio, porque el potencial de reposo depende solo de la bomba Na+/K+.",
+        "Un potencial de membrana igual al de equilibrio del Na+.",
+        "Despolarización, porque el potencial de reposo depende en gran medida de la permeabilidad al K+."
+      ],
+      "correcta": "D",
+      "explicacion": "El potencial de reposo se aproxima al potencial de equilibrio del K+ por la alta permeabilidad a ese ion a través de canales de fuga. Al bloquearlos, el potencial se hace menos negativo (despolarización)."
+    },
+    {
+      "id": "b1mix067",
+      "subtema": "Agua: propiedades",
+      "pregunta": "¿Por qué el agua líquida amortigua bien los cambios de temperatura (alto calor específico)?",
+      "opciones": [
+        "Porque sus moléculas son apolares y no interactúan entre sí.",
+        "Porque parte de la energía absorbida se usa en alterar los puentes de hidrógeno entre moléculas antes de incrementar su energía cinética.",
+        "Porque el agua no forma enlaces entre moléculas y absorbe calor sin cambios.",
+        "Porque sus enlaces covalentes O-H se rompen y reforman de forma continua."
+      ],
+      "correcta": "B",
+      "explicacion": "Los puentes de hidrógeno entre moléculas de agua absorben parte de la energía calórica, de modo que la temperatura aumenta menos de lo esperable. Los enlaces covalentes O-H no se rompen en este proceso."
+    },
+    {
+      "id": "b1mix068",
+      "subtema": "Efecto hidrofóbico",
+      "pregunta": "En medio acuoso, las cadenas laterales apolares de una proteína tienden a agruparse en el interior. ¿Cuál es el factor termodinámico principal?",
+      "opciones": [
+        "La formación de enlaces covalentes entre los grupos apolares.",
+        "La atracción electrostática entre los grupos apolares.",
+        "El aumento de entropía del agua al liberarse de la organización alrededor de los grupos apolares expuestos.",
+        "La disminución de entropía del agua al unirse a las cadenas apolares."
+      ],
+      "correcta": "C",
+      "explicacion": "Los grupos apolares expuestos obligan al agua a ordenarse. Al agruparse, se libera agua y aumenta la entropía del sistema, lo que favorece el plegamiento (efecto hidrofóbico)."
+    },
+    {
+      "id": "b1mix069",
+      "subtema": "Buffers",
+      "pregunta": "Un sistema amortiguador tiene un pKa de 6,8. ¿A qué pH muestra su mayor capacidad amortiguadora?",
+      "opciones": [
+        "A pH 4,8, donde predomina la forma ácida.",
+        "A pH 8,8, donde predomina la forma básica.",
+        "A pH 7,4, que es el fisiológico, sin importar el pKa.",
+        "A pH 6,8, donde las concentraciones de la forma ácida y su base conjugada son iguales."
+      ],
+      "correcta": "D",
+      "explicacion": "Según Henderson-Hasselbalch, el pH es igual al pKa cuando [A-] = [HA]. En ese punto el sistema es más eficaz para neutralizar ácidos o bases."
+    },
+    {
+      "id": "b1mix070",
+      "subtema": "Glúcidos: polisacáridos",
+      "pregunta": "¿Por qué los seres humanos no pueden digerir la celulosa, mientras que sí digieren el almidón, si ambos son polímeros de glucosa?",
+      "opciones": [
+        "Porque la celulosa tiene enlaces β(1→4), que no son hidrolizados por las enzimas digestivas humanas.",
+        "Porque la celulosa contiene fructosa además de glucosa.",
+        "Porque la celulosa está unida por enlaces peptídicos.",
+        "Porque el almidón es un polímero de galactosa."
+      ],
+      "correcta": "A",
+      "explicacion": "El almidón tiene enlaces α(1→4) (y α(1→6) en ramificaciones), que son hidrolizados por amilasas. La celulosa tiene enlaces β(1→4), que requieren celulasas, ausentes en humanos."
+    },
+    {
+      "id": "b1mix071",
+      "subtema": "Glucógeno",
+      "pregunta": "¿Qué ventaja funcional tiene la estructura muy ramificada del glucógeno?",
+      "opciones": [
+        "Es insoluble y no ocupa espacio en el citoplasma.",
+        "Es resistente a la degradación enzimática por la falta de extremos libres.",
+        "Presenta muchos extremos no reductores, lo que permite liberar glucosa rápidamente por acción simultánea de varias enzimas.",
+        "Permite almacenar glucosa en forma de enlaces β para evitar su degradación."
+      ],
+      "correcta": "C",
+      "explicacion": "Las ramificaciones aumentan el número de extremos no reductores desde los cuales las enzimas degradan el polímero en paralelo, lo que permite una rápida movilización de glucosa."
+    },
+    {
+      "id": "b1mix072",
+      "subtema": "Lípidos: ácidos grasos",
+      "pregunta": "¿Por qué los lípidos ricos en ácidos grasos insaturados cis suelen ser líquidos a temperatura ambiente?",
+      "opciones": [
+        "Porque tienen mayor masa molecular que los saturados.",
+        "Los dobles enlaces cis introducen codos en las cadenas, lo que dificulta el empaquetamiento y reduce el punto de fusión.",
+        "Porque forman puentes de hidrógeno entre sus colas.",
+        "Porque los dobles enlaces cis aumentan la polaridad de la cadena."
+      ],
+      "correcta": "B",
+      "explicacion": "Las cadenas saturadas son rectas y se empaquetan bien, con puntos de fusión altos. Los dobles enlaces cis generan curvaturas que impiden el empaquetamiento y disminuyen el punto de fusión."
+    },
+    {
+      "id": "b1mix073",
+      "subtema": "Colesterol en membranas",
+      "pregunta": "¿Qué efecto tiene el colesterol sobre la fluidez de las membranas animales?",
+      "opciones": [
+        "Modula la fluidez: restringe el movimiento de las colas a temperaturas altas y evita su empaquetamiento excesivo a temperaturas bajas.",
+        "Aumenta la fluidez en todas las condiciones.",
+        "Disminuye la fluidez en todas las condiciones.",
+        "No influye en la fluidez, solo en la permeabilidad al agua."
+      ],
+      "correcta": "A",
+      "explicacion": "El colesterol actúa como amortiguador de la fluidez: a temperaturas altas reduce la movilidad de los fosfolípidos y a temperaturas bajas impide que se empaqueten en exceso."
+    },
+    {
+      "id": "b1mix074",
+      "subtema": "Proteínas: estructura",
+      "pregunta": "En la anemia falciforme, la sustitución de un glutamato por una valina en la cadena β de la hemoglobina provoca que las moléculas polimericen. ¿Cuál es la explicación más adecuada?",
+      "opciones": [
+        "La sustitución rompe el enlace peptídico y fragmenta la cadena.",
+        "La valina elimina el grupo hemo de la proteína.",
+        "El cambio altera el pH isoeléctrico, lo que causa su degradación en el lisosoma.",
+        "La valina, apolar, crea una zona hidrofóbica en la superficie que interactúa con otras moléculas de hemoglobina y las agrega."
+      ],
+      "correcta": "D",
+      "explicacion": "Un aminoácido polar con carga (Glu) se reemplaza por uno apolar (Val) en la superficie. Esa zona hidrofóbica favorece interacciones entre moléculas de hemoglobina desoxigenada y su polimerización."
+    },
+    {
+      "id": "b1mix075",
+      "subtema": "Proteínas: plegamiento",
+      "pregunta": "En el experimento de Anfinsen, la ribonucleasa se desnaturalizó con urea y β-mercaptoetanol y, al eliminar ambos agentes, recuperó su actividad. ¿Qué demuestra?",
+      "opciones": [
+        "Que el plegamiento requiere siempre chaperonas.",
+        "Que la información para el plegamiento nativo está contenida en la secuencia de aminoácidos.",
+        "Que la estructura terciaria no depende de la secuencia primaria.",
+        "Que los puentes disulfuro no intervienen en la estructura de la proteína."
+      ],
+      "correcta": "B",
+      "explicacion": "La proteína recuperó su conformación nativa de forma espontánea al retirar los agentes, lo que indica que la secuencia primaria determina el plegamiento."
+    },
+    {
+      "id": "b1mix076",
+      "subtema": "Chaperonas",
+      "pregunta": "Frente a un aumento de temperatura, las células incrementan la síntesis de proteínas de choque térmico (HSP). ¿Cuál es su función principal?",
+      "opciones": [
+        "Formar parte de la estructura final de las proteínas que ayudan.",
+        "Catalizar la síntesis de nuevos enlaces peptídicos.",
+        "Ayudar a plegar correctamente las proteínas y prevenir su agregación, sin integrarse a la estructura final.",
+        "Actuar como enzimas que degradan el ARN mensajero."
+      ],
+      "correcta": "C",
+      "explicacion": "Las chaperonas se unen a proteínas desplegadas o parcialmente desnaturalizadas para favorecer su plegamiento y evitar su agregación. No forman parte de la proteína funcional final."
+    },
+    {
+      "id": "b1mix077",
+      "subtema": "Ácidos nucleicos: desnaturalización",
+      "pregunta": "Dos moléculas de ADN de doble cadena de igual longitud difieren en su composición: una tiene 60% de G+C y la otra 40%. ¿Cuál se espera?",
+      "opciones": [
+        "La de 40% tiene mayor temperatura de desnaturalización.",
+        "Ambas tienen la misma temperatura de desnaturalización, porque tienen la misma longitud.",
+        "La de 60% se desnaturaliza a menor temperatura por tener más enlaces covalentes.",
+        "La de 60% tiene mayor temperatura de desnaturalización, porque los pares G-C tienen tres puentes de hidrógeno y los A-T dos."
+      ],
+      "correcta": "D",
+      "explicacion": "Los pares G-C están unidos por tres puentes de hidrógeno y los A-T por dos. Un mayor contenido de G+C estabiliza la doble hélice y eleva la temperatura de fusión."
+    },
+    {
+      "id": "b1mix078",
+      "subtema": "ARN vs ADN",
+      "pregunta": "¿Por qué el ARN es químicamente menos estable que el ADN, sobre todo en medio alcalino?",
+      "opciones": [
+        "Porque el grupo 2'-OH de la ribosa puede atacar al enlace fosfodiéster adyacente y favorecer su hidrólisis.",
+        "Porque contiene uracilo en lugar de timina.",
+        "Porque es siempre monocatenario y no forma estructuras secundarias.",
+        "Porque sus bases están unidas por enlaces glucosídicos más débiles."
+      ],
+      "correcta": "A",
+      "explicacion": "El grupo hidroxilo en la posición 2' de la ribosa participa en la hidrólisis del enlace fosfodiéster, lo que vuelve al ARN más lábil. La desoxirribosa carece de ese grupo."
+    },
+    {
+      "id": "b1mix079",
+      "subtema": "Enzimas: Km",
+      "pregunta": "Las enzimas X e Y catalizan la misma reacción con el mismo sustrato. X tiene un Km de 0,1 mM e Y de 5 mM. ¿Qué se puede afirmar?",
+      "opciones": [
+        "Y tiene mayor afinidad aparente por el sustrato que X.",
+        "X y Y tienen necesariamente la misma Vmax.",
+        "X alcanza la mitad de su Vmax con una concentración de sustrato menor que Y, lo que indica mayor afinidad aparente.",
+        "Km indica la velocidad máxima de la enzima."
+      ],
+      "correcta": "C",
+      "explicacion": "Km es la concentración de sustrato a la que la velocidad es la mitad de Vmax. Un Km menor indica que se requiere menos sustrato para alcanzar ese punto, es decir, una afinidad aparente mayor."
+    },
+    {
+      "id": "b1mix080",
+      "subtema": "Inhibición competitiva",
+      "pregunta": "Un inhibidor compite con el sustrato por el sitio activo. ¿Cómo se modifican los parámetros cinéticos?",
+      "opciones": [
+        "Disminuyen Vmax y Km.",
+        "El Km aparente aumenta y Vmax no cambia; el efecto se revierte aumentando la concentración de sustrato.",
+        "Vmax disminuye y Km no cambia.",
+        "Vmax aumenta porque el inhibidor ocupa el sitio activo."
+      ],
+      "correcta": "B",
+      "explicacion": "En la inhibición competitiva se necesita más sustrato para alcanzar la mitad de Vmax (Km aparente mayor), pero con sustrato suficiente se alcanza la misma Vmax."
+    },
+    {
+      "id": "b1mix081",
+      "subtema": "Inhibición no competitiva",
+      "pregunta": "Un inhibidor se une a un sitio distinto del sitio activo, tanto a la enzima libre como al complejo enzima-sustrato, sin alterar la unión del sustrato. ¿Qué se espera?",
+      "opciones": [
+        "Disminuye la Vmax y el Km no se modifica.",
+        "Aumenta el Km y la Vmax permanece constante.",
+        "Aumentan tanto Vmax como Km.",
+        "La inhibición se revierte completamente al aumentar el sustrato."
+      ],
+      "correcta": "A",
+      "explicacion": "En la inhibición no competitiva el inhibidor reduce la cantidad de enzima activa, por lo que baja la Vmax, sin afectar la afinidad por el sustrato (Km). No se revierte con más sustrato."
+    },
+    {
+      "id": "b1mix082",
+      "subtema": "Regulación enzimática: retroinhibición",
+      "pregunta": "En una vía biosintética, el producto final inhibe alostéricamente la primera enzima de la ruta. ¿Cuál es el sentido de este mecanismo?",
+      "opciones": [
+        "Aumentar la producción del producto final cuando su concentración es alta.",
+        "Bloquear de forma permanente la enzima mediante unión covalente.",
+        "Inhibir la última enzima para acumular intermediarios.",
+        "Ajustar la velocidad de la vía a la demanda, evitando gastar sustratos y energía cuando el producto abunda."
+      ],
+      "correcta": "D",
+      "explicacion": "La retroinhibición es una regulación alostérica reversible: cuando hay mucho producto final, se frena el primer paso comprometido y se evita acumular intermediarios y desperdiciar recursos."
+    },
+    {
+      "id": "b1mix083",
+      "subtema": "Acoplamiento energético",
+      "pregunta": "Una reacción tiene ΔG° de +5 kcal/mol y se acopla a la hidrólisis de ATP (ΔG° ≈ −7,3 kcal/mol). ¿Qué se puede decir?",
+      "opciones": [
+        "La reacción acoplada no es posible, porque el ATP no puede transferir energía.",
+        "La reacción global tiene un ΔG negativo y puede ocurrir espontáneamente.",
+        "La reacción global tiene un ΔG positivo de +12,3 kcal/mol.",
+        "El ATP actúa como catalizador y disminuye la energía de activación sin cambiar el ΔG."
+      ],
+      "correcta": "B",
+      "explicacion": "Los ΔG se suman en reacciones acopladas: +5 − 7,3 = −2,3 kcal/mol. La reacción global es exergónica. El ATP aporta energía libre; no actúa como catalizador."
+    },
+    {
+      "id": "b1mix084",
+      "subtema": "Metabolismo: óxido-reducción",
+      "pregunta": "Durante la oxidación completa de la glucosa a CO2, ¿qué ocurre con los electrones?",
+      "opciones": [
+        "Se ganan en la glucosa y se transfieren al O2 directamente.",
+        "Se liberan al medio como electrones libres.",
+        "La glucosa pierde electrones que son transferidos a coenzimas como NAD+ y FAD, y luego a la cadena respiratoria.",
+        "Permanecen en el CO2 formado."
+      ],
+      "correcta": "C",
+      "explicacion": "La oxidación de la glucosa implica la pérdida de electrones, que son captados por NAD+ y FAD (formando NADH y FADH2) y entregados a la cadena de transporte de electrones, hasta el O2 como aceptor final."
+    },
+    {
+      "id": "b1mix085",
+      "subtema": "Fotosíntesis: fase luminosa",
+      "pregunta": "El herbicida DCMU bloquea el flujo de electrones desde el fotosistema II hacia la plastoquinona. ¿Qué efecto principal se espera?",
+      "opciones": [
+        "Se detiene el ciclo de Calvin, pero continúa la liberación de O2.",
+        "Aumenta la producción de NADPH.",
+        "Se acelera la fotólisis del agua.",
+        "Cesa el transporte lineal de electrones, por lo que no se libera O2 ni se produce NADPH."
+      ],
+      "correcta": "D",
+      "explicacion": "El bloqueo entre PSII y la plastoquinona interrumpe el flujo lineal de electrones: el agua no se oxida, no se libera O2 y no se genera NADPH. El flujo cíclico alrededor del PSI podría generar algo de ATP."
+    },
+    {
+      "id": "b1mix086",
+      "subtema": "Fotosíntesis: ciclo de Calvin",
+      "pregunta": "Una planta iluminada y con CO2 se pasa súbitamente a la oscuridad. ¿Cómo cambian a corto plazo los niveles de RuBP y 3-fosfoglicerato (3-PGA)?",
+      "opciones": [
+        "El 3-PGA aumenta y la RuBP disminuye, porque la carboxilación continúa pero no hay ATP ni NADPH para reducir el 3-PGA y regenerar RuBP.",
+        "Ambos aumentan, porque la carboxilación se acelera en la oscuridad.",
+        "El 3-PGA disminuye y la RuBP aumenta, porque deja de formarse 3-PGA.",
+        "Ninguno cambia, porque el ciclo de Calvin no depende de la fase luminosa."
+      ],
+      "correcta": "A",
+      "explicacion": "Sin luz cesa la producción de ATP y NADPH. La RuBisCO sigue carboxilando RuBP unos instantes y forma 3-PGA, pero este no puede reducirse ni regenerar RuBP. Entonces el 3-PGA sube y la RuBP baja."
+    },
+    {
+      "id": "b1mix087",
+      "subtema": "Fotosíntesis: fotorrespiración",
+      "pregunta": "En días muy calurosos y secos, con estomas parcialmente cerrados, las plantas C3 tienden a perder eficiencia fotosintética. ¿Por qué?",
+      "opciones": [
+        "Porque la RuBisCO deja de funcionar por completo a esa temperatura.",
+        "Porque baja el CO2 y sube el O2 internos, lo que favorece la actividad oxigenasa de la RuBisCO (fotorrespiración) y la pérdida de carbono fijado.",
+        "Porque la luz no llega a los cloroplastos.",
+        "Porque se acumula NADPH en exceso que bloquea la fase luminosa."
+      ],
+      "correcta": "B",
+      "explicacion": "Con los estomas cerrados cae el CO2 y aumenta el O2 en la hoja. La RuBisCO usa más O2 y produce fosfoglicolato, que requiere rutas costosas de recuperación con pérdida de CO2: la fotorrespiración. Las plantas C4 la reducen concentrando CO2."
+    },
+    {
+      "id": "b1mix088",
+      "subtema": "Respiración: desacoplantes",
+      "pregunta": "El 2,4-dinitrofenol (DNP) transporta protones a través de la membrana mitocondrial interna. ¿Qué efecto se espera sobre una mitocondria activa?",
+      "opciones": [
+        "Disminuye el consumo de O2 y aumenta la síntesis de ATP.",
+        "Se bloquea la cadena de transporte de electrones y se acumula NADH.",
+        "Aumenta el consumo de O2 mientras disminuye la síntesis de ATP, y parte de la energía se disipa como calor.",
+        "Aumenta el gradiente de protones y se activa la ATP sintasa."
+      ],
+      "correcta": "C",
+      "explicacion": "Al disipar el gradiente de protones, la cadena de electrones continúa (incluso se acelera), por lo que consume más O2, pero no se genera fuerza protón-motriz para la ATP sintasa. La energía se libera como calor."
+    },
+    {
+      "id": "b1mix089",
+      "subtema": "Respiración: inhibidores de la cadena",
+      "pregunta": "El cianuro inhibe el complejo IV de la cadena respiratoria. ¿Qué se espera en una célula aeróbica expuesta a cianuro?",
+      "opciones": [
+        "Se detiene el consumo de O2 y la reoxidación de NADH y FADH2, por lo que el ciclo de Krebs se frena por falta de NAD+ y FAD.",
+        "Aumenta el consumo de O2 para compensar el bloqueo.",
+        "La ATP sintasa trabaja con mayor velocidad.",
+        "El ciclo de Krebs se acelera por acumulación de oxígeno."
+      ],
+      "correcta": "A",
+      "explicacion": "Sin el complejo IV, los electrones no llegan al O2, la cadena queda reducida y no se regeneran NAD+ y FAD. El ciclo de Krebs y la oxidación del piruvato se frenan, y la célula depende de la glucólisis anaeróbica."
+    },
+    {
+      "id": "b1mix090",
+      "subtema": "Fermentación",
+      "pregunta": "En condiciones anaeróbicas, ¿cuál es la función esencial de la fermentación láctica o alcohólica?",
+      "opciones": [
+        "Producir la mayor parte del ATP de la célula a partir del piruvato.",
+        "Generar NADH para la cadena de transporte de electrones.",
+        "Sintetizar glucosa a partir de piruvato.",
+        "Regenerar NAD+ a partir de NADH, lo que permite que la glucólisis continúe y produzca ATP."
+      ],
+      "correcta": "D",
+      "explicacion": "La glucólisis requiere NAD+. Sin O2 la cadena respiratoria no lo regenera; la fermentación reduce el piruvato (o sus derivados) y oxida el NADH a NAD+, lo que permite mantener la glucólisis con su ganancia neta de 2 ATP."
+    }
+  ]
+}
