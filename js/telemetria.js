@@ -2,10 +2,10 @@
 // telemetria.js: perfil técnico seudónimo del dispositivo + diagnóstico.
 // Los eventos no contienen apodo, respuestas ni texto escrito.
 // ==========================================================
-import { rankingActivo, registrarDispositivo, registrarTelemetria } from './ranking.js?v=20261112-dispositivos3';
-import { idDispositivo, perfilDispositivo } from './dispositivo.js?v=20261112-dispositivos3';
+import { rankingActivo, registrarDispositivo, registrarTelemetria } from './ranking.js?v=20261112-dispositivos4';
+import { idDispositivo, perfilDispositivo } from './dispositivo.js?v=20261112-dispositivos4';
 
-const VERSION_APP = '2026.11.12-telemetria1';
+const VERSION_APP = '2026.11.12-telemetria2';
 const cola = [];
 let dispositivoId = null;
 let temporizador = null;
@@ -190,6 +190,8 @@ export async function iniciarTelemetria() {
   }
 
   encolar('app_open');
+  // Enviar la primera tanda ahora: no depender de que el usuario espere 12 s o cierre la pestaña.
+  await vaciar();
 
   window.addEventListener('pagehide', () => {
     encolar('web_vitals', { datos: {
