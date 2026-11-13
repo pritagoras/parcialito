@@ -71,7 +71,9 @@ function inferirFabricante(modelo, ua) {
 
 export function idDispositivo() {
   try {
-    let id = localStorage.getItem('parcialito_dispositivo_id');
+    // Reutiliza el ID anónimo de visitas para poder enlazar también el historial anterior.
+    const visitante = localStorage.getItem('parcialito_visitante');
+    let id = visitante || localStorage.getItem('parcialito_dispositivo_id');
     if (!id) {
       if (crypto.randomUUID) {
         id = crypto.randomUUID();
