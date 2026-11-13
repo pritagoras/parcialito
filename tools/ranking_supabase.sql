@@ -4,9 +4,10 @@
 -- Pasos:
 --  1. Creá una cuenta gratis en https://supabase.com y un proyecto nuevo.
 --  2. En "SQL Editor", pegá TODO este archivo y apretá Run.
---  3. En "Project Settings > API" copiá la URL del proyecto y la clave
+--  3. Para el panel de dispositivos, ejecutá también tools/telemetria_dispositivos.sql.
+--  4. En "Project Settings > API" copiá la URL del proyecto y la clave
 --     "anon" (o "publishable") y pegalas arriba de js/ranking.js.
---  4. Hacé commit y push: el ranking se activa solo.
+--  5. Hacé commit y push: el ranking se activa solo.
 --
 -- La clave anon es pública por diseño. La seguridad la dan estas reglas:
 -- cualquiera puede LEER e INSERTAR partidas, pero nadie puede editar
