@@ -17,10 +17,11 @@ body.admin-dashboard{height:100vh;height:100dvh;overflow:hidden}
 .dashboard .toolbar{flex:0 0 auto;display:flex;margin:0 0 11px}
 .dashboard .toolbar input{min-width:0;padding:10px 13px}
 .dashboard .layout{flex:1 1 auto;min-height:0;overflow:hidden;grid-template-columns:minmax(300px,.78fr) minmax(0,2fr);gap:12px}
-.dashboard .layout>.panel{min-height:0;overflow:hidden;border-radius:14px;padding:16px}
+.dashboard .layout>.panel{min-height:0;border-radius:14px;padding:16px}
+.dashboard .layout>.sessions-panel{overflow:hidden}
 .dashboard .sessions-panel{display:flex;flex-direction:column}
 .dashboard .section-title{flex:0 0 auto;padding:0 2px 11px;border-bottom:1px solid var(--line)}
-.dashboard .list{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;margin-top:9px;padding:0 5px 12px 0;scrollbar-width:thin;scrollbar-color:#66558a transparent}
+.dashboard .list{flex:1 1 auto;min-height:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;margin-top:9px;padding:0 5px 12px 0;scrollbar-width:thin;scrollbar-color:#66558a transparent}
 .dashboard .visitor{padding:12px;margin:0}
 .dashboard .visitor small{line-height:1.5}
 .dashboard .detail-panel{overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding:20px 24px 26px;scrollbar-width:thin;scrollbar-color:#66558a transparent}
