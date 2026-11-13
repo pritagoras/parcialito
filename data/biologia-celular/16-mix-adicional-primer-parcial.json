@@ -1,0 +1,528 @@
+{
+  "materia": "Biología 1",
+  "tema": "Preguntas adicionales · Mix Primer Parcial",
+  "version": 1,
+  "descripcion": "Banco independiente de preguntas nuevas para sumar al mix del Primer Parcial. Se puede retirar eliminando este archivo y revirtiendo su carga en js/app.js.",
+  "preguntas": [
+    {
+      "id": "b1mix001",
+      "subtema": "Bacteriófagos · ciclo lítico y lisogénico",
+      "pregunta": "Un bacteriófago temperado infecta una bacteria y su genoma queda integrado en el cromosoma bacteriano. ¿Qué puede ocurrir mientras permanece en ese estado?",
+      "opciones": [
+        "El profago se replica junto con el ADN bacteriano y puede transmitirse a las células hijas.",
+        "La cápside viral se divide por fisión binaria y origina nuevos fagos fuera de la bacteria.",
+        "El genoma viral se traduce directamente en ATP para mantener el metabolismo bacteriano.",
+        "La bacteria pierde necesariamente su capacidad de replicar su propio ADN."
+      ],
+      "correcta": "A",
+      "explicacion": "En la lisogenia, el genoma del fago integrado se denomina profago y se replica junto con el cromosoma bacteriano. Ante determinados estímulos puede inducirse y pasar al ciclo lítico."
+    },
+    {
+      "id": "b1mix002",
+      "subtema": "Bacteriófagos · infección",
+      "pregunta": "En la infección de una bacteria por un fago T4, ¿qué función cumplen principalmente las fibras caudales?",
+      "opciones": [
+        "Sintetizar proteínas de la cápside utilizando ribosomas virales.",
+        "Reconocer receptores específicos de la superficie bacteriana y favorecer la adsorción.",
+        "Degradar el ADN bacteriano antes de que el fago se adhiera.",
+        "Producir la energía necesaria para la replicación del genoma viral."
+      ],
+      "correcta": "B",
+      "explicacion": "Las fibras caudales reconocen receptores específicos de la superficie bacteriana y permiten la adsorción del fago. La especificidad de unión contribuye a determinar qué bacterias puede infectar."
+    },
+    {
+      "id": "b1mix003",
+      "subtema": "Virus · envoltura y cápside",
+      "pregunta": "Un virus envuelto pierde su envoltura lipídica por acción de detergentes. ¿Qué consecuencia es más probable?",
+      "opciones": [
+        "Aumenta su capacidad de infectar porque queda expuesto el genoma.",
+        "Se transforma en una bacteria con metabolismo independiente.",
+        "Puede perder la capacidad de reconocer o fusionarse con la célula hospedadora, aunque conserve la cápside.",
+        "Su genoma cambia necesariamente de ARN a ADN."
+      ],
+      "correcta": "C",
+      "explicacion": "La envoltura contiene proteínas virales implicadas en el reconocimiento y entrada a la célula. Los detergentes desorganizan la bicapa lipídica y pueden inactivar al virus envuelto."
+    },
+    {
+      "id": "b1mix004",
+      "subtema": "Virus · replicación",
+      "pregunta": "¿Por qué la multiplicación de un virus no equivale a la reproducción por división celular?",
+      "opciones": [
+        "Porque los virus aumentan de tamaño hasta separarse en dos partículas idénticas.",
+        "Porque cada virus duplica sus organelas antes de dividirse.",
+        "Porque los virus producen energía mediante respiración y luego forman una yema.",
+        "Porque sus componentes se sintetizan usando la maquinaria de la célula y luego se ensamblan en nuevas partículas."
+      ],
+      "correcta": "D",
+      "explicacion": "Los virus no crecen ni se dividen como células. El genoma y las proteínas virales se producen por separado utilizando recursos de la célula hospedadora y luego se ensamblan."
+    },
+    {
+      "id": "b1mix005",
+      "subtema": "Niveles de organización · teoría celular",
+      "pregunta": "Una estructura aislada contiene ADN, proteínas y una membrana, pero no puede mantener por sí misma las funciones vitales. ¿Qué conclusión es compatible con la teoría celular?",
+      "opciones": [
+        "La presencia de macromoléculas no basta para considerarla una célula viva funcional.",
+        "Toda estructura rodeada por membrana constituye necesariamente un organismo.",
+        "La vida aparece en el nivel molecular siempre que exista ADN.",
+        "La estructura debe clasificarse como tejido por tener varios componentes."
+      ],
+      "correcta": "A",
+      "explicacion": "La célula es la unidad estructural y funcional básica de los seres vivos. La presencia de moléculas biológicas o de una membrana, por sí sola, no implica autonomía celular."
+    },
+    {
+      "id": "b1mix006",
+      "subtema": "Niveles de organización · sistemas",
+      "pregunta": "¿Cuál de los siguientes ejemplos representa una propiedad emergente que aparece en un nivel de organización superior al molecular?",
+      "opciones": [
+        "La carga eléctrica de un ion.",
+        "La capacidad de una célula de mantener un metabolismo integrado y autorregularse.",
+        "La formación de un enlace covalente entre dos átomos.",
+        "La composición elemental de una molécula de agua."
+      ],
+      "correcta": "B",
+      "explicacion": "La organización celular integra moléculas y estructuras en una unidad capaz de realizar funciones vitales coordinadas. Esas propiedades no se explican por una molécula aislada."
+    },
+    {
+      "id": "b1mix007",
+      "subtema": "Célula eucariota · organelas",
+      "pregunta": "Una célula sintetiza una proteína destinada a ser secretada al medio extracelular. ¿Qué recorrido intracelular es el más probable?",
+      "opciones": [
+        "Ribosoma libre → núcleo → lisosoma → membrana plasmática.",
+        "Mitocondria → retículo liso → peroxisoma → exterior.",
+        "Ribosoma asociado al RER → vesículas de transporte → aparato de Golgi → vesículas secretoras.",
+        "Cloroplasto → aparato de Golgi → núcleo → exterior."
+      ],
+      "correcta": "C",
+      "explicacion": "Las proteínas de secreción ingresan al RER durante su síntesis, pasan en vesículas al Golgi para su procesamiento y clasificación, y luego son transportadas en vesículas hacia la membrana."
+    },
+    {
+      "id": "b1mix008",
+      "subtema": "Célula eucariota · compartimentalización",
+      "pregunta": "¿Qué ventaja funcional ofrece la compartimentalización de una célula eucariota?",
+      "opciones": [
+        "Impide que ocurran reacciones químicas simultáneas.",
+        "Elimina la necesidad de enzimas específicas.",
+        "Hace que todas las organelas tengan el mismo pH.",
+        "Permite mantener condiciones y procesos especializados en distintos compartimentos."
+      ],
+      "correcta": "D",
+      "explicacion": "Las membranas internas permiten separar procesos, concentrar enzimas y sustratos y mantener condiciones particulares, como pH o composición iónica, en cada organela."
+    },
+    {
+      "id": "b1mix009",
+      "subtema": "Célula procariota · organización",
+      "pregunta": "¿Cuál de las siguientes afirmaciones distingue correctamente a una bacteria de una célula eucariota?",
+      "opciones": [
+        "La bacteria carece de membrana plasmática y de ribosomas.",
+        "La bacteria no posee núcleo rodeado por envoltura nuclear, y su ADN se localiza en el nucleoide.",
+        "La bacteria carece de material genético y obtiene información del medio.",
+        "La bacteria posee mitocondrias pequeñas para realizar la respiración."
+      ],
+      "correcta": "B",
+      "explicacion": "Las bacterias son procariotas: no tienen núcleo membranoso ni organelas membranosas, pero sí poseen ADN concentrado en el nucleoide, ribosomas y membrana plasmática."
+    },
+    {
+      "id": "b1mix010",
+      "subtema": "Célula procariota · pared celular",
+      "pregunta": "Una sustancia inhibe la síntesis de peptidoglicano. ¿Qué estructura bacteriana se verá afectada de manera directa?",
+      "opciones": [
+        "La pared celular, cuya rigidez contribuye a evitar la lisis osmótica.",
+        "La membrana plasmática, formada exclusivamente por peptidoglicano.",
+        "Los ribosomas 70S, que están constituidos por cadenas de mureína.",
+        "El nucleoide, cuya doble hélice está formada por peptidoglicano."
+      ],
+      "correcta": "A",
+      "explicacion": "El peptidoglicano o mureína es un componente estructural de la pared bacteriana. Su inhibición debilita la pared y puede favorecer la ruptura celular por presión osmótica."
+    },
+    {
+      "id": "b1mix011",
+      "subtema": "Citoesqueleto · microtúbulos",
+      "pregunta": "Una droga impide la polimerización de tubulina. ¿Cuál de los siguientes procesos se afectará más directamente?",
+      "opciones": [
+        "La formación de enlaces peptídicos en los ribosomas.",
+        "La síntesis de fosfolípidos en el retículo endoplasmático liso.",
+        "El movimiento de cilios y flagelos eucariotas y la organización del huso mitótico.",
+        "La formación de la bicapa lipídica de la membrana plasmática."
+      ],
+      "correcta": "C",
+      "explicacion": "Los microtúbulos están formados por tubulina y participan en el huso mitótico, cilios, flagelos y transporte intracelular. La inhibición de su polimerización altera estas funciones."
+    },
+    {
+      "id": "b1mix012",
+      "subtema": "Citoesqueleto · filamentos",
+      "pregunta": "¿Qué asociación entre componente del citoesqueleto y función es correcta?",
+      "opciones": [
+        "Microfilamentos de actina: resistencia mecánica principal de la lámina nuclear.",
+        "Filamentos intermedios: generación de ATP por fosforilación oxidativa.",
+        "Microtúbulos: formación de la bicapa de fosfolípidos.",
+        "Microfilamentos de actina: cambios de forma celular y participación en la contracción."
+      ],
+      "correcta": "D",
+      "explicacion": "Los microfilamentos de actina intervienen en cambios de forma, motilidad y contracción. Los filamentos intermedios aportan resistencia mecánica y los microtúbulos organizan estructuras como el huso."
+    },
+    {
+      "id": "b1mix013",
+      "subtema": "Sistema de endomembranas · tráfico vesicular",
+      "pregunta": "Una proteína residente del retículo endoplasmático debe permanecer en esa organela. ¿Qué mecanismo contribuye a evitar que se pierda durante el tráfico vesicular?",
+      "opciones": [
+        "Su degradación inmediata en el citosol.",
+        "La presencia de señales de recuperación que permiten devolverla al retículo.",
+        "Su conversión en un fosfolípido de membrana.",
+        "La salida permanente hacia el espacio extracelular."
+      ],
+      "correcta": "B",
+      "explicacion": "Las proteínas residentes del retículo poseen señales de retención o recuperación. Si escapan hacia compartimentos posteriores, pueden ser reconocidas y transportadas de regreso."
+    },
+    {
+      "id": "b1mix014",
+      "subtema": "Sistema de endomembranas · Golgi",
+      "pregunta": "Una alteración impide la modificación y clasificación de proteínas en el aparato de Golgi. ¿Qué función celular se verá comprometida de manera más directa?",
+      "opciones": [
+        "La replicación del ADN nuclear.",
+        "La producción de ATP en la cadena respiratoria.",
+        "El procesamiento y direccionamiento de proteínas hacia sus destinos celulares.",
+        "La traducción inicial de todas las proteínas citosólicas."
+      ],
+      "correcta": "C",
+      "explicacion": "El Golgi modifica, clasifica y empaqueta proteínas y lípidos recibidos principalmente del retículo endoplasmático. Su alteración afecta la distribución de estas moléculas."
+    },
+    {
+      "id": "b1mix015",
+      "subtema": "Enzimas · cinética",
+      "pregunta": "En una reacción enzimática, se aumenta mucho la concentración de sustrato y la velocidad deja de incrementarse. ¿Cuál es la explicación más adecuada?",
+      "opciones": [
+        "La enzima alcanzó la saturación: la mayoría de sus sitios activos están ocupados.",
+        "El sustrato se convirtió necesariamente en un inhibidor irreversible.",
+        "La enzima elevó la energía de activación hasta bloquear la reacción.",
+        "La reacción dejó de ser química y pasó a ser un proceso físico."
+      ],
+      "correcta": "A",
+      "explicacion": "Al aumentar la concentración de sustrato, la velocidad crece hasta aproximarse a una velocidad máxima cuando los sitios activos están ocupados la mayor parte del tiempo."
+    },
+    {
+      "id": "b1mix016",
+      "subtema": "Enzimas · regulación",
+      "pregunta": "Un inhibidor se une a un sitio distinto del sitio activo y modifica la conformación de la enzima. ¿Qué tipo de regulación describe?",
+      "opciones": [
+        "Inhibición competitiva por ocupación del sitio activo.",
+        "Desnaturalización obligatoria por aumento de temperatura.",
+        "Inhibición alostérica, que modifica la actividad mediante un cambio conformacional.",
+        "Hidrólisis del sustrato antes de que se una a la enzima."
+      ],
+      "correcta": "C",
+      "explicacion": "Los moduladores alostéricos se unen a un sitio diferente del activo y provocan cambios conformacionales que pueden disminuir o aumentar la actividad catalítica."
+    },
+    {
+      "id": "b1mix017",
+      "subtema": "Fotosíntesis · fase luminosa",
+      "pregunta": "Durante la fase luminosa de la fotosíntesis, la fotólisis del agua cumple principalmente la función de:",
+      "opciones": [
+        "Fijar directamente el CO₂ en moléculas orgánicas.",
+        "Aportar electrones y protones al proceso y liberar O₂ como producto.",
+        "Consumir el oxígeno para formar glucosa en el estroma.",
+        "Oxidar la glucosa para producir NADH."
+      ],
+      "correcta": "B",
+      "explicacion": "La fotólisis del agua repone los electrones que pierde el fotosistema II, aporta protones y libera oxígeno molecular. El O₂ desprendido proviene del agua."
+    },
+    {
+      "id": "b1mix018",
+      "subtema": "Fotosíntesis · ciclo de Calvin",
+      "pregunta": "Si una planta recibe luz, pero se bloquea la fijación de CO₂ en el ciclo de Calvin, ¿qué consecuencia se espera?",
+      "opciones": [
+        "La fase luminosa deja de requerir agua y produce más glucosa.",
+        "Se incrementa la liberación de CO₂ por fotólisis.",
+        "Se detiene la síntesis de clorofila de manera instantánea.",
+        "Disminuye la formación de compuestos orgánicos a partir de carbono inorgánico, aunque la fase luminosa pueda seguir transitoriamente."
+      ],
+      "correcta": "D",
+      "explicacion": "El ciclo de Calvin incorpora carbono del CO₂ y utiliza ATP y NADPH para formar compuestos orgánicos. La fase luminosa produce ATP y NADPH, pero no fija por sí misma el carbono."
+    },
+    {
+      "id": "b1mix019",
+      "subtema": "Glúcidos · enlaces",
+      "pregunta": "La hidrólisis de un disacárido produce dos monosacáridos. ¿Qué tipo de enlace se rompe durante ese proceso?",
+      "opciones": [
+        "Un enlace peptídico entre aminoácidos.",
+        "Un enlace fosfodiéster entre nucleótidos.",
+        "Un enlace glucosídico entre las unidades de monosacáridos.",
+        "Un puente disulfuro entre cadenas polipeptídicas."
+      ],
+      "correcta": "C",
+      "explicacion": "Los monosacáridos se unen mediante enlaces glucosídicos para formar di- y polisacáridos. La hidrólisis incorpora agua y rompe ese enlace."
+    },
+    {
+      "id": "b1mix020",
+      "subtema": "Glúcidos · reserva y estructura",
+      "pregunta": "¿Qué comparación entre almidón y glucógeno es correcta?",
+      "opciones": [
+        "Ambos son polisacáridos de reserva, pero el glucógeno presenta mayor grado de ramificación.",
+        "El almidón es un lípido de reserva y el glucógeno un polisacárido estructural.",
+        "El glucógeno se encuentra exclusivamente en vegetales y el almidón en animales.",
+        "Ambos están formados por aminoácidos unidos mediante enlaces peptídicos."
+      ],
+      "correcta": "A",
+      "explicacion": "Almidón y glucógeno son homopolisacáridos de glucosa de reserva. El glucógeno, característico de animales y hongos, posee una estructura más ramificada que la amilopectina."
+    },
+    {
+      "id": "b1mix021",
+      "subtema": "Lípidos · ácidos grasos",
+      "pregunta": "A igual longitud de cadena, un ácido graso con más dobles enlaces cis suele presentar un punto de fusión menor porque:",
+      "opciones": [
+        "Los dobles enlaces aumentan la cantidad de grupos carboxilo.",
+        "Las insaturaciones generan curvaturas que dificultan el empaquetamiento de las cadenas.",
+        "Las cadenas se vuelven completamente hidrosolubles.",
+        "Los dobles enlaces convierten al ácido graso en un aminoácido."
+      ],
+      "correcta": "B",
+      "explicacion": "Los dobles enlaces cis introducen codos en las cadenas hidrocarbonadas, reducen el empaquetamiento y las interacciones entre ellas, disminuyendo el punto de fusión."
+    },
+    {
+      "id": "b1mix022",
+      "subtema": "Lípidos · clasificación",
+      "pregunta": "¿Cuál de las siguientes moléculas es un lípido saponificable?",
+      "opciones": [
+        "Colesterol, por ser un esterol sin ácidos grasos esterificados.",
+        "Una vitamina liposoluble del grupo de los terpenos.",
+        "Un ácido nucleico unido a una proteína.",
+        "Un triacilglicérido, porque contiene enlaces éster susceptibles de hidrólisis alcalina."
+      ],
+      "correcta": "D",
+      "explicacion": "Los triacilglicéridos contienen ácidos grasos unidos al glicerol mediante enlaces éster, que pueden hidrolizarse en una reacción de saponificación. Los esteroides no son saponificables."
+    },
+    {
+      "id": "b1mix023",
+      "subtema": "Membrana plasmática · transporte",
+      "pregunta": "Una célula se coloca en un medio hipertónico respecto de su citoplasma. Si la membrana es permeable al agua pero no al soluto, ¿qué ocurrirá inicialmente?",
+      "opciones": [
+        "El agua ingresará a la célula y aumentará su volumen.",
+        "No habrá movimiento neto de agua porque el medio tiene más soluto.",
+        "El agua saldrá de la célula y su volumen disminuirá.",
+        "El soluto externo ingresará por ósmosis sin intervención de proteínas."
+      ],
+      "correcta": "C",
+      "explicacion": "En un medio hipertónico hay mayor concentración efectiva de solutos fuera de la célula. El agua se desplaza por ósmosis hacia el compartimento de mayor concentración de solutos, por lo que la célula pierde agua."
+    },
+    {
+      "id": "b1mix024",
+      "subtema": "Membrana plasmática · proteínas",
+      "pregunta": "Una proteína integral atraviesa la bicapa y permite el paso de un ion a favor de su gradiente electroquímico. ¿Qué mecanismo representa?",
+      "opciones": [
+        "Difusión facilitada, un transporte pasivo mediado por proteínas.",
+        "Transporte activo primario, porque todo ion requiere ATP.",
+        "Fagocitosis, porque el ion queda rodeado por membrana.",
+        "Difusión simple a través del centro hidrofóbico de la bicapa."
+      ],
+      "correcta": "A",
+      "explicacion": "Los iones no atraviesan fácilmente el núcleo hidrofóbico de la bicapa. Si pasan a favor de su gradiente mediante un canal o transportador, se trata de difusión facilitada y no requiere ATP directamente."
+    },
+    {
+      "id": "b1mix025",
+      "subtema": "Metabolismo · acoplamiento energético",
+      "pregunta": "Una reacción endergónica puede ocurrir en la célula cuando se acopla a la hidrólisis de ATP. ¿Cuál es la razón?",
+      "opciones": [
+        "El ATP transforma cualquier reacción en una reacción de oxidación.",
+        "La energía liberada por la hidrólisis puede impulsar el proceso si la variación total de energía libre resulta favorable.",
+        "El ATP disminuye la temperatura de la célula hasta alcanzar el equilibrio.",
+        "La hidrólisis de ATP evita que las enzimas participen en la reacción."
+      ],
+      "correcta": "B",
+      "explicacion": "El acoplamiento permite que la energía liberada por la hidrólisis de ATP compense el requerimiento energético de una reacción endergónica, haciendo favorable el proceso global."
+    },
+    {
+      "id": "b1mix026",
+      "subtema": "Metabolismo · óxido-reducción",
+      "pregunta": "En una reacción metabólica, una molécula pierde electrones. ¿Cómo se describe ese proceso?",
+      "opciones": [
+        "Reducción, porque pierde carga negativa.",
+        "Hidrólisis, porque incorpora agua.",
+        "Fosforilación, porque recibe un grupo fosfato.",
+        "Oxidación, porque cede electrones."
+      ],
+      "correcta": "D",
+      "explicacion": "La oxidación implica pérdida de electrones y la reducción implica ganancia. En muchas vías metabólicas estas transferencias se acoplan y son transportadas por coenzimas como NAD⁺."
+    },
+    {
+      "id": "b1mix027",
+      "subtema": "Nucleótidos · estructura",
+      "pregunta": "¿Cuál es la diferencia estructural entre un nucleósido y un nucleótido?",
+      "opciones": [
+        "El nucleósido posee base y pentosa; el nucleótido incorpora además uno o más grupos fosfato.",
+        "El nucleósido posee fosfato y el nucleótido pierde la base nitrogenada.",
+        "El nucleótido tiene aminoácidos en lugar de pentosa.",
+        "No existe diferencia: ambos términos designan exactamente la misma molécula."
+      ],
+      "correcta": "A",
+      "explicacion": "Un nucleósido está formado por una base nitrogenada unida a una pentosa. Cuando se agrega uno o más grupos fosfato se obtiene un nucleótido."
+    },
+    {
+      "id": "b1mix028",
+      "subtema": "Ácidos nucleicos · complementariedad",
+      "pregunta": "En una molécula de ADN bicatenario, una hebra presenta la secuencia 5'-A G T C-3'. ¿Cuál es la secuencia complementaria y antiparalela?",
+      "opciones": [
+        "5'-A G T C-3'.",
+        "5'-T C A G-3'.",
+        "3'-T C A G-5'.",
+        "3'-A G T C-5'."
+      ],
+      "correcta": "C",
+      "explicacion": "Las bases se aparean A-T y G-C, y las hebras son antiparalelas. La complementaria escrita de 3' a 5' es 3'-T C A G-5'."
+    },
+    {
+      "id": "b1mix029",
+      "subtema": "Proteínas · estructura",
+      "pregunta": "Una mutación cambia un aminoácido por otro con propiedades químicas muy diferentes en una región interna de una proteína. ¿Qué efecto podría producir?",
+      "opciones": [
+        "Ninguno, porque la secuencia de aminoácidos no influye en el plegamiento.",
+        "Una alteración de las interacciones que estabilizan la estructura tridimensional y, eventualmente, de la función.",
+        "La conversión automática de la proteína en un polisacárido.",
+        "La ruptura de todos los enlaces peptídicos de la cadena."
+      ],
+      "correcta": "B",
+      "explicacion": "La secuencia primaria condiciona el plegamiento. Un cambio de aminoácido, especialmente si altera carga, polaridad o tamaño en una región interna, puede modificar interacciones y afectar la conformación y función."
+    },
+    {
+      "id": "b1mix030",
+      "subtema": "Proteínas · desnaturalización",
+      "pregunta": "Una proteína pierde su conformación tridimensional por exposición a temperaturas elevadas, pero sus enlaces peptídicos permanecen intactos. ¿Qué ocurrió?",
+      "opciones": [
+        "Se hidrolizó completamente hasta aminoácidos.",
+        "Se modificó la secuencia primaria por sustitución de aminoácidos.",
+        "Se replicó su cadena polipeptídica.",
+        "Se desnaturalizó, alterándose estructuras superiores sin romper necesariamente la estructura primaria."
+      ],
+      "correcta": "D",
+      "explicacion": "La desnaturalización altera interacciones que mantienen las estructuras secundaria, terciaria o cuaternaria. No implica necesariamente la ruptura de los enlaces peptídicos de la estructura primaria."
+    },
+    {
+      "id": "b1mix031",
+      "subtema": "Química general · enlaces",
+      "pregunta": "¿Por qué el agua es una molécula polar?",
+      "opciones": [
+        "Porque el oxígeno y los hidrógenos comparten los electrones de manera perfectamente simétrica.",
+        "Porque los enlaces O-H son polares y la geometría angular impide que se cancelen los dipolos.",
+        "Porque posee una carga neta positiva en el oxígeno.",
+        "Porque sus átomos se unen mediante enlaces iónicos."
+      ],
+      "correcta": "B",
+      "explicacion": "El oxígeno es más electronegativo que el hidrógeno y atrae con mayor intensidad los electrones compartidos. La geometría angular de la molécula hace que los dipolos no se cancelen."
+    },
+    {
+      "id": "b1mix032",
+      "subtema": "Agua · propiedades",
+      "pregunta": "La elevada capacidad calorífica del agua contribuye a la estabilidad térmica de los organismos porque:",
+      "opciones": [
+        "El agua cambia de temperatura muy poco al absorber o liberar cantidades relativamente grandes de calor.",
+        "El agua no puede formar puentes de hidrógeno.",
+        "El agua convierte toda la energía térmica en energía química.",
+        "El agua tiene menor calor específico que la mayoría de las sustancias biológicas."
+      ],
+      "correcta": "A",
+      "explicacion": "Los puentes de hidrógeno requieren energía para reorganizarse. Por eso el agua puede absorber o liberar bastante calor con cambios relativamente pequeños de temperatura, amortiguando variaciones térmicas."
+    },
+    {
+      "id": "b1mix033",
+      "subtema": "Respiración celular · glucólisis",
+      "pregunta": "En condiciones en las que no hay oxígeno disponible, una célula puede mantener la glucólisis si:",
+      "opciones": [
+        "El ciclo de Krebs produce oxígeno para la glucólisis.",
+        "La cadena respiratoria transforma piruvato en glucosa.",
+        "Regenera NAD⁺ mediante una vía fermentativa que permite continuar la oxidación de glucosa.",
+        "La mitocondria sintetiza ATP sin transferir electrones."
+      ],
+      "correcta": "C",
+      "explicacion": "La glucólisis necesita NAD⁺. En ausencia de una cadena respiratoria funcional, la fermentación regenera NAD⁺ a partir de NADH y permite que la glucólisis continúe produciendo ATP por fosforilación a nivel de sustrato."
+    },
+    {
+      "id": "b1mix034",
+      "subtema": "Respiración celular · cadena respiratoria",
+      "pregunta": "En la respiración aeróbica, el oxígeno cumple la función de:",
+      "opciones": [
+        "Donar los carbonos que formarán la glucosa.",
+        "Ser el aceptor final de electrones en la cadena de transporte, reduciéndose a agua.",
+        "Actuar como enzima que cataliza la glucólisis.",
+        "Aceptar grupos fosfato directamente para formar ATP en el citosol."
+      ],
+      "correcta": "B",
+      "explicacion": "El oxígeno es el aceptor final de electrones de la cadena respiratoria. Al combinarse con electrones y protones forma agua, permitiendo que el flujo electrónico continúe."
+    },
+    {
+      "id": "b1mix035",
+      "subtema": "Viroides y priones · agentes infecciosos",
+      "pregunta": "¿Qué característica diferencia a un prion de un virus?",
+      "opciones": [
+        "El prion es una proteína infecciosa mal plegada y carece de ácido nucleico propio.",
+        "El prion posee ADN rodeado por una cápside proteica.",
+        "El prion es una bacteria sin pared celular.",
+        "El prion es un ARN circular que infecta exclusivamente plantas."
+      ],
+      "correcta": "A",
+      "explicacion": "Los priones son formas anómalas de proteínas capaces de inducir el mal plegamiento de proteínas normales. No contienen genoma de ADN o ARN como los virus."
+    },
+    {
+      "id": "b1mix036",
+      "subtema": "Viroides y priones · viroides",
+      "pregunta": "¿Qué propiedad permite distinguir a un viroide de un virus vegetal?",
+      "opciones": [
+        "El viroide posee una cápside icosaédrica y una envoltura lipídica.",
+        "El viroide codifica una polimerasa propia y múltiples proteínas estructurales.",
+        "El viroide es una célula procariota de pequeño tamaño.",
+        "El viroide consiste en ARN pequeño circular desnudo, sin cápside ni capacidad de codificar proteínas."
+      ],
+      "correcta": "D",
+      "explicacion": "Los viroides son agentes infecciosos constituidos por ARN circular desnudo, sin cápside y sin capacidad codificante para producir proteínas. Infectan plantas."
+    },
+    {
+      "id": "b1mix037",
+      "subtema": "Virus médicos · retrovirus",
+      "pregunta": "¿Qué enzima permite al HIV sintetizar ADN a partir de su genoma de ARN?",
+      "opciones": [
+        "ADN ligasa bacteriana.",
+        "Transcriptasa inversa.",
+        "ARN polimerasa de cloroplasto.",
+        "Peptidil transferasa ribosomal."
+      ],
+      "correcta": "B",
+      "explicacion": "Como retrovirus, el HIV utiliza transcriptasa inversa para sintetizar ADN complementario a partir de su ARN. Ese ADN puede integrarse en el genoma de la célula hospedadora."
+    },
+    {
+      "id": "b1mix038",
+      "subtema": "Virus médicos · vacunas",
+      "pregunta": "¿Cuál es el objetivo inmunológico principal de una vacuna?",
+      "opciones": [
+        "Producir una infección clínica intensa para agotar al sistema inmune.",
+        "Eliminar todos los microorganismos del ambiente antes de que contacten al organismo.",
+        "Inducir memoria inmunológica específica para responder con mayor rapidez ante una exposición posterior.",
+        "Reemplazar de manera permanente a los linfocitos por anticuerpos circulantes."
+      ],
+      "correcta": "C",
+      "explicacion": "Las vacunas exponen al sistema inmunitario a antígenos de manera controlada para inducir respuestas adaptativas y memoria inmunológica, de modo que una exposición posterior genere una respuesta más rápida y eficaz."
+    },
+    {
+      "id": "b1mix039",
+      "subtema": "Integración · membrana y metabolismo",
+      "pregunta": "Una célula animal incorpora glucosa mediante un transportador que la mueve a favor de su gradiente. Luego utiliza esa glucosa en una vía que produce ATP. ¿Qué afirmación integra correctamente ambos procesos?",
+      "opciones": [
+        "El ingreso por difusión facilitada no consume ATP directamente, mientras que la degradación metabólica puede transferir parte de la energía de la glucosa al ATP.",
+        "El transportador hidroliza glucosa y la convierte directamente en ATP.",
+        "La glucosa atraviesa la bicapa por difusión simple porque es una molécula apolar.",
+        "El ingreso de glucosa es transporte activo primario porque toda molécula nutritiva requiere ATP."
+      ],
+      "correcta": "A",
+      "explicacion": "El transporte facilitado utiliza una proteína y ocurre a favor del gradiente sin gasto directo de ATP. Una vez dentro, la glucosa puede degradarse en rutas catabólicas que conservan parte de su energía en ATP."
+    },
+    {
+      "id": "b1mix040",
+      "subtema": "Integración · biomoléculas y organelas",
+      "pregunta": "Una proteína de membrana se sintetiza en ribosomas asociados al RER y luego se incorpora a la membrana plasmática. ¿Qué combinación de conceptos explica mejor el proceso?",
+      "opciones": [
+        "La proteína se sintetiza en el núcleo y atraviesa la bicapa por ósmosis.",
+        "La proteína se forma en el citosol y se transforma en un fosfolípido en el Golgi.",
+        "La proteína se sintetiza en ribosomas libres y se transporta por difusión simple a través de la bicapa.",
+        "La información del ADN se expresa mediante traducción en ribosomas del RER y la proteína se distribuye mediante tráfico vesicular."
+      ],
+      "correcta": "D",
+      "explicacion": "Las proteínas destinadas a membranas ingresan a la vía secretora durante su síntesis en ribosomas asociados al RER. Luego son procesadas y transportadas mediante vesículas hasta su destino."
+    }
+  ]
+}
