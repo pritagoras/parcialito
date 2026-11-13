@@ -874,7 +874,7 @@ function vistaInicio() {
   document.getElementById('btn-sp-primer')?.addEventListener('click', () => { Sonido.clic(); lanzarPrimerParcial(); });
   document.getElementById('btn-sp-ciclo')?.addEventListener('click', () => { Sonido.clic(); lanzarSegundoParcial(); });
   document.getElementById('btn-sp-mixto')?.addEventListener('click', () => { Sonido.clic(); lanzarSimulacroMixto(); });
-  document.getElementById('btn-sp-temas')?.addEventListener('click', () => { Sonido.clic(); vistaEstudioSegundoParcial(); });
+  document.getElementById('btn-sp-temas')?.addEventListener('click', () => { Sonido.clic(); vistaEstudioBiologiaPorParcial(); });
   document.getElementById('btn-sp-banco')?.addEventListener('click', () => { Sonido.clic(); vistaBancoSegundoParcial(); });
   document.getElementById('btn-megaclase')?.addEventListener('click', () => { Sonido.clic(); lanzarMegaclase(); });
   document.getElementById('btn-lab')?.addEventListener('click', () => { Sonido.clic(); abrirLab({ app, volver: vistaInicio }); });
@@ -1071,13 +1071,111 @@ function preguntasDeTemaSegundoParcial(pool, tema) {
   return pool.filter((q) => tema.patron.test(normalizarTerminoBanco(`${q.texto} ${q.explicacion || ''}`)));
 }
 
+const TEMAS_PRIMER_PARCIAL = [
+  { id: 'virus', nombre: 'Virus, bacteriófagos, viroides y priones', icono: '🦠', descripcion: 'Estructura viral, ciclos de infección y agentes subvirales.', patron: /\b(virus|viral|virion|bacteriofag|fago|capside|profago|lisogen|litic|viroide|prion|envoltura viral)\b/ },
+  { id: 'celula', nombre: 'Organización celular', icono: '🔬', descripcion: 'Células procariotas y eucariotas, organelas y niveles de organización.', patron: /\b(celula|procari|eucari|organelas?|organelo|nucleo|nucleolo|ribosoma|citoesqueleto|centriolo|pared celular|bacteria|arquea)\b/ },
+  { id: 'membrana', nombre: 'Membranas y transporte', icono: '🫧', descripcion: 'Membrana plasmática, lípidos, proteínas y transporte celular.', patron: /\b(membrana|fosfolipid|glucolipid|colesterol|bicapa|difusion|osmosis|transporte|canal ionico|bomba|endocitosis|exocitosis)\b/ },
+  { id: 'biomoleculas', nombre: 'Biomoléculas y ácidos nucleicos', icono: '🧬', descripcion: 'Agua, glúcidos, lípidos, proteínas, nucleótidos y ADN/ARN.', patron: /\b(agua|glucid|carbohidrat|monosacar|disacar|polisacar|lipid|acido graso|triglicer|proteina|aminoacid|enzima|nucleotid|adn|arn|base nitrogenada|chargaff|fosfodiester)\b/ },
+  { id: 'metabolismo', nombre: 'Metabolismo y energía', icono: '⚡', descripcion: 'Enzimas, reacciones metabólicas, respiración y fotosíntesis.', patron: /\b(metabol|atp|respiracion|glucolisis|krebs|cadena respiratoria|fermentacion|fotosintesis|cloroplast|tilacoide|enzim|sustrato|catalisis)\b/ },
+  { id: 'integracion', nombre: 'Integración y conceptos generales', icono: '🧩', descripcion: 'Preguntas integradoras y conceptos que atraviesan varios temas.', patron: null }
+];
+
+function clasificarPreguntaPrimerParcial(q) {
+  const contenido = normalizarTerminoBanco([
+    q.subtema, q.tema, q.pregunta, q.texto, q.explicacion,
+    ...(q.opciones || [])
+  ].join(' '));
+  for (const tema of TEMAS_PRIMER_PARCIAL) {
+    if (tema.id !== 'integracion' && tema.patron.test(contenido)) return tema.id;
+  }
+  return 'integracion';
+}
+
+function preguntasDeTemaPrimerParcial(pool, tema) {
+  return pool.filter((q) => clasificarPreguntaPrimerParcial(q) === tema.id);
+}
+
+function vistaEstudioBiologiaPorParcial() {
+  app.innerHTML = `
+    <main class="pantalla estudio-sp">
+      <button class="btn enlace" id="btn-volver-parciales-bio">← Inicio</button>
+      <div class="titulo-materia"><span class="emoji" aria-hidden="true">🧬</span><h1>Estudiar por tema</h1></div>
+      <p class="bajada">Elegí el parcial cuyos temas querés repasar.</p>
+      <section class="estudio-sp-grid" aria-label="Parciales de Biología">
+        <button class="estudio-sp-card" type="button" id="btn-temas-primer-parcial">
+          <span class="estudio-sp-icono" aria-hidden="true">📘</span>
+          <span class="estudio-sp-texto"><strong>Primer parcial</strong><small>Temas de Biología 1 · banco completo y preguntas adicionales</small></span>
+          <span class="estudio-sp-flecha" aria-hidden="true">↗</span>
+        </button>
+        <button class="estudio-sp-card" type="button" id="btn-temas-segundo-parcial">
+          <span class="estudio-sp-icono" aria-hidden="true">📗</span>
+          <span class="estudio-sp-texto"><strong>Segundo parcial</strong><small>Núcleo, duplicación, expresión génica, división celular y más</small></span>
+          <span class="estudio-sp-flecha" aria-hidden="true">↗</span>
+        </button>
+      </section>
+    </main>`;
+  document.getElementById('btn-volver-parciales-bio').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
+  document.getElementById('btn-temas-primer-parcial').addEventListener('click', () => { Sonido.clic(); vistaEstudioPrimerParcial(); });
+  document.getElementById('btn-temas-segundo-parcial').addEventListener('click', () => { Sonido.clic(); vistaEstudioSegundoParcial(); });
+  window.scrollTo(0, 0);
+}
+
+function vistaEstudioPrimerParcial() {
+  vistaCargando('Preparando los temas del Primer parcial…');
+  cargarPrimerParcial().then((pool) => {
+    const temas = TEMAS_PRIMER_PARCIAL.map((tema) => ({ ...tema, cantidad: preguntasDeTemaPrimerParcial(pool, tema).length }));
+    app.innerHTML = `
+      <main class="pantalla estudio-sp">
+        <button class="btn enlace" id="btn-volver-temas-primer">← Parciales</button>
+        <div class="titulo-materia"><span class="emoji" aria-hidden="true">📘</span><h1>Primer parcial por tema</h1></div>
+        <p class="bajada">Elegí un tema para practicar sus preguntas. Se incluyen el banco original y los lotes adicionales.</p>
+        <section class="estudio-sp-grid" aria-label="Temas del Primer parcial">
+          ${temas.filter((tema) => tema.cantidad > 0).map((tema) => `
+            <button class="estudio-sp-card" type="button" data-tema-p1="${tema.id}">
+              <span class="estudio-sp-icono" aria-hidden="true">${tema.icono}</span>
+              <span class="estudio-sp-texto"><strong>${tema.nombre}</strong><small>${tema.descripcion}</small><em>${tema.cantidad} preguntas</em></span>
+              <span class="estudio-sp-flecha" aria-hidden="true">↗</span>
+            </button>`).join('')}
+        </section>
+      </main>`;
+    document.getElementById('btn-volver-temas-primer').addEventListener('click', () => { Sonido.clic(); vistaEstudioBiologiaPorParcial(); });
+    app.querySelectorAll('[data-tema-p1]').forEach((boton) => boton.addEventListener('click', () => {
+      Sonido.clic();
+      const tema = TEMAS_PRIMER_PARCIAL.find((item) => item.id === boton.dataset.temaP1);
+      if (tema) lanzarPrimerParcialPorTema(tema, pool);
+    }));
+    window.scrollTo(0, 0);
+  }).catch((e) => {
+    console.error('[Temas del Primer parcial]', e);
+    vistaError(e);
+  });
+}
+
+function lanzarPrimerParcialPorTema(tema, poolOriginal) {
+  const pool = preguntasDeTemaPrimerParcial(poolOriginal, tema);
+  if (!pool.length) {
+    avisar(`Todavía no hay preguntas clasificadas en ${tema.nombre}.`);
+    return;
+  }
+  empezarJuego(mezclar(pool), {
+    titulo: `Primer parcial · ${tema.nombre}`,
+    temaId: 'biologia-celular/15-tema-parcial-completo-convertido',
+    estilo: 'parcial-limpio',
+    ranking: false,
+    materiaNombre: 'Biología 1',
+    temaNombre: tema.nombre,
+    repetir: () => lanzarPrimerParcialPorTema(tema, poolOriginal),
+    volver: () => vistaEstudioPrimerParcial(),
+  });
+}
+
 function vistaEstudioSegundoParcial() {
   vistaCargando('Preparando los temas…');
   cargarSegundoParcial().then((pool) => {
     const temas = TEMAS_SEGUNDO_PARCIAL.map((tema) => ({ ...tema, cantidad: preguntasDeTemaSegundoParcial(pool, tema).length }));
     app.innerHTML = `
       <main class="pantalla estudio-sp">
-        <button class="btn enlace" id="btn-volver-temas-sp">← Inicio</button>
+        <button class="btn enlace" id="btn-volver-temas-sp">← Parciales</button>
         <div class="titulo-materia"><span class="emoji" aria-hidden="true">🗂️</span><h1>Segundo parcial por tema</h1></div>
         <p class="bajada">Elegí un tema para practicar sus preguntas. También podés volver al recorrido completo cuando quieras.</p>
         <section class="estudio-sp-grid" aria-label="Temas del segundo parcial">
@@ -1090,7 +1188,7 @@ function vistaEstudioSegundoParcial() {
         </section>
         <button class="sp-banco estudio-sp-banco" id="btn-banco-desde-temas" type="button"><span class="sp-banco-icono" aria-hidden="true">☷</span><span class="sp-banco-texto"><strong>Ver el banco completo</strong><small>Explorá las preguntas, opciones y respuestas</small></span><span class="sp-banco-flecha" aria-hidden="true">↗</span></button>
       </main>`;
-    document.getElementById('btn-volver-temas-sp').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
+    document.getElementById('btn-volver-temas-sp').addEventListener('click', () => { Sonido.clic(); vistaEstudioBiologiaPorParcial(); });
     document.getElementById('btn-banco-desde-temas').addEventListener('click', () => { Sonido.clic(); vistaBancoSegundoParcial(); });
     app.querySelectorAll('[data-tema-sp]').forEach((boton) => boton.addEventListener('click', () => {
       Sonido.clic();
