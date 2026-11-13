@@ -952,11 +952,28 @@ async function cargarPrimerParcial() {
   const materia = indice.materias.find((m) => m.id === 'biologia-celular');
   const tema = materia?.temas.find((t) => /15-tema-parcial-completo-convertido/.test(t.archivo || ''));
   if (!materia || !tema) throw new Error('No se encontró el banco del Primer parcial de Biología 1.');
-  const pool = await cargarTema(tema, materia);
-  if (!pool.length) throw new Error('El banco del Primer parcial está vacío.');
-  if (Number.isInteger(tema.preguntas) && pool.length !== tema.preguntas) {
-    throw new Error(`El banco del Primer parcial declara ${tema.preguntas} preguntas, pero se cargaron ${pool.length}.`);
+  const originales = await cargarTema(tema, materia);
+  if (!originales.length) throw new Error('El banco original del Primer parcial está vacío.');
+  if (Number.isInteger(tema.preguntas) && originales.length !== tema.preguntas) {
+    throw new Error(`El banco original del Primer parcial declara ${tema.preguntas} preguntas, pero se cargaron ${originales.length}.`);
   }
+
+  // Banco adicional independiente: se puede retirar sin modificar el JSON original.
+  const temaExtra = {
+    id: 'biologia-celular/mix-adicional-primer-parcial',
+    nombre: 'Preguntas adicionales del Primer parcial',
+    archivo: 'data/biologia-celular/16-mix-adicional-primer-parcial.json',
+    preguntas: 40,
+  };
+  const adicionales = await cargarTema(temaExtra, materia);
+  if (adicionales.length !== temaExtra.preguntas) {
+    throw new Error(`El banco adicional declara ${temaExtra.preguntas} preguntas, pero se cargaron ${adicionales.length}.`);
+  }
+  const ids = new Set(originales.map((q) => q.id));
+  if (adicionales.some((q) => ids.has(q.id))) {
+    throw new Error('El banco adicional contiene identificadores repetidos con el banco original.');
+  }
+  const pool = [...originales, ...adicionales];
   primerParcialPool = pool;
   return pool;
 }
