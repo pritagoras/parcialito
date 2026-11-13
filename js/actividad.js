@@ -1,8 +1,9 @@
+import { estado } from './store.js?v=20261112-1';
 import { idDispositivo } from './dispositivo.js?v=20261113-admin1';
 const URL='https://tnpcvmnwuhsxdxvwxvlh.supabase.co/rest/v1/';
 const KEY='sb_publishable_UXVhm9cko_YZm3GrAUBRyg_YSIfM03O';
 let sessionId=null, deviceId=null, started=false, heartbeat=null, lastView='';
-const getApodo=()=>{try{return String(JSON.parse(localStorage.getItem('parcialito_estado')||'{}').apodo||'').slice(0,20)||null}catch{return null}};
+const getApodo=()=>String(estado.apodo||'').slice(0,20)||null;
 function post(path,body,keepalive=false){return fetch(URL+path,{method:'POST',headers:{apikey:KEY,'Content-Type':'application/json'},body:JSON.stringify(body),keepalive}).then(r=>{if(!r.ok)throw Error('activity '+r.status);return r;});}
 export function idSesionActividad(){return sessionId;}
 export function registrarEventoActividad(evento,datos={}){if(!sessionId||!deviceId)return Promise.resolve();const fila={actividad_session_id:sessionId,dispositivo_id:deviceId,evento,apodo:getApodo(),materia:datos.materia||null,tema:datos.tema||null,modo:datos.modo||null,pregunta_id:datos.pregunta_id||null,pregunta:datos.pregunta||null,seleccion:datos.seleccion||null,respuesta_correcta:datos.respuesta_correcta||null,acierto:typeof datos.acierto==='boolean'?datos.acierto:null,numero_pregunta:datos.numero_pregunta||null,total_preguntas:datos.total_preguntas||null,datos:datos.datos||{}};return post('actividad_eventos',fila,true).catch(e=>console.warn('[Actividad]',e));}
