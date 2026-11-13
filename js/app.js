@@ -1250,43 +1250,56 @@ function preguntasPorPalabras(pool, palabras) {
   });
 }
 
-async function lanzarSegundoParcialPorPalabras(entrada) {
+async function lanzarBiologiaPorPalabras(entrada, incluirPrimer = true, incluirSegundo = true) {
   const palabras = separarPalabrasBanco(entrada);
   if (!palabras.length) {
     alert('Escribí al menos una palabra para preparar la práctica.');
     return;
   }
+  if (!incluirPrimer && !incluirSegundo) {
+    alert('Seleccioná al menos un parcial para buscar.');
+    return;
+  }
   let pool;
   try {
-    pool = await cargarSegundoParcial();
+    const cargas = [];
+    if (incluirPrimer) cargas.push(cargarPrimerParcial());
+    if (incluirSegundo) cargas.push(cargarSegundoParcial());
+    pool = (await Promise.all(cargas)).flat();
   } catch (e) {
-    console.warn('[Práctica por palabras]', e);
-    alert('No se pudieron cargar las preguntas del Segundo parcial. Probá de nuevo en un rato.');
+    console.warn('[Práctica por palabras de Biología]', e);
+    alert('No se pudieron cargar todos los bancos seleccionados. Probá de nuevo en un rato.');
     return;
   }
   const filtradas = preguntasPorPalabras(pool, palabras);
   if (!filtradas.length) {
-    alert('No encontramos preguntas con esas palabras. Probá con otros términos.');
+    alert('No encontramos preguntas con esos términos en los parciales seleccionados.');
     return;
   }
   const etiqueta = palabras.join(', ');
-  const meta = {
-    titulo: 'Segundo parcial · palabras clave',
-    temaId: SEGUNDO_PARCIAL_TEMA_ID,
+  const parciales = [incluirPrimer ? 'Primer parcial' : '', incluirSegundo ? 'Segundo parcial' : ''].filter(Boolean);
+  const origen = parciales.join(' + ');
+  empezarJuego(mezclar(filtradas), {
+    titulo: `${origen} · palabras clave`,
+    temaId: null,
     estilo: 'parcial-limpio',
     ranking: false,
-    materiaNombre: 'Segundo parcial',
-    temaNombre: `Palabras: ${etiqueta}`,
-    repetir: () => lanzarSegundoParcialPorPalabras(palabras.join(' ')),
+    materiaNombre: 'Biología 1',
+    temaNombre: `${origen} · Palabras: ${etiqueta}`,
+    repetir: () => lanzarBiologiaPorPalabras(entrada, incluirPrimer, incluirSegundo),
     volver: () => vistaBancoSegundoParcial(),
-  };
-  empezarJuego(ordenInteligente(filtradas), meta);
+  });
+}
+
+// Compatibilidad con llamadas anteriores al buscador del Segundo parcial.
+async function lanzarSegundoParcialPorPalabras(entrada) {
+  return lanzarBiologiaPorPalabras(entrada, false, true);
 }
 
 // Vista de consulta: permite recorrer TODO el pool sin iniciar una partida.
 function vistaBancoSegundoParcial() {
   vistaCargando('Cargando el banco completo…');
-  cargarSegundoParcial().then((poolOriginal) => {
+  Promise.all([cargarSegundoParcial(), cargarPrimerParcial()]).then(([poolOriginal, poolPrimerParcial]) => {
     const pool = poolOriginal.map((q, i) => ({ ...q, numeroPool: i + 1 }));
     const archivos = [...new Set(pool.map((q) => q.archivoJson).filter(Boolean))].sort((x, y) =>
       Number(x.match(/(\d+)\.json$/)?.[1] || 0) - Number(y.match(/(\d+)\.json$/)?.[1] || 0));
@@ -1321,9 +1334,13 @@ function vistaBancoSegundoParcial() {
                 <p>Escribí una o varias palabras y jugá con las preguntas relacionadas.</p>
               </div>
             </div>
+            <div class="banco-practica-parciales" role="group" aria-label="Bancos donde buscar">
+              <label><input id="banco-practica-p1" type="checkbox" checked> <span>Primer parcial <small>· ${poolPrimerParcial.length} preguntas</small></span></label>
+              <label><input id="banco-practica-p2" type="checkbox" checked> <span>Segundo parcial <small>· ${pool.length} preguntas</small></span></label>
+            </div>
             <label class="banco-sp-busqueda" for="banco-practica-input">
               <span>¿Qué querés practicar?</span>
-              <input id="banco-practica-input" type="search" placeholder="Ej.: mitosis, meiosis, crossing over…" autocomplete="off">
+              <input id="banco-practica-input" type="search" placeholder="Ej.: mitosis, meiosis, membrana, enzimas…" autocomplete="off">
             </label>
             <div class="banco-practica-ayuda">Separá las palabras con espacios o comas. Se incluirán preguntas que coincidan con cualquiera de ellas.</div>
             <div class="banco-practica-resultado" id="banco-practica-resultado" aria-live="polite">Escribí para ver cuántas preguntas coinciden.</div>
@@ -1351,24 +1368,38 @@ function vistaBancoSegundoParcial() {
       vistaInicio();
     });
     const inputPractica = document.getElementById('banco-practica-input');
+    const checkPrimer = document.getElementById('banco-practica-p1');
+    const checkSegundo = document.getElementById('banco-practica-p2');
     const botonPractica = document.getElementById('btn-practicar-palabras');
     const resultadoPractica = document.getElementById('banco-practica-resultado');
-    inputPractica.addEventListener('input', () => {
+    const actualizarCoincidencias = () => {
       const palabras = separarPalabrasBanco(inputPractica.value);
-      const cantidad = palabras.length ? preguntasPorPalabras(pool, palabras).length : 0;
-      resultadoPractica.textContent = palabras.length
-        ? (cantidad
-          ? `${cantidad} pregunta${cantidad === 1 ? '' : 's'} coinciden. Se incluirán coincidencias con cualquiera de las palabras.`
-          : 'No encontramos coincidencias. Probá con otros términos.')
-        : 'Escribí para ver cuántas preguntas coinciden.';
+      const incluirPrimer = checkPrimer.checked;
+      const incluirSegundo = checkSegundo.checked;
+      const seleccion = [
+        ...(incluirPrimer ? poolPrimerParcial : []),
+        ...(incluirSegundo ? poolOriginal : []),
+      ];
+      const cantidad = palabras.length && (incluirPrimer || incluirSegundo)
+        ? preguntasPorPalabras(seleccion, palabras).length : 0;
+      resultadoPractica.textContent = !incluirPrimer && !incluirSegundo
+        ? 'Seleccioná al menos un parcial.'
+        : palabras.length
+          ? (cantidad
+            ? `${cantidad} pregunta${cantidad === 1 ? '' : 's'} coinciden en ${[incluirPrimer ? 'Primer parcial' : '', incluirSegundo ? 'Segundo parcial' : ''].filter(Boolean).join(' + ')}. Se incluyen coincidencias con cualquiera de las palabras.`
+            : 'No encontramos coincidencias en los parciales seleccionados. Probá con otros términos.')
+          : 'Escribí para ver cuántas preguntas coinciden.';
       botonPractica.disabled = cantidad === 0;
       botonPractica.textContent = cantidad
         ? `Practicar ${cantidad} pregunta${cantidad === 1 ? '' : 's'} →`
         : 'Practicar estas preguntas →';
-    });
+    };
+    inputPractica.addEventListener('input', actualizarCoincidencias);
+    checkPrimer.addEventListener('change', actualizarCoincidencias);
+    checkSegundo.addEventListener('change', actualizarCoincidencias);
     botonPractica.addEventListener('click', () => {
       Sonido.clic();
-      lanzarSegundoParcialPorPalabras(inputPractica.value);
+      lanzarBiologiaPorPalabras(inputPractica.value, checkPrimer.checked, checkSegundo.checked);
     });
 
     document.getElementById('banco-buscar').addEventListener('input', (e) => {
