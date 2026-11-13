@@ -789,12 +789,12 @@ function vistaInicio() {
         <p class="sp-descripcion">Elegí un banco completo o probá un simulacro mixto con 20 preguntas de cada parcial.</p>
         <button class="sp-tema" id="btn-sp-primer" type="button">
           <span class="sp-tema-icono" aria-hidden="true">🧬</span>
-          <span class="sp-tema-texto"><strong>Primer parcial · banco completo</strong><small>200 preguntas · opción múltiple</small></span>
+          <span class="sp-tema-texto"><strong>Primer parcial de Biología · banco completo</strong><small>250 preguntas · opción múltiple</small></span>
           <span class="sp-tema-accion">Jugar <b aria-hidden="true">↗</b></span>
         </button>
         <button class="sp-tema" id="btn-sp-ciclo" type="button">
           <span class="sp-tema-icono" aria-hidden="true">🧬</span>
-          <span class="sp-tema-texto"><strong>Segundo parcial · banco completo</strong><small>547 preguntas · opción múltiple</small></span>
+          <span class="sp-tema-texto"><strong>Segundo parcial de Biología · banco completo</strong><small>547 preguntas · opción múltiple</small></span>
           <span class="sp-tema-accion">Jugar <b aria-hidden="true">↗</b></span>
         </button>
         <button class="sp-tema sp-tema-por-tema" id="btn-sp-mixto" type="button">
