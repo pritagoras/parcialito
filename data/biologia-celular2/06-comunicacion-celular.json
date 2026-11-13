@@ -586,17 +586,6 @@
       "explicacion": "El DAG permanece en la membrana y, junto con el Ca²⁺ citosólico, favorece la activación de las formas convencionales de PKC. PKC luego fosforila proteínas diana."
     },
     {
-      "pregunta": "¿Qué ocurre cuando el Ca²⁺ citosólico se une a la calmodulina?",
-      "opciones": [
-        "La calmodulina hidroliza PIP₂ y genera directamente IP₃ y DAG en la membrana.",
-        "La calmodulina reemplaza a la subunidad alfa de Gq y se une al receptor de membrana.",
-        "La calmodulina se transforma en una bomba que expulsa sodio mediante consumo de ATP.",
-        "La calmodulina cambia de conformación y puede regular otras proteínas dependientes de calcio"
-      ],
-      "correcta": "D",
-      "explicacion": "La calmodulina es una proteína reguladora que cambia de conformación al unir Ca²⁺. El complejo Ca²⁺-calmodulina puede activar enzimas y quinasas, según el tipo celular."
-    },
-    {
       "pregunta": "¿Cuál es el orden correcto de los principales acontecimientos de la vía Gq?",
       "opciones": [
         "Ligando → GPCR → Gαq-GTP → adenilato ciclasa → AMPc → activación de PKA y sus sustratos",
@@ -804,17 +793,6 @@
       ],
       "correcta": "B",
       "explicacion": "La cocaína inhibe transportadores de recaptación de monoaminas y prolonga su disponibilidad extracelular. Los anestésicos locales bloquean principalmente canales de Na⁺ dependientes de voltaje y dificultan la propagación del potencial de acción."
-    },
-    {
-      "pregunta": "¿Qué función cumple el glucocálix en la comunicación y el reconocimiento celular?",
-      "opciones": [
-        "Es un conjunto de canales proteicos que comunica directamente los citoplasmas de células vecinas",
-        "Es una cubierta rica en carbohidratos asociada a glucoproteínas y glucolípidos que participa en protección e identificación celular",
-        "Es un complejo enzimático que hidroliza PIP₂ para producir IP₃ y DAG",
-        "Es un sistema de transporte activo que mantiene los gradientes de Na⁺ y K⁺"
-      ],
-      "correcta": "B",
-      "explicacion": "El glucocálix se ubica en la cara extracelular de la membrana y contiene cadenas de carbohidratos asociadas a glucoproteínas y glucolípidos. Participa en protección, interacción con el entorno y reconocimiento celular."
     },
     {
       "pregunta": "Una misma hormona circula por la sangre, pero produce respuestas diferentes en dos tejidos. ¿Cuál es la explicación más adecuada?",
