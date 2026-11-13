@@ -2079,7 +2079,7 @@ function siguiente() {
 
 function enviarIntentos(j) {
   if (!j || !j.intentos.length) return;
-  const filas = j.intentos;
+  const filas = j.intentos.map(f => ({ ...f, actividad_session_id: idSesionActividad(), dispositivo_id: idDispositivo(), apodo: estado.apodo || null, materia: String(j.meta.materiaNombre || j.meta.titulo || '').slice(0,80), tema: String(j.meta.temaNombre || '').slice(0,80) }));
   j.intentos = [];
   if (rankingActivo()) registrarIntentos(filas).catch(() => {});
 }
