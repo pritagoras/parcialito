@@ -2,8 +2,8 @@
 // telemetria.js: perfil técnico seudónimo del dispositivo + diagnóstico.
 // Los eventos no contienen apodo, respuestas ni texto escrito.
 // ==========================================================
-import { rankingActivo, registrarDispositivo, registrarTelemetria } from './ranking.js?v=20261112-telemetria1';
-import { idDispositivo, perfilDispositivo } from './dispositivo.js?v=20261112-telemetria1';
+import { rankingActivo, registrarDispositivo, registrarTelemetria } from './ranking.js?v=20261112-dispositivos2';
+import { idDispositivo, perfilDispositivo } from './dispositivo.js?v=20261112-dispositivos2';
 
 const VERSION_APP = '2026.11.12-telemetria1';
 const cola = [];
@@ -36,9 +36,10 @@ async function vaciar() {
   const lote = cola.splice(0, 20);
   try {
     await registrarTelemetria(lote);
-  } catch {
-    // No interrumpir el uso de Parcialito si la telemetría falla.
+  } catch (error) {
+    console.error('[Telemetría] No se pudo guardar el lote de eventos.', error);
     if (cola.length < 20) cola.unshift(...lote);
+    if (!temporizador) temporizador = setTimeout(vaciar, 15000);
   }
 }
 
@@ -181,8 +182,8 @@ export async function iniciarTelemetria() {
       ultima_visita: new Date().toISOString(),
     }).filter(([, valor]) => valor !== null && valor !== undefined));
     await registrarDispositivo(fila);
-  } catch {
-    // Si todavía no se ejecutó el SQL o falla la red, descartar eventos huérfanos.
+  } catch (error) {
+    console.error('[Telemetría] No se pudo registrar el dispositivo. Revisá tools/telemetria_dispositivos.sql y los logs de Supabase.', error);
     dispositivoId = null;
     cola.length = 0;
     return;
