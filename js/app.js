@@ -784,13 +784,24 @@ function vistaInicio() {
       </header>
       <p class="bajada">Elegí una materia y practicá con preguntas de opción múltiple.</p>
       <section class="banner-segundo" aria-labelledby="segundo-parcial-titulo">
-        <div class="sp-cabecera"><span class="sp-sello">✦ NUEVO ESPACIO</span><span class="sp-numero">02</span></div>
-        <h2 id="segundo-parcial-titulo">Segundo parcial</h2>
-        <p class="sp-descripcion">Un lugar destacado para preparar los temas del segundo parcial.</p>
+        <div class="sp-cabecera"><span class="sp-sello">✦ BIOLOGÍA 1</span><span class="sp-numero">PARCIALES</span></div>
+        <h2 id="segundo-parcial-titulo">Practicá los dos parciales</h2>
+        <p class="sp-descripcion">Elegí un banco completo o probá un simulacro mixto con 20 preguntas de cada parcial.</p>
+        <button class="sp-tema" id="btn-sp-primer" type="button">
+          <span class="sp-tema-icono" aria-hidden="true">🧬</span>
+          <span class="sp-tema-texto"><strong>Primer parcial · banco completo</strong><small>160 preguntas · opción múltiple</small></span>
+          <span class="sp-tema-accion">Jugar <b aria-hidden="true">↗</b></span>
+        </button>
         <button class="sp-tema" id="btn-sp-ciclo" type="button">
+          <span class="sp-tema-icono" aria-hidden="true">🧫</span>
           <span class="sp-tema-icono" aria-hidden="true">🧬</span>
           <span class="sp-tema-texto"><strong>Todas las preguntas juntas</strong><small>Opción múltiple</small></span>
           <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
+        </button>
+        <button class="sp-tema sp-tema-por-tema" id="btn-sp-mixto" type="button">
+          <span class="sp-tema-icono" aria-hidden="true">🎯</span>
+          <span class="sp-tema-texto"><strong>Simulacro mixto · 40 preguntas</strong><small>20 del primer parcial + 20 del segundo · orden aleatorio</small></span>
+          <span class="sp-tema-accion">Jugar <b aria-hidden="true">↗</b></span>
         </button>
         <button class="sp-tema sp-tema-por-tema" id="btn-sp-temas" type="button">
           <span class="sp-tema-icono" aria-hidden="true">🗂️</span>
@@ -861,7 +872,9 @@ function vistaInicio() {
     </main>`;
 
   document.getElementById('btn-sonido').addEventListener('click', alternarSonido);
+  document.getElementById('btn-sp-primer')?.addEventListener('click', () => { Sonido.clic(); lanzarPrimerParcial(); });
   document.getElementById('btn-sp-ciclo')?.addEventListener('click', () => { Sonido.clic(); lanzarSegundoParcial(); });
+  document.getElementById('btn-sp-mixto')?.addEventListener('click', () => { Sonido.clic(); lanzarSimulacroMixto(); });
   document.getElementById('btn-sp-temas')?.addEventListener('click', () => { Sonido.clic(); vistaEstudioSegundoParcial(); });
   document.getElementById('btn-sp-banco')?.addEventListener('click', () => { Sonido.clic(); vistaBancoSegundoParcial(); });
   document.getElementById('btn-megaclase')?.addEventListener('click', () => { Sonido.clic(); lanzarMegaclase(); });
@@ -930,6 +943,68 @@ async function cargarSegundoParcial() {
   }
   segundoParcialPool = pool;
   return pool;
+}
+
+// Primer parcial de Biología 1: reutiliza el banco oficial ya incluido en data/index.json.
+let primerParcialPool = null;
+
+async function cargarPrimerParcial() {
+  if (primerParcialPool) return primerParcialPool;
+  const materia = indice.materias.find((m) => m.id === 'biologia-celular');
+  const tema = materia?.temas.find((t) => /15-tema-parcial-completo-convertido/.test(t.archivo || ''));
+  if (!materia || !tema) throw new Error('No se encontró el banco del Primer parcial de Biología 1.');
+  const pool = await cargarTema(tema, materia);
+  if (!pool.length) throw new Error('El banco del Primer parcial está vacío.');
+  if (Number.isInteger(tema.preguntas) && pool.length !== tema.preguntas) {
+    throw new Error(`El banco del Primer parcial declara ${tema.preguntas} preguntas, pero se cargaron ${pool.length}.`);
+  }
+  primerParcialPool = pool;
+  return pool;
+}
+
+async function lanzarPrimerParcial() {
+  vistaCargando('Preparando el banco del Primer parcial…');
+  try {
+    const pool = await cargarPrimerParcial();
+    empezarJuego(mezclar(pool), {
+      titulo: 'Primer parcial · Biología 1',
+      temaId: 'biologia-celular/15-tema-parcial-completo-convertido',
+      estilo: 'parcial-limpio',
+      ranking: false,
+      materiaNombre: 'Biología 1',
+      temaNombre: 'Primer parcial completo',
+      repetir: () => lanzarPrimerParcial(),
+      volver: () => vistaInicio(),
+    });
+  } catch (e) {
+    vistaError(e);
+  }
+}
+
+async function lanzarSimulacroMixto() {
+  vistaCargando('Armando el simulacro mixto…');
+  try {
+    const [primer, segundo] = await Promise.all([cargarPrimerParcial(), cargarSegundoParcial()]);
+    if (primer.length < 20 || segundo.length < 20) {
+      throw new Error('Cada parcial necesita al menos 20 preguntas para armar el simulacro.');
+    }
+    const seleccion = [
+      ...mezclar(primer).slice(0, 20),
+      ...mezclar(segundo).slice(0, 20),
+    ];
+    empezarJuego(mezclar(seleccion), {
+      titulo: 'Simulacro mixto · Biología 1',
+      temaId: null,
+      estilo: 'parcial-limpio',
+      ranking: false,
+      materiaNombre: 'Biología 1',
+      temaNombre: '20 preguntas del Primer parcial + 20 del Segundo parcial',
+      repetir: () => lanzarSimulacroMixto(),
+      volver: () => vistaInicio(),
+    });
+  } catch (e) {
+    vistaError(e);
+  }
 }
 
 async function lanzarSegundoParcial() {
