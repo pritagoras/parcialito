@@ -265,6 +265,47 @@ create index if not exists visitas_dispositivo_fecha_idx
 create index if not exists visitas_visitante_fecha_idx
   on public.visitas (visitante, creado desc);
 
+-- Recuperar el historial anterior: antes de enlazar dispositivo_id, las visitas
+-- ya guardaban un ID seudónimo estable en visitante. Se reutiliza ese mismo ID
+-- para crear el perfil retroactivo y asociar las visitas antiguas.
+update public.visitas
+set dispositivo_id = visitante::text
+where dispositivo_id is null
+  and visitante is not null;
+
+insert into public.dispositivos (
+  dispositivo_id, fabricante, modelo, navegador, sistema, tipo_dispositivo,
+  pantalla, idioma, zona_horaria, user_agent, primera_visita, ultima_visita
+)
+select
+  v.visitante::text,
+  (array_agg(nullif(v.fabricante,'') order by v.creado desc))[1],
+  (array_agg(nullif(v.modelo,'') order by v.creado desc))[1],
+  (array_agg(nullif(v.navegador,'') order by v.creado desc))[1],
+  (array_agg(nullif(v.sistema,'') order by v.creado desc))[1],
+  (array_agg(nullif(v.tipo_dispositivo,'') order by v.creado desc))[1],
+  (array_agg(nullif(v.pantalla,'') order by v.creado desc))[1],
+  (array_agg(nullif(v.idioma,'') order by v.creado desc))[1],
+  (array_agg(nullif(v.zona_horaria,'') order by v.creado desc))[1],
+  (array_agg(nullif(v.user_agent,'') order by v.creado desc))[1],
+  min(v.creado),
+  max(v.creado)
+from public.visitas v
+where v.visitante is not null
+group by v.visitante::text
+on conflict (dispositivo_id) do update set
+  fabricante = coalesce(dispositivos.fabricante, excluded.fabricante),
+  modelo = coalesce(dispositivos.modelo, excluded.modelo),
+  navegador = coalesce(dispositivos.navegador, excluded.navegador),
+  sistema = coalesce(dispositivos.sistema, excluded.sistema),
+  tipo_dispositivo = coalesce(dispositivos.tipo_dispositivo, excluded.tipo_dispositivo),
+  pantalla = coalesce(dispositivos.pantalla, excluded.pantalla),
+  idioma = coalesce(dispositivos.idioma, excluded.idioma),
+  zona_horaria = coalesce(dispositivos.zona_horaria, excluded.zona_horaria),
+  user_agent = coalesce(dispositivos.user_agent, excluded.user_agent),
+  primera_visita = least(dispositivos.primera_visita, excluded.primera_visita),
+  ultima_visita = greatest(dispositivos.ultima_visita, excluded.ultima_visita);
+
 alter table public.visitas enable row level security;
 do $$
 declare p record;
