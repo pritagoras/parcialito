@@ -124,44 +124,48 @@ begin
     now()
   );
 
-  insert into public.dispositivos (
-    dispositivo_id, fabricante, modelo, navegador, version_navegador,
-    sistema, version_plataforma, arquitectura, bits, tipo_dispositivo,
-    pantalla, viewport, dpr, ram_gb, nucleos, conexion, save_data,
-    instalada, idioma, zona_horaria, user_agent, version_app,
-    primera_visita, ultima_visita
-  ) values (
-    v_id,
-    left(nullif(p_dispositivo->>'fabricante',''), 50),
-    left(nullif(p_dispositivo->>'modelo',''), 100),
-    left(nullif(p_dispositivo->>'navegador',''), 60),
-    left(nullif(p_dispositivo->>'version_navegador',''), 30),
-    left(nullif(p_dispositivo->>'sistema',''), 60),
-    left(nullif(p_dispositivo->>'version_plataforma',''), 30),
-    left(nullif(p_dispositivo->>'arquitectura',''), 30),
-    left(nullif(p_dispositivo->>'bits',''), 8),
-    left(nullif(p_dispositivo->>'tipo_dispositivo',''), 20),
-    left(nullif(p_dispositivo->>'pantalla',''), 20),
-    left(nullif(p_dispositivo->>'viewport',''), 20),
-    case when coalesce(p_dispositivo->>'dpr','') ~ '^[0-9]+(\.[0-9]+)?$'
-      then (p_dispositivo->>'dpr')::numeric(6,2) else null end,
-    case when coalesce(p_dispositivo->>'ram_gb','') ~ '^[0-9]+(\.[0-9]+)?$'
-      then (p_dispositivo->>'ram_gb')::numeric(5,2) else null end,
-    case when coalesce(p_dispositivo->>'nucleos','') ~ '^[0-9]+$'
-      then (p_dispositivo->>'nucleos')::integer else null end,
-    left(nullif(p_dispositivo->>'conexion',''), 20),
-    case when p_dispositivo->>'save_data' in ('true','false')
-      then (p_dispositivo->>'save_data')::boolean else null end,
-    case when p_dispositivo->>'instalada' in ('true','false')
-      then (p_dispositivo->>'instalada')::boolean else null end,
-    left(nullif(p_dispositivo->>'idioma',''), 20),
-    left(nullif(p_dispositivo->>'zona_horaria',''), 60),
-    left(nullif(p_dispositivo->>'user_agent',''), 300),
-    left(nullif(p_dispositivo->>'version_app',''), 40),
-    now(),
-    v_ultima
-  )
-  on conflict (dispositivo_id) do nothing;
+  begin
+    insert into public.dispositivos (
+      dispositivo_id, fabricante, modelo, navegador, version_navegador,
+      sistema, version_plataforma, arquitectura, bits, tipo_dispositivo,
+      pantalla, viewport, dpr, ram_gb, nucleos, conexion, save_data,
+      instalada, idioma, zona_horaria, user_agent, version_app,
+      primera_visita, ultima_visita
+    ) values (
+      v_id,
+      left(nullif(p_dispositivo->>'fabricante',''), 50),
+      left(nullif(p_dispositivo->>'modelo',''), 100),
+      left(nullif(p_dispositivo->>'navegador',''), 60),
+      left(nullif(p_dispositivo->>'version_navegador',''), 30),
+      left(nullif(p_dispositivo->>'sistema',''), 60),
+      left(nullif(p_dispositivo->>'version_plataforma',''), 30),
+      left(nullif(p_dispositivo->>'arquitectura',''), 30),
+      left(nullif(p_dispositivo->>'bits',''), 8),
+      left(nullif(p_dispositivo->>'tipo_dispositivo',''), 20),
+      left(nullif(p_dispositivo->>'pantalla',''), 20),
+      left(nullif(p_dispositivo->>'viewport',''), 20),
+      case when coalesce(p_dispositivo->>'dpr','') ~ '^[0-9]+(\.[0-9]+)?$'
+        then (p_dispositivo->>'dpr')::numeric(6,2) else null end,
+      case when coalesce(p_dispositivo->>'ram_gb','') ~ '^[0-9]+(\.[0-9]+)?$'
+        then (p_dispositivo->>'ram_gb')::numeric(5,2) else null end,
+      case when coalesce(p_dispositivo->>'nucleos','') ~ '^[0-9]+$'
+        then (p_dispositivo->>'nucleos')::integer else null end,
+      left(nullif(p_dispositivo->>'conexion',''), 20),
+      case when p_dispositivo->>'save_data' in ('true','false')
+        then (p_dispositivo->>'save_data')::boolean else null end,
+      case when p_dispositivo->>'instalada' in ('true','false')
+        then (p_dispositivo->>'instalada')::boolean else null end,
+      left(nullif(p_dispositivo->>'idioma',''), 20),
+      left(nullif(p_dispositivo->>'zona_horaria',''), 60),
+      left(nullif(p_dispositivo->>'user_agent',''), 300),
+      left(nullif(p_dispositivo->>'version_app',''), 40),
+      now(),
+      v_ultima
+    );
+  exception
+    when unique_violation then
+      null;
+  end;
 end;
 $$;
 
