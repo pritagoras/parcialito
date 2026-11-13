@@ -1355,7 +1355,7 @@ async function pintarResumenSegundoParcial() {
     const vistas = estado.vistasSP || {};
     const nuevas = pool.filter((q) => !vistas[q.id]).length;
     const detalle = nuevas === pool.length ? 'ninguna respondida todavía' : `${nuevas} sin responder`;
-    caja.innerHTML = `<strong>Banco completo de preguntas</strong><small>${pool.length} disponibles · ${detalle} · las ya respondidas van al final · ${archivos} archivos</small>`;
+    caja.innerHTML = `<strong>Segundo parcial de Biología · banco completo</strong><small>${pool.length} preguntas disponibles · ${detalle} · las ya respondidas van al final · ${archivos} archivos</small>`;
   } catch { /* se deja el texto por defecto */ }
 }
 
