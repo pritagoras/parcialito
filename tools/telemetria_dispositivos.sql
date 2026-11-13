@@ -108,7 +108,7 @@ begin
   end if;
 
   v_id := nullif(btrim(p_dispositivo->>'dispositivo_id'), '')::uuid;
-  if v_id is null or char_length(v_id) < 10 or char_length(v_id) > 80 then
+  if v_id is null then
     raise exception 'dispositivo_id ausente o inválido.';
   end if;
 
