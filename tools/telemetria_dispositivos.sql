@@ -271,7 +271,7 @@ create index if not exists visitas_visitante_fecha_idx
 update public.visitas
 set dispositivo_id = visitante::uuid
 where dispositivo_id is null
-  and visitante is not null;
+  and visitante ~* '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$';
 
 insert into public.dispositivos (
   dispositivo_id, fabricante, modelo, navegador, sistema, tipo_dispositivo,
@@ -279,8 +279,10 @@ insert into public.dispositivos (
 )
 select
   v.visitante::uuid,
-  (array_agg(nullif(v.fabricante,'') order by v.creado desc))[1],
-  (array_agg(nullif(v.modelo,'') order by v.creado desc))[1],
+  (array_agg(nullif(v.fabricante,'') order by v.creado desc)
+    filter (where nullif(v.fabricante,'') is not null))[1],
+  (array_agg(nullif(v.modelo,'') order by v.creado desc)
+    filter (where nullif(v.modelo,'') is not null))[1],
   (array_agg(nullif(v.navegador,'') order by v.creado desc))[1],
   (array_agg(nullif(v.sistema,'') order by v.creado desc))[1],
   (array_agg(nullif(v.tipo_dispositivo,'') order by v.creado desc))[1],
