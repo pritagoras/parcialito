@@ -355,6 +355,49 @@ alter table public.sesiones add column if not exists dispositivo_id text;
 create index if not exists sesiones_dispositivo_fecha_idx
   on public.sesiones (dispositivo_id, creado desc);
 
+alter table public.sesiones enable row level security;
+do $
+declare p record;
+begin
+  for p in
+    select policyname from pg_policies
+    where schemaname = 'public' and tablename = 'sesiones'
+  loop
+    execute format('drop policy %I on public.sesiones', p.policyname);
+  end loop;
+end
+$;
+create policy sesiones_insert_anon
+  on public.sesiones
+  for insert to anon, authenticated
+  with check (
+    char_length(apodo) between 1 and 20
+    and modo in ('ronda','repaso')
+    and total between 1 and 1000
+    and aciertos between 0 and total
+  );
+grant insert on public.sesiones to anon, authenticated;
+
+-- Dar permiso de uso únicamente a las secuencias de identidad necesarias
+-- para que los INSERT del navegador no fallen por permisos de secuencia.
+do $
+declare v_seq text;
+begin
+  v_seq := pg_get_serial_sequence('public.telemetria_dispositivos', 'id');
+  if v_seq is not null then
+    execute format('grant usage, select on sequence %s to anon, authenticated', v_seq);
+  end if;
+  v_seq := pg_get_serial_sequence('public.visitas', 'id');
+  if v_seq is not null then
+    execute format('grant usage, select on sequence %s to anon, authenticated', v_seq);
+  end if;
+  v_seq := pg_get_serial_sequence('public.sesiones', 'id');
+  if v_seq is not null then
+    execute format('grant usage, select on sequence %s to anon, authenticated', v_seq);
+  end if;
+end
+$;
+
 -- 6) Vista: un renglón por dispositivo con indicadores agregados.
 create or replace view public.dispositivos_resumen as
 select
