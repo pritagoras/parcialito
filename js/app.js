@@ -26,6 +26,7 @@ import { abrirLab } from './lab.js?v=20261111-1';
 import { abrirTelomeros, TITULO as TITULO_TELOMEROS } from './telomeros.js?v=20261027-1';
 import { abrirAtlasCromosomas, TITULO as TITULO_ATLAS_CROMOSOMAS } from './atlas-cromosomas.js?v=20261110-1';
 import { abrirGuiaKuhn } from './guia-kuhn.js?v=20261113-ipc-kath';
+import { abrirDeduccionNatural, TITULO as TITULO_DEDUCCION_NATURAL } from './deduccion-natural.js?v=20261114-1';
 import { abrirEnvioImagenes } from './envios.js?v=20261114-3';
 
 const app = document.getElementById('app');
@@ -45,6 +46,7 @@ const ACTIVIDADES = {
   'lac-vs-trp': { titulo: TITULO_LAC_TRP, icono: '🧫', abrir: abrirLacTrp },
   'comparador-comunicacion': { titulo: TITULO_COMPARADOR_COMUNICACION, icono: '🔁', abrir: abrirComparadorComunicacion },
   comparadores: { titulo: TITULO_COMPARADORES, icono: '⚖️', abrir: abrirComparadores },
+  'deduccion-natural': { titulo: TITULO_DEDUCCION_NATURAL, icono: '🧩', abrir: abrirDeduccionNatural },
 };
 
 const LETRAS = ['A', 'B', 'C', 'D'];
@@ -1649,6 +1651,11 @@ function actividadesDe(m) {
     const claves = [].concat(t.actividad || []);
     for (const clave of claves) if (ACTIVIDADES[clave] && clave !== 'cuadro') lista.push({ clave, titulo: ACTIVIDADES[clave].titulo, icono: ACTIVIDADES[clave].icono || '🧩', tema: t });
   }
+  // Deducción natural es un módulo autónomo de lógica, visible únicamente en IPC.
+  if (m.id === 'ipc-2') {
+    lista.push({ clave: 'deduccion-natural', titulo: TITULO_DEDUCCION_NATURAL, icono: '🧩', tema: null });
+  }
+
   // El laboratorio es una actividad autónoma: aparece una sola vez en las materias de Biología.
   if (/biolog/i.test((m.id || '') + ' ' + (m.nombre || ''))) {
     lista.push({ clave: 'operones', titulo: ACTIVIDADES.operones.titulo, icono: ACTIVIDADES.operones.icono, tema: null });
