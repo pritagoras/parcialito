@@ -2,7 +2,7 @@
 // Deducción natural para IPC: práctica interactiva por reglas.
 // Se abre desde Juegos interactivos de la materia IPC.
 // Banco procedural: 10 estructuras de demostración x 8 sustituciones
-// de letras = 80 ejercicios, con práctica por regla y modo mixto.
+// de letras = 120 ejercicios, con práctica por regla y modo mixto.
 // ==========================================================
 
 import { Sonido } from './sonido.js?v=dev';
@@ -18,6 +18,31 @@ const REGLAS = {
 };
 
 const PLANTILLAS = [
+  {
+    id: 'mp-directo', titulo: 'Aplicación directa de MP', nivel: 1,
+    premisas: ['p → q', 'p'],
+    pasos: [{ f: 'q', r: 'MP', refs: [1, 2] }]
+  },
+  {
+    id: 'mt-directo', titulo: 'Aplicación directa de MT', nivel: 1,
+    premisas: ['p → q', '¬q'],
+    pasos: [{ f: '¬p', r: 'MT', refs: [1, 2] }]
+  },
+  {
+    id: 'sh-directo', titulo: 'Aplicación directa de SH', nivel: 1,
+    premisas: ['p → q', 'q → r'],
+    pasos: [{ f: 'p → r', r: 'SH', refs: [1, 2] }]
+  },
+  {
+    id: 'sd-directo', titulo: 'Aplicación directa de SD', nivel: 1,
+    premisas: ['p ∨ q', '¬p'],
+    pasos: [{ f: 'q', r: 'SD', refs: [1, 2] }]
+  },
+  {
+    id: 'dn-directo', titulo: 'Aplicación directa de DN', nivel: 1,
+    premisas: ['¬¬p'],
+    pasos: [{ f: 'p', r: 'DN', refs: [1] }]
+  },
   {
     id: 'mp-cadena', titulo: 'Encadenamiento por MP', nivel: 1,
     premisas: ['p → q', 'q → r', 'p'],
@@ -198,7 +223,7 @@ export function abrirDeduccionNatural({ app, volver }) {
         </div>
         <div class="dn-actions">
           <button class="btn primario" id="dn-mixto">Desafío mixto · todas las reglas</button>
-          <button class="btn secundario" id="dn-todas">Practicar el banco completo · 80 ejercicios</button>
+          <button class="btn secundario" id="dn-todas">Practicar el banco completo · ${BANCO.length} ejercicios</button>
           <button class="btn secundario" id="dn-reiniciar">Reiniciar estadísticas</button>
         </div>
         <p class="dn-muted">El banco combina ejercicios de una regla y demostraciones encadenadas de dificultad creciente. Las letras proposicionales cambian entre variantes.</p>
