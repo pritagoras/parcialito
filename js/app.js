@@ -26,7 +26,7 @@ import { abrirLab } from './lab.js?v=20261111-1';
 import { abrirTelomeros, TITULO as TITULO_TELOMEROS } from './telomeros.js?v=20261027-1';
 import { abrirAtlasCromosomas, TITULO as TITULO_ATLAS_CROMOSOMAS } from './atlas-cromosomas.js?v=20261110-1';
 import { abrirGuiaKuhn } from './guia-kuhn.js?v=20261113-ipc-kath';
-import { abrirEnvioImagenes } from './envios.js?v=20261114-1';
+import { abrirEnvioImagenes } from './envios.js?v=20261114-2';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -903,7 +903,15 @@ function vistaInicio() {
     </main>`;
 
   document.getElementById('btn-sonido').addEventListener('click', alternarSonido);
-  document.getElementById('btn-subir-imagen')?.addEventListener('click', () => { Sonido.clic(); abrirEnvioImagenes({ avisar }); });
+  document.getElementById('btn-subir-imagen')?.addEventListener('click', (evento) => {
+    evento.preventDefault();
+    try {
+      abrirEnvioImagenes({ avisar });
+    } catch (error) {
+      console.error('[Parcialito] No se pudo abrir el buzón de imágenes:', error);
+      avisar('No se pudo abrir el buzón. Actualizá la página e intentá otra vez.');
+    }
+  });
   document.getElementById('btn-sp-primer')?.addEventListener('click', () => { Sonido.clic(); lanzarPrimerParcial(); });
   document.getElementById('btn-sp-ciclo')?.addEventListener('click', () => { Sonido.clic(); lanzarSegundoParcial(); });
   document.getElementById('btn-sp-mixto')?.addEventListener('click', () => { Sonido.clic(); lanzarSimulacroMixto(); });
