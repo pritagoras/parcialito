@@ -1,0 +1,3032 @@
+{
+  "materia": "IPC",
+  "parcial": "Segundo Parcial",
+  "autor": "Thomas Kuhn",
+  "tema": "Thomas Kuhn",
+  "preguntas": [
+    {
+      "id": "ipc-p2-kuhn-001",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Valores, elección y carga teórica",
+      "enunciado": "A diferencia de la filosofía clásica de la ciencia (como la de Hempel o Popper), la propuesta epistemológica de Thomas Kuhn se caracteriza por centrarse en:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La historia efectiva de la ciencia y las prácticas colectivas de la comunidad científica"
+        },
+        {
+          "id": "B",
+          "texto": "El aislamiento deductivo de hipótesis individuales desvinculadas de la comunidad"
+        },
+        {
+          "id": "C",
+          "texto": "El establecimiento de reglas lógicas universales para la confirmación probabilística"
+        },
+        {
+          "id": "D",
+          "texto": "La búsqueda de un método algorítmico e intemporal de falsación automática"
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Kuhn desplaza el análisis lógico abstracto hacia el estudio de la historia efectiva, las prácticas comunitarias y los marcos compartidos en los que se produce y evalúa el conocimiento.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Kuhn desplaza el análisis lógico abstracto hacia el estudio de la historia efectiva, las prácticas comunitarias y los marcos compartidos en los que se produce y evalúa el conocimiento."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-002",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Valores, elección y carga teórica",
+      "enunciado": "En la metáfora utilizada para comparar la concepción clásica con la propuesta de Kuhn, la visión kuhniana equivale a mirar:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Un mapa atemporal de verdades absolutas e inmodificables"
+        },
+        {
+          "id": "B",
+          "texto": "Una fotografía estática de la estructura lógica de las teorías"
+        },
+        {
+          "id": "C",
+          "texto": "Una película que reconstruye la organización histórica y los cambios de marco disciplinar"
+        },
+        {
+          "id": "D",
+          "texto": "Una imagen aislada de la observación pura e independiente"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La metáfora de la película ilustra el enfoque kuhniano, que reconstruye históricamente cómo se organiza una disciplina, cómo resuelve problemas y cómo cambia de marco a lo largo del tiempo.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La metáfora de la película ilustra el enfoque kuhniano, que reconstruye históricamente cómo se organiza una disciplina, cómo resuelve problemas y cómo cambia de marco a lo largo del tiempo."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-003",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "La etapa de la Pre-ciencia se caracteriza fundamentalmente por:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La coexistencia de escuelas rivales que discrepan sobre los fundamentos de la disciplina"
+        },
+        {
+          "id": "B",
+          "texto": "La existencia de un paradigma único aceptado unánimemente por toda la comunidad"
+        },
+        {
+          "id": "C",
+          "texto": "La ausencia total de investigaciones rigurosas y de observaciones sistemáticas"
+        },
+        {
+          "id": "D",
+          "texto": "La resolución continua e ininterrumpida de enigmas dentro de una tradición común"
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "En la pre-ciencia conviven escuelas rivales con compromisos teóricos distintos que debaten constantemente sobre el objeto de estudio, los conceptos básicos y los métodos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "En la pre-ciencia conviven escuelas rivales con compromisos teóricos distintos que debaten constantemente sobre el objeto de estudio, los conceptos básicos y los métodos."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-004",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Paradigma, matriz disciplinar y ciencia normal",
+      "enunciado": "La transición de la Pre-ciencia a la Ciencia Normal ocurre cuando:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La comunidad científica abandona todo intento de teorización para observar hechos puros"
+        },
+        {
+          "id": "B",
+          "texto": "Se demuestra lógicamente que una de las escuelas posee la verdad absoluta"
+        },
+        {
+          "id": "C",
+          "texto": "Se prohíbe el debate de teorías mediante normativas gubernamentales externas"
+        },
+        {
+          "id": "D",
+          "texto": "Una perspectiva logra suficiente adhesión y establece un marco compartido de investigación"
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "La ciencia madura o normal surge cuando la comunidad adopta un consenso sobre un marco común que delimita problemas legítimos, métodos y soluciones modelo.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La ciencia madura o normal surge cuando la comunidad adopta un consenso sobre un marco común que delimita problemas legítimos, métodos y soluciones modelo."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-005",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "Según Kuhn, la Ciencia Normal se define como:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Un período de debate permanente e ininterrumpido sobre los principios filosóficos de la ciencia"
+        },
+        {
+          "id": "B",
+          "texto": "La investigación organizada y guiada por un paradigma aceptado comunitariamente"
+        },
+        {
+          "id": "C",
+          "texto": "Un estado de crisis constante provocado por el rechazo de cualquier fallo empírico"
+        },
+        {
+          "id": "D",
+          "texto": "Una etapa caótica caracterizada por la fragmentación en escuelas rivales"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Durante la ciencia normal, la comunidad científica investiga de manera organizada y relativamente estable bajo la guía de un paradigma compartido.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Durante la ciencia normal, la comunidad científica investiga de manera organizada y relativamente estable bajo la guía de un paradigma compartido."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-006",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Paradigma, matriz disciplinar y ciencia normal",
+      "enunciado": "Un Paradigma en sentido amplio (o matriz disciplinar) incluye:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Únicamente una hipótesis teórica aislada formulada en un enunciado matemático"
+        },
+        {
+          "id": "B",
+          "texto": "Un catálogo de verdades absolutas que prohíbe el uso de experimentos"
+        },
+        {
+          "id": "C",
+          "texto": "Un conjunto amplio de leyes, supuestos, métodos, valores, ejemplares y prácticas compartidas"
+        },
+        {
+          "id": "D",
+          "texto": "Exclusivamente reglas expresas escritas formalmente en manuales escolares"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "El paradigma en sentido amplio comprende leyes, supuestos teóricos, compromisos metafísicos, técnicas, valores y soluciones modelo compartidos por una comunidad.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "El paradigma en sentido amplio comprende leyes, supuestos teóricos, compromisos metafísicos, técnicas, valores y soluciones modelo compartidos por una comunidad."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-007",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Paradigma, matriz disciplinar y ciencia normal",
+      "enunciado": "En la terminología de Kuhn, los \"ejemplares\" son:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Muestras biológicas utilizadas únicamente en la etapa de pre-ciencia"
+        },
+        {
+          "id": "B",
+          "texto": "Reglas lógicas abstractas de confirmación probabilística ideadas por Hempel"
+        },
+        {
+          "id": "C",
+          "texto": "Enunciados metafísicos imposibles de contrastar mediante la experiencia"
+        },
+        {
+          "id": "D",
+          "texto": "Soluciones concretas a problemas aceptados que sirven como modelos para resolver nuevos casos"
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "Los ejemplares son problemas resueltos concretos que la comunidad utiliza durante la formación profesional para enseñar a aplicar las leyes y técnicas del paradigma a situaciones nuevas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Los ejemplares son problemas resueltos concretos que la comunidad utiliza durante la formación profesional para enseñar a aplicar las leyes y técnicas del paradigma a situaciones nuevas."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-008",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Paradigma, matriz disciplinar y ciencia normal",
+      "enunciado": "La función de la formación científica dentro de un paradigma consiste en:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Transmitir habilidades, técnicas y modelos que introducen al científico en la tradición compartida"
+        },
+        {
+          "id": "B",
+          "texto": "Inculcar el hábito de cuestionar diariamente todas las leyes fundamentales de la disciplina"
+        },
+        {
+          "id": "C",
+          "texto": "Impedir que los investigadores aprendan a utilizar instrumentos o realizar mediciones"
+        },
+        {
+          "id": "D",
+          "texto": "Fomentar la división de la comunidad en escuelas rivales dentro de la ciencia normal"
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La formación profesional permite socializar al científico en la práctica disciplinar, enseñándole a identificar problemas legítimos y aplicar las soluciones modelo del paradigma.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La formación profesional permite socializar al científico en la práctica disciplinar, enseñándole a identificar problemas legítimos y aplicar las soluciones modelo del paradigma."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-009",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Paradigma, matriz disciplinar y ciencia normal",
+      "enunciado": "Una de las tareas habituales del trabajo de Ciencia Normal consiste en:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Proponer teorías revolucionarias para sustituir el paradigma vigente"
+        },
+        {
+          "id": "B",
+          "texto": "Aumentar la precisión de instrumentos y comparar predicciones con observaciones"
+        },
+        {
+          "id": "C",
+          "texto": "Demostrar que los supuestos metafísicos del paradigma son falsos"
+        },
+        {
+          "id": "D",
+          "texto": "Discutir continuamente los fundamentos del método científico en el vacío"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La ciencia normal busca articular el paradigma, extendiendo su aplicación, determinando constantes y perfeccionando las mediciones e instrumentos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La ciencia normal busca articular el paradigma, extendiendo su aplicación, determinando constantes y perfeccionando las mediciones e instrumentos."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-010",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "Un \"enigma\" o puzzle se define epistemológicamente como:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Una dificultad indestructible que refuta de manera inmediata la teoría de fondo"
+        },
+        {
+          "id": "B",
+          "texto": "Un problema para el cual el paradigma vigente proporciona los recursos para buscar una solución"
+        },
+        {
+          "id": "C",
+          "texto": "Un fenómeno inexplicable que obliga a suspender la investigación en la ciencia normal"
+        },
+        {
+          "id": "D",
+          "texto": "Una paradoja lógica que solo se presenta en la etapa de pre-ciencia"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Los enigmas son problemas específicos que la comunidad confía en resolver utilizando las leyes, modelos y técnicas que suministra el paradigma vigente.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Los enigmas son problemas específicos que la comunidad confía en resolver utilizando las leyes, modelos y técnicas que suministra el paradigma vigente."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-011",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Valores, elección y carga teórica",
+      "enunciado": "La tesis de la \"carga teórica de la observación\" sostiene que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La realidad no existe y es una invención arbitraria creada por la mente humana"
+        },
+        {
+          "id": "B",
+          "texto": "Los datos observacionales son completamente puros e independientes de todo concepto"
+        },
+        {
+          "id": "C",
+          "texto": "Observar científicamente depende de las categorías, supuestos e instrumentos del observador"
+        },
+        {
+          "id": "D",
+          "texto": "Los científicos siempre deben realizar observaciones sin ningún marco teórico previo"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La carga teórica implica que la identificación, clasificación e interpretación de los datos científicos están mediadas por el marco conceptual, los instrumentos y la formación del investigador.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La carga teórica implica que la identificación, clasificación e interpretación de los datos científicos están mediadas por el marco conceptual, los instrumentos y la formación del investigador."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-012",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Paradigma, matriz disciplinar y ciencia normal",
+      "enunciado": "La figura ambigua conocida como \"pato-conejo\" se utiliza como analogía para explicar que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Un mismo dibujo cambia físicamente según el papel en el que se imprima"
+        },
+        {
+          "id": "B",
+          "texto": "Los datos observacionales garantizan una interpretación neutral e intemporal"
+        },
+        {
+          "id": "C",
+          "texto": "El paradigma cambia de manera automática cada vez que un observador mira una imagen"
+        },
+        {
+          "id": "D",
+          "texto": "La interpretación de una observación depende de las categorías y esquemas con los que se la organice"
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "La analogía perceptiva muestra que un fenómeno no se recibe pasivamente, sino que se reconoce e interpreta a través de los conceptos y esquemas que adopta el observador.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La analogía perceptiva muestra que un fenómeno no se recibe pasivamente, sino que se reconoce e interpreta a través de los conceptos y esquemas que adopta el observador."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-013",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "Una \"anomalía\" se distingue de un enigma porque la anomalía:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Es un problema que se resiste a ser resuelto según las expectativas y recursos del paradigma"
+        },
+        {
+          "id": "B",
+          "texto": "Se resuelve fácilmente aplicando las reglas habituales en pocos minutos"
+        },
+        {
+          "id": "C",
+          "texto": "Constituye una prueba lógica que demuestra la verdad definitiva del paradigma"
+        },
+        {
+          "id": "D",
+          "texto": "Es una hipótesis teórica formulada exclusivamente durante la etapa de pre-ciencia"
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "A diferencia del enigma, la anomalía pone en evidencia un desajuste o resistencia persistente entre lo que el paradigma prevé y lo que la investigación encuentra.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "A diferencia del enigma, la anomalía pone en evidencia un desajuste o resistencia persistente entre lo que el paradigma prevé y lo que la investigación encuentra."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-014",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "Ante el surgimiento de una anomalía aislada, la actitud inicial habitual de la comunidad científica en la Ciencia Normal es:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Abandonar de inmediato el paradigma y proclamar una revolución científica"
+        },
+        {
+          "id": "B",
+          "texto": "Atribuir el fallo a imprecisiones en la medición, instrumentos o cálculos locales"
+        },
+        {
+          "id": "C",
+          "texto": "Declarar la invalidez de toda la matemática empleada hasta el momento"
+        },
+        {
+          "id": "D",
+          "texto": "Convertir la anomalía en un nuevo paradigma sin realizar ajustes previos"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "En la ciencia normal, un fracaso inicial no invalida el paradigma; suele considerarse provisoriamente como un fallo del investigador o de sus instrumentos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "En la ciencia normal, un fracaso inicial no invalida el paradigma; suele considerarse provisoriamente como un fallo del investigador o de sus instrumentos."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-015",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "En la astronomía geocéntrica, la aparición del movimiento aparente de retrogradación de Marte funcionó como una anomalía que condujo a:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El rechazo instantáneo de la astronomía por parte de los científicos"
+        },
+        {
+          "id": "B",
+          "texto": "La demostración inmediata e irrefutable del heliocentrismo en un solo día"
+        },
+        {
+          "id": "C",
+          "texto": "El desarrollo de ajustes técnicos como los epiciclos para acomodar las observaciones"
+        },
+        {
+          "id": "D",
+          "texto": "La prohibición de observar el planeta Marte con instrumentos"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La tradición geocéntrica elaboró recursos técnicos complejos (como los epiciclos) para conservar el marco general frente a la anomalía de la retrogradación.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La tradición geocéntrica elaboró recursos técnicos complejos (como los epiciclos) para conservar el marco general frente a la anomalía de la retrogradación."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-016",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "Una acumulación de anomalías se convierte en una \"Crisis\" cuando:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Aparece un primer fallo leve en una medición secundaria fácilmente corregible"
+        },
+        {
+          "id": "B",
+          "texto": "Un científico individual decide cambiar de tema de investigación por preferencia personal"
+        },
+        {
+          "id": "C",
+          "texto": "Se demuestra que las observaciones no tienen relación con las teorías"
+        },
+        {
+          "id": "D",
+          "texto": "Las dificultades resisten reiterados intentos de solución y afectan compromisos teóricos básicos"
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "La crisis surge cuando las anomalías persisten, se acumulan, socavan compromisos centrales y debilitan la confianza de la comunidad en la capacidad explicativa del paradigma.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La crisis surge cuando las anomalías persisten, se acumulan, socavan compromisos centrales y debilitan la confianza de la comunidad en la capacidad explicativa del paradigma."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-017",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "Durante un período de Crisis en una disciplina científica, suele observarse como síntoma que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Aumenta la discusión sobre los fundamentos, supuestos y métodos de la ciencia"
+        },
+        {
+          "id": "B",
+          "texto": "Todos los científicos llegan a un acuerdo unánime y definitivo sobre el método"
+        },
+        {
+          "id": "C",
+          "texto": "Se prohíbe formular hipótesis alternativas que cuestionen el paradigma"
+        },
+        {
+          "id": "D",
+          "texto": "La ciencia normal acelera la resolución acumulativa de enigmas ordinarios"
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "En la crisis se debaten los supuestos filosóficos y los fundamentos que antes se daban por sentados, y surgen propuestas y enfoques más radicales.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "En la crisis se debaten los supuestos filosóficos y los fundamentos que antes se daban por sentados, y surgen propuestas y enfoques más radicales."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-018",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "Según Kuhn, la razón por la cual una anomalía no produce una falsación automática e inmediata del paradigma es que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Los paradigmas son verdades absolutas e inmunes a cualquier hecho empírico"
+        },
+        {
+          "id": "B",
+          "texto": "Las anomalías son siempre ilusiones ópticas sin significado en el laboratorio"
+        },
+        {
+          "id": "C",
+          "texto": "Las mediciones y aplicaciones son falibles, y la ciencia normalmente convive con problemas no resueltos"
+        },
+        {
+          "id": "D",
+          "texto": "Los científicos desconocen la existencia de las reglas de la lógica deductiva"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "En la práctica real la ciencia convive con dificultades sin resolver; un desajuste no invalida un paradigma salvo que persista, se vuelva crítico y exista una alternativa viable.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "En la práctica real la ciencia convive con dificultades sin resolver; un desajuste no invalida un paradigma salvo que persista, se vuelva crítico y exista una alternativa viable."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-019",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Paradigma, matriz disciplinar y ciencia normal",
+      "enunciado": "Una \"Revolución Científica\" se define como:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El desarrollo meramente acumulativo y continuo de datos dentro del mismo paradigma"
+        },
+        {
+          "id": "B",
+          "texto": "Un período en el que se mantiene intacto el marco pero se cambian las herramientas técnicas"
+        },
+        {
+          "id": "C",
+          "texto": "La transición espontánea y obligatoria de la ciencia hacia la pre-ciencia"
+        },
+        {
+          "id": "D",
+          "texto": "El reemplazo de un paradigma dominante por otro incompatible con él en aspectos fundamentales"
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "La revolución científica es una transformación discontinua mediante la cual un paradigma en crisis es sustituido por un nuevo marco incompatible en cuestiones centrales.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La revolución científica es una transformación discontinua mediante la cual un paradigma en crisis es sustituido por un nuevo marco incompatible en cuestiones centrales."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-020",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Paradigma, matriz disciplinar y ciencia normal",
+      "enunciado": "El cambio de paradigma en una Revolución Científica se caracteriza por ser \"no acumulativo\" porque:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Se conservan exactamente todas las piezas, conceptos y explicaciones del marco anterior"
+        },
+        {
+          "id": "B",
+          "texto": "El nuevo marco reorganiza los conceptos, modifica los problemas y transforma el significado de los datos"
+        },
+        {
+          "id": "C",
+          "texto": "Consiste en sumar datos numéricos nuevos a la lista de verdades ya establecidas"
+        },
+        {
+          "id": "D",
+          "texto": "Elimina por completo el uso de laboratorios y experimentos en la disciplina"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "En una revolución el conocimiento no se limita a añadirse acumulativamente; el nuevo paradigma altera la estructura conceptual, haciendo que ciertos problemas cambien o pierdan sentido.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "En una revolución el conocimiento no se limita a añadirse acumulativamente; el nuevo paradigma altera la estructura conceptual, haciendo que ciertos problemas cambien o pierdan sentido."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-021",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Paradigma, matriz disciplinar y ciencia normal",
+      "enunciado": "Al comparar el cambio de paradigma con una \"conversión\", Kuhn intenta resaltar:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que la ciencia es una religión irrazonable basada en dogmas irreflexivos"
+        },
+        {
+          "id": "B",
+          "texto": "Que la decisión de aceptar un paradigma depende de un algoritmo matemático automático"
+        },
+        {
+          "id": "C",
+          "texto": "La profundidad de la transformación conceptual en la forma de interpretar los fenómenos"
+        },
+        {
+          "id": "D",
+          "texto": "Que los científicos cambian de paradigma de forma diaria e involuntaria"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La metáfora de la conversión subraya que el científico no cambia solo una respuesta aislada, sino todo el marco conceptual desde el cual reconoce e interpreta la evidencia.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La metáfora de la conversión subraya que el científico no cambia solo una respuesta aislada, sino todo el marco conceptual desde el cual reconoce e interpreta la evidencia."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-022",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Inconmensurabilidad",
+      "enunciado": "El concepto de \"Inconmensurabilidad\" entre paradigmas rivales significa que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Existe una ausencia de una escala única, neutral e imparcial que decida la disputa de forma mecánica"
+        },
+        {
+          "id": "B",
+          "texto": "Es absolutamente imposible que dos científicos de paradigmas distintos hablen o discutan"
+        },
+        {
+          "id": "C",
+          "texto": "Todos los paradigmas son idénticos entre sí y afirman exactamente lo mismo"
+        },
+        {
+          "id": "D",
+          "texto": "Las mediciones de laboratorio son siempre falsas en cualquier marco teórico"
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La inconmensurabilidad indica la falta de un estándar común e imparcial aceptado por ambos lados que resuelva la elección de paradigma mediante un algoritmo neutral.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La inconmensurabilidad indica la falta de un estándar común e imparcial aceptado por ambos lados que resuelva la elección de paradigma mediante un algoritmo neutral."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-023",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Inconmensurabilidad",
+      "enunciado": "Cuando Kuhn afirma que los científicos que adhieren a paradigmas rivales trabajan en \"mundos distintos\", se refiere a que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El universo físico cambia materialmente y se destruye tras cada revolución"
+        },
+        {
+          "id": "B",
+          "texto": "Los investigadores reconocen, organizan y describen los fenómenos desde marcos conceptuales diferentes"
+        },
+        {
+          "id": "C",
+          "texto": "Cada comunidad científica habita en un planeta diferente del sistema solar"
+        },
+        {
+          "id": "D",
+          "texto": "Los experimentos no se realizan mediante objetos materiales reales"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La expresión no implica un cambio físico del universo, sino que los conceptos y supuestos del paradigma condicionan qué distinciones, hechos y problemas se vuelven perceptibles y significativos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La expresión no implica un cambio físico del universo, sino que los conceptos y supuestos del paradigma condicionan qué distinciones, hechos y problemas se vuelven perceptibles y significativos."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-024",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "El paso de la teoría del flogisto a la teoría de la combustión basada en el oxígeno de Lavoisier es un ejemplo histórico de:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Progreso puramente acumulativo dentro de la etapa de pre-ciencia"
+        },
+        {
+          "id": "B",
+          "texto": "Un enigma simple resuelto mediante la aplicación del modelo geocéntrico"
+        },
+        {
+          "id": "C",
+          "texto": "Una sustitución revolucionaria de paradigma que reorganizó la explicación del fenómeno"
+        },
+        {
+          "id": "D",
+          "texto": "La confirmación probabilística de una hipótesis mediante la regla de Hempel"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La química de Lavoisier sustituyó la noción de desprendimiento de flogisto por la de combinación con el oxígeno, reestructurando conceptualmente la explicación de la combustión.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La química de Lavoisier sustituyó la noción de desprendimiento de flogisto por la de combinación con el oxígeno, reestructurando conceptualmente la explicación de la combustión."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-025",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "El \"progreso intraparadigmático\" se diferencia del \"progreso interparadigmático\" en que el primero:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Ocurre durante la ciencia normal y es de carácter acumulativo en la resolución de enigmas"
+        },
+        {
+          "id": "B",
+          "texto": "Representa una ruptura discontinua que cambia los estándares de la comunidad"
+        },
+        {
+          "id": "C",
+          "texto": "Sucede únicamente cuando la disciplina se encuentra en un estado de crisis total"
+        },
+        {
+          "id": "D",
+          "texto": "Consiste en el debate permanente entre escuelas rivales en la pre-ciencia"
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El progreso dentro de un paradigma (intraparadigmático) ocurre en la ciencia normal mediante el perfeccionamiento de técnicas, mediciones y la acumulación de soluciones a enigmas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "El progreso dentro de un paradigma (intraparadigmático) ocurre en la ciencia normal mediante el perfeccionamiento de técnicas, mediciones y la acumulación de soluciones a enigmas."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-026",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Revolución científica",
+      "enunciado": "La metáfora del \"taller mecánico\" se utiliza para ilustrar que una revolución científica:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Añade simplemente una herramienta más a la misma forma de organizar el trabajo"
+        },
+        {
+          "id": "B",
+          "texto": "Equivale a una reorganización del marco de trabajo cuando las dificultades son insuperables con los recursos previos"
+        },
+        {
+          "id": "C",
+          "texto": "Demuestra que los talleres deben cerrar definitivamente ante el primer auto averiado"
+        },
+        {
+          "id": "D",
+          "texto": "Representa la continuidad perfecta e ininterrumpida de los mismos métodos"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La analogía muestra que, mientras la ciencia normal mejora técnicas en la misma estructura, la revolución transforma el modo mismo de organizar y abordar los problemas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La analogía muestra que, mientras la ciencia normal mejora técnicas en la misma estructura, la revolución transforma el modo mismo de organizar y abordar los problemas."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-027",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Paradigma, matriz disciplinar y ciencia normal",
+      "enunciado": "Frente a la acusación de que su teoría niega el progreso, Kuhn aclara que el desarrollo científico:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Avanza en línea recta hacia una descripción final y predeterminada de la realidad"
+        },
+        {
+          "id": "B",
+          "texto": "Carece por completo de cualquier tipo de evaluación o comparación de precisión"
+        },
+        {
+          "id": "C",
+          "texto": "Se reduce a la acumulación infinita de datos en la etapa de pre-ciencia"
+        },
+        {
+          "id": "D",
+          "texto": "Combina etapas de progreso acumulativo en ciencia normal con reorganizaciones en las revoluciones"
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "Kuhn sostiene que la ciencia progresa, pero no de forma lineal continua hacia una verdad preestablecida, sino alternando períodos de precisión acumulativa con rupturas revolucionarias.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Kuhn sostiene que la ciencia progresa, pero no de forma lineal continua hacia una verdad preestablecida, sino alternando períodos de precisión acumulativa con rupturas revolucionarias."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-028",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "¿Cuál de las siguientes afirmaciones expresa un error frecuente al interpretar la postura de Kuhn?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Sostener que el paradigma incluye herramientas, valores y soluciones modelo"
+        },
+        {
+          "id": "B",
+          "texto": "Afirmar que una anomalía provoca la refutación inmediata e instantánea del paradigma"
+        },
+        {
+          "id": "C",
+          "texto": "Distinguir entre la ciencia normal y los episodios de revolución científica"
+        },
+        {
+          "id": "D",
+          "texto": "Reconocer que la observación científica está mediada por conceptos y expectativas"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Es un error frecuente suponer que una anomalía refuta de inmediato el paradigma, ya que la comunidad suele intentar resolverla o convivir con ella antes de entrar en crisis.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Es un error frecuente suponer que una anomalía refuta de inmediato el paradigma, ya que la comunidad suele intentar resolverla o convivir con ella antes de entrar en crisis."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-029",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "La diferencia central entre el estado de Pre-ciencia y el de Ciencia Normal radica en que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "En la pre-ciencia no hay observaciones empíricas y en la ciencia normal solo hay experimentos"
+        },
+        {
+          "id": "B",
+          "texto": "La pre-ciencia se da en universidades y la ciencia normal en laboratorios privados"
+        },
+        {
+          "id": "C",
+          "texto": "En la pre-ciencia faltan consensos sobre fundamentos y compiten escuelas; en la ciencia normal hay un paradigma compartido"
+        },
+        {
+          "id": "D",
+          "texto": "En la pre-ciencia no surgen enigmas y en la ciencia normal solo existen crisis"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La pre-ciencia se define por el desacuerdo fundamental entre escuelas, mientras que la ciencia normal comienza cuando se establece un paradigma que articula el trabajo ordinario.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La pre-ciencia se define por el desacuerdo fundamental entre escuelas, mientras que la ciencia normal comienza cuando se establece un paradigma que articula el trabajo ordinario."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-030",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "En la dinámica de la ciencia según Kuhn, la función complementaria de la Ciencia Normal y de las Revoluciones consiste en que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La ciencia normal destruye los laboratorios y la revolución los vuelve a construir sin ideas"
+        },
+        {
+          "id": "B",
+          "texto": "La ciencia normal crea anomalías intencionalmente y la revolución las prohíbe mediante leyes"
+        },
+        {
+          "id": "C",
+          "texto": "La ciencia normal permite desarrollar en detalle un marco, y la revolución permite revisar sus fundamentos cuando las dificultades son críticas"
+        },
+        {
+          "id": "D",
+          "texto": "La ciencia normal es exclusiva de la física y la revolución científica de la biología"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La ciencia normal brinda la estabilidad necesaria para la investigación minuciosa de enigmas, mientras que la revolución permite reorganizar la ciencia cuando el paradigma en crisis resulta insostenible.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La ciencia normal brinda la estabilidad necesaria para la investigación minuciosa de enigmas, mientras que la revolución permite reorganizar la ciencia cuando el paradigma en crisis resulta insostenible."
+        },
+        {
+          "pregunta": "¿Qué lectura simplificadora conviene evitar?",
+          "respuesta": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-031",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Paradigma y matriz disciplinar",
+      "enunciado": "¿Qué entiende Kuhn por paradigma en su formulación como matriz disciplinar?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Una teoría aislada que puede evaluarse sin atender a la comunidad."
+        },
+        {
+          "id": "B",
+          "texto": "Un conjunto compartido de compromisos que incluye generalizaciones simbólicas, valores, supuestos y ejemplares."
+        },
+        {
+          "id": "C",
+          "texto": "Una lista de anomalías pendientes."
+        },
+        {
+          "id": "D",
+          "texto": "Un método universal de verificación inductiva."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La matriz disciplinar comprende elementos compartidos por una comunidad: generalizaciones simbólicas, valores epistemológicos, supuestos y ejemplares aprendidos mediante la formación científica. Por eso un paradigma es más amplio que una hipótesis.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué diferencia hay entre paradigma y teoría aislada?",
+          "respuesta": "El paradigma organiza problemas, métodos, instrumentos, ejemplos de solución y criterios de evaluación; una teoría aislada es solo un componente posible de ese marco."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-032",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Paradigma y matriz disciplinar",
+      "enunciado": "¿Qué función cumplen los ejemplares en una matriz disciplinar?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Son soluciones concretas de problemas que los científicos aprenden como modelos para abordar nuevos enigmas."
+        },
+        {
+          "id": "B",
+          "texto": "Son observaciones puras sin interpretación."
+        },
+        {
+          "id": "C",
+          "texto": "Son únicamente leyes matemáticas generales."
+        },
+        {
+          "id": "D",
+          "texto": "Son resultados anómalos que refutan el paradigma."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Los ejemplares son soluciones reconocidas y aprendidas durante la formación científica. Funcionan como modelos prácticos para reconocer problemas y ensayar soluciones dentro del paradigma.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué los ejemplares son importantes en la formación?",
+          "respuesta": "Enseñan a los científicos cómo aplicar conceptos, instrumentos y reglas a problemas concretos, no solo a memorizar definiciones."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-033",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Paradigma y matriz disciplinar",
+      "enunciado": "¿Cuál de los siguientes elementos corresponde a un valor epistemológico compartido en una matriz disciplinar?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El horario administrativo del laboratorio."
+        },
+        {
+          "id": "B",
+          "texto": "La identidad personal de cada investigador."
+        },
+        {
+          "id": "C",
+          "texto": "La precisión, coherencia, alcance, simplicidad o fecundidad de una teoría."
+        },
+        {
+          "id": "D",
+          "texto": "El nombre de un instrumento particular."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Los valores epistemológicos orientan la evaluación y elección de teorías o paradigmas. El material destaca precisión, coherencia, alcance, simplicidad y fecundidad.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Los valores determinan una elección mediante un algoritmo?",
+          "respuesta": "No. Orientan el juicio, pero pueden ponderarse de distintas maneras y no obligan a todos los científicos a adoptar una misma decisión."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-034",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Paradigma y matriz disciplinar",
+      "enunciado": "¿Qué función cumplen las generalizaciones simbólicas?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Representan reglas de conducta social."
+        },
+        {
+          "id": "B",
+          "texto": "Son fórmulas y leyes que la comunidad reconoce y utiliza en la investigación."
+        },
+        {
+          "id": "C",
+          "texto": "Son preferencias subjetivas de cada científico."
+        },
+        {
+          "id": "D",
+          "texto": "Son exclusivamente ejemplos históricos."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Las generalizaciones simbólicas incluyen expresiones formales, leyes y fórmulas compartidas que permiten organizar cálculos y explicaciones dentro de una matriz disciplinar.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué diferencia tienen frente a los ejemplares?",
+          "respuesta": "Las generalizaciones expresan relaciones formales compartidas; los ejemplares muestran soluciones concretas que se aprenden como modelos de trabajo."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-035",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Ciencia normal y enigmas",
+      "enunciado": "¿Qué caracteriza a la ciencia normal?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La investigación que resuelve enigmas dentro de un paradigma compartido sin poner constantemente en cuestión sus fundamentos."
+        },
+        {
+          "id": "B",
+          "texto": "La etapa en la que no existe consenso científico."
+        },
+        {
+          "id": "C",
+          "texto": "La sustitución inmediata de una teoría ante cualquier dato inesperado."
+        },
+        {
+          "id": "D",
+          "texto": "La investigación que carece de reglas y métodos compartidos."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La ciencia normal es la actividad de investigación que opera dentro de una matriz disciplinar aceptada. Los científicos resuelven problemas usando conceptos, métodos e instrumentos que el paradigma ofrece.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué se habla de enigmas?",
+          "respuesta": "Porque se supone que el paradigma brinda herramientas y reglas para resolver esos problemas; el desafío consiste en encontrar una solución dentro del marco."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-036",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Ciencia normal y enigmas",
+      "enunciado": "Un científico mejora una medición usando instrumentos y ecuaciones aceptados por su comunidad. No cuestiona el marco general, sino que resuelve un problema pendiente. ¿Qué actividad realiza?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Revolución científica."
+        },
+        {
+          "id": "B",
+          "texto": "Crisis paradigmática."
+        },
+        {
+          "id": "C",
+          "texto": "Inconmensurabilidad."
+        },
+        {
+          "id": "D",
+          "texto": "Ciencia normal."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "La actividad se desarrolla dentro de los compromisos del paradigma y busca resolver un problema con herramientas compartidas. Es un ejemplo típico de ciencia normal.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿La ciencia normal es pasiva o rutinaria en sentido trivial?",
+          "respuesta": "No. Puede ser técnicamente exigente y producir avances importantes, aunque normalmente no cuestione sus fundamentos generales."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-037",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "¿Cuál es la diferencia más precisa entre enigma y anomalía?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El enigma es una dificultad que se aborda con herramientas del paradigma; la anomalía es un resultado que no encaja con sus expectativas."
+        },
+        {
+          "id": "B",
+          "texto": "El enigma refuta el paradigma y la anomalía lo confirma."
+        },
+        {
+          "id": "C",
+          "texto": "Ambos significan lo mismo."
+        },
+        {
+          "id": "D",
+          "texto": "La anomalía solo aparece después de la revolución."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Un enigma es un problema que se considera resoluble dentro de las reglas vigentes. Una anomalía es una discrepancia entre un resultado y lo que el paradigma hace esperar; puede investigarse sin provocar crisis inmediata.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Toda dificultad difícil es una anomalía?",
+          "respuesta": "No. Un problema puede ser un enigma complejo; para hablar de anomalía importa que el resultado entre en tensión con expectativas del paradigma."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-038",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "¿Por qué una anomalía no refuta automáticamente un paradigma?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque los paradigmas son verdaderos por definición."
+        },
+        {
+          "id": "B",
+          "texto": "Porque las mediciones y aplicaciones pueden ser falibles y la ciencia normal convive con problemas aún no resueltos."
+        },
+        {
+          "id": "C",
+          "texto": "Porque las anomalías solo existen en ciencias sociales."
+        },
+        {
+          "id": "D",
+          "texto": "Porque la comunidad científica nunca cambia de opinión."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Una discrepancia puede depender de instrumentos, cálculos o aplicaciones locales y muchas anomalías se trabajan sin abandonar el marco. Su importancia depende de persistencia, relevancia y respuesta comunitaria.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué diferencia una anomalía de una crisis?",
+          "respuesta": "La crisis implica una pérdida de confianza más amplia en la capacidad del paradigma, no solo la presencia de un resultado discordante."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-039",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "Una señal experimental inesperada persiste luego de revisar calibraciones, pero solo un equipo está preocupado. ¿Qué concepto identifica mejor la señal?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Revolución científica."
+        },
+        {
+          "id": "B",
+          "texto": "Inconmensurabilidad."
+        },
+        {
+          "id": "C",
+          "texto": "Anomalía, potencialmente capaz de contribuir a una crisis si adquiere mayor relevancia."
+        },
+        {
+          "id": "D",
+          "texto": "Paradigma alternativo ya establecido."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "El resultado no encaja con las expectativas y persiste tras controles, por lo que puede identificarse como anomalía. Sin evidencia de una pérdida de confianza comunitaria más amplia, no basta para afirmar que ya existe una crisis.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué tendría que ocurrir para hablar de crisis?",
+          "respuesta": "Que la anomalía persista, afecte problemas importantes y debilite la confianza de la comunidad en el paradigma, con discusión de alternativas."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-040",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, enigma y crisis",
+      "enunciado": "¿Qué caracteriza a una crisis científica en el esquema de Kuhn?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Una discrepancia aislada que se resuelve rápidamente."
+        },
+        {
+          "id": "B",
+          "texto": "La aceptación definitiva de un paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "La ausencia de toda controversia."
+        },
+        {
+          "id": "D",
+          "texto": "La acumulación de anomalías relevantes que debilitan la confianza en el paradigma y abren disputas sobre sus fundamentos."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "La crisis es una etapa de inestabilidad más amplia. Las anomalías persistentes afectan compromisos importantes, aparecen alternativas y la comunidad discute la capacidad del marco vigente.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Toda crisis culmina en una revolución?",
+          "respuesta": "No necesariamente. Puede resolverse dentro del paradigma, quedar pendiente o dar lugar a una alternativa que lo reemplace."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-041",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Revolución científica",
+      "enunciado": "¿Qué define una revolución científica para Kuhn?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La acumulación gradual de datos sin cambios conceptuales."
+        },
+        {
+          "id": "B",
+          "texto": "El reemplazo de un paradigma por otro que reorganiza conceptos, problemas, prácticas y estándares."
+        },
+        {
+          "id": "C",
+          "texto": "La falsación automática de una ley por una observación."
+        },
+        {
+          "id": "D",
+          "texto": "La mejora técnica de un instrumento dentro de la ciencia normal."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La revolución no es solo incorporar información a un marco estable. Cambia la matriz que orienta la investigación: los conceptos, problemas relevantes, métodos y criterios de evaluación.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué el cambio no es puramente acumulativo?",
+          "respuesta": "Porque reorganiza el marco de interpretación y puede cambiar el significado de los conceptos, la importancia de los problemas y los criterios de solución."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-042",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Revolución científica",
+      "enunciado": "¿Por qué es incorrecto decir que una revolución reemplaza un paradigma falso por otro demostrado como verdadero?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque para Kuhn no existen criterios para evaluar teorías."
+        },
+        {
+          "id": "B",
+          "texto": "Porque todas las teorías son igualmente verdaderas."
+        },
+        {
+          "id": "C",
+          "texto": "Porque la revolución no consiste en una refutación lógica instantánea ni demuestra un paradigma final; transforma el marco conceptual y las prácticas científicas."
+        },
+        {
+          "id": "D",
+          "texto": "Porque los científicos nunca discuten evidencias."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Una revolución no es la simple sustitución de una falsedad por una verdad definitiva. La elección implica cambios en conceptos y estándares, y se apoya en razones y valores sin constituir una demostración neutral que cierre toda discusión.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Esto implica que para Kuhn «todo vale»?",
+          "respuesta": "No. Los científicos comparan precisión, coherencia, alcance, simplicidad y fecundidad, aunque esos valores no formen un algoritmo único."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-043",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Inconmensurabilidad",
+      "enunciado": "¿Qué significa la inconmensurabilidad entre paradigmas?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que no siempre existe una escala neutral y completamente compartida para compararlos, porque pueden organizar conceptos, problemas y criterios de modo diferente."
+        },
+        {
+          "id": "B",
+          "texto": "Que los científicos son incapaces de comunicarse."
+        },
+        {
+          "id": "C",
+          "texto": "Que no hay razones para preferir un paradigma."
+        },
+        {
+          "id": "D",
+          "texto": "Que los paradigmas solo difieren en los nombres de sus instrumentos."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Paradigmas rivales pueden cambiar el significado de conceptos, la importancia de los problemas y los criterios de evaluación. Por eso no se comparan siempre punto por punto mediante una métrica neutral única.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Inconmensurabilidad significa incomunicación absoluta?",
+          "respuesta": "No. Puede haber comunicación, traducción parcial y argumentos comparativos; lo que se cuestiona es una medida totalmente neutral y universal."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-044",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Inconmensurabilidad",
+      "enunciado": "¿Por qué la inconmensurabilidad no equivale a relativismo absoluto?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque los paradigmas son idénticos."
+        },
+        {
+          "id": "B",
+          "texto": "Porque la comunidad elige por votación y no utiliza evidencias."
+        },
+        {
+          "id": "C",
+          "texto": "Porque las comparaciones son imposibles por definición."
+        },
+        {
+          "id": "D",
+          "texto": "Porque siguen existiendo razones y valores para comparar, aunque no haya un algoritmo neutral que determine automáticamente la elección."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "Kuhn no elimina la evaluación racional. Los científicos pueden valorar precisión, coherencia, alcance, simplicidad y fecundidad, aun cuando estos criterios no conduzcan mecánicamente a una única decisión.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué papel tienen los valores epistemológicos?",
+          "respuesta": "Orientan el juicio y permiten discutir razones, pero pueden entrar en tensión y ponderarse de manera diferente entre investigadores."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-045",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Carga teórica y Gestalt",
+      "enunciado": "¿Qué ilustra la analogía de la Gestalt en Kuhn?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que toda observación es una copia neutral e idéntica del mundo."
+        },
+        {
+          "id": "B",
+          "texto": "Que los científicos pueden organizar y percibir fenómenos de manera diferente según el marco conceptual que comparten."
+        },
+        {
+          "id": "C",
+          "texto": "Que las percepciones privadas son el fundamento definitivo de la ciencia."
+        },
+        {
+          "id": "D",
+          "texto": "Que los paradigmas no modifican la interpretación de los datos."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La Gestalt muestra que la percepción no es una recepción completamente neutra: el marco aprendido orienta qué aspectos se reconocen y cómo se organizan. Un cambio de paradigma puede modificar la manera de ver e interpretar los fenómenos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿La carga teórica de la observación significa que todo es subjetivo?",
+          "respuesta": "No. Significa que observar está orientado por conceptos y prácticas compartidas; la evidencia sigue importando y no todas las interpretaciones son equivalentes."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-046",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Carga teórica y Gestalt",
+      "enunciado": "Dos investigadores formados en paradigmas diferentes observan el mismo registro experimental, pero lo describen mediante categorías distintas. ¿Qué tesis se ejemplifica?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La observación está cargada teóricamente y organizada por marcos conceptuales."
+        },
+        {
+          "id": "B",
+          "texto": "La experiencia perceptiva privada garantiza la verdad."
+        },
+        {
+          "id": "C",
+          "texto": "La falsabilidad no es posible."
+        },
+        {
+          "id": "D",
+          "texto": "La observación carece de todo valor."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Los marcos conceptuales influyen en la identificación y descripción de los fenómenos. Esto no hace desaparecer el dato material, pero impide tratar la observación como un lenguaje completamente neutral e independiente de teoría.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué no se deduce de la carga teórica?",
+          "respuesta": "No se deduce que la evidencia sea irrelevante ni que cualquier descripción tenga el mismo valor."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-047",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Carga teórica y Gestalt",
+      "enunciado": "¿Qué cambia en la percepción científica durante una revolución?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Solo la cantidad de datos acumulados."
+        },
+        {
+          "id": "B",
+          "texto": "Únicamente el instrumento, sin cambiar conceptos."
+        },
+        {
+          "id": "C",
+          "texto": "La organización de los fenómenos, los conceptos con los que se los identifica y los problemas que se consideran relevantes."
+        },
+        {
+          "id": "D",
+          "texto": "La capacidad biológica de los sentidos."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La revolución puede modificar el modo en que los científicos reconocen y organizan fenómenos. La analogía de Gestalt ilustra el cambio de marco perceptivo y conceptual, no una modificación biológica de los sentidos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué puede cambiar qué se considera un problema?",
+          "respuesta": "Porque el paradigma define qué preguntas son legítimas, qué resultados importan y qué cuenta como solución aceptable."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-048",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Valores y elección de paradigmas",
+      "enunciado": "¿Cuáles son los valores epistemológicos destacados en el material para evaluar paradigmas?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Vigilancia, examen, obediencia, castigo y encierro."
+        },
+        {
+          "id": "B",
+          "texto": "Precisión, coherencia, alcance, simplicidad y fecundidad."
+        },
+        {
+          "id": "C",
+          "texto": "Dogmatismo, regresión, psicologismo y consenso."
+        },
+        {
+          "id": "D",
+          "texto": "Clasificación, polaridad, observabilidad y liberación."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El material presenta precisión, coherencia, amplitud de alcance, simplicidad y fecundidad como valores que orientan la evaluación y elección científica.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué la presencia de valores no equivale a arbitrariedad?",
+          "respuesta": "Porque los valores aportan razones y criterios de discusión, aunque no funcionen como una fórmula única que obligue a todos a la misma elección."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-049",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Valores y elección de paradigmas",
+      "enunciado": "¿Por qué los valores kuhnianos no forman un algoritmo único de elección?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque los investigadores no pueden evaluar ningún resultado."
+        },
+        {
+          "id": "B",
+          "texto": "Porque la elección depende solo de la autoridad política."
+        },
+        {
+          "id": "C",
+          "texto": "Porque todos los valores se aplican siempre de manera idéntica."
+        },
+        {
+          "id": "D",
+          "texto": "Porque pueden entrar en tensión y distintos científicos pueden ponderarlos de modo diferente."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "Los valores orientan la elección, pero no tienen pesos fijos ni producen necesariamente un resultado automático. Dos investigadores pueden coincidir en los criterios y diferir razonablemente en su ponderación.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué significa ponderar valores?",
+          "respuesta": "Considerar cómo se equilibran precisión, coherencia, alcance, simplicidad y fecundidad en un caso concreto, sin aplicar una regla mecánica."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-050",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Pérdida kuhniana",
+      "enunciado": "¿Qué significa la pérdida kuhniana (*Kuhn-loss*)?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que un paradigma nuevo puede ganar capacidad para resolver ciertos problemas y, a la vez, dejar de resolver otros que el anterior trataba satisfactoriamente."
+        },
+        {
+          "id": "B",
+          "texto": "Que una revolución siempre empeora la ciencia."
+        },
+        {
+          "id": "C",
+          "texto": "Que el paradigma anterior queda demostrado como verdadero."
+        },
+        {
+          "id": "D",
+          "texto": "Que no existe progreso científico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La pérdida kuhniana indica que el cambio de paradigma puede producir ganancias y pérdidas. El marco nuevo puede explicar fenómenos importantes y abandonar o dejar sin resolver capacidades anteriores.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿La pérdida kuhniana impide reconocer progreso?",
+          "respuesta": "No. Permite describir el progreso sin imaginarlo como acumulación lineal perfecta: puede haber avances y pérdidas en una misma transformación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-051",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Pérdida kuhniana",
+      "enunciado": "Un paradigma nuevo explica varios fenómenos que antes eran problemáticos, pero ya no resuelve con la misma precisión un problema que el anterior trataba bien. ¿Qué concepto se aplica?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Falsación popperiana."
+        },
+        {
+          "id": "B",
+          "texto": "Efecto de bucle."
+        },
+        {
+          "id": "C",
+          "texto": "Pérdida kuhniana."
+        },
+        {
+          "id": "D",
+          "texto": "Enunciado básico."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La situación ejemplifica una pérdida kuhniana: el nuevo marco obtiene capacidades explicativas y puede perder otras que el anterior conservaba. La evaluación histórica debe considerar ambas dimensiones.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Cómo puede haber progreso con pérdidas?",
+          "respuesta": "Porque el nuevo paradigma puede abrir problemas, métodos y explicaciones valiosas aunque no conserve todas las soluciones del anterior."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-052",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Síntesis de Kuhn",
+      "enunciado": "¿Cuál de estas afirmaciones presenta correctamente la secuencia de transformación científica?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Anomalía aislada → falsación automática → verificación final."
+        },
+        {
+          "id": "B",
+          "texto": "Ciencia normal → anomalías relevantes → posible crisis → revolución científica, sin que cada etapa sea automática."
+        },
+        {
+          "id": "C",
+          "texto": "Crisis → ciencia normal sin cambio de paradigma."
+        },
+        {
+          "id": "D",
+          "texto": "Revolución → acumulación de datos bajo reglas idénticas."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La secuencia representa un recorrido posible: la ciencia normal resuelve enigmas, algunas anomalías persistentes pueden contribuir a una crisis y esta puede abrir paso a una revolución. No es una cadena inevitable.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué condiciones hacen que una anomalía adquiera relevancia histórica?",
+          "respuesta": "Su persistencia, importancia para problemas centrales y capacidad de debilitar la confianza en el paradigma."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-053",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Síntesis de Kuhn",
+      "enunciado": "¿Qué diferencia distingue el progreso dentro de un paradigma del cambio entre paradigmas?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El progreso de ciencia normal suele ser acumulativo en la resolución de enigmas; el cambio revolucionario reorganiza el marco, los conceptos y los criterios."
+        },
+        {
+          "id": "B",
+          "texto": "Ambos son siempre acumulaciones lineales."
+        },
+        {
+          "id": "C",
+          "texto": "El progreso dentro de un paradigma es imposible."
+        },
+        {
+          "id": "D",
+          "texto": "El cambio entre paradigmas ocurre sin participación de comunidades científicas."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Durante la ciencia normal se resuelven problemas con herramientas compartidas. Una revolución altera el marco que define esos problemas y puede reorganizar las prácticas y los conceptos, por lo que no se reduce a sumar resultados.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué cambia durante una revolución además de las teorías?",
+          "respuesta": "Pueden cambiar los problemas legítimos, los significados conceptuales, las prácticas, los instrumentos y los criterios de evaluación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-054",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Síntesis de Kuhn",
+      "enunciado": "¿Qué afirmación combina adecuadamente matriz disciplinar, Gestalt y elección de paradigmas?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El paradigma es solo una ley; la observación es neutral; la elección se hace por algoritmo."
+        },
+        {
+          "id": "B",
+          "texto": "La Gestalt demuestra que toda experiencia es privada y que no existen criterios comunes."
+        },
+        {
+          "id": "C",
+          "texto": "Los paradigmas solo se distinguen por su vocabulario."
+        },
+        {
+          "id": "D",
+          "texto": "Los compromisos compartidos orientan cómo se observan los fenómenos, y los valores guían la elección sin determinarla mediante una regla mecánica."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "La matriz disciplinar organiza la práctica y la percepción científica; la analogía de Gestalt muestra la carga teórica de la observación; los valores orientan la elección de paradigmas sin formar un algoritmo universal.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué cautela evita leer a Kuhn como relativista absoluto?",
+          "respuesta": "Reconocer que la observación está orientada por marcos no elimina evidencias ni razones comparativas: los valores epistemológicos siguen permitiendo discutir elecciones."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-055",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nEn un observatorio, varios registros muestran una desviación que el modelo astronómico vigente no anticipa. El equipo repite las mediciones y revisa la calibración; la desviación persiste, aunque todavía no hay una pérdida general de confianza en el marco teórico.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Enigma"
+        },
+        {
+          "id": "B",
+          "texto": "Anomalía"
+        },
+        {
+          "id": "C",
+          "texto": "Crisis"
+        },
+        {
+          "id": "D",
+          "texto": "Inconmensurabilidad"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Respuesta: Anomalía. El resultado no encaja con las expectativas del paradigma y resiste controles, por lo que es una anomalía. Que persista no alcanza, por sí solo, para afirmar que la comunidad atraviesa una crisis."
+    },
+    {
+      "id": "ipc-p2-kuhn-056",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Anomalía». ¿Cuál es la justificación más adecuada?\n\nEn un observatorio, varios registros muestran una desviación que el modelo astronómico vigente no anticipa. El equipo repite las mediciones y revisa la calibración; la desviación persiste, aunque todavía no hay una pérdida general de confianza en el marco teórico.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque el resultado no encaja con las expectativas del paradigma y resiste controles, por lo que es una anomalía. Que persista no alcanza, por sí solo, para afirmar que la comunidad atraviesa una crisis."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: El resultado no encaja con las expectativas del paradigma y resiste controles, por lo que es una anomalía. Que persista no alcanza, por sí solo, para afirmar que la comunidad atraviesa una crisis."
+    },
+    {
+      "id": "ipc-p2-kuhn-057",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nUn laboratorio obtiene repetidamente una reacción química cuyo producto no coincide con lo previsto por el marco aceptado. Se descartan errores de procedimiento, pero el hallazgo aún se estudia como un problema localizado.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Paradigma"
+        },
+        {
+          "id": "B",
+          "texto": "Revolución científica"
+        },
+        {
+          "id": "C",
+          "texto": "Anomalía"
+        },
+        {
+          "id": "D",
+          "texto": "Enigma"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Respuesta: Anomalía. La discrepancia persistente entre el resultado y lo que el paradigma permite esperar constituye una anomalía. El caso no describe todavía una crisis de toda la disciplina."
+    },
+    {
+      "id": "ipc-p2-kuhn-058",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Anomalía». ¿Cuál es la justificación más adecuada?\n\nUn laboratorio obtiene repetidamente una reacción química cuyo producto no coincide con lo previsto por el marco aceptado. Se descartan errores de procedimiento, pero el hallazgo aún se estudia como un problema localizado.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque la discrepancia persistente entre el resultado y lo que el paradigma permite esperar constituye una anomalía. El caso no describe todavía una crisis de toda la disciplina."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: La discrepancia persistente entre el resultado y lo que el paradigma permite esperar constituye una anomalía. El caso no describe todavía una crisis de toda la disciplina."
+    },
+    {
+      "id": "ipc-p2-kuhn-059",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nUn grupo de físicos detecta pequeñas diferencias entre dos mediciones. El paradigma vigente ofrece ecuaciones y técnicas conocidas para calcular la causa, y los investigadores trabajan dentro de ese marco hasta resolver el problema.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Crisis"
+        },
+        {
+          "id": "B",
+          "texto": "Enigma"
+        },
+        {
+          "id": "C",
+          "texto": "Anomalía"
+        },
+        {
+          "id": "D",
+          "texto": "Inconmensurabilidad"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Respuesta: Enigma. Es un enigma porque se trata de un problema que la comunidad considera resoluble mediante los recursos teóricos, matemáticos e instrumentales del paradigma vigente."
+    },
+    {
+      "id": "ipc-p2-kuhn-060",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Enigma». ¿Cuál es la justificación más adecuada?\n\nUn grupo de físicos detecta pequeñas diferencias entre dos mediciones. El paradigma vigente ofrece ecuaciones y técnicas conocidas para calcular la causa, y los investigadores trabajan dentro de ese marco hasta resolver el problema.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque es un enigma porque se trata de un problema que la comunidad considera resoluble mediante los recursos teóricos, matemáticos e instrumentales del paradigma vigente."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: Es un enigma porque se trata de un problema que la comunidad considera resoluble mediante los recursos teóricos, matemáticos e instrumentales del paradigma vigente."
+    },
+    {
+      "id": "ipc-p2-kuhn-061",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nDurante una investigación, un equipo busca explicar una variación pequeña en los resultados. La comunidad reconoce el problema como legítimo y sabe qué procedimientos, modelos y mediciones debe aplicar para encontrar una solución.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Paradigma"
+        },
+        {
+          "id": "B",
+          "texto": "Anomalía"
+        },
+        {
+          "id": "C",
+          "texto": "Enigma"
+        },
+        {
+          "id": "D",
+          "texto": "Crisis"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Respuesta: Enigma. El problema es un enigma de ciencia normal: el paradigma delimita qué pregunta investigar y proporciona modelos y procedimientos para intentar resolverla."
+    },
+    {
+      "id": "ipc-p2-kuhn-062",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Enigma». ¿Cuál es la justificación más adecuada?\n\nDurante una investigación, un equipo busca explicar una variación pequeña en los resultados. La comunidad reconoce el problema como legítimo y sabe qué procedimientos, modelos y mediciones debe aplicar para encontrar una solución.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque el problema es un enigma de ciencia normal: el paradigma delimita qué pregunta investigar y proporciona modelos y procedimientos para intentar resolverla."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: El problema es un enigma de ciencia normal: el paradigma delimita qué pregunta investigar y proporciona modelos y procedimientos para intentar resolverla."
+    },
+    {
+      "id": "ipc-p2-kuhn-063",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nDurante años se acumulan resultados que contradicen predicciones centrales de una disciplina. Los intentos de ajuste fracasan, varios grupos cuestionan supuestos básicos y la comunidad pierde confianza en que el paradigma pueda resolver esas dificultades.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Enigma"
+        },
+        {
+          "id": "B",
+          "texto": "Crisis"
+        },
+        {
+          "id": "C",
+          "texto": "Paradigma"
+        },
+        {
+          "id": "D",
+          "texto": "Anomalía aislada"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Respuesta: Crisis. La acumulación de anomalías relevantes afecta compromisos centrales y debilita la confianza comunitaria. Esa situación más amplia caracteriza una crisis, no una anomalía aislada."
+    },
+    {
+      "id": "ipc-p2-kuhn-064",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Crisis». ¿Cuál es la justificación más adecuada?\n\nDurante años se acumulan resultados que contradicen predicciones centrales de una disciplina. Los intentos de ajuste fracasan, varios grupos cuestionan supuestos básicos y la comunidad pierde confianza en que el paradigma pueda resolver esas dificultades.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque la acumulación de anomalías relevantes afecta compromisos centrales y debilita la confianza comunitaria. Esa situación más amplia caracteriza una crisis, no una anomalía aislada."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: La acumulación de anomalías relevantes afecta compromisos centrales y debilita la confianza comunitaria. Esa situación más amplia caracteriza una crisis, no una anomalía aislada."
+    },
+    {
+      "id": "ipc-p2-kuhn-065",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nEn una disciplina, distintos equipos reproducen anomalías que afectan principios centrales. Se multiplican las discusiones sobre los fundamentos, aparecen propuestas alternativas y parte de la comunidad deja de confiar en las soluciones habituales.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Ciencia normal"
+        },
+        {
+          "id": "B",
+          "texto": "Enigma"
+        },
+        {
+          "id": "C",
+          "texto": "Crisis"
+        },
+        {
+          "id": "D",
+          "texto": "Inconmensurabilidad"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Respuesta: Crisis. El caso reúne los rasgos de una crisis kuhniana: anomalías persistentes y relevantes, cuestionamiento de compromisos básicos, debate sobre fundamentos y debilitamiento de la confianza en el paradigma."
+    },
+    {
+      "id": "ipc-p2-kuhn-066",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Crisis». ¿Cuál es la justificación más adecuada?\n\nEn una disciplina, distintos equipos reproducen anomalías que afectan principios centrales. Se multiplican las discusiones sobre los fundamentos, aparecen propuestas alternativas y parte de la comunidad deja de confiar en las soluciones habituales.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque el caso reúne los rasgos de una crisis kuhniana: anomalías persistentes y relevantes, cuestionamiento de compromisos básicos, debate sobre fundamentos y debilitamiento de la confianza en el paradigma."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: El caso reúne los rasgos de una crisis kuhniana: anomalías persistentes y relevantes, cuestionamiento de compromisos básicos, debate sobre fundamentos y debilitamiento de la confianza en el paradigma."
+    },
+    {
+      "id": "ipc-p2-kuhn-067",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nUna comunidad científica comparte leyes, supuestos, valores, métodos, instrumentos y soluciones ejemplares. La formación de nuevos investigadores les enseña a reconocer problemas legítimos y a resolverlos siguiendo esa tradición.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Paradigma"
+        },
+        {
+          "id": "B",
+          "texto": "Anomalía"
+        },
+        {
+          "id": "C",
+          "texto": "Crisis"
+        },
+        {
+          "id": "D",
+          "texto": "Inconmensurabilidad"
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Respuesta: Paradigma. El conjunto de compromisos, prácticas, valores y ejemplares compartidos constituye un paradigma o matriz disciplinar. No se reduce a una hipótesis aislada ni a una sola ley."
+    },
+    {
+      "id": "ipc-p2-kuhn-068",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Paradigma». ¿Cuál es la justificación más adecuada?\n\nUna comunidad científica comparte leyes, supuestos, valores, métodos, instrumentos y soluciones ejemplares. La formación de nuevos investigadores les enseña a reconocer problemas legítimos y a resolverlos siguiendo esa tradición.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque el conjunto de compromisos, prácticas, valores y ejemplares compartidos constituye un paradigma o matriz disciplinar. No se reduce a una hipótesis aislada ni a una sola ley."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: El conjunto de compromisos, prácticas, valores y ejemplares compartidos constituye un paradigma o matriz disciplinar. No se reduce a una hipótesis aislada ni a una sola ley."
+    },
+    {
+      "id": "ipc-p2-kuhn-069",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nEn una disciplina, los investigadores acuerdan qué problemas son relevantes, qué instrumentos usar, qué explicaciones se consideran aceptables y qué soluciones anteriores sirven como modelos para nuevos trabajos.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Enigma"
+        },
+        {
+          "id": "B",
+          "texto": "Revolución científica"
+        },
+        {
+          "id": "C",
+          "texto": "Paradigma"
+        },
+        {
+          "id": "D",
+          "texto": "Crisis"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Respuesta: Paradigma. Ese marco común de supuestos, valores, métodos y ejemplares organiza la ciencia normal. Esa función compartida es característica de un paradigma."
+    },
+    {
+      "id": "ipc-p2-kuhn-070",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Paradigma». ¿Cuál es la justificación más adecuada?\n\nEn una disciplina, los investigadores acuerdan qué problemas son relevantes, qué instrumentos usar, qué explicaciones se consideran aceptables y qué soluciones anteriores sirven como modelos para nuevos trabajos.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque ese marco común de supuestos, valores, métodos y ejemplares organiza la ciencia normal. Esa función compartida es característica de un paradigma."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: Ese marco común de supuestos, valores, métodos y ejemplares organiza la ciencia normal. Esa función compartida es característica de un paradigma."
+    },
+    {
+      "id": "ipc-p2-kuhn-071",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nDos comunidades científicas rivales interpretan ciertos fenómenos mediante conceptos diferentes y priorizan problemas distintos. No existe una escala neutral, aceptada por ambas, que permita decidir mecánicamente cuál paradigma es superior.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Anomalía"
+        },
+        {
+          "id": "B",
+          "texto": "Inconmensurabilidad"
+        },
+        {
+          "id": "C",
+          "texto": "Enigma"
+        },
+        {
+          "id": "D",
+          "texto": "Crisis"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Respuesta: Inconmensurabilidad. La inconmensurabilidad señala que los paradigmas no siempre pueden compararse mediante un patrón único y neutral, porque organizan conceptos, problemas y criterios de evaluación de manera diferente. No implica que sea imposible dialogar."
+    },
+    {
+      "id": "ipc-p2-kuhn-072",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Inconmensurabilidad». ¿Cuál es la justificación más adecuada?\n\nDos comunidades científicas rivales interpretan ciertos fenómenos mediante conceptos diferentes y priorizan problemas distintos. No existe una escala neutral, aceptada por ambas, que permita decidir mecánicamente cuál paradigma es superior.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque la inconmensurabilidad señala que los paradigmas no siempre pueden compararse mediante un patrón único y neutral, porque organizan conceptos, problemas y criterios de evaluación de manera diferente. No implica que sea imposible dialogar."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: La inconmensurabilidad señala que los paradigmas no siempre pueden compararse mediante un patrón único y neutral, porque organizan conceptos, problemas y criterios de evaluación de manera diferente. No implica que sea imposible dialogar."
+    },
+    {
+      "id": "ipc-p2-kuhn-073",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Identificación de conceptos: situaciones tipo parcial",
+      "enunciado": "Leé la situación y seleccioná el concepto de Kuhn que mejor la describe:\n\nAl comparar dos teorías históricas, los investigadores advierten que términos centrales cambiaron de significado y que cada tradición considera relevantes problemas y pruebas diferentes. Aun así, pueden discutir razones y evaluar ventajas y límites.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Crisis"
+        },
+        {
+          "id": "B",
+          "texto": "Paradigma"
+        },
+        {
+          "id": "C",
+          "texto": "Inconmensurabilidad"
+        },
+        {
+          "id": "D",
+          "texto": "Anomalía"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Respuesta: Inconmensurabilidad. La inconmensurabilidad no significa incomunicación absoluta ni relativismo total. Indica que no hay una medida completamente neutral y compartida que resuelva automáticamente la comparación entre paradigmas."
+    },
+    {
+      "id": "ipc-p2-kuhn-074",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Justificación de situaciones: variantes del ejercicio 9",
+      "enunciado": "Elegiste identificar la situación anterior como «Inconmensurabilidad». ¿Cuál es la justificación más adecuada?\n\nAl comparar dos teorías históricas, los investigadores advierten que términos centrales cambiaron de significado y que cada tradición considera relevantes problemas y pruebas diferentes. Aun así, pueden discutir razones y evaluar ventajas y límites.",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque la inconmensurabilidad no significa incomunicación absoluta ni relativismo total. Indica que no hay una medida completamente neutral y compartida que resuelva automáticamente la comparación entre paradigmas."
+        },
+        {
+          "id": "B",
+          "texto": "Porque cualquier dificultad experimental obliga a abandonar inmediatamente el paradigma."
+        },
+        {
+          "id": "C",
+          "texto": "Porque los conceptos científicos tienen siempre un significado fijo e independiente de la comunidad."
+        },
+        {
+          "id": "D",
+          "texto": "Porque Kuhn sostiene que la ciencia avanza únicamente acumulando observaciones neutrales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La justificación correcta es: La inconmensurabilidad no significa incomunicación absoluta ni relativismo total. Indica que no hay una medida completamente neutral y compartida que resuelva automáticamente la comparación entre paradigmas."
+    },
+    {
+      "id": "ipc-p2-kuhn-075",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Anomalía, crisis y revolución",
+      "enunciado": "Durante años, una comunidad resuelve problemas dentro de un paradigma. Aparece un resultado inesperado que se repite, pero sigue tratándose como un problema pendiente. ¿Qué permite afirmar este dato por sí solo?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que existe una anomalía; todavía no basta para concluir que hay una crisis o una revolución científica."
+        },
+        {
+          "id": "B",
+          "texto": "Que la comunidad ya abandonó su paradigma y comenzó una revolución."
+        },
+        {
+          "id": "C",
+          "texto": "Que el paradigma fue refutado de manera concluyente por un solo resultado."
+        },
+        {
+          "id": "D",
+          "texto": "Que la ciencia normal terminó necesariamente porque toda anomalía produce una crisis."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Una anomalía es una dificultad respecto de las expectativas del paradigma. Se convierte en un elemento de crisis cuando adquiere importancia persistente y compromete la confianza en la práctica normal; la revolución implica el cambio de marco.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Una anomalía es una dificultad respecto de las expectativas del paradigma. Se convierte en un elemento de crisis cuando adquiere importancia persistente y compromete la confianza en la práctica normal; la revolución implica el cambio de marco."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-076",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Pérdida kuhniana",
+      "enunciado": "Una teoría nueva explica un conjunto de fenómenos que la anterior no podía resolver, pero deja de ofrecer una explicación satisfactoria para ciertos problemas que la comunidad consideraba importantes. ¿Cómo se denomina este costo posible del cambio?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Inconmensurabilidad, porque dos teorías no pueden compararse bajo ningún criterio."
+        },
+        {
+          "id": "B",
+          "texto": "Ciencia normal, porque la comunidad resuelve enigmas dentro del paradigma vigente."
+        },
+        {
+          "id": "C",
+          "texto": "Pérdida kuhniana, porque el cambio puede implicar abandonar logros o capacidades valorados del paradigma anterior."
+        },
+        {
+          "id": "D",
+          "texto": "Anomalía, porque todo problema no resuelto constituye una dificultad del paradigma nuevo."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Kuhn reconoce que el cambio de paradigma puede implicar ganancias y pérdidas: la teoría nueva no necesariamente conserva todas las capacidades explicativas o problemas valorados por la anterior.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Kuhn reconoce que el cambio de paradigma puede implicar ganancias y pérdidas: la teoría nueva no necesariamente conserva todas las capacidades explicativas o problemas valorados por la anterior."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-077",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Valores epistemológicos y elección",
+      "enunciado": "Dos paradigmas rivales muestran ventajas diferentes: uno tiene mayor precisión en ciertos cálculos y otro mayor alcance explicativo. ¿Qué sostiene Kuhn sobre la elección entre ellos?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Los científicos deciden exclusivamente por preferencias personales, sin valores compartidos."
+        },
+        {
+          "id": "B",
+          "texto": "Los valores epistemológicos orientan la elección, pero los científicos pueden ponderarlos de manera diferente y llegar a decisiones distintas."
+        },
+        {
+          "id": "C",
+          "texto": "Existe un algoritmo universal que asigna un peso fijo a cada valor y determina una única elección racional."
+        },
+        {
+          "id": "D",
+          "texto": "La elección depende solo de la cantidad de observaciones acumuladas, sin considerar coherencia ni fecundidad."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Los valores epistemológicos orientan la elección, pero no funcionan como un algoritmo que obliga a todos a decidir de idéntica manera. Su aplicación admite diferencias de juicio entre científicos competentes.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Los valores epistemológicos orientan la elección, pero no funcionan como un algoritmo que obliga a todos a decidir de idéntica manera. Su aplicación admite diferencias de juicio entre científicos competentes."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-078",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Inconmensurabilidad",
+      "enunciado": "Dos comunidades científicas utilizan conceptos centrales con significados parcialmente diferentes y organizan de modo distinto los problemas relevantes. ¿Qué implica la inconmensurabilidad?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que no existe una medida neutral y completamente compartida para traducir y comparar todos los aspectos de sus paradigmas, aunque la discusión racional no sea imposible."
+        },
+        {
+          "id": "B",
+          "texto": "Que los científicos de ambas comunidades no pueden comunicarse ni comprender ninguna afirmación del otro grupo."
+        },
+        {
+          "id": "C",
+          "texto": "Que toda teoría es igualmente verdadera y no puede evaluarse mediante razones."
+        },
+        {
+          "id": "D",
+          "texto": "Que el cambio de paradigma ocurre por una decisión irracional y sin argumentos."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La inconmensurabilidad señala dificultades de traducción y comparación global entre marcos conceptuales. No equivale a incomunicación absoluta, arbitrariedad ni imposibilidad de ofrecer razones.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "La inconmensurabilidad señala dificultades de traducción y comparación global entre marcos conceptuales. No equivale a incomunicación absoluta, arbitrariedad ni imposibilidad de ofrecer razones."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-kuhn-079",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Thomas Kuhn",
+      "subtema": "Ejemplares y observación",
+      "enunciado": "Un estudiante aprende a resolver problemas nuevos al estudiar soluciones modelo aceptadas por su comunidad científica. ¿Qué función cumplen esos ejemplares en la matriz disciplinar?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Son reglas explícitas que permiten deducir mecánicamente la solución de cualquier problema futuro."
+        },
+        {
+          "id": "B",
+          "texto": "Son observaciones neutrales que no dependen de la formación de la comunidad."
+        },
+        {
+          "id": "C",
+          "texto": "Son anomalías que obligan a abandonar el paradigma cada vez que se aplican."
+        },
+        {
+          "id": "D",
+          "texto": "Ofrecen modelos concretos de resolución que enseñan a reconocer semejanzas relevantes y a trabajar con problemas nuevos."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "Los ejemplares son soluciones de problemas que funcionan como modelos compartidos. Su aprendizaje contribuye a formar la práctica de la ciencia normal y orienta qué rasgos se consideran relevantes en situaciones nuevas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Los ejemplares son soluciones de problemas que funcionan como modelos compartidos. Su aprendizaje contribuye a formar la práctica de la ciencia normal y orienta qué rasgos se consideran relevantes en situaciones nuevas."
+        }
+      ]
+    }
+  ],
+  "tarjetas": [
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Kuhn desplaza el análisis lógico abstracto hacia el estudio de la historia efectiva, las prácticas comunitarias y los marcos compartidos en los que se produce y evalúa el conocimiento."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La metáfora de la película ilustra el enfoque kuhniano, que reconstruye históricamente cómo se organiza una disciplina, cómo resuelve problemas y cómo cambia de marco a lo largo del tiempo."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "En la pre-ciencia conviven escuelas rivales con compromisos teóricos distintos que debaten constantemente sobre el objeto de estudio, los conceptos básicos y los métodos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La ciencia madura o normal surge cuando la comunidad adopta un consenso sobre un marco común que delimita problemas legítimos, métodos y soluciones modelo."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Durante la ciencia normal, la comunidad científica investiga de manera organizada y relativamente estable bajo la guía de un paradigma compartido."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El paradigma en sentido amplio comprende leyes, supuestos teóricos, compromisos metafísicos, técnicas, valores y soluciones modelo compartidos por una comunidad."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Los ejemplares son problemas resueltos concretos que la comunidad utiliza durante la formación profesional para enseñar a aplicar las leyes y técnicas del paradigma a situaciones nuevas."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La formación profesional permite socializar al científico en la práctica disciplinar, enseñándole a identificar problemas legítimos y aplicar las soluciones modelo del paradigma."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La ciencia normal busca articular el paradigma, extendiendo su aplicación, determinando constantes y perfeccionando las mediciones e instrumentos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Los enigmas son problemas específicos que la comunidad confía en resolver utilizando las leyes, modelos y técnicas que suministra el paradigma vigente."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La carga teórica implica que la identificación, clasificación e interpretación de los datos científicos están mediadas por el marco conceptual, los instrumentos y la formación del investigador."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La analogía perceptiva muestra que un fenómeno no se recibe pasivamente, sino que se reconoce e interpreta a través de los conceptos y esquemas que adopta el observador."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "A diferencia del enigma, la anomalía pone en evidencia un desajuste o resistencia persistente entre lo que el paradigma prevé y lo que la investigación encuentra."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "En la ciencia normal, un fracaso inicial no invalida el paradigma; suele considerarse provisoriamente como un fallo del investigador o de sus instrumentos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La tradición geocéntrica elaboró recursos técnicos complejos (como los epiciclos) para conservar el marco general frente a la anomalía de la retrogradación."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La crisis surge cuando las anomalías persisten, se acumulan, socavan compromisos centrales y debilitan la confianza de la comunidad en la capacidad explicativa del paradigma."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "En la crisis se debaten los supuestos filosóficos y los fundamentos que antes se daban por sentados, y surgen propuestas y enfoques más radicales."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "En la práctica real la ciencia convive con dificultades sin resolver; un desajuste no invalida un paradigma salvo que persista, se vuelva crítico y exista una alternativa viable."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La revolución científica es una transformación discontinua mediante la cual un paradigma en crisis es sustituido por un nuevo marco incompatible en cuestiones centrales."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "En una revolución el conocimiento no se limita a añadirse acumulativamente; el nuevo paradigma altera la estructura conceptual, haciendo que ciertos problemas cambien o pierdan sentido."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La metáfora de la conversión subraya que el científico no cambia solo una respuesta aislada, sino todo el marco conceptual desde el cual reconoce e interpreta la evidencia."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La inconmensurabilidad indica la falta de un estándar común e imparcial aceptado por ambos lados que resuelva la elección de paradigma mediante un algoritmo neutral."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La expresión no implica un cambio físico del universo, sino que los conceptos y supuestos del paradigma condicionan qué distinciones, hechos y problemas se vuelven perceptibles y significativos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La química de Lavoisier sustituyó la noción de desprendimiento de flogisto por la de combinación con el oxígeno, reestructurando conceptualmente la explicación de la combustión."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El progreso dentro de un paradigma (intraparadigmático) ocurre en la ciencia normal mediante el perfeccionamiento de técnicas, mediciones y la acumulación de soluciones a enigmas."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La analogía muestra que, mientras la ciencia normal mejora técnicas en la misma estructura, la revolución transforma el modo mismo de organizar y abordar los problemas."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Kuhn sostiene que la ciencia progresa, pero no de forma lineal continua hacia una verdad preestablecida, sino alternando períodos de precisión acumulativa con rupturas revolucionarias."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Es un error frecuente suponer que una anomalía refuta de inmediato el paradigma, ya que la comunidad suele intentar resolverla o convivir con ella antes de entrar en crisis."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La pre-ciencia se define por el desacuerdo fundamental entre escuelas, mientras que la ciencia normal comienza cuando se establece un paradigma que articula el trabajo ordinario."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La ciencia normal brinda la estabilidad necesaria para la investigación minuciosa de enigmas, mientras que la revolución permite reorganizar la ciencia cuando el paradigma en crisis resulta insostenible."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué lectura simplificadora conviene evitar?",
+      "dorso": "No tratar una anomalía como refutación automática, ni la revolución como reemplazo de una falsedad por una verdad definitiva; hay que atender a la comunidad, los conceptos y los criterios compartidos."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué diferencia hay entre paradigma y teoría aislada?",
+      "dorso": "El paradigma organiza problemas, métodos, instrumentos, ejemplos de solución y criterios de evaluación; una teoría aislada es solo un componente posible de ese marco."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Por qué los ejemplares son importantes en la formación?",
+      "dorso": "Enseñan a los científicos cómo aplicar conceptos, instrumentos y reglas a problemas concretos, no solo a memorizar definiciones."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Los valores determinan una elección mediante un algoritmo?",
+      "dorso": "No. Orientan el juicio, pero pueden ponderarse de distintas maneras y no obligan a todos los científicos a adoptar una misma decisión."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué diferencia tienen frente a los ejemplares?",
+      "dorso": "Las generalizaciones expresan relaciones formales compartidas; los ejemplares muestran soluciones concretas que se aprenden como modelos de trabajo."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Por qué se habla de enigmas?",
+      "dorso": "Porque se supone que el paradigma brinda herramientas y reglas para resolver esos problemas; el desafío consiste en encontrar una solución dentro del marco."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿La ciencia normal es pasiva o rutinaria en sentido trivial?",
+      "dorso": "No. Puede ser técnicamente exigente y producir avances importantes, aunque normalmente no cuestione sus fundamentos generales."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Toda dificultad difícil es una anomalía?",
+      "dorso": "No. Un problema puede ser un enigma complejo; para hablar de anomalía importa que el resultado entre en tensión con expectativas del paradigma."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué diferencia una anomalía de una crisis?",
+      "dorso": "La crisis implica una pérdida de confianza más amplia en la capacidad del paradigma, no solo la presencia de un resultado discordante."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué tendría que ocurrir para hablar de crisis?",
+      "dorso": "Que la anomalía persista, afecte problemas importantes y debilite la confianza de la comunidad en el paradigma, con discusión de alternativas."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Toda crisis culmina en una revolución?",
+      "dorso": "No necesariamente. Puede resolverse dentro del paradigma, quedar pendiente o dar lugar a una alternativa que lo reemplace."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Por qué el cambio no es puramente acumulativo?",
+      "dorso": "Porque reorganiza el marco de interpretación y puede cambiar el significado de los conceptos, la importancia de los problemas y los criterios de solución."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Esto implica que para Kuhn «todo vale»?",
+      "dorso": "No. Los científicos comparan precisión, coherencia, alcance, simplicidad y fecundidad, aunque esos valores no formen un algoritmo único."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Inconmensurabilidad significa incomunicación absoluta?",
+      "dorso": "No. Puede haber comunicación, traducción parcial y argumentos comparativos; lo que se cuestiona es una medida totalmente neutral y universal."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué papel tienen los valores epistemológicos?",
+      "dorso": "Orientan el juicio y permiten discutir razones, pero pueden entrar en tensión y ponderarse de manera diferente entre investigadores."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿La carga teórica de la observación significa que todo es subjetivo?",
+      "dorso": "No. Significa que observar está orientado por conceptos y prácticas compartidas; la evidencia sigue importando y no todas las interpretaciones son equivalentes."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué no se deduce de la carga teórica?",
+      "dorso": "No se deduce que la evidencia sea irrelevante ni que cualquier descripción tenga el mismo valor."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Por qué puede cambiar qué se considera un problema?",
+      "dorso": "Porque el paradigma define qué preguntas son legítimas, qué resultados importan y qué cuenta como solución aceptable."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Por qué la presencia de valores no equivale a arbitrariedad?",
+      "dorso": "Porque los valores aportan razones y criterios de discusión, aunque no funcionen como una fórmula única que obligue a todos a la misma elección."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué significa ponderar valores?",
+      "dorso": "Considerar cómo se equilibran precisión, coherencia, alcance, simplicidad y fecundidad en un caso concreto, sin aplicar una regla mecánica."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿La pérdida kuhniana impide reconocer progreso?",
+      "dorso": "No. Permite describir el progreso sin imaginarlo como acumulación lineal perfecta: puede haber avances y pérdidas en una misma transformación."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Cómo puede haber progreso con pérdidas?",
+      "dorso": "Porque el nuevo paradigma puede abrir problemas, métodos y explicaciones valiosas aunque no conserve todas las soluciones del anterior."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué condiciones hacen que una anomalía adquiera relevancia histórica?",
+      "dorso": "Su persistencia, importancia para problemas centrales y capacidad de debilitar la confianza en el paradigma."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué cambia durante una revolución además de las teorías?",
+      "dorso": "Pueden cambiar los problemas legítimos, los significados conceptuales, las prácticas, los instrumentos y los criterios de evaluación."
+    },
+    {
+      "frente": "Thomas Kuhn · ¿Qué cautela evita leer a Kuhn como relativista absoluto?",
+      "dorso": "Reconocer que la observación está orientada por marcos no elimina evidencias ni razones comparativas: los valores epistemológicos siguen permitiendo discutir elecciones."
+    }
+  ]
+}

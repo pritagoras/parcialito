@@ -1,0 +1,369 @@
+{
+  "materia": "IPC 2",
+  "tema": "Hacking",
+  "preguntas": [
+    {
+      "pregunta": "En la concepción clásica del conocimiento científico, la teoría es entendida como:",
+      "opciones": [
+      "Un espejo conceptual que pretende representar fielmente la realidad.",
+      "Una herramienta de intervención para transformar entidades biológicas.",
+      "Un conjunto de instrucciones para construir instrumentos de laboratorio.",
+      "Un resultado posterior derivado exclusivamente del efecto bucle."
+      ],
+      "correcta": "A",
+      "explicacion": "La concepción clásica entiende que las teorías científicas son representaciones de la realidad que funcionan como un espejo del mundo."
+    },
+    {
+      "pregunta": "La crítica principal de Ian Hacking a la concepción tradicional del conocimiento señala que:",
+      "opciones": [
+      "Las teorías científicas carecen por completo de utilidad explicativa.",
+      "Se otorga prioridad exclusiva a la representación teórica, relegando la práctica experimental.",
+      "La filosofía de la ciencia debe limitarse al análisis del lenguaje técnico.",
+      "Toda intervención experimental invalida la existencia de las entidades teóricas."
+      ],
+      "correcta": "B",
+      "explicacion": "Hacking cuestiona que la ciencia se comprenda únicamente desde las teorías y la representación, rescatando la dimensión epistemológica de la práctica experimental."
+    },
+    {
+      "pregunta": "En la filosofía de la ciencia de Hacking, el término 'intervenir' se define como:",
+      "opciones": [
+      "Describir mediante modelos abstractos las propiedades de un objeto.",
+      "Modificar los textos escolares para redefinir clasificaciones.",
+      "Actuar sobre el mundo material mediante operaciones experimentales para producir o controlar fenómenos.",
+      "Proponer hipótesis teóricas antes de realizar cualquier observación."
+      ],
+      "correcta": "C",
+      "explicacion": "Intervenir implica manipular materiales, controlar variables y producir fenómenos mediante la práctica experimental."
+    },
+    {
+      "pregunta": "El realismo de entidades formulado por Hacking sostiene que:",
+      "opciones": [
+      "Una teoría debe ser completamente verdadera para poder aceptar sus entidades.",
+      "Las entidades teóricas son meras ficciones útiles para predecir eventos.",
+      "Solo existen aquellas entidades que se observan con los sentidos ordinarios.",
+      "Existen razones para aceptar la realidad de entidades teóricas si podemos manipularlas experimentalmente."
+      ],
+      "correcta": "D",
+      "explicacion": "El realismo de entidades se apoya en la capacidad de manipular entidades de forma fiable para intervenir en otros fenómenos."
+    },
+    {
+      "pregunta": "El caso de los electrones es utilizado por Hacking para fundamentar:",
+      "opciones": [
+      "El realismo de entidades a partir de su manipulación experimental.",
+      "La inexistencia de las entidades teóricas no observables.",
+      "La teoría del nominalismo dinámico en las ciencias humanas.",
+      "El concepto de profecía autocumplida en las ciencias naturales."
+      ],
+      "correcta": "A",
+      "explicacion": "Los electrones ilustran el realismo de entidades porque, aunque no se observen a simple vista, pueden ser manipulados para producir efectos controlados y reproducibles."
+    },
+    {
+      "pregunta": "Una clase indiferente se caracteriza por ser una categoría cuyos miembros:",
+      "opciones": [
+      "Modifican su autocomprensión al ser clasificados por la ciencia.",
+      "No alteran sus propiedades ni su comportamiento como consecuencia de la clasificación.",
+      "Reaccionan activamente cambiando sus criterios de pertenencia.",
+      "Pertenecen exclusivamente al ámbito de las ciencias sociales."
+      ],
+      "correcta": "B",
+      "explicacion": "Los miembros de una clase indiferente no reaccionan ni modifican su conducta física o natural por el mero hecho de ser clasificados."
+    },
+    {
+      "pregunta": "La reclasificación de Plutón como planeta enano en 2006 por la UAI demuestra que:",
+      "opciones": [
+      "Los cuerpos celestes son objetos interactivos que responden a los nombres.",
+      "Los objetos naturales modifican su órbita cuando cambia la definición científica.",
+      "Cambió la categoría taxonómica sin alterar las propiedades físicas del objeto.",
+      "La taxonomía astronómica es un ejemplo de nominalismo dinámico."
+      ],
+      "correcta": "C",
+      "explicacion": "Plutón no cambió su masa ni su trayectoria orbital al ser reclasificado, lo que ilustra el comportamiento de una clase indiferente."
+    },
+    {
+      "pregunta": "A diferencia de los objetos de las ciencias naturales, las clases interactivas se definen porque:",
+      "opciones": [
+      "Permiten la manipulación causal en condiciones de laboratorio.",
+      "Carecen de propiedades físicas o biológicas preexistentes.",
+      "Se mantienen inalterables a lo largo de las transformaciones históricas.",
+      "Sus miembros son personas que pueden conocer la clasificación y responder ante ella."
+      ],
+      "correcta": "D",
+      "explicacion": "Las clases interactivas aplican a seres humanos capaces de reaccionar, reinterpretar su conducta y modificar la categoría que se les aplica."
+    },
+    {
+      "pregunta": "El nominalismo dinámico propuesto por Hacking plantea que:",
+      "opciones": [
+      "Las categorías humanas y los tipos de personas se constituyen históricamente de manera acoplada.",
+      "Los nombres crean físicamente a los individuos a partir de la nada.",
+      "Las clasificaciones humanas agrupan a personas que ya existían sin transformarlas.",
+      "Todas las categorías humanas son inventos arbitrarios sin consecuencias reales."
+      ],
+      "correcta": "A",
+      "explicacion": "El nominalismo dinámico sostiene que las clasificaciones y las formas de ser persona interactúan y se transforman conjuntamente a lo largo de la historia."
+    },
+    {
+      "pregunta": "El proceso conocido como 'construcción de personas' (*making up people*) se refiere a:",
+      "opciones": [
+      "La fabricación biológica de nuevos organismos en laboratorios.",
+      "La formación histórica de tipos humanos socialmente reconocibles mediante clasificaciones e instituciones.",
+      "La imposición de etiquetas falsas que no producen ningún efecto en la sociedad.",
+      "La creación de teorías puramente abstractas sin aplicación en la vida cotidiana."
+      ],
+      "correcta": "B",
+      "explicacion": "La construcción de personas describe cómo nuevas clasificaciones e instituciones hacen posibles formas inéditas de experiencia y autocomprensión."
+    },
+    {
+      "pregunta": "El efecto bucle (*looping effect*) describe un circuito de retroalimentación donde:",
+      "opciones": [
+      "Las hipótesis teóricas confirman siempre los datos observados de forma lineal.",
+      "Las clasificaciones cambian sin que los objetos clasificados reaccionen.",
+      "La respuesta de las personas clasificadas puede transformar la categoría y sus criterios.",
+      "Las profecías científicas se cumplen mecánicamente debido a la expectativa del investigador."
+      ],
+      "correcta": "C",
+      "explicacion": "El efecto bucle implica que las personas responden a las clasificaciones que se les aplican y sus respuestas modifican la categoría y las prácticas institucionales."
+    },
+    {
+      "pregunta": "En relación con las fases del efecto bucle, la etapa de revisión consiste en que:",
+      "opciones": [
+      "Las disciplinas o instituciones formulan una nueva categoría.",
+      "La categoría se difunde masivamente en la vida cotidiana y los medios.",
+      "Las personas aceptan pasivamente las etiquetas médicas asignadas.",
+      "Los investigadores e instituciones modifican los criterios o explicaciones de la categoría según las respuestas humanas."
+      ],
+      "correcta": "D",
+      "explicacion": "En la fase de revisión del efecto bucle, las instituciones ajustan o transforman los límites de la categoría basándose en la conducta de los clasificados."
+    },
+    {
+      "pregunta": "El efecto bucle se diferencia de la profecía autocumplida en que:",
+      "opciones": [
+      "La profecía produce el resultado esperado, mientras que el efecto bucle abarca respuestas que transforman o redefinen la categoría.",
+      "La profecía autocumplida solo ocurre en el ámbito de las ciencias naturales.",
+      "El efecto bucle se limita al etiquetamiento pasivo de los individuos sin modificación posterior.",
+      "Ambos conceptos son idénticos y describen un mecanismo puramente lineal."
+      ],
+      "correcta": "A",
+      "explicacion": "El efecto bucle contempla una retroalimentación compleja donde los sujetos pueden resistir, reinterpretar y alterar la categoría original."
+    },
+    {
+      "pregunta": "En la propuesta de Hacking, el 'nicho ecológico' se define como:",
+      "opciones": [
+      "El hábitat biológico y geográfico donde habita una especie animal.",
+      "La configuración de condiciones históricas, culturales e institucionales que hacen posible una categoría humana.",
+      "La lista de experimentos necesarios para justificar una teoría física.",
+      "El espacio de laboratorio donde se manipulan electrones e instrumentos."
+      ],
+      "correcta": "B",
+      "explicacion": "El nicho ecológico identifica la trama de condiciones específicas que permiten que una categoría humana surja, sea inteligible y se sostenga en una época."
+    },
+    {
+      "pregunta": "En el análisis de las enfermedades mentales transitorias, los cuatro vectores del nicho ecológico son:",
+      "opciones": [
+      "Experimento, teoría, observación e hipótesis.",
+      "Nominalismo, realismo, etiquetamiento y revisión.",
+      "Taxonomía médica, polaridad cultural, observabilidad y liberación.",
+      "Sujeto, objeto, representación y espejo."
+      ],
+      "correcta": "C",
+      "explicacion": "Hacking identifica cuatro vectores centrales para analizar el nicho ecológico: taxonomía médica, polaridad cultural, observabilidad y liberación."
+    },
+    {
+      "pregunta": "En el marco del nicho ecológico, el vector de 'polaridad cultural' se refiere a:",
+      "opciones": [
+      "Las herramientas e instrumentos utilizados en la medición clínica.",
+      "La capacidad de una entidad teórica para ser manipulada experimentalmente.",
+      "La emancipación política definitiva lograda por un grupo clasificado.",
+      "Las tensiones y oposiciones culturales de una época que otorgan sentido a la categoría."
+      ],
+      "correcta": "D",
+      "explicacion": "La polaridad cultural alude a las valoraciones y oposiciones de una sociedad (como normal/anormal o responsabilidad/incapacidad) que vuelven inteligible una categoría."
+    },
+    {
+      "pregunta": "Dentro de los vectores del nicho ecológico, la 'liberación' (*release*) representa:",
+      "opciones": [
+      "La posibilidad de respuesta o salida frente a exigencias culturales que habilita una clasificación.",
+      "La emancipación social y política total de los pacientes.",
+      "La demostración experimental de que una enfermedad es ficticia.",
+      "La eliminación definitiva de la categoría médica de los libros de texto."
+      ],
+      "correcta": "A",
+      "explicacion": "El vector de liberación se refiere a las salidas o justificaciones que una categoría ofrece a los individuos frente a presiones de su entorno cultural."
+    },
+    {
+      "pregunta": "La ontología histórica investiga fundamentalmente:",
+      "opciones": [
+      "La evolución biológica de las estructuras celulares a lo largo del tiempo.",
+      "Cómo surgen históricamente determinadas posibilidades de ser, actuar y reconocerse como persona.",
+      "La lista cronológica de los descubrimientos científicos en las ciencias naturales.",
+      "La demostración matemática de las leyes de la física clásica."
+      ],
+      "correcta": "B",
+      "explicacion": "La ontología histórica estudia la constitución de categorías, instituciones y tipos de personas como posibilidades de existencia que aparecen en momentos específicos."
+    },
+    {
+      "pregunta": "Ian Hacking coincide con Michel Foucault en el interés por analizar:",
+      "opciones": [
+      "La estructura atómica y el realismo de las entidades no observables.",
+      "La clasificación taxonómica de los cuerpos celestes en el sistema solar.",
+      "Las relaciones entre conocimiento, prácticas de poder y constitución de los sujetos.",
+      "La primacía exclusiva del método inductivo en la investigación científica."
+      ],
+      "correcta": "C",
+      "explicacion": "Hacking y Foucault comparten el análisis de cómo los discursos de saber e instituciones de poder intervienen en la constitución histórica de los sujetos."
+    },
+    {
+      "pregunta": "Afirmar que una categoría humana tiene una 'contingencia histórica' significa que:",
+      "opciones": [
+      "Es completamente falsa, arbitraria y carece de efectos reales.",
+      "Fue creada por un error de medición en la práctica experimental.",
+      "Desaparecerá de manera inmediata cuando sea clasificada por la ciencia.",
+      "Su surgimiento depende de condiciones históricas específicas y no es inevitable ni universal."
+      ],
+      "correcta": "D",
+      "explicacion": "La contingencia histórica señala que las categorías surgen bajo condiciones particulares de una época, lo que no niega sus efectos objetivos ni su realidad."
+    },
+    {
+      "pregunta": "En el análisis conceptual del feminicidio, el marco de Hacking permite sostener que:",
+      "opciones": [
+      "Existían hechos de violencia previos, pero la categoría permitió conceptualizarlos e investigarlos como un fenómeno específico.",
+      "La violencia y los homicidios de mujeres no existían antes de la formulación del término.",
+      "El término creó materialmente los crímenes a través del nominalismo estático.",
+      "La categoría funciona como una clase indiferente sin provocar efectos institucionales."
+      ],
+      "correcta": "A",
+      "explicacion": "La categoría de feminicidio no inventa los hechos materiales, sino que ofrece el marco histórico e institucional para reconocerlos y organizarlos como un problema específico."
+    },
+    {
+      "pregunta": "En relación con el diagnóstico de TDAH, el análisis histórico de Hacking demuestra que:",
+      "opciones": [
+      "Los síntomas no existían en absoluto antes de la creación del manual diagnóstico.",
+      "Las dificultades de atención se organizan bajo una categoría clínica sin que esto implique que sean ficticias.",
+      "El diagnóstico es una clase indiferente que no altera la autocomprensión del paciente.",
+      "El tratamiento médico es el único factor del nicho ecológico que explica el fenómeno."
+      ],
+      "correcta": "B",
+      "explicacion": "Estudiar la constitución histórica del TDAH y sus efectos de bucle permite comprender el impacto de la clasificación sin invalidar la realidad de las dificultades del individuo."
+    },
+    {
+      "pregunta": "Al analizar el fenómeno del bullying desde el nominalismo dinámico se observa que:",
+      "opciones": [
+      "Las conductas molestas entre estudiantes siempre fueron interpretadas exactamente con los mismos criterios.",
+      "Cualquier conflicto o pelea menor entre pares debe ser clasificado automáticamente como bullying.",
+      "La categoría delimita un tipo de acoso escolar con criterios específicos y transforma protocolos institucionales.",
+      "La etiqueta eliminó por completo las conductas agresivas en los establecimientos educativos."
+      ],
+      "correcta": "C",
+      "explicacion": "La categoría de bullying organiza y delimita un tipo particular de agresión con criterios de asimetría de poder, modificando las respuestas escolares e institucionales."
+    },
+    {
+      "pregunta": "En el caso de la homosexualidad, la perspectiva de Hacking distingue entre:",
+      "opciones": [
+      "El origen biológico exclusivo de la conducta y la negación total de los factores sociales.",
+      "Una profecía autocumplida lineal y la ausencia total de efectos bucle.",
+      "Un objeto indiferente de la ciencia natural y un planeta enano reclasificado.",
+      "La existencia previa de deseos o prácticas sexuales y la formación histórica de una identidad clasificada."
+      ],
+      "correcta": "D",
+      "explicacion": "El análisis distingue las prácticas o afectos entre personas del mismo sexo de la categoría histórica moderna que constituyó una forma particular de identidad social."
+    },
+    {
+      "pregunta": "Las expectativas sociales y roles de género se diferencian de las características del sexo en que:",
+      "opciones": [
+      "Las expectativas de género son clasificaciones sociales históricas que organizan roles y pueden transformarse.",
+      "El sexo es una construcción puramente lingüística y los roles de género son inmutables.",
+      "Los roles de género operan como clases indiferentes frente a la conducta humana.",
+      "El género se transmite exclusivamente por mecanismos de manipulación experimental."
+      ],
+      "correcta": "A",
+      "explicacion": "El análisis de Hacking distingue las características biológicas del sexo de las normas y clasificaciones de género, las cuales organizan roles y son modificadas por las personas."
+    },
+    {
+      "pregunta": "El concepto de 'objetivo móvil' (*moving target*) en las ciencias humanas se refiere a que:",
+      "opciones": [
+      "Los instrumentos de laboratorio se mueven durante el proceso de medición.",
+      "El objeto de estudio se transforma en respuesta a los conocimientos y clasificaciones que se le aplican.",
+      "Las teorías de las ciencias naturales cambian más rápido que las de las ciencias humanas.",
+      "Los cuerpos celestes modifican su trayectoria cuando cambia la taxonomía astronómica."
+      ],
+      "correcta": "B",
+      "explicacion": "En las ciencias humanas, las personas responden a las teorías y clasificaciones que las describen, haciendo que el objeto de estudio se transforme continuamente."
+    },
+    {
+      "pregunta": "La analogía del guardarropa utilizada por Hacking sirve para ilustrar cómo:",
+      "opciones": [
+      "La manipulación de electrones crea nuevos materiales sintéticos.",
+      "Los objetos naturales reaccionan ante las categorías cambiando de forma.",
+      "Una clasificación puede crear una nueva clase funcional sin crear físicamente a sus miembros.",
+      "El realismo de teorías se demuestra mediante la organización de la indumentaria."
+      ],
+      "correcta": "C",
+      "explicacion": "Agregar una nueva categoría (como 'ropa para limpiar') reorganiza prendas preexistentes creando una clase funcional, del mismo modo en que operan ciertas clasificaciones humanas."
+    },
+    {
+      "pregunta": "En la ciencia experimental, la relación entre teoría y práctica debe entenderse como:",
+      "opciones": [
+      "Una secuencia rígida donde la práctica sólo aplica lo que la teoría dictamina.",
+      "Dos dimensiones totalmente independientes que nunca se relacionan.",
+      "Una ilusión creada por la concepción del conocimiento como espejo.",
+      "Un proceso de retroalimentación donde la práctica puede revelar fenómenos y exigir revisiones teóricas."
+      ],
+      "correcta": "D",
+      "explicacion": "Hacking plantea que la práctica experimental y la representación teórica se retroalimentan continuamente en la producción del conocimiento científico."
+    },
+    {
+      "pregunta": "Un resultado experimental exitoso y reproducible proporciona razones para:",
+      "opciones": [
+      "Atribuir capacidad causal y considerar real a la entidad manipulada.",
+      "Aceptar que la teoría completa asociada es una verdad absoluta e inmutable.",
+      "Demostrar que toda correlación entre variables implica causalidad directa.",
+      "Afirmar que el objeto investigado es una clase interactiva."
+      ],
+      "correcta": "A",
+      "explicacion": "La capacidad de producir efectos reproducibles mediante manipulación controlada ofrece razones para atribuir capacidades causales a la entidad investigada."
+    },
+    {
+      "pregunta": "La corriente filosófica conocida como antirrealismo se caracteriza por:",
+      "opciones": [
+      "Afirmar que los electrones son la única realidad existente en el universo.",
+      "Cuestionar que el éxito de una teoría sea suficiente para afirmar la existencia real de todas sus entidades postuladas.",
+      "Sostener que las ciencias humanas no utilizan clasificaciones ni categorías.",
+      "Negar la posibilidad de realizar experimentos en el ámbito de la física."
+      ],
+      "correcta": "B",
+      "explicacion": "El antirrealismo reúne posturas que dudan de que el éxito explicativo o predictivo de una teoría garantice la existencia real de las entidades no observables que menciona."
+    },
+    {
+      "pregunta": "La fuga disociativa en la Francia de fines del siglo XIX es utilizada por Hacking como ejemplo de:",
+      "opciones": [
+      "Una clase indiferente propia de la astronomía moderna.",
+      "Un experimento exitoso para demostrar la existencia de los electrones.",
+      "Un nicho ecológico donde condiciones médicas, culturales y de liberación hicieron posible una categoría psiquiátrica.",
+      "Un caso de nominalismo estático sin ningún impacto social."
+      ],
+      "correcta": "C",
+      "explicacion": "La fuga disociativa ilustra cómo la confluencia de la taxonomía médica, tensiones culturales y posibilidades de respuesta constituyeron el nicho ecológico de una enfermedad transitoria."
+    },
+    {
+      "pregunta": "El problema epistemológico central de las ciencias humanas, a diferencia de las ciencias naturales, reside en:",
+      "opciones": [
+      "Desarrollar telescopios más precisos para medir objetos lejanos.",
+      "Eliminar la práctica experimental para concentrarse en modelos teóricos puros.",
+      "Demostrar la verdad absoluta de todas las teorías sociológicas.",
+      "Comprender cómo se constituyen históricamente ciertos fenómenos, categorías y tipos humanos."
+      ],
+      "correcta": "D",
+      "explicacion": "Las ciencias humanas se enfocan en la constitución histórica de categorizaciones y personas, mientras que las ciencias naturales abordan la justificación del conocimiento del mundo natural."
+    },
+    {
+      "pregunta": "La regla general formulada por Hacking para el análisis de casos sociales exige:",
+      "opciones": [
+      "Negar la existencia de cualquier conflicto previo a la invención de una palabra.",
+      "Afirmar que todas las categorías humanas son inventos sin base real.",
+      "Tratar a los seres humanos como clases indiferentes sin capacidad de respuesta.",
+      "Distinguir entre la experiencia o conducta previa y la constitución histórica de la categoría que la organiza."
+      ],
+      "correcta": "D",
+      "explicacion": "El análisis riguroso de Hacking separa los acontecimientos o vivencias previas de la categoría histórica e institucional que permite clasificarlos y actuar sobre ellos."
+    }
+  ]
+}

@@ -1,0 +1,2610 @@
+{
+  "materia": "IPC",
+  "parcial": "Segundo Parcial",
+  "autor": "Ian Hacking",
+  "tema": "Ian Hacking",
+  "preguntas": [
+    {
+      "id": "ipc-p2-hacking-001",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Efecto de bucle",
+      "enunciado": "En la concepción clásica del conocimiento científico, la teoría es entendida como:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Un espejo conceptual que pretende representar fielmente la realidad."
+        },
+        {
+          "id": "B",
+          "texto": "Una herramienta de intervención para transformar entidades biológicas."
+        },
+        {
+          "id": "C",
+          "texto": "Un conjunto de instrucciones para construir instrumentos de laboratorio."
+        },
+        {
+          "id": "D",
+          "texto": "Un resultado posterior derivado exclusivamente del efecto bucle."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La concepción clásica entiende que las teorías científicas son representaciones de la realidad que funcionan como un espejo del mundo.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La concepción clásica entiende que las teorías científicas son representaciones de la realidad que funcionan como un espejo del mundo."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-002",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Representar e intervenir / realismo de entidades",
+      "enunciado": "La crítica principal de Ian Hacking a la concepción tradicional del conocimiento señala que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Las teorías científicas carecen por completo de utilidad explicativa."
+        },
+        {
+          "id": "B",
+          "texto": "Se otorga prioridad exclusiva a la representación teórica, relegando la práctica experimental."
+        },
+        {
+          "id": "C",
+          "texto": "La filosofía de la ciencia debe limitarse al análisis del lenguaje técnico."
+        },
+        {
+          "id": "D",
+          "texto": "Toda intervención experimental invalida la existencia de las entidades teóricas."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Hacking cuestiona que la ciencia se comprenda únicamente desde las teorías y la representación, rescatando la dimensión epistemológica de la práctica experimental.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Hacking cuestiona que la ciencia se comprenda únicamente desde las teorías y la representación, rescatando la dimensión epistemológica de la práctica experimental."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-003",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Representar e intervenir / realismo de entidades",
+      "enunciado": "En la filosofía de la ciencia de Hacking, el término 'intervenir' se define como:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Describir mediante modelos abstractos las propiedades de un objeto."
+        },
+        {
+          "id": "B",
+          "texto": "Modificar los textos escolares para redefinir clasificaciones."
+        },
+        {
+          "id": "C",
+          "texto": "Actuar sobre el mundo material mediante operaciones experimentales para producir o controlar fenómenos."
+        },
+        {
+          "id": "D",
+          "texto": "Proponer hipótesis teóricas antes de realizar cualquier observación."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Intervenir implica manipular materiales, controlar variables y producir fenómenos mediante la práctica experimental.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Intervenir implica manipular materiales, controlar variables y producir fenómenos mediante la práctica experimental."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-004",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Representar e intervenir / realismo de entidades",
+      "enunciado": "El realismo de entidades formulado por Hacking sostiene que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Una teoría debe ser completamente verdadera para poder aceptar sus entidades."
+        },
+        {
+          "id": "B",
+          "texto": "Las entidades teóricas son meras ficciones útiles para predecir eventos."
+        },
+        {
+          "id": "C",
+          "texto": "Solo existen aquellas entidades que se observan con los sentidos ordinarios."
+        },
+        {
+          "id": "D",
+          "texto": "Existen razones para aceptar la realidad de entidades teóricas si podemos manipularlas experimentalmente."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "El realismo de entidades se apoya en la capacidad de manipular entidades de forma fiable para intervenir en otros fenómenos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "El realismo de entidades se apoya en la capacidad de manipular entidades de forma fiable para intervenir en otros fenómenos."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-005",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Efecto de bucle",
+      "enunciado": "El caso de los electrones es utilizado por Hacking para fundamentar:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El realismo de entidades a partir de su manipulación experimental."
+        },
+        {
+          "id": "B",
+          "texto": "La inexistencia de las entidades teóricas no observables."
+        },
+        {
+          "id": "C",
+          "texto": "La teoría del nominalismo dinámico en las ciencias humanas."
+        },
+        {
+          "id": "D",
+          "texto": "El concepto de profecía autocumplida en las ciencias naturales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Los electrones ilustran el realismo de entidades porque, aunque no se observen a simple vista, pueden ser manipulados para producir efectos controlados y reproducibles.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Los electrones ilustran el realismo de entidades porque, aunque no se observen a simple vista, pueden ser manipulados para producir efectos controlados y reproducibles."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-006",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Clases humanas e indiferentes",
+      "enunciado": "Una clase indiferente se caracteriza por ser una categoría cuyos miembros:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Modifican su autocomprensión al ser clasificados por la ciencia."
+        },
+        {
+          "id": "B",
+          "texto": "No alteran sus propiedades ni su comportamiento como consecuencia de la clasificación."
+        },
+        {
+          "id": "C",
+          "texto": "Reaccionan activamente cambiando sus criterios de pertenencia."
+        },
+        {
+          "id": "D",
+          "texto": "Pertenecen exclusivamente al ámbito de las ciencias sociales."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Los miembros de una clase indiferente no reaccionan ni modifican su conducta física o natural por el mero hecho de ser clasificados.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Los miembros de una clase indiferente no reaccionan ni modifican su conducta física o natural por el mero hecho de ser clasificados."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-007",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nominalismo dinámico y making up people",
+      "enunciado": "La reclasificación de Plutón como planeta enano en 2006 por la UAI demuestra que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Los cuerpos celestes son objetos interactivos que responden a los nombres."
+        },
+        {
+          "id": "B",
+          "texto": "Los objetos naturales modifican su órbita cuando cambia la definición científica."
+        },
+        {
+          "id": "C",
+          "texto": "Cambió la categoría taxonómica sin alterar las propiedades físicas del objeto."
+        },
+        {
+          "id": "D",
+          "texto": "La taxonomía astronómica es un ejemplo de nominalismo dinámico."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Plutón no cambió su masa ni su trayectoria orbital al ser reclasificado, lo que ilustra el comportamiento de una clase indiferente.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Plutón no cambió su masa ni su trayectoria orbital al ser reclasificado, lo que ilustra el comportamiento de una clase indiferente."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-008",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Representar e intervenir / realismo de entidades",
+      "enunciado": "A diferencia de los objetos de las ciencias naturales, las clases interactivas se definen porque:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Permiten la manipulación causal en condiciones de laboratorio."
+        },
+        {
+          "id": "B",
+          "texto": "Carecen de propiedades físicas o biológicas preexistentes."
+        },
+        {
+          "id": "C",
+          "texto": "Se mantienen inalterables a lo largo de las transformaciones históricas."
+        },
+        {
+          "id": "D",
+          "texto": "Sus miembros son personas que pueden conocer la clasificación y responder ante ella."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "Las clases interactivas aplican a seres humanos capaces de reaccionar, reinterpretar su conducta y modificar la categoría que se les aplica.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Las clases interactivas aplican a seres humanos capaces de reaccionar, reinterpretar su conducta y modificar la categoría que se les aplica."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-009",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nominalismo dinámico y making up people",
+      "enunciado": "El nominalismo dinámico propuesto por Hacking plantea que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Las categorías humanas y los tipos de personas se constituyen históricamente de manera acoplada."
+        },
+        {
+          "id": "B",
+          "texto": "Los nombres crean físicamente a los individuos a partir de la nada."
+        },
+        {
+          "id": "C",
+          "texto": "Las clasificaciones humanas agrupan a personas que ya existían sin transformarlas."
+        },
+        {
+          "id": "D",
+          "texto": "Todas las categorías humanas son inventos arbitrarios sin consecuencias reales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El nominalismo dinámico sostiene que las clasificaciones y las formas de ser persona interactúan y se transforman conjuntamente a lo largo de la historia.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "El nominalismo dinámico sostiene que las clasificaciones y las formas de ser persona interactúan y se transforman conjuntamente a lo largo de la historia."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-010",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nominalismo dinámico y making up people",
+      "enunciado": "El proceso conocido como 'construcción de personas' (*making up people*) se refiere a:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La fabricación biológica de nuevos organismos en laboratorios."
+        },
+        {
+          "id": "B",
+          "texto": "La formación histórica de tipos humanos socialmente reconocibles mediante clasificaciones e instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "La imposición de etiquetas falsas que no producen ningún efecto en la sociedad."
+        },
+        {
+          "id": "D",
+          "texto": "La creación de teorías puramente abstractas sin aplicación en la vida cotidiana."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La construcción de personas describe cómo nuevas clasificaciones e instituciones hacen posibles formas inéditas de experiencia y autocomprensión.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La construcción de personas describe cómo nuevas clasificaciones e instituciones hacen posibles formas inéditas de experiencia y autocomprensión."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-011",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Efecto de bucle",
+      "enunciado": "El efecto bucle (*looping effect*) describe un circuito de retroalimentación donde:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Las hipótesis teóricas confirman siempre los datos observados de forma lineal."
+        },
+        {
+          "id": "B",
+          "texto": "Las clasificaciones cambian sin que los objetos clasificados reaccionen."
+        },
+        {
+          "id": "C",
+          "texto": "La respuesta de las personas clasificadas puede transformar la categoría y sus criterios."
+        },
+        {
+          "id": "D",
+          "texto": "Las profecías científicas se cumplen mecánicamente debido a la expectativa del investigador."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "El efecto bucle implica que las personas responden a las clasificaciones que se les aplican y sus respuestas modifican la categoría y las prácticas institucionales.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "El efecto bucle implica que las personas responden a las clasificaciones que se les aplican y sus respuestas modifican la categoría y las prácticas institucionales."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-012",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Efecto de bucle",
+      "enunciado": "En relación con las fases del efecto bucle, la etapa de revisión consiste en que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Las disciplinas o instituciones formulan una nueva categoría."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría se difunde masivamente en la vida cotidiana y los medios."
+        },
+        {
+          "id": "C",
+          "texto": "Las personas aceptan pasivamente las etiquetas médicas asignadas."
+        },
+        {
+          "id": "D",
+          "texto": "Los investigadores e instituciones modifican los criterios o explicaciones de la categoría según las respuestas humanas."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "En la fase de revisión del efecto bucle, las instituciones ajustan o transforman los límites de la categoría basándose en la conducta de los clasificados.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "En la fase de revisión del efecto bucle, las instituciones ajustan o transforman los límites de la categoría basándose en la conducta de los clasificados."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-013",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Efecto de bucle",
+      "enunciado": "El efecto bucle se diferencia de la profecía autocumplida en que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La profecía produce el resultado esperado, mientras que el efecto bucle abarca respuestas que transforman o redefinen la categoría."
+        },
+        {
+          "id": "B",
+          "texto": "La profecía autocumplida solo ocurre en el ámbito de las ciencias naturales."
+        },
+        {
+          "id": "C",
+          "texto": "El efecto bucle se limita al etiquetamiento pasivo de los individuos sin modificación posterior."
+        },
+        {
+          "id": "D",
+          "texto": "Ambos conceptos son idénticos y describen un mecanismo puramente lineal."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El efecto bucle contempla una retroalimentación compleja donde los sujetos pueden resistir, reinterpretar y alterar la categoría original.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "El efecto bucle contempla una retroalimentación compleja donde los sujetos pueden resistir, reinterpretar y alterar la categoría original."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-014",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "En la propuesta de Hacking, el 'nicho ecológico' se define como:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El hábitat biológico y geográfico donde habita una especie animal."
+        },
+        {
+          "id": "B",
+          "texto": "La configuración de condiciones históricas, culturales e institucionales que hacen posible una categoría humana."
+        },
+        {
+          "id": "C",
+          "texto": "La lista de experimentos necesarios para justificar una teoría física."
+        },
+        {
+          "id": "D",
+          "texto": "El espacio de laboratorio donde se manipulan electrones e instrumentos."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El nicho ecológico identifica la trama de condiciones específicas que permiten que una categoría humana surja, sea inteligible y se sostenga en una época.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "El nicho ecológico identifica la trama de condiciones específicas que permiten que una categoría humana surja, sea inteligible y se sostenga en una época."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-015",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "En el análisis de las enfermedades mentales transitorias, los cuatro vectores del nicho ecológico son:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Experimento, teoría, observación e hipótesis."
+        },
+        {
+          "id": "B",
+          "texto": "Nominalismo, realismo, etiquetamiento y revisión."
+        },
+        {
+          "id": "C",
+          "texto": "Taxonomía médica, polaridad cultural, observabilidad y liberación."
+        },
+        {
+          "id": "D",
+          "texto": "Sujeto, objeto, representación y espejo."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Hacking identifica cuatro vectores centrales para analizar el nicho ecológico: taxonomía médica, polaridad cultural, observabilidad y liberación.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Hacking identifica cuatro vectores centrales para analizar el nicho ecológico: taxonomía médica, polaridad cultural, observabilidad y liberación."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-016",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "En el marco del nicho ecológico, el vector de 'polaridad cultural' se refiere a:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Las herramientas e instrumentos utilizados en la medición clínica."
+        },
+        {
+          "id": "B",
+          "texto": "La capacidad de una entidad teórica para ser manipulada experimentalmente."
+        },
+        {
+          "id": "C",
+          "texto": "La emancipación política definitiva lograda por un grupo clasificado."
+        },
+        {
+          "id": "D",
+          "texto": "Las tensiones y oposiciones culturales de una época que otorgan sentido a la categoría."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "La polaridad cultural alude a las valoraciones y oposiciones de una sociedad (como normal/anormal o responsabilidad/incapacidad) que vuelven inteligible una categoría.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La polaridad cultural alude a las valoraciones y oposiciones de una sociedad (como normal/anormal o responsabilidad/incapacidad) que vuelven inteligible una categoría."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-017",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "Dentro de los vectores del nicho ecológico, la 'liberación' (*release*) representa:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La posibilidad de respuesta o salida frente a exigencias culturales que habilita una clasificación."
+        },
+        {
+          "id": "B",
+          "texto": "La emancipación social y política total de los pacientes."
+        },
+        {
+          "id": "C",
+          "texto": "La demostración experimental de que una enfermedad es ficticia."
+        },
+        {
+          "id": "D",
+          "texto": "La eliminación definitiva de la categoría médica de los libros de texto."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El vector de liberación se refiere a las salidas o justificaciones que una categoría ofrece a los individuos frente a presiones de su entorno cultural.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "El vector de liberación se refiere a las salidas o justificaciones que una categoría ofrece a los individuos frente a presiones de su entorno cultural."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-018",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Ontología histórica y tipos humanos",
+      "enunciado": "La ontología histórica investiga fundamentalmente:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La evolución biológica de las estructuras celulares a lo largo del tiempo."
+        },
+        {
+          "id": "B",
+          "texto": "Cómo surgen históricamente determinadas posibilidades de ser, actuar y reconocerse como persona."
+        },
+        {
+          "id": "C",
+          "texto": "La lista cronológica de los descubrimientos científicos en las ciencias naturales."
+        },
+        {
+          "id": "D",
+          "texto": "La demostración matemática de las leyes de la física clásica."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La ontología histórica estudia la constitución de categorías, instituciones y tipos de personas como posibilidades de existencia que aparecen en momentos específicos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La ontología histórica estudia la constitución de categorías, instituciones y tipos de personas como posibilidades de existencia que aparecen en momentos específicos."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-019",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Representar e intervenir / realismo de entidades",
+      "enunciado": "Ian Hacking coincide con Michel Foucault en el interés por analizar:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La estructura atómica y el realismo de las entidades no observables."
+        },
+        {
+          "id": "B",
+          "texto": "La clasificación taxonómica de los cuerpos celestes en el sistema solar."
+        },
+        {
+          "id": "C",
+          "texto": "Las relaciones entre conocimiento, prácticas de poder y constitución de los sujetos."
+        },
+        {
+          "id": "D",
+          "texto": "La primacía exclusiva del método inductivo en la investigación científica."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Hacking y Foucault comparten el análisis de cómo los discursos de saber e instituciones de poder intervienen en la constitución histórica de los sujetos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Hacking y Foucault comparten el análisis de cómo los discursos de saber e instituciones de poder intervienen en la constitución histórica de los sujetos."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-020",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Representar e intervenir / realismo de entidades",
+      "enunciado": "Afirmar que una categoría humana tiene una 'contingencia histórica' significa que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Es completamente falsa, arbitraria y carece de efectos reales."
+        },
+        {
+          "id": "B",
+          "texto": "Fue creada por un error de medición en la práctica experimental."
+        },
+        {
+          "id": "C",
+          "texto": "Desaparecerá de manera inmediata cuando sea clasificada por la ciencia."
+        },
+        {
+          "id": "D",
+          "texto": "Su surgimiento depende de condiciones históricas específicas y no es inevitable ni universal."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "La contingencia histórica señala que las categorías surgen bajo condiciones particulares de una época, lo que no niega sus efectos objetivos ni su realidad.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La contingencia histórica señala que las categorías surgen bajo condiciones particulares de una época, lo que no niega sus efectos objetivos ni su realidad."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-021",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nominalismo dinámico y making up people",
+      "enunciado": "En el análisis conceptual del feminicidio, el marco de Hacking permite sostener que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Existían hechos de violencia previos, pero la categoría permitió conceptualizarlos e investigarlos como un fenómeno específico."
+        },
+        {
+          "id": "B",
+          "texto": "La violencia y los homicidios de mujeres no existían antes de la formulación del término."
+        },
+        {
+          "id": "C",
+          "texto": "El término creó materialmente los crímenes a través del nominalismo estático."
+        },
+        {
+          "id": "D",
+          "texto": "La categoría funciona como una clase indiferente sin provocar efectos institucionales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La categoría de feminicidio no inventa los hechos materiales, sino que ofrece el marco histórico e institucional para reconocerlos y organizarlos como un problema específico.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La categoría de feminicidio no inventa los hechos materiales, sino que ofrece el marco histórico e institucional para reconocerlos y organizarlos como un problema específico."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-022",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "En relación con el diagnóstico de TDAH, el análisis histórico de Hacking demuestra que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Los síntomas no existían en absoluto antes de la creación del manual diagnóstico."
+        },
+        {
+          "id": "B",
+          "texto": "Las dificultades de atención se organizan bajo una categoría clínica sin que esto implique que sean ficticias."
+        },
+        {
+          "id": "C",
+          "texto": "El diagnóstico es una clase indiferente que no altera la autocomprensión del paciente."
+        },
+        {
+          "id": "D",
+          "texto": "El tratamiento médico es el único factor del nicho ecológico que explica el fenómeno."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Estudiar la constitución histórica del TDAH y sus efectos de bucle permite comprender el impacto de la clasificación sin invalidar la realidad de las dificultades del individuo.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Estudiar la constitución histórica del TDAH y sus efectos de bucle permite comprender el impacto de la clasificación sin invalidar la realidad de las dificultades del individuo."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-023",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nominalismo dinámico y making up people",
+      "enunciado": "Al analizar el fenómeno del bullying desde el nominalismo dinámico se observa que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Las conductas molestas entre estudiantes siempre fueron interpretadas exactamente con los mismos criterios."
+        },
+        {
+          "id": "B",
+          "texto": "Cualquier conflicto o pelea menor entre pares debe ser clasificado automáticamente como bullying."
+        },
+        {
+          "id": "C",
+          "texto": "La categoría delimita un tipo de acoso escolar con criterios específicos y transforma protocolos institucionales."
+        },
+        {
+          "id": "D",
+          "texto": "La etiqueta eliminó por completo las conductas agresivas en los establecimientos educativos."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La categoría de bullying organiza y delimita un tipo particular de agresión con criterios de asimetría de poder, modificando las respuestas escolares e institucionales.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La categoría de bullying organiza y delimita un tipo particular de agresión con criterios de asimetría de poder, modificando las respuestas escolares e institucionales."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-024",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Efecto de bucle",
+      "enunciado": "En el caso de la homosexualidad, la perspectiva de Hacking distingue entre:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El origen biológico exclusivo de la conducta y la negación total de los factores sociales."
+        },
+        {
+          "id": "B",
+          "texto": "Una profecía autocumplida lineal y la ausencia total de efectos bucle."
+        },
+        {
+          "id": "C",
+          "texto": "Un objeto indiferente de la ciencia natural y un planeta enano reclasificado."
+        },
+        {
+          "id": "D",
+          "texto": "La existencia previa de deseos o prácticas sexuales y la formación histórica de una identidad clasificada."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "El análisis distingue las prácticas o afectos entre personas del mismo sexo de la categoría histórica moderna que constituyó una forma particular de identidad social.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "El análisis distingue las prácticas o afectos entre personas del mismo sexo de la categoría histórica moderna que constituyó una forma particular de identidad social."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-025",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Ontología histórica y tipos humanos",
+      "enunciado": "Las expectativas sociales y roles de género se diferencian de las características del sexo en que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Las expectativas de género son clasificaciones sociales históricas que organizan roles y pueden transformarse."
+        },
+        {
+          "id": "B",
+          "texto": "El sexo es una construcción puramente lingüística y los roles de género son inmutables."
+        },
+        {
+          "id": "C",
+          "texto": "Los roles de género operan como clases indiferentes frente a la conducta humana."
+        },
+        {
+          "id": "D",
+          "texto": "El género se transmite exclusivamente por mecanismos de manipulación experimental."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El análisis de Hacking distingue las características biológicas del sexo de las normas y clasificaciones de género, las cuales organizan roles y son modificadas por las personas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "El análisis de Hacking distingue las características biológicas del sexo de las normas y clasificaciones de género, las cuales organizan roles y son modificadas por las personas."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-026",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Representar e intervenir / realismo de entidades",
+      "enunciado": "El concepto de 'objetivo móvil' (*moving target*) en las ciencias humanas se refiere a que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Los instrumentos de laboratorio se mueven durante el proceso de medición."
+        },
+        {
+          "id": "B",
+          "texto": "El objeto de estudio se transforma en respuesta a los conocimientos y clasificaciones que se le aplican."
+        },
+        {
+          "id": "C",
+          "texto": "Las teorías de las ciencias naturales cambian más rápido que las de las ciencias humanas."
+        },
+        {
+          "id": "D",
+          "texto": "Los cuerpos celestes modifican su trayectoria cuando cambia la taxonomía astronómica."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "En las ciencias humanas, las personas responden a las teorías y clasificaciones que las describen, haciendo que el objeto de estudio se transforme continuamente.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "En las ciencias humanas, las personas responden a las teorías y clasificaciones que las describen, haciendo que el objeto de estudio se transforme continuamente."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-027",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Representar e intervenir / realismo de entidades",
+      "enunciado": "La analogía del guardarropa utilizada por Hacking sirve para ilustrar cómo:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La manipulación de electrones crea nuevos materiales sintéticos."
+        },
+        {
+          "id": "B",
+          "texto": "Los objetos naturales reaccionan ante las categorías cambiando de forma."
+        },
+        {
+          "id": "C",
+          "texto": "Una clasificación puede crear una nueva clase funcional sin crear físicamente a sus miembros."
+        },
+        {
+          "id": "D",
+          "texto": "El realismo de teorías se demuestra mediante la organización de la indumentaria."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Agregar una nueva categoría (como 'ropa para limpiar') reorganiza prendas preexistentes creando una clase funcional, del mismo modo en que operan ciertas clasificaciones humanas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Agregar una nueva categoría (como 'ropa para limpiar') reorganiza prendas preexistentes creando una clase funcional, del mismo modo en que operan ciertas clasificaciones humanas."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-028",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Representar e intervenir / realismo de entidades",
+      "enunciado": "En la ciencia experimental, la relación entre teoría y práctica debe entenderse como:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Una secuencia rígida donde la práctica sólo aplica lo que la teoría dictamina."
+        },
+        {
+          "id": "B",
+          "texto": "Dos dimensiones totalmente independientes que nunca se relacionan."
+        },
+        {
+          "id": "C",
+          "texto": "Una ilusión creada por la concepción del conocimiento como espejo."
+        },
+        {
+          "id": "D",
+          "texto": "Un proceso de retroalimentación donde la práctica puede revelar fenómenos y exigir revisiones teóricas."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "Hacking plantea que la práctica experimental y la representación teórica se retroalimentan continuamente en la producción del conocimiento científico.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Hacking plantea que la práctica experimental y la representación teórica se retroalimentan continuamente en la producción del conocimiento científico."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-029",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Clases humanas e indiferentes",
+      "enunciado": "Un resultado experimental exitoso y reproducible proporciona razones para:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Atribuir capacidad causal y considerar real a la entidad manipulada."
+        },
+        {
+          "id": "B",
+          "texto": "Aceptar que la teoría completa asociada es una verdad absoluta e inmutable."
+        },
+        {
+          "id": "C",
+          "texto": "Demostrar que toda correlación entre variables implica causalidad directa."
+        },
+        {
+          "id": "D",
+          "texto": "Afirmar que el objeto investigado es una clase interactiva."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La capacidad de producir efectos reproducibles mediante manipulación controlada ofrece razones para atribuir capacidades causales a la entidad investigada.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La capacidad de producir efectos reproducibles mediante manipulación controlada ofrece razones para atribuir capacidades causales a la entidad investigada."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-030",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Representar e intervenir / realismo de entidades",
+      "enunciado": "La corriente filosófica conocida como antirrealismo se caracteriza por:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Afirmar que los electrones son la única realidad existente en el universo."
+        },
+        {
+          "id": "B",
+          "texto": "Cuestionar que el éxito de una teoría sea suficiente para afirmar la existencia real de todas sus entidades postuladas."
+        },
+        {
+          "id": "C",
+          "texto": "Sostener que las ciencias humanas no utilizan clasificaciones ni categorías."
+        },
+        {
+          "id": "D",
+          "texto": "Negar la posibilidad de realizar experimentos en el ámbito de la física."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El antirrealismo reúne posturas que dudan de que el éxito explicativo o predictivo de una teoría garantice la existencia real de las entidades no observables que menciona.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "El antirrealismo reúne posturas que dudan de que el éxito explicativo o predictivo de una teoría garantice la existencia real de las entidades no observables que menciona."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-031",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "La fuga disociativa en la Francia de fines del siglo XIX es utilizada por Hacking como ejemplo de:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Una clase indiferente propia de la astronomía moderna."
+        },
+        {
+          "id": "B",
+          "texto": "Un experimento exitoso para demostrar la existencia de los electrones."
+        },
+        {
+          "id": "C",
+          "texto": "Un nicho ecológico donde condiciones médicas, culturales y de liberación hicieron posible una categoría psiquiátrica."
+        },
+        {
+          "id": "D",
+          "texto": "Un caso de nominalismo estático sin ningún impacto social."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La fuga disociativa ilustra cómo la confluencia de la taxonomía médica, tensiones culturales y posibilidades de respuesta constituyeron el nicho ecológico de una enfermedad transitoria.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "La fuga disociativa ilustra cómo la confluencia de la taxonomía médica, tensiones culturales y posibilidades de respuesta constituyeron el nicho ecológico de una enfermedad transitoria."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-032",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Representar e intervenir / realismo de entidades",
+      "enunciado": "El problema epistemológico central de las ciencias humanas, a diferencia de las ciencias naturales, reside en:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Desarrollar telescopios más precisos para medir objetos lejanos."
+        },
+        {
+          "id": "B",
+          "texto": "Eliminar la práctica experimental para concentrarse en modelos teóricos puros."
+        },
+        {
+          "id": "C",
+          "texto": "Demostrar la verdad absoluta de todas las teorías sociológicas."
+        },
+        {
+          "id": "D",
+          "texto": "Comprender cómo se constituyen históricamente ciertos fenómenos, categorías y tipos humanos."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "Las ciencias humanas se enfocan en la constitución histórica de categorizaciones y personas, mientras que las ciencias naturales abordan la justificación del conocimiento del mundo natural.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "Las ciencias humanas se enfocan en la constitución histórica de categorizaciones y personas, mientras que las ciencias naturales abordan la justificación del conocimiento del mundo natural."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-033",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Representar e intervenir / realismo de entidades",
+      "enunciado": "La regla general formulada por Hacking para el análisis de casos sociales exige:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Negar la existencia de cualquier conflicto previo a la invención de una palabra."
+        },
+        {
+          "id": "B",
+          "texto": "Afirmar que todas las categorías humanas son inventos sin base real."
+        },
+        {
+          "id": "C",
+          "texto": "Tratar a los seres humanos como clases indiferentes sin capacidad de respuesta."
+        },
+        {
+          "id": "D",
+          "texto": "Distinguir entre la experiencia o conducta previa y la constitución histórica de la categoría que la organiza."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "El análisis riguroso de Hacking separa los acontecimientos o vivencias previas de la categoría histórica e institucional que permite clasificarlos y actuar sobre ellos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
+          "respuesta": "El análisis riguroso de Hacking separa los acontecimientos o vivencias previas de la categoría histórica e institucional que permite clasificarlos y actuar sobre ellos."
+        },
+        {
+          "pregunta": "¿Qué confusión frecuente conviene evitar?",
+          "respuesta": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-034",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Clases humanas e indiferentes",
+      "enunciado": "Una escuela introduce una categoría para describir dificultades de aprendizaje. Docentes y estudiantes la conocen y modifican expectativas y estrategias. ¿Qué rasgo muestra que la clase es interactiva?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La autoridad de quienes diseñaron la categoría."
+        },
+        {
+          "id": "B",
+          "texto": "La capacidad de las personas clasificadas y de las instituciones de responder a ella, transformando prácticas y criterios."
+        },
+        {
+          "id": "C",
+          "texto": "La estabilidad universal del diagnóstico."
+        },
+        {
+          "id": "D",
+          "texto": "La observación instrumental del comportamiento."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La categoría entra en las prácticas escolares y puede modificar el trato y la autocomprensión. La interacción se demuestra por esas respuestas y por sus efectos de retorno sobre la clasificación.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué debe evitarse al analizar diagnósticos escolares?",
+          "respuesta": "No concluir que las dificultades son ficticias: hay que distinguir las experiencias, los criterios de diagnóstico y los efectos que produce la clasificación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-035",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Clases humanas e indiferentes",
+      "enunciado": "¿Qué enseña el ejemplo de Plutón en la distinción de Hacking?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La reclasificación modifica por sí misma las propiedades físicas."
+        },
+        {
+          "id": "B",
+          "texto": "Todas las clasificaciones astronómicas son arbitrarias."
+        },
+        {
+          "id": "C",
+          "texto": "Un objeto puede cambiar de categoría sin responder a ella ni transformarse por conocerla."
+        },
+        {
+          "id": "D",
+          "texto": "Plutón desarrolla un efecto de bucle."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Plutón no conoce ni responde a la taxonomía. La reclasificación cambia su posición en el sistema de categorías, no sus propiedades por el solo hecho de recibir una nueva denominación.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué se usa Plutón como contraste?",
+          "respuesta": "Para mostrar que no toda clasificación es interactiva: algunos objetos no pueden responder a la categoría que se les aplica."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-036",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Clases humanas e indiferentes",
+      "enunciado": "En relación con el bullying, ¿qué formulación evita tanto el esencialismo como el constructivismo extremo?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La categoría puede ordenar y volver reconocibles conductas previas sin inventar desde cero todos los episodios que agrupa."
+        },
+        {
+          "id": "B",
+          "texto": "El bullying comenzó únicamente cuando se acuñó la palabra."
+        },
+        {
+          "id": "C",
+          "texto": "La clasificación no produce efectos porque las conductas ya existían."
+        },
+        {
+          "id": "D",
+          "texto": "Todo conflicto escolar constituye bullying."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La existencia previa de episodios de hostigamiento no impide que una categoría histórica delimite criterios, produzca registros y habilite nuevas intervenciones. Experiencias, clasificación y efectos deben analizarse por separado.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué dos planos conviene separar?",
+          "respuesta": "La existencia de prácticas concretas de hostigamiento y la formación histórica de una categoría que las delimita, registra y vuelve objeto de intervención."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-037",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Clases humanas e indiferentes",
+      "enunciado": "Una categoría está escrita en un manual, pero no circula ni afecta a quienes clasifica. ¿Qué conclusión es más prudente?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Ya se produjo necesariamente un bucle completo."
+        },
+        {
+          "id": "B",
+          "texto": "La categoría es falsa."
+        },
+        {
+          "id": "C",
+          "texto": "Todos los individuos cambiaron su conducta sin saberlo."
+        },
+        {
+          "id": "D",
+          "texto": "No basta la existencia formal de un nombre para probar una interacción efectiva."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "El bucle requiere vías concretas de interacción: circulación, aplicación institucional, respuesta de las personas o transformación de las prácticas que las afectan. Una etiqueta aislada no demuestra ese proceso.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué evidencia ayudaría a identificar interacción?",
+          "respuesta": "Cambios en autocomprensión, conducta, trato institucional o criterios expertos vinculados con la circulación de la clasificación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-038",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Clases humanas e indiferentes",
+      "enunciado": "¿Qué caracteriza a una clase indiferente?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Sus integrantes son personas que rechazan la categoría."
+        },
+        {
+          "id": "B",
+          "texto": "Sus integrantes no pueden responder a la clasificación como clasificación, por lo que esta no los modifica por esa vía."
+        },
+        {
+          "id": "C",
+          "texto": "La categoría es necesariamente falsa."
+        },
+        {
+          "id": "D",
+          "texto": "La clasificación no puede revisarse."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Una clase indiferente no interactúa con la categoría. La taxonomía puede cambiar por razones científicas, pero los miembros no conocen ni responden a la etiqueta y no cambian por ello sus propiedades.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué diferencia existe con una clase interactiva?",
+          "respuesta": "En la interactiva hay posibilidad de respuesta y retroalimentación; en la indiferente, la clasificación no transforma al objeto por ser clasificado."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-039",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Efecto de bucle",
+      "enunciado": "Una categoría se difunde, modifica la autocomprensión de las personas y luego los expertos revisan los criterios a partir de esas respuestas. ¿Qué concepto describe el proceso?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Efecto de bucle."
+        },
+        {
+          "id": "B",
+          "texto": "Falsación por modus tollens."
+        },
+        {
+          "id": "C",
+          "texto": "Matriz disciplinar."
+        },
+        {
+          "id": "D",
+          "texto": "Suplicio soberano."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El efecto de bucle es la retroalimentación entre la categoría, las personas clasificadas, las instituciones y el conocimiento experto. La clasificación influye en los sujetos y sus respuestas pueden transformar la categoría.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Cuáles son los momentos mínimos del bucle?",
+          "respuesta": "La categoría circula, las personas o instituciones responden, esas respuestas modifican a los clasificados y la clasificación puede revisarse."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-040",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Efecto de bucle",
+      "enunciado": "¿Por qué el efecto de bucle no es una relación causal en un solo sentido?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque las personas no conocen la categoría."
+        },
+        {
+          "id": "B",
+          "texto": "Porque solo cambia la conducta institucional."
+        },
+        {
+          "id": "C",
+          "texto": "Porque las respuestas de los clasificados pueden modificar después los criterios y saberes que los clasifican."
+        },
+        {
+          "id": "D",
+          "texto": "Porque la categoría permanece idéntica aunque cambie la población."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La dinámica es circular: una clasificación afecta a las personas, pero sus respuestas y prácticas pueden obligar a revisar el conocimiento y la clasificación. No es una influencia unilateral.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué puede modificarse en este circuito?",
+          "respuesta": "La conducta, la autocomprensión, el trato institucional, los conocimientos expertos y los criterios de clasificación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-041",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Efecto de bucle",
+      "enunciado": "Una persona rechaza un diagnóstico y organiza una asociación que modifica el lenguaje de una institución. ¿Qué interpretación corresponde?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "No hay interacción porque no aceptó la etiqueta."
+        },
+        {
+          "id": "B",
+          "texto": "Hay interacción solo si todos los expertos renuncian a clasificar."
+        },
+        {
+          "id": "C",
+          "texto": "El rechazo demuestra que la categoría siempre fue falsa."
+        },
+        {
+          "id": "D",
+          "texto": "La resistencia también puede formar parte del bucle al modificar prácticas y criterios."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "La interacción no exige adhesión. Rechazar, resistir u ocultar una categoría puede tener consecuencias institucionales y alterar el modo en que se aplica o revisa.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué respuestas pueden modificar una categoría?",
+          "respuesta": "Identificación, apropiación, rechazo, resistencia, ocultamiento o negociación, siempre que tengan efectos sobre los sujetos o el sistema clasificatorio."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-042",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Efecto de bucle",
+      "enunciado": "¿Cuál es la diferencia más precisa entre efecto de bucle y profecía autocumplida?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Son conceptos idénticos."
+        },
+        {
+          "id": "B",
+          "texto": "La profecía autocumplida destaca la producción de un resultado esperado; el bucle incluye una retroalimentación más amplia que puede cambiar a las personas, las instituciones y la clasificación."
+        },
+        {
+          "id": "C",
+          "texto": "El bucle solo ocurre en ciencias naturales."
+        },
+        {
+          "id": "D",
+          "texto": "La profecía autocumplida requiere una revisión taxonómica."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El efecto de bucle no se limita a que una expectativa produzca el resultado anticipado. Analiza cómo las categorías y los clasificados se transforman mutuamente, incluidos los cambios en conocimientos e instituciones.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué elemento amplía el alcance del bucle?",
+          "respuesta": "Que la respuesta no solo modifica la conducta individual: puede obligar a revisar la categoría y el conocimiento experto que la sostiene."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-043",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Efecto de bucle",
+      "enunciado": "¿Qué error aparece al suponer que todas las personas clasificadas reaccionan del mismo modo?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Se confunde la posibilidad de interacción con un efecto uniforme: algunas personas se identifican, otras resisten y otras no conocen la categoría."
+        },
+        {
+          "id": "B",
+          "texto": "Se reconoce que la categoría es histórica."
+        },
+        {
+          "id": "C",
+          "texto": "Se distingue entre categoría y experiencia."
+        },
+        {
+          "id": "D",
+          "texto": "Se admite que hay instituciones."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Hacking no presupone una respuesta homogénea. La interacción puede ser positiva, negativa o ambivalente y debe reconstruirse en el contexto concreto.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué la respuesta no es uniforme?",
+          "respuesta": "Porque las personas tienen posiciones, recursos, experiencias y relaciones institucionales diferentes frente a la clasificación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-044",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "¿Qué designa el nicho ecológico en el análisis de Hacking?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El lugar físico donde viven los clasificados."
+        },
+        {
+          "id": "B",
+          "texto": "Una fase cronológica de la ciencia normal."
+        },
+        {
+          "id": "C",
+          "texto": "El conjunto de síntomas que define una enfermedad sin contexto histórico."
+        },
+        {
+          "id": "D",
+          "texto": "El espacio histórico de posibilidades que habilita el surgimiento, transformación o desaparición de una clasificación."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "El nicho ecológico es una configuración de condiciones sociales, culturales, médicas, institucionales y técnicas. No es un hábitat biológico literal ni una etapa temporal fija.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué condiciones pueden integrar un nicho?",
+          "respuesta": "Vocabularios culturales, instituciones, prácticas profesionales, tecnologías, normas y conocimientos disponibles."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-045",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "¿Qué conjunto contiene los cuatro vectores del nicho ecológico?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Paradigma, anomalía, crisis y revolución."
+        },
+        {
+          "id": "B",
+          "texto": "Clasificación médica, polaridad cultural, visibilidad/observabilidad y evasión/liberación."
+        },
+        {
+          "id": "C",
+          "texto": "Vigilancia, examen, encierro y sanción."
+        },
+        {
+          "id": "D",
+          "texto": "Hipótesis, predicción, prueba y verificación."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Los vectores reconstruyen dimensiones de un nicho: disponibilidad de una categoría médica, tensiones valorativas de época, condiciones para observar y registrar casos, y una posible función de salida o liberación.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Los vectores son etapas cronológicas?",
+          "respuesta": "No. Son dimensiones que se articulan en una configuración histórica y no una secuencia fija."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-046",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "Una conducta se interpreta dentro de una tensión cultural entre virtud y vicio. ¿Qué vector se analiza?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Visibilidad y observabilidad."
+        },
+        {
+          "id": "B",
+          "texto": "Clasificación médica."
+        },
+        {
+          "id": "C",
+          "texto": "Polaridad cultural."
+        },
+        {
+          "id": "D",
+          "texto": "Evasión o liberación."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La polaridad cultural refiere a oposiciones valorativas de una época que otorgan sentido a una conducta y ayudan a explicar por qué cierta clasificación pudo adquirir relevancia.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué importa la polaridad cultural?",
+          "respuesta": "Porque una conducta puede adquirir significados distintos según las oposiciones morales y culturales disponibles en una época."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-047",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "¿Qué situación ilustra el vector de visibilidad y observabilidad?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Instituciones y procedimientos que permiten reunir, registrar y estudiar casos."
+        },
+        {
+          "id": "B",
+          "texto": "Una categoría que ofrece una salida frente a tensiones sociales."
+        },
+        {
+          "id": "C",
+          "texto": "La aparición de un diagnóstico experto."
+        },
+        {
+          "id": "D",
+          "texto": "Una oposición moral entre virtud y vicio."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La observabilidad requiere observadores, lugares institucionales y procedimientos que permitan hacer visible el fenómeno como conjunto de casos comparables y registrables.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué ejemplos aumentan la observabilidad?",
+          "respuesta": "Registros hospitalarios, tribunales, escuelas, estadísticas, formularios y protocolos que reúnen casos bajo criterios compartidos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-048",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "¿Qué expresa el vector de evasión o liberación?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Una demostración experimental de la verdad del diagnóstico."
+        },
+        {
+          "id": "B",
+          "texto": "La eliminación de toda norma cultural."
+        },
+        {
+          "id": "C",
+          "texto": "La imposibilidad de responder a una clasificación."
+        },
+        {
+          "id": "D",
+          "texto": "La posibilidad de que la categoría proporcione una salida socialmente inteligible frente a presiones de una época."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "El vector de evasión/liberación analiza una posible función que la categoría cumple en un contexto histórico. No supone necesariamente simulación consciente ni una intención idéntica en todos los individuos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿La evasión supone simulación consciente?",
+          "respuesta": "No necesariamente. Se analiza una posibilidad de salida o respuesta reconocible en un contexto histórico, sin atribuir intenciones universales."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-049",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "¿Cómo deben entenderse los cuatro vectores?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Como cuatro etapas obligatorias que siempre ocurren en el mismo orden."
+        },
+        {
+          "id": "B",
+          "texto": "Como dimensiones que se articulan y deben reconstruirse en el caso histórico, no como un checklist automático."
+        },
+        {
+          "id": "C",
+          "texto": "Como sinónimos de la categoría médica."
+        },
+        {
+          "id": "D",
+          "texto": "Como cuatro tipos de clases humanas."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Los vectores no son etapas cronológicas ni causas aisladas. Importa la configuración conjunta de condiciones que vuelve viable una clasificación en un contexto específico.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Cómo se aplican a un caso actual?",
+          "respuesta": "Como herramienta analítica situada: hay que justificar la función de cada dimensión y no asumir que todo diagnóstico encaja de forma idéntica."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-050",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "¿Qué relación hay entre nicho ecológico y efecto de bucle?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El nicho es una consecuencia del modus tollens."
+        },
+        {
+          "id": "B",
+          "texto": "El bucle describe el hábitat físico de una persona."
+        },
+        {
+          "id": "C",
+          "texto": "El nicho reúne las condiciones que hacen posible la clasificación; el bucle describe la retroalimentación que puede ocurrir cuando circula y recibe respuestas."
+        },
+        {
+          "id": "D",
+          "texto": "Son nombres diferentes para el mismo fenómeno."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "El nicho explica las condiciones históricas de posibilidad de una categoría. El bucle analiza la interacción que puede desencadenarse cuando se aplica y las personas responden.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Puede cambiar el nicho tras aparecer una categoría?",
+          "respuesta": "Sí. Nuevas instituciones, tecnologías, saberes y prácticas modifican el espacio histórico en el que la clasificación opera."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-051",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nominalismo dinámico y making up people",
+      "enunciado": "¿Qué sostiene el nominalismo dinámico?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Las categorías humanas y los tipos de personas pueden constituirse y transformarse recíprocamente en determinadas condiciones históricas."
+        },
+        {
+          "id": "B",
+          "texto": "Toda clase humana existe igual en todas las épocas."
+        },
+        {
+          "id": "C",
+          "texto": "Las palabras nunca modifican las prácticas sociales."
+        },
+        {
+          "id": "D",
+          "texto": "Toda categoría social es falsa por haber sido construida."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El nominalismo dinámico destaca que las clasificaciones pueden contribuir a configurar tipos humanos reconocibles y que las personas clasificadas pueden, a su vez, modificar las categorías.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué diferencia hay con un nominalismo meramente lingüístico?",
+          "respuesta": "El nominalismo dinámico no se limita a nombres: analiza cómo las clasificaciones intervienen en la configuración histórica de tipos humanos y sus relaciones con instituciones y saberes."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-052",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nominalismo dinámico y making up people",
+      "enunciado": "¿Qué significa making up people?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Fabricar físicamente individuos mediante el lenguaje."
+        },
+        {
+          "id": "B",
+          "texto": "Demostrar que los fenómenos humanos no existían antes del diagnóstico."
+        },
+        {
+          "id": "C",
+          "texto": "Clasificar personas sin que intervengan instituciones ni expertos."
+        },
+        {
+          "id": "D",
+          "texto": "Constituir históricamente nuevos tipos humanos reconocibles mediante categorías, instituciones y saberes expertos."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "No significa crear individuos desde cero. Describe cómo una red de clasificaciones, personas, instituciones, conocimiento experto y expertos contribuye a formar tipos humanos socialmente reconocibles.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué elementos intervienen?",
+          "respuesta": "Clasificación, personas clasificadas, instituciones, conocimiento experto y expertos que producen y aplican ese conocimiento."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-053",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nominalismo dinámico y making up people",
+      "enunciado": "¿Cuáles son los cinco elementos relacionados en making up people?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Teoría, predicción, enunciado básico, deducción y falsación."
+        },
+        {
+          "id": "B",
+          "texto": "Clasificación, personas, instituciones, conocimiento experto y expertos."
+        },
+        {
+          "id": "C",
+          "texto": "Vigilancia, suplicio, prisión, examen y castigo."
+        },
+        {
+          "id": "D",
+          "texto": "Valores, ejemplares, anomalías, paradigmas y revolución."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El proceso incluye la categoría, las personas, las instituciones que la aplican, los conocimientos que describen al grupo y los expertos que producen y revisan esos saberes.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué no basta con estudiar el nombre de una categoría?",
+          "respuesta": "Hay que reconstruir qué personas agrupa, quién la aplica, qué saberes la sostienen y qué efectos generan las instituciones."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-054",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nominalismo dinámico y making up people",
+      "enunciado": "¿Qué diferencia hay entre afirmar que una categoría descubre un tipo humano y que contribuye a hacerlo?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Descubrir presupone un tipo ya constituido; hacerlo destaca que la clasificación puede participar en su configuración histórica."
+        },
+        {
+          "id": "B",
+          "texto": "Ambas expresiones significan lo mismo."
+        },
+        {
+          "id": "C",
+          "texto": "Hacer una clase implica inventar todos los rasgos físicos de cada individuo."
+        },
+        {
+          "id": "D",
+          "texto": "Descubrir siempre significa falsar una teoría."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Hacking cuestiona que todas las categorías sean etiquetas aplicadas a clases completamente formadas. En ciertos casos clasificar contribuye a configurar una forma de reconocimiento, tratamiento y autocomprensión.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué puede preexistir a una categoría nueva?",
+          "respuesta": "Experiencias, conductas y sufrimientos; lo históricamente nuevo puede ser el modo de agruparlos, interpretarlos e intervenir sobre ellos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-055",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nominalismo dinámico y making up people",
+      "enunciado": "¿Por qué la construcción histórica de una categoría no implica que sea falsa?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque las categorías históricas pueden organizar experiencias reales y producir efectos concretos; su origen histórico no resuelve por sí solo su validez."
+        },
+        {
+          "id": "B",
+          "texto": "Porque todo lo construido es verdadero."
+        },
+        {
+          "id": "C",
+          "texto": "Porque solo importa la aceptación de los expertos."
+        },
+        {
+          "id": "D",
+          "texto": "Porque los hechos dejan de existir cuando cambian los nombres."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La historicidad no demuestra falsedad. Es necesario distinguir experiencias, criterios clasificatorios y efectos institucionales, y evaluar cada dimensión en lugar de concluir que todo es ficticio.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué no se deduce automáticamente de la historicidad?",
+          "respuesta": "No se deduce que el fenómeno sea irreal, que la categoría carezca de utilidad ni que toda clasificación sea igualmente adecuada."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-056",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Ontología histórica",
+      "enunciado": "¿Qué investiga la ontología histórica de Hacking?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La existencia de verdades eternas sin contexto."
+        },
+        {
+          "id": "B",
+          "texto": "La estructura formal de los argumentos deductivos."
+        },
+        {
+          "id": "C",
+          "texto": "La distribución del poder soberano en el Estado."
+        },
+        {
+          "id": "D",
+          "texto": "Las condiciones históricas que hacen posibles determinadas formas de ser, actuar, pensar y reconocerse."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "La ontología histórica reconstruye cómo ciertas posibilidades de existencia se vuelven inteligibles y practicables en momentos concretos. No se limita a fechar palabras ni a describir esencias ahistóricas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué pregunta expresa este enfoque?",
+          "respuesta": "¿Qué condiciones tuvieron que existir para que una forma particular de experiencia o identidad pudiera reconocerse y vivirse?"
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-057",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Ontología histórica",
+      "enunciado": "¿Qué implica la contingencia histórica de una categoría?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que debía aparecer necesariamente en todas las sociedades."
+        },
+        {
+          "id": "B",
+          "texto": "Que su surgimiento depende de condiciones específicas y no es inevitable ni universal."
+        },
+        {
+          "id": "C",
+          "texto": "Que no puede estudiarse con evidencia."
+        },
+        {
+          "id": "D",
+          "texto": "Que la categoría es una decisión individual arbitraria."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La contingencia indica que una clasificación pudo emerger bajo ciertas condiciones y no tenía que existir siempre ni en todas partes. La tarea es reconstruir qué condiciones la hicieron posible.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué pregunta ayuda a identificar contingencia?",
+          "respuesta": "¿Qué condiciones históricas tuvieron que reunirse para que esta categoría apareciera en este momento y no en otro?"
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-058",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nicho ecológico y cuatro vectores",
+      "enunciado": "En un hospital, una categoría diagnóstica se modifica por nuevas clasificaciones médicas, cambia su valoración cultural, se vuelve más observable mediante registros y algunas personas la adoptan estratégicamente para reclamar derechos. ¿Cómo interpreta Hacking esta situación?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Los cuatro vectores describen dimensiones relacionadas del nicho ecológico de la categoría, no etapas sucesivas."
+        },
+        {
+          "id": "B",
+          "texto": "La clasificación médica constituye la causa única; los demás cambios son consecuencias secundarias sin autonomía."
+        },
+        {
+          "id": "C",
+          "texto": "La categoría deja de ser histórica cuando adquiere una definición científica estable."
+        },
+        {
+          "id": "D",
+          "texto": "El caso demuestra que las personas clasificadas no pueden modificar el significado de una categoría."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Los cuatro vectores permiten describir dimensiones que interactúan en la configuración histórica de una categoría: clasificación, polaridad cultural, visibilidad y evasión o liberación. No son fases cronológicas ni factores aislados.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Los cuatro vectores permiten describir dimensiones que interactúan en la configuración histórica de una categoría: clasificación, polaridad cultural, visibilidad y evasión o liberación. No son fases cronológicas ni factores aislados."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-059",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Ontología histórica",
+      "enunciado": "Una práctica que hoy se reconoce como una forma específica de experiencia personal no era descrita del mismo modo en otra época. ¿Qué pregunta expresa mejor la ontología histórica de Hacking?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "¿Qué nombre recibió primero la práctica y qué especialista lo acuñó?"
+        },
+        {
+          "id": "B",
+          "texto": "¿Bajo qué condiciones históricas llegó a ser posible que las personas se comprendieran y actuaran de esa manera?"
+        },
+        {
+          "id": "C",
+          "texto": "¿Qué rasgo biológico invariable explica por sí solo que la práctica exista en todas las épocas?"
+        },
+        {
+          "id": "D",
+          "texto": "¿Cómo puede demostrarse que la experiencia es ficticia porque su descripción es reciente?"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La ontología histórica indaga cómo ciertas formas de ser, experimentar y reconocerse emergen bajo condiciones históricas concretas. No se limita al origen de una palabra ni supone que la experiencia sea ficticia.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "La ontología histórica indaga cómo ciertas formas de ser, experimentar y reconocerse emergen bajo condiciones históricas concretas. No se limita al origen de una palabra ni supone que la experiencia sea ficticia."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-060",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Nominalismo dinámico y efecto de bucle",
+      "enunciado": "Una institución crea una clasificación para describir a un grupo. Las personas clasificadas conocen la categoría, modifican algunas conductas y, con el tiempo, los especialistas revisan la clasificación. ¿Qué concepto nombra más directamente esta retroalimentación?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Ontología histórica, porque toda categoría tiene un origen fechado."
+        },
+        {
+          "id": "B",
+          "texto": "Realismo de entidades, porque los especialistas manipulan objetos experimentales."
+        },
+        {
+          "id": "C",
+          "texto": "Efecto de bucle, porque la clasificación y las personas clasificadas se modifican recíprocamente."
+        },
+        {
+          "id": "D",
+          "texto": "Clasificación indiferente, porque el grupo no puede reaccionar a la categoría."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "El efecto de bucle describe la interacción entre clasificaciones humanas y personas clasificadas: la categoría puede modificar a quienes incluye y esas respuestas transforman, a su vez, la clasificación.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "El efecto de bucle describe la interacción entre clasificaciones humanas y personas clasificadas: la categoría puede modificar a quienes incluye y esas respuestas transforman, a su vez, la clasificación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-061",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Clasificaciones humanas",
+      "enunciado": "¿Por qué las clasificaciones de personas pueden diferir de las clasificaciones de objetos naturales en el planteo de Hacking?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque las clasificaciones humanas son siempre arbitrarias y carecen de relación con fenómenos reales."
+        },
+        {
+          "id": "B",
+          "texto": "Porque las personas clasificadas pueden conocer, aceptar, rechazar o modificar la categoría, alterando el fenómeno que se intenta describir."
+        },
+        {
+          "id": "C",
+          "texto": "Porque las clasificaciones de objetos naturales nunca cambian con nuevos instrumentos."
+        },
+        {
+          "id": "D",
+          "texto": "Porque toda clasificación humana produce necesariamente el mismo efecto de bucle."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Las personas pueden reaccionar a las clasificaciones y cambiar sus prácticas o autocomprensiones. Esto introduce una dinámica interactiva que no se presenta del mismo modo en la clasificación de objetos indiferentes.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Las personas pueden reaccionar a las clasificaciones y cambiar sus prácticas o autocomprensiones. Esto introduce una dinámica interactiva que no se presenta del mismo modo en la clasificación de objetos indiferentes."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-hacking-062",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Ian Hacking",
+      "subtema": "Representar e intervenir",
+      "enunciado": "Un equipo no logra decidir si una entidad microscópica existe porque varias teorías rivales la describen de manera diferente. Sin embargo, consigue utilizarla de forma estable para producir efectos experimentales controlados. ¿Qué argumento de Hacking resulta pertinente?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La capacidad de intervenir experimentalmente con una entidad ofrece una razón para tomar en serio su realidad, más allá de resolver por completo su representación teórica."
+        },
+        {
+          "id": "B",
+          "texto": "La existencia de una entidad depende exclusivamente de que una teoría consiga describirla sin contradicciones."
+        },
+        {
+          "id": "C",
+          "texto": "La intervención experimental demuestra que todas las teorías rivales son verdaderas en el mismo sentido."
+        },
+        {
+          "id": "D",
+          "texto": "La falta de acuerdo teórico obliga a suspender cualquier afirmación sobre la realidad de la entidad."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Hacking destaca que la intervención experimental puede respaldar el realismo de entidades: manipular algo de manera fiable para producir otros fenómenos constituye un argumento que no depende exclusivamente de una teoría descriptiva definitiva.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Hacking destaca que la intervención experimental puede respaldar el realismo de entidades: manipular algo de manera fiable para producir otros fenómenos constituye un argumento que no depende exclusivamente de una teoría descriptiva definitiva."
+        }
+      ]
+    }
+  ],
+  "tarjetas": [
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La concepción clásica entiende que las teorías científicas son representaciones de la realidad que funcionan como un espejo del mundo."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Hacking cuestiona que la ciencia se comprenda únicamente desde las teorías y la representación, rescatando la dimensión epistemológica de la práctica experimental."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Intervenir implica manipular materiales, controlar variables y producir fenómenos mediante la práctica experimental."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El realismo de entidades se apoya en la capacidad de manipular entidades de forma fiable para intervenir en otros fenómenos."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Los electrones ilustran el realismo de entidades porque, aunque no se observen a simple vista, pueden ser manipulados para producir efectos controlados y reproducibles."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Los miembros de una clase indiferente no reaccionan ni modifican su conducta física o natural por el mero hecho de ser clasificados."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Plutón no cambió su masa ni su trayectoria orbital al ser reclasificado, lo que ilustra el comportamiento de una clase indiferente."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Las clases interactivas aplican a seres humanos capaces de reaccionar, reinterpretar su conducta y modificar la categoría que se les aplica."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El nominalismo dinámico sostiene que las clasificaciones y las formas de ser persona interactúan y se transforman conjuntamente a lo largo de la historia."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La construcción de personas describe cómo nuevas clasificaciones e instituciones hacen posibles formas inéditas de experiencia y autocomprensión."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El efecto bucle implica que las personas responden a las clasificaciones que se les aplican y sus respuestas modifican la categoría y las prácticas institucionales."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "En la fase de revisión del efecto bucle, las instituciones ajustan o transforman los límites de la categoría basándose en la conducta de los clasificados."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El efecto bucle contempla una retroalimentación compleja donde los sujetos pueden resistir, reinterpretar y alterar la categoría original."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El nicho ecológico identifica la trama de condiciones específicas que permiten que una categoría humana surja, sea inteligible y se sostenga en una época."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Hacking identifica cuatro vectores centrales para analizar el nicho ecológico: taxonomía médica, polaridad cultural, observabilidad y liberación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La polaridad cultural alude a las valoraciones y oposiciones de una sociedad (como normal/anormal o responsabilidad/incapacidad) que vuelven inteligible una categoría."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El vector de liberación se refiere a las salidas o justificaciones que una categoría ofrece a los individuos frente a presiones de su entorno cultural."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La ontología histórica estudia la constitución de categorías, instituciones y tipos de personas como posibilidades de existencia que aparecen en momentos específicos."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Hacking y Foucault comparten el análisis de cómo los discursos de saber e instituciones de poder intervienen en la constitución histórica de los sujetos."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La contingencia histórica señala que las categorías surgen bajo condiciones particulares de una época, lo que no niega sus efectos objetivos ni su realidad."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La categoría de feminicidio no inventa los hechos materiales, sino que ofrece el marco histórico e institucional para reconocerlos y organizarlos como un problema específico."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Estudiar la constitución histórica del TDAH y sus efectos de bucle permite comprender el impacto de la clasificación sin invalidar la realidad de las dificultades del individuo."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La categoría de bullying organiza y delimita un tipo particular de agresión con criterios de asimetría de poder, modificando las respuestas escolares e institucionales."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El análisis distingue las prácticas o afectos entre personas del mismo sexo de la categoría histórica moderna que constituyó una forma particular de identidad social."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El análisis de Hacking distingue las características biológicas del sexo de las normas y clasificaciones de género, las cuales organizan roles y son modificadas por las personas."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "En las ciencias humanas, las personas responden a las teorías y clasificaciones que las describen, haciendo que el objeto de estudio se transforme continuamente."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Agregar una nueva categoría (como 'ropa para limpiar') reorganiza prendas preexistentes creando una clase funcional, del mismo modo en que operan ciertas clasificaciones humanas."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Hacking plantea que la práctica experimental y la representación teórica se retroalimentan continuamente en la producción del conocimiento científico."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La capacidad de producir efectos reproducibles mediante manipulación controlada ofrece razones para atribuir capacidades causales a la entidad investigada."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El antirrealismo reúne posturas que dudan de que el éxito explicativo o predictivo de una teoría garantice la existencia real de las entidades no observables que menciona."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "La fuga disociativa ilustra cómo la confluencia de la taxonomía médica, tensiones culturales y posibilidades de respuesta constituyeron el nicho ecológico de una enfermedad transitoria."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "Las ciencias humanas se enfocan en la constitución histórica de categorizaciones y personas, mientras que las ciencias naturales abordan la justificación del conocimiento del mundo natural."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué distinción conceptual permite resolver esta consigna?",
+      "dorso": "El análisis riguroso de Hacking separa los acontecimientos o vivencias previas de la categoría histórica e institucional que permite clasificarlos y actuar sobre ellos."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué confusión frecuente conviene evitar?",
+      "dorso": "No confundir la historicidad de una clasificación con la falsedad del fenómeno. Hay que separar experiencias o entidades, la categoría que las organiza y los efectos de su aplicación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué debe evitarse al analizar diagnósticos escolares?",
+      "dorso": "No concluir que las dificultades son ficticias: hay que distinguir las experiencias, los criterios de diagnóstico y los efectos que produce la clasificación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Por qué se usa Plutón como contraste?",
+      "dorso": "Para mostrar que no toda clasificación es interactiva: algunos objetos no pueden responder a la categoría que se les aplica."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué dos planos conviene separar?",
+      "dorso": "La existencia de prácticas concretas de hostigamiento y la formación histórica de una categoría que las delimita, registra y vuelve objeto de intervención."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué evidencia ayudaría a identificar interacción?",
+      "dorso": "Cambios en autocomprensión, conducta, trato institucional o criterios expertos vinculados con la circulación de la clasificación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué diferencia existe con una clase interactiva?",
+      "dorso": "En la interactiva hay posibilidad de respuesta y retroalimentación; en la indiferente, la clasificación no transforma al objeto por ser clasificado."
+    },
+    {
+      "frente": "Ian Hacking · ¿Cuáles son los momentos mínimos del bucle?",
+      "dorso": "La categoría circula, las personas o instituciones responden, esas respuestas modifican a los clasificados y la clasificación puede revisarse."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué puede modificarse en este circuito?",
+      "dorso": "La conducta, la autocomprensión, el trato institucional, los conocimientos expertos y los criterios de clasificación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué respuestas pueden modificar una categoría?",
+      "dorso": "Identificación, apropiación, rechazo, resistencia, ocultamiento o negociación, siempre que tengan efectos sobre los sujetos o el sistema clasificatorio."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué elemento amplía el alcance del bucle?",
+      "dorso": "Que la respuesta no solo modifica la conducta individual: puede obligar a revisar la categoría y el conocimiento experto que la sostiene."
+    },
+    {
+      "frente": "Ian Hacking · ¿Por qué la respuesta no es uniforme?",
+      "dorso": "Porque las personas tienen posiciones, recursos, experiencias y relaciones institucionales diferentes frente a la clasificación."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué condiciones pueden integrar un nicho?",
+      "dorso": "Vocabularios culturales, instituciones, prácticas profesionales, tecnologías, normas y conocimientos disponibles."
+    },
+    {
+      "frente": "Ian Hacking · ¿Los vectores son etapas cronológicas?",
+      "dorso": "No. Son dimensiones que se articulan en una configuración histórica y no una secuencia fija."
+    },
+    {
+      "frente": "Ian Hacking · ¿Por qué importa la polaridad cultural?",
+      "dorso": "Porque una conducta puede adquirir significados distintos según las oposiciones morales y culturales disponibles en una época."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué ejemplos aumentan la observabilidad?",
+      "dorso": "Registros hospitalarios, tribunales, escuelas, estadísticas, formularios y protocolos que reúnen casos bajo criterios compartidos."
+    },
+    {
+      "frente": "Ian Hacking · ¿La evasión supone simulación consciente?",
+      "dorso": "No necesariamente. Se analiza una posibilidad de salida o respuesta reconocible en un contexto histórico, sin atribuir intenciones universales."
+    },
+    {
+      "frente": "Ian Hacking · ¿Cómo se aplican a un caso actual?",
+      "dorso": "Como herramienta analítica situada: hay que justificar la función de cada dimensión y no asumir que todo diagnóstico encaja de forma idéntica."
+    },
+    {
+      "frente": "Ian Hacking · ¿Puede cambiar el nicho tras aparecer una categoría?",
+      "dorso": "Sí. Nuevas instituciones, tecnologías, saberes y prácticas modifican el espacio histórico en el que la clasificación opera."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué diferencia hay con un nominalismo meramente lingüístico?",
+      "dorso": "El nominalismo dinámico no se limita a nombres: analiza cómo las clasificaciones intervienen en la configuración histórica de tipos humanos y sus relaciones con instituciones y saberes."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué elementos intervienen?",
+      "dorso": "Clasificación, personas clasificadas, instituciones, conocimiento experto y expertos que producen y aplican ese conocimiento."
+    },
+    {
+      "frente": "Ian Hacking · ¿Por qué no basta con estudiar el nombre de una categoría?",
+      "dorso": "Hay que reconstruir qué personas agrupa, quién la aplica, qué saberes la sostienen y qué efectos generan las instituciones."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué puede preexistir a una categoría nueva?",
+      "dorso": "Experiencias, conductas y sufrimientos; lo históricamente nuevo puede ser el modo de agruparlos, interpretarlos e intervenir sobre ellos."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué no se deduce automáticamente de la historicidad?",
+      "dorso": "No se deduce que el fenómeno sea irreal, que la categoría carezca de utilidad ni que toda clasificación sea igualmente adecuada."
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué pregunta expresa este enfoque?",
+      "dorso": "¿Qué condiciones tuvieron que existir para que una forma particular de experiencia o identidad pudiera reconocerse y vivirse?"
+    },
+    {
+      "frente": "Ian Hacking · ¿Qué pregunta ayuda a identificar contingencia?",
+      "dorso": "¿Qué condiciones históricas tuvieron que reunirse para que esta categoría apareciera en este momento y no en otro?"
+    }
+  ]
+}

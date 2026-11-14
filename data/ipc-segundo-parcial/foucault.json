@@ -1,0 +1,2510 @@
+{
+  "materia": "IPC",
+  "parcial": "Segundo Parcial",
+  "autor": "Michel Foucault",
+  "tema": "Michel Foucault",
+  "preguntas": [
+    {
+      "id": "ipc-p2-foucault-001",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Concepción relacional, microfísica y saber-poder",
+      "enunciado": "Durante su período genealógico en la década de 1970, ¿cuáles son las dos obras de referencia en las que Foucault examina las relaciones entre saber, poder y las instituciones penales?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La estructura de las revoluciones científicas y La verdad y las formas jurídicas"
+        },
+        {
+          "id": "B",
+          "texto": "La verdad y las formas jurídicas (1973) y Vigilar y castigar (1975)"
+        },
+        {
+          "id": "C",
+          "texto": "La arqueología del saber y Las palabras y las cosas"
+        },
+        {
+          "id": "D",
+          "texto": "Historia de la locura en la época clásica y El nacimiento de la clínica"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "En el período genealógico, las obras centrales analizadas en el texto son 'La verdad y las formas jurídicas' (1973) y 'Vigilar y castigar. Nacimiento de la prisión' (1975).",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "En el período genealógico, las obras centrales analizadas en el texto son 'La verdad y las formas jurídicas' (1973) y 'Vigilar y castigar. Nacimiento de la prisión' (1975)."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-002",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Técnicas disciplinarias",
+      "enunciado": "Según Foucault, el método genealógico consiste fundamentalmente en:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Trazar una cronología lineal que demuestre el avance inevitable del progreso humano"
+        },
+        {
+          "id": "B",
+          "texto": "Reconstruir las condiciones históricas y contingentes que hicieron posible una práctica, institución o saber"
+        },
+        {
+          "id": "C",
+          "texto": "Buscar la fecha exacta del origen puro de una disciplina para validar su verdad empírica"
+        },
+        {
+          "id": "D",
+          "texto": "Evaluar exclusivamente la validez lógica abstracta de las hipótesis científicas"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La genealogía reconstruye las condiciones históricas contingentes, disputas y discontinuidades que hicieron posible que una práctica, clasificación o forma de saber llegue a parecer natural.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "La genealogía reconstruye las condiciones históricas contingentes, disputas y discontinuidades que hicieron posible que una práctica, clasificación o forma de saber llegue a parecer natural."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-003",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Concepción relacional, microfísica y saber-poder",
+      "enunciado": "La articulación entre \"saber-poder\" en el pensamiento foucaultiano implica que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El saber es completamente neutro y exterior a cualquier tipo de relación social de poder"
+        },
+        {
+          "id": "B",
+          "texto": "El poder destruye automáticamente toda validez empírica de las ciencias"
+        },
+        {
+          "id": "C",
+          "texto": "El conocimiento y el poder se constituyen mutuamente: los saberes producen efectos de poder y el poder genera condiciones de saber"
+        },
+        {
+          "id": "D",
+          "texto": "Solo los gobernantes de turno poseen el saber para manipular los hechos científicos"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La noción de saber-poder sostiene que los saberes producen efectos de intervención y clasificación, mientras que las relaciones de poder establecen las condiciones en que se generan discursos de autoridad.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "La noción de saber-poder sostiene que los saberes producen efectos de intervención y clasificación, mientras que las relaciones de poder establecen las condiciones en que se generan discursos de autoridad."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-004",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Concepción relacional, microfísica y saber-poder",
+      "enunciado": "Al afirmar que el surgimiento de las ciencias humanas es un \"acontecimiento político\", Foucault se refiere a que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Dichas ciencias fueron creadas directamente por partidos políticos durante las campañas electorales"
+        },
+        {
+          "id": "B",
+          "texto": "Representa una transformación en las relaciones sociales de poder y en los modos de clasificar, conocer y gobernar a los individuos"
+        },
+        {
+          "id": "C",
+          "texto": "Se trata de un decreto gubernamental emitido para prohibir el pensamiento libre"
+        },
+        {
+          "id": "D",
+          "texto": "Las ciencias humanas solo deben aplicarse en el ámbito de las ciencias políticas"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El término 'político' no remite a partidos o elecciones, sino a una transformación sustancial en las relaciones de poder y en las formas de observar, clasificar y administrar a las personas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "El término 'político' no remite a partidos o elecciones, sino a una transformación sustancial en las relaciones de poder y en las formas de observar, clasificar y administrar a las personas."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-005",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Concepción relacional, microfísica y saber-poder",
+      "enunciado": "A diferencia de la concepción tradicional que representa al poder como una posesión, Foucault sostiene que el poder:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Es una propiedad fija que pertenece exclusivamente al soberano o al Estado"
+        },
+        {
+          "id": "B",
+          "texto": "Se ejerce en una red de relaciones, prácticas, técnicas y rutinas cotidianas"
+        },
+        {
+          "id": "C",
+          "texto": "Funciona única y exclusivamente mediante la prohibición, la represión y la coerción física"
+        },
+        {
+          "id": "D",
+          "texto": "Es una entidad omnisciente que controla de manera infalible a todos los individuos"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Para Foucault, el poder no es algo que se posee de forma centralizada, sino una relación que se ejerce mediante prácticas, normas, rutinas e instituciones.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "Para Foucault, el poder no es algo que se posee de forma centralizada, sino una relación que se ejerce mediante prácticas, normas, rutinas e instituciones."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-006",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Genealogía y transformación del castigo",
+      "enunciado": "Foucault sostiene que el poder no es solo negativo o represivo, sino que también es \"productivo\" porque:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Fabrica armas de castigo cada vez más crueles y visibles"
+        },
+        {
+          "id": "B",
+          "texto": "Permite acumular riqueza material en manos del Estado"
+        },
+        {
+          "id": "C",
+          "texto": "Genera capacidades, hábitos, formas de conocimiento, categorías y tipos de subjetividad"
+        },
+        {
+          "id": "D",
+          "texto": "Garantiza la desaparición completa de cualquier forma de resistencia social"
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "El poder en Foucault es productivo porque no solo prohíbe, sino que genera modos de actuar, habilidades, hábitos, saberes e identidades socialmente reconocibles.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "El poder en Foucault es productivo porque no solo prohíbe, sino que genera modos de actuar, habilidades, hábitos, saberes e identidades socialmente reconocibles."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-007",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Técnicas disciplinarias",
+      "enunciado": "El surgimiento de disciplinas como la psicología, criminología y psiquiatría en la Modernidad se vincula históricamente con:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El aislamiento contemplativo de los científicos sin relación con las instituciones"
+        },
+        {
+          "id": "B",
+          "texto": "Transformaciones en las instituciones penales y en las formas de ejercitar el poder sobre los individuos"
+        },
+        {
+          "id": "C",
+          "texto": "La sustitución completa de las ciencias naturales por las ciencias sociales"
+        },
+        {
+          "id": "D",
+          "texto": "Una revelación religiosa surgida a fines del siglo XVIII"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Las ciencias humanas emergen en articulación con las transformaciones institucionales y penales que convierten al individuo en objeto de observación, examen y corrección.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "Las ciencias humanas emergen en articulación con las transformaciones institucionales y penales que convierten al individuo en objeto de observación, examen y corrección."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-008",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Panoptismo y visibilidad",
+      "enunciado": "En *Vigilar y castigar*, Foucault utiliza la historia del castigo penal y la prisión como un hilo conductor para analizar:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La arquitectura interna de los edificios medievales exclusivamente"
+        },
+        {
+          "id": "B",
+          "texto": "Cómo el castigo deja de centrarse en el suplicio corporal y se reorganiza en torno a la vigilancia, corrección y conocimiento del individuo"
+        },
+        {
+          "id": "C",
+          "texto": "La superioridad moral irrefutable del sistema carcelario moderno frente a cualquier alternativa"
+        },
+        {
+          "id": "D",
+          "texto": "La abolición definitiva de toda forma de violencia física en la sociedad contemporánea"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La prisión funciona como hilo conductor porque permite observar la transición entre la exhibición pública del poder soberano y la racionalidad basada en la vigilancia y la corrección disciplinaria.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "La prisión funciona como hilo conductor porque permite observar la transición entre la exhibición pública del poder soberano y la racionalidad basada en la vigilancia y la corrección disciplinaria."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-009",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Técnicas disciplinarias",
+      "enunciado": "En el sistema penal moderno, el proceso judicial ya no se limita a juzgar el acto delictivo en sí, sino que se extiende hacia:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La evaluación moral y religiosa del arrepentimiento del pecador"
+        },
+        {
+          "id": "B",
+          "texto": "El examen, diagnóstico y conocimiento de la personalidad, peligrosidad y conducta del autor del hecho"
+        },
+        {
+          "id": "C",
+          "texto": "La imposición automática de un suplicio público en la plaza principal"
+        },
+        {
+          "id": "D",
+          "texto": "La aplicación de las leyes de la física newtoniana al cuerpo del acusado"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El sistema penal moderno desplaza su atención desde el mero acto cometido hacia el sujeto que lo cometió, indagando su personalidad, peligrosidad y posibilidad de corrección mediante saberes expertos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "El sistema penal moderno desplaza su atención desde el mero acto cometido hacia el sujeto que lo cometió, indagando su personalidad, peligrosidad y posibilidad de corrección mediante saberes expertos."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-010",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Concepción relacional, microfísica y saber-poder",
+      "enunciado": "Al comparar las perspectivas de Thomas Kuhn y Michel Foucault, una diferencia conceptual clave es que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Kuhn niega la existencia de la historia mientras que Foucault la defiende"
+        },
+        {
+          "id": "B",
+          "texto": "Kuhn analiza la transformación de paradigmas en comunidades científicas, mientras Foucault investiga la genealogía de saberes, instituciones y relaciones de poder"
+        },
+        {
+          "id": "C",
+          "texto": "Foucault sostiene que la ciencia avanza por revoluciones lineales y Kuhn niega el progreso"
+        },
+        {
+          "id": "D",
+          "texto": "Ambos autores utilizan exactamente los mismos conceptos de \"anomalía\" y \"crisis\""
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Mientras Kuhn se enfoca en la dinámica interna de los paradigmas y comunidades científicas, Foucault estudia cómo se constituyen los saberes sobre el ser humano en relación con instituciones y prácticas de poder.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "Mientras Kuhn se enfoca en la dinámica interna de los paradigmas y comunidades científicas, Foucault estudia cómo se constituyen los saberes sobre el ser humano en relación con instituciones y prácticas de poder."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-011",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Genealogía y transformación del castigo",
+      "enunciado": "La oposición entre la figura medieval del \"pecador\" y la figura moderna del \"delincuente\" sirve didácticamente para ilustrar:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que en la Edad Media no existía ningún tipo de ley o sistema jurídico"
+        },
+        {
+          "id": "B",
+          "texto": "Un cambio histórico en la forma de definir la falta, legitimar el castigo y producir conocimiento sobre el autor"
+        },
+        {
+          "id": "C",
+          "texto": "La desaparición total de la religión en la época contemporánea"
+        },
+        {
+          "id": "D",
+          "texto": "Que la criminología moderna es idéntica a la teología medieval"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La distinción esquemática ilustra la transformación en los modos de definir la transgresión (falta moral/religiosa vs. delito jurídico) y la clase de verdad que se busca producir sobre el sancionado.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "La distinción esquemática ilustra la transformación en los modos de definir la transgresión (falta moral/religiosa vs. delito jurídico) y la clase de verdad que se busca producir sobre el sancionado."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-012",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Ciencias humanas y modernidad política",
+      "enunciado": "En el esquema del régimen medieval de cristiandad presentado en el texto, una falta grave (como matar) se interpretaba prioritariamente como:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Un incumplimiento de un contrato laboral de fábrica"
+        },
+        {
+          "id": "B",
+          "texto": "Una violación de un mandamiento religioso que ubicaba al autor en la condición de pecador"
+        },
+        {
+          "id": "C",
+          "texto": "Una anomalía estadística dentro de una curva de distribución normal"
+        },
+        {
+          "id": "D",
+          "texto": "Un fallo psicológico derivado de un diagnóstico criminológico previo"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "En la matriz didáctica del régimen de cristiandad, las acciones transgresoras se comprendían dentro de una economía moral/religiosa de culpa, mandato y pecado.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "En la matriz didáctica del régimen de cristiandad, las acciones transgresoras se comprendían dentro de una economía moral/religiosa de culpa, mandato y pecado."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-013",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Genealogía y transformación del castigo",
+      "enunciado": "En el régimen del suplicio, el objetivo central de infligir sufrimiento público sobre el cuerpo del condenado era:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Readaptar laboralmente al individuo para que ingrese rápidamente a la fábrica"
+        },
+        {
+          "id": "B",
+          "texto": "Manifestar de manera visible y ritualizada la fuerza del poder soberano y restablecer su autoridad"
+        },
+        {
+          "id": "C",
+          "texto": "Recopilar datos científicos para publicar en expedientes criminológicos"
+        },
+        {
+          "id": "D",
+          "texto": "Ocultar el castigo de la mirada de la población para evitar conmociones sociales"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El suplicio corporal funcionaba como una escenificación ritualizada en la que el dolor físico manifestaba públicamente la victoria del poder soberano desafiado.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "El suplicio corporal funcionaba como una escenificación ritualizada en la que el dolor físico manifestaba públicamente la victoria del poder soberano desafiado."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-014",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Técnicas disciplinarias",
+      "enunciado": "¿Cuál de las siguientes opciones describe una característica propia del suplicio corporal según Foucault?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Se trata de un control invisible, continuo y personalizado sobre la psique"
+        },
+        {
+          "id": "B",
+          "texto": "Constituye un espectáculo público y ritualizado que hace visible el dolor en el cuerpo del transgresor"
+        },
+        {
+          "id": "C",
+          "texto": "Utiliza boletines y exámenes escolares para evaluar el rendimiento"
+        },
+        {
+          "id": "D",
+          "texto": "Busca la reforma interna del individuo mediante el trabajo disciplinado y silencioso"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El suplicio se define por causar sufrimiento intenso en el cuerpo expuesto públicamente como espectáculo del poder del soberano.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "El suplicio se define por causar sufrimiento intenso en el cuerpo expuesto públicamente como espectáculo del poder del soberano."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-015",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Genealogía y transformación del castigo",
+      "enunciado": "Foucault se refiere al cuerpo en la lógica del suplicio como una \"superficie de inscripción del poder\" porque:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Sobre él se imprime de forma visible, mediante la marca o el sufrimiento, la victoria de la autoridad"
+        },
+        {
+          "id": "B",
+          "texto": "En él se aplican pruebas escritas para medir el coeficiente intelectual"
+        },
+        {
+          "id": "C",
+          "texto": "Se lo viste con uniformes estandarizados en las instituciones escolares"
+        },
+        {
+          "id": "D",
+          "texto": "Sirve como soporte para tomar la temperatura corporal y determinar enfermedades"
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "En la economía punitiva del suplicio, el cuerpo es el lugar visible donde se ejercen el dolor y la marca para manifestar la fuerza de la sanción soberana.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "En la economía punitiva del suplicio, el cuerpo es el lugar visible donde se ejercen el dolor y la marca para manifestar la fuerza de la sanción soberana."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-016",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Panoptismo y visibilidad",
+      "enunciado": "En el contexto de las reformas penales e ilustradas, el uso de la guillotina ejemplifica una ambivalencia debido a que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Aumentó la crueldad del suplicio haciéndolo más lento y doloroso"
+        },
+        {
+          "id": "B",
+          "texto": "Aunque redujo el sufrimiento físico prolongado, mantuvo la manifestación de la potestad estatal de matar"
+        },
+        {
+          "id": "C",
+          "texto": "Suprimió por completo la pena de muerte en toda Europa"
+        },
+        {
+          "id": "D",
+          "texto": "Fue el primer instrumento utilizado para la vigilancia panóptica en las prisiones"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La guillotina muestra que reducir el sufrimiento visible o inmediato no elimina por sí solo la potestad punitiva de ejecutar, sino que transforma sus técnicas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "La guillotina muestra que reducir el sufrimiento visible o inmediato no elimina por sí solo la potestad punitiva de ejecutar, sino que transforma sus técnicas."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-017",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Técnicas disciplinarias",
+      "enunciado": "El proceso histórico de la Modernidad analizado por Foucault abarca transformaciones asociadas a:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El estancamiento de la vida urbana y el retorno a la economía feudal"
+        },
+        {
+          "id": "B",
+          "texto": "La Ilustración, las revoluciones políticas, la industrialización y la expansión de sistemas burocráticos"
+        },
+        {
+          "id": "C",
+          "texto": "La consolidación exclusiva de la Iglesia como único centro de administración social"
+        },
+        {
+          "id": "D",
+          "texto": "La eliminación de toda forma de examen o registro institucional"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La Modernidad en este marco se articula con la Ilustración, el desarrollo industrial, la reorganización urbana y la expansión de formas burocráticas y disciplinarias.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "La Modernidad en este marco se articula con la Ilustración, el desarrollo industrial, la reorganización urbana y la expansión de formas burocráticas y disciplinarias."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-018",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Genealogía y transformación del castigo",
+      "enunciado": "La expansión de la industrialización, las ciudades y los ejércitos en la Modernidad favoreció el desarrollo de:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Prácticas de castigo exclusivamente aleatorias e impredecibles"
+        },
+        {
+          "id": "B",
+          "texto": "Técnicas para coordinar grandes masas mediante horarios, reglamentos, distribución espacial y registros"
+        },
+        {
+          "id": "C",
+          "texto": "El abandono total de la medición del tiempo y de la evaluación del rendimiento"
+        },
+        {
+          "id": "D",
+          "texto": "La desaparición de las instituciones escolares y hospitalarias"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La coordinación de grandes poblaciones en la era industrial impulsó mecanismos de distribución espacial, control del tiempo y evaluación sistemática de conductas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "La coordinación de grandes poblaciones en la era industrial impulsó mecanismos de distribución espacial, control del tiempo y evaluación sistemática de conductas."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-019",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Técnicas disciplinarias",
+      "enunciado": "El cambio en la racionalidad penal moderna implica que la prisión no busca simplemente aislar al detenido, sino que pretende:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Multiplicar las torturas públicas en las plazas de la ciudad"
+        },
+        {
+          "id": "B",
+          "texto": "Intervenir sobre el individuo para corregir su conducta, normalizarlo y observar sus hábitos"
+        },
+        {
+          "id": "C",
+          "texto": "Perdonar incondicionalmente todos los delitos mediante rituales religiosos"
+        },
+        {
+          "id": "D",
+          "texto": "Eliminar todo tipo de leyes penales escritas"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La prisión moderna adopta una función disciplinaria: no solo retiene, sino que procura transformar hábitos, regular conductas y evaluar la adaptación a las normas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "La prisión moderna adopta una función disciplinaria: no solo retiene, sino que procura transformar hábitos, regular conductas y evaluar la adaptación a las normas."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-020",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Genealogía y transformación del castigo",
+      "enunciado": "La fórmula de que en el sistema penal moderno \"se castiga el alma y no el cuerpo\" significa conceptualmente que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El cuerpo ya no sufre restricciones materiales ni encierro en la prisión"
+        },
+        {
+          "id": "B",
+          "texto": "El objetivo penal se desplaza hacia la interioridad del sujeto (hábitos, personalidad, conducta) para corregirlo y examinarlo"
+        },
+        {
+          "id": "C",
+          "texto": "Las prisiones modernas son administradas exclusivamente por sacerdotes"
+        },
+        {
+          "id": "D",
+          "texto": "El delito pasa a ser considerado un pecado metafísico incorregible"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El 'castigo del alma' alude al desplazamiento del objetivo punitivo: de la destrucción o dolor del cuerpo físico a la modificación y examen de la personalidad, hábitos y conducta.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "El 'castigo del alma' alude al desplazamiento del objetivo punitivo: de la destrucción o dolor del cuerpo físico a la modificación y examen de la personalidad, hábitos y conducta."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-021",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Técnicas disciplinarias",
+      "enunciado": "En el régimen penal disciplinario, la intervención de disciplinas como la psiquiatría y la criminología permite responder a preguntas como:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "\"¿Qué juramento ante Dios rompió el pecador?\""
+        },
+        {
+          "id": "B",
+          "texto": "\"¿Qué tipo de individuo es el autor, cuál es su peligrosidad y cuál es su posibilidad de rehabilitación?\""
+        },
+        {
+          "id": "C",
+          "texto": "\"¿Cuál es la masa exacta del cuerpo en caída libre?\""
+        },
+        {
+          "id": "D",
+          "texto": "\"¿Qué rey firmó la cédula real en el siglo XII?\""
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Los saberes expertos introducen interrogantes centrados en el diagnóstico de la persona: peligrosidad, salud mental, motivaciones e idoneidad para la corrección.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "Los saberes expertos introducen interrogantes centrados en el diagnóstico de la persona: peligrosidad, salud mental, motivaciones e idoneidad para la corrección."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-022",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Panoptismo y visibilidad",
+      "enunciado": "El modelo del Panóptico de Bentham se basa esencialmente en una asimetría de la mirada en la cual:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El vigilado puede observar constantemente al vigilante pero no a otros detenidos"
+        },
+        {
+          "id": "B",
+          "texto": "El vigilante puede observar a los internos, mientras que estos no pueden saber con certeza cuándo son observados"
+        },
+        {
+          "id": "C",
+          "texto": "Nadie puede ver a nadie dentro de la estructura edilicia"
+        },
+        {
+          "id": "D",
+          "texto": "Todos los prisioneros se vigilan mutuamente en igualdad de condiciones"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El principio panóptico establece que el vigilante tiene visibilidad unilateral y el interno vive en la incertidumbre de no saber cuándo está siendo inspeccionado.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "El principio panóptico establece que el vigilante tiene visibilidad unilateral y el interno vive en la incertidumbre de no saber cuándo está siendo inspeccionado."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-023",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Panoptismo y visibilidad",
+      "enunciado": "La consecuencia principal de la incertidumbre creada por el dispositivo panóptico sobre el individuo es que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Provoca una rebelión violenta inmediata e inevitable en el establecimiento"
+        },
+        {
+          "id": "B",
+          "texto": "El sujeto interioriza la vigilancia y regula su propia conducta como si fuera observado permanentemente"
+        },
+        {
+          "id": "C",
+          "texto": "El individuo pierde completamente la capacidad de moverse dentro de su celda"
+        },
+        {
+          "id": "D",
+          "texto": "Genera la ilusión de que el espacio está completamente deshabitado"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Al no poder confirmar la presencia del vigilante en cada momento, el individuo asume la posibilidad de la mirada e interioriza la norma mediante el autocontrol.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "Al no poder confirmar la presencia del vigilante en cada momento, el individuo asume la posibilidad de la mirada e interioriza la norma mediante el autocontrol."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-024",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Panoptismo y visibilidad",
+      "enunciado": "Al analizar el principio del Panóptico, Foucault aclara que este no debe interpretarse como:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Un esquema de visibilidad asimétrica aplicable a distintas instituciones"
+        },
+        {
+          "id": "B",
+          "texto": "Una afirmación literal de que existe un vigilante omnisciente que observa a todos en cada segundo"
+        },
+        {
+          "id": "C",
+          "texto": "Una tecnología de poder que fomenta el autocontrol"
+        },
+        {
+          "id": "D",
+          "texto": "Un diagrama de la sociedad disciplinaria"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El panóptico es un diagrama analítico de poder y visibilidad; no presupone una mirada omnisciente e infalible que controle literalmente cada segundo a todos los individuos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "El panóptico es un diagrama analítico de poder y visibilidad; no presupone una mirada omnisciente e infalible que controle literalmente cada segundo a todos los individuos."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-025",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Técnicas disciplinarias",
+      "enunciado": "Una \"sociedad disciplinaria\" busca la formación de \"cuerpos dóciles\", lo cual implica:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Destruir físicamente las habilidades corporales de los trabajadores"
+        },
+        {
+          "id": "B",
+          "texto": "Aumentar la utilidad y eficiencia del cuerpo mientras se vuelve su conducta más previsible y controlable"
+        },
+        {
+          "id": "C",
+          "texto": "Liberar al cuerpo de todo tipo de horario, espacio u organización temporal"
+        },
+        {
+          "id": "D",
+          "texto": "Impedir que las personas aprendan profesiones o técnicas útiles"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Los cuerpos dóciles son aquellos cuyas aptitudes productivas o capacidades se optimizan mientras que sus comportamientos se tornan obedientes y previsibles.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "Los cuerpos dóciles son aquellos cuyas aptitudes productivas o capacidades se optimizan mientras que sus comportamientos se tornan obedientes y previsibles."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-026",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Panoptismo y visibilidad",
+      "enunciado": "Entre las técnicas disciplinarias fundamentales enumeradas en el texto se encuentran:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El aislamiento contemplativo, la confesión religiosa obligatoria y el perdón soberano"
+        },
+        {
+          "id": "B",
+          "texto": "La distribución espacial, la regulación temporal, la vigilancia jerárquica, la sanción normalizadora y el examen"
+        },
+        {
+          "id": "C",
+          "texto": "La consulta popular, la votación secreta y la apelación judicial directa"
+        },
+        {
+          "id": "D",
+          "texto": "La improvisación de horarios y el uso libre y sin registros de los espacios"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Las tecnologías de poder disciplinario incluyen la distribución espacial, la regulación del tiempo, los ejercicios, la vigilancia jerárquica, la sanción normalizadora y el examen.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "Las tecnologías de poder disciplinario incluyen la distribución espacial, la regulación del tiempo, los ejercicios, la vigilancia jerárquica, la sanción normalizadora y el examen."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-027",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Panoptismo y visibilidad",
+      "enunciado": "En el marco de las tecnologías disciplinarias, el \"examen\" es una técnica clave porque:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Sustituye el uso de cualquier documento o expediente escrito"
+        },
+        {
+          "id": "B",
+          "texto": "Combina la vigilancia jerárquica con el juicio normalizador, convirtiendo al individuo en un \"caso\" documentado"
+        },
+        {
+          "id": "C",
+          "texto": "Es un procedimiento que se aplica únicamente en las prisiones de máxima seguridad"
+        },
+        {
+          "id": "D",
+          "texto": "Garantiza que todos los evaluados obtengan siempre el mismo resultado cuantitativo"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El examen articula la inspección con la evaluación de estándares, permitiendo registrar la información individual e inscribir a la persona como un caso en un expediente.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "El examen articula la inspección con la evaluación de estándares, permitiendo registrar la información individual e inscribir a la persona como un caso en un expediente."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-028",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Concepción relacional, microfísica y saber-poder",
+      "enunciado": "En *Historia de la sexualidad*, Foucault sostiene que la Modernidad no se caracterizó únicamente por silenciar el sexo, sino por:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Prohibir de manera absoluta todo estudio médico o jurídico sobre el cuerpo"
+        },
+        {
+          "id": "B",
+          "texto": "Multiplicar discursos expertos que convirtieron a la sexualidad en objeto de saber, verdad y clasificación de las personas"
+        },
+        {
+          "id": "C",
+          "texto": "Promover la libertad sexual sin ningún tipo de norma o categoría discursiva"
+        },
+        {
+          "id": "D",
+          "texto": "Eliminar la distinción entre normalidad y desviación en el campo de la salud"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Foucault cuestiona la hipótesis represiva mostrando que la Modernidad multiplicó discursos médicos, psicológicos y jurídicos sobre el sexo para clasificar e intervenir sobre las conductas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "Foucault cuestiona la hipótesis represiva mostrando que la Modernidad multiplicó discursos médicos, psicológicos y jurídicos sobre el sexo para clasificar e intervenir sobre las conductas."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-029",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Genealogía y transformación del castigo",
+      "enunciado": "Frente al relato humanista tradicional que interpreta la disminución de los suplicios como un mero progreso moral, la crítica de Foucault plantea que:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La suavización de las penas responde a una estrategia de \"castigar mejor\", volviendo el control más fino, continuo y eficaz"
+        },
+        {
+          "id": "B",
+          "texto": "El cambio penal demuestra que las prisiones modernas no ejercen ningún tipo de poder"
+        },
+        {
+          "id": "C",
+          "texto": "Las sociedades modernas son exactamente igual de crueles y espectaculares que las medievales"
+        },
+        {
+          "id": "D",
+          "texto": "Las reformas penales fueron un fracaso total porque aumentaron los suplicios públicos"
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La disminución de la crueldad espectacular no implica la atenuación del poder, sino la adopción de una tecnología de control más sutil, continua y extendida ('castigar mejor').",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "La disminución de la crueldad espectacular no implica la atenuación del poder, sino la adopción de una tecnología de control más sutil, continua y extendida ('castigar mejor')."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-030",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Genealogía y transformación del castigo",
+      "enunciado": "Al comparar la perspectiva de Michel Foucault con la de Ian Hacking, este último aporta el concepto específico de:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Paradigma y ciencia normal"
+        },
+        {
+          "id": "B",
+          "texto": "Efectos de bucle (*looping effects*), que explica cómo las personas responden y modifican las clasificaciones científicas que se aplican sobre ellas"
+        },
+        {
+          "id": "C",
+          "texto": "Suplicio corporal y espectáculo público del poder soberano"
+        },
+        {
+          "id": "D",
+          "texto": "Inconmensurabilidad entre marcos teóricos rivales"
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Ian Hacking complementa el análisis introduciendo la noción de 'efectos de bucle', donde las personas clasificadas reaccionan modificando las propias categorías que los describen.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación institucional o histórica permite comprender esta consigna?",
+          "respuesta": "Ian Hacking complementa el análisis introduciendo la noción de 'efectos de bucle', donde las personas clasificadas reaccionan modificando las propias categorías que los describen."
+        },
+        {
+          "pregunta": "¿Qué reducción frecuente conviene evitar?",
+          "respuesta": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-031",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Ciencias humanas y modernidad política",
+      "enunciado": "¿Qué tesis expresa mejor la relación entre las ciencias humanas y la organización política moderna en Foucault?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Las ciencias humanas surgieron aisladas de las instituciones y luego fueron usadas accidentalmente por el Estado."
+        },
+        {
+          "id": "B",
+          "texto": "La organización política moderna y las ciencias humanas se constituyen en una relación histórica recíproca: los saberes permiten administrar individuos y las instituciones producen objetos de conocimiento."
+        },
+        {
+          "id": "C",
+          "texto": "Las ciencias humanas son neutrales y exteriores a las prácticas de gobierno."
+        },
+        {
+          "id": "D",
+          "texto": "Las ciencias humanas solo limitan el poder del Estado."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Foucault analiza cómo las formas modernas de gobierno necesitan conocer, registrar, comparar y clasificar a individuos y poblaciones. Las instituciones producen información y, a su vez, los saberes permiten nuevas intervenciones. La relación no es una causalidad simple ni unilateral.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué significa que la relación sea recíproca?",
+          "respuesta": "Las instituciones generan procedimientos y datos sobre individuos; esos saberes permiten organizar nuevas prácticas de administración, corrección y regulación."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-032",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Ciencias humanas y modernidad política",
+      "enunciado": "Una escuela registra asistencia, rendimiento, conducta y antecedentes de cada estudiante. ¿Por qué esta práctica interesa a Foucault?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque representa un conocimiento completamente separado del poder."
+        },
+        {
+          "id": "B",
+          "texto": "Porque demuestra que toda información institucional es falsa."
+        },
+        {
+          "id": "C",
+          "texto": "Porque la documentación puede producir saber sobre individuos y, al mismo tiempo, hacer posible clasificarlos e intervenir sobre ellos."
+        },
+        {
+          "id": "D",
+          "texto": "Porque elimina la necesidad de normas."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "El registro no es solo una descripción neutral. Hace a los individuos comparables, identificables y susceptibles de decisiones institucionales. En esa práctica se articulan conocimiento y poder.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué un registro es una práctica de poder-saber?",
+          "respuesta": "Produce información que sirve para conocer, comparar y orientar intervenciones sobre quienes quedan documentados."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-033",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Ciencias humanas y modernidad política",
+      "enunciado": "¿Qué error presenta la afirmación de que las ciencias humanas observan hechos humanos desde una posición completamente exterior a las instituciones?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Ignora que los objetos, criterios y prácticas de observación se forman históricamente en redes institucionales y relaciones de poder."
+        },
+        {
+          "id": "B",
+          "texto": "Reconoce que se usan métodos de investigación."
+        },
+        {
+          "id": "C",
+          "texto": "Distingue correctamente la observación de la interpretación."
+        },
+        {
+          "id": "D",
+          "texto": "Admite que los individuos existen antes de ser estudiados."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Foucault pregunta por las condiciones históricas que permiten que ciertos comportamientos sean delimitados como objetos de saber. La observación está organizada por vocabularios, prácticas y mecanismos institucionales; no ocurre fuera de toda relación social.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Esto significa que los datos no existen?",
+          "respuesta": "No. Significa que debe estudiarse cómo se producen, registran, clasifican e interpretan los datos y qué efectos tienen esas prácticas."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-034",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Concepción relacional y productiva del poder",
+      "enunciado": "¿Cuál es la definición más adecuada del poder en la perspectiva foucaultiana?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Una propiedad exclusiva del Estado."
+        },
+        {
+          "id": "B",
+          "texto": "Una forma de violencia física ejercida por quien domina."
+        },
+        {
+          "id": "C",
+          "texto": "Una prohibición que siempre se opone al conocimiento."
+        },
+        {
+          "id": "D",
+          "texto": "El nombre de un conjunto de relaciones estratégicas que se ejercen en prácticas y vínculos sociales."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "El poder no es una cosa concentrada en un único actor. Se ejerce en relaciones móviles y estratégicas que atraviesan instituciones, vínculos y rutinas. El Estado importa, pero no agota el fenómeno.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué no basta con decir que el Estado posee el poder?",
+          "respuesta": "Porque las relaciones de poder también circulan en escuelas, hospitales, familias, lugares de trabajo y prácticas cotidianas."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-035",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Concepción relacional y productiva del poder",
+      "enunciado": "¿Qué significa que el poder sea productivo y no solamente represivo?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que únicamente prohíbe conductas."
+        },
+        {
+          "id": "B",
+          "texto": "Que también produce saberes, normas, hábitos, capacidades, categorías y formas de subjetividad."
+        },
+        {
+          "id": "C",
+          "texto": "Que elimina toda forma de coerción."
+        },
+        {
+          "id": "D",
+          "texto": "Que las personas crean el poder mediante decisiones individuales aisladas."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El poder limita algunas acciones, pero además organiza comportamientos, produce conocimientos, establece normas y configura formas de comprenderse. Su productividad es una dimensión central del análisis foucaultiano.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué «productivo» no significa necesariamente positivo?",
+          "respuesta": "Porque producir capacidades, saberes o identidades no equivale a beneficiar a todos; esos efectos también pueden normalizar, vigilar o someter."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-036",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Concepción relacional y productiva del poder",
+      "enunciado": "Una institución consigue que las personas ajusten sus comportamientos a una norma sin recurrir constantemente a la violencia física. ¿Qué permite comprender el análisis foucaultiano?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El poder solo aparece si hay castigo corporal."
+        },
+        {
+          "id": "B",
+          "texto": "La institución carece de poder porque no reprime."
+        },
+        {
+          "id": "C",
+          "texto": "El poder puede operar mediante normas, evaluación, observación y autocontrol, además de la coerción."
+        },
+        {
+          "id": "D",
+          "texto": "El conocimiento y el poder son esferas opuestas."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "El poder se ejerce mediante técnicas que orientan la conducta, organizan espacios y tiempos y establecen normalidades. La violencia física no es condición necesaria para que exista una relación de poder.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué diferencia hay entre poder y violencia?",
+          "respuesta": "La violencia puede ser una forma de ejercicio del poder, pero este también actúa organizando conductas y posibilidades mediante técnicas y normas."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-037",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Microfísica del poder y saber-poder",
+      "enunciado": "¿Qué expresa la noción de microfísica del poder?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que el poder se localiza exclusivamente en las leyes del Estado."
+        },
+        {
+          "id": "B",
+          "texto": "Que el poder solo existe en situaciones excepcionales."
+        },
+        {
+          "id": "C",
+          "texto": "Que las relaciones de poder son siempre visibles y violentas."
+        },
+        {
+          "id": "D",
+          "texto": "Que el poder se ejerce también en prácticas pequeñas y cotidianas, rutinas, instituciones y relaciones locales."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "La microfísica dirige la atención a mecanismos cotidianos: distribución de espacios, horarios, vigilancia, examen, registros y normas. El poder no se reduce a grandes decisiones estatales.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué se habla de una red de poder?",
+          "respuesta": "Porque los efectos se sostienen mediante múltiples prácticas e instituciones conectadas, no solo desde un centro único."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-038",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Microfísica del poder y saber-poder",
+      "enunciado": "En un hospital, el examen produce datos clínicos y también permite comparar al paciente con una norma y decidir tratamientos. ¿Qué relación ejemplifica?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La separación entre saber y poder."
+        },
+        {
+          "id": "B",
+          "texto": "La articulación poder-saber: producir conocimiento también puede habilitar intervenciones sobre las personas."
+        },
+        {
+          "id": "C",
+          "texto": "La inconmensurabilidad entre paradigmas."
+        },
+        {
+          "id": "D",
+          "texto": "El efecto de bucle de Hacking como explicación completa."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El examen es simultáneamente una práctica de conocimiento y un mecanismo de intervención. Los datos permiten describir al paciente, pero también clasificarlo, normalizarlo y decidir acciones sobre él.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿El análisis de poder-saber afirma que toda información es falsa?",
+          "respuesta": "No. Investiga las condiciones de producción, usos y efectos del conocimiento; no concluye que cada dato sea una mentira."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-039",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Panoptismo y visibilidad",
+      "enunciado": "¿En qué consiste la asimetría de la mirada en el Panóptico?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Los internos pueden observar permanentemente al vigilante, pero este no los ve."
+        },
+        {
+          "id": "B",
+          "texto": "Todos se observan mutuamente en igualdad de condiciones."
+        },
+        {
+          "id": "C",
+          "texto": "El vigilante puede observar a los internos, mientras estos no saben con certeza cuándo están siendo observados."
+        },
+        {
+          "id": "D",
+          "texto": "No existe vigilancia: cada persona se controla por voluntad espontánea."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "El dispositivo panóptico organiza una visibilidad asimétrica. Los internos son potencialmente visibles, pero no pueden comprobar cuándo ocurre la observación; esa incertidumbre produce efectos disciplinarios.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué la vigilancia no necesita ser continua para producir efectos?",
+          "respuesta": "Porque la posibilidad permanente de ser observado puede inducir a los individuos a regular su conducta por sí mismos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-040",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Panoptismo y visibilidad",
+      "enunciado": "¿Cuál es el efecto central de la incertidumbre panóptica sobre la conducta?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La interiorización de la vigilancia y el autocontrol del individuo."
+        },
+        {
+          "id": "B",
+          "texto": "La desaparición de toda norma."
+        },
+        {
+          "id": "C",
+          "texto": "La inversión de la relación entre vigilante e interno."
+        },
+        {
+          "id": "D",
+          "texto": "La eliminación de la observabilidad."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Como el individuo no sabe cuándo es observado, puede comportarse como si la vigilancia fuera constante. La técnica hace que el control sea parcialmente incorporado por el propio sujeto.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué significa que el poder se vuelva automático?",
+          "respuesta": "Que el dispositivo organiza conductas sin depender de la intervención permanente y visible de un vigilante en cada momento."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-041",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Panoptismo y visibilidad",
+      "enunciado": "¿Qué error aparece al interpretar el Panóptico como un edificio donde un guardia observa a todos en todo momento?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que confunde vigilancia con examen."
+        },
+        {
+          "id": "B",
+          "texto": "Que niega la existencia de instituciones disciplinarias."
+        },
+        {
+          "id": "C",
+          "texto": "Que supone que la visibilidad es simétrica."
+        },
+        {
+          "id": "D",
+          "texto": "Que toma literalmente el ejemplo y pierde el principio de visibilidad asimétrica e incertidumbre sobre la observación."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "El Panóptico funciona como un diagrama de poder: el punto decisivo es que los sujetos se saben potencialmente observables sin poder comprobar cuándo los miran, no la presencia constante de un guardia omnisciente.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Puede el principio panóptico extenderse fuera de la prisión?",
+          "respuesta": "Sí. Puede analizarse como principio de organización de la vigilancia y la visibilidad en instituciones modernas, no solo como diseño arquitectónico."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-042",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Técnicas disciplinarias",
+      "enunciado": "¿Qué combinación caracteriza las técnicas disciplinarias modernas?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Suplicio público, exhibición del cuerpo y ritual soberano exclusivamente."
+        },
+        {
+          "id": "B",
+          "texto": "Organización del espacio y del tiempo, vigilancia jerárquica, examen, documentación y sanción normalizadora."
+        },
+        {
+          "id": "C",
+          "texto": "Únicamente leyes generales y castigos excepcionales."
+        },
+        {
+          "id": "D",
+          "texto": "Ausencia de registros y de comparación entre individuos."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La disciplina individualiza y regula mediante la distribución espacial, los horarios, la vigilancia, el examen y la normalización. Estas técnicas hacen a los sujetos visibles, comparables y corregibles.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué las disciplinas organizan el espacio y el tiempo?",
+          "respuesta": "Porque permiten distribuir individuos, ordenar actividades, medir rendimientos y hacer más previsible y regulable la conducta."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-043",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Técnicas disciplinarias",
+      "enunciado": "¿Por qué el examen es una técnica central en el análisis de Foucault?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque combina vigilancia y juicio normalizador, y convierte al individuo en un caso documentado."
+        },
+        {
+          "id": "B",
+          "texto": "Porque elimina las relaciones de poder."
+        },
+        {
+          "id": "C",
+          "texto": "Porque solo mide conocimientos sin producir información institucional."
+        },
+        {
+          "id": "D",
+          "texto": "Porque sustituye toda observación por una percepción privada."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El examen reúne observación, evaluación y registro. Hace del individuo un objeto de conocimiento documentado y permite compararlo con normas, identificar diferencias y orientar correcciones.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué significa producir al individuo como «caso»?",
+          "respuesta": "Que la persona queda documentada mediante datos y evaluaciones que permiten describirla, compararla y decidir sobre ella."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-044",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Técnicas disciplinarias",
+      "enunciado": "¿Qué función cumple la documentación de los individuos en una institución disciplinaria?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Evitar cualquier comparación."
+        },
+        {
+          "id": "B",
+          "texto": "Garantizar que todos reciban el mismo trato sin evaluación."
+        },
+        {
+          "id": "C",
+          "texto": "Hacer visibles trayectorias y diferencias, registrar a cada sujeto y permitir intervenciones según normas."
+        },
+        {
+          "id": "D",
+          "texto": "Eliminar las categorías de normalidad y desviación."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Los registros individualizan y hacen comparables a los sujetos. La documentación no solo conserva información: posibilita decisiones, seguimiento, evaluación y corrección.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Cómo se enlaza documentación y normalización?",
+          "respuesta": "Los datos permiten ubicar a cada persona respecto de estándares y orientar medidas para corregir o gestionar desviaciones."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-045",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Técnicas disciplinarias",
+      "enunciado": "¿Qué caracteriza a la sanción normalizadora?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El castigo ritual que restaura públicamente la autoridad del soberano."
+        },
+        {
+          "id": "B",
+          "texto": "La evaluación y corrección de conductas según una norma, distinguiendo desempeños y desviaciones."
+        },
+        {
+          "id": "C",
+          "texto": "La ausencia de criterios compartidos."
+        },
+        {
+          "id": "D",
+          "texto": "La condena exclusiva de una infracción legal."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "La sanción normalizadora compara individuos con estándares y busca corregir diferencias o desviaciones. No se limita a castigar una transgresión jurídica; regula conductas y rendimientos cotidianos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿En qué se distingue de la sanción soberana?",
+          "respuesta": "La sanción normalizadora opera mediante evaluación continua y ajuste a una norma; el castigo soberano manifiesta la autoridad mediante una pena pública."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-046",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Técnicas disciplinarias",
+      "enunciado": "La distribución de alumnos por filas, el horario estricto, los exámenes y los informes de conducta se interpretan como:",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Técnicas disciplinarias que distribuyen, observan y normalizan individuos."
+        },
+        {
+          "id": "B",
+          "texto": "Una revolución científica."
+        },
+        {
+          "id": "C",
+          "texto": "Un ejemplo de clase indiferente."
+        },
+        {
+          "id": "D",
+          "texto": "Un procedimiento de verificación de leyes universales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El ejemplo reúne organización espacial y temporal, examen, registro y comparación normativa. Esas técnicas producen alumnos observables y regulables, aun sin violencia física.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué una escuela puede ser analizada como institución disciplinaria?",
+          "respuesta": "Porque organiza tiempos y espacios, registra conductas, compara rendimientos y aplica normas que orientan el comportamiento."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-047",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Genealogía y transformación del castigo",
+      "enunciado": "¿Qué busca la genealogía foucaultiana al estudiar las transformaciones del castigo?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Encontrar una causa única y universal de toda institución penal."
+        },
+        {
+          "id": "B",
+          "texto": "Demostrar que el castigo moderno desapareció."
+        },
+        {
+          "id": "C",
+          "texto": "Reconstruir las condiciones históricas, prácticas e instituciones que hicieron posible un modo de castigar y de conocer a los individuos."
+        },
+        {
+          "id": "D",
+          "texto": "Ordenar cronológicamente leyes sin analizar sus efectos."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La genealogía reconstruye la contingencia histórica de prácticas y saberes. No busca un origen único ni una evolución lineal inevitable, sino relaciones entre instituciones, técnicas y formas de poder.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué diferencia hay entre genealogía y una historia lineal del progreso?",
+          "respuesta": "La genealogía analiza discontinuidades, conflictos y estrategias históricas; no supone que cada transformación sea un progreso moral simple."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-048",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Genealogía y transformación del castigo",
+      "enunciado": "¿Qué función cumplía el suplicio público en el régimen de soberanía?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Producir estadísticas individuales para corregir conductas."
+        },
+        {
+          "id": "B",
+          "texto": "Manifestar sobre el cuerpo del condenado la fuerza y autoridad del poder soberano mediante un ritual público."
+        },
+        {
+          "id": "C",
+          "texto": "Estimular el autocontrol por incertidumbre de vigilancia."
+        },
+        {
+          "id": "D",
+          "texto": "Clasificar al individuo según un diagnóstico psicológico."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El suplicio hacía visible la potestad del soberano sobre el cuerpo del transgresor. El castigo público era un espectáculo ritualizado que buscaba restablecer la autoridad quebrantada.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué el cuerpo era una superficie de inscripción del poder?",
+          "respuesta": "Porque el castigo marcaba visiblemente el cuerpo y hacía presente, ante los espectadores, la victoria de la autoridad soberana."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-049",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Genealogía y transformación del castigo",
+      "enunciado": "¿Qué desplazamiento caracteriza la transformación moderna del castigo analizada por Foucault?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Del encierro a la desaparición completa del poder."
+        },
+        {
+          "id": "B",
+          "texto": "De la disciplina a la tortura pública."
+        },
+        {
+          "id": "C",
+          "texto": "Del castigo del cuerpo a la ausencia de intervención sobre el individuo."
+        },
+        {
+          "id": "D",
+          "texto": "Del suplicio público y la manifestación de soberanía hacia técnicas disciplinarias de encierro, vigilancia, examen y corrección."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "El foco se desplaza desde el espectáculo público del dolor corporal hacia la administración continua de individuos. La prisión y la disciplina buscan vigilar, conocer, corregir y normalizar.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿La transformación significa un progreso humanitario simple?",
+          "respuesta": "No. Foucault cuestiona esa lectura: la suavización del castigo puede significar un control más continuo, minucioso y eficaz, no la desaparición del poder."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-050",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Genealogía y transformación del castigo",
+      "enunciado": "¿Qué diferencia hay entre «infractor» y «delincuente» en el análisis del castigo moderno?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El infractor se vincula con el acto cometido y la norma transgredida; el delincuente se constituye como una figura individual sobre la que se producen saberes acerca de personalidad, peligrosidad y conducta."
+        },
+        {
+          "id": "B",
+          "texto": "Son sinónimos sin consecuencias históricas."
+        },
+        {
+          "id": "C",
+          "texto": "El delincuente solo existe en el régimen de suplicio."
+        },
+        {
+          "id": "D",
+          "texto": "El infractor es un diagnóstico médico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El sistema moderno no se limita a juzgar el acto. Extiende el examen hacia quién es el autor, cómo se comporta y qué peligrosidad o posibilidad de corrección se le atribuye. Así se produce la figura del delincuente.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué papel cumplen psiquiatría y criminología?",
+          "respuesta": "Contribuyen a producir saberes sobre la personalidad, peligrosidad y conducta del autor, ampliando el juicio más allá del hecho jurídico."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-051",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Genealogía y transformación del castigo",
+      "enunciado": "¿Por qué Foucault cuestiona la interpretación de que la disminución del suplicio fue simplemente una humanización del castigo?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Porque el castigo moderno deja de tener cualquier efecto sobre los individuos."
+        },
+        {
+          "id": "B",
+          "texto": "Porque las penas se vuelven idénticas a las medievales."
+        },
+        {
+          "id": "C",
+          "texto": "Porque el control puede volverse más fino, continuo y eficaz al centrarse en la vigilancia, la corrección y el conocimiento del individuo."
+        },
+        {
+          "id": "D",
+          "texto": "Porque la prisión elimina el poder estatal."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La transformación no implica desaparición del poder. Se modifican sus técnicas: el cuerpo deja de ser el centro del espectáculo y el individuo pasa a ser examinado, documentado y corregido de forma continua.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué significa la fórmula «castigar mejor»?",
+          "respuesta": "Que el castigo moderno puede reorganizar el control para hacerlo más regular, detallado y eficaz, en lugar de limitarse al sufrimiento público."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-052",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Genealogía y transformación del castigo",
+      "enunciado": "¿Qué explica la aparición de la figura del delincuente en el sistema penal moderno?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La sustitución del juicio sobre el acto por una atención exclusiva a la personalidad, conducta, peligrosidad y posible corrección del autor."
+        },
+        {
+          "id": "B",
+          "texto": "La desaparición de las disciplinas científicas."
+        },
+        {
+          "id": "C",
+          "texto": "El retorno al suplicio corporal como único castigo."
+        },
+        {
+          "id": "D",
+          "texto": "La conversión de toda infracción en una categoría natural inmutable."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El sistema penal moderno produce un objeto de saber más amplio que la infracción: el delincuente como individuo que debe conocerse, evaluarse y corregirse. Las disciplinas expertas participan de esa construcción.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué diferencia conviene conservar en un parcial?",
+          "respuesta": "Infractor remite al acto contrario a la norma; delincuente remite a la figura individualizada por saberes sobre su personalidad, peligrosidad y conducta."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-053",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Síntesis Foucault",
+      "enunciado": "¿Cuál de estas afirmaciones integra mejor poder, saber y disciplina?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El saber es neutral y las instituciones solo lo aplican."
+        },
+        {
+          "id": "B",
+          "texto": "La vigilancia y el examen producen información sobre individuos y, al mismo tiempo, los hacen comparables, normalizables e intervenibles."
+        },
+        {
+          "id": "C",
+          "texto": "El poder solo se ejerce mediante fuerza física estatal."
+        },
+        {
+          "id": "D",
+          "texto": "La documentación elimina la subjetividad y el poder."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Las técnicas disciplinarias producen datos y categorías al mismo tiempo que organizan la conducta. Esta articulación expresa la relación poder-saber y la microfísica del poder en instituciones cotidianas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué diferencia hay entre saber-poder y propaganda?",
+          "respuesta": "Saber-poder no significa que todo conocimiento sea mentira; significa que hay que estudiar sus condiciones de producción, sus usos y sus efectos institucionales."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-054",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Síntesis Foucault",
+      "enunciado": "¿Qué relación hay entre el Panóptico y la disciplina?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El Panóptico ilustra una organización de visibilidad asimétrica que puede inducir autocontrol, y la disciplina reúne técnicas más amplias de organización, examen y normalización."
+        },
+        {
+          "id": "B",
+          "texto": "El Panóptico elimina la necesidad de instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "La disciplina se limita a la arquitectura carcelaria."
+        },
+        {
+          "id": "D",
+          "texto": "Son conceptos sin relación."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "El Panóptico es un modelo de funcionamiento del poder disciplinario: la incertidumbre sobre la mirada lleva al sujeto a regular su propia conducta. La disciplina incluye además distribución del espacio, horarios, examen, documentación y sanción normalizadora.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué no debe reducirse toda disciplina al Panóptico?",
+          "respuesta": "Porque el Panóptico representa un principio de vigilancia y visibilidad, mientras la disciplina abarca un conjunto más amplio de técnicas institucionales."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-055",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Síntesis Foucault",
+      "enunciado": "Una reforma penal reduce la exhibición pública del dolor, pero multiplica informes, evaluaciones y vigilancia sobre la conducta del detenido. ¿Qué lectura corresponde?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que el poder desapareció porque ya no hay suplicio."
+        },
+        {
+          "id": "B",
+          "texto": "Que el castigo se volvió neutral y dejó de intervenir sobre el individuo."
+        },
+        {
+          "id": "C",
+          "texto": "Que se consolidaron técnicas disciplinarias que sustituyen el espectáculo soberano por observación y corrección continuas."
+        },
+        {
+          "id": "D",
+          "texto": "Que se trata de una clase indiferente."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La sustitución del suplicio por procedimientos disciplinarios cambia la modalidad del poder, no su desaparición. El individuo es observado, documentado y corregido bajo saberes e instituciones modernas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué cambio histórico resume el caso?",
+          "respuesta": "Del castigo público del cuerpo como manifestación de soberanía hacia técnicas de encierro, vigilancia, examen y normalización del individuo."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-056",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Panoptismo y autocontrol",
+      "enunciado": "En una institución, cada persona puede ser observada sin saber cuándo ocurre efectivamente la vigilancia. Con el tiempo, regula su conducta incluso cuando no ve a ningún supervisor. ¿Qué mecanismo describe mejor Foucault?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La vigilancia desaparece y es reemplazada por una obediencia espontánea sin relación con la institución."
+        },
+        {
+          "id": "B",
+          "texto": "La posibilidad permanente e incierta de vigilancia se interioriza y produce autocontrol."
+        },
+        {
+          "id": "C",
+          "texto": "El castigo soberano se vuelve más visible y depende de una ceremonia pública."
+        },
+        {
+          "id": "D",
+          "texto": "La institución obtiene obediencia únicamente mediante amenazas físicas ocasionales."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El panoptismo funciona mediante una asimetría de visibilidad y la posibilidad constante de ser observado. La incertidumbre sobre el momento de la vigilancia favorece que el individuo regule por sí mismo su conducta.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "El panoptismo funciona mediante una asimetría de visibilidad y la posibilidad constante de ser observado. La incertidumbre sobre el momento de la vigilancia favorece que el individuo regule por sí mismo su conducta."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-057",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Vigilancia y examen",
+      "enunciado": "Una escuela registra asistencia y movimientos, pero además realiza evaluaciones periódicas, compara resultados con normas y construye expedientes individuales. ¿Qué agrega el examen a la vigilancia?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La eliminación de toda observación jerárquica para permitir que cada alumno se evalúe libremente."
+        },
+        {
+          "id": "B",
+          "texto": "La sustitución de las normas por decisiones individuales sin comparación."
+        },
+        {
+          "id": "C",
+          "texto": "La simple acumulación de datos sin efectos sobre la clasificación de los individuos."
+        },
+        {
+          "id": "D",
+          "texto": "La articulación de observación, juicio normalizador y documentación que convierte a cada individuo en un caso."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "El examen no es solo mirar o vigilar: articula observación, comparación con una norma y registro documental. Así convierte a cada individuo en un caso susceptible de conocimiento e intervención.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "El examen no es solo mirar o vigilar: articula observación, comparación con una norma y registro documental. Así convierte a cada individuo en un caso susceptible de conocimiento e intervención."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-058",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Suplicio y disciplina",
+      "enunciado": "Una reforma elimina las ejecuciones públicas como espectáculo, pero extiende el encierro, la inspección cotidiana y los programas de corrección. ¿Qué interpretación evita una lectura simplista del cambio penal?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Se reorganizan las técnicas y los objetivos del poder: del castigo soberano exhibido hacia mecanismos disciplinarios de vigilancia y corrección."
+        },
+        {
+          "id": "B",
+          "texto": "El poder desaparece porque deja de ejercerse mediante dolor público."
+        },
+        {
+          "id": "C",
+          "texto": "La prisión representa necesariamente un progreso moral lineal y la desaparición de toda violencia."
+        },
+        {
+          "id": "D",
+          "texto": "Las nuevas técnicas son idénticas al suplicio porque toda forma de castigo tiene el mismo funcionamiento."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Foucault no presenta el cambio como una marcha lineal hacia una humanidad mayor. Analiza una transformación en las tecnologías del poder y en el modo de actuar sobre los cuerpos y las conductas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Foucault no presenta el cambio como una marcha lineal hacia una humanidad mayor. Analiza una transformación en las tecnologías del poder y en el modo de actuar sobre los cuerpos y las conductas."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-059",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Infractor y delincuente",
+      "enunciado": "Tras ingresar en prisión, una persona queda sometida a informes psicológicos, clasificaciones, antecedentes y evaluaciones de peligrosidad. ¿Qué permite comprender la distinción foucaultiana entre infractor y delincuente?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que la figura del delincuente es una esencia natural que la prisión descubre sin modificarla."
+        },
+        {
+          "id": "B",
+          "texto": "Que el acto jurídico y la personalidad del autor son conceptos equivalentes."
+        },
+        {
+          "id": "C",
+          "texto": "Que la institución penal no solo sanciona un acto jurídico: produce un objeto de saber e intervención alrededor de la vida y personalidad del individuo."
+        },
+        {
+          "id": "D",
+          "texto": "Que los saberes institucionales son necesariamente falsos por haber surgido en la prisión."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "El infractor remite al sujeto del acto ilegal; la figura del delincuente se construye mediante saberes y prácticas que reúnen historia, conducta y rasgos personales. Esto no significa que el delito sea inventado, sino que la institución produce una categoría específica de intervención.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "El infractor remite al sujeto del acto ilegal; la figura del delincuente se construye mediante saberes y prácticas que reúnen historia, conducta y rasgos personales. Esto no significa que el delito sea inventado, sino que la institución produce una categoría específica de intervención."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-foucault-060",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Michel Foucault",
+      "subtema": "Poder productivo y coexistencia",
+      "enunciado": "En un sistema penitenciario persisten castigos restrictivos, mientras se incorporan terapias, evaluaciones y programas de reinserción que clasifican a los internos. ¿Qué conclusión es más adecuada?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El poder actúa únicamente reprimiendo; los saberes producidos son externos a su funcionamiento."
+        },
+        {
+          "id": "B",
+          "texto": "Las técnicas punitivas y disciplinarias pueden coexistir; el poder también produce saberes, identidades y modos de conducta."
+        },
+        {
+          "id": "C",
+          "texto": "La incorporación de terapias demuestra que el castigo soberano desapareció por completo."
+        },
+        {
+          "id": "D",
+          "texto": "Toda práctica de clasificación genera necesariamente una liberación de los sujetos clasificados."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El poder no actúa únicamente prohibiendo o reprimiendo. Produce categorías, conocimientos y formas de subjetividad; además, una transformación histórica no exige que desaparezcan de inmediato las técnicas anteriores.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "El poder no actúa únicamente prohibiendo o reprimiendo. Produce categorías, conocimientos y formas de subjetividad; además, una transformación histórica no exige que desaparezcan de inmediato las técnicas anteriores."
+        }
+      ]
+    }
+  ],
+  "tarjetas": [
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "En el período genealógico, las obras centrales analizadas en el texto son 'La verdad y las formas jurídicas' (1973) y 'Vigilar y castigar. Nacimiento de la prisión' (1975)."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "La genealogía reconstruye las condiciones históricas contingentes, disputas y discontinuidades que hicieron posible que una práctica, clasificación o forma de saber llegue a parecer natural."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "La noción de saber-poder sostiene que los saberes producen efectos de intervención y clasificación, mientras que las relaciones de poder establecen las condiciones en que se generan discursos de autoridad."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "El término 'político' no remite a partidos o elecciones, sino a una transformación sustancial en las relaciones de poder y en las formas de observar, clasificar y administrar a las personas."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "Para Foucault, el poder no es algo que se posee de forma centralizada, sino una relación que se ejerce mediante prácticas, normas, rutinas e instituciones."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "El poder en Foucault es productivo porque no solo prohíbe, sino que genera modos de actuar, habilidades, hábitos, saberes e identidades socialmente reconocibles."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "Las ciencias humanas emergen en articulación con las transformaciones institucionales y penales que convierten al individuo en objeto de observación, examen y corrección."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "La prisión funciona como hilo conductor porque permite observar la transición entre la exhibición pública del poder soberano y la racionalidad basada en la vigilancia y la corrección disciplinaria."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "El sistema penal moderno desplaza su atención desde el mero acto cometido hacia el sujeto que lo cometió, indagando su personalidad, peligrosidad y posibilidad de corrección mediante saberes expertos."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "Mientras Kuhn se enfoca en la dinámica interna de los paradigmas y comunidades científicas, Foucault estudia cómo se constituyen los saberes sobre el ser humano en relación con instituciones y prácticas de poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "La distinción esquemática ilustra la transformación en los modos de definir la transgresión (falta moral/religiosa vs. delito jurídico) y la clase de verdad que se busca producir sobre el sancionado."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "En la matriz didáctica del régimen de cristiandad, las acciones transgresoras se comprendían dentro de una economía moral/religiosa de culpa, mandato y pecado."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "El suplicio corporal funcionaba como una escenificación ritualizada en la que el dolor físico manifestaba públicamente la victoria del poder soberano desafiado."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "El suplicio se define por causar sufrimiento intenso en el cuerpo expuesto públicamente como espectáculo del poder del soberano."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "En la economía punitiva del suplicio, el cuerpo es el lugar visible donde se ejercen el dolor y la marca para manifestar la fuerza de la sanción soberana."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "La guillotina muestra que reducir el sufrimiento visible o inmediato no elimina por sí solo la potestad punitiva de ejecutar, sino que transforma sus técnicas."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "La Modernidad en este marco se articula con la Ilustración, el desarrollo industrial, la reorganización urbana y la expansión de formas burocráticas y disciplinarias."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "La coordinación de grandes poblaciones en la era industrial impulsó mecanismos de distribución espacial, control del tiempo y evaluación sistemática de conductas."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "La prisión moderna adopta una función disciplinaria: no solo retiene, sino que procura transformar hábitos, regular conductas y evaluar la adaptación a las normas."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "El 'castigo del alma' alude al desplazamiento del objetivo punitivo: de la destrucción o dolor del cuerpo físico a la modificación y examen de la personalidad, hábitos y conducta."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "Los saberes expertos introducen interrogantes centrados en el diagnóstico de la persona: peligrosidad, salud mental, motivaciones e idoneidad para la corrección."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "El principio panóptico establece que el vigilante tiene visibilidad unilateral y el interno vive en la incertidumbre de no saber cuándo está siendo inspeccionado."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "Al no poder confirmar la presencia del vigilante en cada momento, el individuo asume la posibilidad de la mirada e interioriza la norma mediante el autocontrol."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "El panóptico es un diagrama analítico de poder y visibilidad; no presupone una mirada omnisciente e infalible que controle literalmente cada segundo a todos los individuos."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "Los cuerpos dóciles son aquellos cuyas aptitudes productivas o capacidades se optimizan mientras que sus comportamientos se tornan obedientes y previsibles."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "Las tecnologías de poder disciplinario incluyen la distribución espacial, la regulación del tiempo, los ejercicios, la vigilancia jerárquica, la sanción normalizadora y el examen."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "El examen articula la inspección con la evaluación de estándares, permitiendo registrar la información individual e inscribir a la persona como un caso en un expediente."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "Foucault cuestiona la hipótesis represiva mostrando que la Modernidad multiplicó discursos médicos, psicológicos y jurídicos sobre el sexo para clasificar e intervenir sobre las conductas."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "La disminución de la crueldad espectacular no implica la atenuación del poder, sino la adopción de una tecnología de control más sutil, continua y extendida ('castigar mejor')."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué relación institucional o histórica permite comprender esta consigna?",
+      "dorso": "Ian Hacking complementa el análisis introduciendo la noción de 'efectos de bucle', donde las personas clasificadas reaccionan modificando las propias categorías que los describen."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué reducción frecuente conviene evitar?",
+      "dorso": "No reducir el poder a la violencia estatal ni el conocimiento a una descripción exterior: hay que analizar las prácticas, instituciones y efectos que articulan saber y poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué significa que la relación sea recíproca?",
+      "dorso": "Las instituciones generan procedimientos y datos sobre individuos; esos saberes permiten organizar nuevas prácticas de administración, corrección y regulación."
+    },
+    {
+      "frente": "Michel Foucault · ¿Por qué un registro es una práctica de poder-saber?",
+      "dorso": "Produce información que sirve para conocer, comparar y orientar intervenciones sobre quienes quedan documentados."
+    },
+    {
+      "frente": "Michel Foucault · ¿Esto significa que los datos no existen?",
+      "dorso": "No. Significa que debe estudiarse cómo se producen, registran, clasifican e interpretan los datos y qué efectos tienen esas prácticas."
+    },
+    {
+      "frente": "Michel Foucault · ¿Por qué no basta con decir que el Estado posee el poder?",
+      "dorso": "Porque las relaciones de poder también circulan en escuelas, hospitales, familias, lugares de trabajo y prácticas cotidianas."
+    },
+    {
+      "frente": "Michel Foucault · ¿Por qué «productivo» no significa necesariamente positivo?",
+      "dorso": "Porque producir capacidades, saberes o identidades no equivale a beneficiar a todos; esos efectos también pueden normalizar, vigilar o someter."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué diferencia hay entre poder y violencia?",
+      "dorso": "La violencia puede ser una forma de ejercicio del poder, pero este también actúa organizando conductas y posibilidades mediante técnicas y normas."
+    },
+    {
+      "frente": "Michel Foucault · ¿Por qué se habla de una red de poder?",
+      "dorso": "Porque los efectos se sostienen mediante múltiples prácticas e instituciones conectadas, no solo desde un centro único."
+    },
+    {
+      "frente": "Michel Foucault · ¿El análisis de poder-saber afirma que toda información es falsa?",
+      "dorso": "No. Investiga las condiciones de producción, usos y efectos del conocimiento; no concluye que cada dato sea una mentira."
+    },
+    {
+      "frente": "Michel Foucault · ¿Por qué la vigilancia no necesita ser continua para producir efectos?",
+      "dorso": "Porque la posibilidad permanente de ser observado puede inducir a los individuos a regular su conducta por sí mismos."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué significa que el poder se vuelva automático?",
+      "dorso": "Que el dispositivo organiza conductas sin depender de la intervención permanente y visible de un vigilante en cada momento."
+    },
+    {
+      "frente": "Michel Foucault · ¿Puede el principio panóptico extenderse fuera de la prisión?",
+      "dorso": "Sí. Puede analizarse como principio de organización de la vigilancia y la visibilidad en instituciones modernas, no solo como diseño arquitectónico."
+    },
+    {
+      "frente": "Michel Foucault · ¿Por qué las disciplinas organizan el espacio y el tiempo?",
+      "dorso": "Porque permiten distribuir individuos, ordenar actividades, medir rendimientos y hacer más previsible y regulable la conducta."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué significa producir al individuo como «caso»?",
+      "dorso": "Que la persona queda documentada mediante datos y evaluaciones que permiten describirla, compararla y decidir sobre ella."
+    },
+    {
+      "frente": "Michel Foucault · ¿Cómo se enlaza documentación y normalización?",
+      "dorso": "Los datos permiten ubicar a cada persona respecto de estándares y orientar medidas para corregir o gestionar desviaciones."
+    },
+    {
+      "frente": "Michel Foucault · ¿En qué se distingue de la sanción soberana?",
+      "dorso": "La sanción normalizadora opera mediante evaluación continua y ajuste a una norma; el castigo soberano manifiesta la autoridad mediante una pena pública."
+    },
+    {
+      "frente": "Michel Foucault · ¿Por qué una escuela puede ser analizada como institución disciplinaria?",
+      "dorso": "Porque organiza tiempos y espacios, registra conductas, compara rendimientos y aplica normas que orientan el comportamiento."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué diferencia hay entre genealogía y una historia lineal del progreso?",
+      "dorso": "La genealogía analiza discontinuidades, conflictos y estrategias históricas; no supone que cada transformación sea un progreso moral simple."
+    },
+    {
+      "frente": "Michel Foucault · ¿Por qué el cuerpo era una superficie de inscripción del poder?",
+      "dorso": "Porque el castigo marcaba visiblemente el cuerpo y hacía presente, ante los espectadores, la victoria de la autoridad soberana."
+    },
+    {
+      "frente": "Michel Foucault · ¿La transformación significa un progreso humanitario simple?",
+      "dorso": "No. Foucault cuestiona esa lectura: la suavización del castigo puede significar un control más continuo, minucioso y eficaz, no la desaparición del poder."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué papel cumplen psiquiatría y criminología?",
+      "dorso": "Contribuyen a producir saberes sobre la personalidad, peligrosidad y conducta del autor, ampliando el juicio más allá del hecho jurídico."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué significa la fórmula «castigar mejor»?",
+      "dorso": "Que el castigo moderno puede reorganizar el control para hacerlo más regular, detallado y eficaz, en lugar de limitarse al sufrimiento público."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué diferencia conviene conservar en un parcial?",
+      "dorso": "Infractor remite al acto contrario a la norma; delincuente remite a la figura individualizada por saberes sobre su personalidad, peligrosidad y conducta."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué diferencia hay entre saber-poder y propaganda?",
+      "dorso": "Saber-poder no significa que todo conocimiento sea mentira; significa que hay que estudiar sus condiciones de producción, sus usos y sus efectos institucionales."
+    },
+    {
+      "frente": "Michel Foucault · ¿Por qué no debe reducirse toda disciplina al Panóptico?",
+      "dorso": "Porque el Panóptico representa un principio de vigilancia y visibilidad, mientras la disciplina abarca un conjunto más amplio de técnicas institucionales."
+    },
+    {
+      "frente": "Michel Foucault · ¿Qué cambio histórico resume el caso?",
+      "dorso": "Del castigo público del cuerpo como manifestación de soberanía hacia técnicas de encierro, vigilancia, examen y normalización del individuo."
+    }
+  ]
+}

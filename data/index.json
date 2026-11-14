@@ -281,6 +281,124 @@
           "preguntas": 40
         }
       ]
+    },
+    {
+      "id": "ipc-2",
+      "nombre": "IPC para KATH",
+      "emoji": "📜",
+      "temas": [
+        {
+          "id": "ipc-2/01-popper",
+          "nombre": "Popper",
+          "archivo": "data/ipc-2/01-popper.json",
+          "preguntas": 31
+        },
+        {
+          "id": "ipc-2/02-foucault-anki",
+          "nombre": "Foucault (ANKI)",
+          "archivo": "data/ipc-2/02-foucault-anki.json",
+          "preguntas": 0,
+          "tarjetas": 25
+        },
+        {
+          "id": "ipc-2/03-kuhn",
+          "nombre": "Kuhn",
+          "archivo": "data/ipc-2/03-kuhn.json",
+          "preguntas": 30
+        },
+        {
+          "id": "ipc-2/04-popper-anki",
+          "nombre": "Popper (ANKI)",
+          "archivo": "data/ipc-2/04-popper-anki.json",
+          "preguntas": 0,
+          "tarjetas": 25
+        },
+        {
+          "id": "ipc-2/05-kuhn-anki",
+          "nombre": "Kuhn (ANKI)",
+          "archivo": "data/ipc-2/05-kuhn-anki.json",
+          "preguntas": 0,
+          "tarjetas": 25
+        },
+        {
+          "id": "ipc-2/06-hacking-anki",
+          "nombre": "Hacking (ANKI)",
+          "archivo": "data/ipc-2/06-hacking-anki.json",
+          "preguntas": 0,
+          "tarjetas": 25
+        },
+        {
+          "id": "ipc-2/07-hacking",
+          "nombre": "Hacking",
+          "archivo": "data/ipc-2/07-hacking.json",
+          "preguntas": 33
+        },
+        {
+          "id": "ipc-2/08-foucault",
+          "nombre": "Foucault",
+          "archivo": "data/ipc-2/08-foucault.json",
+          "preguntas": 30
+        },
+        {
+          "id": "ipc-2/09-hacking-conceptos",
+          "nombre": "Hacking: conceptos y distinciones",
+          "archivo": "data/ipc-2/09-hacking-conceptos.json",
+          "preguntas": 30
+        }
+      ],
+      "segundoParcial": {
+        "nombre": "Segundo Parcial",
+        "preguntas": 286,
+        "autores": [
+          {
+            "id": "ipc-p2-hacking",
+            "clave": "hacking",
+            "autor": "Ian Hacking",
+            "etiqueta": "Hacking",
+            "archivo": "data/ipc-segundo-parcial/hacking.json",
+            "preguntas": 62,
+            "tarjetas": 90
+          },
+          {
+            "id": "ipc-p2-popper",
+            "clave": "popper",
+            "autor": "Karl Popper",
+            "etiqueta": "Popper",
+            "archivo": "data/ipc-segundo-parcial/popper.json",
+            "preguntas": 62,
+            "tarjetas": 87
+          },
+          {
+            "id": "ipc-p2-foucault",
+            "clave": "foucault",
+            "autor": "Michel Foucault",
+            "etiqueta": "Foucault",
+            "archivo": "data/ipc-segundo-parcial/foucault.json",
+            "preguntas": 60,
+            "tarjetas": 85
+          },
+          {
+            "id": "ipc-p2-kuhn",
+            "clave": "kuhn",
+            "autor": "Thomas Kuhn",
+            "etiqueta": "Kuhn",
+            "archivo": "data/ipc-segundo-parcial/kuhn.json",
+            "preguntas": 79,
+            "tarjetas": 84
+          },
+          {
+            "id": "ipc-p2-integrador",
+            "clave": "integrador",
+            "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+            "etiqueta": "Integrador",
+            "archivo": "data/ipc-segundo-parcial/integrador.json",
+            "preguntas": 23,
+            "tarjetas": 18
+          }
+        ],
+        "tarjetas": 364
+      },
+      "color": "#B79DFF"
     }
   ]
 }

@@ -1,0 +1,864 @@
+{
+  "materia": "IPC",
+  "parcial": "Segundo Parcial",
+  "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+  "tema": "Módulo Integrador / Cruzado",
+  "preguntas": [
+    {
+      "id": "ipc-p2-integrador-001",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: visibilidad y conocimiento",
+      "enunciado": "Una institución enseña formas de observar y clasificar, establece qué conductas considera normales y produce disposiciones que sus miembros incorporan. A la vez, una comunidad científica organiza lo visible mediante un paradigma y sus ejemplares. ¿Qué lectura integra mejor a Kuhn, Foucault y Bourdieu?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La observación es neutral y las instituciones solo transmiten hechos ya clasificados."
+        },
+        {
+          "id": "B",
+          "texto": "Los tres autores proponen exactamente la misma teoría y utilizan los mismos conceptos."
+        },
+        {
+          "id": "C",
+          "texto": "Los marcos científicos y las prácticas institucionales organizan históricamente la visibilidad; Bourdieu permite analizar cómo esquemas de clasificación se incorporan en el habitus dentro de un campo."
+        },
+        {
+          "id": "D",
+          "texto": "Si la observación es histórica, los hechos materiales no existen."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "El cruce propone una articulación limitada: Kuhn estudia cómo el paradigma y la formación orientan la observación científica; Foucault analiza cómo instituciones y relaciones de saber-poder hacen visibles, clasificables y normalizables ciertas conductas; Bourdieu permite pensar la incorporación de esquemas de percepción y clasificación en el habitus, dentro de un campo. No son teorías idénticas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué diferencia conceptual debe conservarse entre los tres autores?",
+          "respuesta": "Kuhn analiza matrices disciplinares y cambios paradigmáticos; Foucault reconstruye prácticas, instituciones y relaciones de poder-saber; Bourdieu estudia disposiciones incorporadas y campos sociales. Su articulación no borra sus objetos específicos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-002",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: diferencias de enfoque",
+      "enunciado": "¿Qué pregunta distingue mejor el enfoque de Kuhn del de Foucault en el módulo integrador?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Kuhn estudia la transformación de paradigmas en comunidades científicas; Foucault reconstruye cómo prácticas e instituciones hacen posibles saberes, clasificaciones y formas de intervención."
+        },
+        {
+          "id": "B",
+          "texto": "Kuhn estudia exclusivamente el Estado y Foucault solo las leyes de la física."
+        },
+        {
+          "id": "C",
+          "texto": "Ambos estudian únicamente la psicología individual del investigador."
+        },
+        {
+          "id": "D",
+          "texto": "Foucault analiza la matriz disciplinar y Kuhn el Panóptico."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Kuhn se concentra en la organización histórica del trabajo científico mediante paradigmas y comunidades; Foucault pregunta por las condiciones históricas e institucionales de producción del saber y sus articulaciones con el poder.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿En qué puede relacionarse ambos enfoques?",
+          "respuesta": "Ambos permiten cuestionar una concepción de conocimiento desligada de prácticas y condiciones históricas, aunque analizan procesos diferentes."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-003",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: habitus y campo",
+      "enunciado": "¿Qué aporta el concepto de habitus de Bourdieu al análisis de la visibilidad?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Una ley científica universal que determina las observaciones."
+        },
+        {
+          "id": "B",
+          "texto": "Un conjunto de disposiciones incorporadas que orienta percepciones, clasificaciones y prácticas, formado mediante aprendizajes y experiencias sociales."
+        },
+        {
+          "id": "C",
+          "texto": "Una técnica disciplinaria idéntica al examen foucaultiano."
+        },
+        {
+          "id": "D",
+          "texto": "Una anomalía que pone en crisis a un paradigma."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El habitus permite pensar que los esquemas de percepción y clasificación no dependen solo de reglas explícitas. Se incorporan mediante prácticas y aprendizajes duraderos y orientan maneras de percibir, evaluar y actuar.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿El habitus es una regla consciente que cada sujeto decide aplicar?",
+          "respuesta": "No. Se refiere a disposiciones incorporadas que orientan la práctica, muchas veces sin formularse como reglas explícitas o decisiones deliberadas."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-004",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: habitus y campo",
+      "enunciado": "En una facultad, docentes y estudiantes comparten criterios sobre qué problemas merecen atención, qué formas de hablar son legítimas y qué producciones reciben reconocimiento. ¿Qué permite analizar la noción de campo?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Una percepción individual independiente de relaciones sociales."
+        },
+        {
+          "id": "B",
+          "texto": "Una matriz disciplinar científica en sentido exclusivo de Kuhn."
+        },
+        {
+          "id": "C",
+          "texto": "Una clasificación humana que produce un efecto de bucle necesariamente."
+        },
+        {
+          "id": "D",
+          "texto": "Un espacio social estructurado de posiciones, relaciones y disputas en torno a recursos y criterios de legitimidad."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "El campo permite analizar un espacio de relaciones entre posiciones y actores, con reglas, intereses y criterios de reconocimiento propios. En ese espacio se forman prácticas y disposiciones que orientan lo que se valora y se vuelve visible.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Cómo se relacionan habitus y campo?",
+          "respuesta": "El habitus reúne disposiciones incorporadas; el campo es el espacio relacional en el que esas disposiciones se forman, operan y encuentran límites u oportunidades."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-005",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: habitus y campo",
+      "enunciado": "¿Cuál es la diferencia entre habitus y campo?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El habitus refiere a disposiciones incorporadas; el campo, al espacio estructurado de relaciones y posiciones en el que los agentes actúan."
+        },
+        {
+          "id": "B",
+          "texto": "El habitus es el edificio institucional y el campo la percepción individual."
+        },
+        {
+          "id": "C",
+          "texto": "Ambos son sinónimos de paradigma."
+        },
+        {
+          "id": "D",
+          "texto": "El habitus es una técnica de vigilancia y el campo un tipo de castigo."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Bourdieu distingue las disposiciones prácticas incorporadas de la estructura relacional en la que se desenvuelven los agentes. No son sinónimos ni equivalen a las categorías de Kuhn o Foucault.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué no conviene reducir el habitus a una opinión individual?",
+          "respuesta": "Porque se forma socialmente mediante experiencias y aprendizajes duraderos, y orienta prácticas más allá de una decisión consciente aislada."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-006",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: visibilidad institucional",
+      "enunciado": "Una escuela dispone horarios, distribuye cuerpos en aulas, registra rendimientos y define conductas normales. ¿Qué dimensión del análisis foucaultiano aparece con mayor claridad?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La inconmensurabilidad de paradigmas."
+        },
+        {
+          "id": "B",
+          "texto": "La falsabilidad de una teoría."
+        },
+        {
+          "id": "C",
+          "texto": "Las técnicas disciplinarias que hacen visibles, comparables y regulables a los individuos."
+        },
+        {
+          "id": "D",
+          "texto": "El realismo de entidades experimentales."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La organización espacial y temporal, la documentación, la vigilancia y la normalización son técnicas disciplinarias. Producen información sobre las personas y permiten orientar intervenciones sobre ellas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Cómo puede conectarse este caso con Bourdieu?",
+          "respuesta": "Las prácticas escolares también contribuyen a formar disposiciones incorporadas y criterios de percepción, que pueden analizarse mediante habitus y campo."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-007",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: observación y normalización",
+      "enunciado": "¿Qué semejanza limitada puede establecerse entre la carga teórica de la observación en Kuhn y el análisis foucaultiano de la visibilidad?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Ambos afirman que no existen objetos materiales."
+        },
+        {
+          "id": "B",
+          "texto": "Ambos permiten analizar que lo que se observa y cómo se clasifica depende de marcos y prácticas históricas, aunque se ocupan de dimensiones distintas."
+        },
+        {
+          "id": "C",
+          "texto": "Ambos consideran que toda percepción es una experiencia privada infalible."
+        },
+        {
+          "id": "D",
+          "texto": "Ambos reducen el conocimiento a una decisión del Estado."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Kuhn muestra que conceptos, instrumentos y ejemplares orientan la observación científica; Foucault analiza cómo instituciones y técnicas de poder organizan la visibilidad y la clasificación de individuos. La relación es comparativa, no una identidad de teorías.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿En qué se diferencian esos mecanismos?",
+          "respuesta": "En Kuhn se trata de compromisos de una comunidad científica que orientan la observación; en Foucault, de prácticas institucionales y relaciones de poder que producen objetos de saber e intervención."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-008",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: hecho y mediación",
+      "enunciado": "Un estudiante concluye que, como la observación está condicionada por paradigmas, instituciones y habitus, los hechos materiales no existen. ¿Qué corrección corresponde?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La conclusión es correcta porque todo conocimiento es ficción."
+        },
+        {
+          "id": "B",
+          "texto": "Solo Foucault sostiene que no hay realidad material."
+        },
+        {
+          "id": "C",
+          "texto": "La existencia de mediaciones demuestra que todas las interpretaciones son igualmente válidas."
+        },
+        {
+          "id": "D",
+          "texto": "Que la observación e interpretación estén históricamente mediadas no implica que los objetos o hechos materiales no existan."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "El módulo integrador rechaza la mirada completamente neutral, pero también advierte contra el extremo opuesto. Los marcos y las prácticas orientan qué se ve y cómo se interpreta; eso no equivale a negar la existencia material de los objetos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué significa reconocer mediaciones sin negar la realidad?",
+          "respuesta": "Significa estudiar cómo se producen observaciones y clasificaciones y evaluar sus evidencias, sin concluir que los hechos son creados enteramente por el lenguaje o la institución."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-009",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: formación de la mirada",
+      "enunciado": "Dos investigadores interpretan un mismo registro de manera distinta porque aprendieron conceptos, instrumentos y ejemplares diferentes. ¿Cuál es la explicación más directamente kuhniana?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La matriz disciplinar orienta la observación y define qué problemas y soluciones resultan pertinentes."
+        },
+        {
+          "id": "B",
+          "texto": "El habitus explica por sí solo cualquier diferencia científica."
+        },
+        {
+          "id": "C",
+          "texto": "El poder soberano castiga a uno de los investigadores."
+        },
+        {
+          "id": "D",
+          "texto": "La diferencia demuestra una clase interactiva."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "La matriz disciplinar integra generalizaciones, valores, supuestos y ejemplares que orientan la práctica de una comunidad. La carga teórica de la observación explica por qué el mismo registro puede organizarse desde marcos distintos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué aporta Bourdieu como complemento, sin reemplazar a Kuhn?",
+          "respuesta": "Permite preguntar cómo disposiciones incorporadas y posiciones en un campo influyen en la práctica, el reconocimiento y la percepción de los agentes."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-010",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: institución y saber-poder",
+      "enunciado": "Una institución produce estadísticas sobre sus integrantes, compara sus desempeños con una norma y utiliza los datos para modificar sus conductas. ¿Qué concepto de Foucault explica mejor el proceso?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La pérdida kuhniana."
+        },
+        {
+          "id": "B",
+          "texto": "La inconmensurabilidad."
+        },
+        {
+          "id": "C",
+          "texto": "La articulación poder-saber y la microfísica del poder."
+        },
+        {
+          "id": "D",
+          "texto": "La falsabilidad."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "La institución produce saber al registrar y comparar, y ese conocimiento permite clasificar y conducir conductas. El poder no solo reprime: también produce información, normas y mecanismos de intervención.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Por qué no se debe concluir que los datos son falsos?",
+          "respuesta": "Porque el análisis investiga las condiciones de producción y los efectos del conocimiento; no demuestra automáticamente que la información sea falsa."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-011",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: clasificación incorporada",
+      "enunciado": "Una persona reconoce como «natural» una forma de clasificar que aprendió durante años en una institución. ¿Qué concepto de Bourdieu permite analizar esa incorporación?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El modus tollens."
+        },
+        {
+          "id": "B",
+          "texto": "El habitus."
+        },
+        {
+          "id": "C",
+          "texto": "La falsación."
+        },
+        {
+          "id": "D",
+          "texto": "La matriz disciplinar como concepto exclusivo."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "El habitus permite estudiar cómo disposiciones y esquemas de percepción se incorporan mediante aprendizajes y prácticas duraderas, y luego orientan acciones y clasificaciones.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué relación tiene esta idea con la visibilidad?",
+          "respuesta": "Los esquemas incorporados pueden orientar qué aspectos se perciben como relevantes, normales o desviados, sin que el sujeto tenga que formular conscientemente una regla."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-012",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: campo científico",
+      "enunciado": "¿Qué diferencia conviene conservar entre paradigma kuhniano y campo bourdieusiano?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Son conceptos intercambiables para nombrar cualquier institución."
+        },
+        {
+          "id": "B",
+          "texto": "El paradigma designa una técnica disciplinaria; el campo una ley universal."
+        },
+        {
+          "id": "C",
+          "texto": "El campo es una percepción neutral y el paradigma una preferencia personal."
+        },
+        {
+          "id": "D",
+          "texto": "El paradigma organiza compromisos y prácticas de una comunidad científica; el campo analiza un espacio de posiciones y relaciones sociales en el que se disputan legitimidades."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "La matriz disciplinar de Kuhn explica compromisos compartidos que estructuran la investigación; el campo de Bourdieu permite analizar posiciones, relaciones y disputas por reconocimiento y legitimidad. Pueden ponerse en diálogo, pero no se deben identificar.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Puede una comunidad científica estudiarse también como campo?",
+          "respuesta": "Sí, como extensión del análisis bourdieusiano de las relaciones y posiciones sociales, pero eso no elimina la especificidad epistemológica del paradigma en Kuhn."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-013",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: poder y disposiciones",
+      "enunciado": "¿Cómo se puede vincular la disciplina foucaultiana con el habitus de Bourdieu sin confundir ambos conceptos?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Las prácticas disciplinarias organizan cuerpos, tiempos y normas; el habitus permite analizar cómo ciertas disposiciones se incorporan y orientan prácticas posteriores."
+        },
+        {
+          "id": "B",
+          "texto": "El habitus es simplemente el nombre que Foucault da al Panóptico."
+        },
+        {
+          "id": "C",
+          "texto": "La disciplina es una percepción individual sin instituciones."
+        },
+        {
+          "id": "D",
+          "texto": "Ambos conceptos describen únicamente castigos físicos."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Foucault permite estudiar técnicas institucionales que distribuyen, observan y normalizan; Bourdieu aporta herramientas para analizar cómo esquemas y disposiciones se incorporan. Se pueden relacionar, pero sus conceptos responden a preguntas distintas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué pregunta se hace cada autor?",
+          "respuesta": "Foucault: cómo se ejercen relaciones de poder y se producen sujetos mediante prácticas; Bourdieu: cómo las disposiciones y posiciones sociales orientan la práctica."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-014",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: visibilidad y clasificación",
+      "enunciado": "En una institución, ciertas conductas se registran con frecuencia y otras quedan fuera de los formularios disponibles. ¿Qué permite analizar la comparación entre Foucault y Kuhn?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Que las conductas invisibles no existen."
+        },
+        {
+          "id": "B",
+          "texto": "Que toda clasificación es una opinión individual."
+        },
+        {
+          "id": "C",
+          "texto": "Que la visibilidad y la observación dependen de dispositivos, categorías y prácticas históricas, aunque los autores estudian ámbitos diferentes."
+        },
+        {
+          "id": "D",
+          "texto": "Que el fenómeno constituye necesariamente una falsación."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Foucault permite preguntar cómo las instituciones producen visibilidad y documentación; Kuhn permite analizar cómo los marcos conceptuales orientan qué se reconoce como fenómeno o problema. Ambos muestran mediaciones históricas, sin convertir toda omisión en inexistencia.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué cuidado metodológico exige el caso?",
+          "respuesta": "Distinguir entre el fenómeno, las categorías disponibles y los procedimientos que permiten registrarlo; la ausencia en un formulario no demuestra ausencia material."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-015",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: reconocimiento y legitimidad",
+      "enunciado": "Una comunidad académica considera ciertos temas dignos de investigación y otros irrelevantes, mientras sus integrantes han incorporado esas preferencias durante su formación. ¿Qué combinación conceptual es más adecuada?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Popper y el trilema de Fries únicamente."
+        },
+        {
+          "id": "B",
+          "texto": "Kuhn para los compromisos de la comunidad científica y Bourdieu para disposiciones y relaciones del campo que orientan el reconocimiento."
+        },
+        {
+          "id": "C",
+          "texto": "Hacking y la clasificación de Plutón como clase interactiva."
+        },
+        {
+          "id": "D",
+          "texto": "Foucault y el suplicio soberano únicamente."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Kuhn permite comprender cómo una matriz disciplinar delimita problemas y criterios; Bourdieu permite investigar cómo las disposiciones incorporadas y las posiciones en un campo influyen en el reconocimiento y la legitimidad de ciertos temas.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué aspecto no debe perderse al combinar ambos?",
+          "respuesta": "Kuhn analiza el funcionamiento y cambio de paradigmas; Bourdieu aporta un análisis sociológico de disposiciones, posiciones y disputas por legitimidad."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-016",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: observación y habitus",
+      "enunciado": "¿Qué diferencia existe entre la carga teórica de la observación en Kuhn y las disposiciones del habitus en Bourdieu?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "La carga teórica refiere a conceptos, instrumentos y ejemplares de una comunidad científica; el habitus a disposiciones incorporadas mediante experiencias y prácticas sociales."
+        },
+        {
+          "id": "B",
+          "texto": "Ambos son sinónimos exactos."
+        },
+        {
+          "id": "C",
+          "texto": "La carga teórica es un castigo y el habitus una categoría médica."
+        },
+        {
+          "id": "D",
+          "texto": "La primera niega la evidencia y el segundo niega la sociedad."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Kuhn analiza cómo los compromisos de una comunidad científica orientan la observación; Bourdieu explica cómo disposiciones socialmente incorporadas guían percepciones y prácticas. Se relacionan al estudiar la formación de la mirada, pero no son equivalentes.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué tienen en común sin ser idénticos?",
+          "respuesta": "Ambos permiten cuestionar una percepción completamente independiente de marcos y aprendizajes; difieren en el objeto y nivel de análisis."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-017",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: síntesis de autores",
+      "enunciado": "¿Cuál es la comparación más rigurosa entre los tres autores del módulo?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Kuhn, Foucault y Bourdieu afirman que el conocimiento es falso porque depende de la sociedad."
+        },
+        {
+          "id": "B",
+          "texto": "Kuhn y Bourdieu estudian exclusivamente la prisión, mientras Foucault estudia paradigmas."
+        },
+        {
+          "id": "C",
+          "texto": "Los tres usan «poder» como sinónimo de violencia física."
+        },
+        {
+          "id": "D",
+          "texto": "Kuhn analiza paradigmas y comunidades científicas; Foucault, prácticas institucionales y poder-saber; Bourdieu, habitus y campos. Pueden articularse para estudiar la organización histórica de la visibilidad."
+        }
+      ],
+      "respuestaCorrecta": "D",
+      "justificacionCorrecta": "El módulo propone una comparación entre herramientas complementarias: matriz disciplinar y carga teórica de la observación; instituciones, disciplina y saber-poder; habitus y campo. El vínculo no convierte a los autores en defensores de una teoría idéntica ni niega la realidad material.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Cuál es el eje común del cruce?",
+          "respuesta": "Cómo los marcos conceptuales, las prácticas institucionales y las disposiciones incorporadas orientan qué se ve, cómo se interpreta y qué se considera digno de conocimiento."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-018",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Integrador: síntesis aplicada",
+      "enunciado": "Una investigación escolar estudia cómo una norma hace visibles ciertas conductas, cómo el profesorado aprendió a considerarlas normales y cómo una teoría científica orienta qué datos se registran. ¿Qué estrategia de análisis es más adecuada?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Aplicar solo el concepto de falsabilidad, porque toda norma es una hipótesis universal."
+        },
+        {
+          "id": "B",
+          "texto": "Usar Foucault para las técnicas de visibilidad y normalización, Bourdieu para las disposiciones incorporadas y Kuhn para los marcos que orientan la observación, sin fusionar sus teorías."
+        },
+        {
+          "id": "C",
+          "texto": "Concluir que los comportamientos registrados son inexistentes porque fueron clasificados."
+        },
+        {
+          "id": "D",
+          "texto": "Suponer que los tres autores proponen un modelo causal único."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Cada autor permite analizar una dimensión: Foucault, los procedimientos institucionales de visibilidad y normalización; Bourdieu, las disposiciones aprendidas e incorporadas; Kuhn, los marcos científicos que organizan la observación. La articulación es analítica y conserva las diferencias entre conceptos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué error sería más grave al responder una consigna integradora?",
+          "respuesta": "Atribuir a los tres autores la misma teoría o utilizar sus conceptos como sinónimos, en lugar de explicar qué aspecto distinto ilumina cada uno."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-019",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Clasificación y producción institucional",
+      "enunciado": "Un hospital incorpora una categoría diagnóstica; las personas clasificadas reaccionan a ella y modifican sus prácticas, mientras la institución acumula expedientes que orientan nuevas intervenciones. ¿Qué articulación es más precisa?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Popper explica la aceptación de enunciados básicos y Kuhn la falsación de la categoría."
+        },
+        {
+          "id": "B",
+          "texto": "Kuhn analiza la elección entre paradigmas y Bourdieu la pérdida kuhniana de logros."
+        },
+        {
+          "id": "C",
+          "texto": "Hacking permite analizar la interacción entre clasificación y personas clasificadas; Foucault, la producción institucional de saber y objetos de intervención."
+        },
+        {
+          "id": "D",
+          "texto": "Foucault explica el efecto de bucle y Hacking la disciplina carcelaria."
+        }
+      ],
+      "respuestaCorrecta": "C",
+      "justificacionCorrecta": "Hacking explica la dinámica interactiva de las clasificaciones humanas y sus efectos de bucle. Foucault permite analizar cómo registros, saberes y prácticas institucionales producen objetos de conocimiento e intervención. Son enfoques articulables, no idénticos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Hacking explica la dinámica interactiva de las clasificaciones humanas y sus efectos de bucle. Foucault permite analizar cómo registros, saberes y prácticas institucionales producen objetos de conocimiento e intervención. Son enfoques articulables, no idénticos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-020",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Paradigma y poder-saber",
+      "enunciado": "Una institución científica define qué problemas considera legítimos, organiza procedimientos de observación y excluye ciertas preguntas de su agenda. ¿Qué comparación evita confundir a Kuhn con Foucault?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Kuhn analiza los compromisos y ejemplares de una comunidad científica; Foucault permite examinar las prácticas institucionales y relaciones de poder-saber que organizan la producción de conocimiento."
+        },
+        {
+          "id": "B",
+          "texto": "Ambos sostienen que todo conocimiento es falso porque depende de instituciones."
+        },
+        {
+          "id": "C",
+          "texto": "Kuhn estudia exclusivamente la vigilancia disciplinaria y Foucault la estructura lógica de las revoluciones científicas."
+        },
+        {
+          "id": "D",
+          "texto": "Foucault explica la elección de paradigmas mediante valores epistemológicos y Kuhn el poder soberano."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Kuhn se ocupa de la estructura y dinámica de las comunidades científicas y sus paradigmas. Foucault analiza cómo prácticas, instituciones y relaciones de poder participan en la producción de saber. La coincidencia en atender a condiciones históricas no vuelve equivalentes sus conceptos.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Kuhn se ocupa de la estructura y dinámica de las comunidades científicas y sus paradigmas. Foucault analiza cómo prácticas, instituciones y relaciones de poder participan en la producción de saber. La coincidencia en atender a condiciones históricas no vuelve equivalentes sus conceptos."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-021",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Evidencia y clasificación",
+      "enunciado": "Un registro administrativo no contempla cierta conducta y un investigador concluye que esa conducta no existe. ¿Qué corrección conjunta es más rigurosa?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Aceptar la conclusión porque todo registro institucional representa exhaustivamente la realidad."
+        },
+        {
+          "id": "B",
+          "texto": "Distinguir el fenómeno de las categorías y procedimientos que lo hacen visible; la ausencia de registro no demuestra ausencia material."
+        },
+        {
+          "id": "C",
+          "texto": "Concluir que la conducta fue creada íntegramente por el formulario y que no existía antes."
+        },
+        {
+          "id": "D",
+          "texto": "Aplicar el trilema de Fries, porque toda omisión documental constituye una regresión infinita."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Hacking permite preguntar cómo una clasificación organiza un fenómeno; Foucault, cómo los dispositivos institucionales producen visibilidad y documentación; Kuhn, cómo los marcos orientan la observación. Ninguno autoriza a inferir que lo no registrado no existe.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Hacking permite preguntar cómo una clasificación organiza un fenómeno; Foucault, cómo los dispositivos institucionales producen visibilidad y documentación; Kuhn, cómo los marcos orientan la observación. Ninguno autoriza a inferir que lo no registrado no existe."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-022",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Disposiciones y matriz disciplinar",
+      "enunciado": "Un equipo de investigación comparte formas aprendidas de valorar problemas y, además, trabaja con ejemplares y compromisos teóricos comunes. ¿Qué distinción entre Bourdieu y Kuhn corresponde?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "El habitus y la matriz disciplinar son sinónimos porque ambos describen reglas conscientes."
+        },
+        {
+          "id": "B",
+          "texto": "El habitus refiere a disposiciones incorporadas que orientan prácticas; la matriz disciplinar reúne compromisos compartidos propios de una comunidad científica."
+        },
+        {
+          "id": "C",
+          "texto": "El habitus describe únicamente el método experimental y la matriz disciplinar las posiciones económicas de los investigadores."
+        },
+        {
+          "id": "D",
+          "texto": "La matriz disciplinar es una forma de castigo institucional y el habitus una anomalía científica."
+        }
+      ],
+      "respuestaCorrecta": "B",
+      "justificacionCorrecta": "Bourdieu analiza disposiciones socialmente incorporadas y su relación con los campos. Kuhn analiza compromisos, valores, generalizaciones y ejemplares que estructuran una comunidad científica. Pueden relacionarse sin reducir uno al otro.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Bourdieu analiza disposiciones socialmente incorporadas y su relación con los campos. Kuhn analiza compromisos, valores, generalizaciones y ejemplares que estructuran una comunidad científica. Pueden relacionarse sin reducir uno al otro."
+        }
+      ]
+    },
+    {
+      "id": "ipc-p2-integrador-023",
+      "materia": "IPC",
+      "parcial": "Segundo Parcial",
+      "autor": "Módulo Integrador / Cruzado (Kuhn, Foucault, Bourdieu)",
+      "subtema": "Cambio histórico y progreso",
+      "enunciado": "Una nueva forma de clasificar una población modifica la autocomprensión de las personas y las prácticas institucionales, pero no elimina por completo las categorías anteriores. ¿Qué conclusión es más cuidadosa?",
+      "opciones": [
+        {
+          "id": "A",
+          "texto": "Los cambios históricos pueden reorganizar categorías, prácticas y sujetos sin seguir una secuencia lineal ni borrar de inmediato formas previas."
+        },
+        {
+          "id": "B",
+          "texto": "Toda nueva clasificación representa un progreso moral y científico respecto de la anterior."
+        },
+        {
+          "id": "C",
+          "texto": "La persistencia de categorías anteriores demuestra que no hubo transformación histórica."
+        },
+        {
+          "id": "D",
+          "texto": "El cambio solo puede explicarse por una decisión individual y no por instituciones o relaciones sociales."
+        }
+      ],
+      "respuestaCorrecta": "A",
+      "justificacionCorrecta": "Hacking permite analizar la modificación interactiva de categorías; Foucault, las transformaciones y coexistencias de técnicas institucionales. El cambio histórico no debe confundirse con progreso lineal ni con sustitución instantánea.",
+      "expansionEstudio": [
+        {
+          "pregunta": "¿Qué distinción permite resolver esta consigna?",
+          "respuesta": "Hacking permite analizar la modificación interactiva de categorías; Foucault, las transformaciones y coexistencias de técnicas institucionales. El cambio histórico no debe confundirse con progreso lineal ni con sustitución instantánea."
+        }
+      ]
+    }
+  ],
+  "tarjetas": [
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué diferencia conceptual debe conservarse entre los tres autores?",
+      "dorso": "Kuhn analiza matrices disciplinares y cambios paradigmáticos; Foucault reconstruye prácticas, instituciones y relaciones de poder-saber; Bourdieu estudia disposiciones incorporadas y campos sociales. Su articulación no borra sus objetos específicos."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿En qué puede relacionarse ambos enfoques?",
+      "dorso": "Ambos permiten cuestionar una concepción de conocimiento desligada de prácticas y condiciones históricas, aunque analizan procesos diferentes."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿El habitus es una regla consciente que cada sujeto decide aplicar?",
+      "dorso": "No. Se refiere a disposiciones incorporadas que orientan la práctica, muchas veces sin formularse como reglas explícitas o decisiones deliberadas."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Cómo se relacionan habitus y campo?",
+      "dorso": "El habitus reúne disposiciones incorporadas; el campo es el espacio relacional en el que esas disposiciones se forman, operan y encuentran límites u oportunidades."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Por qué no conviene reducir el habitus a una opinión individual?",
+      "dorso": "Porque se forma socialmente mediante experiencias y aprendizajes duraderos, y orienta prácticas más allá de una decisión consciente aislada."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Cómo puede conectarse este caso con Bourdieu?",
+      "dorso": "Las prácticas escolares también contribuyen a formar disposiciones incorporadas y criterios de percepción, que pueden analizarse mediante habitus y campo."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿En qué se diferencian esos mecanismos?",
+      "dorso": "En Kuhn se trata de compromisos de una comunidad científica que orientan la observación; en Foucault, de prácticas institucionales y relaciones de poder que producen objetos de saber e intervención."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué significa reconocer mediaciones sin negar la realidad?",
+      "dorso": "Significa estudiar cómo se producen observaciones y clasificaciones y evaluar sus evidencias, sin concluir que los hechos son creados enteramente por el lenguaje o la institución."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué aporta Bourdieu como complemento, sin reemplazar a Kuhn?",
+      "dorso": "Permite preguntar cómo disposiciones incorporadas y posiciones en un campo influyen en la práctica, el reconocimiento y la percepción de los agentes."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Por qué no se debe concluir que los datos son falsos?",
+      "dorso": "Porque el análisis investiga las condiciones de producción y los efectos del conocimiento; no demuestra automáticamente que la información sea falsa."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué relación tiene esta idea con la visibilidad?",
+      "dorso": "Los esquemas incorporados pueden orientar qué aspectos se perciben como relevantes, normales o desviados, sin que el sujeto tenga que formular conscientemente una regla."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Puede una comunidad científica estudiarse también como campo?",
+      "dorso": "Sí, como extensión del análisis bourdieusiano de las relaciones y posiciones sociales, pero eso no elimina la especificidad epistemológica del paradigma en Kuhn."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué pregunta se hace cada autor?",
+      "dorso": "Foucault: cómo se ejercen relaciones de poder y se producen sujetos mediante prácticas; Bourdieu: cómo las disposiciones y posiciones sociales orientan la práctica."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué cuidado metodológico exige el caso?",
+      "dorso": "Distinguir entre el fenómeno, las categorías disponibles y los procedimientos que permiten registrarlo; la ausencia en un formulario no demuestra ausencia material."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué aspecto no debe perderse al combinar ambos?",
+      "dorso": "Kuhn analiza el funcionamiento y cambio de paradigmas; Bourdieu aporta un análisis sociológico de disposiciones, posiciones y disputas por legitimidad."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué tienen en común sin ser idénticos?",
+      "dorso": "Ambos permiten cuestionar una percepción completamente independiente de marcos y aprendizajes; difieren en el objeto y nivel de análisis."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Cuál es el eje común del cruce?",
+      "dorso": "Cómo los marcos conceptuales, las prácticas institucionales y las disposiciones incorporadas orientan qué se ve, cómo se interpreta y qué se considera digno de conocimiento."
+    },
+    {
+      "frente": "Kuhn · Foucault · Bourdieu · ¿Qué error sería más grave al responder una consigna integradora?",
+      "dorso": "Atribuir a los tres autores la misma teoría o utilizar sus conceptos como sinónimos, en lugar de explicar qué aspecto distinto ilumina cada uno."
+    }
+  ]
+}
