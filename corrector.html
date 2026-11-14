@@ -40,20 +40,24 @@
     .meter strong { color:var(--ink); font-variant-numeric:tabular-nums; }
     .track { height:7px; margin-bottom:15px; overflow:hidden; border-radius:99px; background:rgba(255,255,255,.09); }
     .track span { display:block; height:100%; width:0; border-radius:inherit; background:linear-gradient(90deg,var(--purple),var(--gold)); transition:width .2s; }
-    .range-label { margin:0 0 8px; color:var(--muted); font-size:.7rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
-    .range-tabs { margin-bottom:14px; }
-    .range { min-height:38px; padding:7px 12px; font-size:.75rem; }
-    .grid { display:grid; gap:7px; }
-    .question { display:grid; grid-template-columns:42px repeat(4,minmax(0,1fr)); align-items:center; gap:7px; min-width:0; padding:5px; border:1px solid rgba(210,195,255,.1); border-radius:12px; background:rgba(12,8,27,.22); }
-    .number { display:grid; place-items:center; min-height:42px; color:#DCCFFF; font-size:.82rem; font-weight:900; font-variant-numeric:tabular-nums; }
-    .choice { position:relative; display:grid; place-items:center; min-width:0; min-height:43px; padding:6px 2px; border:1px solid rgba(210,195,255,.23); border-radius:9px; color:#E8E0F7; background:rgba(255,255,255,.045); font-size:.88rem; font-weight:900; -webkit-tap-highlight-color:transparent; touch-action:manipulation; }
-    .choice:active { transform:scale(.97); }
-    .choice.selected { color:#fff; border:2px solid var(--purple); background:rgba(155,123,255,.24); }
+    .sheet { position:relative; margin:0 -4px 2px; overflow-x:auto; overflow-y:hidden; padding:4px 4px 12px; scroll-behavior:smooth; -webkit-overflow-scrolling:touch; overscroll-behavior-x:contain; scrollbar-width:thin; scrollbar-color:rgba(155,123,255,.5) transparent; }
+    .grid { --cw:46px; --ch:46px; display:grid; grid-template-columns:40px repeat(60,var(--cw)); grid-template-rows:34px repeat(4,var(--ch)); gap:6px; width:max-content; }
+    .corner,.letter { position:sticky; left:0; z-index:3; display:grid; place-items:center; background:#251B44; border-radius:10px; box-shadow:8px 0 10px -4px rgba(15,9,32,.85); }
+    .letter { color:#DCCFFF; font-size:.9rem; font-weight:900; }
+    .number { display:grid; place-items:center; color:#9F93BC; font-size:.78rem; font-weight:900; font-variant-numeric:tabular-nums; border-radius:8px; transition:color .15s,background .15s; }
+    .number.done { color:#DCCFFF; }
+    .number.current { color:#1c1230; background:var(--gold); }
+    .choice { position:relative; display:grid; place-items:center; min-width:0; padding:0; border:1px solid rgba(210,195,255,.23); border-radius:10px; color:rgba(232,224,247,.35); background:rgba(255,255,255,.045); font-size:.85rem; font-weight:900; -webkit-tap-highlight-color:transparent; touch-action:manipulation; transition:background .12s,border-color .12s,transform .12s; }
+    .choice.col-current { border-color:rgba(255,185,56,.45); background:rgba(255,185,56,.07); }
+    .choice:active { transform:scale(.93); }
+    .choice.selected { color:#fff; border:2px solid var(--purple); background:var(--purple); animation:pop .18s ease-out; }
+    @keyframes pop { 0%{transform:scale(.8)} 100%{transform:scale(1)} }
     .choice.is-hit { color:#092b1e; border:2px solid var(--green); background:var(--green); }
     .choice.is-miss { color:#3b1022; border:2px solid var(--red); background:var(--red); }
     .choice.is-key { color:#092b1e; border:2px solid var(--green); background:rgba(79,224,160,.17); }
-    .choice.is-key::after { content:"✓"; position:absolute; top:1px; right:5px; color:var(--green); font-size:.7rem; }
+    .choice.is-key::after { content:"\2713"; position:absolute; top:1px; right:5px; color:var(--green); font-size:.7rem; }
     .choice:disabled { cursor:default; opacity:1; }
+    .hint { margin:0 2px 0; color:#A99DBF; font-size:.7rem; }
     .actions { margin-top:15px; }
     .action { flex:1 1 auto; min-height:46px; }
     .action.primary { color:#211431; border-color:#c2adff; background:var(--purple); }
@@ -72,14 +76,9 @@
     @media(min-width:600px) {
       body { padding:30px 20px 54px; }
       .panel { padding:20px; }
-      .question { gap:9px; padding:6px 8px; }
-      .choice { min-height:44px; }
     }
     @media(max-width:380px) {
       .panel { padding:11px; }
-      .question { grid-template-columns:34px repeat(4,minmax(0,1fr)); gap:5px; padding:4px; }
-      .choice { min-height:42px; }
-      .number { min-height:42px; font-size:.75rem; }
       .tab { flex:1; padding:8px; }
       .actions { display:grid; grid-template-columns:1fr 1fr; }
       .action.primary { grid-column:1 / -1; }
@@ -91,7 +90,7 @@
     <a class="back" href="./">← Volver a Parcialito</a>
     <div class="eyebrow">✦ CORRECCIÓN · SEGUNDO PARCIAL</div>
     <h1>Compará tu grilla</h1>
-    <p class="intro">Elegí el tema de tu examen y tocá A, B, C o D en cada pregunta. Al corregir vas a ver tus aciertos, errores y la opción correcta.</p>
+    <p class="intro">Elegí el tema de tu examen y marcá A, B, C o D como en la hoja: la grilla avanza sola hacia la derecha. Recién al final, cuando corrijas, vas a ver aciertos y errores.</p>
 
     <section class="panel" aria-label="Corrector de grillas">
       <div class="theme-tabs" id="tabs" role="group" aria-label="Elegir tema">
@@ -102,14 +101,8 @@
       <div class="meter"><span id="progress-label">Respuestas marcadas</span><strong id="progress-count">0 / 60</strong></div>
       <div class="track" role="progressbar" aria-label="Progreso de respuestas" aria-valuemin="0" aria-valuemax="60" aria-valuenow="0" id="progress"><span id="progress-fill"></span></div>
 
-      <p class="range-label">Bloque de preguntas</p>
-      <div class="range-tabs" id="ranges" role="group" aria-label="Elegir bloque">
-        <button class="range active" type="button" data-start="0">1–20</button>
-        <button class="range" type="button" data-start="20">21–40</button>
-        <button class="range" type="button" data-start="40">41–60</button>
-      </div>
-
-      <div class="grid" id="grid" aria-label="Respuestas del bloque"></div>
+      <div class="sheet" id="sheet"><div class="grid" id="grid" aria-label="Grilla de respuestas"></div></div>
+      <p class="hint">Deslizá hacia la derecha o tocá una opción: la grilla avanza sola.</p>
       <div class="actions">
         <button class="action primary" id="check" type="button" disabled>Corregir grilla</button>
         <button class="action" id="edit" type="button" hidden>Seguir editando</button>
@@ -135,7 +128,8 @@
     const STORE = "grilla-corrector-v1";
     const $ = function(id) { return document.getElementById(id); };
     let state = { tema:"43", answers:{}, checked:{} };
-    let blockStart = 0;
+    const CW = 46, GAP = 6, LABEL = 40;
+    let current = 0;
 
     try {
       const stored = JSON.parse(localStorage.getItem(STORE));
@@ -158,12 +152,27 @@
     function countMarked(answers) {
       return answers.filter(function(value) { return value !== null && value !== undefined; }).length;
     }
-    function firstIncompleteBlock() {
-      const answers = state.answers[state.tema];
-      for (let start=0; start<N; start+=20) {
-        if (answers.slice(start,start+20).some(function(value) { return value === null || value === undefined; })) return start;
+    function firstIncomplete() {
+      const idx = state.answers[state.tema].findIndex(function(v) { return v === null || v === undefined; });
+      return idx === -1 ? 0 : idx;
+    }
+    function build() {
+      let html = '<span class="corner" aria-hidden="true"></span>';
+      for (let i=0; i<N; i++) html += '<span class="number" data-num="' + i + '">' + (i+1) + '</span>';
+      for (let j=0; j<4; j++) {
+        html += '<span class="letter">' + LETRAS[j].toLowerCase() + '</span>';
+        for (let i=0; i<N; i++) {
+          html += '<button type="button" class="choice" data-index="' + i + '" data-choice="' + j + '" aria-label="Pregunta ' + (i+1) + ', opción ' + LETRAS[j] + '">' + LETRAS[j] + '</button>';
+        }
       }
-      return 0;
+      $("grid").innerHTML = html;
+    }
+    function scrollToQuestion(i, smooth) {
+      const sheet = $("sheet");
+      const visible = sheet.clientWidth - LABEL;
+      const left = i*(CW+GAP) - Math.max(0,(visible - CW)/2);
+      sheet.style.scrollBehavior = smooth ? "smooth" : "auto";
+      sheet.scrollLeft = Math.max(0,left);
     }
     function render() {
       const theme = state.tema;
@@ -174,30 +183,32 @@
       const hits = answers.reduce(function(total, answer, index) {
         return total + (answer === key[index] ? 1 : 0);
       },0);
-      const rows = [];
-      const end = Math.min(blockStart+20,N);
 
-      for (let i=blockStart; i<end; i++) {
-        let html = '<div class="question"><span class="number">' + (i+1) + '</span>';
-        for (let j=0; j<4; j++) {
-          let cls = "choice";
-          let suffix = "";
-          if (!checked && answers[i] === j) cls += " selected";
-          if (checked && j === key[i]) {
-            if (answers[i] === j) cls += " is-hit";
-            else cls += " is-key";
-            suffix = '<span aria-hidden="true">✓</span>';
-          } else if (checked && answers[i] === j) {
-            cls += " is-miss";
-            suffix = '<span aria-hidden="true">×</span>';
-          }
-          html += '<button type="button" class="' + cls + '" data-index="' + i + '" data-choice="' + j + '" aria-label="Pregunta ' + (i+1) + ', opción ' + LETRAS[j] + '" aria-pressed="' + (answers[i] === j ? "true" : "false") + '"' + (checked ? " disabled" : "") + '>' + LETRAS[j] + suffix + '</button>';
+      Array.from($("grid").querySelectorAll(".number")).forEach(function(el) {
+        const i = Number(el.dataset.num);
+        el.classList.toggle("done", answers[i] !== null && answers[i] !== undefined);
+        el.classList.toggle("current", !checked && i === current);
+      });
+      Array.from($("grid").querySelectorAll("button.choice")).forEach(function(btn) {
+        const i = Number(btn.dataset.index);
+        const j = Number(btn.dataset.choice);
+        let cls = "choice";
+        let suffix = "";
+        if (!checked && answers[i] === j) cls += " selected";
+        if (!checked && i === current && answers[i] !== j) cls += " col-current";
+        if (checked && j === key[i]) {
+          cls += answers[i] === j ? " is-hit" : " is-key";
+          suffix = '<span aria-hidden="true">\u2713</span>';
+        } else if (checked && answers[i] === j) {
+          cls += " is-miss";
+          suffix = '<span aria-hidden="true">\u00d7</span>';
         }
-        html += '</div>';
-        rows.push(html);
-      }
+        if (btn.className !== cls) btn.className = cls;
+        btn.innerHTML = LETRAS[j] + suffix;
+        btn.disabled = checked;
+        btn.setAttribute("aria-pressed", answers[i] === j ? "true" : "false");
+      });
 
-      $("grid").innerHTML = rows.join("");
       $("progress-count").textContent = marked + " / " + N;
       $("progress-fill").style.width = (marked/N*100) + "%";
       $("progress").setAttribute("aria-valuenow",String(marked));
@@ -206,10 +217,6 @@
       Array.from($("tabs").querySelectorAll("button")).forEach(function(button) {
         button.classList.toggle("active",button.dataset.theme === theme);
         button.setAttribute("aria-pressed",button.dataset.theme === theme ? "true" : "false");
-      });
-      Array.from($("ranges").querySelectorAll("button")).forEach(function(button) {
-        button.classList.toggle("active",Number(button.dataset.start) === blockStart);
-        button.setAttribute("aria-pressed",Number(button.dataset.start) === blockStart ? "true" : "false");
       });
 
       $("check").hidden = checked;
@@ -220,7 +227,7 @@
         const percent = Math.round(hits/N*100);
         $("status").innerHTML = 'Tema <strong>' + theme + '</strong>: <strong>' + hits + ' de ' + N + '</strong> correctas (' + percent + '%)' + (N-marked ? ' · ' + (N-marked) + ' sin responder' : '');
       } else {
-        $("status").innerHTML = 'Tema <strong>' + theme + '</strong> · bloque ' + (blockStart+1) + '–' + end + ' · marcadas ' + marked + ' de ' + N + '.';
+        $("status").innerHTML = 'Tema <strong>' + theme + '</strong> · pregunta <strong>' + (current+1) + '</strong> · marcadas ' + marked + ' de ' + N + '.';
       }
     }
 
@@ -228,15 +235,10 @@
       const button = event.target.closest("button[data-theme]");
       if (!button) return;
       state.tema = button.dataset.theme;
-      blockStart = firstIncompleteBlock();
+      current = firstIncomplete();
       save();
       render();
-    });
-    $("ranges").addEventListener("click",function(event) {
-      const button = event.target.closest("button[data-start]");
-      if (!button) return;
-      blockStart = Number(button.dataset.start);
-      render();
+      scrollToQuestion(current, true);
     });
     $("grid").addEventListener("click",function(event) {
       const button = event.target.closest("button.choice");
@@ -244,9 +246,16 @@
       const index = Number(button.dataset.index);
       const choice = Number(button.dataset.choice);
       const answers = state.answers[state.tema];
-      answers[index] = answers[index] === choice ? null : choice;
+      if (answers[index] === choice) {
+        answers[index] = null;
+        current = index;
+      } else {
+        answers[index] = choice;
+        current = Math.min(index+1, N-1);
+      }
       save();
       render();
+      scrollToQuestion(current, true);
     });
     $("check").addEventListener("click",function() {
       if (!countMarked(state.answers[state.tema])) return;
@@ -263,13 +272,16 @@
       if (!window.confirm("¿Borrar todas las respuestas del tema " + state.tema + "?")) return;
       state.answers[state.tema] = Array(N).fill(null);
       state.checked[state.tema] = false;
-      blockStart = 0;
+      current = 0;
       save();
       render();
+      scrollToQuestion(0, true);
     });
 
-    blockStart = firstIncompleteBlock();
+    build();
+    current = firstIncomplete();
     render();
+    scrollToQuestion(current, false);
   </script>
 </body>
 </html>
