@@ -1513,3 +1513,22 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 .envio-enviar{width:100%;min-height:46px}.envio-enviar:disabled{opacity:.65;cursor:wait}
 .envio-estado{min-height:1.3em;margin:0;font-size:.85rem;line-height:1.45}
 @media(max-width:540px){.envio-overlay{align-items:flex-end;padding:10px}.envio-dialog{max-height:calc(100dvh - 20px);padding:21px 17px;border-radius:18px}.envio-drop{padding:16px 10px}}
+
+/* Banner de imágenes: versión compacta */
+.banner-imagenes{grid-template-columns:auto minmax(0,1fr) auto;gap:10px;margin-bottom:.85rem;padding:9px 12px;border-radius:12px}
+.banner-imagenes-icono{width:34px;height:34px;border-radius:10px;font-size:19px}
+.banner-imagenes-texto strong{font-size:.88rem}
+.banner-imagenes-texto p{margin:1px 0;font-size:.78rem;line-height:1.25}
+.btn-subir-imagen{padding:8px 11px;border-radius:9px;font-size:.82rem}
+@media(max-width:540px){.banner-imagenes{grid-template-columns:auto minmax(0,1fr) auto;gap:8px;padding:9px}.banner-imagenes-icono{width:32px;height:32px;font-size:18px}.banner-imagenes-texto strong{font-size:.82rem}.banner-imagenes-texto p{font-size:.7rem}.btn-subir-imagen{grid-column:auto;width:auto;padding:9px 10px;font-size:.76rem}}
+/* Vista previa del buzón dentro del panel principal */
+.inbox-preview{margin:0 0 16px;padding:15px;background:var(--panel);border:1px solid var(--line);border-radius:14px}
+.inbox-preview-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:11px}
+.inbox-preview-head h2{font-size:15px;margin:0}
+.inbox-preview-head a{font-size:12px;color:var(--text);text-decoration:none;font-weight:700}
+.inbox-preview-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:9px}
+.inbox-preview-item{display:block;min-width:0;color:var(--text);text-decoration:none}
+.inbox-preview-item img{display:block;width:100%;height:104px;object-fit:cover;border-radius:9px;background:var(--panel2)}
+.inbox-preview-item small{display:block;margin-top:5px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.inbox-preview-empty{font-size:13px;color:var(--muted);padding:7px 0}
+@media(max-width:600px){.inbox-preview-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.inbox-preview-item img{height:88px}}
