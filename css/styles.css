@@ -1492,3 +1492,24 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
 .btn-subir-imagen{border:1px solid #b9a5ff;border-radius:12px;background:var(--violeta);color:#170f2e;padding:11px 14px;font-weight:800;white-space:nowrap}
 .btn-subir-imagen:hover{filter:brightness(1.08)}
 @media(max-width:540px){.banner-imagenes{grid-template-columns:auto minmax(0,1fr);gap:10px;padding:13px}.banner-imagenes-icono{width:40px;height:40px;font-size:21px}.banner-imagenes-texto strong{font-size:.94rem}.banner-imagenes-texto p{font-size:.82rem}.banner-imagenes-texto small{font-size:.7rem}.btn-subir-imagen{grid-column:1/-1;width:100%;padding:12px}}
+
+
+/* ---------- Modal del buzón de imágenes ---------- */
+.envio-overlay{position:fixed;inset:0;z-index:10050;display:flex;align-items:center;justify-content:center;padding:18px;background:rgba(10,7,20,.82);backdrop-filter:blur(5px);overflow-y:auto}
+.envio-dialog{position:relative;width:min(100%,560px);max-height:calc(100dvh - 36px);overflow-y:auto;margin:auto;padding:26px;background:var(--panel);color:var(--crema);border:1px solid var(--linea);border-radius:20px;box-shadow:0 24px 80px rgba(0,0,0,.55);font-family:Inter,system-ui,sans-serif}
+.envio-dialog h2{margin:5px 42px 10px 0;font-size:clamp(1.5rem,5vw,2rem)}
+.envio-dialog>p{color:var(--tenue);line-height:1.5}
+.envio-kicker{color:var(--violeta);font-size:.72rem;font-weight:800;letter-spacing:.13em}
+.envio-cerrar{position:absolute;right:15px;top:13px;width:38px;height:38px;border:1px solid var(--linea);border-radius:11px;background:transparent;color:var(--crema);font-size:25px;cursor:pointer}
+#form-envio-imagenes{display:grid;gap:14px;margin-top:18px}
+.envio-drop{display:grid;justify-items:center;gap:5px;padding:20px 12px;border:1px dashed var(--violeta);border-radius:14px;background:rgba(155,123,255,.09);cursor:pointer;text-align:center}
+.envio-drop>span{font-size:28px}.envio-drop small{color:var(--tenue)}
+.envio-preview{display:grid;gap:7px;color:var(--tenue);font-size:.85rem}
+.envio-archivo{display:flex;align-items:center;gap:8px;padding:8px 10px;background:rgba(255,255,255,.04);border-radius:9px}
+.envio-archivo span{flex:1;min-width:0;overflow-wrap:anywhere}.envio-archivo small{white-space:nowrap}
+.envio-label{display:grid;gap:6px;font-size:.88rem;font-weight:700}
+.envio-label input,.envio-label select,.envio-label textarea{width:100%;box-sizing:border-box;padding:11px 12px;border:1px solid var(--linea);border-radius:10px;background:var(--fondo);color:var(--crema);font:inherit}
+.envio-privacidad{margin:0;color:var(--tenue);font-size:.78rem;line-height:1.45}
+.envio-enviar{width:100%;min-height:46px}.envio-enviar:disabled{opacity:.65;cursor:wait}
+.envio-estado{min-height:1.3em;margin:0;font-size:.85rem;line-height:1.45}
+@media(max-width:540px){.envio-overlay{align-items:flex-end;padding:10px}.envio-dialog{max-height:calc(100dvh - 20px);padding:21px 17px;border-radius:18px}.envio-drop{padding:16px 10px}}
