@@ -97,6 +97,82 @@ const claveDePaso = p => {
   return 'AMBOS::' + p.f + '::' + just;
 };
 
+// ----------------------------------------------------------
+// Validación lógica mínima.
+// Sirve para no ofrecer como distractor una opción que también es correcta
+// (p. ej. en "Simp. 2" sobre ~q • p, tanto ~q como p son respuestas válidas).
+// ----------------------------------------------------------
+const cierreParentesis = (s) => {
+  let d = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === '(') d++;
+    else if (s[i] === ')') { d--; if (d === 0) return i; }
+  }
+  return -1;
+};
+const sinParentesisExternos = (s) => {
+  s = s.trim();
+  while (s[0] === '(' && cierreParentesis(s) === s.length - 1) s = s.slice(1, -1).trim();
+  return s;
+};
+function parsearFormula(texto) {
+  const s = sinParentesisExternos(texto);
+  let d = 0;
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (c === '(') d++;
+    else if (c === ')') d--;
+    else if (d === 0 && '•∨→'.includes(c)) return { op: c, l: parsearFormula(s.slice(0, i)), r: parsearFormula(s.slice(i + 1)) };
+  }
+  if (s[0] === '~') return { op: '~', x: parsearFormula(s.slice(1)) };
+  return { op: 'a', v: s };
+}
+const formulaATexto = (n) => n.op === 'a' ? n.v : n.op === '~' ? '~' + formulaATexto(n.x) : '(' + formulaATexto(n.l) + n.op + formulaATexto(n.r) + ')';
+const mismaFormula = (a, b) => formulaATexto(a) === formulaATexto(b);
+
+// Todas las fórmulas que se pueden concluir aplicando la regla a las premisas citadas (en ese orden).
+function conclusionesDe(regla, premisas) {
+  const R = String(regla).toUpperCase().replace('.', '');
+  const [a, b] = premisas;
+  const salida = [];
+  if (!a) return salida;
+  if (R === 'SIMP' && a.op === '•') salida.push(a.l, a.r);
+  else if (R === 'DN' && a.op === '~' && a.x.op === '~') salida.push(a.x.x);
+  else if (b) {
+    if (R === 'MP' && a.op === '→' && mismaFormula(a.l, b)) salida.push(a.r);
+    if (R === 'MT' && a.op === '→' && b.op === '~' && mismaFormula(b.x, a.r)) salida.push({ op: '~', x: a.l });
+    if (R === 'SH' && a.op === '→' && b.op === '→' && mismaFormula(a.r, b.l)) salida.push({ op: '→', l: a.l, r: b.r });
+    if (R === 'SD' && a.op === '∨' && b.op === '~') {
+      if (mismaFormula(b.x, a.l)) salida.push(a.r);
+      if (mismaFormula(b.x, a.r)) salida.push(a.l);
+    }
+    if (R === 'CONJ') salida.push({ op: '•', l: a, r: b });
+  }
+  return salida;
+}
+
+// ¿La opción (clave) sería una respuesta lógicamente válida para ese paso del ejercicio?
+function opcionEsValida(clave, ejercicio, indice) {
+  try {
+    const paso = ejercicio.pasos[indice];
+    const n = ejercicio.premisas.length + indice + 1;
+    const lineas = [...ejercicio.premisas, ...ejercicio.pasos.slice(0, indice).map(p => p.f)].map(parsearFormula);
+    const [tipo, a] = clave.split('::');
+    if (tipo === 'FORMULA') {
+      const g = parsearFormula(a);
+      return conclusionesDe(paso.r, paso.refs.map(k => lineas[k - 1])).some(c => mismaFormula(c, g));
+    }
+    if (tipo === 'JUST') {
+      const [regla, ...resto] = a.split(' ');
+      const refs = resto.join('').split('–').map(Number);
+      if (refs.some(k => !(k >= 1 && k < n))) return false;
+      const f = parsearFormula(paso.f);
+      return conclusionesDe(regla, refs.map(k => lineas[k - 1])).some(c => mismaFormula(c, f));
+    }
+  } catch { /* si algo no se puede analizar, la opción se trata como no válida */ }
+  return false;
+}
+
 function inyectarEstilos() {
   if (document.getElementById('estilos-dn-ipc')) return;
   const st = document.createElement('style');
@@ -157,6 +233,10 @@ function cargarProgreso() {
 function guardarProgreso(p) {
   try { localStorage.setItem('parcialito-ipc-dn-progreso', JSON.stringify(p)); } catch {}
 }
+// El sonido nunca debe impedir que el ejercicio avance: si falla, se ignora.
+function sonar(nombre, ...args) {
+  try { Sonido[nombre]?.(...args); } catch {}
+}
 
 export function abrirDeduccionNatural({ app, volver }) {
   inyectarEstilos();
@@ -168,6 +248,7 @@ export function abrirDeduccionNatural({ app, volver }) {
   let lineaActiva = 0;
   let aciertos = 0;
   let errores = 0;
+  let racha = 0;
   let resueltas = new Set();
   let reveladas = new Set();
   let progreso = cargarProgreso();
@@ -210,7 +291,7 @@ export function abrirDeduccionNatural({ app, volver }) {
     const seleccion = [...BANCO];
     cola = MEZCLAR(seleccion);
     totalRonda = cola.length;
-    aciertos = 0; errores = 0; actual = null;
+    aciertos = 0; errores = 0; racha = 0; actual = null;
     siguiente();
   }
 
@@ -236,7 +317,8 @@ export function abrirDeduccionNatural({ app, volver }) {
     pintarEjercicio();
   }
 
-  function opcionesPara(paso) {
+  function opcionesPara(ejercicio, indice) {
+    const paso = ejercicio.pasos[indice];
     const correcta = claveDePaso(paso);
     const candidatas = new Set();
     BANCO.forEach(e => e.pasos.forEach(p => {
@@ -245,7 +327,9 @@ export function abrirDeduccionNatural({ app, volver }) {
         if (k !== correcta) candidatas.add(k);
       }
     }));
-    return MEZCLAR([correcta, ...MEZCLAR([...candidatas]).slice(0, 3)]);
+    // Se descartan los distractores que también serían respuestas válidas.
+    const distractores = [...candidatas].filter(k => !opcionEsValida(k, ejercicio, indice));
+    return MEZCLAR([correcta, ...MEZCLAR(distractores).slice(0, 3)]);
   }
 
   function pintarEjercicio() {
@@ -255,7 +339,7 @@ export function abrirDeduccionNatural({ app, volver }) {
     if (!pendientes.includes(lineaActiva)) lineaActiva = pendientes[0] ?? -1;
     const seleccion = lineaActiva;
     const paso = actual.pasos[seleccion];
-    const cards = paso ? opcionesPara(paso) : [];
+    const cards = paso ? opcionesPara(actual, seleccion) : [];
     const lineaInicio = actual.premisas.length + 1;
     const feedbackMarkup = feedbackTexto ? '<div class="dn-feedback '+feedbackTipo+'">' + ESCAPAR(feedbackTexto) + '</div>' : '';
     feedbackTexto = '';
@@ -316,24 +400,27 @@ export function abrirDeduccionNatural({ app, volver }) {
     const correcta = claveDePaso(paso);
     if (eleccion === correcta) {
       aciertos++;
+      racha++;
       progreso.total = (progreso.total || 0) + 1;
       progreso.correctas = (progreso.correctas || 0) + 1;
       guardarProgreso(progreso);
       resueltas.add(index);
       feedbackTexto = '¡Correcto! ' + paso.f + ' — ' + etiqueta(paso.r, paso.refs) + '. ' + reglaPista(paso.r);
       feedbackTipo = 'ok';
-      Sonido.acierto?.();
       pintarEjercicio();
+      sonar('acierto', racha);
     } else {
       errores++;
+      const perdioRacha = racha >= 3;
+      racha = 0;
       progreso.total = (progreso.total || 0) + 1;
       guardarProgreso(progreso);
       reveladas.add(index);
       resueltas.add(index);
       feedbackTexto = 'Respuesta correcta: ' + paso.f + ' — ' + etiqueta(paso.r, paso.refs) + '. ' + (reglaPista(paso.r) || 'Revisá la regla aplicada y las líneas citadas.') + ' Continuá con el siguiente espacio.';
       feedbackTipo = 'bad';
-      Sonido.error?.();
       pintarEjercicio();
+      sonar('error', perdioRacha);
     }
   }
 
