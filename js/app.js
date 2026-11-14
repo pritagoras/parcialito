@@ -1651,11 +1651,6 @@ function actividadesDe(m) {
     const claves = [].concat(t.actividad || []);
     for (const clave of claves) if (ACTIVIDADES[clave] && clave !== 'cuadro') lista.push({ clave, titulo: ACTIVIDADES[clave].titulo, icono: ACTIVIDADES[clave].icono || '🧩', tema: t });
   }
-  // Deducción natural es un módulo autónomo de lógica, visible únicamente en IPC.
-  if (m.id === 'ipc-2') {
-    lista.push({ clave: 'deduccion-natural', titulo: TITULO_DEDUCCION_NATURAL, icono: '🧩', tema: null });
-  }
-
   // El laboratorio es una actividad autónoma: aparece una sola vez en las materias de Biología.
   if (/biolog/i.test((m.id || '') + ' ' + (m.nombre || ''))) {
     lista.push({ clave: 'operones', titulo: ACTIVIDADES.operones.titulo, icono: ACTIVIDADES.operones.icono, tema: null });
@@ -1798,6 +1793,7 @@ function vistaMateria(i) {
         <h1>${esc(m.nombre)}</h1>
       </div>
       ${m.segundoParcial ? `<button class="banner-repaso ipc-p2-entry" id="btn-ipc-p2"><span>📜 Segundo parcial de IPC<small>${m.segundoParcial.preguntas} preguntas · ${m.segundoParcial.tarjetas} tarjetas · modelo de 9 puntos</small></span><b>▶</b></button>` : ''}
+      ${m.id === 'ipc-2' ? '<button class="banner-repaso" id="btn-ipc-deduccion"><span>🧩 Deducción natural<small>120 ejercicios interactivos · MP, MT, SH, SD y DN</small></span><b>▶</b></button>' : ''}
       ${actividades.length ? `<button class="banner-repaso" id="btn-grupo-juegos"><span>🎮 Juegos interactivos<small>${plural(actividades.length, 'juego disponible', 'juegos disponibles')} · elegí cuál abrir</small></span><b>▶</b></button>` : ''}
       ${m.temas.some(tieneCrucigrama) ? `<button class="banner-repaso" id="btn-grupo-crucigramas"><span>🔤 Crucigramas<small>${plural(m.temas.filter(tieneCrucigrama).length, 'crucigrama disponible', 'crucigramas disponibles')} · elegí un tema</small></span><b>▶</b></button>` : ''}
       <div class="temas-barra">
@@ -1887,6 +1883,10 @@ function vistaMateria(i) {
   document.getElementById('btn-ipc-p2')?.addEventListener('click', () => {
     Sonido.clic();
     vistaIPCSegundoParcial(m, i);
+  });
+  document.getElementById('btn-ipc-deduccion')?.addEventListener('click', () => {
+    Sonido.clic();
+    abrirDeduccionNatural({ app, volver: () => vistaMateria(i), materia: m });
   });
   document.getElementById('btn-grupo-juegos')?.addEventListener('click', () => {
     Sonido.clic();
