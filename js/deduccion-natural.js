@@ -169,6 +169,7 @@ export function abrirDeduccionNatural({ app, volver }) {
   let modo = 'mixto';
   let reglaFiltro = null;
   let cola = [];
+  let totalRonda = 0;
   let actual = null;
   let lineaActiva = 0;
   let aciertos = 0;
@@ -218,6 +219,7 @@ export function abrirDeduccionNatural({ app, volver }) {
     let seleccion = reglaFiltro ? BANCO.filter(x => x.reglas.includes(reglaFiltro)) : [...BANCO];
     if (modo === 'todas') seleccion = [...BANCO];
     cola = MEZCLAR(seleccion);
+    totalRonda = cola.length;
     aciertos = 0; errores = 0; actual = null;
     siguiente();
   }
@@ -268,7 +270,7 @@ export function abrirDeduccionNatural({ app, volver }) {
     feedbackTexto = '';
     app.innerHTML = `
       <main class="pantalla dn-wrap">
-        <div class="dn-top"><button class="btn enlace" id="dn-salir">← Salir</button><span class="dn-kicker">EJERCICIO ${BANCO.length - cola.length} / ${BANCO.length}</span></div>
+        <div class="dn-top"><button class="btn enlace" id="dn-salir">← Salir</button><span class="dn-kicker">EJERCICIO ${totalRonda - cola.length} / ${totalRonda}</span></div>
         <h1>${ESCAPAR(actual.titulo)}</h1>
         <p class="dn-intro">Seleccioná la justificación correcta para cada línea. Podés tocar cualquier línea incompleta para resolverla.</p>
         <div class="dn-stats"><div class="dn-stat"><b>${aciertos}</b><small>líneas correctas</small></div><div class="dn-stat"><b>${errores}</b><small>errores</small></div><div class="dn-stat"><b>${resueltas.size}/${actual.pasos.length}</b><small>líneas resueltas</small></div></div>
