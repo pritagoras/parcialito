@@ -320,7 +320,7 @@ export function abrirDeduccionNatural({ app, volver }) {
       progreso.correctas = (progreso.correctas || 0) + 1;
       guardarProgreso(progreso);
       resueltas.add(index);
-      feedbackTexto = '¡Correcto! ' + paso.f + ' — ' + etiqueta(paso.r, paso.refs) + '. ' + (REGLAS[paso.r.replace('.', '')] || REGLAS[paso.r] || {}).pista;
+      feedbackTexto = '¡Correcto! ' + paso.f + ' — ' + etiqueta(paso.r, paso.refs) + '. ' + reglaPista(paso.r);
       feedbackTipo = 'ok';
       Sonido.acierto?.();
       pintarEjercicio();
