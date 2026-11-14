@@ -115,10 +115,12 @@
         <span><i class="dot"></i> Tu marca antes de corregir</span>
       </div>
     </section>
-    <p class="footnote">Tus marcas se guardan automáticamente en este navegador. Podés cambiar de tema o cerrar la página y continuar después. No se envían tus respuestas.</p>
+    <p class="footnote">Tus marcas se guardan en este navegador. Para el panel de administración se registra el acceso con un identificador seudónimo del dispositivo y tu apodo si configuraste uno. Al corregir se envía solo el tema y el resultado global (respondidas, aciertos, errores y porcentaje); no se guardan las opciones de cada pregunta.</p>
   </main>
 
   <script>
+    import { iniciarActividad, registrarEventoActividad } from "./js/actividad.js?v=20261113-admin1";
+
     const N = 60;
     const LETRAS = ["A", "B", "C", "D"];
     const CLAVES = {
@@ -145,6 +147,22 @@
       if (!state.checked) state.checked = {};
     });
     if (state.tema !== "43" && state.tema !== "44") state.tema = "43";
+
+    const actividadLista = iniciarActividad().catch(function(error) {
+      console.warn("[Corrector] No se pudo iniciar el registro de actividad.", error);
+    });
+    function reportarEventoGrilla(evento, tema, datos) {
+      actividadLista.then(function() {
+        return registrarEventoActividad(evento, {
+          materia: "Segundo parcial",
+          tema: "Tema " + tema,
+          modo: "corrector_grillas",
+          datos: Object.assign({ origen: "corrector_segundo_parcial" }, datos || {})
+        });
+      }).catch(function(error) {
+        console.warn("[Corrector] No se pudo registrar la actividad.", error);
+      });
+    }
 
     function save() {
       try { localStorage.setItem(STORE, JSON.stringify(state)); } catch (_) {}
@@ -239,6 +257,7 @@
       save();
       render();
       scrollToQuestion(current, true);
+      reportarEventoGrilla("grilla_tema", state.tema, { accion: "cambio_de_tema" });
     });
     $("grid").addEventListener("click",function(event) {
       const button = event.target.closest("button.choice");
@@ -258,10 +277,25 @@
       scrollToQuestion(current, true);
     });
     $("check").addEventListener("click",function() {
-      if (!countMarked(state.answers[state.tema])) return;
-      state.checked[state.tema] = true;
+      const theme = state.tema;
+      const answers = state.answers[theme];
+      const key = CLAVES[theme].map(function(letter) { return "abcd".indexOf(letter); });
+      const marked = countMarked(answers);
+      if (!marked) return;
+      const correctas = answers.reduce(function(total, answer, index) {
+        return total + (answer === key[index] ? 1 : 0);
+      },0);
+      state.checked[theme] = true;
       save();
       render();
+      reportarEventoGrilla("grilla_corregida", theme, {
+        respondidas: marked,
+        correctas: correctas,
+        incorrectas: marked - correctas,
+        total: N,
+        sin_responder: N - marked,
+        porcentaje: Math.round(correctas / N * 100)
+      });
     });
     $("edit").addEventListener("click",function() {
       state.checked[state.tema] = false;
@@ -282,6 +316,7 @@
     current = firstIncomplete();
     render();
     scrollToQuestion(current, false);
+    reportarEventoGrilla("grilla_acceso", state.tema, { accion: "ingreso" });
   </script>
 </body>
 </html>
