@@ -197,7 +197,7 @@ export function abrirDeduccionNatural({ app, volver }) {
         </div>
         <div class="dn-actions">
           <button class="btn primario" id="dn-mixto">Desafío mixto · todas las reglas</button>
-          <button class="btn secundario" id="dn-todas">Practicar las 5 reglas por separado</button>
+          <button class="btn secundario" id="dn-todas">Practicar el banco completo · 80 ejercicios</button>
           <button class="btn secundario" id="dn-reiniciar">Reiniciar estadísticas</button>
         </div>
         <p class="dn-muted">El banco combina ejercicios de una regla y demostraciones encadenadas de dificultad creciente. Las letras proposicionales cambian entre variantes.</p>
@@ -245,25 +245,22 @@ export function abrirDeduccionNatural({ app, volver }) {
   function opcionesPara(paso, index) {
     const buenas = etiqueta(paso.r, paso.refs);
     const candidatas = [buenas];
-    const combinaciones = [[1],[2],[1,2],[1,3],[2,3],[3,4],[4,5]];
     const reglas = Object.keys(REGLAS);
-    for (const r of reglas) {
-      for (const refs of combinaciones) {
-        const op = etiqueta(r, refs);
-        if (!candidatas.includes(op)) candidatas.push(op);
-        if (candidatas.length >= 4) break;
-      }
-      if (candidatas.length >= 4) break;
-    }
-    return MEZCLAR(candidatas.slice(0,4));
+    const combinaciones = [[1,2],[2,3],[1],[1,3],[2,4]];
+    const distractores = [];
+    reglas.forEach((r, i) => {
+      const op = etiqueta(r, combinaciones[i % combinaciones.length]);
+      if (op !== buenas && !distractores.includes(op)) distractores.push(op);
+    });
+    return MEZCLAR([buenas, ...distractores.slice(0,3)]);
   }
 
   function pintarEjercicio() {
     const lineas = actual.premisas.map((f,i) => ({ f, just:'Premisa', blank:false, n:i+1 }));
     actual.pasos.forEach((p,i) => lineas.push({ f:p.f, just:resueltas.has(i) ? etiqueta(p.r,p.refs) : 'Elegir justificación', blank:true, done:resueltas.has(i), n:lineas.length+1, index:i }));
     const pendientes = actual.pasos.map((_,i)=>i).filter(i=>!resueltas.has(i));
-    if (!pendientes.includes(lineaActiva)) lineaActiva = pendientes[0] ?? 0;
-    const seleccion = pendientes[lineaActiva] ?? pendientes[0];
+    if (!pendientes.includes(lineaActiva)) lineaActiva = pendientes[0] ?? -1;
+    const seleccion = lineaActiva;
     const paso = actual.pasos[seleccion];
     const cards = paso ? opcionesPara(paso, seleccion) : [];
     const lineaInicio = actual.premisas.length + 1;
