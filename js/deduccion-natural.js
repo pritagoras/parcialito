@@ -92,6 +92,16 @@ const PLANTILLAS = [
     id: 'dn-mt-mp', titulo: 'Combinar tres reglas', nivel: 3,
     premisas: ['¬¬p', 'p → q', 'q → r', '¬r'],
     pasos: [{ f: 'p', r: 'DN', refs: [1] }, { f: '¬q', r: 'MT', refs: [3, 4] }, { f: '¬p', r: 'MT', refs: [2, 6] }]
+  },
+  {
+    id: 'cadena-cuatro-pasos', titulo: 'Construir una cadena completa', nivel: 3,
+    premisas: ['p → q', 'q → r', 'r → s', 's → t', 'p'],
+    pasos: [{ f: 'p → r', r: 'SH', refs: [1, 2] }, { f: 'p → s', r: 'SH', refs: [6, 3] }, { f: 'p → t', r: 'SH', refs: [7, 4] }, { f: 't', r: 'MP', refs: [8, 5] }]
+  },
+  {
+    id: 'mixto-cuatro-pasos', titulo: 'Resolver y encadenar cuatro pasos', nivel: 3,
+    premisas: ['p → q', 'q → r', '¬r', 'p ∨ s', 's → t'],
+    pasos: [{ f: '¬q', r: 'MT', refs: [2, 3] }, { f: '¬p', r: 'MT', refs: [1, 6] }, { f: 's', r: 'SD', refs: [4, 7] }, { f: 't', r: 'MP', refs: [5, 8] }]
   }
 ];
 
