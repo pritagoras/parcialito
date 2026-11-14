@@ -163,6 +163,9 @@ function inyectarEstilos() {
 .dn-line.blank{background:rgba(155,123,255,.07);border:1px dashed var(--violeta);border-radius:9px;margin:.25rem 0;cursor:pointer}
 .dn-line.focus{outline:2px solid var(--ambar);background:rgba(255,185,56,.08)}
 .dn-line.done .dn-just{color:var(--ok);font-weight:800}
+.dn-line.revealed{border-color:var(--mal);background:rgba(255,93,122,.07)}
+.dn-line.revealed .dn-just{color:var(--mal);font-weight:800}
+.dn-card{cursor:pointer;touch-action:manipulation;pointer-events:auto;position:relative;z-index:1}
 .dn-select{margin:.8rem 0;padding:.85rem;background:var(--panel-2);border:1px solid var(--linea);border-radius:13px}
 .dn-select h3{margin:0 0 .25rem;font-size:1rem}
 .dn-select p{margin:0 0 .7rem;color:var(--tenue);font-size:.88rem}
@@ -200,8 +203,10 @@ export function abrirDeduccionNatural({ app, volver }) {
   let aciertos = 0;
   let errores = 0;
   let resueltas = new Set();
+  let reveladas = new Set();
   let progreso = cargarProgreso();
   let feedbackTexto = '';
+  let feedbackTipo = 'ok';
 
   const pantallaInicio = () => {
     const total = progreso.total || 0;
@@ -217,13 +222,9 @@ export function abrirDeduccionNatural({ app, volver }) {
           <div class="dn-stat"><b>${correctas}</b><small>líneas correctas acumuladas</small></div>
           <div class="dn-stat"><b>${total ? Math.round(correctas / total * 100) : 0}%</b><small>precisión histórica</small></div>
         </div>
-        <h2>Reglas para practicar</h2>
-        <div class="dn-rules">
-          ${Object.entries(REGLAS).map(([k,v]) => `<button class="dn-rule" type="button" data-dn-regla="${k}"><b>${k} · ${v.nombre}</b><small>${v.forma}</small></button>`).join('')}
-        </div>
         <div class="dn-actions">
-          <button class="btn primario" id="dn-mixto">Desafío mixto · todas las reglas</button>
-          <button class="btn secundario" id="dn-todas">Practicar el banco completo · ${BANCO.length} ejercicios</button>
+          <button class="btn primario" id="dn-mixto">Empezar práctica aleatoria</button>
+          <button class="btn secundario" id="dn-todas">Recorrer banco completo · ${BANCO.length} ejercicios</button>
           <button class="btn secundario" id="dn-reiniciar">Reiniciar estadísticas</button>
         </div>
         <p class="dn-muted">El banco combina ejercicios de una regla y demostraciones encadenadas de dificultad creciente. Las letras proposicionales cambian entre variantes.</p>
@@ -235,15 +236,13 @@ export function abrirDeduccionNatural({ app, volver }) {
       if (!confirm('¿Reiniciar las estadísticas de deducción natural en este dispositivo?')) return;
       progreso = {}; guardarProgreso(progreso); pantallaInicio();
     });
-    app.querySelectorAll('[data-dn-regla]').forEach(b => b.addEventListener('click', () => iniciar(b.dataset.dnRegla)));
   };
 
   function iniciar(m) {
     modo = m;
     reglaFiltro = Object.hasOwn(REGLAS, m) ? m : null;
-    let seleccion = reglaFiltro ? BANCO.filter(x => x.reglas.includes(reglaFiltro)) : [...BANCO];
-    if (modo === 'todas') seleccion = [...BANCO];
-    cola = modo === 'todas' ? [...seleccion] : MEZCLAR(seleccion);
+    const seleccion = [...BANCO];
+    cola = MEZCLAR(seleccion);
     totalRonda = cola.length;
     aciertos = 0; errores = 0; actual = null;
     siguiente();
@@ -265,44 +264,43 @@ export function abrirDeduccionNatural({ app, volver }) {
     }
     actual = cola.shift();
     resueltas = new Set();
+    reveladas = new Set();
+    feedbackTexto = '';
     lineaActiva = 0;
     pintarEjercicio();
   }
 
   function opcionesPara(paso, index) {
-    const buenas = etiqueta(paso.r, paso.refs);
-    const candidatas = [buenas];
-    const reglas = Object.keys(REGLAS);
-    const combinaciones = [[1,2],[2,3],[1],[1,3],[2,4]];
-    const distractores = [];
-    reglas.forEach((r, i) => {
-      const op = etiqueta(r, combinaciones[i % combinaciones.length]);
-      if (op !== buenas && !distractores.includes(op)) distractores.push(op);
-    });
-    return MEZCLAR([buenas, ...distractores.slice(0,3)]);
+    const correcta = paso.f + '||' + etiqueta(paso.r, paso.refs);
+    const candidatas = [];
+    BANCO.forEach(e => e.pasos.forEach(p => {
+      const opcion = p.f + '||' + etiqueta(p.r, p.refs);
+      if (opcion !== correcta && !candidatas.includes(opcion)) candidatas.push(opcion);
+    }));
+    return MEZCLAR([correcta, ...MEZCLAR(candidatas).slice(0,3)]);
   }
 
   function pintarEjercicio() {
     const lineas = actual.premisas.map((f,i) => ({ f, just:'Premisa', blank:false, n:i+1 }));
-    actual.pasos.forEach((p,i) => lineas.push({ f:p.f, just:resueltas.has(i) ? etiqueta(p.r,p.refs) : 'Elegir justificación', blank:true, done:resueltas.has(i), n:lineas.length+1, index:i }));
+    actual.pasos.forEach((p,i) => lineas.push({ f:resueltas.has(i) ? p.f : '……………………', just:resueltas.has(i) ? etiqueta(p.r,p.refs) : '¿Qué sigue?', blank:true, done:resueltas.has(i), revealed:reveladas.has(i), n:lineas.length+1, index:i }));
     const pendientes = actual.pasos.map((_,i)=>i).filter(i=>!resueltas.has(i));
     if (!pendientes.includes(lineaActiva)) lineaActiva = pendientes[0] ?? -1;
     const seleccion = lineaActiva;
     const paso = actual.pasos[seleccion];
     const cards = paso ? opcionesPara(paso, seleccion) : [];
     const lineaInicio = actual.premisas.length + 1;
-    const feedbackMarkup = feedbackTexto ? '<div class="dn-feedback ok">' + ESCAPAR(feedbackTexto) + '</div>' : '';
+    const feedbackMarkup = feedbackTexto ? '<div class="dn-feedback '+feedbackTipo+'">' + ESCAPAR(feedbackTexto) + '</div>' : '';
     feedbackTexto = '';
     app.innerHTML = `
       <main class="pantalla dn-wrap">
         <div class="dn-top"><button class="btn enlace" id="dn-salir">← Salir</button><span class="dn-kicker">EJERCICIO ${totalRonda - cola.length} / ${totalRonda}</span></div>
         <h1>${ESCAPAR(actual.titulo)}</h1>
-        <p class="dn-intro">Seleccioná la justificación correcta para cada línea. Podés tocar cualquier línea incompleta para resolverla.</p>
+        <p class="dn-intro">Completá cada espacio: elegí qué fórmula se obtiene y qué regla permite obtenerla. Las reglas están mezcladas; no hay pistas por categoría.</p>
         <div class="dn-stats"><div class="dn-stat"><b>${aciertos}</b><small>líneas correctas</small></div><div class="dn-stat"><b>${errores}</b><small>errores</small></div><div class="dn-stat"><b>${resueltas.size}/${actual.pasos.length}</b><small>líneas resueltas</small></div></div>
         <div class="dn-progress"><span style="width:${resueltas.size / actual.pasos.length * 100}%"></span></div>
         <section class="dn-proof">
           <h3>Demostración · ${actual.premisas.length + actual.pasos.length} líneas</h3>
-          ${lineas.map(l => `<div class="dn-line ${l.blank?'blank':''} ${l.done?'done':''} ${l.blank && !l.done && l.index===seleccion?'focus':''}" ${l.blank?'data-dn-line="'+l.index+'"':''}>
+          ${lineas.map(l => `<div class="dn-line ${l.blank?'blank':''} ${l.done?'done':''} ${l.revealed?'revealed':''} ${l.blank && !l.done && l.index===seleccion?'focus':''}" ${l.blank?'data-dn-line="'+l.index+'"':''}>
             <span class="dn-num">${l.n}.</span><span class="dn-formula">${ESCAPAR(l.f)}</span><span class="dn-just">${ESCAPAR(l.just)}</span>
           </div>`).join('')}
         </section>
@@ -312,8 +310,9 @@ export function abrirDeduccionNatural({ app, volver }) {
             <h3>Justificá la línea ${lineaInicio + seleccion}: <code>${ESCAPAR(paso.f)}</code></h3>
             <p>Elegí la ficha con la regla y las líneas utilizadas.</p>
             <div class="dn-cards">${cards.map(c => {
-              const [r, ...nums] = c.split(' ');
-              return `<button class="dn-card" type="button" data-dn-card="${ESCAPAR(c)}"><b>${r}</b><small>Líneas ${nums.join(' y ')}</small></button>`;
+              const [formula, just] = c.split('||');
+              const [regla, ...nums] = just.split(' ');
+              return `<button class="dn-card" type="button" data-dn-card="${ESCAPAR(c)}"><b>${ESCAPAR(formula)}</b><small>${regla} · líneas ${nums.join(' y ')}</small></button>`;
             }).join('')}</div>
             <div id="dn-feedback" aria-live="polite"></div>
           </section>` : `
@@ -329,13 +328,16 @@ export function abrirDeduccionNatural({ app, volver }) {
       if (resueltas.has(i)) return;
       lineaActiva = i; pintarEjercicio();
     }));
-    app.querySelectorAll('[data-dn-card]').forEach(b => b.addEventListener('click', () => comprobar(b.dataset.dnCard, seleccion)));
+    app.onclick = (evento) => {
+      const tarjeta = evento.target.closest('[data-dn-card]');
+      if (tarjeta && app.contains(tarjeta)) comprobar(tarjeta.dataset.dnCard, seleccion);
+    };
     app.querySelector('#dn-siguiente')?.addEventListener('click', siguiente);
   }
 
   function comprobar(eleccion, index) {
     const paso = actual.pasos[index];
-    const correcta = etiqueta(paso.r, paso.refs);
+    const correcta = paso.f + '||' + etiqueta(paso.r, paso.refs);
     const feedback = app.querySelector('#dn-feedback');
     if (eleccion === correcta) {
       aciertos++;
@@ -343,17 +345,20 @@ export function abrirDeduccionNatural({ app, volver }) {
       progreso.correctas = (progreso.correctas || 0) + 1;
       guardarProgreso(progreso);
       resueltas.add(index);
-      feedbackTexto = '¡Correcto! ' + paso.r + ' con las líneas ' + paso.refs.join(' y ') + '. ' + REGLAS[paso.r].pista;
+      feedbackTexto = '¡Correcto! ' + paso.f + ' se obtiene por ' + paso.r + ' usando las líneas ' + paso.refs.join(' y ') + '. ' + REGLAS[paso.r].pista;
+      feedbackTipo = 'ok';
       Sonido.acierto?.();
       pintarEjercicio();
     } else {
       errores++;
       progreso.total = (progreso.total || 0) + 1;
       guardarProgreso(progreso);
+      reveladas.add(index);
+      resueltas.add(index);
+      feedbackTexto = 'No era esa. La respuesta correcta es: ' + paso.f + ' — ' + etiqueta(paso.r, paso.refs) + '. ' + REGLAS[paso.r].pista + ' Seguimos con el próximo paso.';
+      feedbackTipo = 'bad';
       Sonido.error?.();
-      feedback.className = 'dn-feedback bad';
-      feedback.textContent = 'No corresponde. Revisá qué forma lógica tiene la línea y qué premisas o pasos necesitás. Probá otra ficha.';
-      app.querySelectorAll('[data-dn-card]').forEach(b => { if (b.dataset.dnCard === correcta) b.dataset.correcta = 'true'; });
+      pintarEjercicio();
     }
   }
 
