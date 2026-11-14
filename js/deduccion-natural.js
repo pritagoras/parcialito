@@ -1,107 +1,54 @@
 // ==========================================================
 // Deducción natural para IPC: práctica interactiva por reglas.
 // Se abre desde Juegos interactivos de la materia IPC.
-// Banco procedural: 17 estructuras de demostración x 8 sustituciones
-// de letras = 120 ejercicios, con práctica por regla y modo mixto.
+// Banco basado en los dos formatos del Ejercicio 5 del modelo, con variantes
+// de letras proposicionales y resolución de pasos faltantes.
 // ==========================================================
 
 import { Sonido } from './sonido.js?v=dev';
 
-export const TITULO = 'Deducción natural: completá las demostraciones';
+export const TITULO = 'Deducción natural: modelo de parcial';
 
 const REGLAS = {
-  MP: { nombre: 'Modus Ponens', forma: 'Si p → q y p, entonces q.', pista: 'Se afirma el antecedente de un condicional.' },
-  MT: { nombre: 'Modus Tollens', forma: 'Si p → q y ¬q, entonces ¬p.', pista: 'Se niega el consecuente para negar el antecedente.' },
-  SH: { nombre: 'Silogismo hipotético', forma: 'Si p → q y q → r, entonces p → r.', pista: 'Se encadenan dos condicionales.' },
-  SD: { nombre: 'Silogismo disyuntivo', forma: 'Si p ∨ q y ¬p, entonces q.', pista: 'Se elimina una alternativa de la disyunción.' },
-  DN: { nombre: 'Doble negación', forma: '¬¬p equivale a p.', pista: 'Se eliminan dos negaciones juntas (o se introducen).' }
+  MP: { nombre: 'Modus Ponens', pista: 'Se afirma el antecedente de un condicional.' },
+  MT: { nombre: 'Modus Tollens', pista: 'Se niega el consecuente para negar el antecedente.' },
+  SH: { nombre: 'Silogismo hipotético', pista: 'Se encadenan dos condicionales.' },
+  SD: { nombre: 'Silogismo disyuntivo', pista: 'Se elimina una alternativa de la disyunción.' },
+  DN: { nombre: 'Doble negación', pista: 'Se eliminan dos negaciones juntas.' },
+  SIMP: { nombre: 'Simplificación', pista: 'De una conjunción se obtiene cualquiera de sus componentes.' },
+  CONJ: { nombre: 'Conjunción', pista: 'Se reúnen dos fórmulas en una conjunción.' }
 };
 
+// Los dos formatos reproducen la estructura del Ejercicio 5 del modelo:
+// A) fórmulas completas con justificaciones vacías;
+// B) justificaciones dadas y fórmulas intermedias para reconstruir.
 const PLANTILLAS = [
   {
-    id: 'mp-directo', titulo: 'Aplicación directa de MP', nivel: 1,
-    premisas: ['p → q', 'p'],
-    pasos: [{ f: 'q', r: 'MP', refs: [1, 2] }]
+    id: 'modelo-5a', titulo: 'Deducción · justificar cada línea',
+    premisas: ['(p → w) • ~w', '(q ∨ (p → u)) • (r → p)', 'q → w'],
+    objetivo: '(r → u) • ~w',
+    pasos: [
+      { f: '~w', r: 'Simp.', refs: [1], hideJustification: true },
+      { f: 'r → p', r: 'Simp.', refs: [2], hideJustification: true },
+      { f: '~q', r: 'MT', refs: [3, 4], hideJustification: true },
+      { f: 'q ∨ (p → u)', r: 'Simp.', refs: [2], hideJustification: true },
+      { f: 'p → u', r: 'SD', refs: [7, 6], hideJustification: true },
+      { f: 'r → u', r: 'SH', refs: [5, 8], hideJustification: true },
+      { f: '(r → u) • ~w', r: 'Conj.', refs: [9, 4], hideJustification: true }
+    ]
   },
   {
-    id: 'mt-directo', titulo: 'Aplicación directa de MT', nivel: 1,
-    premisas: ['p → q', '¬q'],
-    pasos: [{ f: '¬p', r: 'MT', refs: [1, 2] }]
-  },
-  {
-    id: 'sh-directo', titulo: 'Aplicación directa de SH', nivel: 1,
-    premisas: ['p → q', 'q → r'],
-    pasos: [{ f: 'p → r', r: 'SH', refs: [1, 2] }]
-  },
-  {
-    id: 'sd-directo', titulo: 'Aplicación directa de SD', nivel: 1,
-    premisas: ['p ∨ q', '¬p'],
-    pasos: [{ f: 'q', r: 'SD', refs: [1, 2] }]
-  },
-  {
-    id: 'dn-directo', titulo: 'Aplicación directa de DN', nivel: 1,
-    premisas: ['¬¬p'],
-    pasos: [{ f: 'p', r: 'DN', refs: [1] }]
-  },
-  {
-    id: 'mp-cadena', titulo: 'Encadenamiento por MP', nivel: 1,
-    premisas: ['p → q', 'q → r', 'p'],
-    pasos: [{ f: 'q', r: 'MP', refs: [1, 3] }, { f: 'r', r: 'MP', refs: [2, 4] }]
-  },
-  {
-    id: 'mt-cadena', titulo: 'Negación encadenada', nivel: 2,
-    premisas: ['p → q', 'q → r', '¬r'],
-    pasos: [{ f: '¬q', r: 'MT', refs: [2, 3] }, { f: '¬p', r: 'MT', refs: [1, 4] }]
-  },
-  {
-    id: 'mt-sd', titulo: 'De un condicional a una disyunción', nivel: 2,
-    premisas: ['p ∨ q', 'q → r', '¬r'],
-    pasos: [{ f: '¬q', r: 'MT', refs: [2, 3] }, { f: 'p', r: 'SD', refs: [1, 4] }]
-  },
-  {
-    id: 'dn-mp', titulo: 'Doble negación y afirmación', nivel: 1,
-    premisas: ['¬¬p', 'p → q'],
-    pasos: [{ f: 'p', r: 'DN', refs: [1] }, { f: 'q', r: 'MP', refs: [2, 3] }]
-  },
-  {
-    id: 'sh-mt', titulo: 'Encadenar y negar', nivel: 3,
-    premisas: ['p → q', 'q → r', 'r → s', '¬s'],
-    pasos: [{ f: 'p → r', r: 'SH', refs: [1, 2] }, { f: 'p → s', r: 'SH', refs: [5, 3] }, { f: '¬p', r: 'MT', refs: [6, 4] }]
-  },
-  {
-    id: 'dn-sd', titulo: 'Doble negación y silogismo disyuntivo', nivel: 2,
-    premisas: ['p ∨ q', '¬¬¬p'],
-    pasos: [{ f: '¬p', r: 'DN', refs: [2] }, { f: 'q', r: 'SD', refs: [1, 3] }]
-  },
-  {
-    id: 'sh-mp', titulo: 'Silogismo hipotético y MP', nivel: 3,
-    premisas: ['p → q', 'q → r', 'r → s', 'p'],
-    pasos: [{ f: 'p → r', r: 'SH', refs: [1, 2] }, { f: 'p → s', r: 'SH', refs: [5, 3] }, { f: 's', r: 'MP', refs: [6, 4] }]
-  },
-  {
-    id: 'mt-sd-mp', titulo: 'Resolver una alternativa', nivel: 3,
-    premisas: ['p ∨ q', 'p → r', '¬r', 'q → s'],
-    pasos: [{ f: '¬p', r: 'MT', refs: [2, 3] }, { f: 'q', r: 'SD', refs: [1, 5] }, { f: 's', r: 'MP', refs: [4, 6] }]
-  },
-  {
-    id: 'sd-mt', titulo: 'Descartar una opción', nivel: 2,
-    premisas: ['p ∨ q', 'p → r', '¬r'],
-    pasos: [{ f: '¬p', r: 'MT', refs: [2, 3] }, { f: 'q', r: 'SD', refs: [1, 4] }]
-  },
-  {
-    id: 'dn-mt-mp', titulo: 'Combinar tres reglas', nivel: 3,
-    premisas: ['¬¬p', 'p → q', 'q → r', '¬r'],
-    pasos: [{ f: 'p', r: 'DN', refs: [1] }, { f: '¬q', r: 'MT', refs: [3, 4] }, { f: '¬p', r: 'MT', refs: [2, 6] }]
-  },
-  {
-    id: 'cadena-cuatro-pasos', titulo: 'Construir una cadena completa', nivel: 3,
-    premisas: ['p → q', 'q → r', 'r → s', 's → t', 'p'],
-    pasos: [{ f: 'p → r', r: 'SH', refs: [1, 2] }, { f: 'p → s', r: 'SH', refs: [6, 3] }, { f: 'p → t', r: 'SH', refs: [7, 4] }, { f: 't', r: 'MP', refs: [8, 5] }]
-  },
-  {
-    id: 'mixto-cuatro-pasos', titulo: 'Resolver y encadenar cuatro pasos', nivel: 3,
-    premisas: ['p → q', 'q → r', '¬r', 'p ∨ s', 's → t'],
-    pasos: [{ f: '¬q', r: 'MT', refs: [2, 3] }, { f: '¬p', r: 'MT', refs: [1, 6] }, { f: 's', r: 'SD', refs: [4, 7] }, { f: 't', r: 'MP', refs: [5, 8] }]
+    id: 'modelo-5b', titulo: 'Deducción · completar fórmulas',
+    premisas: ['~q → (p → q)', '~q • p', '(q • ~q) → t'],
+    objetivo: 't',
+    pasos: [
+      { f: '~q', r: 'Simp.', refs: [2], hideFormula: true },
+      { f: 'p → q', r: 'MP', refs: [1, 4], hideFormula: true },
+      { f: 'p', r: 'Simp.', refs: [2], hideFormula: true },
+      { f: 'q', r: 'MP', refs: [5, 6], hideJustification: true },
+      { f: 'q • ~q', r: 'Conj.', refs: [7, 4], hideJustification: true },
+      { f: 't', r: 'MP', refs: [3, 8], hideFormula: true }
+    ]
   }
 ];
 
@@ -124,22 +71,29 @@ function crearBanco() {
     for (let variante = 0; variante < 8; variante++) {
       const mapa = {};
       for (let k = 0; k < 8; k++) mapa[ALFABETO[k]] = ALFABETO[(k + variante + ti) % 8];
-      // La rotación conserva símbolos distintos dentro de cada demostración.
-      const premisas = plantilla.premisas.map(x => reemplazarLetras(x, mapa));
-      const pasos = plantilla.pasos.map(x => ({ ...x, f: reemplazarLetras(x.f, mapa) }));
+      const transformar = x => reemplazarLetras(x, mapa);
       banco.push({
         id: plantilla.id + '-' + variante,
         titulo: plantilla.titulo,
-        nivel: plantilla.nivel,
-        premisas,
-        pasos,
-        reglas: [...new Set(pasos.map(x => x.r))]
+        nivel: ti + 1,
+        premisas: plantilla.premisas.map(transformar),
+        objetivo: transformar(plantilla.objetivo),
+        pasos: plantilla.pasos.map(p => ({ ...p, f: transformar(p.f) }))
       });
     }
   });
   return banco;
 }
 const BANCO = crearBanco();
+
+const etiqueta = (r, refs) => refs.length ? r + ' ' + refs.join('–') : r;
+const claveDePaso = p => {
+  const just = etiqueta(p.r, p.refs);
+  if (p.hideFormula && p.hideJustification) return 'AMBOS::' + p.f + '::' + just;
+  if (p.hideFormula) return 'FORMULA::' + p.f;
+  if (p.hideJustification) return 'JUST::' + just;
+  return 'AMBOS::' + p.f + '::' + just;
+};
 
 function inyectarEstilos() {
   if (document.getElementById('estilos-dn-ipc')) return;
@@ -226,9 +180,9 @@ export function abrirDeduccionNatural({ app, volver }) {
         <button class="btn enlace" id="dn-volver">← IPC</button>
         <div class="dn-top"><span class="dn-kicker">IPC · LÓGICA FORMAL</span><span class="dn-muted">BANCO DE PRÁCTICA</span></div>
         <h1>Deducción natural</h1>
-        <p class="dn-intro">Completá demostraciones línea por línea: descubrí qué fórmula sigue y elegí su regla y las líneas que la justifican. Cada respuesta se corrige al instante.</p>
+        <p class="dn-intro">Practicá con el formato del modelo: a veces están las fórmulas y faltan las justificaciones; otras veces tenés que reconstruir las fórmulas intermedias a partir de las reglas y referencias dadas.</p>
         <div class="dn-stats">
-          <div class="dn-stat"><b>${BANCO.length}</b><small>ejercicios disponibles</small></div>
+          <div class="dn-stat"><b>${BANCO.length}</b><small>variantes del modelo</small></div>
           <div class="dn-stat"><b>${correctas}</b><small>líneas correctas acumuladas</small></div>
           <div class="dn-stat"><b>${total ? Math.round(correctas / total * 100) : 0}%</b><small>precisión histórica</small></div>
         </div>
@@ -237,7 +191,7 @@ export function abrirDeduccionNatural({ app, volver }) {
           <button class="btn secundario" id="dn-todas">Recorrer banco completo · ${BANCO.length} ejercicios</button>
           <button class="btn secundario" id="dn-reiniciar">Reiniciar estadísticas</button>
         </div>
-        <p class="dn-muted">El banco combina ejercicios de una regla y demostraciones encadenadas de dificultad creciente. Las letras proposicionales cambian entre variantes.</p>
+        <p class="dn-muted">Las reglas y las referencias se presentan como en el parcial. No se indica de antemano qué regla tenés que usar.</p>
       </main>`;
     app.querySelector('#dn-volver').addEventListener('click', () => { Sonido.clic(); volver(); });
     app.querySelector('#dn-mixto').addEventListener('click', () => iniciar('mixto'));
@@ -280,24 +234,26 @@ export function abrirDeduccionNatural({ app, volver }) {
     pintarEjercicio();
   }
 
-  function opcionesPara(paso, index) {
-    const correcta = paso.f + '||' + etiqueta(paso.r, paso.refs);
-    const candidatas = [];
+  function opcionesPara(paso) {
+    const correcta = claveDePaso(paso);
+    const candidatas = new Set();
     BANCO.forEach(e => e.pasos.forEach(p => {
-      const opcion = p.f + '||' + etiqueta(p.r, p.refs);
-      if (opcion !== correcta && !candidatas.includes(opcion)) candidatas.push(opcion);
+      if (!!p.hideFormula === !!paso.hideFormula && !!p.hideJustification === !!paso.hideJustification) {
+        const k = claveDePaso(p);
+        if (k !== correcta) candidatas.add(k);
+      }
     }));
-    return MEZCLAR([correcta, ...MEZCLAR(candidatas).slice(0,3)]);
+    return MEZCLAR([correcta, ...MEZCLAR([...candidatas]).slice(0, 3)]);
   }
 
   function pintarEjercicio() {
     const lineas = actual.premisas.map((f,i) => ({ f, just:'Premisa', blank:false, n:i+1 }));
-    actual.pasos.forEach((p,i) => lineas.push({ f:resueltas.has(i) ? p.f : '……………………', just:resueltas.has(i) ? etiqueta(p.r,p.refs) : '¿Qué sigue?', blank:true, done:resueltas.has(i), revealed:reveladas.has(i), n:lineas.length+1, index:i }));
+    actual.pasos.forEach((p,i) => lineas.push({ f:resueltas.has(i) || !p.hideFormula ? p.f : '……………………', just:resueltas.has(i) || !p.hideJustification ? etiqueta(p.r,p.refs) : '………………', blank:true, done:resueltas.has(i), revealed:reveladas.has(i), n:lineas.length+1, index:i }));
     const pendientes = actual.pasos.map((_,i)=>i).filter(i=>!resueltas.has(i));
     if (!pendientes.includes(lineaActiva)) lineaActiva = pendientes[0] ?? -1;
     const seleccion = lineaActiva;
     const paso = actual.pasos[seleccion];
-    const cards = paso ? opcionesPara(paso, seleccion) : [];
+    const cards = paso ? opcionesPara(paso) : [];
     const lineaInicio = actual.premisas.length + 1;
     const feedbackMarkup = feedbackTexto ? '<div class="dn-feedback '+feedbackTipo+'">' + ESCAPAR(feedbackTexto) + '</div>' : '';
     feedbackTexto = '';
@@ -305,7 +261,8 @@ export function abrirDeduccionNatural({ app, volver }) {
       <main class="pantalla dn-wrap">
         <div class="dn-top"><button class="btn enlace" id="dn-salir">← Salir</button><span class="dn-kicker">EJERCICIO ${totalRonda - cola.length} / ${totalRonda}</span></div>
         <h1>${ESCAPAR(actual.titulo)}</h1>
-        <p class="dn-intro">Completá cada espacio: elegí qué fórmula se obtiene y qué regla permite obtenerla. Las reglas están mezcladas; no hay pistas por categoría.</p>
+        <p class="dn-muted"><b>Objetivo de la deducción:</b> <code>${ESCAPAR(actual.objetivo)}</code></p>
+        <p class="dn-intro">Completá los espacios siguiendo la demostración. Según el ejercicio, tendrás que justificar una fórmula o descubrir la fórmula que falta.</p>
         <div class="dn-stats"><div class="dn-stat"><b>${aciertos}</b><small>líneas correctas</small></div><div class="dn-stat"><b>${errores}</b><small>errores</small></div><div class="dn-stat"><b>${resueltas.size}/${actual.pasos.length}</b><small>líneas resueltas</small></div></div>
         <div class="dn-progress"><span style="width:${resueltas.size / actual.pasos.length * 100}%"></span></div>
         <section class="dn-proof">
@@ -317,12 +274,15 @@ export function abrirDeduccionNatural({ app, volver }) {
         ${feedbackMarkup}
         ${paso ? `
           <section class="dn-select">
-            <h3>Justificá la línea ${lineaInicio + seleccion}: <code>${ESCAPAR(paso.f)}</code></h3>
-            <p>Elegí la ficha con la regla y las líneas utilizadas.</p>
+            <h3>Completá la línea ${lineaInicio + seleccion}</h3>
+            <p>${paso.hideFormula && paso.hideJustification ? 'Elegí la fórmula y su justificación.' : paso.hideFormula ? 'Elegí la fórmula que se obtiene; la regla ya está indicada.' : 'Elegí la regla y las líneas que justifican la fórmula.'}</p>
             <div class="dn-cards">${cards.map(c => {
-              const [formula, just] = c.split('||');
-              const [regla, ...nums] = just.split(' ');
-              return `<button class="dn-card" type="button" data-dn-card="${ESCAPAR(c)}"><b>${ESCAPAR(formula)}</b><small>${regla} · líneas ${nums.join(' y ')}</small></button>`;
+              const [tipo, a, b] = c.split('::');
+              let principal = a, detalle = '';
+              if (tipo === 'JUST') { const partes = a.split(' '); principal = partes[0]; detalle = 'Líneas ' + partes.slice(1).join(' y '); }
+              else if (tipo === 'AMBOS') { principal = a; const partes = b.split(' '); detalle = partes[0] + ' · líneas ' + partes.slice(1).join(' y '); }
+              else detalle = 'Fórmula posible';
+              return `<button class="dn-card" type="button" data-dn-card="${ESCAPAR(c)}"><b>${ESCAPAR(principal)}</b><small>${ESCAPAR(detalle)}</small></button>`;
             }).join('')}</div>
             <div id="dn-feedback" aria-live="polite"></div>
           </section>` : `
@@ -338,23 +298,27 @@ export function abrirDeduccionNatural({ app, volver }) {
       if (resueltas.has(i)) return;
       lineaActiva = i; pintarEjercicio();
     }));
-    app.onclick = (evento) => {
-      const tarjeta = evento.target.closest('[data-dn-card]');
-      if (tarjeta && app.contains(tarjeta)) comprobar(tarjeta.dataset.dnCard, seleccion);
-    };
+    app.querySelectorAll('[data-dn-card]').forEach(tarjeta => {
+      tarjeta.addEventListener('click', evento => {
+        evento.preventDefault();
+        evento.stopPropagation();
+        comprobar(tarjeta.dataset.dnCard, seleccion);
+      }, { passive: false });
+    });
     app.querySelector('#dn-siguiente')?.addEventListener('click', siguiente);
   }
 
   function comprobar(eleccion, index) {
     const paso = actual.pasos[index];
-    const correcta = paso.f + '||' + etiqueta(paso.r, paso.refs);
+    if (resueltas.has(index)) return;
+    const correcta = claveDePaso(paso);
     if (eleccion === correcta) {
       aciertos++;
       progreso.total = (progreso.total || 0) + 1;
       progreso.correctas = (progreso.correctas || 0) + 1;
       guardarProgreso(progreso);
       resueltas.add(index);
-      feedbackTexto = '¡Correcto! ' + paso.f + ' se obtiene por ' + paso.r + ' usando las líneas ' + paso.refs.join(' y ') + '. ' + REGLAS[paso.r].pista;
+      feedbackTexto = '¡Correcto! ' + paso.f + ' — ' + etiqueta(paso.r, paso.refs) + '. ' + (REGLAS[paso.r.replace('.', '')] || REGLAS[paso.r] || {}).pista;
       feedbackTipo = 'ok';
       Sonido.acierto?.();
       pintarEjercicio();
@@ -364,7 +328,7 @@ export function abrirDeduccionNatural({ app, volver }) {
       guardarProgreso(progreso);
       reveladas.add(index);
       resueltas.add(index);
-      feedbackTexto = 'No era esa. La respuesta correcta es: ' + paso.f + ' — ' + etiqueta(paso.r, paso.refs) + '. ' + REGLAS[paso.r].pista + ' Seguimos con el próximo paso.';
+      feedbackTexto = 'Respuesta correcta: ' + paso.f + ' — ' + etiqueta(paso.r, paso.refs) + '. ' + ((REGLAS[paso.r.replace('.', '')] || REGLAS[paso.r] || {}).pista || 'Revisá la regla aplicada y las líneas citadas.') + ' Continuá con el siguiente espacio.';
       feedbackTipo = 'bad';
       Sonido.error?.();
       pintarEjercicio();
