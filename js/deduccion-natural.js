@@ -243,7 +243,7 @@ export function abrirDeduccionNatural({ app, volver }) {
     reglaFiltro = Object.hasOwn(REGLAS, m) ? m : null;
     let seleccion = reglaFiltro ? BANCO.filter(x => x.reglas.includes(reglaFiltro)) : [...BANCO];
     if (modo === 'todas') seleccion = [...BANCO];
-    cola = MEZCLAR(seleccion);
+    cola = modo === 'todas' ? [...seleccion] : MEZCLAR(seleccion);
     totalRonda = cola.length;
     aciertos = 0; errores = 0; actual = null;
     siguiente();
