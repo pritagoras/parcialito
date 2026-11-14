@@ -27,6 +27,7 @@ import { abrirTelomeros, TITULO as TITULO_TELOMEROS } from './telomeros.js?v=202
 import { abrirAtlasCromosomas, TITULO as TITULO_ATLAS_CROMOSOMAS } from './atlas-cromosomas.js?v=20261110-1';
 import { abrirGuiaKuhn } from './guia-kuhn.js?v=20261113-ipc-kath';
 import { abrirDeduccionNatural, TITULO as TITULO_DEDUCCION_NATURAL } from './deduccion-natural.js?v=20261114-10';
+import { abrirFormalizacion } from './formalizacion.js?v=20261114-1';
 import { abrirEnvioImagenes } from './envios.js?v=20261114-3';
 
 const app = document.getElementById('app');
@@ -1794,6 +1795,7 @@ function vistaMateria(i) {
       </div>
       ${m.segundoParcial ? `<button class="banner-repaso ipc-p2-entry" id="btn-ipc-p2"><span>📜 Segundo parcial de IPC<small>${m.segundoParcial.preguntas} preguntas · ${m.segundoParcial.tarjetas} tarjetas · modelo de 9 puntos</small></span><b>▶</b></button>` : ''}
       ${m.id === 'ipc-2' ? '<button class="banner-repaso" id="btn-ipc-deduccion"><span>🧩 Deducción natural<small>120 ejercicios interactivos · MP, MT, SH, SD y DN</small></span><b>▶</b></button>' : ''}
+      ${m.id === 'ipc-2' ? '<button class="banner-repaso" id="btn-ipc-formalizacion"><span>🔣 Formalización<small>Lenguaje simbólico · enunciados y argumentos</small></span><b>▶</b></button>' : ''}
       ${actividades.length ? `<button class="banner-repaso" id="btn-grupo-juegos"><span>🎮 Juegos interactivos<small>${plural(actividades.length, 'juego disponible', 'juegos disponibles')} · elegí cuál abrir</small></span><b>▶</b></button>` : ''}
       ${m.temas.some(tieneCrucigrama) ? `<button class="banner-repaso" id="btn-grupo-crucigramas"><span>🔤 Crucigramas<small>${plural(m.temas.filter(tieneCrucigrama).length, 'crucigrama disponible', 'crucigramas disponibles')} · elegí un tema</small></span><b>▶</b></button>` : ''}
       <div class="temas-barra">
@@ -1887,6 +1889,10 @@ function vistaMateria(i) {
   document.getElementById('btn-ipc-deduccion')?.addEventListener('click', () => {
     Sonido.clic();
     abrirDeduccionNatural({ app, volver: () => vistaMateria(i), materia: m });
+  });
+  document.getElementById('btn-ipc-formalizacion')?.addEventListener('click', () => {
+    Sonido.clic();
+    abrirFormalizacion({ app, volver: () => vistaMateria(i), materia: m });
   });
   document.getElementById('btn-grupo-juegos')?.addEventListener('click', () => {
     Sonido.clic();
