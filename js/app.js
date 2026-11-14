@@ -814,16 +814,6 @@ function vistaInicio() {
           <span class="sp-banco-flecha" aria-hidden="true">↗</span>
         </button>
       </section>
-      <section class="banner-segundo banner-megaclase" aria-labelledby="megaclase-titulo">
-        <div class="sp-cabecera"><span class="sp-sello">✦ MEGACLASE · MARU</span><span class="sp-numero">CBC · 2026</span></div>
-        <h2 id="megaclase-titulo">Repaso del segundo parcial</h2>
-        <p class="sp-descripcion">Practicá las 135 preguntas del compilado con respuesta explicada y sus figuras originales. Las que ya dominás quedan al final cuando vuelvas.</p>
-        <button class="sp-tema" id="btn-megaclase" type="button">
-          <span class="sp-tema-icono" aria-hidden="true">📝</span>
-          <span class="sp-tema-texto"><strong>Entrar al repaso de Maru</strong><small>Opción múltiple · ${dominadasMegaclase}/${MEGACLASE_TOTAL} dominadas</small></span>
-          <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
-        </button>
-      </section>
       <section class="banner-segundo banner-ipc-segundo" aria-labelledby="ipc-kath-titulo">
         <div class="sp-cabecera"><span class="sp-sello">✦ ESPACIO DE ESTUDIO</span><span class="sp-numero">IPC · KATH</span></div>
         <h2 id="ipc-kath-titulo">IPC para KATH</h2>
@@ -839,6 +829,17 @@ function vistaInicio() {
           <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
         </button>
       </section>
+      <section class="banner-segundo banner-megaclase" aria-labelledby="megaclase-titulo">
+        <div class="sp-cabecera"><span class="sp-sello">✦ MEGACLASE · MARU</span><span class="sp-numero">CBC · 2026</span></div>
+        <h2 id="megaclase-titulo">Repaso del segundo parcial</h2>
+        <p class="sp-descripcion">Practicá las 135 preguntas del compilado con respuesta explicada y sus figuras originales. Las que ya dominás quedan al final cuando vuelvas.</p>
+        <button class="sp-tema" id="btn-megaclase" type="button">
+          <span class="sp-tema-icono" aria-hidden="true">📝</span>
+          <span class="sp-tema-texto"><strong>Entrar al repaso de Maru</strong><small>Opción múltiple · ${dominadasMegaclase}/${MEGACLASE_TOTAL} dominadas</small></span>
+          <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
+        </button>
+      </section>
+
       <button class="banner-lab" id="btn-lab" type="button"><span class="banner-lab-icon">🧬</span><span class="banner-lab-text"><strong>LAB <span class="banner-lab-nuevo">NUEVO</span></strong><small>Explorá la biología con modelos interactivos y recorridos guiados.</small></span><span class="banner-lab-flecha">↗</span></button>
       ${estaInstalada() || !esCelular() ? '' : `
         <div class="instalar-app-wrap">
