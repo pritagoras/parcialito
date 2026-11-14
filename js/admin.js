@@ -34,7 +34,7 @@ async function cargarVistaPreviaImagenes(){
       if(response.status===401&&refresh){await renovar();response=await fetch(URL+'/storage/v1/object/sign/parcialito-envios/'+path,{method:'POST',headers:headers(),body:JSON.stringify({expiresIn:3600})});}
       if(!response.ok)throw Error('No se pudieron generar las vistas previas.');
       const signed=await response.json();const raw=signed.signedURL||signed.signedUrl||'';
-      const src=raw.startsWith('https://')||raw.startsWith('http://')?raw:URL+(raw.startsWith('/storage/v1/')?raw:raw.startsWith('/')?'/storage/v1'+raw:'/storage/v1/'+raw.replace(/^\\/+/,''));
+      const src=raw.startsWith('https://')||raw.startsWith('http://')?raw:URL+(raw.startsWith('/storage/v1/')?raw:'/storage/v1'+(raw.startsWith('/')?raw:'/'+raw));
       return '<a class="inbox-preview-item" href="admin-imagenes.html" title="'+esc(file.nombre||'Ver envío')+'"><img src="'+esc(src)+'" alt="'+esc(file.nombre||'Imagen recibida')+'" loading="lazy"><small>'+esc(row.apodo||row.categoria||'Anónimo')+'</small></a>';
     })));
     const grid=document.createElement('div');grid.className='inbox-preview-grid';grid.innerHTML=items.join('');
