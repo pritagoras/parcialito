@@ -66,7 +66,7 @@ const PLANTILLAS = [
   {
     id: 'dn-mt-mp', titulo: 'Combinar tres reglas', nivel: 3,
     premisas: ['¬¬p', 'p → q', 'q → r', '¬r'],
-    pasos: [{ f: 'p', r: 'DN', refs: [1] }, { f: '¬q', r: 'MT', refs: [3, 4] }, { f: '¬p', r: 'MT', refs: [2, 5] }]
+    pasos: [{ f: 'p', r: 'DN', refs: [1] }, { f: '¬q', r: 'MT', refs: [3, 4] }, { f: '¬p', r: 'MT', refs: [2, 6] }]
   }
 ];
 
@@ -175,6 +175,7 @@ export function abrirDeduccionNatural({ app, volver }) {
   let errores = 0;
   let resueltas = new Set();
   let progreso = cargarProgreso();
+  let feedbackTexto = '';
 
   const pantallaInicio = () => {
     const total = progreso.total || 0;
@@ -266,6 +267,8 @@ export function abrirDeduccionNatural({ app, volver }) {
     const paso = actual.pasos[seleccion];
     const cards = paso ? opcionesPara(paso, seleccion) : [];
     const lineaInicio = actual.premisas.length + 1;
+    const feedbackMarkup = feedbackTexto ? '<div class="dn-feedback ok">' + ESCAPAR(feedbackTexto) + '</div>' : '';
+    feedbackTexto = '';
     app.innerHTML = `
       <main class="pantalla dn-wrap">
         <div class="dn-top"><button class="btn enlace" id="dn-salir">← Salir</button><span class="dn-kicker">EJERCICIO ${BANCO.length - cola.length} / ${BANCO.length}</span></div>
@@ -279,6 +282,7 @@ export function abrirDeduccionNatural({ app, volver }) {
             <span class="dn-num">${l.n}.</span><span class="dn-formula">${ESCAPAR(l.f)}</span><span class="dn-just">${ESCAPAR(l.just)}</span>
           </div>`).join('')}
         </section>
+        ${feedbackMarkup}
         ${paso ? `
           <section class="dn-select">
             <h3>Justificá la línea ${lineaInicio + seleccion}: <code>${ESCAPAR(paso.f)}</code></h3>
@@ -315,9 +319,8 @@ export function abrirDeduccionNatural({ app, volver }) {
       progreso.correctas = (progreso.correctas || 0) + 1;
       guardarProgreso(progreso);
       resueltas.add(index);
+      feedbackTexto = '¡Correcto! ' + paso.r + ' con las líneas ' + paso.refs.join(' y ') + '. ' + REGLAS[paso.r].pista;
       Sonido.acierto?.();
-      feedback.className = 'dn-feedback ok';
-      feedback.innerHTML = `<b>¡Correcto!</b> ${paso.r} con las líneas ${paso.refs.join(' y ')}. ${ESCAPAR(REGLAS[paso.r].pista)}`;
       pintarEjercicio();
     } else {
       errores++;
