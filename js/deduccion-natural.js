@@ -87,6 +87,8 @@ function crearBanco() {
 const BANCO = crearBanco();
 
 const etiqueta = (r, refs) => refs.length ? r + ' ' + refs.join('–') : r;
+const reglaPista = r => (REGLAS[String(r).toUpperCase().replace('.', '')] || {}).pista || 'Aplicación de la regla indicada.';
+
 const claveDePaso = p => {
   const just = etiqueta(p.r, p.refs);
   if (p.hideFormula && p.hideJustification) return 'AMBOS::' + p.f + '::' + just;
@@ -287,7 +289,7 @@ export function abrirDeduccionNatural({ app, volver }) {
             <div id="dn-feedback" aria-live="polite"></div>
           </section>` : `
           <div class="dn-feedback ok"><b>Demostración completa.</b> Todas las líneas están justificadas correctamente.</div>
-          <div class="dn-rule-detail">${actual.pasos.map(p=>'<b>'+p.r+'</b>: '+ESCAPAR(REGLAS[p.r].pista)).join('<br>')}</div>
+          <div class="dn-rule-detail">${actual.pasos.map(p=>'<b>'+p.r+'</b>: '+ESCAPAR(reglaPista(p.r))).join('<br>')}</div>
           <button class="btn primario" id="dn-siguiente">Siguiente ejercicio →</button>`}
         <div class="dn-bottom"><span class="dn-muted">${reglaFiltro ? 'Filtro: '+reglaFiltro+' · ' : ''}Nivel ${actual.nivel} / 3</span><button class="btn secundario" id="dn-menu">Volver al módulo</button></div>
       </main>`;
@@ -328,7 +330,7 @@ export function abrirDeduccionNatural({ app, volver }) {
       guardarProgreso(progreso);
       reveladas.add(index);
       resueltas.add(index);
-      feedbackTexto = 'Respuesta correcta: ' + paso.f + ' — ' + etiqueta(paso.r, paso.refs) + '. ' + ((REGLAS[paso.r.replace('.', '')] || REGLAS[paso.r] || {}).pista || 'Revisá la regla aplicada y las líneas citadas.') + ' Continuá con el siguiente espacio.';
+      feedbackTexto = 'Respuesta correcta: ' + paso.f + ' — ' + etiqueta(paso.r, paso.refs) + '. ' + (reglaPista(paso.r) || 'Revisá la regla aplicada y las líneas citadas.') + ' Continuá con el siguiente espacio.';
       feedbackTipo = 'bad';
       Sonido.error?.();
       pintarEjercicio();
