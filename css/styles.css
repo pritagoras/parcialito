@@ -1456,3 +1456,27 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
   .ipc-p2-bank-print .ipc-p2-expansion h4 { color:#111 !important; }
   .ipc-p2-bank-print .ipc-p2-bank-footer { color:#555 !important; border-color:#bbb !important; }
 }
+
+
+/* Acceso destacado al corrector de grillas del segundo parcial */
+.banner-corrector {
+  display:flex; align-items:center; gap:12px; width:100%; margin:14px 0 16px; padding:13px 15px;
+  color:var(--crema); text-align:left; text-decoration:none; border:1px solid rgba(155,123,255,.72);
+  border-radius:17px; background:linear-gradient(105deg,rgba(91,62,166,.48),rgba(37,27,70,.96) 58%,rgba(24,18,48,.98));
+  box-shadow:inset 0 1px rgba(255,255,255,.045),0 9px 25px rgba(5,3,15,.18);
+  transition:transform .18s,border-color .18s,box-shadow .18s;
+}
+.banner-corrector:hover { transform:translateY(-2px); border-color:var(--ambar); box-shadow:0 12px 30px rgba(5,3,15,.24),0 0 0 3px rgba(155,123,255,.08); }
+.banner-corrector:focus-visible { outline:3px solid var(--ambar); outline-offset:3px; }
+.corrector-sello { display:grid; place-items:center; flex:0 0 42px; width:42px; height:42px; border-radius:13px; color:#1b1230; background:linear-gradient(145deg,#c4b4ff,#9B7BFF); font-size:1.35rem; font-weight:900; }
+.corrector-texto { display:flex; flex:1; min-width:0; flex-direction:column; gap:4px; }
+.corrector-texto strong { color:var(--crema); font-size:.91rem; line-height:1.25; }
+.corrector-texto small { color:var(--tenue); font-size:.73rem; line-height:1.35; }
+.corrector-accion { flex-shrink:0; color:#ffe47a; font-size:.76rem; font-weight:900; white-space:nowrap; }
+@media(max-width:480px) {
+  .banner-corrector { gap:9px; margin:12px 0 14px; padding:11px; }
+  .corrector-sello { flex-basis:38px; width:38px; height:38px; }
+  .corrector-texto strong { font-size:.82rem; }
+  .corrector-texto small { font-size:.68rem; }
+  .corrector-accion { font-size:.7rem; }
+}
