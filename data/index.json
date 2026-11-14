@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-12T19:35:49Z",
+  "generado": "2026-11-14T06:04:42Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -98,10 +98,22 @@
           "preguntas": 160
         },
         {
+          "id": "biologia-celular/16-mix-adicional-primer-parcial",
+          "nombre": "Preguntas adicionales · Mix Primer Parcial",
+          "archivo": "data/biologia-celular/16-mix-adicional-primer-parcial.json",
+          "preguntas": 40
+        },
+        {
           "id": "biologia-celular/16-tema-proteinas-convertido",
           "nombre": "Proteínas",
           "archivo": "data/biologia-celular/16-tema-proteinas-convertido.json",
           "preguntas": 30
+        },
+        {
+          "id": "biologia-celular/17-mix-adicional-primer-parcial",
+          "nombre": "Preguntas adicionales · Mix Primer Parcial",
+          "archivo": "data/biologia-celular/17-mix-adicional-primer-parcial.json",
+          "preguntas": 50
         },
         {
           "id": "biologia-celular/17-tema-quimica-general-y-agua-convertido",
@@ -286,6 +298,7 @@
       "id": "ipc-2",
       "nombre": "IPC para KATH",
       "emoji": "📜",
+      "color": "#B79DFF",
       "temas": [
         {
           "id": "ipc-2/01-popper",
@@ -397,8 +410,7 @@
           }
         ],
         "tarjetas": 364
-      },
-      "color": "#B79DFF"
+      }
     }
   ]
 }
