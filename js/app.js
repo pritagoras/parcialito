@@ -26,7 +26,7 @@ import { abrirLab } from './lab.js?v=20261111-1';
 import { abrirTelomeros, TITULO as TITULO_TELOMEROS } from './telomeros.js?v=20261027-1';
 import { abrirAtlasCromosomas, TITULO as TITULO_ATLAS_CROMOSOMAS } from './atlas-cromosomas.js?v=20261110-1';
 import { abrirGuiaKuhn } from './guia-kuhn.js?v=20261113-ipc-kath';
-import { abrirEnvioImagenes } from './envios.js?v=20261114-2';
+import { abrirEnvioImagenes } from './envios.js?v=20261114-3';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -788,9 +788,8 @@ function vistaInicio() {
       <section class="banner-imagenes" aria-label="Compartir imágenes">
         <div class="banner-imagenes-icono" aria-hidden="true">📸</div>
         <div class="banner-imagenes-texto">
-          <strong>Se vienen imágenes a Parcialito</strong>
-          <p>De tus apuntes, de tu gato, memes o lo que quieras compartir. ¡Mandámelas!</p>
-          <small>Tu aporte es voluntario y solo yo voy a recibirlo.</small>
+          <strong>Compartí con Parcialito</strong>
+          <p>Apuntes, fotos, mascotas o memes.</p>
         </div>
         <button class="btn-subir-imagen" id="btn-subir-imagen" type="button">＋ Subir imagen</button>
       </section>
