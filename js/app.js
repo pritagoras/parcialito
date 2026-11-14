@@ -26,7 +26,7 @@ import { abrirLab } from './lab.js?v=20261111-1';
 import { abrirTelomeros, TITULO as TITULO_TELOMEROS } from './telomeros.js?v=20261027-1';
 import { abrirAtlasCromosomas, TITULO as TITULO_ATLAS_CROMOSOMAS } from './atlas-cromosomas.js?v=20261110-1';
 import { abrirGuiaKuhn } from './guia-kuhn.js?v=20261113-ipc-kath';
-import { abrirDeduccionNatural, TITULO as TITULO_DEDUCCION_NATURAL } from './deduccion-natural.js?v=20261114-3';
+import { abrirDeduccionNatural, TITULO as TITULO_DEDUCCION_NATURAL } from './deduccion-natural.js?v=20261114-4';
 import { abrirEnvioImagenes } from './envios.js?v=20261114-3';
 
 const app = document.getElementById('app');
