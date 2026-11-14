@@ -784,6 +784,11 @@ function vistaInicio() {
         </div>
       </header>
       <p class="bajada">Elegí una materia y practicá con preguntas de opción múltiple.</p>
+      <a class="banner-corrector" href="./corrector.html" aria-label="Abrir la corrección del segundo parcial, temas 43 y 44">
+        <span class="corrector-sello" aria-hidden="true">✓</span>
+        <span class="corrector-texto"><strong>Corrección del segundo parcial</strong><small>Compará tus respuestas con las grillas oficiales · Temas 43 y 44</small></span>
+        <span class="corrector-accion">Abrir ↗</span>
+      </a>
       <section class="banner-segundo" aria-labelledby="segundo-parcial-titulo">
         <div class="sp-cabecera"><span class="sp-sello">✦ BIOLOGÍA 1</span><span class="sp-numero">PARCIALES</span></div>
         <h2 id="segundo-parcial-titulo">Practicá los dos parciales</h2>
