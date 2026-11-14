@@ -1,7 +1,7 @@
 // ==========================================================
 // Deducción natural para IPC: práctica interactiva por reglas.
 // Se abre desde Juegos interactivos de la materia IPC.
-// Banco procedural: 10 estructuras de demostración x 8 sustituciones
+// Banco procedural: 17 estructuras de demostración x 8 sustituciones
 // de letras = 120 ejercicios, con práctica por regla y modo mixto.
 // ==========================================================
 
@@ -226,7 +226,7 @@ export function abrirDeduccionNatural({ app, volver }) {
         <button class="btn enlace" id="dn-volver">← IPC</button>
         <div class="dn-top"><span class="dn-kicker">IPC · LÓGICA FORMAL</span><span class="dn-muted">BANCO DE PRÁCTICA</span></div>
         <h1>Deducción natural</h1>
-        <p class="dn-intro">Completá demostraciones línea por línea. Elegí una línea vacía y colocá la ficha con la regla y las líneas que justifican el paso. Cada respuesta se corrige al instante.</p>
+        <p class="dn-intro">Completá demostraciones línea por línea: descubrí qué fórmula sigue y elegí su regla y las líneas que la justifican. Cada respuesta se corrige al instante.</p>
         <div class="dn-stats">
           <div class="dn-stat"><b>${BANCO.length}</b><small>ejercicios disponibles</small></div>
           <div class="dn-stat"><b>${correctas}</b><small>líneas correctas acumuladas</small></div>
@@ -250,7 +250,7 @@ export function abrirDeduccionNatural({ app, volver }) {
 
   function iniciar(m) {
     modo = m;
-    reglaFiltro = Object.hasOwn(REGLAS, m) ? m : null;
+    reglaFiltro = null;
     const seleccion = [...BANCO];
     cola = MEZCLAR(seleccion);
     totalRonda = cola.length;
@@ -348,7 +348,6 @@ export function abrirDeduccionNatural({ app, volver }) {
   function comprobar(eleccion, index) {
     const paso = actual.pasos[index];
     const correcta = paso.f + '||' + etiqueta(paso.r, paso.refs);
-    const feedback = app.querySelector('#dn-feedback');
     if (eleccion === correcta) {
       aciertos++;
       progreso.total = (progreso.total || 0) + 1;
