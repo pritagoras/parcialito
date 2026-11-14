@@ -86,7 +86,7 @@ function crearBanco() {
 }
 const BANCO = crearBanco();
 
-const etiqueta = (r, refs) => refs.length ? r + ' ' + refs.join('–') : r;
+
 const reglaPista = r => (REGLAS[String(r).toUpperCase().replace('.', '')] || {}).pista || 'Aplicación de la regla indicada.';
 
 const claveDePaso = p => {
