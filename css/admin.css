@@ -117,3 +117,5 @@ body.admin-dashboard{height:100vh;height:100dvh;overflow:hidden}
     touch-action: pan-y;
   }
 }
+
+.admin-images-link{white-space:nowrap;text-decoration:none;background:#342650;border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--text);font-weight:700}

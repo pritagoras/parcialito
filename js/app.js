@@ -26,6 +26,7 @@ import { abrirLab } from './lab.js?v=20261111-1';
 import { abrirTelomeros, TITULO as TITULO_TELOMEROS } from './telomeros.js?v=20261027-1';
 import { abrirAtlasCromosomas, TITULO as TITULO_ATLAS_CROMOSOMAS } from './atlas-cromosomas.js?v=20261110-1';
 import { abrirGuiaKuhn } from './guia-kuhn.js?v=20261113-ipc-kath';
+import { abrirEnvioImagenes } from './envios.js?v=20261114-1';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -784,6 +785,15 @@ function vistaInicio() {
         </div>
       </header>
       <p class="bajada">Elegí una materia y practicá con preguntas de opción múltiple.</p>
+      <section class="banner-imagenes" aria-label="Compartir imágenes">
+        <div class="banner-imagenes-icono" aria-hidden="true">📸</div>
+        <div class="banner-imagenes-texto">
+          <strong>Se vienen imágenes a Parcialito</strong>
+          <p>De tus apuntes, de tu gato, memes o lo que quieras compartir. ¡Mandámelas!</p>
+          <small>Tu aporte es voluntario y solo yo voy a recibirlo.</small>
+        </div>
+        <button class="btn-subir-imagen" id="btn-subir-imagen" type="button">＋ Subir imagen</button>
+      </section>
       <a class="banner-corrector" href="./corrector.html" aria-label="Abrir la corrección del segundo parcial, temas 43 y 44">
         <span class="corrector-sello" aria-hidden="true">✓</span>
         <span class="corrector-texto"><strong>Corrección del segundo parcial</strong><small>Compará tus respuestas con las grillas oficiales · Temas 43 y 44</small></span>
@@ -893,6 +903,7 @@ function vistaInicio() {
     </main>`;
 
   document.getElementById('btn-sonido').addEventListener('click', alternarSonido);
+  document.getElementById('btn-subir-imagen')?.addEventListener('click', () => { Sonido.clic(); abrirEnvioImagenes({ avisar }); });
   document.getElementById('btn-sp-primer')?.addEventListener('click', () => { Sonido.clic(); lanzarPrimerParcial(); });
   document.getElementById('btn-sp-ciclo')?.addEventListener('click', () => { Sonido.clic(); lanzarSegundoParcial(); });
   document.getElementById('btn-sp-mixto')?.addEventListener('click', () => { Sonido.clic(); lanzarSimulacroMixto(); });
