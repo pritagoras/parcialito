@@ -1480,3 +1480,15 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
   .corrector-texto small { font-size:.68rem; }
   .corrector-accion { font-size:.7rem; }
 }
+
+
+/* ---------- Envío voluntario de imágenes ---------- */
+.banner-imagenes{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:14px;margin:0 0 1.25rem;padding:15px 17px;background:linear-gradient(120deg,rgba(155,123,255,.16),rgba(46,32,88,.88));border:1px solid rgba(155,123,255,.55);border-radius:var(--radio)}
+.banner-imagenes-icono{width:46px;height:46px;display:grid;place-items:center;background:rgba(155,123,255,.16);border:1px solid var(--linea);border-radius:13px;font-size:24px}
+.banner-imagenes-texto{min-width:0}
+.banner-imagenes-texto strong{display:block;font-size:1rem}
+.banner-imagenes-texto p{margin:3px 0;color:var(--crema);font-size:.9rem;line-height:1.35}
+.banner-imagenes-texto small{color:var(--tenue);font-size:.76rem}
+.btn-subir-imagen{border:1px solid #b9a5ff;border-radius:12px;background:var(--violeta);color:#170f2e;padding:11px 14px;font-weight:800;white-space:nowrap}
+.btn-subir-imagen:hover{filter:brightness(1.08)}
+@media(max-width:540px){.banner-imagenes{grid-template-columns:auto minmax(0,1fr);gap:10px;padding:13px}.banner-imagenes-icono{width:40px;height:40px;font-size:21px}.banner-imagenes-texto strong{font-size:.94rem}.banner-imagenes-texto p{font-size:.82rem}.banner-imagenes-texto small{font-size:.7rem}.btn-subir-imagen{grid-column:1/-1;width:100%;padding:12px}}
