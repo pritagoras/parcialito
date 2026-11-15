@@ -344,17 +344,6 @@
       "explicacion": "La opción establece qué debería observarse si la hipótesis es correcta: menor consumo de agua sin una reducción relevante de la producción en parcelas comparables."
     },
     {
-      "pregunta": "¿Cuál de las siguientes afirmaciones describe mejor qué es una hipótesis científica en una investigación?",
-      "opciones": [
-        "Un resultado que ya fue confirmado y no puede revisarse.",
-        "Una afirmación o propuesta explicativa que se formula para dar cuenta de un fenómeno y que puede someterse a contrastación.",
-        "Una lista de observaciones sin relación entre sí.",
-        "Una conclusión que se sigue necesariamente de cualquier conjunto de datos."
-      ],
-      "correcta": "B",
-      "explicacion": "Una hipótesis propone una explicación o relación que debe evaluarse. No equivale a un dato aislado ni a una verdad ya demostrada."
-    },
-    {
       "pregunta": "Un estudio sostiene que cierta bacteria produce una sustancia que inhibe el crecimiento de un hongo. ¿Cuál sería una implicación contrastadora pertinente?",
       "opciones": [
         "La bacteria fue aislada en un laboratorio universitario.",
