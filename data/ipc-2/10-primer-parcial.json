@@ -353,6 +353,94 @@
       ],
       "correcta": "D",
       "explicacion": "La predicción describe un efecto observable que se espera si la hipótesis es correcta. La procedencia de la muestra y las afirmaciones generales no son consecuencias contrastables de esa hipótesis."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes esquemas corresponde al silogismo hipotético?",
+      "opciones": [
+        "p → q; q → r; por lo tanto, p → r.",
+        "p → q; q; por lo tanto, p.",
+        "p → q; ¬p; por lo tanto, ¬q.",
+        "p ∨ q; ¬p; por lo tanto, ¬q."
+      ],
+      "correcta": "A",
+      "explicacion": "El silogismo hipotético encadena dos condicionales: si p implica q y q implica r, entonces p implica r. La conclusión conserva la relación condicional entre el primer antecedente y el último consecuente."
+    },
+    {
+      "pregunta": "Un razonamiento sostiene: «Si se corta la energía, se detiene el servidor. Si se detiene el servidor, se interrumpe el servicio. Por lo tanto, si se corta la energía, se interrumpe el servicio». ¿Qué forma presenta?",
+      "opciones": [
+        "Modus tollens.",
+        "Silogismo hipotético.",
+        "Afirmación del consecuente.",
+        "Silogismo disyuntivo."
+      ],
+      "correcta": "B",
+      "explicacion": "Se encadenan dos condicionales: corte de energía → detención del servidor → interrupción del servicio. Por transitividad condicional, se obtiene el condicional entre el primer y el último término."
+    },
+    {
+      "pregunta": "Sean p: «estudio», q: «apruebo el examen» y r: «promociono la materia». A partir de p → q y q → r, ¿qué conclusión se sigue por silogismo hipotético?",
+      "opciones": [
+        "r → p.",
+        "q → p.",
+        "p → r.",
+        "¬p → ¬r."
+      ],
+      "correcta": "C",
+      "explicacion": "La primera premisa conecta p con q y la segunda conecta q con r. Al encadenarlas, se concluye p → r. No se afirma que p haya ocurrido, sino que se establece una relación condicional."
+    },
+    {
+      "pregunta": "¿Por qué es válido el esquema p → q; q → r; ∴ p → r?",
+      "opciones": [
+        "Porque q es necesariamente verdadero.",
+        "Porque la conclusión afirma el consecuente de la primera premisa.",
+        "Porque toda proposición condicional es verdadera.",
+        "Porque si p fuera verdadero, q tendría que serlo, y entonces r también; por eso no puede haber premisas verdaderas y conclusión falsa."
+      ],
+      "correcta": "D",
+      "explicacion": "Si p es verdadero, por el primer condicional q debe ser verdadero; y por el segundo, r también. Por lo tanto, no hay un caso con ambas premisas verdaderas y la conclusión falsa."
+    },
+    {
+      "pregunta": "Un estudiante propone: «Si llueve, se moja la calle. Si se moja la calle, disminuye el polvo. Entonces, si llueve, disminuye el polvo». ¿Qué evaluación corresponde?",
+      "opciones": [
+        "Es válido: encadena correctamente dos condicionales.",
+        "Es inválido: afirma el consecuente.",
+        "Es inválido: niega el antecedente.",
+        "Es inválido: la conclusión no puede ser condicional."
+      ],
+      "correcta": "A",
+      "explicacion": "La forma es p → q; q → r; por lo tanto p → r. La validez depende de la estructura, no de que los hechos del ejemplo sean verdaderos."
+    },
+    {
+      "pregunta": "¿Cuál de estas inferencias NO es un silogismo hipotético válido?",
+      "opciones": [
+        "Si p → q y q → r, entonces p → r.",
+        "Si p → q y q → r, entonces r → p.",
+        "Si a → b y b → c, entonces a → c.",
+        "Si m → n y n → o, entonces m → o."
+      ],
+      "correcta": "B",
+      "explicacion": "El encadenamiento permite ir desde el antecedente del primer condicional hasta el consecuente del segundo. No permite invertir la dirección y concluir r → p."
+    },
+    {
+      "pregunta": "Se afirma: «Si el sensor detecta humo, se activa la alarma. Si se activa la alarma, se evacúa el edificio». ¿Qué conclusión expresa correctamente el encadenamiento?",
+      "opciones": [
+        "Si se evacúa el edificio, el sensor detectó humo.",
+        "Si no se detecta humo, no se evacúa el edificio.",
+        "Si el sensor detecta humo, se evacúa el edificio.",
+        "Si se activa la alarma, el sensor necesariamente detectó humo."
+      ],
+      "correcta": "C",
+      "explicacion": "Las premisas tienen la forma p → q y q → r. El silogismo hipotético permite concluir p → r, pero no invertir los condicionales ni negar sus antecedentes."
+    },
+    {
+      "pregunta": "¿Qué diferencia permite distinguir el silogismo hipotético de una afirmación del consecuente?",
+      "opciones": [
+        "El silogismo hipotético concluye siempre una disyunción; la afirmación del consecuente, un condicional.",
+        "El silogismo hipotético usa dos condicionales encadenados y concluye otro condicional; la afirmación del consecuente infiere p desde q y p → q, lo cual es inválido.",
+        "Ambos son válidos, pero el primero tiene tres premisas.",
+        "La afirmación del consecuente es válida solo cuando p y q son verdaderos."
+      ],
+      "correcta": "B",
+      "explicacion": "El silogismo hipotético tiene la forma p → q; q → r; ∴ p → r. En cambio, p → q; q; ∴ p no es válido, porque q podría ser verdadero por otra razón."
     }
   ]
 }
