@@ -1129,21 +1129,33 @@ function preguntasDeTemaSegundoParcial(pool, tema) {
 }
 
 const TEMAS_PRIMER_PARCIAL = [
-  { id: 'virus', nombre: 'Virus, bacteriófagos, viroides y priones', icono: '🦠', descripcion: 'Estructura viral, ciclos de infección y agentes subvirales.', patron: /\b(virus|viral|virion|bacteriofag|fago|capside|profago|lisogen|litic|viroide|prion|envoltura viral)\b/ },
-  { id: 'celula', nombre: 'Organización celular', icono: '🔬', descripcion: 'Células procariotas y eucariotas, organelas y niveles de organización.', patron: /\b(celula|procari|eucari|organelas?|organelo|nucleo|nucleolo|ribosoma|citoesqueleto|centriolo|pared celular|bacteria|arquea)\b/ },
-  { id: 'membrana', nombre: 'Membranas y transporte', icono: '🫧', descripcion: 'Membrana plasmática, lípidos, proteínas y transporte celular.', patron: /\b(membrana|fosfolipid|glucolipid|colesterol|bicapa|difusion|osmosis|transporte|canal ionico|bomba|endocitosis|exocitosis)\b/ },
-  { id: 'biomoleculas', nombre: 'Biomoléculas y ácidos nucleicos', icono: '🧬', descripcion: 'Agua, glúcidos, lípidos, proteínas, nucleótidos y ADN/ARN.', patron: /\b(agua|glucid|carbohidrat|monosacar|disacar|polisacar|lipid|acido graso|triglicer|proteina|aminoacid|enzima|nucleotid|adn|arn|base nitrogenada|chargaff|fosfodiester)\b/ },
-  { id: 'metabolismo', nombre: 'Metabolismo y energía', icono: '⚡', descripcion: 'Enzimas, reacciones metabólicas, respiración y fotosíntesis.', patron: /\b(metabol|atp|respiracion|glucolisis|krebs|cadena respiratoria|fermentacion|fotosintesis|cloroplast|tilacoide|enzim|sustrato|catalisis)\b/ },
+  { id: 'virus', nombre: 'Virus, bacteriófagos, viroides y priones', icono: '🦠', descripcion: 'Estructura viral, ciclos de infección y agentes subvirales.', patron: /\\b(virus|viriones?|bacteriofagos?|fagos?|capsides?|profagos?|lisogenia|lisogenicos?|liticos?|viroides?|priones?|retrovirus|hiv)\\b/ },
+  { id: 'celula', nombre: 'Organización celular', icono: '🔬', descripcion: 'Células procariotas y eucariotas, organelas y niveles de organización.', patron: /\\b(celulas?|celular|procariotas?|eucariotas?|organismos pluricelulares|organizacion celular|organelas?|organelos?|nucleos?|nucleolos?|ribosomas?|citoesqueleto|centriolos?|pared celular|bacterias?|arqueas?|mitocondrias?|peroxisomas?|lisosomas?|reticulo|golgi|microtubulos?|microfilamentos?|filamentos intermedios|actina|tubulina|microscopios?|niveles? de organizacion|teoria celular|homeostasis|endosimbiosis|endosimbionte|endomembranas?|copii|srp|histona|carioteca|resolucion|reinos?|plantae|sistemas abiertos|organo)\\b/ },
+  { id: 'membrana', nombre: 'Membranas y transporte', icono: '🫧', descripcion: 'Membrana plasmática, lípidos y transporte celular.', patron: /\\b(membranas?|fosfolipidos?|glucolipidos?|colesterol|bicapas?|difusion|osmosis|transporte|canales? ionicos?|bombas?|endocitosis|exocitosis|fagocitosis|pinocitosis|permeabilidad|potencial de membrana|gradiente electroquimico|glucocalix|oligosacaridos|sodio|potasio|cftr)\\b/ },
+  { id: 'metabolismo', nombre: 'Metabolismo y energía', icono: '⚡', descripcion: 'Enzimas, reacciones metabólicas, respiración y fotosíntesis.', patron: /\\b(metabolismo|atp|anabolicos?|catabolicos?|exergonicos?|endergonicos?|respiracion|glucolisis|krebs|cadena respiratoria|fosforilacion oxidativa|fermentacion|fotosintesis|cloroplastos?|tilacoides?|calvin|enzimas?|sustratos?|catalisis|km|vmax|inhibicion|retroinhibicion|redox|oxido.?reduccion|nadph|nadh|fadh2|coenzimas?|fotolisis|fotorrespiracion|energia libre|energia|zimogeno|pep carboxilasa|rubisco|anabolica|catabolica)\\b/ },
+  { id: 'biomoleculas', nombre: 'Biomoléculas y ácidos nucleicos', icono: '🧬', descripcion: 'Agua, glúcidos, lípidos, proteínas, nucleótidos y ADN/ARN.', patron: /\\b(agua|glucidos?|carbohidratos?|monosacaridos?|disacaridos?|polisacaridos?|lactosa|sacarosa|almidon|glucogeno|celulosa|lipidos?|acidos grasos|trigliceridos?|triacilgliceroles?|proteinas?|aminoacidos?|peptidos?|nucleotidos?|nucleosidos?|acidos nucleicos|adn|arn|bases nitrogenadas|chargaff|fosfodiester|vitaminas?|enlaces covalentes|puentes de hidrogeno|esteroides?|colageno|fenilalanina|condensacion|hidrolisis|hidrofobicos?|anfipaticos?|buffers?|saponificable|ribosa|desoxirribosa)\\b/ },
   { id: 'integracion', nombre: 'Integración y conceptos generales', icono: '🧩', descripcion: 'Preguntas integradoras y conceptos que atraviesan varios temas.', patron: null }
 ];
 
 function clasificarPreguntaPrimerParcial(q) {
-  const contenido = normalizarTerminoBanco([
-    q.subtema, q.tema, q.pregunta, q.texto, q.explicacion,
-    ...(q.opciones || [])
-  ].join(' '));
+  const subtema = normalizarTerminoBanco(q.subtema || '');
+  if (/^integracion\\b/.test(subtema)) return 'integracion';
+
+  // Los subtemas explícitos tienen prioridad sobre palabras sueltas del enunciado.
   for (const tema of TEMAS_PRIMER_PARCIAL) {
-    if (tema.id !== 'integracion' && tema.patron.test(contenido)) return tema.id;
+    if (tema.patron && tema.patron.test(subtema)) return tema.id;
+  }
+
+  // Para el banco original se analiza primero el enunciado y recién después
+  // las opciones, evitando que un distractor decida por sí solo el tema.
+  const enunciado = normalizarTerminoBanco(q.texto || q.pregunta || q.enunciado || '');
+  for (const tema of TEMAS_PRIMER_PARCIAL) {
+    if (tema.patron && tema.patron.test(enunciado)) return tema.id;
+  }
+
+  const opciones = normalizarTerminoBanco((q.opciones || []).join(' '));
+  for (const tema of TEMAS_PRIMER_PARCIAL) {
+    if (tema.patron && tema.patron.test(opciones)) return tema.id;
   }
   return 'integracion';
 }
