@@ -3,444 +3,609 @@
   "tema": "Primer Parcial · Banco adicional",
   "preguntas": [
     {
-      "pregunta": "Una investigadora sostiene: «Todos los metales se dilatan al calentarse. Esta varilla es de metal. Por lo tanto, esta varilla se dilata al calentarse». ¿Qué permite afirmar que el razonamiento es válido?",
+      "pregunta": "Un estudiante analiza este razonamiento: «Si Buenos Aires es la capital de Argentina, entonces Argentina está en América. Argentina está en América. Por lo tanto, Buenos Aires es la capital de Argentina». Dice que es válido porque premisas y conclusión son verdaderas. ¿Qué corresponde responder?",
       "opciones": [
-        "Que no existe ninguna interpretación con premisas verdaderas y conclusión falsa.",
-        "Que la conclusión fue confirmada mediante varias observaciones.",
-        "Que la conclusión es más general que las premisas.",
-        "Que las premisas y la conclusión describen hechos verdaderos."
+        "Que se equivoca: la verdad de los enunciados no decide la validez de la forma.",
+        "Que tiene razón: si todos los enunciados son verdaderos, la forma no tiene contraejemplos.",
+        "Que tiene razón, porque la conclusión repite lo que afirma la primera premisa.",
+        "Que se equivoca: con una conclusión verdadera el razonamiento nunca puede ser válido."
       ],
       "correcta": "A",
-      "explicacion": "La validez depende de la imposibilidad de que las premisas sean verdaderas y la conclusión falsa. No depende de que los enunciados sean efectivamente verdaderos."
+      "explicacion": "La forma es «Si p, entonces q; q; por lo tanto, p» (afirmación del consecuente) y es inválida: «Si un animal es perro, es mamífero; este animal es mamífero; por lo tanto, es perro» tiene premisas verdaderas y conclusión falsa si el animal es un gato. Que en un caso todo sea verdadero no alcanza para decidir la validez."
     },
     {
-      "pregunta": "¿Cuál de los siguientes razonamientos constituye un contraejemplo para la forma «Si p, entonces q; q; por lo tanto, p»?",
+      "pregunta": "Un contraejemplo de la forma «Si p, entonces q; q; por lo tanto, p» es un razonamiento de esa misma forma en el que:",
       "opciones": [
-        "Si un número es múltiplo de 4, es par. Es múltiplo de 4. Por lo tanto, es par.",
-        "Si un animal es perro, es mamífero. Es mamífero. Por lo tanto, es perro.",
-        "Si un objeto es de hierro, conduce electricidad. Es de hierro. Por lo tanto, conduce electricidad.",
-        "Si llueve, la calle se moja. Llueve. Por lo tanto, la calle se moja."
+        "las premisas y la conclusión son verdaderas.",
+        "las premisas son verdaderas y la conclusión es falsa.",
+        "las premisas son falsas y la conclusión también.",
+        "las premisas son falsas y la conclusión es verdadera."
       ],
       "correcta": "B",
-      "explicacion": "El animal podría ser un gato: las premisas serían verdaderas y la conclusión falsa. Ese caso muestra que la forma admite contraejemplos y, por lo tanto, es inválida."
+      "explicacion": "Un contraejemplo muestra que la forma puede llevar de premisas verdaderas a una conclusión falsa. Con premisas y conclusión verdaderas, o con premisas falsas, no se refuta nada."
     },
     {
-      "pregunta": "Un razonamiento tiene dos premisas verdaderas y una conclusión verdadera. ¿Qué puede concluirse acerca de su forma?",
+      "pregunta": "¿Cuál de estos razonamientos es un contraejemplo de la forma «Si p, entonces q; no p; por lo tanto, no q»?",
       "opciones": [
-        "Que es válida, porque no hay falsedad en el caso presentado.",
-        "Que es inválida, porque la verdad de la conclusión no se sigue de las premisas.",
-        "Que no puede determinarse solo con esos valores de verdad.",
-        "Que es válida únicamente si las premisas son más generales que la conclusión."
-      ],
-      "correcta": "C",
-      "explicacion": "Un caso con premisas y conclusión verdaderas no permite decidir la validez. Para establecerla hay que examinar si existe algún caso posible con premisas verdaderas y conclusión falsa."
-    },
-    {
-      "pregunta": "¿Cuál de estas situaciones es compatible con un razonamiento de forma válida?",
-      "opciones": [
-        "Premisas verdaderas y conclusión falsa, siempre que la conclusión sea probable.",
-        "Premisas verdaderas y conclusión falsa.",
-        "Al menos una premisa verdadera y conclusión falsa.",
-        "Premisas falsas y conclusión verdadera."
+        "Si una moneda es de oro, es metálica. Esta moneda es metálica. Por lo tanto, esta moneda es de oro.",
+        "Si una moneda es de oro, es metálica. Esta moneda es de oro. Por lo tanto, esta moneda es metálica.",
+        "Si una moneda es de oro, es metálica. Esta moneda no es metálica. Por lo tanto, esta moneda no es de oro.",
+        "Si una moneda es de oro, es metálica. Esta moneda es de plata. Por lo tanto, esta moneda no es metálica."
       ],
       "correcta": "D",
-      "explicacion": "Una forma válida puede tener premisas falsas y conclusión verdadera. Lo que no puede ocurrir en una forma válida es que todas las premisas sean verdaderas y la conclusión falsa."
+      "explicacion": "El primero tiene la forma pedida (negación del antecedente) y premisas verdaderas con conclusión falsa: una moneda de plata también es metálica. Los otros tres tienen otras formas: modus tollens, modus ponens y afirmación del consecuente."
     },
     {
-      "pregunta": "La forma de un razonamiento es inválida. ¿Qué característica debe tener al menos uno de sus casos posibles?",
+      "pregunta": "Se dice que una forma de razonamiento es inválida. ¿Qué implica eso?",
       "opciones": [
-        "Sus premisas son verdaderas y su conclusión es falsa.",
-        "Sus premisas son falsas y su conclusión verdadera.",
-        "Su conclusión es verdadera, cualquiera sea el valor de las premisas.",
-        "Todas sus premisas y su conclusión son falsas."
-      ],
-      "correcta": "A",
-      "explicacion": "La invalidez se define por la existencia de al menos una interpretación que hace verdaderas todas las premisas y falsa la conclusión. No exige que ese sea el caso real."
-    },
-    {
-      "pregunta": "¿Cuál es la diferencia correcta entre verdad y validez?",
-      "opciones": [
-        "La verdad depende de la forma lógica y la validez de cómo es el mundo.",
-        "La verdad es una propiedad de enunciados; la validez, una propiedad de formas de razonamiento.",
-        "Ambas expresan lo mismo, pero se usan en ramas distintas de la lógica.",
-        "La verdad se aplica a razonamientos y la validez a enunciados aislados."
-      ],
-      "correcta": "B",
-      "explicacion": "Un enunciado es verdadero o falso según cómo sea la realidad. Un razonamiento es válido o inválido según la relación lógica entre premisas y conclusión."
-    },
-    {
-      "pregunta": "¿Cuál de estos casos funciona como contraejemplo para la forma «Todos los A son B; x es B; por lo tanto, x es A»?",
-      "opciones": [
-        "Todos los triángulos tienen tres lados. Esta figura es un triángulo. Por lo tanto, tiene tres lados.",
-        "Todos los mamíferos respiran. Una ballena es mamífera. Por lo tanto, respira.",
-        "Todos los cuadrados tienen cuatro lados. Esta figura tiene cuatro lados. Por lo tanto, es un cuadrado.",
-        "Todos los planetas orbitan una estrella. La Tierra es un planeta. Por lo tanto, orbita una estrella."
-      ],
-      "correcta": "C",
-      "explicacion": "Una figura puede tener cuatro lados sin ser un cuadrado. Así, las premisas de la forma pueden ser verdaderas y la conclusión falsa."
-    },
-    {
-      "pregunta": "Si una forma de razonamiento no admite ningún contraejemplo, ¿cómo se la clasifica?",
-      "opciones": [
-        "Como inductiva, porque su conclusión amplía la información de las premisas.",
-        "Como verdadera, porque todos sus enunciados coinciden con la realidad.",
-        "Como probable, porque no se conocen casos que la refuten.",
-        "Como válida, porque no hay ningún caso con premisas verdaderas y conclusión falsa."
+        "Que todo razonamiento de esa forma tiene al menos una premisa falsa y una conclusión falsa.",
+        "Que ningún razonamiento de esa forma puede tener todas sus premisas verdaderas a la vez.",
+        "Que todo razonamiento de esa forma tiene una conclusión falsa aunque sus premisas sean verdaderas.",
+        "Que hay al menos un razonamiento de esa forma con premisas verdaderas y conclusión falsa."
       ],
       "correcta": "D",
-      "explicacion": "La ausencia de contraejemplos equivale a que no existe una interpretación con premisas verdaderas y conclusión falsa. Esa es precisamente la definición de validez."
+      "explicacion": "La invalidez se prueba con un único contraejemplo. No exige que todos los razonamientos de esa forma sean defectuosos ni que el razonamiento real que se está analizando tenga premisas falsas."
     },
     {
-      "pregunta": "En una encuesta, 420 de 500 personas seleccionadas al azar en una ciudad usan transporte público al menos una vez por semana. El informe estima que alrededor del 84 % de la población de esa ciudad lo utiliza con esa frecuencia. ¿Qué tipo de razonamiento predomina?",
+      "pregunta": "¿Cuál de estas combinaciones NO puede darse en un razonamiento de forma válida?",
       "opciones": [
-        "Generalización estadística.",
-        "Enumeración simple.",
-        "Analogía.",
-        "Predicción."
-      ],
-      "correcta": "A",
-      "explicacion": "Se parte de una muestra y se estima una proporción para la población de la que fue extraída. La conclusión es estadística y no una generalización universal a partir de unos pocos casos."
-    },
-    {
-      "pregunta": "Durante cinco inviernos, una estación meteorológica registró heladas en todos los días en que la temperatura mínima descendió por debajo de cero. El equipo concluye que probablemente mañana también habrá helada si se repite esa condición. ¿Qué tipo de inducción es?",
-      "opciones": [
-        "Deducción.",
-        "Predicción.",
-        "Analogía.",
-        "Enumeración simple."
+        "Todas las premisas falsas y, sin embargo, la conclusión verdadera.",
+        "Todas las premisas verdaderas y, sin embargo, la conclusión falsa.",
+        "Todas las premisas falsas y, además, la conclusión falsa.",
+        "Una premisa verdadera, otra falsa y la conclusión falsa."
       ],
       "correcta": "B",
-      "explicacion": "Se proyecta hacia un caso futuro una regularidad observada en casos anteriores. La conclusión se refiere a un acontecimiento todavía no observado."
+      "explicacion": "Lo único que la validez descarta es que todas las premisas sean verdaderas y la conclusión falsa. Las demás combinaciones son posibles en una forma válida."
     },
     {
-      "pregunta": "Dos regiones tienen altitud, humedad y composición del suelo muy parecidas. En una de ellas, una variedad de cultivo resiste bien una plaga; por eso, una agrónoma espera que la misma variedad también resista en la otra región. ¿Qué tipo de razonamiento utiliza?",
+      "pregunta": "Un compañero dice: «este razonamiento es verdadero». ¿Qué observación corresponde hacer?",
       "opciones": [
-        "Deducción silogística.",
-        "Generalización estadística.",
-        "Analogía.",
-        "Enumeración simple."
+        "Que «verdadero» y «válido» significan lo mismo, aunque el primero es más coloquial.",
+        "Que un razonamiento es verdadero cuando todas las premisas que lo componen lo son.",
+        "Que «verdadero» se dice de enunciados; de los razonamientos se dice válido o inválido.",
+        "Que «verdadero» se dice de la forma lógica y «válido» de cada enunciado."
       ],
       "correcta": "C",
-      "explicacion": "La conclusión se apoya en semejanzas relevantes entre dos casos particulares. No se generaliza una propiedad a todos los miembros de una clase, sino que se transfiere por analogía."
+      "explicacion": "Verdad y falsedad son propiedades de los enunciados. Validez e invalidez son propiedades de los razonamientos (o de sus formas). Mezclarlas es un error frecuente."
     },
     {
-      "pregunta": "Una médica revisa las historias clínicas de 30 pacientes que recibieron un tratamiento y observa que la mayoría informó una mejoría. A partir de esos casos, sostiene que el tratamiento suele producir mejorías en pacientes similares. ¿Qué tipo de inducción aparece?",
+      "pregunta": "Un razonamiento tiene forma válida y una de sus premisas es falsa. ¿Qué se puede afirmar sobre su conclusión?",
       "opciones": [
-        "Deducción necesaria.",
-        "Predicción de un caso futuro.",
-        "Analogía entre dos individuos.",
-        "Generalización por enumeración simple."
+        "Que puede ser verdadera o falsa; la validez no la garantiza con una premisa falsa.",
+        "Que es verdadera solo si todas las demás premisas son verdaderas.",
+        "Que es necesariamente verdadera, porque la forma del razonamiento es válida en sí misma.",
+        "Que es necesariamente falsa, porque al menos una de sus premisas lo es."
+      ],
+      "correcta": "A",
+      "explicacion": "La validez garantiza la verdad de la conclusión únicamente cuando todas las premisas son verdaderas. Con una premisa falsa, la conclusión puede ser verdadera o falsa, incluso si las demás premisas son verdaderas."
+    },
+    {
+      "pregunta": "Se analiza este razonamiento: «Si el circuito está cerrado, la lámpara se enciende. La lámpara no se enciende. Por lo tanto, el circuito no está cerrado». ¿Cómo se lo evalúa?",
+      "opciones": [
+        "Es válido: su forma no admite premisas verdaderas con conclusión falsa.",
+        "No puede evaluarse sin comprobar si el circuito está cerrado o no.",
+        "Es inválido: la lámpara podría estar rota con el circuito cerrado.",
+        "Es inválido: una conclusión negada no puede seguirse de un condicional."
+      ],
+      "correcta": "A",
+      "explicacion": "Es modus tollens. Si la lámpara estuviera rota con el circuito cerrado, la primera premisa sería falsa, y la validez solo exige que no haya un caso con ambas premisas verdaderas y conclusión falsa. Además, la validez no depende de comprobar los hechos."
+    },
+    {
+      "pregunta": "Si una forma de razonamiento no tiene ningún contraejemplo, entonces:",
+      "opciones": [
+        "es inductiva, porque su conclusión no puede ser refutada nunca por la experiencia.",
+        "es válida: no hay razonamientos de esa forma con premisas verdaderas y conclusión falsa.",
+        "es probablemente válida, hasta que alguien encuentre algún contraejemplo concreto.",
+        "es válida únicamente cuando sus premisas son efectivamente verdaderas en la realidad."
+      ],
+      "correcta": "B",
+      "explicacion": "La ausencia de contraejemplos equivale a la validez: no existe ninguna interpretación con premisas verdaderas y conclusión falsa. La validez no es una cuestión de grado ni depende de los hechos."
+    },
+    {
+      "pregunta": "Dos razonamientos con contenidos muy distintos comparten la misma forma lógica. Para uno de ellos se encuentra un contraejemplo. ¿Qué se concluye?",
+      "opciones": [
+        "Que la forma es válida, porque el contraejemplo depende del contenido.",
+        "Que la forma común a ambos es inválida, de modo que ninguno de los dos es válido.",
+        "Que solo el razonamiento con contraejemplo es inválido; el otro puede ser válido.",
+        "Que ambos razonamientos tienen conclusión falsa, aunque no lo parezca."
+      ],
+      "correcta": "B",
+      "explicacion": "La validez es una propiedad de la forma. Si un caso de esa forma tiene premisas verdaderas y conclusión falsa, la forma es inválida, aunque el otro razonamiento tenga premisas y conclusión verdaderas."
+    },
+    {
+      "pregunta": "En dos escuelas de Rosario, la mayoría de los alumnos con bajo rendimiento dormía menos de seis horas; en una escuela de Córdoba, en cambio, la mayoría trabajaba por la tarde. Como Mendoza tiene una población escolar y un ritmo de vida muy parecidos a los de Córdoba, se espera que en las escuelas mendocinas la causa principal también sea el trabajo. ¿Qué tipo de razonamiento inductivo es?",
+      "opciones": [
+        "Enumeración simple: se generaliza lo observado en varias escuelas a todas las escuelas.",
+        "Generalización estadística: se estima una proporción poblacional a partir de una muestra.",
+        "Analogía: se traslada lo observado en un caso a otro por sus semejanzas relevantes.",
+        "Predicción: se anticipa un acontecimiento futuro a partir de casos pasados."
+      ],
+      "correcta": "C",
+      "explicacion": "La conclusión sobre Mendoza se apoya en su semejanza con Córdoba, no en una generalización a toda una clase ni en una estimación de proporciones. Los datos de Rosario funcionan como contraste."
+    },
+    {
+      "pregunta": "Un naturalista recorre diez lagos de una región y en todos encuentra la misma especie de alga. Concluye que todos los lagos de esa región tienen esa alga. ¿Qué tipo de razonamiento inductivo es?",
+      "opciones": [
+        "Enumeración simple: de los casos observados se pasa a una afirmación sobre todos.",
+        "Generalización estadística: se estima una proporción a partir de una muestra aleatoria.",
+        "Predicción: se anticipa lo que se observará en un lago todavía no visitado.",
+        "Analogía: se traslada una propiedad de un lago a otro por sus semejanzas."
+      ],
+      "correcta": "A",
+      "explicacion": "Todos los casos observados tienen la propiedad y la conclusión la extiende a todos los lagos de la región, sin hablar de proporciones ni de dos casos comparados."
+    },
+    {
+      "pregunta": "Una encuesta a 1.200 adultos elegidos al azar en todo el país muestra que el 36 % usa bicicleta para ir a trabajar. El informe concluye que alrededor del 36 % de los adultos del país lo hace. ¿Qué tipo de razonamiento inductivo es?",
+      "opciones": [
+        "Predicción: se anticipa lo que hará cada persona encuestada en el futuro.",
+        "Generalización estadística: se estima una proporción poblacional desde una muestra.",
+        "Enumeración simple: de los casos examinados se pasa a una afirmación sobre todos los casos.",
+        "Analogía: se traslada una propiedad de un grupo a otro por sus semejanzas."
+      ],
+      "correcta": "B",
+      "explicacion": "Se parte de una frecuencia en la muestra y se estima la frecuencia en la población. La conclusión es una proporción, no una afirmación sobre todos los casos."
+    },
+    {
+      "pregunta": "En los últimos seis años, cada aumento de tarifas anunciado fue seguido por una caída del consumo en el mes siguiente. Se anuncia un aumento para el mes próximo y una consultora prevé una nueva caída. ¿Qué tipo de razonamiento inductivo es?",
+      "opciones": [
+        "Predicción: se proyecta una regularidad pasada hacia un acontecimiento futuro.",
+        "Enumeración simple: se afirma que todo aumento de tarifas reduce el consumo.",
+        "Analogía: se traslada una propiedad de un aumento a otro por sus semejanzas.",
+        "Generalización estadística: se estima la proporción de consumidores que reducirán su consumo."
+      ],
+      "correcta": "A",
+      "explicacion": "La conclusión se refiere a un acontecimiento concreto que todavía no ocurrió (el mes próximo) y se apoya en una regularidad observada en el pasado."
+    },
+    {
+      "pregunta": "¿Qué tienen en común los razonamientos inductivos (enumeración simple, analogía, predicción, generalización estadística)?",
+      "opciones": [
+        "Sus premisas son siempre enunciados singulares y su conclusión siempre es universal.",
+        "Su conclusión se obtiene aplicando reglas como modus ponens o modus tollens a las premisas.",
+        "Su conclusión dice más que las premisas, así que puede ser falsa con premisas verdaderas.",
+        "Parten de enunciados generales y garantizan siempre una conclusión particular concreta."
+      ],
+      "correcta": "C",
+      "explicacion": "En la inducción la conclusión amplía la información de las premisas, así que las premisas verdaderas no garantizan la conclusión. La analogía y la predicción, por ejemplo, no concluyen enunciados universales."
+    },
+    {
+      "pregunta": "¿Qué distingue a una analogía de una enumeración simple?",
+      "opciones": [
+        "La analogía es un razonamiento deductivo, mientras que la enumeración simple es inductivo.",
+        "La analogía traslada una propiedad de un caso a otro; la enumeración la generaliza a toda una clase.",
+        "La analogía concluye siempre sobre el futuro y la enumeración simple siempre sobre el pasado.",
+        "La analogía usa muestras aleatorias y la enumeración simple prescinde de toda muestra."
+      ],
+      "correcta": "B",
+      "explicacion": "Ambas son inductivas. En la analogía se compara un caso conocido con otro por sus semejanzas; en la enumeración simple se pasa de los casos observados a todos los casos de una clase."
+    },
+    {
+      "pregunta": "Una encuesta telefónica realizada solo a jubilados concluye que el 80 % de la población del país apoya una medida. ¿Cuál es el principal punto débil de esta generalización estadística?",
+      "opciones": [
+        "La conclusión es una proporción y no un enunciado universal que valga para todos los casos.",
+        "El porcentaje obtenido es demasiado alto para ser verosímil en una población tan grande.",
+        "La muestra no representa a la población, por lo que la proporción estimada puede ser errónea.",
+        "La conclusión se refiere a personas que no fueron encuestadas y que podrían pensar distinto."
+      ],
+      "correcta": "C",
+      "explicacion": "Una generalización estadística es tan fuerte como la representatividad de la muestra. Concluir sobre personas no encuestadas es inherente a toda inducción y no es en sí un defecto."
+    },
+    {
+      "pregunta": "¿Cuál de estos razonamientos es inductivo?",
+      "opciones": [
+        "Todos los mamíferos tienen pulmones. Las ballenas son mamíferos. Por lo tanto, las ballenas tienen pulmones.",
+        "Ningún reptil es mamífero. Este animal es reptil. Por lo tanto, este animal no es mamífero.",
+        "En cada uno de los últimos diez años, el río creció en primavera. Por lo tanto, probablemente crezca este año.",
+        "Si el agua hierve al nivel del mar, está a 100 °C. Esta agua hierve al nivel del mar. Por lo tanto, está a 100 °C."
+      ],
+      "correcta": "C",
+      "explicacion": "En los otros tres la conclusión ya está contenida en las premisas (deducciones válidas). En el del río, la conclusión va más allá de lo observado y solo es probable."
+    },
+    {
+      "pregunta": "Un ingeniero agrónomo quiere saber por qué se pierden las cosechas. Dice: «Voy a registrar todo: suelo, clima, historial de cultivos, hasta el color de los camiones, sin ninguna idea previa. Cuando tenga todos los datos, la causa se va a hacer evidente». ¿Qué tipo de inductivismo aplica y cómo se lo define?",
+      "opciones": [
+        "Estrecho: la ciencia parte de reunir todos los hechos sin hipótesis previa y de ellos extrae las leyes por inducción.",
+        "Amplio: la ciencia parte de una hipótesis creativa y usa la inducción solo para ponerla a prueba.",
+        "Estrecho: la ciencia parte de una hipótesis creativa y usa la inducción solo para ponerla a prueba.",
+        "Amplio: la ciencia parte de reunir todos los hechos sin hipótesis previa y de ellos extrae las leyes por inducción."
+      ],
+      "correcta": "A",
+      "explicacion": "El ingeniero espera que la explicación surja de acumular todos los datos sin hipótesis previa: eso es inductivismo estrecho. Dos opciones mezclan el nombre de una postura con la definición de la otra."
+    },
+    {
+      "pregunta": "Según el relato de Hempel, Semmelweis, ante la alta mortalidad por fiebre puerperal en una sala de su hospital, fue descartando explicaciones hasta conjeturar que los médicos transportaban «materia cadavérica». Luego indicó lavarse las manos con una solución clorada y comparó la mortalidad antes y después. ¿Qué muestra este caso frente al inductivismo estrecho?",
+      "opciones": [
+        "Que la hipótesis no necesitó contrastación porque se dedujo directamente de los registros de mortalidad.",
+        "Que la hipótesis surgió como conjetura para explicar los datos y luego los datos sirvieron para contrastarla.",
+        "Que la hipótesis surgió de acumular todos los datos del hospital hasta que la causa resultó evidente por sí sola.",
+        "Que los datos de mortalidad no tuvieron ningún papel en la evaluación de la hipótesis propuesta."
+      ],
+      "correcta": "B",
+      "explicacion": "La hipótesis fue una invención que orientó qué datos buscar y luego se contrastó con ellos. Eso va contra la idea estrecha de que las leyes surgen de reunir hechos sin hipótesis previa."
+    },
+    {
+      "pregunta": "¿Por qué Hempel considera inviable la propuesta de reunir todos los hechos antes de formular hipótesis?",
+      "opciones": [
+        "Porque la recolección exige instrumentos de medición que la ciencia todavía no posee.",
+        "Porque los datos solo valen si antes fueron demostrados deductivamente por otra teoría.",
+        "Porque los hechos son innumerables y solo una hipótesis permite decidir cuáles son relevantes.",
+        "Porque los hechos observados no son verdaderos hasta que alguien los generaliza."
+      ],
+      "correcta": "C",
+      "explicacion": "No hay un conjunto finito de «todos los hechos» y, aun si lo hubiera, el criterio de relevancia depende de preguntas o hipótesis previas."
+    },
+    {
+      "pregunta": "¿Qué papel asigna el inductivismo amplio a la inducción?",
+      "opciones": [
+        "Contrastar o justificar hipótesis, sin pretender que las descubra mecánicamente.",
+        "Demostrar deductivamente las leyes a partir de los hechos ya observados.",
+        "Reemplazar la contrastación por la simple acumulación de observaciones de todo tipo.",
+        "Descubrir hipótesis aplicando reglas mecánicas a todos los datos reunidos."
+      ],
+      "correcta": "A",
+      "explicacion": "Para el inductivismo amplio las hipótesis pueden surgir de la creatividad; la inducción interviene al evaluar en qué medida los datos las apoyan."
+    },
+    {
+      "pregunta": "Un equipo nota que los pacientes de una clínica se recuperan más rápido en habitaciones con luz natural. Conjetura que la luz influye en la recuperación y organiza un estudio comparativo para evaluarlo. ¿Qué postura describe mejor su forma de trabajar?",
+      "opciones": [
+        "Inductivismo amplio: la hipótesis queda demostrada deductivamente a partir de los datos.",
+        "Inductivismo estrecho: la hipótesis se obtiene de recolectar sistemáticamente todos los casos.",
+        "Inductivismo estrecho: la hipótesis queda probada al acumular suficientes casos.",
+        "Inductivismo amplio: la hipótesis se propone creativamente y la experiencia sirve para evaluarla."
       ],
       "correcta": "D",
-      "explicacion": "La médica extiende una regularidad observada en varios casos a un conjunto más amplio de casos semejantes. La conclusión es probable, no necesaria."
+      "explicacion": "El equipo propone una conjetura y luego diseña un estudio para ponerla a prueba. Nada sugiere que haya recolectado todos los hechos ni que la hipótesis quede demostrada."
     },
     {
-      "pregunta": "Un investigador observa que tres especies de aves de una misma zona construyen nidos en árboles. Concluye que todas las aves de esa zona construyen sus nidos en árboles. ¿Qué caracteriza mejor el procedimiento?",
+      "pregunta": "Un grupo estudia la deserción universitaria y decide registrar edad, situación laboral y distancia al campus, pero no el color de ojos de los estudiantes. ¿Qué muestra esa elección desde la crítica de Hempel?",
       "opciones": [
-        "Una enumeración simple que amplía lo observado a los casos no examinados.",
-        "Una analogía que transfiere una propiedad entre dos especies elegidas por semejanza.",
-        "Una deducción cuya conclusión está contenida necesariamente en las premisas.",
-        "Una predicción que anticipa un único acontecimiento futuro."
-      ],
-      "correcta": "A",
-      "explicacion": "La conclusión generaliza a partir de una serie de casos observados, sin que el argumento establezca una relación de semejanza entre dos individuos particulares."
-    },
-    {
-      "pregunta": "Una paciente respondió bien a un medicamento. Otra paciente tiene un cuadro clínico, edad y antecedentes muy parecidos; el médico estima que probablemente también responderá bien al mismo medicamento. ¿Qué tipo de razonamiento es?",
-      "opciones": [
-        "Generalización estadística, porque se calcula una frecuencia muestral.",
-        "Analogía, porque se atribuye a un caso una propiedad de otro por sus semejanzas.",
-        "Predicción, porque toda conclusión sobre un caso no observado es necesariamente una predicción.",
-        "Enumeración simple, porque se generaliza a toda una población."
-      ],
-      "correcta": "B",
-      "explicacion": "El argumento compara dos casos particulares y transfiere una propiedad sobre la base de semejanzas consideradas relevantes. No estima una frecuencia para una población."
-    },
-    {
-      "pregunta": "¿Qué diferencia central existe entre una deducción válida y una inducción?",
-      "opciones": [
-        "La deducción siempre parte de leyes universales y la inducción siempre de opiniones.",
-        "La inducción no utiliza premisas, mientras que la deducción sí.",
-        "En la deducción válida, las premisas verdaderas garantizan la conclusión; en la inducción, la conclusión queda apoyada pero no garantizada.",
-        "En la inducción, las premisas garantizan la conclusión; en la deducción, solo la vuelven probable."
+        "Que su estudio no es científico porque omite datos que podrían registrarse.",
+        "Que sus hipótesis se deducen de la cantidad de datos que lograron registrar.",
+        "Que se guían por una idea previa sobre qué factores podrían ser relevantes para el problema.",
+        "Que practican inductivismo estrecho, porque seleccionan hechos antes de generalizar."
       ],
       "correcta": "C",
-      "explicacion": "En una deducción válida es imposible que las premisas sean verdaderas y la conclusión falsa. En una inducción, incluso con premisas verdaderas, la conclusión puede resultar falsa."
+      "explicacion": "Seleccionar ciertos datos y descartar otros presupone un criterio de relevancia, que a su vez depende de preguntas o hipótesis previas. El inductivismo estrecho pretende prescindir de ellas."
     },
     {
-      "pregunta": "¿Qué se generaliza principalmente en una generalización estadística?",
+      "pregunta": "Según Hempel, ¿existe un procedimiento mecánico que permita obtener hipótesis a partir de los datos reunidos?",
       "opciones": [
-        "Una regularidad pasada hacia un único acontecimiento futuro.",
-        "Una conclusión necesaria a partir de premisas universales.",
-        "Una propiedad de un individuo a otro individuo semejante.",
-        "Una proporción o frecuencia observada en una muestra hacia la población correspondiente."
+        "Sí, pero solo en las ciencias naturales y no en las ciencias sociales ni formales.",
+        "Sí: con suficientes datos, un procedimiento inductivo produce la hipótesis correcta.",
+        "No: la ciencia puede explicar los datos observados sin necesidad de hipótesis alguna.",
+        "No: formular hipótesis requiere creatividad; no hay reglas que las produzcan desde los datos."
       ],
       "correcta": "D",
-      "explicacion": "La generalización estadística proyecta una frecuencia de la muestra a la población de referencia. Su fuerza depende, entre otras cosas, de cómo se seleccionó la muestra y de su tamaño."
+      "explicacion": "Las hipótesis y teorías son invenciones que se proponen para explicar fenómenos; no se derivan mecánicamente de los datos. Después se las contrasta con la experiencia."
     },
     {
-      "pregunta": "En una reserva natural, los guardaparques registran que los últimos doce zorros examinados presentan un parásito. Concluyen que probablemente la mayoría de los zorros de esa reserva también lo presenta. ¿Cuál es la clasificación más adecuada?",
+      "pregunta": "¿Cuál de estas afirmaciones rechazaría un inductivista amplio?",
       "opciones": [
-        "Generalización estadística, porque la conclusión cuantifica una frecuencia en la población a partir de una muestra.",
-        "Analogía, porque todos los zorros se parecen entre sí.",
-        "Predicción, porque se habla de animales que todavía no fueron examinados.",
-        "Enumeración simple, porque se pasa de casos observados a una afirmación general sin estimar explícitamente una proporción."
+        "Las leyes científicas surgen automáticamente al ordenar todos los hechos disponibles.",
+        "La experiencia sirve para evaluar hipótesis que ya fueron formuladas.",
+        "Una hipótesis puede nacer de una conjetura imaginativa del investigador.",
+        "Al contrastarse con los datos, una hipótesis puede quedar apoyada o debilitada."
       ],
       "correcta": "A",
-      "explicacion": "La conclusión estima qué proporción de la población presenta el parásito a partir de una muestra. La presencia de una expresión como «la mayoría» hace explícito el carácter estadístico de la generalización."
+      "explicacion": "Las otras tres son compatibles con el inductivismo amplio. La primera es la tesis del inductivismo estrecho."
     },
     {
-      "pregunta": "Una investigadora afirma: «Primero reuniremos todos los datos posibles sobre la enfermedad, sin formular hipótesis ni seleccionar información. Una vez completa la colección, la explicación aparecerá por inducción». ¿Qué postura representa?",
+      "pregunta": "¿En qué difieren principalmente el inductivismo estrecho y el amplio?",
       "opciones": [
-        "Inductivismo amplio, porque reconoce que los datos orientan la investigación.",
-        "Inductivismo estrecho, porque supone que la ciencia comienza reuniendo hechos sin hipótesis previas y deriva de ellos las leyes.",
-        "Falsacionismo, porque intenta refutar una teoría antes de formularla.",
-        "Convencionalismo, porque considera que las leyes son acuerdos sociales."
-      ],
-      "correcta": "B",
-      "explicacion": "La investigadora supone que los hechos pueden reunirse sin una hipótesis que oriente la selección y que las leyes surgirán inductivamente de esa acumulación. Esa es la versión estrecha o ingenua."
-    },
-    {
-      "pregunta": "Un equipo propone una hipótesis nueva para explicar por qué ciertos materiales se degradan con la humedad. La idea surge de una conjetura creativa; después, el equipo diseña observaciones y experimentos para evaluar si está respaldada. ¿Qué postura se aproxima más a esta descripción?",
-      "opciones": [
-        "Escepticismo, porque no se puede evaluar ninguna hipótesis.",
-        "Inductivismo estrecho, porque la hipótesis se obtiene automáticamente de todos los datos.",
-        "Inductivismo amplio, porque admite una formulación creativa de hipótesis y reserva un papel a la inducción en su evaluación.",
-        "Inductivismo estrecho, porque toda contrastación equivale a recolectar hechos sin criterios."
-      ],
-      "correcta": "C",
-      "explicacion": "El inductivismo amplio no exige que la hipótesis se derive mecánicamente de los datos. La inducción interviene en la evaluación o justificación de hipótesis que pueden haber surgido creativamente."
-    },
-    {
-      "pregunta": "¿Cuál es la objeción de Hempel a la idea de que la ciencia debe recolectar todos los hechos antes de formular hipótesis?",
-      "opciones": [
-        "Que una hipótesis solo puede formularse después de una demostración deductiva.",
-        "Que la observación siempre confirma cualquier hipótesis.",
-        "Que los hechos científicos no pueden registrarse mediante observaciones.",
-        "Que es imposible reunir todos los hechos relevantes sin contar previamente con algún criterio que permita distinguirlos de los irrelevantes."
+        "En el tipo de datos: el estrecho usa datos cualitativos y el amplio datos cuantitativos.",
+        "En la verdad de las hipótesis: el estrecho las supone verdaderas y el amplio falsas.",
+        "En el uso de experimentos: el estrecho experimenta y el amplio solo razona.",
+        "En el origen de las hipótesis: los hechos reunidos (estrecho) o la invención creativa (amplio)."
       ],
       "correcta": "D",
-      "explicacion": "No es posible registrar «todos los hechos» sin seleccionar qué observar. Esa selección ya presupone criterios de relevancia, y estos suelen depender de preguntas o hipótesis previas."
+      "explicacion": "La diferencia es el papel de las hipótesis. Para el estrecho, las leyes emergen de los hechos reunidos; para el amplio, las hipótesis se inventan y la inducción interviene en su evaluación."
     },
     {
-      "pregunta": "Un grupo estudia accidentes laborales y decide registrar horarios, tipos de máquinas y condiciones de ventilación, pero no el color de la ropa de los empleados. ¿Qué muestra esta selección desde la crítica de Hempel?",
+      "pregunta": "Hasta ahora no se conocen las causas de cierta dermatitis. Un equipo informó que ratones expuestos a un conservante alimentario desarrollaron lesiones en la piel. Ahora sostiene que el conservante tendría el mismo efecto en seres humanos y, para fundamentarlo, presenta un estudio con monos que desarrollaron lesiones similares. ¿Cuál es la hipótesis principal?",
       "opciones": [
-        "Que los investigadores ya utilizan criterios de relevancia para decidir qué hechos registrar.",
-        "Que el equipo practica necesariamente una inducción estrecha.",
-        "Que la investigación solo será científica si registra también el color de la ropa.",
-        "Que las hipótesis se deducen de la cantidad de datos, sin intervención de ideas previas."
-      ],
-      "correcta": "A",
-      "explicacion": "Elegir ciertos datos y descartar otros supone una pregunta o criterio sobre qué podría ser relevante para explicar los accidentes. La observación no comienza desde una neutralidad absoluta."
-    },
-    {
-      "pregunta": "¿Qué diferencia al inductivismo estrecho del amplio?",
-      "opciones": [
-        "El estrecho rechaza toda observación; el amplio rechaza toda hipótesis.",
-        "El estrecho considera que las leyes se derivan de hechos reunidos sin hipótesis previas; el amplio admite hipótesis creativas y asigna a la inducción un papel en su evaluación.",
-        "El estrecho usa experimentos y el amplio solo razonamientos deductivos.",
-        "El amplio sostiene que las hipótesis son verdaderas antes de ser contrastadas."
+        "Hasta ahora no se conocen las causas de esta dermatitis en seres humanos.",
+        "El conservante alimentario produce dermatitis también en seres humanos, no solo en animales.",
+        "Los ratones y los monos expuestos al conservante desarrollaron lesiones en la piel.",
+        "Los estudios con animales sirven para investigar enfermedades de seres humanos."
       ],
       "correcta": "B",
-      "explicacion": "La diferencia está en el origen y la función de las hipótesis. Para la versión estrecha, las leyes emergen de los hechos; para la amplia, las hipótesis pueden inventarse y luego evaluarse mediante la experiencia."
+      "explicacion": "La hipótesis es lo que el equipo sostiene y quiere evaluar. Los resultados en ratones y monos son evidencia; la falta de causas conocidas es el problema; la última opción es un supuesto de método."
     },
     {
-      "pregunta": "Un biólogo sostiene que no formulará ninguna pregunta hasta haber observado cada organismo del ecosistema. Según Hempel, ¿cuál es el problema más profundo de esa propuesta?",
+      "pregunta": "Para la hipótesis «el conservante alimentario produce dermatitis en seres humanos», ¿cuál es una implicación contrastadora?",
       "opciones": [
-        "Que observar organismos es una actividad no científica.",
-        "Que incluso decidir qué cuenta como organismo exige una teoría completa.",
-        "Que la observación sin preguntas no permite determinar qué aspectos registrar como relevantes para la investigación.",
-        "Que la inducción solo puede aplicarse a fenómenos físicos."
-      ],
-      "correcta": "C",
-      "explicacion": "La dificultad no es simplemente práctica, sino metodológica: sin una pregunta o hipótesis no hay criterio para separar datos pertinentes de datos que no contribuyen al problema investigado."
-    },
-    {
-      "pregunta": "¿Cuál de estas afirmaciones sería compatible con el inductivismo amplio?",
-      "opciones": [
-        "La experiencia no cumple ninguna función en la evaluación de teorías.",
-        "Los datos solo sirven para ilustrar conclusiones ya demostradas.",
-        "Las hipótesis científicas se descubren automáticamente al ordenar todos los hechos disponibles.",
-        "Una hipótesis puede surgir de la imaginación del investigador y luego recibir apoyo o quedar debilitada al contrastarse con datos."
+        "Todas las personas que tienen dermatitis deberían haber estado expuestas al conservante durante los meses previos a la enfermedad.",
+        "Los ratones expuestos al conservante deberían volver a desarrollar lesiones si se repite el experimento en el mismo laboratorio.",
+        "Las personas que tienen dermatitis deberían tener antecedentes familiares de la enfermedad en una proporción mayor al promedio.",
+        "Si se compara a personas semejantes en edad y hábitos, las expuestas al conservante deberían presentar más dermatitis que las no expuestas."
       ],
       "correcta": "D",
-      "explicacion": "El inductivismo amplio reconoce que la formulación de hipótesis no es un procedimiento mecánico. La experiencia y la inducción intervienen después, en su evaluación o justificación."
+      "explicacion": "La implicación debe derivarse de la hipótesis, referirse a seres humanos y ser observable. La opción sobre ratones no habla de humanos; «todas las personas con dermatitis» invierte la relación (el conservante podría no ser la única causa); los antecedentes familiares son otra variable."
     },
     {
-      "pregunta": "Una investigadora observa que en una región aumentan los casos de alergia y propone como posible explicación un cambio en la calidad del aire. Luego reúne datos ambientales y clínicos para evaluar esa propuesta. ¿Qué lectura es más adecuada?",
+      "pregunta": "¿Cuál es la diferencia entre una hipótesis y su implicación contrastadora?",
       "opciones": [
-        "La hipótesis fue formulada como una propuesta explicativa y los datos se seleccionan para evaluarla; esto es compatible con el inductivismo amplio.",
-        "La investigadora practica inductivismo estrecho porque cualquier observación inicial equivale a reunir todos los hechos.",
-        "La investigadora no formula una hipótesis, porque todavía no demostró la causa.",
-        "La investigación es inválida porque una hipótesis no puede surgir antes de contar con todos los datos."
+        "La hipótesis es lo que se evalúa; la implicación es lo que debería observarse si fuera verdadera.",
+        "La hipótesis se formula después de la contrastación y la implicación antes de ella.",
+        "La hipótesis es verdadera por definición, mientras que la implicación puede resultar falsa.",
+        "La hipótesis es un dato ya observado; la implicación es la interpretación que hace el investigador."
       ],
       "correcta": "A",
-      "explicacion": "La explicación propuesta orienta qué información resulta pertinente y luego se somete a evaluación. Esto se aleja de la idea estrecha de una acumulación neutral y previa de todos los hechos."
+      "explicacion": "La implicación contrastadora es una consecuencia observable que se deriva de la hipótesis junto con las condiciones del caso. Permite someterla a la experiencia."
     },
     {
-      "pregunta": "En una investigación sobre corrosión, se propone que la sal acelera el deterioro de ciertas piezas metálicas. ¿Cuál de las siguientes opciones expresa mejor una hipótesis principal?",
+      "pregunta": "Hipótesis: «tomar infusión de manzanilla antes de acostarse reduce el tiempo que las personas tardan en dormirse». ¿Cuál es una implicación contrastadora de esta hipótesis?",
       "opciones": [
-        "Se colocaron piezas metálicas en recipientes con distintas soluciones.",
-        "La sal aumenta la velocidad de corrosión de las piezas metálicas bajo determinadas condiciones.",
-        "Al finalizar el ensayo se pesarán nuevamente las piezas.",
-        "La balanza utilizada tiene una precisión de una décima de gramo."
+        "Si se comparan dos grupos de personas semejantes, el que toma manzanilla debería dormir más horas en total.",
+        "Si se comparan dos grupos de personas semejantes, el que toma manzanilla antes de acostarse debería tardar menos en dormirse.",
+        "Si se comparan dos grupos de personas semejantes, el que toma manzanilla debería sentirse más tranquilo durante el día.",
+        "Si una persona tarda poco en dormirse, debería tomar manzanilla habitualmente antes de acostarse."
       ],
       "correcta": "B",
-      "explicacion": "La hipótesis es la afirmación explicativa que se quiere evaluar: atribuye a la sal un efecto sobre la velocidad de corrosión. Las otras opciones describen procedimientos o datos metodológicos."
+      "explicacion": "Se necesita un enunciado observable sobre el tiempo hasta dormirse en grupos comparables. Las otras tres invierten la relación o miden otra variable (horas totales de sueño, tranquilidad diurna)."
     },
     {
-      "pregunta": "Una escuela quiere investigar si la exposición nocturna a pantallas afecta el descanso. ¿Cuál sería una implicación contrastadora adecuada de la hipótesis «la exposición a pantallas antes de dormir reduce la duración del sueño»?",
+      "pregunta": "Hipótesis: «la música de fondo aumenta la velocidad de trabajo en una línea de empaque». ¿Cuál es una implicación contrastadora de esta hipótesis?",
       "opciones": [
-        "Dormir es una actividad biológica necesaria para el organismo.",
-        "Los estudiantes utilizan teléfonos y computadoras en su vida cotidiana.",
-        "Si un grupo usa pantallas durante la hora previa a acostarse y se mantienen comparables las demás condiciones, debería registrar en promedio menos horas de sueño que un grupo sin esa exposición.",
-        "La exposición a pantallas es una práctica cada vez más frecuente entre adolescentes."
+        "Si se mide la producción por hora de las mismas personas con y sin música, debería ser mayor en el período con música.",
+        "Si un operario trabaja más rápido que sus compañeros, debería escuchar música con más frecuencia.",
+        "Si se agrega música de fondo en la línea de empaque, debería disminuir la cantidad de errores de empaque.",
+        "Si se compara el ruido de la planta con y sin música, el nivel de ruido debería ser mayor con música."
+      ],
+      "correcta": "A",
+      "explicacion": "La consecuencia observable que se deriva de la hipótesis es una diferencia de velocidad de producción. Invertir la relación, medir errores o medir ruido no se desprende de lo que afirma la hipótesis."
+    },
+    {
+      "pregunta": "Hipótesis: «la humedad acelera la oxidación del hierro». ¿Cuál es una implicación contrastadora?",
+      "opciones": [
+        "Si se exponen láminas de hierro idénticas a distintas temperaturas, deberían mostrar más óxido las más calientes.",
+        "Si una lámina de hierro se oxida, debería cambiar su color superficial con el paso de las semanas.",
+        "Si se exponen láminas de hierro idénticas a distinta humedad, deberían mostrar más óxido las de mayor humedad.",
+        "Si una lámina de hierro presenta óxido, debería haber estado antes en un ambiente húmedo."
       ],
       "correcta": "C",
-      "explicacion": "La implicación contrastadora deriva una consecuencia observable de la hipótesis bajo condiciones especificadas: una diferencia medible en la duración del sueño entre grupos comparables."
+      "explicacion": "La implicación compara láminas iguales con distinta humedad y predice más óxido con más humedad. Las otras opciones invierten la relación, cambian la variable (temperatura) o describen un efecto general de la oxidación."
     },
     {
-      "pregunta": "Un equipo plantea que un fertilizante mejora el crecimiento de una planta. ¿Cuál de estos enunciados es una implicación contrastadora y no una repetición de la hipótesis?",
+      "pregunta": "Hipótesis: «la devolución individual de las correcciones mejora el rendimiento en los exámenes siguientes». ¿Cuál es una implicación contrastadora?",
       "opciones": [
-        "El crecimiento vegetal depende de múltiples factores.",
-        "El fertilizante favorece el crecimiento vegetal.",
-        "Las plantas necesitan nutrientes para desarrollarse.",
-        "Si se aplica el fertilizante a un grupo de plantas y se mantienen iguales las demás condiciones, ese grupo debería alcanzar una altura promedio mayor que el grupo sin fertilizante."
+        "Si los docentes dan devoluciones individuales, deberían dedicar más horas semanales a corregir los trabajos.",
+        "Si se comparan cursos semejantes, el que recibe devoluciones individuales debería obtener mejores notas en el examen siguiente.",
+        "Si se comparan cursos semejantes, el curso que recibe devoluciones individuales debería tener mayor asistencia a clase.",
+        "Si un curso obtiene mejores notas en el examen siguiente, sus docentes deberían haber dado devoluciones individuales."
+      ],
+      "correcta": "B",
+      "explicacion": "Se deriva una diferencia observable de rendimiento entre cursos comparables. Las otras opciones invierten la relación o miden consecuencias (asistencia, horas de corrección) que no son lo que la hipótesis afirma."
+    },
+    {
+      "pregunta": "¿Cómo se formula una implicación contrastadora de una hipótesis H?",
+      "opciones": [
+        "Como «H es verdadera porque así lo sostiene el equipo de investigación».",
+        "Como «si se observa tal resultado, entonces H queda demostrada».",
+        "Como «si H es verdadera, entonces el investigador es competente».",
+        "Como «si H y se dan ciertas condiciones, debería observarse tal resultado»."
       ],
       "correcta": "D",
-      "explicacion": "La opción formula un resultado observable y comparativo que debería producirse si la hipótesis es correcta. Las demás expresiones son generales o repiten la idea sin indicar qué se observaría."
+      "explicacion": "La implicación va de la hipótesis (más las condiciones) hacia un resultado observable. La primera opción invierte el sentido y repite la falacia de afirmar el consecuente."
     },
     {
-      "pregunta": "En un estudio sobre contaminación sonora, la hipótesis sostiene que el ruido nocturno eleva la frecuencia cardíaca durante el descanso. ¿Cuál de estas opciones constituye un dato de contexto y no una implicación contrastadora?",
+      "pregunta": "Al realizar la contrastación, el resultado que se esperaba según la implicación contrastadora no se observa. ¿Qué se puede concluir?",
       "opciones": [
-        "En la ciudad estudiada hay avenidas con circulación intensa durante toda la noche.",
-        "Si la hipótesis es correcta, las mediciones nocturnas deberían mostrar una diferencia entre los grupos expuestos y no expuestos.",
-        "Si las personas duermen en un ambiente con mayor ruido, deberían mostrar una frecuencia cardíaca promedio más alta durante el descanso que quienes duermen en un ambiente silencioso comparable.",
-        "Si se incrementa el nivel de ruido manteniendo constantes otras condiciones, debería registrarse un aumento de la frecuencia cardíaca nocturna."
-      ],
-      "correcta": "A",
-      "explicacion": "La existencia de avenidas transitadas es un dato contextual, pero no se desprende de la hipótesis sobre el efecto del ruido en la frecuencia cardíaca. Las otras opciones sí indican resultados que podrían contrastarse."
-    },
-    {
-      "pregunta": "¿Qué relación debe existir entre una hipótesis y su implicación contrastadora?",
-      "opciones": [
-        "La implicación debe confirmar de antemano que la hipótesis es verdadera.",
-        "La implicación debe ser una consecuencia observable que se deduce de la hipótesis junto con las condiciones del caso.",
-        "La implicación debe repetir la hipótesis con palabras más técnicas.",
-        "La hipótesis debe ser un dato observado y la implicación una opinión del investigador."
+        "Que la hipótesis es verdadera, porque no pudo ser refutada en esta contrastación.",
+        "Que la hipótesis o alguna de las condiciones supuestas es falsa, por modus tollens.",
+        "Que la hipótesis es falsa con independencia de las condiciones supuestas.",
+        "Que el resultado no dice nada sobre la hipótesis ni sobre las condiciones."
       ],
       "correcta": "B",
-      "explicacion": "La implicación contrastadora traduce la hipótesis en una consecuencia empírica esperable bajo ciertas condiciones. No es una reformulación verbal ni una confirmación anticipada."
+      "explicacion": "Si «(H y las condiciones) implica O» y no se observa O, por modus tollens no pueden ser verdaderas a la vez la hipótesis y las condiciones. No se sabe cuál falló."
     },
     {
-      "pregunta": "Un investigador propone que una nueva técnica de riego reduce el consumo de agua sin disminuir la producción. ¿Cuál es la mejor implicación contrastadora?",
+      "pregunta": "Al realizar la contrastación, el resultado esperado según la implicación contrastadora sí se observa. ¿Qué se puede afirmar?",
       "opciones": [
-        "La agricultura consume agua y requiere sistemas de riego adecuados.",
-        "La técnica fue desarrollada por un equipo especializado.",
-        "Si se comparan parcelas equivalentes, una con la nueva técnica y otra con el sistema habitual, la primera debería consumir menos agua y producir una cantidad similar de cosecha.",
-        "El agua es un recurso importante para la producción agrícola."
-      ],
-      "correcta": "C",
-      "explicacion": "La opción establece qué debería observarse si la hipótesis es correcta: menor consumo de agua sin una reducción relevante de la producción en parcelas comparables."
-    },
-    {
-      "pregunta": "Un estudio sostiene que cierta bacteria produce una sustancia que inhibe el crecimiento de un hongo. ¿Cuál sería una implicación contrastadora pertinente?",
-      "opciones": [
-        "La sustancia producida por la bacteria es importante para comprender las interacciones microbianas.",
-        "La bacteria fue aislada en un laboratorio universitario.",
-        "Los hongos pueden crecer en distintos medios de cultivo.",
-        "Si se cultiva el hongo junto a la bacteria bajo condiciones controladas, debería observarse una zona de menor crecimiento del hongo alrededor de la bacteria."
+        "Que la hipótesis queda refutada, por aplicación de modus tollens al resultado.",
+        "Que la hipótesis queda demostrada de manera definitiva y no puede ser revisada.",
+        "Que las condiciones supuestas para la contrastación son necesariamente falsas.",
+        "Que la hipótesis queda apoyada, pero no demostrada (afirmar el consecuente sería falaz)."
       ],
       "correcta": "D",
-      "explicacion": "La predicción describe un efecto observable que se espera si la hipótesis es correcta. La procedencia de la muestra y las afirmaciones generales no son consecuencias contrastables de esa hipótesis."
+      "explicacion": "Que se cumpla la implicación es compatible con que la hipótesis sea falsa (el resultado podría deberse a otra causa). Por eso la contrastación positiva apoya, pero no demuestra."
     },
     {
-      "pregunta": "¿Cuál de los siguientes esquemas corresponde al silogismo hipotético?",
+      "pregunta": "Identifique la conclusión del siguiente razonamiento: «El transporte público es un servicio esencial, y un servicio esencial no debe interrumpirse. En consecuencia, el Estado no debería permitir paros en el transporte, pues ¿qué sentido tendría llamarlo esencial si puede detenerse?»",
       "opciones": [
-        "p → q; q → r; por lo tanto, p → r.",
-        "p → q; q; por lo tanto, p.",
-        "p → q; ¬p; por lo tanto, ¬q.",
-        "p ∨ q; ¬p; por lo tanto, ¬q."
+        "El Estado no debería permitir paros en el transporte.",
+        "Un servicio esencial no debe interrumpirse.",
+        "¿Qué sentido tendría llamarlo esencial si puede detenerse?",
+        "El transporte público es un servicio esencial."
       ],
       "correcta": "A",
-      "explicacion": "El silogismo hipotético encadena dos condicionales: si p implica q y q implica r, entonces p implica r. La conclusión conserva la relación condicional entre el primer antecedente y el último consecuente."
+      "explicacion": "«En consecuencia» anuncia la conclusión. «Pues» introduce una premisa (aquí en forma de pregunta retórica), y las dos primeras oraciones son premisas."
     },
     {
-      "pregunta": "Un razonamiento sostiene: «Si se corta la energía, se detiene el servidor. Si se detiene el servidor, se interrumpe el servicio. Por lo tanto, si se corta la energía, se interrumpe el servicio». ¿Qué forma presenta?",
+      "pregunta": "En «Todos los metales conducen electricidad y el cobre es un metal; por lo tanto, el cobre conduce electricidad», ¿qué función cumple la expresión «por lo tanto»?",
       "opciones": [
-        "Modus tollens.",
-        "Silogismo hipotético.",
-        "Afirmación del consecuente.",
-        "Silogismo disyuntivo."
-      ],
-      "correcta": "B",
-      "explicacion": "Se encadenan dos condicionales: corte de energía → detención del servidor → interrupción del servicio. Por transitividad condicional, se obtiene el condicional entre el primer y el último término."
-    },
-    {
-      "pregunta": "Sean p: «estudio», q: «apruebo el examen» y r: «promociono la materia». A partir de p → q y q → r, ¿qué conclusión se sigue por silogismo hipotético?",
-      "opciones": [
-        "r → p.",
-        "q → p.",
-        "p → r.",
-        "¬p → ¬r."
+        "Es una conectiva lógica: forma una conjunción entre las premisas.",
+        "Es una expresión derivativa: indica que lo que sigue es una premisa.",
+        "Es una expresión derivativa: indica que lo que sigue es la conclusión.",
+        "Es una conectiva lógica: niega la premisa que la precede."
       ],
       "correcta": "C",
-      "explicacion": "La primera premisa conecta p con q y la segunda conecta q con r. Al encadenarlas, se concluye p → r. No se afirma que p haya ocurrido, sino que se establece una relación condicional."
+      "explicacion": "Expresiones como «por lo tanto», «en consecuencia» o «por consiguiente» anuncian la conclusión; «pues», «dado que» o «porque» anuncian premisas."
     },
     {
-      "pregunta": "¿Por qué es válido el esquema p → q; q → r; ∴ p → r?",
+      "pregunta": "¿Cuál de estas expresiones suele funcionar como indicador de premisa?",
       "opciones": [
-        "Porque q es necesariamente verdadero.",
-        "Porque la conclusión afirma el consecuente de la primera premisa.",
-        "Porque toda proposición condicional es verdadera.",
-        "Porque si p fuera verdadero, q tendría que serlo, y entonces r también; por eso no puede haber premisas verdaderas y conclusión falsa."
+        "«dado que»",
+        "«por lo tanto»",
+        "«en consecuencia»",
+        "«se sigue que»"
+      ],
+      "correcta": "A",
+      "explicacion": "«Dado que» introduce la razón o premisa. Las otras tres anuncian la conclusión."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes textos NO es un razonamiento?",
+      "opciones": [
+        "Llovió toda la mañana; por lo tanto, la cancha está inutilizable.",
+        "Las cámaras estaban apagadas, así que nadie pudo registrar el robo.",
+        "El museo abre a las 10. Hay una muestra de cerámica. La entrada cuesta mil pesos.",
+        "Como todas las ballenas son mamíferos y esta es una ballena, esta es un mamífero."
+      ],
+      "correcta": "C",
+      "explicacion": "Un razonamiento pretende que una conclusión se apoya en premisas. El primer texto solo enumera datos: ninguno se presenta como consecuencia de los otros."
+    },
+    {
+      "pregunta": "¿Cuál es la formalización de «O bien el paciente tiene alergia, o bien tiene una infección y presenta fiebre»? (p: tiene alergia; q: tiene una infección; r: presenta fiebre)",
+      "opciones": [
+        "p v (q • r)",
+        "(p v q) • r",
+        "p → (q • r)",
+        "(p v (q • r)) • ¬(p • (q • r))"
       ],
       "correcta": "D",
-      "explicacion": "Si p es verdadero, por el primer condicional q debe ser verdadero; y por el segundo, r también. Por lo tanto, no hay un caso con ambas premisas verdaderas y la conclusión falsa."
+      "explicacion": "«O bien… o bien» es una disyunción excluyente: se da uno de los miembros y no ambos. El segundo miembro es la conjunción (q • r). La opción p v (q • r) sería la disyunción inclusiva."
     },
     {
-      "pregunta": "Un estudiante propone: «Si llueve, se moja la calle. Si se moja la calle, disminuye el polvo. Entonces, si llueve, disminuye el polvo». ¿Qué evaluación corresponde?",
+      "pregunta": "¿Cuál es la formalización de «Si el modelo es correcto, entonces sus predicciones son precisas y sus supuestos son verificables»? (p: el modelo es correcto; q: sus predicciones son precisas; r: sus supuestos son verificables)",
       "opciones": [
-        "Es válido: encadena correctamente dos condicionales.",
-        "Es inválido: afirma el consecuente.",
-        "Es inválido: niega el antecedente.",
-        "Es inválido: la conclusión no puede ser condicional."
-      ],
-      "correcta": "A",
-      "explicacion": "La forma es p → q; q → r; por lo tanto p → r. La validez depende de la estructura, no de que los hechos del ejemplo sean verdaderos."
-    },
-    {
-      "pregunta": "¿Cuál de estas inferencias NO es un silogismo hipotético válido?",
-      "opciones": [
-        "Si p → q y q → r, entonces p → r.",
-        "Si p → q y q → r, entonces r → p.",
-        "Si a → b y b → c, entonces a → c.",
-        "Si m → n y n → o, entonces m → o."
-      ],
-      "correcta": "B",
-      "explicacion": "El encadenamiento permite ir desde el antecedente del primer condicional hasta el consecuente del segundo. No permite invertir la dirección y concluir r → p."
-    },
-    {
-      "pregunta": "Se afirma: «Si el sensor detecta humo, se activa la alarma. Si se activa la alarma, se evacúa el edificio». ¿Qué conclusión expresa correctamente el encadenamiento?",
-      "opciones": [
-        "Si se evacúa el edificio, el sensor detectó humo.",
-        "Si no se detecta humo, no se evacúa el edificio.",
-        "Si el sensor detecta humo, se evacúa el edificio.",
-        "Si se activa la alarma, el sensor necesariamente detectó humo."
+        "(p • q) → r",
+        "(p → q) • r",
+        "p → (q • r)",
+        "p → (q v r)"
       ],
       "correcta": "C",
-      "explicacion": "Las premisas tienen la forma p → q y q → r. El silogismo hipotético permite concluir p → r, pero no invertir los condicionales ni negar sus antecedentes."
+      "explicacion": "El consecuente del condicional es la conjunción «predicciones precisas y supuestos verificables», por eso lleva paréntesis: p → (q • r)."
     },
     {
-      "pregunta": "¿Qué diferencia permite distinguir el silogismo hipotético de una afirmación del consecuente?",
+      "pregunta": "Según la epistemología clásica, ¿cuál de estas afirmaciones es correcta?",
       "opciones": [
-        "El silogismo hipotético concluye siempre una disyunción; la afirmación del consecuente, un condicional.",
-        "El silogismo hipotético usa dos condicionales encadenados y concluye otro condicional; la afirmación del consecuente infiere p desde q y p → q, lo cual es inválido.",
-        "Ambos son válidos, pero el primero tiene tres premisas.",
-        "La afirmación del consecuente es válida solo cuando p y q son verdaderos."
+        "Los enunciados teóricos son propios de la filosofía de la ciencia y no de la ciencia.",
+        "Solo los enunciados básicos (de primer nivel) pueden confrontarse directamente con la experiencia.",
+        "Una teoría científica puede estar formada solo por enunciados teóricos desconectados de la experiencia.",
+        "Un enunciado es científico aunque no tenga ninguna relación posible con la experiencia."
       ],
       "correcta": "B",
-      "explicacion": "El silogismo hipotético tiene la forma p → q; q → r; ∴ p → r. En cambio, p → q; q; ∴ p no es válido, porque q podría ser verdadero por otra razón."
+      "explicacion": "Los enunciados teóricos pertenecen a la ciencia y se vinculan con la experiencia a través de enunciados de nivel inferior; un enunciado científico debe estar relacionado, aunque sea indirectamente, con la experiencia."
+    },
+    {
+      "pregunta": "¿Cuál de estos enunciados es un enunciado básico (observacional)?",
+      "opciones": [
+        "Los átomos están formados por un núcleo y electrones.",
+        "El calor es una forma de energía en tránsito.",
+        "Todos los gases se dilatan al calentarse.",
+        "En el recipiente 3, el termómetro marca 38 °C a las 10:00."
+      ],
+      "correcta": "D",
+      "explicacion": "Un enunciado básico describe una observación puntual, en un lugar y momento determinados. Los demás son generales o teóricos."
+    },
+    {
+      "pregunta": "¿Por qué un enunciado teórico no puede contrastarse directamente con la experiencia?",
+      "opciones": [
+        "Porque la ciencia solo admite enunciados básicos y descarta todos los demás por completo.",
+        "Porque se refiere siempre a hechos del pasado que ya no pueden observarse de ninguna forma.",
+        "Porque contiene términos no observacionales y se lo pone a prueba mediante enunciados de nivel inferior.",
+        "Porque no es un enunciado de la ciencia sino una definición verbal de carácter convencional."
+      ],
+      "correcta": "C",
+      "explicacion": "Los términos teóricos no se observan directamente. La teoría se contrasta a través de implicaciones contrastadoras formuladas en términos observacionales."
+    },
+    {
+      "pregunta": "«Todos los metales se dilatan al calentarse» es un enunciado:",
+      "opciones": [
+        "analítico: es verdadero por el solo significado de sus términos.",
+        "básico: describe una observación puntual en un lugar y momento determinados.",
+        "general (universal): afirma algo sobre todos los casos, observados o no.",
+        "singular: se refiere a un único objeto individual y determinado."
+      ],
+      "correcta": "C",
+      "explicacion": "Es un enunciado universal (una ley): su alcance excede los casos observados. No describe un caso puntual ni es verdadero por mera definición."
+    },
+    {
+      "pregunta": "¿A qué contexto pertenece la pregunta «¿cómo se le ocurrió a Semmelweis que la causa era la materia cadavérica?»?",
+      "opciones": [
+        "Contexto de justificación: la evaluación de si la evidencia apoya la hipótesis.",
+        "Contexto de aplicación: el uso práctico de una hipótesis ya aceptada.",
+        "Contexto de interpretación: la lectura del significado de sus términos.",
+        "Contexto de descubrimiento: el origen histórico o psicológico de una hipótesis."
+      ],
+      "correcta": "D",
+      "explicacion": "Preguntar cómo surgió una hipótesis es una cuestión de descubrimiento. La justificación se ocupa de si hay razones o evidencia para aceptarla."
+    },
+    {
+      "pregunta": "¿Cuál de estas tareas corresponde al contexto de justificación?",
+      "opciones": [
+        "Reconstruir la biografía del científico que propuso la hipótesis.",
+        "Usar la hipótesis ya aceptada para construir un dispositivo.",
+        "Investigar en qué circunstancias se le ocurrió la hipótesis al científico.",
+        "Evaluar si la evidencia disponible apoya la hipótesis."
+      ],
+      "correcta": "D",
+      "explicacion": "La justificación trata de las razones para aceptar o rechazar una hipótesis. El origen de la idea pertenece al descubrimiento y su uso práctico a la aplicación."
+    },
+    {
+      "pregunta": "Un físico cuenta que la hipótesis se le ocurrió en un sueño. ¿Qué implica eso para su justificación?",
+      "opciones": [
+        "Nada: cómo surgió una hipótesis no determina si la evidencia la apoya.",
+        "Que la hipótesis debe ser aceptada, porque surgió por inspiración.",
+        "Que la hipótesis es falsa, porque no se obtuvo mediante la observación.",
+        "Que solo puede justificarse si antes se reconstruye cómo se le ocurrió."
+      ],
+      "correcta": "A",
+      "explicacion": "Descubrimiento y justificación son contextos distintos: el origen de la hipótesis no la hace verdadera ni falsa; lo que cuenta para justificarla es la evidencia y la contrastación."
+    },
+    {
+      "pregunta": "De «p → q» y «q → r» se obtiene «p → r». ¿Qué regla se aplicó?",
+      "opciones": [
+        "Modus tollens",
+        "Silogismo hipotético",
+        "Modus ponens",
+        "Silogismo disyuntivo"
+      ],
+      "correcta": "B",
+      "explicacion": "Se encadenan dos condicionales: el consecuente del primero es el antecedente del segundo."
+    },
+    {
+      "pregunta": "De «p → q» y «¬q» se obtiene «¬p». ¿Qué regla se aplicó?",
+      "opciones": [
+        "Modus ponens",
+        "Silogismo hipotético",
+        "Simplificación",
+        "Modus tollens"
+      ],
+      "correcta": "D",
+      "explicacion": "Se niega el consecuente de un condicional para negar su antecedente."
+    },
+    {
+      "pregunta": "De «(p • q) → r» y «p • q» se obtiene «r». ¿Qué regla se aplicó?",
+      "opciones": [
+        "Simplificación",
+        "Modus ponens",
+        "Modus tollens",
+        "Silogismo hipotético"
+      ],
+      "correcta": "B",
+      "explicacion": "Se afirma el antecedente del condicional (la conjunción p • q) para obtener el consecuente."
+    },
+    {
+      "pregunta": "¿Qué regla permite pasar de «(p → w) • ¬w» a «¬w»?",
+      "opciones": [
+        "Conjunción",
+        "Modus tollens",
+        "Modus ponens",
+        "Simplificación"
+      ],
+      "correcta": "D",
+      "explicacion": "De una conjunción se puede obtener cualquiera de sus miembros por separado."
+    },
+    {
+      "pregunta": "¿Cuál de estas inferencias es inválida?",
+      "opciones": [
+        "p → q; q → r; por lo tanto, p → r",
+        "p → q; ¬q; por lo tanto, ¬p",
+        "p → q; q; por lo tanto, p",
+        "p → q; p; por lo tanto, q"
+      ],
+      "correcta": "C",
+      "explicacion": "Afirmar el consecuente es una falacia: q puede ser verdadero por otra razón. Las otras tres son modus ponens, modus tollens y silogismo hipotético."
     }
   ]
 }
