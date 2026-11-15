@@ -3,7 +3,7 @@
   "tema": "Parcial completo (banco de preguntas)",
   "preguntas": [
     {
-      "pregunta": "Una molécula de ADN tiene:",
+      "pregunta": "Una molécula de ADN bicatenario tiene:",
       "opciones": [
         "el mismo número de adeninas que guaninas",
         "el mismo número de adeninas que de timinas",
@@ -11,7 +11,9 @@
         "el mismo número de guaninas que de timinas"
       ],
       "correcta": "B",
-      "explicacion": "Según la regla de Chargaff, en el ADN bicatenario la adenina se aparea con la timina, por lo que sus cantidades son iguales; la guanina se aparea con la citosina. El uracilo es propio del ARN, no del ADN."
+      "explicacion": "En el ADN bicatenario, la regla de Chargaff establece que la cantidad de adenina es igual a la de timina y la de guanina igual a la de citosina. Esta igualdad no debe generalizarse al ADN monocatenario. El uracilo es característico del ARN.",
+      "id": "ahx1pm",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "¿Cómo son las uniones de moléculas de ADN?",
@@ -22,7 +24,9 @@
         "los nucleótidos de la misma cadena se unen entre sí mediante su base nitrogenada"
       ],
       "correcta": "B",
-      "explicacion": "Las dos hebras antiparalelas del ADN se mantienen unidas por puentes de hidrógeno entre sus bases complementarias (A=T y G≡C). Los nucleótidos de una misma cadena se unen covalentemente mediante enlaces fosfodiéster."
+      "explicacion": "Las dos hebras antiparalelas del ADN se mantienen unidas por puentes de hidrógeno entre sus bases complementarias (A=T y G≡C). Los nucleótidos de una misma cadena se unen covalentemente mediante enlaces fosfodiéster.",
+      "id": "rg03qs",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Los fosfolípidos y los glucolípidos:",
@@ -33,7 +37,9 @@
         "forman parte de la membrana plasmática en eucariontes, pero no en procariontes"
       ],
       "correcta": "C",
-      "explicacion": "Son componentes estructurales clave de las bicapas lipídicas de todas las membranas celulares y del sistema de endomembranas. Las células animales no poseen pared celular."
+      "explicacion": "Son componentes estructurales clave de las bicapas lipídicas de todas las membranas celulares y del sistema de endomembranas. Las células animales no poseen pared celular.",
+      "id": "vnjl0b",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "Los triglicéridos se caracterizan porque:",
@@ -44,7 +50,9 @@
         "almacenan energía en el glicerol"
       ],
       "correcta": "A",
-      "explicacion": "Un triglicérido es una molécula de reserva energética formada por la esterificación de una molécula de glicerol con tres moléculas de ácidos grasos. No cumplen funciones estructurales en membranas."
+      "explicacion": "Un triglicérido es una molécula de reserva energética formada por la esterificación de una molécula de glicerol con tres moléculas de ácidos grasos. No cumplen funciones estructurales en membranas.",
+      "id": "1ywgu5s",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Un ácido graso está formado por:",
@@ -55,25 +63,48 @@
         "un grupo carboxilo polar y una cadena hidrocarbonada hidrofóbica"
       ],
       "correcta": "D",
-      "explicacion": "Los ácidos grasos poseen un grupo carboxilo polar, que puede ionizarse en agua, unido a una cadena hidrocarbonada apolar e hidrofóbica. Esta combinación explica su carácter anfipático."
+      "explicacion": "Los ácidos grasos poseen un grupo carboxilo polar, que puede ionizarse en agua, unido a una cadena hidrocarbonada apolar e hidrofóbica. Esta combinación explica su carácter anfipático.",
+      "id": "frndlw",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "¿Cuál de las siguientes moléculas es un polisacárido de reserva en células animales y vegetales respectivamente?",
-      "opciones": ["glucógeno y almidón", "almidón y glucógeno", "celulosa y glucógeno", "glucógeno y celulosa"],
+      "opciones": [
+        "glucógeno y almidón",
+        "almidón y glucógeno",
+        "celulosa y glucógeno",
+        "glucógeno y celulosa"
+      ],
       "correcta": "A",
-      "explicacion": "El glucógeno es la reserva energética de glucosa en animales (hígado y músculo), mientras que el almidón es la reserva energética en vegetales. La celulosa es estructural, no de reserva."
+      "explicacion": "El glucógeno es la reserva energética de glucosa en animales (hígado y músculo), mientras que el almidón es la reserva energética en vegetales. La celulosa es estructural, no de reserva.",
+      "id": "6xu8oy",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "¿Cuál de las siguientes moléculas es un disacárido?",
-      "opciones": ["glucógeno", "celulosa", "lactosa", "almidón"],
+      "opciones": [
+        "glucógeno",
+        "celulosa",
+        "lactosa",
+        "almidón"
+      ],
       "correcta": "C",
-      "explicacion": "La lactosa es un disacárido formado por la unión de glucosa y galactosa. El glucógeno, la celulosa y el almidón son polisacáridos."
+      "explicacion": "La lactosa es un disacárido formado por la unión de glucosa y galactosa. El glucógeno, la celulosa y el almidón son polisacáridos.",
+      "id": "198qp2g",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "La celulosa, el glucógeno y el almidón están formados por:",
-      "opciones": ["lactosas y glucosas", "dos tipos de monosacáridos distintos", "glucosas", "glucosas y fructosa"],
+      "opciones": [
+        "lactosas y glucosas",
+        "dos tipos de monosacáridos distintos",
+        "glucosas",
+        "glucosas y fructosa"
+      ],
       "correcta": "C",
-      "explicacion": "La celulosa, el glucógeno y el almidón son homopolisacáridos formados exclusivamente por unidades de glucosa. Se diferencian principalmente por el tipo de enlace glucosídico y por el grado de ramificación."
+      "explicacion": "La celulosa, el glucógeno y el almidón son homopolisacáridos formados exclusivamente por unidades de glucosa. Se diferencian principalmente por el tipo de enlace glucosídico y por el grado de ramificación.",
+      "id": "1u1vn29",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Si una proteína se desnaturaliza:",
@@ -84,7 +115,9 @@
         "se obtienen oligosacáridos"
       ],
       "correcta": "B",
-      "explicacion": "La desnaturalización altera las estructuras secundaria, terciaria y cuaternaria al romper interacciones no covalentes, pero conserva la estructura primaria porque no rompe, en condiciones habituales de desnaturalización, los enlaces peptídicos."
+      "explicacion": "La desnaturalización altera las estructuras secundaria, terciaria y cuaternaria al romper interacciones no covalentes, pero conserva la estructura primaria porque no rompe, en condiciones habituales de desnaturalización, los enlaces peptídicos.",
+      "id": "1xvitbo",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Las uniones peptídicas se producen:",
@@ -95,7 +128,9 @@
         "entre el grupo R de un aminoácido y el grupo R de otro aminoácido"
       ],
       "correcta": "C",
-      "explicacion": "El enlace peptídico es una unión covalente de tipo amida entre el grupo carboxilo de un aminoácido y el grupo amino del siguiente, con liberación de una molécula de agua."
+      "explicacion": "El enlace peptídico es una unión covalente de tipo amida entre el grupo carboxilo de un aminoácido y el grupo amino del siguiente, con liberación de una molécula de agua.",
+      "id": "u1avuq",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Los fosfolípidos:",
@@ -106,13 +141,22 @@
         "forman las paredes en las membranas celulares"
       ],
       "correcta": "C",
-      "explicacion": "Son los componentes lipídicos mayoritarios de las bicapas celulares debido a su naturaleza anfipática."
+      "explicacion": "Son los componentes lipídicos mayoritarios de las bicapas celulares debido a su naturaleza anfipática.",
+      "id": "n9k7uq",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "Las reacciones anabólicas:",
-      "opciones": ["liberan energía", "consumen energía", "son de degradación", "son exergónicas"],
+      "opciones": [
+        "liberan energía",
+        "consumen energía",
+        "son de degradación",
+        "son exergónicas"
+      ],
       "correcta": "B",
-      "explicacion": "Las reacciones anabólicas construyen moléculas complejas a partir de precursores más simples y, en términos generales, son endergónicas: requieren un aporte de energía para impulsar la síntesis."
+      "explicacion": "Las reacciones anabólicas construyen moléculas complejas a partir de precursores más simples y, en términos generales, son endergónicas: requieren un aporte de energía para impulsar la síntesis.",
+      "id": "kuvik",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Las moléculas de ATP tienen la función de:",
@@ -123,7 +167,9 @@
         "transportar energía almacenada en la pentosa"
       ],
       "correcta": "B",
-      "explicacion": "El ATP funciona como el “intermediario o moneda energética” celular, transfiriendo energía desde las reacciones exergónicas hacia las endergónicas a través del enlace fosfato."
+      "explicacion": "El ATP funciona como el “intermediario o moneda energética” celular, transfiriendo energía desde las reacciones exergónicas hacia las endergónicas a través del enlace fosfato.",
+      "id": "11zd0md",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "¿Cuál de las siguientes reacciones puede ser calificada como anabólica?",
@@ -134,7 +180,9 @@
         "la unión de tres aminoácidos para formar un tripéptido"
       ],
       "correcta": "D",
-      "explicacion": "La unión de aminoácidos para formar un tripéptido es una reacción de síntesis o condensación, asociada al anabolismo. Las demás opciones corresponden a procesos degradativos."
+      "explicacion": "La unión de aminoácidos para formar un tripéptido es una reacción de síntesis o condensación, asociada al anabolismo. Las demás opciones corresponden a procesos degradativos.",
+      "id": "1hsuav",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "El ATP proporciona energía para:",
@@ -145,7 +193,9 @@
         "las reacciones exergónicas y carbónicas"
       ],
       "correcta": "B",
-      "explicacion": "Se utiliza en procesos endergónicos: síntesis metabólica (anabolismo), transporte activo en contra de gradiente y trabajo mecánico."
+      "explicacion": "Se utiliza en procesos endergónicos: síntesis metabólica (anabolismo), transporte activo en contra de gradiente y trabajo mecánico.",
+      "id": "1hz96qs",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Las enzimas:",
@@ -156,7 +206,9 @@
         "aceleran las reacciones químicas tanto anabólicas como catabólicas"
       ],
       "correcta": "D",
-      "explicacion": "Son catalizadores biológicos que disminuyen la energía de activación de las reacciones químicas celulares sin consumirse en el proceso, independientemente de si son anabólicas o catabólicas."
+      "explicacion": "Son catalizadores biológicos que disminuyen la energía de activación de las reacciones químicas celulares sin consumirse en el proceso, independientemente de si son anabólicas o catabólicas.",
+      "id": "npt07q",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Las enzimas alostéricas:",
@@ -167,7 +219,9 @@
         "son aquellas que reconocen distintos tipos de sustratos a la vez"
       ],
       "correcta": "B",
-      "explicacion": "Además del sitio activo donde se une el sustrato, presentan sitios de regulación (sitios alostéricos) donde se unen moduladores o efectores que alteran su actividad reguladora."
+      "explicacion": "Además del sitio activo donde se une el sustrato, presentan sitios de regulación (sitios alostéricos) donde se unen moduladores o efectores que alteran su actividad reguladora.",
+      "id": "4cwh3o",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "¿Cuál de las siguientes opciones sobre las enzimas es correcta?",
@@ -178,7 +232,9 @@
         "todas las enzimas tienen el mismo sitio activo"
       ],
       "correcta": "B",
-      "explicacion": "Las enzimas poseen una alta especificidad de sustrato determinada por la conformación tridimensional de su sitio activo."
+      "explicacion": "Las enzimas poseen una alta especificidad de sustrato determinada por la conformación tridimensional de su sitio activo.",
+      "id": "10uklqm",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Indique la opción correcta sobre energía:",
@@ -189,7 +245,9 @@
         "no se crea ni se destruye ni se transforma"
       ],
       "correcta": "C",
-      "explicacion": "Primera Ley de la Termodinámica: La energía no se crea ni se destruye, solo se transforma de una forma a otra."
+      "explicacion": "Primera Ley de la Termodinámica: La energía no se crea ni se destruye, solo se transforma de una forma a otra.",
+      "id": "1dgmnqs",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "En las células eucariontes, el colesterol:",
@@ -200,7 +258,9 @@
         "forma parte de la membrana de células vegetales"
       ],
       "correcta": "C",
-      "explicacion": "El colesterol es un esterol característico de las membranas de las células animales, donde contribuye a regular su fluidez. Las células vegetales poseen principalmente fitoesteroles en sus membranas."
+      "explicacion": "El colesterol es un esterol característico de las membranas de las células animales, donde contribuye a regular su fluidez. Las células vegetales poseen principalmente fitoesteroles en sus membranas.",
+      "id": "1kq8ipm",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "La membrana plasmática:",
@@ -211,7 +271,9 @@
         "tiene oligosacáridos en su cara citoplasmática"
       ],
       "correcta": "B",
-      "explicacion": "Los hidratos de carbono (glucolípidos y glucoproteínas) se ubican exclusivamente en la monocapa externa de la membrana plasmática formando el glucocálix."
+      "explicacion": "Los hidratos de carbono (glucolípidos y glucoproteínas) se ubican exclusivamente en la monocapa externa de la membrana plasmática formando el glucocálix.",
+      "id": "1auj1pq",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "Señalar la opción correcta sobre el transporte de membrana:",
@@ -222,7 +284,9 @@
         "los iones se transportan por ósmosis"
       ],
       "correcta": "A",
-      "explicacion": "La fagocitosis es un tipo de endocitosis (transporte en masa) que envuelve partículas en vesículas endocíticas. La ósmosis es transporte pasivo (agua) y la bomba es transporte activo primario que consume ATP."
+      "explicacion": "La fagocitosis es un tipo de endocitosis (transporte en masa) que envuelve partículas en vesículas endocíticas. La ósmosis es transporte pasivo (agua) y la bomba es transporte activo primario que consume ATP.",
+      "id": "1cdidcu",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "¿Qué tipo de macromoléculas forman la membrana plasmática?",
@@ -233,7 +297,9 @@
         "fosfolípidos, glucolípidos, proteínas y ácidos nucleicos"
       ],
       "correcta": "C",
-      "explicacion": "De acuerdo con el modelo de mosaico fluido, la membrana está constituida por una bicapa lipídica (fosfolípidos y colesterol), proteínas integrales y periféricas, y glúcidos acoplados. No contiene ácidos nucleicos."
+      "explicacion": "De acuerdo con el modelo de mosaico fluido, la membrana está constituida por una bicapa lipídica (fosfolípidos y colesterol), proteínas integrales y periféricas, y glúcidos acoplados. No contiene ácidos nucleicos.",
+      "id": "zky0uc",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "En la difusión facilitada las sustancias ingresan:",
@@ -244,7 +310,9 @@
         "con gasto de energía y las sustancias pasan en contra del gradiente"
       ],
       "correcta": "B",
-      "explicacion": "Es un transporte pasivo (no requiere ATP, va a favor de gradiente) que utiliza transportadores proteicos (canales o carriers) para moléculas polares o con carga."
+      "explicacion": "Es un transporte pasivo (no requiere ATP, va a favor de gradiente) que utiliza transportadores proteicos (canales o carriers) para moléculas polares o con carga.",
+      "id": "103fc63",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "La pinocitosis:",
@@ -255,7 +323,9 @@
         "permite la salida de sólidos de la célula"
       ],
       "correcta": "B",
-      "explicacion": "La pinocitosis es una forma de endocitosis (invaginación de líquido extracelular con solutos disueltos) y, al implicar deformación de la membrana y formación de vesículas, requiere gasto de ATP (mecanismo activo/en masa)."
+      "explicacion": "La pinocitosis es una forma de endocitosis (invaginación de líquido extracelular con solutos disueltos) y, al implicar deformación de la membrana y formación de vesículas, requiere gasto de ATP (mecanismo activo/en masa).",
+      "id": "h00glc",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "En los lisosomas:",
@@ -266,7 +336,9 @@
         "se fabrican enzimas digestivas"
       ],
       "correcta": "B",
-      "explicacion": "Los lisosomas son organelas que contienen hidrolasas ácidas para la digestión intracelular de material endocitado o componentes autofágicos. Las enzimas se sintetizan en el RER."
+      "explicacion": "Los lisosomas son organelas que contienen hidrolasas ácidas para la digestión intracelular de material endocitado o componentes autofágicos. Las enzimas se sintetizan en el RER.",
+      "id": "e6at2y",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "El aparato de Golgi:",
@@ -277,19 +349,35 @@
         "recibe todas las proteínas que se fabrican en cualquier parte de la célula"
       ],
       "correcta": "B",
-      "explicacion": "Forma parte del sistema de endomembranas. Recibe las proteínas que entran por el RER mediante vesículas de transporte para su procesamiento, modificación (como glucosilación) y empaquetamiento."
+      "explicacion": "Forma parte del sistema de endomembranas. Recibe las proteínas que entran por el RER mediante vesículas de transporte para su procesamiento, modificación (como glucosilación) y empaquetamiento.",
+      "id": "1d0j27n",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "¿Cuál de las siguientes proteínas se fabrica en el Retículo Endoplásmico Rugoso (RER)?",
-      "opciones": ["enzimas del citoplasma", "proteína de la membrana plasmática", "proteínas de los ribosomas", "histonas"],
+      "opciones": [
+        "enzimas del citoplasma",
+        "proteína de la membrana plasmática",
+        "proteínas de los ribosomas",
+        "histonas"
+      ],
       "correcta": "B",
-      "explicacion": "Los ribosomas adosados al RER sintetizan proteínas destinadas a membranas, organelas del sistema de endomembranas o secreción celular. Las proteínas citosólicas, histonas y ribosómicas se sintetizan en ribosomas libres."
+      "explicacion": "Los ribosomas adosados al RER sintetizan proteínas destinadas a membranas, organelas del sistema de endomembranas o secreción celular. Las proteínas citosólicas, histonas y ribosómicas se sintetizan en ribosomas libres.",
+      "id": "15j4lqo",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Los macrófagos son células que fagocitan bacterias. En la digestión de la bacteria intervienen:",
-      "opciones": ["lisosomas", "cloroplastos", "ribosomas", "Retículo Endoplásmico Liso"],
+      "opciones": [
+        "lisosomas",
+        "cloroplastos",
+        "ribosomas",
+        "Retículo Endoplásmico Liso"
+      ],
       "correcta": "A",
-      "explicacion": "Tras la fagocitosis, el fagosoma se fusiona con un lisosoma primario para formar un fagolisosoma, donde las enzimas lisosomales degradan el material bacteriano."
+      "explicacion": "Tras la fagocitosis, el fagosoma se fusiona con un lisosoma primario para formar un fagolisosoma, donde las enzimas lisosomales degradan el material bacteriano.",
+      "id": "f07zet",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "Los cloroplastos:",
@@ -300,18 +388,22 @@
         "son organelas de plantas y hongos realizan fotosíntesis"
       ],
       "correcta": "B",
-      "explicacion": "Los cloroplastos son organelas presentes en ciertas células eucariontes fotosintéticas, principalmente de plantas y algas. Las bacterias fotosintéticas no tienen cloroplastos y los hongos no realizan fotosíntesis."
+      "explicacion": "Los cloroplastos son organelas presentes en ciertas células eucariontes fotosintéticas, principalmente de plantas y algas. Las bacterias fotosintéticas no tienen cloroplastos y los hongos no realizan fotosíntesis.",
+      "id": "1dk54eq",
+      "subtema": "Metabolismo y energía"
     },
     {
-      "pregunta": "¿De qué fuentes provienen los átomos que forman la glucosa durante la fotosíntesis?",
+      "pregunta": "Según la ecuación global simplificada de la fotosíntesis oxigénica, ¿de dónde provienen los átomos que forman la glucosa?",
       "opciones": [
-        "CO₂ atmosférico e hidrógeno de las moléculas de agua provenientes del suelo",
-        "átomos de moléculas orgánicas provenientes del suelo",
-        "carbono, hidrógeno, oxígeno, nitrógeno, fósforo y azufre",
-        "CO₂ atmosférico (carbono y oxígeno) e hidrógeno del agua"
+        "El carbono y el oxígeno de la glucosa provienen del agua, mientras que el hidrógeno proviene del CO₂.",
+        "El carbono proviene del agua y el hidrógeno y el oxígeno provienen del CO₂.",
+        "El carbono, el hidrógeno y el oxígeno de la glucosa provienen exclusivamente del agua.",
+        "El carbono y el oxígeno incorporados a la glucosa provienen del CO₂, mientras que el hidrógeno se incorpora principalmente a partir del agua."
       ],
       "correcta": "D",
-      "explicacion": "En términos del balance global simplificado de la fotosíntesis, el carbono de la glucosa proviene del CO₂ fijado y el hidrógeno proviene principalmente del agua. El oxígeno de la materia orgánica procede principalmente del CO₂ en este esquema simplificado."
+      "explicacion": "En el balance global simplificado, el CO₂ aporta el carbono fijado y el oxígeno que se incorpora a los carbohidratos, mientras que el agua aporta el hidrógeno. El O₂ molecular liberado durante la fotosíntesis procede de la fotólisis del agua; no es la fuente del oxígeno de la glucosa en esta representación.",
+      "id": "19qel43",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "¿Qué diferencias y similitudes hay entre una célula vegetal y una célula animal?",
@@ -322,7 +414,9 @@
         "ambas son heterótrofas"
       ],
       "correcta": "B",
-      "explicacion": "Tanto la célula animal como la vegetal poseen mitocondrias para llevar a cabo la respiración celular aeróbica. Los cloroplastos son exclusivos de las plantas y algas."
+      "explicacion": "Tanto la célula animal como la vegetal poseen mitocondrias para llevar a cabo la respiración celular aeróbica. Los cloroplastos son exclusivos de las plantas y algas.",
+      "id": "qcqpsz",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "¿Qué productos se obtienen de la etapa lumínica de la fotosíntesis?",
@@ -333,13 +427,22 @@
         "oxígeno que se utiliza en la etapa bioquímica"
       ],
       "correcta": "B",
-      "explicacion": "El oxígeno generado por la fotólisis del agua es expulsado al exterior de la célula. El ATP y NADPH producidos son los que pasan a ser utilizados en la etapa bioquímica."
+      "explicacion": "El oxígeno generado por la fotólisis del agua es expulsado al exterior de la célula. El ATP y NADPH producidos son los que pasan a ser utilizados en la etapa bioquímica.",
+      "id": "7qgbbw",
+      "subtema": "Metabolismo y energía"
     },
     {
-      "pregunta": "Durante la etapa bioquímica de la fotosíntesis:",
-      "opciones": ["se obtiene energía de la luz", "se libera CO₂ al exterior", "se libera oxígeno al exterior", "se sintetiza glucosa"],
+      "pregunta": "Durante el ciclo de Calvin (etapa bioquímica de la fotosíntesis):",
+      "opciones": [
+        "se obtiene directamente energía de la luz",
+        "se libera CO₂ como producto neto",
+        "se libera oxígeno por la fotólisis del agua",
+        "se forman triosas fosfato a partir del CO₂ utilizando ATP y NADPH"
+      ],
       "correcta": "D",
-      "explicacion": "Durante el ciclo de Calvin se utiliza el ATP y el NADPH producidos en la fase luminosa para fijar y reducir CO₂ y formar triosas fosfato, a partir de las cuales se sintetizan otros glúcidos, incluida la glucosa."
+      "explicacion": "El ciclo de Calvin fija y reduce CO₂ utilizando ATP y NADPH producidos durante las reacciones dependientes de la luz. Su producto neto inmediato es una triosa fosfato (G3P); a partir de estas moléculas la célula puede sintetizar glucosa y otros carbohidratos. El ciclo no libera O₂.",
+      "id": "5a3zkl",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "¿En qué etapa de la respiración celular aeróbica se produce mayor cantidad de ATP?",
@@ -350,7 +453,9 @@
         "durante la fermentación"
       ],
       "correcta": "B",
-      "explicacion": "La mayor producción de ATP de la respiración celular aeróbica ocurre durante la cadena de transporte de electrones y la fosforilación oxidativa, que aprovechan el gradiente de protones para sintetizar ATP."
+      "explicacion": "La mayor producción de ATP de la respiración celular aeróbica ocurre durante la cadena de transporte de electrones y la fosforilación oxidativa, que aprovechan el gradiente de protones para sintetizar ATP.",
+      "id": "i4ukj",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "En la glucólisis:",
@@ -361,7 +466,9 @@
         "la glucosa se transforma en ATP"
       ],
       "correcta": "B",
-      "explicacion": "Ocurre en el citosol: una molécula de hexosa (glucosa, 6C) se escinde en dos moléculas de piruvato (3C), obteniéndose un rendimiento neto de 2 ATP y 2 NADH."
+      "explicacion": "Ocurre en el citosol: una molécula de hexosa (glucosa, 6C) se escinde en dos moléculas de piruvato (3C), obteniéndose un rendimiento neto de 2 ATP y 2 NADH.",
+      "id": "l07qu9",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "La respiración celular consiste en:",
@@ -372,13 +479,22 @@
         "un proceso anabólico para obtener energía"
       ],
       "correcta": "B",
-      "explicacion": "Es un conjunto de vías catabólicas exergónicas en las cuales los compuestos orgánicos se degradan oxidativamente para extraer energía en forma de ATP."
+      "explicacion": "Es un conjunto de vías catabólicas exergónicas en las cuales los compuestos orgánicos se degradan oxidativamente para extraer energía en forma de ATP.",
+      "id": "4xuk36",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "¿Cuál es la función de la mitocondria?",
-      "opciones": ["fabricar agua", "obtener energía en forma de ATP", "liberar oxígeno", "fabricar ATP y liberar oxígeno"],
+      "opciones": [
+        "fabricar agua",
+        "obtener energía en forma de ATP",
+        "liberar oxígeno",
+        "fabricar ATP y liberar oxígeno"
+      ],
       "correcta": "B",
-      "explicacion": "Es la organela encargada de la respiración celular aeróbica (Ciclo de Krebs, cadena respiratoria y fosforilación oxidativa) con el objetivo de sintetizar ATP."
+      "explicacion": "Es la organela encargada de la respiración celular aeróbica (Ciclo de Krebs, cadena respiratoria y fosforilación oxidativa) con el objetivo de sintetizar ATP.",
+      "id": "ic25xu",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "Las bacterias, en general, se caracterizan por:",
@@ -389,25 +505,48 @@
         "Presentar una pared celular de quitina"
       ],
       "correcta": "A",
-      "explicacion": "Las bacterias son organismos procariontes unicelulares. Poseen membrana plasmática y, en la mayoría de los casos, una pared celular; carecen de un núcleo delimitado por una envoltura nuclear. Las paredes bacterianas no están formadas por celulosa ni quitina."
+      "explicacion": "Las bacterias son organismos procariontes unicelulares. Poseen membrana plasmática y, en la mayoría de los casos, una pared celular; carecen de un núcleo delimitado por una envoltura nuclear. Las paredes bacterianas no están formadas por celulosa ni quitina.",
+      "id": "1sjzohi",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "Los seres vivos intercambian materia y energía con el medio, por lo tanto:",
-      "opciones": ["son sistemas cerrados", "no presentan homeostasis", "son sistemas abiertos", "se adaptan al medio ambiente"],
+      "opciones": [
+        "son sistemas cerrados",
+        "no presentan homeostasis",
+        "son sistemas abiertos",
+        "se adaptan al medio ambiente"
+      ],
       "correcta": "C",
-      "explicacion": "Termodinámicamente, los seres vivos se definen como sistemas abiertos porque intercambian de forma constante materia y energía con su entorno para mantener su organización interna."
+      "explicacion": "Termodinámicamente, los seres vivos se definen como sistemas abiertos porque intercambian de forma constante materia y energía con su entorno para mantener su organización interna.",
+      "id": "kggzij",
+      "subtema": "Integración y conceptos generales"
     },
     {
       "pregunta": "Un organismo pluricelular, eucariota y heterótrofo, sin cloroplastos, ¿a qué reinos puede pertenecer?",
-      "opciones": ["Fungi o Vegetal", "Protista", "Animal o Fungi", "Animal o Protista"],
+      "opciones": [
+        "Fungi o Vegetal",
+        "Protista",
+        "Animal o Fungi",
+        "Animal o Protista"
+      ],
       "correcta": "C",
-      "explicacion": "Un organismo pluricelular, eucariota y heterótrofo que carece de cloroplastos puede pertenecer, en la clasificación de cinco reinos utilizada en este banco, a Animalia o Fungi."
+      "explicacion": "Un organismo pluricelular, eucariota y heterótrofo que carece de cloroplastos puede pertenecer, en la clasificación de cinco reinos utilizada en este banco, a Animalia o Fungi.",
+      "id": "hag3l3",
+      "subtema": "Integración y conceptos generales"
     },
     {
       "pregunta": "Las bacterias y las células eucariontes tienen en común la presencia de:",
-      "opciones": ["ADN, membrana plasmática y organelas", "ADN asociado a histonas", "ADN lineal", "ADN y membrana plasmática"],
+      "opciones": [
+        "ADN, membrana plasmática y organelas",
+        "ADN asociado a histonas",
+        "ADN lineal",
+        "ADN y membrana plasmática"
+      ],
       "correcta": "D",
-      "explicacion": "Todos los tipos celulares comparten una membrana plasmática, citoplasma, ribosomas y material genético (ADN). Las bacterias no poseen organelas membranosas, histonas verdaderas ni ADN lineal."
+      "explicacion": "Todos los tipos celulares comparten una membrana plasmática, citoplasma, ribosomas y material genético (ADN). Las bacterias no poseen organelas membranosas, histonas verdaderas ni ADN lineal.",
+      "id": "zzn0bm",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "Si se hidroliza una molécula de ADN, ¿qué molécula se obtiene?",
@@ -418,31 +557,61 @@
         "únicamente desoxirribosa"
       ],
       "correcta": "A",
-      "explicacion": "La hidrólisis completa del polímero de ADN rinde sus monómeros constituyentes: desoxirribonucleótidos (compuestos por desoxirribosa, un grupo fosfato y una base nitrogenada)."
+      "explicacion": "La hidrólisis completa del polímero de ADN rinde sus monómeros constituyentes: desoxirribonucleótidos (compuestos por desoxirribosa, un grupo fosfato y una base nitrogenada).",
+      "id": "r4uipu",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "En un organismo autótrofo, la liberación de oxígeno al medio, en la fotosíntesis, ocurre:",
-      "opciones": ["A partir del CO₂", "Independiente de la luz solar", "Debido a la fotólisis del agua", "Durante la fijación del CO₂"],
+      "opciones": [
+        "A partir del CO₂",
+        "Independiente de la luz solar",
+        "Debido a la fotólisis del agua",
+        "Durante la fijación del CO₂"
+      ],
       "correcta": "C",
-      "explicacion": "El O₂ liberado en la fotosíntesis oxigénica proviene de la fotólisis del agua en el fotosistema II. Por lo tanto, el oxígeno gaseoso liberado tiene como fuente el H₂O y no el CO₂."
+      "explicacion": "El O₂ liberado en la fotosíntesis oxigénica proviene de la fotólisis del agua en el fotosistema II. Por lo tanto, el oxígeno gaseoso liberado tiene como fuente el H₂O y no el CO₂.",
+      "id": "15uzdjr",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Elija un proceso exergónico:",
-      "opciones": ["Contracción muscular", "Ciclo de Calvin", "Exocitosis", "Glucólisis"],
+      "opciones": [
+        "Contracción muscular",
+        "Ciclo de Calvin",
+        "Exocitosis",
+        "Glucólisis"
+      ],
       "correcta": "D",
-      "explicacion": "La glucólisis es una vía catabólica y globalmente exergónica: degrada parcialmente la glucosa y permite obtener ATP y NADH. No requiere O₂ para llevarse a cabo."
+      "explicacion": "La glucólisis es una vía catabólica y globalmente exergónica: degrada parcialmente la glucosa y permite obtener ATP y NADH. No requiere O₂ para llevarse a cabo.",
+      "id": "h4nr2x",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Respecto al ciclo de Krebs, se puede afirmar que:",
-      "opciones": ["Produce coenzimas oxidadas", "Produce coenzimas reducidas", "Consume ATP", "Consume CO₂"],
+      "opciones": [
+        "Produce coenzimas oxidadas",
+        "Produce coenzimas reducidas",
+        "Consume ATP",
+        "Consume CO₂"
+      ],
       "correcta": "B",
-      "explicacion": "En el ciclo de Krebs, NAD⁺ y FAD aceptan electrones y se reducen a NADH y FADH₂, respectivamente. Estas coenzimas reducidas luego entregan sus electrones a la cadena respiratoria."
+      "explicacion": "En el ciclo de Krebs, NAD⁺ y FAD aceptan electrones y se reducen a NADH y FADH₂, respectivamente. Estas coenzimas reducidas luego entregan sus electrones a la cadena respiratoria.",
+      "id": "g9q3tr",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Durante la fermentación de la masa para producir el pan, la levadura:",
-      "opciones": ["Producen O₂", "Producen etanol y CO₂", "Consumen CO₂ y H₂O", "Producen ácido láctico"],
+      "opciones": [
+        "Producen O₂",
+        "Producen etanol y CO₂",
+        "Consumen CO₂ y H₂O",
+        "Producen ácido láctico"
+      ],
       "correcta": "B",
-      "explicacion": "Las levaduras realizan fermentación alcohólica y producen etanol y CO₂ a partir del piruvato. El dióxido de carbono liberado contribuye al leudado de la masa."
+      "explicacion": "Las levaduras realizan fermentación alcohólica y producen etanol y CO₂ a partir del piruvato. El dióxido de carbono liberado contribuye al leudado de la masa.",
+      "id": "1lfwn8f",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "En relación con las proteínas, se puede afirmar que:",
@@ -453,7 +622,9 @@
         "No son afectadas por los cambios de pH"
       ],
       "correcta": "B",
-      "explicacion": "Muchas proteínas y enzimas complejas presentan estructura cuaternaria constituida por varias cadenas polipeptídicas asociadas."
+      "explicacion": "Muchas proteínas y enzimas complejas presentan estructura cuaternaria constituida por varias cadenas polipeptídicas asociadas.",
+      "id": "x3oov4",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "En relación con los niveles de organización de la materia, se puede afirmar que:",
@@ -464,7 +635,9 @@
         "Los ecosistemas presentan bajo requerimiento energético para mantener su organización"
       ],
       "correcta": "B",
-      "explicacion": "Una población está constituida por individuos de la misma especie que habitan una determinada área, mientras que una comunidad reúne poblaciones de diferentes especies que interactúan. Por ello, la población corresponde a un nivel de organización menos complejo que la comunidad."
+      "explicacion": "Una población está constituida por individuos de la misma especie que habitan una determinada área, mientras que una comunidad reúne poblaciones de diferentes especies que interactúan. Por ello, la población corresponde a un nivel de organización menos complejo que la comunidad.",
+      "id": "1ia79sl",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "La celulosa que ingerimos en la dieta:",
@@ -475,7 +648,9 @@
         "Incrementa las reservas de glucógeno en el hígado, si está en exceso en nuestra dieta"
       ],
       "correcta": "C",
-      "explicacion": "La celulosa no puede ser digerida por las enzimas humanas porque carecemos de celulasa para romper sus enlaces β(1→4) glucosídicos. Por eso actúa principalmente como fibra alimentaria."
+      "explicacion": "La celulosa no puede ser digerida por las enzimas humanas porque carecemos de celulasa para romper sus enlaces β(1→4) glucosídicos. Por eso actúa principalmente como fibra alimentaria.",
+      "id": "1uwm8ir",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "¿Cuál de los siguientes procesos metabólicos les permite a las células obtener mayor cantidad de ATP?",
@@ -486,7 +661,9 @@
         "Glucólisis"
       ],
       "correcta": "C",
-      "explicacion": "La oxidación completa de un ácido graso de 18 carbonos produce más ATP que la oxidación completa de una molécula de glucosa, debido a que los ácidos grasos están más reducidos y generan más equivalentes reductores."
+      "explicacion": "La oxidación completa de un ácido graso de 18 carbonos produce más ATP que la oxidación completa de una molécula de glucosa, debido a que los ácidos grasos están más reducidos y generan más equivalentes reductores.",
+      "id": "131iuyw",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Entre las propiedades de las enzimas se puede mencionar que:",
@@ -497,7 +674,9 @@
         "Catalizan tanto reacciones endergónicas como exergónicas"
       ],
       "correcta": "D",
-      "explicacion": "Las enzimas disminuyen la energía de activación de las reacciones sin modificar la energía libre de reactivos y productos. Por eso no cambian el ΔG ni el equilibrio termodinámico de la reacción."
+      "explicacion": "Las enzimas disminuyen la energía de activación de las reacciones sin modificar la energía libre de reactivos y productos. Por eso no cambian el ΔG ni el equilibrio termodinámico de la reacción.",
+      "id": "15i1fnj",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Respecto al ADN, se puede afirmar que:",
@@ -508,13 +687,22 @@
         "Está formado por 2 cadenas complementarias unidas entre sí por enlaces fosfodiéster"
       ],
       "correcta": "A",
-      "explicacion": "El ADN está formado por dos cadenas antiparalelas unidas mediante puentes de hidrógeno entre bases complementarias: A con T y G con C. Los enlaces fosfodiéster unen los nucleótidos dentro de cada cadena."
+      "explicacion": "El ADN está formado por dos cadenas antiparalelas unidas mediante puentes de hidrógeno entre bases complementarias: A con T y G con C. Los enlaces fosfodiéster unen los nucleótidos dentro de cada cadena.",
+      "id": "1pp1itk",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "¿Cuál de las siguientes moléculas es un esteroide?",
-      "opciones": ["Hormonas sexuales", "Caroteno", "Ceras", "Aminoácidos"],
+      "opciones": [
+        "Hormonas sexuales",
+        "Caroteno",
+        "Ceras",
+        "Aminoácidos"
+      ],
       "correcta": "A",
-      "explicacion": "Las hormonas sexuales (como estrógenos, progesterona y testosterona) son lípidos no saponificables derivados del núcleo del ciclopentanoperhidrofenantreno (estructura esteroide, derivada del colesterol)."
+      "explicacion": "Las hormonas sexuales (como estrógenos, progesterona y testosterona) son lípidos no saponificables derivados del núcleo del ciclopentanoperhidrofenantreno (estructura esteroide, derivada del colesterol).",
+      "id": "16wg7kp",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Los filamentos de actina:",
@@ -525,7 +713,9 @@
         "Forman el huso mitótico durante la división celular"
       ],
       "correcta": "A",
-      "explicacion": "Los microfilamentos de actina, junto con la miosina, forman el anillo contráctil que participa en la citocinesis de las células animales. Los cilios, flagelos, huso mitótico y centriolos son estructuras basadas principalmente en microtúbulos."
+      "explicacion": "Los microfilamentos de actina, junto con la miosina, forman el anillo contráctil que participa en la citocinesis de las células animales. Los cilios, flagelos, huso mitótico y centriolos son estructuras basadas principalmente en microtúbulos.",
+      "id": "1l124mw",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "En relación con el almidón y el glucógeno se puede afirmar que presentan función:",
@@ -536,13 +726,22 @@
         "De almacenamiento energético, en plantas y animales respectivamente"
       ],
       "correcta": "D",
-      "explicacion": "Ambos son homopolisacáridos de reserva energética de glucosa: el almidón es la forma de reserva en el reino vegetal y el glucógeno en el reino animal (hígado y tejido muscular)."
+      "explicacion": "Ambos son homopolisacáridos de reserva energética de glucosa: el almidón es la forma de reserva en el reino vegetal y el glucógeno en el reino animal (hígado y tejido muscular).",
+      "id": "1hnyfpn",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "¿Cuál de las siguientes moléculas almacena la mayor parte de la energía metabólica de un animal para ser usada por largos períodos de tiempo?",
-      "opciones": ["Glucógeno", "Triacilgliceroles", "Monosacáridos", "ATP"],
+      "opciones": [
+        "Glucógeno",
+        "Triacilgliceroles",
+        "Monosacáridos",
+        "ATP"
+      ],
       "correcta": "B",
-      "explicacion": "Los triacilgliceroles (grasas neutras almacenadas en los adipocitos) son altamente hidrofóbicos y reducidos, permitiendo acumular una mayor cantidad de energía por unidad de masa en comparación con los hidratos de carbono."
+      "explicacion": "Los triacilgliceroles (grasas neutras almacenadas en los adipocitos) son altamente hidrofóbicos y reducidos, permitiendo acumular una mayor cantidad de energía por unidad de masa en comparación con los hidratos de carbono.",
+      "id": "1vkcae2",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "En relación con las vitaminas se puede afirmar que:",
@@ -553,13 +752,22 @@
         "Son compuestos que aportan energía para las reacciones metabólicas"
       ],
       "correcta": "B",
-      "explicacion": "La mayoría de las vitaminas hidrosolubles (por ejemplo, el complejo B) funcionan químicamente como coenzimas o precursoras de coenzimas clave en el metabolismo celular."
+      "explicacion": "La mayoría de las vitaminas hidrosolubles (por ejemplo, el complejo B) funcionan químicamente como coenzimas o precursoras de coenzimas clave en el metabolismo celular.",
+      "id": "1r5f7on",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "La LDL que viaja en el torrente sanguíneo ingresa a las células mediante:",
-      "opciones": ["Una proteína receptora específica", "Pinocitosis", "Una bomba activa", "Fagocitosis"],
+      "opciones": [
+        "Una proteína receptora específica",
+        "Pinocitosis",
+        "Una bomba activa",
+        "Fagocitosis"
+      ],
       "correcta": "A",
-      "explicacion": "La lipoproteína de baja densidad (LDL) entra a la célula por endocitosis mediada por receptor, reconociendo receptores de apoB-100 en depresiones revestidas de clatrina en la membrana."
+      "explicacion": "La lipoproteína de baja densidad (LDL) entra a la célula por endocitosis mediada por receptor, reconociendo receptores de apoB-100 en depresiones revestidas de clatrina en la membrana.",
+      "id": "1txm9hc",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "En relación con las enzimas alostéricas se puede afirmar que, a diferencia de las enzimas michaelianas:",
@@ -570,31 +778,61 @@
         "El sustrato siempre se une al sitio alostérico"
       ],
       "correcta": "A",
-      "explicacion": "Las enzimas alostéricas poseen sitios de regulación distintos del sitio activo. La unión de un modulador (positivo o negativo) provoca cambios conformacionales en el sitio activo, aumentando o reduciendo su afinidad por el sustrato."
+      "explicacion": "Las enzimas alostéricas poseen sitios de regulación distintos del sitio activo. La unión de un modulador (positivo o negativo) provoca cambios conformacionales en el sitio activo, aumentando o reduciendo su afinidad por el sustrato.",
+      "id": "1pxo346",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Las células procariontes y las células eucariontes se caracterizan porque ambas presentan:",
-      "opciones": ["Mitocondrias", "Ribosomas", "ADN rodeado por una envoltura con doble membrana", "ADN lineal y desnudo"],
+      "opciones": [
+        "Mitocondrias",
+        "Ribosomas",
+        "ADN rodeado por una envoltura con doble membrana",
+        "ADN lineal y desnudo"
+      ],
       "correcta": "B",
-      "explicacion": "Los ribosomas son los complejos ribonucleoproteicos universales indispensables para la traducción y síntesis de proteínas en todo tipo de célula viva."
+      "explicacion": "Los ribosomas son los complejos ribonucleoproteicos universales indispensables para la traducción y síntesis de proteínas en todo tipo de célula viva.",
+      "id": "bx8dt8",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "¿Cuál de las siguientes estructuras suele estar presente en células animales y ausente en las células de plantas superiores?",
-      "opciones": ["Mitocondria", "Peroxisoma", "Centriolos", "Núcleo"],
+      "opciones": [
+        "Mitocondria",
+        "Peroxisoma",
+        "Centriolos",
+        "Núcleo"
+      ],
       "correcta": "C",
-      "explicacion": "Los centriolos forman parte del centrosoma de las células animales y, en general, están ausentes en las plantas superiores, que organizan sus microtúbulos mediante otros centros organizadores."
+      "explicacion": "Los centriolos forman parte del centrosoma de las células animales y, en general, están ausentes en las plantas superiores, que organizan sus microtúbulos mediante otros centros organizadores.",
+      "id": "cr54wu",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "En el ciclo de Calvin:",
-      "opciones": ["Se libera O₂", "El CO₂ se reduce a carbohidratos", "Se consumen hidratos de carbono", "El NADPH se oxida a NADP⁺"],
+      "opciones": [
+        "Se libera O₂",
+        "El CO₂ se reduce a carbohidratos",
+        "Se consumen hidratos de carbono",
+        "El NADPH se oxida a NADP⁺"
+      ],
       "correcta": "B",
-      "explicacion": "En el ciclo de Calvin, el CO₂ se fija y se reduce para formar carbohidratos utilizando el ATP y el NADPH producidos previamente en la etapa luminosa."
+      "explicacion": "En el ciclo de Calvin, el CO₂ se fija y se reduce para formar carbohidratos utilizando el ATP y el NADPH producidos previamente en la etapa luminosa.",
+      "id": "ekqnrn",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Las enzimas que catalizan la síntesis de lípidos se encuentran en:",
-      "opciones": ["La envoltura nuclear", "El retículo endoplásmico rugoso", "Los ribosomas", "El retículo endoplásmico liso"],
+      "opciones": [
+        "La envoltura nuclear",
+        "El retículo endoplásmico rugoso",
+        "Los ribosomas",
+        "El retículo endoplásmico liso"
+      ],
       "correcta": "D",
-      "explicacion": "El Retículo Endoplásmico Liso (REL) es la organela especializada en la biosíntesis de lípidos complejos (como fosfolípidos, colesterol y esteroides) y en procesos de detoxificación."
+      "explicacion": "El Retículo Endoplásmico Liso (REL) es la organela especializada en la biosíntesis de lípidos complejos (como fosfolípidos, colesterol y esteroides) y en procesos de detoxificación.",
+      "id": "1v9ld5m",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Respecto al ATP, se puede afirmar que:",
@@ -605,13 +843,22 @@
         "Es utilizado como reserva energía a largo plazo."
       ],
       "correcta": "C",
-      "explicacion": "La hidrólisis del ATP libera energía libre que puede acoplarse a procesos endergónicos, como muchas reacciones anabólicas. Por ello permite que estas reacciones puedan llevarse a cabo."
+      "explicacion": "La hidrólisis del ATP libera energía libre que puede acoplarse a procesos endergónicos, como muchas reacciones anabólicas. Por ello permite que estas reacciones puedan llevarse a cabo.",
+      "id": "h4ao2i",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "¿Cuál de los siguientes disacáridos cumple una función principal de transporte en las plantas?",
-      "opciones": ["Glucógeno", "Sacarosa", "Lactosa", "Celulosa"],
+      "opciones": [
+        "Glucógeno",
+        "Sacarosa",
+        "Lactosa",
+        "Celulosa"
+      ],
       "correcta": "B",
-      "explicacion": "La sacarosa es el principal azúcar de transporte a larga distancia en las plantas y se moviliza principalmente por el floema."
+      "explicacion": "La sacarosa es el principal azúcar de transporte a larga distancia en las plantas y se moviliza principalmente por el floema.",
+      "id": "1o8zw3s",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "¿Cuál de las siguientes situaciones corresponde a una reacción de condensación?",
@@ -622,7 +869,9 @@
         "Sacarosa + H₂O → Glucosa + Fructosa"
       ],
       "correcta": "C",
-      "explicacion": "La condensación une moléculas más pequeñas y libera agua; en este caso, galactosa y glucosa se unen para formar lactosa y H₂O. La reacción inversa, con consumo de agua, corresponde a una hidrólisis."
+      "explicacion": "La condensación une moléculas más pequeñas y libera agua; en este caso, galactosa y glucosa se unen para formar lactosa y H₂O. La reacción inversa, con consumo de agua, corresponde a una hidrólisis.",
+      "id": "g9b4sq",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Seleccione la opción correcta respecto a los triacilgliceroles que sintetizan las plantas:",
@@ -633,7 +882,9 @@
         "Regulan la fluidez de las membranas celulares."
       ],
       "correcta": "C",
-      "explicacion": "Los triacilgliceroles vegetales funcionan principalmente como reserva energética almacenada en frutos y semillas."
+      "explicacion": "Los triacilgliceroles vegetales funcionan principalmente como reserva energética almacenada en frutos y semillas.",
+      "id": "1fgl0fl",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "¿Cuál de los siguientes procesos ocurre en el retículo endoplásmico liso?",
@@ -644,7 +895,9 @@
         "Síntesis de proteínas de membrana y de exportación."
       ],
       "correcta": "C",
-      "explicacion": "El retículo endoplásmico liso participa de manera importante en la síntesis de lípidos, incluidos fosfolípidos y otros lípidos de membrana, así como en la detoxificación metabólica."
+      "explicacion": "El retículo endoplásmico liso participa de manera importante en la síntesis de lípidos, incluidos fosfolípidos y otros lípidos de membrana, así como en la detoxificación metabólica.",
+      "id": "1m1pz1d",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "En relación con el glucógeno se puede afirmar que:",
@@ -655,7 +908,9 @@
         "Cumple función estructural, en células animales."
       ],
       "correcta": "B",
-      "explicacion": "El glucógeno es un homopolisacárido de glucosa cuya función principal en animales es almacenar energía, especialmente en hígado y músculo. Su estructura ramificada permite movilizar glucosa con rapidez."
+      "explicacion": "El glucógeno es un homopolisacárido de glucosa cuya función principal en animales es almacenar energía, especialmente en hígado y músculo. Su estructura ramificada permite movilizar glucosa con rapidez.",
+      "id": "1f44d5f",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Respecto al ARN se puede afirmar que:",
@@ -666,7 +921,9 @@
         "Está compuesto por Desoxirribosa, Fosfato, Adenina, Guanina, Citosina y Timina."
       ],
       "correcta": "A",
-      "explicacion": "El ARN está formado por ribonucleótidos que contienen ribosa, fosfato y las bases adenina, guanina, citosina y uracilo. No posee desoxirribosa ni timina como componentes característicos."
+      "explicacion": "El ARN está formado por ribonucleótidos que contienen ribosa, fosfato y las bases adenina, guanina, citosina y uracilo. No posee desoxirribosa ni timina como componentes característicos.",
+      "id": "izx4kq",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Respecto a la respiración celular aeróbica, se puede afirmar que:",
@@ -677,7 +934,9 @@
         "Es un proceso endergónico."
       ],
       "correcta": "C",
-      "explicacion": "En la respiración celular aeróbica, los carbonos de las moléculas orgánicas combustibles se oxidan finalmente a CO₂ y los electrones llegan al O₂, que se reduce a H₂O. Por eso se trata de un proceso de oxidación globalmente exergónico."
+      "explicacion": "En la respiración celular aeróbica, los carbonos de las moléculas orgánicas combustibles se oxidan finalmente a CO₂ y los electrones llegan al O₂, que se reduce a H₂O. Por eso se trata de un proceso de oxidación globalmente exergónico.",
+      "id": "1mdlw7v",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "La Fenilcetonuria es una enfermedad molecular causada por:",
@@ -688,7 +947,9 @@
         "La carencia de fenilalanina en la dieta"
       ],
       "correcta": "A",
-      "explicacion": "La fenilcetonuria se debe principalmente a una deficiencia de fenilalanina hidroxilasa, lo que provoca acumulación de fenilalanina y de metabolitos derivados potencialmente tóxicos."
+      "explicacion": "La fenilcetonuria se debe principalmente a una deficiencia de fenilalanina hidroxilasa, lo que provoca acumulación de fenilalanina y de metabolitos derivados potencialmente tóxicos.",
+      "id": "1bs5w1e",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "En relación con los lípidos se puede afirmar que:",
@@ -699,7 +960,9 @@
         "Todos forman micelas o bicapas en agua."
       ],
       "correcta": "B",
-      "explicacion": "Los lípidos tienen escasa solubilidad en agua y, en general, se disuelven mejor en solventes orgánicos no polares. Esta propiedad se relaciona con su abundancia de regiones hidrofóbicas."
+      "explicacion": "Los lípidos tienen escasa solubilidad en agua y, en general, se disuelven mejor en solventes orgánicos no polares. Esta propiedad se relaciona con su abundancia de regiones hidrofóbicas.",
+      "id": "1inghc1",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "¿Qué característica de una proteína determina su actividad biológica?",
@@ -710,7 +973,9 @@
         "Su tamaño"
       ],
       "correcta": "A",
-      "explicacion": "La actividad biológica de una proteína depende de su conformación tridimensional, porque esta determina la disposición espacial de los residuos que forman sitios de unión, sitios catalíticos y otras superficies funcionales."
+      "explicacion": "La actividad biológica de una proteína depende de su conformación tridimensional, porque esta determina la disposición espacial de los residuos que forman sitios de unión, sitios catalíticos y otras superficies funcionales.",
+      "id": "19m3buq",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "La hidrólisis de una proteína:",
@@ -721,19 +986,35 @@
         "Implica la pérdida de su estructura primaria."
       ],
       "correcta": "D",
-      "explicacion": "La hidrólisis rompe los enlaces peptídicos de la proteína y, por lo tanto, altera su estructura primaria. Al perderse la cadena polipeptídica original también se pierde su conformación normal y, en general, su actividad."
+      "explicacion": "La hidrólisis rompe los enlaces peptídicos de la proteína y, por lo tanto, altera su estructura primaria. Al perderse la cadena polipeptídica original también se pierde su conformación normal y, en general, su actividad.",
+      "id": "1kt4ja5",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "La carencia de vitamina C en la dieta produce:",
-      "opciones": ["Kwashiorkor", "Anemia Falciforme.", "Deficiencia en la producción de colágeno funcional.", "Fenilcetonuria."],
+      "opciones": [
+        "Kwashiorkor",
+        "Anemia Falciforme.",
+        "Deficiencia en la producción de colágeno funcional.",
+        "Fenilcetonuria."
+      ],
       "correcta": "C",
-      "explicacion": "La vitamina C es necesaria para las reacciones de hidroxilación que permiten formar colágeno funcional. Su deficiencia compromete la síntesis y estabilidad del tejido conectivo."
+      "explicacion": "La vitamina C es necesaria para las reacciones de hidroxilación que permiten formar colágeno funcional. Su deficiencia compromete la síntesis y estabilidad del tejido conectivo.",
+      "id": "1sfowm8",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
-      "pregunta": "En ciertas bacterias, cuando crecen en presencia de lactosa y ausencia de glucosa, se observa la actividad de una enzima que metaboliza ese disacárido. En cambio, si el medio no contiene lactosa, no se encuentran moléculas de tal enzima. Este tipo de regulación enzimática se denomina:",
-      "opciones": ["Alostérica", "Modificación covalente reversible.", "Inhibición por producto final.", "Regulación génica."],
+      "pregunta": "En bacterias con operón lac, la expresión de los genes que codifican enzimas para metabolizar lactosa aumenta cuando hay lactosa y falta glucosa. ¿Qué tipo de regulación explica principalmente que la producción de esas enzimas dependa de la disponibilidad de lactosa?",
+      "opciones": [
+        "Regulación alostérica de la actividad de la enzima ya sintetizada.",
+        "Modificación covalente reversible de las enzimas.",
+        "Inhibición por producto final de la vía metabólica.",
+        "Regulación génica de la transcripción del operón lac."
+      ],
       "correcta": "D",
-      "explicacion": "La ausencia de lactosa evita la inducción de los genes del operón lac, de modo que no se sintetizan las enzimas necesarias para utilizar ese azúcar. Se trata, por lo tanto, de una regulación de la expresión génica."
+      "explicacion": "La lactosa se transforma en alolactosa, que se une al represor LacI y reduce su unión al operador, permitiendo la transcripción. La ausencia de glucosa favorece además la activación positiva mediada por cAMP-CAP. Puede existir expresión basal; por eso no es correcto afirmar que sin lactosa jamás haya moléculas de estas enzimas.",
+      "id": "17ccb5z",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "En relación con la inhibición por producto final, se puede afirmar que:",
@@ -744,18 +1025,22 @@
         "El producto final inhibe por vía alostérica a la primera enzima."
       ],
       "correcta": "D",
-      "explicacion": "En la inhibición por producto final, el metabolito final de una vía se une de manera alostérica a una enzima reguladora, con frecuencia una de las primeras de la secuencia, y disminuye su actividad."
+      "explicacion": "En la inhibición por producto final, el metabolito final de una vía se une de manera alostérica a una enzima reguladora, con frecuencia una de las primeras de la secuencia, y disminuye su actividad.",
+      "id": "j8hv6n",
+      "subtema": "Metabolismo y energía"
     },
     {
-      "pregunta": "En los procesos:",
+      "pregunta": "Considerada sin el acoplamiento energético que la impulsa, una reacción anabólica global suele presentar:",
       "opciones": [
-        "Anabólicos, los productos presentan más energía que los sustratos.",
-        "Anabólicos, los productos presentan menos energía que los sustratos.",
-        "Anabólicos, los productos presentan más entropía que los sustratos.",
-        "Catabólicos, los productos presentan menos entropía que los sustratos."
+        "productos con mayor energía libre de Gibbs que los sustratos",
+        "productos con menor energía libre de Gibbs que los sustratos",
+        "productos con mayor entropía que los sustratos en todos los casos",
+        "una variación de energía libre necesariamente negativa"
       ],
       "correcta": "A",
-      "explicacion": "Las vías anabólicas son, en conjunto, endergónicas y utilizan energía para formar moléculas más complejas. En consecuencia, los productos presentan mayor energía libre que los sustratos en el proceso global."
+      "explicacion": "La síntesis anabólica de moléculas complejas suele ser endergónica: considerada por separado, presenta ΔG positivo y requiere aporte de energía, por lo que los productos poseen mayor energía libre de Gibbs que los sustratos. En la célula puede acoplarse a procesos exergónicos, como la hidrólisis de ATP, para que el proceso global resulte favorable.",
+      "id": "1fif5ym",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Los lisosomas intervienen en:",
@@ -766,7 +1051,9 @@
         "La síntesis de lípidos."
       ],
       "correcta": "C",
-      "explicacion": "Los lisosomas contienen hidrolasas ácidas que degradan macromoléculas incorporadas por endocitosis y también materiales provenientes de procesos autofágicos."
+      "explicacion": "Los lisosomas contienen hidrolasas ácidas que degradan macromoléculas incorporadas por endocitosis y también materiales provenientes de procesos autofágicos.",
+      "id": "fcelwh",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "La fotosíntesis oxigénica (que libera O₂) se originó con la aparición de:",
@@ -777,7 +1064,9 @@
         "La respiración celular aeróbica."
       ],
       "correcta": "B",
-      "explicacion": "La fotosíntesis oxigénica surgió en procariontes fotosintéticos, específicamente en organismos ancestrales relacionados con las cianobacterias, capaces de usar agua como fuente de electrones y liberar O₂."
+      "explicacion": "La fotosíntesis oxigénica surgió en procariontes fotosintéticos, específicamente en organismos ancestrales relacionados con las cianobacterias, capaces de usar agua como fuente de electrones y liberar O₂.",
+      "id": "6mpp10",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Al producirse la fermentación láctica en las células de los músculos esqueléticos:",
@@ -788,7 +1077,9 @@
         "Se utiliza O₂"
       ],
       "correcta": "C",
-      "explicacion": "En la fermentación láctica, el piruvato se reduce a lactato y el NADH se oxida a NAD⁺. Así se regenera NAD⁺ para que la glucólisis pueda continuar."
+      "explicacion": "En la fermentación láctica, el piruvato se reduce a lactato y el NADH se oxida a NAD⁺. Así se regenera NAD⁺ para que la glucólisis pueda continuar.",
+      "id": "10rgvve",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Al colocar eritrocitos en una solución se observa que hay flujo neto de agua hacia fuera de la célula, por consiguiente, se puede afirmar que:",
@@ -799,7 +1090,9 @@
         "Los eritrocitos terminan estallando."
       ],
       "correcta": "B",
-      "explicacion": "Si el agua sale netamente de los eritrocitos, el medio externo es relativamente más concentrado en solutos y el citosol celular es hipotónico respecto de la solución. El agua se mueve por ósmosis, no mediante bombas."
+      "explicacion": "Si el agua sale netamente de los eritrocitos, el medio externo es relativamente más concentrado en solutos y el citosol celular es hipotónico respecto de la solución. El agua se mueve por ósmosis, no mediante bombas.",
+      "id": "svfv9k",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "En relación con los microtúbulos, se puede afirmar que:",
@@ -810,13 +1103,22 @@
         "Participan en la contracción del citoplasma durante la división celular."
       ],
       "correcta": "B",
-      "explicacion": "Los centriolos son estructuras cilíndricas formadas por microtúbulos y organizadas en tripletes, presentes en los centrosomas de las células animales. Las otras funciones citadas corresponden principalmente a microfilamentos o filamentos intermedios."
+      "explicacion": "Los centriolos son estructuras cilíndricas formadas por microtúbulos y organizadas en tripletes, presentes en los centrosomas de las células animales. Las otras funciones citadas corresponden principalmente a microfilamentos o filamentos intermedios.",
+      "id": "hlds02",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "Una proteína destinada a ser secretada por la célula sale de esta por:",
-      "opciones": ["Una proteína canal", "Fagocitosis", "Transporte activo mediado por transportadores específicos", "Exocitosis"],
+      "opciones": [
+        "Una proteína canal",
+        "Fagocitosis",
+        "Transporte activo mediado por transportadores específicos",
+        "Exocitosis"
+      ],
       "correcta": "D",
-      "explicacion": "Una proteína destinada al exterior de la célula sigue la vía secretora y, una vez empaquetada en vesículas, se libera por exocitosis mediante la fusión de la vesícula con la membrana plasmática."
+      "explicacion": "Una proteína destinada al exterior de la célula sigue la vía secretora y, una vez empaquetada en vesículas, se libera por exocitosis mediante la fusión de la vesícula con la membrana plasmática.",
+      "id": "f1i35d",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "La Pepsina es una enzima que se sintetiza como zimógeno (un tipo de pro proteína), por consiguiente:",
@@ -827,7 +1129,9 @@
         "Solo está activa cuando se encuentra como zimógeno."
       ],
       "correcta": "C",
-      "explicacion": "Un zimógeno es un precursor inactivo que se activa mediante escisión proteolítica. Por eso, la forma activa tiene menos aminoácidos que el zimógeno original."
+      "explicacion": "Un zimógeno es un precursor inactivo que se activa mediante escisión proteolítica. Por eso, la forma activa tiene menos aminoácidos que el zimógeno original.",
+      "id": "1mtkz5a",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "En relación con los seres vivos se puede afirmar que:",
@@ -838,13 +1142,22 @@
         "Intercambian únicamente materia con el medio."
       ],
       "correcta": "C",
-      "explicacion": "Los seres vivos crecen y se mantienen como sistemas abiertos autorregulados que intercambian constantemente materia y energía con su entorno."
+      "explicacion": "Los seres vivos crecen y se mantienen como sistemas abiertos autorregulados que intercambian constantemente materia y energía con su entorno.",
+      "id": "xqcuaq",
+      "subtema": "Integración y conceptos generales"
     },
     {
       "pregunta": "Respecto de la glucólisis, se puede afirmar que:",
-      "opciones": ["Oxida totalmente la glucosa.", "Consume CO₂", "Oxida parcialmente la glucosa.", "Es un proceso endergónico."],
+      "opciones": [
+        "Oxida totalmente la glucosa.",
+        "Consume CO₂",
+        "Oxida parcialmente la glucosa.",
+        "Es un proceso endergónico."
+      ],
       "correcta": "C",
-      "explicacion": "La glucólisis oxida parcialmente la glucosa hasta piruvato. No la oxida completamente a CO₂ y H₂O, ya que ese proceso requiere las etapas posteriores de la respiración celular."
+      "explicacion": "La glucólisis oxida parcialmente la glucosa hasta piruvato. No la oxida completamente a CO₂ y H₂O, ya que ese proceso requiere las etapas posteriores de la respiración celular.",
+      "id": "doi8o0",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "La fórmula de un monosacárido C₆H₁₂O₆ corresponde a:",
@@ -855,7 +1168,9 @@
         "Solo glucosa."
       ],
       "correcta": "B",
-      "explicacion": "La fórmula molecular C₆H₁₂O₆ no identifica por sí sola un único monosacárido, porque existen numerosos isómeros con esa misma fórmula, como glucosa, galactosa y fructosa."
+      "explicacion": "La fórmula molecular C₆H₁₂O₆ no identifica por sí sola un único monosacárido, porque existen numerosos isómeros con esa misma fórmula, como glucosa, galactosa y fructosa.",
+      "id": "8dcclb",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Las células procariontes y las células eucariontes presentan:",
@@ -866,7 +1181,9 @@
         "Ambas, un núcleo rodeado por doble membrana, dentro del cual se encuentra el ADN."
       ],
       "correcta": "C",
-      "explicacion": "Tanto las células procariontes como las eucariontes poseen ADN como material genético y ribosomas para la síntesis de proteínas. Se diferencian, entre otras cosas, en la presencia de núcleo y organelas membranosas."
+      "explicacion": "Tanto las células procariontes como las eucariontes poseen ADN como material genético y ribosomas para la síntesis de proteínas. Se diferencian, entre otras cosas, en la presencia de núcleo y organelas membranosas.",
+      "id": "ahpj5p",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "¿Cuál de los siguientes procesos produce la desnaturalización de las enzimas?",
@@ -877,7 +1194,9 @@
         "Unión a la enzima de un modulador alostérico positivo"
       ],
       "correcta": "C",
-      "explicacion": "Una temperatura excesivamente elevada puede alterar las interacciones que mantienen la conformación de una enzima y provocar su desnaturalización, con la consiguiente pérdida de actividad."
+      "explicacion": "Una temperatura excesivamente elevada puede alterar las interacciones que mantienen la conformación de una enzima y provocar su desnaturalización, con la consiguiente pérdida de actividad.",
+      "id": "19x0p4g",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "¿Cuál de las siguientes opciones está ordenada según un nivel de organización creciente?",
@@ -888,7 +1207,9 @@
         "Planeta Tierra, océano, manada de lobos, tubo digestivo, estomago, levadura, mitocondria, K+, protón."
       ],
       "correcta": "B",
-      "explicacion": "La secuencia b respeta el aumento de nivel de organización: protón (subatómico) → K⁺ (átomo/ion) → mitocondria (orgánulo) → levadura (célula) → estómago (órgano) → población de lobos → océano (ecosistema) → planeta Tierra. Las otras secuencias contienen inversiones de esta jerarquía."
+      "explicacion": "La secuencia b respeta el aumento de nivel de organización: protón (subatómico) → K⁺ (átomo/ion) → mitocondria (orgánulo) → levadura (célula) → estómago (órgano) → población de lobos → océano (ecosistema) → planeta Tierra. Las otras secuencias contienen inversiones de esta jerarquía.",
+      "id": "1js7jrb",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "En la membrana plasmática:",
@@ -899,7 +1220,9 @@
         "Es fluida únicamente debido a la presencia de colesterol"
       ],
       "correcta": "A",
-      "explicacion": "Los hidratos de carbono de la membrana plasmática, principalmente oligosacáridos unidos a proteínas o lípidos, se localizan en la cara extracelular y forman parte del glucocálix. La membrana es asimétrica y selectivamente permeable."
+      "explicacion": "Los hidratos de carbono de la membrana plasmática, principalmente oligosacáridos unidos a proteínas o lípidos, se localizan en la cara extracelular y forman parte del glucocálix. La membrana es asimétrica y selectivamente permeable.",
+      "id": "dcr081",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "Respecto de la fotosíntesis:",
@@ -910,13 +1233,22 @@
         "La ecuación general es glucosa + 6 O₂ → 6 CO₂ + 6 H₂O + energía."
       ],
       "correcta": "C",
-      "explicacion": "La fotosíntesis oxigénica consume CO₂ y agua y, utilizando energía luminosa, produce materia orgánica y O₂. Por eso resume correctamente el balance global simplificado del proceso: produce O₂ y consume CO₂ y agua."
+      "explicacion": "La fotosíntesis oxigénica consume CO₂ y agua y, utilizando energía luminosa, produce materia orgánica y O₂. Por eso resume correctamente el balance global simplificado del proceso: produce O₂ y consume CO₂ y agua.",
+      "id": "zrj5jc",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Una sustancia pequeña y no polar atraviesa las membranas celulares a favor del gradiente mediante:",
-      "opciones": ["Difusión facilitada.", "Pinocitosis.", "Bomba.", "Difusión simple."],
+      "opciones": [
+        "Difusión facilitada.",
+        "Pinocitosis.",
+        "Bomba.",
+        "Difusión simple."
+      ],
       "correcta": "D",
-      "explicacion": "Las moléculas pequeñas e hidrofóbicas o no polares se disuelven fácilmente en la matriz lipídica y atraviesan la bicapa por difusión simple, sin necesidad de transportadores proteicos ni gasto energético."
+      "explicacion": "Las moléculas pequeñas e hidrofóbicas o no polares se disuelven fácilmente en la matriz lipídica y atraviesan la bicapa por difusión simple, sin necesidad de transportadores proteicos ni gasto energético.",
+      "id": "y3fhko",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "El pH ácido del interior de los lisosomas se debe a que acumulan H⁺ mediante:",
@@ -927,13 +1259,22 @@
         "Bomba de protones dependiente de ATP."
       ],
       "correcta": "D",
-      "explicacion": "Las bombas V-ATPasa de la membrana lisosomal consumen ATP para transportar activamente H⁺ desde el citosol hacia el lumen del lisosoma, manteniendo allí un pH cercano a 4,5–5,0."
+      "explicacion": "Las bombas V-ATPasa de la membrana lisosomal consumen ATP para transportar activamente H⁺ desde el citosol hacia el lumen del lisosoma, manteniendo allí un pH cercano a 4,5–5,0.",
+      "id": "171v9rh",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "¿Cuál de las siguientes sustancias requiere gasto de energía metabólica para ingresar a la célula?",
-      "opciones": ["O₂.", "Sodio, cuando se desplaza a favor del gradiente.", "Agua.", "Macromoléculas."],
+      "opciones": [
+        "O₂.",
+        "Sodio, cuando se desplaza a favor del gradiente.",
+        "Agua.",
+        "Macromoléculas."
+      ],
       "correcta": "D",
-      "explicacion": "Las macromoléculas y partículas grandes ingresan por endocitosis, un transporte en masa que requiere deformación de la membrana y participación del citoesqueleto, con gasto de energía celular."
+      "explicacion": "Las macromoléculas y partículas grandes ingresan por endocitosis, un transporte en masa que requiere deformación de la membrana y participación del citoesqueleto, con gasto de energía celular.",
+      "id": "16b0er",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "¿Cuál de las siguientes afirmaciones de los oligosacáridos de la membrana plasmática es verdadera?",
@@ -944,7 +1285,9 @@
         "Le dan fluidez a la membrana."
       ],
       "correcta": "C",
-      "explicacion": "Los oligosacáridos del glucocálix participan en el reconocimiento celular, la adhesión y otras interacciones en la superficie de la célula."
+      "explicacion": "Los oligosacáridos del glucocálix participan en el reconocimiento celular, la adhesión y otras interacciones en la superficie de la célula.",
+      "id": "1wx3uiy",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "La hidrólisis de dos proteínas que dan por resultado los mismos aminoácidos permite concluir que:",
@@ -955,7 +1298,9 @@
         "Ambas tienen la misma estructura tridimensional."
       ],
       "correcta": "B",
-      "explicacion": "La hidrólisis rompe los enlaces peptídicos y revela la composición de aminoácidos de cada proteína, pero no permite reconstruir su secuencia original, conformación tridimensional ni función. Por eso no se puede afirmar que sean la misma o distinta proteína a partir de ese dato solamente."
+      "explicacion": "La hidrólisis rompe los enlaces peptídicos y revela la composición de aminoácidos de cada proteína, pero no permite reconstruir su secuencia original, conformación tridimensional ni función. Por eso no se puede afirmar que sean la misma o distinta proteína a partir de ese dato solamente.",
+      "id": "uh878h",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "El mal plegamiento de una proteína puede deberse a:",
@@ -966,13 +1311,22 @@
         "Cualquiera de los cambios en la secuencia o alteraciones en el pH/entorno."
       ],
       "correcta": "D",
-      "explicacion": "El mal plegamiento puede originarse por cambios en la secuencia de aminoácidos, por inserciones o deleciones y también por cambios del entorno, como alteraciones del pH."
+      "explicacion": "El mal plegamiento puede originarse por cambios en la secuencia de aminoácidos, por inserciones o deleciones y también por cambios del entorno, como alteraciones del pH.",
+      "id": "9qvcww",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "La mancha de grasa sale con detergente, pues estos compuestos respectivamente son:",
-      "opciones": ["Hidrofílica, hidrofóbico.", "Hidrofóbica, hidrofóbico.", "Hidrofóbica, anfipático.", "Hidrofóbica, hidrofílico."],
+      "opciones": [
+        "Hidrofílica, hidrofóbico.",
+        "Hidrofóbica, hidrofóbico.",
+        "Hidrofóbica, anfipático.",
+        "Hidrofóbica, hidrofílico."
+      ],
       "correcta": "C",
-      "explicacion": "La grasa es predominantemente hidrofóbica, mientras que los detergentes son anfipáticos, con una región apolar que interactúa con la grasa y una región polar que permite dispersarla en agua."
+      "explicacion": "La grasa es predominantemente hidrofóbica, mientras que los detergentes son anfipáticos, con una región apolar que interactúa con la grasa y una región polar que permite dispersarla en agua.",
+      "id": "m7rowv",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "El ADN:",
@@ -983,7 +1337,9 @@
         "Las dos cadenas se unen entre sí por enlaces fosfodiéster."
       ],
       "correcta": "B",
-      "explicacion": "La doble hélice del ADN se estabiliza mediante el apareamiento específico de bases complementarias: A con T y G con C, unidas por puentes de hidrógeno. Los enlaces fosfodiéster unen los nucleótidos de cada hebra, no las dos hebras entre sí."
+      "explicacion": "La doble hélice del ADN se estabiliza mediante el apareamiento específico de bases complementarias: A con T y G con C, unidas por puentes de hidrógeno. Los enlaces fosfodiéster unen los nucleótidos de cada hebra, no las dos hebras entre sí.",
+      "id": "qvon4z",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Entre las funciones de los nucleótidos se encuentra:",
@@ -994,25 +1350,48 @@
         "Transporte de energía libre celular (como el ATP)."
       ],
       "correcta": "D",
-      "explicacion": "Los nucleótidos trifosfatados como el ATP y el GTP actúan como mediadores o intermediarios en el transporte de energía celular."
+      "explicacion": "Los nucleótidos trifosfatados como el ATP y el GTP actúan como mediadores o intermediarios en el transporte de energía celular.",
+      "id": "1utv64o",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "¿Cuál de las siguientes sustancias NO es un glúcido u hidrato de carbono?",
-      "opciones": ["Glucosa.", "Almidón.", "Enzima.", "Desoxirribosa."],
+      "opciones": [
+        "Glucosa.",
+        "Almidón.",
+        "Enzima.",
+        "Desoxirribosa."
+      ],
       "correcta": "C",
-      "explicacion": "Las enzimas son principalmente proteínas y no son glúcidos; en cambio, la glucosa, la desoxirribosa, el almidón y la celulosa sí son carbohidratos."
+      "explicacion": "Las enzimas son principalmente proteínas y no son glúcidos; en cambio, la glucosa, la desoxirribosa, el almidón y la celulosa sí son carbohidratos.",
+      "id": "eihdds",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "¿Cuál de las siguientes moléculas almacena energía en el hígado y músculo?",
-      "opciones": ["ATP.", "Agua.", "Almidón.", "Glucógeno."],
+      "opciones": [
+        "ATP.",
+        "Agua.",
+        "Almidón.",
+        "Glucógeno."
+      ],
       "correcta": "D",
-      "explicacion": "El glucógeno es el polisacárido de reserva energética característico de las células animales, almacenado principalmente en los hepatocitos y en el tejido muscular esquelético."
+      "explicacion": "El glucógeno es el polisacárido de reserva energética característico de las células animales, almacenado principalmente en los hepatocitos y en el tejido muscular esquelético.",
+      "id": "ujjicl",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Los enlaces que se rompen cuando el agua se evapora son:",
-      "opciones": ["Iónicos.", "Covalentes no polares.", "Covalentes polares.", "Puentes de H."],
+      "opciones": [
+        "Iónicos.",
+        "Covalentes no polares.",
+        "Covalentes polares.",
+        "Puentes de H."
+      ],
       "correcta": "D",
-      "explicacion": "Al evaporarse el agua se rompen las interacciones intermoleculares, principalmente los puentes de hidrógeno, que mantienen unidas a las moléculas de agua. Los enlaces covalentes O–H dentro de cada molécula permanecen intactos."
+      "explicacion": "Al evaporarse el agua se rompen las interacciones intermoleculares, principalmente los puentes de hidrógeno, que mantienen unidas a las moléculas de agua. Los enlaces covalentes O–H dentro de cada molécula permanecen intactos.",
+      "id": "1bs8l7f",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "¿Cuáles de las siguientes afirmaciones se refieren a reacciones de hidrólisis?",
@@ -1023,7 +1402,9 @@
         "La desnaturalización de una proteína resulta de este tipo de reacción."
       ],
       "correcta": "C",
-      "explicacion": "La hidrólisis utiliza una molécula de agua para romper enlaces covalentes, por ejemplo enlaces glucosídicos, peptídicos o éster. Es el proceso opuesto a una reacción de condensación."
+      "explicacion": "La hidrólisis utiliza una molécula de agua para romper enlaces covalentes, por ejemplo enlaces glucosídicos, peptídicos o éster. Es el proceso opuesto a una reacción de condensación.",
+      "id": "eswina",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Una de las siguientes afirmaciones acerca de los enlaces covalentes NO es verdadera:",
@@ -1034,7 +1415,9 @@
         "Un enlace covalente es el resultado de que dos átomos compartan electrones."
       ],
       "correcta": "A",
-      "explicacion": "Es falsa porque entre dos átomos pueden formarse tanto enlaces simples como dobles o triples."
+      "explicacion": "Es falsa porque entre dos átomos pueden formarse tanto enlaces simples como dobles o triples.",
+      "id": "1319dut",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "El recorrido que sigue un aminoácido que formará parte de una enzima que cataliza la hidrólisis de polisacáridos en el tubo digestivo es:",
@@ -1045,24 +1428,35 @@
         "Sólo pasa por los ribosomas."
       ],
       "correcta": "A",
-      "explicacion": "Una proteína destinada a la secreción se sintetiza en ribosomas asociados al RER, ingresa al lumen del RER, pasa al complejo de Golgi y finalmente se libera al medio extracelular por exocitosis."
+      "explicacion": "Una proteína destinada a la secreción se sintetiza en ribosomas asociados al RER, ingresa al lumen del RER, pasa al complejo de Golgi y finalmente se libera al medio extracelular por exocitosis.",
+      "id": "vyqdgx",
+      "subtema": "Metabolismo y energía"
     },
     {
-      "pregunta": "La PEP carboxilasa y la rubisco son dos enzimas que catalizan una reacción en la que uno de los sustratos es el CO₂. Sin embargo, la primera funciona a bajas concentraciones de CO₂ y con mayor velocidad que la rubisco. Por tanto:",
+      "pregunta": "En ensayos realizados en las mismas condiciones, la PEP carboxilasa presenta un Km aparente para el CO₂ de 0,05 mM y la Rubisco uno de 0,4 mM. ¿Qué conclusión es correcta?",
       "opciones": [
-        "La PEP carboxilasa presenta mayor afinidad por el CO₂.",
-        "La PEP carboxilasa presenta menor afinidad por el CO₂ que la rubisco.",
-        "La PEP carboxilasa es más específica que la rubisco.",
-        "La PEP carboxilasa es menos específica que la rubisco."
+        "La PEP carboxilasa presenta mayor afinidad aparente por el CO₂, porque su Km es menor.",
+        "La PEP carboxilasa presenta menor afinidad aparente por el CO₂, porque su Km es menor.",
+        "Ambas presentan la misma afinidad, porque utilizan el mismo sustrato.",
+        "El Km indica la velocidad máxima de la enzima y no permite comparar la afinidad aparente."
       ],
       "correcta": "A",
-      "explicacion": "La PEP carboxilasa puede alcanzar una alta velocidad de reacción incluso a bajas concentraciones de CO₂, lo que indica una mayor afinidad aparente por el sustrato que la rubisco; en términos de Michaelis-Menten, corresponde a un Kₘ menor."
+      "explicacion": "En una comparación bajo las mismas condiciones y para el mismo sustrato, un Km aparente menor significa que se necesita menos CO₂ para alcanzar la mitad de la Vmax. Esto indica mayor afinidad aparente de la PEP carboxilasa. El Km no es la velocidad máxima.",
+      "id": "1b1t9k9",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Si se compara el zimógeno con su forma activa, aquel presenta:",
-      "opciones": ["menos aminoácidos.", "más aminoácidos.", "la misma cantidad de aminoácidos.", "más especificidad por el sustrato."],
+      "opciones": [
+        "menos aminoácidos.",
+        "más aminoácidos.",
+        "la misma cantidad de aminoácidos.",
+        "más especificidad por el sustrato."
+      ],
       "correcta": "B",
-      "explicacion": "Un zimógeno es un precursor enzimático inactivo que suele contener un segmento adicional que se elimina durante la activación proteolítica. Por eso el zimógeno posee más aminoácidos que la enzima madura."
+      "explicacion": "Un zimógeno es un precursor enzimático inactivo que suele contener un segmento adicional que se elimina durante la activación proteolítica. Por eso el zimógeno posee más aminoácidos que la enzima madura.",
+      "id": "fvvctq",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "¿Cuál de las siguientes características es exclusiva de las enzimas alostéricas?",
@@ -1073,7 +1467,9 @@
         "Tienen un sitio activo y uno o más sitios para moduladores."
       ],
       "correcta": "D",
-      "explicacion": "Las enzimas alostéricas poseen, además del sitio activo, uno o más sitios reguladores donde se unen moduladores que cambian la conformación y la actividad de la enzima. Esa característica permite una regulación que no corresponde a las enzimas michaelianas simples."
+      "explicacion": "Las enzimas alostéricas poseen, además del sitio activo, uno o más sitios reguladores donde se unen moduladores que cambian la conformación y la actividad de la enzima. Esa característica permite una regulación que no corresponde a las enzimas michaelianas simples.",
+      "id": "lg5fec",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "El ciclo de Krebs:",
@@ -1084,13 +1480,22 @@
         "Es exclusivamente anabólico."
       ],
       "correcta": "C",
-      "explicacion": "El ciclo de Krebs es una vía anfibólica. Por cada acetil-CoA libera dos CO₂ y produce coenzimas reducidas, principalmente NADH y FADH₂."
+      "explicacion": "El ciclo de Krebs es una vía anfibólica. Por cada acetil-CoA libera dos CO₂ y produce coenzimas reducidas, principalmente NADH y FADH₂.",
+      "id": "hd7jyy",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "La teoría del endosimbionte explica el origen de:",
-      "opciones": ["las células eucariontes.", "la respiración celular aeróbica.", "las mitocondrias y cloroplastos.", "La fotosíntesis."],
+      "opciones": [
+        "las células eucariontes.",
+        "la respiración celular aeróbica.",
+        "las mitocondrias y cloroplastos.",
+        "La fotosíntesis."
+      ],
       "correcta": "C",
-      "explicacion": "La teoría endosimbiótica propone que las mitocondrias y los cloroplastos surgieron a partir de bacterias que establecieron asociaciones simbióticas estables con células ancestrales. La presencia de doble membrana, ADN circular y ribosomas de tipo bacteriano respalda esta interpretación."
+      "explicacion": "La teoría endosimbiótica propone que las mitocondrias y los cloroplastos surgieron a partir de bacterias que establecieron asociaciones simbióticas estables con células ancestrales. La presencia de doble membrana, ADN circular y ribosomas de tipo bacteriano respalda esta interpretación.",
+      "id": "nrou65",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "La respiración celular aeróbica y la fermentación:",
@@ -1101,7 +1506,9 @@
         "Ambas son procesos endergónicos"
       ],
       "correcta": "B",
-      "explicacion": "La respiración aeróbica utiliza O₂ como aceptor final de electrones en la cadena respiratoria, mientras que la fermentación utiliza moléculas orgánicas derivadas del propio metabolismo como aceptores finales. Además, la fermentación no implica la oxidación completa del combustible."
+      "explicacion": "La respiración aeróbica utiliza O₂ como aceptor final de electrones en la cadena respiratoria, mientras que la fermentación utiliza moléculas orgánicas derivadas del propio metabolismo como aceptores finales. Además, la fermentación no implica la oxidación completa del combustible.",
+      "id": "1yr3n1y",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "En relación a la historia de la vida, la aparición del O₂ en la atmósfera:",
@@ -1112,13 +1519,22 @@
         "Se explica mediante la teoría endosimbionte."
       ],
       "correcta": "C",
-      "explicacion": "La fotosíntesis oxigénica ancestral fue desarrollada por procariontes fotosintéticos relacionados con las cianobacterias, que utilizaron agua como fuente de electrones y liberaron O₂. Su actividad contribuyó al aumento de oxígeno atmosférico."
+      "explicacion": "La fotosíntesis oxigénica ancestral fue desarrollada por procariontes fotosintéticos relacionados con las cianobacterias, que utilizaron agua como fuente de electrones y liberaron O₂. Su actividad contribuyó al aumento de oxígeno atmosférico.",
+      "id": "2vb5rh",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Si se riega una planta con agua, cuyo oxígeno es radiactivo, al cabo de varias horas de iluminación, la mayor parte de la radiactividad aparecerá en:",
-      "opciones": ["El almidón.", "El CO₂ en el aire.", "Las moléculas de glucosa sintetizadas.", "El O₂ liberado al aire."],
+      "opciones": [
+        "El almidón.",
+        "El CO₂ en el aire.",
+        "Las moléculas de glucosa sintetizadas.",
+        "El O₂ liberado al aire."
+      ],
       "correcta": "D",
-      "explicacion": "En la fotólisis del agua, las moléculas de H₂O son oxidadas y sus átomos de oxígeno terminan formando O₂ gaseoso. Por ello, el oxígeno radiactivamente marcado del agua aparece en el O₂ liberado al aire."
+      "explicacion": "En la fotólisis del agua, las moléculas de H₂O son oxidadas y sus átomos de oxígeno terminan formando O₂ gaseoso. Por ello, el oxígeno radiactivamente marcado del agua aparece en el O₂ liberado al aire.",
+      "id": "gr44ja",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "La fibrosis quística se relaciona con:",
@@ -1129,25 +1545,48 @@
         "El mal plegamiento de las cadenas beta de la hemoglobina"
       ],
       "correcta": "C",
-      "explicacion": "La fibrosis quística se asocia con mutaciones en CFTR, una proteína canal de cloruro de la membrana plasmática. Su funcionamiento alterado modifica el transporte de Cl⁻ y el movimiento de agua y sales en distintos epitelios."
+      "explicacion": "La fibrosis quística se asocia con mutaciones en CFTR, una proteína canal de cloruro de la membrana plasmática. Su funcionamiento alterado modifica el transporte de Cl⁻ y el movimiento de agua y sales en distintos epitelios.",
+      "id": "1y15sd6",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "En la enfermedad de Tay-Sachs, se encuentran afectados:",
-      "opciones": ["Las mitocondrias.", "Los lisosomas.", "Los peroxisomas.", "El complejo de Golgi."],
+      "opciones": [
+        "Las mitocondrias.",
+        "Los lisosomas.",
+        "Los peroxisomas.",
+        "El complejo de Golgi."
+      ],
       "correcta": "B",
-      "explicacion": "Es una enfermedad de almacenamiento lisosómico caracterizada por la deficiencia de la enzima hexosaminidasa A, lo que impide la degradación de gangliósidos en las neuronas."
+      "explicacion": "Es una enfermedad de almacenamiento lisosómico caracterizada por la deficiencia de la enzima hexosaminidasa A, lo que impide la degradación de gangliósidos en las neuronas.",
+      "id": "2il0h",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "El orgánulo del sistema de endomembranas encargado de la formación de vesículas de secreción es:",
-      "opciones": ["El complejo de Golgi.", "El REL.", "El endosoma.", "El lisosoma."],
+      "opciones": [
+        "El complejo de Golgi.",
+        "El REL.",
+        "El endosoma.",
+        "El lisosoma."
+      ],
       "correcta": "A",
-      "explicacion": "La red del trans-Golgi (TGN) es la estación de empaquetamiento y distribución final donde se clasifican y brotan las vesículas secretoras (de exocitosis) recubiertas."
+      "explicacion": "La red del trans-Golgi (TGN) es la estación de empaquetamiento y distribución final donde se clasifican y brotan las vesículas secretoras (de exocitosis) recubiertas.",
+      "id": "1rq8jkv",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "¿Cuál de las siguientes estructuras se encuentra tanto en células eucariontes como procariontes?",
-      "opciones": ["Mitocondrias.", "Envoltura nuclear.", "Ribosomas.", "Retículo endoplásmico."],
+      "opciones": [
+        "Mitocondrias.",
+        "Envoltura nuclear.",
+        "Ribosomas.",
+        "Retículo endoplásmico."
+      ],
       "correcta": "C",
-      "explicacion": "Los ribosomas están presentes tanto en células procariontes como eucariontes y participan en la síntesis de proteínas."
+      "explicacion": "Los ribosomas están presentes tanto en células procariontes como eucariontes y participan en la síntesis de proteínas.",
+      "id": "1wxgsiq",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "¿Cuál de las siguientes propiedades o funciones NO corresponde al citoesqueleto?",
@@ -1158,7 +1597,9 @@
         "Es una red estática e inmutable que no se polimeriza ni despolimeriza."
       ],
       "correcta": "D",
-      "explicacion": "El citoesqueleto es una red tridimensional altamente dinámica que se polimeriza y despolimeriza constantemente para adaptarse a las necesidades celulares."
+      "explicacion": "El citoesqueleto es una red tridimensional altamente dinámica que se polimeriza y despolimeriza constantemente para adaptarse a las necesidades celulares.",
+      "id": "1xb2k26",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "En los peroxisomas de las células animales se lleva a cabo:",
@@ -1169,7 +1610,9 @@
         "La cadena respiratoria."
       ],
       "correcta": "B",
-      "explicacion": "Los peroxisomas realizan las etapas iniciales de la β-oxidación de ácidos grasos de cadena muy larga, acortándolos antes de que los productos puedan continuar su degradación, en muchos casos en las mitocondrias."
+      "explicacion": "Los peroxisomas realizan las etapas iniciales de la β-oxidación de ácidos grasos de cadena muy larga, acortándolos antes de que los productos puedan continuar su degradación, en muchos casos en las mitocondrias.",
+      "id": "1wc62t8",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "La anemia falciforme es una condición causada por:",
@@ -1180,7 +1623,9 @@
         "Una mutación en el gen de la β-globina."
       ],
       "correcta": "D",
-      "explicacion": "La anemia falciforme se debe a una mutación puntual en el gen de la β-globina que cambia el ácido glutámico por valina en la posición 6. La hemoglobina HbS resultante favorece la deformación de los eritrocitos en determinadas condiciones."
+      "explicacion": "La anemia falciforme se debe a una mutación puntual en el gen de la β-globina que cambia el ácido glutámico por valina en la posición 6. La hemoglobina HbS resultante favorece la deformación de los eritrocitos en determinadas condiciones.",
+      "id": "1sug9hk",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Indique la frase correcta referida a las enzimas:",
@@ -1191,7 +1636,9 @@
         "No son afectadas en su actividad por modificaciones del pH."
       ],
       "correcta": "C",
-      "explicacion": "Las enzimas reducen la energía de activación al estabilizar el estado de transición, pero no modifican las energías libres inicial y final de la reacción. Por eso no cambian el ΔG ni el equilibrio químico."
+      "explicacion": "Las enzimas reducen la energía de activación al estabilizar el estado de transición, pero no modifican las energías libres inicial y final de la reacción. Por eso no cambian el ΔG ni el equilibrio químico.",
+      "id": "1z3qx",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Una vía metabólica está regulada por un proceso de feedback o retroalimentación negativa si:",
@@ -1202,7 +1649,9 @@
         "Altas concentraciones de producto actúan como inhibidor alostérico de alguna de las primeras enzimas."
       ],
       "correcta": "D",
-      "explicacion": "La inhibición por retroalimentación es un mecanismo de autorregulación donde la acumulación del producto final de una vía se une al sitio alostérico de la primera enzima de la secuencia, deteniendo la síntesis."
+      "explicacion": "La inhibición por retroalimentación es un mecanismo de autorregulación donde la acumulación del producto final de una vía se une al sitio alostérico de la primera enzima de la secuencia, deteniendo la síntesis.",
+      "id": "idxgnd",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "La fluidez de las membranas es mayor si:",
@@ -1213,13 +1662,22 @@
         "Disminuye la presencia de enlaces dobles en las colas de fosfolípidos."
       ],
       "correcta": "C",
-      "explicacion": "La presencia de dobles enlaces cis introduce curvaturas en las colas de los fosfolípidos y dificulta su empaquetamiento. Esto aumenta la fluidez de la membrana."
+      "explicacion": "La presencia de dobles enlaces cis introduce curvaturas en las colas de los fosfolípidos y dificulta su empaquetamiento. Esto aumenta la fluidez de la membrana.",
+      "id": "1el4w7u",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "¿Cuáles de las siguientes organelas se encuentran en las células animales y se utilizan para el transporte de sustancias desde y hacia el exterior de la célula?",
-      "opciones": ["Vacuolas.", "Vesículas.", "Plástidos.", "Peroxisomas."],
+      "opciones": [
+        "Vacuolas.",
+        "Vesículas.",
+        "Plástidos.",
+        "Peroxisomas."
+      ],
       "correcta": "B",
-      "explicacion": "Las vesículas membranosas permiten el transporte en masa hacia y desde la célula: participan tanto en endocitosis como en exocitosis."
+      "explicacion": "Las vesículas membranosas permiten el transporte en masa hacia y desde la célula: participan tanto en endocitosis como en exocitosis.",
+      "id": "1jw9kq8",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "Los cloroplastos y mitocondrias:",
@@ -1230,7 +1688,9 @@
         "No se encuentran delimitados por membranas."
       ],
       "correcta": "C",
-      "explicacion": "Las mitocondrias y los cloroplastos están delimitados por doble membrana y poseen ADN circular propio, lo que respalda su origen endosimbiótico."
+      "explicacion": "Las mitocondrias y los cloroplastos están delimitados por doble membrana y poseen ADN circular propio, lo que respalda su origen endosimbiótico.",
+      "id": "9l0jxz",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "El ciclo de Calvin:",
@@ -1241,13 +1701,22 @@
         "Forma parte de una vía anabólica."
       ],
       "correcta": "D",
-      "explicacion": "El ciclo de Calvin es una vía anabólica porque utiliza ATP y NADPH para fijar y reducir CO₂ y generar moléculas orgánicas."
+      "explicacion": "El ciclo de Calvin es una vía anabólica porque utiliza ATP y NADPH para fijar y reducir CO₂ y generar moléculas orgánicas.",
+      "id": "108dbkw",
+      "subtema": "Metabolismo y energía"
     },
     {
-      "pregunta": "Un organismo pluricelular, que utiliza el CO₂ atmosférico para sintetizar glúcidos, se clasifica dentro del reino:",
-      "opciones": ["Hongos.", "Vegetales.", "Animales.", "Moneras."],
+      "pregunta": "Dentro de la clasificación tradicional de cinco reinos, ¿a qué reino se asignan las plantas terrestres pluricelulares fotosintéticas que utilizan CO₂ atmosférico para sintetizar glúcidos?",
+      "opciones": [
+        "Hongos.",
+        "Vegetales.",
+        "Animales.",
+        "Moneras."
+      ],
       "correcta": "B",
-      "explicacion": "Los organismos del reino Plantae (Vegetales) son fotosintéticos autótrofos y pluricelulares: toman CO₂ atmosférico durante el ciclo de Calvin para sintetizar sus propias moléculas orgánicas."
+      "explicacion": "En la clasificación tradicional de cinco reinos, las plantas terrestres pluricelulares y fotosintéticas se ubican en el reino Plantae o Vegetales. La precisión importa porque existen algas pluricelulares fotosintéticas que algunos esquemas tradicionales ubican dentro de Protista.",
+      "id": "1m2r22c",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Los microscopios electrónicos tienen:",
@@ -1258,7 +1727,9 @@
         "No tienen poder de resolución."
       ],
       "correcta": "B",
-      "explicacion": "Debido a que la longitud de onda de un haz de electrones es muchísimo menor que la de la luz visible, los microscopios electrónicos alcanzan un poder de resolución muy superior."
+      "explicacion": "Debido a que la longitud de onda de un haz de electrones es muchísimo menor que la de la luz visible, los microscopios electrónicos alcanzan un poder de resolución muy superior.",
+      "id": "jgzto8",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "El ADN contiene la información en:",
@@ -1269,7 +1740,9 @@
         "La complementariedad existente entre las bases púricas y pirimídicas"
       ],
       "correcta": "B",
-      "explicacion": "La información hereditaria del ADN reside en la secuencia lineal de sus bases nitrogenadas, que varía a lo largo de las moléculas y codifica la información genética."
+      "explicacion": "La información hereditaria del ADN reside en la secuencia lineal de sus bases nitrogenadas, que varía a lo largo de las moléculas y codifica la información genética.",
+      "id": "1f0p9m9",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "¿Cuál de las siguientes es una característica estructural de las enzimas conjugadas?",
@@ -1280,7 +1753,9 @@
         "Su esquema se caracteriza por una curva clásica sigmoidea."
       ],
       "correcta": "C",
-      "explicacion": "Las enzimas conjugadas (o holoenzimas) están compuestas por una parte proteica (apoenzima) y una parte no proteica (cofactor), la cual puede ser un ion metálico o un compuesto orgánico (coenzima)."
+      "explicacion": "Las enzimas conjugadas (o holoenzimas) están compuestas por una parte proteica (apoenzima) y una parte no proteica (cofactor), la cual puede ser un ion metálico o un compuesto orgánico (coenzima).",
+      "id": "g58640",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "En cuanto a los lisosomas:",
@@ -1291,7 +1766,9 @@
         "Las bombas de H⁺ de su membrana no generan un pH ácido."
       ],
       "correcta": "B",
-      "explicacion": "Los lisosomas contienen hidrolasas cuyo funcionamiento óptimo requiere un pH ácido. Por eso el pH luminal determina su actividad catalítica."
+      "explicacion": "Los lisosomas contienen hidrolasas cuyo funcionamiento óptimo requiere un pH ácido. Por eso el pH luminal determina su actividad catalítica.",
+      "id": "1r7mdad",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "En relación con la respiración celular indique la opción correcta:",
@@ -1302,7 +1779,9 @@
         "Es un proceso endergónico."
       ],
       "correcta": "C",
-      "explicacion": "Durante la glucólisis (fase inicial citosólica), cada molécula de glucosa (6C) se rompe rindiendo dos moléculas de ácido pirúvico o piruvato (3C)."
+      "explicacion": "Durante la glucólisis (fase inicial citosólica), cada molécula de glucosa (6C) se rompe rindiendo dos moléculas de ácido pirúvico o piruvato (3C).",
+      "id": "cwtrjq",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "¿Cuál de las siguientes características corresponde al cloroplasto?",
@@ -1313,13 +1792,22 @@
         "Presenta la maquinaria fotosintética de las células vegetales y animales."
       ],
       "correcta": "C",
-      "explicacion": "Los pigmentos fotosintéticos (como las clorofilas) y los fotosistemas se localizan exclusivamente en la membrana de los tilacoides dentro del estroma."
+      "explicacion": "Los pigmentos fotosintéticos (como las clorofilas) y los fotosistemas se localizan exclusivamente en la membrana de los tilacoides dentro del estroma.",
+      "id": "10dq0vh",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Indicar cuál de las siguientes estructuras no forma parte de una membrana celular:",
-      "opciones": ["Colesterol", "Proteínas integrales", "Ácido ribonucleico", "Oligosacáridos"],
+      "opciones": [
+        "Colesterol",
+        "Proteínas integrales",
+        "Ácido ribonucleico",
+        "Oligosacáridos"
+      ],
       "correcta": "C",
-      "explicacion": "Las membranas biológicas están compuestas por lípidos, proteínas e hidratos de carbono. No contienen ácidos nucleicos (ARN o ADN)."
+      "explicacion": "Las membranas biológicas están compuestas por lípidos, proteínas e hidratos de carbono. No contienen ácidos nucleicos (ARN o ADN).",
+      "id": "1tzxf3m",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "La glucólisis es un proceso que:",
@@ -1330,7 +1818,9 @@
         "Se lleva a cabo en el citosol."
       ],
       "correcta": "D",
-      "explicacion": "La glucólisis es una vía metabólica anaeróbica soluble que ocurre íntegramente en el citosol celular."
+      "explicacion": "La glucólisis es una vía metabólica anaeróbica soluble que ocurre íntegramente en el citosol celular.",
+      "id": "1jgzwv",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Marque la opción correcta en cuanto a reinos:",
@@ -1341,7 +1831,9 @@
         "En el reino Monera existen organismos autótrofos y heterótrofos"
       ],
       "correcta": "D",
-      "explicacion": "El reino Monera, en la clasificación tradicional utilizada en este banco, incluye organismos procariontes con nutrición autótrofa o heterótrofa."
+      "explicacion": "El reino Monera, en la clasificación tradicional utilizada en este banco, incluye organismos procariontes con nutrición autótrofa o heterótrofa.",
+      "id": "82o5s4",
+      "subtema": "Integración y conceptos generales"
     },
     {
       "pregunta": "Con respecto a las biomoléculas podemos decir:",
@@ -1352,13 +1844,22 @@
         "La estructura tridimensional de las proteínas contribuye a determinar su forma y función"
       ],
       "correcta": "D",
-      "explicacion": "La conformación tridimensional de una proteína determina la disposición espacial de sus grupos químicos y, por lo tanto, contribuye de manera fundamental a su forma y función."
+      "explicacion": "La conformación tridimensional de una proteína determina la disposición espacial de sus grupos químicos y, por lo tanto, contribuye de manera fundamental a su forma y función.",
+      "id": "19hqaqu",
+      "subtema": "Membranas y transporte"
     },
     {
-      "pregunta": "Las células eucariontes son:",
-      "opciones": ["Pluricelulares y autótrofas.", "Autótrofas o heterótrofas.", "Sistemas cerrados.", "Unicelulares y heterótrofas."],
+      "pregunta": "Los organismos eucariontes pueden presentar nutrición:",
+      "opciones": [
+        "exclusivamente pluricelular y autótrofa",
+        "autótrofa o heterótrofa",
+        "exclusivamente heterótrofa",
+        "siempre unicelular y heterótrofa"
+      ],
       "correcta": "B",
-      "explicacion": "El dominio eucariota engloba tanto a seres autótrofos (como plantas y algas) como a heterótrofos (como animales y hongos)."
+      "explicacion": "Entre los organismos eucariontes existen formas autótrofas, como plantas y muchas algas, y formas heterótrofas, como animales y hongos. Además, los eucariontes pueden ser unicelulares o pluricelulares.",
+      "id": "1vv51mm",
+      "subtema": "Integración y conceptos generales"
     },
     {
       "pregunta": "Indicar una característica de los peroxisomas:",
@@ -1369,7 +1870,9 @@
         "Metabolizan el peróxido de hidrógeno."
       ],
       "correcta": "D",
-      "explicacion": "Los peroxisomas contienen enzimas oxidativas, entre ellas catalasa, que descompone el peróxido de hidrógeno (H₂O₂) en agua y oxígeno."
+      "explicacion": "Los peroxisomas contienen enzimas oxidativas, entre ellas catalasa, que descompone el peróxido de hidrógeno (H₂O₂) en agua y oxígeno.",
+      "id": "1w117ro",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "¿Cuál es la función del retículo endoplasmático granular (REG)?",
@@ -1380,7 +1883,9 @@
         "Sintetizar proteínas de distinto destino."
       ],
       "correcta": "D",
-      "explicacion": "Los ribosomas adosados a su membrana sintetizan proteínas destinadas a secreción, lisosomas o integración en membranas celulares."
+      "explicacion": "Los ribosomas adosados a su membrana sintetizan proteínas destinadas a secreción, lisosomas o integración en membranas celulares.",
+      "id": "1q5r6u9",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "Marque una de las diferencias entre las células eucariontes y procariontes:",
@@ -1391,13 +1896,22 @@
         "Ambas poseen mitocondrias."
       ],
       "correcta": "C",
-      "explicacion": "Las células procariontes se dividen por fisión binaria simple, mientras que las eucariontes realizan división celular compleja por mitosis o meiosis."
+      "explicacion": "Las células procariontes se dividen por fisión binaria simple, mientras que las eucariontes realizan división celular compleja por mitosis o meiosis.",
+      "id": "15v9wtv",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "¿Cuál de las siguientes estructuras es únicamente de composición proteica?",
-      "opciones": ["Microtúbulos", "Membrana celular", "Glucógeno", "Almidón"],
+      "opciones": [
+        "Microtúbulos",
+        "Membrana celular",
+        "Glucógeno",
+        "Almidón"
+      ],
       "correcta": "A",
-      "explicacion": "Los microtúbulos están formados por polímeros de tubulina α y β. La membrana celular contiene lípidos, proteínas y glúcidos, mientras que el glucógeno y el almidón son polisacáridos."
+      "explicacion": "Los microtúbulos están formados por polímeros de tubulina α y β. La membrana celular contiene lípidos, proteínas y glúcidos, mientras que el glucógeno y el almidón son polisacáridos.",
+      "id": "12tjkrn",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "En la fotosíntesis:",
@@ -1408,7 +1922,9 @@
         "Comprende la formación de glúcidos en el ciclo de Calvin-Benson."
       ],
       "correcta": "D",
-      "explicacion": "En el ciclo de Calvin-Benson se fija el CO₂ y, utilizando ATP y NADPH de la fase luminosa, se sintetizan compuestos orgánicos a partir de los cuales se forman glúcidos."
+      "explicacion": "En el ciclo de Calvin-Benson se fija el CO₂ y, utilizando ATP y NADPH de la fase luminosa, se sintetizan compuestos orgánicos a partir de los cuales se forman glúcidos.",
+      "id": "lgdhcd",
+      "subtema": "Metabolismo y energía"
     },
     {
       "pregunta": "Ordenar de forma creciente los elementos, según los niveles de organización:",
@@ -1419,13 +1935,22 @@
         "célula – RER – ácidos nucleicos – aminoácido."
       ],
       "correcta": "B",
-      "explicacion": "El orden creciente correcto es: oligosacárido → glucógeno → mitocondria → célula. Se pasa de un nivel molecular relativamente pequeño a una macromolécula, luego a un orgánulo y finalmente al nivel celular."
+      "explicacion": "El orden creciente correcto es: oligosacárido → glucógeno → mitocondria → célula. Se pasa de un nivel molecular relativamente pequeño a una macromolécula, luego a un orgánulo y finalmente al nivel celular.",
+      "id": "kf31j0",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "¿Cuál de los siguientes elementos está compuesto por lípidos?",
-      "opciones": ["Ribosoma", "Envoltura nuclear", "Centriolo", "Cromosoma"],
+      "opciones": [
+        "Ribosoma",
+        "Envoltura nuclear",
+        "Centriolo",
+        "Cromosoma"
+      ],
       "correcta": "B",
-      "explicacion": "La envoltura o carioteca nuclear es una estructura membranosa constituida por una doble bicapa lipídica con proteínas asociadas."
+      "explicacion": "La envoltura o carioteca nuclear es una estructura membranosa constituida por una doble bicapa lipídica con proteínas asociadas.",
+      "id": "1n8elfk",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "¿Cuál es la característica estructural de los microfilamentos?",
@@ -1436,7 +1961,9 @@
         "Están formados por proteínas llamadas laminina"
       ],
       "correcta": "A",
-      "explicacion": "Los microfilamentos del citoesqueleto se forman por la polimerización de la proteína globular actina G para constituir filamentos de actina F."
+      "explicacion": "Los microfilamentos del citoesqueleto se forman por la polimerización de la proteína globular actina G para constituir filamentos de actina F.",
+      "id": "4x2h04",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "¿Cuál de las siguientes oraciones caracteriza mejor al reino plantae?",
@@ -1447,7 +1974,9 @@
         "Sus células se encargan de fijar el nitrógeno atmosférico."
       ],
       "correcta": "B",
-      "explicacion": "Las plantas son organismos pluricelulares caracterizados por presentar nutrición autótrofa fotosintética."
+      "explicacion": "Las plantas son organismos pluricelulares caracterizados por presentar nutrición autótrofa fotosintética.",
+      "id": "blw2q1",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "Con respecto a los virus:",
@@ -1458,7 +1987,9 @@
         "Poseen su propia maquinaria biosintética."
       ],
       "correcta": "C",
-      "explicacion": "Los virus son complejos macromoleculares o parásitos intracelulares obligados constituidos por un genoma de ácido nucleico (ADN o ARN) rodeado por una cubierta proteica llamada cápside."
+      "explicacion": "Los virus son complejos macromoleculares o parásitos intracelulares obligados constituidos por un genoma de ácido nucleico (ADN o ARN) rodeado por una cubierta proteica llamada cápside.",
+      "id": "ddmmh8",
+      "subtema": "Virus, bacteriófagos, viroides y priones"
     },
     {
       "pregunta": "Los seres vivos:",
@@ -1469,7 +2000,9 @@
         "Pueden reproducirse valiéndose de la maquinaria de otro organismo."
       ],
       "correcta": "A",
-      "explicacion": "Todos los seres vivos son sistemas abiertos autorregulados con capacidad de realizar metabolismo (intercambio y transformación de materia y energía con el entorno)."
+      "explicacion": "Todos los seres vivos son sistemas abiertos autorregulados con capacidad de realizar metabolismo (intercambio y transformación de materia y energía con el entorno).",
+      "id": "vqsdye",
+      "subtema": "Integración y conceptos generales"
     },
     {
       "pregunta": "La homeostasis es la capacidad de:",
@@ -1480,7 +2013,9 @@
         "Mantener el medio interno constante."
       ],
       "correcta": "D",
-      "explicacion": "La homeostasis se define como el conjunto de mecanismos fisiológicos orientados a mantener la estabilidad y constancia de las propiedades fisicoquímicas del medio interno celular."
+      "explicacion": "La homeostasis se define como el conjunto de mecanismos fisiológicos orientados a mantener la estabilidad y constancia de las propiedades fisicoquímicas del medio interno celular.",
+      "id": "1ectwkz",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "El límite de resolución es la capacidad de un:",
@@ -1491,7 +2026,9 @@
         "Sistema óptico para ver dos puntos como separados."
       ],
       "correcta": "D",
-      "explicacion": "En microscopía, el límite de resolución representa la menor distancia que debe existir entre dos puntos contiguos para que un sistema óptico pueda distinguirlos como entidades independientes."
+      "explicacion": "En microscopía, el límite de resolución representa la menor distancia que debe existir entre dos puntos contiguos para que un sistema óptico pueda distinguirlos como entidades independientes.",
+      "id": "hef8hv",
+      "subtema": "Organización celular"
     },
     {
       "pregunta": "Para ver la estructura de la membrana plasmática de una célula se utiliza:",
@@ -1502,7 +2039,9 @@
         "No puede verse la célula ni sus componentes al microscopio."
       ],
       "correcta": "C",
-      "explicacion": "La membrana plasmática tiene un grosor del orden de 7–10 nm, menor que el límite de resolución del microscopio óptico (~200 nm). Por eso se observa con un microscopio electrónico de transmisión."
+      "explicacion": "La membrana plasmática tiene un grosor del orden de 7–10 nm, menor que el límite de resolución del microscopio óptico (~200 nm). Por eso se observa con un microscopio electrónico de transmisión.",
+      "id": "1trk90o",
+      "subtema": "Membranas y transporte"
     },
     {
       "pregunta": "Los glúcidos se caracterizan por:",
@@ -1513,7 +2052,9 @@
         "Todas las opciones mencionadas son características válidas de los glúcidos."
       ],
       "correcta": "D",
-      "explicacion": "Los glúcidos son polihidroxialdehídos o polihidroxicetonas, están formados principalmente por C, H y O y cumplen funciones energéticas y estructurales. En las células, la glucosa es una fuente importante de energía inmediata."
+      "explicacion": "Los glúcidos son polihidroxialdehídos o polihidroxicetonas, están formados principalmente por C, H y O y cumplen funciones energéticas y estructurales. En las células, la glucosa es una fuente importante de energía inmediata.",
+      "id": "xqpa5o",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Los polisacáridos:",
@@ -1524,7 +2065,9 @@
         "Conforman el glucocálix."
       ],
       "correcta": "A",
-      "explicacion": "Se clasifican estructuralmente según su composición en homopolisacáridos (formados por un único tipo de monosacárido) y heteropolisacáridos (formados por más de un tipo de monosacárido)."
+      "explicacion": "Se clasifican estructuralmente según su composición en homopolisacáridos (formados por un único tipo de monosacárido) y heteropolisacáridos (formados por más de un tipo de monosacárido).",
+      "id": "7sxs2i",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     },
     {
       "pregunta": "Los monosacáridos son aquellos glúcidos que:",
@@ -1535,7 +2078,9 @@
         "No poseen actividad óptica."
       ],
       "correcta": "C",
-      "explicacion": "Los monosacáridos son los glúcidos más simples y actúan como monómeros que se combinan para formar oligosacáridos y polisacáridos."
+      "explicacion": "Los monosacáridos son los glúcidos más simples y actúan como monómeros que se combinan para formar oligosacáridos y polisacáridos.",
+      "id": "19cselb",
+      "subtema": "Biomoléculas y ácidos nucleicos"
     }
   ]
 }
