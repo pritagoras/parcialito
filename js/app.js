@@ -841,6 +841,11 @@ function vistaInicio() {
           <span class="sp-tema-texto"><strong>Explorar todos los temas</strong><small>9 temas · 154 preguntas + 100 tarjetas SM-2</small></span>
           <span class="sp-tema-accion">Entrar <b aria-hidden="true">↗</b></span>
         </button>
+        <button class="sp-tema" id="btn-ipc-primer-home" type="button">
+          <span class="sp-tema-icono" aria-hidden="true">📘</span>
+          <span class="sp-tema-texto"><strong>Primer parcial · banco completo</strong><small>55 preguntas · opción múltiple y explicación</small></span>
+          <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
+        </button>
         <button class="sp-tema" id="btn-ipc-segundo-home" type="button">
           <span class="sp-tema-icono" aria-hidden="true">📜</span>
           <span class="sp-tema-texto"><strong>Segundo parcial · banco completo</strong><small>286 preguntas · 364 tarjetas · modelo de 9 puntos y guía de Kuhn</small></span>
@@ -926,6 +931,13 @@ function vistaInicio() {
     const ipcIndex = indice.materias.findIndex((m) => m.id === 'ipc-2');
     if (ipcIndex >= 0) vistaMateria(ipcIndex);
     else avisar('No se encontró la materia IPC para KATH.');
+  });
+  document.getElementById('btn-ipc-primer-home')?.addEventListener('click', () => {
+    Sonido.clic();
+    const ipcIndex = indice.materias.findIndex((m) => m.id === 'ipc-2');
+    const ipcMateria = indice.materias[ipcIndex];
+    if (ipcMateria?.primerParcial) lanzarIPCPrimerParcial(ipcMateria, ipcIndex, vistaInicio);
+    else avisar('No se encontró el banco del Primer Parcial de IPC.');
   });
   document.getElementById('btn-ipc-segundo-home')?.addEventListener('click', () => {
     Sonido.clic();
@@ -1806,6 +1818,7 @@ function vistaMateria(i) {
         <span class="emoji" aria-hidden="true">${esc(m.emoji || '📚')}</span>
         <h1>${esc(m.nombre)}</h1>
       </div>
+      ${m.primerParcial ? `<button class="banner-repaso ipc-p1-entry" id="btn-ipc-p1"><span>📘 Primer parcial de IPC<small>${m.primerParcial.preguntas} preguntas · banco completo</small></span><b>▶</b></button>` : ''}
       ${m.segundoParcial ? `<button class="banner-repaso ipc-p2-entry" id="btn-ipc-p2"><span>📜 Segundo parcial de IPC<small>${m.segundoParcial.preguntas} preguntas · ${m.segundoParcial.tarjetas} tarjetas · modelo de 9 puntos</small></span><b>▶</b></button>` : ''}
       ${m.id === 'ipc-2' ? '<button class="banner-repaso" id="btn-ipc-deduccion"><span>🧩 Deducción natural<small>16 ejercicios con variantes · MP, MT, SH, SD, DN, Simp. y Conj.</small></span><b>▶</b></button>' : ''}
       ${m.id === 'ipc-2' ? '<button class="banner-repaso" id="btn-ipc-formalizacion"><span>🔣 Formalización<small>' + BANCO_FORMALIZACION + ' ejercicios · enunciados, argumentos y estructura de fórmulas</small></span><b>▶</b></button>' : ''}
@@ -1895,6 +1908,7 @@ function vistaMateria(i) {
     actualizar();
   });
   document.getElementById('btn-volver').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
+  document.getElementById('btn-ipc-p1')?.addEventListener('click', () => { Sonido.clic(); lanzarIPCPrimerParcial(m, i, () => vistaMateria(i)); });
   document.getElementById('btn-ipc-p2')?.addEventListener('click', () => {
     Sonido.clic();
     vistaIPCSegundoParcial(m, i);
@@ -2006,6 +2020,39 @@ async function lanzarIPCModeloTodas(m, materiaIndex) {
       temaNombre: 'Todas las preguntas del modelo',
       repetir: () => lanzarIPCModeloTodas(m, materiaIndex),
       volver: () => vistaIPCSegundoParcial(m, materiaIndex),
+    });
+  } catch (e) {
+    vistaError(e);
+  }
+}
+
+// ---------- IPC: Primer Parcial ----------
+
+async function lanzarIPCPrimerParcial(m, materiaIndex, volver = () => vistaMateria(materiaIndex)) {
+  vistaCargando('Preparando el Primer Parcial de IPC…');
+  try {
+    const config = m.primerParcial;
+    if (!config?.archivo) throw new Error('No se encontró el banco del Primer Parcial de IPC.');
+    const tema = {
+      id: 'ipc-2/primer-parcial',
+      nombre: 'Primer Parcial',
+      archivo: config.archivo,
+      preguntas: config.preguntas
+    };
+    const pool = mezclar(await cargarTema(tema, m));
+    if (!pool.length) throw new Error('El banco del Primer Parcial de IPC está vacío.');
+    if (Number.isInteger(config.preguntas) && pool.length !== config.preguntas) {
+      throw new Error(`El banco declara ${config.preguntas} preguntas, pero se cargaron ${pool.length}.`);
+    }
+    empezarJuego(pool, {
+      titulo: 'IPC · Primer Parcial',
+      temaId: tema.id,
+      categoria: 'ipc-primer-parcial',
+      ranking: true,
+      materiaNombre: m.nombre,
+      temaNombre: 'Primer Parcial',
+      repetir: () => lanzarIPCPrimerParcial(m, materiaIndex, volver),
+      volver,
     });
   } catch (e) {
     vistaError(e);
