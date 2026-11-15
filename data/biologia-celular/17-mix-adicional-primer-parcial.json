@@ -33,7 +33,7 @@
     {
       "id": "b1mix043",
       "subtema": "Priones",
-      "pregunta": "Un homogenado de tejido nervioso infectivo se trata con nucleasas y luz UV (que destruye ácidos nucleicos) y conserva su infectividad, pero la pierde cuando se lo trata con proteasas bajo condiciones desnaturalizantes. ¿Qué conclusión es la más coherente?",
+      "pregunta": "Un homogenado de tejido nervioso infectivo se trata con nucleasas y conserva su infectividad, pero la pierde después de un tratamiento proteolítico en condiciones adecuadas. ¿Qué conclusión es la más coherente?",
       "opciones": [
         "El agente infectivo es una proteína con plegamiento anómalo que induce el cambio conformacional de la proteína celular normal, sin requerir genoma propio.",
         "El agente es un virus cuyo ARN está protegido por una cápside resistente a la UV.",
@@ -41,7 +41,7 @@
         "El agente es una bacteria sin pared cuyo ADN se repara rápidamente tras el tratamiento con UV."
       ],
       "correcta": "A",
-      "explicacion": "La resistencia a nucleasas y UV junto con la sensibilidad a proteasas indica que el agente es proteico. Los priones (PrPSc) son isoformas mal plegadas que convierten a la PrPC normal en PrPSc, sin ácido nucleico propio."
+      "explicacion": "La resistencia a nucleasas junto con la pérdida de infectividad tras la acción de proteasas respalda que el agente infeccioso sea de naturaleza proteica. Los priones son proteínas mal plegadas capaces de inducir el cambio conformacional de la proteína PrP normal, sin necesidad de un genoma propio. La evidencia experimental debe interpretarse en función de la especificidad y las condiciones de cada tratamiento."
     },
     {
       "id": "b1mix044",
@@ -98,15 +98,15 @@
     {
       "id": "b1mix048",
       "subtema": "Procariotas vs eucariotas: ribosomas",
-      "pregunta": "Algunos antibióticos que inhiben ribosomas bacterianos 70S pueden causar toxicidad en células humanas. ¿Cuál es la explicación más adecuada?",
+      "pregunta": "Algunos antibióticos dirigidos a la traducción bacteriana pueden causar efectos adversos en células humanas. ¿Cuál es la explicación más adecuada?",
       "opciones": [
-        "Los ribosomas citoplasmáticos humanos son idénticos a los 70S bacterianos.",
-        "Estos antibióticos atraviesan la envoltura nuclear y bloquean la transcripción.",
-        "Las mitocondrias poseen ribosomas de tipo procariota, como consecuencia de su origen endosimbiótico, y pueden ser afectadas.",
-        "Las células humanas carecen de ribosomas 80S, por lo que dependen de los 70S."
+        "Los ribosomas del citoplasma humano son idénticos a los ribosomas bacterianos 70S.",
+        "Estos antibióticos atraviesan la envoltura nuclear y bloquean directamente la transcripción del ADN nuclear.",
+        "Las mitocondrias poseen ribosomas de origen evolutivo bacteriano; en mamíferos suelen ser 55S, y algunos antibióticos también pueden afectar su traducción.",
+        "Las células humanas carecen de ribosomas citoplasmáticos 80S y dependen de ribosomas 70S."
       ],
       "correcta": "C",
-      "explicacion": "Los ribosomas citoplasmáticos eucariotas son 80S, pero las mitocondrias tienen ribosomas 70S similares a los bacterianos. Algunos antibióticos pueden inhibir la síntesis proteica mitocondrial."
+      "explicacion": "Los ribosomas citoplasmáticos de las células humanas son 80S. Los mitorribosomas de mamíferos no son 70S: suelen describirse como 55S, aunque conservan un origen evolutivo bacteriano y características que explican por qué ciertos antibióticos dirigidos a la traducción bacteriana pueden afectar también la síntesis proteica mitocondrial."
     },
     {
       "id": "b1mix049",
