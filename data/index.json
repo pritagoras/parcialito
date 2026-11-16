@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-15T20:34:29.008Z",
+  "generado": "2026-11-16T18:00:00.000Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -138,6 +138,12 @@
           "nombre": "Virus de Importancia Médica y Vacunas",
           "archivo": "data/biologia-celular/20-tema-virus-medicos-y-vacunas-convertido.json",
           "preguntas": 16
+        },
+        {
+          "id": "biologia-celular/21-repaso-integral-primer-parcial-maru",
+          "nombre": "Repaso integral · Primer Parcial (Maru)",
+          "archivo": "data/biologia-celular/21-repaso-integral-primer-parcial-maru.json",
+          "preguntas": 200
         }
       ]
     },
