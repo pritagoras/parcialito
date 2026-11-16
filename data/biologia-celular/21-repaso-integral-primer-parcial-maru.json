@@ -1,0 +1,2607 @@
+{
+  "materia": "Biología 1",
+  "tema": "Repaso integral · Primer Parcial (Maru)",
+  "descripcion": "Banco original de opción múltiple elaborado a partir de las 20 clases del resumen de Biología con Maru.",
+  "preguntas": [
+    {
+      "id": "maru-p1-001",
+      "subtema": "Seres vivos y niveles de organización",
+      "pregunta": "Una célula mantiene estable su concentración interna de iones pese a cambios externos. ¿Qué propiedad manifiesta?",
+      "opciones": [
+        "Homeostasis",
+        "Irritabilidad",
+        "Evolución",
+        "Reproducción"
+      ],
+      "correcta": "A",
+      "explicacion": "La homeostasis mantiene relativamente constante el medio interno."
+    },
+    {
+      "id": "maru-p1-002",
+      "subtema": "Seres vivos y niveles de organización",
+      "pregunta": "La síntesis de una proteína a partir de aminoácidos es un proceso:",
+      "opciones": [
+        "Catabólico",
+        "Anabólico",
+        "De difusión",
+        "De oxidación completa"
+      ],
+      "correcta": "B",
+      "explicacion": "El anabolismo construye moléculas complejas a partir de unidades simples y requiere energía."
+    },
+    {
+      "id": "maru-p1-003",
+      "subtema": "Seres vivos y niveles de organización",
+      "pregunta": "Una población intercambia materia y energía con el ambiente. Se comporta como:",
+      "opciones": [
+        "Sistema aislado",
+        "Sistema cerrado",
+        "Sistema abierto",
+        "Sistema en equilibrio"
+      ],
+      "correcta": "C",
+      "explicacion": "Los seres vivos son sistemas abiertos: intercambian materia y energía."
+    },
+    {
+      "id": "maru-p1-004",
+      "subtema": "Seres vivos y niveles de organización",
+      "pregunta": "En un tejido aparece una función que no puede atribuirse a una célula aislada. Es un ejemplo de:",
+      "opciones": [
+        "Propiedad emergente",
+        "Catabolismo",
+        "Irritabilidad",
+        "Mutación"
+      ],
+      "correcta": "A",
+      "explicacion": "Las propiedades emergentes surgen de la organización e interacción de componentes."
+    },
+    {
+      "id": "maru-p1-005",
+      "subtema": "Seres vivos y niveles de organización",
+      "pregunta": "Una levadura unicelular aumenta su tamaño y luego se divide. ¿Qué característica se observa?",
+      "opciones": [
+        "Solo diferenciación",
+        "Crecimiento y reproducción",
+        "Solo adaptación",
+        "Homeostasis exclusivamente"
+      ],
+      "correcta": "B",
+      "explicacion": "El aumento de tamaño corresponde al crecimiento y la división genera descendientes."
+    },
+    {
+      "id": "maru-p1-006",
+      "subtema": "Seres vivos y niveles de organización",
+      "pregunta": "La degradación de glucosa que libera energía corresponde a:",
+      "opciones": [
+        "Anabolismo",
+        "Síntesis",
+        "Catabolismo",
+        "Autopoyesis"
+      ],
+      "correcta": "C",
+      "explicacion": "El catabolismo degrada moléculas complejas y libera energía."
+    },
+    {
+      "id": "maru-p1-007",
+      "subtema": "Seres vivos y niveles de organización",
+      "pregunta": "Una planta orienta su crecimiento hacia la luz. ¿Qué capacidad permite responder al estímulo?",
+      "opciones": [
+        "Irritabilidad",
+        "Equilibrio térmico",
+        "Saponificación",
+        "Traducción"
+      ],
+      "correcta": "A",
+      "explicacion": "La irritabilidad es la capacidad de responder a estímulos internos o externos."
+    },
+    {
+      "id": "maru-p1-008",
+      "subtema": "Seres vivos y niveles de organización",
+      "pregunta": "¿Qué nivel constituye la unidad básica de organización de los seres vivos?",
+      "opciones": [
+        "Órgano",
+        "Tejido",
+        "Célula",
+        "Sistema de órganos"
+      ],
+      "correcta": "C",
+      "explicacion": "La célula es la unidad estructural y funcional básica de la vida."
+    },
+    {
+      "id": "maru-p1-009",
+      "subtema": "Seres vivos y niveles de organización",
+      "pregunta": "Una mutación heredable se propaga en una población a lo largo de generaciones. Se relaciona con:",
+      "opciones": [
+        "Homeostasis",
+        "Evolución",
+        "Difusión simple",
+        "Secreción"
+      ],
+      "correcta": "B",
+      "explicacion": "La evolución implica cambios heredables acumulados en poblaciones a lo largo del tiempo."
+    },
+    {
+      "id": "maru-p1-010",
+      "subtema": "Seres vivos y niveles de organización",
+      "pregunta": "La capacidad de producir componentes propios y renovar estructuras se vincula con:",
+      "opciones": [
+        "Autopoyesis",
+        "Entropía",
+        "Osmosis",
+        "Fagocitosis"
+      ],
+      "correcta": "A",
+      "explicacion": "La autopoyesis refiere a la capacidad de autoproducir componentes y organización propia."
+    },
+    {
+      "id": "maru-p1-011",
+      "subtema": "Teoría celular y clasificación",
+      "pregunta": "Una célula nueva se origina por división de otra célula. ¿Qué postulado expresa?",
+      "opciones": [
+        "La célula surge espontáneamente",
+        "Toda célula proviene de otra preexistente",
+        "Todos los organismos son pluricelulares",
+        "La célula carece de información hereditaria"
+      ],
+      "correcta": "B",
+      "explicacion": "La teoría celular sostiene que las células se originan a partir de células preexistentes."
+    },
+    {
+      "id": "maru-p1-012",
+      "subtema": "Teoría celular y clasificación",
+      "pregunta": "Una función de un organismo pluricelular depende de la actividad coordinada de sus células. Esto expresa que la célula es unidad:",
+      "opciones": [
+        "Solo evolutiva",
+        "Funcional",
+        "Geológica",
+        "Taxonómica"
+      ],
+      "correcta": "B",
+      "explicacion": "Las funciones del organismo resultan de las propiedades e interacciones de sus células."
+    },
+    {
+      "id": "maru-p1-013",
+      "subtema": "Teoría celular y clasificación",
+      "pregunta": "¿Cuál es la unidad estructural de todos los organismos vivos según la teoría celular?",
+      "opciones": [
+        "El tejido",
+        "El órgano",
+        "La célula",
+        "El núcleo"
+      ],
+      "correcta": "C",
+      "explicacion": "La célula constituye la unidad estructural y funcional de los seres vivos."
+    },
+    {
+      "id": "maru-p1-014",
+      "subtema": "Teoría celular y clasificación",
+      "pregunta": "Una muestra contiene organismos unicelulares y pluricelulares. ¿Qué comparten necesariamente?",
+      "opciones": [
+        "Todos poseen tejidos",
+        "Todos están formados por células",
+        "Todos tienen núcleo",
+        "Todos realizan fotosíntesis"
+      ],
+      "correcta": "B",
+      "explicacion": "La organización unicelular o pluricelular comparte la base celular."
+    },
+    {
+      "id": "maru-p1-015",
+      "subtema": "Teoría celular y clasificación",
+      "pregunta": "Una célula hija recibe información hereditaria de la célula progenitora. Esto corresponde al postulado de:",
+      "opciones": [
+        "Continuidad celular",
+        "Generación espontánea",
+        "Equilibrio energético",
+        "Selección artificial"
+      ],
+      "correcta": "A",
+      "explicacion": "La información hereditaria se transmite desde la célula progenitora a las células hijas."
+    },
+    {
+      "id": "maru-p1-016",
+      "subtema": "Teoría celular y clasificación",
+      "pregunta": "Si se destruyen las células de un tejido, se compromete su función porque:",
+      "opciones": [
+        "Los tejidos son independientes de las células",
+        "La función del tejido depende de sus células",
+        "La materia deja de conservarse",
+        "El tejido se vuelve procariota"
+      ],
+      "correcta": "B",
+      "explicacion": "Las propiedades del tejido emergen de sus células y de sus relaciones."
+    },
+    {
+      "id": "maru-p1-017",
+      "subtema": "Teoría celular y clasificación",
+      "pregunta": "¿Qué afirmación es compatible con la teoría celular?",
+      "opciones": [
+        "La célula es la menor unidad viva",
+        "Los virus son células pequeñas",
+        "Los órganos originan células espontáneamente",
+        "Toda célula tiene pared celular"
+      ],
+      "correcta": "A",
+      "explicacion": "La célula es la unidad de materia más pequeña caracterizada como viva."
+    },
+    {
+      "id": "maru-p1-018",
+      "subtema": "Teoría celular y clasificación",
+      "pregunta": "Una bacteria es unicelular. ¿Cuál es la unidad que realiza sus funciones vitales?",
+      "opciones": [
+        "Una organela",
+        "La célula completa",
+        "Un tejido",
+        "Un órgano"
+      ],
+      "correcta": "B",
+      "explicacion": "En un organismo unicelular, una sola célula lleva adelante las funciones vitales."
+    },
+    {
+      "id": "maru-p1-019",
+      "subtema": "Teoría celular y clasificación",
+      "pregunta": "La información hereditaria celular se transmite principalmente mediante:",
+      "opciones": [
+        "Lípidos de membrana",
+        "Material genético",
+        "Glucógeno",
+        "Colágeno"
+      ],
+      "correcta": "B",
+      "explicacion": "La información hereditaria está contenida en el material genético."
+    },
+    {
+      "id": "maru-p1-020",
+      "subtema": "Teoría celular y clasificación",
+      "pregunta": "La clasificación biológica organiza a los organismos según:",
+      "opciones": [
+        "Únicamente su tamaño",
+        "Características y relaciones compartidas",
+        "El lugar donde se encontraron",
+        "La cantidad de energía que consumen"
+      ],
+      "correcta": "B",
+      "explicacion": "La clasificación agrupa organismos a partir de características biológicas y relaciones."
+    },
+    {
+      "id": "maru-p1-021",
+      "subtema": "Microscopía",
+      "pregunta": "Dos puntos muy cercanos se distinguen separados en la imagen. ¿Qué propiedad fue decisiva?",
+      "opciones": [
+        "Poder de resolución",
+        "Contraste de color solamente",
+        "Aumento sin límite",
+        "Profundidad de campo"
+      ],
+      "correcta": "A",
+      "explicacion": "La resolución permite distinguir dos puntos próximos como separados."
+    },
+    {
+      "id": "maru-p1-022",
+      "subtema": "Microscopía",
+      "pregunta": "Un microscopio tiene menor límite de resolución que otro. En general, posee:",
+      "opciones": [
+        "Menor capacidad de distinguir detalles",
+        "Mayor poder de resolución",
+        "Menor aumento siempre",
+        "Menor contraste necesariamente"
+      ],
+      "correcta": "B",
+      "explicacion": "A menor límite de resolución, mayor poder de resolución."
+    },
+    {
+      "id": "maru-p1-023",
+      "subtema": "Microscopía",
+      "pregunta": "Aumentar mucho una imagen sin distinguir detalles nuevos mejora necesariamente:",
+      "opciones": [
+        "La resolución",
+        "El contraste",
+        "El aumento, pero no la resolución",
+        "La preparación de la muestra"
+      ],
+      "correcta": "C",
+      "explicacion": "El aumento amplía la imagen; no garantiza separar detalles que el sistema no resuelve."
+    },
+    {
+      "id": "maru-p1-024",
+      "subtema": "Microscopía",
+      "pregunta": "¿Qué significa límite de resolución?",
+      "opciones": [
+        "El tamaño total del microscopio",
+        "La distancia mínima entre dos puntos para verlos separados",
+        "La cantidad de lentes",
+        "El diámetro de la muestra"
+      ],
+      "correcta": "B",
+      "explicacion": "Es la mínima distancia a la que dos puntos se perciben como distintos."
+    },
+    {
+      "id": "maru-p1-025",
+      "subtema": "Microscopía",
+      "pregunta": "Un instrumento distingue dos estructuras separadas por una distancia muy pequeña. ¿Qué característica tiene?",
+      "opciones": [
+        "Un límite de resolución pequeño",
+        "Un límite de resolución grande",
+        "Un aumento necesariamente bajo",
+        "Una longitud de onda infinita"
+      ],
+      "correcta": "A",
+      "explicacion": "Un límite pequeño permite discriminar puntos más próximos."
+    },
+    {
+      "id": "maru-p1-026",
+      "subtema": "Microscopía",
+      "pregunta": "Si dos puntos se observan como uno solo, probablemente están:",
+      "opciones": [
+        "Por encima del límite de resolución",
+        "Por debajo de la distancia resoluble",
+        "En dos muestras distintas",
+        "Fuera del campo visual siempre"
+      ],
+      "correcta": "B",
+      "explicacion": "Si están demasiado próximos para el sistema, no se distinguen por separado."
+    },
+    {
+      "id": "maru-p1-027",
+      "subtema": "Microscopía",
+      "pregunta": "¿Cuál es la diferencia entre aumento y resolución?",
+      "opciones": [
+        "Son sinónimos",
+        "El aumento agranda; la resolución separa detalles cercanos",
+        "La resolución solo cambia el color",
+        "El aumento determina la composición química"
+      ],
+      "correcta": "B",
+      "explicacion": "El aumento modifica el tamaño aparente y la resolución la capacidad de distinguir detalles."
+    },
+    {
+      "id": "maru-p1-028",
+      "subtema": "Microscopía",
+      "pregunta": "Un microscopio A tiene límite de 0,2 μm y B de 0,5 μm. ¿Cuál resuelve mejor?",
+      "opciones": [
+        "A",
+        "B",
+        "Ambos igual",
+        "No puede compararse"
+      ],
+      "correcta": "A",
+      "explicacion": "El menor límite de resolución corresponde a mayor capacidad de separar puntos."
+    },
+    {
+      "id": "maru-p1-029",
+      "subtema": "Microscopía",
+      "pregunta": "Para observar dos puntos como distintos, importa principalmente que:",
+      "opciones": [
+        "La distancia entre ellos supere el límite resolutivo",
+        "La muestra sea siempre más grande",
+        "El objetivo tenga menor diámetro",
+        "La imagen esté coloreada"
+      ],
+      "correcta": "A",
+      "explicacion": "Deben estar separados al menos por la distancia resoluble del sistema."
+    },
+    {
+      "id": "maru-p1-030",
+      "subtema": "Microscopía",
+      "pregunta": "Un estudiante confunde poder de resolución con capacidad de agrandar. ¿Qué corrección es adecuada?",
+      "opciones": [
+        "La resolución es la capacidad de distinguir detalles próximos",
+        "La resolución es el peso del microscopio",
+        "El aumento mide la nitidez química",
+        "No existe diferencia entre ambos"
+      ],
+      "correcta": "A",
+      "explicacion": "La resolución no equivale a agrandar: mide la discriminación de detalles."
+    },
+    {
+      "id": "maru-p1-031",
+      "subtema": "Química para biología",
+      "pregunta": "¿Qué conjunto reúne los elementos que constituyen cerca del 95% de la masa celular según el resumen?",
+      "opciones": [
+        "C, H, O, N, P y S",
+        "Na, K, Ca, Fe, Cl y Mg",
+        "Au, Ag, Pb, Hg, Cu y Zn",
+        "He, Ne, Ar, Kr, Xe y Rn"
+      ],
+      "correcta": "A",
+      "explicacion": "Carbono, hidrógeno, oxígeno, nitrógeno, fósforo y azufre son los elementos destacados."
+    },
+    {
+      "id": "maru-p1-032",
+      "subtema": "Química para biología",
+      "pregunta": "Una molécula presenta separación de cargas parciales. Esto se relaciona con:",
+      "opciones": [
+        "Diferencia de electronegatividad",
+        "Número de ribosomas",
+        "Tamaño del núcleo",
+        "Cantidad de cromosomas"
+      ],
+      "correcta": "A",
+      "explicacion": "Una diferencia de electronegatividad puede generar dipolos y polaridad molecular."
+    },
+    {
+      "id": "maru-p1-033",
+      "subtema": "Química para biología",
+      "pregunta": "¿Qué describe mejor a un átomo?",
+      "opciones": [
+        "Conjunto de tejidos",
+        "Unidad mínima de un elemento químico que conserva sus propiedades",
+        "Unión de dos órganos",
+        "Polímero de aminoácidos"
+      ],
+      "correcta": "B",
+      "explicacion": "Un átomo es la unidad básica de un elemento químico."
+    },
+    {
+      "id": "maru-p1-034",
+      "subtema": "Química para biología",
+      "pregunta": "Una molécula de agua presenta distribución desigual de cargas. Se considera:",
+      "opciones": [
+        "Apolar",
+        "Polar",
+        "Metálica",
+        "Un polímero"
+      ],
+      "correcta": "B",
+      "explicacion": "El oxígeno atrae más los electrones y genera una distribución desigual de cargas."
+    },
+    {
+      "id": "maru-p1-035",
+      "subtema": "Química para biología",
+      "pregunta": "Los átomos forman enlaces para alcanzar configuraciones electrónicas más estables. ¿Qué determina también las propiedades moleculares?",
+      "opciones": [
+        "Solo la masa total",
+        "La forma en que están unidos",
+        "El número de células",
+        "La ubicación en un tejido"
+      ],
+      "correcta": "B",
+      "explicacion": "Las propiedades dependen tanto de los átomos como de su disposición y tipo de unión."
+    },
+    {
+      "id": "maru-p1-036",
+      "subtema": "Química para biología",
+      "pregunta": "¿Qué partícula subatómica tiene carga negativa?",
+      "opciones": [
+        "Protón",
+        "Neutrón",
+        "Electrón",
+        "Nucleón neutro"
+      ],
+      "correcta": "C",
+      "explicacion": "Los electrones poseen carga negativa."
+    },
+    {
+      "id": "maru-p1-037",
+      "subtema": "Química para biología",
+      "pregunta": "Una unión covalente se caracteriza por:",
+      "opciones": [
+        "Compartir pares de electrones",
+        "Transferir protones siempre",
+        "Unir células por desmosomas",
+        "Liberar neutrones"
+      ],
+      "correcta": "A",
+      "explicacion": "En un enlace covalente los átomos comparten pares de electrones."
+    },
+    {
+      "id": "maru-p1-038",
+      "subtema": "Química para biología",
+      "pregunta": "Una molécula con dipolo tiene:",
+      "opciones": [
+        "Cargas parciales distribuidas de forma desigual",
+        "Todos sus electrones inmóviles",
+        "Solo enlaces iónicos",
+        "Ausencia de cargas"
+      ],
+      "correcta": "A",
+      "explicacion": "La polaridad implica separación espacial de cargas parciales."
+    },
+    {
+      "id": "maru-p1-039",
+      "subtema": "Química para biología",
+      "pregunta": "¿Qué elemento aporta el esqueleto de la mayoría de las moléculas orgánicas?",
+      "opciones": [
+        "Carbono",
+        "Sodio",
+        "Hierro",
+        "Cloro"
+      ],
+      "correcta": "A",
+      "explicacion": "El carbono forma esqueletos covalentes estables en moléculas orgánicas."
+    },
+    {
+      "id": "maru-p1-040",
+      "subtema": "Química para biología",
+      "pregunta": "La electronegatividad es la tendencia de un átomo a:",
+      "opciones": [
+        "Atraer electrones en un enlace",
+        "Perder todos sus protones",
+        "Aumentar su número de neutrones",
+        "Formar tejidos"
+      ],
+      "correcta": "A",
+      "explicacion": "La electronegatividad expresa la atracción por los electrones compartidos."
+    },
+    {
+      "id": "maru-p1-041",
+      "subtema": "Hidratos de carbono",
+      "pregunta": "Dos monosacáridos se unen mediante un enlace O-glucosídico. En la reacción habitual se libera:",
+      "opciones": [
+        "Oxígeno",
+        "Agua",
+        "Dióxido de carbono",
+        "ATP obligatoriamente"
+      ],
+      "correcta": "B",
+      "explicacion": "La unión por condensación libera una molécula de agua."
+    },
+    {
+      "id": "maru-p1-042",
+      "subtema": "Hidratos de carbono",
+      "pregunta": "¿Cuál es la principal reserva de glucosa en animales?",
+      "opciones": [
+        "Celulosa",
+        "Glucógeno",
+        "Almidón",
+        "Quitina"
+      ],
+      "correcta": "B",
+      "explicacion": "El glucógeno es el polisacárido de reserva en animales, especialmente hígado y músculo."
+    },
+    {
+      "id": "maru-p1-043",
+      "subtema": "Hidratos de carbono",
+      "pregunta": "¿Qué polisacárido cumple función estructural en la pared vegetal?",
+      "opciones": [
+        "Almidón",
+        "Glucógeno",
+        "Celulosa",
+        "Lactosa"
+      ],
+      "correcta": "C",
+      "explicacion": "La celulosa forma parte de la pared celular vegetal."
+    },
+    {
+      "id": "maru-p1-044",
+      "subtema": "Hidratos de carbono",
+      "pregunta": "La celulosa está compuesta por:",
+      "opciones": [
+        "Glucosas unidas por enlaces beta",
+        "Fructosas unidas por enlaces peptídicos",
+        "Aminoácidos",
+        "Ácidos grasos"
+      ],
+      "correcta": "A",
+      "explicacion": "La celulosa es un homopolisacárido lineal de glucosa con enlaces beta."
+    },
+    {
+      "id": "maru-p1-045",
+      "subtema": "Hidratos de carbono",
+      "pregunta": "¿Qué polisacárido forma parte del exoesqueleto de artrópodos y pared de hongos?",
+      "opciones": [
+        "Quitina",
+        "Almidón",
+        "Glucógeno",
+        "Celobiosa"
+      ],
+      "correcta": "A",
+      "explicacion": "La quitina está formada por unidades de N-acetilglucosamina y cumple función estructural."
+    },
+    {
+      "id": "maru-p1-046",
+      "subtema": "Hidratos de carbono",
+      "pregunta": "El almidón cumple principalmente función de:",
+      "opciones": [
+        "Reserva energética vegetal",
+        "Estructura de membranas",
+        "Señalización hormonal",
+        "Transporte de oxígeno"
+      ],
+      "correcta": "A",
+      "explicacion": "El almidón almacena glucosa en células vegetales."
+    },
+    {
+      "id": "maru-p1-047",
+      "subtema": "Hidratos de carbono",
+      "pregunta": "La hidrólisis total de celulosa produce:",
+      "opciones": [
+        "Aminoácidos",
+        "Glucosa",
+        "Glicerol",
+        "Nucleótidos"
+      ],
+      "correcta": "B",
+      "explicacion": "La hidrólisis completa de celulosa libera glucosa."
+    },
+    {
+      "id": "maru-p1-048",
+      "subtema": "Hidratos de carbono",
+      "pregunta": "Un polisacárido ramificado de reserva en hígado y músculo es:",
+      "opciones": [
+        "Celulosa",
+        "Glucógeno",
+        "Quitina",
+        "Pectina"
+      ],
+      "correcta": "B",
+      "explicacion": "El glucógeno es un homopolisacárido ramificado de reserva animal."
+    },
+    {
+      "id": "maru-p1-049",
+      "subtema": "Hidratos de carbono",
+      "pregunta": "¿Qué caracteriza a un monosacárido?",
+      "opciones": [
+        "No puede hidrolizarse en glúcidos más simples",
+        "Está formado por cientos de aminoácidos",
+        "Siempre contiene tres ácidos grasos",
+        "Es una proteína globular"
+      ],
+      "correcta": "A",
+      "explicacion": "Los monosacáridos son las unidades simples de los hidratos de carbono."
+    },
+    {
+      "id": "maru-p1-050",
+      "subtema": "Hidratos de carbono",
+      "pregunta": "La unión de monosacáridos para formar un disacárido requiere:",
+      "opciones": [
+        "Enlace peptídico",
+        "Enlace glucosídico",
+        "Enlace fosfodiéster",
+        "Puente disulfuro"
+      ],
+      "correcta": "B",
+      "explicacion": "Los monosacáridos se enlazan mediante enlaces glucosídicos."
+    },
+    {
+      "id": "maru-p1-051",
+      "subtema": "Lípidos",
+      "pregunta": "Un lípido saponificable se reconoce porque contiene:",
+      "opciones": [
+        "Ácidos grasos",
+        "Nucleótidos",
+        "Aminoácidos",
+        "Solo anillos aromáticos"
+      ],
+      "correcta": "A",
+      "explicacion": "Los lípidos saponificables poseen ácidos grasos y pueden formar jabones."
+    },
+    {
+      "id": "maru-p1-052",
+      "subtema": "Lípidos",
+      "pregunta": "Un triacilglicérido está formado por:",
+      "opciones": [
+        "Glicerol y tres ácidos grasos",
+        "Esfingosina y glucosa",
+        "Tres nucleótidos",
+        "Colesterol y fosfato"
+      ],
+      "correcta": "A",
+      "explicacion": "Los TAG contienen glicerol esterificado con tres ácidos grasos."
+    },
+    {
+      "id": "maru-p1-053",
+      "subtema": "Lípidos",
+      "pregunta": "Un ácido graso insaturado posee:",
+      "opciones": [
+        "Uno o más dobles enlaces",
+        "Solo enlaces simples",
+        "Un grupo amino terminal",
+        "Una cadena de glucosas"
+      ],
+      "correcta": "A",
+      "explicacion": "La insaturación se debe a dobles enlaces en la cadena hidrocarbonada."
+    },
+    {
+      "id": "maru-p1-054",
+      "subtema": "Lípidos",
+      "pregunta": "¿Qué tipo de lípido forma parte de las membranas y posee región polar y apolar?",
+      "opciones": [
+        "Fosfolípido",
+        "Triacilglicérido",
+        "Cera exclusivamente",
+        "Esteroide sin grupos polares"
+      ],
+      "correcta": "A",
+      "explicacion": "Los fosfolípidos son anfipáticos y forman bicapas en medios acuosos."
+    },
+    {
+      "id": "maru-p1-055",
+      "subtema": "Lípidos",
+      "pregunta": "La ceramida se forma por unión de:",
+      "opciones": [
+        "Esfingosina y ácido graso",
+        "Glicerol y tres glucosas",
+        "Colesterol y ATP",
+        "Dos aminoácidos"
+      ],
+      "correcta": "A",
+      "explicacion": "La ceramida es la base estructural de varios esfingolípidos."
+    },
+    {
+      "id": "maru-p1-056",
+      "subtema": "Lípidos",
+      "pregunta": "¿Cuál es un lípido no saponificable?",
+      "opciones": [
+        "Triacilglicérido",
+        "Cera",
+        "Esteroide",
+        "Fosfolípido"
+      ],
+      "correcta": "C",
+      "explicacion": "Los esteroides carecen de ácidos grasos y no se saponifican."
+    },
+    {
+      "id": "maru-p1-057",
+      "subtema": "Lípidos",
+      "pregunta": "Los ácidos grasos saturados suelen ser sólidos a temperatura ambiente porque:",
+      "opciones": [
+        "No poseen dobles enlaces y sus cadenas se empaquetan mejor",
+        "Tienen muchos grupos fosfato",
+        "Son polímeros de glucosa",
+        "Contienen nitrógeno en todas sus unidades"
+      ],
+      "correcta": "A",
+      "explicacion": "Las cadenas saturadas se empaquetan estrechamente, elevando su punto de fusión."
+    },
+    {
+      "id": "maru-p1-058",
+      "subtema": "Lípidos",
+      "pregunta": "¿Qué lípido deriva del colesterol y puede actuar como hormona?",
+      "opciones": [
+        "Esteroide",
+        "Glucógeno",
+        "Fosfatidilcolina",
+        "Celulosa"
+      ],
+      "correcta": "A",
+      "explicacion": "Del colesterol derivan hormonas esteroideas."
+    },
+    {
+      "id": "maru-p1-059",
+      "subtema": "Lípidos",
+      "pregunta": "Los terpenos participan, entre otras funciones, en:",
+      "opciones": [
+        "Pigmentación vegetal y síntesis de vitaminas",
+        "Formación de enlaces peptídicos",
+        "Replicación del ADN",
+        "Transporte de oxígeno en sangre"
+      ],
+      "correcta": "A",
+      "explicacion": "Los terpenos contribuyen a pigmentos vegetales y a la síntesis de vitaminas A, E y K."
+    },
+    {
+      "id": "maru-p1-060",
+      "subtema": "Lípidos",
+      "pregunta": "Una molécula anfipática en agua puede organizarse formando:",
+      "opciones": [
+        "Micelas",
+        "Cromosomas",
+        "Ribosomas",
+        "Microtúbulos"
+      ],
+      "correcta": "A",
+      "explicacion": "Las moléculas anfipáticas pueden agrupar sus regiones hidrofóbicas hacia el interior y las hidrofílicas hacia el agua."
+    },
+    {
+      "id": "maru-p1-061",
+      "subtema": "Ácidos nucleicos",
+      "pregunta": "¿Qué unión conecta nucleótidos consecutivos dentro de una misma cadena de ADN o ARN?",
+      "opciones": [
+        "Fosfodiéster",
+        "Puente de hidrógeno",
+        "Peptídica",
+        "Éster entre dos aminoácidos"
+      ],
+      "correcta": "A",
+      "explicacion": "El enlace fosfodiéster conecta el 3'OH de una pentosa con el fosfato 5' de otra."
+    },
+    {
+      "id": "maru-p1-062",
+      "subtema": "Ácidos nucleicos",
+      "pregunta": "En el ADN, la adenina se aparea con:",
+      "opciones": [
+        "Citosina",
+        "Timina",
+        "Guanina",
+        "Uracilo"
+      ],
+      "correcta": "B",
+      "explicacion": "En ADN, A se aparea con T mediante puentes de hidrógeno."
+    },
+    {
+      "id": "maru-p1-063",
+      "subtema": "Ácidos nucleicos",
+      "pregunta": "¿Qué base reemplaza a la timina en el ARN?",
+      "opciones": [
+        "Citosina",
+        "Guanina",
+        "Uracilo",
+        "Adenina"
+      ],
+      "correcta": "C",
+      "explicacion": "El ARN utiliza uracilo en lugar de timina."
+    },
+    {
+      "id": "maru-p1-064",
+      "subtema": "Ácidos nucleicos",
+      "pregunta": "La unión entre una pentosa y una base nitrogenada es:",
+      "opciones": [
+        "N-glucosídica",
+        "Fosfodiéster",
+        "Peptídica",
+        "Éster carboxílica"
+      ],
+      "correcta": "A",
+      "explicacion": "La base se une a la pentosa mediante un enlace N-glucosídico."
+    },
+    {
+      "id": "maru-p1-065",
+      "subtema": "Ácidos nucleicos",
+      "pregunta": "¿Qué función puede cumplir el ATP?",
+      "opciones": [
+        "Almacenar y transferir energía",
+        "Formar la pared vegetal",
+        "Transportar oxígeno",
+        "Degradar proteínas en lisosomas"
+      ],
+      "correcta": "A",
+      "explicacion": "El ATP es un nucleótido que participa en transferencia de energía."
+    },
+    {
+      "id": "maru-p1-066",
+      "subtema": "Ácidos nucleicos",
+      "pregunta": "El cAMP se destaca por actuar como:",
+      "opciones": [
+        "Segundo mensajero",
+        "Componente de la celulosa",
+        "Ácido graso",
+        "Enzima lisosomal"
+      ],
+      "correcta": "A",
+      "explicacion": "El AMP cíclico participa en señalización como segundo mensajero."
+    },
+    {
+      "id": "maru-p1-067",
+      "subtema": "Ácidos nucleicos",
+      "pregunta": "¿Qué unión mantiene apareadas las bases complementarias de dos hebras?",
+      "opciones": [
+        "Puentes de hidrógeno",
+        "Enlaces peptídicos",
+        "Enlaces glucosídicos",
+        "Enlaces éster"
+      ],
+      "correcta": "A",
+      "explicacion": "Los puentes de hidrógeno estabilizan el apareamiento de bases entre hebras."
+    },
+    {
+      "id": "maru-p1-068",
+      "subtema": "Ácidos nucleicos",
+      "pregunta": "La unión entre fosfato y pentosa dentro de un nucleótido se denomina:",
+      "opciones": [
+        "Éster fosfórica",
+        "Peptídica",
+        "Glucosídica",
+        "Disulfuro"
+      ],
+      "correcta": "A",
+      "explicacion": "La unión éster fosfórica enlaza el fosfato con la pentosa."
+    },
+    {
+      "id": "maru-p1-069",
+      "subtema": "Ácidos nucleicos",
+      "pregunta": "Un polímero de nucleótidos puede constituir:",
+      "opciones": [
+        "ADN o ARN",
+        "Colágeno",
+        "Triglicérido",
+        "Glucógeno"
+      ],
+      "correcta": "A",
+      "explicacion": "Los polinucleótidos forman los ácidos nucleicos ADN y ARN."
+    },
+    {
+      "id": "maru-p1-070",
+      "subtema": "Ácidos nucleicos",
+      "pregunta": "En el ADN bicatenario, la cantidad de guanina se corresponde con la de:",
+      "opciones": [
+        "Adenina",
+        "Citosina",
+        "Timina",
+        "Uracilo"
+      ],
+      "correcta": "B",
+      "explicacion": "La guanina se aparea con citosina, por lo que sus cantidades son iguales en ADN bicatenario."
+    },
+    {
+      "id": "maru-p1-071",
+      "subtema": "Proteínas, hemoglobina y mioglobina",
+      "pregunta": "El enlace peptídico se forma entre:",
+      "opciones": [
+        "Grupo carboxilo y grupo amino",
+        "Dos grupos fosfato",
+        "Dos bases nitrogenadas",
+        "Dos ácidos grasos"
+      ],
+      "correcta": "A",
+      "explicacion": "El enlace peptídico une el carboxilo de un aminoácido con el amino de otro."
+    },
+    {
+      "id": "maru-p1-072",
+      "subtema": "Proteínas, hemoglobina y mioglobina",
+      "pregunta": "Durante la formación de un enlace peptídico se libera:",
+      "opciones": [
+        "Agua",
+        "Oxígeno",
+        "Glucosa",
+        "Dióxido de carbono obligatoriamente"
+      ],
+      "correcta": "A",
+      "explicacion": "La formación del enlace peptídico ocurre por condensación con liberación de agua."
+    },
+    {
+      "id": "maru-p1-073",
+      "subtema": "Proteínas, hemoglobina y mioglobina",
+      "pregunta": "La estructura primaria de una proteína corresponde a:",
+      "opciones": [
+        "Secuencia de aminoácidos",
+        "Plegamiento tridimensional",
+        "Asociación de subunidades",
+        "Unión de proteínas con lípidos"
+      ],
+      "correcta": "A",
+      "explicacion": "La estructura primaria es el orden lineal de aminoácidos."
+    },
+    {
+      "id": "maru-p1-074",
+      "subtema": "Proteínas, hemoglobina y mioglobina",
+      "pregunta": "La desnaturalización habitual altera principalmente las estructuras:",
+      "opciones": [
+        "Secundaria, terciaria y cuaternaria",
+        "Primaria exclusivamente",
+        "Genética y cromosómica",
+        "De nucleótidos"
+      ],
+      "correcta": "A",
+      "explicacion": "La desnaturalización altera el plegamiento sin romper normalmente los enlaces peptídicos."
+    },
+    {
+      "id": "maru-p1-075",
+      "subtema": "Proteínas, hemoglobina y mioglobina",
+      "pregunta": "La hidrólisis de una proteína puede alterar su estructura primaria porque rompe:",
+      "opciones": [
+        "Enlaces peptídicos",
+        "Puentes de hidrógeno entre bases",
+        "Enlaces glucosídicos",
+        "Enlaces fosfodiéster"
+      ],
+      "correcta": "A",
+      "explicacion": "La hidrólisis rompe los enlaces peptídicos y modifica la secuencia."
+    },
+    {
+      "id": "maru-p1-076",
+      "subtema": "Proteínas, hemoglobina y mioglobina",
+      "pregunta": "¿Qué molécula transporta oxígeno en la sangre?",
+      "opciones": [
+        "Hemoglobina",
+        "Mioglobina",
+        "Colágeno",
+        "Actina"
+      ],
+      "correcta": "A",
+      "explicacion": "La hemoglobina es la proteína transportadora de oxígeno en la sangre."
+    },
+    {
+      "id": "maru-p1-077",
+      "subtema": "Proteínas, hemoglobina y mioglobina",
+      "pregunta": "La mioglobina se encuentra principalmente en:",
+      "opciones": [
+        "Músculo",
+        "Plasma sanguíneo",
+        "Pared celular vegetal",
+        "Núcleo"
+      ],
+      "correcta": "A",
+      "explicacion": "La mioglobina almacena oxígeno en el tejido muscular."
+    },
+    {
+      "id": "maru-p1-078",
+      "subtema": "Proteínas, hemoglobina y mioglobina",
+      "pregunta": "Los aminoácidos poseen como grupos característicos:",
+      "opciones": [
+        "Amino y carboxilo",
+        "Fosfato y aldehído",
+        "Glicerol y fosfato",
+        "Base y pentosa"
+      ],
+      "correcta": "A",
+      "explicacion": "Los aminoácidos presentan un grupo amino y uno carboxilo."
+    },
+    {
+      "id": "maru-p1-079",
+      "subtema": "Proteínas, hemoglobina y mioglobina",
+      "pregunta": "Una proteína pierde su función al desnaturalizarse porque:",
+      "opciones": [
+        "Se altera su conformación",
+        "Se convierte necesariamente en ADN",
+        "Aumenta su secuencia de aminoácidos",
+        "Se transforma en un lípido"
+      ],
+      "correcta": "A",
+      "explicacion": "La función proteica depende de su conformación tridimensional."
+    },
+    {
+      "id": "maru-p1-080",
+      "subtema": "Proteínas, hemoglobina y mioglobina",
+      "pregunta": "La unión de varias cadenas polipeptídicas para formar una proteína funcional corresponde a estructura:",
+      "opciones": [
+        "Primaria",
+        "Secundaria",
+        "Terciaria",
+        "Cuaternaria"
+      ],
+      "correcta": "D",
+      "explicacion": "La estructura cuaternaria describe la asociación de varias subunidades polipeptídicas."
+    },
+    {
+      "id": "maru-p1-081",
+      "subtema": "Virus, viroides y priones",
+      "pregunta": "Un virus se replica únicamente cuando:",
+      "opciones": [
+        "Utiliza la maquinaria de una célula huésped",
+        "Realiza metabolismo autónomo",
+        "Se divide por fisión binaria",
+        "Sintetiza ATP en mitocondrias propias"
+      ],
+      "correcta": "A",
+      "explicacion": "Los virus son parásitos intracelulares obligados y dependen de la célula huésped."
+    },
+    {
+      "id": "maru-p1-082",
+      "subtema": "Virus, viroides y priones",
+      "pregunta": "¿Qué componente forma la cápside viral?",
+      "opciones": [
+        "Proteínas organizadas en capsómeros",
+        "Fosfolípidos exclusivamente",
+        "Celulosa",
+        "Peptidoglicano"
+      ],
+      "correcta": "A",
+      "explicacion": "Los capsómeros son unidades proteicas que forman la cápside."
+    },
+    {
+      "id": "maru-p1-083",
+      "subtema": "Virus, viroides y priones",
+      "pregunta": "Un virión posee ARN circular sin cápside ni proteínas asociadas. Corresponde a:",
+      "opciones": [
+        "Virus envuelto",
+        "Viroid",
+        "Prion",
+        "Bacteria"
+      ],
+      "correcta": "B",
+      "explicacion": "Los viroides son ARN circular desnudo, sin cápside ni envoltura."
+    },
+    {
+      "id": "maru-p1-084",
+      "subtema": "Virus, viroides y priones",
+      "pregunta": "Un agente infeccioso altera el plegamiento de proteínas del huésped. Se trata de:",
+      "opciones": [
+        "Prion",
+        "Viroid",
+        "Bacteriófago",
+        "Plásmido"
+      ],
+      "correcta": "A",
+      "explicacion": "Los priones inducen cambios conformacionales en proteínas del organismo."
+    },
+    {
+      "id": "maru-p1-085",
+      "subtema": "Virus, viroides y priones",
+      "pregunta": "¿Qué distingue a los virus de las células?",
+      "opciones": [
+        "Carecen de metabolismo autónomo",
+        "Tienen ribosomas propios",
+        "Poseen citoplasma",
+        "Se dividen por mitosis"
+      ],
+      "correcta": "A",
+      "explicacion": "Los virus no tienen metabolismo propio ni maquinaria celular completa."
+    },
+    {
+      "id": "maru-p1-086",
+      "subtema": "Virus, viroides y priones",
+      "pregunta": "Un virus puede presentar envoltura ubicada:",
+      "opciones": [
+        "Por fuera de la cápside",
+        "Dentro del ADN",
+        "En el núcleo de la bacteria",
+        "Entre dos cromosomas"
+      ],
+      "correcta": "A",
+      "explicacion": "Los virus envueltos tienen una envoltura externa a la cápside."
+    },
+    {
+      "id": "maru-p1-087",
+      "subtema": "Virus, viroides y priones",
+      "pregunta": "Los viroides afectan principalmente a:",
+      "opciones": [
+        "Plantas",
+        "Mamíferos exclusivamente",
+        "Bacterias exclusivamente",
+        "Hongos exclusivamente"
+      ],
+      "correcta": "A",
+      "explicacion": "Los viroides descritos en el resumen afectan a plantas."
+    },
+    {
+      "id": "maru-p1-088",
+      "subtema": "Virus, viroides y priones",
+      "pregunta": "Los virus aumentan en número porque:",
+      "opciones": [
+        "Se ensamblan nuevas partículas usando la célula huésped",
+        "Cada partícula crece como una célula",
+        "Se dividen por meiosis",
+        "Duplican sus mitocondrias"
+      ],
+      "correcta": "A",
+      "explicacion": "Las partículas virales se producen y ensamblan en la célula infectada."
+    },
+    {
+      "id": "maru-p1-089",
+      "subtema": "Virus, viroides y priones",
+      "pregunta": "Las espículas o antígenos virales intervienen en:",
+      "opciones": [
+        "Reconocimiento y entrada a células huésped",
+        "Síntesis de glucógeno",
+        "Formación de pared celular",
+        "Producción de ribosomas"
+      ],
+      "correcta": "A",
+      "explicacion": "Las proteínas de superficie participan en la unión e ingreso a células susceptibles."
+    },
+    {
+      "id": "maru-p1-090",
+      "subtema": "Virus, viroides y priones",
+      "pregunta": "¿Cuál de las siguientes estructuras no está presente en un viroide?",
+      "opciones": [
+        "Cápside proteica",
+        "ARN circular",
+        "Material genético",
+        "Capacidad infecciosa"
+      ],
+      "correcta": "A",
+      "explicacion": "Los viroides carecen de cápside y están constituidos por ARN circular."
+    },
+    {
+      "id": "maru-p1-091",
+      "subtema": "Células eucariotas",
+      "pregunta": "Una célula con núcleo rodeado por envoltura y organelas membranosas es:",
+      "opciones": [
+        "Procariota",
+        "Eucariota",
+        "Viral",
+        "Acelular"
+      ],
+      "correcta": "B",
+      "explicacion": "Las células eucariotas presentan núcleo delimitado y organelas membranosas."
+    },
+    {
+      "id": "maru-p1-092",
+      "subtema": "Células eucariotas",
+      "pregunta": "¿Qué organela posee ADN circular y doble membrana y participa en respiración celular?",
+      "opciones": [
+        "Mitocondria",
+        "Lisosoma",
+        "Aparato de Golgi",
+        "Ribosoma"
+      ],
+      "correcta": "A",
+      "explicacion": "Las mitocondrias tienen ADN circular y doble membrana y realizan funciones energéticas."
+    },
+    {
+      "id": "maru-p1-093",
+      "subtema": "Células eucariotas",
+      "pregunta": "La cara cis del aparato de Golgi se orienta hacia:",
+      "opciones": [
+        "Retículo endoplasmático y envoltura nuclear",
+        "Membrana plasmática",
+        "Exterior celular",
+        "Matriz extracelular"
+      ],
+      "correcta": "A",
+      "explicacion": "La cara cis recibe material procedente del retículo endoplasmático."
+    },
+    {
+      "id": "maru-p1-094",
+      "subtema": "Células eucariotas",
+      "pregunta": "¿Qué organela sintetiza proteínas destinadas a secreción y membranas?",
+      "opciones": [
+        "RER",
+        "REL",
+        "Lisosoma",
+        "Peroxisoma"
+      ],
+      "correcta": "A",
+      "explicacion": "El retículo rugoso posee ribosomas y sintetiza proteínas de secreción y membrana."
+    },
+    {
+      "id": "maru-p1-095",
+      "subtema": "Células eucariotas",
+      "pregunta": "Una célula hepática detoxifica compuestos y sintetiza lípidos. ¿Qué organela participa?",
+      "opciones": [
+        "REL",
+        "RER",
+        "Nucléolo",
+        "Lisosoma"
+      ],
+      "correcta": "A",
+      "explicacion": "El retículo liso participa en metabolismo lipídico y detoxificación."
+    },
+    {
+      "id": "maru-p1-096",
+      "subtema": "Células eucariotas",
+      "pregunta": "Las enzimas hidrolíticas de los lisosomas permiten:",
+      "opciones": [
+        "Digestión intracelular",
+        "Síntesis de ADN",
+        "Fotosíntesis",
+        "Traducción extracelular"
+      ],
+      "correcta": "A",
+      "explicacion": "Los lisosomas degradan materiales incorporados o componentes celulares."
+    },
+    {
+      "id": "maru-p1-097",
+      "subtema": "Células eucariotas",
+      "pregunta": "¿Qué organela contiene catalasa y participa en oxidaciones y detoxificación?",
+      "opciones": [
+        "Peroxisoma",
+        "Ribosoma",
+        "Golgi",
+        "Centríolo"
+      ],
+      "correcta": "A",
+      "explicacion": "Los peroxisomas contienen catalasa y participan en reacciones oxidativas."
+    },
+    {
+      "id": "maru-p1-098",
+      "subtema": "Células eucariotas",
+      "pregunta": "Una célula vegetal se distingue de una animal por poseer:",
+      "opciones": [
+        "Pared de celulosa y cloroplastos",
+        "Mitocondrias exclusivas",
+        "Ribosomas exclusivos",
+        "Membrana plasmática exclusiva"
+      ],
+      "correcta": "A",
+      "explicacion": "Las células vegetales poseen pared celular de celulosa y plastidios como cloroplastos."
+    },
+    {
+      "id": "maru-p1-099",
+      "subtema": "Células eucariotas",
+      "pregunta": "Los plasmodesmos permiten:",
+      "opciones": [
+        "Comunicación entre citoplasmas de células vegetales vecinas",
+        "Digestión de proteínas",
+        "Transporte de oxígeno en sangre",
+        "Separación de cromátidas"
+      ],
+      "correcta": "A",
+      "explicacion": "Los plasmodesmos atraviesan paredes celulares y conectan células vegetales."
+    },
+    {
+      "id": "maru-p1-100",
+      "subtema": "Células eucariotas",
+      "pregunta": "Durante la germinación, los glioxisomas contribuyen a convertir:",
+      "opciones": [
+        "Ácidos grasos en hidratos de carbono",
+        "Proteínas en ADN",
+        "Glucosa en celulosa exclusivamente",
+        "Nucleótidos en lípidos"
+      ],
+      "correcta": "A",
+      "explicacion": "Los glioxisomas permiten convertir ácidos grasos en carbohidratos durante la germinación."
+    },
+    {
+      "id": "maru-p1-101",
+      "subtema": "Células procariotas",
+      "pregunta": "Una bacteria carece de núcleo delimitado. Su material genético se localiza en:",
+      "opciones": [
+        "Nucleoide",
+        "Nucléolo",
+        "Lisosoma",
+        "Mitocondria"
+      ],
+      "correcta": "A",
+      "explicacion": "En procariotas el ADN se encuentra en una región denominada nucleoide."
+    },
+    {
+      "id": "maru-p1-102",
+      "subtema": "Células procariotas",
+      "pregunta": "La pared bacteriana contiene principalmente:",
+      "opciones": [
+        "Peptidoglicano",
+        "Celulosa",
+        "Quitina",
+        "Colágeno"
+      ],
+      "correcta": "A",
+      "explicacion": "El peptidoglicano aporta rigidez y protección a la pared bacteriana."
+    },
+    {
+      "id": "maru-p1-103",
+      "subtema": "Células procariotas",
+      "pregunta": "Una bacteria Gram positiva se observa violeta tras la tinción de Gram. Según el resumen, esto se relaciona con:",
+      "opciones": [
+        "Composición de su pared celular",
+        "Presencia de núcleo",
+        "Ausencia de membrana",
+        "ADN lineal"
+      ],
+      "correcta": "A",
+      "explicacion": "La composición de la pared permite diferenciar bacterias Gram positivas y negativas."
+    },
+    {
+      "id": "maru-p1-104",
+      "subtema": "Células procariotas",
+      "pregunta": "¿Qué estructura puede dificultar la fagocitosis bacteriana?",
+      "opciones": [
+        "Cápsula",
+        "Ribosoma",
+        "Plásmido",
+        "Nucleoide"
+      ],
+      "correcta": "A",
+      "explicacion": "La cápsula puede favorecer la evasión de la fagocitosis y aumentar la virulencia."
+    },
+    {
+      "id": "maru-p1-105",
+      "subtema": "Células procariotas",
+      "pregunta": "Un plásmido bacteriano puede portar genes de:",
+      "opciones": [
+        "Resistencia a antibióticos",
+        "Síntesis de clorofila en animales",
+        "Formación de neuronas",
+        "Producción de colágeno"
+      ],
+      "correcta": "A",
+      "explicacion": "Los plásmidos pueden conferir resistencia a uno o varios antibióticos."
+    },
+    {
+      "id": "maru-p1-106",
+      "subtema": "Células procariotas",
+      "pregunta": "¿Qué estructura participa en la conjugación bacteriana?",
+      "opciones": [
+        "Pili sexual",
+        "Flagelo eucariota",
+        "Cilio",
+        "Microvellosidad"
+      ],
+      "correcta": "A",
+      "explicacion": "El pili sexual facilita el contacto entre bacterias durante la conjugación."
+    },
+    {
+      "id": "maru-p1-107",
+      "subtema": "Células procariotas",
+      "pregunta": "Las fimbrias participan principalmente en:",
+      "opciones": [
+        "Adherencia",
+        "Síntesis de ATP",
+        "Replicación mitocondrial",
+        "Fagocitosis"
+      ],
+      "correcta": "A",
+      "explicacion": "Las fimbrias son estructuras cortas relacionadas con la adherencia a superficies y huéspedes."
+    },
+    {
+      "id": "maru-p1-108",
+      "subtema": "Células procariotas",
+      "pregunta": "La reproducción bacteriana habitual ocurre por:",
+      "opciones": [
+        "Fisión binaria",
+        "Mitosis",
+        "Meiosis",
+        "Gemación nuclear"
+      ],
+      "correcta": "A",
+      "explicacion": "Las bacterias se dividen generalmente por fisión binaria."
+    },
+    {
+      "id": "maru-p1-109",
+      "subtema": "Células procariotas",
+      "pregunta": "Las porinas de la membrana externa bacteriana permiten:",
+      "opciones": [
+        "Difusión de solutos a través de canales",
+        "Síntesis de proteínas",
+        "Replicación del ADN",
+        "Contracción celular"
+      ],
+      "correcta": "A",
+      "explicacion": "Las porinas son canales que permiten difusión de solutos."
+    },
+    {
+      "id": "maru-p1-110",
+      "subtema": "Células procariotas",
+      "pregunta": "La cápsula bacteriana puede estar compuesta por:",
+      "opciones": [
+        "Polisacáridos",
+        "ADN exclusivamente",
+        "Fosfolípidos exclusivamente",
+        "Microtúbulos"
+      ],
+      "correcta": "A",
+      "explicacion": "El resumen describe la cápsula como una estructura superficial compuesta por polisacáridos."
+    },
+    {
+      "id": "maru-p1-111",
+      "subtema": "Membranas y transporte",
+      "pregunta": "La membrana plasmática contribuye a la homeostasis porque:",
+      "opciones": [
+        "Regula selectivamente el intercambio de sustancias",
+        "Impide todo intercambio",
+        "Produce ADN",
+        "Reemplaza el citosol"
+      ],
+      "correcta": "A",
+      "explicacion": "La permeabilidad selectiva regula el medio intracelular y extracelular."
+    },
+    {
+      "id": "maru-p1-112",
+      "subtema": "Membranas y transporte",
+      "pregunta": "Los hidratos de carbono de membrana se encuentran principalmente hacia:",
+      "opciones": [
+        "La cara externa, formando glucocáliz",
+        "El centro hidrofóbico de la bicapa",
+        "La matriz mitocondrial",
+        "El núcleo"
+      ],
+      "correcta": "A",
+      "explicacion": "Los carbohidratos se exponen en la cara externa unidos a proteínas o lípidos."
+    },
+    {
+      "id": "maru-p1-113",
+      "subtema": "Membranas y transporte",
+      "pregunta": "El glucocáliz participa en:",
+      "opciones": [
+        "Protección, reconocimiento y adhesión",
+        "Síntesis de ATP",
+        "Replicación cromosómica",
+        "Contracción muscular"
+      ],
+      "correcta": "A",
+      "explicacion": "El glucocáliz interviene en protección, reconocimiento y adhesión celular."
+    },
+    {
+      "id": "maru-p1-114",
+      "subtema": "Membranas y transporte",
+      "pregunta": "Una proteína integral se caracteriza por:",
+      "opciones": [
+        "Estar inmersa total o parcialmente en la bicapa",
+        "Encontrarse siempre libre en el citosol",
+        "Ser un polisacárido",
+        "No interactuar con lípidos"
+      ],
+      "correcta": "A",
+      "explicacion": "Las proteínas integrales se insertan en la bicapa lipídica."
+    },
+    {
+      "id": "maru-p1-115",
+      "subtema": "Membranas y transporte",
+      "pregunta": "Una proteína periférica se asocia a:",
+      "opciones": [
+        "Cabezas polares o proteínas integrales",
+        "Centro hidrofóbico atravesando siempre la bicapa",
+        "ADN nuclear",
+        "Pared de celulosa"
+      ],
+      "correcta": "A",
+      "explicacion": "Las proteínas periféricas se unen a superficies de membrana o a proteínas integrales."
+    },
+    {
+      "id": "maru-p1-116",
+      "subtema": "Membranas y transporte",
+      "pregunta": "El movimiento flip-flop de un fosfolípido implica:",
+      "opciones": [
+        "Pasar de una monocapa a la otra",
+        "Desplazarse lateralmente",
+        "Girar sobre su eje",
+        "Salir de la célula en una vesícula"
+      ],
+      "correcta": "A",
+      "explicacion": "Flip-flop es el paso de un lípido de una cara de la bicapa a la otra."
+    },
+    {
+      "id": "maru-p1-117",
+      "subtema": "Membranas y transporte",
+      "pregunta": "El colesterol de la membrana se intercala entre:",
+      "opciones": [
+        "Las colas de los fosfolípidos",
+        "Las bases del ADN",
+        "Los aminoácidos de una proteína",
+        "Los microtúbulos"
+      ],
+      "correcta": "A",
+      "explicacion": "El colesterol se intercala entre las colas hidrocarbonadas y modula la fluidez."
+    },
+    {
+      "id": "maru-p1-118",
+      "subtema": "Membranas y transporte",
+      "pregunta": "Una proteína canal de membrana facilita:",
+      "opciones": [
+        "Paso selectivo de sustancias a través de la bicapa",
+        "Síntesis de glucógeno",
+        "Traducción de ARN",
+        "Digestión lisosomal"
+      ],
+      "correcta": "A",
+      "explicacion": "Los canales permiten el transporte de sustancias específicas a través de la membrana."
+    },
+    {
+      "id": "maru-p1-119",
+      "subtema": "Membranas y transporte",
+      "pregunta": "La endocitosis permite:",
+      "opciones": [
+        "Incorporar material mediante vesículas",
+        "Liberar material al exterior",
+        "Sintetizar proteínas en ribosomas",
+        "Duplicar el ADN"
+      ],
+      "correcta": "A",
+      "explicacion": "La endocitosis internaliza sustancias mediante invaginación y formación de vesículas."
+    },
+    {
+      "id": "maru-p1-120",
+      "subtema": "Membranas y transporte",
+      "pregunta": "La exocitosis permite:",
+      "opciones": [
+        "Liberar contenido vesicular al exterior",
+        "Incorporar partículas por fagocitosis",
+        "Formar enlaces peptídicos",
+        "Degradar glucosa en citosol"
+      ],
+      "correcta": "A",
+      "explicacion": "La exocitosis fusiona vesículas con la membrana y libera su contenido."
+    },
+    {
+      "id": "maru-p1-121",
+      "subtema": "Sistema de endomembranas",
+      "pregunta": "Las proteínas destinadas a secreción comienzan su síntesis en:",
+      "opciones": [
+        "Ribosomas asociados al RER",
+        "Lisosomas",
+        "Peroxisomas",
+        "Membrana externa mitocondrial"
+      ],
+      "correcta": "A",
+      "explicacion": "Las proteínas de secreción se sintetizan en ribosomas asociados al RER."
+    },
+    {
+      "id": "maru-p1-122",
+      "subtema": "Sistema de endomembranas",
+      "pregunta": "El REL participa especialmente en:",
+      "opciones": [
+        "Biosíntesis de lípidos y detoxificación",
+        "Síntesis de proteínas ribosomales",
+        "Digestión intracelular",
+        "Replicación de ADN"
+      ],
+      "correcta": "A",
+      "explicacion": "El retículo liso sintetiza lípidos, almacena calcio y participa en detoxificación."
+    },
+    {
+      "id": "maru-p1-123",
+      "subtema": "Sistema de endomembranas",
+      "pregunta": "La O-glicosilación de proteínas ocurre principalmente en:",
+      "opciones": [
+        "Aparato de Golgi",
+        "Mitocondria",
+        "Nucleoide",
+        "Citosol exclusivamente"
+      ],
+      "correcta": "A",
+      "explicacion": "El Golgi realiza O-glicosilación sobre residuos como serina o treonina."
+    },
+    {
+      "id": "maru-p1-124",
+      "subtema": "Sistema de endomembranas",
+      "pregunta": "Los endosomas tempranos se localizan generalmente:",
+      "opciones": [
+        "Cerca de la membrana plasmática",
+        "Dentro del núcleo",
+        "En la matriz mitocondrial",
+        "En el nucléolo"
+      ],
+      "correcta": "A",
+      "explicacion": "Los endosomas tempranos reciben material endocitado cerca de la membrana."
+    },
+    {
+      "id": "maru-p1-125",
+      "subtema": "Sistema de endomembranas",
+      "pregunta": "Los endosomas tardíos participan en el tránsito hacia:",
+      "opciones": [
+        "Lisosomas",
+        "Ribosomas libres",
+        "Cloroplastos",
+        "Centrosomas"
+      ],
+      "correcta": "A",
+      "explicacion": "Los endosomas tardíos se vinculan con la entrega de materiales y enzimas lisosomales."
+    },
+    {
+      "id": "maru-p1-126",
+      "subtema": "Sistema de endomembranas",
+      "pregunta": "La señal M6P permite dirigir enzimas hacia:",
+      "opciones": [
+        "Lisosomas",
+        "Membrana nuclear externa",
+        "Mitocondrias",
+        "Cilios"
+      ],
+      "correcta": "A",
+      "explicacion": "La manosa-6-fosfato es una señal de direccionamiento de enzimas lisosomales."
+    },
+    {
+      "id": "maru-p1-127",
+      "subtema": "Sistema de endomembranas",
+      "pregunta": "¿Qué organela completa la digestión de materiales endocitados?",
+      "opciones": [
+        "Lisosoma",
+        "RER",
+        "REL",
+        "Golgi"
+      ],
+      "correcta": "A",
+      "explicacion": "Los lisosomas contienen hidrolasas ácidas que degradan materiales."
+    },
+    {
+      "id": "maru-p1-128",
+      "subtema": "Sistema de endomembranas",
+      "pregunta": "La cara trans del Golgi se relaciona con:",
+      "opciones": [
+        "Clasificación y distribución de productos",
+        "Entrada de proteínas desde el RER",
+        "Replicación del ADN",
+        "Síntesis de ATP"
+      ],
+      "correcta": "A",
+      "explicacion": "La región trans participa en la clasificación y distribución hacia destinos celulares."
+    },
+    {
+      "id": "maru-p1-129",
+      "subtema": "Sistema de endomembranas",
+      "pregunta": "Una proteína lisosomal se sintetiza inicialmente en:",
+      "opciones": [
+        "Ribosoma del RER",
+        "Lisosoma",
+        "Peroxisoma",
+        "Membrana plasmática"
+      ],
+      "correcta": "A",
+      "explicacion": "Las proteínas lisosomales ingresan a la vía secretora a través del RER."
+    },
+    {
+      "id": "maru-p1-130",
+      "subtema": "Sistema de endomembranas",
+      "pregunta": "La autofagia permite que los lisosomas degraden:",
+      "opciones": [
+        "Componentes propios de la célula",
+        "Solo material extracelular",
+        "ADN de bacterias exclusivamente",
+        "Glucosa en sangre"
+      ],
+      "correcta": "A",
+      "explicacion": "La autofagia recicla componentes celulares mediante degradación lisosomal."
+    },
+    {
+      "id": "maru-p1-131",
+      "subtema": "Citoesqueleto",
+      "pregunta": "¿Qué componente del citoesqueleto mide aproximadamente 25 nm?",
+      "opciones": [
+        "Microtúbulos",
+        "Filamentos intermedios",
+        "Filamentos de actina",
+        "Fibras de colágeno"
+      ],
+      "correcta": "A",
+      "explicacion": "Los microtúbulos tienen un diámetro aproximado de 25 nm."
+    },
+    {
+      "id": "maru-p1-132",
+      "subtema": "Citoesqueleto",
+      "pregunta": "Los microtúbulos están formados por:",
+      "opciones": [
+        "Heterodímeros de tubulina alfa y beta",
+        "Monómeros de actina G",
+        "Queratinas",
+        "Colágeno"
+      ],
+      "correcta": "A",
+      "explicacion": "Los microtúbulos polimerizan a partir de heterodímeros de tubulina α y β."
+    },
+    {
+      "id": "maru-p1-133",
+      "subtema": "Citoesqueleto",
+      "pregunta": "¿Qué nucleótido se asocia a la polimerización de microtúbulos?",
+      "opciones": [
+        "GTP",
+        "ATP exclusivamente",
+        "CTP",
+        "UTP"
+      ],
+      "correcta": "A",
+      "explicacion": "La tubulina se une a GTP durante la polimerización."
+    },
+    {
+      "id": "maru-p1-134",
+      "subtema": "Citoesqueleto",
+      "pregunta": "Los filamentos intermedios se destacan por:",
+      "opciones": [
+        "Resistencia mecánica a la tensión",
+        "Transporte rápido de vesículas",
+        "Generación del huso mitótico",
+        "Contracción basada en miosina"
+      ],
+      "correcta": "A",
+      "explicacion": "Los filamentos intermedios aportan resistencia mecánica."
+    },
+    {
+      "id": "maru-p1-135",
+      "subtema": "Citoesqueleto",
+      "pregunta": "En células musculares, los filamentos intermedios característicos contienen:",
+      "opciones": [
+        "Desmina",
+        "Queratina",
+        "GFAP",
+        "Tubulina"
+      ],
+      "correcta": "A",
+      "explicacion": "La desmina es característica de células musculares."
+    },
+    {
+      "id": "maru-p1-136",
+      "subtema": "Citoesqueleto",
+      "pregunta": "Los neurofilamentos se encuentran principalmente en:",
+      "opciones": [
+        "Neuronas",
+        "Hepatocitos",
+        "Eritrocitos maduros",
+        "Pared vegetal"
+      ],
+      "correcta": "A",
+      "explicacion": "Los neurofilamentos son elementos estructurales de axones y dendritas."
+    },
+    {
+      "id": "maru-p1-137",
+      "subtema": "Citoesqueleto",
+      "pregunta": "Los filamentos de actina se polimerizan a partir de:",
+      "opciones": [
+        "Actina G",
+        "Tubulina beta",
+        "Queratina",
+        "Láminas nucleares"
+      ],
+      "correcta": "A",
+      "explicacion": "La actina G forma filamentos de actina mediante polimerización asociada a ATP."
+    },
+    {
+      "id": "maru-p1-138",
+      "subtema": "Citoesqueleto",
+      "pregunta": "Las microvellosidades reciben soporte estructural principalmente de:",
+      "opciones": [
+        "Actina",
+        "Microtúbulos",
+        "Filamentos intermedios nucleares",
+        "Colágeno extracelular"
+      ],
+      "correcta": "A",
+      "explicacion": "Los haces de actina sostienen las microvellosidades."
+    },
+    {
+      "id": "maru-p1-139",
+      "subtema": "Citoesqueleto",
+      "pregunta": "¿Qué proteína motora se asocia a filamentos de actina?",
+      "opciones": [
+        "Miosina",
+        "Dineína exclusivamente",
+        "Quinesina",
+        "Laminina"
+      ],
+      "correcta": "A",
+      "explicacion": "La miosina interactúa con actina y participa en contracción y transporte."
+    },
+    {
+      "id": "maru-p1-140",
+      "subtema": "Citoesqueleto",
+      "pregunta": "El huso mitótico está formado principalmente por:",
+      "opciones": [
+        "Microtúbulos",
+        "Filamentos de queratina",
+        "Colágeno",
+        "Glucógeno"
+      ],
+      "correcta": "A",
+      "explicacion": "Los microtúbulos organizan el huso que participa en la división celular."
+    },
+    {
+      "id": "maru-p1-141",
+      "subtema": "Citosol y matriz extracelular",
+      "pregunta": "El citosol puede describirse como:",
+      "opciones": [
+        "Solución acuosa con iones y moléculas disueltas",
+        "Una organela rodeada por doble membrana",
+        "Una capa de celulosa",
+        "Un polímero de ADN"
+      ],
+      "correcta": "A",
+      "explicacion": "El citosol contiene agua, iones, pequeñas moléculas y biomoléculas."
+    },
+    {
+      "id": "maru-p1-142",
+      "subtema": "Citosol y matriz extracelular",
+      "pregunta": "La mayoría de las proteínas celulares comienzan a sintetizarse en:",
+      "opciones": [
+        "Ribosomas libres del citosol",
+        "Lisosomas",
+        "Aparato de Golgi",
+        "Membrana plasmática"
+      ],
+      "correcta": "A",
+      "explicacion": "La síntesis proteica comienza en ribosomas citosólicos, salvo excepciones mitocondriales."
+    },
+    {
+      "id": "maru-p1-143",
+      "subtema": "Citosol y matriz extracelular",
+      "pregunta": "Las chaperonas ayudan principalmente a:",
+      "opciones": [
+        "Plegamiento correcto de proteínas",
+        "Degradación de glucosa",
+        "Síntesis de lípidos",
+        "Replicación de cromosomas"
+      ],
+      "correcta": "A",
+      "explicacion": "Las chaperonas asisten el plegamiento y la recuperación de proteínas."
+    },
+    {
+      "id": "maru-p1-144",
+      "subtema": "Citosol y matriz extracelular",
+      "pregunta": "Las proteínas destinadas a degradación por proteasomas suelen marcarse con:",
+      "opciones": [
+        "Ubiquitina",
+        "Glucosa",
+        "Colesterol",
+        "Celulosa"
+      ],
+      "correcta": "A",
+      "explicacion": "La ubiquitina marca proteínas para su reconocimiento por el proteasoma."
+    },
+    {
+      "id": "maru-p1-145",
+      "subtema": "Citosol y matriz extracelular",
+      "pregunta": "El proteasoma degrada proteínas mediante:",
+      "opciones": [
+        "Proteasas en una cámara central",
+        "Hidrolasas ácidas en vesículas",
+        "Luz en tilacoides",
+        "ADN polimerasa"
+      ],
+      "correcta": "A",
+      "explicacion": "El proteasoma desenrolla proteínas y las degrada en su cámara proteolítica."
+    },
+    {
+      "id": "maru-p1-146",
+      "subtema": "Citosol y matriz extracelular",
+      "pregunta": "¿Qué proteína fibrosa aporta resistencia a la matriz extracelular?",
+      "opciones": [
+        "Colágeno",
+        "Actina G citosólica",
+        "Tubulina",
+        "Histona"
+      ],
+      "correcta": "A",
+      "explicacion": "El colágeno es un componente estructural de la matriz extracelular."
+    },
+    {
+      "id": "maru-p1-147",
+      "subtema": "Citosol y matriz extracelular",
+      "pregunta": "Los proteoglicanos y GAG captan cationes y favorecen:",
+      "opciones": [
+        "Retención de agua y turgencia de la matriz",
+        "Pérdida total de agua",
+        "Replicación del ADN",
+        "Síntesis de ATP"
+      ],
+      "correcta": "A",
+      "explicacion": "Las cargas negativas atraen cationes, que favorecen la retención de agua."
+    },
+    {
+      "id": "maru-p1-148",
+      "subtema": "Citosol y matriz extracelular",
+      "pregunta": "La matriz extracelular contribuye a:",
+      "opciones": [
+        "Soporte, adhesión, migración y señalización",
+        "Solo almacenamiento de ADN",
+        "Producción de ribosomas",
+        "Digestión intracelular"
+      ],
+      "correcta": "A",
+      "explicacion": "La MEC organiza tejidos y participa en soporte, migración y señalización."
+    },
+    {
+      "id": "maru-p1-149",
+      "subtema": "Citosol y matriz extracelular",
+      "pregunta": "La elastina aporta principalmente:",
+      "opciones": [
+        "Elasticidad",
+        "Rigidez mineral exclusiva",
+        "Catalisis",
+        "Transporte de electrones"
+      ],
+      "correcta": "A",
+      "explicacion": "La elastina permite deformación y recuperación elástica de tejidos."
+    },
+    {
+      "id": "maru-p1-150",
+      "subtema": "Citosol y matriz extracelular",
+      "pregunta": "Una proteína mal plegada marcada con ubiquitina será dirigida al:",
+      "opciones": [
+        "Proteasoma",
+        "Cloroplasto",
+        "Golgi",
+        "Endosoma temprano necesariamente"
+      ],
+      "correcta": "A",
+      "explicacion": "El sistema ubiquitina-proteasoma reconoce y degrada proteínas dañadas o mal plegadas."
+    },
+    {
+      "id": "maru-p1-151",
+      "subtema": "Enzimas",
+      "pregunta": "Las enzimas aceleran reacciones porque:",
+      "opciones": [
+        "Disminuyen la energía de activación",
+        "Aumentan el ΔG de la reacción",
+        "Cambian el equilibrio final",
+        "Se consumen por completo"
+      ],
+      "correcta": "A",
+      "explicacion": "Las enzimas reducen la energía de activación sin cambiar el equilibrio termodinámico."
+    },
+    {
+      "id": "maru-p1-152",
+      "subtema": "Enzimas",
+      "pregunta": "Una enzima alcanza velocidad máxima cuando:",
+      "opciones": [
+        "Sus sitios activos están saturados de sustrato",
+        "No hay sustrato",
+        "El pH es cero",
+        "Se desnaturaliza"
+      ],
+      "correcta": "A",
+      "explicacion": "La saturación ocurre cuando el aumento de sustrato ya no eleva la velocidad."
+    },
+    {
+      "id": "maru-p1-153",
+      "subtema": "Enzimas",
+      "pregunta": "Un Km bajo suele indicar:",
+      "opciones": [
+        "Alta afinidad aparente por el sustrato",
+        "Baja afinidad",
+        "Ausencia de sitio activo",
+        "Velocidad nula"
+      ],
+      "correcta": "A",
+      "explicacion": "Según el resumen, la afinidad es inversamente proporcional al Km."
+    },
+    {
+      "id": "maru-p1-154",
+      "subtema": "Enzimas",
+      "pregunta": "Una enzima pierde actividad al elevarse demasiado la temperatura porque:",
+      "opciones": [
+        "Puede desnaturalizarse",
+        "Se transforma en ADN",
+        "Aumenta su estructura primaria",
+        "Se convierte en lípido"
+      ],
+      "correcta": "A",
+      "explicacion": "Las enzimas proteicas son termolábiles y pueden perder su conformación."
+    },
+    {
+      "id": "maru-p1-155",
+      "subtema": "Enzimas",
+      "pregunta": "En el modelo de ajuste inducido:",
+      "opciones": [
+        "La unión del sustrato induce un cambio conformacional del sitio activo",
+        "El sustrato nunca contacta la enzima",
+        "El sitio activo es siempre rígido",
+        "La enzima se consume"
+      ],
+      "correcta": "A",
+      "explicacion": "La interacción provoca un ajuste estructural que favorece la unión."
+    },
+    {
+      "id": "maru-p1-156",
+      "subtema": "Enzimas",
+      "pregunta": "Un modulador alostérico negativo suele:",
+      "opciones": [
+        "Disminuir la afinidad o actividad enzimática",
+        "Aumentar siempre la velocidad",
+        "Romper enlaces peptídicos",
+        "Convertir la enzima en ARN"
+      ],
+      "correcta": "A",
+      "explicacion": "El modulador negativo reduce la actividad o afinidad por el sustrato."
+    },
+    {
+      "id": "maru-p1-157",
+      "subtema": "Enzimas",
+      "pregunta": "Una enzima alostérica suele presentar cinética:",
+      "opciones": [
+        "Sigmoidea",
+        "Lineal siempre",
+        "Hiperbólica exclusivamente",
+        "Sin relación con sustrato"
+      ],
+      "correcta": "A",
+      "explicacion": "Las enzimas alostéricas presentan curvas sigmoideas y cooperatividad."
+    },
+    {
+      "id": "maru-p1-158",
+      "subtema": "Enzimas",
+      "pregunta": "Las enzimas Michaelianas suelen mostrar una curva:",
+      "opciones": [
+        "Hiperbólica",
+        "Sigmoidea",
+        "Circular",
+        "Exponencial sin saturación"
+      ],
+      "correcta": "A",
+      "explicacion": "La cinética Michaelis-Menten presenta una curva hiperbólica de saturación."
+    },
+    {
+      "id": "maru-p1-159",
+      "subtema": "Enzimas",
+      "pregunta": "¿Qué puede ser una ribozima?",
+      "opciones": [
+        "ARN con actividad catalítica",
+        "Lípido de membrana",
+        "Polisacárido de reserva",
+        "Proteína motora"
+      ],
+      "correcta": "A",
+      "explicacion": "Algunas moléculas de ARN poseen actividad catalítica."
+    },
+    {
+      "id": "maru-p1-160",
+      "subtema": "Enzimas",
+      "pregunta": "Un cambio extremo de pH puede afectar una enzima porque:",
+      "opciones": [
+        "Altera interacciones que mantienen su conformación",
+        "Cambia su secuencia genética",
+        "La convierte en carbohidrato",
+        "Elimina todo el sustrato"
+      ],
+      "correcta": "A",
+      "explicacion": "El pH puede modificar cargas e interacciones y alterar estructura y función."
+    },
+    {
+      "id": "maru-p1-161",
+      "subtema": "Energía y termodinámica",
+      "pregunta": "La primera ley de la termodinámica establece que:",
+      "opciones": [
+        "La energía se conserva",
+        "La entropía siempre disminuye",
+        "Toda reacción libera calor",
+        "El ATP no puede transformarse"
+      ],
+      "correcta": "A",
+      "explicacion": "La primera ley expresa la conservación de la energía."
+    },
+    {
+      "id": "maru-p1-162",
+      "subtema": "Energía y termodinámica",
+      "pregunta": "En un proceso espontáneo, la entropía del universo:",
+      "opciones": [
+        "Aumenta",
+        "Disminuye siempre",
+        "Permanece siempre igual",
+        "Se vuelve cero"
+      ],
+      "correcta": "A",
+      "explicacion": "La segunda ley establece que la entropía total aumenta en procesos espontáneos."
+    },
+    {
+      "id": "maru-p1-163",
+      "subtema": "Energía y termodinámica",
+      "pregunta": "Si ΔG es negativo, la reacción es:",
+      "opciones": [
+        "Espontánea en esas condiciones",
+        "No espontánea",
+        "En equilibrio",
+        "Imposible"
+      ],
+      "correcta": "A",
+      "explicacion": "Un cambio negativo de energía libre indica espontaneidad termodinámica."
+    },
+    {
+      "id": "maru-p1-164",
+      "subtema": "Energía y termodinámica",
+      "pregunta": "Si ΔG es positivo, la reacción:",
+      "opciones": [
+        "Requiere aporte de energía",
+        "Es espontánea",
+        "Está necesariamente en equilibrio",
+        "No implica cambios"
+      ],
+      "correcta": "A",
+      "explicacion": "Un ΔG positivo indica que la reacción no es espontánea en esas condiciones."
+    },
+    {
+      "id": "maru-p1-165",
+      "subtema": "Energía y termodinámica",
+      "pregunta": "Cuando ΔG es cero, el sistema está:",
+      "opciones": [
+        "En equilibrio",
+        "En máxima velocidad",
+        "En combustión",
+        "En desnaturalización"
+      ],
+      "correcta": "A",
+      "explicacion": "ΔG igual a cero caracteriza el equilibrio."
+    },
+    {
+      "id": "maru-p1-166",
+      "subtema": "Energía y termodinámica",
+      "pregunta": "Una reacción con ΔH negativo es:",
+      "opciones": [
+        "Exotérmica",
+        "Endotérmica",
+        "Siempre no espontánea",
+        "Siempre fotosintética"
+      ],
+      "correcta": "A",
+      "explicacion": "Una variación de entalpía negativa indica liberación de calor."
+    },
+    {
+      "id": "maru-p1-167",
+      "subtema": "Energía y termodinámica",
+      "pregunta": "Una reacción endotérmica presenta ΔH:",
+      "opciones": [
+        "Positivo",
+        "Negativo",
+        "Igual a cero siempre",
+        "Indefinido"
+      ],
+      "correcta": "A",
+      "explicacion": "En una reacción endotérmica se absorbe calor y ΔH es positivo."
+    },
+    {
+      "id": "maru-p1-168",
+      "subtema": "Energía y termodinámica",
+      "pregunta": "La energía liberada por catabolismo puede almacenarse transitoriamente en:",
+      "opciones": [
+        "ATP",
+        "Celulosa únicamente",
+        "ADN exclusivamente",
+        "Colágeno"
+      ],
+      "correcta": "A",
+      "explicacion": "El ATP permite transferir energía a procesos celulares."
+    },
+    {
+      "id": "maru-p1-169",
+      "subtema": "Energía y termodinámica",
+      "pregunta": "La contracción muscular y el transporte activo consumen:",
+      "opciones": [
+        "ATP",
+        "CO2",
+        "Oxígeno exclusivamente",
+        "Urea"
+      ],
+      "correcta": "A",
+      "explicacion": "Estos procesos utilizan energía, frecuentemente suministrada por la hidrólisis de ATP."
+    },
+    {
+      "id": "maru-p1-170",
+      "subtema": "Energía y termodinámica",
+      "pregunta": "Una célula mantiene organización interna y no está en equilibrio con su entorno porque:",
+      "opciones": [
+        "Intercambia energía y materia continuamente",
+        "No realiza metabolismo",
+        "Está aislada",
+        "Su entropía interna debe ser cero"
+      ],
+      "correcta": "A",
+      "explicacion": "Los seres vivos son sistemas abiertos que sostienen su organización mediante intercambios."
+    },
+    {
+      "id": "maru-p1-171",
+      "subtema": "Metabolismo, cloroplastos y fotosíntesis",
+      "pregunta": "La fotosíntesis transforma energía lumínica en energía química mediante:",
+      "opciones": [
+        "Reacciones de óxido-reducción",
+        "Hidrólisis de proteínas exclusivamente",
+        "Fisión binaria",
+        "Fermentación láctica"
+      ],
+      "correcta": "A",
+      "explicacion": "La fotosíntesis implica transferencia de electrones y conversión de energía."
+    },
+    {
+      "id": "maru-p1-172",
+      "subtema": "Metabolismo, cloroplastos y fotosíntesis",
+      "pregunta": "Los pigmentos fotosintéticos se encuentran principalmente en:",
+      "opciones": [
+        "Membranas tilacoidales",
+        "Matriz mitocondrial",
+        "Membrana plasmática animal",
+        "Núcleo"
+      ],
+      "correcta": "A",
+      "explicacion": "La clorofila se encuentra en las membranas de los tilacoides."
+    },
+    {
+      "id": "maru-p1-173",
+      "subtema": "Metabolismo, cloroplastos y fotosíntesis",
+      "pregunta": "Los tilacoides apilados forman:",
+      "opciones": [
+        "Grana",
+        "Crestas mitocondriales",
+        "Nucleosomas",
+        "Lisosomas"
+      ],
+      "correcta": "A",
+      "explicacion": "Los apilamientos de tilacoides constituyen los grana."
+    },
+    {
+      "id": "maru-p1-174",
+      "subtema": "Metabolismo, cloroplastos y fotosíntesis",
+      "pregunta": "El ciclo de Calvin ocurre en:",
+      "opciones": [
+        "Estroma del cloroplasto",
+        "Lumen tilacoidal",
+        "Membrana externa mitocondrial",
+        "Citosol exclusivamente"
+      ],
+      "correcta": "A",
+      "explicacion": "La fase bioquímica que fija carbono ocurre en el estroma."
+    },
+    {
+      "id": "maru-p1-175",
+      "subtema": "Metabolismo, cloroplastos y fotosíntesis",
+      "pregunta": "El ATP y NADPH de las reacciones fotoquímicas se utilizan para:",
+      "opciones": [
+        "Sintetizar carbohidratos a partir de CO2",
+        "Degradar proteínas",
+        "Formar peptidoglicano",
+        "Replicar ADN nuclear"
+      ],
+      "correcta": "A",
+      "explicacion": "ATP y NADPH aportan energía y poder reductor al ciclo de Calvin."
+    },
+    {
+      "id": "maru-p1-176",
+      "subtema": "Metabolismo, cloroplastos y fotosíntesis",
+      "pregunta": "¿Qué pigmento absorbe principalmente luz roja y azul y es verde?",
+      "opciones": [
+        "Clorofila",
+        "Antocianina",
+        "Melanina",
+        "Hemoglobina"
+      ],
+      "correcta": "A",
+      "explicacion": "Las clorofilas absorben luz roja y azul y reflejan/transmiten el verde."
+    },
+    {
+      "id": "maru-p1-177",
+      "subtema": "Metabolismo, cloroplastos y fotosíntesis",
+      "pregunta": "Los carotenoides se caracterizan por tonos:",
+      "opciones": [
+        "Amarillos y anaranjados",
+        "Azules exclusivamente",
+        "Negros",
+        "Blancos"
+      ],
+      "correcta": "A",
+      "explicacion": "Los carotenoides son pigmentos amarillos y anaranjados que complementan la captación de luz."
+    },
+    {
+      "id": "maru-p1-178",
+      "subtema": "Metabolismo, cloroplastos y fotosíntesis",
+      "pregunta": "Los cloroplastos poseen:",
+      "opciones": [
+        "ADN circular y ribosomas propios",
+        "Solo ADN nuclear",
+        "Ninguna membrana",
+        "Peptidoglicano"
+      ],
+      "correcta": "A",
+      "explicacion": "Los cloroplastos conservan ADN circular y ribosomas, rasgos relacionados con su origen endosimbiótico."
+    },
+    {
+      "id": "maru-p1-179",
+      "subtema": "Metabolismo, cloroplastos y fotosíntesis",
+      "pregunta": "La teoría endosimbiótica explica el origen de cloroplastos a partir de:",
+      "opciones": [
+        "Bacterias fotosintéticas ancestrales",
+        "Virus desnudos",
+        "Priones",
+        "Proteínas extracelulares"
+      ],
+      "correcta": "A",
+      "explicacion": "Los cloroplastos derivarían de bacterias fotosintéticas incorporadas por una célula ancestral."
+    },
+    {
+      "id": "maru-p1-180",
+      "subtema": "Metabolismo, cloroplastos y fotosíntesis",
+      "pregunta": "El aceptor de electrones en la fotosíntesis oxigénica es principalmente:",
+      "opciones": [
+        "CO2",
+        "O2",
+        "N2",
+        "ATP"
+      ],
+      "correcta": "A",
+      "explicacion": "En la fotosíntesis oxigénica, el CO2 se reduce para formar compuestos orgánicos."
+    },
+    {
+      "id": "maru-p1-181",
+      "subtema": "Mitocondrias y respiración celular",
+      "pregunta": "La membrana interna mitocondrial se caracteriza por:",
+      "opciones": [
+        "Formar crestas y alojar la cadena respiratoria",
+        "Ser muy permeable a iones",
+        "Carecer de proteínas",
+        "Contener celulosa"
+      ],
+      "correcta": "A",
+      "explicacion": "La membrana interna forma crestas y contiene complejos de transporte electrónico y ATP sintasa."
+    },
+    {
+      "id": "maru-p1-182",
+      "subtema": "Mitocondrias y respiración celular",
+      "pregunta": "El ciclo de Krebs ocurre en:",
+      "opciones": [
+        "Matriz mitocondrial",
+        "Citosol",
+        "Espacio extracelular",
+        "Lumen tilacoidal"
+      ],
+      "correcta": "A",
+      "explicacion": "Las enzimas del ciclo de Krebs se encuentran en la matriz mitocondrial."
+    },
+    {
+      "id": "maru-p1-183",
+      "subtema": "Mitocondrias y respiración celular",
+      "pregunta": "La glucólisis ocurre en:",
+      "opciones": [
+        "Citosol",
+        "Matriz mitocondrial",
+        "Membrana interna mitocondrial",
+        "Núcleo"
+      ],
+      "correcta": "A",
+      "explicacion": "La glucólisis se desarrolla en el citosol."
+    },
+    {
+      "id": "maru-p1-184",
+      "subtema": "Mitocondrias y respiración celular",
+      "pregunta": "La cadena respiratoria se localiza en:",
+      "opciones": [
+        "Membrana mitocondrial interna",
+        "Membrana externa",
+        "Matriz extracelular",
+        "Membrana plasmática vegetal"
+      ],
+      "correcta": "A",
+      "explicacion": "Los complejos de transporte electrónico se encuentran en la membrana interna."
+    },
+    {
+      "id": "maru-p1-185",
+      "subtema": "Mitocondrias y respiración celular",
+      "pregunta": "NADH y FADH2 transportan principalmente:",
+      "opciones": [
+        "Electrones de alta energía",
+        "Oxígeno unido a hemo",
+        "Aminoácidos",
+        "Glucosa"
+      ],
+      "correcta": "A",
+      "explicacion": "NADH y FADH2 llevan electrones de alta energía hacia la cadena respiratoria."
+    },
+    {
+      "id": "maru-p1-186",
+      "subtema": "Mitocondrias y respiración celular",
+      "pregunta": "La membrana externa mitocondrial contiene porinas y es:",
+      "opciones": [
+        "Relativamente permeable a moléculas pequeñas",
+        "Impermeable a todo soluto",
+        "Más selectiva que la interna",
+        "Una monocapa"
+      ],
+      "correcta": "A",
+      "explicacion": "La membrana externa contiene porinas y permite el paso de moléculas pequeñas."
+    },
+    {
+      "id": "maru-p1-187",
+      "subtema": "Mitocondrias y respiración celular",
+      "pregunta": "La ATP sintasa se encuentra en:",
+      "opciones": [
+        "Membrana mitocondrial interna",
+        "Membrana externa",
+        "Citosol",
+        "Núcleo"
+      ],
+      "correcta": "A",
+      "explicacion": "La ATP sintasa utiliza el gradiente de protones a través de la membrana interna."
+    },
+    {
+      "id": "maru-p1-188",
+      "subtema": "Mitocondrias y respiración celular",
+      "pregunta": "La matriz mitocondrial contiene:",
+      "opciones": [
+        "ADN mitocondrial, ribosomas y enzimas metabólicas",
+        "Clorofila y tilacoides",
+        "Peptidoglicano",
+        "Cromosomas bacterianos libres"
+      ],
+      "correcta": "A",
+      "explicacion": "La matriz contiene enzimas de oxidación, ADN y ribosomas mitocondriales."
+    },
+    {
+      "id": "maru-p1-189",
+      "subtema": "Mitocondrias y respiración celular",
+      "pregunta": "La fermentación permite:",
+      "opciones": [
+        "Regenerar NAD+ cuando no opera la respiración aeróbica",
+        "Producir más ATP que la respiración aeróbica",
+        "Oxidar completamente el alimento",
+        "Realizar el ciclo de Calvin"
+      ],
+      "correcta": "A",
+      "explicacion": "La fermentación regenera NAD+ para sostener la glucólisis en ausencia de respiración aeróbica."
+    },
+    {
+      "id": "maru-p1-190",
+      "subtema": "Mitocondrias y respiración celular",
+      "pregunta": "Además de producir ATP, las mitocondrias participan en:",
+      "opciones": [
+        "Apoptosis y regulación del calcio",
+        "Síntesis de celulosa",
+        "Formación de pared bacteriana",
+        "Producción de anticuerpos"
+      ],
+      "correcta": "A",
+      "explicacion": "Las mitocondrias también intervienen en homeostasis de calcio y apoptosis."
+    },
+    {
+      "id": "maru-p1-191",
+      "subtema": "Señalización celular",
+      "pregunta": "Una hormona liberada al torrente sanguíneo ejerce señalización:",
+      "opciones": [
+        "Endocrina",
+        "Paracrina",
+        "Autocrina",
+        "Yuxtacrina"
+      ],
+      "correcta": "A",
+      "explicacion": "La señalización endocrina utiliza la sangre para alcanzar células blanco distantes."
+    },
+    {
+      "id": "maru-p1-192",
+      "subtema": "Señalización celular",
+      "pregunta": "Una molécula actúa sobre células vecinas sin viajar por sangre. Es señalización:",
+      "opciones": [
+        "Paracrina",
+        "Endocrina",
+        "Autocrina",
+        "Intracrina"
+      ],
+      "correcta": "A",
+      "explicacion": "La señalización paracrina actúa localmente sobre células cercanas."
+    },
+    {
+      "id": "maru-p1-193",
+      "subtema": "Señalización celular",
+      "pregunta": "Una célula libera una señal que actúa sobre ella misma. Es:",
+      "opciones": [
+        "Autocrina",
+        "Endocrina",
+        "Sináptica",
+        "Yuxtacrina"
+      ],
+      "correcta": "A",
+      "explicacion": "En la señalización autocrina, la célula responde a su propia señal."
+    },
+    {
+      "id": "maru-p1-194",
+      "subtema": "Señalización celular",
+      "pregunta": "Los neurotransmisores liberados en una sinapsis participan en señalización:",
+      "opciones": [
+        "Sináptica",
+        "Endocrina",
+        "Paracrina exclusivamente",
+        "Intracrina"
+      ],
+      "correcta": "A",
+      "explicacion": "La señalización sináptica utiliza neurotransmisores liberados por neuronas."
+    },
+    {
+      "id": "maru-p1-195",
+      "subtema": "Señalización celular",
+      "pregunta": "La comunicación yuxtacrina requiere generalmente:",
+      "opciones": [
+        "Contacto entre proteínas de membranas de células vecinas",
+        "Difusión por sangre",
+        "Liberación de hormonas a distancia",
+        "Entrada de ligando al núcleo"
+      ],
+      "correcta": "A",
+      "explicacion": "La señalización yuxtacrina depende de interacción directa entre células contiguas."
+    },
+    {
+      "id": "maru-p1-196",
+      "subtema": "Señalización celular",
+      "pregunta": "Las gap junctions permiten:",
+      "opciones": [
+        "Comunicación directa entre citoplasmas vecinos",
+        "Secreción de hormonas al plasma",
+        "Degradación de proteínas",
+        "Unión de ADN a histonas"
+      ],
+      "correcta": "A",
+      "explicacion": "Las uniones gap forman canales que conectan citoplasmas y permiten el paso de moléculas pequeñas."
+    },
+    {
+      "id": "maru-p1-197",
+      "subtema": "Señalización celular",
+      "pregunta": "Un ligando hidrofílico generalmente utiliza:",
+      "opciones": [
+        "Receptores de membrana",
+        "Receptores nucleares exclusivamente",
+        "Difusión libre por la bicapa",
+        "Porinas mitocondriales"
+      ],
+      "correcta": "A",
+      "explicacion": "Los ligandos hidrofílicos no atraviesan fácilmente la bicapa y se unen a receptores de membrana."
+    },
+    {
+      "id": "maru-p1-198",
+      "subtema": "Señalización celular",
+      "pregunta": "Una hormona esteroidea puede atravesar la membrana porque es:",
+      "opciones": [
+        "Hidrofóbica",
+        "Altamente polar",
+        "Un polisacárido",
+        "Un ácido nucleico"
+      ],
+      "correcta": "A",
+      "explicacion": "Los ligandos lipofílicos atraviesan la membrana y se unen a receptores intracelulares."
+    },
+    {
+      "id": "maru-p1-199",
+      "subtema": "Señalización celular",
+      "pregunta": "La misma señal química puede generar respuestas distintas en tejidos diferentes porque:",
+      "opciones": [
+        "Las células blanco tienen receptores y vías de señalización diferentes",
+        "Todas las células tienen idéntico metabolismo",
+        "La señal cambia siempre de composición",
+        "Los receptores no participan"
+      ],
+      "correcta": "A",
+      "explicacion": "La respuesta depende del tipo de receptor y de los mecanismos intracelulares de cada célula."
+    },
+    {
+      "id": "maru-p1-200",
+      "subtema": "Señalización celular",
+      "pregunta": "La unión ligando-receptor se caracteriza por ser:",
+      "opciones": [
+        "Selectiva, saturable y reversible",
+        "Irreversible y sin especificidad",
+        "Independiente de la conformación",
+        "Siempre covalente"
+      ],
+      "correcta": "A",
+      "explicacion": "Los receptores presentan reconocimiento selectivo, número limitado y unión reversible."
+    }
+  ]
+}
