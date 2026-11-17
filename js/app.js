@@ -30,6 +30,7 @@ import { abrirDeduccionNatural, TITULO as TITULO_DEDUCCION_NATURAL } from './ded
 import { abrirFormalizacion, BANCO_ENUNCIADOS, BANCO_ARGUMENTOS, FORMULAS_ESTRUCTURA } from './formalizacion.js?v=20261114-2';
 const BANCO_FORMALIZACION = BANCO_ENUNCIADOS.length + BANCO_ARGUMENTOS.length + FORMULAS_ESTRUCTURA.length;
 import { abrirEnvioImagenes } from './envios.js?v=20261114-3';
+import { abrirComposicionQuimica } from './composicion-quimica.js?v=20261116-1';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -1761,8 +1762,10 @@ function vistaMateria(i) {
   const m = indice.materias[i];
   const color = colorMateria(m, i);
   const opcionesCantidad = [[10, '10'], [20, '20'], [0, 'Todas']];
+  const temasEnSubsecciones = new Set((m.subsecciones || []).flatMap((s) => (s.grupos || []).flatMap((g) => g.temaIds || [])));
 
   const filas = m.temas.map((t, n) => {
+    if (temasEnSubsecciones.has(t.id)) return '';
     const mejor = estado.mejores[t.id];
     const nPreg = t.preguntas || 0;
     const nTarj = t.tarjetas || 0;
@@ -1810,6 +1813,11 @@ function vistaMateria(i) {
   }).join('');
 
   const actividades = actividadesDe(m);
+  const subseccionesMarkup = (m.subsecciones || []).map((seccion, indiceSeccion) => {
+    const ids = (seccion.grupos || []).flatMap((g) => g.temaIds || []);
+    const total = m.temas.filter((t) => ids.includes(t.id)).reduce((suma, t) => suma + (t.preguntas || 0), 0);
+    return `<button type="button" class="banner-repaso" data-abrir-subseccion="${indiceSeccion}"><span>${esc(seccion.emoji || '⚗️')} ${esc(seccion.nombre)}<small>${esc(seccion.descripcion || '')} · ${plural(total, 'pregunta multiple choice', 'preguntas multiple choice')}</small></span><b>↗</b></button>`;
+  }).join('');
 
   app.innerHTML = `
     <main class="pantalla">
@@ -1824,6 +1832,7 @@ function vistaMateria(i) {
       ${m.id === 'ipc-2' ? '<button class="banner-repaso" id="btn-ipc-formalizacion"><span>🔣 Formalización<small>' + BANCO_FORMALIZACION + ' ejercicios · enunciados, argumentos y estructura de fórmulas</small></span><b>▶</b></button>' : ''}
       ${actividades.length ? `<button class="banner-repaso" id="btn-grupo-juegos"><span>🎮 Juegos interactivos<small>${plural(actividades.length, 'juego disponible', 'juegos disponibles')} · elegí cuál abrir</small></span><b>▶</b></button>` : ''}
       ${m.temas.some(tieneCrucigrama) ? `<button class="banner-repaso" id="btn-grupo-crucigramas"><span>🔤 Crucigramas<small>${plural(m.temas.filter(tieneCrucigrama).length, 'crucigrama disponible', 'crucigramas disponibles')} · elegí un tema</small></span><b>▶</b></button>` : ''}
+      ${subseccionesMarkup}
       <div class="temas-barra">
         <span>Temas</span>
         <button class="btn enlace" id="btn-todos"></button>
@@ -1838,7 +1847,7 @@ function vistaMateria(i) {
           <span class="banco-materia-flecha" aria-hidden="true">▾</span>
         </summary>
         <div class="banco-materia-temas" id="banco-materia-temas">
-          ${m.temas.map((t,n)=>(t.preguntas>0) ? `<button type="button" class="banco-materia-tema" data-banco-tema="${n}"><span>${esc(t.nombre)}</span><small>${t.preguntas} preguntas</small></button>` : '').join('')}
+          ${m.temas.map((t,n)=>(!temasEnSubsecciones.has(t.id) && t.preguntas>0) ? `<button type="button" class="banco-materia-tema" data-banco-tema="${n}"><span>${esc(t.nombre)}</span><small>${t.preguntas} preguntas</small></button>` : '').join('')}
         </div>
       </details>
     </main>
@@ -1908,6 +1917,24 @@ function vistaMateria(i) {
     actualizar();
   });
   document.getElementById('btn-volver').addEventListener('click', () => { Sonido.clic(); vistaInicio(); });
+  app.querySelectorAll('[data-abrir-subseccion]').forEach((boton) => boton.addEventListener('click', () => {
+    Sonido.clic();
+    const seccion = m.subsecciones?.[Number(boton.dataset.abrirSubseccion)];
+    if (!seccion) return;
+    abrirComposicionQuimica({
+      app, materia: m, subseccion: seccion,
+      volver: () => vistaMateria(i),
+      iniciar: (temas, cantidad, volver) => lanzarTemas(m, temas, cantidad, volver),
+      practicar: (tema, pendientes, volver) => lanzarPracticaTema(m, tema, i, pendientes, volver),
+      resumenDominioTema,
+      abrirBanco: (tema) => {
+        if (window.ParcialitoBanco?.abrir) window.ParcialitoBanco.abrir(tema, m);
+        else avisar('El banco de preguntas todavía no cargó. Probá de nuevo en un segundo.');
+      },
+      cantidadActual: estado.cantidad,
+      guardarCantidad: (cantidad) => { estado.cantidad = cantidad; guardar(); }
+    });
+  }));
   document.getElementById('btn-ipc-p1')?.addEventListener('click', () => { Sonido.clic(); lanzarIPCPrimerParcial(m, i, () => vistaMateria(i)); });
   document.getElementById('btn-ipc-p2')?.addEventListener('click', () => {
     Sonido.clic();
@@ -2415,7 +2442,7 @@ async function vistaBancoIPC(m, materiaIndex, autoresIniciales = m.segundoParcia
 
 // ---------- Armado de partidas ----------
 
-async function lanzarPracticaTema(materia, tema, indiceMateria, soloNoDominadas = false) {
+async function lanzarPracticaTema(materia, tema, indiceMateria, soloNoDominadas = false, volver = () => vistaMateria(indiceMateria)) {
   vistaCargando(soloNoDominadas ? 'Preparando tus preguntas pendientes…' : 'Preparando el tema…');
   try {
     const preguntas = await cargarTema(tema, materia);
@@ -2424,12 +2451,12 @@ async function lanzarPracticaTema(materia, tema, indiceMateria, soloNoDominadas 
       : preguntas;
 
     if (!pool.length) {
-      vistaMateria(indiceMateria);
+      volver();
       avisar(soloNoDominadas ? '¡Ya dominaste todas las preguntas de este tema!' : 'Este tema no tiene preguntas disponibles');
       return;
     }
 
-    const iniciar = () => lanzarPracticaTema(materia, tema, indiceMateria, soloNoDominadas);
+    const iniciar = () => lanzarPracticaTema(materia, tema, indiceMateria, soloNoDominadas, volver);
     empezarJuego(mezclar(pool), {
       titulo: materia.nombre,
       temaId: tema.id,
@@ -2437,14 +2464,14 @@ async function lanzarPracticaTema(materia, tema, indiceMateria, soloNoDominadas 
       materiaNombre: materia.nombre,
       temaNombre: tema.nombre,
       repetir: iniciar,
-      volver: () => vistaMateria(indiceMateria),
+      volver,
     });
   } catch (e) {
     vistaError(e);
   }
 }
 
-async function lanzarTemas(materia, temas, cantidad) {
+async function lanzarTemas(materia, temas, cantidad, volver = () => vistaInicio()) {
   vistaCargando('Preparando preguntas…');
   try {
     let pool = [];
@@ -2457,8 +2484,8 @@ async function lanzarTemas(materia, temas, cantidad) {
       ranking: true,
       materiaNombre: materia.nombre,
       temaNombre: temas.length === 1 ? temas[0].nombre : 'Varios temas',
-      repetir: () => lanzarTemas(materia, temas, cantidad),
-      volver: () => vistaInicio(),
+      repetir: () => lanzarTemas(materia, temas, cantidad, volver),
+      volver,
     });
   } catch (e) {
     vistaError(e);
