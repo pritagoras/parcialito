@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-16T18:00:00.000Z",
+  "generado": "2026-11-17T01:55:00.000Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -144,6 +144,43 @@
           "nombre": "Repaso integral · Primer Parcial (Maru)",
           "archivo": "data/biologia-celular/21-repaso-integral-primer-parcial-maru.json",
           "preguntas": 200
+        },
+        {
+          "id": "biologia-celular/22-tema-bioelementos-y-sales-minerales",
+          "nombre": "Bioelementos y sales minerales · Complemento del texto",
+          "archivo": "data/biologia-celular/22-tema-bioelementos-y-sales-minerales.json",
+          "preguntas": 12
+        }
+      ],
+      "subsecciones": [
+        {
+          "id": "composicion-quimica",
+          "nombre": "Composición química de los seres vivos",
+          "emoji": "⚗️",
+          "descripcion": "Fundamentos químicos, agua y biomoléculas",
+          "grupos": [
+            {
+              "nombre": "Química general, agua y pH",
+              "temaIds": [
+                "biologia-celular/17-tema-quimica-general-y-agua-convertido"
+              ]
+            },
+            {
+              "nombre": "Biomoléculas orgánicas",
+              "temaIds": [
+                "biologia-celular/10-tema-glucidos-convertido",
+                "biologia-celular/11-tema-lipidos-convertido",
+                "biologia-celular/16-tema-proteinas-convertido",
+                "biologia-celular/14-tema-nucleotidos-convertido"
+              ]
+            },
+            {
+              "nombre": "Complemento del texto",
+              "temaIds": [
+                "biologia-celular/22-tema-bioelementos-y-sales-minerales"
+              ]
+            }
+          ]
         }
       ]
     },
