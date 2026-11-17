@@ -1,0 +1,138 @@
+{
+  "materia": "Biología 1",
+  "tema": "Bioelementos y sales minerales (complemento del texto)",
+  "preguntas": [
+    {
+      "pregunta": "¿Cuáles son los cuatro bioelementos principales que representan más del 90% del peso de los seres vivos?",
+      "opciones": [
+        "Carbono, hidrógeno, oxígeno y nitrógeno.",
+        "Calcio, fósforo, sodio y potasio.",
+        "Hierro, zinc, cobre y yodo.",
+        "Carbono, azufre, cloro y magnesio."
+      ],
+      "correcta": "A",
+      "explicacion": "El texto identifica al oxígeno, carbono, hidrógeno y nitrógeno como los cuatro bioelementos principales; en conjunto representan más del 90% del peso de los seres vivos."
+    },
+    {
+      "pregunta": "¿Qué proporción aproximada del peso de los seres vivos está representada por los cuatro bioelementos principales?",
+      "opciones": [
+        "Entre el 4 y el 5%.",
+        "Alrededor del 70%.",
+        "Más del 90%.",
+        "Menos del 1%."
+      ],
+      "correcta": "C",
+      "explicacion": "El texto señala que más del 90% del peso de los seres vivos corresponde a oxígeno, carbono, hidrógeno y nitrógeno."
+    },
+    {
+      "pregunta": "¿Cuáles son las cuatro grandes familias de sustancias orgánicas de mayor importancia en los seres vivos?",
+      "opciones": [
+        "Agua, sales, oxígeno y dióxido de carbono.",
+        "Glúcidos, lípidos, proteínas y ácidos nucleicos.",
+        "Calcio, fósforo, magnesio y sodio.",
+        "Ácidos, bases, sales y agua."
+      ],
+      "correcta": "B",
+      "explicacion": "El texto agrupa las sustancias orgánicas de mayor importancia en cuatro familias: glúcidos o hidratos de carbono, lípidos, proteínas y ácidos nucleicos."
+    },
+    {
+      "pregunta": "¿Cuál es la sustancia inorgánica más abundante en los seres vivos y qué proporción aproximada del peso corporal representa?",
+      "opciones": [
+        "El agua, alrededor del 70%.",
+        "El calcio, alrededor del 70%.",
+        "El oxígeno molecular, entre el 4 y el 5%.",
+        "El sodio, más del 90%."
+      ],
+      "correcta": "A",
+      "explicacion": "El agua es la sustancia inorgánica más abundante y representa alrededor del 70% del peso corporal."
+    },
+    {
+      "pregunta": "Además del agua, ¿qué proporción aproximada del peso corporal representan en conjunto los minerales?",
+      "opciones": [
+        "Más del 90%.",
+        "Alrededor del 70%.",
+        "Entre el 4 y el 5%.",
+        "Exactamente el 1%."
+      ],
+      "correcta": "C",
+      "explicacion": "El texto indica que los minerales, considerados en conjunto, representan entre el 4 y el 5% del peso corporal."
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes listas está compuesta exclusivamente por macrominerales mencionados en el texto?",
+      "opciones": [
+        "Hierro, zinc, cobre, yodo y selenio.",
+        "Calcio, fósforo, magnesio, sodio, cloro, potasio y azufre.",
+        "Carbono, hidrógeno, oxígeno y nitrógeno.",
+        "Yodo, fluoruro, manganeso, cromo y molibdeno."
+      ],
+      "correcta": "B",
+      "explicacion": "El texto enumera como macrominerales al calcio, fósforo, magnesio, sodio, cloro, potasio y azufre."
+    },
+    {
+      "pregunta": "¿Qué característica distingue a los microminerales u oligoelementos?",
+      "opciones": [
+        "Son los elementos que forman más del 90% de la materia viva.",
+        "Son siempre componentes de los glúcidos.",
+        "Se encuentran en una proporción pequeña en el organismo.",
+        "Son sustancias orgánicas formadas por aminoácidos."
+      ],
+      "correcta": "C",
+      "explicacion": "Se denominan microminerales u oligoelementos por encontrarse en una proporción pequeña en el organismo."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes elementos está incluido entre los macrominerales?",
+      "opciones": [
+        "Cobre.",
+        "Yodo.",
+        "Selenio.",
+        "Fósforo."
+      ],
+      "correcta": "D",
+      "explicacion": "El fósforo integra la lista de macrominerales junto con calcio, magnesio, sodio, cloro, potasio y azufre."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes elementos aparece en la lista de microminerales u oligoelementos?",
+      "opciones": [
+        "Hierro.",
+        "Calcio.",
+        "Potasio.",
+        "Azufre."
+      ],
+      "correcta": "A",
+      "explicacion": "El hierro está incluido entre los oligoelementos, junto con zinc, cobre, yodo, fluoruro, manganeso, cromo, cobalto, selenio y molibdeno."
+    },
+    {
+      "pregunta": "¿Cuál de estas asociaciones entre mineral y clasificación es correcta según el texto?",
+      "opciones": [
+        "Calcio: micromineral.",
+        "Zinc: macromineral.",
+        "Magnesio: macromineral.",
+        "Yodo: macromineral."
+      ],
+      "correcta": "C",
+      "explicacion": "El magnesio figura entre los macrominerales; el calcio también. Zinc e yodo están incluidos entre los oligoelementos."
+    },
+    {
+      "pregunta": "¿Qué afirmación relaciona correctamente la composición química de los seres vivos con las sustancias orgánicas?",
+      "opciones": [
+        "Los cuatro bioelementos principales son componentes primordiales de las sustancias orgánicas.",
+        "Los oligoelementos constituyen la mayor parte de las proteínas.",
+        "El agua es una sustancia orgánica formada por carbono e hidrógeno.",
+        "Los minerales son las cuatro familias principales de compuestos orgánicos."
+      ],
+      "correcta": "A",
+      "explicacion": "El texto señala que los cuatro bioelementos principales —oxígeno, carbono, hidrógeno y nitrógeno— son componentes primordiales de las sustancias orgánicas."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes elementos NO pertenece al grupo de los cuatro bioelementos principales?",
+      "opciones": [
+        "Oxígeno.",
+        "Carbono.",
+        "Nitrógeno.",
+        "Calcio."
+      ],
+      "correcta": "D",
+      "explicacion": "Los cuatro bioelementos principales son oxígeno, carbono, hidrógeno y nitrógeno. El calcio aparece en el grupo de los macrominerales."
+    }
+  ]
+}
