@@ -81,13 +81,23 @@
     },
     {
       "pregunta": "¿Qué estructura supramolecular esférica forman libremente los ácidos grasos al dispersarse en un medio acuoso?",
-      "opciones": ["Bicapa lipídica plana", "Micela", "Vaina de mielina", "Lipoproteína LDL"],
+      "opciones": [
+        "Bicapa lipídica plana",
+        "Micela",
+        "Vaina de mielina",
+        "Lipoproteína LDL"
+      ],
       "correcta": "B",
       "explicacion": "Las moléculas cónicas de ácidos grasos en agua agrupan sus colas apolares hacia el centro protegido e interior de la esfera, dejando sus cabezas polares hacia el agua exterior (micela)."
     },
     {
       "pregunta": "¿Qué enlace covalente une al alcohol glicerol con los tres ácidos grasos en la molécula de un triglicérido?",
-      "opciones": ["Enlace peptídico", "Enlace éster", "Puente fosfodiéster", "Enlace N-glicosídico"],
+      "opciones": [
+        "Enlace peptídico",
+        "Enlace éster",
+        "Puente fosfodiéster",
+        "Enlace N-glicosídico"
+      ],
       "correcta": "B",
       "explicacion": "Los triglicéridos son triésteres formados mediante la reacción de esterificación (condensación) entre los tres grupos hidroxilo del glicerol y los carboxilos de tres ácidos grasos."
     },
@@ -214,7 +224,12 @@
     },
     {
       "pregunta": "¿Cuáles son las lipoproteínas plasmáticas conocidas por ser especialmente ricas en colesterol?",
-      "opciones": ["Quilomicrones (QM)", "VLDL (muy baja densidad)", "LDL (baja densidad) y HDL (alta densidad)", "Triglicéridos libres"],
+      "opciones": [
+        "Quilomicrones (QM)",
+        "VLDL (muy baja densidad)",
+        "LDL (baja densidad) y HDL (alta densidad)",
+        "Triglicéridos libres"
+      ],
       "correcta": "C",
       "explicacion": "Dentro de la clasificación por densidad, las fracciones LDL y HDL son las principales transportadoras y depositarias de colesterol en la circulación."
     },
@@ -264,7 +279,12 @@
     },
     {
       "pregunta": "Según la reacción de degradación hidrolítica: $Triglicérido + 2 H_2O \rightarrow 2 Ácidos\\ Grasos + ...$, ¿qué producto intermedio incompleto se obtiene?",
-      "opciones": ["Glicerol libre", "Monoacilglicerol", "Esfingosina", "Colesterol libre"],
+      "opciones": [
+        "Glicerol libre",
+        "Monoacilglicerol",
+        "Esfingosina",
+        "Colesterol libre"
+      ],
       "correcta": "B",
       "explicacion": "Un triglicérido al perder 2 ácidos grasos por la hidrólisis de dos enlaces éster conserva un solo ácido graso unido al glicerol (monoacilglicerol)."
     },
@@ -311,6 +331,146 @@
       ],
       "correcta": "C",
       "explicacion": "En estado libre no esterificado, los ácidos grasos pueden ser captados por las células para someterse a degradación oxidativa (β-oxidación) y producir ATP."
+    },
+    {
+      "id": "visual-lip-01",
+      "pregunta": "¿Cuál de las cadenas de la imagen corresponde a un ácido graso saturado?",
+      "opciones": [
+        "A, porque no presenta dobles enlaces entre carbonos.",
+        "B, porque presenta un doble enlace cis.",
+        "C, porque presenta un doble enlace trans.",
+        "B y C, porque todos los insaturados son saturados."
+      ],
+      "correcta": "A",
+      "imagen": "assets/biologia-1/visuales/lipidos-acidos-grasos.svg",
+      "imagen_alt": "Tres cadenas hidrocarbonadas: A sin dobles enlaces, B con una curvatura cis y C con un doble enlace trans.",
+      "explicacion": "Un ácido graso saturado no posee dobles enlaces C=C en su cadena hidrocarbonada. En el esquema, esa condición corresponde a A."
+    },
+    {
+      "id": "visual-lip-02",
+      "pregunta": "¿Qué característica permite reconocer la cadena B como un ácido graso insaturado cis?",
+      "opciones": [
+        "No contiene ningún enlace covalente.",
+        "El doble enlace genera una curvatura o codo en la cadena.",
+        "Tiene tres grupos carboxilo.",
+        "Presenta una cadena completamente lineal sin dobles enlaces."
+      ],
+      "correcta": "B",
+      "imagen": "assets/biologia-1/visuales/lipidos-acidos-grasos.svg",
+      "imagen_alt": "La cadena B presenta una curvatura asociada a un doble enlace cis.",
+      "explicacion": "La configuración cis introduce una curvatura en la cadena hidrocarbonada. Esa geometría dificulta el empaquetamiento estrecho de las moléculas."
+    },
+    {
+      "id": "visual-lip-03",
+      "pregunta": "¿Qué configuración geométrica del doble enlace se esquematiza en C?",
+      "opciones": [
+        "Cis, porque los sustituyentes quedan del mismo lado del doble enlace.",
+        "Saturada, porque no hay dobles enlaces.",
+        "Trans, porque los sustituyentes quedan en lados opuestos del doble enlace.",
+        "Aromática, porque forma un anillo."
+      ],
+      "correcta": "C",
+      "imagen": "assets/biologia-1/visuales/lipidos-acidos-grasos.svg",
+      "imagen_alt": "La cadena C muestra un doble enlace con geometría trans y una forma más extendida que la cadena cis.",
+      "explicacion": "En la configuración trans, los sustituyentes principales se ubican en lados opuestos del doble enlace, por lo que la cadena suele conservar una forma más extendida que en cis."
+    },
+    {
+      "id": "visual-lip-04",
+      "pregunta": "¿Qué tipo de lípido representa la estructura de la imagen?",
+      "opciones": [
+        "Un fosfolípido, con dos cadenas y un grupo fosfato.",
+        "Un triacilglicérido, con glicerol esterificado con tres ácidos grasos.",
+        "Un esteroide, formado por cuatro anillos fusionados.",
+        "Un ácido graso libre, con un solo grupo carboxilo."
+      ],
+      "correcta": "B",
+      "imagen": "assets/biologia-1/visuales/lipidos-triacilglicerol.svg",
+      "imagen_alt": "Esquema de un glicerol unido a tres cadenas de ácidos grasos mediante enlaces éster.",
+      "explicacion": "El triacilglicérido contiene una molécula de glicerol esterificada con tres ácidos grasos. La estructura muestra tres uniones éster y tres cadenas hidrocarbonadas."
+    },
+    {
+      "id": "visual-lip-05",
+      "pregunta": "¿Qué tipo de enlace se forma entre los grupos hidroxilo del glicerol y los grupos carboxilo de los ácidos grasos en la estructura mostrada?",
+      "opciones": [
+        "Peptídico.",
+        "Fosfodiéster.",
+        "Glucosídico.",
+        "Éster."
+      ],
+      "correcta": "D",
+      "imagen": "assets/biologia-1/visuales/lipidos-triacilglicerol.svg",
+      "imagen_alt": "Esquema de triacilglicérido donde se señalan las tres uniones éster entre el glicerol y las cadenas de ácidos grasos.",
+      "explicacion": "La reacción entre un grupo hidroxilo del glicerol y un grupo carboxilo de un ácido graso genera un enlace éster y libera agua."
+    },
+    {
+      "id": "visual-lip-06",
+      "pregunta": "¿Cuál es la organización estructural característica de la molécula representada?",
+      "opciones": [
+        "Una cabeza polar y dos colas hidrocarbonadas apolares.",
+        "Tres colas apolares unidas a un anillo esteroide.",
+        "Una cadena de aminoácidos y un grupo fosfato.",
+        "Una cabeza apolar y dos colas hidrofílicas."
+      ],
+      "correcta": "A",
+      "imagen": "assets/biologia-1/visuales/lipidos-fosfolipido.svg",
+      "imagen_alt": "Esquema de fosfoglicérido con cabeza polar con fosfato y dos colas de ácidos grasos.",
+      "explicacion": "Los fosfoglicéridos son anfipáticos: poseen una región polar que incluye el fosfato y dos cadenas de ácidos grasos hidrofóbicas."
+    },
+    {
+      "id": "visual-lip-07",
+      "pregunta": "En la molécula de la imagen, ¿qué región interactúa favorablemente con el agua?",
+      "opciones": [
+        "Las dos colas hidrocarbonadas.",
+        "La cabeza polar que contiene el grupo fosfato.",
+        "Toda la molécula por igual, porque es completamente apolar.",
+        "Ninguna región, porque no posee grupos polares."
+      ],
+      "correcta": "B",
+      "imagen": "assets/biologia-1/visuales/lipidos-fosfolipido.svg",
+      "imagen_alt": "Fosfolípido esquemático con cabeza de fosfato y dos colas hidrocarbonadas.",
+      "explicacion": "La cabeza con fosfato es polar e hidrofílica, por lo que interactúa con el agua. Las colas hidrocarbonadas son apolares e hidrofóbicas."
+    },
+    {
+      "id": "visual-lip-08",
+      "pregunta": "¿Qué familia de lípidos se reconoce por el núcleo de cuatro anillos fusionados de la imagen?",
+      "opciones": [
+        "Triacilglicéridos.",
+        "Fosfoglicéridos.",
+        "Esteroides.",
+        "Ceras."
+      ],
+      "correcta": "C",
+      "imagen": "assets/biologia-1/visuales/lipidos-colesterol.svg",
+      "imagen_alt": "Núcleo esteroide de cuatro anillos fusionados con un grupo hidroxilo y una cadena hidrocarbonada lateral.",
+      "explicacion": "Los esteroides presentan un núcleo característico de cuatro anillos fusionados. El colesterol es un ejemplo y posee, además, un grupo hidroxilo y una cadena lateral."
+    },
+    {
+      "id": "visual-lip-09",
+      "pregunta": "¿Qué rasgo de la molécula de colesterol de la imagen contribuye a su carácter anfipático?",
+      "opciones": [
+        "La presencia de un grupo hidroxilo polar y una gran región hidrocarbonada apolar.",
+        "La presencia de tres grupos fosfato cargados.",
+        "La unión de tres ácidos grasos al glicerol.",
+        "La presencia de numerosos grupos amino ionizables."
+      ],
+      "correcta": "A",
+      "imagen": "assets/biologia-1/visuales/lipidos-colesterol.svg",
+      "imagen_alt": "Molécula esquemática de colesterol con grupo hidroxilo polar y anillos/cadena hidrocarbonados.",
+      "explicacion": "El colesterol tiene un grupo hidroxilo polar, mientras que la mayor parte de la molécula es hidrocarbonada y apolar. Por eso presenta un carácter anfipático débil."
+    },
+    {
+      "id": "visual-lip-10",
+      "pregunta": "¿Qué consecuencia suele tener un doble enlace cis sobre el empaquetamiento de los ácidos grasos?",
+      "opciones": [
+        "Permite que las cadenas se empaqueten más estrechamente y eleva siempre el punto de fusión.",
+        "Elimina la región hidrofóbica de la molécula.",
+        "Produce una curvatura que dificulta el empaquetamiento y tiende a disminuir el punto de fusión.",
+        "Convierte automáticamente al ácido graso en un fosfolípido."
+      ],
+      "correcta": "C",
+      "imagen": "assets/biologia-1/visuales/lipidos-acidos-grasos.svg",
+      "imagen_alt": "Comparación de cadena saturada recta, cadena cis curvada y cadena trans más extendida.",
+      "explicacion": "El doble enlace cis introduce un codo en la cadena. Esto reduce las interacciones de empaquetamiento entre cadenas y suele disminuir el punto de fusión."
     }
   ]
 }
