@@ -14,7 +14,7 @@
       ],
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/glucidos-fischer.svg",
-      "imagen_alt": "Dos proyecciones de Fischer, identificadas como A y B.",
+      "imagen_alt": "Dos proyecciones de Fischer con el grupo carbonilo ubicado en posiciones diferentes.",
       "explicacion": "La estructura B presenta un grupo carbonilo en C2, por lo que es una cetosa. Como tiene seis carbonos, es una cetohexosa: D-fructosa.",
       "subtema": "Glúcidos"
     },
@@ -29,7 +29,7 @@
       ],
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/glucidos-fischer.svg",
-      "imagen_alt": "Dos proyecciones de Fischer con el grupo carbonilo en posiciones distintas.",
+      "imagen_alt": "Dos proyecciones de Fischer con el grupo carbonilo ubicado en posiciones diferentes.",
       "explicacion": "En A, el carbonilo está en el extremo de la cadena como grupo aldehído (C1). En B, el carbonilo se encuentra en el C2, característica de una cetosa.",
       "subtema": "Glúcidos"
     },
@@ -44,7 +44,7 @@
       ],
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/glucidos-disacaridos.svg",
-      "imagen_alt": "Tres disacáridos esquemáticos, identificados A, B y C, con diferentes geometrías de unión.",
+      "imagen_alt": "Tres pares de anillos de monosacáridos conectados por un enlace entre unidades.",
       "explicacion": "La lactosa está formada por galactosa y glucosa unidas mediante un enlace β(1→4). Esa composición corresponde al esquema B.",
       "subtema": "Glúcidos"
     },
@@ -59,7 +59,7 @@
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/glucidos-disacaridos.svg",
-      "imagen_alt": "Tres disacáridos esquemáticos; el esquema A muestra dos anillos de seis miembros conectados.",
+      "imagen_alt": "Tres pares de anillos de monosacáridos conectados por un enlace entre unidades.",
       "explicacion": "La maltosa está formada por dos moléculas de glucosa unidas por un enlace glucosídico α(1→4), como se muestra en A.",
       "subtema": "Glúcidos"
     },
@@ -74,7 +74,7 @@
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/glucidos-disacaridos.svg",
-      "imagen_alt": "El esquema C muestra un anillo de seis miembros unido a otro de cinco miembros.",
+      "imagen_alt": "Tres pares de anillos de monosacáridos conectados por un enlace entre unidades.",
       "explicacion": "La sacarosa está formada por glucosa y fructosa, unidas a través de sus carbonos anoméricos mediante un enlace α(1↔2)β.",
       "subtema": "Glúcidos"
     },
@@ -89,7 +89,7 @@
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/glucidos-anomeros.svg",
-      "imagen_alt": "Dos proyecciones de Haworth con el oxígeno como vértice del anillo y distinta orientación del OH anomérico.",
+      "imagen_alt": "Dos anillos de seis miembros con distinta orientación de un sustituyente del carbono anomérico.",
       "explicacion": "En la D-glucosa, el anómero α tiene el OH del carbono anomérico en posición opuesta al grupo CH₂OH. En la representación de la imagen, esa orientación corresponde a A.",
       "subtema": "Glúcidos"
     },
@@ -104,7 +104,7 @@
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/glucidos-polisacaridos.svg",
-      "imagen_alt": "Cuatro arquitecturas de cadenas polisacáridas, identificadas A, B, C y D.",
+      "imagen_alt": "Cuatro arreglos de unidades repetidas con distintos patrones de conexión y ramificación.",
       "explicacion": "La amilosa es una fracción del almidón formada por cadenas no ramificadas de α-D-glucosa, principalmente mediante enlaces α(1→4).",
       "subtema": "Glúcidos"
     },
@@ -119,7 +119,7 @@
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/glucidos-polisacaridos.svg",
-      "imagen_alt": "Cuatro arquitecturas de polisacáridos con diferente grado de ramificación.",
+      "imagen_alt": "Cuatro arreglos de unidades repetidas con distintos patrones de conexión y ramificación.",
       "explicacion": "La amilopectina posee cadenas principales con enlaces α(1→4) y puntos de ramificación mediante enlaces α(1→6).",
       "subtema": "Glúcidos"
     },
@@ -134,7 +134,7 @@
       ],
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/glucidos-polisacaridos.svg",
-      "imagen_alt": "Cuatro esquemas de cadenas, desde estructuras lineales hasta otras con ramificaciones.",
+      "imagen_alt": "Cuatro arreglos de unidades repetidas con distintos patrones de conexión y ramificación.",
       "explicacion": "El glucógeno es un polisacárido de reserva animal con cadenas α(1→4) y numerosas ramificaciones α(1→6), más frecuentes que en la amilopectina.",
       "subtema": "Glúcidos"
     },
@@ -149,7 +149,7 @@
       ],
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/glucidos-polisacaridos.svg",
-      "imagen_alt": "Cuatro arquitecturas de polisacáridos con distinta disposición de sus unidades.",
+      "imagen_alt": "Cuatro arreglos de unidades repetidas con distintos patrones de conexión y ramificación.",
       "explicacion": "La celulosa está formada por unidades de β-D-glucosa unidas por enlaces β(1→4), generando cadenas lineales resistentes.",
       "subtema": "Glúcidos"
     },
@@ -164,7 +164,7 @@
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/lipidos-acidos-grasos.svg",
-      "imagen_alt": "Tres cadenas hidrocarbonadas con diferente geometría y grado de insaturación.",
+      "imagen_alt": "Tres cadenas hidrocarbonadas con distinta geometría alrededor de los enlaces entre carbonos.",
       "explicacion": "Un ácido graso saturado no posee dobles enlaces C=C en su cadena hidrocarbonada. En el esquema, esa condición corresponde a A.",
       "subtema": "Lípidos"
     },
@@ -179,7 +179,7 @@
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/lipidos-acidos-grasos.svg",
-      "imagen_alt": "Comparación de tres cadenas de ácidos grasos con distinta geometría.",
+      "imagen_alt": "Tres cadenas hidrocarbonadas con distinta geometría alrededor de los enlaces entre carbonos.",
       "explicacion": "La configuración cis introduce una curvatura en la cadena hidrocarbonada. Esa geometría dificulta el empaquetamiento estrecho de las moléculas.",
       "subtema": "Lípidos"
     },
@@ -194,7 +194,7 @@
       ],
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/lipidos-acidos-grasos.svg",
-      "imagen_alt": "Dos cadenas insaturadas con geometrías distintas, junto a una cadena saturada.",
+      "imagen_alt": "Tres cadenas hidrocarbonadas con distinta geometría alrededor de los enlaces entre carbonos.",
       "explicacion": "En la configuración trans, los sustituyentes principales se ubican en lados opuestos del doble enlace, por lo que la cadena suele conservar una forma más extendida que en cis.",
       "subtema": "Lípidos"
     },
@@ -209,7 +209,7 @@
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/lipidos-triacilglicerol.svg",
-      "imagen_alt": "Esquema de un esqueleto de glicerol unido a tres cadenas hidrocarbonadas.",
+      "imagen_alt": "Un esqueleto de tres carbonos conectado a tres cadenas acilo.",
       "explicacion": "El triacilglicérido contiene una molécula de glicerol esterificada con tres ácidos grasos. La estructura muestra tres uniones éster y tres cadenas hidrocarbonadas.",
       "subtema": "Lípidos"
     },
@@ -224,7 +224,7 @@
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/lipidos-triacilglicerol.svg",
-      "imagen_alt": "Esquema de un glicerol unido a tres cadenas de ácidos grasos mediante grupos O—C(=O).",
+      "imagen_alt": "Un esqueleto de tres carbonos conectado a tres cadenas acilo.",
       "explicacion": "La reacción entre un grupo hidroxilo del glicerol y un grupo carboxilo de un ácido graso genera un enlace éster y libera agua.",
       "subtema": "Lípidos"
     },
@@ -239,7 +239,7 @@
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/lipidos-fosfolipido.svg",
-      "imagen_alt": "Esquema de un lípido con una región fosfatada y dos cadenas hidrocarbonadas.",
+      "imagen_alt": "Una molécula con una región terminal y dos cadenas hidrocarbonadas.",
       "explicacion": "Los fosfoglicéridos son anfipáticos: poseen una región polar que incluye el fosfato y dos cadenas de ácidos grasos hidrofóbicas.",
       "subtema": "Lípidos"
     },
@@ -254,7 +254,7 @@
       ],
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/lipidos-fosfolipido.svg",
-      "imagen_alt": "Esquema de un fosfoglicérido con cabeza polar y dos colas no polares.",
+      "imagen_alt": "Una molécula con una región terminal y dos cadenas hidrocarbonadas.",
       "explicacion": "La cabeza con fosfato es polar e hidrofílica, por lo que interactúa con el agua. Las colas hidrocarbonadas son apolares e hidrofóbicas.",
       "subtema": "Lípidos"
     },
@@ -269,7 +269,7 @@
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/lipidos-colesterol.svg",
-      "imagen_alt": "Esqueleto molecular con cuatro anillos fusionados y una cadena lateral.",
+      "imagen_alt": "Estructura con varios anillos fusionados, un grupo hidroxilo y una cadena lateral.",
       "explicacion": "Los esteroides presentan un núcleo característico de cuatro anillos fusionados. El colesterol es un ejemplo y posee, además, un grupo hidroxilo y una cadena lateral.",
       "subtema": "Lípidos"
     },
@@ -284,7 +284,7 @@
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/lipidos-colesterol.svg",
-      "imagen_alt": "Esquema de una molécula esteroidea con un grupo OH y una región hidrocarbonada.",
+      "imagen_alt": "Estructura con varios anillos fusionados, un grupo hidroxilo y una cadena lateral.",
       "explicacion": "El colesterol tiene un grupo hidroxilo polar, mientras que la mayor parte de la molécula es hidrocarbonada y apolar. Por eso presenta un carácter anfipático débil.",
       "subtema": "Lípidos"
     },
@@ -314,7 +314,7 @@
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/nucleotidos-pentosas.svg",
-      "imagen_alt": "Dos pentosas cíclicas con carbonos numerados y sustituyentes diferentes en C2′.",
+      "imagen_alt": "Dos anillos de cinco miembros con sustituyentes diferentes en el carbono 2′.",
       "explicacion": "La desoxirribosa se diferencia de la ribosa porque en el carbono 2′ tiene un átomo de hidrógeno en lugar del grupo hidroxilo. Esa es la estructura B.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
@@ -344,7 +344,7 @@
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/nucleotidos-fosfodiester.svg",
-      "imagen_alt": "Dos unidades de azúcar conectadas por un fosfato y con posiciones numeradas.",
+      "imagen_alt": "Dos pentosas conectadas mediante un grupo fosfato.",
       "explicacion": "La diferencia está en el C2′: la ribosa posee –OH y la desoxirribosa posee H. El carbono 1′ se utiliza para unir la base nitrogenada.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
@@ -359,7 +359,7 @@
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/nucleotidos-nucleosido.svg",
-      "imagen_alt": "Dos esquemas de componentes de nucleótidos, uno sin fosfato y otro con un grupo P.",
+      "imagen_alt": "Dos esquemas con una base nitrogenada y una pentosa; uno muestra además un grupo fosfato.",
       "explicacion": "Un nucleósido está formado por una base nitrogenada y una pentosa. La adición de uno o más grupos fosfato da lugar a un nucleótido.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
@@ -389,7 +389,7 @@
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/nucleotidos-bases.svg",
-      "imagen_alt": "Dos esqueletos de bases nitrogenadas, uno con dos anillos fusionados y otro con un anillo.",
+      "imagen_alt": "Dos estructuras anulares nitrogenadas con distinto número de anillos.",
       "explicacion": "Las purinas poseen dos anillos fusionados (uno de seis y otro de cinco miembros). Las pirimidinas poseen un solo anillo de seis miembros.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
@@ -419,7 +419,7 @@
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/nucleotidos-fosfodiester.svg",
-      "imagen_alt": "Dos azúcares unidos mediante un fosfato en una cadena de ácido nucleico.",
+      "imagen_alt": "Dos pentosas conectadas mediante un grupo fosfato.",
       "explicacion": "El enlace fosfodiéster une el grupo 3′-OH de una pentosa con el fosfato asociado al carbono 5′ de la siguiente, formando el esqueleto azúcar-fosfato.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
@@ -434,7 +434,7 @@
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/nucleotidos-pentosas.svg",
-      "imagen_alt": "Dos pentosas con distintos sustituyentes en el carbono 2′.",
+      "imagen_alt": "Dos anillos de cinco miembros con sustituyentes diferentes en el carbono 2′.",
       "explicacion": "El ADN contiene desoxirribosa, mientras que el ARN contiene ribosa. La diferencia está en el sustituyente del carbono 2′.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
@@ -449,7 +449,7 @@
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/proteinas-aminoacido.svg",
-      "imagen_alt": "Estructura general de un aminoácido con un carbono central y cuatro sustituyentes.",
+      "imagen_alt": "Un carbono central unido a cuatro sustituyentes, incluido un grupo lateral variable.",
       "explicacion": "El grupo R es la cadena lateral variable de cada aminoácido y determina buena parte de sus propiedades químicas. El carbono alfa también está unido a un grupo amino, un grupo carboxilo y un hidrógeno.",
       "subtema": "Proteínas"
     },
@@ -464,7 +464,7 @@
       ],
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/proteinas-aminoacido.svg",
-      "imagen_alt": "Esquema de un carbono central unido a cuatro grupos funcionales.",
+      "imagen_alt": "Un carbono central unido a cuatro sustituyentes, incluido un grupo lateral variable.",
       "explicacion": "Todo aminoácido proteico presenta un carbono alfa unido a un grupo amino, un grupo carboxilo, un hidrógeno y una cadena lateral R, que es variable.",
       "subtema": "Proteínas"
     },
@@ -479,7 +479,7 @@
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/proteinas-peptidico.svg",
-      "imagen_alt": "Dos residuos de aminoácidos conectados por una unión entre C y N.",
+      "imagen_alt": "Dos residuos de aminoácidos unidos por el esqueleto carbonilo–nitrógeno.",
       "explicacion": "El enlace peptídico es una unión covalente entre el carbono del grupo carboxilo de un aminoácido y el nitrógeno del grupo amino del siguiente. Se forma por una reacción de condensación.",
       "subtema": "Proteínas"
     },
@@ -494,7 +494,7 @@
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/proteinas-estructuras.svg",
-      "imagen_alt": "Cuatro representaciones esquemáticas de cadenas y plegamientos proteicos.",
+      "imagen_alt": "Cuatro esquemas de cadenas polipeptídicas con diferentes grados de plegamiento y asociación.",
       "explicacion": "La estructura primaria es el orden o secuencia de aminoácidos de una cadena polipeptídica, unidos mediante enlaces peptídicos.",
       "subtema": "Proteínas"
     },
@@ -509,7 +509,7 @@
       ],
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/proteinas-estructuras.svg",
-      "imagen_alt": "Cuatro representaciones esquemáticas, una de ellas con patrones helicoidales y plegados.",
+      "imagen_alt": "Cuatro esquemas de cadenas polipeptídicas con diferentes grados de plegamiento y asociación.",
       "explicacion": "La estructura secundaria corresponde a plegamientos locales regulares de la cadena, como la hélice α y la lámina β, estabilizados principalmente por puentes de hidrógeno del esqueleto peptídico.",
       "subtema": "Proteínas"
     },
@@ -524,7 +524,7 @@
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/proteinas-estructuras.svg",
-      "imagen_alt": "Cuatro representaciones estructurales; D reúne varias unidades globulares.",
+      "imagen_alt": "Cuatro esquemas de cadenas polipeptídicas con diferentes grados de plegamiento y asociación.",
       "explicacion": "La estructura cuaternaria aparece cuando dos o más cadenas polipeptídicas o subunidades se asocian para formar una proteína funcional.",
       "subtema": "Proteínas"
     },
@@ -539,7 +539,7 @@
       ],
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/quimica-agua-dipolo.svg",
-      "imagen_alt": "Molécula angular con un oxígeno y dos hidrógenos con cargas parciales.",
+      "imagen_alt": "Una molécula angular con distribución desigual de cargas parciales.",
       "explicacion": "El oxígeno es más electronegativo que el hidrógeno y atrae con mayor intensidad los electrones de los enlaces O–H. Como la molécula es angular, los dipolos de enlace no se cancelan y el agua es polar.",
       "subtema": "Química y agua"
     },
@@ -554,7 +554,7 @@
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/quimica-puente-h.svg",
-      "imagen_alt": "Dos moléculas de agua y una línea punteada entre átomos de moléculas distintas.",
+      "imagen_alt": "Dos moléculas de agua conectadas por una interacción intermolecular punteada.",
       "explicacion": "El puente de hidrógeno es una interacción intermolecular: el H enlazado covalentemente al oxígeno de una molécula es atraído por el oxígeno parcialmente negativo de otra molécula.",
       "subtema": "Química y agua"
     },
@@ -570,7 +570,7 @@
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/enzimas-michaelis-alosterica.svg",
-      "imagen_alt": "Gráfico de velocidad inicial frente a sustrato con dos curvas de formas distintas.",
+      "imagen_alt": "Dos curvas de velocidad inicial en función de la concentración de sustrato.",
       "explicacion": "La curva sigmoidea es característica de muchas enzimas alostéricas. Se relaciona con la cooperatividad: la unión de sustrato a una subunidad modifica la afinidad de otras subunidades."
     },
     {
@@ -585,7 +585,7 @@
       ],
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/enzimas-michaelis-alosterica.svg",
-      "imagen_alt": "Comparación de una curva hiperbólica y otra sigmoidea en función de [S].",
+      "imagen_alt": "Dos curvas de velocidad inicial en función de la concentración de sustrato.",
       "explicacion": "La sigmoide refleja cooperatividad positiva: la unión de una molécula de sustrato puede favorecer la transición hacia una conformación con mayor afinidad y facilitar uniones sucesivas."
     },
     {
@@ -600,7 +600,7 @@
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/enzimas-efectores-alostericos.svg",
-      "imagen_alt": "Tres curvas sigmoideas desplazadas a distintas concentraciones de sustrato.",
+      "imagen_alt": "Tres curvas sigmoideas con distintos desplazamientos horizontales.",
       "explicacion": "Un efector alostérico positivo estabiliza la conformación R (relajada, más activa) y desplaza la curva hacia la izquierda. Disminuye la concentración de sustrato necesaria para alcanzar una velocidad dada."
     },
     {
@@ -615,7 +615,7 @@
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/enzimas-efectores-alostericos.svg",
-      "imagen_alt": "Tres curvas sigmoideas y una leyenda lateral con los signos de sus condiciones.",
+      "imagen_alt": "Tres curvas sigmoideas con distintos desplazamientos horizontales.",
       "explicacion": "Un efector alostérico negativo estabiliza la conformación T (tensa, menos activa), de modo que se necesita una concentración mayor de sustrato para alcanzar la misma velocidad."
     },
     {
@@ -630,7 +630,7 @@
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/enzimas-inhibicion-cinetica.svg",
-      "imagen_alt": "Tres curvas de velocidad frente a sustrato con valores de Km y Vmáx en una leyenda.",
+      "imagen_alt": "Tres curvas de velocidad en función de sustrato con diferencias de posición y meseta.",
       "explicacion": "En la inhibición competitiva, el inhibidor compite con el sustrato por el sitio activo. Aumenta el Km aparente, pero si se agrega suficiente sustrato puede alcanzarse la misma Vmáx."
     },
     {
@@ -645,7 +645,7 @@
       ],
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/enzimas-inhibicion-cinetica.svg",
-      "imagen_alt": "Tres curvas de cinética enzimática con diferentes valores de Km y Vmáx.",
+      "imagen_alt": "Tres curvas de velocidad en función de sustrato con diferencias de posición y meseta.",
       "explicacion": "En el modelo de inhibición no competitiva pura, el inhibidor reduce la fracción de enzima catalíticamente funcional. Disminuye Vmáx y Km permanece sin cambios."
     },
     {
@@ -660,7 +660,7 @@
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/enzimas-energia-activacion.svg",
-      "imagen_alt": "Dos perfiles de energía de reacción con alturas de barrera diferentes y niveles inicial y final compartidos.",
+      "imagen_alt": "Dos perfiles energéticos para una reacción con niveles inicial y final comunes.",
       "explicacion": "La enzima ofrece una vía alternativa con menor energía de activación. No modifica la energía libre de reactivos y productos ni el ΔG de la reacción."
     },
     {
@@ -675,7 +675,7 @@
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/enzimas-velocidad-concentracion-enzima.svg",
-      "imagen_alt": "Gráfico ascendente de velocidad inicial en función de la concentración enzimática.",
+      "imagen_alt": "Una relación lineal entre velocidad inicial y concentración de enzima.",
       "explicacion": "Con sustrato en exceso y bajo las mismas condiciones, aumentar la concentración de enzima aumenta la cantidad de sitios activos disponibles y, por tanto, la velocidad inicial."
     },
     {
@@ -690,7 +690,7 @@
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/enzimas-actividad-ph.svg",
-      "imagen_alt": "Curva de actividad enzimática en función del pH, con un máximo central.",
+      "imagen_alt": "Una curva de actividad enzimática en función del pH.",
       "explicacion": "Cada enzima presenta un pH óptimo en el que su actividad es máxima. Alejarse de ese valor puede modificar la ionización de grupos del sitio activo y alterar la conformación o la unión al sustrato."
     },
     {
@@ -705,7 +705,7 @@
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/enzimas-temperatura.svg",
-      "imagen_alt": "Curva de actividad enzimática frente a temperatura con un máximo y un descenso posterior.",
+      "imagen_alt": "Una curva de actividad enzimática en función de la temperatura.",
       "explicacion": "La velocidad aumenta al principio por mayor energía cinética, pero temperaturas excesivas alteran las interacciones que mantienen la estructura tridimensional y pueden desnaturalizar la enzima."
     },
     {
@@ -720,7 +720,7 @@
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/enzimas-feedback.svg",
-      "imagen_alt": "Vía metabólica de tres etapas con una señal de retorno desde el producto final hacia E1.",
+      "imagen_alt": "Una vía de reacciones desde un sustrato hasta un producto final, con retorno regulador hacia una etapa inicial.",
       "explicacion": "En la retroinhibición o feedback negativo, la acumulación del producto final inhibe una enzima de una etapa inicial de la vía. Así se evita producir más producto del necesario."
     },
     {
@@ -735,7 +735,7 @@
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/enzimas-sitio-alosterico.svg",
-      "imagen_alt": "Enzima esquemática con dos cavidades marcadas de manera independiente.",
+      "imagen_alt": "Una enzima con dos cavidades a las que se aproximan moléculas diferentes.",
       "explicacion": "El sitio activo reconoce al sustrato y participa en la catálisis. El sitio alostérico es una región reguladora distinta que une efectores y modifica la conformación y actividad enzimática."
     }
   ]
