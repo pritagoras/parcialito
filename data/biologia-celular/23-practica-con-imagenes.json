@@ -180,7 +180,7 @@
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/lipidos-acidos-grasos.svg",
       "imagen_alt": "Tres cadenas hidrocarbonadas con distinta geometría alrededor de los enlaces entre carbonos.",
-      "explicacion": "La configuración cis introduce una curvatura en la cadena hidrocarbonada. Esa geometría dificulta el empaquetamiento estrecho de las moléculas.",
+      "explicacion": "La cadena B presenta un doble enlace cis que introduce una curvatura. Esa curvatura dificulta el empaquetamiento entre cadenas y suele reducir el punto de fusión.",
       "subtema": "Lípidos"
     },
     {
@@ -195,7 +195,7 @@
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/lipidos-acidos-grasos.svg",
       "imagen_alt": "Tres cadenas hidrocarbonadas con distinta geometría alrededor de los enlaces entre carbonos.",
-      "explicacion": "En la configuración trans, los sustituyentes principales se ubican en lados opuestos del doble enlace, por lo que la cadena suele conservar una forma más extendida que en cis.",
+      "explicacion": "En B, los sustituyentes del doble enlace se ubican del mismo lado (cis), lo que genera una curvatura. En C, se ubican en lados opuestos (trans), por lo que la cadena queda más extendida.",
       "subtema": "Lípidos"
     },
     {
@@ -255,7 +255,7 @@
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/lipidos-fosfolipido.svg",
       "imagen_alt": "Una molécula con una región terminal y dos cadenas hidrocarbonadas.",
-      "explicacion": "La cabeza con fosfato es polar e hidrofílica, por lo que interactúa con el agua. Las colas hidrocarbonadas son apolares e hidrofóbicas.",
+      "explicacion": "En una bicapa, las cabezas polares quedan orientadas hacia los medios acuosos intra y extracelular; las colas apolares se enfrentan entre sí en el interior de la membrana.",
       "subtema": "Lípidos"
     },
     {
@@ -300,7 +300,7 @@
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/lipidos-omega.svg",
       "imagen_alt": "Cadena de ácido graso numerada desde el extremo metilo, con un doble enlace cerca de ese extremo.",
-      "explicacion": "El doble enlace cis introduce un codo en la cadena. Esto reduce las interacciones de empaquetamiento entre cadenas y suele disminuir el punto de fusión.",
+      "explicacion": "La serie omega se determina por la posición del primer doble enlace contando desde el extremo metilo (CH₃). En la figura está entre los carbonos 3 y 4, por lo que corresponde a omega-3.",
       "subtema": "Lípidos"
     },
     {
@@ -320,7 +320,7 @@
     },
     {
       "id": "practica-imagen-visual-nuc-02",
-      "pregunta": "¿Cuál de las pentosas representadas integra normalmente el ARN?",
+      "pregunta": "¿En qué carbono de la pentosa se une la base nitrogenada?",
       "opciones": [
         "En C1′, el carbono anomérico del anillo de azúcar.",
         "En C2′, el carbono que diferencia ambas pentosas.",
@@ -330,7 +330,7 @@
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/nucleotidos-c1prime.svg",
       "imagen_alt": "Pentosa numerada unida a una estructura nitrogenada mediante un enlace.",
-      "explicacion": "El ARN contiene ribosa, que conserva el grupo –OH en el carbono 2′. En la figura, esa sustitución corresponde a A.",
+      "explicacion": "La base nitrogenada se une al carbono anomérico 1′ de la pentosa mediante un enlace β-N-glicosídico. El grupo fosfato no participa en esa unión.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
     {
@@ -345,7 +345,7 @@
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/nucleotidos-fosfodiester.svg",
       "imagen_alt": "Dos pentosas conectadas mediante un grupo fosfato.",
-      "explicacion": "La diferencia está en el C2′: la ribosa posee –OH y la desoxirribosa posee H. El carbono 1′ se utiliza para unir la base nitrogenada.",
+      "explicacion": "La cadena crece en dirección 5′→3′: el grupo 3′-OH del extremo de la cadena en crecimiento reacciona con el fosfato α del nucleótido entrante, que aporta el nuevo residuo.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
     {
@@ -375,7 +375,7 @@
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/nucleotidos-c1prime.svg",
       "imagen_alt": "Pentosa numerada conectada a una base nitrogenada a través de un enlace.",
-      "explicacion": "El nucleótido es la unidad formada por base nitrogenada, pentosa y uno o más grupos fosfato; esa composición corresponde a B.",
+      "explicacion": "La base nitrogenada se une al carbono 1′ de la pentosa mediante un enlace β-N-glicosídico. La unión entre nucleótidos del esqueleto azúcar-fosfato, en cambio, es fosfodiéster.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
     {
@@ -405,7 +405,7 @@
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/nucleotidos-pareamiento.svg",
       "imagen_alt": "Dos pares complementarios de bases conectados por líneas punteadas.",
-      "explicacion": "Adenina y guanina son purinas y presentan dos anillos fusionados. Citosina, timina y uracilo son pirimidinas de un solo anillo.",
+      "explicacion": "La guanina y la citosina se aparean mediante tres puentes de hidrógeno. La adenina y la timina forman dos.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
     {
@@ -563,10 +563,10 @@
       "subtema": "Enzimas · cinética alostérica",
       "pregunta": "En el gráfico, ¿qué curva corresponde a una enzima alostérica con comportamiento cooperativo?",
       "opciones": [
-        "A: la curva hiperbólica describe una respuesta michaeliana.",
-        "A y B: ambas curvas tienen forma sigmoidea.",
+        "A: la curva hiperbólica corresponde a una cinética michaeliana sin cooperatividad.",
+        "A y B: ambas curvas son sigmoideas y muestran cooperatividad positiva.",
         "B: la curva sigmoidea evidencia cooperatividad.",
-        "Ambas serían lineales en todo el intervalo de concentración."
+        "B: la curva sigmoidea representa sitios independientes, sin interacción entre subunidades."
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/enzimas-michaelis-alosterica.svg",
@@ -579,9 +579,9 @@
       "pregunta": "¿Qué mecanismo explica la zona de aumento pronunciado de la curva sigmoidea B?",
       "opciones": [
         "Cooperatividad positiva entre las subunidades.",
-        "Inhibición irreversible de los sitios activos disponibles.",
-        "Pérdida espontánea de sustrato durante el ensayo enzimático.",
-        "Ausencia de unión entre la enzima y las moléculas de sustrato."
+        "Unión independiente: cada sitio fija sustrato sin modificar la afinidad de los demás.",
+        "Cooperatividad negativa: la primera unión reduce la afinidad de los sitios restantes.",
+        "Retroinhibición: el producto final se une a una enzima y frena la vía."
       ],
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/enzimas-michaelis-alosterica.svg",
@@ -698,10 +698,10 @@
       "subtema": "Enzimas · temperatura",
       "pregunta": "¿Qué explica la caída pronunciada de actividad al superar la temperatura óptima?",
       "opciones": [
-        "El sustrato se agota necesariamente al alcanzar esa temperatura.",
+        "El aumento de temperatura reduce la energía cinética y la frecuencia de colisiones.",
         "El calor puede desnaturalizarla y alterar el sitio activo.",
-        "El calor cambia la secuencia primaria de aminoácidos de inmediato.",
-        "La enzima deja de requerir sustrato y se vuelve inactiva por completo."
+        "El calentamiento modifica el Kₘ, pero deja intacta la conformación del sitio activo.",
+        "La actividad cae porque la temperatura cambia el ΔG global de la reacción."
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/enzimas-temperatura.svg",
@@ -713,10 +713,10 @@
       "subtema": "Enzimas · regulación metabólica",
       "pregunta": "En la vía metabólica, ¿qué efecto ejerce el producto final sobre E1?",
       "opciones": [
-        "Activa E1 y aumenta el flujo de toda la vía metabólica.",
+        "Activa E1 y produce retroalimentación positiva, aumentando el flujo de la vía.",
         "Inhibe E1 cuando se acumula el producto final.",
-        "Compite con el sustrato por el sitio activo de E3 únicamente.",
-        "Estimula la producción de intermediarios sin regular ninguna enzima."
+        "Inhibe solo E3, sin afectar las enzimas que catalizan las etapas iniciales.",
+        "Se une al sustrato inicial y lo secuestra antes de que actúe E1."
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/enzimas-feedback.svg",
@@ -726,12 +726,12 @@
     {
       "id": "enz-img-12",
       "subtema": "Enzimas · regulación alostérica",
-      "pregunta": "¿Cuál es la diferencia funcional entre los dos sitios señalados en la enzima?",
+      "pregunta": "¿Qué diferencia funcional existe entre la región que fija el sustrato y la que recibe el efector?",
       "opciones": [
-        "Activo: une efectores; alostérico: reconoce y transforma el sustrato.",
-        "Activo: une sustrato; alostérico: une efectores reguladores.",
-        "Ambos sitios unen sustrato y realizan la misma etapa catalítica.",
-        "Alostérico: degrada sustrato; activo: almacena el producto final."
+        "La región activa une efectores; la alostérica fija el sustrato y lo transforma.",
+        "La región activa une sustrato; la alostérica une efectores reguladores.",
+        "Ambas regiones fijan sustrato, pero solo la alostérica realiza la catálisis.",
+        "La región activa une sustrato; la alostérica ancla un cofactor permanente sin regular la actividad."
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/enzimas-sitio-alosterico.svg",
