@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-19T01:10:00.000Z",
+  "generado": "2026-11-19T02:00:00.000Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -150,6 +150,12 @@
           "nombre": "Bioelementos y sales minerales · Complemento del texto",
           "archivo": "data/biologia-celular/22-tema-bioelementos-y-sales-minerales.json",
           "preguntas": 12
+        },
+        {
+          "id": "biologia-celular/23-practica-con-imagenes",
+          "nombre": "Práctica con imágenes",
+          "archivo": "data/biologia-celular/23-practica-con-imagenes.json",
+          "preguntas": 49
         }
       ],
       "subsecciones": [
@@ -178,6 +184,12 @@
               "nombre": "Complemento del texto",
               "temaIds": [
                 "biologia-celular/22-tema-bioelementos-y-sales-minerales"
+              ]
+            },
+            {
+              "nombre": "Práctica con imágenes",
+              "temaIds": [
+                "biologia-celular/23-practica-con-imagenes"
               ]
             }
           ]
