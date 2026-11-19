@@ -26,31 +26,56 @@
     },
     {
       "pregunta": "¿Cuál es la fórmula empírica general que representan los monosacáridos simples?",
-      "opciones": ["C_n(H₂O)_n", "C_n H_(2n+2)", "C_n(H₂O)_(n-1)", "C_n H_n O_(2n)"],
+      "opciones": [
+        "C_n(H₂O)_n",
+        "C_n H_(2n+2)",
+        "C_n(H₂O)_(n-1)",
+        "C_n H_n O_(2n)"
+      ],
       "correcta": "A",
       "explicacion": "La fórmula general de los monosacáridos es C_n(H₂O)_n, donde n varía generalmente de 3 a 7 átomos de carbono."
     },
     {
       "pregunta": "¿Cómo se clasifica un monosacárido formado por una cadena de 6 átomos de carbono?",
-      "opciones": ["Pentosa.", "Hexosa.", "Triosa.", "Heptosa."],
+      "opciones": [
+        "Pentosa.",
+        "Hexosa.",
+        "Triosa.",
+        "Heptosa."
+      ],
       "correcta": "B",
       "explicacion": "De acuerdo al número de átomos de C, los monosacáridos de 3, 4, 5, 6 y 7 carbonos se denominan triosas, tetrosas, pentosas, hexosas y heptosas respectivamente."
     },
     {
       "pregunta": "¿Qué nombre recibe un monosacárido cuyo grupo carbonilo se encuentra en el C1 como aldehído?",
-      "opciones": ["Aldosa.", "Cetosa.", "Polialcohol.", "Anómero."],
+      "opciones": [
+        "Aldosa.",
+        "Cetosa.",
+        "Polialcohol.",
+        "Anómero."
+      ],
       "correcta": "A",
       "explicacion": "Si el grupo carbonilo es un aldehído (en C1), el monosacárido es una aldosa; si es una cetona (generalmente en C2), es una cetosa."
     },
     {
       "pregunta": "¿Cuál es la triosa de tipo aldosa más simple que posee un carbono quiral y sirve de referencia para la estereoisomería?",
-      "opciones": ["Dihidroxiacetona.", "Ribosa.", "Eritrosa.", "Gliceraldehído."],
+      "opciones": [
+        "Dihidroxiacetona.",
+        "Ribosa.",
+        "Eritrosa.",
+        "Gliceraldehído."
+      ],
       "correcta": "D",
       "explicacion": "El gliceraldehído es una aldotriosa (3C) con su C2 como centro asimétrico o quiral, sirviendo de base para definir los estereoisómeros D y L."
     },
     {
       "pregunta": "¿Qué monosacárido de 3 carbonos pertenece al grupo de las cetosas y carece de carbonos asimétricos?",
-      "opciones": ["Gliceraldehído.", "Dihidroxiacetona.", "Fructosa.", "Eritrulosa."],
+      "opciones": [
+        "Gliceraldehído.",
+        "Dihidroxiacetona.",
+        "Fructosa.",
+        "Eritrulosa."
+      ],
       "correcta": "B",
       "explicacion": "La dihidroxiacetona es la única triosa cetosa; al poseer un grupo cetona en el C2, ninguno de sus tres carbonos está unido a cuatro grupos distintos."
     },
@@ -67,7 +92,12 @@
     },
     {
       "pregunta": "¿A qué serie estereoisomérica pertenecen predominantemente los monosacáridos que sintetizan y metabolizan los seres vivos?",
-      "opciones": ["Serie D.", "Serie L.", "Mezcla racémica equimolar.", "Serie alfa (α)."],
+      "opciones": [
+        "Serie D.",
+        "Serie L.",
+        "Mezcla racémica equimolar.",
+        "Serie alfa (α)."
+      ],
       "correcta": "A",
       "explicacion": "En la naturaleza y el metabolismo celular, la inmensa mayoría de los monosacáridos aprovechados pertenecen a la serie D."
     },
@@ -95,19 +125,34 @@
     },
     {
       "pregunta": "La D-galactosa es una aldohexosa que se diferencia estructuralmente de la D-glucosa por la configuración del hidroxilo en:",
-      "opciones": ["El carbono 1.", "El carbono 2.", "El carbono 6.", "El carbono 4."],
+      "opciones": [
+        "El carbono 1.",
+        "El carbono 2.",
+        "El carbono 6.",
+        "El carbono 4."
+      ],
       "correcta": "D",
       "explicacion": "La D-galactosa y la D-glucosa son epímeros en el carbono 4; en la galactosa el hidroxilo del C4 está orientado a la izquierda (o hacia arriba en Haworth)."
     },
     {
       "pregunta": "¿Qué tipo de enlace intramolecular se forma cuando el grupo aldehído del C1 de la D-glucosa reacciona con el hidroxilo del C5 para ciclar la molécula?",
-      "opciones": ["Enlace éster.", "Enlace hemiacetal.", "Enlace glucosídico.", "Enlace peptídico."],
+      "opciones": [
+        "Enlace éster.",
+        "Enlace hemiacetal.",
+        "Enlace glucosídico.",
+        "Enlace peptídico."
+      ],
       "correcta": "B",
       "explicacion": "La reacción intramolecular entre el grupo aldehído y un grupo alcohol genera una estructura cíclica mediante un enlace hemiacetal."
     },
     {
       "pregunta": "¿Cómo se denomina al átomo de carbono que pasa a ser un nuevo centro asimétrico al ciclarse una aldohexosa o una cetohexosa?",
-      "opciones": ["Carbono primario.", "Carbono quiral omega.", "Carbono anomérico.", "Carbono carboxílico."],
+      "opciones": [
+        "Carbono primario.",
+        "Carbono quiral omega.",
+        "Carbono anomérico.",
+        "Carbono carboxílico."
+      ],
       "correcta": "C",
       "explicacion": "El carbono del grupo carbonilo (C1 en aldosas, C2 en cetosas) se convierte en un centro quiral nuevo denominado carbono anomérico al formar el ciclo."
     },
@@ -135,7 +180,12 @@
     },
     {
       "pregunta": "¿Cuáles son las dos aldopentosas de mayor relevancia biológica por formar parte de los nucleótidos y ácidos nucleicos?",
-      "opciones": ["Glucosa y Fructosa.", "Gliceraldehído y Dihidroxiacetona.", "Ribosa y Desoxirribosa.", "Maltosa y Lactosa."],
+      "opciones": [
+        "Glucosa y Fructosa.",
+        "Gliceraldehído y Dihidroxiacetona.",
+        "Ribosa y Desoxirribosa.",
+        "Maltosa y Lactosa."
+      ],
       "correcta": "C",
       "explicacion": "La ribosa (componente del ARN y ATP) y la desoxirribosa (componente del ADN) son pentosas (5C) clave con función estructural."
     },
@@ -174,13 +224,23 @@
     },
     {
       "pregunta": "¿Cómo se denomina la reacción química mediante la cual dos monosacáridos se unen covalente liberando una molécula de agua?",
-      "opciones": ["Hidrólisis.", "Condensación.", "Descarboxilación.", "Oxidación."],
+      "opciones": [
+        "Hidrólisis.",
+        "Condensación.",
+        "Descarboxilación.",
+        "Oxidación."
+      ],
       "correcta": "B",
       "explicacion": "La formación del enlace glucosídico entre dos unidades hidroxiladas con desprendimiento de una molécula de agua constituye una reacción de condensación."
     },
     {
       "pregunta": "¿Qué proceso químico inverso a la condensación rompe un enlace glucosídico incorporando una molécula de agua?",
-      "opciones": ["Esterificación.", "Ciclación.", "Polimerización.", "Hidrólisis."],
+      "opciones": [
+        "Esterificación.",
+        "Ciclación.",
+        "Polimerización.",
+        "Hidrólisis."
+      ],
       "correcta": "D",
       "explicacion": "La hidrólisis implica la adición de agua (un protón y un hidroxilo) para escindir el enlace glucosídico y recuperar las unidades de monosacárido."
     },
@@ -296,7 +356,12 @@
     },
     {
       "pregunta": "¿Cuáles son las dos fracciones polisacáridas que constituyen el almidón vegetal?",
-      "opciones": ["Amilosa y Amilopectina.", "Glucógeno y Celulosa.", "Quitina y Queratina.", "Maltosa y Sacarosa."],
+      "opciones": [
+        "Amilosa y Amilopectina.",
+        "Glucógeno y Celulosa.",
+        "Quitina y Queratina.",
+        "Maltosa y Sacarosa."
+      ],
       "correcta": "A",
       "explicacion": "El almidón es una mezcla de dos glucanos: amilosa (polímero helicoidal no ramificado) y amilopectina (polímero ramificado)."
     },
@@ -357,7 +422,12 @@
     },
     {
       "pregunta": "¿Qué proteína actúa como núcleo central y cebador al que se une el extremo reducido del glucógeno durante su síntesis?",
-      "opciones": ["Albúmina.", "Glucogenina.", "Insulina.", "Hemoglobina."],
+      "opciones": [
+        "Albúmina.",
+        "Glucogenina.",
+        "Insulina.",
+        "Hemoglobina."
+      ],
       "correcta": "B",
       "explicacion": "En el centro del complejo de glucógeno se encuentra la proteína glucogenina, unida covalentemente al extremo reducido de la molécula."
     },
@@ -429,7 +499,12 @@
     },
     {
       "pregunta": "¿Qué derivado nitrogenado de la glucosa constituye la unidad monomérica de la quitina?",
-      "opciones": ["Ácido glucurónico.", "N-acetilglucosamina.", "Galactosamina.", "Glucosamina descarboxilada."],
+      "opciones": [
+        "Ácido glucurónico.",
+        "N-acetilglucosamina.",
+        "Galactosamina.",
+        "Glucosamina descarboxilada."
+      ],
       "correcta": "B",
       "explicacion": "La quitina es un homopolisacárido compuesto por monómeros de N-acetilglucosamina unidos por enlaces β(1→4)."
     },
@@ -476,6 +551,146 @@
       ],
       "correcta": "D",
       "explicacion": "Las plantas mediante fotosíntesis fijan dióxido de carbono y agua utilizando luz solar para producir D-glucosa y liberar oxígeno a la atmósfera."
+    },
+    {
+      "id": "visual-glu-01",
+      "pregunta": "En las proyecciones de Fischer de la imagen, ¿qué monosacárido representa la estructura B?",
+      "opciones": [
+        "D-glucosa, una aldohexosa.",
+        "D-galactosa, una aldohexosa.",
+        "D-fructosa, una cetohexosa.",
+        "D-ribosa, una aldopentosa."
+      ],
+      "correcta": "C",
+      "imagen": "assets/biologia-1/visuales/glucidos-fischer.svg",
+      "imagen_alt": "Dos proyecciones de Fischer identificadas A y B; B presenta el grupo carbonilo en el segundo carbono.",
+      "explicacion": "La estructura B presenta un grupo carbonilo en C2, por lo que es una cetosa. Como tiene seis carbonos, es una cetohexosa: D-fructosa."
+    },
+    {
+      "id": "visual-glu-02",
+      "pregunta": "¿Qué diferencia estructural principal se observa entre las moléculas A y B de la imagen?",
+      "opciones": [
+        "A presenta un aldehído en C1 y B una cetona en C2.",
+        "A presenta una cetona en C2 y B un aldehído en C1.",
+        "A tiene cinco carbonos y B seis carbonos.",
+        "A carece de grupos hidroxilo y B posee uno solo."
+      ],
+      "correcta": "A",
+      "imagen": "assets/biologia-1/visuales/glucidos-fischer.svg",
+      "imagen_alt": "Comparación de las proyecciones de Fischer de una aldohexosa y una cetohexosa.",
+      "explicacion": "En A, el carbonilo está en el extremo de la cadena como grupo aldehído (C1). En B, el carbonilo se encuentra en el C2, característica de una cetosa."
+    },
+    {
+      "id": "visual-glu-03",
+      "pregunta": "¿Cuál de los disacáridos A, B o C de la imagen corresponde a la lactosa?",
+      "opciones": [
+        "A, porque une dos glucosas mediante un enlace α(1→4).",
+        "B, porque une galactosa y glucosa mediante un enlace β(1→4).",
+        "C, porque une glucosa y fructosa mediante un enlace α(1↔2)β.",
+        "A, porque une galactosa y fructosa mediante un enlace β(1→6)."
+      ],
+      "correcta": "B",
+      "imagen": "assets/biologia-1/visuales/glucidos-disacaridos.svg",
+      "imagen_alt": "Tres esquemas de disacáridos: A glucosa-glucosa alfa 1 a 4; B galactosa-glucosa beta 1 a 4; C glucosa-fructosa alfa 1 beta 2.",
+      "explicacion": "La lactosa está formada por galactosa y glucosa unidas mediante un enlace β(1→4). Esa composición corresponde al esquema B."
+    },
+    {
+      "id": "visual-glu-04",
+      "pregunta": "¿Qué disacárido representa el esquema A?",
+      "opciones": [
+        "Sacarosa.",
+        "Lactosa.",
+        "Celobiosa.",
+        "Maltosa."
+      ],
+      "correcta": "D",
+      "imagen": "assets/biologia-1/visuales/glucidos-disacaridos.svg",
+      "imagen_alt": "El esquema A muestra dos unidades de glucosa unidas mediante un enlace alfa 1 a 4.",
+      "explicacion": "La maltosa está formada por dos moléculas de glucosa unidas por un enlace glucosídico α(1→4), como se muestra en A."
+    },
+    {
+      "id": "visual-glu-05",
+      "pregunta": "¿Qué disacárido corresponde al esquema C?",
+      "opciones": [
+        "Maltosa, formada por glucosa y glucosa.",
+        "Lactosa, formada por galactosa y glucosa.",
+        "Sacarosa, formada por glucosa y fructosa.",
+        "Celobiosa, formada por dos glucosas β(1→4)."
+      ],
+      "correcta": "C",
+      "imagen": "assets/biologia-1/visuales/glucidos-disacaridos.svg",
+      "imagen_alt": "El esquema C muestra glucosa y fructosa unidas mediante un enlace alfa 1 beta 2.",
+      "explicacion": "La sacarosa está formada por glucosa y fructosa, unidas a través de sus carbonos anoméricos mediante un enlace α(1↔2)β."
+    },
+    {
+      "id": "visual-glu-06",
+      "pregunta": "En los anómeros de D-glucopiranosa de la imagen, ¿cuál corresponde a la forma α?",
+      "opciones": [
+        "A, porque el OH del C1 está orientado hacia abajo, opuesto al CH₂OH.",
+        "B, porque el OH del C1 está orientado hacia arriba, del mismo lado que el CH₂OH.",
+        "A, porque el OH del C1 está orientado hacia arriba.",
+        "B, porque el OH del C1 está orientado hacia abajo."
+      ],
+      "correcta": "A",
+      "imagen": "assets/biologia-1/visuales/glucidos-anomeros.svg",
+      "imagen_alt": "Dos anómeros de D-glucopiranosa: A con el OH anomérico hacia abajo y B hacia arriba; el CH2OH se representa hacia arriba.",
+      "explicacion": "En la D-glucosa, el anómero α tiene el OH del carbono anomérico en posición opuesta al grupo CH₂OH. En la representación de la imagen, esa orientación corresponde a A."
+    },
+    {
+      "id": "visual-glu-07",
+      "pregunta": "¿Qué polisacárido representa el esquema A de la imagen?",
+      "opciones": [
+        "Amilopectina, porque presenta ramificaciones α(1→6).",
+        "Celulosa, porque presenta enlaces β(1→4).",
+        "Glucógeno, porque presenta numerosas ramificaciones.",
+        "Amilosa, porque es una cadena lineal de glucosas unidas por enlaces α(1→4)."
+      ],
+      "correcta": "D",
+      "imagen": "assets/biologia-1/visuales/glucidos-polisacaridos.svg",
+      "imagen_alt": "Cuatro esquemas de polisacáridos: A lineal alfa 1 a 4; B ramificado alfa 1 a 4 y alfa 1 a 6; C muy ramificado; D lineal beta 1 a 4.",
+      "explicacion": "La amilosa es una fracción del almidón formada por cadenas no ramificadas de α-D-glucosa, principalmente mediante enlaces α(1→4)."
+    },
+    {
+      "id": "visual-glu-08",
+      "pregunta": "¿Qué polisacárido se asocia con el esquema B?",
+      "opciones": [
+        "Celulosa, por sus enlaces β(1→4).",
+        "Amilopectina, por sus ramificaciones α(1→6) sobre cadenas α(1→4).",
+        "Amilosa, porque no presenta ramificaciones.",
+        "Quitina, porque contiene N-acetilglucosamina."
+      ],
+      "correcta": "B",
+      "imagen": "assets/biologia-1/visuales/glucidos-polisacaridos.svg",
+      "imagen_alt": "El esquema B representa una cadena de glucosas con ramificación y enlaces alfa 1 a 4 y alfa 1 a 6.",
+      "explicacion": "La amilopectina posee cadenas principales con enlaces α(1→4) y puntos de ramificación mediante enlaces α(1→6)."
+    },
+    {
+      "id": "visual-glu-09",
+      "pregunta": "¿Cuál de los esquemas representa mejor la organización del glucógeno?",
+      "opciones": [
+        "A, porque es lineal y tiene únicamente enlaces α(1→4).",
+        "B, porque tiene una sola ramificación y enlaces β(1→4).",
+        "C, porque presenta una estructura muy ramificada con enlaces α(1→4) y puntos α(1→6).",
+        "D, porque presenta cadenas lineales con enlaces β(1→4)."
+      ],
+      "correcta": "C",
+      "imagen": "assets/biologia-1/visuales/glucidos-polisacaridos.svg",
+      "imagen_alt": "El esquema C es el más ramificado de los cuatro y muestra enlaces alfa 1 a 4 y alfa 1 a 6.",
+      "explicacion": "El glucógeno es un polisacárido de reserva animal con cadenas α(1→4) y numerosas ramificaciones α(1→6), más frecuentes que en la amilopectina."
+    },
+    {
+      "id": "visual-glu-10",
+      "pregunta": "¿Qué esquema corresponde a la celulosa?",
+      "opciones": [
+        "D, porque presenta cadenas lineales de glucosa unidas por enlaces β(1→4).",
+        "A, porque presenta cadenas helicoidales con enlaces α(1→4).",
+        "B, porque posee ramificaciones α(1→6).",
+        "C, porque es un polímero muy ramificado de reserva."
+      ],
+      "correcta": "A",
+      "imagen": "assets/biologia-1/visuales/glucidos-polisacaridos.svg",
+      "imagen_alt": "El esquema D representa una cadena lineal de glucosas con enlaces beta 1 a 4.",
+      "explicacion": "La celulosa está formada por unidades de β-D-glucosa unidas por enlaces β(1→4), generando cadenas lineales resistentes."
     }
   ]
 }
