@@ -5,14 +5,14 @@
   "preguntas": [
     {
       "id": "practica-imagen-visual-glu-01",
-      "pregunta": "En las proyecciones de Fischer de la imagen, ¿qué monosacárido representa la estructura B?",
+      "pregunta": "En las proyecciones de Fischer, ¿qué monosacárido corresponde a la estructura B?",
       "opciones": [
-        "D-glucosa, una aldohexosa.",
-        "D-galactosa, una aldohexosa.",
-        "D-fructosa, una cetohexosa.",
-        "D-ribosa, una aldopentosa."
+        "D-fructosa, una cetohexosa con el carbonilo en C2.",
+        "D-glucosa, una aldohexosa con el carbonilo terminal.",
+        "D-galactosa, una aldohexosa epímera de la glucosa.",
+        "D-manosa, una aldohexosa de la serie D."
       ],
-      "correcta": "C",
+      "correcta": "A",
       "imagen": "assets/biologia-1/visuales/glucidos-fischer.svg",
       "imagen_alt": "Dos proyecciones de Fischer identificadas A y B; B presenta el grupo carbonilo en el segundo carbono.",
       "explicacion": "La estructura B presenta un grupo carbonilo en C2, por lo que es una cetosa. Como tiene seis carbonos, es una cetohexosa: D-fructosa.",
@@ -20,14 +20,14 @@
     },
     {
       "id": "practica-imagen-visual-glu-02",
-      "pregunta": "¿Qué diferencia estructural principal se observa entre las moléculas A y B de la imagen?",
+      "pregunta": "¿Qué diferencia entre las estructuras A y B se observa en la posición del grupo carbonilo?",
       "opciones": [
-        "A presenta un aldehído en C1 y B una cetona en C2.",
-        "A presenta una cetona en C2 y B un aldehído en C1.",
-        "A tiene cinco carbonos y B seis carbonos.",
-        "A carece de grupos hidroxilo y B posee uno solo."
+        "A tiene una cetona en C2; B, un aldehído en C1.",
+        "A tiene un aldehído en C1; B, una cetona en C2.",
+        "Ambas tienen un aldehído terminal, pero difieren en C4.",
+        "Ambas tienen una cetona en C2, pero difieren en C3."
       ],
-      "correcta": "A",
+      "correcta": "B",
       "imagen": "assets/biologia-1/visuales/glucidos-fischer.svg",
       "imagen_alt": "Comparación de las proyecciones de Fischer de una aldohexosa y una cetohexosa.",
       "explicacion": "En A, el carbonilo está en el extremo de la cadena como grupo aldehído (C1). En B, el carbonilo se encuentra en el C2, característica de una cetosa.",
@@ -35,14 +35,14 @@
     },
     {
       "id": "practica-imagen-visual-glu-03",
-      "pregunta": "¿Cuál de los disacáridos A, B o C de la imagen corresponde a la lactosa?",
+      "pregunta": "¿Cuál de los tres disacáridos esquematizados corresponde a la lactosa?",
       "opciones": [
-        "A, porque une dos glucosas mediante un enlace α(1→4).",
-        "B, porque une galactosa y glucosa mediante un enlace β(1→4).",
-        "C, porque une glucosa y fructosa mediante un enlace α(1↔2)β.",
-        "A, porque une galactosa y fructosa mediante un enlace β(1→6)."
+        "Glucosa + glucosa, unidas mediante un enlace α(1→4).",
+        "Glucosa + fructosa, unidas mediante un enlace α(1↔2)β.",
+        "Galactosa + glucosa, unidas mediante un enlace β(1→4).",
+        "Glucosa + glucosa, unidas mediante un enlace β(1→4)."
       ],
-      "correcta": "B",
+      "correcta": "C",
       "imagen": "assets/biologia-1/visuales/glucidos-disacaridos.svg",
       "imagen_alt": "Tres esquemas de disacáridos: A glucosa-glucosa alfa 1 a 4; B galactosa-glucosa beta 1 a 4; C glucosa-fructosa alfa 1 beta 2.",
       "explicacion": "La lactosa está formada por galactosa y glucosa unidas mediante un enlace β(1→4). Esa composición corresponde al esquema B.",
@@ -50,12 +50,12 @@
     },
     {
       "id": "practica-imagen-visual-glu-04",
-      "pregunta": "¿Qué disacárido representa el esquema A?",
+      "pregunta": "¿Qué disacárido corresponde a la estructura A?",
       "opciones": [
-        "Sacarosa.",
-        "Lactosa.",
-        "Celobiosa.",
-        "Maltosa."
+        "Celobiosa: dos glucosas unidas por un enlace β(1→4).",
+        "Lactosa: galactosa y glucosa unidas por β(1→4).",
+        "Sacarosa: glucosa y fructosa unidas por α(1↔2)β.",
+        "Maltosa: dos glucosas unidas por un enlace α(1→4)."
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/glucidos-disacaridos.svg",
@@ -65,14 +65,14 @@
     },
     {
       "id": "practica-imagen-visual-glu-05",
-      "pregunta": "¿Qué disacárido corresponde al esquema C?",
+      "pregunta": "¿Qué disacárido corresponde a la estructura C?",
       "opciones": [
-        "Maltosa, formada por glucosa y glucosa.",
-        "Lactosa, formada por galactosa y glucosa.",
-        "Sacarosa, formada por glucosa y fructosa.",
-        "Celobiosa, formada por dos glucosas β(1→4)."
+        "Sacarosa: glucosa y fructosa unidas por α(1↔2)β.",
+        "Maltosa: dos glucosas unidas mediante α(1→4).",
+        "Lactosa: galactosa y glucosa unidas mediante β(1→4).",
+        "Celobiosa: dos glucosas unidas mediante β(1→4)."
       ],
-      "correcta": "C",
+      "correcta": "A",
       "imagen": "assets/biologia-1/visuales/glucidos-disacaridos.svg",
       "imagen_alt": "El esquema C muestra glucosa y fructosa unidas mediante un enlace alfa 1 beta 2.",
       "explicacion": "La sacarosa está formada por glucosa y fructosa, unidas a través de sus carbonos anoméricos mediante un enlace α(1↔2)β.",
@@ -80,14 +80,14 @@
     },
     {
       "id": "practica-imagen-visual-glu-06",
-      "pregunta": "En los anómeros de D-glucopiranosa de la imagen, ¿cuál corresponde a la forma α?",
+      "pregunta": "En los dos anómeros de D-glucopiranosa, ¿cuál representa la forma α?",
       "opciones": [
-        "A, porque el OH del C1 está orientado hacia abajo, opuesto al CH₂OH.",
-        "B, porque el OH del C1 está orientado hacia arriba, del mismo lado que el CH₂OH.",
-        "A, porque el OH del C1 está orientado hacia arriba.",
-        "B, porque el OH del C1 está orientado hacia abajo."
+        "B: su OH anomérico está del mismo lado que CH₂OH.",
+        "A: su OH anomérico está opuesto al grupo CH₂OH.",
+        "A: su OH anomérico está del mismo lado que CH₂OH.",
+        "B: su OH anomérico está opuesto al grupo CH₂OH."
       ],
-      "correcta": "A",
+      "correcta": "B",
       "imagen": "assets/biologia-1/visuales/glucidos-anomeros.svg",
       "imagen_alt": "Dos anómeros de D-glucopiranosa: A con el OH anomérico hacia abajo y B hacia arriba; el CH2OH se representa hacia arriba.",
       "explicacion": "En la D-glucosa, el anómero α tiene el OH del carbono anomérico en posición opuesta al grupo CH₂OH. En la representación de la imagen, esa orientación corresponde a A.",
@@ -95,14 +95,14 @@
     },
     {
       "id": "practica-imagen-visual-glu-07",
-      "pregunta": "¿Qué polisacárido representa el esquema A de la imagen?",
+      "pregunta": "¿Qué polisacárido corresponde al esquema A?",
       "opciones": [
-        "Amilopectina, porque presenta ramificaciones α(1→6).",
-        "Celulosa, porque presenta enlaces β(1→4).",
-        "Glucógeno, porque presenta numerosas ramificaciones.",
-        "Amilosa, porque es una cadena lineal de glucosas unidas por enlaces α(1→4)."
+        "Amilopectina: cadenas α(1→4) con ramificaciones α(1→6).",
+        "Celulosa: cadenas de glucosas unidas mediante enlaces β(1→4).",
+        "Amilosa: cadena de glucosas con enlaces α(1→4).",
+        "Glucógeno: polímero de glucosa con ramificaciones frecuentes."
       ],
-      "correcta": "D",
+      "correcta": "C",
       "imagen": "assets/biologia-1/visuales/glucidos-polisacaridos.svg",
       "imagen_alt": "Cuatro esquemas de polisacáridos: A lineal alfa 1 a 4; B ramificado alfa 1 a 4 y alfa 1 a 6; C muy ramificado; D lineal beta 1 a 4.",
       "explicacion": "La amilosa es una fracción del almidón formada por cadenas no ramificadas de α-D-glucosa, principalmente mediante enlaces α(1→4).",
@@ -110,14 +110,14 @@
     },
     {
       "id": "practica-imagen-visual-glu-08",
-      "pregunta": "¿Qué polisacárido se asocia con el esquema B?",
+      "pregunta": "¿Qué polisacárido corresponde al esquema B?",
       "opciones": [
-        "Celulosa, por sus enlaces β(1→4).",
-        "Amilopectina, por sus ramificaciones α(1→6) sobre cadenas α(1→4).",
-        "Amilosa, porque no presenta ramificaciones.",
-        "Quitina, porque contiene N-acetilglucosamina."
+        "Amilosa: cadenas no ramificadas de glucosas unidas por α(1→4).",
+        "Celulosa: cadenas lineales de glucosas unidas por β(1→4).",
+        "Glucógeno: cadenas α(1→4) con ramificaciones muy frecuentes.",
+        "Amilopectina: cadenas α(1→4) con puntos de ramificación α(1→6)."
       ],
-      "correcta": "B",
+      "correcta": "D",
       "imagen": "assets/biologia-1/visuales/glucidos-polisacaridos.svg",
       "imagen_alt": "El esquema B representa una cadena de glucosas con ramificación y enlaces alfa 1 a 4 y alfa 1 a 6.",
       "explicacion": "La amilopectina posee cadenas principales con enlaces α(1→4) y puntos de ramificación mediante enlaces α(1→6).",
@@ -125,14 +125,14 @@
     },
     {
       "id": "practica-imagen-visual-glu-09",
-      "pregunta": "¿Cuál de los esquemas representa mejor la organización del glucógeno?",
+      "pregunta": "¿Qué polisacárido se ajusta mejor al patrón de ramificación del esquema C?",
       "opciones": [
-        "A, porque es lineal y tiene únicamente enlaces α(1→4).",
-        "B, porque tiene una sola ramificación y enlaces β(1→4).",
-        "C, porque presenta una estructura muy ramificada con enlaces α(1→4) y puntos α(1→6).",
-        "D, porque presenta cadenas lineales con enlaces β(1→4)."
+        "Glucógeno, con ramificaciones α(1→6) muy frecuentes.",
+        "Amilosa, con cadenas no ramificadas y enlaces α(1→4).",
+        "Amilopectina, con ramificaciones α(1→6) menos frecuentes.",
+        "Celulosa, con cadenas lineales y enlaces β(1→4)."
       ],
-      "correcta": "C",
+      "correcta": "A",
       "imagen": "assets/biologia-1/visuales/glucidos-polisacaridos.svg",
       "imagen_alt": "El esquema C es el más ramificado de los cuatro y muestra enlaces alfa 1 a 4 y alfa 1 a 6.",
       "explicacion": "El glucógeno es un polisacárido de reserva animal con cadenas α(1→4) y numerosas ramificaciones α(1→6), más frecuentes que en la amilopectina.",
@@ -140,14 +140,14 @@
     },
     {
       "id": "practica-imagen-visual-glu-10",
-      "pregunta": "¿Qué esquema corresponde a la celulosa?",
+      "pregunta": "¿Qué polisacárido corresponde al esquema D?",
       "opciones": [
-        "D, porque presenta cadenas lineales de glucosa unidas por enlaces β(1→4).",
-        "A, porque presenta cadenas helicoidales con enlaces α(1→4).",
-        "B, porque posee ramificaciones α(1→6).",
-        "C, porque es un polímero muy ramificado de reserva."
+        "Amilosa, formada por cadenas de glucosa con enlaces α(1→4).",
+        "Celulosa, formada por cadenas de glucosa con enlaces β(1→4).",
+        "Amilopectina, formada por cadenas α(1→4) ramificadas en α(1→6).",
+        "Glucógeno, formado por cadenas de glucosa muy ramificadas."
       ],
-      "correcta": "A",
+      "correcta": "B",
       "imagen": "assets/biologia-1/visuales/glucidos-polisacaridos.svg",
       "imagen_alt": "El esquema D representa una cadena lineal de glucosas con enlaces beta 1 a 4.",
       "explicacion": "La celulosa está formada por unidades de β-D-glucosa unidas por enlaces β(1→4), generando cadenas lineales resistentes.",
@@ -155,14 +155,14 @@
     },
     {
       "id": "practica-imagen-visual-lip-01",
-      "pregunta": "¿Cuál de las cadenas de la imagen corresponde a un ácido graso saturado?",
+      "pregunta": "¿Cuál de las cadenas representadas corresponde a un ácido graso saturado?",
       "opciones": [
-        "A, porque no presenta dobles enlaces entre carbonos.",
-        "B, porque presenta un doble enlace cis.",
-        "C, porque presenta un doble enlace trans.",
-        "B y C, porque todos los insaturados son saturados."
+        "B: posee un doble enlace C=C con configuración cis.",
+        "C: posee un doble enlace C=C con configuración trans.",
+        "A: su cadena hidrocarbonada no presenta enlaces dobles C=C.",
+        "B: presenta dos dobles enlaces C=C en configuración cis."
       ],
-      "correcta": "A",
+      "correcta": "C",
       "imagen": "assets/biologia-1/visuales/lipidos-acidos-grasos.svg",
       "imagen_alt": "Tres cadenas hidrocarbonadas: A sin dobles enlaces, B con una curvatura cis y C con un doble enlace trans.",
       "explicacion": "Un ácido graso saturado no posee dobles enlaces C=C en su cadena hidrocarbonada. En el esquema, esa condición corresponde a A.",
@@ -170,14 +170,14 @@
     },
     {
       "id": "practica-imagen-visual-lip-02",
-      "pregunta": "¿Qué característica permite reconocer la cadena B como un ácido graso insaturado cis?",
+      "pregunta": "¿Qué rasgo geométrico permite reconocer la configuración cis en la cadena B?",
       "opciones": [
-        "No contiene ningún enlace covalente.",
-        "El doble enlace genera una curvatura o codo en la cadena.",
-        "Tiene tres grupos carboxilo.",
-        "Presenta una cadena completamente lineal sin dobles enlaces."
+        "Los sustituyentes del doble enlace quedan en lados opuestos y la cadena se extiende.",
+        "La cadena no tiene dobles enlaces y conserva una conformación saturada.",
+        "El doble enlace se encuentra en el grupo carboxilo y no en la cadena.",
+        "Los sustituyentes del doble enlace quedan del mismo lado y curvan la cadena."
       ],
-      "correcta": "B",
+      "correcta": "D",
       "imagen": "assets/biologia-1/visuales/lipidos-acidos-grasos.svg",
       "imagen_alt": "La cadena B presenta una curvatura asociada a un doble enlace cis.",
       "explicacion": "La configuración cis introduce una curvatura en la cadena hidrocarbonada. Esa geometría dificulta el empaquetamiento estrecho de las moléculas.",
@@ -185,14 +185,14 @@
     },
     {
       "id": "practica-imagen-visual-lip-03",
-      "pregunta": "¿Qué configuración geométrica del doble enlace se esquematiza en C?",
+      "pregunta": "En la cadena C, ¿cómo se disponen los sustituyentes alrededor del doble enlace?",
       "opciones": [
-        "Cis, porque los sustituyentes quedan del mismo lado del doble enlace.",
-        "Saturada, porque no hay dobles enlaces.",
-        "Trans, porque los sustituyentes quedan en lados opuestos del doble enlace.",
-        "Aromática, porque forma un anillo."
+        "En lados opuestos del doble enlace, como corresponde a la configuración trans.",
+        "Del mismo lado del doble enlace, como corresponde a la configuración cis.",
+        "En una disposición sin geometría definida, propia de un enlace simple.",
+        "En un mismo plano por rotación libre alrededor del doble enlace."
       ],
-      "correcta": "C",
+      "correcta": "A",
       "imagen": "assets/biologia-1/visuales/lipidos-acidos-grasos.svg",
       "imagen_alt": "La cadena C muestra un doble enlace con geometría trans y una forma más extendida que la cadena cis.",
       "explicacion": "En la configuración trans, los sustituyentes principales se ubican en lados opuestos del doble enlace, por lo que la cadena suele conservar una forma más extendida que en cis.",
@@ -200,12 +200,12 @@
     },
     {
       "id": "practica-imagen-visual-lip-04",
-      "pregunta": "¿Qué tipo de lípido representa la estructura de la imagen?",
+      "pregunta": "¿Qué tipo de lípido representa la estructura que muestra un esqueleto de glicerol y tres cadenas acilo?",
       "opciones": [
-        "Un fosfolípido, con dos cadenas y un grupo fosfato.",
-        "Un triacilglicérido, con glicerol esterificado con tres ácidos grasos.",
-        "Un esteroide, formado por cuatro anillos fusionados.",
-        "Un ácido graso libre, con un solo grupo carboxilo."
+        "Un fosfoglicérido, con dos ácidos grasos y un grupo fosfato.",
+        "Un triacilglicérido, con tres ácidos grasos esterificados al glicerol.",
+        "Un esfingolípido, con una ceramida y un grupo polar.",
+        "Un esterol, con cuatro anillos fusionados y una cadena lateral."
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/lipidos-triacilglicerol.svg",
@@ -215,14 +215,14 @@
     },
     {
       "id": "practica-imagen-visual-lip-05",
-      "pregunta": "¿Qué tipo de enlace se forma entre los grupos hidroxilo del glicerol y los grupos carboxilo de los ácidos grasos en la estructura mostrada?",
+      "pregunta": "¿Qué enlace une cada ácido graso con el glicerol en la molécula representada?",
       "opciones": [
-        "Peptídico.",
-        "Fosfodiéster.",
-        "Glucosídico.",
-        "Éster."
+        "Un enlace amida, formado entre un carboxilo y un grupo amino.",
+        "Un enlace fosfodiéster, con un fosfato entre dos alcoholes.",
+        "Un enlace éster, formado entre un carboxilo y un hidroxilo.",
+        "Un enlace glucosídico, entre dos grupos hidroxilo de azúcares."
       ],
-      "correcta": "D",
+      "correcta": "C",
       "imagen": "assets/biologia-1/visuales/lipidos-triacilglicerol.svg",
       "imagen_alt": "Esquema de triacilglicérido donde se señalan las tres uniones éster entre el glicerol y las cadenas de ácidos grasos.",
       "explicacion": "La reacción entre un grupo hidroxilo del glicerol y un grupo carboxilo de un ácido graso genera un enlace éster y libera agua.",
@@ -230,14 +230,14 @@
     },
     {
       "id": "practica-imagen-visual-lip-06",
-      "pregunta": "¿Cuál es la organización estructural característica de la molécula representada?",
+      "pregunta": "¿Qué organización molecular permite reconocer la estructura como un fosfoglicérido?",
       "opciones": [
-        "Una cabeza polar y dos colas hidrocarbonadas apolares.",
-        "Tres colas apolares unidas a un anillo esteroide.",
-        "Una cadena de aminoácidos y un grupo fosfato.",
-        "Una cabeza apolar y dos colas hidrofílicas."
+        "Una cabeza polar con fosfato y tres colas de ácidos grasos.",
+        "Una región esteroidea de cuatro anillos y una única cola apolar.",
+        "Una cadena de glicerol con tres ácidos grasos y sin fosfato.",
+        "Una cabeza polar con fosfato y dos colas de ácidos grasos."
       ],
-      "correcta": "A",
+      "correcta": "D",
       "imagen": "assets/biologia-1/visuales/lipidos-fosfolipido.svg",
       "imagen_alt": "Esquema de fosfoglicérido con cabeza polar con fosfato y dos colas de ácidos grasos.",
       "explicacion": "Los fosfoglicéridos son anfipáticos: poseen una región polar que incluye el fosfato y dos cadenas de ácidos grasos hidrofóbicas.",
@@ -245,14 +245,14 @@
     },
     {
       "id": "practica-imagen-visual-lip-07",
-      "pregunta": "En la molécula de la imagen, ¿qué región interactúa favorablemente con el agua?",
+      "pregunta": "En el fosfoglicérido, ¿qué región establece las interacciones más favorables con el agua?",
       "opciones": [
-        "Las dos colas hidrocarbonadas.",
-        "La cabeza polar que contiene el grupo fosfato.",
-        "Toda la molécula por igual, porque es completamente apolar.",
-        "Ninguna región, porque no posee grupos polares."
+        "La cabeza polar, que incluye el grupo fosfato.",
+        "Las colas hidrocarbonadas, por sus enlaces C–C y C–H.",
+        "La región central del glicerol, aislada de los grupos polares.",
+        "Las dos colas apolares, por su capacidad de formar puentes de H."
       ],
-      "correcta": "B",
+      "correcta": "A",
       "imagen": "assets/biologia-1/visuales/lipidos-fosfolipido.svg",
       "imagen_alt": "Fosfolípido esquemático con cabeza de fosfato y dos colas hidrocarbonadas.",
       "explicacion": "La cabeza con fosfato es polar e hidrofílica, por lo que interactúa con el agua. Las colas hidrocarbonadas son apolares e hidrofóbicas.",
@@ -260,14 +260,14 @@
     },
     {
       "id": "practica-imagen-visual-lip-08",
-      "pregunta": "¿Qué familia de lípidos se reconoce por el núcleo de cuatro anillos fusionados de la imagen?",
+      "pregunta": "¿A qué familia de lípidos pertenece el esqueleto de cuatro anillos fusionados que se observa?",
       "opciones": [
-        "Triacilglicéridos.",
-        "Fosfoglicéridos.",
-        "Esteroides.",
-        "Ceras."
+        "A los triacilglicéridos, constituidos por glicerol y tres ácidos grasos.",
+        "A los esteroides, cuyo núcleo característico es el ciclopentanoperhidrofenantreno.",
+        "A los fosfoglicéridos, constituidos por glicerol, fosfato y dos ácidos grasos.",
+        "A las ceras, constituidas por un ácido graso unido a un alcohol de cadena larga."
       ],
-      "correcta": "C",
+      "correcta": "B",
       "imagen": "assets/biologia-1/visuales/lipidos-colesterol.svg",
       "imagen_alt": "Núcleo esteroide de cuatro anillos fusionados con un grupo hidroxilo y una cadena hidrocarbonada lateral.",
       "explicacion": "Los esteroides presentan un núcleo característico de cuatro anillos fusionados. El colesterol es un ejemplo y posee, además, un grupo hidroxilo y una cadena lateral.",
@@ -275,14 +275,14 @@
     },
     {
       "id": "practica-imagen-visual-lip-09",
-      "pregunta": "¿Qué rasgo de la molécula de colesterol de la imagen contribuye a su carácter anfipático?",
+      "pregunta": "¿Qué característica estructural del colesterol explica su carácter anfipático?",
       "opciones": [
-        "La presencia de un grupo hidroxilo polar y una gran región hidrocarbonada apolar.",
-        "La presencia de tres grupos fosfato cargados.",
-        "La unión de tres ácidos grasos al glicerol.",
-        "La presencia de numerosos grupos amino ionizables."
+        "Un grupo fosfato cargado unido a tres cadenas de ácidos grasos.",
+        "Tres grupos carboxilo polares distribuidos sobre los anillos fusionados.",
+        "Un grupo –OH polar junto a una extensa región hidrocarbonada apolar.",
+        "Una región peptídica polar unida a una cola de aminoácidos apolares."
       ],
-      "correcta": "A",
+      "correcta": "C",
       "imagen": "assets/biologia-1/visuales/lipidos-colesterol.svg",
       "imagen_alt": "Molécula esquemática de colesterol con grupo hidroxilo polar y anillos/cadena hidrocarbonados.",
       "explicacion": "El colesterol tiene un grupo hidroxilo polar, mientras que la mayor parte de la molécula es hidrocarbonada y apolar. Por eso presenta un carácter anfipático débil.",
@@ -290,14 +290,14 @@
     },
     {
       "id": "practica-imagen-visual-lip-10",
-      "pregunta": "¿Qué consecuencia suele tener un doble enlace cis sobre el empaquetamiento de los ácidos grasos?",
+      "pregunta": "Al comparar las cadenas B (cis) y C (trans), ¿cuál suele dificultar más el empaquetamiento estrecho entre cadenas?",
       "opciones": [
-        "Permite que las cadenas se empaqueten más estrechamente y eleva siempre el punto de fusión.",
-        "Elimina la región hidrofóbica de la molécula.",
-        "Produce una curvatura que dificulta el empaquetamiento y tiende a disminuir el punto de fusión.",
-        "Convierte automáticamente al ácido graso en un fosfolípido."
+        "C, porque la geometría trans genera una curvatura mayor que cis.",
+        "Ambas por igual, porque cualquier doble enlace produce la misma geometría.",
+        "Ninguna, porque los dobles enlaces no afectan el empaquetamiento.",
+        "B, porque el doble enlace cis introduce una curvatura pronunciada."
       ],
-      "correcta": "C",
+      "correcta": "D",
       "imagen": "assets/biologia-1/visuales/lipidos-acidos-grasos.svg",
       "imagen_alt": "Comparación de cadena saturada recta, cadena cis curvada y cadena trans más extendida.",
       "explicacion": "El doble enlace cis introduce un codo en la cadena. Esto reduce las interacciones de empaquetamiento entre cadenas y suele disminuir el punto de fusión.",
@@ -305,14 +305,14 @@
     },
     {
       "id": "practica-imagen-visual-nuc-01",
-      "pregunta": "¿Cuál de las dos pentosas de la imagen corresponde a la desoxirribosa?",
+      "pregunta": "¿Cuál de las dos pentosas corresponde a la 2-desoxirribosa?",
       "opciones": [
-        "A, porque posee un grupo OH en el carbono 2′.",
-        "B, porque en el carbono 2′ presenta un H en lugar de un OH.",
-        "A, porque carece de oxígeno en el anillo.",
-        "B, porque posee seis carbonos."
+        "B: en el carbono 2′ presenta H en lugar de un grupo –OH.",
+        "A: en el carbono 2′ presenta H en lugar de un grupo –OH.",
+        "A: en el carbono 2′ conserva el grupo –OH característico de la ribosa.",
+        "B: en el carbono 2′ presenta un grupo fosfato adicional."
       ],
-      "correcta": "B",
+      "correcta": "A",
       "imagen": "assets/biologia-1/visuales/nucleotidos-pentosas.svg",
       "imagen_alt": "Comparación de dos pentosas cíclicas: A presenta OH en el carbono 2 prima y B presenta H.",
       "explicacion": "La desoxirribosa se diferencia de la ribosa porque en el carbono 2′ tiene un átomo de hidrógeno en lugar del grupo hidroxilo. Esa es la estructura B.",
@@ -320,14 +320,14 @@
     },
     {
       "id": "practica-imagen-visual-nuc-02",
-      "pregunta": "¿Qué azúcar se representa en la estructura A?",
+      "pregunta": "¿Qué pentosa se representa en la estructura A?",
       "opciones": [
-        "Ribosa, porque posee un grupo hidroxilo en el carbono 2′.",
-        "Desoxirribosa, porque carece del OH en 2′.",
-        "Glucosa, porque tiene seis carbonos.",
-        "Fructosa, porque tiene un grupo cetona."
+        "2-desoxirribosa, que presenta un H en el carbono 2′.",
+        "Ribosa, que conserva un grupo hidroxilo en el carbono 2′.",
+        "Ribulosa, que contiene un grupo cetona en el carbono 2′.",
+        "Glucosa, una aldohexosa que posee seis carbonos."
       ],
-      "correcta": "A",
+      "correcta": "B",
       "imagen": "assets/biologia-1/visuales/nucleotidos-pentosas.svg",
       "imagen_alt": "La pentosa A contiene un grupo hidroxilo en el carbono 2 prima.",
       "explicacion": "La ribosa posee un grupo –OH en el carbono 2′. La desoxirribosa, representada en B, tiene H en esa posición.",
@@ -335,14 +335,14 @@
     },
     {
       "id": "practica-imagen-visual-nuc-03",
-      "pregunta": "¿En qué carbono se encuentra la diferencia química que permite distinguir ribosa de desoxirribosa?",
+      "pregunta": "¿Qué tipo de anillo representa la forma cíclica de las pentosas dibujadas?",
       "opciones": [
-        "En el carbono 1′, donde se une la base nitrogenada.",
-        "En el carbono 2′, por la presencia o ausencia del grupo –OH.",
-        "En el carbono 3′, porque allí se une la base nitrogenada.",
-        "En el carbono 5′, porque allí se elimina el oxígeno del anillo."
+        "Una piranosa, con un anillo de seis miembros.",
+        "Una forma acíclica, con la cadena carbonada abierta.",
+        "Una furanosa, con un anillo de cinco miembros.",
+        "Un anillo esteroide, con cuatro ciclos fusionados."
       ],
-      "correcta": "B",
+      "correcta": "C",
       "imagen": "assets/biologia-1/visuales/nucleotidos-pentosas.svg",
       "imagen_alt": "Ribosa y desoxirribosa comparadas con foco en el sustituyente del carbono 2 prima.",
       "explicacion": "La diferencia está en el C2′: la ribosa posee –OH y la desoxirribosa posee H. El carbono 1′ se utiliza para unir la base nitrogenada.",
@@ -350,14 +350,14 @@
     },
     {
       "id": "practica-imagen-visual-nuc-04",
-      "pregunta": "¿Cuál de las estructuras de la imagen representa un nucleósido?",
+      "pregunta": "¿Qué diferencia estructural se observa entre las estructuras A y B?",
       "opciones": [
-        "A, porque está formado por una base nitrogenada unida a una pentosa.",
-        "B, porque posee base, pentosa y fosfato.",
-        "A y B, porque ambos poseen necesariamente fosfato.",
-        "Ninguna, porque un nucleósido está formado solo por fosfato."
+        "A incorpora un grupo fosfato adicional a la combinación base–pentosa.",
+        "B incorpora una segunda base nitrogenada y conserva la misma pentosa.",
+        "A sustituye la pentosa por un ácido graso unido a la base.",
+        "B incorpora un grupo fosfato adicional a la combinación base–pentosa."
       ],
-      "correcta": "A",
+      "correcta": "D",
       "imagen": "assets/biologia-1/visuales/nucleotidos-nucleosido.svg",
       "imagen_alt": "A muestra base nitrogenada unida a pentosa; B muestra esa misma combinación con un grupo fosfato adicional.",
       "explicacion": "Un nucleósido está formado por una base nitrogenada y una pentosa. La adición de uno o más grupos fosfato da lugar a un nucleótido.",
@@ -365,14 +365,14 @@
     },
     {
       "id": "practica-imagen-visual-nuc-05",
-      "pregunta": "¿Qué estructura de la imagen corresponde a un nucleótido?",
+      "pregunta": "¿Cuál de las dos estructuras corresponde a un nucleótido?",
       "opciones": [
-        "A, porque contiene únicamente una pentosa.",
-        "A, porque contiene base y pentosa, sin fosfato.",
-        "B, porque contiene base nitrogenada, pentosa y grupo fosfato.",
-        "B, porque contiene tres bases nitrogenadas y una pentosa."
+        "B, porque reúne una base nitrogenada, una pentosa y fosfato.",
+        "A, porque reúne una base nitrogenada, una pentosa y fosfato.",
+        "A, porque presenta la base unida directamente al grupo fosfato.",
+        "B, porque contiene una pentosa unida a dos bases nitrogenadas."
       ],
-      "correcta": "C",
+      "correcta": "A",
       "imagen": "assets/biologia-1/visuales/nucleotidos-nucleosido.svg",
       "imagen_alt": "B representa una base unida a una pentosa y a un grupo fosfato.",
       "explicacion": "El nucleótido es la unidad formada por base nitrogenada, pentosa y uno o más grupos fosfato; esa composición corresponde a B.",
@@ -380,14 +380,14 @@
     },
     {
       "id": "practica-imagen-visual-nuc-06",
-      "pregunta": "¿Cuál es el criterio que permite clasificar la estructura A de la imagen como una base púrica?",
+      "pregunta": "¿Qué rasgo del esqueleto de la estructura A permite clasificarla como una purina?",
       "opciones": [
-        "Posee dos anillos fusionados.",
-        "Posee un único anillo de seis miembros.",
-        "No contiene átomos de nitrógeno.",
-        "Tiene un grupo fosfato unido al anillo."
+        "Presenta un único anillo nitrogenado de seis miembros.",
+        "Presenta dos anillos nitrogenados fusionados.",
+        "Presenta un anillo de cinco miembros sin nitrógeno.",
+        "Presenta un anillo nitrogenado unido a tres fosfatos."
       ],
-      "correcta": "A",
+      "correcta": "B",
       "imagen": "assets/biologia-1/visuales/nucleotidos-bases.svg",
       "imagen_alt": "Comparación de un sistema de dos anillos fusionados en A y un anillo único en B.",
       "explicacion": "Las purinas poseen dos anillos fusionados (uno de seis y otro de cinco miembros). Las pirimidinas poseen un solo anillo de seis miembros.",
@@ -395,12 +395,12 @@
     },
     {
       "id": "practica-imagen-visual-nuc-07",
-      "pregunta": "¿Qué bases nitrogenadas pertenecen al grupo que muestra la estructura A?",
+      "pregunta": "¿Qué bases nitrogenadas comparten el tipo de esqueleto de dos anillos que se muestra en A?",
       "opciones": [
-        "Citosina y timina.",
-        "Citosina y uracilo.",
-        "Adenina y guanina.",
-        "Timina y uracilo."
+        "Citosina y timina, ambas pertenecientes al grupo de las pirimidinas.",
+        "Citosina y uracilo, ambas pertenecientes al grupo de las pirimidinas.",
+        "Adenina y guanina, ambas pertenecientes al grupo de las purinas.",
+        "Timina y uracilo, ambas pertenecientes al grupo de las pirimidinas."
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/nucleotidos-bases.svg",
@@ -410,14 +410,14 @@
     },
     {
       "id": "practica-imagen-visual-nuc-08",
-      "pregunta": "¿Qué tipo de enlace se señala en el esquema de la cadena de ácido nucleico?",
+      "pregunta": "¿Qué enlace forma el esqueleto azúcar–fosfato entre nucleótidos consecutivos?",
       "opciones": [
-        "Enlace peptídico entre aminoácidos.",
-        "Enlace fosfodiéster 3′–5′ entre nucleótidos.",
-        "Enlace glucosídico entre dos bases nitrogenadas.",
-        "Enlace éster entre glicerol y ácidos grasos."
+        "Un enlace N-glucosídico entre la base y el carbono 1′ de la pentosa.",
+        "Un enlace peptídico entre los grupos amino de dos nucleótidos.",
+        "Un enlace éster simple entre dos grupos carboxilo de las bases.",
+        "Un enlace fosfodiéster entre los extremos 3′ y 5′ de las pentosas."
       ],
-      "correcta": "B",
+      "correcta": "D",
       "imagen": "assets/biologia-1/visuales/nucleotidos-fosfodiester.svg",
       "imagen_alt": "Dos pentosas conectadas por un fosfato entre las posiciones 3 prima y 5 prima.",
       "explicacion": "El enlace fosfodiéster une el grupo 3′-OH de una pentosa con el fosfato asociado al carbono 5′ de la siguiente, formando el esqueleto azúcar-fosfato.",
@@ -425,14 +425,14 @@
     },
     {
       "id": "practica-imagen-visual-nuc-09",
-      "pregunta": "Si la pentosa de un nucleótido es la que se observa en B de la imagen, ¿en qué ácido nucleico se encuentra normalmente?",
+      "pregunta": "En las estructuras del esquema, ¿qué componente determina si un nucleótido contiene adenina, guanina, citosina, timina o uracilo?",
       "opciones": [
-        "En el ARN, porque el ARN posee desoxirribosa.",
-        "En el ADN, porque el ADN posee desoxirribosa.",
-        "En ambos por igual, porque ribosa y desoxirribosa son idénticas.",
-        "En ninguno, porque la desoxirribosa no integra nucleótidos."
+        "La base nitrogenada, que se une al carbono 1′ de la pentosa.",
+        "El grupo fosfato, que cambia según la identidad de la base.",
+        "La pentosa, que cambia de número de carbonos entre las cinco bases.",
+        "El enlace fosfodiéster, que determina qué base integra el nucleótido."
       ],
-      "correcta": "B",
+      "correcta": "A",
       "imagen": "assets/biologia-1/visuales/nucleotidos-pentosas.svg",
       "imagen_alt": "La estructura B corresponde a desoxirribosa, que presenta H en el carbono 2 prima.",
       "explicacion": "El ADN contiene desoxirribosa, mientras que el ARN contiene ribosa. La diferencia está en el sustituyente del carbono 2′.",
@@ -440,12 +440,12 @@
     },
     {
       "id": "practica-imagen-visual-prot-01",
-      "pregunta": "En la estructura general del aminoácido de la imagen, ¿qué representa el grupo R?",
+      "pregunta": "En la estructura general de un aminoácido, ¿qué representa el grupo R?",
       "opciones": [
-        "El grupo carboxilo, idéntico en todos los aminoácidos.",
-        "El radical o cadena lateral, cuya estructura varía entre aminoácidos.",
-        "El carbono alfa, que siempre forma un anillo.",
-        "El grupo fosfato que une dos aminoácidos."
+        "El grupo carboxilo, que participa en la formación del enlace peptídico.",
+        "La cadena lateral variable que distingue a un aminoácido de otro.",
+        "El grupo amino, que se protona según el pH del medio.",
+        "El carbono α, que conecta los grupos funcionales de la molécula."
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/proteinas-aminoacido.svg",
@@ -455,12 +455,12 @@
     },
     {
       "id": "practica-imagen-visual-prot-02",
-      "pregunta": "¿Qué grupos químicos se encuentran unidos al carbono α en la estructura general de un aminoácido?",
+      "pregunta": "¿Qué cuatro sustituyentes están unidos al carbono α de un aminoácido?",
       "opciones": [
-        "Un grupo fosfato, un azúcar, una base y un hidrógeno.",
-        "Tres grupos carboxilo y un grupo hidroxilo.",
-        "Un grupo amino, un grupo carboxilo, un hidrógeno y un radical R.",
-        "Un glicerol y tres ácidos grasos."
+        "Un grupo fosfato, una pentosa, una base y una cadena R.",
+        "Dos grupos amino, un carboxilo y un grupo hidroxilo.",
+        "Un grupo amino, un carboxilo, un H y una cadena lateral R.",
+        "Un glicerol, dos ácidos grasos y un grupo fosfato."
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/proteinas-aminoacido.svg",
@@ -472,10 +472,10 @@
       "id": "practica-imagen-visual-prot-03",
       "pregunta": "¿Qué unión covalente está resaltada entre los dos residuos de aminoácidos?",
       "opciones": [
-        "Enlace glucosídico.",
-        "Enlace fosfodiéster.",
-        "Enlace éster.",
-        "Enlace peptídico."
+        "El enlace disulfuro, entre los átomos de azufre de dos cisteínas.",
+        "El enlace fosfodiéster, entre dos grupos hidroxilo y un fosfato.",
+        "El enlace glucosídico, entre dos carbonos anoméricos de azúcares.",
+        "El enlace peptídico, entre el carbono carbonílico y el nitrógeno."
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/proteinas-peptidico.svg",
@@ -485,12 +485,12 @@
     },
     {
       "id": "practica-imagen-visual-prot-04",
-      "pregunta": "¿Qué nivel de organización proteica representa el esquema A?",
+      "pregunta": "¿Qué nivel de organización proteica representa la cadena A?",
       "opciones": [
-        "Estructura primaria: secuencia lineal de aminoácidos.",
-        "Estructura secundaria: hélice α y lámina β.",
-        "Estructura terciaria: plegamiento tridimensional de una cadena.",
-        "Estructura cuaternaria: asociación de varias cadenas."
+        "Estructura primaria: el orden de los aminoácidos en la cadena.",
+        "Estructura secundaria: los patrones locales de hélice y lámina.",
+        "Estructura terciaria: el plegamiento tridimensional de una cadena.",
+        "Estructura cuaternaria: la asociación de varias cadenas."
       ],
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/proteinas-estructuras.svg",
@@ -500,12 +500,12 @@
     },
     {
       "id": "practica-imagen-visual-prot-05",
-      "pregunta": "¿Qué nivel estructural se representa en B mediante una hélice α y una lámina β?",
+      "pregunta": "¿Qué nivel estructural se ilustra en B mediante patrones locales de hélice y lámina?",
       "opciones": [
-        "Primario.",
-        "Secundario.",
-        "Terciario.",
-        "Cuaternario."
+        "Estructura primaria, definida por la secuencia de aminoácidos.",
+        "Estructura secundaria, estabilizada por puentes de hidrógeno.",
+        "Estructura terciaria, definida por el plegamiento global de una cadena.",
+        "Estructura cuaternaria, definida por la asociación de subunidades."
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/proteinas-estructuras.svg",
@@ -515,14 +515,14 @@
     },
     {
       "id": "practica-imagen-visual-prot-06",
-      "pregunta": "¿Qué nivel estructural representa el esquema D?",
+      "pregunta": "¿Qué nivel estructural representa el conjunto de subunidades del esquema D?",
       "opciones": [
-        "Primario, porque muestra el orden de los aminoácidos.",
-        "Secundario, porque muestra una hélice α.",
-        "Terciario, porque representa una única cadena plegada.",
-        "Cuaternario, porque representa la asociación de varias subunidades polipeptídicas."
+        "Estructura primaria, por el orden lineal de aminoácidos.",
+        "Estructura secundaria, por la formación de hélices y láminas.",
+        "Estructura cuaternaria, por la asociación de varias cadenas.",
+        "Estructura terciaria, por el plegamiento de una única cadena."
       ],
-      "correcta": "D",
+      "correcta": "C",
       "imagen": "assets/biologia-1/visuales/proteinas-estructuras.svg",
       "imagen_alt": "El esquema D representa varias subunidades proteicas asociadas en un complejo.",
       "explicacion": "La estructura cuaternaria aparece cuando dos o más cadenas polipeptídicas o subunidades se asocian para formar una proteína funcional.",
@@ -530,14 +530,14 @@
     },
     {
       "id": "practica-imagen-visual-agua-01",
-      "pregunta": "Según la distribución de cargas parciales de la imagen, ¿por qué la molécula de agua es un dipolo?",
+      "pregunta": "¿Por qué la molécula de agua presenta un momento dipolar neto?",
       "opciones": [
-        "Porque el oxígeno y los hidrógenos comparten los electrones de manera completamente simétrica.",
-        "Porque el oxígeno atrae más los electrones y, junto con la geometría angular, genera una distribución desigual de cargas.",
-        "Porque el agua posee una carga negativa neta.",
-        "Porque los enlaces O–H son iónicos y la molécula se separa espontáneamente."
+        "Porque sus enlaces O–H son apolares y su geometría es lineal.",
+        "Porque el agua posee una carga negativa neta en condiciones normales.",
+        "Porque los hidrógenos atraen los electrones con más fuerza que el oxígeno.",
+        "Por la diferencia de electronegatividad y su geometría angular."
       ],
-      "correcta": "B",
+      "correcta": "D",
       "imagen": "assets/biologia-1/visuales/quimica-agua-dipolo.svg",
       "imagen_alt": "Molécula angular de agua con oxígeno parcialmente negativo e hidrógenos parcialmente positivos.",
       "explicacion": "El oxígeno es más electronegativo que el hidrógeno y atrae con mayor intensidad los electrones de los enlaces O–H. Como la molécula es angular, los dipolos de enlace no se cancelan y el agua es polar.",
@@ -545,14 +545,14 @@
     },
     {
       "id": "practica-imagen-visual-agua-02",
-      "pregunta": "¿Qué interacción representa la línea punteada entre las dos moléculas de agua?",
+      "pregunta": "¿Qué interacción intermolecular representa la línea punteada entre las moléculas de agua?",
       "opciones": [
-        "Un enlace covalente O–H dentro de una misma molécula.",
-        "Un enlace peptídico entre dos moléculas.",
-        "Un puente de hidrógeno entre el H parcialmente positivo de una molécula y el O parcialmente negativo de otra.",
-        "Un enlace iónico por transferencia completa de electrones."
+        "Un puente de hidrógeno entre un H parcialmente positivo y un O parcialmente negativo.",
+        "Un enlace covalente O–H que forma parte de una sola molécula.",
+        "Un enlace iónico por transferencia completa de un electrón.",
+        "Un enlace peptídico entre los grupos funcionales de dos moléculas."
       ],
-      "correcta": "C",
+      "correcta": "A",
       "imagen": "assets/biologia-1/visuales/quimica-puente-h.svg",
       "imagen_alt": "Dos moléculas de agua; una línea punteada conecta el hidrógeno de una con el oxígeno de la otra.",
       "explicacion": "El puente de hidrógeno es una interacción intermolecular: el H enlazado covalentemente al oxígeno de una molécula es atraído por el oxígeno parcialmente negativo de otra molécula.",
@@ -561,12 +561,12 @@
     {
       "id": "enz-img-01",
       "subtema": "Enzimas · cinética alostérica",
-      "pregunta": "En el gráfico se comparan dos curvas de velocidad en función de la concentración de sustrato. ¿Cuál corresponde a una enzima alostérica?",
+      "pregunta": "En el gráfico de velocidad inicial frente a concentración de sustrato, ¿qué curva es compatible con una enzima alostérica?",
       "opciones": [
-        "A, porque presenta una curva hiperbólica típica de Michaelis-Menten.",
-        "B, porque presenta una curva sigmoidea compatible con cooperatividad entre subunidades.",
-        "A y B, porque todas las enzimas tienen curvas sigmoideas.",
-        "Ninguna: las enzimas no modifican su velocidad según la concentración de sustrato."
+        "A, porque presenta una respuesta hiperbólica típica de Michaelis–Menten.",
+        "B, porque presenta una respuesta sigmoidea asociada a cooperatividad.",
+        "A y B, porque cualquier enzima presenta necesariamente cooperatividad.",
+        "Ninguna, porque la velocidad no depende de la concentración de sustrato."
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/enzimas-michaelis-alosterica.svg",
@@ -576,12 +576,12 @@
     {
       "id": "enz-img-02",
       "subtema": "Enzimas · cinética alostérica",
-      "pregunta": "¿Qué representa la forma sigmoidea de la curva B del gráfico?",
+      "pregunta": "¿Qué fenómeno explica la región sigmoidea de la curva correspondiente a la enzima alostérica?",
       "opciones": [
-        "Que la enzima pierde actividad a medida que aumenta el sustrato.",
-        "Que la enzima no posee sitios de unión para el sustrato.",
-        "Que la unión de sustrato puede favorecer la unión posterior de más sustrato: cooperatividad positiva.",
-        "Que la velocidad es independiente de la concentración de sustrato."
+        "Saturación simple: todos los sitios se ocupan de forma independiente.",
+        "Inhibición irreversible: el sustrato bloquea de forma covalente el sitio activo.",
+        "Cooperatividad: la unión de sustrato modifica la afinidad de otras subunidades.",
+        "Desnaturalización: el aumento de sustrato altera la estructura de la proteína."
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/enzimas-michaelis-alosterica.svg",
@@ -591,14 +591,14 @@
     {
       "id": "enz-img-03",
       "subtema": "Enzimas · efectores alostéricos",
-      "pregunta": "En el gráfico de efectores alostéricos, ¿qué efecto produce el activador positivo sobre la curva?",
+      "pregunta": "En el gráfico de efectores alostéricos, ¿qué curva representa el efecto de un activador positivo?",
       "opciones": [
-        "La desplaza hacia la izquierda: se requiere menos sustrato para alcanzar una misma velocidad.",
-        "La desplaza hacia la derecha: se requiere más sustrato para alcanzar una misma velocidad.",
-        "Disminuye necesariamente la velocidad máxima hasta cero.",
-        "Transforma la enzima en un inhibidor irreversible."
+        "B, que conserva la posición de la curva en ausencia de efector.",
+        "C, desplazada a la derecha y con mayor K₀.₅ aparente.",
+        "A, desplazada a la derecha y con menor afinidad aparente.",
+        "A, desplazada a la izquierda y con menor K₀.₅ aparente."
       ],
-      "correcta": "A",
+      "correcta": "D",
       "imagen": "assets/biologia-1/visuales/enzimas-efectores-alostericos.svg",
       "imagen_alt": "Tres curvas sigmoideas: activador positivo desplazado a la izquierda, control al centro e inhibidor negativo a la derecha.",
       "explicacion": "Un efector alostérico positivo estabiliza la conformación R (relajada, más activa) y desplaza la curva hacia la izquierda. Disminuye la concentración de sustrato necesaria para alcanzar una velocidad dada."
@@ -606,14 +606,14 @@
     {
       "id": "enz-img-04",
       "subtema": "Enzimas · efectores alostéricos",
-      "pregunta": "¿Qué interpretación corresponde al desplazamiento hacia la derecha de la curva naranja?",
+      "pregunta": "¿Qué curva del gráfico corresponde a un efector alostérico negativo?",
       "opciones": [
-        "Es la acción de un activador positivo que estabiliza la forma R.",
-        "Es la acción de un inhibidor o efector negativo que estabiliza la forma T y reduce la respuesta al sustrato.",
-        "Indica que aumentó la concentración de enzima, sin modificar la afinidad.",
-        "Demuestra que el sustrato dejó de participar en la reacción."
+        "C, desplazada a la derecha y con mayor K₀.₅ aparente.",
+        "A, desplazada a la izquierda y con menor K₀.₅ aparente.",
+        "B, que coincide con la respuesta de la enzima sin efector.",
+        "C, desplazada a la izquierda y con mayor afinidad aparente."
       ],
-      "correcta": "B",
+      "correcta": "A",
       "imagen": "assets/biologia-1/visuales/enzimas-efectores-alostericos.svg",
       "imagen_alt": "Curva sigmoidea naranja desplazada a la derecha identificada como inhibidor alostérico negativo.",
       "explicacion": "Un efector alostérico negativo estabiliza la conformación T (tensa, menos activa), de modo que se necesita una concentración mayor de sustrato para alcanzar la misma velocidad."
@@ -621,12 +621,12 @@
     {
       "id": "enz-img-05",
       "subtema": "Enzimas · inhibición enzimática",
-      "pregunta": "En el gráfico de inhibición, ¿qué curva representa la inhibición competitiva?",
+      "pregunta": "En el gráfico de inhibición, ¿qué curva representa una inhibición competitiva?",
       "opciones": [
-        "A, porque disminuye la Vmáx sin modificar Km.",
-        "B, porque aumenta el Km aparente pero puede alcanzar la misma Vmáx que el control.",
-        "C, porque disminuye la Vmáx y mantiene Km.",
-        "A, porque se vuelve sigmoidea."
+        "A: corresponde al control, sin inhibidor presente.",
+        "B: aumenta el Kₘ aparente y conserva la Vmáx del control.",
+        "C: disminuye la Vmáx y conserva el Kₘ en el modelo puro.",
+        "B: disminuye la Vmáx y conserva el Kₘ del control."
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/enzimas-inhibicion-cinetica.svg",
@@ -636,14 +636,14 @@
     {
       "id": "enz-img-06",
       "subtema": "Enzimas · inhibición enzimática",
-      "pregunta": "¿Qué cambio cinético representa la curva C frente al control A?",
+      "pregunta": "¿Qué cambio cinético corresponde a la curva C respecto del control A?",
       "opciones": [
-        "Aumenta Km y conserva Vmáx.",
-        "Conserva Km y disminuye Vmáx, como en la inhibición no competitiva pura.",
-        "Disminuye Km y aumenta Vmáx.",
-        "No modifica ningún parámetro cinético."
+        "Aumenta el Kₘ y conserva la Vmáx, como en la competitiva.",
+        "Disminuye el Kₘ y aumenta la Vmáx respecto del control.",
+        "Disminuye la Vmáx y conserva el Kₘ, como en la no competitiva pura.",
+        "Aumentan simultáneamente el Kₘ y la Vmáx respecto del control."
       ],
-      "correcta": "B",
+      "correcta": "C",
       "imagen": "assets/biologia-1/visuales/enzimas-inhibicion-cinetica.svg",
       "imagen_alt": "La curva C alcanza una meseta inferior a la curva control A y comparte la misma concentración de sustrato a mitad de su propia Vmáx.",
       "explicacion": "En el modelo de inhibición no competitiva pura, el inhibidor reduce la fracción de enzima catalíticamente funcional. Disminuye Vmáx y Km permanece sin cambios."
@@ -651,14 +651,14 @@
     {
       "id": "enz-img-07",
       "subtema": "Enzimas · energía de activación",
-      "pregunta": "Según el perfil energético, ¿qué modificación produce la enzima sobre la reacción?",
+      "pregunta": "Según el perfil energético, ¿qué efecto produce la enzima sobre la reacción?",
       "opciones": [
-        "Eleva la energía de activación y vuelve más lenta la reacción.",
-        "Disminuye la energía de activación, sin modificar el ΔG global de la reacción.",
-        "Cambia la energía de los productos y convierte la reacción en endergónica.",
-        "Modifica la energía de reactivos y productos para desplazar el equilibrio."
+        "Modifica el ΔG y cambia la energía de reactivos y productos.",
+        "Aumenta la energía de activación para retrasar la formación de producto.",
+        "Desplaza el equilibrio al modificar la energía libre de los productos.",
+        "Reduce la energía de activación sin modificar el ΔG global."
       ],
-      "correcta": "B",
+      "correcta": "D",
       "imagen": "assets/biologia-1/visuales/enzimas-energia-activacion.svg",
       "imagen_alt": "Perfil energético con dos caminos: sin enzima posee un máximo más alto y con enzima un máximo más bajo, con mismos niveles inicial y final.",
       "explicacion": "La enzima ofrece una vía alternativa con menor energía de activación. No modifica la energía libre de reactivos y productos ni el ΔG de la reacción."
@@ -666,14 +666,14 @@
     {
       "id": "enz-img-08",
       "subtema": "Enzimas · concentración enzimática",
-      "pregunta": "El gráfico muestra velocidad inicial en función de la concentración de enzima, con sustrato constante y en exceso. ¿Qué relación representa?",
+      "pregunta": "Con [S] constante y en exceso, ¿qué relación se observa entre velocidad inicial y concentración de enzima?",
       "opciones": [
-        "Una relación inversa: al aumentar la enzima, disminuye la velocidad.",
-        "Una relación lineal directa: al aumentar la concentración de enzima, aumenta proporcionalmente la velocidad inicial.",
-        "Una curva sigmoidea por cooperatividad obligatoria.",
-        "Una velocidad constante, independientemente de la cantidad de enzima."
+        "Una relación directa: la velocidad aumenta proporcionalmente con [E].",
+        "Una relación inversa: la velocidad disminuye al aumentar [E].",
+        "Una meseta: la velocidad deja de depender de [E] desde el inicio.",
+        "Una respuesta sigmoidea: la velocidad depende de cooperatividad obligatoria."
       ],
-      "correcta": "B",
+      "correcta": "A",
       "imagen": "assets/biologia-1/visuales/enzimas-velocidad-concentracion-enzima.svg",
       "imagen_alt": "Gráfico lineal ascendente de velocidad inicial según concentración de enzima.",
       "explicacion": "Con sustrato en exceso y bajo las mismas condiciones, aumentar la concentración de enzima aumenta la cantidad de sitios activos disponibles y, por tanto, la velocidad inicial."
@@ -681,14 +681,14 @@
     {
       "id": "enz-img-09",
       "subtema": "Enzimas · pH",
-      "pregunta": "¿Qué representa el máximo de la curva de actividad en función del pH?",
+      "pregunta": "¿Qué información aporta el máximo de la curva de actividad en función del pH?",
       "opciones": [
-        "El pH al que la enzima presenta su actividad máxima u óptima.",
-        "El pH al que todas las enzimas celulares funcionan por igual.",
-        "El punto donde la proteína necesariamente se desnaturaliza.",
-        "La concentración de sustrato necesaria para alcanzar Km."
+        "El pH al que todas las enzimas celulares alcanzan la misma actividad.",
+        "El pH al que esa enzima presenta su mayor actividad.",
+        "El valor de pH al que se duplica la concentración de sustrato.",
+        "El punto en el que toda enzima pierde de manera irreversible su estructura."
       ],
-      "correcta": "A",
+      "correcta": "B",
       "imagen": "assets/biologia-1/visuales/enzimas-actividad-ph.svg",
       "imagen_alt": "Curva de campana de actividad enzimática frente al pH, con un máximo señalado como pH óptimo.",
       "explicacion": "Cada enzima presenta un pH óptimo en el que su actividad es máxima. Alejarse de ese valor puede modificar la ionización de grupos del sitio activo y alterar la conformación o la unión al sustrato."
@@ -696,12 +696,12 @@
     {
       "id": "enz-img-10",
       "subtema": "Enzimas · temperatura",
-      "pregunta": "¿Por qué la actividad enzimática disminuye bruscamente después de alcanzar la temperatura óptima?",
+      "pregunta": "¿Qué explica la caída pronunciada de actividad por encima de la temperatura óptima?",
       "opciones": [
-        "Porque la enzima consume todo el sustrato y deja de catalizar.",
-        "Porque el calor siempre convierte la enzima en una ribozima.",
-        "Porque el aumento de temperatura favorece la desnaturalización y altera la conformación del sitio activo.",
-        "Porque la energía de activación se vuelve igual a cero."
+        "La conversión espontánea de la proteína en una molécula de ARN catalítico.",
+        "La desaparición del sustrato por un cambio de equilibrio químico.",
+        "La pérdida de conformación funcional por desnaturalización térmica.",
+        "La reducción de la energía de activación hasta impedir la catálisis."
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/enzimas-temperatura.svg",
@@ -711,14 +711,14 @@
     {
       "id": "enz-img-11",
       "subtema": "Enzimas · regulación metabólica",
-      "pregunta": "En el esquema de una vía metabólica, ¿qué efecto ejerce el producto final sobre la primera enzima?",
+      "pregunta": "En la vía metabólica, ¿qué efecto ejerce el producto final cuando se acumula?",
       "opciones": [
-        "Activa irreversiblemente a todas las enzimas de la vía.",
-        "Inhibe una etapa inicial, frecuentemente mediante unión alostérica, para evitar la sobreproducción.",
-        "Se une al sustrato y lo transforma directamente en la primera etapa.",
-        "Aumenta la síntesis de todos los intermediarios sin regulación."
+        "Activa de forma irreversible todas las enzimas de la secuencia.",
+        "Se convierte en el sustrato de la primera reacción y reinicia la vía.",
+        "Aumenta la expresión de todas las enzimas para acelerar la síntesis.",
+        "Inhibe una enzima de una etapa inicial y limita su propia producción."
       ],
-      "correcta": "B",
+      "correcta": "D",
       "imagen": "assets/biologia-1/visuales/enzimas-feedback.svg",
       "imagen_alt": "Vía metabólica de tres pasos en la que el producto final envía una señal inhibitoria hacia la enzima E1.",
       "explicacion": "En la retroinhibición o feedback negativo, la acumulación del producto final inhibe una enzima de una etapa inicial de la vía. Así se evita producir más producto del necesario."
@@ -726,14 +726,14 @@
     {
       "id": "enz-img-12",
       "subtema": "Enzimas · regulación alostérica",
-      "pregunta": "¿Qué diferencia funcional hay entre el sitio activo y el sitio alostérico de una enzima?",
+      "pregunta": "¿Qué diferencia funcional existe entre los sitios activo y alostérico de una enzima?",
       "opciones": [
-        "Ambos son siempre el mismo lugar y cumplen idéntica función.",
-        "El sitio activo une el sustrato y realiza la catálisis; el sitio alostérico une efectores que regulan la actividad.",
-        "El sitio alostérico es donde se sintetizan los aminoácidos de la enzima.",
-        "El sitio activo solo se encuentra en enzimas alostéricas y el alostérico en todas las demás."
+        "El activo une el sustrato; el alostérico une efectores reguladores.",
+        "El activo une efectores; el alostérico realiza la catálisis del sustrato.",
+        "Ambos sitios son equivalentes y siempre ocupan la misma región.",
+        "El alostérico sintetiza aminoácidos y el activo degrada el producto."
       ],
-      "correcta": "B",
+      "correcta": "A",
       "imagen": "assets/biologia-1/visuales/enzimas-sitio-alosterico.svg",
       "imagen_alt": "Enzima con sitio activo donde encaja el sustrato y un sitio alostérico separado que une un efector regulador.",
       "explicacion": "El sitio activo reconoce al sustrato y participa en la catálisis. El sitio alostérico es una región reguladora distinta que une efectores y modifica la conformación y actividad enzimática."
