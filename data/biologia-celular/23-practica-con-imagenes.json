@@ -726,17 +726,17 @@
     {
       "id": "enz-img-12",
       "subtema": "Enzimas · regulación alostérica",
-      "pregunta": "¿Qué diferencia funcional existe entre la región que fija el sustrato y la que recibe el efector?",
+      "pregunta": "En la figura, el ligando azul se aproxima a A y el naranja a B. Si A fija el sustrato, ¿qué función cumple B?",
       "opciones": [
-        "La región activa une efectores; la alostérica fija el sustrato y lo transforma.",
-        "La región activa une sustrato; la alostérica une efectores reguladores.",
-        "Ambas regiones fijan sustrato, pero solo la alostérica realiza la catálisis.",
-        "La región activa une sustrato; la alostérica ancla un cofactor permanente sin regular la actividad."
+        "Es el sitio catalítico: allí se une el sustrato y se forma el producto.",
+        "Es regulador: une un efector que modula la actividad de A.",
+        "Es un sitio estructural que fija la subunidad a la membrana.",
+        "Es un sitio de anclaje para una coenzima que no afecta la catálisis."
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/enzimas-sitio-alosterico.svg",
       "imagen_alt": "Una enzima con dos cavidades a las que se aproximan moléculas diferentes.",
-      "explicacion": "El sitio activo reconoce al sustrato y participa en la catálisis. El sitio alostérico es una región reguladora distinta que une efectores y modifica la conformación y actividad enzimática."
+      "explicacion": "B es el sitio alostérico: une un efector distinto del sustrato y puede modificar la conformación y la actividad del sitio activo A."
     }
   ]
 }
