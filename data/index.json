@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-17T01:55:00.000Z",
+  "generado": "2026-11-19T00:55:00.000Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -65,13 +65,13 @@
           "id": "biologia-celular/10-tema-glucidos-convertido",
           "nombre": "Glúcidos",
           "archivo": "data/biologia-celular/10-tema-glucidos-convertido.json",
-          "preguntas": 50
+          "preguntas": 60
         },
         {
           "id": "biologia-celular/11-tema-lipidos-convertido",
           "nombre": "Lípidos",
           "archivo": "data/biologia-celular/11-tema-lipidos-convertido.json",
-          "preguntas": 30
+          "preguntas": 40
         },
         {
           "id": "biologia-celular/12-tema-membrana-plasmatica",
@@ -89,7 +89,7 @@
           "id": "biologia-celular/14-tema-nucleotidos-convertido",
           "nombre": "Nucleótidos y Ácidos Nucleicos",
           "archivo": "data/biologia-celular/14-tema-nucleotidos-convertido.json",
-          "preguntas": 30
+          "preguntas": 39
         },
         {
           "id": "biologia-celular/15-tema-parcial-completo-convertido",
