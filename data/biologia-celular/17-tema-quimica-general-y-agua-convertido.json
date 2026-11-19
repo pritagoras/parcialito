@@ -15,7 +15,12 @@
     },
     {
       "pregunta": "¿Cuál es la cantidad máxima de electrones que puede albergar el segundo nivel energético (n = 2) de un átomo?",
-      "opciones": ["2 electrones.", "8 electrones.", "18 electrones.", "32 electrones."],
+      "opciones": [
+        "2 electrones.",
+        "8 electrones.",
+        "18 electrones.",
+        "32 electrones."
+      ],
       "correcta": "B",
       "explicacion": "Aplicando la fórmula 2 · n², para n = 2 el cálculo es 2 · (2)² = 8 electrones como capacidad máxima para dicho nivel."
     },
@@ -109,7 +114,12 @@
     },
     {
       "pregunta": "¿Cuántos puentes de hidrógeno puede establecer, como máximo, una sola molécula de agua con sus vecinas en una disposición tetraédrica?",
-      "opciones": ["2 puentes de hidrógeno.", "6 puentes de hidrógeno.", "4 puentes de hidrógeno.", "8 puentes de hidrógeno."],
+      "opciones": [
+        "2 puentes de hidrógeno.",
+        "6 puentes de hidrógeno.",
+        "4 puentes de hidrógeno.",
+        "8 puentes de hidrógeno."
+      ],
       "correcta": "C",
       "explicacion": "Cada molécula de agua posee cuatro sitios de interacción (dos densidades positivas en los H y dos pares libres en el O), pudiendo formar hasta 4 puentes de H."
     },
@@ -170,7 +180,12 @@
     },
     {
       "pregunta": "En el agua pura a 25 °C, la concentración de protones [H⁺] es de 10⁻⁷ M. ¿Cuál es su valor de pH?",
-      "opciones": ["pH = 7", "pH = 14", "pH = 1", "pH = 0"],
+      "opciones": [
+        "pH = 7",
+        "pH = 14",
+        "pH = 1",
+        "pH = 0"
+      ],
       "correcta": "A",
       "explicacion": "El pH se define como el logaritmo negativo de la concentración de protones: pH = -log(10⁻⁷) = 7."
     },
@@ -261,6 +276,34 @@
       ],
       "correcta": "D",
       "explicacion": "Por cada carbono asimétrico se forman dos isómeros ópticos que son imágenes especulares no superponibles, denominados enantiómeros."
+    },
+    {
+      "id": "visual-agua-01",
+      "pregunta": "Según la distribución de cargas parciales de la imagen, ¿por qué la molécula de agua es un dipolo?",
+      "opciones": [
+        "Porque el oxígeno y los hidrógenos comparten los electrones de manera completamente simétrica.",
+        "Porque el oxígeno atrae más los electrones y, junto con la geometría angular, genera una distribución desigual de cargas.",
+        "Porque el agua posee una carga negativa neta.",
+        "Porque los enlaces O–H son iónicos y la molécula se separa espontáneamente."
+      ],
+      "correcta": "B",
+      "imagen": "assets/biologia-1/visuales/quimica-agua-dipolo.svg",
+      "imagen_alt": "Molécula angular de agua con oxígeno parcialmente negativo e hidrógenos parcialmente positivos.",
+      "explicacion": "El oxígeno es más electronegativo que el hidrógeno y atrae con mayor intensidad los electrones de los enlaces O–H. Como la molécula es angular, los dipolos de enlace no se cancelan y el agua es polar."
+    },
+    {
+      "id": "visual-agua-02",
+      "pregunta": "¿Qué interacción representa la línea punteada entre las dos moléculas de agua?",
+      "opciones": [
+        "Un enlace covalente O–H dentro de una misma molécula.",
+        "Un enlace peptídico entre dos moléculas.",
+        "Un puente de hidrógeno entre el H parcialmente positivo de una molécula y el O parcialmente negativo de otra.",
+        "Un enlace iónico por transferencia completa de electrones."
+      ],
+      "correcta": "C",
+      "imagen": "assets/biologia-1/visuales/quimica-puente-h.svg",
+      "imagen_alt": "Dos moléculas de agua; una línea punteada conecta el hidrógeno de una con el oxígeno de la otra.",
+      "explicacion": "El puente de hidrógeno es una interacción intermolecular: el H enlazado covalentemente al oxígeno de una molécula es atraído por el oxígeno parcialmente negativo de otra molécula."
     }
   ]
 }
