@@ -307,15 +307,15 @@
       "id": "practica-imagen-visual-nuc-01",
       "pregunta": "¿Cuál de las dos pentosas de la imagen es desoxirribosa?",
       "opciones": [
-        "B, porque en C2′ presenta un grupo amino.",
-        "A, porque en C2′ conserva un grupo OH.",
+        "A, porque el H sustituye al OH en C3′.",
+        "A, porque el grupo OH está ausente en C2′.",
         "B, porque en C2′ tiene H en lugar de OH.",
-        "A, porque en C2′ presenta un grupo fosfato."
+        "B, porque el oxígeno del anillo se encuentra ausente."
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/nucleotidos-pentosas.svg",
       "imagen_alt": "Dos anillos de cinco miembros con sustituyentes diferentes en el carbono 2′.",
-      "explicacion": "La desoxirribosa se diferencia de la ribosa porque en el carbono 2′ tiene un átomo de hidrógeno en lugar del grupo hidroxilo. Esa es la estructura B.",
+      "explicacion": "La desoxirribosa se diferencia de la ribosa por la ausencia de un grupo –OH en el carbono 2′: allí presenta H. En la figura, esa sustitución corresponde a B.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
     {
@@ -330,17 +330,17 @@
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/nucleotidos-c1prime.svg",
       "imagen_alt": "Pentosa numerada unida a una estructura nitrogenada mediante un enlace.",
-      "explicacion": "La base nitrogenada se une al carbono anomérico 1′ de la pentosa mediante un enlace β-N-glicosídico. El grupo fosfato no participa en esa unión.",
+      "explicacion": "La base nitrogenada se une al carbono anomérico 1′ de la pentosa mediante un enlace β-N-glicosídico. El fosfato no participa en esa unión.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
     {
       "id": "practica-imagen-visual-nuc-03",
       "pregunta": "¿En qué dirección se alarga una cadena de ácido nucleico durante la polimerización?",
       "opciones": [
-        "La cadena crece 3′→5′ y se agrega al extremo 5′.",
-        "La cadena crece 5′→3′ y se agrega al extremo 3′.",
-        "La cadena se extiende en dos sentidos desde ambos extremos.",
-        "La cadena crece 1′→4′ y se agrega al carbono 1′."
+        "La cadena crece 3′→5′ y el nuevo nucleótido se agrega al extremo 5′.",
+        "La cadena crece 5′→3′ y el nuevo nucleótido se agrega al extremo 3′.",
+        "La cadena se alarga simultáneamente desde los dos extremos.",
+        "La cadena crece 5′→3′, pero el nuevo nucleótido se incorpora al extremo 5′."
       ],
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/nucleotidos-fosfodiester.svg",
@@ -353,14 +353,14 @@
       "pregunta": "¿Cuál de las estructuras representa un nucleósido?",
       "opciones": [
         "B: base nitrogenada + pentosa + fosfato.",
-        "A y B: ambas poseen uno o más fosfatos.",
+        "A y B: ambas son nucleósidos porque contienen base y pentosa.",
         "A: base nitrogenada + pentosa, sin fosfato.",
-        "Ninguna: a ambas les falta una cadena peptídica."
+        "A: pentosa con fosfato, sin base nitrogenada."
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/nucleotidos-nucleosido.svg",
       "imagen_alt": "Dos esquemas con una base nitrogenada y una pentosa; uno muestra además un grupo fosfato.",
-      "explicacion": "Un nucleósido está formado por una base nitrogenada y una pentosa. La adición de uno o más grupos fosfato da lugar a un nucleótido.",
+      "explicacion": "Un nucleósido consta de una base nitrogenada unida a una pentosa. Cuando se incorpora uno o más grupos fosfato, la molécula pasa a ser un nucleótido.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
     {
@@ -375,7 +375,7 @@
       "correcta": "B",
       "imagen": "assets/biologia-1/visuales/nucleotidos-c1prime.svg",
       "imagen_alt": "Pentosa numerada conectada a una base nitrogenada a través de un enlace.",
-      "explicacion": "La base nitrogenada se une al carbono 1′ de la pentosa mediante un enlace β-N-glicosídico. La unión entre nucleótidos del esqueleto azúcar-fosfato, en cambio, es fosfodiéster.",
+      "explicacion": "La base nitrogenada se une al carbono 1′ de la pentosa mediante un enlace β-N-glicosídico. El enlace fosfodiéster, en cambio, conecta nucleótidos consecutivos en el esqueleto de la cadena.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
     {
@@ -593,30 +593,30 @@
       "subtema": "Enzimas · efectores alostéricos",
       "pregunta": "En el gráfico, ¿qué curva corresponde a la acción de un efector alostérico positivo?",
       "opciones": [
-        "Desplaza la curva hacia la derecha y exige más sustrato.",
-        "Reduce la meseta de velocidad hasta hacerla desaparecer.",
-        "Cambia la forma sigmoidea por una respuesta lineal.",
-        "A: desplazada hacia la izquierda, con menor K₀.₅ aparente."
+        "B: conserva la respuesta de control, sin desplazamiento horizontal.",
+        "C: se desplaza hacia la derecha y presenta mayor K₀.₅ aparente.",
+        "A: se desplaza hacia la derecha y presenta menor afinidad aparente.",
+        "A: se desplaza hacia la izquierda y presenta menor K₀.₅ aparente."
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/enzimas-efectores-alostericos.svg",
       "imagen_alt": "Tres curvas sigmoideas con distintos desplazamientos horizontales.",
-      "explicacion": "Un efector alostérico positivo estabiliza la conformación R (relajada, más activa) y desplaza la curva hacia la izquierda. Disminuye la concentración de sustrato necesaria para alcanzar una velocidad dada."
+      "explicacion": "La curva A está desplazada hacia la izquierda respecto del control. Esto indica que un efector positivo estabiliza la conformación R y reduce la concentración de sustrato necesaria para alcanzar una velocidad dada."
     },
     {
       "id": "enz-img-04",
       "subtema": "Enzimas · efectores alostéricos",
-      "pregunta": "¿Qué interpretación corresponde a la curva desplazada hacia la derecha?",
+      "pregunta": "En el gráfico, ¿qué curva corresponde a la acción de un efector alostérico negativo?",
       "opciones": [
-        "Estabiliza R y favorece la unión de sustrato.",
-        "Aumenta la concentración total de enzima disponible.",
-        "Estabiliza T y desplaza la curva hacia la derecha.",
-        "Elimina la necesidad de sustrato para la catálisis."
+        "A: se desplaza hacia la izquierda y presenta menor K₀.₅ aparente.",
+        "B: conserva la respuesta de control, sin desplazamiento horizontal.",
+        "C: se desplaza hacia la derecha y presenta mayor K₀.₅ aparente.",
+        "C: se desplaza hacia la izquierda y presenta mayor K₀.₅ aparente."
       ],
       "correcta": "C",
       "imagen": "assets/biologia-1/visuales/enzimas-efectores-alostericos.svg",
       "imagen_alt": "Tres curvas sigmoideas con distintos desplazamientos horizontales.",
-      "explicacion": "Un efector alostérico negativo estabiliza la conformación T (tensa, menos activa), de modo que se necesita una concentración mayor de sustrato para alcanzar la misma velocidad."
+      "explicacion": "La curva C está desplazada hacia la derecha respecto del control. Un efector negativo estabiliza la conformación T, reduce la respuesta al sustrato y aumenta el K₀.₅ aparente."
     },
     {
       "id": "enz-img-05",
