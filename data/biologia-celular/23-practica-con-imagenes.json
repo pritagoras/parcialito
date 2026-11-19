@@ -734,8 +734,8 @@
         "El sitio activo solo se encuentra en enzimas alostéricas y el alostérico en todas las demás."
       ],
       "correcta": "B",
-      "imagen": "assets/biologia-1/visuales/enzimas-feedback.svg",
-      "imagen_alt": "Esquema conceptual de regulación de una enzima en una vía metabólica mediante un efector que inhibe una etapa inicial.",
+      "imagen": "assets/biologia-1/visuales/enzimas-sitio-alosterico.svg",
+      "imagen_alt": "Enzima con sitio activo donde encaja el sustrato y un sitio alostérico separado que une un efector regulador.",
       "explicacion": "El sitio activo reconoce al sustrato y participa en la catálisis. El sitio alostérico es una región reguladora distinta que une efectores y modifica la conformación y actividad enzimática."
     }
   ]
