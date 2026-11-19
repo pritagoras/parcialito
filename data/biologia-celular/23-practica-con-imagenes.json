@@ -591,12 +591,12 @@
     {
       "id": "enz-img-03",
       "subtema": "Enzimas · efectores alostéricos",
-      "pregunta": "¿Qué cambio produce el efector positivo sobre la curva de una enzima alostérica?",
+      "pregunta": "En el gráfico, ¿qué curva corresponde a la acción de un efector alostérico positivo?",
       "opciones": [
         "Desplaza la curva hacia la derecha y exige más sustrato.",
         "Reduce la meseta de velocidad hasta hacerla desaparecer.",
         "Cambia la forma sigmoidea por una respuesta lineal.",
-        "Desplaza la curva hacia la izquierda."
+        "A: desplazada hacia la izquierda, con menor K₀.₅ aparente."
       ],
       "correcta": "D",
       "imagen": "assets/biologia-1/visuales/enzimas-efectores-alostericos.svg",
