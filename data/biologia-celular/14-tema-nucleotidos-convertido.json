@@ -26,13 +26,23 @@
     },
     {
       "pregunta": "¿Qué estructura se forma mediante la combinación exclusiva de un azúcar pentosa y una base nitrogenada, sin grupos fosfato?",
-      "opciones": ["Nucleótido monofosfato", "Nucleósido", "Dinucleótido", "Pirofosfato"],
+      "opciones": [
+        "Nucleótido monofosfato",
+        "Nucleósido",
+        "Dinucleótido",
+        "Pirofosfato"
+      ],
       "correcta": "B",
       "explicacion": "Un nucleósido resulta de la unión covalente entre la pentosa y la base nitrogenada; cuando se le adiciona al menos un grupo fosfato pasa a ser un nucleótido."
     },
     {
       "pregunta": "¿Qué tipo de enlace covalente une a la base nitrogenada con el carbono 1' de la pentosa?",
-      "opciones": ["Enlace fosfodiéster", "Puente de hidrógeno", "Enlace éster de alta energía", "Enlace N-glicosídico"],
+      "opciones": [
+        "Enlace fosfodiéster",
+        "Puente de hidrógeno",
+        "Enlace éster de alta energía",
+        "Enlace N-glicosídico"
+      ],
       "correcta": "D",
       "explicacion": "La base nitrogenada se une al azúcar pentosa mediante un enlace covalente N-glicosídico entre el carbono anomérico y un nitrógeno de la base."
     },
@@ -49,31 +59,56 @@
     },
     {
       "pregunta": "¿Cuáles son las bases nitrogenadas clasificadas como purinas o púricas?",
-      "opciones": ["Adenina y guanina.", "Citosina, timina y uracilo.", "Adenina y citosina.", "Guanina y uracilo."],
+      "opciones": [
+        "Adenina y guanina.",
+        "Citosina, timina y uracilo.",
+        "Adenina y citosina.",
+        "Guanina y uracilo."
+      ],
       "correcta": "A",
       "explicacion": "Las bases púricas poseen un anillo doble (núcleo de purina) e incluyen a la Adenina (A) y a la Guanina (G)."
     },
     {
       "pregunta": "¿Qué bases nitrogenadas se clasifican dentro de la familia de las pirimidinas o pirimidínicas?",
-      "opciones": ["Citosina, timina y uracilo.", "Adenina, guanina y uracilo.", "Adenina y timina.", "Guanina y citosina."],
+      "opciones": [
+        "Citosina, timina y uracilo.",
+        "Adenina, guanina y uracilo.",
+        "Adenina y timina.",
+        "Guanina y citosina."
+      ],
       "correcta": "A",
       "explicacion": "Las pirimidinas están formadas por un único anillo exagonal (núcleo de pirimidina) y comprenden a la Citosina (C), Timina (T) y Uracilo (U)."
     },
     {
       "pregunta": "¿En qué posición del anillo pentosa se diferencia la desoxirribosa de la ribosa por la ausencia de un grupo hidroxilo (-OH)?",
-      "opciones": ["En el carbono 1'.", "En el carbono 2'.", "En el carbono 3'.", "En el carbono 5'."],
+      "opciones": [
+        "En el carbono 1'.",
+        "En el carbono 2'.",
+        "En el carbono 3'.",
+        "En el carbono 5'."
+      ],
       "correcta": "B",
       "explicacion": "La desoxirribosa posee un átomo de H en el C2' en lugar del grupo -OH presente en el C2' de la ribosa."
     },
     {
       "pregunta": "¿Cómo se denomina el nucleósido formado por la unión de la base nitrogenada Adenina y el azúcar Ribosa?",
-      "opciones": ["Desoxiadenosina", "Adenosina", "Ácido adenílico", "Adenilato ciclasa"],
+      "opciones": [
+        "Desoxiadenosina",
+        "Adenosina",
+        "Ácido adenílico",
+        "Adenilato ciclasa"
+      ],
       "correcta": "B",
       "explicacion": "La combinación de la purina Adenina con la pentosa Ribosa forma el nucleósido denominado Adenosina."
     },
     {
       "pregunta": "¿Cuál es la sigla correspondiente a un desoxirribonucleótido trifosfato que contiene la base Citosina?",
-      "opciones": ["CTP", "CMP", "d-CTP", "d-CDP"],
+      "opciones": [
+        "CTP",
+        "CMP",
+        "d-CTP",
+        "d-CDP"
+      ],
       "correcta": "C",
       "explicacion": "Al estar constituido por desoxirribosa, tres fosfatos y citosina, la sigla estándar es d-CTP (desoxicitidina trifosfato)."
     },
@@ -90,25 +125,45 @@
     },
     {
       "pregunta": "¿Qué proceso catabólico celular provee la energía necesaria para fosforilar el ADP y regenerar ATP ($ADP + P_i \rightarrow ATP$)?",
-      "opciones": ["Traducción de proteínas", "Ateroesclerosis", "Transcripción de ARN", "Respiración celular"],
+      "opciones": [
+        "Traducción de proteínas",
+        "Ateroesclerosis",
+        "Transcripción de ARN",
+        "Respiración celular"
+      ],
       "correcta": "D",
       "explicacion": "La energía extraída de la degradación metabólica de los nutrientes durante la respiración celular impulsa la fosforilación de ADP para formar ATP."
     },
     {
       "pregunta": "¿Qué molécula señalizadora intracelular se sintetiza a partir del ATP por acción de la enzima adenilato ciclasa?",
-      "opciones": ["GTP", "NAD+", "FAD", "AMPc (AMP cíclico)"],
+      "opciones": [
+        "GTP",
+        "NAD+",
+        "FAD",
+        "AMPc (AMP cíclico)"
+      ],
       "correcta": "D",
       "explicacion": "La adenilato ciclasa transforma el ATP en AMPc (AMP cíclico) escindiendo un grupo pirofosfato; el AMPc actúa como un segundo mensajero clave."
     },
     {
       "pregunta": "Desde el punto de vista de su estructura química, ¿cómo se clasifican las coenzimas NAD⁺, NADP⁺ y FAD?",
-      "opciones": ["Proteínas oligoméricas", "Monosacáridos de reserva", "Dinucleótidos", "Lípidos anfipáticos"],
+      "opciones": [
+        "Proteínas oligoméricas",
+        "Monosacáridos de reserva",
+        "Dinucleótidos",
+        "Lípidos anfipáticos"
+      ],
       "correcta": "C",
       "explicacion": "NAD⁺, NADP⁺ y FAD son coenzimas dinucleotídicas que participan en reacciones metabólicas de óxido-reducción transportando hidrógenos y electrones."
     },
     {
       "pregunta": "Cuando la coenzima oxidada NAD⁺ capta un protón y dos electrones ($H^+ + 2e^-$), ¿en qué forma reducida se convierte?",
-      "opciones": ["NADP⁺", "FADH₂", "NADH", "AMPc"],
+      "opciones": [
+        "NADP⁺",
+        "FADH₂",
+        "NADH",
+        "AMPc"
+      ],
       "correcta": "C",
       "explicacion": "Al reducirse, el NAD⁺ acepta equivalente de reducción ($H^+ + 2e^-$) para transformarse en NADH."
     },
@@ -125,7 +180,12 @@
     },
     {
       "pregunta": "¿Qué tipo de enlace covalente conecta los monómeros de nucleótidos monofosfato a lo largo del esqueleto de un polinucleótido?",
-      "opciones": ["Puente fosfodiéster", "Enlace peptídico", "Puente de hidrógeno", "Enlace éster de colesterol"],
+      "opciones": [
+        "Puente fosfodiéster",
+        "Enlace peptídico",
+        "Puente de hidrógeno",
+        "Enlace éster de colesterol"
+      ],
       "correcta": "A",
       "explicacion": "El esqueleto covalente del ácido nucleico se forma mediante puentes fosfodiéster entre el grupo 3'-OH de una pentosa y el 5'-fosfato de la siguiente."
     },
@@ -164,7 +224,12 @@
     },
     {
       "pregunta": "¿Cuántos puentes de hidrógeno específicos se establecen entre el par complementario Guanina y Citosina en el ADN?",
-      "opciones": ["1 puente de hidrógeno", "2 puentes de hidrógeno", "3 puentes de hidrógeno", "4 puentes de hidrógeno"],
+      "opciones": [
+        "1 puente de hidrógeno",
+        "2 puentes de hidrógeno",
+        "3 puentes de hidrógeno",
+        "4 puentes de hidrógeno"
+      ],
       "correcta": "C",
       "explicacion": "El par G≡C se estabiliza mediante 3 puentes de hidrógeno, a diferencia del par A=T que forma 2 puentes de hidrógeno."
     },
@@ -203,19 +268,34 @@
     },
     {
       "pregunta": "¿Cuántos pares de bases (pb) se requieren para completar un giro de $360^\\circ$ en la doble hélice de ADN (distancia de 34 Å)?",
-      "opciones": ["10 pares de bases", "5 pares de bases", "20 pares de bases", "100 pares de bases"],
+      "opciones": [
+        "10 pares de bases",
+        "5 pares de bases",
+        "20 pares de bases",
+        "100 pares de bases"
+      ],
       "correcta": "A",
       "explicacion": "Cada par de bases dista 3,4 Å y gira 36º; por lo tanto, cada 10 pb (34 Å) la hélice completa un vuelta de 360º."
     },
     {
       "pregunta": "¿Cuál de las siguientes combinaciones de azúcar y base es exclusiva del ARN?",
-      "opciones": ["Desoxirribosa y Timina", "Ribosa y Uracilo", "Desoxirribosa y Uracilo", "Ribosa y Timina"],
+      "opciones": [
+        "Desoxirribosa y Timina",
+        "Ribosa y Uracilo",
+        "Desoxirribosa y Uracilo",
+        "Ribosa y Timina"
+      ],
       "correcta": "B",
       "explicacion": "El ARN contiene la pentosa Ribosa combinada con la pyrimidina Uracilo (en lugar de Timina)."
     },
     {
       "pregunta": "Si un fragmento de ADN bicatenario contiene un 20% de residuos de Adenina, ¿cuál será el porcentaje de Citosina presente?",
-      "opciones": ["20%", "60%", "40%", "30%"],
+      "opciones": [
+        "20%",
+        "60%",
+        "40%",
+        "30%"
+      ],
       "correcta": "D",
       "explicacion": "Si A = 20%, por complementariedad T = 20% (A+T = 40%). El 60% restante corresponde a C + G. Dado que C = G, Citosina es el 30%."
     },
@@ -251,6 +331,132 @@
       ],
       "correcta": "C",
       "explicacion": "El nucleótido entrante se une siempre con su grupo 5'-fosfato al grupo 3'-OH libre del último nucleótido, alargando la cadena en dirección 5' → 3'."
+    },
+    {
+      "id": "visual-nuc-01",
+      "pregunta": "¿Cuál de las dos pentosas de la imagen corresponde a la desoxirribosa?",
+      "opciones": [
+        "A, porque posee un grupo OH en el carbono 2′.",
+        "B, porque en el carbono 2′ presenta un H en lugar de un OH.",
+        "A, porque carece de oxígeno en el anillo.",
+        "B, porque posee seis carbonos."
+      ],
+      "correcta": "B",
+      "imagen": "assets/biologia-1/visuales/nucleotidos-pentosas.svg",
+      "imagen_alt": "Comparación de dos pentosas cíclicas: A presenta OH en el carbono 2 prima y B presenta H.",
+      "explicacion": "La desoxirribosa se diferencia de la ribosa porque en el carbono 2′ tiene un átomo de hidrógeno en lugar del grupo hidroxilo. Esa es la estructura B."
+    },
+    {
+      "id": "visual-nuc-02",
+      "pregunta": "¿Qué azúcar se representa en la estructura A?",
+      "opciones": [
+        "Ribosa, porque posee un grupo hidroxilo en el carbono 2′.",
+        "Desoxirribosa, porque carece del OH en 2′.",
+        "Glucosa, porque tiene seis carbonos.",
+        "Fructosa, porque tiene un grupo cetona."
+      ],
+      "correcta": "A",
+      "imagen": "assets/biologia-1/visuales/nucleotidos-pentosas.svg",
+      "imagen_alt": "La pentosa A contiene un grupo hidroxilo en el carbono 2 prima.",
+      "explicacion": "La ribosa posee un grupo –OH en el carbono 2′. La desoxirribosa, representada en B, tiene H en esa posición."
+    },
+    {
+      "id": "visual-nuc-03",
+      "pregunta": "¿En qué carbono se encuentra la diferencia química que permite distinguir ribosa de desoxirribosa?",
+      "opciones": [
+        "En el carbono 1′, donde se une la base nitrogenada.",
+        "En el carbono 2′, por la presencia o ausencia del grupo –OH.",
+        "En el carbono 3′, porque allí se une la base nitrogenada.",
+        "En el carbono 5′, porque allí se elimina el oxígeno del anillo."
+      ],
+      "correcta": "B",
+      "imagen": "assets/biologia-1/visuales/nucleotidos-pentosas.svg",
+      "imagen_alt": "Ribosa y desoxirribosa comparadas con foco en el sustituyente del carbono 2 prima.",
+      "explicacion": "La diferencia está en el C2′: la ribosa posee –OH y la desoxirribosa posee H. El carbono 1′ se utiliza para unir la base nitrogenada."
+    },
+    {
+      "id": "visual-nuc-04",
+      "pregunta": "¿Cuál de las estructuras de la imagen representa un nucleósido?",
+      "opciones": [
+        "A, porque está formado por una base nitrogenada unida a una pentosa.",
+        "B, porque posee base, pentosa y fosfato.",
+        "A y B, porque ambos poseen necesariamente fosfato.",
+        "Ninguna, porque un nucleósido está formado solo por fosfato."
+      ],
+      "correcta": "A",
+      "imagen": "assets/biologia-1/visuales/nucleotidos-nucleosido.svg",
+      "imagen_alt": "A muestra base nitrogenada unida a pentosa; B muestra esa misma combinación con un grupo fosfato adicional.",
+      "explicacion": "Un nucleósido está formado por una base nitrogenada y una pentosa. La adición de uno o más grupos fosfato da lugar a un nucleótido."
+    },
+    {
+      "id": "visual-nuc-05",
+      "pregunta": "¿Qué estructura de la imagen corresponde a un nucleótido?",
+      "opciones": [
+        "A, porque contiene únicamente una pentosa.",
+        "A, porque contiene base y pentosa, sin fosfato.",
+        "B, porque contiene base nitrogenada, pentosa y grupo fosfato.",
+        "B, porque contiene tres bases nitrogenadas y una pentosa."
+      ],
+      "correcta": "C",
+      "imagen": "assets/biologia-1/visuales/nucleotidos-nucleosido.svg",
+      "imagen_alt": "B representa una base unida a una pentosa y a un grupo fosfato.",
+      "explicacion": "El nucleótido es la unidad formada por base nitrogenada, pentosa y uno o más grupos fosfato; esa composición corresponde a B."
+    },
+    {
+      "id": "visual-nuc-06",
+      "pregunta": "¿Cuál es el criterio que permite clasificar la estructura A de la imagen como una base púrica?",
+      "opciones": [
+        "Posee dos anillos fusionados.",
+        "Posee un único anillo de seis miembros.",
+        "No contiene átomos de nitrógeno.",
+        "Tiene un grupo fosfato unido al anillo."
+      ],
+      "correcta": "A",
+      "imagen": "assets/biologia-1/visuales/nucleotidos-bases.svg",
+      "imagen_alt": "Comparación de un sistema de dos anillos fusionados en A y un anillo único en B.",
+      "explicacion": "Las purinas poseen dos anillos fusionados (uno de seis y otro de cinco miembros). Las pirimidinas poseen un solo anillo de seis miembros."
+    },
+    {
+      "id": "visual-nuc-07",
+      "pregunta": "¿Qué bases nitrogenadas pertenecen al grupo que muestra la estructura A?",
+      "opciones": [
+        "Citosina y timina.",
+        "Citosina y uracilo.",
+        "Adenina y guanina.",
+        "Timina y uracilo."
+      ],
+      "correcta": "C",
+      "imagen": "assets/biologia-1/visuales/nucleotidos-bases.svg",
+      "imagen_alt": "La estructura A representa el tipo de esqueleto nitrogenado de dos anillos propio de las purinas.",
+      "explicacion": "Adenina y guanina son purinas y presentan dos anillos fusionados. Citosina, timina y uracilo son pirimidinas de un solo anillo."
+    },
+    {
+      "id": "visual-nuc-08",
+      "pregunta": "¿Qué tipo de enlace se señala en el esquema de la cadena de ácido nucleico?",
+      "opciones": [
+        "Enlace peptídico entre aminoácidos.",
+        "Enlace fosfodiéster 3′–5′ entre nucleótidos.",
+        "Enlace glucosídico entre dos bases nitrogenadas.",
+        "Enlace éster entre glicerol y ácidos grasos."
+      ],
+      "correcta": "B",
+      "imagen": "assets/biologia-1/visuales/nucleotidos-fosfodiester.svg",
+      "imagen_alt": "Dos pentosas conectadas por un fosfato entre las posiciones 3 prima y 5 prima.",
+      "explicacion": "El enlace fosfodiéster une el grupo 3′-OH de una pentosa con el fosfato asociado al carbono 5′ de la siguiente, formando el esqueleto azúcar-fosfato."
+    },
+    {
+      "id": "visual-nuc-09",
+      "pregunta": "Si la pentosa de un nucleótido es la que se observa en B de la imagen, ¿en qué ácido nucleico se encuentra normalmente?",
+      "opciones": [
+        "En el ARN, porque el ARN posee desoxirribosa.",
+        "En el ADN, porque el ADN posee desoxirribosa.",
+        "En ambos por igual, porque ribosa y desoxirribosa son idénticas.",
+        "En ninguno, porque la desoxirribosa no integra nucleótidos."
+      ],
+      "correcta": "B",
+      "imagen": "assets/biologia-1/visuales/nucleotidos-pentosas.svg",
+      "imagen_alt": "La estructura B corresponde a desoxirribosa, que presenta H en el carbono 2 prima.",
+      "explicacion": "El ADN contiene desoxirribosa, mientras que el ARN contiene ribosa. La diferencia está en el sustituyente del carbono 2′."
     }
   ]
 }
