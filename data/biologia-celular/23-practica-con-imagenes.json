@@ -320,7 +320,7 @@
     },
     {
       "id": "practica-imagen-visual-nuc-02",
-      "pregunta": "¿En qué carbono de la pentosa se establece la unión con la base nitrogenada?",
+      "pregunta": "¿Cuál de las pentosas representadas integra normalmente el ARN?",
       "opciones": [
         "En C1′, el carbono anomérico del anillo de azúcar.",
         "En C2′, el carbono que diferencia ambas pentosas.",
@@ -330,7 +330,7 @@
       "correcta": "A",
       "imagen": "assets/biologia-1/visuales/nucleotidos-c1prime.svg",
       "imagen_alt": "Pentosa numerada unida a una estructura nitrogenada mediante un enlace.",
-      "explicacion": "La ribosa posee un grupo –OH en el carbono 2′. La desoxirribosa, representada en B, tiene H en esa posición.",
+      "explicacion": "El ARN contiene ribosa, que conserva el grupo –OH en el carbono 2′. En la figura, esa sustitución corresponde a A.",
       "subtema": "Nucleótidos y ácidos nucleicos"
     },
     {
