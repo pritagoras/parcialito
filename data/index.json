@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-19T00:55:00.000Z",
+  "generado": "2026-11-19T01:10:00.000Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -107,7 +107,7 @@
           "id": "biologia-celular/16-tema-proteinas-convertido",
           "nombre": "Proteínas",
           "archivo": "data/biologia-celular/16-tema-proteinas-convertido.json",
-          "preguntas": 30
+          "preguntas": 36
         },
         {
           "id": "biologia-celular/17-mix-adicional-primer-parcial",
@@ -119,7 +119,7 @@
           "id": "biologia-celular/17-tema-quimica-general-y-agua-convertido",
           "nombre": "Química general y agua",
           "archivo": "data/biologia-celular/17-tema-quimica-general-y-agua-convertido.json",
-          "preguntas": 25
+          "preguntas": 27
         },
         {
           "id": "biologia-celular/18-tema-respiracion",
