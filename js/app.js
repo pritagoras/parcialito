@@ -31,6 +31,7 @@ import { abrirFormalizacion, BANCO_ENUNCIADOS, BANCO_ARGUMENTOS, FORMULAS_ESTRUC
 const BANCO_FORMALIZACION = BANCO_ENUNCIADOS.length + BANCO_ARGUMENTOS.length + FORMULAS_ESTRUCTURA.length;
 import { abrirEnvioImagenes } from './envios.js?v=20261114-3';
 import { abrirComposicionQuimica } from './composicion-quimica.js?v=20261116-1';
+import { abrirSpotFase } from './spot-fase.js?v=20261122-1';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -786,6 +787,11 @@ function vistaInicio() {
         </div>
       </header>
       <p class="bajada">Elegí una materia y practicá con preguntas de opción múltiple.</p>
+      <button class="banner-juego" id="btn-spot-fase" type="button" aria-label="Nuevo juego: Encontrá la fase">
+        <span class="banner-juego-celula" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="banner-juego-texto"><span class="banner-juego-nuevo">NUEVO JUEGO</span><strong>Encontrá la fase</strong><small>Tocá las células en la fase de la mitosis que te piden antes de que se acabe el tiempo.</small></span>
+        <span class="banner-juego-accion">Jugar <b aria-hidden="true">↗</b></span>
+      </button>
       <section class="banner-imagenes" aria-label="Compartir imágenes">
         <div class="banner-imagenes-icono" aria-hidden="true">📸</div>
         <div class="banner-imagenes-texto">
@@ -944,6 +950,7 @@ function vistaInicio() {
     else avisar('No se encontró el banco del Segundo Parcial de IPC.');
   });
   document.getElementById('btn-lab')?.addEventListener('click', () => { Sonido.clic(); abrirLab({ app, volver: vistaInicio }); });
+  document.getElementById('btn-spot-fase')?.addEventListener('click', () => { Sonido.iniciar(); Sonido.clic(); abrirSpotFase({ app, volver: vistaInicio }); });
   document.getElementById('btn-instalar-app')?.addEventListener('click', instalarParcialito);
   document.getElementById('btn-errores')?.addEventListener('click', () => { Sonido.clic(); lanzarErrores(); });
   document.getElementById('btn-dificiles')?.addEventListener('click', () => { Sonido.clic(); lanzarDificiles(); });
