@@ -373,10 +373,18 @@ function resumenDominioTema(tema) {
   };
 }
 
+// Un tema "tiene contenido" si ofrece preguntas o tarjetas. Los que solo traen crucigrama u otra
+// actividad se juegan desde sus propios botones y no cuentan como tema de trivia.
+const tieneContenido = (t) => (t.preguntas || 0) > 0 || (t.tarjetas || 0) > 0;
+const temasConContenido = (materia) => materia.temas.filter(tieneContenido);
+
 function dominio(materia) {
-  if (!materia.temas.length) return 0;
-  const suma = materia.temas.reduce((s, t) => s + (estado.mejores[t.id]?.precision || 0), 0);
-  return Math.round(suma / materia.temas.length);
+  // El promedio se hace solo sobre temas con preguntas: los de crucigrama o tarjetas no tienen
+  // precisión y bajaban el porcentaje de la materia.
+  const temas = materia.temas.filter((t) => (t.preguntas || 0) > 0);
+  if (!temas.length) return 0;
+  const suma = temas.reduce((s, t) => s + (estado.mejores[t.id]?.precision || 0), 0);
+  return Math.round(suma / temas.length);
 }
 
 // ---------- Tarjetas tipo Anki ----------
@@ -748,14 +756,15 @@ function vistaInicio() {
     const totalPreg = m.temas.reduce((s, t) => s + (t.preguntas || 0), 0);
     const totalTarj = m.temas.reduce((s, t) => s + (t.tarjetas || 0), 0);
     const pct = dominio(m);
+    const nTemas = temasConContenido(m).length || m.temas.length;
 
     let metaTexto = '';
     if (totalPreg > 0 && totalTarj > 0) {
-      metaTexto = `${plural(m.temas.length, 'tema', 'temas')}, ${plural(totalPreg, 'pregunta', 'preguntas')} · ${plural(totalTarj, 'tarjeta', 'tarjetas')}`;
+      metaTexto = `${plural(nTemas, 'tema', 'temas')}, ${plural(totalPreg, 'pregunta', 'preguntas')} · ${plural(totalTarj, 'tarjeta', 'tarjetas')}`;
     } else if (totalTarj > 0) {
-      metaTexto = `${plural(m.temas.length, 'tema', 'temas')}, ${plural(totalTarj, 'tarjeta', 'tarjetas')}`;
+      metaTexto = `${plural(nTemas, 'tema', 'temas')}, ${plural(totalTarj, 'tarjeta', 'tarjetas')}`;
     } else {
-      metaTexto = `${plural(m.temas.length, 'tema', 'temas')}, ${plural(totalPreg, 'pregunta', 'preguntas')}`;
+      metaTexto = `${plural(nTemas, 'tema', 'temas')}, ${plural(totalPreg, 'pregunta', 'preguntas')}`;
     }
 
     return `
@@ -1823,7 +1832,7 @@ function vistaMateria(i) {
     if (nPreg > 0 && nTarj > 0) {
       textoDetalle = `${plural(nPreg, 'pregunta', 'preguntas')} · ${plural(nTarj, 'tarjeta', 'tarjetas')}`;
     } else if (nTarj > 0) {
-      textoDetalle = plural(nTarj, 'tarjeta', 'tarjetas');
+      textoDetalle = '🃏 ' + plural(nTarj, 'tarjeta', 'tarjetas');
     } else {
       textoDetalle = plural(nPreg, 'pregunta', 'preguntas');
     }
@@ -1832,9 +1841,9 @@ function vistaMateria(i) {
       textoDetalle += ` · ${dominioTema.dominadas} dominadas`;
     }
 
-    // Un tema que solo tiene crucigrama (sin preguntas ni tarjetas) no se muestra como tema: solo su fila de crucigrama
-    const soloCruci = tieneCrucigrama(t) && nPreg === 0 && nTarj === 0;
-    if (soloCruci) return '';
+    // Un tema sin preguntas ni tarjetas (solo crucigrama u otra actividad) no se muestra acá:
+    // se juega desde "Crucigramas" o "Juegos interactivos". Así nunca aparece un "0 preguntas".
+    if (!tieneContenido(t)) return '';
 
     const barraDominio = nPreg > 0 ? `
       <span class="tema-progreso" role="progressbar" aria-label="Dominio de ${esc(t.nombre)}" aria-valuemin="0" aria-valuemax="${dominioTema.total}" aria-valuenow="${dominioTema.dominadas}">
