@@ -1145,44 +1145,6 @@
       ]
     },
     {
-      "id": "ipc-p2-popper-031",
-      "materia": "IPC",
-      "parcial": "Segundo Parcial",
-      "autor": "Karl Popper",
-      "subtema": "Demarcación y falsabilidad",
-      "enunciado": "a",
-      "opciones": [
-        {
-          "id": "A",
-          "texto": "a"
-        },
-        {
-          "id": "B",
-          "texto": "b"
-        },
-        {
-          "id": "C",
-          "texto": "c"
-        },
-        {
-          "id": "D",
-          "texto": "d"
-        }
-      ],
-      "respuestaCorrecta": "A",
-      "justificacionCorrecta": "",
-      "expansionEstudio": [
-        {
-          "pregunta": "¿Qué distinción conceptual permite resolver esta consigna?",
-          "respuesta": ""
-        },
-        {
-          "pregunta": "¿Qué error lógico o epistemológico conviene evitar?",
-          "respuesta": "No confundir una experiencia perceptiva con una justificación lógica, ni la resistencia provisional a pruebas con una verificación definitiva de la teoría."
-        }
-      ]
-    },
-    {
       "id": "ipc-p2-popper-032",
       "materia": "IPC",
       "parcial": "Segundo Parcial",

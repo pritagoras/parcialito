@@ -1986,7 +1986,8 @@
         }
       ],
       "respuestaCorrecta": "B",
-      "justificacionCorrecta": "Respuesta: Anomalía. El resultado no encaja con las expectativas del paradigma y resiste controles, por lo que es una anomalía. Que persista no alcanza, por sí solo, para afirmar que la comunidad atraviesa una crisis."
+      "justificacionCorrecta": "Respuesta: Anomalía. El resultado no encaja con las expectativas del paradigma y resiste controles, por lo que es una anomalía. Que persista no alcanza, por sí solo, para afirmar que la comunidad atraviesa una crisis.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-056",
@@ -2014,7 +2015,8 @@
         }
       ],
       "respuestaCorrecta": "A",
-      "justificacionCorrecta": "La justificación correcta es: El resultado no encaja con las expectativas del paradigma y resiste controles, por lo que es una anomalía. Que persista no alcanza, por sí solo, para afirmar que la comunidad atraviesa una crisis."
+      "justificacionCorrecta": "La justificación correcta es: El resultado no encaja con las expectativas del paradigma y resiste controles, por lo que es una anomalía. Que persista no alcanza, por sí solo, para afirmar que la comunidad atraviesa una crisis.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-057",
@@ -2042,7 +2044,8 @@
         }
       ],
       "respuestaCorrecta": "C",
-      "justificacionCorrecta": "Respuesta: Anomalía. La discrepancia persistente entre el resultado y lo que el paradigma permite esperar constituye una anomalía. El caso no describe todavía una crisis de toda la disciplina."
+      "justificacionCorrecta": "Respuesta: Anomalía. La discrepancia persistente entre el resultado y lo que el paradigma permite esperar constituye una anomalía. El caso no describe todavía una crisis de toda la disciplina.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-058",
@@ -2070,7 +2073,8 @@
         }
       ],
       "respuestaCorrecta": "A",
-      "justificacionCorrecta": "La justificación correcta es: La discrepancia persistente entre el resultado y lo que el paradigma permite esperar constituye una anomalía. El caso no describe todavía una crisis de toda la disciplina."
+      "justificacionCorrecta": "La justificación correcta es: La discrepancia persistente entre el resultado y lo que el paradigma permite esperar constituye una anomalía. El caso no describe todavía una crisis de toda la disciplina.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-059",
@@ -2098,7 +2102,8 @@
         }
       ],
       "respuestaCorrecta": "B",
-      "justificacionCorrecta": "Respuesta: Enigma. Es un enigma porque se trata de un problema que la comunidad considera resoluble mediante los recursos teóricos, matemáticos e instrumentales del paradigma vigente."
+      "justificacionCorrecta": "Respuesta: Enigma. Es un enigma porque se trata de un problema que la comunidad considera resoluble mediante los recursos teóricos, matemáticos e instrumentales del paradigma vigente.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-060",
@@ -2126,7 +2131,8 @@
         }
       ],
       "respuestaCorrecta": "A",
-      "justificacionCorrecta": "La justificación correcta es: Es un enigma porque se trata de un problema que la comunidad considera resoluble mediante los recursos teóricos, matemáticos e instrumentales del paradigma vigente."
+      "justificacionCorrecta": "La justificación correcta es: Es un enigma porque se trata de un problema que la comunidad considera resoluble mediante los recursos teóricos, matemáticos e instrumentales del paradigma vigente.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-061",
@@ -2154,7 +2160,8 @@
         }
       ],
       "respuestaCorrecta": "C",
-      "justificacionCorrecta": "Respuesta: Enigma. El problema es un enigma de ciencia normal: el paradigma delimita qué pregunta investigar y proporciona modelos y procedimientos para intentar resolverla."
+      "justificacionCorrecta": "Respuesta: Enigma. El problema es un enigma de ciencia normal: el paradigma delimita qué pregunta investigar y proporciona modelos y procedimientos para intentar resolverla.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-062",
@@ -2182,7 +2189,8 @@
         }
       ],
       "respuestaCorrecta": "A",
-      "justificacionCorrecta": "La justificación correcta es: El problema es un enigma de ciencia normal: el paradigma delimita qué pregunta investigar y proporciona modelos y procedimientos para intentar resolverla."
+      "justificacionCorrecta": "La justificación correcta es: El problema es un enigma de ciencia normal: el paradigma delimita qué pregunta investigar y proporciona modelos y procedimientos para intentar resolverla.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-063",
@@ -2210,7 +2218,8 @@
         }
       ],
       "respuestaCorrecta": "B",
-      "justificacionCorrecta": "Respuesta: Crisis. La acumulación de anomalías relevantes afecta compromisos centrales y debilita la confianza comunitaria. Esa situación más amplia caracteriza una crisis, no una anomalía aislada."
+      "justificacionCorrecta": "Respuesta: Crisis. La acumulación de anomalías relevantes afecta compromisos centrales y debilita la confianza comunitaria. Esa situación más amplia caracteriza una crisis, no una anomalía aislada.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-064",
@@ -2238,7 +2247,8 @@
         }
       ],
       "respuestaCorrecta": "A",
-      "justificacionCorrecta": "La justificación correcta es: La acumulación de anomalías relevantes afecta compromisos centrales y debilita la confianza comunitaria. Esa situación más amplia caracteriza una crisis, no una anomalía aislada."
+      "justificacionCorrecta": "La justificación correcta es: La acumulación de anomalías relevantes afecta compromisos centrales y debilita la confianza comunitaria. Esa situación más amplia caracteriza una crisis, no una anomalía aislada.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-065",
@@ -2266,7 +2276,8 @@
         }
       ],
       "respuestaCorrecta": "C",
-      "justificacionCorrecta": "Respuesta: Crisis. El caso reúne los rasgos de una crisis kuhniana: anomalías persistentes y relevantes, cuestionamiento de compromisos básicos, debate sobre fundamentos y debilitamiento de la confianza en el paradigma."
+      "justificacionCorrecta": "Respuesta: Crisis. El caso reúne los rasgos de una crisis kuhniana: anomalías persistentes y relevantes, cuestionamiento de compromisos básicos, debate sobre fundamentos y debilitamiento de la confianza en el paradigma.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-066",
@@ -2294,7 +2305,8 @@
         }
       ],
       "respuestaCorrecta": "A",
-      "justificacionCorrecta": "La justificación correcta es: El caso reúne los rasgos de una crisis kuhniana: anomalías persistentes y relevantes, cuestionamiento de compromisos básicos, debate sobre fundamentos y debilitamiento de la confianza en el paradigma."
+      "justificacionCorrecta": "La justificación correcta es: El caso reúne los rasgos de una crisis kuhniana: anomalías persistentes y relevantes, cuestionamiento de compromisos básicos, debate sobre fundamentos y debilitamiento de la confianza en el paradigma.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-067",
@@ -2322,7 +2334,8 @@
         }
       ],
       "respuestaCorrecta": "A",
-      "justificacionCorrecta": "Respuesta: Paradigma. El conjunto de compromisos, prácticas, valores y ejemplares compartidos constituye un paradigma o matriz disciplinar. No se reduce a una hipótesis aislada ni a una sola ley."
+      "justificacionCorrecta": "Respuesta: Paradigma. El conjunto de compromisos, prácticas, valores y ejemplares compartidos constituye un paradigma o matriz disciplinar. No se reduce a una hipótesis aislada ni a una sola ley.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-068",
@@ -2350,7 +2363,8 @@
         }
       ],
       "respuestaCorrecta": "A",
-      "justificacionCorrecta": "La justificación correcta es: El conjunto de compromisos, prácticas, valores y ejemplares compartidos constituye un paradigma o matriz disciplinar. No se reduce a una hipótesis aislada ni a una sola ley."
+      "justificacionCorrecta": "La justificación correcta es: El conjunto de compromisos, prácticas, valores y ejemplares compartidos constituye un paradigma o matriz disciplinar. No se reduce a una hipótesis aislada ni a una sola ley.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-069",
@@ -2378,7 +2392,8 @@
         }
       ],
       "respuestaCorrecta": "C",
-      "justificacionCorrecta": "Respuesta: Paradigma. Ese marco común de supuestos, valores, métodos y ejemplares organiza la ciencia normal. Esa función compartida es característica de un paradigma."
+      "justificacionCorrecta": "Respuesta: Paradigma. Ese marco común de supuestos, valores, métodos y ejemplares organiza la ciencia normal. Esa función compartida es característica de un paradigma.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-070",
@@ -2406,7 +2421,8 @@
         }
       ],
       "respuestaCorrecta": "A",
-      "justificacionCorrecta": "La justificación correcta es: Ese marco común de supuestos, valores, métodos y ejemplares organiza la ciencia normal. Esa función compartida es característica de un paradigma."
+      "justificacionCorrecta": "La justificación correcta es: Ese marco común de supuestos, valores, métodos y ejemplares organiza la ciencia normal. Esa función compartida es característica de un paradigma.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-071",
@@ -2434,7 +2450,8 @@
         }
       ],
       "respuestaCorrecta": "B",
-      "justificacionCorrecta": "Respuesta: Inconmensurabilidad. La inconmensurabilidad señala que los paradigmas no siempre pueden compararse mediante un patrón único y neutral, porque organizan conceptos, problemas y criterios de evaluación de manera diferente. No implica que sea imposible dialogar."
+      "justificacionCorrecta": "Respuesta: Inconmensurabilidad. La inconmensurabilidad señala que los paradigmas no siempre pueden compararse mediante un patrón único y neutral, porque organizan conceptos, problemas y criterios de evaluación de manera diferente. No implica que sea imposible dialogar.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-072",
@@ -2462,7 +2479,8 @@
         }
       ],
       "respuestaCorrecta": "A",
-      "justificacionCorrecta": "La justificación correcta es: La inconmensurabilidad señala que los paradigmas no siempre pueden compararse mediante un patrón único y neutral, porque organizan conceptos, problemas y criterios de evaluación de manera diferente. No implica que sea imposible dialogar."
+      "justificacionCorrecta": "La justificación correcta es: La inconmensurabilidad señala que los paradigmas no siempre pueden compararse mediante un patrón único y neutral, porque organizan conceptos, problemas y criterios de evaluación de manera diferente. No implica que sea imposible dialogar.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-073",
@@ -2490,7 +2508,8 @@
         }
       ],
       "respuestaCorrecta": "C",
-      "justificacionCorrecta": "Respuesta: Inconmensurabilidad. La inconmensurabilidad no significa incomunicación absoluta ni relativismo total. Indica que no hay una medida completamente neutral y compartida que resuelva automáticamente la comparación entre paradigmas."
+      "justificacionCorrecta": "Respuesta: Inconmensurabilidad. La inconmensurabilidad no significa incomunicación absoluta ni relativismo total. Indica que no hay una medida completamente neutral y compartida que resuelva automáticamente la comparación entre paradigmas.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-074",
@@ -2518,7 +2537,8 @@
         }
       ],
       "respuestaCorrecta": "A",
-      "justificacionCorrecta": "La justificación correcta es: La inconmensurabilidad no significa incomunicación absoluta ni relativismo total. Indica que no hay una medida completamente neutral y compartida que resuelva automáticamente la comparación entre paradigmas."
+      "justificacionCorrecta": "La justificación correcta es: La inconmensurabilidad no significa incomunicación absoluta ni relativismo total. Indica que no hay una medida completamente neutral y compartida que resuelva automáticamente la comparación entre paradigmas.",
+      "expansionEstudio": []
     },
     {
       "id": "ipc-p2-kuhn-075",

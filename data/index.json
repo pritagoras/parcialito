@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-19T02:00:00.000Z",
+  "generado": "2026-11-22T20:28:30Z",
   "materias": [
     {
       "id": "biologia-celular",
@@ -147,7 +147,7 @@
         },
         {
           "id": "biologia-celular/22-tema-bioelementos-y-sales-minerales",
-          "nombre": "Bioelementos y sales minerales · Complemento del texto",
+          "nombre": "Bioelementos y sales minerales (complemento del texto)",
           "archivo": "data/biologia-celular/22-tema-bioelementos-y-sales-minerales.json",
           "preguntas": 12
         },
@@ -412,6 +412,12 @@
           "nombre": "Hacking: conceptos y distinciones",
           "archivo": "data/ipc-2/09-hacking-conceptos.json",
           "preguntas": 30
+        },
+        {
+          "id": "ipc-2/10-primer-parcial",
+          "nombre": "Primer Parcial · Banco adicional",
+          "archivo": "data/ipc-2/10-primer-parcial.json",
+          "preguntas": 55
         }
       ],
       "segundoParcial": {
