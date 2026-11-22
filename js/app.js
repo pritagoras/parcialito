@@ -57,6 +57,7 @@ const COLORES = ['#9B7BFF', '#FFB938', '#4FE0A0', '#FF7AA8', '#5CC8FF', '#FF8A5C
 const HITOS = [3, 5, 10, 15, 20, 30, 50];   // rachas que disparan festejo
 const MEGACLASE_TEMA_ID = 'megaclase-marucbc-2026';
 const MEGACLASE_TOTAL = 135;
+const resumenesInicioCache = new Map();
 
 let indice = null;          // contenido de data/index.json
 const cache = new Map();    // idTema -> preguntas ya cargadas
@@ -743,11 +744,6 @@ function vistaInicio() {
   juego = null;
   sesionT = null;
   const nErrores = Object.keys(estado.errores).length;
-  const dominadasMegaclase = Math.min(
-    Object.values(progresoMCDe(MEGACLASE_TEMA_ID)).filter((dato) => dato?.dominada).length,
-    MEGACLASE_TOTAL,
-  );
-
   const tarjetas = indice.materias.map((m, i) => {
     const totalPreg = m.temas.reduce((s, t) => s + (t.preguntas || 0), 0);
     const totalTarj = m.temas.reduce((s, t) => s + (t.tarjetas || 0), 0);
@@ -839,27 +835,27 @@ function vistaInicio() {
         <p class="sp-descripcion">Introducción al Pensamiento Científico. Se recuperaron los temas, las tarjetas de repaso y el banco completo del segundo parcial.</p>
         <button class="sp-tema" id="btn-ipc-temas-home" type="button">
           <span class="sp-tema-icono" aria-hidden="true">📚</span>
-          <span class="sp-tema-texto"><strong>Explorar todos los temas</strong><small>9 temas · 154 preguntas + 100 tarjetas SM-2</small></span>
+          <span class="sp-tema-texto"><strong>Explorar todos los temas</strong><small data-resumen-inicio="ipc-temas">Cargando resumen…</small></span>
           <span class="sp-tema-accion">Entrar <b aria-hidden="true">↗</b></span>
         </button>
         <button class="sp-tema" id="btn-ipc-primer-home" type="button">
           <span class="sp-tema-icono" aria-hidden="true">📘</span>
-          <span class="sp-tema-texto"><strong>Primer parcial · banco completo</strong><small>55 preguntas · opción múltiple y explicación</small></span>
+          <span class="sp-tema-texto"><strong>Primer parcial · banco completo</strong><small data-resumen-inicio="ipc-primer">Cargando resumen…</small></span>
           <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
         </button>
         <button class="sp-tema" id="btn-ipc-segundo-home" type="button">
           <span class="sp-tema-icono" aria-hidden="true">📜</span>
-          <span class="sp-tema-texto"><strong>Segundo parcial · banco completo</strong><small>286 preguntas · 364 tarjetas · modelo de 9 puntos y guía de Kuhn</small></span>
+          <span class="sp-tema-texto"><strong>Segundo parcial · banco completo</strong><small data-resumen-inicio="ipc-segundo">Cargando resumen…</small></span>
           <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
         </button>
       </section>
       <section class="banner-segundo banner-megaclase" aria-labelledby="megaclase-titulo">
         <div class="sp-cabecera"><span class="sp-sello">✦ MEGACLASE · MARU</span><span class="sp-numero">CBC · 2026</span></div>
         <h2 id="megaclase-titulo">Repaso del segundo parcial</h2>
-        <p class="sp-descripcion">Practicá las 135 preguntas del compilado con respuesta explicada y sus figuras originales. Las que ya dominás quedan al final cuando vuelvas.</p>
+        <p class="sp-descripcion">Practicá las <span data-resumen-inicio="megaclase">preguntas del compilado</span> con respuesta explicada y sus figuras originales. Las que ya dominás quedan al final cuando vuelvas.</p>
         <button class="sp-tema" id="btn-megaclase" type="button">
           <span class="sp-tema-icono" aria-hidden="true">📝</span>
-          <span class="sp-tema-texto"><strong>Entrar al repaso de Maru</strong><small>Opción múltiple · ${dominadasMegaclase}/${MEGACLASE_TOTAL} dominadas</small></span>
+          <span class="sp-tema-texto"><strong>Entrar al repaso de Maru</strong><small data-resumen-inicio="megaclase-progreso">Opción múltiple · Cargando resumen…</small></span>
           <span class="sp-tema-accion">Practicar <b aria-hidden="true">↗</b></span>
         </button>
       </section>
@@ -963,6 +959,71 @@ function vistaInicio() {
     b.addEventListener('click', () => { Sonido.clic(); vistaMateria(Number(b.dataset.materia)); }));
   pintarTarjetasInicio();
   pintarResumenSegundoParcial();
+  cargarResumenesInicio();
+}
+
+async function jsonResumenInicio(archivo) {
+  if (!resumenesInicioCache.has(archivo)) {
+    resumenesInicioCache.set(archivo, fetch(archivo, { cache: 'no-cache' }).then((r) => {
+      if (!r.ok) throw new Error(`No se pudo leer ${archivo} (${r.status})`);
+      return r.json();
+    }));
+  }
+  return resumenesInicioCache.get(archivo);
+}
+
+async function contarJsonInicio(archivo, clave) {
+  const json = await jsonResumenInicio(archivo);
+  if (!Array.isArray(json[clave])) throw new Error(`${archivo} no contiene ${clave}.`);
+  return json[clave].length;
+}
+
+async function cargarResumenesInicio() {
+  const mostrar = (clave, texto) => {
+    const el = app.querySelector(`[data-resumen-inicio="${clave}"]`);
+    if (el) el.textContent = texto;
+  };
+  const materiaIPC = indice.materias.find((m) => m.id === 'ipc-2');
+  const temasIPC = materiaIPC?.temas || [];
+  const segundoIPC = materiaIPC?.segundoParcial;
+  const resolver = async (clave, tarea, alFallar) => {
+    try { mostrar(clave, await tarea()); }
+    catch { mostrar(clave, alFallar); }
+  };
+  void resolver('ipc-temas', async () => {
+    const conteos = await Promise.all(temasIPC.map(async (t) => {
+      const json = await jsonResumenInicio(t.archivo);
+      if (!Array.isArray(json.preguntas)) throw new Error(`${t.archivo} no contiene preguntas.`);
+      return [json.preguntas.length, Array.isArray(json.tarjetas) ? json.tarjetas.length : 0];
+    }));
+    const preguntas = conteos.reduce((s, x) => s + x[0], 0);
+    const tarjetas = conteos.reduce((s, x) => s + x[1], 0);
+    return `${plural(temasIPC.length, 'tema', 'temas')} · ${plural(preguntas, 'pregunta', 'preguntas')} + ${tarjetas} tarjetas SM-2`;
+  }, 'Temas disponibles · opción múltiple y tarjetas SM-2');
+  void resolver('ipc-primer', async () => {
+    const archivo = materiaIPC?.primerParcial?.archivo;
+    if (!archivo) throw new Error('No se encontró el banco.');
+    const n = await contarJsonInicio(archivo, 'preguntas');
+    return `${plural(n, 'pregunta', 'preguntas')} · opción múltiple y explicación`;
+  }, 'Banco de opción múltiple y explicación');
+  void resolver('ipc-segundo', async () => {
+    const autores = segundoIPC?.autores || [];
+    const [preguntas, tarjetas] = await Promise.all([
+      Promise.all(autores.map((a) => contarJsonInicio(a.archivo, 'preguntas'))).then((x) => x.reduce((s, n) => s + n, 0)),
+      Promise.all(autores.map((a) => contarJsonInicio(a.archivo, 'tarjetas'))).then((x) => x.reduce((s, n) => s + n, 0)),
+    ]);
+    if (!autores.length) throw new Error('No se encontraron bloques.');
+    return `${preguntas} preguntas · ${tarjetas} tarjetas · modelo de 9 puntos y guía de Kuhn`;
+  }, 'Banco completo · modelo de 9 puntos y guía de Kuhn');
+  void resolver('megaclase', async () => {
+    const n = await contarJsonInicio('data/megaclase-marucbc-2026.json', 'preguntas');
+    return `${plural(n, 'pregunta', 'preguntas')} del compilado`;
+  }, 'del compilado');
+  void resolver('megaclase-progreso', async () => {
+    const total = await contarJsonInicio('data/megaclase-marucbc-2026.json', 'preguntas');
+    const dominadas = Math.min(Object.values(progresoMCDe(MEGACLASE_TEMA_ID)).filter((dato) => dato?.dominada).length, total);
+    return `Opción múltiple · ${dominadas}/${total} dominadas`;
+  }, 'Opción múltiple · progreso disponible');
 }
 
 // Segundo parcial: junta TODOS los JSON de la carpeta segundo-parcial/ en un único juego.
@@ -1020,7 +1081,7 @@ let primerParcialPool = null;
 async function cargarPrimerParcial() {
   if (primerParcialPool) return primerParcialPool;
   const materia = indice.materias.find((m) => m.id === 'biologia-celular');
-  const tema = materia?.temas.find((t) => /15-tema-parcial-completo-convertido/.test(t.archivo || ''));
+  const tema = materia?.temas.find((t) => /parcial completo.*banco de preguntas/i.test(t.nombre || ''));
   if (!materia || !tema) throw new Error('No se encontró el banco del Primer parcial de Biología 1.');
   const originales = await cargarTema(tema, materia);
   if (!originales.length) throw new Error('El banco original del Primer parcial está vacío.');
@@ -1029,20 +1090,7 @@ async function cargarPrimerParcial() {
   }
 
   // Bancos adicionales independientes: se pueden retirar sin modificar el JSON original.
-  const temasExtra = [
-    {
-      id: 'biologia-celular/mix-adicional-primer-parcial',
-      nombre: 'Preguntas adicionales del Primer parcial · Lote 1',
-      archivo: 'data/biologia-celular/16-mix-adicional-primer-parcial.json',
-      preguntas: 40,
-    },
-    {
-      id: 'biologia-celular/mix-adicional-primer-parcial-2',
-      nombre: 'Preguntas adicionales del Primer parcial · Lote 2',
-      archivo: 'data/biologia-celular/17-mix-adicional-primer-parcial.json',
-      preguntas: 50,
-    },
-  ];
+  const temasExtra = materia.temas.filter((t) => /adicional.*mix primer parcial/i.test(t.nombre || ''));
   const ids = new Set(originales.map((q) => q.id));
   const adicionales = [];
   for (const temaExtra of temasExtra) {

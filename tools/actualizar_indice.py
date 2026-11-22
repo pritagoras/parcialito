@@ -20,7 +20,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-from validar import DATA, RAIZ, SEGUNDO_PARCIAL, archivos_de_preguntas, archivos_segundo_parcial, validar_archivo
+from validar import DATA, RAIZ, SEGUNDO_PARCIAL, archivos_de_preguntas, archivos_ipc, archivos_segundo_parcial, validar_archivo, validar_ids_ipc
 
 
 def leer_meta_materia(carpeta: Path) -> dict:
@@ -63,6 +63,23 @@ def main() -> int:
     archivos = archivos_de_preguntas()
     hay_errores = False
     por_materia = {}
+
+    # IPC de segundo parcial usa un esquema propio y no se publica en data/index.json.
+    # Igual se valida porque este script es el paso que habilita el deploy.
+    duplicados_ipc = validar_ids_ipc()
+    for ruta in archivos_ipc():
+        errores, avisos, _, _ = validar_archivo(ruta)
+        errores.extend(duplicados_ipc.get(ruta, []))
+        rel = ruta.relative_to(RAIZ)
+        if errores:
+            hay_errores = True
+            print(f"[ERROR] {rel}")
+            for m in errores:
+                print(f"   x {m}")
+        else:
+            print(f"[   ok] {rel}")
+        for m in avisos:
+            print(f"[aviso] {rel}: {m}")
 
     for ruta in archivos:
         errores, avisos, n, datos = validar_archivo(ruta)

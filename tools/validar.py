@@ -107,6 +107,9 @@ def validar_archivo(ruta: Path):
     if not isinstance(datos, dict):
         return ["La raíz del archivo debe ser un objeto { ... }."], [], 0, None
 
+    if ruta.parent.name == "ipc-segundo-parcial":
+        return validar_archivo_ipc(datos)
+
     for campo in ("materia", "tema"):
         if not isinstance(datos.get(campo), str) or not datos[campo].strip():
             errores.append(f'Falta el campo "{campo}" (texto no vacío).')
@@ -206,6 +209,85 @@ def validar_archivo(ruta: Path):
     return errores, avisos, len(preguntas), datos
 
 
+def validar_archivo_ipc(datos):
+    """Valida el esquema de preguntas del segundo parcial de IPC."""
+    errores, avisos = [], []
+    preguntas = datos.get("preguntas")
+    tarjetas = datos.get("tarjetas")
+    if not isinstance(preguntas, list):
+        errores.append('"preguntas" debe ser una lista.')
+        preguntas = []
+    if not isinstance(tarjetas, list):
+        errores.append('"tarjetas" debe ser una lista.')
+        tarjetas = []
+
+    ids = set()
+    for n, p in enumerate(preguntas, start=1):
+        pref = f"Pregunta {n}: "
+        if not isinstance(p, dict):
+            errores.append(pref + "debe ser un objeto { ... }.")
+            continue
+        ident = p.get("id")
+        if not isinstance(ident, str) or not ident.strip():
+            errores.append(pref + 'falta "id" (texto no vacío).')
+        elif ident in ids:
+            errores.append(pref + f'id duplicado "{ident}" dentro del archivo.')
+        else:
+            ids.add(ident)
+        for campo in ("enunciado", "justificacionCorrecta", "subtema"):
+            if not isinstance(p.get(campo), str) or not p[campo].strip():
+                errores.append(pref + f'falta "{campo}" (texto no vacío).')
+        ops = p.get("opciones")
+        if not isinstance(ops, list) or len(ops) != 4:
+            errores.append(pref + '"opciones" debe tener exactamente 4 elementos.')
+        else:
+            op_ids = [o.get("id") if isinstance(o, dict) else None for o in ops]
+            if set(op_ids) != set(LETRAS) or len(set(op_ids)) != 4:
+                errores.append(pref + 'las opciones deben tener ids únicos "A", "B", "C" y "D".')
+            for i, o in enumerate(ops, start=1):
+                if not isinstance(o, dict) or not isinstance(o.get("texto"), str) or not o["texto"].strip():
+                    errores.append(pref + f"la opción {i} debe tener texto no vacío.")
+        if p.get("respuestaCorrecta") not in tuple(LETRAS):
+            errores.append(pref + '"respuestaCorrecta" debe ser "A", "B", "C" o "D".')
+        expansion = p.get("expansionEstudio")
+        if not isinstance(expansion, list):
+            errores.append(pref + '"expansionEstudio" debe ser una lista.')
+        else:
+            for i, t in enumerate(expansion, start=1):
+                if not isinstance(t, dict) or any(not isinstance(t.get(c), str) or not t[c].strip() for c in ("pregunta", "respuesta")):
+                    errores.append(pref + f"la expansión {i} debe tener pregunta y respuesta no vacías.")
+
+    for n, t in enumerate(tarjetas, start=1):
+        pref = f"Tarjeta {n}: "
+        if not isinstance(t, dict):
+            errores.append(pref + "debe ser un objeto { ... }.")
+            continue
+        for campo in ("frente", "dorso"):
+            if not isinstance(t.get(campo), str) or not t[campo].strip():
+                errores.append(pref + f'falta "{campo}" (texto no vacío).')
+    return errores, avisos, len(preguntas), datos
+
+
+def validar_ids_ipc():
+    """Devuelve errores de ids repetidos entre los archivos IPC especiales."""
+    vistos, duplicados = {}, {}
+    for ruta in archivos_ipc():
+        try:
+            datos = json.loads(ruta.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, UnicodeDecodeError, OSError):
+            continue
+        if not isinstance(datos, dict) or not isinstance(datos.get("preguntas"), list):
+            continue
+        for p in datos["preguntas"]:
+            ident = p.get("id") if isinstance(p, dict) else None
+            if isinstance(ident, str) and ident.strip():
+                if ident in vistos:
+                    duplicados.setdefault(ident, [vistos[ident]]).append(ruta)
+                else:
+                    vistos[ident] = ruta
+    return {r: [f'id "{i}" también aparece en {", ".join(str(x.relative_to(RAIZ)) for x in rs[:-1])}.' for i, rs in duplicados.items() if rs[-1] == r] for r in {rs[-1] for rs in duplicados.values()}}
+
+
 def archivos_de_preguntas():
     """JSON de temas con formato estándar; el banco IPC especial usa otro esquema."""
     return sorted(
@@ -217,6 +299,11 @@ def archivos_de_preguntas():
         for f in carpeta.glob("*.json")
         if not f.name.startswith("_")
     )
+
+
+def archivos_ipc():
+    carpeta = DATA / "ipc-segundo-parcial"
+    return sorted(f for f in carpeta.glob("*.json") if not f.name.startswith("_") and f.name != "index.json") if carpeta.exists() else []
 
 
 SEGUNDO_PARCIAL = RAIZ / "segundo-parcial"
@@ -233,7 +320,8 @@ def archivos_segundo_parcial():
 
 
 def main(argv):
-    rutas = [Path(a) for a in argv] if argv else archivos_de_preguntas() + archivos_segundo_parcial()
+    rutas = [Path(a) for a in argv] if argv else archivos_de_preguntas() + archivos_ipc() + archivos_segundo_parcial()
+    duplicados_ipc = validar_ids_ipc() if not argv else {}
     if not rutas:
         print("No hay archivos de preguntas en data/.")
         return 0
@@ -241,6 +329,7 @@ def main(argv):
     hay_errores = False
     for ruta in rutas:
         errores, avisos, n, _ = validar_archivo(ruta)
+        errores.extend(duplicados_ipc.get(ruta, []))
         rel = ruta.resolve().relative_to(RAIZ) if ruta.resolve().is_relative_to(RAIZ) else ruta
         estado = "ERROR" if errores else ("aviso" if avisos else "ok")
         print(f"[{estado:>5}] {rel}  ({n} preguntas)")

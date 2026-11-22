@@ -4,6 +4,14 @@
    Tipografías: Bricolage Grotesque (todo) + Silkscreen (solo la racha)
    ========================================================== */
 
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('../fonts/Inter-latin-variable.woff2') format('woff2');
+}
+
 :root {
   --noche: #170F2E;
   --panel: #231845;

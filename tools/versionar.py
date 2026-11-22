@@ -9,7 +9,9 @@ otro viejo y la app se rompe o no muestra lo nuevo (había que borrar los datos)
 Qué hace (sobre la copia que se publica, no sobre tu repo):
   1. Agrega ?v=<versión> a todos los imports de js/*.js
   2. Agrega ?v=<versión> al <script> y al <link> de css de index.html
-  3. Inserta en index.html una red de seguridad: si la app no arranca, muestra un
+  3. Inyecta la versión del deploy en el nombre de caché del service worker y en
+     su URL de registro.
+  4. Inserta en index.html una red de seguridad: si la app no arranca, muestra un
      botón "Actualizar" que recarga saltándose el caché.
 
 Uso (lo hace el workflow):
@@ -28,6 +30,9 @@ IMPORT = re.compile(r"""(['"])(\./[\w./-]+\.js)(?:\?v=\w+)?\1""")
 ENLACE = re.compile(r'((?:src|href)="(?:js|css)/[\w./-]+\.(?:js|css))(?:\?v=\w+)?"')
 ICON_ENLACE = re.compile(r'((?:src|href)="(?:ico\.png|icons/parcialito-(?:192|512)\.png))(?:\?v=\w+)?"')
 ICON_MANIFEST = re.compile(r'("src"\s*:\s*"(?:ico\.png|icons/parcialito-(?:192|512)\.png))(?:\?v=\w+)?(")')
+
+SW_ENLACE = re.compile(r"(register\(\s*['\"]\./sw\.js)(?:\?v=[\w-]+)?(['\"])")
+SW_CACHE = re.compile(r"(const CACHE = 'parcialito-shell-)[^']+(';)")
 
 RED_DE_SEGURIDAD = """
 <script id="red-de-seguridad">
@@ -71,12 +76,19 @@ def main(argv):
     h = html.read_text(encoding="utf-8")
     h = ENLACE.sub(lambda m: f'{m[1]}?v={version}"', h)
     h = ICON_ENLACE.sub(lambda m: f'{m[1]}?v={version}"', h)
+    h = SW_ENLACE.sub(lambda m: f'{m[1]}?v={version}{m[2]}', h)
     if 'id="red-de-seguridad"' not in h:
         if "</body>" in h:
             h = h.replace("</body>", RED_DE_SEGURIDAD + "</body>")
         else:
             h += RED_DE_SEGURIDAD
     html.write_text(h, encoding="utf-8")
+
+    service_worker = RAIZ / "sw.js"
+    if service_worker.exists():
+        texto_sw = service_worker.read_text(encoding="utf-8")
+        texto_sw = SW_CACHE.sub(lambda m: f"{m[1]}{version}{m[2]}", texto_sw)
+        service_worker.write_text(texto_sw, encoding="utf-8")
 
     # Versionar también los iconos del manifest para evitar que el navegador
     # o la PWA instalada sigan usando una copia antigua.
