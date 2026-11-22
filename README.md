@@ -7,7 +7,7 @@ y funciona como app instalable (PWA). No hay build: es HTML + JS en módulos + J
 
 | Carpeta / archivo | Qué es |
 |---|---|
-| `index.html`, `js/app.js` | La app (menú, juego, Anki, ranking, progreso) |
+| `index.html`, `js/app.js` | La app. `app.js` es solo el punto de entrada; las pantallas están en los módulos de abajo |
 | `js/lab-*.js`, `js/*.js` | Laboratorios y actividades interactivas |
 | `data/<materia>/` | Un JSON por tema + `_materia.json` (nombre, emoji, color) |
 | `data/index.json` | Índice que lee la app. **Se genera solo**, no se edita a mano |
@@ -18,6 +18,33 @@ y funciona como app instalable (PWA). No hay build: es HTML + JS en módulos + J
 | `tools/` | Validador, generador de índice, iconos, versionado y SQL de Supabase |
 | `PROMPT_PARA_LM.md`, `PROMPT_LAB_PARA_LM.md` | Prompts para generar preguntas y laboratorios con un LM |
 | `backups/` | Material guardado que no se muestra en la app (IPC 2 y Semiología 2); ver `backups/README.md` |
+
+## Cómo está dividida la app (`js/`)
+
+`app.js` arranca todo; cada pantalla vive en su módulo. Para cambiar algo, buscá el módulo:
+
+| Módulo | Qué tiene |
+|---|---|
+| `nucleo.js` | Elementos del DOM, el estado compartido `S` (`S.indice`, `S.juego`, `S.sesionT`) y utilidades chicas (`esc`, `mezclar`, `plural`, `avisar`) |
+| `arranque.js` | `iniciar()`: carga `data/index.json` y muestra el inicio |
+| `home.js` | Pantalla de inicio (materias, banners) |
+| `materia.js` | Pantalla de materia: elegir temas, juegos interactivos, crucigramas |
+| `partidas.js` | Armado de partidas (práctica por tema, errores, difíciles, megaclase) |
+| `juego.js` | Pantalla de juego: pregunta, respuesta, racha, mascota |
+| `resultado.js`, `reportes.js` | Resultado de la partida; reportes de preguntas |
+| `datos.js` | Carga de temas y preguntas, dominio por pregunta y por tema |
+| `anki.js` | Tarjetas tipo Anki (repaso espaciado) |
+| `parciales-bio.js`, `ipc.js` | Bancos y pantallas de los parciales de Biología y de IPC |
+| `ranking-ui.js`, `jugadores.js`, `visitas.js`, `participacion.js` | Ranking, historial, directorio de jugadores, visitas y comentarios |
+| `instalacion.js` | Instalación como app (PWA) y aviso de versión nueva |
+| `actividades.js` | Registro de actividades interactivas (qué clave abre qué laboratorio) |
+| `teclado.js` | Atajos de teclado |
+
+Reglas para tocar estos módulos:
+
+- Las partidas y sesiones en curso se leen y se asignan siempre como `S.juego` / `S.sesionT` (un módulo no puede reasignar una variable importada).
+- Si un módulo nuevo solo registra listeners al cargarse (como `teclado.js`), hay que importarlo desde `app.js`, si no nunca se ejecuta.
+- Un módulo nuevo en `js/` se agrega también a la lista `SHELL` de `sw.js` para que funcione sin conexión.
 
 ## Agregar o modificar contenido
 
