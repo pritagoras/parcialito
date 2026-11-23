@@ -713,6 +713,7 @@ export function abrirHerencia({ app, volver }) {
     const R = estado.ronda, i = +g.dataset.i;
     if (R.tipo === 'genea') tocarGenea(R, R.personas[i]);
     else if (R.tipo === 'gametas') tocarGameta(R, R.burbujas[i]);
+    else if (R.tipo === 'ligadaX') tocarLigadaX(R, i);
     else tocarDominancia(R, i);
   });
 
@@ -754,6 +755,14 @@ export function abrirHerencia({ app, volver }) {
     else { c.est = 'mal'; error('✗ ' + txt); }
   }
 
+  function tocarLigadaX(R, i) {
+    const c = R.celdas[i];
+    if (c.est) return;
+    c.nuevo = true;
+    const txt = explicarLigadaX(c);
+    if (R.set.has(i)) { c.est = 'ok'; acierto('✓ ' + txt); }
+    else { c.est = 'mal'; error('✗ ' + txt); }
+  }
   function completarRonda() {
     estado.modo = 'entre';
     const bono = Math.ceil(estado.tiempo) * 5;
