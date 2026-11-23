@@ -290,6 +290,13 @@ function explicar(clave, g) {
   return t + ': grupo ' + f + ' (' + por + ' · ' + ANTIGENO[f] + ', ' + ANTI[f] + ')';
 }
 
+function explicarLigadaX(c) {
+  if (c.sexo === 'M' && c.afectado) return c.g + ': varón afectado. Tiene un solo cromosoma X y recibió en él el alelo recesivo; no puede ser portador sano.';
+  if (c.sexo === 'F' && c.afectado) return c.g + ': mujer afectada. Recibió el alelo recesivo en los dos cromosomas X.';
+  if (c.portadora) return c.g + ': mujer portadora. Tiene un alelo normal y uno recesivo; en este modelo no manifiesta el rasgo.';
+  if (c.sexo === 'M') return c.g + ': varón sano. Su único cromosoma X lleva el alelo normal.';
+  return c.g + ': mujer sana no portadora. Sus dos cromosomas X llevan el alelo normal.';
+}
 function consignasPunnett(clave, celdas) {
   const fens = [...new Set(celdas.map((c) => c.fen))];
   const lista = fens.map((f) => ({ texto: FEN_TXT[clave][f], es: (c) => c.fen === f }));
@@ -306,6 +313,21 @@ function consignasPunnett(clave, celdas) {
   return buenas.length ? buenas : lista.filter((l) => celdas.some(l.es));
 }
 
+function consignasLigadaX(celdas) {
+  const candidatas = [
+    { texto: 'los hijos varones afectados', es: (c) => c.sexo === 'M' && c.afectado },
+    { texto: 'los hijos varones sanos', es: (c) => c.sexo === 'M' && !c.afectado },
+    { texto: 'las hijas portadoras', es: (c) => c.sexo === 'F' && c.portadora },
+    { texto: 'las hijas afectadas', es: (c) => c.sexo === 'F' && c.afectado },
+    { texto: 'las hijas sanas no portadoras', es: (c) => c.sexo === 'F' && c.noPortadora },
+    { texto: 'los descendientes afectados', es: (c) => c.afectado },
+    { texto: 'los descendientes que heredaron el alelo recesivo', es: (c) => c.afectado || c.portadora }
+  ];
+  return candidatas.filter((op) => {
+    const n = celdas.filter(op.es).length;
+    return n > 0 && n < celdas.length;
+  });
+}
 /* ---- dibujo de los fenotipos (centrados en el origen) ---- */
 function arteArveja(color) {
   const sem = color === 'amarilla' ? ['#f6cf32', '#b98a00'] : ['#4fb43c', '#25701a'];
