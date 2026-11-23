@@ -32,7 +32,7 @@ const BANCO_FORMALIZACION = BANCO_ENUNCIADOS.length + BANCO_ARGUMENTOS.length + 
 import { abrirEnvioImagenes } from './envios.js?v=20261114-3';
 import { abrirComposicionQuimica } from './composicion-quimica.js?v=20261116-1';
 import { abrirSpotFase } from './spot-fase.js?v=20261122-3';
-import { abrirHerencia } from './spot-herencia.js?v=20261123-1';
+import { abrirHerencia } from './spot-herencia.js?v=20261123-2';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
