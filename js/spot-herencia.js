@@ -185,7 +185,8 @@ const GUIAS = {
     <p><b>Segregación independiente:</b> se forman todas las combinaciones posibles. AaBb da AB, Ab, aB y ab; AABb da AB y Ab.</p>
     <p><b>Cantidad de gametas distintas:</b> 2 elevado a la cantidad de genes heterocigotas.</p>`,
   dominancia: `<p><b>Cuadro de Punnett:</b> arriba y a la izquierda están las gametas de cada progenitor; cada casillero es un hijo posible. Tocá los que cumplan la consigna: primero ves el genotipo y al tocar se revela el fenotipo.</p><p><b>Dominancia completa:</b> el heterocigota expresa el fenotipo dominante (Yy × Yy da 3 amarillas : 1 verde).</p><p><b>Dominancia incompleta:</b> el heterocigota es intermedio: RR roja, RB rosa, BB blanca (1 : 2 : 1).</p><p><b>Codominancia:</b> el heterocigota expresa los dos alelos a la vez: RB es roja y blanca.</p>`,
-  abo: `<p><b>Sistema ABO:</b> Iᴬ e Iᴮ son codominantes entre sí y ambos dominan sobre i.</p><p>IᴬIᴮ = grupo AB (antígenos A y B, sin anticuerpos). Iᴬ_ = grupo A (antígeno A, anticuerpos anti-B). Iᴮ_ = grupo B (antígeno B, anti-A). ii = grupo O (sin antígenos, anti-A y anti-B).</p><p>Cada casillero del cuadro es un hijo posible; tocalo para ver sus glóbulos rojos.</p>`
+  abo: `<p><b>Sistema ABO:</b> Iᴬ e Iᴮ son codominantes entre sí y ambos dominan sobre i.</p><p>IᴬIᴮ = grupo AB (antígenos A y B, sin anticuerpos). Iᴬ_ = grupo A (antígeno A, anticuerpos anti-B). Iᴮ_ = grupo B (antígeno B, anti-A). ii = grupo O (sin antígenos, anti-A y anti-B).</p><p>Cada casillero del cuadro es un hijo posible; tocalo para ver sus glóbulos rojos.</p>`,
+  ligadaX: `<p><b>Herencia recesiva ligada al X:</b> en hemofilia usamos Xᴴ (normal) y Xʰ (alelo de hemofilia); en daltonismo, Xᴰ (normal) y Xᵈ (alelo de daltonismo).</p><p><b>Varones (XY):</b> tienen un solo X. Si ese X lleva el alelo recesivo, están afectados; no son portadores.</p><p><b>Mujeres (XX):</b> con un alelo recesivo son portadoras y, en el modelo recesivo clásico, no manifiestan el rasgo. Con dos alelos recesivos están afectadas.</p><p><b>Clave del cruce:</b> el padre transmite su X a todas las hijas y su Y a todos los hijos varones. Cada casillero representa una combinación posible de gametas.</p>`
 };
 
 /* ===== Cuadros de Punnett (dominancias y grupos sanguíneos) ===== */
@@ -200,15 +201,40 @@ const CRUCES = {
   codominancia: [['RB', 'RB'], ['RR', 'RB'], ['RB', 'BB']],
   abo: [['Ai', 'Bi'], ['AB', 'ii'], ['Ai', 'Ai'], ['AB', 'Ai'], ['Bi', 'ii'], ['AB', 'AB'], ['Bi', 'Bi']]
 };
+const ENFERMEDADES_LIGADA_X = {
+  hemofilia: { normal: 'Xᴴ', mutado: 'Xʰ', normalTexto: 'coagulación normal' },
+  daltonismo: { normal: 'Xᴰ', mutado: 'Xᵈ', normalTexto: 'visión cromática habitual' }
+};
+
+// N = X normal; m = X con el alelo recesivo; Y = cromosoma Y.
+const CRUCES_LIGADA_X = [
+  { id: 'portadora-sano', madre: ['N', 'm'], padre: ['N', 'Y'] },
+  { id: 'sana-afectado', madre: ['N', 'N'], padre: ['m', 'Y'] },
+  { id: 'afectada-sano', madre: ['m', 'm'], padre: ['N', 'Y'] },
+  { id: 'portadora-afectado', madre: ['N', 'm'], padre: ['m', 'Y'] }
+];
+
+function resultadoLigadaX(aleloMadre, aleloPadre, enfermedad) {
+  const info = ENFERMEDADES_LIGADA_X[enfermedad];
+  const varon = aleloPadre === 'Y';
+  const cantidadMutados = Number(aleloMadre === info.mutado) + Number(aleloPadre === info.mutado);
+  const afectado = varon ? aleloMadre === info.mutado : cantidadMutados === 2;
+  const portadora = !varon && cantidadMutados === 1;
+  const noPortadora = !varon && cantidadMutados === 0;
+  const genotipo = varon ? aleloMadre + 'Y' : (aleloMadre === info.normal ? aleloMadre + aleloPadre : aleloPadre + aleloMadre);
+  const sexo = varon ? 'M' : 'F';
+  const fen = afectado ? (varon ? 'varón afectado' : 'mujer afectada') : portadora ? 'mujer portadora' : varon ? 'varón sano' : 'mujer sana no portadora';
+  return { g: genotipo, sexo, afectado, portadora, noPortadora, fen };
+}
 const TITULO_CLAVE = {
   completa: 'Dominancia completa · semillas de arveja', incompleta: 'Dominancia incompleta · flor dondiego de noche',
-  codominancia: 'Codominancia · flor roja y blanca', abo: 'Grupos sanguíneos ABO'
+  codominancia: 'Codominancia · flor roja y blanca', abo: 'Grupos sanguíneos ABO', ligadaX: 'Herencia recesiva ligada al X'
 };
 const LEYENDA = {
   completa: 'Y: amarilla (dominante) · y: verde (recesivo)',
   incompleta: 'R: roja · B: blanca · RB: rosa (intermedio)',
   codominancia: 'R: roja · B: blanca · RB: ambos colores a la vez',
-  abo: '▲ antígeno A · ■ antígeno B · ii: sin antígenos'
+  abo: '▲ antígeno A · ■ antígeno B · ii: sin antígenos', ligadaX: 'Arriba: gametas del padre · izquierda: gametas de la madre · Y no lleva el alelo del rasgo'
 };
 
 const normalizar = (clave, a, b) => [a, b].sort((x, y) => ORDEN[clave].indexOf(x) - ORDEN[clave].indexOf(y)).join('');
