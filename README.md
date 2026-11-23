@@ -9,7 +9,7 @@ y funciona como app instalable (PWA). No hay build: es HTML + JS en módulos + J
 |---|---|
 | `index.html`, `js/app.js` | La app (menú, juego, Anki, ranking, progreso) |
 | `js/lab-*.js`, `js/*.js` | Laboratorios y actividades interactivas |
-| `js/spot-fase.js` | Juego "Encontrá la fase" (mitosis a contrarreloj); se abre desde el banner del inicio |
+| `js/spot-fase.js` | Juego "Encontrá la fase" a contrarreloj (fases de la mitosis y ploidía/ADN en mitosis y meiosis); se abre desde el banner del inicio |
 | `data/<materia>/` | Un JSON por tema + `_materia.json` (nombre, emoji, color) |
 | `data/index.json` | Índice que lee la app. **Se genera solo**, no se edita a mano |
 | `data/img/` | Imágenes de las preguntas (las crea el editor) |
