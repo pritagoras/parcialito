@@ -401,6 +401,7 @@ export function abrirHerencia({ app, volver }) {
           <button type="button" data-modo="gametas">🎲 Gametas posibles<small>Dado AaBb, tocá AB, Ab, aB y ab. Esquivá las imposibles.</small></button>
           <button type="button" data-modo="dominancia">🎨 Dominancias<small>Cuadros de Punnett: completa, incompleta y codominancia. Mirá cómo salen las flores y las semillas.</small></button>
           <button type="button" data-modo="abo">🩸 Codominancia en ABO<small>Deducí grupos, antígenos y anticuerpos de los hijos. Con glóbulos rojos dibujados.</small></button>
+          <button type="button" data-modo="ligadaX">🧬 Herencia ligada al X<small>Hemofilia y daltonismo: resolvé cruces y encontrá portadoras y descendientes afectados.</small></button>
         </div>
       </div>
     </section>
@@ -413,15 +414,15 @@ export function abrirHerencia({ app, volver }) {
 
   const estado = {
     juego: 'genea', modo: 'inactivo', nivel: 0, puntos: 0, vidas: 3, racha: 0,
-    tiempo: 0, tiempoMax: 1, k: 0, halladas: 0, ronda: null, ultimaPlantilla: '', ultimoCruce: '', ultimaConsigna: ''
+    tiempo: 0, tiempoMax: 1, k: 0, halladas: 0, ronda: null, ultimaPlantilla: '', ultimoCruce: '', ultimoCruceXL: '', ultimaConsigna: ''
   };
   let vivo = true, raf = 0, msgTimer = null;
-  const mejores = { genea: 0, gametas: 0, dominancia: 0, abo: 0 };
+  const mejores = { genea: 0, gametas: 0, dominancia: 0, abo: 0, ligadaX: 0 };
   for (const m of Object.keys(mejores)) {
     try { mejores[m] = +localStorage.getItem(CLAVE + m) || 0; } catch (e) { /* sin almacenamiento */ }
   }
   const textoRecords = () => Object.values(mejores).some(Boolean)
-    ? 'Récords · Genealogías: ' + mejores.genea + ' · Gametas: ' + mejores.gametas + ' · Dominancias: ' + mejores.dominancia + ' · ABO: ' + mejores.abo : '';
+    ? 'Récords · Genealogías: ' + mejores.genea + ' · Gametas: ' + mejores.gametas + ' · Dominancias: ' + mejores.dominancia + ' · ABO: ' + mejores.abo + ' · Ligada al X: ' + mejores.ligadaX : '';
   $('ov-rec').textContent = textoRecords();
 
   const luego = (fn, ms) => setTimeout(() => { if (vivo && raiz.isConnected) fn(); }, ms);
@@ -460,6 +461,7 @@ export function abrirHerencia({ app, volver }) {
     $('msg').textContent = '';
     if (estado.juego === 'genea') rondaGenea();
     else if (estado.juego === 'gametas') rondaGametas();
+    else if (estado.juego === 'ligadaX') rondaLigadaX();
     else rondaDominancia();
     estado.modo = 'jugando';
     actualizarHud();
@@ -519,6 +521,33 @@ export function abrirHerencia({ app, volver }) {
     fijarPrompt('Tocá cada gameta posible de', genotipo, 'segregación independiente · ' + validas.length + (validas.length === 1 ? ' tipo' : ' tipos'));
   }
 
+  function rondaLigadaX() {
+    const enfermedad = estado.nivel % 2 === 0 ? 'hemofilia' : 'daltonismo';
+    const info = ENFERMEDADES_LIGADA_X[enfermedad];
+    const disponibles = CRUCES_LIGADA_X.filter((c) => c.id !== estado.ultimoCruceXL);
+    const cruce = estado.nivel === 0 ? CRUCES_LIGADA_X[0] : elegir(disponibles.length ? disponibles : CRUCES_LIGADA_X);
+    estado.ultimoCruceXL = cruce.id;
+
+    const madre = cruce.madre.map((a) => a === 'N' ? info.normal : info.mutado);
+    const padre = cruce.padre.map((a) => a === 'N' ? info.normal : a === 'm' ? info.mutado : 'Y');
+    const celdas = [];
+    for (let f = 0; f < 2; f++) for (let c = 0; c < 2; c++) {
+      celdas.push({ ...resultadoLigadaX(madre[f], padre[c], enfermedad), est: '', nuevo: false });
+    }
+
+    const opciones = consignasLigadaX(celdas);
+    const evitar = opciones.filter((o) => o.texto !== estado.ultimaConsigna);
+    const consigna = estado.nivel === 0
+      ? (opciones.find((o) => o.texto === 'los hijos varones afectados') || opciones[0])
+      : elegir(evitar.length ? evitar : opciones);
+    estado.ultimaConsigna = consigna.texto;
+    const set = new Set(celdas.map((c, i) => consigna.es(c) ? i : -1).filter((i) => i >= 0));
+
+    estado.k = set.size;
+    estado.tiempoMax = estado.tiempo = Math.max(13, 24 - estado.nivel * 0.65);
+    estado.ronda = { tipo: 'ligadaX', clave: 'ligadaX', enfermedad, info, madre, padre, celdas, cruce, set, anim: true, revelar: false };
+    fijarPrompt('Tocá', consigna.texto, enfermedad + ' · ' + madre.join('') + ' × ' + padre.join(''));
+  }
   function rondaDominancia() {
     const abo = estado.juego === 'abo';
     const variantes = ['completa', 'incompleta', 'codominancia'];
@@ -723,7 +752,7 @@ export function abrirHerencia({ app, volver }) {
     Sonido.iniciar(); Sonido.clic();
     $('overlay').hidden = true;
     estado.juego = b.dataset.modo;
-    Object.assign(estado, { nivel: 0, puntos: 0, vidas: 3, racha: 0, ultimaPlantilla: '', ultimoCruce: '', ultimaConsigna: '' });
+    Object.assign(estado, { nivel: 0, puntos: 0, vidas: 3, racha: 0, ultimaPlantilla: '', ultimoCruce: '', ultimoCruceXL: '', ultimaConsigna: '' });
     $('guia').hidden = true;
     aplicarGuia();
     nuevaRonda();
