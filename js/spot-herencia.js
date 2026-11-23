@@ -37,73 +37,102 @@ function mezclar(a) {
 }
 
 /* ============================ genealogías ============================ */
+// Cada ronda genera una familia nueva (3 generaciones, herencia recesiva ligada al X).
+// Lo que se pide se deduce solo del árbol: las "portadoras seguras", las "mujeres sin el alelo"
+// (los que se incorporan a la familia se asumen sin el alelo) y las que "podrían ser portadoras".
 
-const POR = {
-  madreAfectado: 'Su hijo está afectado y el padre es sano: el alelo vino de ella, así que es portadora.',
-  madreHijo: 'Tiene un hijo afectado: le dio su X con el alelo, entonces es portadora.',
-  hijaPadre: 'Su padre está afectado: le dio su único X con el alelo, y como ella está sana es portadora.',
-  ext: 'Se incorporó a la familia: se asume que no tiene el alelo.',
-  hijaSana: 'Su padre es sano y su madre no tiene el alelo: no es portadora.'
+const ENF = {
+  hemofilia: { nombre: 'Hemofilia', icono: '🩸', color: '#e0314b', N: 'H', m: 'h' },
+  daltonismo: { nombre: 'Daltonismo', icono: '🎨', color: '#2fb7a3', N: 'D', m: 'd' }
 };
+const SUP = { H: 'ᴴ', h: 'ʰ', D: 'ᴰ', d: 'ᵈ' };
 
-const P = (id, s, x, y, o = {}) => ({ id, s, x, y, aff: !!o.aff, car: !!o.car, por: o.por || '' });
+const ordenAl = (a) => a.slice().sort((x, y) => (x === 'h' ? 1 : 0) - (y === 'h' ? 1 : 0));
+const letra = (enf, al) => (al === 'H' ? ENF[enf].N : ENF[enf].m);
+const xTxt = (enf, p) => (p.s === 'M' ? 'X' + SUP[letra(enf, p.al[0])] + 'Y' : p.al.map((a) => 'X' + SUP[letra(enf, a)]).join(''));
+const xSvg = (enf, p) => (p.s === 'M'
+  ? `X<tspan baseline-shift="super" font-size="7">${letra(enf, p.al[0])}</tspan>Y`
+  : p.al.map((a) => `X<tspan baseline-shift="super" font-size="7">${letra(enf, a)}</tspan>`).join(''));
 
-// Cada plantilla: personas con su genotipo real y familias [padres, hijos]. Todo es deducible:
-// los que se casan con la familia se asumen sin el alelo.
-const PLANTILLAS = [
-  {
-    id: 't1',
-    personas: [
-      P('I-1', 'M', 135, 34), P('I-2', 'F', 205, 34, { car: 1, por: POR.madreAfectado }),
-      P('a', 'M', 28, 112), P('II-1', 'F', 70, 112, { car: 1, por: POR.madreHijo }),
-      P('II-2', 'M', 150, 112, { aff: 1 }), P('II-3', 'M', 235, 112), P('b', 'F', 290, 112, { por: POR.ext }),
-      P('III-1', 'M', 49, 190, { aff: 1 }), P('III-3', 'F', 262, 190, { por: POR.hijaSana })
-    ],
-    familias: [[['I-1', 'I-2'], ['II-1', 'II-2', 'II-3']], [['a', 'II-1'], ['III-1']], [['II-3', 'b'], ['III-3']]]
-  },
-  {
-    id: 't2',
-    personas: [
-      P('I-1', 'M', 135, 34, { aff: 1 }), P('I-2', 'F', 205, 34, { por: POR.ext }),
-      P('II-1', 'F', 60, 112, { car: 1, por: POR.hijaPadre }), P('II-2', 'F', 140, 112, { car: 1, por: POR.hijaPadre }),
-      P('II-3', 'M', 230, 112), P('b', 'F', 285, 112, { por: POR.ext }),
-      P('III-1', 'F', 257, 190, { por: POR.hijaSana })
-    ],
-    familias: [[['I-1', 'I-2'], ['II-1', 'II-2', 'II-3']], [['II-3', 'b'], ['III-1']]]
-  },
-  {
-    id: 't4',
-    personas: [
-      P('I-1', 'M', 135, 34), P('I-2', 'F', 205, 34, { car: 1, por: 'Tiene dos hijos afectados y su pareja es sano: es portadora.' }),
-      P('II-1', 'M', 45, 112, { aff: 1 }), P('II-2', 'M', 115, 112, { aff: 1 }),
-      P('II-3', 'F', 185, 112, { car: 1, por: POR.madreHijo }), P('a', 'M', 235, 112),
-      P('III-1', 'M', 210, 190, { aff: 1 })
-    ],
-    familias: [[['I-1', 'I-2'], ['II-1', 'II-2', 'II-3']], [['II-3', 'a'], ['III-1']]]
-  },
-  {
-    id: 't5',
-    personas: [
-      P('I-1', 'M', 135, 34, { aff: 1 }), P('I-2', 'F', 205, 34, { por: POR.ext }),
-      P('II-1', 'F', 80, 112, { car: 1, por: POR.hijaPadre }), P('a', 'M', 125, 112),
-      P('II-2', 'M', 180, 112), P('b', 'F', 230, 112, { por: POR.ext }),
-      P('III-1', 'M', 80, 190, { aff: 1 }), P('III-2', 'M', 130, 190), P('III-3', 'F', 205, 190, { por: POR.hijaSana })
-    ],
-    familias: [[['I-1', 'I-2'], ['II-1', 'II-2']], [['a', 'II-1'], ['III-1', 'III-2']], [['II-2', 'b'], ['III-3']]]
-  }
-];
-
-const ENFERMEDADES = ['hemofilia', 'daltonismo'];
-
-function razonGenea(tipo, p) {
-  if (tipo === 'portadora') {
-    if (p.s === 'M') return p.aff ? 'Es un varón afectado: tiene un solo X y no se lo llama portador.' : 'Es un varón sano: tiene un solo X, no puede ser portador.';
-    return p.por;
-  }
-  if (tipo === 'afectado') return 'Esa persona está sana (símbolo vacío).';
-  if (p.s === 'M') return 'Es un varón: la consigna pide una mujer.';
-  return p.car ? 'Esa mujer sí tiene el alelo: ' + p.por : 'Es una mujer afectada.';
+function hijosDe(padre, madre, n, prefijo, gen) {
+  let sexos;
+  do { sexos = Array.from({ length: n }, () => (Math.random() < 0.5 ? 'M' : 'F')); } while (new Set(sexos).size < 2);
+  return sexos.map((s, i) => {
+    const deMadre = elegir(madre.al);
+    const al = s === 'M' ? [deMadre] : ordenAl([padre.al[0], deMadre]);
+    const aff = s === 'M' ? al[0] === 'h' : al[0] === 'h' && al[1] === 'h';
+    return { id: prefijo + (i + 1), s, al, aff, gen, padre: padre.id, madre: madre.id, cls: '' };
+  });
 }
+
+function clasificar(personas) {
+  const mapa = new Map(personas.map((p) => [p.id, p]));
+  for (const p of personas) {
+    if (p.s !== 'F' || p.aff) continue;
+    const hijos = personas.filter((h) => h.madre === p.id);
+    const padre = p.padre && mapa.get(p.padre), madre = p.madre && mapa.get(p.madre);
+    if (padre && padre.aff) p.cls = 'car';
+    else if (hijos.some((h) => h.s === 'M' && h.aff)) p.cls = 'car';
+    else if (!padre) p.cls = 'libre';
+    else p.cls = madre && madre.cls === 'libre' ? 'libre' : 'inc';
+  }
+}
+
+function generarFamilia() {
+  for (let intento = 0; intento < 500; intento++) {
+    const esc = elegir(['A', 'A', 'B', 'C']);
+    const padre = { id: 'I-1', s: 'M', al: [esc === 'A' ? 'H' : 'h'], aff: esc !== 'A', gen: 0, cls: '' };
+    const madre = { id: 'I-2', s: 'F', al: esc === 'B' ? ['H', 'H'] : ['H', 'h'], aff: false, gen: 0, cls: '' };
+    const hijos2 = hijosDe(padre, madre, Math.random() < 0.5 ? 3 : 4, 'II-', 1);
+    const rep = elegir(hijos2);
+    const cony = rep.s === 'M'
+      ? { id: 'II-c', s: 'F', al: ['H', 'H'], aff: false, gen: 1, cls: '' }
+      : { id: 'II-c', s: 'M', al: ['H'], aff: false, gen: 1, cls: '' };
+    const [pa3, ma3] = rep.s === 'M' ? [rep, cony] : [cony, rep];
+    const hijos3 = hijosDe(pa3, ma3, Math.random() < 0.5 ? 2 : 3, 'III-', 2);
+    const personas = [padre, madre, ...hijos2, cony, ...hijos3];
+    clasificar(personas);
+    const mal = personas.some((p) => p.s === 'F' && !p.aff && ((p.cls === 'car') !== p.al.includes('h') && p.cls !== 'inc'));
+    const n = (f) => personas.filter(f).length;
+    if (mal || n((p) => p.aff) < 1 || n((p) => p.cls === 'car') < 1 || n((p) => p.cls === 'libre' || p.cls === 'inc') < 1) continue;
+    // disposición
+    const S = 58, y = [36, 118, 200];
+    const slots = hijos2.length + 1, W = (slots - 1) * S, x0 = 170 - W / 2;
+    let k = 0;
+    const xs2 = hijos2.map((h) => { const x = x0 + k * S; k += h === rep ? 2 : 1; return x; });
+    hijos2.forEach((h, i) => { h.x = xs2[i]; h.y = y[1]; });
+    cony.x = rep.x + S; cony.y = y[1];
+    const mitad2 = (xs2[0] + xs2[xs2.length - 1] + (rep === hijos2[hijos2.length - 1] ? 0 : 0)) / 2;
+    padre.x = mitad2 - 34; madre.x = mitad2 + 34; padre.y = madre.y = y[0];
+    const c3 = (rep.x + cony.x) / 2, W3 = (hijos3.length - 1) * S;
+    const ini = Math.min(Math.max(c3 - W3 / 2, 28), 312 - W3);
+    hijos3.forEach((h, i) => { h.x = ini + i * S; h.y = y[2]; });
+    const familias = [[['I-1', 'I-2'], hijos2.map((h) => h.id)], [[pa3.id, ma3.id], hijos3.map((h) => h.id)]];
+    return { personas, familias, esc };
+  }
+  return null;
+}
+
+function razonGenea(p, enf, mapa) {
+  const t = xTxt(enf, p);
+  if (p.s === 'M') return p.aff ? `${t}: varón afectado, recibió el X con el alelo de su madre` : `${t}: varón sano, tiene un solo X y no puede ser portador`;
+  if (p.aff) return `${t}: mujer afectada, recibió el alelo de su padre y de su madre`;
+  if (p.cls === 'car') {
+    const padre = p.padre && mapa.get(p.padre);
+    return padre && padre.aff
+      ? `${t}: portadora segura, su padre afectado le dio su único X con el alelo y ella está sana`
+      : `${t}: portadora segura, tiene un hijo afectado (le pasó su X con el alelo) y ella está sana`;
+  }
+  if (p.cls === 'libre') return p.padre ? `${t}: sin el alelo, su padre es sano y su madre no tiene el alelo` : `${t}: sin el alelo, se incorporó a la familia y se asume que no lo tiene`;
+  return `${t} o ${xTxt(enf, { s: 'F', al: ['H', 'H'] })}: su madre es portadora y no hay datos para decidir; puede serlo (50 %), pero no se asegura`;
+}
+
+const OBJ_GENEA = {
+  afectado: { txt: 'los afectados', es: (p) => p.aff },
+  portadora: { txt: 'las portadoras seguras', es: (p) => p.cls === 'car' },
+  libre: { txt: 'las mujeres sin el alelo', es: (p) => p.cls === 'libre' },
+  inc: { txt: 'las que podrían ser portadoras (50 %)', es: (p) => p.cls === 'inc' }
+};
 
 /* ============================== gametas ============================== */
 
@@ -175,10 +204,12 @@ function razonGameta(txt, genes) {
 
 const GUIAS = {
   genea: `
-    <p><b>Símbolos:</b> cuadrado = varón, círculo = mujer, relleno = afectado. Herencia recesiva ligada al X (hemofilia, daltonismo).</p>
-    <p><b>Varones:</b> tienen un solo X, así que están sanos o afectados. No son portadores.</p>
-    <p><b>Portadora:</b> mujer sana con un alelo afectado. Se deduce con dos reglas: la madre de un hijo afectado, y la hija sana de un padre afectado, son portadoras.</p>
-    <p><b>Los que se casan con la familia</b> se asumen sin el alelo.</p>`,
+    <p><b>Símbolos:</b> cuadrado = varón, círculo = mujer, color = afectado. Es herencia recesiva ligada al X (hemofilia, daltonismo).</p>
+    <p><b>Varones:</b> tienen un solo X (XY), así que están sanos o afectados. Nunca son portadores.</p>
+    <p><b>Portadora segura:</b> mujer sana que sí o sí tiene un alelo afectado: la hija de un padre afectado, o la madre de un hijo afectado.</p>
+    <p><b>Podría ser portadora:</b> hija sana de una madre portadora, sin más datos: 50 % de probabilidad, no se asegura.</p>
+    <p><b>Sin el alelo:</b> hija de padre sano y madre sin el alelo. Los que se casan con la familia se asumen sin el alelo.</p>
+    <p>Cada ronda es una familia nueva. Al tocar, se revela el genotipo (XᴴXʰ, XᴴY, etc.).</p>`,
   gametas: `
     <p><b>Meiosis:</b> cada gameta lleva un solo alelo de cada gen. Los alelos de un mismo gen se separan (Aa → A o a).</p>
     <p><b>Heterocigota:</b> da dos tipos de alelos para ese gen; homocigota (AA o aa), uno solo.</p>
@@ -397,7 +428,7 @@ export function abrirHerencia({ app, volver }) {
         <p data-spf="ov-texto">Tocá todo lo que te piden antes de que se acabe el tiempo. Si te equivocás, perdés una vida y te explico por qué.</p>
         <p class="rec" data-spf="ov-rec"></p>
         <div class="spf-modos">
-          <button type="button" data-modo="genea">🧬 Genealogías<small>Encontrá a las portadoras en la herencia ligada al X.</small></button>
+          <button type="button" data-modo="genea">🧬 Genealogías<small>Familias nuevas cada ronda: portadoras seguras, posibles portadoras y genotipos XᴴXʰ.</small></button>
           <button type="button" data-modo="gametas">🎲 Gametas posibles<small>Dado AaBb, tocá AB, Ab, aB y ab. Esquivá las imposibles.</small></button>
           <button type="button" data-modo="dominancia">🎨 Dominancias<small>Cuadros de Punnett: completa, incompleta y codominancia. Mirá cómo salen las flores y las semillas.</small></button>
           <button type="button" data-modo="abo">🩸 Codominancia en ABO<small>Deducí grupos, antígenos y anticuerpos de los hijos. Con glóbulos rojos dibujados.</small></button>
@@ -469,24 +500,19 @@ export function abrirHerencia({ app, volver }) {
   }
 
   function rondaGenea() {
-    const plantilla = elegir(PLANTILLAS.filter((p) => p.id !== estado.ultimaPlantilla));
-    estado.ultimaPlantilla = plantilla.id;
-    const espejo = Math.random() < 0.5;
-    const personas = plantilla.personas.map((p) => ({ ...p, x: espejo ? 340 - p.x : p.x, est: '' }));
-    const conjuntos = {
-      portadora: personas.filter((p) => p.car),
-      afectado: personas.filter((p) => p.aff),
-      libre: personas.filter((p) => p.s === 'F' && !p.aff && !p.car)
-    };
-    let tipos = ['portadora', 'portadora', 'portadora', 'afectado', 'libre'].filter((t) => conjuntos[t].length);
-    const tipo = estado.nivel === 0 ? 'afectado' : elegir(tipos);
-    const enfermedad = elegir(ENFERMEDADES);
-    const set = new Set(conjuntos[tipo].map((p) => p.id));
+    const fam = generarFamilia();
+    const enf = elegir(Object.keys(ENF));
+    const personas = fam.personas;
+    const claves = Object.keys(OBJ_GENEA).filter((k) => personas.some(OBJ_GENEA[k].es));
+    const pesos = claves.flatMap((k) => (k === 'afectado' ? [k] : k === 'inc' ? [k] : [k, k]));
+    const objetivo = estado.nivel === 0 ? 'portadora' : elegir(pesos.filter((k) => k !== estado.ultimoObjetivo).length ? pesos.filter((k) => k !== estado.ultimoObjetivo) : pesos);
+    estado.ultimoObjetivo = objetivo;
+    const set = new Set(personas.filter(OBJ_GENEA[objetivo].es).map((p) => p.id));
     estado.k = set.size;
-    estado.tiempoMax = estado.tiempo = Math.max(12, 22 - estado.nivel * 1.2);
-    estado.ronda = { tipo: 'genea', plantilla, personas, set, objetivo: tipo, revelar: false };
-    const nombres = { portadora: 'Portadora', afectado: 'Afectado', libre: 'Mujer sin el alelo' };
-    fijarPrompt('Tocá cada individuo', nombres[tipo], enfermedad + ' · ligada al X');
+    estado.tiempoMax = estado.tiempo = Math.max(14, 24 - estado.nivel * 1.1);
+    personas.forEach((p) => { p.est = ''; p.nuevo = false; });
+    estado.ronda = { tipo: 'genea', personas, familias: fam.familias, set, objetivo, enf, anim: true, revelar: false };
+    fijarPrompt('Tocá', OBJ_GENEA[objetivo].txt, ENF[enf].icono + ' ' + ENF[enf].nombre + ' · recesiva ligada al X');
   }
 
   function rondaGametas() {
@@ -574,38 +600,41 @@ export function abrirHerencia({ app, volver }) {
   }
 
   /* ---------- dibujo ---------- */
-  function simboloGenea(p, i, revelar, objetivoOk) {
-    let fill = p.aff ? COLORES.crema : 'rgba(255,243,220,.06)';
-    let stroke = COLORES.crema, ancho = 2, extra = '';
-    if (p.est === 'ok') { fill = 'rgba(79,224,160,.35)'; stroke = COLORES.ok; ancho = 3.5; extra = `<path d="M${p.x - 7} ${p.y} l5 6 l10 -12" stroke="${COLORES.ok}" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`; }
-    else if (p.est === 'mal') { stroke = COLORES.mal; ancho = 3.5; extra = `<path d="M${p.x - 6} ${p.y - 6} l12 12 m0 -12 l-12 12" stroke="${COLORES.mal}" stroke-width="3" fill="none" stroke-linecap="round"/>`; }
-    else if (revelar && objetivoOk) { stroke = COLORES.ambar; ancho = 3.5; }
-    const forma = p.s === 'M'
-      ? `<rect x="${p.x - 14}" y="${p.y - 14}" width="28" height="28" fill="${fill}" stroke="${stroke}" stroke-width="${ancho}"/>`
-      : `<circle cx="${p.x}" cy="${p.y}" r="14" fill="${fill}" stroke="${stroke}" stroke-width="${ancho}"/>`;
-    const sombra = p.aff && p.est === 'ok' ? `<circle cx="${p.x}" cy="${p.y}" r="3" fill="${COLORES.ok}"/>` : '';
-    return `<g class="spfh-nodo" data-i="${i}"><circle cx="${p.x}" cy="${p.y}" r="23" fill="transparent"/>${forma}${sombra}${extra}</g>`;
-  }
-
   function svgGenea(R) {
     const mapa = new Map(R.personas.map((p) => [p.id, p]));
+    const acento = ENF[R.enf].color, M = 15;
     let lineas = '';
-    for (const [padres, hijos] of R.plantilla.familias) {
+    for (const [padres, hijos] of R.familias) {
       const [a, b] = padres.map((id) => mapa.get(id));
-      const yP = a.y, midX = (a.x + b.x) / 2;
-      lineas += `<line x1="${Math.min(a.x, b.x) + 14}" y1="${yP}" x2="${Math.max(a.x, b.x) - 14}" y2="${yP}"/>`;
+      const yP = a.y, midX = (a.x + b.x) / 2, ySib = yP + 38;
       const ks = hijos.map((id) => mapa.get(id));
-      const ySib = yP + 36;
       const xs = ks.map((k) => k.x).concat(midX);
-      lineas += `<line x1="${midX}" y1="${yP}" x2="${midX}" y2="${ySib}"/>`;
-      lineas += `<line x1="${Math.min(...xs)}" y1="${ySib}" x2="${Math.max(...xs)}" y2="${ySib}"/>`;
-      ks.forEach((k) => { lineas += `<line x1="${k.x}" y1="${ySib}" x2="${k.x}" y2="${k.y - 14}"/>`; });
+      lineas += `<line x1="${Math.min(a.x, b.x) + M}" y1="${yP}" x2="${Math.max(a.x, b.x) - M}" y2="${yP}"/><line x1="${midX}" y1="${yP}" x2="${midX}" y2="${ySib}"/><line x1="${Math.min(...xs)}" y1="${ySib}" x2="${Math.max(...xs)}" y2="${ySib}"/>`;
+      ks.forEach((k) => { lineas += `<line x1="${k.x}" y1="${ySib}" x2="${k.x}" y2="${k.y - M}"/>`; });
     }
-    const simbolos = R.personas.map((p, i) => simboloGenea(p, i, R.revelar, R.set.has(p.id) && !p.est)).join('');
-    const gens = ['I', 'II', 'III'].map((t, i) => `<text x="4" y="${38 + i * 78}" font-size="11" fill="#B8ABDB">${t}</text>`).join('');
-    return `<svg class="spfh-svg" viewBox="0 0 340 215" role="img" aria-label="Genealogía de tres generaciones">
-      <g stroke="${COLORES.crema}" stroke-width="1.7" fill="none">${lineas}</g>${simbolos}${gens}</svg>
-      <div class="spfh-leyenda">Cuadrado: varón · círculo: mujer · relleno: afectado</div>`;
+    const nodos = R.personas.map((p, i) => {
+      const rev = !!p.est || R.revelar;
+      const falto = R.revelar && !p.est && R.set.has(p.id);
+      let stroke = COLORES.crema, ancho = 2.2, halo = '', insignia = '';
+      if (p.est === 'ok') { stroke = COLORES.ok; ancho = 3.4; halo = `<circle cx="${p.x}" cy="${p.y}" r="23" fill="${COLORES.ok}" opacity=".18"/>`; insignia = `<circle cx="${p.x + 14}" cy="${p.y - 14}" r="7.5" fill="${COLORES.ok}"/><path d="M${p.x + 10.5} ${p.y - 14} l2.5 2.8 l4.5 -5.6" stroke="#0b3a26" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`; }
+      else if (p.est === 'mal') { stroke = COLORES.mal; ancho = 3.4; halo = `<circle cx="${p.x}" cy="${p.y}" r="23" fill="${COLORES.mal}" opacity=".18"/>`; insignia = `<circle cx="${p.x + 14}" cy="${p.y - 14}" r="7.5" fill="${COLORES.mal}"/><path d="M${p.x + 11.5} ${p.y - 16.5} l5 5 m0 -5 l-5 5" stroke="#4a0a17" stroke-width="2" fill="none" stroke-linecap="round"/>`; }
+      else if (falto) { stroke = COLORES.ambar; ancho = 3.6; halo = `<circle cx="${p.x}" cy="${p.y}" r="23" fill="${COLORES.ambar}" opacity=".2"/>`; }
+      const fill = p.aff ? acento : 'rgba(255,243,220,.09)';
+      const forma = p.s === 'M'
+        ? `<rect x="${p.x - M}" y="${p.y - M}" width="${2 * M}" height="${2 * M}" rx="5" fill="${fill}" stroke="${stroke}" stroke-width="${ancho}"/>`
+        : `<circle cx="${p.x}" cy="${p.y}" r="${M}" fill="${fill}" stroke="${stroke}" stroke-width="${ancho}"/>`;
+      let marca = '';
+      if (rev && p.cls === 'car') marca = `<circle cx="${p.x}" cy="${p.y}" r="5.5" fill="#b69bff" stroke="#fff3dc" stroke-width="1.4"/>`;
+      else if (rev && p.cls === 'inc') marca = `<text x="${p.x}" y="${p.y + 5.5}" text-anchor="middle" font-size="16" font-weight="800" fill="${COLORES.ambar}">?</text>`;
+      const rot = rev ? `<text x="${p.x}" y="${p.y + 30}" text-anchor="middle" font-size="10" font-weight="700" fill="#e9dcf7">${xSvg(R.enf, p)}</text>` : '';
+      const clase = 'spfh-celda' + (R.anim ? ' entra' : '') + (p.nuevo ? ' pop' : '');
+      return `<g class="spfh-nodo ${clase}" data-i="${i}" style="animation-delay:${R.anim ? p.gen * 160 + (i % 5) * 40 : 0}ms">${halo}<circle cx="${p.x}" cy="${p.y}" r="26" fill="transparent"/>${forma}${marca}${rot}${insignia}</g>`;
+    }).join('');
+    const gens = ['I', 'II', 'III'].map((t, i) => `<text x="5" y="${40 + i * 82}" font-size="11" font-weight="700" fill="#8f82b5">${t}</text>`).join('');
+    return `<svg class="spfh-svg" viewBox="0 0 340 236" role="img" aria-label="Genealogía de tres generaciones">
+      <rect x="0" y="0" width="340" height="236" rx="22" fill="rgba(255,255,255,.035)"/>
+      <g stroke="#cfc3ea" stroke-width="1.8" fill="none" stroke-linecap="round">${lineas}</g>${gens}${nodos}</svg>
+      <div class="spfh-leyenda">Cuadrado: varón · círculo: mujer · color: afectado · al tocar se revela el genotipo (● portadora · ? posible portadora)</div>`;
   }
 
   function svgGametas(R) {
@@ -703,6 +732,7 @@ export function abrirHerencia({ app, volver }) {
     $('campo').innerHTML = R.tipo === 'genea' ? svgGenea(R) : R.tipo === 'gametas' ? svgGametas(R) : R.tipo === 'ligadaX' ? svgLigadaX(R) : svgPunnett(R);
     if (R.anim) R.anim = false;
     if (R.celdas) R.celdas.forEach((c) => { c.nuevo = false; });
+    if (R.personas) R.personas.forEach((p) => { p.nuevo = false; });
   }
 
   /* ---------- interacción ---------- */
@@ -737,8 +767,10 @@ export function abrirHerencia({ app, volver }) {
 
   function tocarGenea(R, p) {
     if (p.est) return;
-    if (R.set.has(p.id)) { p.est = 'ok'; acierto(R.objetivo === 'portadora' ? p.por : ''); }
-    else { p.est = 'mal'; error(razonGenea(R.objetivo, p)); }
+    p.nuevo = true;
+    const txt = razonGenea(p, R.enf, new Map(R.personas.map((q) => [q.id, q])));
+    if (R.set.has(p.id)) { p.est = 'ok'; acierto('✓ ' + txt); }
+    else { p.est = 'mal'; error('✗ ' + txt); }
   }
   function tocarGameta(R, b) {
     if (b.est) return;
@@ -768,10 +800,10 @@ export function abrirHerencia({ app, volver }) {
     const bono = Math.ceil(estado.tiempo) * 5;
     estado.puntos += bono; estado.nivel++;
     const R = estado.ronda;
-    if (R.celdas) R.revelar = true;
+    R.revelar = true;
     Sonido.hito(); decir('¡Ronda completa! +' + bono + (R.celdas ? ' · ' + razonProporcion(R.celdas, R.clave) : ''), 'var(--ok)'); actualizarHud();
-    if (R.celdas) pintar();
-    luego(nuevaRonda, R.celdas ? 2600 : 1500);
+    pintar();
+    luego(nuevaRonda, R.celdas ? 2600 : R.personas ? 2300 : 1500);
   }
   function tiempoAgotado() {
     estado.modo = 'entre'; estado.ronda.revelar = true;
