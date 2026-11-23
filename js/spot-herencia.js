@@ -658,9 +658,49 @@ export function abrirHerencia({ app, volver }) {
       <div class="spfh-leyenda">${LEYENDA[clave]}</div>`;
   }
 
+  function svgLigadaX(R) {
+    const x0 = 44, y0 = 44, T = 140;
+    const tonoAlelo = (a) => a === R.info.normal ? '#7b57e0' : a === R.info.mutado ? '#e8872a' : '#8b96a8';
+    const cab = (txt, x, y) => `<circle cx="${x}" cy="${y}" r="18" fill="${tonoAlelo(txt)}" stroke="rgba(255,255,255,.55)" stroke-width="2"/><text x="${x}" y="${y + 5.5}" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">${txt}</text>`;
+    let g = '<text x="184" y="9" text-anchor="middle" font-size="9.5" font-weight="700" fill="#b8abdb">GAMETAS DEL PADRE</text>';
+    const [m, pa] = [R.madre, R.padre];
+    for (let c = 0; c < 2; c++) g += cab(pa[c], x0 + c * T + T / 2, 27);
+    for (let f = 0; f < 2; f++) g += cab(m[f], 22, y0 + f * T + T / 2);
+
+    R.celdas.forEach((c, i) => {
+      const col = i % 2, fila = i >> 1, cx = x0 + col * T + T / 2, cy = y0 + fila * T + T / 2;
+      const revela = !!c.est || R.revelar;
+      const falto = R.revelar && !c.est && R.set.has(i);
+      let fondo = '#fff6fa', borde = '#b5628f', ancho = 2.5;
+      if (c.est === 'ok') { fondo = '#d6f7e6'; borde = '#1f8f5c'; ancho = 4; }
+      else if (c.est === 'mal') { fondo = '#ffdce3'; borde = '#d64545'; ancho = 4; }
+      else if (revela && !c.est) {
+        fondo = c.afectado ? '#ffe3e7' : c.portadora ? '#fff1cf' : '#e7f5eb';
+        borde = falto ? '#e08a00' : c.afectado ? '#d64545' : c.portadora ? '#c18a22' : '#438b64';
+        ancho = falto ? 4.5 : 3;
+      }
+      let resultado = `<circle cx="${cx}" cy="${cy - 30}" r="25" fill="none" stroke="#b5628f" stroke-width="2.5" stroke-dasharray="5 6" opacity=".6"/><text x="${cx}" y="${cy - 20}" text-anchor="middle" font-size="28" font-weight="800" fill="#b5628f" opacity=".55">?</text>`;
+      let genotipo = '', fenotipoTxt = '';
+      if (revela) {
+        const forma = c.sexo === 'M'
+          ? `<rect x="${cx - 17}" y="${cy - 47}" width="34" height="34" rx="3" fill="${c.afectado ? '#ffdce3' : '#e8e0ff'}" stroke="${c.afectado ? '#d64545' : '#7652ba'}" stroke-width="2.5"/>`
+          : `<circle cx="${cx}" cy="${cy - 30}" r="18" fill="${c.afectado ? '#ffdce3' : c.portadora ? '#fff1cf' : '#e8e0ff'}" stroke="${c.afectado ? '#d64545' : c.portadora ? '#c18a22' : '#7652ba'}" stroke-width="2.5"/>`;
+        const simbolo = c.sexo === 'M' ? '♂' : '♀';
+        resultado = forma + `<text x="${cx}" y="${cy - 24}" text-anchor="middle" font-size="21" font-weight="800" fill="#3b1f5c">${simbolo}</text>`;
+        genotipo = `<text x="${cx}" y="${cy + 3}" text-anchor="middle" font-size="16" font-weight="800" fill="#3b1f5c">${c.g}</text>`;
+        fenotipoTxt = `<text x="${cx}" y="${cy + 25}" text-anchor="middle" font-size="9.5" font-weight="700" fill="#5b3d78">${c.fen}</text>`;
+      }
+      const clase = 'spfh-celda' + (R.anim ? ' entra' : '') + (c.nuevo ? ' pop' : '');
+      g += `<g class="${clase}" data-i="${i}" style="animation-delay:${R.anim ? i * 80 : 0}ms"><rect x="${cx - 66}" y="${cy - 66}" width="132" height="132" rx="20" fill="${fondo}" stroke="${borde}" stroke-width="${ancho}"/>${resultado}${genotipo}${fenotipoTxt}</g>`;
+    });
+
+    const leyenda = 'Arriba: gametas del padre · izquierda: gametas de la madre · ' +
+      R.info.normal + ': ' + R.info.normalTexto + ' · ' + R.info.mutado + ': alelo recesivo de ' + R.enfermedad + ' · Y: no lleva ese alelo';
+    return `<div class="spfh-clave">${TITULO_CLAVE.ligadaX} · ${R.enfermedad}</div><svg class="spfh-svg" viewBox="-2 -2 328 328" role="img" aria-label="Cuadro de Punnett de herencia recesiva ligada al X"><rect x="-2" y="-2" width="328" height="328" rx="26" fill="rgba(255,255,255,.04)"/>${g}</svg><div class="spfh-leyenda">${leyenda}</div>`;
+  }
   function pintar() {
     const R = estado.ronda;
-    $('campo').innerHTML = R.tipo === 'genea' ? svgGenea(R) : R.tipo === 'gametas' ? svgGametas(R) : svgPunnett(R);
+    $('campo').innerHTML = R.tipo === 'genea' ? svgGenea(R) : R.tipo === 'gametas' ? svgGametas(R) : R.tipo === 'ligadaX' ? svgLigadaX(R) : svgPunnett(R);
     if (R.anim) R.anim = false;
     if (R.celdas) R.celdas.forEach((c) => { c.nuevo = false; });
   }
