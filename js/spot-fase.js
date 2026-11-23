@@ -112,6 +112,9 @@ function inyectarEstilos() {
   document.head.appendChild(st);
 }
 
+// Lo reutiliza el juego de herencia (js/spot-herencia.js) para compartir el mismo aspecto.
+export function estilosSpot() { inyectarEstilos(); }
+
 const elegir = (a) => a[Math.floor(Math.random() * a.length)];
 function mezclar(a) {
   for (let i = a.length - 1; i > 0; i--) {

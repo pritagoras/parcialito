@@ -31,7 +31,8 @@ import { abrirFormalizacion, BANCO_ENUNCIADOS, BANCO_ARGUMENTOS, FORMULAS_ESTRUC
 const BANCO_FORMALIZACION = BANCO_ENUNCIADOS.length + BANCO_ARGUMENTOS.length + FORMULAS_ESTRUCTURA.length;
 import { abrirEnvioImagenes } from './envios.js?v=20261114-3';
 import { abrirComposicionQuimica } from './composicion-quimica.js?v=20261116-1';
-import { abrirSpotFase } from './spot-fase.js?v=20261122-2';
+import { abrirSpotFase } from './spot-fase.js?v=20261122-3';
+import { abrirHerencia } from './spot-herencia.js?v=20261122-3';
 
 const app = document.getElementById('app');
 const avisoEl = document.getElementById('aviso');
@@ -792,6 +793,11 @@ function vistaInicio() {
         <span class="banner-juego-texto"><span class="banner-juego-nuevo">NUEVO JUEGO</span><strong>Encontrá la fase</strong><small>Tocá las células que te piden antes de que se acabe el tiempo: fases de la mitosis o ploidía y ADN (2n · 2C en G1, n · 1C en telofase II…).</small></span>
         <span class="banner-juego-accion">Jugar <b aria-hidden="true">↗</b></span>
       </button>
+      <button class="banner-juego banner-juego-herencia" id="btn-herencia" type="button" aria-label="Nuevo juego: Herencia relámpago">
+        <span class="banner-juego-pedigri" aria-hidden="true"><svg viewBox="0 0 56 56"><g stroke="#fff3dc" stroke-width="2" fill="none"><path d="M16 12H40M28 12V24M14 24H42M14 24V34M42 24V34"/><rect x="9" y="6" width="14" height="12" fill="#fff3dc"/><circle cx="40" cy="12" r="6"/><rect x="8" y="34" width="12" height="12"/><circle cx="42" cy="40" r="6" fill="#fff3dc"/></g></svg></span>
+        <span class="banner-juego-texto"><span class="banner-juego-nuevo">NUEVO JUEGO</span><strong>Herencia relámpago</strong><small>Encontrá a las portadoras en genealogías o las gametas posibles de un genotipo, contra reloj.</small></span>
+        <span class="banner-juego-accion">Jugar <b aria-hidden="true">↗</b></span>
+      </button>
       <section class="banner-imagenes" aria-label="Compartir imágenes">
         <div class="banner-imagenes-icono" aria-hidden="true">📸</div>
         <div class="banner-imagenes-texto">
@@ -951,6 +957,7 @@ function vistaInicio() {
   });
   document.getElementById('btn-lab')?.addEventListener('click', () => { Sonido.clic(); abrirLab({ app, volver: vistaInicio }); });
   document.getElementById('btn-spot-fase')?.addEventListener('click', () => { Sonido.iniciar(); Sonido.clic(); abrirSpotFase({ app, volver: vistaInicio }); });
+  document.getElementById('btn-herencia')?.addEventListener('click', () => { Sonido.iniciar(); Sonido.clic(); abrirHerencia({ app, volver: vistaInicio }); });
   document.getElementById('btn-instalar-app')?.addEventListener('click', instalarParcialito);
   document.getElementById('btn-errores')?.addEventListener('click', () => { Sonido.clic(); lanzarErrores(); });
   document.getElementById('btn-dificiles')?.addEventListener('click', () => { Sonido.clic(); lanzarDificiles(); });

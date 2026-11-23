@@ -33,6 +33,7 @@ const SHELL = [
   './js/envios.js',
   './js/composicion-quimica.js',
   './js/spot-fase.js',
+  './js/spot-herencia.js',
   './js/transcripcion.js',
   './js/traduccion.js',
   './js/cromosomas.js',

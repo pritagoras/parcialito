@@ -1575,3 +1575,9 @@ dialog.reporte textarea:focus { outline: none; border-color: var(--violeta); }
   .banner-juego-accion { font-size:.78rem; }
 }
 @media(prefers-reduced-motion:reduce) { .banner-juego-celula { animation:none; } }
+
+.banner-juego-herencia { margin-top:10px; }
+.banner-juego-pedigri { position:relative; flex:0 0 56px; width:56px; height:56px; border-radius:14px; background:linear-gradient(135deg,#3b2470,#5a2a8c); box-shadow:0 0 0 3px rgba(255,255,255,.12),0 6px 16px rgba(0,0,0,.35); display:grid; place-items:center; animation:juego-latido 2.4s ease-in-out infinite; }
+.banner-juego-pedigri svg { width:46px; height:46px; }
+@media(max-width:480px) { .banner-juego-pedigri { flex-basis:46px; width:46px; height:46px; } .banner-juego-pedigri svg { width:38px; height:38px; } }
+@media(prefers-reduced-motion:reduce) { .banner-juego-pedigri { animation:none; } }
