@@ -16,6 +16,13 @@ const css = `
 .spfh-nodo{cursor:pointer}
 .spfh-msg{min-height:46px;margin-top:10px;text-align:center;font-weight:700;font-size:.9rem;line-height:1.35;padding:0 6px}
 .spfh-leyenda{text-align:center;font-size:.74rem;color:var(--tenue);margin-top:4px}
+.spfh-celda{transform-box:fill-box;transform-origin:center}
+.spfh-celda.entra{animation:spfh-entra .5s cubic-bezier(.2,1.5,.4,1) both}
+.spfh-celda.pop{animation:spfh-pop .4s cubic-bezier(.2,1.6,.4,1)}
+@keyframes spfh-entra{from{opacity:0;transform:scale(.4) rotate(-6deg)}to{opacity:1;transform:none}}
+@keyframes spfh-pop{0%{transform:scale(.88)}60%{transform:scale(1.07)}100%{transform:none}}
+.spfh-clave{text-align:center;font-size:.74rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--violeta);margin-bottom:6px}
+@media(prefers-reduced-motion:reduce){.spfh-celda.entra,.spfh-celda.pop{animation:none}}
 `;
 
 const COLORES = { crema: '#FFF3DC', ok: '#4FE0A0', mal: '#FF5D7A', ambar: '#FFB938' };
@@ -177,27 +184,141 @@ const GUIAS = {
     <p><b>Heterocigota:</b> da dos tipos de alelos para ese gen; homocigota (AA o aa), uno solo.</p>
     <p><b>Segregación independiente:</b> se forman todas las combinaciones posibles. AaBb da AB, Ab, aB y ab; AABb da AB y Ab.</p>
     <p><b>Cantidad de gametas distintas:</b> 2 elevado a la cantidad de genes heterocigotas.</p>`,
-  dominancia: `<p><b>Dominancia completa:</b> el heterocigota expresa solo el fenotipo dominante (3:1 en Aa × Aa).</p><p><b>Dominancia incompleta:</b> el heterocigota tiene un fenotipo intermedio (1:2:1).</p><p><b>Codominancia:</b> en el heterocigota se expresan ambos alelos a la vez (1:2:1).</p>`,
-  abo: `<p>En el sistema ABO, <b>Iᴬ e Iᴮ son codominantes</b> entre sí y ambos dominan sobre i. Por eso IᴬIᴮ da grupo AB, mientras que Iᴬi da A e Iᴮi da B. El grupo O es ii.</p><p>El cruce de este modo es Iᴬi × Iᴮi.</p>`
+  dominancia: `<p><b>Cuadro de Punnett:</b> arriba y a la izquierda están las gametas de cada progenitor; cada casillero es un hijo posible. Tocá los que cumplan la consigna: primero ves el genotipo y al tocar se revela el fenotipo.</p><p><b>Dominancia completa:</b> el heterocigota expresa el fenotipo dominante (Yy × Yy da 3 amarillas : 1 verde).</p><p><b>Dominancia incompleta:</b> el heterocigota es intermedio: RR roja, RB rosa, BB blanca (1 : 2 : 1).</p><p><b>Codominancia:</b> el heterocigota expresa los dos alelos a la vez: RB es roja y blanca.</p>`,
+  abo: `<p><b>Sistema ABO:</b> Iᴬ e Iᴮ son codominantes entre sí y ambos dominan sobre i.</p><p>IᴬIᴮ = grupo AB (antígenos A y B, sin anticuerpos). Iᴬ_ = grupo A (antígeno A, anticuerpos anti-B). Iᴮ_ = grupo B (antígeno B, anti-A). ii = grupo O (sin antígenos, anti-A y anti-B).</p><p>Cada casillero del cuadro es un hijo posible; tocalo para ver sus glóbulos rojos.</p>`
 };
 
-const DOMINANCIAS = {
-  completa: { ejemplo: 'Cruce Yy × Yy · Y domina sobre y', genos: ['YY', 'Yy', 'Yy', 'yy'] },
-  incompleta: { ejemplo: 'Cruce RB × RB · heterocigota de fenotipo intermedio', genos: ['RR', 'RB', 'RB', 'BB'] },
-  codominancia: { ejemplo: 'Cruce RB × RB · heterocigota expresa ambos alelos', genos: ['RR', 'RB', 'RB', 'BB'] }
+/* ===== Cuadros de Punnett (dominancias y grupos sanguíneos) ===== */
+
+const ORDEN = { completa: 'Yy', incompleta: 'RB', codominancia: 'RB', abo: 'ABi' };
+const COLOR_ALELO = {
+  Y: '#7b57e0', y: '#e8872a', R: '#e0314b', B: '#9aa6c4', A: '#3ea6ff', i: '#9aa0b5'
+};
+const CRUCES = {
+  completa: [['Yy', 'Yy'], ['Yy', 'yy'], ['YY', 'yy'], ['YY', 'Yy']],
+  incompleta: [['RB', 'RB'], ['RR', 'RB'], ['RB', 'BB'], ['RR', 'BB']],
+  codominancia: [['RB', 'RB'], ['RR', 'RB'], ['RB', 'BB']],
+  abo: [['Ai', 'Bi'], ['AB', 'ii'], ['Ai', 'Ai'], ['AB', 'Ai'], ['Bi', 'ii'], ['AB', 'AB'], ['Bi', 'Bi']]
+};
+const TITULO_CLAVE = {
+  completa: 'Dominancia completa · semillas de arveja', incompleta: 'Dominancia incompleta · flor dondiego de noche',
+  codominancia: 'Codominancia · flor roja y blanca', abo: 'Grupos sanguíneos ABO'
+};
+const LEYENDA = {
+  completa: 'Y: amarilla (dominante) · y: verde (recesivo)',
+  incompleta: 'R: roja · B: blanca · RB: rosa (intermedio)',
+  codominancia: 'R: roja · B: blanca · RB: ambos colores a la vez',
+  abo: '▲ antígeno A · ■ antígeno B · ii: sin antígenos'
 };
 
-const ABO = {
-  ejemplo: 'Cruce Iᴬi × Iᴮi · Iᴬ e Iᴮ son codominantes y dominan sobre i',
-  genos: ['IᴬIᴮ', 'Iᴬi', 'Iᴮi', 'ii'],
-  consignas: [
-    { texto: 'el genotipo que expresa los antígenos A y B', es: (g) => g === 'IᴬIᴮ' },
-    { texto: 'el genotipo del grupo O', es: (g) => g === 'ii' },
-    { texto: 'el genotipo del grupo A', es: (g) => g === 'Iᴬi' },
-    { texto: 'el genotipo del grupo B', es: (g) => g === 'Iᴮi' }
-  ],
-  error: 'En el sistema ABO, IᴬIᴮ es AB (expresa ambos antígenos), Iᴬi es A, Iᴮi es B e ii es O.'
+const normalizar = (clave, a, b) => [a, b].sort((x, y) => ORDEN[clave].indexOf(x) - ORDEN[clave].indexOf(y)).join('');
+
+function fenotipo(clave, g) {
+  if (clave === 'completa') return g.includes('Y') ? 'amarilla' : 'verde';
+  if (clave === 'incompleta') return g === 'RR' ? 'roja' : g === 'BB' ? 'blanca' : 'rosa';
+  if (clave === 'codominancia') return g === 'RR' ? 'roja' : g === 'BB' ? 'blanca' : 'roja y blanca';
+  const a = g.includes('A'), b = g.includes('B');
+  return a && b ? 'AB' : a ? 'A' : b ? 'B' : 'O';
+}
+
+const FEN_TXT = {
+  completa: { amarilla: 'las semillas amarillas', verde: 'las semillas verdes' },
+  incompleta: { roja: 'las flores rojas', rosa: 'las flores rosas', blanca: 'las flores blancas' },
+  codominancia: { roja: 'las flores rojas', blanca: 'las flores blancas', 'roja y blanca': 'las flores de ambos colores' },
+  abo: { A: 'los hijos del grupo A', B: 'los hijos del grupo B', AB: 'los hijos del grupo AB', O: 'los hijos del grupo O' }
 };
+const FEN_NOMBRE = {
+  completa: { amarilla: 'semilla amarilla', verde: 'semilla verde' },
+  incompleta: { roja: 'flor roja', rosa: 'flor rosa', blanca: 'flor blanca' },
+  codominancia: { roja: 'flor roja', blanca: 'flor blanca', 'roja y blanca': 'flor roja y blanca' },
+  abo: { A: 'grupo A', B: 'grupo B', AB: 'grupo AB', O: 'grupo O' }
+};
+
+const geno = (clave, g) => clave === 'abo'
+  ? [...g].map((c) => (c === 'A' ? 'Iᴬ' : c === 'B' ? 'Iᴮ' : 'i')).join('') : g;
+const alelo = (clave, c) => (clave === 'abo' ? (c === 'A' ? 'Iᴬ' : c === 'B' ? 'Iᴮ' : 'i') : c);
+
+// Etiqueta SVG con superíndices reales para los alelos del sistema ABO.
+function etiquetaSvg(clave, g, tam) {
+  if (clave !== 'abo') return g;
+  const s = Math.round(tam * 0.62);
+  return [...g].map((c) => (c === 'i' ? 'i' : `I<tspan baseline-shift="super" font-size="${s}">${c}</tspan>`)).join('');
+}
+
+const ANTI = { A: 'anti-B', B: 'anti-A', AB: 'sin anticuerpos', O: 'anti-A y anti-B' };
+const ANTIGENO = { A: 'antígeno A', B: 'antígeno B', AB: 'antígenos A y B', O: 'sin antígenos' };
+
+function explicar(clave, g) {
+  const f = fenotipo(clave, g), t = geno(clave, g), homo = g[0] === g[1];
+  if (clave === 'completa') {
+    return f === 'verde' ? t + ': homocigota recesivo, semilla verde'
+      : t + (homo ? ': homocigota dominante, semilla amarilla' : ': heterocigota, Y domina sobre y, semilla amarilla');
+  }
+  if (clave === 'incompleta') {
+    return f === 'rosa' ? t + ': heterocigota, fenotipo intermedio (rosa)' : t + ': homocigota, flor ' + f;
+  }
+  if (clave === 'codominancia') {
+    return f === 'roja y blanca' ? t + ': heterocigota, se expresan los dos alelos a la vez' : t + ': homocigota, flor ' + f;
+  }
+  const por = f === 'AB' ? 'codominancia, expresa A y B' : f === 'O' ? 'sin alelos Iᴬ ni Iᴮ' : homo ? 'homocigota' : (f === 'A' ? 'Iᴬ' : 'Iᴮ') + ' domina sobre i';
+  return t + ': grupo ' + f + ' (' + por + ' · ' + ANTIGENO[f] + ', ' + ANTI[f] + ')';
+}
+
+function consignasPunnett(clave, celdas) {
+  const fens = [...new Set(celdas.map((c) => c.fen))];
+  const lista = fens.map((f) => ({ texto: FEN_TXT[clave][f], es: (c) => c.fen === f }));
+  if (clave !== 'abo') {
+    lista.push({ texto: 'los homocigotas', es: (c) => c.g[0] === c.g[1] });
+    lista.push({ texto: 'los heterocigotas', es: (c) => c.g[0] !== c.g[1] });
+  } else {
+    lista.push({ texto: 'los que tienen antígeno A en sus glóbulos rojos', es: (c) => c.fen === 'A' || c.fen === 'AB' });
+    lista.push({ texto: 'los que tienen antígeno B en sus glóbulos rojos', es: (c) => c.fen === 'B' || c.fen === 'AB' });
+    lista.push({ texto: 'los que tienen anticuerpos anti-A en el plasma', es: (c) => c.fen === 'B' || c.fen === 'O' });
+    lista.push({ texto: 'los que tienen anticuerpos anti-B en el plasma', es: (c) => c.fen === 'A' || c.fen === 'O' });
+  }
+  const buenas = lista.filter((l) => { const n = celdas.filter(l.es).length; return n > 0 && n < 4; });
+  return buenas.length ? buenas : lista.filter((l) => celdas.some(l.es));
+}
+
+/* ---- dibujo de los fenotipos (centrados en el origen) ---- */
+function arteArveja(color) {
+  const sem = color === 'amarilla' ? ['#f6cf32', '#b98a00'] : ['#4fb43c', '#25701a'];
+  const semillas = [-25, 0, 25].map((x) => `<circle cx="${x}" cy="0" r="11.5" fill="${sem[0]}" stroke="${sem[1]}" stroke-width="2.5"/><circle cx="${x - 4}" cy="-4" r="3.2" fill="#fff" opacity=".65"/>`).join('');
+  return `<g transform="rotate(-18)"><ellipse rx="52" ry="22" fill="#68bb47" stroke="#2f7a1e" stroke-width="3"/><ellipse rx="44" ry="14.5" fill="#e6f6d3"/>${semillas}</g>`;
+}
+function arteFlor(colores) {
+  const petalos = [0, 1, 2, 3, 4, 5].map((k) => {
+    const c = colores[k % colores.length];
+    return `<ellipse cx="0" cy="-24" rx="13.5" ry="22" transform="rotate(${k * 60})" fill="${c[0]}" stroke="${c[1]}" stroke-width="2.5"/>`;
+  }).join('');
+  return petalos + '<circle r="10" fill="#ffd23a" stroke="#c58f00" stroke-width="2.5"/><circle r="3.5" fill="#fff3b0"/>';
+}
+const ROJO = ['#e0314b', '#9c1630'], ROSA = ['#f7a3c0', '#c9577f'], BLANCO = ['#fffaf3', '#bfaeb8'];
+function arteSangre(fen) {
+  let antig = '';
+  const tieneA = fen === 'A' || fen === 'AB', tieneB = fen === 'B' || fen === 'AB';
+  for (let k = 0; k < 8; k++) {
+    const ang = k * 45 - 90, rad = (ang * Math.PI) / 180, c = Math.cos(rad), s = Math.sin(rad);
+    const tipo = fen === 'AB' ? (k % 2 ? 'B' : 'A') : tieneA ? 'A' : tieneB ? 'B' : '';
+    if (!tipo) continue;
+    const cab = tipo === 'A'
+      ? `<polygon points="-6.5,5 6.5,5 0,-6.5" fill="#3ea6ff" stroke="#14609e" stroke-width="1.6" transform="translate(${c * 48} ${s * 48}) rotate(${ang + 90})"/>`
+      : `<rect x="-5.5" y="-5.5" width="11" height="11" fill="#ffc83a" stroke="#a67800" stroke-width="1.6" transform="translate(${c * 48} ${s * 48}) rotate(${ang})"/>`;
+    antig += `<line x1="${c * 34}" y1="${s * 34}" x2="${c * 43}" y2="${s * 43}" stroke="#7d1229" stroke-width="2.2"/>${cab}`;
+  }
+  return antig + '<circle r="35" fill="url(#spfh-rbc)" stroke="#7d1229" stroke-width="3"/><ellipse rx="15" ry="15" fill="rgba(60,0,15,.2)"/><ellipse cx="-12" cy="-14" rx="9" ry="5" fill="#fff" opacity=".22" transform="rotate(-35 -12 -14)"/>';
+}
+function arteFenotipo(clave, fen) {
+  if (clave === 'completa') return arteArveja(fen);
+  if (clave === 'incompleta') return arteFlor([fen === 'roja' ? ROJO : fen === 'rosa' ? ROSA : BLANCO]);
+  if (clave === 'codominancia') return arteFlor(fen === 'roja' ? [ROJO] : fen === 'blanca' ? [BLANCO] : [ROJO, BLANCO]);
+  return arteSangre(fen);
+}
+
+function razonProporcion(celdas, clave) {
+  const cuenta = (f) => { const m = new Map(); celdas.forEach((c) => m.set(f(c), (m.get(f(c)) || 0) + 1)); return [...m.values()].sort((a, b) => b - a).join(' : '); };
+  return 'Fenotipos ' + cuenta((c) => c.fen) + ' · Genotipos ' + cuenta((c) => c.g);
+}
 
 export function abrirHerencia({ app, volver }) {
   estilosSpot();
@@ -230,8 +351,8 @@ export function abrirHerencia({ app, volver }) {
         <div class="spf-modos">
           <button type="button" data-modo="genea">🧬 Genealogías<small>Encontrá a las portadoras en la herencia ligada al X.</small></button>
           <button type="button" data-modo="gametas">🎲 Gametas posibles<small>Dado AaBb, tocá AB, Ab, aB y ab. Esquivá las imposibles.</small></button>
-          <button type="button" data-modo="dominancia">🎨 Dominancias<small>Completá consignas de dominancia completa, incompleta y codominancia.</small></button>
-          <button type="button" data-modo="abo">🩸 Codominancia en ABO<small>Deducí los grupos sanguíneos posibles del cruce Iᴬi × Iᴮi.</small></button>
+          <button type="button" data-modo="dominancia">🎨 Dominancias<small>Cuadros de Punnett: completa, incompleta y codominancia. Mirá cómo salen las flores y las semillas.</small></button>
+          <button type="button" data-modo="abo">🩸 Codominancia en ABO<small>Deducí grupos, antígenos y anticuerpos de los hijos. Con glóbulos rojos dibujados.</small></button>
         </div>
       </div>
     </section>
@@ -244,7 +365,7 @@ export function abrirHerencia({ app, volver }) {
 
   const estado = {
     juego: 'genea', modo: 'inactivo', nivel: 0, puntos: 0, vidas: 3, racha: 0,
-    tiempo: 0, tiempoMax: 1, k: 0, halladas: 0, ronda: null, ultimaPlantilla: ''
+    tiempo: 0, tiempoMax: 1, k: 0, halladas: 0, ronda: null, ultimaPlantilla: '', ultimoCruce: '', ultimaConsigna: ''
   };
   let vivo = true, raf = 0, msgTimer = null;
   const mejores = { genea: 0, gametas: 0, dominancia: 0, abo: 0 };
@@ -352,28 +473,27 @@ export function abrirHerencia({ app, volver }) {
 
   function rondaDominancia() {
     const abo = estado.juego === 'abo';
-    const variantes = Object.keys(DOMINANCIAS);
+    const variantes = ['completa', 'incompleta', 'codominancia'];
     const clave = abo ? 'abo' : variantes[estado.nivel % variantes.length];
-    const d = abo ? ABO : DOMINANCIAS[clave];
-    const items = mezclar(d.genos.map((genotipo) => ({ genotipo, est: '' })));
-    const n = items.length, rho = Math.sqrt(0.42 / n), puestos = [];
-    for (let i = 0; i < n; i++) {
-      const ang = (i / n) * Math.PI * 2 - Math.PI / 2;
-      puestos.push({ u: Math.cos(ang) * 0.53, v: Math.sin(ang) * 0.53 });
+    const opciones = CRUCES[clave];
+    let cruce = estado.nivel < variantes.length ? opciones[0] : elegir(opciones);
+    if (abo && estado.nivel > 0) cruce = elegir(opciones.filter((c) => c.join() !== estado.ultimoCruce));
+    estado.ultimoCruce = cruce.join();
+    const [m, pa] = cruce;
+    const celdas = [];
+    for (let f = 0; f < 2; f++) for (let c = 0; c < 2; c++) {
+      const g = normalizar(clave, pa[c], m[f]);
+      celdas.push({ g, fen: fenotipo(clave, g), est: '', nuevo: false });
     }
-    const burbujas = items.map((it, i) => ({ ...it, ...puestos[i], rho, est: '' }));
-    const consignas = abo ? d.consignas : clave === 'completa'
-      ? [{ texto: 'los que expresan el fenotipo recesivo', es: (g) => g === 'yy' }, { texto: 'los heterocigotas', es: (g) => g[0] !== g[1] }, { texto: 'los que expresan el fenotipo dominante', es: (g) => g !== 'yy' }]
-      : clave === 'incompleta'
-        ? [{ texto: 'el fenotipo intermedio', es: (g) => g === 'RB' }, { texto: 'el fenotipo rojo', es: (g) => g === 'RR' }, { texto: 'el fenotipo blanco', es: (g) => g === 'BB' }]
-        : [{ texto: 'la expresión de ambos alelos', es: (g) => g === 'RB' }, { texto: 'el fenotipo rojo', es: (g) => g === 'RR' }, { texto: 'el fenotipo blanco', es: (g) => g === 'BB' }];
-    const consigna = abo ? consignas[estado.nivel % consignas.length] : consignas[Math.floor(estado.nivel / variantes.length) % consignas.length];
-    const set = new Set(burbujas.map((b, i) => consigna.es(b.genotipo) ? i : -1).filter((i) => i >= 0));
-    burbujas.forEach((b, i) => { b.ok = set.has(i); });
+    const opcionesC = consignasPunnett(clave, celdas);
+    const evitar = opcionesC.filter((o) => o.texto !== estado.ultimaConsigna);
+    const consigna = estado.nivel === 0 ? opcionesC[0] : elegir(evitar.length ? evitar : opcionesC);
+    estado.ultimaConsigna = consigna.texto;
+    const set = new Set(celdas.map((c, i) => (consigna.es(c) ? i : -1)).filter((i) => i >= 0));
     estado.k = set.size;
-    estado.tiempoMax = estado.tiempo = Math.max(12, 21 - estado.nivel * 0.7);
-    estado.ronda = { tipo: 'dominancia', burbujas, d, clave, abo, set, revelar: false };
-    fijarPrompt('Seleccioná', consigna.texto, d.ejemplo);
+    estado.tiempoMax = estado.tiempo = Math.max(12, 22 - estado.nivel * 0.7);
+    estado.ronda = { tipo: 'punnett', clave, celdas, cruce, set, anim: true, revelar: false };
+    fijarPrompt('Tocá', consigna.texto, 'Cruce ' + geno(clave, m) + ' × ' + geno(clave, pa));
   }
 
   /* ---------- dibujo ---------- */
@@ -428,20 +548,44 @@ export function abrirHerencia({ app, volver }) {
       <circle cx="${cx}" cy="${cy}" r="${RC + 5}" fill="url(#spfh-g)" stroke="#6d5a99" stroke-width="5"/>${bs}</svg>`;
   }
 
-  function svgDominancia(R) {
-    const cx = 170, cy = 170, RC = 163;
-    const bs = R.burbujas.map((b, i) => {
-      const x = cx + b.u * RC, y = cy + b.v * RC, r = 43;
-      const fill = b.est === 'ok' ? 'rgba(79,224,160,.6)' : b.est === 'mal' ? 'rgba(255,93,122,.38)' : '#fff6fa';
-      const stroke = R.revelar && b.ok ? '#e08a00' : '#b5628f';
-      return `<g class="spfh-nodo" data-i="${i}"><circle cx="${x}" cy="${y}" r="${r}" fill="${fill}" stroke="${stroke}" stroke-width="3"/><text x="${x}" y="${y + 7}" text-anchor="middle" font-size="18" font-weight="800" fill="#3b1f5c">${b.genotipo}</text></g>`;
-    }).join('');
-    return `<svg class="spfh-svg" viewBox="0 0 340 340" role="img" aria-label="Resultados posibles de un cruce"><circle cx="${cx}" cy="${cy}" r="${RC + 5}" fill="#fbe9f1" stroke="#6d5a99" stroke-width="5"/>${bs}</svg>`;
+  function svgPunnett(R) {
+    const { clave } = R, x0 = 44, y0 = 44, T = 140;
+    const cab = (txt, x, y, al) => `<circle cx="${x}" cy="${y}" r="17" fill="${COLOR_ALELO[al] || '#7b57e0'}" stroke="rgba(255,255,255,.55)" stroke-width="2"/><text x="${x}" y="${y + 6}" text-anchor="middle" font-size="16" font-weight="800" fill="${al === 'B' && clave === 'abo' ? '#3a2a00' : '#fff'}">${etiquetaSvg(clave, al, 16)}</text>`;
+    let g = '';
+    const [m, pa] = R.cruce;
+    for (let c = 0; c < 2; c++) g += cab(pa[c], x0 + c * T + T / 2, 22, pa[c]);
+    for (let f = 0; f < 2; f++) g += cab(m[f], 22, y0 + f * T + T / 2, m[f]);
+    g += '<text x="22" y="29" text-anchor="middle" font-size="20" font-weight="800" fill="#b8abdb">×</text>';
+    R.celdas.forEach((c, i) => {
+      const col = i % 2, fila = i >> 1, cx = x0 + col * T + T / 2, cy = y0 + fila * T + T / 2;
+      const rev = !!c.est || R.revelar;
+      const falto = R.revelar && !c.est && R.set.has(i);
+      let fondo = '#fff6fa', borde = '#b5628f', ancho = 2.5;
+      if (c.est === 'ok') { fondo = '#d6f7e6'; borde = '#1f8f5c'; ancho = 4; }
+      else if (c.est === 'mal') { fondo = '#ffdce3'; borde = '#d64545'; ancho = 4; }
+      else if (falto) { borde = '#e08a00'; ancho = 4.5; }
+      const arte = rev
+        ? `<g transform="translate(${cx} ${cy - 20}) scale(.85)">${arteFenotipo(clave, c.fen)}</g>`
+        : `<circle cx="${cx}" cy="${cy - 20}" r="27" fill="none" stroke="#b5628f" stroke-width="2.5" stroke-dasharray="5 6" opacity=".6"/><text x="${cx}" y="${cy - 10}" text-anchor="middle" font-size="30" font-weight="800" fill="#b5628f" opacity=".55">?</text>`;
+      const nombre = rev ? `<text x="${cx}" y="${cy + 60}" text-anchor="middle" font-size="11.5" font-weight="700" fill="#5b3d78">${FEN_NOMBRE[clave][c.fen]}</text>` : '';
+      const clase = 'spfh-celda' + (R.anim ? ' entra' : '') + (c.nuevo ? ' pop' : '');
+      g += `<g class="spfh-nodo ${clase}" data-i="${i}" style="animation-delay:${R.anim ? i * 80 : 0}ms">
+        <rect x="${cx - 66}" y="${cy - 66}" width="132" height="132" rx="20" fill="${fondo}" stroke="${borde}" stroke-width="${ancho}"/>
+        ${arte}
+        <text x="${cx}" y="${cy + 43}" text-anchor="middle" font-size="20" font-weight="800" fill="#3b1f5c">${etiquetaSvg(clave, c.g, 20)}</text>${nombre}</g>`;
+    });
+    return `<div class="spfh-clave">${TITULO_CLAVE[clave]}</div>
+      <svg class="spfh-svg" viewBox="-2 -2 328 328" role="img" aria-label="Cuadro de Punnett">
+      <defs><radialGradient id="spfh-rbc" cx=".4" cy=".35"><stop offset="0" stop-color="#f0647c"/><stop offset="1" stop-color="#b3213f"/></radialGradient></defs>
+      <rect x="-2" y="-2" width="328" height="328" rx="26" fill="rgba(255,255,255,.04)"/>${g}</svg>
+      <div class="spfh-leyenda">${LEYENDA[clave]}</div>`;
   }
 
   function pintar() {
     const R = estado.ronda;
-    $('campo').innerHTML = R.tipo === 'genea' ? svgGenea(R) : R.tipo === 'gametas' ? svgGametas(R) : svgDominancia(R);
+    $('campo').innerHTML = R.tipo === 'genea' ? svgGenea(R) : R.tipo === 'gametas' ? svgGametas(R) : svgPunnett(R);
+    if (R.anim) R.anim = false;
+    if (R.celdas) R.celdas.forEach((c) => { c.nuevo = false; });
   }
 
   /* ---------- interacción ---------- */
@@ -485,26 +629,23 @@ export function abrirHerencia({ app, volver }) {
   }
 
   function tocarDominancia(R, i) {
-    const b = R.burbujas[i];
-    if (b.est) return;
-    if (R.set.has(i)) { b.est = 'ok'; acierto(''); }
-    else {
-      b.est = 'mal';
-      const explicacion = R.abo ? ABO.error : R.clave === 'completa'
-        ? 'Con dominancia completa, Yy expresa el dominante; yy es recesivo.'
-        : R.clave === 'incompleta'
-          ? 'Con dominancia incompleta, RB es el heterocigota intermedio; RR y BB son homocigotas.'
-          : 'Con codominancia, RB expresa los dos alelos a la vez; RR y BB son homocigotas.';
-      error(b.genotipo + '. ' + explicacion);
-    }
+    const c = R.celdas[i];
+    if (c.est) return;
+    c.nuevo = true;
+    const txt = explicar(R.clave, c.g);
+    if (R.set.has(i)) { c.est = 'ok'; acierto('✓ ' + txt); }
+    else { c.est = 'mal'; error('✗ ' + txt); }
   }
 
   function completarRonda() {
     estado.modo = 'entre';
     const bono = Math.ceil(estado.tiempo) * 5;
     estado.puntos += bono; estado.nivel++;
-    Sonido.hito(); decir('¡Ronda completa! +' + bono, 'var(--ok)'); actualizarHud();
-    luego(nuevaRonda, 1500);
+    const R = estado.ronda;
+    if (R.celdas) R.revelar = true;
+    Sonido.hito(); decir('¡Ronda completa! +' + bono + (R.celdas ? ' · ' + razonProporcion(R.celdas, R.clave) : ''), 'var(--ok)'); actualizarHud();
+    if (R.celdas) pintar();
+    luego(nuevaRonda, R.celdas ? 2600 : 1500);
   }
   function tiempoAgotado() {
     estado.modo = 'entre'; estado.ronda.revelar = true;
@@ -534,7 +675,7 @@ export function abrirHerencia({ app, volver }) {
     Sonido.iniciar(); Sonido.clic();
     $('overlay').hidden = true;
     estado.juego = b.dataset.modo;
-    Object.assign(estado, { nivel: 0, puntos: 0, vidas: 3, racha: 0, ultimaPlantilla: '' });
+    Object.assign(estado, { nivel: 0, puntos: 0, vidas: 3, racha: 0, ultimaPlantilla: '', ultimoCruce: '', ultimaConsigna: '' });
     $('guia').hidden = true;
     aplicarGuia();
     nuevaRonda();
