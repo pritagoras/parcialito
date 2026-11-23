@@ -176,7 +176,27 @@ const GUIAS = {
     <p><b>Meiosis:</b> cada gameta lleva un solo alelo de cada gen. Los alelos de un mismo gen se separan (Aa → A o a).</p>
     <p><b>Heterocigota:</b> da dos tipos de alelos para ese gen; homocigota (AA o aa), uno solo.</p>
     <p><b>Segregación independiente:</b> se forman todas las combinaciones posibles. AaBb da AB, Ab, aB y ab; AABb da AB y Ab.</p>
-    <p><b>Cantidad de gametas distintas:</b> 2 elevado a la cantidad de genes heterocigotas.</p>`
+    <p><b>Cantidad de gametas distintas:</b> 2 elevado a la cantidad de genes heterocigotas.</p>`,
+  dominancia: `<p><b>Dominancia completa:</b> el heterocigota expresa solo el fenotipo dominante (3:1 en Aa × Aa).</p><p><b>Dominancia incompleta:</b> el heterocigota tiene un fenotipo intermedio (1:2:1).</p><p><b>Codominancia:</b> en el heterocigota se expresan ambos alelos a la vez (1:2:1).</p>`,
+  abo: `<p>En el sistema ABO, <b>Iᴬ e Iᴮ son codominantes</b> entre sí y ambos dominan sobre i. Por eso IᴬIᴮ da grupo AB, mientras que Iᴬi da A e Iᴮi da B. El grupo O es ii.</p><p>El cruce de este modo es Iᴬi × Iᴮi.</p>`
+};
+
+const DOMINANCIAS = {
+  completa: { ejemplo: 'Cruce Yy × Yy · Y domina sobre y', genos: ['YY', 'Yy', 'Yy', 'yy'] },
+  incompleta: { ejemplo: 'Cruce RB × RB · heterocigota de fenotipo intermedio', genos: ['RR', 'RB', 'RB', 'BB'] },
+  codominancia: { ejemplo: 'Cruce RB × RB · heterocigota expresa ambos alelos', genos: ['RR', 'RB', 'RB', 'BB'] }
+};
+
+const ABO = {
+  ejemplo: 'Cruce Iᴬi × Iᴮi · Iᴬ e Iᴮ son codominantes y dominan sobre i',
+  genos: ['IᴬIᴮ', 'Iᴬi', 'Iᴮi', 'ii'],
+  consignas: [
+    { texto: 'el genotipo que expresa los antígenos A y B', es: (g) => g === 'IᴬIᴮ' },
+    { texto: 'el genotipo del grupo O', es: (g) => g === 'ii' },
+    { texto: 'el genotipo del grupo A', es: (g) => g === 'Iᴬi' },
+    { texto: 'el genotipo del grupo B', es: (g) => g === 'Iᴮi' }
+  ],
+  error: 'En el sistema ABO, IᴬIᴮ es AB (expresa ambos antígenos), Iᴬi es A, Iᴮi es B e ii es O.'
 };
 
 export function abrirHerencia({ app, volver }) {
@@ -210,6 +230,8 @@ export function abrirHerencia({ app, volver }) {
         <div class="spf-modos">
           <button type="button" data-modo="genea">🧬 Genealogías<small>Encontrá a las portadoras en la herencia ligada al X.</small></button>
           <button type="button" data-modo="gametas">🎲 Gametas posibles<small>Dado AaBb, tocá AB, Ab, aB y ab. Esquivá las imposibles.</small></button>
+          <button type="button" data-modo="dominancia">🎨 Dominancias<small>Completá consignas de dominancia completa, incompleta y codominancia.</small></button>
+          <button type="button" data-modo="abo">🩸 Codominancia en ABO<small>Deducí los grupos sanguíneos posibles del cruce Iᴬi × Iᴮi.</small></button>
         </div>
       </div>
     </section>
@@ -225,12 +247,12 @@ export function abrirHerencia({ app, volver }) {
     tiempo: 0, tiempoMax: 1, k: 0, halladas: 0, ronda: null, ultimaPlantilla: ''
   };
   let vivo = true, raf = 0, msgTimer = null;
-  const mejores = { genea: 0, gametas: 0 };
+  const mejores = { genea: 0, gametas: 0, dominancia: 0, abo: 0 };
   for (const m of Object.keys(mejores)) {
     try { mejores[m] = +localStorage.getItem(CLAVE + m) || 0; } catch (e) { /* sin almacenamiento */ }
   }
-  const textoRecords = () => (mejores.genea || mejores.gametas)
-    ? 'Récords · Genealogías: ' + mejores.genea + ' · Gametas: ' + mejores.gametas : '';
+  const textoRecords = () => Object.values(mejores).some(Boolean)
+    ? 'Récords · Genealogías: ' + mejores.genea + ' · Gametas: ' + mejores.gametas + ' · Dominancias: ' + mejores.dominancia + ' · ABO: ' + mejores.abo : '';
   $('ov-rec').textContent = textoRecords();
 
   const luego = (fn, ms) => setTimeout(() => { if (vivo && raiz.isConnected) fn(); }, ms);
@@ -267,7 +289,9 @@ export function abrirHerencia({ app, volver }) {
   function nuevaRonda() {
     estado.halladas = 0;
     $('msg').textContent = '';
-    if (estado.juego === 'genea') rondaGenea(); else rondaGametas();
+    if (estado.juego === 'genea') rondaGenea();
+    else if (estado.juego === 'gametas') rondaGametas();
+    else rondaDominancia();
     estado.modo = 'jugando';
     actualizarHud();
     pintar();
@@ -326,6 +350,32 @@ export function abrirHerencia({ app, volver }) {
     fijarPrompt('Tocá cada gameta posible de', genotipo, 'segregación independiente · ' + validas.length + (validas.length === 1 ? ' tipo' : ' tipos'));
   }
 
+  function rondaDominancia() {
+    const abo = estado.juego === 'abo';
+    const variantes = Object.keys(DOMINANCIAS);
+    const clave = abo ? 'abo' : variantes[estado.nivel % variantes.length];
+    const d = abo ? ABO : DOMINANCIAS[clave];
+    const items = mezclar(d.genos.map((genotipo) => ({ genotipo, est: '' })));
+    const n = items.length, rho = Math.sqrt(0.42 / n), puestos = [];
+    for (let i = 0; i < n; i++) {
+      const ang = (i / n) * Math.PI * 2 - Math.PI / 2;
+      puestos.push({ u: Math.cos(ang) * 0.53, v: Math.sin(ang) * 0.53 });
+    }
+    const burbujas = items.map((it, i) => ({ ...it, ...puestos[i], rho, est: '' }));
+    const consignas = abo ? d.consignas : clave === 'completa'
+      ? [{ texto: 'los que expresan el fenotipo recesivo', es: (g) => g === 'yy' }, { texto: 'los heterocigotas', es: (g) => g[0] !== g[1] }, { texto: 'los que expresan el fenotipo dominante', es: (g) => g !== 'yy' }]
+      : clave === 'incompleta'
+        ? [{ texto: 'el fenotipo intermedio', es: (g) => g === 'RB' }, { texto: 'el fenotipo rojo', es: (g) => g === 'RR' }, { texto: 'el fenotipo blanco', es: (g) => g === 'BB' }]
+        : [{ texto: 'la expresión de ambos alelos', es: (g) => g === 'RB' }, { texto: 'el fenotipo rojo', es: (g) => g === 'RR' }, { texto: 'el fenotipo blanco', es: (g) => g === 'BB' }];
+    const consigna = abo ? consignas[estado.nivel % consignas.length] : consignas[Math.floor(estado.nivel / variantes.length) % consignas.length];
+    const set = new Set(burbujas.map((b, i) => consigna.es(b.genotipo) ? i : -1).filter((i) => i >= 0));
+    burbujas.forEach((b, i) => { b.ok = set.has(i); });
+    estado.k = set.size;
+    estado.tiempoMax = estado.tiempo = Math.max(12, 21 - estado.nivel * 0.7);
+    estado.ronda = { tipo: 'dominancia', burbujas, d, clave, abo, set, revelar: false };
+    fijarPrompt('Seleccioná', consigna.texto, d.ejemplo);
+  }
+
   /* ---------- dibujo ---------- */
   function simboloGenea(p, i, revelar, objetivoOk) {
     let fill = p.aff ? COLORES.crema : 'rgba(255,243,220,.06)';
@@ -378,9 +428,20 @@ export function abrirHerencia({ app, volver }) {
       <circle cx="${cx}" cy="${cy}" r="${RC + 5}" fill="url(#spfh-g)" stroke="#6d5a99" stroke-width="5"/>${bs}</svg>`;
   }
 
+  function svgDominancia(R) {
+    const cx = 170, cy = 170, RC = 163;
+    const bs = R.burbujas.map((b, i) => {
+      const x = cx + b.u * RC, y = cy + b.v * RC, r = 43;
+      const fill = b.est === 'ok' ? 'rgba(79,224,160,.6)' : b.est === 'mal' ? 'rgba(255,93,122,.38)' : '#fff6fa';
+      const stroke = R.revelar && b.ok ? '#e08a00' : '#b5628f';
+      return `<g class="spfh-nodo" data-i="${i}"><circle cx="${x}" cy="${y}" r="${r}" fill="${fill}" stroke="${stroke}" stroke-width="3"/><text x="${x}" y="${y + 7}" text-anchor="middle" font-size="18" font-weight="800" fill="#3b1f5c">${b.genotipo}</text></g>`;
+    }).join('');
+    return `<svg class="spfh-svg" viewBox="0 0 340 340" role="img" aria-label="Resultados posibles de un cruce"><circle cx="${cx}" cy="${cy}" r="${RC + 5}" fill="#fbe9f1" stroke="#6d5a99" stroke-width="5"/>${bs}</svg>`;
+  }
+
   function pintar() {
     const R = estado.ronda;
-    $('campo').innerHTML = R.tipo === 'genea' ? svgGenea(R) : svgGametas(R);
+    $('campo').innerHTML = R.tipo === 'genea' ? svgGenea(R) : R.tipo === 'gametas' ? svgGametas(R) : svgDominancia(R);
   }
 
   /* ---------- interacción ---------- */
@@ -390,7 +451,8 @@ export function abrirHerencia({ app, volver }) {
     if (!g) return;
     const R = estado.ronda, i = +g.dataset.i;
     if (R.tipo === 'genea') tocarGenea(R, R.personas[i]);
-    else tocarGameta(R, R.burbujas[i]);
+    else if (R.tipo === 'gametas') tocarGameta(R, R.burbujas[i]);
+    else tocarDominancia(R, i);
   });
 
   function acierto(texto) {
@@ -420,6 +482,21 @@ export function abrirHerencia({ app, volver }) {
     if (b.est) return;
     if (b.ok) { b.est = 'ok'; acierto(''); }
     else { b.est = 'mal'; error(b.txt + ': ' + razonGameta(b.txt, R.genes)); }
+  }
+
+  function tocarDominancia(R, i) {
+    const b = R.burbujas[i];
+    if (b.est) return;
+    if (R.set.has(i)) { b.est = 'ok'; acierto(''); }
+    else {
+      b.est = 'mal';
+      const explicacion = R.abo ? ABO.error : R.clave === 'completa'
+        ? 'Con dominancia completa, Yy expresa el dominante; yy es recesivo.'
+        : R.clave === 'incompleta'
+          ? 'Con dominancia incompleta, RB es el heterocigota intermedio; RR y BB son homocigotas.'
+          : 'Con codominancia, RB expresa los dos alelos a la vez; RR y BB son homocigotas.';
+      error(b.genotipo + '. ' + explicacion);
+    }
   }
 
   function completarRonda() {
